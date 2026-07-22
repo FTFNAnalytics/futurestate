@@ -11,6 +11,7 @@ Use these execution artifacts with this roadmap:
 - `docs/v0.2-next-signal-set.md`
 - `docs/signal-scale-scenarios.md`
 - `docs/source-broadening-and-intake-plan.md`
+- `docs/private-source-candidate-registry.md`
 - `docs/release-qa-v0.2.md`
 - `docs/launch-note-v0.2.md`
 - `deployment/ftfn-v0.2-build.json`
@@ -51,6 +52,8 @@ Current `0.2.0-dev` state after Phase 54:
 | In Review signals | 23 |
 | Draft Sample signals | 1 |
 | Named local inputs selected in Phases 50-51C | 14 |
+| Private source candidates | 150 local-only records |
+| First-pass candidate triage | 30 complete; 120 remaining |
 
 Existing operating assets:
 
@@ -86,7 +89,7 @@ By v0.2, a reader should be able to answer:
 | Total signals | 25-35 | 33 | target met; new additions require an unusually strong downstream record |
 | Published plus publication-ready | 8-12 | 9 | target met through nine Published records |
 | Active sources | 110-125 | 114 | target met; add only gap-closing sources |
-| Private source candidates | 150-250 | not yet scaffolded | create registry and triage first batch |
+| Private source candidates | 150 | 150 local-only records | target met; 30 triaged and 120 retained for later gap-led review |
 | Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | semiconductor service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
 | Public trust surfaces | update log plus Method links | implemented | maintain entries |
 | Public data products | 3 static exports | implemented | maintain field contract |
@@ -237,9 +240,9 @@ Deliverables:
 - [x] define correction, source refresh, signal repair, publication promotion, and archive entries,
 - [x] add static JSON exports for public sources, topics, and Published signals,
 - [x] document export fields and update cadence,
-- improve Source Monitor grouping around watch lane, review state, and next action,
-- improve Source Coverage summaries for strong and weak lanes,
-- create the private 150-to-250 source-candidate registry without promoting all candidates publicly.
+- [x] improve Source Monitor grouping around watch lane, review state, and next action,
+- [x] improve Source Coverage summaries for strong and weak lanes,
+- [x] create the private 150-source candidate registry without promoting candidates publicly.
 
 Phase 52A pre-Supabase contract status:
 
@@ -248,6 +251,17 @@ Phase 52A pre-Supabase contract status:
 - the public/private export boundary is explicit and versioned,
 - Phase 51 research is no longer treated as a backend activation dependency,
 - remaining Phase 52 monitor, coverage, and registry work can be implemented through the private backend slice.
+
+Phase 52B closeout status:
+
+- created exactly 150 local-only candidate records across 15 balanced evidence profiles,
+- completed a first-pass triage on 30 candidates and left 120 in `Needs Triage`,
+- added candidate-contract validation and exact duplicate checks against all 114 active public sources,
+- kept the working registry in Git-ignored `private-data/` because the current repository is public,
+- added generated-output leak assertions so candidate IDs and the registry path cannot ship in the static build,
+- reorganized Source Monitor around four review states with a specific next action for every source,
+- added Strong, Developing, and Weak Source Coverage assessments with explicit gap-led actions,
+- promoted no candidate and changed no public source or signal counts.
 
 Exit criteria:
 
@@ -335,12 +349,120 @@ Recommended active schedule:
 | --- | --- | --- |
 | Completed | Phase 50B | six bounded additions; award, research, commodity, and local selections |
 | Week 2 | Phase 51 | named Arizona and Ontario evidence trails; 25+ total signals |
-| Week 3 | Phase 52 | update log, static exports, source candidate registry |
+| Completed | Phase 52 | update log, static exports, 150-source private candidate registry, and improved authority surfaces |
 | Completed | Phase 53 | nine Published records and a documented 23-record review shelf |
 | Completed | Phase 54 | local release gate, touch-target repair, v0.2 manifest, launch note, preview explicitly deferred |
-| Decision gate | Private preview | approved deployment, post-deploy QA, then a separate release/DNS decision |
+| Next | Phase 55 | synchronize the verified branch, deploy an unchanged private preview, and complete post-deploy QA |
+| Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
+| Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
+| Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 local build is complete. Remaining release work is conditional: a private preview and post-deploy QA if approved, followed by separate package-version, DNS, and public-launch decisions. Supabase activation remains a parallel private-backend track.
+The planned v0.2 local build is complete. The critical path is now repository synchronization, an unchanged preview, post-deploy verification, release freeze, and a separately approved production-domain launch. Supabase activation remains a parallel private-backend track.
+
+## Post-Phase 54 Release Roadmap
+
+### Phase 55: Repository Synchronization And Private Preview - Next
+
+Goal: put the exact verified candidate into a reviewable GitHub and hosting workflow without changing production DNS.
+
+Deliverables:
+
+- review and commit the current handoff documentation,
+- push `codex/phase51-content` to `FTFNAnalytics/futurestate`,
+- review the six committed Phase 52A-54 changes currently ahead of `origin/main`,
+- merge through an intentional reviewed path,
+- select a static host using the existing-domain constraint as a real decision input,
+- deploy the exact reviewed commit to a non-production provider preview URL and add access protection if confidentiality is required,
+- rerun the launch-critical route, asset, canonical, robots, sitemap, indexing, update-log, and JSON-export checks,
+- record provider, preview URL, commit SHA, build configuration, and QA result in a Phase 55 work package.
+
+Hosting decision rule:
+
+- Cloudflare Pages remains the default when consolidated DNS, CDN, TLS, and future edge services justify a careful nameserver migration.
+- A static host that supports external DNS remains acceptable when avoiding a nameserver migration is the safer launch choice.
+- The site architecture does not require a specific host.
+
+Exit criteria:
+
+- the current branch exists on GitHub and has been reviewed against `main`,
+- the preview deploys from the recorded commit and not from the older Phase 50B remote baseline,
+- all launch-critical preview checks pass,
+- production DNS remains unchanged,
+- no secrets or credentials are committed or pasted into chat.
+
+### Phase 56: v0.2 Production Release And Domain - Conditional
+
+Goal: turn the verified preview into an explicit, reversible public release.
+
+Deliverables:
+
+- approve or decline the public release,
+- change package metadata from `0.2.0-dev` to `0.2.0`,
+- update the release manifest and launch note with the final commit and provider,
+- inventory the complete current DNS zone and preserve Google Workspace mail and verification records,
+- attach `ftfn.io` and configure the preferred `www` redirect only after approval,
+- verify TLS, redirects, canonicals, robots, sitemap, Published routes, non-published indexing boundaries, update log, and exports in production,
+- confirm email operation after any DNS or nameserver change,
+- record the production URL, launch date, deployed commit, and rollback path.
+
+Exit criteria:
+
+- the production deployment matches the frozen release commit,
+- all production checks pass,
+- mail remains functional,
+- the public launch is recorded as an explicit user decision,
+- rollback instructions are available.
+
+### Phase 57: Authority Operations And First Post-Launch Cycle
+
+Goal: prove that FTFN can remain current after launch without lowering its evidence standard.
+
+Deliverables:
+
+- establish a weekly source-health review and a bounded publication-review cadence,
+- use the private queue to choose only gap-closing source checks,
+- maintain the public update/correction log for material changes,
+- recheck the unresolved Phase 51 downstream trails as dated monitors,
+- select the next small Published-signal batch by authority and usefulness rather than volume,
+- decide whether privacy-respecting analytics or newsletter capture would improve the product enough to justify implementation.
+
+Exit criteria:
+
+- at least one complete source-check to public-update cycle is documented,
+- no stale source is silently presented as current,
+- no automated process publishes claims,
+- the next content batch is tied to reader value and evidence gaps.
+
+### Phase 58: Private Supabase Authority Loop - Parallel
+
+Goal: reduce private workflow friction while keeping Git and human review as the public publication gate.
+
+Deliverables:
+
+- create the Supabase project and private authentication model,
+- implement RLS-backed source-candidate, review-queue, and update-candidate tables,
+- import or create the first private candidate batch,
+- connect a private Studio workflow,
+- export reviewed changes into the existing static content contract,
+- document backup, environment, key-handling, and rollback procedures.
+
+Exit criteria:
+
+- private users can move a source candidate through review without exposing private fields,
+- public output still passes the existing static serializers and release checks,
+- no database function, trigger, webhook, or AI workflow can publish directly,
+- the backend has demonstrated several reviewed changes before any broader migration is considered.
+
+### v0.3 Decision Gate
+
+After the first post-launch operating cycle, choose the next milestone from evidence:
+
+- deepen the Published corpus and local intelligence products,
+- expand briefing and dependency-roadmap formats,
+- improve private authority-loop throughput,
+- or add reader-facing subscriptions and change alerts.
+
+Do not pre-commit to accounts, paid features, numeric scoring, a live public API, or broad automation until actual reader and editorial use justify them.
 
 ## Source Update Operating Loop
 
@@ -376,4 +498,4 @@ All nine local success criteria pass in the Phase 54 candidate. Preview and publ
 
 ## Immediate Next Step
 
-Request an explicit decision on a private v0.2 preview. If approved, deploy the exact candidate recorded in `deployment/ftfn-v0.2-build.json`, repeat the launch-critical route and metadata checks on the preview URL, and then decide separately whether to freeze package version `0.2.0`, attach `ftfn.io`, or launch publicly. Keep DNS and public launch behind explicit approval. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Begin Phase 55 by reviewing and committing the handoff documentation, authenticating GitHub through an approved browser or credential-helper flow, and pushing `codex/phase51-content` for review. Then select and configure a private static-host preview from the exact reviewed commit. Stop before package freeze, DNS, or public launch. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

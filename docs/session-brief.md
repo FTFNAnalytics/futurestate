@@ -89,6 +89,8 @@ What is now stable:
 - Phase 49 expanded the source library to 102 records, including broad official catalogs, funding and spending APIs, international statistics, research APIs, patent/IP sources, water and mineral datasets, space licensing, agriculture biotechnology regulation, and Phoenix/MAG local-system data.
 - Phase 50 completed its six-item bounded evidence batch: DOE/Grants.gov, MAG projections, USAspending award DEMS0000003, NSF award 2433348, USGS 2026 gallium, and Toronto application 24 254930.
 - Phase 52A added the validated public update log, three versioned data exports, and the pre-Supabase public/private contract.
+- Phase 52B added a Git-ignored 150-record candidate registry across 15 evidence profiles, completed first-pass triage for 30 candidates, and added validation plus public-build leak assertions.
+- Source Monitor now groups work by review state and exposes a specific next action; Source Coverage now distinguishes Strong, Developing, and Weak lanes with gap-led actions.
 - Phase 51C added named Meta electric-service and TSMC facility milestones, repaired the apprenticeship signal with active cohort counts, and brought the library to 33 signals without forcing missing downstream outcomes.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
@@ -111,7 +113,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should now preserve the verified static candidate while making a deliberate preview decision. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phase 52A made the public data contract explicit; Phases 51A-51C built named local evidence trails; Phase 53 produced a nine-record Published set; and Phase 54 verified the complete public package locally. If a private preview is approved, deploy this exact candidate and rerun the launch-critical checks on the preview URL before any version freeze, DNS, or public-launch decision. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should now preserve the verified static candidate while making a deliberate preview decision. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phases 52A-52B completed the public contract, private 150-source discovery shelf, and authority surfaces; Phases 51A-51C built named local evidence trails; Phase 53 produced a nine-record Published set; and Phase 54 verified the complete public package locally. If a private preview is approved, deploy this exact candidate and rerun the launch-critical checks on the preview URL before any version freeze, DNS, or public-launch decision. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -284,11 +286,13 @@ Key files:
 Next external decision identified in the roadmap:
 
 ```text
-Private v0.2 preview approval and post-deploy verification
+Phase 55 repository synchronization and private-preview approval
 ```
 
 If approved:
 
+- review and commit `docs/build-summary-v0.2.md`, `docs/roadmap-v0.2.md`, and `docs/session-handoff-v0.2.md`,
+- push `codex/phase51-content` to GitHub and review it against `main`,
 - deploy the exact locally verified v0.2 candidate to a private preview URL,
 - repeat the launch-critical route, asset, metadata, indexing, and export checks on that URL,
 - decide separately whether to freeze package version `0.2.0`, attach `ftfn.io`, or launch publicly,
@@ -301,22 +305,27 @@ If approved:
 
 Start future work by reading:
 
-1. `README.md`
-2. `docs/session-brief.md`
-3. `docs/master-roadmap.md`
-4. `docs/decision-log.md`
-5. `docs/content-expansion-plan.md`
-6. `docs/signals-roadmap.md`
-7. `docs/source-monitoring-plan.md`
-8. `docs/authoritative-live-source-plan.md`
-9. `docs/authority-red-team-and-resource-expansion-plan.md`
-10. `docs/publication-readiness-triage.md`
-11. `docs/launch-candidate-review.md`
-12. `docs/publication-policy.md`
-13. `docs/launch-package.md`
-14. `docs/public-data-exports.md`
-15. `docs/supabase-activation-plan.md`
-16. the latest work package in `docs/work-packages/`
+1. `docs/build-summary-v0.2.md`
+2. `docs/roadmap-v0.2.md`
+3. `docs/session-handoff-v0.2.md`
+4. `deployment/ftfn-v0.2-build.json`
+5. `docs/release-qa-v0.2.md`
+6. `docs/launch-package.md`
+7. `README.md`
+8. `docs/session-brief.md`
+9. `docs/master-roadmap.md`
+10. `docs/decision-log.md`
+11. `docs/content-expansion-plan.md`
+12. `docs/signals-roadmap.md`
+13. `docs/source-monitoring-plan.md`
+14. `docs/authoritative-live-source-plan.md`
+15. `docs/authority-red-team-and-resource-expansion-plan.md`
+16. `docs/publication-readiness-triage.md`
+17. `docs/launch-candidate-review.md`
+18. `docs/publication-policy.md`
+19. `docs/public-data-exports.md`
+20. `docs/supabase-activation-plan.md`
+21. the latest work package in `docs/work-packages/`
 
 Use these as needed:
 
@@ -339,6 +348,9 @@ Paste this into a new chat to continue efficiently:
 Continue FTFN from the current project state.
 
 Read:
+- docs/build-summary-v0.2.md
+- docs/roadmap-v0.2.md
+- docs/session-handoff-v0.2.md
 - docs/release-qa-v0.2.md
 - docs/launch-note-v0.2.md
 - deployment/ftfn-v0.2-build.json
@@ -364,19 +376,19 @@ Preserve:
 - "Civilization is a choice,"
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
-Current completed phase:
-Phase 54: v0.2 Release QA And Preview Gate.
+Current completed work:
+Phase 54 release QA plus Phase 52B authority-layer closeout.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 local release candidate: package 0.2.0-dev, 114 sources, 33 signals, 17 topics, 7 updates, 210 pages, 9 Published signals, 3 public JSON endpoints, and passed local desktop/mobile release QA on codex/phase51-content.
+v0.2 local release candidate: package 0.2.0-dev, 114 public sources, 150 private candidates, 33 signals, 17 topics, 7 updates, 210 pages, 9 Published signals, 3 public JSON endpoints, and passed local desktop/mobile release QA on codex/phase51-content.
 
 Next decision gate:
-Request explicit approval for a private preview. If approved, deploy the exact verified candidate and repeat the launch-critical checks before any package-version freeze, DNS, or public-launch decision. Keep unresolved Phase 51 trails as dated monitors and activate the private Supabase authority loop separately when project access is ready.
+Phase 55 repository synchronization and private preview. Verify Git state first: the current branch was six commits ahead of origin/main before this handoff documentation was created, and the remote main branch still represented the older Phase 50B baseline. Review the handoff diff, push and review the current branch only with explicit approval, then deploy the exact reviewed commit to a preview URL and repeat the launch-critical checks. Do not freeze the package, change DNS, or launch publicly in Phase 55. Keep unresolved Phase 51 trails as dated monitors and activate the private Supabase authority loop separately when project access is ready.
 
-Please confirm the current state from the docs, then generate the next phase prompt before implementing.
+Please confirm the current state from both the docs and repository, then proceed with the Phase 55 local preflight. Report before taking the first external action.
 ```
 
 ## Implementation Reminders

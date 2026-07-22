@@ -21,10 +21,12 @@ It is a stack of dependencies.
 - [Master Roadmap](docs/master-roadmap.md) - the step-by-step plan from empty workspace to a functioning publication and data platform.
 - [Documentation Map](docs/documentation-map.md) - how the project documents fit together and when to update each one.
 - [Session Brief](docs/session-brief.md) - compact handoff note for restarting the project in a new chat.
+- [v0.2 Build Summary](docs/build-summary-v0.2.md) - concise current-state inventory covering product, content, QA, Git, deployment, and known limitations.
+- [v0.2 Session Handoff Plan](docs/session-handoff-v0.2.md) - short read order, Phase 55 sequence, approval boundaries, and ready-to-paste restart prompt.
 - [v0.1.1 Session Brief](docs/session-brief-v0.1.1.md) - frozen deployment-candidate handoff after the first Phase 50 content batch.
 - [v0.1.1 Roadmap](docs/roadmap-v0.1.1.md) - release path for build verification, browser QA, preview deployment, and the v0.2 handoff.
 - [v0.1.1 Release QA](docs/release-qa-v0.1.1.md) - desktop, mobile, route, canonical, robots, sitemap, and publication-state indexing evidence for the frozen release.
-- [v0.2 Roadmap](docs/roadmap-v0.2.md) - completed authority-loop build plan and current preview-decision handoff.
+- [v0.2 Roadmap](docs/roadmap-v0.2.md) - completed authority-loop build plus Phases 55-58 for preview, production launch, authority operations, and the private Supabase track.
 - [v0.2 Release QA](docs/release-qa-v0.2.md) - local desktop/mobile, accessibility, source-currentness, indexing, update-log, and export evidence.
 - [v0.2 Launch Note](docs/launch-note-v0.2.md) - public-facing release draft and explicit limitations statement.
 - [Signal Scale Scenarios](docs/signal-scale-scenarios.md) - maps the 25-35 signal and 70 signal corpus shapes.
@@ -39,6 +41,7 @@ It is a stack of dependencies.
 - [Source Strategy](docs/source-strategy.md) - source selection, credibility, monitoring, and editorial use rules.
 - [Source Monitoring Plan](docs/source-monitoring-plan.md) - generated source freshness, authority, and review-queue path toward self-updating evidence surfaces.
 - [Source Broadening and Intake Plan](docs/source-broadening-and-intake-plan.md) - private candidate registry, broad source discovery lanes, and promotion rules.
+- [Private Source-Candidate Registry](docs/private-source-candidate-registry.md) - local-only 150-record registry contract, validation, privacy boundary, and promotion gate.
 - [Authoritative Live Source Plan](docs/authoritative-live-source-plan.md) - live source inventory, first 30 source additions, watch-lane coverage plan, and monitoring architecture.
 - [Authority Red-Team and Resource Expansion Plan](docs/authority-red-team-and-resource-expansion-plan.md) - skeptical authority audit and content-first plan for becoming a comprehensive resource.
 - [Editorial Method](docs/editorial-method.md) - publication standards, evidence treatment, and source transparency posture.
@@ -108,6 +111,7 @@ It is a stack of dependencies.
 - [Phase 51C Work Package](docs/work-packages/phase-51c-downstream-service-and-facility-evidence.md) - named Meta electric service, current TSMC fab milestones, and active apprenticeship-cohort evidence.
 - [Phase 53 Work Package](docs/work-packages/phase-53-publication-candidate-review.md) - nine-record publication set, current primary-source rechecks, and documented holds for every remaining signal.
 - [Phase 54 Work Package](docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md) - local release gate, header touch-target repair, reproducible assertions, and deferred preview decision.
+- [Phase 52B Work Package](docs/work-packages/phase-52b-private-candidate-registry-and-authority-surfaces.md) - private 150-source candidate shelf plus Source Monitor and Source Coverage completion.
 
 ## App Scaffold
 
@@ -119,6 +123,7 @@ From `app/`:
 
 ```text
 npm run validate:content
+npm run validate:candidates
 npm run source:health
 npm run check
 npm run build
@@ -237,6 +242,8 @@ Phase 50 completes the first bounded source-item content expansion with six `In 
 
 Phase 52A completes the pre-Supabase public contract. It adds a validated public update/correction log, versioned static JSON exports for sources, topics, and Published signals, and an explicit private-field allowlist. Supabase can now begin as a private Auth/RLS-backed authority-loop backend while Git remains the public publishing source of truth.
 
+Phase 52B finishes the deferred authority-layer work without adding public content. It creates a Git-ignored 150-record candidate registry across 15 evidence profiles, completes first-pass triage for 30 candidates, adds validation and build leak checks, reorganizes Source Monitor around review state and next action, and adds Strong, Developing, and Weak Source Coverage summaries. The active public source count remains 114.
+
 Phase 51A deepens both local dossiers with three named records: SRP's 2025 ISP Actions Progress Report, Phoenix Water Services' April 2026 council update, and Toronto's June 2026 decision report for application 24 254930. The batch adds three `In Review` signals, strengthens four evidence gaps, and reaches 105 sources, 25 signals, and 193 pages without treating system planning as site service or a staff recommendation as final approval.
 
 Phase 51B completes the next local conversion layer with six official records: SRP's E-67 large-load tariff, a Phoenix-TSMC wastewater development agreement, the TSMC-campus PUD, a named technician apprenticeship, Scarborough Community Council follow-through for application 24 254930, and Toronto's 2025 Development Pipeline. The batch reaches 111 sources, 31 signals, and 205 pages while keeping all six additions `In Review` and preserving customer-service, built-infrastructure, permit, workforce-outcome, by-law, start, completion, and occupancy gates.
@@ -247,7 +254,7 @@ Phase 53 applies the publication gate to the complete 33-signal library. Six bou
 
 Phase 54 passes the v0.2 local release gate. All automated checks and a repeatable `verify:release` assertion pass; 12 of 12 sources supporting Published signals carry a current check; ten core journeys pass at desktop and mobile widths; header links now meet a 44-pixel minimum target; and robots, sitemap, canonical, noindex, update-log, and export boundaries match the manifest. The v0.2 launch note and limitations statement are ready.
 
-The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 114 sources, 33 signals, 17 topics, seven public update entries, 210 pages, and three versioned data exports. The next external step is an explicit private-preview decision; no preview, DNS change, or public launch occurred. The unresolved Phase 51 trails remain dated monitors while Supabase activation proceeds separately.
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 114 public sources, 150 private source candidates, 33 signals, 17 topics, seven public update entries, 210 pages, and three versioned data exports. The next external step is an explicit private-preview decision; no preview, DNS change, or public launch occurred. The unresolved Phase 51 trails remain dated monitors while Supabase activation proceeds separately.
 
 ## Working Rule
 

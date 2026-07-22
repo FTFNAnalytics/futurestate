@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "node ./scripts/run-astro.mjs dev",
     "build": "node ./scripts/run-astro.mjs check && node ./scripts/run-astro.mjs build",
+    "audit:candidate-links": "node ./scripts/audit-source-candidate-links.mjs",
     "preview": "node ./scripts/run-astro.mjs preview",
     "check": "node ./scripts/run-astro.mjs check",
+    "validate:candidates": "node ./scripts/validate-source-candidates.mjs",
     "validate:content": "node ./scripts/validate-content-references.mjs",
     "source:health": "node ./scripts/source-health-report.mjs",
     "verify:release": "node ./scripts/verify-release.mjs"

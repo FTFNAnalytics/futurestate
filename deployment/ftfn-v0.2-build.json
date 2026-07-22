@@ -39,6 +39,17 @@
     "updates": 7,
     "public_json_exports": 3
   },
+  "private_authority_layer": {
+    "registry_visibility": "local-only-git-ignored",
+    "candidate_target": 150,
+    "candidate_records": 150,
+    "evidence_profiles": 15,
+    "first_pass_triaged": 30,
+    "needs_triage": 120,
+    "active_sources_promoted_by_phase_52b": 0,
+    "validation_command": "npm run validate:candidates",
+    "public_output_policy": "Candidate records, IDs, private notes, and registry paths must not appear in static output or public exports."
+  },
   "release_delta_from_v0_1_1": {
     "static_pages_added": 28,
     "signals_added": 15,
@@ -50,6 +61,7 @@
   },
   "last_verified": {
     "date": "2026-07-22",
+    "candidate_validation": "passed-150-local-only-records",
     "validate_content": "passed",
     "source_health": "passed",
     "source_health_manual_review": 56,
@@ -128,6 +140,8 @@
     "Confirm canonical URLs and robots output use https://ftfn.io",
     "Confirm all 12 sources supporting Published signals were checked on 2026-07-22",
     "Confirm all three public JSON exports match the versioned allowlist contract",
+    "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
+    "Confirm generated output contains no private candidate IDs or registry-path references",
     "Confirm the seven-entry public update log renders",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
@@ -152,6 +166,8 @@
     "Preview and post-deploy route checks are deferred because no deployment was authorized.",
     "Twenty-three signals, one Draft Sample, one briefing, two dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
     "The public JSON files are static build exports, not a live API or database-backed service.",
+    "The 150-record candidate registry is an ignored local file and requires private backup outside public Git.",
+    "The optional bulk candidate-link audit was blocked by uniform outbound Node network failures in the verification environment; every candidate still requires live human confirmation before promotion.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
   "notes": "This manifest records a locally verified v0.2 release candidate. It does not authorize preview hosting, public deployment, DNS changes, or publication beyond the nine records already marked Published."

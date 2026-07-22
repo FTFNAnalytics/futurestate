@@ -8,39 +8,65 @@ The goal is simple: keep a very broad project legible as it grows.
 
 Start each substantial work session in this order:
 
-1. [README](../README.md)
-2. [Session Brief](session-brief.md)
-3. [Master Roadmap](master-roadmap.md)
-4. [Decision Log](decision-log.md)
-5. [Taxonomy](taxonomy.md)
-6. [Content Model](content-model.md)
-7. [Source Strategy](source-strategy.md)
-8. [Source Monitoring Plan](source-monitoring-plan.md)
-9. [Source Broadening And Intake Plan](source-broadening-and-intake-plan.md)
-10. [Authoritative Live Source Plan](authoritative-live-source-plan.md)
-11. [Authority Red-Team and Resource Expansion Plan](authority-red-team-and-resource-expansion-plan.md)
-12. [Editorial Method](editorial-method.md)
-13. [Review Checklists](review-checklists.md)
-14. [Briefing Template](briefing-template.md)
-15. [Evidence Gap Register](evidence-gap-register.md)
-16. [Dependency Map Format](dependency-map-format.md)
-17. [Information Architecture](information-architecture.md)
-18. [Sample Records](sample-records.md)
-19. [Content Expansion Plan](content-expansion-plan.md)
-20. [Signals Roadmap](signals-roadmap.md)
-21. [Publication Readiness Triage](publication-readiness-triage.md)
-22. [Launch Candidate Review](launch-candidate-review.md)
-23. [Publication Policy](publication-policy.md)
-24. [Launch Package](launch-package.md)
-25. [Technical Stack Decision](technical-stack-decision.md)
-26. [Content Scaffold Plan](content-scaffold-plan.md)
-27. The current work package in [work-packages](work-packages/)
+1. [v0.2 Build Summary](build-summary-v0.2.md)
+2. [v0.2 Roadmap](roadmap-v0.2.md)
+3. [v0.2 Session Handoff Plan](session-handoff-v0.2.md)
+4. [v0.2 Build Manifest](../deployment/ftfn-v0.2-build.json)
+5. [v0.2 Release QA](release-qa-v0.2.md)
+6. [Launch Package](launch-package.md)
+7. [README](../README.md)
+8. [Session Brief](session-brief.md)
+9. [Master Roadmap](master-roadmap.md)
+10. [Decision Log](decision-log.md)
+11. [Taxonomy](taxonomy.md)
+12. [Content Model](content-model.md)
+13. [Source Strategy](source-strategy.md)
+14. [Source Monitoring Plan](source-monitoring-plan.md)
+15. [Source Broadening And Intake Plan](source-broadening-and-intake-plan.md)
+16. [Private Source-Candidate Registry](private-source-candidate-registry.md)
+17. [Authoritative Live Source Plan](authoritative-live-source-plan.md)
+18. [Authority Red-Team and Resource Expansion Plan](authority-red-team-and-resource-expansion-plan.md)
+19. [Editorial Method](editorial-method.md)
+20. [Review Checklists](review-checklists.md)
+21. [Briefing Template](briefing-template.md)
+22. [Evidence Gap Register](evidence-gap-register.md)
+23. [Dependency Map Format](dependency-map-format.md)
+24. [Information Architecture](information-architecture.md)
+25. [Sample Records](sample-records.md)
+26. [Content Expansion Plan](content-expansion-plan.md)
+27. [Signals Roadmap](signals-roadmap.md)
+28. [Publication Readiness Triage](publication-readiness-triage.md)
+29. [Launch Candidate Review](launch-candidate-review.md)
+30. [Publication Policy](publication-policy.md)
+31. [Technical Stack Decision](technical-stack-decision.md)
+32. [Content Scaffold Plan](content-scaffold-plan.md)
+33. The current work package in [work-packages](work-packages/)
 
 Use [Future Considerations](future-considerations.md) when the work touches theory, long-range ideas, or possible future features.
 
 Use [Prompt Library](prompt-library.md) when starting a repeated workflow such as source research, signal writing, data modeling, local system analysis, or roadmap updates.
 
 ## Core Documents
+
+### v0.2 Build Summary And Session Handoff
+
+Purpose:
+
+- Preserve a concise factual build and release snapshot.
+- Give a new session the shortest reliable read order and exact next sequence.
+- Separate repository, preview, release, DNS, and backend approvals.
+
+Update when:
+
+- build counts, release status, branch state, deployment state, or the next phase changes.
+- a preview or production deployment is completed.
+- the hosting or domain plan changes.
+
+Do not use them for:
+
+- replacing the versioned build manifest,
+- detailed historical rationale,
+- recording unverified deployment claims.
 
 ### README
 
@@ -245,6 +271,26 @@ Do not use it for:
 - Direct publication approval.
 - Treating broad catalogs as evidence for claims.
 - Replacing source-specific records or the private update queue.
+
+### Private Source-Candidate Registry
+
+Purpose:
+
+- Document the local-only 150-record candidate contract without exposing candidate contents.
+- Define validation, backup, triage states, and candidate-to-public-source promotion gates.
+- Preserve the boundary between discovery metadata and claim-supporting public evidence.
+
+Update when:
+
+- the private registry schema, target, profiles, or workflow states change,
+- candidate validation or generated-output leak checks change,
+- the project moves the private registry into an approved RLS-backed backend.
+
+Do not use it for:
+
+- listing private candidates in public documentation,
+- treating first-pass triage as evidence verification,
+- bypassing public source schemas, human review, or Git publication controls.
 
 ### Authoritative Live Source Plan
 
@@ -923,6 +969,26 @@ Do not use it for:
 - replacing the release QA evidence,
 - expanding the content scope after the release gate.
 
+### Phase 52B Work Package
+
+Purpose:
+
+- Record the completed 150-source private candidate shelf and its validation/privacy boundary.
+- Record Source Monitor review-state/next-action improvements and Source Coverage strength summaries.
+- Preserve the fact that public source, signal, and page counts did not change.
+
+Update when:
+
+- a factual correction is required in the Phase 52B result,
+- the registry is migrated into an approved private backend,
+- a later verification changes the recorded privacy or candidate-link status.
+
+Do not use it for:
+
+- publishing candidate names or URLs,
+- authorizing automatic candidate promotion,
+- replacing the ongoing private registry workflow.
+
 ### v0.1 Build Manifest
 
 Purpose:
@@ -967,6 +1033,7 @@ Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
 - Capture the 210-page build, nine Published signals, 114 sources, seven updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` without treating local verification as deployment.
 
 Update when:

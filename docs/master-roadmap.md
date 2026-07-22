@@ -954,7 +954,7 @@ These are the next practical actions from the current project state.
 245. Select one named local dossier record from ACC eDocket, Toronto AIC, Phoenix permitting/water, or Ontario housing evidence. Status: complete across Phases 50-51A; selected MAG projections, Toronto application and decision records, SRP planning, and Phoenix provider water evidence.
 246. Create one local `In Review` signal from a named local record, without claiming local readiness. Status: complete in Phase 50; added `signal-mag-2023-projections-phoenix-region-growth-evidence-layer`.
 247. Create a source broadening and intake plan so FTFN can collect many more potential source candidates without weakening public authority. Status: complete; added `docs/source-broadening-and-intake-plan.md`.
-248. Create a private source-candidate registry with 150 to 250 candidates before promoting another large source batch. Status: planned for Phase 52; deferred after the user-requested Phase 49 source promotion.
+248. Create a private source-candidate registry with 150 to 250 candidates before promoting another large source batch. Status: complete in Phase 52B at the user-selected 150-record target; the registry is local-only and Git-ignored.
 249. Promote the top 25 to 40 candidates into active source records after triage. Status: complete in Phase 49; promoted 36 active source records and expanded the source library to 102 records.
 250. Create Phase 49 work package for the broad source promotion batch. Status: complete; added `docs/work-packages/phase-49-broad-source-promotion-batch.md`.
 251. Move the best 10 to 20 promoted Phase 49 records into the private update queue. Status: complete; added 18 Batch 02 queue items in `docs/private-update-queue.md`.
@@ -965,7 +965,7 @@ These are the next practical actions from the current project state.
 256. Generate the v0.1.1 deployment-candidate package from the current Phase 50 baseline. Status: complete; bumped the app to version 0.1.1 and added `deployment/ftfn-v0.1.1-build.json`, `docs/session-brief-v0.1.1.md`, and `docs/roadmap-v0.1.1.md`.
 257. Rebaseline the v0.2 plan from 102 sources, 18 signals, and 182 pages. Status: complete; updated `docs/roadmap-v0.2.md` with phased deliverables, release targets, evidence gates, and a 3-to-5-week active timeline.
 258. Complete v0.1.1 desktop/mobile browser and indexing QA. Status: complete; no release blocker found, with compact mobile-header touch targets carried into Phase 54 polish.
-259. Implement the task-248 private source-candidate registry during Phase 52 and keep it separate from the public source library. Status: planned; targeted active source additions may continue when they directly close evidence gaps.
+259. Implement the task-248 private source-candidate registry during Phase 52 and keep it separate from the public source library. Status: complete; 150 candidates span 15 evidence profiles, 30 have first-pass triage, and none were promoted publicly.
 260. Preserve the frozen v0.1.1 candidate in version control before current counts diverge. Status: complete; created root commit `4845597` and branch `codex/v0.2-phase50b`.
 261. Advance current package metadata from the frozen v0.1.1 checkpoint to `0.2.0-dev`. Status: complete.
 262. Complete Phase 50B at six bounded additions and validate the 102-source, 22-signal, 186-page development build. Status: complete.
@@ -978,6 +978,13 @@ These are the next practical actions from the current project state.
 269. Complete Phase 54 v0.2 release QA and preview-gate review. Status: complete; passed content, source-health, Astro, 210-page build, exact indexing/export assertions, and desktop/mobile browser QA; repaired header touch targets; added the v0.2 manifest, release QA, and launch note; explicitly deferred preview deployment.
 270. Decide whether to deploy the verified v0.2 candidate to a private preview. Status: next decision gate; requires explicit approval.
 271. If preview is approved, rerun the launch-critical route, asset, metadata, indexing, and export checks on the preview URL before any `0.2.0` version freeze, DNS, or public-launch decision.
+272. Create the v0.2 build summary, updated post-Phase 54 roadmap, and session handoff plan. Status: complete; added `docs/build-summary-v0.2.md`, expanded `docs/roadmap-v0.2.md`, and added `docs/session-handoff-v0.2.md`.
+273. Begin Phase 55 by reviewing and committing the handoff package, pushing `codex/phase51-content`, and reviewing it against the older Phase 50B `origin/main` baseline. Status: next.
+274. Select a static host using the existing DNS and Google Workspace constraint as a real decision input, then deploy the exact reviewed commit to a preview URL without attaching `ftfn.io`.
+275. Complete post-deploy QA and record the preview provider, URL, commit, build settings, and verification result before any release freeze.
+276. If separately approved, complete Phase 56 by freezing `0.2.0`, preserving mail DNS, attaching `ftfn.io`, and verifying the production release plus rollback path.
+277. Begin the Phase 57 authority operating rhythm after launch and keep Phase 58 Supabase work private, RLS-backed, Git-exported, and unable to publish claims directly.
+278. Complete Phase 52B authority-layer closeout at a 150-candidate target. Status: complete; added the local-only registry, validator, release leak check, Source Monitor review groups and next actions, Source Coverage strength summaries, workflow documentation, and work package.
 
 ## 10. Current Stage Map
 
@@ -1021,6 +1028,8 @@ FTFN is no longer only a concept or documentation project. It now has:
 - six Phase 50 bounded source-item signals spanning a DOE/Grants.gov opportunity, MAG local projections, USAspending award, NSF award, USGS gallium record, and Toronto planning application.
 - a frozen v0.1.1 release package with app version 0.1.1, deployment manifest, versioned session brief, release roadmap, local release-QA evidence, and Git checkpoint `4845597`.
 - a current `0.2.0-dev` build with 114 sources, 33 signals, seven update entries, nine Published signals, three public JSON exports, and 210 pages.
+- a private 150-record source-candidate shelf across 15 evidence profiles, with 30 first-pass triaged and zero automatic public promotions.
+- Source Monitor review-state groups and next actions plus Strong, Developing, and Weak Source Coverage summaries.
 - a passed v0.2 local release gate with a versioned manifest, repeatable release assertions, desktop/mobile browser evidence, repaired 44-pixel header targets, and a public-facing launch note plus limitations statement.
 
 It is not yet a deployed public launch product because optional private-preview execution, post-deploy QA, package-version freeze, DNS attachment, analytics decisions, and final public-launch approval remain separate. The current v0.2 build has passed Phase 54 locally. Nine records are `Published`, 23 signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint profiles, the briefing, dependency maps, and most reviewed signals remain prelaunch material.

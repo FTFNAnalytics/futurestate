@@ -52,6 +52,9 @@ const robots = await readText(join(distRoot, "robots.txt"));
 const updatesHtml = await readText(join(distRoot, "updates", "index.html"));
 const allDistFiles = await collectFiles(distRoot);
 const htmlCount = allDistFiles.filter((path) => extname(path) === ".html").length;
+const publicTextExtensions = new Set([".html", ".json", ".xml", ".txt", ".js", ".css"]);
+const publicTextFiles = allDistFiles.filter((path) => publicTextExtensions.has(extname(path)));
+const publicBuildText = (await Promise.all(publicTextFiles.map((path) => readText(path)))).join("\n");
 
 check(htmlCount === manifest.expected_build.static_pages, `Expected ${manifest.expected_build.static_pages} HTML files, found ${htmlCount}.`);
 check(signals.count === manifest.expected_build.published_signals, `Expected ${manifest.expected_build.published_signals} exported signals, found ${signals.count}.`);
@@ -61,6 +64,8 @@ check(signals.schema_version === "1.0" && sources.schema_version === "1.0" && to
 check(signals.records.every((record) => record.record_status === "Published"), "Signal export contains a non-Published record.");
 check(!JSON.stringify(signals).includes('"editorial_notes"'), "Signal export leaked editorial_notes.");
 check(!JSON.stringify(sources).includes('"automation_notes"') && !JSON.stringify(sources).includes('"notes"'), "Source export leaked private notes.");
+check(!publicBuildText.includes("candidate-source-"), "Public build leaked a private source-candidate ID.");
+check(!publicBuildText.includes("private-data/source-candidates"), "Public build references the private candidate registry path.");
 
 for (const requiredPath of manifest.required_output_files) {
   const absolutePath = join(appRoot, requiredPath);
@@ -119,4 +124,4 @@ if (failures.length > 0) {
 console.log("FTFN v0.2 release verification passed.");
 console.log(`${htmlCount} HTML pages; ${signals.count} Published signals; ${sources.count} sources; ${topics.count} topics; ${updateFiles.length} updates.`);
 console.log(`${publishedSourceIds.length} Published-support sources checked on ${manifest.last_verified.date}.`);
-console.log("Robots, sitemap, canonical, indexing, required outputs, and public export boundaries passed.");
+console.log("Robots, sitemap, canonical, indexing, required outputs, private-registry exclusion, and public export boundaries passed.");
