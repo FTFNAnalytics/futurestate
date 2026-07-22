@@ -69,6 +69,8 @@ Exit: all commands pass with no content-reference or Astro errors.
 
 Timeline: 0.5 to 1 focused day.
 
+Status: complete on 2026-07-21 against frozen Git commit `4845597`. See `docs/release-qa-v0.1.1.md`.
+
 - Check desktop and mobile layouts for homepage, Signals, Method, Source Monitor, Source Coverage, and representative signal pages.
 - Confirm Published details use `index, follow`.
 - Confirm In Review and Draft Sample details use `noindex, follow`.
@@ -81,6 +83,8 @@ Exit: no known release-blocking layout, route, metadata, or indexing defect.
 ### 4. Preview Deployment Decision
 
 Timeline: 0.5 to 1 day after explicit approval.
+
+Status: awaiting explicit approval; no preview deployment has been created.
 
 - Keep project root at `app`.
 - Use `npm run build` and output directory `dist`.
@@ -105,7 +109,7 @@ Required:
 
 ## Parallel Authority Track
 
-Release QA should not halt content progress. In parallel, continue Phase 50 with two to five bounded source items and named local records. Keep those additions `In Review`; run publication review separately.
+Release QA did not halt content progress. Phase 50B completed with four further bounded records after the frozen release checkpoint. Current `0.2.0-dev` work proceeds into Phase 51 local dossier deepening; publication review remains separate.
 
 Priority order:
 
@@ -117,7 +121,7 @@ Priority order:
 
 ## Handoff To v0.2
 
-`v0.1.1` is complete as a build when its static checks pass. It is complete as a preview release only after browser QA and an approved preview deployment.
+`v0.1.1` is complete as a locally verified build. It becomes a verified preview release only after an approved preview deployment and post-deploy checks.
 
 The next product milestone is `v0.2`, the first authority-loop build. Its defining work is content operations:
 
@@ -132,4 +136,4 @@ Estimated active effort: 3 to 5 focused weeks. Preview infrastructure should rem
 
 ## Decision Boundary
 
-Generating and verifying `v0.1.1` does not approve hosting, DNS, analytics, ingestion, public launch, or publication of the 14 In Review records.
+Generating and locally verifying `v0.1.1` does not approve hosting, DNS, analytics, ingestion, public launch, or publication of the 14 In Review records.

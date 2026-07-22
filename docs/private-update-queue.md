@@ -56,7 +56,7 @@ Archived
 | --- | --- | --- | --- | --- | --- |
 | uq-001 | Signal Repaired | `source-noaa-cpc-enso` | Climate | Repaired the existing ENSO signal with the 9 July 2026 discussion. | Watch the next NOAA CPC discussion scheduled for 13 August 2026. |
 | uq-002 | Needs Manual Portal Review | `source-arizona-corporation-commission-edocket` | Power and Grid / Local Systems | Arizona utility docket candidate for chip-corridor power evidence. | Search ACC eDocket for named APS/SRP/TEP planning, rate, transmission, or service records before writing a signal. |
-| uq-003 | Needs Manual Portal Review | `source-city-toronto-application-information-centre` | Local Systems / Finance and Human Futures | Toronto application-level candidate for Ontario housing conversion evidence. | Select a named application file, type, status, ward, and submission/update date before writing a signal. |
+| uq-003 | Signal Draft Created | `source-city-toronto-application-information-centre` | Local Systems / Finance and Human Futures | Selected Toronto application 24 254930 ESC 20 OZ and created a bounded named planning-record signal. | Track later AIC, staff-report, decision, servicing, permit, start, and completion records without inferring current status from the dated notice. |
 | uq-004 | Needs Source Recheck | `source-ontario-housing-supply-progress` | Finance and Human Futures / Local Systems | Ontario housing target/progress update candidate. | Manually recheck the official tracker and confirm the latest update date, download availability, and municipal target values. |
 | uq-005 | Candidate | `source-chips-for-america-awards` | Compute and Chips | CHIPS award or facility milestone signal. | Select a specific award announcement and pair with company filings or local records before making capacity claims. |
 | uq-006 | Signal Draft Created | `source-federal-register-api` | Cross-Cutting Official Rails | Regulatory watch-rail signal created in Phase 48. | Select a specific FAA, NHTSA, DOE, FERC, CISA, BIS, NOAA, USDA, or NASA document before promoting the rail into a dated publication candidate. |
@@ -82,13 +82,13 @@ These items come from the 36-source Phase 49 promotion batch. They should be use
 | Queue ID | Status | Source | Watch Lane | Candidate Output | Human Next Action |
 | --- | --- | --- | --- | --- | --- |
 | uq-021 | Candidate | `source-govinfo-api` | Cross-Cutting Official Rails | Official federal document source item for a policy or standards signal. | Select one collection, package, or document and pair it with agency context before writing a signal. |
-| uq-022 | Candidate | `source-usaspending-api` | Finance and Human Futures / Compute and Chips | Federal award or contract record for funding-to-deployment analysis. | Select one award, recipient, agency, place, and obligation period; do not infer technical success from award data. |
+| uq-022 | Signal Draft Created | `source-usaspending-api` | Finance and Human Futures / Compute and Chips | Selected assistance award DEMS0000003 to Talon Nickel (USA) LLC as a funding-to-deployment trail. | Watch transactions and pair the award with site, permit, construction, commissioning, production, and offtake evidence. |
 | uq-023 | Signal Draft Created | `source-grants-gov-api` | Cross-Cutting Official Rails / AI and Advanced Manufacturing | DOE Critical Minerals and Materials Accelerator funding-opportunity signal created in Phase 50. | Watch for DOE selections, USAspending award records, recipient disclosures, and project-site records before making award or deployment claims. |
 | uq-024 | Candidate | `source-bea-api` | Finance and Human Futures | Economic baseline signal for regional or industry context. | Select one BEA dataset, table, frequency, geography, and release date. |
 | uq-025 | Candidate | `source-fhfa-house-price-index` | Finance and Human Futures / Local Systems | Housing-market price context for local-system dossiers. | Select geography and release table; pair with permits, starts, completions, and servicing evidence. |
 | uq-026 | Candidate | `source-fema-national-risk-index` | Climate / Local Systems | Hazard-risk layer for local-system constraint analysis. | Select county or tract geography and document hazard metrics without treating them as parcel-level risk proof. |
 | uq-027 | Candidate | `source-osti-gov-api` | AI and Advanced Manufacturing / Power and Grid | DOE research-output signal. | Select one DOE-funded record, date, subject, and full-text availability before signal drafting. |
-| uq-028 | Candidate | `source-nsf-award-search-api` | AI and Advanced Manufacturing / Discovery Technologies | NSF award signal for emerging research programs. | Select one award with amount, institution, start date, directorate, and topic boundary. |
+| uq-028 | Signal Draft Created | `source-nsf-award-search-api` | AI and Advanced Manufacturing / Discovery Technologies | Selected NSF award 2433348 to Cornell University for the AI-Materials Institute. | Watch amendments, portal delivery, published datasets, experiments, results, and reproducibility evidence. |
 | uq-029 | Candidate | `source-nasa-techport-api` | Space / Discovery Technologies | NASA technology-project signal. | Select one project record and preserve project status, organization, and technology taxonomy. |
 | uq-030 | Candidate | `source-uspto-patentsview` | Compute and Chips / Critical Minerals | Patent-landscape or IP activity signal. | Select a bounded patent set and label it as invention/disclosure evidence, not deployment proof. |
 | uq-031 | Candidate | `source-bureau-reclamation-rise-api` | Water / Local Systems | Water time-series or site record for western local-system evidence. | Select site, parameter, date range, and local allocation context before using it in a signal. |
@@ -99,6 +99,12 @@ These items come from the 36-source Phase 49 promotion batch. They should be use
 | uq-036 | Candidate | `source-fcc-space-bureau-icfs` | Space / Security and Standards | Satellite or space-communications filing signal. | Select one ICFS file number, public notice, order, or license action. |
 | uq-037 | Signal Draft Created | `source-maricopa-association-governments-open-data` | Local Systems | MAG 2023 population, housing, and employment projections signal created in Phase 50. | Pair the projections layer with workforce, training, supplier, utility, water, permitting, or facility records before local capacity conclusions. |
 | uq-038 | Candidate | `source-phoenix-open-data-portal` | Local Systems / Water | Phoenix local data signal or dossier input. | Select one dataset or portal record and pair it with department context, permit records, or water-service evidence. |
+
+## Batch 03: Phase 50B Direct Commodity Selection
+
+| Queue ID | Status | Source | Watch Lane | Candidate Output | Human Next Action |
+| --- | --- | --- | --- | --- | --- |
+| uq-039 | Signal Draft Created | `source-usgs-mineral-commodity-summaries`, `source-usgs-nmic` | Critical Minerals / Compute and Chips | Selected the 2026 gallium material as the first commodity-specific follow-up to the broad MCS baseline. | Watch import-source changes, export licensing, refining projects, wafer-supplier evidence, substitution, recycling, and named facility exposure. |
 
 ## First Repair Priorities
 
@@ -146,10 +152,14 @@ Moved from promoted source records into content:
 - updated `gap-007` for critical minerals funding and processing evidence boundaries.
 - updated `gap-003` and the U.S. Southwest Chip Corridor profile with a named MAG regional projections dataset.
 - refreshed source notes for Grants.gov, DOE Critical Materials Collaborative, and MAG Open Data.
+- `uq-022` selected USAspending award DEMS0000003 to Talon Nickel (USA) LLC and created a bounded award-trail signal.
+- `uq-028` selected NSF award 2433348 to Cornell University for the AI-Materials Institute and created a research-funding signal.
+- `uq-039` selected the USGS 2026 gallium material and created the first commodity-specific supply-structure signal.
+- `uq-003` selected Toronto application 24 254930 ESC 20 OZ and created the first named municipal application signal for the Ontario dossier.
 
 Next queue step:
 
-Select another bounded source item from Batch 02, with priority on `uq-022` USAspending award records, `uq-028` NSF awards, `uq-027` OSTI records, `uq-032`/`uq-033` critical minerals data and trade evidence, or a named ACC/Phoenix/Toronto local record.
+Phase 50B has reached six bounded additions across the two Phase 50 batches. Move next into Phase 51 local dossier deepening, prioritizing a named Arizona power or water record, a Toronto decision or servicing record, and downstream evidence for the selected award and gallium records.
 
 ## Operating Rule
 

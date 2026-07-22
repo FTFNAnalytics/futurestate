@@ -37,6 +37,18 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
+Current `0.2.0-dev` state after Phase 50B:
+
+| Measure | Current Development State |
+| --- | ---: |
+| Static pages | 186 |
+| Active sources | 102 |
+| Signals | 22 |
+| Published signals | 3 |
+| In Review signals | 18 |
+| Draft Sample signals | 1 |
+| Named local inputs selected in Phase 50 | 2 |
+
 Existing operating assets:
 
 - generated Source Monitor and Source Coverage pages,
@@ -66,11 +78,11 @@ By v0.2, a reader should be able to answer:
 
 | Area | v0.2 Target | Current | Remaining |
 | --- | ---: | ---: | ---: |
-| Total signals | 25-35 | 18 | +7 to +17 |
+| Total signals | 25-35 | 22 | +3 to +13 |
 | Published plus publication-ready | 8-12 | 3 | +5 to +9 reviewed candidates |
 | Active sources | 110-125 | 102 | +8 to +23 targeted additions |
 | Private source candidates | 150-250 | not yet scaffolded | create registry and triage first batch |
-| Named local evidence trails | 2 complete dossier trails | 1 regional dataset selected | power, water, permitting, workforce, servicing, completion records |
+| Named local evidence trails | 2 complete dossier trails | MAG regional dataset plus Toronto application selected | power, water, permitting, workforce, servicing, completion records |
 | Public trust surfaces | update log plus Method links | Method only | add update/correction log |
 | Public data products | 3 static exports | none | sources, topics, signals JSON |
 
@@ -106,7 +118,7 @@ v0.2 does not include:
 
 ## Build Plan
 
-### Phase 50B: Bounded Evidence Conversion
+### Phase 50B: Bounded Evidence Conversion — Complete
 
 Timeline: 4 to 6 focused days.
 
@@ -137,6 +149,18 @@ Exit criteria:
 - funding opportunities are not presented as awards,
 - regional data is not presented as facility readiness,
 - validation, source health, Astro checks, and build pass.
+
+Completed result:
+
+- six bounded additions across the two Phase 50 batches,
+- one Grants.gov/DOE funding opportunity,
+- one named MAG regional dataset,
+- one USAspending award trail,
+- one NSF research-funding award,
+- one commodity-specific USGS gallium record,
+- one named Toronto planning application,
+- 22 total signals and 186 built pages,
+- all additions held `In Review` with explicit evidence boundaries.
 
 ### Phase 51: Local Evidence Dossier Deepening
 
@@ -232,6 +256,7 @@ Deliverables:
 
 - run all content, source health, Astro, and production build checks,
 - run desktop and mobile QA on core reader journeys,
+- enlarge compact mobile-header touch targets during the v0.2 polish pass,
 - verify robots, sitemap, canonical, and noindex boundaries,
 - verify update log and static exports,
 - verify launch-critical routes on a preview deployment if approved,
@@ -250,13 +275,13 @@ Recommended active schedule:
 
 | Window | Focus | Expected Result |
 | --- | --- | --- |
-| Week 1 | Phase 50B | 4-6 new bounded signals; first award/research/local selections |
+| Completed | Phase 50B | six bounded additions; award, research, commodity, and local selections |
 | Week 2 | Phase 51 | named Arizona and Ontario evidence trails; 25+ total signals |
 | Week 3 | Phase 52 | update log, static exports, source candidate registry |
 | Week 4 | Phase 53 | 8-12 Published or publication-ready candidates |
 | Week 5 | Phase 54 and buffer | browser QA, preview verification, repairs, release decision |
 
-Expected duration: 3 to 5 focused weeks.
+Expected remaining duration after Phase 50B: about 3 to 4 focused weeks.
 
 A 2-to-3-week narrower candidate is possible by holding the active source library near 110, limiting local work to the strongest named records, and deferring nonessential Source Monitor UX refinements. The publication and evidence gates should not be shortened.
 
@@ -292,4 +317,4 @@ v0.2 is successful when:
 
 ## Immediate Next Step
 
-Continue Phase 50B. Select two to five additional bounded source items from the private queue, prioritizing one award record, one named local record, one research record, and one commodity-specific critical-minerals record. Keep all additions `In Review` and update the evidence-gap links as part of the same batch.
+Begin Phase 51. Select a named Arizona utility filing, a provider-level Arizona water record, and the next decision, servicing, or permit-status record for Toronto application 24 254930. Use those records to deepen the two local dossiers across power, water, permitting, workforce, servicing, and completion constraints. Keep new records `In Review` and preserve project-level evidence limits.

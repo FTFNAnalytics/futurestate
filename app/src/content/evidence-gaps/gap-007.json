@@ -10,10 +10,10 @@
   "constraint_tags": ["Materials", "Supply Chain", "Geopolitics", "Data Quality"],
   "question": "Which materials are binding for chips, grids, batteries, defense, and AI infrastructure?",
   "why_it_matters": "Critical minerals matter differently across systems. FTFN needs commodity-specific evidence before treating a material as a binding constraint.",
-  "current_support": "FTFN has USGS Mineral Commodity Summaries as an official baseline source, an in-review critical materials signal, DOE critical-materials program context, and a selected Grants.gov funding-opportunity record for processing scale-up.",
+  "current_support": "FTFN has the USGS Mineral Commodity Summaries baseline, a commodity-specific 2026 gallium record, DOE critical-materials program context, the selected Grants.gov processing-scale-up opportunity, and USAspending award DEMS0000003 for a named battery-minerals processing recipient.",
   "missing_evidence": [
-    "commodity-specific supply",
-    "award recipients and project sites",
+    "additional commodity-specific production and supply",
+    "project sites, permits, and physical progress",
     "refining capacity",
     "import reliance",
     "substitution options",
@@ -29,14 +29,25 @@
   ],
   "candidate_records": [
     "DOE Critical Minerals and Materials Accelerator opportunity",
-    "gallium or germanium commodity-specific signal",
+    "germanium or rare-earth commodity-specific signal",
     "rare earth refining source",
     "battery material recycling source"
   ],
-  "next_action": "Watch DOE selections and pair any award with USGS, trade, permitting, production, offtake, and facility records before treating a material as a binding system constraint.",
+  "next_action": "Pair the selected gallium and Talon Nickel records with trade, permitting, facility, commissioning, production, inventory, qualification, and offtake evidence before treating either material or project as a binding system constraint.",
   "future_data_model_need": ["Material", "Dataset", "Supply Chain"],
-  "related_source_ids": ["source-usgs-mineral-commodity-summaries", "source-grants-gov-api", "source-doe-critical-materials-collaborative"],
-  "related_signal_ids": ["signal-sample-002", "signal-doe-critical-minerals-materials-accelerator-nofo"],
+  "related_source_ids": [
+    "source-usgs-mineral-commodity-summaries",
+    "source-usgs-nmic",
+    "source-grants-gov-api",
+    "source-doe-critical-materials-collaborative",
+    "source-usaspending-api"
+  ],
+  "related_signal_ids": [
+    "signal-sample-002",
+    "signal-doe-critical-minerals-materials-accelerator-nofo",
+    "signal-usaspending-talon-nickel-battery-minerals-processing-award",
+    "signal-usgs-2026-gallium-import-supplied-semiconductor-constraint"
+  ],
   "related_local_system_ids": [],
-  "notes": "Phase 50 added a bounded DOE/Grants.gov funding signal, but the gap remains open until commodity-specific supply, processing, trade, production, recycling, and offtake evidence is selected."
+  "notes": "Phase 50B now distinguishes a funding opportunity, an actual USAspending award, and a commodity-specific gallium supply baseline. The gap remains open until those administrative and national records are connected to physical processing, trade, production, qualification, recycling, and offtake evidence."
 }

@@ -330,7 +330,7 @@ Started in Phase 49 and advanced in Phase 50. The private update queue includes 
 
 ## Best Next Move
 
-Create the candidate registry and seed it with the first 150 to 250 source candidates before another broad public promotion batch. The first 36-source promotion batch is complete and the first two bounded Phase 50 items are in content, so the near-term emphasis should stay on source-item selection.
+Create the candidate registry and seed it with the first 150 to 250 source candidates before another broad public promotion batch. The first 36-source promotion batch and six-item Phase 50 bounded conversion batch are complete, so the near-term emphasis should shift to Phase 51 named local evidence before the Phase 52 registry work.
 
 For v0.2, the highest-value expansion order is:
 

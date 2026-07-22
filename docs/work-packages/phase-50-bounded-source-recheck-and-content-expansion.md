@@ -10,11 +10,20 @@ Move from Phase 49 source breadth into Phase 50 content authority by selecting b
 
 - added `signal-doe-critical-minerals-materials-accelerator-nofo`,
 - added `signal-mag-2023-projections-phoenix-region-growth-evidence-layer`,
+- added `signal-usaspending-talon-nickel-battery-minerals-processing-award`,
+- added `signal-nsf-ai-materials-institute-award-2433348`,
+- added `signal-usgs-2026-gallium-import-supplied-semiconductor-constraint`,
+- added `signal-toronto-application-24-254930-named-planning-record`,
 - refreshed `source-grants-gov-api`, `source-doe-critical-materials-collaborative`, and `source-maricopa-association-governments-open-data`,
 - updated the U.S. Southwest Chip Corridor profile with the selected MAG regional projections dataset,
 - updated `gap-003` for chip-corridor workforce and supplier scaling evidence,
 - updated `gap-007` for critical-minerals processing and commodity-specific evidence,
 - moved `uq-023` and `uq-037` in the private update queue to `Signal Draft Created`,
+- moved `uq-003`, `uq-022`, and `uq-028` to `Signal Draft Created` and added direct-selection item `uq-039`,
+- updated the Ontario Real Estate profile and `gap-004` with the first named Toronto application record,
+- deepened `gap-007` by separating a funding opportunity, an award trail, and a commodity-specific gallium baseline,
+- preserved the 182-page v0.1.1 candidate in Git commit `4845597` and moved current work to `codex/v0.2-phase50b`,
+- advanced app metadata to `0.2.0-dev`,
 - updated roadmap, source-monitoring, source-broadening, authoritative-source, red-team, session, README, documentation-map, and decision-log docs.
 
 ## Selected Source Items
@@ -65,12 +74,80 @@ Boundary:
 
 The selected record does not prove semiconductor workforce sufficiency, housing affordability, utility service readiness, water capacity, permitting clearance, supplier maturity, or project-level feasibility.
 
+### USAspending Talon Nickel Award
+
+Selected item:
+
+```text
+USAspending award: ASST_NON_DEMS0000003_089
+FAIN: DEMS0000003
+Recipient: Talon Nickel (USA) LLC
+Start date: 2023-11-01
+Current end date: 2026-10-31
+Checked obligations: $114,846,344
+Checked outlays: $954,321.45
+Checked date: 2026-07-22
+```
+
+Boundary:
+
+The record proves a named federal award and transaction trail. It does not prove a permitted, constructed, commissioned, or operating processing facility, and the amounts can change with later transactions.
+
+### NSF AI-Materials Institute Award
+
+Selected item:
+
+```text
+NSF award ID: 2433348
+Recipient: Cornell University
+Award type: Cooperative Agreement
+Award date: 2025-07-28
+Performance period: 2025-10-01 to 2030-09-30
+Checked obligations: $6,000,000
+Estimated total: $20,000,000
+```
+
+Boundary:
+
+The award establishes funding and proposed research scope. It does not prove delivery of the planned AI Materials Science Ecosystem, validated discoveries, reduced discovery cycles, or manufacturing readiness.
+
+### USGS Gallium 2026
+
+Selected item:
+
+```text
+Publication: Mineral Commodity Summaries 2026, version 1.3
+Commodity: Gallium
+Companion source: USGS Gallium Statistics and Information
+Checked date: 2026-07-22
+```
+
+Boundary:
+
+USGS supports the national import-supplied baseline and gallium-use structure. It does not prove a current shortage, a named facility disruption, or that every gallium-dependent application has the same exposure.
+
+### Toronto Application 24 254930
+
+Selected item:
+
+```text
+Application: 24 254930 ESC 20 OZ
+Addresses: 507-513 Victoria Park Avenue and 4, 6 and 14 Thora Avenue
+Application types: Official Plan and Zoning By-law amendments
+Proposed residential units: 578
+Public notice date: 2025-08-29
+```
+
+Boundary:
+
+The City notice proves receipt and public notice of the described applications. It does not prove current status, approval, servicing, permits, financing, construction, completion, occupancy, or delivery of the proposed units.
+
 ## Validation Results
 
 ```text
 npm.cmd run validate:content
 FTFN content reference validation passed.
-102 sources, 18 signals, 17 topics, 10 organizations, 5 technologies, 2 local systems, 1 briefings, 10 evidence gaps, 2 dependency maps
+102 sources, 22 signals, 17 topics, 10 organizations, 5 technologies, 2 local systems, 1 briefings, 10 evidence gaps, 2 dependency maps
 
 npm.cmd run source:health
 102 sources
@@ -83,7 +160,7 @@ npm.cmd run check
 
 npm.cmd run build
 0 errors, 0 warnings, 0 hints
-182 page(s) built
+186 page(s) built
 ```
 
 ## Boundary
@@ -94,12 +171,20 @@ The DOE/Grants.gov signal is a funding-opportunity signal. It is not an award si
 
 The MAG signal is a local planning-evidence signal. It is not a local readiness signal.
 
+The Talon Nickel signal is an award-administration signal. It is not facility-progress evidence.
+
+The NSF AI-MI signal is a research-funding signal. It is not a research-result signal.
+
+The gallium signal is a national commodity-dependency signal. It is not a shortage or facility-disruption claim.
+
+The Toronto signal is a planning-application signal. It is not approval, permitting, construction, or completion evidence.
+
 ## Next
 
-Continue Phase 50 with two to five more bounded source items before moving to the next product capability layer:
+Phase 50B is complete at six bounded additions across the two Phase 50 batches. Move into Phase 51 local dossier deepening:
 
-1. Select a USAspending award or contract record and pair it with recipient, agency, location, and obligation-period limits.
-2. Select an NSF Award Search or OSTI record for AI for Science or Advanced Manufacturing.
-3. Select a commodity-specific critical-minerals record from USGS, USITC, DOE, or trade data.
-4. Select a named ACC, Phoenix, Toronto, water-provider, permit, application, or servicing record for local dossier deepening.
-5. Keep every new record `In Review` until a separate publication-candidate review is run.
+1. Select a named Arizona utility docket, resource-planning filing, or transmission record.
+2. Select a provider-level Arizona water, service-area, allocation, conservation, or infrastructure record.
+3. Track Toronto application 24 254930 through a staff report or decision and add a servicing or permit-status record.
+4. Add workforce, construction-labor, or completion evidence to the two dossiers.
+5. Keep all current Phase 50 additions `In Review` until the separate Phase 53 publication review.

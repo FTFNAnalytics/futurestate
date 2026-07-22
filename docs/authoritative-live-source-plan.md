@@ -111,19 +111,24 @@ Remaining gaps after Phase 49:
 
 ## Phase 50 Implementation Status
 
-Phase 50 started the bounded source-item selection step:
+Phase 50B completed the bounded source-item selection step:
 
 - selected Grants.gov opportunity ID 361773, opportunity number `DE-FOA-0003589`, for a DOE Critical Minerals and Materials Accelerator funding signal,
 - selected MAG Open Data item `c1990106ce3840d6af8bc476ca31c30e` for a Phoenix-region population, housing, and employment projections signal,
 - updated the U.S. Southwest Chip Corridor dossier with the selected MAG source layer,
 - updated critical-minerals and chip-corridor evidence gaps to keep the new records bounded,
 - kept both new records `In Review` and out of publication status.
+- selected USAspending award DEMS0000003 to Talon Nickel (USA) LLC,
+- selected NSF award 2433348 to Cornell University for the AI-Materials Institute,
+- selected the 2026 USGS gallium material as a commodity-specific dependency record,
+- selected Toronto application 24 254930 ESC 20 OZ as the Ontario dossier's first named application record,
+- kept all six Phase 50 additions `In Review` and separated funding, award, research, commodity, application, and outcome evidence.
 
-Remaining gaps after the first Phase 50 content batch:
+Remaining gaps after Phase 50B:
 
-- source-item selection still needs two to five more Phase 50 records before the dated repair batch is broad enough,
-- local dossiers still need named ACC, Phoenix, Toronto, water-provider, workforce, supplier, and facility records,
-- DOE and Grants.gov funding evidence still needs award, recipient, location, permit, offtake, production, and USAspending follow-up before supply-chain claims.
+- local dossiers still need named ACC/Phoenix power and water records, Toronto decision and servicing records, workforce, supplier, completion, and facility records,
+- the selected USAspending award still needs site, permit, construction, commissioning, production, and offtake follow-up,
+- the gallium record still needs trade, supplier, inventory, qualification, project, substitution, and recycling follow-up.
 
 ## Acquisition Rule
 

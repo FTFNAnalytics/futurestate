@@ -1798,3 +1798,52 @@ Implemented:
 Boundary:
 
 The v0.1.1 package does not deploy the site, approve DNS changes, publish In Review records, add automation, or claim that the current 18-signal library is already comprehensive.
+
+## 2026-07-22: Phase 50B Completion And v0.2 Development Transition
+
+Decision:
+
+FTFN will close Phase 50B at six bounded additions, preserve the v0.1.1 preview candidate as a recoverable Git checkpoint, and move current work into Phase 51 under `0.2.0-dev` metadata.
+
+Rationale:
+
+The v0.1.1 checkpoint was locally verified but had no commit history. Continuing content work without first preserving that state would make the 182-page release manifest unrecoverable. The four additional Phase 50B records also satisfy the roadmap's award, research, commodity, and local-selection goals, so the next authority gain should come from multi-constraint local dossiers rather than further source breadth.
+
+Implemented:
+
+- created Git root commit `4845597` for the frozen v0.1.1 candidate,
+- created branch `codex/v0.2-phase50b`,
+- advanced package metadata to `0.2.0-dev`,
+- added a USAspending award signal for DEMS0000003 to Talon Nickel (USA) LLC,
+- added an NSF award signal for award 2433348 to Cornell University's AI-Materials Institute,
+- added a commodity-specific USGS 2026 gallium signal,
+- added Toronto application 24 254930 ESC 20 OZ as the Ontario dossier's first named application signal,
+- updated `gap-004`, `gap-007`, the Ontario Real Estate profile, the private queue, Phase 50 work package, v0.2 roadmap, signal plan, source plans, README, session brief, documentation map, and master roadmap,
+- validated the app at 102 sources, 22 signals, 17 topics, and 186 built pages.
+
+Boundary:
+
+All four additions remain `In Review`. The work does not treat an award as physical progress, research funding as a result, import reliance as a shortage, or a planning application as approval or completed housing. It does not deploy the site, change DNS, approve public launch, add automated publishing, or complete Phase 51 local evidence trails.
+
+## 2026-07-21: v0.1.1 Local Release QA Gate
+
+Decision:
+
+Treat frozen commit `4845597` as locally verified and eligible for an optional preview deployment, while keeping hosting and public launch approval separate.
+
+Rationale:
+
+The recoverable release artifact now passes its build, desktop/mobile layout, canonical, robots, sitemap, and publication-state indexing checks. The current `0.2.0-dev` content is isolated from that evidence, so later content work cannot silently redefine the release that was tested.
+
+Implemented:
+
+- built and tested the frozen `0.1.1` artifact from a detached worktree,
+- checked representative homepage, Signals, Published and In Review signal detail, Method, Atlas, Source Monitor, and Source Coverage routes at desktop and mobile widths,
+- confirmed no tested page has document-level horizontal overflow,
+- confirmed Published `index, follow`, In Review `noindex, follow`, `https://ftfn.io` canonicals, and a sitemap containing exactly the three Published signal details,
+- added `docs/release-qa-v0.1.1.md`,
+- carried compact mobile-header touch-target sizing into Phase 54 polish.
+
+Boundary:
+
+This QA result does not create a preview deployment, change DNS, approve analytics, promote any record, or authorize public launch. Post-deploy verification remains required if preview hosting is approved.

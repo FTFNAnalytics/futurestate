@@ -21,14 +21,15 @@ It is a stack of dependencies.
 - [Master Roadmap](docs/master-roadmap.md) - the step-by-step plan from empty workspace to a functioning publication and data platform.
 - [Documentation Map](docs/documentation-map.md) - how the project documents fit together and when to update each one.
 - [Session Brief](docs/session-brief.md) - compact handoff note for restarting the project in a new chat.
-- [v0.1.1 Session Brief](docs/session-brief-v0.1.1.md) - current deployment-candidate handoff after the first Phase 50 content batch.
+- [v0.1.1 Session Brief](docs/session-brief-v0.1.1.md) - frozen deployment-candidate handoff after the first Phase 50 content batch.
 - [v0.1.1 Roadmap](docs/roadmap-v0.1.1.md) - release path for build verification, browser QA, preview deployment, and the v0.2 handoff.
-- [v0.2 Roadmap](docs/roadmap-v0.2.md) - current 3-to-5-week build plan for the first authority-loop release.
+- [v0.1.1 Release QA](docs/release-qa-v0.1.1.md) - desktop, mobile, route, canonical, robots, sitemap, and publication-state indexing evidence for the frozen release.
+- [v0.2 Roadmap](docs/roadmap-v0.2.md) - current 3-to-4-week remaining build plan for the first authority-loop release.
 - [Signal Scale Scenarios](docs/signal-scale-scenarios.md) - maps the 25-35 signal and 70 signal corpus shapes.
 - [Private Update Queue](docs/private-update-queue.md) - first v0.2 source-review queue for human update operations.
 - [Signal Repair Workflow](docs/signal-repair-workflow.md) - rules for converting broad In Review records into dated source-backed signals.
 - [v0.2 Next Signal Set](docs/v0.2-next-signal-set.md) - first mapped batch of v0.2 signal repairs and new signal candidates.
-- [v0.1.1 Build Manifest](deployment/ftfn-v0.1.1-build.json) - machine-readable build/deployment configuration for the current static preview candidate.
+- [v0.1.1 Build Manifest](deployment/ftfn-v0.1.1-build.json) - machine-readable build/deployment configuration for the frozen static preview candidate.
 - [Glossary](docs/glossary.md) - shared definitions for the project language.
 - [Taxonomy](docs/taxonomy.md) - framework layers, topic pillars, constraints, signal types, maturity levels, and relationship rules.
 - [Content Model](docs/content-model.md) - MVP entities, fields, examples, and validation rules.
@@ -98,7 +99,7 @@ It is a stack of dependencies.
 - [Phase 47 Work Package](docs/work-packages/phase-47-private-update-queue-and-signal-repair-workflow.md) - private update queue, signal repair workflow, and first v0.2 signal batch map.
 - [Phase 48 Work Package](docs/work-packages/phase-48-first-signal-repair-batch.md) - first v0.2 signal repair batch, NOAA update, cybersecurity rail, and regulatory rail.
 - [Phase 49 Work Package](docs/work-packages/phase-49-broad-source-promotion-batch.md) - 36-source promotion batch for v0.2 authority breadth.
-- [Phase 50 Work Package](docs/work-packages/phase-50-bounded-source-recheck-and-content-expansion.md) - first bounded source-item content batch from Grants.gov/DOE and MAG Open Data.
+- [Phase 50 Work Package](docs/work-packages/phase-50-bounded-source-recheck-and-content-expansion.md) - completed six-record bounded evidence-conversion batch spanning funding, research, commodities, and named local records.
 
 ## App Scaffold
 
@@ -115,7 +116,7 @@ npm run check
 npm run build
 ```
 
-The build currently generates 182 static pages from the seed content.
+The current `0.2.0-dev` build generates 186 static pages from the content library.
 
 The homepage now uses real seed records for signals, topics, sources, local systems, and briefings while preserving the 42/59 framing and dependency-stack thesis.
 
@@ -194,6 +195,7 @@ The current v0.1.1 deployment-candidate artifacts are:
 ```text
 docs/session-brief-v0.1.1.md
 docs/roadmap-v0.1.1.md
+docs/release-qa-v0.1.1.md
 docs/roadmap-v0.2.md
 deployment/ftfn-v0.1.1-build.json
 ```
@@ -206,13 +208,13 @@ The signal scale scenarios document maps how the content library should behave a
 
 Phase 47 starts the v0.2 authority loop. It adds the private update queue, the signal repair workflow, and the first mapped v0.2 signal batch.
 
-Phase 48 moves the first queue items into app content. It repairs the NOAA ENSO published record against the 9 July 2026 CPC discussion, adds a CISA KEV cybersecurity operating-rail signal, adds a Federal Register/Regulations.gov regulatory watch-rail signal, refreshes the checked dates for the rechecked source rails, and brings the app to 16 signal records. Phase 50 has now selected the first named local dataset; the next local content move should select deeper ACC, Phoenix, Toronto, water-provider, permit, application, servicing, workforce, or supplier records.
+Phase 48 moves the first queue items into app content. It repairs the NOAA ENSO published record against the 9 July 2026 CPC discussion, adds a CISA KEV cybersecurity operating-rail signal, adds a Federal Register/Regulations.gov regulatory watch-rail signal, refreshes the checked dates for the rechecked source rails, and brings the app to 16 signal records.
 
 Phase 49 promotes 36 additional active source records, expanding the source library from 66 to 102 records. The batch adds cross-cutting official rails, funding and spending APIs, international statistical sources, research and patent discovery rails, water and minerals data, agriculture biotechnology regulation, space licensing sources, and Phoenix/MAG local-system data. These records broaden the authoritative source base, but broad catalogs remain discovery rails rather than direct evidence for claims.
 
-Phase 50 starts the bounded source-item content expansion. It adds two `In Review` signals from selected official records: a DOE/Grants.gov Critical Minerals and Materials Accelerator funding-opportunity signal and a MAG 2023 projections signal for the Phoenix-region local dossier. It keeps both bounded: the DOE record is funding intent, not supply-chain proof, and the MAG record is regional planning context, not local readiness proof.
+Phase 50 completes the first bounded source-item content expansion with six `In Review` additions: the DOE/Grants.gov funding opportunity, MAG regional projections, USAspending award DEMS0000003, NSF award 2433348, a commodity-specific USGS gallium record, and Toronto application 24 254930. The batch separates opportunities from awards, awards from physical progress, research funding from results, import reliance from shortage claims, and applications from approvals or completed units.
 
-The v0.1.1 release refresh packages the Phase 48 through Phase 50 state as app version `0.1.1`: 102 sources, 18 signals, 17 topics, and 182 generated pages. The updated v0.2 roadmap starts from this baseline and sequences bounded evidence conversion, local dossier deepening, a public update log, static exports, publication review, and release QA.
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Local desktop/mobile and indexing QA passed with no release blocker; preview deployment remains unapproved and has not been created. Current work now runs as `0.2.0-dev` on `codex/v0.2-phase50b`: 102 sources, 22 signals, 17 topics, and 186 generated pages. Phase 51 is next and will deepen the Arizona and Ontario dossiers with named utility, water, servicing, permitting, workforce, and completion records.
 
 ## Working Rule
 

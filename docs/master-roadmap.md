@@ -908,8 +908,8 @@ These are the next practical actions from the current project state.
 199. Link the source monitor from Atlas, Sources, Method, source profiles, and sitemap. Status: complete.
 200. Document the source-monitoring plan and keep automated ingestion/publishing out of scope. Status: complete.
 201. Run `npm run validate:content`, `npm run check`, and `npm run build` after source-monitor changes. Status: complete.
-202. Run desktop and mobile browser QA on homepage, signal index, Published signal detail, Method, About, Atlas, source monitor, robots, and sitemap.
-203. Confirm no visible launch-critical page presents In Review or Draft Sample records as Published.
+202. Run desktop and mobile browser QA on homepage, signal index, Published signal detail, Method, About, Atlas, source monitor, robots, and sitemap. Status: complete for the frozen v0.1.1 local artifact; see `docs/release-qa-v0.1.1.md`.
+203. Confirm no visible launch-critical page presents In Review or Draft Sample records as Published. Status: complete for the frozen v0.1.1 local artifact.
 204. Decide whether to execute a Cloudflare Pages preview deploy or keep deployment manual.
 205. If a preview deploy is approved, deploy to a preview URL only and run the launch checklist there.
 206. Do not attach `ftfn.io`, change DNS, add analytics, or launch publicly without explicit approval.
@@ -961,15 +961,20 @@ These are the next practical actions from the current project state.
 252. Select one bounded source item from the Phase 49 queue batch for a new `In Review` signal or local dossier input. Status: complete in Phase 50; selected Grants.gov opportunity ID 361773, `DE-FOA-0003589`, and MAG Open Data item `c1990106ce3840d6af8bc476ca31c30e`.
 253. Create the first Phase 50 source-specific funding signal from a promoted source rail. Status: complete; added `signal-doe-critical-minerals-materials-accelerator-nofo`.
 254. Create Phase 50 work package for bounded source recheck and first content expansion. Status: complete.
-255. Continue Phase 50 with two to five additional bounded source-item signals or local dossier inputs from USAspending, NSF Awards, OSTI, ACC/Phoenix/Toronto local records, or commodity-specific critical-minerals sources. Status: next; carried into Phase 50B in the updated v0.2 plan.
+255. Continue Phase 50 with two to five additional bounded source-item signals or local dossier inputs from USAspending, NSF Awards, OSTI, ACC/Phoenix/Toronto local records, or commodity-specific critical-minerals sources. Status: complete; added four Phase 50B records spanning USAspending, NSF Awards, USGS gallium, and a named Toronto application.
 256. Generate the v0.1.1 deployment-candidate package from the current Phase 50 baseline. Status: complete; bumped the app to version 0.1.1 and added `deployment/ftfn-v0.1.1-build.json`, `docs/session-brief-v0.1.1.md`, and `docs/roadmap-v0.1.1.md`.
 257. Rebaseline the v0.2 plan from 102 sources, 18 signals, and 182 pages. Status: complete; updated `docs/roadmap-v0.2.md` with phased deliverables, release targets, evidence gates, and a 3-to-5-week active timeline.
-258. Complete v0.1.1 desktop/mobile browser and indexing QA. Status: next before preview deployment.
+258. Complete v0.1.1 desktop/mobile browser and indexing QA. Status: complete; no release blocker found, with compact mobile-header touch targets carried into Phase 54 polish.
 259. Implement the task-248 private source-candidate registry during Phase 52 and keep it separate from the public source library. Status: planned; targeted active source additions may continue when they directly close evidence gaps.
+260. Preserve the frozen v0.1.1 candidate in version control before current counts diverge. Status: complete; created root commit `4845597` and branch `codex/v0.2-phase50b`.
+261. Advance current package metadata from the frozen v0.1.1 checkpoint to `0.2.0-dev`. Status: complete.
+262. Complete Phase 50B at six bounded additions and validate the 102-source, 22-signal, 186-page development build. Status: complete.
+263. Begin Phase 51 local dossier deepening with named Arizona power/water and Ontario decision/servicing/permit/completion records. Status: next.
+264. Preserve v0.1.1 local release-QA evidence and keep preview deployment behind explicit approval. Status: complete; added `docs/release-qa-v0.1.1.md` and left hosting unchanged.
 
 ## 10. Current Stage Map
 
-This checkpoint follows the first Phase 50 content batch and the v0.1.1 release-package refresh.
+This checkpoint follows the completed Phase 50B evidence-conversion batch and preserves v0.1.1 as a frozen release candidate.
 
 FTFN is no longer only a concept or documentation project. It now has:
 
@@ -1006,11 +1011,12 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a signal scale scenario map for the 25-35 signal v0.2 target and the larger 70-signal authority-system target.
 - private update queue and signal repair workflow artifacts for the first v0.2 signal batch.
 - a second private queue batch that turns promoted Phase 49 source records into bounded review candidates.
-- two first Phase 50 bounded source-item signals: one DOE/Grants.gov critical-minerals funding opportunity and one MAG local projections dataset for the U.S. Southwest Chip Corridor dossier.
-- a v0.1.1 release package with app version 0.1.1, a current deployment manifest, a current versioned session brief, and a release roadmap.
-- an updated v0.2 plan that starts from 18 signals and sequences bounded evidence conversion, local dossier deepening, trust/data surfaces, publication review, and release QA over 3 to 5 focused weeks.
+- six Phase 50 bounded source-item signals spanning a DOE/Grants.gov opportunity, MAG local projections, USAspending award, NSF award, USGS gallium record, and Toronto planning application.
+- a frozen v0.1.1 release package with app version 0.1.1, deployment manifest, versioned session brief, release roadmap, local release-QA evidence, and Git checkpoint `4845597`.
+- a current `0.2.0-dev` build with 102 sources, 22 signals, and 186 pages.
+- an updated v0.2 plan that now moves from completed bounded evidence conversion into local dossier deepening, trust/data surfaces, publication review, and release QA over about 3 to 4 remaining focused weeks.
 
-It is not yet a deployed public launch product because final live browser QA, optional deploy-preview execution, DNS attachment, analytics decisions, and final public launch approval remain separate. Three records are now `Published`, fourteen signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint records, briefings, dependency maps, and most reviewed signals remain prelaunch material.
+It is not yet a deployed public launch product because optional deploy-preview execution, post-deploy QA, DNS attachment, analytics decisions, and final public launch approval remain separate. Frozen v0.1.1 local browser/indexing QA is complete; the current v0.2 build still requires its own Phase 54 QA. Three records are `Published`, eighteen signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint records, briefings, dependency maps, and most reviewed signals remain prelaunch material.
 
 ### Stage 1: Reader-Journey QA
 
@@ -1077,7 +1083,7 @@ Completed work:
 
 Decision:
 
-Proceed to final browser QA and deploy-preview preparation before any public deployment.
+The frozen v0.1.1 local browser/indexing gate passed. Keep deploy-preview preparation separate and approval-gated before any public deployment.
 
 Completed launch-readiness work:
 
@@ -1090,9 +1096,8 @@ Completed launch-readiness work:
 
 Next candidate work:
 
-- Run browser QA on desktop and mobile widths.
-- Confirm metadata, robots, sitemap, and noindex behavior through local or preview URLs.
 - Decide whether to execute a Cloudflare Pages preview deploy.
+- If approved, repeat route and indexing checks on the preview URL.
 - Keep `ftfn.io` attachment and DNS changes out of scope until explicitly approved.
 
 ### Stage 4: Source Authority And Freshness
@@ -1139,14 +1144,14 @@ Completed:
 - Added local dossier anchors for ACC resource planning, ACC transmission assessment, Phoenix planning/permitting, Phoenix water and sewer, Toronto development review, and Toronto building permits.
 - Promoted 36 additional source records in Phase 49, bringing the source library to 102 records and adding stronger meta-catalog, funding, research, patent, water, minerals, agriculture, space, finance, and local-system rails.
 - Added 18 promoted-source candidates to the private update queue as Batch 02.
-- Started Phase 50 bounded source selection by creating two new `In Review` signals from Grants.gov/DOE and MAG Open Data records.
+- Completed Phase 50B at six bounded `In Review` additions spanning Grants.gov/DOE, MAG Open Data, USAspending, NSF Awards, USGS gallium, and a named Toronto application.
 
 Next candidate work:
 
-- Recheck NOAA CPC ENSO, ACC eDocket, City of Toronto AIC, and Ontario Housing Supply Progress.
+- Recheck NOAA CPC ENSO, ACC eDocket, Toronto application 24 254930, and Ontario Housing Supply Progress.
 - Decide whether In Review local systems and dependency maps should remain indexable or move to clearer research/noindex treatment before launch.
 - Select the next named local records: utility dockets, water-provider records, municipal servicing records, permitting records, workforce sources, completion records, and facility-level evidence.
-- Select additional bounded source items from the Phase 49 queue batch, especially USAspending awards, NSF Awards, OSTI records, patents, space licensing, minerals/trade, hazard, agriculture biotechnology, and ACC/Phoenix/Toronto local records.
+- Prioritize Phase 51 named Arizona power/water and Ontario decision/servicing/permit/completion records; keep OSTI, patents, space licensing, hazard, and agriculture biotechnology as later bounded candidates.
 - Repair broad In Review signals into dated source-backed records where the expanded source registry supports a specific update.
 - Create the private source-candidate registry before another broad public source promotion batch.
 

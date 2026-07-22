@@ -556,9 +556,9 @@ Do not use it for:
 
 Purpose:
 
-- Provide the current versioned handoff after the first Phase 50 content batch.
+- Preserve the frozen versioned handoff after the first Phase 50 content batch.
 - Summarize package version, build counts, release delta, authority posture, deployment posture, and v0.2 direction.
-- Give a restart prompt tied to the current 102-source, 18-signal baseline.
+- Give a restart prompt tied to the frozen 102-source, 18-signal v0.1.1 baseline.
 
 Update when:
 
@@ -592,12 +592,32 @@ Do not use it for:
 - Detailed Phase 50 content implementation.
 - Approving deployment or DNS changes.
 
+### v0.1.1 Release QA
+
+Purpose:
+
+- Record the exact frozen commit and artifact tested for `v0.1.1`.
+- Preserve desktop, mobile, route, canonical, robots, sitemap, and publication-state indexing results.
+- Separate passed local QA from preview deployment and public-launch approval.
+
+Update when:
+
+- A frozen-release QA result needs factual correction.
+- Approved preview deployment adds post-deploy evidence.
+- A release blocker is discovered against the exact `v0.1.1` artifact.
+
+Do not use it for:
+
+- Current v0.2 implementation status.
+- Approving hosting, DNS, analytics, or public launch.
+- Replacing Phase 54 v0.2 release QA.
+
 ### v0.2 Roadmap
 
 Purpose:
 
 - Scope v0.2 as the first authority-loop release.
-- Define the current 3-to-5-week build plan after v0.1.1: bounded evidence conversion, local evidence dossiers, public trust and data surfaces, publication review, and release QA.
+- Define the v0.2 build plan after v0.1.1: completed bounded evidence conversion, local evidence dossiers, public trust and data surfaces, publication review, and release QA.
 - Preserve the boundary between human-reviewed update workflow and automated publishing.
 
 Update when:
@@ -677,7 +697,7 @@ Do not use it for:
 
 Purpose:
 
-- Map the first 12 to 16 signal repairs and additions for v0.2.
+- Map the first signal repairs and additions for v0.2 and the remaining 6-to-12-record path after Phase 50B.
 - Show which source paths and topic gaps each candidate supports.
 - Keep the next signal batch tied to the private update queue.
 
@@ -738,9 +758,9 @@ Do not use it for:
 
 Purpose:
 
-- Record the first bounded source-item conversion batch from promoted Phase 49 rails.
+- Record the completed six-item bounded source conversion batch.
 - Preserve which selected official records became `In Review` signals.
-- Track evidence boundaries for the DOE/Grants.gov funding signal and MAG local projections signal.
+- Track evidence boundaries for the DOE/Grants.gov, MAG, USAspending, NSF, USGS gallium, and Toronto application signals.
 - Preserve validation, source health, check, and build results for the content batch.
 
 Update when:

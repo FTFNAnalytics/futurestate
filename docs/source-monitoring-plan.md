@@ -90,7 +90,7 @@ Recommended next source-monitoring work:
 1. Turn high-priority probe-ready sources into a private scheduled-check queue before any public automated update behavior. Status: started in Phase 47 with `docs/private-update-queue.md`; first queue items moved into content in Phase 48.
 2. Create the source candidate registry described in `docs/source-broadening-and-intake-plan.md`. Status: still needed before another broad source-promotion batch.
 3. Add or select named Arizona utility dockets, provider water records, Phoenix permits/applications, and Ontario municipal servicing or completion evidence.
-4. Move the best promoted Phase 49 source records into bounded source checks for funding, research, patents, space licensing, minerals, agriculture biotechnology, finance, and local systems.
+4. Move the best promoted Phase 49 source records into bounded source checks for patents, space licensing, agriculture biotechnology, finance, and local systems. Status: funding, research, and first commodity-specific selections completed in Phase 50B.
 5. Add source records for post-quantum migration guidance and procurement evidence.
 6. Add source records for FAA/NHTSA dated certification or safety updates.
 7. Extend `npm run source:health` from endpoint metadata checks to optional live URL checks when network/runtime policy allows it.
@@ -139,13 +139,15 @@ Completed in Phase 49:
 - validated the app at 102 sources and 180 built pages,
 - kept all new broad catalogs as discovery rails rather than direct evidence for claims.
 
-Started in Phase 50:
+Completed in Phase 50B:
 
 - selected Grants.gov opportunity ID 361773, `DE-FOA-0003589`, as a bounded funding-opportunity item,
 - selected MAG Open Data item `c1990106ce3840d6af8bc476ca31c30e` as a named local-system dataset,
 - added two `In Review` signals from those selected items,
 - refreshed checked dates and notes for Grants.gov, DOE Critical Materials Collaborative, and MAG Open Data,
-- validated the app at 102 sources, 18 signals, 17 topics, and 182 built pages.
+- selected USAspending award DEMS0000003, NSF award 2433348, the USGS 2026 gallium material, and Toronto application 24 254930,
+- added four more `In Review` signals and updated `gap-004`, `gap-007`, and the Ontario Real Estate profile,
+- validated the `0.2.0-dev` app at 102 sources, 22 signals, 17 topics, and 186 built pages.
 
 ## Not Yet
 

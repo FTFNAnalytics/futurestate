@@ -33,12 +33,13 @@ The project has an Astro + TypeScript static-first app in `app/`.
 Current app baseline:
 
 ```text
-package version: 0.1.1
+package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 182
-current deployment manifest: deployment/ftfn-v0.1.1-build.json
+static pages generated: 186
+current frozen deployment manifest: deployment/ftfn-v0.1.1-build.json
+current branch: codex/v0.2-phase50b
 ```
 
 Use `npm.cmd` on Windows if PowerShell blocks `npm.ps1`.
@@ -84,28 +85,30 @@ What is now stable:
 - A generated Source Monitor at `/atlas/source-monitor/` now exposes source freshness, update cadence, review priority, and authority state from source records.
 - A Phase 38 authority red-team now identifies where the site is still a credible prelaunch scaffold rather than a comprehensive public resource.
 - Phase 49 expanded the source library to 102 records, including broad official catalogs, funding and spending APIs, international statistics, research APIs, patent/IP sources, water and mineral datasets, space licensing, agriculture biotechnology regulation, and Phoenix/MAG local-system data.
-- Phase 50 started bounded source-item conversion with a DOE/Grants.gov critical-minerals funding-opportunity signal and a MAG 2023 projections local-dossier signal.
+- Phase 50 completed its six-item bounded evidence batch: DOE/Grants.gov, MAG projections, USAspending award DEMS0000003, NSF award 2433348, USGS 2026 gallium, and Toronto application 24 254930.
+- Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
+- Frozen v0.1.1 desktop/mobile and indexing QA passed locally; no preview deployment was created.
 
 What is still prelaunch scaffolding:
 
 - Three signal records are `Published`.
-- Fourteen signal records are still `In Review`; one remains `Draft Sample`.
+- Eighteen signal records are still `In Review`; one remains `Draft Sample`.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
 - There is no automation, ingestion, database, public dataset, alerting, user account system, or numeric 42/59 scoring.
 - There is no deployment, DNS change, analytics, newsletter capture, or Cloudflare Pages project yet.
-- Brand polish, final browser QA, accessibility QA, analytics decisions, and final public launch approval still need later passes.
+- Brand polish, v0.2 Phase 54 browser/accessibility QA, preview/post-deploy checks, analytics decisions, and final public launch approval still need later passes.
 
 Current strategic direction:
 
-FTFN should now use the generated Source Monitor, Source Coverage matrix, signals roadmap, authority red-team plan, authoritative live source plan, source broadening plan, private update queue, and signal repair workflow together. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library from 66 to 102 records and added 18 promoted-source candidates to the private queue; Phase 50 converted two promoted rails into bounded `In Review` signals. The next practical work is to select more bounded source items and named local records without claiming project-level readiness. Automated ingestion and automated publishing remain out of scope.
+FTFN should now use the generated Source Monitor, Source Coverage matrix, signals roadmap, authority red-team plan, authoritative live source plan, source broadening plan, private update queue, and signal repair workflow together. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library from 66 to 102 records and added 18 promoted-source candidates to the private queue; Phase 50 completed six bounded additions and moved the app to 22 signals. The next practical work is Phase 51 named local evidence deepening without claiming project-level readiness. Automated ingestion and automated publishing remain out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 18 signal records,
+- 22 signal records,
 - 102 source records,
 - 17 topic records,
 - 2 local system profiles,
@@ -121,7 +124,7 @@ Three official-source-backed signals are now `Published`:
 - USGS mineral commodity signal,
 - NIST post-quantum cryptography signal.
 
-Fourteen official-source-backed or official-analysis-backed signals are `In Review`:
+Eighteen official-source-backed or official-analysis-backed signals are `In Review`:
 
 - CHIPS program signal,
 - FAA advanced air mobility signal,
@@ -132,11 +135,15 @@ Fourteen official-source-backed or official-analysis-backed signals are `In Revi
 - EIA Arizona electricity and chip-corridor power signal,
 - Arizona water resources and chip-corridor governance signal,
 - Ontario housing supply and local capacity signal,
-- Statistics Canada building permits and construction intentions signal.
-- CISA KEV cybersecurity operating-rail signal.
-- Federal Register/Regulations.gov regulatory watch-rail signal.
-- DOE Critical Minerals and Materials Accelerator funding-opportunity signal.
-- MAG 2023 projections Phoenix-region local-dossier signal.
+- Statistics Canada building permits and construction intentions signal,
+- CISA KEV cybersecurity operating-rail signal,
+- Federal Register/Regulations.gov regulatory watch-rail signal,
+- DOE Critical Minerals and Materials Accelerator funding-opportunity signal,
+- MAG 2023 projections Phoenix-region local-dossier signal,
+- USAspending Talon Nickel award signal,
+- NSF AI-Materials Institute award signal,
+- USGS 2026 gallium import-supplied semiconductor-constraint signal,
+- Toronto application 24 254930 named planning-record signal.
 
 One remaining signal record is still `Draft Sample`:
 
@@ -247,22 +254,20 @@ Key files:
 Next phase identified in the roadmap:
 
 ```text
-Phase 50B: Bounded Evidence Conversion
+Phase 51: Local Evidence Dossier Deepening
 ```
 
 Expected focus:
 
-- work through the Batch 02 promoted-source candidates in `docs/private-update-queue.md`,
-- work through the remaining `docs/private-update-queue.md` local candidates,
-- apply `docs/signal-repair-workflow.md`,
-- select the next ACC eDocket, Toronto AIC, Phoenix permitting/water, or Ontario housing record candidate,
-- add four to six bounded `In Review` signals across award, research, local, minerals/trade, regulatory, or dated repair lanes,
-- keep the MAG signal as regional context and add deeper power, water, permitting, workforce, supplier, servicing, or completion records,
-- select the next dated source repair for CHIPS, FAA AAM, NHTSA AV, StatCan/CMHC, or AI-grid,
-- run desktop and mobile browser QA on launch-critical pages as the separate v0.1.1 release track,
-- inspect `/robots.txt` and `/sitemap.xml` in browser or local route checks,
-- confirm Published pages are indexable and non-published signal/briefing details are `noindex, follow`,
-- decide whether to run a Cloudflare Pages preview deploy only after browser QA,
+- select one named Arizona utility docket, planning filing, or transmission record,
+- select one provider-level Arizona water, allocation, service-area, conservation, or infrastructure record,
+- track Toronto application 24 254930 to a staff report, decision, or status update,
+- add a Toronto/Ontario servicing, permit, start, completion, or occupancy record,
+- add workforce, construction-labor, supplier, or facility evidence where it can be bounded,
+- apply `docs/signal-repair-workflow.md` and keep new records `In Review`,
+- update the local profiles and evidence gaps in the same batch,
+- preserve the passed v0.1.1 local release-QA record in `docs/release-qa-v0.1.1.md`,
+- decide whether to run a Cloudflare Pages preview deploy now that local browser/indexing QA has passed,
 - if preview deployment is approved, deploy only to a preview URL and run the launch checklist there,
 - do not attach `ftfn.io`, change DNS, add analytics, or publicly launch without explicit approval.
 
@@ -329,13 +334,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed phase:
-Phase 50: Bounded Source Recheck And Content Expansion.
+Phase 50B: Bounded Evidence Conversion.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
+Current development state:
+v0.2 development: package 0.2.0-dev, 102 sources, 22 signals, 17 topics, and 186 pages on codex/v0.2-phase50b.
+
 Next roadmap phase:
-Continue Phase 50B: select two to five more bounded source items from the promoted-source queue, with priority on USAspending awards, NSF Awards, OSTI records, ACC/Phoenix/Toronto local records, and commodity-specific critical-minerals data or trade evidence. Then move into Phase 51 local dossier deepening.
+Begin Phase 51: deepen the Arizona and Ontario dossiers with named power, water, permitting, servicing, workforce, and completion records while preserving project-level evidence limits.
 
 Please confirm the current state from the docs, then generate the next phase prompt before implementing.
 ```

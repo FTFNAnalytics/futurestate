@@ -55,6 +55,8 @@ deployment/ftfn-v0.1.1-build.json
 
 The original `deployment/ftfn-v0.1-build.json` remains the historical Phase 40 checkpoint.
 
+Local `v0.1.1` release QA passed on 2026-07-21 against frozen Git commit `4845597`; see `docs/release-qa-v0.1.1.md`. This does not authorize deployment.
+
 Do not deploy in this phase. The next deploy step should be explicit and user-approved.
 
 ## Generated Launch Assets
@@ -130,19 +132,21 @@ Expected results:
 
 ## Pre-Deploy Checklist
 
-- [ ] Confirm latest source checked dates for Published signals.
-- [ ] Run `npm run validate:content` from `app/`.
-- [ ] Run `npm run check` from `app/`.
-- [ ] Run `npm run build` from `app/`.
-- [ ] Confirm `app/dist/robots.txt` exists.
-- [ ] Confirm `app/dist/sitemap.xml` exists.
-- [ ] Confirm sitemap includes the three Published signal URLs.
-- [ ] Confirm sitemap excludes In Review and Draft Sample signal URLs.
-- [ ] Confirm non-published signal and briefing pages have `noindex, follow`.
-- [ ] Confirm `/atlas/source-monitor/` renders and shows review due/watch soon/current source states.
-- [ ] Confirm `/atlas/source-coverage/` renders and shows watch-lane/topic source coverage.
-- [ ] Smoke test launch-critical local routes.
-- [ ] Run desktop and mobile browser checks for homepage, signals, Method, and at least one Published signal.
+- [x] Confirm latest source checked dates for Published signals.
+- [x] Run `npm run validate:content` from `app/`.
+- [x] Run `npm run check` from `app/`.
+- [x] Run `npm run build` from `app/`.
+- [x] Confirm `app/dist/robots.txt` exists.
+- [x] Confirm `app/dist/sitemap.xml` exists.
+- [x] Confirm sitemap includes the three Published signal URLs.
+- [x] Confirm sitemap excludes In Review and Draft Sample signal URLs.
+- [x] Confirm non-published signal and briefing pages have `noindex, follow`.
+- [x] Confirm `/atlas/source-monitor/` renders and shows review due/watch soon/current source states.
+- [x] Confirm `/atlas/source-coverage/` renders and shows watch-lane/topic source coverage.
+- [x] Smoke test launch-critical local routes.
+- [x] Run desktop and mobile browser checks for homepage, signals, Method, and at least one Published signal.
+
+Evidence: `docs/release-qa-v0.1.1.md`.
 
 ## Deploy Checklist
 
