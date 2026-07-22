@@ -1894,3 +1894,27 @@ Implemented:
 Boundary:
 
 SRP system planning is not a customer service commitment. Phoenix provider planning is not industrial site capacity. Toronto's staff recommendation and servicing review are not a final Council decision, enacted by-law, building permit, construction start, completion, or occupancy record.
+
+## 2026-07-22: Phase 51B Downstream Conversion Boundaries
+
+Decision:
+
+FTFN will treat large-load tariffs, infrastructure agreements, planning entitlements, workforce programs, committee decisions, and delivery pipelines as distinct conversion layers. None substitutes for its next downstream operating or delivery record.
+
+Rationale:
+
+Phase 51A identified the missing layers precisely. Phase 51B found six official records that close those source gaps without forcing a readiness conclusion: SRP's E-67 tariff, Phoenix's TSMC wastewater agreement, the North Phoenix 3,500 PUD, a TSMC registered apprenticeship, Scarborough Community Council item `2026.SC33.9`, and Toronto's 2025 Development Pipeline.
+
+Implemented:
+
+- added six official source records and six `In Review` signals,
+- updated both local-system dossiers,
+- advanced `gap-003` from `Open` to `Source Added`,
+- strengthened `gap-001`, `gap-002`, `gap-004`, and `gap-005` without resolving them,
+- added private queue items `uq-043` through `uq-048`,
+- added a fifth public update entry,
+- validated 111 sources, 31 signals, 17 topics, five updates, and 205 pages.
+
+Boundary:
+
+The tariff is not a customer service agreement or proof of adequate capacity. The wastewater agreement is not proof of completed infrastructure, a full facility water balance, measured reuse, or long-term sufficiency. The PUD is not a building permit or occupancy record. The apprenticeship announcement is not completion, retention, placement, or workforce sufficiency evidence. The committee recommendation is not City Council adoption or an enacted by-law. The development pipeline is potential supply, not guaranteed completed housing.

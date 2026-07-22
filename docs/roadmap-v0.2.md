@@ -37,17 +37,17 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after Phase 51A:
+Current `0.2.0-dev` state after Phase 51B:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 193 |
-| Active sources | 105 |
-| Signals | 25 |
+| Static pages | 205 |
+| Active sources | 111 |
+| Signals | 31 |
 | Published signals | 3 |
-| In Review signals | 21 |
+| In Review signals | 27 |
 | Draft Sample signals | 1 |
-| Named local inputs selected in Phases 50-51A | 5 |
+| Named local inputs selected in Phases 50-51B | 11 |
 
 Existing operating assets:
 
@@ -80,13 +80,13 @@ By v0.2, a reader should be able to answer:
 
 | Area | v0.2 Target | Current | Remaining |
 | --- | ---: | ---: | ---: |
-| Total signals | 25-35 | 22 | +3 to +13 |
+| Total signals | 25-35 | 31 | target met; add only downstream evidence |
 | Published plus publication-ready | 8-12 | 3 | +5 to +9 reviewed candidates |
-| Active sources | 110-125 | 102 | +8 to +23 targeted additions |
+| Active sources | 110-125 | 111 | target met; add only gap-closing sources |
 | Private source candidates | 150-250 | not yet scaffolded | create registry and triage first batch |
-| Named local evidence trails | 2 complete dossier trails | MAG regional dataset plus Toronto application selected | power, water, permitting, workforce, servicing, completion records |
-| Public trust surfaces | update log plus Method links | Method only | add update/correction log |
-| Public data products | 3 static exports | none | sources, topics, signals JSON |
+| Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | customer service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
+| Public trust surfaces | update log plus Method links | implemented | maintain entries |
+| Public data products | 3 static exports | implemented | maintain field contract |
 
 These are quality-constrained targets. A source or signal counts only when it has a clear role, stable identity, evidence boundary, and review path.
 
@@ -174,17 +174,17 @@ U.S. Southwest Chip Corridor deliverables:
 
 - [x] one named utility docket or resource-planning filing,
 - [x] one water-provider, service-area, allocation, conservation, or infrastructure record,
-- one Phoenix-area permit, zoning, planning, or inspection record,
-- one workforce or training pipeline record,
-- one supplier, construction-labor, facility, or industrial-development record.
+- [x] one Phoenix-area permit, zoning, planning, or inspection record,
+- [x] one workforce or training pipeline record,
+- [x] one supplier, construction-labor, facility, or industrial-development record.
 
 Ontario Real Estate deliverables:
 
 - [x] one named Toronto application or development record,
 - one permit-status or building-permit record,
 - [x] one servicing or infrastructure-capacity record,
-- one starts, completions, or units-under-construction record,
-- one financing, labor, or delivery-constraint record.
+- [x] one starts, completions, or units-under-construction record,
+- [x] one financing, labor, or delivery-constraint record.
 
 Phase 51A status:
 
@@ -193,6 +193,17 @@ Phase 51A status:
 - selected Toronto's June 2026 decision report for application 24 254930 as a staff-recommendation and servicing-review record,
 - added three `In Review` signals and strengthened `gap-001`, `gap-002`, `gap-004`, and `gap-005`,
 - reached 105 sources, 25 signals, and 193 built pages without claiming site-level service or completed outcomes.
+
+Phase 51B status:
+
+- selected SRP's E-67 large-load price plan,
+- selected Phoenix's May 2026 TSMC wastewater development agreement,
+- selected City of Phoenix case `Z-37-20-1` as the campus planning envelope,
+- selected the TSMC registered technician apprenticeship expansion,
+- captured Scarborough Community Council's July 9, 2026 recommendation for application 24 254930,
+- selected Toronto's 2025 Development Pipeline as the citywide delivery-stage baseline,
+- added six `In Review` signals and advanced `gap-003` to `Source Added`,
+- reached 111 sources, 31 signals, five updates, and 205 built pages while keeping every downstream service and delivery gate explicit.
 
 Exit criteria:
 
@@ -335,4 +346,4 @@ v0.2 is successful when:
 
 ## Immediate Next Step
 
-Continue Phase 51B while Supabase access is pending. Select one project- or customer-specific Arizona power service record, one industrial water service/demand/reuse record, one Phoenix permit or zoning record, Toronto Council/by-law or building-permit follow-through, and one workforce or delivery-capacity record for each dossier. Keep Git as the public publishing source of truth and keep all new records `In Review` until Phase 53.
+Continue Phase 51C while Supabase access is pending. Select only downstream named evidence: Arizona customer electric service or energization; completed wastewater and industrial-reclaimed-water infrastructure; Phoenix permits, inspections, or occupancy; apprenticeship outcomes; Toronto City Council and enacted by-laws; and the named project's permit, start, completion, or occupancy trail. Keep Git as the public publishing source of truth and keep all new records `In Review` until Phase 53.

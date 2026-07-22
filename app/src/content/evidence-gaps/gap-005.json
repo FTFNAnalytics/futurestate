@@ -10,11 +10,11 @@
   "constraint_tags": ["Capital", "Data Quality", "Infrastructure"],
   "question": "Which permit intentions become starts, completions, and occupancy?",
   "why_it_matters": "Building permits are upstream intentions. FTFN needs conversion evidence to know whether approvals become starts, completions, occupied units, or stalled projects.",
-  "current_support": "FTFN has Statistics Canada permits, CMHC starts/completions data, and Toronto application 24 254930 records showing the move from initial notice to a revised staff recommendation and servicing review.",
+  "current_support": "FTFN has Statistics Canada permits, CMHC starts and completions data, Toronto's 2025 Development Pipeline, and application 24 254930 records showing movement from initial notice through staff review to a July 2026 committee recommendation.",
   "missing_evidence": [
-    "permit-to-start conversion",
-    "starts",
-    "completions",
+    "building permit and permit-to-start conversion for application 24 254930",
+    "project construction start",
+    "project completion and occupancy",
     "cancellations",
     "financing conditions",
     "local absorption data"
@@ -28,21 +28,25 @@
   ],
   "candidate_records": [
     "specific Toronto building permit for application 24 254930",
-    "specific CMHC Toronto geography table",
-    "municipal permit-to-start or completion dataset"
+    "application 24 254930 start, completion, and occupancy record",
+    "Toronto Development Pipeline stage-conversion update"
   ],
-  "next_action": "Track application 24 254930 into a building permit or start record and add geography-specific CMHC conversion evidence.",
+  "next_action": "Track application 24 254930 into an issued building permit, construction start, completion, and occupancy record, using Toronto pipeline and CMHC data as the broader conversion baseline.",
   "future_data_model_need": ["Dataset", "Permit", "Local Actor"],
   "related_source_ids": [
     "source-statcan-building-permits-survey",
     "source-cmhc-housing-market-information-portal",
     "source-cmhc-starts-completions-under-construction",
-    "source-toronto-24-254930-june-2026-decision-report"
+    "source-toronto-24-254930-june-2026-decision-report",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-toronto-development-pipeline-2025"
   ],
   "related_signal_ids": [
     "signal-statcan-building-permits-construction-intentions-signal",
-    "signal-toronto-24-254930-staff-report-servicing-review"
+    "signal-toronto-24-254930-staff-report-servicing-review",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-toronto-2025-development-pipeline-delivery-gap"
   ],
   "related_local_system_ids": ["local-ontario-real-estate"],
-  "notes": "Phase 51 added an application-stage recommendation and servicing review, but the permit-to-start-to-completion gap remains open until downstream project and geography-specific records are selected."
+  "notes": "Phase 51B adds a committee decision and a citywide stage baseline, but the permit-to-start-to-completion gap remains open until the named project reaches downstream permit, start, completion, and occupancy records."
 }

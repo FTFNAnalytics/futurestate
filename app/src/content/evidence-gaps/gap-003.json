@@ -2,7 +2,7 @@
   "id": "gap-003",
   "title": "U.S. Southwest semiconductor workforce and supplier scaling evidence",
   "slug": "gap-003-chip-corridor-workforce-suppliers",
-  "status": "Open",
+  "status": "Source Added",
   "priority": "High",
   "local_system": "U.S. Southwest Chip Corridor",
   "primary_topic": "Chips and Compute",
@@ -10,11 +10,11 @@
   "constraint_tags": ["Labor", "Supply Chain", "Manufacturing", "Capital"],
   "question": "Can local supplier and workforce systems support semiconductor scaling?",
   "why_it_matters": "Funded semiconductor projects only become operating capacity if labor pipelines, construction capacity, suppliers, training systems, and capital commitments can keep up.",
-  "current_support": "FTFN has national CHIPS program context, a hardened local system profile, and a selected MAG regional projections dataset for population, housing, and employment context. It still lacks workforce-pipeline, training-capacity, construction-labor, and supplier-network records.",
+  "current_support": "FTFN has national CHIPS context, MAG regional projections, and a named TSMC registered technician apprenticeship record identifying four technician pathways, education partners, more than $5 million of company support, an 18-to-24-month program horizon, and a target of nearly 130 apprentices and trainees in 2025.",
   "missing_evidence": [
-    "workforce pipeline data",
+    "apprenticeship enrollment, completion, retention, and placement outcomes",
     "occupation-specific labor supply",
-    "training program capacity",
+    "training capacity relative to fab and supplier demand",
     "supplier networks",
     "construction labor availability",
     "facility hiring data"
@@ -28,14 +28,14 @@
   ],
   "candidate_records": [
     "MAG 2023 population, housing, and employment projections",
-    "Arizona workforce development source",
-    "semiconductor training program source",
+    "TSMC apprenticeship outcome and retention data",
+    "Arizona occupation-specific labor and vacancy data",
     "supplier facility and hiring source"
   ],
-  "next_action": "Pair the MAG projections layer with official workforce, training, supplier, construction labor, and economic-development records before making chip-corridor capacity claims.",
+  "next_action": "Add apprenticeship outcome, occupation-level labor, construction-trade, and supplier operating records before making chip-corridor workforce or supplier sufficiency claims.",
   "future_data_model_need": ["Facility", "Local Actor", "Dataset"],
-  "related_source_ids": ["source-nist-chips", "source-maricopa-association-governments-open-data"],
-  "related_signal_ids": ["signal-sample-003", "signal-mag-2023-projections-phoenix-region-growth-evidence-layer"],
+  "related_source_ids": ["source-nist-chips", "source-maricopa-association-governments-open-data", "source-aca-tsmc-registered-technician-apprenticeship-2024"],
+  "related_signal_ids": ["signal-sample-003", "signal-mag-2023-projections-phoenix-region-growth-evidence-layer", "signal-tsmc-arizona-apprenticeship-workforce-pipeline"],
   "related_local_system_ids": ["local-us-southwest-chip-corridor"],
-  "notes": "Phase 50 added a named regional planning dataset, but the gap remains open because manufacturing scale depends on people and suppliers as much as funding or regional growth context."
+  "notes": "Phase 51B added a named facility-linked technician pipeline, but the gap remains unresolved because planned cohorts do not prove completion, retention, total labor sufficiency, construction capacity, or supplier-network maturity."
 }

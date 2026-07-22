@@ -10,11 +10,11 @@
   "constraint_tags": ["Water", "Climate", "Infrastructure", "Public Trust"],
   "question": "Which records show whether industrial growth has defensible water capacity?",
   "why_it_matters": "Industrial strategy in a water-constrained region depends on water rights, provider capacity, reuse, treatment, discharge, drought exposure, and public legitimacy.",
-  "current_support": "FTFN has ADWR water governance and assured-supply criteria plus Phoenix Water Services' April 2026 provider-level update on supply sources, drought posture, and planned reliability investments.",
+  "current_support": "FTFN has ADWR water governance and assured-supply criteria, Phoenix Water Services' April 2026 provider update, and a May 2026 Phoenix-TSMC development-agreement record defining interim wastewater conveyance improvements, accepted-flow conditions, industrial reclaimed-water-plant triggers, and customer cost responsibility.",
   "missing_evidence": [
-    "provider service capacity for named industrial sites",
-    "facility water demand",
-    "reuse plans",
+    "completed and accepted wastewater conveyance improvements",
+    "total facility water withdrawals and consumption",
+    "operating industrial reclaimed water plants and measured reuse",
     "discharge permits",
     "assured water supply records",
     "drought sensitivity"
@@ -29,22 +29,26 @@
   ],
   "candidate_records": [
     "next City of Phoenix Water Resource Plan",
-    "industrial water service or infrastructure agreement",
-    "facility water demand, discharge, or reuse disclosure"
+    "executed TSMC wastewater development agreement and construction records",
+    "facility water balance, discharge, or measured reuse disclosure"
   ],
-  "next_action": "Add a named industrial service, facility-demand, discharge, or reuse record before making facility-level water claims.",
+  "next_action": "Track completion and acceptance of the TSMC conveyance improvements, operation of the first industrial reclaimed water plant by June 30, 2028, and a facility water-balance or measured-reuse record before making sufficiency claims.",
   "future_data_model_need": ["Permit", "Facility", "Dataset", "Local Actor"],
   "related_source_ids": [
     "source-arizona-department-water-resources",
     "source-arizona-adwr-assured-water-supply",
     "source-arizona-corporation-commission-utilities",
     "source-phoenix-water-and-sewer",
-    "source-phoenix-2026-water-security-council-update"
+    "source-phoenix-2026-water-security-council-update",
+    "source-phoenix-tsmc-2026-wastewater-development-agreement",
+    "source-phoenix-north-3500-pud-2026"
   ],
   "related_signal_ids": [
     "signal-arizona-water-resources-chip-corridor-constraint-map",
-    "signal-phoenix-2026-water-security-provider-update"
+    "signal-phoenix-2026-water-security-provider-update",
+    "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+    "signal-phoenix-z37-20-1-tsmc-campus-planning-record"
   ],
   "related_local_system_ids": ["local-us-southwest-chip-corridor"],
-  "notes": "Phase 51 added a named municipal provider record. The gap remains open because provider-level portfolio and drought planning do not prove capacity or service terms for a named industrial project."
+  "notes": "Phase 51B added a project-specific wastewater and reclaimed-water agreement. The gap remains open because authorization and conditional flow capacity do not prove completed infrastructure, total water demand, measured reuse, drought resilience, or long-term supply sufficiency."
 }

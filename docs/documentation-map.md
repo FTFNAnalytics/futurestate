@@ -796,6 +796,30 @@ Do not use it for:
 - treating a staff recommendation as final approval,
 - treating servicing review as a building permit or completed delivery.
 
+### Phase 51B Work Package
+
+Purpose:
+
+- Record the large-load service, industrial wastewater, Phoenix planning, workforce, Toronto committee, and delivery-baseline batch.
+- Preserve the claim boundaries between tariffs and customer service, agreements and completed infrastructure, planning and permits, cohorts and workforce sufficiency, committee recommendations and enacted by-laws, and pipeline potential and completed housing.
+- Track the six selected official records, five strengthened evidence gaps, and next downstream gates.
+
+Update when:
+
+- an E-67 revision or named electric-service record is selected,
+- TSMC wastewater or industrial reclaimed-water infrastructure reaches a construction or operating milestone,
+- named Phoenix permits, inspections, or certificates of occupancy are added,
+- apprenticeship outcome data becomes available,
+- Toronto application 24 254930 reaches City Council, by-law, permit, start, completion, or occupancy.
+
+Do not use it for:
+
+- treating tariff applicability as proof of available site capacity,
+- treating agreement authorization as completed infrastructure or long-term water sufficiency,
+- treating a PUD as a building permit,
+- treating a planned apprenticeship cohort as workforce sufficiency,
+- treating a committee recommendation or citywide pipeline as completed housing.
+
 ### v0.1 Build Manifest
 
 Purpose:

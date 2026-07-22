@@ -113,6 +113,12 @@ These items come from the 36-source Phase 49 promotion batch. They should be use
 | uq-040 | Signal Draft Created | `source-srp-2025-isp-actions-progress-report` | Power and Grid / Local Systems | Added a named SRP resource, distribution, siting, and transmission implementation signal. | Select a customer- or project-specific service, tariff, load, or interconnection record before making site-level capacity claims. |
 | uq-041 | Signal Draft Created | `source-phoenix-2026-water-security-council-update` | Water / Local Systems | Added the first named Phoenix provider-level water signal. | Select an industrial service, facility-demand, discharge, reuse, or infrastructure record before making facility-level water claims. |
 | uq-042 | Signal Draft Created | `source-toronto-24-254930-june-2026-decision-report` | Local Systems / Finance and Human Futures | Added a staff recommendation and application-stage servicing-review signal for Toronto application 24 254930. | Track the Council item history, enacted by-laws, land and laneway conditions, building permit, start, completion, and occupancy. |
+| uq-043 | Signal Draft Created | `source-srp-e67-large-load-price-plan-2025` | Power and Grid / Local Systems | Added the first named SRP large-load tariff signal, including forecast, minimum-billing, maximum-load, service-agreement, and possible customer-funded infrastructure conditions. | Select a named customer service agreement, facilities charge, interconnection, construction, energization, or project-load record. |
+| uq-044 | Signal Draft Created | `source-phoenix-tsmc-2026-wastewater-development-agreement` | Water / Local Systems | Added a project-specific TSMC wastewater-conveyance and reclaimed-water milestone signal. | Track execution, construction and acceptance of the improvements, the June 30, 2028 IRWP deadline, measured reuse, and a facility water balance. |
+| uq-045 | Signal Draft Created | `source-phoenix-north-3500-pud-2026` | Local Systems / Compute and Chips | Added the adopted and amended PUD planning envelope for the TSMC campus area. | Select named site, civil, grading, or building permits, inspections, and certificates of occupancy. |
+| uq-046 | Signal Draft Created | `source-aca-tsmc-registered-technician-apprenticeship-2024` | Compute and Chips / Finance and Human Futures | Added a facility-linked technician apprenticeship with named pathways, partners, funding, and a 2025 recruitment target. | Add enrollment, completion, credential, retention, placement, construction-labor, and supplier-workforce evidence. |
+| uq-047 | Signal Draft Created | `source-toronto-2026-sc33-9-item-history` | Local Systems / Finance and Human Futures | Added Scarborough Community Council's July 9, 2026 recommendation for application 24 254930. | Track City Council adoption, enacted by-laws, land conditions, and the first building permit. |
+| uq-048 | Signal Draft Created | `source-toronto-development-pipeline-2025` | Local Systems / Finance and Human Futures | Added Toronto's citywide planning-to-permit-to-construction delivery baseline. | Track stage conversion, completions, cancellations, financing conditions, and the named project's downstream records. |
 
 ## First Repair Priorities
 
@@ -120,8 +126,8 @@ Start with these because they have existing signal records and clear repair path
 
 1. ENSO signal: source has advanced to a 9 July 2026 NOAA CPC discussion.
 2. StatCan/CMHC permits signal: needs a specific release/geography.
-3. Arizona power signal: named SRP implementation record added; still needs customer- or project-specific service evidence.
-4. Arizona water signal: named Phoenix provider record added; still needs industrial service, demand, discharge, or reuse evidence.
+3. Arizona power signal: SRP implementation and large-load tariff records added; still needs named customer service, interconnection, construction, energization, or load evidence.
+4. Arizona water signal: Phoenix provider and TSMC wastewater-agreement records added; still needs completed infrastructure, facility water balance, measured reuse, and operating IRWP evidence.
 5. FAA AAM signal: needs a specific FAA document or certification/regulatory action.
 6. NHTSA AV signal: needs a specific reporting/safety data action.
 7. CHIPS signal: needs a specific award/facility/program milestone.
@@ -180,7 +186,23 @@ Moved from queue priorities into content:
 
 Next queue step:
 
-Continue Phase 51 with project-specific Arizona utility and water-service evidence, a Phoenix permit or zoning record, a Toronto Council/by-law or building-permit record, and one workforce or delivery-capacity record for each dossier.
+Phase 51B completed the service, infrastructure, planning, workforce, committee, and delivery-baseline layer. Continue only with downstream project evidence: electric service or energization, built wastewater and IRWP infrastructure, named Phoenix permits and occupancy, apprenticeship outcomes, Toronto City Council and by-laws, and the named project's permit/start/completion trail.
+
+## Phase 51B Progress
+
+Moved from queue priorities into content:
+
+- `uq-043` selected SRP's E-67 large-load price plan,
+- `uq-044` selected Phoenix's May 2026 TSMC wastewater development agreement,
+- `uq-045` selected Phoenix case `Z-37-20-1` for the TSMC-campus planning envelope,
+- `uq-046` selected the TSMC registered technician apprenticeship expansion,
+- `uq-047` captured Scarborough Community Council follow-through for Toronto application 24 254930,
+- `uq-048` selected Toronto's 2025 Development Pipeline as the citywide delivery baseline,
+- advanced `gap-003` to `Source Added` and strengthened `gap-001`, `gap-002`, `gap-004`, and `gap-005` without resolving them.
+
+Next queue step:
+
+Run Phase 51C as a downstream-evidence pass, not another source expansion. Select only named service, construction, permit, workforce-outcome, Council/by-law, start, completion, or occupancy records.
 
 ## Operating Rule
 

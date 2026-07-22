@@ -969,14 +969,15 @@ These are the next practical actions from the current project state.
 260. Preserve the frozen v0.1.1 candidate in version control before current counts diverge. Status: complete; created root commit `4845597` and branch `codex/v0.2-phase50b`.
 261. Advance current package metadata from the frozen v0.1.1 checkpoint to `0.2.0-dev`. Status: complete.
 262. Complete Phase 50B at six bounded additions and validate the 102-source, 22-signal, 186-page development build. Status: complete.
-263. Begin Phase 51 local dossier deepening with named Arizona power/water and Ontario decision/servicing/permit/completion records. Status: Phase 51A complete for named utility, provider-water, staff-recommendation, and servicing-review records; project-specific service, permits, workforce, and delivery evidence remain.
+263. Begin Phase 51 local dossier deepening with named Arizona power/water and Ontario decision/servicing/permit/completion records. Status: complete through Phase 51B for the named planning, service-framework, wastewater-agreement, workforce-program, committee, and delivery-baseline layers; downstream operating and completion evidence remains.
 264. Preserve v0.1.1 local release-QA evidence and keep preview deployment behind explicit approval. Status: complete; added `docs/release-qa-v0.1.1.md` and left hosting unchanged.
 265. Create the Phase 51A work package and add three bounded local dossier signals. Status: complete.
-266. Continue Phase 51B with project-specific Arizona service records, Phoenix permitting, Toronto Council/by-law and permit follow-through, and workforce or delivery evidence. Status: next.
+266. Continue Phase 51B with project-specific Arizona service records, Phoenix permitting, Toronto Council/by-law and permit follow-through, and workforce or delivery evidence. Status: complete; added six official records and six `In Review` signals.
+267. Continue Phase 51C only with downstream electric-service or energization, built wastewater and IRWP infrastructure, Phoenix permits and occupancy, workforce outcomes, Toronto City Council and by-laws, and project permit/start/completion evidence. Status: next.
 
 ## 10. Current Stage Map
 
-This checkpoint follows the completed Phase 50B evidence-conversion batch and preserves v0.1.1 as a frozen release candidate.
+This checkpoint follows the completed Phase 51B local evidence-conversion batch and preserves v0.1.1 as a frozen release candidate.
 
 FTFN is no longer only a concept or documentation project. It now has:
 
@@ -1147,13 +1148,16 @@ Completed:
 - Promoted 36 additional source records in Phase 49, bringing the source library to 102 records and adding stronger meta-catalog, funding, research, patent, water, minerals, agriculture, space, finance, and local-system rails.
 - Added 18 promoted-source candidates to the private update queue as Batch 02.
 - Completed Phase 50B at six bounded `In Review` additions spanning Grants.gov/DOE, MAG Open Data, USAspending, NSF Awards, USGS gallium, and a named Toronto application.
+- Completed Phase 51A with named SRP implementation, Phoenix provider-water, and Toronto staff-recommendation/servicing records.
+- Completed Phase 51B with an SRP large-load tariff, Phoenix-TSMC wastewater agreement, TSMC-campus PUD, technician apprenticeship, Toronto committee recommendation, and citywide delivery baseline.
+- Reached 111 sources, 31 signals, five update entries, and 205 built pages while keeping all new signals `In Review`.
 
 Next candidate work:
 
-- Recheck NOAA CPC ENSO, ACC eDocket, Toronto application 24 254930, and Ontario Housing Supply Progress.
+- Recheck NOAA CPC ENSO, downstream records for Toronto application 24 254930, and the selected Arizona service, infrastructure, permit, and workforce records.
 - Decide whether In Review local systems and dependency maps should remain indexable or move to clearer research/noindex treatment before launch.
-- Select the next named local records: utility dockets, water-provider records, municipal servicing records, permitting records, workforce sources, completion records, and facility-level evidence.
-- Prioritize Phase 51 named Arizona power/water and Ontario decision/servicing/permit/completion records; keep OSTI, patents, space licensing, hazard, and agriculture biotechnology as later bounded candidates.
+- Select only downstream named local records: electric-service agreements or energization, completed wastewater and reclaimed-water infrastructure, Phoenix permits and occupancy, apprenticeship outcomes, Toronto City Council and by-laws, and project start/completion evidence.
+- Prioritize Phase 51C operating and delivery proof; keep OSTI, patents, space licensing, hazard, and agriculture biotechnology as later bounded candidates.
 - Repair broad In Review signals into dated source-backed records where the expanded source registry supports a specific update.
 - Activate the private source-candidate registry in Supabase before another broad public source promotion batch.
 
@@ -1171,7 +1175,7 @@ Strengthen local-system profiles so they become more than conceptual constraint 
 
 Candidate work:
 
-- Add specific utility filings, provider records, municipal servicing records, permitting records, workforce sources, and facility-level evidence where available.
+- Follow the Phase 51B records into customer service, built infrastructure, permit, inspection, workforce-outcome, by-law, start, completion, and occupancy evidence.
 - Repair local signals only when evidence supports a narrower claim.
 - Keep local conclusions cautious until project-level evidence exists.
 

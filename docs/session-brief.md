@@ -89,14 +89,14 @@ What is now stable:
 - Phase 49 expanded the source library to 102 records, including broad official catalogs, funding and spending APIs, international statistics, research APIs, patent/IP sources, water and mineral datasets, space licensing, agriculture biotechnology regulation, and Phoenix/MAG local-system data.
 - Phase 50 completed its six-item bounded evidence batch: DOE/Grants.gov, MAG projections, USAspending award DEMS0000003, NSF award 2433348, USGS 2026 gallium, and Toronto application 24 254930.
 - Phase 52A added the validated public update log, three versioned data exports, and the pre-Supabase public/private contract.
-- Phase 51A added named SRP utility, Phoenix provider-water, and Toronto staff-recommendation/servicing records; the library now has 25 signals.
+- Phase 51B added named large-load, industrial wastewater, Phoenix planning, facility-workforce, Toronto committee, and citywide delivery records; the library now has 31 signals.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
 - Frozen v0.1.1 desktop/mobile and indexing QA passed locally; no preview deployment was created.
 
 What is still prelaunch scaffolding:
 
 - Three signal records are `Published`.
-- Eighteen signal records are still `In Review`; one remains `Draft Sample`.
+- Twenty-seven signal records are still `In Review`; one remains `Draft Sample`.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -106,14 +106,14 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should now use the generated Source Monitor, Source Coverage matrix, signals roadmap, authority red-team plan, authoritative live source plan, source broadening plan, private update queue, and signal repair workflow together. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phase 52A made the public data contract explicit; and Phase 51A added the first named utility, provider-water, and project-servicing records. The next content step is Phase 51B project-service, permitting, workforce, and delivery evidence. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should now use the generated Source Monitor, Source Coverage matrix, signals roadmap, authority red-team plan, authoritative live source plan, source broadening plan, private update queue, and signal repair workflow together. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phase 52A made the public data contract explicit; Phase 51A added the first named utility, provider-water, and project-servicing records; and Phase 51B completed the next service, planning, workforce, committee, and delivery-baseline layer. The next content step is Phase 51C downstream evidence, not another general source expansion. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 25 signal records,
-- 105 source records,
+- 31 signal records,
+- 111 source records,
 - 17 topic records,
 - 2 local system profiles,
 - 10 organization records,
@@ -205,13 +205,15 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 50: Bounded Source Recheck And Content Expansion
+Phase 51B: Service, Permitting, Workforce, And Delivery Records
 ```
 
 Key files:
 
 - `docs/work-packages/phase-49-broad-source-promotion-batch.md`
 - `docs/work-packages/phase-50-bounded-source-recheck-and-content-expansion.md`
+- `docs/work-packages/phase-51a-named-utility-water-and-servicing-records.md`
+- `docs/work-packages/phase-51b-service-permitting-workforce-and-delivery-records.md`
 - `docs/source-broadening-and-intake-plan.md`
 - `docs/private-update-queue.md`
 - `docs/signal-repair-workflow.md`
@@ -262,16 +264,16 @@ Key files:
 Next active content phase identified in the roadmap:
 
 ```text
-Phase 51B: Project Service, Permitting, Workforce, And Delivery Evidence
+Phase 51C: Downstream Service, Construction, Permit, And Delivery Evidence
 ```
 
 Expected focus:
 
-- select a customer- or project-specific Arizona power service, tariff, load, or interconnection record,
-- select an industrial water service, demand, discharge, reuse, or infrastructure record,
-- add a Phoenix permit, zoning, planning, or inspection record,
-- track Toronto application 24 254930 into Council/by-law and building-permit evidence,
-- add one workforce or delivery-capacity record for each dossier,
+- select a named Arizona electric-service agreement, interconnection, construction, energization, or project-load record,
+- track the TSMC wastewater improvements and initial industrial reclaimed water plant into construction and operating evidence,
+- add named Phoenix site, civil, grading, or building permits, inspections, or certificates of occupancy,
+- add apprenticeship completion, credential, retention, placement, or labor-supply evidence,
+- track Toronto application 24 254930 into City Council, enacted by-laws, building permit, start, completion, and occupancy,
 - keep all additions `In Review` and preserve downstream evidence gates,
 - keep Git and the static build as the public publication gate,
 - activate the private Supabase authority loop separately when project access is ready,
@@ -342,16 +344,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed phase:
-Phase 51A: Named Utility, Water, And Servicing Records.
+Phase 51B: Service, Permitting, Workforce, And Delivery Records.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 development: package 0.2.0-dev, 105 sources, 25 signals, 17 topics, 4 updates, 193 pages, and 3 public JSON endpoints on codex/phase51-content.
+v0.2 development: package 0.2.0-dev, 111 sources, 31 signals, 17 topics, 5 updates, 205 pages, and 3 public JSON endpoints on codex/phase51-content.
 
 Next roadmap phase:
-Continue Phase 51B with project-specific Arizona power and water service records, Phoenix permitting, Toronto Council/by-law or building-permit follow-through, and workforce or delivery evidence. Activate the private Supabase authority loop in parallel when project access is ready.
+Continue Phase 51C only with downstream evidence: named Arizona electric service or energization, built wastewater and IRWP infrastructure, Phoenix permits and occupancy, apprenticeship outcomes, Toronto City Council and by-laws, and the named project's permit/start/completion trail. Activate the private Supabase authority loop in parallel when project access is ready.
 
 Please confirm the current state from the docs, then generate the next phase prompt before implementing.
 ```

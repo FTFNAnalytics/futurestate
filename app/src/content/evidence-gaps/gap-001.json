@@ -10,11 +10,11 @@
   "constraint_tags": ["Power", "Infrastructure", "Regulation", "Data Quality"],
   "question": "Which utility records show real power capacity for semiconductor and AI infrastructure?",
   "why_it_matters": "State-level electricity baselines are useful, but power availability for fabs, suppliers, and compute infrastructure depends on utility planning, interconnection, rates, service territory, and facility load evidence.",
-  "current_support": "FTFN has EIA Arizona electricity context, ACC utility-regulation and eDocket layers, and SRP's named 2025 Integrated System Plan Actions Progress Report documenting resource, distribution, siting, and transmission actions.",
+  "current_support": "FTFN has EIA Arizona electricity context, ACC utility-regulation and eDocket layers, SRP's named 2025 Integrated System Plan Actions Progress Report, and the November 2025 E-67 large-load price plan defining service, forecast, billing-demand, maximum-load, and possible customer-funded infrastructure conditions for new accounts at or forecast to reach 20 MW.",
   "missing_evidence": [
     "interconnection queues",
-    "tariff filings",
-    "rate cases",
+    "named customer tariff treatment and facilities charges",
+    "executed electric-service agreements",
     "service-territory evidence",
     "facility load estimates",
     "customer-specific service studies and agreements"
@@ -29,10 +29,10 @@
   ],
   "candidate_records": [
     "specific ACC utility docket or order",
-    "SRP or APS customer-specific service and interconnection record",
+    "SRP or APS customer-specific service agreement or energization record",
     "semiconductor facility load or service agreement evidence"
   ],
-  "next_action": "Use ACC eDocket and utility records to identify a customer- or project-specific service, interconnection, tariff, or load record before making site-level power claims.",
+  "next_action": "Identify a named semiconductor or compute customer's electric-service agreement, facilities charge, interconnection, construction, energization, or disclosed load record before making site-level power claims.",
   "future_data_model_need": ["Utility Filing", "Facility", "Dataset"],
   "related_source_ids": [
     "source-eia-arizona-electricity-profile",
@@ -40,12 +40,14 @@
     "source-arizona-corporation-commission-utilities",
     "source-arizona-corporation-commission-edocket",
     "source-srp-resource-planning",
-    "source-srp-2025-isp-actions-progress-report"
+    "source-srp-2025-isp-actions-progress-report",
+    "source-srp-e67-large-load-price-plan-2025"
   ],
   "related_signal_ids": [
     "signal-arizona-electricity-profile-chip-corridor-power-constraint",
-    "signal-srp-2025-isp-actions-valley-power-buildout"
+    "signal-srp-2025-isp-actions-valley-power-buildout",
+    "signal-srp-e67-large-load-service-conditions"
   ],
   "related_local_system_ids": ["local-us-southwest-chip-corridor"],
-  "notes": "Phase 51 added a named utility implementation report. The gap remains open at the project-service layer: system plans and aggregate megawatts do not prove a site can be connected or served."
+  "notes": "Phase 51B added the named E-67 large-load tariff. The gap remains open at the customer-service layer: a tariff defines conditions but does not prove adequate facilities, an executed agreement, an interconnection date, or energization for a named site."
 }

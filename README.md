@@ -101,6 +101,7 @@ It is a stack of dependencies.
 - [Phase 49 Work Package](docs/work-packages/phase-49-broad-source-promotion-batch.md) - 36-source promotion batch for v0.2 authority breadth.
 - [Phase 50 Work Package](docs/work-packages/phase-50-bounded-source-recheck-and-content-expansion.md) - completed six-record bounded evidence-conversion batch spanning funding, research, commodities, and named local records.
 - [Phase 51A Work Package](docs/work-packages/phase-51a-named-utility-water-and-servicing-records.md) - named SRP utility, Phoenix provider-water, and Toronto staff-recommendation/servicing records.
+- [Phase 51B Work Package](docs/work-packages/phase-51b-service-permitting-workforce-and-delivery-records.md) - large-load service, industrial wastewater, Phoenix planning, workforce, Toronto committee, and delivery-stage records.
 
 ## App Scaffold
 
@@ -219,7 +220,9 @@ Phase 52A completes the pre-Supabase public contract. It adds a validated public
 
 Phase 51A deepens both local dossiers with three named records: SRP's 2025 ISP Actions Progress Report, Phoenix Water Services' April 2026 council update, and Toronto's June 2026 decision report for application 24 254930. The batch adds three `In Review` signals, strengthens four evidence gaps, and reaches 105 sources, 25 signals, and 193 pages without treating system planning as site service or a staff recommendation as final approval.
 
-The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Local desktop/mobile and indexing QA passed with no release blocker; preview deployment remains unapproved and has not been created. Current work runs as `0.2.0-dev` on `codex/phase51-content`: 105 sources, 25 signals, 17 topics, four public update entries, 193 pages, and three versioned data exports. Phase 51B should add project-specific Arizona service evidence, Phoenix permitting, Toronto Council/by-law or permit follow-through, and workforce or delivery records while Supabase activation proceeds separately.
+Phase 51B completes the next local conversion layer with six official records: SRP's E-67 large-load tariff, a Phoenix-TSMC wastewater development agreement, the TSMC-campus PUD, a named technician apprenticeship, Scarborough Community Council follow-through for application 24 254930, and Toronto's 2025 Development Pipeline. The batch reaches 111 sources, 31 signals, and 205 pages while keeping all six additions `In Review` and preserving customer-service, built-infrastructure, permit, workforce-outcome, by-law, start, completion, and occupancy gates.
+
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Local desktop/mobile and indexing QA passed with no release blocker; preview deployment remains unapproved and has not been created. Current work runs as `0.2.0-dev` on `codex/phase51-content`: 111 sources, 31 signals, 17 topics, five public update entries, 205 pages, and three versioned data exports. Phase 51C should follow the selected records into downstream service, construction, permit, workforce-outcome, Council/by-law, start, completion, and occupancy evidence while Supabase activation proceeds separately.
 
 ## Working Rule
 

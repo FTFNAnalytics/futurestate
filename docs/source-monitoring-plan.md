@@ -89,7 +89,7 @@ Recommended next source-monitoring work:
 
 1. Turn high-priority probe-ready sources into a private scheduled-check queue before any public automated update behavior. Status: started in Phase 47 with `docs/private-update-queue.md`; first queue items moved into content in Phase 48.
 2. Create the source candidate registry described in `docs/source-broadening-and-intake-plan.md`. Status: still needed before another broad source-promotion batch.
-3. Add or select named Arizona utility dockets, provider water records, Phoenix permits/applications, and Ontario municipal servicing or completion evidence. Status: Phase 51A added named SRP, Phoenix Water Services, and Toronto servicing-review records; project-specific service, Phoenix permits, and downstream delivery records remain.
+3. Add or select named Arizona utility dockets, provider water records, Phoenix permits/applications, and Ontario municipal servicing or completion evidence. Status: Phase 51B added an SRP large-load tariff, a Phoenix-TSMC wastewater agreement, the TSMC-campus PUD, an apprenticeship record, Toronto committee follow-through, and a citywide delivery baseline; customer energization, built infrastructure, project permits, workforce outcomes, by-laws, and project completion remain.
 4. Move the best promoted Phase 49 source records into bounded source checks for patents, space licensing, agriculture biotechnology, finance, and local systems. Status: funding, research, and first commodity-specific selections completed in Phase 50B.
 5. Add source records for post-quantum migration guidance and procurement evidence.
 6. Add source records for FAA/NHTSA dated certification or safety updates.
@@ -157,6 +157,14 @@ Completed in Phase 51A:
 - added three `In Review` signals and strengthened four local evidence gaps,
 - validated the app at 105 sources, 25 signals, 17 topics, and 193 built pages,
 - kept customer-level service, final approvals, permits, starts, completions, and occupancy unresolved.
+
+Completed in Phase 51B:
+
+- added six official records spanning large-load power conditions, industrial wastewater infrastructure, a Phoenix planning case, facility-linked workforce training, Toronto committee follow-through, and citywide delivery stages,
+- added six `In Review` signals and kept the Published export unchanged,
+- advanced the source library to 111 records and the signal library to 31 records,
+- advanced `gap-003` to `Source Added` while keeping all five affected gaps unresolved at their next downstream gate,
+- preserved Git and the static build as the public publication gate.
 
 ## Not Yet
 
