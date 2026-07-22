@@ -38,7 +38,7 @@ npm run validate:content: passing
 npm run check: passing
 npm run build: passing
 static pages generated: 210
-current frozen deployment manifest: deployment/ftfn-v0.1.1-build.json
+current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
 
@@ -63,7 +63,7 @@ App routes currently include:
 - generated source monitor,
 - about page.
 
-## Checkpoint Assessment After Phase 53
+## Checkpoint Assessment After Phase 54
 
 FTFN has moved from concept and documentation into a functioning static-first MVP scaffold.
 
@@ -91,6 +91,10 @@ What is now stable:
 - Phase 52A added the validated public update log, three versioned data exports, and the pre-Supabase public/private contract.
 - Phase 51C added named Meta electric-service and TSMC facility milestones, repaired the apprenticeship signal with active cohort counts, and brought the library to 33 signals without forcing missing downstream outcomes.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
+- Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
+- All 12 sources supporting the nine Published signals carry a current `2026-07-22` check date.
+- The compact header defect was repaired: every brand and primary-navigation link now has at least a 44-pixel target.
+- `npm run verify:release` and `deployment/ftfn-v0.2-build.json` preserve the repeatable v0.2 release contract.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
 - Frozen v0.1.1 desktop/mobile and indexing QA passed locally; no preview deployment was created.
 
@@ -103,11 +107,11 @@ What is still prelaunch scaffolding:
 - Evidence gaps remain active and unresolved.
 - There is no automation, ingestion, database, alerting, user account system, or numeric 42/59 scoring. Public metadata datasets now exist as static exports.
 - There is no deployment, DNS change, analytics, newsletter capture, or Cloudflare Pages project yet.
-- Brand polish, v0.2 Phase 54 browser/accessibility QA, preview/post-deploy checks, analytics decisions, and final public launch approval still need later passes.
+- Preview/post-deploy checks, broader assistive-technology testing, analytics decisions, and final public launch approval still need later passes.
 
 Current strategic direction:
 
-FTFN should now use the generated Source Monitor, Source Coverage matrix, signals roadmap, authority red-team plan, authoritative live source plan, source broadening plan, private update queue, and signal repair workflow together. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phase 52A made the public data contract explicit; Phases 51A-51C built named local evidence trails; and Phase 53 produced a nine-record Published set. The next step is Phase 54 release QA and preview-gate review. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should now preserve the verified static candidate while making a deliberate preview decision. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phase 52A made the public data contract explicit; Phases 51A-51C built named local evidence trails; Phase 53 produced a nine-record Published set; and Phase 54 verified the complete public package locally. If a private preview is approved, deploy this exact candidate and rerun the launch-critical checks on the preview URL before any version freeze, DNS, or public-launch decision. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -214,7 +218,7 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 53: Publication Candidate Review
+Phase 54: v0.2 Release QA And Preview Gate
 ```
 
 Key files:
@@ -225,6 +229,11 @@ Key files:
 - `docs/work-packages/phase-51b-service-permitting-workforce-and-delivery-records.md`
 - `docs/work-packages/phase-51c-downstream-service-and-facility-evidence.md`
 - `docs/work-packages/phase-53-publication-candidate-review.md`
+- `docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md`
+- `docs/release-qa-v0.2.md`
+- `docs/launch-note-v0.2.md`
+- `deployment/ftfn-v0.2-build.json`
+- `app/scripts/verify-release.mjs`
 - `docs/source-broadening-and-intake-plan.md`
 - `docs/private-update-queue.md`
 - `docs/signal-repair-workflow.md`
@@ -270,24 +279,23 @@ Key files:
 - `docs/content-model.md`
 - `docs/documentation-map.md`
 
-## Next Roadmap Phase
+## Next Decision Gate
 
-Next active content phase identified in the roadmap:
+Next external decision identified in the roadmap:
 
 ```text
-Phase 54: v0.2 Release QA And Preview Gate
+Private v0.2 preview approval and post-deploy verification
 ```
 
-Expected focus:
+If approved:
 
-- run content, source-health, Astro, production-build, and desktop/mobile reader-journey QA,
-- verify the nine Published routes, update log, data exports, robots, sitemap, canonical, and noindex boundaries,
-- enlarge compact mobile-header touch targets during the v0.2 polish pass,
-- prepare a concise v0.2 launch note and limitations statement,
+- deploy the exact locally verified v0.2 candidate to a private preview URL,
+- repeat the launch-critical route, asset, metadata, indexing, and export checks on that URL,
+- decide separately whether to freeze package version `0.2.0`, attach `ftfn.io`, or launch publicly,
 - keep the Phase 51 wastewater, permit, workforce-outcome, Toronto Council, by-law, start, completion, and occupancy trails as dated monitors,
 - keep Git and the static build as the public publication gate,
 - activate the private Supabase authority loop separately when project access is ready,
-- do not deploy a preview, attach `ftfn.io`, change DNS, or publicly launch without explicit approval.
+- do not attach `ftfn.io`, change DNS, or publicly launch without explicit approval.
 
 ## Most Important Documents
 
@@ -331,6 +339,9 @@ Paste this into a new chat to continue efficiently:
 Continue FTFN from the current project state.
 
 Read:
+- docs/release-qa-v0.2.md
+- docs/launch-note-v0.2.md
+- deployment/ftfn-v0.2-build.json
 - docs/session-brief-v0.1.1.md
 - docs/roadmap-v0.1.1.md
 - deployment/ftfn-v0.1.1-build.json
@@ -354,16 +365,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed phase:
-Phase 53: Publication Candidate Review.
+Phase 54: v0.2 Release QA And Preview Gate.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 development: package 0.2.0-dev, 114 sources, 33 signals, 17 topics, 7 updates, 210 pages, 9 Published signals, and 3 public JSON endpoints on codex/phase51-content.
+v0.2 local release candidate: package 0.2.0-dev, 114 sources, 33 signals, 17 topics, 7 updates, 210 pages, 9 Published signals, 3 public JSON endpoints, and passed local desktop/mobile release QA on codex/phase51-content.
 
-Next roadmap phase:
-Begin Phase 54 release QA and preview-gate review. Verify the complete public authority loop, keep unresolved Phase 51 trails as dated monitors, and activate the private Supabase authority loop in parallel when project access is ready.
+Next decision gate:
+Request explicit approval for a private preview. If approved, deploy the exact verified candidate and repeat the launch-critical checks before any package-version freeze, DNS, or public-launch decision. Keep unresolved Phase 51 trails as dated monitors and activate the private Supabase authority loop separately when project access is ready.
 
 Please confirm the current state from the docs, then generate the next phase prompt before implementing.
 ```

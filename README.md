@@ -24,12 +24,15 @@ It is a stack of dependencies.
 - [v0.1.1 Session Brief](docs/session-brief-v0.1.1.md) - frozen deployment-candidate handoff after the first Phase 50 content batch.
 - [v0.1.1 Roadmap](docs/roadmap-v0.1.1.md) - release path for build verification, browser QA, preview deployment, and the v0.2 handoff.
 - [v0.1.1 Release QA](docs/release-qa-v0.1.1.md) - desktop, mobile, route, canonical, robots, sitemap, and publication-state indexing evidence for the frozen release.
-- [v0.2 Roadmap](docs/roadmap-v0.2.md) - current 3-to-4-week remaining build plan for the first authority-loop release.
+- [v0.2 Roadmap](docs/roadmap-v0.2.md) - completed authority-loop build plan and current preview-decision handoff.
+- [v0.2 Release QA](docs/release-qa-v0.2.md) - local desktop/mobile, accessibility, source-currentness, indexing, update-log, and export evidence.
+- [v0.2 Launch Note](docs/launch-note-v0.2.md) - public-facing release draft and explicit limitations statement.
 - [Signal Scale Scenarios](docs/signal-scale-scenarios.md) - maps the 25-35 signal and 70 signal corpus shapes.
 - [Private Update Queue](docs/private-update-queue.md) - first v0.2 source-review queue for human update operations.
 - [Signal Repair Workflow](docs/signal-repair-workflow.md) - rules for converting broad In Review records into dated source-backed signals.
 - [v0.2 Next Signal Set](docs/v0.2-next-signal-set.md) - first mapped batch of v0.2 signal repairs and new signal candidates.
 - [v0.1.1 Build Manifest](deployment/ftfn-v0.1.1-build.json) - machine-readable build/deployment configuration for the frozen static preview candidate.
+- [v0.2 Build Manifest](deployment/ftfn-v0.2-build.json) - machine-readable contract for the locally verified v0.2 candidate; preview remains deferred.
 - [Glossary](docs/glossary.md) - shared definitions for the project language.
 - [Taxonomy](docs/taxonomy.md) - framework layers, topic pillars, constraints, signal types, maturity levels, and relationship rules.
 - [Content Model](docs/content-model.md) - MVP entities, fields, examples, and validation rules.
@@ -104,6 +107,7 @@ It is a stack of dependencies.
 - [Phase 51B Work Package](docs/work-packages/phase-51b-service-permitting-workforce-and-delivery-records.md) - large-load service, industrial wastewater, Phoenix planning, workforce, Toronto committee, and delivery-stage records.
 - [Phase 51C Work Package](docs/work-packages/phase-51c-downstream-service-and-facility-evidence.md) - named Meta electric service, current TSMC fab milestones, and active apprenticeship-cohort evidence.
 - [Phase 53 Work Package](docs/work-packages/phase-53-publication-candidate-review.md) - nine-record publication set, current primary-source rechecks, and documented holds for every remaining signal.
+- [Phase 54 Work Package](docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md) - local release gate, header touch-target repair, reproducible assertions, and deferred preview decision.
 
 ## App Scaffold
 
@@ -118,6 +122,7 @@ npm run validate:content
 npm run source:health
 npm run check
 npm run build
+npm run verify:release
 ```
 
 The current `0.2.0-dev` build generates 210 static pages and three versioned JSON data endpoints. Nine signals are Published, 23 remain In Review, and one remains a Draft Sample.
@@ -206,6 +211,18 @@ deployment/ftfn-v0.1.1-build.json
 
 The original v0.1 artifacts remain as a historical Phase 40 checkpoint. The v0.1.1 build manifest is for preview deployment preparation only. It does not approve DNS changes, analytics, automated ingestion, automated publishing, or public launch.
 
+The current v0.2 local release-candidate artifacts are:
+
+```text
+docs/roadmap-v0.2.md
+docs/release-qa-v0.2.md
+docs/launch-note-v0.2.md
+docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md
+deployment/ftfn-v0.2-build.json
+```
+
+They record a passed local release gate. They do not show that a preview exists or approve hosting, DNS, analytics, or public launch.
+
 The v0.2 roadmap scopes the next milestone as the first authority-loop release: private source-update queue, source rechecks, dated signal repair, named local evidence trails, public update/correction log, and static data exports.
 
 The signal scale scenarios document maps how the content library should behave at 25 to 35 signals with 8 to 12 candidates, then at 70 signals with 24 candidates.
@@ -228,7 +245,9 @@ Phase 51C adds the first named online electric-service project to the Southwest 
 
 Phase 53 applies the publication gate to the complete 33-signal library. Six bounded official or primary-source records move to `Published`, bringing the public set to nine signals; 23 signals remain documented holds and the company-claim sample remains a Draft Sample. The seventh public update entry records the promotion batch.
 
-The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Local desktop/mobile and indexing QA passed with no release blocker; preview deployment remains unapproved and has not been created. Current work runs as `0.2.0-dev` on `codex/phase51-content`: 114 sources, 33 signals, 17 topics, seven public update entries, 210 pages, and three versioned data exports. Phase 54 release QA and preview-gate work is next; the unresolved Phase 51 trails remain dated monitors while Supabase activation proceeds separately.
+Phase 54 passes the v0.2 local release gate. All automated checks and a repeatable `verify:release` assertion pass; 12 of 12 sources supporting Published signals carry a current check; ten core journeys pass at desktop and mobile widths; header links now meet a 44-pixel minimum target; and robots, sitemap, canonical, noindex, update-log, and export boundaries match the manifest. The v0.2 launch note and limitations statement are ready.
+
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 114 sources, 33 signals, 17 topics, seven public update entries, 210 pages, and three versioned data exports. The next external step is an explicit private-preview decision; no preview, DNS change, or public launch occurred. The unresolved Phase 51 trails remain dated monitors while Supabase activation proceeds separately.
 
 ## Working Rule
 

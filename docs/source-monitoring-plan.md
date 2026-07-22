@@ -184,6 +184,15 @@ Completed in Phase 53:
 - preserved unresolved local outcomes and company claims as monitors or holds,
 - moved the default next step to Phase 54 release QA.
 
+Completed in Phase 54:
+
+- audited the 12 unique sources supporting the nine Published signals,
+- rechecked the remaining older CMHC construction-table directory and brought all 12 supporting sources to a `2026-07-22` check date,
+- added a repeatable release assertion that fails if a Published-support source is missing or no longer matches the manifest check date,
+- verified the Source Monitor and Source Coverage reader journeys at desktop and mobile widths,
+- preserved the unresolved Phase 51 trails as dated monitors rather than release blockers,
+- moved the default external step to an explicit private-preview decision while keeping Supabase as a separate private authority-loop track.
+
 ## Not Yet
 
 Do not add these until the manual monitor proves useful:

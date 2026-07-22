@@ -501,7 +501,7 @@ Purpose:
 - Define the first static launch package for `ftfn.io`.
 - Record the hosting path, build settings, sitemap and robots policy, route checklist, and launch note outline.
 - Keep deploy-readiness separate from the act of deploying.
-- Point to the current v0.1.1 build manifest when deployment preparation needs a machine-readable configuration.
+- Point to the current v0.2 build manifest when deployment preparation needs a machine-readable configuration while preserving v0.1.1 as history.
 
 Update when:
 
@@ -631,6 +631,45 @@ Do not use it for:
 - Replacing the master roadmap.
 - Public launch approval.
 - Provider-specific deployment secrets.
+
+### v0.2 Release QA
+
+Purpose:
+
+- Record the Phase 54 automated, source-currentness, desktop/mobile, accessibility, indexing, update-log, and export evidence.
+- Distinguish passed local QA from deferred preview/post-deploy verification.
+- Preserve the exact defect repaired during the release pass.
+
+Update when:
+
+- the verified v0.2 artifact changes,
+- a release assertion fails or is expanded,
+- approved preview deployment adds post-deploy evidence.
+
+Do not use it for:
+
+- authorizing preview deployment,
+- approving DNS or public launch,
+- claiming a complete WCAG or assistive-technology audit.
+
+### v0.2 Launch Note
+
+Purpose:
+
+- Provide the concise public-facing explanation of the first authority-loop candidate.
+- State the current Published set, product value, evidence posture, and limitations without overstating readiness.
+
+Update when:
+
+- the Published set or public feature list changes,
+- preview QA exposes a material limitation,
+- the user approves a final public release message.
+
+Do not use it for:
+
+- recording internal QA evidence,
+- approving a release,
+- promising live automation, API uptime, or local readiness.
 
 ### Signal Scale Scenarios
 
@@ -864,6 +903,26 @@ Do not use it for:
 - replacing the publication policy or correction path,
 - authorizing preview deployment, DNS, or public launch.
 
+### Phase 54 Work Package
+
+Purpose:
+
+- Record the complete v0.2 local release gate and the preview-decision boundary.
+- Preserve the current-source audit, 44-pixel header repair, browser matrix, reproducible assertions, manifest, and documentation outputs.
+- Make the next step an explicit private-preview decision rather than an implied deployment.
+
+Update when:
+
+- a local release assertion changes,
+- approved preview deployment adds post-deploy results,
+- a blocker is found against the exact v0.2 candidate.
+
+Do not use it for:
+
+- authorizing hosting, DNS, or public launch,
+- replacing the release QA evidence,
+- expanding the content scope after the release gate.
+
 ### v0.1 Build Manifest
 
 Purpose:
@@ -901,6 +960,26 @@ Do not use it for:
 - Storing secrets.
 - Approving deployment or DNS attachment.
 - Replacing browser QA or launch review.
+
+### v0.2 Build Manifest
+
+Purpose:
+
+- Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
+- Capture the 210-page build, nine Published signals, 114 sources, seven updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
+- Drive `npm run verify:release` without treating local verification as deployment.
+
+Update when:
+
+- the exact v0.2 candidate changes,
+- required outputs, counts, route checks, or release assertions change,
+- an approved preview adds post-deploy verification state.
+
+Do not use it for:
+
+- Storing secrets.
+- Approving preview deployment, DNS attachment, or public launch.
+- Replacing the human release decision.
 
 ### Technical Stack Decision
 

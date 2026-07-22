@@ -975,11 +975,13 @@ These are the next practical actions from the current project state.
 266. Continue Phase 51B with project-specific Arizona service records, Phoenix permitting, Toronto Council/by-law and permit follow-through, and workforce or delivery evidence. Status: complete; added six official records and six `In Review` signals.
 267. Continue Phase 51C only with downstream electric-service or energization, built wastewater and IRWP infrastructure, Phoenix permits and occupancy, workforce outcomes, Toronto City Council and by-laws, and project permit/start/completion evidence. Status: complete; added a named Meta online service project, current TSMC facility milestones, and active apprenticeship cohorts while leaving unsupported lanes open.
 268. Begin Phase 53 publication-candidate review from the 33-signal library. Status: complete; rechecked the public core, promoted six bounded records, reached nine Published signals, and documented 23 In Review holds plus one Draft Sample without weakening the evidence gates.
-269. Begin Phase 54 v0.2 release QA and preview-gate review. Status: next; verify browser journeys, accessibility, metadata, indexing, update-log and export contracts, then request explicit approval before any preview deployment or public launch action.
+269. Complete Phase 54 v0.2 release QA and preview-gate review. Status: complete; passed content, source-health, Astro, 210-page build, exact indexing/export assertions, and desktop/mobile browser QA; repaired header touch targets; added the v0.2 manifest, release QA, and launch note; explicitly deferred preview deployment.
+270. Decide whether to deploy the verified v0.2 candidate to a private preview. Status: next decision gate; requires explicit approval.
+271. If preview is approved, rerun the launch-critical route, asset, metadata, indexing, and export checks on the preview URL before any `0.2.0` version freeze, DNS, or public-launch decision.
 
 ## 10. Current Stage Map
 
-This checkpoint follows the completed Phase 53 publication review and preserves v0.1.1 as a frozen release candidate.
+This checkpoint follows the completed Phase 54 local release gate and preserves v0.1.1 as a frozen historical release candidate.
 
 FTFN is no longer only a concept or documentation project. It now has:
 
@@ -1018,10 +1020,10 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a second private queue batch that turns promoted Phase 49 source records into bounded review candidates.
 - six Phase 50 bounded source-item signals spanning a DOE/Grants.gov opportunity, MAG local projections, USAspending award, NSF award, USGS gallium record, and Toronto planning application.
 - a frozen v0.1.1 release package with app version 0.1.1, deployment manifest, versioned session brief, release roadmap, local release-QA evidence, and Git checkpoint `4845597`.
-- a current `0.2.0-dev` build with 114 sources, 33 signals, six update entries, and 210 pages.
-- an updated v0.2 plan that now moves from completed bounded evidence conversion and local dossier deepening into publication review and release QA.
+- a current `0.2.0-dev` build with 114 sources, 33 signals, seven update entries, nine Published signals, three public JSON exports, and 210 pages.
+- a passed v0.2 local release gate with a versioned manifest, repeatable release assertions, desktop/mobile browser evidence, repaired 44-pixel header targets, and a public-facing launch note plus limitations statement.
 
-It is not yet a deployed public launch product because optional deploy-preview execution, post-deploy QA, DNS attachment, analytics decisions, and final public launch approval remain separate. Frozen v0.1.1 local browser/indexing QA is complete; the current v0.2 build still requires its own Phase 54 QA. Three records are `Published`, twenty-nine signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint records, briefings, dependency maps, and most reviewed signals remain prelaunch material.
+It is not yet a deployed public launch product because optional private-preview execution, post-deploy QA, package-version freeze, DNS attachment, analytics decisions, and final public-launch approval remain separate. The current v0.2 build has passed Phase 54 locally. Nine records are `Published`, 23 signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint profiles, the briefing, dependency maps, and most reviewed signals remain prelaunch material.
 
 ### Stage 1: Reader-Journey QA
 

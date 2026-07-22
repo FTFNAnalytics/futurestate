@@ -9,7 +9,8 @@
     "preview": "node ./scripts/run-astro.mjs preview",
     "check": "node ./scripts/run-astro.mjs check",
     "validate:content": "node ./scripts/validate-content-references.mjs",
-    "source:health": "node ./scripts/source-health-report.mjs"
+    "source:health": "node ./scripts/source-health-report.mjs",
+    "verify:release": "node ./scripts/verify-release.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.0",

@@ -11,6 +11,9 @@ Use these execution artifacts with this roadmap:
 - `docs/v0.2-next-signal-set.md`
 - `docs/signal-scale-scenarios.md`
 - `docs/source-broadening-and-intake-plan.md`
+- `docs/release-qa-v0.2.md`
+- `docs/launch-note-v0.2.md`
+- `deployment/ftfn-v0.2-build.json`
 - the latest work package in `docs/work-packages/`
 
 ## North Star
@@ -37,7 +40,7 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after Phase 53:
+Current `0.2.0-dev` state after Phase 54:
 
 | Measure | Current Development State |
 | --- | ---: |
@@ -62,7 +65,7 @@ Existing operating assets:
 - versioned static source, topic, and Published-signal exports,
 - robots, sitemap, canonical, and indexing boundaries.
 
-The source-count and publication-set targets for v0.2 have been reached. The remaining release bottleneck is Phase 54 browser, accessibility, metadata, indexing, export, and preview-gate QA.
+The source-count, signal-count, publication-set, public-trust, data-export, and local release-QA targets for v0.2 have been reached. The remaining external gate is an optional private preview and post-deploy verification, which requires explicit approval.
 
 ## v0.2 Product Promise
 
@@ -300,13 +303,13 @@ Goal: verify the full authority-loop build before wider sharing.
 
 Deliverables:
 
-- run all content, source health, Astro, and production build checks,
-- run desktop and mobile QA on core reader journeys,
-- enlarge compact mobile-header touch targets during the v0.2 polish pass,
-- verify robots, sitemap, canonical, and noindex boundaries,
-- verify update log and static exports,
-- verify launch-critical routes on a preview deployment if approved,
-- prepare a concise v0.2 launch note and limitations statement.
+- [x] run all content, source health, Astro, and production build checks,
+- [x] run desktop and mobile QA on core reader journeys,
+- [x] enlarge compact mobile-header touch targets during the v0.2 polish pass,
+- [x] verify robots, sitemap, canonical, and noindex boundaries,
+- [x] verify update log and static exports,
+- [x] verify launch-critical routes locally and explicitly defer preview verification because deployment was not approved,
+- [x] prepare a concise v0.2 launch note and limitations statement.
 
 Exit criteria:
 
@@ -314,6 +317,15 @@ Exit criteria:
 - preview route checks pass or deployment is explicitly deferred,
 - every Published record has a current source check,
 - user explicitly approves any public launch or DNS action.
+
+Phase 54 status: complete locally.
+
+- all content, source-health, Astro, build, and versioned release assertions pass,
+- the build produces 210 HTML pages and exact public exports for 114 sources, 17 topics, and nine Published signals,
+- all 12 sources supporting Published signals carry a `2026-07-22` check date,
+- ten core journeys pass at 1440 × 900 and 390 × 844 without a checked layout, semantic, indexing, or browser-console blocker,
+- brand and navigation targets now meet a 44-pixel minimum,
+- preview deployment is explicitly deferred; no hosting, DNS, or public-launch action occurred.
 
 ## Timeline
 
@@ -325,11 +337,10 @@ Recommended active schedule:
 | Week 2 | Phase 51 | named Arizona and Ontario evidence trails; 25+ total signals |
 | Week 3 | Phase 52 | update log, static exports, source candidate registry |
 | Completed | Phase 53 | nine Published records and a documented 23-record review shelf |
-| Next | Phase 54 and buffer | browser QA, preview verification, repairs, release decision |
+| Completed | Phase 54 | local release gate, touch-target repair, v0.2 manifest, launch note, preview explicitly deferred |
+| Decision gate | Private preview | approved deployment, post-deploy QA, then a separate release/DNS decision |
 
-Expected remaining active release work after Phase 53: about 2 to 4 focused days, excluding an optional preview deployment or Supabase activation.
-
-A 2-to-3-week narrower candidate is possible by holding the active source library near 110, limiting local work to the strongest named records, and deferring nonessential Source Monitor UX refinements. The publication and evidence gates should not be shortened.
+The planned v0.2 local build is complete. Remaining release work is conditional: a private preview and post-deploy QA if approved, followed by separate package-version, DNS, and public-launch decisions. Supabase activation remains a parallel private-backend track.
 
 ## Source Update Operating Loop
 
@@ -361,6 +372,8 @@ v0.2 is successful when:
 - release QA is repeatable,
 - no automated process publishes claims without review.
 
+All nine local success criteria pass in the Phase 54 candidate. Preview and public launch are separate operational approvals rather than content-build criteria.
+
 ## Immediate Next Step
 
-Begin Phase 54 release QA and preview-gate review. Run all content, source-health, Astro, and production-build checks; test desktop and mobile reader journeys; verify the nine Published routes, update log, exports, robots, sitemap, canonical, and noindex boundaries; and prepare the v0.2 launch note and limitations statement. Keep preview deployment, DNS, and public launch behind explicit approval.
+Request an explicit decision on a private v0.2 preview. If approved, deploy the exact candidate recorded in `deployment/ftfn-v0.2-build.json`, repeat the launch-critical route and metadata checks on the preview URL, and then decide separately whether to freeze package version `0.2.0`, attach `ftfn.io`, or launch publicly. Keep DNS and public launch behind explicit approval. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

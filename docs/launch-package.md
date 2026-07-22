@@ -47,15 +47,15 @@ Production branch: main or the chosen launch branch
 Node version: use the platform default unless build output says otherwise
 ```
 
-The current v0.1.1 build manifest is:
+The current v0.2 local release manifest is:
 
 ```text
-deployment/ftfn-v0.1.1-build.json
+deployment/ftfn-v0.2-build.json
 ```
 
-The original `deployment/ftfn-v0.1-build.json` remains the historical Phase 40 checkpoint.
+The original `deployment/ftfn-v0.1-build.json` remains the historical Phase 40 checkpoint, and `deployment/ftfn-v0.1.1-build.json` preserves the frozen 182-page candidate.
 
-Local `v0.1.1` release QA passed on 2026-07-21 against frozen Git commit `4845597`; see `docs/release-qa-v0.1.1.md`. This does not authorize deployment.
+Local v0.2 release QA passed on 2026-07-22; see `docs/release-qa-v0.2.md`. This does not authorize deployment. The package remains `0.2.0-dev` until an approved preview and release decision.
 
 Do not deploy in this phase. The next deploy step should be explicit and user-approved.
 
@@ -70,6 +70,8 @@ Phase 36 added:
 - `noindex, follow` for non-published signal and briefing detail pages
 - a generated source monitor at `https://ftfn.io/atlas/source-monitor/`
 - a generated source coverage matrix at `https://ftfn.io/atlas/source-coverage/`
+- a public update log at `https://ftfn.io/updates/`
+- versioned static metadata exports at `/data/signals.json`, `/data/sources.json`, and `/data/topics.json`
 
 Sitemap policy:
 
@@ -106,6 +108,12 @@ Check these before deploy and after deploy:
 /signals/noaa-enso-discussion-el-nino-advisory-climate-risk-clock/
 /signals/usgs-mineral-commodity-summaries-2026-critical-materials-baseline/
 /signals/nist-pqc-standards-quantum-risk-migration-work/
+/signals/doe-critical-minerals-materials-accelerator-nofo/
+/signals/nsf-ai-materials-institute-award-2433348/
+/signals/usgs-2026-gallium-import-supplied-semiconductor-constraint/
+/signals/srp-e67-large-load-service-conditions/
+/signals/srp-project-huckleberry-meta-mesa-online-service/
+/signals/toronto-2025-development-pipeline-delivery-gap/
 /atlas/
 /atlas/sources/
 /atlas/source-monitor/
@@ -114,7 +122,11 @@ Check these before deploy and after deploy:
 /atlas/local-systems/
 /atlas/dependency-maps/
 /method/
+/updates/
 /about/
+/data/signals.json
+/data/sources.json
+/data/topics.json
 /robots.txt
 /sitemap.xml
 ```
@@ -138,15 +150,19 @@ Expected results:
 - [x] Run `npm run build` from `app/`.
 - [x] Confirm `app/dist/robots.txt` exists.
 - [x] Confirm `app/dist/sitemap.xml` exists.
-- [x] Confirm sitemap includes the three Published signal URLs.
+- [x] Run `npm run source:health` from `app/`.
+- [x] Run `npm run verify:release` from `app/`.
+- [x] Confirm sitemap includes exactly the nine Published signal URLs.
 - [x] Confirm sitemap excludes In Review and Draft Sample signal URLs.
 - [x] Confirm non-published signal and briefing pages have `noindex, follow`.
 - [x] Confirm `/atlas/source-monitor/` renders and shows review due/watch soon/current source states.
 - [x] Confirm `/atlas/source-coverage/` renders and shows watch-lane/topic source coverage.
-- [x] Smoke test launch-critical local routes.
-- [x] Run desktop and mobile browser checks for homepage, signals, Method, and at least one Published signal.
+- [x] Confirm the seven-entry update log and all three static exports.
+- [x] Smoke test ten launch-critical local routes.
+- [x] Run desktop and mobile browser checks at 1440 × 900 and 390 × 844.
+- [x] Confirm brand and primary-navigation targets meet a 44-pixel minimum.
 
-Evidence: `docs/release-qa-v0.1.1.md`.
+Evidence: `docs/release-qa-v0.2.md` and `docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md`.
 
 ## Deploy Checklist
 
@@ -163,6 +179,12 @@ Do not execute these steps until the user explicitly asks to deploy.
 - [ ] Decide whether to add analytics in a later phase.
 
 ## Launch Note Outline
+
+The current public-facing draft and limitations statement are in:
+
+```text
+docs/launch-note-v0.2.md
+```
 
 Working title:
 
@@ -181,7 +203,7 @@ Outline:
 3. State the editorial method: summarize, classify, contextualize, cite.
 4. Explain why local constraints matter.
 5. Name the first published records as examples of source-backed signals.
-6. Acknowledge what is not built yet: automation, scoring, data exports, alerts, and full local intelligence.
+6. Acknowledge what is not built yet: automation, scoring, live API service, alerts, and full local intelligence. Static metadata exports are available.
 7. Invite readers to use FTFN as a map of what could be, what it depends on, and what choices remain.
 
 ## Out Of Scope For Launch Readiness

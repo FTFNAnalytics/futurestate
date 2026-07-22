@@ -1965,3 +1965,28 @@ Implemented:
 Boundary:
 
 Funding is not an award or result. An award is not a delivered research outcome. National commodity data is not a named-facility shortage. A tariff is not customer capacity. One online service project is not corridor readiness. A municipal development pipeline is not guaranteed completed housing. Preview deployment, DNS, and public launch still require explicit approval.
+
+## 2026-07-22: Phase 54 Passes Locally And Stops At The Preview Gate
+
+Decision:
+
+FTFN will treat the current `0.2.0-dev` artifact as a locally verified v0.2 release candidate. The project will preserve a repeatable release contract and request an explicit private-preview decision rather than deploying automatically.
+
+Rationale:
+
+The complete authority-loop package now passes content, source-health, Astro, 210-page build, indexing, export, desktop, mobile, and focused accessibility checks. The only confirmed UI defect was the compact header target height; it was repaired to a 44-pixel minimum without broad visual changes. A preview would create a new external state and post-deploy test surface, so local readiness does not imply authorization to host, attach DNS, or launch.
+
+Implemented:
+
+- rechecked the official CMHC construction-table directory and brought all 12 Published-support sources to a `2026-07-22` check date,
+- added `deployment/ftfn-v0.2-build.json`,
+- added `npm run verify:release` for required-output, count, source-date, update-log, export, sitemap, canonical, robots, and indexing assertions,
+- tested ten core reader journeys at 1440 × 900 and 390 × 844,
+- confirmed the Published filter returns exactly nine Published records,
+- enlarged brand and primary-navigation targets to a minimum 44 × 44 pixels,
+- added the v0.2 release QA, launch note, limitations statement, and Phase 54 work package,
+- moved the default next step to an explicit private-preview approval decision.
+
+Boundary:
+
+The package remains `0.2.0-dev`. No preview was deployed, no external host was configured, no DNS was changed, and no public launch was approved. The accessibility pass is focused release QA rather than a complete WCAG or assistive-technology audit. Supabase activation remains a separate private-backend track and must not bypass Git, human review, or the static publication gate.

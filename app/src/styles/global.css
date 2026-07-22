@@ -64,6 +64,10 @@ p {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
   font-weight: 800;
   letter-spacing: 0;
   text-decoration: none;
@@ -72,12 +76,18 @@ p {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-3);
+  gap: var(--space-2);
   color: var(--color-muted);
   font-size: 0.95rem;
 }
 
 .nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding-inline: var(--space-1);
   text-decoration: none;
 }
 
@@ -658,7 +668,8 @@ p {
   .site-header__inner {
     align-items: flex-start;
     flex-direction: column;
-    padding-block: var(--space-4);
+    gap: 0;
+    padding-block: var(--space-2);
   }
 
   .page-section,
