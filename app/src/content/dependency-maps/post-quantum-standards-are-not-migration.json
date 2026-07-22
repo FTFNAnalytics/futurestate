@@ -1,0 +1,145 @@
+{
+  "id": "dependency-map-post-quantum-standards-are-not-migration",
+  "title": "Post-quantum standards are not migration",
+  "slug": "post-quantum-standards-are-not-migration",
+  "summary": "A qualitative technology-readiness map showing how NIST post-quantum cryptography standards create a migration clock, while institution-level implementation evidence remains unresolved.",
+  "map_type": "Technology Readiness Map",
+  "record_status": "In Review",
+  "primary_topic": "Quantum",
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Cybersecurity",
+    "Standards",
+    "Compute",
+    "Labor",
+    "Unit Economics",
+    "Interpretation"
+  ],
+  "map_question": "How do post-quantum cryptography standards become operational migration work, and where does FTFN still lack implementation evidence?",
+  "interpretation_boundary": "This map shows that standards progress can create a security migration clock. It does not prove that any institution, vendor, sector, or local system has completed post-quantum migration.",
+  "source_ids": [
+    "source-nist-pqc"
+  ],
+  "signal_ids": [
+    "signal-sample-007"
+  ],
+  "technology_ids": [
+    "technology-post-quantum-cryptography"
+  ],
+  "local_system_ids": [],
+  "evidence_gap_ids": [
+    "gap-009"
+  ],
+  "nodes": [
+    {
+      "id": "node-quantum-topic",
+      "label": "Quantum",
+      "node_type": "Topic",
+      "record_id": "topic-quantum",
+      "note": "The topic frame connects quantum risk, standards, infrastructure obligations, and human-system migration choices."
+    },
+    {
+      "id": "node-nist-pqc-source",
+      "label": "NIST Post-Quantum Cryptography Project",
+      "node_type": "Source",
+      "record_id": "source-nist-pqc",
+      "note": "A Tier 1 standards source for PQC standards and migration context."
+    },
+    {
+      "id": "node-pqc-signal",
+      "label": "NIST PQC standards signal",
+      "node_type": "Signal",
+      "record_id": "signal-sample-007",
+      "note": "An in-review security signal framing PQC as near-term migration work rather than distant theory."
+    },
+    {
+      "id": "node-pqc-technology",
+      "label": "Post-Quantum Cryptography",
+      "node_type": "Technology",
+      "record_id": "technology-post-quantum-cryptography",
+      "note": "A source-backed technology profile for standards, algorithms, validation, and migration practices."
+    },
+    {
+      "id": "node-standards-adoption",
+      "label": "Standards adoption",
+      "node_type": "Constraint",
+      "note": "Standards must be adopted through inventories, procurement rules, software updates, validation, and vendor support."
+    },
+    {
+      "id": "node-cybersecurity-migration",
+      "label": "Cybersecurity migration",
+      "node_type": "Constraint",
+      "note": "Migration risk is shaped by legacy systems, stored encrypted data, critical infrastructure exposure, staffing, and execution timelines."
+    },
+    {
+      "id": "node-institution-migration-gap",
+      "label": "Institution-level migration evidence",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-009",
+      "note": "FTFN still needs procurement, inventory, vendor-readiness, and implementation evidence before stronger migration claims."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-quantum-topic",
+      "to": "node-pqc-technology",
+      "relationship": "Related Technology",
+      "confidence": "Supported",
+      "note": "The Quantum topic explicitly includes post-quantum cryptography and migration risk."
+    },
+    {
+      "from": "node-pqc-signal",
+      "to": "node-nist-pqc-source",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "The in-review signal cites NIST PQC as its source."
+    },
+    {
+      "from": "node-pqc-signal",
+      "to": "node-pqc-technology",
+      "relationship": "Related Technology",
+      "confidence": "Supported",
+      "note": "The signal and technology profile share the same primary source and topic context."
+    },
+    {
+      "from": "node-pqc-technology",
+      "to": "node-standards-adoption",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "The technology record lists standards adoption as a dependency."
+    },
+    {
+      "from": "node-pqc-technology",
+      "to": "node-cybersecurity-migration",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "The current record base supports cybersecurity and migration framing, but not sector-specific execution claims."
+    },
+    {
+      "from": "node-cybersecurity-migration",
+      "to": "node-institution-migration-gap",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Institution-level migration evidence remains an open evidence gap."
+    }
+  ],
+  "what_this_map_supports": [
+    "FTFN can distinguish standards progress from operational migration progress.",
+    "FTFN can show how a standards source, a security signal, a technology profile, and an evidence gap fit together.",
+    "Post-quantum cryptography can be tracked as infrastructure migration work without numeric scoring."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not prove that any institution has completed post-quantum migration.",
+    "It does not prove vendor readiness, procurement compliance, cryptographic inventory completeness, or critical-infrastructure execution.",
+    "It does not rank quantum risk or create a 42/59 score."
+  ],
+  "next_records_needed": [
+    "sector-specific PQC migration guidance from an official source.",
+    "procurement or compliance records that require PQC migration planning.",
+    "vendor-readiness evidence tied to specific software, hardware, or service categories.",
+    "institution-level implementation plans or audit-ready migration milestones."
+  ]
+}

@@ -1,0 +1,249 @@
+---
+import { getCollection } from "astro:content";
+import DependencyMapLinks from "../../../components/atlas/DependencyMapLinks.astro";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import { formatDate, getStatusTone, getVerificationTone } from "../../../lib/editorial";
+import { getSourceFreshness, getSourceHealth } from "../../../lib/sourceFreshness";
+
+export async function getStaticPaths() {
+  const sources = await getCollection("sources");
+
+  return sources.map((source) => ({
+    params: { id: source.data.id },
+    props: { source }
+  }));
+}
+
+const { source } = Astro.props;
+const signals = (await getCollection("signals")).filter((signal) =>
+  signal.data.source_ids.includes(source.data.id)
+);
+const organizations = (await getCollection("organizations")).filter((organization) =>
+  organization.data.source_ids.includes(source.data.id)
+);
+const technologies = (await getCollection("technologies")).filter((technology) =>
+  technology.data.source_ids.includes(source.data.id)
+);
+const localSystems = (await getCollection("localSystems")).filter((system) =>
+  system.data.source_ids.includes(source.data.id)
+);
+const relatedDependencyMaps = (await getCollection("dependencyMaps"))
+  .filter((dependencyMap) => dependencyMap.data.source_ids.includes(source.data.id))
+  .map((dependencyMap) => ({
+    map: dependencyMap,
+    relationship: "Source ID",
+    note: "This dependency map explicitly cites this source as part of its evidence trail."
+  }));
+const sourceFreshness = getSourceFreshness(
+  source.data.last_checked_date,
+  source.data.update_frequency,
+  source.data.capture_priority,
+  new Date(),
+  source.data.review_cadence_days
+);
+const sourceHealth = getSourceHealth(source.data);
+const endpointLinks = [
+  ["API", source.data.api_url],
+  ["Feed", source.data.feed_url],
+  ["Data Download", source.data.data_download_url],
+  ["Docket Search", source.data.docket_search_url],
+  ["Release Calendar", source.data.release_calendar_url]
+].flatMap(([label, href]) => href ? [{ label, href }] : []);
+---
+
+<BaseLayout title={`${source.data.name} | FTFN`} description={source.data.known_limitations}>
+  <section class="page-section">
+    <div class="eyebrow">Source Profile</div>
+    <h1 class="page-title">{source.data.name}</h1>
+    <p class="lede">{source.data.known_limitations}</p>
+    <div class="meta-row">
+      <MetaPill label={source.data.source_type} />
+      <MetaPill label={source.data.credibility_level} />
+      <MetaPill label={source.data.country_or_region} />
+      <MetaPill label={sourceFreshness.status} tone={sourceFreshness.tone} />
+      <MetaPill label={sourceHealth.status} tone={sourceHealth.tone} />
+      <MetaPill label={source.data.live_access_type} />
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      <article class="record-card">
+        <h2>Source Details</h2>
+        <p><strong>Update frequency:</strong> {source.data.update_frequency}</p>
+        <p><strong>Capture priority:</strong> {source.data.capture_priority}</p>
+        <p><strong>Last checked:</strong> {formatDate(source.data.last_checked_date)}</p>
+        <p><strong>Review cadence:</strong> {sourceFreshness.reviewAfterDays} days</p>
+        <p><strong>Freshness:</strong> {sourceFreshness.note}</p>
+        <p><strong>Health:</strong> {sourceHealth.note}</p>
+        <p><a href={source.data.url}>Open original source</a></p>
+      </article>
+      <article class="record-card">
+        <h2>Primary Topics</h2>
+        <div class="meta-row">
+          {source.data.primary_topics.map((topic) => <MetaPill label={topic} />)}
+        </div>
+      </article>
+      <article class="record-card">
+        <h2>Monitoring Metadata</h2>
+        <p><strong>Status:</strong> {source.data.monitoring_status}</p>
+        <p><strong>Owner:</strong> {source.data.source_owner ?? "Not specified"}</p>
+        <p><strong>Jurisdiction:</strong> {source.data.jurisdiction ?? "Not specified"}</p>
+        <p><strong>Access type:</strong> {source.data.live_access_type}</p>
+        <p><strong>Endpoint count:</strong> {sourceHealth.endpointCount}</p>
+      </article>
+      <article class="record-card">
+        <h2>Watch Lanes</h2>
+        <div class="meta-row">
+          {source.data.watch_lanes.length > 0 ? (
+            source.data.watch_lanes.map((lane) => <MetaPill label={lane} tone="review" />)
+          ) : (
+            <MetaPill label="Unassigned" tone="draft" />
+          )}
+        </div>
+      </article>
+      <article class="record-card">
+        <h2>Coverage Role</h2>
+        <div class="meta-row">
+          {source.data.coverage_role.length > 0 ? (
+            source.data.coverage_role.map((role) => <MetaPill label={role} tone="possibility" />)
+          ) : (
+            <MetaPill label="Unassigned" tone="draft" />
+          )}
+        </div>
+      </article>
+      <article class="record-card">
+        <h2>Live Links</h2>
+        {endpointLinks.length > 0 ? (
+          <ul>
+            {endpointLinks.map((link) => (
+              <li><a href={link.href}>{link.label}</a></li>
+            ))}
+          </ul>
+        ) : (
+          <p class="muted">No machine-readable endpoint field is attached yet.</p>
+        )}
+      </article>
+    </div>
+  </section>
+
+  {source.data.automation_notes && (
+    <section class="page-section">
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Automation Notes</div>
+          <h2>How this source can feed future updates.</h2>
+        </div>
+        <p>{source.data.automation_notes}</p>
+      </div>
+    </section>
+  )}
+
+  {(organizations.length > 0 || technologies.length > 0) && (
+    <section class="page-section two-column-section">
+      <div>
+        <div class="section-heading section-heading--stacked">
+          <div>
+            <div class="eyebrow">Organizations</div>
+            <h2>Entity records using this source ID.</h2>
+          </div>
+        </div>
+        {organizations.length > 0 ? (
+          <div class="source-list">
+            {organizations.map((organization) => (
+              <article class="source-row">
+                <h3><a href={`/atlas/organizations/${organization.data.slug}/`}>{organization.data.name}</a></h3>
+                <p>{organization.data.summary}</p>
+                <div class="meta-row">
+                  <MetaPill label={organization.data.organization_type} />
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <p class="muted">No organization records currently reference this source.</p>
+        )}
+      </div>
+
+      <div>
+        <div class="section-heading section-heading--stacked">
+          <div>
+            <div class="eyebrow">Technologies</div>
+            <h2>Technology records using this source ID.</h2>
+          </div>
+        </div>
+        {technologies.length > 0 ? (
+          <div class="source-list">
+            {technologies.map((technology) => (
+              <article class="source-row">
+                <h3><a href={`/atlas/technologies/${technology.data.slug}/`}>{technology.data.name}</a></h3>
+                <p>{technology.data.summary}</p>
+                <div class="meta-row">
+                  <MetaPill label={technology.data.maturity_level} tone="possibility" />
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <p class="muted">No technology records currently reference this source.</p>
+        )}
+      </div>
+    </section>
+  )}
+
+  {localSystems.length > 0 && (
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Local Systems</div>
+          <h2>Receiving systems using this source.</h2>
+          <p>
+            These backlinks appear only when a local system profile explicitly
+            cites this source ID.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        {localSystems.map((system) => (
+          <article class="record-card">
+            <h3><a href={`/atlas/local-systems/${system.data.slug}/`}>{system.data.name}</a></h3>
+            <p>{system.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={system.data.system_type} />
+              <MetaPill label={system.data.geography} />
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <DependencyMapLinks
+    maps={relatedDependencyMaps}
+    title="Dependency maps using this source."
+    description="These maps cite this source by ID. Source backlinks show evidence support, not proof of local outcomes."
+  />
+
+  <section class="page-section">
+    <h2>Related Signals</h2>
+    {signals.length > 0 ? (
+      <div class="grid">
+        {signals.map((signal) => (
+          <article class="record-card">
+            <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+            <p>{signal.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={signal.data.record_status} tone={getStatusTone(signal.data.record_status)} />
+              <MetaPill label={signal.data.verification_status} tone={getVerificationTone(signal.data.verification_status)} />
+              <MetaPill label={signal.data.primary_topic} />
+              <MetaPill label={signal.data.signal_type} />
+            </div>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <p class="muted">No signal records currently cite this source.</p>
+    )}
+  </section>
+</BaseLayout>

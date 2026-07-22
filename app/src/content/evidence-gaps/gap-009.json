@@ -1,0 +1,39 @@
+{
+  "id": "gap-009",
+  "title": "Institution-level post-quantum cryptography migration evidence",
+  "slug": "gap-009-post-quantum-migration-evidence",
+  "status": "Open",
+  "priority": "Medium",
+  "local_system": "Cross-system",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": ["Enabling Infrastructure", "Human Systems"],
+  "constraint_tags": ["Standards", "Cybersecurity", "Labor", "Unit Economics"],
+  "question": "Which institutions are actually migrating to post-quantum cryptography?",
+  "why_it_matters": "Standards create the migration clock, but operational impact depends on procurement, inventories, vendors, budgets, timelines, and critical infrastructure execution.",
+  "current_support": "FTFN has NIST PQC as a standards source and an in-review PQC migration signal.",
+  "missing_evidence": [
+    "procurement rules",
+    "cryptographic inventory work",
+    "vendor readiness",
+    "migration timelines",
+    "critical infrastructure guidance"
+  ],
+  "likely_source_types": [
+    "government migration guidance",
+    "procurement rule",
+    "critical infrastructure advisory",
+    "vendor readiness source",
+    "institution-level implementation plan"
+  ],
+  "candidate_records": [
+    "sector-specific PQC migration guidance",
+    "federal procurement source",
+    "critical infrastructure migration signal"
+  ],
+  "next_action": "Add source records for migration guidance and procurement once a specific institution or sector is selected.",
+  "future_data_model_need": ["Policy or Regulation", "Local Actor", "Dataset"],
+  "related_source_ids": ["source-nist-pqc"],
+  "related_signal_ids": ["signal-sample-007"],
+  "related_local_system_ids": [],
+  "notes": "Useful future security and standards research queue item."
+}

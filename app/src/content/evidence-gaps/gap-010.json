@@ -1,0 +1,40 @@
+{
+  "id": "gap-010",
+  "title": "Independent evidence for eVTOL certification and service readiness",
+  "slug": "gap-010-evtol-certification-service-readiness",
+  "status": "Open",
+  "priority": "Low",
+  "local_system": "Cross-system",
+  "primary_topic": "Aviation",
+  "framework_layers": ["Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Certification", "Insurance", "Weather", "Public Trust"],
+  "question": "What turns eVTOL demonstrations into certified commercial service?",
+  "why_it_matters": "Company flight campaigns are useful signals, but commercial service depends on certification, operating approval, vertiports, insurance, local agreements, weather operations, and public trust.",
+  "current_support": "FTFN has FAA AAM source context, an in-review FAA AAM signal, and a Draft Sample company-claim eVTOL signal.",
+  "missing_evidence": [
+    "FAA certification milestones",
+    "operating approvals",
+    "vertiport permits",
+    "insurance evidence",
+    "city or airport agreements",
+    "weather operating limits"
+  ],
+  "likely_source_types": [
+    "FAA certification record",
+    "operating approval",
+    "airport or city agreement",
+    "vertiport permit",
+    "insurance or safety source"
+  ],
+  "candidate_records": [
+    "specific FAA certification milestone",
+    "airport operating agreement",
+    "vertiport permitting signal"
+  ],
+  "next_action": "Keep company flight campaigns as interested-party evidence until independent regulatory or local sources exist.",
+  "future_data_model_need": ["Project", "Permit", "Policy or Regulation"],
+  "related_source_ids": ["source-faa-aam", "source-joby-press-releases"],
+  "related_signal_ids": ["signal-sample-004", "signal-sample-010"],
+  "related_local_system_ids": [],
+  "notes": "Low priority because current MVP focus is local conversion evidence for energy, water, and housing."
+}

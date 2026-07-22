@@ -1,0 +1,41 @@
+{
+  "id": "gap-003",
+  "title": "U.S. Southwest semiconductor workforce and supplier scaling evidence",
+  "slug": "gap-003-chip-corridor-workforce-suppliers",
+  "status": "Open",
+  "priority": "High",
+  "local_system": "U.S. Southwest Chip Corridor",
+  "primary_topic": "Chips and Compute",
+  "framework_layers": ["Enabling Infrastructure", "Human Systems"],
+  "constraint_tags": ["Labor", "Supply Chain", "Manufacturing", "Capital"],
+  "question": "Can local supplier and workforce systems support semiconductor scaling?",
+  "why_it_matters": "Funded semiconductor projects only become operating capacity if labor pipelines, construction capacity, suppliers, training systems, and capital commitments can keep up.",
+  "current_support": "FTFN has national CHIPS program context, a hardened local system profile, and a selected MAG regional projections dataset for population, housing, and employment context. It still lacks workforce-pipeline, training-capacity, construction-labor, and supplier-network records.",
+  "missing_evidence": [
+    "workforce pipeline data",
+    "occupation-specific labor supply",
+    "training program capacity",
+    "supplier networks",
+    "construction labor availability",
+    "facility hiring data"
+  ],
+  "likely_source_types": [
+    "workforce agency data",
+    "economic development report",
+    "training institution data",
+    "company hiring record",
+    "supplier facility record"
+  ],
+  "candidate_records": [
+    "MAG 2023 population, housing, and employment projections",
+    "Arizona workforce development source",
+    "semiconductor training program source",
+    "supplier facility and hiring source"
+  ],
+  "next_action": "Pair the MAG projections layer with official workforce, training, supplier, construction labor, and economic-development records before making chip-corridor capacity claims.",
+  "future_data_model_need": ["Facility", "Local Actor", "Dataset"],
+  "related_source_ids": ["source-nist-chips", "source-maricopa-association-governments-open-data"],
+  "related_signal_ids": ["signal-sample-003", "signal-mag-2023-projections-phoenix-region-growth-evidence-layer"],
+  "related_local_system_ids": ["local-us-southwest-chip-corridor"],
+  "notes": "Phase 50 added a named regional planning dataset, but the gap remains open because manufacturing scale depends on people and suppliers as much as funding or regional growth context."
+}

@@ -1,0 +1,125 @@
+---
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+---
+
+<BaseLayout
+  title="Method and Publication Policy | FTFN"
+  description="How FTFN treats sources, evidence, corrections, launch candidates, and publication readiness."
+>
+  <section class="page-section">
+    <div class="eyebrow">Method</div>
+    <h1 class="page-title">Trust is part of the stack.</h1>
+    <p class="lede">
+      FTFN tracks frontier systems, but it does not treat every claim the same.
+      The method separates evidence, interpretation, source incentives, and
+      local limits before a record can become public intelligence.
+    </p>
+    <div class="meta-row">
+      <MetaPill label="No automated publishing" tone="urgency" />
+      <MetaPill label="Launch candidate is not Published" tone="review" />
+      <MetaPill label="Source limits stay visible" />
+    </div>
+  </section>
+
+  <section class="page-section status-panel" aria-label="Publication gate">
+    <article class="status-item">
+      <h2>1. Source</h2>
+      <p>Start with official, primary, institutional, or clearly labeled interested-party sources.</p>
+    </article>
+    <article class="status-item">
+      <h2>2. Review</h2>
+      <p>Classify evidence quality, maturity, dependencies, constraints, and unresolved gaps.</p>
+    </article>
+    <article class="status-item">
+      <h2>3. Publish</h2>
+      <p>Publish only after final copy, citation, caveat, metadata, and correction-policy checks.</p>
+    </article>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div class="prose">
+      <h2>Source Freshness</h2>
+      <p>
+        FTFN now generates a source monitor from the Atlas source records. It
+        compares each source's checked date, update cadence, and capture
+        priority to identify which sources are current, which should be watched,
+        and which are due for manual review.
+      </p>
+      <a class="inline-link" href="/atlas/source-monitor/">Open source monitor</a>
+    </div>
+
+    <div class="prose">
+      <h2>Self-Updating Boundary</h2>
+      <p>
+        The monitor can update whenever the static site rebuilds, but it does
+        not fetch sources, rewrite records, or publish automatically. It is a
+        control surface for editorial review, not an ingestion-to-public path.
+      </p>
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div class="prose">
+      <h2>Publication Policy</h2>
+      <p>
+        `Draft Sample`, `Draft`, and `In Review` are not public approval states.
+        A launch candidate is only a record selected for final review. `Published`
+        is reserved for records with visible sources, current checked dates,
+        defensible evidence labels, and a correction path.
+      </p>
+      <p>
+        If a source changes or a claim becomes stale, FTFN should move the record
+        to `Needs Update` before rewriting it. If a record is no longer current
+        intelligence, it should be archived rather than quietly left to drift.
+      </p>
+      <a class="inline-link" href="/signals/">Review current signal states</a>
+    </div>
+
+    <div class="prose">
+      <h2>Source Transparency</h2>
+      <p>
+        Government data, standards, research findings, company announcements,
+        forecasts, and reporting carry different evidentiary weight. Company
+        claims remain interested-party evidence until supported by official,
+        local, customer, or independent context.
+      </p>
+      <p>
+        Local outcomes require local evidence. A national program, climate
+        forecast, or company milestone can shape a local system, but it does not
+        prove capacity, readiness, financing, permitting, or acceptance by itself.
+      </p>
+      <a class="inline-link" href="/atlas/sources/">Open source atlas</a>
+    </div>
+  </section>
+
+  <section class="page-section prose">
+    <h2>Correction And Update Policy</h2>
+    <p>
+      FTFN should correct or update records when a source changes, a dataset is
+      revised, a link breaks, a claim was too strong, a better primary source
+      becomes available, or local evidence changes the interpretation.
+    </p>
+    <p>
+      For MVP, material changes are controlled through editorial notes, source
+      checked dates, work packages, and the decision log. A public update history
+      can become a later feature once records are actually published.
+    </p>
+
+    <h2>What FTFN Will Not Do At MVP</h2>
+    <ul>
+      <li>No automated publishing.</li>
+      <li>No ingestion-to-public path.</li>
+      <li>No numeric 42/59 scoring.</li>
+      <li>No local outcome claims without local evidence.</li>
+      <li>No company press release treated as deployment proof by itself.</li>
+    </ul>
+
+    <h2>Launch Gate</h2>
+    <p>
+      The first public launch should be small: a clear homepage, this method
+      surface, a few final-reviewed signals, source profiles, caveated local
+      system profiles, qualitative dependency maps, and no unsupported claims.
+    </p>
+  </section>
+</BaseLayout>

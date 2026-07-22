@@ -1,0 +1,286 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+import { getStatusTone } from "../../lib/editorial";
+import { getSourceFreshness, getSourceHealth } from "../../lib/sourceFreshness";
+
+const topics = await getCollection("topics");
+const sources = await getCollection("sources");
+const organizations = await getCollection("organizations");
+const technologies = await getCollection("technologies");
+const localSystems = await getCollection("localSystems");
+const evidenceGaps = await getCollection("evidenceGaps");
+const dependencyMaps = (await getCollection("dependencyMaps")).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title)
+);
+const dependencyMapTypes = Array.from(new Set(dependencyMaps.map((dependencyMap) => dependencyMap.data.map_type))).sort();
+const dependencyMapTopics = Array.from(new Set(dependencyMaps.map((dependencyMap) => dependencyMap.data.primary_topic))).sort();
+const dependencyMapEvidenceGapCount = new Set(
+  dependencyMaps.flatMap((dependencyMap) => dependencyMap.data.evidence_gap_ids)
+).size;
+const generatedAt = new Date();
+const sourceFreshnessRows = sources.map((source) =>
+  getSourceFreshness(
+    source.data.last_checked_date,
+    source.data.update_frequency,
+    source.data.capture_priority,
+    generatedAt,
+    source.data.review_cadence_days
+  )
+);
+const sourceReviewDueCount = sourceFreshnessRows.filter((freshness) => freshness.status === "Review due").length;
+const sourceWatchSoonCount = sourceFreshnessRows.filter((freshness) => freshness.status === "Watch soon").length;
+const sourceProbeReadyCount = sources.filter((source) => getSourceHealth(source.data).status === "Probe ready").length;
+const watchLaneCount = new Set(sources.flatMap((source) => source.data.watch_lanes)).size;
+
+const atlasSections = [
+  {
+    title: "Topics",
+    href: "/atlas/topics/",
+    count: topics.length,
+    summary: "Public pillars that organize signals by domain, framework layer, constraints, and watch questions."
+  },
+  {
+    title: "Sources",
+    href: "/atlas/sources/",
+    count: sources.length,
+    summary: "The evidence layer: agencies, labs, company sources, standards bodies, datasets, and reporting inputs."
+  },
+  {
+    title: "Source Monitor",
+    href: "/atlas/source-monitor/",
+    count: sourceReviewDueCount,
+    summary: "A generated source freshness queue that shows review due, watch soon, authority, and update cadence."
+  },
+  {
+    title: "Source Coverage",
+    href: "/atlas/source-coverage/",
+    count: watchLaneCount,
+    summary: "A generated authority matrix showing source coverage by watch lane, topic, access type, and probe readiness."
+  },
+  {
+    title: "Organizations",
+    href: "/atlas/organizations/",
+    count: organizations.length,
+    summary: "Entities that produce, regulate, fund, standardize, or otherwise shape future-state systems."
+  },
+  {
+    title: "Technologies",
+    href: "/atlas/technologies/",
+    count: technologies.length,
+    summary: "Trackable technical capabilities with dependencies, constraints, maturity, and topic relationships."
+  },
+  {
+    title: "Local Systems",
+    href: "/atlas/local-systems/",
+    count: localSystems.length,
+    summary: "Receiving systems where global signals become local outcomes through constraints and equilibrium shifts."
+  },
+  {
+    title: "Evidence Gaps",
+    href: "/atlas/evidence-gaps/",
+    count: evidenceGaps.length,
+    summary: "The research queue: missing evidence that limits local-system claims, signals, and briefings."
+  },
+  {
+    title: "Dependency Maps",
+    href: "/atlas/dependency-maps/",
+    count: dependencyMaps.length,
+    summary: "Qualitative relationship maps showing how signals, technologies, local systems, and evidence gaps form the stack."
+  }
+];
+---
+
+<BaseLayout title="Atlas | FTFN" description="The FTFN Atlas maps topics, sources, organizations, technologies, local systems, evidence gaps, and dependency maps for ftfn.io.">
+  <section class="page-section hero">
+    <div class="hero__copy">
+      <div class="eyebrow">ftfn.io / Atlas</div>
+      <h1 class="page-title">The map behind the signal stream.</h1>
+      <p class="lede">
+        The Atlas is FTFN's structured reference layer: topics, sources,
+        organizations, technologies, local systems, evidence gaps, and
+        dependency maps connected by dependencies, constraints, and context.
+      </p>
+      <div class="thesis">
+        <span>The future is not a list of inventions.</span>
+        <span>It is a stack of dependencies.</span>
+      </div>
+    </div>
+
+    <div class="metric-strip" aria-label="Current Atlas record counts">
+      {atlasSections.slice(0, 4).map((section) => (
+        <div class="metric">
+          <strong>{section.count}</strong>
+          <span>{section.title}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Atlas Sections</div>
+        <h2>Browse the working map.</h2>
+      </div>
+      <a class="inline-link" href="/signals/">Return to signals</a>
+    </div>
+
+    <div class="grid">
+      {atlasSections.map((section) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label={`${section.count} records`} tone={section.count > 0 ? "possibility" : "default"} />
+          </div>
+          <h3><a href={section.href}>{section.title}</a></h3>
+          <p>{section.summary}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Source Freshness</div>
+          <h2>The evidence layer now has a review queue.</h2>
+        </div>
+        <p>
+          The source monitor is generated from source records at build time. It
+          helps FTFN stay authoritative by making checked dates, update cadence,
+          and review priority visible before new claims are written.
+        </p>
+        <a class="inline-link" href="/atlas/source-monitor/">Open source monitor</a>
+      </div>
+      <div class="grid">
+        <article class="record-card">
+          <strong>{sources.length}</strong>
+          <p>tracked sources</p>
+        </article>
+        <article class="record-card">
+          <strong>{sourceReviewDueCount}</strong>
+          <p>review due</p>
+        </article>
+        <article class="record-card">
+          <strong>{sourceWatchSoonCount}</strong>
+          <p>watch soon</p>
+        </article>
+        <article class="record-card">
+          <strong>{sourceProbeReadyCount}</strong>
+          <p>probe ready</p>
+        </article>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Dependency Maps</div>
+          <h2>Where records become a stack.</h2>
+        </div>
+        <p>
+          Maps exist when one record cannot explain the dependency question.
+          They use explicit record IDs, preserve evidence boundaries, and avoid
+          numeric 42/59 scoring while the map model is still maturing.
+        </p>
+        <a class="inline-link" href="/atlas/dependency-maps/">Browse dependency maps</a>
+      </div>
+      <div class="grid">
+        <article class="record-card">
+          <strong>{dependencyMaps.length}</strong>
+          <p>qualitative maps</p>
+        </article>
+        <article class="record-card">
+          <strong>{dependencyMapTypes.length}</strong>
+          <p>map types</p>
+        </article>
+        <article class="record-card">
+          <strong>{dependencyMapEvidenceGapCount}</strong>
+          <p>linked evidence gaps</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Current Map Surface</div>
+          <h2>Small enough to stay qualitative.</h2>
+        </div>
+        <p>
+          Current map topics: {dependencyMapTopics.join(", ")}.
+          Current map types: {dependencyMapTypes.join(", ")}.
+        </p>
+      </div>
+      <div class="source-list">
+        {dependencyMaps.map((dependencyMap) => (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label={dependencyMap.data.map_type} />
+              <MetaPill label={dependencyMap.data.record_status} tone={getStatusTone(dependencyMap.data.record_status)} />
+              <MetaPill label={dependencyMap.data.primary_topic} />
+            </div>
+            <h3><a href={`/atlas/dependency-maps/${dependencyMap.data.slug}/`}>{dependencyMap.data.title}</a></h3>
+            <p>{dependencyMap.data.map_question}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Entity Layer</div>
+          <h2>Organizations and technologies now have routes.</h2>
+        </div>
+        <p>
+          Phase 08 exposes the existing organization and technology seed records
+          without inventing relationships the content model does not support.
+        </p>
+      </div>
+      <div class="source-list">
+        {organizations.map((organization) => (
+          <article class="source-row">
+            <h3><a href={`/atlas/organizations/${organization.data.slug}/`}>{organization.data.name}</a></h3>
+            <p>{organization.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={organization.data.organization_type} />
+              {organization.data.framework_layers.map((layer) => <MetaPill label={layer} />)}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Technology Layer</div>
+          <h2>Capabilities stay tied to dependencies.</h2>
+        </div>
+        <p>
+          Technology profiles begin as structured references for maturity,
+          constraints, dependencies, source links, and topic relationships.
+        </p>
+      </div>
+      <div class="source-list">
+        {technologies.map((technology) => (
+          <article class="source-row">
+            <h3><a href={`/atlas/technologies/${technology.data.slug}/`}>{technology.data.name}</a></h3>
+            <p>{technology.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={technology.data.maturity_level} tone="possibility" />
+              {technology.data.framework_layers.map((layer) => <MetaPill label={layer} />)}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

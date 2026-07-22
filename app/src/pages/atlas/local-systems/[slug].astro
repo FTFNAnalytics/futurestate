@@ -1,0 +1,289 @@
+---
+import { getCollection, render } from "astro:content";
+import DependencyMapLinks from "../../../components/atlas/DependencyMapLinks.astro";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import { getEvidenceGapTone, getLocalEvidenceNote } from "../../../lib/editorial";
+import { getSourceFreshness, getSourceHealth } from "../../../lib/sourceFreshness";
+
+export async function getStaticPaths() {
+  const localSystems = await getCollection("localSystems");
+
+  return localSystems.map((system) => ({
+    params: { slug: system.data.slug },
+    props: { system }
+  }));
+}
+
+const { system } = Astro.props;
+const { Content } = await render(system);
+const sources = await getCollection("sources");
+const sourceIds = new Set(system.data.source_ids);
+const generatedAt = new Date();
+const evidenceSources = sources
+  .filter((source) => sourceIds.has(source.data.id))
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+const evidenceRows = evidenceSources.map((source) => ({
+  source,
+  freshness: getSourceFreshness(
+    source.data.last_checked_date,
+    source.data.update_frequency,
+    source.data.capture_priority,
+    generatedAt,
+    source.data.review_cadence_days
+  ),
+  health: getSourceHealth(source.data)
+}));
+const systemGeography = system.data.geography.toLowerCase();
+const dossierCandidateRows = sources
+  .filter((source) => {
+    if (sourceIds.has(source.data.id)) return false;
+    const isLocalSource =
+      source.data.watch_lanes.includes("Local Systems") ||
+      source.data.coverage_role.includes("Local Conversion Evidence");
+
+    if (!isLocalSource) return false;
+
+    const sourceRegion = source.data.country_or_region.toLowerCase();
+
+    if (systemGeography.includes("ontario")) {
+      return sourceRegion.includes("ontario") || sourceRegion.includes("canada");
+    }
+
+    if (systemGeography.includes("arizona") || systemGeography.includes("southwest")) {
+      return sourceRegion.includes("arizona") || sourceRegion.includes("united states");
+    }
+
+    return false;
+  })
+  .map((source) => ({
+    source,
+    freshness: getSourceFreshness(
+      source.data.last_checked_date,
+      source.data.update_frequency,
+      source.data.capture_priority,
+      generatedAt,
+      source.data.review_cadence_days
+    ),
+    health: getSourceHealth(source.data)
+  }))
+  .sort((a, b) => {
+    const prioritySort =
+      Number(b.source.data.capture_priority === "High") - Number(a.source.data.capture_priority === "High");
+    if (prioritySort !== 0) return prioritySort;
+
+    return a.source.data.name.localeCompare(b.source.data.name);
+  });
+const signals = (await getCollection("signals")).filter((signal) =>
+  signal.data.receiving_systems.includes(system.data.name)
+);
+const evidenceGaps = await getCollection("evidenceGaps");
+const linkedEvidenceGaps = evidenceGaps.filter((gap) => system.data.evidence_gap_ids.includes(gap.data.id));
+const relatedDependencyMaps = (await getCollection("dependencyMaps"))
+  .filter((dependencyMap) => dependencyMap.data.local_system_ids.includes(system.data.id))
+  .map((dependencyMap) => ({
+    map: dependencyMap,
+    relationship: "Local system ID",
+    note: "This dependency map explicitly cites this local system as a receiving system."
+  }));
+const evidenceGapSummary =
+  linkedEvidenceGaps.length > 0 ? `${linkedEvidenceGaps.length} linked gap${linkedEvidenceGaps.length === 1 ? "" : "s"}` : "No linked gaps";
+
+const formatDate = (date: Date) =>
+  new Intl.DateTimeFormat("en", {
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+  }).format(date);
+---
+
+<BaseLayout title={`${system.data.name} | FTFN`} description={system.data.summary}>
+  <section class="page-section">
+    <div class="eyebrow">Local System Profile</div>
+    <h1 class="page-title">{system.data.name}</h1>
+    <p class="lede">{system.data.summary}</p>
+    <div class="meta-row">
+      <MetaPill label={system.data.system_type} />
+      <MetaPill label={system.data.geography} />
+      <MetaPill label={system.data.local_evidence_level} />
+      {system.data.last_reviewed_date && <MetaPill label={`Reviewed ${formatDate(system.data.last_reviewed_date)}`} />}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      <article class="record-card">
+        <h2>Current Equilibrium</h2>
+        <p>{system.data.current_equilibrium}</p>
+      </article>
+      <article class="record-card">
+        <h2>Core Constraints</h2>
+        <div class="meta-row">
+          {system.data.core_constraints.map((constraint) => (
+            <MetaPill label={constraint} tone="urgency" />
+          ))}
+        </div>
+      </article>
+      <article class="record-card">
+        <h2>Evidence Scope</h2>
+        <p>{getLocalEvidenceNote(system.data.local_evidence_level)}</p>
+        <div class="meta-row">
+          <MetaPill label={evidenceGapSummary} />
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading section-heading--stacked">
+      <div>
+        <div class="eyebrow">Evidence Base</div>
+        <h2>What supports this profile</h2>
+        <p>
+          These sources support the constraint map. They do not, by themselves,
+          prove local outcomes or project-level capacity.
+        </p>
+      </div>
+    </div>
+    {evidenceRows.length > 0 ? (
+      <div class="table-wrap">
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th>Source</th>
+              <th>Role</th>
+              <th>Access</th>
+              <th>Health</th>
+              <th>Freshness</th>
+              <th>Boundary</th>
+            </tr>
+          </thead>
+          <tbody>
+            {evidenceRows.map(({ source, freshness, health }) => (
+              <tr>
+                <td><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></td>
+                <td>{source.data.coverage_role.length > 0 ? source.data.coverage_role.join(", ") : source.data.source_type}</td>
+                <td>{source.data.live_access_type}</td>
+                <td>{health.status}</td>
+                <td>{freshness.status} / checked {formatDate(source.data.last_checked_date)}</td>
+                <td>{source.data.known_limitations}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    ) : (
+      <p class="muted">No source records are linked to this local system yet.</p>
+    )}
+  </section>
+
+  {dossierCandidateRows.length > 0 && (
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Dossier Candidates</div>
+          <h2>Source records to pull into this local profile next.</h2>
+          <p>
+            These candidates are generated from the source registry using local
+            evidence roles, watch lanes, and geography. They are suggestions for
+            the next manual evidence pass, not claims that the profile already
+            uses them.
+          </p>
+        </div>
+        <a class="inline-link" href="/atlas/source-coverage/">Open coverage matrix</a>
+      </div>
+      <div class="source-list">
+        {dossierCandidateRows.slice(0, 8).map(({ source, freshness, health }) => (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label={source.data.live_access_type} />
+              <MetaPill label={health.status} tone={health.tone} />
+              <MetaPill label={freshness.status} tone={freshness.tone} />
+              <MetaPill label={source.data.capture_priority} tone={source.data.capture_priority === "High" ? "urgency" : "default"} />
+            </div>
+            <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+            <p>{source.data.known_limitations}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {linkedEvidenceGaps.length > 0 && (
+    <section class="page-section">
+      <h2>Evidence Gaps</h2>
+      <div class="grid">
+        {linkedEvidenceGaps.map((gap) => (
+          <article class="record-card">
+            <h3><a href={`/atlas/evidence-gaps/${gap.data.slug}/`}>{gap.data.title}</a></h3>
+            <p>{gap.data.next_action}</p>
+            <div class="meta-row">
+              <MetaPill label={gap.data.id} />
+              <MetaPill label={gap.data.status} tone={getEvidenceGapTone(gap.data.status)} />
+              <MetaPill label={gap.data.priority} tone={gap.data.priority === "High" ? "urgency" : "default"} />
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <DependencyMapLinks
+    maps={relatedDependencyMaps}
+    title="Dependency maps using this local system."
+    description="These maps cite this local system by ID. They show how signals meet local constraints without proving local readiness."
+  />
+
+  <section class="page-section">
+    <div class="grid">
+      <div>
+        <h2>Key Industries</h2>
+        <ul>
+          {system.data.key_industries.map((industry) => <li>{industry}</li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>Actors With Authority</h2>
+        <ul>
+          {system.data.actors_with_authority.map((actor) => <li>{actor}</li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>Second-Order Effects</h2>
+        <ul>
+          {system.data.likely_second_order_effects.map((effect) => <li>{effect}</li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>Missing Data</h2>
+        <ul>
+          {system.data.missing_data.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section prose">
+    <Content />
+  </section>
+
+  <section class="page-section">
+    <h2>Related Signals</h2>
+    {signals.length > 0 ? (
+      <div class="grid">
+        {signals.map((signal) => (
+          <article class="record-card">
+            <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+            <p>{signal.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={signal.data.primary_topic} />
+              <MetaPill label={signal.data.signal_type} />
+            </div>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <p class="muted">No sample signals are linked to this local system yet.</p>
+    )}
+  </section>
+</BaseLayout>

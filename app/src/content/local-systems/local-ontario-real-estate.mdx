@@ -1,0 +1,176 @@
+---
+id: "local-ontario-real-estate"
+name: "Ontario Real Estate"
+slug: "ontario-real-estate"
+system_type: "Market"
+summary: "A housing and land market shaped by interest rates, migration, construction costs, zoning, infrastructure capacity, investor behavior, and household affordability."
+geography: "Ontario, Canada"
+key_industries:
+  - "residential real estate"
+  - "construction"
+  - "finance"
+  - "municipal infrastructure"
+core_constraints:
+  - "Capital"
+  - "Regulation"
+  - "Labor"
+  - "Infrastructure"
+  - "Public Trust"
+current_equilibrium: "Sensitive to financing costs, migration flows, municipal approvals, infrastructure capacity, and local employment conditions."
+relevant_signal_types:
+  - "Market Signal"
+  - "Policy Signal"
+  - "Forecast"
+  - "Funding"
+actors_with_authority:
+  - "municipal governments"
+  - "provincial government"
+  - "lenders"
+  - "developers"
+  - "regulators"
+likely_second_order_effects:
+  - "shifts in development timing"
+  - "changes in land value"
+  - "infrastructure pressure"
+  - "affordability stress"
+  - "political conflict over density and growth"
+missing_data:
+  - "local inventory by submarket"
+  - "permit timelines"
+  - "infrastructure capacity by municipality"
+  - "financing exposure by project type"
+evidence_gap_ids:
+  - "gap-004"
+  - "gap-005"
+local_evidence_level: "Local Source Layer"
+last_reviewed_date: 2026-06-02
+source_ids:
+  - "source-cmhc-housing-market-information-portal"
+  - "source-cmhc-starts-completions-under-construction"
+  - "source-ontario-housing-supply-progress"
+  - "source-statcan-building-permits-survey"
+  - "source-city-toronto-application-information-centre"
+  - "source-statcan-web-data-service"
+  - "source-toronto-open-data"
+  - "source-ontario-data-catalogue"
+  - "source-toronto-development-guide"
+  - "source-toronto-building-permits"
+---
+
+## System Context
+
+Ontario real estate is a local receiving system for global and national signals. Interest rates, migration, construction capacity, municipal approvals, household affordability, infrastructure servicing, and policy all shape whether new information becomes new housing, delayed projects, price pressure, or political conflict.
+
+The current source base supports high-level market, supply, and permit context. It does not yet support confident conclusions about any specific municipality, development project, lender exposure, or servicing bottleneck.
+
+## Transduction Question
+
+What does a signal change for buyers, builders, lenders, municipalities, and infrastructure planners, and through which constraints?
+
+## Key Constraints
+
+### Capital
+
+Financing conditions can change what projects pencil out, how quickly buyers qualify, and whether developers delay or cancel phases. The current source set does not yet include lender, developer, or project-finance evidence, so capital effects should be framed cautiously.
+
+### Regulation
+
+Provincial targets, municipal planning decisions, zoning, development charges, and approval processes shape the path from housing demand to completed units. The Ontario housing supply tracker provides provincial progress context, but municipal approval timelines still need direct local sources.
+
+### Labor
+
+Construction labor availability affects whether approved or planned projects can become completed units on expected timelines. This profile does not yet include labor-market sources, apprenticeship data, or construction workforce capacity.
+
+### Infrastructure
+
+Servicing capacity, transit, roads, schools, water, wastewater, and grid connections can determine whether housing supply can be absorbed locally. The current source base does not yet include municipal infrastructure capacity or servicing data.
+
+### Public Trust
+
+Housing supply debates are often mediated through affordability pressure, neighborhood change, density politics, investor behavior, and trust in planning institutions. Current sources can frame the housing-supply problem, but they do not yet explain local political legitimacy.
+
+## Source-Backed Evidence
+
+- CMHC housing market data can support Ontario market context and comparisons across Canadian geographies.
+- CMHC starts, completions, and units-under-construction tables can help separate construction starts from completed housing supply.
+- Ontario's housing supply progress tracker can support provincial target and progress context for municipal housing supply.
+- Statistics Canada's Building Permits Survey can support construction-intention context, but not project completion or affordability outcomes.
+- Toronto's Application Information Centre can support application-level planning context for one municipality, but it cannot stand in for all Ontario municipal systems.
+
+## What The Evidence Does Not Prove
+
+- It does not prove that a specific municipality has enough infrastructure capacity.
+- It does not prove that a specific development is viable.
+- It does not explain lender exposure or household balance-sheet stress.
+- It does not replace local development application, servicing, planning, or utility records.
+- It does not convert provincial targets into completed housing supply.
+
+## Missing Data Matrix
+
+| Need | Why It Matters | Status |
+| --- | --- | --- |
+| Municipal infrastructure capacity | Shows whether growth can be serviced by water, wastewater, roads, schools, and grid capacity. | Required before publication |
+| Permit timelines and development applications | Shows whether regulation is slowing, sequencing, or enabling supply. | Required before publication |
+| Submarket inventory and completions | Distinguishes provincial conditions from local market pressure. | Required before publication |
+| Project-level financing exposure | Helps interpret whether rate changes or capital constraints can stall supply. | Useful for deeper analysis |
+| Construction labor capacity | Helps separate approval problems from build-capacity problems. | Useful for deeper analysis |
+| Parcel, zoning, servicing, and project records | Could support a later searchable local housing dataset. | Possible future database field |
+
+## Actors With Authority
+
+- Municipal governments control planning approvals, infrastructure plans, many local fees, and land-use decisions.
+- The provincial government sets policy direction, growth targets, funding priorities, and planning legislation.
+- Lenders and capital providers shape project viability and buyer qualification.
+- Developers decide whether approved projects proceed, pause, phase, or change form.
+- Regulators influence lending standards, consumer protection, building rules, and market oversight.
+
+## Likely Second-Order Effects
+
+- A financing signal may change buyer demand before it changes completions.
+- A provincial policy signal may change municipal behavior before new units appear.
+- Infrastructure constraints may push growth toward some municipalities and away from others.
+- Affordability stress may amplify political conflict over density, land use, and development charges.
+- Permit or servicing delays may shift land values and project timing.
+
+## Signals To Watch Next
+
+- Interest-rate and mortgage-market changes.
+- Provincial housing target updates.
+- Municipal servicing, infrastructure, or development-charge decisions.
+- Building permit changes by region.
+- CMHC market updates on starts, completions, rents, and affordability.
+- Construction labor and cost signals.
+
+## Missing Data
+
+This profile needs local inventory, permit timelines, municipal infrastructure capacity, and financing exposure before it should be treated as publish-ready.
+
+## Phase 12 Evidence Foundation
+
+The first official source layer supports housing market data, provincial housing-supply progress, and building-permit context. These sources can help frame Ontario as a receiving system for financing, supply, and planning signals.
+
+They do not yet support strong claims about specific municipalities, project viability, site servicing, developer balance sheets, or local infrastructure capacity. Those conclusions still require municipal open data, servicing plans, lender context, development application records, and local utility or infrastructure sources.
+
+## Phase 18 Evidence Gap Sources
+
+The CMHC starts, completions, and units-under-construction tables improve the distinction between permit intentions, starts, completions, and active construction pipelines.
+
+The City of Toronto Application Information Centre adds a first municipal planning source for application-level evidence. It is useful as a concrete local planning record, but it is only one municipality and does not prove servicing capacity, financing viability, or province-wide delivery performance.
+
+## Phase 19 Evidence Integration
+
+The permits-to-completions signal now cites CMHC starts, completions, and units-under-construction tables alongside Statistics Canada permit data. That improves the conversion logic: FTFN can distinguish an upstream construction intention from a downstream delivery indicator.
+
+The profile still needs municipal servicing plans, approval timelines, local completion data, project-finance evidence, and infrastructure capacity before it can assess whether a specific Ontario municipality can convert targets or applications into occupied housing.
+
+## Phase 39 Dossier Expansion
+
+The local evidence table now draws directly from the source registry. Added records cover Statistics Canada's reusable Web Data Service, City of Toronto Open Data, and the Ontario Data Catalogue.
+
+This improves the path from broad Ontario housing context toward municipal evidence. It still does not prove project viability, infrastructure capacity, financing exposure, or local delivery, because those claims require selected municipal datasets, application records, servicing plans, and project-level evidence.
+
+## Phase 40 Dossier Evidence Selection
+
+The dossier now adds Toronto process anchors for development review and building permits. These records strengthen the path from provincial housing targets and broad permit statistics toward municipality-level conversion evidence.
+
+They still do not prove approval timelines, servicing capacity, financing viability, occupancy, or completed housing delivery. The next pass needs selected application records, permit-status evidence, servicing plans, infrastructure-capacity documents, completion data, and project-level finance context before stronger local claims are supportable.

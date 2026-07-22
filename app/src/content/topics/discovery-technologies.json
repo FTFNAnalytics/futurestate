@@ -1,0 +1,20 @@
+{
+  "id": "topic-discovery-technologies",
+  "name": "Discovery Technologies",
+  "slug": "discovery-technologies",
+  "summary": "Remote sensing, mapping, geospatial data, earth observation, ocean exploration, scientific instrumentation, and data systems that make hidden physical systems observable.",
+  "framework_layers": ["Planetary Conditions", "Resource Foundations", "Frontier Domains"],
+  "primary_constraints": ["Data Quality", "Interpretation", "Infrastructure", "Weather", "Compute"],
+  "featured_sources": [
+    "source-usgs-3d-elevation-program",
+    "source-nasa-earthdata-cmr-api",
+    "source-usgs-landsat-data-access",
+    "source-noaa-ocean-exploration-data",
+    "source-noaa-ncei-access"
+  ],
+  "watch_questions": [
+    "Which new data products reveal constraints that were previously invisible to planners, scientists, or investors?",
+    "Where does better observation change decisions about water, climate, minerals, infrastructure, agriculture, or safety?",
+    "What are the limits of the data before turning observations into claims about local outcomes?"
+  ]
+}

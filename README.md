@@ -1,0 +1,219 @@
+# FTFN
+
+Civilization is a choice.
+
+FTFN is a future-state intelligence project planned for `ftfn.io`. It tracks what could be, what it depends on, and what could stop it from happening.
+
+The name began as Forty Two Fifty Nine. Public-facing product surfaces should now use FTFN.
+
+The core thesis:
+
+```text
+42 is possibility.
+59 is urgency.
+
+The future is not a list of inventions.
+It is a stack of dependencies.
+```
+
+## Project Documents
+
+- [Master Roadmap](docs/master-roadmap.md) - the step-by-step plan from empty workspace to a functioning publication and data platform.
+- [Documentation Map](docs/documentation-map.md) - how the project documents fit together and when to update each one.
+- [Session Brief](docs/session-brief.md) - compact handoff note for restarting the project in a new chat.
+- [v0.1.1 Session Brief](docs/session-brief-v0.1.1.md) - current deployment-candidate handoff after the first Phase 50 content batch.
+- [v0.1.1 Roadmap](docs/roadmap-v0.1.1.md) - release path for build verification, browser QA, preview deployment, and the v0.2 handoff.
+- [v0.2 Roadmap](docs/roadmap-v0.2.md) - current 3-to-5-week build plan for the first authority-loop release.
+- [Signal Scale Scenarios](docs/signal-scale-scenarios.md) - maps the 25-35 signal and 70 signal corpus shapes.
+- [Private Update Queue](docs/private-update-queue.md) - first v0.2 source-review queue for human update operations.
+- [Signal Repair Workflow](docs/signal-repair-workflow.md) - rules for converting broad In Review records into dated source-backed signals.
+- [v0.2 Next Signal Set](docs/v0.2-next-signal-set.md) - first mapped batch of v0.2 signal repairs and new signal candidates.
+- [v0.1.1 Build Manifest](deployment/ftfn-v0.1.1-build.json) - machine-readable build/deployment configuration for the current static preview candidate.
+- [Glossary](docs/glossary.md) - shared definitions for the project language.
+- [Taxonomy](docs/taxonomy.md) - framework layers, topic pillars, constraints, signal types, maturity levels, and relationship rules.
+- [Content Model](docs/content-model.md) - MVP entities, fields, examples, and validation rules.
+- [Source Strategy](docs/source-strategy.md) - source selection, credibility, monitoring, and editorial use rules.
+- [Source Monitoring Plan](docs/source-monitoring-plan.md) - generated source freshness, authority, and review-queue path toward self-updating evidence surfaces.
+- [Source Broadening and Intake Plan](docs/source-broadening-and-intake-plan.md) - private candidate registry, broad source discovery lanes, and promotion rules.
+- [Authoritative Live Source Plan](docs/authoritative-live-source-plan.md) - live source inventory, first 30 source additions, watch-lane coverage plan, and monitoring architecture.
+- [Authority Red-Team and Resource Expansion Plan](docs/authority-red-team-and-resource-expansion-plan.md) - skeptical authority audit and content-first plan for becoming a comprehensive resource.
+- [Editorial Method](docs/editorial-method.md) - publication standards, evidence treatment, and source transparency posture.
+- [Review Checklists](docs/review-checklists.md) - operational review checks for each record type.
+- [Briefing Template](docs/briefing-template.md) - reusable structure and evidence rules for FTFN briefings.
+- [Evidence Gap Register](docs/evidence-gap-register.md) - missing evidence that should become future source, signal, local-system, or data-model work.
+- [Dependency Map Format](docs/dependency-map-format.md) - qualitative map structure for dependency-stack relationships.
+- [Information Architecture](docs/information-architecture.md) - sitemap, page types, navigation, and reader journeys.
+- [Sample Records](docs/sample-records.md) - first source, signal, topic, and local system records for model testing.
+- [Content Expansion Plan](docs/content-expansion-plan.md) - seed readiness assessment and the first recommended content batch.
+- [Signals Roadmap](docs/signals-roadmap.md) - high-value watch lanes, next signal candidates, evidence requirements, and signal-build sequence.
+- [Publication Readiness Triage](docs/publication-readiness-triage.md) - launch-candidate, hold-back, follow-up, and draft-sample decisions before any records become Published.
+- [Launch Candidate Review](docs/launch-candidate-review.md) - final publish-or-hold decisions for the first launch-candidate signal set.
+- [Publication Policy](docs/publication-policy.md) - publication states, correction/update policy, source transparency rules, and launch gate.
+- [Launch Package](docs/launch-package.md) - static launch readiness, hosting path, sitemap/robots policy, launch checklist, and launch note outline.
+- [Technical Stack Decision](docs/technical-stack-decision.md) - MVP stack recommendation and growth path.
+- [Content Scaffold Plan](docs/content-scaffold-plan.md) - content storage decisions, folder structure, and validation requirements.
+- [Prompt Library](docs/prompt-library.md) - reusable prompts for strategy, product, research, editorial, data, design, and engineering work.
+- [Decision Log](docs/decision-log.md) - major strategic, editorial, design, and technical decisions.
+- [Future Considerations](docs/future-considerations.md) - theoretical seeds and later-stage ideas that may shape the project.
+- [Phase 01 Work Package](docs/work-packages/phase-01-documentation-and-architecture.md) - checklist and acceptance criteria for documentation and architecture.
+- [Phase 02 Work Package](docs/work-packages/phase-02-information-architecture-and-sample-records.md) - checklist and acceptance criteria for information architecture and sample records.
+- [Phase 03 Work Package](docs/work-packages/phase-03-technical-stack-and-content-scaffold.md) - checklist and acceptance criteria for the stack decision and content scaffold plan.
+- [Phase 04 Work Package](docs/work-packages/phase-04-app-scaffold-and-seed-content.md) - checklist and acceptance criteria for the Astro scaffold and seed content.
+- [Phase 05 Work Package](docs/work-packages/phase-05-build-validation-and-scaffold-repair.md) - checklist, validation results, and repairs for the first Astro build.
+- [Phase 06 Work Package](docs/work-packages/phase-06-route-completion-and-light-filtering.md) - route completion, cross-links, light filtering, and validation results.
+- [Phase 07 Work Package](docs/work-packages/phase-07-homepage-narrative-and-visual-design.md) - homepage narrative, first visual design pass, preview notes, and validation results.
+- [Phase 08 Work Package](docs/work-packages/phase-08-atlas-completion-and-entity-routes.md) - Atlas landing page, organization routes, technology routes, cross-links, preview notes, and validation results.
+- [Phase 09 Work Package](docs/work-packages/phase-09-editorial-readiness-and-content-expansion.md) - editorial method, review checklists, content expansion plan, and validation results.
+- [Phase 10 Work Package](docs/work-packages/phase-10-first-reviewed-content-batch.md) - first reviewed content batch, source checks, status decisions, and validation results.
+- [Phase 11 Work Package](docs/work-packages/phase-11-editorial-state-visibility-and-citation-ui.md) - editorial state visibility, citation UI, prelaunch display policy, and validation results.
+- [Phase 12 Work Package](docs/work-packages/phase-12-source-expansion-and-local-evidence-foundations.md) - source expansion, local evidence foundations, and validation results.
+- [Phase 13 Work Package](docs/work-packages/phase-13-local-system-profile-hardening-and-constraint-notes.md) - local system profile hardening, constraint notes, evidence limits, and validation results.
+- [Phase 14 Work Package](docs/work-packages/phase-14-atlas-topic-coverage-and-local-relationship-backlinks.md) - Atlas topic coverage, official organization records, source-to-local-system backlinks, and validation results.
+- [Phase 15 Work Package](docs/work-packages/phase-15-second-reviewed-content-batch-and-signal-specificity.md) - second reviewed signal batch, local constraint signal specificity, source checks, and validation results.
+- [Phase 16 Work Package](docs/work-packages/phase-16-first-evidence-backed-briefing-draft-and-editorial-synthesis.md) - first evidence-backed briefing draft, synthesis guardrails, briefing UI refinements, and validation results.
+- [Phase 17 Work Package](docs/work-packages/phase-17-briefing-template-and-evidence-gap-register.md) - briefing template, evidence gap register, documentation updates, and next source-acquisition path.
+- [Phase 18 Work Package](docs/work-packages/phase-18-first-evidence-gap-driven-source-batch.md) - first evidence-gap-driven source batch, local profile evidence links, and validation results.
+- [Phase 19 Work Package](docs/work-packages/phase-19-local-evidence-integration-and-gap-driven-signal-repair.md) - local evidence integration, signal repair, source checks, and validation results.
+- [Phase 20 Work Package](docs/work-packages/phase-20-evidence-gap-linking-and-claim-scope-metadata.md) - evidence-gap linking, claim-scope metadata, local evidence levels, and validation results.
+- [Phase 21 Work Package](docs/work-packages/phase-21-evidence-gap-data-scaffold-and-research-queue.md) - structured evidence-gap collection, research queue routes, record links, and validation results.
+- [Phase 22 Work Package](docs/work-packages/phase-22-reference-integrity-and-editorial-qa.md) - content reference validation, editorial QA gate, and validation results.
+- [Phase 23 Work Package](docs/work-packages/phase-23-reference-gated-content-expansion.md) - source-backed technology reference batch, DOE source anchor, and validation results.
+- [Phase 24 Work Package](docs/work-packages/phase-24-technology-atlas-hardening-and-dependency-links.md) - Technology Atlas hardening, deterministic signal links, and relationship guardrails.
+- [Phase 25 Work Package](docs/work-packages/phase-25-qualitative-dependency-map-format.md) - qualitative dependency-map format, prototype map, validation, and Atlas routes.
+- [Phase 26 Work Package](docs/work-packages/phase-26-dependency-map-backlinks-and-reader-journey-integration.md) - dependency-map backlinks, topic and briefing integration, and validation results.
+- [Phase 27 Work Package](docs/work-packages/phase-27-dependency-map-selection-rules-and-second-prototype.md) - dependency-map selection rules, second qualitative map prototype, and validation results.
+- [Phase 28 Work Package](docs/work-packages/phase-28-dependency-map-atlas-hardening-and-filtered-index.md) - dependency-map Atlas counts, grouped index sections, selection-rule note, and validation results.
+- [Phase 29 Work Package](docs/work-packages/phase-29-dependency-map-homepage-and-atlas-landing-integration.md) - dependency-map homepage and Atlas landing discovery surfaces.
+- [Phase 30 Work Package](docs/work-packages/phase-30-dependency-map-detail-readability-and-selection-rule-audit.md) - dependency-map detail readability, static map summaries, and selection-rule audit.
+- [Phase 31 Work Package](docs/work-packages/phase-31-dependency-map-reader-journey-qa-and-third-map-decision-gate.md) - dependency-map reader-journey QA, backlink checks, and third-map decision gate.
+- [Phase 32 Work Package](docs/work-packages/phase-32-source-backed-content-expansion-re-entry.md) - source-backed content expansion re-entry for underdeveloped pillars.
+- [Phase 33 Work Package](docs/work-packages/phase-33-publication-readiness-triage-and-remaining-draft-review.md) - publication-readiness triage, launch-candidate set, stale-source repair, and remaining draft-sample review.
+- [Phase 34 Work Package](docs/work-packages/phase-34-publication-policy-and-launch-readiness-surfaces.md) - publication policy, Method page, metadata basics, and NOAA ENSO signal repair.
+- [Phase 35 Work Package](docs/work-packages/phase-35-final-launch-candidate-copy-citation-and-public-page-qa.md) - final launch-candidate source checks, publication decisions, citation/date visibility, and validation results.
+- [Phase 36 Work Package](docs/work-packages/phase-36-launch-package-and-static-deployment-readiness.md) - launch package, static hosting decision, sitemap/robots, canonical metadata, and visibility policy.
+- [Phase 37 Work Package](docs/work-packages/phase-37-source-authority-and-freshness-monitor.md) - generated source monitor, freshness rules, and authority-first path toward self-updating reference surfaces.
+- [Phase 38 Work Package](docs/work-packages/phase-38-authority-red-team-and-comprehensive-resource-plan.md) - authority red-team, content-library gap audit, and comprehensive resource expansion plan.
+- [Phase 39 Work Package](docs/work-packages/phase-39-authoritative-source-registry-and-coverage-matrix.md) - authoritative source registry expansion, source health, coverage matrix, and dossier tables.
+- [Phase 40 Work Package](docs/work-packages/phase-40-topic-completion-and-dossier-evidence-selection.md) - missing topic completion, Discovery Technologies source anchors, and local dossier evidence selection.
+- [Phase 47 Work Package](docs/work-packages/phase-47-private-update-queue-and-signal-repair-workflow.md) - private update queue, signal repair workflow, and first v0.2 signal batch map.
+- [Phase 48 Work Package](docs/work-packages/phase-48-first-signal-repair-batch.md) - first v0.2 signal repair batch, NOAA update, cybersecurity rail, and regulatory rail.
+- [Phase 49 Work Package](docs/work-packages/phase-49-broad-source-promotion-batch.md) - 36-source promotion batch for v0.2 authority breadth.
+- [Phase 50 Work Package](docs/work-packages/phase-50-bounded-source-recheck-and-content-expansion.md) - first bounded source-item content batch from Grants.gov/DOE and MAG Open Data.
+
+## App Scaffold
+
+The first Astro + TypeScript scaffold lives in [app](app/). It includes content collection schemas, seed records, generated routes, light filtering, a first homepage narrative pass, a complete MVP Atlas skeleton, a public editorial posture on the About page, source-backed local evidence foundations, hardened local system profiles, stronger Atlas topic coverage, generated source monitoring, generated source coverage, local dossier tables, and a restrained CSS visual system.
+
+Dependencies are installed and the current validation/build baseline passes.
+
+From `app/`:
+
+```text
+npm run validate:content
+npm run source:health
+npm run check
+npm run build
+```
+
+The build currently generates 182 static pages from the seed content.
+
+The homepage now uses real seed records for signals, topics, sources, local systems, and briefings while preserving the 42/59 framing and dependency-stack thesis.
+
+The Atlas now exposes topics, sources, organizations, technologies, local systems, evidence gaps, and dependency maps as public FTFN routes.
+
+Phase 09 adds editorial readiness: a method, review checklists, publishability criteria, and a first content expansion plan for moving from sample records toward reviewed public intelligence.
+
+Phase 10 moves six official-source-backed signals into `In Review`, refreshes their source checked dates, and adds Critical Minerals, Quantum, and Mobility topic records.
+
+Phase 11 makes editorial state visible on signal and source surfaces: Draft Sample and In Review records stay visible during prelaunch, but they are clearly labeled and no records are treated as Published.
+
+Phase 12 adds official source foundations for energy/grid data, Arizona water and utility regulation, Ontario housing supply, CMHC housing market data, and Statistics Canada building permits. It links those sources cautiously to the Ontario Real Estate and U.S. Southwest Chip Corridor local system profiles without promoting local conclusions.
+
+Phase 13 hardens the Ontario Real Estate and U.S. Southwest Chip Corridor profiles with constraint notes, evidence limits, missing-data matrices, signals-to-watch sections, and local source cards.
+
+Phase 14 adds topic records for Energy, Water, Policy and Standards, Finance and Risk, and Human Futures; adds source-supported official organization records; and adds deterministic source-to-local-system backlinks.
+
+Phase 15 adds a second small reviewed content batch around AI electricity demand, Arizona power, Arizona water governance, Ontario housing supply, and Canadian building permits. These records are `In Review`, source-backed, and deliberately cautious about local conclusions.
+
+Phase 16 converts the placeholder briefing into `Stack Watch 001: Local constraints are where the future arrives`, the first evidence-backed `In Review` synthesis built only from reviewed signals.
+
+Phase 17 extracts a reusable briefing template and creates an evidence gap register so missing conversion evidence becomes structured future work.
+
+Phase 18 adds four official source records from the evidence gap register: ACC eDocket, ADWR assured and adequate water supply, City of Toronto Application Information Centre, and CMHC starts/completions tables. These sources strengthen local evidence foundations without resolving project-level local conclusions.
+
+Phase 19 repairs two existing signals with stronger official source evidence: Arizona water now cites ADWR 100-year water-supply criteria, and the building-permits signal now cites CMHC starts/completions tables. No new records were created and no records were promoted to `Published`.
+
+Phase 20 adds schema-backed evidence-gap and claim-scope metadata to signals, local systems, and briefings. Detail pages now expose claim scope, local evidence level, linked evidence gaps, and last reviewed dates where useful.
+
+Phase 21 turns evidence gaps into a structured content collection with a lightweight Atlas research queue and generated detail pages for `gap-001` through `gap-010`.
+
+Phase 22 adds a dependency-free content reference validation gate. `npm run validate:content` checks cross-record IDs, duplicate slugs, evidence-gap links, briefing signal references, and publication guardrails before broader content expansion resumes.
+
+Phase 23 resumes content expansion through the validation gate, adding source-backed technology records for post-quantum cryptography, eVTOL aircraft, grid-scale energy storage, and advanced semiconductor packaging, plus a DOE Office of Electricity storage source anchor.
+
+Phase 24 hardens the Technology Atlas. Technology pages now show source support, dependencies, constraints, guardrails, and deterministic related signals labeled by shared source or primary-topic relationship.
+
+Phase 25 adds the first qualitative dependency-map format and prototype. Dependency maps are standalone JSON records that link existing records, show qualitative confidence, and state what the map does not prove. No numeric 42/59 scoring has been added.
+
+Phase 26 integrates dependency maps into reader journeys. Signal, source, technology, local system, evidence gap, topic, and briefing pages now show dependency-map backlinks only through explicit IDs or controlled topic matches.
+
+Phase 27 defines dependency-map selection rules and adds a second qualitative prototype: `Post-quantum standards are not migration`. It separates standards progress from institution-level migration evidence without adding scoring or graph tooling.
+
+Phase 28 hardens the dependency-map Atlas index. The index now shows counts by map type, topic, and status; explains public selection rules; and groups maps without adding client-side filtering, scoring, graph libraries, automation, ingestion, or a database.
+
+Phase 29 makes dependency maps easier to find from the homepage and Atlas landing page. These discovery surfaces use existing dependency-map records only and keep maps qualitative, evidence-aware, and unscored.
+
+Phase 30 audits both current dependency maps against the selection rules and improves detail-page readability with static map summaries, linked-record counts, and confidence-mix context.
+
+Phase 31 confirms the dependency-map reader journey works from homepage to Atlas to map detail pages and that representative backlinks remain coherent. The decision is to pause dependency-map expansion and return to broader source-backed content growth before creating a third map.
+
+Phase 32 resumes source-backed content growth with official source anchors, topic records, and organization records for Space, Agriculture and Bioeconomy, AI for Science, and Advanced Manufacturing. It repairs the NASA Artemis and USDA plant-genomics draft samples into cautious `In Review` records, while leaving the Joby/eVTOL company-claim sample in `Draft Sample`.
+
+Phase 33 creates the publication-readiness triage layer. It identifies a small launch-candidate signal set, moves the stale NOAA ENSO Watch record to `Needs Update`, keeps the Joby/eVTOL company-claim sample in `Draft Sample`, refreshes checked dates for a small official-source set, and keeps all records out of `Published`.
+
+Phase 34 creates the publication policy and public Method page. It repairs the NOAA ENSO signal against the 11 June 2026 CPC discussion, adds metadata/social preview basics, links Method from the public app shell, and keeps all records out of `Published`.
+
+Phase 35 performs the first final launch-candidate review. It publishes three bounded official-source records, keeps three local constraint records in `In Review`, refreshes checked dates for the reviewed source set, and adds publication-date visibility to signal detail pages.
+
+Phase 36 prepares the static launch package without deploying. It chooses Cloudflare Pages as the primary static hosting path, adds `ftfn.io` canonical metadata, generates `robots.txt` and `sitemap.xml`, makes Published signals the default signal-index surface, and keeps non-published signal and briefing detail pages out of search indexing.
+
+Phase 37 adds a generated Source Monitor at `/atlas/source-monitor/`. The monitor classifies source records as Current, Watch soon, or Review due from checked dates, update cadence, and capture priority. This moves FTFN toward a self-updating evidence layer while keeping automated publishing, ingestion, scoring, CMS, database migration, analytics, DNS, and deployment out of scope.
+
+Phase 38 red-teams the site against an authority standard. The verdict is that FTFN is a credible prelaunch evidence scaffold, but not yet a comprehensive resource. The next work should recheck review-due sources, add missing topic pillars, expand high-authority watch-lane sources, repair broad In Review records into dated signals, and build local evidence dossiers before launch or automation.
+
+The authoritative live source plan identified the first 30 source records added in Phase 39, including Federal Register, Regulations.gov, SEC EDGAR, BLS, Census, Statistics Canada, EIA grid data, NERC, FERC, NOAA/NCEI, Drought.gov, USGS Water Services, NHTSA, FAA DRS, NVD, CISA, USDA QuickStats, Toronto Open Data, and Ontario Data Catalogue.
+
+Phase 39 implements the first authority-foundation pass. The source schema now supports watch lanes, live access types, endpoint URLs, explicit review cadence, monitoring status, source owner, jurisdiction, coverage role, and automation notes. The app now has 55 source records, including the first 30 authoritative live-source records from the plan. `/atlas/source-monitor/` now reports source health and probe readiness, `/atlas/source-coverage/` generates a watch-lane and topic coverage matrix, and local system pages now render dossier-style evidence tables from linked source records. A new `npm run source:health` script checks endpoint metadata for API/feed/download/docket/filing sources.
+
+Phase 40 completes the public topic taxonomy by adding `Cybersecurity` and `Discovery Technologies`, expands the source library to 66 records, and deepens the Arizona and Ontario dossiers with discovery, sensing, utility-planning, permitting, building-permit, and municipal water-service source anchors. These additions make FTFN more comprehensive as an analytical source library, while preserving the rule that local conclusions still need selected dockets, permits, provider records, servicing evidence, completion data, and project-specific records.
+
+The source monitor, source coverage matrix, signals roadmap, authority red-team plan, and live source plan now define the next high-value source checks, private update queue, local evidence dossiers, and candidate signal repair batch for content expansion after launch QA.
+
+The current v0.1.1 deployment-candidate artifacts are:
+
+```text
+docs/session-brief-v0.1.1.md
+docs/roadmap-v0.1.1.md
+docs/roadmap-v0.2.md
+deployment/ftfn-v0.1.1-build.json
+```
+
+The original v0.1 artifacts remain as a historical Phase 40 checkpoint. The v0.1.1 build manifest is for preview deployment preparation only. It does not approve DNS changes, analytics, automated ingestion, automated publishing, or public launch.
+
+The v0.2 roadmap scopes the next milestone as the first authority-loop release: private source-update queue, source rechecks, dated signal repair, named local evidence trails, public update/correction log, and static data exports.
+
+The signal scale scenarios document maps how the content library should behave at 25 to 35 signals with 8 to 12 candidates, then at 70 signals with 24 candidates.
+
+Phase 47 starts the v0.2 authority loop. It adds the private update queue, the signal repair workflow, and the first mapped v0.2 signal batch.
+
+Phase 48 moves the first queue items into app content. It repairs the NOAA ENSO published record against the 9 July 2026 CPC discussion, adds a CISA KEV cybersecurity operating-rail signal, adds a Federal Register/Regulations.gov regulatory watch-rail signal, refreshes the checked dates for the rechecked source rails, and brings the app to 16 signal records. Phase 50 has now selected the first named local dataset; the next local content move should select deeper ACC, Phoenix, Toronto, water-provider, permit, application, servicing, workforce, or supplier records.
+
+Phase 49 promotes 36 additional active source records, expanding the source library from 66 to 102 records. The batch adds cross-cutting official rails, funding and spending APIs, international statistical sources, research and patent discovery rails, water and minerals data, agriculture biotechnology regulation, space licensing sources, and Phoenix/MAG local-system data. These records broaden the authoritative source base, but broad catalogs remain discovery rails rather than direct evidence for claims.
+
+Phase 50 starts the bounded source-item content expansion. It adds two `In Review` signals from selected official records: a DOE/Grants.gov Critical Minerals and Materials Accelerator funding-opportunity signal and a MAG 2023 projections signal for the Phoenix-region local dossier. It keeps both bounded: the DOE record is funding intent, not supply-chain proof, and the MAG record is regional planning context, not local readiness proof.
+
+The v0.1.1 release refresh packages the Phase 48 through Phase 50 state as app version `0.1.1`: 102 sources, 18 signals, 17 topics, and 182 generated pages. The updated v0.2 roadmap starts from this baseline and sequences bounded evidence conversion, local dossier deepening, a public update log, static exports, publication review, and release QA.
+
+## Working Rule
+
+This project should be updated as we make decisions. The roadmap is a living document, not a fixed plan.

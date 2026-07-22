@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import { getEvidenceGapTone } from "../../../lib/editorial";
+
+const priorityOrder = { High: 0, Medium: 1, Low: 2 };
+const evidenceGaps = (await getCollection("evidenceGaps")).sort((a, b) => {
+  const priorityDelta = priorityOrder[a.data.priority] - priorityOrder[b.data.priority];
+  if (priorityDelta !== 0) return priorityDelta;
+  return a.data.id.localeCompare(b.data.id);
+});
+const openCount = evidenceGaps.filter((gap) => gap.data.status !== "Resolved" && gap.data.status !== "Deferred").length;
+---
+
+<BaseLayout title="Evidence Gaps | FTFN" description="The FTFN evidence gap research queue tracks missing evidence that limits local-system and signal interpretation.">
+  <section class="page-section">
+    <div class="eyebrow">Atlas / Evidence Gaps</div>
+    <h1 class="page-title">The research queue behind the claims.</h1>
+    <p class="lede">
+      Evidence gaps track missing source layers, local records, and data-model needs
+      that keep FTFN from overstating what a signal proves.
+    </p>
+    <div class="meta-row">
+      <MetaPill label={`${evidenceGaps.length} gaps`} />
+      <MetaPill label={`${openCount} active`} tone="urgency" />
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      {evidenceGaps.map((gap) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label={gap.data.priority} tone={gap.data.priority === "High" ? "urgency" : "default"} />
+            <MetaPill label={gap.data.status} tone={getEvidenceGapTone(gap.data.status)} />
+            <MetaPill label={gap.data.primary_topic} />
+          </div>
+          <h2><a href={`/atlas/evidence-gaps/${gap.data.slug}/`}>{gap.data.title}</a></h2>
+          <p>{gap.data.question}</p>
+          <div class="meta-row">
+            {gap.data.constraint_tags.slice(0, 4).map((constraint) => (
+              <MetaPill label={constraint} />
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

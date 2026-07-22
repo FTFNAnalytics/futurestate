@@ -1,0 +1,44 @@
+{
+  "id": "gap-004",
+  "title": "Ontario municipal systems that convert housing targets into completed units",
+  "slug": "gap-004-ontario-municipal-housing-conversion",
+  "status": "Source Added",
+  "priority": "High",
+  "local_system": "Ontario Real Estate",
+  "primary_topic": "Human Futures",
+  "framework_layers": ["Human Systems"],
+  "constraint_tags": ["Infrastructure", "Regulation", "Capital", "Labor"],
+  "question": "Which municipal systems can convert housing targets into completed units?",
+  "why_it_matters": "Provincial targets and housing demand matter only if municipal planning, servicing, approvals, infrastructure, labor, and financing can convert them into occupied homes.",
+  "current_support": "FTFN has Ontario housing supply progress, CMHC housing data, Statistics Canada permits, and Toronto AIC as a first municipal application source.",
+  "missing_evidence": [
+    "servicing capacity",
+    "development application timelines",
+    "infrastructure funding",
+    "permit processing",
+    "municipal approvals",
+    "completions by municipality"
+  ],
+  "likely_source_types": [
+    "municipal planning portal",
+    "servicing plan",
+    "infrastructure budget",
+    "development application record",
+    "municipal completion data"
+  ],
+  "candidate_records": [
+    "Toronto application record",
+    "priority Ontario municipality servicing plan",
+    "municipal approval timeline source"
+  ],
+  "next_action": "Use Toronto AIC as the first municipal application source, then add servicing and approval-timeline sources for priority municipalities.",
+  "future_data_model_need": ["Permit", "Dataset", "Local Actor", "Policy or Regulation"],
+  "related_source_ids": [
+    "source-city-toronto-application-information-centre",
+    "source-ontario-housing-supply-progress",
+    "source-cmhc-housing-market-information-portal"
+  ],
+  "related_signal_ids": ["signal-ontario-housing-supply-progress-local-capacity-signal"],
+  "related_local_system_ids": ["local-ontario-real-estate"],
+  "notes": "Source added, not resolved. Toronto AIC does not represent all Ontario municipalities."
+}

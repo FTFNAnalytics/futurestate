@@ -1,0 +1,44 @@
+{
+  "id": "gap-005",
+  "title": "Ontario permit-to-start-to-completion conversion evidence",
+  "slug": "gap-005-ontario-permits-starts-completions",
+  "status": "Source Added",
+  "priority": "High",
+  "local_system": "Ontario Real Estate",
+  "primary_topic": "Finance and Risk",
+  "framework_layers": ["Human Systems"],
+  "constraint_tags": ["Capital", "Data Quality", "Infrastructure"],
+  "question": "Which permit intentions become starts, completions, and occupancy?",
+  "why_it_matters": "Building permits are upstream intentions. FTFN needs conversion evidence to know whether approvals become starts, completions, occupied units, or stalled projects.",
+  "current_support": "FTFN has Statistics Canada building permits, CMHC housing market portal data, and CMHC starts, completions, and units-under-construction tables.",
+  "missing_evidence": [
+    "permit-to-start conversion",
+    "starts",
+    "completions",
+    "cancellations",
+    "financing conditions",
+    "local absorption data"
+  ],
+  "likely_source_types": [
+    "CMHC construction table",
+    "municipal completion record",
+    "municipal permit dataset",
+    "financing or absorption source",
+    "local infrastructure record"
+  ],
+  "candidate_records": [
+    "specific CMHC geography table",
+    "municipal completions dataset",
+    "permit-to-start duration table"
+  ],
+  "next_action": "Add municipal completion, servicing, financing, and geography-specific conversion evidence.",
+  "future_data_model_need": ["Dataset", "Permit", "Local Actor"],
+  "related_source_ids": [
+    "source-statcan-building-permits-survey",
+    "source-cmhc-housing-market-information-portal",
+    "source-cmhc-starts-completions-under-construction"
+  ],
+  "related_signal_ids": ["signal-statcan-building-permits-construction-intentions-signal"],
+  "related_local_system_ids": ["local-ontario-real-estate"],
+  "notes": "CMHC starts/completions improve the conversion lens but do not prove local project outcomes."
+}

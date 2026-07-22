@@ -1,0 +1,279 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import { formatDate } from "../../../lib/editorial";
+import { getFreshnessRank, getSourceFreshness, getSourceHealth } from "../../../lib/sourceFreshness";
+
+const generatedAt = new Date();
+const sources = await getCollection("sources");
+const signals = await getCollection("signals");
+
+const sourceRows = sources
+  .map((source) => {
+    const freshness = getSourceFreshness(
+      source.data.last_checked_date,
+      source.data.update_frequency,
+      source.data.capture_priority,
+      generatedAt,
+      source.data.review_cadence_days
+    );
+    const health = getSourceHealth(source.data);
+    const relatedSignalCount = signals.filter((signal) =>
+      signal.data.source_ids.includes(source.data.id)
+    ).length;
+
+    return {
+      source,
+      freshness,
+      health,
+      relatedSignalCount
+    };
+  })
+  .sort((a, b) => {
+    const freshnessSort = getFreshnessRank(a.freshness.status) - getFreshnessRank(b.freshness.status);
+    if (freshnessSort !== 0) return freshnessSort;
+
+    const prioritySort =
+      Number(b.source.data.capture_priority === "High") - Number(a.source.data.capture_priority === "High");
+    if (prioritySort !== 0) return prioritySort;
+
+    return a.source.data.last_checked_date.valueOf() - b.source.data.last_checked_date.valueOf();
+  });
+
+const reviewDue = sourceRows.filter((row) => row.freshness.status === "Review due");
+const watchSoon = sourceRows.filter((row) => row.freshness.status === "Watch soon");
+const currentSources = sourceRows.filter((row) => row.freshness.status === "Current");
+const tierOneSources = sourceRows.filter((row) => row.source.data.credibility_level === "Tier 1");
+const highPrioritySources = sourceRows.filter((row) => row.source.data.capture_priority === "High");
+const probeReadySources = sourceRows.filter((row) => row.health.status === "Probe ready");
+const manualReviewSources = sourceRows.filter((row) => row.health.status === "Manual review");
+const needsEndpointSources = sourceRows.filter((row) => row.health.status === "Needs endpoint");
+
+const topicCounts = new Map<string, number>();
+const watchLaneCounts = new Map<string, number>();
+const accessTypeCounts = new Map<string, number>();
+for (const row of sourceRows) {
+  for (const topic of row.source.data.primary_topics) {
+    topicCounts.set(topic, (topicCounts.get(topic) ?? 0) + 1);
+  }
+
+  for (const lane of row.source.data.watch_lanes) {
+    watchLaneCounts.set(lane, (watchLaneCounts.get(lane) ?? 0) + 1);
+  }
+
+  accessTypeCounts.set(
+    row.source.data.live_access_type,
+    (accessTypeCounts.get(row.source.data.live_access_type) ?? 0) + 1
+  );
+}
+
+const topTopics = [...topicCounts.entries()]
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+  .slice(0, 8);
+const topWatchLanes = [...watchLaneCounts.entries()]
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+  .slice(0, 8);
+const accessTypes = [...accessTypeCounts.entries()]
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+
+const formatList = (values: string[]) => values.length > 0 ? values.join(", ") : "Unassigned";
+---
+
+<BaseLayout
+  title="Source Monitor | FTFN"
+  description="A generated source freshness and authority monitor for the FTFN Atlas."
+>
+  <section class="page-section">
+    <div class="eyebrow">Atlas / Source Monitor</div>
+    <h1 class="page-title">A living review queue for the evidence layer.</h1>
+    <p class="lede">
+      This monitor is generated from source records at build time. It shows
+      authority, update cadence, checked dates, and which sources should be
+      reviewed before supporting new claims.
+    </p>
+    <div class="meta-row">
+      <MetaPill label={`Generated ${formatDate(generatedAt)}`} tone="review" />
+      <MetaPill label="No automated publishing" tone="urgency" />
+      <MetaPill label={`${sources.length} sources`} tone="possibility" />
+      <MetaPill label={`${probeReadySources.length} probe ready`} tone="possibility" />
+    </div>
+  </section>
+
+  <section class="page-section status-panel" aria-label="Source monitor summary">
+    <article class="status-item">
+      <div class="eyebrow">Review Due</div>
+      <h2>{reviewDue.length}</h2>
+      <p>Sources whose checked date is past the current review window.</p>
+    </article>
+    <article class="status-item">
+      <div class="eyebrow">Watch Soon</div>
+      <h2>{watchSoon.length}</h2>
+      <p>Sources nearing the next manual review pass.</p>
+    </article>
+    <article class="status-item">
+      <div class="eyebrow">Current</div>
+      <h2>{currentSources.length}</h2>
+      <p>Sources still inside their current freshness window.</p>
+    </article>
+    <article class="status-item">
+      <div class="eyebrow">Tier 1</div>
+      <h2>{tierOneSources.length}</h2>
+      <p>Official, data, agency, standards, or primary institutional sources.</p>
+    </article>
+    <article class="status-item">
+      <div class="eyebrow">High Priority</div>
+      <h2>{highPrioritySources.length}</h2>
+      <p>Sources most likely to produce actionable signals.</p>
+    </article>
+    <article class="status-item">
+      <div class="eyebrow">Topic Coverage</div>
+      <h2>{topicCounts.size}</h2>
+      <p>Topic pillars currently supported by source records.</p>
+    </article>
+    <article class="status-item">
+      <div class="eyebrow">Probe Ready</div>
+      <h2>{probeReadySources.length}</h2>
+      <p>Sources with API, feed, download, docket, or filing endpoint metadata.</p>
+    </article>
+    <article class="status-item">
+      <div class="eyebrow">Manual Review</div>
+      <h2>{manualReviewSources.length}</h2>
+      <p>Authoritative sources that need human review or custom scraping later.</p>
+    </article>
+    <article class="status-item">
+      <div class="eyebrow">Needs Endpoint</div>
+      <h2>{needsEndpointSources.length}</h2>
+      <p>Live-access candidates whose endpoint metadata is incomplete.</p>
+    </article>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Authority Posture</div>
+          <h2>Freshness is not automation.</h2>
+        </div>
+        <p>
+          FTFN can become self-updating by rebuilding generated pages from
+          maintained source records, watch lanes, and review queues. Publication
+          still requires human review, source checks, and visible caveats.
+        </p>
+        <a class="inline-link" href="/method/">Read the method</a>
+      </div>
+    </div>
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Strongest Source Coverage</div>
+          <h2>Where the current evidence base is deepest.</h2>
+        </div>
+      </div>
+      <div class="meta-row">
+        {topTopics.map(([topic, count]) => (
+          <MetaPill label={`${topic}: ${count}`} tone={count >= 4 ? "possibility" : "default"} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Watch Lanes</div>
+          <h2>Where source coverage is now concentrated.</h2>
+        </div>
+      </div>
+      <div class="meta-row">
+        {topWatchLanes.map(([lane, count]) => (
+          <MetaPill label={`${lane}: ${count}`} tone={count >= 4 ? "possibility" : "default"} />
+        ))}
+      </div>
+      <p class="card-note">
+        Watch lanes group sources by monitoring responsibility, not by a single topic taxonomy.
+      </p>
+    </div>
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Access Types</div>
+          <h2>What can become self-updating first.</h2>
+        </div>
+      </div>
+      <div class="meta-row">
+        {accessTypes.map(([accessType, count]) => (
+          <MetaPill label={`${accessType}: ${count}`} tone={["API", "RSS Feed", "Data Download", "Docket Search", "Filing System"].includes(accessType) ? "review" : "default"} />
+        ))}
+      </div>
+      <p class="card-note">
+        Probe-ready sources can be checked by a later job; manual sources remain part of the editorial queue.
+      </p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Review Queue</div>
+        <h2>Review due sources first.</h2>
+        <p>
+          Use this page before expanding signals, publishing records, or writing
+          briefings. A source marked review due can still be useful, but it
+          should be rechecked before carrying a new public claim.
+        </p>
+      </div>
+      <a class="inline-link" href="/atlas/sources/">Open source atlas</a>
+    </div>
+
+    <div class="source-list">
+      {sourceRows.map(({ source, freshness, health, relatedSignalCount }) => (
+        <article class="source-row">
+          <div class="meta-row">
+            <MetaPill label={freshness.status} tone={freshness.tone} />
+            <MetaPill label={health.status} tone={health.tone} />
+            <MetaPill label={source.data.credibility_level} />
+            <MetaPill
+              label={source.data.capture_priority}
+              tone={source.data.capture_priority === "High" ? "urgency" : "default"}
+            />
+            <MetaPill label={source.data.live_access_type} />
+            <MetaPill label={source.data.monitoring_status} tone={source.data.monitoring_status === "Active" ? "possibility" : "review"} />
+            <MetaPill label={`${relatedSignalCount} signal${relatedSignalCount === 1 ? "" : "s"}`} />
+          </div>
+          <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+          <p>{source.data.known_limitations}</p>
+          <dl class="source-facts">
+            <div>
+              <dt>Last Checked</dt>
+              <dd>{formatDate(source.data.last_checked_date)}</dd>
+            </div>
+            <div>
+              <dt>Review Window</dt>
+              <dd>{freshness.reviewAfterDays} days</dd>
+            </div>
+            <div>
+              <dt>Age</dt>
+              <dd>{freshness.ageDays} days</dd>
+            </div>
+            <div>
+              <dt>Update Cadence</dt>
+              <dd>{source.data.update_frequency}</dd>
+            </div>
+            <div>
+              <dt>Watch Lanes</dt>
+              <dd>{formatList(source.data.watch_lanes)}</dd>
+            </div>
+            <div>
+              <dt>Coverage Role</dt>
+              <dd>{formatList(source.data.coverage_role)}</dd>
+            </div>
+          </dl>
+          <p class="card-note">{freshness.note}</p>
+          <p class="card-note">{health.note}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

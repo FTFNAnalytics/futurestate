@@ -1,0 +1,255 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import { formatDate } from "../../../lib/editorial";
+import { getSourceFreshness, getSourceHealth } from "../../../lib/sourceFreshness";
+
+const generatedAt = new Date();
+const sources = await getCollection("sources");
+const topicRecords = await getCollection("topics");
+const topicNames = new Set(topicRecords.map((topic) => topic.data.name));
+
+const watchLanes = [
+  "Cross-Cutting Official Rails",
+  "Power and Grid",
+  "Compute and Chips",
+  "Water",
+  "Mobility Certification",
+  "Security and Standards",
+  "Critical Minerals",
+  "Climate",
+  "Agriculture and Bioeconomy",
+  "AI and Advanced Manufacturing",
+  "Space",
+  "Discovery Technologies",
+  "Finance and Human Futures",
+  "Local Systems"
+] as const;
+
+const sourceRows = sources.map((source) => ({
+  source,
+  freshness: getSourceFreshness(
+    source.data.last_checked_date,
+    source.data.update_frequency,
+    source.data.capture_priority,
+    generatedAt,
+    source.data.review_cadence_days
+  ),
+  health: getSourceHealth(source.data)
+}));
+
+const laneRows = watchLanes.map((lane) => {
+  const laneSourceRows = sourceRows.filter((row) => row.source.data.watch_lanes.includes(lane));
+  const laneTopics = new Set(laneSourceRows.flatMap((row) => row.source.data.primary_topics));
+
+  return {
+    lane,
+    sourceRows: laneSourceRows,
+    sourceCount: laneSourceRows.length,
+    topicCount: laneTopics.size,
+    tierOneCount: laneSourceRows.filter((row) => row.source.data.credibility_level === "Tier 1").length,
+    highPriorityCount: laneSourceRows.filter((row) => row.source.data.capture_priority === "High").length,
+    probeReadyCount: laneSourceRows.filter((row) => row.health.status === "Probe ready").length,
+    manualReviewCount: laneSourceRows.filter((row) => row.health.status === "Manual review").length,
+    reviewDueCount: laneSourceRows.filter((row) => row.freshness.status === "Review due").length,
+    missingTopicRecords: [...laneTopics].filter((topic) => !topicNames.has(topic)).sort()
+  };
+});
+
+const allSourceTopics = [...new Set(sources.flatMap((source) => source.data.primary_topics))].sort();
+const topicRows = allSourceTopics.map((topic) => {
+  const topicSourceRows = sourceRows.filter((row) => row.source.data.primary_topics.includes(topic));
+
+  return {
+    topic,
+    hasTopicPage: topicNames.has(topic),
+    sourceRows: topicSourceRows,
+    sourceCount: topicSourceRows.length,
+    tierOneCount: topicSourceRows.filter((row) => row.source.data.credibility_level === "Tier 1").length,
+    probeReadyCount: topicSourceRows.filter((row) => row.health.status === "Probe ready").length,
+    highPriorityCount: topicSourceRows.filter((row) => row.source.data.capture_priority === "High").length
+  };
+});
+
+const probeReadyHighPriority = sourceRows
+  .filter((row) => row.health.status === "Probe ready" && row.source.data.capture_priority === "High")
+  .sort((a, b) => a.source.data.name.localeCompare(b.source.data.name));
+
+const weakLaneRows = laneRows.filter((row) => row.sourceCount < 3 || row.probeReadyCount === 0);
+const unassignedSources = sourceRows.filter((row) => row.source.data.watch_lanes.length === 0);
+---
+
+<BaseLayout
+  title="Source Coverage Matrix | FTFN"
+  description="A generated matrix showing authoritative source coverage by watch lane, topic, access type, and monitoring readiness."
+>
+  <section class="page-section">
+    <div class="eyebrow">Atlas / Source Coverage</div>
+    <h1 class="page-title">The authority map behind the evidence layer.</h1>
+    <p class="lede">
+      This page is generated from source records at build time. It shows which
+      watch lanes are supported, which topics have authoritative source depth,
+      and which records can move toward automated checks first.
+    </p>
+    <div class="meta-row">
+      <MetaPill label={`Generated ${formatDate(generatedAt)}`} tone="review" />
+      <MetaPill label={`${sources.length} sources`} tone="possibility" />
+      <MetaPill label={`${watchLanes.length} watch lanes`} />
+      <MetaPill label={`${probeReadyHighPriority.length} high-priority probe-ready sources`} tone="possibility" />
+      <MetaPill label={`${unassignedSources.length} unassigned sources`} tone={unassignedSources.length > 0 ? "review" : "possibility"} />
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Watch-Lane Matrix</div>
+        <h2>Coverage by monitoring responsibility.</h2>
+        <p>
+          A lane is healthy when it has multiple Tier 1 sources, at least one
+          probe-ready source, and no review-due anchor records.
+        </p>
+      </div>
+      <a class="inline-link" href="/atlas/source-monitor/">Open source monitor</a>
+    </div>
+
+    <div class="coverage-grid">
+      {laneRows.map((row) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label={`${row.sourceCount} sources`} tone={row.sourceCount >= 3 ? "possibility" : "review"} />
+            <MetaPill label={`${row.probeReadyCount} probe ready`} tone={row.probeReadyCount > 0 ? "possibility" : "urgency"} />
+            <MetaPill label={`${row.reviewDueCount} review due`} tone={row.reviewDueCount > 0 ? "urgency" : "default"} />
+          </div>
+          <h2>{row.lane}</h2>
+          <dl class="source-facts">
+            <div>
+              <dt>Tier 1</dt>
+              <dd>{row.tierOneCount}</dd>
+            </div>
+            <div>
+              <dt>High Priority</dt>
+              <dd>{row.highPriorityCount}</dd>
+            </div>
+            <div>
+              <dt>Topics</dt>
+              <dd>{row.topicCount}</dd>
+            </div>
+            <div>
+              <dt>Manual Review</dt>
+              <dd>{row.manualReviewCount}</dd>
+            </div>
+          </dl>
+          {row.missingTopicRecords.length > 0 && (
+            <p class="card-note">Missing public topic page: {row.missingTopicRecords.join(", ")}</p>
+          )}
+          <div class="compact-list">
+            {row.sourceRows.slice(0, 5).map(({ source }) => (
+              <a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a>
+            ))}
+            {row.sourceRows.length > 5 && <span>{row.sourceRows.length - 5} more source records</span>}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Topic Coverage</div>
+        <h2>Which public topics have source depth.</h2>
+        <p>
+          This matrix exposes the topics with source support, whether a public
+          topic page exists, and which topics are closest to self-updating checks.
+        </p>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th>Topic</th>
+            <th>Topic Page</th>
+            <th>Sources</th>
+            <th>Tier 1</th>
+            <th>High Priority</th>
+            <th>Probe Ready</th>
+          </tr>
+        </thead>
+        <tbody>
+          {topicRows.map((row) => (
+            <tr>
+              <td>{row.topic}</td>
+              <td>{row.hasTopicPage ? "Yes" : "Missing"}</td>
+              <td>{row.sourceCount}</td>
+              <td>{row.tierOneCount}</td>
+              <td>{row.highPriorityCount}</td>
+              <td>{row.probeReadyCount}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Automation Queue</div>
+          <h2>Start with high-priority probe-ready sources.</h2>
+        </div>
+        <p>
+          These records already have endpoint metadata and should be the first
+          candidates for later scheduled checks, feed polling, or draft update
+          generation.
+        </p>
+      </div>
+      <div class="source-list">
+        {probeReadyHighPriority.slice(0, 12).map(({ source, health }) => (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label={source.data.live_access_type} />
+              <MetaPill label={health.status} tone={health.tone} />
+              <MetaPill label={source.data.capture_priority} tone="urgency" />
+            </div>
+            <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+            <p>{source.data.automation_notes ?? source.data.known_limitations}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Weak Spots</div>
+          <h2>Source coverage still has uneven lanes.</h2>
+        </div>
+        <p>
+          These lanes either have fewer than three source records or no
+          probe-ready record. They are not blocked, but they need the next
+          acquisition pass before the site can claim comprehensive coverage.
+        </p>
+      </div>
+      <div class="source-list">
+        {weakLaneRows.map((row) => (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label={`${row.sourceCount} sources`} tone={row.sourceCount < 3 ? "urgency" : "default"} />
+              <MetaPill label={`${row.probeReadyCount} probe ready`} tone={row.probeReadyCount === 0 ? "urgency" : "possibility"} />
+            </div>
+            <h3>{row.lane}</h3>
+            <p>
+              Add more official APIs, datasets, dockets, report series, or local
+              records before relying on this lane as a comprehensive resource.
+            </p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,39 @@
+{
+  "id": "gap-006",
+  "title": "Local interpretation evidence for ENSO climate signals",
+  "slug": "gap-006-enso-local-interpretation",
+  "status": "Open",
+  "priority": "Medium",
+  "local_system": "Cross-system",
+  "primary_topic": "Climate",
+  "framework_layers": ["Planetary Conditions", "Human Systems"],
+  "constraint_tags": ["Climate", "Weather", "Interpretation"],
+  "question": "How should ENSO signals be interpreted for specific sectors and places?",
+  "why_it_matters": "ENSO outlooks are official climate signals, but local implications depend on teleconnections, basin conditions, crop regions, hazard exposure, and sector-specific interpretation.",
+  "current_support": "FTFN has NOAA CPC ENSO as an official source and an in-review ENSO signal.",
+  "missing_evidence": [
+    "local climate teleconnection evidence",
+    "sector impact models",
+    "water-basin data",
+    "crop-region data",
+    "insurance and hazard exposure data"
+  ],
+  "likely_source_types": [
+    "regional climate center",
+    "water basin dataset",
+    "crop impact model",
+    "insurance or hazard dataset",
+    "sector-specific government report"
+  ],
+  "candidate_records": [
+    "regional ENSO teleconnection source",
+    "crop-region climate impact source",
+    "water basin outlook source"
+  ],
+  "next_action": "Add regional climate and sector-specific sources before local ENSO conclusions.",
+  "future_data_model_need": ["Dataset", "Forecast", "Local System"],
+  "related_source_ids": ["source-noaa-cpc-enso"],
+  "related_signal_ids": ["signal-sample-001"],
+  "related_local_system_ids": [],
+  "notes": "Medium priority until a target sector or place is selected."
+}

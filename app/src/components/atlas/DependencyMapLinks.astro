@@ -1,0 +1,57 @@
+---
+import type { CollectionEntry } from "astro:content";
+import MetaPill from "../ui/MetaPill.astro";
+import { getStatusTone } from "../../lib/editorial";
+
+type DependencyMapEntry = CollectionEntry<"dependencyMaps">;
+
+type DependencyMapLink = {
+  map: DependencyMapEntry;
+  relationship: string;
+  note?: string;
+};
+
+interface Props {
+  maps: DependencyMapLink[];
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+}
+
+const {
+  maps,
+  eyebrow = "Dependency Maps",
+  title = "Maps connected by explicit records.",
+  description = "These backlinks appear only when a dependency map cites this record through an explicit ID or controlled topic relationship."
+} = Astro.props;
+---
+
+{maps.length > 0 && (
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">{eyebrow}</div>
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
+    </div>
+    <div class="grid">
+      {maps.map(({ map, relationship, note }) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label={map.data.map_type} />
+            <MetaPill label={map.data.record_status} tone={getStatusTone(map.data.record_status)} />
+            <MetaPill label={relationship} tone="review" />
+          </div>
+          <h3><a href={`/atlas/dependency-maps/${map.data.slug}/`}>{map.data.title}</a></h3>
+          <p>{note ?? map.data.summary}</p>
+          <div class="meta-row">
+            <MetaPill label={`${map.data.nodes.length} nodes`} />
+            <MetaPill label={`${map.data.links.length} links`} />
+            <MetaPill label={`${map.data.evidence_gap_ids.length} evidence gaps`} tone="urgency" />
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+)}

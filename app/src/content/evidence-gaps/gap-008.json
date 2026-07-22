@@ -1,0 +1,40 @@
+{
+  "id": "gap-008",
+  "title": "Local planning evidence for AI electricity demand",
+  "slug": "gap-008-ai-electricity-local-planning",
+  "status": "Open",
+  "priority": "Medium",
+  "local_system": "Cross-system",
+  "primary_topic": "Chips and Compute",
+  "framework_layers": ["Enabling Infrastructure", "Human Systems"],
+  "constraint_tags": ["Compute", "Power", "Water", "Land Use", "Permitting"],
+  "question": "Where does AI electricity demand become a local planning constraint?",
+  "why_it_matters": "AI electricity demand becomes consequential when it enters specific utility territories, land-use processes, water systems, and local political contexts.",
+  "current_support": "FTFN has IEA AI electricity context and EIA electricity data, plus an in-review AI electricity signal.",
+  "missing_evidence": [
+    "data center siting",
+    "utility interconnection",
+    "local permitting",
+    "water and cooling evidence",
+    "grid congestion",
+    "community response"
+  ],
+  "likely_source_types": [
+    "utility filing",
+    "local permit",
+    "data center planning record",
+    "water provider record",
+    "community or regulatory hearing record"
+  ],
+  "candidate_records": [
+    "North American data center power corridor local system",
+    "specific data center utility filing",
+    "local data center permitting signal"
+  ],
+  "next_action": "Add a future local system for a data center power corridor after source coverage improves.",
+  "future_data_model_need": ["Facility", "Utility Filing", "Permit", "Local System"],
+  "related_source_ids": ["source-iea-ai", "source-eia-electricity-data"],
+  "related_signal_ids": ["signal-sample-009"],
+  "related_local_system_ids": [],
+  "notes": "A target geography is needed before this becomes a local evidence gap."
+}

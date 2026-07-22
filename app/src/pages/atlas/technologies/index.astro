@@ -1,0 +1,71 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+
+const technologies = (await getCollection("technologies")).sort((a, b) =>
+  a.data.name.localeCompare(b.data.name)
+);
+const sources = await getCollection("sources");
+const signals = await getCollection("signals");
+
+type TechnologyEntry = CollectionEntry<"technologies">;
+
+function getRelatedSignals(technology: TechnologyEntry) {
+  return signals.filter((signal) => {
+    const hasSharedSource = signal.data.source_ids.some((sourceId) => technology.data.source_ids.includes(sourceId));
+    const hasTopicMatch = technology.data.primary_topics.includes(signal.data.primary_topic);
+    return hasSharedSource || hasTopicMatch;
+  });
+}
+---
+
+<BaseLayout title="Technologies | FTFN" description="Technology profiles in the FTFN Atlas for ftfn.io.">
+  <section class="page-section">
+    <div class="eyebrow">Atlas / Technologies</div>
+    <h1 class="page-title">Capabilities, dependencies, and constraints.</h1>
+    <p class="lede">
+      Technology profiles explain trackable capabilities by maturity, dependencies,
+      constraints, source links, and topic relationships.
+    </p>
+    <div class="status-panel">
+      <article class="status-item">
+        <h2>Reference Records</h2>
+        <p>Profiles define capabilities and evidence anchors. They do not prove deployment readiness.</p>
+      </article>
+      <article class="status-item">
+        <h2>Dependency First</h2>
+        <p>Each profile names practical requirements before FTFN treats the capability as scalable.</p>
+      </article>
+      <article class="status-item">
+        <h2>Signal Linked</h2>
+        <p>Related signals appear only through source overlap or primary-topic matches.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      {technologies.map((technology) => {
+        const sourceCount = sources.filter((source) => technology.data.source_ids.includes(source.data.id)).length;
+        const relatedSignalCount = getRelatedSignals(technology).length;
+
+        return (
+          <article class="record-card">
+            <div class="meta-row">
+              <MetaPill label={technology.data.maturity_level} tone="possibility" />
+              <MetaPill label={`${sourceCount} source${sourceCount === 1 ? "" : "s"}`} />
+              <MetaPill label={`${relatedSignalCount} signal${relatedSignalCount === 1 ? "" : "s"}`} tone={relatedSignalCount > 0 ? "review" : "default"} />
+            </div>
+            <h2><a href={`/atlas/technologies/${technology.data.slug}/`}>{technology.data.name}</a></h2>
+            <p>{technology.data.summary}</p>
+            <div class="meta-row">
+              {technology.data.primary_topics.map((topic) => <MetaPill label={topic} />)}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+</BaseLayout>

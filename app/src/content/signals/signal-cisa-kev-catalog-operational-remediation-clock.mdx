@@ -1,0 +1,65 @@
+---
+id: "signal-cisa-kev-catalog-operational-remediation-clock"
+title: "CISA KEV catalog turns exploitation evidence into a remediation clock"
+slug: "cisa-kev-catalog-operational-remediation-clock"
+record_status: "In Review"
+summary: "CISA's Known Exploited Vulnerabilities Catalog gives FTFN a high-authority cybersecurity rail for separating known exploited vulnerabilities from general vulnerability volume."
+source_ids:
+  - "source-cisa-kev-catalog"
+published_date: null
+captured_date: 2026-07-21
+primary_topic: "Cybersecurity"
+framework_layers:
+  - "Enabling Infrastructure"
+  - "Human Systems"
+signal_type: "Security Signal"
+maturity_level: "Infrastructure"
+time_horizon: "Now"
+evidence_quality: "Official Data"
+verification_status: "Reviewed"
+why_it_matters: "The catalog connects exploitation evidence, required action language, and remediation due dates, making it more operationally useful than raw CVE volume."
+dependencies:
+  - "vulnerability disclosure"
+  - "CVE identifiers"
+  - "CISA exploitation criteria"
+  - "asset inventories"
+  - "patch and mitigation governance"
+constraints:
+  - "Cybersecurity"
+  - "Standards"
+  - "Data Quality"
+  - "Regulation"
+receiving_systems:
+  - "Public-sector and critical-infrastructure security programs"
+local_implications:
+  - "Local risk still depends on whether affected products are present, exposed, unpatched, or mitigated in a specific environment."
+claim_scope: "Specific Source Update"
+local_evidence_level: "None"
+last_reviewed_date: 2026-07-21
+editorial_notes: "Phase 48 first signal repair batch. Keep In Review until a direct feed pull or specific KEV update window is captured; do not infer local exposure, exploit reach, or sector impact from catalog presence alone."
+---
+
+## What Changed
+
+CISA's Known Exploited Vulnerabilities Catalog gives FTFN a better cybersecurity operating rail than undifferentiated vulnerability volume. The catalog is useful because it focuses on vulnerabilities with known exploitation evidence and gives each entry operational action context.
+
+## Why It Matters
+
+Cybersecurity signals become decision-useful when they help teams prioritize what must be fixed first. A known-exploited vulnerability is not just another database row; it can trigger remediation work, patch-window pressure, vendor review, risk acceptance, and executive reporting.
+
+## Dependency Stack
+
+- Vulnerability disclosure and CVE metadata
+- Evidence of active exploitation
+- CISA catalog inclusion criteria
+- Vendor mitigation guidance
+- Asset exposure and patch status
+- Operational remediation ownership
+
+## Evidence Limits
+
+This signal does not show that a specific company, city, utility, hospital, school district, or infrastructure operator is exposed. FTFN should pair KEV entries with asset inventories, vendor advisories, exploitability context, and local remediation evidence before drawing institution-specific conclusions.
+
+## What To Watch Next
+
+Pull the JSON feed directly, select a bounded update window or named KEV entry, and convert that evidence into a narrower publication candidate.

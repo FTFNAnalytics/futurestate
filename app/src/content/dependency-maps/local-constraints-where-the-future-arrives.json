@@ -1,0 +1,172 @@
+{
+  "id": "dependency-map-local-constraints-where-the-future-arrives",
+  "title": "Local constraints are where the future arrives",
+  "slug": "local-constraints-where-the-future-arrives",
+  "summary": "A qualitative dependency map showing how compute, chips, power, water, housing, and permit signals become local outcomes only through source-backed receiving systems.",
+  "map_type": "Local Constraint Map",
+  "record_status": "In Review",
+  "primary_topic": "Chips and Compute",
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Power",
+    "Water",
+    "Infrastructure",
+    "Regulation",
+    "Data Quality",
+    "Interpretation"
+  ],
+  "map_question": "Which dependencies convert frontier compute and chip signals into local outcomes, and where does the evidence still stop short?",
+  "interpretation_boundary": "This map shows qualitative relationships among existing FTFN records. It does not prove local readiness, project viability, facility capacity, or completed outcomes.",
+  "source_ids": [
+    "source-iea-ai",
+    "source-eia-electricity-data",
+    "source-eia-arizona-electricity-profile",
+    "source-arizona-corporation-commission-edocket",
+    "source-arizona-department-water-resources",
+    "source-arizona-adwr-assured-water-supply",
+    "source-cmhc-starts-completions-under-construction"
+  ],
+  "signal_ids": [
+    "signal-sample-009",
+    "signal-arizona-electricity-profile-chip-corridor-power-constraint",
+    "signal-arizona-water-resources-chip-corridor-constraint-map",
+    "signal-ontario-housing-supply-progress-local-capacity-signal",
+    "signal-statcan-building-permits-construction-intentions-signal"
+  ],
+  "technology_ids": [
+    "technology-grid-scale-energy-storage",
+    "technology-advanced-semiconductor-packaging"
+  ],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate"
+  ],
+  "evidence_gap_ids": [
+    "gap-001",
+    "gap-002",
+    "gap-004",
+    "gap-005",
+    "gap-008"
+  ],
+  "nodes": [
+    {
+      "id": "node-ai-compute-demand",
+      "label": "AI compute demand",
+      "node_type": "Signal",
+      "record_id": "signal-sample-009",
+      "note": "Compute growth creates demand for power, cooling, grid interconnection, and local siting evidence."
+    },
+    {
+      "id": "node-chip-corridor",
+      "label": "U.S. Southwest Chip Corridor",
+      "node_type": "Local System",
+      "record_id": "local-us-southwest-chip-corridor",
+      "note": "A receiving system where compute and semiconductor signals meet water, power, labor, and infrastructure constraints."
+    },
+    {
+      "id": "node-power-capacity",
+      "label": "Power capacity",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-001",
+      "note": "Utility filings, interconnection, tariffs, and service-territory evidence are still needed."
+    },
+    {
+      "id": "node-water-capacity",
+      "label": "Water capacity",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-002",
+      "note": "Provider-level water records, facility demand, reuse, and permits are still needed."
+    },
+    {
+      "id": "node-grid-storage",
+      "label": "Grid-scale energy storage",
+      "node_type": "Technology",
+      "record_id": "technology-grid-scale-energy-storage",
+      "note": "Storage may support flexibility and reliability but does not replace utility planning evidence."
+    },
+    {
+      "id": "node-ontario-real-estate",
+      "label": "Ontario Real Estate",
+      "node_type": "Local System",
+      "record_id": "local-ontario-real-estate",
+      "note": "A receiving system where housing targets, permits, starts, completions, capital, and municipal infrastructure determine outcomes."
+    },
+    {
+      "id": "node-housing-conversion",
+      "label": "Housing target conversion",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-004",
+      "note": "Municipal servicing, approvals, and infrastructure capacity remain unresolved."
+    },
+    {
+      "id": "node-permit-completion",
+      "label": "Permit-to-completion conversion",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-005",
+      "note": "Starts, completions, cancellations, financing, and local absorption evidence are still needed."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-ai-compute-demand",
+      "to": "node-chip-corridor",
+      "relationship": "Received By",
+      "confidence": "Partial",
+      "note": "AI compute and semiconductor signals matter locally only where power, water, land, and permitting systems can absorb them."
+    },
+    {
+      "from": "node-chip-corridor",
+      "to": "node-power-capacity",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "State electricity context exists, but project-level utility capacity evidence is missing."
+    },
+    {
+      "from": "node-chip-corridor",
+      "to": "node-water-capacity",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Arizona water governance context exists, but facility/provider-level capacity evidence is missing."
+    },
+    {
+      "from": "node-grid-storage",
+      "to": "node-power-capacity",
+      "relationship": "Related Technology",
+      "confidence": "Watch",
+      "note": "Storage may become part of the power-capacity stack, but this map does not prove local deployment or interconnection readiness."
+    },
+    {
+      "from": "node-ontario-real-estate",
+      "to": "node-housing-conversion",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Provincial housing progress context exists, but local municipal conversion evidence remains incomplete."
+    },
+    {
+      "from": "node-ontario-real-estate",
+      "to": "node-permit-completion",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "Permits and starts/completions evidence exist, but geography-specific conversion and financing evidence remain incomplete."
+    }
+  ],
+  "what_this_map_supports": [
+    "FTFN can show where reviewed signals meet local receiving systems.",
+    "FTFN can identify which relationships are supported by current sources and which remain evidence gaps.",
+    "The dependency-stack thesis can be represented without numeric scoring."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not prove local readiness for semiconductor, AI, storage, or housing outcomes.",
+    "It does not resolve power, water, municipal servicing, permit conversion, or financing evidence gaps.",
+    "It does not rank local systems or create a 42/59 score."
+  ],
+  "next_records_needed": [
+    "Specific utility filings or interconnection records for gap-001.",
+    "Provider and facility water records for gap-002.",
+    "Municipal servicing and approval-timeline records for gap-004.",
+    "Geography-specific starts, completions, financing, and absorption records for gap-005."
+  ]
+}

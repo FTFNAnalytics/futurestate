@@ -1,0 +1,42 @@
+{
+  "id": "gap-007",
+  "title": "Commodity-specific critical minerals evidence for future systems",
+  "slug": "gap-007-critical-minerals-binding-materials",
+  "status": "Open",
+  "priority": "Medium",
+  "local_system": "Cross-system",
+  "primary_topic": "Critical Minerals",
+  "framework_layers": ["Resource Foundations", "Enabling Infrastructure"],
+  "constraint_tags": ["Materials", "Supply Chain", "Geopolitics", "Data Quality"],
+  "question": "Which materials are binding for chips, grids, batteries, defense, and AI infrastructure?",
+  "why_it_matters": "Critical minerals matter differently across systems. FTFN needs commodity-specific evidence before treating a material as a binding constraint.",
+  "current_support": "FTFN has USGS Mineral Commodity Summaries as an official baseline source, an in-review critical materials signal, DOE critical-materials program context, and a selected Grants.gov funding-opportunity record for processing scale-up.",
+  "missing_evidence": [
+    "commodity-specific supply",
+    "award recipients and project sites",
+    "refining capacity",
+    "import reliance",
+    "substitution options",
+    "recycling capacity",
+    "offtake evidence"
+  ],
+  "likely_source_types": [
+    "USGS commodity chapter",
+    "government supply-chain report",
+    "refining capacity dataset",
+    "trade data",
+    "credible market analysis"
+  ],
+  "candidate_records": [
+    "DOE Critical Minerals and Materials Accelerator opportunity",
+    "gallium or germanium commodity-specific signal",
+    "rare earth refining source",
+    "battery material recycling source"
+  ],
+  "next_action": "Watch DOE selections and pair any award with USGS, trade, permitting, production, offtake, and facility records before treating a material as a binding system constraint.",
+  "future_data_model_need": ["Material", "Dataset", "Supply Chain"],
+  "related_source_ids": ["source-usgs-mineral-commodity-summaries", "source-grants-gov-api", "source-doe-critical-materials-collaborative"],
+  "related_signal_ids": ["signal-sample-002", "signal-doe-critical-minerals-materials-accelerator-nofo"],
+  "related_local_system_ids": [],
+  "notes": "Phase 50 added a bounded DOE/Grants.gov funding signal, but the gap remains open until commodity-specific supply, processing, trade, production, recycling, and offtake evidence is selected."
+}

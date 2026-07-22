@@ -1,0 +1,45 @@
+{
+  "id": "gap-002",
+  "title": "Arizona water evidence for defensible industrial growth",
+  "slug": "gap-002-arizona-industrial-water-capacity",
+  "status": "Source Added",
+  "priority": "High",
+  "local_system": "U.S. Southwest Chip Corridor",
+  "primary_topic": "Water",
+  "framework_layers": ["Planetary Conditions", "Resource Foundations", "Human Systems"],
+  "constraint_tags": ["Water", "Climate", "Infrastructure", "Public Trust"],
+  "question": "Which records show whether industrial growth has defensible water capacity?",
+  "why_it_matters": "Industrial strategy in a water-constrained region depends on water rights, provider capacity, reuse, treatment, discharge, drought exposure, and public legitimacy.",
+  "current_support": "FTFN has ADWR water governance context, ADWR assured and adequate water supply criteria, and Arizona utility-regulation context.",
+  "missing_evidence": [
+    "provider-level water records",
+    "facility water demand",
+    "reuse plans",
+    "discharge permits",
+    "assured water supply records",
+    "drought sensitivity"
+  ],
+  "likely_source_types": [
+    "water provider record",
+    "permit",
+    "reuse plan",
+    "facility disclosure",
+    "ADWR application or report",
+    "local planning record"
+  ],
+  "candidate_records": [
+    "specific ADWR assured or adequate water supply application",
+    "water provider service record",
+    "facility water demand disclosure"
+  ],
+  "next_action": "Add provider, permit, facility-demand, discharge, and reuse-plan sources before facility-level water claims.",
+  "future_data_model_need": ["Permit", "Facility", "Dataset", "Local Actor"],
+  "related_source_ids": [
+    "source-arizona-department-water-resources",
+    "source-arizona-adwr-assured-water-supply",
+    "source-arizona-corporation-commission-utilities"
+  ],
+  "related_signal_ids": ["signal-arizona-water-resources-chip-corridor-constraint-map"],
+  "related_local_system_ids": ["local-us-southwest-chip-corridor"],
+  "notes": "ADWR criteria improve the governance layer but do not prove facility water sufficiency."
+}

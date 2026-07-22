@@ -1,0 +1,72 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import { formatDate } from "../../../lib/editorial";
+import { getSourceFreshness, getSourceHealth } from "../../../lib/sourceFreshness";
+
+const sources = (await getCollection("sources")).sort((a, b) =>
+  a.data.name.localeCompare(b.data.name)
+);
+const generatedAt = new Date();
+const sourceRows = sources.map((source) => ({
+  source,
+  freshness: getSourceFreshness(
+    source.data.last_checked_date,
+    source.data.update_frequency,
+    source.data.capture_priority,
+    generatedAt,
+    source.data.review_cadence_days
+  ),
+  health: getSourceHealth(source.data)
+}));
+const freshnessRows = sourceRows.map((row) => row.freshness);
+const reviewDueCount = freshnessRows.filter((freshness) => freshness.status === "Review due").length;
+const watchSoonCount = freshnessRows.filter((freshness) => freshness.status === "Watch soon").length;
+const probeReadyCount = sourceRows.filter((row) => row.health.status === "Probe ready").length;
+---
+
+<BaseLayout title="Sources | FTFN">
+  <section class="page-section">
+    <div class="eyebrow">Atlas / Sources</div>
+    <h1 class="page-title">The evidence layer behind FTFN signals.</h1>
+    <p class="lede">
+      Source profiles describe where information comes from, how credible it is,
+      what it covers, and what limitations matter before interpretation.
+    </p>
+    <div class="meta-row">
+      <MetaPill label={`${reviewDueCount} review due`} tone={reviewDueCount > 0 ? "urgency" : "possibility"} />
+      <MetaPill label={`${watchSoonCount} watch soon`} tone={watchSoonCount > 0 ? "review" : "default"} />
+      <MetaPill label={`${probeReadyCount} probe ready`} tone="possibility" />
+      <MetaPill label={`Generated ${formatDate(generatedAt)}`} />
+    </div>
+    <p>
+      <a class="inline-link" href="/atlas/source-monitor/">Open generated source monitor</a>
+      <a class="inline-link" href="/atlas/source-coverage/">Open coverage matrix</a>
+    </p>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      {sourceRows.map(({ source, freshness, health }) => (
+        <article class="record-card">
+          <h2><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h2>
+          <p>{source.data.known_limitations}</p>
+          <div class="meta-row">
+            <MetaPill label={freshness.status} tone={freshness.tone} />
+            <MetaPill label={health.status} tone={health.tone} />
+            <MetaPill label={source.data.source_type} />
+            <MetaPill label={source.data.credibility_level} />
+            <MetaPill label={source.data.live_access_type} />
+            <MetaPill label={source.data.capture_priority} tone={source.data.capture_priority === "High" ? "urgency" : "default"} />
+          </div>
+          {source.data.watch_lanes.length > 0 && (
+            <div class="meta-row">
+              {source.data.watch_lanes.map((lane) => <MetaPill label={lane} tone="review" />)}
+            </div>
+          )}
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
