@@ -41,21 +41,21 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after the Phase 55B content-authority pass:
+Current `0.2.0-dev` state after the Phase 55C conditional-permit follow-through:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 215 |
-| Active sources | 117 |
+| Static pages | 218 |
+| Active sources | 120 |
 | Signals | 35 |
 | Published signals | 9 |
 | In Review signals | 25 |
 | Draft Sample signals | 1 |
-| Named local inputs selected in Phases 50-55B | 15 |
+| Named local inputs selected in Phases 50-55C | 18 |
 | Private source candidates | 150 local-only records |
 | Candidate review | 45 reviewed: 44 Candidate, 1 Rejected; 105 remaining |
 | Source Coverage | 14 Strong; 0 Developing; 0 Weak |
-| Source Monitor | 0 Review Due; 17 Watch Soon; 100 Current |
+| Source Monitor | 0 Review Due; 17 Watch Soon; 103 Current |
 
 Existing operating assets:
 
@@ -254,16 +254,16 @@ Phase 52A pre-Supabase contract status:
 - Phase 51 research is no longer treated as a backend activation dependency,
 - remaining Phase 52 monitor, coverage, and registry work can be implemented through the private backend slice.
 
-Phase 52B closeout and Phase 55A-55B follow-through status:
+Phase 52B closeout and Phase 55A-55C follow-through status:
 
 - created exactly 150 local-only candidate records across 15 balanced evidence profiles,
 - completed an initial first-pass triage on 30 candidates, then reviewed 15 more in Phase 55A; the current private registry holds 44 `Candidate`, one `Rejected`, and 105 `Needs Triage` records,
-- added candidate-contract validation and exact duplicate checks against all 117 active public sources,
+- added candidate-contract validation and exact duplicate checks against all 120 active public sources,
 - kept the working registry in Git-ignored `private-data/` because the current repository is public,
 - added generated-output leak assertions so candidate IDs and the registry path cannot ship in the static build,
 - reorganized Source Monitor around four review states with a specific next action for every source,
 - added Strong, Developing, and Weak Source Coverage assessments with explicit gap-led actions; the Phase 55A source refresh brought the current summary to 14 Strong, zero Developing, and zero Weak lanes,
-- promoted no private candidate; Phase 55B added three separately researched official sources and two bounded `In Review` signals.
+- promoted no private candidate; Phases 55B-55C added six separately researched sources, two bounded `In Review` signals, and one downstream signal repair.
 
 Exit criteria:
 
@@ -359,7 +359,7 @@ Recommended active schedule:
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 local build is complete. Phase 55A and 55B have strengthened the local authority package without changing its non-public posture. Repository synchronization, preview, post-deploy verification, release freeze, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 local build is complete. Phases 55A-55C have strengthened the local authority package without changing its non-public posture. Repository synchronization, preview, post-deploy verification, release freeze, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -384,8 +384,9 @@ Current stop point:
 - local preservation is complete at checkpoint `35f26f4`,
 - the first Phase 55A authority refresh is complete and verified,
 - Phase 55B added current federal post-quantum migration records, a named Arizona facility permit trail, and refreshed Toronto, Ontario, and ACC monitoring rails,
+- Phase 55C repaired the Project Baccara signal with official county conditions, an official proposed-air-permit notice, and independent vote corroboration while preserving every downstream gate,
 - the branch remains unpushed and no host is connected,
-- the next local content pass should follow the first public agency PQC plan or procurement rule, Project Baccara's remaining air/county/military gates, and Toronto application 24 254930 after the next Council decision window,
+- the next local content pass should follow the fully executed `MCP250007` record or final air permit, Toronto application `24 254930` after the July 29-31 Council window, the first public-agency PQC plan or procurement rule, or a gap-led item among the 17 Watch Soon sources,
 - GitHub synchronization and any access-protected preview remain deferred pending explicit approval.
 
 Hosting decision rule:
@@ -510,4 +511,4 @@ All nine local success criteria pass in the Phase 54 candidate. Preview and publ
 
 ## Immediate Next Step
 
-Complete the Phase 55B local checkpoint, then continue only with bounded downstream evidence: the first public agency post-quantum migration plan or procurement rule, Project Baccara's remaining permit gates, Toronto Council/by-law follow-through, and the 17 Watch Soon source records. Keep GitHub synchronization, hosting, preview, package freeze, DNS, and public launch behind separate explicit approval. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Complete the Phase 55C local checkpoint, then continue only with bounded downstream evidence: Project Baccara's executed MCP, final air permit, service/POD/military/building or occupancy records; Toronto Council/by-law follow-through after July 29-31; the first named public-agency PQC plan or procurement rule; or a gap-led item among the 17 Watch Soon source records. Keep GitHub synchronization, hosting, preview, package freeze, DNS, and public launch behind separate explicit approval. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

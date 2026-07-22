@@ -10,7 +10,7 @@
   "constraint_tags": ["Power", "Infrastructure", "Regulation", "Data Quality"],
   "question": "Which utility records show real power capacity for semiconductor and AI infrastructure?",
   "why_it_matters": "State-level electricity baselines are useful, but power availability for fabs, suppliers, and compute infrastructure depends on utility planning, interconnection, rates, service territory, and facility load evidence.",
-  "current_support": "FTFN has EIA Arizona electricity context, ACC utility-regulation and eDocket layers, SRP's named 2025 Integrated System Plan Actions Progress Report, the November 2025 E-67 large-load price plan, Project Huckleberry's completed Meta service trail, and Project Baccara's approved CEC for proposed approximately 700 MW on-site generation serving a planned data-center campus.",
+  "current_support": "FTFN has EIA Arizona electricity context, ACC utility-regulation and eDocket layers, SRP's named 2025 Integrated System Plan Actions Progress Report, the November 2025 E-67 large-load price plan, Project Huckleberry's completed Meta service trail, and Project Baccara's approved CEC, reported 4-1 conditional military-compatibility permit vote, and proposed air permit for approximately 700 MW of planned on-site generation.",
   "missing_evidence": [
     "interconnection queues",
     "named semiconductor-customer tariff treatment and facilities charges",
@@ -31,9 +31,9 @@
     "specific ACC utility docket or order",
     "SRP or APS customer-specific service agreement or energization record",
     "semiconductor facility load or service agreement evidence",
-    "Project Baccara air, county, construction, interconnection, and operating records"
+    "Project Baccara final air permit, precise Plan of Development, service, construction, interconnection, occupancy, and operating records"
   ],
-  "next_action": "Follow the named Meta energization example and Project Baccara CEC into disclosed load, tariffs, agreements, construction, interconnection, and operating evidence, and still select a semiconductor-customer service record before making TSMC or corridor-wide capacity claims.",
+  "next_action": "Follow the named Meta energization example and Project Baccara's conditional permit stack into final air and plan approvals, disclosed load, service agreements, construction, interconnection, occupancy, and operating evidence, and still select a semiconductor-customer service record before making TSMC or corridor-wide capacity claims.",
   "future_data_model_need": ["Utility Filing", "Facility", "Dataset"],
   "related_source_ids": [
     "source-eia-arizona-electricity-profile",
@@ -44,7 +44,10 @@
     "source-srp-2025-isp-actions-progress-report",
     "source-srp-e67-large-load-price-plan-2025",
     "source-srp-project-huckleberry-meta-mesa-online",
-    "source-acc-project-baccara-cec-2026"
+    "source-acc-project-baccara-cec-2026",
+    "source-maricopa-project-baccara-mcp250007-2026",
+    "source-maricopa-baccara-proposed-air-permit-2026",
+    "source-kjzz-project-baccara-mcp-vote-2026"
   ],
   "related_signal_ids": [
     "signal-arizona-electricity-profile-chip-corridor-power-constraint",
@@ -54,5 +57,5 @@
     "signal-acc-project-baccara-power-water-permit-gates"
   ],
   "related_local_system_ids": ["local-us-southwest-chip-corridor"],
-  "notes": "Phase 55B adds a second facility-level path, but at an earlier stage: Project Baccara has a generation and interconnection CEC rather than built service. The gap remains unresolved because neither record establishes TSMC service, regional spare capacity, or corridor-wide readiness."
+  "notes": "Phase 55C advances Project Baccara into a conditional county and proposed air-permit stage. The gap remains unresolved because the records do not establish final air approval, service, construction, interconnection, occupancy, operating consumption, TSMC service, regional spare capacity, or corridor-wide readiness."
 }

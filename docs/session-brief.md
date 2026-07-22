@@ -37,7 +37,7 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 215
+static pages generated: 218
 current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
@@ -93,6 +93,7 @@ What is now stable:
 - Source Monitor now groups work by review state and exposes a specific next action; Source Coverage now distinguishes Strong, Developing, and Weak lanes with gap-led actions.
 - Phase 51C added named Meta electric-service and TSMC facility milestones, repaired the apprenticeship signal with active cohort counts, and brought the library to 33 signals without forcing missing downstream outcomes.
 - Phase 55B added the White House and OMB post-quantum migration records, a named Arizona Project Baccara certificate trail, and two bounded `In Review` signals; it also refreshed the Toronto, Ontario, and ACC monitoring rails.
+- Phase 55C repaired the existing Project Baccara signal with official County conditions, an official proposed-air-permit notice, and independent vote corroboration while keeping final permits, construction, occupancy, and operation unresolved.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 12 sources supporting the nine Published signals carry a current `2026-07-22` check date.
@@ -121,7 +122,7 @@ FTFN should now preserve the verified static candidate while making a deliberate
 Current seed content includes:
 
 - 35 signal records,
-- 117 source records,
+- 120 source records,
 - 17 topic records,
 - 2 local system profiles,
 - 10 organization records,
@@ -223,7 +224,7 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 54: v0.2 Release QA And Preview Gate
+Phase 55C: Conditional Permit Follow-Through
 ```
 
 Key files:
@@ -235,6 +236,9 @@ Key files:
 - `docs/work-packages/phase-51c-downstream-service-and-facility-evidence.md`
 - `docs/work-packages/phase-53-publication-candidate-review.md`
 - `docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md`
+- `docs/work-packages/phase-55a-local-checkpoint-and-authority-refresh.md`
+- `docs/work-packages/phase-55b-migration-and-facility-evidence.md`
+- `docs/work-packages/phase-55c-conditional-permit-follow-through.md`
 - `docs/release-qa-v0.2.md`
 - `docs/launch-note-v0.2.md`
 - `deployment/ftfn-v0.2-build.json`
@@ -380,16 +384,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 55B migration and facility evidence pass, following the Phase 55A local checkpoint and authority refresh.
+Phase 55C conditional permit follow-through, following the Phase 55B migration and facility evidence pass.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 local release candidate: package 0.2.0-dev, 117 public sources, 150 private candidates, 35 signals, 17 topics, 7 updates, 215 pages, 9 Published signals, 3 public JSON endpoints, and passed local desktop/mobile release QA on codex/phase51-content. The private layer has 45 reviewed records; current Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, 17 Watch Soon, and 100 Current records.
+v0.2 local release candidate: package 0.2.0-dev, 120 public sources, 150 private candidates, 35 signals, 17 topics, 7 updates, 218 pages, 9 Published signals, 3 public JSON endpoints, and passed local desktop/mobile release QA on codex/phase51-content. The private layer has 45 reviewed records; current Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, 17 Watch Soon, and 103 Current records.
 
 Next decision gate:
-Continue the bounded Phase 55 content-authority pass while the branch remains local and non-public. Verify Git state first and use `35f26f4` as the preserved Phase 52B checkpoint. Prioritize the first public agency post-quantum migration plan or procurement rule, Project Baccara's remaining air/county/military gates, Toronto application 24 254930 after the next Council decision window, and the 17 Watch Soon source records. Push, preview, merge, hosting, DNS, and public launch remain separate explicit decisions.
+Continue the bounded Phase 55 content-authority pass while the branch remains local and non-public. Verify Git state first and use `35f26f4` as the preserved Phase 52B checkpoint. Prioritize Project Baccara's executed MCP, final air permit, service/POD/military/building or occupancy records; Toronto application 24 254930 after the July 29-31 Council window; the first named public-agency PQC plan or procurement rule; or a gap-led item among the 17 Watch Soon records. Push, preview, merge, hosting, DNS, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, then proceed with the Phase 55 local preflight. Report before taking the first external action.
 ```

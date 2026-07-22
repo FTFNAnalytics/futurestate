@@ -14,7 +14,7 @@ The first Supabase stage is a private authority-loop backend. Git remains the pu
 - Public update-entry schema and visible log: complete in the Phase 52A branch.
 - Allowlisted, versioned source/topic/Published-signal exports: complete in the Phase 52A branch.
 - Documented public/private field boundary: complete in `docs/public-data-exports.md`.
-- Phase 54 production and release verification: complete at 210 generated pages, including exact public-export, update-log, source-currentness, sitemap, canonical, robots, and indexing assertions. Phase 55B subsequently revalidated the expanded 215-page package without changing the public/private contract.
+- Phase 54 production and release verification: complete at 210 generated pages, including exact public-export, update-log, source-currentness, sitemap, canonical, robots, and indexing assertions. Phases 55B-55C subsequently revalidated the expanded 218-page package without changing the public/private contract.
 
 These are not activation blockers:
 

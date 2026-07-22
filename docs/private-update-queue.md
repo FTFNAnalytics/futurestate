@@ -137,6 +137,12 @@ These items come from the 36-source Phase 49 promotion batch. They should be use
 | uq-054 | Source Rechecked | `source-toronto-building-permits` | Local Systems / Finance and Human Futures | Replaced the retired dataset candidate with Toronto's current permit and inspection status rail; a focused address query did not identify the selected project's permit. | Recheck with a known building-permit application number or all project addresses; absence from one portal query is not proof that no permit exists. |
 | uq-055 | Source Rechecked | `source-ontario-housing-supply-progress` | Finance and Human Futures / Local Systems | Confirmed the tracker remains live but still presents the 2024 target year. | Watch the official page and Ontario Data Catalogue for the next target-year release. |
 
+## Batch 07: Phase 55C Conditional Permit Follow-Through
+
+| Queue ID | Status | Source | Watch Lane | Candidate Output | Human Next Action |
+| --- | --- | --- | --- | --- | --- |
+| uq-056 | Signal Repaired | `source-maricopa-project-baccara-mcp250007-2026`, `source-maricopa-baccara-proposed-air-permit-2026`, `source-kjzz-project-baccara-mcp-vote-2026` | Power and Grid / Water / Local Systems | Repaired the existing Project Baccara signal with the reported 4-1 military-compatibility vote, official conditions a-p, and proposed air-permit stage while preserving every construction and operating gate. | Obtain the County summary minutes or executed MCP, then track final Permit P0013417 and EPA review, service agreements, Plan of Development, military compliance, building permits, construction, occupancy, and measured operation. |
+
 ## First Repair Priorities
 
 Start with these because they have existing signal records and clear repair paths:

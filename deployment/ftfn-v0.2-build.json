@@ -23,12 +23,12 @@
   "build_command": "npm run build",
   "output_directory": "dist",
   "expected_build": {
-    "static_pages": 215,
+    "static_pages": 218,
     "signals": 35,
     "published_signals": 9,
     "in_review_signals": 25,
     "draft_sample_signals": 1,
-    "sources": 117,
+    "sources": 120,
     "topics": 17,
     "organizations": 10,
     "technologies": 5,
@@ -53,10 +53,10 @@
     "public_output_policy": "Candidate records, IDs, private notes, and registry paths must not appear in static output or public exports."
   },
   "release_delta_from_v0_1_1": {
-    "static_pages_added": 33,
+    "static_pages_added": 36,
     "signals_added": 17,
     "published_signals_added": 6,
-    "sources_added": 15,
+    "sources_added": 18,
     "public_json_exports_added": 3,
     "public_update_log_added": true,
     "summary": "Completes the first authority-loop content milestone with bounded evidence conversion, named local dossier records, nine Published signals, a public update log, and versioned source, topic, and Published-signal exports."
@@ -66,17 +66,17 @@
     "candidate_validation": "passed-150-local-only-records",
     "validate_content": "passed",
     "source_health": "passed",
-    "source_health_manual_review": 57,
+    "source_health_manual_review": 60,
     "source_health_probe_ready": 60,
     "source_monitor_review_due": 0,
     "source_monitor_watch_soon": 17,
-    "source_monitor_current": 100,
+    "source_monitor_current": 103,
     "source_coverage_strong_lanes": 14,
     "source_coverage_developing_lanes": 0,
     "source_coverage_weak_lanes": 0,
     "astro_check": "passed",
     "build": "passed",
-    "static_pages_built": 215,
+    "static_pages_built": 218,
     "release_assertions": "passed",
     "browser_qa": "passed-local",
     "browser_viewports": [
@@ -141,7 +141,7 @@
   },
   "release_gates": [
     "Run all predeploy commands from app/",
-    "Confirm 215 generated HTML pages and all required outputs",
+    "Confirm 218 generated HTML pages and all required outputs",
     "Confirm all nine Published signal URLs are present in the sitemap",
     "Confirm every non-published signal URL is absent from the sitemap",
     "Confirm Published details use index, follow and non-published details use noindex, follow",
@@ -176,7 +176,8 @@
     "The public JSON files are static build exports, not a live API or database-backed service.",
     "The 150-record candidate registry is an ignored local file and requires private backup outside public Git.",
     "The optional bulk candidate-link audit was blocked by uniform outbound Node network failures in the verification environment; every candidate still requires live human confirmation before promotion.",
+    "The Project Baccara record stops at a reported conditional county vote and proposed air permit; it does not prove final permits, condition compliance, construction, occupancy, or operation.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records a locally verified v0.2 release candidate after the Phase 55B content-authority pass. It does not authorize preview hosting, public deployment, DNS changes, or publication beyond the nine records already marked Published."
+  "notes": "This manifest records a locally verified v0.2 release candidate after the Phase 55C conditional-permit follow-through. It does not authorize preview hosting, public deployment, DNS changes, or publication beyond the nine records already marked Published."
 }

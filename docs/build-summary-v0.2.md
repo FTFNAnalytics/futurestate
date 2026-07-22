@@ -19,7 +19,7 @@ FTFN is a locally verified static release candidate. The v0.2 content, public tr
 | Hosting | no hosting project or preview deployment configured |
 | Public launch | not approved and not performed |
 
-Phase 55B preserves the completed release package locally and adds a bounded content-authority pass for federal post-quantum migration and Arizona facility permitting. It does not authorize a push, preview, DNS change, public launch, or additional Published promotion.
+Phase 55C preserves the completed release package locally and follows Project Baccara into conditional county and proposed air-permit records. It repairs the existing signal rather than adding another one and does not authorize a push, preview, DNS change, public launch, or additional Published promotion.
 
 ## Build Inventory
 
@@ -27,8 +27,8 @@ The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 215 | +33 |
-| Sources | 102 | 117 | +15 |
+| Generated HTML pages | 182 | 218 | +36 |
+| Sources | 102 | 120 | +18 |
 | Signals | 18 | 35 | +17 |
 | Published signals | 3 | 9 | +6 |
 | In Review signals | 14 | 25 | +11 |
@@ -63,7 +63,7 @@ The public application includes:
 
 The editorial and authority layer includes:
 
-- 117 structured source records with authority, freshness, access, monitoring, and review metadata,
+- 120 structured source records with authority, freshness, access, monitoring, and review metadata,
 - 35 bounded signal records with explicit claim and evidence limits,
 - nine Published signals backed by 12 sources checked on 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
@@ -94,17 +94,19 @@ Phase 55A then reran the same command set after refreshing the CISA Cybersecurit
 
 Phase 55B added three official records and two bounded `In Review` signals: the White House post-quantum migration order, OMB implementation guidance, and the Arizona Corporation Commission's Project Baccara certificate decision. It also rechecked the Toronto permit-status, Ontario housing-supply, and ACC eDocket rails. The current result is 215 pages, 117 public sources, and 35 signals. Source Monitor now reports zero Review Due, 17 Watch Soon, and 100 Current records; Source Coverage remains 14 Strong, zero Developing, and zero Weak lanes.
 
+Phase 55C found no qualifying public-agency PQC migration plan or PQC-specific FAR proposal, so that lane remains a monitor. It instead added Maricopa County's official `MCP250007` agenda and conditions, an official MCAQD notice proposing Permit `P0013417`, and contemporaneous KJZZ vote corroboration. The existing Project Baccara signal was repaired without increasing the signal or Published counts. The current result is 218 pages, 120 public sources, and 35 signals. Source Monitor reports zero Review Due, 17 Watch Soon, and 103 Current records; Source Coverage remains 14 Strong, zero Developing, and zero Weak lanes.
+
 Verified results:
 
-- 215 generated HTML pages,
-- exact exports for 117 sources, 17 topics, and nine Published signals,
+- 218 generated HTML pages,
+- exact exports for 120 sources, 17 topics, and nine Published signals,
 - all nine Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
 - correct canonical, robots, and publication-state indexing boundaries,
 - ten core journeys checked at `1440x900` and `390x844`,
 - compact header brand and navigation targets repaired to a 44-pixel minimum,
 - no checked layout, semantic, indexing, or browser-console release blocker.
-- exactly 150 unique private candidates, 10 in each of 15 profiles, with no exact name or URL collision against the 117 active sources,
+- exactly 150 unique private candidates, 10 in each of 15 profiles, with no exact name or URL collision against the 120 active sources,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
 
@@ -114,7 +116,7 @@ The detailed evidence is in `docs/release-qa-v0.2.md`. Preview and production be
 
 The local release work is preserved on `codex/phase51-content`. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
-The next repository action is a local Phase 55B checkpoint commit. GitHub push, pull-request review, merge, and preview deployment remain deferred by the current non-public decision. If external work is later approved, do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
+The next repository action is a local Phase 55C checkpoint commit. GitHub push, pull-request review, merge, and preview deployment remain deferred by the current non-public decision. If external work is later approved, do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
 The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-22 to remain outside Cloudflare, with Google Workspace mail records active. Before any nameserver or DNS change, inventory and preserve every mail and verification record. Hosting-provider selection remains an explicit Phase 55 decision: Cloudflare Pages is the documented default, but another static host may be chosen if avoiding a nameserver migration is more important.
 
@@ -123,6 +125,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 - Twenty-five signals remain `In Review`; one company-claim example remains a `Draft Sample`.
 - The briefing, dependency maps, and local-system profiles remain prelaunch or research material.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
+- The Project Baccara record stops at a reported conditional county vote and proposed air permit; final permits, condition compliance, construction, occupancy, and operation remain unverified.
 - Public JSON files are static exports, not a live API.
 - There is no private database, automated ingestion, scheduled monitoring, analytics, newsletter capture, account system, or numeric 42/59 scoring.
 - The private candidate registry is an ignored local file, so it requires private workspace or encrypted backup outside public Git.
@@ -153,4 +156,4 @@ npm.cmd run build
 npm.cmd run verify:release
 ```
 
-Expected output: 215 HTML pages and a passing v0.2 release assertion.
+Expected output: 218 HTML pages and a passing v0.2 release assertion.

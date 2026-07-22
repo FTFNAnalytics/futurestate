@@ -1068,12 +1068,33 @@ Do not use it for:
 - Approving deployment or DNS attachment.
 - Replacing browser QA or launch review.
 
+### Phase 55C Work Package
+
+Purpose:
+
+- Record the Project Baccara county-condition, proposed-air-permit, and vote-corroboration follow-through.
+- Preserve the distinction between a reported vote, an official agenda, a proposed permit, and executed or completed outcomes.
+- Record the 120-source, 35-signal, 218-page verification state and non-public stop point.
+
+Update when:
+
+- a factual correction is required in the Phase 55C result,
+- the executed MCP, final air permit, service/POD, military, construction, occupancy, or operating record advances the trail,
+- an external Phase 55 action is separately approved and recorded.
+
+Do not use it for:
+
+- treating the County agenda as fully executed minutes,
+- treating the proposed air permit as issued or operational approval,
+- treating a permit stage as construction, occupancy, or operation,
+- authorizing a push, preview deployment, DNS change, or public launch.
+
 ### v0.2 Build Manifest
 
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 215-page build, nine Published signals, 117 sources, seven updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 218-page build, nine Published signals, 120 sources, seven updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` without treating local verification as deployment.
 

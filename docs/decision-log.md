@@ -2015,3 +2015,26 @@ Implemented:
 Boundary:
 
 Federal directives are not completed agency migrations, inventories, appropriations, procurements, or system replacements. The Project Baccara certificate is not an air permit, county construction permit, military-compatibility approval, construction start, operational plant, measured water balance, or proof of power and water sufficiency. A single negative Toronto address query is not a finding that no permit exists. No push, deployment, DNS change, or public launch was authorized.
+
+## 2026-07-22: Phase 55C Repairs The Conditional Permit Trail Without Adding A Signal
+
+Decision:
+
+FTFN will use the first qualifying downstream authority record after the Phase 55B priority check. No public-agency PQC migration plan or PQC-specific FAR proposal was located in this pass, so that lane remains a monitor. Project Baccara will advance through a repair to its existing `In Review` signal rather than a new signal.
+
+Rationale:
+
+The Maricopa County Board agenda provides official conditions for `MCP250007`, and an official County air-quality notice records proposed Permit `P0013417`. Because the accessible agenda is not a fully executed record, contemporaneous KJZZ reporting is used only to corroborate the reported 4-1 vote. Together these sources clarify the permit stack without proving that any condition has been satisfied or that the project is constructed or operating.
+
+Implemented:
+
+- added three Project Baccara source records,
+- repaired the existing Project Baccara signal and kept it `In Review`,
+- updated the Southwest dossier, energy and policy topics, `gap-001`, `gap-002`, and private queue item `uq-056`,
+- reached 120 sources, 35 signals, and 218 generated pages,
+- retained nine Published signals, 17 Watch Soon sources, 103 Current sources, and 14 Strong coverage lanes,
+- preserved the local-only, non-public branch state.
+
+Boundary:
+
+The reported vote is not substituted for executed County minutes. The proposed air permit is not a final permit or EPA non-objection. The records do not prove service commitments, a precise Plan of Development, military-compliance approval, building or occupancy permits, construction, commissioning, operation, or measured power, water, reuse, and emissions performance. No push, deployment, DNS change, or public launch was authorized.

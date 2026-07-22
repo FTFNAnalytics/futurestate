@@ -114,6 +114,7 @@ It is a stack of dependencies.
 - [Phase 52B Work Package](docs/work-packages/phase-52b-private-candidate-registry-and-authority-surfaces.md) - private 150-source candidate shelf plus Source Monitor and Source Coverage completion.
 - [Phase 55A Work Package](docs/work-packages/phase-55a-local-checkpoint-and-authority-refresh.md) - local Phase 52B checkpoint, 15-record private triage batch, three active-source refreshes, and preserved non-public boundary.
 - [Phase 55B Work Package](docs/work-packages/phase-55b-migration-and-facility-evidence.md) - federal post-quantum migration requirements, Project Baccara permit gates, refreshed monitoring rails, and preserved non-public boundary.
+- [Phase 55C Work Package](docs/work-packages/phase-55c-conditional-permit-follow-through.md) - Project Baccara county conditions, proposed air permit, corroborated vote, and preserved downstream gates.
 
 ## App Scaffold
 
@@ -132,7 +133,7 @@ npm run build
 npm run verify:release
 ```
 
-The current `0.2.0-dev` build generates 215 static pages and three versioned JSON data endpoints. Nine signals are Published, 25 remain In Review, and one remains a Draft Sample.
+The current `0.2.0-dev` build generates 218 static pages and three versioned JSON data endpoints. Nine signals are Published, 25 remain In Review, and one remains a Draft Sample.
 
 The homepage now uses real seed records for signals, topics, sources, local systems, and briefings while preserving the 42/59 framing and dependency-stack thesis.
 
@@ -244,7 +245,7 @@ Phase 50 completes the first bounded source-item content expansion with six `In 
 
 Phase 52A completes the pre-Supabase public contract. It adds a validated public update/correction log, versioned static JSON exports for sources, topics, and Published signals, and an explicit private-field allowlist. Supabase can now begin as a private Auth/RLS-backed authority-loop backend while Git remains the public publishing source of truth.
 
-Phase 52B finishes the deferred authority-layer work without adding public content. It creates a Git-ignored 150-record candidate registry across 15 evidence profiles, completes first-pass triage for 30 candidates, adds validation and build leak checks, reorganizes Source Monitor around review state and next action, and adds Strong, Developing, and Weak Source Coverage summaries. Phase 55A preserves that checkpoint locally, reviews 15 additional candidates, rejects one retired rail, and refreshes three active source records. The active public source count remains 114 and the branch remains unpushed.
+Phase 52B finishes the deferred authority-layer work without adding public content. It creates a Git-ignored 150-record candidate registry across 15 evidence profiles, completes first-pass triage for 30 candidates, adds validation and build leak checks, reorganizes Source Monitor around review state and next action, and adds Strong, Developing, and Weak Source Coverage summaries. Phase 55A preserves that checkpoint locally, reviews 15 additional candidates, rejects one retired rail, and refreshes three active source records. Later Phase 55B-55C research expands the active library separately; the private registry still has no automatic promotion path and the branch remains unpushed.
 
 Phase 51A deepens both local dossiers with three named records: SRP's 2025 ISP Actions Progress Report, Phoenix Water Services' April 2026 council update, and Toronto's June 2026 decision report for application 24 254930. The batch adds three `In Review` signals, strengthens four evidence gaps, and reaches 105 sources, 25 signals, and 193 pages without treating system planning as site service or a staff recommendation as final approval.
 
@@ -258,7 +259,9 @@ Phase 54 passes the v0.2 local release gate. All automated checks and a repeatab
 
 Phase 55B adds three current official sources and two bounded `In Review` signals. The federal trail now records Executive Order 14412 and OMB M-26-15 without confusing a migration mandate with completed implementation. The Southwest dossier now records Project Baccara's Arizona Corporation Commission certificate while retaining its air, county, military-compatibility, water-operation, and construction gates. Toronto, Ontario, and ACC monitoring rails were rechecked; the Toronto address search result is retained only as a negative query result, not proof that no permit exists.
 
-The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 117 public sources, 150 private source candidates, 35 signals, 17 topics, seven public update entries, 215 pages, and three versioned data exports. The branch remains local and non-public; no preview, DNS change, or public launch occurred. The unresolved downstream trails remain dated monitors while Supabase activation proceeds separately.
+Phase 55C adds three downstream Project Baccara sources and repairs the existing signal rather than expanding the 35-signal library. The record now separates the reported 4-1 county vote, official `MCP250007` conditions, and proposed air Permit `P0013417` from final permit issuance, condition compliance, construction, occupancy, and operation. No qualifying public-agency PQC migration plan or PQC-specific FAR proposal was found in this pass, so that lane remains a monitor.
+
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 120 public sources, 150 private source candidates, 35 signals, 17 topics, seven public update entries, 218 pages, and three versioned data exports. The branch remains local and non-public; no preview, DNS change, or public launch occurred. The unresolved downstream trails remain dated monitors while Supabase activation proceeds separately.
 
 ## Working Rule
 

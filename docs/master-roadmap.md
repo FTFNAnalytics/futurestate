@@ -987,6 +987,7 @@ These are the next practical actions from the current project state.
 278. Complete Phase 52B authority-layer closeout at a 150-candidate target. Status: complete; added the local-only registry, validator, release leak check, Source Monitor review groups and next actions, Source Coverage strength summaries, workflow documentation, and work package.
 279. Complete Phase 55A local checkpoint and authority refresh without pushing or deploying. Status: complete; reviewed 15 additional private candidates, retained 14 as Candidate, rejected one retired dataset, refreshed three active source anchors, and verified 14 Strong Source Coverage lanes with two overdue unassigned source records remaining.
 280. Complete Phase 55B migration and facility evidence pass without pushing or deploying. Status: complete; added three official source records and two bounded `In Review` signals, refreshed Toronto, Ontario, and ACC monitoring rails, cleared the two overdue source checks, and preserved all remaining downstream gates.
+281. Complete Phase 55C conditional permit follow-through without pushing or deploying. Status: complete; added official County conditions, an official proposed-air-permit notice, and independent vote corroboration; repaired the existing Project Baccara signal; and preserved every final-permit, service, military, construction, occupancy, and operating gate.
 
 ## 10. Current Stage Map
 
@@ -1029,12 +1030,12 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a second private queue batch that turns promoted Phase 49 source records into bounded review candidates.
 - six Phase 50 bounded source-item signals spanning a DOE/Grants.gov opportunity, MAG local projections, USAspending award, NSF award, USGS gallium record, and Toronto planning application.
 - a frozen v0.1.1 release package with app version 0.1.1, deployment manifest, versioned session brief, release roadmap, local release-QA evidence, and Git checkpoint `4845597`.
-- a current `0.2.0-dev` build with 117 sources, 35 signals, seven update entries, nine Published signals, three public JSON exports, and 215 pages.
+- a current `0.2.0-dev` build with 120 sources, 35 signals, seven update entries, nine Published signals, three public JSON exports, and 218 pages.
 - a private 150-record source-candidate shelf across 15 evidence profiles, with 45 reviewed, 105 awaiting triage, and zero automatic public promotions.
 - Source Monitor review-state groups and next actions plus Strong, Developing, and Weak Source Coverage summaries.
 - a passed v0.2 local release gate with a versioned manifest, repeatable release assertions, desktop/mobile browser evidence, repaired 44-pixel header targets, and a public-facing launch note plus limitations statement.
 
-It is not yet a deployed public launch product because optional private-preview execution, post-deploy QA, package-version freeze, DNS attachment, analytics decisions, and final public-launch approval remain separate. The current v0.2 build has passed Phase 54 locally and the expanded Phase 55B content package has been revalidated. Nine records are `Published`, 25 signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint profiles, the briefing, dependency maps, and most reviewed signals remain prelaunch material.
+It is not yet a deployed public launch product because optional private-preview execution, post-deploy QA, package-version freeze, DNS attachment, analytics decisions, and final public-launch approval remain separate. The current v0.2 build has passed Phase 54 locally and the expanded Phase 55C content package has been revalidated. Nine records are `Published`, 25 signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint profiles, the briefing, dependency maps, and most reviewed signals remain prelaunch material.
 
 ### Stage 1: Reader-Journey QA
 
@@ -1166,12 +1167,12 @@ Completed:
 - Completed Phase 51A with named SRP implementation, Phoenix provider-water, and Toronto staff-recommendation/servicing records.
 - Completed Phase 51B with an SRP large-load tariff, Phoenix-TSMC wastewater agreement, TSMC-campus PUD, technician apprenticeship, Toronto committee recommendation, and citywide delivery baseline.
 - Completed Phase 51C with SRP's named Meta electric-service project, current TSMC fab milestones, and active apprenticeship-cohort evidence.
-- Reached 117 sources, 35 signals, seven update entries, and 215 built pages after Phase 55B while keeping both new signals `In Review`.
+- Reached 120 sources, 35 signals, seven update entries, and 218 built pages after Phase 55C while keeping the repaired Project Baccara signal `In Review`.
 
 Next candidate work:
 
 - Capture the first public federal agency post-quantum migration plan, procurement implementation, proposed FAR rule, or NIST pilot result.
-- Follow Project Baccara through ADEQ air permitting, county construction approval, military-compatibility review, construction, and operating evidence.
+- Follow Project Baccara through the fully executed County record, final MCAQD air permit and EPA review, service and precise-POD requirements, military-compatibility compliance, construction, occupancy, and operating evidence.
 - Recheck Toronto application 24 254930 after the July 29-31, 2026 Council window for adoption, by-laws, and later permit records.
 - Work the 17 Watch Soon source records before they become overdue.
 - Decide whether In Review local systems and dependency maps should remain indexable or move to clearer research/noindex treatment before launch.
