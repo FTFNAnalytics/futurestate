@@ -1871,3 +1871,26 @@ Implemented:
 Boundary:
 
 Supabase starts as a private workflow backend. Git remains the public source of truth, and no database job, webhook, function, or trigger may publish claims directly.
+
+## 2026-07-22: Phase 51A Named Local Operating Records
+
+Decision:
+
+FTFN will deepen the local dossiers through named operating and application records before adding more broad source rails. The first Phase 51 batch uses one utility implementation report, one provider-level water update, and one municipal staff decision/servicing report.
+
+Rationale:
+
+The library already had Arizona and Ontario source breadth, but its remaining product gap was conversion evidence. SRP's 2025 report, Phoenix Water Services' April 2026 update, and Toronto's June 2026 decision report each identify a specific institution, date, action layer, and unresolved downstream gate.
+
+Implemented:
+
+- added three source records and three `In Review` signals,
+- updated both local-system dossiers,
+- strengthened `gap-001`, `gap-002`, `gap-004`, and `gap-005`,
+- added private queue items `uq-040` through `uq-042`,
+- added a public source-refresh entry,
+- validated 105 sources, 25 signals, 17 topics, four updates, and 193 pages.
+
+Boundary:
+
+SRP system planning is not a customer service commitment. Phoenix provider planning is not industrial site capacity. Toronto's staff recommendation and servicing review are not a final Council decision, enacted by-law, building permit, construction start, completion, or occupancy record.

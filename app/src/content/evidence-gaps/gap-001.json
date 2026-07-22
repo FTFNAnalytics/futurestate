@@ -10,14 +10,14 @@
   "constraint_tags": ["Power", "Infrastructure", "Regulation", "Data Quality"],
   "question": "Which utility records show real power capacity for semiconductor and AI infrastructure?",
   "why_it_matters": "State-level electricity baselines are useful, but power availability for fabs, suppliers, and compute infrastructure depends on utility planning, interconnection, rates, service territory, and facility load evidence.",
-  "current_support": "FTFN has EIA Arizona electricity context, ACC utility-regulation context, and ACC eDocket as a docket source layer.",
+  "current_support": "FTFN has EIA Arizona electricity context, ACC utility-regulation and eDocket layers, and SRP's named 2025 Integrated System Plan Actions Progress Report documenting resource, distribution, siting, and transmission actions.",
   "missing_evidence": [
-    "utility integrated resource plans",
     "interconnection queues",
     "tariff filings",
     "rate cases",
     "service-territory evidence",
-    "facility load estimates"
+    "facility load estimates",
+    "customer-specific service studies and agreements"
   ],
   "likely_source_types": [
     "utility filing",
@@ -28,19 +28,24 @@
     "facility disclosure"
   ],
   "candidate_records": [
-    "specific ACC utility docket",
-    "Arizona utility integrated resource plan",
+    "specific ACC utility docket or order",
+    "SRP or APS customer-specific service and interconnection record",
     "semiconductor facility load or service agreement evidence"
   ],
-  "next_action": "Use ACC eDocket and utility sources to identify specific dockets, filings, and rate cases before making site-level power claims.",
+  "next_action": "Use ACC eDocket and utility records to identify a customer- or project-specific service, interconnection, tariff, or load record before making site-level power claims.",
   "future_data_model_need": ["Utility Filing", "Facility", "Dataset"],
   "related_source_ids": [
     "source-eia-arizona-electricity-profile",
     "source-eia-electricity-data",
     "source-arizona-corporation-commission-utilities",
-    "source-arizona-corporation-commission-edocket"
+    "source-arizona-corporation-commission-edocket",
+    "source-srp-resource-planning",
+    "source-srp-2025-isp-actions-progress-report"
   ],
-  "related_signal_ids": ["signal-arizona-electricity-profile-chip-corridor-power-constraint"],
+  "related_signal_ids": [
+    "signal-arizona-electricity-profile-chip-corridor-power-constraint",
+    "signal-srp-2025-isp-actions-valley-power-buildout"
+  ],
   "related_local_system_ids": ["local-us-southwest-chip-corridor"],
-  "notes": "Source added, not resolved. Needs specific docket or utility planning evidence."
+  "notes": "Phase 51 added a named utility implementation report. The gap remains open at the project-service layer: system plans and aggregate megawatts do not prove a site can be connected or served."
 }

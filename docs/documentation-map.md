@@ -776,6 +776,26 @@ Do not use it for:
 - Treating funding opportunities as awards.
 - Treating regional projections as local readiness proof.
 
+### Phase 51A Work Package
+
+Purpose:
+
+- Record the first named utility, provider-water, and application-servicing batch.
+- Preserve the claim boundaries for SRP system planning, Phoenix provider planning, and Toronto application-stage review.
+- Track the four strengthened local evidence gaps and the remaining project-service and delivery questions.
+
+Update when:
+
+- a selected record is corrected or superseded,
+- later utility, water, Council, by-law, permit, start, completion, or occupancy evidence is added,
+- a Phase 51 signal enters publication review.
+
+Do not use it for:
+
+- treating system planning as a customer service commitment,
+- treating a staff recommendation as final approval,
+- treating servicing review as a building permit or completed delivery.
+
 ### v0.1 Build Manifest
 
 Purpose:

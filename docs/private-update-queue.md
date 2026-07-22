@@ -106,14 +106,22 @@ These items come from the 36-source Phase 49 promotion batch. They should be use
 | --- | --- | --- | --- | --- | --- |
 | uq-039 | Signal Draft Created | `source-usgs-mineral-commodity-summaries`, `source-usgs-nmic` | Critical Minerals / Compute and Chips | Selected the 2026 gallium material as the first commodity-specific follow-up to the broad MCS baseline. | Watch import-source changes, export licensing, refining projects, wafer-supplier evidence, substitution, recycling, and named facility exposure. |
 
+## Batch 04: Phase 51 Named Local Dossier Records
+
+| Queue ID | Status | Source | Watch Lane | Candidate Output | Human Next Action |
+| --- | --- | --- | --- | --- | --- |
+| uq-040 | Signal Draft Created | `source-srp-2025-isp-actions-progress-report` | Power and Grid / Local Systems | Added a named SRP resource, distribution, siting, and transmission implementation signal. | Select a customer- or project-specific service, tariff, load, or interconnection record before making site-level capacity claims. |
+| uq-041 | Signal Draft Created | `source-phoenix-2026-water-security-council-update` | Water / Local Systems | Added the first named Phoenix provider-level water signal. | Select an industrial service, facility-demand, discharge, reuse, or infrastructure record before making facility-level water claims. |
+| uq-042 | Signal Draft Created | `source-toronto-24-254930-june-2026-decision-report` | Local Systems / Finance and Human Futures | Added a staff recommendation and application-stage servicing-review signal for Toronto application 24 254930. | Track the Council item history, enacted by-laws, land and laneway conditions, building permit, start, completion, and occupancy. |
+
 ## First Repair Priorities
 
 Start with these because they have existing signal records and clear repair paths:
 
 1. ENSO signal: source has advanced to a 9 July 2026 NOAA CPC discussion.
 2. StatCan/CMHC permits signal: needs a specific release/geography.
-3. Arizona power signal: needs a specific ACC/utility planning record.
-4. Arizona water signal: needs a specific ADWR/CAP/Phoenix/provider record.
+3. Arizona power signal: named SRP implementation record added; still needs customer- or project-specific service evidence.
+4. Arizona water signal: named Phoenix provider record added; still needs industrial service, demand, discharge, or reuse evidence.
 5. FAA AAM signal: needs a specific FAA document or certification/regulatory action.
 6. NHTSA AV signal: needs a specific reporting/safety data action.
 7. CHIPS signal: needs a specific award/facility/program milestone.
@@ -160,6 +168,19 @@ Moved from promoted source records into content:
 Next queue step:
 
 Phase 50B has reached six bounded additions across the two Phase 50 batches. Move next into Phase 51 local dossier deepening, prioritizing a named Arizona power or water record, a Toronto decision or servicing record, and downstream evidence for the selected award and gallium records.
+
+## Phase 51A Progress
+
+Moved from queue priorities into content:
+
+- `uq-040` selected SRP's 2025 Integrated System Plan Actions Progress Report and created a bounded Valley power-system implementation signal,
+- `uq-041` selected Phoenix Water Services' April 28, 2026 council update and created a provider-level water signal,
+- `uq-042` selected Toronto's June 22, 2026 decision report for application 24 254930 and created a staff-recommendation and servicing-review signal,
+- strengthened `gap-001`, `gap-002`, `gap-004`, and `gap-005` without marking any gap resolved.
+
+Next queue step:
+
+Continue Phase 51 with project-specific Arizona utility and water-service evidence, a Phoenix permit or zoning record, a Toronto Council/by-law or building-permit record, and one workforce or delivery-capacity record for each dossier.
 
 ## Operating Rule
 

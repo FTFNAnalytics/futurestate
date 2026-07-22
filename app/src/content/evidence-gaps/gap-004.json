@@ -10,10 +10,10 @@
   "constraint_tags": ["Infrastructure", "Regulation", "Capital", "Labor"],
   "question": "Which municipal systems can convert housing targets into completed units?",
   "why_it_matters": "Provincial targets and housing demand matter only if municipal planning, servicing, approvals, infrastructure, labor, and financing can convert them into occupied homes.",
-  "current_support": "FTFN has Ontario housing supply progress, CMHC housing data, Statistics Canada permits, Toronto AIC, and a selected Toronto application record: 24 254930 ESC 20 OZ for a proposed 578-unit mixed-use development.",
+  "current_support": "FTFN has Ontario housing supply progress, CMHC and Statistics Canada data, Toronto AIC, the initial notice for application 24 254930, and a June 2026 staff report recommending approval of a revised 510-unit rental proposal with an accepted application-stage servicing analysis.",
   "missing_evidence": [
-    "servicing capacity",
-    "development application decision timelines",
+    "final servicing conditions and detailed design",
+    "City Council decision and enacted by-laws",
     "infrastructure funding",
     "permit processing",
     "municipal approvals",
@@ -27,21 +27,23 @@
     "municipal completion data"
   ],
   "candidate_records": [
-    "Toronto application 24 254930 follow-up decision and status records",
+    "Toronto application 24 254930 Council item history and enacted by-laws",
     "priority Ontario municipality servicing plan",
     "municipal approval timeline source"
   ],
-  "next_action": "Track application 24 254930 through staff reports and decisions, then add servicing, building-permit, approval-timeline, start, and completion evidence.",
+  "next_action": "Track application 24 254930 through Council and enacted by-laws, then add land-condition, building-permit, start, completion, and occupancy evidence.",
   "future_data_model_need": ["Permit", "Dataset", "Local Actor", "Policy or Regulation"],
   "related_source_ids": [
     "source-city-toronto-application-information-centre",
     "source-ontario-housing-supply-progress",
-    "source-cmhc-housing-market-information-portal"
+    "source-cmhc-housing-market-information-portal",
+    "source-toronto-24-254930-june-2026-decision-report"
   ],
   "related_signal_ids": [
     "signal-ontario-housing-supply-progress-local-capacity-signal",
-    "signal-toronto-application-24-254930-named-planning-record"
+    "signal-toronto-application-24-254930-named-planning-record",
+    "signal-toronto-24-254930-staff-report-servicing-review"
   ],
   "related_local_system_ids": ["local-ontario-real-estate"],
-  "notes": "Phase 50B added the first named Toronto application record. The gap remains unresolved because an application does not prove approval, servicing, building permits, starts, completions, occupancy, or province-wide municipal performance."
+  "notes": "Phase 51 added a staff approval recommendation and project-level servicing review. The gap remains unresolved because the record is not a final Council decision, enacted by-law, building permit, start, completion, occupancy, or province-wide conversion measure."
 }

@@ -37,17 +37,17 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after Phase 50B:
+Current `0.2.0-dev` state after Phase 51A:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 186 |
-| Active sources | 102 |
-| Signals | 22 |
+| Static pages | 193 |
+| Active sources | 105 |
+| Signals | 25 |
 | Published signals | 3 |
-| In Review signals | 18 |
+| In Review signals | 21 |
 | Draft Sample signals | 1 |
-| Named local inputs selected in Phase 50 | 2 |
+| Named local inputs selected in Phases 50-51A | 5 |
 
 Existing operating assets:
 
@@ -172,19 +172,27 @@ Goal: make local-system analysis a distinctive, defensible product layer.
 
 U.S. Southwest Chip Corridor deliverables:
 
-- one named utility docket or resource-planning filing,
-- one water-provider, service-area, allocation, conservation, or infrastructure record,
+- [x] one named utility docket or resource-planning filing,
+- [x] one water-provider, service-area, allocation, conservation, or infrastructure record,
 - one Phoenix-area permit, zoning, planning, or inspection record,
 - one workforce or training pipeline record,
 - one supplier, construction-labor, facility, or industrial-development record.
 
 Ontario Real Estate deliverables:
 
-- one named Toronto application or development record,
+- [x] one named Toronto application or development record,
 - one permit-status or building-permit record,
-- one servicing or infrastructure-capacity record,
+- [x] one servicing or infrastructure-capacity record,
 - one starts, completions, or units-under-construction record,
 - one financing, labor, or delivery-constraint record.
+
+Phase 51A status:
+
+- selected SRP's 2025 ISP Actions Progress Report as a named utility implementation record,
+- selected Phoenix Water Services' April 2026 council update as a provider-level water record,
+- selected Toronto's June 2026 decision report for application 24 254930 as a staff-recommendation and servicing-review record,
+- added three `In Review` signals and strengthened `gap-001`, `gap-002`, `gap-004`, and `gap-005`,
+- reached 105 sources, 25 signals, and 193 built pages without claiming site-level service or completed outcomes.
 
 Exit criteria:
 
@@ -327,4 +335,4 @@ v0.2 is successful when:
 
 ## Immediate Next Step
 
-Review and merge Phase 52A, then create a hosted Supabase development project. Implement only the private authority-loop foundation: Auth/RLS plus `profiles`, `source_candidates`, `source_snapshots`, `review_items`, `editorial_events`, and `probe_configs`. Keep Git as the public publishing source of truth. Continue Phase 51 named-record research in parallel rather than delaying backend learning until every dossier is complete.
+Continue Phase 51B while Supabase access is pending. Select one project- or customer-specific Arizona power service record, one industrial water service/demand/reuse record, one Phoenix permit or zoning record, Toronto Council/by-law or building-permit follow-through, and one workforce or delivery-capacity record for each dossier. Keep Git as the public publishing source of truth and keep all new records `In Review` until Phase 53.

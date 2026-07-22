@@ -951,7 +951,7 @@ These are the next practical actions from the current project state.
 242. Add the first cross-cutting regulatory watch-rail signal from the private update queue. Status: complete; added `signal-federal-register-regulations-gov-regulatory-watch-rail`.
 243. Update source metadata for Phase 48 rechecked rails. Status: complete; refreshed NOAA CPC ENSO, Federal Register API, Regulations.gov API, and CISA KEV notes.
 244. Create Phase 48 work package for the first signal repair batch. Status: complete.
-245. Select one named local dossier record from ACC eDocket, Toronto AIC, Phoenix permitting/water, or Ontario housing evidence. Status: partially complete in Phase 50; selected MAG 2023 projections as a named Phoenix-region planning dataset, but ACC, Phoenix permit/water, Toronto AIC, and Ontario completion records are still needed.
+245. Select one named local dossier record from ACC eDocket, Toronto AIC, Phoenix permitting/water, or Ontario housing evidence. Status: complete across Phases 50-51A; selected MAG projections, Toronto application and decision records, SRP planning, and Phoenix provider water evidence.
 246. Create one local `In Review` signal from a named local record, without claiming local readiness. Status: complete in Phase 50; added `signal-mag-2023-projections-phoenix-region-growth-evidence-layer`.
 247. Create a source broadening and intake plan so FTFN can collect many more potential source candidates without weakening public authority. Status: complete; added `docs/source-broadening-and-intake-plan.md`.
 248. Create a private source-candidate registry with 150 to 250 candidates before promoting another large source batch. Status: planned for Phase 52; deferred after the user-requested Phase 49 source promotion.
@@ -969,8 +969,10 @@ These are the next practical actions from the current project state.
 260. Preserve the frozen v0.1.1 candidate in version control before current counts diverge. Status: complete; created root commit `4845597` and branch `codex/v0.2-phase50b`.
 261. Advance current package metadata from the frozen v0.1.1 checkpoint to `0.2.0-dev`. Status: complete.
 262. Complete Phase 50B at six bounded additions and validate the 102-source, 22-signal, 186-page development build. Status: complete.
-263. Begin Phase 51 local dossier deepening with named Arizona power/water and Ontario decision/servicing/permit/completion records. Status: next.
+263. Begin Phase 51 local dossier deepening with named Arizona power/water and Ontario decision/servicing/permit/completion records. Status: Phase 51A complete for named utility, provider-water, staff-recommendation, and servicing-review records; project-specific service, permits, workforce, and delivery evidence remain.
 264. Preserve v0.1.1 local release-QA evidence and keep preview deployment behind explicit approval. Status: complete; added `docs/release-qa-v0.1.1.md` and left hosting unchanged.
+265. Create the Phase 51A work package and add three bounded local dossier signals. Status: complete.
+266. Continue Phase 51B with project-specific Arizona service records, Phoenix permitting, Toronto Council/by-law and permit follow-through, and workforce or delivery evidence. Status: next.
 
 ## 10. Current Stage Map
 

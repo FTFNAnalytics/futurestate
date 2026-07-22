@@ -100,6 +100,7 @@ It is a stack of dependencies.
 - [Phase 48 Work Package](docs/work-packages/phase-48-first-signal-repair-batch.md) - first v0.2 signal repair batch, NOAA update, cybersecurity rail, and regulatory rail.
 - [Phase 49 Work Package](docs/work-packages/phase-49-broad-source-promotion-batch.md) - 36-source promotion batch for v0.2 authority breadth.
 - [Phase 50 Work Package](docs/work-packages/phase-50-bounded-source-recheck-and-content-expansion.md) - completed six-record bounded evidence-conversion batch spanning funding, research, commodities, and named local records.
+- [Phase 51A Work Package](docs/work-packages/phase-51a-named-utility-water-and-servicing-records.md) - named SRP utility, Phoenix provider-water, and Toronto staff-recommendation/servicing records.
 
 ## App Scaffold
 
@@ -116,7 +117,7 @@ npm run check
 npm run build
 ```
 
-The current `0.2.0-dev` build generates 187 static pages and three versioned JSON data endpoints.
+The current `0.2.0-dev` build generates 193 static pages and three versioned JSON data endpoints.
 
 The homepage now uses real seed records for signals, topics, sources, local systems, and briefings while preserving the 42/59 framing and dependency-stack thesis.
 
@@ -216,7 +217,9 @@ Phase 50 completes the first bounded source-item content expansion with six `In 
 
 Phase 52A completes the pre-Supabase public contract. It adds a validated public update/correction log, versioned static JSON exports for sources, topics, and Published signals, and an explicit private-field allowlist. Supabase can now begin as a private Auth/RLS-backed authority-loop backend while Git remains the public publishing source of truth.
 
-The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Local desktop/mobile and indexing QA passed with no release blocker; preview deployment remains unapproved and has not been created. Current work runs as `0.2.0-dev` on `codex/pre-supabase-contracts`: 102 sources, 22 signals, 17 topics, three public update entries, and three versioned data exports. The next backend step is a hosted Supabase development project for the private authority loop; Phase 51 named-record research can continue in parallel.
+Phase 51A deepens both local dossiers with three named records: SRP's 2025 ISP Actions Progress Report, Phoenix Water Services' April 2026 council update, and Toronto's June 2026 decision report for application 24 254930. The batch adds three `In Review` signals, strengthens four evidence gaps, and reaches 105 sources, 25 signals, and 193 pages without treating system planning as site service or a staff recommendation as final approval.
+
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Local desktop/mobile and indexing QA passed with no release blocker; preview deployment remains unapproved and has not been created. Current work runs as `0.2.0-dev` on `codex/phase51-content`: 105 sources, 25 signals, 17 topics, four public update entries, 193 pages, and three versioned data exports. Phase 51B should add project-specific Arizona service evidence, Phoenix permitting, Toronto Council/by-law or permit follow-through, and workforce or delivery records while Supabase activation proceeds separately.
 
 ## Working Rule
 

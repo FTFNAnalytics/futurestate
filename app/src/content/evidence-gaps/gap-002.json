@@ -10,9 +10,9 @@
   "constraint_tags": ["Water", "Climate", "Infrastructure", "Public Trust"],
   "question": "Which records show whether industrial growth has defensible water capacity?",
   "why_it_matters": "Industrial strategy in a water-constrained region depends on water rights, provider capacity, reuse, treatment, discharge, drought exposure, and public legitimacy.",
-  "current_support": "FTFN has ADWR water governance context, ADWR assured and adequate water supply criteria, and Arizona utility-regulation context.",
+  "current_support": "FTFN has ADWR water governance and assured-supply criteria plus Phoenix Water Services' April 2026 provider-level update on supply sources, drought posture, and planned reliability investments.",
   "missing_evidence": [
-    "provider-level water records",
+    "provider service capacity for named industrial sites",
     "facility water demand",
     "reuse plans",
     "discharge permits",
@@ -28,18 +28,23 @@
     "local planning record"
   ],
   "candidate_records": [
-    "specific ADWR assured or adequate water supply application",
-    "water provider service record",
-    "facility water demand disclosure"
+    "next City of Phoenix Water Resource Plan",
+    "industrial water service or infrastructure agreement",
+    "facility water demand, discharge, or reuse disclosure"
   ],
-  "next_action": "Add provider, permit, facility-demand, discharge, and reuse-plan sources before facility-level water claims.",
+  "next_action": "Add a named industrial service, facility-demand, discharge, or reuse record before making facility-level water claims.",
   "future_data_model_need": ["Permit", "Facility", "Dataset", "Local Actor"],
   "related_source_ids": [
     "source-arizona-department-water-resources",
     "source-arizona-adwr-assured-water-supply",
-    "source-arizona-corporation-commission-utilities"
+    "source-arizona-corporation-commission-utilities",
+    "source-phoenix-water-and-sewer",
+    "source-phoenix-2026-water-security-council-update"
   ],
-  "related_signal_ids": ["signal-arizona-water-resources-chip-corridor-constraint-map"],
+  "related_signal_ids": [
+    "signal-arizona-water-resources-chip-corridor-constraint-map",
+    "signal-phoenix-2026-water-security-provider-update"
+  ],
   "related_local_system_ids": ["local-us-southwest-chip-corridor"],
-  "notes": "ADWR criteria improve the governance layer but do not prove facility water sufficiency."
+  "notes": "Phase 51 added a named municipal provider record. The gap remains open because provider-level portfolio and drought planning do not prove capacity or service terms for a named industrial project."
 }

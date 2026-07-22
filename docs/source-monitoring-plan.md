@@ -89,7 +89,7 @@ Recommended next source-monitoring work:
 
 1. Turn high-priority probe-ready sources into a private scheduled-check queue before any public automated update behavior. Status: started in Phase 47 with `docs/private-update-queue.md`; first queue items moved into content in Phase 48.
 2. Create the source candidate registry described in `docs/source-broadening-and-intake-plan.md`. Status: still needed before another broad source-promotion batch.
-3. Add or select named Arizona utility dockets, provider water records, Phoenix permits/applications, and Ontario municipal servicing or completion evidence.
+3. Add or select named Arizona utility dockets, provider water records, Phoenix permits/applications, and Ontario municipal servicing or completion evidence. Status: Phase 51A added named SRP, Phoenix Water Services, and Toronto servicing-review records; project-specific service, Phoenix permits, and downstream delivery records remain.
 4. Move the best promoted Phase 49 source records into bounded source checks for patents, space licensing, agriculture biotechnology, finance, and local systems. Status: funding, research, and first commodity-specific selections completed in Phase 50B.
 5. Add source records for post-quantum migration guidance and procurement evidence.
 6. Add source records for FAA/NHTSA dated certification or safety updates.
@@ -148,6 +148,15 @@ Completed in Phase 50B:
 - selected USAspending award DEMS0000003, NSF award 2433348, the USGS 2026 gallium material, and Toronto application 24 254930,
 - added four more `In Review` signals and updated `gap-004`, `gap-007`, and the Ontario Real Estate profile,
 - validated the `0.2.0-dev` app at 102 sources, 22 signals, 17 topics, and 186 built pages.
+
+Completed in Phase 51A:
+
+- added SRP's 2025 ISP Actions Progress Report as a named utility implementation record,
+- added Phoenix Water Services' April 2026 council update as a named provider-level water record,
+- added Toronto's June 2026 decision report for application 24 254930 as a staff-recommendation and servicing-review record,
+- added three `In Review` signals and strengthened four local evidence gaps,
+- validated the app at 105 sources, 25 signals, 17 topics, and 193 built pages,
+- kept customer-level service, final approvals, permits, starts, completions, and occupancy unresolved.
 
 ## Not Yet
 
