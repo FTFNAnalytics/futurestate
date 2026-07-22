@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node ./scripts/run-astro.mjs dev",
     "build": "node ./scripts/run-astro.mjs check && node ./scripts/run-astro.mjs build",
+    "prepare:sites": "node ./scripts/prepare-sites-package.mjs",
     "audit:candidate-links": "node ./scripts/audit-source-candidate-links.mjs",
     "preview": "node ./scripts/run-astro.mjs preview",
     "check": "node ./scripts/run-astro.mjs check",
