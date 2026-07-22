@@ -113,6 +113,7 @@ It is a stack of dependencies.
 - [Phase 54 Work Package](docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md) - local release gate, header touch-target repair, reproducible assertions, and deferred preview decision.
 - [Phase 52B Work Package](docs/work-packages/phase-52b-private-candidate-registry-and-authority-surfaces.md) - private 150-source candidate shelf plus Source Monitor and Source Coverage completion.
 - [Phase 55A Work Package](docs/work-packages/phase-55a-local-checkpoint-and-authority-refresh.md) - local Phase 52B checkpoint, 15-record private triage batch, three active-source refreshes, and preserved non-public boundary.
+- [Phase 55B Work Package](docs/work-packages/phase-55b-migration-and-facility-evidence.md) - federal post-quantum migration requirements, Project Baccara permit gates, refreshed monitoring rails, and preserved non-public boundary.
 
 ## App Scaffold
 
@@ -131,7 +132,7 @@ npm run build
 npm run verify:release
 ```
 
-The current `0.2.0-dev` build generates 210 static pages and three versioned JSON data endpoints. Nine signals are Published, 23 remain In Review, and one remains a Draft Sample.
+The current `0.2.0-dev` build generates 215 static pages and three versioned JSON data endpoints. Nine signals are Published, 25 remain In Review, and one remains a Draft Sample.
 
 The homepage now uses real seed records for signals, topics, sources, local systems, and briefings while preserving the 42/59 framing and dependency-stack thesis.
 
@@ -255,7 +256,9 @@ Phase 53 applies the publication gate to the complete 33-signal library. Six bou
 
 Phase 54 passes the v0.2 local release gate. All automated checks and a repeatable `verify:release` assertion pass; 12 of 12 sources supporting Published signals carry a current check; ten core journeys pass at desktop and mobile widths; header links now meet a 44-pixel minimum target; and robots, sitemap, canonical, noindex, update-log, and export boundaries match the manifest. The v0.2 launch note and limitations statement are ready.
 
-The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 114 public sources, 150 private source candidates, 33 signals, 17 topics, seven public update entries, 210 pages, and three versioned data exports. The next external step is an explicit private-preview decision; no preview, DNS change, or public launch occurred. The unresolved Phase 51 trails remain dated monitors while Supabase activation proceeds separately.
+Phase 55B adds three current official sources and two bounded `In Review` signals. The federal trail now records Executive Order 14412 and OMB M-26-15 without confusing a migration mandate with completed implementation. The Southwest dossier now records Project Baccara's Arizona Corporation Commission certificate while retaining its air, county, military-compatibility, water-operation, and construction gates. Toronto, Ontario, and ACC monitoring rails were rechecked; the Toronto address search result is retained only as a negative query result, not proof that no permit exists.
+
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 117 public sources, 150 private source candidates, 35 signals, 17 topics, seven public update entries, 215 pages, and three versioned data exports. The branch remains local and non-public; no preview, DNS change, or public launch occurred. The unresolved downstream trails remain dated monitors while Supabase activation proceeds separately.
 
 ## Working Rule
 

@@ -986,6 +986,7 @@ These are the next practical actions from the current project state.
 277. Begin the Phase 57 authority operating rhythm after launch and keep Phase 58 Supabase work private, RLS-backed, Git-exported, and unable to publish claims directly.
 278. Complete Phase 52B authority-layer closeout at a 150-candidate target. Status: complete; added the local-only registry, validator, release leak check, Source Monitor review groups and next actions, Source Coverage strength summaries, workflow documentation, and work package.
 279. Complete Phase 55A local checkpoint and authority refresh without pushing or deploying. Status: complete; reviewed 15 additional private candidates, retained 14 as Candidate, rejected one retired dataset, refreshed three active source anchors, and verified 14 Strong Source Coverage lanes with two overdue unassigned source records remaining.
+280. Complete Phase 55B migration and facility evidence pass without pushing or deploying. Status: complete; added three official source records and two bounded `In Review` signals, refreshed Toronto, Ontario, and ACC monitoring rails, cleared the two overdue source checks, and preserved all remaining downstream gates.
 
 ## 10. Current Stage Map
 
@@ -1016,11 +1017,11 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a generated source monitor that turns checked dates, update cadence, capture priority, and authority levels into a public review queue.
 - an authority red-team plan that separates credible scaffold work from the content depth required for a comprehensive resource.
 - an authoritative live source plan that identifies the first 30 source additions and the monitoring architecture needed for source intelligence.
-- an expanded source registry with 114 records, watch-lane metadata, access-type metadata, endpoint metadata, source health states, and explicit review cadences.
+- an expanded source registry with 117 records, watch-lane metadata, access-type metadata, endpoint metadata, source health states, and explicit review cadences.
 - a generated source coverage matrix at `/atlas/source-coverage/`.
 - local system dossier tables generated from linked source records.
 - 17 public topic records, including Cybersecurity and Discovery Technologies.
-- 114 source records, including Discovery Technologies, Arizona utility planning and named service, Phoenix permitting and water-service anchors, TSMC facility and workforce records, Toronto development and permit-process anchors, official meta-catalogs, funding/spending rails, international statistics, research APIs, patent/IP sources, water/minerals/trade sources, space licensing, agriculture biotechnology, and Phoenix/MAG local-system data.
+- 117 source records, including Discovery Technologies, Arizona utility planning and named service, Phoenix permitting and water-service anchors, TSMC and Project Baccara facility records, Toronto development and permit-process anchors, federal post-quantum migration directives, official meta-catalogs, funding/spending rails, international statistics, research APIs, patent/IP sources, water/minerals/trade sources, space licensing, agriculture biotechnology, and Phoenix/MAG local-system data.
 - v0.1 handoff and deployment-prep artifacts: `docs/session-brief-v0.1.md`, `docs/roadmap-v0.1.md`, and `deployment/ftfn-v0.1-build.json`.
 - a v0.2 roadmap that scopes private source updates, dated signal repair, named local evidence trails, public update/correction logs, and static metadata exports.
 - a signal scale scenario map for the 25-35 signal v0.2 target and the larger 70-signal authority-system target.
@@ -1028,12 +1029,12 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a second private queue batch that turns promoted Phase 49 source records into bounded review candidates.
 - six Phase 50 bounded source-item signals spanning a DOE/Grants.gov opportunity, MAG local projections, USAspending award, NSF award, USGS gallium record, and Toronto planning application.
 - a frozen v0.1.1 release package with app version 0.1.1, deployment manifest, versioned session brief, release roadmap, local release-QA evidence, and Git checkpoint `4845597`.
-- a current `0.2.0-dev` build with 114 sources, 33 signals, seven update entries, nine Published signals, three public JSON exports, and 210 pages.
+- a current `0.2.0-dev` build with 117 sources, 35 signals, seven update entries, nine Published signals, three public JSON exports, and 215 pages.
 - a private 150-record source-candidate shelf across 15 evidence profiles, with 45 reviewed, 105 awaiting triage, and zero automatic public promotions.
 - Source Monitor review-state groups and next actions plus Strong, Developing, and Weak Source Coverage summaries.
 - a passed v0.2 local release gate with a versioned manifest, repeatable release assertions, desktop/mobile browser evidence, repaired 44-pixel header targets, and a public-facing launch note plus limitations statement.
 
-It is not yet a deployed public launch product because optional private-preview execution, post-deploy QA, package-version freeze, DNS attachment, analytics decisions, and final public-launch approval remain separate. The current v0.2 build has passed Phase 54 locally. Nine records are `Published`, 23 signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint profiles, the briefing, dependency maps, and most reviewed signals remain prelaunch material.
+It is not yet a deployed public launch product because optional private-preview execution, post-deploy QA, package-version freeze, DNS attachment, analytics decisions, and final public-launch approval remain separate. The current v0.2 build has passed Phase 54 locally and the expanded Phase 55B content package has been revalidated. Nine records are `Published`, 25 signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint profiles, the briefing, dependency maps, and most reviewed signals remain prelaunch material.
 
 ### Stage 1: Reader-Journey QA
 
@@ -1165,16 +1166,19 @@ Completed:
 - Completed Phase 51A with named SRP implementation, Phoenix provider-water, and Toronto staff-recommendation/servicing records.
 - Completed Phase 51B with an SRP large-load tariff, Phoenix-TSMC wastewater agreement, TSMC-campus PUD, technician apprenticeship, Toronto committee recommendation, and citywide delivery baseline.
 - Completed Phase 51C with SRP's named Meta electric-service project, current TSMC fab milestones, and active apprenticeship-cohort evidence.
-- Reached 114 sources, 33 signals, six update entries, and 210 built pages while keeping all new signals `In Review`.
+- Reached 117 sources, 35 signals, seven update entries, and 215 built pages after Phase 55B while keeping both new signals `In Review`.
 
 Next candidate work:
 
-- Recheck NOAA CPC ENSO, downstream records for Toronto application 24 254930, and the selected Arizona service, infrastructure, permit, and workforce records.
+- Capture the first public federal agency post-quantum migration plan, procurement implementation, proposed FAR rule, or NIST pilot result.
+- Follow Project Baccara through ADEQ air permitting, county construction approval, military-compatibility review, construction, and operating evidence.
+- Recheck Toronto application 24 254930 after the July 29-31, 2026 Council window for adoption, by-laws, and later permit records.
+- Work the 17 Watch Soon source records before they become overdue.
 - Decide whether In Review local systems and dependency maps should remain indexable or move to clearer research/noindex treatment before launch.
 - Keep the unresolved local trails as dated monitors: completed wastewater and reclaimed-water infrastructure, Phoenix permits and occupancy, apprenticeship outcomes, Toronto City Council and by-laws, and project start/completion evidence.
-- Prioritize Phase 53 publication-candidate review; keep OSTI, patents, space licensing, hazard, and agriculture biotechnology as later bounded candidates.
+- Keep additional publication promotion behind a fresh publication-candidate review; the current public set remains nine.
 - Repair broad In Review signals into dated source-backed records where the expanded source registry supports a specific update.
-- Activate the private source-candidate registry in Supabase before another broad public source promotion batch.
+- Keep Supabase activation and any broad public source promotion batch separate from the bounded local content track.
 
 Decision:
 

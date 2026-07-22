@@ -1990,3 +1990,28 @@ Implemented:
 Boundary:
 
 The package remains `0.2.0-dev`. No preview was deployed, no external host was configured, no DNS was changed, and no public launch was approved. The accessibility pass is focused release QA rather than a complete WCAG or assistive-technology audit. Supabase activation remains a separate private-backend track and must not bypass Git, human review, or the static publication gate.
+
+## 2026-07-22: Phase 55B Advances Named Trails Without Claiming Completion
+
+Decision:
+
+FTFN will add current federal post-quantum migration directives and a named Arizona facility certificate only as bounded `In Review` evidence. It will refresh the overdue Toronto, Ontario, and ACC monitoring rails and keep the branch local and non-public.
+
+Rationale:
+
+Executive Order 14412 and OMB M-26-15 move the post-quantum record beyond standards publication into dated federal planning and implementation requirements. The Arizona Corporation Commission's Project Baccara decision advances a named facility trail into a specific certificate stage and identifies proposed onsite generation and cooling/reuse design. Neither trail supports a completion claim. The Toronto permit portal also returned no application for one searched address, but the project's multiple-address scope and portal limits make that a negative query result rather than proof that no permit exists.
+
+Implemented:
+
+- added three official source records,
+- added two bounded `In Review` signals,
+- updated the post-quantum dependency map, technology record, Southwest dossier, and linked evidence gaps,
+- refreshed the Toronto permit-status, Ontario housing-supply, and ACC eDocket records,
+- added private queue items `uq-052` through `uq-055`,
+- reached 117 sources, 35 signals, and 215 generated pages,
+- cleared Source Monitor's two overdue items while retaining 17 Watch Soon records,
+- preserved nine Published signals and the local-only, non-public branch state.
+
+Boundary:
+
+Federal directives are not completed agency migrations, inventories, appropriations, procurements, or system replacements. The Project Baccara certificate is not an air permit, county construction permit, military-compatibility approval, construction start, operational plant, measured water balance, or proof of power and water sufficiency. A single negative Toronto address query is not a finding that no permit exists. No push, deployment, DNS change, or public launch was authorized.

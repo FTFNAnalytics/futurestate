@@ -41,21 +41,21 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after the Phase 55A local authority refresh:
+Current `0.2.0-dev` state after the Phase 55B content-authority pass:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 210 |
-| Active sources | 114 |
-| Signals | 33 |
+| Static pages | 215 |
+| Active sources | 117 |
+| Signals | 35 |
 | Published signals | 9 |
-| In Review signals | 23 |
+| In Review signals | 25 |
 | Draft Sample signals | 1 |
-| Named local inputs selected in Phases 50-51C | 14 |
+| Named local inputs selected in Phases 50-55B | 15 |
 | Private source candidates | 150 local-only records |
 | Candidate review | 45 reviewed: 44 Candidate, 1 Rejected; 105 remaining |
 | Source Coverage | 14 Strong; 0 Developing; 0 Weak |
-| Source Monitor | 2 Review Due; 17 Watch Soon; 95 Current |
+| Source Monitor | 0 Review Due; 17 Watch Soon; 100 Current |
 
 Existing operating assets:
 
@@ -88,9 +88,9 @@ By v0.2, a reader should be able to answer:
 
 | Area | v0.2 Target | Current | Remaining |
 | --- | ---: | ---: | ---: |
-| Total signals | 25-35 | 33 | target met; new additions require an unusually strong downstream record |
+| Total signals | 25-35 | 35 | target met; further additions require an unusually strong downstream record |
 | Published plus publication-ready | 8-12 | 9 | target met through nine Published records |
-| Active sources | 110-125 | 114 | target met; add only gap-closing sources |
+| Active sources | 110-125 | 117 | target met; add only gap-closing sources |
 | Private source candidates | 150 | 150 local-only records | target met; 45 reviewed and 105 retained for later gap-led review |
 | Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | semiconductor service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
 | Public trust surfaces | update log plus Method links | implemented | maintain entries |
@@ -254,16 +254,16 @@ Phase 52A pre-Supabase contract status:
 - Phase 51 research is no longer treated as a backend activation dependency,
 - remaining Phase 52 monitor, coverage, and registry work can be implemented through the private backend slice.
 
-Phase 52B closeout and Phase 55A follow-through status:
+Phase 52B closeout and Phase 55A-55B follow-through status:
 
 - created exactly 150 local-only candidate records across 15 balanced evidence profiles,
 - completed an initial first-pass triage on 30 candidates, then reviewed 15 more in Phase 55A; the current private registry holds 44 `Candidate`, one `Rejected`, and 105 `Needs Triage` records,
-- added candidate-contract validation and exact duplicate checks against all 114 active public sources,
+- added candidate-contract validation and exact duplicate checks against all 117 active public sources,
 - kept the working registry in Git-ignored `private-data/` because the current repository is public,
 - added generated-output leak assertions so candidate IDs and the registry path cannot ship in the static build,
 - reorganized Source Monitor around four review states with a specific next action for every source,
 - added Strong, Developing, and Weak Source Coverage assessments with explicit gap-led actions; the Phase 55A source refresh brought the current summary to 14 Strong, zero Developing, and zero Weak lanes,
-- promoted no candidate and changed no public source or signal counts.
+- promoted no private candidate; Phase 55B added three separately researched official sources and two bounded `In Review` signals.
 
 Exit criteria:
 
@@ -354,12 +354,12 @@ Recommended active schedule:
 | Completed | Phase 52 | update log, static exports, 150-source private candidate registry, and improved authority surfaces |
 | Completed | Phase 53 | nine Published records and a documented 23-record review shelf |
 | Completed | Phase 54 | local release gate, touch-target repair, v0.2 manifest, launch note, preview explicitly deferred |
-| Next | Phase 55 | synchronize the verified branch, deploy an unchanged private preview, and complete post-deploy QA |
+| Current | Phase 55 | keep the branch local, complete bounded authority follow-through, and defer external synchronization or preview until explicitly approved |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 local build is complete. The critical path is now repository synchronization, an unchanged preview, post-deploy verification, release freeze, and a separately approved production-domain launch. Supabase activation remains a parallel private-backend track.
+The planned v0.2 local build is complete. Phase 55A and 55B have strengthened the local authority package without changing its non-public posture. Repository synchronization, preview, post-deploy verification, release freeze, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -383,8 +383,9 @@ Current stop point:
 
 - local preservation is complete at checkpoint `35f26f4`,
 - the first Phase 55A authority refresh is complete and verified,
+- Phase 55B added current federal post-quantum migration records, a named Arizona facility permit trail, and refreshed Toronto, Ontario, and ACC monitoring rails,
 - the branch remains unpushed and no host is connected,
-- the next local content pass should replace the retired Toronto permit-status rail, deepen facility-level Arizona evidence, and select a bounded post-quantum migration or procurement record,
+- the next local content pass should follow the first public agency PQC plan or procurement rule, Project Baccara's remaining air/county/military gates, and Toronto application 24 254930 after the next Council decision window,
 - GitHub synchronization and any access-protected preview remain deferred pending explicit approval.
 
 Hosting decision rule:
@@ -509,4 +510,4 @@ All nine local success criteria pass in the Phase 54 candidate. Preview and publ
 
 ## Immediate Next Step
 
-Begin Phase 55 by reviewing and committing the handoff documentation, authenticating GitHub through an approved browser or credential-helper flow, and pushing `codex/phase51-content` for review. Then select and configure a private static-host preview from the exact reviewed commit. Stop before package freeze, DNS, or public launch. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Complete the Phase 55B local checkpoint, then continue only with bounded downstream evidence: the first public agency post-quantum migration plan or procurement rule, Project Baccara's remaining permit gates, Toronto Council/by-law follow-through, and the 17 Watch Soon source records. Keep GitHub synchronization, hosting, preview, package freeze, DNS, and public launch behind separate explicit approval. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

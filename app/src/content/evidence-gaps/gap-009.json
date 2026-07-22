@@ -2,7 +2,7 @@
   "id": "gap-009",
   "title": "Institution-level post-quantum cryptography migration evidence",
   "slug": "gap-009-post-quantum-migration-evidence",
-  "status": "Open",
+  "status": "Source Added",
   "priority": "Medium",
   "local_system": "Cross-system",
   "primary_topic": "Policy and Standards",
@@ -10,10 +10,10 @@
   "constraint_tags": ["Standards", "Cybersecurity", "Labor", "Unit Economics"],
   "question": "Which institutions are actually migrating to post-quantum cryptography?",
   "why_it_matters": "Standards create the migration clock, but operational impact depends on procurement, inventories, vendors, budgets, timelines, and critical infrastructure execution.",
-  "current_support": "FTFN has NIST PQC as a standards source and an in-review PQC migration signal.",
+  "current_support": "FTFN has the NIST PQC standards source and Published standards signal, plus Executive Order 14412 and OMB M-26-15 as a bounded federal implementation package requiring migration leadership, agency plans, risk prioritization, procurement work, modernization, a NIST pilot, and dated system transitions.",
   "missing_evidence": [
-    "procurement rules",
-    "cryptographic inventory work",
+    "completed Federal Acquisition Regulation changes and contract clauses",
+    "agency cryptographic inventory results",
     "vendor readiness",
     "migration timelines",
     "critical infrastructure guidance"
@@ -23,17 +23,24 @@
     "procurement rule",
     "critical infrastructure advisory",
     "vendor readiness source",
-    "institution-level implementation plan"
+    "institution-level implementation plan and completed milestone"
   ],
   "candidate_records": [
-    "sector-specific PQC migration guidance",
-    "federal procurement source",
-    "critical infrastructure migration signal"
+    "agency PQC migration plan or progress report",
+    "proposed and final Federal Acquisition Regulation records",
+    "NIST pilot result and critical infrastructure migration guidance"
   ],
-  "next_action": "Add source records for migration guidance and procurement once a specific institution or sector is selected.",
+  "next_action": "Track the 120-day agency plan deadline, NIST pilot, CISA cryptographic bill-of-materials guidance, proposed FAR rules, and the first disclosed agency or sector implementation milestone before making a readiness claim.",
   "future_data_model_need": ["Policy or Regulation", "Local Actor", "Dataset"],
-  "related_source_ids": ["source-nist-pqc"],
-  "related_signal_ids": ["signal-sample-007"],
+  "related_source_ids": [
+    "source-nist-pqc",
+    "source-white-house-eo-14412-pqc-migration",
+    "source-omb-m-26-15-pqc-migration"
+  ],
+  "related_signal_ids": [
+    "signal-sample-007",
+    "signal-federal-pqc-migration-plans-and-deadlines"
+  ],
   "related_local_system_ids": [],
-  "notes": "Useful future security and standards research queue item."
+  "notes": "Phase 55B closes the guidance-selection gap with a current federal directive and implementation memorandum. The evidence gap remains open at the execution layer because requirements, plans, and deadlines do not prove migration completion."
 }

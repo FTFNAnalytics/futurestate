@@ -1009,6 +1009,27 @@ Do not use it for:
 - authorizing a push, preview deployment, DNS change, or public launch,
 - treating coverage strength as proof that every source is current.
 
+### Phase 55B Work Package
+
+Purpose:
+
+- Record the bounded federal post-quantum migration and Project Baccara evidence additions.
+- Preserve the Toronto, Ontario, and ACC monitoring-rail rechecks and their evidence limits.
+- Record the 117-source, 35-signal, 215-page verification state and non-public stop point.
+
+Update when:
+
+- a factual correction is required in the Phase 55B result,
+- a public agency PQC plan, Project Baccara downstream permit, or Toronto Council/by-law/permit record advances a named trail,
+- an external Phase 55 action is separately approved and recorded.
+
+Do not use it for:
+
+- treating mandates as completed implementation,
+- treating a certificate as constructed or operational capacity,
+- treating a negative portal query as proof that no permit exists,
+- authorizing a push, preview deployment, DNS change, or public launch.
+
 ### v0.1 Build Manifest
 
 Purpose:
@@ -1052,7 +1073,7 @@ Do not use it for:
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 210-page build, nine Published signals, 114 sources, seven updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 215-page build, nine Published signals, 117 sources, seven updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` without treating local verification as deployment.
 

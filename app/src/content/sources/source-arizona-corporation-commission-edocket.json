@@ -10,6 +10,15 @@
   "update_frequency": "Ongoing",
   "capture_priority": "High",
   "known_limitations": "The eDocket system can identify utility filings, cases, orders, and public records, but FTFN must cite specific dockets before drawing conclusions about project-level power capacity, water utility obligations, tariffs, or service feasibility.",
-  "last_checked_date": "2026-06-02",
-  "notes": "Official Arizona Corporation Commission docket portal for utility and regulatory filings. Added to support evidence-gap work on utility planning, rate cases, and regulator-visible local conversion evidence."
+  "last_checked_date": "2026-07-22",
+  "watch_lanes": ["Power and Grid", "Water", "Compute and Chips", "Local Systems"],
+  "live_access_type": "Docket Search",
+  "docket_search_url": "https://edocket.azcc.gov/search/docket-search",
+  "review_cadence_days": 30,
+  "monitoring_status": "Active",
+  "coverage_role": ["Docket Evidence", "Regulatory Change", "Local Conversion Evidence", "Source Freshness"],
+  "jurisdiction": "Arizona",
+  "source_owner": "Arizona Corporation Commission",
+  "automation_notes": "Search specific company, docket, decision, and document records; follow a selected docket through the ACC Portal where useful. A portal search result is discovery metadata until the underlying filing or order is reviewed.",
+  "notes": "Phase 55B recheck confirmed the portal, docket search, document search, decisions, reports, calendar, and public follow functions are live. Project Baccara docket L-21369A-25-0222-00253 was selected as the first new bounded facility-level follow-through from this rail."
 }

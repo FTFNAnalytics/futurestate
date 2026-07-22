@@ -10,7 +10,7 @@
   "constraint_tags": ["Water", "Climate", "Infrastructure", "Public Trust"],
   "question": "Which records show whether industrial growth has defensible water capacity?",
   "why_it_matters": "Industrial strategy in a water-constrained region depends on water rights, provider capacity, reuse, treatment, discharge, drought exposure, and public legitimacy.",
-  "current_support": "FTFN has ADWR water governance and assured-supply criteria, Phoenix Water Services' April 2026 provider update, and a May 2026 Phoenix-TSMC development-agreement record defining interim wastewater conveyance improvements, accepted-flow conditions, industrial reclaimed-water-plant triggers, and customer cost responsibility.",
+  "current_support": "FTFN has ADWR water governance and assured-supply criteria, Phoenix Water Services' April 2026 provider update, a May 2026 Phoenix-TSMC wastewater agreement, and an ACC Project Baccara summary relaying a developer plan for chilled cooling and brewery-wastewater reuse while multiple downstream permits remain pending.",
   "missing_evidence": [
     "completed and accepted wastewater conveyance improvements",
     "total facility water withdrawals and consumption",
@@ -30,9 +30,10 @@
   "candidate_records": [
     "next City of Phoenix Water Resource Plan",
     "executed TSMC wastewater development agreement and construction records",
-    "facility water balance, discharge, or measured reuse disclosure"
+    "facility water balance, discharge, or measured reuse disclosure",
+    "Project Baccara water, discharge, air, county, construction, and operating records"
   ],
-  "next_action": "Track completion and acceptance of the TSMC conveyance improvements, operation of the first industrial reclaimed water plant by June 30, 2028, and a facility water-balance or measured-reuse record before making sufficiency claims.",
+  "next_action": "Track completion and acceptance of the TSMC conveyance improvements, operation of the first industrial reclaimed water plant by June 30, 2028, and Project Baccara's downstream water and permit records; require measured facility water and reuse evidence before making sufficiency claims.",
   "future_data_model_need": ["Permit", "Facility", "Dataset", "Local Actor"],
   "related_source_ids": [
     "source-arizona-department-water-resources",
@@ -41,14 +42,16 @@
     "source-phoenix-water-and-sewer",
     "source-phoenix-2026-water-security-council-update",
     "source-phoenix-tsmc-2026-wastewater-development-agreement",
-    "source-phoenix-north-3500-pud-2026"
+    "source-phoenix-north-3500-pud-2026",
+    "source-acc-project-baccara-cec-2026"
   ],
   "related_signal_ids": [
     "signal-arizona-water-resources-chip-corridor-constraint-map",
     "signal-phoenix-2026-water-security-provider-update",
     "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
-    "signal-phoenix-z37-20-1-tsmc-campus-planning-record"
+    "signal-phoenix-z37-20-1-tsmc-campus-planning-record",
+    "signal-acc-project-baccara-power-water-permit-gates"
   ],
   "related_local_system_ids": ["local-us-southwest-chip-corridor"],
-  "notes": "Phase 51B added a project-specific wastewater and reclaimed-water agreement. The gap remains open because authorization and conditional flow capacity do not prove completed infrastructure, total water demand, measured reuse, drought resilience, or long-term supply sufficiency."
+  "notes": "Phase 55B adds a second named facility water strategy, but only as a developer plan relayed by the ACC. The gap remains open because neither planned reuse nor conditional flow capacity proves completed infrastructure, total demand, measured reuse, drought resilience, or long-term sufficiency."
 }

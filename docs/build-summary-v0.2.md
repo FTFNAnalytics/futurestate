@@ -19,7 +19,7 @@ FTFN is a locally verified static release candidate. The v0.2 content, public tr
 | Hosting | no hosting project or preview deployment configured |
 | Public launch | not approved and not performed |
 
-Phase 55A preserves the completed release package locally and continues a bounded authority refresh. It does not authorize a push, preview, DNS change, or public launch.
+Phase 55B preserves the completed release package locally and adds a bounded content-authority pass for federal post-quantum migration and Arizona facility permitting. It does not authorize a push, preview, DNS change, public launch, or additional Published promotion.
 
 ## Build Inventory
 
@@ -27,11 +27,11 @@ The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 210 | +28 |
-| Sources | 102 | 114 | +12 |
-| Signals | 18 | 33 | +15 |
+| Generated HTML pages | 182 | 215 | +33 |
+| Sources | 102 | 117 | +15 |
+| Signals | 18 | 35 | +17 |
 | Published signals | 3 | 9 | +6 |
-| In Review signals | 14 | 23 | +9 |
+| In Review signals | 14 | 25 | +11 |
 | Draft Sample signals | 1 | 1 | 0 |
 | Topics | 17 | 17 | 0 |
 | Public update entries | 0 | 7 | +7 |
@@ -63,8 +63,8 @@ The public application includes:
 
 The editorial and authority layer includes:
 
-- 114 structured source records with authority, freshness, access, monitoring, and review metadata,
-- 33 bounded signal records with explicit claim and evidence limits,
+- 117 structured source records with authority, freshness, access, monitoring, and review metadata,
+- 35 bounded signal records with explicit claim and evidence limits,
 - nine Published signals backed by 12 sources checked on 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
 - a public seven-entry update and correction log,
@@ -92,17 +92,19 @@ npm.cmd run verify:release     passed
 
 Phase 55A then reran the same command set after refreshing the CISA Cybersecurity Advisories, NIST NVD API, and EIA Grid Monitor source records. The result remained 210 pages, 114 public sources, and 33 signals. Source Monitor now reports two Review Due, 17 Watch Soon, and 95 Current records; both overdue records are unassigned source-maintenance items rather than publication blockers.
 
+Phase 55B added three official records and two bounded `In Review` signals: the White House post-quantum migration order, OMB implementation guidance, and the Arizona Corporation Commission's Project Baccara certificate decision. It also rechecked the Toronto permit-status, Ontario housing-supply, and ACC eDocket rails. The current result is 215 pages, 117 public sources, and 35 signals. Source Monitor now reports zero Review Due, 17 Watch Soon, and 100 Current records; Source Coverage remains 14 Strong, zero Developing, and zero Weak lanes.
+
 Verified results:
 
-- 210 generated HTML pages,
-- exact exports for 114 sources, 17 topics, and nine Published signals,
+- 215 generated HTML pages,
+- exact exports for 117 sources, 17 topics, and nine Published signals,
 - all nine Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
 - correct canonical, robots, and publication-state indexing boundaries,
 - ten core journeys checked at `1440x900` and `390x844`,
 - compact header brand and navigation targets repaired to a 44-pixel minimum,
 - no checked layout, semantic, indexing, or browser-console release blocker.
-- exactly 150 unique private candidates, 10 in each of 15 profiles, with no exact name or URL collision against the 114 active sources,
+- exactly 150 unique private candidates, 10 in each of 15 profiles, with no exact name or URL collision against the 117 active sources,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
 
@@ -110,15 +112,15 @@ The detailed evidence is in `docs/release-qa-v0.2.md`. Preview and production be
 
 ## Repository And Deployment State
 
-The local release work is preserved on `codex/phase51-content`. It contains six commits not present on `origin/main`, spanning the pre-Supabase contract, Phases 51A-51C, Phase 53, and Phase 54.
+The local release work is preserved on `codex/phase51-content`. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
-The next repository action is to review and commit this handoff package, push the branch to GitHub, and merge it through an intentional review path. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
+The next repository action is a local Phase 55B checkpoint commit. GitHub push, pull-request review, merge, and preview deployment remain deferred by the current non-public decision. If external work is later approved, do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
 The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-22 to remain outside Cloudflare, with Google Workspace mail records active. Before any nameserver or DNS change, inventory and preserve every mail and verification record. Hosting-provider selection remains an explicit Phase 55 decision: Cloudflare Pages is the documented default, but another static host may be chosen if avoiding a nameserver migration is more important.
 
 ## Known Limitations
 
-- Twenty-three signals remain `In Review`; one company-claim example remains a `Draft Sample`.
+- Twenty-five signals remain `In Review`; one company-claim example remains a `Draft Sample`.
 - The briefing, dependency maps, and local-system profiles remain prelaunch or research material.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - Public JSON files are static exports, not a live API.
@@ -129,7 +131,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Readiness Verdict
 
-The product build is ready for an unchanged private preview. It is not yet ready to be called a completed public launch because four operational gates remain:
+The product build is technically ready for an unchanged access-protected preview, but the current decision is to keep it local and non-public while content deepening continues. A later launch would still require four operational gates:
 
 1. synchronize the verified branch to GitHub,
 2. deploy and verify an unchanged preview,
@@ -151,4 +153,4 @@ npm.cmd run build
 npm.cmd run verify:release
 ```
 
-Expected output: 210 HTML pages and a passing v0.2 release assertion.
+Expected output: 215 HTML pages and a passing v0.2 release assertion.

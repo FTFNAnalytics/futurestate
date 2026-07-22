@@ -37,7 +37,7 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 210
+static pages generated: 215
 current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
@@ -92,6 +92,7 @@ What is now stable:
 - Phase 52B added a Git-ignored 150-record candidate registry across 15 evidence profiles and added validation plus public-build leak assertions. Phase 55A brought the current review state to 44 `Candidate`, one `Rejected`, and 105 `Needs Triage` records.
 - Source Monitor now groups work by review state and exposes a specific next action; Source Coverage now distinguishes Strong, Developing, and Weak lanes with gap-led actions.
 - Phase 51C added named Meta electric-service and TSMC facility milestones, repaired the apprenticeship signal with active cohort counts, and brought the library to 33 signals without forcing missing downstream outcomes.
+- Phase 55B added the White House and OMB post-quantum migration records, a named Arizona Project Baccara certificate trail, and two bounded `In Review` signals; it also refreshed the Toronto, Ontario, and ACC monitoring rails.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 12 sources supporting the nine Published signals carry a current `2026-07-22` check date.
@@ -103,7 +104,7 @@ What is now stable:
 What is still prelaunch scaffolding:
 
 - Nine signal records are `Published`.
-- Twenty-three signal records are still `In Review`; one remains `Draft Sample`.
+- Twenty-five signal records are still `In Review`; one remains `Draft Sample`.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -119,8 +120,8 @@ FTFN should now preserve the verified static candidate while making a deliberate
 
 Current seed content includes:
 
-- 33 signal records,
-- 114 source records,
+- 35 signal records,
+- 117 source records,
 - 17 topic records,
 - 2 local system profiles,
 - 10 organization records,
@@ -142,7 +143,7 @@ Nine official-source-backed signals are now `Published`:
 - SRP Project Huckleberry named Meta online-service signal,
 - Toronto 2025 Development Pipeline delivery-gap signal.
 
-Twenty-three official-source-backed, official-analysis-backed, or explicitly company-claim-labeled signals are `In Review`:
+Twenty-five official-source-backed, official-analysis-backed, or explicitly company-claim-labeled signals are `In Review`:
 
 - CHIPS program signal,
 - FAA advanced air mobility signal,
@@ -166,7 +167,9 @@ Twenty-three official-source-backed, official-analysis-backed, or explicitly com
 - Phoenix Z-37-20-1 TSMC-campus planning-envelope signal,
 - TSMC Arizona registered-apprenticeship pipeline signal,
 - Toronto application 24 254930 community-council recommendation signal,
-- Phoenix TSMC Fab 1 production and Fab 2 construction-completion signal.
+- Phoenix TSMC Fab 1 production and Fab 2 construction-completion signal,
+- federal post-quantum migration plans and deadlines signal,
+- Project Baccara power, water, and permit-gates signal.
 
 One remaining signal record is still `Draft Sample`:
 
@@ -377,16 +380,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 55A local checkpoint and bounded authority refresh, following Phase 54 release QA and Phase 52B authority-layer closeout.
+Phase 55B migration and facility evidence pass, following the Phase 55A local checkpoint and authority refresh.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 local release candidate: package 0.2.0-dev, 114 public sources, 150 private candidates, 33 signals, 17 topics, 7 updates, 210 pages, 9 Published signals, 3 public JSON endpoints, and passed local desktop/mobile release QA on codex/phase51-content. The private layer has 45 reviewed records; current Source Coverage is 14 Strong lanes, and Source Monitor has two overdue unassigned records.
+v0.2 local release candidate: package 0.2.0-dev, 117 public sources, 150 private candidates, 35 signals, 17 topics, 7 updates, 215 pages, 9 Published signals, 3 public JSON endpoints, and passed local desktop/mobile release QA on codex/phase51-content. The private layer has 45 reviewed records; current Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, 17 Watch Soon, and 100 Current records.
 
 Next decision gate:
-Continue the Phase 55 content-authority pass while the branch remains local and non-public. Verify Git state first and use `35f26f4` as the preserved Phase 52B checkpoint. Prioritize a current Toronto permit-status rail, named Arizona facility evidence, a bounded post-quantum migration or procurement record, and the two overdue unassigned source records. Push, preview, merge, hosting, DNS, and public launch remain separate explicit decisions.
+Continue the bounded Phase 55 content-authority pass while the branch remains local and non-public. Verify Git state first and use `35f26f4` as the preserved Phase 52B checkpoint. Prioritize the first public agency post-quantum migration plan or procurement rule, Project Baccara's remaining air/county/military gates, Toronto application 24 254930 after the next Council decision window, and the 17 Watch Soon source records. Push, preview, merge, hosting, DNS, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, then proceed with the Phase 55 local preflight. Report before taking the first external action.
 ```

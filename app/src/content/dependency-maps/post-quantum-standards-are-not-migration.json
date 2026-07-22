@@ -2,7 +2,7 @@
   "id": "dependency-map-post-quantum-standards-are-not-migration",
   "title": "Post-quantum standards are not migration",
   "slug": "post-quantum-standards-are-not-migration",
-  "summary": "A qualitative technology-readiness map showing how NIST post-quantum cryptography standards create a migration clock, while institution-level implementation evidence remains unresolved.",
+  "summary": "A qualitative technology-readiness map showing how NIST standards, Executive Order 14412, and OMB M-26-15 turn post-quantum cryptography into a dated federal migration program while completed institution-level implementation remains unresolved.",
   "map_type": "Technology Readiness Map",
   "record_status": "In Review",
   "primary_topic": "Quantum",
@@ -19,12 +19,15 @@
     "Interpretation"
   ],
   "map_question": "How do post-quantum cryptography standards become operational migration work, and where does FTFN still lack implementation evidence?",
-  "interpretation_boundary": "This map shows that standards progress can create a security migration clock. It does not prove that any institution, vendor, sector, or local system has completed post-quantum migration.",
+  "interpretation_boundary": "This map shows a federal requirements, planning, procurement, pilot, and deadline stack. It does not prove that an agency, contractor, vendor, critical-infrastructure operator, or local system has completed post-quantum migration.",
   "source_ids": [
-    "source-nist-pqc"
+    "source-nist-pqc",
+    "source-white-house-eo-14412-pqc-migration",
+    "source-omb-m-26-15-pqc-migration"
   ],
   "signal_ids": [
-    "signal-sample-007"
+    "signal-sample-007",
+    "signal-federal-pqc-migration-plans-and-deadlines"
   ],
   "technology_ids": [
     "technology-post-quantum-cryptography"
@@ -53,7 +56,28 @@
       "label": "NIST PQC standards signal",
       "node_type": "Signal",
       "record_id": "signal-sample-007",
-      "note": "An in-review security signal framing PQC as near-term migration work rather than distant theory."
+      "note": "A Published security signal framing PQC as near-term migration work rather than distant theory."
+    },
+    {
+      "id": "node-pqc-executive-order-source",
+      "label": "Executive Order 14412",
+      "node_type": "Source",
+      "record_id": "source-white-house-eo-14412-pqc-migration",
+      "note": "A Tier 1 directive establishing federal leadership, system-transition, pilot, guidance, and procurement deadlines."
+    },
+    {
+      "id": "node-pqc-omb-source",
+      "label": "OMB M-26-15",
+      "node_type": "Source",
+      "record_id": "source-omb-m-26-15-pqc-migration",
+      "note": "A Tier 1 implementation memorandum requiring agency plans, risk prioritization, modernization, and vendor-readiness work."
+    },
+    {
+      "id": "node-federal-pqc-signal",
+      "label": "Federal PQC migration plans and deadlines",
+      "node_type": "Signal",
+      "record_id": "signal-federal-pqc-migration-plans-and-deadlines",
+      "note": "An In Review signal that converts the directive and memorandum into a bounded implementation clock without claiming completion."
     },
     {
       "id": "node-pqc-technology",
@@ -79,7 +103,7 @@
       "label": "Institution-level migration evidence",
       "node_type": "Evidence Gap",
       "record_id": "gap-009",
-      "note": "FTFN still needs procurement, inventory, vendor-readiness, and implementation evidence before stronger migration claims."
+      "note": "FTFN now has federal requirements and deadlines but still needs agency inventories, plans, procurement records, vendor readiness, and completed milestones."
     }
   ],
   "links": [
@@ -95,7 +119,7 @@
       "to": "node-nist-pqc-source",
       "relationship": "Evidenced By",
       "confidence": "Supported",
-      "note": "The in-review signal cites NIST PQC as its source."
+      "note": "The Published standards signal cites NIST PQC as its source."
     },
     {
       "from": "node-pqc-signal",
@@ -103,6 +127,34 @@
       "relationship": "Related Technology",
       "confidence": "Supported",
       "note": "The signal and technology profile share the same primary source and topic context."
+    },
+    {
+      "from": "node-federal-pqc-signal",
+      "to": "node-pqc-executive-order-source",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "Executive Order 14412 defines the leadership, deadline, pilot, critical-infrastructure, and procurement directives."
+    },
+    {
+      "from": "node-federal-pqc-signal",
+      "to": "node-pqc-omb-source",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "OMB M-26-15 defines the agency plan, prioritization, governance, modernization, and vendor-readiness requirements."
+    },
+    {
+      "from": "node-federal-pqc-signal",
+      "to": "node-pqc-technology",
+      "relationship": "Related Technology",
+      "confidence": "Supported",
+      "note": "The federal directives operationalize the NIST-standardized technology through migration planning and deadlines."
+    },
+    {
+      "from": "node-federal-pqc-signal",
+      "to": "node-institution-migration-gap",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "The requirements narrow the evidence gap but do not supply completed agency, vendor, procurement, or system-transition evidence."
     },
     {
       "from": "node-pqc-technology",
@@ -128,17 +180,19 @@
   ],
   "what_this_map_supports": [
     "FTFN can distinguish standards progress from operational migration progress.",
-    "FTFN can show how a standards source, a security signal, a technology profile, and an evidence gap fit together.",
+    "FTFN can show how standards, executive direction, OMB implementation requirements, security signals, a technology profile, and an evidence gap fit together.",
+    "Federal agencies now have a dated leadership, planning, prioritization, modernization, pilot, procurement, and system-transition program.",
     "Post-quantum cryptography can be tracked as infrastructure migration work without numeric scoring."
   ],
   "what_this_map_does_not_prove": [
     "It does not prove that any institution has completed post-quantum migration.",
-    "It does not prove vendor readiness, procurement compliance, cryptographic inventory completeness, or critical-infrastructure execution.",
+    "It does not prove agency plan acceptance, vendor readiness, procurement compliance, cryptographic inventory completeness, migrated systems, or critical-infrastructure execution.",
     "It does not rank quantum risk or create a 42/59 score."
   ],
   "next_records_needed": [
-    "sector-specific PQC migration guidance from an official source.",
-    "procurement or compliance records that require PQC migration planning.",
+    "the first disclosed agency migration plan or progress report.",
+    "proposed and final Federal Acquisition Regulation records and contract clauses.",
+    "NIST pilot results and CISA critical-infrastructure or cryptographic bill-of-materials guidance.",
     "vendor-readiness evidence tied to specific software, hardware, or service categories.",
     "institution-level implementation plans or audit-ready migration milestones."
   ]
