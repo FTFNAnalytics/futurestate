@@ -89,7 +89,7 @@ What is now stable:
 - Phase 49 expanded the source library to 102 records, including broad official catalogs, funding and spending APIs, international statistics, research APIs, patent/IP sources, water and mineral datasets, space licensing, agriculture biotechnology regulation, and Phoenix/MAG local-system data.
 - Phase 50 completed its six-item bounded evidence batch: DOE/Grants.gov, MAG projections, USAspending award DEMS0000003, NSF award 2433348, USGS 2026 gallium, and Toronto application 24 254930.
 - Phase 52A added the validated public update log, three versioned data exports, and the pre-Supabase public/private contract.
-- Phase 52B added a Git-ignored 150-record candidate registry across 15 evidence profiles, completed first-pass triage for 30 candidates, and added validation plus public-build leak assertions.
+- Phase 52B added a Git-ignored 150-record candidate registry across 15 evidence profiles and added validation plus public-build leak assertions. Phase 55A brought the current review state to 44 `Candidate`, one `Rejected`, and 105 `Needs Triage` records.
 - Source Monitor now groups work by review state and exposes a specific next action; Source Coverage now distinguishes Strong, Developing, and Weak lanes with gap-led actions.
 - Phase 51C added named Meta electric-service and TSMC facility milestones, repaired the apprenticeship signal with active cohort counts, and brought the library to 33 signals without forcing missing downstream outcomes.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
@@ -377,16 +377,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 54 release QA plus Phase 52B authority-layer closeout.
+Phase 55A local checkpoint and bounded authority refresh, following Phase 54 release QA and Phase 52B authority-layer closeout.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 local release candidate: package 0.2.0-dev, 114 public sources, 150 private candidates, 33 signals, 17 topics, 7 updates, 210 pages, 9 Published signals, 3 public JSON endpoints, and passed local desktop/mobile release QA on codex/phase51-content.
+v0.2 local release candidate: package 0.2.0-dev, 114 public sources, 150 private candidates, 33 signals, 17 topics, 7 updates, 210 pages, 9 Published signals, 3 public JSON endpoints, and passed local desktop/mobile release QA on codex/phase51-content. The private layer has 45 reviewed records; current Source Coverage is 14 Strong lanes, and Source Monitor has two overdue unassigned records.
 
 Next decision gate:
-Phase 55 repository synchronization and private preview. Verify Git state first: the current branch was six commits ahead of origin/main before this handoff documentation was created, and the remote main branch still represented the older Phase 50B baseline. Review the handoff diff, push and review the current branch only with explicit approval, then deploy the exact reviewed commit to a preview URL and repeat the launch-critical checks. Do not freeze the package, change DNS, or launch publicly in Phase 55. Keep unresolved Phase 51 trails as dated monitors and activate the private Supabase authority loop separately when project access is ready.
+Continue the Phase 55 content-authority pass while the branch remains local and non-public. Verify Git state first and use `35f26f4` as the preserved Phase 52B checkpoint. Prioritize a current Toronto permit-status rail, named Arizona facility evidence, a bounded post-quantum migration or procurement record, and the two overdue unassigned source records. Push, preview, merge, hosting, DNS, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, then proceed with the Phase 55 local preflight. Report before taking the first external action.
 ```

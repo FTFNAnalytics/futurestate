@@ -11,15 +11,15 @@ FTFN is a locally verified static release candidate. The v0.2 content, public tr
 | Product | Working Astro + TypeScript static site |
 | Package | `ftfn-app` `0.2.0-dev` |
 | Current branch | `codex/phase51-content` |
-| Current commit | `8395e94` (`feat: complete phase 54 release qa`) |
+| Preserved Phase 52B checkpoint | `35f26f4` (`feat: complete phase 52b authority layer`) |
 | GitHub remote | `https://github.com/FTFNAnalytics/futurestate.git` |
-| Remote alignment | local HEAD is six commits ahead of `origin/main`; the current branch has not been pushed |
+| Remote alignment | the current branch remains local and unpushed; verify the exact HEAD and ahead count before any external action |
 | Release state | local release candidate; preview deferred |
 | Canonical domain | `https://ftfn.io` |
 | Hosting | no hosting project or preview deployment configured |
 | Public launch | not approved and not performed |
 
-This handoff-document update is uncommitted until it is reviewed and explicitly committed.
+Phase 55A preserves the completed release package locally and continues a bounded authority refresh. It does not authorize a push, preview, DNS change, or public launch.
 
 ## Build Inventory
 
@@ -71,9 +71,9 @@ The editorial and authority layer includes:
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
-- a completed first triage pass on 30 candidates, with 120 retained for later gap-led review,
+- 45 reviewed private candidates: 44 retained as `Candidate`, one rejected, and 105 left for later gap-led review,
 - improved Source Monitor review-state grouping and per-source next actions,
-- Strong, Developing, and Weak Source Coverage summaries with lane-specific next actions.
+- Strong, Developing, and Weak Source Coverage summaries with lane-specific next actions; after the Phase 55A recheck, all 14 public coverage lanes classify as Strong.
 
 The private registry lives in Git-ignored `private-data/` because the current repository is public. No candidate was added to the public source library, exports, or static output. The tracked workflow and promotion gate are documented in `docs/private-source-candidate-registry.md`.
 
@@ -89,6 +89,8 @@ npm.cmd run check              passed
 npm.cmd run build              passed
 npm.cmd run verify:release     passed
 ```
+
+Phase 55A then reran the same command set after refreshing the CISA Cybersecurity Advisories, NIST NVD API, and EIA Grid Monitor source records. The result remained 210 pages, 114 public sources, and 33 signals. Source Monitor now reports two Review Due, 17 Watch Soon, and 95 Current records; both overdue records are unassigned source-maintenance items rather than publication blockers.
 
 Verified results:
 

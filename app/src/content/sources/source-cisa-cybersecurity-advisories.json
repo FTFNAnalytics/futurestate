@@ -10,7 +10,7 @@
   "update_frequency": "Ongoing",
   "capture_priority": "High",
   "known_limitations": "Advisories identify threats, vulnerabilities, mitigations, or guidance, but local impact depends on affected systems, exposure, sector, implementation, and verification.",
-  "last_checked_date": "2026-07-09",
+  "last_checked_date": "2026-07-22",
   "watch_lanes": ["Security and Standards"],
   "live_access_type": "RSS Feed",
   "feed_url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
@@ -20,5 +20,5 @@
   "jurisdiction": "United States federal and global cybersecurity",
   "source_owner": "Cybersecurity and Infrastructure Security Agency",
   "automation_notes": "Monitor advisory feed for new vulnerabilities, mitigation guidance, sector alerts, and exploitation context.",
-  "notes": "Core cybersecurity advisory rail."
+  "notes": "Core cybersecurity advisory rail. Rechecked 2026-07-22: the official advisory index remains active; treat feed availability as a monitoring concern and review each selected advisory's date, identifier, partners, scope, and mitigations before use."
 }

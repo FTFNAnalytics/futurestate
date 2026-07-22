@@ -41,7 +41,7 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after Phase 54:
+Current `0.2.0-dev` state after the Phase 55A local authority refresh:
 
 | Measure | Current Development State |
 | --- | ---: |
@@ -53,7 +53,9 @@ Current `0.2.0-dev` state after Phase 54:
 | Draft Sample signals | 1 |
 | Named local inputs selected in Phases 50-51C | 14 |
 | Private source candidates | 150 local-only records |
-| First-pass candidate triage | 30 complete; 120 remaining |
+| Candidate review | 45 reviewed: 44 Candidate, 1 Rejected; 105 remaining |
+| Source Coverage | 14 Strong; 0 Developing; 0 Weak |
+| Source Monitor | 2 Review Due; 17 Watch Soon; 95 Current |
 
 Existing operating assets:
 
@@ -89,7 +91,7 @@ By v0.2, a reader should be able to answer:
 | Total signals | 25-35 | 33 | target met; new additions require an unusually strong downstream record |
 | Published plus publication-ready | 8-12 | 9 | target met through nine Published records |
 | Active sources | 110-125 | 114 | target met; add only gap-closing sources |
-| Private source candidates | 150 | 150 local-only records | target met; 30 triaged and 120 retained for later gap-led review |
+| Private source candidates | 150 | 150 local-only records | target met; 45 reviewed and 105 retained for later gap-led review |
 | Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | semiconductor service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
 | Public trust surfaces | update log plus Method links | implemented | maintain entries |
 | Public data products | 3 static exports | implemented | maintain field contract |
@@ -252,15 +254,15 @@ Phase 52A pre-Supabase contract status:
 - Phase 51 research is no longer treated as a backend activation dependency,
 - remaining Phase 52 monitor, coverage, and registry work can be implemented through the private backend slice.
 
-Phase 52B closeout status:
+Phase 52B closeout and Phase 55A follow-through status:
 
 - created exactly 150 local-only candidate records across 15 balanced evidence profiles,
-- completed a first-pass triage on 30 candidates and left 120 in `Needs Triage`,
+- completed an initial first-pass triage on 30 candidates, then reviewed 15 more in Phase 55A; the current private registry holds 44 `Candidate`, one `Rejected`, and 105 `Needs Triage` records,
 - added candidate-contract validation and exact duplicate checks against all 114 active public sources,
 - kept the working registry in Git-ignored `private-data/` because the current repository is public,
 - added generated-output leak assertions so candidate IDs and the registry path cannot ship in the static build,
 - reorganized Source Monitor around four review states with a specific next action for every source,
-- added Strong, Developing, and Weak Source Coverage assessments with explicit gap-led actions,
+- added Strong, Developing, and Weak Source Coverage assessments with explicit gap-led actions; the Phase 55A source refresh brought the current summary to 14 Strong, zero Developing, and zero Weak lanes,
 - promoted no candidate and changed no public source or signal counts.
 
 Exit criteria:
@@ -361,20 +363,29 @@ The planned v0.2 local build is complete. The critical path is now repository sy
 
 ## Post-Phase 54 Release Roadmap
 
-### Phase 55: Repository Synchronization And Private Preview - Next
+### Phase 55: Local Preservation, Repository Synchronization, And Private Preview - In Progress
 
-Goal: put the exact verified candidate into a reviewable GitHub and hosting workflow without changing production DNS.
+Goal: preserve the exact verified candidate locally, continue bounded content-authority work while it remains non-public, and move into GitHub or hosting only after a separate explicit approval.
 
 Deliverables:
 
-- review and commit the current handoff documentation,
+- preserve the Phase 52B release and handoff package in a local commit,
+- triage a bounded 15-record private candidate batch and refresh selected active-source anchors,
 - push `codex/phase51-content` to `FTFNAnalytics/futurestate`,
-- review the six committed Phase 52A-54 changes currently ahead of `origin/main`,
+- review the complete local branch against the older `origin/main` baseline,
 - merge through an intentional reviewed path,
 - select a static host using the existing-domain constraint as a real decision input,
 - deploy the exact reviewed commit to a non-production provider preview URL and add access protection if confidentiality is required,
 - rerun the launch-critical route, asset, canonical, robots, sitemap, indexing, update-log, and JSON-export checks,
 - record provider, preview URL, commit SHA, build configuration, and QA result in a Phase 55 work package.
+
+Current stop point:
+
+- local preservation is complete at checkpoint `35f26f4`,
+- the first Phase 55A authority refresh is complete and verified,
+- the branch remains unpushed and no host is connected,
+- the next local content pass should replace the retired Toronto permit-status rail, deepen facility-level Arizona evidence, and select a bounded post-quantum migration or procurement record,
+- GitHub synchronization and any access-protected preview remain deferred pending explicit approval.
 
 Hosting decision rule:
 

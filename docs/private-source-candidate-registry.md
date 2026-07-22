@@ -30,8 +30,10 @@ Because ignored files are not protected by Git history, preserve the working reg
 | Candidate records | 150 |
 | Evidence profiles | 15 |
 | Candidates per profile | 10 |
-| First-pass triaged | 30 |
-| Needs triage | 120 |
+| Reviewed | 45 |
+| Candidate | 44 |
+| Rejected | 1 |
+| Needs triage | 105 |
 | Publicly promoted by this phase | 0 |
 
 The profiles cover cross-cutting official rails, power and grid, compute and chips, water, mobility, security, critical minerals, climate, agriculture, AI and advanced manufacturing, space, discovery data, finance and human futures, Arizona local systems, and Ontario local systems.
@@ -97,4 +99,4 @@ Promotion never moves private notes wholesale into public content. The public so
 
 Review candidates in small, gap-led batches. Prefer five to ten candidates tied to a current evidence gap, local dossier question, stale public source, or weak coverage lane. Do not promote a batch merely to increase the public source count.
 
-The target is a maintained discovery shelf, not 150 automatic additions. Phase 52 therefore holds the active public library at 114 sources while giving later editorial cycles enough structured options to improve authority selectively.
+The target is a maintained discovery shelf, not 150 automatic additions. Phase 52 therefore holds the active public library at 114 sources while giving later editorial cycles enough structured options to improve authority selectively. Phase 55A reviewed 15 additional records without promoting any of them publicly; the detailed triage note remains in Git-ignored `private-data/`.

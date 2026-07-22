@@ -989,6 +989,26 @@ Do not use it for:
 - authorizing automatic candidate promotion,
 - replacing the ongoing private registry workflow.
 
+### Phase 55A Work Package
+
+Purpose:
+
+- Record the local Phase 52B checkpoint and the first post-checkpoint authority refresh.
+- Summarize the bounded 15-record private triage batch without exposing candidate contents.
+- Record the three active-source rechecks, resulting coverage/monitor state, verification evidence, and non-public stop point.
+
+Update when:
+
+- a factual correction is required in the Phase 55A result,
+- the identified Toronto, Arizona, post-quantum, or overdue-source follow-up is completed,
+- an external Phase 55 action is separately approved and recorded in its own work package.
+
+Do not use it for:
+
+- publishing private candidate names or registry contents,
+- authorizing a push, preview deployment, DNS change, or public launch,
+- treating coverage strength as proof that every source is current.
+
 ### v0.1 Build Manifest
 
 Purpose:

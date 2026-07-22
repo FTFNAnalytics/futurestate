@@ -71,4 +71,6 @@ Focused browser checks also passed on Source Monitor and Source Coverage. The co
 
 ## Next Use
 
-Use the registry in small evidence-gap-led review batches after the v0.2 release candidate is preserved. Start with the remaining 120 untriaged records, but prioritize current weak coverage lanes and unresolved Arizona/Ontario dossier questions rather than working numerically from candidate 031 onward.
+Use the registry in small evidence-gap-led review batches after the v0.2 release candidate is preserved. Prioritize weak or time-sensitive evidence lanes and unresolved Arizona/Ontario dossier questions rather than working numerically from candidate 031 onward.
+
+Phase 55A follow-through reviewed 15 additional records after this checkpoint: 44 records are now `Candidate`, one is `Rejected`, and 105 remain `Needs Triage`. Three active source anchors were also refreshed. The current generated Source Coverage summary is 14 Strong, zero Developing, and zero Weak lanes, while Source Monitor still identifies two overdue unassigned records for direct maintenance.

@@ -7,19 +7,19 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 54 release QA plus Phase 52B authority-layer closeout
+Latest completed work: Phase 55A local checkpoint and bounded authority refresh
 Current branch: codex/phase51-content
-Current commit: 8395e94
-Git state before this handoff edit: six commits ahead of origin/main
+Preserved Phase 52B checkpoint: 35f26f4
+Git state: branch remains local and unpushed; verify exact HEAD and ahead count
 Package: 0.2.0-dev
 Build: 210 pages
 Content: 114 sources, 33 signals, 17 topics
 Publication: 9 Published, 23 In Review, 1 Draft Sample
 Trust/data: 7 update entries, 3 versioned JSON exports
-Private authority layer: 150 candidates, 15 profiles, 30 first-pass triaged
+Private authority layer: 150 candidates, 15 profiles, 44 Candidate, 1 Rejected, 105 Needs Triage
 Deployment: none
 Domain: ftfn.io is ready; production DNS is unchanged
-Next phase: Phase 55 - Repository Synchronization And Private Preview
+Next phase: continue Phase 55 content-authority work; external synchronization and preview remain deferred
 ```
 
 ## Read First
@@ -40,10 +40,10 @@ Use this short order:
 The new session should verify rather than assume:
 
 1. Run `git status --short --branch`.
-2. Confirm `git log --oneline --decorate -10` still has `8395e94` in the current history.
+2. Confirm `git log --oneline --decorate -10` still has `35f26f4` in the current history and inspect any newer local Phase 55A commit.
 3. Compare the current branch with `origin/main` and confirm which remote branches exist.
 4. Read the v0.2 manifest and confirm package/count expectations still match the repository.
-5. Review the handoff-document diff before committing it.
+5. Review any current documentation or content diff before committing it.
 6. Run `git diff --check`.
 7. Confirm `private-data/source-candidates.json` remains ignored and run `npm.cmd run validate:candidates` from `app/`.
 8. If app or content files changed after Phase 54, rerun the complete release command set before any preview.
@@ -52,7 +52,7 @@ The new session should verify rather than assume:
 
 Proceed in this order:
 
-1. Review and commit the handoff documentation.
+1. Confirm the Phase 52B checkpoint and Phase 55A authority-refresh commits are present locally.
 2. Authenticate GitHub through a browser or approved credential helper; never paste passwords, tokens, recovery codes, or private keys into chat.
 3. Push `codex/phase51-content` to `FTFNAnalytics/futurestate`.
 4. Review the branch against `main`, then merge through a pull request or another explicit reviewed path.
@@ -115,9 +115,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 54. The current candidate should be 0.2.0-dev on codex/phase51-content at or after commit 8395e94, with 114 sources, 33 signals, nine Published signals, seven public updates, three JSON exports, and 210 pages. The branch was six commits ahead of origin/main before the handoff documentation was created, and no preview or production deployment existed.
+The latest completed work is Phase 55A. The current candidate should be 0.2.0-dev on codex/phase51-content at or after the preserved Phase 52B checkpoint 35f26f4, with 114 sources, 33 signals, nine Published signals, seven public updates, three JSON exports, and 210 pages. The branch remains local and unpushed, and no preview or production deployment exists.
 
-Phase 52B is also complete: the local-only private registry contains exactly 150 candidates across 15 profiles, with 30 first-pass triaged and 120 still needing triage. Confirm it remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate contents into public Git, app content, exports, issues, or build artifacts.
+Phase 52B is complete and Phase 55A reviewed 15 more records: the local-only private registry contains exactly 150 candidates across 15 profiles, with 44 at Candidate, one Rejected, and 105 still needing triage. Confirm it remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Proceed with Phase 55: review the handoff diff, preserve the verified candidate, and prepare repository synchronization plus an unchanged private preview. Report the verified state and proposed external action before pushing, merging, connecting a host, or deploying. Do not change ftfn.io DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if a later domain migration is approved.
+Proceed with the next bounded Phase 55 content pass while keeping the project non-public: replace the retired Toronto active-permits rail, deepen named Arizona facility evidence, and select a bounded post-quantum migration or procurement record. Report before pushing, merging, connecting a host, or deploying. Do not change ftfn.io DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if a later domain migration is approved.
 ```

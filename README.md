@@ -112,6 +112,7 @@ It is a stack of dependencies.
 - [Phase 53 Work Package](docs/work-packages/phase-53-publication-candidate-review.md) - nine-record publication set, current primary-source rechecks, and documented holds for every remaining signal.
 - [Phase 54 Work Package](docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md) - local release gate, header touch-target repair, reproducible assertions, and deferred preview decision.
 - [Phase 52B Work Package](docs/work-packages/phase-52b-private-candidate-registry-and-authority-surfaces.md) - private 150-source candidate shelf plus Source Monitor and Source Coverage completion.
+- [Phase 55A Work Package](docs/work-packages/phase-55a-local-checkpoint-and-authority-refresh.md) - local Phase 52B checkpoint, 15-record private triage batch, three active-source refreshes, and preserved non-public boundary.
 
 ## App Scaffold
 
@@ -242,7 +243,7 @@ Phase 50 completes the first bounded source-item content expansion with six `In 
 
 Phase 52A completes the pre-Supabase public contract. It adds a validated public update/correction log, versioned static JSON exports for sources, topics, and Published signals, and an explicit private-field allowlist. Supabase can now begin as a private Auth/RLS-backed authority-loop backend while Git remains the public publishing source of truth.
 
-Phase 52B finishes the deferred authority-layer work without adding public content. It creates a Git-ignored 150-record candidate registry across 15 evidence profiles, completes first-pass triage for 30 candidates, adds validation and build leak checks, reorganizes Source Monitor around review state and next action, and adds Strong, Developing, and Weak Source Coverage summaries. The active public source count remains 114.
+Phase 52B finishes the deferred authority-layer work without adding public content. It creates a Git-ignored 150-record candidate registry across 15 evidence profiles, completes first-pass triage for 30 candidates, adds validation and build leak checks, reorganizes Source Monitor around review state and next action, and adds Strong, Developing, and Weak Source Coverage summaries. Phase 55A preserves that checkpoint locally, reviews 15 additional candidates, rejects one retired rail, and refreshes three active source records. The active public source count remains 114 and the branch remains unpushed.
 
 Phase 51A deepens both local dossiers with three named records: SRP's 2025 ISP Actions Progress Report, Phoenix Water Services' April 2026 council update, and Toronto's June 2026 decision report for application 24 254930. The batch adds three `In Review` signals, strengthens four evidence gaps, and reaches 105 sources, 25 signals, and 193 pages without treating system planning as site service or a staff recommendation as final approval.
 
