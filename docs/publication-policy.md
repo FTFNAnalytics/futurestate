@@ -223,10 +223,17 @@ Phase 36 visibility rule:
 - Non-published signal and briefing detail pages use `noindex, follow`.
 - The launch sitemap includes only Published signal and briefing detail pages.
 
+Phase 53 second publication-gate result:
+
+- Six bounded records passed current primary-source, copy, citation, caveat, metadata, and correction-path review.
+- The Published set now contains nine signals.
+- Twenty-three signals remain a documented review shelf and one remains a Draft Sample.
+- A public Publication Promotion entry records the decision.
+- Company claims, broad source rails, and unresolved local outcomes remain outside the Published export.
+
 ## Open Questions
 
 - Should `In Review` remain linked from public indexes after public launch, or move behind a clearer research/prelaunch route?
-- Should FTFN add a public update log before launch?
 - Should each record eventually show a short "last materially updated" field?
 - Should source checked dates appear in every card, or only detail pages?
 - Should launch candidates become a schema field later, or remain an editorial document label?

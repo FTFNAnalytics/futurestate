@@ -974,11 +974,12 @@ These are the next practical actions from the current project state.
 265. Create the Phase 51A work package and add three bounded local dossier signals. Status: complete.
 266. Continue Phase 51B with project-specific Arizona service records, Phoenix permitting, Toronto Council/by-law and permit follow-through, and workforce or delivery evidence. Status: complete; added six official records and six `In Review` signals.
 267. Continue Phase 51C only with downstream electric-service or energization, built wastewater and IRWP infrastructure, Phoenix permits and occupancy, workforce outcomes, Toronto City Council and by-laws, and project permit/start/completion evidence. Status: complete; added a named Meta online service project, current TSMC facility milestones, and active apprenticeship cohorts while leaving unsupported lanes open.
-268. Begin Phase 53 publication-candidate review from the 33-signal library. Status: next; target 8 to 12 Published or documented publication-ready records without weakening the evidence gates.
+268. Begin Phase 53 publication-candidate review from the 33-signal library. Status: complete; rechecked the public core, promoted six bounded records, reached nine Published signals, and documented 23 In Review holds plus one Draft Sample without weakening the evidence gates.
+269. Begin Phase 54 v0.2 release QA and preview-gate review. Status: next; verify browser journeys, accessibility, metadata, indexing, update-log and export contracts, then request explicit approval before any preview deployment or public launch action.
 
 ## 10. Current Stage Map
 
-This checkpoint follows the completed Phase 51C downstream-evidence batch and preserves v0.1.1 as a frozen release candidate.
+This checkpoint follows the completed Phase 53 publication review and preserves v0.1.1 as a frozen release candidate.
 
 FTFN is no longer only a concept or documentation project. It now has:
 

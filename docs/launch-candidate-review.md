@@ -146,13 +146,35 @@ Phase 35 also added publication-date visibility to signal detail pages. A `Publi
 - evidence gaps where relevant,
 - original source links.
 
+## Phase 53 Publication Review
+
+Review date: 2026-07-22.
+
+Phase 53 applied the current publication policy to all 33 signal records. The result is a nine-record Published set, a 23-record `In Review` shelf, and one retained `Draft Sample`.
+
+Six records moved from `In Review` to `Published`:
+
+| Record | Decision | Boundary retained |
+| --- | --- | --- |
+| `signal-doe-critical-minerals-materials-accelerator-nofo` | Published | Funding opportunity, not an award or deployment result. |
+| `signal-nsf-ai-materials-institute-award-2433348` | Published | Award and proposed scope, not scientific results or delivered infrastructure. |
+| `signal-usgs-2026-gallium-import-supplied-semiconductor-constraint` | Published | National commodity structure, not a current shortage or facility disruption. |
+| `signal-srp-e67-large-load-service-conditions` | Published | Tariff conditions, not proof of adequate site capacity or a customer agreement. |
+| `signal-srp-huckleberry-meta-mesa-online-service` | Published | One named customer project, not corridor-wide spare capacity or transfer to TSMC. |
+| `signal-toronto-2025-development-pipeline-delivery-gap` | Published | Pipeline potential and stage counts, not guaranteed completions. |
+
+The three earlier Published records also passed a current-source recheck: NOAA's 9 July ENSO discussion, USGS Mineral Commodity Summaries 2026 version 1.3, and NIST's current PQC standards and migration page.
+
+No record moved to `Needs Update` or `Archived`. The remaining records stay in review for specific item, local stage, outcome, live-award, authority, or interested-party evidence reasons. The complete record-by-record matrix is in `docs/work-packages/phase-53-publication-candidate-review.md`.
+
 ## Follow-Up
 
-Phase 36 completed the launch package and static deployment-readiness checklist without deploying.
+Phase 53 completed the second publication gate without deploying.
 
 Current next scope:
 
-- run final desktop and mobile browser QA,
-- inspect `robots.txt`, `sitemap.xml`, and metadata through local or preview routes,
-- decide whether to execute a Cloudflare Pages preview deploy,
+- run Phase 54 desktop and mobile browser and accessibility QA,
+- inspect the nine Published routes, update log, exports, `robots.txt`, `sitemap.xml`, canonical metadata, and noindex routes,
+- prepare the v0.2 launch note and limitations statement,
+- decide whether to execute a preview deploy only after explicit approval,
 - keep production domain attachment, DNS changes, analytics, automation, ingestion, CMS, database migration, scoring, and accounts out of scope unless separately approved.

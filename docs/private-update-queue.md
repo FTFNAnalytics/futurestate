@@ -83,12 +83,12 @@ These items come from the 36-source Phase 49 promotion batch. They should be use
 | --- | --- | --- | --- | --- | --- |
 | uq-021 | Candidate | `source-govinfo-api` | Cross-Cutting Official Rails | Official federal document source item for a policy or standards signal. | Select one collection, package, or document and pair it with agency context before writing a signal. |
 | uq-022 | Signal Draft Created | `source-usaspending-api` | Finance and Human Futures / Compute and Chips | Selected assistance award DEMS0000003 to Talon Nickel (USA) LLC as a funding-to-deployment trail. | Watch transactions and pair the award with site, permit, construction, commissioning, production, and offtake evidence. |
-| uq-023 | Signal Draft Created | `source-grants-gov-api` | Cross-Cutting Official Rails / AI and Advanced Manufacturing | DOE Critical Minerals and Materials Accelerator funding-opportunity signal created in Phase 50. | Watch for DOE selections, USAspending award records, recipient disclosures, and project-site records before making award or deployment claims. |
+| uq-023 | Published | `source-grants-gov-api` | Cross-Cutting Official Rails / AI and Advanced Manufacturing | DOE Critical Minerals and Materials Accelerator funding-opportunity signal published in Phase 53. | Watch for DOE selections, USAspending award records, recipient disclosures, and project-site records before making award or deployment claims. |
 | uq-024 | Candidate | `source-bea-api` | Finance and Human Futures | Economic baseline signal for regional or industry context. | Select one BEA dataset, table, frequency, geography, and release date. |
 | uq-025 | Candidate | `source-fhfa-house-price-index` | Finance and Human Futures / Local Systems | Housing-market price context for local-system dossiers. | Select geography and release table; pair with permits, starts, completions, and servicing evidence. |
 | uq-026 | Candidate | `source-fema-national-risk-index` | Climate / Local Systems | Hazard-risk layer for local-system constraint analysis. | Select county or tract geography and document hazard metrics without treating them as parcel-level risk proof. |
 | uq-027 | Candidate | `source-osti-gov-api` | AI and Advanced Manufacturing / Power and Grid | DOE research-output signal. | Select one DOE-funded record, date, subject, and full-text availability before signal drafting. |
-| uq-028 | Signal Draft Created | `source-nsf-award-search-api` | AI and Advanced Manufacturing / Discovery Technologies | Selected NSF award 2433348 to Cornell University for the AI-Materials Institute. | Watch amendments, portal delivery, published datasets, experiments, results, and reproducibility evidence. |
+| uq-028 | Published | `source-nsf-award-search-api` | AI and Advanced Manufacturing / Discovery Technologies | NSF award 2433348 to Cornell University for the AI-Materials Institute published in Phase 53. | Watch amendments, portal delivery, published datasets, experiments, results, and reproducibility evidence. |
 | uq-029 | Candidate | `source-nasa-techport-api` | Space / Discovery Technologies | NASA technology-project signal. | Select one project record and preserve project status, organization, and technology taxonomy. |
 | uq-030 | Candidate | `source-uspto-patentsview` | Compute and Chips / Critical Minerals | Patent-landscape or IP activity signal. | Select a bounded patent set and label it as invention/disclosure evidence, not deployment proof. |
 | uq-031 | Candidate | `source-bureau-reclamation-rise-api` | Water / Local Systems | Water time-series or site record for western local-system evidence. | Select site, parameter, date range, and local allocation context before using it in a signal. |
@@ -104,7 +104,7 @@ These items come from the 36-source Phase 49 promotion batch. They should be use
 
 | Queue ID | Status | Source | Watch Lane | Candidate Output | Human Next Action |
 | --- | --- | --- | --- | --- | --- |
-| uq-039 | Signal Draft Created | `source-usgs-mineral-commodity-summaries`, `source-usgs-nmic` | Critical Minerals / Compute and Chips | Selected the 2026 gallium material as the first commodity-specific follow-up to the broad MCS baseline. | Watch import-source changes, export licensing, refining projects, wafer-supplier evidence, substitution, recycling, and named facility exposure. |
+| uq-039 | Published | `source-usgs-mineral-commodity-summaries`, `source-usgs-nmic` | Critical Minerals / Compute and Chips | The 2026 gallium material published in Phase 53 as the first commodity-specific follow-up to the broad MCS baseline. | Watch import-source changes, export licensing, refining projects, wafer-supplier evidence, substitution, recycling, and named facility exposure. |
 
 ## Batch 04: Phase 51 Named Local Dossier Records
 
@@ -113,18 +113,18 @@ These items come from the 36-source Phase 49 promotion batch. They should be use
 | uq-040 | Signal Draft Created | `source-srp-2025-isp-actions-progress-report` | Power and Grid / Local Systems | Added a named SRP resource, distribution, siting, and transmission implementation signal. | Select a customer- or project-specific service, tariff, load, or interconnection record before making site-level capacity claims. |
 | uq-041 | Signal Draft Created | `source-phoenix-2026-water-security-council-update` | Water / Local Systems | Added the first named Phoenix provider-level water signal. | Select an industrial service, facility-demand, discharge, reuse, or infrastructure record before making facility-level water claims. |
 | uq-042 | Signal Draft Created | `source-toronto-24-254930-june-2026-decision-report` | Local Systems / Finance and Human Futures | Added a staff recommendation and application-stage servicing-review signal for Toronto application 24 254930. | Track the Council item history, enacted by-laws, land and laneway conditions, building permit, start, completion, and occupancy. |
-| uq-043 | Signal Draft Created | `source-srp-e67-large-load-price-plan-2025` | Power and Grid / Local Systems | Added the first named SRP large-load tariff signal, including forecast, minimum-billing, maximum-load, service-agreement, and possible customer-funded infrastructure conditions. | Select a named customer service agreement, facilities charge, interconnection, construction, energization, or project-load record. |
+| uq-043 | Published | `source-srp-e67-large-load-price-plan-2025` | Power and Grid / Local Systems | The first named SRP large-load tariff signal published in Phase 53 with its capacity and customer-agreement boundaries intact. | Select a named customer service agreement, facilities charge, interconnection, construction, energization, or project-load record. |
 | uq-044 | Signal Draft Created | `source-phoenix-tsmc-2026-wastewater-development-agreement` | Water / Local Systems | Added a project-specific TSMC wastewater-conveyance and reclaimed-water milestone signal. | Track execution, construction and acceptance of the improvements, the June 30, 2028 IRWP deadline, measured reuse, and a facility water balance. |
 | uq-045 | Signal Draft Created | `source-phoenix-north-3500-pud-2026` | Local Systems / Compute and Chips | Added the adopted and amended PUD planning envelope for the TSMC campus area. | Select named site, civil, grading, or building permits, inspections, and certificates of occupancy. |
 | uq-046 | Signal Draft Created | `source-aca-tsmc-registered-technician-apprenticeship-2024` | Compute and Chips / Finance and Human Futures | Added a facility-linked technician apprenticeship with named pathways, partners, funding, and a 2025 recruitment target. | Add enrollment, completion, credential, retention, placement, construction-labor, and supplier-workforce evidence. |
 | uq-047 | Needs Source Recheck | `source-toronto-2026-sc33-9-item-history` | Local Systems / Finance and Human Futures | Added Scarborough Community Council's July 9, 2026 recommendation for application 24 254930; no later Council decision was available on July 22. | Recheck immediately after the July 29-31, 2026 City Council meeting for adoption, enacted by-laws, land conditions, and the first building permit. |
-| uq-048 | Signal Draft Created | `source-toronto-development-pipeline-2025` | Local Systems / Finance and Human Futures | Added Toronto's citywide planning-to-permit-to-construction delivery baseline. | Track stage conversion, completions, cancellations, financing conditions, and the named project's downstream records. |
+| uq-048 | Published | `source-toronto-development-pipeline-2025` | Local Systems / Finance and Human Futures | Toronto's citywide planning-to-permit-to-construction delivery baseline published in Phase 53. | Track stage conversion, completions, cancellations, financing conditions, and the named project's downstream records. |
 
 ## Batch 05: Phase 51C Downstream Service And Facility Evidence
 
 | Queue ID | Status | Source | Watch Lane | Candidate Output | Human Next Action |
 | --- | --- | --- | --- | --- | --- |
-| uq-049 | Signal Draft Created | `source-srp-project-huckleberry-meta-mesa-online` | Power and Grid / Local Systems | Added a named Meta Mesa Data Center service signal with initial 69 kV service, a May 2024 230 kV in-service milestone, customer-funded infrastructure, and an online project state. | Track disclosed load, executed service or facilities agreements, tariff treatment, operating consumption, and a comparable semiconductor-customer service record. |
+| uq-049 | Published | `source-srp-project-huckleberry-meta-mesa-online` | Power and Grid / Local Systems | The named Meta Mesa Data Center service signal published in Phase 53 as a bounded single-project conversion record. | Track disclosed load, executed service or facilities agreements, tariff treatment, operating consumption, and a comparable semiconductor-customer service record. |
 | uq-050 | Signal Draft Created | `source-phoenix-tsmc-july-2026-fab-update` | Compute and Chips / Local Systems | Added a company-claim-labeled signal for Fab 1 volume production, Fab 2 construction completion, and more than 3,500 current employees. | Track named permits and occupancy, audited or regulatory production evidence, Fab 2 commissioning, occupation mix, and utility or water records. |
 | uq-051 | Signal Repaired | `source-phoenix-2025-semiconductor-apprenticeship-agenda` | Compute and Chips / Finance and Human Futures | Repaired the TSMC apprenticeship signal with an eight-person first cohort and a 46-person second cohort. | Track completion, credentials, retention, placement, wages, and later program reports; do not treat active cohorts as completed outcomes. |
 
@@ -224,6 +224,19 @@ Moved downstream evidence into content:
 Next queue step:
 
 Move into Phase 53 publication-candidate review. Keep `uq-044`, `uq-045`, `uq-047`, and `uq-051` as dated monitors for reclaimed-water infrastructure, permits and occupancy, Toronto Council and by-laws, and apprenticeship outcomes.
+
+## Phase 53 Progress
+
+Moved through the publication gate:
+
+- `uq-023`, `uq-028`, `uq-039`, `uq-043`, `uq-048`, and `uq-049` are now Published,
+- the exact current sources were rechecked before promotion,
+- every remaining queue-derived signal retains its documented evidence or timing hold,
+- no company-claim, broad source-rail, or unresolved local-outcome record was promoted to meet the count.
+
+Next queue step:
+
+Proceed to Phase 54 release QA. Keep `uq-044`, `uq-045`, `uq-047`, and `uq-051` as dated monitors and recheck `uq-047` after the July 29-31, 2026 Toronto City Council meeting.
 
 ## Operating Rule
 

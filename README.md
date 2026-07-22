@@ -103,6 +103,7 @@ It is a stack of dependencies.
 - [Phase 51A Work Package](docs/work-packages/phase-51a-named-utility-water-and-servicing-records.md) - named SRP utility, Phoenix provider-water, and Toronto staff-recommendation/servicing records.
 - [Phase 51B Work Package](docs/work-packages/phase-51b-service-permitting-workforce-and-delivery-records.md) - large-load service, industrial wastewater, Phoenix planning, workforce, Toronto committee, and delivery-stage records.
 - [Phase 51C Work Package](docs/work-packages/phase-51c-downstream-service-and-facility-evidence.md) - named Meta electric service, current TSMC fab milestones, and active apprenticeship-cohort evidence.
+- [Phase 53 Work Package](docs/work-packages/phase-53-publication-candidate-review.md) - nine-record publication set, current primary-source rechecks, and documented holds for every remaining signal.
 
 ## App Scaffold
 
@@ -119,7 +120,7 @@ npm run check
 npm run build
 ```
 
-The current `0.2.0-dev` build generates 210 static pages and three versioned JSON data endpoints.
+The current `0.2.0-dev` build generates 210 static pages and three versioned JSON data endpoints. Nine signals are Published, 23 remain In Review, and one remains a Draft Sample.
 
 The homepage now uses real seed records for signals, topics, sources, local systems, and briefings while preserving the 42/59 framing and dependency-stack thesis.
 
@@ -225,7 +226,9 @@ Phase 51B completes the next local conversion layer with six official records: S
 
 Phase 51C adds the first named online electric-service project to the Southwest dossier, records current TSMC fab and employment claims from a City source, and repairs the apprenticeship signal with active cohort counts. The batch adds three sources and two `In Review` signals, reaches 114 sources, 33 signals, six update entries, and 210 pages, and deliberately leaves wastewater operation, permits and occupancy, apprenticeship outcomes, and Toronto enactment unresolved.
 
-The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Local desktop/mobile and indexing QA passed with no release blocker; preview deployment remains unapproved and has not been created. Current work runs as `0.2.0-dev` on `codex/phase51-content`: 114 sources, 33 signals, 17 topics, six public update entries, 210 pages, and three versioned data exports. Phase 53 publication-candidate review is next; the unresolved Phase 51 trails remain dated monitors while Supabase activation proceeds separately.
+Phase 53 applies the publication gate to the complete 33-signal library. Six bounded official or primary-source records move to `Published`, bringing the public set to nine signals; 23 signals remain documented holds and the company-claim sample remains a Draft Sample. The seventh public update entry records the promotion batch.
+
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Local desktop/mobile and indexing QA passed with no release blocker; preview deployment remains unapproved and has not been created. Current work runs as `0.2.0-dev` on `codex/phase51-content`: 114 sources, 33 signals, 17 topics, seven public update entries, 210 pages, and three versioned data exports. Phase 54 release QA and preview-gate work is next; the unresolved Phase 51 trails remain dated monitors while Supabase activation proceeds separately.
 
 ## Working Rule
 

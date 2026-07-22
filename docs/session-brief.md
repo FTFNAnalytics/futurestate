@@ -63,7 +63,7 @@ App routes currently include:
 - generated source monitor,
 - about page.
 
-## Checkpoint Assessment After Phase 51C
+## Checkpoint Assessment After Phase 53
 
 FTFN has moved from concept and documentation into a functioning static-first MVP scaffold.
 
@@ -90,13 +90,14 @@ What is now stable:
 - Phase 50 completed its six-item bounded evidence batch: DOE/Grants.gov, MAG projections, USAspending award DEMS0000003, NSF award 2433348, USGS 2026 gallium, and Toronto application 24 254930.
 - Phase 52A added the validated public update log, three versioned data exports, and the pre-Supabase public/private contract.
 - Phase 51C added named Meta electric-service and TSMC facility milestones, repaired the apprenticeship signal with active cohort counts, and brought the library to 33 signals without forcing missing downstream outcomes.
+- Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
 - Frozen v0.1.1 desktop/mobile and indexing QA passed locally; no preview deployment was created.
 
 What is still prelaunch scaffolding:
 
-- Three signal records are `Published`.
-- Twenty-nine signal records are still `In Review`; one remains `Draft Sample`.
+- Nine signal records are `Published`.
+- Twenty-three signal records are still `In Review`; one remains `Draft Sample`.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -106,7 +107,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should now use the generated Source Monitor, Source Coverage matrix, signals roadmap, authority red-team plan, authoritative live source plan, source broadening plan, private update queue, and signal repair workflow together. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phase 52A made the public data contract explicit; and Phases 51A-51C built named local evidence trails through planning, service frameworks, infrastructure agreements, project service, facility delivery, and active workforce cohorts. The next content step is Phase 53 publication-candidate review, not another general source expansion. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should now use the generated Source Monitor, Source Coverage matrix, signals roadmap, authority red-team plan, authoritative live source plan, source broadening plan, private update queue, and signal repair workflow together. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phase 52A made the public data contract explicit; Phases 51A-51C built named local evidence trails; and Phase 53 produced a nine-record Published set. The next step is Phase 54 release QA and preview-gate review. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -121,15 +122,21 @@ Current seed content includes:
 - 1 briefing in review,
 - 10 evidence gap records,
 - 2 dependency maps in review,
-- 6 public update-log entries.
+- 7 public update-log entries.
 
-Three official-source-backed signals are now `Published`:
+Nine official-source-backed signals are now `Published`:
 
 - ENSO outlook signal,
 - USGS mineral commodity signal,
-- NIST post-quantum cryptography signal.
+- NIST post-quantum cryptography signal,
+- DOE Critical Minerals and Materials Accelerator funding-opportunity signal,
+- NSF AI-Materials Institute award signal,
+- USGS 2026 gallium import-supplied semiconductor-constraint signal,
+- SRP E-67 large-load service-conditions signal,
+- SRP Project Huckleberry named Meta online-service signal,
+- Toronto 2025 Development Pipeline delivery-gap signal.
 
-Twenty-nine official-source-backed, official-analysis-backed, or explicitly company-claim-labeled signals are `In Review`:
+Twenty-three official-source-backed, official-analysis-backed, or explicitly company-claim-labeled signals are `In Review`:
 
 - CHIPS program signal,
 - FAA advanced air mobility signal,
@@ -146,26 +153,20 @@ Twenty-nine official-source-backed, official-analysis-backed, or explicitly comp
 - SRP 2025 system-plan implementation signal,
 - Phoenix 2026 provider-level water signal,
 - Toronto application 24 254930 staff-recommendation and servicing-review signal,
-- DOE Critical Minerals and Materials Accelerator funding-opportunity signal,
 - MAG 2023 projections Phoenix-region local-dossier signal,
 - USAspending Talon Nickel award signal,
-- NSF AI-Materials Institute award signal,
-- USGS 2026 gallium import-supplied semiconductor-constraint signal,
-- Toronto application 24 254930 named planning-record signal.
-- SRP E-67 large-load service-conditions signal,
+- Toronto application 24 254930 named planning-record signal,
 - TSMC Phoenix wastewater-infrastructure agreement signal,
 - Phoenix Z-37-20-1 TSMC-campus planning-envelope signal,
 - TSMC Arizona registered-apprenticeship pipeline signal,
 - Toronto application 24 254930 community-council recommendation signal,
-- Toronto 2025 Development Pipeline delivery-gap signal,
-- SRP Project Huckleberry named Meta online-service signal,
 - Phoenix TSMC Fab 1 production and Fab 2 construction-completion signal.
 
 One remaining signal record is still `Draft Sample`:
 
 - Joby/eVTOL company-claim example.
 
-No local constraint records, briefings, dependency maps, company-claim records, or draft samples should be treated as `Published`.
+No local system profile, briefing, dependency map, company-claim record, or draft sample should be treated as `Published`. Project Huckleberry is Published only as a bounded single-project conversion record, not as a local-system readiness conclusion.
 
 The current briefing is `Stack Watch 001: Local constraints are where the future arrives`. It is `In Review` and uses reviewed signals, but it should not be treated as a published report.
 
@@ -213,7 +214,7 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 51C: Downstream Service And Facility Evidence
+Phase 53: Publication Candidate Review
 ```
 
 Key files:
@@ -223,6 +224,7 @@ Key files:
 - `docs/work-packages/phase-51a-named-utility-water-and-servicing-records.md`
 - `docs/work-packages/phase-51b-service-permitting-workforce-and-delivery-records.md`
 - `docs/work-packages/phase-51c-downstream-service-and-facility-evidence.md`
+- `docs/work-packages/phase-53-publication-candidate-review.md`
 - `docs/source-broadening-and-intake-plan.md`
 - `docs/private-update-queue.md`
 - `docs/signal-repair-workflow.md`
@@ -273,19 +275,19 @@ Key files:
 Next active content phase identified in the roadmap:
 
 ```text
-Phase 53: Publication Candidate Review
+Phase 54: v0.2 Release QA And Preview Gate
 ```
 
 Expected focus:
 
-- review the strongest current `In Review` records against source currency, specificity, evidence limits, and citation integrity,
-- build a balanced set of 8 to 12 Published or documented publication-ready records,
-- keep broad source rails, company-claim records, and local records with unresolved readiness gates out of Published,
-- move weak or stale records to `Needs Update`, `Archived`, or a clearly documented hold,
+- run content, source-health, Astro, production-build, and desktop/mobile reader-journey QA,
+- verify the nine Published routes, update log, data exports, robots, sitemap, canonical, and noindex boundaries,
+- enlarge compact mobile-header touch targets during the v0.2 polish pass,
+- prepare a concise v0.2 launch note and limitations statement,
 - keep the Phase 51 wastewater, permit, workforce-outcome, Toronto Council, by-law, start, completion, and occupancy trails as dated monitors,
 - keep Git and the static build as the public publication gate,
 - activate the private Supabase authority loop separately when project access is ready,
-- do not add automated publishing, attach `ftfn.io`, change DNS, or publicly launch without explicit approval.
+- do not deploy a preview, attach `ftfn.io`, change DNS, or publicly launch without explicit approval.
 
 ## Most Important Documents
 
@@ -352,16 +354,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed phase:
-Phase 51C: Downstream Service And Facility Evidence.
+Phase 53: Publication Candidate Review.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 development: package 0.2.0-dev, 114 sources, 33 signals, 17 topics, 6 updates, 210 pages, and 3 public JSON endpoints on codex/phase51-content.
+v0.2 development: package 0.2.0-dev, 114 sources, 33 signals, 17 topics, 7 updates, 210 pages, 9 Published signals, and 3 public JSON endpoints on codex/phase51-content.
 
 Next roadmap phase:
-Begin Phase 53 publication-candidate review. Use the strongest current In Review records, keep unresolved Phase 51 trails as dated monitors, and activate the private Supabase authority loop in parallel when project access is ready.
+Begin Phase 54 release QA and preview-gate review. Verify the complete public authority loop, keep unresolved Phase 51 trails as dated monitors, and activate the private Supabase authority loop in parallel when project access is ready.
 
 Please confirm the current state from the docs, then generate the next phase prompt before implementing.
 ```

@@ -842,6 +842,28 @@ Do not use it for:
 - treating active cohorts as completed outcomes,
 - claiming an unresolved downstream gate was completed because no new record was found.
 
+### Phase 53 Work Package
+
+Purpose:
+
+- Record the full-library publication review and the six records promoted on 2026-07-22.
+- Preserve the evidence boundary attached to every promotion and hold.
+- Track the nine-record Published mix, current primary-source checks, public update entry, export membership, and indexing results.
+
+Update when:
+
+- a Published source changes materially,
+- a documented hold clears or becomes stale,
+- a record moves to `Needs Update` or `Archived`,
+- Phase 54 finds a publication, export, robots, sitemap, canonical, accessibility, or browser issue.
+
+Do not use it for:
+
+- treating a count target as publication approval,
+- promoting company claims or unresolved local outcomes,
+- replacing the publication policy or correction path,
+- authorizing preview deployment, DNS, or public launch.
+
 ### v0.1 Build Manifest
 
 Purpose:

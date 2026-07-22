@@ -1942,3 +1942,26 @@ Implemented:
 Boundary:
 
 Project Huckleberry does not prove TSMC or corridor-wide capacity. The Phoenix release remains company-claim evidence rather than audited production, permit, or occupancy proof. Active apprenticeship cohorts are not completion or retention outcomes. Missing downstream records remain monitors and do not become negative findings about whether work occurred.
+
+## 2026-07-22: Phase 53 Publishes A Nine-Record Evidence Mix
+
+Decision:
+
+FTFN will publish six additional records that pass the current source, copy, citation, caveat, metadata, indexing, and correction-path gate. It will stop at nine Published records rather than use weaker or broader records to fill the upper end of the 8-to-12 target.
+
+Rationale:
+
+The selected records create a balanced public set across periodic data, standards and tariff action, funding and research, and one named local conversion record. Each source proves a bounded fact pattern, and each signal states what the evidence does not prove. The remaining records still need an item-specific event, a live transaction recheck, a downstream local stage, outcome evidence, or independent support for a company claim.
+
+Implemented:
+
+- rechecked NOAA ENSO, USGS MCS 2026, and NIST PQC as the existing public core,
+- promoted the DOE critical-minerals NOFO, NSF award 2433348, USGS gallium, SRP E-67, SRP Project Huckleberry, and Toronto 2025 Development Pipeline signals,
+- set publication dates and added Phase 53 review notes,
+- documented all 23 In Review holds and retained the Joby Draft Sample,
+- added the seventh public update-log entry,
+- moved the default next step to Phase 54 release QA and preview-gate review.
+
+Boundary:
+
+Funding is not an award or result. An award is not a delivered research outcome. National commodity data is not a named-facility shortage. A tariff is not customer capacity. One online service project is not corridor readiness. A municipal development pipeline is not guaranteed completed housing. Preview deployment, DNS, and public launch still require explicit approval.

@@ -37,15 +37,15 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after Phase 51C:
+Current `0.2.0-dev` state after Phase 53:
 
 | Measure | Current Development State |
 | --- | ---: |
 | Static pages | 210 |
 | Active sources | 114 |
 | Signals | 33 |
-| Published signals | 3 |
-| In Review signals | 29 |
+| Published signals | 9 |
+| In Review signals | 23 |
 | Draft Sample signals | 1 |
 | Named local inputs selected in Phases 50-51C | 14 |
 
@@ -62,7 +62,7 @@ Existing operating assets:
 - versioned static source, topic, and Published-signal exports,
 - robots, sitemap, canonical, and indexing boundaries.
 
-The source-count floor for v0.2 has been reached. The bottleneck is now bounded evidence conversion, dated signal depth, named local records, and publication review.
+The source-count and publication-set targets for v0.2 have been reached. The remaining release bottleneck is Phase 54 browser, accessibility, metadata, indexing, export, and preview-gate QA.
 
 ## v0.2 Product Promise
 
@@ -81,7 +81,7 @@ By v0.2, a reader should be able to answer:
 | Area | v0.2 Target | Current | Remaining |
 | --- | ---: | ---: | ---: |
 | Total signals | 25-35 | 33 | target met; new additions require an unusually strong downstream record |
-| Published plus publication-ready | 8-12 | 3 | +5 to +9 reviewed candidates |
+| Published plus publication-ready | 8-12 | 9 | target met through nine Published records |
 | Active sources | 110-125 | 114 | target met; add only gap-closing sources |
 | Private source candidates | 150-250 | not yet scaffolded | create registry and triage first batch |
 | Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | semiconductor service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
@@ -284,6 +284,14 @@ Exit criteria:
 - no broad source frame is promoted as a current event,
 - stale or weak records move to `Needs Update`, `Archived`, or remain clearly in review.
 
+Phase 53 status: complete.
+
+- rechecked all three existing Published records and every current publication candidate,
+- promoted six bounded records across periodic data, standards/tariff action, funding/research, and one named local conversion record,
+- reached nine Published, 23 In Review, and one Draft Sample,
+- documented every hold without forcing a weak, stale, broad, local-readiness, or company claim into the public set,
+- added the seventh public update-log entry and kept Git as the public publication gate.
+
 ### Phase 54: v0.2 Release QA And Preview Gate
 
 Timeline: 2 to 4 focused days.
@@ -316,10 +324,10 @@ Recommended active schedule:
 | Completed | Phase 50B | six bounded additions; award, research, commodity, and local selections |
 | Week 2 | Phase 51 | named Arizona and Ontario evidence trails; 25+ total signals |
 | Week 3 | Phase 52 | update log, static exports, source candidate registry |
-| Week 4 | Phase 53 | 8-12 Published or publication-ready candidates |
-| Week 5 | Phase 54 and buffer | browser QA, preview verification, repairs, release decision |
+| Completed | Phase 53 | nine Published records and a documented 23-record review shelf |
+| Next | Phase 54 and buffer | browser QA, preview verification, repairs, release decision |
 
-Expected remaining duration after Phase 50B: about 3 to 4 focused weeks.
+Expected remaining active release work after Phase 53: about 2 to 4 focused days, excluding an optional preview deployment or Supabase activation.
 
 A 2-to-3-week narrower candidate is possible by holding the active source library near 110, limiting local work to the strongest named records, and deferring nonessential Source Monitor UX refinements. The publication and evidence gates should not be shortened.
 
@@ -355,4 +363,4 @@ v0.2 is successful when:
 
 ## Immediate Next Step
 
-Begin Phase 53 publication-candidate review while Supabase access is pending. Review the strongest current `In Review` records for source currency, claim specificity, evidence limits, citation integrity, and indexing status. Keep the unresolved Phase 51 trails as dated monitors, keep Git as the public publishing source of truth, and do not promote a local or company-claim record merely to meet the publication target.
+Begin Phase 54 release QA and preview-gate review. Run all content, source-health, Astro, and production-build checks; test desktop and mobile reader journeys; verify the nine Published routes, update log, exports, robots, sitemap, canonical, and noindex boundaries; and prepare the v0.2 launch note and limitations statement. Keep preview deployment, DNS, and public launch behind explicit approval.

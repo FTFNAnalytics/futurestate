@@ -111,6 +111,29 @@ The next signal additions to the launch set should prioritize:
 3. StatCan and CMHC permits-versus-delivery signal, once tied to a specific monthly release, geography, or municipal comparison.
 4. Additional official-source launch signals from underdeveloped pillars if they can pass the publication gate.
 
+## Phase 53 Publication Review
+
+Phase 53 reviewed the complete 33-signal library on 2026-07-22.
+
+Current publication state:
+
+```text
+9 Published
+23 In Review
+1 Draft Sample
+```
+
+Promoted in Phase 53:
+
+- DOE Critical Minerals and Materials Accelerator funding opportunity,
+- NSF award 2433348 for the AI-Materials Institute,
+- USGS 2026 gallium supply-structure record,
+- SRP E-67 large-load service conditions,
+- SRP Project Huckleberry named Meta online-service record,
+- Toronto's 2025 Development Pipeline delivery-gap baseline.
+
+The full review matrix and hold reasons are recorded in `docs/work-packages/phase-53-publication-candidate-review.md`. No broad source frame, company-claim record, or unresolved local outcome was promoted. No record required `Needs Update` or `Archived` on the review date.
+
 ## Publication Boundary
 
 Before any additional record becomes `Published`, FTFN still needs:
@@ -126,11 +149,11 @@ Phase 35 added visible publication dates to signal detail pages and created `doc
 
 ## Next Work
 
-Phase 36 should prepare a launch package and static deployment-readiness path:
+Phase 54 should verify the complete v0.2 release candidate:
 
-- create a launch checklist,
-- decide the static hosting path for `ftfn.io`,
-- add sitemap and robots support if small,
-- verify generated public routes and metadata,
-- decide whether public indexes should default to `Published` after launch,
-- avoid automation, ingestion, scoring, CMS, graph libraries, and database migration.
+- run content, source-health, Astro, and production-build checks,
+- run desktop and mobile browser and accessibility QA,
+- verify Published and noindex boundaries across routes, sitemap, robots, and canonical metadata,
+- verify the update log and all three static exports,
+- prepare the v0.2 launch note and limitations statement,
+- keep preview deployment, DNS, and public launch behind explicit approval.
