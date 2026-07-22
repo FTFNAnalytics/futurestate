@@ -1,6 +1,6 @@
 # FTFN v0.2 Roadmap
 
-Date: 2026-07-21
+Date: 2026-07-22
 
 v0.2 is the first authority-loop build: a release that proves FTFN can maintain a current, source-led analytical resource through repeatable human review.
 
@@ -58,6 +58,8 @@ Existing operating assets:
 - publication policy and Method page,
 - two local-system constraint maps,
 - two qualitative dependency maps,
+- a schema-backed public update log,
+- versioned static source, topic, and Published-signal exports,
 - robots, sitemap, canonical, and indexing boundaries.
 
 The source-count floor for v0.2 has been reached. The bottleneck is now bounded evidence conversion, dated signal depth, named local records, and publication review.
@@ -199,14 +201,22 @@ Goal: make FTFN visibly maintainable and useful beyond individual articles.
 
 Deliverables:
 
-- add a public update/correction log,
-- link it from Method and the global footer,
-- define correction, source refresh, signal repair, publication promotion, and archive entries,
-- add static JSON exports for public sources, topics, and signals,
-- document export fields and update cadence,
+- [x] add a public update/correction log,
+- [x] link it from Method and the global footer,
+- [x] define correction, source refresh, signal repair, publication promotion, and archive entries,
+- [x] add static JSON exports for public sources, topics, and Published signals,
+- [x] document export fields and update cadence,
 - improve Source Monitor grouping around watch lane, review state, and next action,
 - improve Source Coverage summaries for strong and weak lanes,
 - create the private 150-to-250 source-candidate registry without promoting all candidates publicly.
+
+Phase 52A pre-Supabase contract status:
+
+- the public trust and data contract is implemented on `codex/pre-supabase-contracts`,
+- update-log record references now pass the content validation gate,
+- the public/private export boundary is explicit and versioned,
+- Phase 51 research is no longer treated as a backend activation dependency,
+- remaining Phase 52 monitor, coverage, and registry work can be implemented through the private backend slice.
 
 Exit criteria:
 
@@ -317,4 +327,4 @@ v0.2 is successful when:
 
 ## Immediate Next Step
 
-Begin Phase 51. Select a named Arizona utility filing, a provider-level Arizona water record, and the next decision, servicing, or permit-status record for Toronto application 24 254930. Use those records to deepen the two local dossiers across power, water, permitting, workforce, servicing, and completion constraints. Keep new records `In Review` and preserve project-level evidence limits.
+Review and merge Phase 52A, then create a hosted Supabase development project. Implement only the private authority-loop foundation: Auth/RLS plus `profiles`, `source_candidates`, `source_snapshots`, `review_items`, `editorial_events`, and `probe_configs`. Keep Git as the public publishing source of truth. Continue Phase 51 named-record research in parallel rather than delaying backend learning until every dossier is complete.

@@ -290,6 +290,14 @@ const localSystemType = z.enum([
   "Infrastructure System"
 ]);
 
+const updateEntryType = z.enum([
+  "Correction",
+  "Source Refresh",
+  "Signal Repair",
+  "Publication Promotion",
+  "Archive"
+]);
+
 const requiredStrings = z.array(z.string()).min(1);
 const requiredFrameworkLayers = z.array(frameworkLayer).min(1);
 const requiredTopics = z.array(topicPillar).min(1);
@@ -512,6 +520,21 @@ const dependencyMaps = defineCollection({
   })
 });
 
+const updates = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/updates" }),
+  schema: z.object({
+    id: z.string(),
+    effective_date: z.coerce.date(),
+    entry_type: updateEntryType,
+    title: z.string(),
+    summary: z.string(),
+    affected_record_ids: requiredStrings,
+    related_paths: z.array(z.string()).default([]),
+    evidence_note: z.string(),
+    work_package: z.string().optional()
+  })
+});
+
 export const collections = {
   signals,
   sources,
@@ -521,5 +544,6 @@ export const collections = {
   localSystems,
   briefings,
   evidenceGaps,
-  dependencyMaps
+  dependencyMaps,
+  updates
 };

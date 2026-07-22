@@ -876,3 +876,31 @@ Use these rules when updating docs:
 - Run `npm run validate:content` before broad content expansion or after changing relationship fields.
 
 When in doubt, add a short note to the decision log and link the deeper document.
+
+## Backend And Public Data Contracts
+
+### Public Data Exports
+
+Purpose:
+
+- Define the versioned public JSON contract for sources, topics, and Published signals.
+- Record the field allowlist, private-field exclusions, cadence, and versioning rule.
+
+Update when:
+
+- An exported field or dataset changes.
+- Signal export scope changes.
+- Supabase becomes the public data source.
+
+### Supabase Activation Plan
+
+Purpose:
+
+- Define the minimum activation gate and first private backend slice.
+- Keep Auth, RLS, secrets, review workflow, and publication boundaries explicit.
+
+Update when:
+
+- The development project is created.
+- The first migration changes.
+- Public content starts reading from Supabase.

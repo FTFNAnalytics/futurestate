@@ -227,6 +227,7 @@ const organizations = readJsonCollection("organizations");
 const technologies = readJsonCollection("technologies");
 const evidenceGaps = readJsonCollection("evidence-gaps");
 const dependencyMaps = readJsonCollection("dependency-maps");
+const updates = readJsonCollection("updates");
 const signals = readMdxCollection("signals");
 const localSystems = readMdxCollection("local-systems");
 const briefings = readMdxCollection("briefings");
@@ -239,7 +240,20 @@ const evidenceGapIds = indexBy(evidenceGaps, "id");
 const signalIds = indexBy(signals, "id");
 const localSystemIds = indexBy(localSystems, "id");
 const briefingIds = indexBy(briefings, "id");
-indexBy(dependencyMaps, "id");
+const dependencyMapIds = indexBy(dependencyMaps, "id");
+indexBy(updates, "id");
+
+const allPublicRecordIds = new Map([
+  ...sourceIds,
+  ...topicIds,
+  ...organizationIds,
+  ...technologyIds,
+  ...evidenceGapIds,
+  ...signalIds,
+  ...localSystemIds,
+  ...briefingIds,
+  ...dependencyMapIds
+]);
 
 const localSystemNames = new Set(localSystems.map((record) => record.data.name).filter(Boolean));
 const dependencyMapNodeIndexes = new Map([
@@ -320,6 +334,10 @@ for (const record of dependencyMaps) {
   requireDependencyMapLinks(record);
 }
 
+for (const record of updates) {
+  requireReferences(record, "affected_record_ids", allPublicRecordIds, "public record");
+}
+
 if (topicIds.size === 0 || organizationIds.size === 0 || technologyIds.size === 0 || briefingIds.size === 0) {
   notices.push("One or more reference collections are empty. This is allowed only during early scaffolding.");
 }
@@ -345,7 +363,8 @@ console.log(
     `${localSystems.length} local systems`,
     `${briefings.length} briefings`,
     `${evidenceGaps.length} evidence gaps`,
-    `${dependencyMaps.length} dependency maps`
+    `${dependencyMaps.length} dependency maps`,
+    `${updates.length} updates`
   ].join(", ")
 );
 

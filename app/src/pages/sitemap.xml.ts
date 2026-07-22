@@ -52,6 +52,7 @@ export const GET: APIRoute = async () => {
     "/atlas/dependency-maps/",
     "/briefings/",
     "/method/",
+    "/updates/",
     "/about/"
   ];
 

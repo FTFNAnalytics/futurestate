@@ -1153,11 +1153,11 @@ Next candidate work:
 - Select the next named local records: utility dockets, water-provider records, municipal servicing records, permitting records, workforce sources, completion records, and facility-level evidence.
 - Prioritize Phase 51 named Arizona power/water and Ontario decision/servicing/permit/completion records; keep OSTI, patents, space licensing, hazard, and agriculture biotechnology as later bounded candidates.
 - Repair broad In Review signals into dated source-backed records where the expanded source registry supports a specific update.
-- Create the private source-candidate registry before another broad public source promotion batch.
+- Activate the private source-candidate registry in Supabase before another broad public source promotion batch.
 
 Decision:
 
-Treat authority as a content and evidence problem first. Do not add ingestion, scoring, CMS, database migration, analytics, DNS changes, or public launch steps until the authority foundation is stronger.
+Treat authority as a content and evidence problem first. Supabase may now be activated for the private review loop because the public/private contract is explicit, but ingestion, scoring, automated publishing, analytics, DNS changes, and public launch remain separate decisions.
 
 ### Stage 6: Local Evidence Deepening
 
@@ -1188,10 +1188,10 @@ Add product features only after editorial value is proven manually.
 Candidate work:
 
 - Better search and filtering.
-- Data export or public dataset surfaces.
+- Extend the completed public JSON datasets only when reader or integration needs justify a contract change.
 - Source monitoring automation beyond the generated route.
 - Ingestion and draft-generation workflow.
-- Database or CMS migration.
+- Supabase-backed private candidate, snapshot, review, and editorial-event workflows; public content remains Git-backed initially.
 - Qualitative 42/59 labels, before any numeric scoring.
 
 Decision:
@@ -1232,7 +1232,7 @@ Improved roadmap.
 - Whether source credibility tiers should appear on every public signal page or only on source profiles
 - Whether `Draft Sample` and `In Review` records should be visible on public pages before launch
 - Whether source checked dates should become part of a formal citation block
-- Whether the Method page should later include a public correction/update log
+- How long Git should remain the public source of truth after the private Supabase workflow is active
 - Whether FTFN should add dedicated local-system source categories for municipal data, utility filings, permits, and planning documents
 - Whether local system profiles need formal record statuses before public launch
 - Whether dependency-map index filtering should stay static or become client-side once map volume grows

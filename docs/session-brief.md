@@ -37,9 +37,9 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 186
+static pages generated: 187
 current frozen deployment manifest: deployment/ftfn-v0.1.1-build.json
-current branch: codex/v0.2-phase50b
+current branch: codex/pre-supabase-contracts
 ```
 
 Use `npm.cmd` on Windows if PowerShell blocks `npm.ps1`.
@@ -58,6 +58,8 @@ App routes currently include:
 - dependency map index and detail pages,
 - briefing index and detail pages,
 - method and publication policy page,
+- updates and corrections page,
+- versioned source, topic, and Published-signal JSON endpoints,
 - generated source monitor,
 - about page.
 
@@ -86,6 +88,7 @@ What is now stable:
 - A Phase 38 authority red-team now identifies where the site is still a credible prelaunch scaffold rather than a comprehensive public resource.
 - Phase 49 expanded the source library to 102 records, including broad official catalogs, funding and spending APIs, international statistics, research APIs, patent/IP sources, water and mineral datasets, space licensing, agriculture biotechnology regulation, and Phoenix/MAG local-system data.
 - Phase 50 completed its six-item bounded evidence batch: DOE/Grants.gov, MAG projections, USAspending award DEMS0000003, NSF award 2433348, USGS 2026 gallium, and Toronto application 24 254930.
+- Phase 52A added the validated public update log, three versioned data exports, and the pre-Supabase public/private contract.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
 - Frozen v0.1.1 desktop/mobile and indexing QA passed locally; no preview deployment was created.
 
@@ -96,13 +99,13 @@ What is still prelaunch scaffolding:
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
-- There is no automation, ingestion, database, public dataset, alerting, user account system, or numeric 42/59 scoring.
+- There is no automation, ingestion, database, alerting, user account system, or numeric 42/59 scoring. Public metadata datasets now exist as static exports.
 - There is no deployment, DNS change, analytics, newsletter capture, or Cloudflare Pages project yet.
 - Brand polish, v0.2 Phase 54 browser/accessibility QA, preview/post-deploy checks, analytics decisions, and final public launch approval still need later passes.
 
 Current strategic direction:
 
-FTFN should now use the generated Source Monitor, Source Coverage matrix, signals roadmap, authority red-team plan, authoritative live source plan, source broadening plan, private update queue, and signal repair workflow together. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library from 66 to 102 records and added 18 promoted-source candidates to the private queue; Phase 50 completed six bounded additions and moved the app to 22 signals. The next practical work is Phase 51 named local evidence deepening without claiming project-level readiness. Automated ingestion and automated publishing remain out of scope.
+FTFN should now use the generated Source Monitor, Source Coverage matrix, signals roadmap, authority red-team plan, authoritative live source plan, source broadening plan, private update queue, and signal repair workflow together. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library from 66 to 102 records and added 18 promoted-source candidates to the private queue; Phase 50 completed six bounded additions and moved the app to 22 signals. Phase 52A now makes the public change and data contracts explicit. The next backend step is a hosted Supabase development project for the private authority loop. Phase 51 named local evidence deepening can continue in parallel. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -116,7 +119,8 @@ Current seed content includes:
 - 5 technology records,
 - 1 briefing in review,
 - 10 evidence gap records,
-- 2 dependency maps in review.
+- 2 dependency maps in review,
+- 3 public update-log entries.
 
 Three official-source-backed signals are now `Published`:
 
@@ -251,25 +255,23 @@ Key files:
 
 ## Next Roadmap Phase
 
-Next phase identified in the roadmap:
+Next backend phase identified in the roadmap:
 
 ```text
-Phase 51: Local Evidence Dossier Deepening
+Supabase Development Activation: Private Authority Loop
 ```
 
 Expected focus:
 
-- select one named Arizona utility docket, planning filing, or transmission record,
-- select one provider-level Arizona water, allocation, service-area, conservation, or infrastructure record,
-- track Toronto application 24 254930 to a staff report, decision, or status update,
-- add a Toronto/Ontario servicing, permit, start, completion, or occupancy record,
-- add workforce, construction-labor, supplier, or facility evidence where it can be bounded,
-- apply `docs/signal-repair-workflow.md` and keep new records `In Review`,
-- update the local profiles and evidence gaps in the same batch,
-- preserve the passed v0.1.1 local release-QA record in `docs/release-qa-v0.1.1.md`,
-- decide whether to run a Cloudflare Pages preview deploy now that local browser/indexing QA has passed,
-- if preview deployment is approved, deploy only to a preview URL and run the launch checklist there,
-- do not attach `ftfn.io`, change DNS, add analytics, or publicly launch without explicit approval.
+- create a hosted Supabase development project,
+- initialize local Supabase migrations,
+- add Auth/RLS and the six private workflow tables in `docs/supabase-activation-plan.md`,
+- keep browser and service credentials separated,
+- build the smallest private queue/detail/status/history Studio workflow,
+- run two manual source probes through review,
+- keep Git and the static build as the public publication gate,
+- continue Phase 51 named Arizona and Ontario records in parallel,
+- do not add automated publishing, attach `ftfn.io`, change DNS, or publicly launch without explicit approval.
 
 ## Most Important Documents
 
@@ -288,7 +290,9 @@ Start future work by reading:
 11. `docs/launch-candidate-review.md`
 12. `docs/publication-policy.md`
 13. `docs/launch-package.md`
-14. the latest work package in `docs/work-packages/`
+14. `docs/public-data-exports.md`
+15. `docs/supabase-activation-plan.md`
+16. the latest work package in `docs/work-packages/`
 
 Use these as needed:
 
@@ -334,16 +338,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed phase:
-Phase 50B: Bounded Evidence Conversion.
+Phase 52A: Public Contract And Supabase Gate.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 development: package 0.2.0-dev, 102 sources, 22 signals, 17 topics, and 186 pages on codex/v0.2-phase50b.
+v0.2 development: package 0.2.0-dev, 102 sources, 22 signals, 17 topics, 3 updates, 187 pages, and 3 public JSON endpoints on codex/pre-supabase-contracts.
 
 Next roadmap phase:
-Begin Phase 51: deepen the Arizona and Ontario dossiers with named power, water, permitting, servicing, workforce, and completion records while preserving project-level evidence limits.
+Activate a hosted Supabase development project and build the private Auth/RLS-backed authority loop. Continue Phase 51 named-record research in parallel while keeping Git as the public publishing source of truth.
 
 Please confirm the current state from the docs, then generate the next phase prompt before implementing.
 ```

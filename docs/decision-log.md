@@ -1847,3 +1847,27 @@ Implemented:
 Boundary:
 
 This QA result does not create a preview deployment, change DNS, approve analytics, promote any record, or authorize public launch. Post-deploy verification remains required if preview hosting is approved.
+
+## 2026-07-22: Pre-Supabase Public Contract Gate
+
+Decision:
+
+FTFN will activate Supabase after the public update and export contracts pass the production build. Phase 51 dossier completion is not a backend activation dependency.
+
+Rationale:
+
+The database should improve the private authority loop without silently redefining the public product. Stable record IDs, validated update references, field-allowlisted exports, and a human-reviewed Git publication path create the minimum safe boundary. Waiting for every local dossier record would delay useful workflow learning without reducing backend risk.
+
+Implemented:
+
+- added the `updates` collection and `/updates/` trust surface,
+- added five controlled update-entry types and three historical entries,
+- added versioned source, topic, and Published-signal JSON exports,
+- excluded private/editorial fields through explicit serializers,
+- added update-reference validation,
+- documented the public data contract and Supabase activation sequence,
+- split Phase 52 into a completed pre-activation contract slice and a later private-backend slice.
+
+Boundary:
+
+Supabase starts as a private workflow backend. Git remains the public source of truth, and no database job, webhook, function, or trigger may publish claims directly.

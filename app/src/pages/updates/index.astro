@@ -1,0 +1,91 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+
+const updates = (await getCollection("updates")).sort(
+  (left, right) => right.data.effective_date.getTime() - left.data.effective_date.getTime()
+);
+
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat("en-CA", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC"
+  }).format(date);
+}
+---
+
+<BaseLayout
+  title="Updates and Corrections | FTFN"
+  description="A public history of material FTFN source refreshes, signal repairs, publication decisions, corrections, and archives."
+>
+  <section class="page-section">
+    <div class="eyebrow">Trust Surface</div>
+    <h1 class="page-title">Updates and corrections</h1>
+    <p class="lede">
+      Material changes should be visible. This log records source refreshes,
+      signal repairs, publication promotions, corrections, and archives without
+      creating an automated path from ingestion to publication.
+    </p>
+    <div class="meta-row">
+      <MetaPill label={`${updates.length} logged changes`} />
+      <MetaPill label="Human reviewed" tone="review" />
+      <MetaPill label="No automated publishing" tone="urgency" />
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div class="prose">
+      <h2>What gets logged</h2>
+      <p>
+        A correction changes an inaccurate claim. A source refresh records a
+        material evidence update. A signal repair revises a record against new
+        evidence. A publication promotion records a review decision. An archive
+        removes a record from current intelligence while preserving its history.
+      </p>
+    </div>
+    <div class="prose">
+      <h2>Reusable public data</h2>
+      <p>
+        Stable, versioned metadata exports make the public source library easier
+        to inspect and preserve the contract a later database must support.
+      </p>
+      <ul>
+        <li><a class="inline-link" href="/data/sources.json">Sources JSON</a></li>
+        <li><a class="inline-link" href="/data/topics.json">Topics JSON</a></li>
+        <li><a class="inline-link" href="/data/signals.json">Published signals JSON</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="source-list" aria-label="Update history">
+      {updates.map((update) => (
+        <article class="source-row">
+          <div class="meta-row">
+            <MetaPill label={update.data.entry_type} tone="review" />
+            <MetaPill label={formatDate(update.data.effective_date)} />
+          </div>
+          <h2>{update.data.title}</h2>
+          <p>{update.data.summary}</p>
+          <p><strong>Evidence note:</strong> {update.data.evidence_note}</p>
+          <div>
+            <strong>Affected records</strong>
+            <ul class="compact-list">
+              {update.data.affected_record_ids.map((recordId) => <li><code>{recordId}</code></li>)}
+            </ul>
+          </div>
+          {update.data.related_paths.length > 0 && (
+            <div class="meta-row">
+              {update.data.related_paths.map((path, index) => (
+                <a class="inline-link" href={path}>Related page {index + 1}: {path}</a>
+              ))}
+            </div>
+          )}
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

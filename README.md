@@ -116,7 +116,7 @@ npm run check
 npm run build
 ```
 
-The current `0.2.0-dev` build generates 186 static pages from the content library.
+The current `0.2.0-dev` build generates 187 static pages and three versioned JSON data endpoints.
 
 The homepage now uses real seed records for signals, topics, sources, local systems, and briefings while preserving the 42/59 framing and dependency-stack thesis.
 
@@ -214,7 +214,9 @@ Phase 49 promotes 36 additional active source records, expanding the source libr
 
 Phase 50 completes the first bounded source-item content expansion with six `In Review` additions: the DOE/Grants.gov funding opportunity, MAG regional projections, USAspending award DEMS0000003, NSF award 2433348, a commodity-specific USGS gallium record, and Toronto application 24 254930. The batch separates opportunities from awards, awards from physical progress, research funding from results, import reliance from shortage claims, and applications from approvals or completed units.
 
-The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Local desktop/mobile and indexing QA passed with no release blocker; preview deployment remains unapproved and has not been created. Current work now runs as `0.2.0-dev` on `codex/v0.2-phase50b`: 102 sources, 22 signals, 17 topics, and 186 generated pages. Phase 51 is next and will deepen the Arizona and Ontario dossiers with named utility, water, servicing, permitting, workforce, and completion records.
+Phase 52A completes the pre-Supabase public contract. It adds a validated public update/correction log, versioned static JSON exports for sources, topics, and Published signals, and an explicit private-field allowlist. Supabase can now begin as a private Auth/RLS-backed authority-loop backend while Git remains the public publishing source of truth.
+
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Local desktop/mobile and indexing QA passed with no release blocker; preview deployment remains unapproved and has not been created. Current work runs as `0.2.0-dev` on `codex/pre-supabase-contracts`: 102 sources, 22 signals, 17 topics, three public update entries, and three versioned data exports. The next backend step is a hosted Supabase development project for the private authority loop; Phase 51 named-record research can continue in parallel.
 
 ## Working Rule
 
