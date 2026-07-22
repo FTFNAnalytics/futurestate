@@ -117,8 +117,16 @@ These items come from the 36-source Phase 49 promotion batch. They should be use
 | uq-044 | Signal Draft Created | `source-phoenix-tsmc-2026-wastewater-development-agreement` | Water / Local Systems | Added a project-specific TSMC wastewater-conveyance and reclaimed-water milestone signal. | Track execution, construction and acceptance of the improvements, the June 30, 2028 IRWP deadline, measured reuse, and a facility water balance. |
 | uq-045 | Signal Draft Created | `source-phoenix-north-3500-pud-2026` | Local Systems / Compute and Chips | Added the adopted and amended PUD planning envelope for the TSMC campus area. | Select named site, civil, grading, or building permits, inspections, and certificates of occupancy. |
 | uq-046 | Signal Draft Created | `source-aca-tsmc-registered-technician-apprenticeship-2024` | Compute and Chips / Finance and Human Futures | Added a facility-linked technician apprenticeship with named pathways, partners, funding, and a 2025 recruitment target. | Add enrollment, completion, credential, retention, placement, construction-labor, and supplier-workforce evidence. |
-| uq-047 | Signal Draft Created | `source-toronto-2026-sc33-9-item-history` | Local Systems / Finance and Human Futures | Added Scarborough Community Council's July 9, 2026 recommendation for application 24 254930. | Track City Council adoption, enacted by-laws, land conditions, and the first building permit. |
+| uq-047 | Needs Source Recheck | `source-toronto-2026-sc33-9-item-history` | Local Systems / Finance and Human Futures | Added Scarborough Community Council's July 9, 2026 recommendation for application 24 254930; no later Council decision was available on July 22. | Recheck immediately after the July 29-31, 2026 City Council meeting for adoption, enacted by-laws, land conditions, and the first building permit. |
 | uq-048 | Signal Draft Created | `source-toronto-development-pipeline-2025` | Local Systems / Finance and Human Futures | Added Toronto's citywide planning-to-permit-to-construction delivery baseline. | Track stage conversion, completions, cancellations, financing conditions, and the named project's downstream records. |
+
+## Batch 05: Phase 51C Downstream Service And Facility Evidence
+
+| Queue ID | Status | Source | Watch Lane | Candidate Output | Human Next Action |
+| --- | --- | --- | --- | --- | --- |
+| uq-049 | Signal Draft Created | `source-srp-project-huckleberry-meta-mesa-online` | Power and Grid / Local Systems | Added a named Meta Mesa Data Center service signal with initial 69 kV service, a May 2024 230 kV in-service milestone, customer-funded infrastructure, and an online project state. | Track disclosed load, executed service or facilities agreements, tariff treatment, operating consumption, and a comparable semiconductor-customer service record. |
+| uq-050 | Signal Draft Created | `source-phoenix-tsmc-july-2026-fab-update` | Compute and Chips / Local Systems | Added a company-claim-labeled signal for Fab 1 volume production, Fab 2 construction completion, and more than 3,500 current employees. | Track named permits and occupancy, audited or regulatory production evidence, Fab 2 commissioning, occupation mix, and utility or water records. |
+| uq-051 | Signal Repaired | `source-phoenix-2025-semiconductor-apprenticeship-agenda` | Compute and Chips / Finance and Human Futures | Repaired the TSMC apprenticeship signal with an eight-person first cohort and a 46-person second cohort. | Track completion, credentials, retention, placement, wages, and later program reports; do not treat active cohorts as completed outcomes. |
 
 ## First Repair Priorities
 
@@ -203,6 +211,19 @@ Moved from queue priorities into content:
 Next queue step:
 
 Run Phase 51C as a downstream-evidence pass, not another source expansion. Select only named service, construction, permit, workforce-outcome, Council/by-law, start, completion, or occupancy records.
+
+## Phase 51C Progress
+
+Moved downstream evidence into content:
+
+- `uq-049` selected SRP Project Huckleberry as the first named online electric-service project,
+- `uq-050` selected Phoenix's July 2026 TSMC update and kept the facility claims labeled as company evidence,
+- `uq-051` repaired the apprenticeship signal with two recorded cohorts while preserving the outcome gate,
+- no record was forced for TSMC reclaimed-water operation, Phoenix occupancy, apprenticeship completion, or Toronto enactment because the official evidence had not reached those stages.
+
+Next queue step:
+
+Move into Phase 53 publication-candidate review. Keep `uq-044`, `uq-045`, `uq-047`, and `uq-051` as dated monitors for reclaimed-water infrastructure, permits and occupancy, Toronto Council and by-laws, and apprenticeship outcomes.
 
 ## Operating Rule
 

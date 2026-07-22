@@ -1918,3 +1918,27 @@ Implemented:
 Boundary:
 
 The tariff is not a customer service agreement or proof of adequate capacity. The wastewater agreement is not proof of completed infrastructure, a full facility water balance, measured reuse, or long-term sufficiency. The PUD is not a building permit or occupancy record. The apprenticeship announcement is not completion, retention, placement, or workforce sufficiency evidence. The committee recommendation is not City Council adoption or an enacted by-law. The development pipeline is potential supply, not guaranteed completed housing.
+
+## 2026-07-22: Phase 51C Evidence Stops At The Last Verified Stage
+
+Decision:
+
+FTFN will add a downstream local record only when it advances a named trail to a verified stage. A search that finds no qualifying construction, operating, permit, outcome, Council, by-law, start, completion, or occupancy record will remain an explicit monitor rather than become a speculative signal.
+
+Rationale:
+
+Phase 51C found three defensible advances: SRP's named Meta service project is online, Phoenix records current TSMC fab and employment claims, and a Phoenix Council agenda records active apprenticeship cohorts. The same review did not find qualifying downstream evidence for the TSMC reclaimed-water plant, Phoenix certificates of occupancy, apprenticeship completions, or Toronto City Council and enacted by-laws as of July 22.
+
+Implemented:
+
+- added three official source records,
+- added two `In Review` signals for Project Huckleberry and current TSMC fab milestones,
+- repaired the existing TSMC apprenticeship signal with an eight-person first cohort and a 46-person second cohort,
+- updated the Southwest chip-corridor dossier, `gap-001`, and `gap-003`,
+- added private queue items `uq-049` through `uq-051`,
+- added the sixth public update entry,
+- moved the default next content step to Phase 53 publication-candidate review.
+
+Boundary:
+
+Project Huckleberry does not prove TSMC or corridor-wide capacity. The Phoenix release remains company-claim evidence rather than audited production, permit, or occupancy proof. Active apprenticeship cohorts are not completion or retention outcomes. Missing downstream records remain monitors and do not become negative findings about whether work occurred.

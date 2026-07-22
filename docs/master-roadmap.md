@@ -969,15 +969,16 @@ These are the next practical actions from the current project state.
 260. Preserve the frozen v0.1.1 candidate in version control before current counts diverge. Status: complete; created root commit `4845597` and branch `codex/v0.2-phase50b`.
 261. Advance current package metadata from the frozen v0.1.1 checkpoint to `0.2.0-dev`. Status: complete.
 262. Complete Phase 50B at six bounded additions and validate the 102-source, 22-signal, 186-page development build. Status: complete.
-263. Begin Phase 51 local dossier deepening with named Arizona power/water and Ontario decision/servicing/permit/completion records. Status: complete through Phase 51B for the named planning, service-framework, wastewater-agreement, workforce-program, committee, and delivery-baseline layers; downstream operating and completion evidence remains.
+263. Begin Phase 51 local dossier deepening with named Arizona power/water and Ontario decision/servicing/permit/completion records. Status: complete through Phase 51C; the dossier now includes named planning, service-framework, infrastructure-agreement, electric-service, facility, workforce-program, committee, and delivery-baseline layers, with several downstream outcomes retained as monitors.
 264. Preserve v0.1.1 local release-QA evidence and keep preview deployment behind explicit approval. Status: complete; added `docs/release-qa-v0.1.1.md` and left hosting unchanged.
 265. Create the Phase 51A work package and add three bounded local dossier signals. Status: complete.
 266. Continue Phase 51B with project-specific Arizona service records, Phoenix permitting, Toronto Council/by-law and permit follow-through, and workforce or delivery evidence. Status: complete; added six official records and six `In Review` signals.
-267. Continue Phase 51C only with downstream electric-service or energization, built wastewater and IRWP infrastructure, Phoenix permits and occupancy, workforce outcomes, Toronto City Council and by-laws, and project permit/start/completion evidence. Status: next.
+267. Continue Phase 51C only with downstream electric-service or energization, built wastewater and IRWP infrastructure, Phoenix permits and occupancy, workforce outcomes, Toronto City Council and by-laws, and project permit/start/completion evidence. Status: complete; added a named Meta online service project, current TSMC facility milestones, and active apprenticeship cohorts while leaving unsupported lanes open.
+268. Begin Phase 53 publication-candidate review from the 33-signal library. Status: next; target 8 to 12 Published or documented publication-ready records without weakening the evidence gates.
 
 ## 10. Current Stage Map
 
-This checkpoint follows the completed Phase 51B local evidence-conversion batch and preserves v0.1.1 as a frozen release candidate.
+This checkpoint follows the completed Phase 51C downstream-evidence batch and preserves v0.1.1 as a frozen release candidate.
 
 FTFN is no longer only a concept or documentation project. It now has:
 
@@ -1004,11 +1005,11 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a generated source monitor that turns checked dates, update cadence, capture priority, and authority levels into a public review queue.
 - an authority red-team plan that separates credible scaffold work from the content depth required for a comprehensive resource.
 - an authoritative live source plan that identifies the first 30 source additions and the monitoring architecture needed for source intelligence.
-- an expanded source registry with 102 records, watch-lane metadata, access-type metadata, endpoint metadata, source health states, and explicit review cadences.
+- an expanded source registry with 114 records, watch-lane metadata, access-type metadata, endpoint metadata, source health states, and explicit review cadences.
 - a generated source coverage matrix at `/atlas/source-coverage/`.
 - local system dossier tables generated from linked source records.
 - 17 public topic records, including Cybersecurity and Discovery Technologies.
-- 102 source records, including Discovery Technologies, Arizona utility-planning/transmission, Phoenix permitting/water-service, Toronto development/permit process anchors, official meta-catalogs, funding/spending rails, international statistics, research APIs, patent/IP sources, water/minerals/trade sources, space licensing, agriculture biotechnology, and Phoenix/MAG local-system data.
+- 114 source records, including Discovery Technologies, Arizona utility planning and named service, Phoenix permitting and water-service anchors, TSMC facility and workforce records, Toronto development and permit-process anchors, official meta-catalogs, funding/spending rails, international statistics, research APIs, patent/IP sources, water/minerals/trade sources, space licensing, agriculture biotechnology, and Phoenix/MAG local-system data.
 - v0.1 handoff and deployment-prep artifacts: `docs/session-brief-v0.1.md`, `docs/roadmap-v0.1.md`, and `deployment/ftfn-v0.1-build.json`.
 - a v0.2 roadmap that scopes private source updates, dated signal repair, named local evidence trails, public update/correction logs, and static metadata exports.
 - a signal scale scenario map for the 25-35 signal v0.2 target and the larger 70-signal authority-system target.
@@ -1016,10 +1017,10 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a second private queue batch that turns promoted Phase 49 source records into bounded review candidates.
 - six Phase 50 bounded source-item signals spanning a DOE/Grants.gov opportunity, MAG local projections, USAspending award, NSF award, USGS gallium record, and Toronto planning application.
 - a frozen v0.1.1 release package with app version 0.1.1, deployment manifest, versioned session brief, release roadmap, local release-QA evidence, and Git checkpoint `4845597`.
-- a current `0.2.0-dev` build with 102 sources, 22 signals, and 186 pages.
-- an updated v0.2 plan that now moves from completed bounded evidence conversion into local dossier deepening, trust/data surfaces, publication review, and release QA over about 3 to 4 remaining focused weeks.
+- a current `0.2.0-dev` build with 114 sources, 33 signals, six update entries, and 210 pages.
+- an updated v0.2 plan that now moves from completed bounded evidence conversion and local dossier deepening into publication review and release QA.
 
-It is not yet a deployed public launch product because optional deploy-preview execution, post-deploy QA, DNS attachment, analytics decisions, and final public launch approval remain separate. Frozen v0.1.1 local browser/indexing QA is complete; the current v0.2 build still requires its own Phase 54 QA. Three records are `Published`, eighteen signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint records, briefings, dependency maps, and most reviewed signals remain prelaunch material.
+It is not yet a deployed public launch product because optional deploy-preview execution, post-deploy QA, DNS attachment, analytics decisions, and final public launch approval remain separate. Frozen v0.1.1 local browser/indexing QA is complete; the current v0.2 build still requires its own Phase 54 QA. Three records are `Published`, twenty-nine signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint records, briefings, dependency maps, and most reviewed signals remain prelaunch material.
 
 ### Stage 1: Reader-Journey QA
 
@@ -1150,14 +1151,15 @@ Completed:
 - Completed Phase 50B at six bounded `In Review` additions spanning Grants.gov/DOE, MAG Open Data, USAspending, NSF Awards, USGS gallium, and a named Toronto application.
 - Completed Phase 51A with named SRP implementation, Phoenix provider-water, and Toronto staff-recommendation/servicing records.
 - Completed Phase 51B with an SRP large-load tariff, Phoenix-TSMC wastewater agreement, TSMC-campus PUD, technician apprenticeship, Toronto committee recommendation, and citywide delivery baseline.
-- Reached 111 sources, 31 signals, five update entries, and 205 built pages while keeping all new signals `In Review`.
+- Completed Phase 51C with SRP's named Meta electric-service project, current TSMC fab milestones, and active apprenticeship-cohort evidence.
+- Reached 114 sources, 33 signals, six update entries, and 210 built pages while keeping all new signals `In Review`.
 
 Next candidate work:
 
 - Recheck NOAA CPC ENSO, downstream records for Toronto application 24 254930, and the selected Arizona service, infrastructure, permit, and workforce records.
 - Decide whether In Review local systems and dependency maps should remain indexable or move to clearer research/noindex treatment before launch.
-- Select only downstream named local records: electric-service agreements or energization, completed wastewater and reclaimed-water infrastructure, Phoenix permits and occupancy, apprenticeship outcomes, Toronto City Council and by-laws, and project start/completion evidence.
-- Prioritize Phase 51C operating and delivery proof; keep OSTI, patents, space licensing, hazard, and agriculture biotechnology as later bounded candidates.
+- Keep the unresolved local trails as dated monitors: completed wastewater and reclaimed-water infrastructure, Phoenix permits and occupancy, apprenticeship outcomes, Toronto City Council and by-laws, and project start/completion evidence.
+- Prioritize Phase 53 publication-candidate review; keep OSTI, patents, space licensing, hazard, and agriculture biotechnology as later bounded candidates.
 - Repair broad In Review signals into dated source-backed records where the expanded source registry supports a specific update.
 - Activate the private source-candidate registry in Supabase before another broad public source promotion batch.
 
@@ -1175,7 +1177,7 @@ Strengthen local-system profiles so they become more than conceptual constraint 
 
 Candidate work:
 
-- Follow the Phase 51B records into customer service, built infrastructure, permit, inspection, workforce-outcome, by-law, start, completion, and occupancy evidence.
+- Follow the remaining Phase 51 records into built infrastructure, permit, inspection, workforce-outcome, by-law, start, completion, and occupancy evidence only when new dated records appear.
 - Repair local signals only when evidence supports a narrower claim.
 - Keep local conclusions cautious until project-level evidence exists.
 

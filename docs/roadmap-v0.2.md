@@ -37,17 +37,17 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after Phase 51B:
+Current `0.2.0-dev` state after Phase 51C:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 205 |
-| Active sources | 111 |
-| Signals | 31 |
+| Static pages | 210 |
+| Active sources | 114 |
+| Signals | 33 |
 | Published signals | 3 |
-| In Review signals | 27 |
+| In Review signals | 29 |
 | Draft Sample signals | 1 |
-| Named local inputs selected in Phases 50-51B | 11 |
+| Named local inputs selected in Phases 50-51C | 14 |
 
 Existing operating assets:
 
@@ -80,11 +80,11 @@ By v0.2, a reader should be able to answer:
 
 | Area | v0.2 Target | Current | Remaining |
 | --- | ---: | ---: | ---: |
-| Total signals | 25-35 | 31 | target met; add only downstream evidence |
+| Total signals | 25-35 | 33 | target met; new additions require an unusually strong downstream record |
 | Published plus publication-ready | 8-12 | 3 | +5 to +9 reviewed candidates |
-| Active sources | 110-125 | 111 | target met; add only gap-closing sources |
+| Active sources | 110-125 | 114 | target met; add only gap-closing sources |
 | Private source candidates | 150-250 | not yet scaffolded | create registry and triage first batch |
-| Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | customer service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
+| Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | semiconductor service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
 | Public trust surfaces | update log plus Method links | implemented | maintain entries |
 | Public data products | 3 static exports | implemented | maintain field contract |
 
@@ -204,6 +204,15 @@ Phase 51B status:
 - selected Toronto's 2025 Development Pipeline as the citywide delivery-stage baseline,
 - added six `In Review` signals and advanced `gap-003` to `Source Added`,
 - reached 111 sources, 31 signals, five updates, and 205 built pages while keeping every downstream service and delivery gate explicit.
+
+Phase 51C status:
+
+- selected SRP Project Huckleberry as a named Meta electric-service project with initial and 230 kV in-service evidence and an online state,
+- selected Phoenix's July 2026 TSMC update for first-fab production, second-fab construction, and current employment claims while labeling the evidence as company claims,
+- repaired the TSMC apprenticeship signal with an eight-person first cohort and a 46-person second cohort,
+- added three sources and two `In Review` signals,
+- reached 114 sources, 33 signals, six updates, and 210 built pages,
+- left TSMC reclaimed-water operation, named Phoenix permits and occupancy, apprenticeship outcomes, and Toronto Council or by-law evidence unresolved because no qualifying record was available on July 22.
 
 Exit criteria:
 
@@ -346,4 +355,4 @@ v0.2 is successful when:
 
 ## Immediate Next Step
 
-Continue Phase 51C while Supabase access is pending. Select only downstream named evidence: Arizona customer electric service or energization; completed wastewater and industrial-reclaimed-water infrastructure; Phoenix permits, inspections, or occupancy; apprenticeship outcomes; Toronto City Council and enacted by-laws; and the named project's permit, start, completion, or occupancy trail. Keep Git as the public publishing source of truth and keep all new records `In Review` until Phase 53.
+Begin Phase 53 publication-candidate review while Supabase access is pending. Review the strongest current `In Review` records for source currency, claim specificity, evidence limits, citation integrity, and indexing status. Keep the unresolved Phase 51 trails as dated monitors, keep Git as the public publishing source of truth, and do not promote a local or company-claim record merely to meet the publication target.

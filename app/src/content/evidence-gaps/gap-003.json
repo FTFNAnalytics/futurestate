@@ -10,14 +10,14 @@
   "constraint_tags": ["Labor", "Supply Chain", "Manufacturing", "Capital"],
   "question": "Can local supplier and workforce systems support semiconductor scaling?",
   "why_it_matters": "Funded semiconductor projects only become operating capacity if labor pipelines, construction capacity, suppliers, training systems, and capital commitments can keep up.",
-  "current_support": "FTFN has national CHIPS context, MAG regional projections, and a named TSMC registered technician apprenticeship record identifying four technician pathways, education partners, more than $5 million of company support, an 18-to-24-month program horizon, and a target of nearly 130 apprentices and trainees in 2025.",
+  "current_support": "FTFN has national CHIPS context, MAG regional projections, a named TSMC registered technician apprenticeship with an initial eight-person cohort and a later 46-person cohort, and a City-relayed July 2026 update saying the first Arizona fab is in volume production, second-fab construction is complete, and TSMC Arizona employs more than 3,500 people.",
   "missing_evidence": [
-    "apprenticeship enrollment, completion, retention, and placement outcomes",
+    "apprenticeship completion, credential, retention, and placement outcomes",
     "occupation-specific labor supply",
     "training capacity relative to fab and supplier demand",
     "supplier networks",
     "construction labor availability",
-    "facility hiring data"
+    "facility occupation mix, vacancies, attrition, and hiring demand"
   ],
   "likely_source_types": [
     "workforce agency data",
@@ -32,10 +32,10 @@
     "Arizona occupation-specific labor and vacancy data",
     "supplier facility and hiring source"
   ],
-  "next_action": "Add apprenticeship outcome, occupation-level labor, construction-trade, and supplier operating records before making chip-corridor workforce or supplier sufficiency claims.",
+  "next_action": "Add apprenticeship completion and retention results, occupation-level labor and hiring data, construction-trade capacity, and supplier operating records before making workforce or supplier sufficiency claims.",
   "future_data_model_need": ["Facility", "Local Actor", "Dataset"],
-  "related_source_ids": ["source-nist-chips", "source-maricopa-association-governments-open-data", "source-aca-tsmc-registered-technician-apprenticeship-2024"],
-  "related_signal_ids": ["signal-sample-003", "signal-mag-2023-projections-phoenix-region-growth-evidence-layer", "signal-tsmc-arizona-apprenticeship-workforce-pipeline"],
+  "related_source_ids": ["source-nist-chips", "source-maricopa-association-governments-open-data", "source-aca-tsmc-registered-technician-apprenticeship-2024", "source-phoenix-2025-semiconductor-apprenticeship-agenda", "source-phoenix-tsmc-july-2026-fab-update"],
+  "related_signal_ids": ["signal-sample-003", "signal-mag-2023-projections-phoenix-region-growth-evidence-layer", "signal-tsmc-arizona-apprenticeship-workforce-pipeline", "signal-phoenix-tsmc-fab1-production-fab2-construction-complete"],
   "related_local_system_ids": ["local-us-southwest-chip-corridor"],
-  "notes": "Phase 51B added a named facility-linked technician pipeline, but the gap remains unresolved because planned cohorts do not prove completion, retention, total labor sufficiency, construction capacity, or supplier-network maturity."
+  "notes": "Phase 51C replaces the pure recruitment-target view with active-cohort counts and adds a current total-employment and fab-status claim. The gap remains unresolved because neither record reports apprenticeship outcomes, occupational sufficiency, construction capacity, or supplier-network maturity."
 }

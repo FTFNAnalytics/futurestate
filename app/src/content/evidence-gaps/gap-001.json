@@ -10,14 +10,14 @@
   "constraint_tags": ["Power", "Infrastructure", "Regulation", "Data Quality"],
   "question": "Which utility records show real power capacity for semiconductor and AI infrastructure?",
   "why_it_matters": "State-level electricity baselines are useful, but power availability for fabs, suppliers, and compute infrastructure depends on utility planning, interconnection, rates, service territory, and facility load evidence.",
-  "current_support": "FTFN has EIA Arizona electricity context, ACC utility-regulation and eDocket layers, SRP's named 2025 Integrated System Plan Actions Progress Report, and the November 2025 E-67 large-load price plan defining service, forecast, billing-demand, maximum-load, and possible customer-funded infrastructure conditions for new accounts at or forecast to reach 20 MW.",
+  "current_support": "FTFN has EIA Arizona electricity context, ACC utility-regulation and eDocket layers, SRP's named 2025 Integrated System Plan Actions Progress Report, the November 2025 E-67 large-load price plan, and Project Huckleberry: a named Meta Mesa Data Center service project that SRP says is online after initial 69 kV service and a May 2024 230 kV substation and transmission in-service milestone.",
   "missing_evidence": [
     "interconnection queues",
-    "named customer tariff treatment and facilities charges",
-    "executed electric-service agreements",
+    "named semiconductor-customer tariff treatment and facilities charges",
+    "executed electric-service agreements and service studies",
     "service-territory evidence",
     "facility load estimates",
-    "customer-specific service studies and agreements"
+    "operating consumption and reliability evidence"
   ],
   "likely_source_types": [
     "utility filing",
@@ -32,7 +32,7 @@
     "SRP or APS customer-specific service agreement or energization record",
     "semiconductor facility load or service agreement evidence"
   ],
-  "next_action": "Identify a named semiconductor or compute customer's electric-service agreement, facilities charge, interconnection, construction, energization, or disclosed load record before making site-level power claims.",
+  "next_action": "Follow the named Meta energization example into disclosed load, tariff, agreement, and operating evidence, and select a semiconductor-customer service record before making TSMC or corridor-wide capacity claims.",
   "future_data_model_need": ["Utility Filing", "Facility", "Dataset"],
   "related_source_ids": [
     "source-eia-arizona-electricity-profile",
@@ -41,13 +41,15 @@
     "source-arizona-corporation-commission-edocket",
     "source-srp-resource-planning",
     "source-srp-2025-isp-actions-progress-report",
-    "source-srp-e67-large-load-price-plan-2025"
+    "source-srp-e67-large-load-price-plan-2025",
+    "source-srp-project-huckleberry-meta-mesa-online"
   ],
   "related_signal_ids": [
     "signal-arizona-electricity-profile-chip-corridor-power-constraint",
     "signal-srp-2025-isp-actions-valley-power-buildout",
-    "signal-srp-e67-large-load-service-conditions"
+    "signal-srp-e67-large-load-service-conditions",
+    "signal-srp-huckleberry-meta-mesa-online-service"
   ],
   "related_local_system_ids": ["local-us-southwest-chip-corridor"],
-  "notes": "Phase 51B added the named E-67 large-load tariff. The gap remains open at the customer-service layer: a tariff defines conditions but does not prove adequate facilities, an executed agreement, an interconnection date, or energization for a named site."
+  "notes": "Phase 51C adds the first named customer project with in-service and online evidence. The gap remains unresolved because one Meta project does not disclose load or commercial terms and cannot establish service readiness for TSMC, suppliers, future data centers, or the corridor as a whole."
 }

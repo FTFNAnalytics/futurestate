@@ -820,6 +820,28 @@ Do not use it for:
 - treating a planned apprenticeship cohort as workforce sufficiency,
 - treating a committee recommendation or citywide pipeline as completed housing.
 
+### Phase 51C Work Package
+
+Purpose:
+
+- Record the named Meta electric-service project, current TSMC fab milestones, and active apprenticeship-cohort evidence.
+- Preserve the boundaries between one customer project and corridor capacity, City-relayed company claims and audited operations, and active cohorts and completed workforce outcomes.
+- Track the deliberate no-add decisions for reclaimed-water operation, Phoenix occupancy, apprenticeship completion, and Toronto enactment.
+
+Update when:
+
+- Project Huckleberry load, commercial, or operating records change,
+- a TSMC-specific power, permit, occupancy, production, water, or workforce record is added,
+- apprenticeship completion, credential, retention, or placement evidence becomes available,
+- Toronto application 24 254930 reaches City Council, by-law, permit, start, completion, or occupancy.
+
+Do not use it for:
+
+- transferring Meta service evidence to TSMC or the broader corridor,
+- treating a City economic-development release as audited production evidence,
+- treating active cohorts as completed outcomes,
+- claiming an unresolved downstream gate was completed because no new record was found.
+
 ### v0.1 Build Manifest
 
 Purpose:

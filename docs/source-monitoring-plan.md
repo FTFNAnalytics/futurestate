@@ -89,7 +89,7 @@ Recommended next source-monitoring work:
 
 1. Turn high-priority probe-ready sources into a private scheduled-check queue before any public automated update behavior. Status: started in Phase 47 with `docs/private-update-queue.md`; first queue items moved into content in Phase 48.
 2. Create the source candidate registry described in `docs/source-broadening-and-intake-plan.md`. Status: still needed before another broad source-promotion batch.
-3. Add or select named Arizona utility dockets, provider water records, Phoenix permits/applications, and Ontario municipal servicing or completion evidence. Status: Phase 51B added an SRP large-load tariff, a Phoenix-TSMC wastewater agreement, the TSMC-campus PUD, an apprenticeship record, Toronto committee follow-through, and a citywide delivery baseline; customer energization, built infrastructure, project permits, workforce outcomes, by-laws, and project completion remain.
+3. Add or select named Arizona utility dockets, provider water records, Phoenix permits/applications, and Ontario municipal servicing or completion evidence. Status: Phase 51C added a named Meta online-service project, current TSMC facility milestones, and active apprenticeship cohorts; semiconductor service, built water infrastructure, project permits, workforce outcomes, Toronto by-laws, and project completion remain.
 4. Move the best promoted Phase 49 source records into bounded source checks for patents, space licensing, agriculture biotechnology, finance, and local systems. Status: funding, research, and first commodity-specific selections completed in Phase 50B.
 5. Add source records for post-quantum migration guidance and procurement evidence.
 6. Add source records for FAA/NHTSA dated certification or safety updates.
@@ -165,6 +165,15 @@ Completed in Phase 51B:
 - advanced the source library to 111 records and the signal library to 31 records,
 - advanced `gap-003` to `Source Added` while keeping all five affected gaps unresolved at their next downstream gate,
 - preserved Git and the static build as the public publication gate.
+
+Completed in Phase 51C:
+
+- added SRP Project Huckleberry as the first named customer electric-service and energization trail,
+- added Phoenix's current TSMC fab and employment update with company-claim labeling,
+- repaired the TSMC apprenticeship signal with an eight-person first cohort and a 46-person second cohort,
+- advanced the source library to 114 records and the signal library to 33 records,
+- kept wastewater operation, Phoenix occupancy, apprenticeship outcomes, and Toronto enactment as unresolved monitors,
+- preserved Git and human review as the public publication gate.
 
 ## Not Yet
 
