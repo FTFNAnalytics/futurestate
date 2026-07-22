@@ -4,7 +4,7 @@ Date: 2026-07-22
 
 ## Executive State
 
-FTFN is a locally verified static release candidate. The v0.2 content, public trust surfaces, data exports, indexing policy, release checks, and deferred Phase 52 authority-layer work are complete. The project is not yet deployed, the current development branch is not yet on GitHub, and no production DNS change has been made.
+FTFN is a locally and post-deploy verified static release candidate. The v0.2 content, public trust surfaces, data exports, indexing policy, release checks, and deferred Phase 52 authority-layer work are complete. An owner-only Sites deployment now exists, the current development branch is not yet on the public GitHub repository, and no production DNS change has been made.
 
 | Area | Current State |
 | --- | --- |
@@ -13,13 +13,15 @@ FTFN is a locally verified static release candidate. The v0.2 content, public tr
 | Current branch | `codex/phase51-content` |
 | Preserved Phase 52B checkpoint | `35f26f4` (`feat: complete phase 52b authority layer`) |
 | GitHub remote | `https://github.com/FTFNAnalytics/futurestate.git` |
-| Remote alignment | the current branch remains local and unpushed; verify the exact HEAD and ahead count before any external action |
-| Release state | local release candidate; preview deferred |
+| Remote alignment | the current branch remains unpushed to public GitHub; the exact hosting checkpoint was pushed only to the private Sites source repository |
+| Release state | owner-only hosted preview verified; public release deferred |
 | Canonical domain | `https://ftfn.io` |
-| Hosting | no hosting project or preview deployment configured |
+| Hosting | OpenAI Sites owner-only deployment at `https://ftfn-analytics.jbumstead.chatgpt.site` |
 | Public launch | not approved and not performed |
 
 Phase 55C preserves the completed release package locally and follows Project Baccara into conditional county and proposed air-permit records. It repairs the existing signal rather than adding another one and does not authorize a push, preview, DNS change, public launch, or additional Published promotion.
+
+Phase 55D adds a minimal static hosting adapter, deploys the exact 218-page package to an owner-only Sites URL, and passes hosted checks on core reader routes, canonical and indexing metadata, robots, sitemap, and the 120-record source export. It does not authorize public access, `ftfn.io` attachment, or Hostinger DNS changes.
 
 ## Build Inventory
 
@@ -110,13 +112,13 @@ Verified results:
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
 
-The detailed evidence is in `docs/release-qa-v0.2.md`. Preview and production behavior have not been verified because there is no deployment.
+The local evidence is in `docs/release-qa-v0.2.md`; hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview passed post-deploy checks, while public custom-domain behavior remains unverified because `ftfn.io` is not attached.
 
 ## Repository And Deployment State
 
 The local release work is preserved on `codex/phase51-content`. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
-The next repository action is a local Phase 55C checkpoint commit. GitHub push, pull-request review, merge, and preview deployment remain deferred by the current non-public decision. If external work is later approved, do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
+The hosting checkpoint is preserved in the private Sites source repository while the public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
 The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-22 to remain outside Cloudflare, with Google Workspace mail records active. Before any nameserver or DNS change, inventory and preserve every mail and verification record. Hosting-provider selection remains an explicit Phase 55 decision: Cloudflare Pages is the documented default, but another static host may be chosen if avoiding a nameserver migration is more important.
 
@@ -134,12 +136,11 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Readiness Verdict
 
-The product build is technically ready for an unchanged access-protected preview, but the current decision is to keep it local and non-public while content deepening continues. A later launch would still require four operational gates:
+The product build now has a verified owner-only hosted preview and remains non-public. A later launch would still require three operational gates:
 
-1. synchronize the verified branch to GitHub,
-2. deploy and verify an unchanged preview,
-3. freeze the release as `0.2.0`,
-4. approve and execute the production domain launch while preserving email DNS.
+1. decide whether to synchronize the verified branch to public GitHub,
+2. freeze the release as `0.2.0`,
+3. approve public access and execute the production-domain launch while preserving email DNS.
 
 Supabase can begin in parallel as a private authority-loop backend, but it must not block the static preview or bypass Git and human publication review.
 

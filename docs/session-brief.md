@@ -94,13 +94,14 @@ What is now stable:
 - Phase 51C added named Meta electric-service and TSMC facility milestones, repaired the apprenticeship signal with active cohort counts, and brought the library to 33 signals without forcing missing downstream outcomes.
 - Phase 55B added the White House and OMB post-quantum migration records, a named Arizona Project Baccara certificate trail, and two bounded `In Review` signals; it also refreshed the Toronto, Ontario, and ACC monitoring rails.
 - Phase 55C repaired the existing Project Baccara signal with official County conditions, an official proposed-air-permit notice, and independent vote corroboration while keeping final permits, construction, occupancy, and operation unresolved.
+- Phase 55D deployed the unchanged 218-page candidate to an owner-only Sites URL and passed hosted route, metadata, indexing, robots, sitemap, and source-export checks without touching Hostinger DNS.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 12 sources supporting the nine Published signals carry a current `2026-07-22` check date.
 - The compact header defect was repaired: every brand and primary-navigation link now has at least a 44-pixel target.
 - `npm run verify:release` and `deployment/ftfn-v0.2-build.json` preserve the repeatable v0.2 release contract.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
-- Frozen v0.1.1 desktop/mobile and indexing QA passed locally; no preview deployment was created.
+- Frozen v0.1.1 desktop/mobile and indexing QA passed locally; the current v0.2 candidate now also has an owner-only hosted preview.
 
 What is still prelaunch scaffolding:
 
@@ -110,12 +111,12 @@ What is still prelaunch scaffolding:
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
 - There is no automation, ingestion, database, alerting, user account system, or numeric 42/59 scoring. Public metadata datasets now exist as static exports.
-- There is no deployment, DNS change, analytics, newsletter capture, or Cloudflare Pages project yet.
-- Preview/post-deploy checks, broader assistive-technology testing, analytics decisions, and final public launch approval still need later passes.
+- There is no public deployment, custom-domain attachment, DNS change, analytics, newsletter capture, or public access yet.
+- Broader assistive-technology testing, analytics decisions, package freeze, custom-domain verification, and final public launch approval still need later passes.
 
 Current strategic direction:
 
-FTFN should now preserve the verified static candidate while making a deliberate preview decision. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phases 52A-52B completed the public contract, private 150-source discovery shelf, and authority surfaces; Phases 51A-51C built named local evidence trails; Phase 53 produced a nine-record Published set; and Phase 54 verified the complete public package locally. If a private preview is approved, deploy this exact candidate and rerun the launch-critical checks on the preview URL before any version freeze, DNS, or public-launch decision. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should now preserve the verified owner-only preview while making a deliberate public-domain decision. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phases 52A-52B completed the public contract, private 150-source discovery shelf, and authority surfaces; Phases 51A-51C built named local evidence trails; Phase 53 produced a nine-record Published set; Phase 54 verified the package locally; and Phase 55D verified it on a hosted owner-only URL. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -224,7 +225,7 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 55C: Conditional Permit Follow-Through
+Phase 55D: Owner-Only Sites Preview
 ```
 
 Key files:
@@ -239,6 +240,7 @@ Key files:
 - `docs/work-packages/phase-55a-local-checkpoint-and-authority-refresh.md`
 - `docs/work-packages/phase-55b-migration-and-facility-evidence.md`
 - `docs/work-packages/phase-55c-conditional-permit-follow-through.md`
+- `docs/work-packages/phase-55d-owner-only-sites-preview.md`
 - `docs/release-qa-v0.2.md`
 - `docs/launch-note-v0.2.md`
 - `deployment/ftfn-v0.2-build.json`
@@ -293,16 +295,17 @@ Key files:
 Next external decision identified in the roadmap:
 
 ```text
-Phase 55 repository synchronization and private-preview approval
+Phase 56 public access, release freeze, and ftfn.io custom-domain approval
 ```
 
 If approved:
 
 - review and commit `docs/build-summary-v0.2.md`, `docs/roadmap-v0.2.md`, and `docs/session-handoff-v0.2.md`,
 - push `codex/phase51-content` to GitHub and review it against `main`,
-- deploy the exact locally verified v0.2 candidate to a private preview URL,
-- repeat the launch-critical route, asset, metadata, indexing, and export checks on that URL,
-- decide separately whether to freeze package version `0.2.0`, attach `ftfn.io`, or launch publicly,
+- change the Sites access policy only after explicit public-release approval,
+- request the exact Sites custom-domain records for `ftfn.io` and `www.ftfn.io`,
+- inventory Hostinger DNS and preserve every Google Workspace mail and verification record,
+- decide separately whether to freeze package version `0.2.0` and attach `ftfn.io`,
 - keep the Phase 51 wastewater, permit, workforce-outcome, Toronto Council, by-law, start, completion, and occupancy trails as dated monitors,
 - keep Git and the static build as the public publication gate,
 - activate the private Supabase authority loop separately when project access is ready,
@@ -384,18 +387,18 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 55C conditional permit follow-through, following the Phase 55B migration and facility evidence pass.
+Phase 55D owner-only Sites preview, following the Phase 55C conditional permit follow-through.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 local release candidate: package 0.2.0-dev, 120 public sources, 150 private candidates, 35 signals, 17 topics, 7 updates, 218 pages, 9 Published signals, 3 public JSON endpoints, and passed local desktop/mobile release QA on codex/phase51-content. The private layer has 45 reviewed records; current Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, 17 Watch Soon, and 103 Current records.
+v0.2 owner-only hosted candidate: package 0.2.0-dev, 120 public sources, 150 private candidates, 35 signals, 17 topics, 7 updates, 218 pages, 9 Published signals, 3 public JSON endpoints, passed local desktop/mobile release QA, and passed hosted checks at https://ftfn-analytics.jbumstead.chatgpt.site. The private layer has 45 reviewed records; current Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, 17 Watch Soon, and 103 Current records.
 
 Next decision gate:
-Continue the bounded Phase 55 content-authority pass while the branch remains local and non-public. Verify Git state first and use `35f26f4` as the preserved Phase 52B checkpoint. Prioritize Project Baccara's executed MCP, final air permit, service/POD/military/building or occupancy records; Toronto application 24 254930 after the July 29-31 Council window; the first named public-agency PQC plan or procurement rule; or a gap-led item among the 17 Watch Soon records. Push, preview, merge, hosting, DNS, and public launch remain separate explicit decisions.
+Preserve the owner-only Phase 55D preview. The next decision is either another bounded authority pass or a separately approved Phase 56 public-domain sequence. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
-Please confirm the current state from both the docs and repository, then proceed with the Phase 55 local preflight. Report before taking the first external action.
+Please confirm the current state from both the docs and repository, preserve the owner-only Phase 55D preview, and report before any public-access, custom-domain, or Hostinger DNS action.
 ```
 
 ## Implementation Reminders

@@ -2038,3 +2038,25 @@ Implemented:
 Boundary:
 
 The reported vote is not substituted for executed County minutes. The proposed air permit is not a final permit or EPA non-objection. The records do not prove service commitments, a precise Plan of Development, military-compliance approval, building or occupancy permits, construction, commissioning, operation, or measured power, water, reuse, and emissions performance. No push, deployment, DNS change, or public launch was authorized.
+
+## 2026-07-22: Phase 55D Uses Sites For An Owner-Only Preview
+
+Decision:
+
+FTFN will use OpenAI Sites for the verified v0.2 owner-only preview, while Hostinger remains the DNS provider for `ftfn.io`. The preview will stay private and domainless until public access, release freeze, and custom-domain work are approved separately.
+
+Rationale:
+
+The current Astro output is static and already passes the local release contract. A minimal Sites packaging adapter makes that unchanged output deployable behind an owner-only access policy without moving nameservers, exposing the public Git branch, or changing Google Workspace mail records. Hosted verification provides the missing external evidence while preserving a clean stop before public launch.
+
+Implemented:
+
+- created the FTFN Sites project and private source repository,
+- added the minimal static asset packaging adapter,
+- deployed the 218-page `0.2.0-dev` candidate to `https://ftfn-analytics.jbumstead.chatgpt.site`,
+- verified core routes, canonical and indexing metadata, `robots.txt`, `sitemap.xml`, and the 120-record source export,
+- kept access owner-only and recorded the result in the Phase 55D work package and v0.2 manifest.
+
+Boundary:
+
+The provider URL is a private release checkpoint, not a public launch. No `0.2.0` freeze, public access, custom-domain attachment, Hostinger DNS edit, nameserver change, analytics setup, or Google Workspace mail-record change was authorized.

@@ -5,8 +5,16 @@
   "project": "FTFN",
   "package_name": "ftfn-app",
   "package_version": "0.2.0-dev",
-  "deployment_status": "local-release-candidate-preview-deferred",
+  "deployment_status": "owner-only-private-preview-deployed",
   "public_launch_approved": false,
+  "private_preview": {
+    "provider": "OpenAI Sites",
+    "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
+    "access": "owner-only-custom-policy",
+    "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
+    "custom_domain_attached": false,
+    "post_deploy_qa": "passed"
+  },
   "canonical_site": "https://ftfn.io",
   "app_root": "app",
   "framework": "Astro",
@@ -84,7 +92,7 @@
       "390x844"
     ],
     "browser_routes_checked": 10,
-    "preview_qa": "deferred-pending-explicit-approval"
+    "preview_qa": "passed-owner-only"
   },
   "required_output_files": [
     "dist/index.html",
@@ -171,7 +179,7 @@
   ],
   "known_limitations": [
     "The package version remains 0.2.0-dev until an approved preview and release decision.",
-    "Preview and post-deploy route checks are deferred because no deployment was authorized.",
+    "The hosted Sites URL is owner-only and has not been made public or attached to ftfn.io.",
     "Twenty-five signals, one Draft Sample, one briefing, two dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
     "The public JSON files are static build exports, not a live API or database-backed service.",
     "The 150-record candidate registry is an ignored local file and requires private backup outside public Git.",
@@ -179,5 +187,5 @@
     "The Project Baccara record stops at a reported conditional county vote and proposed air permit; it does not prove final permits, condition compliance, construction, occupancy, or operation.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records a locally verified v0.2 release candidate after the Phase 55C conditional-permit follow-through. It does not authorize preview hosting, public deployment, DNS changes, or publication beyond the nine records already marked Published."
+  "notes": "This manifest records a locally and post-deploy verified v0.2 candidate after the Phase 55D owner-only Sites preview. It does not authorize public access, custom-domain attachment, DNS changes, or publication beyond the nine records already marked Published."
 }

@@ -70,7 +70,7 @@ Existing operating assets:
 - versioned static source, topic, and Published-signal exports,
 - robots, sitemap, canonical, and indexing boundaries.
 
-The source-count, signal-count, publication-set, public-trust, data-export, and local release-QA targets for v0.2 have been reached. The remaining external gate is an optional private preview and post-deploy verification, which requires explicit approval.
+The source-count, signal-count, publication-set, public-trust, data-export, local release-QA, and owner-only preview targets for v0.2 have been reached. The remaining external gate is a separate public-access and custom-domain decision.
 
 ## v0.2 Product Promise
 
@@ -354,26 +354,25 @@ Recommended active schedule:
 | Completed | Phase 52 | update log, static exports, 150-source private candidate registry, and improved authority surfaces |
 | Completed | Phase 53 | nine Published records and a documented 23-record review shelf |
 | Completed | Phase 54 | local release gate, touch-target repair, v0.2 manifest, launch note, preview explicitly deferred |
-| Current | Phase 55 | keep the branch local, complete bounded authority follow-through, and defer external synchronization or preview until explicitly approved |
+| Current | Phase 55 | preserve the verified owner-only Sites preview and stop before public access, custom-domain attachment, or Hostinger DNS changes |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 local build is complete. Phases 55A-55C have strengthened the local authority package without changing its non-public posture. Repository synchronization, preview, post-deploy verification, release freeze, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete. Phases 55A-55D strengthened the authority package and verified it on a hosted URL without changing its non-public posture. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
-### Phase 55: Local Preservation, Repository Synchronization, And Private Preview - In Progress
+### Phase 55: Local Preservation, Private Source Synchronization, And Owner-Only Preview - Complete
 
-Goal: preserve the exact verified candidate locally, continue bounded content-authority work while it remains non-public, and move into GitHub or hosting only after a separate explicit approval.
+Goal: preserve the exact verified candidate locally, continue bounded content-authority work while it remains non-public, and establish an owner-only hosted checkpoint after explicit approval.
 
 Deliverables:
 
 - preserve the Phase 52B release and handoff package in a local commit,
 - triage a bounded 15-record private candidate batch and refresh selected active-source anchors,
-- push `codex/phase51-content` to `FTFNAnalytics/futurestate`,
-- review the complete local branch against the older `origin/main` baseline,
-- merge through an intentional reviewed path,
+- preserve public GitHub synchronization as a separate optional review path,
+- transfer the exact reviewed checkpoint into the private Sites source repository,
 - select a static host using the existing-domain constraint as a real decision input,
 - deploy the exact reviewed commit to a non-production provider preview URL and add access protection if confidentiality is required,
 - rerun the launch-critical route, asset, canonical, robots, sitemap, indexing, update-log, and JSON-export checks,
@@ -385,19 +384,21 @@ Current stop point:
 - the first Phase 55A authority refresh is complete and verified,
 - Phase 55B added current federal post-quantum migration records, a named Arizona facility permit trail, and refreshed Toronto, Ontario, and ACC monitoring rails,
 - Phase 55C repaired the Project Baccara signal with official county conditions, an official proposed-air-permit notice, and independent vote corroboration while preserving every downstream gate,
-- the branch remains unpushed and no host is connected,
+- Phase 55D deployed and verified the exact package at `https://ftfn-analytics.jbumstead.chatgpt.site` with owner-only access,
+- the branch remains unpushed to public GitHub; the exact checkpoint exists in the private Sites source repository,
+- no custom domain is attached and Hostinger DNS remains unchanged,
 - the next local content pass should follow the fully executed `MCP250007` record or final air permit, Toronto application `24 254930` after the July 29-31 Council window, the first public-agency PQC plan or procurement rule, or a gap-led item among the 17 Watch Soon sources,
-- GitHub synchronization and any access-protected preview remain deferred pending explicit approval.
+- GitHub synchronization, public access, and custom-domain attachment remain deferred pending explicit approval.
 
 Hosting decision rule:
 
-- Cloudflare Pages remains the default when consolidated DNS, CDN, TLS, and future edge services justify a careful nameserver migration.
-- A static host that supports external DNS remains acceptable when avoiding a nameserver migration is the safer launch choice.
-- The site architecture does not require a specific host.
+- OpenAI Sites is the selected owner-only preview host.
+- Hostinger remains the DNS authority, and the preview does not require a nameserver migration.
+- The site architecture remains static and does not require a provider-specific public launch path.
 
 Exit criteria:
 
-- the current branch exists on GitHub and has been reviewed against `main`,
+- the exact reviewed checkpoint exists in the private Sites source repository,
 - the preview deploys from the recorded commit and not from the older Phase 50B remote baseline,
 - all launch-critical preview checks pass,
 - production DNS remains unchanged,
@@ -511,4 +512,4 @@ All nine local success criteria pass in the Phase 54 candidate. Preview and publ
 
 ## Immediate Next Step
 
-Complete the Phase 55C local checkpoint, then continue only with bounded downstream evidence: Project Baccara's executed MCP, final air permit, service/POD/military/building or occupancy records; Toronto Council/by-law follow-through after July 29-31; the first named public-agency PQC plan or procurement rule; or a gap-led item among the 17 Watch Soon source records. Keep GitHub synchronization, hosting, preview, package freeze, DNS, and public launch behind separate explicit approval. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Choose whether to keep the Phase 55D preview owner-only or begin the separately approved public-domain sequence. If content work continues first, use only bounded downstream evidence: Project Baccara's executed MCP or final permits, Toronto Council/by-law follow-through after July 29-31, the first named public-agency PQC plan or procurement rule, or a gap-led item among the 17 Watch Soon records. Keep public access, package freeze, Hostinger DNS, and public launch behind separate explicit approval. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

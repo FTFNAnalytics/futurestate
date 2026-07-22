@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 55C conditional permit follow-through
+Latest completed work: Phase 55D owner-only Sites preview
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
-Git state: branch remains local and unpushed; verify exact HEAD and ahead count
+Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
 Build: 218 pages
 Content: 120 sources, 35 signals, 17 topics
 Publication: 9 Published, 25 In Review, 1 Draft Sample
 Trust/data: 7 update entries, 3 versioned JSON exports
 Private authority layer: 150 candidates, 15 profiles, 44 Candidate, 1 Rejected, 105 Needs Triage
-Deployment: none
+Deployment: owner-only Sites URL at https://ftfn-analytics.jbumstead.chatgpt.site
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 0 Review Due, 17 Watch Soon, 103 Current; 14 Strong coverage lanes
-Next phase: continue bounded Phase 55 downstream evidence; external synchronization and preview remain deferred
+Next phase: decide separately between continued bounded evidence work and public custom-domain execution
 ```
 
 ## Read First
@@ -41,7 +41,7 @@ Use this short order:
 The new session should verify rather than assume:
 
 1. Run `git status --short --branch`.
-2. Confirm `git log --oneline --decorate -12` still has `35f26f4` in the current history and inspect the newer local Phase 55A, Phase 55B, and Phase 55C commits.
+2. Confirm `git log --oneline --decorate -14` still has `35f26f4` in the current history and inspect the newer Phase 55A-55D commits.
 3. Compare the current branch with `origin/main` and confirm which remote branches exist.
 4. Read the v0.2 manifest and confirm package/count expectations still match the repository.
 5. Review any current documentation or content diff before committing it.
@@ -49,20 +49,18 @@ The new session should verify rather than assume:
 7. Confirm `private-data/source-candidates.json` remains ignored and run `npm.cmd run validate:candidates` from `app/`.
 8. If app or content files changed after Phase 54, rerun the complete release command set before any preview.
 
-## Phase 55 External Execution Sequence - Deferred
+## Phase 55 External Execution Sequence - Private Preview Complete
 
-Use this sequence only after the user separately approves external synchronization or preview work:
+The approved preview sequence is complete:
 
-1. Confirm the Phase 52B checkpoint and Phase 55A-55C content-authority commits are present locally.
-2. Authenticate GitHub through a browser or approved credential helper; never paste passwords, tokens, recovery codes, or private keys into chat.
-3. Push `codex/phase51-content` to `FTFNAnalytics/futurestate`.
-4. Review the branch against `main`, then merge through a pull request or another explicit reviewed path.
-5. Select the static host. Cloudflare Pages remains the documented default; use another static host if retaining the current external DNS is the better operational choice.
-6. Configure a non-production preview from the exact reviewed commit with app root `app`, build command `npm run build`, and output directory `dist`. If the preview must be confidential, enable access protection; an unlinked preview URL is not automatically private.
-7. Do not attach `ftfn.io` during preview setup.
-8. Run the manifest's launch-critical route, asset, canonical, indexing, update-log, and export checks against the preview URL.
-9. Record the preview URL, deployed commit, provider, build result, and post-deploy QA result in a Phase 55 work package.
-10. Stop for an explicit release decision before changing the package version, DNS, or public visibility.
+1. Confirmed the Phase 52B checkpoint and Phase 55A-55C authority work in local history.
+2. Built and revalidated the exact 218-page candidate.
+3. Created a private Sites source repository without pushing the branch to public GitHub.
+4. Added the minimal static Sites packaging adapter and deployed the reviewed checkpoint.
+5. Kept the preview owner-only and did not attach `ftfn.io`.
+6. Passed hosted route, canonical, indexing, update-log, robots, sitemap, and export checks.
+7. Recorded the provider, URL, checkpoint, packaging boundary, and QA result in the Phase 55D work package.
+8. Stopped before package freeze, public access, custom-domain attachment, or Hostinger DNS changes.
 
 ## Required Stop Points
 
@@ -116,9 +114,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 55C. The current candidate should be 0.2.0-dev on codex/phase51-content at or after the preserved Phase 52B checkpoint 35f26f4, with 120 sources, 35 signals, nine Published signals, seven public updates, three JSON exports, and 218 pages. The branch remains local and unpushed, and no preview or production deployment exists.
+The latest completed work is Phase 55D. The current candidate should be 0.2.0-dev on codex/phase51-content at or after the preserved Phase 52B checkpoint 35f26f4, with 120 sources, 35 signals, nine Published signals, seven public updates, three JSON exports, and 218 pages. An owner-only Sites deployment exists at https://ftfn-analytics.jbumstead.chatgpt.site; the branch remains unpushed to public GitHub, and no custom domain or public launch exists.
 
 Phase 52B is complete and Phase 55A reviewed 15 more records: the local-only private registry contains exactly 150 candidates across 15 profiles, with 44 at Candidate, one Rejected, and 105 still needing triage. Confirm it remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Proceed with the next bounded Phase 55 content pass while keeping the project non-public: follow Project Baccara's executed MCP, final air permit, service/POD/military/building or occupancy records; Toronto application 24 254930 after the July 29-31 Council window; the first named public-agency post-quantum migration plan or procurement rule; or a gap-led item among the 17 Watch Soon source records. Report before pushing, merging, connecting a host, or deploying. Do not change ftfn.io DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if a later domain migration is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. The next decision is either continued bounded Phase 55 content work or a separately approved public-domain sequence for ftfn.io. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

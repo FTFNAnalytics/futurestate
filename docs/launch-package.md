@@ -2,7 +2,7 @@
 
 This document defines the first static launch package for FTFN on `ftfn.io`.
 
-It is a readiness plan, not a deployment record. Do not treat this document as evidence that the site has been deployed.
+It is the launch-readiness plan and now records the Phase 55D owner-only preview checkpoint. That preview is not a public launch and does not authorize a custom domain or DNS change.
 
 ## Launch Posture
 
@@ -22,29 +22,25 @@ The first launch should remain deliberately narrow. FTFN is introducing the meth
 
 Decision:
 
-Use Cloudflare Pages as the primary static hosting path for `ftfn.io`, unless an existing domain or account setup makes another static host clearly simpler.
+Use OpenAI Sites for the current owner-only preview. Keep `ftfn.io` on Hostinger DNS until a separately approved public-domain sequence provides exact records and a rollback plan.
 
 Why this path fits FTFN:
 
 - FTFN is currently a static Astro site.
 - The app has no server runtime, accounts, database, ingestion, or API requirement.
 - A static host keeps the first launch reversible.
-- Cloudflare Pages can connect to a repository, run a build command, serve a static output directory, and attach the `ftfn.io` domain.
-- Cloudflare is also a natural fit if DNS for `ftfn.io` is managed there later.
+- Sites can retain a private source repository, publish the static output behind an owner-only access policy, and support a later custom-domain decision.
+- Hostinger remains the external DNS authority, so preview hosting does not require a nameserver migration or changes to Google Workspace mail records.
 
-Reference docs:
-
-- Astro Cloudflare deployment guide: https://docs.astro.build/en/guides/deploy/cloudflare/
-- Cloudflare Pages Astro guide: https://developers.cloudflare.com/pages/framework-guides/deploy-an-astro-site/
-
-Recommended deploy configuration:
+Implemented preview configuration:
 
 ```text
-Project root: app
-Build command: npm run build
-Build output directory: dist
-Production branch: main or the chosen launch branch
-Node version: use the platform default unless build output says otherwise
+Project source: exact reviewed Git checkpoint in the private Sites source repository
+Application build: npm run build from app
+Packaging adapter: npm run prepare:sites from app
+Static assets: app/dist copied into the Sites package
+Access: owner-only
+Custom domain: none
 ```
 
 The current v0.2 local release manifest is:
@@ -55,9 +51,9 @@ deployment/ftfn-v0.2-build.json
 
 The original `deployment/ftfn-v0.1-build.json` remains the historical Phase 40 checkpoint, and `deployment/ftfn-v0.1.1-build.json` preserves the frozen 182-page candidate.
 
-Local v0.2 release QA passed on 2026-07-22; see `docs/release-qa-v0.2.md`. This does not authorize deployment. The package remains `0.2.0-dev` until an approved preview and release decision.
+Local v0.2 release QA and owner-only hosted QA passed on 2026-07-22; see `docs/release-qa-v0.2.md` and `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The package remains `0.2.0-dev` until an approved public-release decision.
 
-Do not deploy in this phase. The next deploy step should be explicit and user-approved.
+Do not change public access, attach `ftfn.io`, or edit Hostinger DNS without separate approval.
 
 ## Generated Launch Assets
 
@@ -162,19 +158,20 @@ Expected results:
 - [x] Run desktop and mobile browser checks at 1440 × 900 and 390 × 844.
 - [x] Confirm brand and primary-navigation targets meet a 44-pixel minimum.
 
-Evidence: `docs/release-qa-v0.2.md` and `docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md`.
+Evidence: `docs/release-qa-v0.2.md`, `docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md`, and `docs/work-packages/phase-55d-owner-only-sites-preview.md`.
 
 ## Deploy Checklist
 
-Do not execute these steps until the user explicitly asks to deploy.
+The owner-only preview portion is complete. Do not execute the remaining public-domain steps without explicit approval.
 
-- [ ] Connect repository to Cloudflare Pages.
-- [ ] Set project root to `app`.
-- [ ] Set build command to `npm run build`.
-- [ ] Set build output directory to `dist`.
-- [ ] Deploy to a preview URL first.
-- [ ] Run the launch-critical route checklist on the preview URL.
-- [ ] Attach `ftfn.io` only after preview checks pass.
+- [x] Create the Sites project and private source repository.
+- [x] Build and package the exact 218-page candidate.
+- [x] Deploy to an owner-only preview URL.
+- [x] Run the launch-critical route and trust-output checklist on the preview URL.
+- [ ] Approve public access and the `0.2.0` release freeze.
+- [ ] Request and record the exact Sites custom-domain validation and traffic records.
+- [ ] Inventory the current Hostinger zone and preserve Google Workspace MX, SPF, DKIM, DMARC, verification, and other TXT records.
+- [ ] Attach `ftfn.io` only after the public-domain plan and rollback record are approved.
 - [ ] Run the launch-critical route checklist on `https://ftfn.io`.
 - [ ] Decide whether to add analytics in a later phase.
 
@@ -208,8 +205,8 @@ Outline:
 
 ## Out Of Scope For Launch Readiness
 
-- No deployment without approval.
-- No DNS changes.
+- No public deployment or access-policy change without approval.
+- No custom-domain or DNS changes.
 - No analytics.
 - No newsletter capture.
 - No automated ingestion.

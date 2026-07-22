@@ -910,8 +910,8 @@ These are the next practical actions from the current project state.
 201. Run `npm run validate:content`, `npm run check`, and `npm run build` after source-monitor changes. Status: complete.
 202. Run desktop and mobile browser QA on homepage, signal index, Published signal detail, Method, About, Atlas, source monitor, robots, and sitemap. Status: complete for the frozen v0.1.1 local artifact; see `docs/release-qa-v0.1.1.md`.
 203. Confirm no visible launch-critical page presents In Review or Draft Sample records as Published. Status: complete for the frozen v0.1.1 local artifact.
-204. Decide whether to execute a Cloudflare Pages preview deploy or keep deployment manual.
-205. If a preview deploy is approved, deploy to a preview URL only and run the launch checklist there.
+204. Decide whether to execute a private preview deploy or keep deployment manual. Status: complete in Phase 55D; OpenAI Sites selected for the owner-only preview.
+205. If a preview deploy is approved, deploy to a preview URL only and run the launch checklist there. Status: complete in Phase 55D; hosted checks passed with no custom domain.
 206. Do not attach `ftfn.io`, change DNS, add analytics, or launch publicly without explicit approval.
 207. Create a dedicated signals roadmap for the next high-value content expansion cycle. Status: complete; added `docs/signals-roadmap.md`.
 208. After Phase 37, use the source monitor and signals roadmap to select a small source-backed signal batch rather than expanding for volume. Status: complete; Phase 38 red-teamed the authority gaps before execution.
@@ -976,18 +976,19 @@ These are the next practical actions from the current project state.
 267. Continue Phase 51C only with downstream electric-service or energization, built wastewater and IRWP infrastructure, Phoenix permits and occupancy, workforce outcomes, Toronto City Council and by-laws, and project permit/start/completion evidence. Status: complete; added a named Meta online service project, current TSMC facility milestones, and active apprenticeship cohorts while leaving unsupported lanes open.
 268. Begin Phase 53 publication-candidate review from the 33-signal library. Status: complete; rechecked the public core, promoted six bounded records, reached nine Published signals, and documented 23 In Review holds plus one Draft Sample without weakening the evidence gates.
 269. Complete Phase 54 v0.2 release QA and preview-gate review. Status: complete; passed content, source-health, Astro, 210-page build, exact indexing/export assertions, and desktop/mobile browser QA; repaired header touch targets; added the v0.2 manifest, release QA, and launch note; explicitly deferred preview deployment.
-270. Decide whether to deploy the verified v0.2 candidate to a private preview. Status: next decision gate; requires explicit approval.
-271. If preview is approved, rerun the launch-critical route, asset, metadata, indexing, and export checks on the preview URL before any `0.2.0` version freeze, DNS, or public-launch decision.
+270. Decide whether to deploy the verified v0.2 candidate to a private preview. Status: complete; owner-only Sites preview approved and deployed in Phase 55D.
+271. If preview is approved, rerun the launch-critical route, asset, metadata, indexing, and export checks on the preview URL before any `0.2.0` version freeze, DNS, or public-launch decision. Status: complete; hosted checks passed without changing the package version, DNS, or public access.
 272. Create the v0.2 build summary, updated post-Phase 54 roadmap, and session handoff plan. Status: complete; added `docs/build-summary-v0.2.md`, expanded `docs/roadmap-v0.2.md`, and added `docs/session-handoff-v0.2.md`.
 273. Begin Phase 55 by reviewing and committing the handoff package, then prepare `codex/phase51-content` for later review against the older Phase 50B `origin/main` baseline. Status: local preservation complete at `35f26f4`; external push deferred.
-274. Select a static host using the existing DNS and Google Workspace constraint as a real decision input, then deploy the exact reviewed commit to a preview URL without attaching `ftfn.io`.
-275. Complete post-deploy QA and record the preview provider, URL, commit, build settings, and verification result before any release freeze.
+274. Select a static host using the existing DNS and Google Workspace constraint as a real decision input, then deploy the exact reviewed commit to a preview URL without attaching `ftfn.io`. Status: complete; OpenAI Sites selected for the owner-only preview while Hostinger remains the DNS provider.
+275. Complete post-deploy QA and record the preview provider, URL, commit, build settings, and verification result before any release freeze. Status: complete; Phase 55D records the Sites URL, hosted checkpoint, adapter, access boundary, and passing verification.
 276. If separately approved, complete Phase 56 by freezing `0.2.0`, preserving mail DNS, attaching `ftfn.io`, and verifying the production release plus rollback path.
 277. Begin the Phase 57 authority operating rhythm after launch and keep Phase 58 Supabase work private, RLS-backed, Git-exported, and unable to publish claims directly.
 278. Complete Phase 52B authority-layer closeout at a 150-candidate target. Status: complete; added the local-only registry, validator, release leak check, Source Monitor review groups and next actions, Source Coverage strength summaries, workflow documentation, and work package.
 279. Complete Phase 55A local checkpoint and authority refresh without pushing or deploying. Status: complete; reviewed 15 additional private candidates, retained 14 as Candidate, rejected one retired dataset, refreshed three active source anchors, and verified 14 Strong Source Coverage lanes with two overdue unassigned source records remaining.
 280. Complete Phase 55B migration and facility evidence pass without pushing or deploying. Status: complete; added three official source records and two bounded `In Review` signals, refreshed Toronto, Ontario, and ACC monitoring rails, cleared the two overdue source checks, and preserved all remaining downstream gates.
 281. Complete Phase 55C conditional permit follow-through without pushing or deploying. Status: complete; added official County conditions, an official proposed-air-permit notice, and independent vote corroboration; repaired the existing Project Baccara signal; and preserved every final-permit, service, military, construction, occupancy, and operating gate.
+282. Complete Phase 55D owner-only Sites preview without attaching `ftfn.io` or changing public access. Status: complete; deployed the 218-page candidate, passed route, metadata, indexing, robots, sitemap, and export checks, and preserved Hostinger plus Google Workspace DNS unchanged.
 
 ## 10. Current Stage Map
 
@@ -1035,7 +1036,7 @@ FTFN is no longer only a concept or documentation project. It now has:
 - Source Monitor review-state groups and next actions plus Strong, Developing, and Weak Source Coverage summaries.
 - a passed v0.2 local release gate with a versioned manifest, repeatable release assertions, desktop/mobile browser evidence, repaired 44-pixel header targets, and a public-facing launch note plus limitations statement.
 
-It is not yet a deployed public launch product because optional private-preview execution, post-deploy QA, package-version freeze, DNS attachment, analytics decisions, and final public-launch approval remain separate. The current v0.2 build has passed Phase 54 locally and the expanded Phase 55C content package has been revalidated. Nine records are `Published`, 25 signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint profiles, the briefing, dependency maps, and most reviewed signals remain prelaunch material.
+It is not yet a public launch product. An owner-only Sites preview now exists and has passed post-deploy QA, while package-version freeze, public access, `ftfn.io` attachment, Hostinger DNS changes, analytics decisions, and final public-launch approval remain separate. The current v0.2 build has passed Phase 54 locally and Phase 55D on the hosted preview. Nine records are `Published`, 25 signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint profiles, the briefing, dependency maps, and most reviewed signals remain prelaunch material.
 
 ### Stage 1: Reader-Journey QA
 
@@ -1102,7 +1103,7 @@ Completed work:
 
 Decision:
 
-The frozen v0.1.1 local browser/indexing gate passed. Keep deploy-preview preparation separate and approval-gated before any public deployment.
+The frozen v0.1.1 local browser/indexing gate passed, and the current v0.2 candidate now also passes on an owner-only hosted preview. Keep public access and custom-domain work separately approval-gated.
 
 Completed launch-readiness work:
 
@@ -1115,9 +1116,9 @@ Completed launch-readiness work:
 
 Next candidate work:
 
-- Decide whether to execute a Cloudflare Pages preview deploy.
-- If approved, repeat route and indexing checks on the preview URL.
-- Keep `ftfn.io` attachment and DNS changes out of scope until explicitly approved.
+- Preserve the verified owner-only Sites preview as the current release checkpoint.
+- Decide separately whether to freeze `0.2.0`, enable public access, and attach `ftfn.io`.
+- Keep Hostinger DNS changes out of scope until explicitly approved, and preserve all Google Workspace records if domain work proceeds.
 
 ### Stage 4: Source Authority And Freshness
 

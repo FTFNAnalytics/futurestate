@@ -1089,6 +1089,26 @@ Do not use it for:
 - treating a permit stage as construction, occupancy, or operation,
 - authorizing a push, preview deployment, DNS change, or public launch.
 
+### Phase 55D Owner-Only Sites Preview
+
+Purpose:
+
+- Record the owner-only Sites provider URL, source checkpoint, packaging adapter, access boundary, and hosted verification evidence.
+- Separate a successful private preview from public access, `ftfn.io` attachment, Hostinger DNS changes, and release freeze.
+- Preserve the Google Workspace DNS guardrail for any later domain work.
+
+Update when:
+
+- the Sites deployment version or access policy changes,
+- a custom domain is approved or attached,
+- hosted verification needs to be repeated after an application change.
+
+Do not use it for:
+
+- Publishing private credentials or bypass tokens.
+- Treating owner-only hosting as public launch approval.
+- Authorizing Hostinger DNS changes or a package-version freeze.
+
 ### v0.2 Build Manifest
 
 Purpose:
@@ -1096,18 +1116,18 @@ Purpose:
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
 - Capture the 218-page build, nine Published signals, 120 sources, seven updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
-- Drive `npm run verify:release` without treating local verification as deployment.
+- Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 
 Update when:
 
 - the exact v0.2 candidate changes,
 - required outputs, counts, route checks, or release assertions change,
-- an approved preview adds post-deploy verification state.
+- the owner-only preview or later production deployment changes verification state.
 
 Do not use it for:
 
 - Storing secrets.
-- Approving preview deployment, DNS attachment, or public launch.
+- Approving public access, DNS attachment, or public launch.
 - Replacing the human release decision.
 
 ### Technical Stack Decision
