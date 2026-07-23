@@ -117,7 +117,7 @@ These items come from the 36-source Phase 49 promotion batch. They should be use
 | uq-044 | Signal Draft Created | `source-phoenix-tsmc-2026-wastewater-development-agreement` | Water / Local Systems | Added a project-specific TSMC wastewater-conveyance and reclaimed-water milestone signal. | Track execution, construction and acceptance of the improvements, the June 30, 2028 IRWP deadline, measured reuse, and a facility water balance. |
 | uq-045 | Signal Draft Created | `source-phoenix-north-3500-pud-2026` | Local Systems / Compute and Chips | Added the adopted and amended PUD planning envelope for the TSMC campus area. | Select named site, civil, grading, or building permits, inspections, and certificates of occupancy. |
 | uq-046 | Signal Draft Created | `source-aca-tsmc-registered-technician-apprenticeship-2024` | Compute and Chips / Finance and Human Futures | Added a facility-linked technician apprenticeship with named pathways, partners, funding, and a 2025 recruitment target. | Add enrollment, completion, credential, retention, placement, construction-labor, and supplier-workforce evidence. |
-| uq-047 | Needs Source Recheck | `source-toronto-2026-sc33-9-item-history` | Local Systems / Finance and Human Futures | Added Scarborough Community Council's July 9, 2026 recommendation for application 24 254930; no later Council decision was available on July 22. | Recheck immediately after the July 29-31, 2026 City Council meeting for adoption, enacted by-laws, land conditions, and the first building permit. |
+| uq-047 | Signal Repaired | `source-toronto-2026-sc33-9-item-history` | Local Systems / Finance and Human Futures | Phase 55H added the dated July 29-31 Council gate and the wind-study, land-exchange, and laneway conditions that precede bill enactment; no Council outcome is claimed before the meeting. | Recheck immediately after the July 29-31, 2026 City Council meeting for the disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and the first building permit. |
 | uq-048 | Published | `source-toronto-development-pipeline-2025` | Local Systems / Finance and Human Futures | Toronto's citywide planning-to-permit-to-construction delivery baseline published in Phase 53. | Track stage conversion, completions, cancellations, financing conditions, and the named project's downstream records. |
 
 ## Batch 05: Phase 51C Downstream Service And Facility Evidence
@@ -134,7 +134,7 @@ These items come from the 36-source Phase 49 promotion batch. They should be use
 | --- | --- | --- | --- | --- | --- |
 | uq-052 | Signal Draft Created | `source-white-house-eo-14412-pqc-migration`, `source-omb-m-26-15-pqc-migration` | Security and Standards / Cross-Cutting Official Rails | Added a bounded federal PQC migration signal with leadership, plan, pilot, procurement, and 2030-2031 deadline boundaries. | Track agency plans, the NIST pilot, CISA guidance, FAR rulemaking, vendor readiness, and completed system transitions. |
 | uq-053 | Signal Draft Created | `source-acc-project-baccara-cec-2026` | Power and Grid / Water / Local Systems | Added a Project Baccara CEC signal separating proposed generation and water strategy from downstream permits, construction, and operation. | Track the full docket, ADEQ air permit, county and military-compatibility approvals, built infrastructure, and measured operating evidence. |
-| uq-054 | Source Rechecked | `source-toronto-building-permits` | Local Systems / Finance and Human Futures | Replaced the retired dataset candidate with Toronto's current permit and inspection status rail; a focused address query did not identify the selected project's permit. | Recheck with a known building-permit application number or all project addresses; absence from one portal query is not proof that no permit exists. |
+| uq-054 | Source Rechecked | `source-toronto-building-permits` | Local Systems / Finance and Human Futures | Phase 55H searched all eight addresses named in item 2026.SC33.9; each returned Application Not Found, recorded only as a bounded negative portal query. | Recheck with a confirmed building-permit application number or later project record; address-search absence is not proof that no permit exists. |
 | uq-055 | Source Rechecked | `source-ontario-housing-supply-progress` | Finance and Human Futures / Local Systems | Confirmed the tracker remains live but still presents the 2024 target year. | Watch the official page and Ontario Data Catalogue for the next target-year release. |
 
 ## Batch 07: Phase 55C Conditional Permit Follow-Through
@@ -258,6 +258,13 @@ Moved through the publication gate:
 Next queue step:
 
 Proceed to Phase 54 release QA. Keep `uq-044`, `uq-045`, `uq-047`, and `uq-051` as dated monitors and recheck `uq-047` after the July 29-31, 2026 Toronto City Council meeting.
+
+## Phase 55H Pre-Decision Progress
+
+- `uq-047` now records the official July 29-31 Council date and the wind-study, land-exchange, and laneway conditions that precede bill enactment,
+- `uq-054` now records bounded negative Building Permit searches across all eight project addresses,
+- no Council disposition, enacted by-law, permit, start, completion, or occupancy was claimed before the scheduled meeting,
+- the remaining action is a same-item post-meeting recheck, not a new broad source search.
 
 ## Operating Rule
 

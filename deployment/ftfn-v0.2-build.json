@@ -47,7 +47,7 @@
     "briefings": 1,
     "evidence_gaps": 10,
     "dependency_maps": 2,
-    "updates": 9,
+    "updates": 10,
     "public_json_exports": 3
   },
   "private_authority_layer": {
@@ -71,7 +71,7 @@
     "sources_added": 28,
     "public_json_exports_added": 3,
     "public_update_log_added": true,
-    "summary": "Completes the first authority-loop content milestone, the bounded Phase 55E evidence expansion, the Phase 55F publication review, and the Phase 55G Project Baccara authority conversion with 16 Published signals, a public update log, and versioned source, topic, and Published-signal exports."
+    "summary": "Completes the first authority-loop content milestone, the bounded Phase 55E evidence expansion, the Phase 55F publication review, the Phase 55G Project Baccara authority conversion, and the Phase 55H Toronto pre-decision authority gate with 16 Published signals, a public update log, and versioned source, topic, and Published-signal exports."
   },
   "last_verified": {
     "date": "2026-07-23",
@@ -170,7 +170,7 @@
     "Confirm all three public JSON exports match the versioned allowlist contract",
     "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
     "Confirm generated output contains no private candidate IDs or registry-path references",
-    "Confirm the nine-entry public update log renders",
+    "Confirm the ten-entry public update log renders",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
     "Attach ftfn.io only after preview checks pass and explicit approval is recorded"
@@ -197,7 +197,8 @@
     "The 150-record candidate registry is an ignored local file and requires private backup outside public Git.",
     "The optional bulk candidate-link audit was blocked by uniform outbound Node network failures in the verification environment; every candidate still requires live human confirmation before promotion.",
     "The Project Baccara record now includes an official 4-1 County action and final active air permit, but it does not prove the fully executed MCP, condition compliance, service, construction, occupancy, or operation.",
+    "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the locally verified and owner-only deployed Phase 55G Project Baccara authority conversion. Sites version 5 serves commit ddeea6ab3213d7e9367c6564a9b8d31395ba7675 with the official County action and signed final air permit; the signal remains In Review. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, or package freeze."
+  "notes": "This manifest records the local Phase 55H Toronto pre-decision authority repair while the owner-only preview still serves Sites version 5 from commit ddeea6ab3213d7e9367c6564a9b8d31395ba7675. The package now records the July 29-31 Council gate, bill-withholding conditions, and bounded negative permit searches; the signal remains In Review. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, or package freeze."
 }

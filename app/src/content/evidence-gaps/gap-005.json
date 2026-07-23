@@ -10,7 +10,7 @@
   "constraint_tags": ["Capital", "Data Quality", "Infrastructure"],
   "question": "Which permit intentions become starts, completions, and occupancy?",
   "why_it_matters": "Building permits are upstream intentions. FTFN needs conversion evidence to know whether approvals become starts, completions, occupied units, or stalled projects.",
-  "current_support": "FTFN has Statistics Canada permits, CMHC starts and completions data, Toronto's 2025 Development Pipeline, and application 24 254930 records showing movement from initial notice through staff review to a July 2026 committee recommendation.",
+  "current_support": "FTFN has Statistics Canada permits, CMHC starts and completions data, Toronto's 2025 Development Pipeline, application 24 254930 records showing movement from initial notice through staff review to a July 2026 committee recommendation, and a full-address Building Permit portal recheck.",
   "missing_evidence": [
     "building permit and permit-to-start conversion for application 24 254930",
     "project construction start",
@@ -31,7 +31,7 @@
     "application 24 254930 start, completion, and occupancy record",
     "Toronto Development Pipeline stage-conversion update"
   ],
-  "next_action": "Track application 24 254930 into an issued building permit, construction start, completion, and occupancy record, using Toronto pipeline and CMHC data as the broader conversion baseline.",
+  "next_action": "Recheck the Council and bill trail after July 29-31, then search the Building Permit portal with a confirmed application number or later project record and track construction start, completion, and occupancy.",
   "future_data_model_need": ["Dataset", "Permit", "Local Actor"],
   "related_source_ids": [
     "source-statcan-building-permits-survey",
@@ -48,5 +48,5 @@
     "signal-toronto-2025-development-pipeline-delivery-gap"
   ],
   "related_local_system_ids": ["local-ontario-real-estate"],
-  "notes": "Phase 51B adds a committee decision and a citywide stage baseline, but the permit-to-start-to-completion gap remains open until the named project reaches downstream permit, start, completion, and occupancy records."
+  "notes": "Phase 55H searched all eight project addresses in the official Building Permit portal; each returned Application Not Found. Those bounded negative queries do not prove that no permit exists, so the permit-to-start-to-completion gap remains open."
 }
