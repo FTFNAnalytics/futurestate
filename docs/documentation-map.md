@@ -1414,7 +1414,7 @@ Primary file:
 
 Update when:
 
-- the owner-only deployment version and exact commit are recorded,
+- the owner-only deployment version or exact commit changes,
 - any Phase 55N signal passes or fails publication review,
 - recipient-level NSTC or NAPMP status changes,
 - a Phoenix facility crosses occupancy, qualification, or production,

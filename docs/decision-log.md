@@ -2277,6 +2277,8 @@ Implemented:
 - deepened both local dossiers, four evidence gaps, six topics, two technologies, and the federal research dependency map,
 - created a 19-file archive containing ten official captures, six official-link records, summaries, README, and a checksum manifest,
 - advanced the local contract to 380 pages, 189 sources, 63 signals, 25 Published, 38 In Review, 15 updates, three collections, and 47 research documents.
+- committed exact source as `c14551c7fad7e0ba6aac0e9e9ce03e5ad6189575`,
+- deployed that source as owner-only Sites version 11 with one allowed owner, no groups, no public access, and no DNS change.
 
 Boundary:
 
