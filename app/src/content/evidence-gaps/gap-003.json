@@ -10,7 +10,7 @@
   "constraint_tags": ["Labor", "Supply Chain", "Manufacturing", "Capital"],
   "question": "Can local supplier and workforce systems support semiconductor scaling?",
   "why_it_matters": "Funded semiconductor projects only become operating capacity if labor pipelines, construction capacity, suppliers, training systems, and capital commitments can keep up.",
-  "current_support": "FTFN has national CHIPS context, MAG regional projections, a named TSMC registered technician apprenticeship with an initial eight-person cohort and a later 46-person cohort, a City-relayed July 2026 update saying the first Arizona fab is in volume production, second-fab construction is complete, and TSMC Arizona employs more than 3,500 people, plus BLS May 2025 Phoenix-Mesa-Chandler occupation-group employment and wage estimates.",
+  "current_support": "FTFN has national CHIPS context, MAG regional projections, a named TSMC registered technician apprenticeship with an initial eight-person cohort and a later 46-person cohort, City records for Fab 1 production, Fab 2 construction completion, Fab 3 topping out, and the reported start of later facilities, plus BLS May 2025 Phoenix-Mesa-Chandler occupation-group employment and wage estimates.",
   "missing_evidence": [
     "apprenticeship completion, credential, retention, and placement outcomes",
     "occupation-specific labor supply",
@@ -34,8 +34,8 @@
   ],
   "next_action": "Move from metropolitan occupation-group context to semiconductor-specific occupations, vacancies, hiring and attrition, apprenticeship completion and retention, construction-trade capacity, and supplier operating records before making workforce or supplier sufficiency claims.",
   "future_data_model_need": ["Facility", "Local Actor", "Dataset"],
-  "related_source_ids": ["source-nist-chips", "source-maricopa-association-governments-open-data", "source-aca-tsmc-registered-technician-apprenticeship-2024", "source-phoenix-2025-semiconductor-apprenticeship-agenda", "source-phoenix-tsmc-july-2026-fab-update", "source-bls-oews-tables", "source-bls-phoenix-oews-may-2025"],
-  "related_signal_ids": ["signal-sample-003", "signal-mag-2023-projections-phoenix-region-growth-evidence-layer", "signal-tsmc-arizona-apprenticeship-workforce-pipeline", "signal-phoenix-tsmc-fab1-production-fab2-construction-complete", "signal-bls-phoenix-2025-workforce-baseline"],
+  "related_source_ids": ["source-nist-chips", "source-maricopa-association-governments-open-data", "source-aca-tsmc-registered-technician-apprenticeship-2024", "source-phoenix-2025-semiconductor-apprenticeship-agenda", "source-phoenix-tsmc-july-2026-fab-update", "source-phoenix-tsmc-fab3-topping-out-2026", "source-bls-oews-tables", "source-bls-phoenix-oews-may-2025"],
+  "related_signal_ids": ["signal-sample-003", "signal-mag-2023-projections-phoenix-region-growth-evidence-layer", "signal-tsmc-arizona-apprenticeship-workforce-pipeline", "signal-phoenix-tsmc-fab1-production-fab2-construction-complete", "signal-phoenix-tsmc-fab3-topping-out", "signal-bls-phoenix-2025-workforce-baseline"],
   "related_local_system_ids": ["local-us-southwest-chip-corridor"],
-  "notes": "Phase 55I adds a current metropolitan employment and wage baseline after Phase 51C's cohort and employer records. The gap remains unresolved because the BLS record is cross-industry and does not report semiconductor vacancies, hiring, attrition, training outcomes, construction capacity, or supplier-network maturity."
+  "notes": "Phase 55N adds another physical facility threshold and reported starts for later campus buildings. That expansion raises the likely labor and supplier requirement but does not quantify demand. The gap remains open because the records do not establish vacancies, hiring, attrition, training outcomes, construction capacity, or supplier-network maturity."
 }

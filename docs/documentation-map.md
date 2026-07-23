@@ -1397,3 +1397,30 @@ Update when:
 - The development project is created.
 - The first migration changes.
 - Public content starts reading from Supabase.
+
+### Phase 55N Implementation Outcomes And Local Conversion
+
+Purpose:
+
+- Record the 16-document implementation-outcomes and local-conversion collection.
+- Document the six new source and signal records, two briefings, four organizations, and cross-site integrations.
+- Preserve evidence boundaries for governance discontinuities, oversight findings, versioned software, construction milestones, procurement channels, and preliminary standards.
+- Inventory the 19-file downloadable archive and its checksum.
+- Define the combined Phase 55M publication-readiness gate and preserve the dated Phase 55H Toronto recheck.
+
+Primary file:
+
+- `docs/work-packages/phase-55n-implementation-outcomes-local-conversion.md`
+
+Update when:
+
+- the owner-only deployment version and exact commit are recorded,
+- any Phase 55N signal passes or fails publication review,
+- recipient-level NSTC or NAPMP status changes,
+- a Phoenix facility crosses occupancy, qualification, or production,
+- a PIV working draft becomes a formal or final standard,
+- the Toronto Council record advances after July 31.
+
+Boundary:
+
+A later program action does not automatically cancel every earlier award. A department-wide oversight gap is not evidence that a named prototype failed. A versioned tool, topped-out building, purchasing channel, or preliminary draft is not an operational outcome.

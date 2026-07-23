@@ -10,7 +10,7 @@
   "constraint_tags": ["Power", "Infrastructure", "Regulation", "Data Quality"],
   "question": "Which utility records show real power capacity for semiconductor and AI infrastructure?",
   "why_it_matters": "State-level electricity baselines are useful, but power availability for fabs, suppliers, and compute infrastructure depends on utility planning, interconnection, rates, service territory, and facility load evidence.",
-  "current_support": "FTFN has EIA Arizona electricity context, ACC utility-regulation and eDocket layers, SRP's named 2025 Integrated System Plan Actions Progress Report, the November 2025 E-67 large-load price plan, Project Huckleberry's completed Meta service trail, and Project Baccara's approved CEC, official 4-1 county action, and active final Title V permit for approximately 700 MW of planned on-site generation.",
+  "current_support": "FTFN has EIA Arizona electricity context, ACC utility-regulation and eDocket layers, SRP's named 2025 Integrated System Plan Actions Progress Report, the November 2025 E-67 large-load price plan, Project Huckleberry's completed Meta service trail, Project Baccara's approved CEC and permits, and a City record showing TSMC Fab 3 at topping out while later campus facilities begin construction.",
   "missing_evidence": [
     "interconnection queues",
     "named semiconductor-customer tariff treatment and facilities charges",
@@ -49,15 +49,17 @@
     "source-maricopa-baccara-board-action-2026",
     "source-maricopa-baccara-proposed-air-permit-2026",
     "source-maricopa-baccara-final-air-permit-2026",
-    "source-kjzz-project-baccara-mcp-vote-2026"
+    "source-kjzz-project-baccara-mcp-vote-2026",
+    "source-phoenix-tsmc-fab3-topping-out-2026"
   ],
   "related_signal_ids": [
     "signal-arizona-electricity-profile-chip-corridor-power-constraint",
     "signal-srp-2025-isp-actions-valley-power-buildout",
     "signal-srp-e67-large-load-service-conditions",
     "signal-srp-huckleberry-meta-mesa-online-service",
-    "signal-acc-project-baccara-power-water-permit-gates"
+    "signal-acc-project-baccara-power-water-permit-gates",
+    "signal-phoenix-tsmc-fab3-topping-out"
   ],
   "related_local_system_ids": ["local-us-southwest-chip-corridor"],
-  "notes": "Phase 55G converts Project Baccara's reported county vote and proposed air permit into an official 4-1 Board action and active final Title V permit. The gap remains unresolved because the records do not establish service, construction, interconnection, occupancy, operating consumption, TSMC service, regional spare capacity, or corridor-wide readiness."
+  "notes": "Phase 55N adds a physical construction milestone for TSMC Fab 3. A taller evidence stage on the facility does not close the utility gap: the records still do not establish TSMC service agreements, disclosed load, completed interconnection, operating consumption, reliability, regional spare capacity, or corridor-wide readiness."
 }

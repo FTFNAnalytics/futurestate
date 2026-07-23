@@ -1,16 +1,16 @@
-﻿# DARPA and U.S. Government Research Collection, 2025-2026
+﻿# DARPA and U.S. Government Research Angles, 2025-2026
 
 This FTFN bundle contains the 23 primary records listed in the collection, a consolidated summary for every document, and a machine-readable manifest with official URLs, capture status, file size, and SHA-256 checksum.
 
 ## Contents
 
-- `originals/`: 22 official local captures and one official-link file.
+- Collection capture files: 22 official local captures and 1 official-link records.
 - `collection-summaries.md`: FTFN summaries, key findings, relevance, and evidence limits for all 23 documents.
 - `manifest.json`: file inventory, capture status, official links, sizes, and checksums.
 
-## Important exception
+## Capture exceptions
 
-The 2026 National Defense Strategy host allowed the document to be reviewed but suppressed automated export. Its archive member is a standard `.url` shortcut to the official Defense Department file. The remaining 22 records have local captures.
+Official-link records identify sources that were reviewed but whose hosts suppressed automated export. The bundle preserves those official URLs rather than substituting non-authoritative copies.
 
 ## Interpretation boundary
 

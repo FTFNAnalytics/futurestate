@@ -3,13 +3,14 @@ id: "signal-federal-pqc-migration-plans-and-deadlines"
 title: "Federal PQC policy now requires migration plans and dated system transitions"
 slug: "federal-pqc-migration-plans-and-deadlines"
 record_status: "In Review"
-summary: "Executive Order 14412 and OMB M-26-15 move federal post-quantum cryptography from standards availability into agency leadership, migration plans, prioritized modernization, procurement work, and dated transition requirements."
+summary: "Executive Order 14412 and OMB M-26-15 establish federal post-quantum migration requirements, while NIST's preliminary PIV working drafts expose one concrete credential-system implementation dependency."
 source_ids:
   - "source-white-house-eo-14412-pqc-migration"
   - "source-omb-m-26-15-pqc-migration"
   - "source-nist-pqc"
+  - "source-nist-piv-pqc-working-drafts-2026"
 published_date: null
-captured_date: 2026-07-22
+captured_date: 2026-07-23
 primary_topic: "Quantum"
 framework_layers:
   - "Enabling Infrastructure"
@@ -44,8 +45,8 @@ evidence_gap_ids:
   - "gap-009"
 claim_scope: "Specific Source Update"
 local_evidence_level: "General Source Layer"
-last_reviewed_date: 2026-07-22
-editorial_notes: "Phase 55B institutional migration selection. The signal is held In Review because the directives establish requirements and deadlines but do not prove that any agency, contractor, vendor, or critical-infrastructure operator has completed migration."
+last_reviewed_date: 2026-07-23
+editorial_notes: "Phase 55N refresh. The preliminary PIV working drafts add a technical identity-system artifact but remain upstream of formal standards, validated products, agency pilots, issued credentials, or completed migration."
 ---
 
 ## What Changed
@@ -54,13 +55,15 @@ Executive Order 14412, dated June 22, 2026, directs federal PQC leadership and m
 
 OMB M-26-15, dated June 24, 2026, supplies an implementation layer for non-national-security federal systems. It requires agencies to develop PQC migration plans within 120 days, prioritize high-impact and high-value systems, integrate PQC into governance and modernization, address vendor and third-party software, and work toward mitigating as much quantum risk as feasible by December 31, 2030.
 
+NIST's June 2026 PIV working set then exposes one technical implementation lane: proposed data, card-interface, and algorithm changes for adding ML-DSA and ML-KEM through a backward-compatible dual-stack approach. NIST labels the materials preliminary working drafts rather than formal drafts or final requirements.
+
 ## Why It Matters
 
-The earlier NIST record showed that standards exist and migration work is necessary. These records identify who must lead, what plans must contain, which systems move first, where procurement enters the stack, and when major transitions are expected.
+The earlier NIST record showed that standards exist and migration work is necessary. These records identify who must lead, what plans must contain, which systems move first, where procurement enters the stack, when major transitions are expected, and how one federal credential standard may need to change.
 
 ## Evidence Limits
 
-Requirements are not implementation results. The records do not show that agency inventories are complete, migration plans have been accepted, appropriations are available, products are ready, contracts have changed, or systems have moved successfully.
+Requirements and preliminary drafts are not implementation results. The records do not show that agency inventories are complete, migration plans have been accepted, PIV changes are final, appropriations are available, products are validated, contracts have changed, or systems have moved successfully.
 
 The OMB memorandum excludes national security systems. Critical-infrastructure assistance and future acquisition rules also require downstream guidance and rulemaking.
 
@@ -71,5 +74,6 @@ The OMB memorandum excludes national security systems. Critical-infrastructure a
 - CISA cryptographic bill-of-materials guidance
 - Proposed Federal Acquisition Regulation changes
 - GSA identity and access modernization work
+- Formal PIV drafts, public comments, final revisions, and dual-stack interoperability tests
 - Vendor product support and Cryptographic Module Validation Program results
 - Measurable system migrations rather than policy announcements

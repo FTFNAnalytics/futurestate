@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 55L implementation-evidence conversion
+Latest completed work: Phase 55N implementation outcomes and local conversion
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 345 generated site pages
-Content: 183 sources, 57 signals, 17 topics, 2 research collections / 31 research documents
-Publication: 25 Published, 32 In Review, 0 Draft Sample
-Trust/data: 14 update entries, 3 versioned JSON exports, verified 26-file and 11-file research archives
+Build: 380 generated site pages
+Content: 189 sources, 63 signals, 17 topics, 3 research collections / 47 research documents
+Publication: 25 Published, 38 In Review, 0 Draft Sample
+Trust/data: 15 update entries, 3 versioned JSON exports, verified 26-file, 11-file, and 19-file research archives
 Private authority layer: 150 candidates, 15 profiles, 132 Candidate, 11 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 10 at https://ftfn-analytics.jbumstead.chatgpt.site
+Deployment: owner-only Sites version 10 at https://ftfn-analytics.jbumstead.chatgpt.site; Phase 55N refresh pending
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 110 Manual Review, 73 Probe Ready; 14 Strong coverage lanes
-Next phase: Phase 55M publication-readiness review may proceed before the dated Phase 55H Council recheck due after July 31
+Source health: 116 Manual Review, 73 Probe Ready; 14 Strong coverage lanes
+Next phase: Phase 55M combined publication-readiness review may proceed before the dated Phase 55H Council recheck due after July 31
 ```
 
 ## Read First
@@ -54,7 +54,7 @@ The new session should verify rather than assume:
 The approved preview sequence is complete:
 
 1. Confirmed the Phase 52B checkpoint and Phase 55A-55C authority work in local history.
-2. Built and revalidated the original 218-page candidate; Phases 55E-55J advanced it to 261 pages and 153 sources, Phase 55K advanced it to 321 pages and 176 sources, and Phase 55L advanced it to 345 pages, 183 sources, and two research collections with 31 document records.
+2. Built and revalidated the original 218-page candidate; Phases 55E-55J advanced it to 261 pages and 153 sources, Phase 55K advanced it to 321 pages and 176 sources, Phase 55L advanced it to 345 pages and 183 sources, and Phase 55N advanced it to 380 pages, 189 sources, and three research collections with 47 document records.
 3. Created a private Sites source repository without pushing the branch to public GitHub.
 4. Added the minimal static Sites packaging adapter and deployed the reviewed checkpoint.
 5. Kept the preview owner-only and did not attach `ftfn.io`.
@@ -69,6 +69,7 @@ The approved preview sequence is complete:
 14. Deployed exact source commit `37f3ca6956d752642989f04486d13ff0c4555813` as owner-only Sites version 9 without changing access or DNS.
 15. Completed Phase 55L with eight stage-bounded implementation trails, seven new source profiles, seven new `In Review` signals, one repaired USAspending signal, one briefing, an expanded dependency map, and a verified 11-file archive.
 16. Deployed exact source commit `d1300d5503244c52541ac597163af9f991594294` as owner-only Sites version 10 with one allowed owner, no groups, and no access or DNS change.
+17. Completed Phase 55N with a 16-record outcome and local-conversion collection, six sources, six new `In Review` signals, two briefings, four organizations, integrated trail and dossier repairs, and a verified 19-file archive.
 
 ## Required Stop Points
 
@@ -122,9 +123,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is the Phase 55L implementation-evidence conversion. The current candidate should be 0.2.0-dev on codex/phase51-content with 183 sources, 57 signals, 25 Published signals, 32 In Review signals, 14 public updates, three JSON exports, 345 generated site pages, two research collections, 31 research documents, and verified 26-file and 11-file download archives. Sites version 10 serves exact source commit d1300d5503244c52541ac597163af9f991594294 at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site. The branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
+The latest completed work is the Phase 55N implementation-outcomes and local-conversion expansion. The current candidate should be 0.2.0-dev on codex/phase51-content with 189 sources, 63 signals, 25 Published signals, 38 In Review signals, 15 public updates, three JSON exports, 380 generated site pages, three research collections, 47 research documents, and verified 26-file, 11-file, and 19-file download archives. The existing owner-only URL is https://ftfn-analytics.jbumstead.chatgpt.site; verify whether the Phase 55N deployment refresh has completed before treating its version and commit as current. The branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
 
 Phase 55I completed the first-pass review of all 150 local-only private candidates across 15 profiles: 132 Candidate, 11 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. If work continues before July 31, Phase 55M may apply the full publication-readiness gate to the eight Phase 55L trails; keep the Lift Challenge record In Review as a scheduled future trial and do not collapse award, obligation, test, acceptance, operation, or scale stages. Phase 55H records Toronto application 24 254930's July 29-31 Council date; complete the same-item recheck after the meeting. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. If work continues before July 31, Phase 55M may apply the full publication-readiness gate to the combined Phase 55L and Phase 55N implementation set; evaluate each signal separately and do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Keep the Lift Challenge record In Review as a scheduled future trial. Phase 55H records Toronto application 24 254930's July 29-31 Council date; complete the same-item recheck after the meeting. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

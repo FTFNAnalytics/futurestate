@@ -41,24 +41,24 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after the Phase 55L implementation-evidence conversion:
+Current `0.2.0-dev` state after the Phase 55N implementation-outcomes and local-conversion expansion:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 345 |
-| Active sources | 183 |
-| Signals | 57 |
+| Static pages | 380 |
+| Active sources | 189 |
+| Signals | 63 |
 | Published signals | 25 |
-| In Review signals | 32 |
+| In Review signals | 38 |
 | Draft Sample signals | 0 |
-| Public update entries | 14 |
-| Research collections | 2 collections / 31 documents |
-| Research downloads | 27 local captures / 4 official-link files / 37 archive files across two ZIPs |
+| Public update entries | 15 |
+| Research collections | 3 collections / 47 documents |
+| Research downloads | 37 local captures / 10 official-link files / 56 archive files across three ZIPs |
 | Named local inputs selected in Phases 50-55C | 18 |
 | Private source candidates | 150 local-only records |
 | Candidate review | all 150 reviewed once: 132 Candidate, 11 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected |
 | Source Coverage | 14 Strong; 0 Developing; 0 Weak |
-| Source health | 110 Manual Review; 73 Probe Ready |
+| Source health | 116 Manual Review; 73 Probe Ready |
 
 Existing operating assets:
 
@@ -69,7 +69,7 @@ Existing operating assets:
 - publication policy and Method page,
 - two local-system constraint maps,
 - three qualitative dependency maps,
-- two reviewed research collections with 31 primary records and two downloadable archives,
+- three reviewed research collections with 47 primary records and three downloadable archives,
 - a schema-backed public update log,
 - versioned static source, topic, and Published-signal exports,
 - robots, sitemap, canonical, and indexing boundaries.
@@ -92,9 +92,9 @@ By v0.2, a reader should be able to answer:
 
 | Area | v0.2 Target | Current | Remaining |
 | --- | ---: | ---: | ---: |
-| Total signals | 25-35 | 57 | original volume target retired; further additions must close a named evidence gap or add a specific dated development |
+| Total signals | 25-35 | 63 | original volume target retired; further additions must close a named evidence gap or add a specific dated development |
 | Published plus publication-ready | 8-12 | 25 | original target exceeded only after four record-level publication gates |
-| Active sources | 110-125 | 183 | target exceeded through gap-closing records; maintain and use the expanded rails rather than chasing another volume target |
+| Active sources | 110-125 | 189 | target exceeded through gap-closing records; maintain and use the expanded rails rather than chasing another volume target |
 | Private source candidates | 150 | 150 local-only records | target met; all 150 have a first-pass state and 10 Phase 55I records became separately authored monitoring rails |
 | Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | semiconductor service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
 | Public trust surfaces | update log plus Method links | implemented | maintain entries |
@@ -363,7 +363,7 @@ Recommended active schedule:
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete. Phases 55A-55J strengthened the authority package and publication set; Phase 55K added the first primary-document research collection, and Phase 55L converted eight of its directions into stage-bounded implementation trails. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete. Phases 55A-55J strengthened the authority package and publication set; Phase 55K added the first primary-document research collection, Phase 55L converted eight directions into implementation trails, and Phase 55N tests those trails against later outcomes, discontinuities, oversight limits, and local conversion gates. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -396,10 +396,11 @@ Current stop point:
 - Phase 55J applied the existing publication gate to those nine additions, added OMB M-26-04 to preserve the current federal AI policy stack, and promoted all nine while retaining their implementation, adoption, outcome, facility, and site-service boundaries,
 - Phase 55K added a 23-document DARPA and U.S. Government research collection, 23 source profiles, five `In Review` synthesis signals, five organizations, one briefing, one dependency map, topic/source/technology backlinks, and a verified 26-file download bundle,
 - Phase 55L added eight implementation-evidence records, seven source profiles, seven new `In Review` signals, one repaired USAspending signal, one briefing, an expanded dependency map, and a verified 11-file download bundle,
-- the branch remains unpushed to public GitHub; exact Phase 55L commit `d1300d5503244c52541ac597163af9f991594294` is deployed as owner-only Sites version 10,
+- Phase 55N added a 16-record outcome and local-conversion collection, six source profiles, six new `In Review` signals, two briefings, four organizations, integrated trail repairs, and a verified 19-file download bundle,
+- the branch remains unpushed to public GitHub; Phase 55N is locally complete and the owner-only Sites refresh is the remaining deployment step,
 - no custom domain is attached and Hostinger DNS remains unchanged,
 - the remaining Phase 55H action is the post-meeting recheck of Toronto application `24 254930` for Council disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit evidence,
-- before that window, a bounded Phase 55M publication-readiness review may evaluate the eight Phase 55L trails without treating awards, scheduled tests, or milestones as later-stage outcomes; keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors,
+- before that window, a bounded Phase 55M publication-readiness review may evaluate the combined Phase 55L and Phase 55N implementation set without treating awards, governance actions, oversight findings, software releases, scheduled tests, construction milestones, procurement availability, or preliminary drafts as later-stage outcomes; keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors,
 - GitHub synchronization, public access, and custom-domain attachment remain deferred pending explicit approval.
 
 Hosting decision rule:
@@ -520,13 +521,13 @@ v0.2 is successful when:
 - release QA is repeatable,
 - no automated process publishes claims without review.
 
-All local success criteria pass in the current candidate. Phase 55L expands the research and evidence layer without changing Published membership, the package-freeze boundary, or the public-launch boundary.
+All local success criteria pass in the current candidate. Phase 55N expands the research and evidence layer without changing Published membership, the package-freeze boundary, or the public-launch boundary.
 
 ## Immediate Next Step
 
-Phase 55L is complete. The next fixed evidence gate is Phase 55H immediately after the July 29-31, 2026 Toronto Council meeting window. Recheck application `24 254930` for the Council disposition and vote, amended recommendations, bill status, enacted Official Plan and Zoning By-law numbers, condition compliance, and any later permit record. If no named official stage has advanced, record the dated negative result and stop rather than manufacture a signal.
+Phase 55N is complete. The next fixed evidence gate is Phase 55H immediately after the July 29-31, 2026 Toronto Council meeting window. Recheck application `24 254930` for the Council disposition and vote, amended recommendations, bill status, enacted Official Plan and Zoning By-law numbers, condition compliance, and any later permit record. If no named official stage has advanced, record the dated negative result and stop rather than manufacture a signal.
 
-If content work continues before that date, run Phase 55M as a publication-readiness review of the eight Phase 55L implementation trails. Apply the full source, claim, citation, caveat, metadata, correction-path, and reader-usefulness gate. Keep the Lift Challenge record `In Review` as a scheduled trial until official post-event evidence exists, and do not promote any record by collapsing award, obligation, facility, test, acceptance, operation, or scale stages.
+If content work continues before that date, run Phase 55M as a publication-readiness review of the combined Phase 55L and Phase 55N implementation set. Apply the full source, claim, citation, caveat, metadata, correction-path, and reader-usefulness gate record by record. Keep the Lift Challenge record `In Review` as a scheduled trial until official post-event evidence exists. Keep every Phase 55N signal `In Review` unless its own authority and usefulness gate passes; do not promote the collection as a batch.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Do not start another volume target or broad automatic-promotion batch.
 

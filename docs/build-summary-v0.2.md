@@ -39,32 +39,34 @@ Phase 55K adds a dedicated research layer built from 23 recent DARPA and U.S. Go
 
 Phase 55L converts eight Phase 55K research directions into named implementation trails: a USAspending obligation record, DARPA's named Lift Challenge teams and scheduled trial, an executed MP Materials processing loan, final NAPMP packaging awards, Southline's capacity-contract award, delivered Project Pele fuel, an OpenAI prototype agreement with its initial obligation, and NIST O-RAN test and standards artifacts. Seven new signals and one repaired signal remain `In Review`. The new 11-file bundle contains five local captures, three official-link records, summaries, README, and a SHA-256 manifest. The package now contains 345 generated pages, 183 sources, 57 signals, three briefings, two research collections, 31 research documents, and 14 updates. Sites version 10 serves exact source commit `d1300d5503244c52541ac597163af9f991594294` under the unchanged owner-only policy.
 
+Phase 55N follows those trails into later program actions and local conversion evidence. Its 16-record collection adds six new sources and six `In Review` signals covering an NSTC governance discontinuity, a GAO acquisition-data limit, a versioned O-RAN tool, a Phoenix facility-construction milestone, an active federal AI purchasing channel, and preliminary PIV post-quantum specifications. Two new briefings, four organization profiles, local-dossier repairs, evidence-gap updates, and an expanded dependency map preserve the difference between progress, interruption, oversight, availability, and outcomes. The 19-file bundle contains ten local captures, six official-link records, summaries, README, and a SHA-256 manifest. The local package now contains 380 pages, 189 sources, 63 signals, five briefings, three research collections, 47 research documents, and 15 updates. Published membership remains 25.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 345 | +163 |
-| Sources | 102 | 183 | +81 |
-| Signals | 18 | 57 | +39 |
+| Generated HTML pages | 182 | 380 | +198 |
+| Sources | 102 | 189 | +87 |
+| Signals | 18 | 63 | +45 |
 | Published signals | 3 | 25 | +22 |
-| In Review signals | 14 | 32 | +18 |
+| In Review signals | 14 | 38 | +24 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 14 | +14 |
+| Public update entries | 0 | 15 | +15 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
 
-- 15 organizations,
+- 19 organizations,
 - 5 technologies,
 - 2 local systems,
 - 10 evidence gaps,
 - 3 dependency maps,
-- 3 briefings in review,
-- 2 research collections with 31 document records,
-- 27 official local captures plus 4 official-link records across verified 26-file and 11-file ZIP archives.
+- 5 briefings in review,
+- 3 research collections with 47 document records,
+- 37 official local captures plus 10 official-link records across verified 26-file, 11-file, and 19-file ZIP archives.
 
 ## What Is Built
 
@@ -84,11 +86,11 @@ The public application includes:
 
 The editorial and authority layer includes:
 
-- 183 structured source records with authority, freshness, access, monitoring, and review metadata,
-- 57 bounded signal records with explicit claim and evidence limits,
+- 189 structured source records with authority, freshness, access, monitoring, and review metadata,
+- 63 bounded signal records with explicit claim and evidence limits,
 - 25 Published signals backed by 51 sources checked on or after 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
-- a public fourteen-entry update and correction log,
+- a public fifteen-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
@@ -133,10 +135,12 @@ Phase 55K added 23 Tier 1 primary-document sources, 23 reviewed research-documen
 
 Phase 55L added seven Tier 1 source profiles, eight reviewed implementation-document records, seven bounded `In Review` signals, one repaired USAspending signal, one `In Review` briefing, an expanded dependency map, and a verified 11-file download archive. The local result is 345 generated site pages, 183 public sources, 57 signals, 25 Published, 32 In Review, and 14 public updates. Source health reports 110 Manual Review and 73 Probe Ready records; the Published set remains backed by the same 51 current support sources.
 
+Phase 55N added six Tier 1 source profiles, sixteen reviewed implementation and local-conversion document records, six bounded `In Review` signals, two `In Review` briefings, four organizations, integrated repairs across four earlier signals, two local systems, four evidence gaps, six topics, two technologies, and the federal research dependency map, plus a verified 19-file archive. The local result is 380 generated pages, 189 sources, 63 signals, 25 Published, 38 In Review, and 15 public updates. Source health reports 116 Manual Review and 73 Probe Ready records; the Published support set remains unchanged.
+
 Verified results:
 
-- 345 generated site pages,
-- exact exports for 183 sources, 17 topics, and 25 Published signals,
+- 380 generated site pages,
+- exact exports for 189 sources, 17 topics, and 25 Published signals,
 - all 25 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
 - correct canonical, robots, and publication-state indexing boundaries,
@@ -146,10 +150,10 @@ Verified results:
 - exactly 150 unique private candidates, 10 in each of 15 profiles, with all records assigned a first-pass triage state,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
-- two Published research collections with all 31 document routes in the sitemap,
-- verified 26-file and 11-file ZIP archives containing 27 local captures, four official-link files, summaries, README files, and manifests.
+- three Published research collections with all 47 document routes in the sitemap,
+- verified 26-file, 11-file, and 19-file ZIP archives containing 37 local captures, ten official-link files, summaries, README files, and manifests.
 
-The current Phase 55L evidence is in `docs/work-packages/phase-55l-implementation-evidence-conversion.md`; the first research collection is documented in `docs/work-packages/phase-55k-darpa-usg-research-collection.md`. The owner-only deployment is current at Sites version 10 from exact source commit `d1300d5503244c52541ac597163af9f991594294`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The current Phase 55N evidence is in `docs/work-packages/phase-55n-implementation-outcomes-local-conversion.md`; the earlier research layers are documented in the Phase 55K and Phase 55L work packages. The owner-only deployment refresh is the remaining Phase 55N external step. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 
@@ -161,10 +165,11 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Thirty-two signals remain `In Review`; the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F.
-- The three briefings, three dependency maps, and local-system profiles remain prelaunch or research material.
+- Thirty-eight signals remain `In Review`; the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F.
+- The five briefings, three dependency maps, and local-system profiles remain prelaunch or research material.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
+- Six Phase 55N sources have official-link records because their official hosts blocked or complicated automated export; the collection preserves direct official URLs rather than third-party substitutes.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - The Project Baccara record now includes an official 4-1 County action and active final air permit; the fully executed MCP, condition compliance, service, construction, testing, occupancy, and operation remain unverified.
 - Toronto item `2026.SC33.9` is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted amendment, confirmed building permit, start, completion, or occupancy is yet available.
@@ -199,4 +204,4 @@ npm.cmd run build
 npm.cmd run verify:release
 ```
 
-Expected output: 345 generated site pages, verified 26-file and 11-file research archives, and a passing v0.2 release assertion.
+Expected output: 380 generated site pages, verified 26-file, 11-file, and 19-file research archives, and a passing v0.2 release assertion.

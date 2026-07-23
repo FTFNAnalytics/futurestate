@@ -2,14 +2,14 @@
   "id": "dependency-map-federal-research-industrial-capacity",
   "title": "Federal research ambition runs through industrial capacity",
   "slug": "federal-research-to-industrial-capacity",
-  "summary": "A qualitative map connecting DARPA research direction, government-wide R&D priorities, AI infrastructure, transmission need, secure supply chains, and eight stage-bounded implementation trails.",
+  "summary": "A qualitative map connecting federal research direction to stage-bounded implementation, including awards, physical milestones, governance discontinuities, oversight limits, versioned software, procurement channels, local construction, and preliminary standards work.",
   "map_type": "Dependency Stack",
   "record_status": "In Review",
   "primary_topic": "Advanced Manufacturing",
   "framework_layers": ["Resource Foundations", "Enabling Infrastructure", "Frontier Domains", "Human Systems"],
   "constraint_tags": ["Materials", "Manufacturing", "Supply Chain", "Power", "Compute", "Cybersecurity", "Capital"],
   "map_question": "What must exist between federal research ambition and a secure, scalable operating capability?",
-  "interpretation_boundary": "The map connects explicit source relationships, reviewed synthesis signals, and named implementation records. Awards, obligations, scheduled trials, delivered material, and standards artifacts remain distinct from completed facilities, accepted systems, operating infrastructure, or scaled outcomes.",
+  "interpretation_boundary": "The map connects explicit source relationships, reviewed synthesis signals, and named implementation records. Implementation is not assumed to be linear: awards, obligations, scheduled trials, delivered material, governance actions, versioned software, construction milestones, procurement channels, and draft specifications remain distinct from completed facilities, accepted systems, operating infrastructure, or scaled outcomes.",
   "source_ids": [
     "source-darpa-fy2027-budget",
     "source-darpa-future-focus-2026",
@@ -26,7 +26,13 @@
     "source-doe-transmission-facilitation-selections",
     "source-inl-project-pele-triso-delivery-2025",
     "source-dod-openai-prototype-ota-2025",
-    "source-nist-next-generation-wireless-standards-testbed"
+    "source-nist-next-generation-wireless-standards-testbed",
+    "source-commerce-nist-nstc-natcast-action-2025",
+    "source-gao-2025-prototype-ota-transition-report",
+    "source-nist-oran-testbed-automation-v17-2026",
+    "source-phoenix-tsmc-fab3-topping-out-2026",
+    "source-gsa-buy-ai-onegov-2026",
+    "source-nist-piv-pqc-working-drafts-2026"
   ],
   "signal_ids": [
     "signal-darpa-fy2027-supply-chain-logistics-rd-portfolio",
@@ -41,7 +47,13 @@
     "signal-doe-southline-transmission-capacity-contract-award",
     "signal-project-pele-first-triso-fuel-delivery",
     "signal-dod-openai-prototype-ota-initial-obligation",
-    "signal-nist-oran-testbed-standards-artifacts"
+    "signal-nist-oran-testbed-standards-artifacts",
+    "signal-commerce-nist-assumes-nstc-operations",
+    "signal-gao-prototype-ota-transition-tracking-gap",
+    "signal-nist-oran-testbed-automation-v17",
+    "signal-phoenix-tsmc-fab3-topping-out",
+    "signal-gsa-onegov-ai-procurement-channel",
+    "signal-nist-piv-pqc-working-drafts"
   ],
   "technology_ids": ["technology-advanced-semiconductor-packaging", "technology-grid-scale-energy-storage"],
   "local_system_ids": [],
@@ -92,7 +104,7 @@
       "id": "node-implementation",
       "label": "Implementation evidence",
       "node_type": "Constraint",
-      "note": "Eight records now establish partial implementation trails, but later construction, test, acceptance, operation, and scale gates remain open."
+      "note": "Named records now establish partial implementation trails and show that those trails can advance, split, stall, or reverse before operation and scale."
     },
     {
       "id": "node-field-trial",
@@ -121,6 +133,41 @@
       "node_type": "Signal",
       "record_id": "signal-nist-oran-testbed-standards-artifacts",
       "note": "NIST records testbed software, laboratory infrastructure, and accepted O-RAN contributions without claiming a completed 6G system."
+    },
+    {
+      "id": "node-governance-discontinuity",
+      "label": "Program governance discontinuity",
+      "node_type": "Signal",
+      "record_id": "signal-commerce-nist-assumes-nstc-operations",
+      "note": "Commerce's later NSTC and Natcast action requires the earlier advanced-packaging award stack to be revalidated recipient by recipient."
+    },
+    {
+      "id": "node-transition-oversight",
+      "label": "Prototype-to-production oversight gap",
+      "node_type": "Signal",
+      "record_id": "signal-gao-prototype-ota-transition-tracking-gap",
+      "note": "GAO documents a department-wide linkage limitation without making a finding about every individual prototype agreement."
+    },
+    {
+      "id": "node-versioned-software",
+      "label": "Versioned research software",
+      "node_type": "Signal",
+      "record_id": "signal-nist-oran-testbed-automation-v17",
+      "note": "NIST's version 1.7 automation tool is a reproducible laboratory artifact upstream of certification and commercial adoption."
+    },
+    {
+      "id": "node-local-construction",
+      "label": "Local facility construction",
+      "node_type": "Signal",
+      "record_id": "signal-phoenix-tsmc-fab3-topping-out",
+      "note": "Fab 3 topping out is a physical threshold upstream of occupancy, equipment qualification, production, and demonstrated local-system sufficiency."
+    },
+    {
+      "id": "node-procurement-standards",
+      "label": "Procurement and specification channels",
+      "node_type": "Signal",
+      "record_id": "signal-gsa-onegov-ai-procurement-channel",
+      "note": "Active purchasing channels and preliminary PIV drafts expose downstream implementation paths without proving adoption or completed migration."
     }
   ],
   "links": [
@@ -207,17 +254,54 @@
       "relationship": "Evidenced By",
       "confidence": "Supported",
       "note": "NIST's testbed, software, and incorporated contributions provide standards and test infrastructure evidence."
+    },
+    {
+      "from": "node-implementation",
+      "to": "node-governance-discontinuity",
+      "relationship": "Limited By",
+      "confidence": "Supported",
+      "note": "A later program action can change the operator or agreement path and force earlier award claims to be revalidated."
+    },
+    {
+      "from": "node-funded-actions",
+      "to": "node-transition-oversight",
+      "relationship": "Limited By",
+      "confidence": "Supported",
+      "note": "Prototype awards need agreement-specific delivery and follow-on evidence because department-wide transition linkage is incomplete."
+    },
+    {
+      "from": "node-standards-artifacts",
+      "to": "node-versioned-software",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "Version 1.7 supplies a documented release and laboratory configurations beneath the broader O-RAN project."
+    },
+    {
+      "from": "node-implementation",
+      "to": "node-local-construction",
+      "relationship": "Received By",
+      "confidence": "Partial",
+      "note": "The Phoenix milestone shows national semiconductor ambition entering a local construction system while utility, workforce, equipment, and operating gates remain open."
+    },
+    {
+      "from": "node-compute-power",
+      "to": "node-procurement-standards",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "AI and credential modernization move through acquisition, security, data, standards, validation, and adoption channels."
     }
   ],
   "what_this_map_supports": [
     "Federal research direction can be analyzed as a dependency stack rather than a list of technologies.",
     "The source set explicitly connects research with materials, manufacturing, supply chains, power, compute, cyber, and resilience.",
     "Implementation evidence is a separate gate from strategy, budget requests, and solicitations.",
-    "Named records can be placed on a stage ladder without treating awards, obligations, scheduled tests, or delivered material as operating outcomes."
+    "Named records can be placed on a stage ladder without treating awards, obligations, scheduled tests, delivered material, versioned software, construction milestones, procurement availability, or draft specifications as operating outcomes.",
+    "A later governance action or oversight finding can change the interpretation of an earlier implementation record without proving that a specific project failed."
   ],
   "what_this_map_does_not_prove": [
     "It does not prove enacted funding, successful research, production readiness, supplier security, grid delivery, or operational adoption.",
     "It does not rank technologies, programs, regions, or suppliers.",
+    "It does not establish that every NAPMP award was canceled, that any specific prototype failed, or that procurement and draft standards created operational adoption.",
     "It does not create a numeric 42/59 score."
   ],
   "next_records_needed": [
@@ -225,6 +309,7 @@
     "Completed Lift Challenge results, measured performance, prize actions, transition agreements, and procurement records.",
     "Facility, equipment, commissioning, qualification, supplier, workforce, and production evidence behind Talon, MP Materials, and NAPMP.",
     "Current Southline permits, financing, construction, interconnection, and energization records.",
-    "Project Pele startup and test evidence, OpenAI prototype delivery and acceptance records, and later wireless test, standards, certification, and deployment artifacts."
+    "Project Pele startup and test evidence, OpenAI prototype delivery and acceptance records, and later wireless test, standards, certification, and deployment artifacts.",
+    "Recipient-level NSTC and NAPMP status, agency-specific AI procurement outcomes, formal PIV revisions, validated credential products, and Phoenix facility occupancy, utility, equipment, qualification, and production evidence."
   ]
 }
