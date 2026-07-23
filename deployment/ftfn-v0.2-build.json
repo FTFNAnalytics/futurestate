@@ -12,8 +12,8 @@
     "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
     "access": "owner-only-custom-policy",
     "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
-    "current_source_commit": "48a6f0379741b5d908ecf94c7765dcab27502ea0",
-    "current_version_number": 4,
+    "current_source_commit": "ddeea6ab3213d7e9367c6564a9b8d31395ba7675",
+    "current_version_number": 5,
     "custom_domain_attached": false,
     "post_deploy_qa": "passed"
   },
@@ -97,7 +97,7 @@
       "390x844"
     ],
     "browser_routes_checked": 10,
-    "preview_qa": "passed-owner-only-version-4-deployment-and-access"
+    "preview_qa": "passed-owner-only-version-5-deployment-and-access"
   },
   "required_output_files": [
     "dist/index.html",
@@ -199,5 +199,5 @@
     "The Project Baccara record now includes an official 4-1 County action and final active air permit, but it does not prove the fully executed MCP, condition compliance, service, construction, occupancy, or operation.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the locally verified Phase 55G Project Baccara authority conversion while the owner-only preview still serves Sites version 4 from commit 48a6f0379741b5d908ecf94c7765dcab27502ea0. The local package now includes the official County action and signed final air permit; the signal remains In Review. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, or package freeze."
+  "notes": "This manifest records the locally verified and owner-only deployed Phase 55G Project Baccara authority conversion. Sites version 5 serves commit ddeea6ab3213d7e9367c6564a9b8d31395ba7675 with the official County action and signed final air permit; the signal remains In Review. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, or package freeze."
 }

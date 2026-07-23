@@ -2,7 +2,7 @@
 
 Date: 2026-07-23
 
-Status: local content complete; owner-only preview refresh pending
+Status: complete; owner-only preview refreshed
 
 ## Objective
 
@@ -81,7 +81,17 @@ No project-completion, regional-capacity, water-sufficiency, emissions-performan
 
 ## Owner-Only Preview
 
-The existing preview remains owner-only. This section will be updated after the exact validated Phase 55G source state is saved and deployed without changing access or DNS.
+The exact validated Phase 55G source state was committed as `ddeea6ab3213d7e9367c6564a9b8d31395ba7675`, pushed to the private Sites source repository, saved as Sites version 5, and deployed successfully to:
+
+`https://ftfn-analytics.jbumstead.chatgpt.site`
+
+The post-deploy access check remained unchanged:
+
+- access mode: custom;
+- allowed users: one owner;
+- allowed groups: none;
+- public access: disabled;
+- Hostinger DNS and the pending `ftfn.io` / `www.ftfn.io` domain entries: unchanged.
 
 ## Next Content Lane
 

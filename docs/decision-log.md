@@ -2111,3 +2111,27 @@ Implemented:
 Boundary:
 
 Publication does not collapse conversion stages. Aggregate analysis is not local capacity; crash reports are not normalized safety rankings; funding is not a result; hardware integration is not readiness; awards are not field performance; permits are not delivered housing; and a prize is not manufacturing or deployment. No package freeze, public access, custom-domain attachment, Hostinger DNS change, or public launch was authorized.
+
+## 2026-07-23: Phase 55G Converts Two Baccara Authority Gates Without Claiming Delivery
+
+Decision:
+
+FTFN will add Maricopa County's official Board action and MCAQD's signed final air permit to the existing Project Baccara signal, keep that signal `In Review`, and refresh only the owner-only Sites deployment.
+
+Rationale:
+
+The County meeting system records the May 6 item as approved by a four-to-one voice vote, closing the earlier reported-vote gap. MCAQD lists Permit `P0013417` as active, issued final, and effective June 30, 2026, closing the proposed-permit gap. Neither record proves a fully executed MCP, condition compliance, construction, testing, occupancy, measured performance, or operation. Because both named Baccara lanes advanced, the fallback federal post-quantum search was not opened.
+
+Implemented:
+
+- added the official County Board action and signed final-permit source records,
+- repaired the existing Project Baccara signal, Southwest dossier, linked gaps, policy topic, and private queue,
+- added the ninth public update entry,
+- reached 130 sources, 36 signals, and 229 generated pages while preserving 16 Published and 20 In Review records,
+- passed candidate validation, content validation, source health, Astro diagnostics, production build, and release assertions,
+- committed the exact source as `ddeea6ab3213d7e9367c6564a9b8d31395ba7675`,
+- deployed that commit as owner-only Sites version 5 with one allowed owner, no groups, no public access, and no DNS change.
+
+Boundary:
+
+The official County vote is not the fully executed MCP or proof that conditions were satisfied. The active final air permit is not construction, performance testing, operating compliance, occupancy, or measured emissions performance. Public access, package freeze, custom-domain attachment, Hostinger DNS changes, and public launch remain separate decisions. The next scheduled content gate is the Toronto application `24 254930` recheck after the July 29-31 Council window.

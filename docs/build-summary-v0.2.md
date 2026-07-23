@@ -27,20 +27,22 @@ Phase 55E expands the candidate to 227 pages, 128 public sources, and 36 signals
 
 Phase 55F applies the full publication gate to those eight records. Seven specific, source-backed records move to `Published`; the Joby certification-test record remains `In Review` because the selected milestone is still an interested-party claim without independent FAA confirmation. The route count remains 227 while the public export grows to 16 signals and the update log grows to eight entries. Sites version 4 now serves the exact Phase 55F checkpoint under the unchanged owner-only policy.
 
+Phase 55G converts two Project Baccara authority gaps into official records: Maricopa County's formal meeting summary records a 4-1 approval, and MCAQD lists final Permit `P0013417` as active and effective June 30, 2026. The existing signal remains `In Review` because the executed MCP, condition compliance, service, construction, testing, occupancy, and operating evidence remain open. The package now contains 229 pages, 130 sources, and nine updates; Sites version 5 serves the exact Phase 55G commit under the unchanged owner-only policy.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 227 | +45 |
-| Sources | 102 | 128 | +26 |
+| Generated HTML pages | 182 | 229 | +47 |
+| Sources | 102 | 130 | +28 |
 | Signals | 18 | 36 | +18 |
 | Published signals | 3 | 16 | +13 |
 | In Review signals | 14 | 20 | +6 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 8 | +8 |
+| Public update entries | 0 | 9 | +9 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
@@ -69,11 +71,11 @@ The public application includes:
 
 The editorial and authority layer includes:
 
-- 128 structured source records with authority, freshness, access, monitoring, and review metadata,
+- 130 structured source records with authority, freshness, access, monitoring, and review metadata,
 - 36 bounded signal records with explicit claim and evidence limits,
 - 16 Published signals backed by 30 sources checked on or after 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
-- a public eight-entry update and correction log,
+- a public nine-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
@@ -106,10 +108,12 @@ Phase 55E rechecked all 17 Watch Soon records, corrected four active-source cano
 
 Phase 55F promoted seven of the eight Phase 55E records after a separate source, copy, citation, caveat, metadata, and correction-path review. It held the Joby record because the FAA context source does not independently confirm the company-described milestone. The source, signal, topic, and page counts are unchanged; the publication state is now 16 Published and 20 In Review, with eight public updates.
 
+Phase 55G added the official County action and signed final MCAQD air permit to the existing Project Baccara trail. The content result is 229 pages, 130 public sources, 36 signals, and nine updates. Source Monitor reports zero Review Due, zero Watch Soon, and 130 Current records; Source Coverage remains 14 Strong, zero Developing, and zero Weak lanes. Both primary Baccara lanes advanced, so the fallback federal post-quantum search was not opened.
+
 Verified results:
 
-- 227 generated HTML pages,
-- exact exports for 128 sources, 17 topics, and 16 Published signals,
+- 229 generated HTML pages,
+- exact exports for 130 sources, 17 topics, and 16 Published signals,
 - all 16 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
 - correct canonical, robots, and publication-state indexing boundaries,
@@ -120,7 +124,7 @@ Verified results:
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
 
-The local and Phase 55F deployment evidence is in `docs/release-qa-v0.2.md`; the initial hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview is current at Sites version 4. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The local and Phase 55G deployment evidence is in `docs/release-qa-v0.2.md`; the initial hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview is current at Sites version 5 from commit `ddeea6ab3213d7e9367c6564a9b8d31395ba7675`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 
@@ -135,7 +139,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 - Twenty signals remain `In Review`; the former Joby Draft Sample is now a bounded company-claim record in review and is the explicit hold from Phase 55F.
 - The briefing, dependency maps, and local-system profiles remain prelaunch or research material.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
-- The Project Baccara record stops at a reported conditional county vote and proposed air permit; final permits, condition compliance, construction, occupancy, and operation remain unverified.
+- The Project Baccara record now includes an official 4-1 County action and active final air permit; the fully executed MCP, condition compliance, service, construction, testing, occupancy, and operation remain unverified.
 - Public JSON files are static exports, not a live API.
 - There is no private database, automated ingestion, scheduled monitoring, analytics, newsletter capture, account system, or numeric 42/59 scoring.
 - The private candidate registry is an ignored local file, so it requires private workspace or encrypted backup outside public Git.
@@ -165,4 +169,4 @@ npm.cmd run build
 npm.cmd run verify:release
 ```
 
-Expected output: 227 HTML pages and a passing v0.2 release assertion.
+Expected output: 229 HTML pages and a passing v0.2 release assertion.

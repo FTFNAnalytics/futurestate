@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 55F publication-readiness review
+Latest completed work: Phase 55G Project Baccara authority conversion
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 227 pages
-Content: 128 sources, 36 signals, 17 topics
+Build: 229 pages
+Content: 130 sources, 36 signals, 17 topics
 Publication: 16 Published, 20 In Review, 0 Draft Sample
-Trust/data: 8 update entries, 3 versioned JSON exports
+Trust/data: 9 update entries, 3 versioned JSON exports
 Private authority layer: 150 candidates, 15 profiles, 58 Candidate, 1 Active Source Record, 1 Rejected, 90 Needs Triage
-Deployment: owner-only Sites version 4 at https://ftfn-analytics.jbumstead.chatgpt.site
+Deployment: owner-only Sites version 5 at https://ftfn-analytics.jbumstead.chatgpt.site
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 0 Review Due, 0 Watch Soon, 128 Current; 14 Strong coverage lanes
-Next phase: Phase 55G bounded downstream-authority follow-through; public-domain work remains separate
+Source health: 0 Review Due, 0 Watch Soon, 130 Current; 14 Strong coverage lanes
+Next phase: Phase 55H Toronto authority recheck after July 29-31; public-domain work remains separate
 ```
 
 ## Read First
@@ -41,7 +41,7 @@ Use this short order:
 The new session should verify rather than assume:
 
 1. Run `git status --short --branch`.
-2. Confirm `git log --oneline --decorate -16` still has `35f26f4` in the current history and inspect the newer Phase 55A-55F commits.
+2. Confirm `git log --oneline --decorate -18` still has `35f26f4` in the current history and inspect the newer Phase 55A-55G commits.
 3. Compare the current branch with `origin/main` and confirm which remote branches exist.
 4. Read the v0.2 manifest and confirm package/count expectations still match the repository.
 5. Review any current documentation or content diff before committing it.
@@ -54,13 +54,14 @@ The new session should verify rather than assume:
 The approved preview sequence is complete:
 
 1. Confirmed the Phase 52B checkpoint and Phase 55A-55C authority work in local history.
-2. Built and revalidated the original 218-page candidate; Phase 55E expanded the package to 227 pages and Phase 55F expanded the Published membership without adding routes.
+2. Built and revalidated the original 218-page candidate; Phase 55E expanded the package to 227 pages, Phase 55F expanded the Published membership, and Phase 55G advanced the package to 229 pages and 130 sources.
 3. Created a private Sites source repository without pushing the branch to public GitHub.
 4. Added the minimal static Sites packaging adapter and deployed the reviewed checkpoint.
 5. Kept the preview owner-only and did not attach `ftfn.io`.
 6. Passed hosted route, canonical, indexing, update-log, robots, sitemap, and export checks.
 7. Recorded the provider, URL, checkpoint, packaging boundary, and QA result in the Phase 55D work package.
 8. Stopped before package freeze, public access, custom-domain attachment, or Hostinger DNS changes.
+9. Refreshed the owner-only deployment to Sites version 5 from exact commit `ddeea6ab3213d7e9367c6564a9b8d31395ba7675` after the Phase 55G authority conversion.
 
 ## Required Stop Points
 
@@ -114,9 +115,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 55F. The current candidate should be 0.2.0-dev on codex/phase51-content at or after the preserved Phase 52B checkpoint 35f26f4, with 128 sources, 36 signals, 16 Published signals, 20 In Review signals, eight public updates, three JSON exports, and 227 pages. Sites version 4 serves commit 48a6f0379741b5d908ecf94c7765dcab27502ea0 at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site; the branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
+The latest completed work is Phase 55G. The current candidate should be 0.2.0-dev on codex/phase51-content at or after commit ddeea6ab3213d7e9367c6564a9b8d31395ba7675, with 130 sources, 36 signals, 16 Published signals, 20 In Review signals, nine public updates, three JSON exports, and 229 pages. Sites version 5 serves that exact commit at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site; the branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
 
 Phase 52B is complete, Phase 55A reviewed 15 more records, and Phase 55E reviewed another 15: the local-only private registry contains exactly 150 candidates across 15 profiles, with 58 at Candidate, one Active Source Record, one Rejected, and 90 still needing triage. Confirm it remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. The next content step is Phase 55G bounded downstream-authority follow-through: check Project Baccara's executed county record or final MCAQD permit first, then a named federal post-quantum implementation or procurement record if that trail has not advanced. Recheck Toronto application 24 254930 only after the 29-31 July 2026 Council window. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55G found an official 4-1 County action and active final air permit for Project Baccara but retained the executed-MCP, condition-compliance, service, construction, testing, occupancy, and operation gates. The next content step is Phase 55H: recheck Toronto application 24 254930 after the 29-31 July 2026 Council window for Council action, enacted by-laws, and later permit records. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

@@ -1150,12 +1150,33 @@ Do not use it for:
 - Approving another record without a new publication review.
 - Authorizing public access, custom-domain attachment, package freeze, or Hostinger DNS changes.
 
+### Phase 55G Project Baccara Authority Conversion
+
+Purpose:
+
+- Record the official 4-1 Maricopa County action and active final MCAQD Permit `P0013417`.
+- Preserve the distinction between approval/permit issuance and executed conditions, construction, testing, occupancy, or operation.
+- Record the exact owner-only Sites version 5 deployment and unchanged access/DNS boundary.
+
+Update when:
+
+- a fully executed `MCP250007` record becomes available,
+- condition compliance, service, military, construction, testing, occupancy, or operation advances,
+- a material factual correction changes the County action or final-permit record,
+- the exact owner-only deployment checkpoint or hosted verification changes.
+
+Do not use it for:
+
+- Treating County approval or an active air permit as project completion or operating performance.
+- Authorizing a Published promotion without a separate publication review.
+- Authorizing public access, custom-domain attachment, package freeze, or Hostinger DNS changes.
+
 ### v0.2 Build Manifest
 
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 227-page build, 16 Published signals, 128 sources, eight updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 229-page build, 16 Published signals, 130 sources, nine updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 

@@ -41,12 +41,12 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after the Phase 55F publication-readiness review:
+Current `0.2.0-dev` state after the Phase 55G authority conversion:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 227 |
-| Active sources | 128 |
+| Static pages | 229 |
+| Active sources | 130 |
 | Signals | 36 |
 | Published signals | 16 |
 | In Review signals | 20 |
@@ -55,7 +55,7 @@ Current `0.2.0-dev` state after the Phase 55F publication-readiness review:
 | Private source candidates | 150 local-only records |
 | Candidate review | 60 reviewed: 58 Candidate, 1 Active Source Record, 1 Rejected; 90 remaining |
 | Source Coverage | 14 Strong; 0 Developing; 0 Weak |
-| Source Monitor | 0 Review Due; 0 Watch Soon; 128 Current |
+| Source Monitor | 0 Review Due; 0 Watch Soon; 130 Current |
 
 Existing operating assets:
 
@@ -88,10 +88,10 @@ By v0.2, a reader should be able to answer:
 
 | Area | v0.2 Target | Current | Remaining |
 | --- | ---: | ---: | ---: |
-| Total signals | 25-35 | 35 | target met; further additions require an unusually strong downstream record |
+| Total signals | 25-35 | 36 | target exceeded by one bounded downstream record; further additions require an unusually strong authority event |
 | Published plus publication-ready | 8-12 | 16 | original target exceeded only after a third record-level publication gate |
-| Active sources | 110-125 | 117 | target met; add only gap-closing sources |
-| Private source candidates | 150 | 150 local-only records | target met; 45 reviewed and 105 retained for later gap-led review |
+| Active sources | 110-125 | 130 | target exceeded through gap-closing records; add only evidence that advances a named trail |
+| Private source candidates | 150 | 150 local-only records | target met; 60 reviewed and 90 retained for later gap-led review |
 | Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | semiconductor service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
 | Public trust surfaces | update log plus Method links | implemented | maintain entries |
 | Public data products | 3 static exports | implemented | maintain field contract |
@@ -359,7 +359,7 @@ Recommended active schedule:
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete. Phases 55A-55D strengthened the authority package and verified it on a hosted URL without changing its non-public posture. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete. Phases 55A-55G strengthened the authority package and verified the latest exact checkpoint on a hosted URL without changing its non-public posture. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -385,9 +385,12 @@ Current stop point:
 - Phase 55B added current federal post-quantum migration records, a named Arizona facility permit trail, and refreshed Toronto, Ontario, and ACC monitoring rails,
 - Phase 55C repaired the Project Baccara signal with official county conditions, an official proposed-air-permit notice, and independent vote corroboration while preserving every downstream gate,
 - Phase 55D deployed and verified the exact package at `https://ftfn-analytics.jbumstead.chatgpt.site` with owner-only access,
+- Phase 55E expanded the dated evidence package and Phase 55F promoted seven records through a separate publication gate,
+- Phase 55G added the official 4-1 County action and active final air permit, kept the Project Baccara signal `In Review`, and deployed the exact 229-page / 130-source result as owner-only Sites version 5,
 - the branch remains unpushed to public GitHub; the exact checkpoint exists in the private Sites source repository,
 - no custom domain is attached and Hostinger DNS remains unchanged,
-- the next local content pass should follow the fully executed `MCP250007` record or final air permit, Toronto application `24 254930` after the July 29-31 Council window, the first public-agency PQC plan or procurement rule, or a gap-led item among the 17 Watch Soon sources,
+- the next scheduled content pass is Phase 55H: recheck Toronto application `24 254930` after the July 29-31 Council window for adoption, enacted by-laws, and later permit evidence,
+- before that window, use a private candidate only when it closes a named evidence gap; Project Baccara's remaining monitor begins with the executed MCP, condition compliance, service, construction, testing, occupancy, and operation,
 - GitHub synchronization, public access, and custom-domain attachment remain deferred pending explicit approval.
 
 Hosting decision rule:
@@ -508,12 +511,12 @@ v0.2 is successful when:
 - release QA is repeatable,
 - no automated process publishes claims without review.
 
-All local success criteria pass in the current candidate. Phase 55F expanded the defensible Published set without changing the preview, package-freeze, or public-launch boundaries.
+All local success criteria pass in the current candidate. Phase 55G advanced the Baccara authority trail and refreshed the exact owner-only preview without changing the package-freeze or public-launch boundaries.
 
 ## Immediate Next Step
 
-Begin Phase 55G as a bounded downstream-authority pass. First look for Project Baccara's executed county record or final MCAQD permit. If neither exists, check for the first named public-agency post-quantum implementation plan, procurement action, proposed FAR rule, or NIST pilot result. Stop rather than manufacture a record if neither lane has crossed a documented stage.
+Begin Phase 55H after the July 29-31, 2026 Toronto Council meeting window. Recheck application `24 254930` for a City Council action, enacted by-law, and any later permit record. If no named official stage has advanced, record the dated negative result and stop rather than manufacture a signal.
 
-Schedule the Toronto application `24 254930` Council and by-law recheck for after the 29-31 July 2026 meeting window. Use one bounded record from the remaining 90 private candidates only when it closes a named evidence gap; do not expand from source volume alone.
+Before that window, use one bounded record from the remaining 90 private candidates only when it closes a named evidence gap; do not expand from source volume alone. Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors.
 
 Keep the Sites preview owner-only. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
