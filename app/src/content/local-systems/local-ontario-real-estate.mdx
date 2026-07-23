@@ -16,7 +16,7 @@ core_constraints:
   - "Labor"
   - "Infrastructure"
   - "Public Trust"
-current_equilibrium: "Sensitive to financing costs, migration flows, municipal approvals, infrastructure capacity, and local employment conditions."
+current_equilibrium: "Sensitive to financing costs, migration flows, municipal approvals, water and electricity infrastructure capacity, and local employment conditions."
 relevant_signal_types:
   - "Market Signal"
   - "Policy Signal"
@@ -58,13 +58,19 @@ source_ids:
   - "source-ontario-data-catalogue"
   - "source-toronto-development-guide"
   - "source-toronto-building-permits"
+  - "source-toronto-water-budget-capital-plan"
+  - "source-toronto-water-2026-capital-plan"
+  - "source-ieso-annual-planning-outlook"
+  - "source-ieso-2026-annual-planning-outlook"
+  - "source-toronto-hydro-regulatory-documents"
+  - "source-oeb-toronto-hydro-eb-2023-0195"
 ---
 
 ## System Context
 
 Ontario real estate is a local receiving system for global and national signals. Interest rates, migration, construction capacity, municipal approvals, household affordability, infrastructure servicing, and policy all shape whether new information becomes new housing, delayed projects, price pressure, or political conflict.
 
-The current source base supports high-level market, supply, and permit context. It does not yet support confident conclusions about any specific municipality, development project, lender exposure, or servicing bottleneck.
+The current source base supports high-level market, supply, permit, citywide water-capital, provincial electricity-planning, and Toronto distribution-regulatory context. It still does not support confident conclusions about project finance, a named site's utility connection, or completed delivery.
 
 ## Transduction Question
 
@@ -86,7 +92,7 @@ Construction labor availability affects whether approved or planned projects can
 
 ### Infrastructure
 
-Servicing capacity, transit, roads, schools, water, wastewater, and grid connections can determine whether housing supply can be absorbed locally. The current source base does not yet include municipal infrastructure capacity or servicing data.
+Servicing capacity, transit, roads, schools, water, wastewater, and grid connections can determine whether housing supply can be absorbed locally. Toronto's 2026 Water capital plan and Toronto Hydro's OEB proceeding now supply citywide planning layers, while application 24 254930 has a staff-reviewed servicing analysis. None of those records proves final detailed design, a project utility connection, construction, or operating capacity.
 
 ### Public Trust
 
@@ -100,6 +106,8 @@ Housing supply debates are often mediated through affordability pressure, neighb
 - Statistics Canada's Building Permits Survey can support construction-intention context, but not project completion or affordability outcomes.
 - Toronto's Application Information Centre can support application-level planning context for one municipality, but it cannot stand in for all Ontario municipal systems.
 - Toronto application 24 254930 ESC 20 OZ supplies the dossier's first named application number, addresses, application types, decision body, notice date, and proposed unit count.
+- Toronto Water's adopted 2026-2035 capital plan supplies citywide water, wastewater, stormwater, asset-renewal, funding, and delivery-constraint context.
+- IESO's 2026 Annual Planning Outlook and Toronto Hydro's OEB proceeding supply provincial demand and Toronto distribution-planning layers without proving a project connection.
 
 ## What The Evidence Does Not Prove
 
@@ -113,7 +121,7 @@ Housing supply debates are often mediated through affordability pressure, neighb
 
 | Need | Why It Matters | Status |
 | --- | --- | --- |
-| Municipal infrastructure capacity | Shows whether growth can be serviced by water, wastewater, roads, schools, and grid capacity. | Required before publication |
+| Municipal infrastructure capacity | Shows whether growth can be serviced by water, wastewater, roads, schools, and grid capacity. | Citywide water and electricity planning added; project-level connection evidence still required |
 | Permit timelines and development applications | Shows whether regulation is slowing, sequencing, or enabling supply. | First named application selected; decision timeline still required |
 | Submarket inventory and completions | Distinguishes provincial conditions from local market pressure. | Required before publication |
 | Project-level financing exposure | Helps interpret whether rate changes or capital constraints can stall supply. | Useful for deeper analysis |
@@ -206,3 +214,11 @@ The next dossier step is now precise: capture City Council and by-law follow-thr
 The official item history now schedules application `24 254930` for City Council consideration on July 29, 30 and 31, 2026. It also makes the amendment-enactment boundary concrete: the City Solicitor is directed to withhold the necessary bills until the revised wind study, land-exchange, and laneway-closure and acquisition conditions are satisfied.
 
 A July 23 check of Toronto's Building Permit portal returned `Application Not Found` markers for all eight addresses named in the item. Those address searches do not prove that no permit exists, and the project remains upstream of a verified Council disposition, enacted amendments, permit, start, completion, or occupancy.
+
+## Phase 55I Infrastructure Planning Stack
+
+Toronto Water's adopted 2026-2035 capital plan adds a current municipal infrastructure and finance layer. Its $18.893 billion gross program covers plants and facilities, underground infrastructure, stormwater, basement-flooding protection, and engineering and network improvements. The same plan identifies delivery constraints and forecasts reserve pressure, but it does not allocate service capacity to application 24 254930 or prove that a named project has completed detailed design, procurement, or construction.
+
+IESO's 2026 Annual Planning Outlook adds the provincial electricity layer. It forecasts 65% long-term demand growth and says data centres could account for 8.6% of Ontario demand by 2050 in the reference scenario. Toronto Hydro's `EB-2023-0195` OEB proceeding adds the regulated distribution-planning and rate layer.
+
+Those records make the infrastructure stack clearer without closing the local gap. A provincial forecast is not a Toronto feeder study, an approved utility plan is not spare site capacity, and a citywide water budget is not a project service agreement. The selected application still needs its Council and by-law outcome, condition compliance, detailed servicing follow-through, utility connections, permits, construction, completion, and occupancy.

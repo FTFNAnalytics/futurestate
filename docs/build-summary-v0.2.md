@@ -31,20 +31,22 @@ Phase 55G converts two Project Baccara authority gaps into official records: Mar
 
 Phase 55H begins with a pre-decision authority gate because Toronto's July 29-31 Council meeting has not yet occurred. The official item history now supplies the meeting date and the wind-study, land-exchange, and laneway conditions that precede amendment enactment. Searches across all eight project addresses returned bounded `Application Not Found` markers in the Building Permit portal. The package remains at 229 pages, 130 sources, and 36 signals, grows to ten updates, and Sites version 6 serves the exact checkpoint under the unchanged owner-only policy.
 
+Phase 55I completes the first-pass review of the remaining 90 private candidates. Ten candidates become public monitoring rails, 12 dated official records support nine new `In Review` signals, and the Phoenix and Toronto local-system evidence trails gain workforce, water, electricity, and infrastructure-planning context. The local package reaches 260 pages, 152 sources, 45 signals, and 11 updates while preserving 16 Published signals. The public-launch, DNS, package-freeze, and publication-promotion gates remain closed.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 229 | +47 |
-| Sources | 102 | 130 | +28 |
-| Signals | 18 | 36 | +18 |
+| Generated HTML pages | 182 | 260 | +78 |
+| Sources | 102 | 152 | +50 |
+| Signals | 18 | 45 | +27 |
 | Published signals | 3 | 16 | +13 |
-| In Review signals | 14 | 20 | +6 |
+| In Review signals | 14 | 29 | +15 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 10 | +10 |
+| Public update entries | 0 | 11 | +11 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
@@ -73,19 +75,19 @@ The public application includes:
 
 The editorial and authority layer includes:
 
-- 130 structured source records with authority, freshness, access, monitoring, and review metadata,
-- 36 bounded signal records with explicit claim and evidence limits,
+- 152 structured source records with authority, freshness, access, monitoring, and review metadata,
+- 45 bounded signal records with explicit claim and evidence limits,
 - 16 Published signals backed by 30 sources checked on or after 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
-- a public ten-entry update and correction log,
+- a public eleven-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
-- 60 reviewed private candidates: 58 retained as `Candidate`, one promoted to `Active Source Record`, one rejected, and 90 left for later gap-led review,
+- all 150 private candidates reviewed once: 132 retained as `Candidate`, 11 represented by `Active Source Record`, four held as `Watchlist Only`, two `Blocked`, and one `Rejected`,
 - improved Source Monitor review-state grouping and per-source next actions,
 - Strong, Developing, and Weak Source Coverage summaries with lane-specific next actions; after the Phase 55A recheck, all 14 public coverage lanes classify as Strong.
 
-The private registry lives in Git-ignored `private-data/` because the current repository is public. No candidate was added to the public source library, exports, or static output. The tracked workflow and promotion gate are documented in `docs/private-source-candidate-registry.md`.
+The private registry lives in Git-ignored `private-data/` because the current repository is public. Phase 55I converted ten selected records into separately authored public source records; candidate IDs, private notes, registry structure, and non-promoted candidate contents remain excluded from tracked files, exports, and static output. The workflow and promotion gate are documented in `docs/private-source-candidate-registry.md`.
 
 ## Verification Evidence
 
@@ -114,21 +116,23 @@ Phase 55G added the official County action and signed final MCAQD air permit to 
 
 Phase 55H refreshed the Toronto item and permit rails without claiming a future decision. The official record schedules item `2026.SC33.9` for July 29-31 and makes the bill-withholding conditions explicit. All eight named-address building-permit searches returned bounded negative markers. The result remains 229 pages, 130 public sources, 36 signals, 16 Published, and 20 In Review, with ten public updates.
 
+Phase 55I reviewed the remaining 90 private candidates, eliminated the `Needs Triage` backlog, added 22 public source records and nine bounded `In Review` signals, and repaired both local-system dossiers without changing Published membership. The result is 260 pages, 152 public sources, 45 signals, 16 Published, 29 In Review, and 11 public updates. Source Monitor reports zero Review Due, zero Watch Soon, and 152 Current records; Source Coverage remains 14 Strong, zero Developing, and zero Weak lanes.
+
 Verified results:
 
-- 229 generated HTML pages,
-- exact exports for 130 sources, 17 topics, and 16 Published signals,
+- 260 generated HTML pages,
+- exact exports for 152 sources, 17 topics, and 16 Published signals,
 - all 16 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
 - correct canonical, robots, and publication-state indexing boundaries,
 - ten core journeys checked at `1440x900` and `390x844`,
 - compact header brand and navigation targets repaired to a 44-pixel minimum,
 - no checked layout, semantic, indexing, or browser-console release blocker.
-- exactly 150 unique private candidates, 10 in each of 15 profiles, with active-source duplication permitted only for the one record explicitly marked `Active Source Record`,
+- exactly 150 unique private candidates, 10 in each of 15 profiles, with all records assigned a first-pass triage state,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
 
-The local and Phase 55H deployment evidence is in `docs/release-qa-v0.2.md`; the initial hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview is current at Sites version 6 from commit `f2fe94ae95a2f702104b995c2a0a01776c00f3aa`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The local Phase 55I evidence is in `docs/release-qa-v0.2.md`; the initial hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview remains at Sites version 6 from commit `f2fe94ae95a2f702104b995c2a0a01776c00f3aa` until the exact Phase 55I checkpoint is refreshed. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 
@@ -140,7 +144,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Twenty signals remain `In Review`; the former Joby Draft Sample is now a bounded company-claim record in review and is the explicit hold from Phase 55F.
+- Twenty-nine signals remain `In Review`; the nine Phase 55I additions require a separate publication review, and the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F.
 - The briefing, dependency maps, and local-system profiles remain prelaunch or research material.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - The Project Baccara record now includes an official 4-1 County action and active final air permit; the fully executed MCP, condition compliance, service, construction, testing, occupancy, and operation remain unverified.
@@ -174,4 +178,4 @@ npm.cmd run build
 npm.cmd run verify:release
 ```
 
-Expected output: 229 HTML pages and a passing v0.2 release assertion.
+Expected output: 260 HTML pages and a passing v0.2 release assertion.

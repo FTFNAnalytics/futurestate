@@ -153,7 +153,7 @@ Expected results:
 - [x] Confirm non-published signal and briefing pages have `noindex, follow`.
 - [x] Confirm `/atlas/source-monitor/` renders and shows review due/watch soon/current source states.
 - [x] Confirm `/atlas/source-coverage/` renders and shows watch-lane/topic source coverage.
-- [x] Confirm the eight-entry update log and all three static exports.
+- [x] Confirm the eleven-entry update log and all three static exports.
 - [x] Smoke test ten launch-critical local routes.
 - [x] Run desktop and mobile browser checks at 1440 × 900 and 390 × 844.
 - [x] Confirm brand and primary-navigation targets meet a 44-pixel minimum.
@@ -165,7 +165,7 @@ Evidence: `docs/release-qa-v0.2.md`, `docs/work-packages/phase-54-v0.2-release-q
 The owner-only preview portion is complete. Do not execute the remaining public-domain steps without explicit approval.
 
 - [x] Create the Sites project and private source repository.
-- [x] Build and package the exact 227-page candidate.
+- [x] Build and package the exact owner-only candidate; the current Phase 55I package contains 260 pages.
 - [x] Deploy to an owner-only preview URL.
 - [x] Run the launch-critical route and trust-output checklist on the preview URL.
 - [ ] Approve public access and the `0.2.0` release freeze.

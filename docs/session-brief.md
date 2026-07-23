@@ -37,7 +37,7 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 229
+static pages generated: 260
 current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
@@ -89,7 +89,7 @@ What is now stable:
 - Phase 49 expanded the source library to 102 records, including broad official catalogs, funding and spending APIs, international statistics, research APIs, patent/IP sources, water and mineral datasets, space licensing, agriculture biotechnology regulation, and Phoenix/MAG local-system data.
 - Phase 50 completed its six-item bounded evidence batch: DOE/Grants.gov, MAG projections, USAspending award DEMS0000003, NSF award 2433348, USGS 2026 gallium, and Toronto application 24 254930.
 - Phase 52A added the validated public update log, three versioned data exports, and the pre-Supabase public/private contract.
-- Phase 52B added a Git-ignored 150-record candidate registry across 15 evidence profiles and added validation plus public-build leak assertions. Phase 55A and Phase 55E brought the current review state to 58 `Candidate`, one `Active Source Record`, one `Rejected`, and 90 `Needs Triage` records.
+- Phase 52B added a Git-ignored 150-record candidate registry across 15 evidence profiles and added validation plus public-build leak assertions. Phase 55I completed the first-pass review: 132 `Candidate`, 11 `Active Source Record`, four `Watchlist Only`, two `Blocked`, one `Rejected`, and zero `Needs Triage`.
 - Source Monitor now groups work by review state and exposes a specific next action; Source Coverage now distinguishes Strong, Developing, and Weak lanes with gap-led actions.
 - Phase 51C added named Meta electric-service and TSMC facility milestones, repaired the apprenticeship signal with active cohort counts, and brought the library to 33 signals without forcing missing downstream outcomes.
 - Phase 55B added the White House and OMB post-quantum migration records, a named Arizona Project Baccara certificate trail, and two bounded `In Review` signals; it also refreshed the Toronto, Ontario, and ACC monitoring rails.
@@ -99,6 +99,7 @@ What is now stable:
 - Phase 55F applied the full publication gate to those eight records, promoted seven bounded updates, held the Joby company claim, and expanded the public core to 16 Published signals without changing the 227-page route count.
 - Phase 55G added Maricopa County's official 4-1 Project Baccara action and MCAQD's active final Permit `P0013417`, kept the signal `In Review`, and refreshed the exact 229-page / 130-source package as owner-only Sites version 5.
 - Phase 55H now records Toronto's July 29-31 Council gate, the wind-study, land-exchange, and laneway conditions that precede amendment enactment, and bounded negative Building Permit searches across all eight project addresses; Sites version 6 serves the exact pre-decision checkpoint.
+- Phase 55I reviewed the remaining 90 private candidates, added ten monitoring rails plus 12 dated source records, created nine bounded `In Review` signals, repaired the local-system evidence trails, and reached 152 sources, 45 signals, and 260 pages without a new Published promotion.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 30 sources supporting the 16 Published signals were checked on or after `2026-07-22`.
@@ -110,7 +111,7 @@ What is now stable:
 What is still prelaunch scaffolding:
 
 - Sixteen signal records are `Published`.
-- Twenty signal records are still `In Review`; no Draft Sample remains.
+- Twenty-nine signal records are still `In Review`; no Draft Sample remains.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -120,14 +121,14 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should now preserve the verified owner-only preview and complete Phase 55H after the July 29-31 Toronto Council meeting. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phases 52A-52B completed the public contract, private 150-source discovery shelf, and authority surfaces; Phases 51A-51C built named local evidence trails; Phase 53 produced a nine-record Published set; Phase 54 verified the package locally; Phase 55D verified it on a hosted owner-only URL; Phase 55E expanded the dated content layer; Phase 55F promoted seven records through a separate publication gate; Phase 55G advanced the Baccara authority trail; and Phase 55H established the Toronto pre-decision gate without claiming a future outcome. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should now preserve the owner-only preview, run a separate publication-readiness review on the nine Phase 55I additions, and complete Phase 55H after the July 29-31 Toronto Council meeting. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phases 52A-52B completed the public contract, private 150-source discovery shelf, and authority surfaces; Phases 51A-51C built named local evidence trails; Phase 53 produced a nine-record Published set; Phase 54 verified the package locally; Phase 55D verified it on a hosted owner-only URL; Phases 55E-55H deepened and reviewed dated evidence; and Phase 55I completed candidate triage while adding nine bounded content records. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 36 signal records,
-- 130 source records,
+- 45 signal records,
+- 152 source records,
 - 17 topic records,
 - 2 local system profiles,
 - 10 organization records,
@@ -135,7 +136,7 @@ Current seed content includes:
 - 1 briefing in review,
 - 10 evidence gap records,
 - 2 dependency maps in review,
-- 8 public update-log entries.
+- 11 public update-log entries.
 
 Nine official-source-backed signals are now `Published`:
 
@@ -393,16 +394,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 55H Toronto pre-decision authority gate, following the Phase 55G Project Baccara authority conversion.
+Phase 55I remaining-candidate review and content expansion, following the Phase 55H Toronto pre-decision authority gate.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 owner-only hosted candidate: package 0.2.0-dev, 130 public sources, 150 private candidates, 36 signals, 17 topics, 10 updates, 229 pages, 16 Published signals, 3 public JSON endpoints, passed local release assertions, and Sites version 6 at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site. The private layer has 60 reviewed records; current Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, zero Watch Soon, and 130 Current records.
+v0.2 locally verified candidate: package 0.2.0-dev, 152 public sources, 150 first-pass-triaged private candidates, 45 signals, 17 topics, 11 updates, 260 pages, 16 Published signals, and 3 public JSON endpoints. Sites version 6 remains available at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site until the exact Phase 55I refresh is recorded. Source Coverage is 14 Strong lanes, and the local Source Monitor has zero Review Due, zero Watch Soon, and 152 Current records.
 
 Next decision gate:
-Preserve the owner-only preview. Complete Phase 55H after the 29-31 July 2026 Council window: recheck Toronto application 24 254930 for the Council disposition and vote, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit records. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve the owner-only preview. Run Phase 55J as a separate publication-readiness review of the nine Phase 55I additions, then complete Phase 55H after the 29-31 July 2026 Council window. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

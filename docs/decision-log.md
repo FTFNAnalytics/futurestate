@@ -2160,3 +2160,26 @@ Implemented:
 Boundary:
 
 A scheduled Council meeting is not a Council disposition. Council adoption is not amendment enactment when bills remain subject to conditions. An `Application Not Found` address marker is not proof that no building permit exists. The same item must be rechecked after July 31 for the disposition, vote, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit records.
+
+## 2026-07-23: Phase 55I Completes Candidate Triage And Adds Content Without Automatic Publication
+
+Decision:
+
+FTFN will complete a first-pass review of the remaining 90 private candidates, convert only selected gap-closing rails into separately authored public source records, and keep every resulting signal `In Review` until a separate publication gate.
+
+Rationale:
+
+The candidate shelf is useful only when it improves named evidence trails. Ten selected rails add durable official monitoring across federal AI policy, semiconductor metrology, critical minerals, plant biotechnology, research infrastructure, labour data, water planning, electricity planning, and Toronto distribution regulation. Dated official records from those rails support nine specific reader-facing updates, but most describe policy, planning, awards, data infrastructure, or regional baselines rather than implementation or delivery outcomes.
+
+Implemented:
+
+- assigned all 150 private records a first-pass state: 132 Candidate, 11 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage,
+- added ten public monitoring rails and 12 dated public source records,
+- added nine bounded signals as `In Review`,
+- repaired the Phoenix provider-water signal, both local-system dossiers, and linked workforce and infrastructure evidence gaps,
+- reached 152 sources, 45 signals, 11 updates, and 260 generated pages while preserving 16 Published signals,
+- passed candidate validation, content validation, source health, Astro diagnostics, and the production build.
+
+Boundary:
+
+Policy is not implementation; planned spending is not constructed supply; research awards are not deployed infrastructure; regional workforce data is not facility hiring; and system-level water or electricity planning is not project-level capacity. Candidate IDs, private notes, registry structure, and non-promoted candidate contents remain local-only. No Published promotion, public GitHub synchronization, public access, package freeze, custom-domain attachment, Hostinger DNS change, or public launch was authorized.

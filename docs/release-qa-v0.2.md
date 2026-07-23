@@ -2,16 +2,16 @@
 
 Date: 2026-07-23
 
-Status: Phase 55H pre-decision release gate and owner-only preview version 6 deployment passed.
+Status: Phase 55I local release gate passed; owner-only preview refresh pending.
 
 ## Artifact Under Review
 
 - Build manifest: `deployment/ftfn-v0.2-build.json`
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
-- Expected build: 229 HTML pages
-- Content baseline: 130 sources, 36 signals, 17 topics, 10 update entries
-- Publication baseline: 16 Published, 20 In Review, 0 Draft Sample
+- Expected build: 260 HTML pages
+- Content baseline: 152 sources, 45 signals, 17 topics, 11 update entries
+- Publication baseline: 16 Published, 29 In Review, 0 Draft Sample
 
 The package remains `0.2.0-dev`. The owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
 
@@ -31,11 +31,11 @@ Result:
 
 | Check | Result |
 | --- | --- |
-| Private candidates | Passed: 150 records; 58 Candidate, 90 Needs Triage, 1 Active Source Record, 1 Rejected |
-| Content references | Passed: 130 sources, 36 signals, 17 topics, 10 organizations, 5 technologies, 2 local systems, 1 briefing, 10 evidence gaps, 2 dependency maps, 10 updates |
-| Source endpoint metadata | Passed: 69 Manual review, 61 Probe ready |
+| Private candidates | Passed: 150 records; 132 Candidate, 11 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage |
+| Content references | Passed: 152 sources, 45 signals, 17 topics, 10 organizations, 5 technologies, 2 local systems, 1 briefing, 10 evidence gaps, 2 dependency maps, 11 updates |
+| Source endpoint metadata | Passed: 87 Manual review, 65 Probe ready |
 | Astro diagnostics | Passed: 0 errors, 0 warnings, 0 hints |
-| Static build | Passed: 229 HTML pages |
+| Static build | Passed: 260 HTML pages |
 | Release assertions | Passed: required outputs, update log, exports, Published-source dates, robots, sitemap, canonical, and indexing boundaries |
 
 The release assertion is preserved as `npm run verify:release`. It reads the v0.2 manifest and fails if the checked build no longer matches the release contract.
@@ -123,25 +123,25 @@ This pass includes rendered DOM, content-structure, alternative-text, link, head
 
 No release-blocking accessibility issue was found in the checked scope.
 
-## Phase 55H Content And Deployment QA Scope
+## Phase 55I Content And Deployment QA Scope
 
-Phase 55H refreshes two existing sources, repairs an existing signal and local-system evidence trail, and adds one update entry without changing components, styles, layouts, navigation, routes, or client-side behavior. The Phase 54 desktop/mobile browser matrix therefore remains the UI baseline. The 229-page Phase 55H artifact passed candidate validation, content validation, source health, Astro diagnostics, production build, and the release assertion.
+Phase 55I completes the first-pass triage of all 150 private candidates, adds 22 source records and nine `In Review` signals, repairs an existing Phoenix signal and both local-system evidence trails, and adds one update entry. It does not change components, styles, layouts, navigation, or client-side behavior. The Phase 54 desktop/mobile browser matrix therefore remains the UI baseline. The 260-page artifact passed candidate validation, content validation, source health, Astro diagnostics, production build, and the release assertion.
 
-Hosted checkpoint:
+Current hosted checkpoint before the Phase 55I refresh:
 
 - commit: `f2fe94ae95a2f702104b995c2a0a01776c00f3aa`,
 - Sites version: 6,
 - URL: `https://ftfn-analytics.jbumstead.chatgpt.site`,
 - access: custom owner-only policy with one allowed user and no groups,
 - deployment status: succeeded,
-- application contract: 229 pages, 130 sources, 36 signals, 16 Published, 20 In Review, and ten updates,
-- Source Monitor contract: 0 Review Due, 0 Watch Soon, 130 Current,
+- application contract: the hosted version still reflects Phase 55H while the locally verified Phase 55I contract is 260 pages, 152 sources, 45 signals, 16 Published, 29 In Review, and 11 updates,
+- Source Monitor contract: local Phase 55I output reports 0 Review Due, 0 Watch Soon, 152 Current,
 - custom-domain state: `ftfn.io` and `www.ftfn.io` remain pending validation and do not route to the Site.
 
-The Phase 55H pass did not repeat the Phase 54 browser matrix because no component, style, layout, navigation, route, or client-side behavior changed. Export membership, private-data exclusion, robots, sitemap, canonical, update-log, and indexing assertions passed against the exact production build before deployment. Sites then reported a successful version 6 deployment and preserved the one-user, no-group access policy.
+The Phase 55I pass did not repeat the Phase 54 browser matrix because no component, style, layout, navigation, or client-side behavior changed. Export membership, private-data exclusion, robots, sitemap, canonical, update-log, and indexing assertions passed against the production build. The new signal routes are `noindex, follow` and remain outside the sitemap because all nine are `In Review`.
 
 ## Verdict
 
-The Phase 55H pre-decision gate passes locally and in the owner-only deployment. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, or public exports.
+The Phase 55I content expansion passes locally. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, or public exports.
 
-The owner-only preview is current at Sites version 6. It is not approved for public access or public launch. The post-meeting Council and by-law recheck remains pending until after July 31, 2026.
+The owner-only preview remains at Sites version 6 until the Phase 55I source checkpoint is deployed. It is not approved for public access or public launch. A separate Phase 55J publication review and the post-meeting Council and by-law recheck remain pending.

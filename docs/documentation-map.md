@@ -1194,12 +1194,33 @@ Do not use it for:
 - Treating Council adoption as enacted amendments or project delivery.
 - Authorizing public access, custom-domain attachment, package freeze, or Hostinger DNS changes.
 
+### Phase 55I Remaining-Candidate Review And Content Expansion
+
+Purpose:
+
+- Record the completed first-pass triage of all 150 local-only candidates without exposing candidate IDs or private notes.
+- Document the ten converted monitoring rails, 12 dated public source records, nine new `In Review` signals, and local-system evidence repairs.
+- Preserve the separate publication-review, owner-only access, DNS, and package-freeze gates.
+
+Update when:
+
+- a Phase 55I signal passes or fails a separate publication-readiness review,
+- one of the new monitoring rails produces a dated gap-closing record,
+- candidate status counts or public-source mappings materially change,
+- the exact owner-only deployment checkpoint or hosted verification changes.
+
+Do not use it for:
+
+- Publishing the private candidate registry or candidate-level notes.
+- Treating source selection as proof of the claims found through that source.
+- Authorizing a Published promotion, public access, custom-domain attachment, package freeze, or Hostinger DNS changes.
+
 ### v0.2 Build Manifest
 
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 229-page build, 16 Published signals, 130 sources, ten updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 260-page build, 16 Published signals, 152 sources, 11 updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 

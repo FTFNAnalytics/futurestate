@@ -33,13 +33,13 @@
   "build_command": "npm run build",
   "output_directory": "dist",
   "expected_build": {
-    "static_pages": 229,
-    "signals": 36,
+    "static_pages": 260,
+    "signals": 45,
     "published_signals": 16,
-    "in_review_signals": 20,
+    "in_review_signals": 29,
     "draft_sample_signals": 0,
     "published_support_sources": 30,
-    "sources": 130,
+    "sources": 152,
     "topics": 17,
     "organizations": 10,
     "technologies": 5,
@@ -47,7 +47,7 @@
     "briefings": 1,
     "evidence_gaps": 10,
     "dependency_maps": 2,
-    "updates": 10,
+    "updates": 11,
     "public_json_exports": 3
   },
   "private_authority_layer": {
@@ -55,23 +55,26 @@
     "candidate_target": 150,
     "candidate_records": 150,
     "evidence_profiles": 15,
-    "first_pass_triaged": 60,
-    "candidate_status_records": 58,
+    "first_pass_triaged": 150,
+    "candidate_status_records": 132,
     "rejected_records": 1,
-    "active_source_records": 1,
-    "needs_triage": 90,
+    "active_source_records": 11,
+    "watchlist_only_records": 4,
+    "blocked_records": 2,
+    "needs_triage": 0,
     "active_sources_promoted_by_phase_52b": 0,
+    "active_sources_promoted_by_phase_55i": 10,
     "validation_command": "npm run validate:candidates",
     "public_output_policy": "Candidate records, IDs, private notes, and registry paths must not appear in static output or public exports."
   },
   "release_delta_from_v0_1_1": {
-    "static_pages_added": 47,
-    "signals_added": 18,
+    "static_pages_added": 78,
+    "signals_added": 27,
     "published_signals_added": 13,
-    "sources_added": 28,
+    "sources_added": 50,
     "public_json_exports_added": 3,
     "public_update_log_added": true,
-    "summary": "Completes the first authority-loop content milestone, the bounded Phase 55E evidence expansion, the Phase 55F publication review, the Phase 55G Project Baccara authority conversion, and the Phase 55H Toronto pre-decision authority gate with 16 Published signals, a public update log, and versioned source, topic, and Published-signal exports."
+    "summary": "Completes the first authority-loop content milestone and the Phase 55I remaining-candidate review with all 150 private candidates triaged, 152 public sources, 45 signals, 16 Published signals, 11 public updates, and versioned source, topic, and Published-signal exports."
   },
   "last_verified": {
     "date": "2026-07-23",
@@ -79,17 +82,17 @@
     "candidate_validation": "passed-150-local-only-records",
     "validate_content": "passed",
     "source_health": "passed",
-    "source_health_manual_review": 69,
-    "source_health_probe_ready": 61,
+    "source_health_manual_review": 87,
+    "source_health_probe_ready": 65,
     "source_monitor_review_due": 0,
     "source_monitor_watch_soon": 0,
-    "source_monitor_current": 130,
+    "source_monitor_current": 152,
     "source_coverage_strong_lanes": 14,
     "source_coverage_developing_lanes": 0,
     "source_coverage_weak_lanes": 0,
     "astro_check": "passed",
     "build": "passed",
-    "static_pages_built": 229,
+    "static_pages_built": 260,
     "release_assertions": "passed",
     "browser_qa": "passed-local",
     "browser_viewports": [
@@ -97,7 +100,7 @@
       "390x844"
     ],
     "browser_routes_checked": 10,
-    "preview_qa": "passed-owner-only-version-6-deployment-and-access"
+    "preview_qa": "passed-owner-only-version-6-access; phase-55i-refresh-pending"
   },
   "required_output_files": [
     "dist/index.html",
@@ -161,7 +164,7 @@
   },
   "release_gates": [
     "Run all predeploy commands from app/",
-    "Confirm 229 generated HTML pages and all required outputs",
+    "Confirm 260 generated HTML pages and all required outputs",
     "Confirm all 16 Published signal URLs are present in the sitemap",
     "Confirm every non-published signal URL is absent from the sitemap",
     "Confirm Published details use index, follow and non-published details use noindex, follow",
@@ -170,7 +173,7 @@
     "Confirm all three public JSON exports match the versioned allowlist contract",
     "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
     "Confirm generated output contains no private candidate IDs or registry-path references",
-    "Confirm the ten-entry public update log renders",
+    "Confirm the eleven-entry public update log renders",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
     "Attach ftfn.io only after preview checks pass and explicit approval is recorded"
@@ -192,7 +195,7 @@
   "known_limitations": [
     "The package version remains 0.2.0-dev until an approved preview and release decision.",
     "The hosted Sites URL is owner-only and has not been made public or attached to ftfn.io.",
-    "Twenty signals, one briefing, two dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
+    "Twenty-nine signals, one briefing, two dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
     "The public JSON files are static build exports, not a live API or database-backed service.",
     "The 150-record candidate registry is an ignored local file and requires private backup outside public Git.",
     "The optional bulk candidate-link audit was blocked by uniform outbound Node network failures in the verification environment; every candidate still requires live human confirmation before promotion.",
@@ -200,5 +203,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the locally verified and owner-only deployed Phase 55H Toronto pre-decision authority repair. Sites version 6 serves commit f2fe94ae95a2f702104b995c2a0a01776c00f3aa with the July 29-31 Council gate, bill-withholding conditions, and bounded negative permit searches; the signal remains In Review. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, or package freeze."
+  "notes": "This manifest records the locally verified Phase 55I remaining-candidate review and content expansion. All 150 private candidates now have a first-pass triage state; ten selected monitoring rails and twelve dated source records support nine new In Review signals plus local-system repairs. Sites version 6 still serves the prior Phase 55H commit while the exact Phase 55I source is prepared for an owner-only refresh. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, Published promotion, or package freeze."
 }

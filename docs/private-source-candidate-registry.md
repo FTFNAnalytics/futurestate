@@ -1,6 +1,6 @@
 # Private Source-Candidate Registry
 
-Date: 2026-07-22
+Date: 2026-07-23
 
 ## Purpose
 
@@ -30,11 +30,14 @@ Because ignored files are not protected by Git history, preserve the working reg
 | Candidate records | 150 |
 | Evidence profiles | 15 |
 | Candidates per profile | 10 |
-| Reviewed | 45 |
-| Candidate | 44 |
+| Reviewed | 150 |
+| Candidate | 132 |
+| Active Source Record | 11 |
+| Watchlist Only | 4 |
+| Blocked | 2 |
 | Rejected | 1 |
-| Needs triage | 105 |
-| Publicly promoted by this phase | 0 |
+| Needs triage | 0 |
+| Publicly promoted in Phase 55I | 10 |
 
 The profiles cover cross-cutting official rails, power and grid, compute and chips, water, mobility, security, critical minerals, climate, agriculture, AI and advanced manufacturing, space, discovery data, finance and human futures, Arizona local systems, and Ontario local systems.
 
@@ -76,9 +79,10 @@ The live audit is a diagnostic, not a promotion gate. Some official portals reje
 
 - `Needs Triage`: discovered and structured, but not yet given a complete first human pass.
 - `Candidate`: first-pass triage completed; still private and not claim-supporting.
-- `On Hold`: potentially useful, but blocked by access, duplication, instability, scope, or unclear evidence value.
+- `Watchlist Only`: useful as comparative or future-purpose context, but not a current promotion priority.
+- `Blocked`: potentially useful, but its next review requires credentials, account access, or another unresolved access dependency.
 - `Rejected`: unsuitable for the active source library; retain the reason so the same weak rail is not repeatedly rediscovered.
-- `Promoted`: converted into a separate public source record after the full promotion gate passes.
+- `Active Source Record`: converted into a separate public source record after the full promotion gate passes; the private registry entry remains only as a provenance and deduplication marker.
 
 ## Promotion Gate
 
@@ -99,4 +103,6 @@ Promotion never moves private notes wholesale into public content. The public so
 
 Review candidates in small, gap-led batches. Prefer five to ten candidates tied to a current evidence gap, local dossier question, stale public source, or weak coverage lane. Do not promote a batch merely to increase the public source count.
 
-The target is a maintained discovery shelf, not 150 automatic additions. Phase 52 held the active public library at 114 sources while giving later editorial cycles enough structured options to improve authority selectively. Phase 55A reviewed 15 additional records without promoting any of them publicly. Phases 55B-55C brought the public library to 120 through separate, bounded official-source and corroborating research; no private candidate was promoted, and the detailed triage note remains in Git-ignored `private-data/`.
+The target is a maintained discovery shelf, not 150 automatic additions. Phase 52 held the active public library at 114 sources while giving later editorial cycles enough structured options to improve authority selectively. Phase 55A reviewed 15 additional records without promoting any of them publicly, and Phase 55E reviewed another 15 while converting one into an active source record.
+
+Phase 55I completed the first-pass triage of the remaining 90 records. It retained 74 as `Candidate`, placed four comparative or geographically non-transferable rails on `Watchlist Only`, marked two account- or credential-dependent rails `Blocked`, and converted ten into active public monitoring records. The detailed candidate-level decisions remain in Git-ignored `private-data/`; only aggregate counts and reviewed public records belong in the tracked project.
