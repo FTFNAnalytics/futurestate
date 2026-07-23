@@ -23,7 +23,7 @@ Phase 55C preserves the completed release package locally and follows Project Ba
 
 Phase 55D adds a minimal static hosting adapter, deploys the exact 218-page package to an owner-only Sites URL, and passes hosted checks on core reader routes, canonical and indexing metadata, robots, sitemap, and the 120-record source export. It does not authorize public access, `ftfn.io` attachment, or Hostinger DNS changes.
 
-Phase 55E expands the local candidate to 227 pages, 128 public sources, and 36 signals. It rechecks all 17 aging source rails, reviews 15 additional private candidates, repairs seven broad records into dated evidence updates, adds one bounded storage-funding signal, and keeps the publication count at nine. The owner-only hosted preview is refreshed only after the exact validated source state is committed.
+Phase 55E expands the candidate to 227 pages, 128 public sources, and 36 signals. It rechecks all 17 aging source rails, reviews 15 additional private candidates, repairs seven broad records into dated evidence updates, adds one bounded storage-funding signal, and keeps the publication count at nine. Sites version 3 now serves the exact committed Phase 55E state under the existing owner-only policy.
 
 ## Build Inventory
 

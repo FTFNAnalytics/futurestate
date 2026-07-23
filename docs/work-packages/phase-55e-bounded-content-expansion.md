@@ -1,7 +1,7 @@
 # Phase 55E Bounded Content Expansion
 
 Date: 2026-07-23  
-Status: implemented locally; owner-only preview refresh pending
+Status: complete; owner-only preview version 3 verified
 
 ## Goal
 
@@ -87,7 +87,25 @@ npm.cmd run check
 npm.cmd run build
 ```
 
-`npm.cmd run verify:release` and the owner-only Sites refresh are completed after the versioned documentation and manifest match the new 227-page artifact.
+`npm.cmd run verify:release` passed against the versioned 227-page contract.
+
+## Owner-Only Preview
+
+The exact validated source state was committed as `8605ce0`, pushed only to the existing private Sites source repository, saved as Sites version 3, and deployed successfully to:
+
+`https://ftfn-analytics.jbumstead.chatgpt.site`
+
+Access remained `custom` with one allowed owner and no groups. Hosted smoke checks confirmed:
+
+- homepage counts of 36 signals and 128 sources,
+- Source Monitor counts of 0 Review Due, 0 Watch Soon, and 128 Current,
+- 61 probe-ready and 67 manual-review sources,
+- the 128-source Atlas index,
+- the new DOE storage signal in `In Review`,
+- `noindex, follow` on that non-published signal,
+- the expected `https://ftfn.io` canonical.
+
+The browser client blocked direct navigation to raw JSON and text outputs, so the existing automated release assertion remains the verification source for JSON export membership, private-registry exclusion, `robots.txt`, and sitemap contents.
 
 ## Boundary
 

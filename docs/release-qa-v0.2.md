@@ -2,7 +2,7 @@
 
 Date: 2026-07-23
 
-Status: Phase 55E local release gate passed; owner-only preview refresh pending.
+Status: Phase 55E local release gate and owner-only preview version 3 passed.
 
 ## Artifact Under Review
 
@@ -13,7 +13,7 @@ Status: Phase 55E local release gate passed; owner-only preview refresh pending.
 - Content baseline: 128 sources, 36 signals, 17 topics, 7 update entries
 - Publication baseline: 9 Published, 27 In Review, 0 Draft Sample
 
-The package remains `0.2.0-dev`. The Phase 55D owner-only deployment is a private checkpoint; Phase 55E changes remain non-public and require a private preview refresh before hosted QA is current.
+The package remains `0.2.0-dev`. The Phase 55E owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
 
 ## Automated Gate
 
@@ -125,17 +125,22 @@ No release-blocking accessibility issue was found in the checked scope.
 
 ## Phase 55E Content-Only QA Scope
 
-Phase 55E changes source metadata and editorial content without changing components, styles, layouts, navigation, routes, or client-side behavior. The Phase 54 desktop/mobile browser matrix and Phase 55D hosted route checks therefore remain the UI baseline. The new 227-page artifact must still pass the automated release assertion and owner-only hosted smoke checks before the preview record is current.
+Phase 55E changes source metadata and editorial content without changing components, styles, layouts, navigation, routes, or client-side behavior. The Phase 54 desktop/mobile browser matrix therefore remains the UI baseline. The new 227-page artifact passed the automated release assertion and owner-only hosted smoke checks.
 
-The approved next external action is limited to:
+Hosted checkpoint:
 
-1. commit the exact validated Phase 55E source state,
-2. deploy that version to the existing owner-only Sites project,
-3. repeat core route, source-export, robots, sitemap, canonical, and indexing checks,
-4. keep public access, `0.2.0` freeze, `ftfn.io`, and DNS deferred.
+- commit: `8605ce0c300396539f11d9bc9e6e381cfab2d64f`,
+- Sites version: 3,
+- URL: `https://ftfn-analytics.jbumstead.chatgpt.site`,
+- access: custom owner-only policy with one allowed user and no groups,
+- homepage: 36 signals and 128 sources,
+- Source Monitor: 0 Review Due, 0 Watch Soon, 128 Current,
+- new DOE signal: `In Review`, `noindex, follow`, correct canonical.
+
+Raw JSON and text routes were blocked by the browser client during direct navigation. Their membership, private-data exclusion, robots, and sitemap assertions passed in the local build/release verifier.
 
 ## Verdict
 
 Phase 55E passes locally. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, or public exports.
 
-The candidate is ready to refresh the already approved owner-only preview. It is not approved for public access or public launch.
+The owner-only preview is current at Sites version 3. It is not approved for public access or public launch.
