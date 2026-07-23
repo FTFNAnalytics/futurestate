@@ -2,14 +2,14 @@
   "id": "dependency-map-federal-research-industrial-capacity",
   "title": "Federal research ambition runs through industrial capacity",
   "slug": "federal-research-to-industrial-capacity",
-  "summary": "A qualitative map connecting DARPA research direction, government-wide R&D priorities, AI infrastructure, transmission need, secure supply chains, and implementation evidence.",
+  "summary": "A qualitative map connecting DARPA research direction, government-wide R&D priorities, AI infrastructure, transmission need, secure supply chains, and eight stage-bounded implementation trails.",
   "map_type": "Dependency Stack",
   "record_status": "In Review",
   "primary_topic": "Advanced Manufacturing",
   "framework_layers": ["Resource Foundations", "Enabling Infrastructure", "Frontier Domains", "Human Systems"],
   "constraint_tags": ["Materials", "Manufacturing", "Supply Chain", "Power", "Compute", "Cybersecurity", "Capital"],
   "map_question": "What must exist between federal research ambition and a secure, scalable operating capability?",
-  "interpretation_boundary": "The map connects explicit source relationships and reviewed synthesis signals. It does not prove enacted funding, successful R&D, available industrial capacity, completed infrastructure, or operational adoption.",
+  "interpretation_boundary": "The map connects explicit source relationships, reviewed synthesis signals, and named implementation records. Awards, obligations, scheduled trials, delivered material, and standards artifacts remain distinct from completed facilities, accepted systems, operating infrastructure, or scaled outcomes.",
   "source_ids": [
     "source-darpa-fy2027-budget",
     "source-darpa-future-focus-2026",
@@ -18,14 +18,30 @@
     "source-nspm-11-ai-national-security",
     "source-2026-transmission-needs-study",
     "source-defense-supply-chains-critical-materials-2026",
-    "source-semiconductor-equipment-imports-2026"
+    "source-semiconductor-equipment-imports-2026",
+    "source-usaspending-api",
+    "source-darpa-lift-challenge-2026",
+    "source-dod-mp-materials-loan-2025",
+    "source-nist-napmp-final-awards-2025",
+    "source-doe-transmission-facilitation-selections",
+    "source-inl-project-pele-triso-delivery-2025",
+    "source-dod-openai-prototype-ota-2025",
+    "source-nist-next-generation-wireless-standards-testbed"
   ],
   "signal_ids": [
     "signal-darpa-fy2027-supply-chain-logistics-rd-portfolio",
     "signal-federal-rd-priorities-full-stack-technology",
     "signal-usg-ai-national-security-infrastructure-stack",
     "signal-2026-transmission-study-ai-manufacturing-load",
-    "signal-usg-resilience-industrial-base-stack"
+    "signal-usg-resilience-industrial-base-stack",
+    "signal-usaspending-talon-nickel-battery-minerals-processing-award",
+    "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+    "signal-dod-mp-materials-heavy-rare-earth-separation-loan",
+    "signal-nist-napmp-advanced-packaging-final-awards",
+    "signal-doe-southline-transmission-capacity-contract-award",
+    "signal-project-pele-first-triso-fuel-delivery",
+    "signal-dod-openai-prototype-ota-initial-obligation",
+    "signal-nist-oran-testbed-standards-artifacts"
   ],
   "technology_ids": ["technology-advanced-semiconductor-packaging", "technology-grid-scale-energy-storage"],
   "local_system_ids": [],
@@ -76,7 +92,35 @@
       "id": "node-implementation",
       "label": "Implementation evidence",
       "node_type": "Constraint",
-      "note": "Appropriations, awards, standards, contracts, permits, projects, capacity, and operating outcomes are still required."
+      "note": "Eight records now establish partial implementation trails, but later construction, test, acceptance, operation, and scale gates remain open."
+    },
+    {
+      "id": "node-field-trial",
+      "label": "Named performers and scheduled field trial",
+      "node_type": "Signal",
+      "record_id": "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+      "note": "The Lift Challenge names invited teams and an August 2026 trial without pre-claiming the results."
+    },
+    {
+      "id": "node-funded-actions",
+      "label": "Awards, obligations, and contracts",
+      "node_type": "Signal",
+      "record_id": "signal-dod-openai-prototype-ota-initial-obligation",
+      "note": "Talon, MP Materials, NAPMP, Southline, and OpenAI records identify instruments and amounts while separating value, obligation, outlay, and delivery."
+    },
+    {
+      "id": "node-physical-milestone",
+      "label": "Produced and delivered project material",
+      "node_type": "Signal",
+      "record_id": "signal-project-pele-first-triso-fuel-delivery",
+      "note": "Project Pele's first TRISO fuel batch reached the demonstration site, upstream of reactor startup and operation."
+    },
+    {
+      "id": "node-standards-artifacts",
+      "label": "Testbed and standards artifacts",
+      "node_type": "Signal",
+      "record_id": "signal-nist-oran-testbed-standards-artifacts",
+      "note": "NIST records testbed software, laboratory infrastructure, and accepted O-RAN contributions without claiming a completed 6G system."
     }
   ],
   "links": [
@@ -126,21 +170,50 @@
       "from": "node-resilience",
       "to": "node-implementation",
       "relationship": "Limited By",
-      "confidence": "Missing Evidence",
-      "note": "Strategy and policy do not establish completed implementation."
+      "confidence": "Partial",
+      "note": "Named implementation records now exist, but they do not establish completed or scaled capability."
     },
     {
       "from": "node-research-direction",
       "to": "node-implementation",
       "relationship": "Limited By",
-      "confidence": "Missing Evidence",
-      "note": "Budget guidance and solicitations require later appropriation, award, test, transition, and operating records."
+      "confidence": "Partial",
+      "note": "Phase 55L adds selected award, obligation, trial, milestone, procurement, and standards records; later transition and operating evidence remains necessary."
+    },
+    {
+      "from": "node-darpa-portfolio",
+      "to": "node-field-trial",
+      "relationship": "Related Signal",
+      "confidence": "Supported",
+      "note": "The Lift Challenge provides named performers and a dated trial inside DARPA's logistics and aviation research activity."
+    },
+    {
+      "from": "node-implementation",
+      "to": "node-funded-actions",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "Official award, obligation, loan, capacity-contract, and prototype-agreement records establish named financial actions."
+    },
+    {
+      "from": "node-implementation",
+      "to": "node-physical-milestone",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "Project Pele fuel production and delivery provide bounded physical evidence before reactor operation."
+    },
+    {
+      "from": "node-implementation",
+      "to": "node-standards-artifacts",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "NIST's testbed, software, and incorporated contributions provide standards and test infrastructure evidence."
     }
   ],
   "what_this_map_supports": [
     "Federal research direction can be analyzed as a dependency stack rather than a list of technologies.",
     "The source set explicitly connects research with materials, manufacturing, supply chains, power, compute, cyber, and resilience.",
-    "Implementation evidence is a separate gate from strategy, budget requests, and solicitations."
+    "Implementation evidence is a separate gate from strategy, budget requests, and solicitations.",
+    "Named records can be placed on a stage ladder without treating awards, obligations, scheduled tests, or delivered material as operating outcomes."
   ],
   "what_this_map_does_not_prove": [
     "It does not prove enacted funding, successful research, production readiness, supplier security, grid delivery, or operational adoption.",
@@ -148,10 +221,10 @@
     "It does not create a numeric 42/59 score."
   ],
   "next_records_needed": [
-    "FY2027 appropriations and DARPA award records.",
-    "Program tests, prototype results, transition agreements, and procurement records.",
-    "Supplier, processing, equipment, manufacturing, and workforce capacity evidence.",
-    "Final transmission findings, regional portfolios, permits, construction, and energization records.",
-    "Agency-level secure AI adoption, assurance, acquisition, and compute evidence."
+    "FY2027 appropriations and DARPA award records tied to the Phase 55K portfolio.",
+    "Completed Lift Challenge results, measured performance, prize actions, transition agreements, and procurement records.",
+    "Facility, equipment, commissioning, qualification, supplier, workforce, and production evidence behind Talon, MP Materials, and NAPMP.",
+    "Current Southline permits, financing, construction, interconnection, and energization records.",
+    "Project Pele startup and test evidence, OpenAI prototype delivery and acceptance records, and later wireless test, standards, certification, and deployment artifacts."
   ]
 }

@@ -25,6 +25,7 @@
   "install_command": "npm install",
   "predeploy_commands": [
     "npm run build:research-archive",
+    "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/build-research-archive.ps1 -CollectionSlug federal-research-to-implementation-evidence-2025-2026",
     "npm run validate:content",
     "npm run source:health",
     "npm run check",
@@ -34,23 +35,23 @@
   "build_command": "npm run build",
   "output_directory": "dist",
   "expected_build": {
-    "static_pages": 321,
-    "signals": 50,
+    "static_pages": 345,
+    "signals": 57,
     "published_signals": 25,
-    "in_review_signals": 25,
+    "in_review_signals": 32,
     "draft_sample_signals": 0,
     "published_support_sources": 51,
-    "sources": 176,
+    "sources": 183,
     "topics": 17,
     "organizations": 15,
     "technologies": 5,
     "local_systems": 2,
-    "briefings": 2,
+    "briefings": 3,
     "evidence_gaps": 10,
     "dependency_maps": 3,
-    "research_collections": 1,
-    "research_documents": 23,
-    "updates": 13,
+    "research_collections": 2,
+    "research_documents": 31,
+    "updates": 14,
     "public_json_exports": 3
   },
   "private_authority_layer": {
@@ -71,13 +72,13 @@
     "public_output_policy": "Candidate records, IDs, private notes, and registry paths must not appear in static output or public exports."
   },
   "release_delta_from_v0_1_1": {
-    "static_pages_added": 139,
-    "signals_added": 32,
+    "static_pages_added": 163,
+    "signals_added": 39,
     "published_signals_added": 22,
-    "sources_added": 74,
+    "sources_added": 81,
     "public_json_exports_added": 3,
     "public_update_log_added": true,
-    "summary": "Extends the Phase 55J publication-readiness baseline with the Phase 55K DARPA and U.S. Government research collection: 176 public sources, 50 signals, 25 Published signals, 13 public updates, 23 summarized research documents, and versioned source, topic, and Published-signal exports."
+    "summary": "Extends the Phase 55K research baseline with the Phase 55L implementation-evidence conversion: 183 public sources, 57 signals, 25 Published signals, 14 public updates, two research collections, 31 summarized research documents, and versioned source, topic, and Published-signal exports."
   },
   "phase_55k_delta": {
     "static_pages_added": 60,
@@ -92,25 +93,38 @@
     "downloadable_official_link_records": 1,
     "archive_file_count": 26
   },
+  "phase_55l_delta": {
+    "static_pages_added": 24,
+    "sources_added": 7,
+    "signals_added_in_review": 7,
+    "signals_repaired_in_review": 1,
+    "briefings_added_in_review": 1,
+    "dependency_maps_repaired_in_review": 1,
+    "research_collections_added": 1,
+    "research_documents_added": 8,
+    "downloadable_original_captures": 5,
+    "downloadable_official_link_records": 3,
+    "archive_file_count": 11
+  },
   "last_verified": {
     "date": "2026-07-23",
     "published_support_minimum_date": "2026-07-22",
     "candidate_validation": "passed-150-local-only-records",
     "validate_content": "passed",
     "source_health": "passed",
-    "source_health_manual_review": 103,
+    "source_health_manual_review": 110,
     "source_health_probe_ready": 73,
     "source_monitor_review_due": 0,
     "source_monitor_watch_soon": 0,
-    "source_monitor_current": 176,
+    "source_monitor_current": 183,
     "source_coverage_strong_lanes": 14,
     "source_coverage_developing_lanes": 0,
     "source_coverage_weak_lanes": 0,
     "astro_check": "passed",
     "build": "passed",
-    "static_pages_built": 321,
+    "static_pages_built": 345,
     "release_assertions": "passed",
-    "browser_qa": "passed-local-phase-55k; hosted-visual-qa-not-rerun",
+    "browser_qa": "passed-local-phase-55k; phase-55l-visual-qa-not-requested",
     "browser_viewports": [
       "1440x900",
       "390x844"
@@ -132,7 +146,10 @@
     "dist/atlas/source-coverage/index.html",
     "dist/research/index.html",
     "dist/research/darpa-usg-research-angles-2025-2026/index.html",
-    "dist/downloads/darpa-usg-research-collection-2025-2026.zip"
+    "dist/downloads/darpa-usg-research-collection-2025-2026.zip",
+    "dist/research/federal-research-to-implementation-evidence-2025-2026/index.html",
+    "dist/downloads/federal-implementation-evidence-2025-2026.zip",
+    "dist/briefings/stack-watch-003-research-to-implementation/index.html"
   ],
   "published_signal_routes": [
     "/signals/doe-critical-minerals-materials-accelerator-nofo/",
@@ -173,7 +190,9 @@
     "/atlas/source-coverage/",
     "/research/",
     "/research/darpa-usg-research-angles-2025-2026/",
+    "/research/federal-research-to-implementation-evidence-2025-2026/",
     "/downloads/darpa-usg-research-collection-2025-2026.zip",
+    "/downloads/federal-implementation-evidence-2025-2026.zip",
     "/about/",
     "/data/signals.json",
     "/data/sources.json",
@@ -196,7 +215,7 @@
   },
   "release_gates": [
     "Run all predeploy commands from app/",
-    "Confirm 321 generated HTML pages and all required outputs",
+    "Confirm 345 generated HTML pages and all required outputs",
     "Confirm all 25 Published signal URLs are present in the sitemap",
     "Confirm every non-published signal URL is absent from the sitemap",
     "Confirm Published details use index, follow and non-published details use noindex, follow",
@@ -205,8 +224,8 @@
     "Confirm all three public JSON exports match the versioned allowlist contract",
     "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
     "Confirm generated output contains no private candidate IDs or registry-path references",
-    "Confirm the thirteen-entry public update log renders",
-    "Confirm the research collection renders all 23 document summaries and the 26-file ZIP archive",
+    "Confirm the fourteen-entry public update log renders",
+    "Confirm both research collections render all 31 document summaries and their 26-file and 11-file ZIP archives",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
     "Attach ftfn.io only after preview checks pass and explicit approval is recorded"
@@ -228,8 +247,9 @@
   "known_limitations": [
     "The package version remains 0.2.0-dev until an approved public release decision.",
     "The hosted Sites URL is owner-only and has not been made public or attached to ftfn.io.",
-    "Twenty-five signals, two briefings, three dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
+    "Thirty-two signals, three briefings, three dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
     "The 2026 National Defense Strategy is represented in the downloadable collection by an official-link file because the Defense Department host allowed review but suppressed automated export; the other 22 records have local captures.",
+    "The Phase 55L download contains five official local captures and three official-link records because the Department of War and Idaho National Laboratory hosts allowed review but blocked automated export.",
     "The public JSON files are static build exports, not a live API or database-backed service.",
     "The 150-record candidate registry is an ignored local file and requires private backup outside public Git.",
     "The optional bulk candidate-link audit was blocked by uniform outbound Node network failures in the verification environment; every candidate still requires live human confirmation before promotion.",
@@ -237,5 +257,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the locally verified and owner-only deployed Phase 55K DARPA and U.S. Government research collection. The collection contains 23 reviewed document summaries, 22 official local captures, one official-link record, 23 Tier 1 source profiles, five In Review synthesis signals, one In Review briefing, and one In Review dependency map. Sites version 9 serves source commit 37f3ca6956d752642989f04486d13ff0c4555813. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
+  "notes": "This manifest records the locally verified Phase 55L implementation-evidence conversion on top of the owner-only deployed Phase 55K baseline. Phase 55L adds eight stage-bounded implementation records, seven Tier 1 source profiles, seven In Review signals, one repaired In Review signal, one In Review briefing, one repaired In Review dependency map, and an 11-file download archive. Sites version 9 still serves Phase 55K source commit 37f3ca6956d752642989f04486d13ff0c4555813 until the Phase 55L private deployment completes. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
 }

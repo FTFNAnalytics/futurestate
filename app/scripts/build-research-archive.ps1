@@ -1,29 +1,53 @@
+param(
+  [string]$CollectionSlug = "darpa-usg-research-angles-2025-2026"
+)
+
 $ErrorActionPreference = "Stop"
 
 $appRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
-$collectionPath = Join-Path $appRoot "src\content\research-collections\darpa-usg-research-angles-2025-2026.json"
+$collectionPath = Join-Path $appRoot "src\content\research-collections\$CollectionSlug.json"
 $documentsPath = Join-Path $appRoot "src\content\research-documents"
-$bundlePath = Join-Path $appRoot "public\downloads\darpa-usg-research-collection-2025-2026"
-$originalsPath = Join-Path $bundlePath "originals"
-$archivePath = Join-Path $appRoot "public\downloads\darpa-usg-research-collection-2025-2026.zip"
+$downloadRoot = Join-Path $appRoot "public\downloads"
 
-if (-not $bundlePath.StartsWith((Join-Path $appRoot "public\downloads"), [System.StringComparison]::OrdinalIgnoreCase)) {
-  throw "Resolved bundle path is outside app/public/downloads."
+if (-not (Test-Path -LiteralPath $collectionPath -PathType Leaf)) {
+  throw "Research collection not found: $CollectionSlug"
 }
 
 $collection = Get-Content -Raw -LiteralPath $collectionPath | ConvertFrom-Json
-$documents = Get-ChildItem -LiteralPath $documentsPath -Filter "*.json" -File |
+$archiveFileName = [System.IO.Path]::GetFileName([string]$collection.download_path)
+$archivePath = Join-Path $downloadRoot $archiveFileName
+$bundlePath = Join-Path $downloadRoot ([System.IO.Path]::GetFileNameWithoutExtension($archiveFileName))
+
+if (
+  -not $bundlePath.StartsWith($downloadRoot, [System.StringComparison]::OrdinalIgnoreCase) -or
+  -not $archivePath.StartsWith($downloadRoot, [System.StringComparison]::OrdinalIgnoreCase)
+) {
+  throw "Resolved bundle or archive path is outside app/public/downloads."
+}
+
+$allDocuments = Get-ChildItem -LiteralPath $documentsPath -Filter "*.json" -File |
   Sort-Object Name |
   ForEach-Object { Get-Content -Raw -LiteralPath $_.FullName | ConvertFrom-Json }
 
-if ($documents.Count -ne 23) {
-  throw "Expected 23 research document records; found $($documents.Count)."
+$documentById = @{}
+foreach ($document in $allDocuments) {
+  $documentById[$document.id] = $document
 }
 
-$documentIds = @($documents | ForEach-Object { $_.id })
-$missingDocumentIds = @($collection.document_ids | Where-Object { $_ -notin $documentIds })
+$missingDocumentIds = @($collection.document_ids | Where-Object { -not $documentById.ContainsKey($_) })
 if ($missingDocumentIds.Count -gt 0) {
   throw "Collection references missing document IDs: $($missingDocumentIds -join ', ')"
+}
+
+$documents = @($collection.document_ids | ForEach-Object { $documentById[$_] })
+$foreignDocuments = @($documents | Where-Object { $_.collection_id -ne $collection.id })
+if ($foreignDocuments.Count -gt 0) {
+  throw "Collection includes documents assigned to another collection: $(($foreignDocuments | ForEach-Object { $_.id }) -join ', ')"
+}
+
+$expectedDocumentCount = @($collection.document_ids).Count
+if ($documents.Count -ne $expectedDocumentCount) {
+  throw "Expected $expectedDocumentCount collection documents; found $($documents.Count)."
 }
 
 $captureRows = foreach ($document in $documents) {
@@ -120,19 +144,19 @@ $summaryLines |
   Set-Content -LiteralPath (Join-Path $bundlePath "collection-summaries.md") -Encoding utf8
 
 $readmeLines = @(
-  "# DARPA and U.S. Government Research Collection, 2025-2026",
+  "# $($collection.title)",
   "",
-  "This FTFN bundle contains the 23 primary records listed in the collection, a consolidated summary for every document, and a machine-readable manifest with official URLs, capture status, file size, and SHA-256 checksum.",
+  "This FTFN bundle contains the $($documents.Count) primary records listed in the collection, a consolidated summary for every document, and a machine-readable manifest with official URLs, capture status, file size, and SHA-256 checksum.",
   "",
   "## Contents",
   "",
-  "- ``originals/``: 22 official local captures and one official-link file.",
-  "- ``collection-summaries.md``: FTFN summaries, key findings, relevance, and evidence limits for all 23 documents.",
+  "- Collection capture files: $(@($documents | Where-Object { $_.capture_status -ne 'Official link record' }).Count) official local captures and $(@($documents | Where-Object { $_.capture_status -eq 'Official link record' }).Count) official-link records.",
+  "- ``collection-summaries.md``: FTFN summaries, key findings, relevance, and evidence limits for all $($documents.Count) documents.",
   "- ``manifest.json``: file inventory, capture status, official links, sizes, and checksums.",
   "",
-  "## Important exception",
+  "## Capture exceptions",
   "",
-  "The 2026 National Defense Strategy host allowed the document to be reviewed but suppressed automated export. Its archive member is a standard ``.url`` shortcut to the official Defense Department file. The remaining 22 records have local captures.",
+  "Official-link records identify sources that were reviewed but whose hosts suppressed automated export. The bundle preserves those official URLs rather than substituting non-authoritative copies.",
   "",
   "## Interpretation boundary",
   "",
@@ -180,8 +204,9 @@ finally {
 $zip = [System.IO.Compression.ZipFile]::OpenRead($archivePath)
 try {
   $fileEntries = @($zip.Entries | Where-Object { -not $_.FullName.EndsWith("/") })
-  if ($fileEntries.Count -ne 26) {
-    throw "Expected 26 files in the archive; found $($fileEntries.Count)."
+  $expectedArchiveFiles = $documents.Count + 3
+  if ($fileEntries.Count -ne $expectedArchiveFiles) {
+    throw "Expected $expectedArchiveFiles files in the archive; found $($fileEntries.Count)."
   }
 }
 finally {
@@ -190,4 +215,4 @@ finally {
 
 $archive = Get-Item -LiteralPath $archivePath
 Write-Output "Research archive ready: $($archive.FullName)"
-Write-Output "Documents: $($documents.Count); archive files: 26; bytes: $($archive.Length)"
+Write-Output "Documents: $($documents.Count); archive files: $($documents.Count + 3); bytes: $($archive.Length)"

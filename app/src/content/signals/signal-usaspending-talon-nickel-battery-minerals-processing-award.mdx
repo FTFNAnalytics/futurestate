@@ -41,8 +41,8 @@ evidence_gap_ids:
   - "gap-007"
 claim_scope: "Specific Source Update"
 local_evidence_level: "None"
-last_reviewed_date: 2026-07-22
-editorial_notes: "Phase 50B award selection. Selected USAspending assistance award ASST_NON_DEMS0000003_089, FAIN DEMS0000003, to Talon Nickel (USA) LLC. On the 2026-07-22 check, the record showed a 2023-11-01 start, 2026-10-31 current end, $114,846,344 obligated, $954,321.45 outlayed, and $250,881,777 in non-federal funding. Amounts can change with later transactions. Treat the record as funding administration, not facility completion or technical success."
+last_reviewed_date: 2026-07-23
+editorial_notes: "Phase 50B award selection, repaired in Phase 55L with a captured USAspending API response. Assistance award ASST_NON_DEMS0000003_089, FAIN DEMS0000003, names Talon Nickel (USA) LLC. On the 2026-07-23 capture, the record showed a 2023-11-01 start, 2026-10-31 current end, $114,846,344 obligated, $954,321.45 outlayed, and $250,881,777 in non-federal funding. Amounts can change with later transactions. Treat the record as funding administration, not facility completion or technical success."
 ---
 
 ## What Changed
@@ -50,6 +50,8 @@ editorial_notes: "Phase 50B award selection. Selected USAspending assistance awa
 FTFN selected USAspending award `DEMS0000003`, described as Project Double Play, an advanced domestic battery-minerals processing facility award to Talon Nickel (USA) LLC. The record advances the evidence posture from a broad funding rail to a named recipient and federal award trail.
 
 On the checked record, USAspending reported $114.85 million obligated, $954,321.45 outlayed, and $250.88 million in non-federal funding. The award period began on November 1, 2023, and the current end date was October 31, 2026.
+
+Phase 55L preserves the award API response inside the implementation-evidence download, making the amounts and award metadata used for this signal independently inspectable as a captured source record.
 
 ## Why It Matters
 
@@ -73,4 +75,3 @@ The USAspending place, recipient, and award fields also do not establish local i
 ## What To Watch Next
 
 Watch later USAspending transactions, DOE project updates, recipient disclosures, site and permit records, construction milestones, equipment installation, commissioning, feedstock agreements, offtake, and production evidence.
-

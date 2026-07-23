@@ -4,14 +4,14 @@
   "url": "https://api.usaspending.gov/docs/",
   "source_type": "Dataset",
   "credibility_level": "Tier 1",
-  "primary_topics": ["Finance and Risk", "Policy and Standards", "Chips and Compute", "Energy", "Space", "Advanced Manufacturing"],
+  "primary_topics": ["Finance and Risk", "Policy and Standards", "Chips and Compute", "Energy", "Space", "Advanced Manufacturing", "Critical Minerals"],
   "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
   "country_or_region": "United States",
   "update_frequency": "Ongoing federal spending updates",
   "capture_priority": "High",
   "known_limitations": "Award and spending records show obligated or reported federal spending; they do not by themselves prove technical progress, deployment status, local completion, or final economic impact.",
-  "last_checked_date": "2026-07-21",
-  "watch_lanes": ["Cross-Cutting Official Rails", "Compute and Chips", "Power and Grid", "Space", "Finance and Human Futures", "AI and Advanced Manufacturing"],
+  "last_checked_date": "2026-07-23",
+  "watch_lanes": ["Cross-Cutting Official Rails", "Compute and Chips", "Power and Grid", "Space", "Finance and Human Futures", "AI and Advanced Manufacturing", "Critical Minerals"],
   "live_access_type": "API",
   "api_url": "https://api.usaspending.gov/api/v2/",
   "review_cadence_days": 14,
@@ -20,5 +20,5 @@
   "jurisdiction": "United States federal",
   "source_owner": "U.S. Department of the Treasury",
   "automation_notes": "Use agency, recipient, place, award type, and keyword filters to select bounded funding records for later signal review.",
-  "notes": "Phase 49 funding and procurement rail. Phase 50B selected assistance award ASST_NON_DEMS0000003_089, FAIN DEMS0000003, to Talon Nickel (USA) LLC as a bounded award trail; obligations and outlays are not construction or production evidence."
+  "notes": "Phase 49 funding and procurement rail. Phase 50B selected assistance award ASST_NON_DEMS0000003_089, FAIN DEMS0000003, to Talon Nickel (USA) LLC as a bounded award trail. Phase 55L captured the award API response as the appropriations-and-obligations implementation record; obligations and outlays are not construction or production evidence."
 }

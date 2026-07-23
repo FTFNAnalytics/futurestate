@@ -20,7 +20,10 @@ const briefings = (await getCollection("briefings")).sort(
 );
 const researchCollections = (await getCollection("researchCollections"))
   .filter((collection) => collection.data.record_status === "Published")
-  .sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf());
+  .sort((a, b) =>
+    b.data.captured_date.valueOf() - a.data.captured_date.valueOf()
+    || b.data.title.localeCompare(a.data.title)
+  );
 const researchDocuments = await getCollection("researchDocuments");
 
 const highPrioritySources = sources

@@ -5,7 +5,10 @@ import MetaPill from "../../components/ui/MetaPill.astro";
 
 const collections = (await getCollection("researchCollections"))
   .filter((collection) => collection.data.record_status === "Published")
-  .sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf());
+  .sort((a, b) =>
+    b.data.captured_date.valueOf() - a.data.captured_date.valueOf()
+    || b.data.title.localeCompare(a.data.title)
+  );
 const documents = await getCollection("researchDocuments");
 const sourceCount = new Set(documents.map((document) => document.data.source_id)).size;
 const topicCount = new Set(documents.flatMap((document) => document.data.primary_topics)).size;
