@@ -1260,12 +1260,38 @@ Do not use it for:
 - Promoting the five synthesis signals without a separate publication review.
 - Authorizing public access, DNS changes, package freeze, public GitHub synchronization, or public launch.
 
+### Phase 55L Implementation-Evidence Conversion
+
+Purpose:
+
+- Record the eight named implementation trails selected from the Phase 55K research agenda.
+- Preserve the evidence-stage boundaries across awards, obligations, agreements, scheduled trials, delivered material, transmission finance, and standards artifacts.
+- Document seven new source profiles, seven new `In Review` signals, the repaired USAspending signal, Stack Watch 003, the expanded dependency map, and cross-site topic, organization, technology, and evidence-gap integration.
+- Record the reproducible 11-file archive with five local captures, three official-link records, consolidated summaries, README, and a SHA-256 manifest.
+- Preserve exact owner-only Sites version 10 provenance and define the Phase 55M review gate.
+
+Update when:
+
+- an award, obligation, outlay, loan, agreement, or capacity contract changes,
+- a named facility, trial, reactor, prototype, or testbed crosses a later evidence stage,
+- DARPA publishes Lift Challenge results after August 9, 2026,
+- a blocked official-link record can be replaced with a clean official capture,
+- publication state, archive contents, source provenance, or deployment state changes.
+
+Do not use it for:
+
+- Treating instrument value as obligation or spending.
+- Treating a scheduled trial as a result.
+- Treating delivered fuel as an operating reactor.
+- Treating standards contributions as a completed 6G network.
+- Authorizing public access, DNS changes, package freeze, public GitHub synchronization, or public launch.
+
 ### v0.2 Build Manifest
 
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 321-page build, 25 Published signals, 176 sources, 13 updates, 23 research documents, the required archive, three exports, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 345-page build, 25 Published signals, 183 sources, 14 updates, 31 research documents, two required archives, three exports, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 

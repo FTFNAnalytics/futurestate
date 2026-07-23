@@ -37,7 +37,7 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 321
+static pages generated: 345
 current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
@@ -51,7 +51,7 @@ App routes currently include:
 - Atlas landing page,
 - topic index and detail pages,
 - source index and detail pages,
-- research collection index, collection detail, and 23 document detail pages,
+- research collection index, two collection details, and 31 document detail pages,
 - organization index and detail pages,
 - technology index and detail pages,
 - local system index and detail pages,
@@ -103,6 +103,7 @@ What is now stable:
 - Phase 55I reviewed the remaining 90 private candidates, added ten monitoring rails plus 12 dated source records, created nine bounded `In Review` signals, repaired the local-system evidence trails, and reached 152 sources, 45 signals, and 260 pages without a new Published promotion; Sites version 7 serves the exact checkpoint under owner-only access.
 - Phase 55J applied the full publication gate to those nine signals, added OMB M-26-04 to preserve the current policy stack, and promoted all nine while preserving the missing implementation, adoption, delivery, facility, and site-service stages.
 - Phase 55K added a 23-document DARPA and U.S. Government research collection with 22 local captures, one official-link record, per-document summaries and evidence limits, 23 source profiles, five `In Review` synthesis signals, five organizations, one briefing, one dependency map, and a verified 26-file download archive.
+- Phase 55L converted eight of those research directions into named implementation trails, added seven source profiles and seven `In Review` signals, repaired the Talon USAspending signal, added a briefing, expanded the dependency map, produced an 11-file archive, and deployed exact commit `d1300d5503244c52541ac597163af9f991594294` as owner-only Sites version 10.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 51 sources supporting the 25 Published signals were checked on or after `2026-07-22`.
@@ -114,7 +115,7 @@ What is now stable:
 What is still prelaunch scaffolding:
 
 - Twenty-five signal records are `Published`.
-- Twenty-five signal records are still `In Review`; no Draft Sample remains.
+- Thirty-two signal records are still `In Review`; no Draft Sample remains.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -124,23 +125,23 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should now preserve the owner-only preview and proceed with Phase 55L implementation-evidence conversion from the new research collection. Select eight bounded questions and look for named awards, obligations, contracts, facilities, field trials, production milestones, transmission actions, and standards artifacts. Complete Phase 55H after the July 29-31 Toronto Council meeting. Phase 55K expands the research layer without changing Published membership or weakening the human publication gate. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve the owner-only preview. Before July 31, Phase 55M may apply the full publication-readiness gate to the eight Phase 55L implementation trails while keeping the future-dated Lift Challenge trial in review. Complete Phase 55H after the July 29-31 Toronto Council meeting. Do not collapse award, obligation, facility, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 50 signal records,
-- 176 source records,
+- 57 signal records,
+- 183 source records,
 - 17 topic records,
 - 2 local system profiles,
 - 15 organization records,
 - 5 technology records,
-- 2 briefings in review,
+- 3 briefings in review,
 - 10 evidence gap records,
 - 3 dependency maps in review,
-- 1 research collection with 23 document records,
-- 13 public update-log entries.
+- 2 research collections with 31 document records,
+- 14 public update-log entries.
 
 Twenty-five official-source-backed signals are now `Published`:
 
@@ -161,7 +162,7 @@ Twenty-five official-source-backed signals are now `Published`:
 - Statistics Canada May 2026 building-permit intentions signal,
 - DOE Storage Technology Elevation Prize manufacturing-readiness signal.
 
-Twenty-five official-source-backed, official-analysis-backed, or explicitly company-claim-labeled signals are `In Review`:
+Thirty-two official-source-backed, official-analysis-backed, or explicitly company-claim-labeled signals are `In Review`:
 
 - FAA advanced air mobility signal,
 - EIA Arizona electricity and chip-corridor power signal,
@@ -174,6 +175,13 @@ Twenty-five official-source-backed, official-analysis-backed, or explicitly comp
 - Toronto application 24 254930 staff-recommendation and servicing-review signal,
 - MAG 2023 projections Phoenix-region local-dossier signal,
 - USAspending Talon Nickel award signal,
+- DARPA Lift Challenge named-team and scheduled-field-trial signal,
+- MP Materials heavy rare-earth separation loan signal,
+- NAPMP advanced-packaging final-awards signal,
+- Southline transmission capacity-contract award signal,
+- Project Pele first TRISO fuel-delivery signal,
+- OpenAI prototype-agreement initial-obligation signal,
+- NIST O-RAN testbed and standards-artifact signal,
 - Toronto application 24 254930 named planning-record signal,
 - TSMC Phoenix wastewater-infrastructure agreement signal,
 - Phoenix Z-37-20-1 TSMC-campus planning-envelope signal,
@@ -186,7 +194,7 @@ Twenty-five official-source-backed, official-analysis-backed, or explicitly comp
 
 No local system profile, briefing, dependency map, or company-claim record should be treated as `Published`. Project Huckleberry is Published only as a bounded single-project conversion record, not as a local-system readiness conclusion.
 
-The current briefing is `Stack Watch 001: Local constraints are where the future arrives`. It is `In Review` and uses reviewed signals, but it should not be treated as a published report.
+The three current briefings are Stack Watch 001 on local constraints, Stack Watch 002 on federal research and industrial capacity, and Stack Watch 003 on research-to-implementation trails. All remain `In Review` and should not be treated as published reports.
 
 ## Editorial Rules
 
@@ -232,7 +240,7 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 55H: Toronto Pre-Decision Authority Gate
+Phase 55L: Implementation-Evidence Conversion
 ```
 
 Key files:
@@ -252,6 +260,8 @@ Key files:
 - `docs/work-packages/phase-55f-publication-readiness-review.md`
 - `docs/work-packages/phase-55g-baccara-authority-conversion.md`
 - `docs/work-packages/phase-55h-toronto-pre-decision-authority-gate.md`
+- `docs/work-packages/phase-55k-darpa-usg-research-collection.md`
+- `docs/work-packages/phase-55l-implementation-evidence-conversion.md`
 - `docs/release-qa-v0.2.md`
 - `docs/launch-note-v0.2.md`
 - `deployment/ftfn-v0.2-build.json`
@@ -398,16 +408,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 55K DARPA and U.S. Government research collection, following the Phase 55J publication-readiness review.
+Phase 55L implementation-evidence conversion, following the Phase 55K DARPA and U.S. Government research collection.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 owner-only hosted candidate: package 0.2.0-dev, 176 public sources, 150 first-pass-triaged private candidates, 50 signals, 17 topics, 13 updates, 321 generated site pages, 25 Published signals, 23 research documents, one 26-file research archive, and 3 public JSON endpoints. Sites version 9 serves exact source commit 37f3ca6956d752642989f04486d13ff0c4555813 at https://ftfn-analytics.jbumstead.chatgpt.site. Source Coverage is 14 Strong lanes; source health reports 103 Manual Review and 73 Probe Ready records.
+v0.2 owner-only hosted candidate: package 0.2.0-dev, 183 public sources, 150 first-pass-triaged private candidates, 57 signals, 17 topics, 14 updates, 345 generated site pages, 25 Published signals, 31 research documents, verified 26-file and 11-file research archives, and 3 public JSON endpoints. Sites version 10 serves exact source commit d1300d5503244c52541ac597163af9f991594294 at https://ftfn-analytics.jbumstead.chatgpt.site. Source Coverage is 14 Strong lanes; source health reports 110 Manual Review and 73 Probe Ready records.
 
 Next decision gate:
-Preserve the owner-only preview. Proceed with Phase 55L by converting eight high-value Phase 55K directions into named implementation-evidence searches, while keeping new records In Review. Complete Phase 55H after the 29-31 July 2026 Council window. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve the owner-only preview. Before July 31, Phase 55M may review the eight Phase 55L trails for publication readiness without collapsing evidence stages; keep the Lift Challenge scheduled-trial record In Review until official results exist. Complete Phase 55H after the 29-31 July 2026 Council window. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```
