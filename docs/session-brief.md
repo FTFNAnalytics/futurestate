@@ -395,7 +395,7 @@ Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 owner-only hosted candidate: package 0.2.0-dev, 128 public sources, 150 private candidates, 36 signals, 17 topics, 8 updates, 227 pages, 16 Published signals, 3 public JSON endpoints, passed local release assertions, and an owner-only preview at https://ftfn-analytics.jbumstead.chatgpt.site. The private layer has 60 reviewed records; current Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, zero Watch Soon, and 128 Current records.
+v0.2 owner-only hosted candidate: package 0.2.0-dev, 128 public sources, 150 private candidates, 36 signals, 17 topics, 8 updates, 227 pages, 16 Published signals, 3 public JSON endpoints, passed local release assertions, and Sites version 4 at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site. The private layer has 60 reviewed records; current Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, zero Watch Soon, and 128 Current records.
 
 Next decision gate:
 Preserve the owner-only preview. The next content step is Phase 55G bounded downstream-authority follow-through: Project Baccara's executed county record or final air permit first, then a named federal post-quantum implementation or procurement record if no project-stage evidence is available. Recheck Toronto application 24 254930 only after the 29-31 July 2026 Council window. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.

@@ -61,6 +61,17 @@ The Phase 55F pass refreshed three older support rails:
 - the Joby route remains `noindex, follow` and outside the sitemap and Published export;
 - the public update log grows from seven to eight entries.
 
+## Owner-Only Deployment Result
+
+The exact validated Phase 55F checkpoint was saved and deployed as Sites version 4 from commit `48a6f0379741b5d908ecf94c7765dcab27502ea0`.
+
+- deployment status: succeeded;
+- URL: `https://ftfn-analytics.jbumstead.chatgpt.site`;
+- access: custom policy with one allowed owner and no groups;
+- public GitHub branch: unchanged;
+- `ftfn.io` and `www.ftfn.io`: pending validation only, with no DNS change and no active routing;
+- package version: remains `0.2.0-dev`.
+
 ## Acceptance Criteria
 
 - [x] Review all eight Phase 55E records against the publication policy.

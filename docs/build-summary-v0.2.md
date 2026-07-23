@@ -25,7 +25,7 @@ Phase 55D adds a minimal static hosting adapter, deploys the exact 218-page pack
 
 Phase 55E expands the candidate to 227 pages, 128 public sources, and 36 signals. It rechecks all 17 aging source rails, reviews 15 additional private candidates, repairs seven broad records into dated evidence updates, adds one bounded storage-funding signal, and keeps the publication count at nine. Sites version 3 now serves the exact committed Phase 55E state under the existing owner-only policy.
 
-Phase 55F applies the full publication gate to those eight records. Seven specific, source-backed records move to `Published`; the Joby certification-test record remains `In Review` because the selected milestone is still an interested-party claim without independent FAA confirmation. The route count remains 227 while the public export grows to 16 signals and the update log grows to eight entries.
+Phase 55F applies the full publication gate to those eight records. Seven specific, source-backed records move to `Published`; the Joby certification-test record remains `In Review` because the selected milestone is still an interested-party claim without independent FAA confirmation. The route count remains 227 while the public export grows to 16 signals and the update log grows to eight entries. Sites version 4 now serves the exact Phase 55F checkpoint under the unchanged owner-only policy.
 
 ## Build Inventory
 
@@ -120,7 +120,7 @@ Verified results:
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
 
-The local evidence is in `docs/release-qa-v0.2.md`; hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview passed post-deploy checks, while public custom-domain behavior remains unverified because `ftfn.io` is not attached.
+The local and Phase 55F deployment evidence is in `docs/release-qa-v0.2.md`; the initial hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview is current at Sites version 4. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 

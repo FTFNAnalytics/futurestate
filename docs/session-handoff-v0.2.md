@@ -17,7 +17,7 @@ Content: 128 sources, 36 signals, 17 topics
 Publication: 16 Published, 20 In Review, 0 Draft Sample
 Trust/data: 8 update entries, 3 versioned JSON exports
 Private authority layer: 150 candidates, 15 profiles, 58 Candidate, 1 Active Source Record, 1 Rejected, 90 Needs Triage
-Deployment: owner-only Sites URL at https://ftfn-analytics.jbumstead.chatgpt.site
+Deployment: owner-only Sites version 4 at https://ftfn-analytics.jbumstead.chatgpt.site
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 0 Review Due, 0 Watch Soon, 128 Current; 14 Strong coverage lanes
 Next phase: Phase 55G bounded downstream-authority follow-through; public-domain work remains separate
@@ -114,7 +114,7 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 55F. The current candidate should be 0.2.0-dev on codex/phase51-content at or after the preserved Phase 52B checkpoint 35f26f4, with 128 sources, 36 signals, 16 Published signals, 20 In Review signals, eight public updates, three JSON exports, and 227 pages. An owner-only Sites deployment exists at https://ftfn-analytics.jbumstead.chatgpt.site; the branch remains unpushed to public GitHub, and no custom domain or public launch exists.
+The latest completed work is Phase 55F. The current candidate should be 0.2.0-dev on codex/phase51-content at or after the preserved Phase 52B checkpoint 35f26f4, with 128 sources, 36 signals, 16 Published signals, 20 In Review signals, eight public updates, three JSON exports, and 227 pages. Sites version 4 serves commit 48a6f0379741b5d908ecf94c7765dcab27502ea0 at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site; the branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
 
 Phase 52B is complete, Phase 55A reviewed 15 more records, and Phase 55E reviewed another 15: the local-only private registry contains exactly 150 candidates across 15 profiles, with 58 at Candidate, one Active Source Record, one Rejected, and 90 still needing triage. Confirm it remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate contents into public Git, app content, exports, issues, or build artifacts.
 

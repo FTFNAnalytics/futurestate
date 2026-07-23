@@ -12,8 +12,8 @@
     "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
     "access": "owner-only-custom-policy",
     "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
-    "current_source_commit": "8605ce0c300396539f11d9bc9e6e381cfab2d64f",
-    "current_version_number": 3,
+    "current_source_commit": "48a6f0379741b5d908ecf94c7765dcab27502ea0",
+    "current_version_number": 4,
     "custom_domain_attached": false,
     "post_deploy_qa": "passed"
   },
@@ -97,7 +97,7 @@
       "390x844"
     ],
     "browser_routes_checked": 10,
-    "preview_qa": "passed-owner-only-version-3"
+    "preview_qa": "passed-owner-only-version-4-deployment-and-access"
   },
   "required_output_files": [
     "dist/index.html",
@@ -199,5 +199,5 @@
     "The Project Baccara record stops at a reported conditional county vote and proposed air permit; it does not prove final permits, condition compliance, construction, occupancy, or operation.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the Phase 55F publication review on top of the Phase 55E content expansion. Seven bounded records moved to Published and the Joby company-claim record remains In Review. The owner-only Sites deployment remains private; this manifest does not authorize public access, custom-domain attachment, DNS changes, or package freeze."
+  "notes": "This manifest records the Phase 55F publication review and the owner-only Sites version 4 deployment from commit 48a6f0379741b5d908ecf94c7765dcab27502ea0. Seven bounded records moved to Published and the Joby company-claim record remains In Review. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, or package freeze."
 }

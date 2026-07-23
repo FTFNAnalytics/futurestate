@@ -2,7 +2,7 @@
 
 Date: 2026-07-23
 
-Status: Phase 55F local release gate passed; owner-only preview refresh pending.
+Status: Phase 55F local release gate and owner-only preview version 4 deployment passed.
 
 ## Artifact Under Review
 
@@ -127,20 +127,21 @@ No release-blocking accessibility issue was found in the checked scope.
 
 Phase 55F changes source metadata, publication state, editorial notes, public export membership, sitemap membership, and the update log without changing components, styles, layouts, navigation, routes, or client-side behavior. The Phase 54 desktop/mobile browser matrix therefore remains the UI baseline. The 227-page Phase 55F artifact passed candidate validation, content validation, source health, Astro diagnostics, production build, and the release assertion.
 
-Previous hosted checkpoint, pending refresh:
+Hosted checkpoint:
 
-- commit: `8605ce0c300396539f11d9bc9e6e381cfab2d64f`,
-- Sites version: 3,
+- commit: `48a6f0379741b5d908ecf94c7765dcab27502ea0`,
+- Sites version: 4,
 - URL: `https://ftfn-analytics.jbumstead.chatgpt.site`,
 - access: custom owner-only policy with one allowed user and no groups,
-- homepage: 36 signals and 128 sources,
-- Source Monitor: 0 Review Due, 0 Watch Soon, 128 Current,
-- Phase 55E publication state: nine Published and 27 In Review.
+- deployment status: succeeded,
+- application contract: 227 pages, 128 sources, 36 signals, 16 Published, 20 In Review, and eight updates,
+- Source Monitor contract: 0 Review Due, 0 Watch Soon, 128 Current,
+- custom-domain state: `ftfn.io` and `www.ftfn.io` remain pending validation and do not route to the Site.
 
-Raw JSON and text routes were blocked by the browser client during direct navigation. Their membership, private-data exclusion, robots, and sitemap assertions passed in the local build/release verifier.
+The Phase 55F pass did not repeat the Phase 54 browser matrix because no component, style, layout, navigation, route, or client-side behavior changed. Export membership, private-data exclusion, robots, sitemap, canonical, update-log, and indexing assertions passed against the exact production build before deployment. Sites then reported a successful version 4 deployment and preserved the one-user, no-group access policy.
 
 ## Verdict
 
 Phase 55F passes locally. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, or public exports.
 
-The existing owner-only preview remains private. Phase 55F will refresh it without changing access, attaching a custom domain, or approving public launch.
+The owner-only preview is current at Sites version 4. It is not approved for public access or public launch.
