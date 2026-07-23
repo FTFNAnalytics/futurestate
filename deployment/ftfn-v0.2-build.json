@@ -35,9 +35,10 @@
   "expected_build": {
     "static_pages": 227,
     "signals": 36,
-    "published_signals": 9,
-    "in_review_signals": 27,
+    "published_signals": 16,
+    "in_review_signals": 20,
     "draft_sample_signals": 0,
+    "published_support_sources": 30,
     "sources": 128,
     "topics": 17,
     "organizations": 10,
@@ -46,7 +47,7 @@
     "briefings": 1,
     "evidence_gaps": 10,
     "dependency_maps": 2,
-    "updates": 7,
+    "updates": 8,
     "public_json_exports": 3
   },
   "private_authority_layer": {
@@ -66,15 +67,15 @@
   "release_delta_from_v0_1_1": {
     "static_pages_added": 45,
     "signals_added": 18,
-    "published_signals_added": 6,
+    "published_signals_added": 13,
     "sources_added": 26,
     "public_json_exports_added": 3,
     "public_update_log_added": true,
-    "summary": "Completes the first authority-loop content milestone and a bounded Phase 55E expansion with dated evidence conversion, named local dossier records, nine Published signals, a public update log, and versioned source, topic, and Published-signal exports."
+    "summary": "Completes the first authority-loop content milestone, the bounded Phase 55E evidence expansion, and the Phase 55F publication review with 16 Published signals, a public update log, and versioned source, topic, and Published-signal exports."
   },
   "last_verified": {
     "date": "2026-07-23",
-    "published_support_date": "2026-07-22",
+    "published_support_minimum_date": "2026-07-22",
     "candidate_validation": "passed-150-local-only-records",
     "validate_content": "passed",
     "source_health": "passed",
@@ -112,6 +113,13 @@
   ],
   "published_signal_routes": [
     "/signals/doe-critical-minerals-materials-accelerator-nofo/",
+    "/signals/doe-storage-step-prize-production-readiness/",
+    "/signals/ai-electricity-demand-compute-grid-constraint-signal/",
+    "/signals/nhtsa-automated-vehicle-guidance-safety-limits/",
+    "/signals/nist-chips-for-america-semiconductor-funding-rd-stack/",
+    "/signals/artemis-update-lunar-infrastructure-roadmap/",
+    "/signals/plant-genomics-program-climate-resilient-agriculture/",
+    "/signals/statistics-canada-building-permits-construction-intentions-signal/",
     "/signals/nsf-ai-materials-institute-award-2433348/",
     "/signals/noaa-enso-discussion-el-nino-advisory-climate-risk-clock/",
     "/signals/usgs-mineral-commodity-summaries-2026-critical-materials-baseline/",
@@ -154,15 +162,15 @@
   "release_gates": [
     "Run all predeploy commands from app/",
     "Confirm 227 generated HTML pages and all required outputs",
-    "Confirm all nine Published signal URLs are present in the sitemap",
+    "Confirm all 16 Published signal URLs are present in the sitemap",
     "Confirm every non-published signal URL is absent from the sitemap",
     "Confirm Published details use index, follow and non-published details use noindex, follow",
     "Confirm canonical URLs and robots output use https://ftfn.io",
-    "Confirm all 12 sources supporting Published signals were checked on 2026-07-22",
+    "Confirm all 30 sources supporting Published signals were checked on or after 2026-07-22",
     "Confirm all three public JSON exports match the versioned allowlist contract",
     "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
     "Confirm generated output contains no private candidate IDs or registry-path references",
-    "Confirm the seven-entry public update log renders",
+    "Confirm the eight-entry public update log renders",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
     "Attach ftfn.io only after preview checks pass and explicit approval is recorded"
@@ -184,12 +192,12 @@
   "known_limitations": [
     "The package version remains 0.2.0-dev until an approved preview and release decision.",
     "The hosted Sites URL is owner-only and has not been made public or attached to ftfn.io.",
-    "Twenty-seven signals, one briefing, two dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
+    "Twenty signals, one briefing, two dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
     "The public JSON files are static build exports, not a live API or database-backed service.",
     "The 150-record candidate registry is an ignored local file and requires private backup outside public Git.",
     "The optional bulk candidate-link audit was blocked by uniform outbound Node network failures in the verification environment; every candidate still requires live human confirmation before promotion.",
     "The Project Baccara record stops at a reported conditional county vote and proposed air permit; it does not prove final permits, condition compliance, construction, occupancy, or operation.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the locally verified Phase 55E content expansion and the owner-only Sites version 3 refresh from commit 8605ce0. It does not authorize public access, custom-domain attachment, DNS changes, or publication beyond the nine records already marked Published."
+  "notes": "This manifest records the Phase 55F publication review on top of the Phase 55E content expansion. Seven bounded records moved to Published and the Joby company-claim record remains In Review. The owner-only Sites deployment remains private; this manifest does not authorize public access, custom-domain attachment, DNS changes, or package freeze."
 }

@@ -96,9 +96,10 @@ What is now stable:
 - Phase 55C repaired the existing Project Baccara signal with official County conditions, an official proposed-air-permit notice, and independent vote corroboration while keeping final permits, construction, occupancy, and operation unresolved.
 - Phase 55D deployed the unchanged 218-page candidate to an owner-only Sites URL and passed hosted route, metadata, indexing, robots, sitemap, and source-export checks without touching Hostinger DNS.
 - Phase 55E rechecked all 17 aging source rails, reviewed 15 additional private candidates, repaired seven broad signals, added one storage-funding signal, and reached 128 sources, 36 signals, and 227 pages without a new Published promotion.
+- Phase 55F applied the full publication gate to those eight records, promoted seven bounded updates, held the Joby company claim, and expanded the public core to 16 Published signals without changing the 227-page route count.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
-- All 12 sources supporting the nine Published signals carry a current `2026-07-22` check date.
+- All 30 sources supporting the 16 Published signals were checked on or after `2026-07-22`.
 - The compact header defect was repaired: every brand and primary-navigation link now has at least a 44-pixel target.
 - `npm run verify:release` and `deployment/ftfn-v0.2-build.json` preserve the repeatable v0.2 release contract.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
@@ -106,8 +107,8 @@ What is now stable:
 
 What is still prelaunch scaffolding:
 
-- Nine signal records are `Published`.
-- Twenty-seven signal records are still `In Review`; no Draft Sample remains.
+- Sixteen signal records are `Published`.
+- Twenty signal records are still `In Review`; no Draft Sample remains.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -117,7 +118,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should now preserve the verified owner-only preview and perform a Phase 55F editorial consolidation pass on the eight Phase 55E records. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phases 52A-52B completed the public contract, private 150-source discovery shelf, and authority surfaces; Phases 51A-51C built named local evidence trails; Phase 53 produced a nine-record Published set; Phase 54 verified the package locally; Phase 55D verified it on a hosted owner-only URL; and Phase 55E expanded the dated content layer without weakening the publication gate. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should now preserve the verified owner-only preview and begin Phase 55G as a bounded downstream-authority pass. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phases 52A-52B completed the public contract, private 150-source discovery shelf, and authority surfaces; Phases 51A-51C built named local evidence trails; Phase 53 produced a nine-record Published set; Phase 54 verified the package locally; Phase 55D verified it on a hosted owner-only URL; Phase 55E expanded the dated content layer; and Phase 55F promoted seven records only after a separate publication gate. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -132,7 +133,7 @@ Current seed content includes:
 - 1 briefing in review,
 - 10 evidence gap records,
 - 2 dependency maps in review,
-- 7 public update-log entries.
+- 8 public update-log entries.
 
 Nine official-source-backed signals are now `Published`:
 
@@ -144,20 +145,21 @@ Nine official-source-backed signals are now `Published`:
 - USGS 2026 gallium import-supplied semiconductor-constraint signal,
 - SRP E-67 large-load service-conditions signal,
 - SRP Project Huckleberry named Meta online-service signal,
-- Toronto 2025 Development Pipeline delivery-gap signal.
+- Toronto 2025 Development Pipeline delivery-gap signal,
+- IEA data-centre electricity growth and grid-bottleneck signal,
+- NHTSA amended crash-reporting and data-quality signal,
+- CHIPS SandboxAQ materials-discovery funding-agreement signal,
+- Artemis III hardware-integration milestone signal,
+- USDA plant-breeding award-portfolio signal,
+- Statistics Canada May 2026 building-permit intentions signal,
+- DOE Storage Technology Elevation Prize manufacturing-readiness signal.
 
-Twenty-seven official-source-backed, official-analysis-backed, or explicitly company-claim-labeled signals are `In Review`:
+Twenty official-source-backed, official-analysis-backed, or explicitly company-claim-labeled signals are `In Review`:
 
-- CHIPS program signal,
 - FAA advanced air mobility signal,
-- NHTSA automated vehicle safety signal,
-- NASA Artemis and lunar infrastructure signal,
-- USDA plant genomics and future agriculture signal,
-- AI electricity and grid constraint signal,
 - EIA Arizona electricity and chip-corridor power signal,
 - Arizona water resources and chip-corridor governance signal,
 - Ontario housing supply and local capacity signal,
-- Statistics Canada building permits and construction intentions signal,
 - CISA KEV cybersecurity operating-rail signal,
 - Federal Register/Regulations.gov regulatory watch-rail signal,
 - SRP 2025 system-plan implementation signal,
@@ -174,7 +176,6 @@ Twenty-seven official-source-backed, official-analysis-backed, or explicitly com
 - federal post-quantum migration plans and deadlines signal,
 - Project Baccara power, water, and permit-gates signal.
 - Joby FAA-conforming-aircraft company-claim signal.
-- DOE Storage Technology Elevation Prize manufacturing-readiness signal.
 
 No local system profile, briefing, dependency map, or company-claim record should be treated as `Published`. Project Huckleberry is Published only as a bounded single-project conversion record, not as a local-system readiness conclusion.
 
@@ -224,7 +225,7 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 55E: Bounded Content Expansion
+Phase 55F: Publication-Readiness Review
 ```
 
 Key files:
@@ -241,6 +242,7 @@ Key files:
 - `docs/work-packages/phase-55b-migration-and-facility-evidence.md`
 - `docs/work-packages/phase-55c-conditional-permit-follow-through.md`
 - `docs/work-packages/phase-55d-owner-only-sites-preview.md`
+- `docs/work-packages/phase-55f-publication-readiness-review.md`
 - `docs/release-qa-v0.2.md`
 - `docs/launch-note-v0.2.md`
 - `deployment/ftfn-v0.2-build.json`
@@ -387,18 +389,18 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 55E bounded content expansion, following the Phase 55D owner-only Sites preview.
+Phase 55F publication-readiness review, following the Phase 55E bounded content expansion.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 owner-only hosted candidate: package 0.2.0-dev, 128 public sources, 150 private candidates, 36 signals, 17 topics, 7 updates, 227 pages, 9 Published signals, 3 public JSON endpoints, passed local release assertions, and an owner-only preview at https://ftfn-analytics.jbumstead.chatgpt.site. The private layer has 60 reviewed records; current Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, zero Watch Soon, and 128 Current records.
+v0.2 owner-only hosted candidate: package 0.2.0-dev, 128 public sources, 150 private candidates, 36 signals, 17 topics, 8 updates, 227 pages, 16 Published signals, 3 public JSON endpoints, passed local release assertions, and an owner-only preview at https://ftfn-analytics.jbumstead.chatgpt.site. The private layer has 60 reviewed records; current Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, zero Watch Soon, and 128 Current records.
 
 Next decision gate:
-Preserve the owner-only preview. The next content step is a Phase 55F publication-readiness review of the eight Phase 55E records, with no assumed promotion. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve the owner-only preview. The next content step is Phase 55G bounded downstream-authority follow-through: Project Baccara's executed county record or final air permit first, then a named federal post-quantum implementation or procurement record if no project-stage evidence is available. Recheck Toronto application 24 254930 only after the 29-31 July 2026 Council window. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
-Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any new Published promotion, public-access, custom-domain, or Hostinger DNS action.
+Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```
 
 ## Implementation Reminders

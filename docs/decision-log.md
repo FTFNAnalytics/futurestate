@@ -2086,3 +2086,28 @@ Implemented:
 Boundary:
 
 The IEA aggregate is not a local power forecast; NHTSA incident data is not a normalized manufacturer ranking; funding agreements, awards, and prizes are not deployment results; Artemis hardware work is not launch readiness; a Joby announcement is not FAA type certification; and building permits are not delivered housing. No public access, package freeze, custom-domain attachment, Hostinger DNS change, or public launch was authorized.
+
+## 2026-07-23: Phase 55F Publishes Seven Bounded Records And Holds One Company Claim
+
+Decision:
+
+FTFN will promote seven Phase 55E records that independently pass the publication policy and keep the Joby certification-test record `In Review`.
+
+Rationale:
+
+The IEA, NHTSA, NIST, NASA, USDA, Statistics Canada, and DOE records are now specific, dated, source-backed developments with reader-facing conclusions and explicit limits. Each can be understood without private notes and fits the FTFN dependency and conversion thesis. The Joby record remains based on an interested-party announcement; the FAA source supplies regulatory context but does not independently confirm the company-described conforming-aircraft milestone.
+
+Implemented:
+
+- moved seven records from `In Review` to `Published`,
+- preserved the evidence boundary on every promoted record,
+- kept `signal-sample-010` in review with an explicit independent-confirmation blocker,
+- refreshed the NASA Artemis, USDA plant-breeding, and CMHC portal support rails,
+- added the eighth public update entry,
+- expanded the Published export and sitemap membership from nine to 16 records,
+- updated the release verifier to enforce a manifest-owned Published-support source count and minimum checked date,
+- preserved 128 sources, 36 signals, 227 generated pages, and the owner-only hosting posture.
+
+Boundary:
+
+Publication does not collapse conversion stages. Aggregate analysis is not local capacity; crash reports are not normalized safety rankings; funding is not a result; hardware integration is not readiness; awards are not field performance; permits are not delivered housing; and a prize is not manufacturing or deployment. No package freeze, public access, custom-domain attachment, Hostinger DNS change, or public launch was authorized.

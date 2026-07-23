@@ -1168,18 +1168,19 @@ Completed:
 - Completed Phase 51A with named SRP implementation, Phoenix provider-water, and Toronto staff-recommendation/servicing records.
 - Completed Phase 51B with an SRP large-load tariff, Phoenix-TSMC wastewater agreement, TSMC-campus PUD, technician apprenticeship, Toronto committee recommendation, and citywide delivery baseline.
 - Completed Phase 51C with SRP's named Meta electric-service project, current TSMC fab milestones, and active apprenticeship-cohort evidence.
-- Reached 128 sources, 36 signals, seven update entries, and 227 built pages after Phase 55E while keeping the public set at nine Published records.
+- Reached 128 sources, 36 signals, eight update entries, and 227 built pages after Phase 55F, with 16 Published and 20 In Review records.
 - Rechecked all 17 Watch Soon source records, reviewed 15 additional private candidates, repaired seven broad signals into dated records, and added one bounded storage-funding signal.
+- Completed the Phase 55F publication gate: seven repaired records moved to Published, the Joby company-claim record stayed In Review, and all 30 Published-support sources are current to the release pass.
 
 Next candidate work:
 
 - Capture the first public federal agency post-quantum migration plan, procurement implementation, proposed FAR rule, or NIST pilot result.
 - Follow Project Baccara through the fully executed County record, final MCAQD air permit and EPA review, service and precise-POD requirements, military-compatibility compliance, construction, occupancy, and operating evidence.
 - Recheck Toronto application 24 254930 after the July 29-31, 2026 Council window for adoption, by-laws, and later permit records.
-- Perform a Phase 55F publication-readiness review on the eight Phase 55E records; keep them `In Review` unless each independently meets the publication policy.
+- Begin Phase 55G with Project Baccara's executed county record or final air permit; if neither exists, check for a named federal post-quantum implementation or procurement record and stop if no stage has advanced.
 - Decide whether In Review local systems and dependency maps should remain indexable or move to clearer research/noindex treatment before launch.
 - Keep the unresolved local trails as dated monitors: completed wastewater and reclaimed-water infrastructure, Phoenix permits and occupancy, apprenticeship outcomes, Toronto City Council and by-laws, and project start/completion evidence.
-- Keep additional publication promotion behind a fresh publication-candidate review; the current public set remains nine.
+- Keep additional publication promotion behind a fresh publication-candidate review; the current public set is 16.
 - Continue repairing broad In Review signals into dated source-backed records where the expanded source registry supports a specific update.
 - Keep Supabase activation and any broad public source promotion batch separate from the bounded local content track.
 

@@ -2,7 +2,7 @@
 
 Date: 2026-07-23
 
-Status: Phase 55E local release gate and owner-only preview version 3 passed.
+Status: Phase 55F local release gate passed; owner-only preview refresh pending.
 
 ## Artifact Under Review
 
@@ -10,10 +10,10 @@ Status: Phase 55E local release gate and owner-only preview version 3 passed.
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
 - Expected build: 227 HTML pages
-- Content baseline: 128 sources, 36 signals, 17 topics, 7 update entries
-- Publication baseline: 9 Published, 27 In Review, 0 Draft Sample
+- Content baseline: 128 sources, 36 signals, 17 topics, 8 update entries
+- Publication baseline: 16 Published, 20 In Review, 0 Draft Sample
 
-The package remains `0.2.0-dev`. The Phase 55E owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
+The package remains `0.2.0-dev`. The owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
 
 ## Automated Gate
 
@@ -32,7 +32,7 @@ Result:
 | Check | Result |
 | --- | --- |
 | Private candidates | Passed: 150 records; 58 Candidate, 90 Needs Triage, 1 Active Source Record, 1 Rejected |
-| Content references | Passed: 128 sources, 36 signals, 17 topics, 10 organizations, 5 technologies, 2 local systems, 1 briefing, 10 evidence gaps, 2 dependency maps, 7 updates |
+| Content references | Passed: 128 sources, 36 signals, 17 topics, 10 organizations, 5 technologies, 2 local systems, 1 briefing, 10 evidence gaps, 2 dependency maps, 8 updates |
 | Source endpoint metadata | Passed: 67 Manual review, 61 Probe ready |
 | Astro diagnostics | Passed: 0 errors, 0 warnings, 0 hints |
 | Static build | Passed: 227 HTML pages |
@@ -42,9 +42,9 @@ The release assertion is preserved as `npm run verify:release`. It reads the v0.
 
 ## Current-Source Gate
 
-The nine Published signals resolve to 12 unique source records. All 12 have a `last_checked_date` of `2026-07-22`.
+The 16 Published signals resolve to 30 unique source records. All 30 have a `last_checked_date` on or after `2026-07-22`.
 
-Phase 54 rechecked the one remaining older supporting source, the official CMHC housing-construction table directory, and refreshed its check metadata after confirming that the starts, completions, and units-under-construction tables remain available.
+Phase 55F retained the Phase 54 source floor and refreshed the older NASA Artemis, USDA plant-breeding, and CMHC portal support rails. The verifier now reads the expected support-source count and minimum checked date from the release manifest rather than hard-coding the earlier nine-record baseline.
 
 ## Browser Matrix
 
@@ -85,7 +85,7 @@ The mobile Source Coverage table remains intentionally horizontally scrollable i
 
 ## Interaction And Touch Targets
 
-The Signals status control was changed to `Published` and returned exactly nine visible cards, all labeled Published. The filter was then restored.
+During Phase 54, the Signals status control was changed to `Published` and returned exactly nine visible cards, all labeled Published. Phase 55F changes content state but not the control, layout, or filtering implementation; the production build now exports 16 Published records.
 
 Phase 54 enlarged the brand and primary-navigation links to a minimum 44 × 44 CSS-pixel target. Final desktop and mobile measurements were:
 
@@ -103,17 +103,17 @@ The mobile header remains compact by reducing only the surrounding vertical gap 
 The built artifact passed these checks:
 
 - `robots.txt` allows public crawling and references `https://ftfn.io/sitemap.xml`,
-- the sitemap contains exactly the nine Published signal detail URLs,
+- the sitemap contains exactly the 16 Published signal detail URLs,
 - non-published signal detail URLs are absent from the sitemap,
-- all nine Published details use `index, follow`,
+- all 16 Published details use `index, follow`,
 - representative In Review, company-claim In Review, and briefing details use `noindex, follow`,
 - built canonical URLs use `https://ftfn.io`,
 - no built sitemap URL uses localhost,
-- `/data/signals.json` contains exactly nine Published records,
+- `/data/signals.json` contains exactly 16 Published records,
 - `/data/sources.json` contains 128 active public source records and excludes private notes,
 - `/data/topics.json` contains 17 topic records,
 - all three exports remain on schema version `1.0`,
-- `/updates/` contains all seven update records.
+- `/updates/` contains all eight update records.
 
 During local development, Astro generates environment-local canonical values. The `https://ftfn.io` canonical assertion therefore runs against the production build output rather than the development server.
 
@@ -123,11 +123,11 @@ This pass includes rendered DOM, content-structure, alternative-text, link, head
 
 No release-blocking accessibility issue was found in the checked scope.
 
-## Phase 55E Content-Only QA Scope
+## Phase 55F Content And Publication QA Scope
 
-Phase 55E changes source metadata and editorial content without changing components, styles, layouts, navigation, routes, or client-side behavior. The Phase 54 desktop/mobile browser matrix therefore remains the UI baseline. The new 227-page artifact passed the automated release assertion and owner-only hosted smoke checks.
+Phase 55F changes source metadata, publication state, editorial notes, public export membership, sitemap membership, and the update log without changing components, styles, layouts, navigation, routes, or client-side behavior. The Phase 54 desktop/mobile browser matrix therefore remains the UI baseline. The 227-page Phase 55F artifact passed candidate validation, content validation, source health, Astro diagnostics, production build, and the release assertion.
 
-Hosted checkpoint:
+Previous hosted checkpoint, pending refresh:
 
 - commit: `8605ce0c300396539f11d9bc9e6e381cfab2d64f`,
 - Sites version: 3,
@@ -135,12 +135,12 @@ Hosted checkpoint:
 - access: custom owner-only policy with one allowed user and no groups,
 - homepage: 36 signals and 128 sources,
 - Source Monitor: 0 Review Due, 0 Watch Soon, 128 Current,
-- new DOE signal: `In Review`, `noindex, follow`, correct canonical.
+- Phase 55E publication state: nine Published and 27 In Review.
 
 Raw JSON and text routes were blocked by the browser client during direct navigation. Their membership, private-data exclusion, robots, and sitemap assertions passed in the local build/release verifier.
 
 ## Verdict
 
-Phase 55E passes locally. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, or public exports.
+Phase 55F passes locally. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, or public exports.
 
-The owner-only preview is current at Sites version 3. It is not approved for public access or public launch.
+The existing owner-only preview remains private. Phase 55F will refresh it without changing access, attaching a custom domain, or approving public launch.

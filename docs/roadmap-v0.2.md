@@ -41,15 +41,15 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after the Phase 55E bounded content expansion:
+Current `0.2.0-dev` state after the Phase 55F publication-readiness review:
 
 | Measure | Current Development State |
 | --- | ---: |
 | Static pages | 227 |
 | Active sources | 128 |
 | Signals | 36 |
-| Published signals | 9 |
-| In Review signals | 27 |
+| Published signals | 16 |
+| In Review signals | 20 |
 | Draft Sample signals | 0 |
 | Named local inputs selected in Phases 50-55C | 18 |
 | Private source candidates | 150 local-only records |
@@ -89,7 +89,7 @@ By v0.2, a reader should be able to answer:
 | Area | v0.2 Target | Current | Remaining |
 | --- | ---: | ---: | ---: |
 | Total signals | 25-35 | 35 | target met; further additions require an unusually strong downstream record |
-| Published plus publication-ready | 8-12 | 9 | target met through nine Published records |
+| Published plus publication-ready | 8-12 | 16 | original target exceeded only after a third record-level publication gate |
 | Active sources | 110-125 | 117 | target met; add only gap-closing sources |
 | Private source candidates | 150 | 150 local-only records | target met; 45 reviewed and 105 retained for later gap-led review |
 | Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | semiconductor service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
@@ -508,12 +508,12 @@ v0.2 is successful when:
 - release QA is repeatable,
 - no automated process publishes claims without review.
 
-All nine local success criteria pass in the Phase 54 candidate. Preview and public launch are separate operational approvals rather than content-build criteria.
+All local success criteria pass in the current candidate. Phase 55F expanded the defensible Published set without changing the preview, package-freeze, or public-launch boundaries.
 
 ## Immediate Next Step
 
-Complete Phase 55F as an editorial consolidation pass on the eight Phase 55E records. Recheck whether any now meets the publication policy; promote only records with a specific primary-source event, fully preserved evidence limits, and a useful reader-facing conclusion. The default outcome may be to keep all eight `In Review`.
+Begin Phase 55G as a bounded downstream-authority pass. First look for Project Baccara's executed county record or final MCAQD permit. If neither exists, check for the first named public-agency post-quantum implementation plan, procurement action, proposed FAR rule, or NIST pilot result. Stop rather than manufacture a record if neither lane has crossed a documented stage.
 
-After that review, choose the next content lane from evidence gaps rather than volume: Project Baccara's executed MCP or final permits, Toronto Council/by-law follow-through after July 29-31, the first named public-agency PQC implementation plan or procurement rule, or one bounded record from the remaining 90 private candidates.
+Schedule the Toronto application `24 254930` Council and by-law recheck for after the 29-31 July 2026 meeting window. Use one bounded record from the remaining 90 private candidates only when it closes a named evidence gap; do not expand from source volume alone.
 
 Keep the Sites preview owner-only. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

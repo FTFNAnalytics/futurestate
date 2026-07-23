@@ -178,3 +178,33 @@ Current next scope:
 - prepare the v0.2 launch note and limitations statement,
 - decide whether to execute a preview deploy only after explicit approval,
 - keep production domain attachment, DNS changes, analytics, automation, ingestion, CMS, database migration, scoring, and accounts out of scope unless separately approved.
+
+## Phase 55F Publication Review
+
+Review date: 2026-07-23.
+
+Phase 55F reviewed the eight records repaired or added in Phase 55E. Seven moved to `Published`:
+
+| Record | Decision boundary |
+| --- | --- |
+| `signal-sample-009` | Aggregate IEA data-centre electricity growth and bottleneck analysis, not AI-only demand or a local capacity forecast. |
+| `signal-sample-005` | NHTSA reporting rule and data-quality limits, not normalized manufacturer safety rankings. |
+| `signal-sample-003` | Definitive CHIPS funding agreement, not a qualified material, commercial product, fab, or production result. |
+| `signal-sample-006` | Artemis hardware-integration milestone, not launch readiness, schedule proof, or mission success. |
+| `signal-sample-008` | USDA award portfolio, not successful traits, field performance, commercialization, or adoption. |
+| `signal-statcan-building-permits-construction-intentions-signal` | Specific monthly permit intentions, not starts, completions, affordability, or delivered housing. |
+| `signal-doe-storage-step-prize-production-readiness` | Prize design and funding intent, not a winner, validated production process, or deployment. |
+
+`signal-sample-010` remains `In Review`. Joby's first-flight and aircraft-status descriptions remain interested-party evidence, while the selected FAA page provides general program context rather than independent confirmation of the aircraft milestone.
+
+The complete decision matrix is in `docs/work-packages/phase-55f-publication-readiness-review.md`.
+
+## Phase 55F Follow-Up
+
+The Published set now contains 16 records and the public update log contains eight entries. The next content lane should follow named downstream evidence rather than add volume:
+
+- Toronto Council and by-law evidence after the 29-31 July 2026 meeting window,
+- Project Baccara's executed county record or final air permit,
+- or a named federal-agency post-quantum implementation or procurement record.
+
+The Sites deployment remains owner-only. Package freeze, public access, custom-domain attachment, Hostinger DNS changes, and public launch remain separate decisions.

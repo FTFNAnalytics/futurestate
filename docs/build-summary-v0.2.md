@@ -25,6 +25,8 @@ Phase 55D adds a minimal static hosting adapter, deploys the exact 218-page pack
 
 Phase 55E expands the candidate to 227 pages, 128 public sources, and 36 signals. It rechecks all 17 aging source rails, reviews 15 additional private candidates, repairs seven broad records into dated evidence updates, adds one bounded storage-funding signal, and keeps the publication count at nine. Sites version 3 now serves the exact committed Phase 55E state under the existing owner-only policy.
 
+Phase 55F applies the full publication gate to those eight records. Seven specific, source-backed records move to `Published`; the Joby certification-test record remains `In Review` because the selected milestone is still an interested-party claim without independent FAA confirmation. The route count remains 227 while the public export grows to 16 signals and the update log grows to eight entries.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
@@ -34,11 +36,11 @@ The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 | Generated HTML pages | 182 | 227 | +45 |
 | Sources | 102 | 128 | +26 |
 | Signals | 18 | 36 | +18 |
-| Published signals | 3 | 9 | +6 |
-| In Review signals | 14 | 27 | +13 |
+| Published signals | 3 | 16 | +13 |
+| In Review signals | 14 | 20 | +6 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 7 | +7 |
+| Public update entries | 0 | 8 | +8 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
@@ -69,9 +71,9 @@ The editorial and authority layer includes:
 
 - 128 structured source records with authority, freshness, access, monitoring, and review metadata,
 - 36 bounded signal records with explicit claim and evidence limits,
-- nine Published signals backed by 12 sources checked on 2026-07-22,
+- 16 Published signals backed by 30 sources checked on or after 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
-- a public seven-entry update and correction log,
+- a public eight-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
@@ -102,11 +104,13 @@ Phase 55C found no qualifying public-agency PQC migration plan or PQC-specific F
 
 Phase 55E rechecked all 17 Watch Soon records, corrected four active-source canonical URLs, reviewed 15 additional private candidates, added eight dated source records, repaired seven existing signals, and added one new DOE storage prize signal. The local result is 227 pages, 128 public sources, and 36 signals. Source Monitor now reports zero Review Due, zero Watch Soon, and 128 Current records; Source Coverage remains 14 Strong, zero Developing, and zero Weak lanes.
 
+Phase 55F promoted seven of the eight Phase 55E records after a separate source, copy, citation, caveat, metadata, and correction-path review. It held the Joby record because the FAA context source does not independently confirm the company-described milestone. The source, signal, topic, and page counts are unchanged; the publication state is now 16 Published and 20 In Review, with eight public updates.
+
 Verified results:
 
 - 227 generated HTML pages,
-- exact exports for 128 sources, 17 topics, and nine Published signals,
-- all nine Published signal routes included in the sitemap,
+- exact exports for 128 sources, 17 topics, and 16 Published signals,
+- all 16 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
 - correct canonical, robots, and publication-state indexing boundaries,
 - ten core journeys checked at `1440x900` and `390x844`,
@@ -128,7 +132,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Twenty-seven signals remain `In Review`; the former Joby Draft Sample is now a bounded company-claim record in review.
+- Twenty signals remain `In Review`; the former Joby Draft Sample is now a bounded company-claim record in review and is the explicit hold from Phase 55F.
 - The briefing, dependency maps, and local-system profiles remain prelaunch or research material.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - The Project Baccara record stops at a reported conditional county vote and proposed air permit; final permits, condition compliance, construction, occupancy, and operation remain unverified.

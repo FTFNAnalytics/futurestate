@@ -148,24 +148,24 @@ Expected results:
 - [x] Confirm `app/dist/sitemap.xml` exists.
 - [x] Run `npm run source:health` from `app/`.
 - [x] Run `npm run verify:release` from `app/`.
-- [x] Confirm sitemap includes exactly the nine Published signal URLs.
+- [x] Confirm sitemap includes exactly the 16 Published signal URLs.
 - [x] Confirm sitemap excludes In Review and Draft Sample signal URLs.
 - [x] Confirm non-published signal and briefing pages have `noindex, follow`.
 - [x] Confirm `/atlas/source-monitor/` renders and shows review due/watch soon/current source states.
 - [x] Confirm `/atlas/source-coverage/` renders and shows watch-lane/topic source coverage.
-- [x] Confirm the seven-entry update log and all three static exports.
+- [x] Confirm the eight-entry update log and all three static exports.
 - [x] Smoke test ten launch-critical local routes.
 - [x] Run desktop and mobile browser checks at 1440 × 900 and 390 × 844.
 - [x] Confirm brand and primary-navigation targets meet a 44-pixel minimum.
 
-Evidence: `docs/release-qa-v0.2.md`, `docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md`, and `docs/work-packages/phase-55d-owner-only-sites-preview.md`.
+Evidence: `docs/release-qa-v0.2.md`, `docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md`, `docs/work-packages/phase-55d-owner-only-sites-preview.md`, and `docs/work-packages/phase-55f-publication-readiness-review.md`.
 
 ## Deploy Checklist
 
 The owner-only preview portion is complete. Do not execute the remaining public-domain steps without explicit approval.
 
 - [x] Create the Sites project and private source repository.
-- [x] Build and package the exact 218-page candidate.
+- [x] Build and package the exact 227-page candidate.
 - [x] Deploy to an owner-only preview URL.
 - [x] Run the launch-critical route and trust-output checklist on the preview URL.
 - [ ] Approve public access and the `0.2.0` release freeze.

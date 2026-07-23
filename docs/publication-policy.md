@@ -231,6 +231,14 @@ Phase 53 second publication-gate result:
 - A public Publication Promotion entry records the decision.
 - Company claims, broad source rails, and unresolved local outcomes remain outside the Published export.
 
+Phase 55F third publication-gate result:
+
+- Seven dated Phase 55E records passed the full gate and moved to `Published`.
+- The Published set now contains 16 signals, backed by 30 sources checked on or after 2026-07-22.
+- The Joby certification-test record remains `In Review` because the selected evidence is still an interested-party claim and the FAA context page does not independently confirm the milestone.
+- Aggregate analysis, crash-report data, funding, hardware, awards, permits, and prizes remain explicitly bounded from local capacity, normalized safety, qualification, launch readiness, field results, housing delivery, or deployment claims.
+- A public Publication Promotion entry and the Phase 55F work package record the decision and correction path.
+
 ## Open Questions
 
 - Should `In Review` remain linked from public indexes after public launch, or move behind a clearer research/prelaunch route?

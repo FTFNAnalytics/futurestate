@@ -84,12 +84,19 @@ check(JSON.stringify(signalLocations.sort()) === JSON.stringify(expectedSignalLo
 
 const sourceById = new Map(sources.records.map((record) => [record.id, record]));
 const publishedSourceIds = [...new Set(signals.records.flatMap((record) => record.source_ids))];
-const publishedSupportDate = manifest.last_verified.published_support_date ?? manifest.last_verified.date;
-check(publishedSourceIds.length === 12, `Expected 12 unique Published-support sources, found ${publishedSourceIds.length}.`);
+const publishedSupportMinimumDate =
+  manifest.last_verified.published_support_minimum_date ?? manifest.last_verified.date;
+check(
+  publishedSourceIds.length === manifest.expected_build.published_support_sources,
+  `Expected ${manifest.expected_build.published_support_sources} unique Published-support sources, found ${publishedSourceIds.length}.`,
+);
 for (const sourceId of publishedSourceIds) {
   const source = sourceById.get(sourceId);
   check(Boolean(source), `Published source ${sourceId} is missing from the source export.`);
-  check(source?.last_checked_date === publishedSupportDate, `Published source ${sourceId} was not checked on ${publishedSupportDate}.`);
+  check(
+    source?.last_checked_date >= publishedSupportMinimumDate,
+    `Published source ${sourceId} was not checked on or after ${publishedSupportMinimumDate}.`,
+  );
 }
 
 for (const record of signals.records) {
@@ -124,5 +131,7 @@ if (failures.length > 0) {
 
 console.log("FTFN v0.2 release verification passed.");
 console.log(`${htmlCount} HTML pages; ${signals.count} Published signals; ${sources.count} sources; ${topics.count} topics; ${updateFiles.length} updates.`);
-console.log(`${publishedSourceIds.length} Published-support sources checked on ${publishedSupportDate}.`);
+console.log(
+  `${publishedSourceIds.length} Published-support sources checked on or after ${publishedSupportMinimumDate}.`,
+);
 console.log("Robots, sitemap, canonical, indexing, required outputs, private-registry exclusion, and public export boundaries passed.");

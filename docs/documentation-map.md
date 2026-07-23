@@ -1129,12 +1129,33 @@ Do not use it for:
 - Authorizing a Published promotion without a separate publication review.
 - Authorizing public access, custom-domain attachment, or Hostinger DNS changes.
 
+### Phase 55F Publication-Readiness Review
+
+Purpose:
+
+- Record the publish-or-hold decision for all eight Phase 55E records.
+- Preserve the evidence boundary on seven promotions and the independent-confirmation blocker on the held Joby record.
+- Record the resulting Published export, sitemap, update-log, source-currency, and owner-only preview checks.
+
+Update when:
+
+- a material factual correction changes one of the eight decisions,
+- a held source gains independent confirmation,
+- a promoted record moves to `Needs Update` or `Archived`,
+- the exact owner-only deployment checkpoint or hosted QA result changes.
+
+Do not use it for:
+
+- Treating publication as proof of a later conversion stage.
+- Approving another record without a new publication review.
+- Authorizing public access, custom-domain attachment, package freeze, or Hostinger DNS changes.
+
 ### v0.2 Build Manifest
 
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 227-page build, nine Published signals, 128 sources, seven updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 227-page build, 16 Published signals, 128 sources, eight updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 
