@@ -1174,6 +1174,7 @@ Completed:
 - Completed Phase 55G: the official County action closes the reported-vote gap, final MCAQD Permit `P0013417` closes the proposed-permit gate, the Baccara signal remains In Review, and owner-only Sites version 5 serves the exact checkpoint.
 - Began Phase 55H with a verified pre-decision gate: Toronto schedules item `2026.SC33.9` for July 29-31, identifies the conditions that precede amendment enactment, and returns bounded negative permit markers across all eight project addresses; owner-only Sites version 6 serves the exact checkpoint.
 - Completed Phase 55I: all 150 private candidates now have a first-pass triage state, ten selected monitoring rails became separately authored public source records, 12 dated official records support nine new `In Review` signals, and the Published set remains unchanged.
+- Refreshed the existing owner-only deployment to Sites version 7 from the exact Phase 55I source commit without changing access or DNS.
 
 Next candidate work:
 

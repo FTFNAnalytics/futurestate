@@ -31,7 +31,7 @@ Phase 55G converts two Project Baccara authority gaps into official records: Mar
 
 Phase 55H begins with a pre-decision authority gate because Toronto's July 29-31 Council meeting has not yet occurred. The official item history now supplies the meeting date and the wind-study, land-exchange, and laneway conditions that precede amendment enactment. Searches across all eight project addresses returned bounded `Application Not Found` markers in the Building Permit portal. The package remains at 229 pages, 130 sources, and 36 signals, grows to ten updates, and Sites version 6 serves the exact checkpoint under the unchanged owner-only policy.
 
-Phase 55I completes the first-pass review of the remaining 90 private candidates. Ten candidates become public monitoring rails, 12 dated official records support nine new `In Review` signals, and the Phoenix and Toronto local-system evidence trails gain workforce, water, electricity, and infrastructure-planning context. The local package reaches 260 pages, 152 sources, 45 signals, and 11 updates while preserving 16 Published signals. The public-launch, DNS, package-freeze, and publication-promotion gates remain closed.
+Phase 55I completes the first-pass review of the remaining 90 private candidates. Ten candidates become public monitoring rails, 12 dated official records support nine new `In Review` signals, and the Phoenix and Toronto local-system evidence trails gain workforce, water, electricity, and infrastructure-planning context. The package reaches 260 pages, 152 sources, 45 signals, and 11 updates while preserving 16 Published signals. Sites version 7 serves the exact Phase 55I commit under the unchanged owner-only policy; the public-launch, DNS, package-freeze, and publication-promotion gates remain closed.
 
 ## Build Inventory
 
@@ -132,7 +132,7 @@ Verified results:
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
 
-The local Phase 55I evidence is in `docs/release-qa-v0.2.md`; the initial hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview remains at Sites version 6 from commit `f2fe94ae95a2f702104b995c2a0a01776c00f3aa` until the exact Phase 55I checkpoint is refreshed. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The local and hosted Phase 55I evidence is in `docs/release-qa-v0.2.md`; the initial hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview is current at Sites version 7 from exact source commit `8ce2feba82a3ade2266e2d74788c003bca28a26f`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 

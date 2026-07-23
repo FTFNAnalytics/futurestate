@@ -1200,6 +1200,7 @@ Purpose:
 
 - Record the completed first-pass triage of all 150 local-only candidates without exposing candidate IDs or private notes.
 - Document the ten converted monitoring rails, 12 dated public source records, nine new `In Review` signals, and local-system evidence repairs.
+- Record the exact owner-only Sites version 7 deployment and unchanged access/DNS boundary.
 - Preserve the separate publication-review, owner-only access, DNS, and package-freeze gates.
 
 Update when:

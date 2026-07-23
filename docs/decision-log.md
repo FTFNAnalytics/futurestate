@@ -2178,7 +2178,9 @@ Implemented:
 - added nine bounded signals as `In Review`,
 - repaired the Phoenix provider-water signal, both local-system dossiers, and linked workforce and infrastructure evidence gaps,
 - reached 152 sources, 45 signals, 11 updates, and 260 generated pages while preserving 16 Published signals,
-- passed candidate validation, content validation, source health, Astro diagnostics, and the production build.
+- passed candidate validation, content validation, source health, Astro diagnostics, the production build, and release assertions,
+- committed the exact source as `8ce2feba82a3ade2266e2d74788c003bca28a26f`,
+- deployed that commit as owner-only Sites version 7 with one allowed owner, no groups, no public access, and no DNS change.
 
 Boundary:
 

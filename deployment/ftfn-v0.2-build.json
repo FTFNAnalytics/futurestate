@@ -12,8 +12,8 @@
     "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
     "access": "owner-only-custom-policy",
     "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
-    "current_source_commit": "f2fe94ae95a2f702104b995c2a0a01776c00f3aa",
-    "current_version_number": 6,
+    "current_source_commit": "8ce2feba82a3ade2266e2d74788c003bca28a26f",
+    "current_version_number": 7,
     "custom_domain_attached": false,
     "post_deploy_qa": "passed"
   },
@@ -94,13 +94,14 @@
     "build": "passed",
     "static_pages_built": 260,
     "release_assertions": "passed",
-    "browser_qa": "passed-local",
+    "browser_qa": "passed-local-and-focused-hosted",
     "browser_viewports": [
       "1440x900",
       "390x844"
     ],
     "browser_routes_checked": 10,
-    "preview_qa": "passed-owner-only-version-6-access; phase-55i-refresh-pending"
+    "hosted_routes_checked": 5,
+    "preview_qa": "passed-owner-only-version-7-deployment-and-access"
   },
   "required_output_files": [
     "dist/index.html",
@@ -203,5 +204,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the locally verified Phase 55I remaining-candidate review and content expansion. All 150 private candidates now have a first-pass triage state; ten selected monitoring rails and twelve dated source records support nine new In Review signals plus local-system repairs. Sites version 6 still serves the prior Phase 55H commit while the exact Phase 55I source is prepared for an owner-only refresh. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, Published promotion, or package freeze."
+  "notes": "This manifest records the locally and post-deploy verified Phase 55I remaining-candidate review and content expansion. All 150 private candidates now have a first-pass triage state; ten selected monitoring rails and twelve dated source records support nine new In Review signals plus local-system repairs. Sites version 7 serves exact source commit 8ce2feba82a3ade2266e2d74788c003bca28a26f. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, Published promotion, or package freeze."
 }

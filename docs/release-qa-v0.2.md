@@ -2,7 +2,7 @@
 
 Date: 2026-07-23
 
-Status: Phase 55I local release gate passed; owner-only preview refresh pending.
+Status: Phase 55I release gate and owner-only Sites version 7 deployment passed.
 
 ## Artifact Under Review
 
@@ -127,21 +127,21 @@ No release-blocking accessibility issue was found in the checked scope.
 
 Phase 55I completes the first-pass triage of all 150 private candidates, adds 22 source records and nine `In Review` signals, repairs an existing Phoenix signal and both local-system evidence trails, and adds one update entry. It does not change components, styles, layouts, navigation, or client-side behavior. The Phase 54 desktop/mobile browser matrix therefore remains the UI baseline. The 260-page artifact passed candidate validation, content validation, source health, Astro diagnostics, production build, and the release assertion.
 
-Current hosted checkpoint before the Phase 55I refresh:
+Hosted checkpoint:
 
-- commit: `f2fe94ae95a2f702104b995c2a0a01776c00f3aa`,
-- Sites version: 6,
+- commit: `8ce2feba82a3ade2266e2d74788c003bca28a26f`,
+- Sites version: 7,
 - URL: `https://ftfn-analytics.jbumstead.chatgpt.site`,
 - access: custom owner-only policy with one allowed user and no groups,
 - deployment status: succeeded,
-- application contract: the hosted version still reflects Phase 55H while the locally verified Phase 55I contract is 260 pages, 152 sources, 45 signals, 16 Published, 29 In Review, and 11 updates,
-- Source Monitor contract: local Phase 55I output reports 0 Review Due, 0 Watch Soon, 152 Current,
+- application contract: 260 pages, 152 sources, 45 signals, 16 Published, 29 In Review, and 11 updates,
+- Source Monitor contract: 0 Review Due, 0 Watch Soon, 152 Current,
 - custom-domain state: `ftfn.io` and `www.ftfn.io` remain pending validation and do not route to the Site.
 
-The Phase 55I pass did not repeat the Phase 54 browser matrix because no component, style, layout, navigation, or client-side behavior changed. Export membership, private-data exclusion, robots, sitemap, canonical, update-log, and indexing assertions passed against the production build. The new signal routes are `noindex, follow` and remain outside the sitemap because all nine are `In Review`.
+The Phase 55I pass did not repeat the Phase 54 browser matrix because no component, style, layout, navigation, or client-side behavior changed. Export membership, private-data exclusion, robots, sitemap, canonical, update-log, and indexing assertions passed against the production build. Focused hosted checks passed on the homepage, update log, two new signal routes, a new source route, and Source Monitor with no browser-console warnings or errors. The new signal routes are `noindex, follow` and remain outside the sitemap because all nine are `In Review`.
 
 ## Verdict
 
-The Phase 55I content expansion passes locally. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, or public exports.
+The Phase 55I content expansion passes locally and in the owner-only deployment. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, public exports, or the focused hosted check.
 
-The owner-only preview remains at Sites version 6 until the Phase 55I source checkpoint is deployed. It is not approved for public access or public launch. A separate Phase 55J publication review and the post-meeting Council and by-law recheck remain pending.
+The owner-only preview is current at Sites version 7. It is not approved for public access or public launch. A separate Phase 55J publication review and the post-meeting Council and by-law recheck remain pending.

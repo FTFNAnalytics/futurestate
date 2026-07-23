@@ -99,7 +99,7 @@ What is now stable:
 - Phase 55F applied the full publication gate to those eight records, promoted seven bounded updates, held the Joby company claim, and expanded the public core to 16 Published signals without changing the 227-page route count.
 - Phase 55G added Maricopa County's official 4-1 Project Baccara action and MCAQD's active final Permit `P0013417`, kept the signal `In Review`, and refreshed the exact 229-page / 130-source package as owner-only Sites version 5.
 - Phase 55H now records Toronto's July 29-31 Council gate, the wind-study, land-exchange, and laneway conditions that precede amendment enactment, and bounded negative Building Permit searches across all eight project addresses; Sites version 6 serves the exact pre-decision checkpoint.
-- Phase 55I reviewed the remaining 90 private candidates, added ten monitoring rails plus 12 dated source records, created nine bounded `In Review` signals, repaired the local-system evidence trails, and reached 152 sources, 45 signals, and 260 pages without a new Published promotion.
+- Phase 55I reviewed the remaining 90 private candidates, added ten monitoring rails plus 12 dated source records, created nine bounded `In Review` signals, repaired the local-system evidence trails, and reached 152 sources, 45 signals, and 260 pages without a new Published promotion; Sites version 7 serves the exact checkpoint under owner-only access.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 30 sources supporting the 16 Published signals were checked on or after `2026-07-22`.
@@ -400,7 +400,7 @@ Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 locally verified candidate: package 0.2.0-dev, 152 public sources, 150 first-pass-triaged private candidates, 45 signals, 17 topics, 11 updates, 260 pages, 16 Published signals, and 3 public JSON endpoints. Sites version 6 remains available at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site until the exact Phase 55I refresh is recorded. Source Coverage is 14 Strong lanes, and the local Source Monitor has zero Review Due, zero Watch Soon, and 152 Current records.
+v0.2 owner-only hosted candidate: package 0.2.0-dev, 152 public sources, 150 first-pass-triaged private candidates, 45 signals, 17 topics, 11 updates, 260 pages, 16 Published signals, and 3 public JSON endpoints. Sites version 7 serves exact source commit 8ce2feba82a3ade2266e2d74788c003bca28a26f at https://ftfn-analytics.jbumstead.chatgpt.site. Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, zero Watch Soon, and 152 Current records.
 
 Next decision gate:
 Preserve the owner-only preview. Run Phase 55J as a separate publication-readiness review of the nine Phase 55I additions, then complete Phase 55H after the 29-31 July 2026 Council window. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
