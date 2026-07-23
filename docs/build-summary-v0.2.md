@@ -29,6 +29,8 @@ Phase 55F applies the full publication gate to those eight records. Seven specif
 
 Phase 55G converts two Project Baccara authority gaps into official records: Maricopa County's formal meeting summary records a 4-1 approval, and MCAQD lists final Permit `P0013417` as active and effective June 30, 2026. The existing signal remains `In Review` because the executed MCP, condition compliance, service, construction, testing, occupancy, and operating evidence remain open. The package now contains 229 pages, 130 sources, and nine updates; Sites version 5 serves the exact Phase 55G commit under the unchanged owner-only policy.
 
+Phase 55H begins with a pre-decision authority gate because Toronto's July 29-31 Council meeting has not yet occurred. The official item history now supplies the meeting date and the wind-study, land-exchange, and laneway conditions that precede amendment enactment. Searches across all eight project addresses returned bounded `Application Not Found` markers in the Building Permit portal. The package remains at 229 pages, 130 sources, and 36 signals, grows to ten updates, and Sites version 6 serves the exact checkpoint under the unchanged owner-only policy.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
@@ -42,7 +44,7 @@ The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 | In Review signals | 14 | 20 | +6 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 9 | +9 |
+| Public update entries | 0 | 10 | +10 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
@@ -75,7 +77,7 @@ The editorial and authority layer includes:
 - 36 bounded signal records with explicit claim and evidence limits,
 - 16 Published signals backed by 30 sources checked on or after 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
-- a public nine-entry update and correction log,
+- a public ten-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
@@ -110,6 +112,8 @@ Phase 55F promoted seven of the eight Phase 55E records after a separate source,
 
 Phase 55G added the official County action and signed final MCAQD air permit to the existing Project Baccara trail. The content result is 229 pages, 130 public sources, 36 signals, and nine updates. Source Monitor reports zero Review Due, zero Watch Soon, and 130 Current records; Source Coverage remains 14 Strong, zero Developing, and zero Weak lanes. Both primary Baccara lanes advanced, so the fallback federal post-quantum search was not opened.
 
+Phase 55H refreshed the Toronto item and permit rails without claiming a future decision. The official record schedules item `2026.SC33.9` for July 29-31 and makes the bill-withholding conditions explicit. All eight named-address building-permit searches returned bounded negative markers. The result remains 229 pages, 130 public sources, 36 signals, 16 Published, and 20 In Review, with ten public updates.
+
 Verified results:
 
 - 229 generated HTML pages,
@@ -124,7 +128,7 @@ Verified results:
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
 
-The local and Phase 55G deployment evidence is in `docs/release-qa-v0.2.md`; the initial hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview is current at Sites version 5 from commit `ddeea6ab3213d7e9367c6564a9b8d31395ba7675`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The local and Phase 55H deployment evidence is in `docs/release-qa-v0.2.md`; the initial hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview is current at Sites version 6 from commit `f2fe94ae95a2f702104b995c2a0a01776c00f3aa`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 
@@ -140,6 +144,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 - The briefing, dependency maps, and local-system profiles remain prelaunch or research material.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - The Project Baccara record now includes an official 4-1 County action and active final air permit; the fully executed MCP, condition compliance, service, construction, testing, occupancy, and operation remain unverified.
+- Toronto item `2026.SC33.9` is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted amendment, confirmed building permit, start, completion, or occupancy is yet available.
 - Public JSON files are static exports, not a live API.
 - There is no private database, automated ingestion, scheduled monitoring, analytics, newsletter capture, account system, or numeric 42/59 scoring.
 - The private candidate registry is an ignored local file, so it requires private workspace or encrypted backup outside public Git.

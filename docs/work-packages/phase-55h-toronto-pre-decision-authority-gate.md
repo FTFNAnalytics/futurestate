@@ -81,7 +81,17 @@ initial notice
 
 ## Owner-Only Preview
 
-The existing preview remains owner-only. Refresh only after the exact validated Phase 55H pre-decision source state is committed, and do not change access or DNS.
+The exact validated Phase 55H pre-decision source state was committed as `f2fe94ae95a2f702104b995c2a0a01776c00f3aa`, pushed to the private Sites source repository, saved as Sites version 6, and deployed successfully to:
+
+`https://ftfn-analytics.jbumstead.chatgpt.site`
+
+The post-deploy access check remained unchanged:
+
+- access mode: custom;
+- allowed users: one owner;
+- allowed groups: none;
+- public access: disabled;
+- Hostinger DNS and the pending `ftfn.io` / `www.ftfn.io` domain entries: unchanged.
 
 ## Post-Meeting Recheck
 

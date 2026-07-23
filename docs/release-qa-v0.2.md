@@ -2,7 +2,7 @@
 
 Date: 2026-07-23
 
-Status: Phase 55G local release gate and owner-only preview version 5 deployment passed.
+Status: Phase 55H pre-decision release gate and owner-only preview version 6 deployment passed.
 
 ## Artifact Under Review
 
@@ -10,7 +10,7 @@ Status: Phase 55G local release gate and owner-only preview version 5 deployment
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
 - Expected build: 229 HTML pages
-- Content baseline: 130 sources, 36 signals, 17 topics, 9 update entries
+- Content baseline: 130 sources, 36 signals, 17 topics, 10 update entries
 - Publication baseline: 16 Published, 20 In Review, 0 Draft Sample
 
 The package remains `0.2.0-dev`. The owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
@@ -32,7 +32,7 @@ Result:
 | Check | Result |
 | --- | --- |
 | Private candidates | Passed: 150 records; 58 Candidate, 90 Needs Triage, 1 Active Source Record, 1 Rejected |
-| Content references | Passed: 130 sources, 36 signals, 17 topics, 10 organizations, 5 technologies, 2 local systems, 1 briefing, 10 evidence gaps, 2 dependency maps, 9 updates |
+| Content references | Passed: 130 sources, 36 signals, 17 topics, 10 organizations, 5 technologies, 2 local systems, 1 briefing, 10 evidence gaps, 2 dependency maps, 10 updates |
 | Source endpoint metadata | Passed: 69 Manual review, 61 Probe ready |
 | Astro diagnostics | Passed: 0 errors, 0 warnings, 0 hints |
 | Static build | Passed: 229 HTML pages |
@@ -113,7 +113,7 @@ The built artifact passed these checks:
 - `/data/sources.json` contains 130 active public source records and excludes private notes,
 - `/data/topics.json` contains 17 topic records,
 - all three exports remain on schema version `1.0`,
-- `/updates/` contains all nine update records.
+- `/updates/` contains all ten update records.
 
 During local development, Astro generates environment-local canonical values. The `https://ftfn.io` canonical assertion therefore runs against the production build output rather than the development server.
 
@@ -123,25 +123,25 @@ This pass includes rendered DOM, content-structure, alternative-text, link, head
 
 No release-blocking accessibility issue was found in the checked scope.
 
-## Phase 55G Content And Deployment QA Scope
+## Phase 55H Content And Deployment QA Scope
 
-Phase 55G adds two source records, repairs existing content and evidence limits, and adds one update entry without changing components, styles, layouts, navigation, or client-side behavior. The Phase 54 desktop/mobile browser matrix therefore remains the UI baseline. The 229-page Phase 55G artifact passed candidate validation, content validation, source health, Astro diagnostics, production build, and the release assertion.
+Phase 55H refreshes two existing sources, repairs an existing signal and local-system evidence trail, and adds one update entry without changing components, styles, layouts, navigation, routes, or client-side behavior. The Phase 54 desktop/mobile browser matrix therefore remains the UI baseline. The 229-page Phase 55H artifact passed candidate validation, content validation, source health, Astro diagnostics, production build, and the release assertion.
 
 Hosted checkpoint:
 
-- commit: `ddeea6ab3213d7e9367c6564a9b8d31395ba7675`,
-- Sites version: 5,
+- commit: `f2fe94ae95a2f702104b995c2a0a01776c00f3aa`,
+- Sites version: 6,
 - URL: `https://ftfn-analytics.jbumstead.chatgpt.site`,
 - access: custom owner-only policy with one allowed user and no groups,
 - deployment status: succeeded,
-- application contract: 229 pages, 130 sources, 36 signals, 16 Published, 20 In Review, and nine updates,
+- application contract: 229 pages, 130 sources, 36 signals, 16 Published, 20 In Review, and ten updates,
 - Source Monitor contract: 0 Review Due, 0 Watch Soon, 130 Current,
 - custom-domain state: `ftfn.io` and `www.ftfn.io` remain pending validation and do not route to the Site.
 
-The Phase 55G pass did not repeat the Phase 54 browser matrix because no component, style, layout, navigation, or client-side behavior changed. Export membership, private-data exclusion, robots, sitemap, canonical, update-log, and indexing assertions passed against the exact production build before deployment. Sites then reported a successful version 5 deployment and preserved the one-user, no-group access policy.
+The Phase 55H pass did not repeat the Phase 54 browser matrix because no component, style, layout, navigation, route, or client-side behavior changed. Export membership, private-data exclusion, robots, sitemap, canonical, update-log, and indexing assertions passed against the exact production build before deployment. Sites then reported a successful version 6 deployment and preserved the one-user, no-group access policy.
 
 ## Verdict
 
-Phase 55G passes locally and in the owner-only deployment. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, or public exports.
+The Phase 55H pre-decision gate passes locally and in the owner-only deployment. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, or public exports.
 
-The owner-only preview is current at Sites version 5. It is not approved for public access or public launch.
+The owner-only preview is current at Sites version 6. It is not approved for public access or public launch. The post-meeting Council and by-law recheck remains pending until after July 31, 2026.

@@ -1171,12 +1171,35 @@ Do not use it for:
 - Authorizing a Published promotion without a separate publication review.
 - Authorizing public access, custom-domain attachment, package freeze, or Hostinger DNS changes.
 
+### Phase 55H Toronto Pre-Decision Authority Gate
+
+Purpose:
+
+- Record Toronto application `24 254930`'s dated July 29-31 Council gate.
+- Preserve the wind-study, land-exchange, and laneway conditions that precede amendment enactment.
+- Record bounded negative Building Permit searches across all eight project addresses without treating absence as proof.
+- Record the exact owner-only Sites version 6 deployment and unchanged access/DNS boundary.
+
+Update when:
+
+- City Council publishes its disposition or vote,
+- recommendations, bills, or enacted by-law numbers become available,
+- a wind, land-exchange, laneway, or permit condition advances,
+- a confirmed Building Permit application number, start, completion, or occupancy record becomes available,
+- the exact owner-only deployment checkpoint or hosted verification changes.
+
+Do not use it for:
+
+- Treating a scheduled meeting or negative address search as a final outcome.
+- Treating Council adoption as enacted amendments or project delivery.
+- Authorizing public access, custom-domain attachment, package freeze, or Hostinger DNS changes.
+
 ### v0.2 Build Manifest
 
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 229-page build, 16 Published signals, 130 sources, nine updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 229-page build, 16 Published signals, 130 sources, ten updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 

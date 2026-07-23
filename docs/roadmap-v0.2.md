@@ -41,7 +41,7 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after the Phase 55G authority conversion:
+Current `0.2.0-dev` state after the Phase 55H pre-decision authority gate:
 
 | Measure | Current Development State |
 | --- | ---: |
@@ -51,6 +51,7 @@ Current `0.2.0-dev` state after the Phase 55G authority conversion:
 | Published signals | 16 |
 | In Review signals | 20 |
 | Draft Sample signals | 0 |
+| Public update entries | 10 |
 | Named local inputs selected in Phases 50-55C | 18 |
 | Private source candidates | 150 local-only records |
 | Candidate review | 60 reviewed: 58 Candidate, 1 Active Source Record, 1 Rejected; 90 remaining |
@@ -387,9 +388,10 @@ Current stop point:
 - Phase 55D deployed and verified the exact package at `https://ftfn-analytics.jbumstead.chatgpt.site` with owner-only access,
 - Phase 55E expanded the dated evidence package and Phase 55F promoted seven records through a separate publication gate,
 - Phase 55G added the official 4-1 County action and active final air permit, kept the Project Baccara signal `In Review`, and deployed the exact 229-page / 130-source result as owner-only Sites version 5,
+- Phase 55H now records Toronto's dated July 29-31 Council gate, the bill-withholding conditions, and bounded negative permit searches across all eight project addresses; owner-only Sites version 6 serves the exact checkpoint,
 - the branch remains unpushed to public GitHub; the exact checkpoint exists in the private Sites source repository,
 - no custom domain is attached and Hostinger DNS remains unchanged,
-- the next scheduled content pass is Phase 55H: recheck Toronto application `24 254930` after the July 29-31 Council window for adoption, enacted by-laws, and later permit evidence,
+- the remaining Phase 55H action is the post-meeting recheck of Toronto application `24 254930` for Council disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit evidence,
 - before that window, use a private candidate only when it closes a named evidence gap; Project Baccara's remaining monitor begins with the executed MCP, condition compliance, service, construction, testing, occupancy, and operation,
 - GitHub synchronization, public access, and custom-domain attachment remain deferred pending explicit approval.
 
@@ -511,11 +513,11 @@ v0.2 is successful when:
 - release QA is repeatable,
 - no automated process publishes claims without review.
 
-All local success criteria pass in the current candidate. Phase 55G advanced the Baccara authority trail and refreshed the exact owner-only preview without changing the package-freeze or public-launch boundaries.
+All local success criteria pass in the current candidate. Phase 55H now has a verified pre-decision checkpoint and owner-only deployment without changing the package-freeze or public-launch boundaries.
 
 ## Immediate Next Step
 
-Begin Phase 55H after the July 29-31, 2026 Toronto Council meeting window. Recheck application `24 254930` for a City Council action, enacted by-law, and any later permit record. If no named official stage has advanced, record the dated negative result and stop rather than manufacture a signal.
+Complete Phase 55H immediately after the July 29-31, 2026 Toronto Council meeting window. Recheck application `24 254930` for the Council disposition and vote, amended recommendations, bill status, enacted Official Plan and Zoning By-law numbers, condition compliance, and any later permit record. If no named official stage has advanced, record the dated negative result and stop rather than manufacture a signal.
 
 Before that window, use one bounded record from the remaining 90 private candidates only when it closes a named evidence gap; do not expand from source volume alone. Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors.
 

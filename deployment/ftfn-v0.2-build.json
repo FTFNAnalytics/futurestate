@@ -12,8 +12,8 @@
     "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
     "access": "owner-only-custom-policy",
     "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
-    "current_source_commit": "ddeea6ab3213d7e9367c6564a9b8d31395ba7675",
-    "current_version_number": 5,
+    "current_source_commit": "f2fe94ae95a2f702104b995c2a0a01776c00f3aa",
+    "current_version_number": 6,
     "custom_domain_attached": false,
     "post_deploy_qa": "passed"
   },
@@ -97,7 +97,7 @@
       "390x844"
     ],
     "browser_routes_checked": 10,
-    "preview_qa": "passed-owner-only-version-5-deployment-and-access"
+    "preview_qa": "passed-owner-only-version-6-deployment-and-access"
   },
   "required_output_files": [
     "dist/index.html",
@@ -200,5 +200,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the local Phase 55H Toronto pre-decision authority repair while the owner-only preview still serves Sites version 5 from commit ddeea6ab3213d7e9367c6564a9b8d31395ba7675. The package now records the July 29-31 Council gate, bill-withholding conditions, and bounded negative permit searches; the signal remains In Review. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, or package freeze."
+  "notes": "This manifest records the locally verified and owner-only deployed Phase 55H Toronto pre-decision authority repair. Sites version 6 serves commit f2fe94ae95a2f702104b995c2a0a01776c00f3aa with the July 29-31 Council gate, bill-withholding conditions, and bounded negative permit searches; the signal remains In Review. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, or package freeze."
 }

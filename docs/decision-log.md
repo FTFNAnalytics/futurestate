@@ -2135,3 +2135,28 @@ Implemented:
 Boundary:
 
 The official County vote is not the fully executed MCP or proof that conditions were satisfied. The active final air permit is not construction, performance testing, operating compliance, occupancy, or measured emissions performance. Public access, package freeze, custom-domain attachment, Hostinger DNS changes, and public launch remain separate decisions. The next scheduled content gate is the Toronto application `24 254930` recheck after the July 29-31 Council window.
+
+## 2026-07-23: Phase 55H Establishes A Toronto Pre-Decision Gate Without Claiming The Outcome
+
+Decision:
+
+FTFN will advance Phase 55H before the scheduled Council meeting only where the current official record adds a concrete authority boundary. It will repair the existing Toronto signal with the dated meeting and bill-withholding conditions, record all-address permit searches as bounded negative queries, and leave the post-meeting outcome open.
+
+Rationale:
+
+Toronto's official item history says City Council will consider `2026.SC33.9` on July 29, 30 and 31, 2026. Recommendation 8 identifies a revised wind study, land-exchange agreement and completion, and laneway closure and acquisition as conditions before the amendment bills can be enacted. The official Building Permit portal returned `Application Not Found` markers for all eight project addresses, but portal limits prevent those markers from proving that no application exists.
+
+Implemented:
+
+- refreshed the item-history and Building Permit source records,
+- repaired the existing Toronto community-council signal and kept it `In Review`,
+- updated the Ontario dossier, `gap-004`, `gap-005`, and private queue items `uq-047` and `uq-054`,
+- added the tenth public update entry,
+- preserved 130 sources, 36 signals, 16 Published, 20 In Review, and 229 generated pages,
+- passed candidate validation, content validation, source health, Astro diagnostics, production build, and release assertions,
+- committed the exact source as `f2fe94ae95a2f702104b995c2a0a01776c00f3aa`,
+- deployed that commit as owner-only Sites version 6 with one allowed owner, no groups, no public access, and no DNS change.
+
+Boundary:
+
+A scheduled Council meeting is not a Council disposition. Council adoption is not amendment enactment when bills remain subject to conditions. An `Application Not Found` address marker is not proof that no building permit exists. The same item must be rechecked after July 31 for the disposition, vote, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit records.

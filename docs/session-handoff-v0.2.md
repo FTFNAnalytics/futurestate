@@ -7,7 +7,7 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 55G Project Baccara authority conversion
+Latest completed work: Phase 55H Toronto pre-decision authority gate
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
@@ -15,12 +15,12 @@ Package: 0.2.0-dev
 Build: 229 pages
 Content: 130 sources, 36 signals, 17 topics
 Publication: 16 Published, 20 In Review, 0 Draft Sample
-Trust/data: 9 update entries, 3 versioned JSON exports
+Trust/data: 10 update entries, 3 versioned JSON exports
 Private authority layer: 150 candidates, 15 profiles, 58 Candidate, 1 Active Source Record, 1 Rejected, 90 Needs Triage
-Deployment: owner-only Sites version 5 at https://ftfn-analytics.jbumstead.chatgpt.site
+Deployment: owner-only Sites version 6 at https://ftfn-analytics.jbumstead.chatgpt.site
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 0 Review Due, 0 Watch Soon, 130 Current; 14 Strong coverage lanes
-Next phase: Phase 55H Toronto authority recheck after July 29-31; public-domain work remains separate
+Next phase: complete Phase 55H after the July 29-31 Council meeting; public-domain work remains separate
 ```
 
 ## Read First
@@ -41,7 +41,7 @@ Use this short order:
 The new session should verify rather than assume:
 
 1. Run `git status --short --branch`.
-2. Confirm `git log --oneline --decorate -18` still has `35f26f4` in the current history and inspect the newer Phase 55A-55G commits.
+2. Confirm `git log --oneline --decorate -20` still has `35f26f4` in the current history and inspect the newer Phase 55A-55H commits.
 3. Compare the current branch with `origin/main` and confirm which remote branches exist.
 4. Read the v0.2 manifest and confirm package/count expectations still match the repository.
 5. Review any current documentation or content diff before committing it.
@@ -62,6 +62,7 @@ The approved preview sequence is complete:
 7. Recorded the provider, URL, checkpoint, packaging boundary, and QA result in the Phase 55D work package.
 8. Stopped before package freeze, public access, custom-domain attachment, or Hostinger DNS changes.
 9. Refreshed the owner-only deployment to Sites version 5 from exact commit `ddeea6ab3213d7e9367c6564a9b8d31395ba7675` after the Phase 55G authority conversion.
+10. Refreshed the owner-only deployment to Sites version 6 from exact commit `f2fe94ae95a2f702104b995c2a0a01776c00f3aa` after the Phase 55H pre-decision authority repair.
 
 ## Required Stop Points
 
@@ -115,9 +116,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 55G. The current candidate should be 0.2.0-dev on codex/phase51-content at or after commit ddeea6ab3213d7e9367c6564a9b8d31395ba7675, with 130 sources, 36 signals, 16 Published signals, 20 In Review signals, nine public updates, three JSON exports, and 229 pages. Sites version 5 serves that exact commit at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site; the branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
+The latest completed work is the Phase 55H pre-decision authority gate. The current candidate should be 0.2.0-dev on codex/phase51-content at or after commit f2fe94ae95a2f702104b995c2a0a01776c00f3aa, with 130 sources, 36 signals, 16 Published signals, 20 In Review signals, ten public updates, three JSON exports, and 229 pages. Sites version 6 serves that exact commit at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site; the branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
 
 Phase 52B is complete, Phase 55A reviewed 15 more records, and Phase 55E reviewed another 15: the local-only private registry contains exactly 150 candidates across 15 profiles, with 58 at Candidate, one Active Source Record, one Rejected, and 90 still needing triage. Confirm it remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55G found an official 4-1 County action and active final air permit for Project Baccara but retained the executed-MCP, condition-compliance, service, construction, testing, occupancy, and operation gates. The next content step is Phase 55H: recheck Toronto application 24 254930 after the 29-31 July 2026 Council window for Council action, enacted by-laws, and later permit records. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55H now records Toronto application 24 254930's July 29-31 Council date, the wind-study, land-exchange, and laneway conditions that precede bill enactment, and bounded negative Building Permit searches across all eight project addresses. Complete the same-item recheck after the Council meeting for the disposition, vote, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit records. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```
