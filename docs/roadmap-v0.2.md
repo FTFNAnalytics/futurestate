@@ -391,10 +391,10 @@ Current stop point:
 - Phase 55H now records Toronto's dated July 29-31 Council gate, the bill-withholding conditions, and bounded negative permit searches across all eight project addresses; owner-only Sites version 6 serves the exact checkpoint,
 - Phase 55I completed a first-pass triage of all 150 private candidates, added ten public monitoring rails plus 12 dated source records, added nine bounded `In Review` signals without changing Published membership, and deployed the exact 260-page / 152-source checkpoint as owner-only Sites version 7,
 - Phase 55J applied the existing publication gate to those nine additions, added OMB M-26-04 to preserve the current federal AI policy stack, and promoted all nine while retaining their implementation, adoption, outcome, facility, and site-service boundaries,
-- the branch remains unpushed to public GitHub; the exact Phase 55I checkpoint exists in the private Sites source repository,
+- the branch remains unpushed to public GitHub; the exact Phase 55J checkpoint is deployed as owner-only Sites version 8 from commit `03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37`,
 - no custom domain is attached and Hostinger DNS remains unchanged,
 - the remaining Phase 55H action is the post-meeting recheck of Toronto application `24 254930` for Council disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit evidence,
-- before that window, refresh the exact Phase 55J checkpoint on the owner-only Site and keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors,
+- before that window, preserve the owner-only Phase 55J checkpoint and keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors,
 - GitHub synchronization, public access, and custom-domain attachment remain deferred pending explicit approval.
 
 Hosting decision rule:

@@ -401,7 +401,7 @@ Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 owner-only hosted candidate: package 0.2.0-dev, 153 public sources, 150 first-pass-triaged private candidates, 45 signals, 17 topics, 12 updates, 261 pages, 25 Published signals, and 3 public JSON endpoints. Verify the exact current Sites version and source commit from the Phase 55J deployment receipt at https://ftfn-analytics.jbumstead.chatgpt.site. Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, zero Watch Soon, and 153 Current records.
+v0.2 owner-only hosted candidate: package 0.2.0-dev, 153 public sources, 150 first-pass-triaged private candidates, 45 signals, 17 topics, 12 updates, 261 pages, 25 Published signals, and 3 public JSON endpoints. Sites version 8 serves exact source commit 03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37 at https://ftfn-analytics.jbumstead.chatgpt.site. Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, zero Watch Soon, and 153 Current records.
 
 Next decision gate:
 Preserve the owner-only preview. Phase 55J promoted all nine Phase 55I additions through the bounded publication gate; complete Phase 55H after the 29-31 July 2026 Council window. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.

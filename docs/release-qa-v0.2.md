@@ -2,7 +2,7 @@
 
 Date: 2026-07-23
 
-Status: Phase 55J local release gate passed; owner-only deployment refresh pending.
+Status: Phase 55J release gate and owner-only Sites version 8 deployment passed.
 
 ## Artifact Under Review
 
@@ -144,10 +144,20 @@ The Phase 55I pass did not repeat the Phase 54 browser matrix because no compone
 
 Phase 55J changes publication metadata and copy but not components, styles, layouts, navigation, or client-side behavior. It adds one source detail route, changes all nine Phase 55I signal details to `index, follow`, adds those routes to the sitemap and Published export, and adds one public update entry.
 
-The 261-page artifact passes the complete candidate, content, source-health, Astro, production-build, and release-assertion gate. The exact owner-only deployment receipt is added after the private Sites refresh.
+The 261-page artifact passes the complete candidate, content, source-health, Astro, production-build, and release-assertion gate. The exact owner-only deployment receipt is recorded below.
+
+Hosted checkpoint:
+
+- commit: `03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37`,
+- Sites version: 8,
+- URL: `https://ftfn-analytics.jbumstead.chatgpt.site`,
+- access: custom owner-only policy with one allowed user and no groups,
+- deployment status: succeeded,
+- application contract: 261 pages, 153 sources, 45 signals, 25 Published, 20 In Review, and 12 updates,
+- custom-domain state: `ftfn.io` and `www.ftfn.io` remain pending validation and do not route to the Site.
 
 ## Verdict
 
-The Phase 55J publication expansion passes locally. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, or public exports.
+The Phase 55J publication expansion passes locally and is deployed successfully to the owner-only Site. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, public exports, or deployment.
 
-The owner-only preview is not approved for public access or public launch. The Phase 55J deployment refresh and the post-meeting Council and by-law recheck are the remaining execution gates.
+The owner-only preview is current at Sites version 8. It is not approved for public access or public launch. The post-meeting Council and by-law recheck is the next dated authority gate.

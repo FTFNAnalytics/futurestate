@@ -33,7 +33,7 @@ Phase 55H begins with a pre-decision authority gate because Toronto's July 29-31
 
 Phase 55I completes the first-pass review of the remaining 90 private candidates. Ten candidates become public monitoring rails, 12 dated official records support nine new `In Review` signals, and the Phoenix and Toronto local-system evidence trails gain workforce, water, electricity, and infrastructure-planning context. The package reaches 260 pages, 152 sources, 45 signals, and 11 updates while preserving 16 Published signals. Sites version 7 serves the exact Phase 55I commit under the unchanged owner-only policy; the public-launch, DNS, package-freeze, and publication-promotion gates remain closed.
 
-Phase 55J applies the complete publication gate to the nine Phase 55I records. All nine pass as bounded, independently useful records; OMB M-26-04 is added first so the federal AI signal reflects the current three-memorandum stack. The package now contains 261 pages, 153 sources, 45 signals, 25 Published signals, 20 In Review signals, and 12 updates. The owner-only Sites refresh is the only remaining Phase 55J execution step.
+Phase 55J applies the complete publication gate to the nine Phase 55I records. All nine pass as bounded, independently useful records; OMB M-26-04 is added first so the federal AI signal reflects the current three-memorandum stack. The package now contains 261 pages, 153 sources, 45 signals, 25 Published signals, 20 In Review signals, and 12 updates. Sites version 8 serves the exact Phase 55J source under the unchanged owner-only policy.
 
 ## Build Inventory
 
@@ -136,7 +136,7 @@ Verified results:
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
 
-The local and hosted Phase 55I evidence is in `docs/release-qa-v0.2.md`; the initial hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview is current at Sites version 7 from exact source commit `8ce2feba82a3ade2266e2d74788c003bca28a26f`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The local and hosted Phase 55J evidence is in `docs/release-qa-v0.2.md` and `docs/work-packages/phase-55j-publication-readiness-review.md`; the initial hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview is current at Sites version 8 from exact source commit `03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 

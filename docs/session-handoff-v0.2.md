@@ -17,7 +17,7 @@ Content: 153 sources, 45 signals, 17 topics
 Publication: 25 Published, 20 In Review, 0 Draft Sample
 Trust/data: 12 update entries, 3 versioned JSON exports
 Private authority layer: 150 candidates, 15 profiles, 132 Candidate, 11 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 7 at https://ftfn-analytics.jbumstead.chatgpt.site
+Deployment: owner-only Sites version 8 at https://ftfn-analytics.jbumstead.chatgpt.site
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 0 Review Due, 0 Watch Soon, 153 Current; 14 Strong coverage lanes
 Next phase: dated Phase 55H Council recheck after July 31; public-domain work remains separate
@@ -64,7 +64,7 @@ The approved preview sequence is complete:
 9. Refreshed the owner-only deployment to Sites version 5 from exact commit `ddeea6ab3213d7e9367c6564a9b8d31395ba7675` after the Phase 55G authority conversion.
 10. Refreshed the owner-only deployment to Sites version 6 from exact commit `f2fe94ae95a2f702104b995c2a0a01776c00f3aa` after the Phase 55H pre-decision authority repair.
 11. Completed the Phase 55I content and candidate pass and refreshed the exact source commit `8ce2feba82a3ade2266e2d74788c003bca28a26f` as owner-only Sites version 7.
-12. Completed the Phase 55J publication gate locally, added OMB M-26-04, and promoted all nine reviewed signals; the exact owner-only deployment receipt is recorded after the Sites refresh.
+12. Completed the Phase 55J publication gate, added OMB M-26-04, promoted all nine reviewed signals, and refreshed exact source commit `03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37` as owner-only Sites version 8.
 
 ## Required Stop Points
 
@@ -118,7 +118,7 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is the Phase 55J publication-readiness review. The current candidate should be 0.2.0-dev on codex/phase51-content with 153 sources, 45 signals, 25 Published signals, 20 In Review signals, 12 public updates, three JSON exports, and 261 pages. The owner-only URL remains https://ftfn-analytics.jbumstead.chatgpt.site; verify the exact current Sites version and source commit from the Phase 55J deployment receipt. The branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
+The latest completed work is the Phase 55J publication-readiness review. The current candidate should be 0.2.0-dev on codex/phase51-content with 153 sources, 45 signals, 25 Published signals, 20 In Review signals, 12 public updates, three JSON exports, and 261 pages. Sites version 8 serves exact source commit 03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37 at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site. The branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
 
 Phase 55I completed the first-pass review of all 150 local-only private candidates across 15 profiles: 132 Candidate, 11 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 

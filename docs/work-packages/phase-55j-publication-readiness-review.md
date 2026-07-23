@@ -1,7 +1,7 @@
 # Phase 55J Publication-Readiness Review
 
 Date: 2026-07-23
-Status: complete locally; owner-only deployment refresh pending
+Status: complete; locally validated and deployed as owner-only Sites version 8
 
 ## Goal
 
@@ -63,6 +63,27 @@ The resulting release contract is:
 - and 261 generated HTML pages.
 
 This is a publication-state expansion, not a public launch. The records become part of the static Published export and sitemap while the Sites access policy remains owner-only.
+
+## Validation Result
+
+The exact Phase 55J source state passed:
+
+- private-candidate validation at 150 records with the existing first-pass status distribution,
+- content validation at 153 sources, 45 signals, 17 topics, and 12 updates,
+- source health at 88 manual-review and 65 probe-ready records,
+- Astro diagnostics at zero errors, warnings, or hints,
+- production build at 261 generated pages,
+- release assertions for 25 Published signals, 51 current support sources, indexing, sitemap, exports, required outputs, and private-registry exclusion.
+
+## Owner-Only Deployment Result
+
+The exact validated Phase 55J source state was committed as `03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37`, pushed only to the private Sites source repository, saved as Sites version 8, and deployed successfully to:
+
+```text
+https://ftfn-analytics.jbumstead.chatgpt.site
+```
+
+The access policy remains custom with one allowed owner and no groups. No public access, custom-domain attachment, DNS change, package freeze, or public GitHub synchronization occurred.
 
 ## Validation Plan
 
