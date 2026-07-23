@@ -147,6 +147,12 @@ const activeNames = new Set(activeSources.map((source) => normalized(source.name
 const activeUrls = new Set(activeSources.map((source) => normalized(source.url)));
 
 for (const candidate of candidates) {
+  if (candidate.candidate_status === "Active Source Record") {
+    if (!activeNames.has(normalized(candidate.name)) && !activeUrls.has(normalized(candidate.url))) {
+      errors.push(`${candidate.candidate_id} is marked Active Source Record but has no matching active source name or URL`);
+    }
+    continue;
+  }
   if (activeNames.has(normalized(candidate.name))) {
     errors.push(`${candidate.candidate_id} duplicates active source name ${candidate.name}`);
   }

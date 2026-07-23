@@ -2060,3 +2060,29 @@ Implemented:
 Boundary:
 
 The provider URL is a private release checkpoint, not a public launch. No `0.2.0` freeze, public access, custom-domain attachment, Hostinger DNS edit, nameserver change, analytics setup, or Google Workspace mail-record change was authorized.
+
+## 2026-07-23: Phase 55E Expands Dated Content Without Expanding Publication
+
+Decision:
+
+FTFN will use the available content window to clear the aging source queue, review another bounded private-candidate batch, and convert broad records into specific dated signals. All new or changed signals will remain `In Review` until a separate publication-readiness decision.
+
+Rationale:
+
+The strongest next authority gain is not another infrastructure feature or a larger source count by itself. Several existing records still described broad program pages rather than dated developments, while 17 source rails were approaching their review cadence. Rechecking those rails and selecting primary-source events creates more useful reader-facing analysis without weakening the publication boundary. The Joby record can leave `Draft Sample` because it now has a specific company milestone and FAA context, but it remains a company claim and does not qualify for publication.
+
+Implemented:
+
+- rechecked all 17 Watch Soon sources and cleared the freshness queue,
+- corrected canonical active-source URLs for Joby, FAA AAM, CHIPS awards, and SHAPE PHX,
+- reviewed 15 High-priority private candidates and promoted EIA Form 861 through the explicit `Active Source Record` status,
+- changed candidate validation so only an explicitly active candidate may match a public source,
+- added eight dated source records,
+- repaired seven existing signals and added one DOE storage-manufacturing prize signal,
+- moved the Joby company-claim record from `Draft Sample` to `In Review`,
+- reached 128 sources, 36 signals, 27 In Review records, zero Draft Samples, and 227 pages,
+- preserved nine Published signals and the owner-only hosting posture.
+
+Boundary:
+
+The IEA aggregate is not a local power forecast; NHTSA incident data is not a normalized manufacturer ranking; funding agreements, awards, and prizes are not deployment results; Artemis hardware work is not launch readiness; a Joby announcement is not FAA type certification; and building permits are not delivered housing. No public access, package freeze, custom-domain attachment, Hostinger DNS change, or public launch was authorized.

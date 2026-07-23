@@ -1109,12 +1109,32 @@ Do not use it for:
 - Treating owner-only hosting as public launch approval.
 - Authorizing Hostinger DNS changes or a package-version freeze.
 
+### Phase 55E Bounded Content Expansion
+
+Purpose:
+
+- Record the 17-source freshness recheck, 15-record private triage batch, eight dated signal updates, and current build counts.
+- Preserve the evidence limits that keep every new or changed record in `In Review`.
+- Separate content expansion and an owner-only preview refresh from public access, DNS, or package freeze.
+
+Update when:
+
+- a factual correction is required in the Phase 55E result,
+- Phase 55F changes the publication status of one of the eight reviewed records,
+- the owner-only Sites version is refreshed or its hosted verification result changes.
+
+Do not use it for:
+
+- Treating an award, prize, hardware milestone, permit, or company claim as a deployment outcome.
+- Authorizing a Published promotion without a separate publication review.
+- Authorizing public access, custom-domain attachment, or Hostinger DNS changes.
+
 ### v0.2 Build Manifest
 
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 218-page build, nine Published signals, 120 sources, seven updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 227-page build, nine Published signals, 128 sources, seven updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 

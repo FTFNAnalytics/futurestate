@@ -116,6 +116,7 @@ It is a stack of dependencies.
 - [Phase 55B Work Package](docs/work-packages/phase-55b-migration-and-facility-evidence.md) - federal post-quantum migration requirements, Project Baccara permit gates, refreshed monitoring rails, and preserved non-public boundary.
 - [Phase 55C Work Package](docs/work-packages/phase-55c-conditional-permit-follow-through.md) - Project Baccara county conditions, proposed air permit, corroborated vote, and preserved downstream gates.
 - [Phase 55D Work Package](docs/work-packages/phase-55d-owner-only-sites-preview.md) - owner-only Sites deployment, hosted route and trust-output verification, and Hostinger DNS stop point.
+- [Phase 55E Work Package](docs/work-packages/phase-55e-bounded-content-expansion.md) - 17 source rechecks, 15 private candidate reviews, eight bounded signal updates, and the owner-only preview refresh.
 
 ## App Scaffold
 
@@ -134,7 +135,7 @@ npm run build
 npm run verify:release
 ```
 
-The current `0.2.0-dev` build generates 218 static pages and three versioned JSON data endpoints. Nine signals are Published, 25 remain In Review, and one remains a Draft Sample.
+The current `0.2.0-dev` build generates 227 static pages and three versioned JSON data endpoints. Nine signals are Published and 27 remain In Review; no Draft Sample remains.
 
 The homepage now uses real seed records for signals, topics, sources, local systems, and briefings while preserving the 42/59 framing and dependency-stack thesis.
 
@@ -246,7 +247,7 @@ Phase 50 completes the first bounded source-item content expansion with six `In 
 
 Phase 52A completes the pre-Supabase public contract. It adds a validated public update/correction log, versioned static JSON exports for sources, topics, and Published signals, and an explicit private-field allowlist. Supabase can now begin as a private Auth/RLS-backed authority-loop backend while Git remains the public publishing source of truth.
 
-Phase 52B finishes the deferred authority-layer work without adding public content. It creates a Git-ignored 150-record candidate registry across 15 evidence profiles, completes first-pass triage for 30 candidates, adds validation and build leak checks, reorganizes Source Monitor around review state and next action, and adds Strong, Developing, and Weak Source Coverage summaries. Phase 55A preserves that checkpoint locally, reviews 15 additional candidates, rejects one retired rail, and refreshes three active source records. Later Phase 55B-55C research expands the active library separately; the private registry still has no automatic promotion path and the branch remains unpushed.
+Phase 52B finishes the deferred authority-layer work without adding public content. It creates a Git-ignored 150-record candidate registry across 15 evidence profiles, completes first-pass triage for 30 candidates, adds validation and build leak checks, reorganizes Source Monitor around review state and next action, and adds Strong, Developing, and Weak Source Coverage summaries. Phase 55A reviews 15 additional candidates and rejects one retired rail. Phase 55E reviews another 15, promotes EIA Form 861 through the explicit `Active Source Record` gate, and leaves the private layer at 58 Candidate, 90 Needs Triage, one Active Source Record, and one Rejected. There is still no automatic publication path.
 
 Phase 51A deepens both local dossiers with three named records: SRP's 2025 ISP Actions Progress Report, Phoenix Water Services' April 2026 council update, and Toronto's June 2026 decision report for application 24 254930. The batch adds three `In Review` signals, strengthens four evidence gaps, and reaches 105 sources, 25 signals, and 193 pages without treating system planning as site service or a staff recommendation as final approval.
 

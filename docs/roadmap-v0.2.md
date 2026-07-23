@@ -1,6 +1,6 @@
 # FTFN v0.2 Roadmap
 
-Date: 2026-07-22
+Date: 2026-07-23
 
 v0.2 is the first authority-loop build: a release that proves FTFN can maintain a current, source-led analytical resource through repeatable human review.
 
@@ -41,21 +41,21 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after the Phase 55C conditional-permit follow-through:
+Current `0.2.0-dev` state after the Phase 55E bounded content expansion:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 218 |
-| Active sources | 120 |
-| Signals | 35 |
+| Static pages | 227 |
+| Active sources | 128 |
+| Signals | 36 |
 | Published signals | 9 |
-| In Review signals | 25 |
-| Draft Sample signals | 1 |
+| In Review signals | 27 |
+| Draft Sample signals | 0 |
 | Named local inputs selected in Phases 50-55C | 18 |
 | Private source candidates | 150 local-only records |
-| Candidate review | 45 reviewed: 44 Candidate, 1 Rejected; 105 remaining |
+| Candidate review | 60 reviewed: 58 Candidate, 1 Active Source Record, 1 Rejected; 90 remaining |
 | Source Coverage | 14 Strong; 0 Developing; 0 Weak |
-| Source Monitor | 0 Review Due; 17 Watch Soon; 103 Current |
+| Source Monitor | 0 Review Due; 0 Watch Soon; 128 Current |
 
 Existing operating assets:
 
@@ -512,4 +512,8 @@ All nine local success criteria pass in the Phase 54 candidate. Preview and publ
 
 ## Immediate Next Step
 
-Choose whether to keep the Phase 55D preview owner-only or begin the separately approved public-domain sequence. If content work continues first, use only bounded downstream evidence: Project Baccara's executed MCP or final permits, Toronto Council/by-law follow-through after July 29-31, the first named public-agency PQC plan or procurement rule, or a gap-led item among the 17 Watch Soon records. Keep public access, package freeze, Hostinger DNS, and public launch behind separate explicit approval. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Complete Phase 55F as an editorial consolidation pass on the eight Phase 55E records. Recheck whether any now meets the publication policy; promote only records with a specific primary-source event, fully preserved evidence limits, and a useful reader-facing conclusion. The default outcome may be to keep all eight `In Review`.
+
+After that review, choose the next content lane from evidence gaps rather than volume: Project Baccara's executed MCP or final permits, Toronto Council/by-law follow-through after July 29-31, the first named public-agency PQC implementation plan or procurement rule, or one bounded record from the remaining 90 private candidates.
+
+Keep the Sites preview owner-only. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

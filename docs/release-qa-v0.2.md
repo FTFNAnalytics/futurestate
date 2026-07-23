@@ -1,19 +1,19 @@
 # FTFN v0.2 Release QA
 
-Date: 2026-07-22
+Date: 2026-07-23
 
-Status: local release gate passed; preview deployment deferred pending explicit approval.
+Status: Phase 55E local release gate passed; owner-only preview refresh pending.
 
 ## Artifact Under Review
 
 - Build manifest: `deployment/ftfn-v0.2-build.json`
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
-- Expected build: 210 HTML pages
-- Content baseline: 114 sources, 33 signals, 17 topics, 7 update entries
-- Publication baseline: 9 Published, 23 In Review, 1 Draft Sample
+- Expected build: 227 HTML pages
+- Content baseline: 128 sources, 36 signals, 17 topics, 7 update entries
+- Publication baseline: 9 Published, 27 In Review, 0 Draft Sample
 
-The package remains `0.2.0-dev` because no preview deployment or release decision has been approved. The Phase 54 result is a locally verified v0.2 candidate, not a deployment record.
+The package remains `0.2.0-dev`. The Phase 55D owner-only deployment is a private checkpoint; Phase 55E changes remain non-public and require a private preview refresh before hosted QA is current.
 
 ## Automated Gate
 
@@ -31,10 +31,11 @@ Result:
 
 | Check | Result |
 | --- | --- |
-| Content references | Passed: 114 sources, 33 signals, 17 topics, 10 organizations, 5 technologies, 2 local systems, 1 briefing, 10 evidence gaps, 2 dependency maps, 7 updates |
-| Source endpoint metadata | Passed: 56 Manual review, 58 Probe ready |
+| Private candidates | Passed: 150 records; 58 Candidate, 90 Needs Triage, 1 Active Source Record, 1 Rejected |
+| Content references | Passed: 128 sources, 36 signals, 17 topics, 10 organizations, 5 technologies, 2 local systems, 1 briefing, 10 evidence gaps, 2 dependency maps, 7 updates |
+| Source endpoint metadata | Passed: 67 Manual review, 61 Probe ready |
 | Astro diagnostics | Passed: 0 errors, 0 warnings, 0 hints |
-| Static build | Passed: 210 HTML pages |
+| Static build | Passed: 227 HTML pages |
 | Release assertions | Passed: required outputs, update log, exports, Published-source dates, robots, sitemap, canonical, and indexing boundaries |
 
 The release assertion is preserved as `npm run verify:release`. It reads the v0.2 manifest and fails if the checked build no longer matches the release contract.
@@ -105,11 +106,11 @@ The built artifact passed these checks:
 - the sitemap contains exactly the nine Published signal detail URLs,
 - non-published signal detail URLs are absent from the sitemap,
 - all nine Published details use `index, follow`,
-- representative In Review, Draft Sample, and briefing details use `noindex, follow`,
+- representative In Review, company-claim In Review, and briefing details use `noindex, follow`,
 - built canonical URLs use `https://ftfn.io`,
 - no built sitemap URL uses localhost,
 - `/data/signals.json` contains exactly nine Published records,
-- `/data/sources.json` contains 114 active public source records and excludes private notes,
+- `/data/sources.json` contains 128 active public source records and excludes private notes,
 - `/data/topics.json` contains 17 topic records,
 - all three exports remain on schema version `1.0`,
 - `/updates/` contains all seven update records.
@@ -122,19 +123,19 @@ This pass includes rendered DOM, content-structure, alternative-text, link, head
 
 No release-blocking accessibility issue was found in the checked scope.
 
-## Preview Decision
+## Phase 55E Content-Only QA Scope
 
-Preview deployment was not authorized and was not created. Post-deploy route, asset, caching, and platform-header checks are therefore deferred.
+Phase 55E changes source metadata and editorial content without changing components, styles, layouts, navigation, routes, or client-side behavior. The Phase 54 desktop/mobile browser matrix and Phase 55D hosted route checks therefore remain the UI baseline. The new 227-page artifact must still pass the automated release assertion and owner-only hosted smoke checks before the preview record is current.
 
-The next external action is a deliberate approval decision:
+The approved next external action is limited to:
 
-1. approve a private preview deployment,
-2. deploy the exact candidate,
-3. repeat the launch-critical route and metadata checks on the preview URL,
-4. decide separately whether to finalize version `0.2.0`, attach `ftfn.io`, or launch publicly.
+1. commit the exact validated Phase 55E source state,
+2. deploy that version to the existing owner-only Sites project,
+3. repeat core route, source-export, robots, sitemap, canonical, and indexing checks,
+4. keep public access, `0.2.0` freeze, `ftfn.io`, and DNS deferred.
 
 ## Verdict
 
-Phase 54 passes locally. No release blocker remains in content validation, source currency, Astro diagnostics, static generation, core desktop/mobile journeys, the tested accessibility surface, metadata, indexing, update-log rendering, or public exports.
+Phase 55E passes locally. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, or public exports.
 
-The candidate is ready for a user-approved private preview. It is not yet preview-deployed or approved for public launch.
+The candidate is ready to refresh the already approved owner-only preview. It is not approved for public access or public launch.

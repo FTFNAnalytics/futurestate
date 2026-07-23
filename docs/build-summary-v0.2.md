@@ -1,6 +1,6 @@
 # FTFN v0.2 Build Summary
 
-Date: 2026-07-22
+Date: 2026-07-23
 
 ## Executive State
 
@@ -23,18 +23,20 @@ Phase 55C preserves the completed release package locally and follows Project Ba
 
 Phase 55D adds a minimal static hosting adapter, deploys the exact 218-page package to an owner-only Sites URL, and passes hosted checks on core reader routes, canonical and indexing metadata, robots, sitemap, and the 120-record source export. It does not authorize public access, `ftfn.io` attachment, or Hostinger DNS changes.
 
+Phase 55E expands the local candidate to 227 pages, 128 public sources, and 36 signals. It rechecks all 17 aging source rails, reviews 15 additional private candidates, repairs seven broad records into dated evidence updates, adds one bounded storage-funding signal, and keeps the publication count at nine. The owner-only hosted preview is refreshed only after the exact validated source state is committed.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 218 | +36 |
-| Sources | 102 | 120 | +18 |
-| Signals | 18 | 35 | +17 |
+| Generated HTML pages | 182 | 227 | +45 |
+| Sources | 102 | 128 | +26 |
+| Signals | 18 | 36 | +18 |
 | Published signals | 3 | 9 | +6 |
-| In Review signals | 14 | 25 | +11 |
-| Draft Sample signals | 1 | 1 | 0 |
+| In Review signals | 14 | 27 | +13 |
+| Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
 | Public update entries | 0 | 7 | +7 |
 | Versioned JSON exports | 0 | 3 | +3 |
@@ -65,15 +67,15 @@ The public application includes:
 
 The editorial and authority layer includes:
 
-- 120 structured source records with authority, freshness, access, monitoring, and review metadata,
-- 35 bounded signal records with explicit claim and evidence limits,
+- 128 structured source records with authority, freshness, access, monitoring, and review metadata,
+- 36 bounded signal records with explicit claim and evidence limits,
 - nine Published signals backed by 12 sources checked on 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
 - a public seven-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
-- 45 reviewed private candidates: 44 retained as `Candidate`, one rejected, and 105 left for later gap-led review,
+- 60 reviewed private candidates: 58 retained as `Candidate`, one promoted to `Active Source Record`, one rejected, and 90 left for later gap-led review,
 - improved Source Monitor review-state grouping and per-source next actions,
 - Strong, Developing, and Weak Source Coverage summaries with lane-specific next actions; after the Phase 55A recheck, all 14 public coverage lanes classify as Strong.
 
@@ -98,17 +100,19 @@ Phase 55B added three official records and two bounded `In Review` signals: the 
 
 Phase 55C found no qualifying public-agency PQC migration plan or PQC-specific FAR proposal, so that lane remains a monitor. It instead added Maricopa County's official `MCP250007` agenda and conditions, an official MCAQD notice proposing Permit `P0013417`, and contemporaneous KJZZ vote corroboration. The existing Project Baccara signal was repaired without increasing the signal or Published counts. The current result is 218 pages, 120 public sources, and 35 signals. Source Monitor reports zero Review Due, 17 Watch Soon, and 103 Current records; Source Coverage remains 14 Strong, zero Developing, and zero Weak lanes.
 
+Phase 55E rechecked all 17 Watch Soon records, corrected four active-source canonical URLs, reviewed 15 additional private candidates, added eight dated source records, repaired seven existing signals, and added one new DOE storage prize signal. The local result is 227 pages, 128 public sources, and 36 signals. Source Monitor now reports zero Review Due, zero Watch Soon, and 128 Current records; Source Coverage remains 14 Strong, zero Developing, and zero Weak lanes.
+
 Verified results:
 
-- 218 generated HTML pages,
-- exact exports for 120 sources, 17 topics, and nine Published signals,
+- 227 generated HTML pages,
+- exact exports for 128 sources, 17 topics, and nine Published signals,
 - all nine Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
 - correct canonical, robots, and publication-state indexing boundaries,
 - ten core journeys checked at `1440x900` and `390x844`,
 - compact header brand and navigation targets repaired to a 44-pixel minimum,
 - no checked layout, semantic, indexing, or browser-console release blocker.
-- exactly 150 unique private candidates, 10 in each of 15 profiles, with no exact name or URL collision against the 120 active sources,
+- exactly 150 unique private candidates, 10 in each of 15 profiles, with active-source duplication permitted only for the one record explicitly marked `Active Source Record`,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
 
@@ -124,7 +128,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Twenty-five signals remain `In Review`; one company-claim example remains a `Draft Sample`.
+- Twenty-seven signals remain `In Review`; the former Joby Draft Sample is now a bounded company-claim record in review.
 - The briefing, dependency maps, and local-system profiles remain prelaunch or research material.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - The Project Baccara record stops at a reported conditional county vote and proposed air permit; final permits, condition compliance, construction, occupancy, and operation remain unverified.
@@ -157,4 +161,4 @@ npm.cmd run build
 npm.cmd run verify:release
 ```
 
-Expected output: 218 HTML pages and a passing v0.2 release assertion.
+Expected output: 227 HTML pages and a passing v0.2 release assertion.

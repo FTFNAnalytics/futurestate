@@ -1,26 +1,26 @@
 # FTFN v0.2 Session Handoff Plan
 
-Date: 2026-07-22
+Date: 2026-07-23
 
 Use this document to restart FTFN in a new Codex session without reconstructing the project from chat history.
 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 55D owner-only Sites preview
+Latest completed work: Phase 55E bounded content expansion
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 218 pages
-Content: 120 sources, 35 signals, 17 topics
-Publication: 9 Published, 25 In Review, 1 Draft Sample
+Build: 227 pages
+Content: 128 sources, 36 signals, 17 topics
+Publication: 9 Published, 27 In Review, 0 Draft Sample
 Trust/data: 7 update entries, 3 versioned JSON exports
-Private authority layer: 150 candidates, 15 profiles, 44 Candidate, 1 Rejected, 105 Needs Triage
+Private authority layer: 150 candidates, 15 profiles, 58 Candidate, 1 Active Source Record, 1 Rejected, 90 Needs Triage
 Deployment: owner-only Sites URL at https://ftfn-analytics.jbumstead.chatgpt.site
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 0 Review Due, 17 Watch Soon, 103 Current; 14 Strong coverage lanes
-Next phase: decide separately between continued bounded evidence work and public custom-domain execution
+Source health: 0 Review Due, 0 Watch Soon, 128 Current; 14 Strong coverage lanes
+Next phase: Phase 55F editorial consolidation of the eight Phase 55E records; public-domain work remains separate
 ```
 
 ## Read First
@@ -41,7 +41,7 @@ Use this short order:
 The new session should verify rather than assume:
 
 1. Run `git status --short --branch`.
-2. Confirm `git log --oneline --decorate -14` still has `35f26f4` in the current history and inspect the newer Phase 55A-55D commits.
+2. Confirm `git log --oneline --decorate -16` still has `35f26f4` in the current history and inspect the newer Phase 55A-55E commits.
 3. Compare the current branch with `origin/main` and confirm which remote branches exist.
 4. Read the v0.2 manifest and confirm package/count expectations still match the repository.
 5. Review any current documentation or content diff before committing it.
@@ -54,7 +54,7 @@ The new session should verify rather than assume:
 The approved preview sequence is complete:
 
 1. Confirmed the Phase 52B checkpoint and Phase 55A-55C authority work in local history.
-2. Built and revalidated the exact 218-page candidate.
+2. Built and revalidated the original 218-page candidate; Phase 55E later expanded the local package to 227 pages.
 3. Created a private Sites source repository without pushing the branch to public GitHub.
 4. Added the minimal static Sites packaging adapter and deployed the reviewed checkpoint.
 5. Kept the preview owner-only and did not attach `ftfn.io`.
@@ -114,9 +114,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 55D. The current candidate should be 0.2.0-dev on codex/phase51-content at or after the preserved Phase 52B checkpoint 35f26f4, with 120 sources, 35 signals, nine Published signals, seven public updates, three JSON exports, and 218 pages. An owner-only Sites deployment exists at https://ftfn-analytics.jbumstead.chatgpt.site; the branch remains unpushed to public GitHub, and no custom domain or public launch exists.
+The latest completed work is Phase 55E. The current candidate should be 0.2.0-dev on codex/phase51-content at or after the preserved Phase 52B checkpoint 35f26f4, with 128 sources, 36 signals, nine Published signals, 27 In Review signals, seven public updates, three JSON exports, and 227 pages. An owner-only Sites deployment exists at https://ftfn-analytics.jbumstead.chatgpt.site; the branch remains unpushed to public GitHub, and no custom domain or public launch exists.
 
-Phase 52B is complete and Phase 55A reviewed 15 more records: the local-only private registry contains exactly 150 candidates across 15 profiles, with 44 at Candidate, one Rejected, and 105 still needing triage. Confirm it remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate contents into public Git, app content, exports, issues, or build artifacts.
+Phase 52B is complete, Phase 55A reviewed 15 more records, and Phase 55E reviewed another 15: the local-only private registry contains exactly 150 candidates across 15 profiles, with 58 at Candidate, one Active Source Record, one Rejected, and 90 still needing triage. Confirm it remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. The next decision is either continued bounded Phase 55 content work or a separately approved public-domain sequence for ftfn.io. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. The next content step is Phase 55F editorial consolidation of the eight Phase 55E records, with no assumed Published promotion. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```
