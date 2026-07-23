@@ -40,6 +40,13 @@ const relatedDependencyMaps = (await getCollection("dependencyMaps"))
     relationship: "Primary topic",
     note: "This dependency map uses this topic as its primary topic."
   }));
+const researchDocuments = (await getCollection("researchDocuments"))
+  .filter((document) => document.data.primary_topics.includes(topic.data.name))
+  .sort((a, b) => {
+    const dateA = a.data.publication_date?.valueOf() ?? 0;
+    const dateB = b.data.publication_date?.valueOf() ?? 0;
+    return dateB - dateA || a.data.title.localeCompare(b.data.title);
+  });
 ---
 
 <BaseLayout title={`${topic.data.name} | FTFN`} description={topic.data.summary}>
@@ -161,6 +168,34 @@ const relatedDependencyMaps = (await getCollection("dependencyMaps"))
     title="Dependency maps for this topic."
     description="These maps appear only when their controlled primary topic matches this topic page."
   />
+
+  {researchDocuments.length > 0 && (
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Research Documents</div>
+          <h2>Primary records connected to this topic.</h2>
+          <p>
+            These links come from reviewed collection metadata. Each summary
+            separates stated direction from implementation evidence.
+          </p>
+        </div>
+        <a class="inline-link" href="/research/">All research collections</a>
+      </div>
+      <div class="grid">
+        {researchDocuments.map((document) => (
+          <article class="record-card">
+            <div class="meta-row">
+              <MetaPill label={document.data.document_type} />
+              <MetaPill label={document.data.capture_status} tone={document.data.capture_status === "Official link record" ? "review" : "possibility"} />
+            </div>
+            <h3><a href={`/research/documents/${document.data.slug}/`}>{document.data.title}</a></h3>
+            <p>{document.data.summary}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
 
   <section class="page-section">
     <h2>Related Signals</h2>

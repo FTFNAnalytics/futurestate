@@ -1238,12 +1238,34 @@ Do not use it for:
 - Publishing private candidate material.
 - Authorizing public access, custom-domain attachment, package freeze, public GitHub synchronization, or Hostinger DNS changes.
 
+### Phase 55K DARPA And U.S. Government Research Collection
+
+Purpose:
+
+- Record the 23-document research collection, source captures, per-document summaries, and evidence limits.
+- Document the Research routes, cross-site integration, five `In Review` synthesis signals, briefing, dependency map, organization records, and topic/technology source updates.
+- Record the reproducible 26-file archive with 22 local captures, one official-link record, consolidated summaries, README, and checksum manifest.
+- Define Phase 55L as an implementation-evidence conversion pass while preserving the separate publication gate.
+
+Update when:
+
+- an official source is amended, superseded, moved, or becomes unavailable,
+- the link-only Defense Department record can be replaced with a clean official capture,
+- a research direction gains a named award, contract, facility, field trial, production milestone, transmission action, or standards artifact,
+- collection membership, capture status, summaries, archive contents, or owner-only deployment state changes.
+
+Do not use it for:
+
+- Treating a strategy, budget request, or solicitation as proof of appropriations, awards, delivery, production, or operating outcomes.
+- Promoting the five synthesis signals without a separate publication review.
+- Authorizing public access, DNS changes, package freeze, public GitHub synchronization, or public launch.
+
 ### v0.2 Build Manifest
 
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 261-page build, 25 Published signals, 153 sources, 12 updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 321-page build, 25 Published signals, 176 sources, 13 updates, 23 research documents, the required archive, three exports, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 

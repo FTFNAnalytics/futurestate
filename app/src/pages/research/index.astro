@@ -1,0 +1,107 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+
+const collections = (await getCollection("researchCollections"))
+  .filter((collection) => collection.data.record_status === "Published")
+  .sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf());
+const documents = await getCollection("researchDocuments");
+const sourceCount = new Set(documents.map((document) => document.data.source_id)).size;
+const topicCount = new Set(documents.flatMap((document) => document.data.primary_topics)).size;
+---
+
+<BaseLayout
+  title="Research Collections | FTFN"
+  description="Reviewed collections of primary documents that expose the research priorities, policy direction, and enabling systems behind future-state signals."
+>
+  <section class="page-section hero">
+    <div class="hero__copy">
+      <div class="eyebrow">ftfn.io / Research</div>
+      <h1 class="page-title">Primary documents, organized around the stack.</h1>
+      <p class="lede">
+        Research Collections bring related source documents together, summarize
+        each one, map their recurring dependencies, and preserve the evidence
+        limits between stated direction and real implementation.
+      </p>
+      <div class="button-row">
+        {collections[0] && (
+          <a class="button" href={`/research/${collections[0].data.slug}/`}>Open latest collection</a>
+        )}
+        <a class="button button--secondary" href="/method/">Read the method</a>
+      </div>
+    </div>
+
+    <div class="metric-strip" aria-label="Research collection counts">
+      <div class="metric">
+        <strong>{collections.length}</strong>
+        <span>collections</span>
+      </div>
+      <div class="metric">
+        <strong>{documents.length}</strong>
+        <span>documents</span>
+      </div>
+      <div class="metric">
+        <strong>{sourceCount}</strong>
+        <span>source profiles</span>
+      </div>
+      <div class="metric">
+        <strong>{topicCount}</strong>
+        <span>connected topics</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Collections</div>
+        <h2>Reviewed document sets.</h2>
+      </div>
+    </div>
+    <div class="grid">
+      {collections.map((collection) => {
+        const collectionDocuments = documents.filter((document) =>
+          collection.data.document_ids.includes(document.data.id)
+        );
+
+        return (
+          <article class="record-card record-card--featured">
+            <div class="meta-row">
+              <MetaPill label={`${collectionDocuments.length} documents`} tone="possibility" />
+              <MetaPill label={collection.data.record_status} />
+            </div>
+            <h3><a href={`/research/${collection.data.slug}/`}>{collection.data.title}</a></h3>
+            <p>{collection.data.summary}</p>
+            <div class="button-row">
+              <a class="inline-link" href={`/research/${collection.data.slug}/`}>Read collection</a>
+              <a class="inline-link" href={collection.data.download_path} download>Download bundle</a>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Interpretation Boundary</div>
+      <h2>Direction is not delivery.</h2>
+      <p>
+        Strategy documents, budget requests, and broad solicitations can show
+        priorities and dependencies. They do not prove appropriations, awards,
+        successful research, production capacity, permits, projects, or
+        operating outcomes.
+      </p>
+    </div>
+    <article class="record-card">
+      <h3>The collection standard</h3>
+      <ul class="compact-list">
+        <li>Use official or primary government sources.</li>
+        <li>Summarize findings without inflating maturity.</li>
+        <li>State the implementation evidence still missing.</li>
+        <li>Connect documents to source, topic, signal, briefing, and map records.</li>
+      </ul>
+    </article>
+  </section>
+</BaseLayout>

@@ -228,6 +228,8 @@ const technologies = readJsonCollection("technologies");
 const evidenceGaps = readJsonCollection("evidence-gaps");
 const dependencyMaps = readJsonCollection("dependency-maps");
 const updates = readJsonCollection("updates");
+const researchCollections = readJsonCollection("research-collections");
+const researchDocuments = readJsonCollection("research-documents");
 const signals = readMdxCollection("signals");
 const localSystems = readMdxCollection("local-systems");
 const briefings = readMdxCollection("briefings");
@@ -241,6 +243,8 @@ const signalIds = indexBy(signals, "id");
 const localSystemIds = indexBy(localSystems, "id");
 const briefingIds = indexBy(briefings, "id");
 const dependencyMapIds = indexBy(dependencyMaps, "id");
+const researchCollectionIds = indexBy(researchCollections, "id");
+const researchDocumentIds = indexBy(researchDocuments, "id");
 indexBy(updates, "id");
 
 const allPublicRecordIds = new Map([
@@ -252,7 +256,9 @@ const allPublicRecordIds = new Map([
   ...signalIds,
   ...localSystemIds,
   ...briefingIds,
-  ...dependencyMapIds
+  ...dependencyMapIds,
+  ...researchCollectionIds,
+  ...researchDocumentIds
 ]);
 
 const localSystemNames = new Set(localSystems.map((record) => record.data.name).filter(Boolean));
@@ -273,6 +279,8 @@ validateSlugUniqueness(localSystems, "local system");
 validateSlugUniqueness(briefings, "briefing");
 validateSlugUniqueness(evidenceGaps, "evidence gap");
 validateSlugUniqueness(dependencyMaps, "dependency map");
+validateSlugUniqueness(researchCollections, "research collection");
+validateSlugUniqueness(researchDocuments, "research document");
 
 for (const record of signals) {
   requireReferences(record, "source_ids", sourceIds, "source");
@@ -334,6 +342,15 @@ for (const record of dependencyMaps) {
   requireDependencyMapLinks(record);
 }
 
+for (const record of researchCollections) {
+  requireReferences(record, "document_ids", researchDocumentIds, "research document");
+}
+
+for (const record of researchDocuments) {
+  requireReferences(record, "collection_id", researchCollectionIds, "research collection");
+  requireReferences(record, "source_id", sourceIds, "source");
+}
+
 for (const record of updates) {
   requireReferences(record, "affected_record_ids", allPublicRecordIds, "public record");
 }
@@ -364,6 +381,8 @@ console.log(
     `${briefings.length} briefings`,
     `${evidenceGaps.length} evidence gaps`,
     `${dependencyMaps.length} dependency maps`,
+    `${researchCollections.length} research collections`,
+    `${researchDocuments.length} research documents`,
     `${updates.length} updates`
   ].join(", ")
 );

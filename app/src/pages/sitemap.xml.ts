@@ -26,7 +26,9 @@ export const GET: APIRoute = async () => {
     technologies,
     localSystems,
     dependencyMaps,
-    briefings
+    briefings,
+    researchCollections,
+    researchDocuments
   ] = await Promise.all([
     getCollection("signals"),
     getCollection("topics"),
@@ -35,7 +37,9 @@ export const GET: APIRoute = async () => {
     getCollection("technologies"),
     getCollection("localSystems"),
     getCollection("dependencyMaps"),
-    getCollection("briefings")
+    getCollection("briefings"),
+    getCollection("researchCollections"),
+    getCollection("researchDocuments")
   ]);
 
   const staticRoutes = [
@@ -50,6 +54,7 @@ export const GET: APIRoute = async () => {
     "/atlas/technologies/",
     "/atlas/local-systems/",
     "/atlas/dependency-maps/",
+    "/research/",
     "/briefings/",
     "/method/",
     "/updates/",
@@ -67,6 +72,12 @@ export const GET: APIRoute = async () => {
     ...technologies.map((technology) => urlEntry(`/atlas/technologies/${technology.data.slug}/`)),
     ...localSystems.map((system) => urlEntry(`/atlas/local-systems/${system.data.slug}/`, system.data.last_reviewed_date)),
     ...dependencyMaps.map((dependencyMap) => urlEntry(`/atlas/dependency-maps/${dependencyMap.data.slug}/`)),
+    ...researchCollections
+      .filter((collection) => collection.data.record_status === "Published")
+      .map((collection) => urlEntry(`/research/${collection.data.slug}/`, collection.data.captured_date)),
+    ...researchDocuments
+      .filter((document) => document.data.record_status === "Published")
+      .map((document) => urlEntry(`/research/documents/${document.data.slug}/`, document.data.publication_date ?? undefined)),
     ...briefings
       .filter((briefing) => briefing.data.record_status === "Published")
       .map((briefing) => urlEntry(`/briefings/${briefing.data.slug}/`, briefing.data.published_date ?? briefing.data.captured_date))

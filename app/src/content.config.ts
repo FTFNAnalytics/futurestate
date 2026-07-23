@@ -295,7 +295,29 @@ const updateEntryType = z.enum([
   "Source Refresh",
   "Signal Repair",
   "Publication Promotion",
-  "Archive"
+  "Archive",
+  "Research Collection"
+]);
+
+const researchDocumentType = z.enum([
+  "Budget Justification",
+  "Broad Agency Announcement",
+  "Agency Strategy",
+  "Agency Announcement",
+  "Policy Memorandum",
+  "National Strategy",
+  "Threat Assessment",
+  "Action Plan",
+  "Presidential Memorandum",
+  "Executive Order",
+  "Draft Study",
+  "Congressional Primer"
+]);
+
+const researchCaptureStatus = z.enum([
+  "Original file captured",
+  "Official page captured",
+  "Official link record"
 ]);
 
 const requiredStrings = z.array(z.string()).min(1);
@@ -535,6 +557,51 @@ const updates = defineCollection({
   })
 });
 
+const researchCollections = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/research-collections" }),
+  schema: z.object({
+    id: z.string(),
+    title: z.string(),
+    slug: z.string(),
+    record_status: recordStatus,
+    summary: z.string(),
+    scope: z.string(),
+    captured_date: z.coerce.date(),
+    document_ids: requiredStrings,
+    download_path: z.string(),
+    download_note: z.string(),
+    method_note: z.string()
+  })
+});
+
+const researchDocuments = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/research-documents" }),
+  schema: z.object({
+    id: z.string(),
+    collection_id: z.string(),
+    title: z.string(),
+    slug: z.string(),
+    record_status: recordStatus,
+    publisher: z.string(),
+    publication_date: z.coerce.date().nullable(),
+    document_type: researchDocumentType,
+    summary: z.string(),
+    key_findings: requiredStrings,
+    why_it_matters: z.string(),
+    ftfn_relevance: requiredStrings,
+    evidence_limits: requiredStrings,
+    primary_topics: requiredTopics,
+    framework_layers: requiredFrameworkLayers,
+    constraint_tags: requiredConstraints,
+    source_id: z.string(),
+    official_url: z.string().url(),
+    local_capture_path: z.string(),
+    archive_member: z.string(),
+    capture_status: researchCaptureStatus,
+    captured_date: z.coerce.date()
+  })
+});
+
 export const collections = {
   signals,
   sources,
@@ -545,5 +612,7 @@ export const collections = {
   briefings,
   evidenceGaps,
   dependencyMaps,
-  updates
+  updates,
+  researchCollections,
+  researchDocuments
 };

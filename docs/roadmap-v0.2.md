@@ -41,22 +41,24 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after the Phase 55J publication-readiness review:
+Current `0.2.0-dev` state after the Phase 55K DARPA and U.S. Government research collection:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 261 |
-| Active sources | 153 |
-| Signals | 45 |
+| Static pages | 321 |
+| Active sources | 176 |
+| Signals | 50 |
 | Published signals | 25 |
-| In Review signals | 20 |
+| In Review signals | 25 |
 | Draft Sample signals | 0 |
-| Public update entries | 12 |
+| Public update entries | 13 |
+| Research collections | 1 collection / 23 documents |
+| Research download | 22 local captures / 1 official-link file / 26 archive files |
 | Named local inputs selected in Phases 50-55C | 18 |
 | Private source candidates | 150 local-only records |
 | Candidate review | all 150 reviewed once: 132 Candidate, 11 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected |
 | Source Coverage | 14 Strong; 0 Developing; 0 Weak |
-| Source Monitor | 0 Review Due; 0 Watch Soon; 153 Current |
+| Source health | 103 Manual Review; 73 Probe Ready |
 
 Existing operating assets:
 
@@ -66,7 +68,8 @@ Existing operating assets:
 - 18-item Phase 49 promoted-source queue batch,
 - publication policy and Method page,
 - two local-system constraint maps,
-- two qualitative dependency maps,
+- three qualitative dependency maps,
+- one reviewed research collection with 23 primary documents and a downloadable archive,
 - a schema-backed public update log,
 - versioned static source, topic, and Published-signal exports,
 - robots, sitemap, canonical, and indexing boundaries.
@@ -355,12 +358,12 @@ Recommended active schedule:
 | Completed | Phase 52 | update log, static exports, 150-source private candidate registry, and improved authority surfaces |
 | Completed | Phase 53 | nine Published records and a documented 23-record review shelf |
 | Completed | Phase 54 | local release gate, touch-target repair, v0.2 manifest, launch note, preview explicitly deferred |
-| Current | Phase 55 | preserve the verified owner-only Sites preview and stop before public access, custom-domain attachment, or Hostinger DNS changes |
+| Current | Phase 55 | continue content expansion from the research collection while preserving the owner-only Sites preview |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete. Phases 55A-55G strengthened the authority package and verified the latest exact checkpoint on a hosted URL without changing its non-public posture. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete. Phases 55A-55J strengthened the authority package and publication set; Phase 55K adds the first primary-document research collection without changing the site's non-public posture. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -391,10 +394,11 @@ Current stop point:
 - Phase 55H now records Toronto's dated July 29-31 Council gate, the bill-withholding conditions, and bounded negative permit searches across all eight project addresses; owner-only Sites version 6 serves the exact checkpoint,
 - Phase 55I completed a first-pass triage of all 150 private candidates, added ten public monitoring rails plus 12 dated source records, added nine bounded `In Review` signals without changing Published membership, and deployed the exact 260-page / 152-source checkpoint as owner-only Sites version 7,
 - Phase 55J applied the existing publication gate to those nine additions, added OMB M-26-04 to preserve the current federal AI policy stack, and promoted all nine while retaining their implementation, adoption, outcome, facility, and site-service boundaries,
-- the branch remains unpushed to public GitHub; the exact Phase 55J checkpoint is deployed as owner-only Sites version 8 from commit `03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37`,
+- Phase 55K added a 23-document DARPA and U.S. Government research collection, 23 source profiles, five `In Review` synthesis signals, five organizations, one briefing, one dependency map, topic/source/technology backlinks, and a verified 26-file download bundle,
+- the branch remains unpushed to public GitHub; the Phase 55K owner-only Sites refresh follows the passed local release gate,
 - no custom domain is attached and Hostinger DNS remains unchanged,
 - the remaining Phase 55H action is the post-meeting recheck of Toronto application `24 254930` for Council disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit evidence,
-- before that window, preserve the owner-only Phase 55J checkpoint and keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors,
+- before that window, use Phase 55L to seek named implementation evidence behind the strongest Phase 55K research directions and keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors,
 - GitHub synchronization, public access, and custom-domain attachment remain deferred pending explicit approval.
 
 Hosting decision rule:
@@ -515,12 +519,14 @@ v0.2 is successful when:
 - release QA is repeatable,
 - no automated process publishes claims without review.
 
-All local success criteria pass in the current candidate. Phase 55J expands the reviewed public core without changing the package-freeze or public-launch boundaries.
+All local success criteria pass in the current candidate. Phase 55K expands the research and evidence layer without changing Published membership, the package-freeze boundary, or the public-launch boundary.
 
 ## Immediate Next Step
 
+Proceed with Phase 55L as an implementation-evidence conversion pass. Select eight high-value questions from the new collection and look for named awards, obligations, contracts, facilities, field trials, production milestones, transmission or interconnection actions, and standards artifacts. Start with DARPA program activity, critical-material processing, semiconductor equipment and packaging, transmission delivery, advanced nuclear demonstrations, AI infrastructure procurement, and 6G testing or standards. Repair an existing record where possible, keep additions `In Review`, and do not treat a strategy, budget request, or solicitation as proof of delivery.
+
 Complete Phase 55H immediately after the July 29-31, 2026 Toronto Council meeting window. Recheck application `24 254930` for the Council disposition and vote, amended recommendations, bill status, enacted Official Plan and Zoning By-law numbers, condition compliance, and any later permit record. If no named official stage has advanced, record the dated negative result and stop rather than manufacture a signal.
 
-Until that dated gate opens, use the remaining content window for small evidence-gap-led source checks only. Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors; do not start another volume target or broad automatic-promotion batch.
+Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Do not start another volume target or broad automatic-promotion batch.
 
 Keep the Sites preview owner-only. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

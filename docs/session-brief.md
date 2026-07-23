@@ -37,7 +37,7 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 261
+static pages generated: 321
 current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
@@ -51,6 +51,7 @@ App routes currently include:
 - Atlas landing page,
 - topic index and detail pages,
 - source index and detail pages,
+- research collection index, collection detail, and 23 document detail pages,
 - organization index and detail pages,
 - technology index and detail pages,
 - local system index and detail pages,
@@ -101,6 +102,7 @@ What is now stable:
 - Phase 55H now records Toronto's July 29-31 Council gate, the wind-study, land-exchange, and laneway conditions that precede amendment enactment, and bounded negative Building Permit searches across all eight project addresses; Sites version 6 serves the exact pre-decision checkpoint.
 - Phase 55I reviewed the remaining 90 private candidates, added ten monitoring rails plus 12 dated source records, created nine bounded `In Review` signals, repaired the local-system evidence trails, and reached 152 sources, 45 signals, and 260 pages without a new Published promotion; Sites version 7 serves the exact checkpoint under owner-only access.
 - Phase 55J applied the full publication gate to those nine signals, added OMB M-26-04 to preserve the current policy stack, and promoted all nine while preserving the missing implementation, adoption, delivery, facility, and site-service stages.
+- Phase 55K added a 23-document DARPA and U.S. Government research collection with 22 local captures, one official-link record, per-document summaries and evidence limits, 23 source profiles, five `In Review` synthesis signals, five organizations, one briefing, one dependency map, and a verified 26-file download archive.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 51 sources supporting the 25 Published signals were checked on or after `2026-07-22`.
@@ -112,7 +114,7 @@ What is now stable:
 What is still prelaunch scaffolding:
 
 - Twenty-five signal records are `Published`.
-- Twenty signal records are still `In Review`; no Draft Sample remains.
+- Twenty-five signal records are still `In Review`; no Draft Sample remains.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -122,24 +124,25 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should now preserve the owner-only preview and complete Phase 55H after the July 29-31 Toronto Council meeting. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library; Phase 50 completed six bounded additions; Phases 52A-52B completed the public contract, private 150-source discovery shelf, and authority surfaces; Phases 51A-51C built named local evidence trails; Phase 53 produced a nine-record Published set; Phase 54 verified the package locally; Phase 55D verified it on a hosted owner-only URL; Phases 55E-55H deepened and reviewed dated evidence; Phase 55I completed candidate triage while adding nine bounded content records; and Phase 55J promoted those records through a separate publication gate. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should now preserve the owner-only preview and proceed with Phase 55L implementation-evidence conversion from the new research collection. Select eight bounded questions and look for named awards, obligations, contracts, facilities, field trials, production milestones, transmission actions, and standards artifacts. Complete Phase 55H after the July 29-31 Toronto Council meeting. Phase 55K expands the research layer without changing Published membership or weakening the human publication gate. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 45 signal records,
-- 153 source records,
+- 50 signal records,
+- 176 source records,
 - 17 topic records,
 - 2 local system profiles,
-- 10 organization records,
+- 15 organization records,
 - 5 technology records,
-- 1 briefing in review,
+- 2 briefings in review,
 - 10 evidence gap records,
-- 2 dependency maps in review,
-- 12 public update-log entries.
+- 3 dependency maps in review,
+- 1 research collection with 23 document records,
+- 13 public update-log entries.
 
-Nine official-source-backed signals are now `Published`:
+Twenty-five official-source-backed signals are now `Published`:
 
 - ENSO outlook signal,
 - USGS mineral commodity signal,
@@ -158,7 +161,7 @@ Nine official-source-backed signals are now `Published`:
 - Statistics Canada May 2026 building-permit intentions signal,
 - DOE Storage Technology Elevation Prize manufacturing-readiness signal.
 
-Twenty official-source-backed, official-analysis-backed, or explicitly company-claim-labeled signals are `In Review`:
+Twenty-five official-source-backed, official-analysis-backed, or explicitly company-claim-labeled signals are `In Review`:
 
 - FAA advanced air mobility signal,
 - EIA Arizona electricity and chip-corridor power signal,
@@ -395,16 +398,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 55J publication-readiness review, following the Phase 55I remaining-candidate content expansion.
+Phase 55K DARPA and U.S. Government research collection, following the Phase 55J publication-readiness review.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 owner-only hosted candidate: package 0.2.0-dev, 153 public sources, 150 first-pass-triaged private candidates, 45 signals, 17 topics, 12 updates, 261 pages, 25 Published signals, and 3 public JSON endpoints. Sites version 8 serves exact source commit 03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37 at https://ftfn-analytics.jbumstead.chatgpt.site. Source Coverage is 14 Strong lanes, and Source Monitor has zero Review Due, zero Watch Soon, and 153 Current records.
+v0.2 owner-only hosted candidate: package 0.2.0-dev, 176 public sources, 150 first-pass-triaged private candidates, 50 signals, 17 topics, 13 updates, 321 generated site pages, 25 Published signals, 23 research documents, one 26-file research archive, and 3 public JSON endpoints. The owner-only URL remains https://ftfn-analytics.jbumstead.chatgpt.site. Source Coverage is 14 Strong lanes; source health reports 103 Manual Review and 73 Probe Ready records.
 
 Next decision gate:
-Preserve the owner-only preview. Phase 55J promoted all nine Phase 55I additions through the bounded publication gate; complete Phase 55H after the 29-31 July 2026 Council window. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve the owner-only preview. Proceed with Phase 55L by converting eight high-value Phase 55K directions into named implementation-evidence searches, while keeping new records In Review. Complete Phase 55H after the 29-31 July 2026 Council window. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

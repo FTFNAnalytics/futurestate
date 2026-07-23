@@ -35,6 +35,7 @@ It is a stack of dependencies.
 - [v0.2 Next Signal Set](docs/v0.2-next-signal-set.md) - first mapped batch of v0.2 signal repairs and new signal candidates.
 - [v0.1.1 Build Manifest](deployment/ftfn-v0.1.1-build.json) - machine-readable build/deployment configuration for the frozen static preview candidate.
 - [v0.2 Build Manifest](deployment/ftfn-v0.2-build.json) - machine-readable contract for the locally and post-deploy verified v0.2 candidate; public domain remains deferred.
+- [Phase 55K Research Collection Work Package](docs/work-packages/phase-55k-darpa-usg-research-collection.md) - 23 DARPA and U.S. Government document summaries, capture/archive disclosure, site integration, validation, and the Phase 55L implementation-evidence path.
 - [Glossary](docs/glossary.md) - shared definitions for the project language.
 - [Taxonomy](docs/taxonomy.md) - framework layers, topic pillars, constraints, signal types, maturity levels, and relationship rules.
 - [Content Model](docs/content-model.md) - MVP entities, fields, examples, and validation rules.
@@ -117,6 +118,12 @@ It is a stack of dependencies.
 - [Phase 55C Work Package](docs/work-packages/phase-55c-conditional-permit-follow-through.md) - Project Baccara county conditions, proposed air permit, corroborated vote, and preserved downstream gates.
 - [Phase 55D Work Package](docs/work-packages/phase-55d-owner-only-sites-preview.md) - owner-only Sites deployment, hosted route and trust-output verification, and Hostinger DNS stop point.
 - [Phase 55E Work Package](docs/work-packages/phase-55e-bounded-content-expansion.md) - 17 source rechecks, 15 private candidate reviews, eight bounded signal updates, and the owner-only preview refresh.
+- [Phase 55F Work Package](docs/work-packages/phase-55f-publication-readiness-review.md) - bounded publication review for the Phase 55E signal set.
+- [Phase 55G Work Package](docs/work-packages/phase-55g-baccara-authority-conversion.md) - official Project Baccara County action and final air-permit conversion.
+- [Phase 55H Work Package](docs/work-packages/phase-55h-toronto-pre-decision-authority-gate.md) - dated Toronto Council and permit pre-decision gate.
+- [Phase 55I Work Package](docs/work-packages/phase-55i-remaining-candidate-review-and-content-expansion.md) - completed candidate triage and bounded content expansion.
+- [Phase 55J Work Package](docs/work-packages/phase-55j-publication-readiness-review.md) - publication gate for the Phase 55I additions.
+- [Phase 55K Work Package](docs/work-packages/phase-55k-darpa-usg-research-collection.md) - 23-document research collection, summaries, source integration, download archive, and Phase 55L conversion path.
 
 ## App Scaffold
 
@@ -130,16 +137,17 @@ From `app/`:
 npm run validate:content
 npm run validate:candidates
 npm run source:health
+npm run build:research-archive
 npm run check
 npm run build
 npm run verify:release
 ```
 
-The current `0.2.0-dev` build generates 227 static pages and three versioned JSON data endpoints. Nine signals are Published and 27 remain In Review; no Draft Sample remains.
+The current `0.2.0-dev` build generates 321 site pages and three versioned JSON data endpoints. Twenty-five signals are Published and 25 remain In Review; no Draft Sample remains. The Research section contains one 23-document collection and a verified 26-file archive.
 
 The homepage now uses real seed records for signals, topics, sources, local systems, and briefings while preserving the 42/59 framing and dependency-stack thesis.
 
-The Atlas now exposes topics, sources, organizations, technologies, local systems, evidence gaps, and dependency maps as public FTFN routes.
+The Atlas now exposes topics, sources, research collections, organizations, technologies, local systems, evidence gaps, and dependency maps as FTFN routes.
 
 Phase 09 adds editorial readiness: a method, review checklists, publishability criteria, and a first content expansion plan for moving from sample records toward reviewed public intelligence.
 
@@ -265,7 +273,9 @@ Phase 55C adds three downstream Project Baccara sources and repairs the existing
 
 Phase 55D packages the unchanged Astro output for OpenAI Sites and deploys it at `https://ftfn-analytics.jbumstead.chatgpt.site` under an owner-only access policy. Hosted checks pass for core reader routes, canonical and indexing metadata, robots, sitemap, and the 120-record source export. No Hostinger DNS or Google Workspace mail record changed.
 
-The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 120 public sources, 150 private source candidates, 35 signals, 17 topics, seven public update entries, 218 pages, and three versioned data exports. The branch remains unpushed to public GitHub, while an owner-only Sites deployment now exists. No custom domain, Hostinger DNS change, or public launch occurred.
+Phase 55K adds the first dedicated Research section: 23 recent DARPA and U.S. Government primary documents, reviewed summaries and evidence limits, 23 Tier 1 source profiles, five `In Review` synthesis signals, one briefing, one dependency map, cross-site links, and a 26-file downloadable archive.
+
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 176 public sources, 150 private source candidates, 50 signals, 17 topics, 13 public update entries, 321 generated site pages, one 23-document research collection, and three versioned data exports. The branch remains unpushed to public GitHub, while an owner-only Sites deployment exists. No custom domain, Hostinger DNS change, or public launch occurred.
 
 ## Working Rule
 

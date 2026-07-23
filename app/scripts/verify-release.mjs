@@ -50,8 +50,21 @@ const topics = await readJson(join(distRoot, "data", "topics.json"));
 const sitemap = await readText(join(distRoot, "sitemap.xml"));
 const robots = await readText(join(distRoot, "robots.txt"));
 const updatesHtml = await readText(join(distRoot, "updates", "index.html"));
+const researchCollectionDirectory = join(appRoot, "src", "content", "research-collections");
+const researchDocumentDirectory = join(appRoot, "src", "content", "research-documents");
+const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
+const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
+const researchCollections = await Promise.all(
+  researchCollectionFiles.map((name) => readJson(join(researchCollectionDirectory, name))),
+);
+const researchDocuments = await Promise.all(
+  researchDocumentFiles.map((name) => readJson(join(researchDocumentDirectory, name))),
+);
 const allDistFiles = await collectFiles(distRoot);
-const htmlCount = allDistFiles.filter((path) => extname(path) === ".html").length;
+const downloadsRoot = join(distRoot, "downloads");
+const htmlCount = allDistFiles.filter(
+  (path) => extname(path) === ".html" && !path.startsWith(downloadsRoot),
+).length;
 const publicTextExtensions = new Set([".html", ".json", ".xml", ".txt", ".js", ".css"]);
 const publicTextFiles = allDistFiles.filter((path) => publicTextExtensions.has(extname(path)));
 const publicBuildText = (await Promise.all(publicTextFiles.map((path) => readText(path)))).join("\n");
@@ -60,12 +73,53 @@ check(htmlCount === manifest.expected_build.static_pages, `Expected ${manifest.e
 check(signals.count === manifest.expected_build.published_signals, `Expected ${manifest.expected_build.published_signals} exported signals, found ${signals.count}.`);
 check(sources.count === manifest.expected_build.sources, `Expected ${manifest.expected_build.sources} exported sources, found ${sources.count}.`);
 check(topics.count === manifest.expected_build.topics, `Expected ${manifest.expected_build.topics} exported topics, found ${topics.count}.`);
+check(
+  researchCollections.length === manifest.expected_build.research_collections,
+  `Expected ${manifest.expected_build.research_collections} research collections, found ${researchCollections.length}.`,
+);
+check(
+  researchDocuments.length === manifest.expected_build.research_documents,
+  `Expected ${manifest.expected_build.research_documents} research documents, found ${researchDocuments.length}.`,
+);
 check(signals.schema_version === "1.0" && sources.schema_version === "1.0" && topics.schema_version === "1.0", "All public exports must use schema version 1.0.");
 check(signals.records.every((record) => record.record_status === "Published"), "Signal export contains a non-Published record.");
 check(!JSON.stringify(signals).includes('"editorial_notes"'), "Signal export leaked editorial_notes.");
 check(!JSON.stringify(sources).includes('"automation_notes"') && !JSON.stringify(sources).includes('"notes"'), "Source export leaked private notes.");
 check(!publicBuildText.includes("candidate-source-"), "Public build leaked a private source-candidate ID.");
 check(!publicBuildText.includes("private-data/source-candidates"), "Public build references the private candidate registry path.");
+
+const researchDocumentById = new Map(researchDocuments.map((document) => [document.id, document]));
+for (const collection of researchCollections) {
+  const collectionRoute = `/research/${collection.slug}/`;
+  const collectionHtml = await readText(routeToHtml(collectionRoute));
+  check(hasCanonical(collectionHtml, `${manifest.canonical_site}${collectionRoute}`), `${collectionRoute} has the wrong canonical URL.`);
+  for (const documentId of collection.document_ids) {
+    const document = researchDocumentById.get(documentId);
+    check(Boolean(document), `${collection.id} references missing research document ${documentId}.`);
+    if (document) {
+      check(
+        collectionHtml.includes(`/research/documents/${document.slug}/`),
+        `${collectionRoute} is missing research document route: ${document.slug}.`,
+      );
+    }
+  }
+}
+
+const expectedResearchLocations = [
+  ...researchCollections
+    .filter((collection) => collection.record_status === "Published")
+    .map((collection) => `${manifest.canonical_site}/research/${collection.slug}/`),
+  ...researchDocuments
+    .filter((document) => document.record_status === "Published")
+    .map((document) => `${manifest.canonical_site}/research/documents/${document.slug}/`),
+].sort();
+const researchLocations = [...sitemap.matchAll(/<loc>(https:\/\/ftfn\.io\/research\/[^<]+)<\/loc>/g)]
+  .map((match) => match[1])
+  .sort();
+check(
+  JSON.stringify(researchLocations) === JSON.stringify(expectedResearchLocations),
+  "Sitemap research membership does not match the Published research collection.",
+);
 
 for (const requiredPath of manifest.required_output_files) {
   const absolutePath = join(appRoot, requiredPath);
@@ -134,4 +188,5 @@ console.log(`${htmlCount} HTML pages; ${signals.count} Published signals; ${sour
 console.log(
   `${publishedSourceIds.length} Published-support sources checked on or after ${publishedSupportMinimumDate}.`,
 );
+console.log(`${researchCollections.length} research collection; ${researchDocuments.length} research documents; downloadable archive present.`);
 console.log("Robots, sitemap, canonical, indexing, required outputs, private-registry exclusion, and public export boundaries passed.");

@@ -1,0 +1,131 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+
+export async function getStaticPaths() {
+  const collections = await getCollection("researchCollections");
+
+  return collections.map((collection) => ({
+    params: { slug: collection.data.slug },
+    props: { collection }
+  }));
+}
+
+const { collection } = Astro.props;
+const allDocuments = await getCollection("researchDocuments");
+const documents = allDocuments
+  .filter((document) => collection.data.document_ids.includes(document.data.id))
+  .sort((a, b) => {
+    const dateA = a.data.publication_date?.valueOf() ?? 0;
+    const dateB = b.data.publication_date?.valueOf() ?? 0;
+    return dateB - dateA || a.data.title.localeCompare(b.data.title);
+  });
+const sourceById = new Map((await getCollection("sources")).map((source) => [source.data.id, source]));
+const topicCounts = documents.reduce<Record<string, number>>((counts, document) => {
+  for (const topic of document.data.primary_topics) counts[topic] = (counts[topic] ?? 0) + 1;
+  return counts;
+}, {});
+const topTopics = Object.entries(topicCounts).sort(([, a], [, b]) => b - a).slice(0, 8);
+const originalCaptureCount = documents.filter((document) =>
+  document.data.capture_status !== "Official link record"
+).length;
+const dateFormatter = new Intl.DateTimeFormat("en", { month: "short", day: "numeric", year: "numeric" });
+---
+
+<BaseLayout title={`${collection.data.title} | FTFN`} description={collection.data.summary}>
+  <section class="page-section hero">
+    <div class="hero__copy">
+      <div class="eyebrow">Research Collection</div>
+      <h1 class="page-title">{collection.data.title}</h1>
+      <p class="lede">{collection.data.summary}</p>
+      <p>{collection.data.scope}</p>
+      <div class="button-row">
+        <a class="button" href={collection.data.download_path} download>Download all files</a>
+        <a class="button button--secondary" href="/research/">All collections</a>
+      </div>
+    </div>
+
+    <div class="metric-strip" aria-label="Collection counts">
+      <div class="metric">
+        <strong>{documents.length}</strong>
+        <span>documents</span>
+      </div>
+      <div class="metric">
+        <strong>{originalCaptureCount}</strong>
+        <span>local captures</span>
+      </div>
+      <div class="metric">
+        <strong>{topTopics.length}</strong>
+        <span>leading topics</span>
+      </div>
+      <div class="metric">
+        <strong>{new Set(documents.map((document) => document.data.publisher)).size}</strong>
+        <span>publishers</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <article class="record-card">
+      <div class="eyebrow">Download Manifest</div>
+      <h2>One bundle, with capture status recorded.</h2>
+      <p>{collection.data.download_note}</p>
+      <a class="inline-link" href={collection.data.download_path} download>Download ZIP archive</a>
+    </article>
+    <article class="record-card">
+      <div class="eyebrow">Method</div>
+      <h2>How to read the collection.</h2>
+      <p>{collection.data.method_note}</p>
+      <a class="inline-link" href="/method/">Read publication policy</a>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Recurring Topics</div>
+        <h2>Where the documents overlap.</h2>
+      </div>
+    </div>
+    <div class="constraint-strip">
+      {topTopics.map(([topic, count]) => (
+        <span>{topic} <strong>{count}</strong></span>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Document Summaries</div>
+        <h2>Twenty-three primary records.</h2>
+      </div>
+    </div>
+    <div class="grid">
+      {documents.map((document) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label={document.data.document_type} />
+            <MetaPill label={document.data.capture_status} tone={document.data.capture_status === "Official link record" ? "review" : "possibility"} />
+          </div>
+          <h3><a href={`/research/documents/${document.data.slug}/`}>{document.data.title}</a></h3>
+          <p>{document.data.summary}</p>
+          <p class="card-note">
+            {document.data.publisher}
+            {document.data.publication_date && ` · ${dateFormatter.format(document.data.publication_date)}`}
+          </p>
+          <div class="meta-row">
+            {document.data.primary_topics.slice(0, 3).map((topic) => <MetaPill label={topic} />)}
+          </div>
+          <div class="button-row">
+            <a class="inline-link" href={`/research/documents/${document.data.slug}/`}>Read summary</a>
+            <a class="inline-link" href={`/atlas/sources/${document.data.source_id}/`}>
+              {sourceById.get(document.data.source_id)?.data.name ? "Source profile" : "Source"}
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -18,6 +18,10 @@ const dependencyMaps = (await getCollection("dependencyMaps")).sort((a, b) =>
 const briefings = (await getCollection("briefings")).sort(
   (a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf()
 );
+const researchCollections = (await getCollection("researchCollections"))
+  .filter((collection) => collection.data.record_status === "Published")
+  .sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf());
+const researchDocuments = await getCollection("researchDocuments");
 
 const highPrioritySources = sources
   .filter((source) => source.data.capture_priority === "High")
@@ -25,6 +29,7 @@ const highPrioritySources = sources
   .slice(0, 4);
 
 const featuredBriefing = briefings[0];
+const featuredResearchCollection = researchCollections[0];
 
 const frameworkLayers = [
   {
@@ -100,6 +105,7 @@ const dateFormatter = new Intl.DateTimeFormat("en", {
       <div class="button-row" aria-label="Primary homepage actions">
         <a class="button" href="/signals/">Read Signals</a>
         <a class="button button--secondary" href="/atlas/">Explore Atlas</a>
+        <a class="button button--secondary" href="/research/">Open Research</a>
       </div>
     </div>
 
@@ -122,6 +128,38 @@ const dateFormatter = new Intl.DateTimeFormat("en", {
       </div>
     </div>
   </section>
+
+  {featuredResearchCollection && (
+    <section class="page-section briefing-band">
+      <div class="briefing-band__copy">
+        <div class="eyebrow">New Research Collection</div>
+        <h2>{featuredResearchCollection.data.title}</h2>
+        <p>{featuredResearchCollection.data.summary}</p>
+        <div class="meta-row">
+          <MetaPill label={`${researchDocuments.length} documents`} tone="possibility" />
+          <MetaPill label="22 local captures" />
+          <MetaPill label="1 official-link record" tone="review" />
+        </div>
+        <div class="button-row">
+          <a class="inline-link" href={`/research/${featuredResearchCollection.data.slug}/`}>Read the collection</a>
+          <a class="inline-link" href={featuredResearchCollection.data.download_path} download>Download all files</a>
+        </div>
+      </div>
+      <article class="record-card record-card--featured">
+        <div class="eyebrow">What the documents add</div>
+        <h3>Research direction meets industrial capacity.</h3>
+        <p>
+          The collection traces how DARPA portfolios and current federal
+          strategy connect AI, compute, communications, energy, materials,
+          manufacturing, supply chains, resilience, and national security.
+        </p>
+        <p class="card-note">
+          Direction-setting evidence is kept separate from awards, deployment,
+          and operating outcomes.
+        </p>
+      </article>
+    </section>
+  )}
 
   <section class="page-section briefing-band">
     <div class="briefing-band__copy">

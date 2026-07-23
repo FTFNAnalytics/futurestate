@@ -1,0 +1,157 @@
+{
+  "id": "dependency-map-federal-research-industrial-capacity",
+  "title": "Federal research ambition runs through industrial capacity",
+  "slug": "federal-research-to-industrial-capacity",
+  "summary": "A qualitative map connecting DARPA research direction, government-wide R&D priorities, AI infrastructure, transmission need, secure supply chains, and implementation evidence.",
+  "map_type": "Dependency Stack",
+  "record_status": "In Review",
+  "primary_topic": "Advanced Manufacturing",
+  "framework_layers": ["Resource Foundations", "Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Materials", "Manufacturing", "Supply Chain", "Power", "Compute", "Cybersecurity", "Capital"],
+  "map_question": "What must exist between federal research ambition and a secure, scalable operating capability?",
+  "interpretation_boundary": "The map connects explicit source relationships and reviewed synthesis signals. It does not prove enacted funding, successful R&D, available industrial capacity, completed infrastructure, or operational adoption.",
+  "source_ids": [
+    "source-darpa-fy2027-budget",
+    "source-darpa-future-focus-2026",
+    "source-fy2027-rd-priorities-m-25-34",
+    "source-americas-ai-action-plan-2025",
+    "source-nspm-11-ai-national-security",
+    "source-2026-transmission-needs-study",
+    "source-defense-supply-chains-critical-materials-2026",
+    "source-semiconductor-equipment-imports-2026"
+  ],
+  "signal_ids": [
+    "signal-darpa-fy2027-supply-chain-logistics-rd-portfolio",
+    "signal-federal-rd-priorities-full-stack-technology",
+    "signal-usg-ai-national-security-infrastructure-stack",
+    "signal-2026-transmission-study-ai-manufacturing-load",
+    "signal-usg-resilience-industrial-base-stack"
+  ],
+  "technology_ids": ["technology-advanced-semiconductor-packaging", "technology-grid-scale-energy-storage"],
+  "local_system_ids": [],
+  "evidence_gap_ids": [],
+  "nodes": [
+    {
+      "id": "node-research-direction",
+      "label": "DARPA and federal R&D direction",
+      "node_type": "Signal",
+      "record_id": "signal-federal-rd-priorities-full-stack-technology",
+      "note": "Budget guidance and research portfolios identify the capability fields and their enabling systems."
+    },
+    {
+      "id": "node-darpa-portfolio",
+      "label": "DARPA supply-chain and logistics portfolio",
+      "node_type": "Signal",
+      "record_id": "signal-darpa-fy2027-supply-chain-logistics-rd-portfolio",
+      "note": "The portfolio treats making, maintaining, supply chains, logistics, and megasystem resilience as research work."
+    },
+    {
+      "id": "node-materials-production",
+      "label": "Materials, tools, and production capacity",
+      "node_type": "Constraint",
+      "note": "Usable capability depends on processing, equipment, manufacturing, suppliers, workforce, and sustainment."
+    },
+    {
+      "id": "node-compute-power",
+      "label": "Secure compute and reliable power",
+      "node_type": "Signal",
+      "record_id": "signal-usg-ai-national-security-infrastructure-stack",
+      "note": "AI adoption is tied to chips, secure data centers, power, assurance, acquisition, and supply chains."
+    },
+    {
+      "id": "node-transmission",
+      "label": "Transmission planning and delivery",
+      "node_type": "Signal",
+      "record_id": "signal-2026-transmission-study-ai-manufacturing-load",
+      "note": "DOE identifies new transmission need associated with data centers, manufacturing, and large loads."
+    },
+    {
+      "id": "node-resilience",
+      "label": "Resilient industrial base",
+      "node_type": "Signal",
+      "record_id": "signal-usg-resilience-industrial-base-stack",
+      "note": "Security strategies and policy actions converge on materials, production, cyber, energy, communications, and supplier resilience."
+    },
+    {
+      "id": "node-implementation",
+      "label": "Implementation evidence",
+      "node_type": "Constraint",
+      "note": "Appropriations, awards, standards, contracts, permits, projects, capacity, and operating outcomes are still required."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-research-direction",
+      "to": "node-darpa-portfolio",
+      "relationship": "Related Signal",
+      "confidence": "Supported",
+      "note": "Government-wide priorities and DARPA's portfolio overlap across AI, compute, manufacturing, energy, materials, and security."
+    },
+    {
+      "from": "node-darpa-portfolio",
+      "to": "node-materials-production",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "The budget and office descriptions explicitly include making, maintaining, tooling, materials, supply chains, and logistics."
+    },
+    {
+      "from": "node-compute-power",
+      "to": "node-materials-production",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Secure AI infrastructure depends on chips, equipment, data centers, suppliers, and workforce."
+    },
+    {
+      "from": "node-compute-power",
+      "to": "node-transmission",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "DOE identifies hyperscale data centers and manufacturing as drivers of transmission need."
+    },
+    {
+      "from": "node-materials-production",
+      "to": "node-resilience",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "The policy stack treats secure material and production capacity as an industrial-base requirement."
+    },
+    {
+      "from": "node-transmission",
+      "to": "node-resilience",
+      "relationship": "Received By",
+      "confidence": "Partial",
+      "note": "Reliable power supports resilient capability, but the draft study does not prove specific projects or delivery."
+    },
+    {
+      "from": "node-resilience",
+      "to": "node-implementation",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Strategy and policy do not establish completed implementation."
+    },
+    {
+      "from": "node-research-direction",
+      "to": "node-implementation",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Budget guidance and solicitations require later appropriation, award, test, transition, and operating records."
+    }
+  ],
+  "what_this_map_supports": [
+    "Federal research direction can be analyzed as a dependency stack rather than a list of technologies.",
+    "The source set explicitly connects research with materials, manufacturing, supply chains, power, compute, cyber, and resilience.",
+    "Implementation evidence is a separate gate from strategy, budget requests, and solicitations."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not prove enacted funding, successful research, production readiness, supplier security, grid delivery, or operational adoption.",
+    "It does not rank technologies, programs, regions, or suppliers.",
+    "It does not create a numeric 42/59 score."
+  ],
+  "next_records_needed": [
+    "FY2027 appropriations and DARPA award records.",
+    "Program tests, prototype results, transition agreements, and procurement records.",
+    "Supplier, processing, equipment, manufacturing, and workforce capacity evidence.",
+    "Final transmission findings, regional portfolios, permits, construction, and energization records.",
+    "Agency-level secure AI adoption, assurance, acquisition, and compute evidence."
+  ]
+}

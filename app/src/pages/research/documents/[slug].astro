@@ -1,0 +1,114 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+
+export async function getStaticPaths() {
+  const documents = await getCollection("researchDocuments");
+
+  return documents.map((document) => ({
+    params: { slug: document.data.slug },
+    props: { document }
+  }));
+}
+
+const { document } = Astro.props;
+const collection = (await getCollection("researchCollections")).find(
+  (entry) => entry.data.id === document.data.collection_id
+);
+const source = (await getCollection("sources")).find(
+  (entry) => entry.data.id === document.data.source_id
+);
+const topics = await getCollection("topics");
+const topicByName = new Map(topics.map((topic) => [topic.data.name, topic]));
+const dateFormatter = new Intl.DateTimeFormat("en", { month: "long", day: "numeric", year: "numeric" });
+---
+
+<BaseLayout title={`${document.data.title} | FTFN Research`} description={document.data.summary}>
+  <section class="page-section">
+    <div class="eyebrow">Research Document</div>
+    <h1 class="page-title">{document.data.title}</h1>
+    <p class="lede">{document.data.summary}</p>
+    <div class="meta-row">
+      <MetaPill label={document.data.document_type} />
+      <MetaPill label={document.data.publisher} />
+      <MetaPill label={document.data.capture_status} tone={document.data.capture_status === "Official link record" ? "review" : "possibility"} />
+      {document.data.publication_date && <MetaPill label={dateFormatter.format(document.data.publication_date)} />}
+    </div>
+    <div class="button-row">
+      <a class="button" href={document.data.official_url}>Open official source</a>
+      <a class="button button--secondary" href={document.data.local_capture_path} download>
+        {document.data.capture_status === "Official link record" ? "Download official-link file" : "Download local capture"}
+      </a>
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <article class="record-card">
+      <div class="eyebrow">Key Findings</div>
+      <h2>What the document says.</h2>
+      <ul>
+        {document.data.key_findings.map((finding) => <li>{finding}</li>)}
+      </ul>
+    </article>
+    <article class="record-card">
+      <div class="eyebrow">Why It Matters</div>
+      <h2>The dependency-stack interpretation.</h2>
+      <p>{document.data.why_it_matters}</p>
+      <div class="meta-row">
+        {document.data.constraint_tags.map((constraint) => <MetaPill label={constraint} tone="urgency" />)}
+      </div>
+    </article>
+  </section>
+
+  <section class="page-section two-column-section">
+    <article class="record-card">
+      <div class="eyebrow">FTFN Relevance</div>
+      <h2>How the record changes the research map.</h2>
+      <ul>
+        {document.data.ftfn_relevance.map((item) => <li>{item}</li>)}
+      </ul>
+    </article>
+    <article class="record-card">
+      <div class="eyebrow">Evidence Limits</div>
+      <h2>What it does not establish.</h2>
+      <ul>
+        {document.data.evidence_limits.map((item) => <li>{item}</li>)}
+      </ul>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Connected Records</div>
+        <h2>Follow the document through FTFN.</h2>
+      </div>
+    </div>
+    <div class="grid">
+      {collection && (
+        <article class="record-card">
+          <h3><a href={`/research/${collection.data.slug}/`}>{collection.data.title}</a></h3>
+          <p>Return to the full collection, all document summaries, and the single-file download.</p>
+        </article>
+      )}
+      {source && (
+        <article class="record-card">
+          <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+          <p>{source.data.known_limitations}</p>
+        </article>
+      )}
+      {document.data.primary_topics.map((topicName) => {
+        const topic = topicByName.get(topicName);
+        if (!topic) return null;
+
+        return (
+          <article class="record-card">
+            <h3><a href={`/atlas/topics/${topic.data.slug}/`}>{topic.data.name}</a></h3>
+            <p>{topic.data.summary}</p>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+</BaseLayout>

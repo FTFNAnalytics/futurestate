@@ -11,6 +11,7 @@ const organizations = await getCollection("organizations");
 const technologies = await getCollection("technologies");
 const localSystems = await getCollection("localSystems");
 const evidenceGaps = await getCollection("evidenceGaps");
+const researchDocuments = await getCollection("researchDocuments");
 const dependencyMaps = (await getCollection("dependencyMaps")).sort((a, b) =>
   a.data.title.localeCompare(b.data.title)
 );
@@ -60,6 +61,12 @@ const atlasSections = [
     summary: "A generated authority matrix showing source coverage by watch lane, topic, access type, and probe readiness."
   },
   {
+    title: "Research Collections",
+    href: "/research/",
+    count: researchDocuments.length,
+    summary: "Reviewed primary-document sets with per-document summaries, evidence limits, source profiles, topic links, and downloadable captures."
+  },
+  {
     title: "Organizations",
     href: "/atlas/organizations/",
     count: organizations.length,
@@ -99,8 +106,9 @@ const atlasSections = [
       <h1 class="page-title">The map behind the signal stream.</h1>
       <p class="lede">
         The Atlas is FTFN's structured reference layer: topics, sources,
-        organizations, technologies, local systems, evidence gaps, and
-        dependency maps connected by dependencies, constraints, and context.
+        research collections, organizations, technologies, local systems,
+        evidence gaps, and dependency maps connected by dependencies,
+        constraints, and context.
       </p>
       <div class="thesis">
         <span>The future is not a list of inventions.</span>

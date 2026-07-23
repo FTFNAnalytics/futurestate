@@ -1177,17 +1177,21 @@ Completed:
 - Refreshed the existing owner-only deployment to Sites version 7 from the exact Phase 55I source commit without changing access or DNS.
 - Completed Phase 55J publication review locally: added OMB M-26-04 to preserve the current policy stack and promoted all nine Phase 55I signals through the bounded gate, bringing the current contract to 153 sources, 45 signals, 25 Published, 20 In Review, 12 updates, and 261 pages.
 - Refreshed the existing owner-only deployment to Sites version 8 from exact Phase 55J source commit `03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37` without changing access or DNS.
+- Completed Phase 55K locally: added a dedicated Research section, 23 DARPA and U.S. Government primary-document summaries, 23 Tier 1 sources, five `In Review` synthesis signals, five organizations, one briefing, one dependency map, and a 26-file download archive.
+- Advanced the verified contract to 321 generated site pages, 176 sources, 50 signals, 25 Published, 25 In Review, 13 updates, one research collection, and 23 research documents while preserving owner-only access and the DNS stop point.
 
 Next candidate work:
 
+- Run Phase 55L as an eight-question implementation-evidence conversion pass across DARPA awards and program activity, appropriations and obligations, critical-material processing, semiconductor equipment and packaging, transmission delivery, advanced-nuclear demonstrations, AI infrastructure procurement, and 6G testing or standards.
+- Require a named award, contract, facility, field trial, production milestone, transmission action, or standards artifact before treating a direction-setting record as implementation evidence; keep additions `In Review` pending a separate publication gate.
 - Capture the first public federal agency post-quantum migration plan, procurement implementation, proposed FAR rule, or NIST pilot result.
 - Follow Project Baccara through the fully executed County record, condition compliance, service and precise-POD requirements, military-compatibility compliance, construction, testing, occupancy, and operating evidence.
 - Recheck Toronto application 24 254930 after the July 29-31, 2026 Council window for adoption, by-laws, and later permit records.
-- Preserve the owner-only Phase 55J checkpoint and complete the dated Phase 55H Council recheck after the July 29-31 meeting window.
+- Preserve the owner-only Phase 55K checkpoint and complete the dated Phase 55H Council recheck after the July 29-31 meeting window.
 - Complete Phase 55H with the post-meeting Toronto recheck; if no named official stage has advanced, record the dated result and stop.
 - Decide whether In Review local systems and dependency maps should remain indexable or move to clearer research/noindex treatment before launch.
 - Keep the unresolved local trails as dated monitors: completed wastewater and reclaimed-water infrastructure, Phoenix permits and occupancy, apprenticeship outcomes, Toronto City Council and by-laws, and project start/completion evidence.
-- Keep additional publication promotion behind a fresh publication-candidate review; the current public set is 16.
+- Keep additional publication promotion behind a fresh publication-candidate review; the current public set is 25.
 - Continue repairing broad In Review signals into dated source-backed records where the expanded source registry supports a specific update; the next acquisition cycle should be driven by named evidence gaps, not by another volume target.
 - Keep Supabase activation and any broad public source promotion batch separate from the bounded local content track.
 
