@@ -143,6 +143,12 @@ These items come from the 36-source Phase 49 promotion batch. They should be use
 | --- | --- | --- | --- | --- | --- |
 | uq-056 | Signal Repaired | `source-maricopa-project-baccara-mcp250007-2026`, `source-maricopa-baccara-proposed-air-permit-2026`, `source-kjzz-project-baccara-mcp-vote-2026` | Power and Grid / Water / Local Systems | Repaired the existing Project Baccara signal with the reported 4-1 military-compatibility vote, official conditions a-p, and proposed air-permit stage while preserving every construction and operating gate. | Obtain the County summary minutes or executed MCP, then track final Permit P0013417 and EPA review, service agreements, Plan of Development, military compliance, building permits, construction, occupancy, and measured operation. |
 
+## Batch 08: Phase 55G Baccara Authority Conversion
+
+| Queue ID | Status | Source | Watch Lane | Candidate Output | Human Next Action |
+| --- | --- | --- | --- | --- | --- |
+| uq-057 | Signal Repaired | `source-maricopa-baccara-board-action-2026`, `source-maricopa-baccara-final-air-permit-2026` | Power and Grid / Water / Local Systems | Converted the reported 4-1 vote and proposed-air-permit stopping point into an official County action record and signed final Title V permit while keeping the signal `In Review`. | Obtain the fully executed MCP and track service and water commitments, precise Plan of Development, military compliance, construction and building permits, performance testing, occupancy, emissions, and measured operation. |
+
 ## First Repair Priorities
 
 Start with these because they have existing signal records and clear repair paths:

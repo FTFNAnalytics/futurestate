@@ -33,13 +33,13 @@
   "build_command": "npm run build",
   "output_directory": "dist",
   "expected_build": {
-    "static_pages": 227,
+    "static_pages": 229,
     "signals": 36,
     "published_signals": 16,
     "in_review_signals": 20,
     "draft_sample_signals": 0,
     "published_support_sources": 30,
-    "sources": 128,
+    "sources": 130,
     "topics": 17,
     "organizations": 10,
     "technologies": 5,
@@ -47,7 +47,7 @@
     "briefings": 1,
     "evidence_gaps": 10,
     "dependency_maps": 2,
-    "updates": 8,
+    "updates": 9,
     "public_json_exports": 3
   },
   "private_authority_layer": {
@@ -65,13 +65,13 @@
     "public_output_policy": "Candidate records, IDs, private notes, and registry paths must not appear in static output or public exports."
   },
   "release_delta_from_v0_1_1": {
-    "static_pages_added": 45,
+    "static_pages_added": 47,
     "signals_added": 18,
     "published_signals_added": 13,
-    "sources_added": 26,
+    "sources_added": 28,
     "public_json_exports_added": 3,
     "public_update_log_added": true,
-    "summary": "Completes the first authority-loop content milestone, the bounded Phase 55E evidence expansion, and the Phase 55F publication review with 16 Published signals, a public update log, and versioned source, topic, and Published-signal exports."
+    "summary": "Completes the first authority-loop content milestone, the bounded Phase 55E evidence expansion, the Phase 55F publication review, and the Phase 55G Project Baccara authority conversion with 16 Published signals, a public update log, and versioned source, topic, and Published-signal exports."
   },
   "last_verified": {
     "date": "2026-07-23",
@@ -79,17 +79,17 @@
     "candidate_validation": "passed-150-local-only-records",
     "validate_content": "passed",
     "source_health": "passed",
-    "source_health_manual_review": 67,
+    "source_health_manual_review": 69,
     "source_health_probe_ready": 61,
     "source_monitor_review_due": 0,
     "source_monitor_watch_soon": 0,
-    "source_monitor_current": 128,
+    "source_monitor_current": 130,
     "source_coverage_strong_lanes": 14,
     "source_coverage_developing_lanes": 0,
     "source_coverage_weak_lanes": 0,
     "astro_check": "passed",
     "build": "passed",
-    "static_pages_built": 227,
+    "static_pages_built": 229,
     "release_assertions": "passed",
     "browser_qa": "passed-local",
     "browser_viewports": [
@@ -161,7 +161,7 @@
   },
   "release_gates": [
     "Run all predeploy commands from app/",
-    "Confirm 227 generated HTML pages and all required outputs",
+    "Confirm 229 generated HTML pages and all required outputs",
     "Confirm all 16 Published signal URLs are present in the sitemap",
     "Confirm every non-published signal URL is absent from the sitemap",
     "Confirm Published details use index, follow and non-published details use noindex, follow",
@@ -170,7 +170,7 @@
     "Confirm all three public JSON exports match the versioned allowlist contract",
     "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
     "Confirm generated output contains no private candidate IDs or registry-path references",
-    "Confirm the eight-entry public update log renders",
+    "Confirm the nine-entry public update log renders",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
     "Attach ftfn.io only after preview checks pass and explicit approval is recorded"
@@ -196,8 +196,8 @@
     "The public JSON files are static build exports, not a live API or database-backed service.",
     "The 150-record candidate registry is an ignored local file and requires private backup outside public Git.",
     "The optional bulk candidate-link audit was blocked by uniform outbound Node network failures in the verification environment; every candidate still requires live human confirmation before promotion.",
-    "The Project Baccara record stops at a reported conditional county vote and proposed air permit; it does not prove final permits, condition compliance, construction, occupancy, or operation.",
+    "The Project Baccara record now includes an official 4-1 County action and final active air permit, but it does not prove the fully executed MCP, condition compliance, service, construction, occupancy, or operation.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the Phase 55F publication review and the owner-only Sites version 4 deployment from commit 48a6f0379741b5d908ecf94c7765dcab27502ea0. Seven bounded records moved to Published and the Joby company-claim record remains In Review. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, or package freeze."
+  "notes": "This manifest records the locally verified Phase 55G Project Baccara authority conversion while the owner-only preview still serves Sites version 4 from commit 48a6f0379741b5d908ecf94c7765dcab27502ea0. The local package now includes the official County action and signed final air permit; the signal remains In Review. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, or package freeze."
 }
