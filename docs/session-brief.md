@@ -107,6 +107,7 @@ What is now stable:
 - Phase 55N added a 16-record implementation-outcomes and local-conversion collection, six source profiles and six `In Review` signals, reconciled four existing trails, added two briefings and four organizations, deepened both local dossiers and four evidence gaps, expanded the dependency map, and produced a verified 19-file archive.
 - Phase 55N exact source commit `c14551c7fad7e0ba6aac0e9e9ce03e5ad6189575` is deployed as owner-only Sites version 11 with no access or DNS change.
 - Phase 55M rechecked fourteen implementation signals against current primary sources, promoted thirteen bounded records, held the future DARPA Lift trial, and expanded the public set to 38 Published signals backed by 66 current sources without adding routes.
+- Phase 55M exact source commit `c1038783998234025ec2af65dae495272a263cc1` is deployed as owner-only Sites version 12 with no access or DNS change.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 66 sources supporting the 38 Published signals were checked on or after `2026-07-22`.
@@ -398,7 +399,7 @@ Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 owner-only hosted candidate: package 0.2.0-dev, 189 public sources, 150 first-pass-triaged private candidates, 63 signals, 17 topics, 16 updates, 380 generated site pages, 38 Published signals, 47 research documents, verified 26-file, 11-file, and 19-file research archives, and 3 public JSON endpoints. The owner-only Sites deployment will be refreshed from the exact Phase 55M source commit without changing access or DNS. Source Coverage is 14 Strong lanes; source health reports 116 Manual Review and 73 Probe Ready records.
+v0.2 owner-only hosted candidate: package 0.2.0-dev, 189 public sources, 150 first-pass-triaged private candidates, 63 signals, 17 topics, 16 updates, 380 generated site pages, 38 Published signals, 47 research documents, verified 26-file, 11-file, and 19-file research archives, and 3 public JSON endpoints. Sites version 12 serves exact source commit c1038783998234025ec2af65dae495272a263cc1 at https://ftfn-analytics.jbumstead.chatgpt.site under the unchanged owner-only access policy. Source Coverage is 14 Strong lanes; source health reports 116 Manual Review and 73 Probe Ready records.
 
 Next decision gate:
 Preserve the owner-only preview. Phase 55M is complete: thirteen records passed and the Lift Challenge remains In Review until official post-August 9 results. Complete Phase 55H after the 29-31 July 2026 Council window. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.

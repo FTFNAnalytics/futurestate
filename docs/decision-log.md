@@ -2302,7 +2302,9 @@ Implemented:
 - added record-specific correction triggers to the editorial notes,
 - added the sixteenth public update entry and the Phase 55M work package,
 - advanced the verified contract to 380 pages, 189 sources, 63 signals, 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources,
-- passed candidate validation, content validation, source health, Astro diagnostics, the production build, and release assertions.
+- passed candidate validation, content validation, source health, Astro diagnostics, the production build, and release assertions,
+- committed exact source as `c1038783998234025ec2af65dae495272a263cc1`,
+- deployed that source as owner-only Sites version 12 with one allowed owner, no groups, no public access, and no DNS change.
 
 Boundary:
 

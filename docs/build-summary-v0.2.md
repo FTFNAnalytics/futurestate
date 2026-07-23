@@ -41,7 +41,7 @@ Phase 55L converts eight Phase 55K research directions into named implementation
 
 Phase 55N follows those trails into later program actions and local conversion evidence. Its 16-record collection adds six new sources and six `In Review` signals covering an NSTC governance discontinuity, a GAO acquisition-data limit, a versioned O-RAN tool, a Phoenix facility-construction milestone, an active federal AI purchasing channel, and preliminary PIV post-quantum specifications. Two new briefings, four organization profiles, local-dossier repairs, evidence-gap updates, and an expanded dependency map preserve the difference between progress, interruption, oversight, availability, and outcomes. The 19-file bundle contains ten local captures, six official-link records, summaries, README, and a SHA-256 manifest. The package now contains 380 pages, 189 sources, 63 signals, five briefings, three research collections, 47 research documents, and 15 updates. Published membership remains 25. Sites version 11 serves exact source commit `c14551c7fad7e0ba6aac0e9e9ce03e5ad6189575` under the unchanged owner-only policy.
 
-Phase 55M applies the complete publication gate independently to the fourteen implementation signals created or materially repaired in Phases 55L and 55N. Thirteen pass as current, source-visible, bounded, and independently useful records. The DARPA Lift Challenge remains `In Review` because the August 2-9 field trial has not happened. The package remains at 380 pages, 189 sources, and 63 signals while moving to 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources. Public access, DNS, package version, research archives, and briefing status remain unchanged.
+Phase 55M applies the complete publication gate independently to the fourteen implementation signals created or materially repaired in Phases 55L and 55N. Thirteen pass as current, source-visible, bounded, and independently useful records. The DARPA Lift Challenge remains `In Review` because the August 2-9 field trial has not happened. The package remains at 380 pages, 189 sources, and 63 signals while moving to 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources. Sites version 12 serves exact source commit `c1038783998234025ec2af65dae495272a263cc1` under the unchanged owner-only policy.
 
 ## Build Inventory
 
@@ -157,7 +157,7 @@ Verified results:
 - three Published research collections with all 47 document routes in the sitemap,
 - verified 26-file, 11-file, and 19-file ZIP archives containing 37 local captures, ten official-link files, summaries, README files, and manifests.
 
-The current publication decision is in `docs/work-packages/phase-55m-publication-readiness-review.md`; the underlying evidence is documented in the Phase 55K, Phase 55L, and Phase 55N work packages. The owner-only deployment refresh is the remaining Phase 55M release step. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The current publication decision is in `docs/work-packages/phase-55m-publication-readiness-review.md`; the underlying evidence is documented in the Phase 55K, Phase 55L, and Phase 55N work packages. The owner-only deployment is current at Sites version 12 from exact source commit `c1038783998234025ec2af65dae495272a263cc1`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 

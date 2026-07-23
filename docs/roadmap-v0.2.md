@@ -398,7 +398,7 @@ Current stop point:
 - Phase 55L added eight implementation-evidence records, seven source profiles, seven new `In Review` signals, one repaired USAspending signal, one briefing, an expanded dependency map, and a verified 11-file download bundle,
 - Phase 55N added a 16-record outcome and local-conversion collection, six source profiles, six new `In Review` signals, two briefings, four organizations, integrated trail repairs, and a verified 19-file download bundle,
 - Phase 55M applied the publication gate separately to fourteen Phase 55L and Phase 55N signals, promoted thirteen bounded records, held the scheduled DARPA Lift trial, and advanced the release contract to 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources,
-- the branch remains unpushed to public GitHub; the exact Phase 55M source will replace the Phase 55N owner-only Sites version 11 checkpoint without changing access,
+- the branch remains unpushed to public GitHub; exact Phase 55M source commit `c1038783998234025ec2af65dae495272a263cc1` is deployed as owner-only Sites version 12 without changing access,
 - no custom domain is attached and Hostinger DNS remains unchanged,
 - the remaining Phase 55H action is the post-meeting recheck of Toronto application `24 254930` for Council disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit evidence,
 - Phase 55M is complete without treating awards, governance actions, oversight findings, software releases, construction milestones, procurement availability, or preliminary drafts as later-stage outcomes; keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors,
