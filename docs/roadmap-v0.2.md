@@ -395,7 +395,7 @@ Current stop point:
 - Phase 55I completed a first-pass triage of all 150 private candidates, added ten public monitoring rails plus 12 dated source records, added nine bounded `In Review` signals without changing Published membership, and deployed the exact 260-page / 152-source checkpoint as owner-only Sites version 7,
 - Phase 55J applied the existing publication gate to those nine additions, added OMB M-26-04 to preserve the current federal AI policy stack, and promoted all nine while retaining their implementation, adoption, outcome, facility, and site-service boundaries,
 - Phase 55K added a 23-document DARPA and U.S. Government research collection, 23 source profiles, five `In Review` synthesis signals, five organizations, one briefing, one dependency map, topic/source/technology backlinks, and a verified 26-file download bundle,
-- the branch remains unpushed to public GitHub; the Phase 55K owner-only Sites refresh follows the passed local release gate,
+- the branch remains unpushed to public GitHub; exact Phase 55K commit `37f3ca6956d752642989f04486d13ff0c4555813` is deployed as owner-only Sites version 9,
 - no custom domain is attached and Hostinger DNS remains unchanged,
 - the remaining Phase 55H action is the post-meeting recheck of Toronto application `24 254930` for Council disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit evidence,
 - before that window, use Phase 55L to seek named implementation evidence behind the strongest Phase 55K research directions and keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors,

@@ -2,7 +2,7 @@
 
 Date: 2026-07-23
 
-Status: locally complete and release-verified; owner-only Sites refresh pending
+Status: complete, release-verified, and deployed owner-only
 
 ## Goal
 
@@ -80,6 +80,16 @@ Release assertions confirm:
 - complete research sitemap membership;
 - the 26-file archive in generated output;
 - no private candidate ID or registry-path leak.
+
+## Owner-Only Deployment
+
+- Sites version: 9
+- Source commit: `37f3ca6956d752642989f04486d13ff0c4555813`
+- URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- Deployment status: succeeded
+- Access: custom owner-only policy, one allowed owner, no groups
+- Public access: not enabled
+- Custom domain and DNS: unchanged
 
 ## Next Content Step
 

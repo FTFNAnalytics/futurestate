@@ -35,7 +35,7 @@ Phase 55I completes the first-pass review of the remaining 90 private candidates
 
 Phase 55J applies the complete publication gate to the nine Phase 55I records. All nine pass as bounded, independently useful records; OMB M-26-04 is added first so the federal AI signal reflects the current three-memorandum stack. The package now contains 261 pages, 153 sources, 45 signals, 25 Published signals, 20 In Review signals, and 12 updates. Sites version 8 serves the exact Phase 55J source under the unchanged owner-only policy.
 
-Phase 55K adds a dedicated research layer built from 23 recent DARPA and U.S. Government primary documents. Every document now has a reviewed summary, findings, relevance, evidence limits, source profile, topic links, and a local capture or explicit link-only record. The 26-file download bundle contains 22 official captures, one Defense Department official-link file, consolidated summaries, a README, and a checksum manifest. The package now contains 321 generated site pages, 176 sources, 50 signals, 15 organizations, two briefings, three dependency maps, one research collection, 23 research documents, and 13 updates. The five synthesis signals, new briefing, and new map remain `In Review`; public access and DNS remain deferred.
+Phase 55K adds a dedicated research layer built from 23 recent DARPA and U.S. Government primary documents. Every document now has a reviewed summary, findings, relevance, evidence limits, source profile, topic links, and a local capture or explicit link-only record. The 26-file download bundle contains 22 official captures, one Defense Department official-link file, consolidated summaries, a README, and a checksum manifest. The package now contains 321 generated site pages, 176 sources, 50 signals, 15 organizations, two briefings, three dependency maps, one research collection, 23 research documents, and 13 updates. Sites version 9 serves exact source commit `37f3ca6956d752642989f04486d13ff0c4555813` under the unchanged owner-only policy. The five synthesis signals, new briefing, and new map remain `In Review`; public access and DNS remain deferred.
 
 ## Build Inventory
 
@@ -145,7 +145,7 @@ Verified results:
 - one Published research collection with all 23 document routes in the sitemap,
 - a verified 26-file ZIP archive containing 22 local captures, one official-link file, summaries, README, and manifest.
 
-The local and hosted Phase 55J evidence is in `docs/release-qa-v0.2.md` and `docs/work-packages/phase-55j-publication-readiness-review.md`; the initial hosted evidence is in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only preview is current at Sites version 8 from exact source commit `03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The current Phase 55K evidence is in `docs/work-packages/phase-55k-darpa-usg-research-collection.md`; the initial hosted evidence remains in `docs/work-packages/phase-55d-owner-only-sites-preview.md`. The owner-only deployment is current at Sites version 9 from exact source commit `37f3ca6956d752642989f04486d13ff0c4555813`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 

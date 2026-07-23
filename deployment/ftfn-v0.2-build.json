@@ -12,10 +12,10 @@
     "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
     "access": "owner-only-custom-policy",
     "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
-    "current_source_commit": "03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37",
-    "current_version_number": 8,
+    "current_source_commit": "37f3ca6956d752642989f04486d13ff0c4555813",
+    "current_version_number": 9,
     "custom_domain_attached": false,
-    "post_deploy_qa": "passed"
+    "post_deploy_qa": "passed-deployment-status-and-owner-only-access-policy"
   },
   "canonical_site": "https://ftfn.io",
   "app_root": "app",
@@ -110,14 +110,14 @@
     "build": "passed",
     "static_pages_built": 321,
     "release_assertions": "passed",
-    "browser_qa": "passed-local-and-focused-hosted",
+    "browser_qa": "passed-local-phase-55k; hosted-visual-qa-not-rerun",
     "browser_viewports": [
       "1440x900",
       "390x844"
     ],
     "browser_routes_checked": 10,
     "hosted_routes_checked": 5,
-    "preview_qa": "pending-owner-only-phase-55k-deployment"
+    "preview_qa": "passed-owner-only-version-9-deployment-and-access"
   },
   "required_output_files": [
     "dist/index.html",
@@ -237,5 +237,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the locally verified Phase 55K DARPA and U.S. Government research collection layered onto the owner-only Phase 55J preview. The collection contains 23 reviewed document summaries, 22 official local captures, one official-link record, 23 Tier 1 source profiles, five In Review synthesis signals, one In Review briefing, and one In Review dependency map. Deployment metadata remains at the Phase 55J Sites version until the Phase 55K owner-only deployment completes. Access must remain custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
+  "notes": "This manifest records the locally verified and owner-only deployed Phase 55K DARPA and U.S. Government research collection. The collection contains 23 reviewed document summaries, 22 official local captures, one official-link record, 23 Tier 1 source profiles, five In Review synthesis signals, one In Review briefing, and one In Review dependency map. Sites version 9 serves source commit 37f3ca6956d752642989f04486d13ff0c4555813. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
 }
