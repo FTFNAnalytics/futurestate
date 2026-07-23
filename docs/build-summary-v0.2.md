@@ -33,20 +33,22 @@ Phase 55H begins with a pre-decision authority gate because Toronto's July 29-31
 
 Phase 55I completes the first-pass review of the remaining 90 private candidates. Ten candidates become public monitoring rails, 12 dated official records support nine new `In Review` signals, and the Phoenix and Toronto local-system evidence trails gain workforce, water, electricity, and infrastructure-planning context. The package reaches 260 pages, 152 sources, 45 signals, and 11 updates while preserving 16 Published signals. Sites version 7 serves the exact Phase 55I commit under the unchanged owner-only policy; the public-launch, DNS, package-freeze, and publication-promotion gates remain closed.
 
+Phase 55J applies the complete publication gate to the nine Phase 55I records. All nine pass as bounded, independently useful records; OMB M-26-04 is added first so the federal AI signal reflects the current three-memorandum stack. The package now contains 261 pages, 153 sources, 45 signals, 25 Published signals, 20 In Review signals, and 12 updates. The owner-only Sites refresh is the only remaining Phase 55J execution step.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 260 | +78 |
-| Sources | 102 | 152 | +50 |
+| Generated HTML pages | 182 | 261 | +79 |
+| Sources | 102 | 153 | +51 |
 | Signals | 18 | 45 | +27 |
-| Published signals | 3 | 16 | +13 |
-| In Review signals | 14 | 29 | +15 |
+| Published signals | 3 | 25 | +22 |
+| In Review signals | 14 | 20 | +6 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 11 | +11 |
+| Public update entries | 0 | 12 | +12 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
@@ -75,11 +77,11 @@ The public application includes:
 
 The editorial and authority layer includes:
 
-- 152 structured source records with authority, freshness, access, monitoring, and review metadata,
+- 153 structured source records with authority, freshness, access, monitoring, and review metadata,
 - 45 bounded signal records with explicit claim and evidence limits,
-- 16 Published signals backed by 30 sources checked on or after 2026-07-22,
+- 25 Published signals backed by 51 sources checked on or after 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
-- a public eleven-entry update and correction log,
+- a public twelve-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
@@ -118,11 +120,13 @@ Phase 55H refreshed the Toronto item and permit rails without claiming a future 
 
 Phase 55I reviewed the remaining 90 private candidates, eliminated the `Needs Triage` backlog, added 22 public source records and nine bounded `In Review` signals, and repaired both local-system dossiers without changing Published membership. The result is 260 pages, 152 public sources, 45 signals, 16 Published, 29 In Review, and 11 public updates. Source Monitor reports zero Review Due, zero Watch Soon, and 152 Current records; Source Coverage remains 14 Strong, zero Developing, and zero Weak lanes.
 
+Phase 55J added the later OMB policy memorandum and promoted all nine Phase 55I signals after a separate source, claim, citation, caveat, metadata, correction-path, and reader-usefulness review. The current local result is 261 pages, 153 public sources, 45 signals, 25 Published, 20 In Review, and 12 public updates. The Published set resolves to 51 current support sources.
+
 Verified results:
 
-- 260 generated HTML pages,
-- exact exports for 152 sources, 17 topics, and 16 Published signals,
-- all 16 Published signal routes included in the sitemap,
+- 261 generated HTML pages,
+- exact exports for 153 sources, 17 topics, and 25 Published signals,
+- all 25 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
 - correct canonical, robots, and publication-state indexing boundaries,
 - ten core journeys checked at `1440x900` and `390x844`,
@@ -144,7 +148,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Twenty-nine signals remain `In Review`; the nine Phase 55I additions require a separate publication review, and the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F.
+- Twenty signals remain `In Review`; the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F.
 - The briefing, dependency maps, and local-system profiles remain prelaunch or research material.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - The Project Baccara record now includes an official 4-1 County action and active final air permit; the fully executed MCP, condition compliance, service, construction, testing, occupancy, and operation remain unverified.
@@ -178,4 +182,4 @@ npm.cmd run build
 npm.cmd run verify:release
 ```
 
-Expected output: 260 HTML pages and a passing v0.2 release assertion.
+Expected output: 261 HTML pages and a passing v0.2 release assertion.

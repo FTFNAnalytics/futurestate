@@ -1216,12 +1216,34 @@ Do not use it for:
 - Treating source selection as proof of the claims found through that source.
 - Authorizing a Published promotion, public access, custom-domain attachment, package freeze, or Hostinger DNS changes.
 
+### Phase 55J Publication-Readiness Review
+
+Purpose:
+
+- Record the independent publication decision for all nine Phase 55I signals.
+- Preserve the OMB M-26-04 current-policy repair and the evidence boundary for each promoted record.
+- Record the resulting 25-Published / 20-In-Review release contract.
+- Preserve owner-only access, DNS, public-GitHub, and package-freeze boundaries.
+
+Update when:
+
+- a promoted source is amended, rescinded, corrected, or superseded,
+- a material claim or evidence boundary changes,
+- a later implementation, adoption, facility, connection, or outcome record advances one of the open conversion stages,
+- the exact owner-only deployment checkpoint or hosted verification changes.
+
+Do not use it for:
+
+- Treating publication as proof of implementation or outcomes.
+- Publishing private candidate material.
+- Authorizing public access, custom-domain attachment, package freeze, public GitHub synchronization, or Hostinger DNS changes.
+
 ### v0.2 Build Manifest
 
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 260-page build, 16 Published signals, 152 sources, 11 updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 261-page build, 25 Published signals, 153 sources, 12 updates, three exports, required outputs, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 

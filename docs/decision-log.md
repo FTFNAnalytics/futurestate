@@ -2185,3 +2185,26 @@ Implemented:
 Boundary:
 
 Policy is not implementation; planned spending is not constructed supply; research awards are not deployed infrastructure; regional workforce data is not facility hiring; and system-level water or electricity planning is not project-level capacity. Candidate IDs, private notes, registry structure, and non-promoted candidate contents remain local-only. No Published promotion, public GitHub synchronization, public access, package freeze, custom-domain attachment, Hostinger DNS change, or public launch was authorized.
+
+## 2026-07-23: Phase 55J Publishes All Nine Phase 55I Records After A Current-Policy Repair
+
+Decision:
+
+FTFN will publish all nine Phase 55I signals after an independent record-by-record gate and will repair the OMB record with M-26-04 before promotion.
+
+Rationale:
+
+Each record is tied to a named official or primary source item, makes an independently useful bounded claim, exposes its evidence limits, and preserves the missing conversion stages. The local workforce, water, and electricity records are publishable because their claims stop at measured metropolitan or system-planning evidence rather than asserting facility readiness or site service. OMB M-26-04 explicitly complements M-25-21 and M-25-22, so adding it prevents the April 2025 pair from being presented as the complete current policy stack.
+
+Implemented:
+
+- added OMB M-26-04 as a separately authored public source record,
+- revised the OMB signal to cover the three-memorandum use, acquisition, and covered-LLM stack,
+- moved all nine Phase 55I signals from `In Review` to `Published`,
+- added the twelfth public update entry and the Phase 55J work package,
+- expanded the release contract to 153 sources, 45 signals, 25 Published, 20 In Review, 12 updates, 51 Published-support sources, and 261 generated pages,
+- preserved public correction paths and record-specific evidence limits.
+
+Boundary:
+
+Publication does not convert policy into implementation, beta infrastructure into adoption, planned spending into output, guidance into product authorization, participation into impact, awards into deployed services, metropolitan estimates into workforce sufficiency, citywide plans into site capacity, or provincial forecasts into a connection commitment. Owner-only access, public GitHub synchronization, package freeze, custom-domain attachment, Hostinger DNS changes, and public launch remain separate decisions.

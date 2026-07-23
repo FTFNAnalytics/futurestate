@@ -239,6 +239,15 @@ Phase 55F third publication-gate result:
 - Aggregate analysis, crash-report data, funding, hardware, awards, permits, and prizes remain explicitly bounded from local capacity, normalized safety, qualification, launch readiness, field results, housing delivery, or deployment claims.
 - A public Publication Promotion entry and the Phase 55F work package record the decision and correction path.
 
+Phase 55J fourth publication-gate result:
+
+- All nine Phase 55I records passed a separate source, claim, citation, caveat, metadata, correction-path, and reader-usefulness review.
+- The Published set now contains 25 signals backed by 51 current source records.
+- OMB M-26-04 was added before publication because it explicitly complements M-25-21 and M-25-22 and preserves the current federal AI policy stack.
+- The two local-system records are publishable as bounded planning and constraint evidence; they do not claim site capacity, service, connection, or project delivery.
+- Policy, beta infrastructure, planned spending, regulatory guidance, program reach, awards, metropolitan estimates, citywide capital plans, and provincial forecasts remain separated from implementation and outcomes.
+- A public Publication Promotion entry and the Phase 55J work package record the decisions and correction path.
+
 ## Open Questions
 
 - Should `In Review` remain linked from public indexes after public launch, or move behind a clearer research/prelaunch route?

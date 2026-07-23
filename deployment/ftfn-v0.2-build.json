@@ -33,13 +33,13 @@
   "build_command": "npm run build",
   "output_directory": "dist",
   "expected_build": {
-    "static_pages": 260,
+    "static_pages": 261,
     "signals": 45,
-    "published_signals": 16,
-    "in_review_signals": 29,
+    "published_signals": 25,
+    "in_review_signals": 20,
     "draft_sample_signals": 0,
-    "published_support_sources": 30,
-    "sources": 152,
+    "published_support_sources": 51,
+    "sources": 153,
     "topics": 17,
     "organizations": 10,
     "technologies": 5,
@@ -47,7 +47,7 @@
     "briefings": 1,
     "evidence_gaps": 10,
     "dependency_maps": 2,
-    "updates": 11,
+    "updates": 12,
     "public_json_exports": 3
   },
   "private_authority_layer": {
@@ -68,13 +68,13 @@
     "public_output_policy": "Candidate records, IDs, private notes, and registry paths must not appear in static output or public exports."
   },
   "release_delta_from_v0_1_1": {
-    "static_pages_added": 78,
+    "static_pages_added": 79,
     "signals_added": 27,
-    "published_signals_added": 13,
-    "sources_added": 50,
+    "published_signals_added": 22,
+    "sources_added": 51,
     "public_json_exports_added": 3,
     "public_update_log_added": true,
-    "summary": "Completes the first authority-loop content milestone and the Phase 55I remaining-candidate review with all 150 private candidates triaged, 152 public sources, 45 signals, 16 Published signals, 11 public updates, and versioned source, topic, and Published-signal exports."
+    "summary": "Completes the Phase 55J publication-readiness review with all nine Phase 55I signals promoted after bounded source and claim review, 153 public sources, 45 signals, 25 Published signals, 12 public updates, and versioned source, topic, and Published-signal exports."
   },
   "last_verified": {
     "date": "2026-07-23",
@@ -82,17 +82,17 @@
     "candidate_validation": "passed-150-local-only-records",
     "validate_content": "passed",
     "source_health": "passed",
-    "source_health_manual_review": 87,
+    "source_health_manual_review": 88,
     "source_health_probe_ready": 65,
     "source_monitor_review_due": 0,
     "source_monitor_watch_soon": 0,
-    "source_monitor_current": 152,
+    "source_monitor_current": 153,
     "source_coverage_strong_lanes": 14,
     "source_coverage_developing_lanes": 0,
     "source_coverage_weak_lanes": 0,
     "astro_check": "passed",
     "build": "passed",
-    "static_pages_built": 260,
+    "static_pages_built": 261,
     "release_assertions": "passed",
     "browser_qa": "passed-local-and-focused-hosted",
     "browser_viewports": [
@@ -131,7 +131,16 @@
     "/signals/srp-e67-large-load-service-conditions/",
     "/signals/srp-project-huckleberry-meta-mesa-online-service/",
     "/signals/toronto-2025-development-pipeline-delivery-gap/",
-    "/signals/usgs-2026-gallium-import-supplied-semiconductor-constraint/"
+    "/signals/usgs-2026-gallium-import-supplied-semiconductor-constraint/",
+    "/signals/omb-federal-ai-use-acquisition-operating-controls/",
+    "/signals/nist-metis-semiconductor-metrology-data-infrastructure/",
+    "/signals/canada-2026-critical-minerals-funding-agreement-pipeline/",
+    "/signals/cfia-2026-plant-novel-trait-assessment-authorization-boundary/",
+    "/signals/nairr-two-year-progress-sustained-ai-research-infrastructure/",
+    "/signals/nsf-2026-idss-data-infrastructure-awards/",
+    "/signals/phoenix-2025-occupational-wage-workforce-baseline/",
+    "/signals/toronto-water-2026-capital-plan-delivery-reserve-constraints/",
+    "/signals/ontario-2026-power-demand-data-centres-toronto-distribution/"
   ],
   "launch_critical_routes": [
     "/",
@@ -165,16 +174,16 @@
   },
   "release_gates": [
     "Run all predeploy commands from app/",
-    "Confirm 260 generated HTML pages and all required outputs",
-    "Confirm all 16 Published signal URLs are present in the sitemap",
+    "Confirm 261 generated HTML pages and all required outputs",
+    "Confirm all 25 Published signal URLs are present in the sitemap",
     "Confirm every non-published signal URL is absent from the sitemap",
     "Confirm Published details use index, follow and non-published details use noindex, follow",
     "Confirm canonical URLs and robots output use https://ftfn.io",
-    "Confirm all 30 sources supporting Published signals were checked on or after 2026-07-22",
+    "Confirm all 51 sources supporting Published signals were checked on or after 2026-07-22",
     "Confirm all three public JSON exports match the versioned allowlist contract",
     "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
     "Confirm generated output contains no private candidate IDs or registry-path references",
-    "Confirm the eleven-entry public update log renders",
+    "Confirm the twelve-entry public update log renders",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
     "Attach ftfn.io only after preview checks pass and explicit approval is recorded"
@@ -194,9 +203,9 @@
     "numeric 42/59 scoring"
   ],
   "known_limitations": [
-    "The package version remains 0.2.0-dev until an approved preview and release decision.",
+    "The package version remains 0.2.0-dev until an approved public release decision.",
     "The hosted Sites URL is owner-only and has not been made public or attached to ftfn.io.",
-    "Twenty-nine signals, one briefing, two dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
+    "Twenty signals, one briefing, two dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
     "The public JSON files are static build exports, not a live API or database-backed service.",
     "The 150-record candidate registry is an ignored local file and requires private backup outside public Git.",
     "The optional bulk candidate-link audit was blocked by uniform outbound Node network failures in the verification environment; every candidate still requires live human confirmation before promotion.",
@@ -204,5 +213,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the locally and post-deploy verified Phase 55I remaining-candidate review and content expansion. All 150 private candidates now have a first-pass triage state; ten selected monitoring rails and twelve dated source records support nine new In Review signals plus local-system repairs. Sites version 7 serves exact source commit 8ce2feba82a3ade2266e2d74788c003bca28a26f. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, Published promotion, or package freeze."
+  "notes": "This manifest records the locally verified Phase 55J publication-readiness review. All nine Phase 55I signals passed the bounded publication gate; OMB M-26-04 was added to preserve the current federal AI policy stack. The existing Sites version 7 checkpoint remains owner-only until the exact Phase 55J source is committed and deployed. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
 }

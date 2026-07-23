@@ -1175,13 +1175,14 @@ Completed:
 - Began Phase 55H with a verified pre-decision gate: Toronto schedules item `2026.SC33.9` for July 29-31, identifies the conditions that precede amendment enactment, and returns bounded negative permit markers across all eight project addresses; owner-only Sites version 6 serves the exact checkpoint.
 - Completed Phase 55I: all 150 private candidates now have a first-pass triage state, ten selected monitoring rails became separately authored public source records, 12 dated official records support nine new `In Review` signals, and the Published set remains unchanged.
 - Refreshed the existing owner-only deployment to Sites version 7 from the exact Phase 55I source commit without changing access or DNS.
+- Completed Phase 55J publication review locally: added OMB M-26-04 to preserve the current policy stack and promoted all nine Phase 55I signals through the bounded gate, bringing the current contract to 153 sources, 45 signals, 25 Published, 20 In Review, 12 updates, and 261 pages.
 
 Next candidate work:
 
 - Capture the first public federal agency post-quantum migration plan, procurement implementation, proposed FAR rule, or NIST pilot result.
 - Follow Project Baccara through the fully executed County record, condition compliance, service and precise-POD requirements, military-compatibility compliance, construction, testing, occupancy, and operating evidence.
 - Recheck Toronto application 24 254930 after the July 29-31, 2026 Council window for adoption, by-laws, and later permit records.
-- Run Phase 55J as a separate publication-readiness review of the nine Phase 55I additions; promotion remains optional and record-by-record.
+- Refresh the exact Phase 55J checkpoint on the existing owner-only Site without changing access or DNS.
 - Complete Phase 55H with the post-meeting Toronto recheck; if no named official stage has advanced, record the dated result and stop.
 - Decide whether In Review local systems and dependency maps should remain indexable or move to clearer research/noindex treatment before launch.
 - Keep the unresolved local trails as dated monitors: completed wastewater and reclaimed-water infrastructure, Phoenix permits and occupancy, apprenticeship outcomes, Toronto City Council and by-laws, and project start/completion evidence.

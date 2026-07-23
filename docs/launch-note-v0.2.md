@@ -10,7 +10,7 @@ Most future-facing coverage starts with an invention, a company claim, or a dram
 
 Version 0.2 is the first complete authority-loop candidate. The current owner-only build includes:
 
-- 16 Published signals grounded in official, primary, or clearly labeled credible-analysis sources,
+- 25 Published signals grounded in official, primary, or clearly labeled credible-analysis sources,
 - a 128-source evidence library with visible freshness and review metadata,
 - an Atlas connecting topics, sources, organizations, technologies, local systems, evidence gaps, and dependency maps,
 - a public method and publication policy,
