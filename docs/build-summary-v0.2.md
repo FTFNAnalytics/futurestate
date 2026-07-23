@@ -41,6 +41,8 @@ Phase 55L converts eight Phase 55K research directions into named implementation
 
 Phase 55N follows those trails into later program actions and local conversion evidence. Its 16-record collection adds six new sources and six `In Review` signals covering an NSTC governance discontinuity, a GAO acquisition-data limit, a versioned O-RAN tool, a Phoenix facility-construction milestone, an active federal AI purchasing channel, and preliminary PIV post-quantum specifications. Two new briefings, four organization profiles, local-dossier repairs, evidence-gap updates, and an expanded dependency map preserve the difference between progress, interruption, oversight, availability, and outcomes. The 19-file bundle contains ten local captures, six official-link records, summaries, README, and a SHA-256 manifest. The package now contains 380 pages, 189 sources, 63 signals, five briefings, three research collections, 47 research documents, and 15 updates. Published membership remains 25. Sites version 11 serves exact source commit `c14551c7fad7e0ba6aac0e9e9ce03e5ad6189575` under the unchanged owner-only policy.
 
+Phase 55M applies the complete publication gate independently to the fourteen implementation signals created or materially repaired in Phases 55L and 55N. Thirteen pass as current, source-visible, bounded, and independently useful records. The DARPA Lift Challenge remains `In Review` because the August 2-9 field trial has not happened. The package remains at 380 pages, 189 sources, and 63 signals while moving to 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources. Public access, DNS, package version, research archives, and briefing status remain unchanged.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
@@ -50,11 +52,11 @@ The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 | Generated HTML pages | 182 | 380 | +198 |
 | Sources | 102 | 189 | +87 |
 | Signals | 18 | 63 | +45 |
-| Published signals | 3 | 25 | +22 |
-| In Review signals | 14 | 38 | +24 |
+| Published signals | 3 | 38 | +35 |
+| In Review signals | 14 | 25 | +11 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 15 | +15 |
+| Public update entries | 0 | 16 | +16 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
@@ -88,9 +90,9 @@ The editorial and authority layer includes:
 
 - 189 structured source records with authority, freshness, access, monitoring, and review metadata,
 - 63 bounded signal records with explicit claim and evidence limits,
-- 25 Published signals backed by 51 sources checked on or after 2026-07-22,
+- 38 Published signals backed by 66 sources checked on or after 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
-- a public fifteen-entry update and correction log,
+- a public sixteen-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
@@ -137,11 +139,13 @@ Phase 55L added seven Tier 1 source profiles, eight reviewed implementation-docu
 
 Phase 55N added six Tier 1 source profiles, sixteen reviewed implementation and local-conversion document records, six bounded `In Review` signals, two `In Review` briefings, four organizations, integrated repairs across four earlier signals, two local systems, four evidence gaps, six topics, two technologies, and the federal research dependency map, plus a verified 19-file archive. The local result is 380 generated pages, 189 sources, 63 signals, 25 Published, 38 In Review, and 15 public updates. Source health reports 116 Manual Review and 73 Probe Ready records; the Published support set remains unchanged.
 
+Phase 55M rechecked fourteen implementation records against current official sources and the full publication policy. Thirteen records moved to `Published`; the scheduled DARPA Lift Challenge stayed `In Review`. The local result remains 380 generated pages, 189 sources, and 63 signals, with 38 Published, 25 In Review, 16 public updates, and 66 current Published-support sources. Candidate validation, content validation, source health, Astro diagnostics, production build, sitemap, indexing, exports, research archives, and release assertions all pass.
+
 Verified results:
 
 - 380 generated site pages,
-- exact exports for 189 sources, 17 topics, and 25 Published signals,
-- all 25 Published signal routes included in the sitemap,
+- exact exports for 189 sources, 17 topics, and 38 Published signals,
+- all 38 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
 - correct canonical, robots, and publication-state indexing boundaries,
 - ten core journeys checked at `1440x900` and `390x844`,
@@ -153,7 +157,7 @@ Verified results:
 - three Published research collections with all 47 document routes in the sitemap,
 - verified 26-file, 11-file, and 19-file ZIP archives containing 37 local captures, ten official-link files, summaries, README files, and manifests.
 
-The current Phase 55N evidence is in `docs/work-packages/phase-55n-implementation-outcomes-local-conversion.md`; the earlier research layers are documented in the Phase 55K and Phase 55L work packages. The owner-only deployment is current at Sites version 11 from exact source commit `c14551c7fad7e0ba6aac0e9e9ce03e5ad6189575`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The current publication decision is in `docs/work-packages/phase-55m-publication-readiness-review.md`; the underlying evidence is documented in the Phase 55K, Phase 55L, and Phase 55N work packages. The owner-only deployment refresh is the remaining Phase 55M release step. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 
@@ -165,7 +169,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Thirty-eight signals remain `In Review`; the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F.
+- Twenty-five signals remain `In Review`; the DARPA Lift Challenge is the explicit future-trial hold and the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F.
 - The five briefings, three dependency maps, and local-system profiles remain prelaunch or research material.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.

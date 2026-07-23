@@ -38,10 +38,10 @@
   "expected_build": {
     "static_pages": 380,
     "signals": 63,
-    "published_signals": 25,
-    "in_review_signals": 38,
+    "published_signals": 38,
+    "in_review_signals": 25,
     "draft_sample_signals": 0,
-    "published_support_sources": 51,
+    "published_support_sources": 66,
     "sources": 189,
     "topics": 17,
     "organizations": 19,
@@ -52,7 +52,7 @@
     "dependency_maps": 3,
     "research_collections": 3,
     "research_documents": 47,
-    "updates": 15,
+    "updates": 16,
     "public_json_exports": 3
   },
   "private_authority_layer": {
@@ -75,11 +75,11 @@
   "release_delta_from_v0_1_1": {
     "static_pages_added": 198,
     "signals_added": 45,
-    "published_signals_added": 22,
+    "published_signals_added": 35,
     "sources_added": 87,
     "public_json_exports_added": 3,
     "public_update_log_added": true,
-    "summary": "Extends the Phase 55K and Phase 55L research baseline with Phase 55N implementation outcomes and local conversion: 189 public sources, 63 signals, 25 Published signals, 15 public updates, three research collections, 47 summarized research documents, and versioned source, topic, and Published-signal exports."
+    "summary": "Extends the Phase 55K, Phase 55L, and Phase 55N evidence baseline with a record-by-record Phase 55M publication gate: 189 public sources, 63 signals, 38 Published signals, 16 public updates, three research collections, 47 summarized research documents, and versioned source, topic, and Published-signal exports."
   },
   "phase_55k_delta": {
     "static_pages_added": 60,
@@ -124,6 +124,15 @@
     "archive_file_count": 19,
     "archive_sha256": "97BA55C17B94F459EB92C3854C00BF7E9E134DAD89D04A7798EFDD80D3EAF62C"
   },
+  "phase_55m_delta": {
+    "signals_reviewed": 14,
+    "signals_promoted": 13,
+    "signals_held_in_review": 1,
+    "published_support_sources_added": 15,
+    "public_update_entries_added": 1,
+    "generated_pages_added": 0,
+    "hold_signal_id": "signal-darpa-lift-challenge-2026-scheduled-field-trial"
+  },
   "last_verified": {
     "date": "2026-07-23",
     "published_support_minimum_date": "2026-07-22",
@@ -142,7 +151,7 @@
     "build": "passed",
     "static_pages_built": 380,
     "release_assertions": "passed",
-    "browser_qa": "passed-local-phase-55k; phase-55l-and-phase-55n-visual-qa-not-requested",
+    "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-55m-visual-qa-not-requested",
     "browser_viewports": [
       "1440x900",
       "390x844"
@@ -198,7 +207,20 @@
     "/signals/nsf-2026-idss-data-infrastructure-awards/",
     "/signals/phoenix-2025-occupational-wage-workforce-baseline/",
     "/signals/toronto-water-2026-capital-plan-delivery-reserve-constraints/",
-    "/signals/ontario-2026-power-demand-data-centres-toronto-distribution/"
+    "/signals/ontario-2026-power-demand-data-centres-toronto-distribution/",
+    "/signals/usaspending-talon-nickel-battery-minerals-processing-award/",
+    "/signals/dod-mp-materials-heavy-rare-earth-separation-loan/",
+    "/signals/nist-napmp-advanced-packaging-final-awards/",
+    "/signals/doe-southline-transmission-capacity-contract-award/",
+    "/signals/project-pele-first-triso-fuel-delivery/",
+    "/signals/dod-openai-prototype-ota-initial-obligation/",
+    "/signals/nist-oran-testbed-standards-artifacts/",
+    "/signals/commerce-nist-assumes-nstc-operations/",
+    "/signals/gao-prototype-ota-transition-tracking-gap/",
+    "/signals/nist-oran-testbed-automation-v17/",
+    "/signals/phoenix-tsmc-fab3-topping-out/",
+    "/signals/gsa-onegov-ai-procurement-channel/",
+    "/signals/nist-piv-pqc-working-drafts/"
   ],
   "launch_critical_routes": [
     "/",
@@ -240,15 +262,15 @@
   "release_gates": [
     "Run all predeploy commands from app/",
     "Confirm 380 generated HTML pages and all required outputs",
-    "Confirm all 25 Published signal URLs are present in the sitemap",
+    "Confirm all 38 Published signal URLs are present in the sitemap",
     "Confirm every non-published signal URL is absent from the sitemap",
     "Confirm Published details use index, follow and non-published details use noindex, follow",
     "Confirm canonical URLs and robots output use https://ftfn.io",
-    "Confirm all 51 sources supporting Published signals were checked on or after 2026-07-22",
+    "Confirm all 66 sources supporting Published signals were checked on or after 2026-07-22",
     "Confirm all three public JSON exports match the versioned allowlist contract",
     "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
     "Confirm generated output contains no private candidate IDs or registry-path references",
-    "Confirm the fifteen-entry public update log renders",
+    "Confirm the sixteen-entry public update log renders",
     "Confirm all three research collections render all 47 document summaries and their 26-file, 11-file, and 19-file ZIP archives",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
@@ -271,7 +293,7 @@
   "known_limitations": [
     "The package version remains 0.2.0-dev until an approved public release decision.",
     "The hosted Sites URL is owner-only and has not been made public or attached to ftfn.io.",
-    "Thirty-eight signals, five briefings, three dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
+    "Twenty-five signals, five briefings, three dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
     "The 2026 National Defense Strategy is represented in the downloadable collection by an official-link file because the Defense Department host allowed review but suppressed automated export; the other 22 records have local captures.",
     "The Phase 55L download contains five official local captures and three official-link records because the Department of War and Idaho National Laboratory hosts allowed review but blocked automated export.",
     "The Phase 55N download contains ten official local captures and six official-link records because several official hosts blocked or complicated automated export; direct official URLs are preserved instead of third-party substitutes.",
@@ -282,5 +304,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the locally verified and owner-only deployed Phase 55N implementation-outcomes and local-conversion expansion. Phase 55N adds sixteen reviewed document records, six Tier 1 source profiles, six In Review signals, two In Review briefings, four organizations, integrated trail and local-dossier repairs, and a 19-file archive. Sites version 11 serves exact source commit c14551c7fad7e0ba6aac0e9e9ce03e5ad6189575. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
+  "notes": "This manifest records the Phase 55M record-by-record publication review of the combined Phase 55L and Phase 55N implementation set. Thirteen bounded records move to Published; the scheduled DARPA Lift Challenge trial remains In Review pending official post-event evidence. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
 }

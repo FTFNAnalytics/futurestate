@@ -1291,7 +1291,7 @@ Do not use it for:
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 345-page build, 25 Published signals, 183 sources, 14 updates, 31 research documents, two required archives, three exports, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 380-page build, 38 Published signals, 189 sources, 16 updates, 47 research documents, three required archives, three exports, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 
@@ -1424,3 +1424,29 @@ Update when:
 Boundary:
 
 A later program action does not automatically cancel every earlier award. A department-wide oversight gap is not evidence that a named prototype failed. A versioned tool, topped-out building, purchasing channel, or preliminary draft is not an operational outcome.
+
+### Phase 55M Publication-Readiness Review
+
+Purpose:
+
+- Record the separate publication decision for each of the fourteen Phase 55L and Phase 55N implementation signals.
+- Document thirteen promotions and the DARPA Lift Challenge scheduled-trial hold.
+- Preserve the NAPMP / NSTC chronology without inferring recipient-level cancellation or continuity.
+- Record the 38 Published / 25 In Review release contract and 66-source Published support set.
+- Keep the correction triggers, dated Toronto recheck, post-August 9 DARPA recheck, and owner-only boundary explicit.
+
+Primary file:
+
+- `docs/work-packages/phase-55m-publication-readiness-review.md`
+
+Update when:
+
+- a reviewed record receives materially different official evidence,
+- the DARPA Lift Challenge publishes results,
+- NAPMP or NSTC recipient-level disposition becomes available,
+- a promoted record crosses into construction, acceptance, adoption, operation, or scale,
+- the exact Phase 55M deployment commit or Sites version changes.
+
+Boundary:
+
+Publication confirms a useful bounded claim, not completion of the implementation ladder. Public access, package freeze, custom-domain attachment, DNS changes, public GitHub synchronization, and public launch remain separate decisions.

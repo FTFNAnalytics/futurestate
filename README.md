@@ -38,6 +38,7 @@ It is a stack of dependencies.
 - [Phase 55K Research Collection Work Package](docs/work-packages/phase-55k-darpa-usg-research-collection.md) - 23 DARPA and U.S. Government document summaries, capture/archive disclosure, site integration, validation, and the Phase 55L implementation-evidence path.
 - [Phase 55L Implementation Evidence Work Package](docs/work-packages/phase-55l-implementation-evidence-conversion.md) - eight stage-bounded implementation trails and their verified archive.
 - [Phase 55N Outcomes And Local Conversion Work Package](docs/work-packages/phase-55n-implementation-outcomes-local-conversion.md) - 16 later outcome and local-conversion records, integrated briefings and dossiers, and a verified download archive.
+- [Phase 55M Publication-Readiness Work Package](docs/work-packages/phase-55m-publication-readiness-review.md) - record-by-record gate for the combined Phase 55L and Phase 55N signal set, including thirteen promotions and the future-trial hold.
 - [Glossary](docs/glossary.md) - shared definitions for the project language.
 - [Taxonomy](docs/taxonomy.md) - framework layers, topic pillars, constraints, signal types, maturity levels, and relationship rules.
 - [Content Model](docs/content-model.md) - MVP entities, fields, examples, and validation rules.
@@ -126,6 +127,7 @@ It is a stack of dependencies.
 - [Phase 55I Work Package](docs/work-packages/phase-55i-remaining-candidate-review-and-content-expansion.md) - completed candidate triage and bounded content expansion.
 - [Phase 55J Work Package](docs/work-packages/phase-55j-publication-readiness-review.md) - publication gate for the Phase 55I additions.
 - [Phase 55K Work Package](docs/work-packages/phase-55k-darpa-usg-research-collection.md) - 23-document research collection, summaries, source integration, download archive, and Phase 55L conversion path.
+- [Phase 55M Work Package](docs/work-packages/phase-55m-publication-readiness-review.md) - thirteen bounded publication promotions and one explicit scheduled-trial hold.
 
 ## App Scaffold
 
@@ -281,7 +283,9 @@ Phase 55L converts eight selected research directions into named implementation 
 
 Phase 55N follows those trails into later outcomes, discontinuities, oversight limits, versioned software, local construction, procurement channels, and preliminary specifications. It adds a 16-record collection, six `In Review` signals, two briefings, four organizations, integrated local-dossier updates, and a 19-file archive without changing Published membership.
 
-The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 189 public sources, 150 private source candidates, 63 signals, 17 topics, 15 public update entries, 380 generated pages, three research collections with 47 documents, and three versioned data exports. The branch remains unpushed to public GitHub, while an owner-only Sites deployment exists. No custom domain, Hostinger DNS change, or public launch occurred.
+Phase 55M applies the publication gate to the fourteen implementation signals created or materially repaired in Phases 55L and 55N. Thirteen pass as independently useful bounded records; the DARPA Lift Challenge remains `In Review` until official post-August 9 results exist. The Published set reaches 38 signals backed by 66 current sources without changing routes, access, DNS, or release status.
+
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 189 public sources, 150 private source candidates, 63 signals, 38 Published signals, 17 topics, 16 public update entries, 380 generated pages, three research collections with 47 documents, and three versioned data exports. The branch remains unpushed to public GitHub, while an owner-only Sites deployment exists. No custom domain, Hostinger DNS change, or public launch occurred.
 
 ## Working Rule
 

@@ -397,10 +397,11 @@ Current stop point:
 - Phase 55K added a 23-document DARPA and U.S. Government research collection, 23 source profiles, five `In Review` synthesis signals, five organizations, one briefing, one dependency map, topic/source/technology backlinks, and a verified 26-file download bundle,
 - Phase 55L added eight implementation-evidence records, seven source profiles, seven new `In Review` signals, one repaired USAspending signal, one briefing, an expanded dependency map, and a verified 11-file download bundle,
 - Phase 55N added a 16-record outcome and local-conversion collection, six source profiles, six new `In Review` signals, two briefings, four organizations, integrated trail repairs, and a verified 19-file download bundle,
-- the branch remains unpushed to public GitHub; exact Phase 55N source commit `c14551c7fad7e0ba6aac0e9e9ce03e5ad6189575` is deployed as owner-only Sites version 11,
+- Phase 55M applied the publication gate separately to fourteen Phase 55L and Phase 55N signals, promoted thirteen bounded records, held the scheduled DARPA Lift trial, and advanced the release contract to 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources,
+- the branch remains unpushed to public GitHub; the exact Phase 55M source will replace the Phase 55N owner-only Sites version 11 checkpoint without changing access,
 - no custom domain is attached and Hostinger DNS remains unchanged,
 - the remaining Phase 55H action is the post-meeting recheck of Toronto application `24 254930` for Council disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit evidence,
-- before that window, a bounded Phase 55M publication-readiness review may evaluate the combined Phase 55L and Phase 55N implementation set without treating awards, governance actions, oversight findings, software releases, scheduled tests, construction milestones, procurement availability, or preliminary drafts as later-stage outcomes; keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors,
+- Phase 55M is complete without treating awards, governance actions, oversight findings, software releases, construction milestones, procurement availability, or preliminary drafts as later-stage outcomes; keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors,
 - GitHub synchronization, public access, and custom-domain attachment remain deferred pending explicit approval.
 
 Hosting decision rule:
@@ -521,13 +522,15 @@ v0.2 is successful when:
 - release QA is repeatable,
 - no automated process publishes claims without review.
 
-All local success criteria pass in the current candidate. Phase 55N expands the research and evidence layer without changing Published membership, the package-freeze boundary, or the public-launch boundary.
+All local success criteria pass in the current candidate. Phase 55M expands Published membership to 38 bounded records without changing the package-freeze boundary or public-launch boundary.
 
 ## Immediate Next Step
 
-Phase 55N is complete. The next fixed evidence gate is Phase 55H immediately after the July 29-31, 2026 Toronto Council meeting window. Recheck application `24 254930` for the Council disposition and vote, amended recommendations, bill status, enacted Official Plan and Zoning By-law numbers, condition compliance, and any later permit record. If no named official stage has advanced, record the dated negative result and stop rather than manufacture a signal.
+Phase 55M is complete. Thirteen of the fourteen reviewed implementation records passed the full source, claim, citation, caveat, metadata, correction-path, and reader-usefulness gate; the Lift Challenge record remains `In Review` as a scheduled trial.
 
-If content work continues before that date, run Phase 55M as a publication-readiness review of the combined Phase 55L and Phase 55N implementation set. Apply the full source, claim, citation, caveat, metadata, correction-path, and reader-usefulness gate record by record. Keep the Lift Challenge record `In Review` as a scheduled trial until official post-event evidence exists. Keep every Phase 55N signal `In Review` unless its own authority and usefulness gate passes; do not promote the collection as a batch.
+The next fixed evidence gate is Phase 55H immediately after the July 29-31, 2026 Toronto Council meeting window. Recheck application `24 254930` for the Council disposition and vote, amended recommendations, bill status, enacted Official Plan and Zoning By-law numbers, condition compliance, and any later permit record. If no named official stage has advanced, record the dated negative result and stop rather than manufacture a signal.
+
+After August 9, recheck the official DARPA Lift Challenge record for measured results, winners, prize awards, and any transition evidence. Do not promote the scheduled-trial record before that evidence exists.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Do not start another volume target or broad automatic-promotion batch.
 

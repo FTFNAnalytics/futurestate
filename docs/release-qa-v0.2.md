@@ -2,16 +2,16 @@
 
 Date: 2026-07-23
 
-Status: Phase 55J release gate and owner-only Sites version 8 deployment passed.
+Status: Phase 55M local release gate passed; owner-only deployment refresh pending.
 
 ## Artifact Under Review
 
 - Build manifest: `deployment/ftfn-v0.2-build.json`
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
-- Expected build: 261 HTML pages
-- Content baseline: 153 sources, 45 signals, 17 topics, 12 update entries
-- Publication baseline: 25 Published, 20 In Review, 0 Draft Sample
+- Expected build: 380 HTML pages
+- Content baseline: 189 sources, 63 signals, 17 topics, 16 update entries, 3 research collections, 47 research documents
+- Publication baseline: 38 Published, 25 In Review, 0 Draft Sample
 
 The package remains `0.2.0-dev`. The owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
 
@@ -32,17 +32,17 @@ Result:
 | Check | Result |
 | --- | --- |
 | Private candidates | Passed: 150 records; 132 Candidate, 11 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage |
-| Content references | Passed: 153 sources, 45 signals, 17 topics, 10 organizations, 5 technologies, 2 local systems, 1 briefing, 10 evidence gaps, 2 dependency maps, 12 updates |
-| Source endpoint metadata | Passed: 88 Manual review, 65 Probe ready |
+| Content references | Passed: 189 sources, 63 signals, 17 topics, 19 organizations, 5 technologies, 2 local systems, 5 briefings, 10 evidence gaps, 3 dependency maps, 3 research collections, 47 research documents, 16 updates |
+| Source endpoint metadata | Passed: 116 Manual review, 73 Probe ready |
 | Astro diagnostics | Passed: 0 errors, 0 warnings, 0 hints |
-| Static build | Passed: 261 HTML pages |
+| Static build | Passed: 380 HTML pages |
 | Release assertions | Passed: required outputs, update log, exports, Published-source dates, robots, sitemap, canonical, and indexing boundaries |
 
 The release assertion is preserved as `npm run verify:release`. It reads the v0.2 manifest and fails if the checked build no longer matches the release contract.
 
 ## Current-Source Gate
 
-The 25 Published signals resolve to 51 unique source records. All 51 have a `last_checked_date` on or after `2026-07-22`.
+The 38 Published signals resolve to 66 unique source records. All 66 have a `last_checked_date` on or after `2026-07-22`.
 
 Phase 55F retained the Phase 54 source floor and refreshed the older NASA Artemis, USDA plant-breeding, and CMHC portal support rails. The verifier now reads the expected support-source count and minimum checked date from the release manifest rather than hard-coding the earlier nine-record baseline.
 
@@ -85,7 +85,7 @@ The mobile Source Coverage table remains intentionally horizontally scrollable i
 
 ## Interaction And Touch Targets
 
-During Phase 54, the Signals status control was changed to `Published` and returned exactly nine visible cards, all labeled Published. Phases 55F and 55J changed content state but not the control, layout, or filtering implementation; the production build now exports 25 Published records.
+During Phase 54, the Signals status control was changed to `Published` and returned exactly nine visible cards, all labeled Published. Phases 55F, 55J, and 55M changed content state but not the control, layout, or filtering implementation; the production build now exports 38 Published records.
 
 Phase 54 enlarged the brand and primary-navigation links to a minimum 44 × 44 CSS-pixel target. Final desktop and mobile measurements were:
 
@@ -103,17 +103,17 @@ The mobile header remains compact by reducing only the surrounding vertical gap 
 The built artifact passed these checks:
 
 - `robots.txt` allows public crawling and references `https://ftfn.io/sitemap.xml`,
-- the sitemap contains exactly the 25 Published signal detail URLs,
+- the sitemap contains exactly the 38 Published signal detail URLs,
 - non-published signal detail URLs are absent from the sitemap,
-- all 25 Published details use `index, follow`,
+- all 38 Published details use `index, follow`,
 - representative In Review, company-claim In Review, and briefing details use `noindex, follow`,
 - built canonical URLs use `https://ftfn.io`,
 - no built sitemap URL uses localhost,
-- `/data/signals.json` contains exactly 25 Published records,
-- `/data/sources.json` contains 153 active public source records and excludes private notes,
+- `/data/signals.json` contains exactly 38 Published records,
+- `/data/sources.json` contains 189 active public source records and excludes private notes,
 - `/data/topics.json` contains 17 topic records,
 - all three exports remain on schema version `1.0`,
-- `/updates/` contains all twelve update records.
+- `/updates/` contains all sixteen update records.
 
 During local development, Astro generates environment-local canonical values. The `https://ftfn.io` canonical assertion therefore runs against the production build output rather than the development server.
 
@@ -158,6 +158,8 @@ Hosted checkpoint:
 
 ## Verdict
 
-The Phase 55J publication expansion passes locally and is deployed successfully to the owner-only Site. No release blocker remains in candidate validation, content references, source currency, Astro diagnostics, static generation, metadata, indexing, update-log rendering, public exports, or deployment.
+Phase 55M changes publication metadata and editorial notes for fourteen signals, adds one update record, and changes no components, styles, layouts, navigation, client-side behavior, source count, signal count, or route count.
 
-The owner-only preview is current at Sites version 8. It is not approved for public access or public launch. The post-meeting Council and by-law recheck is the next dated authority gate.
+The 380-page artifact passes private-candidate validation, content references, source endpoint metadata, Astro diagnostics, static generation, the 38-route Published sitemap contract, non-published exclusion, canonical and indexing rules, the three public exports, the sixteen-entry update log, all three research archives, and private-registry exclusion.
+
+The owner-only deployment refresh is pending the exact Phase 55M source commit. It is not approved for public access or public launch. The post-meeting Toronto Council and by-law recheck is the next dated authority gate; the DARPA Lift Challenge results recheck follows after August 9.

@@ -248,6 +248,15 @@ Phase 55J fourth publication-gate result:
 - Policy, beta infrastructure, planned spending, regulatory guidance, program reach, awards, metropolitan estimates, citywide capital plans, and provincial forecasts remain separated from implementation and outcomes.
 - A public Publication Promotion entry and the Phase 55J work package record the decisions and correction path.
 
+Phase 55M fifth publication-gate result:
+
+- Thirteen of the fourteen Phase 55L and Phase 55N implementation signals passed separate source, claim, citation, caveat, metadata, correction-path, and reader-usefulness reviews.
+- The Published set now contains 38 signals backed by 66 current source records.
+- The DARPA Lift Challenge remains `In Review` because its August 2-9, 2026 field trial is a scheduled future test, not a result.
+- The NAPMP award record is publishable only as a dated historical award notice paired with the later Commerce governance action; recipient-level disposition remains unresolved.
+- Awards, obligations, governance actions, oversight findings, software artifacts, construction milestones, procurement channels, preliminary drafts, and delivered material remain separated from construction, acceptance, adoption, operation, and scale.
+- A public Publication Promotion entry and the Phase 55M work package record every decision, hold, and correction path.
+
 ## Open Questions
 
 - Should `In Review` remain linked from public indexes after public launch, or move behind a clearer research/prelaunch route?

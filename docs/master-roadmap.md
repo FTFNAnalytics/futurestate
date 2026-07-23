@@ -1186,10 +1186,11 @@ Completed:
 - Completed Phase 55N locally: added a 16-record implementation-outcomes and local-conversion collection, six sources, six `In Review` signals, two briefings, four organizations, a 19-file archive, and integrated repairs across existing signals, topics, technologies, evidence gaps, both local dossiers, and the federal research dependency map.
 - Advanced the verified local contract to 380 generated pages, 189 sources, 63 signals, 25 Published, 38 In Review, 15 updates, three research collections, and 47 research documents.
 - Deployed exact Phase 55N source commit `c14551c7fad7e0ba6aac0e9e9ce03e5ad6189575` as owner-only Sites version 11 without changing access, custom-domain state, or DNS.
+- Completed Phase 55M locally: applied the full publication gate to fourteen Phase 55L and Phase 55N signals, promoted thirteen bounded records, and held the DARPA Lift Challenge as a scheduled future trial.
+- Advanced the verified local contract to 380 generated pages, 189 sources, 63 signals, 38 Published, 25 In Review, 16 updates, 66 current Published-support sources, three research collections, and 47 research documents.
 
 Next candidate work:
 
-- Run Phase 55M as a bounded, record-by-record publication-readiness review of the combined Phase 55L and Phase 55N implementation set if content work continues before the fixed Toronto recheck.
 - Reconcile the current NSTC and NAPMP trail recipient by recipient; do not infer that Commerce's later action canceled every earlier award.
 - Track GAO's prototype-to-production oversight recommendations separately from agreement-specific delivery, acceptance, and follow-on evidence.
 - Follow O-RAN version 1.7 into external testing, security findings, certification use, and operator adoption; follow the PIV working drafts into formal revisions, validation, pilots, and issued credentials.
@@ -1198,11 +1199,11 @@ Next candidate work:
 - Capture the first public federal agency post-quantum migration plan, procurement implementation, proposed FAR rule, or NIST pilot result.
 - Follow Project Baccara through the fully executed County record, condition compliance, service and precise-POD requirements, military-compatibility compliance, construction, testing, occupancy, and operating evidence.
 - Recheck Toronto application 24 254930 after the July 29-31, 2026 Council window for adoption, by-laws, and later permit records.
-- Preserve the owner-only Phase 55N checkpoint after deployment refresh and complete the dated Phase 55H Council recheck after the July 29-31 meeting window.
+- Preserve the owner-only Phase 55M checkpoint after deployment refresh and complete the dated Phase 55H Council recheck after the July 29-31 meeting window.
 - Complete Phase 55H with the post-meeting Toronto recheck; if no named official stage has advanced, record the dated result and stop.
 - Decide whether In Review local systems and dependency maps should remain indexable or move to clearer research/noindex treatment before launch.
 - Keep the unresolved local trails as dated monitors: completed wastewater and reclaimed-water infrastructure, Phoenix permits and occupancy, apprenticeship outcomes, Toronto City Council and by-laws, and project start/completion evidence.
-- Keep additional publication promotion behind a fresh publication-candidate review; the current public set is 25.
+- Keep additional publication promotion behind a fresh publication-candidate review; the current public set is 38.
 - Continue repairing broad In Review signals into dated source-backed records where the expanded source registry supports a specific update; the next acquisition cycle should be driven by named evidence gaps, not by another volume target.
 - Keep Supabase activation and any broad public source promotion batch separate from the bounded local content track.
 
