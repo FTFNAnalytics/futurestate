@@ -991,7 +991,9 @@ These are the next practical actions from the current project state.
 282. Complete Phase 55D owner-only Sites preview without attaching `ftfn.io` or changing public access. Status: complete; deployed the 218-page candidate, passed route, metadata, indexing, robots, sitemap, and export checks, and preserved Hostinger plus Google Workspace DNS unchanged.
 283. Complete Phase 55W publication, navigation, and scale gate. Status: complete locally; reviewed 45 signal decisions, promoted 12, published one briefing and one map, expanded to 15 pathways, added corpus-scale discovery and research shelves, expanded to five exports, and verified the 591-page release contract.
 284. Complete Phase 55X dossier-led authority expansion. Status: complete locally; added 24 primary documents and twelve bounded signals across Northern Virginia compute, Nevada lithium, and Florida Space Coast journeys, published eight signals and 22 document summaries, retained four signals, two document summaries, one briefing, and all three end-to-end pathways `In Review`, and verified the 638-page release contract.
-285. Begin Phase 55Y operational evidence and receiving-system expansion. Status: next; add 24 primary records and twelve bounded signals across AI assurance, advanced-manufacturing workforce conversion, industrial-water reuse operation, and autonomy service.
+285. Complete Phase 55Y operational evidence and receiving-system expansion. Status: complete locally; added 24 primary records and twelve bounded signals across AI assurance, advanced-manufacturing workforce conversion, industrial-water reuse operation, and autonomy service, published eight signals and twenty document summaries, retained four signals and four document summaries `In Review`, published Research Watch 003 plus the autonomy pathway and map, and verified the 698-page release contract.
+286. Complete Phase 55Z comparative operating outcomes. Status: complete locally; added 32 primary records, 30 source profiles, sixteen bounded signals, a 35-file archive, Research Watch 004, evidence gap `gap-016`, and one Published comparison-boundary map; published twelve signals and 28 document summaries, held four signals and four documents, and verified the 780-page release contract.
+287. Begin Phase 56A within-domain longitudinal outcome series. Status: next; add 48 primary records and twenty bounded signals across institutional AI/cyber systems, manufacturing cohorts and facilities, asset-level infrastructure, and carrier/operator/mission services while requiring compatible time points and preserving method or denominator breaks.
 
 ## 10. Current Stage Map
 
@@ -1022,11 +1024,11 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a generated source monitor that turns checked dates, update cadence, capture priority, and authority levels into a public review queue.
 - an authority red-team plan that separates credible scaffold work from the content depth required for a comprehensive resource.
 - an authoritative live source plan that identifies the first 30 source additions and the monitoring architecture needed for source intelligence.
-- an expanded source registry with 307 records, watch-lane metadata, access-type metadata, endpoint metadata, source health states, and explicit review cadences.
+- an expanded source registry with 357 records, watch-lane metadata, access-type metadata, endpoint metadata, source health states, and explicit review cadences.
 - a generated source coverage matrix at `/atlas/source-coverage/`.
 - local system dossier tables generated from linked source records.
 - 17 public topic records, including Cybersecurity and Discovery Technologies.
-- 307 source records, including Discovery Technologies, Arizona utility planning and named service, Phoenix permitting and water-service anchors, TSMC and Project Baccara facility records, Toronto development and permit-process anchors, federal post-quantum migration directives, official meta-catalogs, funding/spending rails, international statistics, research APIs, patent/IP sources, water/minerals/trade sources, space licensing, agriculture biotechnology, and five local-system evidence stacks.
+- 357 source records, including Discovery Technologies, Arizona utility planning and named service, Phoenix and Chandler water-system anchors, TSMC and Project Baccara facility records, California autonomous-service authority, NIST AI assurance and TEVV records, Toronto development and permit-process anchors, federal post-quantum migration directives, official meta-catalogs, funding/spending rails, international statistics, research APIs, patent/IP sources, water/minerals/trade sources, space licensing, agriculture biotechnology, outcome-series records, and five local-system evidence stacks.
 - v0.1 handoff and deployment-prep artifacts: `docs/session-brief-v0.1.md`, `docs/roadmap-v0.1.md`, and `deployment/ftfn-v0.1-build.json`.
 - a v0.2 roadmap that scopes private source updates, dated signal repair, named local evidence trails, public update/correction logs, and static metadata exports.
 - a signal scale scenario map for the 25-35 signal v0.2 target and the larger 70-signal authority-system target.
@@ -1034,12 +1036,12 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a second private queue batch that turns promoted Phase 49 source records into bounded review candidates.
 - six Phase 50 bounded source-item signals spanning a DOE/Grants.gov opportunity, MAG local projections, USAspending award, NSF award, USGS gallium record, and Toronto planning application.
 - a frozen v0.1.1 release package with app version 0.1.1, deployment manifest, versioned session brief, release roadmap, local release-QA evidence, and Git checkpoint `4845597`.
-- a current `0.2.0-dev` build with 307 sources, 124 signals, 26 update entries, 93 Published signals, five public JSON exports, and 638 pages.
+- a current `0.2.0-dev` build with 357 sources, 152 signals, 28 update entries, 113 Published signals, five public JSON exports, and 780 pages.
 - a private 150-record source-candidate shelf across 15 evidence profiles, with all 150 first-pass triaged and zero automatic public promotions.
 - Source Monitor review-state groups and next actions plus Strong, Developing, and Weak Source Coverage summaries.
 - a passed v0.2 local release gate with a versioned manifest, repeatable release assertions, desktop/mobile browser evidence, repaired 44-pixel header targets, and a public-facing launch note plus limitations statement.
 
-It is not yet a public launch product. An owner-only Sites preview exists, while package-version freeze, public access, `ftfn.io` attachment, Hostinger DNS changes, analytics decisions, and final public-launch approval remain separate. The current v0.2 build passes the Phase 55X local release gate with 93 Published and 31 In Review signals, three Published and seven In Review briefings, four Published and two In Review dependency maps, and five local-system dossiers. The three newest end-to-end local pathways remain `In Review`.
+It is not yet a public launch product. An owner-only Sites preview exists, while package-version freeze, public access, `ftfn.io` attachment, Hostinger DNS changes, analytics decisions, and final public-launch approval remain separate. The current v0.2 build passes the Phase 55Z local release gate with 113 Published and 39 In Review signals, five Published and seven In Review briefings, six Published and one In Review dependency maps, and five local-system dossiers. Comparative outcomes remain bounded by unit, denominator, period, geography, method, and attribution.
 
 ### Stage 1: Reader-Journey QA
 
@@ -1225,12 +1227,16 @@ Next candidate work:
 - The verified Phase 55W contract is 591 pages, 298 sources, 112 signals, 85 Published, 27 In Review, 134 current Published-support sources, nine briefings, six maps, six research collections, 83 research documents, fifteen pathways across 19 Atlas surfaces, 25 updates, and five public-data exports.
 - Phase 55X complete locally: added 24 official implementation records, twelve bounded signals, one 27-file archive, one `In Review` briefing, and integrated repairs across three local systems, four pathways, three gaps, eight topics, and one Published map.
 - The verified Phase 55X contract is 638 pages, 307 sources, 124 signals, 93 Published, 31 In Review, 139 current Published-support sources, ten briefings, six maps, seven research collections, 107 research documents, fifteen pathways across 19 Atlas surfaces, and 26 updates.
-- Phase 55Y next: add 24 primary records and twelve bounded signals across AI assurance, manufacturing-workforce conversion, industrial-water reuse operation, and autonomy service, prioritizing executed procurement, acceptance, service delivery, operating metrics, safety, and measured receiving-system outcomes.
+- Phase 55Y complete locally: added 24 official records, twenty source profiles, twelve bounded signals, one 27-file archive, Research Watch 003, two evidence gaps, and integrated repairs across four pathways and topic pages.
+- The verified Phase 55Y contract is 698 pages, 327 sources, 136 signals, 101 Published, 35 In Review, 150 current Published-support sources, eleven briefings, six maps, eight research collections, 131 research documents, fifteen pathways across 19 Atlas surfaces, and 27 updates.
+- Phase 55Z complete locally: added 32 primary outcome records, 30 source profiles, sixteen signals, one 35-file archive, Research Watch 004, evidence gap `gap-016`, one Published comparison-boundary map, and integrated repairs across eleven topics, eight pathways, and seven existing gaps.
+- The verified Phase 55Z contract is 780 pages, 357 sources, 152 signals, 113 Published, 39 In Review, 166 current Published-support sources, twelve briefings, seven maps, nine research collections, 163 research documents, fifteen pathways across 19 Atlas surfaces, and 28 updates.
+- Phase 56A next: add 48 primary records and twenty bounded signals across four within-domain longitudinal portfolios while requiring compatible time points and preserving method, denominator, and scope breaks.
 - Phase 55H, Phase 55R, Space Coast license, Arizona wastewater, Loudoun standards, and Nevada delivery remain scheduled inserts that do not pause the expansion queue.
 - Continue the NSTC and NAPMP recipient-level reconciliation, GAO prototype-OTA oversight trail, O-RAN external testing and adoption trail, PIV revision and pilot trail, Phoenix Fab 3 conversion trail, and Project Baccara downstream stages only where they serve a selected pathway or evidence gap.
 - Keep future In Review dependency-map details `noindex, follow` and outside the sitemap; local-system profiles remain qualitative prelaunch dossiers without a Published state.
 - Preserve separate award, obligation, physical milestone, permit, test, acceptance, operation, and scale stages for every record.
-- Sites version 22 continues to serve the Phase 55W checkpoint until the Phase 55X owner-only deployment succeeds; preserve one allowed owner and no groups.
+- Phase 55X local app commit `ce590cb8d847501b0a21fe4eb760037d3e531ea8` is deployed from exact private source commit `6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac` as owner-only Sites version 23 with one allowed owner and no groups.
 - Keep Supabase activation, public access, package freeze, DNS, custom-domain attachment, and public GitHub synchronization as separate tracks or approval gates.
 
 Decision:

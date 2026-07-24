@@ -168,6 +168,10 @@ for ($index = 0; $index -lt $documents.Count; $index += 1) {
   $summaryLines.Add("")
 }
 
+if ($summaryLines.Count -gt 0 -and $summaryLines[$summaryLines.Count - 1] -eq "") {
+  $summaryLines.RemoveAt($summaryLines.Count - 1)
+}
+
 $summaryLines |
   Set-Content -LiteralPath (Join-Path $bundlePath "collection-summaries.md") -Encoding utf8
 

@@ -6,11 +6,19 @@
   "priority": "High",
   "local_system": "U.S. Southwest Chip Corridor",
   "primary_topic": "Energy",
-  "framework_layers": ["Enabling Infrastructure", "Human Systems"],
-  "constraint_tags": ["Power", "Infrastructure", "Regulation", "Data Quality"],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Power",
+    "Infrastructure",
+    "Regulation",
+    "Data Quality"
+  ],
   "question": "Which utility records show real power capacity for semiconductor and AI infrastructure?",
   "why_it_matters": "State-level electricity baselines are useful, but power availability for fabs, suppliers, and compute infrastructure depends on utility planning, interconnection, rates, service territory, and facility load evidence.",
-  "current_support": "FTFN has EIA Arizona electricity context, ACC utility-regulation and eDocket layers, SRP's named 2025 Integrated System Plan Actions Progress Report, the November 2025 E-67 large-load price plan, Project Huckleberry's completed Meta service trail, Project Baccara's approved CEC and permits, a City record showing TSMC Fab 3 at topping out, and an April 2026 APS record that places TSMC in APS service territory while reporting utility-wide demand growth.",
+  "current_support": "FTFN now adds national customer interruption duration and NERC operating evidence for battery frequency-response service to the existing Southwest capacity and service trail.",
   "missing_evidence": [
     "interconnection queues",
     "named semiconductor-customer tariff treatment and facilities charges",
@@ -33,7 +41,11 @@
     "Project Baccara executed MCP, precise Plan of Development, service, construction, interconnection, occupancy, and operating records"
   ],
   "next_action": "Treat APS service territory as established but continue into a TSMC customer-specific service agreement, disclosed campus and facility load, dedicated infrastructure, construction, energization, facilities charges, consumption, and reliability evidence before making capacity claims.",
-  "future_data_model_need": ["Utility Filing", "Facility", "Dataset"],
+  "future_data_model_need": [
+    "Utility Filing",
+    "Facility",
+    "Dataset"
+  ],
   "related_source_ids": [
     "source-eia-arizona-electricity-profile",
     "source-eia-electricity-data",
@@ -50,7 +62,11 @@
     "source-maricopa-baccara-final-air-permit-2026",
     "source-kjzz-project-baccara-mcp-vote-2026",
     "source-phoenix-tsmc-fab3-topping-out-2026",
-    "source-aps-tsmc-service-territory-2026"
+    "source-aps-tsmc-service-territory-2026",
+    "source-55z-nerc-state-of-reliability-2025",
+    "source-55z-eia-us-outage-duration-2024",
+    "source-55z-eia-battery-capacity-2024",
+    "source-55z-eia-battery-storage-market-trends-2026"
   ],
   "related_signal_ids": [
     "signal-arizona-electricity-profile-chip-corridor-power-constraint",
@@ -59,9 +75,13 @@
     "signal-srp-huckleberry-meta-mesa-online-service",
     "signal-acc-project-baccara-power-water-permit-gates",
     "signal-phoenix-tsmc-fab3-topping-out",
-    "signal-aps-tsmc-service-territory-capacity-boundary"
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-us-customer-outage-duration-eleven-hours-2024",
+    "signal-texas-batteries-provide-frequency-response-2024"
   ],
-  "related_local_system_ids": ["local-us-southwest-chip-corridor"],
+  "related_local_system_ids": [
+    "local-us-southwest-chip-corridor"
+  ],
   "latest_review": {
     "phase": "Phase 55Q",
     "decision": "Narrowed",
@@ -72,5 +92,5 @@
     "stage_result": "APS now identifies TSMC in its service territory, closing the narrow utility-location question. The same record supplies only utility-wide demand history and outlook; it does not disclose TSMC service terms, load, dedicated infrastructure, energization, consumption, reliability, or spare capacity.",
     "stop_rule": "Stop at named serving utility. Do not infer customer capacity from utility-wide demand, generation, reliability, or investment claims; reopen only for a TSMC-specific service, load, infrastructure, construction, energization, operating, or regulatory record."
   },
-  "notes": "Phase 55Q narrows the gap from serving-utility identity to customer capacity and operation. The new APS record is useful because it identifies the utility relationship; it is not a service agreement or capacity finding."
+  "notes": "Phase 55Z deepens operating comparators without resolving customer-specific Southwest capacity, energization, consumption, reliability, or price."
 }

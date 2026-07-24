@@ -2,9 +2,19 @@
   "id": "topic-advanced-manufacturing",
   "name": "Advanced Manufacturing",
   "slug": "advanced-manufacturing",
-  "summary": "The current shelf combines a national manufacturing-economy baseline with metrology data, institute and roadmap records, packaging awards, materials processing, workforce coordination, and delivered hardware. It supports named stages without treating national trends, awards, testbeds, or components as production scale.",
-  "framework_layers": ["Enabling Infrastructure", "Resource Foundations", "Human Systems"],
-  "primary_constraints": ["Manufacturing", "Materials", "Supply Chain", "Labor", "Standards"],
+  "summary": "The current shelf now reaches operating training and research facilities, delivered graduate counts, and named industrial receiving systems while keeping projected throughput, aggregate outcomes, qualified production, and regional workforce sufficiency separate.",
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations",
+    "Human Systems"
+  ],
+  "primary_constraints": [
+    "Manufacturing",
+    "Materials",
+    "Supply Chain",
+    "Labor",
+    "Standards"
+  ],
   "featured_sources": [
     "source-nist-office-advanced-manufacturing",
     "source-nist-chips",
@@ -21,11 +31,26 @@
     "source-manufacturing-usa-institutes",
     "source-nist-ai-metrology-center",
     "source-nist-smart-manufacturing-ai-roadmap-2026",
-    "source-nist-manufacturing-economy-2025-report"
+    "source-nist-manufacturing-economy-2025-report",
+    "source-aca-asml-technical-academy-2025",
+    "source-aca-future48-battery-accelerator-2025",
+    "source-aca-ua-nanofabrication-center-2026",
+    "source-aca-intel-apprenticeship-2024",
+    "source-maricopa-semiconductor-accelerator",
+    "source-55z-nist-mep-fy2024-network-results",
+    "source-55z-nist-mep-fy2024-client-challenges",
+    "source-55z-manufacturing-usa-report-to-congress-2025",
+    "source-55z-niimbl-annual-report-2023-2024",
+    "source-55z-mxd-future-factory-project-portfolio-2025",
+    "source-55z-iacmi-composites-operating-results-2025",
+    "source-55z-niimbl-door-to-floor-training-outcomes",
+    "source-55z-nist-amphenol-arizona-mep-results-2026"
   ],
   "watch_questions": [
     "Which national manufacturing trends can be connected to named establishments, facilities, equipment, output, investment, trade, and customers?",
     "Which institute, roadmap, metrology, and award records progress into qualified processes, repeatable yield, throughput, cost, reliability, and production?",
-    "Where do materials, tooling, standards, utilities, labor, and supplier networks limit conversion of designs into deployable systems?"
+    "Where do materials, tooling, standards, utilities, labor, and supplier networks limit conversion of designs into deployable systems?",
+    "Which operating academies and accelerators disclose enrollment, completion, credential, placement, retention, vacancy, and productivity outcomes?",
+    "Which programs connect engagement to completion, credential, placement, retention, quality, throughput, productivity, and customer delivery?"
   ]
 }

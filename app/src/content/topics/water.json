@@ -2,9 +2,19 @@
   "id": "topic-water",
   "name": "Water",
   "slug": "water",
-  "summary": "The current shelf links water supply and reuse to project-level industrial conversion in Arizona, Northern Virginia, and Nevada while keeping policy, allocation, permits, connections, pumping, compliance, and measured use separate.",
-  "framework_layers": ["Planetary Conditions", "Resource Foundations", "Human Systems"],
-  "primary_constraints": ["Water", "Climate", "Infrastructure", "Regulation", "Public Trust"],
+  "summary": "The current shelf now adds Chandler as an operating reclaimed-water and industrial comparator with measured municipal scale, completed treatment assets, and attributed operator metrics, while Phoenix TSMC project-specific reuse remains unproven.",
+  "framework_layers": [
+    "Planetary Conditions",
+    "Resource Foundations",
+    "Human Systems"
+  ],
+  "primary_constraints": [
+    "Water",
+    "Climate",
+    "Infrastructure",
+    "Regulation",
+    "Public Trust"
+  ],
   "featured_sources": [
     "source-noaa-cpc-enso",
     "source-arizona-department-water-resources",
@@ -23,11 +33,21 @@
     "source-nevada-water-rights",
     "source-ndep-thacker-pass-water-permit",
     "source-ndep-rhyolite-ridge-water-permit-2025",
-    "source-virginia-deq-project-raspberry"
+    "source-virginia-deq-project-raspberry",
+    "source-chandler-reclaimed-water-system",
+    "source-chandler-water-conservation-in-action",
+    "source-intel-arizona-community-investment-2024",
+    "source-chandler-owrf-expansion-complete-2018",
+    "source-chandler-owrf-rated-capacity-2019",
+    "source-chandler-fy2027-proposed-budget",
+    "source-55z-epa-water-reuse-action-plan-year-five",
+    "source-55z-epa-water-reuse-monitoring-practices-2024"
   ],
   "watch_questions": [
     "Where does water availability decide whether a frontier project is locally possible?",
     "How do climate, utility regulation, industrial demand, and public trust shape water-constrained futures?",
-    "Which named industrial projects disclose rights, allocations, connections, pumping, compliance, reuse, and measured performance?"
+    "Which named industrial projects disclose rights, allocations, connections, pumping, compliance, reuse, and measured performance?",
+    "Which project-specific records connect accepted infrastructure to metered industrial flow, reuse, discharge, reliability, and drought performance?",
+    "Which reuse systems report accepted capacity, metered volume, quality, uptime, industrial allocation, compliance, and drought performance?"
   ]
 }

@@ -3,8 +3,18 @@
   "name": "Space",
   "slug": "space",
   "summary": "The current shelf connects lunar architecture and hardware to a Florida Space Coast corridor where master plans, site licenses, environmental decisions, state capital, construction, mission licensing, safety, and utilization remain separate stages.",
-  "framework_layers": ["Frontier Domains", "Enabling Infrastructure", "Human Systems"],
-  "primary_constraints": ["Capital", "Manufacturing", "Supply Chain", "Geopolitics", "Safety"],
+  "framework_layers": [
+    "Frontier Domains",
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "primary_constraints": [
+    "Capital",
+    "Manufacturing",
+    "Supply Chain",
+    "Geopolitics",
+    "Safety"
+  ],
   "featured_sources": [
     "source-nasa-artemis",
     "source-nasa-open-apis",
@@ -21,12 +31,16 @@
     "source-nasa-ksc-simo",
     "source-nasa-ksc-causeway-bridge-2025",
     "source-nasa-ksc-phsf-roman-upgrades-2026",
-    "source-nasa-ksc-prescribed-burn-2026"
+    "source-nasa-ksc-prescribed-burn-2026",
+    "source-55z-faa-one-thousand-commercial-space-operations-2025",
+    "source-55z-faa-fy2024-commercial-space-operations",
+    "source-55z-nasa-space-operations-outcomes-2025"
   ],
   "watch_questions": [
     "Which Revision C elements move into appropriations, program plans, contracts, hardware, integration, tests, launch decisions, and missions?",
     "When do LunaNet and LCRNS specifications become procured, deployed, validated, secure, and operating communications services?",
     "Which lunar power decisions produce funded systems, interfaces, demonstrations, launch assignments, emplacement, connection, operation, and maintenance?",
-    "Which Space Coast plans and licenses convert into accepted infrastructure, approved missions, safe operations, and sustained utilization?"
+    "Which Space Coast plans and licenses convert into accepted infrastructure, approved missions, safe operations, and sustained utilization?",
+    "Which launch and reentry records align operation type, site, vehicle, mission result, anomaly, delay, cargo, utilization, and local outcomes?"
   ]
 }

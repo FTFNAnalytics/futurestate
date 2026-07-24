@@ -1530,7 +1530,7 @@ Boundary:
 
 An evidence-gap decision records the strongest current official stage and its stop rule. Narrowed and Source Added do not mean closed; a Dated Hold is not a negative conclusion about whether work occurred. Public access, package freeze, custom-domain attachment, DNS changes, public GitHub synchronization, automated publication, and public launch remain separate decisions.
 
-### Phases 55S-55X Aggressive Content Expansion
+### Phases 55S-55Z Aggressive Content Expansion
 
 Purpose:
 
@@ -1540,6 +1540,8 @@ Purpose:
 - Record the completed Phase 55V eighteen-document cross-corridor shelf, four local captures, fourteen official-link records, 21-file archive, Research Watch 001, and downstream-pathway integration.
 - Record the completed Phase 55W 45-record publication ledger, 12 promotions, synthesis decisions, 15-pathway network, corpus discovery controls, separate research shelves, and five-export data contract.
 - Record the completed Phase 55X 24-document local implementation collection, twelve signal decisions, 27-file archive, three journey repairs, and Phase 55Y handoff.
+- Record the completed Phase 55Y 24-document operating-evidence collection, twelve signal decisions, 27-file archive, four journey repairs, and receiving-system boundaries.
+- Record the completed Phase 55Z 32-document operating-outcome collection, sixteen signal decisions, 35-file archive, comparison-boundary map, Research Watch 004, and Phase 56A handoff.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 
@@ -1552,6 +1554,8 @@ Primary file:
 - `docs/work-packages/phase-55u-local-systems-network.md` for the completed three-corridor network, 26 official source profiles, 15 signal decisions, three pathways and gaps, cross-corridor synthesis, dated tasks, and Phase 55V handoff
 - `docs/work-packages/phase-55w-publication-navigation-scale.md` for the completed signal and synthesis decisions, discovery surfaces, pathways, exports, validation evidence, and Phase 55X handoff
 - `docs/work-packages/phase-55x-local-implementation-dossiers.md` for the completed three-journey dossier build, document and signal publication ledgers, archive contract, integration map, validation evidence, and Phase 55Y handoff
+- `docs/work-packages/phase-55y-operational-evidence.md` for the completed operational-evidence and receiving-system expansion, publication decisions, archive contract, integration map, validation evidence, and Phase 55Z handoff
+- `docs/work-packages/phase-55z-comparative-operating-outcomes.md` for the completed four-portfolio outcome build, publication decisions, comparison boundary, archive contract, validation evidence, and Phase 56A handoff
 
 Update when:
 
@@ -1562,6 +1566,8 @@ Update when:
 - the Phase 55V collection, archive, briefing, corrected source boundary, local-system integration, or deployment receipt changes,
 - the Phase 55W decision ledger, signal or synthesis membership, filtering, pathway, export, or deployment receipt changes,
 - the Phase 55X collection, document or signal decisions, journey integration, archive, or deployment receipt changes,
+- the Phase 55Y collection, document or signal decisions, journey integration, archive, or deployment receipt changes,
+- the Phase 55Z collection, comparison boundary, document or signal decisions, integration, archive, or deployment receipt changes,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

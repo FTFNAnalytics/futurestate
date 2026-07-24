@@ -3,18 +3,30 @@
   "title": "Advanced Manufacturing: From Research Roadmap To Operating Workforce",
   "slug": "advanced-manufacturing-workforce-to-operating-capacity",
   "record_status": "Published",
-  "summary": "Follow manufacturing research, packaging awards, metrology, factory integration, technician apprenticeships, qualification, and operating outcomes.",
-  "current_state_summary": "The record now joins a peer-reviewed manufacturing roadmap to named packaging, metrology, fab, and apprenticeship rails, while production reliability and workforce outcomes remain incomplete.",
+  "summary": "Follow workforce programs and manufacturing interventions from engagement into completion, placement, retention, quality, throughput, productivity, savings, and customer delivery.",
+  "current_state_summary": "The pathway now contains a large MEP client-outcome survey, institute activity and training records, one 47-graduate program, and a Mesa facility-level quality and savings result.",
   "current_state": [
-    "The 2026 smart-manufacturing roadmap names data, integration, interpretability, reliability, safety, metrology, and scale as deployment constraints.",
-    "NIST records provide named advanced-packaging awards and a semiconductor metrology data-exchange artifact.",
-    "Phoenix records provide a project-level planning envelope, a structural Fab 3 milestone, and two technician apprenticeship cohorts.",
-    "The apprenticeship record identifies occupations, partners, funding, and active participants but not completion, credentials, retention, placement, or workforce sufficiency.",
-    "No record yet proves repeatable multi-site manufacturing performance, qualified output, sustained yield, supplier depth, or a complete operating workforce."
+    "The research, packaging, metrology, fab, apprenticeship, and regional-coordination rails remain intact.",
+    "ASML's Phoenix technical academy is fully operational after training began in 2024.",
+    "Arizona reports more than 2,000 Drive48 graduates and says many work at Lucid, without a placement denominator.",
+    "The University of Arizona nano-fabrication expansion is open with installed fabrication, metrology, packaging, and teaching capability.",
+    "A planned Maricopa semiconductor accelerator remains a 2027 hold, and the public record still lacks semiconductor-specific completion, retention, placement, vacancy, supplier, and productivity data.",
+    "MEP's FY 2024 survey supplies client-attributed sales, savings, investment, and job outcomes with a disclosed response base.",
+    "A NIIMBL program reaches completion for 47 trainees, and an Arizona MEP record reaches a defined facility intervention and attributed savings.",
+    "Manufacturing USA engagement totals remain held because participation, completion, placement, and productivity lack common denominators."
   ],
-  "primary_topics": ["Advanced Manufacturing", "Chips and Compute", "Human Futures"],
-  "topic_ids": ["topic-advanced-manufacturing", "topic-chips-and-compute"],
-  "local_system_ids": ["local-us-southwest-chip-corridor"],
+  "primary_topics": [
+    "Advanced Manufacturing",
+    "Chips and Compute",
+    "Human Futures"
+  ],
+  "topic_ids": [
+    "topic-advanced-manufacturing",
+    "topic-chips-and-compute"
+  ],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor"
+  ],
   "signal_ids": [
     "signal-nist-2026-ai-smart-manufacturing-roadmap",
     "signal-nist-napmp-advanced-packaging-final-awards",
@@ -22,7 +34,12 @@
     "signal-phoenix-z37-20-1-tsmc-campus-planning-record",
     "signal-phoenix-tsmc-fab3-topping-out",
     "signal-tsmc-arizona-apprenticeship-workforce-pipeline",
-    "signal-nnme-southwest-microelectronics-workforce-node"
+    "signal-nnme-southwest-microelectronics-workforce-node",
+    "signal-asml-phoenix-technical-academy-operational",
+    "signal-drive48-graduates-operating-workforce-comparator",
+    "signal-mep-fy2024-client-reported-manufacturing-outcomes",
+    "signal-niimbl-biomanufacturing-program-delivers-47-graduates",
+    "signal-arizona-mep-amphenol-reports-932k-savings"
   ],
   "source_ids": [
     "source-nist-smart-manufacturing-ai-roadmap-2026",
@@ -32,53 +49,90 @@
     "source-phoenix-tsmc-fab3-topping-out-2026",
     "source-aca-tsmc-registered-technician-apprenticeship-2024",
     "source-phoenix-2025-semiconductor-apprenticeship-agenda",
-    "source-aca-nnme-southwest-2026"
+    "source-aca-nnme-southwest-2026",
+    "source-aca-asml-technical-academy-2025",
+    "source-aca-future48-battery-accelerator-2025",
+    "source-aca-ua-nanofabrication-center-2026",
+    "source-aca-intel-apprenticeship-2024",
+    "source-maricopa-semiconductor-accelerator",
+    "source-55z-nist-mep-fy2024-network-results",
+    "source-55z-nist-mep-fy2024-client-challenges",
+    "source-55z-manufacturing-usa-report-to-congress-2025",
+    "source-55z-niimbl-annual-report-2023-2024",
+    "source-55z-mxd-future-factory-project-portfolio-2025",
+    "source-55z-iacmi-composites-operating-results-2025",
+    "source-55z-niimbl-door-to-floor-training-outcomes",
+    "source-55z-nist-amphenol-arizona-mep-results-2026"
   ],
-  "organization_ids": ["org-nist", "org-city-phoenix", "org-tsmc"],
-  "technology_ids": ["technology-advanced-semiconductor-packaging"],
+  "organization_ids": [
+    "org-nist",
+    "org-city-phoenix",
+    "org-tsmc"
+  ],
+  "technology_ids": [
+    "technology-advanced-semiconductor-packaging"
+  ],
   "briefing_ids": [
     "briefing-stack-watch-003-research-to-implementation",
-    "briefing-stack-watch-004-implementation-outcomes"
+    "briefing-stack-watch-004-implementation-outcomes",
+    "briefing-research-watch-003-operational-evidence",
+    "briefing-research-watch-004-comparative-operating-outcomes"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
-    "dependency-map-local-constraints-where-the-future-arrives"
+    "dependency-map-local-constraints-where-the-future-arrives",
+    "dependency-map-comparative-outcomes-require-common-denominators"
   ],
   "research_collection_ids": [
     "research-collection-federal-implementation-evidence-2025-2026",
-    "research-collection-industrial-capacity-local-conversion-2025-2026"
+    "research-collection-industrial-capacity-local-conversion-2025-2026",
+    "research-collection-operational-evidence-receiving-systems-2024-2026",
+    "research-collection-comparative-operating-outcomes-2023-2026"
   ],
-  "evidence_gap_ids": ["gap-001", "gap-003"],
+  "evidence_gap_ids": [
+    "gap-001",
+    "gap-003",
+    "gap-016"
+  ],
   "dependency_stack": [
     {
-      "stage": "Research Roadmap",
-      "current_state": "A peer-reviewed roadmap identifies twenty-one research areas and the integration, assurance, metrology, and scale barriers between models and factories.",
-      "boundary": "A roadmap does not prove adoption, factory performance, commercial value, or multi-site scale."
+      "stage": "Research, Awards, And Technical Artifacts",
+      "current_state": "Roadmaps, packaging awards, metrology artifacts, and an operating university cleanroom expose research and training capability.",
+      "boundary": "Facilities and artifacts do not prove utilization, qualified processes, production yield, or external adoption."
     },
     {
-      "stage": "Awards And Technical Artifacts",
-      "current_state": "NAPMP awards and METIS name packaging functions, recipients, data exchange, and measurement work.",
-      "boundary": "Awards and beta artifacts do not prove completed facilities, qualified processes, external adoption, or production capacity."
+      "stage": "Training Delivery",
+      "current_state": "ASML operates a technical academy and Arizona reports more than 2,000 Drive48 graduates linked qualitatively to Lucid employment.",
+      "boundary": "Operating facilities and aggregate graduates do not establish completion rates, credential quality, placement rates, retention, or workforce sufficiency."
     },
     {
-      "stage": "Facility And Workforce Conversion",
-      "current_state": "Phoenix records a planning envelope, a structural milestone, workforce coordination, and two technician apprenticeship cohorts.",
-      "boundary": "Planning, topping out, membership, and enrollment do not prove occupancy, equipment qualification, completion, retention, placement, or workforce sufficiency."
+      "stage": "Industrial Receiving System",
+      "current_state": "Phoenix records one TSMC fab in volume production and more than 3,500 Arizona employees, while Lucid is a named receiver for Drive48 graduates.",
+      "boundary": "City and state releases do not expose audited output, workforce mix, vacancies, retention, supplier depth, or training-to-productivity effects."
     },
     {
-      "stage": "Operating Capacity",
-      "current_state": "The public record remains incomplete for sustained yield, reliability, qualified output, supplier capacity, and operating-workforce outcomes.",
-      "boundary": "Capacity claims require facility acceptance, equipment and process qualification, production data, workforce outcomes, and sustained performance."
+      "stage": "Sustained Operating Capacity",
+      "current_state": "Semiconductor-specific outcomes and repeatable multi-site operating evidence remain incomplete.",
+      "boundary": "Capacity claims require facility acceptance, equipment and process qualification, production data, workforce outcomes, supplier performance, and sustained reliability."
+    },
+    {
+      "stage": "Completion and operating outcome",
+      "current_state": "Named records now include training completion, a defined facility quality intervention, and client-attributed economic outcomes.",
+      "boundary": "Client attribution is not audited causality; engagement is not completion; completion is not placement; one facility is not regional capacity."
     }
   ],
   "evidence_limits": [
-    "The roadmap, award, artifact, facility, and workforce records describe different stages and are not interchangeable.",
-    "Cohort counts do not establish completions, credentials, retention, placement, productivity, or labor sufficiency.",
-    "A structural milestone and planning envelope do not establish manufacturing readiness or output."
+    "Projected training capacity is not measured throughput.",
+    "Aggregate graduates and qualitative employment links do not establish placement or retention rates.",
+    "An opened cleanroom and a planned accelerator do not prove qualified industrial output or regional workforce sufficiency.",
+    "Jobs, dollars, participants, graduates, projects, products, quality, and productivity remain separate outcome units.",
+    "Institute and MEP records require explicit self-reporting, survey, cohort, and follow-up labels."
   ],
   "next_records": [
-    "Factory-level AI integration tests, reliability evidence, safety validation, metrology adoption, and repeatable production outcomes.",
-    "NAPMP agreement, facility, equipment, staffing, access, validation, and qualified-process records.",
-    "Apprenticeship completions, credentials, retention, placement, wage, vacancy, supplier, contractor, and operating-employment evidence."
+    "ASML enrollment, completion, credential, placement, retention, and customer-training records.",
+    "Drive48 cohort denominators, placement and retention rates, wage outcomes, and production-role evidence.",
+    "Semiconductor-specific completion, vacancy, attrition, supplier-hiring, construction-trade, and training-to-productivity records.",
+    "Program-level completion, credential, placement, retention, wage, vacancy, and employer-performance records with denominators.",
+    "Facility quality, scrap, throughput, downtime, delivery, customer, and productivity measures with repeat periods and independent validation."
   ]
 }

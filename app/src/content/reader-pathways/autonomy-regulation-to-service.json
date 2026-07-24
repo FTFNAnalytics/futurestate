@@ -2,28 +2,39 @@
   "id": "reader-pathway-autonomy-regulation-to-service",
   "title": "Autonomy Regulation To Service",
   "slug": "autonomy-regulation-to-service",
-  "record_status": "In Review",
-  "summary": "Follow federal AV policy, proposed oversight, crash reporting, a specific ADS recall, powered-lift operating rules, pilot selections, certification, local infrastructure, service, and outcomes.",
-  "current_state_summary": "FTFN now has a cross-modal autonomy shelf that preserves the separate road-vehicle and aviation regulatory systems while exposing their shared conversion gates: safety evidence, system approval, local permission, infrastructure, operations, and measured performance.",
+  "record_status": "Published",
+  "summary": "Follow road and aviation autonomy from rules and testing into paid service, exposure-normalized safety, accessibility, cost, reliability, and operating outcomes.",
+  "current_state_summary": "The road pathway now includes more than nine million California test miles for the 2025 reporting year, NHTSA's current incident-data boundary, and CPUC's detailed passenger-service reporting fields.",
   "current_state": [
-    "The federal AV Framework states policy direction and AV STEP remains a proposed voluntary program.",
-    "NHTSA's amended SGO supplies ongoing crash-reporting evidence with explicit data-quality and comparison limits.",
-    "Recall 26E026 records a specific weather-related ADS defect and interim operating-scope remedy.",
-    "FAA's powered-lift final rule completes pilot and operating requirements while aircraft and operator approvals remain separate.",
-    "Eight eIPP proposal selections create a test lane without establishing agreements, sites, flights, safety findings, or service."
+    "Federal AV policy, proposed oversight, crash reporting, and a specific recall continue to define the national road-safety rail.",
+    "CPUC authorized Waymo fared driverless passenger service in specified Los Angeles and San Francisco Peninsula areas effective March 1, 2024.",
+    "California DMV reports 4,498,066 autonomous public-road testing miles for the 2023-2024 reporting period, including 552,895 fully autonomous miles.",
+    "NHTSA's Zoox action is a demonstration exemption rather than general commercial or passenger-service approval.",
+    "The powered-lift rule and eIPP selections remain upstream of aircraft, operator, local-infrastructure, flight, and service outcomes.",
+    "California DMV reports more than nine million test miles for December 2024 through November 2025.",
+    "NHTSA's current files explain why incident totals cannot be compared without fleet, mileage, operating-domain, and reporting context.",
+    "CPUC defines the trip, passenger-mile, deadhead, wait, accessibility, energy, and geography fields needed for the next operating-outcome pass."
   ],
-  "primary_topics": ["Mobility", "Aviation", "Cybersecurity", "Policy and Standards"],
-  "topic_ids": ["topic-mobility", "topic-aviation", "topic-cybersecurity"],
+  "primary_topics": [
+    "Mobility",
+    "Aviation",
+    "Cybersecurity",
+    "Policy and Standards"
+  ],
+  "topic_ids": [
+    "topic-mobility",
+    "topic-aviation",
+    "topic-cybersecurity"
+  ],
   "local_system_ids": [],
   "signal_ids": [
-    "signal-dot-2025-automated-vehicle-framework",
-    "signal-nhtsa-av-step-proposed-oversight",
     "signal-sample-005",
     "signal-nhtsa-waymo-flooded-roadway-recall-2026",
     "signal-faa-powered-lift-final-operating-rule",
     "signal-faa-2026-evtol-integration-pilot-selections",
-    "signal-sample-004",
-    "signal-sample-010"
+    "signal-cpuc-waymo-fared-driverless-expansion-2024",
+    "signal-california-av-testing-miles-2024",
+    "signal-california-av-testing-exceeds-nine-million-miles-2025"
   ],
   "source_ids": [
     "source-dot-automated-vehicle-framework-2025",
@@ -33,46 +44,75 @@
     "source-faa-powered-lift-final-rule-2024",
     "source-faa-eipp-selections-2026",
     "source-faa-aam",
-    "source-joby-faa-conforming-aircraft-2026"
+    "source-joby-faa-conforming-aircraft-2026",
+    "source-cpuc-waymo-al2-disposition-2024",
+    "source-cpuc-av-advice-letter-status-2026",
+    "source-california-dmv-av-miles-2024",
+    "source-nhtsa-zoox-demonstration-exemption-2025",
+    "source-nhtsa-cruise-reporting-consent-order-2024",
+    "source-55z-cpuc-av-quarterly-reporting-2026",
+    "source-55z-california-dmv-av-test-miles-2025"
   ],
   "organization_ids": [],
-  "technology_ids": ["technology-evtol-aircraft"],
-  "briefing_ids": ["briefing-stack-watch-006-thin-topic-conversion"],
-  "dependency_map_ids": ["dependency-map-autonomy-rules-are-not-service"],
-  "research_collection_ids": ["research-collection-thin-topic-authority-foundations-2023-2026"],
-  "evidence_gap_ids": ["gap-010"],
+  "technology_ids": [
+    "technology-evtol-aircraft"
+  ],
+  "briefing_ids": [
+    "briefing-research-watch-003-operational-evidence",
+    "briefing-research-watch-004-comparative-operating-outcomes"
+  ],
+  "dependency_map_ids": [
+    "dependency-map-autonomy-rules-are-not-service",
+    "dependency-map-comparative-outcomes-require-common-denominators"
+  ],
+  "research_collection_ids": [
+    "research-collection-thin-topic-authority-foundations-2023-2026",
+    "research-collection-operational-evidence-receiving-systems-2024-2026",
+    "research-collection-comparative-operating-outcomes-2023-2026"
+  ],
+  "evidence_gap_ids": [
+    "gap-010",
+    "gap-015",
+    "gap-016"
+  ],
   "dependency_stack": [
     {
-      "stage": "Policy, Proposal, And Final Rule",
-      "current_state": "The shelf separates policy direction, a proposed voluntary program, and a final powered-lift operating rule.",
-      "boundary": "None alone proves vehicle or aircraft approval, operator authorization, local permission, or service."
+      "stage": "Policy, Reporting, And Defect Control",
+      "current_state": "Federal policy, SGO reporting, and recall and enforcement records expose oversight and data-quality controls.",
+      "boundary": "Policy, raw reports, and individual enforcement actions do not establish comparative safety or service value."
     },
     {
-      "stage": "Reporting, Defect, And Remedy",
-      "current_state": "NHTSA provides an incident-reporting rail and a specific ADS recall with an interim operating-scope remedy.",
-      "boundary": "Raw reports and one recall do not establish comparative safety, exposure-adjusted risk, or final remedy effectiveness."
+      "stage": "Vehicle And Passenger-Service Authority",
+      "current_state": "California records active deployment permits and effective CPUC authorization for Waymo fared driverless service in named geographies.",
+      "boundary": "Authority does not establish actual trips, fleet scale, availability, accessibility, cost, safety superiority, or local outcomes."
     },
     {
-      "stage": "System And Operator Approval",
-      "current_state": "Aircraft, vehicle, production, exemption, operator, route, and operating-design-domain approvals remain system-specific gates.",
-      "boundary": "A company test claim or pilot selection does not prove a regulator approval."
+      "stage": "Operating Exposure",
+      "current_state": "DMV testing-mile reports add measured public-road exposure with explicit scope and comparison limits.",
+      "boundary": "Testing miles are not passenger-service trips and cannot be compared across companies without consistent exposure and operating context."
     },
     {
-      "stage": "Local Conversion And Service",
-      "current_state": "Road, airspace, site, vertiport, charging, emergency, insurance, weather, noise, community, and enforcement records are still required.",
-      "boundary": "No local service, safety, cost, availability, ridership, or scale conclusion is supported without operating evidence."
+      "stage": "Aviation Approval And Service",
+      "current_state": "Powered-lift operating rules and eIPP selections remain upstream of aircraft, operator, route, site, flight, and service records.",
+      "boundary": "Road passenger-service authority does not transfer into the separate aviation certification and operating system."
+    },
+    {
+      "stage": "Comparable passenger-service outcomes",
+      "current_state": "Testing exposure and reporting definitions are available, but a current comparable public passenger-service rollup remains incomplete.",
+      "boundary": "Testing miles are not trips; raw incident counts are not safety rates; reporting requirements are not reported outcomes."
     }
   ],
   "evidence_limits": [
-    "Road automated driving and powered-lift aviation are distinct regulatory systems; this pathway compares conversion stages rather than combining legal regimes.",
-    "Policy, proposals, reporting, recalls, final rules, and selections are not certification or service.",
-    "Incident data requires exposure, duplication, system classification, operating conditions, and reporting-awareness controls."
+    "CPUC authorization proves a legal service gate, not actual service scale or performance.",
+    "DMV testing miles are company-submitted exposure records and are not designed for cross-company comparison.",
+    "Road ADS and powered-lift aviation remain distinct regulatory and operating systems.",
+    "Operator, program, geography, fleet, service, testing, incident, and time-period differences block simple rankings."
   ],
   "next_records": [
-    "AV STEP final disposition and each named AV Framework rulemaking, exemption, and reporting action.",
-    "recall completion, final remedy, investigations, and comparable weather and operating-design-domain evidence.",
-    "aircraft, vehicle, production, operator, route, and local approvals.",
-    "eIPP agreements, named sites, test plans, flights, safety data, public findings, and service decisions.",
-    "local infrastructure, emergency, insurance, weather, noise, community, operating, cost, availability, safety, and usage records."
+    "Carrier-level CPUC trip, fleet, service-hour, availability, cancellation, accessibility, and cost records.",
+    "DMV deployment activity, exposure-normalized NHTSA and local incident evidence, and reporting-quality controls.",
+    "eVTOL aircraft, production, operator, route, site, infrastructure, flight, safety, and service records.",
+    "Public CPUC operator-level trips, paid and deadhead miles, fleet, wait time, accessibility, energy, incident, cost, and service-geography data.",
+    "Compatible exposure-normalized NHTSA, DMV, local, and carrier safety and service measures."
   ]
 }

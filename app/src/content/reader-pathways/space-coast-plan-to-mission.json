@@ -3,8 +3,8 @@
   "title": "Space Coast Plan And Site License To Mission",
   "slug": "space-coast-plan-and-site-license-to-mission",
   "record_status": "In Review",
-  "summary": "Follow Space Coast plans, site licenses, environmental decisions, state capital programs, construction, acceptance, operator licensing, missions, safety, utilization, and local outcomes.",
-  "current_state_summary": "NASA, FAA, FDOT, and Space Florida records now span planning, environmental decisions, capital rules, one operational access asset, one active-countdown resilience operation, facility upgrades, and a planned services acquisition, while mission licensing and system outcomes remain open.",
+  "summary": "Follow Space Coast plans, site and operator licenses, construction, acceptance, national operating cadence, missions, anomalies, utilization, resilience, and local outcomes.",
+  "current_state_summary": "The pathway now adds national FAA operating cadence and NASA station-logistics outcomes as comparators while keeping Space Coast site, mission, utilization, and local-result gates separate.",
   "current_state": [
     "NASA's current master plan defines a multi-user infrastructure direction rather than a funded build.",
     "FAA records show Launch Complex 46 licensed through July 2030.",
@@ -13,11 +13,27 @@
     "Part 450 is the common national operator-licensing framework, while FDOT and Space Florida supply state planning and capital rails.",
     "FAA completed the LC-39A Starship environmental decision but not the vehicle operator license.",
     "Kennedy's replacement causeway bridge is operational, and one active-countdown prescribed-burn operation is documented.",
-    "SIMO remains a planned acquisition rather than an award or operating service."
+    "SIMO remains a planned acquisition rather than an award or operating service.",
+    "FAA reached 1,000 licensed or permitted commercial space operations in August 2025 after a record 148 operations in fiscal year 2024.",
+    "NASA reports 12 visiting spacecraft and seven cargo missions delivering more than 50,000 pounds to the station in 2025."
   ],
-  "primary_topics": ["Space", "Aviation", "Policy and Standards", "Finance and Risk", "Climate"],
-  "topic_ids": ["topic-space", "topic-aviation", "topic-policy-and-standards", "topic-finance-and-risk", "topic-climate"],
-  "local_system_ids": ["local-florida-space-coast-launch-corridor"],
+  "primary_topics": [
+    "Space",
+    "Aviation",
+    "Policy and Standards",
+    "Finance and Risk",
+    "Climate"
+  ],
+  "topic_ids": [
+    "topic-space",
+    "topic-aviation",
+    "topic-policy-and-standards",
+    "topic-finance-and-risk",
+    "topic-climate"
+  ],
+  "local_system_ids": [
+    "local-florida-space-coast-launch-corridor"
+  ],
   "signal_ids": [
     "signal-kennedy-multiuser-master-plan",
     "signal-space-florida-lc46-site-license-renewal",
@@ -27,7 +43,8 @@
     "signal-faa-starship-lc39a-environmental-decision",
     "signal-ksc-causeway-bridge-operational",
     "signal-ksc-active-countdown-prescribed-burn",
-    "signal-nasa-simo-planned-spaceport-services-acquisition"
+    "signal-nasa-simo-planned-spaceport-services-acquisition",
+    "signal-faa-reaches-one-thousand-commercial-space-operations"
   ],
   "source_ids": [
     "source-nasa-kennedy-master-plan-2026",
@@ -43,22 +60,33 @@
     "source-nasa-ksc-simo",
     "source-nasa-ksc-causeway-bridge-2025",
     "source-nasa-ksc-phsf-roman-upgrades-2026",
-    "source-nasa-ksc-prescribed-burn-2026"
+    "source-nasa-ksc-prescribed-burn-2026",
+    "source-55z-faa-one-thousand-commercial-space-operations-2025",
+    "source-55z-faa-fy2024-commercial-space-operations",
+    "source-55z-nasa-space-operations-outcomes-2025"
   ],
   "organization_ids": [],
   "technology_ids": [],
   "briefing_ids": [
     "briefing-local-watch-002-corridor-conversion-gates",
     "briefing-research-watch-001-cross-corridor-infrastructure-conversion",
-    "briefing-research-watch-002-local-implementation-dossiers"
+    "briefing-research-watch-002-local-implementation-dossiers",
+    "briefing-research-watch-004-comparative-operating-outcomes"
   ],
-  "dependency_map_ids": ["dependency-map-local-authorization-is-not-operation"],
+  "dependency_map_ids": [
+    "dependency-map-local-authorization-is-not-operation",
+    "dependency-map-comparative-outcomes-require-common-denominators"
+  ],
   "research_collection_ids": [
     "research-collection-thin-topic-authority-foundations-2023-2026",
     "research-collection-cross-corridor-infrastructure-conversion-2024-2026",
-    "research-collection-local-implementation-dossiers-2022-2026"
+    "research-collection-local-implementation-dossiers-2022-2026",
+    "research-collection-comparative-operating-outcomes-2023-2026"
   ],
-  "evidence_gap_ids": ["gap-013"],
+  "evidence_gap_ids": [
+    "gap-013",
+    "gap-016"
+  ],
   "dependency_stack": [
     {
       "stage": "Plan and capital program",
@@ -79,18 +107,25 @@
       "stage": "Mission and outcome",
       "current_state": "One active-countdown prescribed-burn operation is documented; mission success, safety, range utilization, repeated resilience performance, workforce, and local outcomes require separate records.",
       "boundary": "An operating corridor does not prove every site's current authorization or every project's outcome."
+    },
+    {
+      "stage": "National operating comparator",
+      "current_state": "FAA cadence and NASA mission-logistics records show real operation beyond plans and site decisions.",
+      "boundary": "National operation and station-logistics totals do not establish a named Space Coast site's license, utilization, mission success, safety rate, cost, or local benefit."
     }
   ],
   "evidence_limits": [
     "The pathway does not infer a mission approval from a site license.",
     "A master plan or capital program does not prove construction or acceptance.",
-    "The displayed Shuttle Landing Facility expiration date requires formal resolution before a current-license claim."
+    "The displayed Shuttle Landing Facility expiration date requires formal resolution before a current-license claim.",
+    "Launch, reentry, mission, spacecraft, cargo, research, anomaly, and local-outcome measures remain distinct."
   ],
   "next_records": [
     "Formal FAA disposition of the Shuttle Landing Facility license.",
     "LC-39A Starship vehicle-license action, construction, testing, mitigation, and mission records.",
     "SIMO solicitation, award, transition, service start, and performance.",
     "Named FDOT, Space Florida, and NASA project awards, closeout, acceptance, utilization, and outcomes.",
-    "Causeway traffic and reliability plus repeat prescribed-burn safety and ecological results."
+    "Causeway traffic and reliability plus repeat prescribed-burn safety and ecological results.",
+    "Space Coast site- and operator-level launch, reentry, mission, anomaly, delay, utilization, infrastructure, environmental, workforce, and local-outcome records."
   ]
 }

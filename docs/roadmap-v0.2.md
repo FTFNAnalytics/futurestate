@@ -41,24 +41,24 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after Phase 55W:
+Current `0.2.0-dev` state after Phase 55Z:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 591 |
-| Active sources | 298 |
-| Signals | 112 |
-| Published signals | 85 |
-| In Review signals | 27 |
+| Static pages | 780 |
+| Active sources | 357 |
+| Signals | 152 |
+| Published signals | 113 |
+| In Review signals | 39 |
 | Draft Sample signals | 0 |
-| Public update entries | 25 |
-| Research collections | 6 collections / 83 documents |
-| Research downloads | 41 local captures / 42 official-link files / 101 archive files across six ZIPs |
+| Public update entries | 28 |
+| Research collections | 9 collections / 163 documents |
+| Research downloads | 41 local captures / 122 official-link files / 190 archive files across nine ZIPs |
 | Named local inputs selected in Phases 50-55C | 18 |
 | Private source candidates | 150 local-only records |
 | Candidate review | all 150 reviewed once: 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected |
 | Source Coverage | 14 Strong; 0 Developing; 0 Weak |
-| Source health | 192 Manual Review; 106 Probe Ready |
+| Source health | 235 Manual Review; 122 Probe Ready |
 
 Existing operating assets:
 
@@ -68,8 +68,8 @@ Existing operating assets:
 - 18-item Phase 49 promoted-source queue batch,
 - publication policy and Method page,
 - five local-system constraint dossiers,
-- six qualitative dependency maps,
-- six reviewed research collections with 83 primary records and six downloadable archives,
+- seven qualitative dependency maps,
+- nine reviewed research collections with 163 primary records and nine downloadable archives,
 - a schema-backed public update log,
 - a public data index and versioned static source, topic, Published-signal, research, and Published-pathway exports,
 - robots, sitemap, canonical, and indexing boundaries.
@@ -92,9 +92,9 @@ By v0.2, a reader should be able to answer:
 
 | Area | v0.2 Target | Current | Remaining |
 | --- | ---: | ---: | ---: |
-| Total signals | 25-35 | 112 | original target retired; Phase 55S-55W used evidence-led expansion rather than a publication quota |
-| Published plus publication-ready | 8-12 | 85 Published | original target exceeded through bounded record-level gates; preserve evidence stages |
-| Active sources | 110-125 | 298 | target exceeded; use the expanded rails to deepen named conversion evidence |
+| Total signals | 25-35 | 152 | original target retired; Phase 55S-55Z used evidence-led expansion rather than a publication quota |
+| Published plus publication-ready | 8-12 | 113 Published | original target exceeded through bounded record-level gates; preserve evidence stages |
+| Active sources | 110-125 | 357 | target exceeded; use the expanded rails to deepen compatible longitudinal evidence |
 | Private source candidates | 150 | 150 local-only records | target met; 71 records now have separately authored public source representations |
 | Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | semiconductor service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
 | Public trust surfaces | update log plus Method links | implemented | maintain entries |
@@ -369,12 +369,15 @@ Recommended active schedule:
 | Completed | Phase 55U | three evidence-dense local systems, 26 sources, 15 signals, three pathways and gaps; owner-only Sites version 20 deployed |
 | Completed | Phase 55V | 18-document cross-corridor shelf, 21-file archive, Research Watch 001, three deepened local pathways, and owner-only Sites version 21 |
 | Completed | Phase 55W | 45 signal decisions, 12 promotions, four new pathways, corpus filtering, separate research shelves, and five exports |
-| Current | Phase 55X | dossier-led authority expansion across three to five under-connected reader journeys |
+| Completed | Phase 55X | dossier-led authority expansion across three local-system journeys |
+| Completed | Phase 55Y | operational evidence and receiving-system expansion across four journeys |
+| Completed | Phase 55Z | 32-record comparative operating-outcome collection, sixteen signal decisions, and comparison boundary |
+| Current | Phase 56A | within-domain longitudinal outcome series across four portfolios |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build, owner-only preview, and Phase 55S-55W aggressive expansion are complete. Phases 55A-55W established the authority, research, synthesis, pathway, evidence-gap, publication, navigation, and export foundations. The active non-public content gate is Phase 55X: dossier-led authority expansion across three to five under-connected reader journeys. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build, owner-only preview, and Phases 55S-55Z aggressive expansion are complete locally. Phases 55A-55Z established the authority, research, synthesis, pathway, evidence-gap, publication, navigation, export, operating-evidence, and comparison-boundary foundations. The active non-public content gate is Phase 56A: within-domain longitudinal outcomes. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -700,7 +703,7 @@ Exit criteria:
 - the collection archive and all public routes pass the release contract;
 - no new local system, public-access change, DNS change, or release freeze occurs.
 
-### Phase 55Y: Operational Evidence And Receiving-System Expansion - Next
+### Phase 55Y: Operational Evidence And Receiving-System Expansion - Complete
 
 Goal: deepen four under-connected conversion journeys outside the three Phase 55X local dossiers.
 
@@ -711,20 +714,80 @@ Target journeys:
 3. industrial-water agreement to accepted reuse operation,
 4. autonomy rules to operating service.
 
-Deliverables:
+Delivered:
 
-- add 24 primary records, six per journey;
-- add twelve bounded signals, three per journey, with independent publish or hold decisions;
-- prioritize executed procurement, test and acceptance, service delivery, operating metrics, safety records, and measured receiving-system outcomes;
-- update the relevant pathways, topics, gaps, briefings, and maps only where the new evidence changes a named stage;
-- package the records as a reviewed research collection with summaries, evidence limits, official links or captures, and a checksum manifest;
-- add no local system unless at least twelve authoritative records support a complete dependency trail.
+- added 24 primary records, six per journey, and twenty new source profiles;
+- added twelve bounded signals with eight Published and four explicit holds;
+- added a reviewed 27-file research archive with 24 official-link records, consolidated summaries, README, manifest, sizes, and SHA-256 checksums;
+- published Research Watch 003 and added dedicated AI-assurance and autonomous passenger-service outcome gaps;
+- deepened four pathways and four topic pages;
+- promoted the autonomy pathway and `Autonomy Rules Are Not Service` dependency map after adding effective fared passenger-service authority;
+- retained the zero-draft TEVV outline, planned Maricopa accelerator, proposed Chandler brine budget, and Zoox demonstration exemption `In Review`;
+- added no new local system.
 
 Exit criteria:
 
 - all four journeys have stronger downstream evidence and a named remaining gap;
-- publication decisions are record-level and machine-readable;
-- receiving-system outcomes are not inferred from funding, award, authorization, or planned activity;
+- the twelve signal decisions and 24 document decisions are machine-readable;
+- receiving-system outcomes are not inferred from funding, award, authorization, design capacity, or planned activity;
+- the local release passes at 698 pages, 327 sources, 136 signals, 101 Published signals, 131 research documents, and 150 current Published-support sources;
+- the owner-only deployment remains the final gate for this phase.
+
+### Phase 55Z: Comparative Operating Outcomes - Complete
+
+Goal: expand from individual operating records into comparable outcome trails without creating premature scores.
+
+Target portfolios:
+
+1. institutional AI and cybersecurity operation,
+2. advanced-manufacturing workforce and production outcomes,
+3. grid, water, storage, and critical-minerals infrastructure performance,
+4. mobility, aviation, and space service or mission outcomes.
+
+Delivered:
+
+- added 32 primary records, eight per portfolio, and 30 new source profiles;
+- added sixteen bounded signals with twelve Published and four explicit holds;
+- published 28 document summaries and held four where a comparable denominator or outcome measure was unavailable;
+- published Research Watch 004, one comparison-boundary dependency map, and evidence gap `gap-016`;
+- deepened eleven topics, eight pathways, and seven existing evidence gaps without adding a route family;
+- packaged 32 official-link records, summaries, README, and manifest in a verified 35-file archive;
+- applied the unit, denominator, period, geography, method, and attribution gate to every proposed comparison.
+
+Exit criteria:
+
+- each portfolio contains three independently useful Published outcome signals and one explicit hold;
+- comparisons disclose denominator, period, geography, method, and known limits;
+- no ranking, readiness score, or cross-system equivalence is inferred from incompatible records;
+- the local release passes at 780 pages, 357 sources, 152 signals, 113 Published signals, 163 research documents, and 166 current Published-support sources;
+- the owner-only deployment remains the final external gate.
+
+### Phase 56A: Within-Domain Longitudinal Outcome Series - Next
+
+Goal: turn the strongest Phase 55Z outcome records into time series that show direction without collapsing unlike systems into a score.
+
+Target portfolios:
+
+1. institutional AI and cybersecurity system performance,
+2. manufacturing cohort and facility production,
+3. asset-level grid, water, storage, and mineral performance,
+4. carrier, operator, and mission service outcomes.
+
+Deliverables:
+
+- add 48 primary records, twelve per portfolio;
+- add twenty bounded signals with independent publish or hold decisions;
+- require at least two compatible time points before describing a trend;
+- preserve revisions, denominator changes, discontinued series, and method changes as first-class evidence limits;
+- deepen existing pathways, topics, gaps, maps, and briefings before adding any route family;
+- package the records as one or more reviewed collections with summaries and checksum manifests;
+- keep the six scheduled checks and Project Baccara stages as bounded inserts.
+
+Exit criteria:
+
+- every Published longitudinal signal states its unit, denominator, period, geography, method, attribution, and comparability boundary;
+- no two-point movement is described as a durable trend without an explicit caveat;
+- no cross-domain ranking or composite score is created;
 - the full local release and owner-only deployment gates pass.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
@@ -821,7 +884,7 @@ In v0.2, only source discovery and change detection may become semi-automated. C
 
 v0.2 is successful when:
 
-- the current 93-signal Published set remains bounded and every future promotion passes a separate record-level gate,
+- the current 113-signal Published set remains bounded and every future promotion passes a separate record-level gate,
 - every current and future briefing and dependency map has an explicit publish, repair, split, or hold decision,
 - the fifteen current pathways remain valid as evidence-bounded journeys,
 - the highest-value local and implementation gaps have named next records and dated stop rules,
@@ -833,14 +896,14 @@ v0.2 is successful when:
 - release QA remains repeatable,
 - no automated process publishes claims without review.
 
-The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T brought every topic to a four-signal and two-Published-record floor. Phase 55U added three evidence-dense local systems, 26 official sources, 15 signals, three pathways and gaps, one briefing, and one map. Phase 55V added an 18-document cross-corridor shelf, a 21-file archive, a new synthesis briefing, and downstream evidence integration. Phase 55W added the record-level publication ledger, promoted 12 bounded signals, published one briefing and one map, expanded the pathway network to 15, and made the larger corpus discoverable through separate shelves, filters, and five exports. Phase 55X added 24 implementation records, twelve signals, a 27-file archive, and downstream repairs across the three newest local systems while retaining their end-to-end pathways `In Review`. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
+The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T brought every topic to a four-signal and two-Published-record floor. Phase 55U added three evidence-dense local systems, 26 official sources, 15 signals, three pathways and gaps, one briefing, and one map. Phase 55V added an 18-document cross-corridor shelf, a 21-file archive, a new synthesis briefing, and downstream evidence integration. Phase 55W added the record-level publication ledger, promoted 12 bounded signals, published one briefing and one map, expanded the pathway network to 15, and made the larger corpus discoverable through separate shelves, filters, and five exports. Phase 55X added 24 implementation records and twelve signals across three local systems. Phase 55Y added 24 operating and receiving-system records. Phase 55Z added 32 operating-outcome records, sixteen signals, a comparison-boundary map, and an explicit four-record hold set. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
 
 ## Immediate Next Step
 
-Begin Phase 55Y with operational evidence and receiving-system expansion. Add 24 primary records and twelve bounded signals across AI assurance, advanced-manufacturing workforce conversion, industrial-water reuse operation, and autonomy service. Prefer executed procurement, test and acceptance, service-delivery, operating-metric, safety, and measured-outcome records over another broad source-volume sprint.
+Begin Phase 56A with within-domain longitudinal outcome series. Add 48 primary records and twenty bounded signals across institutional AI/cyber system performance, manufacturing cohorts and facilities, asset-level infrastructure performance, and carrier/operator/mission services. Require compatible units, denominators, periods, geographies, methods, and attribution before describing change over time.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Sites version 22 continues to serve the exact Phase 55W tree until the Phase 55X owner-only refresh succeeds. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 23 serves the exact Phase 55X tree from private source commit `6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac` under custom access with one allowed owner and no groups. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
