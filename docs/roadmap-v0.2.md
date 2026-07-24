@@ -67,8 +67,8 @@ Existing operating assets:
 - documented signal repair workflow,
 - 18-item Phase 49 promoted-source queue batch,
 - publication policy and Method page,
-- two local-system constraint maps,
-- five qualitative dependency maps,
+- five local-system constraint dossiers,
+- six qualitative dependency maps,
 - five reviewed research collections with 65 primary records and five downloadable archives,
 - a schema-backed public update log,
 - versioned static source, topic, and Published-signal exports,
@@ -366,7 +366,7 @@ Recommended active schedule:
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
 | Authority backlog | Phase 55S | batches one and two complete; the remaining 30-record allocation now replenishes selected Phase 55U and Phase 55V work |
 | Completed | Phase 55T | all 17 topics now have at least four signals and two Published records; owner-only Sites version 18 deployed |
-| Completed | Phase 55U | three evidence-dense local systems, 26 sources, 15 signals, three pathways and gaps, owner-only deployment pending |
+| Completed | Phase 55U | three evidence-dense local systems, 26 sources, 15 signals, three pathways and gaps; owner-only Sites version 19 deployed |
 | Current | Phase 55V | grow the primary-document research and synthesis layer |
 | Planned | Phase 55W | apply publication gates and make the larger corpus navigable |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |

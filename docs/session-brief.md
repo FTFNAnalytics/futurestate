@@ -121,7 +121,7 @@ What is now stable:
 - Phase 55T added 17 named official sources and 18 signals across nine thin topic families. Ten records passed independent publication gates and eight remain `In Review`.
 - The verified Phase 55T contract is 521 pages, 272 sources, 97 signals, 61 Published signals, 36 In Review signals, seven briefings, five dependency maps, eight pathways across 12 Atlas surfaces, and 22 updates. Every topic now has at least four signals and two Published records. Exact source commit `b0527aa7795fef7cb15273aad923904f69c4133e` is deployed as owner-only Sites version 18.
 - Phase 55U added Northern Virginia compute, Nevada lithium and battery materials, and Florida Space Coast launch corridors with 26 official source profiles, three 16-source dossiers, and 15 bounded signals.
-- The locally verified Phase 55U contract is 570 pages, 298 sources, 112 signals, 73 Published signals, 39 In Review signals, five local systems, eight briefings, six dependency maps, eleven pathways across 18 Atlas surfaces, 13 evidence gaps, and 23 updates. Three new one-time tasks preserve the unresolved FAA, Loudoun, and Nevada checks.
+- The verified Phase 55U contract is 570 pages, 298 sources, 112 signals, 73 Published signals, 39 In Review signals, five local systems, eight briefings, six dependency maps, eleven pathways across 18 Atlas surfaces, 13 evidence gaps, and 23 updates. Exact source commit `8d53ebe35904c719145b5f0ad1d2b2388cc1a2be` is deployed as owner-only Sites version 19. Three new one-time tasks preserve the unresolved FAA, Loudoun, and Nevada checks.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 96 current Published-support sources are governed by the same current-source release assertion.
@@ -143,27 +143,27 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve the owner-only preview and continue the Phase 55S-55W aggressive content-expansion program immediately. Phase 55U is complete locally. Phase 55V should begin with a 12-20 document cross-corridor infrastructure-conversion collection using the strongest compute/grid, critical-minerals/water, and space-infrastructure records. The unfinished Phase 55S third allocation remains an authority backlog that can fill collection-specific gaps. All six scheduled checks are bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve the owner-only preview and continue the Phase 55S-55W aggressive content-expansion program immediately. Phase 55U is complete and deployed as owner-only Sites version 19. Phase 55V should begin with a 12-20 document cross-corridor infrastructure-conversion collection using the strongest compute/grid, critical-minerals/water, and space-infrastructure records. The unfinished Phase 55S third allocation remains an authority backlog that can fill collection-specific gaps. All six scheduled checks are bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 97 signal records,
-- 272 source records,
+- 112 signal records,
+- 298 source records,
 - 17 topic records,
-- 2 local system profiles,
+- 5 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 7 briefings: 2 Published and 5 In Review,
-- 10 evidence gap records,
+- 8 briefings: 2 Published and 6 In Review,
+- 13 evidence gap records,
 - 6 structured Phase 55Q evidence-gap decisions,
-- 5 dependency maps: 3 Published and 2 In Review,
+- 6 dependency maps: 3 Published and 3 In Review,
 - 5 research collections with 65 document records,
-- 8 reader pathways across 12 existing Atlas surfaces,
-- 22 public update-log entries.
+- 11 reader pathways across 18 existing Atlas surfaces,
+- 23 public update-log entries.
 
-Sixty-one official-source-backed signals are now `Published`.
+Seventy-three official-source-backed signals are now `Published`.
 
 Phase 55M added thirteen bounded records to the prior 25-signal Published set:
 
@@ -181,7 +181,7 @@ Phase 55M added thirteen bounded records to the prior 25-signal Published set:
 - GSA's Buy AI purchasing channel,
 - and NIST's preliminary PIV post-quantum working drafts.
 
-Thirty-six signals remain `In Review`. Important holds include:
+Thirty-nine signals remain `In Review`. Important holds include:
 
 - the DARPA Lift Challenge scheduled trial until official post-August 9 results,
 - the Joby certification-test company claim,
@@ -191,9 +191,9 @@ Thirty-six signals remain `In Review`. Important holds include:
 
 No local system profile or company-claim record should be treated as `Published`. Project Huckleberry is Published only as a bounded single-project conversion record, not as a local-system readiness conclusion.
 
-Stack Watch 003 and Stack Watch 004 are Published. Local Watch 001, Stack Watch 001, and Stack Watch 002 remain `In Review`. All three dependency maps are Published after Phase 55O removed their reliance on non-published signal trails; every map remains qualitative and retains explicit evidence gaps and interpretation boundaries.
+Stack Watch 003 and Stack Watch 004 are Published. Local Watch 001 and 002 and Stack Watch 001, 002, 005, and 006 remain `In Review`. Three dependency maps are Published and three remain `In Review`; every map remains qualitative and retains explicit evidence gaps and interpretation boundaries.
 
-Phase 55P pathways are editorial navigation layers rather than new claim records. Every pathway is anchored to Published signals, Published synthesis, Published research collections, and open evidence gaps; no pathway changes the publication state of a linked record.
+Reader pathways are editorial navigation layers rather than new claim records. No pathway changes the publication state of a linked record.
 
 ## Editorial Rules
 
@@ -211,10 +211,13 @@ Operating rules:
 
 ## Local Systems
 
-Two local system profiles exist:
+Five local system profiles exist:
 
 - Ontario Real Estate,
-- U.S. Southwest Chip Corridor.
+- U.S. Southwest Chip Corridor,
+- Northern Virginia Data Center Corridor,
+- Nevada Lithium And Battery Materials Corridor,
+- Florida Space Coast Launch Corridor.
 
 Both profiles were hardened in Phase 13 with:
 
@@ -239,7 +242,7 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 55T: Thin-Topic Corpus Build
+Phase 55U: Local-Systems Network
 ```
 
 Key files:
@@ -266,6 +269,7 @@ Key files:
 - `docs/work-packages/phase-55o-briefing-dependency-map-publication.md`
 - `docs/work-packages/phase-55p-reader-pathways-priority-dossiers.md`
 - `docs/work-packages/phase-55t-thin-topic-corpus-build.md`
+- `docs/work-packages/phase-55u-local-systems-network.md`
 - `docs/work-packages/phase-55l-implementation-evidence-conversion.md`
 - `docs/work-packages/phase-55n-implementation-outcomes-local-conversion.md`
 - `docs/release-qa-v0.2.md`
@@ -327,7 +331,6 @@ Phase 55V research collections and synthesis
 
 Proceed by:
 
-- refresh the verified Phase 55U package in the existing owner-only Sites project,
 - build a 12-20 document cross-corridor infrastructure-conversion collection,
 - include summaries, evidence limits, local captures or official-link files, a manifest, a download archive, and implementation trails,
 - use the remaining Phase 55S authority backlog only where it fills a named Phase 55V collection gap,
@@ -418,7 +421,7 @@ Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 local Phase 55U candidate: package 0.2.0-dev, 298 public sources, 150 first-pass-triaged private candidates, 112 signals, 17 topics, 23 updates, 13 evidence gaps, 11 reader pathways across 18 Atlas surfaces, 570 generated site pages, 73 Published signals, 2 Published briefings, 6 In Review briefings, 3 Published and 3 In Review dependency maps, 5 local systems, 65 research documents, verified 26-file, 11-file, 19-file, 11-file, and 13-file research archives, and 3 public JSON endpoints. Until Phase 55U is refreshed, Sites version 18 serves the Phase 55T source at https://ftfn-analytics.jbumstead.chatgpt.site. Source Coverage is 14 Strong lanes; source health reports 192 Manual Review and 106 Probe Ready records.
+v0.2 Phase 55U candidate: package 0.2.0-dev, 298 public sources, 150 first-pass-triaged private candidates, 112 signals, 17 topics, 23 updates, 13 evidence gaps, 11 reader pathways across 18 Atlas surfaces, 570 generated site pages, 73 Published signals, 2 Published briefings, 6 In Review briefings, 3 Published and 3 In Review dependency maps, 5 local systems, 65 research documents, verified 26-file, 11-file, 19-file, 11-file, and 13-file research archives, and 3 public JSON endpoints. Exact source commit `8d53ebe35904c719145b5f0ad1d2b2388cc1a2be` is deployed as owner-only Sites version 19 at https://ftfn-analytics.jbumstead.chatgpt.site. Source Coverage is 14 Strong lanes; source health reports 192 Manual Review and 106 Probe Ready records.
 
 Next decision gate:
 Preserve the owner-only preview and begin Phase 55V. Build a 12-20 document infrastructure-conversion collection with document summaries, evidence limits, local captures or official-link records, a manifest and downloadable archive, implementation trails, and at least one bounded synthesis artifact. Use the remaining Phase 55S authority backlog only for named collection gaps. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.

@@ -55,7 +55,7 @@ Phase 55S batch two completes the next 30 authority records across critical mine
 
 Phase 55T closes the remaining topic-depth deficits with 17 named official sources and 18 bounded signals across nine topic families. Ten records pass independent publication gates and eight remain `In Review`. Every topic now contains at least four signals and at least two Published records. Two new `In Review` pathways and two `In Review` dependency maps connect climate observation to local decision and autonomy regulation to operating service; Stack Watch 006, nine topic-summary repairs, and three evidence-gap repairs make the next-record questions explicit. The verified package reaches 521 pages, 272 sources, 97 signals, 61 Published, 36 In Review, 22 updates, seven briefings, five dependency maps, and eight pathways across 12 Atlas surfaces. Sites version 18 serves exact source commit `b0527aa7795fef7cb15273aad923904f69c4133e` under the unchanged owner-only policy.
 
-Phase 55U adds three evidence-dense systems: the Northern Virginia Data Center Corridor, Nevada Lithium And Battery Materials Corridor, and Florida Space Coast Launch Corridor. Twenty-six official source profiles support three 16-source dossiers and 15 bounded signals; twelve pass independent publication gates and three remain `In Review`. Three evidence gaps, three pathways, Local Watch 002, and `Local Authorization Is Not Operation` expose the conversion from demand, authorization, permits, environmental review, and finance into construction, acceptance, service, compliant operation, and scale. Three one-time Codex tasks preserve the dated FAA, Loudoun, and Nevada checks without pausing Phase 55V. The locally verified package reaches 570 pages, 298 sources, 112 signals, 73 Published, 39 In Review, 23 updates, five local systems, eight briefings, six maps, and eleven pathways across 18 Atlas surfaces. Owner-only Sites version 18 remains the hosted checkpoint until the Phase 55U source is committed and refreshed.
+Phase 55U adds three evidence-dense systems: the Northern Virginia Data Center Corridor, Nevada Lithium And Battery Materials Corridor, and Florida Space Coast Launch Corridor. Twenty-six official source profiles support three 16-source dossiers and 15 bounded signals; twelve pass independent publication gates and three remain `In Review`. Three evidence gaps, three pathways, Local Watch 002, and `Local Authorization Is Not Operation` expose the conversion from demand, authorization, permits, environmental review, and finance into construction, acceptance, service, compliant operation, and scale. Three one-time Codex tasks preserve the dated FAA, Loudoun, and Nevada checks without pausing Phase 55V. The verified package reaches 570 pages, 298 sources, 112 signals, 73 Published, 39 In Review, 23 updates, five local systems, eight briefings, six maps, and eleven pathways across 18 Atlas surfaces. Exact source commit `8d53ebe35904c719145b5f0ad1d2b2388cc1a2be` is deployed as owner-only Sites version 19.
 
 ## Build Inventory
 
@@ -192,7 +192,7 @@ Verified results:
 - five Published research collections with all 65 document routes in the sitemap,
 - verified 26-file, 11-file, 19-file, 11-file, and 13-file ZIP archives containing 37 local captures, 28 official-link files, summaries, README files, and manifests.
 
-The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; the completed local-system gate is recorded in `docs/work-packages/phase-55u-local-systems-network.md`. Sites version 18 remains the hosted Phase 55T checkpoint until Phase 55U is committed and refreshed. The expansion does not change the access policy, package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
+The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; the completed local-system gate and deployment receipt are recorded in `docs/work-packages/phase-55u-local-systems-network.md`. Sites version 19 serves the exact Phase 55U content commit under the unchanged owner-only policy. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
@@ -204,8 +204,8 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Twenty-eight signals remain `In Review`; the DARPA Lift Challenge is the explicit future-trial hold, the OEB non-wires proceeding is an active regulatory-process hold, and the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F. Fifty-one bounded signals are Published.
-- Three briefings and both local-system profiles remain prelaunch or research material. The two Published briefings and three Published dependency maps are bounded synthesis products, not readiness assessments.
+- Thirty-nine signals remain `In Review`; the DARPA Lift Challenge is the explicit future-trial hold, the OEB non-wires proceeding is an active regulatory-process hold, and the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F. Seventy-three bounded signals are Published.
+- Six briefings and all five local-system profiles remain prelaunch or research material. The two Published briefings and three Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
 - Six Phase 55N sources have official-link records because their official hosts blocked or complicated automated export; the collection preserves direct official URLs rather than third-party substitutes.
@@ -213,7 +213,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 - The Project Baccara record now includes an official 4-1 County action and active final air permit; the fully executed MCP, condition compliance, service, construction, testing, occupancy, and operation remain unverified.
 - Toronto item `2026.SC33.9` is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted amendment, confirmed building permit, start, completion, or occupancy is yet available. A bounded recheck is scheduled for August 1.
 - Public JSON files are static exports, not a live API.
-- There is no private database, automated ingestion, scheduled monitoring, analytics, newsletter capture, account system, or numeric 42/59 scoring.
+- There is no private database, automated ingestion or publishing, analytics, newsletter capture, account system, or numeric 42/59 scoring. Six bounded one-time project tasks preserve dated checks.
 - The private candidate registry is an ignored local file, so it requires private workspace or encrypted backup outside public Git.
 - The optional bulk link audit was blocked by uniform outbound Node network failures in this execution environment; representative official rails were spot-checked, and each remaining URL must still be opened during human triage.
 - The local browser pass is focused release QA, not a complete WCAG or assistive-technology audit.
