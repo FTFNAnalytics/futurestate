@@ -332,6 +332,11 @@ const requiredStrings = z.array(z.string()).min(1);
 const requiredFrameworkLayers = z.array(frameworkLayer).min(1);
 const requiredTopics = z.array(topicPillar).min(1);
 const requiredConstraints = z.array(constraintTag).min(1);
+const readerPathwayDependency = z.object({
+  stage: z.string(),
+  current_state: z.string(),
+  boundary: z.string()
+});
 
 const signals = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/signals" }),
@@ -610,6 +615,33 @@ const researchDocuments = defineCollection({
   })
 });
 
+const readerPathways = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/reader-pathways" }),
+  schema: z.object({
+    id: z.string(),
+    title: z.string(),
+    slug: z.string(),
+    record_status: recordStatus.default("Published"),
+    summary: z.string(),
+    current_state_summary: z.string(),
+    current_state: requiredStrings,
+    primary_topics: requiredTopics,
+    topic_ids: z.array(z.string()).default([]),
+    local_system_ids: z.array(z.string()).default([]),
+    signal_ids: requiredStrings,
+    source_ids: requiredStrings,
+    organization_ids: z.array(z.string()).default([]),
+    technology_ids: z.array(z.string()).default([]),
+    briefing_ids: requiredStrings,
+    dependency_map_ids: requiredStrings,
+    research_collection_ids: requiredStrings,
+    evidence_gap_ids: requiredStrings,
+    dependency_stack: z.array(readerPathwayDependency).min(1),
+    evidence_limits: requiredStrings,
+    next_records: requiredStrings
+  })
+});
+
 export const collections = {
   signals,
   sources,
@@ -622,5 +654,6 @@ export const collections = {
   dependencyMaps,
   updates,
   researchCollections,
-  researchDocuments
+  researchDocuments,
+  readerPathways
 };

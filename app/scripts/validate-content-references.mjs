@@ -163,6 +163,18 @@ function requireResolvedLocalSystemName(record, localSystemNames) {
   }
 }
 
+function requirePublishedReferences(record, fieldName, targetIndex, targetLabel) {
+  for (const value of asArray(record.data[fieldName])) {
+    const target = targetIndex.get(value);
+
+    if (target && target.data.record_status !== "Published") {
+      errors.push(
+        `${toPosixPath(record.filePath)} is Published but field ${fieldName} references non-Published ${targetLabel} "${value}".`
+      );
+    }
+  }
+}
+
 function requireDependencyMapNodeReferences(record, referenceIndexes) {
   const nodes = asArray(record.data.nodes);
 
@@ -230,6 +242,7 @@ const dependencyMaps = readJsonCollection("dependency-maps");
 const updates = readJsonCollection("updates");
 const researchCollections = readJsonCollection("research-collections");
 const researchDocuments = readJsonCollection("research-documents");
+const readerPathways = readJsonCollection("reader-pathways");
 const signals = readMdxCollection("signals");
 const localSystems = readMdxCollection("local-systems");
 const briefings = readMdxCollection("briefings");
@@ -245,6 +258,7 @@ const briefingIds = indexBy(briefings, "id");
 const dependencyMapIds = indexBy(dependencyMaps, "id");
 const researchCollectionIds = indexBy(researchCollections, "id");
 const researchDocumentIds = indexBy(researchDocuments, "id");
+const readerPathwayIds = indexBy(readerPathways, "id");
 indexBy(updates, "id");
 
 const allPublicRecordIds = new Map([
@@ -258,7 +272,8 @@ const allPublicRecordIds = new Map([
   ...briefingIds,
   ...dependencyMapIds,
   ...researchCollectionIds,
-  ...researchDocumentIds
+  ...researchDocumentIds,
+  ...readerPathwayIds
 ]);
 
 const localSystemNames = new Set(localSystems.map((record) => record.data.name).filter(Boolean));
@@ -281,6 +296,7 @@ validateSlugUniqueness(evidenceGaps, "evidence gap");
 validateSlugUniqueness(dependencyMaps, "dependency map");
 validateSlugUniqueness(researchCollections, "research collection");
 validateSlugUniqueness(researchDocuments, "research document");
+validateSlugUniqueness(readerPathways, "reader pathway");
 
 for (const record of signals) {
   requireReferences(record, "source_ids", sourceIds, "source");
@@ -363,6 +379,30 @@ for (const record of researchDocuments) {
   requireReferences(record, "source_id", sourceIds, "source");
 }
 
+for (const record of readerPathways) {
+  requireReferences(record, "topic_ids", topicIds, "topic");
+  requireReferences(record, "local_system_ids", localSystemIds, "local system");
+  requireReferences(record, "signal_ids", signalIds, "signal");
+  requireReferences(record, "source_ids", sourceIds, "source");
+  requireReferences(record, "organization_ids", organizationIds, "organization");
+  requireReferences(record, "technology_ids", technologyIds, "technology");
+  requireReferences(record, "briefing_ids", briefingIds, "briefing");
+  requireReferences(record, "dependency_map_ids", dependencyMapIds, "dependency map");
+  requireReferences(record, "research_collection_ids", researchCollectionIds, "research collection");
+  requireReferences(record, "evidence_gap_ids", evidenceGapIds, "evidence gap");
+
+  if (asArray(record.data.topic_ids).length === 0 && asArray(record.data.local_system_ids).length === 0) {
+    errors.push(`${toPosixPath(record.filePath)} does not target a topic or local-system surface.`);
+  }
+
+  if (record.data.record_status === "Published") {
+    requirePublishedReferences(record, "signal_ids", signalIds, "signal");
+    requirePublishedReferences(record, "briefing_ids", briefingIds, "briefing");
+    requirePublishedReferences(record, "dependency_map_ids", dependencyMapIds, "dependency map");
+    requirePublishedReferences(record, "research_collection_ids", researchCollectionIds, "research collection");
+  }
+}
+
 for (const record of updates) {
   requireReferences(record, "affected_record_ids", allPublicRecordIds, "public record");
 }
@@ -395,6 +435,7 @@ console.log(
     `${dependencyMaps.length} dependency maps`,
     `${researchCollections.length} research collections`,
     `${researchDocuments.length} research documents`,
+    `${readerPathways.length} reader pathways`,
     `${updates.length} updates`
   ].join(", ")
 );

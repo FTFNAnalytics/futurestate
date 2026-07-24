@@ -10,6 +10,9 @@ const sources = await getCollection("sources");
 const organizations = await getCollection("organizations");
 const technologies = await getCollection("technologies");
 const localSystems = await getCollection("localSystems");
+const readerPathways = (await getCollection("readerPathways")).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title)
+);
 const evidenceGaps = await getCollection("evidenceGaps");
 const researchDocuments = await getCollection("researchDocuments");
 const dependencyMaps = (await getCollection("dependencyMaps")).sort((a, b) =>
@@ -34,6 +37,8 @@ const sourceReviewDueCount = sourceFreshnessRows.filter((freshness) => freshness
 const sourceWatchSoonCount = sourceFreshnessRows.filter((freshness) => freshness.status === "Watch soon").length;
 const sourceProbeReadyCount = sources.filter((source) => getSourceHealth(source.data).status === "Probe ready").length;
 const watchLaneCount = new Set(sources.flatMap((source) => source.data.watch_lanes)).size;
+const topicById = new Map(topics.map((topic) => [topic.data.id, topic]));
+const localSystemById = new Map(localSystems.map((system) => [system.data.id, system]));
 
 const atlasSections = [
   {
@@ -41,6 +46,12 @@ const atlasSections = [
     href: "/atlas/topics/",
     count: topics.length,
     summary: "Public pillars that organize signals by domain, framework layer, constraints, and watch questions."
+  },
+  {
+    title: "Reader Pathways",
+    href: "/atlas/#reader-pathways",
+    count: readerPathways.length,
+    summary: "Curated journeys through Published signals, primary collections, dependency stacks, local systems, and open evidence gaps."
   },
   {
     title: "Sources",
@@ -145,6 +156,48 @@ const atlasSections = [
           <p>{section.summary}</p>
         </article>
       ))}
+    </div>
+  </section>
+
+  <section class="page-section" id="reader-pathways" data-reader-pathway-index>
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Reader Pathways</div>
+        <h2>Follow a question through the evidence stack.</h2>
+        <p>
+          Each pathway starts with Published records, keeps unresolved stages
+          visible, and names the next authoritative evidence needed.
+        </p>
+      </div>
+    </div>
+    <div class="grid">
+      {readerPathways.map((pathway) => {
+        const pathwayTopics = pathway.data.topic_ids
+          .map((id) => topicById.get(id))
+          .filter(Boolean);
+        const pathwayLocalSystems = pathway.data.local_system_ids
+          .map((id) => localSystemById.get(id))
+          .filter(Boolean);
+
+        return (
+          <article class="record-card">
+            <div class="meta-row">
+              <MetaPill label={`${pathway.data.signal_ids.length} Published signals`} tone="possibility" />
+              <MetaPill label={`${pathway.data.evidence_gap_ids.length} open gaps`} tone="urgency" />
+            </div>
+            <h3>{pathway.data.title}</h3>
+            <p>{pathway.data.current_state_summary}</p>
+            <div class="meta-row">
+              {pathwayTopics.map((topic) => (
+                <a class="inline-link" href={`/atlas/topics/${topic?.data.slug}/`}>{topic?.data.name}</a>
+              ))}
+              {pathwayLocalSystems.map((system) => (
+                <a class="inline-link" href={`/atlas/local-systems/${system?.data.slug}/`}>{system?.data.name}</a>
+              ))}
+            </div>
+          </article>
+        );
+      })}
     </div>
   </section>
 

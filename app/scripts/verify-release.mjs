@@ -50,15 +50,21 @@ const topics = await readJson(join(distRoot, "data", "topics.json"));
 const sitemap = await readText(join(distRoot, "sitemap.xml"));
 const robots = await readText(join(distRoot, "robots.txt"));
 const updatesHtml = await readText(join(distRoot, "updates", "index.html"));
+const atlasHtml = await readText(join(distRoot, "atlas", "index.html"));
 const researchCollectionDirectory = join(appRoot, "src", "content", "research-collections");
 const researchDocumentDirectory = join(appRoot, "src", "content", "research-documents");
+const readerPathwayDirectory = join(appRoot, "src", "content", "reader-pathways");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
+const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
 const researchCollections = await Promise.all(
   researchCollectionFiles.map((name) => readJson(join(researchCollectionDirectory, name))),
 );
 const researchDocuments = await Promise.all(
   researchDocumentFiles.map((name) => readJson(join(researchDocumentDirectory, name))),
+);
+const readerPathways = await Promise.all(
+  readerPathwayFiles.map((name) => readJson(join(readerPathwayDirectory, name))),
 );
 const allDistFiles = await collectFiles(distRoot);
 const downloadsRoot = join(distRoot, "downloads");
@@ -80,6 +86,10 @@ check(
 check(
   researchDocuments.length === manifest.expected_build.research_documents,
   `Expected ${manifest.expected_build.research_documents} research documents, found ${researchDocuments.length}.`,
+);
+check(
+  readerPathways.length === manifest.expected_build.reader_pathways,
+  `Expected ${manifest.expected_build.reader_pathways} reader pathways, found ${readerPathways.length}.`,
 );
 check(signals.schema_version === "1.0" && sources.schema_version === "1.0" && topics.schema_version === "1.0", "All public exports must use schema version 1.0.");
 check(signals.records.every((record) => record.record_status === "Published"), "Signal export contains a non-Published record.");
@@ -198,6 +208,29 @@ for (const group of synthesisRouteGroups) {
   }
 }
 
+check(
+  manifest.reader_pathway_routes.length === manifest.expected_build.reader_pathway_surfaces,
+  `Expected ${manifest.expected_build.reader_pathway_surfaces} reader-pathway surfaces, found ${manifest.reader_pathway_routes.length}.`,
+);
+check(
+  atlasHtml.includes("data-reader-pathway-index"),
+  "Atlas index is missing the reader-pathway index.",
+);
+for (const pathway of readerPathways) {
+  check(atlasHtml.includes(pathway.title), `Atlas index is missing reader pathway: ${pathway.title}.`);
+}
+for (const route of manifest.reader_pathway_routes) {
+  const html = await readText(routeToHtml(route));
+  check(html.includes("data-reader-pathway="), `${route} is missing a reader pathway.`);
+  check(html.includes("Current State"), `${route} is missing the Current State section.`);
+  check(html.includes("Dependency Stack"), `${route} is missing the Dependency Stack section.`);
+  check(html.includes("Evidence Limits"), `${route} is missing the Evidence Limits section.`);
+  check(html.includes("Published Evidence"), `${route} is missing the Published Evidence section.`);
+  check(html.includes("What To Watch Next"), `${route} is missing the What To Watch Next section.`);
+  check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
+  check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
+}
+
 const updateDirectory = join(appRoot, "src", "content", "updates");
 const updateFiles = (await readdir(updateDirectory)).filter((name) => name.endsWith(".json"));
 check(updateFiles.length === manifest.expected_build.updates, `Expected ${manifest.expected_build.updates} update records, found ${updateFiles.length}.`);
@@ -221,4 +254,7 @@ console.log(`${researchCollections.length} research collection; ${researchDocume
 console.log(
   `${manifest.published_briefing_routes.length} Published briefings; ${manifest.published_dependency_map_routes.length} Published dependency maps.`,
 );
-console.log("Robots, sitemap, canonical, indexing, required outputs, private-registry exclusion, and public export boundaries passed.");
+console.log(
+  `${readerPathways.length} reader pathways across ${manifest.reader_pathway_routes.length} existing Atlas surfaces.`,
+);
+console.log("Robots, sitemap, canonical, indexing, reader pathways, required outputs, private-registry exclusion, and public export boundaries passed.");

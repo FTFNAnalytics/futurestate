@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3",
+  "schema_version": "1.4",
   "build_id": "ftfn-v0.2",
   "generated_date": "2026-07-24",
   "project": "FTFN",
@@ -56,7 +56,9 @@
     "in_review_dependency_maps": 0,
     "research_collections": 3,
     "research_documents": 47,
-    "updates": 17,
+    "reader_pathways": 6,
+    "reader_pathway_surfaces": 7,
+    "updates": 18,
     "public_json_exports": 3
   },
   "private_authority_layer": {
@@ -83,7 +85,7 @@
     "sources_added": 87,
     "public_json_exports_added": 3,
     "public_update_log_added": true,
-    "summary": "Extends the Phase 55K through Phase 55N evidence baseline with the Phase 55M signal gate and Phase 55O synthesis gate: 189 public sources, 63 signals, 38 Published signals, two Published briefings, three Published dependency maps, 17 public updates, three research collections, 47 summarized research documents, and versioned source, topic, and Published-signal exports."
+    "summary": "Extends the Phase 55K through Phase 55N evidence baseline with the Phase 55M signal gate, Phase 55O synthesis gate, and Phase 55P reader pathways: 189 public sources, 63 signals, 38 Published signals, two Published briefings, three Published dependency maps, six reader pathways across seven existing Atlas surfaces, 18 public updates, three research collections, 47 summarized research documents, and versioned source, topic, and Published-signal exports."
   },
   "phase_55k_delta": {
     "static_pages_added": 60,
@@ -149,6 +151,18 @@
     "published_briefing_routes_added_to_sitemap": 2,
     "published_dependency_map_routes": 3
   },
+  "phase_55p_delta": {
+    "reader_pathways_added": 6,
+    "existing_atlas_surfaces_deepened": 7,
+    "new_public_route_families": 0,
+    "published_signals_curated": 30,
+    "published_briefings_linked": 2,
+    "published_dependency_maps_linked": 3,
+    "research_collections_linked": 3,
+    "evidence_gaps_linked": 8,
+    "public_update_entries_added": 1,
+    "generated_pages_added": 0
+  },
   "last_verified": {
     "date": "2026-07-24",
     "published_support_minimum_date": "2026-07-22",
@@ -167,7 +181,7 @@
     "build": "passed",
     "static_pages_built": 380,
     "release_assertions": "passed",
-    "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-55o-visual-qa-not-requested",
+    "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-55p-visual-qa-not-requested",
     "browser_viewports": [
       "1440x900",
       "390x844"
@@ -199,7 +213,14 @@
     "dist/briefings/local-watch-001-conversion-gates/index.html",
     "dist/atlas/dependency-maps/federal-research-to-industrial-capacity/index.html",
     "dist/atlas/dependency-maps/local-constraints-where-the-future-arrives/index.html",
-    "dist/atlas/dependency-maps/post-quantum-standards-are-not-migration/index.html"
+    "dist/atlas/dependency-maps/post-quantum-standards-are-not-migration/index.html",
+    "dist/atlas/topics/chips-and-compute/index.html",
+    "dist/atlas/topics/energy/index.html",
+    "dist/atlas/topics/critical-minerals/index.html",
+    "dist/atlas/topics/policy-and-standards/index.html",
+    "dist/atlas/topics/advanced-manufacturing/index.html",
+    "dist/atlas/local-systems/us-southwest-chip-corridor/index.html",
+    "dist/atlas/local-systems/ontario-real-estate/index.html"
   ],
   "published_signal_routes": [
     "/signals/doe-critical-minerals-materials-accelerator-nofo/",
@@ -288,6 +309,15 @@
     "/atlas/dependency-maps/post-quantum-standards-are-not-migration/"
   ],
   "in_review_dependency_map_routes": [],
+  "reader_pathway_routes": [
+    "/atlas/topics/chips-and-compute/",
+    "/atlas/topics/energy/",
+    "/atlas/topics/critical-minerals/",
+    "/atlas/topics/policy-and-standards/",
+    "/atlas/topics/advanced-manufacturing/",
+    "/atlas/local-systems/us-southwest-chip-corridor/",
+    "/atlas/local-systems/ontario-real-estate/"
+  ],
   "seo_policy": {
     "robots": "Allow all public routes and reference https://ftfn.io/sitemap.xml",
     "sitemap": "Include primary public pages, Atlas reference indexes, local systems, Published dependency maps, Published briefings, Published research collections and documents, and Published signal details only",
@@ -310,7 +340,8 @@
     "Confirm all three public JSON exports match the versioned allowlist contract",
     "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
     "Confirm generated output contains no private candidate IDs or registry-path references",
-    "Confirm the seventeen-entry public update log renders",
+    "Confirm all six reader pathways render across the five priority topic pages and two local-system pages with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records",
+    "Confirm the eighteen-entry public update log renders",
     "Confirm all three research collections render all 47 document summaries and their 26-file, 11-file, and 19-file ZIP archives",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
@@ -344,5 +375,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the Phase 55O synthesis publication review. Two briefings move to Published, three briefings retain explicit holds, and all three dependency maps are repaired around Published signals before publication. Signal membership remains 38 Published and 25 In Review. Sites version 13 serves exact source commit b4f5f63ff33c72ec9ce58191b981904ad9fed4ad. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
+  "notes": "This manifest records the Phase 55P reader-pathway build before its owner-only deployment. Six pathways deepen five priority topic pages and both local-system pages without adding a new route family. Every pathway is anchored to Published signals, Published synthesis, Published research collections, and explicit evidence gaps. Signal membership remains 38 Published and 25 In Review. The currently deployed owner-only checkpoint remains Sites version 13 from source commit b4f5f63ff33c72ec9ce58191b981904ad9fed4ad until the validated Phase 55P source is deployed. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
 }

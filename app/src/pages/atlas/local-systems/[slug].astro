@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import DependencyMapLinks from "../../../components/atlas/DependencyMapLinks.astro";
+import ReaderPathway from "../../../components/atlas/ReaderPathway.astro";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 import { getEvidenceGapTone, getLocalEvidenceNote } from "../../../lib/editorial";
@@ -17,6 +18,9 @@ export async function getStaticPaths() {
 
 const { system } = Astro.props;
 const { Content } = await render(system);
+const readerPathways = (await getCollection("readerPathways")).filter((pathway) =>
+  pathway.data.local_system_ids.includes(system.data.id)
+);
 const sources = await getCollection("sources");
 const sourceIds = new Set(system.data.source_ids);
 const generatedAt = new Date();
@@ -109,6 +113,8 @@ const formatDate = (date: Date) =>
       {system.data.last_reviewed_date && <MetaPill label={`Reviewed ${formatDate(system.data.last_reviewed_date)}`} />}
     </div>
   </section>
+
+  {readerPathways.map((pathway) => <ReaderPathway pathway={pathway} />)}
 
   <section class="page-section">
     <div class="grid">

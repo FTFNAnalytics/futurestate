@@ -1,0 +1,246 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import MetaPill from "../ui/MetaPill.astro";
+
+interface Props {
+  pathway: CollectionEntry<"readerPathways">;
+}
+
+const { pathway } = Astro.props;
+const [
+  signals,
+  sources,
+  organizations,
+  technologies,
+  localSystems,
+  briefings,
+  dependencyMaps,
+  researchCollections,
+  evidenceGaps
+] = await Promise.all([
+  getCollection("signals"),
+  getCollection("sources"),
+  getCollection("organizations"),
+  getCollection("technologies"),
+  getCollection("localSystems"),
+  getCollection("briefings"),
+  getCollection("dependencyMaps"),
+  getCollection("researchCollections"),
+  getCollection("evidenceGaps")
+]);
+
+const pathwaySignals = signals.filter((record) => pathway.data.signal_ids.includes(record.data.id));
+const pathwaySources = sources.filter((record) => pathway.data.source_ids.includes(record.data.id));
+const pathwayOrganizations = organizations.filter((record) => pathway.data.organization_ids.includes(record.data.id));
+const pathwayTechnologies = technologies.filter((record) => pathway.data.technology_ids.includes(record.data.id));
+const pathwayLocalSystems = localSystems.filter((record) => pathway.data.local_system_ids.includes(record.data.id));
+const pathwayBriefings = briefings.filter((record) => pathway.data.briefing_ids.includes(record.data.id));
+const pathwayMaps = dependencyMaps.filter((record) => pathway.data.dependency_map_ids.includes(record.data.id));
+const pathwayResearchCollections = researchCollections.filter((record) =>
+  pathway.data.research_collection_ids.includes(record.data.id)
+);
+const pathwayEvidenceGaps = evidenceGaps.filter((record) => pathway.data.evidence_gap_ids.includes(record.data.id));
+---
+
+<section class="page-section" data-reader-pathway={pathway.data.slug}>
+  <div class="section-heading">
+    <div>
+      <div class="eyebrow">Reader Pathway</div>
+      <h2>{pathway.data.title}</h2>
+      <p>{pathway.data.summary}</p>
+    </div>
+    <div class="meta-row">
+      <MetaPill label={`${pathwaySignals.length} Published signals`} tone="possibility" />
+      <MetaPill label={`${pathwayMaps.length} dependency map${pathwayMaps.length === 1 ? "" : "s"}`} />
+      <MetaPill label={`${pathwayEvidenceGaps.length} open gap${pathwayEvidenceGaps.length === 1 ? "" : "s"}`} tone="urgency" />
+    </div>
+  </div>
+
+  <div class="two-column-section">
+    <article class="record-card">
+      <div class="eyebrow">Current State</div>
+      <h3>What the Published record supports now.</h3>
+      <p>{pathway.data.current_state_summary}</p>
+      <ul>
+        {pathway.data.current_state.map((item) => <li>{item}</li>)}
+      </ul>
+    </article>
+
+    <article class="record-card">
+      <div class="eyebrow">Evidence Limits</div>
+      <h3>Where the record stops.</h3>
+      <ul>
+        {pathway.data.evidence_limits.map((item) => <li>{item}</li>)}
+      </ul>
+    </article>
+  </div>
+
+  <div class="section-heading section-heading--stacked">
+    <div>
+      <div class="eyebrow">Dependency Stack</div>
+      <h3>Follow the stages without collapsing them.</h3>
+    </div>
+  </div>
+  <div class="grid">
+    {pathway.data.dependency_stack.map((item) => (
+      <article class="record-card">
+        <h3>{item.stage}</h3>
+        <p>{item.current_state}</p>
+        <p class="muted"><strong>Boundary:</strong> {item.boundary}</p>
+      </article>
+    ))}
+  </div>
+
+  <div class="section-heading section-heading--stacked">
+    <div>
+      <div class="eyebrow">Published Evidence</div>
+      <h3>Start with the records that carry the pathway.</h3>
+    </div>
+  </div>
+  <div class="grid">
+    {pathwaySignals.map((signal) => (
+      <article class="record-card">
+        <div class="meta-row">
+          <MetaPill label={signal.data.record_status} tone="possibility" />
+          <MetaPill label={signal.data.signal_type} />
+          <MetaPill label={signal.data.maturity_level} />
+        </div>
+        <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+        <p>{signal.data.summary}</p>
+      </article>
+    ))}
+  </div>
+
+  <div class="two-column-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Synthesis</div>
+          <h3>Briefings and dependency maps.</h3>
+        </div>
+      </div>
+      <div class="source-list">
+        {pathwayBriefings.map((briefing) => (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label="Briefing" />
+              <MetaPill label={briefing.data.record_status} tone="possibility" />
+            </div>
+            <h3><a href={`/briefings/${briefing.data.slug}/`}>{briefing.data.title}</a></h3>
+            <p>{briefing.data.summary}</p>
+          </article>
+        ))}
+        {pathwayMaps.map((dependencyMap) => (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label={dependencyMap.data.map_type} />
+              <MetaPill label={dependencyMap.data.record_status} tone="possibility" />
+            </div>
+            <h3><a href={`/atlas/dependency-maps/${dependencyMap.data.slug}/`}>{dependencyMap.data.title}</a></h3>
+            <p>{dependencyMap.data.map_question}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Primary Collections</div>
+          <h3>Open the underlying document sets.</h3>
+        </div>
+      </div>
+      <div class="source-list">
+        {pathwayResearchCollections.map((collection) => (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label={`${collection.data.document_ids.length} documents`} />
+              <MetaPill label={collection.data.record_status} tone="possibility" />
+            </div>
+            <h3><a href={`/research/${collection.data.slug}/`}>{collection.data.title}</a></h3>
+            <p>{collection.data.summary}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="two-column-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Evidence Network</div>
+          <h3>Sources, organizations, and technologies.</h3>
+        </div>
+      </div>
+      <div class="source-list">
+        {pathwaySources.map((source) => (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label={source.data.source_type} />
+              <MetaPill label={source.data.credibility_level} />
+            </div>
+            <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+            <p>{source.data.known_limitations}</p>
+          </article>
+        ))}
+        {pathwayOrganizations.map((organization) => (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label={organization.data.organization_type} />
+            </div>
+            <h3><a href={`/atlas/organizations/${organization.data.slug}/`}>{organization.data.name}</a></h3>
+            <p>{organization.data.summary}</p>
+          </article>
+        ))}
+        {pathwayTechnologies.map((technology) => (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label={technology.data.maturity_level} />
+            </div>
+            <h3><a href={`/atlas/technologies/${technology.data.slug}/`}>{technology.data.name}</a></h3>
+            <p>{technology.data.summary}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Receiving Systems And Gaps</div>
+          <h3>Where interpretation becomes local and incomplete.</h3>
+        </div>
+      </div>
+      <div class="source-list">
+        {pathwayLocalSystems.map((system) => (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label={system.data.local_evidence_level} />
+            </div>
+            <h3><a href={`/atlas/local-systems/${system.data.slug}/`}>{system.data.name}</a></h3>
+            <p>{system.data.current_equilibrium}</p>
+          </article>
+        ))}
+        {pathwayEvidenceGaps.map((gap) => (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label={gap.data.status} tone="review" />
+              <MetaPill label={gap.data.priority} tone={gap.data.priority === "High" ? "urgency" : "default"} />
+            </div>
+            <h3><a href={`/atlas/evidence-gaps/${gap.data.slug}/`}>{gap.data.title}</a></h3>
+            <p>{gap.data.next_action}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <article class="record-card">
+    <div class="eyebrow">What To Watch Next</div>
+    <h3>Named records that can move this pathway.</h3>
+    <ul>
+      {pathway.data.next_records.map((item) => <li>{item}</li>)}
+    </ul>
+  </article>
+</section>
