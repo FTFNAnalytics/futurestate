@@ -364,7 +364,7 @@ Recommended active schedule:
 | Completed | Phase 55Q | six structured gap decisions, five named sources, four Published signals, and owner-only Sites version 15 |
 | Next dated insert | Phase 55H | complete the Toronto post-Council authority recheck on August 1 |
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
-| Current | Phase 55S | batches one and two complete locally; deploy batch two owner-only, then execute the final 30-record sub-batch |
+| Current | Phase 55S | batches one and two complete and owner-only Sites version 17 deployed; execute the final 30-record sub-batch |
 | Planned | Phase 55T | build useful multi-record evidence shelves across every thin topic |
 | Planned | Phase 55U | expand from two local systems to a five- or six-system network |
 | Planned | Phase 55V | grow the primary-document research and synthesis layer |
@@ -749,7 +749,7 @@ The v0.2 build and publication thresholds pass in the current candidate. Phase 5
 
 ## Immediate Next Step
 
-Complete the batch-two owner-only release, then continue Phase 55S with the final 30-record authority sub-batch. Combine the four remaining High-priority candidates with 26 newly selected primary records. Prioritize named downstream artifacts, thin-topic signal conversion, bounded local evidence, and the first new dependency-map draft or Stack Watch 005 repair.
+Continue Phase 55S with the final 30-record authority sub-batch. Combine the four remaining High-priority candidates with 26 newly selected primary records. Prioritize named downstream artifacts, thin-topic signal conversion, bounded local evidence, and the first new dependency-map draft or Stack Watch 005 repair.
 
 Run Phase 55H on August 1 and Phase 55R on August 10 through their existing scheduled project tasks. Preserve the Arizona wastewater recheck on September 22. Each dated result is a bounded insert, not a reason to pause the active content queue.
 

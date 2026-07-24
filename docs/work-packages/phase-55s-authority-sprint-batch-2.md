@@ -1,7 +1,7 @@
 # Phase 55S Authority Sprint — Batch 2
 
 Date: 2026-07-24  
-Status: locally complete and verified; owner-only Sites deployment pending
+Status: complete; owner-only Sites version 17 deployed
 
 ## Objective
 
@@ -147,7 +147,7 @@ The local package passes:
 - production build of 483 pages;
 - research-archive generation with 10 records and 13 files.
 
-Release assertions pass. Owner-only deployment is the remaining release step.
+Release assertions and owner-only deployment pass.
 
 ## Next Queue
 
@@ -169,4 +169,11 @@ Owner-only access remains required. Public GitHub, package freeze, custom-domain
 
 ## Deployment Receipt
 
-To be appended after the exact source commit is saved and deployed to the existing owner-only Sites project.
+- Exact source commit: `3e2310de99382612be7c5221d0070184188f85d4`
+- Sites version: 17
+- Version ID: `appgprj_6a614e1092d08191bf65779fc35df959~appgver_8805fd64c46081919941d43d5c9b64c3`
+- Deployment ID: `appgdep_6a63a65d34a481919de5836c4dd5a43b`
+- URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- Access: verified owner-only custom policy
+- Deployment status: succeeded
+- Public GitHub, custom domain, DNS, package freeze, and public launch: unchanged

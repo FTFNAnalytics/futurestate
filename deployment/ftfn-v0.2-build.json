@@ -5,15 +5,15 @@
   "project": "FTFN",
   "package_name": "ftfn-app",
   "package_version": "0.2.0-dev",
-  "deployment_status": "batch-two-locally-verified-owner-only-deployment-pending",
+  "deployment_status": "owner-only-private-preview-deployed",
   "public_launch_approved": false,
   "private_preview": {
     "provider": "OpenAI Sites",
     "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
     "access": "owner-only-custom-policy",
     "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
-    "current_source_commit": "9e393f0731d996662d95d912e9737bafdaa1ad67",
-    "current_version_number": 16,
+    "current_source_commit": "3e2310de99382612be7c5221d0070184188f85d4",
+    "current_version_number": 17,
     "custom_domain_attached": false,
     "post_deploy_qa": "passed-deployment-status-and-owner-only-access-policy"
   },
@@ -229,7 +229,7 @@
     ],
     "browser_routes_checked": 10,
     "hosted_routes_checked": 5,
-    "preview_qa": "batch-two-owner-only-deployment-pending; version-16-remains-last-deployed"
+    "preview_qa": "passed-owner-only-version-17-deployment-and-access"
   },
   "required_output_files": [
     "dist/index.html",
@@ -456,5 +456,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the locally validated Phase 55S authority-sprint batch-two build. The second batch promotes 30 High-priority private candidates, adds 30 public sources, seven bounded signals, one ten-document collection with a 13-file archive, and one In Review briefing draft across critical minerals, power, chips, labor, housing, Phoenix infrastructure, Toronto procurement planning, and Ontario regulation. Six signals pass independent publication gates; the active OEB proceeding remains In Review. Sites version 16 remains the last deployed owner-only checkpoint until the batch-two exact source is saved and deployed. Access remains custom with one allowed owner and no groups; this manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
+  "notes": "This manifest records the locally validated and owner-only deployed Phase 55S authority-sprint batch-two build. The second batch promotes 30 High-priority private candidates, adds 30 public sources, seven bounded signals, one ten-document collection with a 13-file archive, and one In Review briefing draft across critical minerals, power, chips, labor, housing, Phoenix infrastructure, Toronto procurement planning, and Ontario regulation. Six signals pass independent publication gates; the active OEB proceeding remains In Review. Sites version 17 serves exact source commit 3e2310de99382612be7c5221d0070184188f85d4. Access remains custom with one allowed owner and no groups; this manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
 }

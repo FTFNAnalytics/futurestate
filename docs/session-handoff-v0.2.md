@@ -17,10 +17,10 @@ Content: 255 sources, 79 signals, 17 topics, 5 research collections / 65 researc
 Publication: 51 Published signals, 28 In Review signals, 2 Published briefings, 4 In Review briefings, 3 Published dependency maps
 Trust/data: 21 update entries, 6 Phase 55Q gap decisions, 6 reader pathways across 7 Atlas surfaces, 3 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, and 13-file research archives
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: Sites version 16 remains the last owner-only checkpoint while the verified batch-two package awaits deployment at https://ftfn-analytics.jbumstead.chatgpt.site
+Deployment: owner-only Sites version 17 from 3e2310d at https://ftfn-analytics.jbumstead.chatgpt.site
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 156 Manual Review, 99 Probe Ready; 14 Strong coverage lanes
-Next phase: deploy Phase 55S batch two owner-only, then process the final 30-record sub-batch; Phase 55H, Phase 55R, and Arizona wastewater remain dated inserts
+Next phase: process the final Phase 55S 30-record sub-batch; Phase 55H, Phase 55R, and Arizona wastewater remain dated inserts
 ```
 
 ## Read First
@@ -82,6 +82,7 @@ The approved preview sequence is complete:
 27. Deployed exact source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97` as owner-only Sites version 15 with one allowed owner, no groups, and no access, custom-domain, or DNS change.
 28. Completed Phase 55S batch one and deployed exact source commit `9e393f0731d996662d95d912e9737bafdaa1ad67` as owner-only Sites version 16.
 29. Completed Phase 55S batch two locally: promoted 30 candidates, added 30 sources, seven signals, ten research documents, one collection, one briefing draft, and one update; verified 483 pages, 255 sources, 79 signals, 51 Published, and 28 In Review without changing access, DNS, custom-domain, or public GitHub state.
+30. Deployed exact Phase 55S batch-two source commit `3e2310de99382612be7c5221d0070184188f85d4` as owner-only Sites version 17 with the existing sole-owner access policy and no DNS, custom-domain, package, or public-GitHub change.
 
 ## Required Stop Points
 
@@ -135,9 +136,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 55S authority-sprint batch two. The current candidate should be 0.2.0-dev on codex/phase51-content with 255 sources, 79 signals, 51 Published signals, 28 In Review signals, two Published briefings, four In Review briefings, three Published dependency maps, six Phase 55Q gap decisions, six reader pathways across seven existing Atlas surfaces, 21 public updates, three JSON exports, 483 generated site pages, five research collections, 65 research documents, and verified 26-file, 11-file, 19-file, 11-file, and 13-file download archives. Sites version 16 remains the last owner-only checkpoint until the batch-two exact source is deployed to https://ftfn-analytics.jbumstead.chatgpt.site; the branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
+The latest completed work is Phase 55S authority-sprint batch two. The current candidate should be 0.2.0-dev on codex/phase51-content with 255 sources, 79 signals, 51 Published signals, 28 In Review signals, two Published briefings, four In Review briefings, three Published dependency maps, six Phase 55Q gap decisions, six reader pathways across seven existing Atlas surfaces, 21 public updates, three JSON exports, 483 generated site pages, five research collections, 65 research documents, and verified 26-file, 11-file, 19-file, 11-file, and 13-file download archives. Owner-only Sites version 17 serves exact source commit 3e2310de99382612be7c5221d0070184188f85d4 at https://ftfn-analytics.jbumstead.chatgpt.site; the branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55S batches one and two are complete; deploy batch two owner-only and process the final 30-record sub-batch from the four remaining High-priority candidates plus 26 newly selected primary artifacts. Favor named downstream records, thin-topic signal conversion, and the first dependency-map draft or Stack Watch 005 repair. Treat the August 1 Toronto task, August 10 DARPA Lift task, and September 22 Arizona wastewater task as bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55S batches one and two are complete and deployed; process the final 30-record sub-batch from the four remaining High-priority candidates plus 26 newly selected primary artifacts. Favor named downstream records, thin-topic signal conversion, and the first dependency-map draft or Stack Watch 005 repair. Treat the August 1 Toronto task, August 10 DARPA Lift task, and September 22 Arizona wastewater task as bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

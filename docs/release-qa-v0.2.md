@@ -182,4 +182,4 @@ The 483-page artifact passes:
 - the 21-entry update log, three public exports, required routes and downloads, canonicals, robots, and private-registry exclusion;
 - the new ten-record, 13-file research archive with SHA-256 `58736A52A803181D21EA1CB395132C4787AF4C1164EC846CDA8DC324AF79C864`.
 
-A repeat visual/browser pass was not requested because the batch changes content only. The owner-only deployment receipt remains to be appended. Public access, package freeze, custom-domain attachment, Hostinger DNS, and public launch remain outside this QA scope.
+A repeat visual/browser pass was not requested because the batch changes content only. Exact source commit `3e2310de99382612be7c5221d0070184188f85d4` is deployed successfully as owner-only Sites version 17 at `https://ftfn-analytics.jbumstead.chatgpt.site`. Public access, package freeze, custom-domain attachment, Hostinger DNS, and public launch remain outside this QA scope.
