@@ -62,6 +62,7 @@ const briefingDirectory = join(appRoot, "src", "content", "briefings");
 const dependencyMapDirectory = join(appRoot, "src", "content", "dependency-maps");
 const signalDirectory = join(appRoot, "src", "content", "signals");
 const phase55WReviewPath = join(appRoot, "src", "data", "phase-55w-publication-review.json");
+const phase55XReviewPath = join(appRoot, "src", "data", "phase-55x-publication-review.json");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
@@ -86,6 +87,7 @@ const readerPathways = await Promise.all(
   readerPathwayFiles.map((name) => readJson(join(readerPathwayDirectory, name))),
 );
 const phase55WReview = await readJson(phase55WReviewPath);
+const phase55XReview = await readJson(phase55XReviewPath);
 const evidenceGaps = await Promise.all(
   evidenceGapFiles.map((name) => readJson(join(evidenceGapDirectory, name))),
 );
@@ -224,6 +226,54 @@ for (const id of phase55WSynthesis.held_dependency_maps) {
 }
 
 const researchDocumentById = new Map(researchDocuments.map((document) => [document.id, document]));
+const readerPathwayById = new Map(readerPathways.map((pathway) => [pathway.id, pathway]));
+const phase55XSignals = phase55XReview.signal_decisions;
+const phase55XResearch = phase55XReview.research_decisions;
+const phase55XSynthesis = phase55XReview.synthesis_decisions;
+const phase55XSignalIds = [...phase55XSignals.published, ...phase55XSignals.held];
+check(phase55XSignals.reviewed === 12, `Expected 12 Phase 55X signal decisions, found ${phase55XSignals.reviewed}.`);
+check(phase55XSignals.published.length === 8, `Expected eight Phase 55X Published signals, found ${phase55XSignals.published.length}.`);
+check(phase55XSignals.held.length === 4, `Expected four Phase 55X held signals, found ${phase55XSignals.held.length}.`);
+check(new Set(phase55XSignalIds).size === 12, "Phase 55X signal decision IDs must be unique.");
+for (const id of phase55XSignals.published) {
+  check(signalStatusById.get(id) === "Published", `Phase 55X Published signal ${id} has the wrong status.`);
+}
+for (const id of phase55XSignals.held) {
+  check(signalStatusById.get(id) === "In Review", `Phase 55X held signal ${id} has the wrong status.`);
+}
+const phase55XCollection = researchCollections.find(
+  (collection) => collection.id === phase55XResearch.collection_id,
+);
+check(Boolean(phase55XCollection), "Phase 55X local implementation research collection is missing.");
+check(phase55XResearch.documents_reviewed === 24, `Expected 24 Phase 55X research decisions, found ${phase55XResearch.documents_reviewed}.`);
+if (phase55XCollection) {
+  check(phase55XCollection.document_ids.length === 24, `Expected 24 Phase 55X documents, found ${phase55XCollection.document_ids.length}.`);
+  const phase55XDocuments = phase55XCollection.document_ids
+    .map((documentId) => researchDocumentById.get(documentId))
+    .filter(Boolean);
+  check(
+    phase55XDocuments.filter((document) => document.record_status === "Published").length === 22,
+    "Phase 55X must contain twenty-two Published research documents.",
+  );
+  check(
+    phase55XDocuments.filter((document) => document.record_status === "In Review").length === 2,
+    "Phase 55X must contain two held research documents.",
+  );
+  check(
+    phase55XDocuments.every((document) => document.capture_status === "Official link record"),
+    "Phase 55X research documents must use the declared official-link capture contract.",
+  );
+}
+for (const id of phase55XResearch.held_documents) {
+  check(researchDocumentById.get(id)?.record_status === "In Review", `Phase 55X held research document ${id} has the wrong status.`);
+}
+for (const id of phase55XSynthesis.held_briefings) {
+  check(briefingStatusById.get(id) === "In Review", `Phase 55X held briefing ${id} has the wrong status.`);
+}
+for (const id of phase55XSynthesis.pathways_remaining_in_review) {
+  check(readerPathwayById.get(id)?.record_status === "In Review", `Phase 55X pathway ${id} should remain In Review.`);
+}
+
 for (const collection of researchCollections) {
   const collectionRoute = `/research/${collection.slug}/`;
   const collectionHtml = await readText(routeToHtml(collectionRoute));

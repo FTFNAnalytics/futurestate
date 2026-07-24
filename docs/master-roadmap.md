@@ -990,7 +990,8 @@ These are the next practical actions from the current project state.
 281. Complete Phase 55C conditional permit follow-through without pushing or deploying. Status: complete; added official County conditions, an official proposed-air-permit notice, and independent vote corroboration; repaired the existing Project Baccara signal; and preserved every final-permit, service, military, construction, occupancy, and operating gate.
 282. Complete Phase 55D owner-only Sites preview without attaching `ftfn.io` or changing public access. Status: complete; deployed the 218-page candidate, passed route, metadata, indexing, robots, sitemap, and export checks, and preserved Hostinger plus Google Workspace DNS unchanged.
 283. Complete Phase 55W publication, navigation, and scale gate. Status: complete locally; reviewed 45 signal decisions, promoted 12, published one briefing and one map, expanded to 15 pathways, added corpus-scale discovery and research shelves, expanded to five exports, and verified the 591-page release contract.
-284. Begin Phase 55X dossier-led authority expansion. Status: current; select three to five under-connected reader journeys and add 24-36 primary documents plus 12-18 bounded signals tied to named downstream evidence gaps.
+284. Complete Phase 55X dossier-led authority expansion. Status: complete locally; added 24 primary documents and twelve bounded signals across Northern Virginia compute, Nevada lithium, and Florida Space Coast journeys, published eight signals and 22 document summaries, retained four signals, two document summaries, one briefing, and all three end-to-end pathways `In Review`, and verified the 638-page release contract.
+285. Begin Phase 55Y operational evidence and receiving-system expansion. Status: next; add 24 primary records and twelve bounded signals across AI assurance, advanced-manufacturing workforce conversion, industrial-water reuse operation, and autonomy service.
 
 ## 10. Current Stage Map
 
@@ -1021,11 +1022,11 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a generated source monitor that turns checked dates, update cadence, capture priority, and authority levels into a public review queue.
 - an authority red-team plan that separates credible scaffold work from the content depth required for a comprehensive resource.
 - an authoritative live source plan that identifies the first 30 source additions and the monitoring architecture needed for source intelligence.
-- an expanded source registry with 117 records, watch-lane metadata, access-type metadata, endpoint metadata, source health states, and explicit review cadences.
+- an expanded source registry with 307 records, watch-lane metadata, access-type metadata, endpoint metadata, source health states, and explicit review cadences.
 - a generated source coverage matrix at `/atlas/source-coverage/`.
 - local system dossier tables generated from linked source records.
 - 17 public topic records, including Cybersecurity and Discovery Technologies.
-- 117 source records, including Discovery Technologies, Arizona utility planning and named service, Phoenix permitting and water-service anchors, TSMC and Project Baccara facility records, Toronto development and permit-process anchors, federal post-quantum migration directives, official meta-catalogs, funding/spending rails, international statistics, research APIs, patent/IP sources, water/minerals/trade sources, space licensing, agriculture biotechnology, and Phoenix/MAG local-system data.
+- 307 source records, including Discovery Technologies, Arizona utility planning and named service, Phoenix permitting and water-service anchors, TSMC and Project Baccara facility records, Toronto development and permit-process anchors, federal post-quantum migration directives, official meta-catalogs, funding/spending rails, international statistics, research APIs, patent/IP sources, water/minerals/trade sources, space licensing, agriculture biotechnology, and five local-system evidence stacks.
 - v0.1 handoff and deployment-prep artifacts: `docs/session-brief-v0.1.md`, `docs/roadmap-v0.1.md`, and `deployment/ftfn-v0.1-build.json`.
 - a v0.2 roadmap that scopes private source updates, dated signal repair, named local evidence trails, public update/correction logs, and static metadata exports.
 - a signal scale scenario map for the 25-35 signal v0.2 target and the larger 70-signal authority-system target.
@@ -1033,12 +1034,12 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a second private queue batch that turns promoted Phase 49 source records into bounded review candidates.
 - six Phase 50 bounded source-item signals spanning a DOE/Grants.gov opportunity, MAG local projections, USAspending award, NSF award, USGS gallium record, and Toronto planning application.
 - a frozen v0.1.1 release package with app version 0.1.1, deployment manifest, versioned session brief, release roadmap, local release-QA evidence, and Git checkpoint `4845597`.
-- a current `0.2.0-dev` build with 120 sources, 35 signals, seven update entries, nine Published signals, three public JSON exports, and 218 pages.
-- a private 150-record source-candidate shelf across 15 evidence profiles, with 45 reviewed, 105 awaiting triage, and zero automatic public promotions.
+- a current `0.2.0-dev` build with 307 sources, 124 signals, 26 update entries, 93 Published signals, five public JSON exports, and 638 pages.
+- a private 150-record source-candidate shelf across 15 evidence profiles, with all 150 first-pass triaged and zero automatic public promotions.
 - Source Monitor review-state groups and next actions plus Strong, Developing, and Weak Source Coverage summaries.
 - a passed v0.2 local release gate with a versioned manifest, repeatable release assertions, desktop/mobile browser evidence, repaired 44-pixel header targets, and a public-facing launch note plus limitations statement.
 
-It is not yet a public launch product. An owner-only Sites preview now exists and has passed post-deploy QA, while package-version freeze, public access, `ftfn.io` attachment, Hostinger DNS changes, analytics decisions, and final public-launch approval remain separate. The current v0.2 build has passed Phase 54 locally and Phase 55D on the hosted preview. Nine records are `Published`, 25 signals are `In Review`, and one company-claim record remains a `Draft Sample`. Local constraint profiles, the briefing, dependency maps, and most reviewed signals remain prelaunch material.
+It is not yet a public launch product. An owner-only Sites preview exists, while package-version freeze, public access, `ftfn.io` attachment, Hostinger DNS changes, analytics decisions, and final public-launch approval remain separate. The current v0.2 build passes the Phase 55X local release gate with 93 Published and 31 In Review signals, three Published and seven In Review briefings, four Published and two In Review dependency maps, and five local-system dossiers. The three newest end-to-end local pathways remain `In Review`.
 
 ### Stage 1: Reader-Journey QA
 
@@ -1222,12 +1223,14 @@ Next candidate work:
 - Deployed Phase 55V app content commit `3bdb52a9348e5cf963ec6569838f880611d2491c` as owner-only Sites version 21 from exact private source commit `b2db5978f0c4a37c35998f849fcd75158c115cec`; deployment status and the protected sign-in gate passed with one allowed owner and no groups.
 - Phase 55W complete locally: reviewed 45 signal decisions, promoted 12, held 27, reconfirmed six Published controls, published one briefing and one map, and added four Published pathways.
 - The verified Phase 55W contract is 591 pages, 298 sources, 112 signals, 85 Published, 27 In Review, 134 current Published-support sources, nine briefings, six maps, six research collections, 83 research documents, fifteen pathways across 19 Atlas surfaces, 25 updates, and five public-data exports.
-- Phase 55X current: select three to five under-connected reader journeys and build evidence-dense dossiers with 24-36 primary documents and 12-18 bounded signals that close named permit, service, acceptance, operation, or measured-outcome gaps.
+- Phase 55X complete locally: added 24 official implementation records, twelve bounded signals, one 27-file archive, one `In Review` briefing, and integrated repairs across three local systems, four pathways, three gaps, eight topics, and one Published map.
+- The verified Phase 55X contract is 638 pages, 307 sources, 124 signals, 93 Published, 31 In Review, 139 current Published-support sources, ten briefings, six maps, seven research collections, 107 research documents, fifteen pathways across 19 Atlas surfaces, and 26 updates.
+- Phase 55Y next: add 24 primary records and twelve bounded signals across AI assurance, manufacturing-workforce conversion, industrial-water reuse operation, and autonomy service, prioritizing executed procurement, acceptance, service delivery, operating metrics, safety, and measured receiving-system outcomes.
 - Phase 55H, Phase 55R, Space Coast license, Arizona wastewater, Loudoun standards, and Nevada delivery remain scheduled inserts that do not pause the expansion queue.
 - Continue the NSTC and NAPMP recipient-level reconciliation, GAO prototype-OTA oversight trail, O-RAN external testing and adoption trail, PIV revision and pilot trail, Phoenix Fab 3 conversion trail, and Project Baccara downstream stages only where they serve a selected pathway or evidence gap.
 - Keep future In Review dependency-map details `noindex, follow` and outside the sitemap; local-system profiles remain qualitative prelaunch dossiers without a Published state.
 - Preserve separate award, obligation, physical milestone, permit, test, acceptance, operation, and scale stages for every record.
-- Deployed local Phase 55W app commit `bdc34a225f0e27233c39d28df4ccf3c61e7d8776` from exact private source commit `7ba179bf4ee1beaec5a7ba2299800bebb210c0c8` as owner-only Sites version 22 with one allowed owner and no groups.
+- Sites version 22 continues to serve the Phase 55W checkpoint until the Phase 55X owner-only deployment succeeds; preserve one allowed owner and no groups.
 - Keep Supabase activation, public access, package freeze, DNS, custom-domain attachment, and public GitHub synchronization as separate tracks or approval gates.
 
 Decision:

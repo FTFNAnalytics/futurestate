@@ -10,7 +10,7 @@
   "constraint_tags": ["Power", "Infrastructure", "Land Use", "Permitting", "Water", "Capital", "Labor", "Public Trust"],
   "question": "Which named Northern Virginia projects progress from demand and authorization through built infrastructure, energization, compliant operation, and accepted local outcomes?",
   "why_it_matters": "Regional scale and forecasts do not establish whether the next customer can be served, whether infrastructure is built, or whether local environmental and community conditions are satisfied.",
-  "current_support": "The dossier and Phase 55V research shelf now contain a locally captured legislative baseline plus official planning, rate, Golden-Mars transmission, air-permit, and reclaimed-water records.",
+  "current_support": "The local dossier now combines a legislative baseline, the 2026 PJM forecast, rate and transmission records, revised generator guidance, local standards, three named 2026 air permits, and water-service rails.",
   "missing_evidence": [
     "customer-specific service agreements and disclosed load",
     "final transmission routes, land rights, construction, and energization",
@@ -41,30 +41,38 @@
     "source-virginia-scc-golden-mars-2026",
     "source-loudoun-phase2-data-center-standards",
     "source-virginia-deq-data-center-air-permits",
-    "source-loudoun-water-reclaimed-water"
+    "source-loudoun-water-reclaimed-water",
+    "source-virginia-scc-transmission-projects",
+    "source-virginia-deq-project-raspberry"
   ],
   "related_signal_ids": [
     "signal-virginia-data-center-load-concentration",
     "signal-virginia-gs5-large-load-rate-class",
     "signal-golden-mars-transmission-conditional-approval",
     "signal-virginia-data-center-air-permit-trail",
-    "signal-loudoun-phase2-data-center-standards-watch"
+    "signal-loudoun-phase2-data-center-standards-watch",
+    "signal-pjm-2026-large-load-forecast-uncertainty",
+    "signal-virginia-deq-apg576-data-center-generator-controls",
+    "signal-scc-morrisville-wishing-star-transmission-application",
+    "signal-virginia-project-raspberry-multi-permit-trail"
   ],
   "related_local_system_ids": ["local-northern-virginia-data-center-corridor"],
   "latest_review": {
-    "phase": "Phase 55V",
+    "phase": "Phase 55X",
     "decision": "Narrowed",
     "review_date": "2026-07-24",
     "named_records": [
-      "Cross-Corridor Infrastructure Conversion Evidence collection",
-      "JLARC Data Centers in Virginia",
-      "Virginia SCC Golden-Mars transmission decision",
-      "Virginia SCC GS-5 large-load rate decision",
-      "Virginia DEQ issued data-center air permits"
+      "Local Implementation Dossiers collection",
+      "PJM Load Forecast Report - January 2026",
+      "Virginia DEQ APG-576",
+      "SCC case PUR-2026-00021",
+      "Amazon IAD-215 permit 74252-2",
+      "NTT VA10 permit 74260-2",
+      "Digital Third Second and Carver permit 74262-4"
     ],
-    "stage_result": "Six reviewed Virginia records now separate market concentration, local planning, rate design, a named transmission approval, environmental permits, and water service. The missing proof is final route, build, energization, customer service, measured use, and outcomes.",
-    "stop_rule": "Do not treat market concentration, a forecast, rate class, route approval, air permit, or reclaimed-water program as customer service, built infrastructure, operation, or accepted local outcome.",
+    "stage_result": "Eight additional records make forecast uncertainty, generator-control standards, a second transmission case, and three facility-level air-permit trails explicit. The missing proof remains final decisions, build, energization, customer service, testing, compliant operation, measured use, and outcomes.",
+    "stop_rule": "Do not treat a forecast, docket listing, policy project, permit, modeling requirement, or guidance document as approval, customer service, built infrastructure, compliant operation, or accepted local outcome.",
     "next_check_date": "2026-10-01"
   },
-  "notes": "Phase 55V narrows the gap with a six-record primary-document shelf while preserving the Phase 55U dated policy check."
+  "notes": "Phase 55X adds an eight-record implementation dossier and four bounded signals while preserving the October 1 Loudoun policy check."
 }

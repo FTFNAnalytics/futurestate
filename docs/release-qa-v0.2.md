@@ -2,16 +2,16 @@
 
 Date: 2026-07-24
 
-Status: Phase 55W local release and owner-only Sites version 22 deployment gates passed.
+Status: Phase 55X local release gates passed; owner-only Sites deployment receipt pending.
 
 ## Artifact Under Review
 
 - Build manifest: `deployment/ftfn-v0.2-build.json`
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
-- Expected build: 591 HTML pages
-- Content baseline: 298 sources, 112 signals, 17 topics, 25 update entries, 13 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 local systems, 9 briefings, 6 dependency maps, 6 research collections, 83 research documents
-- Publication baseline: 85 Published signals, 27 In Review signals, 3 Published briefings, 6 In Review briefings, 4 Published dependency maps, 2 In Review dependency maps
+- Expected build: 638 HTML pages
+- Content baseline: 307 sources, 124 signals, 17 topics, 26 update entries, 13 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 local systems, 10 briefings, 6 dependency maps, 7 research collections, 107 research documents
+- Publication baseline: 93 Published signals, 31 In Review signals, 3 Published briefings, 7 In Review briefings, 4 Published dependency maps, 2 In Review dependency maps
 
 The package remains `0.2.0-dev`. The owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
 
@@ -32,17 +32,17 @@ Result:
 | Check | Result |
 | --- | --- |
 | Private candidates | Passed: 150 records; 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage |
-| Content references | Passed: 298 sources, 112 signals, 17 topics, 19 organizations, 5 technologies, 5 local systems, 9 briefings, 13 evidence gaps, 6 dependency maps, 6 research collections, 83 research documents, 15 reader pathways, 25 updates |
-| Source endpoint metadata | Passed: 192 Manual Review, 106 Probe Ready |
+| Content references | Passed: 307 sources, 124 signals, 17 topics, 19 organizations, 5 technologies, 5 local systems, 10 briefings, 13 evidence gaps, 6 dependency maps, 7 research collections, 107 research documents, 15 reader pathways, 26 updates |
+| Source endpoint metadata | Passed: 198 Manual Review, 109 Probe Ready |
 | Astro diagnostics | Passed: 0 errors, 0 warnings, 0 hints |
-| Static build | Passed: 591 HTML pages |
-| Release assertions | Passed: required outputs, 45 Phase 55W signal decisions, 5 local systems, 6 Phase 55Q gap decisions, 15 pathways across 19 Atlas surfaces, 6 research collections / 83 documents, update log, five exports, Published-source dates, robots, sitemap, canonical, and indexing boundaries |
+| Static build | Passed: 638 HTML pages |
+| Release assertions | Passed: required outputs, 12 Phase 55X signal decisions, 24 Phase 55X document decisions, 5 local systems, 6 Phase 55Q gap decisions, 15 pathways across 19 Atlas surfaces, 7 research collections / 107 documents, update log, five exports, Published-source dates, robots, sitemap, canonical, and indexing boundaries |
 
 The release assertion is preserved as `npm run verify:release`. It reads the v0.2 manifest and fails if the checked build no longer matches the release contract.
 
 ## Current-Source Gate
 
-The 85 Published signals resolve to 134 unique source records. All 134 have a `last_checked_date` on or after `2026-07-22`.
+The 93 Published signals resolve to 139 unique source records. All 139 have a `last_checked_date` on or after `2026-07-22`.
 
 Phase 55F retained the Phase 54 source floor and refreshed the older NASA Artemis, USDA plant-breeding, and CMHC portal support rails. The verifier now reads the expected support-source count and minimum checked date from the release manifest rather than hard-coding the earlier nine-record baseline.
 
@@ -269,3 +269,25 @@ Phase 55W changes publication membership, discovery behavior, pathway content, t
 - canonicals, robots, sitemap, required outputs, and private-registry exclusion.
 
 A repeat visual-browser pass was not requested. Structural discovery assertions, Astro diagnostics, the full static build, and route/export checks pass. Local app commit `bdc34a225f0e27233c39d28df4ccf3c61e7d8776` matches private source commit `7ba179bf4ee1beaec5a7ba2299800bebb210c0c8`, deployed successfully as owner-only Sites version 22 in deployment `appgdep_6a63c9e41ee08191bc4306c15590378d` at `https://ftfn-analytics.jbumstead.chatgpt.site`. The site remains custom-access with one allowed owner and no groups; no public-access, public-GitHub, package, Hostinger DNS, or custom-domain change is authorized.
+
+## Phase 55X Local Implementation Dossier QA Scope
+
+Phase 55X changes content, research, and publication membership without changing the site shell. The 638-page artifact passes:
+
+- private-candidate validation for the unchanged 150-record local-only registry;
+- content-reference validation across 307 sources, 124 signals, 17 topics, five local systems, ten briefings, thirteen evidence gaps, six dependency maps, fifteen pathways, seven research collections, and 107 research documents;
+- source metadata review for 198 Manual Review and 109 Probe Ready sources;
+- Astro diagnostics with zero errors, warnings, or hints;
+- production generation of 638 pages;
+- 93 Published signal routes in the sitemap and all 31 In Review routes outside it;
+- 139 current Published-support sources;
+- three Published briefing routes in the sitemap and all seven In Review briefing routes outside it;
+- four Published dependency-map routes in the sitemap and both In Review routes outside it;
+- a twelve-signal Phase 55X ledger with eight Published and four held decisions;
+- a 24-document collection with 22 Published document routes and two held routes;
+- a verified 27-file ZIP containing 24 official-link records, summaries, README, and SHA-256 manifest;
+- all three end-to-end local pathways remaining `In Review`;
+- the 26-entry update log and five versioned public-data exports;
+- canonicals, robots, sitemap, required outputs, and private-registry exclusion.
+
+A repeat visual-browser pass was not requested because the phase uses existing content templates and discovery surfaces. Structural assertions, Astro diagnostics, the full static build, archive validation, and route/export checks pass. The owner-only Sites deployment must preserve custom access with one allowed owner and no groups; no public-access, public-GitHub, package, Hostinger DNS, or custom-domain change is authorized.

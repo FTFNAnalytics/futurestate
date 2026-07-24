@@ -2,7 +2,7 @@
   "id": "dependency-map-local-authorization-is-not-operation",
   "title": "Local Authorization Is Not Operation",
   "slug": "local-authorization-is-not-operation",
-  "summary": "A three-corridor map showing why market demand, permits, rate rules, environmental decisions, plans, and federal credit must pass through construction, acceptance, service, compliance, and measured operation.",
+  "summary": "A three-corridor map showing why market demand, permits, rate rules, environmental decisions, plans, and federal credit must pass through construction, acceptance, service, compliance, and measured operation, even where one physical asset or operating event is now documented.",
   "map_type": "Local Constraint Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -16,7 +16,14 @@
     "source-blm-thacker-pass-rod-2021",
     "source-doe-thacker-pass-loan-2024",
     "source-faa-spaceports-by-state-2026",
-    "source-nasa-kennedy-master-plan-2026"
+    "source-nasa-kennedy-master-plan-2026",
+    "source-pjm-load-analysis-subcommittee",
+    "source-virginia-deq-data-center-air-permits",
+    "source-ndep-rhyolite-ridge-water-permit-2025",
+    "source-ndep-thacker-pass-project",
+    "source-faa-starship-lc39a-final-eis-rod",
+    "source-nasa-ksc-causeway-bridge-2025",
+    "source-nasa-ksc-prescribed-burn-2026"
   ],
   "signal_ids": [
     "signal-golden-mars-transmission-conditional-approval",
@@ -24,7 +31,15 @@
     "signal-thacker-pass-federal-land-authorization",
     "signal-thacker-pass-doe-loan-financial-close",
     "signal-space-florida-lc46-site-license-renewal",
-    "signal-kennedy-multiuser-master-plan"
+    "signal-kennedy-multiuser-master-plan",
+    "signal-pjm-2026-large-load-forecast-uncertainty",
+    "signal-virginia-deq-apg576-data-center-generator-controls",
+    "signal-rhyolite-ridge-water-permit-preoperation-gates",
+    "signal-thacker-pass-reclamation-financial-assurance",
+    "signal-thacker-pass-air-permit-compliance-contract",
+    "signal-faa-starship-lc39a-environmental-decision",
+    "signal-ksc-causeway-bridge-operational",
+    "signal-ksc-active-countdown-prescribed-burn"
   ],
   "technology_ids": [],
   "local_system_ids": [
@@ -65,13 +80,13 @@
       "id": "node-construction",
       "label": "Construction and acceptance",
       "node_type": "Constraint",
-      "note": "Physical build, inspection, commissioning, acceptance, connection, and service records are required."
+      "note": "Physical build, inspection, commissioning, acceptance, connection, and service records are required; Kennedy's causeway bridge now closes this stage for one shared asset."
     },
     {
       "id": "node-operation",
       "label": "Measured operation and scale",
       "node_type": "Constraint",
-      "note": "Sustained load, output, mission activity, compliance, cost, reliability, safety, and local outcomes close the loop."
+      "note": "One Kennedy operating adaptation is documented, while sustained load, output, mission activity, compliance, cost, reliability, safety, and local outcomes still close the loop."
     },
     {
       "id": "node-gap-011",

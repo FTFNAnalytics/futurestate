@@ -4,12 +4,13 @@
   "slug": "cross-corridor-authorization-to-operation",
   "record_status": "Published",
   "summary": "Compare how Northern Virginia compute, Nevada lithium, and Florida Space Coast infrastructure move from demand, permits, financing, and plans into construction, acceptance, service, operation, and measured outcomes.",
-  "current_state_summary": "All three corridors have strong upstream authority records, but each still needs named downstream proof before FTFN can claim usable capacity, qualified output, or utilized infrastructure.",
+  "current_state_summary": "All three corridors now have deeper implementation dossiers; Florida closes two physical or operating stages, while Northern Virginia service and Nevada qualified output remain unproven.",
   "current_state": [
     "Northern Virginia has load, rate, transmission, permit, and water rails; final route, construction, energization, customer service, use, and reliability remain incomplete.",
     "Nevada has federal land decisions, state permits, and a closed Thacker Pass loan; condition satisfaction, construction, commissioning, qualification, output, sales, and environmental performance remain incomplete.",
     "Florida has master plans, site licensing, environmental decisions, operator rules, and capital channels; named project funding, construction, acceptance, mission authorization, utilization, and outcomes remain incomplete.",
-    "Research Watch 001 and Local Authorization Is Not Operation expose the shared stage-conversion problem without treating the corridors as legally or technically equivalent."
+    "Florida now has an operational access bridge and one completed active-countdown resilience operation, but mission licensing and measured system outcomes remain incomplete.",
+    "Research Watches 001 and 002 and Local Authorization Is Not Operation expose the shared stage-conversion problem without treating the corridors as legally or technically equivalent."
   ],
   "primary_topics": ["Policy and Standards", "Energy", "Critical Minerals", "Space"],
   "topic_ids": ["topic-policy-and-standards"],
@@ -28,7 +29,15 @@
     "signal-kennedy-multiuser-master-plan",
     "signal-space-florida-lc46-site-license-renewal",
     "signal-slc40-final-environmental-decision",
-    "signal-faa-part450-operator-transition"
+    "signal-faa-part450-operator-transition",
+    "signal-pjm-2026-large-load-forecast-uncertainty",
+    "signal-virginia-deq-apg576-data-center-generator-controls",
+    "signal-rhyolite-ridge-water-permit-preoperation-gates",
+    "signal-thacker-pass-reclamation-financial-assurance",
+    "signal-thacker-pass-air-permit-compliance-contract",
+    "signal-faa-starship-lc39a-environmental-decision",
+    "signal-ksc-causeway-bridge-operational",
+    "signal-ksc-active-countdown-prescribed-burn"
   ],
   "source_ids": [
     "source-virginia-scc-large-load-gs5-2025",
@@ -39,13 +48,23 @@
     "source-nasa-kennedy-master-plan-2026",
     "source-faa-spaceports-by-state-2026",
     "source-faa-slc40-final-ea",
-    "source-faa-part450-transition-2026"
+    "source-faa-part450-transition-2026",
+    "source-pjm-load-analysis-subcommittee",
+    "source-virginia-deq-data-center-air-permits",
+    "source-ndep-rhyolite-ridge-water-permit-2025",
+    "source-ndep-thacker-pass-project",
+    "source-faa-starship-lc39a-final-eis-rod",
+    "source-nasa-ksc-causeway-bridge-2025",
+    "source-nasa-ksc-prescribed-burn-2026"
   ],
   "organization_ids": [],
   "technology_ids": [],
   "briefing_ids": ["briefing-research-watch-001-cross-corridor-infrastructure-conversion"],
   "dependency_map_ids": ["dependency-map-local-authorization-is-not-operation"],
-  "research_collection_ids": ["research-collection-cross-corridor-infrastructure-conversion-2024-2026"],
+  "research_collection_ids": [
+    "research-collection-cross-corridor-infrastructure-conversion-2024-2026",
+    "research-collection-local-implementation-dossiers-2022-2026"
+  ],
   "evidence_gap_ids": ["gap-011", "gap-012", "gap-013"],
   "dependency_stack": [
     {
@@ -55,7 +74,7 @@
     },
     {
       "stage": "Construction And Compliance",
-      "current_state": "Named projects have partial construction, permitting, route, finance, or environmental trails.",
+      "current_state": "Named projects have partial construction, permitting, route, finance, environmental, inspection, assurance, testing, and service trails; Kennedy's causeway bridge closes one physical delivery stage.",
       "boundary": "Partial trails do not establish that all conditions were satisfied, assets were built and accepted, or compliance was sustained."
     },
     {
@@ -65,7 +84,7 @@
     },
     {
       "stage": "Measured Operation And Outcomes",
-      "current_state": "No corridor record set yet supports a complete claim about sustained capacity, cost, reliability, safety, environmental performance, or local outcomes.",
+      "current_state": "One Kennedy operating adaptation is documented, but no corridor record set supports a complete claim about sustained capacity, cost, reliability, safety, environmental performance, or local outcomes.",
       "boundary": "Scale requires sustained operating evidence and measured receiving-system results."
     }
   ],

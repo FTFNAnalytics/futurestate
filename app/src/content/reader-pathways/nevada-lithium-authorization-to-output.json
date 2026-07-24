@@ -4,11 +4,14 @@
   "slug": "nevada-lithium-authorization-to-qualified-output",
   "record_status": "In Review",
   "summary": "Follow Thacker Pass and Rhyolite Ridge from resource context and authorization through state permits, water, federal credit, construction, commissioning, product qualification, operation, and scale.",
-  "current_state_summary": "Two project trails now distinguish federal authorization, state permits, financial close, and environmental clearance; neither supports a complete corridor-scale operating conclusion.",
+  "current_state_summary": "Two project trails now distinguish federal authorization, state permits, financial close, environmental clearance, pre-operation obligations, and compliance contracts; neither supports a complete operating conclusion.",
   "current_state": [
     "Thacker Pass has federal land authorization, a state environmental permit stack, and a closed DOE loan.",
     "Rhyolite Ridge has a federal land decision and a DOE environmental decision stating the agency's decision to issue a loan for defined facilities.",
     "The DOE Rhyolite record is not independent evidence of financial close, disbursement, construction, or operation.",
+    "Rhyolite Ridge's renewed water permit exposes pre-operation inspection, modeling, and monitoring gates.",
+    "The displayed Rhyolite Ridge air-permit file requires a signed current-status replacement before it can support a validity claim.",
+    "Thacker Pass reclamation assurance and air-permit conditions create measurable follow-up obligations.",
     "Water rights, construction, compliance, commissioning, qualified output, and sustained operation remain decisive downstream records."
   ],
   "primary_topics": ["Critical Minerals", "Water", "Finance and Risk", "Advanced Manufacturing", "Policy and Standards"],
@@ -19,7 +22,11 @@
     "signal-thacker-pass-state-environmental-permit-stack",
     "signal-thacker-pass-doe-loan-financial-close",
     "signal-rhyolite-ridge-federal-land-authorization",
-    "signal-rhyolite-ridge-doe-nepa-loan-boundary"
+    "signal-rhyolite-ridge-doe-nepa-loan-boundary",
+    "signal-rhyolite-ridge-air-permit-validity-hold",
+    "signal-rhyolite-ridge-water-permit-preoperation-gates",
+    "signal-thacker-pass-reclamation-financial-assurance",
+    "signal-thacker-pass-air-permit-compliance-contract"
   ],
   "source_ids": [
     "source-blm-thacker-pass-rod-2021",
@@ -28,18 +35,22 @@
     "source-doe-thacker-pass-loan-2024",
     "source-blm-rhyolite-ridge-rod-2024",
     "source-doe-rhyolite-ridge-nepa-2025",
-    "source-nevada-water-rights"
+    "source-nevada-water-rights",
+    "source-ndep-rhyolite-ridge-air-permit",
+    "source-ndep-rhyolite-ridge-water-permit-2025"
   ],
   "organization_ids": [],
   "technology_ids": [],
   "briefing_ids": [
     "briefing-local-watch-002-corridor-conversion-gates",
-    "briefing-research-watch-001-cross-corridor-infrastructure-conversion"
+    "briefing-research-watch-001-cross-corridor-infrastructure-conversion",
+    "briefing-research-watch-002-local-implementation-dossiers"
   ],
   "dependency_map_ids": ["dependency-map-local-authorization-is-not-operation"],
   "research_collection_ids": [
     "research-collection-industrial-capacity-local-conversion-2025-2026",
-    "research-collection-cross-corridor-infrastructure-conversion-2024-2026"
+    "research-collection-cross-corridor-infrastructure-conversion-2024-2026",
+    "research-collection-local-implementation-dossiers-2022-2026"
   ],
   "evidence_gap_ids": ["gap-012"],
   "dependency_stack": [
@@ -50,7 +61,7 @@
     },
     {
       "stage": "Authorization and permits",
-      "current_state": "BLM and NDEP decisions create named authorization and compliance obligations.",
+      "current_state": "BLM and NDEP decisions create named authorization, pre-operation, assurance, testing, monitoring, and compliance obligations.",
       "boundary": "Issued decisions do not prove condition satisfaction or compliant operation."
     },
     {
@@ -70,8 +81,10 @@
     "A closed loan or NEPA decision is not a completed, qualified, operating facility."
   ],
   "next_records": [
-    "Project-specific water-right, pumping, monitoring, and impact records.",
-    "Construction, inspection, commissioning, first-production, qualification, shipment, and sustained-output records.",
+    "A signed current Rhyolite Ridge air permit or renewal, followed by construction and test records.",
+    "Project-specific water-right, pumping, pre-operation inspection, monitoring, and impact records.",
+    "Thacker Pass permit renewal, testing, monitoring, inspection, and compliance records.",
+    "Construction, commissioning, first production, qualification, shipment, and sustained-output records.",
     "Rhyolite Ridge commitment terms, financial close, disbursement, and later delivery evidence."
   ]
 }

@@ -50,10 +50,38 @@ if ($documents.Count -ne $expectedDocumentCount) {
   throw "Expected $expectedDocumentCount collection documents; found $($documents.Count)."
 }
 
+if (-not (Test-Path -LiteralPath $bundlePath -PathType Container)) {
+  New-Item -ItemType Directory -Path $bundlePath | Out-Null
+}
+
 $captureRows = foreach ($document in $documents) {
   $memberPath = [string]$document.archive_member
   $normalizedMemberPath = $memberPath.Replace("/", [System.IO.Path]::DirectorySeparatorChar)
   $capturePath = Join-Path $bundlePath $normalizedMemberPath
+
+  if (
+    -not (Test-Path -LiteralPath $capturePath -PathType Leaf) -and
+    $document.capture_status -eq "Official link record"
+  ) {
+    $captureDirectory = Split-Path -Parent $capturePath
+    if (-not (Test-Path -LiteralPath $captureDirectory -PathType Container)) {
+      New-Item -ItemType Directory -Path $captureDirectory | Out-Null
+    }
+
+    $publicationDate = if ($document.publication_date) { $document.publication_date } else { "Not stated" }
+    $boundary = @($document.evidence_limits) -join " "
+    @(
+      "Title: $($document.title)",
+      "Publisher: $($document.publisher)",
+      "Publication date: $publicationDate",
+      "Official URL: $($document.official_url)",
+      "Capture status: $($document.capture_status)",
+      "Record status: $($document.record_status)",
+      "Captured by FTFN: $($document.captured_date)",
+      "",
+      "Boundary: $boundary"
+    ) | Set-Content -LiteralPath $capturePath -Encoding utf8
+  }
 
   if (-not (Test-Path -LiteralPath $capturePath -PathType Leaf)) {
     throw "Missing archive member for $($document.id): $memberPath"
