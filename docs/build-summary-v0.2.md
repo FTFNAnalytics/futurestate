@@ -57,20 +57,22 @@ Phase 55T closes the remaining topic-depth deficits with 17 named official sourc
 
 Phase 55U adds three evidence-dense systems: the Northern Virginia Data Center Corridor, Nevada Lithium And Battery Materials Corridor, and Florida Space Coast Launch Corridor. Twenty-six official source profiles support three 16-source dossiers and 15 bounded signals; twelve pass independent publication gates and three remain `In Review`. Three evidence gaps, three pathways, Local Watch 002, and `Local Authorization Is Not Operation` expose the conversion from demand, authorization, permits, environmental review, and finance into construction, acceptance, service, compliant operation, and scale. Three one-time Codex tasks preserve the dated FAA, Loudoun, and Nevada checks without pausing Phase 55V. The verified package reaches 570 pages, 298 sources, 112 signals, 73 Published, 39 In Review, 23 updates, five local systems, eight briefings, six maps, and eleven pathways across 18 Atlas surfaces. Phase 55U app content commit `8d53ebe35904c719145b5f0ad1d2b2388cc1a2be` is deployed as owner-only Sites version 20.
 
+Phase 55V turns those three local systems into a reusable primary-document shelf. Eighteen reviewed records are split evenly across Northern Virginia compute infrastructure, Nevada lithium projects, and Florida Space Coast infrastructure. Five official PDFs are captured locally, thirteen official-link records preserve the remaining primary rails, and the verified 21-file archive adds summaries, a README, and a checksum manifest. Research Watch 001 compares downstream delivery tests; all three local dossiers and pathways are deepened and gaps `011` through `013` are narrowed. The locally captured Rhyolite Ridge DOE decision corrects the prior potential-assistance wording while preserving the separate commitment, close, disbursement, construction, and operating stages. The verified package reaches 590 pages, 298 sources, 112 signals, 73 Published, 39 In Review, 24 updates, nine briefings, six collections, 83 research documents, and eleven pathways across 18 Atlas surfaces. Owner-only deployment refresh is pending.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 570 | +388 |
+| Generated HTML pages | 182 | 590 | +408 |
 | Sources | 102 | 298 | +196 |
 | Signals | 18 | 112 | +94 |
 | Published signals | 3 | 73 | +70 |
 | In Review signals | 14 | 39 | +25 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 23 | +23 |
+| Public update entries | 0 | 24 | +24 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
@@ -81,10 +83,10 @@ Additional current records:
 - 13 evidence gaps,
 - 6 structured Phase 55Q evidence-gap decisions,
 - 6 dependency maps: 3 Published and 3 In Review,
-- 8 briefings: 2 Published and 6 In Review,
-- 5 research collections with 65 document records,
+- 9 briefings: 2 Published and 7 In Review,
+- 6 research collections with 83 document records,
 - 11 reader pathways across 18 Atlas surfaces,
-- 37 official local captures plus 28 official-link records across verified 26-file, 11-file, 19-file, 11-file, and 13-file ZIP archives.
+- 42 official local captures plus 41 official-link records across verified 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file ZIP archives.
 
 ## What Is Built
 
@@ -172,13 +174,15 @@ Phase 55T adds 17 named official sources and 18 signals across the nine thinnest
 
 Phase 55U adds 26 official source profiles, three local-system dossiers, 15 signals, three evidence gaps, three pathways, one briefing, one map, and one public update. Twelve signals pass record-level publication review and three remain `In Review` behind named dated gates. The result is 570 generated pages, 298 sources, 112 signals, 73 Published, 39 In Review, 23 public updates, five local systems, eight briefings, six dependency maps, eleven pathways, and 112 current Published-support sources. Content validation, source endpoint metadata, Astro diagnostics, production build, local-system and pathway assertions, sitemap and indexing membership, exports, research archives, and private-registry exclusion pass.
 
+Phase 55V adds one 18-document research collection, five captured official PDFs, thirteen official-link records, a verified 21-file archive, one `In Review` briefing, and integrated repairs across three local systems, pathways, gaps, one signal, and one source profile. The result is 590 generated pages, 298 sources, 112 signals, 73 Published, 39 In Review, 24 public updates, nine briefings, six research collections, and 83 research documents. Candidate validation, content validation, source endpoint metadata, Astro diagnostics, the production build, all research routes, sitemap and indexing membership, archive checks, release assertions, public exports, and private-registry exclusion pass.
+
 Verified results:
 
-- 570 generated site pages,
+- 590 generated site pages,
 - exact exports for 298 sources, 17 topics, and 73 Published signals,
 - all 73 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
-- both Published briefing routes included in the sitemap and all six held briefing routes excluded,
+- both Published briefing routes included in the sitemap and all seven held briefing routes excluded,
 - all three Published dependency-map routes included in the sitemap and all three held map routes excluded,
 - all eleven reader pathways rendered across 18 Atlas surfaces with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records,
 - all thirteen evidence-gap details included in the sitemap, with exactly six structured Phase 55Q decisions rendered and verified,
@@ -189,10 +193,10 @@ Verified results:
 - exactly 150 unique private candidates, 10 in each of 15 profiles, with all records assigned a first-pass triage state,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
-- five Published research collections with all 65 document routes in the sitemap,
-- verified 26-file, 11-file, 19-file, 11-file, and 13-file ZIP archives containing 37 local captures, 28 official-link files, summaries, README files, and manifests.
+- six Published research collections with all 83 document routes in the sitemap,
+- verified 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file ZIP archives containing 42 local captures, 41 official-link files, summaries, README files, and manifests.
 
-The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; the completed local-system gate and deployment receipt are recorded in `docs/work-packages/phase-55u-local-systems-network.md`. Sites version 20 serves the exact Phase 55U app content under the unchanged owner-only policy. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
+The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; the completed local-system gate and version-20 receipt are recorded in `docs/work-packages/phase-55u-local-systems-network.md`. Phase 55V is validated locally and ready for an owner-only Sites refresh. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
@@ -205,7 +209,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 ## Known Limitations
 
 - Thirty-nine signals remain `In Review`; the DARPA Lift Challenge is the explicit future-trial hold, the OEB non-wires proceeding is an active regulatory-process hold, and the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F. Seventy-three bounded signals are Published.
-- Six briefings and all five local-system profiles remain prelaunch or research material. The two Published briefings and three Published dependency maps are bounded synthesis products, not readiness assessments.
+- Seven briefings and all five local-system profiles remain prelaunch or research material. The two Published briefings and three Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
 - Six Phase 55N sources have official-link records because their official hosts blocked or complicated automated export; the collection preserves direct official URLs rather than third-party substitutes.
@@ -240,9 +244,10 @@ npm.cmd run build:research-archive
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug federal-research-to-implementation-evidence-2025-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug implementation-outcomes-local-conversion-2025-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug thin-topic-authority-foundations-2023-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug cross-corridor-infrastructure-conversion-2024-2026
 npm.cmd run check
 npm.cmd run build
 npm.cmd run verify:release
 ```
 
-Expected output: 570 generated site pages, verified 26-file, 11-file, 19-file, 11-file, and 13-file research archives, six Phase 55Q evidence decisions, eleven reader pathways across 18 Atlas surfaces, five local systems, and a passing v0.2 release assertion.
+Expected output: 590 generated site pages, verified 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file research archives, six Phase 55Q evidence decisions, eleven reader pathways across 18 Atlas surfaces, five local systems, and a passing v0.2 release assertion.

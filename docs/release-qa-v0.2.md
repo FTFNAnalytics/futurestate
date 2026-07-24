@@ -2,16 +2,16 @@
 
 Date: 2026-07-24
 
-Status: Phase 55U local release gate passed; owner-only deployment refresh pending.
+Status: Phase 55V local release gate passed; owner-only deployment refresh pending.
 
 ## Artifact Under Review
 
 - Build manifest: `deployment/ftfn-v0.2-build.json`
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
-- Expected build: 570 HTML pages
-- Content baseline: 298 sources, 112 signals, 17 topics, 23 update entries, 13 evidence gaps, 11 reader pathways across 18 Atlas surfaces, 5 local systems, 8 briefings, 6 dependency maps, 5 research collections, 65 research documents
-- Publication baseline: 73 Published signals, 39 In Review signals, 2 Published briefings, 6 In Review briefings, 3 Published dependency maps, 3 In Review dependency maps
+- Expected build: 590 HTML pages
+- Content baseline: 298 sources, 112 signals, 17 topics, 24 update entries, 13 evidence gaps, 11 reader pathways across 18 Atlas surfaces, 5 local systems, 9 briefings, 6 dependency maps, 6 research collections, 83 research documents
+- Publication baseline: 73 Published signals, 39 In Review signals, 2 Published briefings, 7 In Review briefings, 3 Published dependency maps, 3 In Review dependency maps
 
 The package remains `0.2.0-dev`. The owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
 
@@ -32,11 +32,11 @@ Result:
 | Check | Result |
 | --- | --- |
 | Private candidates | Passed: 150 records; 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage |
-| Content references | Passed: 298 sources, 112 signals, 17 topics, 19 organizations, 5 technologies, 5 local systems, 8 briefings, 13 evidence gaps, 6 dependency maps, 5 research collections, 65 research documents, 11 reader pathways, 23 updates |
+| Content references | Passed: 298 sources, 112 signals, 17 topics, 19 organizations, 5 technologies, 5 local systems, 9 briefings, 13 evidence gaps, 6 dependency maps, 6 research collections, 83 research documents, 11 reader pathways, 24 updates |
 | Source endpoint metadata | Passed: 192 Manual Review, 106 Probe Ready |
 | Astro diagnostics | Passed: 0 errors, 0 warnings, 0 hints |
-| Static build | Passed: 570 HTML pages |
-| Release assertions | Passed: required outputs, 5 local systems, 6 Phase 55Q gap decisions, 11 pathways across 18 Atlas surfaces, update log, exports, Published-source dates, robots, sitemap, canonical, and indexing boundaries |
+| Static build | Passed: 590 HTML pages |
+| Release assertions | Passed: required outputs, 5 local systems, 6 Phase 55Q gap decisions, 11 pathways across 18 Atlas surfaces, 6 research collections / 83 documents, update log, exports, Published-source dates, robots, sitemap, canonical, and indexing boundaries |
 
 The release assertion is preserved as `npm run verify:release`. It reads the v0.2 manifest and fails if the checked build no longer matches the release contract.
 
@@ -228,3 +228,23 @@ The 570-page artifact passes:
 Three one-time Codex tasks were created for the dated Phase 55U checks: August 15, 2026 for the Shuttle Landing Facility license; October 1, 2026 for Loudoun Phase 2 standards; and January 15, 2027 for Nevada lithium project delivery.
 
 A repeat visual/browser pass was not requested because the phase changes content only. Phase 55U app content commit `8d53ebe35904c719145b5f0ad1d2b2388cc1a2be` is deployed successfully as owner-only Sites version 20 from receipt source commit `17253c9355f4f8ea809e3a5d49dcf328bc8c8254` at `https://ftfn-analytics.jbumstead.chatgpt.site`. The access policy remains custom with one allowed owner and no groups. The public GitHub boundary, package version, Hostinger DNS, and custom-domain state remain unchanged.
+
+## Phase 55V Cross-Corridor Research QA Scope
+
+Phase 55V adds eighteen research-document routes, one collection route, one `In Review` briefing route, one public update, a five-capture and thirteen-link evidence bundle, and integrated content repairs without changing components, styles, layouts, navigation, or client-side behavior.
+
+The 590-page artifact passes:
+
+- private-candidate validation for the unchanged 150-record local-only registry;
+- content-reference validation across 298 sources, 112 signals, 17 topics, five local systems, nine briefings, thirteen evidence gaps, six dependency maps, eleven pathways, six research collections, and 83 research documents;
+- source endpoint metadata review for 192 Manual Review and 106 Probe Ready sources;
+- Astro diagnostics with zero errors, warnings, or hints;
+- production generation of 590 pages;
+- the unchanged 73 Published and 39 In Review signal indexing contract;
+- both Published briefings in the sitemap and all seven In Review briefings outside it;
+- all six Published research collections and all 83 document routes in the sitemap;
+- a verified 21-file Phase 55V ZIP with five valid official PDFs, thirteen official-link records, summaries, README, and checksum manifest;
+- explicit release assertions for the 18-document, five-capture, thirteen-link Phase 55V contract;
+- the 24-entry update log, three public exports, required routes and downloads, canonicals, robots, and private-registry exclusion.
+
+A repeat visual/browser pass was not requested because Phase 55V changes content only. Owner-only deployment refresh is pending; the public GitHub boundary, package version, Hostinger DNS, custom-domain state, and public access remain unchanged.

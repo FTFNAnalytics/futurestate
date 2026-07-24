@@ -41,19 +41,19 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after Phase 55U:
+Current `0.2.0-dev` state after Phase 55V:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 570 |
+| Static pages | 590 |
 | Active sources | 298 |
 | Signals | 112 |
 | Published signals | 73 |
 | In Review signals | 39 |
 | Draft Sample signals | 0 |
-| Public update entries | 23 |
-| Research collections | 5 collections / 65 documents |
-| Research downloads | 37 local captures / 28 official-link files / 80 archive files across five ZIPs |
+| Public update entries | 24 |
+| Research collections | 6 collections / 83 documents |
+| Research downloads | 42 local captures / 41 official-link files / 101 archive files across six ZIPs |
 | Named local inputs selected in Phases 50-55C | 18 |
 | Private source candidates | 150 local-only records |
 | Candidate review | all 150 reviewed once: 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected |
@@ -69,7 +69,7 @@ Existing operating assets:
 - publication policy and Method page,
 - five local-system constraint dossiers,
 - six qualitative dependency maps,
-- five reviewed research collections with 65 primary records and five downloadable archives,
+- six reviewed research collections with 83 primary records and six downloadable archives,
 - a schema-backed public update log,
 - versioned static source, topic, and Published-signal exports,
 - robots, sitemap, canonical, and indexing boundaries.
@@ -364,11 +364,11 @@ Recommended active schedule:
 | Completed | Phase 55Q | six structured gap decisions, five named sources, four Published signals, and owner-only Sites version 15 |
 | Next dated insert | Phase 55H | complete the Toronto post-Council authority recheck on August 1 |
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
-| Authority backlog | Phase 55S | batches one and two complete; the remaining 30-record allocation now replenishes selected Phase 55U and Phase 55V work |
+| Authority backlog | Phase 55S | batches one and two complete; the remaining allocation now replenishes named corpus gaps |
 | Completed | Phase 55T | all 17 topics now have at least four signals and two Published records; owner-only Sites version 18 deployed |
 | Completed | Phase 55U | three evidence-dense local systems, 26 sources, 15 signals, three pathways and gaps; owner-only Sites version 20 deployed |
-| Current | Phase 55V | grow the primary-document research and synthesis layer |
-| Planned | Phase 55W | apply publication gates and make the larger corpus navigable |
+| Completed | Phase 55V | 18-document cross-corridor shelf, 21-file archive, Research Watch 001, and three deepened local pathways |
+| Current | Phase 55W | apply publication gates and make the larger corpus navigable |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
@@ -653,6 +653,14 @@ Phase 55U result:
 - eight topic profiles deepened and three one-time downstream evidence checks scheduled;
 - 570 pages, 298 sources, 112 signals, 73 Published signals, 39 In Review signals, 23 updates, eight briefings, six maps, five local systems, and eleven pathways across 18 Atlas surfaces verified locally.
 
+Phase 55V result:
+
+- one cross-corridor infrastructure-conversion collection built from eighteen reviewed official records, six each for Northern Virginia compute, Nevada lithium, and Florida space infrastructure;
+- five official PDFs captured locally, thirteen official-link records preserved, and a 21-file archive with summaries, README, manifest, sizes, and checksums verified;
+- one `In Review` Research Watch briefing added; all three local-system dossiers and reader pathways deepened; gaps `011` through `013` narrowed around named delivery proof;
+- the Rhyolite Ridge DOE financing record corrected to reflect a decision to issue a loan for defined facilities without claiming commitment terms, financial close, disbursement, construction, or operation;
+- 590 pages, 298 sources, 112 signals, 73 Published signals, 39 In Review signals, 24 updates, nine briefings, six maps, six research collections, 83 research documents, and eleven pathways across 18 Atlas surfaces verified locally.
+
 The final Phase 55S 30-record allocation remains an authority backlog rather than an active gate. Use it only where it strengthens a named Phase 55V collection or later system gap.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
@@ -749,9 +757,9 @@ In v0.2, only source discovery and change detection may become semi-automated. C
 
 v0.2 is successful when:
 
-- the current 61-signal Published set remains bounded and every Phase 55S-55W promotion passes a separate record-level gate,
+- the current 73-signal Published set remains bounded and every Phase 55S-55W promotion passes a separate record-level gate,
 - every current and future briefing and dependency map has an explicit publish, repair, split, or hold decision,
-- the six current pathways remain valid while the expansion grows the set toward 12-15 evidence-bounded journeys,
+- the eleven current pathways remain valid while the expansion grows the set toward 12-15 evidence-bounded journeys,
 - the highest-value local and implementation gaps have named next records and dated stop rules,
 - current and future local systems retain multi-constraint evidence trails without being overstated as final intelligence products,
 - source updates have a repeatable private workflow,
@@ -761,14 +769,14 @@ v0.2 is successful when:
 - release QA remains repeatable,
 - no automated process publishes claims without review.
 
-The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T brought every topic to a four-signal and two-Published-record floor. Phase 55U then added three evidence-dense local systems, 26 official sources, 15 signals, three pathways and gaps, one briefing, and one map while preserving explicit evidence stages. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
+The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T brought every topic to a four-signal and two-Published-record floor. Phase 55U added three evidence-dense local systems, 26 official sources, 15 signals, three pathways and gaps, one briefing, and one map. Phase 55V added an 18-document cross-corridor shelf, a 21-file archive, a new synthesis briefing, and downstream evidence integration without inflating any signal to Published. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
 
 ## Immediate Next Step
 
-Begin Phase 55V with a cross-corridor infrastructure-conversion research collection. Build a 12-20 document library from the strongest Phase 55U records and their downstream implementation trails, prioritizing compute and grid planning, critical-minerals processing and water, and space infrastructure licensing and capital delivery. Add a downloadable archive, document-level evidence limits, and at least one synthesis artifact without promoting the Phase 55U briefing or map automatically.
+Begin Phase 55W with the corpus usability and publication gate. Review 40-60 signal candidates through the complete record-level publication test, expand the current eleven pathways toward 12-15 only where they improve a named reader journey, add research-shelf separation and stronger topic/status/evidence/source filtering, and publish or explicitly hold each new synthesis product. Use the Phase 55V cross-corridor collection as the first test case for research-shelf navigation and downstream-record discovery.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Keep the Sites preview owner-only. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Refresh the Sites preview with the exact validated Phase 55V source and keep it owner-only. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

@@ -146,6 +146,25 @@ for (const collection of researchCollections) {
   }
 }
 
+const phase55VCollection = researchCollections.find(
+  (collection) => collection.id === "research-collection-cross-corridor-infrastructure-conversion-2024-2026",
+);
+check(Boolean(phase55VCollection), "Phase 55V cross-corridor research collection is missing.");
+if (phase55VCollection) {
+  const phase55VDocuments = phase55VCollection.document_ids
+    .map((documentId) => researchDocumentById.get(documentId))
+    .filter(Boolean);
+  check(phase55VDocuments.length === 18, `Expected 18 Phase 55V research documents, found ${phase55VDocuments.length}.`);
+  check(
+    phase55VDocuments.filter((document) => document.capture_status === "Original file captured").length === 5,
+    "Phase 55V must contain five captured official files.",
+  );
+  check(
+    phase55VDocuments.filter((document) => document.capture_status === "Official link record").length === 13,
+    "Phase 55V must contain thirteen official-link records.",
+  );
+}
+
 const expectedResearchLocations = [
   ...researchCollections
     .filter((collection) => collection.record_status === "Published")

@@ -7,8 +7,8 @@
   "current_state_summary": "Two project trails now distinguish federal authorization, state permits, financial close, and environmental clearance; neither supports a complete corridor-scale operating conclusion.",
   "current_state": [
     "Thacker Pass has federal land authorization, a state environmental permit stack, and a closed DOE loan.",
-    "Rhyolite Ridge has a federal land decision and a DOE loan-related environmental decision.",
-    "The DOE Rhyolite record is not a final commitment or financial close.",
+    "Rhyolite Ridge has a federal land decision and a DOE environmental decision stating the agency's decision to issue a loan for defined facilities.",
+    "The DOE Rhyolite record is not independent evidence of financial close, disbursement, construction, or operation.",
     "Water rights, construction, compliance, commissioning, qualified output, and sustained operation remain decisive downstream records."
   ],
   "primary_topics": ["Critical Minerals", "Water", "Finance and Risk", "Advanced Manufacturing", "Policy and Standards"],
@@ -32,9 +32,15 @@
   ],
   "organization_ids": [],
   "technology_ids": [],
-  "briefing_ids": ["briefing-local-watch-002-corridor-conversion-gates"],
+  "briefing_ids": [
+    "briefing-local-watch-002-corridor-conversion-gates",
+    "briefing-research-watch-001-cross-corridor-infrastructure-conversion"
+  ],
   "dependency_map_ids": ["dependency-map-local-authorization-is-not-operation"],
-  "research_collection_ids": ["research-collection-industrial-capacity-local-conversion-2025-2026"],
+  "research_collection_ids": [
+    "research-collection-industrial-capacity-local-conversion-2025-2026",
+    "research-collection-cross-corridor-infrastructure-conversion-2024-2026"
+  ],
   "evidence_gap_ids": ["gap-012"],
   "dependency_stack": [
     {
@@ -49,8 +55,8 @@
     },
     {
       "stage": "Finance and construction",
-      "current_state": "Thacker Pass has a closed federal loan; Rhyolite Ridge has DOE environmental clearance for potential assistance.",
-      "boundary": "Financial close is not completed construction, and environmental clearance is not financial close."
+      "current_state": "Thacker Pass has a closed federal loan; the Rhyolite Ridge DOE decision states an intent to issue a loan for defined facilities without independently establishing close or disbursement.",
+      "boundary": "A financing decision is not financial close, and financial close is not completed construction."
     },
     {
       "stage": "Qualified operation",
@@ -66,6 +72,6 @@
   "next_records": [
     "Project-specific water-right, pumping, monitoring, and impact records.",
     "Construction, inspection, commissioning, first-production, qualification, shipment, and sustained-output records.",
-    "Rhyolite Ridge final loan commitment or financial close and later disbursement evidence."
+    "Rhyolite Ridge commitment terms, financial close, disbursement, and later delivery evidence."
   ]
 }
