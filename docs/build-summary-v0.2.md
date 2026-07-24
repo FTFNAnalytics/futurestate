@@ -43,7 +43,7 @@ Phase 55N follows those trails into later program actions and local conversion e
 
 Phase 55M applies the complete publication gate independently to the fourteen implementation signals created or materially repaired in Phases 55L and 55N. Thirteen pass as current, source-visible, bounded, and independently useful records. The DARPA Lift Challenge remains `In Review` because the August 2-9 field trial has not happened. The package remains at 380 pages, 189 sources, and 63 signals while moving to 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources. Sites version 12 serves exact source commit `c1038783998234025ec2af65dae495272a263cc1` under the unchanged owner-only policy.
 
-Phase 55O applies the synthesis publication gate to all five briefings and three dependency maps. Stack Watch 003 and Stack Watch 004 move to `Published`; the other three briefings retain explicit evidence-stage holds. All three maps are repaired around Published signals, named open gaps, and qualitative interpretation boundaries before publication. Signal membership remains 38 Published and 25 In Review; the package remains at 380 pages and grows to 17 updates. Local validation passes, and the owner-only deployment refresh is pending.
+Phase 55O applies the synthesis publication gate to all five briefings and three dependency maps. Stack Watch 003 and Stack Watch 004 move to `Published`; the other three briefings retain explicit evidence-stage holds. All three maps are repaired around Published signals, named open gaps, and qualitative interpretation boundaries before publication. Signal membership remains 38 Published and 25 In Review; the package remains at 380 pages and grows to 17 updates. Sites version 13 serves exact source commit `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad` under the unchanged owner-only policy.
 
 ## Build Inventory
 
@@ -163,7 +163,7 @@ Verified results:
 - three Published research collections with all 47 document routes in the sitemap,
 - verified 26-file, 11-file, and 19-file ZIP archives containing 37 local captures, ten official-link files, summaries, README files, and manifests.
 
-The current synthesis decision is in `docs/work-packages/phase-55o-briefing-dependency-map-publication.md`; the underlying evidence is documented in the Phase 55K through Phase 55N work packages and the Phase 55M signal gate. The owner-only deployment remains at Sites version 12 from exact source commit `c1038783998234025ec2af65dae495272a263cc1` until the validated Phase 55O checkpoint is refreshed. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The current synthesis decision is in `docs/work-packages/phase-55o-briefing-dependency-map-publication.md`; the underlying evidence is documented in the Phase 55K through Phase 55N work packages and the Phase 55M signal gate. The owner-only deployment is current at Sites version 13 from exact source commit `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 

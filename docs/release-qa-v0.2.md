@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: Phase 55O local release gate passed; owner-only Sites version 12 remains live pending the Phase 55O refresh.
+Status: Phase 55O release gate and owner-only Sites version 13 deployment passed.
 
 ## Artifact Under Review
 
@@ -162,4 +162,4 @@ Phase 55O changes synthesis publication metadata and copy, repairs three depende
 
 The 380-page artifact passes private-candidate validation, content references, source endpoint metadata, Astro diagnostics, static generation, the 38-route Published-signal sitemap contract, two Published briefing routes, three Published dependency-map routes, non-published exclusion, canonical and indexing rules, the three public exports, the seventeen-entry update log, all three research archives, and private-registry exclusion.
 
-Exact Phase 55M source commit `c1038783998234025ec2af65dae495272a263cc1` remains deployed as owner-only Sites version 12 at `https://ftfn-analytics.jbumstead.chatgpt.site` until the validated Phase 55O checkpoint is refreshed. The access policy remains custom with one allowed owner and no groups. It is not approved for public access or public launch. Phase 55P reader pathways are the next executable content work; the post-meeting Toronto Council and DARPA Lift Challenge checks remain dated inserts.
+Exact Phase 55O source commit `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad` is deployed as owner-only Sites version 13 at `https://ftfn-analytics.jbumstead.chatgpt.site`. The access policy remains custom with one allowed owner and no groups. It is not approved for public access or public launch. Phase 55P reader pathways are the next executable content work; the post-meeting Toronto Council and DARPA Lift Challenge checks remain dated inserts.

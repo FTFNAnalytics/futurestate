@@ -359,7 +359,7 @@ Recommended active schedule:
 | Completed | Phase 53 | nine Published records and a documented 23-record review shelf |
 | Completed | Phase 54 | local release gate, touch-target repair, v0.2 manifest, launch note, preview explicitly deferred |
 | Checkpoint | Phase 55M | 38 Published signals, 25 In Review signals, and an owner-only Sites version 12 |
-| Completed locally | Phase 55O | two Published briefings, three held briefings, and three repaired Published dependency maps |
+| Completed | Phase 55O | two Published briefings, three held briefings, three repaired Published dependency maps, and owner-only Sites version 13 |
 | Date-gated insert | Phase 55H | complete the Toronto post-Council authority recheck after July 31 |
 | Current | Phase 55P | build curated reader pathways and priority topic dossiers from Published evidence |
 | Then | Phase 55Q | close a bounded batch of the highest-value evidence gaps |
@@ -404,6 +404,7 @@ Current stop point:
 - Phase 55N added a 16-record outcome and local-conversion collection, six source profiles, six new `In Review` signals, two briefings, four organizations, integrated trail repairs, and a verified 19-file download bundle,
 - Phase 55M applied the publication gate separately to fourteen Phase 55L and Phase 55N signals, promoted thirteen bounded records, held the scheduled DARPA Lift trial, and advanced the release contract to 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources,
 - Phase 55O reviewed all five briefings and three dependency maps, published two briefings, held three with explicit reasons, repaired all three maps around Published signals, added the seventeenth update, and passed the complete local release gate,
+- exact Phase 55O source commit `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad` is deployed as owner-only Sites version 13 without changing access,
 - the branch remains unpushed to public GitHub; exact Phase 55M source commit `c1038783998234025ec2af65dae495272a263cc1` is deployed as owner-only Sites version 12 without changing access,
 - no custom domain is attached and Hostinger DNS remains unchanged,
 - the remaining Phase 55H action is the post-meeting recheck of Toronto application `24 254930` for Council disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit evidence,
@@ -424,7 +425,7 @@ Exit criteria:
 - production DNS remains unchanged,
 - no secrets or credentials are committed or pasted into chat.
 
-### Phase 55O: Briefing And Dependency-Map Publication Pass - Complete Locally
+### Phase 55O: Briefing And Dependency-Map Publication Pass - Complete
 
 Goal: convert the existing synthesis shelf into a set of explicit publish, repair, split, or hold decisions without lowering the publication standard.
 
@@ -459,7 +460,7 @@ Result:
 - all three dependency maps are Published after repair around Published signals and visible evidence gaps,
 - Published map details are indexable; future non-published map details are `noindex, follow` and excluded from the sitemap,
 - all candidate, content, source-health, Astro, build, indexing, export, archive, and release assertions pass,
-- the owner-only Sites refresh remains the final execution step for the exact checkpoint.
+- exact source commit `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad` is deployed as owner-only Sites version 13.
 
 ### Phase 55H: Toronto Post-Council Authority Gate - Date-Gated Insert
 

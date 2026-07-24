@@ -2355,6 +2355,8 @@ Implemented:
 - added release assertions for all Published and In Review briefing and dependency-map routes,
 - added the seventeenth public update entry,
 - preserved the 380-page, 189-source, 63-signal, 38 Published / 25 In Review release contract.
+- committed exact source as `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad`,
+- deployed that source as owner-only Sites version 13 with one allowed owner, no groups, no public access, and no DNS change.
 
 Boundary:
 
