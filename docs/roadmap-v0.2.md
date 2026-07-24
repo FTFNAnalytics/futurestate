@@ -365,7 +365,7 @@ Recommended active schedule:
 | Next dated insert | Phase 55H | complete the Toronto post-Council authority recheck on August 1 |
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
 | Authority backlog | Phase 55S | batches one and two complete; the remaining 30-record allocation now replenishes selected Phase 55U and Phase 55V work |
-| Completed locally | Phase 55T | all 17 topics now have at least four signals and two Published records; owner-only deployment refresh pending |
+| Completed | Phase 55T | all 17 topics now have at least four signals and two Published records; owner-only Sites version 18 deployed |
 | Current | Phase 55U | select and build three or four evidence-dense local systems |
 | Planned | Phase 55V | grow the primary-document research and synthesis layer |
 | Planned | Phase 55W | apply publication gates and make the larger corpus navigable |

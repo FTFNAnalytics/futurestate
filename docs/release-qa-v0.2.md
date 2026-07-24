@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: Phase 55T local release gate passed; owner-only Sites deployment refresh pending.
+Status: Phase 55T release gate and owner-only Sites version 18 deployment passed.
 
 ## Artifact Under Review
 
@@ -204,4 +204,4 @@ The 521-page artifact passes:
 - the 22-entry update log, three public exports, required routes and downloads, canonicals, robots, and private-registry exclusion;
 - all five Published research collections, 65 document routes, and the five existing download archives.
 
-A repeat visual/browser pass was not requested because the phase changes content only. The existing owner-only policy, public GitHub boundary, package version, Hostinger DNS, and custom-domain state remain unchanged. Record the exact commit and Sites version below after the Phase 55T owner-only deployment succeeds.
+A repeat visual/browser pass was not requested because the phase changes content only. Exact source commit `b0527aa7795fef7cb15273aad923904f69c4133e` is deployed successfully as owner-only Sites version 18 at `https://ftfn-analytics.jbumstead.chatgpt.site`. The access policy remains custom with one allowed owner and no groups. The public GitHub boundary, package version, Hostinger DNS, and custom-domain state remain unchanged.

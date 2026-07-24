@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: complete and release-verified locally; owner-only deployment pending
+Status: complete, release-verified, and deployed owner-only as Sites version 18
 
 ## Objective
 
@@ -183,4 +183,15 @@ The unfinished Phase 55S third 30-record allocation remains an authority backlog
 
 ## Deployment Receipt
 
-Pending. Record the exact source commit, Sites version, deployment identifiers, URL, and owner-only policy verification after the validated source state is saved and deployed.
+The exact validated Phase 55T source state was committed as `b0527aa7795fef7cb15273aad923904f69c4133e`, pushed only to the private Sites source repository, saved as Sites version 18, and deployed successfully to:
+
+`https://ftfn-analytics.jbumstead.chatgpt.site`
+
+Receipt:
+
+- Version ID: `appgprj_6a614e1092d08191bf65779fc35df959~appgver_f6553e7eac908191b6ba84b192c44ba7`
+- Deployment ID: `appgdep_6a63aea705a88191a72e01dca85f1af2`
+- Deployment status: succeeded
+- Access: custom owner-only policy with one allowed owner and no groups
+- Public GitHub: unchanged
+- Custom domain and Hostinger DNS: unchanged
