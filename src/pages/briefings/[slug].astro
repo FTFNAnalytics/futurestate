@@ -1,0 +1,172 @@
+---
+import { getCollection, render } from "astro:content";
+import DependencyMapLinks from "../../components/atlas/DependencyMapLinks.astro";
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+import {
+  formatDate,
+  getClaimScopeNote,
+  getEvidenceGapTone,
+  getLocalEvidenceNote,
+  getStatusNote,
+  getStatusTone,
+  getVerificationTone
+} from "../../lib/editorial";
+
+export async function getStaticPaths() {
+  const briefings = await getCollection("briefings");
+
+  return briefings.map((briefing) => ({
+    params: { slug: briefing.data.slug },
+    props: { briefing }
+  }));
+}
+
+const { briefing } = Astro.props;
+const { Content } = await render(briefing);
+const allSignals = await getCollection("signals");
+const signals = briefing.data.signal_ids
+  .map((id) => allSignals.find((signal) => signal.data.id === id))
+  .filter((signal): signal is (typeof allSignals)[number] => Boolean(signal));
+const briefingDate = briefing.data.published_date ?? briefing.data.captured_date;
+const evidenceGaps = await getCollection("evidenceGaps");
+const linkedEvidenceGaps = evidenceGaps.filter((gap) => briefing.data.evidence_gap_ids.includes(gap.data.id));
+const briefingSignalIds = new Set(briefing.data.signal_ids);
+const briefingEvidenceGapIds = new Set(briefing.data.evidence_gap_ids);
+const relatedDependencyMaps = (await getCollection("dependencyMaps"))
+  .map((dependencyMap) => {
+    const signalMatchCount = dependencyMap.data.signal_ids.filter((signalId) => briefingSignalIds.has(signalId)).length;
+    const evidenceGapMatchCount = dependencyMap.data.evidence_gap_ids.filter((gapId) => briefingEvidenceGapIds.has(gapId)).length;
+
+    return { dependencyMap, signalMatchCount, evidenceGapMatchCount };
+  })
+  .filter(({ signalMatchCount, evidenceGapMatchCount }) => signalMatchCount > 0 || evidenceGapMatchCount > 0)
+  .map(({ dependencyMap, signalMatchCount, evidenceGapMatchCount }) => ({
+    map: dependencyMap,
+    relationship: "Shared IDs",
+    note: `This map shares ${signalMatchCount} signal${signalMatchCount === 1 ? "" : "s"} and ${evidenceGapMatchCount} evidence gap${evidenceGapMatchCount === 1 ? "" : "s"} with this briefing.`
+  }));
+const evidenceGapSummary =
+  linkedEvidenceGaps.length > 0 ? `${linkedEvidenceGaps.length} linked gap${linkedEvidenceGaps.length === 1 ? "" : "s"}` : "No linked gaps";
+const lastReviewedSummary = briefing.data.last_reviewed_date
+  ? formatDate(briefing.data.last_reviewed_date)
+  : "Not recorded";
+const robots = briefing.data.record_status === "Published" ? "index, follow" : "noindex, follow";
+---
+
+<BaseLayout title={`${briefing.data.title} | FTFN`} description={briefing.data.summary} robots={robots}>
+  <article class="page-section">
+    <div class="eyebrow">Briefing</div>
+    <h1 class="page-title">{briefing.data.title}</h1>
+    <p class="lede">{briefing.data.summary}</p>
+    <div class="meta-row">
+      <MetaPill label={briefing.data.record_status} tone={getStatusTone(briefing.data.record_status)} />
+      <MetaPill label={briefingDate.toISOString().slice(0, 10)} />
+      <MetaPill label={`${signals.length} signals`} />
+      <MetaPill label={briefing.data.claim_scope} />
+      <MetaPill label={briefing.data.local_evidence_level} />
+    </div>
+  </article>
+
+  <section class="page-section">
+    <div class="status-panel">
+      <div class="status-item">
+        <h2>{briefing.data.record_status}</h2>
+        <p>{getStatusNote(briefing.data.record_status)}</p>
+      </div>
+      <div class="status-item">
+        <h2>Evidence Base</h2>
+        <p>This briefing synthesizes referenced signals rather than introducing unsupported claims.</p>
+      </div>
+      <div class="status-item">
+        <h2>Publication Limit</h2>
+        <p>Keep as draft or in review until every referenced claim passes final publication review.</p>
+      </div>
+      <div class="status-item">
+        <h2>{briefing.data.claim_scope}</h2>
+        <p>{getClaimScopeNote(briefing.data.claim_scope)}</p>
+      </div>
+      <div class="status-item">
+        <h2>{briefing.data.local_evidence_level}</h2>
+        <p>{getLocalEvidenceNote(briefing.data.local_evidence_level)}</p>
+      </div>
+      <div class="status-item">
+        <h2>{evidenceGapSummary}</h2>
+        <p>Last reviewed: {lastReviewedSummary}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      <div>
+        <h2>Top Takeaways</h2>
+        <ul>
+          {briefing.data.top_takeaways.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>Constraint Watch</h2>
+        <div class="meta-row">
+          {briefing.data.constraint_watch.map((constraint) => (
+            <MetaPill label={constraint} tone="urgency" />
+          ))}
+        </div>
+      </div>
+      <div>
+        <h2>What To Watch Next</h2>
+        <ul>
+          {briefing.data.what_to_watch_next.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section prose">
+    <Content />
+  </section>
+
+  {linkedEvidenceGaps.length > 0 && (
+    <section class="page-section">
+      <h2>Evidence Gaps</h2>
+      <div class="grid">
+        {linkedEvidenceGaps.map((gap) => (
+          <article class="record-card">
+            <h3><a href={`/atlas/evidence-gaps/${gap.data.slug}/`}>{gap.data.title}</a></h3>
+            <p>{gap.data.next_action}</p>
+            <div class="meta-row">
+              <MetaPill label={gap.data.id} />
+              <MetaPill label={gap.data.status} tone={getEvidenceGapTone(gap.data.status)} />
+              <MetaPill label={gap.data.priority} tone={gap.data.priority === "High" ? "urgency" : "default"} />
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <DependencyMapLinks
+    maps={relatedDependencyMaps}
+    title="Dependency maps connected to this briefing."
+    description="These maps appear only through shared signal IDs or evidence-gap IDs."
+  />
+
+  <section class="page-section">
+    <h2>Referenced Signals</h2>
+    <div class="grid">
+      {signals.map((signal) => (
+        <article class="record-card">
+          <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+          <p>{signal.data.summary}</p>
+          <div class="meta-row">
+            <MetaPill label={signal.data.record_status} tone={getStatusTone(signal.data.record_status)} />
+            <MetaPill label={signal.data.verification_status} tone={getVerificationTone(signal.data.verification_status)} />
+            <MetaPill label={signal.data.primary_topic} />
+            <MetaPill label={signal.data.signal_type} />
+            <MetaPill label={signal.data.evidence_quality} />
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+
+const topics = await getCollection("topics");
+---
+
+<BaseLayout title="Topic Atlas | FTFN">
+  <section class="page-section">
+    <div class="eyebrow">Atlas</div>
+    <h1 class="page-title">The first topic map for the future stack.</h1>
+    <p class="lede">
+      Topic pages organize signals by system layer, constraint tags, sources, and questions to watch.
+    </p>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      {topics.map((topic) => (
+        <article class="record-card">
+          <h2><a href={`/atlas/topics/${topic.data.slug}/`}>{topic.data.name}</a></h2>
+          <p>{topic.data.summary}</p>
+          <div class="meta-row">
+            {topic.data.framework_layers.map((layer) => <MetaPill label={layer} />)}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

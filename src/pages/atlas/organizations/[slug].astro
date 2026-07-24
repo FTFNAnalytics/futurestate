@@ -1,0 +1,121 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+
+export async function getStaticPaths() {
+  const organizations = await getCollection("organizations");
+
+  return organizations.map((organization) => ({
+    params: { slug: organization.data.slug },
+    props: { organization }
+  }));
+}
+
+const { organization } = Astro.props;
+const sources = await getCollection("sources");
+const relatedSources = sources.filter((source) => organization.data.source_ids.includes(source.data.id));
+const signals = (await getCollection("signals")).filter((signal) =>
+  signal.data.source_ids.some((sourceId) => organization.data.source_ids.includes(sourceId))
+);
+const topics = (await getCollection("topics")).filter((topic) =>
+  organization.data.primary_topics.includes(topic.data.name)
+);
+---
+
+<BaseLayout title={`${organization.data.name} | FTFN`} description={organization.data.summary}>
+  <section class="page-section">
+    <div class="eyebrow">Organization Profile</div>
+    <h1 class="page-title">{organization.data.name}</h1>
+    <p class="lede">{organization.data.summary}</p>
+    <div class="meta-row">
+      <MetaPill label={organization.data.organization_type} />
+      {organization.data.framework_layers.map((layer) => <MetaPill label={layer} />)}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      <article class="record-card">
+        <h2>Primary Topics</h2>
+        <div class="meta-row">
+          {organization.data.primary_topics.map((topic) => <MetaPill label={topic} />)}
+        </div>
+      </article>
+      <article class="record-card">
+        <h2>Relationship Rule</h2>
+        <p>
+          This profile links only to records supported by explicit topic or source IDs
+          in the current content model.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  {relatedSources.length > 0 && (
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Sources</div>
+          <h2>Source records tied to this organization.</h2>
+        </div>
+      </div>
+      <div class="grid">
+        {relatedSources.map((source) => (
+          <article class="record-card">
+            <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+            <p>{source.data.known_limitations}</p>
+            <div class="meta-row">
+              <MetaPill label={source.data.source_type} />
+              <MetaPill label={source.data.credibility_level} />
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {topics.length > 0 && (
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Topics</div>
+          <h2>Topic pages with direct topic overlap.</h2>
+        </div>
+      </div>
+      <div class="grid">
+        {topics.map((topic) => (
+          <article class="record-card">
+            <h3><a href={`/atlas/topics/${topic.data.slug}/`}>{topic.data.name}</a></h3>
+            <p>{topic.data.summary}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Signals</div>
+        <h2>Signals using this organization's source records.</h2>
+      </div>
+    </div>
+    {signals.length > 0 ? (
+      <div class="grid">
+        {signals.map((signal) => (
+          <article class="record-card">
+            <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+            <p>{signal.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={signal.data.primary_topic} />
+              <MetaPill label={signal.data.signal_type} />
+            </div>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <p class="muted">No sample signals are linked through this organization's source IDs yet.</p>
+    )}
+  </section>
+</BaseLayout>

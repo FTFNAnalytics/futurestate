@@ -1,0 +1,355 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../components/layout/BaseLayout.astro";
+import MetaPill from "../components/ui/MetaPill.astro";
+import { getStatusTone } from "../lib/editorial";
+
+const allSignals = await getCollection("signals");
+const signals = allSignals
+  .sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf())
+  .slice(0, 6);
+
+const topics = await getCollection("topics");
+const sources = await getCollection("sources");
+const localSystems = await getCollection("localSystems");
+const dependencyMaps = (await getCollection("dependencyMaps")).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title)
+);
+const briefings = (await getCollection("briefings")).sort(
+  (a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf()
+);
+const researchCollections = (await getCollection("researchCollections"))
+  .filter((collection) => collection.data.record_status === "Published")
+  .sort((a, b) =>
+    b.data.captured_date.valueOf() - a.data.captured_date.valueOf()
+    || b.data.title.localeCompare(a.data.title)
+  );
+const researchDocuments = await getCollection("researchDocuments");
+
+const highPrioritySources = sources
+  .filter((source) => source.data.capture_priority === "High")
+  .sort((a, b) => a.data.name.localeCompare(b.data.name))
+  .slice(0, 4);
+
+const featuredBriefing = briefings[0];
+const featuredResearchCollection = researchCollections[0];
+
+const frameworkLayers = [
+  {
+    name: "Planetary Conditions",
+    question: "What is the planet making easier or harder?",
+    summary: "Climate, water, food security, oceans, habitability, and the operating conditions around every future system."
+  },
+  {
+    name: "Resource Foundations",
+    question: "Can we physically source the future?",
+    summary: "Geology, critical minerals, refining, recycling, industrial water, land use, and supply-chain chokepoints."
+  },
+  {
+    name: "Enabling Infrastructure",
+    question: "Can the future be powered, computed, secured, manufactured, and financed?",
+    summary: "Grid capacity, chips, data centers, quantum systems, communications, standards, finance, and cyber resilience."
+  },
+  {
+    name: "Frontier Domains",
+    question: "What new capabilities are emerging?",
+    summary: "Autonomous travel, aviation, space, robotics, discovery technologies, AI for science, and bioeconomy systems."
+  },
+  {
+    name: "Human Systems",
+    question: "Will people, institutions, and markets absorb the change?",
+    summary: "Policy, labor, trust, safety, insurance, education, geopolitics, and the local constraints that decide outcomes."
+  }
+] as const;
+
+const frameworkLayerRows = frameworkLayers.map((layer) => ({
+  ...layer,
+  signalCount: allSignals.filter((signal) => signal.data.framework_layers.includes(layer.name)).length
+}));
+
+const constraintCounts = allSignals.reduce<Record<string, number>>((counts, signal) => {
+  for (const constraint of signal.data.constraints) {
+    counts[constraint] = (counts[constraint] ?? 0) + 1;
+  }
+
+  return counts;
+}, {});
+
+const topConstraints = Object.entries(constraintCounts)
+  .sort(([, countA], [, countB]) => countB - countA)
+  .slice(0, 6);
+const dependencyMapTypeCount = new Set(dependencyMaps.map((dependencyMap) => dependencyMap.data.map_type)).size;
+const dependencyMapEvidenceGapCount = new Set(
+  dependencyMaps.flatMap((dependencyMap) => dependencyMap.data.evidence_gap_ids)
+).size;
+
+const dateFormatter = new Intl.DateTimeFormat("en", {
+  month: "short",
+  day: "numeric",
+  year: "numeric"
+});
+---
+
+<BaseLayout title="FTFN | Future-State Intelligence">
+  <section class="page-section hero">
+    <div class="hero__copy">
+      <div class="eyebrow">ftfn.io</div>
+      <h1>FTFN</h1>
+      <p class="lede">
+        Future-state intelligence for possibility, urgency, and the stack of
+        dependencies underneath what comes next.
+      </p>
+      <div class="thesis">
+        <span>42 is possibility.</span>
+        <span>59 is urgency.</span>
+        <span>Civilization is a choice.</span>
+        <span>The future is not a list of inventions. It is a stack of dependencies.</span>
+      </div>
+      <div class="button-row" aria-label="Primary homepage actions">
+        <a class="button" href="/signals/">Read Signals</a>
+        <a class="button button--secondary" href="/atlas/">Explore Atlas</a>
+        <a class="button button--secondary" href="/research/">Open Research</a>
+      </div>
+    </div>
+
+    <div class="metric-strip" aria-label="Current FTFN seed record counts">
+      <div class="metric">
+        <strong>{allSignals.length}</strong>
+        <span>signals</span>
+      </div>
+      <div class="metric">
+        <strong>{sources.length}</strong>
+        <span>sources</span>
+      </div>
+      <div class="metric">
+        <strong>{topics.length}</strong>
+        <span>topics</span>
+      </div>
+      <div class="metric">
+        <strong>{localSystems.length}</strong>
+        <span>local systems</span>
+      </div>
+    </div>
+  </section>
+
+  {featuredResearchCollection && (
+    <section class="page-section briefing-band">
+      <div class="briefing-band__copy">
+        <div class="eyebrow">New Research Collection</div>
+        <h2>{featuredResearchCollection.data.title}</h2>
+        <p>{featuredResearchCollection.data.summary}</p>
+        <div class="meta-row">
+          <MetaPill label={`${researchDocuments.length} documents`} tone="possibility" />
+          <MetaPill label="22 local captures" />
+          <MetaPill label="1 official-link record" tone="review" />
+        </div>
+        <div class="button-row">
+          <a class="inline-link" href={`/research/${featuredResearchCollection.data.slug}/`}>Read the collection</a>
+          <a class="inline-link" href={featuredResearchCollection.data.download_path} download>Download all files</a>
+        </div>
+      </div>
+      <article class="record-card record-card--featured">
+        <div class="eyebrow">What the documents add</div>
+        <h3>Research direction meets industrial capacity.</h3>
+        <p>
+          The collection traces how DARPA portfolios and current federal
+          strategy connect AI, compute, communications, energy, materials,
+          manufacturing, supply chains, resilience, and national security.
+        </p>
+        <p class="card-note">
+          Direction-setting evidence is kept separate from awards, deployment,
+          and operating outcomes.
+        </p>
+      </article>
+    </section>
+  )}
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Dependency Maps</div>
+      <h2>When one signal is not enough.</h2>
+      <p>
+        Dependency maps connect existing FTFN records into qualitative views of
+        the stack: what depends on what, where evidence is partial, and what
+        still needs source work.
+      </p>
+      <div class="meta-row">
+        <MetaPill label={`${dependencyMaps.length} maps`} />
+        <MetaPill label={`${dependencyMapTypeCount} map types`} />
+        <MetaPill label={`${dependencyMapEvidenceGapCount} evidence gaps`} tone="urgency" />
+      </div>
+      <a class="inline-link" href="/atlas/dependency-maps/">Open dependency maps</a>
+    </div>
+
+    <div class="source-list">
+      {dependencyMaps.map((dependencyMap) => (
+        <article class="source-row">
+          <div class="meta-row">
+            <MetaPill label={dependencyMap.data.map_type} />
+            <MetaPill label={dependencyMap.data.record_status} tone={getStatusTone(dependencyMap.data.record_status)} />
+          </div>
+          <h3><a href={`/atlas/dependency-maps/${dependencyMap.data.slug}/`}>{dependencyMap.data.title}</a></h3>
+          <p>{dependencyMap.data.summary}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Latest Signals</div>
+        <h2>What changed in the stack?</h2>
+      </div>
+      <a class="inline-link" href="/signals/">View all signals</a>
+    </div>
+    <div class="signal-grid">
+      {signals.map((signal) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label={signal.data.primary_topic} />
+            <MetaPill label={signal.data.time_horizon} />
+          </div>
+          <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+          <p>{signal.data.summary}</p>
+          <div class="meta-row">
+            <MetaPill label={signal.data.signal_type} />
+            <MetaPill label={signal.data.maturity_level} />
+          </div>
+          <p class="card-note">Captured {dateFormatter.format(signal.data.captured_date)}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section dependency-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Dependency Stack</div>
+        <h2>The framework behind the reporting.</h2>
+      </div>
+      <div class="constraint-strip" aria-label="Top constraint tags in seed signals">
+        {topConstraints.map(([constraint, count]) => (
+          <span>{constraint} <strong>{count}</strong></span>
+        ))}
+      </div>
+    </div>
+
+    <div class="stack-layers">
+      {frameworkLayerRows.map((layer, index) => (
+        <article class="stack-layer">
+          <div class="stack-layer__index">{index + 1}</div>
+          <div>
+            <h3>{layer.name}</h3>
+            <p class="stack-layer__question">{layer.question}</p>
+            <p>{layer.summary}</p>
+          </div>
+          <div class="stack-layer__count">
+            <strong>{layer.signalCount}</strong>
+            <span>signals</span>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Topic Atlas</div>
+        <h2>Entry points into the system.</h2>
+      </div>
+      <a class="inline-link" href="/atlas/">Open atlas</a>
+    </div>
+    <div class="grid">
+      {topics.map((topic) => (
+        <article class="record-card">
+          <h3><a href={`/atlas/topics/${topic.data.slug}/`}>{topic.data.name}</a></h3>
+          <p>{topic.data.summary}</p>
+          <div class="meta-row">
+            {topic.data.framework_layers.map((layer) => <MetaPill label={layer} />)}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Source Transparency</div>
+          <h2>Claims need an evidence layer.</h2>
+        </div>
+        <p>
+          FTFN separates source type, credibility, known limitations, and editorial
+          interpretation so press releases and official data do not carry the same weight.
+        </p>
+        <div class="button-row">
+          <a class="inline-link" href="/atlas/sources/">Review sources</a>
+          <a class="inline-link" href="/method/">Read method</a>
+        </div>
+      </div>
+      <div class="source-list">
+        {highPrioritySources.map((source) => (
+          <article class="source-row">
+            <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+            <p>{source.data.known_limitations}</p>
+            <div class="meta-row">
+              <MetaPill label={source.data.source_type} />
+              <MetaPill label={source.data.credibility_level} />
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Local Systems</div>
+          <h2>Signals become outcomes somewhere.</h2>
+        </div>
+        <p>
+          Local system profiles test how global change enters a specific place,
+          market, supply chain, or institution through its own constraints.
+        </p>
+        <a class="inline-link" href="/atlas/local-systems/">View local systems</a>
+      </div>
+      <div class="source-list">
+        {localSystems.map((system) => (
+          <article class="source-row">
+            <h3><a href={`/atlas/local-systems/${system.data.slug}/`}>{system.data.name}</a></h3>
+            <p>{system.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={system.data.system_type} />
+              <MetaPill label={system.data.geography} />
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {featuredBriefing && (
+    <section class="page-section briefing-band">
+      <div class="briefing-band__copy">
+        <div class="eyebrow">Briefings</div>
+        <h2>Periodic synthesis for a moving system.</h2>
+        <p>
+          Briefings connect individual signals into a readable cadence: what changed,
+          which constraints moved, and what deserves attention next.
+        </p>
+      </div>
+      <article class="record-card record-card--featured">
+        <div class="meta-row">
+          <MetaPill label={featuredBriefing.data.record_status} tone="possibility" />
+          <MetaPill label={`${featuredBriefing.data.signal_ids.length} signals`} />
+        </div>
+        <h3><a href={`/briefings/${featuredBriefing.data.slug}/`}>{featuredBriefing.data.title}</a></h3>
+        <p>{featuredBriefing.data.summary}</p>
+        <a class="inline-link" href={`/briefings/${featuredBriefing.data.slug}/`}>Read briefing</a>
+      </article>
+    </section>
+  )}
+</BaseLayout>

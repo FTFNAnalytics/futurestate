@@ -1,0 +1,202 @@
+---
+import { getCollection, render } from "astro:content";
+import DependencyMapLinks from "../../components/atlas/DependencyMapLinks.astro";
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+import {
+  formatDate,
+  getClaimScopeNote,
+  getEvidenceGapTone,
+  getLocalEvidenceNote,
+  getStatusNote,
+  getStatusTone,
+  getVerificationTone
+} from "../../lib/editorial";
+
+export async function getStaticPaths() {
+  const signals = await getCollection("signals");
+
+  return signals.map((signal) => ({
+    params: { slug: signal.data.slug },
+    props: { signal }
+  }));
+}
+
+const { signal } = Astro.props;
+const { Content } = await render(signal);
+const sources = await getCollection("sources");
+const signalSources = sources.filter((source) => signal.data.source_ids.includes(source.data.id));
+const localSystems = await getCollection("localSystems");
+const relatedLocalSystems = localSystems.filter((system) =>
+  signal.data.receiving_systems.includes(system.data.name)
+);
+const evidenceGaps = await getCollection("evidenceGaps");
+const linkedEvidenceGaps = evidenceGaps.filter((gap) => signal.data.evidence_gap_ids.includes(gap.data.id));
+const relatedDependencyMaps = (await getCollection("dependencyMaps"))
+  .filter((dependencyMap) => dependencyMap.data.signal_ids.includes(signal.data.id))
+  .map((dependencyMap) => ({
+    map: dependencyMap,
+    relationship: "Signal ID",
+    note: "This dependency map explicitly cites this signal as part of its evidence trail."
+  }));
+const sourceCheckedDates = signalSources.map((source) => formatDate(source.data.last_checked_date));
+const sourceCheckedSummary = sourceCheckedDates.length > 0 ? sourceCheckedDates.join(", ") : "No source date";
+const publishedDateSummary = signal.data.published_date ? formatDate(signal.data.published_date) : "Not published";
+const capturedDateSummary = formatDate(signal.data.captured_date);
+const evidenceGapSummary =
+  linkedEvidenceGaps.length > 0 ? `${linkedEvidenceGaps.length} linked gap${linkedEvidenceGaps.length === 1 ? "" : "s"}` : "No linked gaps";
+const lastReviewedSummary = signal.data.last_reviewed_date
+  ? formatDate(signal.data.last_reviewed_date)
+  : "Not recorded";
+const robots = signal.data.record_status === "Published" ? "index, follow" : "noindex, follow";
+---
+
+<BaseLayout title={`${signal.data.title} | FTFN`} description={signal.data.summary} robots={robots}>
+  <article class="page-section">
+    <div class="eyebrow">Signal Brief</div>
+    <h1 class="page-title">{signal.data.title}</h1>
+    <p class="lede">{signal.data.summary}</p>
+    <div class="meta-row">
+      <MetaPill label={signal.data.record_status} tone={getStatusTone(signal.data.record_status)} />
+      <MetaPill label={signal.data.primary_topic} />
+      <MetaPill label={signal.data.signal_type} />
+      <MetaPill label={signal.data.maturity_level} />
+      <MetaPill label={signal.data.time_horizon} />
+      <MetaPill label={signal.data.evidence_quality} />
+      <MetaPill label={signal.data.verification_status} tone={getVerificationTone(signal.data.verification_status)} />
+      <MetaPill label={signal.data.claim_scope} />
+      <MetaPill label={signal.data.local_evidence_level} />
+    </div>
+  </article>
+
+  <section class="page-section">
+    <div class="status-panel">
+      <article class="status-item">
+        <div class="eyebrow">Record Status</div>
+        <h2>{signal.data.record_status}</h2>
+        <p>{getStatusNote(signal.data.record_status)}</p>
+      </article>
+      <article class="status-item">
+        <div class="eyebrow">Publication Date</div>
+        <h2>{publishedDateSummary}</h2>
+        <p>Captured: {capturedDateSummary}</p>
+      </article>
+      <article class="status-item">
+        <div class="eyebrow">Verification</div>
+        <h2>{signal.data.verification_status}</h2>
+        <p>Evidence label: {signal.data.evidence_quality}</p>
+      </article>
+      <article class="status-item">
+        <div class="eyebrow">Source Check</div>
+        <h2>{sourceCheckedSummary}</h2>
+        <p>{signalSources.length} source{signalSources.length === 1 ? "" : "s"} attached to this signal.</p>
+      </article>
+      <article class="status-item">
+        <div class="eyebrow">Claim Scope</div>
+        <h2>{signal.data.claim_scope}</h2>
+        <p>{getClaimScopeNote(signal.data.claim_scope)}</p>
+      </article>
+      <article class="status-item">
+        <div class="eyebrow">Local Evidence</div>
+        <h2>{signal.data.local_evidence_level}</h2>
+        <p>{getLocalEvidenceNote(signal.data.local_evidence_level)}</p>
+      </article>
+      <article class="status-item">
+        <div class="eyebrow">Evidence Gaps</div>
+        <h2>{evidenceGapSummary}</h2>
+        <p>Last reviewed: {lastReviewedSummary}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      <div>
+        <h2>Dependency Stack</h2>
+        <ul>
+          {signal.data.dependencies.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>Constraint Watch</h2>
+        <ul>
+          {signal.data.constraints.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {linkedEvidenceGaps.length > 0 && (
+    <section class="page-section">
+      <h2>Evidence Gaps</h2>
+      <div class="grid">
+        {linkedEvidenceGaps.map((gap) => (
+          <article class="record-card">
+            <h3><a href={`/atlas/evidence-gaps/${gap.data.slug}/`}>{gap.data.title}</a></h3>
+            <p>{gap.data.next_action}</p>
+            <div class="meta-row">
+              <MetaPill label={gap.data.id} />
+              <MetaPill label={gap.data.status} tone={getEvidenceGapTone(gap.data.status)} />
+              <MetaPill label={gap.data.priority} tone={gap.data.priority === "High" ? "urgency" : "default"} />
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <DependencyMapLinks
+    maps={relatedDependencyMaps}
+    title="Dependency maps using this signal."
+    description="These maps cite this signal by ID. The relationship is explicit; it is not inferred from page text."
+  />
+
+  <section class="page-section prose">
+    <Content />
+  </section>
+
+  <section class="page-section">
+    <h2>Sources</h2>
+    <div class="grid">
+      {signalSources.map((source) => (
+        <article class="record-card source-card">
+          <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+          <p>{source.data.known_limitations}</p>
+          <div class="meta-row">
+            <MetaPill label={source.data.source_type} />
+            <MetaPill label={source.data.credibility_level} />
+          </div>
+          <dl class="source-facts">
+            <div>
+              <dt>Last checked</dt>
+              <dd>{formatDate(source.data.last_checked_date)}</dd>
+            </div>
+            <div>
+              <dt>Capture priority</dt>
+              <dd>{source.data.capture_priority}</dd>
+            </div>
+          </dl>
+          <p><a href={source.data.url}>Open original source</a></p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  {relatedLocalSystems.length > 0 && (
+    <section class="page-section">
+      <h2>Receiving Systems</h2>
+      <div class="grid">
+        {relatedLocalSystems.map((system) => (
+          <article class="record-card">
+            <h3><a href={`/atlas/local-systems/${system.data.slug}/`}>{system.data.name}</a></h3>
+            <p>{system.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={system.data.system_type} />
+              <MetaPill label={system.data.geography} />
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+</BaseLayout>

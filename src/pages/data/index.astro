@@ -1,0 +1,115 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+
+const sources = await getCollection("sources");
+const topics = await getCollection("topics");
+const signals = (await getCollection("signals")).filter((signal) => signal.data.record_status === "Published");
+const researchCollections = (await getCollection("researchCollections"))
+  .filter((collection) => collection.data.record_status === "Published");
+const researchDocuments = (await getCollection("researchDocuments"))
+  .filter((document) => document.data.record_status === "Published");
+const readerPathways = (await getCollection("readerPathways"))
+  .filter((pathway) => pathway.data.record_status === "Published");
+
+const datasets = [
+  {
+    title: "Published Signals",
+    href: "/data/signals.json",
+    count: signals.length,
+    summary: "Published signal metadata, evidence fields, dependencies, constraints, source links, and review dates."
+  },
+  {
+    title: "Sources",
+    href: "/data/sources.json",
+    count: sources.length,
+    summary: "Public source metadata, authority, freshness, access type, watch lanes, coverage roles, and known limitations."
+  },
+  {
+    title: "Topics",
+    href: "/data/topics.json",
+    count: topics.length,
+    summary: "The public topic taxonomy, framework layers, constraints, featured sources, and watch questions."
+  },
+  {
+    title: "Research",
+    href: "/data/research.json",
+    count: researchCollections.length + researchDocuments.length,
+    summary: "Published research collections and documents with summaries, findings, evidence limits, source links, and capture status."
+  },
+  {
+    title: "Reader Pathways",
+    href: "/data/pathways.json",
+    count: readerPathways.length,
+    summary: "Published reader journeys connecting signals, sources, synthesis, research collections, local systems, and open gaps."
+  }
+];
+---
+
+<BaseLayout
+  title="Data Exports | FTFN"
+  description="Versioned public JSON exports for FTFN signals, sources, topics, research records, and reader pathways."
+>
+  <section class="page-section hero">
+    <div class="hero__copy">
+      <div class="eyebrow">ftfn.io / Data</div>
+      <h1 class="page-title">Inspectable metadata for the evidence stack.</h1>
+      <p class="lede">
+        These static JSON files expose stable public fields without publishing
+        private candidate notes, internal automation instructions, or review-only
+        signal records.
+      </p>
+      <div class="meta-row">
+        <MetaPill label="Schema 1.0" tone="possibility" />
+        <MetaPill label="Static build exports" />
+        <MetaPill label="No live API" tone="review" />
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Datasets</div>
+        <h2>Five bounded public contracts.</h2>
+        <p>Each file reports its schema version, dataset name, record scope, count, and records.</p>
+      </div>
+      <a class="inline-link" href="/method/">Read the publication method</a>
+    </div>
+    <div class="grid">
+      {datasets.map((dataset) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label={`${dataset.count} records`} tone="possibility" />
+            <MetaPill label="JSON" />
+          </div>
+          <h3><a href={dataset.href}>{dataset.title}</a></h3>
+          <p>{dataset.summary}</p>
+          <a class="inline-link" href={dataset.href}>Open dataset</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Boundary</div>
+      <h2>Exports are publication artifacts, not automated truth.</h2>
+      <p>
+        The files are regenerated from the reviewed static corpus. They do not
+        provide live monitoring, automatic publication, database writes, user
+        accounts, or numeric readiness scoring.
+      </p>
+    </div>
+    <article class="record-card">
+      <h3>Excluded by design</h3>
+      <ul class="compact-list">
+        <li>Private source-candidate IDs and registry paths.</li>
+        <li>Editorial notes and automation instructions.</li>
+        <li>Signals, briefings, maps, and pathways still In Review.</li>
+        <li>Claims beyond the source and evidence boundaries.</li>
+      </ul>
+    </article>
+  </section>
+</BaseLayout>

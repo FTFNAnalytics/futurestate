@@ -1,0 +1,51 @@
+{
+  "id": "gap-003",
+  "title": "U.S. Southwest semiconductor workforce and supplier scaling evidence",
+  "slug": "gap-003-chip-corridor-workforce-suppliers",
+  "status": "Source Added",
+  "priority": "High",
+  "local_system": "U.S. Southwest Chip Corridor",
+  "primary_topic": "Chips and Compute",
+  "framework_layers": ["Enabling Infrastructure", "Human Systems"],
+  "constraint_tags": ["Labor", "Supply Chain", "Manufacturing", "Capital"],
+  "question": "Can local supplier and workforce systems support semiconductor scaling?",
+  "why_it_matters": "Funded semiconductor projects only become operating capacity if labor pipelines, construction capacity, suppliers, training systems, and capital commitments can keep up.",
+  "current_support": "FTFN has national CHIPS context, MAG regional projections, a named TSMC registered technician apprenticeship with an initial eight-person cohort and a later 46-person cohort, the five-state 47-member NNME Southwest workforce node, City records for Fab 1 production, Fab 2 construction completion, Fab 3 topping out, and the reported start of later facilities, plus BLS May 2025 Phoenix-Mesa-Chandler occupation-group employment and wage estimates.",
+  "missing_evidence": [
+    "apprenticeship completion, credential, retention, and placement outcomes",
+    "occupation-specific labor supply",
+    "training capacity relative to fab and supplier demand",
+    "supplier networks",
+    "construction labor availability",
+    "facility occupation mix, vacancies, attrition, and hiring demand"
+  ],
+  "likely_source_types": [
+    "workforce agency data",
+    "economic development report",
+    "training institution data",
+    "company hiring record",
+    "supplier facility record"
+  ],
+  "candidate_records": [
+    "MAG 2023 population, housing, and employment projections",
+    "TSMC apprenticeship outcome and retention data",
+    "Arizona occupation-specific labor and vacancy data",
+    "supplier facility and hiring source"
+  ],
+  "next_action": "Follow NNME Southwest from consortium formation into executed partner agreements, funded delivery, curriculum and cleanroom capacity, enrollment, credentials, placement, retention, employer demand, and supplier hiring, while continuing to seek semiconductor-specific occupations, vacancies, attrition, construction-trade capacity, and facility-level labor evidence.",
+  "future_data_model_need": ["Facility", "Local Actor", "Dataset"],
+  "related_source_ids": ["source-nist-chips", "source-maricopa-association-governments-open-data", "source-aca-tsmc-registered-technician-apprenticeship-2024", "source-phoenix-2025-semiconductor-apprenticeship-agenda", "source-aca-nnme-southwest-2026", "source-phoenix-tsmc-july-2026-fab-update", "source-phoenix-tsmc-fab3-topping-out-2026", "source-bls-oews-tables", "source-bls-phoenix-oews-may-2025"],
+  "related_signal_ids": ["signal-sample-003", "signal-mag-2023-projections-phoenix-region-growth-evidence-layer", "signal-tsmc-arizona-apprenticeship-workforce-pipeline", "signal-nnme-southwest-microelectronics-workforce-node", "signal-phoenix-tsmc-fab1-production-fab2-construction-complete", "signal-phoenix-tsmc-fab3-topping-out", "signal-bls-phoenix-2025-workforce-baseline"],
+  "related_local_system_ids": ["local-us-southwest-chip-corridor"],
+  "latest_review": {
+    "phase": "Phase 55Q",
+    "decision": "Source Added",
+    "review_date": "2026-07-24",
+    "named_records": [
+      "Arizona Commerce Authority NNME Southwest Regional Node Announcement"
+    ],
+    "stage_result": "The workforce trail now includes a named 47-member coordination system across five states, major chip and equipment employers, education providers, workforce organizations, and government. This advances the actor and delivery-mechanism layer but does not measure funded capacity, enrollment, completions, placement, retention, vacancies, supplier openings, or sufficiency.",
+    "stop_rule": "Do not convert consortium membership or intended activities into workforce capacity. Reopen for executed partner agreements, budgets, delivered programs, participant outcomes, occupation-level demand, supplier hiring, or facility operating-employment evidence."
+  },
+  "notes": "Phase 55Q adds the regional workforce coordination layer while preserving the outcomes gap. The node makes the institutions and intended mechanisms visible; it does not quantify delivered talent or supplier-network maturity."
+}

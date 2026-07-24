@@ -1,0 +1,254 @@
+---
+id: "local-ontario-real-estate"
+name: "Ontario Real Estate"
+slug: "ontario-real-estate"
+system_type: "Market"
+summary: "A housing and land market shaped by interest rates, migration, construction costs, zoning, infrastructure capacity, investor behavior, and household affordability."
+geography: "Ontario, Canada"
+key_industries:
+  - "residential real estate"
+  - "construction"
+  - "finance"
+  - "municipal infrastructure"
+core_constraints:
+  - "Capital"
+  - "Regulation"
+  - "Labor"
+  - "Infrastructure"
+  - "Public Trust"
+current_equilibrium: "Sensitive to financing costs, migration flows, municipal approvals, water and electricity infrastructure capacity, and local employment conditions; current Toronto stage data shows a large approved and active pipeline without linking individual permits to starts, completions, or occupancy."
+relevant_signal_types:
+  - "Market Signal"
+  - "Policy Signal"
+  - "Forecast"
+  - "Funding"
+actors_with_authority:
+  - "municipal governments"
+  - "provincial government"
+  - "lenders"
+  - "developers"
+  - "regulators"
+likely_second_order_effects:
+  - "shifts in development timing"
+  - "changes in land value"
+  - "infrastructure pressure"
+  - "affordability stress"
+  - "political conflict over density and growth"
+missing_data:
+  - "local inventory by submarket"
+  - "permit timelines"
+  - "infrastructure capacity by municipality"
+  - "financing exposure by project type"
+evidence_gap_ids:
+  - "gap-004"
+  - "gap-005"
+local_evidence_level: "Specific Local Record"
+last_reviewed_date: 2026-07-24
+source_ids:
+  - "source-cmhc-housing-market-information-portal"
+  - "source-cmhc-starts-completions-under-construction"
+  - "source-cmhc-june-2026-housing-starts-construction"
+  - "source-ontario-housing-supply-progress"
+  - "source-statcan-building-permits-survey"
+  - "source-city-toronto-application-information-centre"
+  - "source-toronto-24-254930-june-2026-decision-report"
+  - "source-toronto-2026-sc33-9-item-history"
+  - "source-toronto-development-pipeline-2025"
+  - "source-statcan-web-data-service"
+  - "source-toronto-open-data"
+  - "source-ontario-data-catalogue"
+  - "source-toronto-development-guide"
+  - "source-toronto-building-permits"
+  - "source-toronto-water-budget-capital-plan"
+  - "source-toronto-water-2026-capital-plan"
+  - "source-ieso-annual-planning-outlook"
+  - "source-ieso-2026-annual-planning-outlook"
+  - "source-toronto-hydro-regulatory-documents"
+  - "source-oeb-toronto-hydro-eb-2023-0195"
+  - "source-toronto-capital-projects-pipeline"
+  - "source-toronto-cleared-building-permits"
+  - "source-toronto-development-applications-open-data"
+  - "source-oeb-applications"
+---
+
+## System Context
+
+Ontario real estate is a local receiving system for global and national signals. Interest rates, migration, construction capacity, municipal approvals, household affordability, infrastructure servicing, and policy all shape whether new information becomes new housing, delayed projects, price pressure, or political conflict.
+
+The current source base supports high-level market, supply, permit, citywide water-capital, provincial electricity-planning, and Toronto distribution-regulatory context. It still does not support confident conclusions about project finance, a named site's utility connection, or completed delivery.
+
+## Transduction Question
+
+What does a signal change for buyers, builders, lenders, municipalities, and infrastructure planners, and through which constraints?
+
+## Key Constraints
+
+### Capital
+
+Financing conditions can change what projects pencil out, how quickly buyers qualify, and whether developers delay or cancel phases. The current source set does not yet include lender, developer, or project-finance evidence, so capital effects should be framed cautiously.
+
+### Regulation
+
+Provincial targets, municipal planning decisions, zoning, development charges, and approval processes shape the path from housing demand to completed units. The Ontario housing supply tracker provides provincial progress context, but municipal approval timelines still need direct local sources.
+
+### Labor
+
+Construction labor availability affects whether approved or planned projects can become completed units on expected timelines. This profile does not yet include labor-market sources, apprenticeship data, or construction workforce capacity.
+
+### Infrastructure
+
+Servicing capacity, transit, roads, schools, water, wastewater, and grid connections can determine whether housing supply can be absorbed locally. Toronto's 2026 Water capital plan and Toronto Hydro's OEB proceeding now supply citywide planning layers, while application 24 254930 has a staff-reviewed servicing analysis. None of those records proves final detailed design, a project utility connection, construction, or operating capacity.
+
+### Public Trust
+
+Housing supply debates are often mediated through affordability pressure, neighborhood change, density politics, investor behavior, and trust in planning institutions. Current sources can frame the housing-supply problem, but they do not yet explain local political legitimacy.
+
+## Source-Backed Evidence
+
+- CMHC housing market data can support Ontario market context and comparisons across Canadian geographies.
+- CMHC starts, completions, and units-under-construction tables can help separate construction starts from completed housing supply.
+- CMHC's June 2026 release supplies a current Toronto CMA stage baseline for approved units awaiting starts, units under construction, completions, and starts, while warning against treating those different measures as one matched cohort.
+- Ontario's housing supply progress tracker can support provincial target and progress context for municipal housing supply.
+- Statistics Canada's Building Permits Survey can support construction-intention context, but not project completion or affordability outcomes.
+- Toronto's Application Information Centre can support application-level planning context for one municipality, but it cannot stand in for all Ontario municipal systems.
+- Toronto application 24 254930 ESC 20 OZ supplies the dossier's first named application number, addresses, application types, decision body, notice date, and proposed unit count.
+- Toronto Water's adopted 2026-2035 capital plan supplies citywide water, wastewater, stormwater, asset-renewal, funding, and delivery-constraint context.
+- IESO's 2026 Annual Planning Outlook and Toronto Hydro's OEB proceeding supply provincial demand and Toronto distribution-planning layers without proving a project connection.
+
+## What The Evidence Does Not Prove
+
+- It does not prove that a specific municipality has enough infrastructure capacity.
+- It does not prove that a specific development is viable.
+- It does not explain lender exposure or household balance-sheet stress.
+- It does not replace local development application, servicing, planning, or utility records.
+- It does not convert provincial targets into completed housing supply.
+
+## Missing Data Matrix
+
+| Need | Why It Matters | Status |
+| --- | --- | --- |
+| Municipal infrastructure capacity | Shows whether growth can be serviced by water, wastewater, roads, schools, and grid capacity. | Citywide water and electricity planning added; project-level connection evidence still required |
+| Permit timelines and development applications | Shows whether regulation is slowing, sequencing, or enabling supply. | First named application selected; decision timeline still required |
+| Submarket inventory and completions | Distinguishes provincial conditions from local market pressure. | Required before publication |
+| Project-level financing exposure | Helps interpret whether rate changes or capital constraints can stall supply. | Useful for deeper analysis |
+| Construction labor capacity | Helps separate approval problems from build-capacity problems. | Useful for deeper analysis |
+| Parcel, zoning, servicing, and project records | Could support a later searchable local housing dataset. | Possible future database field |
+
+## Actors With Authority
+
+- Municipal governments control planning approvals, infrastructure plans, many local fees, and land-use decisions.
+- The provincial government sets policy direction, growth targets, funding priorities, and planning legislation.
+- Lenders and capital providers shape project viability and buyer qualification.
+- Developers decide whether approved projects proceed, pause, phase, or change form.
+- Regulators influence lending standards, consumer protection, building rules, and market oversight.
+
+## Likely Second-Order Effects
+
+- A financing signal may change buyer demand before it changes completions.
+- A provincial policy signal may change municipal behavior before new units appear.
+- Infrastructure constraints may push growth toward some municipalities and away from others.
+- Affordability stress may amplify political conflict over density, land use, and development charges.
+- Permit or servicing delays may shift land values and project timing.
+
+## Signals To Watch Next
+
+- Interest-rate and mortgage-market changes.
+- Provincial housing target updates.
+- Municipal servicing, infrastructure, or development-charge decisions.
+- Building permit changes by region.
+- CMHC market updates on starts, completions, rents, and affordability.
+- Construction labor and cost signals.
+
+## Missing Data
+
+This profile needs local inventory, permit timelines, municipal infrastructure capacity, and financing exposure before it should be treated as publish-ready.
+
+## Phase 12 Evidence Foundation
+
+The first official source layer supports housing market data, provincial housing-supply progress, and building-permit context. These sources can help frame Ontario as a receiving system for financing, supply, and planning signals.
+
+They do not yet support strong claims about specific municipalities, project viability, site servicing, developer balance sheets, or local infrastructure capacity. Those conclusions still require municipal open data, servicing plans, lender context, development application records, and local utility or infrastructure sources.
+
+## Phase 18 Evidence Gap Sources
+
+The CMHC starts, completions, and units-under-construction tables improve the distinction between permit intentions, starts, completions, and active construction pipelines.
+
+The City of Toronto Application Information Centre adds a first municipal planning source for application-level evidence. It is useful as a concrete local planning record, but it is only one municipality and does not prove servicing capacity, financing viability, or province-wide delivery performance.
+
+## Phase 19 Evidence Integration
+
+The permits-to-completions signal now cites CMHC starts, completions, and units-under-construction tables alongside Statistics Canada permit data. That improves the conversion logic: FTFN can distinguish an upstream construction intention from a downstream delivery indicator.
+
+The profile still needs municipal servicing plans, approval timelines, local completion data, project-finance evidence, and infrastructure capacity before it can assess whether a specific Ontario municipality can convert targets or applications into occupied housing.
+
+## Phase 39 Dossier Expansion
+
+The local evidence table now draws directly from the source registry. Added records cover Statistics Canada's reusable Web Data Service, City of Toronto Open Data, and the Ontario Data Catalogue.
+
+This improves the path from broad Ontario housing context toward municipal evidence. It still does not prove project viability, infrastructure capacity, financing exposure, or local delivery, because those claims require selected municipal datasets, application records, servicing plans, and project-level evidence.
+
+## Phase 40 Dossier Evidence Selection
+
+The dossier now adds Toronto process anchors for development review and building permits. These records strengthen the path from provincial housing targets and broad permit statistics toward municipality-level conversion evidence.
+
+They still do not prove approval timelines, servicing capacity, financing viability, occupancy, or completed housing delivery. The next pass needs selected application records, permit-status evidence, servicing plans, infrastructure-capacity documents, completion data, and project-level finance context before stronger local claims are supportable.
+
+## Phase 50B Named Application Selection
+
+The dossier now includes Toronto planning application 24 254930 ESC 20 OZ for 507-513 Victoria Park Avenue and 4, 6 and 14 Thora Avenue. The City Clerk's August 29, 2025 notice describes Official Plan and Zoning By-law amendments for two proposed mixed-use buildings containing 578 residential units.
+
+This is a specific local planning record, not delivery evidence. The next dossier pass should track the application through staff reports and decisions, then connect it to servicing, building permits, financing, construction starts, completions, and occupancy. Because the AIC map was unavailable during the Phase 50B check, the dossier does not infer current application status beyond the dated public notice.
+
+## Phase 51 Staff Recommendation And Servicing Review
+
+The June 22, 2026 decision report advances application 24 254930 from a dated application notice to a formal City Planning staff recommendation. The revised proposal contains 510 rental units rather than the initial notice's 578 proposed units, showing why FTFN should track changes across the approval path rather than treating the first unit count as fixed.
+
+The report also says Development Engineering accepted the applicant-submitted Functional Servicing, Stormwater Management, and Hydrogeological analysis as demonstrating available servicing-infrastructure capacity for the proposal. This is the dossier's first project-level servicing review.
+
+The record does not prove a final City Council decision, enacted amendments, satisfaction of land-exchange or laneway conditions, a building permit, financing, construction, completion, or occupancy. The next pass should capture the item history and enacted by-laws, then trace the project into permit and delivery records.
+
+## Phase 51B Committee And Delivery Records
+
+Toronto agenda item `2026.SC33.9` records Scarborough Community Council's July 9, 2026 recommendation for application `24 254930 ESC 20 OZ`. This is a meaningful downstream event from the staff report, but it remains upstream of City Council adoption, enacted amendments, a building permit, construction, completion, and occupancy.
+
+Toronto's 2025 Development Pipeline adds the citywide conversion context around that named application. The City reports more than 791,000 proposed residential units across distinct planning, permit, construction, and built stages while explicitly cautioning that pipeline potential is not guaranteed delivery. The bulletin's comparison between proposed and approved units and long-run net completions strengthens the dossier's central distinction between approvals and completed homes.
+
+The next dossier step is now precise: capture City Council and by-law follow-through for application `24 254930`, then its first building-permit and start record. Citywide pipeline updates, financing conditions, construction labor, completions, and cancellations should remain the broader conversion baseline.
+
+## Phase 55H Pre-Decision Authority Gate
+
+The official item history now schedules application `24 254930` for City Council consideration on July 29, 30 and 31, 2026. It also makes the amendment-enactment boundary concrete: the City Solicitor is directed to withhold the necessary bills until the revised wind study, land-exchange, and laneway-closure and acquisition conditions are satisfied.
+
+A July 23 check of Toronto's Building Permit portal returned `Application Not Found` markers for all eight addresses named in the item. Those address searches do not prove that no permit exists, and the project remains upstream of a verified Council disposition, enacted amendments, permit, start, completion, or occupancy.
+
+## Phase 55I Infrastructure Planning Stack
+
+Toronto Water's adopted 2026-2035 capital plan adds a current municipal infrastructure and finance layer. Its $18.893 billion gross program covers plants and facilities, underground infrastructure, stormwater, basement-flooding protection, and engineering and network improvements. The same plan identifies delivery constraints and forecasts reserve pressure, but it does not allocate service capacity to application 24 254930 or prove that a named project has completed detailed design, procurement, or construction.
+
+IESO's 2026 Annual Planning Outlook adds the provincial electricity layer. It forecasts 65% long-term demand growth and says data centres could account for 8.6% of Ontario demand by 2050 in the reference scenario. Toronto Hydro's `EB-2023-0195` OEB proceeding adds the regulated distribution-planning and rate layer.
+
+Those records make the infrastructure stack clearer without closing the local gap. A provincial forecast is not a Toronto feeder study, an approved utility plan is not spare site capacity, and a citywide water budget is not a project service agreement. The selected application still needs its Council and by-law outcome, condition compliance, detailed servicing follow-through, utility connections, permits, construction, completion, and occupancy.
+
+## Phase 55N Pre-Decision Stop Rule
+
+The Phase 55N collection preserves the July 23 item history as an official-link record so the scheduled July 29-31 Council gate can be rechecked against the exact municipal source. No new disposition is inferred before that meeting window.
+
+The dossier's stop rule remains explicit: a staff recommendation and Community Council recommendation are not City Council adoption; adoption is not enacted amendments; enacted amendments are not a building permit; and a permit is not construction, completion, or occupancy. The next dated review should capture the posted Council disposition and any by-laws or conditions, then trace the application into permit and delivery records.
+
+## Phase 55Q Construction-Stage Baseline
+
+CMHC's July 16 release adds a current Toronto CMA stage record. From May to June 2026, approved units awaiting a housing start increased from 16,195 to 16,992, units under construction increased from 91,382 to 92,217, and monthly completions changed from 2,224 to 1,329. June starts increased from 1,701 in 2025 to 2,132 in 2026, while January-to-June starts increased from 12,575 to 13,225.
+
+These measures improve the dossier because they separate upstream approvals awaiting work, active construction, completed units, and new starts. They do not form a matched project cohort: stock and flow measures use different timing bases, and none is linked to application 24 254930.
+
+The municipal conversion gap therefore receives a current aggregate source, while the permit-to-start question narrows to matched project or cohort evidence. The selected application remains date-gated until the July 29-31 Council record changes. No Council disposition, enacted by-law, building permit, start, completion, or occupancy is inferred from the metropolitan statistics.
+
+## Phase 55S Batch-Two Procurement And Regulatory Rails
+
+Toronto's May 29 capital-project pipeline adds a preliminary procurement-planning layer across engineering and construction, Toronto Water, transportation, and solid waste. It can supply named infrastructure records before solicitation, but the City explicitly warns that inclusion does not guarantee procurement and that details can change.
+
+The dossier also adds Toronto's cleared-building-permit and development-application datasets as stage indexes. These sources can help match application, permit, location, and status records, but they do not replace the authoritative application, Council, by-law, permit, construction, completion, or occupancy trail for a selected project.
+
+OEB case `EB-2026-0129` adds a current Toronto Hydro non-wires-solutions proceeding. The docket had progressed through procedural orders and July interrogatories at the batch-two review. It had not reached a substantive decision, approved project, deployment, capacity result, or customer outcome, so the related signal remains `In Review`.
+
+Together, the new rails narrow the next task: select capital-pipeline projects relevant to servicing, follow them into procurement and delivery, and connect any OEB decision to implemented non-wires projects and measured results. They do not replace the dated Council recheck for application `24 254930`.

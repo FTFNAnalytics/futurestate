@@ -1,0 +1,18 @@
+{
+  "id": "technology-evtol-aircraft",
+  "name": "eVTOL Aircraft",
+  "slug": "evtol-aircraft",
+  "summary": "Electric vertical takeoff and landing aircraft intended for advanced air mobility services, with deployment constrained by certification, airspace integration, vertiports, weather operations, insurance, and public trust.",
+  "primary_topics": ["Aviation", "Mobility"],
+  "framework_layers": ["Frontier Domains", "Enabling Infrastructure", "Human Systems"],
+  "maturity_level": "Field Trial",
+  "dependencies": [
+    "aircraft certification",
+    "battery performance",
+    "airspace integration",
+    "vertiport infrastructure",
+    "operator approvals"
+  ],
+  "constraints": ["Certification", "Safety", "Weather", "Insurance", "Public Trust"],
+  "source_ids": ["source-faa-aam"]
+}

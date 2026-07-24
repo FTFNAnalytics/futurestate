@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+
+const organizations = (await getCollection("organizations")).sort((a, b) =>
+  a.data.name.localeCompare(b.data.name)
+);
+---
+
+<BaseLayout title="Organizations | FTFN" description="Organization profiles in the FTFN Atlas for ftfn.io.">
+  <section class="page-section">
+    <div class="eyebrow">Atlas / Organizations</div>
+    <h1 class="page-title">Organizations shaping the future stack.</h1>
+    <p class="lede">
+      Organization profiles track agencies, companies, labs, standards bodies,
+      and institutions that produce, fund, regulate, or interpret future-state signals.
+    </p>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      {organizations.map((organization) => (
+        <article class="record-card">
+          <h2><a href={`/atlas/organizations/${organization.data.slug}/`}>{organization.data.name}</a></h2>
+          <p>{organization.data.summary}</p>
+          <div class="meta-row">
+            <MetaPill label={organization.data.organization_type} />
+            {organization.data.primary_topics.map((topic) => <MetaPill label={topic} />)}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

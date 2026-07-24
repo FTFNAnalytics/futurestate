@@ -1,0 +1,65 @@
+{
+  "id": "gap-006",
+  "title": "Local interpretation evidence for ENSO climate signals",
+  "slug": "gap-006-enso-local-interpretation",
+  "status": "Source Added",
+  "priority": "Medium",
+  "local_system": "Cross-system",
+  "primary_topic": "Climate",
+  "framework_layers": ["Planetary Conditions", "Human Systems"],
+  "constraint_tags": ["Climate", "Weather", "Interpretation"],
+  "question": "How should ENSO signals be interpreted for specific sectors and places?",
+  "why_it_matters": "ENSO outlooks are official climate signals, but local implications depend on teleconnections, basin conditions, crop regions, hazard exposure, and sector-specific interpretation.",
+  "current_support": "FTFN now has the Published NOAA CPC ENSO signal, NOAA's 2025 global climate baseline, NCA5 transportation risk synthesis, public NISAR radar data, the next-generation 3DEP design, an observation-to-decision dependency map, and a reader pathway. These records strengthen the observation and interpretation stack without supplying a named local decision or outcome.",
+  "missing_evidence": [
+    "local climate teleconnection evidence",
+    "sector impact models",
+    "water-basin data",
+    "crop-region data",
+    "insurance and hazard exposure data"
+  ],
+  "likely_source_types": [
+    "regional climate center",
+    "water basin dataset",
+    "crop impact model",
+    "insurance or hazard dataset",
+    "sector-specific government report"
+  ],
+  "candidate_records": [
+    "regional ENSO teleconnection source",
+    "crop-region climate impact source",
+    "water basin outlook source",
+    "named local plan, budget, permit, procurement, or operating decision using the evidence"
+  ],
+  "next_action": "Follow the expanded observation shelf into a named regional model, exposed asset, responsible institution, documented decision, implementation record, and measured outcome.",
+  "future_data_model_need": ["Dataset", "Forecast", "Local System"],
+  "related_source_ids": [
+    "source-noaa-cpc-enso",
+    "source-noaa-2025-global-climate-report",
+    "source-usgcrp-nca5-transportation",
+    "source-nasa-nisar-public-data-july-2026",
+    "source-usgs-next-generation-3dep-2025"
+  ],
+  "related_signal_ids": [
+    "signal-sample-001",
+    "signal-noaa-2025-global-climate-observation-baseline",
+    "signal-nca5-transportation-climate-adaptation-stack",
+    "signal-nisar-july-2026-public-radar-data",
+    "signal-usgs-next-generation-3dep-transition"
+  ],
+  "related_local_system_ids": [],
+  "latest_review": {
+    "phase": "Phase 55T",
+    "decision": "Source Added",
+    "review_date": "2026-07-24",
+    "named_records": [
+      "NOAA 2025 Global Climate Report",
+      "NCA5 Chapter 13 Transportation",
+      "NASA NISAR public radar data release",
+      "USGS next-generation 3DEP report"
+    ],
+    "stage_result": "The observation, assessment, and geospatial-data layers are now explicit and navigable. The local interpretation gap remains open because no named place, exposed asset, authority decision, implementation, or measured outcome is supplied.",
+    "stop_rule": "Do not convert global, national, or public-data records into a local climate, infrastructure, agriculture, water, insurance, or resilience conclusion."
+  },
+  "notes": "Phase 55T strengthens the upstream evidence stack and preserves the local decision boundary."
+}

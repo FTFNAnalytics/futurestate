@@ -1,0 +1,247 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+import { getRecordCardClass, getStatusTone, getVerificationTone } from "../../lib/editorial";
+
+const signals = (await getCollection("signals")).sort(
+  (a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf()
+);
+const sources = await getCollection("sources");
+const sourceById = new Map(sources.map((source) => [source.data.id, source]));
+const publishedSignals = signals.filter((signal) => signal.data.record_status === "Published");
+const reviewSignals = signals.filter((signal) => signal.data.record_status !== "Published");
+const topics = [...new Set(signals.map((signal) => signal.data.primary_topic))].sort();
+const signalTypes = [...new Set(signals.map((signal) => signal.data.signal_type))].sort();
+const timeHorizons = [...new Set(signals.map((signal) => signal.data.time_horizon))];
+const recordStatuses = [...new Set(signals.map((signal) => signal.data.record_status))].sort();
+const evidenceQualities = [...new Set(signals.map((signal) => signal.data.evidence_quality))].sort();
+const sourceTypes = [...new Set(sources.map((source) => source.data.source_type))].sort();
+const watchLanes = [...new Set(sources.flatMap((source) => source.data.watch_lanes))].sort();
+
+const getSignalSources = (signal: (typeof signals)[number]) =>
+  signal.data.source_ids.map((id) => sourceById.get(id)).filter(Boolean);
+---
+
+<BaseLayout title="Signals | FTFN">
+  <section class="page-section">
+    <div class="eyebrow">Signals</div>
+    <h1 class="page-title">Structured developments across the future stack.</h1>
+    <p class="lede">
+      Each signal is tagged by source, maturity, evidence quality, dependencies,
+      constraints, and receiving systems.
+    </p>
+    <p class="muted">
+      Launch policy: Published records appear first. In Review and Draft Sample
+      records remain visible for transparency, but they are labeled and are not
+      treated as public approval.
+    </p>
+  </section>
+
+  <section class="page-section">
+    <form class="filter-panel" data-signal-filter>
+      <label class="filter-panel__search">
+        Search
+        <input type="search" data-filter="search" placeholder="Title, summary, topic..." />
+      </label>
+      <label>
+        Topic
+        <select data-filter="topic">
+          <option value="">All topics</option>
+          {topics.map((topic) => <option value={topic}>{topic}</option>)}
+        </select>
+      </label>
+      <label>
+        Signal type
+        <select data-filter="type">
+          <option value="">All types</option>
+          {signalTypes.map((type) => <option value={type}>{type}</option>)}
+        </select>
+      </label>
+      <label>
+        Time horizon
+        <select data-filter="horizon">
+          <option value="">All horizons</option>
+          {timeHorizons.map((horizon) => <option value={horizon}>{horizon}</option>)}
+        </select>
+      </label>
+      <label>
+        Status
+        <select data-filter="status">
+          <option value="">All statuses</option>
+          {recordStatuses.map((status) => <option value={status}>{status}</option>)}
+        </select>
+      </label>
+      <label>
+        Evidence
+        <select data-filter="evidence">
+          <option value="">All evidence</option>
+          {evidenceQualities.map((evidence) => <option value={evidence}>{evidence}</option>)}
+        </select>
+      </label>
+      <label>
+        Source type
+        <select data-filter="sourceType">
+          <option value="">All source types</option>
+          {sourceTypes.map((sourceType) => <option value={sourceType}>{sourceType}</option>)}
+        </select>
+      </label>
+      <label>
+        Watch lane
+        <select data-filter="watchLane">
+          <option value="">All watch lanes</option>
+          {watchLanes.map((watchLane) => <option value={watchLane}>{watchLane}</option>)}
+        </select>
+      </label>
+      <button class="button button--secondary filter-panel__reset" type="button" data-filter-reset>
+        Clear filters
+      </button>
+    </form>
+    <p class="muted" data-result-count>{signals.length} signals shown</p>
+    <p class="muted" data-empty-state hidden>No signals match the selected filters.</p>
+
+    <div class="section-heading section-heading--stacked">
+      <div>
+        <div class="eyebrow">Published</div>
+        <h2>Public intelligence records.</h2>
+      </div>
+      <p>
+        These signals have passed the current publication gate. They are still
+        narrow records, not proof that every dependency or local outcome is solved.
+      </p>
+    </div>
+    <div class="grid">
+      {publishedSignals.map((signal) => {
+        const signalSources = getSignalSources(signal);
+        const signalSourceTypes = [...new Set(signalSources.map((source) => source?.data.source_type).filter(Boolean))];
+        const signalWatchLanes = [...new Set(signalSources.flatMap((source) => source?.data.watch_lanes ?? []))];
+
+        return (
+          <article
+            class={getRecordCardClass(signal.data.record_status)}
+            data-signal-card
+            data-topic={signal.data.primary_topic}
+            data-type={signal.data.signal_type}
+            data-horizon={signal.data.time_horizon}
+            data-status={signal.data.record_status}
+            data-evidence={signal.data.evidence_quality}
+            data-source-type={signalSourceTypes.join("||")}
+            data-watch-lane={signalWatchLanes.join("||")}
+            data-search={`${signal.data.title} ${signal.data.summary} ${signal.data.primary_topic}`.toLowerCase()}
+          >
+            <div class="meta-row">
+              <MetaPill label={signal.data.record_status} tone={getStatusTone(signal.data.record_status)} />
+              <MetaPill label={signal.data.verification_status} tone={getVerificationTone(signal.data.verification_status)} />
+            </div>
+            <h2><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h2>
+            <p>{signal.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={signal.data.primary_topic} />
+              <MetaPill label={signal.data.signal_type} />
+              <MetaPill label={signal.data.maturity_level} />
+              <MetaPill label={signal.data.evidence_quality} />
+              {signalSourceTypes[0] && <MetaPill label={signalSourceTypes[0]} />}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+
+    {reviewSignals.length > 0 && (
+      <>
+        <div class="section-heading section-heading--stacked section-heading--follow">
+          <div>
+            <div class="eyebrow">Review Shelf</div>
+            <h2>Useful, but not yet Published.</h2>
+          </div>
+          <p>
+            These records support the research graph and reader journey, but
+            they still need final evidence, specificity, or publication review.
+          </p>
+        </div>
+        <div class="grid">
+          {reviewSignals.map((signal) => {
+            const signalSources = getSignalSources(signal);
+            const signalSourceTypes = [...new Set(signalSources.map((source) => source?.data.source_type).filter(Boolean))];
+            const signalWatchLanes = [...new Set(signalSources.flatMap((source) => source?.data.watch_lanes ?? []))];
+
+            return (
+              <article
+                class={getRecordCardClass(signal.data.record_status)}
+                data-signal-card
+                data-topic={signal.data.primary_topic}
+                data-type={signal.data.signal_type}
+                data-horizon={signal.data.time_horizon}
+                data-status={signal.data.record_status}
+                data-evidence={signal.data.evidence_quality}
+                data-source-type={signalSourceTypes.join("||")}
+                data-watch-lane={signalWatchLanes.join("||")}
+                data-search={`${signal.data.title} ${signal.data.summary} ${signal.data.primary_topic}`.toLowerCase()}
+              >
+                <div class="meta-row">
+                  <MetaPill label={signal.data.record_status} tone={getStatusTone(signal.data.record_status)} />
+                  <MetaPill label={signal.data.verification_status} tone={getVerificationTone(signal.data.verification_status)} />
+                </div>
+                <h2><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h2>
+                <p>{signal.data.summary}</p>
+                <div class="meta-row">
+                  <MetaPill label={signal.data.primary_topic} />
+                  <MetaPill label={signal.data.signal_type} />
+                  <MetaPill label={signal.data.maturity_level} />
+                  <MetaPill label={signal.data.evidence_quality} />
+                  {signalSourceTypes[0] && <MetaPill label={signalSourceTypes[0]} />}
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </>
+    )}
+  </section>
+
+  <script is:inline>
+    const filterRoot = document.querySelector("[data-signal-filter]");
+
+    if (filterRoot) {
+      const controls = Array.from(filterRoot.querySelectorAll("[data-filter]"));
+      const cards = Array.from(document.querySelectorAll("[data-signal-card]"));
+      const resultCount = document.querySelector("[data-result-count]");
+      const emptyState = document.querySelector("[data-empty-state]");
+      const resetButton = filterRoot.querySelector("[data-filter-reset]");
+
+      function updateSignals() {
+        const activeFilters = Object.fromEntries(
+          controls.map((control) => [control.dataset.filter, control.value.trim()])
+        );
+        let visibleCount = 0;
+
+        for (const card of cards) {
+          const isVisible = Object.entries(activeFilters).every(([key, value]) => {
+            if (!value) return true;
+            if (key === "search") return card.dataset.search?.includes(value.toLowerCase());
+            return card.dataset[key]?.split("||").includes(value);
+          });
+
+          card.hidden = !isVisible;
+          if (isVisible) visibleCount += 1;
+        }
+
+        if (resultCount) {
+          resultCount.textContent = `${visibleCount} signal${visibleCount === 1 ? "" : "s"} shown`;
+        }
+        if (emptyState) emptyState.hidden = visibleCount !== 0;
+      }
+
+      controls.forEach((control) => {
+        control.addEventListener(control.type === "search" ? "input" : "change", updateSignals);
+      });
+      resetButton?.addEventListener("click", () => {
+        controls.forEach((control) => {
+          control.value = "";
+        });
+        updateSignals();
+      });
+      updateSignals();
+    }
+  </script>
+</BaseLayout>

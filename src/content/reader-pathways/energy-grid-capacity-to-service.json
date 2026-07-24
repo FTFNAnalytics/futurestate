@@ -1,0 +1,119 @@
+{
+  "id": "reader-pathway-energy-grid-capacity-to-service",
+  "title": "Energy And Grid Capacity: From System Forecast To Named Service",
+  "slug": "energy-grid-capacity-to-service",
+  "record_status": "Published",
+  "summary": "Follow demand forecasts, tariffs, transmission contracts, customer-specific infrastructure, storage production programs, and delivered fuel while keeping planning, construction, energization, and operation distinct.",
+  "current_state_summary": "The Published record now combines demand forecasts, generator inventory, plant operations, a named TSMC serving utility, SRP large-load and service records, federal transmission and storage programs, an Ontario planning stack, and a delivered nuclear-fuel milestone.",
+  "current_state": [
+    "Data-centre electricity growth is visible as a system constraint, but no global or national forecast proves local spare capacity.",
+    "EIA's 2025 Form 860 early release and 2026 Form 923 update distinguish generator status from observed plant output; neither proves customer-level deliverable capacity.",
+    "SRP's E-67 tariff identifies service conditions, while Project Huckleberry records a separate named infrastructure project that reached service for Meta in Mesa.",
+    "APS identifies TSMC in its service territory and reports rapid utility-wide demand growth without disclosing customer load, infrastructure, energization, or spare capacity.",
+    "DOE's Southline capacity contract creates a trackable transmission project without proving construction or energization.",
+    "Ontario's provincial outlook and Toronto distribution proceeding expose layered planning without resolving any project's connection.",
+    "Project Pele's delivered TRISO fuel and DOE's storage prize reach physical and production-readiness stages without proving grid operation."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Chips and Compute"
+  ],
+  "topic_ids": [
+    "topic-energy"
+  ],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate"
+  ],
+  "signal_ids": [
+    "signal-sample-009",
+    "signal-srp-e67-large-load-service-conditions",
+    "signal-srp-huckleberry-meta-mesa-online-service",
+    "signal-doe-southline-transmission-capacity-contract-award",
+    "signal-ieso-2026-ontario-demand-toronto-distribution-stack",
+    "signal-doe-storage-step-prize-production-readiness",
+    "signal-project-pele-first-triso-fuel-delivery",
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-eia-2025-generator-inventory-2026-operations-baseline"
+  ],
+  "source_ids": [
+    "source-iea-data-centre-electricity-2026",
+    "source-srp-e67-large-load-price-plan-2025",
+    "source-srp-project-huckleberry-meta-mesa-online",
+    "source-doe-transmission-facilitation-selections",
+    "source-ieso-2026-annual-planning-outlook",
+    "source-doe-energy-storage-step-prize-2026",
+    "source-inl-project-pele-triso-delivery-2025",
+    "source-aps-tsmc-service-territory-2026",
+    "source-eia-form-860-generator-data",
+    "source-eia-form-923-power-plant-operations",
+    "source-eia-form-930-hourly-grid-data",
+    "source-oeb-applications"
+  ],
+  "organization_ids": [
+    "org-us-department-energy",
+    "org-us-energy-information-administration"
+  ],
+  "technology_ids": [
+    "technology-grid-scale-energy-storage"
+  ],
+  "briefing_ids": [
+    "briefing-stack-watch-003-research-to-implementation",
+    "briefing-stack-watch-004-implementation-outcomes"
+  ],
+  "dependency_map_ids": [
+    "dependency-map-federal-research-industrial-capacity",
+    "dependency-map-local-constraints-where-the-future-arrives"
+  ],
+  "research_collection_ids": [
+    "research-collection-federal-implementation-evidence-2025-2026",
+    "research-collection-implementation-outcomes-local-conversion-2025-2026",
+    "research-collection-industrial-capacity-local-conversion-2025-2026"
+  ],
+  "evidence_gap_ids": [
+    "gap-001",
+    "gap-004",
+    "gap-008"
+  ],
+  "dependency_stack": [
+    {
+      "stage": "Demand Forecast",
+      "current_state": "IEA and IESO records show that data centres, electrification, housing, and industry are material planning inputs.",
+      "boundary": "Scenario demand is not a feeder study, interconnection decision, customer agreement, or proof of spare capacity."
+    },
+    {
+      "stage": "Tariff And Planning",
+      "current_state": "SRP E-67 and Toronto Hydro's regulated planning rail define conditions and investment layers that large loads may face.",
+      "boundary": "A tariff establishes rules only where adequate facilities exist; a utility plan does not establish a site connection."
+    },
+    {
+      "stage": "Award And Capacity Contract",
+      "current_state": "DOE records an awarded Southline capacity contract with a project, corridor, amount, and capacity mechanism.",
+      "boundary": "The award does not prove rights of way, financing completion, line construction, interconnection, energization, or service."
+    },
+    {
+      "stage": "Named Service",
+      "current_state": "Project Huckleberry records online service for Meta, while APS identifies TSMC in its separate service territory.",
+      "boundary": "The Meta record is not transferable, and the APS record does not disclose a TSMC agreement, load, dedicated infrastructure, energization, price, consumption, reliability, or spare capacity."
+    },
+    {
+      "stage": "Technology Delivery",
+      "current_state": "Project Pele records delivered fuel and the Storage STEP prize targets production readiness.",
+      "boundary": "Delivered fuel is not reactor operation; competition design is not a winner, production line, interconnection, or deployed storage asset."
+    }
+  ],
+  "evidence_limits": [
+    "The pathway does not convert global, national, or provincial electricity forecasts into local service capacity.",
+    "One named Meta service project cannot establish transferability to TSMC, another data centre, housing growth, or a different utility territory.",
+    "Identifying APS as TSMC's serving utility closes a location question, not the customer-capacity, infrastructure, energization, or operation question.",
+    "Transmission and prize awards do not prove construction, manufacturing readiness, energization, commercial terms, or operating performance.",
+    "The Ontario record remains upstream of project-level feeder, transformer, station, connection, construction, and energization evidence."
+  ],
+  "next_records": [
+    "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
+    "TSMC and other customer-specific electric-service agreements, load forecasts, infrastructure scope, construction, facilities charges, energization, consumption, and reliability records for Southwest fabs and data centres.",
+    "Toronto and Ontario feeder, transformer, station, connection-study, customer-agreement, and project-energization records.",
+    "Project Pele assembly, authorization, fuel-loading, startup, criticality, power-operation, and measured demonstration results.",
+    "Storage STEP selection, award, manufacturing-site, materials, safety-validation, production, customer, interconnection, and deployment records."
+  ]
+}

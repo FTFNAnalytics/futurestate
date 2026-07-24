@@ -1,0 +1,211 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import { getStatusTone } from "../../../lib/editorial";
+
+const dependencyMaps = (await getCollection("dependencyMaps")).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title)
+);
+
+type DependencyMapEntry = CollectionEntry<"dependencyMaps">;
+
+function pluralize(count: number, singular: string, plural = `${singular}s`) {
+  return `${count} ${count === 1 ? singular : plural}`;
+}
+
+function toAnchor(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function groupMapsBy(getLabel: (dependencyMap: DependencyMapEntry) => string) {
+  return Array.from(new Set(dependencyMaps.map(getLabel)))
+    .sort((a, b) => a.localeCompare(b))
+    .map((label) => ({
+      label,
+      anchor: toAnchor(label),
+      maps: dependencyMaps.filter((dependencyMap) => getLabel(dependencyMap) === label)
+    }));
+}
+
+const mapTypeGroups = groupMapsBy((dependencyMap) => dependencyMap.data.map_type);
+const topicGroups = groupMapsBy((dependencyMap) => dependencyMap.data.primary_topic);
+const statusGroups = groupMapsBy((dependencyMap) => dependencyMap.data.record_status);
+const uniqueEvidenceGapCount = new Set(dependencyMaps.flatMap((dependencyMap) => dependencyMap.data.evidence_gap_ids)).size;
+---
+
+<BaseLayout title="Dependency Maps | FTFN" description="Qualitative FTFN dependency maps for ftfn.io.">
+  <section class="page-section">
+    <div class="eyebrow">Atlas / Dependency Maps</div>
+    <h1 class="page-title">Qualitative maps for the dependency stack.</h1>
+    <p class="lede">
+      Dependency maps show how signals, technologies, sources, local systems,
+      and evidence gaps relate without turning FTFN's 42/59 framing into a
+      premature score.
+    </p>
+    <div class="meta-row">
+      <MetaPill label={`${dependencyMaps.length} map${dependencyMaps.length === 1 ? "" : "s"}`} />
+      <MetaPill label="No numeric scoring" tone="review" />
+    </div>
+    <div class="metric-strip" aria-label="Current dependency-map counts">
+      <article class="metric">
+        <strong>{dependencyMaps.length}</strong>
+        <span>{dependencyMaps.length === 1 ? "Map" : "Maps"}</span>
+      </article>
+      <article class="metric">
+        <strong>{mapTypeGroups.length}</strong>
+        <span>{mapTypeGroups.length === 1 ? "Map type" : "Map types"}</span>
+      </article>
+      <article class="metric">
+        <strong>{topicGroups.length}</strong>
+        <span>{topicGroups.length === 1 ? "Primary topic" : "Primary topics"}</span>
+      </article>
+      <article class="metric">
+        <strong>{uniqueEvidenceGapCount}</strong>
+        <span>{uniqueEvidenceGapCount === 1 ? "Evidence gap" : "Evidence gaps"}</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Selection Rules</div>
+        <h2>Maps exist when one record is not enough.</h2>
+        <p>
+          FTFN creates dependency maps only when a clear question spans multiple
+          record types, exposes a dependency or constraint, and states what the
+          map does not prove.
+        </p>
+      </div>
+    </div>
+    <div class="status-panel">
+      <article class="status-item">
+        <h2>Use Existing Records</h2>
+        <p>Map relationships must point to explicit signal, source, technology, local system, topic, or evidence-gap IDs.</p>
+      </article>
+      <article class="status-item">
+        <h2>Keep The Boundary Visible</h2>
+        <p>Every map names its interpretation boundary so readers can see where evidence stops.</p>
+      </article>
+      <article class="status-item">
+        <h2>No False Precision</h2>
+        <p>Dependency maps are qualitative in the MVP. They do not assign numeric 42/59 scores.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Map Counts</div>
+        <h2>Scan the current map surface.</h2>
+      </div>
+    </div>
+    <div class="grid">
+      <article class="record-card">
+        <h3>By Type</h3>
+        <div class="meta-row">
+          {mapTypeGroups.map((group) => (
+            <a class="inline-link" href={`#type-${group.anchor}`}>{group.label}: {group.maps.length}</a>
+          ))}
+        </div>
+      </article>
+      <article class="record-card">
+        <h3>By Topic</h3>
+        <div class="meta-row">
+          {topicGroups.map((group) => (
+            <a class="inline-link" href={`#topic-${group.anchor}`}>{group.label}: {group.maps.length}</a>
+          ))}
+        </div>
+      </article>
+      <article class="record-card">
+        <h3>By Status</h3>
+        <div class="meta-row">
+          {statusGroups.map((group) => (
+            <MetaPill label={`${group.label}: ${group.maps.length}`} tone={getStatusTone(group.label)} />
+          ))}
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">All Maps</div>
+        <h2>Current qualitative dependency maps.</h2>
+      </div>
+    </div>
+    <div class="grid">
+      {dependencyMaps.map((dependencyMap) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label={dependencyMap.data.map_type} />
+            <MetaPill label={dependencyMap.data.record_status} tone={getStatusTone(dependencyMap.data.record_status)} />
+            <MetaPill label={dependencyMap.data.primary_topic} />
+          </div>
+          <h2><a href={`/atlas/dependency-maps/${dependencyMap.data.slug}/`}>{dependencyMap.data.title}</a></h2>
+          <p>{dependencyMap.data.summary}</p>
+          <div class="meta-row">
+            <MetaPill label={`${dependencyMap.data.nodes.length} nodes`} />
+            <MetaPill label={`${dependencyMap.data.links.length} links`} />
+            <MetaPill label={`${dependencyMap.data.evidence_gap_ids.length} gaps`} tone="urgency" />
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Browse By Type</div>
+        <h2>Different questions need different map shapes.</h2>
+      </div>
+    </div>
+    <div class="source-list">
+      {mapTypeGroups.map((group) => (
+        <article class="source-row" id={`type-${group.anchor}`}>
+          <div class="meta-row">
+            <MetaPill label={pluralize(group.maps.length, "map")} />
+          </div>
+          <h3>{group.label}</h3>
+          <div class="meta-row">
+            {group.maps.map((dependencyMap) => (
+              <a class="inline-link" href={`/atlas/dependency-maps/${dependencyMap.data.slug}/`}>{dependencyMap.data.title}</a>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Browse By Topic</div>
+        <h2>Where maps sit in the Atlas.</h2>
+      </div>
+    </div>
+    <div class="source-list">
+      {topicGroups.map((group) => (
+        <article class="source-row" id={`topic-${group.anchor}`}>
+          <div class="meta-row">
+            <MetaPill label={pluralize(group.maps.length, "map")} />
+          </div>
+          <h3>{group.label}</h3>
+          <div class="meta-row">
+            {group.maps.map((dependencyMap) => (
+              <a class="inline-link" href={`/atlas/dependency-maps/${dependencyMap.data.slug}/`}>{dependencyMap.data.title}</a>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,27 @@
+{
+  "name": "ftfn-app",
+  "version": "0.2.0-dev",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node ./scripts/run-astro.mjs dev",
+    "build": "node ./scripts/run-astro.mjs check && node ./scripts/run-astro.mjs build",
+    "build:research-archive": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/build-research-archive.ps1",
+    "prepare:sites": "node ./scripts/prepare-sites-package.mjs",
+    "audit:candidate-links": "node ./scripts/audit-source-candidate-links.mjs",
+    "preview": "node ./scripts/run-astro.mjs preview",
+    "check": "node ./scripts/run-astro.mjs check",
+    "validate:candidates": "node ./scripts/validate-source-candidates.mjs",
+    "validate:content": "node ./scripts/validate-content-references.mjs",
+    "source:health": "node ./scripts/source-health-report.mjs",
+    "verify:release": "node ./scripts/verify-release.mjs"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.0.0",
+    "astro": "^5.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.0",
+    "typescript": "^5.7.0"
+  }
+}

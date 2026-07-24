@@ -1,0 +1,187 @@
+---
+import { getCollection } from "astro:content";
+import DependencyMapLinks from "../../../components/atlas/DependencyMapLinks.astro";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import { formatDate, getEvidenceGapTone } from "../../../lib/editorial";
+
+export async function getStaticPaths() {
+  const evidenceGaps = await getCollection("evidenceGaps");
+
+  return evidenceGaps.map((gap) => ({
+    params: { slug: gap.data.slug },
+    props: { gap }
+  }));
+}
+
+const { gap } = Astro.props;
+const [sources, signals, localSystems, briefings] = await Promise.all([
+  getCollection("sources"),
+  getCollection("signals"),
+  getCollection("localSystems"),
+  getCollection("briefings")
+]);
+const relatedDependencyMaps = (await getCollection("dependencyMaps"))
+  .filter((dependencyMap) => dependencyMap.data.evidence_gap_ids.includes(gap.data.id))
+  .map((dependencyMap) => ({
+    map: dependencyMap,
+    relationship: "Evidence gap ID",
+    note: "This dependency map explicitly cites this evidence gap as a limit on interpretation."
+  }));
+
+const relatedSources = sources.filter((source) => gap.data.related_source_ids.includes(source.data.id));
+const relatedSignals = signals.filter((signal) =>
+  gap.data.related_signal_ids.includes(signal.data.id) || signal.data.evidence_gap_ids.includes(gap.data.id)
+);
+const relatedLocalSystems = localSystems.filter((system) =>
+  gap.data.related_local_system_ids.includes(system.data.id) || system.data.evidence_gap_ids.includes(gap.data.id)
+);
+const relatedBriefings = briefings.filter((briefing) => briefing.data.evidence_gap_ids.includes(gap.data.id));
+---
+
+<BaseLayout title={`${gap.data.id} | FTFN`} description={gap.data.question}>
+  <section class="page-section">
+    <div class="eyebrow">Evidence Gap</div>
+    <h1 class="page-title">{gap.data.title}</h1>
+    <p class="lede">{gap.data.question}</p>
+    <div class="meta-row">
+      <MetaPill label={gap.data.id} />
+      <MetaPill label={gap.data.priority} tone={gap.data.priority === "High" ? "urgency" : "default"} />
+      <MetaPill label={gap.data.status} tone={getEvidenceGapTone(gap.data.status)} />
+      <MetaPill label={gap.data.primary_topic} />
+      <MetaPill label={gap.data.local_system} />
+    </div>
+  </section>
+
+  {gap.data.latest_review && (
+    <section class="page-section" data-evidence-decision={gap.data.latest_review.phase}>
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Latest Evidence Decision</div>
+          <h2>{gap.data.latest_review.phase} Review</h2>
+        </div>
+        <div class="meta-row">
+          <MetaPill label={gap.data.latest_review.decision} tone={gap.data.latest_review.decision === "Resolved" ? "published" : "review"} />
+          <MetaPill label={formatDate(gap.data.latest_review.review_date)} />
+          {gap.data.latest_review.next_check_date && (
+            <MetaPill label={`Next check ${formatDate(gap.data.latest_review.next_check_date)}`} tone="urgency" />
+          )}
+        </div>
+      </div>
+      <div class="grid">
+        <article class="record-card">
+          <h3>Named Authoritative Records</h3>
+          <ul>
+            {gap.data.latest_review.named_records.map((record) => <li>{record}</li>)}
+          </ul>
+        </article>
+        <article class="record-card">
+          <h3>Stage Result</h3>
+          <p>{gap.data.latest_review.stage_result}</p>
+        </article>
+        <article class="record-card">
+          <h3>Stop Rule</h3>
+          <p>{gap.data.latest_review.stop_rule}</p>
+        </article>
+      </div>
+    </section>
+  )}
+
+  <section class="page-section">
+    <div class="grid">
+      <article class="record-card">
+        <h2>Why It Matters</h2>
+        <p>{gap.data.why_it_matters}</p>
+      </article>
+      <article class="record-card">
+        <h2>Current Support</h2>
+        <p>{gap.data.current_support}</p>
+      </article>
+      <article class="record-card">
+        <h2>Next Action</h2>
+        <p>{gap.data.next_action}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      <div>
+        <h2>Missing Evidence</h2>
+        <ul>
+          {gap.data.missing_evidence.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>Likely Source Types</h2>
+        <ul>
+          {gap.data.likely_source_types.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>Candidate Records</h2>
+        <ul>
+          {gap.data.candidate_records.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>Future Data Model Need</h2>
+        <ul>
+          {gap.data.future_data_model_need.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <h2>Related Records</h2>
+    <div class="grid">
+      {relatedSignals.map((signal) => (
+        <article class="record-card">
+          <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+          <p>{signal.data.summary}</p>
+          <div class="meta-row">
+            <MetaPill label="Signal" />
+            <MetaPill label={signal.data.record_status} />
+          </div>
+        </article>
+      ))}
+      {relatedLocalSystems.map((system) => (
+        <article class="record-card">
+          <h3><a href={`/atlas/local-systems/${system.data.slug}/`}>{system.data.name}</a></h3>
+          <p>{system.data.summary}</p>
+          <div class="meta-row">
+            <MetaPill label="Local System" />
+            <MetaPill label={system.data.local_evidence_level} />
+          </div>
+        </article>
+      ))}
+      {relatedBriefings.map((briefing) => (
+        <article class="record-card">
+          <h3><a href={`/briefings/${briefing.data.slug}/`}>{briefing.data.title}</a></h3>
+          <p>{briefing.data.summary}</p>
+          <div class="meta-row">
+            <MetaPill label="Briefing" />
+            <MetaPill label={briefing.data.record_status} />
+          </div>
+        </article>
+      ))}
+      {relatedSources.map((source) => (
+        <article class="record-card">
+          <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+          <p>{source.data.known_limitations}</p>
+          <div class="meta-row">
+            <MetaPill label="Source" />
+            <MetaPill label={source.data.credibility_level} />
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <DependencyMapLinks
+    maps={relatedDependencyMaps}
+    title="Dependency maps limited by this gap."
+    description="These maps cite this evidence gap by ID. The backlink marks missing evidence, not resolution."
+  />
+</BaseLayout>

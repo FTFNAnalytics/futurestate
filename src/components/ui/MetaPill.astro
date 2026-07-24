@@ -1,0 +1,54 @@
+---
+interface Props {
+  label: string;
+  tone?: "default" | "possibility" | "urgency" | "review" | "draft" | "published";
+}
+
+const { label, tone = "default" } = Astro.props;
+---
+
+<span class={`meta-pill meta-pill--${tone}`}>{label}</span>
+
+<style>
+  .meta-pill {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.7rem;
+    padding: 0 var(--space-3);
+    border: 1px solid var(--color-line);
+    border-radius: 999px;
+    color: var(--color-muted);
+    background: var(--color-panel-alt);
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .meta-pill--possibility {
+    border-color: color-mix(in srgb, var(--color-possibility) 42%, var(--color-line));
+    color: var(--color-possibility);
+  }
+
+  .meta-pill--urgency {
+    border-color: color-mix(in srgb, var(--color-urgency) 59%, var(--color-line));
+    color: var(--color-urgency);
+  }
+
+  .meta-pill--review {
+    border-color: color-mix(in srgb, var(--color-accent) 48%, var(--color-line));
+    color: var(--color-accent-strong);
+    background: color-mix(in srgb, var(--color-green-soft) 74%, white);
+  }
+
+  .meta-pill--draft {
+    border-style: dashed;
+    color: var(--color-muted);
+    background: var(--color-panel-alt);
+  }
+
+  .meta-pill--published {
+    border-color: color-mix(in srgb, var(--color-possibility) 64%, var(--color-line));
+    color: white;
+    background: var(--color-possibility);
+  }
+</style>

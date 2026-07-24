@@ -1,0 +1,155 @@
+{
+  "id": "dependency-map-autonomy-rules-are-not-service",
+  "title": "Autonomy rules are not service",
+  "slug": "autonomy-rules-are-not-service",
+  "summary": "A technology-readiness map connecting federal AV policy, proposed oversight, crash reporting, recalls, powered-lift rules, pilot selections, certification, local infrastructure, and operating service.",
+  "map_type": "Technology Readiness Map",
+  "record_status": "In Review",
+  "primary_topic": "Aviation",
+  "framework_layers": ["Frontier Domains", "Enabling Infrastructure", "Human Systems"],
+  "constraint_tags": ["Certification", "Safety", "Regulation", "Data Quality", "Infrastructure", "Weather", "Public Trust"],
+  "map_question": "How do mobility and aviation policy records become certified, locally authorized, safety-evidenced autonomous service?",
+  "interpretation_boundary": "This map connects regulations, proposals, reporting, recalls, and pilot selections. It does not prove aircraft or vehicle certification, operator approval, local permission, comparative safety, completed service, or scale.",
+  "source_ids": [
+    "source-dot-automated-vehicle-framework-2025",
+    "source-nhtsa-av-step-proposal-2024",
+    "source-nhtsa-sgo-crash-reporting",
+    "source-nhtsa-waymo-26e026-recall-2026",
+    "source-faa-powered-lift-final-rule-2024",
+    "source-faa-eipp-selections-2026"
+  ],
+  "signal_ids": [
+    "signal-dot-2025-automated-vehicle-framework",
+    "signal-nhtsa-av-step-proposed-oversight",
+    "signal-sample-005",
+    "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+    "signal-faa-powered-lift-final-operating-rule",
+    "signal-faa-2026-evtol-integration-pilot-selections"
+  ],
+  "technology_ids": ["technology-evtol-aircraft"],
+  "local_system_ids": [],
+  "evidence_gap_ids": ["gap-010"],
+  "nodes": [
+    {
+      "id": "node-policy",
+      "label": "Federal policy and program design",
+      "node_type": "Constraint",
+      "note": "The AV Framework and AV STEP proposal define possible federal directions without proving final implementation."
+    },
+    {
+      "id": "node-reporting",
+      "label": "Crash reporting and defect evidence",
+      "node_type": "Signal",
+      "record_id": "signal-sample-005",
+      "note": "NHTSA's amended SGO supplies a reporting rail with explicit data limitations."
+    },
+    {
+      "id": "node-recall",
+      "label": "Weather-related ADS recall",
+      "node_type": "Signal",
+      "record_id": "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+      "note": "A specific recall exposes software, map, weather, operating-scope, and remedy dependencies."
+    },
+    {
+      "id": "node-aviation-rule",
+      "label": "Powered-lift operating rule",
+      "node_type": "Signal",
+      "record_id": "signal-faa-powered-lift-final-operating-rule",
+      "note": "FAA has completed one pilot and operating-rule layer while aircraft and operator approvals remain separate."
+    },
+    {
+      "id": "node-pilot-selection",
+      "label": "eVTOL pilot selections",
+      "node_type": "Signal",
+      "record_id": "signal-faa-2026-evtol-integration-pilot-selections",
+      "note": "Eight selected proposals create a test lane but do not establish sites, flights, safety results, or service."
+    },
+    {
+      "id": "node-certification",
+      "label": "Vehicle, aircraft, and operator approval",
+      "node_type": "Constraint",
+      "note": "Type, production, exemption, operator, route, and operational-design-domain approvals remain system-specific."
+    },
+    {
+      "id": "node-local-system",
+      "label": "Local infrastructure and permission",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-010",
+      "note": "FTFN still needs sites, roads, airspace, vertiports, charging, emergency processes, insurance, weather, noise, and community records."
+    },
+    {
+      "id": "node-service",
+      "label": "Operating service and outcomes",
+      "node_type": "Constraint",
+      "note": "Flights or trips, availability, safety, disruptions, costs, ridership, service area, and enforcement establish operation and scale."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-policy",
+      "to": "node-certification",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "Policy direction becomes operational through named final rules and approval decisions."
+    },
+    {
+      "from": "node-reporting",
+      "to": "node-certification",
+      "relationship": "Related Signal",
+      "confidence": "Partial",
+      "note": "Safety reporting can inform oversight but cannot alone establish a certification or comparative safety finding."
+    },
+    {
+      "from": "node-recall",
+      "to": "node-certification",
+      "relationship": "Related Signal",
+      "confidence": "Supported",
+      "note": "The recall is a regulator-visible defect and remedy record for a specific ADS."
+    },
+    {
+      "from": "node-aviation-rule",
+      "to": "node-certification",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "The operating rule leaves aircraft and operator approvals as distinct gates."
+    },
+    {
+      "from": "node-pilot-selection",
+      "to": "node-certification",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "Selected pilots still require agreements, approved systems, sites, and test plans."
+    },
+    {
+      "from": "node-certification",
+      "to": "node-local-system",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Federal approval does not replace named local infrastructure, authority, and operating conditions."
+    },
+    {
+      "from": "node-local-system",
+      "to": "node-service",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Service requires executed local systems and operating records."
+    }
+  ],
+  "what_this_map_supports": [
+    "Mobility and aviation autonomy can be tracked through policy, rule, reporting, defect, pilot, certification, local-system, and service stages.",
+    "A final operating rule and a pilot selection are useful evidence without being treated as certification or service.",
+    "Specific recall evidence can expose operating-design-domain dependencies without supporting fleet-wide rankings."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not prove comparative safety, certification, local permission, route viability, service availability, public acceptance, or scale.",
+    "It does not treat road ADS and powered-lift aviation as the same regulatory system.",
+    "It does not score readiness."
+  ],
+  "next_records_needed": [
+    "final AV STEP disposition and AV Framework rulemakings.",
+    "type, production, exemption, operator, route, and operating-design-domain approvals.",
+    "eIPP agreements, sites, test plans, flights, safety data, and findings.",
+    "local road, airspace, infrastructure, emergency, insurance, weather, noise, and community records.",
+    "exposure-adjusted safety, service availability, cost, ridership, disruption, and enforcement evidence."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "topic-cybersecurity",
+  "name": "Cybersecurity",
+  "slug": "cybersecurity",
+  "summary": "The current shelf connects exploited-vulnerability deadlines, recurring federal asset visibility, AI and national-security infrastructure risk, and protocol-level post-quantum testing. It supports obligations and technical limits while agency compliance, non-federal adoption, incident reduction, and completed migration require separate records.",
+  "framework_layers": ["Enabling Infrastructure", "Human Systems"],
+  "primary_constraints": ["Cybersecurity", "Standards", "Regulation", "Data Quality", "Public Trust"],
+  "featured_sources": [
+    "source-nist-nvd-api",
+    "source-cisa-kev-catalog",
+    "source-cisa-cybersecurity-advisories",
+    "source-nist-pqc",
+    "source-white-house-eo-14412-pqc-migration",
+    "source-omb-m-26-15-pqc-migration",
+    "source-federal-register-api",
+    "source-regulations-gov-api",
+    "source-2026-cyber-strategy",
+    "source-nspm-11-ai-national-security",
+    "source-2026-annual-threat-assessment",
+    "source-dod-openai-prototype-ota-2025",
+    "source-nist-next-generation-wireless-standards-testbed",
+    "source-gsa-buy-ai-onegov-2026",
+    "source-nist-piv-pqc-working-drafts-2026",
+    "source-nist-oran-testbed-automation-v17-2026",
+    "source-cisa-cybersecurity-performance-goals",
+    "source-cisa-cybersecurity-directives",
+    "source-nist-cybersecurity-framework",
+    "source-nist-csrc-publications",
+    "source-nccoe-pqc-migration",
+    "source-cisa-bod-23-01-asset-visibility"
+  ],
+  "watch_questions": [
+    "Which BOD 23-01 records demonstrate current asset coverage, scan cadence, ownership reconciliation, exceptions, and remediation?",
+    "Where do KEV deadlines, AI infrastructure, mobility, energy, space, finance, and post-quantum work become operational obligations?",
+    "Which institutions can prove inventory, patching, procurement, incident response, validation, and migration progress with audit-ready records?"
+  ]
+}

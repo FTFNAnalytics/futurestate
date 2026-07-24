@@ -1,0 +1,36 @@
+{
+  "id": "research-doc-55s-nccoe-pqc-interoperability-preliminary-draft",
+  "collection_id": "research-collection-thin-topic-authority-foundations-2023-2026",
+  "title": "NIST SP 1800-38C: Quantum Readiness Interoperability and Performance Preliminary Draft",
+  "slug": "55s-nccoe-pqc-interoperability-preliminary-draft",
+  "record_status": "Published",
+  "publisher": "National Cybersecurity Center of Excellence, NIST",
+  "publication_date": "2023-12-19",
+  "document_type": "Standards and Testbed Record",
+  "summary": "The preliminary practice-guide volume documents controlled, non-production interoperability and performance testing for draft post-quantum implementations across selected protocols and collaborator components.",
+  "key_findings": [
+    "The draft frames interoperability testing as a way to identify and resolve compatibility issues before organizations repeat the same work independently.",
+    "The guide records protocol-specific test profiles, collaborator components, algorithm selections, and performance considerations rather than treating post-quantum migration as a single software update.",
+    "For the documented QUIC test, only one implementation was available at initial testing, so the team could not complete interoperability testing for that protocol."
+  ],
+  "why_it_matters": "The draft supplies inspectable laboratory evidence beneath broad post-quantum policy, while showing that implementation diversity and protocol maturity are practical migration constraints.",
+  "ftfn_relevance": [
+    "Strengthens Cybersecurity and Quantum with a specific testbed artifact.",
+    "Separates algorithm standardization from protocol support, interoperability, performance, product integration, procurement, and institutional migration.",
+    "Provides a bounded baseline for tracking later draft and final practice-guide artifacts."
+  ],
+  "evidence_limits": [
+    "The document is a preliminary draft whose public-comment period has closed.",
+    "Controlled laboratory testing does not prove production interoperability, vendor support, procurement, or completed migration.",
+    "Protocol-specific results and implementation availability may be superseded by later standards and software."
+  ],
+  "primary_topics": ["Cybersecurity", "Quantum", "Policy and Standards"],
+  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Cybersecurity", "Standards", "Supply Chain", "Data Quality", "Compute"],
+  "source_id": "source-nccoe-pqc-migration",
+  "official_url": "https://www.nccoe.nist.gov/sites/default/files/2023-12/pqc-migration-nist-sp-1800-38c-preliminary-draft.pdf",
+  "local_capture_path": "/downloads/thin-topic-authority-foundations-2023-2026/official-links/05-nccoe-pqc-interoperability-preliminary-draft.txt",
+  "archive_member": "official-links/05-nccoe-pqc-interoperability-preliminary-draft.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-07-24"
+}

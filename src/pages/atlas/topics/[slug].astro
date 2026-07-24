@@ -1,0 +1,315 @@
+---
+import { getCollection } from "astro:content";
+import DependencyMapLinks from "../../../components/atlas/DependencyMapLinks.astro";
+import ReaderPathway from "../../../components/atlas/ReaderPathway.astro";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+
+export async function getStaticPaths() {
+  const topics = await getCollection("topics");
+
+  return topics.map((topic) => ({
+    params: { slug: topic.data.slug },
+    props: { topic }
+  }));
+}
+
+const { topic } = Astro.props;
+const readerPathways = (await getCollection("readerPathways")).filter((pathway) =>
+  pathway.data.topic_ids.includes(topic.data.id)
+);
+const signals = (await getCollection("signals"))
+  .filter((signal) => signal.data.primary_topic === topic.data.name)
+  .sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf());
+const publishedSignals = signals.filter((signal) => signal.data.record_status === "Published");
+const reviewSignals = signals.filter((signal) => signal.data.record_status !== "Published");
+const sources = await getCollection("sources");
+const sourceById = new Map(sources.map((source) => [source.data.id, source]));
+const featuredSources = sources.filter((source) =>
+  topic.data.featured_sources.includes(source.data.id)
+);
+const organizations = (await getCollection("organizations")).filter((organization) =>
+  organization.data.primary_topics.includes(topic.data.name)
+);
+const technologies = (await getCollection("technologies")).filter((technology) =>
+  technology.data.primary_topics.includes(topic.data.name)
+);
+const localSystems = (await getCollection("localSystems")).filter((system) =>
+  system.data.source_ids.some((sourceId) =>
+    sourceById.get(sourceId)?.data.primary_topics.includes(topic.data.name)
+  )
+);
+const relatedDependencyMaps = (await getCollection("dependencyMaps"))
+  .filter((dependencyMap) => dependencyMap.data.primary_topic === topic.data.name)
+  .map((dependencyMap) => ({
+    map: dependencyMap,
+    relationship: "Primary topic",
+    note: "This dependency map uses this topic as its primary topic."
+  }));
+const researchDocuments = (await getCollection("researchDocuments"))
+  .filter((document) => document.data.primary_topics.includes(topic.data.name))
+  .sort((a, b) => {
+    const dateA = a.data.publication_date?.valueOf() ?? 0;
+    const dateB = b.data.publication_date?.valueOf() ?? 0;
+    return dateB - dateA || a.data.title.localeCompare(b.data.title);
+  });
+const latestPublishedSignals = publishedSignals.slice(0, 3);
+const latestResearchDocuments = researchDocuments.slice(0, 3);
+---
+
+<BaseLayout title={`${topic.data.name} | FTFN`} description={topic.data.summary}>
+  <section class="page-section">
+    <div class="eyebrow">Topic Atlas</div>
+    <h1 class="page-title">{topic.data.name}</h1>
+    <p class="lede">{topic.data.summary}</p>
+    <div class="meta-row">
+      {topic.data.primary_constraints.map((constraint) => <MetaPill label={constraint} tone="urgency" />)}
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Latest Published Evidence</div>
+          <h2>Current signals for this topic.</h2>
+        </div>
+        <p>Only signals that passed the publication gate appear in this latest-evidence shelf.</p>
+      </div>
+      {latestPublishedSignals.length > 0 ? (
+        <div class="source-list">
+          {latestPublishedSignals.map((signal) => (
+            <article class="source-row">
+              <div class="meta-row">
+                <MetaPill label={signal.data.signal_type} />
+                <MetaPill label={signal.data.evidence_quality} />
+              </div>
+              <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+              <p>{signal.data.summary}</p>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <p class="muted">No Published signal currently uses this as its primary topic.</p>
+      )}
+    </div>
+
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Latest Research Evidence</div>
+          <h2>Newest primary documents.</h2>
+        </div>
+        <p>Document records stay separate from interpreted signals so source evidence remains inspectable.</p>
+      </div>
+      {latestResearchDocuments.length > 0 ? (
+        <div class="source-list">
+          {latestResearchDocuments.map((document) => (
+            <article class="source-row">
+              <div class="meta-row">
+                <MetaPill label={document.data.document_type} />
+                <MetaPill label={document.data.capture_status} tone={document.data.capture_status === "Official link record" ? "review" : "possibility"} />
+              </div>
+              <h3><a href={`/research/documents/${document.data.slug}/`}>{document.data.title}</a></h3>
+              <p>{document.data.summary}</p>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <p class="muted">No research document currently uses this topic.</p>
+      )}
+    </div>
+  </section>
+
+  {readerPathways.map((pathway) => <ReaderPathway pathway={pathway} />)}
+
+  <section class="page-section">
+    <h2>Questions To Watch</h2>
+    <ul>
+      {topic.data.watch_questions.map((question) => <li>{question}</li>)}
+    </ul>
+  </section>
+
+  {featuredSources.length > 0 && (
+    <section class="page-section">
+      <h2>Featured Sources</h2>
+      <div class="grid">
+        {featuredSources.map((source) => (
+          <article class="record-card">
+            <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+            <p>{source.data.known_limitations}</p>
+            <div class="meta-row">
+              <MetaPill label={source.data.source_type} />
+              <MetaPill label={source.data.credibility_level} />
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {(organizations.length > 0 || technologies.length > 0) && (
+    <section class="page-section two-column-section">
+      <div>
+        <div class="section-heading section-heading--stacked">
+          <div>
+            <div class="eyebrow">Organizations</div>
+            <h2>Records with direct topic overlap.</h2>
+          </div>
+        </div>
+        {organizations.length > 0 ? (
+          <div class="source-list">
+            {organizations.map((organization) => (
+              <article class="source-row">
+                <h3><a href={`/atlas/organizations/${organization.data.slug}/`}>{organization.data.name}</a></h3>
+                <p>{organization.data.summary}</p>
+                <div class="meta-row">
+                  <MetaPill label={organization.data.organization_type} />
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <p class="muted">No organization records currently use this topic.</p>
+        )}
+      </div>
+
+      <div>
+        <div class="section-heading section-heading--stacked">
+          <div>
+            <div class="eyebrow">Technologies</div>
+            <h2>Capabilities connected by topic.</h2>
+          </div>
+        </div>
+        {technologies.length > 0 ? (
+          <div class="source-list">
+            {technologies.map((technology) => (
+              <article class="source-row">
+                <h3><a href={`/atlas/technologies/${technology.data.slug}/`}>{technology.data.name}</a></h3>
+                <p>{technology.data.summary}</p>
+                <div class="meta-row">
+                  <MetaPill label={technology.data.maturity_level} tone="possibility" />
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <p class="muted">No technology records currently use this topic.</p>
+        )}
+      </div>
+    </section>
+  )}
+
+  {localSystems.length > 0 && (
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Local Systems</div>
+          <h2>Receiving systems linked through source evidence.</h2>
+          <p>
+            These links are derived from local system source IDs whose source records
+            include this topic.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        {localSystems.map((system) => (
+          <article class="record-card">
+            <h3><a href={`/atlas/local-systems/${system.data.slug}/`}>{system.data.name}</a></h3>
+            <p>{system.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={system.data.system_type} />
+              <MetaPill label={system.data.geography} />
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <DependencyMapLinks
+    maps={relatedDependencyMaps}
+    title="Dependency maps for this topic."
+    description="These maps appear only when their controlled primary topic matches this topic page."
+  />
+
+  {researchDocuments.length > 0 && (
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Research Documents</div>
+          <h2>Primary records connected to this topic.</h2>
+          <p>
+            These links come from reviewed collection metadata. Each summary
+            separates stated direction from implementation evidence.
+          </p>
+        </div>
+        <a class="inline-link" href="/research/">All research collections</a>
+      </div>
+      <div class="grid">
+        {researchDocuments.map((document) => (
+          <article class="record-card">
+            <div class="meta-row">
+              <MetaPill label={document.data.document_type} />
+              <MetaPill label={document.data.capture_status} tone={document.data.capture_status === "Official link record" ? "review" : "possibility"} />
+            </div>
+            <h3><a href={`/research/documents/${document.data.slug}/`}>{document.data.title}</a></h3>
+            <p>{document.data.summary}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Published Signal Shelf</div>
+        <h2>Public intelligence records for this topic.</h2>
+      </div>
+      <a class="inline-link" href="/signals/">Filter all signals</a>
+    </div>
+    {publishedSignals.length > 0 ? (
+      <div class="grid">
+        {publishedSignals.map((signal) => (
+          <article class="record-card">
+            <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+            <p>{signal.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={signal.data.record_status} tone="possibility" />
+              <MetaPill label={signal.data.signal_type} />
+              <MetaPill label={signal.data.time_horizon} />
+            </div>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <p class="muted">No Published signal currently uses this as its primary topic.</p>
+    )}
+  </section>
+
+  {reviewSignals.length > 0 && (
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Review Shelf</div>
+          <h2>Useful records that remain outside publication.</h2>
+          <p>These signals remain visible for transparency but are excluded from the Published export and sitemap.</p>
+        </div>
+      </div>
+      <div class="grid">
+        {reviewSignals.map((signal) => (
+          <article class="record-card record-card--in-review">
+            <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+            <p>{signal.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={signal.data.record_status} tone="review" />
+              <MetaPill label={signal.data.signal_type} />
+              <MetaPill label={signal.data.evidence_quality} />
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+</BaseLayout>

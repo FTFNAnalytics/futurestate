@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+
+const localSystems = (await getCollection("localSystems")).sort((a, b) =>
+  a.data.name.localeCompare(b.data.name)
+);
+---
+
+<BaseLayout title="Local Systems | FTFN">
+  <section class="page-section">
+    <div class="eyebrow">Atlas / Local Systems</div>
+    <h1 class="page-title">Where global signals become local outcomes.</h1>
+    <p class="lede">
+      Local system profiles describe receiving systems: places, sectors, markets,
+      and institutions where constraints shape what a signal actually changes.
+    </p>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      {localSystems.map((system) => (
+        <article class="record-card">
+          <h2><a href={`/atlas/local-systems/${system.data.slug}/`}>{system.data.name}</a></h2>
+          <p>{system.data.summary}</p>
+          <div class="meta-row">
+            <MetaPill label={system.data.system_type} />
+            <MetaPill label={system.data.geography} />
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

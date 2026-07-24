@@ -1,0 +1,81 @@
+{
+  "id": "gap-002",
+  "title": "Arizona water evidence for defensible industrial growth",
+  "slug": "gap-002-arizona-industrial-water-capacity",
+  "status": "Source Added",
+  "priority": "High",
+  "local_system": "U.S. Southwest Chip Corridor",
+  "primary_topic": "Water",
+  "framework_layers": ["Planetary Conditions", "Resource Foundations", "Human Systems"],
+  "constraint_tags": ["Water", "Climate", "Infrastructure", "Public Trust"],
+  "question": "Which records show whether industrial growth has defensible water capacity?",
+  "why_it_matters": "Industrial strategy in a water-constrained region depends on water rights, provider capacity, reuse, treatment, discharge, drought exposure, and public legitimacy.",
+  "current_support": "FTFN has ADWR water governance, assured-supply criteria, the effective Phoenix AMA Fifth Management Plan, groundwater-site and national monitoring rails, Phoenix Water Services' April 2026 provider update, a May 2026 Phoenix-TSMC wastewater agreement, a City record showing TSMC Fab 3 at topping out, and a Project Baccara trail spanning planned chilled cooling and brewery-wastewater reuse, official county approval, and permit conditions.",
+  "missing_evidence": [
+    "completed and accepted wastewater conveyance improvements",
+    "total facility water withdrawals and consumption",
+    "operating industrial reclaimed water plants and measured reuse",
+    "discharge permits",
+    "assured water supply records",
+    "drought sensitivity"
+  ],
+  "likely_source_types": [
+    "water provider record",
+    "permit",
+    "reuse plan",
+    "facility disclosure",
+    "ADWR application or report",
+    "local planning record"
+  ],
+  "candidate_records": [
+    "next City of Phoenix Water Resource Plan",
+    "executed TSMC wastewater development agreement and construction records",
+    "facility water balance, discharge, or measured reuse disclosure",
+    "Project Baccara service agreement, provider will-serve letter, water-system approvals, measured water balance, discharge, construction, and operating records"
+  ],
+  "next_action": "Track completion and acceptance of the TSMC conveyance improvements, operation of the first industrial reclaimed water plant by June 30, 2028, and Project Baccara's service, water-system, construction, and operating records; require measured facility water and reuse evidence before making sufficiency claims.",
+  "future_data_model_need": ["Permit", "Facility", "Dataset", "Local Actor"],
+  "related_source_ids": [
+    "source-arizona-department-water-resources",
+    "source-arizona-adwr-assured-water-supply",
+    "source-adwr-ama-management-plans",
+    "source-adwr-groundwater-site-inventory",
+    "source-water-quality-portal",
+    "source-arizona-corporation-commission-utilities",
+    "source-phoenix-water-and-sewer",
+    "source-phoenix-2026-water-security-council-update",
+    "source-phoenix-tsmc-2026-wastewater-development-agreement",
+    "source-phoenix-civil-water-sewer-acceptance",
+    "source-phoenix-north-3500-pud-2026",
+    "source-acc-project-baccara-cec-2026",
+    "source-maricopa-project-baccara-mcp250007-2026",
+    "source-maricopa-baccara-board-action-2026",
+    "source-maricopa-baccara-proposed-air-permit-2026",
+    "source-maricopa-baccara-final-air-permit-2026",
+    "source-kjzz-project-baccara-mcp-vote-2026",
+    "source-phoenix-tsmc-fab3-topping-out-2026"
+  ],
+  "related_signal_ids": [
+    "signal-arizona-water-resources-chip-corridor-constraint-map",
+    "signal-phoenix-2026-water-security-provider-update",
+    "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+    "signal-phoenix-z37-20-1-tsmc-campus-planning-record",
+    "signal-acc-project-baccara-power-water-permit-gates",
+    "signal-phoenix-tsmc-fab3-topping-out",
+    "signal-phoenix-ama-fifth-management-plan-industrial-water"
+  ],
+  "related_local_system_ids": ["local-us-southwest-chip-corridor"],
+  "latest_review": {
+    "phase": "Phase 55Q",
+    "decision": "Dated Hold",
+    "review_date": "2026-07-24",
+    "named_records": [
+      "Phoenix City Council May 2026 TSMC Wastewater Facilities Development Agreement",
+      "City of Phoenix Civil Water And Sewer Acceptance Requirements"
+    ],
+    "stage_result": "The official agreement still establishes authorized, customer-funded conveyance work and conditional wastewater acceptance for up to three fabs. The July 24 review did not surface a named certificate of completion, City acceptance, operating reclaimed-water plant, measured reuse result, or complete facility water balance.",
+    "stop_rule": "Do not create another agreement-stage signal. Reopen when Phoenix or TSMC posts a certificate of completion, acceptance, operating industrial reclaimed-water milestone, measured flow or reuse result, discharge record, or facility water balance.",
+    "next_check_date": "2026-09-22"
+  },
+  "notes": "Phase 55Q records a dated hold because the named downstream stage did not advance. Phase 55S adds the Phoenix AMA Fifth Management Plan as an effective area-wide industrial conservation and compliance layer without treating it as project allocation or service evidence. Authorization, policy, and conditional flow capacity remain separate from constructed and accepted conveyance, operating reclaimed-water infrastructure, total demand, measured reuse, drought resilience, and long-term sufficiency."
+}

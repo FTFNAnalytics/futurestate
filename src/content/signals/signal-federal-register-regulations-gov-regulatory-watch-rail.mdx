@@ -1,0 +1,67 @@
+---
+id: "signal-federal-register-regulations-gov-regulatory-watch-rail"
+title: "Federal Register and Regulations.gov create a regulatory watch rail"
+slug: "federal-register-regulations-gov-regulatory-watch-rail"
+record_status: "In Review"
+summary: "Federal Register and Regulations.gov APIs give FTFN a cross-cutting source rail for detecting rules, notices, dockets, documents, and comment windows across frontier watch lanes."
+source_ids:
+  - "source-federal-register-api"
+  - "source-regulations-gov-api"
+published_date: null
+captured_date: 2026-07-21
+primary_topic: "Policy and Standards"
+framework_layers:
+  - "Enabling Infrastructure"
+  - "Frontier Domains"
+  - "Human Systems"
+signal_type: "Regulation"
+maturity_level: "Infrastructure"
+time_horizon: "Now"
+evidence_quality: "Official Data"
+verification_status: "Reviewed"
+why_it_matters: "Many frontier technologies move through federal rules, notices, requests for comment, and docket records before they show up as local deployment outcomes."
+dependencies:
+  - "federal agency rulemaking"
+  - "public notices"
+  - "docket records"
+  - "comment windows"
+  - "official legal editions"
+constraints:
+  - "Regulation"
+  - "Standards"
+  - "Data Quality"
+  - "Public Trust"
+receiving_systems:
+  - "U.S. regulatory and standards watch lanes"
+local_implications:
+  - "A federal notice can affect local markets differently depending on state rules, utility regulation, permitting capacity, public comment, and implementation timing."
+claim_scope: "System-Level Pattern"
+local_evidence_level: "None"
+last_reviewed_date: 2026-07-21
+editorial_notes: "Phase 48 first signal repair batch. Keep In Review until tied to a specific rule, notice, docket ID, agency action, or comment window. FederalRegister.gov is an informational access layer; legal conclusions require official edition and agency context."
+---
+
+## What Changed
+
+FTFN now treats Federal Register and Regulations.gov access as a cross-cutting regulatory watch rail. Federal Register API results can surface notices, proposed rules, rules, agencies, publication dates, and document metadata. Regulations.gov adds the docket and comment-document layer that often explains how a rulemaking is being contested, supported, limited, or implemented.
+
+## Why It Matters
+
+Frontier-domain signals rarely move only through press releases. Energy, mobility, aviation, cybersecurity, water, agriculture, space, and standards work often pass through official notices, proposed rules, dockets, supporting documents, and public comments before local systems respond.
+
+## Dependency Stack
+
+- Agency rulemaking authority
+- Federal Register publication metadata
+- Regulations.gov docket and document records
+- Official legal editions and agency files
+- Public comment and supporting materials
+- State, local, utility, and sector implementation
+
+## Evidence Limits
+
+This signal identifies a watch rail, not a specific regulatory outcome. FederalRegister.gov should be treated as an access and discovery surface, while legal interpretation still requires the official edition, agency context, and downstream implementation evidence. Regulations.gov comments and attachments require careful handling because public comments are evidence of participation, not verified factual claims.
+
+## What To Watch Next
+
+Select a specific FAA, NHTSA, DOE, FERC, CISA, BIS, NOAA, USDA, or NASA document and pair the Federal Register notice with the related docket record before promoting this into a publication candidate.

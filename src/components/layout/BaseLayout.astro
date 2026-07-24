@@ -1,0 +1,67 @@
+---
+import "../../styles/tokens.css";
+import "../../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  robots?: string;
+}
+
+const {
+  title = "FTFN",
+  description = "FTFN is a future-state intelligence platform tracking possibility, urgency, and the stack of dependencies behind what comes next.",
+  robots = "index, follow"
+} = Astro.props;
+const canonicalUrl = Astro.url.href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:site_name" content="FTFN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="brand" href="/">FTFN</a>
+          <nav class="nav" aria-label="Primary">
+            <a href="/signals/">Signals</a>
+            <a href="/atlas/">Atlas</a>
+            <a href="/research/">Research</a>
+            <a href="/briefings/">Briefings</a>
+            <a href="/method/">Method</a>
+            <a href="/about/">About</a>
+          </nav>
+        </div>
+      </header>
+      <main class="site-main">
+        <slot />
+      </main>
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <p>42 is possibility. 59 is urgency. Civilization is a choice.</p>
+          <p>
+            <a href="/method/">Method and publication policy</a>
+            · <a href="/updates/">Updates and corrections</a>
+          </p>
+          <p><a href="/data/">Public data exports</a></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

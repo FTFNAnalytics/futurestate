@@ -1,0 +1,23 @@
+{
+  "id": "source-toronto-building-permits",
+  "name": "City of Toronto Building Permit Application and Inspection Status",
+  "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/after-you-apply-for-a-building-permit/search-the-status-of-a-building-permit-application/",
+  "source_type": "Government Agency",
+  "credibility_level": "Tier 1",
+  "primary_topics": ["Human Futures", "Finance and Risk", "Policy and Standards"],
+  "framework_layers": ["Human Systems", "Enabling Infrastructure"],
+  "country_or_region": "Toronto, Ontario, Canada",
+  "update_frequency": "Ongoing permit-process updates",
+  "capture_priority": "High",
+  "known_limitations": "The status service covers active permits up to 10 years old and permits closed or canceled for no longer than one month. Address searches are interactive and can return broad map results; absence from one query is not proof that no permit exists. Permit-to-completion analysis still requires a selected permit, inspections, start, completion, occupancy, and project-level context.",
+  "last_checked_date": "2026-07-23",
+  "watch_lanes": ["Local Systems", "Finance and Human Futures"],
+  "live_access_type": "Interactive Portal",
+  "review_cadence_days": 30,
+  "monitoring_status": "Manual Review",
+  "coverage_role": ["Local Conversion Evidence", "Regulatory Change", "Source Freshness"],
+  "jurisdiction": "City of Toronto",
+  "source_owner": "City of Toronto",
+  "automation_notes": "Use the official status application with a known building-permit application number or address. Pair a selected result with planning, inspection, CMHC, and StatCan evidence; do not infer a project status from a broad or empty map query.",
+  "notes": "Phase 55H rechecked the current City status rail, which Toronto says is updated as of the previous business day. Building Permit searches for 507, 511 and 513 Victoria Park Avenue and 4, 6, 7, 11 and 14 Thora Avenue each returned the address marker Application Not Found. These are bounded negative query results only: the portal has coverage limits, and absence from address searches is not proof that no permit exists."
+}

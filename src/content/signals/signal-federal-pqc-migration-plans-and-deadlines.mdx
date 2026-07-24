@@ -1,0 +1,79 @@
+---
+id: "signal-federal-pqc-migration-plans-and-deadlines"
+title: "Federal PQC policy now requires migration plans and dated system transitions"
+slug: "federal-pqc-migration-plans-and-deadlines"
+record_status: "Published"
+summary: "Executive Order 14412 and OMB M-26-15 establish federal post-quantum migration requirements, while NIST's preliminary PIV working drafts expose one concrete credential-system implementation dependency."
+source_ids:
+  - "source-white-house-eo-14412-pqc-migration"
+  - "source-omb-m-26-15-pqc-migration"
+  - "source-nist-pqc"
+  - "source-nist-piv-pqc-working-drafts-2026"
+published_date: 2026-07-24
+captured_date: 2026-07-23
+primary_topic: "Quantum"
+framework_layers:
+  - "Enabling Infrastructure"
+  - "Human Systems"
+signal_type: "Security Signal"
+maturity_level: "Infrastructure"
+time_horizon: "Now"
+evidence_quality: "Primary Source"
+verification_status: "Verified Against Primary Source"
+why_it_matters: "The federal migration clock now has named owners, plan content, high-priority system classes, procurement and validation work, a NIST pilot, and 2030-2031 transition dates rather than only general standards guidance."
+dependencies:
+  - "agency PQC migration leads and governance"
+  - "cryptographic inventories"
+  - "risk-prioritized migration plans"
+  - "NIST-approved standards and validated modules"
+  - "vendor and third-party software readiness"
+  - "procurement rules and shared tools"
+  - "funding, modernization, and workforce capacity"
+constraints:
+  - "Cybersecurity"
+  - "Standards"
+  - "Compute"
+  - "Labor"
+  - "Unit Economics"
+  - "Supply Chain"
+receiving_systems:
+  - "United States federal information systems"
+  - "critical infrastructure security"
+local_implications:
+  - "The directives create federal and contractor migration obligations, but institution-level readiness still depends on disclosed inventories, plans, procurement, vendor support, budgets, and completed implementation."
+evidence_gap_ids:
+  - "gap-009"
+claim_scope: "Specific Source Update"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-07-23
+editorial_notes: "Phase 55N refresh. Phase 55W published the dated federal migration requirement as independently useful while preserving that preliminary PIV working drafts, plan deadlines, and transition dates remain upstream of formal standards, validated products, agency pilots, issued credentials, or completed migration."
+---
+
+## What Changed
+
+Executive Order 14412, dated June 22, 2026, directs federal PQC leadership and migration work. It requires agency migration leads, sets December 31, 2030 for PQC key establishment on high-value assets and high-impact systems, sets December 31, 2031 for digital signatures on those systems, directs a NIST pilot by the end of 2027, and calls for procurement and critical-infrastructure guidance.
+
+OMB M-26-15, dated June 24, 2026, supplies an implementation layer for non-national-security federal systems. It requires agencies to develop PQC migration plans within 120 days, prioritize high-impact and high-value systems, integrate PQC into governance and modernization, address vendor and third-party software, and work toward mitigating as much quantum risk as feasible by December 31, 2030.
+
+NIST's June 2026 PIV working set then exposes one technical implementation lane: proposed data, card-interface, and algorithm changes for adding ML-DSA and ML-KEM through a backward-compatible dual-stack approach. NIST labels the materials preliminary working drafts rather than formal drafts or final requirements.
+
+## Why It Matters
+
+The earlier NIST record showed that standards exist and migration work is necessary. These records identify who must lead, what plans must contain, which systems move first, where procurement enters the stack, when major transitions are expected, and how one federal credential standard may need to change.
+
+## Evidence Limits
+
+Requirements and preliminary drafts are not implementation results. The records do not show that agency inventories are complete, migration plans have been accepted, PIV changes are final, appropriations are available, products are validated, contracts have changed, or systems have moved successfully.
+
+The OMB memorandum excludes national security systems. Critical-infrastructure assistance and future acquisition rules also require downstream guidance and rulemaking.
+
+## What To Watch Next
+
+- Agency PQC migration leads and disclosed plans
+- The NIST pilot and its 2027 completion evidence
+- CISA cryptographic bill-of-materials guidance
+- Proposed Federal Acquisition Regulation changes
+- GSA identity and access modernization work
+- Formal PIV drafts, public comments, final revisions, and dual-stack interoperability tests
+- Vendor product support and Cryptographic Module Validation Program results
+- Measurable system migrations rather than policy announcements

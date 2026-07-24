@@ -1,0 +1,29 @@
+{
+  "id": "topic-discovery-technologies",
+  "name": "Discovery Technologies",
+  "slug": "discovery-technologies",
+  "summary": "The current shelf spans funded scientific data systems, public NISAR radar products, next-generation national elevation design, and ocean mapping and field operations. It distinguishes data availability and survey activity from validated models, institutional adoption, and changed decisions.",
+  "framework_layers": ["Planetary Conditions", "Resource Foundations", "Frontier Domains"],
+  "primary_constraints": ["Data Quality", "Interpretation", "Infrastructure", "Weather", "Compute"],
+  "featured_sources": [
+    "source-usgs-3d-elevation-program",
+    "source-nasa-earthdata-cmr-api",
+    "source-usgs-landsat-data-access",
+    "source-noaa-ocean-exploration-data",
+    "source-noaa-ncei-access",
+    "source-darpa-dso-disruptioneering-2025",
+    "source-crs-defense-primer-emerging-technologies-2026",
+    "source-usgs-science-data-catalog",
+    "source-usgs-earthexplorer",
+    "source-nasa-open-apis",
+    "source-nasa-technical-reports-server",
+    "source-nasa-nisar-public-data-july-2026",
+    "source-usgs-next-generation-3dep-2025",
+    "source-noaa-ocean-exploration-2025-report"
+  ],
+  "watch_questions": [
+    "Which NISAR, 3DEP, ocean-exploration, and integrated-data products have documented calibration, coverage, version, and public access?",
+    "Where does better observation change a named decision about water, climate, minerals, infrastructure, agriculture, hazards, or safety?",
+    "Which ground-truth, model-validation, adoption, and outcome records are still missing before an observation becomes a local claim?"
+  ]
+}

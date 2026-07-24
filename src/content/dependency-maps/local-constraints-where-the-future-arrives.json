@@ -1,0 +1,275 @@
+{
+  "id": "dependency-map-local-constraints-where-the-future-arrives",
+  "title": "Local constraints are where the future arrives",
+  "slug": "local-constraints-where-the-future-arrives",
+  "summary": "A qualitative map built from Published global, utility, facility, workforce, infrastructure, permit, and development-pipeline records, showing how compute, chips, and housing plans become local outcomes only through receiving systems with open evidence gaps.",
+  "map_type": "Local Constraint Map",
+  "record_status": "Published",
+  "primary_topic": "Chips and Compute",
+  "framework_layers": [
+    "Resource Foundations",
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Power",
+    "Water",
+    "Infrastructure",
+    "Regulation",
+    "Labor",
+    "Permitting",
+    "Capital",
+    "Data Quality",
+    "Interpretation"
+  ],
+  "map_question": "Which Published records show frontier demand entering local receiving systems, and which dependencies still lack project-level evidence?",
+  "interpretation_boundary": "This map connects Published FTFN records to explicit evidence gaps. It does not prove local readiness, project viability, sufficient facility capacity, permit completion, housing delivery, or operating outcomes.",
+  "source_ids": [
+    "source-iea-ai",
+    "source-iea-data-centre-electricity-2026",
+    "source-eia-electricity-data",
+    "source-srp-e67-large-load-price-plan-2025",
+    "source-phoenix-tsmc-fab3-topping-out-2026",
+    "source-bls-phoenix-oews-may-2025",
+    "source-toronto-development-pipeline-2025",
+    "source-toronto-water-2026-capital-plan",
+    "source-statcan-building-permits-may-2026",
+    "source-cmhc-starts-completions-under-construction"
+  ],
+  "signal_ids": [
+    "signal-sample-009",
+    "signal-srp-e67-large-load-service-conditions",
+    "signal-phoenix-tsmc-fab3-topping-out",
+    "signal-bls-phoenix-2025-workforce-baseline",
+    "signal-toronto-2025-development-pipeline-delivery-gap",
+    "signal-toronto-water-2026-capital-delivery-constraint",
+    "signal-statcan-building-permits-construction-intentions-signal"
+  ],
+  "technology_ids": [
+    "technology-advanced-semiconductor-packaging"
+  ],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate"
+  ],
+  "evidence_gap_ids": [
+    "gap-001",
+    "gap-002",
+    "gap-003",
+    "gap-004",
+    "gap-005",
+    "gap-008"
+  ],
+  "nodes": [
+    {
+      "id": "node-ai-compute-demand",
+      "label": "AI and data-centre electricity demand",
+      "node_type": "Signal",
+      "record_id": "signal-sample-009",
+      "note": "Global growth creates a grid bottleneck watch, but it is not a local load forecast or a finding of available service."
+    },
+    {
+      "id": "node-chip-corridor",
+      "label": "U.S. Southwest Chip Corridor",
+      "node_type": "Local System",
+      "record_id": "local-us-southwest-chip-corridor",
+      "note": "A receiving system where compute and semiconductor investment meets power, water, labor, permitting, suppliers, and infrastructure."
+    },
+    {
+      "id": "node-large-load-service",
+      "label": "Conditional large-load service",
+      "node_type": "Signal",
+      "record_id": "signal-srp-e67-large-load-service-conditions",
+      "note": "SRP's tariff creates concrete forecasting, billing, agreement, and infrastructure conditions without proving capacity at a named site."
+    },
+    {
+      "id": "node-fab3-construction",
+      "label": "Fab 3 topping-out milestone",
+      "node_type": "Signal",
+      "record_id": "signal-phoenix-tsmc-fab3-topping-out",
+      "note": "The structural milestone is stronger than an investment announcement and remains upstream of occupancy, equipment qualification, and production."
+    },
+    {
+      "id": "node-workforce-baseline",
+      "label": "Phoenix workforce baseline",
+      "node_type": "Signal",
+      "record_id": "signal-bls-phoenix-2025-workforce-baseline",
+      "note": "Official metropolitan employment and wage data establish a local baseline without proving semiconductor workforce sufficiency."
+    },
+    {
+      "id": "node-power-capacity",
+      "label": "Project-level power capacity",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-001",
+      "note": "Named service agreements, substations, transmission, interconnection, precise points of delivery, and reliability evidence remain incomplete."
+    },
+    {
+      "id": "node-water-capacity",
+      "label": "Project-level water and wastewater capacity",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-002",
+      "note": "Provider, facility-demand, reuse, discharge, construction, commissioning, and performance evidence remain incomplete."
+    },
+    {
+      "id": "node-workforce-capacity",
+      "label": "Semiconductor workforce outcomes",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-003",
+      "note": "Occupation, vacancy, completion, placement, retention, supplier, and employer-demand evidence is still needed."
+    },
+    {
+      "id": "node-ontario-real-estate",
+      "label": "Ontario Real Estate",
+      "node_type": "Local System",
+      "record_id": "local-ontario-real-estate",
+      "note": "A receiving system where targets, approvals, infrastructure, capital, permits, starts, completions, and occupancy determine delivery."
+    },
+    {
+      "id": "node-toronto-pipeline",
+      "label": "Toronto development pipeline",
+      "node_type": "Signal",
+      "record_id": "signal-toronto-2025-development-pipeline-delivery-gap",
+      "note": "The citywide pipeline establishes large potential supply and explicitly preserves uncertainty between proposal, approval, permit, construction, and completion."
+    },
+    {
+      "id": "node-toronto-water",
+      "label": "Toronto Water capital delivery",
+      "node_type": "Signal",
+      "record_id": "signal-toronto-water-2026-capital-delivery-constraint",
+      "note": "The adopted capital plan adds infrastructure and reserve context without establishing servicing capacity for a named development."
+    },
+    {
+      "id": "node-building-permits",
+      "label": "Building-permit intentions",
+      "node_type": "Signal",
+      "record_id": "signal-statcan-building-permits-construction-intentions-signal",
+      "note": "Monthly permit values and authorized dwellings indicate intentions, not starts, completions, occupancy, or delivered supply."
+    },
+    {
+      "id": "node-housing-conversion",
+      "label": "Housing target conversion",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-004",
+      "note": "Municipal servicing, approvals, infrastructure capacity, construction, and delivery evidence remain unresolved."
+    },
+    {
+      "id": "node-permit-completion",
+      "label": "Permit-to-completion conversion",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-005",
+      "note": "Project-level starts, completions, cancellations, financing, and local absorption evidence is still needed."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-ai-compute-demand",
+      "to": "node-chip-corridor",
+      "relationship": "Received By",
+      "confidence": "Partial",
+      "note": "Global compute and data-centre demand matters locally only where power, water, land, labor, and permitting systems can absorb it."
+    },
+    {
+      "from": "node-chip-corridor",
+      "to": "node-large-load-service",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "The SRP tariff supplies a named service-condition record for large new loads in part of the corridor."
+    },
+    {
+      "from": "node-chip-corridor",
+      "to": "node-fab3-construction",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "The City record supplies a physical construction milestone for a named Phoenix semiconductor facility."
+    },
+    {
+      "from": "node-chip-corridor",
+      "to": "node-workforce-baseline",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "BLS supplies a comparable Phoenix-area labor baseline beneath company and training-program claims."
+    },
+    {
+      "from": "node-large-load-service",
+      "to": "node-power-capacity",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "A tariff states conditions for service; it does not identify available capacity, a precise point of delivery, or an executed agreement for a named project."
+    },
+    {
+      "from": "node-fab3-construction",
+      "to": "node-water-capacity",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "The structural milestone does not establish completed reclaimed-water or wastewater capacity, commissioning, or performance."
+    },
+    {
+      "from": "node-workforce-baseline",
+      "to": "node-workforce-capacity",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "Metropolitan estimates do not resolve employer-specific demand, training completion, placement, retention, or supplier workforce needs."
+    },
+    {
+      "from": "node-ontario-real-estate",
+      "to": "node-toronto-pipeline",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "The City pipeline supplies a stage-aware local baseline for proposed, approved, permitting, and completed units."
+    },
+    {
+      "from": "node-ontario-real-estate",
+      "to": "node-toronto-water",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "The adopted water capital plan makes infrastructure delivery and reserve pressure visible at city scale."
+    },
+    {
+      "from": "node-ontario-real-estate",
+      "to": "node-building-permits",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "The monthly permits release adds current intentions data while preserving the distinction from delivered supply."
+    },
+    {
+      "from": "node-toronto-pipeline",
+      "to": "node-housing-conversion",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "The pipeline identifies potential and stage counts, but project-level servicing, financing, start, and completion evidence remains incomplete."
+    },
+    {
+      "from": "node-toronto-water",
+      "to": "node-housing-conversion",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "A citywide capital plan does not establish accepted servicing capacity or completed infrastructure for a named development."
+    },
+    {
+      "from": "node-building-permits",
+      "to": "node-permit-completion",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "Permit intentions require project-level starts, completions, cancellations, financing, and occupancy evidence."
+    }
+  ],
+  "what_this_map_supports": [
+    "Published records can show frontier demand entering local utility, construction, workforce, infrastructure, planning, and permit systems.",
+    "Named local records are more informative than broad state or provincial context while still leaving project-level gaps open.",
+    "A physical facility milestone, service tariff, workforce baseline, capital plan, pipeline count, and permit release describe different conversion stages.",
+    "The dependency-stack thesis can be represented without a readiness ranking or numeric score."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not prove local readiness for semiconductor, AI, advanced-packaging, or housing outcomes.",
+    "It does not establish project-level power, water, workforce, servicing, financing, permit conversion, occupancy, or operating sufficiency.",
+    "It does not turn a topping-out event, tariff, capital plan, pipeline, or permit release into completed capacity or delivered outcomes.",
+    "It does not rank local systems or create a 42/59 score."
+  ],
+  "next_records_needed": [
+    "Named utility service agreements, substations, transmission, interconnection, precise-point-of-delivery, and reliability records for gap-001.",
+    "Provider and facility water, wastewater, reuse, discharge, construction, commissioning, and performance records for gap-002.",
+    "Semiconductor occupation, vacancy, training completion, placement, retention, supplier, and employer-demand records for gap-003.",
+    "Municipal servicing, infrastructure, approval-timeline, financing, start, completion, and occupancy records for gap-004.",
+    "Geography- and project-specific permit, start, completion, cancellation, financing, and absorption records for gap-005."
+  ]
+}

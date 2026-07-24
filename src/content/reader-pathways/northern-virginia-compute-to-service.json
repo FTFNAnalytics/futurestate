@@ -1,0 +1,90 @@
+{
+  "id": "reader-pathway-northern-virginia-compute-to-service",
+  "title": "Northern Virginia Compute Demand To Local Service",
+  "slug": "northern-virginia-compute-to-service",
+  "record_status": "In Review",
+  "summary": "Follow a concentrated data-center market through regional forecasts, rate rules, transmission, local standards, environmental permits, water service, construction, energization, and measured local outcomes.",
+  "current_state_summary": "The corridor now has a current forecast, generator-control guidance, two named transmission trails, local standards, and facility-level permits, but no corridor-wide or customer-specific readiness conclusion.",
+  "current_state": [
+    "JLARC supplies a dated concentration and load baseline rather than a current project ledger.",
+    "The GS-5 decision defines a future cost-allocation framework for very large loads without establishing customer service.",
+    "Golden-Mars has a state approval and unresolved local route condition.",
+    "Loudoun Phase 2 remains an active policy process with a post-September 2026 check.",
+    "DEQ and Loudoun Water expose named permit and service rails without proving built or operating outcomes.",
+    "The 2026 PJM forecast makes firm and non-firm large-load uncertainty explicit.",
+    "PUR-2026-00021 is a current transmission application, not an approved or energized asset.",
+    "Three named 2026 air permits create facility-level test and compliance trails under revised APG-576 guidance."
+  ],
+  "primary_topics": ["Chips and Compute", "Energy", "Water", "Policy and Standards", "Finance and Risk"],
+  "topic_ids": ["topic-chips-and-compute", "topic-energy", "topic-water", "topic-policy-and-standards", "topic-finance-and-risk"],
+  "local_system_ids": ["local-northern-virginia-data-center-corridor"],
+  "signal_ids": [
+    "signal-virginia-data-center-load-concentration",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-golden-mars-transmission-conditional-approval",
+    "signal-virginia-data-center-air-permit-trail",
+    "signal-loudoun-phase2-data-center-standards-watch",
+    "signal-pjm-2026-large-load-forecast-uncertainty",
+    "signal-virginia-deq-apg576-data-center-generator-controls",
+    "signal-scc-morrisville-wishing-star-transmission-application",
+    "signal-virginia-project-raspberry-multi-permit-trail"
+  ],
+  "source_ids": [
+    "source-virginia-jlarc-data-centers-2024",
+    "source-pjm-load-analysis-subcommittee",
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-virginia-scc-golden-mars-2026",
+    "source-loudoun-phase2-data-center-standards",
+    "source-virginia-deq-data-center-air-permits",
+    "source-loudoun-water-reclaimed-water",
+    "source-virginia-scc-transmission-projects",
+    "source-virginia-deq-project-raspberry"
+  ],
+  "organization_ids": [],
+  "technology_ids": [],
+  "briefing_ids": [
+    "briefing-local-watch-002-corridor-conversion-gates",
+    "briefing-research-watch-001-cross-corridor-infrastructure-conversion",
+    "briefing-research-watch-002-local-implementation-dossiers"
+  ],
+  "dependency_map_ids": ["dependency-map-local-authorization-is-not-operation"],
+  "research_collection_ids": [
+    "research-collection-implementation-outcomes-local-conversion-2025-2026",
+    "research-collection-cross-corridor-infrastructure-conversion-2024-2026",
+    "research-collection-local-implementation-dossiers-2022-2026"
+  ],
+  "evidence_gap_ids": ["gap-011"],
+  "dependency_stack": [
+    {
+      "stage": "Concentrated demand",
+      "current_state": "Legislative and regional planning records establish a large operating market and the 2026 forecast's uncertainty-bounded load-growth pressure.",
+      "boundary": "A market baseline or forecast is not a customer service commitment."
+    },
+    {
+      "stage": "Rules and authorization",
+      "current_state": "GS-5, Loudoun policy, Golden-Mars, PUR-2026-00021, APG-576, and named DEQ permits create regulatory trails.",
+      "boundary": "A rule, route approval, or permit is not completed infrastructure."
+    },
+    {
+      "stage": "Construction and service",
+      "current_state": "The selected records do not establish final route delivery, customer energization, water connection, or facility operation.",
+      "boundary": "Construction and service require project-specific completion, acceptance, and metering."
+    },
+    {
+      "stage": "Measured outcome",
+      "current_state": "Cost, reliability, emissions, noise, water, workforce, and community outcomes remain incomplete.",
+      "boundary": "Scale requires measured and sustained outcomes, not announced demand."
+    }
+  ],
+  "evidence_limits": [
+    "The pathway does not infer spare capacity from the size of the existing market.",
+    "GS-5 is not a customer agreement and Golden-Mars approval is not energization.",
+    "An air permit or reclaimed-water program does not establish facility operation or actual use."
+  ],
+  "next_records": [
+    "Loudoun Phase 2 staff report, hearings, adopted text, and effective date.",
+    "Golden-Mars and Morrisville-Wishing Star decisions, final routes, construction, and energization.",
+    "IAD-215, VA10, and permit 74262-4 construction, testing, monitoring, compliance, service, and operating records.",
+    "Named customer service agreements, disclosed load, water allocations, metered use, reliability, and local outcomes."
+  ]
+}

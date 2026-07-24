@@ -1,0 +1,198 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import DependencyMapLinks from "../../../components/atlas/DependencyMapLinks.astro";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import { getStatusTone, getVerificationTone } from "../../../lib/editorial";
+
+export async function getStaticPaths() {
+  const technologies = await getCollection("technologies");
+
+  return technologies.map((technology) => ({
+    params: { slug: technology.data.slug },
+    props: { technology }
+  }));
+}
+
+const { technology } = Astro.props;
+const sources = await getCollection("sources");
+const relatedSources = sources.filter((source) => technology.data.source_ids.includes(source.data.id));
+const topics = (await getCollection("topics")).filter((topic) =>
+  technology.data.primary_topics.includes(topic.data.name)
+);
+const signals = await getCollection("signals");
+const relatedDependencyMaps = (await getCollection("dependencyMaps"))
+  .filter((dependencyMap) => dependencyMap.data.technology_ids.includes(technology.data.id))
+  .map((dependencyMap) => ({
+    map: dependencyMap,
+    relationship: "Technology ID",
+    note: "This dependency map explicitly cites this technology record."
+  }));
+
+type SignalEntry = CollectionEntry<"signals">;
+type RelatedSignal = {
+  signal: SignalEntry;
+  relationship: "Shared source" | "Topic match";
+  sharedSources: string[];
+};
+
+const relatedSignals = signals
+  .reduce<RelatedSignal[]>((items, signal) => {
+    const sharedSources = signal.data.source_ids.filter((sourceId) => technology.data.source_ids.includes(sourceId));
+    const hasTopicMatch = technology.data.primary_topics.includes(signal.data.primary_topic);
+
+    if (sharedSources.length === 0 && !hasTopicMatch) {
+      return items;
+    }
+
+    items.push({
+      signal,
+      relationship: sharedSources.length > 0 ? "Shared source" : "Topic match",
+      sharedSources
+    });
+
+    return items;
+  }, [])
+  .sort((a, b) => {
+    if (a.relationship !== b.relationship) {
+      return a.relationship === "Shared source" ? -1 : 1;
+    }
+
+    return a.signal.data.title.localeCompare(b.signal.data.title);
+  });
+---
+
+<BaseLayout title={`${technology.data.name} | FTFN`} description={technology.data.summary}>
+  <section class="page-section">
+    <div class="eyebrow">Technology Profile</div>
+    <h1 class="page-title">{technology.data.name}</h1>
+    <p class="lede">{technology.data.summary}</p>
+    <div class="meta-row">
+      <MetaPill label={technology.data.maturity_level} tone="possibility" />
+      {technology.data.framework_layers.map((layer) => <MetaPill label={layer} />)}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="status-panel">
+      <article class="status-item">
+        <h2>Profile Scope</h2>
+        <p>This page is a source-backed reference profile, not a claim that the technology is ready, scaled, or locally deployable.</p>
+      </article>
+      <article class="status-item">
+        <h2>Maturity Signal</h2>
+        <p>The maturity label describes this FTFN profile's current framing. Specific deployments still need signal records and source review.</p>
+      </article>
+      <article class="status-item">
+        <h2>Relationship Rule</h2>
+        <p>Related signals below appear only through shared source IDs or primary-topic overlap.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      <article class="record-card">
+        <h2>Core Dependencies</h2>
+        <ul>
+          {technology.data.dependencies.map((dependency) => <li>{dependency}</li>)}
+        </ul>
+      </article>
+      <article class="record-card">
+        <h2>Core Constraints</h2>
+        <div class="meta-row">
+          {technology.data.constraints.map((constraint) => <MetaPill label={constraint} tone="urgency" />)}
+        </div>
+      </article>
+      <article class="record-card">
+        <h2>Evidence Posture</h2>
+        <p>
+          Source links support the technology definition and context. FTFN still needs
+          signals, local records, filings, or deployment evidence before drawing
+          stronger conclusions.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  {topics.length > 0 && (
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Topics</div>
+          <h2>Topic pages with direct technology overlap.</h2>
+        </div>
+      </div>
+      <div class="grid">
+        {topics.map((topic) => (
+          <article class="record-card">
+            <h3><a href={`/atlas/topics/${topic.data.slug}/`}>{topic.data.name}</a></h3>
+            <p>{topic.data.summary}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <DependencyMapLinks
+    maps={relatedDependencyMaps}
+    title="Dependency maps using this technology."
+    description="These maps cite this technology by ID. They do not imply deployment readiness, local feasibility, or evidence-gap resolution."
+  />
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Sources</div>
+        <h2>Source records tied to this technology.</h2>
+      </div>
+    </div>
+    {relatedSources.length > 0 ? (
+      <div class="grid">
+        {relatedSources.map((source) => (
+          <article class="record-card">
+            <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+            <p>{source.data.known_limitations}</p>
+            <div class="meta-row">
+              <MetaPill label={source.data.source_type} />
+              <MetaPill label={source.data.credibility_level} />
+            </div>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <p class="muted">No source records are linked to this technology yet.</p>
+    )}
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Signals</div>
+        <h2>Related signals by explicit relationship.</h2>
+      </div>
+    </div>
+    {relatedSignals.length > 0 ? (
+      <div class="grid">
+        {relatedSignals.map(({ signal, relationship, sharedSources }) => (
+          <article class="record-card">
+            <div class="meta-row">
+              <MetaPill label={relationship} tone={relationship === "Shared source" ? "review" : "default"} />
+              <MetaPill label={signal.data.record_status} tone={getStatusTone(signal.data.record_status)} />
+              <MetaPill label={signal.data.verification_status} tone={getVerificationTone(signal.data.verification_status)} />
+            </div>
+            <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+            <p>{signal.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={signal.data.primary_topic} />
+              {sharedSources.length > 0 && <MetaPill label={`${sharedSources.length} shared source${sharedSources.length === 1 ? "" : "s"}`} />}
+            </div>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <p class="muted">No signal records are linked to this technology yet.</p>
+    )}
+  </section>
+</BaseLayout>

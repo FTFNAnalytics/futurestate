@@ -1,0 +1,76 @@
+{
+  "id": "gap-004",
+  "title": "Ontario municipal systems that convert housing targets into completed units",
+  "slug": "gap-004-ontario-municipal-housing-conversion",
+  "status": "Source Added",
+  "priority": "High",
+  "local_system": "Ontario Real Estate",
+  "primary_topic": "Human Futures",
+  "framework_layers": ["Human Systems"],
+  "constraint_tags": ["Infrastructure", "Regulation", "Capital", "Labor"],
+  "question": "Which municipal systems can convert housing targets into completed units?",
+  "why_it_matters": "Provincial targets and housing demand matter only if municipal planning, servicing, approvals, infrastructure, labor, and financing can convert them into occupied homes.",
+  "current_support": "FTFN has Ontario housing supply progress, CMHC and Statistics Canada data, a June 2026 CMHC stage baseline for approved-but-not-started units, active construction, completions, and starts in the Toronto CMA, Toronto application 24 254930 from notice through staff report and Scarborough Community Council recommendation, a dated July 29-31 Council gate with explicit bill-withholding conditions, Toronto's 2025 Development Pipeline, Toronto Water's adopted 2026-2035 capital plan, IESO's 2026 electricity outlook, and Toronto Hydro's OEB distribution proceeding.",
+  "missing_evidence": [
+    "final servicing conditions and detailed design",
+    "City Council disposition and enacted by-laws for application 24 254930",
+    "satisfaction of the wind-study, land-exchange, and laneway conditions",
+    "project-specific infrastructure funding and utility connections",
+    "permit processing",
+    "municipal approvals",
+    "stage conversion and completions by municipality"
+  ],
+  "likely_source_types": [
+    "municipal planning portal",
+    "servicing plan",
+    "infrastructure budget",
+    "development application record",
+    "municipal completion data"
+  ],
+  "candidate_records": [
+    "Toronto application 24 254930 City Council decision and enacted by-laws",
+    "priority Ontario municipality servicing plan",
+    "municipal approval timeline source"
+  ],
+  "next_action": "Use the current CMHC stage baseline as aggregate context only. Recheck application 24 254930 after the July 29-31 Council meeting for the disposition, amended recommendations, bill status and enacted by-laws, then track condition compliance, building permits, financing, start, completion, and occupancy.",
+  "future_data_model_need": ["Permit", "Dataset", "Local Actor", "Policy or Regulation"],
+  "related_source_ids": [
+    "source-city-toronto-application-information-centre",
+    "source-ontario-housing-supply-progress",
+    "source-cmhc-housing-market-information-portal",
+    "source-toronto-24-254930-june-2026-decision-report",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-toronto-development-pipeline-2025",
+    "source-toronto-water-budget-capital-plan",
+    "source-toronto-water-2026-capital-plan",
+    "source-ieso-annual-planning-outlook",
+    "source-ieso-2026-annual-planning-outlook",
+    "source-toronto-hydro-regulatory-documents",
+    "source-oeb-toronto-hydro-eb-2023-0195",
+    "source-cmhc-june-2026-housing-starts-construction"
+  ],
+  "related_signal_ids": [
+    "signal-ontario-housing-supply-progress-local-capacity-signal",
+    "signal-toronto-application-24-254930-named-planning-record",
+    "signal-toronto-24-254930-staff-report-servicing-review",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-toronto-2025-development-pipeline-delivery-gap",
+    "signal-toronto-water-2026-capital-delivery-constraint",
+    "signal-ieso-2026-ontario-demand-toronto-distribution-stack",
+    "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+  ],
+  "related_local_system_ids": ["local-ontario-real-estate"],
+  "latest_review": {
+    "phase": "Phase 55Q",
+    "decision": "Source Added",
+    "review_date": "2026-07-24",
+    "named_records": [
+      "CMHC June 2026 Housing Starts And Construction Data",
+      "Toronto City Council item 2026.SC33.9 for application 24 254930"
+    ],
+    "stage_result": "CMHC now supplies a current Toronto CMA baseline across approved-but-not-started units, active construction, completions, monthly starts, and year-to-date starts. The aggregate stage evidence improves the municipal conversion context but cannot be joined to the selected application, whose Council stage remains scheduled for July 29-31.",
+    "stop_rule": "Do not treat metropolitan stocks and flows as a same-project conversion rate or infer the selected application's outcome. Hold the project trail until the official Council item posts a disposition, bills, by-laws, or changed conditions.",
+    "next_check_date": "2026-08-01"
+  },
+  "notes": "Phase 55Q adds current aggregate conversion-stage evidence while preserving the application-level date gate. Citywide and CMA measures do not prove Council adoption, enacted by-laws, condition compliance, project utility connections, a building permit, financing, construction, completion, or occupancy."
+}

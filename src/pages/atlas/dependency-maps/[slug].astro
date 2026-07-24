@@ -1,0 +1,327 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import { getEvidenceGapTone, getStatusTone } from "../../../lib/editorial";
+
+export async function getStaticPaths() {
+  const dependencyMaps = await getCollection("dependencyMaps");
+
+  return dependencyMaps.map((dependencyMap) => ({
+    params: { slug: dependencyMap.data.slug },
+    props: { dependencyMap }
+  }));
+}
+
+const { dependencyMap } = Astro.props;
+const [sources, signals, technologies, localSystems, evidenceGaps, topics] = await Promise.all([
+  getCollection("sources"),
+  getCollection("signals"),
+  getCollection("technologies"),
+  getCollection("localSystems"),
+  getCollection("evidenceGaps"),
+  getCollection("topics")
+]);
+
+type DependencyMapEntry = CollectionEntry<"dependencyMaps">;
+type DependencyMapNode = DependencyMapEntry["data"]["nodes"][number];
+type DependencyMapLink = DependencyMapEntry["data"]["links"][number];
+type SourceEntry = CollectionEntry<"sources">;
+type SignalEntry = CollectionEntry<"signals">;
+type TechnologyEntry = CollectionEntry<"technologies">;
+type LocalSystemEntry = CollectionEntry<"localSystems">;
+type EvidenceGapEntry = CollectionEntry<"evidenceGaps">;
+
+function isPresent<T>(value: T | undefined): value is T {
+  return value !== undefined;
+}
+
+const sourceById = new Map(sources.map((source) => [source.data.id, source]));
+const signalById = new Map(signals.map((signal) => [signal.data.id, signal]));
+const technologyById = new Map(technologies.map((technology) => [technology.data.id, technology]));
+const localSystemById = new Map(localSystems.map((system) => [system.data.id, system]));
+const evidenceGapById = new Map(evidenceGaps.map((gap) => [gap.data.id, gap]));
+const topicById = new Map(topics.map((topic) => [topic.data.id, topic]));
+const nodeLabelById = new Map(dependencyMap.data.nodes.map((node: DependencyMapNode) => [node.id, node.label]));
+
+const relatedSources = dependencyMap.data.source_ids
+  .map((sourceId: string) => sourceById.get(sourceId))
+  .filter((source: SourceEntry | undefined): source is SourceEntry => isPresent(source));
+const relatedSignals = dependencyMap.data.signal_ids
+  .map((signalId: string) => signalById.get(signalId))
+  .filter((signal: SignalEntry | undefined): signal is SignalEntry => isPresent(signal));
+const relatedTechnologies = dependencyMap.data.technology_ids
+  .map((technologyId: string) => technologyById.get(technologyId))
+  .filter((technology: TechnologyEntry | undefined): technology is TechnologyEntry => isPresent(technology));
+const relatedLocalSystems = dependencyMap.data.local_system_ids
+  .map((systemId: string) => localSystemById.get(systemId))
+  .filter((system: LocalSystemEntry | undefined): system is LocalSystemEntry => isPresent(system));
+const relatedEvidenceGaps = dependencyMap.data.evidence_gap_ids
+  .map((gapId: string) => evidenceGapById.get(gapId))
+  .filter((gap: EvidenceGapEntry | undefined): gap is EvidenceGapEntry => isPresent(gap));
+const explicitRecordNodeCount = dependencyMap.data.nodes.filter((node: DependencyMapNode) => node.record_id).length;
+const conceptNodeCount = dependencyMap.data.nodes.length - explicitRecordNodeCount;
+const representedNodeTypes = Array.from(new Set(dependencyMap.data.nodes.map((node: DependencyMapNode) => node.node_type))).sort();
+const linkedRecordTypes = [
+  { label: "sources", count: dependencyMap.data.source_ids.length },
+  { label: "signals", count: dependencyMap.data.signal_ids.length },
+  { label: "technologies", count: dependencyMap.data.technology_ids.length },
+  { label: "local systems", count: dependencyMap.data.local_system_ids.length },
+  { label: "evidence gaps", count: dependencyMap.data.evidence_gap_ids.length }
+].filter((item) => item.count > 0);
+const confidenceCounts = dependencyMap.data.links.reduce<Record<DependencyMapLink["confidence"], number>>(
+  (counts, link: DependencyMapLink) => {
+    counts[link.confidence] = (counts[link.confidence] ?? 0) + 1;
+    return counts;
+  },
+  {
+    Supported: 0,
+    Partial: 0,
+    "Missing Evidence": 0,
+    Watch: 0
+  }
+);
+const confidenceSummary = Object.entries(confidenceCounts).filter(([, count]) => count > 0);
+const robots = dependencyMap.data.record_status === "Published" ? "index, follow" : "noindex, follow";
+
+function getConfidenceTone(confidence: DependencyMapLink["confidence"]) {
+  if (confidence === "Supported") return "possibility";
+  if (confidence === "Missing Evidence") return "urgency";
+  if (confidence === "Partial") return "review";
+  return "draft";
+}
+
+function getNodeHref(node: DependencyMapNode) {
+  if (!node.record_id) return undefined;
+  if (node.node_type === "Signal") return `/signals/${signalById.get(node.record_id)?.data.slug}/`;
+  if (node.node_type === "Source") return `/atlas/sources/${node.record_id}/`;
+  if (node.node_type === "Technology") return `/atlas/technologies/${technologyById.get(node.record_id)?.data.slug}/`;
+  if (node.node_type === "Local System") return `/atlas/local-systems/${localSystemById.get(node.record_id)?.data.slug}/`;
+  if (node.node_type === "Evidence Gap") return `/atlas/evidence-gaps/${evidenceGapById.get(node.record_id)?.data.slug}/`;
+  if (node.node_type === "Topic") return `/atlas/topics/${topicById.get(node.record_id)?.data.slug}/`;
+  return undefined;
+}
+---
+
+<BaseLayout title={`${dependencyMap.data.title} | FTFN`} description={dependencyMap.data.summary} robots={robots}>
+  <section class="page-section">
+    <div class="eyebrow">Dependency Map</div>
+    <h1 class="page-title">{dependencyMap.data.title}</h1>
+    <p class="lede">{dependencyMap.data.summary}</p>
+    <div class="meta-row">
+      <MetaPill label={dependencyMap.data.map_type} />
+      <MetaPill label={dependencyMap.data.record_status} tone={getStatusTone(dependencyMap.data.record_status)} />
+      <MetaPill label={dependencyMap.data.primary_topic} />
+      {dependencyMap.data.framework_layers.map((layer: string) => <MetaPill label={layer} />)}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="status-panel">
+      <article class="status-item">
+        <h2>Map Question</h2>
+        <p>{dependencyMap.data.map_question}</p>
+      </article>
+      <article class="status-item">
+        <h2>Interpretation Boundary</h2>
+        <p>{dependencyMap.data.interpretation_boundary}</p>
+      </article>
+      <article class="status-item">
+        <h2>Scoring Boundary</h2>
+        <p>FTFN is keeping dependency maps qualitative in this phase. This page does not assign a 42/59 score.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Map Structure</div>
+        <h2>A compact read before the full relationship trail.</h2>
+      </div>
+    </div>
+    <div class="metric-strip" aria-label="Dependency map structure summary">
+      <article class="metric">
+        <strong>{dependencyMap.data.nodes.length}</strong>
+        <span>{dependencyMap.data.nodes.length === 1 ? "node" : "nodes"}</span>
+      </article>
+      <article class="metric">
+        <strong>{dependencyMap.data.links.length}</strong>
+        <span>{dependencyMap.data.links.length === 1 ? "link" : "links"}</span>
+      </article>
+      <article class="metric">
+        <strong>{explicitRecordNodeCount}</strong>
+        <span>record nodes</span>
+      </article>
+      <article class="metric">
+        <strong>{conceptNodeCount}</strong>
+        <span>concept nodes</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      <article class="record-card">
+        <h2>Selection Rule Check</h2>
+        <p>
+          This map has a clear question, links existing records, names an
+          evidence boundary, and avoids numeric 42/59 scoring.
+        </p>
+        <div class="meta-row">
+          <MetaPill label={`${linkedRecordTypes.length} linked record types`} tone="possibility" />
+          <MetaPill label={`${representedNodeTypes.length} node types`} />
+          <MetaPill label="Qualitative only" tone="review" />
+        </div>
+      </article>
+      <article class="record-card">
+        <h2>Linked Record Types</h2>
+        <div class="meta-row">
+          {linkedRecordTypes.map((item) => <MetaPill label={`${item.count} ${item.label}`} />)}
+        </div>
+      </article>
+      <article class="record-card">
+        <h2>Confidence Mix</h2>
+        <div class="meta-row">
+          {confidenceSummary.map(([confidence, count]) => (
+            <MetaPill label={`${count} ${confidence}`} tone={getConfidenceTone(confidence as DependencyMapLink["confidence"])} />
+          ))}
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Nodes</div>
+        <h2>Records and concepts in this map.</h2>
+      </div>
+    </div>
+    <div class="grid">
+      {dependencyMap.data.nodes.map((node: DependencyMapNode) => {
+        const href = getNodeHref(node);
+        return (
+          <article class="record-card">
+            <div class="meta-row">
+              <MetaPill label={node.node_type} />
+              {node.record_id && <MetaPill label={node.record_id} />}
+            </div>
+            <h3>{href ? <a href={href}>{node.label}</a> : node.label}</h3>
+            <p>{node.note}</p>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Relationships</div>
+        <h2>Qualitative links, not inferred causality.</h2>
+      </div>
+    </div>
+    <div class="source-list">
+      {dependencyMap.data.links.map((link: DependencyMapLink) => {
+        const fromLabel = nodeLabelById.get(link.from) ?? link.from;
+        const toLabel = nodeLabelById.get(link.to) ?? link.to;
+        return (
+          <article class="source-row">
+            <div class="meta-row">
+              <MetaPill label={link.relationship} />
+              <MetaPill label={link.confidence} tone={getConfidenceTone(link.confidence)} />
+            </div>
+            <h3>{fromLabel} -> {toLabel}</h3>
+            <p>{link.note}</p>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="grid">
+      <article class="record-card">
+        <h2>What This Supports</h2>
+        <ul>
+          {dependencyMap.data.what_this_map_supports.map((item: string) => <li>{item}</li>)}
+        </ul>
+      </article>
+      <article class="record-card">
+        <h2>What This Does Not Prove</h2>
+        <ul>
+          {dependencyMap.data.what_this_map_does_not_prove.map((item: string) => <li>{item}</li>)}
+        </ul>
+      </article>
+      <article class="record-card">
+        <h2>Next Records Needed</h2>
+        <ul>
+          {dependencyMap.data.next_records_needed.map((item: string) => <li>{item}</li>)}
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Evidence Trail</div>
+        <h2>Related records that support or limit the map.</h2>
+      </div>
+    </div>
+    <div class="grid">
+      {relatedSignals.map((signal) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label="Signal" />
+            <MetaPill label={signal.data.record_status} tone={getStatusTone(signal.data.record_status)} />
+          </div>
+          <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+          <p>{signal.data.summary}</p>
+        </article>
+      ))}
+      {relatedTechnologies.map((technology) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label="Technology" />
+            <MetaPill label={technology.data.maturity_level} tone="possibility" />
+          </div>
+          <h3><a href={`/atlas/technologies/${technology.data.slug}/`}>{technology.data.name}</a></h3>
+          <p>{technology.data.summary}</p>
+        </article>
+      ))}
+      {relatedLocalSystems.map((system) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label="Local System" />
+            <MetaPill label={system.data.local_evidence_level} />
+          </div>
+          <h3><a href={`/atlas/local-systems/${system.data.slug}/`}>{system.data.name}</a></h3>
+          <p>{system.data.summary}</p>
+        </article>
+      ))}
+      {relatedEvidenceGaps.map((gap) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label="Evidence Gap" />
+            <MetaPill label={gap.data.status} tone={getEvidenceGapTone(gap.data.status)} />
+          </div>
+          <h3><a href={`/atlas/evidence-gaps/${gap.data.slug}/`}>{gap.data.title}</a></h3>
+          <p>{gap.data.question}</p>
+        </article>
+      ))}
+      {relatedSources.map((source) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label="Source" />
+            <MetaPill label={source.data.credibility_level} />
+          </div>
+          <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+          <p>{source.data.known_limitations}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

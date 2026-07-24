@@ -1,0 +1,65 @@
+{
+  "id": "gap-010",
+  "title": "Independent evidence for eVTOL certification and service readiness",
+  "slug": "gap-010-evtol-certification-service-readiness",
+  "status": "Source Added",
+  "priority": "Low",
+  "local_system": "Cross-system",
+  "primary_topic": "Aviation",
+  "framework_layers": ["Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Certification", "Insurance", "Weather", "Public Trust"],
+  "question": "What turns eVTOL demonstrations into certified commercial service?",
+  "why_it_matters": "Company flight campaigns are useful signals, but commercial service depends on certification, operating approval, vertiports, insurance, local agreements, weather operations, and public trust.",
+  "current_support": "FTFN now has FAA AAM context, the final powered-lift pilot and operating rule, eight selected eVTOL Integration Pilot Program proposals, an In Review company-reported conforming-aircraft milestone, and an autonomy regulation-to-service pathway and dependency map.",
+  "missing_evidence": [
+    "aircraft type and production certification milestones",
+    "operator and route approvals",
+    "executed eIPP agreements, named sites, test plans, flights, and findings",
+    "vertiport and charging permits",
+    "insurance evidence",
+    "city or airport agreements",
+    "weather operating limits"
+  ],
+  "likely_source_types": [
+    "FAA certification record",
+    "operating approval",
+    "airport or city agreement",
+    "vertiport permit",
+    "insurance or safety source"
+  ],
+  "candidate_records": [
+    "specific FAA type or production certificate",
+    "operator or route approval",
+    "executed eIPP agreement and flight record",
+    "airport operating agreement",
+    "vertiport permitting signal"
+  ],
+  "next_action": "Follow the final operating rule and pilot selections into executed agreements, aircraft and operator approvals, named sites, flights, safety data, local infrastructure, service, and operating outcomes.",
+  "future_data_model_need": ["Project", "Permit", "Policy or Regulation"],
+  "related_source_ids": [
+    "source-faa-aam",
+    "source-joby-press-releases",
+    "source-faa-powered-lift-final-rule-2024",
+    "source-faa-eipp-selections-2026",
+    "source-joby-faa-conforming-aircraft-2026"
+  ],
+  "related_signal_ids": [
+    "signal-sample-004",
+    "signal-sample-010",
+    "signal-faa-powered-lift-final-operating-rule",
+    "signal-faa-2026-evtol-integration-pilot-selections"
+  ],
+  "related_local_system_ids": [],
+  "latest_review": {
+    "phase": "Phase 55T",
+    "decision": "Source Added",
+    "review_date": "2026-07-24",
+    "named_records": [
+      "FAA powered-lift pilot certification and operations final rule",
+      "FAA eVTOL Integration Pilot Program selections"
+    ],
+    "stage_result": "The federal operating-rule and pilot-selection layers are now explicit. The gap remains open for aircraft and operator approvals, executed pilot activity, local infrastructure, service, safety performance, and scale.",
+    "stop_rule": "Do not treat a final operating rule, selected proposal, or company test claim as aircraft certification, operator approval, local service, safety performance, or scale."
+  },
+  "notes": "Phase 55T advances the regulatory and pilot-selection layers while preserving every downstream certification, local-conversion, and operating gate."
+}
