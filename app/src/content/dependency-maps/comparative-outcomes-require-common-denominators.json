@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "An evidence-gap map showing how operating records become comparable only after unit, denominator, period, geography, method, and attribution align.",
+  "summary": "A comparison protocol showing how operating observations become longitudinal series only after unit, denominator, period, geography, method, attribution, revisions, and series breaks align.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -20,7 +20,7 @@
     "Public Trust"
   ],
   "map_question": "When can operating records support a comparison, and when must they remain parallel evidence trails?",
-  "interpretation_boundary": "The map is a comparison protocol, not a score. It does not rank AI, cybersecurity, manufacturing, infrastructure, mobility, aviation, or space systems.",
+  "interpretation_boundary": "The map governs within-domain longitudinal claims. It is not a score, ranking, forecast, or claim that different operating systems share one outcome direction.",
   "source_ids": [
     "source-55z-gao-federal-generative-ai-use-2025",
     "source-55z-gao-federal-ai-acquisitions-2026",
@@ -53,7 +53,55 @@
     "source-nhtsa-sgo-crash-reporting",
     "source-55z-faa-one-thousand-commercial-space-operations-2025",
     "source-55z-faa-fy2024-commercial-space-operations",
-    "source-55z-nasa-space-operations-outcomes-2025"
+    "source-55z-nasa-space-operations-outcomes-2025",
+    "source-56a-omb-fisma-fy2021",
+    "source-56a-omb-fisma-fy2022",
+    "source-56a-omb-fisma-fy2023",
+    "source-56a-gao-solarwinds-exchange-response-2022",
+    "source-56a-gao-federal-systems-high-risk-2023",
+    "source-56a-gao-cyber-high-risk-2024",
+    "source-56a-gao-fisma-effectiveness-fy2020",
+    "source-56a-gao-fisma-implementation-2022",
+    "source-56a-gao-fisma-effectiveness-fy2022",
+    "source-56a-nasa-ai-use-cases-2022",
+    "source-56a-nasa-ai-use-cases-2023",
+    "source-56a-nasa-ai-use-cases-2024",
+    "source-56a-nist-mep-impact-fy2021",
+    "source-56a-nist-mep-impact-fy2022",
+    "source-56a-nist-mep-impact-fy2023",
+    "source-56a-manufacturing-usa-highlights-fy2020",
+    "source-56a-manufacturing-usa-highlights-fy2021",
+    "source-56a-manufacturing-usa-annual-fy2022",
+    "source-56a-niimbl-annual-2021-2022",
+    "source-56a-niimbl-annual-2022-2023",
+    "source-56a-niimbl-annual-2023-2024",
+    "source-56a-census-asm-2021",
+    "source-56a-eia-battery-capacity-2021",
+    "source-56a-eia-battery-capacity-2022",
+    "source-56a-eia-battery-capacity-2023",
+    "source-56a-eia-outage-duration-2021",
+    "source-56a-eia-outage-duration-2022",
+    "source-56a-eia-outage-duration-2023",
+    "source-56a-epa-water-reuse-year-two",
+    "source-56a-epa-water-reuse-year-three",
+    "source-56a-epa-water-reuse-year-four",
+    "source-56a-usgs-mcs-2023",
+    "source-56a-usgs-mcs-2024",
+    "source-56a-usgs-mcs-2025",
+    "source-56a-dot-atcr-2022",
+    "source-56a-dot-atcr-2023",
+    "source-56a-dot-atcr-2024",
+    "source-56a-california-av-testing-2021-2022",
+    "source-56a-california-av-testing-2022-2023",
+    "source-56a-california-av-testing-2023-2024",
+    "source-56a-faa-commercial-space-operations-fy2022",
+    "source-56a-faa-commercial-space-operations-fy2023",
+    "source-56a-faa-commercial-space-operations-fy2024",
+    "source-56a-president-aerospace-fy2021-2022",
+    "source-56a-president-aerospace-fy2023",
+    "source-56a-president-aerospace-fy2024",
+    "source-56a-census-asm-discontinuation",
+    "source-56a-census-aies-transition-2024"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -67,7 +115,23 @@
     "signal-us-mineral-production-and-import-reliance-2025",
     "signal-us-airline-cancellation-rate-2024",
     "signal-california-av-testing-exceeds-nine-million-miles-2025",
-    "signal-faa-reaches-one-thousand-commercial-space-operations"
+    "signal-faa-reaches-one-thousand-commercial-space-operations",
+    "signal-56a-fisma-reporting",
+    "signal-56a-gao-cyber-backlog",
+    "signal-56a-fisma-effectiveness",
+    "signal-56a-nasa-ai-inventory",
+    "signal-56a-mep-national-impact",
+    "signal-56a-manufacturing-usa",
+    "signal-56a-niimbl-annual",
+    "signal-56a-census-asm",
+    "signal-56a-eia-battery-capacity",
+    "signal-56a-eia-outage-duration",
+    "signal-56a-epa-water-reuse",
+    "signal-56a-usgs-mineral-production",
+    "signal-56a-air-travel-consumer",
+    "signal-56a-california-av-miles",
+    "signal-56a-faa-commercial-space",
+    "signal-56a-president-aerospace-report"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -127,6 +191,25 @@
       "node_type": "Evidence Gap",
       "record_id": "gap-016",
       "note": "Comparison begins only after the measurement contracts align."
+    },
+    {
+      "id": "node-timepoints",
+      "label": "Compatible time points",
+      "node_type": "Constraint",
+      "note": "At least two observations must share the measurement contract before direction is described."
+    },
+    {
+      "id": "node-revisions",
+      "label": "Revisions and series breaks",
+      "node_type": "Constraint",
+      "note": "Vintages, method changes, combined years, and discontinued definitions remain first-class evidence."
+    },
+    {
+      "id": "node-longitudinal",
+      "label": "Bounded longitudinal read",
+      "node_type": "Signal",
+      "record_id": "signal-56a-eia-battery-capacity",
+      "note": "Direction is published inside one defined series without becoming a composite score."
     }
   ],
   "links": [
@@ -178,22 +261,49 @@
       "relationship": "Limited By",
       "confidence": "Watch",
       "note": "Attributed results require validation before causal interpretation."
+    },
+    {
+      "from": "node-longitudinal",
+      "to": "node-timepoints",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Compatible observations permit a bounded direction statement."
+    },
+    {
+      "from": "node-revisions",
+      "to": "node-longitudinal",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "A material series break stops or restates the line."
+    },
+    {
+      "from": "node-longitudinal",
+      "to": "node-gap",
+      "relationship": "Limited By",
+      "confidence": "Watch",
+      "note": "Longitudinal evidence remains within-domain and does not close cross-system comparability."
     }
   ],
   "what_this_map_supports": [
     "FTFN can publish bounded outcome records while preserving their original measurement contracts.",
     "Within-domain comparisons may proceed when unit, denominator, period, geography, method, and attribution align.",
-    "Explicit holds identify where activity or reporting structure has not become a comparable outcome."
+    "Explicit holds identify where activity or reporting structure has not become a comparable outcome.",
+    "A direction statement may publish after at least two compatible observations, with a two-point caveat.",
+    "Revisions and method breaks can stop, split, or restate a longitudinal series."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
     "It does not equate activity, capacity, exposure, service, reliability, safety, cost, or local benefit.",
-    "It does not convert company-attributed results into audited causal effects."
+    "It does not convert company-attributed results into audited causal effects.",
+    "It does not turn a two-point movement into a durable trend.",
+    "It does not authorize normalization across incompatible domains."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
     "Compatible within-domain denominators and follow-up periods.",
     "Independent validation and quality controls.",
-    "Asset-, customer-, operator-, commodity-, and geography-level outcome records."
+    "Asset-, customer-, operator-, commodity-, and geography-level outcome records.",
+    "Later observations using unchanged definitions and denominators.",
+    "Vintage, revision, and series-break metadata."
   ]
 }

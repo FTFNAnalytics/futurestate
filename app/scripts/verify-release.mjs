@@ -65,6 +65,7 @@ const phase55WReviewPath = join(appRoot, "src", "data", "phase-55w-publication-r
 const phase55XReviewPath = join(appRoot, "src", "data", "phase-55x-publication-review.json");
 const phase55YReviewPath = join(appRoot, "src", "data", "phase-55y-publication-review.json");
 const phase55ZReviewPath = join(appRoot, "src", "data", "phase-55z-publication-review.json");
+const phase56AReviewPath = join(appRoot, "src", "data", "phase-56a-publication-review.json");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
@@ -92,6 +93,7 @@ const phase55WReview = await readJson(phase55WReviewPath);
 const phase55XReview = await readJson(phase55XReviewPath);
 const phase55YReview = await readJson(phase55YReviewPath);
 const phase55ZReview = await readJson(phase55ZReviewPath);
+const phase56AReview = await readJson(phase56AReviewPath);
 const evidenceGaps = await Promise.all(
   evidenceGapFiles.map((name) => readJson(join(evidenceGapDirectory, name))),
 );
@@ -375,6 +377,68 @@ check(
 check(
   dependencyMapStatusById.get("dependency-map-comparative-outcomes-require-common-denominators") === "Published",
   "Phase 55Z comparison-protocol dependency map should be Published.",
+);
+
+const phase56ASignals = phase56AReview.signal_decisions;
+const phase56ASignalIds = [...phase56ASignals.promoted, ...phase56ASignals.held];
+const phase56ADocuments = phase56AReview.document_decisions;
+const phase56ADocumentIds = [...phase56ADocuments.published, ...phase56ADocuments.held];
+check(phase56AReview.portfolio_count === 4, `Expected four Phase 56A portfolios, found ${phase56AReview.portfolio_count}.`);
+check(phase56AReview.series_count === 16, `Expected sixteen Phase 56A series, found ${phase56AReview.series_count}.`);
+check(phase56AReview.primary_record_count === 48, `Expected 48 Phase 56A primary records, found ${phase56AReview.primary_record_count}.`);
+check(phase56ASignals.reviewed === 20, `Expected 20 Phase 56A signal decisions, found ${phase56ASignals.reviewed}.`);
+check(phase56ASignals.promoted.length === 16, `Expected sixteen Phase 56A Published signals, found ${phase56ASignals.promoted.length}.`);
+check(phase56ASignals.held.length === 4, `Expected four Phase 56A held signals, found ${phase56ASignals.held.length}.`);
+check(new Set(phase56ASignalIds).size === 20, "Phase 56A signal decision IDs must be unique.");
+for (const id of phase56ASignals.promoted) {
+  check(signalStatusById.get(id) === "Published", `Phase 56A Published signal ${id} has the wrong status.`);
+}
+for (const id of phase56ASignals.held) {
+  check(signalStatusById.get(id) === "In Review", `Phase 56A held signal ${id} has the wrong status.`);
+}
+check(phase56ADocuments.reviewed === 48, `Expected 48 Phase 56A document decisions, found ${phase56ADocuments.reviewed}.`);
+check(phase56ADocuments.published.length === 44, `Expected 44 Phase 56A Published documents, found ${phase56ADocuments.published.length}.`);
+check(phase56ADocuments.held.length === 4, `Expected four Phase 56A held documents, found ${phase56ADocuments.held.length}.`);
+check(new Set(phase56ADocumentIds).size === 48, "Phase 56A document decision IDs must be unique.");
+check(
+  Object.keys(phase56AReview.series_records).length === 16 &&
+    Object.values(phase56AReview.series_records).every((recordIds) => recordIds.length === 3),
+  "Phase 56A must contain sixteen three-observation series.",
+);
+const phase56ACollection = researchCollections.find(
+  (collection) => collection.id === "research-collection-longitudinal-operating-series-2020-2025",
+);
+check(Boolean(phase56ACollection), "Phase 56A longitudinal operating-series research collection is missing.");
+if (phase56ACollection) {
+  check(phase56ACollection.document_ids.length === 48, `Expected 48 Phase 56A documents, found ${phase56ACollection.document_ids.length}.`);
+  const resolvedPhase56ADocuments = phase56ACollection.document_ids
+    .map((documentId) => researchDocumentById.get(documentId))
+    .filter(Boolean);
+  check(resolvedPhase56ADocuments.length === 48, `Expected all 48 Phase 56A documents to resolve, found ${resolvedPhase56ADocuments.length}.`);
+  check(
+    resolvedPhase56ADocuments.filter((document) => document.record_status === "Published").length === 44,
+    "Phase 56A must contain 44 Published research documents.",
+  );
+  check(
+    resolvedPhase56ADocuments.filter((document) => document.record_status === "In Review").length === 4,
+    "Phase 56A must contain four held research documents.",
+  );
+  check(
+    resolvedPhase56ADocuments.every((document) => document.capture_status === "Official link record"),
+    "Phase 56A research documents must use the declared official-link capture contract.",
+  );
+}
+check(
+  briefingStatusById.get("briefing-research-watch-005-longitudinal-operating-series") === "Published",
+  "Phase 56A longitudinal operating-series briefing should be Published.",
+);
+check(
+  phase56AReview.longitudinal_rule.includes("At least two compatible time points"),
+  "Phase 56A publication review is missing the two-compatible-time-point rule.",
+);
+check(
+  phase56AReview.comparison_rule.includes("No cross-domain comparison or ranking"),
+  "Phase 56A publication review is missing the cross-domain comparison stop rule.",
 );
 
 for (const collection of researchCollections) {

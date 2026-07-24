@@ -3,8 +3,8 @@
   "title": "AI Infrastructure: From Federal Priority To Assured Operation",
   "slug": "ai-infrastructure-policy-to-assurance",
   "record_status": "Published",
-  "summary": "Follow federal AI policy, inventories, acquisitions, evaluation, agency operation, cybersecurity controls, measured benefits, incidents, and corrective actions.",
-  "current_state_summary": "The pathway now connects NIST assurance methods to audited federal inventory growth, IRS maturity and data-quality findings, GAO operational examples, and federal cyber-monitoring results while preserving the gap to system-level benefits and incidents.",
+  "summary": "Follow federal AI and cybersecurity policy into recurring inventories, control measurement, inspector-general effectiveness, incidents, remediation, and measured mission outcomes.",
+  "current_state_summary": "Four new multi-period federal series distinguish FISMA reporting, GAO recommendation backlogs, inspector-general effectiveness, and NASA AI-use disclosure while keeping each measurement contract separate.",
   "current_state": [
     "Federal R&D, national-security, acquisition, and procurement records define the policy and buying stack.",
     "NIST ARIA 0.1 completed model, red-team, and field testing across seven applications from five organizations.",
@@ -12,7 +12,10 @@
     "The proposed TEVV zero-draft outline remains upstream of consensus text, conformity assessment, and adoption.",
     "No current record closes the loop into institution-level control adoption, system authorization, production monitoring, incident response, or measured mission outcomes.",
     "GAO found selected-agency AI inventories nearly doubled from 2023 to 2024, while the IRS inventory shows why active labels must remain separate from operational maturity.",
-    "Federal cybersecurity audits add endpoint, event-logging, network-monitoring, and data-quality measures, but not a common security-outcome denominator."
+    "Federal cybersecurity audits add endpoint, event-logging, network-monitoring, and data-quality measures, but not a common security-outcome denominator.",
+    "The FY 2021 through FY 2023 FISMA reports show recurring federal measurement with changing automation and scoring methods.",
+    "Two compatible 23-agency inspector-general snapshots show that a majority of reviewed civilian programs remained below the effectiveness threshold in FY 2020 and FY 2022.",
+    "NASA maintained annual public AI-use disclosure, but the inventories still lack stable mission-benefit and incident denominators."
   ],
   "primary_topics": [
     "AI for Science",
@@ -37,7 +40,11 @@
     "signal-nist-ai-metrology-method-selection-layer",
     "signal-federal-ai-inventories-nearly-doubled-2024",
     "signal-irs-ai-inventory-most-cases-not-yet-operational",
-    "signal-federal-cdm-data-quality-requires-manual-correction"
+    "signal-federal-cdm-data-quality-requires-manual-correction",
+    "signal-56a-fisma-reporting",
+    "signal-56a-gao-cyber-backlog",
+    "signal-56a-fisma-effectiveness",
+    "signal-56a-nasa-ai-inventory"
   ],
   "source_ids": [
     "source-fy2027-rd-priorities-m-25-34",
@@ -60,7 +67,19 @@
     "source-55z-nasa-ai-use-cases-2024",
     "source-55z-gao-cdm-network-monitoring-2025",
     "source-55z-gao-fisma-effectiveness-metrics-2024",
-    "source-55z-gao-federal-incident-response-2023"
+    "source-55z-gao-federal-incident-response-2023",
+    "source-56a-omb-fisma-fy2021",
+    "source-56a-omb-fisma-fy2022",
+    "source-56a-omb-fisma-fy2023",
+    "source-56a-gao-solarwinds-exchange-response-2022",
+    "source-56a-gao-federal-systems-high-risk-2023",
+    "source-56a-gao-cyber-high-risk-2024",
+    "source-56a-gao-fisma-effectiveness-fy2020",
+    "source-56a-gao-fisma-implementation-2022",
+    "source-56a-gao-fisma-effectiveness-fy2022",
+    "source-56a-nasa-ai-use-cases-2022",
+    "source-56a-nasa-ai-use-cases-2023",
+    "source-56a-nasa-ai-use-cases-2024"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -71,7 +90,8 @@
   "briefing_ids": [
     "briefing-stack-watch-003-research-to-implementation",
     "briefing-research-watch-003-operational-evidence",
-    "briefing-research-watch-004-comparative-operating-outcomes"
+    "briefing-research-watch-004-comparative-operating-outcomes",
+    "briefing-research-watch-005-longitudinal-operating-series"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -81,7 +101,8 @@
     "research-collection-darpa-usg-2025-2026",
     "research-collection-federal-implementation-evidence-2025-2026",
     "research-collection-operational-evidence-receiving-systems-2024-2026",
-    "research-collection-comparative-operating-outcomes-2023-2026"
+    "research-collection-comparative-operating-outcomes-2023-2026",
+    "research-collection-longitudinal-operating-series-2020-2025"
   ],
   "evidence_gap_ids": [
     "gap-008",
@@ -114,6 +135,11 @@
       "stage": "Institutional operation and outcomes",
       "current_state": "GAO records disclose inventory growth, operational examples, maturity gaps, acquisition lessons, and cyber-program implementation results.",
       "boundary": "Use-case counts, tool deployment, and program maturity do not prove productivity, mission benefit, security effect, safety, or public value."
+    },
+    {
+      "stage": "Longitudinal operating series",
+      "current_state": "Sixteen AI and cybersecurity observations now form four recurring institutional series.",
+      "boundary": "Recommendation inventories, effectiveness ratings, security measures, incidents, AI use cases, and mission outcomes are not interchangeable."
     }
   ],
   "evidence_limits": [
@@ -121,13 +147,17 @@
     "NIST method resources explicitly do not endorse or universally validate listed methods.",
     "Policy, procurement, frameworks, and standards work remain separate from institutional adoption and operating assurance.",
     "Agency inventories use disclosure and maturity fields that do not replace usage, performance, incident, or benefit measures.",
-    "Cybersecurity implementation measures cannot be ranked as equivalent risk or incident outcomes."
+    "Cybersecurity implementation measures cannot be ranked as equivalent risk or incident outcomes.",
+    "Federal cyber metrics and automation rules changed across the reviewed reporting cycles.",
+    "AI inventory continuity does not establish operational maturity, usage, reliability, safety, cost, or mission benefit."
   ],
   "next_records": [
     "Later ARIA rounds, sector-specific evaluations, method-validation studies, and full AI TEVV drafts.",
     "Agency system inventories, adopted controls, authorization decisions, evaluation results, incidents, corrective actions, and production monitoring.",
     "Independent evidence connecting assurance work to reliability, safety, mission value, and maintained operating performance.",
     "Agency- and system-level usage, accuracy, availability, human-override, cost, mission-benefit, impact-assessment, incident, and corrective-action records.",
-    "Compatible KEV remediation, event-logging, detection, response, recovery, and harm measures with agency-size and risk context."
+    "Compatible KEV remediation, event-logging, detection, response, recovery, and harm measures with agency-size and risk context.",
+    "Stable agency-level performance, incident, remediation, recovery, affected-person, and harm measures.",
+    "System-level AI usage, accuracy, availability, override, impact-assessment, incident, cost, and mission-outcome records."
   ]
 }

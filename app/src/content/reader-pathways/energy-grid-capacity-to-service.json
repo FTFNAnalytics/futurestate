@@ -3,8 +3,8 @@
   "title": "Energy And Grid Capacity: From System Forecast To Named Service",
   "slug": "energy-grid-capacity-to-service",
   "record_status": "Published",
-  "summary": "Follow forecasts, capacity, tariffs, interconnection, construction, energization, storage services, delivered reliability, and customer outcomes.",
-  "current_state_summary": "The pathway now joins project and customer-service evidence to national outage duration and NERC's initial operating evidence that Texas batteries provide material frequency-response service.",
+  "summary": "Follow capacity through commissioning, storage duration, dispatch, grid service, customer interruption, restoration, cost, and revision-controlled operating outcomes.",
+  "current_state_summary": "EIA battery-capacity and outage-duration observations create separate multi-period capacity and customer-service rails, with major-event treatment preserved.",
   "current_state": [
     "Data-centre electricity growth is visible as a system constraint, but no global or national forecast proves local spare capacity.",
     "EIA's 2025 Form 860 early release and 2026 Form 923 update distinguish generator status from observed plant output; neither proves customer-level deliverable capacity.",
@@ -14,7 +14,9 @@
     "Ontario's provincial outlook and Toronto distribution proceeding expose layered planning without resolving any project's connection.",
     "Project Pele's delivered TRISO fuel and DOE's storage prize reach physical and production-readiness stages without proving grid operation.",
     "EIA reports 11 hours of average customer interruption in 2024, with major events responsible for 80 percent of the duration.",
-    "NERC reports Texas batteries supplied up to all frequency-regulation capacity in several 2024 instances and more than 70 percent of response in individual disturbances."
+    "NERC reports Texas batteries supplied up to all frequency-regulation capacity in several 2024 instances and more than 70 percent of response in individual disturbances.",
+    "EIA reports utility-scale battery power capacity rising from 4,605 MW at the end of 2021 to 15,814 MW at the end of 2023.",
+    "EIA's outage-duration series shows why major-event and non-major-event customer experience must remain separate."
   ],
   "primary_topics": [
     "Energy",
@@ -38,7 +40,9 @@
     "signal-aps-tsmc-service-territory-capacity-boundary",
     "signal-eia-2025-generator-inventory-2026-operations-baseline",
     "signal-us-customer-outage-duration-eleven-hours-2024",
-    "signal-texas-batteries-provide-frequency-response-2024"
+    "signal-texas-batteries-provide-frequency-response-2024",
+    "signal-56a-eia-battery-capacity",
+    "signal-56a-eia-outage-duration"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -56,7 +60,13 @@
     "source-55z-nerc-state-of-reliability-2025",
     "source-55z-eia-us-outage-duration-2024",
     "source-55z-eia-battery-capacity-2024",
-    "source-55z-eia-battery-storage-market-trends-2026"
+    "source-55z-eia-battery-storage-market-trends-2026",
+    "source-56a-eia-battery-capacity-2021",
+    "source-56a-eia-battery-capacity-2022",
+    "source-56a-eia-battery-capacity-2023",
+    "source-56a-eia-outage-duration-2021",
+    "source-56a-eia-outage-duration-2022",
+    "source-56a-eia-outage-duration-2023"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -68,7 +78,8 @@
   "briefing_ids": [
     "briefing-stack-watch-003-research-to-implementation",
     "briefing-stack-watch-004-implementation-outcomes",
-    "briefing-research-watch-004-comparative-operating-outcomes"
+    "briefing-research-watch-004-comparative-operating-outcomes",
+    "briefing-research-watch-005-longitudinal-operating-series"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -79,7 +90,8 @@
     "research-collection-federal-implementation-evidence-2025-2026",
     "research-collection-implementation-outcomes-local-conversion-2025-2026",
     "research-collection-industrial-capacity-local-conversion-2025-2026",
-    "research-collection-comparative-operating-outcomes-2023-2026"
+    "research-collection-comparative-operating-outcomes-2023-2026",
+    "research-collection-longitudinal-operating-series-2020-2025"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -117,6 +129,11 @@
       "stage": "Delivered service and reliability",
       "current_state": "The pathway now contains customer interruption duration and measured battery frequency-response contributions in addition to capacity and project records.",
       "boundary": "National outage averages and Texas bulk-power results cannot establish another utility's customer reliability or spare capacity."
+    },
+    {
+      "stage": "Longitudinal operating series",
+      "current_state": "Two infrastructure series now separate installed storage power capacity from delivered customer reliability.",
+      "boundary": "Power capacity is not energy duration, availability, dispatch, reliability contribution, restoration performance, or customer outcome."
     }
   ],
   "evidence_limits": [
@@ -126,7 +143,8 @@
     "Transmission and prize awards do not prove construction, manufacturing readiness, energization, commercial terms, or operating performance.",
     "The Ontario record remains upstream of project-level feeder, transformer, station, connection, construction, and energization evidence.",
     "Battery power capacity, energy duration, dispatch, availability, frequency response, and customer reliability are different measures.",
-    "Bulk-power performance and distribution customer outcomes remain separate system layers."
+    "Bulk-power performance and distribution customer outcomes remain separate system layers.",
+    "Observation dates, major-event treatment, survey revisions, and utility reporting coverage govern comparison."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -135,6 +153,8 @@
     "Project Pele assembly, authorization, fuel-loading, startup, criticality, power-operation, and measured demonstration results.",
     "Storage STEP selection, award, manufacturing-site, materials, safety-validation, production, customer, interconnection, and deployment records.",
     "Utility- and customer-specific reliability, restoration, interconnection, consumption, curtailment, cost, and service-quality records.",
-    "Storage duration, availability, state-of-charge, dispatch, market, failure, safety, and long-run reliability records by asset and region."
+    "Storage duration, availability, state-of-charge, dispatch, market, failure, safety, and long-run reliability records by asset and region.",
+    "Asset-level energy duration, availability, dispatch, failures, safety, revenue, and grid-service records.",
+    "Utility- and customer-level interruption frequency, duration, restoration, cost, and weather-attribution records."
   ]
 }

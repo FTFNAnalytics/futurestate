@@ -137,6 +137,8 @@ What is now stable:
 - Phase 55Z adds 32 primary outcome records, 30 source profiles, sixteen bounded signals, a 35-file archive, Research Watch 004, evidence gap `gap-016`, a Published comparison-boundary map, and integrations across eleven topics, eight pathways, and seven existing gaps.
 - The verified Phase 55Z contract is 780 pages, 357 sources, 152 signals, 113 Published signals, 39 In Review signals, 166 current Published-support sources, twelve briefings, seven maps, nine research collections, 163 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 28 updates, and five public-data exports. Twelve signals and 28 document summaries publish; four signals and four documents retain explicit denominator or comparability holds.
 - Phase 55Z local app commit `db18ef9` matches private source commit `2f1c2e6d07f24a75a80d0fb83bab123b38fa2fbf`, deployed from the verified 780-page package as owner-only Sites version 25 with one allowed owner and no groups.
+- Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
+- The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 166 current Published-support sources are governed by the same current-source release assertion.
@@ -158,25 +160,25 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve the owner-only Sites deployment and continue immediately with Phase 56A within-domain longitudinal outcome series. Phase 55Z is complete and release-verified locally. Add 48 primary records and twenty bounded signals across institutional AI/cyber system performance, manufacturing cohorts and facilities, asset-level grid/water/storage/mineral performance, and carrier/operator/mission services. Require at least two compatible time points before describing a trend, disclose method or denominator breaks, and prohibit cross-domain rankings or composite scores. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve the owner-only Sites deployment and continue with Phase 56B entity-level operating panels. Phase 56A is complete and release-verified locally. Extend only the strongest series into named agency, facility, asset, carrier, operator, and mission panels. Require a stable entity identifier and at least two compatible observations, add later observations before new indicators, preserve revisions and reporting-rule breaks, and prohibit rankings or composite scores. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 152 signal records,
-- 357 source records,
+- 172 signal records,
+- 405 source records,
 - 17 topic records,
 - 5 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 12 briefings: 5 Published and 7 In Review,
+- 13 briefings: 6 Published and 7 In Review,
 - 16 evidence gap records,
-- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y and Phase 55Z reviews,
+- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y, Phase 55Z, and Phase 56A reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 9 research collections with 163 document records,
+- 10 research collections with 211 document records,
 - 15 reader pathways across 19 existing Atlas surfaces,
-- 28 public update-log entries.
+- 29 public update-log entries.
 
 One hundred and thirteen official-source-backed signals are now `Published`.
 
@@ -440,10 +442,10 @@ Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 55Z candidate: package 0.2.0-dev, 357 public sources, 150 first-pass-triaged private candidates, 152 signals, 17 topics, 28 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 780 generated site pages, 113 Published signals, 5 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 9 research collections, 163 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, and one 35-file research archives, and 5 public JSON endpoints. Sites version 25 serves the combined Phase 55Y and Phase 55Z state under custom access with one allowed owner and no groups. Source Coverage is 14 Strong lanes; source health reports 235 Manual Review and 122 Probe Ready records.
+v0.2 Phase 56A candidate: package 0.2.0-dev, 405 public sources, 150 first-pass-triaged private candidates, 172 signals, 17 topics, 29 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 898 generated site pages, 129 Published signals, 6 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 10 research collections, 211 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, 35-file, and 51-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 265 Manual Review and 140 Probe Ready records.
 
 Next decision gate:
-Preserve the owner-only preview and begin Phase 56A. Add 48 primary records and twenty bounded signals across four within-domain longitudinal portfolios. Require compatible time points and preserve series breaks. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve the owner-only preview and begin Phase 56B. Extend only stable named entities into agency, facility, asset, carrier, operator, and mission panels, and add later observations before opening new indicators. Require compatible time points and preserve revisions and series breaks. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

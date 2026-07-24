@@ -2516,3 +2516,28 @@ Implemented:
 Boundary:
 
 An application is not an approval or energized project. A permit is not construction, compliance, qualification, or output. An environmental decision is not an operator license. A planned acquisition is not an award or delivered service. One operating event is not a sustained performance trend. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.
+
+## 2026-07-24: Phase 56A Publishes Series, Not Scores
+
+Decision:
+
+Build sixteen three-observation official series across institutional AI and cybersecurity, manufacturing, infrastructure, and mobility, aviation, and space. Publish each series independently when at least two compatible observations support a bounded direction or reporting-continuity statement. Hold every cross-series composite.
+
+Rationale:
+
+Phase 55Z established that operating outcomes cannot be compared unless their units, denominators, periods, geographies, methods, and attribution align. Phase 56A extends that rule over time. Annual reporting creates useful direction only when revisions, vintages, combined years, missing observations, and method breaks remain visible.
+
+Implemented:
+
+- 48 primary observations and 48 source profiles;
+- sixteen three-record official series;
+- twenty signal decisions: sixteen Published and four held cross-series composites;
+- 48 document decisions: 44 Published and four held;
+- Research Watch 005 and a verified 51-file archive;
+- longitudinal integration across eleven topics, nine pathways, nine gaps, the comparison map, and Research Watch 004;
+- a verified 898-page, 405-source, 172-signal contract with 129 Published, 43 In Review, 29 updates, ten collections, 211 documents, and 214 current Published-support sources;
+- Phase 56B selected as the next content gate for entity-level operating panels.
+
+Boundary:
+
+At least two compatible observations are required before direction is described. A two-point movement is not a durable trend without an explicit caveat. A material unit, denominator, scope, method, attribution, revision, or series-definition break stops or restates the line. National context is not entity performance. Cross-domain rankings and composite scores remain prohibited. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.

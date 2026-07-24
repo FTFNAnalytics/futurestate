@@ -372,12 +372,13 @@ Recommended active schedule:
 | Completed | Phase 55X | dossier-led authority expansion across three local-system journeys |
 | Completed | Phase 55Y | operational evidence and receiving-system expansion across four journeys |
 | Completed | Phase 55Z | 32-record comparative operating-outcome collection, sixteen signal decisions, and comparison boundary |
-| Current | Phase 56A | within-domain longitudinal outcome series across four portfolios |
+| Completed | Phase 56A | 48 annual observations, sixteen three-point series, twenty signal decisions, and Research Watch 005 |
+| Current content gate | Phase 56B | entity-level operating panels and later observations for the strongest Phase 56A series |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build, owner-only preview, and Phases 55S-55Z aggressive expansion are complete locally. Phases 55A-55Z established the authority, research, synthesis, pathway, evidence-gap, publication, navigation, export, operating-evidence, and comparison-boundary foundations. The active non-public content gate is Phase 56A: within-domain longitudinal outcomes. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build, owner-only preview, and Phases 55S-56A aggressive expansion are complete locally. Phases 55A-56A established the authority, research, synthesis, pathway, evidence-gap, publication, navigation, export, operating-evidence, comparison-boundary, and longitudinal-series foundations. The next non-public content gate is Phase 56B: entity-level operating panels and later observations for the strongest series. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -762,7 +763,7 @@ Exit criteria:
 - the local release passes at 780 pages, 357 sources, 152 signals, 113 Published signals, 163 research documents, and 166 current Published-support sources;
 - owner-only Sites version 25 serves the exact combined Phase 55Y and Phase 55Z tree.
 
-### Phase 56A: Within-Domain Longitudinal Outcome Series - Next
+### Phase 56A: Within-Domain Longitudinal Outcome Series - Complete
 
 Goal: turn the strongest Phase 55Z outcome records into time series that show direction without collapsing unlike systems into a score.
 
@@ -773,21 +774,50 @@ Target portfolios:
 3. asset-level grid, water, storage, and mineral performance,
 4. carrier, operator, and mission service outcomes.
 
-Deliverables:
+Delivered:
 
-- add 48 primary records, twelve per portfolio;
-- add twenty bounded signals with independent publish or hold decisions;
-- require at least two compatible time points before describing a trend;
-- preserve revisions, denominator changes, discontinued series, and method changes as first-class evidence limits;
-- deepen existing pathways, topics, gaps, maps, and briefings before adding any route family;
-- package the records as one or more reviewed collections with summaries and checksum manifests;
-- keep the six scheduled checks and Project Baccara stages as bounded inserts.
+- added 48 primary observations, twelve per portfolio, arranged as sixteen three-observation official series;
+- added twenty bounded signal decisions: sixteen Published series and four cross-series composite holds;
+- published 44 document summaries and held four observations with explicit route, method, or combined-period review flags;
+- required at least two compatible time points before describing direction and applied a two-point caveat;
+- preserved revisions, denominator changes, combined reporting years, discontinued definitions, and method changes as first-class evidence limits;
+- deepened eleven topics, nine pathways, nine gaps, the comparison map, and Research Watch 004 without adding a route family;
+- published Research Watch 005 and packaged 48 official-link records, summaries, README, and checksum manifest in a verified 51-file archive;
+- kept the six scheduled checks and Project Baccara stages as bounded inserts.
 
 Exit criteria:
 
 - every Published longitudinal signal states its unit, denominator, period, geography, method, attribution, and comparability boundary;
 - no two-point movement is described as a durable trend without an explicit caveat;
 - no cross-domain ranking or composite score is created;
+- the full local release passes at 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 211 research documents, and 214 current Published-support sources;
+- the owner-only deployment gate passes without changing public access, DNS, package version, or custom-domain state.
+
+### Phase 56B: Entity-Level Operating Panels - Next Content Gate
+
+Goal: extend the strongest Phase 56A national and program series into named agency, facility, asset, carrier, operator, and mission panels that can explain what drives the aggregate direction.
+
+Target panels:
+
+1. named federal agencies and systems for AI use, cyber controls, incidents, and corrective actions,
+2. repeat manufacturing cohorts and facilities for completion, quality, throughput, labor, and productivity,
+3. named storage assets, utilities, water projects, mines, and processing facilities,
+4. named carriers, AV operators, launch sites, vehicles, and missions.
+
+Deliverables:
+
+- select only series with a stable entity identifier and at least two compatible observations;
+- add later observations to the strongest Phase 56A series before opening a new indicator;
+- separate facility, operator, customer, and mission outcomes from national or program aggregates;
+- record revisions, missing periods, mergers, exits, permit changes, and reporting-rule breaks;
+- publish no panel, comparison, or direction without a named denominator and method;
+- keep the six scheduled checks and Project Baccara stages as bounded inserts.
+
+Exit criteria:
+
+- every panel has a stable entity, unit, denominator, period, geography, method, and attribution;
+- national context is not restated as local or entity performance;
+- no panel ranking, composite score, or unsupported causal claim is created;
 - the full local release and owner-only deployment gates pass.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
@@ -900,7 +930,7 @@ The v0.2 build and publication thresholds pass in the current candidate. Phase 5
 
 ## Immediate Next Step
 
-Begin Phase 56A with within-domain longitudinal outcome series. Add 48 primary records and twenty bounded signals across institutional AI/cyber system performance, manufacturing cohorts and facilities, asset-level infrastructure performance, and carrier/operator/mission services. Require compatible units, denominators, periods, geographies, methods, and attribution before describing change over time.
+Begin Phase 56B with entity-level operating panels. Start from the sixteen Phase 56A series, select only stable named entities with at least two compatible observations, and add later observations before opening new indicators. Preserve revisions, missing periods, reporting-rule breaks, and the boundary between national context and entity performance.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
