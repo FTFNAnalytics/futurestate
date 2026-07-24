@@ -64,6 +64,7 @@ const signalDirectory = join(appRoot, "src", "content", "signals");
 const phase55WReviewPath = join(appRoot, "src", "data", "phase-55w-publication-review.json");
 const phase55XReviewPath = join(appRoot, "src", "data", "phase-55x-publication-review.json");
 const phase55YReviewPath = join(appRoot, "src", "data", "phase-55y-publication-review.json");
+const phase55ZReviewPath = join(appRoot, "src", "data", "phase-55z-publication-review.json");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
@@ -90,6 +91,7 @@ const readerPathways = await Promise.all(
 const phase55WReview = await readJson(phase55WReviewPath);
 const phase55XReview = await readJson(phase55XReviewPath);
 const phase55YReview = await readJson(phase55YReviewPath);
+const phase55ZReview = await readJson(phase55ZReviewPath);
 const evidenceGaps = await Promise.all(
   evidenceGapFiles.map((name) => readJson(join(evidenceGapDirectory, name))),
 );
@@ -321,6 +323,58 @@ check(
 check(
   dependencyMapStatusById.get("dependency-map-autonomy-rules-are-not-service") === "Published",
   "Phase 55Y autonomy dependency map should be Published.",
+);
+
+const phase55ZSignals = phase55ZReview.signal_decisions;
+const phase55ZSignalIds = [...phase55ZSignals.promoted, ...phase55ZSignals.held];
+const phase55ZDocuments = phase55ZReview.document_decisions;
+const phase55ZDocumentIds = [...phase55ZDocuments.published, ...phase55ZDocuments.held];
+check(phase55ZReview.portfolio_count === 4, `Expected four Phase 55Z portfolios, found ${phase55ZReview.portfolio_count}.`);
+check(phase55ZReview.primary_record_count === 32, `Expected 32 Phase 55Z primary records, found ${phase55ZReview.primary_record_count}.`);
+check(phase55ZSignals.reviewed === 16, `Expected 16 Phase 55Z signal decisions, found ${phase55ZSignals.reviewed}.`);
+check(phase55ZSignals.promoted.length === 12, `Expected twelve Phase 55Z Published signals, found ${phase55ZSignals.promoted.length}.`);
+check(phase55ZSignals.held.length === 4, `Expected four Phase 55Z held signals, found ${phase55ZSignals.held.length}.`);
+check(new Set(phase55ZSignalIds).size === 16, "Phase 55Z signal decision IDs must be unique.");
+for (const id of phase55ZSignals.promoted) {
+  check(signalStatusById.get(id) === "Published", `Phase 55Z Published signal ${id} has the wrong status.`);
+}
+for (const id of phase55ZSignals.held) {
+  check(signalStatusById.get(id) === "In Review", `Phase 55Z held signal ${id} has the wrong status.`);
+}
+check(phase55ZDocuments.reviewed === 32, `Expected 32 Phase 55Z document decisions, found ${phase55ZDocuments.reviewed}.`);
+check(phase55ZDocuments.published.length === 28, `Expected 28 Phase 55Z Published documents, found ${phase55ZDocuments.published.length}.`);
+check(phase55ZDocuments.held.length === 4, `Expected four Phase 55Z held documents, found ${phase55ZDocuments.held.length}.`);
+check(new Set(phase55ZDocumentIds).size === 32, "Phase 55Z document decision IDs must be unique.");
+const phase55ZCollection = researchCollections.find(
+  (collection) => collection.id === "research-collection-comparative-operating-outcomes-2023-2026",
+);
+check(Boolean(phase55ZCollection), "Phase 55Z comparative operating-outcomes research collection is missing.");
+if (phase55ZCollection) {
+  check(phase55ZCollection.document_ids.length === 32, `Expected 32 Phase 55Z documents, found ${phase55ZCollection.document_ids.length}.`);
+  const resolvedPhase55ZDocuments = phase55ZCollection.document_ids
+    .map((documentId) => researchDocumentById.get(documentId))
+    .filter(Boolean);
+  check(resolvedPhase55ZDocuments.length === 32, `Expected all 32 Phase 55Z documents to resolve, found ${resolvedPhase55ZDocuments.length}.`);
+  check(
+    resolvedPhase55ZDocuments.filter((document) => document.record_status === "Published").length === 28,
+    "Phase 55Z must contain 28 Published research documents.",
+  );
+  check(
+    resolvedPhase55ZDocuments.filter((document) => document.record_status === "In Review").length === 4,
+    "Phase 55Z must contain four held research documents.",
+  );
+  check(
+    resolvedPhase55ZDocuments.every((document) => document.capture_status === "Official link record"),
+    "Phase 55Z research documents must use the declared official-link capture contract.",
+  );
+}
+check(
+  briefingStatusById.get("briefing-research-watch-004-comparative-operating-outcomes") === "Published",
+  "Phase 55Z comparative operating-outcomes briefing should be Published.",
+);
+check(
+  dependencyMapStatusById.get("dependency-map-comparative-outcomes-require-common-denominators") === "Published",
+  "Phase 55Z comparison-protocol dependency map should be Published.",
 );
 
 for (const collection of researchCollections) {

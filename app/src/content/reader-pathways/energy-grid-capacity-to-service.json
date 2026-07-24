@@ -3,8 +3,8 @@
   "title": "Energy And Grid Capacity: From System Forecast To Named Service",
   "slug": "energy-grid-capacity-to-service",
   "record_status": "Published",
-  "summary": "Follow demand forecasts, tariffs, transmission contracts, customer-specific infrastructure, storage production programs, and delivered fuel while keeping planning, construction, energization, and operation distinct.",
-  "current_state_summary": "The Published record now combines demand forecasts, generator inventory, plant operations, a named TSMC serving utility, SRP large-load and service records, federal transmission and storage programs, an Ontario planning stack, and a delivered nuclear-fuel milestone.",
+  "summary": "Follow forecasts, capacity, tariffs, interconnection, construction, energization, storage services, delivered reliability, and customer outcomes.",
+  "current_state_summary": "The pathway now joins project and customer-service evidence to national outage duration and NERC's initial operating evidence that Texas batteries provide material frequency-response service.",
   "current_state": [
     "Data-centre electricity growth is visible as a system constraint, but no global or national forecast proves local spare capacity.",
     "EIA's 2025 Form 860 early release and 2026 Form 923 update distinguish generator status from observed plant output; neither proves customer-level deliverable capacity.",
@@ -12,7 +12,9 @@
     "APS identifies TSMC in its service territory and reports rapid utility-wide demand growth without disclosing customer load, infrastructure, energization, or spare capacity.",
     "DOE's Southline capacity contract creates a trackable transmission project without proving construction or energization.",
     "Ontario's provincial outlook and Toronto distribution proceeding expose layered planning without resolving any project's connection.",
-    "Project Pele's delivered TRISO fuel and DOE's storage prize reach physical and production-readiness stages without proving grid operation."
+    "Project Pele's delivered TRISO fuel and DOE's storage prize reach physical and production-readiness stages without proving grid operation.",
+    "EIA reports 11 hours of average customer interruption in 2024, with major events responsible for 80 percent of the duration.",
+    "NERC reports Texas batteries supplied up to all frequency-regulation capacity in several 2024 instances and more than 70 percent of response in individual disturbances."
   ],
   "primary_topics": [
     "Energy",
@@ -34,7 +36,9 @@
     "signal-doe-storage-step-prize-production-readiness",
     "signal-project-pele-first-triso-fuel-delivery",
     "signal-aps-tsmc-service-territory-capacity-boundary",
-    "signal-eia-2025-generator-inventory-2026-operations-baseline"
+    "signal-eia-2025-generator-inventory-2026-operations-baseline",
+    "signal-us-customer-outage-duration-eleven-hours-2024",
+    "signal-texas-batteries-provide-frequency-response-2024"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -48,7 +52,11 @@
     "source-eia-form-860-generator-data",
     "source-eia-form-923-power-plant-operations",
     "source-eia-form-930-hourly-grid-data",
-    "source-oeb-applications"
+    "source-oeb-applications",
+    "source-55z-nerc-state-of-reliability-2025",
+    "source-55z-eia-us-outage-duration-2024",
+    "source-55z-eia-battery-capacity-2024",
+    "source-55z-eia-battery-storage-market-trends-2026"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -59,21 +67,25 @@
   ],
   "briefing_ids": [
     "briefing-stack-watch-003-research-to-implementation",
-    "briefing-stack-watch-004-implementation-outcomes"
+    "briefing-stack-watch-004-implementation-outcomes",
+    "briefing-research-watch-004-comparative-operating-outcomes"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
-    "dependency-map-local-constraints-where-the-future-arrives"
+    "dependency-map-local-constraints-where-the-future-arrives",
+    "dependency-map-comparative-outcomes-require-common-denominators"
   ],
   "research_collection_ids": [
     "research-collection-federal-implementation-evidence-2025-2026",
     "research-collection-implementation-outcomes-local-conversion-2025-2026",
-    "research-collection-industrial-capacity-local-conversion-2025-2026"
+    "research-collection-industrial-capacity-local-conversion-2025-2026",
+    "research-collection-comparative-operating-outcomes-2023-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
     "gap-004",
-    "gap-008"
+    "gap-008",
+    "gap-016"
   ],
   "dependency_stack": [
     {
@@ -100,6 +112,11 @@
       "stage": "Technology Delivery",
       "current_state": "Project Pele records delivered fuel and the Storage STEP prize targets production readiness.",
       "boundary": "Delivered fuel is not reactor operation; competition design is not a winner, production line, interconnection, or deployed storage asset."
+    },
+    {
+      "stage": "Delivered service and reliability",
+      "current_state": "The pathway now contains customer interruption duration and measured battery frequency-response contributions in addition to capacity and project records.",
+      "boundary": "National outage averages and Texas bulk-power results cannot establish another utility's customer reliability or spare capacity."
     }
   ],
   "evidence_limits": [
@@ -107,13 +124,17 @@
     "One named Meta service project cannot establish transferability to TSMC, another data centre, housing growth, or a different utility territory.",
     "Identifying APS as TSMC's serving utility closes a location question, not the customer-capacity, infrastructure, energization, or operation question.",
     "Transmission and prize awards do not prove construction, manufacturing readiness, energization, commercial terms, or operating performance.",
-    "The Ontario record remains upstream of project-level feeder, transformer, station, connection, construction, and energization evidence."
+    "The Ontario record remains upstream of project-level feeder, transformer, station, connection, construction, and energization evidence.",
+    "Battery power capacity, energy duration, dispatch, availability, frequency response, and customer reliability are different measures.",
+    "Bulk-power performance and distribution customer outcomes remain separate system layers."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
     "TSMC and other customer-specific electric-service agreements, load forecasts, infrastructure scope, construction, facilities charges, energization, consumption, and reliability records for Southwest fabs and data centres.",
     "Toronto and Ontario feeder, transformer, station, connection-study, customer-agreement, and project-energization records.",
     "Project Pele assembly, authorization, fuel-loading, startup, criticality, power-operation, and measured demonstration results.",
-    "Storage STEP selection, award, manufacturing-site, materials, safety-validation, production, customer, interconnection, and deployment records."
+    "Storage STEP selection, award, manufacturing-site, materials, safety-validation, production, customer, interconnection, and deployment records.",
+    "Utility- and customer-specific reliability, restoration, interconnection, consumption, curtailment, cost, and service-quality records.",
+    "Storage duration, availability, state-of-charge, dispatch, market, failure, safety, and long-run reliability records by asset and region."
   ]
 }

@@ -3,8 +3,18 @@
   "name": "Energy",
   "slug": "energy",
   "summary": "Electricity systems, grid capacity, generation, data center load, industrial power demand, utility regulation, and the energy infrastructure required for frontier systems to scale.",
-  "framework_layers": ["Enabling Infrastructure", "Resource Foundations", "Human Systems"],
-  "primary_constraints": ["Power", "Infrastructure", "Regulation", "Capital", "Climate"],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations",
+    "Human Systems"
+  ],
+  "primary_constraints": [
+    "Power",
+    "Infrastructure",
+    "Regulation",
+    "Capital",
+    "Climate"
+  ],
   "featured_sources": [
     "source-eia-electricity-data",
     "source-eia-arizona-electricity-profile",
@@ -25,11 +35,16 @@
     "source-virginia-scc-large-load-gs5-2025",
     "source-virginia-scc-golden-mars-2026",
     "source-virginia-scc-transmission-projects",
-    "source-virginia-deq-data-center-air-permits"
+    "source-virginia-deq-data-center-air-permits",
+    "source-55z-nerc-state-of-reliability-2025",
+    "source-55z-eia-us-outage-duration-2024",
+    "source-55z-eia-battery-capacity-2024",
+    "source-55z-eia-battery-storage-market-trends-2026"
   ],
   "watch_questions": [
     "Which frontier systems are becoming local grid-capacity questions rather than only technology questions?",
     "Where do power demand, utility regulation, interconnection, and public legitimacy become binding constraints?",
-    "When do large-load rate and transmission decisions become completed infrastructure, customer service, and measured reliability?"
+    "When do large-load rate and transmission decisions become completed infrastructure, customer service, and measured reliability?",
+    "Which assets connect installed capacity to availability, dispatch, frequency response, customer reliability, restoration, and cost?"
   ]
 }

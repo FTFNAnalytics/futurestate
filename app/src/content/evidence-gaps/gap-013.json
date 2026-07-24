@@ -6,11 +6,24 @@
   "priority": "High",
   "local_system": "Florida Space Coast Launch Corridor",
   "primary_topic": "Space",
-  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
-  "constraint_tags": ["Infrastructure", "Regulation", "Permitting", "Safety", "Weather", "Labor", "Capital", "Climate"],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Frontier Domains",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Infrastructure",
+    "Regulation",
+    "Permitting",
+    "Safety",
+    "Weather",
+    "Labor",
+    "Capital",
+    "Climate"
+  ],
   "question": "Which Space Coast plans, licenses, and capital programs convert into accepted infrastructure, available missions, safe operation, and sustained utilization?",
   "why_it_matters": "An operating corridor can still contain unresolved site licenses, constrained range and utilities, incomplete capital projects, and unmeasured local or environmental outcomes.",
-  "current_support": "The dossier now links Kennedy planning and environmental review, FAA site and operator-license rails, the LC-39A Starship ROD, current state delivery rules, an operational access bridge, mission-linked facility upgrades, one active-countdown resilience operation, and the planned SIMO services acquisition.",
+  "current_support": "FTFN now adds FAA cumulative and annual commercial-space operations plus NASA 2025 station logistics as national operating comparators.",
   "missing_evidence": [
     "formal current Shuttle Landing Facility license disposition",
     "named state capital awards, contracts, construction, and acceptance",
@@ -33,7 +46,12 @@
     "range utilization, mission delay, safety, and resilience records"
   ],
   "next_action": "Resolve the Shuttle Landing Facility license record first, then follow named master-plan, environmental, state-capital, and mission records through construction, acceptance, operation, and outcomes.",
-  "future_data_model_need": ["Project", "License", "Capital Program", "Operating Outcome"],
+  "future_data_model_need": [
+    "Project",
+    "License",
+    "Capital Program",
+    "Operating Outcome"
+  ],
   "related_source_ids": [
     "source-nasa-kennedy-master-plan-2026",
     "source-faa-spaceports-by-state-2026",
@@ -46,7 +64,10 @@
     "source-nasa-ksc-simo",
     "source-nasa-ksc-causeway-bridge-2025",
     "source-nasa-ksc-phsf-roman-upgrades-2026",
-    "source-nasa-ksc-prescribed-burn-2026"
+    "source-nasa-ksc-prescribed-burn-2026",
+    "source-55z-faa-one-thousand-commercial-space-operations-2025",
+    "source-55z-faa-fy2024-commercial-space-operations",
+    "source-55z-nasa-space-operations-outcomes-2025"
   ],
   "related_signal_ids": [
     "signal-kennedy-multiuser-master-plan",
@@ -57,9 +78,12 @@
     "signal-faa-starship-lc39a-environmental-decision",
     "signal-ksc-causeway-bridge-operational",
     "signal-ksc-active-countdown-prescribed-burn",
-    "signal-nasa-simo-planned-spaceport-services-acquisition"
+    "signal-nasa-simo-planned-spaceport-services-acquisition",
+    "signal-faa-reaches-one-thousand-commercial-space-operations"
   ],
-  "related_local_system_ids": ["local-florida-space-coast-launch-corridor"],
+  "related_local_system_ids": [
+    "local-florida-space-coast-launch-corridor"
+  ],
   "latest_review": {
     "phase": "Phase 55X",
     "decision": "Narrowed",
@@ -76,5 +100,5 @@
     "stop_rule": "Do not treat a site listing, master plan, environmental decision, funding handbook, facility upgrade, procurement plan, one operating event, or one operational asset as a current mission license, corridor readiness, safe performance trend, or sustained utilization.",
     "next_check_date": "2026-08-15"
   },
-  "notes": "Phase 55X adds an eight-record implementation dossier and retains the August 15 Shuttle Landing Facility status check."
+  "notes": "Phase 55Z preserves the dated Space Coast license check and does not convert national cadence into site-specific authorization, utilization, or local outcomes."
 }

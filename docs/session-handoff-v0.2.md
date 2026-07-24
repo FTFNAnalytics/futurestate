@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 55Y operational evidence and receiving systems
+Latest completed work: Phase 55Z comparative operating outcomes
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 698 generated site pages
-Content: 327 sources, 136 signals, 17 topics, 5 local systems, 8 research collections / 131 research documents
-Publication: 101 Published signals, 35 In Review signals, 4 Published briefings, 7 In Review briefings, 5 Published and 1 In Review dependency maps
-Trust/data: 27 update entries, 15 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, and two 27-file research archives
+Build: 780 generated site pages
+Content: 357 sources, 152 signals, 17 topics, 5 local systems, 9 research collections / 163 research documents
+Publication: 113 Published signals, 39 In Review signals, 5 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
+Trust/data: 28 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, and one 35-file research archives
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 23 still serves the prior exact Phase 55X source while the Phase 55Y owner-only refresh is pending; one allowed owner and no groups
+Deployment: owner-only Sites version 23 still serves the prior exact Phase 55X source while the combined Phase 55Y and Phase 55Z refresh is pending; one allowed owner and no groups
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 212 Manual Review, 115 Probe Ready; 14 Strong coverage lanes
-Next phase: Phase 55Z comparative operating outcomes; six dated inserts remain scheduled
+Source health: 235 Manual Review, 122 Probe Ready; 14 Strong coverage lanes
+Next phase: Phase 56A within-domain longitudinal outcome series; six dated inserts remain scheduled
 ```
 
 ## Read First
@@ -103,6 +103,7 @@ The approved preview sequence is complete:
 48. Completed Phase 55X locally: added 24 official implementation records, twelve signals, nine source profiles, one 27-file collection archive, one `In Review` briefing, and integrated repairs across three local systems, four pathways, three gaps, eight topics, and one Published dependency map. Eight signals and 22 document summaries passed separate publication gates; all three end-to-end local pathways remain `In Review`. Verified 638 pages, 307 sources, 124 signals, 93 Published, 31 In Review, 26 updates, seven collections, and 107 research documents.
 49. Deployed local app commit `ce590cb8d847501b0a21fe4eb760037d3e531ea8` from exact private source commit `6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac` as owner-only Sites version 23 in deployment `appgdep_6a63de12b2c881919c4b7dd924f3711c`; custom access remains one allowed owner and no groups.
 50. Completed Phase 55Y locally: added 24 official records, twenty source profiles, twelve signals, one research collection and 27-file archive, Research Watch 003, two evidence gaps, and integrated four pathways and topic pages. Eight signals and twenty document summaries publish; four signals and four documents retain explicit holds. The autonomy pathway and dependency map now publish. Verified 698 pages, 327 sources, 136 signals, 101 Published, 35 In Review, 27 updates, eight collections, 131 research documents, and 150 current Published-support sources.
+51. Completed Phase 55Z locally: added 32 primary outcome records, 30 source profiles, sixteen signals, a 35-file collection archive, Research Watch 004, evidence gap `gap-016`, and a Published comparison-boundary map. Twelve signals and 28 document summaries publish; four signals and four documents retain explicit denominator or comparability holds. Verified 780 pages, 357 sources, 152 signals, 113 Published, 39 In Review, 28 updates, nine collections, 163 research documents, and 166 current Published-support sources.
 
 ## Required Stop Points
 
@@ -156,9 +157,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 55Y. The current candidate should be 0.2.0-dev on codex/phase51-content with 327 sources, 136 signals, 101 Published signals, 35 In Review signals, five local systems, four Published briefings, seven In Review briefings, five Published and one In Review dependency map, fifteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 27 public updates, five JSON exports, 698 generated site pages, eight research collections, 131 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, and two 27-file download archives. Sites version 23 still serves the prior Phase 55X tree until the owner-only Phase 55Y refresh completes; public access and DNS remain unchanged.
+The latest completed work is Phase 55Z. The current candidate should be 0.2.0-dev on codex/phase51-content with 357 sources, 152 signals, 113 Published signals, 39 In Review signals, five local systems, five Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 28 public updates, five JSON exports, 780 generated site pages, nine research collections, 163 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, and one 35-file download archives. Sites version 23 still serves the prior Phase 55X tree until the owner-only combined Phase 55Y and Phase 55Z refresh completes; public access and DNS remain unchanged.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55Y is complete; begin Phase 55Z with 32 primary records and sixteen bounded signals across institutional AI and cybersecurity operation, manufacturing workforce and production outcomes, grid-water-storage-minerals infrastructure performance, and mobility-aviation-space service or mission outcomes. Prefer measured utilization, throughput, reliability, incidents, completion and placement, customer delivery, compliance, cost, accessibility, and service outcomes. Treat the August 1 Toronto, August 10 DARPA Lift, August 15 Space Coast license, September 22 Arizona wastewater, October 1 Loudoun standards, and January 15 Nevada delivery tasks as bounded inserts rather than pauses. Do not create rankings from incompatible units, periods, geographies, or methods. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55Z is complete; begin Phase 56A with 48 primary records and twenty bounded signals across institutional AI/cyber system performance, manufacturing cohorts and facilities, asset-level infrastructure performance, and carrier/operator/mission services. Require at least two compatible time points before describing a trend, and disclose unit, denominator, period, geography, method, attribution, and known breaks. Treat the August 1 Toronto, August 10 DARPA Lift, August 15 Space Coast license, September 22 Arizona wastewater, October 1 Loudoun standards, and January 15 Nevada delivery tasks as bounded inserts rather than pauses. Do not create cross-domain rankings or composite scores. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

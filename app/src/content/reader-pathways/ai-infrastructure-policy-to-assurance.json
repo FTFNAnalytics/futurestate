@@ -3,14 +3,16 @@
   "title": "AI Infrastructure: From Federal Priority To Assured Operation",
   "slug": "ai-infrastructure-policy-to-assurance",
   "record_status": "Published",
-  "summary": "Follow federal AI and R&D direction through compute, power, chips, procurement, critical-infrastructure assurance, implementation, and measured operating evidence.",
-  "current_state_summary": "Federal direction now connects to a completed NIST multi-level evaluation pilot, a method-selection resource, and a TEVV standards trail; institution-level adoption, authorization, production monitoring, and outcomes remain open.",
+  "summary": "Follow federal AI policy, inventories, acquisitions, evaluation, agency operation, cybersecurity controls, measured benefits, incidents, and corrective actions.",
+  "current_state_summary": "The pathway now connects NIST assurance methods to audited federal inventory growth, IRS maturity and data-quality findings, GAO operational examples, and federal cyber-monitoring results while preserving the gap to system-level benefits and incidents.",
   "current_state": [
     "Federal R&D, national-security, acquisition, and procurement records define the policy and buying stack.",
     "NIST ARIA 0.1 completed model, red-team, and field testing across seven applications from five organizations.",
     "The AI Metrology Center and TEVV program expose method-selection and measurement resources with explicit non-endorsement limits.",
     "The proposed TEVV zero-draft outline remains upstream of consensus text, conformity assessment, and adoption.",
-    "No current record closes the loop into institution-level control adoption, system authorization, production monitoring, incident response, or measured mission outcomes."
+    "No current record closes the loop into institution-level control adoption, system authorization, production monitoring, incident response, or measured mission outcomes.",
+    "GAO found selected-agency AI inventories nearly doubled from 2023 to 2024, while the IRS inventory shows why active labels must remain separate from operational maturity.",
+    "Federal cybersecurity audits add endpoint, event-logging, network-monitoring, and data-quality measures, but not a common security-outcome denominator."
   ],
   "primary_topics": [
     "AI for Science",
@@ -32,7 +34,10 @@
     "signal-gsa-onegov-ai-procurement-channel",
     "signal-dod-openai-prototype-ota-initial-obligation",
     "signal-nist-aria-pilot-multilevel-evaluation",
-    "signal-nist-ai-metrology-method-selection-layer"
+    "signal-nist-ai-metrology-method-selection-layer",
+    "signal-federal-ai-inventories-nearly-doubled-2024",
+    "signal-irs-ai-inventory-most-cases-not-yet-operational",
+    "signal-federal-cdm-data-quality-requires-manual-correction"
   ],
   "source_ids": [
     "source-fy2027-rd-priorities-m-25-34",
@@ -47,7 +52,15 @@
     "source-nist-aria-evaluation-program",
     "source-nist-ai-metrology-center",
     "source-nist-ai-tevv-program",
-    "source-nist-ai-tevv-zero-draft-2025"
+    "source-nist-ai-tevv-zero-draft-2025",
+    "source-55z-gao-federal-generative-ai-use-2025",
+    "source-55z-gao-federal-ai-acquisitions-2026",
+    "source-55z-gao-irs-ai-management-2026",
+    "source-55z-gao-operational-ai-use-cases-2026",
+    "source-55z-nasa-ai-use-cases-2024",
+    "source-55z-gao-cdm-network-monitoring-2025",
+    "source-55z-gao-fisma-effectiveness-metrics-2024",
+    "source-55z-gao-federal-incident-response-2023"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -57,20 +70,24 @@
   "technology_ids": [],
   "briefing_ids": [
     "briefing-stack-watch-003-research-to-implementation",
-    "briefing-research-watch-003-operational-evidence"
+    "briefing-research-watch-003-operational-evidence",
+    "briefing-research-watch-004-comparative-operating-outcomes"
   ],
   "dependency_map_ids": [
-    "dependency-map-federal-research-industrial-capacity"
+    "dependency-map-federal-research-industrial-capacity",
+    "dependency-map-comparative-outcomes-require-common-denominators"
   ],
   "research_collection_ids": [
     "research-collection-darpa-usg-2025-2026",
     "research-collection-federal-implementation-evidence-2025-2026",
-    "research-collection-operational-evidence-receiving-systems-2024-2026"
+    "research-collection-operational-evidence-receiving-systems-2024-2026",
+    "research-collection-comparative-operating-outcomes-2023-2026"
   ],
   "evidence_gap_ids": [
     "gap-008",
     "gap-009",
-    "gap-014"
+    "gap-014",
+    "gap-016"
   ],
   "dependency_stack": [
     {
@@ -92,16 +109,25 @@
       "stage": "Assured Institutional Operation",
       "current_state": "No current pathway record closes the loop into independently validated, monitored operating performance.",
       "boundary": "Assurance claims require named systems, inventories, controls, authorizations, tests, incidents, corrective actions, and measured outcomes."
+    },
+    {
+      "stage": "Institutional operation and outcomes",
+      "current_state": "GAO records disclose inventory growth, operational examples, maturity gaps, acquisition lessons, and cyber-program implementation results.",
+      "boundary": "Use-case counts, tool deployment, and program maturity do not prove productivity, mission benefit, security effect, safety, or public value."
     }
   ],
   "evidence_limits": [
     "ARIA validates a pilot evaluation procedure, not AI systems generally.",
     "NIST method resources explicitly do not endorse or universally validate listed methods.",
-    "Policy, procurement, frameworks, and standards work remain separate from institutional adoption and operating assurance."
+    "Policy, procurement, frameworks, and standards work remain separate from institutional adoption and operating assurance.",
+    "Agency inventories use disclosure and maturity fields that do not replace usage, performance, incident, or benefit measures.",
+    "Cybersecurity implementation measures cannot be ranked as equivalent risk or incident outcomes."
   ],
   "next_records": [
     "Later ARIA rounds, sector-specific evaluations, method-validation studies, and full AI TEVV drafts.",
     "Agency system inventories, adopted controls, authorization decisions, evaluation results, incidents, corrective actions, and production monitoring.",
-    "Independent evidence connecting assurance work to reliability, safety, mission value, and maintained operating performance."
+    "Independent evidence connecting assurance work to reliability, safety, mission value, and maintained operating performance.",
+    "Agency- and system-level usage, accuracy, availability, human-override, cost, mission-benefit, impact-assessment, incident, and corrective-action records.",
+    "Compatible KEV remediation, event-logging, detection, response, recovery, and harm measures with agency-size and risk context."
   ]
 }

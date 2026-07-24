@@ -4,16 +4,24 @@
   "slug": "cross-corridor-authorization-to-operation",
   "record_status": "Published",
   "summary": "Compare how Northern Virginia compute, Nevada lithium, and Florida Space Coast infrastructure move from demand, permits, financing, and plans into construction, acceptance, service, operation, and measured outcomes.",
-  "current_state_summary": "All three corridors now have deeper implementation dossiers; Florida closes two physical or operating stages, while Northern Virginia service and Nevada qualified output remain unproven.",
+  "current_state_summary": "The corridor dossiers now sit beside national mineral and commercial-space operating baselines, making the remaining Nevada qualification and Florida site-utilization gaps more explicit.",
   "current_state": [
     "Northern Virginia has load, rate, transmission, permit, and water rails; final route, construction, energization, customer service, use, and reliability remain incomplete.",
     "Nevada has federal land decisions, state permits, and a closed Thacker Pass loan; condition satisfaction, construction, commissioning, qualification, output, sales, and environmental performance remain incomplete.",
     "Florida has master plans, site licensing, environmental decisions, operator rules, and capital channels; named project funding, construction, acceptance, mission authorization, utilization, and outcomes remain incomplete.",
     "Florida now has an operational access bridge and one completed active-countdown resilience operation, but mission licensing and measured system outcomes remain incomplete.",
-    "Research Watches 001 and 002 and Local Authorization Is Not Operation expose the shared stage-conversion problem without treating the corridors as legally or technically equivalent."
+    "Research Watches 001 and 002 and Local Authorization Is Not Operation expose the shared stage-conversion problem without treating the corridors as legally or technically equivalent.",
+    "USGS 2025 commodity data and FAA national operation counts provide operating comparators without resolving named Nevada or Florida project outcomes."
   ],
-  "primary_topics": ["Policy and Standards", "Energy", "Critical Minerals", "Space"],
-  "topic_ids": ["topic-policy-and-standards"],
+  "primary_topics": [
+    "Policy and Standards",
+    "Energy",
+    "Critical Minerals",
+    "Space"
+  ],
+  "topic_ids": [
+    "topic-policy-and-standards"
+  ],
   "local_system_ids": [
     "local-northern-virginia-data-center-corridor",
     "local-nevada-lithium-processing-corridor",
@@ -37,7 +45,9 @@
     "signal-thacker-pass-air-permit-compliance-contract",
     "signal-faa-starship-lc39a-environmental-decision",
     "signal-ksc-causeway-bridge-operational",
-    "signal-ksc-active-countdown-prescribed-burn"
+    "signal-ksc-active-countdown-prescribed-burn",
+    "signal-us-mineral-production-and-import-reliance-2025",
+    "signal-faa-reaches-one-thousand-commercial-space-operations"
   ],
   "source_ids": [
     "source-virginia-scc-large-load-gs5-2025",
@@ -55,17 +65,34 @@
     "source-ndep-thacker-pass-project",
     "source-faa-starship-lc39a-final-eis-rod",
     "source-nasa-ksc-causeway-bridge-2025",
-    "source-nasa-ksc-prescribed-burn-2026"
+    "source-nasa-ksc-prescribed-burn-2026",
+    "source-usgs-mineral-commodity-summaries",
+    "source-55z-usgs-mcs-2026-data-release",
+    "source-55z-faa-one-thousand-commercial-space-operations-2025",
+    "source-55z-faa-fy2024-commercial-space-operations",
+    "source-55z-nasa-space-operations-outcomes-2025"
   ],
   "organization_ids": [],
   "technology_ids": [],
-  "briefing_ids": ["briefing-research-watch-001-cross-corridor-infrastructure-conversion"],
-  "dependency_map_ids": ["dependency-map-local-authorization-is-not-operation"],
+  "briefing_ids": [
+    "briefing-research-watch-001-cross-corridor-infrastructure-conversion",
+    "briefing-research-watch-004-comparative-operating-outcomes"
+  ],
+  "dependency_map_ids": [
+    "dependency-map-local-authorization-is-not-operation",
+    "dependency-map-comparative-outcomes-require-common-denominators"
+  ],
   "research_collection_ids": [
     "research-collection-cross-corridor-infrastructure-conversion-2024-2026",
-    "research-collection-local-implementation-dossiers-2022-2026"
+    "research-collection-local-implementation-dossiers-2022-2026",
+    "research-collection-comparative-operating-outcomes-2023-2026"
   ],
-  "evidence_gap_ids": ["gap-011", "gap-012", "gap-013"],
+  "evidence_gap_ids": [
+    "gap-011",
+    "gap-012",
+    "gap-013",
+    "gap-016"
+  ],
   "dependency_stack": [
     {
       "stage": "Demand, Plan, Or Authorization",
@@ -91,7 +118,8 @@
   "evidence_limits": [
     "The pathway compares evidence stages, not economic, environmental, institutional, or technical equivalence.",
     "A rate decision, mining permit, federal loan, site license, environmental decision, and master plan are not interchangeable.",
-    "No pathway record establishes corridor-wide readiness, spare capacity, qualified output, mission availability, or accepted local outcomes."
+    "No pathway record establishes corridor-wide readiness, spare capacity, qualified output, mission availability, or accepted local outcomes.",
+    "National commodity and commercial-space operating baselines do not close project-level construction, qualification, mission, utilization, or local-outcome gates."
   ],
   "next_records": [
     "Northern Virginia route, construction, energization, customer-service, water, emissions-compliance, reliability, and local-outcome records.",

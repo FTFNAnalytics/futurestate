@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "build_id": "ftfn-v0.2",
   "generated_date": "2026-07-24",
   "project": "FTFN",
@@ -33,6 +33,7 @@
     "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/build-research-archive.ps1 -CollectionSlug cross-corridor-infrastructure-conversion-2024-2026",
     "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/build-research-archive.ps1 -CollectionSlug local-implementation-dossiers-2022-2026",
     "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/build-research-archive.ps1 -CollectionSlug operational-evidence-receiving-systems-2024-2026",
+    "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/build-research-archive.ps1 -CollectionSlug comparative-operating-outcomes-2023-2026",
     "npm run validate:content",
     "npm run source:health",
     "npm run check",
@@ -42,33 +43,33 @@
   "build_command": "npm run build",
   "output_directory": "dist",
   "expected_build": {
-    "static_pages": 698,
-    "signals": 136,
-    "published_signals": 101,
-    "in_review_signals": 35,
+    "static_pages": 780,
+    "signals": 152,
+    "published_signals": 113,
+    "in_review_signals": 39,
     "draft_sample_signals": 0,
-    "published_support_sources": 150,
-    "sources": 327,
+    "published_support_sources": 166,
+    "sources": 357,
     "topics": 17,
     "organizations": 19,
     "technologies": 5,
     "local_systems": 5,
-    "briefings": 11,
-    "published_briefings": 4,
+    "briefings": 12,
+    "published_briefings": 5,
     "in_review_briefings": 7,
-    "evidence_gaps": 15,
-    "dependency_maps": 6,
-    "published_dependency_maps": 5,
+    "evidence_gaps": 16,
+    "dependency_maps": 7,
+    "published_dependency_maps": 6,
     "in_review_dependency_maps": 1,
-    "research_collections": 8,
-    "research_documents": 131,
+    "research_collections": 9,
+    "research_documents": 163,
     "reader_pathways": 15,
     "published_reader_pathways": 11,
     "reader_pathway_surfaces": 19,
     "phase_55q_gap_decisions": 4,
-    "updates": 27,
+    "updates": 28,
     "public_json_exports": 5,
-    "research_export_records": 133,
+    "research_export_records": 162,
     "pathway_export_records": 11
   },
   "private_authority_layer": {
@@ -90,13 +91,13 @@
     "public_output_policy": "Candidate records, IDs, private notes, and registry paths must not appear in static output or public exports."
   },
   "release_delta_from_v0_1_1": {
-    "static_pages_added": 516,
-    "signals_added": 118,
-    "published_signals_added": 86,
-    "sources_added": 225,
+    "static_pages_added": 598,
+    "signals_added": 134,
+    "published_signals_added": 98,
+    "sources_added": 255,
     "public_json_exports_added": 5,
     "public_update_log_added": true,
-    "summary": "Extends the Phase 55K through Phase 55X evidence baseline with Phase 55Y operational evidence: 327 public sources, 136 signals, 101 Published signals, five local systems, four Published and seven In Review briefings, five Published and one In Review dependency maps, fifteen reader pathways, fifteen evidence gaps, 27 public updates, eight research collections, 131 summarized research documents, and five versioned public-data exports."
+    "summary": "Extends the Phase 55K through Phase 55Y evidence baseline with Phase 55Z comparative operating outcomes: 357 public sources, 152 signals, 113 Published signals, five local systems, five Published and seven In Review briefings, six Published and one In Review dependency maps, fifteen reader pathways, sixteen evidence gaps, 28 public updates, nine research collections, 163 summarized research documents, and five versioned public-data exports."
   },
   "phase_55k_delta": {
     "static_pages_added": 60,
@@ -296,21 +297,21 @@
     "date": "2026-07-24",
     "published_support_minimum_date": "2026-07-22",
     "candidate_validation": "passed-150-local-only-records",
-    "validate_content": "passed-327-sources-136-signals-131-research-documents",
+    "validate_content": "passed-357-sources-152-signals-163-research-documents",
     "source_health": "passed",
-    "source_health_manual_review": 212,
-    "source_health_probe_ready": 115,
+    "source_health_manual_review": 235,
+    "source_health_probe_ready": 122,
     "source_monitor_review_due": 0,
     "source_monitor_watch_soon": 0,
-    "source_monitor_current": 327,
+    "source_monitor_current": 357,
     "source_coverage_strong_lanes": 14,
     "source_coverage_developing_lanes": 0,
     "source_coverage_weak_lanes": 0,
     "astro_check": "passed",
     "build": "passed",
-    "static_pages_built": 698,
-    "release_assertions": "passed-phase-55y",
-    "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-55y-visual-qa-not-requested",
+    "static_pages_built": 780,
+    "release_assertions": "passed-phase-55z",
+    "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-55z-visual-qa-not-requested",
     "browser_viewports": [
       "1440x900",
       "390x844"
@@ -386,7 +387,12 @@
     "dist/atlas/evidence-gaps/gap-015-autonomous-passenger-service-outcomes/index.html",
     "dist/research/operational-evidence-receiving-systems-2024-2026/index.html",
     "dist/downloads/operational-evidence-receiving-systems-2024-2026.zip",
-    "dist/briefings/research-watch-003-operational-evidence/index.html"
+    "dist/briefings/research-watch-003-operational-evidence/index.html",
+    "dist/atlas/evidence-gaps/gap-016-comparable-operating-outcome-denominators/index.html",
+    "dist/atlas/dependency-maps/comparative-outcomes-require-common-denominators/index.html",
+    "dist/research/comparative-operating-outcomes-2023-2026/index.html",
+    "dist/downloads/comparative-operating-outcomes-2023-2026.zip",
+    "dist/briefings/research-watch-004-comparative-operating-outcomes/index.html"
   ],
   "published_signal_routes": [
     "/signals/doe-critical-minerals-materials-accelerator-nofo/",
@@ -489,7 +495,19 @@
     "/signals/chandler-reclaimed-water-operating-scale/",
     "/signals/intel-arizona-water-conservation-2023/",
     "/signals/cpuc-waymo-fared-driverless-expansion-2024/",
-    "/signals/california-av-testing-miles-2024/"
+    "/signals/california-av-testing-miles-2024/",
+    "/signals/federal-ai-inventories-nearly-doubled-2024/",
+    "/signals/irs-ai-inventory-most-cases-not-yet-operational/",
+    "/signals/federal-cdm-data-quality-requires-manual-correction/",
+    "/signals/mep-fy2024-client-reported-manufacturing-outcomes/",
+    "/signals/niimbl-biomanufacturing-program-delivers-47-graduates/",
+    "/signals/arizona-mep-amphenol-reports-932k-savings/",
+    "/signals/us-customer-outage-duration-eleven-hours-2024/",
+    "/signals/texas-batteries-provide-frequency-response-2024/",
+    "/signals/us-mineral-production-and-import-reliance-2025/",
+    "/signals/us-airline-cancellation-rate-2024/",
+    "/signals/california-av-testing-exceeds-nine-million-miles-2025/",
+    "/signals/faa-reaches-one-thousand-commercial-space-operations/"
   ],
   "launch_critical_routes": [
     "/",
@@ -527,7 +545,12 @@
     "/sitemap.xml",
     "/research/operational-evidence-receiving-systems-2024-2026/",
     "/downloads/operational-evidence-receiving-systems-2024-2026.zip",
-    "/briefings/research-watch-003-operational-evidence/"
+    "/briefings/research-watch-003-operational-evidence/",
+    "/research/comparative-operating-outcomes-2023-2026/",
+    "/downloads/comparative-operating-outcomes-2023-2026.zip",
+    "/briefings/research-watch-004-comparative-operating-outcomes/",
+    "/atlas/dependency-maps/comparative-outcomes-require-common-denominators/",
+    "/atlas/evidence-gaps/gap-016-comparable-operating-outcome-denominators/"
   ],
   "indexing_samples": {
     "published_signal": "/signals/doe-critical-minerals-materials-accelerator-nofo/",
@@ -541,7 +564,8 @@
     "/briefings/stack-watch-003-research-to-implementation/",
     "/briefings/stack-watch-004-implementation-outcomes/",
     "/briefings/research-watch-001-cross-corridor-infrastructure-conversion/",
-    "/briefings/research-watch-003-operational-evidence/"
+    "/briefings/research-watch-003-operational-evidence/",
+    "/briefings/research-watch-004-comparative-operating-outcomes/"
   ],
   "in_review_briefing_routes": [
     "/briefings/local-watch-001-conversion-gates/",
@@ -557,7 +581,8 @@
     "/atlas/dependency-maps/local-constraints-where-the-future-arrives/",
     "/atlas/dependency-maps/post-quantum-standards-are-not-migration/",
     "/atlas/dependency-maps/local-authorization-is-not-operation/",
-    "/atlas/dependency-maps/autonomy-rules-are-not-service/"
+    "/atlas/dependency-maps/autonomy-rules-are-not-service/",
+    "/atlas/dependency-maps/comparative-outcomes-require-common-denominators/"
   ],
   "in_review_dependency_map_routes": [
     "/atlas/dependency-maps/observation-data-is-not-local-decision/"
@@ -600,28 +625,32 @@
   },
   "release_gates": [
     "Run all predeploy commands from app/",
-    "Confirm 698 generated HTML pages and all required outputs",
-    "Confirm all 101 Published signal URLs are present in the sitemap",
+    "Confirm 780 generated HTML pages and all required outputs",
+    "Confirm all 113 Published signal URLs are present in the sitemap",
     "Confirm every non-published signal URL is absent from the sitemap",
-    "Confirm all four Published briefing URLs are indexed and the seven In Review briefing URLs remain noindex and outside the sitemap",
-    "Confirm all five Published dependency-map URLs are indexed and present in the sitemap while the one In Review map URL remains noindex and outside the sitemap",
+    "Confirm all five Published briefing URLs are indexed and the seven In Review briefing URLs remain noindex and outside the sitemap",
+    "Confirm all six Published dependency-map URLs are indexed and present in the sitemap while the one In Review map URL remains noindex and outside the sitemap",
     "Confirm Published details use index, follow and non-published details use noindex, follow",
     "Confirm canonical URLs and robots output use https://ftfn.io",
-    "Confirm all 150 sources supporting Published signals were checked on or after 2026-07-22",
+    "Confirm all 166 sources supporting Published signals were checked on or after 2026-07-22",
     "Confirm all five public JSON exports match the versioned allowlist contract",
     "Confirm the Phase 55W decision ledger contains 45 unique signal decisions: 12 promotions, 27 holds, and six Published controls",
     "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
     "Confirm generated output contains no private candidate IDs or registry-path references",
     "Confirm all fifteen reader pathways render across fourteen priority topic pages and five local-system pages with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records",
-    "Confirm the 27-entry public update log renders",
-    "Confirm all eight research collections render 131 document summaries and their downloadable archives",
+    "Confirm the 28-entry public update log renders",
+    "Confirm all nine research collections render 163 document summaries and their downloadable archives",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
     "Attach ftfn.io only after preview checks pass and explicit approval is recorded",
     "Confirm the Phase 55Y ledger contains twelve unique signal decisions: eight Published and four held In Review",
     "Confirm the Phase 55Y collection contains 24 records: twenty Published and four held In Review, all with official-link captures",
     "Confirm the AI assurance and autonomous passenger-service evidence-gap pages render",
-    "Confirm the operational-evidence collection, 27-file ZIP, Published synthesis briefing, Published autonomy pathway, and Published autonomy dependency map render"
+    "Confirm the operational-evidence collection, 27-file ZIP, Published synthesis briefing, Published autonomy pathway, and Published autonomy dependency map render",
+    "Confirm the Phase 55Z ledger contains sixteen unique signal decisions: twelve Published and four held In Review",
+    "Confirm the Phase 55Z collection contains 32 records: 28 Published and four held In Review, all with official-link captures",
+    "Confirm the comparison protocol preserves unit, denominator, period, geography, method, and attribution boundaries",
+    "Confirm the comparative-operating-outcomes collection, 35-file ZIP, Published synthesis briefing, Published comparison map, and gap page render"
   ],
   "out_of_scope": [
     "preview deployment without approval",
@@ -638,7 +667,9 @@
     "numeric 42/59 scoring"
   ],
   "known_limitations": [
-    "Thirty-five signals, seven briefings, and one dependency map remain In Review; all five local-system profiles remain evidence-bounded and do not state readiness scores.",
+    "Thirty-nine signals, seven briefings, and one dependency map remain In Review; all five local-system profiles remain evidence-bounded and do not state readiness scores.",
+    "The Phase 55Z download contains 32 official-link records. It preserves reviewed primary URLs and evidence boundaries without substituting third-party copies.",
+    "Phase 55Z adds operating-outcome records without creating a composite score or ranking. Units, denominators, periods, geographies, methods, and attribution remain attached to every result.",
     "The Phase 55Y download contains 24 official-link records. It preserves reviewed primary URLs and evidence boundaries without substituting third-party copies.",
     "Phase 55Y adds operating comparators and effective road passenger-service authority without claiming AI certification, semiconductor workforce sufficiency, Phoenix TSMC reuse operation, comparative AV safety, or service scale.",
     "The package version remains 0.2.0-dev until an approved public release decision.",
@@ -655,7 +686,7 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the validated local Phase 55Y operational-evidence pass. Phase 55Y adds 24 official records and twelve bounded signals across AI assurance, advanced-manufacturing workforce, industrial water, and autonomous passenger service; eight signals and twenty document summaries publish while four signals and four documents retain explicit pre-operational holds. The autonomy pathway and dependency map publish because the evidence now includes effective fared passenger-service authority in named California geographies. The hosted Sites URL remains owner-only; no public access, DNS, public GitHub, custom-domain, or package change is authorized.",
+  "notes": "This manifest records the validated local Phase 55Z comparative operating-outcomes pass. Phase 55Z adds 32 official records and sixteen bounded signals across institutional AI and cybersecurity, manufacturing, infrastructure, and mobility, aviation, and space; twelve signals and 28 document summaries publish while four signals and four documents retain explicit comparability holds. Research Watch 004, the comparison-protocol map, and gap-016 prevent incompatible rankings. The next owner-only Sites release will combine the pending Phase 55Y checkpoint with Phase 55Z. No public access, DNS, public GitHub, custom-domain, or package change is authorized.",
   "phase_55y_delta": {
     "journeys_deepened": 4,
     "sources_added": 20,
@@ -678,5 +709,27 @@
     "dependency_maps_deepened_and_published": 1,
     "public_update_entries_added": 1,
     "generated_pages_added": 60
+  },
+  "phase_55z_delta": {
+    "outcome_portfolios": 4,
+    "sources_added": 30,
+    "signals_reviewed": 16,
+    "signals_added_published": 12,
+    "signals_added_in_review": 4,
+    "research_collections_added": 1,
+    "research_documents_added": 32,
+    "research_documents_published": 28,
+    "research_documents_held_in_review": 4,
+    "downloadable_official_link_records": 32,
+    "archive_file_count": 35,
+    "archive_sha256": "6DA1BB8CCD3CB6FE344ED7363CD80C1A9E5373216F2B0F0573D165D273F143DE",
+    "briefings_added_published": 1,
+    "evidence_gaps_added": 1,
+    "evidence_gaps_deepened": 7,
+    "reader_pathways_deepened": 8,
+    "topics_deepened": 11,
+    "dependency_maps_added_published": 1,
+    "public_update_entries_added": 1,
+    "generated_pages_added": 82
   }
 }

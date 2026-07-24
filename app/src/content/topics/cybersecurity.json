@@ -3,8 +3,17 @@
   "name": "Cybersecurity",
   "slug": "cybersecurity",
   "summary": "The current shelf connects exploited-vulnerability deadlines, recurring federal asset visibility, AI and national-security infrastructure risk, and protocol-level post-quantum testing. It supports obligations and technical limits while agency compliance, non-federal adoption, incident reduction, and completed migration require separate records.",
-  "framework_layers": ["Enabling Infrastructure", "Human Systems"],
-  "primary_constraints": ["Cybersecurity", "Standards", "Regulation", "Data Quality", "Public Trust"],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "primary_constraints": [
+    "Cybersecurity",
+    "Standards",
+    "Regulation",
+    "Data Quality",
+    "Public Trust"
+  ],
   "featured_sources": [
     "source-nist-nvd-api",
     "source-cisa-kev-catalog",
@@ -27,11 +36,20 @@
     "source-nist-cybersecurity-framework",
     "source-nist-csrc-publications",
     "source-nccoe-pqc-migration",
-    "source-cisa-bod-23-01-asset-visibility"
+    "source-cisa-bod-23-01-asset-visibility",
+    "source-55z-gao-federal-generative-ai-use-2025",
+    "source-55z-gao-federal-ai-acquisitions-2026",
+    "source-55z-gao-irs-ai-management-2026",
+    "source-55z-gao-operational-ai-use-cases-2026",
+    "source-55z-nasa-ai-use-cases-2024",
+    "source-55z-gao-cdm-network-monitoring-2025",
+    "source-55z-gao-fisma-effectiveness-metrics-2024",
+    "source-55z-gao-federal-incident-response-2023"
   ],
   "watch_questions": [
     "Which BOD 23-01 records demonstrate current asset coverage, scan cadence, ownership reconciliation, exceptions, and remediation?",
     "Where do KEV deadlines, AI infrastructure, mobility, energy, space, finance, and post-quantum work become operational obligations?",
-    "Which institutions can prove inventory, patching, procurement, incident response, validation, and migration progress with audit-ready records?"
+    "Which institutions can prove inventory, patching, procurement, incident response, validation, and migration progress with audit-ready records?",
+    "Which agencies disclose compatible remediation, detection, response, recovery, incident, and harm measures with risk and scale context?"
   ]
 }

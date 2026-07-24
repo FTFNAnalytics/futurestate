@@ -6,11 +6,20 @@
   "priority": "High",
   "local_system": "Cross-system",
   "primary_topic": "AI for Science",
-  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
-  "constraint_tags": ["Standards", "Data Quality", "Safety", "Cybersecurity"],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Frontier Domains",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Standards",
+    "Data Quality",
+    "Safety",
+    "Cybersecurity"
+  ],
   "question": "Which records show that AI assurance methods have been adopted, validated, and maintained for named operating systems?",
   "why_it_matters": "Risk frameworks and evaluation methods only become operating assurance when institutions select controls, test named systems, act on findings, monitor production behavior, and disclose outcomes.",
-  "current_support": "FTFN now has the NIST AI RMF Core, AI Metrology Center, TEVV program, and a completed ARIA 0.1 pilot involving five organizations and seven applications across model testing, red teaming, and field testing.",
+  "current_support": "FTFN now combines NIST assurance methods with GAO's 11-agency inventory analysis, IRS maturity and data-quality findings, GAO operational use cases, federal AI acquisition oversight, NASA active-use examples, and federal cyber-program implementation results.",
   "missing_evidence": [
     "institution-level control adoption",
     "system inventories and authorization decisions",
@@ -32,35 +41,51 @@
     "agency system-level evaluation and authorization records",
     "production monitoring, incident, and corrective-action evidence"
   ],
-  "next_action": "Follow ARIA into repeat evaluations and the zero-draft outline into a full draft, final standard, conformity-assessment practice, institutional adoption, named authorization, and production evidence.",
-  "future_data_model_need": ["Dataset", "Policy or Regulation", "Project"],
+  "next_action": "Follow agency inventories and audits into named system usage, impact assessment, authorization, performance, incident, corrective-action, cost, mission-benefit, and retirement records.",
+  "future_data_model_need": [
+    "Dataset",
+    "Policy or Regulation",
+    "Project"
+  ],
   "related_source_ids": [
     "source-nist-ai-rmf",
     "source-nist-ai-metrology-center",
     "source-nist-ai-tevv-program",
     "source-nist-aria-pilot-evaluation-2025",
     "source-nist-aria-evaluation-program",
-    "source-nist-ai-tevv-zero-draft-2025"
+    "source-nist-ai-tevv-zero-draft-2025",
+    "source-55z-gao-federal-generative-ai-use-2025",
+    "source-55z-gao-federal-ai-acquisitions-2026",
+    "source-55z-gao-irs-ai-management-2026",
+    "source-55z-gao-operational-ai-use-cases-2026",
+    "source-55z-nasa-ai-use-cases-2024",
+    "source-55z-gao-cdm-network-monitoring-2025",
+    "source-55z-gao-fisma-effectiveness-metrics-2024",
+    "source-55z-gao-federal-incident-response-2023"
   ],
   "related_signal_ids": [
     "signal-nist-ai-rmf-critical-infrastructure-profile-concept",
     "signal-nist-aria-pilot-multilevel-evaluation",
     "signal-nist-ai-metrology-method-selection-layer",
-    "signal-nist-ai-tevv-standard-remains-zero-draft"
+    "signal-nist-ai-tevv-standard-remains-zero-draft",
+    "signal-federal-ai-inventories-nearly-doubled-2024",
+    "signal-irs-ai-inventory-most-cases-not-yet-operational",
+    "signal-federal-cdm-data-quality-requires-manual-correction",
+    "signal-nasa-ai-use-cases-lack-comparable-outcome-measures"
   ],
   "related_local_system_ids": [],
   "latest_review": {
-    "phase": "Phase 55Y",
+    "phase": "Phase 55Z",
     "decision": "Source Added",
     "review_date": "2026-07-24",
     "named_records": [
-      "NIST ARIA 0.1 Pilot Evaluation Report",
-      "NIST AI Metrology Center",
-      "NIST AI TEVV Program",
-      "Proposed Zero Draft Outline for an AI TEVV Standard"
+      "GAO Generative AI Use and Management at Federal Agencies",
+      "GAO IRS AI Skills, Information Quality, and Strategic Management",
+      "GAO Continuous Diagnostics and Mitigation Network Monitoring",
+      "NASA 2024 AI Use Cases"
     ],
-    "stage_result": "The assurance shelf now includes a completed multi-level pilot, method-selection resources, and a standards-development trail. It still lacks institution-level adoption, authorization, repeat testing, production monitoring, incidents, and measured operating outcomes.",
-    "stop_rule": "Do not treat a pilot, resource catalog, framework, or zero-draft outline as certification, institutional adoption, or validated operating performance."
+    "stage_result": "The evidence now reaches inventory growth, operational examples, maturity gaps, acquisition oversight, and cyber-program implementation. Comparable system-level benefits and incidents remain incomplete.",
+    "stop_rule": "Do not treat inventory growth, active-use labels, acquisition, or cybersecurity-tool deployment as measured mission benefit or assurance."
   },
   "notes": "Phase 55Y creates a dedicated assurance gap so AI policy and procurement records are not mistaken for tested and maintained operation."
 }

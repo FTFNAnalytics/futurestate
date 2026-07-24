@@ -3,8 +3,18 @@
   "name": "Critical Minerals",
   "slug": "critical-minerals",
   "summary": "The current shelf spans national mineral baselines and a Nevada project corridor where resources, federal land decisions, state permits, water rights, federal credit, construction, qualification, production, and industrial use remain distinct stages.",
-  "framework_layers": ["Resource Foundations", "Enabling Infrastructure", "Human Systems"],
-  "primary_constraints": ["Materials", "Supply Chain", "Geopolitics", "Permitting", "Data Quality"],
+  "framework_layers": [
+    "Resource Foundations",
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "primary_constraints": [
+    "Materials",
+    "Supply Chain",
+    "Geopolitics",
+    "Permitting",
+    "Data Quality"
+  ],
   "featured_sources": [
     "source-usgs-mineral-commodity-summaries",
     "source-defense-supply-chains-critical-materials-2026",
@@ -23,11 +33,13 @@
     "source-blm-rhyolite-ridge-rod-2024",
     "source-ndep-rhyolite-ridge-water-permit-2025",
     "source-ndep-rhyolite-ridge-air-permit",
-    "source-ndep-thacker-pass-project"
+    "source-ndep-thacker-pass-project",
+    "source-55z-usgs-mcs-2026-data-release"
   ],
   "watch_questions": [
     "Which materials are becoming binding constraints for chips, batteries, grids, defense, and advanced manufacturing?",
     "Where do official mineral baselines diverge from fast-moving market, policy, and local permitting conditions?",
-    "Which authorized Nevada projects produce compliant, customer-qualified, sustained material output?"
+    "Which authorized Nevada projects produce compliant, customer-qualified, sustained material output?",
+    "Which commodity and facility records connect production, trade, refining, qualification, inventory, price, recycling, and disruption?"
   ]
 }

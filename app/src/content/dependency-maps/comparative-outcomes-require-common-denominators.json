@@ -1,0 +1,199 @@
+{
+  "id": "dependency-map-comparative-outcomes-require-common-denominators",
+  "title": "Comparative outcomes require common denominators",
+  "slug": "comparative-outcomes-require-common-denominators",
+  "summary": "An evidence-gap map showing how operating records become comparable only after unit, denominator, period, geography, method, and attribution align.",
+  "map_type": "Evidence Gap Map",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": [
+    "Resource Foundations",
+    "Enabling Infrastructure",
+    "Frontier Domains",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Standards",
+    "Data Quality",
+    "Unit Economics",
+    "Safety",
+    "Public Trust"
+  ],
+  "map_question": "When can operating records support a comparison, and when must they remain parallel evidence trails?",
+  "interpretation_boundary": "The map is a comparison protocol, not a score. It does not rank AI, cybersecurity, manufacturing, infrastructure, mobility, aviation, or space systems.",
+  "source_ids": [
+    "source-55z-gao-federal-generative-ai-use-2025",
+    "source-55z-gao-federal-ai-acquisitions-2026",
+    "source-55z-gao-irs-ai-management-2026",
+    "source-55z-gao-operational-ai-use-cases-2026",
+    "source-55z-nasa-ai-use-cases-2024",
+    "source-55z-gao-cdm-network-monitoring-2025",
+    "source-55z-gao-fisma-effectiveness-metrics-2024",
+    "source-55z-gao-federal-incident-response-2023",
+    "source-55z-nist-mep-fy2024-network-results",
+    "source-55z-nist-mep-fy2024-client-challenges",
+    "source-55z-manufacturing-usa-report-to-congress-2025",
+    "source-55z-niimbl-annual-report-2023-2024",
+    "source-55z-mxd-future-factory-project-portfolio-2025",
+    "source-55z-iacmi-composites-operating-results-2025",
+    "source-55z-niimbl-door-to-floor-training-outcomes",
+    "source-55z-nist-amphenol-arizona-mep-results-2026",
+    "source-55z-nerc-state-of-reliability-2025",
+    "source-55z-eia-us-outage-duration-2024",
+    "source-55z-eia-battery-capacity-2024",
+    "source-55z-eia-battery-storage-market-trends-2026",
+    "source-55z-epa-water-reuse-action-plan-year-five",
+    "source-55z-epa-water-reuse-monitoring-practices-2024",
+    "source-usgs-mineral-commodity-summaries",
+    "source-55z-usgs-mcs-2026-data-release",
+    "source-55z-bts-air-travel-consumer-report-2024",
+    "source-55z-bts-airline-on-time-tables-2025",
+    "source-55z-cpuc-av-quarterly-reporting-2026",
+    "source-55z-california-dmv-av-test-miles-2025",
+    "source-nhtsa-sgo-crash-reporting",
+    "source-55z-faa-one-thousand-commercial-space-operations-2025",
+    "source-55z-faa-fy2024-commercial-space-operations",
+    "source-55z-nasa-space-operations-outcomes-2025"
+  ],
+  "signal_ids": [
+    "signal-federal-ai-inventories-nearly-doubled-2024",
+    "signal-irs-ai-inventory-most-cases-not-yet-operational",
+    "signal-federal-cdm-data-quality-requires-manual-correction",
+    "signal-mep-fy2024-client-reported-manufacturing-outcomes",
+    "signal-niimbl-biomanufacturing-program-delivers-47-graduates",
+    "signal-arizona-mep-amphenol-reports-932k-savings",
+    "signal-us-customer-outage-duration-eleven-hours-2024",
+    "signal-texas-batteries-provide-frequency-response-2024",
+    "signal-us-mineral-production-and-import-reliance-2025",
+    "signal-us-airline-cancellation-rate-2024",
+    "signal-california-av-testing-exceeds-nine-million-miles-2025",
+    "signal-faa-reaches-one-thousand-commercial-space-operations"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [],
+  "evidence_gap_ids": [
+    "gap-016"
+  ],
+  "nodes": [
+    {
+      "id": "node-ai",
+      "label": "AI and cyber outcomes",
+      "node_type": "Signal",
+      "record_id": "signal-federal-ai-inventories-nearly-doubled-2024",
+      "note": "Inventory, maturity, implementation, incident, and benefit measures remain distinct."
+    },
+    {
+      "id": "node-manufacturing",
+      "label": "Manufacturing outcomes",
+      "node_type": "Signal",
+      "record_id": "signal-mep-fy2024-client-reported-manufacturing-outcomes",
+      "note": "Participation, completion, placement, sales, savings, jobs, quality, and productivity use different denominators."
+    },
+    {
+      "id": "node-infrastructure",
+      "label": "Infrastructure outcomes",
+      "node_type": "Signal",
+      "record_id": "signal-us-customer-outage-duration-eleven-hours-2024",
+      "note": "Capacity, service, reliability, commodity, and water measures answer different questions."
+    },
+    {
+      "id": "node-mobility",
+      "label": "Mobility and mission outcomes",
+      "node_type": "Signal",
+      "record_id": "signal-us-airline-cancellation-rate-2024",
+      "note": "Trips, flights, miles, incidents, operations, missions, and cargo must retain system context."
+    },
+    {
+      "id": "node-unit",
+      "label": "Unit and denominator",
+      "node_type": "Constraint",
+      "note": "The quantity and population or exposure base must match."
+    },
+    {
+      "id": "node-context",
+      "label": "Period, geography, and method",
+      "node_type": "Constraint",
+      "note": "Records must cover compatible time, place, scope, and collection rules."
+    },
+    {
+      "id": "node-attribution",
+      "label": "Attribution and validation",
+      "node_type": "Constraint",
+      "note": "Official, audited, company-attributed, and modeled results must remain labeled."
+    },
+    {
+      "id": "node-gap",
+      "label": "Comparable outcome evidence",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-016",
+      "note": "Comparison begins only after the measurement contracts align."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-ai",
+      "to": "node-unit",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "Use-case counts do not share a denominator with mission or productivity outcomes."
+    },
+    {
+      "from": "node-manufacturing",
+      "to": "node-unit",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "Engagements, graduates, jobs, dollars, and quality measures are not interchangeable."
+    },
+    {
+      "from": "node-infrastructure",
+      "to": "node-context",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "Grid, water, storage, and mineral results differ by asset, customer, commodity, region, and period."
+    },
+    {
+      "from": "node-mobility",
+      "to": "node-context",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "Road, airline, and space operating systems use different reporting regimes."
+    },
+    {
+      "from": "node-unit",
+      "to": "node-gap",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Compatible denominators are incomplete in several portfolios."
+    },
+    {
+      "from": "node-context",
+      "to": "node-gap",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Periods, geographies, and methods are not consistently aligned."
+    },
+    {
+      "from": "node-attribution",
+      "to": "node-gap",
+      "relationship": "Limited By",
+      "confidence": "Watch",
+      "note": "Attributed results require validation before causal interpretation."
+    }
+  ],
+  "what_this_map_supports": [
+    "FTFN can publish bounded outcome records while preserving their original measurement contracts.",
+    "Within-domain comparisons may proceed when unit, denominator, period, geography, method, and attribution align.",
+    "Explicit holds identify where activity or reporting structure has not become a comparable outcome."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not create a cross-portfolio score or ranking.",
+    "It does not equate activity, capacity, exposure, service, reliability, safety, cost, or local benefit.",
+    "It does not convert company-attributed results into audited causal effects."
+  ],
+  "next_records_needed": [
+    "Machine-readable data dictionaries and revision histories.",
+    "Compatible within-domain denominators and follow-up periods.",
+    "Independent validation and quality controls.",
+    "Asset-, customer-, operator-, commodity-, and geography-level outcome records."
+  ]
+}
