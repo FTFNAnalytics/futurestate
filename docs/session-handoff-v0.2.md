@@ -17,7 +17,7 @@ Content: 298 sources, 112 signals, 17 topics, 5 local systems, 6 research collec
 Publication: 85 Published signals, 27 In Review signals, 3 Published briefings, 6 In Review briefings, 4 Published and 2 In Review dependency maps
 Trust/data: 25 update entries, 13 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file research archives
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Phase 55W refresh pending; existing Phase 55V Sites version 21 remains protected with one allowed owner and no groups
+Deployment: owner-only Sites version 22 serves exact Phase 55W private source commit 7ba179bf4ee1beaec5a7ba2299800bebb210c0c8; one allowed owner and no groups
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 192 Manual Review, 106 Probe Ready; 14 Strong coverage lanes
 Next phase: Phase 55X dossier-led authority expansion; six dated inserts remain scheduled
@@ -99,6 +99,7 @@ The approved preview sequence is complete:
 44. Published Research Watch 001 and `Local Authorization Is Not Operation`; retained six briefings and two maps In Review.
 45. Added four Published pathways, multi-dimensional signal and source discovery, separate collection/document research shelves, topic-level latest-evidence shelves, and research/pathway exports.
 46. Verified 591 pages, 298 sources, 112 signals, 85 Published, 27 In Review, 134 current Published-support sources, 25 updates, 15 pathways across 19 Atlas surfaces, and five public-data exports.
+47. Matched local app commit `bdc34a225f0e27233c39d28df4ccf3c61e7d8776` to private Sites source commit `7ba179bf4ee1beaec5a7ba2299800bebb210c0c8`, deployed owner-only Sites version 22, and confirmed custom access with one allowed owner and no groups.
 
 ## Required Stop Points
 
@@ -152,7 +153,7 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 55W. The current candidate should be 0.2.0-dev on codex/phase51-content with 298 sources, 112 signals, 85 Published signals, 27 In Review signals, five local systems, three Published briefings, six In Review briefings, four Published and two In Review dependency maps, thirteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 25 public updates, five JSON exports, 591 generated site pages, six research collections, 83 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file download archives. The owner-only Phase 55W hosting receipt is recorded after deployment; public access and DNS remain unchanged.
+The latest completed work is Phase 55W. The current candidate should be 0.2.0-dev on codex/phase51-content with 298 sources, 112 signals, 85 Published signals, 27 In Review signals, five local systems, three Published briefings, six In Review briefings, four Published and two In Review dependency maps, thirteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 25 public updates, five JSON exports, 591 generated site pages, six research collections, 83 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file download archives. Exact private Sites source commit `7ba179bf4ee1beaec5a7ba2299800bebb210c0c8` is live as owner-only Sites version 22 at https://ftfn-analytics.jbumstead.chatgpt.site with one allowed owner and no groups; public access and DNS remain unchanged.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 

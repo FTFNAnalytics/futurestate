@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: locally complete and release-verified; owner-only deployment pending
+Status: complete, release-verified, and deployed as owner-only Sites version 22
 
 ## Objective
 
@@ -131,6 +131,15 @@ npm run check
 npm run build
 npm run verify:release
 ```
+
+Deployment receipt:
+
+- local app commit: `bdc34a225f0e27233c39d28df4ccf3c61e7d8776`;
+- exact private Sites source commit: `7ba179bf4ee1beaec5a7ba2299800bebb210c0c8`;
+- Sites version: 22;
+- deployment: `appgdep_6a63c9e41ee08191bc4306c15590378d`;
+- URL: `https://ftfn-analytics.jbumstead.chatgpt.site`;
+- access: custom, one allowed owner, no groups.
 
 ## Next Content Gate
 

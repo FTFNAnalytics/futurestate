@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: Phase 55W local release gates passed; owner-only deployment refresh pending.
+Status: Phase 55W local release and owner-only Sites version 22 deployment gates passed.
 
 ## Artifact Under Review
 
@@ -268,4 +268,4 @@ Phase 55W changes publication membership, discovery behavior, pathway content, t
 - required discovery markers for signal filters, research shelves, Source Monitor controls, topic-level latest evidence, and the `/data/` landing page;
 - canonicals, robots, sitemap, required outputs, and private-registry exclusion.
 
-A repeat visual-browser pass was not requested. Structural discovery assertions, Astro diagnostics, the full static build, and route/export checks pass. The Phase 55W owner-only deployment receipt is recorded after hosting completes; no public-access, public-GitHub, package, Hostinger DNS, or custom-domain change is authorized.
+A repeat visual-browser pass was not requested. Structural discovery assertions, Astro diagnostics, the full static build, and route/export checks pass. Local app commit `bdc34a225f0e27233c39d28df4ccf3c61e7d8776` matches private source commit `7ba179bf4ee1beaec5a7ba2299800bebb210c0c8`, deployed successfully as owner-only Sites version 22 in deployment `appgdep_6a63c9e41ee08191bc4306c15590378d` at `https://ftfn-analytics.jbumstead.chatgpt.site`. The site remains custom-access with one allowed owner and no groups; no public-access, public-GitHub, package, Hostinger DNS, or custom-domain change is authorized.

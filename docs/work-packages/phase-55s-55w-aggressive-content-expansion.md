@@ -1,7 +1,7 @@
 # Phases 55S-55W Aggressive Content Expansion
 
 Date: 2026-07-24
-Status: complete through Phase 55W; final owner-only deployment receipt pending
+Status: complete through Phase 55W; owner-only Sites version 22 deployed
 
 ## Direction
 
@@ -255,6 +255,7 @@ Phase 55W result:
 - strengthened Source Monitor discovery and added latest Published and research evidence to all topic pages;
 - expanded the public-data contract from three to five exports with a dedicated `/data/` landing page;
 - verified 591 pages, 298 sources, 112 signals, 85 Published, 27 In Review, 134 current Published-support sources, 25 updates, nine briefings, six maps, six collections, 83 research documents, and 15 pathways.
+- matched local app commit `bdc34a225f0e27233c39d28df4ccf3c61e7d8776` to private source commit `7ba179bf4ee1beaec5a7ba2299800bebb210c0c8` and deployed owner-only Sites version 22 with custom access, one allowed owner, and no groups.
 
 The complete decision and implementation record is `docs/work-packages/phase-55w-publication-navigation-scale.md`.
 
