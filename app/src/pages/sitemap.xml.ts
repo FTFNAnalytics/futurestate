@@ -25,6 +25,7 @@ export const GET: APIRoute = async () => {
     organizations,
     technologies,
     localSystems,
+    evidenceGaps,
     dependencyMaps,
     briefings,
     researchCollections,
@@ -36,6 +37,7 @@ export const GET: APIRoute = async () => {
     getCollection("organizations"),
     getCollection("technologies"),
     getCollection("localSystems"),
+    getCollection("evidenceGaps"),
     getCollection("dependencyMaps"),
     getCollection("briefings"),
     getCollection("researchCollections"),
@@ -53,6 +55,7 @@ export const GET: APIRoute = async () => {
     "/atlas/organizations/",
     "/atlas/technologies/",
     "/atlas/local-systems/",
+    "/atlas/evidence-gaps/",
     "/atlas/dependency-maps/",
     "/research/",
     "/briefings/",
@@ -71,6 +74,7 @@ export const GET: APIRoute = async () => {
     ...organizations.map((organization) => urlEntry(`/atlas/organizations/${organization.data.slug}/`)),
     ...technologies.map((technology) => urlEntry(`/atlas/technologies/${technology.data.slug}/`)),
     ...localSystems.map((system) => urlEntry(`/atlas/local-systems/${system.data.slug}/`, system.data.last_reviewed_date)),
+    ...evidenceGaps.map((gap) => urlEntry(`/atlas/evidence-gaps/${gap.data.slug}/`, gap.data.latest_review?.review_date)),
     ...dependencyMaps
       .filter((dependencyMap) => dependencyMap.data.record_status === "Published")
       .map((dependencyMap) => urlEntry(`/atlas/dependency-maps/${dependencyMap.data.slug}/`)),

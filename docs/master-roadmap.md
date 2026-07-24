@@ -1195,16 +1195,19 @@ Completed:
 - Completed Phase 55P locally: added six structured reader pathways across five priority topic pages and both local-system pages, with current-state summaries, ordered dependency stacks, evidence limits, Published evidence links, explicit gaps, and named next records.
 - Added content and release assertions for six pathways across seven existing Atlas surfaces; the verified contract remains 380 pages, 189 sources, 63 signals, 38 Published, and 25 In Review while advancing to 18 updates.
 - Deployed exact Phase 55P source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` as owner-only Sites version 14 without changing access, custom-domain state, or DNS.
+- Completed Phase 55Q locally: assigned explicit decisions to six high-value gaps, added five named official sources and four bounded Published signals, repaired both local dossiers and five reader pathways, and added the nineteenth public update.
+- Added structured latest-review metadata plus gap-detail and sitemap release assertions; the verified contract is 389 pages, 194 sources, 67 signals, 42 Published, 25 In Review, six Phase 55Q gap decisions, and 70 current Published-support sources.
+- Preserved the existing August 1 Toronto Phase 55H task and added the September 22 Arizona wastewater acceptance and operation recheck; owner-only Phase 55Q publication is pending.
 
 Next candidate work:
 
-- Phase 55H dated insert: after the July 29-31 Council window, recheck Toronto application `24 254930` for disposition, amendments, bill and by-law status, condition compliance, and later permits. Record a dated negative result and stop if the official stage did not advance.
-- Phase 55Q: choose four to six high-value evidence gaps from the completed pathways, led by Arizona power, water, and workforce; Ontario conversion and permit-to-start evidence; and institution-level post-quantum implementation. Require named authoritative records and a material stage change before drafting.
+- Phase 55H dated insert: run the existing August 1 task to recheck Toronto application `24 254930` for disposition, amendments, bill and by-law status, condition compliance, and later permits. Record a dated negative result and stop if the official stage did not advance.
+- Phase 55Q is complete; preserve its two Narrowed, three Source Added, and one Dated Hold decisions rather than reopening a broad volume target.
 - Phase 55R dated insert: after August 9, recheck the DARPA Lift Challenge for measured results, winners, prize awards, and transition evidence. Keep the scheduled-trial record `In Review` if no independently useful outcome exists.
 - Continue the NSTC and NAPMP recipient-level reconciliation, GAO prototype-OTA oversight trail, O-RAN external testing and adoption trail, PIV revision and pilot trail, Phoenix Fab 3 conversion trail, and Project Baccara downstream stages only where they serve a selected pathway or evidence gap.
 - Keep future In Review dependency-map details `noindex, follow` and outside the sitemap; local-system profiles remain qualitative prelaunch dossiers without a Published state.
 - Preserve separate award, obligation, physical milestone, permit, test, acceptance, operation, and scale stages for every record.
-- Keep the owner-only Phase 55P checkpoint, Supabase activation, public access, package freeze, DNS, custom-domain attachment, and public GitHub synchronization as separate tracks or approval gates.
+- Keep the owner-only Phase 55Q checkpoint, Supabase activation, public access, package freeze, DNS, custom-domain attachment, and public GitHub synchronization as separate tracks or approval gates.
 
 Decision:
 

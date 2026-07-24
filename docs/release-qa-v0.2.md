@@ -2,16 +2,16 @@
 
 Date: 2026-07-24
 
-Status: Phase 55P release gate and owner-only Sites version 14 deployment passed.
+Status: Phase 55Q local release gate passed; owner-only Sites publication pending.
 
 ## Artifact Under Review
 
 - Build manifest: `deployment/ftfn-v0.2-build.json`
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
-- Expected build: 380 HTML pages
-- Content baseline: 189 sources, 63 signals, 17 topics, 18 update entries, 6 reader pathways across 7 Atlas surfaces, 5 briefings, 3 dependency maps, 3 research collections, 47 research documents
-- Publication baseline: 38 Published signals, 25 In Review signals, 2 Published briefings, 3 In Review briefings, 3 Published dependency maps
+- Expected build: 389 HTML pages
+- Content baseline: 194 sources, 67 signals, 17 topics, 19 update entries, 6 Phase 55Q gap decisions, 6 reader pathways across 7 Atlas surfaces, 5 briefings, 3 dependency maps, 3 research collections, 47 research documents
+- Publication baseline: 42 Published signals, 25 In Review signals, 2 Published briefings, 3 In Review briefings, 3 Published dependency maps
 
 The package remains `0.2.0-dev`. The owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
 
@@ -32,17 +32,17 @@ Result:
 | Check | Result |
 | --- | --- |
 | Private candidates | Passed: 150 records; 132 Candidate, 11 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage |
-| Content references | Passed: 189 sources, 63 signals, 17 topics, 19 organizations, 5 technologies, 2 local systems, 5 briefings, 10 evidence gaps, 3 dependency maps, 3 research collections, 47 research documents, 6 reader pathways, 18 updates |
-| Source endpoint metadata | Passed: 116 Manual review, 73 Probe ready |
+| Content references | Passed: 194 sources, 67 signals, 17 topics, 19 organizations, 5 technologies, 2 local systems, 5 briefings, 10 evidence gaps, 3 dependency maps, 3 research collections, 47 research documents, 6 reader pathways, 19 updates |
+| Source endpoint metadata | Passed: 120 Manual review, 74 Probe ready |
 | Astro diagnostics | Passed: 0 errors, 0 warnings, 0 hints |
-| Static build | Passed: 380 HTML pages |
-| Release assertions | Passed: required outputs, 6 pathways across 7 Atlas surfaces, update log, exports, Published-source dates, robots, sitemap, canonical, and indexing boundaries |
+| Static build | Passed: 389 HTML pages |
+| Release assertions | Passed: required outputs, 6 Phase 55Q gap decisions, 6 pathways across 7 Atlas surfaces, update log, exports, Published-source dates, robots, sitemap, canonical, and indexing boundaries |
 
 The release assertion is preserved as `npm run verify:release`. It reads the v0.2 manifest and fails if the checked build no longer matches the release contract.
 
 ## Current-Source Gate
 
-The 38 Published signals resolve to 66 unique source records. All 66 have a `last_checked_date` on or after `2026-07-22`.
+The 42 Published signals resolve to 70 unique source records. All 70 have a `last_checked_date` on or after `2026-07-22`.
 
 Phase 55F retained the Phase 54 source floor and refreshed the older NASA Artemis, USDA plant-breeding, and CMHC portal support rails. The verifier now reads the expected support-source count and minimum checked date from the release manifest rather than hard-coding the earlier nine-record baseline.
 
@@ -158,8 +158,8 @@ Hosted checkpoint:
 
 ## Verdict
 
-Phase 55P adds a structured reader-pathway collection, a reusable Atlas reader component, and a pathway index on the existing Atlas landing page. It deepens five priority topic pages and both local-system pages, strengthens content and release assertions, and adds one update record. It changes no source count, signal count, publication membership, client-side behavior, or route count.
+Phase 55Q adds five named official sources, four bounded Published signals, one structured evidence-gap decision block, and one update record. It repairs both local dossiers and five reader pathways, exposes latest decisions on the evidence-gap index and details, and adds evidence-gap routes to the sitemap.
 
-The 380-page artifact passes private-candidate validation, content references, source endpoint metadata, Astro diagnostics, static generation, the 38-route Published-signal sitemap contract, two Published briefing routes, three Published dependency-map routes, six pathways across seven existing Atlas surfaces, non-published exclusion, canonical and indexing rules, the three public exports, the eighteen-entry update log, all three research archives, and private-registry exclusion.
+The 389-page artifact passes private-candidate validation, content references, source endpoint metadata, Astro diagnostics, static generation, the 42-route Published-signal sitemap contract, all ten evidence-gap routes, exactly six Phase 55Q decisions, two Published briefing routes, three Published dependency-map routes, six pathways across seven existing Atlas surfaces, non-published exclusion, canonical and indexing rules, the three public exports, the nineteen-entry update log, all three research archives, and private-registry exclusion.
 
-Exact Phase 55P source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` is deployed as owner-only Sites version 14 at `https://ftfn-analytics.jbumstead.chatgpt.site`. The access policy remains custom with one allowed owner and no groups. The Phase 55P visual/browser pass was not requested; automated page, content, canonical, sitemap, and release-contract checks passed. The build is not approved for public access or public launch. Phase 55Q evidence-gap closure is the next executable content work; the post-meeting Toronto Council and DARPA Lift Challenge checks remain dated inserts.
+Phase 55Q owner-only Sites publication is pending at `https://ftfn-analytics.jbumstead.chatgpt.site`. The required access policy remains custom with one allowed owner and no groups. A Phase 55Q visual/browser pass was not requested; automated page, content, canonical, sitemap, and release-contract checks passed. The build is not approved for public access or public launch. The Toronto Phase 55H task runs August 1, the DARPA Lift Phase 55R gate follows August 9, and the Arizona wastewater hold reopens September 22.

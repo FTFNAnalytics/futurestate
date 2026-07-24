@@ -157,6 +157,12 @@ const evidenceGapStatus = z.enum([
 ]);
 
 const evidenceGapPriority = z.enum(["High", "Medium", "Low"]);
+const evidenceGapDecision = z.enum([
+  "Source Added",
+  "Narrowed",
+  "Dated Hold",
+  "Resolved"
+]);
 
 const dependencyMapType = z.enum([
   "Dependency Stack",
@@ -512,6 +518,15 @@ const evidenceGaps = defineCollection({
     related_source_ids: z.array(z.string()).default([]),
     related_signal_ids: z.array(z.string()).default([]),
     related_local_system_ids: z.array(z.string()).default([]),
+    latest_review: z.object({
+      phase: z.string(),
+      decision: evidenceGapDecision,
+      review_date: z.coerce.date(),
+      named_records: requiredStrings,
+      stage_result: z.string(),
+      stop_rule: z.string(),
+      next_check_date: z.coerce.date().optional()
+    }).optional(),
     notes: z.string().optional()
   })
 });

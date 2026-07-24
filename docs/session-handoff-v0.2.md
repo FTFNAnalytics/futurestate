@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 55P reader pathways and priority topic dossiers
+Latest completed work: Phase 55Q high-value evidence-gap closure
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 380 generated site pages
-Content: 189 sources, 63 signals, 17 topics, 3 research collections / 47 research documents
-Publication: 38 Published signals, 25 In Review signals, 2 Published briefings, 3 In Review briefings, 3 Published dependency maps
-Trust/data: 18 update entries, 6 reader pathways across 7 Atlas surfaces, 3 versioned JSON exports, verified 26-file, 11-file, and 19-file research archives
+Build: 389 generated site pages
+Content: 194 sources, 67 signals, 17 topics, 3 research collections / 47 research documents
+Publication: 42 Published signals, 25 In Review signals, 2 Published briefings, 3 In Review briefings, 3 Published dependency maps
+Trust/data: 19 update entries, 6 Phase 55Q gap decisions, 6 reader pathways across 7 Atlas surfaces, 3 versioned JSON exports, verified 26-file, 11-file, and 19-file research archives
 Private authority layer: 150 candidates, 15 profiles, 132 Candidate, 11 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 14 from 8b43caeb at https://ftfn-analytics.jbumstead.chatgpt.site
+Deployment: Phase 55Q owner-only Sites publication pending; version 14 remains the current hosted checkpoint at https://ftfn-analytics.jbumstead.chatgpt.site
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 116 Manual Review, 73 Probe Ready; 14 Strong coverage lanes
-Next phase: Phase 55Q evidence-gap closure now; Phase 55H after July 31; Phase 55R after August 9
+Source health: 120 Manual Review, 74 Probe Ready; 14 Strong coverage lanes
+Next phase: Phase 55H scheduled for August 1; Phase 55R after August 9; Arizona wastewater recheck September 22
 ```
 
 ## Read First
@@ -41,7 +41,7 @@ Use this short order:
 The new session should verify rather than assume:
 
 1. Run `git status --short --branch`.
-2. Confirm `git log --oneline --decorate -20` still has `35f26f4` in the current history and inspect the newer Phase 55A-55M commits.
+2. Confirm `git log --oneline --decorate -20` still has `35f26f4` in the current history and inspect the newer Phase 55A-55Q commits.
 3. Compare the current branch with `origin/main` and confirm which remote branches exist.
 4. Read the v0.2 manifest and confirm package/count expectations still match the repository.
 5. Review any current documentation or content diff before committing it.
@@ -77,6 +77,8 @@ The approved preview sequence is complete:
 22. Deployed exact source commit `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad` as owner-only Sites version 13 with one allowed owner, no groups, and no access or DNS change.
 23. Completed Phase 55P: six structured reader pathways now deepen five priority topic pages and both local-system pages, connect 30 distinct Published signals to the Published synthesis and research layers, preserve eight explicit evidence gaps, and add the eighteenth update without adding routes.
 24. Deployed exact source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` as owner-only Sites version 14 with one allowed owner, no groups, and no access, custom-domain, or DNS change.
+25. Completed Phase 55Q locally: six structured gap decisions, five named official sources, four bounded Published signals, dossier and pathway repairs, 19 updates, and a passing 389-page release contract.
+26. Preserved the Toronto Phase 55H task for August 1 and added the Arizona wastewater acceptance and operation recheck for September 22.
 
 ## Required Stop Points
 
@@ -130,9 +132,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is the Phase 55P reader-pathway expansion. The current candidate should be 0.2.0-dev on codex/phase51-content with 189 sources, 63 signals, 38 Published signals, 25 In Review signals, two Published briefings, three In Review briefings, three Published dependency maps, six reader pathways across seven existing Atlas surfaces, 18 public updates, three JSON exports, 380 generated site pages, three research collections, 47 research documents, and verified 26-file, 11-file, and 19-file download archives. Sites version 14 serves exact source commit 8b43caeb7db1debefab3292ed1913ce8bd2b557e at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site. The branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
+The latest completed work is the Phase 55Q evidence-gap closure batch. The current candidate should be 0.2.0-dev on codex/phase51-content with 194 sources, 67 signals, 42 Published signals, 25 In Review signals, two Published briefings, three In Review briefings, three Published dependency maps, six Phase 55Q gap decisions, six reader pathways across seven existing Atlas surfaces, 19 public updates, three JSON exports, 389 generated site pages, three research collections, 47 research documents, and verified 26-file, 11-file, and 19-file download archives. Phase 55Q owner-only Sites publication may still be pending; verify the manifest and deployment receipt rather than assuming the prior version 14 checkpoint is current. The branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
 
 Phase 55I completed the first-pass review of all 150 local-only private candidates across 15 profiles: 132 Candidate, 11 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55P is complete: use the six pathways to choose four to six Phase 55Q evidence gaps with named authoritative records, material stage-change criteria, and dated hold rules. Insert Phase 55H after the July 29-31 Council window and Phase 55R after August 9. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55Q is complete. Run the existing Phase 55H Toronto task on August 1 and insert Phase 55R after August 9. Preserve the September 22 Arizona wastewater acceptance and operation recheck. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

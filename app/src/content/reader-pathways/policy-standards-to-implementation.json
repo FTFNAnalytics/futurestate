@@ -4,11 +4,12 @@
   "slug": "policy-standards-to-implementation",
   "record_status": "Published",
   "summary": "Follow policy memoranda, purchasing channels, standards, working drafts, testbed artifacts, and software releases while keeping formal rules separate from adoption, validation, migration, and measured use.",
-  "current_state_summary": "The Published record now shows a federal AI policy and acquisition stack, an active GSA purchasing channel, final post-quantum standards, preliminary PIV changes, and versioned O-RAN testbed artifacts.",
+  "current_state_summary": "The Published record now shows a federal AI policy and acquisition stack, an active AI purchasing channel, final post-quantum standards, a GSA PQC procurement bridge, preliminary PIV changes, and versioned O-RAN testbed artifacts.",
   "current_state": [
     "OMB memoranda define federal AI use, acquisition, and covered-LLM control points without proving agency implementation.",
     "GSA's OneGov channel makes selected AI offerings purchasable under stated terms without establishing adoption or outcomes.",
     "NIST's post-quantum standards move the problem into inventory, procurement, product, credential, and migration work.",
+    "GSA's PQC buyer's guide maps inventory, planning, implementation, maintenance, training, and use cases to acquisition support and contract vehicles without proving an agency order.",
     "PIV working drafts expose proposed credential changes but remain preliminary rather than final requirements.",
     "O-RAN testbed artifacts and version 1.7 software provide inspectable experimental implementation, not a final 6G standard or commercial deployment."
   ],
@@ -27,7 +28,8 @@
     "signal-sample-007",
     "signal-nist-piv-pqc-working-drafts",
     "signal-nist-oran-testbed-standards-artifacts",
-    "signal-nist-oran-testbed-automation-v17"
+    "signal-nist-oran-testbed-automation-v17",
+    "signal-gsa-pqc-procurement-paths"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -36,7 +38,8 @@
     "source-nist-pqc",
     "source-nist-piv-pqc-working-drafts-2026",
     "source-nist-next-generation-wireless-standards-testbed",
-    "source-nist-oran-testbed-automation-v17-2026"
+    "source-nist-oran-testbed-automation-v17-2026",
+    "source-gsa-pqc-buyers-guide-2025"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -77,6 +80,11 @@
       "boundary": "Standards availability is not a cryptographic inventory, validated product, contract change, deployment, or completed migration."
     },
     {
+      "stage": "PQC Procurement Bridge",
+      "current_state": "GSA's buyer's guide identifies acquisition steps, implementation work, use cases, support, and contract vehicles for federal agencies.",
+      "boundary": "Guidance and available vehicles do not prove an agency inventory, solicitation, order, validation, pilot, deployment, or retirement."
+    },
+    {
       "stage": "Draft Specification",
       "current_state": "PIV working drafts make proposed credential, certificate, and interface changes visible.",
       "boundary": "NIST labels the materials preliminary; they are not final requirements or deployed federal capability."
@@ -89,14 +97,14 @@
   ],
   "evidence_limits": [
     "The pathway does not establish which agencies have implemented the OMB AI controls or purchased, integrated, and evaluated OneGov offerings.",
-    "The post-quantum record lacks institution-level inventories, product validation, vendor readiness, budget, staffing, pilot, deployment, and retirement evidence.",
+    "The post-quantum record now has a procurement path but still lacks institution-level inventories, orders, product validation, vendor readiness, budget, staffing, pilot, deployment, and retirement evidence.",
     "Preliminary PIV working drafts can change and should not be described as final requirements.",
     "NIST O-RAN laboratory evidence does not stand in for spectrum decisions, industry consensus, certification, secure deployment, or commercial adoption."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
     "NIST PIV public drafts, final revisions, implementation guidance, product updates, validation records, agency pilots, and credential-migration plans.",
-    "Institution-level cryptographic inventories, vendor roadmaps, procurement actions, budgets, pilots, validated modules, deployments, and legacy retirement records.",
+    "Institution-level cryptographic inventories, solicitations, task orders, vendor roadmaps, budgets, pilots, validated modules, deployments, maintenance results, and legacy retirement records.",
     "Later O-RAN software releases, external reproduction, multi-vendor tests, security evaluations, standards dispositions, certification programs, and commercial deployments."
   ]
 }

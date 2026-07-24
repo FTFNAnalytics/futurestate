@@ -1,6 +1,6 @@
 # FTFN v0.2 Roadmap
 
-Date: 2026-07-23
+Date: 2026-07-24
 
 v0.2 is the first authority-loop build: a release that proves FTFN can maintain a current, source-led analytical resource through repeatable human review.
 
@@ -41,24 +41,24 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after the Phase 55N implementation-outcomes and local-conversion expansion:
+Current `0.2.0-dev` state after the Phase 55Q high-value evidence-gap closure batch:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 380 |
-| Active sources | 189 |
-| Signals | 63 |
-| Published signals | 25 |
-| In Review signals | 38 |
+| Static pages | 389 |
+| Active sources | 194 |
+| Signals | 67 |
+| Published signals | 42 |
+| In Review signals | 25 |
 | Draft Sample signals | 0 |
-| Public update entries | 15 |
+| Public update entries | 19 |
 | Research collections | 3 collections / 47 documents |
 | Research downloads | 37 local captures / 10 official-link files / 56 archive files across three ZIPs |
 | Named local inputs selected in Phases 50-55C | 18 |
 | Private source candidates | 150 local-only records |
 | Candidate review | all 150 reviewed once: 132 Candidate, 11 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected |
 | Source Coverage | 14 Strong; 0 Developing; 0 Weak |
-| Source health | 116 Manual Review; 73 Probe Ready |
+| Source health | 120 Manual Review; 74 Probe Ready |
 
 Existing operating assets:
 
@@ -93,8 +93,8 @@ By v0.2, a reader should be able to answer:
 | Area | v0.2 Target | Current | Remaining |
 | --- | ---: | ---: | ---: |
 | Total signals | 25-35 | 63 | original volume target retired; further additions must close a named evidence gap or add a specific dated development |
-| Published plus publication-ready | 8-12 | 25 | original target exceeded only after four record-level publication gates |
-| Active sources | 110-125 | 189 | target exceeded through gap-closing records; maintain and use the expanded rails rather than chasing another volume target |
+| Published plus publication-ready | 8-12 | 42 Published | original target exceeded through bounded record-level gates; preserve evidence stages |
+| Active sources | 110-125 | 194 | target exceeded through gap-closing records; maintain and use the expanded rails rather than chasing another volume target |
 | Private source candidates | 150 | 150 local-only records | target met; all 150 have a first-pass state and 10 Phase 55I records became separately authored monitoring rails |
 | Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | semiconductor service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
 | Public trust surfaces | update log plus Method links | implemented | maintain entries |
@@ -361,14 +361,14 @@ Recommended active schedule:
 | Checkpoint | Phase 55M | 38 Published signals, 25 In Review signals, and an owner-only Sites version 12 |
 | Completed | Phase 55O | two Published briefings, three held briefings, three repaired Published dependency maps, and owner-only Sites version 13 |
 | Completed | Phase 55P | six reader pathways across seven existing Atlas surfaces and owner-only Sites version 14 |
-| Date-gated insert | Phase 55H | complete the Toronto post-Council authority recheck after July 31 |
-| Current | Phase 55Q | close a bounded batch of the highest-value evidence gaps |
+| Completed | Phase 55Q | six structured gap decisions, five named sources, four Published signals, and a 389-page locally verified candidate |
+| Next dated insert | Phase 55H | complete the Toronto post-Council authority recheck on August 1 |
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete. Phases 55A-55J strengthened the authority package and publication set; Phase 55K added the first primary-document research collection; Phase 55L converted eight directions into implementation trails; Phase 55N tested those trails against later outcomes, discontinuities, oversight limits, and local conversion gates; Phase 55M applied the record-level publication gate; Phase 55O completed the first synthesis publication pass; and Phase 55P turned the Published set into six reader pathways across seven existing Atlas surfaces. The current content runway is the bounded Phase 55Q evidence-gap closure batch. Phase 55H and Phase 55R are dated inserts and do not block work that can be completed now. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete. Phases 55A-55J strengthened the authority package and publication set; Phase 55K added the first primary-document research collection; Phase 55L converted eight directions into implementation trails; Phase 55N tested those trails against later outcomes, discontinuities, oversight limits, and local conversion gates; Phase 55M applied the record-level publication gate; Phase 55O completed the first synthesis publication pass; Phase 55P turned the Published set into six reader pathways; and Phase 55Q advanced six named evidence gaps without opening another volume target. Phase 55H is the next dated insert on August 1, followed by Phase 55R after August 9. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -407,6 +407,8 @@ Current stop point:
 - exact Phase 55O source commit `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad` is deployed as owner-only Sites version 13 without changing access,
 - Phase 55P added six structured reader pathways across five priority topic pages and both local-system pages, linked 30 distinct Published signals to the Published synthesis and research layers, preserved eight explicit gaps, and added the eighteenth update without adding a route family,
 - exact Phase 55P source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` is deployed as owner-only Sites version 14 without changing access, custom-domain state, or DNS,
+- Phase 55Q added five named official sources, four bounded Published signals, and structured decisions on six high-value evidence gaps; the verified local contract is 389 pages, 194 sources, 67 signals, 42 Published, 25 In Review, and 19 updates,
+- Phase 55Q owner-only Sites publication is pending and will preserve the same one-owner, no-group access policy,
 - the branch remains unpushed to public GitHub; exact Phase 55M source commit `c1038783998234025ec2af65dae495272a263cc1` is deployed as owner-only Sites version 12 without changing access,
 - no custom domain is attached and Hostinger DNS remains unchanged,
 - the remaining Phase 55H action is the post-meeting recheck of Toronto application `24 254930` for Council disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit evidence,
@@ -521,7 +523,7 @@ Result:
 - no standalone route family or new outcome claim was introduced,
 - exact source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` is deployed as owner-only Sites version 14.
 
-### Phase 55Q: High-Value Evidence-Gap Closure Batch - Current
+### Phase 55Q: High-Value Evidence-Gap Closure Batch - Complete
 
 Goal: advance a small number of high-value gaps that limit the local dossiers and strongest reader pathways.
 
@@ -549,6 +551,17 @@ Exit criteria:
 - the batch stops if the available records do not advance a named stage,
 - all content and release validations pass,
 - no additional volume target is opened automatically.
+
+Result:
+
+- six gaps received explicit decisions: two Narrowed, three Source Added, and one Dated Hold,
+- five named official source records support four independently useful Published signals,
+- the Southwest and Ontario dossiers and five reader pathways now expose the new evidence and preserved limits,
+- evidence-gap records support structured latest-review metadata and every evidence-gap detail is now included in the sitemap,
+- the verified contract is 389 pages, 194 sources, 67 signals, 42 Published, 25 In Review, 19 updates, and 70 current Published-support sources,
+- the Toronto Phase 55H recheck is already scheduled for August 1 and the Arizona wastewater acceptance recheck is scheduled for September 22,
+- all candidate, content, source-health, Astro, build, sitemap, canonical, export, archive, and release assertions pass,
+- owner-only Sites publication is pending.
 
 ### Phase 55R: DARPA Lift Outcome Gate - Date-Gated Insert
 
@@ -675,15 +688,13 @@ v0.2 is successful when:
 - release QA remains repeatable,
 - no automated process publishes claims without review.
 
-The prior v0.2 build and publication thresholds pass in the current candidate. Phase 55M expanded Published membership to 38 bounded records, Phase 55O published two briefings plus three dependency maps, and Phase 55P added six reader pathways without changing signal membership, route count, package freeze, or the public-launch boundary. The bounded evidence-gap criteria above now define the remaining executable content runway.
+The prior v0.2 build and publication thresholds pass in the current candidate. Phase 55M expanded Published membership to 38 bounded records, Phase 55O published two briefings plus three dependency maps, Phase 55P added six reader pathways, and Phase 55Q closed its six-item batch with five sources, four Published signals, and explicit stop rules. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
 
 ## Immediate Next Step
 
-Begin Phase 55Q. Select four to six evidence gaps that most constrain the completed reader pathways, led by Arizona power, water, and workforce; Ontario conversion and permit-to-start evidence; and institution-level post-quantum implementation. Name the authoritative record before drafting, require a material stage change, and record a dated hold when the evidence is unavailable or unchanged.
+Run Phase 55H on August 1, 2026, using the existing scheduled project task. Recheck Toronto application `24 254930` against the same Council and permit trail. If no named official stage has advanced, record the dated negative result and stop rather than manufacturing a signal.
 
-Insert Phase 55H immediately after the July 29-31, 2026 Toronto Council meeting window. Recheck application `24 254930` against the same official trail. If no named official stage has advanced, record the dated negative result and return to the content runway rather than manufacturing a signal.
-
-Use the completed pathways to prioritize the batch. Do not open another general source-volume target or create a new pathway merely to absorb an unresolved source.
+Preserve the completed Phase 55Q decisions and do not open another general source-volume target. The Arizona wastewater record remains on its September 22 acceptance and operation recheck.
 
 Insert Phase 55R after August 9, 2026. Recheck the official DARPA Lift Challenge record for measured results, winners, prize awards, and transition evidence. Do not promote the scheduled-trial record before that evidence exists.
 

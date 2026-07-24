@@ -1502,3 +1502,30 @@ Update when:
 Boundary:
 
 A reader pathway is a curated navigation and synthesis layer. It does not promote linked records, resolve evidence gaps, or establish readiness, completion, adoption, operation, or scale. Public access, package freeze, custom-domain attachment, DNS changes, public GitHub synchronization, and public launch remain separate decisions.
+
+### Phase 55Q High-Value Evidence-Gap Closure
+
+Purpose:
+
+- Record the six explicit gap decisions: two Narrowed, three Source Added, and one Dated Hold.
+- Preserve the five named official source records and four independently useful Published signals added by the batch.
+- Document the structured `latest_review` contract used on the six selected gap records.
+- Record repairs to both local dossiers and five reader pathways.
+- Preserve the August 1 Toronto and September 22 Arizona wastewater dated rechecks.
+- Record the exact owner-only source commit and Sites version.
+
+Primary file:
+
+- `docs/work-packages/phase-55q-high-value-evidence-gap-closure.md`
+
+Update when:
+
+- one of the six gap decisions changes,
+- a named record advances beyond the stage recorded in the stop rule,
+- the Toronto or Arizona wastewater dated recheck runs,
+- evidence-gap schema, detail rendering, sitemap membership, or release assertions change,
+- the exact Phase 55Q deployment commit or Sites version changes.
+
+Boundary:
+
+An evidence-gap decision records the strongest current official stage and its stop rule. Narrowed and Source Added do not mean closed; a Dated Hold is not a negative conclusion about whether work occurred. Public access, package freeze, custom-domain attachment, DNS changes, public GitHub synchronization, automated publication, and public launch remain separate decisions.

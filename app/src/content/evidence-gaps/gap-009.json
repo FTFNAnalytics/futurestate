@@ -10,7 +10,7 @@
   "constraint_tags": ["Standards", "Cybersecurity", "Labor", "Unit Economics"],
   "question": "Which institutions are actually migrating to post-quantum cryptography?",
   "why_it_matters": "Standards create the migration clock, but operational impact depends on procurement, inventories, vendors, budgets, timelines, and critical infrastructure execution.",
-  "current_support": "FTFN has the NIST PQC standards source and Published standards signal, Executive Order 14412 and OMB M-26-15 as a bounded federal implementation package, and NIST's preliminary working drafts for adding ML-DSA and ML-KEM support to Personal Identity Verification through a backward-compatible dual-stack approach.",
+  "current_support": "FTFN has the NIST PQC standards source and Published standards signal, Executive Order 14412 and OMB M-26-15 as a bounded federal implementation package, NIST's preliminary working drafts for adding ML-DSA and ML-KEM support to Personal Identity Verification through a backward-compatible dual-stack approach, and GSA's PQC Buyer's Guide mapping inventory, planning, implementation, maintenance, training, and use cases to federal acquisition support and contract vehicles.",
   "missing_evidence": [
     "completed Federal Acquisition Regulation changes and contract clauses",
     "agency cryptographic inventory results",
@@ -32,19 +32,31 @@
     "proposed and final Federal Acquisition Regulation records",
     "NIST pilot result and critical infrastructure migration guidance"
   ],
-  "next_action": "Track formal PIV drafts and final revisions, public comments, validated products, interoperability tests, the 120-day agency plan deadline, NIST pilot, CISA guidance, proposed FAR rules, and the first disclosed agency or sector implementation milestone before making a readiness claim.",
+  "next_action": "Move from the GSA acquisition path to institution-level solicitations, task orders, cryptographic inventory results, migration budgets, validated modules, interoperability tests, pilots, deployments, and legacy retirement while tracking formal PIV revisions, the 120-day agency plan deadline, NIST pilot, CISA guidance, and FAR rules.",
   "future_data_model_need": ["Policy or Regulation", "Local Actor", "Dataset"],
   "related_source_ids": [
     "source-nist-pqc",
     "source-white-house-eo-14412-pqc-migration",
     "source-omb-m-26-15-pqc-migration",
-    "source-nist-piv-pqc-working-drafts-2026"
+    "source-nist-piv-pqc-working-drafts-2026",
+    "source-gsa-pqc-buyers-guide-2025"
   ],
   "related_signal_ids": [
     "signal-sample-007",
     "signal-federal-pqc-migration-plans-and-deadlines",
-    "signal-nist-piv-pqc-working-drafts"
+    "signal-nist-piv-pqc-working-drafts",
+    "signal-gsa-pqc-procurement-paths"
   ],
   "related_local_system_ids": [],
-  "notes": "Phase 55N adds a concrete credential-specification artifact but does not close the execution gap. NIST labels the PIV materials preliminary working drafts; they do not prove formal requirements, validated products, agency pilots, issued credentials, or completed migration."
+  "latest_review": {
+    "phase": "Phase 55Q",
+    "decision": "Source Added",
+    "review_date": "2026-07-24",
+    "named_records": [
+      "GSA Post-Quantum Cryptography Buyer's Guide"
+    ],
+    "stage_result": "GSA now supplies a concrete federal procurement and implementation bridge, including work categories, use cases, acquisition support, and contract vehicles. The guide advances procurement readiness but does not disclose an agency order, completed inventory, validated product, pilot result, production migration, or legacy retirement.",
+    "stop_rule": "Do not treat listed services, use cases, or contract vehicles as agency adoption. Reopen for an institution-level solicitation, award, inventory result, budget, validated module, interoperability test, pilot, deployment, maintenance result, or retirement record."
+  },
+  "notes": "Phase 55Q advances the procurement-mechanism layer without closing the execution gap. Policy, standards, draft specifications, and available acquisition paths remain upstream of institution-level implementation and measured migration."
 }

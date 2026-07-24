@@ -128,6 +128,7 @@ It is a stack of dependencies.
 - [Phase 55J Work Package](docs/work-packages/phase-55j-publication-readiness-review.md) - publication gate for the Phase 55I additions.
 - [Phase 55K Work Package](docs/work-packages/phase-55k-darpa-usg-research-collection.md) - 23-document research collection, summaries, source integration, download archive, and Phase 55L conversion path.
 - [Phase 55M Work Package](docs/work-packages/phase-55m-publication-readiness-review.md) - thirteen bounded publication promotions and one explicit scheduled-trial hold.
+- [Phase 55Q Work Package](docs/work-packages/phase-55q-high-value-evidence-gap-closure.md) - six named evidence-gap decisions, five official sources, four bounded Published signals, and dated follow-through.
 
 ## App Scaffold
 
@@ -285,7 +286,9 @@ Phase 55N follows those trails into later outcomes, discontinuities, oversight l
 
 Phase 55M applies the publication gate to the fourteen implementation signals created or materially repaired in Phases 55L and 55N. Thirteen pass as independently useful bounded records; the DARPA Lift Challenge remains `In Review` until official post-August 9 results exist. The Published set reaches 38 signals backed by 66 current sources without changing routes, access, DNS, or release status.
 
-The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 189 public sources, 150 private source candidates, 63 signals, 38 Published signals, 17 topics, 18 public update entries, six reader pathways across seven existing Atlas surfaces, 380 generated pages, three research collections with 47 documents, and three versioned data exports. The branch remains unpushed to public GitHub, while owner-only Sites version 14 serves exact Phase 55P source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e`. No custom domain, Hostinger DNS change, or public launch occurred.
+Phase 55Q assigns decisions to six pathway-critical gaps, adds five official sources and four bounded Published signals, repairs the two local dossiers and five reader pathways, and schedules the unresolved wastewater acceptance and operation recheck without opening another volume target.
+
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 194 public sources, 150 private source candidates, 67 signals, 42 Published signals, 17 topics, 19 public update entries, six Phase 55Q gap decisions, six reader pathways across seven existing Atlas surfaces, 389 generated pages, three research collections with 47 documents, and three versioned data exports. The branch remains unpushed to public GitHub; Phase 55Q owner-only Sites publication is pending. No custom domain, Hostinger DNS change, or public launch occurred.
 
 ## Working Rule
 

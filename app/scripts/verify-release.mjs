@@ -54,9 +54,11 @@ const atlasHtml = await readText(join(distRoot, "atlas", "index.html"));
 const researchCollectionDirectory = join(appRoot, "src", "content", "research-collections");
 const researchDocumentDirectory = join(appRoot, "src", "content", "research-documents");
 const readerPathwayDirectory = join(appRoot, "src", "content", "reader-pathways");
+const evidenceGapDirectory = join(appRoot, "src", "content", "evidence-gaps");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
+const evidenceGapFiles = (await readdir(evidenceGapDirectory)).filter((name) => name.endsWith(".json"));
 const researchCollections = await Promise.all(
   researchCollectionFiles.map((name) => readJson(join(researchCollectionDirectory, name))),
 );
@@ -65,6 +67,9 @@ const researchDocuments = await Promise.all(
 );
 const readerPathways = await Promise.all(
   readerPathwayFiles.map((name) => readJson(join(readerPathwayDirectory, name))),
+);
+const evidenceGaps = await Promise.all(
+  evidenceGapFiles.map((name) => readJson(join(evidenceGapDirectory, name))),
 );
 const allDistFiles = await collectFiles(distRoot);
 const downloadsRoot = join(distRoot, "downloads");
@@ -90,6 +95,10 @@ check(
 check(
   readerPathways.length === manifest.expected_build.reader_pathways,
   `Expected ${manifest.expected_build.reader_pathways} reader pathways, found ${readerPathways.length}.`,
+);
+check(
+  evidenceGaps.length === manifest.expected_build.evidence_gaps,
+  `Expected ${manifest.expected_build.evidence_gaps} evidence gaps, found ${evidenceGaps.length}.`,
 );
 check(signals.schema_version === "1.0" && sources.schema_version === "1.0" && topics.schema_version === "1.0", "All public exports must use schema version 1.0.");
 check(signals.records.every((record) => record.record_status === "Published"), "Signal export contains a non-Published record.");
@@ -231,6 +240,29 @@ for (const route of manifest.reader_pathway_routes) {
   check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
 }
 
+const phase55QDecisions = evidenceGaps.filter((gap) => gap.latest_review?.phase === "Phase 55Q");
+check(
+  phase55QDecisions.length === manifest.expected_build.phase_55q_gap_decisions,
+  `Expected ${manifest.expected_build.phase_55q_gap_decisions} Phase 55Q evidence decisions, found ${phase55QDecisions.length}.`,
+);
+const expectedPhase55QRoutes = phase55QDecisions
+  .map((gap) => `/atlas/evidence-gaps/${gap.slug}/`)
+  .sort();
+check(
+  JSON.stringify(expectedPhase55QRoutes) === JSON.stringify([...manifest.phase_55q_gap_routes].sort()),
+  "Phase 55Q evidence-gap route membership does not match the manifest.",
+);
+for (const gap of phase55QDecisions) {
+  const route = `/atlas/evidence-gaps/${gap.slug}/`;
+  const html = await readText(routeToHtml(route));
+  check(html.includes('data-evidence-decision="Phase 55Q"'), `${route} is missing the Phase 55Q decision marker.`);
+  check(html.includes("Named Authoritative Records"), `${route} is missing named authoritative records.`);
+  check(html.includes("Stage Result"), `${route} is missing the stage result.`);
+  check(html.includes("Stop Rule"), `${route} is missing the stop rule.`);
+  check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
+  check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
+}
+
 const updateDirectory = join(appRoot, "src", "content", "updates");
 const updateFiles = (await readdir(updateDirectory)).filter((name) => name.endsWith(".json"));
 check(updateFiles.length === manifest.expected_build.updates, `Expected ${manifest.expected_build.updates} update records, found ${updateFiles.length}.`);
@@ -257,4 +289,5 @@ console.log(
 console.log(
   `${readerPathways.length} reader pathways across ${manifest.reader_pathway_routes.length} existing Atlas surfaces.`,
 );
-console.log("Robots, sitemap, canonical, indexing, reader pathways, required outputs, private-registry exclusion, and public export boundaries passed.");
+console.log(`${phase55QDecisions.length} Phase 55Q evidence-gap decisions passed.`);
+console.log("Robots, sitemap, canonical, indexing, reader pathways, evidence decisions, required outputs, private-registry exclusion, and public export boundaries passed.");

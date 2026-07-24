@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import DependencyMapLinks from "../../../components/atlas/DependencyMapLinks.astro";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
-import { getEvidenceGapTone } from "../../../lib/editorial";
+import { formatDate, getEvidenceGapTone } from "../../../lib/editorial";
 
 export async function getStaticPaths() {
   const evidenceGaps = await getCollection("evidenceGaps");
@@ -52,6 +52,40 @@ const relatedBriefings = briefings.filter((briefing) => briefing.data.evidence_g
       <MetaPill label={gap.data.local_system} />
     </div>
   </section>
+
+  {gap.data.latest_review && (
+    <section class="page-section" data-evidence-decision={gap.data.latest_review.phase}>
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Latest Evidence Decision</div>
+          <h2>{gap.data.latest_review.phase} Review</h2>
+        </div>
+        <div class="meta-row">
+          <MetaPill label={gap.data.latest_review.decision} tone={gap.data.latest_review.decision === "Resolved" ? "published" : "review"} />
+          <MetaPill label={formatDate(gap.data.latest_review.review_date)} />
+          {gap.data.latest_review.next_check_date && (
+            <MetaPill label={`Next check ${formatDate(gap.data.latest_review.next_check_date)}`} tone="urgency" />
+          )}
+        </div>
+      </div>
+      <div class="grid">
+        <article class="record-card">
+          <h3>Named Authoritative Records</h3>
+          <ul>
+            {gap.data.latest_review.named_records.map((record) => <li>{record}</li>)}
+          </ul>
+        </article>
+        <article class="record-card">
+          <h3>Stage Result</h3>
+          <p>{gap.data.latest_review.stage_result}</p>
+        </article>
+        <article class="record-card">
+          <h3>Stop Rule</h3>
+          <p>{gap.data.latest_review.stop_rule}</p>
+        </article>
+      </div>
+    </section>
+  )}
 
   <section class="page-section">
     <div class="grid">

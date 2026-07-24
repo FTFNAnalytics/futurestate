@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "build_id": "ftfn-v0.2",
   "generated_date": "2026-07-24",
   "project": "FTFN",
@@ -36,13 +36,13 @@
   "build_command": "npm run build",
   "output_directory": "dist",
   "expected_build": {
-    "static_pages": 380,
-    "signals": 63,
-    "published_signals": 38,
+    "static_pages": 389,
+    "signals": 67,
+    "published_signals": 42,
     "in_review_signals": 25,
     "draft_sample_signals": 0,
-    "published_support_sources": 66,
-    "sources": 189,
+    "published_support_sources": 70,
+    "sources": 194,
     "topics": 17,
     "organizations": 19,
     "technologies": 5,
@@ -58,7 +58,8 @@
     "research_documents": 47,
     "reader_pathways": 6,
     "reader_pathway_surfaces": 7,
-    "updates": 18,
+    "phase_55q_gap_decisions": 6,
+    "updates": 19,
     "public_json_exports": 3
   },
   "private_authority_layer": {
@@ -79,13 +80,13 @@
     "public_output_policy": "Candidate records, IDs, private notes, and registry paths must not appear in static output or public exports."
   },
   "release_delta_from_v0_1_1": {
-    "static_pages_added": 198,
-    "signals_added": 45,
-    "published_signals_added": 35,
-    "sources_added": 87,
+    "static_pages_added": 207,
+    "signals_added": 49,
+    "published_signals_added": 39,
+    "sources_added": 92,
     "public_json_exports_added": 3,
     "public_update_log_added": true,
-    "summary": "Extends the Phase 55K through Phase 55N evidence baseline with the Phase 55M signal gate, Phase 55O synthesis gate, and Phase 55P reader pathways: 189 public sources, 63 signals, 38 Published signals, two Published briefings, three Published dependency maps, six reader pathways across seven existing Atlas surfaces, 18 public updates, three research collections, 47 summarized research documents, and versioned source, topic, and Published-signal exports."
+    "summary": "Extends the Phase 55K through Phase 55N evidence baseline with the Phase 55M signal gate, Phase 55O synthesis gate, Phase 55P reader pathways, and Phase 55Q evidence decisions: 194 public sources, 67 signals, 42 Published signals, two Published briefings, three Published dependency maps, six reader pathways, six structured high-value gap decisions, 19 public updates, three research collections, 47 summarized research documents, and versioned source, topic, and Published-signal exports."
   },
   "phase_55k_delta": {
     "static_pages_added": 60,
@@ -163,23 +164,35 @@
     "public_update_entries_added": 1,
     "generated_pages_added": 0
   },
+  "phase_55q_delta": {
+    "evidence_gaps_reviewed": 6,
+    "gap_decisions_narrowed": 2,
+    "gap_decisions_source_added": 3,
+    "gap_decisions_dated_hold": 1,
+    "sources_added": 5,
+    "signals_added_published": 4,
+    "local_systems_repaired": 2,
+    "reader_pathways_repaired": 5,
+    "public_update_entries_added": 1,
+    "generated_pages_added": 9
+  },
   "last_verified": {
     "date": "2026-07-24",
     "published_support_minimum_date": "2026-07-22",
     "candidate_validation": "passed-150-local-only-records",
     "validate_content": "passed",
     "source_health": "passed",
-    "source_health_manual_review": 116,
-    "source_health_probe_ready": 73,
+    "source_health_manual_review": 120,
+    "source_health_probe_ready": 74,
     "source_monitor_review_due": 0,
     "source_monitor_watch_soon": 0,
-    "source_monitor_current": 189,
+    "source_monitor_current": 194,
     "source_coverage_strong_lanes": 14,
     "source_coverage_developing_lanes": 0,
     "source_coverage_weak_lanes": 0,
     "astro_check": "passed",
     "build": "passed",
-    "static_pages_built": 380,
+    "static_pages_built": 389,
     "release_assertions": "passed",
     "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-55p-visual-qa-not-requested",
     "browser_viewports": [
@@ -188,7 +201,7 @@
     ],
     "browser_routes_checked": 10,
     "hosted_routes_checked": 5,
-    "preview_qa": "passed-owner-only-version-14-deployment-and-access"
+    "preview_qa": "passed-owner-only-version-14-deployment-and-access; phase-55q-publication-pending"
   },
   "required_output_files": [
     "dist/index.html",
@@ -201,6 +214,13 @@
     "dist/data/topics.json",
     "dist/atlas/source-monitor/index.html",
     "dist/atlas/source-coverage/index.html",
+    "dist/atlas/evidence-gaps/index.html",
+    "dist/atlas/evidence-gaps/gap-001-arizona-utility-power-capacity/index.html",
+    "dist/atlas/evidence-gaps/gap-002-arizona-industrial-water-capacity/index.html",
+    "dist/atlas/evidence-gaps/gap-003-chip-corridor-workforce-suppliers/index.html",
+    "dist/atlas/evidence-gaps/gap-004-ontario-municipal-housing-conversion/index.html",
+    "dist/atlas/evidence-gaps/gap-005-ontario-permits-starts-completions/index.html",
+    "dist/atlas/evidence-gaps/gap-009-post-quantum-migration-evidence/index.html",
     "dist/research/index.html",
     "dist/research/darpa-usg-research-angles-2025-2026/index.html",
     "dist/downloads/darpa-usg-research-collection-2025-2026.zip",
@@ -260,7 +280,11 @@
     "/signals/nist-oran-testbed-automation-v17/",
     "/signals/phoenix-tsmc-fab3-topping-out/",
     "/signals/gsa-onegov-ai-procurement-channel/",
-    "/signals/nist-piv-pqc-working-drafts/"
+    "/signals/nist-piv-pqc-working-drafts/",
+    "/signals/aps-tsmc-service-territory-demand-capacity-boundary/",
+    "/signals/nnme-southwest-microelectronics-workforce-coordination-node/",
+    "/signals/cmhc-june-2026-toronto-permit-start-construction-completion-baseline/",
+    "/signals/gsa-post-quantum-migration-procurement-paths/"
   ],
   "launch_critical_routes": [
     "/",
@@ -318,9 +342,17 @@
     "/atlas/local-systems/us-southwest-chip-corridor/",
     "/atlas/local-systems/ontario-real-estate/"
   ],
+  "phase_55q_gap_routes": [
+    "/atlas/evidence-gaps/gap-001-arizona-utility-power-capacity/",
+    "/atlas/evidence-gaps/gap-002-arizona-industrial-water-capacity/",
+    "/atlas/evidence-gaps/gap-003-chip-corridor-workforce-suppliers/",
+    "/atlas/evidence-gaps/gap-004-ontario-municipal-housing-conversion/",
+    "/atlas/evidence-gaps/gap-005-ontario-permits-starts-completions/",
+    "/atlas/evidence-gaps/gap-009-post-quantum-migration-evidence/"
+  ],
   "seo_policy": {
     "robots": "Allow all public routes and reference https://ftfn.io/sitemap.xml",
-    "sitemap": "Include primary public pages, Atlas reference indexes, local systems, Published dependency maps, Published briefings, Published research collections and documents, and Published signal details only",
+    "sitemap": "Include primary public pages, Atlas reference indexes, evidence-gap details, local systems, Published dependency maps, Published briefings, Published research collections and documents, and Published signal details only",
     "published_signal_details": "index, follow",
     "non_published_signal_details": "noindex, follow",
     "non_published_briefing_details": "noindex, follow",
@@ -329,19 +361,20 @@
   },
   "release_gates": [
     "Run all predeploy commands from app/",
-    "Confirm 380 generated HTML pages and all required outputs",
-    "Confirm all 38 Published signal URLs are present in the sitemap",
+    "Confirm 389 generated HTML pages and all required outputs",
+    "Confirm all 42 Published signal URLs are present in the sitemap",
     "Confirm every non-published signal URL is absent from the sitemap",
     "Confirm both Published briefing URLs are indexed and the three In Review briefing URLs remain noindex and outside the sitemap",
     "Confirm all three Published dependency-map URLs are indexed and present in the sitemap",
     "Confirm Published details use index, follow and non-published details use noindex, follow",
     "Confirm canonical URLs and robots output use https://ftfn.io",
-    "Confirm all 66 sources supporting Published signals were checked on or after 2026-07-22",
+    "Confirm all 70 sources supporting Published signals were checked on or after 2026-07-22",
     "Confirm all three public JSON exports match the versioned allowlist contract",
     "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
     "Confirm generated output contains no private candidate IDs or registry-path references",
     "Confirm all six reader pathways render across the five priority topic pages and two local-system pages with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records",
-    "Confirm the eighteen-entry public update log renders",
+    "Confirm all six Phase 55Q gap pages render the named record, decision, stage result, and stop rule",
+    "Confirm the nineteen-entry public update log renders",
     "Confirm all three research collections render all 47 document summaries and their 26-file, 11-file, and 19-file ZIP archives",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
@@ -375,5 +408,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the deployed Phase 55P reader-pathway build. Six pathways deepen five priority topic pages and both local-system pages without adding a new route family. Every pathway is anchored to Published signals, Published synthesis, Published research collections, and explicit evidence gaps. Signal membership remains 38 Published and 25 In Review. Sites version 14 serves exact source commit 8b43caeb7db1debefab3292ed1913ce8bd2b557e. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
+  "notes": "This manifest records the locally validated Phase 55Q evidence-gap build pending owner-only publication. Six high-value gaps now expose named authoritative records, explicit decisions, stage results, and stop rules. Five sources and four bounded Published signals advance power, workforce, Ontario conversion, and PQC procurement evidence; Arizona wastewater remains on a dated hold. Sites version 14 continues to serve the prior Phase 55P source until Phase 55Q publication succeeds. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
 }

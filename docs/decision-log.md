@@ -2389,3 +2389,29 @@ Implemented:
 Boundary:
 
 A pathway is navigation and bounded synthesis, not a new claim status. Phase 55P does not promote a linked record, resolve an evidence gap, establish local or institutional readiness, or authorize another source-volume target. Phase 55Q must use named authoritative records and material stage changes. Public access, package freeze, custom-domain attachment, Hostinger DNS, public GitHub synchronization, Supabase activation, and public launch remain separate decisions.
+
+## 2026-07-24: Phase 55Q Stops At Six Named Evidence Decisions
+
+Decision:
+
+FTFN will complete Phase 55Q as a six-gap batch with one explicit decision per gap: two Narrowed, three Source Added, and one Dated Hold. It will publish four independently useful records supported by five named official sources while preserving every downstream capacity, outcome, acceptance, conversion, and implementation boundary.
+
+Rationale:
+
+The completed pathways identified concrete missing records rather than a need for another source-volume target. APS can identify TSMC's serving utility without disclosing customer capacity. ACA can establish a regional workforce consortium without proving workforce outcomes. CMHC can expose current metropolitan stage stocks and flows without creating a matched application conversion rate. GSA can map post-quantum procurement paths without proving agency migration. Phoenix can define acceptance artifacts without supplying a project-specific completion or operating result.
+
+Implemented:
+
+- added five official source profiles and four bounded Published signals,
+- assigned structured latest-review decisions to gaps `001`, `002`, `003`, `004`, `005`, and `009`,
+- repaired the Southwest and Ontario local dossiers and five reader pathways,
+- included all evidence-gap detail routes in the sitemap,
+- added content and release assertions for exactly six Phase 55Q decisions,
+- advanced the verified contract to 389 pages, 194 sources, 67 signals, 42 Published, 25 In Review, 19 updates, and 70 current Published-support sources,
+- preserved the existing Toronto Phase 55H recheck for August 1,
+- added the Arizona wastewater acceptance and operation recheck for September 22,
+- kept owner-only Sites publication, public access, DNS, package freeze, public GitHub synchronization, and public launch as separate gates.
+
+Boundary:
+
+Serving territory is not customer capacity. Consortium membership is not workforce sufficiency. Aggregate stage measures are not a matched cohort. Procurement guidance is not agency implementation. Authorized flow and named acceptance requirements are not constructed, accepted, operating, or measured wastewater infrastructure. Phase 55Q does not automatically open another acquisition or promotion batch.
