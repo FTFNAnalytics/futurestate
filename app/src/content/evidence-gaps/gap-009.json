@@ -10,7 +10,7 @@
   "constraint_tags": ["Standards", "Cybersecurity", "Labor", "Unit Economics"],
   "question": "Which institutions are actually migrating to post-quantum cryptography?",
   "why_it_matters": "Standards create the migration clock, but operational impact depends on procurement, inventories, vendors, budgets, timelines, and critical infrastructure execution.",
-  "current_support": "FTFN has the NIST PQC standards source and Published standards signal, Executive Order 14412 and OMB M-26-15 as a bounded federal implementation package, NIST's preliminary working drafts for adding ML-DSA and ML-KEM support to Personal Identity Verification through a backward-compatible dual-stack approach, and GSA's PQC Buyer's Guide mapping inventory, planning, implementation, maintenance, training, and use cases to federal acquisition support and contract vehicles.",
+  "current_support": "FTFN has the final 2024 NIST PQC standards, NIST's 2025 HQC backup-algorithm selection, Executive Order 14412 and OMB M-26-15 as a bounded federal implementation package, NIST's preliminary working drafts for adding ML-DSA and ML-KEM support to Personal Identity Verification through a backward-compatible dual-stack approach, and GSA's PQC Buyer's Guide mapping inventory, planning, implementation, maintenance, training, and use cases to federal acquisition support and contract vehicles.",
   "missing_evidence": [
     "completed Federal Acquisition Regulation changes and contract clauses",
     "agency cryptographic inventory results",
@@ -39,13 +39,15 @@
     "source-white-house-eo-14412-pqc-migration",
     "source-omb-m-26-15-pqc-migration",
     "source-nist-piv-pqc-working-drafts-2026",
-    "source-gsa-pqc-buyers-guide-2025"
+    "source-gsa-pqc-buyers-guide-2025",
+    "source-nist-hqc-selection-2025"
   ],
   "related_signal_ids": [
     "signal-sample-007",
     "signal-federal-pqc-migration-plans-and-deadlines",
     "signal-nist-piv-pqc-working-drafts",
-    "signal-gsa-pqc-procurement-paths"
+    "signal-gsa-pqc-procurement-paths",
+    "signal-nist-hqc-backup-algorithm-selection"
   ],
   "related_local_system_ids": [],
   "latest_review": {
@@ -58,5 +60,5 @@
     "stage_result": "GSA now supplies a concrete federal procurement and implementation bridge, including work categories, use cases, acquisition support, and contract vehicles. The guide advances procurement readiness but does not disclose an agency order, completed inventory, validated product, pilot result, production migration, or legacy retirement.",
     "stop_rule": "Do not treat listed services, use cases, or contract vehicles as agency adoption. Reopen for an institution-level solicitation, award, inventory result, budget, validated module, interoperability test, pilot, deployment, maintenance result, or retirement record."
   },
-  "notes": "Phase 55Q advances the procurement-mechanism layer without closing the execution gap. Policy, standards, draft specifications, and available acquisition paths remain upstream of institution-level implementation and measured migration."
+  "notes": "Phase 55Q advances the procurement-mechanism layer and Phase 55T adds a bounded standards-diversity milestone without closing the execution gap. Policy, standards, selections, draft specifications, and available acquisition paths remain upstream of institution-level implementation and measured migration."
 }

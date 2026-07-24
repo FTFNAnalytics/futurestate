@@ -2,16 +2,16 @@
 
 Date: 2026-07-24
 
-Status: Phase 55S batch-one release gate and owner-only Sites version 16 deployment passed.
+Status: Phase 55T local release gate passed; owner-only Sites deployment refresh pending.
 
 ## Artifact Under Review
 
 - Build manifest: `deployment/ftfn-v0.2-build.json`
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
-- Expected build: 434 HTML pages
-- Content baseline: 225 sources, 72 signals, 17 topics, 20 update entries, 6 Phase 55Q gap decisions, 6 reader pathways across 7 Atlas surfaces, 5 briefings, 3 dependency maps, 4 research collections, 55 research documents
-- Publication baseline: 45 Published signals, 27 In Review signals, 2 Published briefings, 3 In Review briefings, 3 Published dependency maps
+- Expected build: 521 HTML pages
+- Content baseline: 272 sources, 97 signals, 17 topics, 22 update entries, 6 Phase 55Q gap decisions, 8 reader pathways across 12 Atlas surfaces, 7 briefings, 5 dependency maps, 5 research collections, 65 research documents
+- Publication baseline: 61 Published signals, 36 In Review signals, 2 Published briefings, 5 In Review briefings, 3 Published dependency maps, 2 In Review dependency maps
 
 The package remains `0.2.0-dev`. The owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
 
@@ -183,3 +183,25 @@ The 483-page artifact passes:
 - the new ten-record, 13-file research archive with SHA-256 `58736A52A803181D21EA1CB395132C4787AF4C1164EC846CDA8DC324AF79C864`.
 
 A repeat visual/browser pass was not requested because the batch changes content only. Exact source commit `3e2310de99382612be7c5221d0070184188f85d4` is deployed successfully as owner-only Sites version 17 at `https://ftfn-analytics.jbumstead.chatgpt.site`. Public access, package freeze, custom-domain attachment, Hostinger DNS, and public launch remain outside this QA scope.
+
+## Phase 55T Thin-Topic Corpus QA Scope
+
+Phase 55T adds content records and evidence relationships without changing components, styles, layouts, navigation, or client-side behavior. It adds 17 source routes, 18 signal routes, one briefing route, two dependency-map routes, two pathway records on existing topic surfaces, and one update.
+
+The 521-page artifact passes:
+
+- private-candidate validation for the unchanged 150-record local-only registry;
+- content-reference validation across 272 sources, 97 signals, 17 topics, seven briefings, five dependency maps, eight pathways, five research collections, and 65 research documents;
+- source endpoint metadata review for 172 Manual Review and 100 Probe Ready sources;
+- the Phase 55T floor of at least four signals and two Published records in every topic;
+- Astro diagnostics with zero errors, warnings, or hints;
+- production generation of 521 pages;
+- all 61 Published signal routes in the sitemap and all 36 In Review signal routes outside it;
+- exactly 96 current Published-support sources;
+- both Published briefings in the sitemap and all five In Review briefings outside it;
+- all three Published dependency maps in the sitemap and both In Review maps outside it;
+- eight pathways across 12 existing Atlas topic and local-system surfaces;
+- the 22-entry update log, three public exports, required routes and downloads, canonicals, robots, and private-registry exclusion;
+- all five Published research collections, 65 document routes, and the five existing download archives.
+
+A repeat visual/browser pass was not requested because the phase changes content only. The existing owner-only policy, public GitHub boundary, package version, Hostinger DNS, and custom-domain state remain unchanged. Record the exact commit and Sites version below after the Phase 55T owner-only deployment succeeds.

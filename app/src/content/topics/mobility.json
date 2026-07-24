@@ -2,7 +2,7 @@
   "id": "topic-mobility",
   "name": "Mobility",
   "slug": "mobility",
-  "summary": "Autonomous vehicles, road automation, logistics, safety systems, deployment governance, public trust, and the local operating conditions that determine whether mobility technologies scale.",
+  "summary": "The current shelf now separates federal AV policy, a proposed oversight program, mandatory crash reporting, and a specific software recall. It supports rule, reporting, and defect claims while local service, comparative safety, and scale still require operating-design-domain, exposure, permission, infrastructure, and outcome records.",
   "framework_layers": ["Frontier Domains", "Enabling Infrastructure", "Human Systems"],
   "primary_constraints": ["Safety", "Regulation", "Insurance", "Public Trust", "Data Quality"],
   "featured_sources": [
@@ -13,10 +13,14 @@
     "source-faa-aircraft-registration-download",
     "source-faa-type-certificate-data-sheets",
     "source-nhtsa-safety-recalls",
-    "source-ntsb-carol"
+    "source-ntsb-carol",
+    "source-dot-automated-vehicle-framework-2025",
+    "source-nhtsa-av-step-proposal-2024",
+    "source-nhtsa-waymo-26e026-recall-2026"
   ],
   "watch_questions": [
-    "Which mobility systems are operationally mature, and which remain limited by safety validation, liability, or local permission?",
-    "How do national safety signals change local deployment decisions?"
+    "Which AV Framework and AV STEP actions become final rules, exemptions, reports, enforcement, or operating approvals?",
+    "Which recalls, investigations, and SGO records can be interpreted with exposure, operating-design-domain, weather, road, and duplication controls?",
+    "Which named local jurisdictions document permissions, emergency procedures, insurance, infrastructure, service levels, and safety outcomes?"
   ]
 }

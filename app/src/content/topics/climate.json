@@ -2,7 +2,7 @@
   "id": "topic-climate",
   "name": "Climate",
   "slug": "climate",
-  "summary": "Climate systems, ENSO, extreme weather, adaptation, and climate-driven constraints on infrastructure, agriculture, water, energy, aviation, and markets.",
+  "summary": "The current shelf separates global observation, seasonal forecasting, national transportation-risk synthesis, and emissions-accounting methods. It supports climate conditions and dependency analysis, while local hazards, losses, adaptation, and resilience still require named regional and asset records.",
   "framework_layers": ["Planetary Conditions", "Human Systems"],
   "primary_constraints": ["Climate", "Water", "Insurance", "Interpretation"],
   "featured_sources": [
@@ -10,10 +10,14 @@
     "source-eccc-historical-climate-data",
     "source-epa-ghgrp-data",
     "source-nws-api",
-    "source-noaa-storm-events"
+    "source-noaa-storm-events",
+    "source-noaa-2025-global-climate-report",
+    "source-usgcrp-nca5-transportation",
+    "source-epa-ghg-inventory-reporting-boundary"
   ],
   "watch_questions": [
-    "How do ENSO shifts affect food, water, insurance, aviation, and power systems?",
-    "Which climate signals are already changing local decision-making?"
+    "How do ENSO and annual climate observations connect to regional water, agriculture, insurance, aviation, mobility, and power records?",
+    "Which named transportation assets have adopted new design, maintenance, operating, or capital decisions in response to climate evidence?",
+    "Where do EPA inventory scope, GHGRP thresholds, reporting years, and facility records change an emissions conclusion?"
   ]
 }

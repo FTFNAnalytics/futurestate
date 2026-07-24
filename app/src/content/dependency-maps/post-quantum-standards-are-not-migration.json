@@ -24,11 +24,13 @@
     "source-nist-pqc",
     "source-white-house-eo-14412-pqc-migration",
     "source-omb-m-26-15-pqc-migration",
-    "source-nist-piv-pqc-working-drafts-2026"
+    "source-nist-piv-pqc-working-drafts-2026",
+    "source-nist-hqc-selection-2025"
   ],
   "signal_ids": [
     "signal-sample-007",
-    "signal-nist-piv-pqc-working-drafts"
+    "signal-nist-piv-pqc-working-drafts",
+    "signal-nist-hqc-backup-algorithm-selection"
   ],
   "technology_ids": [
     "technology-post-quantum-cryptography"
@@ -79,6 +81,13 @@
       "node_type": "Signal",
       "record_id": "signal-nist-piv-pqc-working-drafts",
       "note": "A Published preliminary specification artifact that proposes ML-DSA and ML-KEM support for federal identity credentials without claiming a final requirement or deployed capability."
+    },
+    {
+      "id": "node-hqc-selection",
+      "label": "HQC backup-algorithm selection",
+      "node_type": "Signal",
+      "record_id": "signal-nist-hqc-backup-algorithm-selection",
+      "note": "A Published selection-stage record that adds mathematical diversity upstream of a draft and final standard."
     },
     {
       "id": "node-pqc-technology",
@@ -158,6 +167,20 @@
       "note": "The preliminary specification narrows one implementation layer but does not supply final requirements, validated products, completed pilots, issued credentials, or system-transition evidence."
     },
     {
+      "from": "node-hqc-selection",
+      "to": "node-pqc-technology",
+      "relationship": "Related Technology",
+      "confidence": "Supported",
+      "note": "HQC is a selected backup key-encapsulation algorithm based on different mathematics from ML-KEM."
+    },
+    {
+      "from": "node-hqc-selection",
+      "to": "node-institution-migration-gap",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "Algorithm selection strengthens the standards-diversity trail but does not supply a final standard, product support, procurement, or migration evidence."
+    },
+    {
       "from": "node-pqc-technology",
       "to": "node-standards-adoption",
       "relationship": "Depends On",
@@ -183,6 +206,7 @@
     "FTFN can distinguish standards progress from operational migration progress.",
     "FTFN can show how standards, executive direction, OMB implementation requirements, security signals, a technology profile, and an evidence gap fit together.",
     "Federal direction, implementation requirements, and preliminary PIV specifications expose a dated migration and standards stack.",
+    "The HQC selection adds a bounded standards-diversity milestone without changing the current ML-KEM migration baseline.",
     "The PIV working drafts make credential data models and interfaces inspectable while remaining upstream of formal standards and deployment.",
     "Post-quantum cryptography can be tracked as infrastructure migration work without numeric scoring."
   ],

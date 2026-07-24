@@ -2442,3 +2442,26 @@ Implemented in the roadmap:
 Boundary:
 
 Aggressive expansion authorizes throughput, breadth, and deeper synthesis. It does not authorize automatic publication, candidate leakage, claim inflation, unsupported local conclusions, public GitHub synchronization, package freeze, DNS changes, custom-domain attachment, or public launch.
+
+## 2026-07-24: Phase 55T Replaces A Generic Third Authority Batch As The Active Gate
+
+Decision:
+
+Proceed directly from the first two Phase 55S authority batches into the Phase 55T thin-topic corpus build. Treat the unfinished third 30-record allocation as an authority backlog that can replenish named Phase 55U local systems and Phase 55V research collections rather than as a quota that must be completed before deeper work.
+
+Rationale:
+
+The 255-source library already supplied broad authority coverage, but nine topics still needed stronger signal shelves and clearer conversion paths. Seventeen named official records and eighteen bounded signals were enough to bring every topic to at least four signals and two Published records. Building around verified deficits produced more reader value than adding another generic portal-heavy source batch.
+
+Implemented:
+
+- 17 official source records across Climate, Discovery Technologies, Mobility, Space, Advanced Manufacturing, Agriculture and Bioeconomy, Aviation, Cybersecurity, and Quantum;
+- 18 signal decisions: 10 Published and 8 In Review;
+- a four-signal and two-Published-record floor across all 17 topics;
+- two In Review pathways, two In Review dependency maps, one In Review briefing, nine topic-summary repairs, and three evidence-gap repairs;
+- a verified 521-page, 272-source, 97-signal contract with 61 Published and 36 In Review signals;
+- Phase 55U becomes the next active content phase.
+
+Boundary:
+
+The topic floor is an editorial completeness gate, not proof that every topic is equally mature. The new In Review synthesis records do not inherit the Published state of their supporting signals. The remaining Phase 55S backlog, owner-only access, package freeze, public GitHub synchronization, DNS, custom-domain attachment, and public launch remain separately controlled.

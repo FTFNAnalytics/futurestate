@@ -53,20 +53,22 @@ Phase 55S batch one completes the first 30 records in the approved 90-record aut
 
 Phase 55S batch two completes the next 30 authority records across critical minerals, grid data, chips and export controls, labor and housing, Phoenix infrastructure, and Toronto and Ontario local conversion. A fifth research collection adds ten reviewed documents and a 13-file archive. Seven new signals receive independent decisions: six pass as bounded Published records and the active OEB non-wires proceeding remains `In Review`. Stack Watch 005 adds the sprint's first new briefing draft. The verified package reaches 483 pages, 255 sources, 79 signals, 51 Published, 28 In Review, 21 updates, five collections, and 65 research documents. Sites version 17 serves exact source commit `3e2310de99382612be7c5221d0070184188f85d4` under the unchanged owner-only policy.
 
+Phase 55T closes the remaining topic-depth deficits with 17 named official sources and 18 bounded signals across nine topic families. Ten records pass independent publication gates and eight remain `In Review`. Every topic now contains at least four signals and at least two Published records. Two new `In Review` pathways and two `In Review` dependency maps connect climate observation to local decision and autonomy regulation to operating service; Stack Watch 006, nine topic-summary repairs, and three evidence-gap repairs make the next-record questions explicit. The locally verified package reaches 521 pages, 272 sources, 97 signals, 61 Published, 36 In Review, 22 updates, seven briefings, five dependency maps, and eight pathways across 12 Atlas surfaces. The owner-only Sites refresh is pending.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 483 | +301 |
-| Sources | 102 | 255 | +153 |
-| Signals | 18 | 79 | +61 |
-| Published signals | 3 | 51 | +48 |
-| In Review signals | 14 | 28 | +14 |
+| Generated HTML pages | 182 | 521 | +339 |
+| Sources | 102 | 272 | +170 |
+| Signals | 18 | 97 | +79 |
+| Published signals | 3 | 61 | +58 |
+| In Review signals | 14 | 36 | +22 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 21 | +21 |
+| Public update entries | 0 | 22 | +22 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
@@ -76,11 +78,11 @@ Additional current records:
 - 2 local systems,
 - 10 evidence gaps,
 - 6 structured Phase 55Q evidence-gap decisions,
-- 3 Published dependency maps,
-- 5 briefings: 2 Published and 3 In Review,
-- 4 research collections with 55 document records,
-- 6 reader pathways across 7 existing Atlas surfaces,
-- 37 official local captures plus 18 official-link records across verified 26-file, 11-file, 19-file, and 11-file ZIP archives.
+- 5 dependency maps: 3 Published and 2 In Review,
+- 7 briefings: 2 Published and 5 In Review,
+- 5 research collections with 65 document records,
+- 8 reader pathways across 12 existing Atlas surfaces,
+- 37 official local captures plus 28 official-link records across verified 26-file, 11-file, 19-file, 11-file, and 13-file ZIP archives.
 
 ## What Is Built
 
@@ -100,7 +102,7 @@ The public application includes:
 
 The editorial and authority layer includes:
 
-- 225 structured source records with authority, freshness, access, monitoring, and review metadata,
+- 272 structured source records with authority, freshness, access, monitoring, and review metadata,
 - 72 bounded signal records with explicit claim and evidence limits,
 - 45 Published signals backed by 75 sources checked on or after 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
@@ -164,15 +166,17 @@ Phase 55S batch one promoted 30 high-priority candidates into separately authore
 
 Phase 55S batch two promoted the next 30 High-priority candidates, added seven signals, ten research documents, a fifth research collection, a 13-file archive, one `In Review` briefing draft, and one public update. The result is 483 generated pages, 255 sources, 79 signals, 51 Published, 28 In Review, 21 public updates, five research collections, and 65 research documents. Candidate validation, active-source duplicate validation, content validation, source endpoint metadata, Astro diagnostics, the production build, archive generation, release assertions, and owner-only deployment pass.
 
+Phase 55T adds 17 named official sources and 18 signals across the nine thinnest topic families. Ten pass record-level publication review and eight retain explicit downstream holds. Every topic now has at least four signals and at least two Published records. The result is 521 generated pages, 272 sources, 97 signals, 61 Published, 36 In Review, 22 public updates, seven briefings, five dependency maps, eight pathways, and 96 current Published-support sources. Candidate validation, content validation, source endpoint metadata, Astro diagnostics, production build, sitemap and indexing membership, exports, research archives, topic-floor checks, and private-registry exclusion pass.
+
 Verified results:
 
-- 483 generated site pages,
-- exact exports for 255 sources, 17 topics, and 51 Published signals,
-- all 51 Published signal routes included in the sitemap,
+- 521 generated site pages,
+- exact exports for 272 sources, 17 topics, and 61 Published signals,
+- all 61 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
-- both Published briefing routes included in the sitemap and all three held briefing routes excluded,
-- all three Published dependency-map routes included in the sitemap,
-- all six reader pathways rendered across seven existing Atlas surfaces with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records,
+- both Published briefing routes included in the sitemap and all five held briefing routes excluded,
+- all three Published dependency-map routes included in the sitemap and both held map routes excluded,
+- all eight reader pathways rendered across 12 existing Atlas surfaces with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records,
 - all ten evidence-gap details included in the sitemap, with exactly six structured Phase 55Q decisions rendered and verified,
 - correct canonical, robots, and publication-state indexing boundaries,
 - ten core journeys checked at `1440x900` and `390x844`,
@@ -184,7 +188,7 @@ Verified results:
 - five Published research collections with all 65 document routes in the sitemap,
 - verified 26-file, 11-file, 19-file, 11-file, and 13-file ZIP archives containing 37 local captures, 28 official-link files, summaries, README files, and manifests.
 
-The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; batch evidence and the next allocation are in `docs/work-packages/phase-55s-authority-sprint-batch-1.md` and `docs/work-packages/phase-55s-authority-sprint-batch-2.md`. Sites version 17 serves exact Phase 55S batch-two source commit `3e2310de99382612be7c5221d0070184188f85d4`. The expansion does not change the access policy, package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
+The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; the completed topic-depth gate is recorded in `docs/work-packages/phase-55t-thin-topic-corpus-build.md`. Sites version 17 remains the last deployed checkpoint while the Phase 55T owner-only refresh is pending. The expansion does not change the access policy, package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
@@ -237,4 +241,4 @@ npm.cmd run build
 npm.cmd run verify:release
 ```
 
-Expected output: 434 generated site pages, verified 26-file, 11-file, 19-file, and 11-file research archives, six Phase 55Q evidence decisions, and a passing v0.2 release assertion.
+Expected output: 521 generated site pages, verified 26-file, 11-file, 19-file, 11-file, and 13-file research archives, six Phase 55Q evidence decisions, eight reader pathways across 12 Atlas surfaces, and a passing v0.2 release assertion.

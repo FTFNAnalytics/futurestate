@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 55S authority sprint, batch two of three
+Latest completed work: Phase 55T thin-topic corpus build
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 483 generated site pages
-Content: 255 sources, 79 signals, 17 topics, 5 research collections / 65 research documents
-Publication: 51 Published signals, 28 In Review signals, 2 Published briefings, 4 In Review briefings, 3 Published dependency maps
-Trust/data: 21 update entries, 6 Phase 55Q gap decisions, 6 reader pathways across 7 Atlas surfaces, 3 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, and 13-file research archives
+Build: 521 generated site pages
+Content: 272 sources, 97 signals, 17 topics, 5 research collections / 65 research documents
+Publication: 61 Published signals, 36 In Review signals, 2 Published briefings, 5 In Review briefings, 3 Published and 2 In Review dependency maps
+Trust/data: 22 update entries, 6 Phase 55Q gap decisions, 8 reader pathways across 12 Atlas surfaces, 3 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, and 13-file research archives
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 17 from 3e2310d at https://ftfn-analytics.jbumstead.chatgpt.site
+Deployment: owner-only Sites version 17 from 3e2310d remains live; Phase 55T refresh pending at https://ftfn-analytics.jbumstead.chatgpt.site
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 156 Manual Review, 99 Probe Ready; 14 Strong coverage lanes
-Next phase: process the final Phase 55S 30-record sub-batch; Phase 55H, Phase 55R, and Arizona wastewater remain dated inserts
+Source health: 172 Manual Review, 100 Probe Ready; 14 Strong coverage lanes
+Next phase: Phase 55U local-systems network; Phase 55H, Phase 55R, and Arizona wastewater remain dated inserts
 ```
 
 ## Read First
@@ -83,6 +83,9 @@ The approved preview sequence is complete:
 28. Completed Phase 55S batch one and deployed exact source commit `9e393f0731d996662d95d912e9737bafdaa1ad67` as owner-only Sites version 16.
 29. Completed Phase 55S batch two locally: promoted 30 candidates, added 30 sources, seven signals, ten research documents, one collection, one briefing draft, and one update; verified 483 pages, 255 sources, 79 signals, 51 Published, and 28 In Review without changing access, DNS, custom-domain, or public GitHub state.
 30. Deployed exact Phase 55S batch-two source commit `3e2310de99382612be7c5221d0070184188f85d4` as owner-only Sites version 17 with the existing sole-owner access policy and no DNS, custom-domain, package, or public-GitHub change.
+31. Completed Phase 55T locally: added 17 named official sources and 18 bounded signals across nine thin topic families; ten Published and eight remained In Review.
+32. Raised all 17 topics to at least four signals and two Published records; added two In Review pathways, two In Review maps, Stack Watch 006, nine topic-summary repairs, three gap repairs, and one update.
+33. Verified 521 pages, 272 sources, 97 signals, 61 Published, 36 In Review, seven briefings, five maps, eight pathways across 12 Atlas surfaces, and 96 current Published-support sources; owner-only deployment refresh pending.
 
 ## Required Stop Points
 
@@ -136,9 +139,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 55S authority-sprint batch two. The current candidate should be 0.2.0-dev on codex/phase51-content with 255 sources, 79 signals, 51 Published signals, 28 In Review signals, two Published briefings, four In Review briefings, three Published dependency maps, six Phase 55Q gap decisions, six reader pathways across seven existing Atlas surfaces, 21 public updates, three JSON exports, 483 generated site pages, five research collections, 65 research documents, and verified 26-file, 11-file, 19-file, 11-file, and 13-file download archives. Owner-only Sites version 17 serves exact source commit 3e2310de99382612be7c5221d0070184188f85d4 at https://ftfn-analytics.jbumstead.chatgpt.site; the branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
+The latest completed work is Phase 55T. The current candidate should be 0.2.0-dev on codex/phase51-content with 272 sources, 97 signals, 61 Published signals, 36 In Review signals, two Published briefings, five In Review briefings, three Published and two In Review dependency maps, six Phase 55Q gap decisions, eight reader pathways across 12 existing Atlas surfaces, 22 public updates, three JSON exports, 521 generated site pages, five research collections, 65 research documents, and verified 26-file, 11-file, 19-file, 11-file, and 13-file download archives. Owner-only Sites version 17 remains the last deployed checkpoint at https://ftfn-analytics.jbumstead.chatgpt.site; verify the Phase 55T deployment receipt before relying on this line. The branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55S batches one and two are complete and deployed; process the final 30-record sub-batch from the four remaining High-priority candidates plus 26 newly selected primary artifacts. Favor named downstream records, thin-topic signal conversion, and the first dependency-map draft or Stack Watch 005 repair. Treat the August 1 Toronto task, August 10 DARPA Lift task, and September 22 Arizona wastewater task as bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55T is complete; begin Phase 55U by selecting three or four evidence-dense local systems with interacting constraints, named authorities, operating records, pathways, gaps, and dated stop rules. Treat the unfinished Phase 55S third allocation as an authority backlog for named Phase 55U and Phase 55V gaps. Treat the August 1 Toronto task, August 10 DARPA Lift task, and September 22 Arizona wastewater task as bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

@@ -1,7 +1,7 @@
 # Phases 55S-55W Aggressive Content Expansion
 
 Date: 2026-07-24
-Status: approved direction; Phase 55S batches one and two complete locally
+Status: active program; Phase 55S batches one and two and Phase 55T complete locally
 
 ## Direction
 
@@ -9,7 +9,7 @@ FTFN will keep building while dated outcome gates mature. Phase 55H, Phase 55R, 
 
 The expansion is aggressive in throughput and coverage, not in claim inflation. Source intake, research-document capture, signal drafting, synthesis, publication review, and owner-only deployment remain separate stages.
 
-## Current Baseline
+## Program Starting Baseline
 
 | Measure | Current |
 | --- | ---: |
@@ -68,7 +68,29 @@ Two of the three 30-record sub-batches are complete. The verified local corpus n
 
 Batch one built thin-topic authority rails. Batch two connected national industrial-capacity evidence to critical-minerals, power, labor, housing, Phoenix infrastructure, Toronto procurement-planning, Ontario regulation, and CHIPS environmental-review records.
 
-Batch three should complete the 90-record sprint with the four remaining High-priority candidates and 26 newly selected primary records. Selection should favor named downstream artifacts and thin-topic signal conversion rather than adding more generic portals.
+The original batch-three allocation paired the four remaining High-priority candidates with 26 newly selected primary records. After the user advanced the active gate to Phase 55T, that allocation became a replenishment backlog rather than a prerequisite.
+
+## Phase 55T Result
+
+The user advanced the active gate to Phase 55T after the first two Phase 55S batches. The unfinished third 30-record allocation now remains an authority backlog for named Phase 55U and Phase 55V needs rather than a prerequisite.
+
+Phase 55T added 17 named official sources and 18 bounded signals across nine thin topic families. Ten signals passed independent publication review and eight remain `In Review`. Every one of the 17 topics now contains at least four signals and at least two Published records.
+
+The phase also added two `In Review` reader pathways, two `In Review` dependency maps, Stack Watch 006, nine topic-summary repairs, three evidence-gap repairs, and one update. The verified local corpus now contains:
+
+| Measure | Phase 55T state |
+| --- | ---: |
+| Public sources | 272 |
+| Signals | 97 |
+| Published signals | 61 |
+| In Review signals | 36 |
+| Briefings | 7 |
+| Dependency maps | 5 |
+| Reader pathways | 8 |
+| Public updates | 22 |
+| Generated pages | 521 |
+
+The complete selection, topic matrix, publication decisions, validation evidence, and Phase 55U handoff are in `docs/work-packages/phase-55t-thin-topic-corpus-build.md`.
 
 ## Phase 55S: Ninety-Record Authority Sprint
 
@@ -224,9 +246,9 @@ Every expansion wave must:
 
 ## Immediate Execution Order
 
-1. Build the 90-record Phase 55S queue.
-2. Process it in three 30-record sub-batches.
-3. Complete source and research-document records before signal drafting.
-4. Run a separate publication review after each two sub-batches.
-5. Begin Phase 55T from the verified topic deficits.
-6. Select Phase 55U systems from evidence density, not branding or narrative appeal.
+1. Preserve the completed Phase 55S batch-one and batch-two authority rails.
+2. Preserve the completed Phase 55T four-signal topic floor and its record-level publication decisions.
+3. Keep the unfinished Phase 55S third allocation as a replenishment backlog rather than a release gate.
+4. Select Phase 55U systems from evidence density, not branding or narrative appeal.
+5. Use the authority backlog to close named system-specific gaps.
+6. Continue to insert dated checks without pausing the active expansion queue.

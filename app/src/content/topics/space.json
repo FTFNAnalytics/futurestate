@@ -2,17 +2,22 @@
   "id": "topic-space",
   "name": "Space",
   "slug": "space",
-  "summary": "Space travel, lunar infrastructure, launch systems, surface systems, exploration logistics, science missions, and the terrestrial industrial stack needed to move beyond low Earth orbit.",
+  "summary": "The current shelf connects a dated Artemis hardware milestone to NASA's Moon to Mars architecture, lunar communications specifications, and power-strategy dependencies. It makes the system stack visible while keeping architecture, hardware assembly, standards, integration, launch, mission, and operation separate.",
   "framework_layers": ["Frontier Domains", "Enabling Infrastructure", "Human Systems"],
   "primary_constraints": ["Capital", "Manufacturing", "Supply Chain", "Geopolitics", "Safety"],
   "featured_sources": [
     "source-nasa-artemis",
     "source-nasa-open-apis",
     "source-nasa-technical-reports-server",
-    "source-noaa-space-weather-products-data"
+    "source-noaa-space-weather-products-data",
+    "source-nasa-moon-to-mars-architecture-rev-c-2025",
+    "source-nasa-lunar-communications-navigation-2026",
+    "source-nasa-integrated-lunar-power-strategy-2025",
+    "source-nasa-artemis-iii-hardware-july-2026"
   ],
   "watch_questions": [
-    "Which mission updates change the dependency stack for lunar and deep-space infrastructure?",
-    "Where do launch cadence, surface systems, procurement, safety, and international coordination become binding constraints?"
+    "Which Revision C elements move into appropriations, program plans, contracts, hardware, integration, tests, launch decisions, and missions?",
+    "When do LunaNet and LCRNS specifications become procured, deployed, validated, secure, and operating communications services?",
+    "Which lunar power decisions produce funded systems, interfaces, demonstrations, launch assignments, emplacement, connection, operation, and maintenance?"
   ]
 }

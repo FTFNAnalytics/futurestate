@@ -1,0 +1,78 @@
+{
+  "id": "reader-pathway-autonomy-regulation-to-service",
+  "title": "Autonomy Regulation To Service",
+  "slug": "autonomy-regulation-to-service",
+  "record_status": "In Review",
+  "summary": "Follow federal AV policy, proposed oversight, crash reporting, a specific ADS recall, powered-lift operating rules, pilot selections, certification, local infrastructure, service, and outcomes.",
+  "current_state_summary": "FTFN now has a cross-modal autonomy shelf that preserves the separate road-vehicle and aviation regulatory systems while exposing their shared conversion gates: safety evidence, system approval, local permission, infrastructure, operations, and measured performance.",
+  "current_state": [
+    "The federal AV Framework states policy direction and AV STEP remains a proposed voluntary program.",
+    "NHTSA's amended SGO supplies ongoing crash-reporting evidence with explicit data-quality and comparison limits.",
+    "Recall 26E026 records a specific weather-related ADS defect and interim operating-scope remedy.",
+    "FAA's powered-lift final rule completes pilot and operating requirements while aircraft and operator approvals remain separate.",
+    "Eight eIPP proposal selections create a test lane without establishing agreements, sites, flights, safety findings, or service."
+  ],
+  "primary_topics": ["Mobility", "Aviation", "Cybersecurity", "Policy and Standards"],
+  "topic_ids": ["topic-mobility", "topic-aviation", "topic-cybersecurity"],
+  "local_system_ids": [],
+  "signal_ids": [
+    "signal-dot-2025-automated-vehicle-framework",
+    "signal-nhtsa-av-step-proposed-oversight",
+    "signal-sample-005",
+    "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+    "signal-faa-powered-lift-final-operating-rule",
+    "signal-faa-2026-evtol-integration-pilot-selections",
+    "signal-sample-004",
+    "signal-sample-010"
+  ],
+  "source_ids": [
+    "source-dot-automated-vehicle-framework-2025",
+    "source-nhtsa-av-step-proposal-2024",
+    "source-nhtsa-sgo-crash-reporting",
+    "source-nhtsa-waymo-26e026-recall-2026",
+    "source-faa-powered-lift-final-rule-2024",
+    "source-faa-eipp-selections-2026",
+    "source-faa-aam",
+    "source-joby-faa-conforming-aircraft-2026"
+  ],
+  "organization_ids": [],
+  "technology_ids": ["technology-evtol-aircraft"],
+  "briefing_ids": ["briefing-stack-watch-006-thin-topic-conversion"],
+  "dependency_map_ids": ["dependency-map-autonomy-rules-are-not-service"],
+  "research_collection_ids": ["research-collection-thin-topic-authority-foundations-2023-2026"],
+  "evidence_gap_ids": ["gap-010"],
+  "dependency_stack": [
+    {
+      "stage": "Policy, Proposal, And Final Rule",
+      "current_state": "The shelf separates policy direction, a proposed voluntary program, and a final powered-lift operating rule.",
+      "boundary": "None alone proves vehicle or aircraft approval, operator authorization, local permission, or service."
+    },
+    {
+      "stage": "Reporting, Defect, And Remedy",
+      "current_state": "NHTSA provides an incident-reporting rail and a specific ADS recall with an interim operating-scope remedy.",
+      "boundary": "Raw reports and one recall do not establish comparative safety, exposure-adjusted risk, or final remedy effectiveness."
+    },
+    {
+      "stage": "System And Operator Approval",
+      "current_state": "Aircraft, vehicle, production, exemption, operator, route, and operating-design-domain approvals remain system-specific gates.",
+      "boundary": "A company test claim or pilot selection does not prove a regulator approval."
+    },
+    {
+      "stage": "Local Conversion And Service",
+      "current_state": "Road, airspace, site, vertiport, charging, emergency, insurance, weather, noise, community, and enforcement records are still required.",
+      "boundary": "No local service, safety, cost, availability, ridership, or scale conclusion is supported without operating evidence."
+    }
+  ],
+  "evidence_limits": [
+    "Road automated driving and powered-lift aviation are distinct regulatory systems; this pathway compares conversion stages rather than combining legal regimes.",
+    "Policy, proposals, reporting, recalls, final rules, and selections are not certification or service.",
+    "Incident data requires exposure, duplication, system classification, operating conditions, and reporting-awareness controls."
+  ],
+  "next_records": [
+    "AV STEP final disposition and each named AV Framework rulemaking, exemption, and reporting action.",
+    "recall completion, final remedy, investigations, and comparable weather and operating-design-domain evidence.",
+    "aircraft, vehicle, production, operator, route, and local approvals.",
+    "eIPP agreements, named sites, test plans, flights, safety data, public findings, and service decisions.",
+    "local infrastructure, emergency, insurance, weather, noise, community, operating, cost, availability, safety, and usage records."
+  ]
+}
