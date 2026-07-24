@@ -37,7 +37,7 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 590
+static pages generated: 591
 current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
@@ -125,6 +125,9 @@ What is now stable:
 - Phase 55V added an eighteen-document cross-corridor research collection with six records each for Northern Virginia, Nevada, and Florida, four local official-PDF captures, fourteen official-link records, a verified 21-file archive, and Research Watch 001.
 - The verified Phase 55V contract is 590 pages, 298 sources, 112 signals, 73 Published signals, 39 In Review signals, nine briefings, six research collections, 83 research documents, eleven pathways across 18 Atlas surfaces, 13 evidence gaps, and 24 updates. Three local dossiers and pathways are deepened, gaps `011` through `013` are narrowed, and the Rhyolite Ridge DOE financing stage is corrected without claiming financial close.
 - Phase 55V app content commit `3bdb52a9348e5cf963ec6569838f880611d2491c` matches private Sites source commit `b2db5978f0c4a37c35998f849fcd75158c115cec`, deployed as owner-only Sites version 21 with one allowed owner and no groups. Deployment status and the protected sign-in gate pass.
+- Phase 55W reviewed 45 signal decisions, promoted 12, held 27, and reconfirmed six Published controls. Research Watch 001 and `Local Authorization Is Not Operation` are now Published.
+- Phase 55W adds four pathways, multi-dimensional signal and Source Monitor filtering, separate collection and document research shelves, topic-level latest-evidence shelves, a data landing page, and research/pathway exports.
+- The verified Phase 55W contract is 591 pages, 298 sources, 112 signals, 85 Published signals, 27 In Review signals, 134 current Published-support sources, nine briefings, six maps, six research collections, 83 research documents, fifteen pathways across 19 Atlas surfaces, 13 evidence gaps, 25 updates, and five public-data exports.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 112 current Published-support sources are governed by the same current-source release assertion.
@@ -146,7 +149,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve the owner-only Sites version 21 deployment and continue the Phase 55S-55W aggressive content-expansion program immediately. Phase 55V is complete and deployed. Phase 55W should apply the corpus publication and usability gate: 40-60 record-level decisions, research-shelf navigation, stronger filtering, and expansion of the current eleven pathways toward 12-15 only where reader value is clear. The remaining Phase 55S allocation is an authority backlog for named gaps. All six scheduled checks are bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve the owner-only Sites deployment and continue immediately with Phase 55X dossier-led authority expansion. Phase 55W is complete and release-verified. Select three to five under-connected reader journeys, add 24-36 primary documents and 12-18 bounded signals, and prioritize named permit, service, acceptance, operation, and measured-outcome gaps over another broad volume sprint. The remaining Phase 55S allocation is an authority backlog for named gaps. All six scheduled checks are bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -158,15 +161,15 @@ Current seed content includes:
 - 5 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 9 briefings: 2 Published and 7 In Review,
+- 9 briefings: 3 Published and 6 In Review,
 - 13 evidence gap records,
 - 6 structured Phase 55Q evidence-gap decisions,
-- 6 dependency maps: 3 Published and 3 In Review,
+- 6 dependency maps: 4 Published and 2 In Review,
 - 6 research collections with 83 document records,
-- 11 reader pathways across 18 existing Atlas surfaces,
-- 24 public update-log entries.
+- 15 reader pathways across 19 existing Atlas surfaces,
+- 25 public update-log entries.
 
-Seventy-three official-source-backed signals are now `Published`.
+Eighty-five official-source-backed signals are now `Published`.
 
 Phase 55M added thirteen bounded records to the prior 25-signal Published set:
 
@@ -329,15 +332,15 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 55W publication, navigation, and scale gate
+Phase 55X dossier-led authority expansion
 ```
 
 Proceed by:
 
-- review 40-60 signal candidates through the complete record-level publication gate,
-- add research-shelf separation and stronger topic, status, evidence-quality, source-type, and watch-lane filtering,
-- expand the current eleven pathways toward 12-15 only where each improves a named reader journey,
-- publish or explicitly hold each new briefing and dependency map,
+- select three to five under-connected reader journeys from the pathway, research, and gap layers,
+- add 24-36 primary documents and 12-18 bounded signals tied to those journeys,
+- prioritize named permit, service, acceptance, operation, and measured-outcome evidence,
+- apply explicit publish or hold decisions before changing sitemap or export membership,
 - use the remaining Phase 55S authority backlog only where it fills a named corpus gap,
 - run all six dated tasks as bounded inserts without pausing the queue,
 - keep Git and the static build as the public publication gate,
@@ -420,16 +423,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 55V cross-corridor infrastructure-conversion collection.
+Phase 55W publication, navigation, and scale gate.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 55V candidate: package 0.2.0-dev, 298 public sources, 150 first-pass-triaged private candidates, 112 signals, 17 topics, 24 updates, 13 evidence gaps, 11 reader pathways across 18 Atlas surfaces, 590 generated site pages, 73 Published signals, 2 Published briefings, 7 In Review briefings, 3 Published and 3 In Review dependency maps, 5 local systems, 6 research collections, 83 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file research archives, and 3 public JSON endpoints. Exact private Sites source commit `b2db5978f0c4a37c35998f849fcd75158c115cec` is deployed as owner-only Sites version 21 at https://ftfn-analytics.jbumstead.chatgpt.site. Source Coverage is 14 Strong lanes; source health reports 192 Manual Review and 106 Probe Ready records.
+v0.2 Phase 55W candidate: package 0.2.0-dev, 298 public sources, 150 first-pass-triaged private candidates, 112 signals, 17 topics, 25 updates, 13 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 591 generated site pages, 85 Published signals, 3 Published briefings, 6 In Review briefings, 4 Published and 2 In Review dependency maps, 5 local systems, 6 research collections, 83 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file research archives, and 5 public JSON endpoints. The Phase 55W owner-only deployment receipt is recorded after hosting completes. Source Coverage is 14 Strong lanes; source health reports 192 Manual Review and 106 Probe Ready records.
 
 Next decision gate:
-Preserve the owner-only preview and begin Phase 55W. Apply record-level publication gates, research-shelf navigation, corpus filtering, and bounded pathway expansion without automatic promotion. Use the remaining Phase 55S authority backlog only for named gaps. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve the owner-only preview and begin Phase 55X. Select three to five under-connected reader journeys and build evidence-dense dossiers with 24-36 primary documents and 12-18 bounded signals. Use the remaining Phase 55S authority backlog only for named gaps. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

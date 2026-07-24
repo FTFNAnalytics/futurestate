@@ -86,8 +86,85 @@ export function serializePublicSignal(signal: CollectionEntry<"signals">) {
   };
 }
 
+export function serializePublicResearchCollection(collection: CollectionEntry<"researchCollections">) {
+  const data = collection.data;
+
+  return {
+    record_kind: "research_collection",
+    id: data.id,
+    title: data.title,
+    slug: data.slug,
+    path: `/research/${data.slug}/`,
+    record_status: data.record_status,
+    summary: data.summary,
+    scope: data.scope,
+    captured_date: isoDate(data.captured_date),
+    document_ids: data.document_ids,
+    download_path: data.download_path,
+    download_note: data.download_note,
+    method_note: data.method_note
+  };
+}
+
+export function serializePublicResearchDocument(document: CollectionEntry<"researchDocuments">) {
+  const data = document.data;
+
+  return {
+    record_kind: "research_document",
+    id: data.id,
+    collection_id: data.collection_id,
+    title: data.title,
+    slug: data.slug,
+    path: `/research/documents/${data.slug}/`,
+    record_status: data.record_status,
+    publisher: data.publisher,
+    publication_date: isoDate(data.publication_date),
+    document_type: data.document_type,
+    summary: data.summary,
+    key_findings: data.key_findings,
+    why_it_matters: data.why_it_matters,
+    ftfn_relevance: data.ftfn_relevance,
+    evidence_limits: data.evidence_limits,
+    primary_topics: data.primary_topics,
+    framework_layers: data.framework_layers,
+    constraint_tags: data.constraint_tags,
+    source_id: data.source_id,
+    official_url: data.official_url,
+    capture_status: data.capture_status,
+    captured_date: isoDate(data.captured_date)
+  };
+}
+
+export function serializePublicReaderPathway(pathway: CollectionEntry<"readerPathways">) {
+  const data = pathway.data;
+
+  return {
+    id: data.id,
+    title: data.title,
+    slug: data.slug,
+    record_status: data.record_status,
+    summary: data.summary,
+    current_state_summary: data.current_state_summary,
+    current_state: data.current_state,
+    primary_topics: data.primary_topics,
+    topic_ids: data.topic_ids,
+    local_system_ids: data.local_system_ids,
+    signal_ids: data.signal_ids,
+    source_ids: data.source_ids,
+    organization_ids: data.organization_ids,
+    technology_ids: data.technology_ids,
+    briefing_ids: data.briefing_ids,
+    dependency_map_ids: data.dependency_map_ids,
+    research_collection_ids: data.research_collection_ids,
+    evidence_gap_ids: data.evidence_gap_ids,
+    dependency_stack: data.dependency_stack,
+    evidence_limits: data.evidence_limits,
+    next_records: data.next_records
+  };
+}
+
 export function publicDatasetResponse(
-  dataset: "sources" | "topics" | "signals",
+  dataset: "sources" | "topics" | "signals" | "research" | "pathways",
   recordScope: string,
   records: unknown[]
 ): Response {

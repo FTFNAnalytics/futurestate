@@ -40,31 +40,34 @@
   "build_command": "npm run build",
   "output_directory": "dist",
   "expected_build": {
-    "static_pages": 590,
+    "static_pages": 591,
     "signals": 112,
-    "published_signals": 73,
-    "in_review_signals": 39,
+    "published_signals": 85,
+    "in_review_signals": 27,
     "draft_sample_signals": 0,
-    "published_support_sources": 112,
+    "published_support_sources": 134,
     "sources": 298,
     "topics": 17,
     "organizations": 19,
     "technologies": 5,
     "local_systems": 5,
     "briefings": 9,
-    "published_briefings": 2,
-    "in_review_briefings": 7,
+    "published_briefings": 3,
+    "in_review_briefings": 6,
     "evidence_gaps": 13,
     "dependency_maps": 6,
-    "published_dependency_maps": 3,
-    "in_review_dependency_maps": 3,
+    "published_dependency_maps": 4,
+    "in_review_dependency_maps": 2,
     "research_collections": 6,
     "research_documents": 83,
-    "reader_pathways": 11,
-    "reader_pathway_surfaces": 18,
+    "reader_pathways": 15,
+    "published_reader_pathways": 10,
+    "reader_pathway_surfaces": 19,
     "phase_55q_gap_decisions": 6,
-    "updates": 24,
-    "public_json_exports": 3
+    "updates": 25,
+    "public_json_exports": 5,
+    "research_export_records": 89,
+    "pathway_export_records": 10
   },
   "private_authority_layer": {
     "registry_visibility": "local-only-git-ignored",
@@ -85,13 +88,13 @@
     "public_output_policy": "Candidate records, IDs, private notes, and registry paths must not appear in static output or public exports."
   },
   "release_delta_from_v0_1_1": {
-    "static_pages_added": 359,
+    "static_pages_added": 360,
     "signals_added": 79,
-    "published_signals_added": 58,
+    "published_signals_added": 70,
     "sources_added": 170,
-    "public_json_exports_added": 3,
+    "public_json_exports_added": 5,
     "public_update_log_added": true,
-    "summary": "Extends the Phase 55K through Phase 55T evidence baseline with the Phase 55U local-systems network and Phase 55V primary-document shelf: 298 public sources, 112 signals, 73 Published signals, five local systems, two Published and seven In Review briefings, three Published and three In Review dependency maps, eleven reader pathways, thirteen evidence gaps, 24 public updates, six research collections, 83 summarized research documents, and versioned source, topic, and Published-signal exports."
+    "summary": "Extends the Phase 55K through Phase 55V evidence baseline with the Phase 55W publication and discovery pass: 298 public sources, 112 signals, 85 Published signals, five local systems, three Published and six In Review briefings, four Published and two In Review dependency maps, fifteen reader pathways, thirteen evidence gaps, 25 public updates, six research collections, 83 summarized research documents, and five versioned public-data exports."
   },
   "phase_55k_delta": {
     "static_pages_added": 60,
@@ -250,6 +253,21 @@
     "public_update_entries_added": 1,
     "generated_pages_added": 20
   },
+  "phase_55w_delta": {
+    "signal_records_reviewed": 45,
+    "signals_promoted": 12,
+    "signals_held_in_review": 27,
+    "published_controls_reconfirmed": 6,
+    "briefings_published": 1,
+    "briefings_held_in_review": 6,
+    "dependency_maps_published": 1,
+    "dependency_maps_held_in_review": 2,
+    "reader_pathways_added": 4,
+    "topic_pages_with_latest_evidence": 17,
+    "public_json_exports_added": 2,
+    "public_update_entries_added": 1,
+    "generated_pages_added": 1
+  },
   "last_verified": {
     "date": "2026-07-24",
     "published_support_minimum_date": "2026-07-22",
@@ -266,7 +284,7 @@
     "source_coverage_weak_lanes": 0,
     "astro_check": "passed",
     "build": "passed",
-    "static_pages_built": 590,
+    "static_pages_built": 591,
     "release_assertions": "passed",
     "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-55v-visual-qa-not-requested",
     "browser_viewports": [
@@ -286,6 +304,9 @@
     "dist/data/signals.json",
     "dist/data/sources.json",
     "dist/data/topics.json",
+    "dist/data/index.html",
+    "dist/data/research.json",
+    "dist/data/pathways.json",
     "dist/atlas/source-monitor/index.html",
     "dist/atlas/source-coverage/index.html",
     "dist/atlas/evidence-gaps/index.html",
@@ -408,7 +429,19 @@
     "/signals/kennedy-multiuser-master-plan/",
     "/signals/space-florida-lc46-site-license-renewal/",
     "/signals/slc40-final-environmental-decision/",
-    "/signals/faa-part450-operator-transition/"
+    "/signals/faa-part450-operator-transition/",
+    "/signals/nist-2026-ai-smart-manufacturing-roadmap/",
+    "/signals/nist-ai-rmf-critical-infrastructure-profile-concept/",
+    "/signals/darpa-fy2027-supply-chain-logistics-rd-portfolio/",
+    "/signals/fy2027-federal-rd-priorities-full-stack-technology/",
+    "/signals/usg-ai-national-security-infrastructure-stack/",
+    "/signals/srp-2025-system-plan-valley-load-growth-grid-actions/",
+    "/signals/mag-2023-projections-phoenix-region-growth-evidence-layer/",
+    "/signals/phoenix-z37-20-1-tsmc-campus-planning-envelope/",
+    "/signals/tsmc-arizona-registered-apprenticeship-technician-pipeline/",
+    "/signals/phoenix-tsmc-wastewater-infrastructure-reclaimed-water-milestones/",
+    "/signals/phoenix-2026-water-security-provider-evidence-chip-corridor/",
+    "/signals/federal-pqc-migration-plans-and-deadlines/"
   ],
   "launch_critical_routes": [
     "/",
@@ -434,15 +467,18 @@
     "/downloads/industrial-capacity-local-conversion-2025-2026.zip",
     "/downloads/cross-corridor-infrastructure-conversion-2024-2026.zip",
     "/about/",
+    "/data/",
     "/data/signals.json",
     "/data/sources.json",
     "/data/topics.json",
+    "/data/research.json",
+    "/data/pathways.json",
     "/robots.txt",
     "/sitemap.xml"
   ],
   "indexing_samples": {
     "published_signal": "/signals/doe-critical-minerals-materials-accelerator-nofo/",
-    "in_review_signal": "/signals/phoenix-tsmc-wastewater-infrastructure-reclaimed-water-milestones/",
+    "in_review_signal": "/signals/acc-project-baccara-power-water-permit-gates/",
     "in_review_company_claim_signal": "/signals/evtol-flight-campaign-demonstration-deployment-gap/",
     "published_briefing": "/briefings/stack-watch-003-research-to-implementation/",
     "in_review_briefing": "/briefings/stack-watch-001-local-constraints/",
@@ -450,7 +486,8 @@
   },
   "published_briefing_routes": [
     "/briefings/stack-watch-003-research-to-implementation/",
-    "/briefings/stack-watch-004-implementation-outcomes/"
+    "/briefings/stack-watch-004-implementation-outcomes/",
+    "/briefings/research-watch-001-cross-corridor-infrastructure-conversion/"
   ],
   "in_review_briefing_routes": [
     "/briefings/local-watch-001-conversion-gates/",
@@ -458,18 +495,17 @@
     "/briefings/stack-watch-002-federal-research-industrial-capacity/",
     "/briefings/stack-watch-005-industrial-capacity-local-conversion/",
     "/briefings/stack-watch-006-thin-topic-conversion/",
-    "/briefings/local-watch-002-three-corridor-conversion-gates/",
-    "/briefings/research-watch-001-cross-corridor-infrastructure-conversion/"
+    "/briefings/local-watch-002-three-corridor-conversion-gates/"
   ],
   "published_dependency_map_routes": [
     "/atlas/dependency-maps/federal-research-to-industrial-capacity/",
     "/atlas/dependency-maps/local-constraints-where-the-future-arrives/",
-    "/atlas/dependency-maps/post-quantum-standards-are-not-migration/"
+    "/atlas/dependency-maps/post-quantum-standards-are-not-migration/",
+    "/atlas/dependency-maps/local-authorization-is-not-operation/"
   ],
   "in_review_dependency_map_routes": [
     "/atlas/dependency-maps/autonomy-rules-are-not-service/",
-    "/atlas/dependency-maps/observation-data-is-not-local-decision/",
-    "/atlas/dependency-maps/local-authorization-is-not-operation/"
+    "/atlas/dependency-maps/observation-data-is-not-local-decision/"
   ],
   "reader_pathway_routes": [
     "/atlas/topics/chips-and-compute/",
@@ -477,6 +513,7 @@
     "/atlas/topics/critical-minerals/",
     "/atlas/topics/policy-and-standards/",
     "/atlas/topics/advanced-manufacturing/",
+    "/atlas/topics/ai-for-science/",
     "/atlas/topics/climate/",
     "/atlas/topics/discovery-technologies/",
     "/atlas/topics/mobility/",
@@ -510,20 +547,21 @@
   },
   "release_gates": [
     "Run all predeploy commands from app/",
-    "Confirm 590 generated HTML pages and all required outputs",
-    "Confirm all 73 Published signal URLs are present in the sitemap",
+    "Confirm 591 generated HTML pages and all required outputs",
+    "Confirm all 85 Published signal URLs are present in the sitemap",
     "Confirm every non-published signal URL is absent from the sitemap",
-    "Confirm both Published briefing URLs are indexed and the seven In Review briefing URLs remain noindex and outside the sitemap",
-    "Confirm all three Published dependency-map URLs are indexed and present in the sitemap while all three In Review map URLs remain noindex and outside the sitemap",
+    "Confirm all three Published briefing URLs are indexed and the six In Review briefing URLs remain noindex and outside the sitemap",
+    "Confirm all four Published dependency-map URLs are indexed and present in the sitemap while both In Review map URLs remain noindex and outside the sitemap",
     "Confirm Published details use index, follow and non-published details use noindex, follow",
     "Confirm canonical URLs and robots output use https://ftfn.io",
-    "Confirm all 112 sources supporting Published signals were checked on or after 2026-07-22",
-    "Confirm all three public JSON exports match the versioned allowlist contract",
+    "Confirm all 134 sources supporting Published signals were checked on or after 2026-07-22",
+    "Confirm all five public JSON exports match the versioned allowlist contract",
+    "Confirm the Phase 55W decision ledger contains 45 unique signal decisions: 12 promotions, 27 holds, and six Published controls",
     "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
     "Confirm generated output contains no private candidate IDs or registry-path references",
-    "Confirm all eleven reader pathways render across thirteen priority topic pages and five local-system pages with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records",
+    "Confirm all fifteen reader pathways render across fourteen priority topic pages and five local-system pages with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records",
     "Confirm all six Phase 55Q gap pages render the named record, decision, stage result, and stop rule",
-    "Confirm the twenty-four-entry public update log renders",
+    "Confirm the twenty-five-entry public update log renders",
     "Confirm all six research collections render all 83 document summaries and their 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file ZIP archives",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
@@ -546,18 +584,18 @@
   "known_limitations": [
     "The package version remains 0.2.0-dev until an approved public release decision.",
     "The hosted Sites URL is owner-only and has not been made public or attached to ftfn.io.",
-    "Thirty-nine signals, seven briefings, and three dependency maps remain In Review; all five local-system profiles remain evidence-bounded and do not state readiness scores.",
+    "Twenty-seven signals, six briefings, and two dependency maps remain In Review; all five local-system profiles remain evidence-bounded and do not state readiness scores.",
     "The 2026 National Defense Strategy is represented in the downloadable collection by an official-link file because the Defense Department host allowed review but suppressed automated export; the other 22 records have local captures.",
     "The Phase 55L download contains five official local captures and three official-link records because the Department of War and Idaho National Laboratory hosts allowed review but blocked automated export.",
     "The Phase 55N download contains ten official local captures and six official-link records because several official hosts blocked or complicated automated export; direct official URLs are preserved instead of third-party substitutes.",
     "The Phase 55S batch-two download contains ten official-link records so the reviewed primary URLs and evidence boundaries remain portable without substituting third-party copies.",
     "The Phase 55V download contains four official PDF captures and fourteen official-link records; the collection compares evidence stages and does not make the three corridors technically or legally equivalent.",
-    "The public JSON files are static build exports, not a live API or database-backed service.",
+    "The five public JSON files are static build exports, not a live API or database-backed service.",
     "The 150-record candidate registry is an ignored local file and requires private backup outside public Git.",
     "The optional bulk candidate-link audit was blocked by uniform outbound Node network failures in the verification environment; every candidate still requires live human confirmation before promotion.",
     "The Project Baccara record now includes an official 4-1 County action and final active air permit, but it does not prove the fully executed MCP, condition compliance, service, construction, occupancy, or operation.",
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the validated and deployed Phase 55V cross-corridor evidence shelf. Phase 55V adds one 18-document research collection, four local official-PDF captures, fourteen official-link records, a verified 21-file archive, one In Review briefing, and deeper integration across three local systems, pathways, and gaps. A local capture corrects the Rhyolite Ridge DOE record from potential assistance to a decision to issue a loan for defined facilities while preserving the separate financial-close boundary. App content commit 3bdb52a9348e5cf963ec6569838f880611d2491c matches the tree deployed from private Sites source commit b2db5978f0c4a37c35998f849fcd75158c115cec as owner-only Sites version 21. Deployment status and the protected sign-in gate passed; no public access, DNS, public GitHub, custom-domain, or package change is authorized."
+  "notes": "This manifest records the locally validated Phase 55W publication and discovery pass on top of the deployed Phase 55V evidence shelf. Phase 55W reviews 45 signal decisions, promotes 12 signals, publishes one briefing and one dependency map, expands the pathway network from eleven to fifteen, adds five-dimensional discovery controls, separates the research shelves, adds latest-evidence views to topic pages, and expands stable public-data exports from three to five. The current hosted receipt remains owner-only Sites version 21 until the Phase 55W deployment is complete; no public access, DNS, public GitHub, custom-domain, or package change is authorized."
 }

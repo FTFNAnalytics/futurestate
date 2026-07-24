@@ -1,0 +1,77 @@
+{
+  "id": "reader-pathway-ai-infrastructure-policy-to-assurance",
+  "title": "AI Infrastructure: From Federal Priority To Assured Operation",
+  "slug": "ai-infrastructure-policy-to-assurance",
+  "record_status": "Published",
+  "summary": "Follow federal AI and R&D direction through compute, power, chips, procurement, critical-infrastructure assurance, implementation, and measured operating evidence.",
+  "current_state_summary": "Federal records now make the infrastructure and assurance stack explicit, but policy direction, purchasing channels, and profile development remain upstream of validated institutional deployment.",
+  "current_state": [
+    "FY2027 federal R&D guidance connects AI and quantum priorities to chips, power, manufacturing, materials, and workforce.",
+    "The national-security policy stack adds secure compute, supply-chain resilience, acquisition, cybersecurity, and assurance requirements.",
+    "NIST has opened a critical-infrastructure AI RMF profile process that names deterministic behavior, explainability, graceful degradation, fail-safe operation, TEVV, and supply-chain visibility.",
+    "OMB and GSA records define use, acquisition, and purchasing rails without proving agency orders, integration, authorization, performance, or outcomes.",
+    "The pathway still lacks institution-level inventories, adopted profiles, validated controls, operating evidence, incident results, and measured mission value."
+  ],
+  "primary_topics": ["AI for Science", "Cybersecurity", "Chips and Compute", "Energy", "Policy and Standards"],
+  "topic_ids": ["topic-ai-for-science", "topic-cybersecurity"],
+  "local_system_ids": [],
+  "signal_ids": [
+    "signal-federal-rd-priorities-full-stack-technology",
+    "signal-usg-ai-national-security-infrastructure-stack",
+    "signal-nist-ai-rmf-critical-infrastructure-profile-concept",
+    "signal-omb-federal-ai-use-acquisition-requirements",
+    "signal-gsa-onegov-ai-procurement-channel",
+    "signal-dod-openai-prototype-ota-initial-obligation"
+  ],
+  "source_ids": [
+    "source-fy2027-rd-priorities-m-25-34",
+    "source-americas-ai-action-plan-2025",
+    "source-nspm-11-ai-national-security",
+    "source-nist-ai-rmf",
+    "source-omb-m-25-21-federal-ai-use",
+    "source-omb-m-25-22-federal-ai-acquisition",
+    "source-gsa-buy-ai-onegov-2026",
+    "source-dod-openai-prototype-ota-2025"
+  ],
+  "organization_ids": ["org-executive-office-president", "org-nist", "org-general-services-administration"],
+  "technology_ids": [],
+  "briefing_ids": ["briefing-stack-watch-003-research-to-implementation"],
+  "dependency_map_ids": ["dependency-map-federal-research-industrial-capacity"],
+  "research_collection_ids": [
+    "research-collection-darpa-usg-2025-2026",
+    "research-collection-federal-implementation-evidence-2025-2026"
+  ],
+  "evidence_gap_ids": ["gap-008", "gap-009"],
+  "dependency_stack": [
+    {
+      "stage": "Federal Direction",
+      "current_state": "Policy and R&D records identify AI, compute, chips, power, security, manufacturing, and talent as a connected national stack.",
+      "boundary": "Priority language does not establish appropriations, agency programs, infrastructure delivery, or technical outcomes."
+    },
+    {
+      "stage": "Acquisition And Infrastructure",
+      "current_state": "OMB, GSA, and prototype-agreement records expose governance, purchasing, contract-value, and initial-obligation rails.",
+      "boundary": "A purchasing channel, ceiling value, or initial obligation does not prove an order, deployment, authorization, usage, or mission outcome."
+    },
+    {
+      "stage": "Critical-Infrastructure Assurance",
+      "current_state": "NIST's concept identifies a sector profile and specific assurance properties for AI in IT, OT, and industrial control systems.",
+      "boundary": "The concept is not a draft profile, final guidance, mandate, validated test method, adopted control set, or deployed system."
+    },
+    {
+      "stage": "Institutional Operation",
+      "current_state": "No current pathway record closes the loop from policy and acquisition into independently validated operating performance.",
+      "boundary": "Operating claims require named systems, inventories, controls, authorization, tests, incidents, maintenance, and measured outcomes."
+    }
+  ],
+  "evidence_limits": [
+    "The pathway connects policy and infrastructure dependencies without claiming that federal agencies have completed implementation.",
+    "National-security and critical-infrastructure direction does not prove available high-security compute, resilient supply chains, or effective assurance.",
+    "Prototype agreements and buying channels are not equivalent to delivered, authorized, adopted, or successful systems."
+  ],
+  "next_records": [
+    "Agency AI inventories, implementation plans, orders, contract clauses, authorizations, evaluations, incident records, renewals, and measured outcomes.",
+    "NIST critical-infrastructure profile drafts, public comments, final guidance, TEVV methods, sector adoption, procurement language, and operator evidence.",
+    "Facility-level compute, power, cooling, supply-chain, cybersecurity, and workforce records tied to named deployments."
+  ]
+}

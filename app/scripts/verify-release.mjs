@@ -47,6 +47,8 @@ const manifest = await readJson(manifestPath);
 const signals = await readJson(join(distRoot, "data", "signals.json"));
 const sources = await readJson(join(distRoot, "data", "sources.json"));
 const topics = await readJson(join(distRoot, "data", "topics.json"));
+const researchExport = await readJson(join(distRoot, "data", "research.json"));
+const pathwaysExport = await readJson(join(distRoot, "data", "pathways.json"));
 const sitemap = await readText(join(distRoot, "sitemap.xml"));
 const robots = await readText(join(distRoot, "robots.txt"));
 const updatesHtml = await readText(join(distRoot, "updates", "index.html"));
@@ -58,6 +60,8 @@ const evidenceGapDirectory = join(appRoot, "src", "content", "evidence-gaps");
 const localSystemDirectory = join(appRoot, "src", "content", "local-systems");
 const briefingDirectory = join(appRoot, "src", "content", "briefings");
 const dependencyMapDirectory = join(appRoot, "src", "content", "dependency-maps");
+const signalDirectory = join(appRoot, "src", "content", "signals");
+const phase55WReviewPath = join(appRoot, "src", "data", "phase-55w-publication-review.json");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
@@ -69,6 +73,9 @@ const briefingFiles = (await readdir(briefingDirectory)).filter(
   (name) => name.endsWith(".md") || name.endsWith(".mdx"),
 );
 const dependencyMapFiles = (await readdir(dependencyMapDirectory)).filter((name) => name.endsWith(".json"));
+const signalFiles = (await readdir(signalDirectory)).filter(
+  (name) => name.endsWith(".md") || name.endsWith(".mdx"),
+);
 const researchCollections = await Promise.all(
   researchCollectionFiles.map((name) => readJson(join(researchCollectionDirectory, name))),
 );
@@ -78,6 +85,7 @@ const researchDocuments = await Promise.all(
 const readerPathways = await Promise.all(
   readerPathwayFiles.map((name) => readJson(join(readerPathwayDirectory, name))),
 );
+const phase55WReview = await readJson(phase55WReviewPath);
 const evidenceGaps = await Promise.all(
   evidenceGapFiles.map((name) => readJson(join(evidenceGapDirectory, name))),
 );
@@ -89,6 +97,34 @@ const htmlCount = allDistFiles.filter(
 const publicTextExtensions = new Set([".html", ".json", ".xml", ".txt", ".js", ".css"]);
 const publicTextFiles = allDistFiles.filter((path) => publicTextExtensions.has(extname(path)));
 const publicBuildText = (await Promise.all(publicTextFiles.map((path) => readText(path)))).join("\n");
+const signalStatusById = new Map(
+  await Promise.all(
+    signalFiles.map(async (name) => {
+      const text = await readText(join(signalDirectory, name));
+      const id = text.match(/^id:\s*"([^"]+)"/m)?.[1];
+      const status = text.match(/^record_status:\s*"([^"]+)"/m)?.[1];
+      return [id, status];
+    }),
+  ),
+);
+const briefingStatusById = new Map(
+  await Promise.all(
+    briefingFiles.map(async (name) => {
+      const text = await readText(join(briefingDirectory, name));
+      const id = text.match(/^id:\s*"([^"]+)"/m)?.[1];
+      const status = text.match(/^record_status:\s*"([^"]+)"/m)?.[1];
+      return [id, status];
+    }),
+  ),
+);
+const dependencyMapStatusById = new Map(
+  await Promise.all(
+    dependencyMapFiles.map(async (name) => {
+      const map = await readJson(join(dependencyMapDirectory, name));
+      return [map.id, map.record_status];
+    }),
+  ),
+);
 
 check(htmlCount === manifest.expected_build.static_pages, `Expected ${manifest.expected_build.static_pages} HTML files, found ${htmlCount}.`);
 check(signals.count === manifest.expected_build.published_signals, `Expected ${manifest.expected_build.published_signals} exported signals, found ${signals.count}.`);
@@ -122,12 +158,70 @@ check(
   dependencyMapFiles.length === manifest.expected_build.dependency_maps,
   `Expected ${manifest.expected_build.dependency_maps} dependency maps, found ${dependencyMapFiles.length}.`,
 );
-check(signals.schema_version === "1.0" && sources.schema_version === "1.0" && topics.schema_version === "1.0", "All public exports must use schema version 1.0.");
+check(
+  [signals, sources, topics, researchExport, pathwaysExport].every((dataset) => dataset.schema_version === "1.0"),
+  "All public exports must use schema version 1.0.",
+);
+check(manifest.expected_build.public_json_exports === 5, "Manifest must record five public JSON exports.");
+check(
+  researchExport.count === manifest.expected_build.research_export_records,
+  `Expected ${manifest.expected_build.research_export_records} research export records, found ${researchExport.count}.`,
+);
+check(
+  pathwaysExport.count === manifest.expected_build.published_reader_pathways,
+  `Expected ${manifest.expected_build.published_reader_pathways} pathway export records, found ${pathwaysExport.count}.`,
+);
 check(signals.records.every((record) => record.record_status === "Published"), "Signal export contains a non-Published record.");
+check(
+  pathwaysExport.records.every((record) => record.record_status === "Published"),
+  "Pathway export contains a non-Published record.",
+);
+check(
+  researchExport.records.every((record) => record.record_status === "Published"),
+  "Research export contains a non-Published record.",
+);
 check(!JSON.stringify(signals).includes('"editorial_notes"'), "Signal export leaked editorial_notes.");
 check(!JSON.stringify(sources).includes('"automation_notes"') && !JSON.stringify(sources).includes('"notes"'), "Source export leaked private notes.");
 check(!publicBuildText.includes("candidate-source-"), "Public build leaked a private source-candidate ID.");
 check(!publicBuildText.includes("private-data/source-candidates"), "Public build references the private candidate registry path.");
+
+const phase55WSignals = phase55WReview.signal_decisions;
+const phase55WSignalIds = [
+  ...phase55WSignals.promoted,
+  ...phase55WSignals.held,
+  ...phase55WSignals.published_controls_confirmed,
+];
+check(phase55WSignals.reviewed === 45, `Expected 45 Phase 55W signal decisions, found ${phase55WSignals.reviewed}.`);
+check(phase55WSignals.promoted.length === 12, `Expected 12 Phase 55W promotions, found ${phase55WSignals.promoted.length}.`);
+check(phase55WSignals.held.length === 27, `Expected 27 Phase 55W holds, found ${phase55WSignals.held.length}.`);
+check(
+  phase55WSignals.published_controls_confirmed.length === 6,
+  `Expected six Phase 55W Published controls, found ${phase55WSignals.published_controls_confirmed.length}.`,
+);
+check(new Set(phase55WSignalIds).size === 45, "Phase 55W signal decision IDs must be unique.");
+for (const id of phase55WSignals.promoted) {
+  check(signalStatusById.get(id) === "Published", `Phase 55W promoted signal ${id} is not Published.`);
+}
+for (const id of phase55WSignals.held) {
+  check(signalStatusById.get(id) === "In Review", `Phase 55W held signal ${id} is not In Review.`);
+}
+for (const id of phase55WSignals.published_controls_confirmed) {
+  check(signalStatusById.get(id) === "Published", `Phase 55W control signal ${id} is not Published.`);
+}
+
+const phase55WSynthesis = phase55WReview.synthesis_decisions;
+for (const id of phase55WSynthesis.published_briefings) {
+  check(briefingStatusById.get(id) === "Published", `Phase 55W Published briefing ${id} has the wrong status.`);
+}
+for (const id of phase55WSynthesis.held_briefings) {
+  check(briefingStatusById.get(id) === "In Review", `Phase 55W held briefing ${id} has the wrong status.`);
+}
+for (const id of phase55WSynthesis.published_dependency_maps) {
+  check(dependencyMapStatusById.get(id) === "Published", `Phase 55W Published dependency map ${id} has the wrong status.`);
+}
+for (const id of phase55WSynthesis.held_dependency_maps) {
+  check(dependencyMapStatusById.get(id) === "In Review", `Phase 55W held dependency map ${id} has the wrong status.`);
+}
 
 const researchDocumentById = new Map(researchDocuments.map((document) => [document.id, document]));
 for (const collection of researchCollections) {
@@ -179,6 +273,23 @@ const researchLocations = [...sitemap.matchAll(/<loc>(https:\/\/ftfn\.io\/resear
 check(
   JSON.stringify(researchLocations) === JSON.stringify(expectedResearchLocations),
   "Sitemap research membership does not match the Published research collection.",
+);
+
+const signalsIndexHtml = await readText(join(distRoot, "signals", "index.html"));
+const researchIndexHtml = await readText(join(distRoot, "research", "index.html"));
+const sourceMonitorHtml = await readText(join(distRoot, "atlas", "source-monitor", "index.html"));
+const dataIndexHtml = await readText(join(distRoot, "data", "index.html"));
+check(
+  signalsIndexHtml.includes('data-filter="evidence"')
+    && signalsIndexHtml.includes('data-filter="sourceType"')
+    && signalsIndexHtml.includes('data-filter="watchLane"'),
+  "Signal index is missing Phase 55W evidence, source-type, or watch-lane filters.",
+);
+check(researchIndexHtml.includes("data-research-filter"), "Research index is missing the Phase 55W document-shelf filter.");
+check(sourceMonitorHtml.includes("data-source-filter"), "Source Monitor is missing the Phase 55W corpus filter.");
+check(
+  dataIndexHtml.includes("/data/research.json") && dataIndexHtml.includes("/data/pathways.json"),
+  "Data index is missing the Phase 55W research or pathway export.",
 );
 
 for (const requiredPath of manifest.required_output_files) {

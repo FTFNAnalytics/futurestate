@@ -18,9 +18,11 @@ const { topic } = Astro.props;
 const readerPathways = (await getCollection("readerPathways")).filter((pathway) =>
   pathway.data.topic_ids.includes(topic.data.id)
 );
-const signals = (await getCollection("signals")).filter(
-  (signal) => signal.data.primary_topic === topic.data.name
-);
+const signals = (await getCollection("signals"))
+  .filter((signal) => signal.data.primary_topic === topic.data.name)
+  .sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf());
+const publishedSignals = signals.filter((signal) => signal.data.record_status === "Published");
+const reviewSignals = signals.filter((signal) => signal.data.record_status !== "Published");
 const sources = await getCollection("sources");
 const sourceById = new Map(sources.map((source) => [source.data.id, source]));
 const featuredSources = sources.filter((source) =>
@@ -51,6 +53,8 @@ const researchDocuments = (await getCollection("researchDocuments"))
     const dateB = b.data.publication_date?.valueOf() ?? 0;
     return dateB - dateA || a.data.title.localeCompare(b.data.title);
   });
+const latestPublishedSignals = publishedSignals.slice(0, 3);
+const latestResearchDocuments = researchDocuments.slice(0, 3);
 ---
 
 <BaseLayout title={`${topic.data.name} | FTFN`} description={topic.data.summary}>
@@ -60,6 +64,60 @@ const researchDocuments = (await getCollection("researchDocuments"))
     <p class="lede">{topic.data.summary}</p>
     <div class="meta-row">
       {topic.data.primary_constraints.map((constraint) => <MetaPill label={constraint} tone="urgency" />)}
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Latest Published Evidence</div>
+          <h2>Current signals for this topic.</h2>
+        </div>
+        <p>Only signals that passed the publication gate appear in this latest-evidence shelf.</p>
+      </div>
+      {latestPublishedSignals.length > 0 ? (
+        <div class="source-list">
+          {latestPublishedSignals.map((signal) => (
+            <article class="source-row">
+              <div class="meta-row">
+                <MetaPill label={signal.data.signal_type} />
+                <MetaPill label={signal.data.evidence_quality} />
+              </div>
+              <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+              <p>{signal.data.summary}</p>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <p class="muted">No Published signal currently uses this as its primary topic.</p>
+      )}
+    </div>
+
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Latest Research Evidence</div>
+          <h2>Newest primary documents.</h2>
+        </div>
+        <p>Document records stay separate from interpreted signals so source evidence remains inspectable.</p>
+      </div>
+      {latestResearchDocuments.length > 0 ? (
+        <div class="source-list">
+          {latestResearchDocuments.map((document) => (
+            <article class="source-row">
+              <div class="meta-row">
+                <MetaPill label={document.data.document_type} />
+                <MetaPill label={document.data.capture_status} tone={document.data.capture_status === "Official link record" ? "review" : "possibility"} />
+              </div>
+              <h3><a href={`/research/documents/${document.data.slug}/`}>{document.data.title}</a></h3>
+              <p>{document.data.summary}</p>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <p class="muted">No research document currently uses this topic.</p>
+      )}
     </div>
   </section>
 
@@ -204,14 +262,21 @@ const researchDocuments = (await getCollection("researchDocuments"))
   )}
 
   <section class="page-section">
-    <h2>Related Signals</h2>
-    {signals.length > 0 ? (
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Published Signal Shelf</div>
+        <h2>Public intelligence records for this topic.</h2>
+      </div>
+      <a class="inline-link" href="/signals/">Filter all signals</a>
+    </div>
+    {publishedSignals.length > 0 ? (
       <div class="grid">
-        {signals.map((signal) => (
+        {publishedSignals.map((signal) => (
           <article class="record-card">
             <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
             <p>{signal.data.summary}</p>
             <div class="meta-row">
+              <MetaPill label={signal.data.record_status} tone="possibility" />
               <MetaPill label={signal.data.signal_type} />
               <MetaPill label={signal.data.time_horizon} />
             </div>
@@ -219,7 +284,32 @@ const researchDocuments = (await getCollection("researchDocuments"))
         ))}
       </div>
     ) : (
-      <p class="muted">No signal records currently use this as their primary topic.</p>
+      <p class="muted">No Published signal currently uses this as its primary topic.</p>
     )}
   </section>
+
+  {reviewSignals.length > 0 && (
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Review Shelf</div>
+          <h2>Useful records that remain outside publication.</h2>
+          <p>These signals remain visible for transparency but are excluded from the Published export and sitemap.</p>
+        </div>
+      </div>
+      <div class="grid">
+        {reviewSignals.map((signal) => (
+          <article class="record-card record-card--in-review">
+            <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+            <p>{signal.data.summary}</p>
+            <div class="meta-row">
+              <MetaPill label={signal.data.record_status} tone="review" />
+              <MetaPill label={signal.data.signal_type} />
+              <MetaPill label={signal.data.evidence_quality} />
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
 </BaseLayout>

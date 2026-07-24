@@ -1,0 +1,82 @@
+{
+  "id": "reader-pathway-cross-corridor-authorization-to-operation",
+  "title": "Cross-Corridor Conversion: From Authorization To Operation",
+  "slug": "cross-corridor-authorization-to-operation",
+  "record_status": "Published",
+  "summary": "Compare how Northern Virginia compute, Nevada lithium, and Florida Space Coast infrastructure move from demand, permits, financing, and plans into construction, acceptance, service, operation, and measured outcomes.",
+  "current_state_summary": "All three corridors have strong upstream authority records, but each still needs named downstream proof before FTFN can claim usable capacity, qualified output, or utilized infrastructure.",
+  "current_state": [
+    "Northern Virginia has load, rate, transmission, permit, and water rails; final route, construction, energization, customer service, use, and reliability remain incomplete.",
+    "Nevada has federal land decisions, state permits, and a closed Thacker Pass loan; condition satisfaction, construction, commissioning, qualification, output, sales, and environmental performance remain incomplete.",
+    "Florida has master plans, site licensing, environmental decisions, operator rules, and capital channels; named project funding, construction, acceptance, mission authorization, utilization, and outcomes remain incomplete.",
+    "Research Watch 001 and Local Authorization Is Not Operation expose the shared stage-conversion problem without treating the corridors as legally or technically equivalent."
+  ],
+  "primary_topics": ["Policy and Standards", "Energy", "Critical Minerals", "Space"],
+  "topic_ids": ["topic-policy-and-standards"],
+  "local_system_ids": [
+    "local-northern-virginia-data-center-corridor",
+    "local-nevada-lithium-processing-corridor",
+    "local-florida-space-coast-launch-corridor"
+  ],
+  "signal_ids": [
+    "signal-virginia-data-center-load-concentration",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-golden-mars-transmission-conditional-approval",
+    "signal-thacker-pass-federal-land-authorization",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-rhyolite-ridge-federal-land-authorization",
+    "signal-kennedy-multiuser-master-plan",
+    "signal-space-florida-lc46-site-license-renewal",
+    "signal-slc40-final-environmental-decision",
+    "signal-faa-part450-operator-transition"
+  ],
+  "source_ids": [
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-virginia-scc-golden-mars-2026",
+    "source-blm-thacker-pass-rod-2021",
+    "source-doe-thacker-pass-loan-2024",
+    "source-blm-rhyolite-ridge-rod-2024",
+    "source-nasa-kennedy-master-plan-2026",
+    "source-faa-spaceports-by-state-2026",
+    "source-faa-slc40-final-ea",
+    "source-faa-part450-transition-2026"
+  ],
+  "organization_ids": [],
+  "technology_ids": [],
+  "briefing_ids": ["briefing-research-watch-001-cross-corridor-infrastructure-conversion"],
+  "dependency_map_ids": ["dependency-map-local-authorization-is-not-operation"],
+  "research_collection_ids": ["research-collection-cross-corridor-infrastructure-conversion-2024-2026"],
+  "evidence_gap_ids": ["gap-011", "gap-012", "gap-013"],
+  "dependency_stack": [
+    {
+      "stage": "Demand, Plan, Or Authorization",
+      "current_state": "Each corridor has named upstream records that establish demand, rules, plans, permits, environmental decisions, or financing stages.",
+      "boundary": "The instruments differ and none alone proves a completed, accepted, operating, or scaled asset."
+    },
+    {
+      "stage": "Construction And Compliance",
+      "current_state": "Named projects have partial construction, permitting, route, finance, or environmental trails.",
+      "boundary": "Partial trails do not establish that all conditions were satisfied, assets were built and accepted, or compliance was sustained."
+    },
+    {
+      "stage": "Service, Qualification, Or Mission Use",
+      "current_state": "The next decisive records differ by corridor: customer service, qualified material output, or authorized mission use.",
+      "boundary": "Projected demand, output, or launch cadence cannot stand in for delivered service, accepted products, or completed missions."
+    },
+    {
+      "stage": "Measured Operation And Outcomes",
+      "current_state": "No corridor record set yet supports a complete claim about sustained capacity, cost, reliability, safety, environmental performance, or local outcomes.",
+      "boundary": "Scale requires sustained operating evidence and measured receiving-system results."
+    }
+  ],
+  "evidence_limits": [
+    "The pathway compares evidence stages, not economic, environmental, institutional, or technical equivalence.",
+    "A rate decision, mining permit, federal loan, site license, environmental decision, and master plan are not interchangeable.",
+    "No pathway record establishes corridor-wide readiness, spare capacity, qualified output, mission availability, or accepted local outcomes."
+  ],
+  "next_records": [
+    "Northern Virginia route, construction, energization, customer-service, water, emissions-compliance, reliability, and local-outcome records.",
+    "Nevada finance draws, water and permit-condition compliance, construction, commissioning, qualification, output, sales, environmental, and repayment records.",
+    "Florida project appropriations, awards, construction, acceptance, operator and mission authorization, utilization, safety, resilience, and outcome records."
+  ]
+}

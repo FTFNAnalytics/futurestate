@@ -989,6 +989,8 @@ These are the next practical actions from the current project state.
 280. Complete Phase 55B migration and facility evidence pass without pushing or deploying. Status: complete; added three official source records and two bounded `In Review` signals, refreshed Toronto, Ontario, and ACC monitoring rails, cleared the two overdue source checks, and preserved all remaining downstream gates.
 281. Complete Phase 55C conditional permit follow-through without pushing or deploying. Status: complete; added official County conditions, an official proposed-air-permit notice, and independent vote corroboration; repaired the existing Project Baccara signal; and preserved every final-permit, service, military, construction, occupancy, and operating gate.
 282. Complete Phase 55D owner-only Sites preview without attaching `ftfn.io` or changing public access. Status: complete; deployed the 218-page candidate, passed route, metadata, indexing, robots, sitemap, and export checks, and preserved Hostinger plus Google Workspace DNS unchanged.
+283. Complete Phase 55W publication, navigation, and scale gate. Status: complete locally; reviewed 45 signal decisions, promoted 12, published one briefing and one map, expanded to 15 pathways, added corpus-scale discovery and research shelves, expanded to five exports, and verified the 591-page release contract.
+284. Begin Phase 55X dossier-led authority expansion. Status: current; select three to five under-connected reader journeys and add 24-36 primary documents plus 12-18 bounded signals tied to named downstream evidence gaps.
 
 ## 10. Current Stage Map
 
@@ -1218,12 +1220,14 @@ Next candidate work:
 - Phase 55V complete locally: added one 18-document cross-corridor infrastructure-conversion collection with four local official-PDF captures, fourteen official-link records, a verified 21-file archive, Research Watch 001, three deepened local systems and pathways, three narrowed gaps, and one corrected Rhyolite Ridge financing-stage boundary.
 - The verified Phase 55V contract is 590 pages, 298 sources, 112 signals, 73 Published, 39 In Review, nine briefings, six collections, 83 research documents, eleven pathways across 18 Atlas surfaces, and 24 updates.
 - Deployed Phase 55V app content commit `3bdb52a9348e5cf963ec6569838f880611d2491c` as owner-only Sites version 21 from exact private source commit `b2db5978f0c4a37c35998f849fcd75158c115cec`; deployment status and the protected sign-in gate passed with one allowed owner and no groups.
-- Phase 55W current: review 40-60 signal candidates, expand pathways toward 12-15, and add corpus-scale navigation and research-shelf separation without automatic publication.
+- Phase 55W complete locally: reviewed 45 signal decisions, promoted 12, held 27, reconfirmed six Published controls, published one briefing and one map, and added four Published pathways.
+- The verified Phase 55W contract is 591 pages, 298 sources, 112 signals, 85 Published, 27 In Review, 134 current Published-support sources, nine briefings, six maps, six research collections, 83 research documents, fifteen pathways across 19 Atlas surfaces, 25 updates, and five public-data exports.
+- Phase 55X current: select three to five under-connected reader journeys and build evidence-dense dossiers with 24-36 primary documents and 12-18 bounded signals that close named permit, service, acceptance, operation, or measured-outcome gaps.
 - Phase 55H, Phase 55R, Space Coast license, Arizona wastewater, Loudoun standards, and Nevada delivery remain scheduled inserts that do not pause the expansion queue.
 - Continue the NSTC and NAPMP recipient-level reconciliation, GAO prototype-OTA oversight trail, O-RAN external testing and adoption trail, PIV revision and pilot trail, Phoenix Fab 3 conversion trail, and Project Baccara downstream stages only where they serve a selected pathway or evidence gap.
 - Keep future In Review dependency-map details `noindex, follow` and outside the sitemap; local-system profiles remain qualitative prelaunch dossiers without a Published state.
 - Preserve separate award, obligation, physical milestone, permit, test, acceptance, operation, and scale stages for every record.
-- Keep Supabase activation, public access, package freeze, DNS, custom-domain attachment, and public GitHub synchronization as separate tracks or approval gates; the owner-only Phase 55V deployment is complete.
+- Keep Supabase activation, public access, package freeze, DNS, custom-domain attachment, and public GitHub synchronization as separate tracks or approval gates; the Phase 55W owner-only deployment receipt is recorded after hosting completes.
 
 Decision:
 

@@ -1,7 +1,7 @@
 # Phases 55S-55W Aggressive Content Expansion
 
 Date: 2026-07-24
-Status: active program; Phase 55S batches one and two, Phase 55T, and Phase 55U complete, with Phase 55U deployed owner-only
+Status: complete through Phase 55W; final owner-only deployment receipt pending
 
 ## Direction
 
@@ -236,13 +236,27 @@ Deliverables:
 
 - review 40-60 signal candidates through the complete publication gate,
 - target 70-85 Published records only if each passes,
-- expand the six current pathways to 12-15,
+- expand the eleven current pathways to 12-15,
 - add stronger signal filtering by topic, status, evidence quality, source type, and watch lane,
 - add topic-level latest evidence and research-shelf separation,
 - strengthen Source Monitor grouping for a 300-plus-source library,
 - expand data-download and export surfaces where the field contract is stable,
 - publish or explicitly hold every new briefing and dependency map,
 - preserve owner-only access unless public launch is separately approved.
+
+Phase 55W result:
+
+- reviewed 45 signal decisions in a machine-readable ledger: 12 promotions, 27 holds, and six Published controls;
+- reached 85 Published signals without changing the 112-signal corpus;
+- published Research Watch 001 and `Local Authorization Is Not Operation`, leaving six briefings and two maps In Review;
+- added four Published pathways, reaching 15 total and 10 Published pathways across 19 existing Atlas surfaces;
+- added signal filters for topic, type, horizon, status, evidence, source type, and watch lane;
+- separated the six-collection and 83-document research shelves and added document-level filtering;
+- strengthened Source Monitor discovery and added latest Published and research evidence to all topic pages;
+- expanded the public-data contract from three to five exports with a dedicated `/data/` landing page;
+- verified 591 pages, 298 sources, 112 signals, 85 Published, 27 In Review, 134 current Published-support sources, 25 updates, nine briefings, six maps, six collections, 83 research documents, and 15 pathways.
+
+The complete decision and implementation record is `docs/work-packages/phase-55w-publication-navigation-scale.md`.
 
 ## Continuous Dated Inserts
 
@@ -275,6 +289,8 @@ Every expansion wave must:
 2. Preserve the completed Phase 55T four-signal topic floor and its record-level publication decisions.
 3. Keep the unfinished Phase 55S third allocation as a replenishment backlog rather than a release gate.
 4. Preserve the completed Phase 55U three-corridor local-systems network and its dated stop rules.
-5. Begin Phase 55V with a cross-corridor infrastructure-conversion research collection.
-6. Use the authority backlog to close named collection-specific gaps.
-7. Continue to insert dated checks without pausing the active expansion queue.
+5. Preserve the completed Phase 55V cross-corridor infrastructure-conversion research collection.
+6. Preserve the completed Phase 55W publication ledger, discovery surfaces, pathways, and export contract.
+7. Begin Phase 55X with three to five evidence-dense dossiers selected from under-connected reader journeys.
+8. Use the authority backlog to close named dossier-specific gaps.
+9. Continue to insert dated checks without pausing the active expansion queue.
