@@ -1543,6 +1543,7 @@ Purpose:
 Primary file:
 
 - `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`
+- `docs/work-packages/phase-55s-authority-sprint-batch-1.md` for the completed first 30-record batch, its public records, collection, signals, validation evidence, and remaining sprint allocation
 
 Update when:
 

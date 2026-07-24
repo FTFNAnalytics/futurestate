@@ -10,7 +10,7 @@
   "constraint_tags": ["Water", "Climate", "Infrastructure", "Public Trust"],
   "question": "Which records show whether industrial growth has defensible water capacity?",
   "why_it_matters": "Industrial strategy in a water-constrained region depends on water rights, provider capacity, reuse, treatment, discharge, drought exposure, and public legitimacy.",
-  "current_support": "FTFN has ADWR water governance and assured-supply criteria, Phoenix Water Services' April 2026 provider update, a May 2026 Phoenix-TSMC wastewater agreement, a City record showing TSMC Fab 3 at topping out, and a Project Baccara trail spanning planned chilled cooling and brewery-wastewater reuse, official county approval, and permit conditions.",
+  "current_support": "FTFN has ADWR water governance, assured-supply criteria, the effective Phoenix AMA Fifth Management Plan, groundwater-site and national monitoring rails, Phoenix Water Services' April 2026 provider update, a May 2026 Phoenix-TSMC wastewater agreement, a City record showing TSMC Fab 3 at topping out, and a Project Baccara trail spanning planned chilled cooling and brewery-wastewater reuse, official county approval, and permit conditions.",
   "missing_evidence": [
     "completed and accepted wastewater conveyance improvements",
     "total facility water withdrawals and consumption",
@@ -38,6 +38,9 @@
   "related_source_ids": [
     "source-arizona-department-water-resources",
     "source-arizona-adwr-assured-water-supply",
+    "source-adwr-ama-management-plans",
+    "source-adwr-groundwater-site-inventory",
+    "source-water-quality-portal",
     "source-arizona-corporation-commission-utilities",
     "source-phoenix-water-and-sewer",
     "source-phoenix-2026-water-security-council-update",
@@ -58,7 +61,8 @@
     "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
     "signal-phoenix-z37-20-1-tsmc-campus-planning-record",
     "signal-acc-project-baccara-power-water-permit-gates",
-    "signal-phoenix-tsmc-fab3-topping-out"
+    "signal-phoenix-tsmc-fab3-topping-out",
+    "signal-phoenix-ama-fifth-management-plan-industrial-water"
   ],
   "related_local_system_ids": ["local-us-southwest-chip-corridor"],
   "latest_review": {
@@ -73,5 +77,5 @@
     "stop_rule": "Do not create another agreement-stage signal. Reopen when Phoenix or TSMC posts a certificate of completion, acceptance, operating industrial reclaimed-water milestone, measured flow or reuse result, discharge record, or facility water balance.",
     "next_check_date": "2026-09-22"
   },
-  "notes": "Phase 55Q records a dated hold because the named downstream stage did not advance. Authorization and conditional flow capacity remain separate from constructed and accepted conveyance, operating reclaimed-water infrastructure, total demand, measured reuse, drought resilience, and long-term sufficiency."
+  "notes": "Phase 55Q records a dated hold because the named downstream stage did not advance. Phase 55S adds the Phoenix AMA Fifth Management Plan as an effective area-wide industrial conservation and compliance layer without treating it as project allocation or service evidence. Authorization, policy, and conditional flow capacity remain separate from constructed and accepted conveyance, operating reclaimed-water infrastructure, total demand, measured reuse, drought resilience, and long-term sufficiency."
 }

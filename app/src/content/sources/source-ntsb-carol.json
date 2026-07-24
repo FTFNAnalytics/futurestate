@@ -1,0 +1,23 @@
+{
+  "id": "source-ntsb-carol",
+  "name": "NTSB CAROL Accident Investigation Search",
+  "url": "https://data.ntsb.gov/carol-main-public/",
+  "source_type": "Dataset",
+  "credibility_level": "Tier 1",
+  "primary_topics": ["Aviation", "Mobility", "Policy and Standards"],
+  "framework_layers": ["Enabling Infrastructure", "Human Systems"],
+  "country_or_region": "United States",
+  "update_frequency": "Ongoing",
+  "capture_priority": "High",
+  "known_limitations": "Investigations move through preliminary and final stages, and a preliminary record must not be represented as a final probable-cause finding or as a generalized safety conclusion.",
+  "last_checked_date": "2026-07-24",
+  "watch_lanes": ["Mobility Certification"],
+  "live_access_type": "Interactive Portal",
+  "review_cadence_days": 14,
+  "monitoring_status": "Active",
+  "coverage_role": ["Primary Data", "Regulatory Change", "Source Freshness"],
+  "jurisdiction": "United States transportation safety investigations",
+  "source_owner": "National Transportation Safety Board",
+  "automation_notes": "Preserve accident number, mode, date, location, investigation status, preliminary versus final status, and report identifiers.",
+  "notes": "Search rail for bounded NTSB investigations and final reports."
+}

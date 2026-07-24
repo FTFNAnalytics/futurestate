@@ -5,7 +5,12 @@
   "summary": "Space travel, lunar infrastructure, launch systems, surface systems, exploration logistics, science missions, and the terrestrial industrial stack needed to move beyond low Earth orbit.",
   "framework_layers": ["Frontier Domains", "Enabling Infrastructure", "Human Systems"],
   "primary_constraints": ["Capital", "Manufacturing", "Supply Chain", "Geopolitics", "Safety"],
-  "featured_sources": ["source-nasa-artemis"],
+  "featured_sources": [
+    "source-nasa-artemis",
+    "source-nasa-open-apis",
+    "source-nasa-technical-reports-server",
+    "source-noaa-space-weather-products-data"
+  ],
   "watch_questions": [
     "Which mission updates change the dependency stack for lunar and deep-space infrastructure?",
     "Where do launch cadence, surface systems, procurement, safety, and international coordination become binding constraints?"

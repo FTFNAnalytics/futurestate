@@ -5,7 +5,13 @@
   "summary": "Climate systems, ENSO, extreme weather, adaptation, and climate-driven constraints on infrastructure, agriculture, water, energy, aviation, and markets.",
   "framework_layers": ["Planetary Conditions", "Human Systems"],
   "primary_constraints": ["Climate", "Water", "Insurance", "Interpretation"],
-  "featured_sources": ["source-noaa-cpc-enso"],
+  "featured_sources": [
+    "source-noaa-cpc-enso",
+    "source-eccc-historical-climate-data",
+    "source-epa-ghgrp-data",
+    "source-nws-api",
+    "source-noaa-storm-events"
+  ],
   "watch_questions": [
     "How do ENSO shifts affect food, water, insurance, aviation, and power systems?",
     "Which climate signals are already changing local decision-making?"

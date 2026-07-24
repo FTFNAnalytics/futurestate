@@ -1,0 +1,23 @@
+{
+  "id": "source-noaa-space-weather-products-data",
+  "name": "NOAA Space Weather Prediction Center Products and Data",
+  "url": "https://www.swpc.noaa.gov/products-and-data",
+  "source_type": "Government Agency",
+  "credibility_level": "Tier 1",
+  "primary_topics": ["Space", "Climate", "Discovery Technologies"],
+  "framework_layers": ["Planetary Conditions", "Enabling Infrastructure", "Frontier Domains"],
+  "country_or_region": "United States and global",
+  "update_frequency": "Continuous",
+  "capture_priority": "High",
+  "known_limitations": "Observations, forecasts, alerts, watches, and warnings are different product states; a space-weather product does not by itself prove downstream infrastructure effects.",
+  "last_checked_date": "2026-07-24",
+  "watch_lanes": ["Space", "Discovery Technologies", "Climate"],
+  "live_access_type": "Interactive Portal",
+  "review_cadence_days": 14,
+  "monitoring_status": "Active",
+  "coverage_role": ["Primary Data", "Source Freshness"],
+  "jurisdiction": "United States and global space-weather services",
+  "source_owner": "NOAA Space Weather Prediction Center",
+  "automation_notes": "Preserve product type, issued time, valid period, observed versus forecast state, scale, and later verification record.",
+  "notes": "Operational space-weather rail; connect downstream effects only through named operator or incident evidence."
+}

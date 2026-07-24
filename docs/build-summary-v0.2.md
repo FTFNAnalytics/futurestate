@@ -49,20 +49,22 @@ Phase 55P turns that Published corpus into six reader pathways across the Chips 
 
 Phase 55Q closes the first bounded batch selected from those pathways. Six high-value gaps now carry structured decisions: two Narrowed, three Source Added, and one Dated Hold. Five named official records support four independently useful Published signals while preserving the boundaries between serving utility and customer capacity, consortium and workforce outcomes, metropolitan stage totals and matched conversion, procurement guidance and agency implementation, and authorized wastewater capacity and accepted operation. The package reaches 389 pages, 194 sources, 67 signals, 42 Published, 25 In Review, and 19 updates. Sites version 15 serves exact source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97` under the unchanged owner-only policy.
 
+Phase 55S batch one completes the first 30 records in the approved 90-record authority sprint. Thirty retained High-priority candidates become separately authored public source records across eight thin topic families, and a specific 2026 NIST smart-manufacturing roadmap adds one more source. Five new signals preserve the distinction between current official findings and still-developing implementation frames: three pass the publication gate and two remain `In Review`. A fourth research collection adds eight reviewed summaries and an 11-file official-link archive. The verified local package reaches 434 pages, 225 sources, 72 signals, 45 Published, 27 In Review, 20 updates, four collections, and 55 research documents. Deployment remains owner-only and is recorded separately after the exact source commit is saved.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 389 | +207 |
-| Sources | 102 | 194 | +92 |
-| Signals | 18 | 67 | +49 |
-| Published signals | 3 | 42 | +39 |
-| In Review signals | 14 | 25 | +11 |
+| Generated HTML pages | 182 | 434 | +252 |
+| Sources | 102 | 225 | +123 |
+| Signals | 18 | 72 | +54 |
+| Published signals | 3 | 45 | +42 |
+| In Review signals | 14 | 27 | +13 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 19 | +19 |
+| Public update entries | 0 | 20 | +20 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
@@ -74,9 +76,9 @@ Additional current records:
 - 6 structured Phase 55Q evidence-gap decisions,
 - 3 Published dependency maps,
 - 5 briefings: 2 Published and 3 In Review,
-- 3 research collections with 47 document records,
+- 4 research collections with 55 document records,
 - 6 reader pathways across 7 existing Atlas surfaces,
-- 37 official local captures plus 10 official-link records across verified 26-file, 11-file, and 19-file ZIP archives.
+- 37 official local captures plus 18 official-link records across verified 26-file, 11-file, 19-file, and 11-file ZIP archives.
 
 ## What Is Built
 
@@ -96,16 +98,16 @@ The public application includes:
 
 The editorial and authority layer includes:
 
-- 194 structured source records with authority, freshness, access, monitoring, and review metadata,
-- 67 bounded signal records with explicit claim and evidence limits,
-- 42 Published signals backed by 70 sources checked on or after 2026-07-22,
+- 225 structured source records with authority, freshness, access, monitoring, and review metadata,
+- 72 bounded signal records with explicit claim and evidence limits,
+- 45 Published signals backed by 75 sources checked on or after 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
 - six evidence-bounded reader pathways that connect Published records to dependency stacks and visible gaps,
-- a public nineteen-entry update and correction log,
+- a public twenty-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
-- all 150 private candidates reviewed once: 132 retained as `Candidate`, 11 represented by `Active Source Record`, four held as `Watchlist Only`, two `Blocked`, and one `Rejected`,
+- all 150 private candidates reviewed once: 102 retained as `Candidate`, 41 represented by `Active Source Record`, four held as `Watchlist Only`, two `Blocked`, and one `Rejected`,
 - improved Source Monitor review-state grouping and per-source next actions,
 - Strong, Developing, and Weak Source Coverage summaries with lane-specific next actions; after the Phase 55A recheck, all 14 public coverage lanes classify as Strong.
 
@@ -156,11 +158,13 @@ Phase 55P added six structured reader pathways to five priority topic pages and 
 
 Phase 55Q reviewed six named gaps and added five official source profiles plus four bounded Published signals. Two gaps were Narrowed, three received Source Added decisions, and the Arizona wastewater gap received a Dated Hold. The Southwest and Ontario dossiers and five reader pathways were repaired around the new boundaries. The result is 389 generated pages, 194 sources, 67 signals, 42 Published, 25 In Review, 19 public updates, and 70 current Published-support sources. Candidate validation, content validation, source health, Astro diagnostics, production build, evidence-gap route and sitemap assertions, exports, archives, and private-registry exclusion all pass.
 
+Phase 55S batch one promoted 30 high-priority candidates into separately authored authority records and added one specific NIST roadmap source, five signals, eight research documents, a fourth research collection, an 11-file archive, and one public update. The result is 434 generated pages, 225 sources, 72 signals, 45 Published, 27 In Review, 20 public updates, and 75 current Published-support sources. Candidate validation, content validation, source endpoint health, Astro diagnostics, production build, all 45 Published-route assertions, archive presence, public exports, and private-registry exclusion pass.
+
 Verified results:
 
-- 389 generated site pages,
-- exact exports for 194 sources, 17 topics, and 42 Published signals,
-- all 42 Published signal routes included in the sitemap,
+- 434 generated site pages,
+- exact exports for 225 sources, 17 topics, and 45 Published signals,
+- all 45 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
 - both Published briefing routes included in the sitemap and all three held briefing routes excluded,
 - all three Published dependency-map routes included in the sitemap,
@@ -173,10 +177,10 @@ Verified results:
 - exactly 150 unique private candidates, 10 in each of 15 profiles, with all records assigned a first-pass triage state,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
-- three Published research collections with all 47 document routes in the sitemap,
-- verified 26-file, 11-file, and 19-file ZIP archives containing 37 local captures, ten official-link files, summaries, README files, and manifests.
+- four Published research collections with all 55 document routes in the sitemap,
+- verified 26-file, 11-file, 19-file, and 11-file ZIP archives containing 37 local captures, 18 official-link files, summaries, README files, and manifests.
 
-The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; the latest completed evidence-gap decision remains in `docs/work-packages/phase-55q-high-value-evidence-gap-closure.md`. Owner-only Sites version 15 serves exact Phase 55Q source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97`. The expansion roadmap does not change the deployed artifact, access policy, package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
+The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; batch-one evidence and the next allocation are in `docs/work-packages/phase-55s-authority-sprint-batch-1.md`. Owner-only Sites version 15 remains the prior deployed checkpoint until the exact Phase 55S batch-one source is committed and saved as a new private version. The expansion does not change the access policy, package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
@@ -188,7 +192,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Twenty-five signals remain `In Review`; the DARPA Lift Challenge is the explicit future-trial hold and the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F. Forty-two bounded signals are Published.
+- Twenty-seven signals remain `In Review`; the DARPA Lift Challenge is the explicit future-trial hold and the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F. Forty-five bounded signals are Published.
 - Three briefings and both local-system profiles remain prelaunch or research material. The two Published briefings and three Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
@@ -222,9 +226,11 @@ npm.cmd run validate:candidates
 npm.cmd run source:health
 npm.cmd run build:research-archive
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug federal-research-to-implementation-evidence-2025-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug implementation-outcomes-local-conversion-2025-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug thin-topic-authority-foundations-2023-2026
 npm.cmd run check
 npm.cmd run build
 npm.cmd run verify:release
 ```
 
-Expected output: 389 generated site pages, verified 26-file, 11-file, and 19-file research archives, six Phase 55Q evidence decisions, and a passing v0.2 release assertion.
+Expected output: 434 generated site pages, verified 26-file, 11-file, 19-file, and 11-file research archives, six Phase 55Q evidence decisions, and a passing v0.2 release assertion.

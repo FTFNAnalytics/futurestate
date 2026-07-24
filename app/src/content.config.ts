@@ -325,7 +325,10 @@ const researchDocumentType = z.enum([
   "Presidential Memorandum",
   "Executive Order",
   "Draft Study",
-  "Congressional Primer"
+  "Congressional Primer",
+  "Research Roadmap",
+  "Technical Report",
+  "Data Release"
 ]);
 
 const researchCaptureStatus = z.enum([
