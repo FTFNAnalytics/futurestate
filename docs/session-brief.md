@@ -37,7 +37,7 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 434
+static pages generated: 483
 current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
@@ -51,7 +51,7 @@ App routes currently include:
 - Atlas landing page,
 - topic index and detail pages,
 - source index and detail pages,
-- research collection index, four collection details, and 55 document detail pages,
+- research collection index, five collection details, and 65 document detail pages,
 - organization index and detail pages,
 - technology index and detail pages,
 - local system index and detail pages,
@@ -90,7 +90,7 @@ What is now stable:
 - Phase 49 expanded the source library to 102 records, including broad official catalogs, funding and spending APIs, international statistics, research APIs, patent/IP sources, water and mineral datasets, space licensing, agriculture biotechnology regulation, and Phoenix/MAG local-system data.
 - Phase 50 completed its six-item bounded evidence batch: DOE/Grants.gov, MAG projections, USAspending award DEMS0000003, NSF award 2433348, USGS 2026 gallium, and Toronto application 24 254930.
 - Phase 52A added the validated public update log, three versioned data exports, and the pre-Supabase public/private contract.
-- Phase 52B added a Git-ignored 150-record candidate registry across 15 evidence profiles and added validation plus public-build leak assertions. Phase 55I completed the first-pass review: 132 `Candidate`, 11 `Active Source Record`, four `Watchlist Only`, two `Blocked`, one `Rejected`, and zero `Needs Triage`.
+- Phase 52B added a Git-ignored 150-record candidate registry across 15 evidence profiles and added validation plus public-build leak assertions. Phase 55S batch two leaves 72 `Candidate`, 71 `Active Source Record`, four `Watchlist Only`, two `Blocked`, one `Rejected`, and zero `Needs Triage`.
 - Source Monitor now groups work by review state and exposes a specific next action; Source Coverage now distinguishes Strong, Developing, and Weak lanes with gap-led actions.
 - Phase 51C added named Meta electric-service and TSMC facility milestones, repaired the apprenticeship signal with active cohort counts, and brought the library to 33 signals without forcing missing downstream outcomes.
 - Phase 55B added the White House and OMB post-quantum migration records, a named Arizona Project Baccara certificate trail, and two bounded `In Review` signals; it also refreshed the Toronto, Ontario, and ACC monitoring rails.
@@ -116,9 +116,11 @@ What is now stable:
 - The Phase 55Q contract is 389 pages, 194 sources, 67 signals, 42 Published signals, 25 In Review signals, six structured gap decisions, and 19 updates. Exact source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97` is deployed as owner-only Sites version 15.
 - Phase 55S batch one promoted 30 High-priority private candidates into separately authored public source records, added one specific NIST roadmap source, five bounded signals, eight research summaries, a fourth research collection, and an 11-file archive.
 - The Phase 55S batch-one contract is 434 pages, 225 sources, 72 signals, 45 Published signals, 27 In Review signals, four research collections, 55 research documents, and 20 updates. Exact source commit `9e393f0731d996662d95d912e9737bafdaa1ad67` is deployed as owner-only Sites version 16.
+- Phase 55S batch two promoted the next 30 High-priority candidates, added 30 sources, seven bounded signals, ten research summaries, a fifth collection, a 13-file archive, and Stack Watch 005 as an `In Review` briefing draft.
+- The locally verified batch-two contract is 483 pages, 255 sources, 79 signals, 51 Published signals, 28 In Review signals, five research collections, 65 research documents, six briefings, and 21 updates. Owner-only deployment is the remaining batch-two release step.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
-- All 75 sources supporting the 45 Published signals were checked on or after `2026-07-22`.
+- All current Published-support sources are governed by the same current-source release assertion and must be reverified after the batch-two commit.
 - The compact header defect was repaired: every brand and primary-navigation link now has at least a 44-pixel target.
 - `npm run verify:release` and `deployment/ftfn-v0.2-build.json` preserve the repeatable v0.2 release contract.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
@@ -126,8 +128,8 @@ What is now stable:
 
 What is still prelaunch scaffolding:
 
-- Forty-five signal records are `Published`.
-- Twenty-seven signal records are still `In Review`; no Draft Sample remains.
+- Fifty-one signal records are `Published`.
+- Twenty-eight signal records are still `In Review`; no Draft Sample remains.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -137,19 +139,19 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve the owner-only preview and continue the Phase 55S-55W aggressive content-expansion program immediately. Phase 55S batch one is complete; its remaining 60 records proceed in two 30-record sub-batches, with finance and human systems, critical minerals, grid and compute, and local authority rails next. Phases 55T-55W then deepen thin topics, add local systems, expand research collections, and scale publication plus navigation. The August 1 Toronto, August 10 DARPA Lift, and September 22 Arizona wastewater checks are bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve the owner-only preview and continue the Phase 55S-55W aggressive content-expansion program immediately. Phase 55S batches one and two are complete; the final 30-record sub-batch should combine four remaining High-priority candidates with 26 newly selected primary artifacts, emphasizing named downstream records, thin-topic signal conversion, and a dependency-map draft or Stack Watch 005 repair. Phases 55T-55W then deepen thin topics, add local systems, expand research collections, and scale publication plus navigation. The August 1 Toronto, August 10 DARPA Lift, and September 22 Arizona wastewater checks are bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 72 signal records,
-- 225 source records,
+- 79 signal records,
+- 255 source records,
 - 17 topic records,
 - 2 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 5 briefings: 2 Published and 3 In Review,
+- 6 briefings: 2 Published and 4 In Review,
 - 10 evidence gap records,
 - 6 structured Phase 55Q evidence-gap decisions,
 - 3 Published dependency maps,
@@ -320,9 +322,9 @@ Phase 55S ninety-record authority sprint
 
 Proceed by:
 
-- build the 90-record queue from 64 retained High-priority candidates and 26 newly selected primary records,
-- process three 30-record sub-batches with source and research-document work before signal drafting,
-- prioritize the thinnest topic lanes while using strong lanes as cross-cutting support,
+- deploy the verified batch-two package to the existing owner-only Sites project,
+- complete the final sub-batch from four remaining High-priority candidates and 26 newly selected primary artifacts,
+- favor named downstream records, thin-topic signal conversion, and a first dependency-map draft or Stack Watch 005 repair,
 - run the August 1, August 10, and September 22 tasks as bounded inserts without pausing the queue,
 - insert the Phase 55R DARPA Lift recheck after August 9,
 - keep Git and the static build as the public publication gate,
@@ -405,16 +407,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 55S authority sprint, batch one of three.
+Phase 55S authority sprint, batch two of three.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 owner-only hosted candidate: package 0.2.0-dev, 225 public sources, 150 first-pass-triaged private candidates, 72 signals, 17 topics, 20 updates, 6 structured Phase 55Q decisions, 6 reader pathways across 7 existing Atlas surfaces, 434 generated site pages, 45 Published signals, 2 Published briefings, 3 In Review briefings, 3 Published dependency maps, 55 research documents, verified 26-file, 11-file, 19-file, and 11-file research archives, and 3 public JSON endpoints. Sites version 16 serves exact source commit 9e393f0731d996662d95d912e9737bafdaa1ad67 at https://ftfn-analytics.jbumstead.chatgpt.site under the unchanged owner-only access policy. Source Coverage is 14 Strong lanes; source health reports 139 Manual Review and 86 Probe Ready records.
+v0.2 owner-only candidate: package 0.2.0-dev, 255 public sources, 150 first-pass-triaged private candidates, 79 signals, 17 topics, 21 updates, 6 structured Phase 55Q decisions, 6 reader pathways across 7 existing Atlas surfaces, 483 generated site pages, 51 Published signals, 2 Published briefings, 4 In Review briefings, 3 Published dependency maps, 65 research documents, verified 26-file, 11-file, 19-file, 11-file, and 13-file research archives, and 3 public JSON endpoints. Sites version 16 remains the last deployed owner-only checkpoint while batch two awaits deployment to https://ftfn-analytics.jbumstead.chatgpt.site. Source Coverage is 14 Strong lanes; source health reports 156 Manual Review and 99 Probe Ready records.
 
 Next decision gate:
-Preserve the owner-only preview and process Phase 55S batch two. Build and review the next 30 records with emphasis on finance and human systems, critical minerals, grid and compute, and remaining local authority rails. Treat the August 1 Toronto, August 10 DARPA Lift, and September 22 Arizona wastewater checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve the owner-only preview, deploy batch two, and process Phase 55S batch three. Combine the four remaining High-priority candidates with 26 newly selected primary artifacts; favor named downstream records, thin-topic signal conversion, and the first new dependency-map draft or Stack Watch 005 repair. Treat the August 1 Toronto, August 10 DARPA Lift, and September 22 Arizona wastewater checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

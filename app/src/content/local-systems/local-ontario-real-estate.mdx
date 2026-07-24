@@ -65,6 +65,10 @@ source_ids:
   - "source-ieso-2026-annual-planning-outlook"
   - "source-toronto-hydro-regulatory-documents"
   - "source-oeb-toronto-hydro-eb-2023-0195"
+  - "source-toronto-capital-projects-pipeline"
+  - "source-toronto-cleared-building-permits"
+  - "source-toronto-development-applications-open-data"
+  - "source-oeb-applications"
 ---
 
 ## System Context
@@ -238,3 +242,13 @@ CMHC's July 16 release adds a current Toronto CMA stage record. From May to June
 These measures improve the dossier because they separate upstream approvals awaiting work, active construction, completed units, and new starts. They do not form a matched project cohort: stock and flow measures use different timing bases, and none is linked to application 24 254930.
 
 The municipal conversion gap therefore receives a current aggregate source, while the permit-to-start question narrows to matched project or cohort evidence. The selected application remains date-gated until the July 29-31 Council record changes. No Council disposition, enacted by-law, building permit, start, completion, or occupancy is inferred from the metropolitan statistics.
+
+## Phase 55S Batch-Two Procurement And Regulatory Rails
+
+Toronto's May 29 capital-project pipeline adds a preliminary procurement-planning layer across engineering and construction, Toronto Water, transportation, and solid waste. It can supply named infrastructure records before solicitation, but the City explicitly warns that inclusion does not guarantee procurement and that details can change.
+
+The dossier also adds Toronto's cleared-building-permit and development-application datasets as stage indexes. These sources can help match application, permit, location, and status records, but they do not replace the authoritative application, Council, by-law, permit, construction, completion, or occupancy trail for a selected project.
+
+OEB case `EB-2026-0129` adds a current Toronto Hydro non-wires-solutions proceeding. The docket had progressed through procedural orders and July interrogatories at the batch-two review. It had not reached a substantive decision, approved project, deployment, capacity result, or customer outcome, so the related signal remains `In Review`.
+
+Together, the new rails narrow the next task: select capital-pipeline projects relevant to servicing, follow them into procurement and delivery, and connect any OEB decision to implemented non-wires projects and measured results. They do not replace the dated Council recheck for application `24 254930`.

@@ -102,6 +102,20 @@ source_ids:
   - "source-maricopa-baccara-final-air-permit-2026"
   - "source-kjzz-project-baccara-mcp-vote-2026"
   - "source-maricopa-association-governments-open-data"
+  - "source-eia-form-860-generator-data"
+  - "source-eia-form-923-power-plant-operations"
+  - "source-eia-form-930-hourly-grid-data"
+  - "source-bls-qcew-data-files"
+  - "source-census-building-permits-survey"
+  - "source-census-acs-five-year-api"
+  - "source-census-lehd-lodes"
+  - "source-phoenix-capital-improvement-program"
+  - "source-phoenix-opengov-procurement"
+  - "source-maricopa-air-quality-permitting"
+  - "source-arizona-deq-my-community"
+  - "source-chips-nepa-compliance"
+  - "source-arizona-commerce-semiconductor-program"
+  - "source-tsmc-annual-reports"
 ---
 
 ## System Context
@@ -338,3 +352,13 @@ The resulting stop rules are explicit: service territory is not customer capacit
 The first Phase 55S source batch adds the Phoenix AMA Fifth Management Plan, Groundwater Site Inventory, Water Quality Portal, and EPA ECHO services to the dossier's water stack. The management plan is the strongest new conversion artifact: it establishes an effective area-wide policy and compliance layer for industrial groundwater use, including large-scale cooling, power, mining, and new large industrial users.
 
 This improves the dossier's ability to ask the right project-level questions without advancing the wastewater hold. The new rails still do not disclose a named facility's classification, water right, provider commitment, total demand, annual use, compliance, variance, discharge, completed reuse infrastructure, or measured operating result.
+
+## Phase 55S Batch-Two Industrial Conversion Rails
+
+The dossier now adds current EIA generator-inventory and plant-operations rails, BLS county employment and wage data, Census housing and workforce datasets, Phoenix capital and procurement systems, Maricopa air-permit records, ADEQ facility records, CHIPS environmental-review records, and company annual-report discovery.
+
+The strongest new local record is Phoenix project `WS90320008`. The preliminary 2026-31 capital program describes a North Gateway Water Reclamation Plant and shows $17,845,489 in 2026-27. That creates a traceable project path, not an operating-capacity conclusion. The next checks are the adopted CIP, procurement, contracts, permits, construction, acceptance, treatment capacity, service area, and customer agreements.
+
+The QCEW release also adds a county baseline: Maricopa had 2,318,500 covered jobs in December 2025 and a fourth-quarter average weekly wage of $1,512. Those values do not isolate semiconductor industries, occupations, vacancies, skills, training outcomes, or facility workforce sufficiency.
+
+The EIA records preserve another key boundary. Generator status and plant output are useful system evidence, but proposed capacity is not operating capacity and observed output is not proof of transmission headroom, interconnection availability, or service for a named fab. Batch three should build bounded Arizona extracts and connect them to utility and project records.

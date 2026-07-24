@@ -51,20 +51,22 @@ Phase 55Q closes the first bounded batch selected from those pathways. Six high-
 
 Phase 55S batch one completes the first 30 records in the approved 90-record authority sprint. Thirty retained High-priority candidates become separately authored public source records across eight thin topic families, and a specific 2026 NIST smart-manufacturing roadmap adds one more source. Five new signals preserve the distinction between current official findings and still-developing implementation frames: three pass the publication gate and two remain `In Review`. A fourth research collection adds eight reviewed summaries and an 11-file official-link archive. The verified package reaches 434 pages, 225 sources, 72 signals, 45 Published, 27 In Review, 20 updates, four collections, and 55 research documents. Sites version 16 serves exact source commit `9e393f0731d996662d95d912e9737bafdaa1ad67` under the unchanged owner-only policy.
 
+Phase 55S batch two completes the next 30 authority records across critical minerals, grid data, chips and export controls, labor and housing, Phoenix infrastructure, and Toronto and Ontario local conversion. A fifth research collection adds ten reviewed documents and a 13-file archive. Seven new signals receive independent decisions: six pass as bounded Published records and the active OEB non-wires proceeding remains `In Review`. Stack Watch 005 adds the sprint's first new briefing draft. The locally verified package reaches 483 pages, 255 sources, 79 signals, 51 Published, 28 In Review, 21 updates, five collections, and 65 research documents. Owner-only deployment remains the final batch-two release step.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 434 | +252 |
-| Sources | 102 | 225 | +123 |
-| Signals | 18 | 72 | +54 |
-| Published signals | 3 | 45 | +42 |
-| In Review signals | 14 | 27 | +13 |
+| Generated HTML pages | 182 | 483 | +301 |
+| Sources | 102 | 255 | +153 |
+| Signals | 18 | 79 | +61 |
+| Published signals | 3 | 51 | +48 |
+| In Review signals | 14 | 28 | +14 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 20 | +20 |
+| Public update entries | 0 | 21 | +21 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
@@ -160,11 +162,13 @@ Phase 55Q reviewed six named gaps and added five official source profiles plus f
 
 Phase 55S batch one promoted 30 high-priority candidates into separately authored authority records and added one specific NIST roadmap source, five signals, eight research documents, a fourth research collection, an 11-file archive, and one public update. The result is 434 generated pages, 225 sources, 72 signals, 45 Published, 27 In Review, 20 public updates, and 75 current Published-support sources. Candidate validation, content validation, source endpoint health, Astro diagnostics, production build, all 45 Published-route assertions, archive presence, public exports, and private-registry exclusion pass.
 
+Phase 55S batch two promoted the next 30 High-priority candidates, added seven signals, ten research documents, a fifth research collection, a 13-file archive, one `In Review` briefing draft, and one public update. The result is 483 generated pages, 255 sources, 79 signals, 51 Published, 28 In Review, 21 public updates, five research collections, and 65 research documents. Candidate validation, active-source duplicate validation, content validation, source endpoint metadata, Astro diagnostics, the production build, archive generation, and release assertions pass. Owner-only deployment remains the final batch-two release step.
+
 Verified results:
 
-- 434 generated site pages,
-- exact exports for 225 sources, 17 topics, and 45 Published signals,
-- all 45 Published signal routes included in the sitemap,
+- 483 generated site pages,
+- exact exports for 255 sources, 17 topics, and 51 Published signals,
+- all 51 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
 - both Published briefing routes included in the sitemap and all three held briefing routes excluded,
 - all three Published dependency-map routes included in the sitemap,
@@ -177,10 +181,10 @@ Verified results:
 - exactly 150 unique private candidates, 10 in each of 15 profiles, with all records assigned a first-pass triage state,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
-- four Published research collections with all 55 document routes in the sitemap,
-- verified 26-file, 11-file, 19-file, and 11-file ZIP archives containing 37 local captures, 18 official-link files, summaries, README files, and manifests.
+- five Published research collections with all 65 document routes in the sitemap,
+- verified 26-file, 11-file, 19-file, 11-file, and 13-file ZIP archives containing 37 local captures, 28 official-link files, summaries, README files, and manifests.
 
-The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; batch-one evidence and the next allocation are in `docs/work-packages/phase-55s-authority-sprint-batch-1.md`. Owner-only Sites version 16 serves exact Phase 55S batch-one source commit `9e393f0731d996662d95d912e9737bafdaa1ad67`. The expansion does not change the access policy, package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
+The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; batch evidence and the next allocation are in `docs/work-packages/phase-55s-authority-sprint-batch-1.md` and `docs/work-packages/phase-55s-authority-sprint-batch-2.md`. Sites version 16 remains the last deployed owner-only checkpoint until the batch-two exact source is saved and deployed. The expansion does not change the access policy, package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
@@ -192,7 +196,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Twenty-seven signals remain `In Review`; the DARPA Lift Challenge is the explicit future-trial hold and the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F. Forty-five bounded signals are Published.
+- Twenty-eight signals remain `In Review`; the DARPA Lift Challenge is the explicit future-trial hold, the OEB non-wires proceeding is an active regulatory-process hold, and the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F. Fifty-one bounded signals are Published.
 - Three briefings and both local-system profiles remain prelaunch or research material. The two Published briefings and three Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.

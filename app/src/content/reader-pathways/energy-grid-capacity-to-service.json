@@ -4,9 +4,10 @@
   "slug": "energy-grid-capacity-to-service",
   "record_status": "Published",
   "summary": "Follow demand forecasts, tariffs, transmission contracts, customer-specific infrastructure, storage production programs, and delivered fuel while keeping planning, construction, energization, and operation distinct.",
-  "current_state_summary": "The Published record now contains a global data-centre demand signal, a named TSMC serving-utility record, two SRP large-load and service records, a federal transmission-capacity contract, an Ontario planning stack, a storage-production competition, and a delivered nuclear-fuel milestone.",
+  "current_state_summary": "The Published record now combines demand forecasts, generator inventory, plant operations, a named TSMC serving utility, SRP large-load and service records, federal transmission and storage programs, an Ontario planning stack, and a delivered nuclear-fuel milestone.",
   "current_state": [
     "Data-centre electricity growth is visible as a system constraint, but no global or national forecast proves local spare capacity.",
+    "EIA's 2025 Form 860 early release and 2026 Form 923 update distinguish generator status from observed plant output; neither proves customer-level deliverable capacity.",
     "SRP's E-67 tariff identifies service conditions, while Project Huckleberry records a separate named infrastructure project that reached service for Meta in Mesa.",
     "APS identifies TSMC in its service territory and reports rapid utility-wide demand growth without disclosing customer load, infrastructure, energization, or spare capacity.",
     "DOE's Southline capacity contract creates a trackable transmission project without proving construction or energization.",
@@ -32,7 +33,8 @@
     "signal-ieso-2026-ontario-demand-toronto-distribution-stack",
     "signal-doe-storage-step-prize-production-readiness",
     "signal-project-pele-first-triso-fuel-delivery",
-    "signal-aps-tsmc-service-territory-capacity-boundary"
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-eia-2025-generator-inventory-2026-operations-baseline"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -42,7 +44,11 @@
     "source-ieso-2026-annual-planning-outlook",
     "source-doe-energy-storage-step-prize-2026",
     "source-inl-project-pele-triso-delivery-2025",
-    "source-aps-tsmc-service-territory-2026"
+    "source-aps-tsmc-service-territory-2026",
+    "source-eia-form-860-generator-data",
+    "source-eia-form-923-power-plant-operations",
+    "source-eia-form-930-hourly-grid-data",
+    "source-oeb-applications"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -61,7 +67,8 @@
   ],
   "research_collection_ids": [
     "research-collection-federal-implementation-evidence-2025-2026",
-    "research-collection-implementation-outcomes-local-conversion-2025-2026"
+    "research-collection-implementation-outcomes-local-conversion-2025-2026",
+    "research-collection-industrial-capacity-local-conversion-2025-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",

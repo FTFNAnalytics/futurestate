@@ -41,24 +41,24 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after Phase 55S authority-sprint batch one:
+Current `0.2.0-dev` state after Phase 55S authority-sprint batch two:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 434 |
-| Active sources | 225 |
-| Signals | 72 |
-| Published signals | 45 |
-| In Review signals | 27 |
+| Static pages | 483 |
+| Active sources | 255 |
+| Signals | 79 |
+| Published signals | 51 |
+| In Review signals | 28 |
 | Draft Sample signals | 0 |
-| Public update entries | 20 |
-| Research collections | 4 collections / 55 documents |
-| Research downloads | 37 local captures / 18 official-link files / 67 archive files across four ZIPs |
+| Public update entries | 21 |
+| Research collections | 5 collections / 65 documents |
+| Research downloads | 37 local captures / 28 official-link files / 80 archive files across five ZIPs |
 | Named local inputs selected in Phases 50-55C | 18 |
 | Private source candidates | 150 local-only records |
-| Candidate review | all 150 reviewed once: 102 Candidate, 41 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected |
+| Candidate review | all 150 reviewed once: 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected |
 | Source Coverage | 14 Strong; 0 Developing; 0 Weak |
-| Source health | 139 Manual Review; 86 Probe Ready |
+| Source health | 156 Manual Review; 99 Probe Ready |
 
 Existing operating assets:
 
@@ -69,7 +69,7 @@ Existing operating assets:
 - publication policy and Method page,
 - two local-system constraint maps,
 - three qualitative dependency maps,
-- four reviewed research collections with 55 primary records and four downloadable archives,
+- five reviewed research collections with 65 primary records and five downloadable archives,
 - a schema-backed public update log,
 - versioned static source, topic, and Published-signal exports,
 - robots, sitemap, canonical, and indexing boundaries.
@@ -92,10 +92,10 @@ By v0.2, a reader should be able to answer:
 
 | Area | v0.2 Target | Current | Remaining |
 | --- | ---: | ---: | ---: |
-| Total signals | 25-35 | 72 | original target retired; Phase 55S-55W uses evidence-led expansion rather than a publication quota |
-| Published plus publication-ready | 8-12 | 45 Published | original target exceeded through bounded record-level gates; preserve evidence stages |
-| Active sources | 110-125 | 225 | target exceeded; use the expanded rails to deepen weak topics and conversion evidence |
-| Private source candidates | 150 | 150 local-only records | target met; 41 records now have separately authored public source representations |
+| Total signals | 25-35 | 79 | original target retired; Phase 55S-55W uses evidence-led expansion rather than a publication quota |
+| Published plus publication-ready | 8-12 | 51 Published | original target exceeded through bounded record-level gates; preserve evidence stages |
+| Active sources | 110-125 | 255 | target exceeded; use the expanded rails to deepen weak topics and conversion evidence |
+| Private source candidates | 150 | 150 local-only records | target met; 71 records now have separately authored public source representations |
 | Named local evidence trails | 2 complete dossier trails | both dossiers now span multiple named conversion layers | semiconductor service, built infrastructure, permits, workforce outcomes, by-laws, project completion |
 | Public trust surfaces | update log plus Method links | implemented | maintain entries |
 | Public data products | 3 static exports | implemented | maintain field contract |
@@ -364,7 +364,7 @@ Recommended active schedule:
 | Completed | Phase 55Q | six structured gap decisions, five named sources, four Published signals, and owner-only Sites version 15 |
 | Next dated insert | Phase 55H | complete the Toronto post-Council authority recheck on August 1 |
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
-| Current | Phase 55S | batch one complete and owner-only Sites version 16 deployed; execute the remaining two 30-record sub-batches |
+| Current | Phase 55S | batches one and two complete locally; deploy batch two owner-only, then execute the final 30-record sub-batch |
 | Planned | Phase 55T | build useful multi-record evidence shelves across every thin topic |
 | Planned | Phase 55U | expand from two local systems to a five- or six-system network |
 | Planned | Phase 55V | grow the primary-document research and synthesis layer |
@@ -629,7 +629,15 @@ Batch-one result:
 - Phoenix AMA management-plan evidence integrated without overriding the separate dated wastewater hold,
 - 434 pages, 225 sources, 72 signals, 45 Published signals, 27 In Review signals, 20 updates, four collections, and 55 research documents verified.
 
-The second 30-record sub-batch should emphasize finance and human systems, critical minerals, grid and compute, and the remaining high-value local or official rails. It should add source and research-document records before signals, then apply independent publication decisions.
+Batch-two result:
+
+- 30 retained High-priority candidates promoted across critical minerals, grid data, chips and export controls, human systems, and Arizona and Ontario local rails,
+- 30 public sources, seven signals, ten research documents, one Published collection, and one `In Review` briefing draft added,
+- six signals Published and the active OEB non-wires proceeding retained `In Review`,
+- three reader pathways, seven topics, and both local dossiers expanded,
+- 483 pages, 255 sources, 79 signals, 51 Published signals, 28 In Review signals, 21 updates, five collections, and 65 research documents verified locally.
+
+The final 30-record sub-batch should combine the four remaining High-priority candidates with 26 newly selected primary artifacts. It should favor named downstream records and thin-topic signal conversion, then produce the first new dependency-map draft or repair Stack Watch 005 for publication review.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
 
@@ -725,7 +733,7 @@ In v0.2, only source discovery and change detection may become semi-automated. C
 
 v0.2 is successful when:
 
-- the current 45-signal Published set remains bounded and every Phase 55S-55W promotion passes a separate record-level gate,
+- the current 51-signal Published set remains bounded and every Phase 55S-55W promotion passes a separate record-level gate,
 - every current and future briefing and dependency map has an explicit publish, repair, split, or hold decision,
 - the six current pathways remain valid while the expansion grows the set toward 12-15 evidence-bounded journeys,
 - the highest-value local and implementation gaps have named next records and dated stop rules,
@@ -737,11 +745,11 @@ v0.2 is successful when:
 - release QA remains repeatable,
 - no automated process publishes claims without review.
 
-The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batch one added 31 sources, five bounded signals, eight research documents, and one collection while preserving explicit stage boundaries. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary. The user has explicitly authorized Phases 55S-55W as an aggressive expansion program; the earlier no-new-volume posture no longer governs future planning, although every publication and evidence-stage rule remains intact.
+The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two have promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft while preserving explicit stage boundaries. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary. The user has explicitly authorized Phases 55S-55W as an aggressive expansion program; the earlier no-new-volume posture no longer governs future planning, although every publication and evidence-stage rule remains intact.
 
 ## Immediate Next Step
 
-Continue Phase 55S with the second 30-record authority sub-batch. Prioritize finance and human systems, critical minerals, grid and compute, and remaining local authority rails. Complete source and research-document records before signal drafting, then apply the publication gate to each independently useful record.
+Complete the batch-two owner-only release, then continue Phase 55S with the final 30-record authority sub-batch. Combine the four remaining High-priority candidates with 26 newly selected primary records. Prioritize named downstream artifacts, thin-topic signal conversion, bounded local evidence, and the first new dependency-map draft or Stack Watch 005 repair.
 
 Run Phase 55H on August 1 and Phase 55R on August 10 through their existing scheduled project tasks. Preserve the Arizona wastewater recheck on September 22. Each dated result is a bounded insert, not a reason to pause the active content queue.
 

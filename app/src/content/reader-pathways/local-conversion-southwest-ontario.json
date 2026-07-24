@@ -4,15 +4,17 @@
   "slug": "local-conversion-southwest-ontario",
   "record_status": "Published",
   "summary": "Compare how global compute, industrial, housing, and infrastructure signals encounter named utility, water, workforce, permitting, construction, and delivery systems in Arizona and Ontario.",
-  "current_state_summary": "The two local dossiers now contain named system and project records, but neither supports a readiness conclusion: Arizona adds TSMC's serving utility and a regional workforce node to its service, wastewater, permit, and construction stack; Ontario adds a current Toronto construction-stage baseline to its planning, infrastructure, pipeline, and application records.",
+  "current_state_summary": "The two local dossiers now contain stronger labor, infrastructure, procurement, permit, and regulatory rails, but neither supports a readiness conclusion: Arizona adds county employment and a named wastewater capital project; Ontario adds a preliminary capital pipeline and active OEB proceeding.",
   "current_state": [
     "In the Southwest, SRP's E-67 tariff defines service conditions and Project Huckleberry records online infrastructure for one named Meta project.",
     "APS identifies TSMC in its service territory and NNME Southwest identifies a 47-member workforce node, while customer capacity and delivered workforce outcomes remain unresolved.",
     "The Phoenix AMA Fifth Management Plan adds effective industrial conservation, measurement, reporting, and compliance requirements without resolving a named project's allocation, service, use, or reuse outcome.",
+    "Maricopa QCEW data supplies a current county baseline, while Phoenix project WS90320008 creates a preliminary wastewater capital-program trail without proving workforce sufficiency or operating capacity.",
     "Phoenix records a Fab 3 topping-out milestone and a metropolitan workforce baseline while facility-level capacity and workforce outcomes remain unresolved.",
     "In Ontario, IESO and Toronto Hydro records establish planning layers rather than project capacity.",
     "CMHC's June 2026 Toronto CMA data separates approved-but-not-started units, active construction, completions, and starts without supplying a matched project-conversion rate.",
     "Toronto's development pipeline, building-permit release, and water capital plan expose the distance between intention, approval, servicing, construction, and completion.",
+    "Toronto's May 2026 capital-project pipeline adds an upstream procurement rail, while OEB case EB-2026-0129 remains an active non-wires proceeding rather than a decision or deployment.",
     "Application 24 254930 remains date-gated for a post-Council recheck; no later stage is inferred before the official record changes."
   ],
   "primary_topics": [
@@ -39,7 +41,10 @@
     "signal-phoenix-ama-fifth-management-plan-industrial-water",
     "signal-aps-tsmc-service-territory-capacity-boundary",
     "signal-nnme-southwest-microelectronics-workforce-node",
-    "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+    "signal-cmhc-june-2026-toronto-construction-stage-baseline",
+    "signal-bls-maricopa-q4-2025-employment-wage-baseline",
+    "signal-phoenix-2026-2031-north-gateway-wrp-capital-program",
+    "signal-toronto-2026-capital-project-pipeline-procurement-boundary"
   ],
   "source_ids": [
     "source-srp-e67-large-load-price-plan-2025",
@@ -55,7 +60,19 @@
     "source-adwr-groundwater-site-inventory",
     "source-aps-tsmc-service-territory-2026",
     "source-aca-nnme-southwest-2026",
-    "source-cmhc-june-2026-housing-starts-construction"
+    "source-cmhc-june-2026-housing-starts-construction",
+    "source-bls-qcew-data-files",
+    "source-census-building-permits-survey",
+    "source-census-acs-five-year-api",
+    "source-census-lehd-lodes",
+    "source-phoenix-capital-improvement-program",
+    "source-phoenix-opengov-procurement",
+    "source-maricopa-air-quality-permitting",
+    "source-arizona-deq-my-community",
+    "source-toronto-capital-projects-pipeline",
+    "source-toronto-cleared-building-permits",
+    "source-toronto-development-applications-open-data",
+    "source-oeb-applications"
   ],
   "organization_ids": [
     "org-arizona-corporation-commission",
@@ -75,7 +92,8 @@
   ],
   "research_collection_ids": [
     "research-collection-implementation-outcomes-local-conversion-2025-2026",
-    "research-collection-thin-topic-authority-foundations-2023-2026"
+    "research-collection-thin-topic-authority-foundations-2023-2026",
+    "research-collection-industrial-capacity-local-conversion-2025-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",

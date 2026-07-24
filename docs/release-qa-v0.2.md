@@ -163,3 +163,23 @@ Phase 55S batch one promotes 30 High-priority candidates into separately authore
 The 434-page artifact passes private-candidate validation, content references, source endpoint metadata, Astro diagnostics, static generation, the 45-route Published-signal sitemap contract, all ten evidence-gap routes, exactly six Phase 55Q decisions, two Published briefing routes, three Published dependency-map routes, six pathways across seven existing Atlas surfaces, non-published exclusion, canonical and indexing rules, the three public exports, the twenty-entry update log, all four research archives, and private-registry exclusion.
 
 Exact Phase 55S batch-one source commit `9e393f0731d996662d95d912e9737bafdaa1ad67` is deployed as owner-only Sites version 16 at `https://ftfn-analytics.jbumstead.chatgpt.site`. The access policy remains custom with one allowed owner and no groups. A Phase 55S visual/browser pass was not requested; automated page, content, canonical, sitemap, archive, deployment-status, and release-contract checks passed. The build is not approved for public access or public launch. The Toronto Phase 55H task runs August 1, the DARPA Lift Phase 55R gate follows August 9, and the Arizona wastewater hold reopens September 22.
+
+## Phase 55S Batch-Two QA Scope
+
+Batch two adds content and evidence relationships without changing components, styles, layouts, navigation, or client-side behavior. It promotes 30 private candidates into separately authored public sources, adds ten research-document routes, one collection route, seven signal routes, one briefing route, one update entry, and a 13-file archive.
+
+The 483-page artifact passes:
+
+- private-candidate validation for 150 records, including the 71 Active Source Record and 72 Candidate states;
+- active-source duplicate validation against 255 public sources;
+- content-reference validation across 79 signals, five collections, 65 research documents, six briefings, three maps, two local systems, and six pathways;
+- source endpoint metadata review for 156 Manual Review and 99 Probe Ready sources;
+- Astro diagnostics with zero errors, warnings, or hints;
+- production generation of 483 pages;
+- all 51 Published signal routes and all five Published research collections in the sitemap;
+- all non-published signals and four In Review briefings outside the sitemap with `noindex, follow`;
+- exactly 82 current Published-support sources;
+- the 21-entry update log, three public exports, required routes and downloads, canonicals, robots, and private-registry exclusion;
+- the new ten-record, 13-file research archive with SHA-256 `58736A52A803181D21EA1CB395132C4787AF4C1164EC846CDA8DC324AF79C864`.
+
+A repeat visual/browser pass was not requested because the batch changes content only. The owner-only deployment receipt remains to be appended. Public access, package freeze, custom-domain attachment, Hostinger DNS, and public launch remain outside this QA scope.

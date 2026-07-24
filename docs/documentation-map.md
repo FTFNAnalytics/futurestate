@@ -1544,6 +1544,7 @@ Primary file:
 
 - `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`
 - `docs/work-packages/phase-55s-authority-sprint-batch-1.md` for the completed first 30-record batch, its public records, collection, signals, validation evidence, and remaining sprint allocation
+- `docs/work-packages/phase-55s-authority-sprint-batch-2.md` for the completed second 30-record batch, industrial-capacity and local-conversion collection, signal decisions, briefing draft, validation evidence, and final sprint allocation
 
 Update when:
 

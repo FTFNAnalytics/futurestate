@@ -1,7 +1,7 @@
 # Phases 55S-55W Aggressive Content Expansion
 
 Date: 2026-07-24
-Status: approved direction; Phase 55S ready to execute
+Status: approved direction; Phase 55S batches one and two complete locally
 
 ## Direction
 
@@ -48,6 +48,27 @@ These are directional corpus targets for the end of Phase 55W, not automatic pub
 | Private candidates | 450-600 |
 
 The candidate shelf is an input reservoir, not a success metric. Public value comes from reviewed sources, bounded records, useful dossiers, and navigable synthesis.
+
+## Phase 55S Progress After Batch Two
+
+Two of the three 30-record sub-batches are complete. The verified local corpus now contains:
+
+| Measure | Batch-two state |
+| --- | ---: |
+| Public sources | 255 |
+| Signals | 79 |
+| Published signals | 51 |
+| In Review signals | 28 |
+| Research collections | 5 |
+| Research documents | 65 |
+| Briefings | 6 |
+| Generated pages | 483 |
+| Private candidates promoted during Phase 55S | 60 |
+| Remaining High-priority candidates | 4 |
+
+Batch one built thin-topic authority rails. Batch two connected national industrial-capacity evidence to critical-minerals, power, labor, housing, Phoenix infrastructure, Toronto procurement-planning, Ontario regulation, and CHIPS environmental-review records.
+
+Batch three should complete the 90-record sprint with the four remaining High-priority candidates and 26 newly selected primary records. Selection should favor named downstream artifacts and thin-topic signal conversion rather than adding more generic portals.
 
 ## Phase 55S: Ninety-Record Authority Sprint
 

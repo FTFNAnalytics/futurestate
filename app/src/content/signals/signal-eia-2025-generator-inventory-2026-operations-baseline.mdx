@@ -1,0 +1,60 @@
+---
+id: "signal-eia-2025-generator-inventory-2026-operations-baseline"
+title: "EIA pairs a preliminary 2025 generator inventory with 2026 plant operations"
+slug: "eia-2025-generator-inventory-2026-operations-baseline"
+record_status: "Published"
+summary: "EIA's June Form 860 early release and July Form 923 update provide complementary generator-status and plant-operation rails, while proposed capacity, observed output, transmission deliverability, and customer service remain separate evidence stages."
+source_ids:
+  - "source-eia-form-860-generator-data"
+  - "source-eia-form-923-power-plant-operations"
+published_date: 2026-07-24
+captured_date: 2026-07-24
+primary_topic: "Energy"
+framework_layers:
+  - "Resource Foundations"
+  - "Enabling Infrastructure"
+signal_type: "Market Signal"
+maturity_level: "Infrastructure"
+time_horizon: "Now"
+evidence_quality: "Official Data"
+verification_status: "Verified Against Primary Source"
+why_it_matters: "Using inventory and operating datasets together reduces the risk that proposed capacity is treated as production or that plant output is treated as local deliverable capacity."
+dependencies:
+  - "generator status and release vintage"
+  - "plant-level generation and fuel reporting"
+  - "balancing-authority and transmission evidence"
+  - "interconnection and utility service records"
+  - "revision and confidentiality controls"
+constraints:
+  - "Power"
+  - "Infrastructure"
+  - "Data Quality"
+  - "Capital"
+  - "Regulation"
+receiving_systems:
+  - "U.S. Southwest power system"
+  - "Arizona industrial development"
+  - "Electricity-intensive manufacturing"
+local_implications:
+  - "Arizona queries can establish generator inventory and plant output, but project-level service still depends on transmission, distribution, interconnection, tariff, and utility records."
+evidence_gap_ids:
+  - "gap-001"
+claim_scope: "System-Level Pattern"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-07-24
+editorial_notes: "Phase 55S batch-two publication decision: publish as an official-data availability and method signal. No aggregate capacity or output claim is inferred without a bounded geography, status filter, period, and dataset extract."
+---
+
+## What changed
+
+EIA released early 2025 Form 860 generator data on June 9, 2026 and updated monthly Form 923 plant-operation files through May 2026 on July 23.
+
+Form 860 distinguishes operable, proposed, retired, canceled, and postponed generators. Form 923 reports observed generation, fuel use, receipts, stocks, and related plant data. The datasets answer different questions and should be used together only with explicit vintages, fields, geographies, and status filters.
+
+## Evidence limits
+
+The Form 860 release is preliminary. A proposed unit is not a committed or operating resource. Plant production does not establish transmission headroom, interconnection availability, distribution service, reliability, emissions compliance, or price for a named customer.
+
+## What to watch next
+
+Build bounded Arizona extracts, reconcile facility identifiers, preserve revisions, connect balancing-authority data from Form 930, and then add utility, transmission, interconnection, tariff, service-agreement, and project-load evidence.
