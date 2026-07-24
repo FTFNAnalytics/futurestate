@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: Phase 55S batch-one local release gate passed; owner-only deployment pending exact source commit.
+Status: Phase 55S batch-one release gate and owner-only Sites version 16 deployment passed.
 
 ## Artifact Under Review
 
@@ -162,4 +162,4 @@ Phase 55S batch one promotes 30 High-priority candidates into separately authore
 
 The 434-page artifact passes private-candidate validation, content references, source endpoint metadata, Astro diagnostics, static generation, the 45-route Published-signal sitemap contract, all ten evidence-gap routes, exactly six Phase 55Q decisions, two Published briefing routes, three Published dependency-map routes, six pathways across seven existing Atlas surfaces, non-published exclusion, canonical and indexing rules, the three public exports, the twenty-entry update log, all four research archives, and private-registry exclusion.
 
-The prior Phase 55Q source remains owner-only Sites version 15 at `https://ftfn-analytics.jbumstead.chatgpt.site` until the exact Phase 55S batch-one commit is saved and deployed. A Phase 55S visual/browser pass was not requested; automated page, content, canonical, sitemap, archive, and release-contract checks passed. The build is not approved for public access or public launch. The Toronto Phase 55H task runs August 1, the DARPA Lift Phase 55R gate follows August 9, and the Arizona wastewater hold reopens September 22.
+Exact Phase 55S batch-one source commit `9e393f0731d996662d95d912e9737bafdaa1ad67` is deployed as owner-only Sites version 16 at `https://ftfn-analytics.jbumstead.chatgpt.site`. The access policy remains custom with one allowed owner and no groups. A Phase 55S visual/browser pass was not requested; automated page, content, canonical, sitemap, archive, deployment-status, and release-contract checks passed. The build is not approved for public access or public launch. The Toronto Phase 55H task runs August 1, the DARPA Lift Phase 55R gate follows August 9, and the Arizona wastewater hold reopens September 22.

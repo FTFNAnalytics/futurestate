@@ -364,7 +364,7 @@ Recommended active schedule:
 | Completed | Phase 55Q | six structured gap decisions, five named sources, four Published signals, and owner-only Sites version 15 |
 | Next dated insert | Phase 55H | complete the Toronto post-Council authority recheck on August 1 |
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
-| Current | Phase 55S | batch one complete; execute the remaining two 30-record sub-batches |
+| Current | Phase 55S | batch one complete and owner-only Sites version 16 deployed; execute the remaining two 30-record sub-batches |
 | Planned | Phase 55T | build useful multi-record evidence shelves across every thin topic |
 | Planned | Phase 55U | expand from two local systems to a five- or six-system network |
 | Planned | Phase 55V | grow the primary-document research and synthesis layer |

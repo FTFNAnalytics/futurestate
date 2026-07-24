@@ -1,7 +1,7 @@
 # Phase 55S Authority Sprint — Batch 1
 
 Date: 2026-07-24  
-Status: complete; owner-only deployment pending at documentation time
+Status: complete; owner-only Sites version 16 deployed
 
 ## Objective
 
@@ -114,3 +114,12 @@ Phase 55S Batch 2 should process the next 30 records with emphasis on:
 - the first briefing draft or dependency-map draft.
 
 The August 1 Toronto, August 10 DARPA Lift, and September 22 Arizona wastewater checks remain inserts rather than blockers.
+
+## Deployment Receipt
+
+- Exact source commit: `9e393f0731d996662d95d912e9737bafdaa1ad67`
+- Sites version: 16
+- URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- Access: custom owner-only policy with one allowed user and no groups
+- Deployment status: succeeded
+- Public GitHub, custom domain, DNS, package freeze, and public launch: unchanged
