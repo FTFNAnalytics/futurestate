@@ -176,7 +176,7 @@ Verified results:
 - three Published research collections with all 47 document routes in the sitemap,
 - verified 26-file, 11-file, and 19-file ZIP archives containing 37 local captures, ten official-link files, summaries, README files, and manifests.
 
-The current evidence-gap decision is in `docs/work-packages/phase-55q-high-value-evidence-gap-closure.md`; the reader-pathway decision remains in `docs/work-packages/phase-55p-reader-pathways-priority-dossiers.md`, with underlying synthesis and evidence work in the Phase 55K through Phase 55O packages. Owner-only Sites version 15 serves exact Phase 55Q source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; the latest completed evidence-gap decision remains in `docs/work-packages/phase-55q-high-value-evidence-gap-closure.md`. Owner-only Sites version 15 serves exact Phase 55Q source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97`. The expansion roadmap does not change the deployed artifact, access policy, package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 

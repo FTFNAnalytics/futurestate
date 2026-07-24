@@ -20,7 +20,7 @@ Private authority layer: 150 candidates, 15 profiles, 132 Candidate, 11 Active S
 Deployment: owner-only Sites version 15 from 9d9643fd at https://ftfn-analytics.jbumstead.chatgpt.site
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 120 Manual Review, 74 Probe Ready; 14 Strong coverage lanes
-Next phase: Phase 55H scheduled for August 1; Phase 55R after August 9; Arizona wastewater recheck September 22
+Next phase: Phase 55S aggressive 90-record authority sprint now; Phase 55H, Phase 55R, and Arizona wastewater remain dated inserts
 ```
 
 ## Read First
@@ -137,5 +137,5 @@ The latest completed work is the Phase 55Q evidence-gap closure batch. The curre
 
 Phase 55I completed the first-pass review of all 150 local-only private candidates across 15 profiles: 132 Candidate, 11 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55Q is complete. Run the existing Phase 55H Toronto task on August 1 and insert Phase 55R after August 9. Preserve the September 22 Arizona wastewater acceptance and operation recheck. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55Q is complete and Phases 55S-55W now define the active aggressive content-expansion program. Begin with the 90-record Phase 55S authority queue and process it in three 30-record sub-batches. Treat the August 1 Toronto task, August 10 DARPA Lift task, and September 22 Arizona wastewater task as bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

@@ -1529,3 +1529,29 @@ Update when:
 Boundary:
 
 An evidence-gap decision records the strongest current official stage and its stop rule. Narrowed and Source Added do not mean closed; a Dated Hold is not a negative conclusion about whether work occurred. Public access, package freeze, custom-domain attachment, DNS changes, public GitHub synchronization, automated publication, and public launch remain separate decisions.
+
+### Phases 55S-55W Aggressive Content Expansion
+
+Purpose:
+
+- Record the user-approved shift from pause-between-gates work to continuous aggressive content expansion.
+- Define the first 90-record authority sprint and its three 30-record sub-batches.
+- Preserve the Phase 55T thin-topic, Phase 55U local-system, Phase 55V research-collection, and Phase 55W publication/navigation sequence.
+- Record directional corpus targets without turning them into automatic publication quotas.
+- Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
+
+Primary file:
+
+- `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`
+
+Update when:
+
+- a 30-record Phase 55S sub-batch is selected or completed,
+- the topic allocation or corpus targets change,
+- a new local system or research collection is selected,
+- the publication or navigation scale gate changes,
+- a dated insert materially changes the active expansion queue.
+
+Boundary:
+
+Aggressive expansion increases research and editorial throughput without weakening source, claim, stage, privacy, publication, owner-only access, or public-launch controls.

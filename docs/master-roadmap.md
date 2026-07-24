@@ -1202,9 +1202,12 @@ Completed:
 
 Next candidate work:
 
-- Phase 55H dated insert: run the existing August 1 task to recheck Toronto application `24 254930` for disposition, amendments, bill and by-law status, condition compliance, and later permits. Record a dated negative result and stop if the official stage did not advance.
-- Phase 55Q is complete; preserve its two Narrowed, three Source Added, and one Dated Hold decisions rather than reopening a broad volume target.
-- Phase 55R dated insert: after August 9, recheck the DARPA Lift Challenge for measured results, winners, prize awards, and transition evidence. Keep the scheduled-trial record `In Review` if no independently useful outcome exists.
+- Phase 55S current: build a balanced 90-record authority queue from all 64 retained High-priority candidates plus 26 newly selected primary records, then process it in three 30-record sub-batches.
+- Phase 55T planned: bring every thin topic to a useful multi-record evidence shelf.
+- Phase 55U planned: add three or four evidence-dense local systems.
+- Phase 55V planned: expand to 8-10 research collections and 110-140 reviewed documents.
+- Phase 55W planned: review 40-60 signal candidates, expand pathways, and add corpus-scale navigation.
+- Phase 55H, Phase 55R, and Arizona wastewater remain scheduled inserts that do not pause the expansion queue.
 - Continue the NSTC and NAPMP recipient-level reconciliation, GAO prototype-OTA oversight trail, O-RAN external testing and adoption trail, PIV revision and pilot trail, Phoenix Fab 3 conversion trail, and Project Baccara downstream stages only where they serve a selected pathway or evidence gap.
 - Keep future In Review dependency-map details `noindex, follow` and outside the sitemap; local-system profiles remain qualitative prelaunch dossiers without a Published state.
 - Preserve separate award, obligation, physical milestone, permit, test, acceptance, operation, and scale stages for every record.

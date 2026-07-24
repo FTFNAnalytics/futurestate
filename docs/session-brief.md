@@ -135,7 +135,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve the owner-only preview and run Phase 55H through the existing August 1 Toronto recheck. Phase 55Q is complete, Phase 55R rechecks the Lift Challenge after August 9, and the Arizona wastewater hold reopens September 22. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve the owner-only preview and begin the Phase 55S-55W aggressive content-expansion program immediately. Phase 55S starts with a balanced 90-record queue processed in three 30-record sub-batches; Phases 55T-55W deepen thin topics, add local systems, expand research collections, and scale publication plus navigation. The August 1 Toronto, August 10 DARPA Lift, and September 22 Arizona wastewater checks are bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -313,14 +313,15 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 55H Toronto post-Council authority recheck on August 1
+Phase 55S ninety-record authority sprint
 ```
 
 Proceed by:
 
-- run the existing Phase 55H Toronto task on August 1 and record a dated negative result if the official stage did not advance,
-- preserve all six Phase 55Q decisions and their named-record stop rules,
-- preserve the Arizona wastewater acceptance and operation recheck for September 22,
+- build the 90-record queue from 64 retained High-priority candidates and 26 newly selected primary records,
+- process three 30-record sub-batches with source and research-document work before signal drafting,
+- prioritize the thinnest topic lanes while using strong lanes as cross-cutting support,
+- run the August 1, August 10, and September 22 tasks as bounded inserts without pausing the queue,
 - insert the Phase 55R DARPA Lift recheck after August 9,
 - keep Git and the static build as the public publication gate,
 - preserve owner-only Sites access,
@@ -411,7 +412,7 @@ Current development state:
 v0.2 owner-only hosted candidate: package 0.2.0-dev, 194 public sources, 150 first-pass-triaged private candidates, 67 signals, 17 topics, 19 updates, 6 structured Phase 55Q decisions, 6 reader pathways across 7 existing Atlas surfaces, 389 generated site pages, 42 Published signals, 2 Published briefings, 3 In Review briefings, 3 Published dependency maps, 47 research documents, verified 26-file, 11-file, and 19-file research archives, and 3 public JSON endpoints. Sites version 15 serves exact source commit 9d9643fd2d46a03f7148b90971d50d10d24baa97 at https://ftfn-analytics.jbumstead.chatgpt.site under the unchanged owner-only access policy. Source Coverage is 14 Strong lanes; source health reports 120 Manual Review and 74 Probe Ready records.
 
 Next decision gate:
-Preserve the owner-only preview and run the existing Phase 55H Toronto task on August 1. Treat Phase 55R after August 9 and the Arizona wastewater recheck on September 22 as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve the owner-only preview and begin Phase 55S now. Build and review the first 30-record sub-batch from the approved 90-record authority queue. Treat the August 1 Toronto, August 10 DARPA Lift, and September 22 Arizona wastewater checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

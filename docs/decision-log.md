@@ -2417,3 +2417,28 @@ Implemented:
 Boundary:
 
 Serving territory is not customer capacity. Consortium membership is not workforce sufficiency. Aggregate stage measures are not a matched cohort. Procurement guidance is not agency implementation. Authorized flow and named acceptance requirements are not constructed, accepted, operating, or measured wastewater infrastructure. Phase 55Q does not automatically open another acquisition or promotion batch.
+
+## 2026-07-24: Dated Gates Become Inserts Inside An Aggressive Expansion Program
+
+Decision:
+
+FTFN will not pause content development while waiting for Toronto, DARPA, Arizona wastewater, Project Baccara, or other dated downstream records. Phases 55S-55W will run as a continuous expansion program. Scheduled outcome checks enter the active phase as bounded inserts and then return immediately to the main queue.
+
+Rationale:
+
+The current 194-source, 67-signal corpus has enough authority infrastructure to support a much larger content program. Its distribution is uneven: Energy, Chips and Compute, Policy and Standards, and Critical Minerals are strong, while several other topics have only one to four primary-topic signals. The private shelf also contains 64 retained High-priority candidates that can anchor immediate work. Waiting would leave this verified capacity unused.
+
+Implemented in the roadmap:
+
+- Phase 55S begins with a 90-record authority sprint using 64 retained High-priority candidates and 26 newly selected primary records,
+- Phase 55T deepens every thin topic into a useful multi-record evidence shelf,
+- Phase 55U adds three or four evidence-dense local systems,
+- Phase 55V expands the primary-document research and synthesis layer,
+- Phase 55W applies publication gates and adds the navigation needed by the larger corpus,
+- directional targets reach 325-375 sources, 115-130 signals, 110-140 research documents, 5-6 local systems, and 12-15 reader pathways,
+- the August 1, August 10, and September 22 tasks remain active dated inserts,
+- owner-only access and all public-launch boundaries remain unchanged.
+
+Boundary:
+
+Aggressive expansion authorizes throughput, breadth, and deeper synthesis. It does not authorize automatic publication, candidate leakage, claim inflation, unsupported local conclusions, public GitHub synchronization, package freeze, DNS changes, custom-domain attachment, or public launch.

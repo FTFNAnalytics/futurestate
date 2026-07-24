@@ -364,11 +364,16 @@ Recommended active schedule:
 | Completed | Phase 55Q | six structured gap decisions, five named sources, four Published signals, and owner-only Sites version 15 |
 | Next dated insert | Phase 55H | complete the Toronto post-Council authority recheck on August 1 |
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
+| Current | Phase 55S | execute the first 90-record authority sprint in three 30-record sub-batches |
+| Planned | Phase 55T | build useful multi-record evidence shelves across every thin topic |
+| Planned | Phase 55U | expand from two local systems to a five- or six-system network |
+| Planned | Phase 55V | grow the primary-document research and synthesis layer |
+| Planned | Phase 55W | apply publication gates and make the larger corpus navigable |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete. Phases 55A-55J strengthened the authority package and publication set; Phase 55K added the first primary-document research collection; Phase 55L converted eight directions into implementation trails; Phase 55N tested those trails against later outcomes, discontinuities, oversight limits, and local conversion gates; Phase 55M applied the record-level publication gate; Phase 55O completed the first synthesis publication pass; Phase 55P turned the Published set into six reader pathways; and Phase 55Q advanced six named evidence gaps without opening another volume target. Phase 55H is the next dated insert on August 1, followed by Phase 55R after August 9. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete. Phases 55A-55Q established the authority, research, synthesis, pathway, and evidence-gap foundations. The user has now authorized an aggressive content-expansion program rather than pausing between dated updates. Phases 55S-55W will expand sources, signals, research collections, local systems, briefings, maps, and reader pathways while preserving separate publication gates. Phase 55H, Phase 55R, and the Arizona wastewater check are scheduled inserts inside that work, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -582,6 +587,39 @@ Exit criteria:
 - any publication decision passes the same record-level gate used in Phase 55M,
 - no scheduled trial is presented as a demonstrated operational outcome.
 
+### Phases 55S-55W: Aggressive Content Expansion - Current
+
+Goal: continue building continuously across the full FTFN corpus while dated outcome questions are handled as scheduled inserts.
+
+Directional Phase 55W targets:
+
+- 325-375 public sources,
+- 115-130 signals,
+- 70-85 Published signals only after separate record-level gates,
+- 8-10 research collections with 110-140 document records,
+- 10-14 briefings and 6-8 dependency maps,
+- 5-6 local systems and 12-15 reader pathways,
+- a provisional 700-900 generated-page corpus,
+- a 450-600-record private discovery shelf that remains an input reservoir rather than a public-volume metric.
+
+Execution sequence:
+
+- Phase 55S: process a balanced 90-record authority queue built from 64 retained High-priority candidates and 26 newly selected primary records,
+- Phase 55T: deepen thin topics, beginning with Cybersecurity, Aviation, Climate, Discovery Technologies, Mobility, Space, Advanced Manufacturing, Agriculture and Bioeconomy, AI for Science, Quantum, Water, and Human Futures,
+- Phase 55U: select three or four additional local systems using official-record density and cross-topic value,
+- Phase 55V: add five to seven primary-document research collections and their implementation trails,
+- Phase 55W: review 40-60 candidate signals, expand reader pathways, and add the filtering and research-shelf support required by the larger corpus.
+
+Operating rule:
+
+- run Phase 55S in three 30-record sub-batches,
+- complete source and research-document records before drafting signals,
+- apply a separate publication gate rather than promoting by batch,
+- insert dated rechecks when they run and return immediately to the active expansion queue,
+- preserve owner-only access and the existing public-launch boundaries.
+
+The detailed allocation and acceptance contract are in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`.
+
 ### Phase 56: v0.2 Production Release And Domain - Conditional
 
 Goal: turn the verified preview into an explicit, reversible public release.
@@ -676,11 +714,11 @@ In v0.2, only source discovery and change detection may become semi-automated. C
 
 v0.2 is successful when:
 
-- the 38-signal Published set remains bounded, current, and useful rather than expanding for volume,
-- all five briefings and three dependency maps have explicit publish, repair, split, or hold decisions,
-- six priority reader pathways connect Published evidence to sources, research, dependencies, and evidence limits,
+- the current 42-signal Published set remains bounded and every Phase 55S-55W promotion passes a separate record-level gate,
+- every current and future briefing and dependency map has an explicit publish, repair, split, or hold decision,
+- the six current pathways remain valid while the expansion grows the set toward 12-15 evidence-bounded journeys,
 - the highest-value local and implementation gaps have named next records and dated stop rules,
-- both local systems retain multi-constraint evidence trails without being overstated as final intelligence products,
+- current and future local systems retain multi-constraint evidence trails without being overstated as final intelligence products,
 - source updates have a repeatable private workflow,
 - readers can see corrections and material updates,
 - core metadata remains available as static exports,
@@ -688,16 +726,14 @@ v0.2 is successful when:
 - release QA remains repeatable,
 - no automated process publishes claims without review.
 
-The prior v0.2 build and publication thresholds pass in the current candidate. Phase 55M expanded Published membership to 38 bounded records, Phase 55O published two briefings plus three dependency maps, Phase 55P added six reader pathways, and Phase 55Q closed its six-item batch with five sources, four Published signals, and explicit stop rules. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
+The prior v0.2 build and publication thresholds pass in the current candidate. Phase 55Q closed its six-item batch with five sources, four Published signals, and explicit stop rules. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary. The user has explicitly authorized Phases 55S-55W as an aggressive expansion program; the earlier no-new-volume posture no longer governs future planning, although every publication and evidence-stage rule remains intact.
 
 ## Immediate Next Step
 
-Run Phase 55H on August 1, 2026, using the existing scheduled project task. Recheck Toronto application `24 254930` against the same Council and permit trail. If no named official stage has advanced, record the dated negative result and stop rather than manufacturing a signal.
+Begin Phase 55S immediately. Build the 90-record authority queue from all 64 retained High-priority candidates plus 26 newly selected primary records, then process it as three 30-record sub-batches. Prioritize thin topics and complete source and research-document records before signal drafting.
 
-Preserve the completed Phase 55Q decisions and do not open another general source-volume target. The Arizona wastewater record remains on its September 22 acceptance and operation recheck.
+Run Phase 55H on August 1 and Phase 55R on August 10 through their existing scheduled project tasks. Preserve the Arizona wastewater recheck on September 22. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
-Insert Phase 55R after August 9, 2026. Recheck the official DARPA Lift Challenge record for measured results, winners, prize awards, and transition evidence. Do not promote the scheduled-trial record before that evidence exists.
-
-Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Do not start another volume target or broad automatic-promotion batch.
+Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
 Keep the Sites preview owner-only. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
