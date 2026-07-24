@@ -85,3 +85,11 @@ A two-point movement is not described as a durable trend without an explicit cav
 - Asset- and customer-level storage, reliability, water, and mineral operating measures.
 - Carrier, AV operator, launch, reentry, mission, anomaly, accessibility, and local-outcome records with compatible exposure.
 
+## Deployment receipt
+
+- Local content commit: `1fe4d73de3f2af80eba24ef3d4c69856f02a599b`
+- Private Sites source commit: `ca15ee348e3b012b38c4188273c6c1f2a3961b49`
+- Sites version: 26
+- Deployment: `appgdep_6a63fb2b1bb081918ca79ccb1fba92ff`
+- Access: custom, one allowed owner, no groups
+- Public access, package freeze, Hostinger DNS, and custom-domain state: unchanged

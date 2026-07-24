@@ -17,7 +17,7 @@ Content: 405 sources, 172 signals, 17 topics, 5 local systems, 10 research colle
 Publication: 129 Published signals, 43 In Review signals, 6 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
 Trust/data: 29 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, 35-file, and 51-file research archives
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 25 serves the combined Phase 55Y and Phase 55Z source; one allowed owner and no groups
+Deployment: owner-only Sites version 26 serves Phase 56A from local content commit 1fe4d73 and private source commit ca15ee3; one allowed owner and no groups
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 265 Manual Review, 140 Probe Ready; 14 Strong coverage lanes
 Next content gate: Phase 56B entity-level operating panels; six dated inserts remain scheduled
@@ -106,6 +106,7 @@ The approved preview sequence is complete:
 51. Completed Phase 55Z locally: added 32 primary outcome records, 30 source profiles, sixteen signals, a 35-file collection archive, Research Watch 004, evidence gap `gap-016`, and a Published comparison-boundary map. Twelve signals and 28 document summaries publish; four signals and four documents retain explicit denominator or comparability holds. Verified 780 pages, 357 sources, 152 signals, 113 Published, 39 In Review, 28 updates, nine collections, 163 research documents, and 166 current Published-support sources.
 52. Matched local app commit `db18ef9` to exact private source commit `2f1c2e6d07f24a75a80d0fb83bab123b38fa2fbf`, deployed the combined Phase 55Y and Phase 55Z state from the verified 780-page package as Sites version 25 in deployment `appgdep_6a63f3041f8481918754adf70ddeea70`, and confirmed custom access with one allowed owner and no groups.
 53. Completed Phase 56A locally: added 48 primary observations in sixteen three-record series, 48 source profiles, twenty signal decisions, a 51-file collection archive, and Research Watch 005. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds. Verified 898 pages, 405 sources, 172 signals, 129 Published, 43 In Review, 29 updates, ten collections, 211 research documents, and 214 current Published-support sources.
+54. Matched local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` to private Sites source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed the verified 898-page Phase 56A package as owner-only Sites version 26 in deployment `appgdep_6a63fb2b1bb081918ca79ccb1fba92ff`, and confirmed custom access with one allowed owner and no groups.
 
 ## Required Stop Points
 
