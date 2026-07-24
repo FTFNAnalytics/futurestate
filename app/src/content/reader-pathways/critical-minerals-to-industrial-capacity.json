@@ -3,8 +3,8 @@
   "title": "Critical Minerals: From Commodity Exposure To Industrial Capacity",
   "slug": "critical-minerals-to-industrial-capacity",
   "record_status": "Published",
-  "summary": "Follow commodity production, trade, import reliance, awards, construction, processing, qualification, customers, recycling, and sustained industrial output.",
-  "current_state_summary": "The pathway now includes the machine-readable 2025 commodity baseline and separates increased U.S. production value from persistent critical-mineral import reliance.",
+  "summary": "Follow annual commodity statistics into mine output, processing, qualification, customers, inventory, recycling, price, disruption, and sustained industrial supply.",
+  "current_state_summary": "The 2023 through 2025 USGS Mineral Commodity Summaries create a recurring official commodity rail while preserving physical quantity, nominal value, trade, and import-reliance differences.",
   "current_state": [
     "USGS provides the annual baseline and a commodity-specific gallium supply structure tied to semiconductor uses.",
     "USAspending records a named Talon Nickel award with obligations, outlays, performance dates, and non-federal funding.",
@@ -13,7 +13,8 @@
     "GAO finds that substitution and recycling pathways differ by material and application; DOE's May 2026 announcement identifies 19 selected pilot-scale processing projects that still need award and delivery evidence.",
     "None of the Published records yet establishes qualified output, sustained production, customer acceptance, or supply security.",
     "USGS reports $112 billion in U.S. nonfuel mineral production in 2025 while China remained a major source for 14 of the 33 critical minerals on which the United States was most import reliant.",
-    "The data release enables commodity-specific analysis but does not disclose facility availability or customer qualification."
+    "The data release enables commodity-specific analysis but does not disclose facility availability or customer qualification.",
+    "USGS annual editions now support commodity-specific longitudinal reads without treating production value as physical or qualified supply."
   ],
   "primary_topics": [
     "Critical Minerals",
@@ -33,7 +34,8 @@
     "signal-nrcan-2026-critical-minerals-strategy-delivery-pipeline",
     "signal-gao-critical-minerals-substitution-recycling-adoption-gap",
     "signal-doe-2026-critical-minerals-nineteen-project-selections",
-    "signal-us-mineral-production-and-import-reliance-2025"
+    "signal-us-mineral-production-and-import-reliance-2025",
+    "signal-56a-usgs-mineral-production"
   ],
   "source_ids": [
     "source-usgs-mineral-commodity-summaries",
@@ -48,7 +50,10 @@
     "source-usgs-nmic-key-publications",
     "source-usgs-historical-mineral-statistics",
     "source-ontario-mining-lands-administration-system",
-    "source-55z-usgs-mcs-2026-data-release"
+    "source-55z-usgs-mcs-2026-data-release",
+    "source-56a-usgs-mcs-2023",
+    "source-56a-usgs-mcs-2024",
+    "source-56a-usgs-mcs-2025"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -59,7 +64,8 @@
   ],
   "briefing_ids": [
     "briefing-stack-watch-003-research-to-implementation",
-    "briefing-research-watch-004-comparative-operating-outcomes"
+    "briefing-research-watch-004-comparative-operating-outcomes",
+    "briefing-research-watch-005-longitudinal-operating-series"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -69,7 +75,8 @@
     "research-collection-darpa-usg-2025-2026",
     "research-collection-federal-implementation-evidence-2025-2026",
     "research-collection-industrial-capacity-local-conversion-2025-2026",
-    "research-collection-comparative-operating-outcomes-2023-2026"
+    "research-collection-comparative-operating-outcomes-2023-2026",
+    "research-collection-longitudinal-operating-series-2020-2025"
   ],
   "evidence_gap_ids": [
     "gap-007",
@@ -105,6 +112,11 @@
       "stage": "Commodity operating baseline",
       "current_state": "USGS now supplies current production-value, trade, and import-reliance data with commodity-level files and definitions.",
       "boundary": "Production value is not physical output, refining capacity, qualified material, inventory, price resilience, or facility-level supply security."
+    },
+    {
+      "stage": "Longitudinal operating series",
+      "current_state": "Three annual commodity editions extend production, trade, and import-reliance evidence.",
+      "boundary": "Nominal value is not physical output, refining capacity, qualified material, inventory, price resilience, or facility availability."
     }
   ],
   "evidence_limits": [
@@ -113,7 +125,8 @@
     "Program plans and funding opportunities do not identify every final recipient, location, permit, utility requirement, or delivery schedule.",
     "The current record lacks comparable commodity-level refining, qualification, offtake, production, recycling, substitution, and price evidence.",
     "Commodity values, physical quantities, trade shares, prices, reserves, and import reliance must retain their original units.",
-    "Withheld production data and changing commodity definitions limit some comparisons."
+    "Withheld production data and changing commodity definitions limit some comparisons.",
+    "Commodity definition changes, revisions, withheld data, price movement, and unit differences constrain trend claims."
   ],
   "next_records": [
     "Talon Nickel and MP Materials permits, engineering, site-work, equipment, feedstock, utility, construction, commissioning, qualification, customer, and production records.",
@@ -121,6 +134,7 @@
     "Canadian project-level contribution agreements, infrastructure contracts, permits, construction milestones, output measures, and recipient reporting.",
     "Facility-level gallium procurement, inventory, qualification, supplier, price, substitution, recycling, and disruption records.",
     "Comparable USGS, trade, producer, customer, and plant records for the commodities that most constrain chips, grids, batteries, and defense manufacturing.",
-    "Commodity- and facility-level mine, processing, refining, qualification, customer, inventory, price, recycling, substitution, and disruption records."
+    "Commodity- and facility-level mine, processing, refining, qualification, customer, inventory, price, recycling, substitution, and disruption records.",
+    "Commodity- and facility-level mine, processing, refining, qualification, inventory, price, recycling, substitution, and disruption records."
   ]
 }

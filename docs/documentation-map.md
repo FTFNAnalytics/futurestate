@@ -1541,7 +1541,8 @@ Purpose:
 - Record the completed Phase 55W 45-record publication ledger, 12 promotions, synthesis decisions, 15-pathway network, corpus discovery controls, separate research shelves, and five-export data contract.
 - Record the completed Phase 55X 24-document local implementation collection, twelve signal decisions, 27-file archive, three journey repairs, and Phase 55Y handoff.
 - Record the completed Phase 55Y 24-document operating-evidence collection, twelve signal decisions, 27-file archive, four journey repairs, and receiving-system boundaries.
-- Record the completed Phase 55Z 32-document operating-outcome collection, sixteen signal decisions, 35-file archive, comparison-boundary map, Research Watch 004, and Phase 56A handoff.
+- Record the completed Phase 55Z 32-document operating-outcome collection, sixteen signal decisions, 35-file archive, comparison-boundary map, and Research Watch 004.
+- Record the completed Phase 56A 48-observation longitudinal collection, sixteen three-record series, twenty signal decisions, 51-file archive, Research Watch 005, revision and series-break contract, and Phase 56B handoff.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 
@@ -1556,6 +1557,7 @@ Primary file:
 - `docs/work-packages/phase-55x-local-implementation-dossiers.md` for the completed three-journey dossier build, document and signal publication ledgers, archive contract, integration map, validation evidence, and Phase 55Y handoff
 - `docs/work-packages/phase-55y-operational-evidence.md` for the completed operational-evidence and receiving-system expansion, publication decisions, archive contract, integration map, validation evidence, and Phase 55Z handoff
 - `docs/work-packages/phase-55z-comparative-operating-outcomes.md` for the completed four-portfolio outcome build, publication decisions, comparison boundary, archive contract, validation evidence, and Phase 56A handoff
+- `docs/work-packages/phase-56a-longitudinal-operating-series.md` for the completed sixteen-series build, twenty publication decisions, longitudinal comparison contract, archive contract, validation evidence, and Phase 56B handoff
 
 Update when:
 

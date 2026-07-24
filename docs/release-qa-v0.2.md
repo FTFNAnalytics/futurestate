@@ -291,3 +291,26 @@ Phase 55X changes content, research, and publication membership without changing
 - canonicals, robots, sitemap, required outputs, and private-registry exclusion.
 
 A repeat visual-browser pass was not requested because the phase uses existing content templates and discovery surfaces. Structural assertions, Astro diagnostics, the full static build, archive validation, and route/export checks pass. Local app commit `ce590cb8d847501b0a21fe4eb760037d3e531ea8` matches exact private source commit `6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac`, deployed successfully as owner-only Sites version 23 in deployment `appgdep_6a63de12b2c881919c4b7dd924f3711c` at `https://ftfn-analytics.jbumstead.chatgpt.site`. The site remains custom-access with one allowed owner and no groups; no public-access, public-GitHub, package, Hostinger DNS, or custom-domain change is authorized.
+
+## Phase 56A Longitudinal Operating-Series QA Scope
+
+Phase 56A changes content, publication membership, research, and evidence relationships without changing components, styles, layouts, navigation, or client-side behavior. It adds 48 source routes, 48 research-document routes, twenty signal routes, one collection route, one Published briefing route, one update, and a 51-file archive.
+
+The 898-page artifact passes:
+
+- content-reference validation across 405 sources, 172 signals, 17 topics, five local systems, thirteen briefings, sixteen evidence gaps, seven dependency maps, fifteen pathways, ten research collections, and 211 research documents;
+- source endpoint metadata review for 265 Manual Review and 140 Probe Ready sources;
+- Astro diagnostics with zero errors, warnings, or hints;
+- production generation of 898 pages;
+- all 129 Published signal routes in the sitemap and all 43 In Review routes outside it;
+- exactly 214 current Published-support sources;
+- all six Published briefing routes in the sitemap and all seven In Review briefing routes outside it;
+- all six Published dependency-map routes in the sitemap and the one In Review map outside it;
+- a twenty-signal Phase 56A ledger with sixteen Published and four held decisions;
+- sixteen named three-observation series and a two-compatible-time-point publication rule;
+- a 48-document collection with 44 Published routes and four held routes;
+- a verified 51-file ZIP containing 48 official-link records, summaries, README, and SHA-256 manifest;
+- the 29-entry update log and five versioned public-data exports;
+- canonicals, robots, sitemap, required outputs, research exports, and private-registry exclusion.
+
+A repeat visual-browser pass was not requested because the phase uses existing content templates and route families. Structural assertions, Astro diagnostics, the full static build, archive validation, and route/export checks pass. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.

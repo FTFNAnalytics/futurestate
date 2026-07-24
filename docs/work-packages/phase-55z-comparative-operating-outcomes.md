@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: complete locally; combined Phase 55Y and Phase 55Z owner-only Sites refresh pending
+Status: complete and owner-only deployed
 
 ## Objective
 
@@ -130,7 +130,7 @@ The release assertions require exact Published sitemap membership, non-published
 
 ## Deployment Boundary
 
-The approved external action is an owner-only Sites refresh of the exact combined Phase 55Y and Phase 55Z tree. The refresh must retain custom access with one allowed owner and no groups.
+Local app commit `db18ef9` is represented by private Sites source commit `2f1c2e6d07f24a75a80d0fb83bab123b38fa2fbf` and deployed from the verified 780-page package as Sites version 25 in deployment `appgdep_6a63f3041f8481918754adf70ddeea70`. Deployment status passed at `https://ftfn-analytics.jbumstead.chatgpt.site`, and the access policy remains custom with one allowed owner and no groups.
 
 This phase does not authorize:
 

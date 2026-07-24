@@ -63,9 +63,11 @@ Phase 55W converts that corpus into a stronger publication and discovery layer. 
 
 Phase 55X deepens the Northern Virginia compute, Nevada lithium, and Florida Space Coast journeys with eight official implementation records each. The 24-document collection adds 22 Published summaries and two explicit holds, while a separate twelve-signal ledger publishes eight bounded stage records and holds four. A 27-file archive, Research Watch 002, three dossier and pathway repairs, three evidence-gap reviews, eight topic updates, and cross-corridor synthesis repairs raise the verified candidate to 638 pages, 307 sources, 124 signals, 93 Published, 31 In Review, 26 updates, ten briefings, seven research collections, and 107 research documents. The three end-to-end local pathways remain `In Review`. Local app commit `ce590cb8d847501b0a21fe4eb760037d3e531ea8` matches private source commit `6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac`, deployed as owner-only Sites version 23.
 
-Phase 55Y adds 24 official records and twelve bounded signals across AI assurance, advanced-manufacturing workforce, industrial water, and autonomous passenger service. Eight signals and twenty document summaries publish; four signals and four summaries remain held at a zero-draft, planned-facility, proposed-budget, or demonstration-only stage. The phase adds Research Watch 003, two dedicated evidence gaps, a 27-file archive, four pathway and topic repairs, and a Published autonomy pathway and dependency map. The verified local candidate now contains 698 pages, 327 sources, 136 signals, 101 Published, 35 In Review, 27 updates, eleven briefings, eight research collections, 131 research documents, fifteen pathways, and 150 current Published-support sources. Owner-only Sites deployment remains pending for the exact Phase 55Y tree.
+Phase 55Y adds 24 official records and twelve bounded signals across AI assurance, advanced-manufacturing workforce, industrial water, and autonomous passenger service. Eight signals and twenty document summaries publish; four signals and four summaries remain held at a zero-draft, planned-facility, proposed-budget, or demonstration-only stage. The phase adds Research Watch 003, two dedicated evidence gaps, a 27-file archive, four pathway and topic repairs, and a Published autonomy pathway and dependency map. The verified local candidate contains 698 pages, 327 sources, 136 signals, 101 Published, 35 In Review, 27 updates, eleven briefings, eight research collections, 131 research documents, fifteen pathways, and 150 current Published-support sources. Its content is included in the combined Phase 55Y and Phase 55Z owner-only deployment.
 
-Phase 55Z adds 32 primary operating-outcome records and sixteen bounded signals across institutional AI and cybersecurity, manufacturing workforce and production, infrastructure performance, and mobility, aviation, and space. Twelve signals and 28 document summaries publish; four signals and four summaries retain explicit denominator or comparability holds. Research Watch 004, evidence gap `gap-016`, and `Comparative Outcomes Require Common Denominators` establish the no-ranking boundary. The 35-file archive and integrations across eleven topics, eight pathways, and seven existing gaps raise the verified local candidate to 780 pages, 357 sources, 152 signals, 113 Published, 39 In Review, 28 updates, twelve briefings, nine research collections, 163 research documents, and 166 current Published-support sources. A combined Phase 55Y and Phase 55Z owner-only Sites refresh is pending.
+Phase 55Z adds 32 primary operating-outcome records and sixteen bounded signals across institutional AI and cybersecurity, manufacturing workforce and production, infrastructure performance, and mobility, aviation, and space. Twelve signals and 28 document summaries publish; four signals and four summaries retain explicit denominator or comparability holds. Research Watch 004, evidence gap `gap-016`, and `Comparative Outcomes Require Common Denominators` establish the no-ranking boundary. The 35-file archive and integrations across eleven topics, eight pathways, and seven existing gaps raise the verified candidate to 780 pages, 357 sources, 152 signals, 113 Published, 39 In Review, 28 updates, twelve briefings, nine research collections, 163 research documents, and 166 current Published-support sources. Local app commit `db18ef9` is represented by private source commit `2f1c2e6d07f24a75a80d0fb83bab123b38fa2fbf`, deployed from the verified 780-page package as owner-only Sites version 25.
+
+Phase 56A adds 48 primary observations in sixteen three-record official series across institutional AI and cybersecurity, manufacturing, infrastructure, and mobility, aviation, and space. Sixteen longitudinal signals and 44 document summaries publish; four cross-series composites and four document observations retain explicit method, route, or combined-period holds. Research Watch 005, the deepened comparison map, and gap `gap-016` require compatible time points and preserve revisions and series breaks. The verified 51-file archive and integrations across eleven topics, nine pathways, and nine gaps raise the candidate to 898 pages, 405 sources, 172 signals, 129 Published, 43 In Review, 29 updates, thirteen briefings, ten research collections, 211 research documents, and 214 current Published-support sources.
 
 ## Build Inventory
 
@@ -73,14 +75,14 @@ The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 780 | +598 |
-| Sources | 102 | 357 | +255 |
-| Signals | 18 | 152 | +134 |
-| Published signals | 3 | 113 | +110 |
-| In Review signals | 14 | 39 | +25 |
+| Generated HTML pages | 182 | 898 | +716 |
+| Sources | 102 | 405 | +303 |
+| Signals | 18 | 172 | +154 |
+| Published signals | 3 | 129 | +126 |
+| In Review signals | 14 | 43 | +29 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 28 | +28 |
+| Public update entries | 0 | 29 | +29 |
 | Versioned JSON exports | 0 | 5 | +5 |
 
 Additional current records:
@@ -89,12 +91,12 @@ Additional current records:
 - 5 technologies,
 - 5 local systems,
 - 16 evidence gaps,
-- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y and Phase 55Z reviews,
+- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y, Phase 55Z, and Phase 56A reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 12 briefings: 5 Published and 7 In Review,
-- 9 research collections with 163 document records,
+- 13 briefings: 6 Published and 7 In Review,
+- 10 research collections with 211 document records,
 - 15 reader pathways across 19 Atlas surfaces,
-- 41 official local captures plus 122 official-link records across verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, and one 35-file ZIP archives.
+- 41 official local captures plus 170 official-link records across verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, 35-file, and 51-file ZIP archives.
 
 ## What Is Built
 
@@ -114,12 +116,12 @@ The public application includes:
 
 The editorial and authority layer includes:
 
-- 357 structured source records with authority, freshness, access, monitoring, and review metadata,
-- 152 bounded signal records with explicit claim and evidence limits,
-- 113 Published signals backed by 166 current support sources,
+- 405 structured source records with authority, freshness, access, monitoring, and review metadata,
+- 172 bounded signal records with explicit claim and evidence limits,
+- 129 Published signals backed by 214 current support sources,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
 - fifteen evidence-bounded reader pathways that connect Published records to dependency stacks and visible gaps,
-- a public 28-entry update and correction log,
+- a public 29-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
@@ -192,13 +194,15 @@ Phase 55Y adds twenty source profiles, 24 research records, twelve signals, one 
 
 Phase 55Z adds 30 source profiles, 32 research records, sixteen signals, one research collection, one Published briefing, one evidence gap, one Published dependency map, and one public update. Twelve signals and 28 document summaries pass independent publication gates; four signals and four document summaries retain explicit outcome-denominator or comparability holds. The result is 780 generated pages, 357 sources, 152 signals, 113 Published, 39 In Review, 28 public updates, twelve briefings, seven maps, nine research collections, 163 research documents, fifteen pathways across 19 Atlas surfaces, and 166 current Published-support sources. Content validation, candidate validation, source health, Astro diagnostics, production build, the Phase 55Z decision ledger, archive checks, sitemap and indexing membership, exports, and private-registry exclusion pass.
 
+Phase 56A adds 48 source profiles, 48 research records, twenty signals, one research collection, one Published briefing, one public update, and integrated longitudinal repairs across eleven topics, nine pathways, nine gaps, and the comparison map. Sixteen series signals and 44 document summaries pass independent publication gates; four cross-series composites and four document observations retain explicit method, route, or combined-period holds. The result is 898 generated pages, 405 sources, 172 signals, 129 Published, 43 In Review, 29 public updates, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, and 214 current Published-support sources. Content validation, source health, Astro diagnostics, production build, the Phase 56A decision ledger, 51-file archive checks, sitemap and indexing membership, exports, and private-registry exclusion pass.
+
 Verified results:
 
-- 780 generated site pages,
-- exact exports for 357 sources, 17 topics, 113 Published signals, 162 research records, and 11 Published pathways,
-- all 113 Published signal routes included in the sitemap,
+- 898 generated site pages,
+- exact exports for 405 sources, 17 topics, 129 Published signals, 207 research records, and 11 Published pathways,
+- all 129 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
-- all five Published briefing routes included in the sitemap and all seven held briefing routes excluded,
+- all six Published briefing routes included in the sitemap and all seven held briefing routes excluded,
 - all six Published dependency-map routes included in the sitemap and the one held map route excluded,
 - all fifteen reader pathways rendered across 19 Atlas surfaces with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records,
 - all sixteen evidence-gap details included in the sitemap, including the comparison-denominator gap,
@@ -209,10 +213,10 @@ Verified results:
 - exactly 150 unique private candidates, 10 in each of 15 profiles, with all records assigned a first-pass triage state,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
-- nine Published research collections, all 153 Published document routes in the sitemap, and ten held document routes excluded,
-- verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, and one 35-file ZIP archives containing 41 local captures, 122 official-link files, summaries, README files, and manifests.
+- ten Published research collections, all 197 Published document routes in the sitemap, and fourteen held document routes excluded,
+- verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, 35-file, and 51-file ZIP archives containing 41 local captures, 170 official-link files, summaries, README files, and manifests.
 
-The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; Phase 55X is recorded in `docs/work-packages/phase-55x-local-implementation-dossiers.md`; Phase 55Y is recorded in `docs/work-packages/phase-55y-operational-evidence.md`; and Phase 55Z is recorded in `docs/work-packages/phase-55z-comparative-operating-outcomes.md`. Sites version 23 still serves the prior exact Phase 55X tree until the combined Phase 55Y and Phase 55Z owner-only refresh completes. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
+The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; Phase 55X is recorded in `docs/work-packages/phase-55x-local-implementation-dossiers.md`; Phase 55Y is recorded in `docs/work-packages/phase-55y-operational-evidence.md`; Phase 55Z is recorded in `docs/work-packages/phase-55z-comparative-operating-outcomes.md`; and Phase 56A is recorded in `docs/work-packages/phase-56a-longitudinal-operating-series.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
@@ -224,14 +228,15 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Thirty-nine signals remain `In Review`; the four Phase 55Z holds lack a compatible outcome measure, completion denominator, national operating-volume denominator, or current public comparable rollup. One hundred and thirteen bounded signals are Published.
-- Seven briefings and all five local-system profiles remain prelaunch or research material. The five Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
+- Forty-three signals remain `In Review`; the four Phase 56A holds prohibit cross-series composites across incompatible measurement contracts. One hundred and twenty-nine bounded signals are Published.
+- Seven briefings and all five local-system profiles remain prelaunch or research material. The six Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
 - Six Phase 55N sources have official-link records because their official hosts blocked or complicated automated export; the collection preserves direct official URLs rather than third-party substitutes.
 - Phase 55X uses 24 disclosure-rich official-link records. The Rhyolite Ridge air file remains `In Review` because its displayed draft and validity markers are unresolved; NASA SIMO remains `In Review` because it is a planned acquisition.
 - Phase 55Y uses 24 disclosure-rich official-link records. It adds operating comparators and effective road passenger-service authority without claiming AI certification, semiconductor workforce sufficiency, Phoenix TSMC reuse operation, comparative AV safety, or service scale.
 - Phase 55Z uses 32 disclosure-rich official-link records. It publishes independently useful outcomes while prohibiting rankings unless unit, denominator, period, geography, method, and attribution align.
+- Phase 56A uses 48 disclosure-rich official-link records. Four document observations retain explicit route, method, or combined-period review flags; two-point movement is not called a durable trend and material series breaks stop the line.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - The Project Baccara record now includes an official 4-1 County action and active final air permit; the fully executed MCP, condition compliance, service, construction, testing, occupancy, and operation remain unverified.
 - Toronto item `2026.SC33.9` is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted amendment, confirmed building permit, start, completion, or occupancy is yet available. A bounded recheck is scheduled for August 1.

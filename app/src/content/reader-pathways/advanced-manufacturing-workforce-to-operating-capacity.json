@@ -3,8 +3,8 @@
   "title": "Advanced Manufacturing: From Research Roadmap To Operating Workforce",
   "slug": "advanced-manufacturing-workforce-to-operating-capacity",
   "record_status": "Published",
-  "summary": "Follow workforce programs and manufacturing interventions from engagement into completion, placement, retention, quality, throughput, productivity, savings, and customer delivery.",
-  "current_state_summary": "The pathway now contains a large MEP client-outcome survey, institute activity and training records, one 47-graduate program, and a Mesa facility-level quality and savings result.",
+  "summary": "Follow manufacturing programs and establishments through recurring surveys, projects, workforce activity, production adoption, quality, throughput, productivity, and customer delivery.",
+  "current_state_summary": "MEP client surveys, Manufacturing USA reports, NIIMBL reports, and Census establishment statistics now create four repeat measurement rails without equating program activity and sector outcomes.",
   "current_state": [
     "The research, packaging, metrology, fab, apprenticeship, and regional-coordination rails remain intact.",
     "ASML's Phoenix technical academy is fully operational after training began in 2024.",
@@ -13,7 +13,9 @@
     "A planned Maricopa semiconductor accelerator remains a 2027 hold, and the public record still lacks semiconductor-specific completion, retention, placement, vacancy, supplier, and productivity data.",
     "MEP's FY 2024 survey supplies client-attributed sales, savings, investment, and job outcomes with a disclosed response base.",
     "A NIIMBL program reaches completion for 47 trainees, and an Arizona MEP record reaches a defined facility intervention and attributed savings.",
-    "Manufacturing USA engagement totals remain held because participation, completion, placement, and productivity lack common denominators."
+    "Manufacturing USA engagement totals remain held because participation, completion, placement, and productivity lack common denominators.",
+    "MEP's FY 2021 and FY 2022 client surveys retain sales, savings, investment, and job measures with program attribution.",
+    "Manufacturing USA and NIIMBL preserve recurring institute activity, while Census ASM provides an official establishment-level statistical rail."
   ],
   "primary_topics": [
     "Advanced Manufacturing",
@@ -39,7 +41,11 @@
     "signal-drive48-graduates-operating-workforce-comparator",
     "signal-mep-fy2024-client-reported-manufacturing-outcomes",
     "signal-niimbl-biomanufacturing-program-delivers-47-graduates",
-    "signal-arizona-mep-amphenol-reports-932k-savings"
+    "signal-arizona-mep-amphenol-reports-932k-savings",
+    "signal-56a-mep-national-impact",
+    "signal-56a-manufacturing-usa",
+    "signal-56a-niimbl-annual",
+    "signal-56a-census-asm"
   ],
   "source_ids": [
     "source-nist-smart-manufacturing-ai-roadmap-2026",
@@ -62,7 +68,19 @@
     "source-55z-mxd-future-factory-project-portfolio-2025",
     "source-55z-iacmi-composites-operating-results-2025",
     "source-55z-niimbl-door-to-floor-training-outcomes",
-    "source-55z-nist-amphenol-arizona-mep-results-2026"
+    "source-55z-nist-amphenol-arizona-mep-results-2026",
+    "source-56a-nist-mep-impact-fy2021",
+    "source-56a-nist-mep-impact-fy2022",
+    "source-56a-nist-mep-impact-fy2023",
+    "source-56a-manufacturing-usa-highlights-fy2020",
+    "source-56a-manufacturing-usa-highlights-fy2021",
+    "source-56a-manufacturing-usa-annual-fy2022",
+    "source-56a-niimbl-annual-2021-2022",
+    "source-56a-niimbl-annual-2022-2023",
+    "source-56a-niimbl-annual-2023-2024",
+    "source-56a-census-asm-2021",
+    "source-56a-census-asm-discontinuation",
+    "source-56a-census-aies-transition-2024"
   ],
   "organization_ids": [
     "org-nist",
@@ -76,7 +94,8 @@
     "briefing-stack-watch-003-research-to-implementation",
     "briefing-stack-watch-004-implementation-outcomes",
     "briefing-research-watch-003-operational-evidence",
-    "briefing-research-watch-004-comparative-operating-outcomes"
+    "briefing-research-watch-004-comparative-operating-outcomes",
+    "briefing-research-watch-005-longitudinal-operating-series"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -87,7 +106,8 @@
     "research-collection-federal-implementation-evidence-2025-2026",
     "research-collection-industrial-capacity-local-conversion-2025-2026",
     "research-collection-operational-evidence-receiving-systems-2024-2026",
-    "research-collection-comparative-operating-outcomes-2023-2026"
+    "research-collection-comparative-operating-outcomes-2023-2026",
+    "research-collection-longitudinal-operating-series-2020-2025"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -119,6 +139,11 @@
       "stage": "Completion and operating outcome",
       "current_state": "Named records now include training completion, a defined facility quality intervention, and client-attributed economic outcomes.",
       "boundary": "Client attribution is not audited causality; engagement is not completion; completion is not placement; one facility is not regional capacity."
+    },
+    {
+      "stage": "Longitudinal operating series",
+      "current_state": "Twelve new observations form four recurring manufacturing series spanning client, institute, and establishment evidence.",
+      "boundary": "Client attribution, institute activity, workforce engagement, facility output, and sector estimates retain separate units and denominators."
     }
   ],
   "evidence_limits": [
@@ -126,13 +151,17 @@
     "Aggregate graduates and qualitative employment links do not establish placement or retention rates.",
     "An opened cleanroom and a planned accelerator do not prove qualified industrial output or regional workforce sufficiency.",
     "Jobs, dollars, participants, graduates, projects, products, quality, and productivity remain separate outcome units.",
-    "Institute and MEP records require explicit self-reporting, survey, cohort, and follow-up labels."
+    "Institute and MEP records require explicit self-reporting, survey, cohort, and follow-up labels.",
+    "Program respondent mix, follow-up periods, institute coverage, and activity definitions can change between reports.",
+    "Nominal dollars, participant counts, project counts, jobs, quality, and productivity cannot be combined without a shared method."
   ],
   "next_records": [
     "ASML enrollment, completion, credential, placement, retention, and customer-training records.",
     "Drive48 cohort denominators, placement and retention rates, wage outcomes, and production-role evidence.",
     "Semiconductor-specific completion, vacancy, attrition, supplier-hiring, construction-trade, and training-to-productivity records.",
     "Program-level completion, credential, placement, retention, wage, vacancy, and employer-performance records with denominators.",
-    "Facility quality, scrap, throughput, downtime, delivery, customer, and productivity measures with repeat periods and independent validation."
+    "Facility quality, scrap, throughput, downtime, delivery, customer, and productivity measures with repeat periods and independent validation.",
+    "Repeated facility quality, scrap, throughput, downtime, delivery, labor, customer, and productivity measures.",
+    "Cohort completion, credential, placement, retention, wage, vacancy, and employer-result data with stable denominators."
   ]
 }

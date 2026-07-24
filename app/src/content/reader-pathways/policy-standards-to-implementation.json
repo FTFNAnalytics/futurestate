@@ -3,15 +3,16 @@
   "title": "Policy And Standards: From Rule To Institutional Implementation",
   "slug": "policy-standards-to-implementation",
   "record_status": "Published",
-  "summary": "Follow policy memoranda, purchasing channels, standards, working drafts, testbed artifacts, and software releases while keeping formal rules separate from adoption, validation, migration, and measured use.",
-  "current_state_summary": "The Published record now shows a federal AI policy and acquisition stack, an active AI purchasing channel, final post-quantum standards, a GSA PQC procurement bridge, preliminary PIV changes, and versioned O-RAN testbed artifacts.",
+  "summary": "Follow policy and standards into repeat agency reporting, measured implementation, inspector-general assessment, operating outcomes, and revision-controlled evidence.",
+  "current_state_summary": "Phase 56A adds recurring FISMA and federal AI reporting cycles and makes method changes, denominator changes, and series breaks visible implementation evidence.",
   "current_state": [
     "OMB memoranda define federal AI use, acquisition, and covered-LLM control points without proving agency implementation.",
     "GSA's OneGov channel makes selected AI offerings purchasable under stated terms without establishing adoption or outcomes.",
     "NIST's post-quantum standards move the problem into inventory, procurement, product, credential, and migration work.",
     "GSA's PQC buyer's guide maps inventory, planning, implementation, maintenance, training, and use cases to acquisition support and contract vehicles without proving an agency order.",
     "PIV working drafts expose proposed credential changes but remain preliminary rather than final requirements.",
-    "O-RAN testbed artifacts and version 1.7 software provide inspectable experimental implementation, not a final 6G standard or commercial deployment."
+    "O-RAN testbed artifacts and version 1.7 software provide inspectable experimental implementation, not a final 6G standard or commercial deployment.",
+    "Annual federal reports can be followed as series only when the covered agency set, metric definition, method, and revision history remain explicit."
   ],
   "primary_topics": [
     "Policy and Standards",
@@ -29,7 +30,11 @@
     "signal-nist-piv-pqc-working-drafts",
     "signal-nist-oran-testbed-standards-artifacts",
     "signal-nist-oran-testbed-automation-v17",
-    "signal-gsa-pqc-procurement-paths"
+    "signal-gsa-pqc-procurement-paths",
+    "signal-56a-fisma-reporting",
+    "signal-56a-gao-cyber-backlog",
+    "signal-56a-fisma-effectiveness",
+    "signal-56a-nasa-ai-inventory"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -39,7 +44,19 @@
     "source-nist-piv-pqc-working-drafts-2026",
     "source-nist-next-generation-wireless-standards-testbed",
     "source-nist-oran-testbed-automation-v17-2026",
-    "source-gsa-pqc-buyers-guide-2025"
+    "source-gsa-pqc-buyers-guide-2025",
+    "source-56a-omb-fisma-fy2021",
+    "source-56a-omb-fisma-fy2022",
+    "source-56a-omb-fisma-fy2023",
+    "source-56a-gao-solarwinds-exchange-response-2022",
+    "source-56a-gao-federal-systems-high-risk-2023",
+    "source-56a-gao-cyber-high-risk-2024",
+    "source-56a-gao-fisma-effectiveness-fy2020",
+    "source-56a-gao-fisma-implementation-2022",
+    "source-56a-gao-fisma-effectiveness-fy2022",
+    "source-56a-nasa-ai-use-cases-2022",
+    "source-56a-nasa-ai-use-cases-2023",
+    "source-56a-nasa-ai-use-cases-2024"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -50,18 +67,23 @@
     "technology-post-quantum-cryptography"
   ],
   "briefing_ids": [
-    "briefing-stack-watch-004-implementation-outcomes"
+    "briefing-stack-watch-004-implementation-outcomes",
+    "briefing-research-watch-005-longitudinal-operating-series"
   ],
   "dependency_map_ids": [
     "dependency-map-post-quantum-standards-are-not-migration",
-    "dependency-map-federal-research-industrial-capacity"
+    "dependency-map-federal-research-industrial-capacity",
+    "dependency-map-comparative-outcomes-require-common-denominators"
   ],
   "research_collection_ids": [
     "research-collection-darpa-usg-2025-2026",
-    "research-collection-federal-implementation-evidence-2025-2026"
+    "research-collection-federal-implementation-evidence-2025-2026",
+    "research-collection-longitudinal-operating-series-2020-2025"
   ],
   "evidence_gap_ids": [
-    "gap-009"
+    "gap-009",
+    "gap-016",
+    "gap-014"
   ],
   "dependency_stack": [
     {
@@ -93,18 +115,25 @@
       "stage": "Test And Software Artifact",
       "current_state": "NIST records accepted O-RAN artifacts and a documented version 1.7 experimental automation release.",
       "boundary": "Laboratory artifacts do not prove broad interoperability, certification, security assurance, a final standard, or commercial service."
+    },
+    {
+      "stage": "Longitudinal operating series",
+      "current_state": "Recurring federal reporting now supplies multiple observations beyond one policy or one audit.",
+      "boundary": "Reporting continuity is not equivalent to implementation effectiveness or operating benefit."
     }
   ],
   "evidence_limits": [
     "The pathway does not establish which agencies have implemented the OMB AI controls or purchased, integrated, and evaluated OneGov offerings.",
     "The post-quantum record now has a procurement path but still lacks institution-level inventories, orders, product validation, vendor readiness, budget, staffing, pilot, deployment, and retirement evidence.",
     "Preliminary PIV working drafts can change and should not be described as final requirements.",
-    "NIST O-RAN laboratory evidence does not stand in for spectrum decisions, industry consensus, certification, secure deployment, or commercial adoption."
+    "NIST O-RAN laboratory evidence does not stand in for spectrum decisions, industry consensus, certification, secure deployment, or commercial adoption.",
+    "Administrative reporting can change scope, metric design, maturity scale, automation, and publication location."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
     "NIST PIV public drafts, final revisions, implementation guidance, product updates, validation records, agency pilots, and credential-migration plans.",
     "Institution-level cryptographic inventories, solicitations, task orders, vendor roadmaps, budgets, pilots, validated modules, deployments, maintenance results, and legacy retirement records.",
-    "Later O-RAN software releases, external reproduction, multi-vendor tests, security evaluations, standards dispositions, certification programs, and commercial deployments."
+    "Later O-RAN software releases, external reproduction, multi-vendor tests, security evaluations, standards dispositions, certification programs, and commercial deployments.",
+    "Stable implementation measures tied to system authorization, monitored operation, incidents, corrective actions, and verified outcomes."
   ]
 }
