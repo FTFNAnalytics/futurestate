@@ -360,15 +360,15 @@ Recommended active schedule:
 | Completed | Phase 54 | local release gate, touch-target repair, v0.2 manifest, launch note, preview explicitly deferred |
 | Checkpoint | Phase 55M | 38 Published signals, 25 In Review signals, and an owner-only Sites version 12 |
 | Completed | Phase 55O | two Published briefings, three held briefings, three repaired Published dependency maps, and owner-only Sites version 13 |
+| Completed | Phase 55P | six reader pathways across seven existing Atlas surfaces and owner-only Sites version 14 |
 | Date-gated insert | Phase 55H | complete the Toronto post-Council authority recheck after July 31 |
-| Current | Phase 55P | build curated reader pathways and priority topic dossiers from Published evidence |
-| Then | Phase 55Q | close a bounded batch of the highest-value evidence gaps |
+| Current | Phase 55Q | close a bounded batch of the highest-value evidence gaps |
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete. Phases 55A-55J strengthened the authority package and publication set; Phase 55K added the first primary-document research collection; Phase 55L converted eight directions into implementation trails; Phase 55N tested those trails against later outcomes, discontinuities, oversight limits, and local conversion gates; Phase 55M applied the record-level publication gate; and Phase 55O completed the first synthesis publication pass. The next content runway turns those products into reader pathways and bounded gap-closure work. Phase 55H and Phase 55R are dated inserts and do not block the work that can be completed now. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete. Phases 55A-55J strengthened the authority package and publication set; Phase 55K added the first primary-document research collection; Phase 55L converted eight directions into implementation trails; Phase 55N tested those trails against later outcomes, discontinuities, oversight limits, and local conversion gates; Phase 55M applied the record-level publication gate; Phase 55O completed the first synthesis publication pass; and Phase 55P turned the Published set into six reader pathways across seven existing Atlas surfaces. The current content runway is the bounded Phase 55Q evidence-gap closure batch. Phase 55H and Phase 55R are dated inserts and do not block work that can be completed now. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -405,6 +405,8 @@ Current stop point:
 - Phase 55M applied the publication gate separately to fourteen Phase 55L and Phase 55N signals, promoted thirteen bounded records, held the scheduled DARPA Lift trial, and advanced the release contract to 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources,
 - Phase 55O reviewed all five briefings and three dependency maps, published two briefings, held three with explicit reasons, repaired all three maps around Published signals, added the seventeenth update, and passed the complete local release gate,
 - exact Phase 55O source commit `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad` is deployed as owner-only Sites version 13 without changing access,
+- Phase 55P added six structured reader pathways across five priority topic pages and both local-system pages, linked 30 distinct Published signals to the Published synthesis and research layers, preserved eight explicit gaps, and added the eighteenth update without adding a route family,
+- exact Phase 55P source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` is deployed as owner-only Sites version 14 without changing access, custom-domain state, or DNS,
 - the branch remains unpushed to public GitHub; exact Phase 55M source commit `c1038783998234025ec2af65dae495272a263cc1` is deployed as owner-only Sites version 12 without changing access,
 - no custom domain is attached and Hostinger DNS remains unchanged,
 - the remaining Phase 55H action is the post-meeting recheck of Toronto application `24 254930` for Council disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit evidence,
@@ -481,7 +483,7 @@ Exit criteria:
 - every changed claim remains bounded to the exact completed stage,
 - no later-stage outcome is inferred from a Council disposition.
 
-### Phase 55P: Reader Pathways And Priority Topic Dossiers - After Phase 55O
+### Phase 55P: Reader Pathways And Priority Topic Dossiers - Complete
 
 Goal: make the current Published corpus easier to understand by connecting records into coherent, evidence-bounded reader journeys.
 
@@ -510,7 +512,16 @@ Exit criteria:
 - desktop and mobile reader journeys pass the existing QA checks,
 - owner-only access remains unchanged.
 
-### Phase 55Q: High-Value Evidence-Gap Closure Batch - After Phase 55P
+Result:
+
+- six pathways cover chips and compute, energy and grid capacity, critical minerals, policy and standards, advanced manufacturing, and paired local conversion,
+- five priority topic pages and both local-system pages now carry the reader-pathway contract,
+- every pathway has a current-state summary, ordered dependency stack, evidence limits, Published record links, explicit gaps, and named next records,
+- 30 distinct Published signals, both Published briefings, all three Published dependency maps, all three research collections, and eight evidence gaps are connected,
+- no standalone route family or new outcome claim was introduced,
+- exact source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` is deployed as owner-only Sites version 14.
+
+### Phase 55Q: High-Value Evidence-Gap Closure Batch - Current
 
 Goal: advance a small number of high-value gaps that limit the local dossiers and strongest reader pathways.
 
@@ -654,7 +665,7 @@ v0.2 is successful when:
 
 - the 38-signal Published set remains bounded, current, and useful rather than expanding for volume,
 - all five briefings and three dependency maps have explicit publish, repair, split, or hold decisions,
-- five to six priority reader pathways connect Published evidence to sources, research, dependencies, and evidence limits,
+- six priority reader pathways connect Published evidence to sources, research, dependencies, and evidence limits,
 - the highest-value local and implementation gaps have named next records and dated stop rules,
 - both local systems retain multi-constraint evidence trails without being overstated as final intelligence products,
 - source updates have a repeatable private workflow,
@@ -664,15 +675,15 @@ v0.2 is successful when:
 - release QA remains repeatable,
 - no automated process publishes claims without review.
 
-The prior v0.2 build and publication thresholds pass in the current candidate. Phase 55M expanded Published membership to 38 bounded records, and Phase 55O published two briefings plus three dependency maps without changing signal membership, package freeze, or the public-launch boundary. The pathway and evidence-gap criteria above now define the remaining content runway.
+The prior v0.2 build and publication thresholds pass in the current candidate. Phase 55M expanded Published membership to 38 bounded records, Phase 55O published two briefings plus three dependency maps, and Phase 55P added six reader pathways without changing signal membership, route count, package freeze, or the public-launch boundary. The bounded evidence-gap criteria above now define the remaining executable content runway.
 
 ## Immediate Next Step
 
-Begin Phase 55P. Build five to six curated reader pathways across chips and compute, energy and grid capacity, critical minerals and industrial capacity, policy and standards, advanced manufacturing, and local conversion. Use the two Published briefings and three Published dependency maps as the synthesis layer, and anchor every pathway primarily to Published signals.
+Begin Phase 55Q. Select four to six evidence gaps that most constrain the completed reader pathways, led by Arizona power, water, and workforce; Ontario conversion and permit-to-start evidence; and institution-level post-quantum implementation. Name the authoritative record before drafting, require a material stage change, and record a dated hold when the evidence is unavailable or unchanged.
 
 Insert Phase 55H immediately after the July 29-31, 2026 Toronto Council meeting window. Recheck application `24 254930` against the same official trail. If no named official stage has advanced, record the dated negative result and return to the content runway rather than manufacturing a signal.
 
-Use the completed pathways to select the four to six highest-value evidence gaps for Phase 55Q. Do not open another general source-volume target.
+Use the completed pathways to prioritize the batch. Do not open another general source-volume target or create a new pathway merely to absorb an unresolved source.
 
 Insert Phase 55R after August 9, 2026. Recheck the official DARPA Lift Challenge record for measured results, winners, prize awards, and transition evidence. Do not promote the scheduled-trial record before that evidence exists.
 

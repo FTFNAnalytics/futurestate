@@ -13,9 +13,10 @@ Version 0.2 is the first complete authority-loop candidate. The current owner-on
 - 38 Published signals grounded in official, primary, or clearly labeled credible-analysis sources,
 - a 189-source evidence library with visible freshness and review metadata,
 - an Atlas connecting topics, sources, organizations, technologies, local systems, evidence gaps, and dependency maps,
+- six evidence-bounded reader pathways across five priority topics and both local-system dossiers,
 - two Published stage-aware briefings and three Published qualitative dependency maps,
 - a public method and publication policy,
-- a seventeen-entry update and correction log,
+- an eighteen-entry update and correction log,
 - versioned static exports for public source, topic, and Published-signal metadata.
 
 The Published set is deliberately mixed. It includes climate outlook, critical-minerals data and funding, AI-for-materials research, post-quantum standards and preliminary implementation artifacts, data-centre electricity pressure, federal crash-reporting rules, semiconductor-materials funding and governance changes, space-hardware integration, plant-breeding awards, storage-manufacturing funding, transmission finance, prototype agreements, laboratory software, one named electric-service project, local construction milestones, and municipal housing-intention and delivery baselines. Each record states what the source supports and what it does not.

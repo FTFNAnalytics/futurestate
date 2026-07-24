@@ -45,6 +45,8 @@ Phase 55M applies the complete publication gate independently to the fourteen im
 
 Phase 55O applies the synthesis publication gate to all five briefings and three dependency maps. Stack Watch 003 and Stack Watch 004 move to `Published`; the other three briefings retain explicit evidence-stage holds. All three maps are repaired around Published signals, named open gaps, and qualitative interpretation boundaries before publication. Signal membership remains 38 Published and 25 In Review; the package remains at 380 pages and grows to 17 updates. Sites version 13 serves exact source commit `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad` under the unchanged owner-only policy.
 
+Phase 55P turns that Published corpus into six reader pathways across the Chips and Compute, Energy, Critical Minerals, Policy and Standards, and Advanced Manufacturing topic pages plus both local-system dossiers. Each pathway includes a current-state summary, ordered dependency stack, evidence limits, curated Published evidence, explicit gaps, and named next records. The implementation adds no standalone route family and no new claim promotions. The package remains at 380 pages, 189 sources, 63 signals, 38 Published, and 25 In Review while growing to 18 updates. Sites version 14 serves exact source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` under the unchanged owner-only policy.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
@@ -58,7 +60,7 @@ The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 | In Review signals | 14 | 25 | +11 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 17 | +17 |
+| Public update entries | 0 | 18 | +18 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
@@ -70,6 +72,7 @@ Additional current records:
 - 3 Published dependency maps,
 - 5 briefings: 2 Published and 3 In Review,
 - 3 research collections with 47 document records,
+- 6 reader pathways across 7 existing Atlas surfaces,
 - 37 official local captures plus 10 official-link records across verified 26-file, 11-file, and 19-file ZIP archives.
 
 ## What Is Built
@@ -94,7 +97,8 @@ The editorial and authority layer includes:
 - 63 bounded signal records with explicit claim and evidence limits,
 - 38 Published signals backed by 66 sources checked on or after 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
-- a public seventeen-entry update and correction log,
+- six evidence-bounded reader pathways that connect Published records to dependency stacks and visible gaps,
+- a public eighteen-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
@@ -145,6 +149,8 @@ Phase 55M rechecked fourteen implementation records against current official sou
 
 Phase 55O reviewed all eight synthesis products. Two briefings passed with their linked In Review records visibly bounded; three briefings were held with explicit reopening triggers. The three maps were rebuilt to use only Published signal trails and were promoted. The local result remains 380 generated pages, 189 sources, 63 signals, 38 Published signals, and 25 In Review signals, with two Published briefings, three In Review briefings, three Published dependency maps, and 17 public updates. Candidate validation, content validation, source health, Astro diagnostics, production build, sitemap membership, synthesis indexing, exports, research archives, and release assertions all pass.
 
+Phase 55P added six structured reader pathways to five priority topic pages and both local-system pages. Thirty distinct Published signals now carry the curated pathways, supported by both Published briefings, all three Published dependency maps, all three research collections, and eight named evidence gaps. The result remains 380 generated pages, 189 sources, 63 signals, 38 Published signals, and 25 In Review signals, with 18 public updates. Candidate validation, content validation, source health, Astro diagnostics, production build, pathway-surface assertions, sitemap and canonical checks, exports, archives, and private-registry exclusion all pass.
+
 Verified results:
 
 - 380 generated site pages,
@@ -153,6 +159,7 @@ Verified results:
 - all non-published signal routes excluded from the sitemap,
 - both Published briefing routes included in the sitemap and all three held briefing routes excluded,
 - all three Published dependency-map routes included in the sitemap,
+- all six reader pathways rendered across seven existing Atlas surfaces with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records,
 - correct canonical, robots, and publication-state indexing boundaries,
 - ten core journeys checked at `1440x900` and `390x844`,
 - compact header brand and navigation targets repaired to a 44-pixel minimum,
@@ -163,7 +170,7 @@ Verified results:
 - three Published research collections with all 47 document routes in the sitemap,
 - verified 26-file, 11-file, and 19-file ZIP archives containing 37 local captures, ten official-link files, summaries, README files, and manifests.
 
-The current synthesis decision is in `docs/work-packages/phase-55o-briefing-dependency-map-publication.md`; the underlying evidence is documented in the Phase 55K through Phase 55N work packages and the Phase 55M signal gate. The owner-only deployment is current at Sites version 13 from exact source commit `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The current reader-pathway decision is in `docs/work-packages/phase-55p-reader-pathways-priority-dossiers.md`; the synthesis gate remains documented in `docs/work-packages/phase-55o-briefing-dependency-map-publication.md`, with underlying evidence in the Phase 55K through Phase 55N work packages and the Phase 55M signal gate. The owner-only deployment is current at Sites version 14 from exact source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 

@@ -2361,3 +2361,31 @@ Implemented:
 Boundary:
 
 Publishing a briefing does not promote a linked In Review signal. Publishing a map does not resolve its evidence gaps or establish local readiness, project completion, institutional migration, operating capability, adoption, or scale. Owner-only access remains unchanged. Public access, package freeze, custom-domain attachment, Hostinger DNS, public GitHub synchronization, Supabase activation, and public launch remain separate decisions.
+
+## 2026-07-24: Phase 55P Uses Existing Atlas Surfaces For Six Reader Pathways
+
+Decision:
+
+FTFN will add one small structured reader-pathway collection and one reusable Atlas component, then render six pathways on five existing priority topic pages and both existing local-system pages. It will not add a standalone pathway route family. A Published pathway may reference only Published signals, briefings, dependency maps, and research collections.
+
+Rationale:
+
+The existing topic and local-system pages could list individual records but could not express an ordered, cross-record journey with a supported current state, dependency stages, evidence limits, and named next records. The small collection provides that editorial contract while preserving the existing navigation, route count, static architecture, and release boundaries. Using Published records as the pathway spine prevents narrative flow from silently promoting unresolved claims.
+
+Implemented:
+
+- added six pathways across chips and compute, energy and grid capacity, critical minerals, policy and standards, advanced manufacturing, and paired local conversion,
+- deepened the five priority topic pages and both local-system pages,
+- added a pathway index to the existing Atlas landing page,
+- connected 30 distinct Published signals, both Published briefings, all three Published dependency maps, all three research collections, and eight named evidence gaps,
+- made current state, dependency stack, evidence limits, Published evidence, receiving systems, open gaps, and named next records visible,
+- added reference validation and Published-only pathway gates,
+- added release assertions for exactly six pathways across seven existing Atlas surfaces,
+- added the eighteenth public update entry,
+- preserved the 380-page, 189-source, 63-signal, 38 Published / 25 In Review release contract,
+- committed exact source as `8b43caeb7db1debefab3292ed1913ce8bd2b557e`,
+- deployed that source as owner-only Sites version 14 with one allowed owner, no groups, no public access, and no DNS change.
+
+Boundary:
+
+A pathway is navigation and bounded synthesis, not a new claim status. Phase 55P does not promote a linked record, resolve an evidence gap, establish local or institutional readiness, or authorize another source-volume target. Phase 55Q must use named authoritative records and material stage changes. Public access, package freeze, custom-domain attachment, Hostinger DNS, public GitHub synchronization, Supabase activation, and public launch remain separate decisions.

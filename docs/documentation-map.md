@@ -1291,7 +1291,7 @@ Do not use it for:
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 380-page build, 38 Published signals, 189 sources, 17 updates, two Published briefings, three Published dependency maps, 47 research documents, three required archives, three exports, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 380-page build, 38 Published signals, 189 sources, 18 updates, six reader pathways across seven existing Atlas surfaces, two Published briefings, three Published dependency maps, 47 research documents, three required archives, three exports, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 
@@ -1476,3 +1476,29 @@ Update when:
 Boundary:
 
 Publishing a synthesis product does not promote its linked In Review records. Dependency maps remain qualitative, preserve open evidence gaps, and do not establish readiness, completion, adoption, operation, or scale. Public access, package freeze, custom-domain attachment, DNS changes, public GitHub synchronization, and public launch remain separate decisions.
+
+### Phase 55P Reader Pathways And Priority Topic Dossiers
+
+Purpose:
+
+- Record the six evidence-bounded pathways across chips and compute, energy and grid capacity, critical minerals, policy and standards, advanced manufacturing, and paired local conversion.
+- Document the small `reader-pathways` content collection and reusable Atlas component used to deepen existing pages without adding a route family.
+- Preserve the current-state, dependency-stack, evidence-limit, Published-evidence, open-gap, and named-next-record contract.
+- Require Published pathways to reference only Published signals, briefings, dependency maps, and research collections.
+- Record the exact owner-only source commit and Sites version.
+
+Primary file:
+
+- `docs/work-packages/phase-55p-reader-pathways-priority-dossiers.md`
+
+Update when:
+
+- a pathway adds or removes a signal, source, research collection, briefing, dependency map, organization, technology, local system, or evidence gap,
+- a pathway's current-state summary, dependency stack, evidence limit, or next-record list changes materially,
+- a new Atlas surface receives or loses a pathway,
+- the pathway validation or release-assertion contract changes,
+- the exact Phase 55P deployment commit or Sites version changes.
+
+Boundary:
+
+A reader pathway is a curated navigation and synthesis layer. It does not promote linked records, resolve evidence gaps, or establish readiness, completion, adoption, operation, or scale. Public access, package freeze, custom-domain attachment, DNS changes, public GitHub synchronization, and public launch remain separate decisions.
