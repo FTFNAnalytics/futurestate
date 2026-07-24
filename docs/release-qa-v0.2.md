@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: Phase 55X local release gates passed; owner-only Sites deployment receipt pending.
+Status: Phase 55X local release and owner-only Sites version 23 deployment gates passed.
 
 ## Artifact Under Review
 
@@ -290,4 +290,4 @@ Phase 55X changes content, research, and publication membership without changing
 - the 26-entry update log and five versioned public-data exports;
 - canonicals, robots, sitemap, required outputs, and private-registry exclusion.
 
-A repeat visual-browser pass was not requested because the phase uses existing content templates and discovery surfaces. Structural assertions, Astro diagnostics, the full static build, archive validation, and route/export checks pass. The owner-only Sites deployment must preserve custom access with one allowed owner and no groups; no public-access, public-GitHub, package, Hostinger DNS, or custom-domain change is authorized.
+A repeat visual-browser pass was not requested because the phase uses existing content templates and discovery surfaces. Structural assertions, Astro diagnostics, the full static build, archive validation, and route/export checks pass. Local app commit `ce590cb8d847501b0a21fe4eb760037d3e531ea8` matches exact private source commit `6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac`, deployed successfully as owner-only Sites version 23 in deployment `appgdep_6a63de12b2c881919c4b7dd924f3711c` at `https://ftfn-analytics.jbumstead.chatgpt.site`. The site remains custom-access with one allowed owner and no groups; no public-access, public-GitHub, package, Hostinger DNS, or custom-domain change is authorized.

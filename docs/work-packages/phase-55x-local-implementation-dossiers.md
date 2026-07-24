@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: Complete and locally release-verified; owner-only deployment receipt pending.
+Status: Complete, release-verified, and deployed as owner-only Sites version 23.
 
 ## Objective
 
@@ -174,4 +174,13 @@ Target 24 primary records, six per journey, and 12 bounded signals, three per jo
 
 ## Deployment Receipt
 
-Pending the owner-only Sites deployment. Record the local app commit, exact private source commit, Sites version, deployment ID, URL, and access policy after deployment succeeds.
+- Local app commit: `ce590cb8d847501b0a21fe4eb760037d3e531ea8`
+- Exact private Sites source commit: `6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac`
+- Sites version: 23
+- Version ID: `appgprj_6a614e1092d08191bf65779fc35df959~appgver_d7a5f48a00f48191ad063f8a6fde6462`
+- Deployment ID: `appgdep_6a63de12b2c881919c4b7dd924f3711c`
+- URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- Result: succeeded
+- Access: custom owner-only policy with one allowed owner and no groups
+
+No public-access, Hostinger DNS, custom-domain, package-version, or public-GitHub change occurred.

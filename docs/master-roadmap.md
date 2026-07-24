@@ -1230,7 +1230,7 @@ Next candidate work:
 - Continue the NSTC and NAPMP recipient-level reconciliation, GAO prototype-OTA oversight trail, O-RAN external testing and adoption trail, PIV revision and pilot trail, Phoenix Fab 3 conversion trail, and Project Baccara downstream stages only where they serve a selected pathway or evidence gap.
 - Keep future In Review dependency-map details `noindex, follow` and outside the sitemap; local-system profiles remain qualitative prelaunch dossiers without a Published state.
 - Preserve separate award, obligation, physical milestone, permit, test, acceptance, operation, and scale stages for every record.
-- Sites version 22 continues to serve the Phase 55W checkpoint until the Phase 55X owner-only deployment succeeds; preserve one allowed owner and no groups.
+- Phase 55X local app commit `ce590cb8d847501b0a21fe4eb760037d3e531ea8` is deployed from exact private source commit `6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac` as owner-only Sites version 23 with one allowed owner and no groups.
 - Keep Supabase activation, public access, package freeze, DNS, custom-domain attachment, and public GitHub synchronization as separate tracks or approval gates.
 
 Decision:
