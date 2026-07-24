@@ -12,12 +12,12 @@
     "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
     "access": "owner-only-custom-policy",
     "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
-    "current_source_commit": "17253c9355f4f8ea809e3a5d49dcf328bc8c8254",
-    "current_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_c2310a67069081918f1e10b32f183fc0",
-    "current_version_number": 20,
-    "current_deployment_id": "appgdep_6a63b80444848191b3281624d57c6038",
+    "current_source_commit": "b2db5978f0c4a37c35998f849fcd75158c115cec",
+    "current_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_afe5885ed4f88191b54c153ceb0b5494",
+    "current_version_number": 21,
+    "current_deployment_id": "appgdep_6a63c216aa9481918d9b142d1bb1ef7c",
     "custom_domain_attached": false,
-    "post_deploy_qa": "passed-deployment-status-and-owner-only-access-policy"
+    "post_deploy_qa": "passed-version-21-deployment-status-and-owner-only-sign-in-gate"
   },
   "canonical_site": "https://ftfn.io",
   "app_root": "app",
@@ -274,8 +274,8 @@
       "390x844"
     ],
     "browser_routes_checked": 10,
-    "hosted_routes_checked": 5,
-    "preview_qa": "passed-owner-only-version-20-deployment-and-access"
+    "hosted_routes_checked": 2,
+    "preview_qa": "passed-owner-only-version-21-deployment-status-and-sign-in-gate"
   },
   "required_output_files": [
     "dist/index.html",
@@ -559,5 +559,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the validated Phase 55V cross-corridor evidence shelf on top of the owner-only Phase 55U deployment. Phase 55V adds one 18-document research collection, four local official-PDF captures, fourteen official-link records, a verified 21-file archive, one In Review briefing, and deeper integration across three local systems, pathways, and gaps. A local capture corrects the Rhyolite Ridge DOE record from potential assistance to a decision to issue a loan for defined facilities while preserving the separate financial-close boundary. Owner-only deployment refresh is pending; no public access, DNS, public GitHub, custom-domain, or package change is authorized."
+  "notes": "This manifest records the validated and deployed Phase 55V cross-corridor evidence shelf. Phase 55V adds one 18-document research collection, four local official-PDF captures, fourteen official-link records, a verified 21-file archive, one In Review briefing, and deeper integration across three local systems, pathways, and gaps. A local capture corrects the Rhyolite Ridge DOE record from potential assistance to a decision to issue a loan for defined facilities while preserving the separate financial-close boundary. App content commit 3bdb52a9348e5cf963ec6569838f880611d2491c matches the tree deployed from private Sites source commit b2db5978f0c4a37c35998f849fcd75158c115cec as owner-only Sites version 21. Deployment status and the protected sign-in gate passed; no public access, DNS, public GitHub, custom-domain, or package change is authorized."
 }

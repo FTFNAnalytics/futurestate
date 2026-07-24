@@ -367,7 +367,7 @@ Recommended active schedule:
 | Authority backlog | Phase 55S | batches one and two complete; the remaining allocation now replenishes named corpus gaps |
 | Completed | Phase 55T | all 17 topics now have at least four signals and two Published records; owner-only Sites version 18 deployed |
 | Completed | Phase 55U | three evidence-dense local systems, 26 sources, 15 signals, three pathways and gaps; owner-only Sites version 20 deployed |
-| Completed | Phase 55V | 18-document cross-corridor shelf, 21-file archive, Research Watch 001, and three deepened local pathways |
+| Completed | Phase 55V | 18-document cross-corridor shelf, 21-file archive, Research Watch 001, three deepened local pathways, and owner-only Sites version 21 |
 | Current | Phase 55W | apply publication gates and make the larger corpus navigable |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
@@ -660,6 +660,7 @@ Phase 55V result:
 - one `In Review` Research Watch briefing added; all three local-system dossiers and reader pathways deepened; gaps `011` through `013` narrowed around named delivery proof;
 - the Rhyolite Ridge DOE financing record corrected to reflect a decision to issue a loan for defined facilities without claiming commitment terms, financial close, disbursement, construction, or operation;
 - 590 pages, 298 sources, 112 signals, 73 Published signals, 39 In Review signals, 24 updates, nine briefings, six maps, six research collections, 83 research documents, and eleven pathways across 18 Atlas surfaces verified locally.
+- app content commit `3bdb52a9348e5cf963ec6569838f880611d2491c` matched to private Sites source commit `b2db5978f0c4a37c35998f849fcd75158c115cec` and deployed as owner-only Sites version 21; production status and the protected sign-in gate passed with one allowed owner and no groups.
 
 The final Phase 55S 30-record allocation remains an authority backlog rather than an active gate. Use it only where it strengthens a named Phase 55V collection or later system gap.
 
@@ -779,4 +780,4 @@ Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Refresh the Sites preview with the exact validated Phase 55V source and keep it owner-only. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 21 now serves the exact validated Phase 55V source under the unchanged owner-only policy. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

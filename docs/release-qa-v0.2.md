@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: Phase 55V local release gate passed; owner-only deployment refresh pending.
+Status: Phase 55V local release and owner-only deployment gates passed.
 
 ## Artifact Under Review
 
@@ -247,4 +247,4 @@ The 590-page artifact passes:
 - explicit release assertions for the 18-document, four-capture, fourteen-link Phase 55V contract;
 - the 24-entry update log, three public exports, required routes and downloads, canonicals, robots, and private-registry exclusion.
 
-A repeat visual/browser pass was not requested because Phase 55V changes content only. Owner-only deployment refresh is pending; the public GitHub boundary, package version, Hostinger DNS, custom-domain state, and public access remain unchanged.
+A repeat visual browser pass was not required because Phase 55V changes content only. App content commit `3bdb52a9348e5cf963ec6569838f880611d2491c` matches exact private Sites source commit `b2db5978f0c4a37c35998f849fcd75158c115cec`, which is deployed successfully as owner-only Sites version 21 at `https://ftfn-analytics.jbumstead.chatgpt.site`. The site reports one allowed owner and no groups; a direct request for the new collection reached the protected `Continue with ChatGPT` gate. The locally verified 590-page build remains the route-level content check behind that owner-only gate. The public GitHub boundary, package version, Hostinger DNS, custom-domain state, and public access remain unchanged.
