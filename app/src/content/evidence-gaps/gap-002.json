@@ -6,11 +6,20 @@
   "priority": "High",
   "local_system": "U.S. Southwest Chip Corridor",
   "primary_topic": "Water",
-  "framework_layers": ["Planetary Conditions", "Resource Foundations", "Human Systems"],
-  "constraint_tags": ["Water", "Climate", "Infrastructure", "Public Trust"],
+  "framework_layers": [
+    "Planetary Conditions",
+    "Resource Foundations",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Water",
+    "Climate",
+    "Infrastructure",
+    "Public Trust"
+  ],
   "question": "Which records show whether industrial growth has defensible water capacity?",
   "why_it_matters": "Industrial strategy in a water-constrained region depends on water rights, provider capacity, reuse, treatment, discharge, drought exposure, and public legitimacy.",
-  "current_support": "FTFN has ADWR water governance, assured-supply criteria, the effective Phoenix AMA Fifth Management Plan, groundwater-site and national monitoring rails, Phoenix Water Services' April 2026 provider update, a May 2026 Phoenix-TSMC wastewater agreement, a City record showing TSMC Fab 3 at topping out, and a Project Baccara trail spanning planned chilled cooling and brewery-wastewater reuse, official county approval, and permit conditions.",
+  "current_support": "FTFN has Arizona and Phoenix governance, provider, agreement, and capital records; Chandler operating-system evidence for roughly 11 billion gallons treated annually; completed Ocotillo treatment infrastructure rated at 18 MGD; Intel-reported 2023 conservation and restoration metrics; and a proposed brine-facility improvement budget.",
   "missing_evidence": [
     "completed and accepted wastewater conveyance improvements",
     "total facility water withdrawals and consumption",
@@ -33,8 +42,13 @@
     "facility water balance, discharge, or measured reuse disclosure",
     "Project Baccara service agreement, provider will-serve letter, water-system approvals, measured water balance, discharge, construction, and operating records"
   ],
-  "next_action": "Track completion and acceptance of the TSMC conveyance improvements, operation of the first industrial reclaimed water plant by June 30, 2028, and Project Baccara's service, water-system, construction, and operating records; require measured facility water and reuse evidence before making sufficiency claims.",
-  "future_data_model_need": ["Permit", "Facility", "Dataset", "Local Actor"],
+  "next_action": "Use Chandler and Intel only as operating comparators while continuing to require Phoenix and TSMC completion, acceptance, operating reuse, measured flow, discharge, compliance, and full water-balance records.",
+  "future_data_model_need": [
+    "Permit",
+    "Facility",
+    "Dataset",
+    "Local Actor"
+  ],
   "related_source_ids": [
     "source-arizona-department-water-resources",
     "source-arizona-adwr-assured-water-supply",
@@ -53,7 +67,13 @@
     "source-maricopa-baccara-proposed-air-permit-2026",
     "source-maricopa-baccara-final-air-permit-2026",
     "source-kjzz-project-baccara-mcp-vote-2026",
-    "source-phoenix-tsmc-fab3-topping-out-2026"
+    "source-phoenix-tsmc-fab3-topping-out-2026",
+    "source-chandler-reclaimed-water-system",
+    "source-chandler-water-conservation-in-action",
+    "source-intel-arizona-community-investment-2024",
+    "source-chandler-owrf-expansion-complete-2018",
+    "source-chandler-owrf-rated-capacity-2019",
+    "source-chandler-fy2027-proposed-budget"
   ],
   "related_signal_ids": [
     "signal-arizona-water-resources-chip-corridor-constraint-map",
@@ -62,20 +82,27 @@
     "signal-phoenix-z37-20-1-tsmc-campus-planning-record",
     "signal-acc-project-baccara-power-water-permit-gates",
     "signal-phoenix-tsmc-fab3-topping-out",
-    "signal-phoenix-ama-fifth-management-plan-industrial-water"
+    "signal-phoenix-ama-fifth-management-plan-industrial-water",
+    "signal-chandler-reclaimed-water-operating-scale",
+    "signal-intel-arizona-water-conservation-2023",
+    "signal-chandler-intel-brine-improvements-proposed-budget"
   ],
-  "related_local_system_ids": ["local-us-southwest-chip-corridor"],
+  "related_local_system_ids": [
+    "local-us-southwest-chip-corridor"
+  ],
   "latest_review": {
-    "phase": "Phase 55Q",
-    "decision": "Dated Hold",
+    "phase": "Phase 55Y",
+    "decision": "Source Added",
     "review_date": "2026-07-24",
     "named_records": [
-      "Phoenix City Council May 2026 TSMC Wastewater Facilities Development Agreement",
-      "City of Phoenix Civil Water And Sewer Acceptance Requirements"
+      "City of Chandler Reclaimed Water System",
+      "Ocotillo Water Reclamation Facility records",
+      "Intel Arizona 2024 Community Investment Report",
+      "City of Chandler FY 2026-27 Proposed Budget"
     ],
-    "stage_result": "The official agreement still establishes authorized, customer-funded conveyance work and conditional wastewater acceptance for up to three fabs. The July 24 review did not surface a named certificate of completion, City acceptance, operating reclaimed-water plant, measured reuse result, or complete facility water balance.",
-    "stop_rule": "Do not create another agreement-stage signal. Reopen when Phoenix or TSMC posts a certificate of completion, acceptance, operating industrial reclaimed-water milestone, measured flow or reuse result, discharge record, or facility water balance.",
+    "stage_result": "The gap now has a real operating receiving-system comparator and attributed industrial metrics. The Phoenix TSMC project itself has not advanced beyond agreement and capital stages in the reviewed record.",
+    "stop_rule": "Do not transfer Chandler system performance or Intel metrics to TSMC. Reopen the TSMC trail only for completion, acceptance, operating reuse, measured flow, discharge, compliance, or facility water-balance evidence.",
     "next_check_date": "2026-09-22"
   },
-  "notes": "Phase 55Q records a dated hold because the named downstream stage did not advance. Phase 55S adds the Phoenix AMA Fifth Management Plan as an effective area-wide industrial conservation and compliance layer without treating it as project allocation or service evidence. Authorization, policy, and conditional flow capacity remain separate from constructed and accepted conveyance, operating reclaimed-water infrastructure, total demand, measured reuse, drought resilience, and long-term sufficiency."
+  "notes": "Phase 55Y adds operating comparison evidence without changing the dated TSMC hold or making a regional sufficiency claim."
 }

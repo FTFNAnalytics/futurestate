@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 55X local implementation dossiers
+Latest completed work: Phase 55Y operational evidence and receiving systems
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 638 generated site pages
-Content: 307 sources, 124 signals, 17 topics, 5 local systems, 7 research collections / 107 research documents
-Publication: 93 Published signals, 31 In Review signals, 3 Published briefings, 7 In Review briefings, 4 Published and 2 In Review dependency maps
-Trust/data: 26 update entries, 13 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, and 27-file research archives
+Build: 698 generated site pages
+Content: 327 sources, 136 signals, 17 topics, 5 local systems, 8 research collections / 131 research documents
+Publication: 101 Published signals, 35 In Review signals, 4 Published briefings, 7 In Review briefings, 5 Published and 1 In Review dependency maps
+Trust/data: 27 update entries, 15 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, and two 27-file research archives
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 23 serves exact Phase 55X private source commit 6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac; one allowed owner and no groups
+Deployment: owner-only Sites version 23 still serves the prior exact Phase 55X source while the Phase 55Y owner-only refresh is pending; one allowed owner and no groups
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 198 Manual Review, 109 Probe Ready; 14 Strong coverage lanes
-Next phase: Phase 55Y operational evidence and receiving-system expansion; six dated inserts remain scheduled
+Source health: 212 Manual Review, 115 Probe Ready; 14 Strong coverage lanes
+Next phase: Phase 55Z comparative operating outcomes; six dated inserts remain scheduled
 ```
 
 ## Read First
@@ -102,6 +102,7 @@ The approved preview sequence is complete:
 47. Matched local app commit `bdc34a225f0e27233c39d28df4ccf3c61e7d8776` to private Sites source commit `7ba179bf4ee1beaec5a7ba2299800bebb210c0c8`, deployed owner-only Sites version 22, and confirmed custom access with one allowed owner and no groups.
 48. Completed Phase 55X locally: added 24 official implementation records, twelve signals, nine source profiles, one 27-file collection archive, one `In Review` briefing, and integrated repairs across three local systems, four pathways, three gaps, eight topics, and one Published dependency map. Eight signals and 22 document summaries passed separate publication gates; all three end-to-end local pathways remain `In Review`. Verified 638 pages, 307 sources, 124 signals, 93 Published, 31 In Review, 26 updates, seven collections, and 107 research documents.
 49. Deployed local app commit `ce590cb8d847501b0a21fe4eb760037d3e531ea8` from exact private source commit `6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac` as owner-only Sites version 23 in deployment `appgdep_6a63de12b2c881919c4b7dd924f3711c`; custom access remains one allowed owner and no groups.
+50. Completed Phase 55Y locally: added 24 official records, twenty source profiles, twelve signals, one research collection and 27-file archive, Research Watch 003, two evidence gaps, and integrated four pathways and topic pages. Eight signals and twenty document summaries publish; four signals and four documents retain explicit holds. The autonomy pathway and dependency map now publish. Verified 698 pages, 327 sources, 136 signals, 101 Published, 35 In Review, 27 updates, eight collections, 131 research documents, and 150 current Published-support sources.
 
 ## Required Stop Points
 
@@ -155,9 +156,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 55X. The current candidate should be 0.2.0-dev on codex/phase51-content with 307 sources, 124 signals, 93 Published signals, 31 In Review signals, five local systems, three Published briefings, seven In Review briefings, four Published and two In Review dependency maps, thirteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 26 public updates, five JSON exports, 638 generated site pages, seven research collections, 107 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, and 27-file download archives. Exact private source commit `6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac` is live as owner-only Sites version 23 at https://ftfn-analytics.jbumstead.chatgpt.site with one allowed owner and no groups; public access and DNS remain unchanged.
+The latest completed work is Phase 55Y. The current candidate should be 0.2.0-dev on codex/phase51-content with 327 sources, 136 signals, 101 Published signals, 35 In Review signals, five local systems, four Published briefings, seven In Review briefings, five Published and one In Review dependency map, fifteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 27 public updates, five JSON exports, 698 generated site pages, eight research collections, 131 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, and two 27-file download archives. Sites version 23 still serves the prior Phase 55X tree until the owner-only Phase 55Y refresh completes; public access and DNS remain unchanged.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55X is complete; begin Phase 55Y with 24 primary records and twelve bounded signals across AI assurance, advanced-manufacturing workforce conversion, industrial-water reuse operation, and autonomy service. Prioritize executed procurement, test and acceptance, service delivery, operating metrics, safety, and measured receiving-system outcomes. Treat the August 1 Toronto, August 10 DARPA Lift, August 15 Space Coast license, September 22 Arizona wastewater, October 1 Loudoun standards, and January 15 Nevada delivery tasks as bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55Y is complete; begin Phase 55Z with 32 primary records and sixteen bounded signals across institutional AI and cybersecurity operation, manufacturing workforce and production outcomes, grid-water-storage-minerals infrastructure performance, and mobility-aviation-space service or mission outcomes. Prefer measured utilization, throughput, reliability, incidents, completion and placement, customer delivery, compliance, cost, accessibility, and service outcomes. Treat the August 1 Toronto, August 10 DARPA Lift, August 15 Space Coast license, September 22 Arizona wastewater, October 1 Loudoun standards, and January 15 Nevada delivery tasks as bounded inserts rather than pauses. Do not create rankings from incompatible units, periods, geographies, or methods. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

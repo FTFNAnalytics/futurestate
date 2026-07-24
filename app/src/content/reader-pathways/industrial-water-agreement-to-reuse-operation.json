@@ -4,23 +4,35 @@
   "slug": "industrial-water-agreement-to-reuse-operation",
   "record_status": "Published",
   "summary": "Follow statewide governance, provider strategy, project-specific wastewater agreements, capital projects, construction, acceptance, reclaimed-water operation, and measured use.",
-  "current_state_summary": "Phoenix now has a provider strategy, active industrial conservation requirements, a project-specific TSMC wastewater agreement, and a municipal reclamation capital trail, but delivered and measured industrial water outcomes remain open.",
+  "current_state_summary": "Phoenix still has an agreement and capital trail rather than a completed TSMC reuse operation; Chandler now supplies an operating municipal and industrial comparator with measured system scale, completed treatment assets, and attributed operator metrics.",
   "current_state": [
-    "Arizona's management-plan rail establishes industrial conservation, measurement, reporting, and compliance requirements.",
-    "Phoenix's 2026 provider update identifies supply sources, drought posture, reliability investments, and regulated drinking-water monitoring.",
-    "The TSMC agreement names wastewater conveyance improvements, accepted-flow conditions, customer cost responsibility, and reclaimed-water milestones.",
-    "The North Gateway capital record identifies an upstream municipal reclamation project without proving construction completion or operating capacity.",
-    "The dossier still lacks a complete facility water balance, accepted conveyance work, operating reclaimed-water plants, measured withdrawals, discharges, reuse, and drought performance."
+    "Arizona and Phoenix records continue to define industrial conservation, provider strategy, agreement terms, and capital delivery gates.",
+    "The TSMC agreement still lacks accepted conveyance work, an operating industrial reclaimed-water plant, measured reuse, and a complete facility water balance.",
+    "Chandler reports an operating reclaimed-water system treating roughly 11 billion gallons annually across industrial and other uses.",
+    "Completed Ocotillo treatment infrastructure is rated for 18 million gallons per day, while rated capacity remains separate from delivered industrial flow.",
+    "Intel reports 2023 Arizona conservation and restoration metrics, and a proposed brine-facility improvement budget remains an explicit hold."
   ],
-  "primary_topics": ["Water", "Chips and Compute", "Energy", "Human Futures"],
-  "topic_ids": ["topic-water", "topic-chips-and-compute"],
-  "local_system_ids": ["local-us-southwest-chip-corridor"],
+  "primary_topics": [
+    "Water",
+    "Chips and Compute",
+    "Energy",
+    "Human Futures"
+  ],
+  "topic_ids": [
+    "topic-water",
+    "topic-chips-and-compute"
+  ],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor"
+  ],
   "signal_ids": [
     "signal-phoenix-ama-fifth-management-plan-industrial-water",
     "signal-phoenix-2026-water-security-provider-update",
     "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
     "signal-phoenix-2026-2031-north-gateway-wrp-capital-program",
-    "signal-aps-tsmc-service-territory-capacity-boundary"
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-chandler-reclaimed-water-operating-scale",
+    "signal-intel-arizona-water-conservation-2023"
   ],
   "source_ids": [
     "source-adwr-ama-management-plans",
@@ -28,47 +40,65 @@
     "source-phoenix-2025-water-quality-report",
     "source-phoenix-tsmc-2026-wastewater-development-agreement",
     "source-phoenix-capital-improvement-program",
-    "source-aps-tsmc-service-territory-2026"
+    "source-aps-tsmc-service-territory-2026",
+    "source-chandler-reclaimed-water-system",
+    "source-chandler-water-conservation-in-action",
+    "source-intel-arizona-community-investment-2024",
+    "source-chandler-owrf-expansion-complete-2018",
+    "source-chandler-owrf-rated-capacity-2019",
+    "source-chandler-fy2027-proposed-budget"
   ],
-  "organization_ids": ["org-arizona-department-water-resources", "org-city-phoenix", "org-tsmc"],
+  "organization_ids": [
+    "org-arizona-department-water-resources",
+    "org-city-phoenix",
+    "org-tsmc"
+  ],
   "technology_ids": [],
-  "briefing_ids": ["briefing-stack-watch-004-implementation-outcomes"],
-  "dependency_map_ids": ["dependency-map-local-constraints-where-the-future-arrives"],
+  "briefing_ids": [
+    "briefing-stack-watch-004-implementation-outcomes",
+    "briefing-research-watch-003-operational-evidence"
+  ],
+  "dependency_map_ids": [
+    "dependency-map-local-constraints-where-the-future-arrives"
+  ],
   "research_collection_ids": [
     "research-collection-implementation-outcomes-local-conversion-2025-2026",
-    "research-collection-industrial-capacity-local-conversion-2025-2026"
+    "research-collection-industrial-capacity-local-conversion-2025-2026",
+    "research-collection-operational-evidence-receiving-systems-2024-2026"
   ],
-  "evidence_gap_ids": ["gap-002"],
+  "evidence_gap_ids": [
+    "gap-002"
+  ],
   "dependency_stack": [
     {
-      "stage": "Governance And Provider Plan",
-      "current_state": "State and Phoenix records identify conservation requirements, source portfolios, drought posture, quality monitoring, and reliability investments.",
-      "boundary": "Area-wide rules and provider planning do not establish site-level allocation, hydraulic capacity, service, demand, discharge, or reuse."
+      "stage": "Governance, Provider Plan, And Agreement",
+      "current_state": "State, Phoenix, and project records identify conservation rules, provider strategy, conditional flows, customer-funded work, and reuse milestones.",
+      "boundary": "Area-wide rules and agreement terms do not establish completed assets, actual service, measured reuse, or sufficiency."
     },
     {
-      "stage": "Project Agreement",
-      "current_state": "Phoenix and TSMC define conditional wastewater flows, customer-funded conveyance work, and reclaimed-water milestones.",
-      "boundary": "Authorization and agreement terms do not prove completed or accepted infrastructure, operating reuse plants, or a complete campus water balance."
+      "stage": "Operating Comparator",
+      "current_state": "Chandler reports an 11-billion-gallon annual reclaimed-water system, completed Ocotillo treatment infrastructure, and industrial end use.",
+      "boundary": "Systemwide operation and rated capacity do not disclose customer allocation, spare capacity, reliability, or TSMC service."
     },
     {
-      "stage": "Capital Delivery",
-      "current_state": "Phoenix's capital program provides a named North Gateway reclamation project trail.",
-      "boundary": "A capital-program entry does not establish final design, procurement, construction, acceptance, capacity, or service."
+      "stage": "Industrial Operator Evidence",
+      "current_state": "Intel reports facility-region conservation and restoration metrics, while Chandler proposes improvements to the Intel Ocotillo brine asset.",
+      "boundary": "Company-reported metrics and a proposed budget are not an audited facility water balance or delivered capital project."
     },
     {
-      "stage": "Measured Operation",
-      "current_state": "No current public record closes the loop with facility withdrawals, discharges, reuse volumes, compliance, reliability, or drought performance.",
-      "boundary": "Operating claims require accepted assets, metered data, permit compliance, service records, and sustained measured outcomes."
+      "stage": "Project-Specific Measured Reuse",
+      "current_state": "No current record closes the Phoenix TSMC loop with accepted infrastructure, operating reuse, measured flow, discharge, compliance, or drought performance.",
+      "boundary": "Project claims require accepted assets, metered data, permits, service records, and sustained outcomes."
     }
   ],
   "evidence_limits": [
-    "Drinking-water quality compliance is not evidence of spare industrial capacity.",
-    "Accepted-flow terms are conditional and do not prove infrastructure completion or actual flow.",
-    "Provider strategy and capital plans do not establish a complete TSMC water balance or long-term regional sufficiency."
+    "Chandler is an operating comparator, not evidence that Phoenix or TSMC has completed its own reuse milestones.",
+    "Design capacity and citywide volume do not establish industrial customer allocation or spare capacity.",
+    "Intel conservation and restoration figures are company-reported and do not replace a complete facility water balance."
   ],
   "next_records": [
-    "Executed agreement, project permits, construction, inspection, acceptance, and operating records for the conveyance improvements.",
-    "Initial industrial reclaimed-water plant operation by June 30, 2028 and later plants tied to fab occupancy and production.",
-    "Facility-level withdrawals, discharge, reuse, conservation, compliance, drought, cost, and reliability records."
+    "Phoenix and TSMC construction, inspection, acceptance, operating, flow, reuse, discharge, and compliance records.",
+    "Chandler customer-level industrial flows, system reliability, permit compliance, and delivered brine-facility improvements.",
+    "Audited operator water balances that distinguish withdrawal, consumption, conservation, restoration, discharge, and reuse."
   ]
 }

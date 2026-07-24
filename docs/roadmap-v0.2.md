@@ -700,7 +700,7 @@ Exit criteria:
 - the collection archive and all public routes pass the release contract;
 - no new local system, public-access change, DNS change, or release freeze occurs.
 
-### Phase 55Y: Operational Evidence And Receiving-System Expansion - Next
+### Phase 55Y: Operational Evidence And Receiving-System Expansion - Complete
 
 Goal: deepen four under-connected conversion journeys outside the three Phase 55X local dossiers.
 
@@ -711,20 +711,51 @@ Target journeys:
 3. industrial-water agreement to accepted reuse operation,
 4. autonomy rules to operating service.
 
-Deliverables:
+Delivered:
 
-- add 24 primary records, six per journey;
-- add twelve bounded signals, three per journey, with independent publish or hold decisions;
-- prioritize executed procurement, test and acceptance, service delivery, operating metrics, safety records, and measured receiving-system outcomes;
-- update the relevant pathways, topics, gaps, briefings, and maps only where the new evidence changes a named stage;
-- package the records as a reviewed research collection with summaries, evidence limits, official links or captures, and a checksum manifest;
-- add no local system unless at least twelve authoritative records support a complete dependency trail.
+- added 24 primary records, six per journey, and twenty new source profiles;
+- added twelve bounded signals with eight Published and four explicit holds;
+- added a reviewed 27-file research archive with 24 official-link records, consolidated summaries, README, manifest, sizes, and SHA-256 checksums;
+- published Research Watch 003 and added dedicated AI-assurance and autonomous passenger-service outcome gaps;
+- deepened four pathways and four topic pages;
+- promoted the autonomy pathway and `Autonomy Rules Are Not Service` dependency map after adding effective fared passenger-service authority;
+- retained the zero-draft TEVV outline, planned Maricopa accelerator, proposed Chandler brine budget, and Zoox demonstration exemption `In Review`;
+- added no new local system.
 
 Exit criteria:
 
 - all four journeys have stronger downstream evidence and a named remaining gap;
-- publication decisions are record-level and machine-readable;
-- receiving-system outcomes are not inferred from funding, award, authorization, or planned activity;
+- the twelve signal decisions and 24 document decisions are machine-readable;
+- receiving-system outcomes are not inferred from funding, award, authorization, design capacity, or planned activity;
+- the local release passes at 698 pages, 327 sources, 136 signals, 101 Published signals, 131 research documents, and 150 current Published-support sources;
+- the owner-only deployment remains the final gate for this phase.
+
+### Phase 55Z: Comparative Operating Outcomes - Next
+
+Goal: expand from individual operating records into comparable outcome trails without creating premature scores.
+
+Target portfolios:
+
+1. institutional AI and cybersecurity operation,
+2. advanced-manufacturing workforce and production outcomes,
+3. grid, water, storage, and critical-minerals infrastructure performance,
+4. mobility, aviation, and space service or mission outcomes.
+
+Deliverables:
+
+- add 32 primary records, eight per portfolio;
+- add sixteen bounded signals with independent publish or hold decisions;
+- prioritize measured utilization, throughput, reliability, incidents, completion and placement, customer delivery, compliance, cost, accessibility, and service or mission outcomes;
+- add comparison fields only where units, periods, scope, and methods are genuinely compatible;
+- deepen existing topics, pathways, gaps, maps, and briefings rather than adding route families;
+- package the records as a reviewed collection with summaries, evidence limits, official links or captures, and a checksum manifest;
+- use the remaining authority backlog only for records that close a named portfolio gap.
+
+Exit criteria:
+
+- each portfolio contains at least two independently useful Published outcome records and one explicit hold;
+- comparisons disclose denominator, period, geography, method, and known limits;
+- no ranking, readiness score, or cross-system equivalence is inferred from incompatible records;
 - the full local release and owner-only deployment gates pass.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional

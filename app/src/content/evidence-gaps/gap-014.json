@@ -1,0 +1,66 @@
+{
+  "id": "gap-014",
+  "title": "Independent AI assurance and operating evidence",
+  "slug": "gap-014-ai-assurance-operating-evidence",
+  "status": "Source Added",
+  "priority": "High",
+  "local_system": "Cross-system",
+  "primary_topic": "AI for Science",
+  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Standards", "Data Quality", "Safety", "Cybersecurity"],
+  "question": "Which records show that AI assurance methods have been adopted, validated, and maintained for named operating systems?",
+  "why_it_matters": "Risk frameworks and evaluation methods only become operating assurance when institutions select controls, test named systems, act on findings, monitor production behavior, and disclose outcomes.",
+  "current_support": "FTFN now has the NIST AI RMF Core, AI Metrology Center, TEVV program, and a completed ARIA 0.1 pilot involving five organizations and seven applications across model testing, red teaming, and field testing.",
+  "missing_evidence": [
+    "institution-level control adoption",
+    "system inventories and authorization decisions",
+    "repeat evaluations using documented methods",
+    "production monitoring and incident records",
+    "independent validation and corrective actions",
+    "measured mission, safety, and reliability outcomes"
+  ],
+  "likely_source_types": [
+    "agency AI inventory",
+    "authorization record",
+    "evaluation report",
+    "incident disclosure",
+    "audit or oversight report"
+  ],
+  "candidate_records": [
+    "later NIST ARIA evaluation rounds",
+    "full AI TEVV draft and final standard",
+    "agency system-level evaluation and authorization records",
+    "production monitoring, incident, and corrective-action evidence"
+  ],
+  "next_action": "Follow ARIA into repeat evaluations and the zero-draft outline into a full draft, final standard, conformity-assessment practice, institutional adoption, named authorization, and production evidence.",
+  "future_data_model_need": ["Dataset", "Policy or Regulation", "Project"],
+  "related_source_ids": [
+    "source-nist-ai-rmf",
+    "source-nist-ai-metrology-center",
+    "source-nist-ai-tevv-program",
+    "source-nist-aria-pilot-evaluation-2025",
+    "source-nist-aria-evaluation-program",
+    "source-nist-ai-tevv-zero-draft-2025"
+  ],
+  "related_signal_ids": [
+    "signal-nist-ai-rmf-critical-infrastructure-profile-concept",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-nist-ai-metrology-method-selection-layer",
+    "signal-nist-ai-tevv-standard-remains-zero-draft"
+  ],
+  "related_local_system_ids": [],
+  "latest_review": {
+    "phase": "Phase 55Y",
+    "decision": "Source Added",
+    "review_date": "2026-07-24",
+    "named_records": [
+      "NIST ARIA 0.1 Pilot Evaluation Report",
+      "NIST AI Metrology Center",
+      "NIST AI TEVV Program",
+      "Proposed Zero Draft Outline for an AI TEVV Standard"
+    ],
+    "stage_result": "The assurance shelf now includes a completed multi-level pilot, method-selection resources, and a standards-development trail. It still lacks institution-level adoption, authorization, repeat testing, production monitoring, incidents, and measured operating outcomes.",
+    "stop_rule": "Do not treat a pilot, resource catalog, framework, or zero-draft outline as certification, institutional adoption, or validated operating performance."
+  },
+  "notes": "Phase 55Y creates a dedicated assurance gap so AI policy and procurement records are not mistaken for tested and maintained operation."
+}

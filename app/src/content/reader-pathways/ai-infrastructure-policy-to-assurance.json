@@ -4,16 +4,25 @@
   "slug": "ai-infrastructure-policy-to-assurance",
   "record_status": "Published",
   "summary": "Follow federal AI and R&D direction through compute, power, chips, procurement, critical-infrastructure assurance, implementation, and measured operating evidence.",
-  "current_state_summary": "Federal records now make the infrastructure and assurance stack explicit, but policy direction, purchasing channels, and profile development remain upstream of validated institutional deployment.",
+  "current_state_summary": "Federal direction now connects to a completed NIST multi-level evaluation pilot, a method-selection resource, and a TEVV standards trail; institution-level adoption, authorization, production monitoring, and outcomes remain open.",
   "current_state": [
-    "FY2027 federal R&D guidance connects AI and quantum priorities to chips, power, manufacturing, materials, and workforce.",
-    "The national-security policy stack adds secure compute, supply-chain resilience, acquisition, cybersecurity, and assurance requirements.",
-    "NIST has opened a critical-infrastructure AI RMF profile process that names deterministic behavior, explainability, graceful degradation, fail-safe operation, TEVV, and supply-chain visibility.",
-    "OMB and GSA records define use, acquisition, and purchasing rails without proving agency orders, integration, authorization, performance, or outcomes.",
-    "The pathway still lacks institution-level inventories, adopted profiles, validated controls, operating evidence, incident results, and measured mission value."
+    "Federal R&D, national-security, acquisition, and procurement records define the policy and buying stack.",
+    "NIST ARIA 0.1 completed model, red-team, and field testing across seven applications from five organizations.",
+    "The AI Metrology Center and TEVV program expose method-selection and measurement resources with explicit non-endorsement limits.",
+    "The proposed TEVV zero-draft outline remains upstream of consensus text, conformity assessment, and adoption.",
+    "No current record closes the loop into institution-level control adoption, system authorization, production monitoring, incident response, or measured mission outcomes."
   ],
-  "primary_topics": ["AI for Science", "Cybersecurity", "Chips and Compute", "Energy", "Policy and Standards"],
-  "topic_ids": ["topic-ai-for-science", "topic-cybersecurity"],
+  "primary_topics": [
+    "AI for Science",
+    "Cybersecurity",
+    "Chips and Compute",
+    "Energy",
+    "Policy and Standards"
+  ],
+  "topic_ids": [
+    "topic-ai-for-science",
+    "topic-cybersecurity"
+  ],
   "local_system_ids": [],
   "signal_ids": [
     "signal-federal-rd-priorities-full-stack-technology",
@@ -21,7 +30,9 @@
     "signal-nist-ai-rmf-critical-infrastructure-profile-concept",
     "signal-omb-federal-ai-use-acquisition-requirements",
     "signal-gsa-onegov-ai-procurement-channel",
-    "signal-dod-openai-prototype-ota-initial-obligation"
+    "signal-dod-openai-prototype-ota-initial-obligation",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-nist-ai-metrology-method-selection-layer"
   ],
   "source_ids": [
     "source-fy2027-rd-priorities-m-25-34",
@@ -31,47 +42,66 @@
     "source-omb-m-25-21-federal-ai-use",
     "source-omb-m-25-22-federal-ai-acquisition",
     "source-gsa-buy-ai-onegov-2026",
-    "source-dod-openai-prototype-ota-2025"
+    "source-dod-openai-prototype-ota-2025",
+    "source-nist-aria-pilot-evaluation-2025",
+    "source-nist-aria-evaluation-program",
+    "source-nist-ai-metrology-center",
+    "source-nist-ai-tevv-program",
+    "source-nist-ai-tevv-zero-draft-2025"
   ],
-  "organization_ids": ["org-executive-office-president", "org-nist", "org-general-services-administration"],
+  "organization_ids": [
+    "org-executive-office-president",
+    "org-nist",
+    "org-general-services-administration"
+  ],
   "technology_ids": [],
-  "briefing_ids": ["briefing-stack-watch-003-research-to-implementation"],
-  "dependency_map_ids": ["dependency-map-federal-research-industrial-capacity"],
+  "briefing_ids": [
+    "briefing-stack-watch-003-research-to-implementation",
+    "briefing-research-watch-003-operational-evidence"
+  ],
+  "dependency_map_ids": [
+    "dependency-map-federal-research-industrial-capacity"
+  ],
   "research_collection_ids": [
     "research-collection-darpa-usg-2025-2026",
-    "research-collection-federal-implementation-evidence-2025-2026"
+    "research-collection-federal-implementation-evidence-2025-2026",
+    "research-collection-operational-evidence-receiving-systems-2024-2026"
   ],
-  "evidence_gap_ids": ["gap-008", "gap-009"],
+  "evidence_gap_ids": [
+    "gap-008",
+    "gap-009",
+    "gap-014"
+  ],
   "dependency_stack": [
     {
-      "stage": "Federal Direction",
-      "current_state": "Policy and R&D records identify AI, compute, chips, power, security, manufacturing, and talent as a connected national stack.",
-      "boundary": "Priority language does not establish appropriations, agency programs, infrastructure delivery, or technical outcomes."
+      "stage": "Federal Direction And Acquisition",
+      "current_state": "Policy, R&D, OMB, GSA, and prototype records identify priorities, governance, and purchasing rails.",
+      "boundary": "Direction and acquisition channels do not prove orders, integration, authorization, usage, or mission outcomes."
     },
     {
-      "stage": "Acquisition And Infrastructure",
-      "current_state": "OMB, GSA, and prototype-agreement records expose governance, purchasing, contract-value, and initial-obligation rails.",
-      "boundary": "A purchasing channel, ceiling value, or initial obligation does not prove an order, deployment, authorization, usage, or mission outcome."
+      "stage": "Methods And Evaluation",
+      "current_state": "NIST now supplies a completed ARIA pilot, a metrology method catalog, a TEVV program, and the AI RMF Core.",
+      "boundary": "A pilot, catalog, or framework does not certify a named deployment or prove that institutional controls work."
     },
     {
-      "stage": "Critical-Infrastructure Assurance",
-      "current_state": "NIST's concept identifies a sector profile and specific assurance properties for AI in IT, OT, and industrial control systems.",
-      "boundary": "The concept is not a draft profile, final guidance, mandate, validated test method, adopted control set, or deployed system."
+      "stage": "Standardization And Adoption",
+      "current_state": "A proposed zero-draft outline provides a trackable standards-development gate.",
+      "boundary": "The outline is not a full draft, consensus standard, conformity-assessment scheme, or adoption record."
     },
     {
-      "stage": "Institutional Operation",
-      "current_state": "No current pathway record closes the loop from policy and acquisition into independently validated operating performance.",
-      "boundary": "Operating claims require named systems, inventories, controls, authorization, tests, incidents, maintenance, and measured outcomes."
+      "stage": "Assured Institutional Operation",
+      "current_state": "No current pathway record closes the loop into independently validated, monitored operating performance.",
+      "boundary": "Assurance claims require named systems, inventories, controls, authorizations, tests, incidents, corrective actions, and measured outcomes."
     }
   ],
   "evidence_limits": [
-    "The pathway connects policy and infrastructure dependencies without claiming that federal agencies have completed implementation.",
-    "National-security and critical-infrastructure direction does not prove available high-security compute, resilient supply chains, or effective assurance.",
-    "Prototype agreements and buying channels are not equivalent to delivered, authorized, adopted, or successful systems."
+    "ARIA validates a pilot evaluation procedure, not AI systems generally.",
+    "NIST method resources explicitly do not endorse or universally validate listed methods.",
+    "Policy, procurement, frameworks, and standards work remain separate from institutional adoption and operating assurance."
   ],
   "next_records": [
-    "Agency AI inventories, implementation plans, orders, contract clauses, authorizations, evaluations, incident records, renewals, and measured outcomes.",
-    "NIST critical-infrastructure profile drafts, public comments, final guidance, TEVV methods, sector adoption, procurement language, and operator evidence.",
-    "Facility-level compute, power, cooling, supply-chain, cybersecurity, and workforce records tied to named deployments."
+    "Later ARIA rounds, sector-specific evaluations, method-validation studies, and full AI TEVV drafts.",
+    "Agency system inventories, adopted controls, authorization decisions, evaluation results, incidents, corrective actions, and production monitoring.",
+    "Independent evidence connecting assurance work to reliability, safety, mission value, and maintained operating performance."
   ]
 }

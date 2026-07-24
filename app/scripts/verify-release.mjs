@@ -63,6 +63,7 @@ const dependencyMapDirectory = join(appRoot, "src", "content", "dependency-maps"
 const signalDirectory = join(appRoot, "src", "content", "signals");
 const phase55WReviewPath = join(appRoot, "src", "data", "phase-55w-publication-review.json");
 const phase55XReviewPath = join(appRoot, "src", "data", "phase-55x-publication-review.json");
+const phase55YReviewPath = join(appRoot, "src", "data", "phase-55y-publication-review.json");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
@@ -88,6 +89,7 @@ const readerPathways = await Promise.all(
 );
 const phase55WReview = await readJson(phase55WReviewPath);
 const phase55XReview = await readJson(phase55XReviewPath);
+const phase55YReview = await readJson(phase55YReviewPath);
 const evidenceGaps = await Promise.all(
   evidenceGapFiles.map((name) => readJson(join(evidenceGapDirectory, name))),
 );
@@ -222,7 +224,8 @@ for (const id of phase55WSynthesis.published_dependency_maps) {
   check(dependencyMapStatusById.get(id) === "Published", `Phase 55W Published dependency map ${id} has the wrong status.`);
 }
 for (const id of phase55WSynthesis.held_dependency_maps) {
-  check(dependencyMapStatusById.get(id) === "In Review", `Phase 55W held dependency map ${id} has the wrong status.`);
+  const expectedStatus = id === "dependency-map-autonomy-rules-are-not-service" ? "Published" : "In Review";
+  check(dependencyMapStatusById.get(id) === expectedStatus, `Phase 55W held dependency map ${id} has the wrong current status.`);
 }
 
 const researchDocumentById = new Map(researchDocuments.map((document) => [document.id, document]));
@@ -273,6 +276,52 @@ for (const id of phase55XSynthesis.held_briefings) {
 for (const id of phase55XSynthesis.pathways_remaining_in_review) {
   check(readerPathwayById.get(id)?.record_status === "In Review", `Phase 55X pathway ${id} should remain In Review.`);
 }
+
+const phase55YSignals = phase55YReview.signal_decisions;
+const phase55YSignalIds = [...phase55YSignals.promoted, ...phase55YSignals.held];
+check(phase55YReview.journey_count === 4, `Expected four Phase 55Y journeys, found ${phase55YReview.journey_count}.`);
+check(phase55YReview.primary_record_count === 24, `Expected 24 Phase 55Y primary records, found ${phase55YReview.primary_record_count}.`);
+check(phase55YSignals.reviewed === 12, `Expected 12 Phase 55Y signal decisions, found ${phase55YSignals.reviewed}.`);
+check(phase55YSignals.promoted.length === 8, `Expected eight Phase 55Y Published signals, found ${phase55YSignals.promoted.length}.`);
+check(phase55YSignals.held.length === 4, `Expected four Phase 55Y held signals, found ${phase55YSignals.held.length}.`);
+check(new Set(phase55YSignalIds).size === 12, "Phase 55Y signal decision IDs must be unique.");
+for (const id of phase55YSignals.promoted) {
+  check(signalStatusById.get(id) === "Published", `Phase 55Y Published signal ${id} has the wrong status.`);
+}
+for (const id of phase55YSignals.held) {
+  check(signalStatusById.get(id) === "In Review", `Phase 55Y held signal ${id} has the wrong status.`);
+}
+const phase55YCollection = researchCollections.find(
+  (collection) => collection.id === "research-collection-operational-evidence-receiving-systems-2024-2026",
+);
+check(Boolean(phase55YCollection), "Phase 55Y operational-evidence research collection is missing.");
+if (phase55YCollection) {
+  check(phase55YCollection.document_ids.length === 24, `Expected 24 Phase 55Y documents, found ${phase55YCollection.document_ids.length}.`);
+  const phase55YDocuments = phase55YCollection.document_ids
+    .map((documentId) => researchDocumentById.get(documentId))
+    .filter(Boolean);
+  check(phase55YDocuments.length === 24, `Expected all 24 Phase 55Y documents to resolve, found ${phase55YDocuments.length}.`);
+  check(
+    phase55YDocuments.filter((document) => document.record_status === "Published").length === 20,
+    "Phase 55Y must contain twenty Published research documents.",
+  );
+  check(
+    phase55YDocuments.filter((document) => document.record_status === "In Review").length === 4,
+    "Phase 55Y must contain four held research documents.",
+  );
+  check(
+    phase55YDocuments.every((document) => document.capture_status === "Official link record"),
+    "Phase 55Y research documents must use the declared official-link capture contract.",
+  );
+}
+check(
+  readerPathwayById.get("reader-pathway-autonomy-regulation-to-service")?.record_status === "Published",
+  "Phase 55Y autonomy pathway should be Published.",
+);
+check(
+  dependencyMapStatusById.get("dependency-map-autonomy-rules-are-not-service") === "Published",
+  "Phase 55Y autonomy dependency map should be Published.",
+);
 
 for (const collection of researchCollections) {
   const collectionRoute = `/research/${collection.slug}/`;

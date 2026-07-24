@@ -2,9 +2,19 @@
   "id": "topic-ai-for-science",
   "name": "AI for Science",
   "slug": "ai-for-science",
-  "summary": "AI-enabled discovery across materials, chemistry, biology, agriculture, energy, and physical science, including the compute, data, validation, and institution layers needed to convert models into outcomes.",
-  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Resource Foundations"],
-  "primary_constraints": ["Compute", "Data Quality", "Standards", "Labor", "Power"],
+  "summary": "The current shelf now connects federal AI direction to a completed NIST multi-level evaluation pilot, a metrology method-selection layer, and a TEVV standards trail while preserving the gap to institutional authorization, production monitoring, incidents, and measured outcomes.",
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Frontier Domains",
+    "Resource Foundations"
+  ],
+  "primary_constraints": [
+    "Compute",
+    "Data Quality",
+    "Standards",
+    "Labor",
+    "Power"
+  ],
   "featured_sources": [
     "source-doe-office-science",
     "source-nist-materials-genome-initiative",
@@ -13,10 +23,15 @@
     "source-dod-openai-prototype-ota-2025",
     "source-nist-ai-metrology-center",
     "source-nist-ai-rmf",
-    "source-nist-smart-manufacturing-ai-roadmap-2026"
+    "source-nist-smart-manufacturing-ai-roadmap-2026",
+    "source-nist-aria-pilot-evaluation-2025",
+    "source-nist-aria-evaluation-program",
+    "source-nist-ai-tevv-program",
+    "source-nist-ai-tevv-zero-draft-2025"
   ],
   "watch_questions": [
     "Which AI-for-science claims are supported by validated datasets, instruments, user facilities, or peer-reviewed results?",
-    "Where does model output become experimental proof, manufacturing readiness, or local system change?"
+    "Where does model output become experimental proof, manufacturing readiness, or local system change?",
+    "Which named institutions adopt these methods, authorize systems, monitor production behavior, and disclose incidents and corrective actions?"
   ]
 }
