@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "build_id": "ftfn-v0.1",
+  "generated_date": "2026-07-20",
+  "project": "FTFN",
+  "package_name": "ftfn-app",
+  "package_version": "0.1.0",
+  "deployment_status": "preview-candidate",
+  "public_launch_approved": false,
+  "canonical_site": "https://ftfn.io",
+  "app_root": "app",
+  "framework": "Astro",
+  "output_mode": "static",
+  "package_manager": "npm",
+  "install_command": "npm install",
+  "predeploy_commands": [
+    "npm run validate:content",
+    "npm run source:health",
+    "npm run check"
+  ],
+  "build_command": "npm run build",
+  "output_directory": "dist",
+  "expected_build": {
+    "static_pages": 142,
+    "signals": 14,
+    "sources": 66,
+    "topics": 17,
+    "organizations": 10,
+    "technologies": 5,
+    "local_systems": 2,
+    "briefings": 1,
+    "evidence_gaps": 10,
+    "dependency_maps": 2
+  },
+  "last_verified": {
+    "date": "2026-07-20",
+    "validate_content": "passed",
+    "source_health": "passed",
+    "source_health_manual_review": 42,
+    "source_health_probe_ready": 24,
+    "astro_check": "passed",
+    "build": "passed",
+    "static_pages_built": 142
+  },
+  "deployment_target": {
+    "recommended_provider": "Cloudflare Pages",
+    "project_root": "app",
+    "build_command": "npm run build",
+    "build_output_directory": "dist",
+    "production_branch": "main or chosen launch branch",
+    "node_version": "platform default unless build output requires otherwise"
+  },
+  "required_output_files": [
+    "dist/index.html",
+    "dist/robots.txt",
+    "dist/sitemap.xml",
+    "dist/atlas/source-monitor/index.html",
+    "dist/atlas/source-coverage/index.html"
+  ],
+  "launch_critical_routes": [
+    "/",
+    "/signals/",
+    "/signals/noaa-enso-discussion-el-nino-advisory-climate-risk-clock/",
+    "/signals/usgs-mineral-commodity-summaries-2026-critical-materials-baseline/",
+    "/signals/nist-pqc-standards-quantum-risk-migration-work/",
+    "/atlas/",
+    "/atlas/sources/",
+    "/atlas/source-monitor/",
+    "/atlas/source-coverage/",
+    "/atlas/sources/source-noaa-cpc-enso/",
+    "/atlas/local-systems/",
+    "/atlas/dependency-maps/",
+    "/method/",
+    "/about/",
+    "/robots.txt",
+    "/sitemap.xml"
+  ],
+  "seo_policy": {
+    "robots": "Allow all public routes and reference https://ftfn.io/sitemap.xml",
+    "sitemap": "Include primary public pages, Atlas reference pages, local systems, dependency maps, and Published signal details only",
+    "non_published_signal_details": "noindex, follow",
+    "non_published_briefing_details": "noindex, follow"
+  },
+  "release_gates": [
+    "Run all predeploy commands from app/",
+    "Run npm run build from app/",
+    "Confirm robots.txt and sitemap.xml exist in app/dist/",
+    "Confirm sitemap includes the three Published signal URLs",
+    "Confirm sitemap excludes In Review and Draft Sample signal detail URLs",
+    "Confirm non-published signal and briefing pages have noindex, follow",
+    "Run desktop and mobile browser QA on launch-critical pages",
+    "Deploy to a preview URL before attaching ftfn.io",
+    "Attach ftfn.io only after explicit approval"
+  ],
+  "out_of_scope": [
+    "public launch without approval",
+    "DNS changes without approval",
+    "analytics",
+    "newsletter capture",
+    "automated ingestion",
+    "automated publishing",
+    "CMS",
+    "database migration",
+    "accounts",
+    "public API",
+    "numeric 42/59 scoring"
+  ],
+  "notes": "This file is a v0.1 deployment build manifest. It is not evidence that deployment has occurred."
+}

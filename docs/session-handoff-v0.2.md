@@ -1,0 +1,162 @@
+# FTFN v0.2 Session Handoff Plan
+
+Date: 2026-07-24
+
+Use this document to restart FTFN in a new Codex session without reconstructing the project from chat history.
+
+## Handoff Snapshot
+
+```text
+Latest completed work: Phase 55X local implementation dossiers
+Current branch: codex/phase51-content
+Preserved Phase 52B checkpoint: 35f26f4
+Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
+Package: 0.2.0-dev
+Build: 638 generated site pages
+Content: 307 sources, 124 signals, 17 topics, 5 local systems, 7 research collections / 107 research documents
+Publication: 93 Published signals, 31 In Review signals, 3 Published briefings, 7 In Review briefings, 4 Published and 2 In Review dependency maps
+Trust/data: 26 update entries, 13 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, and 27-file research archives
+Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
+Deployment: owner-only Sites version 22 still serves the prior Phase 55W checkpoint; Phase 55X refresh is pending; one allowed owner and no groups
+Domain: ftfn.io is ready; production DNS is unchanged
+Source health: 198 Manual Review, 109 Probe Ready; 14 Strong coverage lanes
+Next phase: Phase 55Y operational evidence and receiving-system expansion; six dated inserts remain scheduled
+```
+
+## Read First
+
+Use this short order:
+
+1. `docs/build-summary-v0.2.md`
+2. `docs/roadmap-v0.2.md`
+3. `deployment/ftfn-v0.2-build.json`
+4. `docs/release-qa-v0.2.md`
+5. `docs/private-source-candidate-registry.md`
+6. `docs/launch-package.md`
+7. `docs/supabase-activation-plan.md`
+8. `docs/session-brief.md` only if deeper project history is needed
+
+## First Ten Minutes Of The New Session
+
+The new session should verify rather than assume:
+
+1. Run `git status --short --branch`.
+2. Confirm `git log --oneline --decorate -20` still has `35f26f4` in the current history and inspect the newer Phase 55A-55Q commits.
+3. Compare the current branch with `origin/main` and confirm which remote branches exist.
+4. Read the v0.2 manifest and confirm package/count expectations still match the repository.
+5. Review any current documentation or content diff before committing it.
+6. Run `git diff --check`.
+7. Confirm `private-data/source-candidates.json` remains ignored and run `npm.cmd run validate:candidates` from `app/`.
+8. If app or content files changed after Phase 54, rerun the complete release command set before any preview.
+
+## Phase 55 External Execution Sequence - Private Preview Complete
+
+The approved preview sequence is complete:
+
+1. Confirmed the Phase 52B checkpoint and Phase 55A-55C authority work in local history.
+2. Built and revalidated the original 218-page candidate; Phases 55E-55J advanced it to 261 pages and 153 sources, Phase 55K advanced it to 321 pages and 176 sources, Phase 55L advanced it to 345 pages and 183 sources, and Phase 55N advanced it to 380 pages, 189 sources, and three research collections with 47 document records.
+3. Created a private Sites source repository without pushing the branch to public GitHub.
+4. Added the minimal static Sites packaging adapter and deployed the reviewed checkpoint.
+5. Kept the preview owner-only and did not attach `ftfn.io`.
+6. Passed hosted route, canonical, indexing, update-log, robots, sitemap, and export checks.
+7. Recorded the provider, URL, checkpoint, packaging boundary, and QA result in the Phase 55D work package.
+8. Stopped before package freeze, public access, custom-domain attachment, or Hostinger DNS changes.
+9. Refreshed the owner-only deployment to Sites version 5 from exact commit `ddeea6ab3213d7e9367c6564a9b8d31395ba7675` after the Phase 55G authority conversion.
+10. Refreshed the owner-only deployment to Sites version 6 from exact commit `f2fe94ae95a2f702104b995c2a0a01776c00f3aa` after the Phase 55H pre-decision authority repair.
+11. Completed the Phase 55I content and candidate pass and refreshed the exact source commit `8ce2feba82a3ade2266e2d74788c003bca28a26f` as owner-only Sites version 7.
+12. Completed the Phase 55J publication gate, added OMB M-26-04, promoted all nine reviewed signals, and refreshed exact source commit `03d8d5db755c4f6ee0761a479ef0b9b3f0ff5d37` as owner-only Sites version 8.
+13. Completed the Phase 55K research layer with 23 reviewed documents, 22 local captures, one official-link record, five `In Review` synthesis signals, one briefing, one dependency map, and a verified 26-file archive.
+14. Deployed exact source commit `37f3ca6956d752642989f04486d13ff0c4555813` as owner-only Sites version 9 without changing access or DNS.
+15. Completed Phase 55L with eight stage-bounded implementation trails, seven new source profiles, seven new `In Review` signals, one repaired USAspending signal, one briefing, an expanded dependency map, and a verified 11-file archive.
+16. Deployed exact source commit `d1300d5503244c52541ac597163af9f991594294` as owner-only Sites version 10 with one allowed owner, no groups, and no access or DNS change.
+17. Completed Phase 55N with a 16-record outcome and local-conversion collection, six sources, six new `In Review` signals, two briefings, four organizations, integrated trail and dossier repairs, and a verified 19-file archive.
+18. Deployed exact source commit `c14551c7fad7e0ba6aac0e9e9ce03e5ad6189575` as owner-only Sites version 11 with one allowed owner, no groups, and no access or DNS change.
+19. Completed Phase 55M with fourteen record-level publication decisions: thirteen promotions and one scheduled-trial hold. The verified contract now contains 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources without adding routes.
+20. Deployed exact source commit `c1038783998234025ec2af65dae495272a263cc1` as owner-only Sites version 12 with one allowed owner, no groups, and no access or DNS change.
+21. Completed Phase 55O: two briefings Published, three briefings held, three dependency maps repaired and Published, 17 updates, and a passing 380-page release contract.
+22. Deployed exact source commit `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad` as owner-only Sites version 13 with one allowed owner, no groups, and no access or DNS change.
+23. Completed Phase 55P: six structured reader pathways now deepen five priority topic pages and both local-system pages, connect 30 distinct Published signals to the Published synthesis and research layers, preserve eight explicit evidence gaps, and add the eighteenth update without adding routes.
+24. Deployed exact source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` as owner-only Sites version 14 with one allowed owner, no groups, and no access, custom-domain, or DNS change.
+25. Completed Phase 55Q locally: six structured gap decisions, five named official sources, four bounded Published signals, dossier and pathway repairs, 19 updates, and a passing 389-page release contract.
+26. Preserved the Toronto Phase 55H task for August 1 and added the Arizona wastewater acceptance and operation recheck for September 22.
+27. Deployed exact source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97` as owner-only Sites version 15 with one allowed owner, no groups, and no access, custom-domain, or DNS change.
+28. Completed Phase 55S batch one and deployed exact source commit `9e393f0731d996662d95d912e9737bafdaa1ad67` as owner-only Sites version 16.
+29. Completed Phase 55S batch two locally: promoted 30 candidates, added 30 sources, seven signals, ten research documents, one collection, one briefing draft, and one update; verified 483 pages, 255 sources, 79 signals, 51 Published, and 28 In Review without changing access, DNS, custom-domain, or public GitHub state.
+30. Deployed exact Phase 55S batch-two source commit `3e2310de99382612be7c5221d0070184188f85d4` as owner-only Sites version 17 with the existing sole-owner access policy and no DNS, custom-domain, package, or public-GitHub change.
+31. Completed Phase 55T locally: added 17 named official sources and 18 bounded signals across nine thin topic families; ten Published and eight remained In Review.
+32. Raised all 17 topics to at least four signals and two Published records; added two In Review pathways, two In Review maps, Stack Watch 006, nine topic-summary repairs, three gap repairs, and one update.
+33. Verified 521 pages, 272 sources, 97 signals, 61 Published, 36 In Review, seven briefings, five maps, eight pathways across 12 Atlas surfaces, and 96 current Published-support sources.
+34. Deployed exact Phase 55T source commit `b0527aa7795fef7cb15273aad923904f69c4133e` as owner-only Sites version 18 with one allowed owner, no groups, and no access, DNS, custom-domain, package, or public-GitHub change.
+35. Completed Phase 55U locally: added Northern Virginia compute, Nevada lithium and battery materials, and Florida Space Coast launch dossiers with 26 official sources and 15 signals; twelve Published and three remained In Review.
+36. Added three evidence gaps, three reader pathways, Local Watch 002, `Local Authorization Is Not Operation`, eight topic repairs, one update, and three one-time dated tasks.
+37. Verified 570 pages, 298 sources, 112 signals, 73 Published, 39 In Review, five local systems, eight briefings, six maps, eleven pathways across 18 Atlas surfaces, and 112 current Published-support sources.
+38. Deployed Phase 55U app content commit `8d53ebe35904c719145b5f0ad1d2b2388cc1a2be` as owner-only Sites version 20 from receipt source commit `17253c9355f4f8ea809e3a5d49dcf328bc8c8254`, with one allowed owner, no groups, and no access, DNS, custom-domain, package, or public-GitHub change.
+39. Completed Phase 55V locally with eighteen reviewed primary documents split evenly across Northern Virginia, Nevada, and Florida; four official PDFs were captured locally and fourteen official-link records were preserved.
+40. Added Research Watch 001, deepened three local systems and pathways, narrowed gaps `011` through `013`, and corrected the Rhyolite Ridge DOE financing-stage boundary without claiming financial close.
+41. Verified 590 pages, 298 sources, 112 signals, 73 Published, 39 In Review, nine briefings, six collections, 83 research documents, 24 updates, and a 21-file Phase 55V archive.
+42. Matched app content commit `3bdb52a9348e5cf963ec6569838f880611d2491c` to private Sites source commit `b2db5978f0c4a37c35998f849fcd75158c115cec`, deployed owner-only Sites version 21, and verified succeeded deployment status plus the protected sign-in gate with one allowed owner and no groups.
+43. Completed the Phase 55W 45-record signal ledger: promoted 12, held 27, and reconfirmed six Published controls.
+44. Published Research Watch 001 and `Local Authorization Is Not Operation`; retained six briefings and two maps In Review.
+45. Added four Published pathways, multi-dimensional signal and source discovery, separate collection/document research shelves, topic-level latest-evidence shelves, and research/pathway exports.
+46. Verified 591 pages, 298 sources, 112 signals, 85 Published, 27 In Review, 134 current Published-support sources, 25 updates, 15 pathways across 19 Atlas surfaces, and five public-data exports.
+47. Matched local app commit `bdc34a225f0e27233c39d28df4ccf3c61e7d8776` to private Sites source commit `7ba179bf4ee1beaec5a7ba2299800bebb210c0c8`, deployed owner-only Sites version 22, and confirmed custom access with one allowed owner and no groups.
+48. Completed Phase 55X locally: added 24 official implementation records, twelve signals, nine source profiles, one 27-file collection archive, one `In Review` briefing, and integrated repairs across three local systems, four pathways, three gaps, eight topics, and one Published dependency map. Eight signals and 22 document summaries passed separate publication gates; all three end-to-end local pathways remain `In Review`. Verified 638 pages, 307 sources, 124 signals, 93 Published, 31 In Review, 26 updates, seven collections, and 107 research documents.
+
+## Required Stop Points
+
+External actions remain separate approvals:
+
+- GitHub push or pull-request creation,
+- hosting-provider connection and preview deployment,
+- merge to `main`,
+- package freeze from `0.2.0-dev` to `0.2.0`,
+- nameserver or DNS changes,
+- public launch,
+- analytics or newsletter collection,
+- Supabase production-project activation.
+
+Do not combine these into a single implied authorization. In particular, a passing preview does not authorize DNS changes.
+
+## Domain And Email Guardrail
+
+The domain is ready, but Google Workspace mail records are active. Before any production DNS action:
+
+- export or inventory the complete current DNS zone,
+- preserve Google MX and SPF records,
+- preserve any DKIM, DMARC, domain-verification, and other TXT records that exist,
+- decide whether to retain the current nameservers or migrate them,
+- verify mail before and after the change,
+- keep a rollback record of the prior values.
+
+## Parallel Supabase Track
+
+Supabase is ready to begin as a private authority-loop backend because the public/private contract is already defined. It is not required for the static preview or initial public site.
+
+When activated:
+
+- use Supabase Auth and RLS for private workflow data,
+- begin with the private source-candidate registry and review queue,
+- keep public publishing human-reviewed and Git-backed,
+- do not let database triggers, functions, or webhooks publish claims directly.
+
+## Ready-To-Paste Restart Prompt
+
+```text
+Continue the FTFN project from the current v0.2 handoff in this workspace.
+
+Read, in order:
+1. docs/build-summary-v0.2.md
+2. docs/roadmap-v0.2.md
+3. docs/session-handoff-v0.2.md
+4. deployment/ftfn-v0.2-build.json
+5. docs/release-qa-v0.2.md
+6. docs/launch-package.md
+
+Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
+
+The latest completed work is Phase 55X. The current candidate should be 0.2.0-dev on codex/phase51-content with 307 sources, 124 signals, 93 Published signals, 31 In Review signals, five local systems, three Published briefings, seven In Review briefings, four Published and two In Review dependency maps, thirteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 26 public updates, five JSON exports, 638 generated site pages, seven research collections, 107 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, and 27-file download archives. Confirm the Phase 55X owner-only deployment receipt after it is recorded; public access and DNS remain unchanged.
+
+The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
+
+Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55X is complete; begin Phase 55Y with 24 primary records and twelve bounded signals across AI assurance, advanced-manufacturing workforce conversion, industrial-water reuse operation, and autonomy service. Prioritize executed procurement, test and acceptance, service delivery, operating metrics, safety, and measured receiving-system outcomes. Treat the August 1 Toronto, August 10 DARPA Lift, August 15 Space Coast license, September 22 Arizona wastewater, October 1 Loudoun standards, and January 15 Nevada delivery tasks as bounded inserts rather than pauses. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+```
