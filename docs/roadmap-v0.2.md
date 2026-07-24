@@ -366,7 +366,7 @@ Recommended active schedule:
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
 | Authority backlog | Phase 55S | batches one and two complete; the remaining 30-record allocation now replenishes selected Phase 55U and Phase 55V work |
 | Completed | Phase 55T | all 17 topics now have at least four signals and two Published records; owner-only Sites version 18 deployed |
-| Completed | Phase 55U | three evidence-dense local systems, 26 sources, 15 signals, three pathways and gaps; owner-only Sites version 19 deployed |
+| Completed | Phase 55U | three evidence-dense local systems, 26 sources, 15 signals, three pathways and gaps; owner-only Sites version 20 deployed |
 | Current | Phase 55V | grow the primary-document research and synthesis layer |
 | Planned | Phase 55W | apply publication gates and make the larger corpus navigable |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |

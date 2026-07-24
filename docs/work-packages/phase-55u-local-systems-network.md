@@ -1,7 +1,7 @@
 # Phase 55U Local-Systems Network
 
 Date: 2026-07-24  
-Status: complete, release-verified, and deployed owner-only as Sites version 19
+Status: complete, release-verified, and deployed owner-only as Sites version 20
 
 ## Goal
 
@@ -162,14 +162,14 @@ The next major phase is Phase 55V: research collections and synthesis. The stron
 
 ## Deployment Receipt
 
-The exact validated Phase 55U source state was committed as `8d53ebe35904c719145b5f0ad1d2b2388cc1a2be`, pushed only to the private Sites source repository, saved as Sites version 19, and deployed successfully to:
+The exact validated Phase 55U app content was committed as `8d53ebe35904c719145b5f0ad1d2b2388cc1a2be`. After the deployment receipt was committed, the same verified artifact was saved from Sites source commit `17253c9355f4f8ea809e3a5d49dcf328bc8c8254` as version 20 and deployed successfully to:
 
 `https://ftfn-analytics.jbumstead.chatgpt.site`
 
 Receipt:
 
-- Version ID: `appgprj_6a614e1092d08191bf65779fc35df959~appgver_030456d80adc81918b61be5cc623d537`
-- Deployment ID: `appgdep_6a63b64da4a481918f9c11f9d1b9c866`
+- Version ID: `appgprj_6a614e1092d08191bf65779fc35df959~appgver_c2310a67069081918f1e10b32f183fc0`
+- Deployment ID: `appgdep_6a63b80444848191b3281624d57c6038`
 - Deployment status: succeeded
 - Access: custom owner-only policy with one allowed owner and no groups
 - Public GitHub: unchanged
