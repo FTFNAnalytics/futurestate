@@ -1537,7 +1537,7 @@ Purpose:
 - Record the user-approved shift from pause-between-gates work to continuous aggressive content expansion.
 - Define the first 90-record authority sprint and its three 30-record sub-batches.
 - Preserve the Phase 55T thin-topic, Phase 55U local-system, Phase 55V research-collection, and Phase 55W publication/navigation sequence.
-- Record the completed Phase 55V eighteen-document cross-corridor shelf, five local captures, thirteen official-link records, 21-file archive, Research Watch 001, and downstream-pathway integration.
+- Record the completed Phase 55V eighteen-document cross-corridor shelf, four local captures, fourteen official-link records, 21-file archive, Research Watch 001, and downstream-pathway integration.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 

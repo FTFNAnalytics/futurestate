@@ -4,7 +4,7 @@ This FTFN bundle contains the 18 primary records listed in the collection, a con
 
 ## Contents
 
-- Collection capture files: 5 official local captures and 13 official-link records.
+- Collection capture files: 4 official local captures and 14 official-link records.
 - `collection-summaries.md`: FTFN summaries, key findings, relevance, and evidence limits for all 18 documents.
 - `manifest.json`: file inventory, capture status, official links, sizes, and checksums.
 

@@ -53,7 +53,7 @@ Current `0.2.0-dev` state after Phase 55V:
 | Draft Sample signals | 0 |
 | Public update entries | 24 |
 | Research collections | 6 collections / 83 documents |
-| Research downloads | 42 local captures / 41 official-link files / 101 archive files across six ZIPs |
+| Research downloads | 41 local captures / 42 official-link files / 101 archive files across six ZIPs |
 | Named local inputs selected in Phases 50-55C | 18 |
 | Private source candidates | 150 local-only records |
 | Candidate review | all 150 reviewed once: 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected |
@@ -656,7 +656,7 @@ Phase 55U result:
 Phase 55V result:
 
 - one cross-corridor infrastructure-conversion collection built from eighteen reviewed official records, six each for Northern Virginia compute, Nevada lithium, and Florida space infrastructure;
-- five official PDFs captured locally, thirteen official-link records preserved, and a 21-file archive with summaries, README, manifest, sizes, and checksums verified;
+- four official PDFs captured locally, fourteen official-link records preserved, and a 21-file archive with summaries, README, manifest, sizes, and checksums verified;
 - one `In Review` Research Watch briefing added; all three local-system dossiers and reader pathways deepened; gaps `011` through `013` narrowed around named delivery proof;
 - the Rhyolite Ridge DOE financing record corrected to reflect a decision to issue a loan for defined facilities without claiming commitment terms, financial close, disbursement, construction, or operation;
 - 590 pages, 298 sources, 112 signals, 73 Published signals, 39 In Review signals, 24 updates, nine briefings, six maps, six research collections, 83 research documents, and eleven pathways across 18 Atlas surfaces verified locally.

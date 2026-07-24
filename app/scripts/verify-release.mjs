@@ -156,12 +156,12 @@ if (phase55VCollection) {
     .filter(Boolean);
   check(phase55VDocuments.length === 18, `Expected 18 Phase 55V research documents, found ${phase55VDocuments.length}.`);
   check(
-    phase55VDocuments.filter((document) => document.capture_status === "Original file captured").length === 5,
-    "Phase 55V must contain five captured official files.",
+    phase55VDocuments.filter((document) => document.capture_status === "Original file captured").length === 4,
+    "Phase 55V must contain four captured official files.",
   );
   check(
-    phase55VDocuments.filter((document) => document.capture_status === "Official link record").length === 13,
-    "Phase 55V must contain thirteen official-link records.",
+    phase55VDocuments.filter((document) => document.capture_status === "Official link record").length === 14,
+    "Phase 55V must contain fourteen official-link records.",
   );
 }
 

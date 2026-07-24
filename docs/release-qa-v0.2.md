@@ -231,7 +231,7 @@ A repeat visual/browser pass was not requested because the phase changes content
 
 ## Phase 55V Cross-Corridor Research QA Scope
 
-Phase 55V adds eighteen research-document routes, one collection route, one `In Review` briefing route, one public update, a five-capture and thirteen-link evidence bundle, and integrated content repairs without changing components, styles, layouts, navigation, or client-side behavior.
+Phase 55V adds eighteen research-document routes, one collection route, one `In Review` briefing route, one public update, a four-capture and fourteen-link evidence bundle, and integrated content repairs without changing components, styles, layouts, navigation, or client-side behavior.
 
 The 590-page artifact passes:
 
@@ -243,8 +243,8 @@ The 590-page artifact passes:
 - the unchanged 73 Published and 39 In Review signal indexing contract;
 - both Published briefings in the sitemap and all seven In Review briefings outside it;
 - all six Published research collections and all 83 document routes in the sitemap;
-- a verified 21-file Phase 55V ZIP with five valid official PDFs, thirteen official-link records, summaries, README, and checksum manifest;
-- explicit release assertions for the 18-document, five-capture, thirteen-link Phase 55V contract;
+- a verified 21-file Phase 55V ZIP with four valid official PDFs, fourteen official-link records, summaries, README, and checksum manifest;
+- explicit release assertions for the 18-document, four-capture, fourteen-link Phase 55V contract;
 - the 24-entry update log, three public exports, required routes and downloads, canonicals, robots, and private-registry exclusion.
 
 A repeat visual/browser pass was not requested because Phase 55V changes content only. Owner-only deployment refresh is pending; the public GitHub boundary, package version, Hostinger DNS, custom-domain state, and public access remain unchanged.

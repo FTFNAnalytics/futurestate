@@ -91,7 +91,7 @@ The approved preview sequence is complete:
 36. Added three evidence gaps, three reader pathways, Local Watch 002, `Local Authorization Is Not Operation`, eight topic repairs, one update, and three one-time dated tasks.
 37. Verified 570 pages, 298 sources, 112 signals, 73 Published, 39 In Review, five local systems, eight briefings, six maps, eleven pathways across 18 Atlas surfaces, and 112 current Published-support sources.
 38. Deployed Phase 55U app content commit `8d53ebe35904c719145b5f0ad1d2b2388cc1a2be` as owner-only Sites version 20 from receipt source commit `17253c9355f4f8ea809e3a5d49dcf328bc8c8254`, with one allowed owner, no groups, and no access, DNS, custom-domain, package, or public-GitHub change.
-39. Completed Phase 55V locally with eighteen reviewed primary documents split evenly across Northern Virginia, Nevada, and Florida; five official PDFs were captured locally and thirteen official-link records were preserved.
+39. Completed Phase 55V locally with eighteen reviewed primary documents split evenly across Northern Virginia, Nevada, and Florida; four official PDFs were captured locally and fourteen official-link records were preserved.
 40. Added Research Watch 001, deepened three local systems and pathways, narrowed gaps `011` through `013`, and corrected the Rhyolite Ridge DOE financing-stage boundary without claiming financial close.
 41. Verified 590 pages, 298 sources, 112 signals, 73 Published, 39 In Review, nine briefings, six collections, 83 research documents, 24 updates, and a 21-file Phase 55V archive.
 

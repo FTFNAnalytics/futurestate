@@ -57,7 +57,7 @@ Phase 55T closes the remaining topic-depth deficits with 17 named official sourc
 
 Phase 55U adds three evidence-dense systems: the Northern Virginia Data Center Corridor, Nevada Lithium And Battery Materials Corridor, and Florida Space Coast Launch Corridor. Twenty-six official source profiles support three 16-source dossiers and 15 bounded signals; twelve pass independent publication gates and three remain `In Review`. Three evidence gaps, three pathways, Local Watch 002, and `Local Authorization Is Not Operation` expose the conversion from demand, authorization, permits, environmental review, and finance into construction, acceptance, service, compliant operation, and scale. Three one-time Codex tasks preserve the dated FAA, Loudoun, and Nevada checks without pausing Phase 55V. The verified package reaches 570 pages, 298 sources, 112 signals, 73 Published, 39 In Review, 23 updates, five local systems, eight briefings, six maps, and eleven pathways across 18 Atlas surfaces. Phase 55U app content commit `8d53ebe35904c719145b5f0ad1d2b2388cc1a2be` is deployed as owner-only Sites version 20.
 
-Phase 55V turns those three local systems into a reusable primary-document shelf. Eighteen reviewed records are split evenly across Northern Virginia compute infrastructure, Nevada lithium projects, and Florida Space Coast infrastructure. Five official PDFs are captured locally, thirteen official-link records preserve the remaining primary rails, and the verified 21-file archive adds summaries, a README, and a checksum manifest. Research Watch 001 compares downstream delivery tests; all three local dossiers and pathways are deepened and gaps `011` through `013` are narrowed. The locally captured Rhyolite Ridge DOE decision corrects the prior potential-assistance wording while preserving the separate commitment, close, disbursement, construction, and operating stages. The verified package reaches 590 pages, 298 sources, 112 signals, 73 Published, 39 In Review, 24 updates, nine briefings, six collections, 83 research documents, and eleven pathways across 18 Atlas surfaces. Owner-only deployment refresh is pending.
+Phase 55V turns those three local systems into a reusable primary-document shelf. Eighteen reviewed records are split evenly across Northern Virginia compute infrastructure, Nevada lithium projects, and Florida Space Coast infrastructure. Four official PDFs are captured locally, fourteen official-link records preserve the remaining primary rails, and the verified 21-file archive adds summaries, a README, and a checksum manifest. Research Watch 001 compares downstream delivery tests; all three local dossiers and pathways are deepened and gaps `011` through `013` are narrowed. The locally captured Rhyolite Ridge DOE decision corrects the prior potential-assistance wording while preserving the separate commitment, close, disbursement, construction, and operating stages. The verified package reaches 590 pages, 298 sources, 112 signals, 73 Published, 39 In Review, 24 updates, nine briefings, six collections, 83 research documents, and eleven pathways across 18 Atlas surfaces. Owner-only deployment refresh is pending.
 
 ## Build Inventory
 
@@ -86,7 +86,7 @@ Additional current records:
 - 9 briefings: 2 Published and 7 In Review,
 - 6 research collections with 83 document records,
 - 11 reader pathways across 18 Atlas surfaces,
-- 42 official local captures plus 41 official-link records across verified 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file ZIP archives.
+- 41 official local captures plus 42 official-link records across verified 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file ZIP archives.
 
 ## What Is Built
 
@@ -174,7 +174,7 @@ Phase 55T adds 17 named official sources and 18 signals across the nine thinnest
 
 Phase 55U adds 26 official source profiles, three local-system dossiers, 15 signals, three evidence gaps, three pathways, one briefing, one map, and one public update. Twelve signals pass record-level publication review and three remain `In Review` behind named dated gates. The result is 570 generated pages, 298 sources, 112 signals, 73 Published, 39 In Review, 23 public updates, five local systems, eight briefings, six dependency maps, eleven pathways, and 112 current Published-support sources. Content validation, source endpoint metadata, Astro diagnostics, production build, local-system and pathway assertions, sitemap and indexing membership, exports, research archives, and private-registry exclusion pass.
 
-Phase 55V adds one 18-document research collection, five captured official PDFs, thirteen official-link records, a verified 21-file archive, one `In Review` briefing, and integrated repairs across three local systems, pathways, gaps, one signal, and one source profile. The result is 590 generated pages, 298 sources, 112 signals, 73 Published, 39 In Review, 24 public updates, nine briefings, six research collections, and 83 research documents. Candidate validation, content validation, source endpoint metadata, Astro diagnostics, the production build, all research routes, sitemap and indexing membership, archive checks, release assertions, public exports, and private-registry exclusion pass.
+Phase 55V adds one 18-document research collection, four captured official PDFs, fourteen official-link records, a verified 21-file archive, one `In Review` briefing, and integrated repairs across three local systems, pathways, gaps, one signal, and one source profile. The result is 590 generated pages, 298 sources, 112 signals, 73 Published, 39 In Review, 24 public updates, nine briefings, six research collections, and 83 research documents. Candidate validation, content validation, source endpoint metadata, Astro diagnostics, the production build, all research routes, sitemap and indexing membership, archive checks, release assertions, public exports, and private-registry exclusion pass.
 
 Verified results:
 
@@ -194,7 +194,7 @@ Verified results:
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
 - six Published research collections with all 83 document routes in the sitemap,
-- verified 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file ZIP archives containing 42 local captures, 41 official-link files, summaries, README files, and manifests.
+- verified 26-file, 11-file, 19-file, 11-file, 13-file, and 21-file ZIP archives containing 41 local captures, 42 official-link files, summaries, README files, and manifests.
 
 The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; the completed local-system gate and version-20 receipt are recorded in `docs/work-packages/phase-55u-local-systems-network.md`. Phase 55V is validated locally and ready for an owner-only Sites refresh. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 

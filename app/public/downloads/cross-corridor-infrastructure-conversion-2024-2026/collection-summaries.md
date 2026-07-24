@@ -374,7 +374,7 @@ The document sharpens the boundary between a signed agency financing decision an
 
 **Document type:** Agency Strategy
 
-**Capture status:** Original file captured
+**Capture status:** Official link record
 
 NASA's 2026 Kennedy Space Center master-plan digest frames long-range land, facilities, utilities, transportation, resilience, and multi-user development as a connected infrastructure system.
 
@@ -396,7 +396,7 @@ The plan supplies the Space Coast system envelope against which named capital, l
 
 **Official source:** https://www.nasa.gov/wp-content/uploads/2026/06/ksc-master-plan-digest-for-final-release.pdf?emrc=97dd82
 
-**Archive member:** `originals/13-kennedy-master-plan-digest-2026.pdf`
+**Archive member:** `official-links/13-kennedy-master-plan-digest-2026.txt`
 
 ## 14. FAA Spaceports by State
 

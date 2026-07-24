@@ -217,7 +217,7 @@ Collection contract:
 Phase 55V result:
 
 - built `Cross-Corridor Infrastructure Conversion Evidence, 2024-2026` with eighteen reviewed primary documents, six each for Northern Virginia compute infrastructure, Nevada lithium projects, and Florida Space Coast infrastructure;
-- captured five official PDFs locally and preserved thirteen reviewed official-link records, with document summaries, findings, relevance, and evidence limits for every item;
+- captured four official PDFs locally and preserved fourteen reviewed official-link records, with document summaries, findings, relevance, and evidence limits for every item;
 - generated and verified a 21-file downloadable archive with README, consolidated summaries, manifest, file sizes, and SHA-256 checksums;
 - added `Research Watch 001: Three Infrastructure Corridors, Three Delivery Tests` as a bounded `In Review` synthesis briefing;
 - deepened all three Phase 55U local systems and pathways and narrowed gaps `011` through `013` around named downstream proof;
