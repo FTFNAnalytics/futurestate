@@ -731,7 +731,7 @@ Exit criteria:
 - the twelve signal decisions and 24 document decisions are machine-readable;
 - receiving-system outcomes are not inferred from funding, award, authorization, design capacity, or planned activity;
 - the local release passes at 698 pages, 327 sources, 136 signals, 101 Published signals, 131 research documents, and 150 current Published-support sources;
-- the owner-only deployment remains the final gate for this phase.
+- the content ships in the combined Phase 55Y and Phase 55Z owner-only deployment.
 
 ### Phase 55Z: Comparative Operating Outcomes - Complete
 
@@ -760,7 +760,7 @@ Exit criteria:
 - comparisons disclose denominator, period, geography, method, and known limits;
 - no ranking, readiness score, or cross-system equivalence is inferred from incompatible records;
 - the local release passes at 780 pages, 357 sources, 152 signals, 113 Published signals, 163 research documents, and 166 current Published-support sources;
-- the owner-only deployment remains the final external gate.
+- owner-only Sites version 25 serves the exact combined Phase 55Y and Phase 55Z tree.
 
 ### Phase 56A: Within-Domain Longitudinal Outcome Series - Next
 
@@ -906,4 +906,4 @@ Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Sites version 23 serves the exact Phase 55X tree from private source commit `6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac` under custom access with one allowed owner and no groups. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 25 serves local app commit `db18ef9` from private source commit `2f1c2e6d07f24a75a80d0fb83bab123b38fa2fbf` under custom access with one allowed owner and no groups. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
