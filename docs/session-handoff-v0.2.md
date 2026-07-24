@@ -20,7 +20,7 @@ Private authority layer: 150 candidates, 15 profiles, 132 Candidate, 11 Active S
 Deployment: owner-only Sites version 12 from c1038783 at https://ftfn-analytics.jbumstead.chatgpt.site
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 116 Manual Review, 73 Probe Ready; 14 Strong coverage lanes
-Next phase: Phase 55H post-Council recheck after July 31; DARPA Lift results recheck after August 9
+Next phase: Phase 55O synthesis publication pass now; Phase 55H after July 31; Phase 55P and 55Q next; Phase 55R after August 9
 ```
 
 ## Read First
@@ -130,5 +130,5 @@ The latest completed work is the Phase 55M publication-readiness review of the c
 
 Phase 55I completed the first-pass review of all 150 local-only private candidates across 15 profiles: 132 Candidate, 11 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55M promoted thirteen bounded records and kept the Lift Challenge In Review as a scheduled future trial. Phase 55H records Toronto application 24 254930's July 29-31 Council date; complete the same-item recheck after the meeting. Recheck the official DARPA Lift Challenge record after August 9 for measured results, winners, prize awards, and transition evidence. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. Start Phase 55O by reviewing all five briefings and three dependency maps for a publish, repair, split, or hold decision. Insert Phase 55H after the July 29-31 Council window, then continue with Phase 55P reader pathways and Phase 55Q high-value evidence-gap closure. Insert Phase 55R after August 9 to recheck the DARPA Lift Challenge for measured results, winners, prize awards, and transition evidence. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

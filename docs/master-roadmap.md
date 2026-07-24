@@ -1192,21 +1192,15 @@ Completed:
 
 Next candidate work:
 
-- Reconcile the current NSTC and NAPMP trail recipient by recipient; do not infer that Commerce's later action canceled every earlier award.
-- Track GAO's prototype-to-production oversight recommendations separately from agreement-specific delivery, acceptance, and follow-on evidence.
-- Follow O-RAN version 1.7 into external testing, security findings, certification use, and operator adoption; follow the PIV working drafts into formal revisions, validation, pilots, and issued credentials.
-- Follow Phoenix Fab 3 and later buildings into permits, occupancy, equipment, utility, wastewater, workforce, qualification, and production records.
-- Keep the Lift Challenge signal `In Review` as a scheduled future trial until official post-August 9 results exist; preserve separate award, obligation, physical milestone, test, acceptance, operation, and scale stages for every other record.
-- Capture the first public federal agency post-quantum migration plan, procurement implementation, proposed FAR rule, or NIST pilot result.
-- Follow Project Baccara through the fully executed County record, condition compliance, service and precise-POD requirements, military-compatibility compliance, construction, testing, occupancy, and operating evidence.
-- Recheck Toronto application 24 254930 after the July 29-31, 2026 Council window for adoption, by-laws, and later permit records.
-- Preserve the owner-only Phase 55M checkpoint after deployment refresh and complete the dated Phase 55H Council recheck after the July 29-31 meeting window.
-- Complete Phase 55H with the post-meeting Toronto recheck; if no named official stage has advanced, record the dated result and stop.
-- Decide whether In Review local systems and dependency maps should remain indexable or move to clearer research/noindex treatment before launch.
-- Keep the unresolved local trails as dated monitors: completed wastewater and reclaimed-water infrastructure, Phoenix permits and occupancy, apprenticeship outcomes, Toronto City Council and by-laws, and project start/completion evidence.
-- Keep additional publication promotion behind a fresh publication-candidate review; the current public set is 38.
-- Continue repairing broad In Review signals into dated source-backed records where the expanded source registry supports a specific update; the next acquisition cycle should be driven by named evidence gaps, not by another volume target.
-- Keep Supabase activation and any broad public source promotion batch separate from the bounded local content track.
+- Phase 55O: review all five briefings and three dependency maps for explicit publish, repair, split, or hold decisions. Promote no synthesis product whose central conclusion depends on unresolved In Review evidence.
+- Phase 55H dated insert: after the July 29-31 Council window, recheck Toronto application `24 254930` for disposition, amendments, bill and by-law status, condition compliance, and later permits. Record a dated negative result and stop if the official stage did not advance.
+- Phase 55P: build five to six reader pathways across chips and compute, energy and grid capacity, critical minerals, policy and standards, advanced manufacturing, and local conversion. Anchor each pathway to Published signals and visible evidence gaps.
+- Phase 55Q: choose four to six high-value evidence gaps, led by Arizona power, water, and workforce; Ontario conversion and permit-to-start evidence; and institution-level post-quantum implementation. Require named authoritative records before drafting.
+- Phase 55R dated insert: after August 9, recheck the DARPA Lift Challenge for measured results, winners, prize awards, and transition evidence. Keep the scheduled-trial record `In Review` if no independently useful outcome exists.
+- Continue the NSTC and NAPMP recipient-level reconciliation, GAO prototype-OTA oversight trail, O-RAN external testing and adoption trail, PIV revision and pilot trail, Phoenix Fab 3 conversion trail, and Project Baccara downstream stages only where they serve a selected pathway or evidence gap.
+- Decide during Phase 55O whether In Review local systems and dependency maps should remain indexable or move to clearer research/noindex treatment before launch.
+- Preserve separate award, obligation, physical milestone, permit, test, acceptance, operation, and scale stages for every record.
+- Keep the owner-only Phase 55M checkpoint, Supabase activation, public access, package freeze, DNS, custom-domain attachment, and public GitHub synchronization as separate tracks or approval gates.
 
 Decision:
 

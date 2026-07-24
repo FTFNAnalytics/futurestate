@@ -2309,3 +2309,26 @@ Implemented:
 Boundary:
 
 Publication does not turn financing into construction, an award notice into current recipient status, a capacity contract into energized transmission, delivered fuel into reactor operation, a prototype ceiling into spending or delivery, a governance action into universal cancellation, an oversight gap into agreement failure, an experimental tool into commercial interoperability, topping out into occupancy or production, a purchasing channel into adoption, or a preliminary draft into a final deployed standard. Public access, package freeze, custom-domain attachment, Hostinger DNS, public GitHub synchronization, and public launch remain separate decisions.
+
+## 2026-07-23: The Next Content Runway Proceeds Around Dated Evidence Gates
+
+Decision:
+
+FTFN will not wait for the Phase 55H Toronto Council date before continuing content work. Phase 55O will review the five briefings and three dependency maps for publish, repair, split, or hold decisions; Phase 55P will build priority reader pathways; and Phase 55Q will close a bounded set of high-value evidence gaps. Phase 55H and Phase 55R will enter the sequence only when the Toronto and DARPA records reach their stated recheck dates.
+
+Rationale:
+
+The current candidate already contains 38 Published signals, five briefings, three dependency maps, three research collections, and ten explicit evidence gaps. The next authority gain comes from converting those records into defensible synthesis and coherent reader journeys, then acquiring only the named evidence that blocks the strongest pathways. Waiting for dated events would create an unnecessary gap; starting another source-volume target would weaken the link between acquisition and reader value.
+
+Sequence:
+
+- Phase 55O: decide publish, repair, split, or hold for every briefing and dependency map.
+- Phase 55H: after July 31, complete the Toronto post-Council recheck and stop on a dated negative result.
+- Phase 55P: build five to six Published-evidence reader pathways.
+- Phase 55Q: advance four to six named high-value evidence gaps.
+- Phase 55R: after August 9, recheck the DARPA Lift Challenge outcome record.
+- Phase 56 remains an explicit public-release, package-freeze, DNS, and custom-domain approval gate.
+
+Boundary:
+
+No synthesis product is promoted because it exists, no pathway may hide an unresolved stage, and no evidence-gap batch may become a new volume target. Owner-only access remains unchanged. Public access, package freeze, custom-domain attachment, Hostinger DNS, public GitHub synchronization, Supabase activation, and public launch remain separate decisions.

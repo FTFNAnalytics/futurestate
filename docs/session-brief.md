@@ -129,7 +129,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve the owner-only preview. Phase 55M is complete with thirteen promotions and the future-dated Lift Challenge hold. Complete Phase 55H after the July 29-31 Toronto Council meeting, then recheck the Lift Challenge after August 9. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve the owner-only preview and begin Phase 55O now: review the five briefings and three dependency maps for publish, repair, split, or hold decisions. Phase 55H is a dated insert after the July 29-31 Toronto Council meeting, not a blocker. Phase 55P then builds reader pathways, Phase 55Q closes a bounded set of high-value evidence gaps, and Phase 55R rechecks the Lift Challenge after August 9. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -298,24 +298,22 @@ Key files:
 
 ## Next Decision Gate
 
-Next external decision identified in the roadmap:
+Next executable decision identified in the roadmap:
 
 ```text
-Phase 56 public access, release freeze, and ftfn.io custom-domain approval
+Phase 55O briefing and dependency-map publication pass
 ```
 
-If approved:
+Proceed by:
 
-- review and commit `docs/build-summary-v0.2.md`, `docs/roadmap-v0.2.md`, and `docs/session-handoff-v0.2.md`,
-- push `codex/phase51-content` to GitHub and review it against `main`,
-- change the Sites access policy only after explicit public-release approval,
-- request the exact Sites custom-domain records for `ftfn.io` and `www.ftfn.io`,
-- inventory Hostinger DNS and preserve every Google Workspace mail and verification record,
-- decide separately whether to freeze package version `0.2.0` and attach `ftfn.io`,
-- keep the Phase 51 wastewater, permit, workforce-outcome, Toronto Council, by-law, start, completion, and occupancy trails as dated monitors,
+- audit all five briefings and three dependency maps against Published support, caveats, correction paths, and reader usefulness,
+- assign a publish, repair, split, or hold decision to every product,
+- insert the Phase 55H Toronto recheck after July 31 and record a dated negative result if the official stage did not advance,
+- continue into Phase 55P reader pathways and Phase 55Q evidence-gap closure,
+- insert the Phase 55R DARPA Lift recheck after August 9,
 - keep Git and the static build as the public publication gate,
-- activate the private Supabase authority loop separately when project access is ready,
-- do not attach `ftfn.io`, change DNS, or publicly launch without explicit approval.
+- preserve owner-only Sites access,
+- keep Phase 56 public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch as separate explicit decisions.
 
 ## Most Important Documents
 
@@ -402,7 +400,7 @@ Current development state:
 v0.2 owner-only hosted candidate: package 0.2.0-dev, 189 public sources, 150 first-pass-triaged private candidates, 63 signals, 17 topics, 16 updates, 380 generated site pages, 38 Published signals, 47 research documents, verified 26-file, 11-file, and 19-file research archives, and 3 public JSON endpoints. Sites version 12 serves exact source commit c1038783998234025ec2af65dae495272a263cc1 at https://ftfn-analytics.jbumstead.chatgpt.site under the unchanged owner-only access policy. Source Coverage is 14 Strong lanes; source health reports 116 Manual Review and 73 Probe Ready records.
 
 Next decision gate:
-Preserve the owner-only preview. Phase 55M is complete: thirteen records passed and the Lift Challenge remains In Review until official post-August 9 results. Complete Phase 55H after the 29-31 July 2026 Council window. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve the owner-only preview and begin Phase 55O now. Review all five briefings and three dependency maps for publish, repair, split, or hold decisions. Treat Phase 55H after July 31 and Phase 55R after August 9 as dated inserts; continue through Phase 55P reader pathways and Phase 55Q high-value evidence-gap closure between them. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```
