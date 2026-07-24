@@ -2,16 +2,16 @@
 
 Date: 2026-07-24
 
-Status: Phase 55T release gate and owner-only Sites version 18 deployment passed.
+Status: Phase 55U local release gate passed; owner-only deployment refresh pending.
 
 ## Artifact Under Review
 
 - Build manifest: `deployment/ftfn-v0.2-build.json`
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
-- Expected build: 521 HTML pages
-- Content baseline: 272 sources, 97 signals, 17 topics, 22 update entries, 6 Phase 55Q gap decisions, 8 reader pathways across 12 Atlas surfaces, 7 briefings, 5 dependency maps, 5 research collections, 65 research documents
-- Publication baseline: 61 Published signals, 36 In Review signals, 2 Published briefings, 5 In Review briefings, 3 Published dependency maps, 2 In Review dependency maps
+- Expected build: 570 HTML pages
+- Content baseline: 298 sources, 112 signals, 17 topics, 23 update entries, 13 evidence gaps, 11 reader pathways across 18 Atlas surfaces, 5 local systems, 8 briefings, 6 dependency maps, 5 research collections, 65 research documents
+- Publication baseline: 73 Published signals, 39 In Review signals, 2 Published briefings, 6 In Review briefings, 3 Published dependency maps, 3 In Review dependency maps
 
 The package remains `0.2.0-dev`. The owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
 
@@ -31,18 +31,18 @@ Result:
 
 | Check | Result |
 | --- | --- |
-| Private candidates | Passed: 150 records; 102 Candidate, 41 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage |
-| Content references | Passed: 225 sources, 72 signals, 17 topics, 19 organizations, 5 technologies, 2 local systems, 5 briefings, 10 evidence gaps, 3 dependency maps, 4 research collections, 55 research documents, 6 reader pathways, 20 updates |
-| Source endpoint metadata | Passed: 139 Manual review, 86 Probe ready |
+| Private candidates | Passed: 150 records; 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage |
+| Content references | Passed: 298 sources, 112 signals, 17 topics, 19 organizations, 5 technologies, 5 local systems, 8 briefings, 13 evidence gaps, 6 dependency maps, 5 research collections, 65 research documents, 11 reader pathways, 23 updates |
+| Source endpoint metadata | Passed: 192 Manual Review, 106 Probe Ready |
 | Astro diagnostics | Passed: 0 errors, 0 warnings, 0 hints |
-| Static build | Passed: 434 HTML pages |
-| Release assertions | Passed: required outputs, 6 Phase 55Q gap decisions, 6 pathways across 7 Atlas surfaces, update log, exports, Published-source dates, robots, sitemap, canonical, and indexing boundaries |
+| Static build | Passed: 570 HTML pages |
+| Release assertions | Passed: required outputs, 5 local systems, 6 Phase 55Q gap decisions, 11 pathways across 18 Atlas surfaces, update log, exports, Published-source dates, robots, sitemap, canonical, and indexing boundaries |
 
 The release assertion is preserved as `npm run verify:release`. It reads the v0.2 manifest and fails if the checked build no longer matches the release contract.
 
 ## Current-Source Gate
 
-The 45 Published signals resolve to 75 unique source records. All 75 have a `last_checked_date` on or after `2026-07-22`.
+The 73 Published signals resolve to 112 unique source records. All 112 have a `last_checked_date` on or after `2026-07-22`.
 
 Phase 55F retained the Phase 54 source floor and refreshed the older NASA Artemis, USDA plant-breeding, and CMHC portal support rails. The verifier now reads the expected support-source count and minimum checked date from the release manifest rather than hard-coding the earlier nine-record baseline.
 
@@ -205,3 +205,26 @@ The 521-page artifact passes:
 - all five Published research collections, 65 document routes, and the five existing download archives.
 
 A repeat visual/browser pass was not requested because the phase changes content only. Exact source commit `b0527aa7795fef7cb15273aad923904f69c4133e` is deployed successfully as owner-only Sites version 18 at `https://ftfn-analytics.jbumstead.chatgpt.site`. The access policy remains custom with one allowed owner and no groups. The public GitHub boundary, package version, Hostinger DNS, and custom-domain state remain unchanged.
+
+## Phase 55U Local-Systems Network QA Scope
+
+Phase 55U adds content records, topic integrations, and release assertions without changing components, styles, layouts, navigation, or client-side behavior. It adds 26 source routes, 15 signal routes, three local-system routes, three evidence-gap routes, one briefing route, one dependency-map route, three pathway records, and one update.
+
+The 570-page artifact passes:
+
+- private-candidate validation for the unchanged 150-record local-only registry;
+- content-reference validation across 298 sources, 112 signals, 17 topics, five local systems, eight briefings, thirteen evidence gaps, six dependency maps, eleven pathways, five research collections, and 65 research documents;
+- source endpoint metadata review for 192 Manual Review and 106 Probe Ready sources;
+- Astro diagnostics with zero errors, warnings, or hints;
+- production generation of 570 pages;
+- all 73 Published signal routes in the sitemap and all 39 In Review signal routes outside it;
+- exactly 112 current Published-support sources;
+- both Published briefings in the sitemap and all six In Review briefings outside it;
+- all three Published dependency maps in the sitemap and all three In Review maps outside it;
+- eleven pathways across thirteen topic and five local-system surfaces;
+- the 23-entry update log, three public exports, required routes and downloads, canonicals, robots, and private-registry exclusion;
+- all five Published research collections, 65 document routes, and the five existing download archives.
+
+Three one-time Codex tasks were created for the dated Phase 55U checks: August 15, 2026 for the Shuttle Landing Facility license; October 1, 2026 for Loudoun Phase 2 standards; and January 15, 2027 for Nevada lithium project delivery.
+
+A repeat visual/browser pass was not requested because the phase changes content only. Owner-only Sites version 18 remains the hosted Phase 55T checkpoint until the exact Phase 55U source commit is saved and deployed. The access policy, public GitHub boundary, package version, Hostinger DNS, and custom-domain state remain unchanged.

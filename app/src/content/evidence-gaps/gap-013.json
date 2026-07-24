@@ -1,0 +1,69 @@
+{
+  "id": "gap-013",
+  "title": "Space Coast infrastructure delivery, license status, and utilization",
+  "slug": "gap-013-space-coast-infrastructure-license-utilization",
+  "status": "Source Added",
+  "priority": "High",
+  "local_system": "Florida Space Coast Launch Corridor",
+  "primary_topic": "Space",
+  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Infrastructure", "Regulation", "Permitting", "Safety", "Weather", "Labor", "Capital", "Climate"],
+  "question": "Which Space Coast plans, licenses, and capital programs convert into accepted infrastructure, available missions, safe operation, and sustained utilization?",
+  "why_it_matters": "An operating corridor can still contain unresolved site licenses, constrained range and utilities, incomplete capital projects, and unmeasured local or environmental outcomes.",
+  "current_support": "The dossier now links NASA's master plan and environmental review, FAA site and operator-license rails, the SLC-40 final environmental decision, FDOT planning and funding records, and Space Florida annual reports.",
+  "missing_evidence": [
+    "formal current Shuttle Landing Facility license disposition",
+    "named state capital awards, contracts, construction, and acceptance",
+    "operator and mission licenses tied to infrastructure use",
+    "range availability, delay, incident, and utilization data",
+    "utility, resilience, workforce, housing, and environmental outcomes"
+  ],
+  "likely_source_types": [
+    "FAA license and DRS record",
+    "NASA or Space Force project record",
+    "FDOT agreement and procurement record",
+    "Space Florida contract, audit, or facility record",
+    "mission, safety, utilization, and local outcome data"
+  ],
+  "candidate_records": [
+    "Shuttle Landing Facility renewal, replacement, lapse, or disposition",
+    "SLC-40 license modification and landing-zone construction",
+    "named FDOT spaceport project agreement and acceptance",
+    "KSC master-plan project budget and construction trail",
+    "range utilization, mission delay, safety, and resilience records"
+  ],
+  "next_action": "Resolve the Shuttle Landing Facility license record first, then follow named master-plan, environmental, state-capital, and mission records through construction, acceptance, operation, and outcomes.",
+  "future_data_model_need": ["Project", "License", "Capital Program", "Operating Outcome"],
+  "related_source_ids": [
+    "source-nasa-kennedy-master-plan-2026",
+    "source-faa-spaceports-by-state-2026",
+    "source-faa-shuttle-landing-facility-license",
+    "source-faa-slc40-final-ea",
+    "source-faa-part450-transition-2026",
+    "source-fdot-spaceport-program",
+    "source-space-florida-annual-reports"
+  ],
+  "related_signal_ids": [
+    "signal-kennedy-multiuser-master-plan",
+    "signal-space-florida-lc46-site-license-renewal",
+    "signal-slc40-final-environmental-decision",
+    "signal-faa-part450-operator-transition",
+    "signal-shuttle-landing-facility-license-status-watch"
+  ],
+  "related_local_system_ids": ["local-florida-space-coast-launch-corridor"],
+  "latest_review": {
+    "phase": "Phase 55U",
+    "decision": "Dated Hold",
+    "review_date": "2026-07-24",
+    "named_records": [
+      "FAA Spaceports by State",
+      "FAA Shuttle Landing Facility record",
+      "FAA SLC-40 final environmental assessment",
+      "NASA Kennedy Space Center Master Plan"
+    ],
+    "stage_result": "The corridor now has a named planning, licensing, environmental, and state-capital stack. The official FAA pages still display a past Shuttle Landing Facility expiration date, so current license status remains unresolved.",
+    "stop_rule": "Do not treat a site listing, master plan, environmental decision, funding program, or facility capability description as a current mission license, completed project, safe operation, or sustained utilization.",
+    "next_check_date": "2026-08-15"
+  },
+  "notes": "Phase 55U creates an immediate dated license-status check and a longer project-delivery trail."
+}

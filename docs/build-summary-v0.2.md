@@ -55,33 +55,35 @@ Phase 55S batch two completes the next 30 authority records across critical mine
 
 Phase 55T closes the remaining topic-depth deficits with 17 named official sources and 18 bounded signals across nine topic families. Ten records pass independent publication gates and eight remain `In Review`. Every topic now contains at least four signals and at least two Published records. Two new `In Review` pathways and two `In Review` dependency maps connect climate observation to local decision and autonomy regulation to operating service; Stack Watch 006, nine topic-summary repairs, and three evidence-gap repairs make the next-record questions explicit. The verified package reaches 521 pages, 272 sources, 97 signals, 61 Published, 36 In Review, 22 updates, seven briefings, five dependency maps, and eight pathways across 12 Atlas surfaces. Sites version 18 serves exact source commit `b0527aa7795fef7cb15273aad923904f69c4133e` under the unchanged owner-only policy.
 
+Phase 55U adds three evidence-dense systems: the Northern Virginia Data Center Corridor, Nevada Lithium And Battery Materials Corridor, and Florida Space Coast Launch Corridor. Twenty-six official source profiles support three 16-source dossiers and 15 bounded signals; twelve pass independent publication gates and three remain `In Review`. Three evidence gaps, three pathways, Local Watch 002, and `Local Authorization Is Not Operation` expose the conversion from demand, authorization, permits, environmental review, and finance into construction, acceptance, service, compliant operation, and scale. Three one-time Codex tasks preserve the dated FAA, Loudoun, and Nevada checks without pausing Phase 55V. The locally verified package reaches 570 pages, 298 sources, 112 signals, 73 Published, 39 In Review, 23 updates, five local systems, eight briefings, six maps, and eleven pathways across 18 Atlas surfaces. Owner-only Sites version 18 remains the hosted checkpoint until the Phase 55U source is committed and refreshed.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 521 | +339 |
-| Sources | 102 | 272 | +170 |
-| Signals | 18 | 97 | +79 |
-| Published signals | 3 | 61 | +58 |
-| In Review signals | 14 | 36 | +22 |
+| Generated HTML pages | 182 | 570 | +388 |
+| Sources | 102 | 298 | +196 |
+| Signals | 18 | 112 | +94 |
+| Published signals | 3 | 73 | +70 |
+| In Review signals | 14 | 39 | +25 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 22 | +22 |
+| Public update entries | 0 | 23 | +23 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
 
 - 19 organizations,
 - 5 technologies,
-- 2 local systems,
-- 10 evidence gaps,
+- 5 local systems,
+- 13 evidence gaps,
 - 6 structured Phase 55Q evidence-gap decisions,
-- 5 dependency maps: 3 Published and 2 In Review,
-- 7 briefings: 2 Published and 5 In Review,
+- 6 dependency maps: 3 Published and 3 In Review,
+- 8 briefings: 2 Published and 6 In Review,
 - 5 research collections with 65 document records,
-- 8 reader pathways across 12 existing Atlas surfaces,
+- 11 reader pathways across 18 Atlas surfaces,
 - 37 official local captures plus 28 official-link records across verified 26-file, 11-file, 19-file, 11-file, and 13-file ZIP archives.
 
 ## What Is Built
@@ -92,7 +94,7 @@ The public application includes:
 - Published-first signal index and signal detail pages,
 - Atlas indexes and details for topics, sources, organizations, technologies, local systems, evidence gaps, and dependency maps,
 - a Research section with collection and per-document summary pages, evidence limits, official/local downloads, and cross-site links,
-- two named local-system evidence dossiers,
+- five named local-system evidence dossiers,
 - Source Monitor and Source Coverage surfaces,
 - Method, publication-policy, updates/corrections, About, and briefing surfaces,
 - versioned JSON exports for sources, topics, and Published signals,
@@ -168,16 +170,18 @@ Phase 55S batch two promoted the next 30 High-priority candidates, added seven s
 
 Phase 55T adds 17 named official sources and 18 signals across the nine thinnest topic families. Ten pass record-level publication review and eight retain explicit downstream holds. Every topic now has at least four signals and at least two Published records. The result is 521 generated pages, 272 sources, 97 signals, 61 Published, 36 In Review, 22 public updates, seven briefings, five dependency maps, eight pathways, and 96 current Published-support sources. Candidate validation, content validation, source endpoint metadata, Astro diagnostics, production build, sitemap and indexing membership, exports, research archives, topic-floor checks, and private-registry exclusion pass.
 
+Phase 55U adds 26 official source profiles, three local-system dossiers, 15 signals, three evidence gaps, three pathways, one briefing, one map, and one public update. Twelve signals pass record-level publication review and three remain `In Review` behind named dated gates. The result is 570 generated pages, 298 sources, 112 signals, 73 Published, 39 In Review, 23 public updates, five local systems, eight briefings, six dependency maps, eleven pathways, and 112 current Published-support sources. Content validation, source endpoint metadata, Astro diagnostics, production build, local-system and pathway assertions, sitemap and indexing membership, exports, research archives, and private-registry exclusion pass.
+
 Verified results:
 
-- 521 generated site pages,
-- exact exports for 272 sources, 17 topics, and 61 Published signals,
-- all 61 Published signal routes included in the sitemap,
+- 570 generated site pages,
+- exact exports for 298 sources, 17 topics, and 73 Published signals,
+- all 73 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
-- both Published briefing routes included in the sitemap and all five held briefing routes excluded,
-- all three Published dependency-map routes included in the sitemap and both held map routes excluded,
-- all eight reader pathways rendered across 12 existing Atlas surfaces with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records,
-- all ten evidence-gap details included in the sitemap, with exactly six structured Phase 55Q decisions rendered and verified,
+- both Published briefing routes included in the sitemap and all six held briefing routes excluded,
+- all three Published dependency-map routes included in the sitemap and all three held map routes excluded,
+- all eleven reader pathways rendered across 18 Atlas surfaces with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records,
+- all thirteen evidence-gap details included in the sitemap, with exactly six structured Phase 55Q decisions rendered and verified,
 - correct canonical, robots, and publication-state indexing boundaries,
 - ten core journeys checked at `1440x900` and `390x844`,
 - compact header brand and navigation targets repaired to a 44-pixel minimum,
@@ -188,7 +192,7 @@ Verified results:
 - five Published research collections with all 65 document routes in the sitemap,
 - verified 26-file, 11-file, 19-file, 11-file, and 13-file ZIP archives containing 37 local captures, 28 official-link files, summaries, README files, and manifests.
 
-The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; the completed topic-depth gate is recorded in `docs/work-packages/phase-55t-thin-topic-corpus-build.md`. Sites version 18 serves exact Phase 55T source commit `b0527aa7795fef7cb15273aad923904f69c4133e`. The expansion does not change the access policy, package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
+The active content program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; the completed local-system gate is recorded in `docs/work-packages/phase-55u-local-systems-network.md`. Sites version 18 remains the hosted Phase 55T checkpoint until Phase 55U is committed and refreshed. The expansion does not change the access policy, package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
@@ -241,4 +245,4 @@ npm.cmd run build
 npm.cmd run verify:release
 ```
 
-Expected output: 521 generated site pages, verified 26-file, 11-file, 19-file, 11-file, and 13-file research archives, six Phase 55Q evidence decisions, eight reader pathways across 12 Atlas surfaces, and a passing v0.2 release assertion.
+Expected output: 570 generated site pages, verified 26-file, 11-file, 19-file, 11-file, and 13-file research archives, six Phase 55Q evidence decisions, eleven reader pathways across 18 Atlas surfaces, five local systems, and a passing v0.2 release assertion.

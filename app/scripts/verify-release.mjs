@@ -55,10 +55,20 @@ const researchCollectionDirectory = join(appRoot, "src", "content", "research-co
 const researchDocumentDirectory = join(appRoot, "src", "content", "research-documents");
 const readerPathwayDirectory = join(appRoot, "src", "content", "reader-pathways");
 const evidenceGapDirectory = join(appRoot, "src", "content", "evidence-gaps");
+const localSystemDirectory = join(appRoot, "src", "content", "local-systems");
+const briefingDirectory = join(appRoot, "src", "content", "briefings");
+const dependencyMapDirectory = join(appRoot, "src", "content", "dependency-maps");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
 const evidenceGapFiles = (await readdir(evidenceGapDirectory)).filter((name) => name.endsWith(".json"));
+const localSystemFiles = (await readdir(localSystemDirectory)).filter(
+  (name) => name.endsWith(".md") || name.endsWith(".mdx"),
+);
+const briefingFiles = (await readdir(briefingDirectory)).filter(
+  (name) => name.endsWith(".md") || name.endsWith(".mdx"),
+);
+const dependencyMapFiles = (await readdir(dependencyMapDirectory)).filter((name) => name.endsWith(".json"));
 const researchCollections = await Promise.all(
   researchCollectionFiles.map((name) => readJson(join(researchCollectionDirectory, name))),
 );
@@ -99,6 +109,18 @@ check(
 check(
   evidenceGaps.length === manifest.expected_build.evidence_gaps,
   `Expected ${manifest.expected_build.evidence_gaps} evidence gaps, found ${evidenceGaps.length}.`,
+);
+check(
+  localSystemFiles.length === manifest.expected_build.local_systems,
+  `Expected ${manifest.expected_build.local_systems} local systems, found ${localSystemFiles.length}.`,
+);
+check(
+  briefingFiles.length === manifest.expected_build.briefings,
+  `Expected ${manifest.expected_build.briefings} briefings, found ${briefingFiles.length}.`,
+);
+check(
+  dependencyMapFiles.length === manifest.expected_build.dependency_maps,
+  `Expected ${manifest.expected_build.dependency_maps} dependency maps, found ${dependencyMapFiles.length}.`,
 );
 check(signals.schema_version === "1.0" && sources.schema_version === "1.0" && topics.schema_version === "1.0", "All public exports must use schema version 1.0.");
 check(signals.records.every((record) => record.record_status === "Published"), "Signal export contains a non-Published record.");
@@ -201,6 +223,23 @@ const synthesisRouteGroups = [
   },
 ];
 
+check(
+  manifest.published_briefing_routes.length === manifest.expected_build.published_briefings,
+  `Expected ${manifest.expected_build.published_briefings} Published briefing routes, found ${manifest.published_briefing_routes.length}.`,
+);
+check(
+  manifest.in_review_briefing_routes.length === manifest.expected_build.in_review_briefings,
+  `Expected ${manifest.expected_build.in_review_briefings} In Review briefing routes, found ${manifest.in_review_briefing_routes.length}.`,
+);
+check(
+  manifest.published_dependency_map_routes.length === manifest.expected_build.published_dependency_maps,
+  `Expected ${manifest.expected_build.published_dependency_maps} Published dependency-map routes, found ${manifest.published_dependency_map_routes.length}.`,
+);
+check(
+  manifest.in_review_dependency_map_routes.length === manifest.expected_build.in_review_dependency_maps,
+  `Expected ${manifest.expected_build.in_review_dependency_maps} In Review dependency-map routes, found ${manifest.in_review_dependency_map_routes.length}.`,
+);
+
 for (const group of synthesisRouteGroups) {
   for (const route of group.published) {
     const html = await readText(routeToHtml(route));
@@ -289,5 +328,5 @@ console.log(
 console.log(
   `${readerPathways.length} reader pathways across ${manifest.reader_pathway_routes.length} existing Atlas surfaces.`,
 );
-console.log(`${phase55QDecisions.length} Phase 55Q evidence-gap decisions passed.`);
+console.log(`${localSystemFiles.length} local systems; ${phase55QDecisions.length} Phase 55Q evidence-gap decisions passed.`);
 console.log("Robots, sitemap, canonical, indexing, reader pathways, evidence decisions, required outputs, private-registry exclusion, and public export boundaries passed.");

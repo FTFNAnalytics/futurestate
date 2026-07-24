@@ -1,0 +1,74 @@
+{
+  "id": "reader-pathway-space-coast-plan-to-mission",
+  "title": "Space Coast Plan And Site License To Mission",
+  "slug": "space-coast-plan-and-site-license-to-mission",
+  "record_status": "In Review",
+  "summary": "Follow Space Coast plans, site licenses, environmental decisions, state capital programs, construction, acceptance, operator licensing, missions, safety, utilization, and local outcomes.",
+  "current_state_summary": "NASA, FAA, FDOT, and Space Florida records expose the corridor's planning, licensing, environmental, and capital layers, while one displayed site-license date is unresolved and project delivery remains record-specific.",
+  "current_state": [
+    "NASA's current master plan defines a multi-user infrastructure direction rather than a funded build.",
+    "FAA records show Launch Complex 46 licensed through July 2030.",
+    "The official Shuttle Landing Facility record still displays a January 2026 expiration date.",
+    "SLC-40 has a final environmental decision for an expanded action without every downstream license and operating result.",
+    "Part 450 is the common national operator-licensing framework, while FDOT and Space Florida supply state planning and capital rails."
+  ],
+  "primary_topics": ["Space", "Aviation", "Policy and Standards", "Finance and Risk", "Climate"],
+  "topic_ids": ["topic-space", "topic-aviation", "topic-policy-and-standards", "topic-finance-and-risk", "topic-climate"],
+  "local_system_ids": ["local-florida-space-coast-launch-corridor"],
+  "signal_ids": [
+    "signal-kennedy-multiuser-master-plan",
+    "signal-space-florida-lc46-site-license-renewal",
+    "signal-slc40-final-environmental-decision",
+    "signal-faa-part450-operator-transition",
+    "signal-shuttle-landing-facility-license-status-watch"
+  ],
+  "source_ids": [
+    "source-nasa-kennedy-master-plan-2026",
+    "source-faa-spaceports-by-state-2026",
+    "source-faa-shuttle-landing-facility-license",
+    "source-faa-slc40-final-ea",
+    "source-faa-part450-transition-2026",
+    "source-fdot-spaceport-program",
+    "source-fdot-spaceport-documents",
+    "source-space-florida-annual-reports",
+    "source-nasa-ksc-programmatic-eis"
+  ],
+  "organization_ids": [],
+  "technology_ids": [],
+  "briefing_ids": ["briefing-local-watch-002-corridor-conversion-gates"],
+  "dependency_map_ids": ["dependency-map-local-authorization-is-not-operation"],
+  "research_collection_ids": ["research-collection-thin-topic-authority-foundations-2023-2026"],
+  "evidence_gap_ids": ["gap-013"],
+  "dependency_stack": [
+    {
+      "stage": "Plan and capital program",
+      "current_state": "NASA, FDOT, and Space Florida define long-range and state investment layers.",
+      "boundary": "A plan, handbook, or annual report is not an accepted project."
+    },
+    {
+      "stage": "Site and environmental authorization",
+      "current_state": "FAA site records and environmental decisions establish named regulatory stages.",
+      "boundary": "A site license or environmental decision is not an operator or mission license."
+    },
+    {
+      "stage": "Construction and acceptance",
+      "current_state": "Selected records do not establish the complete build and acceptance trail for each infrastructure project.",
+      "boundary": "Planned or eligible infrastructure is not available infrastructure."
+    },
+    {
+      "stage": "Mission and outcome",
+      "current_state": "Mission success, safety, range utilization, resilience, workforce, and local outcomes require separate records.",
+      "boundary": "An operating corridor does not prove every site's current authorization or every project's outcome."
+    }
+  ],
+  "evidence_limits": [
+    "The pathway does not infer a mission approval from a site license.",
+    "A master plan or capital program does not prove construction or acceptance.",
+    "The displayed Shuttle Landing Facility expiration date requires formal resolution before a current-license claim."
+  ],
+  "next_records": [
+    "Formal FAA disposition of the Shuttle Landing Facility license.",
+    "Named FDOT, Space Florida, and NASA project awards, contracts, construction, and acceptance.",
+    "Operator licenses, mission records, range utilization, safety, resilience, workforce, and local outcomes."
+  ]
+}

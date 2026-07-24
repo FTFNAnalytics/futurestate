@@ -1,7 +1,7 @@
 # Phases 55S-55W Aggressive Content Expansion
 
 Date: 2026-07-24
-Status: active program; Phase 55S batches one and two and Phase 55T complete locally
+Status: active program; Phase 55S batches one and two, Phase 55T, and Phase 55U complete locally
 
 ## Direction
 
@@ -177,6 +177,17 @@ Each new dossier requires:
 - a reader pathway,
 - dated monitors for unresolved downstream stages.
 
+Phase 55U result:
+
+- selected the Northern Virginia Data Center Corridor, Nevada Lithium And Battery Materials Corridor, and Florida Space Coast Launch Corridor from official-record density;
+- added 26 official source profiles and three dossiers with 16 active sources each;
+- added 15 bounded signals: twelve Published and three In Review;
+- added three evidence gaps, three reader pathways, one In Review briefing, one In Review dependency map, eight topic repairs, and one public update;
+- created one-time Codex tasks for the August 15 FAA license, October 1 Loudoun standards, and January 15 Nevada delivery checks;
+- verified 570 pages, 298 sources, 112 signals, 73 Published, 39 In Review, five local systems, eight briefings, six maps, eleven pathways across 18 Atlas surfaces, and 23 updates.
+
+The complete selection, source stacks, publication decisions, evidence limits, monitors, and Phase 55V handoff are in `docs/work-packages/phase-55u-local-systems-network.md`.
+
 ## Phase 55V: Research Collections And Synthesis
 
 Goal: turn primary documents into reusable evidence libraries rather than isolated posts.
@@ -249,6 +260,7 @@ Every expansion wave must:
 1. Preserve the completed Phase 55S batch-one and batch-two authority rails.
 2. Preserve the completed Phase 55T four-signal topic floor and its record-level publication decisions.
 3. Keep the unfinished Phase 55S third allocation as a replenishment backlog rather than a release gate.
-4. Select Phase 55U systems from evidence density, not branding or narrative appeal.
-5. Use the authority backlog to close named system-specific gaps.
-6. Continue to insert dated checks without pausing the active expansion queue.
+4. Preserve the completed Phase 55U three-corridor local-systems network and its dated stop rules.
+5. Begin Phase 55V with a cross-corridor infrastructure-conversion research collection.
+6. Use the authority backlog to close named collection-specific gaps.
+7. Continue to insert dated checks without pausing the active expansion queue.

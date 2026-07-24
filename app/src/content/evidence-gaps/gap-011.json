@@ -1,0 +1,68 @@
+{
+  "id": "gap-011",
+  "title": "Northern Virginia large-load delivery and local acceptance",
+  "slug": "gap-011-northern-virginia-large-load-delivery",
+  "status": "Source Added",
+  "priority": "High",
+  "local_system": "Northern Virginia Data Center Corridor",
+  "primary_topic": "Energy",
+  "framework_layers": ["Enabling Infrastructure", "Human Systems"],
+  "constraint_tags": ["Power", "Infrastructure", "Land Use", "Permitting", "Water", "Capital", "Labor", "Public Trust"],
+  "question": "Which named Northern Virginia projects progress from demand and authorization through built infrastructure, energization, compliant operation, and accepted local outcomes?",
+  "why_it_matters": "Regional scale and forecasts do not establish whether the next customer can be served, whether infrastructure is built, or whether local environmental and community conditions are satisfied.",
+  "current_support": "The dossier now contains a legislative baseline, PJM forecast rail, a large-load rate decision, Golden-Mars transmission approval, Loudoun planning records, DEQ air permits, and a reclaimed-water service rail.",
+  "missing_evidence": [
+    "customer-specific service agreements and disclosed load",
+    "final transmission routes, land rights, construction, and energization",
+    "facility-level permit, water, construction, and operation records",
+    "workforce delivery and retention outcomes",
+    "measured cost, reliability, emissions, noise, water, and community outcomes"
+  ],
+  "likely_source_types": [
+    "SCC docket and utility filing",
+    "county board and permit record",
+    "DEQ compliance record",
+    "water-provider allocation and meter record",
+    "construction, energization, and operating record"
+  ],
+  "candidate_records": [
+    "Golden-Mars school-board land decision and final route record",
+    "GS-5 customer agreement or compliance filing",
+    "named data-center building and occupancy permits",
+    "named air-permit test and compliance reports",
+    "reclaimed-water allocation, connection, and metered use"
+  ],
+  "next_action": "Follow Golden-Mars, GS-5, Loudoun Phase 2, named DEQ permits, and provider records through final rules, construction, service, compliance, and measured outcomes.",
+  "future_data_model_need": ["Project", "Permit", "Utility Service", "Local Outcome"],
+  "related_source_ids": [
+    "source-virginia-jlarc-data-centers-2024",
+    "source-pjm-load-analysis-subcommittee",
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-virginia-scc-golden-mars-2026",
+    "source-loudoun-phase2-data-center-standards",
+    "source-virginia-deq-data-center-air-permits",
+    "source-loudoun-water-reclaimed-water"
+  ],
+  "related_signal_ids": [
+    "signal-virginia-data-center-load-concentration",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-golden-mars-transmission-conditional-approval",
+    "signal-virginia-data-center-air-permit-trail",
+    "signal-loudoun-phase2-data-center-standards-watch"
+  ],
+  "related_local_system_ids": ["local-northern-virginia-data-center-corridor"],
+  "latest_review": {
+    "phase": "Phase 55U",
+    "decision": "Dated Hold",
+    "review_date": "2026-07-24",
+    "named_records": [
+      "Loudoun County Phase 2 Data Center Standards and Locations",
+      "Virginia SCC Golden-Mars transmission decision",
+      "Virginia SCC GS-5 large-load rate decision"
+    ],
+    "stage_result": "The corridor now has named planning, rate, transmission, air-permit, and water rails. Phase 2 remains an active policy process, and no record supports corridor-wide spare capacity or project delivery.",
+    "stop_rule": "Do not treat market concentration, a forecast, rate class, route approval, air permit, or reclaimed-water program as customer service, built infrastructure, operation, or accepted local outcome.",
+    "next_check_date": "2026-10-01"
+  },
+  "notes": "Phase 55U opens a dated local-system evidence loop rather than a readiness score."
+}

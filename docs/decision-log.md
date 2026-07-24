@@ -2465,3 +2465,28 @@ Implemented:
 Boundary:
 
 The topic floor is an editorial completeness gate, not proof that every topic is equally mature. The new In Review synthesis records do not inherit the Published state of their supporting signals. The remaining Phase 55S backlog, owner-only access, package freeze, public GitHub synchronization, DNS, custom-domain attachment, and public launch remain separately controlled.
+
+## 2026-07-24: Phase 55U Selects Three Record-Dense Corridors
+
+Decision:
+
+Build the Phase 55U local-systems network around the Northern Virginia Data Center Corridor, Nevada Lithium And Battery Materials Corridor, and Florida Space Coast Launch Corridor. Select three strong systems rather than forcing a fourth corridor before its official record is equally dense.
+
+Rationale:
+
+The three systems each support a 16-source dossier and a five-signal evidence stack with named authorities, projects, permits, finance or capital records, infrastructure dependencies, and downstream operating questions. Together they cover grid-and-compute growth, critical-minerals processing, and space or aviation infrastructure without treating those systems as technologically or economically equivalent.
+
+Implemented:
+
+- 26 official source profiles;
+- three local-system dossiers with constraint matrices, named authorities, named projects, evidence limits, and next records;
+- 15 signal decisions: 12 Published and 3 In Review;
+- three evidence gaps and three reader pathways;
+- one In Review briefing and one In Review cross-corridor dependency map;
+- eight topic-profile repairs and one public update;
+- one-time checks on August 15, 2026 for the Shuttle Landing Facility license, October 1, 2026 for Loudoun Phase 2 standards, and January 15, 2027 for Nevada lithium delivery;
+- a verified 570-page, 298-source, 112-signal local contract with five local systems and eleven pathways.
+
+Boundary:
+
+Demand, plans, permits, environmental decisions, site licenses, rate classes, and financial close do not prove completed construction, acceptance, service, compliant operation, customer qualification, mission success, utilization, or scale. The owner-only access policy, public GitHub boundary, package freeze, DNS, custom-domain attachment, and public launch remain separately controlled. Phase 55V becomes the active content phase.

@@ -41,24 +41,24 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after Phase 55T:
+Current `0.2.0-dev` state after Phase 55U:
 
 | Measure | Current Development State |
 | --- | ---: |
-| Static pages | 521 |
-| Active sources | 272 |
-| Signals | 97 |
-| Published signals | 61 |
-| In Review signals | 36 |
+| Static pages | 570 |
+| Active sources | 298 |
+| Signals | 112 |
+| Published signals | 73 |
+| In Review signals | 39 |
 | Draft Sample signals | 0 |
-| Public update entries | 22 |
+| Public update entries | 23 |
 | Research collections | 5 collections / 65 documents |
 | Research downloads | 37 local captures / 28 official-link files / 80 archive files across five ZIPs |
 | Named local inputs selected in Phases 50-55C | 18 |
 | Private source candidates | 150 local-only records |
 | Candidate review | all 150 reviewed once: 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected |
 | Source Coverage | 14 Strong; 0 Developing; 0 Weak |
-| Source health | 172 Manual Review; 100 Probe Ready |
+| Source health | 192 Manual Review; 106 Probe Ready |
 
 Existing operating assets:
 
@@ -366,8 +366,8 @@ Recommended active schedule:
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
 | Authority backlog | Phase 55S | batches one and two complete; the remaining 30-record allocation now replenishes selected Phase 55U and Phase 55V work |
 | Completed | Phase 55T | all 17 topics now have at least four signals and two Published records; owner-only Sites version 18 deployed |
-| Current | Phase 55U | select and build three or four evidence-dense local systems |
-| Planned | Phase 55V | grow the primary-document research and synthesis layer |
+| Completed | Phase 55U | three evidence-dense local systems, 26 sources, 15 signals, three pathways and gaps, owner-only deployment pending |
+| Current | Phase 55V | grow the primary-document research and synthesis layer |
 | Planned | Phase 55W | apply publication gates and make the larger corpus navigable |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
@@ -645,7 +645,15 @@ Phase 55T result:
 - two `In Review` pathways, two `In Review` dependency maps, one briefing draft, nine topic-summary repairs, and three evidence-gap repairs added;
 - 521 pages, 272 sources, 97 signals, 61 Published signals, 36 In Review signals, 22 updates, seven briefings, five maps, and eight pathways across 12 Atlas surfaces verified locally.
 
-The final Phase 55S 30-record allocation is now an authority backlog rather than an active gate. Use its four retained High-priority candidates and newly selected primary records where they strengthen a named Phase 55U local system or Phase 55V research collection.
+Phase 55U result:
+
+- Northern Virginia compute, Nevada lithium and battery materials, and Florida Space Coast launch corridors selected from official-record density;
+- 26 official sources and 15 bounded signals added; twelve Published and three retained `In Review`;
+- three 16-source local dossiers, three evidence gaps, three reader pathways, one `In Review` briefing, and one `In Review` dependency map added;
+- eight topic profiles deepened and three one-time downstream evidence checks scheduled;
+- 570 pages, 298 sources, 112 signals, 73 Published signals, 39 In Review signals, 23 updates, eight briefings, six maps, five local systems, and eleven pathways across 18 Atlas surfaces verified locally.
+
+The final Phase 55S 30-record allocation remains an authority backlog rather than an active gate. Use it only where it strengthens a named Phase 55V collection or later system gap.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
 
@@ -753,13 +761,13 @@ v0.2 is successful when:
 - release QA remains repeatable,
 - no automated process publishes claims without review.
 
-The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T then added 17 named official sources and 18 signals, brought every topic to a four-signal and two-Published-record floor, and added two pathways, two maps, and one briefing draft while preserving explicit evidence stages. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
+The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T brought every topic to a four-signal and two-Published-record floor. Phase 55U then added three evidence-dense local systems, 26 official sources, 15 signals, three pathways and gaps, one briefing, and one map while preserving explicit evidence stages. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
 
 ## Immediate Next Step
 
-Begin Phase 55U. Select three or four local systems only where the existing evidence base can support a multi-constraint dossier with named authorities, operating records, pathways, evidence gaps, and dated stop rules. Use the remaining Phase 55S authority backlog to fill system-specific gaps instead of completing a generic 30-record quota.
+Begin Phase 55V with a cross-corridor infrastructure-conversion research collection. Build a 12-20 document library from the strongest Phase 55U records and their downstream implementation trails, prioritizing compute and grid planning, critical-minerals processing and water, and space infrastructure licensing and capital delivery. Add a downloadable archive, document-level evidence limits, and at least one synthesis artifact without promoting the Phase 55U briefing or map automatically.
 
-Run Phase 55H on August 1 and Phase 55R on August 10 through their existing scheduled project tasks. Preserve the Arizona wastewater recheck on September 22. Each dated result is a bounded insert, not a reason to pause the active content queue.
+Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 

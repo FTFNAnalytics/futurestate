@@ -1,0 +1,185 @@
+{
+  "id": "dependency-map-local-authorization-is-not-operation",
+  "title": "Local Authorization Is Not Operation",
+  "slug": "local-authorization-is-not-operation",
+  "summary": "A three-corridor map showing why market demand, permits, rate rules, environmental decisions, plans, and federal credit must pass through construction, acceptance, service, compliance, and measured operation.",
+  "map_type": "Local Constraint Map",
+  "record_status": "In Review",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": ["Resource Foundations", "Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Power", "Water", "Infrastructure", "Permitting", "Capital", "Safety", "Public Trust", "Data Quality"],
+  "map_question": "Which records move a local system through authorization, and which downstream records are still needed before FTFN can claim operation or scale?",
+  "interpretation_boundary": "The map compares evidence stages, not the technologies, markets, risks, or institutions themselves. A supported link shows a named record relationship, not project readiness.",
+  "source_ids": [
+    "source-virginia-scc-golden-mars-2026",
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-blm-thacker-pass-rod-2021",
+    "source-doe-thacker-pass-loan-2024",
+    "source-faa-spaceports-by-state-2026",
+    "source-nasa-kennedy-master-plan-2026"
+  ],
+  "signal_ids": [
+    "signal-golden-mars-transmission-conditional-approval",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-thacker-pass-federal-land-authorization",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-space-florida-lc46-site-license-renewal",
+    "signal-kennedy-multiuser-master-plan"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-northern-virginia-data-center-corridor",
+    "local-nevada-lithium-processing-corridor",
+    "local-florida-space-coast-launch-corridor"
+  ],
+  "evidence_gap_ids": ["gap-011", "gap-012", "gap-013"],
+  "nodes": [
+    {
+      "id": "node-authorization",
+      "label": "Authorization and financing records",
+      "node_type": "Constraint",
+      "note": "Rate decisions, permits, RODs, loans, site licenses, and plans establish different enabling stages."
+    },
+    {
+      "id": "node-virginia",
+      "label": "Northern Virginia Data Center Corridor",
+      "node_type": "Local System",
+      "record_id": "local-northern-virginia-data-center-corridor",
+      "note": "Compute demand enters utility, transmission, water, permitting, and local acceptance systems."
+    },
+    {
+      "id": "node-nevada",
+      "label": "Nevada Lithium And Battery Materials Corridor",
+      "node_type": "Local System",
+      "record_id": "local-nevada-lithium-processing-corridor",
+      "note": "Authorized projects must convert through water, finance, construction, compliance, qualification, and output."
+    },
+    {
+      "id": "node-florida",
+      "label": "Florida Space Coast Launch Corridor",
+      "node_type": "Local System",
+      "record_id": "local-florida-space-coast-launch-corridor",
+      "note": "Plans and site authorization must convert into accepted infrastructure, mission approval, safety, and utilization."
+    },
+    {
+      "id": "node-construction",
+      "label": "Construction and acceptance",
+      "node_type": "Constraint",
+      "note": "Physical build, inspection, commissioning, acceptance, connection, and service records are required."
+    },
+    {
+      "id": "node-operation",
+      "label": "Measured operation and scale",
+      "node_type": "Constraint",
+      "note": "Sustained load, output, mission activity, compliance, cost, reliability, safety, and local outcomes close the loop."
+    },
+    {
+      "id": "node-gap-011",
+      "label": "Northern Virginia delivery gap",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-011",
+      "note": "Customer capacity, construction, energization, water, compliance, and local outcomes remain incomplete."
+    },
+    {
+      "id": "node-gap-012",
+      "label": "Nevada qualified-output gap",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-012",
+      "note": "Construction, water, compliance, qualification, production, and repayment remain incomplete."
+    },
+    {
+      "id": "node-gap-013",
+      "label": "Space Coast license and delivery gap",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-013",
+      "note": "Current SLF status, project acceptance, mission licensing, utilization, safety, and local outcomes remain incomplete."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-authorization",
+      "to": "node-virginia",
+      "relationship": "Received By",
+      "confidence": "Supported",
+      "note": "SCC, county, DEQ, and provider records name corridor-specific rules and projects."
+    },
+    {
+      "from": "node-authorization",
+      "to": "node-nevada",
+      "relationship": "Received By",
+      "confidence": "Supported",
+      "note": "BLM, NDEP, DOE, and state water records name project authorization and finance stages."
+    },
+    {
+      "from": "node-authorization",
+      "to": "node-florida",
+      "relationship": "Received By",
+      "confidence": "Supported",
+      "note": "NASA, FAA, FDOT, and Space Florida records name planning, licensing, environmental, and capital layers."
+    },
+    {
+      "from": "node-virginia",
+      "to": "node-construction",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "Golden-Mars and permit trails advance authorization, while final construction and service remain incomplete."
+    },
+    {
+      "from": "node-nevada",
+      "to": "node-construction",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "Thacker Pass has a closed loan and permits without a complete public acceptance and operating trail."
+    },
+    {
+      "from": "node-florida",
+      "to": "node-construction",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "Plans, programs, site licenses, and environmental decisions require named project delivery records."
+    },
+    {
+      "from": "node-construction",
+      "to": "node-operation",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "Accepted infrastructure still requires measured and sustained operating evidence."
+    },
+    {
+      "from": "node-virginia",
+      "to": "node-gap-011",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Customer-specific delivery and local outcomes remain open."
+    },
+    {
+      "from": "node-nevada",
+      "to": "node-gap-012",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Qualified and sustained material output remains open."
+    },
+    {
+      "from": "node-florida",
+      "to": "node-gap-013",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "One license status and multiple project-to-operation layers remain open."
+    }
+  ],
+  "what_this_map_supports": [
+    "The three corridors share an evidence-conversion problem even though their technologies and institutions differ.",
+    "Named authority records can be assigned to distinct stages rather than summarized as generic progress.",
+    "Construction, acceptance, service, compliance, operation, and scale require downstream records."
+  ],
+  "what_this_map_does_not_prove": [
+    "That the three corridors are economically, environmentally, or institutionally equivalent.",
+    "That an authorization, loan, site license, or plan will produce a completed project.",
+    "That any corridor has spare capacity, qualified output, safe mission availability, or accepted local outcomes."
+  ],
+  "next_records_needed": [
+    "Northern Virginia customer-service, route, construction, energization, water, and compliance records.",
+    "Nevada water, construction, commissioning, qualification, production, and loan-performance records.",
+    "Space Coast current license, capital-project, construction, acceptance, mission, utilization, and safety records."
+  ]
+}

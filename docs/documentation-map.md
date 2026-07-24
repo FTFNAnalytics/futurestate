@@ -1546,12 +1546,14 @@ Primary file:
 - `docs/work-packages/phase-55s-authority-sprint-batch-1.md` for the completed first 30-record batch, its public records, collection, signals, validation evidence, and remaining sprint allocation
 - `docs/work-packages/phase-55s-authority-sprint-batch-2.md` for the completed second 30-record batch, industrial-capacity and local-conversion collection, signal decisions, briefing draft, validation evidence, and final sprint allocation
 - `docs/work-packages/phase-55t-thin-topic-corpus-build.md` for the completed four-signal topic floor, 17 new authority records, 18 signal decisions, topic matrix, cross-corpus integrations, and Phase 55U handoff
+- `docs/work-packages/phase-55u-local-systems-network.md` for the completed three-corridor network, 26 official source profiles, 15 signal decisions, three pathways and gaps, cross-corridor synthesis, dated tasks, and Phase 55V handoff
 
 Update when:
 
 - a 30-record Phase 55S sub-batch is selected or completed,
 - the topic allocation or corpus targets change,
 - the Phase 55T topic floor, publication decisions, maps, pathways, briefing, or deployment receipt changes,
+- the Phase 55U system selection, dossier source stacks, signal decisions, pathways, gaps, dated monitors, or deployment receipt changes,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.
