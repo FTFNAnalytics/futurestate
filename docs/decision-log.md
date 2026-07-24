@@ -2332,3 +2332,30 @@ Sequence:
 Boundary:
 
 No synthesis product is promoted because it exists, no pathway may hide an unresolved stage, and no evidence-gap batch may become a new volume target. Owner-only access remains unchanged. Public access, package freeze, custom-domain attachment, Hostinger DNS, public GitHub synchronization, Supabase activation, and public launch remain separate decisions.
+
+## 2026-07-24: Phase 55O Publishes Two Briefings And Repairs Three Dependency Maps
+
+Decision:
+
+FTFN will publish Stack Watch 003 and Stack Watch 004, hold the other three briefings with explicit reopening conditions, and publish all three dependency maps only after repairing them around Published signals. Published dependency maps must use `index, follow` and enter the sitemap; future non-published map details must use `noindex, follow` and remain outside it.
+
+Rationale:
+
+Stack Watch 003 and Stack Watch 004 derive their central conclusions primarily from Published implementation records and keep their one linked In Review record visibly bounded. Local Watch 001 and Stack Watch 001 still depend on unresolved local conversion records; Stack Watch 002 depends entirely on In Review research-direction signals. The maps become independently useful once broad or unresolved signal frames are replaced by Published financial, physical, utility, workforce, infrastructure, pipeline, permit, standards, and specification records while open evidence gaps remain visible.
+
+Implemented:
+
+- reviewed all five briefings and three dependency maps against the Phase 55O gate,
+- promoted two briefings and retained three explicit holds,
+- rebuilt the federal map around thirteen Published implementation signals,
+- rebuilt the local map around seven Published local and receiving-system signals,
+- repaired the post-quantum map around two Published standards and specification signals,
+- added `record_status`-aware robots metadata and Published-only sitemap membership for dependency maps,
+- added validation that prevents a Published dependency map from referencing a non-published signal,
+- added release assertions for all Published and In Review briefing and dependency-map routes,
+- added the seventeenth public update entry,
+- preserved the 380-page, 189-source, 63-signal, 38 Published / 25 In Review release contract.
+
+Boundary:
+
+Publishing a briefing does not promote a linked In Review signal. Publishing a map does not resolve its evidence gaps or establish local readiness, project completion, institutional migration, operating capability, adoption, or scale. Owner-only access remains unchanged. Public access, package freeze, custom-domain attachment, Hostinger DNS, public GitHub synchronization, Supabase activation, and public launch remain separate decisions.

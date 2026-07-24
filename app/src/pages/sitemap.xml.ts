@@ -71,7 +71,9 @@ export const GET: APIRoute = async () => {
     ...organizations.map((organization) => urlEntry(`/atlas/organizations/${organization.data.slug}/`)),
     ...technologies.map((technology) => urlEntry(`/atlas/technologies/${technology.data.slug}/`)),
     ...localSystems.map((system) => urlEntry(`/atlas/local-systems/${system.data.slug}/`, system.data.last_reviewed_date)),
-    ...dependencyMaps.map((dependencyMap) => urlEntry(`/atlas/dependency-maps/${dependencyMap.data.slug}/`)),
+    ...dependencyMaps
+      .filter((dependencyMap) => dependencyMap.data.record_status === "Published")
+      .map((dependencyMap) => urlEntry(`/atlas/dependency-maps/${dependencyMap.data.slug}/`)),
     ...researchCollections
       .filter((collection) => collection.data.record_status === "Published")
       .map((collection) => urlEntry(`/research/${collection.data.slug}/`, collection.data.captured_date)),

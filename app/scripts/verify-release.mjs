@@ -161,11 +161,40 @@ for (const record of signals.records) {
 
 for (const [label, route] of Object.entries(manifest.indexing_samples)) {
   const html = await readText(routeToHtml(route));
-  const expectedRobots = label === "published_signal" ? "index, follow" : "noindex, follow";
+  const expectedRobots = label.startsWith("published_") ? "index, follow" : "noindex, follow";
   check(hasRobots(html, expectedRobots), `${route} is missing ${expectedRobots}.`);
   check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
   if (expectedRobots.startsWith("noindex")) {
     check(!sitemap.includes(`${manifest.canonical_site}${route}`), `${route} should not appear in the sitemap.`);
+  }
+}
+
+const synthesisRouteGroups = [
+  {
+    label: "briefing",
+    published: manifest.published_briefing_routes,
+    inReview: manifest.in_review_briefing_routes,
+  },
+  {
+    label: "dependency map",
+    published: manifest.published_dependency_map_routes,
+    inReview: manifest.in_review_dependency_map_routes,
+  },
+];
+
+for (const group of synthesisRouteGroups) {
+  for (const route of group.published) {
+    const html = await readText(routeToHtml(route));
+    check(hasRobots(html, "index, follow"), `${route} is missing index, follow.`);
+    check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
+    check(sitemap.includes(`${manifest.canonical_site}${route}`), `Published ${group.label} ${route} is missing from the sitemap.`);
+  }
+
+  for (const route of group.inReview) {
+    const html = await readText(routeToHtml(route));
+    check(hasRobots(html, "noindex, follow"), `${route} is missing noindex, follow.`);
+    check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
+    check(!sitemap.includes(`${manifest.canonical_site}${route}`), `In Review ${group.label} ${route} should not appear in the sitemap.`);
   }
 }
 
@@ -189,4 +218,7 @@ console.log(
   `${publishedSourceIds.length} Published-support sources checked on or after ${publishedSupportMinimumDate}.`,
 );
 console.log(`${researchCollections.length} research collection; ${researchDocuments.length} research documents; downloadable archive present.`);
+console.log(
+  `${manifest.published_briefing_routes.length} Published briefings; ${manifest.published_dependency_map_routes.length} Published dependency maps.`,
+);
 console.log("Robots, sitemap, canonical, indexing, required outputs, private-registry exclusion, and public export boundaries passed.");

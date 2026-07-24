@@ -1,26 +1,26 @@
 # FTFN v0.2 Session Handoff Plan
 
-Date: 2026-07-23
+Date: 2026-07-24
 
 Use this document to restart FTFN in a new Codex session without reconstructing the project from chat history.
 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 55M publication-readiness review
+Latest completed work: Phase 55O briefing and dependency-map publication pass
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
 Build: 380 generated site pages
 Content: 189 sources, 63 signals, 17 topics, 3 research collections / 47 research documents
-Publication: 38 Published, 25 In Review, 0 Draft Sample
-Trust/data: 16 update entries, 3 versioned JSON exports, verified 26-file, 11-file, and 19-file research archives
+Publication: 38 Published signals, 25 In Review signals, 2 Published briefings, 3 In Review briefings, 3 Published dependency maps
+Trust/data: 17 update entries, 3 versioned JSON exports, verified 26-file, 11-file, and 19-file research archives
 Private authority layer: 150 candidates, 15 profiles, 132 Candidate, 11 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 12 from c1038783 at https://ftfn-analytics.jbumstead.chatgpt.site
+Deployment: owner-only Sites version 12 from c1038783 remains live; validated Phase 55O refresh pending
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 116 Manual Review, 73 Probe Ready; 14 Strong coverage lanes
-Next phase: Phase 55O synthesis publication pass now; Phase 55H after July 31; Phase 55P and 55Q next; Phase 55R after August 9
+Next phase: Phase 55P reader pathways now; Phase 55H after July 31; Phase 55Q next; Phase 55R after August 9
 ```
 
 ## Read First
@@ -73,6 +73,7 @@ The approved preview sequence is complete:
 18. Deployed exact source commit `c14551c7fad7e0ba6aac0e9e9ce03e5ad6189575` as owner-only Sites version 11 with one allowed owner, no groups, and no access or DNS change.
 19. Completed Phase 55M with fourteen record-level publication decisions: thirteen promotions and one scheduled-trial hold. The verified contract now contains 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources without adding routes.
 20. Deployed exact source commit `c1038783998234025ec2af65dae495272a263cc1` as owner-only Sites version 12 with one allowed owner, no groups, and no access or DNS change.
+21. Completed Phase 55O locally: two briefings Published, three briefings held, three dependency maps repaired and Published, 17 updates, and a passing 380-page release contract; owner-only deployment refresh pending.
 
 ## Required Stop Points
 
@@ -126,9 +127,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is the Phase 55M publication-readiness review of the combined Phase 55L and Phase 55N implementation set. The current candidate should be 0.2.0-dev on codex/phase51-content with 189 sources, 63 signals, 38 Published signals, 25 In Review signals, 16 public updates, three JSON exports, 380 generated site pages, three research collections, 47 research documents, and verified 26-file, 11-file, and 19-file download archives. Sites version 12 serves exact source commit c1038783998234025ec2af65dae495272a263cc1 at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site. The branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
+The latest completed work is the Phase 55O briefing and dependency-map publication pass. The current candidate should be 0.2.0-dev on codex/phase51-content with 189 sources, 63 signals, 38 Published signals, 25 In Review signals, two Published briefings, three In Review briefings, three Published dependency maps, 17 public updates, three JSON exports, 380 generated site pages, three research collections, 47 research documents, and verified 26-file, 11-file, and 19-file download archives. Sites version 12 still serves the prior Phase 55M commit at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site until the Phase 55O refresh completes. The branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
 
 Phase 55I completed the first-pass review of all 150 local-only private candidates across 15 profiles: 132 Candidate, 11 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. Start Phase 55O by reviewing all five briefings and three dependency maps for a publish, repair, split, or hold decision. Insert Phase 55H after the July 29-31 Council window, then continue with Phase 55P reader pathways and Phase 55Q high-value evidence-gap closure. Insert Phase 55R after August 9 to recheck the DARPA Lift Challenge for measured results, winners, prize awards, and transition evidence. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 55O is complete: use the two Published briefings and three Published dependency maps to begin Phase 55P reader pathways. Insert Phase 55H after the July 29-31 Council window, then continue into Phase 55Q high-value evidence-gap closure. Insert Phase 55R after August 9 to recheck the DARPA Lift Challenge for measured results, winners, prize awards, and transition evidence. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

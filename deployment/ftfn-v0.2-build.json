@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3",
   "build_id": "ftfn-v0.2",
-  "generated_date": "2026-07-23",
+  "generated_date": "2026-07-24",
   "project": "FTFN",
   "package_name": "ftfn-app",
   "package_version": "0.2.0-dev",
@@ -48,11 +48,15 @@
     "technologies": 5,
     "local_systems": 2,
     "briefings": 5,
+    "published_briefings": 2,
+    "in_review_briefings": 3,
     "evidence_gaps": 10,
     "dependency_maps": 3,
+    "published_dependency_maps": 3,
+    "in_review_dependency_maps": 0,
     "research_collections": 3,
     "research_documents": 47,
-    "updates": 16,
+    "updates": 17,
     "public_json_exports": 3
   },
   "private_authority_layer": {
@@ -79,7 +83,7 @@
     "sources_added": 87,
     "public_json_exports_added": 3,
     "public_update_log_added": true,
-    "summary": "Extends the Phase 55K, Phase 55L, and Phase 55N evidence baseline with a record-by-record Phase 55M publication gate: 189 public sources, 63 signals, 38 Published signals, 16 public updates, three research collections, 47 summarized research documents, and versioned source, topic, and Published-signal exports."
+    "summary": "Extends the Phase 55K through Phase 55N evidence baseline with the Phase 55M signal gate and Phase 55O synthesis gate: 189 public sources, 63 signals, 38 Published signals, two Published briefings, three Published dependency maps, 17 public updates, three research collections, 47 summarized research documents, and versioned source, topic, and Published-signal exports."
   },
   "phase_55k_delta": {
     "static_pages_added": 60,
@@ -133,8 +137,20 @@
     "generated_pages_added": 0,
     "hold_signal_id": "signal-darpa-lift-challenge-2026-scheduled-field-trial"
   },
+  "phase_55o_delta": {
+    "briefings_reviewed": 5,
+    "briefings_published": 2,
+    "briefings_held_in_review": 3,
+    "dependency_maps_reviewed": 3,
+    "dependency_maps_repaired_and_published": 3,
+    "signals_promoted": 0,
+    "public_update_entries_added": 1,
+    "generated_pages_added": 0,
+    "published_briefing_routes_added_to_sitemap": 2,
+    "published_dependency_map_routes": 3
+  },
   "last_verified": {
-    "date": "2026-07-23",
+    "date": "2026-07-24",
     "published_support_minimum_date": "2026-07-22",
     "candidate_validation": "passed-150-local-only-records",
     "validate_content": "passed",
@@ -151,7 +167,7 @@
     "build": "passed",
     "static_pages_built": 380,
     "release_assertions": "passed",
-    "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-55m-visual-qa-not-requested",
+    "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-55o-visual-qa-not-requested",
     "browser_viewports": [
       "1440x900",
       "390x844"
@@ -180,7 +196,10 @@
     "dist/research/implementation-outcomes-local-conversion-2025-2026/index.html",
     "dist/downloads/implementation-outcomes-local-conversion-2025-2026.zip",
     "dist/briefings/stack-watch-004-implementation-outcomes/index.html",
-    "dist/briefings/local-watch-001-conversion-gates/index.html"
+    "dist/briefings/local-watch-001-conversion-gates/index.html",
+    "dist/atlas/dependency-maps/federal-research-to-industrial-capacity/index.html",
+    "dist/atlas/dependency-maps/local-constraints-where-the-future-arrives/index.html",
+    "dist/atlas/dependency-maps/post-quantum-standards-are-not-migration/index.html"
   ],
   "published_signal_routes": [
     "/signals/doe-critical-minerals-materials-accelerator-nofo/",
@@ -250,27 +269,48 @@
     "published_signal": "/signals/doe-critical-minerals-materials-accelerator-nofo/",
     "in_review_signal": "/signals/phoenix-tsmc-wastewater-infrastructure-reclaimed-water-milestones/",
     "in_review_company_claim_signal": "/signals/evtol-flight-campaign-demonstration-deployment-gap/",
-    "in_review_briefing": "/briefings/stack-watch-001-local-constraints/"
+    "published_briefing": "/briefings/stack-watch-003-research-to-implementation/",
+    "in_review_briefing": "/briefings/stack-watch-001-local-constraints/",
+    "published_dependency_map": "/atlas/dependency-maps/federal-research-to-industrial-capacity/"
   },
+  "published_briefing_routes": [
+    "/briefings/stack-watch-003-research-to-implementation/",
+    "/briefings/stack-watch-004-implementation-outcomes/"
+  ],
+  "in_review_briefing_routes": [
+    "/briefings/local-watch-001-conversion-gates/",
+    "/briefings/stack-watch-001-local-constraints/",
+    "/briefings/stack-watch-002-federal-research-industrial-capacity/"
+  ],
+  "published_dependency_map_routes": [
+    "/atlas/dependency-maps/federal-research-to-industrial-capacity/",
+    "/atlas/dependency-maps/local-constraints-where-the-future-arrives/",
+    "/atlas/dependency-maps/post-quantum-standards-are-not-migration/"
+  ],
+  "in_review_dependency_map_routes": [],
   "seo_policy": {
     "robots": "Allow all public routes and reference https://ftfn.io/sitemap.xml",
-    "sitemap": "Include primary public pages, Atlas reference pages, local systems, dependency maps, Published research collections and documents, and Published signal details only",
+    "sitemap": "Include primary public pages, Atlas reference indexes, local systems, Published dependency maps, Published briefings, Published research collections and documents, and Published signal details only",
     "published_signal_details": "index, follow",
     "non_published_signal_details": "noindex, follow",
-    "non_published_briefing_details": "noindex, follow"
+    "non_published_briefing_details": "noindex, follow",
+    "published_dependency_map_details": "index, follow",
+    "non_published_dependency_map_details": "noindex, follow"
   },
   "release_gates": [
     "Run all predeploy commands from app/",
     "Confirm 380 generated HTML pages and all required outputs",
     "Confirm all 38 Published signal URLs are present in the sitemap",
     "Confirm every non-published signal URL is absent from the sitemap",
+    "Confirm both Published briefing URLs are indexed and the three In Review briefing URLs remain noindex and outside the sitemap",
+    "Confirm all three Published dependency-map URLs are indexed and present in the sitemap",
     "Confirm Published details use index, follow and non-published details use noindex, follow",
     "Confirm canonical URLs and robots output use https://ftfn.io",
     "Confirm all 66 sources supporting Published signals were checked on or after 2026-07-22",
     "Confirm all three public JSON exports match the versioned allowlist contract",
     "Confirm the local candidate registry contains exactly 150 unique records and remains Git-ignored",
     "Confirm generated output contains no private candidate IDs or registry-path references",
-    "Confirm the sixteen-entry public update log renders",
+    "Confirm the seventeen-entry public update log renders",
     "Confirm all three research collections render all 47 document summaries and their 26-file, 11-file, and 19-file ZIP archives",
     "Run desktop and mobile browser QA on the ten core reader journeys",
     "Deploy to a preview URL only after explicit approval",
@@ -293,7 +333,7 @@
   "known_limitations": [
     "The package version remains 0.2.0-dev until an approved public release decision.",
     "The hosted Sites URL is owner-only and has not been made public or attached to ftfn.io.",
-    "Twenty-five signals, five briefings, three dependency maps, and local-system constraint profiles remain non-published or prelaunch material.",
+    "Twenty-five signals, three briefings, and local-system constraint profiles remain non-published or prelaunch material; all three dependency maps are Published but remain qualitative and evidence-bounded.",
     "The 2026 National Defense Strategy is represented in the downloadable collection by an official-link file because the Defense Department host allowed review but suppressed automated export; the other 22 records have local captures.",
     "The Phase 55L download contains five official local captures and three official-link records because the Department of War and Idaho National Laboratory hosts allowed review but blocked automated export.",
     "The Phase 55N download contains ten official local captures and six official-link records because several official hosts blocked or complicated automated export; direct official URLs are preserved instead of third-party substitutes.",
@@ -304,5 +344,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the Phase 55M record-by-record publication review of the combined Phase 55L and Phase 55N implementation set. Thirteen bounded records move to Published; the scheduled DARPA Lift Challenge trial remains In Review pending official post-event evidence. Sites version 12 serves exact source commit c1038783998234025ec2af65dae495272a263cc1. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
+  "notes": "This manifest records the Phase 55O synthesis publication review. Two briefings move to Published, three briefings retain explicit holds, and all three dependency maps are repaired around Published signals before publication. Signal membership remains 38 Published and 25 In Review. Sites version 12 continues to serve the Phase 55M source commit until the validated Phase 55O source is deployed. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
 }

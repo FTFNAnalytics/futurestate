@@ -1,26 +1,32 @@
 {
   "id": "dependency-map-federal-research-industrial-capacity",
-  "title": "Federal research ambition runs through industrial capacity",
+  "title": "Federal implementation trails remain stage-bounded",
   "slug": "federal-research-to-industrial-capacity",
-  "summary": "A qualitative map connecting federal research direction to stage-bounded implementation, including awards, physical milestones, governance discontinuities, oversight limits, versioned software, procurement channels, local construction, and preliminary standards work.",
+  "summary": "A qualitative map connecting thirteen Published implementation records across awards, obligations, delivered material, governance discontinuities, oversight limits, versioned software, local construction, procurement channels, and preliminary standards work.",
   "map_type": "Dependency Stack",
-  "record_status": "In Review",
+  "record_status": "Published",
   "primary_topic": "Advanced Manufacturing",
-  "framework_layers": ["Resource Foundations", "Enabling Infrastructure", "Frontier Domains", "Human Systems"],
-  "constraint_tags": ["Materials", "Manufacturing", "Supply Chain", "Power", "Compute", "Cybersecurity", "Capital"],
-  "map_question": "What must exist between federal research ambition and a secure, scalable operating capability?",
-  "interpretation_boundary": "The map connects explicit source relationships, reviewed synthesis signals, and named implementation records. Implementation is not assumed to be linear: awards, obligations, scheduled trials, delivered material, governance actions, versioned software, construction milestones, procurement channels, and draft specifications remain distinct from completed facilities, accepted systems, operating infrastructure, or scaled outcomes.",
+  "framework_layers": [
+    "Resource Foundations",
+    "Enabling Infrastructure",
+    "Frontier Domains",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Materials",
+    "Manufacturing",
+    "Supply Chain",
+    "Power",
+    "Compute",
+    "Cybersecurity",
+    "Capital",
+    "Standards",
+    "Permitting"
+  ],
+  "map_question": "What do current federal implementation records establish, and which later gates remain open before operating capability or scale?",
+  "interpretation_boundary": "The map connects Published records that establish named financial actions, physical milestones, governance changes, oversight findings, research artifacts, facility construction, procurement channels, and preliminary specifications. Those stages remain distinct from completed facilities, accepted systems, operating infrastructure, institutional adoption, or scaled outcomes.",
   "source_ids": [
-    "source-darpa-fy2027-budget",
-    "source-darpa-future-focus-2026",
-    "source-fy2027-rd-priorities-m-25-34",
-    "source-americas-ai-action-plan-2025",
-    "source-nspm-11-ai-national-security",
-    "source-2026-transmission-needs-study",
-    "source-defense-supply-chains-critical-materials-2026",
-    "source-semiconductor-equipment-imports-2026",
     "source-usaspending-api",
-    "source-darpa-lift-challenge-2026",
     "source-dod-mp-materials-loan-2025",
     "source-nist-napmp-final-awards-2025",
     "source-doe-transmission-facilitation-selections",
@@ -35,13 +41,7 @@
     "source-nist-piv-pqc-working-drafts-2026"
   ],
   "signal_ids": [
-    "signal-darpa-fy2027-supply-chain-logistics-rd-portfolio",
-    "signal-federal-rd-priorities-full-stack-technology",
-    "signal-usg-ai-national-security-infrastructure-stack",
-    "signal-2026-transmission-study-ai-manufacturing-load",
-    "signal-usg-resilience-industrial-base-stack",
     "signal-usaspending-talon-nickel-battery-minerals-processing-award",
-    "signal-darpa-lift-challenge-2026-scheduled-field-trial",
     "signal-dod-mp-materials-heavy-rare-earth-separation-loan",
     "signal-nist-napmp-advanced-packaging-final-awards",
     "signal-doe-southline-transmission-capacity-contract-award",
@@ -55,70 +55,33 @@
     "signal-gsa-onegov-ai-procurement-channel",
     "signal-nist-piv-pqc-working-drafts"
   ],
-  "technology_ids": ["technology-advanced-semiconductor-packaging", "technology-grid-scale-energy-storage"],
-  "local_system_ids": [],
-  "evidence_gap_ids": [],
+  "technology_ids": [
+    "technology-advanced-semiconductor-packaging"
+  ],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor"
+  ],
+  "evidence_gap_ids": [
+    "gap-001",
+    "gap-002",
+    "gap-003",
+    "gap-007",
+    "gap-008",
+    "gap-009"
+  ],
   "nodes": [
     {
-      "id": "node-research-direction",
-      "label": "DARPA and federal R&D direction",
-      "node_type": "Signal",
-      "record_id": "signal-federal-rd-priorities-full-stack-technology",
-      "note": "Budget guidance and research portfolios identify the capability fields and their enabling systems."
-    },
-    {
-      "id": "node-darpa-portfolio",
-      "label": "DARPA supply-chain and logistics portfolio",
-      "node_type": "Signal",
-      "record_id": "signal-darpa-fy2027-supply-chain-logistics-rd-portfolio",
-      "note": "The portfolio treats making, maintaining, supply chains, logistics, and megasystem resilience as research work."
-    },
-    {
-      "id": "node-materials-production",
-      "label": "Materials, tools, and production capacity",
-      "node_type": "Constraint",
-      "note": "Usable capability depends on processing, equipment, manufacturing, suppliers, workforce, and sustainment."
-    },
-    {
-      "id": "node-compute-power",
-      "label": "Secure compute and reliable power",
-      "node_type": "Signal",
-      "record_id": "signal-usg-ai-national-security-infrastructure-stack",
-      "note": "AI adoption is tied to chips, secure data centers, power, assurance, acquisition, and supply chains."
-    },
-    {
-      "id": "node-transmission",
-      "label": "Transmission planning and delivery",
-      "node_type": "Signal",
-      "record_id": "signal-2026-transmission-study-ai-manufacturing-load",
-      "note": "DOE identifies new transmission need associated with data centers, manufacturing, and large loads."
-    },
-    {
-      "id": "node-resilience",
-      "label": "Resilient industrial base",
-      "node_type": "Signal",
-      "record_id": "signal-usg-resilience-industrial-base-stack",
-      "note": "Security strategies and policy actions converge on materials, production, cyber, energy, communications, and supplier resilience."
-    },
-    {
       "id": "node-implementation",
-      "label": "Implementation evidence",
+      "label": "Stage-bounded implementation evidence",
       "node_type": "Constraint",
-      "note": "Named records now establish partial implementation trails and show that those trails can advance, split, stall, or reverse before operation and scale."
-    },
-    {
-      "id": "node-field-trial",
-      "label": "Named performers and scheduled field trial",
-      "node_type": "Signal",
-      "record_id": "signal-darpa-lift-challenge-2026-scheduled-field-trial",
-      "note": "The Lift Challenge names invited teams and an August 2026 trial without pre-claiming the results."
+      "note": "Published records now establish partial implementation trails and show that those trails can advance, split, stall, or reverse before operation and scale."
     },
     {
       "id": "node-funded-actions",
-      "label": "Awards, obligations, and contracts",
+      "label": "Awards, obligations, loans, and contracts",
       "node_type": "Signal",
       "record_id": "signal-dod-openai-prototype-ota-initial-obligation",
-      "note": "Talon, MP Materials, NAPMP, Southline, and OpenAI records identify instruments and amounts while separating value, obligation, outlay, and delivery."
+      "note": "Talon, MP Materials, NAPMP, Southline, and OpenAI records identify instruments and amounts while separating value, obligation, outlay, construction, and delivery."
     },
     {
       "id": "node-physical-milestone",
@@ -132,7 +95,7 @@
       "label": "Testbed and standards artifacts",
       "node_type": "Signal",
       "record_id": "signal-nist-oran-testbed-standards-artifacts",
-      "note": "NIST records testbed software, laboratory infrastructure, and accepted O-RAN contributions without claiming a completed 6G system."
+      "note": "NIST records laboratory infrastructure, testbed software, and accepted O-RAN contributions without claiming a completed wireless system."
     },
     {
       "id": "node-governance-discontinuity",
@@ -172,69 +135,6 @@
   ],
   "links": [
     {
-      "from": "node-research-direction",
-      "to": "node-darpa-portfolio",
-      "relationship": "Related Signal",
-      "confidence": "Supported",
-      "note": "Government-wide priorities and DARPA's portfolio overlap across AI, compute, manufacturing, energy, materials, and security."
-    },
-    {
-      "from": "node-darpa-portfolio",
-      "to": "node-materials-production",
-      "relationship": "Depends On",
-      "confidence": "Supported",
-      "note": "The budget and office descriptions explicitly include making, maintaining, tooling, materials, supply chains, and logistics."
-    },
-    {
-      "from": "node-compute-power",
-      "to": "node-materials-production",
-      "relationship": "Depends On",
-      "confidence": "Supported",
-      "note": "Secure AI infrastructure depends on chips, equipment, data centers, suppliers, and workforce."
-    },
-    {
-      "from": "node-compute-power",
-      "to": "node-transmission",
-      "relationship": "Depends On",
-      "confidence": "Supported",
-      "note": "DOE identifies hyperscale data centers and manufacturing as drivers of transmission need."
-    },
-    {
-      "from": "node-materials-production",
-      "to": "node-resilience",
-      "relationship": "Depends On",
-      "confidence": "Supported",
-      "note": "The policy stack treats secure material and production capacity as an industrial-base requirement."
-    },
-    {
-      "from": "node-transmission",
-      "to": "node-resilience",
-      "relationship": "Received By",
-      "confidence": "Partial",
-      "note": "Reliable power supports resilient capability, but the draft study does not prove specific projects or delivery."
-    },
-    {
-      "from": "node-resilience",
-      "to": "node-implementation",
-      "relationship": "Limited By",
-      "confidence": "Partial",
-      "note": "Named implementation records now exist, but they do not establish completed or scaled capability."
-    },
-    {
-      "from": "node-research-direction",
-      "to": "node-implementation",
-      "relationship": "Limited By",
-      "confidence": "Partial",
-      "note": "Phase 55L adds selected award, obligation, trial, milestone, procurement, and standards records; later transition and operating evidence remains necessary."
-    },
-    {
-      "from": "node-darpa-portfolio",
-      "to": "node-field-trial",
-      "relationship": "Related Signal",
-      "confidence": "Supported",
-      "note": "The Lift Challenge provides named performers and a dated trial inside DARPA's logistics and aviation research activity."
-    },
-    {
       "from": "node-implementation",
       "to": "node-funded-actions",
       "relationship": "Evidenced By",
@@ -253,7 +153,7 @@
       "to": "node-standards-artifacts",
       "relationship": "Evidenced By",
       "confidence": "Supported",
-      "note": "NIST's testbed, software, and incorporated contributions provide standards and test infrastructure evidence."
+      "note": "NIST's testbed, software, and incorporated contributions provide standards and test-infrastructure evidence."
     },
     {
       "from": "node-implementation",
@@ -281,35 +181,34 @@
       "to": "node-local-construction",
       "relationship": "Received By",
       "confidence": "Partial",
-      "note": "The Phoenix milestone shows national semiconductor ambition entering a local construction system while utility, workforce, equipment, and operating gates remain open."
+      "note": "The Phoenix milestone shows a national semiconductor program entering a local construction system while utility, workforce, equipment, and operating gates remain open."
     },
     {
-      "from": "node-compute-power",
+      "from": "node-implementation",
       "to": "node-procurement-standards",
       "relationship": "Depends On",
       "confidence": "Partial",
-      "note": "AI and credential modernization move through acquisition, security, data, standards, validation, and adoption channels."
+      "note": "AI acquisition and credential modernization move through procurement, security, data, standards, validation, and adoption channels."
     }
   ],
   "what_this_map_supports": [
-    "Federal research direction can be analyzed as a dependency stack rather than a list of technologies.",
-    "The source set explicitly connects research with materials, manufacturing, supply chains, power, compute, cyber, and resilience.",
-    "Implementation evidence is a separate gate from strategy, budget requests, and solicitations.",
-    "Named records can be placed on a stage ladder without treating awards, obligations, scheduled tests, delivered material, versioned software, construction milestones, procurement availability, or draft specifications as operating outcomes.",
-    "A later governance action or oversight finding can change the interpretation of an earlier implementation record without proving that a specific project failed."
+    "Federal implementation can be analyzed as a sequence of distinct evidence stages rather than a single progress label.",
+    "Named Published records establish financial actions, delivered material, governance changes, oversight limits, software artifacts, construction milestones, procurement channels, and preliminary specifications.",
+    "A later governance action or oversight finding can change the interpretation of an earlier implementation record without proving that a specific project failed.",
+    "Local construction and operating conversion remain separate from national awards and program announcements."
   ],
   "what_this_map_does_not_prove": [
-    "It does not prove enacted funding, successful research, production readiness, supplier security, grid delivery, or operational adoption.",
-    "It does not rank technologies, programs, regions, or suppliers.",
+    "It does not prove completed facilities, successful trials, production readiness, supplier security, grid delivery, accepted systems, institutional adoption, or scaled capability.",
     "It does not establish that every NAPMP award was canceled, that any specific prototype failed, or that procurement and draft standards created operational adoption.",
+    "It does not rank technologies, programs, regions, or suppliers.",
     "It does not create a numeric 42/59 score."
   ],
   "next_records_needed": [
-    "FY2027 appropriations and DARPA award records tied to the Phase 55K portfolio.",
-    "Completed Lift Challenge results, measured performance, prize actions, transition agreements, and procurement records.",
     "Facility, equipment, commissioning, qualification, supplier, workforce, and production evidence behind Talon, MP Materials, and NAPMP.",
     "Current Southline permits, financing, construction, interconnection, and energization records.",
-    "Project Pele startup and test evidence, OpenAI prototype delivery and acceptance records, and later wireless test, standards, certification, and deployment artifacts.",
-    "Recipient-level NSTC and NAPMP status, agency-specific AI procurement outcomes, formal PIV revisions, validated credential products, and Phoenix facility occupancy, utility, equipment, qualification, and production evidence."
+    "Project Pele startup and test evidence and OpenAI prototype delivery, evaluation, acceptance, and follow-on records.",
+    "Later wireless test, security, standards, certification, and deployment artifacts.",
+    "Recipient-level NSTC and NAPMP status, agency-specific AI procurement outcomes, formal PIV revisions, validated credential products, and completed migration milestones.",
+    "Phoenix facility permits, occupancy, utility service, equipment installation, qualification, production, and workforce outcomes."
   ]
 }

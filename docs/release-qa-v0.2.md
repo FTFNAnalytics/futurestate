@@ -1,8 +1,8 @@
 # FTFN v0.2 Release QA
 
-Date: 2026-07-23
+Date: 2026-07-24
 
-Status: Phase 55M release gate and owner-only Sites version 12 deployment passed.
+Status: Phase 55O local release gate passed; owner-only Sites version 12 remains live pending the Phase 55O refresh.
 
 ## Artifact Under Review
 
@@ -10,8 +10,8 @@ Status: Phase 55M release gate and owner-only Sites version 12 deployment passed
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
 - Expected build: 380 HTML pages
-- Content baseline: 189 sources, 63 signals, 17 topics, 16 update entries, 3 research collections, 47 research documents
-- Publication baseline: 38 Published, 25 In Review, 0 Draft Sample
+- Content baseline: 189 sources, 63 signals, 17 topics, 17 update entries, 5 briefings, 3 dependency maps, 3 research collections, 47 research documents
+- Publication baseline: 38 Published signals, 25 In Review signals, 2 Published briefings, 3 In Review briefings, 3 Published dependency maps
 
 The package remains `0.2.0-dev`. The owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
 
@@ -32,7 +32,7 @@ Result:
 | Check | Result |
 | --- | --- |
 | Private candidates | Passed: 150 records; 132 Candidate, 11 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage |
-| Content references | Passed: 189 sources, 63 signals, 17 topics, 19 organizations, 5 technologies, 2 local systems, 5 briefings, 10 evidence gaps, 3 dependency maps, 3 research collections, 47 research documents, 16 updates |
+| Content references | Passed: 189 sources, 63 signals, 17 topics, 19 organizations, 5 technologies, 2 local systems, 5 briefings, 10 evidence gaps, 3 dependency maps, 3 research collections, 47 research documents, 17 updates |
 | Source endpoint metadata | Passed: 116 Manual review, 73 Probe ready |
 | Astro diagnostics | Passed: 0 errors, 0 warnings, 0 hints |
 | Static build | Passed: 380 HTML pages |
@@ -158,8 +158,8 @@ Hosted checkpoint:
 
 ## Verdict
 
-Phase 55M changes publication metadata and editorial notes for fourteen signals, adds one update record, and changes no components, styles, layouts, navigation, client-side behavior, source count, signal count, or route count.
+Phase 55O changes synthesis publication metadata and copy, repairs three dependency-map records, adds status-aware dependency-map indexing, strengthens content and release assertions, and adds one update record. It changes no styles, layouts, navigation, client-side behavior, source count, signal count, or route count.
 
-The 380-page artifact passes private-candidate validation, content references, source endpoint metadata, Astro diagnostics, static generation, the 38-route Published sitemap contract, non-published exclusion, canonical and indexing rules, the three public exports, the sixteen-entry update log, all three research archives, and private-registry exclusion.
+The 380-page artifact passes private-candidate validation, content references, source endpoint metadata, Astro diagnostics, static generation, the 38-route Published-signal sitemap contract, two Published briefing routes, three Published dependency-map routes, non-published exclusion, canonical and indexing rules, the three public exports, the seventeen-entry update log, all three research archives, and private-registry exclusion.
 
-Exact source commit `c1038783998234025ec2af65dae495272a263cc1` is deployed as owner-only Sites version 12 at `https://ftfn-analytics.jbumstead.chatgpt.site`. The access policy remains custom with one allowed owner and no groups. It is not approved for public access or public launch. The post-meeting Toronto Council and by-law recheck is the next dated authority gate; the DARPA Lift Challenge results recheck follows after August 9.
+Exact Phase 55M source commit `c1038783998234025ec2af65dae495272a263cc1` remains deployed as owner-only Sites version 12 at `https://ftfn-analytics.jbumstead.chatgpt.site` until the validated Phase 55O checkpoint is refreshed. The access policy remains custom with one allowed owner and no groups. It is not approved for public access or public launch. Phase 55P reader pathways are the next executable content work; the post-meeting Toronto Council and DARPA Lift Challenge checks remain dated inserts.

@@ -108,6 +108,8 @@ What is now stable:
 - Phase 55N exact source commit `c14551c7fad7e0ba6aac0e9e9ce03e5ad6189575` is deployed as owner-only Sites version 11 with no access or DNS change.
 - Phase 55M rechecked fourteen implementation signals against current primary sources, promoted thirteen bounded records, held the future DARPA Lift trial, and expanded the public set to 38 Published signals backed by 66 current sources without adding routes.
 - Phase 55M exact source commit `c1038783998234025ec2af65dae495272a263cc1` is deployed as owner-only Sites version 12 with no access or DNS change.
+- Phase 55O reviewed all five briefings and three dependency maps, published Stack Watch 003 and Stack Watch 004, held three briefings with explicit evidence-stage reasons, repaired all three maps around Published signals, and added synthesis-specific sitemap and indexing assertions.
+- The Phase 55O local contract remains 380 pages, 189 sources, 63 signals, 38 Published signals, and 25 In Review signals, with two Published briefings, three In Review briefings, three Published dependency maps, and 17 updates; the owner-only deployment refresh is pending.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 66 sources supporting the 38 Published signals were checked on or after `2026-07-22`.
@@ -129,7 +131,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve the owner-only preview and begin Phase 55O now: review the five briefings and three dependency maps for publish, repair, split, or hold decisions. Phase 55H is a dated insert after the July 29-31 Toronto Council meeting, not a blocker. Phase 55P then builds reader pathways, Phase 55Q closes a bounded set of high-value evidence gaps, and Phase 55R rechecks the Lift Challenge after August 9. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve the owner-only preview and begin Phase 55P: use the two Published briefings and three Published dependency maps to build reader pathways anchored to Published signals and visible gaps. Phase 55H is a dated insert after the July 29-31 Toronto Council meeting, not a blocker. Phase 55Q then closes a bounded set of high-value evidence gaps, and Phase 55R rechecks the Lift Challenge after August 9. Do not collapse governance, award, obligation, oversight, software, construction, procurement, draft-standard, test, acceptance, operation, or scale stages. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -141,11 +143,11 @@ Current seed content includes:
 - 2 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 5 briefings in review,
+- 5 briefings: 2 Published and 3 In Review,
 - 10 evidence gap records,
-- 3 dependency maps in review,
+- 3 Published dependency maps,
 - 3 research collections with 47 document records,
-- 16 public update-log entries.
+- 17 public update-log entries.
 
 Thirty-eight official-source-backed signals are now `Published`.
 
@@ -173,9 +175,9 @@ Twenty-five signals remain `In Review`. Important holds include:
 - Toronto application 24 254930 until the July 29-31 Council disposition and later permit evidence,
 - broader local power, water, workforce, facility, and delivery records that do not yet support a bounded public conclusion.
 
-No local system profile, briefing, dependency map, or company-claim record should be treated as `Published`. Project Huckleberry is Published only as a bounded single-project conversion record, not as a local-system readiness conclusion.
+No local system profile or company-claim record should be treated as `Published`. Project Huckleberry is Published only as a bounded single-project conversion record, not as a local-system readiness conclusion.
 
-The five current briefings remain `In Review` and should not be treated as published reports.
+Stack Watch 003 and Stack Watch 004 are Published. Local Watch 001, Stack Watch 001, and Stack Watch 002 remain `In Review`. All three dependency maps are Published after Phase 55O removed their reliance on non-published signal trails; every map remains qualitative and retains explicit evidence gaps and interpretation boundaries.
 
 ## Editorial Rules
 
@@ -221,7 +223,7 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 55M: Publication-Readiness Review
+Phase 55O: Briefing And Dependency-Map Publication Pass
 ```
 
 Key files:
@@ -245,6 +247,7 @@ Key files:
 - `docs/work-packages/phase-55l-implementation-evidence-conversion.md`
 - `docs/work-packages/phase-55n-implementation-outcomes-local-conversion.md`
 - `docs/work-packages/phase-55m-publication-readiness-review.md`
+- `docs/work-packages/phase-55o-briefing-dependency-map-publication.md`
 - `docs/work-packages/phase-55l-implementation-evidence-conversion.md`
 - `docs/work-packages/phase-55n-implementation-outcomes-local-conversion.md`
 - `docs/release-qa-v0.2.md`
@@ -301,15 +304,16 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 55O briefing and dependency-map publication pass
+Phase 55P reader pathways and priority topic dossiers
 ```
 
 Proceed by:
 
-- audit all five briefings and three dependency maps against Published support, caveats, correction paths, and reader usefulness,
-- assign a publish, repair, split, or hold decision to every product,
+- build five to six pathways across chips and compute, energy and grid capacity, critical minerals, policy and standards, advanced manufacturing, and local conversion,
+- anchor every pathway primarily to Published signals, the two Published briefings, and the three Published dependency maps,
+- make current state, dependency stack, evidence limits, and named next records visible on each pathway,
 - insert the Phase 55H Toronto recheck after July 31 and record a dated negative result if the official stage did not advance,
-- continue into Phase 55P reader pathways and Phase 55Q evidence-gap closure,
+- use the completed pathways to select the Phase 55Q evidence-gap batch,
 - insert the Phase 55R DARPA Lift recheck after August 9,
 - keep Git and the static build as the public publication gate,
 - preserve owner-only Sites access,
@@ -391,16 +395,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 55M publication-readiness review of the combined Phase 55L and Phase 55N implementation set.
+Phase 55O briefing and dependency-map publication pass.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 owner-only hosted candidate: package 0.2.0-dev, 189 public sources, 150 first-pass-triaged private candidates, 63 signals, 17 topics, 16 updates, 380 generated site pages, 38 Published signals, 47 research documents, verified 26-file, 11-file, and 19-file research archives, and 3 public JSON endpoints. Sites version 12 serves exact source commit c1038783998234025ec2af65dae495272a263cc1 at https://ftfn-analytics.jbumstead.chatgpt.site under the unchanged owner-only access policy. Source Coverage is 14 Strong lanes; source health reports 116 Manual Review and 73 Probe Ready records.
+v0.2 locally validated candidate: package 0.2.0-dev, 189 public sources, 150 first-pass-triaged private candidates, 63 signals, 17 topics, 17 updates, 380 generated site pages, 38 Published signals, 2 Published briefings, 3 In Review briefings, 3 Published dependency maps, 47 research documents, verified 26-file, 11-file, and 19-file research archives, and 3 public JSON endpoints. Sites version 12 still serves the prior Phase 55M source commit c1038783998234025ec2af65dae495272a263cc1 at https://ftfn-analytics.jbumstead.chatgpt.site until the Phase 55O owner-only refresh completes. Source Coverage is 14 Strong lanes; source health reports 116 Manual Review and 73 Probe Ready records.
 
 Next decision gate:
-Preserve the owner-only preview and begin Phase 55O now. Review all five briefings and three dependency maps for publish, repair, split, or hold decisions. Treat Phase 55H after July 31 and Phase 55R after August 9 as dated inserts; continue through Phase 55P reader pathways and Phase 55Q high-value evidence-gap closure between them. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve the owner-only preview and begin Phase 55P now. Use the two Published briefings and three Published dependency maps as the synthesis layer for five to six reader pathways. Treat Phase 55H after July 31 and Phase 55R after August 9 as dated inserts; continue into Phase 55Q high-value evidence-gap closure after the pathways. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

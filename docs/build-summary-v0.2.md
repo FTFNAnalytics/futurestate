@@ -1,6 +1,6 @@
 # FTFN v0.2 Build Summary
 
-Date: 2026-07-23
+Date: 2026-07-24
 
 ## Executive State
 
@@ -43,6 +43,8 @@ Phase 55N follows those trails into later program actions and local conversion e
 
 Phase 55M applies the complete publication gate independently to the fourteen implementation signals created or materially repaired in Phases 55L and 55N. Thirteen pass as current, source-visible, bounded, and independently useful records. The DARPA Lift Challenge remains `In Review` because the August 2-9 field trial has not happened. The package remains at 380 pages, 189 sources, and 63 signals while moving to 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources. Sites version 12 serves exact source commit `c1038783998234025ec2af65dae495272a263cc1` under the unchanged owner-only policy.
 
+Phase 55O applies the synthesis publication gate to all five briefings and three dependency maps. Stack Watch 003 and Stack Watch 004 move to `Published`; the other three briefings retain explicit evidence-stage holds. All three maps are repaired around Published signals, named open gaps, and qualitative interpretation boundaries before publication. Signal membership remains 38 Published and 25 In Review; the package remains at 380 pages and grows to 17 updates. Local validation passes, and the owner-only deployment refresh is pending.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
@@ -56,7 +58,7 @@ The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 | In Review signals | 14 | 25 | +11 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 16 | +16 |
+| Public update entries | 0 | 17 | +17 |
 | Versioned JSON exports | 0 | 3 | +3 |
 
 Additional current records:
@@ -65,8 +67,8 @@ Additional current records:
 - 5 technologies,
 - 2 local systems,
 - 10 evidence gaps,
-- 3 dependency maps,
-- 5 briefings in review,
+- 3 Published dependency maps,
+- 5 briefings: 2 Published and 3 In Review,
 - 3 research collections with 47 document records,
 - 37 official local captures plus 10 official-link records across verified 26-file, 11-file, and 19-file ZIP archives.
 
@@ -84,7 +86,7 @@ The public application includes:
 - versioned JSON exports for sources, topics, and Published signals,
 - generated `robots.txt` and `sitemap.xml`,
 - canonical metadata for `https://ftfn.io`,
-- `noindex, follow` boundaries for non-published signals and briefings.
+- `noindex, follow` boundaries for non-published signals, briefings, and dependency maps.
 
 The editorial and authority layer includes:
 
@@ -92,7 +94,7 @@ The editorial and authority layer includes:
 - 63 bounded signal records with explicit claim and evidence limits,
 - 38 Published signals backed by 66 sources checked on or after 2026-07-22,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
-- a public sixteen-entry update and correction log,
+- a public seventeen-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
@@ -141,12 +143,16 @@ Phase 55N added six Tier 1 source profiles, sixteen reviewed implementation and 
 
 Phase 55M rechecked fourteen implementation records against current official sources and the full publication policy. Thirteen records moved to `Published`; the scheduled DARPA Lift Challenge stayed `In Review`. The local result remains 380 generated pages, 189 sources, and 63 signals, with 38 Published, 25 In Review, 16 public updates, and 66 current Published-support sources. Candidate validation, content validation, source health, Astro diagnostics, production build, sitemap, indexing, exports, research archives, and release assertions all pass.
 
+Phase 55O reviewed all eight synthesis products. Two briefings passed with their linked In Review records visibly bounded; three briefings were held with explicit reopening triggers. The three maps were rebuilt to use only Published signal trails and were promoted. The local result remains 380 generated pages, 189 sources, 63 signals, 38 Published signals, and 25 In Review signals, with two Published briefings, three In Review briefings, three Published dependency maps, and 17 public updates. Candidate validation, content validation, source health, Astro diagnostics, production build, sitemap membership, synthesis indexing, exports, research archives, and release assertions all pass.
+
 Verified results:
 
 - 380 generated site pages,
 - exact exports for 189 sources, 17 topics, and 38 Published signals,
 - all 38 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
+- both Published briefing routes included in the sitemap and all three held briefing routes excluded,
+- all three Published dependency-map routes included in the sitemap,
 - correct canonical, robots, and publication-state indexing boundaries,
 - ten core journeys checked at `1440x900` and `390x844`,
 - compact header brand and navigation targets repaired to a 44-pixel minimum,
@@ -157,7 +163,7 @@ Verified results:
 - three Published research collections with all 47 document routes in the sitemap,
 - verified 26-file, 11-file, and 19-file ZIP archives containing 37 local captures, ten official-link files, summaries, README files, and manifests.
 
-The current publication decision is in `docs/work-packages/phase-55m-publication-readiness-review.md`; the underlying evidence is documented in the Phase 55K, Phase 55L, and Phase 55N work packages. The owner-only deployment is current at Sites version 12 from exact source commit `c1038783998234025ec2af65dae495272a263cc1`. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
+The current synthesis decision is in `docs/work-packages/phase-55o-briefing-dependency-map-publication.md`; the underlying evidence is documented in the Phase 55K through Phase 55N work packages and the Phase 55M signal gate. The owner-only deployment remains at Sites version 12 from exact source commit `c1038783998234025ec2af65dae495272a263cc1` until the validated Phase 55O checkpoint is refreshed. The `ftfn.io` and `www.ftfn.io` domain entries remain pending DNS validation and do not route to the Site.
 
 ## Repository And Deployment State
 
@@ -170,7 +176,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 ## Known Limitations
 
 - Twenty-five signals remain `In Review`; the DARPA Lift Challenge is the explicit future-trial hold and the former Joby Draft Sample remains the explicit company-claim hold from Phase 55F.
-- The five briefings, three dependency maps, and local-system profiles remain prelaunch or research material.
+- Three briefings and both local-system profiles remain prelaunch or research material. The two Published briefings and three Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
 - Six Phase 55N sources have official-link records because their official hosts blocked or complicated automated export; the collection preserves direct official URLs rather than third-party substitutes.

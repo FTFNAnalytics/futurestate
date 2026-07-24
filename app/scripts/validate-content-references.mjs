@@ -340,6 +340,18 @@ for (const record of dependencyMaps) {
   requireReferences(record, "evidence_gap_ids", evidenceGapIds, "evidence gap");
   requireDependencyMapNodeReferences(record, dependencyMapNodeIndexes);
   requireDependencyMapLinks(record);
+
+  if (record.data.record_status === "Published") {
+    for (const signalId of asArray(record.data.signal_ids)) {
+      const signal = signalIds.get(signalId);
+
+      if (signal && signal.data.record_status !== "Published") {
+        errors.push(
+          `${toPosixPath(record.filePath)} is Published but references non-Published signal "${signalId}".`
+        );
+      }
+    }
+  }
 }
 
 for (const record of researchCollections) {

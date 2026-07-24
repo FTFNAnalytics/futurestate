@@ -1291,7 +1291,7 @@ Do not use it for:
 Purpose:
 
 - Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 380-page build, 38 Published signals, 189 sources, 16 updates, 47 research documents, three required archives, three exports, route samples, release assertions, browser evidence, and deployment boundaries.
+- Capture the 380-page build, 38 Published signals, 189 sources, 17 updates, two Published briefings, three Published dependency maps, 47 research documents, three required archives, three exports, route samples, release assertions, browser evidence, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 
@@ -1450,3 +1450,29 @@ Update when:
 Boundary:
 
 Publication confirms a useful bounded claim, not completion of the implementation ladder. Public access, package freeze, custom-domain attachment, DNS changes, public GitHub synchronization, and public launch remain separate decisions.
+
+### Phase 55O Briefing And Dependency-Map Publication Pass
+
+Purpose:
+
+- Record a publish, repair, split, or hold decision for all five briefings and all three dependency maps.
+- Document two Published briefings, three held briefings, and three repaired Published dependency maps.
+- Preserve visible status boundaries when a Published briefing uses a linked In Review signal as explicit context.
+- Require Published dependency maps to reference only Published signals.
+- Align dependency-map robots and sitemap behavior with the existing signal and briefing publication policy.
+
+Primary file:
+
+- `docs/work-packages/phase-55o-briefing-dependency-map-publication.md`
+
+Update when:
+
+- a held briefing receives enough Published support for a new publication review,
+- a Published briefing's central evidence changes materially,
+- a dependency map adds or removes a signal, source, local system, technology, or evidence gap,
+- dependency-map publication or indexing policy changes,
+- the exact Phase 55O deployment commit or Sites version changes.
+
+Boundary:
+
+Publishing a synthesis product does not promote its linked In Review records. Dependency maps remain qualitative, preserve open evidence gaps, and do not establish readiness, completion, adoption, operation, or scale. Public access, package freeze, custom-domain attachment, DNS changes, public GitHub synchronization, and public launch remain separate decisions.

@@ -2,9 +2,9 @@
   "id": "dependency-map-post-quantum-standards-are-not-migration",
   "title": "Post-quantum standards are not migration",
   "slug": "post-quantum-standards-are-not-migration",
-  "summary": "A qualitative technology-readiness map showing how NIST standards, Executive Order 14412, and OMB M-26-15 turn post-quantum cryptography into a dated federal migration program while completed institution-level implementation remains unresolved.",
+  "summary": "A qualitative technology-readiness map built from Published NIST standards and preliminary PIV specification records, showing how post-quantum cryptography becomes migration work while institution-level implementation remains unresolved.",
   "map_type": "Technology Readiness Map",
-  "record_status": "In Review",
+  "record_status": "Published",
   "primary_topic": "Quantum",
   "framework_layers": [
     "Enabling Infrastructure",
@@ -19,15 +19,16 @@
     "Interpretation"
   ],
   "map_question": "How do post-quantum cryptography standards become operational migration work, and where does FTFN still lack implementation evidence?",
-  "interpretation_boundary": "This map shows a federal requirements, planning, procurement, pilot, and deadline stack. It does not prove that an agency, contractor, vendor, critical-infrastructure operator, or local system has completed post-quantum migration.",
+  "interpretation_boundary": "This map connects final PQC standards, federal direction, implementation requirements, and a preliminary credential-specification artifact. It does not prove that an agency, contractor, vendor, critical-infrastructure operator, or local system has completed post-quantum migration.",
   "source_ids": [
     "source-nist-pqc",
     "source-white-house-eo-14412-pqc-migration",
-    "source-omb-m-26-15-pqc-migration"
+    "source-omb-m-26-15-pqc-migration",
+    "source-nist-piv-pqc-working-drafts-2026"
   ],
   "signal_ids": [
     "signal-sample-007",
-    "signal-federal-pqc-migration-plans-and-deadlines"
+    "signal-nist-piv-pqc-working-drafts"
   ],
   "technology_ids": [
     "technology-post-quantum-cryptography"
@@ -73,11 +74,11 @@
       "note": "A Tier 1 implementation memorandum requiring agency plans, risk prioritization, modernization, and vendor-readiness work."
     },
     {
-      "id": "node-federal-pqc-signal",
-      "label": "Federal PQC migration plans and deadlines",
+      "id": "node-piv-pqc-signal",
+      "label": "PIV post-quantum working drafts",
       "node_type": "Signal",
-      "record_id": "signal-federal-pqc-migration-plans-and-deadlines",
-      "note": "An In Review signal that converts the directive and memorandum into a bounded implementation clock without claiming completion."
+      "record_id": "signal-nist-piv-pqc-working-drafts",
+      "note": "A Published preliminary specification artifact that proposes ML-DSA and ML-KEM support for federal identity credentials without claiming a final requirement or deployed capability."
     },
     {
       "id": "node-pqc-technology",
@@ -129,32 +130,32 @@
       "note": "The signal and technology profile share the same primary source and topic context."
     },
     {
-      "from": "node-federal-pqc-signal",
+      "from": "node-piv-pqc-signal",
       "to": "node-pqc-executive-order-source",
       "relationship": "Evidenced By",
       "confidence": "Supported",
-      "note": "Executive Order 14412 defines the leadership, deadline, pilot, critical-infrastructure, and procurement directives."
+      "note": "The Published PIV record cites Executive Order 14412 as part of the federal policy context for credential migration."
     },
     {
-      "from": "node-federal-pqc-signal",
+      "from": "node-piv-pqc-signal",
       "to": "node-pqc-omb-source",
       "relationship": "Evidenced By",
       "confidence": "Supported",
-      "note": "OMB M-26-15 defines the agency plan, prioritization, governance, modernization, and vendor-readiness requirements."
+      "note": "The Published PIV record cites OMB M-26-15 as part of the federal planning, modernization, and vendor-readiness context."
     },
     {
-      "from": "node-federal-pqc-signal",
+      "from": "node-piv-pqc-signal",
       "to": "node-pqc-technology",
       "relationship": "Related Technology",
       "confidence": "Supported",
-      "note": "The federal directives operationalize the NIST-standardized technology through migration planning and deadlines."
+      "note": "The working drafts translate NIST-standardized algorithms into proposed credential data models, interfaces, and migration behavior."
     },
     {
-      "from": "node-federal-pqc-signal",
+      "from": "node-piv-pqc-signal",
       "to": "node-institution-migration-gap",
       "relationship": "Limited By",
       "confidence": "Partial",
-      "note": "The requirements narrow the evidence gap but do not supply completed agency, vendor, procurement, or system-transition evidence."
+      "note": "The preliminary specification narrows one implementation layer but does not supply final requirements, validated products, completed pilots, issued credentials, or system-transition evidence."
     },
     {
       "from": "node-pqc-technology",
@@ -181,12 +182,13 @@
   "what_this_map_supports": [
     "FTFN can distinguish standards progress from operational migration progress.",
     "FTFN can show how standards, executive direction, OMB implementation requirements, security signals, a technology profile, and an evidence gap fit together.",
-    "Federal agencies now have a dated leadership, planning, prioritization, modernization, pilot, procurement, and system-transition program.",
+    "Federal direction, implementation requirements, and preliminary PIV specifications expose a dated migration and standards stack.",
+    "The PIV working drafts make credential data models and interfaces inspectable while remaining upstream of formal standards and deployment.",
     "Post-quantum cryptography can be tracked as infrastructure migration work without numeric scoring."
   ],
   "what_this_map_does_not_prove": [
     "It does not prove that any institution has completed post-quantum migration.",
-    "It does not prove agency plan acceptance, vendor readiness, procurement compliance, cryptographic inventory completeness, migrated systems, or critical-infrastructure execution.",
+    "It does not prove agency plan acceptance, final PIV requirements, validated products, vendor readiness, procurement compliance, cryptographic inventory completeness, migrated systems, or critical-infrastructure execution.",
     "It does not rank quantum risk or create a 42/59 score."
   ],
   "next_records_needed": [

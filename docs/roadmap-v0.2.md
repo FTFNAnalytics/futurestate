@@ -359,16 +359,16 @@ Recommended active schedule:
 | Completed | Phase 53 | nine Published records and a documented 23-record review shelf |
 | Completed | Phase 54 | local release gate, touch-target repair, v0.2 manifest, launch note, preview explicitly deferred |
 | Checkpoint | Phase 55M | 38 Published signals, 25 In Review signals, and an owner-only Sites version 12 |
-| Current | Phase 55O | review the five briefings and three dependency maps for publish, repair, split, or hold decisions |
+| Completed locally | Phase 55O | two Published briefings, three held briefings, and three repaired Published dependency maps |
 | Date-gated insert | Phase 55H | complete the Toronto post-Council authority recheck after July 31 |
-| Next | Phase 55P | build curated reader pathways and priority topic dossiers from Published evidence |
+| Current | Phase 55P | build curated reader pathways and priority topic dossiers from Published evidence |
 | Then | Phase 55Q | close a bounded batch of the highest-value evidence gaps |
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete. Phases 55A-55J strengthened the authority package and publication set; Phase 55K added the first primary-document research collection; Phase 55L converted eight directions into implementation trails; Phase 55N tested those trails against later outcomes, discontinuities, oversight limits, and local conversion gates; and Phase 55M applied the record-level publication gate. The next content runway converts that evidence into publishable synthesis products, reader pathways, and bounded gap-closure work. Phase 55H and Phase 55R are dated inserts and do not block the work that can be completed now. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete. Phases 55A-55J strengthened the authority package and publication set; Phase 55K added the first primary-document research collection; Phase 55L converted eight directions into implementation trails; Phase 55N tested those trails against later outcomes, discontinuities, oversight limits, and local conversion gates; Phase 55M applied the record-level publication gate; and Phase 55O completed the first synthesis publication pass. The next content runway turns those products into reader pathways and bounded gap-closure work. Phase 55H and Phase 55R are dated inserts and do not block the work that can be completed now. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -403,6 +403,7 @@ Current stop point:
 - Phase 55L added eight implementation-evidence records, seven source profiles, seven new `In Review` signals, one repaired USAspending signal, one briefing, an expanded dependency map, and a verified 11-file download bundle,
 - Phase 55N added a 16-record outcome and local-conversion collection, six source profiles, six new `In Review` signals, two briefings, four organizations, integrated trail repairs, and a verified 19-file download bundle,
 - Phase 55M applied the publication gate separately to fourteen Phase 55L and Phase 55N signals, promoted thirteen bounded records, held the scheduled DARPA Lift trial, and advanced the release contract to 38 Published, 25 In Review, 16 updates, and 66 current Published-support sources,
+- Phase 55O reviewed all five briefings and three dependency maps, published two briefings, held three with explicit reasons, repaired all three maps around Published signals, added the seventeenth update, and passed the complete local release gate,
 - the branch remains unpushed to public GitHub; exact Phase 55M source commit `c1038783998234025ec2af65dae495272a263cc1` is deployed as owner-only Sites version 12 without changing access,
 - no custom domain is attached and Hostinger DNS remains unchanged,
 - the remaining Phase 55H action is the post-meeting recheck of Toronto application `24 254930` for Council disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit evidence,
@@ -423,7 +424,7 @@ Exit criteria:
 - production DNS remains unchanged,
 - no secrets or credentials are committed or pasted into chat.
 
-### Phase 55O: Briefing And Dependency-Map Publication Pass - Current
+### Phase 55O: Briefing And Dependency-Map Publication Pass - Complete Locally
 
 Goal: convert the existing synthesis shelf into a set of explicit publish, repair, split, or hold decisions without lowering the publication standard.
 
@@ -450,6 +451,15 @@ Exit criteria:
 - every promoted product has a visible evidence chain, limitation statement, and correction path,
 - candidate validation, content validation, source health, Astro diagnostics, production build, and release assertions pass,
 - owner-only access remains unchanged.
+
+Result:
+
+- Stack Watch 003 and Stack Watch 004 are Published,
+- Local Watch 001, Stack Watch 001, and Stack Watch 002 remain In Review with explicit hold and reopening conditions,
+- all three dependency maps are Published after repair around Published signals and visible evidence gaps,
+- Published map details are indexable; future non-published map details are `noindex, follow` and excluded from the sitemap,
+- all candidate, content, source-health, Astro, build, indexing, export, archive, and release assertions pass,
+- the owner-only Sites refresh remains the final execution step for the exact checkpoint.
 
 ### Phase 55H: Toronto Post-Council Authority Gate - Date-Gated Insert
 
@@ -653,15 +663,15 @@ v0.2 is successful when:
 - release QA remains repeatable,
 - no automated process publishes claims without review.
 
-The prior v0.2 build and publication thresholds pass in the current candidate. Phase 55M expanded Published membership to 38 bounded records without changing the package-freeze or public-launch boundary. The synthesis, pathway, and evidence-gap criteria above now define the remaining content runway.
+The prior v0.2 build and publication thresholds pass in the current candidate. Phase 55M expanded Published membership to 38 bounded records, and Phase 55O published two briefings plus three dependency maps without changing signal membership, package freeze, or the public-launch boundary. The pathway and evidence-gap criteria above now define the remaining content runway.
 
 ## Immediate Next Step
 
-Start Phase 55O now. Review the five briefings and three dependency maps one by one, beginning with the products most strongly supported by the 38 Published signals. Each product must receive a publish, repair, split, or hold decision; no synthesis product should be promoted as a batch default.
+Begin Phase 55P. Build five to six curated reader pathways across chips and compute, energy and grid capacity, critical minerals and industrial capacity, policy and standards, advanced manufacturing, and local conversion. Use the two Published briefings and three Published dependency maps as the synthesis layer, and anchor every pathway primarily to Published signals.
 
 Insert Phase 55H immediately after the July 29-31, 2026 Toronto Council meeting window. Recheck application `24 254930` against the same official trail. If no named official stage has advanced, record the dated negative result and return to the content runway rather than manufacturing a signal.
 
-After Phase 55O, build the priority reader pathways in Phase 55P and then use those pathways to select the four to six highest-value evidence gaps for Phase 55Q. Do not open another general source-volume target.
+Use the completed pathways to select the four to six highest-value evidence gaps for Phase 55Q. Do not open another general source-volume target.
 
 Insert Phase 55R after August 9, 2026. Recheck the official DARPA Lift Challenge record for measured results, winners, prize awards, and transition evidence. Do not promote the scheduled-trial record before that evidence exists.
 
