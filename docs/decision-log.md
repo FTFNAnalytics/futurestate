@@ -2410,7 +2410,9 @@ Implemented:
 - advanced the verified contract to 389 pages, 194 sources, 67 signals, 42 Published, 25 In Review, 19 updates, and 70 current Published-support sources,
 - preserved the existing Toronto Phase 55H recheck for August 1,
 - added the Arizona wastewater acceptance and operation recheck for September 22,
-- kept owner-only Sites publication, public access, DNS, package freeze, public GitHub synchronization, and public launch as separate gates.
+- committed exact source as `9d9643fd2d46a03f7148b90971d50d10d24baa97`,
+- deployed that source as owner-only Sites version 15 with one allowed owner and no groups,
+- kept public access, DNS, package freeze, public GitHub synchronization, and public launch as separate gates.
 
 Boundary:
 

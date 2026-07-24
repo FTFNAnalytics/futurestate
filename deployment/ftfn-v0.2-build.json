@@ -12,8 +12,8 @@
     "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
     "access": "owner-only-custom-policy",
     "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
-    "current_source_commit": "8b43caeb7db1debefab3292ed1913ce8bd2b557e",
-    "current_version_number": 14,
+    "current_source_commit": "9d9643fd2d46a03f7148b90971d50d10d24baa97",
+    "current_version_number": 15,
     "custom_domain_attached": false,
     "post_deploy_qa": "passed-deployment-status-and-owner-only-access-policy"
   },
@@ -194,14 +194,14 @@
     "build": "passed",
     "static_pages_built": 389,
     "release_assertions": "passed",
-    "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-55p-visual-qa-not-requested",
+    "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-55q-visual-qa-not-requested",
     "browser_viewports": [
       "1440x900",
       "390x844"
     ],
     "browser_routes_checked": 10,
     "hosted_routes_checked": 5,
-    "preview_qa": "passed-owner-only-version-14-deployment-and-access; phase-55q-publication-pending"
+    "preview_qa": "passed-owner-only-version-15-deployment-and-access"
   },
   "required_output_files": [
     "dist/index.html",
@@ -408,5 +408,5 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the locally validated Phase 55Q evidence-gap build pending owner-only publication. Six high-value gaps now expose named authoritative records, explicit decisions, stage results, and stop rules. Five sources and four bounded Published signals advance power, workforce, Ontario conversion, and PQC procurement evidence; Arizona wastewater remains on a dated hold. Sites version 14 continues to serve the prior Phase 55P source until Phase 55Q publication succeeds. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
+  "notes": "This manifest records the locally validated and owner-only deployed Phase 55Q evidence-gap build. Six high-value gaps now expose named authoritative records, explicit decisions, stage results, and stop rules. Five sources and four bounded Published signals advance power, workforce, Ontario conversion, and PQC procurement evidence; Arizona wastewater remains on a dated hold. Sites version 15 serves exact source commit 9d9643fd2d46a03f7148b90971d50d10d24baa97. Access remains custom with one allowed owner and no groups. The ftfn.io and www.ftfn.io custom-domain entries remain pending DNS validation and do not route to the Site. This manifest does not authorize public access, DNS changes, public GitHub synchronization, or package freeze."
 }

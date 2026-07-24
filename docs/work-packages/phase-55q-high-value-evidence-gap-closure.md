@@ -1,7 +1,7 @@
 # Phase 55Q High-Value Evidence-Gap Closure Batch
 
 Date: 2026-07-24
-Status: complete and locally validated; owner-only Sites publication pending
+Status: complete, locally validated, and deployed as owner-only Sites version 15
 
 ## Goal
 
@@ -100,6 +100,15 @@ The release manifest must verify:
 - 389 generated HTML pages,
 - unchanged private-registry and public-export boundaries,
 - and owner-only Sites access.
+
+Deployment receipt:
+
+- exact source commit: `9d9643fd2d46a03f7148b90971d50d10d24baa97`,
+- Sites version: 15,
+- production URL: `https://ftfn-analytics.jbumstead.chatgpt.site`,
+- access: custom policy with one allowed owner and no groups,
+- deployment status: succeeded,
+- custom domain and Hostinger DNS: unchanged.
 
 ## Next Gate
 

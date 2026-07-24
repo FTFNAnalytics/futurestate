@@ -361,7 +361,7 @@ Recommended active schedule:
 | Checkpoint | Phase 55M | 38 Published signals, 25 In Review signals, and an owner-only Sites version 12 |
 | Completed | Phase 55O | two Published briefings, three held briefings, three repaired Published dependency maps, and owner-only Sites version 13 |
 | Completed | Phase 55P | six reader pathways across seven existing Atlas surfaces and owner-only Sites version 14 |
-| Completed | Phase 55Q | six structured gap decisions, five named sources, four Published signals, and a 389-page locally verified candidate |
+| Completed | Phase 55Q | six structured gap decisions, five named sources, four Published signals, and owner-only Sites version 15 |
 | Next dated insert | Phase 55H | complete the Toronto post-Council authority recheck on August 1 |
 | Date-gated insert | Phase 55R | recheck the DARPA Lift Challenge after August 9 |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
@@ -408,7 +408,7 @@ Current stop point:
 - Phase 55P added six structured reader pathways across five priority topic pages and both local-system pages, linked 30 distinct Published signals to the Published synthesis and research layers, preserved eight explicit gaps, and added the eighteenth update without adding a route family,
 - exact Phase 55P source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` is deployed as owner-only Sites version 14 without changing access, custom-domain state, or DNS,
 - Phase 55Q added five named official sources, four bounded Published signals, and structured decisions on six high-value evidence gaps; the verified local contract is 389 pages, 194 sources, 67 signals, 42 Published, 25 In Review, and 19 updates,
-- Phase 55Q owner-only Sites publication is pending and will preserve the same one-owner, no-group access policy,
+- exact Phase 55Q source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97` is deployed as owner-only Sites version 15 with the same one-owner, no-group access policy,
 - the branch remains unpushed to public GitHub; exact Phase 55M source commit `c1038783998234025ec2af65dae495272a263cc1` is deployed as owner-only Sites version 12 without changing access,
 - no custom domain is attached and Hostinger DNS remains unchanged,
 - the remaining Phase 55H action is the post-meeting recheck of Toronto application `24 254930` for Council disposition, amended recommendations, bill status, enacted by-laws, condition compliance, and later permit evidence,
@@ -561,7 +561,7 @@ Result:
 - the verified contract is 389 pages, 194 sources, 67 signals, 42 Published, 25 In Review, 19 updates, and 70 current Published-support sources,
 - the Toronto Phase 55H recheck is already scheduled for August 1 and the Arizona wastewater acceptance recheck is scheduled for September 22,
 - all candidate, content, source-health, Astro, build, sitemap, canonical, export, archive, and release assertions pass,
-- owner-only Sites publication is pending.
+- exact source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97` is deployed as owner-only Sites version 15.
 
 ### Phase 55R: DARPA Lift Outcome Gate - Date-Gated Insert
 

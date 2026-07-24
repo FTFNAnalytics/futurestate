@@ -17,7 +17,7 @@ Content: 194 sources, 67 signals, 17 topics, 3 research collections / 47 researc
 Publication: 42 Published signals, 25 In Review signals, 2 Published briefings, 3 In Review briefings, 3 Published dependency maps
 Trust/data: 19 update entries, 6 Phase 55Q gap decisions, 6 reader pathways across 7 Atlas surfaces, 3 versioned JSON exports, verified 26-file, 11-file, and 19-file research archives
 Private authority layer: 150 candidates, 15 profiles, 132 Candidate, 11 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: Phase 55Q owner-only Sites publication pending; version 14 remains the current hosted checkpoint at https://ftfn-analytics.jbumstead.chatgpt.site
+Deployment: owner-only Sites version 15 from 9d9643fd at https://ftfn-analytics.jbumstead.chatgpt.site
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 120 Manual Review, 74 Probe Ready; 14 Strong coverage lanes
 Next phase: Phase 55H scheduled for August 1; Phase 55R after August 9; Arizona wastewater recheck September 22
@@ -79,6 +79,7 @@ The approved preview sequence is complete:
 24. Deployed exact source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` as owner-only Sites version 14 with one allowed owner, no groups, and no access, custom-domain, or DNS change.
 25. Completed Phase 55Q locally: six structured gap decisions, five named official sources, four bounded Published signals, dossier and pathway repairs, 19 updates, and a passing 389-page release contract.
 26. Preserved the Toronto Phase 55H task for August 1 and added the Arizona wastewater acceptance and operation recheck for September 22.
+27. Deployed exact source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97` as owner-only Sites version 15 with one allowed owner, no groups, and no access, custom-domain, or DNS change.
 
 ## Required Stop Points
 
@@ -132,7 +133,7 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is the Phase 55Q evidence-gap closure batch. The current candidate should be 0.2.0-dev on codex/phase51-content with 194 sources, 67 signals, 42 Published signals, 25 In Review signals, two Published briefings, three In Review briefings, three Published dependency maps, six Phase 55Q gap decisions, six reader pathways across seven existing Atlas surfaces, 19 public updates, three JSON exports, 389 generated site pages, three research collections, 47 research documents, and verified 26-file, 11-file, and 19-file download archives. Phase 55Q owner-only Sites publication may still be pending; verify the manifest and deployment receipt rather than assuming the prior version 14 checkpoint is current. The branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
+The latest completed work is the Phase 55Q evidence-gap closure batch. The current candidate should be 0.2.0-dev on codex/phase51-content with 194 sources, 67 signals, 42 Published signals, 25 In Review signals, two Published briefings, three In Review briefings, three Published dependency maps, six Phase 55Q gap decisions, six reader pathways across seven existing Atlas surfaces, 19 public updates, three JSON exports, 389 generated site pages, three research collections, 47 research documents, and verified 26-file, 11-file, and 19-file download archives. Sites version 15 serves exact source commit 9d9643fd2d46a03f7148b90971d50d10d24baa97 at the owner-only URL https://ftfn-analytics.jbumstead.chatgpt.site. The branch remains unpushed to public GitHub, and the pending custom-domain entries do not route because DNS has not been changed.
 
 Phase 55I completed the first-pass review of all 150 local-only private candidates across 15 profiles: 132 Candidate, 11 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 

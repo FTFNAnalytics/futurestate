@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: Phase 55Q local release gate passed; owner-only Sites publication pending.
+Status: Phase 55Q release gate and owner-only Sites version 15 deployment passed.
 
 ## Artifact Under Review
 
@@ -162,4 +162,4 @@ Phase 55Q adds five named official sources, four bounded Published signals, one 
 
 The 389-page artifact passes private-candidate validation, content references, source endpoint metadata, Astro diagnostics, static generation, the 42-route Published-signal sitemap contract, all ten evidence-gap routes, exactly six Phase 55Q decisions, two Published briefing routes, three Published dependency-map routes, six pathways across seven existing Atlas surfaces, non-published exclusion, canonical and indexing rules, the three public exports, the nineteen-entry update log, all three research archives, and private-registry exclusion.
 
-Phase 55Q owner-only Sites publication is pending at `https://ftfn-analytics.jbumstead.chatgpt.site`. The required access policy remains custom with one allowed owner and no groups. A Phase 55Q visual/browser pass was not requested; automated page, content, canonical, sitemap, and release-contract checks passed. The build is not approved for public access or public launch. The Toronto Phase 55H task runs August 1, the DARPA Lift Phase 55R gate follows August 9, and the Arizona wastewater hold reopens September 22.
+Exact Phase 55Q source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97` is deployed as owner-only Sites version 15 at `https://ftfn-analytics.jbumstead.chatgpt.site`. The access policy remains custom with one allowed owner and no groups. A Phase 55Q visual/browser pass was not requested; automated page, content, canonical, sitemap, and release-contract checks passed. The build is not approved for public access or public launch. The Toronto Phase 55H task runs August 1, the DARPA Lift Phase 55R gate follows August 9, and the Arizona wastewater hold reopens September 22.

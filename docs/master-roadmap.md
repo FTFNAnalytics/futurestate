@@ -1197,7 +1197,8 @@ Completed:
 - Deployed exact Phase 55P source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` as owner-only Sites version 14 without changing access, custom-domain state, or DNS.
 - Completed Phase 55Q locally: assigned explicit decisions to six high-value gaps, added five named official sources and four bounded Published signals, repaired both local dossiers and five reader pathways, and added the nineteenth public update.
 - Added structured latest-review metadata plus gap-detail and sitemap release assertions; the verified contract is 389 pages, 194 sources, 67 signals, 42 Published, 25 In Review, six Phase 55Q gap decisions, and 70 current Published-support sources.
-- Preserved the existing August 1 Toronto Phase 55H task and added the September 22 Arizona wastewater acceptance and operation recheck; owner-only Phase 55Q publication is pending.
+- Preserved the existing August 1 Toronto Phase 55H task and added the September 22 Arizona wastewater acceptance and operation recheck.
+- Deployed exact Phase 55Q source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97` as owner-only Sites version 15 without changing access, custom-domain state, or DNS.
 
 Next candidate work:
 
