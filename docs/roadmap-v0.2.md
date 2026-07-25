@@ -1,6 +1,6 @@
 # FTFN v0.2 Roadmap
 
-Date: 2026-07-24
+Date: 2026-07-25
 
 v0.2 is the first authority-loop build: a release that proves FTFN can maintain a current, source-led analytical resource through repeatable human review.
 
@@ -41,7 +41,7 @@ The `v0.1.1` checkpoint provides:
 | Local systems | 2 |
 | Evidence gaps | 10 |
 
-Current `0.2.0-dev` state after Phase 55Z:
+Phase 55Z `0.2.0-dev` checkpoint:
 
 | Measure | Current Development State |
 | --- | ---: |
@@ -380,13 +380,17 @@ Recommended active schedule:
 | Completed | Phase 56F | 24-entity coverage ledger, one Closed, sixteen Partially Closed, seven Open, Research Watch 010, 27-file archive, and owner-only Sites version 31 |
 | Completed | Phase 56G | seven operating-record acquisition checks, one Open-to-Partially-Closed transition, Research Watch 011, and owner-only Sites version 32 |
 | Completed | Phase 56H | fourteen evidence decisions, three Open-to-Partially-Closed transitions, Research Watch 012, 17-file archive, and owner-only Sites version 33 |
+| Completed | Phase 56I | twelve exact continuation decisions, no unsupported closure transition, Research Watch 013, 15-file archive, and owner-only Sites version 34 |
 | Completed | Phase 56J | ordered continuation queue, five-record first batch, one bounded Manatee transition, Research Watch 014, and owner-only Sites version 35 |
-| Current content gate | Phase 56K | continue DHS and Gateway, then pursue Moss Landing, VA, F-35, F-15EX, and DOT |
+| Completed | Phase 56K | seven exact continuation decisions, three bounded advancements, Research Watch 015, ten-file archive, and owner-only Sites version 36 |
+| Completed | Phase 56L | three manufacturer outcome decisions, two bounded advancements, Research Watch 016, six-file archive, and owner-only Sites version 37 |
+| Completed | Phase 56M | three federal remediation decisions, three bounded signals, Research Watch 017, six-file archive, and owner-only Sites version 38 |
+| Current content gate | Phase 56N | continue verified remediation and component outcomes without waiting for dated inserts or shared annual denominators |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete through Sites version 35. Phase 56J ordered all twenty original Partially Closed continuation rules, acquired five current records, and advanced only Manatee to Partially Closed on exact plant-level EIA-923 monthly rows. The ledger now stands at one Closed, twenty-one Partially Closed, and two Open evidence states. The current non-public content gate is Phase 56K: continue DHS and Gateway, then pursue Moss Landing, VA, F-35 Fort Worth, F-15EX St. Louis, and DOT. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete through Sites version 38. Phase 56M retained all sixteen GAO NASA recommendations as Open, recorded four HHS large-hospital tracker actions as Open Unimplemented, and kept a separate effective selected small-hospital component test with no recommendations. The ledger remains one Closed, twenty-one Partially Closed, and two Open evidence states. The current non-public content gate is Phase 56N: continue exact federal remediation, battery, and manufacturer outcome records under their existing reopening rules without waiting for dated inserts or the shared annual carrier denominator. Phase 55H, Phase 55R, the July 29 HHS recheck, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1155,7 +1159,7 @@ Local result:
 - the evidence ledger remains one Closed, twenty-one Partially Closed, and two Open;
 - local content commit `b20723b0f8ef52c0c927f46d3a50988fef461842` produced exact private runtime commit `20dab10a2836a39486143a5107800d8b1c7c1382`, deployed successfully as owner-only Sites version 37 in deployment `appgdep_6a650c92d0988191a1075a3b1284222a` with one allowed owner and no groups.
 
-### Phase 56M: Federal Remediation And Outcome Continuation - Current Content Gate
+### Phase 56M: Federal Remediation And Outcome Continuation - Complete And Owner-Only Deployed
 
 Goal: continue official records that can advance without waiting for a shared annual denominator.
 
@@ -1172,6 +1176,37 @@ Exit criteria:
 - every acquisition retains the stable entity, coverage, source, and recommendation or project identity;
 - open, implemented, closed, completed, and verified statuses remain distinct;
 - adjacent plans, commitments, report indexes, and one-period observations are not substituted for the named result;
+- exact non-closures publish only when they materially improve reader value;
+- no ranking, composite, productivity, readiness, value, or causal claim is created;
+- the full local release and owner-only deployment gates pass.
+
+Local result:
+
+- GAO-25-108138 retains all sixteen NASA cybersecurity recommendations as Open under status notes current through May 2026;
+- HHS OIG report A-18-22-08021 records two bounded web-application findings and four separately identified Open Unimplemented tracker actions;
+- HHS OIG report OAS-25-18-033 records an effective selected technical test of four public-facing websites and no recommendations without implying broader HHS or CMS closure;
+- two source profiles, three research documents, three Published signals, Research Watch 017, one collection, one update, two machine-readable ledgers, and a six-file archive pass the 1,370-page release contract;
+- the two anonymous hospital identities, audit periods, scopes, control findings, and continuation rules remain distinct and nongeneralizable;
+- the evidence ledger remains one Closed, twenty-one Partially Closed, and two Open;
+- local content commit `1d05ce5e7503fe3798c6cee7e65fdf16d115ddea` produced exact private runtime commit `7b23ccf49197b39060c7f7cc2aad58688326d151`, deployed successfully as owner-only Sites version 38 in deployment `appgdep_6a652f833c948191aa2cedaa3d1334d4` with one allowed owner and no groups.
+
+### Phase 56N: Verified Remediation And Component Outcome Continuation - Next Content Gate
+
+Goal: keep expanding the named-record corpus without waiting for scheduled updates or the shared six-carrier denominator.
+
+Priority rails:
+
+- recheck the four HHS large-hospital tracker actions after their expected July 29, 2026 update as a bounded dated insert;
+- acquire the next NASA, DOE, VA, DHS, or DOT recommendation-level implementation or closure record only when an official record names the exact action and state;
+- continue the battery, manufacturing, Current Applications, Island Components, and Monaghan Medical rails only under their existing exact reopening rules;
+- screen the remaining Phase 56J continuation queue for compatible repeat, accepted, delivered, restored, certified, or verified operating records;
+- preserve the six-carrier 2026 full-year comparison gate.
+
+Exit criteria:
+
+- each acquisition retains stable entity, component, recommendation or project, source, period, and continuation-rule identity;
+- open, implemented, closed, accepted, delivered, completed, tested, effective, and no-recommendation states remain distinct;
+- a component result is not generalized to an enterprise, agency, sector, or provider class;
 - exact non-closures publish only when they materially improve reader value;
 - no ranking, composite, productivity, readiness, value, or causal claim is created;
 - the full local release and owner-only deployment gates pass.
@@ -1286,10 +1321,10 @@ The v0.2 build and publication thresholds pass in the current candidate. Phase 5
 
 ## Immediate Next Step
 
-Begin Phase 56M with NASA and HHS recommendation-level remediation records. Continue the seven Phase 56K official rails and three Phase 56L manufacturer rails in parallel, but ingest a new record only when it meets the exact reopening rule. Keep the shared 2026 carrier release gate intact and do not pause content expansion while those full-year denominators mature.
+Begin Phase 56N with the July 29 HHS tracker recheck as a bounded dated insert, then continue exact official recommendation implementation or closure records across NASA, DOE, VA, DHS, and DOT. Continue the battery and manufacturer outcome rails only when their existing reopening rules are met. Keep the shared 2026 carrier release gate intact and do not pause content expansion while those full-year denominators mature.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Sites version 30 serves local content commit `2aebf8fb94d9491cf4b0b376b94f674a09dbe8e4` from exact private source projection `79964310eeb0e1f18be0b94cb4ffd29ab04c9df4` in deployment `appgdep_6a641dc36c188191b77181aa1ea9449f`, under custom access with one allowed owner and no groups. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 38 serves local content commit `1d05ce5e7503fe3798c6cee7e65fdf16d115ddea` from exact private runtime commit `7b23ccf49197b39060c7f7cc2aad58688326d151` in deployment `appgdep_6a652f833c948191aa2cedaa3d1334d4`, under custom access with one allowed owner and no groups. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

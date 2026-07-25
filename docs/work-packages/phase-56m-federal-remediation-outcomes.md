@@ -1,7 +1,7 @@
 # Phase 56M: Federal Remediation and Outcome Continuation
 
 Date: 2026-07-25  
-Status: Complete locally; owner-only deployment receipt pending
+Status: Complete and owner-only deployed
 
 ## Goal
 
@@ -72,7 +72,15 @@ Continue official federal records that can advance without the shared six-carrie
 
 ## Deployment receipt
 
-Pending owner-only Sites deployment.
+- Local content commit: `1d05ce5e7503fe3798c6cee7e65fdf16d115ddea`
+- Exact private runtime commit: `7b23ccf49197b39060c7f7cc2aad58688326d151`
+- Sites version: 38
+- Sites version ID: `appgprj_6a614e1092d08191bf65779fc35df959~appgver_9f2ddf5247f8819184fb8cd1395eb34d`
+- Deployment ID: `appgdep_6a652f833c948191aa2cedaa3d1334d4`
+- Hosted URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- Result: succeeded
+- Access: custom owner-only policy with one allowed owner and no groups
+- Unchanged: public access, DNS, custom-domain attachment, package version, and public GitHub state
 
 ## Next content gate
 
