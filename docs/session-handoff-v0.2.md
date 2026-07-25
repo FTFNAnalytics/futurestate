@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 56E second entity cohort and vertical replication
+Latest completed work: Phase 56G operating-record acquisition and closure batch two
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 1,204 generated site pages
-Content: 502 sources, 260 signals, 17 topics, 5 local systems, 14 research collections / 324 research documents
-Publication: 199 Published signals, 61 In Review signals, 10 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
-Trust/data: 33 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, four 27-file, 35-file, two 51-file, and 20-file research archives
+Build: 1,267 generated site pages
+Content: 523 sources, 267 signals, 17 topics, 5 local systems, 16 research collections / 355 research documents
+Publication: 204 Published signals, 63 In Review signals, 12 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
+Trust/data: 35 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, and 10-file research archives
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 30 serves Phase 56E from exact private source projection 79964310eeb0e1f18be0b94cb4ffd29ab04c9df4; one allowed owner and no groups
+Deployment: owner-only Sites version 31 remains the active hosted checkpoint while the verified Phase 56G package awaits its owner-only source projection; one allowed owner and no groups
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 341 Manual Review, 161 Probe Ready; 14 Strong coverage lanes
-Next content gate: Phase 56F cross-cohort coverage and missing-record closure; six dated inserts remain scheduled
+Source health: 355 Manual Review, 168 Probe Ready; 14 Strong coverage lanes
+Next content gate: Phase 56H open-rail acquisition batch three and partial-closure deepening; six dated inserts remain scheduled
 ```
 
 ## Read First
@@ -170,9 +170,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 56F. The current candidate should be 0.2.0-dev on codex/phase51-content with 516 sources, 265 signals, 203 Published signals, 62 In Review signals, five local systems, eleven Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 34 public updates, five JSON exports, 1,249 generated site pages, fifteen research collections, 348 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, and 20-file download archives. Public access and DNS remain unchanged.
+The latest completed work is Phase 56G. The current candidate should be 0.2.0-dev on codex/phase51-content with 523 sources, 267 signals, 204 Published signals, 63 In Review signals, five local systems, twelve Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 35 public updates, five JSON exports, 1,267 generated site pages, sixteen research collections, 355 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, and 10-file download archives. Public access and DNS remain unchanged.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve owner-only Sites version 31 and stop before changing access or attaching a domain. Phase 56F is complete and owner-only deployed; begin Phase 56G operating-record acquisition and closure batch two from the seven Open Phase 56F rails: DHS FY 2025 FISMA, DOE FY 2025 FISMA, F-35 Fort Worth monthly due and accepted output, Manatee interval dispatch and availability, Gateway final investigation and full restoration, Hornsdale annual availability and dispatch, and Dalrymple post-project operation. Tie every acquisition to an existing coverage ID and reopening rule. Treat the August 1 Toronto, August 10 DARPA Lift, August 15 Space Coast license, September 22 Arizona wastewater, October 1 Loudoun standards, and January 15 Nevada delivery tasks as bounded inserts rather than pauses. Do not infer causation, create rankings, or create composite or readiness scores. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve owner-only Sites access and stop before changing access or attaching a domain. Phase 56G is complete locally and release-verified; begin Phase 56H by continuing the six Open exact rails—DHS FY 2025 FISMA, DOE FY 2025 FISMA, F-35 Fort Worth monthly due and accepted output, Manatee interval dispatch and availability, Gateway final investigation and full restoration, and Hornsdale annual availability and dispatch—while beginning the seventeen Partially Closed decisions in evidence-value order. Dalrymple is Partially Closed only for the later asset-specific control record; actual events and operating denominators remain open. Tie every acquisition to an existing coverage ID and continuation rule. Treat the August 1 Toronto, August 10 DARPA Lift, August 15 Space Coast license, September 22 Arizona wastewater, October 1 Loudoun standards, and January 15 Nevada delivery tasks as bounded inserts rather than pauses. Do not infer causation, create rankings, or create composite or readiness scores. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

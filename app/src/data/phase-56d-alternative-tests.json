@@ -78,7 +78,15 @@
       "phase_56f_selected_source_id": "source-56d-dhs-fisma-fy2025-project",
       "phase_56f_highest_value_missing_record": "Released FY 2025 enterprise FISMA result",
       "phase_56f_remaining_gap": "Released FY 2025 evaluation, component findings, closure dates, endpoint and cloud coverage, incidents, recovery, and service effects.",
-      "phase_56f_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome."
+      "phase_56f_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome.",
+      "phase_56g_acquisition_id": "acquisition-56g-dhs-fisma-fy2025",
+      "phase_56g_checked_source_id": "source-56g-dhs-oig-report-index-july-2026",
+      "phase_56g_checked_date": "2026-07-24",
+      "phase_56g_prior_closure_status": "Open",
+      "phase_56g_current_closure_status": "Open",
+      "phase_56g_acquisition_result": "The DHS OIG report index was checked on July 24, 2026. It did not expose a final FY 2025 enterprise FISMA evaluation; the existing project record remains the latest exact review identifier in the FTFN evidence stack.",
+      "phase_56g_remaining_gap": "Released FY 2025 evaluation, component findings, closure dates, endpoint and cloud coverage, incidents, recovery, and service effects.",
+      "phase_56g_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome."
     },
     {
       "test_id": "test-56d-hhs-repeat-control-test",
@@ -314,7 +322,15 @@
       "phase_56f_selected_source_id": "source-56d-manatee-fpl-data-request-2025",
       "phase_56f_highest_value_missing_record": "Interval dispatch and availability for the named battery",
       "phase_56f_remaining_gap": "Interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer cost.",
-      "phase_56f_reopening_rule": "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes asset-specific operating data with a declared interval."
+      "phase_56f_reopening_rule": "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes asset-specific operating data with a declared interval.",
+      "phase_56g_acquisition_id": "acquisition-56g-manatee-interval-operation",
+      "phase_56g_checked_source_id": "source-56g-manatee-fpl-site-plan-2026",
+      "phase_56g_checked_date": "2026-07-24",
+      "phase_56g_prior_closure_status": "Open",
+      "phase_56g_current_closure_status": "Open",
+      "phase_56g_acquisition_result": "FPL's 2026 plan lists Manatee Battery Storage as one 409 MW unit in commercial operation as of December 31, 2025. It does not publish interval dispatch, availability, cycles, state of charge, or degradation.",
+      "phase_56g_remaining_gap": "Interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer cost.",
+      "phase_56g_reopening_rule": "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes asset-specific operating data with a declared interval."
     },
     {
       "test_id": "test-56d-gateway-repeat-test",
@@ -353,7 +369,15 @@
       "phase_56f_selected_source_id": "source-56d-gateway-cpuc-resolution-e5428-2025",
       "phase_56f_highest_value_missing_record": "Final investigation and full contracted-capacity restoration",
       "phase_56f_remaining_gap": "Final investigation, full return to service, contracted-capacity restoration, availability, dispatch, duration, degradation, revenue, and reliability effects.",
-      "phase_56f_reopening_rule": "Reopen when CPUC, EPA, CAISO, SCE, or the operator publishes final findings or a full-capacity operating record."
+      "phase_56f_reopening_rule": "Reopen when CPUC, EPA, CAISO, SCE, or the operator publishes final findings or a full-capacity operating record.",
+      "phase_56g_acquisition_id": "acquisition-56g-gateway-investigation-restoration",
+      "phase_56g_checked_source_id": "source-56g-gateway-caiso-queue-2026",
+      "phase_56g_checked_date": "2026-07-24",
+      "phase_56g_prior_closure_status": "Open",
+      "phase_56g_current_closure_status": "Open",
+      "phase_56g_acquisition_result": "CAISO's current queue entry identifies Gateway project 1170 as completed, 250 MW, full capacity, with an executed interconnection agreement and April 22, 2025 current online date.",
+      "phase_56g_remaining_gap": "Final investigation, full return to service, contracted-capacity restoration, availability, dispatch, duration, degradation, revenue, and reliability effects.",
+      "phase_56g_reopening_rule": "Reopen when CPUC, EPA, CAISO, SCE, or the operator publishes final findings or a full-capacity operating record."
     },
     {
       "test_id": "test-56d-united-repeat-service-test",
@@ -476,5 +500,6 @@
       "phase_56f_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables."
     }
   ],
-  "phase_56f_coverage_ledger": "phase-56f-cross-cohort-coverage.json"
+  "phase_56f_coverage_ledger": "phase-56f-cross-cohort-coverage.json",
+  "phase_56g_acquisition_ledger": "phase-56g-operating-record-acquisition.json"
 }

@@ -78,6 +78,8 @@ const phase56EDossiersPath = join(appRoot, "src", "data", "phase-56e-second-coho
 const phase56ETestsPath = join(appRoot, "src", "data", "phase-56e-second-cohort-tests.json");
 const phase56FReviewPath = join(appRoot, "src", "data", "phase-56f-publication-review.json");
 const phase56FCoveragePath = join(appRoot, "src", "data", "phase-56f-cross-cohort-coverage.json");
+const phase56GReviewPath = join(appRoot, "src", "data", "phase-56g-publication-review.json");
+const phase56GAcquisitionPath = join(appRoot, "src", "data", "phase-56g-operating-record-acquisition.json");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
@@ -118,6 +120,8 @@ const phase56EDossiers = await readJson(phase56EDossiersPath);
 const phase56ETests = await readJson(phase56ETestsPath);
 const phase56FReview = await readJson(phase56FReviewPath);
 const phase56FCoverage = await readJson(phase56FCoveragePath);
+const phase56GReview = await readJson(phase56GReviewPath);
+const phase56GAcquisition = await readJson(phase56GAcquisitionPath);
 const evidenceGaps = await Promise.all(
   evidenceGapFiles.map((name) => readJson(join(evidenceGapDirectory, name))),
 );
@@ -1018,6 +1022,109 @@ check(
 check(
   phase56FReview.comparison_rule.includes("No causal effect, ranking, completeness score, composite score, readiness score"),
   "Phase 56F review is missing the comparison and scoring stop rule.",
+);
+
+check(
+  phase56GAcquisition.acquisition_count === 7
+    && phase56GAcquisition.phase_56f_open_queue_count === 7,
+  "Phase 56G acquisition ledger must contain all seven Phase 56F Open rails.",
+);
+check(
+  new Set(phase56GAcquisition.acquisitions.map((entry) => entry.coverage_id)).size === 7
+    && new Set(phase56GAcquisition.acquisitions.map((entry) => entry.entity_id)).size === 7,
+  "Phase 56G acquisitions must have seven unique coverage IDs and entity IDs.",
+);
+check(
+  phase56GAcquisition.status_changes.open_to_partially_closed === 1
+    && phase56GAcquisition.status_changes.unchanged_open === 6,
+  "Phase 56G must record one Open-to-Partially-Closed change and six unchanged Open records.",
+);
+check(
+  phase56GAcquisition.current_cross_cohort_closure_counts.closed === 1
+    && phase56GAcquisition.current_cross_cohort_closure_counts.partially_closed === 17
+    && phase56GAcquisition.current_cross_cohort_closure_counts.open === 6,
+  "Phase 56G current cross-cohort closure counts must be one Closed, seventeen Partially Closed, and six Open.",
+);
+for (const acquisition of phase56GAcquisition.acquisitions) {
+  check(
+    phase56FCoverage.coverage.some(
+      (decision) =>
+        decision.coverage_id === acquisition.coverage_id
+        && decision.entity_id === acquisition.entity_id
+        && decision.reopening_rule === acquisition.phase_56f_reopening_rule,
+    ),
+    `Phase 56G acquisition ${acquisition.acquisition_id} does not retain its Phase 56F coverage ID, entity, and reopening rule.`,
+  );
+  check(
+    acquisition.checked_date === "2026-07-24"
+      && acquisition.checked_source_id
+      && acquisition.acquisition_result
+      && acquisition.remaining_gap,
+    `Phase 56G acquisition ${acquisition.acquisition_id} is missing its dated source check or continuation fields.`,
+  );
+  check(
+    acquisition.comparison_boundary.includes("not entity performance")
+      && acquisition.comparison_boundary.includes("no ranking, score, or causal claim"),
+    `Phase 56G acquisition ${acquisition.acquisition_id} is missing the performance and inference boundary.`,
+  );
+}
+
+check(
+  phase56GReview.source_profiles_added === 7
+    && phase56GReview.acquisition_count === 7,
+  "Phase 56G publication review must record seven source profiles and seven acquisitions.",
+);
+check(
+  phase56GReview.document_decisions.reviewed === 7
+    && phase56GReview.document_decisions.promoted.length === 1
+    && phase56GReview.document_decisions.held.length === 6,
+  "Phase 56G document review must contain one Published and six held decisions.",
+);
+check(
+  phase56GReview.signal_decisions.reviewed === 2
+    && phase56GReview.signal_decisions.promoted.length === 1
+    && phase56GReview.signal_decisions.held.length === 1,
+  "Phase 56G signal review must contain one Published signal and one held synthesis.",
+);
+for (const id of phase56GReview.signal_decisions.promoted) {
+  check(signalStatusById.get(id) === "Published", `Phase 56G Published signal ${id} has the wrong status.`);
+}
+for (const id of phase56GReview.signal_decisions.held) {
+  check(signalStatusById.get(id) === "In Review", `Phase 56G held signal ${id} has the wrong status.`);
+}
+
+const phase56GCollection = researchCollections.find(
+  (collection) => collection.id === "research-collection-operating-record-acquisition-closure-batch-two-2026",
+);
+check(Boolean(phase56GCollection), "Phase 56G operating-record acquisition collection is missing.");
+if (phase56GCollection) {
+  check(phase56GCollection.document_ids.length === 7, `Expected seven Phase 56G documents, found ${phase56GCollection.document_ids.length}.`);
+  const resolvedPhase56GDocuments = phase56GCollection.document_ids
+    .map((documentId) => researchDocumentById.get(documentId))
+    .filter(Boolean);
+  check(resolvedPhase56GDocuments.length === 7, `Expected all seven Phase 56G documents to resolve, found ${resolvedPhase56GDocuments.length}.`);
+  check(
+    resolvedPhase56GDocuments.filter((document) => document.record_status === "Published").length === 1
+      && resolvedPhase56GDocuments.filter((document) => document.record_status === "In Review").length === 6,
+    "Phase 56G research documents must preserve one Published and six In Review decisions.",
+  );
+  check(
+    resolvedPhase56GDocuments.every((document) => document.capture_status === "Official link record"),
+    "Phase 56G research documents must use the official-link capture contract.",
+  );
+}
+check(
+  briefingStatusById.get("briefing-research-watch-011-operating-record-acquisition") === "Published",
+  "Phase 56G operating-record acquisition briefing should be Published.",
+);
+check(
+  phase56GReview.unavailable_record_rule.includes("dated source check")
+    && phase56GReview.unavailable_record_rule.includes("not generic replacement context"),
+  "Phase 56G review is missing the unavailable-record continuation rule.",
+);
+check(
+  phase56GReview.comparison_rule.includes("No causal effect, ranking, completeness score, composite score, readiness score"),
+  "Phase 56G review is missing the comparison and scoring stop rule.",
 );
 
 for (const collection of researchCollections) {

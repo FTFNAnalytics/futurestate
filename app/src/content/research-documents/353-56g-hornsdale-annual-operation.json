@@ -1,0 +1,48 @@
+{
+  "id": "research-doc-56g-hornsdale-annual-operation",
+  "collection_id": "research-collection-operating-record-acquisition-closure-batch-two-2026",
+  "title": "Hornsdale Power Reserve: Phase 56G Acquisition Check",
+  "slug": "56g-hornsdale-annual-operation",
+  "record_status": "In Review",
+  "publisher": "Australian Energy Market Operator",
+  "publication_date": null,
+  "document_type": "Data Release",
+  "summary": "AEMO's asset-specific Hornsdale record on this rail remains the supplementary regulation-MW dataset for December 10, 2017 through January 7, 2018 under element HPRG1. Phase 56G decision: No closure change. The official rail exposes a short historical interval record, not a later annual availability and dispatch series.",
+  "key_findings": [
+    "Phase 56F coverage ID: coverage-56f-hornsdale.",
+    "Highest-value missing record: Annual availability and dispatch under a declared service denominator.",
+    "Closure state: Open to Open.",
+    "Continuation rule: Reopen when AEMO, AER, the South Australian government, or the operator publishes an asset-specific annual operating series."
+  ],
+  "why_it_matters": "The acquisition check tests one named reopening rule without allowing adjacent context to stand in for the requested operating or closure record.",
+  "ftfn_relevance": [
+    "Preserves the stable entity ID battery-hornsdale-power-reserve.",
+    "Records the exact official or first-party rail checked and the result at a date.",
+    "Separates a useful contextual record from the narrower evidence needed to change closure state."
+  ],
+  "evidence_limits": [
+    "A four-week historical regulation-MW extract cannot be generalized into later annual availability, dispatch, degradation, revenue, safety, or customer outcomes.",
+    "Annual availability, dispatch, service enablement and delivery, cycling, degradation, revenue, safety, and customer outcomes.",
+    "No causal effect, ranking, composite score, readiness score, or unsupported cross-entity comparison is supported."
+  ],
+  "primary_topics": [
+    "Energy"
+  ],
+  "framework_layers": [
+    "Resource Foundations",
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Power",
+    "Infrastructure",
+    "Data Quality",
+    "Safety"
+  ],
+  "source_id": "source-56g-hornsdale-aemo-interval-data-index",
+  "official_url": "https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/ancillary-services-data/ancillary-services-market-causer-pays-data",
+  "local_capture_path": "/downloads/operating-record-acquisition-closure-batch-two-2026/official-links/06-hornsdale-annual-operation.txt",
+  "archive_member": "official-links/06-hornsdale-annual-operation.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-07-24"
+}

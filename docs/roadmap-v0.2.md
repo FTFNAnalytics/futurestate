@@ -378,12 +378,13 @@ Recommended active schedule:
 | Completed | Phase 56D | twelve alternative-explanation tests, six holds, Research Watch 008, and owner-only Sites version 29 |
 | Completed | Phase 56E | second twelve-entity cohort, 36 vertical entity layers, four portfolio holds, Research Watch 009, and owner-only Sites version 30 |
 | Completed | Phase 56F | 24-entity coverage ledger, one Closed, sixteen Partially Closed, seven Open, Research Watch 010, 27-file archive, and owner-only Sites version 31 |
-| Current content gate | Phase 56G | operating-record acquisition and closure batch two, beginning with the seven Open rails |
+| Completed | Phase 56G | seven operating-record acquisition checks, one Open-to-Partially-Closed transition, Research Watch 011, and owner-only deployment pending |
+| Current content gate | Phase 56H | six-rail acquisition batch three plus evidence-value deepening of the seventeen Partially Closed records |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build, owner-only preview, and Phases 55S-56F aggressive expansion are complete locally and owner-only deployed. Phase 56F adds a controlled acquisition layer: every one of the 24 named entities now has one selected official record, one highest-value missing record, a closure state, a remaining gap, and an explicit reopening rule. The current non-public content gate is Phase 56G: operating-record acquisition and closure batch two, beginning with the seven Open rails before revisiting the sixteen Partially Closed decisions. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build, owner-only preview, and Phases 55S-56G aggressive expansion are complete locally through the Phase 56G release gate. Phase 56F created the controlled acquisition layer; Phase 56G executed all seven Open reopening rules, moved Dalrymple to Partially Closed on a later asset-specific control record, and retained six exact records as Open after dated source checks. The current non-public content gate is Phase 56H: continue those six exact rails while beginning the seventeen Partially Closed decisions in evidence-value order. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -962,7 +963,7 @@ Exit criteria:
 - exact local content commit `e19f6dc3f45dfcbd362091c066c74e3416e9ed43` is represented by private source projection `2446245cbbea3d80739f5d732977948d62a2d940`;
 - owner-only Sites version 31 succeeded in deployment `appgdep_6a6445cf1f3481919cec4feac642f9df` under custom access with one allowed owner and no groups.
 
-### Phase 56G: Operating-Record Acquisition And Closure Batch Two - Current Content Gate
+### Phase 56G: Operating-Record Acquisition And Closure Batch Two - Complete Locally; Owner-Only Deployment Pending
 
 Goal: use the Phase 56F reopening rules as a disciplined acquisition queue, starting with the seven Open records and continuing without waiting for scheduled inserts.
 
@@ -979,6 +980,39 @@ Exit criteria:
 - unavailable records produce a dated source check and bounded continuation rule, not generic replacement context;
 - every new record receives separate publication review;
 - the Victorian Big Battery closure remains bounded to recommissioning action unless later operating evidence supports a wider result;
+- no cross-entity ranking, composite, readiness score, or causal claim is created;
+- the full local release and owner-only deployment gates pass.
+
+Completion result:
+
+- all seven Open Phase 56F rails received a dated named-source check tied to the existing coverage ID and reopening rule;
+- Dalrymple moved from Open to Partially Closed because ElectraNet's March 2026 planning report supplies a later asset-specific islanding-control record;
+- DHS, DOE, F-35 Fort Worth, Manatee, Gateway, and Hornsdale remain Open because the checked records do not supply the exact annual, monthly, interval, investigation, restoration, or annual-operation denominator;
+- seven source profiles, seven acquisition documents, two signal decisions, Research Watch 011, one collection, one public update, two machine-readable ledgers, and one 10-file archive were added;
+- one acquisition document and one bounded signal publish; six documents and one synthesis remain `In Review`;
+- the cross-cohort evidence ledger now stands at one Closed, seventeen Partially Closed, and six Open;
+- five reader pathways, five topics, six entity ledgers, and the comparison protocol were deepened;
+- the local release gate passes at 1,267 pages, 523 sources, 267 signals, 204 Published signals, 322 current Published-support sources, nineteen briefings, sixteen research collections, 355 research documents, and 35 public updates;
+- package version remains `0.2.0-dev`; public access, DNS, custom-domain, public GitHub, and release-freeze state remain unchanged.
+
+### Phase 56H: Open-Rail Acquisition Batch Three And Partial-Closure Deepening - Current Content Gate
+
+Goal: continue content growth without waiting on scheduled records by running the six remaining Open rails alongside a disciplined first pass through the seventeen Partially Closed decisions.
+
+Priority rails:
+
+- continue DHS and DOE annual-review acquisition against the named OIG rails;
+- continue F-35 monthly due, accepted, and capability-state acquisition;
+- continue Manatee interval operation, Gateway final investigation and restored operation, and Hornsdale annual operation;
+- deepen Partially Closed records where a compatible operating denominator, recommendation closure, corrective-action record, or verified outcome is already discoverable;
+- keep Dalrymple open for event counts and asset-level operating series despite its bounded Phase 56G advance.
+
+Exit criteria:
+
+- every record remains tied to a stable entity, existing coverage decision, and explicit continuation rule;
+- partial-closure work is ordered by evidence value rather than content volume;
+- adjacent context remains separate from exact operating or closure evidence;
+- every record receives separate publication review;
 - no cross-entity ranking, composite, readiness score, or causal claim is created;
 - the full local release and owner-only deployment gates pass.
 
