@@ -2645,3 +2645,35 @@ Deployment receipt:
 Boundary:
 
 Vertical evidence depth does not create horizontal comparability. Annual cyber reviews, recommendation inventories, cumulative deliveries, delivery lateness, production interruptions, battery event response, installed capacity, cancellation rates, monthly on-time arrivals, complaint records, and service commitments remain separate. Attribution stays attached to the auditor, regulator, system operator, government program office, company, or carrier that supplied it. No causal effect, ranking, composite score, readiness score, or unsupported cross-entity comparison is authorized. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.
+
+## 2026-07-24: Phase 56F Treats Coverage As An Acquisition Queue, Not Performance
+
+Decision:
+
+Assign every one of the 24 Phase 56B and Phase 56E entities exactly one highest-value missing record, one strongest current official record, one closure state, one remaining gap, and one reopening rule. Publish seventeen bounded entity decisions and four portfolio coverage findings; retain seven exact-record decisions and the cross-cohort comparison `In Review`.
+
+Rationale:
+
+Continued content expansion is most valuable when it targets a record that can materially close an operating question. Broad context should not displace a missing denominator, accepted output, final investigation, availability record, or annual oversight result. A controlled queue also allows the project to continue without waiting for scheduled inserts.
+
+Implemented:
+
+- 24 unique coverage decisions split evenly across the two cohorts;
+- one Closed, sixteen Partially Closed, and seven Open evidence states;
+- fourteen official source profiles and 24 entity-specific coverage summaries;
+- five publication decisions: four Published portfolio findings and one held comparison;
+- Research Watch 010 and a verified 27-file archive;
+- machine-readable coverage and publication-review ledgers;
+- Phase 56F fields added across all six panel, dossier, and test ledgers;
+- integration across eight topics, six pathways, and the comparison-boundary map;
+- correction of four pre-existing Phase 56D stable-ID mismatches for Gateway, United, Southwest, and Delta;
+- a verified local 1,249-page, 516-source, 265-signal contract with 203 Published, 62 In Review, 34 updates, fifteen collections, 348 documents, and 321 current Published-support sources;
+- Phase 56G selected as the next content gate for operating-record acquisition and closure batch two.
+
+Deployment receipt:
+
+- pending the Phase 56F local content commit, exact private Sites source projection, owner-only Sites version, deployment ID, and access verification.
+
+Boundary:
+
+Closed, Partially Closed, and Open are evidence states for one selected question. They do not measure performance, readiness, quality, safety, value, or comparative standing. Missing disclosure is not failure, and a current context record is not automatically an operating outcome. No causal effect, ranking, completeness score, composite score, readiness score, or unsupported cross-entity comparison is authorized. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.

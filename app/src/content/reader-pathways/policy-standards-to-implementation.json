@@ -20,7 +20,9 @@
     "Phase 56D adds later observations and explicit tests of named Phase 56C alternative explanations for the same twelve entities.",
     "Compatibility, attribution, validation status, missing denominators, and series breaks remain visible before any interpretation.",
     "Phase 56E adds a second vertically replicated cohort: Department of Veterans Affairs, Department of Energy, Department of Transportation.",
-    "Every retained entity carries a panel, a driver-and-constraint dossier, and an alternative-explanation test under one stable identity."
+    "Every retained entity carries a panel, a driver-and-constraint dossier, and an alternative-explanation test under one stable identity.",
+    "Phase 56F assigns every entity one highest-value missing record, one strongest compatible current record, a closure state, and an explicit reopening rule.",
+    "Across all 24 entities, one bounded record is Closed, sixteen are Partially Closed, and seven remain Open; these are evidence states, not performance measures."
   ],
   "primary_topics": [
     "Policy and Standards",
@@ -60,7 +62,8 @@
     "signal-56e-dot-information-security-dossier",
     "signal-56e-va-information-security-alternative-test",
     "signal-56e-doe-information-security-alternative-test",
-    "signal-56e-dot-information-security-alternative-test"
+    "signal-56e-dot-information-security-alternative-test",
+    "signal-56f-ai-cyber-coverage-closure"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -115,7 +118,11 @@
     "source-56e-dot-fisma-fy2025",
     "source-56e-va-cio-open-recommendations-2026",
     "source-56e-doe-cyber-sharing-2026",
-    "source-56e-dot-continuous-monitoring-2024"
+    "source-56e-dot-continuous-monitoring-2024",
+    "source-56f-nasa-open-recommendations-july-2026",
+    "source-56f-va-ifams-access-controls-2026",
+    "source-56f-doe-semiannual-march-2026",
+    "source-56f-dot-fisma-fy2026-audit-start"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -131,7 +138,8 @@
     "briefing-research-watch-006-entity-operating-panels",
     "briefing-research-watch-007-entity-driver-constraint-dossiers",
     "briefing-research-watch-008-repeat-outcomes-alternative-tests",
-    "briefing-research-watch-009-second-cohort-vertical-replication"
+    "briefing-research-watch-009-second-cohort-vertical-replication",
+    "briefing-research-watch-010-cross-cohort-coverage"
   ],
   "dependency_map_ids": [
     "dependency-map-post-quantum-standards-are-not-migration",
@@ -145,7 +153,8 @@
     "research-collection-entity-operating-panels-2021-2026",
     "research-collection-entity-driver-constraint-dossiers-2021-2026",
     "research-collection-repeat-outcomes-alternative-explanation-tests-2010-2026",
-    "research-collection-second-entity-cohort-vertical-replication-2018-2026"
+    "research-collection-second-entity-cohort-vertical-replication-2018-2026",
+    "research-collection-cross-cohort-coverage-missing-record-closure-2010-2026"
   ],
   "evidence_gap_ids": [
     "gap-009",
@@ -207,6 +216,11 @@
       "stage": "Second-cohort vertical replication",
       "current_state": "Twelve additional entities passed a four-primary-record screen and received all three evidence layers.",
       "boundary": "Entity depth can increase without making different entities comparable."
+    },
+    {
+      "stage": "Cross-cohort coverage closure",
+      "current_state": "One selected record and one reopening rule now govern each of the 24 named entities.",
+      "boundary": "Closed, Partially Closed, and Open describe the selected evidence question only; they do not compare entity performance."
     }
   ],
   "evidence_limits": [
@@ -222,7 +236,8 @@
     "A recommendation status, certification, supplier clause, incident response, monthly cause mix, or complaint count does not create a common performance measure.",
     "Different units, methods, identities, observation windows, and attribution levels remain split.",
     "The second cohort preserves attribution, unit, denominator, method, observation window, reporting breaks, and identity changes.",
-    "A vertical entity record does not authorize cross-entity ranking, composite scoring, readiness scoring, or causal inference."
+    "A vertical entity record does not authorize cross-entity ranking, composite scoring, readiness scoring, or causal inference.",
+    "Phase 56F closure states apply to one named missing record per entity and cannot be converted into a ranking, composite, readiness score, or causal claim."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
@@ -237,6 +252,7 @@
     "Later observations using the same entity, unit, denominator, method, and observation window.",
     "Independent control-operation, closure, line-performance, availability, dispatch, and service-delivery evidence.",
     "Later observations using the same entity, unit, denominator, method, attribution, and observation window.",
-    "Independent closure and outcome records for the named controls, production lines, battery assets, or carrier services."
+    "Independent closure and outcome records for the named controls, production lines, battery assets, or carrier services.",
+    "Acquire the seven Open exact records, then revisit the sixteen Partially Closed records only when their named reopening condition is met."
   ]
 }

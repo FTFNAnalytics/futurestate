@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: two twelve-entity cohorts now carry panels, dossiers, and alternative tests while stable identity, compatibility, attribution, validation status, and denominator breaks remain attached.",
+  "summary": "A comparison and inference protocol: 24 entities now carry panels, dossiers, alternative tests, and one-record coverage decisions while stable identity, compatibility, attribution, validation status, denominator breaks, and reopening rules remain attached.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -198,7 +198,21 @@
     "source-56e-atcr-full-year-2024",
     "source-56e-atcr-full-year-2025",
     "source-56e-atcr-may-2026",
-    "source-56e-dot-airline-dashboard"
+    "source-56e-dot-airline-dashboard",
+    "source-56f-nasa-open-recommendations-july-2026",
+    "source-56f-current-applications-workforce",
+    "source-56f-island-components-scida-2023",
+    "source-56f-monaghan-esd-capital-2025",
+    "source-56f-cpuc-gess-july-2026",
+    "source-56f-bts-may-2026-data",
+    "source-56f-va-ifams-access-controls-2026",
+    "source-56f-doe-semiannual-march-2026",
+    "source-56f-dot-fisma-fy2026-audit-start",
+    "source-56f-gao-weapon-systems-2026",
+    "source-56f-air-force-fy2027-aircraft-budget",
+    "source-56f-vbb-esv-annual-closure-2022",
+    "source-56f-dalrymple-arena-status-2026",
+    "source-56f-bts-technical-directive-40"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -298,7 +312,11 @@
     "signal-56e-jetblue-airways-dossier",
     "signal-56e-american-airlines-alternative-test",
     "signal-56e-alaska-airlines-alternative-test",
-    "signal-56e-jetblue-airways-alternative-test"
+    "signal-56e-jetblue-airways-alternative-test",
+    "signal-56f-ai-cyber-coverage-closure",
+    "signal-56f-manufacturing-coverage-closure",
+    "signal-56f-infrastructure-coverage-closure",
+    "signal-56f-mobility-coverage-closure"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -429,6 +447,12 @@
       "node_type": "Signal",
       "record_id": "signal-56e-f35-fort-worth-line-alternative-test",
       "note": "All twelve retained entities carry the same three-layer publication contract."
+    },
+    {
+      "id": "node-phase56f-coverage-ledger",
+      "label": "24-entity one-record coverage ledger",
+      "node_type": "Signal",
+      "note": "One record is Closed, sixteen are Partially Closed, and seven remain Open under named reopening rules."
     }
   ],
   "links": [
@@ -578,6 +602,20 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Four portfolio interpretations remain held even though all 36 entity layers publish."
+    },
+    {
+      "from": "node-phase56f-coverage-ledger",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "A coverage decision cannot bridge an incompatible unit, denominator, period, method, identity, or attribution break."
+    },
+    {
+      "from": "node-phase56f-coverage-ledger",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "The cross-cohort interpretation remains In Review; closure states are evidence states, not performance or causal measures."
     }
   ],
   "what_this_map_supports": [
@@ -593,7 +631,8 @@
     "A later record may narrow, support, challenge, or leave unresolved a named alternative explanation.",
     "Regulator-verified obligations, partial progress, company claims, operator filings, and independent outcomes can remain distinct.",
     "A second cohort can be screened once and then built vertically through the same three evidence layers.",
-    "Independent, regulator, operator, company, and carrier-attributed records can remain visibly distinct inside one entity dossier."
+    "Independent, regulator, operator, company, and carrier-attributed records can remain visibly distinct inside one entity dossier.",
+    "A one-record-per-entity acquisition queue with explicit closure states and reopening rules."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -607,7 +646,8 @@
     "It does not prove that one tested alternative caused the observed outcome.",
     "It does not authorize denominator mixing, causal effects, rankings, composites, or readiness scores.",
     "It does not make the two cohorts or their entities rankable.",
-    "It does not convert vertical evidence depth into a causal effect, composite, or readiness score."
+    "It does not convert vertical evidence depth into a causal effect, composite, or readiness score.",
+    "That a Closed, Partially Closed, or Open coverage state measures entity performance, readiness, safety, quality, value, or relative standing."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -624,6 +664,8 @@
     "Repeated compatible outcomes with the same unit, denominator, method, entity, and observation window.",
     "Independent closure, control-operation, same-line performance, availability, dispatch, and service-delivery records.",
     "Closure and repeat-outcome records with stable units, denominators, methods, identities, and observation windows.",
-    "Matched agency controls, line inputs and outputs, battery operating series, and carrier service-delivery denominators."
+    "Matched agency controls, line inputs and outputs, battery operating series, and carrier service-delivery denominators.",
+    "The seven exact records marked Open in the Phase 56F coverage ledger.",
+    "New official records that satisfy a named reopening rule for one of the sixteen Partially Closed decisions."
   ]
 }

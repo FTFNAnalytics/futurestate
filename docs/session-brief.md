@@ -150,9 +150,11 @@ What is now stable:
 - Phase 56E retains twelve of twelve screened entities and adds twelve panels, twelve driver-and-constraint dossiers, twelve alternative-explanation tests, four portfolio holds, 40 source profiles, 48 Published summaries, Research Watch 009, four machine-readable ledgers, and a verified 51-file archive.
 - The verified Phase 56E contract is 1,204 pages, 502 sources, 260 signals, 199 Published signals, 61 In Review signals, 307 current Published-support sources, seventeen briefings, seven maps, fourteen research collections, 324 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 33 updates, and five public-data exports.
 - Phase 56E local content commit `2aebf8fb94d9491cf4b0b376b94f674a09dbe8e4` matches exact private source projection `79964310eeb0e1f18be0b94cb4ffd29ab04c9df4`, deployed as owner-only Sites version 30 in deployment `appgdep_6a641dc36c188191b77181aa1ea9449f` with one allowed owner and no groups.
+- Phase 56F adds one 24-entity coverage ledger, fourteen source profiles, 24 coverage documents, four Published portfolio findings, one held comparison, Research Watch 010, one collection, a publication-review ledger, and a verified 27-file archive.
+- The verified Phase 56F local contract is 1,249 pages, 516 sources, 265 signals, 203 Published signals, 62 In Review signals, 321 current Published-support sources, eighteen briefings, seven maps, fifteen research collections, 348 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 34 updates, and five public-data exports.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
-- All 307 current Published-support sources are governed by the same current-source release assertion.
+- All 321 current Published-support sources are governed by the same current-source release assertion.
 - The compact header defect was repaired: every brand and primary-navigation link now has at least a 44-pixel target.
 - `npm run verify:release` and `deployment/ftfn-v0.2-build.json` preserve the repeatable v0.2 release contract.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
@@ -160,8 +162,8 @@ What is now stable:
 
 What is still prelaunch scaffolding:
 
-- One hundred and ninety-nine signal records are `Published`.
-- Sixty-one signal records are still `In Review`; no Draft Sample remains.
+- Two hundred and three signal records are `Published`.
+- Sixty-two signal records are still `In Review`; no Draft Sample remains.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -171,14 +173,14 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only Sites version 30 and continue with Phase 56F cross-cohort coverage and missing-record closure. Phase 56E is complete, release-verified, and owner-only deployed. Build one coverage ledger across all 24 named entities, record the strongest compatible closure or outcome evidence already present, and identify one highest-value missing operating record per entity. Execute bounded agency, production-line, battery, and carrier closure batches without creating rankings, composite scores, readiness scores, or causal conclusions. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only Sites access and continue with Phase 56G operating-record acquisition and closure batch two. Phase 56F is complete and release-verified locally. Start with the seven Open records: DHS and DOE annual FISMA results, F-35 Fort Worth monthly due and accepted output, Manatee interval operation, Gateway final investigation and restoration, Hornsdale annual operation, and Dalrymple post-project operation. Tie every acquisition to an existing Phase 56F coverage ID and reopening rule. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 220 signal records,
-- 462 source records,
+- 265 signal records,
+- 516 source records,
 - 17 topic records,
 - 5 local system profiles,
 - 19 organization records,
@@ -355,15 +357,15 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 56F cross-cohort coverage and missing-record closure
+Phase 56G operating-record acquisition and closure batch two
 ```
 
 Proceed by:
 
-- build one coverage ledger across all 24 named entities,
-- record the strongest current panel, dossier, alternative test, compatible outcome, closure, input, denominator, attribution, and validation evidence,
-- select one highest-value missing operating record per entity,
-- execute bounded closure batches across agencies, production lines, battery assets, and passenger carriers,
+- begin with the seven Open Phase 56F exact-record rails,
+- tie every acquisition to an existing coverage ID and reopening rule,
+- revisit the sixteen Partially Closed records only after the Open queue or when a named reopening condition is met,
+- execute bounded record batches across agencies, production lines, and battery assets,
 - distinguish regulator, auditor, company, operator, carrier, and third-party attribution,
 - disclose stable identity, unit, denominator, period, geography, method, attribution, missing evidence, revisions, and reporting breaks,
 - retain unavailable or incompatible records as named gaps with reopening rules,
@@ -450,16 +452,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 56E second entity cohort and vertical replication.
+Phase 56F cross-cohort coverage and missing-record closure.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 56E candidate: package 0.2.0-dev, 502 public sources, 150 first-pass-triaged private candidates, 260 signals, 17 topics, 33 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,204 generated site pages, 199 Published signals, 10 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 14 research collections, 324 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, four 27-file, 35-file, two 51-file, and 20-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 341 Manual Review and 161 Probe Ready records.
+v0.2 Phase 56F candidate: package 0.2.0-dev, 516 public sources, 150 first-pass-triaged private candidates, 265 signals, 17 topics, 34 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,249 generated site pages, 203 Published signals, 11 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 15 research collections, 348 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, and 20-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 352 Manual Review and 164 Probe Ready records.
 
 Next decision gate:
-Preserve owner-only Sites access and begin Phase 56F. Create a cross-cohort coverage ledger for all 24 named entities, identify the strongest compatible closure or outcome already present, and select one highest-value missing operating record for each. Close those records in bounded portfolio batches. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Do not infer causation or create rankings, composite scores, or readiness scores. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve owner-only Sites access and begin Phase 56G. Acquire the seven Open Phase 56F records first, then revisit Partially Closed records only when a named reopening rule is met. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Do not infer causation or create rankings, composite scores, or readiness scores. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

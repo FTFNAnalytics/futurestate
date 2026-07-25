@@ -77,20 +77,22 @@ Phase 56D revisits those twelve dossiers with later observations and explicit te
 
 Phase 56E adds a second twelve-entity cohort after screening every candidate at a four-primary-record minimum. VA, DOE, DOT, three named aircraft production lines, three Australian battery assets, and three passenger carriers each receive a Published panel, driver-and-constraint dossier, and alternative-explanation test under one stable entity ID. Four cross-entity portfolio interpretations remain `In Review`. Forty source profiles, 48 Published summaries, Research Watch 009, four machine-readable ledgers, one collection, one update, and a verified 51-file archive raise the candidate to 1,204 pages, 502 sources, 260 signals, 199 Published, 61 In Review, 33 updates, seventeen briefings, fourteen research collections, 324 research documents, and 307 current Published-support sources. Local content commit `2aebf8fb94d9491cf4b0b376b94f674a09dbe8e4` is represented by exact private source projection `79964310eeb0e1f18be0b94cb4ffd29ab04c9df4`, deployed successfully as owner-only Sites version 30 in deployment `appgdep_6a641dc36c188191b77181aa1ea9449f` with one allowed owner and no groups.
 
+Phase 56F turns both cohorts into one 24-entity coverage and acquisition program. Every entity receives one strongest current official record, one highest-value missing record, one remaining gap, and one explicit reopening rule. One bounded evidence question is Closed, sixteen are Partially Closed, and seven remain Open; these states do not measure entity performance. Four portfolio coverage findings and seventeen entity documents publish, while the cross-cohort comparison and seven exact-record decisions remain `In Review`. Fourteen source profiles, 24 coverage documents, Research Watch 010, two machine-readable ledgers, one collection, one update, and a verified 27-file archive raise the local candidate to 1,249 pages, 516 sources, 265 signals, 203 Published, 62 In Review, 34 updates, eighteen briefings, fifteen research collections, 348 research documents, and 321 current Published-support sources. Owner-only deployment is pending.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 1,204 | +1,022 |
-| Sources | 102 | 502 | +400 |
-| Signals | 18 | 260 | +242 |
-| Published signals | 3 | 199 | +196 |
-| In Review signals | 14 | 61 | +47 |
+| Generated HTML pages | 182 | 1,249 | +1,067 |
+| Sources | 102 | 516 | +414 |
+| Signals | 18 | 265 | +247 |
+| Published signals | 3 | 203 | +200 |
+| In Review signals | 14 | 62 | +48 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 33 | +33 |
+| Public update entries | 0 | 34 | +34 |
 | Versioned JSON exports | 0 | 5 | +5 |
 
 Additional current records:
@@ -99,12 +101,12 @@ Additional current records:
 - 5 technologies,
 - 5 local systems,
 - 16 evidence gaps,
-- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y, Phase 55Z, Phase 56A, Phase 56B, Phase 56C, Phase 56D, and Phase 56E reviews,
+- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y, Phase 55Z, Phase 56A, Phase 56B, Phase 56C, Phase 56D, Phase 56E, and Phase 56F reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 17 briefings: 10 Published and 7 In Review,
-- 14 research collections with 324 document records,
+- 18 briefings: 11 Published and 7 In Review,
+- 15 research collections with 348 document records,
 - 15 reader pathways across 19 Atlas surfaces,
-- 41 official local captures plus 283 official-link records across verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, four 27-file, 35-file, two 51-file, and 20-file ZIP archives.
+- 41 official local captures plus 307 official-link records across verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, and 20-file ZIP archives.
 
 ## What Is Built
 
@@ -212,13 +214,15 @@ Phase 56D adds 20 source profiles, 24 research records, sixteen signal decisions
 
 Phase 56E adds 40 source profiles, 48 Published research records, 36 Published entity-layer signals, four held portfolio signals, one research collection, one Published briefing, one public update, and separate panel, dossier, test, and publication-review ledgers. Twelve of twelve candidates pass the four-record screen and retain one stable ID across all three layers. The result is 1,204 generated pages, 502 sources, 260 signals, 199 Published, 61 In Review, 33 public updates, seventeen briefings, seven maps, fourteen research collections, 324 research documents, fifteen pathways across 19 Atlas surfaces, and 307 current Published-support sources. Content validation, source health, Astro diagnostics, production build, Phase 56E cohort and vertical-contract assertions, 51-file archive checks, sitemap and indexing membership, exports, private-registry exclusion, exact private source projection, deployment status, and owner-only access verification pass.
 
+Phase 56F adds fourteen source profiles, 24 entity coverage documents, four Published portfolio signals, one held comparison signal, one research collection, one Published briefing, one public update, and separate coverage and publication-review ledgers. All 24 entities preserve stable identity across their panel, dossier, test, and coverage decision. The result is 1,249 generated pages, 516 sources, 265 signals, 203 Published, 62 In Review, 34 public updates, eighteen briefings, seven maps, fifteen research collections, 348 research documents, fifteen pathways across 19 Atlas surfaces, and 321 current Published-support sources. Content validation, source health, Astro diagnostics, production build, Phase 56F identity, one-record priority, closure-state and publication assertions, 27-file archive checks, sitemap and indexing membership, exports, and private-registry exclusion pass locally. Exact private source projection, deployment status, and owner-only access verification are pending.
+
 Verified results:
 
-- 1,204 generated site pages,
-- exact exports for 502 sources, 17 topics, 199 Published signals, 324 research records, and 11 Published pathways,
-- all 199 Published signal routes included in the sitemap,
+- 1,249 generated site pages,
+- exact exports for 516 sources, 17 topics, 203 Published signals, 342 Published research records and collections, and 11 Published pathways,
+- all 203 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
-- all ten Published briefing routes included in the sitemap and all seven held briefing routes excluded,
+- all eleven Published briefing routes included in the sitemap and all seven held briefing routes excluded,
 - all six Published dependency-map routes included in the sitemap and the one held map route excluded,
 - all fifteen reader pathways rendered across 19 Atlas surfaces with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records,
 - all sixteen evidence-gap details included in the sitemap, including the comparison-denominator gap,
@@ -229,10 +233,10 @@ Verified results:
 - exactly 150 unique private candidates, 10 in each of 15 profiles, with all records assigned a first-pass triage state,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
-- fourteen Published research collections, all 310 Published document routes in the sitemap, and fourteen held document routes excluded,
-- verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, four 27-file, 35-file, two 51-file, and 20-file ZIP archives containing 41 local captures, 283 official-link files, summaries, README files, and manifests.
+- fifteen Published research collections, all 327 Published document routes in the sitemap, and 21 held document routes excluded,
+- verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, and 20-file ZIP archives containing 41 local captures, 307 official-link files, summaries, README files, and manifests.
 
-The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; Phase 55X is recorded in `docs/work-packages/phase-55x-local-implementation-dossiers.md`; Phase 55Y is recorded in `docs/work-packages/phase-55y-operational-evidence.md`; Phase 55Z is recorded in `docs/work-packages/phase-55z-comparative-operating-outcomes.md`; Phase 56A is recorded in `docs/work-packages/phase-56a-longitudinal-operating-series.md`; Phase 56B is recorded in `docs/work-packages/phase-56b-entity-operating-panels.md`; Phase 56C is recorded in `docs/work-packages/phase-56c-entity-driver-constraint-dossiers.md`; Phase 56D is recorded in `docs/work-packages/phase-56d-repeat-outcomes-alternative-explanation-tests.md`; and Phase 56E is recorded in `docs/work-packages/phase-56e-second-entity-cohort-vertical-replication.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
+The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; Phase 55X is recorded in `docs/work-packages/phase-55x-local-implementation-dossiers.md`; Phase 55Y is recorded in `docs/work-packages/phase-55y-operational-evidence.md`; Phase 55Z is recorded in `docs/work-packages/phase-55z-comparative-operating-outcomes.md`; Phase 56A is recorded in `docs/work-packages/phase-56a-longitudinal-operating-series.md`; Phase 56B is recorded in `docs/work-packages/phase-56b-entity-operating-panels.md`; Phase 56C is recorded in `docs/work-packages/phase-56c-entity-driver-constraint-dossiers.md`; Phase 56D is recorded in `docs/work-packages/phase-56d-repeat-outcomes-alternative-explanation-tests.md`; Phase 56E is recorded in `docs/work-packages/phase-56e-second-entity-cohort-vertical-replication.md`; and Phase 56F is recorded in `docs/work-packages/phase-56f-cross-cohort-coverage-missing-record-closure.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
@@ -244,8 +248,8 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Sixty-one signals remain `In Review`; the four Phase 56A holds prohibit cross-series composites, the four Phase 56B holds prohibit cross-entity rankings, the four Phase 56C holds prohibit causal inference from temporal sequence or attribution, the six Phase 56D holds preserve compatibility and causal boundaries, and the four Phase 56E holds prohibit second-cohort portfolio rankings. One hundred and ninety-nine bounded signals are Published.
-- Seven briefings and all five local-system profiles remain prelaunch or research material. The ten Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
+- Sixty-two signals remain `In Review`; the four Phase 56A holds prohibit cross-series composites, the four Phase 56B holds prohibit cross-entity rankings, the four Phase 56C holds prohibit causal inference from temporal sequence or attribution, the six Phase 56D holds preserve compatibility and causal boundaries, the four Phase 56E holds prohibit second-cohort portfolio rankings, and the Phase 56F hold prohibits turning coverage status into cross-cohort comparison. Two hundred and three bounded signals are Published.
+- Seven briefings and all five local-system profiles remain prelaunch or research material. The eleven Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
 - Six Phase 55N sources have official-link records because their official hosts blocked or complicated automated export; the collection preserves direct official URLs rather than third-party substitutes.
@@ -257,6 +261,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 - Phase 56C uses 24 disclosure-rich official-link records. The twelve dossiers preserve attribution, independent-validation limits, and alternative explanations; controls, inputs, corrective actions, and commitments are not presented as causes of observed outcomes.
 - Phase 56D uses 24 disclosure-rich official-link records. Two manufacturer tests and four portfolio interpretations remain held because the records do not supply compatible same-line, common-denominator, independently attributable causal outcomes.
 - Phase 56E uses 48 disclosure-rich official-link records. All 36 entity layers publish, while four portfolio interpretations remain held because the agency, production-line, battery, and carrier records do not share a common measurement contract.
+- Phase 56F uses 24 disclosure-rich official-link records. Seven exact-record decisions and the cross-cohort comparison remain held; Closed, Partially Closed, and Open are evidence states, not performance measures.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - The Project Baccara record now includes an official 4-1 County action and active final air permit; the fully executed MCP, condition compliance, service, construction, testing, occupancy, and operation remain unverified.
 - Toronto item `2026.SC33.9` is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted amendment, confirmed building permit, start, completion, or occupancy is yet available. A bounded recheck is scheduled for August 1.
@@ -297,9 +302,10 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-arc
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug entity-driver-constraint-dossiers-2021-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug repeat-outcomes-alternative-explanation-tests-2010-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug second-entity-cohort-vertical-replication-2018-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug cross-cohort-coverage-missing-record-closure-2010-2026
 npm.cmd run check
 npm.cmd run build
 npm.cmd run verify:release
 ```
 
-Expected output: 1,204 generated site pages, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, four 27-file, 35-file, two 51-file, and 20-file research archives, forty Phase 56E signal decisions, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and a passing v0.2 release assertion.
+Expected output: 1,249 generated site pages, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, and 20-file research archives, 24 Phase 56F coverage decisions, five Phase 56F signal decisions, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and a passing v0.2 release assertion.

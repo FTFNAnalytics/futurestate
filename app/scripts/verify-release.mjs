@@ -76,6 +76,8 @@ const phase56EReviewPath = join(appRoot, "src", "data", "phase-56e-publication-r
 const phase56EPanelsPath = join(appRoot, "src", "data", "phase-56e-second-cohort-panels.json");
 const phase56EDossiersPath = join(appRoot, "src", "data", "phase-56e-second-cohort-dossiers.json");
 const phase56ETestsPath = join(appRoot, "src", "data", "phase-56e-second-cohort-tests.json");
+const phase56FReviewPath = join(appRoot, "src", "data", "phase-56f-publication-review.json");
+const phase56FCoveragePath = join(appRoot, "src", "data", "phase-56f-cross-cohort-coverage.json");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
@@ -114,6 +116,8 @@ const phase56EReview = await readJson(phase56EReviewPath);
 const phase56EPanels = await readJson(phase56EPanelsPath);
 const phase56EDossiers = await readJson(phase56EDossiersPath);
 const phase56ETests = await readJson(phase56ETestsPath);
+const phase56FReview = await readJson(phase56FReviewPath);
+const phase56FCoverage = await readJson(phase56FCoveragePath);
 const evidenceGaps = await Promise.all(
   evidenceGapFiles.map((name) => readJson(join(evidenceGapDirectory, name))),
 );
@@ -887,6 +891,133 @@ check(
 check(
   phase56EReview.comparison_rule.includes("No causal effect, ranking, composite score, readiness score"),
   "Phase 56E review is missing the causal, comparison, and scoring stop rule.",
+);
+
+const phase56FDecisions = phase56FCoverage.coverage;
+const phase56FEntityIds = new Set(phase56FDecisions.map((decision) => decision.entity_id));
+const phase56FClosureCounts = phase56FDecisions.reduce(
+  (counts, decision) => {
+    counts[decision.closure_status] = (counts[decision.closure_status] ?? 0) + 1;
+    return counts;
+  },
+  {},
+);
+const phase56FPublicationCounts = phase56FDecisions.reduce(
+  (counts, decision) => {
+    counts[decision.record_status] = (counts[decision.record_status] ?? 0) + 1;
+    return counts;
+  },
+  {},
+);
+check(
+  phase56FCoverage.entity_count === 24 && phase56FDecisions.length === 24 && phase56FEntityIds.size === 24,
+  "Phase 56F must contain 24 unique entity coverage decisions.",
+);
+check(
+  phase56FCoverage.cohort_counts.phase_56b === 12
+    && phase56FCoverage.cohort_counts.phase_56e === 12
+    && phase56FDecisions.filter((decision) => decision.cohort === "56B").length === 12
+    && phase56FDecisions.filter((decision) => decision.cohort === "56E").length === 12,
+  "Phase 56F must preserve twelve Phase 56B and twelve Phase 56E entities.",
+);
+check(
+  phase56FClosureCounts.Closed === 1
+    && phase56FClosureCounts["Partially Closed"] === 16
+    && phase56FClosureCounts.Open === 7,
+  "Phase 56F closure states must contain one Closed, sixteen Partially Closed, and seven Open decisions.",
+);
+check(
+  phase56FPublicationCounts.Published === 17 && phase56FPublicationCounts["In Review"] === 7,
+  "Phase 56F publication states must contain seventeen Published and seven In Review decisions.",
+);
+for (const decision of phase56FDecisions) {
+  check(
+    [
+      decision.coverage_id,
+      decision.entity_id,
+      decision.entity_name,
+      decision.highest_value_missing_record,
+      decision.strongest_current_evidence,
+      decision.selected_source_id,
+      decision.closure_status,
+      decision.record_status,
+      decision.decision,
+      decision.remaining_gap,
+      decision.reopening_rule,
+      decision.comparison_boundary,
+    ].every(Boolean),
+    `Phase 56F coverage decision ${decision.coverage_id} is missing a record, closure, gap, or reopening field.`,
+  );
+  check(
+    ["Closed", "Partially Closed", "Open"].includes(decision.closure_status),
+    `Phase 56F coverage decision ${decision.coverage_id} has an invalid closure status.`,
+  );
+  check(
+    ["Published", "In Review"].includes(decision.record_status),
+    `Phase 56F coverage decision ${decision.coverage_id} has an invalid publication status.`,
+  );
+  check(
+    decision.comparison_boundary.includes("not entity performance")
+      && decision.comparison_boundary.includes("cannot be ranked or scored"),
+    `Phase 56F coverage decision ${decision.coverage_id} is missing the performance and scoring boundary.`,
+  );
+}
+
+const phase56FSignals = phase56FReview.signal_decisions;
+check(
+  phase56FReview.source_profiles_added === 14 && phase56FReview.entity_count === 24,
+  "Phase 56F publication review must record fourteen source profiles and 24 entities.",
+);
+check(
+  phase56FReview.document_decisions.reviewed === 24
+    && phase56FReview.document_decisions.promoted.length === 17
+    && phase56FReview.document_decisions.held.length === 7,
+  "Phase 56F document review must contain seventeen Published and seven held decisions.",
+);
+check(
+  phase56FSignals.reviewed === 5
+    && phase56FSignals.promoted.length === 4
+    && phase56FSignals.held.length === 1,
+  "Phase 56F signal review must contain four Published portfolio signals and one held comparison.",
+);
+for (const id of phase56FSignals.promoted) {
+  check(signalStatusById.get(id) === "Published", `Phase 56F Published signal ${id} has the wrong status.`);
+}
+for (const id of phase56FSignals.held) {
+  check(signalStatusById.get(id) === "In Review", `Phase 56F held signal ${id} has the wrong status.`);
+}
+
+const phase56FCollection = researchCollections.find(
+  (collection) => collection.id === "research-collection-cross-cohort-coverage-missing-record-closure-2010-2026",
+);
+check(Boolean(phase56FCollection), "Phase 56F cross-cohort coverage research collection is missing.");
+if (phase56FCollection) {
+  check(phase56FCollection.document_ids.length === 24, `Expected 24 Phase 56F documents, found ${phase56FCollection.document_ids.length}.`);
+  const resolvedPhase56FDocuments = phase56FCollection.document_ids
+    .map((documentId) => researchDocumentById.get(documentId))
+    .filter(Boolean);
+  check(resolvedPhase56FDocuments.length === 24, `Expected all 24 Phase 56F documents to resolve, found ${resolvedPhase56FDocuments.length}.`);
+  check(
+    resolvedPhase56FDocuments.filter((document) => document.record_status === "Published").length === 17
+      && resolvedPhase56FDocuments.filter((document) => document.record_status === "In Review").length === 7,
+    "Phase 56F research documents must preserve seventeen Published and seven In Review decisions.",
+  );
+  check(
+    resolvedPhase56FDocuments.every((document) => document.capture_status === "Official link record"),
+    "Phase 56F research documents must use the official-link capture contract.",
+  );
+}
+check(
+  briefingStatusById.get("briefing-research-watch-010-cross-cohort-coverage") === "Published",
+  "Phase 56F cross-cohort coverage briefing should be Published.",
+);
+check(
+  phase56FReview.priority_rule.includes("exactly one highest-value missing"),
+  "Phase 56F review is missing the one-record priority rule.",
+);
+check(
+  phase56FReview.comparison_rule.includes("No causal effect, ranking, completeness score, composite score, readiness score"),
+  "Phase 56F review is missing the comparison and scoring stop rule.",
 );
 
 for (const collection of researchCollections) {

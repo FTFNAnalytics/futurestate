@@ -377,12 +377,13 @@ Recommended active schedule:
 | Completed | Phase 56C | twelve entity driver and constraint dossiers, four causal holds, and Research Watch 007 |
 | Completed | Phase 56D | twelve alternative-explanation tests, six holds, Research Watch 008, and owner-only Sites version 29 |
 | Completed | Phase 56E | second twelve-entity cohort, 36 vertical entity layers, four portfolio holds, Research Watch 009, and owner-only Sites version 30 |
-| Current content gate | Phase 56F | cross-cohort coverage ledger and highest-value missing-record closure across 24 entities |
+| Completed locally | Phase 56F | 24-entity coverage ledger, one Closed, sixteen Partially Closed, seven Open, Research Watch 010, and 27-file archive |
+| Current content gate | Phase 56G | operating-record acquisition and closure batch two, beginning with the seven Open rails |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build, owner-only preview, and Phases 55S-56E aggressive expansion are complete locally and owner-only deployed. Phases 55A-56E established the authority, research, synthesis, pathway, evidence-gap, publication, navigation, export, operating-evidence, comparison-boundary, longitudinal-series, named-entity-panel, driver-and-constraint, alternative-explanation-test, and second-cohort vertical-replication foundations. The next non-public content gate is Phase 56F: a cross-cohort coverage and missing-record closure program across all 24 named entities. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build, owner-only preview, and Phases 55S-56E aggressive expansion are complete locally and owner-only deployed. Phase 56F is complete locally and adds a controlled acquisition layer: every one of the 24 named entities now has one selected official record, one highest-value missing record, a closure state, a remaining gap, and an explicit reopening rule. The current non-public content gate is Phase 56G: operating-record acquisition and closure batch two, beginning with the seven Open rails before revisiting the sixteen Partially Closed decisions. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -936,27 +937,47 @@ Completion receipt:
 - matched local content commit `2aebf8fb94d9491cf4b0b376b94f674a09dbe8e4` to exact private source projection `79964310eeb0e1f18be0b94cb4ffd29ab04c9df4`;
 - deployed owner-only Sites version 30 in deployment `appgdep_6a641dc36c188191b77181aa1ea9449f` and confirmed custom access with one allowed owner and no groups.
 
-### Phase 56F: Cross-Cohort Coverage And Missing-Record Closure - Next Content Gate
+### Phase 56F: Cross-Cohort Coverage And Missing-Record Closure - Complete Locally
 
 Goal: turn the two twelve-entity cohorts into a 24-entity coverage program that closes the most important missing operating records without creating a league table.
 
-Deliverables:
+Delivered:
 
-- create one coverage ledger across all 24 entities and the panel, dossier, and test layers;
-- record the strongest current compatible outcome, closure, input, denominator, attribution, and validation evidence for each entity;
-- identify one highest-value missing record per entity;
-- execute bounded closure batches across agency control operation, manufacturing line inputs and accepted output, battery availability and dispatch, and carrier service-delivery denominators;
-- route unavailable records to explicit evidence gaps with a named source and reopening rule;
-- publish only independently useful entity findings after separate record-level review;
-- deepen the collections, briefings, pathways, topics, comparison protocol, and update log from the resulting records.
+- created one coverage ledger across all 24 entities and the panel, dossier, and test layers;
+- recorded one strongest current compatible record and one highest-value missing record for every entity;
+- assigned one Closed, sixteen Partially Closed, and seven Open evidence states with explicit remaining gaps and reopening rules;
+- added fourteen source profiles, 24 coverage documents, four Published portfolio findings, one held comparison, Research Watch 010, one collection, one update, and a verified 27-file archive;
+- published seventeen entity coverage documents and retained seven exact-record decisions `In Review`;
+- deepened six entity ledgers, six pathways, eight topics, and the comparison protocol;
+- release-verified 1,249 pages, 516 sources, 265 signals, 203 Published signals, 62 In Review signals, 348 research documents, and 321 current Published-support sources.
 
 Exit criteria:
 
-- all 24 entities have a current coverage decision and named next record;
-- no broad context source is added where a specific closure or outcome record is required;
-- compatibility, attribution, identity, denominator, and observation-window breaks remain visible;
-- cross-cohort comparisons remain held unless the underlying records share a genuinely common measurement contract;
-- no causal effect, ranking, composite score, or readiness score is created;
+- all 24 entities have a current coverage decision and named next record: passed;
+- no broad context source replaces a specific closure or outcome record: passed;
+- compatibility, attribution, identity, denominator, and observation-window breaks remain visible: passed;
+- the cross-cohort comparison remains held: passed;
+- no causal effect, ranking, composite score, or readiness score is created: passed;
+- the full local release gate passes; owner-only deployment is pending.
+
+### Phase 56G: Operating-Record Acquisition And Closure Batch Two - Current Content Gate
+
+Goal: use the Phase 56F reopening rules as a disciplined acquisition queue, starting with the seven Open records and continuing without waiting for scheduled inserts.
+
+Priority rails:
+
+- agency: DHS final FY 2025 FISMA and DOE department-wide FY 2025 FISMA;
+- production line: F-35 Fort Worth monthly due and accepted output;
+- batteries: Manatee interval dispatch and availability, Gateway final investigation and full restoration, Hornsdale annual availability and dispatch, and Dalrymple post-project operation;
+- partial-closure queue: revisit the sixteen Partially Closed records only after the Open batch or when a named reopening rule is met.
+
+Exit criteria:
+
+- each acquisition is tied to an existing Phase 56F coverage ID and reopening rule;
+- unavailable records produce a dated source check and bounded continuation rule, not generic replacement context;
+- every new record receives separate publication review;
+- the Victorian Big Battery closure remains bounded to recommissioning action unless later operating evidence supports a wider result;
+- no cross-entity ranking, composite, readiness score, or causal claim is created;
 - the full local release and owner-only deployment gates pass.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
