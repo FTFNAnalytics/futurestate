@@ -2,7 +2,7 @@
 
 Date: 2026-07-25
 
-Status: complete locally; owner-only deployment pending
+Status: complete and owner-only deployed
 
 ## Goal
 
@@ -58,6 +58,15 @@ Phase 56I is complete when content validation, source health, Astro diagnostics,
 - the 15-file archive passed at SHA-256 `D5969AFE5A4663C8138BE3026D65F94F0D12F53AC15EA351323526E2DDC4DA01`;
 - one Closed, twenty Partially Closed, and three Open evidence states remain;
 - no public access, Hostinger DNS, custom domain, package freeze, or public GitHub state changed.
+
+## Deployment Receipt
+
+- local content commit: `2760edee242f398850dcc9ef2aa7660830caf9af`;
+- exact private packaged source commit: `41497faeebdb1d15b4fa26ceb05d5e3b7300bea5`;
+- Sites version: 34;
+- deployment: `appgdep_6a646c5539708191a598952968b74f53`;
+- production URL: `https://ftfn-analytics.jbumstead.chatgpt.site`;
+- access: custom owner-only, one allowed owner, no groups.
 
 ## Handoff
 

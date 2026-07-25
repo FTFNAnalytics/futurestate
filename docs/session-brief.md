@@ -161,6 +161,7 @@ What is now stable:
 - Phase 56H local content commit `5878f83a7740827ad1ee4ff0b4d3362eb0e798f4` matches exact private source projection `85eb6ab5e8fcd5530a507aebc2dc5b53091575cf`, deployed as owner-only Sites version 33 in deployment `appgdep_6a6453f24d3481918d4a7f4ab6aaa3ee` with one allowed owner and no groups.
 - The verified Phase 56I local contract is 1,319 pages, 537 sources, 275 signals, 210 Published signals, 65 In Review signals, 328 current Published-support sources, twenty-one briefings, seven maps, eighteen research collections, 381 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 37 updates, and five public-data exports.
 - Phase 56I checks all three Open rails and the nine remaining Partially Closed records, retains one Closed, twenty Partially Closed, and three Open evidence states, and adds two Published findings plus one held continuation synthesis.
+- Phase 56I local content commit `2760edee242f398850dcc9ef2aa7660830caf9af` produced exact private packaged source commit `41497faeebdb1d15b4fa26ceb05d5e3b7300bea5`, deployed as owner-only Sites version 34 in deployment `appgdep_6a646c5539708191a598952968b74f53` with one allowed owner and no groups.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 326 current Published-support sources are governed by the same current-source release assertion.
@@ -182,7 +183,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only access and continue with Phase 56J evidence-value continuation. Phase 56I is complete and release-verified locally: the first pass now covers all 24 named records, one remains Closed, twenty remain Partially Closed, and DHS, Manatee, and Gateway remain Open. Order the twenty partial continuation rules by likely evidence gain while continuing the three exact Open rails. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only access and continue with Phase 56J evidence-value continuation. Phase 56I is complete, release-verified, and owner-only deployed: the first pass now covers all 24 named records, one remains Closed, twenty remain Partially Closed, and DHS, Manatee, and Gateway remain Open. Order the twenty partial continuation rules by likely evidence gain while continuing the three exact Open rails. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
