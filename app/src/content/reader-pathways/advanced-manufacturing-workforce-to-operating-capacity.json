@@ -3,8 +3,8 @@
   "title": "Advanced Manufacturing: From Research Roadmap To Operating Workforce",
   "slug": "advanced-manufacturing-workforce-to-operating-capacity",
   "record_status": "Published",
-  "summary": "Follow manufacturing programs and establishments through recurring surveys, projects, workforce activity, production adoption, quality, throughput, productivity, and customer delivery.",
-  "current_state_summary": "MEP client surveys, Manufacturing USA reports, NIIMBL reports, and Census establishment statistics now create four repeat measurement rails without equating program activity and sector outcomes.",
+  "summary": "Follow manufacturing programs into named facility interventions, repeat output, labor, quality, cost, delivery, demand, and independently validated production outcomes.",
+  "current_state_summary": "Current Applications, Island Components, and Monaghan Medical now have named before-and-after output panels, with company and MEP attribution kept explicit.",
   "current_state": [
     "The research, packaging, metrology, fab, apprenticeship, and regional-coordination rails remain intact.",
     "ASML's Phoenix technical academy is fully operational after training began in 2024.",
@@ -15,7 +15,9 @@
     "A NIIMBL program reaches completion for 47 trainees, and an Arizona MEP record reaches a defined facility intervention and attributed savings.",
     "Manufacturing USA engagement totals remain held because participation, completion, placement, and productivity lack common denominators.",
     "MEP's FY 2021 and FY 2022 client surveys retain sales, savings, investment, and job measures with program attribution.",
-    "Manufacturing USA and NIIMBL preserve recurring institute activity, while Census ASM provides an official establishment-level statistical rail."
+    "Manufacturing USA and NIIMBL preserve recurring institute activity, while Census ASM provides an official establishment-level statistical rail.",
+    "Three NIST MEP case studies expose compatible before-and-after units within each named line or facility.",
+    "Product, labor, quality, cost, demand, follow-up, and attribution differences stop any cross-manufacturer ranking."
   ],
   "primary_topics": [
     "Advanced Manufacturing",
@@ -45,7 +47,10 @@
     "signal-56a-mep-national-impact",
     "signal-56a-manufacturing-usa",
     "signal-56a-niimbl-annual",
-    "signal-56a-census-asm"
+    "signal-56a-census-asm",
+    "signal-56b-current-applications-output-panel",
+    "signal-56b-island-components-output-panel",
+    "signal-56b-monaghan-medical-output-panel"
   ],
   "source_ids": [
     "source-nist-smart-manufacturing-ai-roadmap-2026",
@@ -80,7 +85,10 @@
     "source-56a-niimbl-annual-2023-2024",
     "source-56a-census-asm-2021",
     "source-56a-census-asm-discontinuation",
-    "source-56a-census-aies-transition-2024"
+    "source-56a-census-aies-transition-2024",
+    "source-56b-nist-mep-current-applications-lean",
+    "source-56b-nist-mep-island-components-lean",
+    "source-56b-nist-mep-monaghan-medical-lean"
   ],
   "organization_ids": [
     "org-nist",
@@ -95,7 +103,8 @@
     "briefing-stack-watch-004-implementation-outcomes",
     "briefing-research-watch-003-operational-evidence",
     "briefing-research-watch-004-comparative-operating-outcomes",
-    "briefing-research-watch-005-longitudinal-operating-series"
+    "briefing-research-watch-005-longitudinal-operating-series",
+    "briefing-research-watch-006-entity-operating-panels"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -107,7 +116,8 @@
     "research-collection-industrial-capacity-local-conversion-2025-2026",
     "research-collection-operational-evidence-receiving-systems-2024-2026",
     "research-collection-comparative-operating-outcomes-2023-2026",
-    "research-collection-longitudinal-operating-series-2020-2025"
+    "research-collection-longitudinal-operating-series-2020-2025",
+    "research-collection-entity-operating-panels-2021-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -144,6 +154,11 @@
       "stage": "Longitudinal operating series",
       "current_state": "Twelve new observations form four recurring manufacturing series spanning client, institute, and establishment evidence.",
       "boundary": "Client attribution, institute activity, workforce engagement, facility output, and sector estimates retain separate units and denominators."
+    },
+    {
+      "stage": "Named entity operating panel",
+      "current_state": "Three named manufacturers now have explicit baseline and post-intervention output observations.",
+      "boundary": "Company- and program-attributed case studies are not audited causal effects, sector benchmarks, or durable productivity trends."
     }
   ],
   "evidence_limits": [
@@ -153,7 +168,8 @@
     "Jobs, dollars, participants, graduates, projects, products, quality, and productivity remain separate outcome units.",
     "Institute and MEP records require explicit self-reporting, survey, cohort, and follow-up labels.",
     "Program respondent mix, follow-up periods, institute coverage, and activity definitions can change between reports.",
-    "Nominal dollars, participant counts, project counts, jobs, quality, and productivity cannot be combined without a shared method."
+    "Nominal dollars, participant counts, project counts, jobs, quality, and productivity cannot be combined without a shared method.",
+    "The case studies do not expose a common observation window, product mix, labor input, quality, cost, demand, or follow-up denominator."
   ],
   "next_records": [
     "ASML enrollment, completion, credential, placement, retention, and customer-training records.",
@@ -162,6 +178,8 @@
     "Program-level completion, credential, placement, retention, wage, vacancy, and employer-performance records with denominators.",
     "Facility quality, scrap, throughput, downtime, delivery, customer, and productivity measures with repeat periods and independent validation.",
     "Repeated facility quality, scrap, throughput, downtime, delivery, labor, customer, and productivity measures.",
-    "Cohort completion, credential, placement, retention, wage, vacancy, and employer-result data with stable denominators."
+    "Cohort completion, credential, placement, retention, wage, vacancy, and employer-result data with stable denominators.",
+    "Repeat facility output, labor hours, first-pass yield, scrap, downtime, cost, delivery, demand, and WIP observations.",
+    "Independent validation and later measurements using the same line and denominator."
   ]
 }

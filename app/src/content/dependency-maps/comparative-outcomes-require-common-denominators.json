@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison protocol showing how operating observations become longitudinal series only after unit, denominator, period, geography, method, attribution, revisions, and series breaks align.",
+  "summary": "A comparison protocol showing how national context becomes a named entity panel only after identity, unit, denominator, period, geography, method, attribution, revisions, and reporting breaks align.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -101,7 +101,24 @@
     "source-56a-president-aerospace-fy2023",
     "source-56a-president-aerospace-fy2024",
     "source-56a-census-asm-discontinuation",
-    "source-56a-census-aies-transition-2024"
+    "source-56a-census-aies-transition-2024",
+    "source-56b-nasa-fisma-fy2022",
+    "source-56b-nasa-fisma-fy2023",
+    "source-56b-nasa-fisma-fy2024",
+    "source-56b-dhs-fisma-fy2021",
+    "source-56b-dhs-fisma-fy2022",
+    "source-56b-dhs-fisma-fy2023",
+    "source-56b-hhs-fisma-fy2022",
+    "source-56b-hhs-fisma-fy2023",
+    "source-56b-hhs-fisma-fy2024",
+    "source-56b-nist-mep-current-applications-lean",
+    "source-56b-nist-mep-island-components-lean",
+    "source-56b-nist-mep-monaghan-medical-lean",
+    "source-56b-eia860-2021",
+    "source-56b-eia860-2022",
+    "source-56b-eia860-2023",
+    "source-56b-bts-atcr-full-year-2024",
+    "source-56b-dot-atcr-february-2026"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -131,7 +148,19 @@
     "signal-56a-air-travel-consumer",
     "signal-56a-california-av-miles",
     "signal-56a-faa-commercial-space",
-    "signal-56a-president-aerospace-report"
+    "signal-56a-president-aerospace-report",
+    "signal-56b-nasa-fisma-panel",
+    "signal-56b-dhs-fisma-panel",
+    "signal-56b-hhs-fisma-panel",
+    "signal-56b-current-applications-output-panel",
+    "signal-56b-island-components-output-panel",
+    "signal-56b-monaghan-medical-output-panel",
+    "signal-56b-moss-landing-capacity-panel",
+    "signal-56b-manatee-capacity-panel",
+    "signal-56b-gateway-capacity-panel",
+    "signal-56b-united-cancellation-panel",
+    "signal-56b-southwest-cancellation-panel",
+    "signal-56b-delta-cancellation-panel"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -210,6 +239,19 @@
       "node_type": "Signal",
       "record_id": "signal-56a-eia-battery-capacity",
       "note": "Direction is published inside one defined series without becoming a composite score."
+    },
+    {
+      "id": "node-entity-identity",
+      "label": "Stable entity identity",
+      "node_type": "Constraint",
+      "note": "Agency, facility, plant code, or operating-carrier identity must persist across observations."
+    },
+    {
+      "id": "node-entity-panel",
+      "label": "Bounded entity operating panel",
+      "node_type": "Signal",
+      "record_id": "signal-56b-moss-landing-capacity-panel",
+      "note": "At least two compatible observations can publish inside one named entity without becoming a rank."
     }
   ],
   "links": [
@@ -282,6 +324,20 @@
       "relationship": "Limited By",
       "confidence": "Watch",
       "note": "Longitudinal evidence remains within-domain and does not close cross-system comparability."
+    },
+    {
+      "from": "node-entity-panel",
+      "to": "node-entity-identity",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "A stable entity ID prevents name changes, mergers, exits, and denominator drift from silently rewriting the line."
+    },
+    {
+      "from": "node-entity-panel",
+      "to": "node-gap",
+      "relationship": "Limited By",
+      "confidence": "Watch",
+      "note": "Entity panels remain bounded and do not close cross-entity comparability."
     }
   ],
   "what_this_map_supports": [
@@ -289,14 +345,17 @@
     "Within-domain comparisons may proceed when unit, denominator, period, geography, method, and attribution align.",
     "Explicit holds identify where activity or reporting structure has not become a comparable outcome.",
     "A direction statement may publish after at least two compatible observations, with a two-point caveat.",
-    "Revisions and method breaks can stop, split, or restate a longitudinal series."
+    "Revisions and method breaks can stop, split, or restate a longitudinal series.",
+    "A named entity panel may publish after stable identity and at least two compatible observations are verified.",
+    "National context and entity performance remain separate layers."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
     "It does not equate activity, capacity, exposure, service, reliability, safety, cost, or local benefit.",
     "It does not convert company-attributed results into audited causal effects.",
     "It does not turn a two-point movement into a durable trend.",
-    "It does not authorize normalization across incompatible domains."
+    "It does not authorize normalization across incompatible domains.",
+    "It does not authorize a cross-agency, cross-manufacturer, cross-asset, or cross-carrier ranking."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -304,6 +363,8 @@
     "Independent validation and quality controls.",
     "Asset-, customer-, operator-, commodity-, and geography-level outcome records.",
     "Later observations using unchanged definitions and denominators.",
-    "Vintage, revision, and series-break metadata."
+    "Vintage, revision, and series-break metadata.",
+    "Later entity observations with unchanged identity, unit, denominator, method, and attribution.",
+    "Explicit merger, exit, permit, revision, and reporting-break records."
   ]
 }

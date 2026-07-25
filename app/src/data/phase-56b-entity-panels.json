@@ -1,0 +1,614 @@
+{
+  "phase": "56B",
+  "captured_date": "2026-07-24",
+  "panel_count": 12,
+  "panels": [
+    {
+      "panel_id": "panel-56b-nasa-fisma",
+      "portfolio": "ai_cyber",
+      "entity_id": "agency-nasa",
+      "entity_name": "National Aeronautics and Space Administration",
+      "entity_type": "Federal agency",
+      "indicator": "Inspector-general FISMA program maturity",
+      "unit": "FISMA maturity level",
+      "denominator": "NASA agency information-security program under the stated fiscal-year IG metrics",
+      "period": "Fiscal years 2022-2024",
+      "geography": "United States federal civil-space agency",
+      "method": "Annual independent FISMA evaluation using the applicable IG metrics",
+      "attribution": "NASA Office of Inspector General and its independent evaluator",
+      "record_status": "Published",
+      "signal_id": "signal-56b-nasa-fisma-panel",
+      "source_ids": [
+        "source-56b-nasa-fisma-fy2022",
+        "source-56b-nasa-fisma-fy2023",
+        "source-56b-nasa-fisma-fy2024"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-fisma-reporting",
+        "signal-56a-fisma-effectiveness"
+      ],
+      "observations": [
+        {
+          "period": "FY 2022",
+          "value": 3,
+          "label": "Level 3 - Consistently Implemented",
+          "source_id": "source-56b-nasa-fisma-fy2022"
+        },
+        {
+          "period": "FY 2023",
+          "value": 3,
+          "label": "Level 3 - Consistently Implemented",
+          "source_id": "source-56b-nasa-fisma-fy2023"
+        },
+        {
+          "period": "FY 2024",
+          "value": 3,
+          "label": "Level 3 - Consistently Implemented",
+          "source_id": "source-56b-nasa-fisma-fy2024"
+        }
+      ],
+      "reporting_breaks": [
+        "The FY 2023 evaluation period ended May 31, 2023; annual metric sets can change."
+      ],
+      "missing_data": [
+        "Track FY 2025 metrics, function-level maturity, control testing, authorization age, remediation, incidents, recovery, affected services, and mission effects."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the repeated agency-program rating only. Do not infer unchanged cyber risk, system performance, incidents, mission effect, or equivalence with another agency."
+    },
+    {
+      "panel_id": "panel-56b-dhs-fisma",
+      "portfolio": "ai_cyber",
+      "entity_id": "agency-dhs",
+      "entity_name": "Department of Homeland Security",
+      "entity_type": "Federal agency",
+      "indicator": "Inspector-general FISMA program effectiveness",
+      "unit": "Annual effectiveness determination",
+      "denominator": "DHS department information-security program under the stated fiscal-year IG metrics",
+      "period": "Fiscal years 2021-2023",
+      "geography": "United States federal homeland-security department",
+      "method": "Annual independent FISMA evaluation with function-level maturity testing",
+      "attribution": "DHS Office of Inspector General and its independent evaluator",
+      "record_status": "Published",
+      "signal_id": "signal-56b-dhs-fisma-panel",
+      "source_ids": [
+        "source-56b-dhs-fisma-fy2021",
+        "source-56b-dhs-fisma-fy2022",
+        "source-56b-dhs-fisma-fy2023"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-fisma-reporting",
+        "signal-56a-fisma-effectiveness"
+      ],
+      "observations": [
+        {
+          "period": "FY 2021",
+          "value": 0,
+          "label": "Ineffective",
+          "source_id": "source-56b-dhs-fisma-fy2021"
+        },
+        {
+          "period": "FY 2022",
+          "value": 1,
+          "label": "Effective",
+          "source_id": "source-56b-dhs-fisma-fy2022"
+        },
+        {
+          "period": "FY 2023",
+          "value": 1,
+          "label": "Effective",
+          "source_id": "source-56b-dhs-fisma-fy2023"
+        }
+      ],
+      "reporting_breaks": [
+        "The FY 2021 department-wide determination excluded Coast Guard ratings.",
+        "Annual FISMA reporting instructions and calculated-average methods can change."
+      ],
+      "missing_data": [
+        "Track later department and component ratings, metric changes, tested-system coverage, overdue corrective actions, vulnerabilities, incidents, and recovery."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the within-agency sequence with the Coast Guard scope note and annual metric rules attached. Do not turn it into a cross-agency ranking or a claim that deficiencies or incidents ended."
+    },
+    {
+      "panel_id": "panel-56b-hhs-fisma",
+      "portfolio": "ai_cyber",
+      "entity_id": "agency-hhs",
+      "entity_name": "Department of Health and Human Services",
+      "entity_type": "Federal agency",
+      "indicator": "Inspector-general FISMA program effectiveness",
+      "unit": "Annual effectiveness determination",
+      "denominator": "HHS department information-security program under the stated fiscal-year IG metrics",
+      "period": "Fiscal years 2022-2024",
+      "geography": "United States federal health department",
+      "method": "Annual independent FISMA audit using core and applicable supplemental IG metrics",
+      "attribution": "HHS Office of Inspector General and its independent auditor",
+      "record_status": "Published",
+      "signal_id": "signal-56b-hhs-fisma-panel",
+      "source_ids": [
+        "source-56b-hhs-fisma-fy2022",
+        "source-56b-hhs-fisma-fy2023",
+        "source-56b-hhs-fisma-fy2024"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-fisma-reporting",
+        "signal-56a-fisma-effectiveness"
+      ],
+      "observations": [
+        {
+          "period": "FY 2022",
+          "value": 0,
+          "label": "Not Effective",
+          "source_id": "source-56b-hhs-fisma-fy2022"
+        },
+        {
+          "period": "FY 2023",
+          "value": 0,
+          "label": "Not Effective",
+          "source_id": "source-56b-hhs-fisma-fy2023"
+        },
+        {
+          "period": "FY 2024",
+          "value": 0,
+          "label": "Not Effective",
+          "source_id": "source-56b-hhs-fisma-fy2024"
+        }
+      ],
+      "reporting_breaks": [
+        "Audit sampling and the set of reviewed operating divisions can differ by year."
+      ],
+      "missing_data": [
+        "Track operating-division maturity, tested coverage, inventory accuracy, corrective-action closure, incident exposure, service disruption, and later metric changes."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the repeated department rating only. Do not equate the headline result with identical component risk, incidents, health-service disruption, or patient harm."
+    },
+    {
+      "panel_id": "panel-56b-current-applications-output",
+      "portfolio": "manufacturing",
+      "entity_id": "manufacturer-current-applications-watertown-ny",
+      "entity_name": "Current Applications",
+      "entity_type": "Manufacturing company",
+      "indicator": "Reported production output on the improved line",
+      "unit": "Units per day",
+      "denominator": "The product line described in the NIST MEP case study",
+      "period": "Before and after the reported lean intervention",
+      "geography": "Watertown, New York",
+      "method": "Company-attributed before-and-after result reported in a NIST MEP success story",
+      "attribution": "Current Applications, CITEC, New York MEP, and NIST MEP",
+      "record_status": "Published",
+      "signal_id": "signal-56b-current-applications-output-panel",
+      "source_ids": [
+        "source-56b-nist-mep-current-applications-lean"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-mep-national-impact"
+      ],
+      "observations": [
+        {
+          "period": "Pre-intervention",
+          "value": 40,
+          "label": "40 units per day",
+          "source_id": "source-56b-nist-mep-current-applications-lean"
+        },
+        {
+          "period": "Post-intervention",
+          "value": 105,
+          "label": "105 units per day",
+          "source_id": "source-56b-nist-mep-current-applications-lean"
+        }
+      ],
+      "reporting_breaks": [
+        "The official case study does not state observation dates or a repeated post-intervention measurement window."
+      ],
+      "missing_data": [
+        "Track later output, product mix, labor hours, first-pass yield, scrap, downtime, delivery, demand, WIP, and independent validation."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish as a company- and program-attributed intervention result. Do not infer audited causality, persistence, company-wide productivity, quality, labor intensity, or customer outcomes."
+    },
+    {
+      "panel_id": "panel-56b-island-components-output",
+      "portfolio": "manufacturing",
+      "entity_id": "manufacturer-island-components-hauppauge-ny",
+      "entity_name": "Island Components Group",
+      "entity_type": "Manufacturing company",
+      "indicator": "Reported daily motor-assembly output",
+      "unit": "Units per day",
+      "denominator": "The department and motor-assembly flow described in the NIST MEP case study",
+      "period": "Before and after the reported lean intervention",
+      "geography": "Hauppauge, New York",
+      "method": "Company-attributed before-and-after result reported in a NIST MEP success story",
+      "attribution": "Island Components Group, Long Island MEP, New York MEP, and NIST MEP",
+      "record_status": "Published",
+      "signal_id": "signal-56b-island-components-output-panel",
+      "source_ids": [
+        "source-56b-nist-mep-island-components-lean"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-mep-national-impact"
+      ],
+      "observations": [
+        {
+          "period": "Pre-intervention",
+          "value": 75,
+          "label": "75 units per day",
+          "source_id": "source-56b-nist-mep-island-components-lean"
+        },
+        {
+          "period": "Post-intervention",
+          "value": 120,
+          "label": "120 units per day",
+          "source_id": "source-56b-nist-mep-island-components-lean"
+        }
+      ],
+      "reporting_breaks": [
+        "The case study does not expose the measurement window, product-mix adjustment, or later follow-up."
+      ],
+      "missing_data": [
+        "Track the same line's output, labor hours, WIP, first-pass yield, defects, downtime, delivery, cost, and persistence."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the facility intervention result without converting it into a benchmark, causal estimate, or statement about quality, labor, cost, delivery, or sustained demand."
+    },
+    {
+      "panel_id": "panel-56b-monaghan-medical-output",
+      "portfolio": "manufacturing",
+      "entity_id": "manufacturer-monaghan-medical-plattsburgh-ny",
+      "entity_name": "Monaghan Medical",
+      "entity_type": "Manufacturing company",
+      "indicator": "Reported daily output on one production line",
+      "unit": "Units per day",
+      "denominator": "The production line described in the NIST MEP case study",
+      "period": "Before and after the reported lean intervention",
+      "geography": "Plattsburgh, New York",
+      "method": "Company-attributed before-and-after result reported in a NIST MEP success story",
+      "attribution": "Monaghan Medical, CITEC, New York MEP, and NIST MEP",
+      "record_status": "Published",
+      "signal_id": "signal-56b-monaghan-medical-output-panel",
+      "source_ids": [
+        "source-56b-nist-mep-monaghan-medical-lean"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-mep-national-impact"
+      ],
+      "observations": [
+        {
+          "period": "Pre-intervention",
+          "value": 6000,
+          "label": "6,000 units per day",
+          "source_id": "source-56b-nist-mep-monaghan-medical-lean"
+        },
+        {
+          "period": "Post-intervention",
+          "value": 9000,
+          "label": "9,000 units per day",
+          "source_id": "source-56b-nist-mep-monaghan-medical-lean"
+        }
+      ],
+      "reporting_breaks": [
+        "The case study does not state a post-intervention follow-up period or company-wide denominator."
+      ],
+      "missing_data": [
+        "Track line identity, output, product mix, labor hours, first-pass yield, scrap, downtime, cost, delivery, demand, and later measurements."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish as one line's attributed result. Do not generalize it to the whole company, sector productivity, product quality, labor displacement, cost, or clinical outcomes."
+    },
+    {
+      "panel_id": "panel-56b-moss-landing-battery-capacity",
+      "portfolio": "infrastructure",
+      "entity_id": "eia-plant-260",
+      "entity_name": "Dynegy Moss Landing Power Plant Hybrid",
+      "entity_type": "Battery-storage generating plant",
+      "indicator": "Operating battery-generator nameplate power capacity",
+      "unit": "Megawatts",
+      "denominator": "Operating battery generators assigned to EIA plant code 260 in each final EIA-860 vintage",
+      "period": "Calendar years 2021-2023",
+      "geography": "California, United States",
+      "method": "Sum of nameplate capacity for operating battery generators in the final annual EIA-860 generator inventory",
+      "attribution": "U.S. Energy Information Administration; FTFN plant-code aggregation",
+      "record_status": "Published",
+      "signal_id": "signal-56b-moss-landing-capacity-panel",
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-eia-battery-capacity"
+      ],
+      "observations": [
+        {
+          "period": "2021",
+          "value": 400,
+          "label": "400 MW",
+          "source_id": "source-56b-eia860-2021"
+        },
+        {
+          "period": "2022",
+          "value": 400,
+          "label": "400 MW",
+          "source_id": "source-56b-eia860-2022"
+        },
+        {
+          "period": "2023",
+          "value": 750,
+          "label": "750 MW",
+          "source_id": "source-56b-eia860-2023"
+        }
+      ],
+      "reporting_breaks": [
+        "Plant name and generator records can be revised in later EIA vintages; plant code 260 is the stable identity key."
+      ],
+      "missing_data": [
+        "Track later EIA vintages, generator additions and retirements, energy capacity, availability, incidents, dispatch, revenue, and grid-service results."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the nameplate power-capacity panel only. Do not infer energy duration, availability, utilization, safety, dispatch, revenue, grid service, or customer reliability."
+    },
+    {
+      "panel_id": "panel-56b-manatee-battery-capacity",
+      "portfolio": "infrastructure",
+      "entity_id": "eia-plant-60014",
+      "entity_name": "Manatee Solar Energy Center",
+      "entity_type": "Battery-storage generating plant",
+      "indicator": "Operating battery-generator nameplate power capacity",
+      "unit": "Megawatts",
+      "denominator": "Operating battery generators assigned to EIA plant code 60014 in each final EIA-860 vintage",
+      "period": "Calendar years 2021-2023",
+      "geography": "Florida, United States",
+      "method": "Sum of nameplate capacity for operating battery generators in the final annual EIA-860 generator inventory",
+      "attribution": "U.S. Energy Information Administration; FTFN plant-code aggregation",
+      "record_status": "Published",
+      "signal_id": "signal-56b-manatee-capacity-panel",
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-eia-battery-capacity"
+      ],
+      "observations": [
+        {
+          "period": "2021",
+          "value": 409,
+          "label": "409 MW",
+          "source_id": "source-56b-eia860-2021"
+        },
+        {
+          "period": "2022",
+          "value": 409,
+          "label": "409 MW",
+          "source_id": "source-56b-eia860-2022"
+        },
+        {
+          "period": "2023",
+          "value": 409,
+          "label": "409 MW",
+          "source_id": "source-56b-eia860-2023"
+        }
+      ],
+      "reporting_breaks": [
+        "Plant and generator records can be revised in later EIA vintages; plant code 60014 is the stable identity key."
+      ],
+      "missing_data": [
+        "Track later EIA vintages, energy duration, availability, incidents, dispatch, curtailment, revenue, and grid-service performance."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "An unchanged nameplate value is not evidence of unchanged operating performance, stored energy, availability, safety, utilization, or customer benefit."
+    },
+    {
+      "panel_id": "panel-56b-gateway-battery-capacity",
+      "portfolio": "infrastructure",
+      "entity_id": "eia-plant-63834",
+      "entity_name": "Gateway Energy Storage System",
+      "entity_type": "Battery-storage generating plant",
+      "indicator": "Operating battery-generator nameplate power capacity",
+      "unit": "Megawatts",
+      "denominator": "Operating battery generators assigned to EIA plant code 63834 in each final EIA-860 vintage",
+      "period": "Calendar years 2021-2023",
+      "geography": "California, United States",
+      "method": "Sum of nameplate capacity for operating battery generators in the final annual EIA-860 generator inventory",
+      "attribution": "U.S. Energy Information Administration; FTFN plant-code aggregation",
+      "record_status": "Published",
+      "signal_id": "signal-56b-gateway-capacity-panel",
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-eia-battery-capacity"
+      ],
+      "observations": [
+        {
+          "period": "2021",
+          "value": 250,
+          "label": "250 MW",
+          "source_id": "source-56b-eia860-2021"
+        },
+        {
+          "period": "2022",
+          "value": 250,
+          "label": "250 MW",
+          "source_id": "source-56b-eia860-2022"
+        },
+        {
+          "period": "2023",
+          "value": 250,
+          "label": "250 MW",
+          "source_id": "source-56b-eia860-2023"
+        }
+      ],
+      "reporting_breaks": [
+        "Plant and generator records can be revised in later EIA vintages; plant code 63834 is the stable identity key."
+      ],
+      "missing_data": [
+        "Track later EIA vintages, energy duration, availability, incidents, dispatch, revenue, and grid-service performance."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the repeated nameplate figure without treating it as availability, utilization, safety, duration, revenue, grid service, or reliability performance."
+    },
+    {
+      "panel_id": "panel-56b-united-cancellations",
+      "portfolio": "mobility",
+      "entity_id": "dot-operating-carrier-united-airlines",
+      "entity_name": "United Airlines",
+      "entity_type": "Reporting operating air carrier",
+      "indicator": "Cancelled scheduled domestic flight operations",
+      "unit": "Percent of scheduled operations cancelled",
+      "denominator": "Scheduled domestic flight operations reported for United Airlines as an operating carrier",
+      "period": "Calendar years 2024 and 2025",
+      "geography": "United States domestic system",
+      "method": "DOT Air Travel Consumer Report Table 6C under 14 CFR Part 234",
+      "attribution": "Carrier-filed BTS data published by DOT OACP",
+      "record_status": "Published",
+      "signal_id": "signal-56b-united-cancellation-panel",
+      "source_ids": [
+        "source-56b-bts-atcr-full-year-2024",
+        "source-56b-dot-atcr-february-2026"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-air-travel-consumer"
+      ],
+      "observations": [
+        {
+          "period": "2024",
+          "value": 1.64,
+          "label": "12,478 of 760,451 scheduled operations; 1.64%",
+          "source_id": "source-56b-dot-atcr-february-2026"
+        },
+        {
+          "period": "2025",
+          "value": 0.82,
+          "label": "6,527 of 795,271 scheduled operations; 0.82%",
+          "source_id": "source-56b-dot-atcr-february-2026"
+        }
+      ],
+      "reporting_breaks": [
+        "Use only the operating-carrier row; do not mix it with the United Airlines Network marketing-carrier row."
+      ],
+      "missing_data": [
+        "Track later full-year reports, schedule mix, weather, airport exposure, completion, delays, complaints, accessibility, and revision notices."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the within-carrier change only. Do not reproduce the report's carrier ranking or infer safety, customer experience, causality, schedule quality, or network equivalence."
+    },
+    {
+      "panel_id": "panel-56b-southwest-cancellations",
+      "portfolio": "mobility",
+      "entity_id": "dot-operating-carrier-southwest-airlines",
+      "entity_name": "Southwest Airlines",
+      "entity_type": "Reporting operating air carrier",
+      "indicator": "Cancelled scheduled domestic flight operations",
+      "unit": "Percent of scheduled operations cancelled",
+      "denominator": "Scheduled domestic flight operations reported for Southwest Airlines as an operating carrier",
+      "period": "Calendar years 2024 and 2025",
+      "geography": "United States domestic system",
+      "method": "DOT Air Travel Consumer Report Table 6C under 14 CFR Part 234",
+      "attribution": "Carrier-filed BTS data published by DOT OACP",
+      "record_status": "Published",
+      "signal_id": "signal-56b-southwest-cancellation-panel",
+      "source_ids": [
+        "source-56b-bts-atcr-full-year-2024",
+        "source-56b-dot-atcr-february-2026"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-air-travel-consumer"
+      ],
+      "observations": [
+        {
+          "period": "2024",
+          "value": 0.83,
+          "label": "11,772 of 1,419,419 scheduled operations; 0.83%",
+          "source_id": "source-56b-dot-atcr-february-2026"
+        },
+        {
+          "period": "2025",
+          "value": 0.85,
+          "label": "11,799 of 1,391,885 scheduled operations; 0.85%",
+          "source_id": "source-56b-dot-atcr-february-2026"
+        }
+      ],
+      "reporting_breaks": [
+        "Two annual observations do not establish a durable trend; future carrier structure and reporting rules can change."
+      ],
+      "missing_data": [
+        "Track later full-year reports, schedule mix, weather, airport exposure, completion, delays, complaints, accessibility, and revisions."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Describe the small two-point movement without calling it a durable trend or comparing rank. Schedule mix, weather, network structure, and operating conditions remain separate."
+    },
+    {
+      "panel_id": "panel-56b-delta-cancellations",
+      "portfolio": "mobility",
+      "entity_id": "dot-operating-carrier-delta-air-lines",
+      "entity_name": "Delta Air Lines",
+      "entity_type": "Reporting operating air carrier",
+      "indicator": "Cancelled scheduled domestic flight operations",
+      "unit": "Percent of scheduled operations cancelled",
+      "denominator": "Scheduled domestic flight operations reported for Delta Air Lines as an operating carrier",
+      "period": "Calendar years 2024 and 2025",
+      "geography": "United States domestic system",
+      "method": "DOT Air Travel Consumer Report Table 6C under 14 CFR Part 234",
+      "attribution": "Carrier-filed BTS data published by DOT OACP",
+      "record_status": "Published",
+      "signal_id": "signal-56b-delta-cancellation-panel",
+      "source_ids": [
+        "source-56b-bts-atcr-full-year-2024",
+        "source-56b-dot-atcr-february-2026"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-air-travel-consumer"
+      ],
+      "observations": [
+        {
+          "period": "2024",
+          "value": 0.91,
+          "label": "9,147 of 1,009,194 scheduled operations; 0.91%",
+          "source_id": "source-56b-dot-atcr-february-2026"
+        },
+        {
+          "period": "2025",
+          "value": 1.08,
+          "label": "11,114 of 1,026,332 scheduled operations; 1.08%",
+          "source_id": "source-56b-dot-atcr-february-2026"
+        }
+      ],
+      "reporting_breaks": [
+        "Use only the operating-carrier row; do not mix it with the Delta Air Lines Network marketing-carrier row."
+      ],
+      "missing_data": [
+        "Track later full-year reports, schedule mix, weather, airport exposure, completion, delays, complaints, accessibility, and revisions."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the within-carrier movement only. Do not reproduce a rank or infer safety, service quality, causality, network equivalence, or a durable trend from two points."
+    }
+  ]
+}
