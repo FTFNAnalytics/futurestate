@@ -155,6 +155,7 @@ What is now stable:
 - Phase 56F local content commit `e19f6dc3f45dfcbd362091c066c74e3416e9ed43` matches exact private source projection `2446245cbbea3d80739f5d732977948d62a2d940`, deployed as owner-only Sites version 31 in deployment `appgdep_6a6445cf1f3481919cec4feac642f9df` with one allowed owner and no groups.
 - Phase 56G checks all seven Open rails, moves Dalrymple to Partially Closed, retains six exact records as Open, adds seven source profiles, seven acquisition documents, one Published signal, one held synthesis, Research Watch 011, one collection, two machine-readable ledgers, and a verified 10-file archive.
 - The verified Phase 56G local contract is 1,267 pages, 523 sources, 267 signals, 204 Published signals, 63 In Review signals, 322 current Published-support sources, nineteen briefings, seven maps, sixteen research collections, 355 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 35 updates, and five public-data exports.
+- Phase 56G local content commit `b726544c37e8df5f4ad219f7531f545c9cd5672e` matches exact private source projection `b9b5734b7d5c52d0017b1fa973df462f4ef27ca4`, deployed as owner-only Sites version 32 in deployment `appgdep_6a644c6b7b748191919a3a25ad6dcbf3` with one allowed owner and no groups.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 321 current Published-support sources are governed by the same current-source release assertion.
@@ -176,7 +177,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only access and continue with Phase 56H open-rail acquisition batch three and partial-closure deepening. Phase 56G is complete locally and release-verified: all seven Open rails received a dated named-source check, Dalrymple moved to Partially Closed, and six exact records remain Open. Continue those six rails while beginning the seventeen Partially Closed decisions in evidence-value order. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only access and continue with Phase 56H open-rail acquisition batch three and partial-closure deepening. Phase 56G is complete, release-verified, and owner-only deployed: all seven Open rails received a dated named-source check, Dalrymple moved to Partially Closed, and six exact records remain Open. Continue those six rails while beginning the seventeen Partially Closed decisions in evidence-value order. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 

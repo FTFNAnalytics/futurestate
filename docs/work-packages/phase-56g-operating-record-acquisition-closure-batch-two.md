@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: complete locally; owner-only deployment pending
+Status: complete and owner-only deployed
 
 ## Goal
 
@@ -89,6 +89,15 @@ Archive:
 - files: 10;
 - official-link records: 7;
 - SHA-256: `0EF159C4032A05E4DD9941E1A089616F67D11389D89A10C9BF335B6FAA06D2E7`.
+
+Deployment:
+
+- local content commit: `b726544c37e8df5f4ad219f7531f545c9cd5672e`;
+- exact private Sites source projection: `b9b5734b7d5c52d0017b1fa973df462f4ef27ca4`;
+- owner-only Sites version: 32;
+- deployment ID: `appgdep_6a644c6b7b748191919a3a25ad6dcbf3`;
+- access: custom policy with one allowed owner and no groups;
+- public access, DNS, custom-domain, public GitHub, package, and release-freeze state: unchanged.
 
 ## Publication Boundary
 

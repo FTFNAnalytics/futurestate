@@ -2680,3 +2680,35 @@ Deployment receipt:
 Boundary:
 
 Closed, Partially Closed, and Open are evidence states for one selected question. They do not measure performance, readiness, quality, safety, value, or comparative standing. Missing disclosure is not failure, and a current context record is not automatically an operating outcome. No causal effect, ranking, completeness score, composite score, readiness score, or unsupported cross-entity comparison is authorized. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.
+
+## 2026-07-24: Phase 56G Advances One Exact Rail And Preserves Six Open Records
+
+Decision:
+
+Run every Phase 56F Open reopening rule against a current named source, move closure state only when the selected question gains a later compatible record, and preserve all unavailable exact records as Open with dated continuation rules.
+
+Rationale:
+
+The acquisition queue should reward evidence gain without substituting nearby context for a missing annual, monthly, interval, investigation, restoration, or annual-operation record. Dalrymple gained a later asset-specific islanding-control record; the other six rails gained sharper boundaries but not their selected records.
+
+Implemented:
+
+- seven named source checks tied to the existing Phase 56F coverage IDs and reopening rules;
+- one Open-to-Partially-Closed transition for Dalrymple and six retained Open decisions;
+- seven source profiles and seven acquisition documents;
+- one Published bounded signal and one held continuation synthesis;
+- Research Watch 011, one collection, one public update, two machine-readable ledgers, and a verified 10-file archive;
+- integration across five topics, five pathways, six entity-layer ledgers, and the comparison protocol;
+- a verified local 1,267-page, 523-source, 267-signal contract with 204 Published, 63 In Review, 35 updates, sixteen collections, 355 documents, and 322 current Published-support sources;
+- Phase 56H selected as the next content gate for the six Open rails and evidence-value deepening of the seventeen Partially Closed records.
+
+Deployment receipt:
+
+- local content commit `b726544c37e8df5f4ad219f7531f545c9cd5672e`;
+- exact private Sites source projection `b9b5734b7d5c52d0017b1fa973df462f4ef27ca4`;
+- owner-only Sites version 32 in deployment `appgdep_6a644c6b7b748191919a3a25ad6dcbf3`;
+- custom access confirmed with one allowed owner and no groups.
+
+Boundary:
+
+A current index, governance audit, cumulative fleet total, capacity filing, interconnection-queue entry, or historical interval extract cannot substitute for the selected exact operating or closure record. Missing disclosure is not failure. No causal effect, ranking, completeness score, composite score, readiness score, or unsupported cross-entity comparison is authorized. Public GitHub synchronization, package freeze, public access, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.

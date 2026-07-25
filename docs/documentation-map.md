@@ -1548,7 +1548,7 @@ Purpose:
 - Record the completed Phase 56D twelve-test collection, sixteen signal decisions, 27-file archive, Research Watch 008, compatibility and attribution contract, six explicit holds, and Phase 56E handoff.
 - Record the completed Phase 56E second cohort, twelve panels, twelve dossiers, twelve tests, forty signal decisions, 51-file archive, Research Watch 009, four portfolio holds, and Phase 56F handoff.
 - Record the completed Phase 56F 24-entity coverage ledger, fourteen source profiles, 24 coverage documents, five signal decisions, 27-file archive, Research Watch 010, closure states, reopening rules, and Phase 56G handoff.
-- Record the completed Phase 56G seven-record acquisition batch, one Open-to-Partially-Closed transition, two signal decisions, 10-file archive, Research Watch 011, continuation rules, and Phase 56H handoff.
+- Record the completed Phase 56G seven-record acquisition batch, one Open-to-Partially-Closed transition, two signal decisions, 10-file archive, Research Watch 011, owner-only deployment receipt, continuation rules, and Phase 56H handoff.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 
@@ -1569,7 +1569,7 @@ Primary file:
 - `docs/work-packages/phase-56d-repeat-outcomes-alternative-explanation-tests.md` for the completed twelve-test build, sixteen publication decisions, compatibility, attribution, closure, no-ranking, and no-causation contract, archive contract, validation evidence, and Phase 56E handoff
 - `docs/work-packages/phase-56e-second-entity-cohort-vertical-replication.md` for the completed twelve-entity screen, 36 vertical entity layers, forty publication decisions, stable-identity, attribution, compatibility, no-ranking, and no-causation contract, archive contract, validation evidence, and Phase 56F handoff
 - `docs/work-packages/phase-56f-cross-cohort-coverage-missing-record-closure.md` for the completed 24-entity coverage program, one-record priority, closure-state and reopening-rule contract, five publication decisions, archive contract, validation evidence, and Phase 56G handoff
-- `docs/work-packages/phase-56g-operating-record-acquisition-closure-batch-two.md` for the completed seven-rail acquisition pass, one bounded closure transition, dated continuation rules, two publication decisions, archive contract, validation evidence, and Phase 56H handoff
+- `docs/work-packages/phase-56g-operating-record-acquisition-closure-batch-two.md` for the completed seven-rail acquisition pass, one bounded closure transition, dated continuation rules, two publication decisions, archive contract, validation and deployment evidence, and Phase 56H handoff
 
 Update when:
 
