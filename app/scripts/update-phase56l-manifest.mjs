@@ -162,6 +162,8 @@ manifest.known_limitations = manifest.known_limitations.filter(
       "Sixty-six signals, seven briefings, and one dependency map remain In Review",
       "The Phase 56K download contains",
       "Phase 56K changes no evidence state",
+      "The Phase 56L download contains",
+      "Phase 56L changes no evidence state",
     ].some((prefix) => item.startsWith(prefix)),
 );
 manifest.known_limitations.unshift(

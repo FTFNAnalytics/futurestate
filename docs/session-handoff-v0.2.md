@@ -7,7 +7,7 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 56L realized-outcome continuation batch one (local validation complete; deployment pending)
+Latest completed work: Phase 56L realized-outcome continuation batch one
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
@@ -17,7 +17,7 @@ Content: 547 sources, 285 signals, 17 topics, 5 local systems, 21 research colle
 Publication: 219 Published signals, 66 In Review signals, 17 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
 Trust/data: 40 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, 15-file, 8-file, 10-file, and 6-file research archives
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 36 remains the active hosted Phase 56K checkpoint while the validated Phase 56L runtime awaits deployment; one allowed owner and no groups
+Deployment: owner-only Sites version 37 is the active hosted Phase 56L checkpoint; local content commit b20723b0f8ef52c0c927f46d3a50988fef461842 maps to exact private runtime commit 20dab10a2836a39486143a5107800d8b1c7c1382 and deployment appgdep_6a650c92d0988191a1075a3b1284222a; one allowed owner and no groups
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 369 Manual Review, 178 Probe Ready; 14 Strong coverage lanes
 Next content gate: Phase 56M federal remediation and outcome continuation; six dated inserts remain scheduled
@@ -125,6 +125,8 @@ The approved preview sequence is complete:
 70. Matched local content commit `2760edee242f398850dcc9ef2aa7660830caf9af` to exact private packaged source commit `41497faeebdb1d15b4fa26ceb05d5e3b7300bea5`, deployed the verified Phase 56I package as owner-only Sites version 34 in deployment `appgdep_6a646c5539708191a598952968b74f53`, and confirmed custom access with one allowed owner and no groups.
 71. Completed Phase 56J locally: ordered all twenty original Partially Closed continuation rules, continued the three Open rails, acquired five current primary records, moved only Manatee to Partially Closed, added five source profiles, five research documents, five signal decisions, Research Watch 014, two machine-readable ledgers, one collection, and an eight-file archive. Verified 1,336 pages, 542 sources, 280 signals, 214 Published, 66 In Review, 38 updates, nineteen collections, 386 research documents, and 332 current Published-support sources.
 72. Matched local content commit `ed8da2a25ef596a9c69df21755d4621e7aa09f50` to exact private runtime commit `12a46d051e6f4f4e5019f005e468da2d62511a16`, deployed the verified Phase 56J package as owner-only Sites version 35 in deployment `appgdep_6a64756ecb9c8191866b692f25b82ad0`, and confirmed custom access with one allowed owner and no groups.
+73. Completed Phase 56L locally: checked Current Applications, Island Components, and Monaghan Medical; published two certified reported-employment outcomes; retained one exact repeat-series non-closure; added two source profiles, three research documents, two signals, Research Watch 016, two machine-readable ledgers, one collection, and a six-file archive. Verified 1,360 pages, 547 sources, 285 signals, 219 Published, 66 In Review, 40 updates, twenty-one collections, 396 research documents, and 337 current Published-support sources.
+74. Matched local content commit `b20723b0f8ef52c0c927f46d3a50988fef461842` to exact private runtime commit `20dab10a2836a39486143a5107800d8b1c7c1382`, deployed the verified Phase 56L package as owner-only Sites version 37 in deployment `appgdep_6a650c92d0988191a1075a3b1284222a`, and confirmed custom access with one allowed owner and no groups.
 
 ## Required Stop Points
 
