@@ -85,7 +85,29 @@
       "phase_56h_reopening_rule": "Reopen when NASA OIG publishes the FY 2026 FISMA evaluation or recommendation-level cyber closure data with tested-system scope.",
       "phase_56j_queue_lane": "B — periodic official record rails",
       "phase_56j_acquisition_order": 10,
-      "phase_56j_named_next_record": "FY 2026 FISMA result or recommendation-level cyber closure"
+      "phase_56j_named_next_record": "FY 2026 FISMA result or recommendation-level cyber closure",
+      "phase_56m_coverage_decision": {
+        "coverage_id": "coverage-56f-nasa",
+        "entity_id": "agency-nasa",
+        "entity_name": "National Aeronautics and Space Administration",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-25-108138 recommendations 1-16 all remain Open under status notes current through May 2026.",
+        "decision": "Publish the exact non-closure because it resolves all sixteen action identities and statuses without implying implementation.",
+        "reopening_rule": "Reopen when GAO changes any GAO-25-108138 recommendation to implemented or closed, or NASA OIG publishes the FY 2026 FISMA evaluation with tested-system scope."
+      },
+      "phase_56m_records": [
+        {
+          "record_id": "record-56m-nasa-gao-risk-management-recommendation-status",
+          "entity_id": "agency-nasa",
+          "exact_record": "GAO-25-108138 recommendations 1-16",
+          "tested_or_status_period": "GAO recommendation status current through May 2026",
+          "finding": "GAO lists all 16 recommendations from GAO-25-108138 as Open. The set spans organization-wide risk assessment, system impact levels, control-baseline oversight, critical-control assessment documentation, remediation plans, authorization-package quality control, and continuous-monitoring guidance.",
+          "decision": "Retain Partially Closed. Exact recommendation identity and May 2026 status now publish as a bounded non-closure; no recommendation in this set is reported implemented or closed.",
+          "source_id": "source-56d-nasa-gao-risk-management-2025",
+          "reopening_rule": "Reopen when GAO changes any GAO-25-108138 recommendation to implemented or closed, or NASA OIG publishes the FY 2026 FISMA evaluation with tested-system scope."
+        }
+      ]
     },
     {
       "dossier_id": "dossier-56c-dhs-cyber-controls",
@@ -281,7 +303,39 @@
       "phase_56h_reopening_rule": "Reopen when the HHS OIG tracker changes a FY 2025 recommendation status or a component control test is published.",
       "phase_56j_queue_lane": "B — periodic official record rails",
       "phase_56j_acquisition_order": 11,
-      "phase_56j_named_next_record": "FY 2025 recommendation status change or component control test"
+      "phase_56j_named_next_record": "FY 2025 recommendation status change or component control test",
+      "phase_56m_coverage_decision": {
+        "coverage_id": "coverage-56f-hhs",
+        "entity_id": "agency-hhs",
+        "entity_name": "Department of Health and Human Services",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "Two HHS OIG component tests now publish: one selected hospital has four Open Unimplemented actions, while another selected hospital had an effective tested result and no recommendations.",
+        "decision": "Publish both component tests, keep their anonymous entities and periods separate, and retain the department-level Partially Closed state.",
+        "reopening_rule": "Reopen when a named HHS recommendation changes status, a compatible component retest publishes, or department-level closure evidence becomes available."
+      },
+      "phase_56m_records": [
+        {
+          "record_id": "record-56m-hhs-large-hospital-cyber-control-test",
+          "entity_id": "provider-hhs-oig-large-southeastern-hospital-a-18-22-08021",
+          "exact_record": "A-18-22-08021; tracker actions 26-A-18-035.01 through .04",
+          "tested_or_status_period": "Four internet-facing web applications tested August-September 2022",
+          "finding": "HHS OIG found that the hospital had continuity, backup, incident-response, and disaster-recovery controls and prevented or detected most simulated attacks. Testing also exposed weak authentication in one account-management application and weak input validation without adequate web-application-firewall protection in another. Four associated tracker actions are Open Unimplemented, with the next update expected July 29, 2026.",
+          "decision": "Retain Partially Closed at the HHS coverage level. The component test satisfies the missing-record rule and publishes with four exact open actions; it does not establish department-wide remediation or current hospital control operation.",
+          "source_id": "source-56m-hhs-large-hospital-cyber-controls-2026",
+          "reopening_rule": "Reopen after the expected July 29, 2026 tracker update if any of the four actions changes status, or when HHS OIG publishes a compatible follow-up test."
+        },
+        {
+          "record_id": "record-56m-hhs-small-hospital-effective-cyber-control-test",
+          "entity_id": "provider-hhs-oig-small-southeastern-hospital-oas-25-18-033",
+          "exact_record": "OAS-25-18-033; no recommendations",
+          "tested_or_status_period": "Four public-facing websites tested in June 2025",
+          "finding": "HHS OIG reported that the hospital detected and prevented simulated attacks against the selected systems. The audit also documented incident-response procedures, continuous monitoring, twice-yearly contingency-plan tests, nightly off-site replicated backups tested at least monthly, and quarterly disaster-recovery exercises. OIG made no recommendations.",
+          "decision": "Retain Partially Closed at the HHS coverage level. This is a positive component control test with an exact no-recommendation result, not evidence of department-wide effectiveness or a closed FY 2025 FISMA recommendation.",
+          "source_id": "source-56m-hhs-small-hospital-cyber-controls-2026",
+          "reopening_rule": "Reopen when HHS OIG publishes a compatible repeat test, a named incident or recovery outcome, or recommendation-level department remediation."
+        }
+      ]
     },
     {
       "dossier_id": "dossier-56c-current-applications-drivers",
@@ -1161,5 +1215,6 @@
   "phase_56i_acquisition_ledger": "phase-56i-remaining-rails-first-pass.json",
   "phase_56j_acquisition_ledger": "phase-56j-evidence-value-continuation.json",
   "phase_56k_acquisition_ledger": "phase-56k-exact-record-continuation.json",
-  "phase_56l_acquisition_ledger": "phase-56l-realized-outcome-continuation.json"
+  "phase_56l_acquisition_ledger": "phase-56l-realized-outcome-continuation.json",
+  "phase_56m_continuation_ledger": "phase-56m-federal-remediation-outcomes.json"
 }

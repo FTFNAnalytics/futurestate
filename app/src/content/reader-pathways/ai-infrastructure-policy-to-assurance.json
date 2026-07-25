@@ -35,7 +35,9 @@
     "Phase 56J adds 1 named continuation decision to this pathway under the ordered evidence-value queue.",
     "Acquisition order describes evidence opportunity and does not rank entities, performance, safety, quality, readiness, or value.",
     "Phase 56K checks 3 exact named records in this pathway and preserves explicit non-closures.",
-    "An exact-record check can improve the evidence rail without changing the selected closure state."
+    "An exact-record check can improve the evidence rail without changing the selected closure state.",
+    "Phase 56M adds an exact sixteen-action NASA non-closure and two bounded HHS provider control tests.",
+    "Open, implemented, closed, tested-effective, and no-recommendation states remain distinct."
   ],
   "primary_topics": [
     "AI for Science",
@@ -85,7 +87,10 @@
     "signal-56e-dot-information-security-alternative-test",
     "signal-56f-ai-cyber-coverage-closure",
     "signal-56h-doe-fy2025-cyber-result",
-    "signal-56k-va-ifams-recommendations-open"
+    "signal-56k-va-ifams-recommendations-open",
+    "signal-56m-nasa-gao-sixteen-open-recommendations",
+    "signal-56m-hhs-large-hospital-open-cyber-actions",
+    "signal-56m-hhs-small-hospital-effective-cyber-test"
   ],
   "source_ids": [
     "source-fy2027-rd-priorities-m-25-34",
@@ -165,7 +170,9 @@
     "source-56h-va-ifams-access-controls-2026",
     "source-56h-dot-recommendation-dashboard-2026",
     "source-56j-doe-ferc-fisma-scope-2026",
-    "source-56k-va-ifams-recommendation-status-2026"
+    "source-56k-va-ifams-recommendation-status-2026",
+    "source-56m-hhs-large-hospital-cyber-controls-2026",
+    "source-56m-hhs-small-hospital-cyber-controls-2026"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -187,7 +194,8 @@
     "briefing-research-watch-012-acquisition-and-deepening",
     "briefing-research-watch-013-first-pass-completion",
     "briefing-research-watch-014-evidence-value-continuation",
-    "briefing-research-watch-015-exact-record-continuation"
+    "briefing-research-watch-015-exact-record-continuation",
+    "briefing-research-watch-017-federal-remediation-outcomes"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -208,7 +216,8 @@
     "research-collection-open-rail-acquisition-partial-closure-deepening-2026",
     "research-collection-remaining-open-rails-partial-closure-first-pass-2026",
     "research-collection-evidence-value-continuation-queue-batch-one-2026",
-    "research-collection-exact-record-continuation-batch-two-2026"
+    "research-collection-exact-record-continuation-batch-two-2026",
+    "research-collection-federal-remediation-outcomes-batch-one-2026"
   ],
   "evidence_gap_ids": [
     "gap-008",
@@ -296,6 +305,11 @@
       "stage": "Phase 56K exact-record continuation",
       "current_state": "Seven named records are checked; three bounded observations publish, four exact non-closures are recorded, and no evidence state changes.",
       "boundary": "A response filing, recommendation icon, arrival date, index check, audit catalog, fleet report, or audit initiation is not a differently scoped final result."
+    },
+    {
+      "stage": "Phase 56M federal remediation and outcomes",
+      "current_state": "NASA has sixteen exact open GAO actions; two anonymous HHS provider tests publish with distinct findings, scopes, and periods.",
+      "boundary": "Selected provider tests do not establish department or sector performance, and open status does not establish severity or operational failure."
     }
   ],
   "evidence_limits": [
@@ -319,7 +333,8 @@
     "Phase 56H closure and deepening states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
     "Phase 56I first-pass and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
     "Phase 56J acquisition order and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
-    "Phase 56K exact-record decisions cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims."
+    "Phase 56K exact-record decisions cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
+    "Phase 56M records cannot be converted into agency or provider rankings, readiness scores, value scores, or causal claims."
   ],
   "next_records": [
     "Later ARIA rounds, sector-specific evaluations, method-validation studies, and full AI TEVV drafts.",
@@ -347,6 +362,8 @@
     "Reopen when DOT OIG publishes the FY 2026 quality-control review or a dated recommendation closure.",
     "Reopen when DOE OIG publishes the department-wide FY 2025 FISMA evaluation, a dated official status for that review, or finding-level remediation with department scope.",
     "Reopen when VA OIG changes a recommendation to Closed-Implemented or publishes a later department-wide FISMA result.",
-    "Reopen when DOT OIG publishes the FY 2026 result or a dated recommendation-status change."
+    "Reopen when DOT OIG publishes the FY 2026 result or a dated recommendation-status change.",
+    "Reopen when GAO changes any GAO-25-108138 recommendation to implemented or closed, or NASA OIG publishes the FY 2026 FISMA evaluation with tested-system scope.",
+    "Reopen when a named HHS recommendation changes status, a compatible component retest publishes, or department-level closure evidence becomes available."
   ]
 }

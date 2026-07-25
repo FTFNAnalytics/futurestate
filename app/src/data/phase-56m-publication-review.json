@@ -1,0 +1,29 @@
+{
+  "phase": "56M",
+  "reviewed_date": "2026-07-25",
+  "exact_records_checked": 3,
+  "coverage_decisions": 2,
+  "new_source_profiles": 2,
+  "reused_source_profiles": 1,
+  "document_decisions": {
+    "reviewed": 3,
+    "promoted": [
+      "research-doc-56m-nasa-gao-risk-management-recommendation-status",
+      "research-doc-56m-hhs-large-hospital-cyber-control-test",
+      "research-doc-56m-hhs-small-hospital-effective-cyber-control-test"
+    ],
+    "held": []
+  },
+  "signal_decisions": {
+    "reviewed": 3,
+    "promoted": [
+      "signal-56m-nasa-gao-sixteen-open-recommendations",
+      "signal-56m-hhs-large-hospital-open-cyber-actions",
+      "signal-56m-hhs-small-hospital-effective-cyber-test"
+    ],
+    "held": []
+  },
+  "closure_decision": "No evidence-state changes. NASA gains an exact sixteen-action non-closure; HHS gains two bounded component control tests with distinct periods and results.",
+  "substitution_rule": "Open is not implemented or closed; no recommendation is not agency closure; one provider test is not a department or sector result.",
+  "comparison_rule": "The two anonymous hospital audits use different entities, test periods, frameworks, and scopes and do not support ranking or comparative performance claims."
+}
