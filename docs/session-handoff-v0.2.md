@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 56J evidence-value continuation queue batch one
+Latest completed work: Phase 56K exact-record continuation batch two (local validation complete; deployment pending)
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 1,336 generated site pages
-Content: 542 sources, 280 signals, 17 topics, 5 local systems, 19 research collections / 386 research documents
-Publication: 214 Published signals, 66 In Review signals, 15 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
-Trust/data: 38 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, 15-file, and 8-file research archives
+Build: 1,351 generated site pages
+Content: 545 sources, 283 signals, 17 topics, 5 local systems, 20 research collections / 393 research documents
+Publication: 217 Published signals, 66 In Review signals, 16 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
+Trust/data: 39 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, 15-file, 8-file, and 10-file research archives
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 35 is the active hosted Phase 56J checkpoint; one allowed owner and no groups
+Deployment: owner-only Sites version 35 remains the active hosted Phase 56J checkpoint while the validated Phase 56K runtime awaits deployment; one allowed owner and no groups
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 367 Manual Review, 175 Probe Ready; 14 Strong coverage lanes
-Next content gate: Phase 56K high-value continuation batch two; six dated inserts remain scheduled
+Source health: 369 Manual Review, 176 Probe Ready; 14 Strong coverage lanes
+Next content gate: Phase 56L realized-outcome continuation; six dated inserts remain scheduled
 ```
 
 ## Read First

@@ -1090,7 +1090,7 @@ Local result:
 - the evidence ledger now stands at one Closed, twenty-one Partially Closed, and two Open;
 - local content commit `ed8da2a25ef596a9c69df21755d4621e7aa09f50` produced exact private runtime commit `12a46d051e6f4f4e5019f005e468da2d62511a16`, deployed as owner-only Sites version 35 in deployment `appgdep_6a64756ecb9c8191866b692f25b82ad0` with one allowed owner and no groups.
 
-### Phase 56K: High-Value Continuation Batch Two - Current Content Gate
+### Phase 56K: Exact-Record Continuation Batch Two - Complete Locally
 
 Goal: continue the two exact Open rails and acquire the next current A-band records whose denominators can materially improve evidence state.
 
@@ -1109,6 +1109,39 @@ Exit criteria:
 - every acquisition is tied to its existing coverage ID and reopening rule;
 - closure changes use the exact selected record under a declared compatible denominator;
 - component, plan, event, annual, and adjacent records are not substituted for the selected evidence question;
+- no ranking, composite, readiness score, or causal claim is created;
+- the full local release and owner-only deployment gates pass.
+
+Local result:
+
+- seven exact named records were checked across DHS, Gateway, Moss Landing, VA, F-35 Fort Worth, F-15EX St. Louis, and DOT;
+- the Moss Landing filing supplies a 28-finding conventional-plant corrective-action denominator but does not close the battery-fire investigation;
+- VA OIG still marks all three iFAMS access-control recommendations Open;
+- the 142nd Wing fixes EX16's realized Portland receipt date at December 11, 2025 without supplying formal contractual acceptance;
+- DHS, Gateway, F-35, and DOT receive explicit non-closure decisions rather than adjacent-record substitutions;
+- three source profiles, seven research documents, three Published signals, Research Watch 015, one collection, one update, two machine-readable ledgers, and a ten-file archive pass the 1,351-page local release contract;
+- the evidence ledger remains one Closed, twenty-one Partially Closed, and two Open;
+- owner-only deployment remains pending at this local checkpoint.
+
+### Phase 56L: Realized-Outcome Continuation - Current Content Gate
+
+Goal: continue unresolved exact official rails while opening the next named realized-outcome records that do not depend on a shared full-year release.
+
+Priority rails:
+
+- ingest any newly published DHS, Gateway, Moss Landing, VA, F-35, F-15EX, or DOT exact record under the existing reopening rule;
+- pursue a compatible repeat same-line input and output record for Current Applications;
+- pursue realized Hauppauge jobs, investment, or repeat operating output for Island Components Group;
+- pursue certified investment, realized jobs, or compatible unit output for Monaghan Medical;
+- continue NASA and HHS recommendation-level records as bounded official inserts;
+- preserve the six-carrier full-year gate for records that genuinely require the completed 2026 denominator.
+
+Exit criteria:
+
+- every acquisition remains tied to the stable entity and coverage ID;
+- commitments, targets, awards, starts, completions, deliveries, acceptances, and operating outcomes remain distinct;
+- a realized-outcome promotion requires a named official record and compatible unit and period;
+- exact non-closures are retained without becoming signals unless they materially improve reader value;
 - no ranking, composite, readiness score, or causal claim is created;
 - the full local release and owner-only deployment gates pass.
 
@@ -1222,7 +1255,7 @@ The v0.2 build and publication thresholds pass in the current candidate. Phase 5
 
 ## Immediate Next Step
 
-Begin Phase 56F with a cross-cohort coverage ledger for all 24 named entities. Identify the strongest compatible closure or outcome already present and the single highest-value missing record for each entity. Open bounded batches by portfolio, beginning with records that expose agency control operation, line-level inputs and accepted output, battery availability and dispatch, or carrier service-delivery denominators. Do not add broad context where the missing requirement is a specific operating record.
+Begin Phase 56L with the three named realized-outcome manufacturer rails: Current Applications, Island Components Group, and Monaghan Medical. Continue the seven Phase 56K official rails in parallel, but only ingest a new exact record when it meets the existing reopening rule. Keep the shared 2026 carrier release gate intact and do not pause content expansion while those full-year denominators mature.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 

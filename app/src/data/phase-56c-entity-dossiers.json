@@ -186,7 +186,17 @@
       "phase_56i_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome.",
       "phase_56j_queue_lane": "Open rail",
       "phase_56j_acquisition_order": null,
-      "phase_56j_named_next_record": "Released FY 2025 enterprise FISMA evaluation"
+      "phase_56j_named_next_record": "Released FY 2025 enterprise FISMA evaluation",
+      "phase_56k_acquisition_id": "acquisition-56k-dhs-fy2025-enterprise-fisma-status",
+      "phase_56k_named_record": "Released FY 2025 enterprise FISMA evaluation",
+      "phase_56k_checked_source_id": "source-56g-dhs-oig-report-index-july-2026",
+      "phase_56k_checked_date": "2026-07-25",
+      "phase_56k_prior_closure_status": "Open",
+      "phase_56k_current_closure_status": "Open",
+      "phase_56k_acquisition_result": "The current DHS OIG public report index does not expose a final FY 2025 enterprise FISMA evaluation. Previously captured component and vulnerability-management records remain adjacent evidence and do not replace the named enterprise result.",
+      "phase_56k_decision": "Retain Open. No exact enterprise-wide FY 2025 evaluation or dated replacement outcome was identified on the authoritative public rail.",
+      "phase_56k_remaining_gap": "Final FY 2025 DHS enterprise FISMA evaluation, finding-level results, remediation status, incidents, recovery, and mission effects.",
+      "phase_56k_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome."
     },
     {
       "dossier_id": "dossier-56c-hhs-cyber-controls",
@@ -617,7 +627,17 @@
       "phase_56h_reopening_rule": "Reopen when CPUC publishes the formal investigation or audit report, facility response, or closure notice.",
       "phase_56j_queue_lane": "A — current official record rails",
       "phase_56j_acquisition_order": 1,
-      "phase_56j_named_next_record": "Final regulator investigation and corrective-action closure"
+      "phase_56j_named_next_record": "Final regulator investigation and corrective-action closure",
+      "phase_56k_acquisition_id": "acquisition-56k-moss-landing-plant-corrective-action-status",
+      "phase_56k_named_record": "Final regulator investigation and corrective-action closure",
+      "phase_56k_checked_source_id": "source-56k-moss-landing-go167-corrective-action-2025",
+      "phase_56k_checked_date": "2026-07-25",
+      "phase_56k_prior_closure_status": "Partially Closed",
+      "phase_56k_current_closure_status": "Partially Closed",
+      "phase_56k_acquisition_result": "The posted response addresses 28 conventional plant-audit findings: 13 are labeled Complete and 15 In progress. The filing is a company corrective-action response to a March 2025 GO 167 generation audit; it is not a final regulator determination and not the final investigation of the January 2025 battery fire.",
+      "phase_56k_decision": "Retain Partially Closed. The record adds a finding-level corrective-action denominator but does not close the selected battery-incident investigation or prove regulator acceptance of the company's status labels.",
+      "phase_56k_remaining_gap": "Final battery-incident findings, regulator-verified corrective-action closure, restored operation, availability, safety performance, and customer or grid outcomes.",
+      "phase_56k_reopening_rule": "Reopen when CPUC or another competent regulator publishes final January 2025 incident findings or verifies closure of the relevant corrective actions."
     },
     {
       "dossier_id": "dossier-56c-manatee-constraints",
@@ -829,7 +849,17 @@
       "phase_56i_reopening_rule": "Reopen when CPUC, EPA, CAISO, SCE, or the operator publishes final findings or a full-capacity operating record.",
       "phase_56j_queue_lane": "Open rail",
       "phase_56j_acquisition_order": null,
-      "phase_56j_named_next_record": "Final investigation and full contracted-capacity restoration"
+      "phase_56j_named_next_record": "Final investigation and full contracted-capacity restoration",
+      "phase_56k_acquisition_id": "acquisition-56k-gateway-final-investigation-restoration-status",
+      "phase_56k_named_record": "Final investigation and full contracted-capacity restoration",
+      "phase_56k_checked_source_id": "source-56h-gateway-cpuc-go167-catalog-2026",
+      "phase_56k_checked_date": "2026-07-25",
+      "phase_56k_prior_closure_status": "Open",
+      "phase_56k_current_closure_status": "Open",
+      "phase_56k_acquisition_result": "The current CPUC catalog retains Gateway's June 2025 audit and response, while Resolution E-5428 continues to describe ongoing investigations and phased future module additions. No final incident finding or full contracted-capacity operating record is published on this rail.",
+      "phase_56k_decision": "Retain Open. The audit-response pair and phased restoration plan are relevant but do not satisfy the selected final-finding and full-restoration record.",
+      "phase_56k_remaining_gap": "Final investigation findings, corrective-action closure, restored contracted capacity, dispatch, availability, and customer or grid outcomes.",
+      "phase_56k_reopening_rule": "Reopen when CPUC, EPA, CAISO, SCE, or the operator publishes final findings or a full-capacity operating record."
     },
     {
       "dossier_id": "dossier-56c-united-service-constraints",
@@ -1099,5 +1129,6 @@
   "phase_56g_acquisition_ledger": "phase-56g-operating-record-acquisition.json",
   "phase_56h_acquisition_ledger": "phase-56h-acquisition-and-deepening.json",
   "phase_56i_acquisition_ledger": "phase-56i-remaining-rails-first-pass.json",
-  "phase_56j_acquisition_ledger": "phase-56j-evidence-value-continuation.json"
+  "phase_56j_acquisition_ledger": "phase-56j-evidence-value-continuation.json",
+  "phase_56k_acquisition_ledger": "phase-56k-exact-record-continuation.json"
 }

@@ -37,7 +37,7 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 698
+static pages generated: 1,351
 current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
@@ -51,7 +51,7 @@ App routes currently include:
 - Atlas landing page,
 - topic index and detail pages,
 - source index and detail pages,
-- research collection index, seven collection details, and 107 document detail pages,
+- research collection index, twenty collection details, and 393 document detail pages,
 - organization index and detail pages,
 - technology index and detail pages,
 - local system index and detail pages,
@@ -137,6 +137,8 @@ What is now stable:
 - Phase 55Z adds 32 primary outcome records, 30 source profiles, sixteen bounded signals, a 35-file archive, Research Watch 004, evidence gap `gap-016`, a Published comparison-boundary map, and integrations across eleven topics, eight pathways, and seven existing gaps.
 - The verified Phase 55Z contract is 780 pages, 357 sources, 152 signals, 113 Published signals, 39 In Review signals, 166 current Published-support sources, twelve briefings, seven maps, nine research collections, 163 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 28 updates, and five public-data exports. Twelve signals and 28 document summaries publish; four signals and four documents retain explicit denominator or comparability holds.
 - Phase 55Z local app commit `db18ef9` matches private source commit `2f1c2e6d07f24a75a80d0fb83bab123b38fa2fbf`, deployed from the verified 780-page package as owner-only Sites version 25 with one allowed owner and no groups.
+- Phase 56K checks seven exact continuation records across DHS, Gateway, Moss Landing, VA, F-35, F-15EX, and DOT. Three bounded signals publish, four exact non-closure documents remain `In Review`, and the evidence ledger remains one Closed, twenty-one Partially Closed, and two Open.
+- The verified Phase 56K local contract is 1,351 pages, 545 sources, 283 signals, 217 Published signals, 66 In Review signals, 335 current Published-support sources, twenty-three briefings, twenty research collections, 393 research documents, 39 updates, and a ten-file collection archive. Owner-only deployment is pending.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.

@@ -53,7 +53,17 @@
       "phase_56h_reopening_rule": "Reopen when VA OIG publishes the FY 2025 FISMA audit or closes the named iFAMS recommendations.",
       "phase_56j_queue_lane": "A — current official record rails",
       "phase_56j_acquisition_order": 6,
-      "phase_56j_named_next_record": "FY 2025 FISMA result or iFAMS recommendation closure"
+      "phase_56j_named_next_record": "FY 2025 FISMA result or iFAMS recommendation closure",
+      "phase_56k_acquisition_id": "acquisition-56k-va-ifams-recommendation-status",
+      "phase_56k_named_record": "FY 2025 FISMA result or iFAMS recommendation closure",
+      "phase_56k_checked_source_id": "source-56k-va-ifams-recommendation-status-2026",
+      "phase_56k_checked_date": "2026-07-25",
+      "phase_56k_prior_closure_status": "Partially Closed",
+      "phase_56k_current_closure_status": "Partially Closed",
+      "phase_56k_acquisition_result": "The live VA OIG report page lists all three iFAMS access-control recommendations as Open. The page therefore supplies a current recommendation-level status but no implemented closure.",
+      "phase_56k_decision": "Retain Partially Closed. The selected remediation rail is now explicit and current, but none of the three recommendations is marked Closed-Implemented.",
+      "phase_56k_remaining_gap": "Implemented closure for the three iFAMS access-control recommendations or a later department-wide FISMA result with finding-level remediation.",
+      "phase_56k_reopening_rule": "Reopen when VA OIG changes a recommendation to Closed-Implemented or publishes a later department-wide FISMA result."
     },
     {
       "test_id": "test-56e-doe-information-security",
@@ -173,7 +183,17 @@
       "phase_56h_reopening_rule": "Reopen when DOT OIG publishes the FY 2026 quality-control review or a dated recommendation closure.",
       "phase_56j_queue_lane": "A — current official record rails",
       "phase_56j_acquisition_order": 9,
-      "phase_56j_named_next_record": "FY 2026 review result or dated recommendation closure"
+      "phase_56j_named_next_record": "FY 2026 review result or dated recommendation closure",
+      "phase_56k_acquisition_id": "acquisition-56k-dot-fy2026-fisma-result-status",
+      "phase_56k_named_record": "FY 2026 review result or dated recommendation closure",
+      "phase_56k_checked_source_id": "source-56f-dot-fisma-fy2026-audit-start",
+      "phase_56k_checked_date": "2026-07-25",
+      "phase_56k_prior_closure_status": "Partially Closed",
+      "phase_56k_current_closure_status": "Partially Closed",
+      "phase_56k_acquisition_result": "DOT OIG's authoritative page still identifies the FY 2026 information-security review as initiated. The public rail does not yet supply the review result or a dated recommendation-closure decision.",
+      "phase_56k_decision": "Retain Partially Closed. Audit initiation defines the next review identity but cannot be converted into an audit result or remediation outcome.",
+      "phase_56k_remaining_gap": "FY 2026 FISMA result, recommendation-level closure, tested-control outcome, incidents, recovery, and transportation-service effects.",
+      "phase_56k_reopening_rule": "Reopen when DOT OIG publishes the FY 2026 result or a dated recommendation-status change."
     },
     {
       "test_id": "test-56e-f35-fort-worth-line",
@@ -233,7 +253,17 @@
       "phase_56h_reopening_rule": "Reopen when an official source publishes monthly due, delivered, accepted, and capability-state observations under one production-line denominator.",
       "phase_56j_queue_lane": "A — current official record rails",
       "phase_56j_acquisition_order": 7,
-      "phase_56j_named_next_record": "Monthly aircraft due and accepted with capability state"
+      "phase_56j_named_next_record": "Monthly aircraft due and accepted with capability state",
+      "phase_56k_acquisition_id": "acquisition-56k-f35-monthly-acceptance-capability-status",
+      "phase_56k_named_record": "Monthly aircraft due and accepted with capability state",
+      "phase_56k_checked_source_id": "source-56e-f35-gao-sustainment-2026",
+      "phase_56k_checked_date": "2026-07-25",
+      "phase_56k_prior_closure_status": "Partially Closed",
+      "phase_56k_current_closure_status": "Partially Closed",
+      "phase_56k_acquisition_result": "GAO reports fleet readiness and notes that newly accepted aircraft could be non-mission-capable because of software delays, but it does not publish the selected Fort Worth monthly due-versus-accepted series paired with capability state.",
+      "phase_56k_decision": "Retain Partially Closed. The accepted-aircraft capability break is material context, but the fleet-level record cannot substitute for the named monthly production and acceptance denominator.",
+      "phase_56k_remaining_gap": "Monthly aircraft due, delivered, accepted, held, reworked, and capability state under one compatible Fort Worth production window.",
+      "phase_56k_reopening_rule": "Reopen when the F-35 Joint Program Office, DOD, DCMA, GAO, or the contractor publishes a monthly due-and-accepted table with capability state."
     },
     {
       "test_id": "test-56e-kc46-everett-line",
@@ -345,7 +375,17 @@
       "phase_56h_reopening_rule": "Reopen when the Air Force, DCMA, GAO, or Boeing publishes realized post-restart delivery and acceptance dates.",
       "phase_56j_queue_lane": "A — current official record rails",
       "phase_56j_acquisition_order": 8,
-      "phase_56j_named_next_record": "Realized post-restart delivery and acceptance dates"
+      "phase_56j_named_next_record": "Realized post-restart delivery and acceptance dates",
+      "phase_56k_acquisition_id": "acquisition-56k-f15ex-ex16-realized-receipt",
+      "phase_56k_named_record": "Realized post-restart delivery and acceptance dates",
+      "phase_56k_checked_source_id": "source-56k-f15ex-ex16-portland-receipt-2026",
+      "phase_56k_checked_date": "2026-07-25",
+      "phase_56k_prior_closure_status": "Partially Closed",
+      "phase_56k_current_closure_status": "Partially Closed",
+      "phase_56k_acquisition_result": "The receiving unit states that Portland Air National Guard Base received F-15EX tail number 16 on December 11, 2025. This independently fixes the realized receiving-unit date after the production restart.",
+      "phase_56k_decision": "Retain Partially Closed. The exact receipt date advances the delivery rail, but the record does not provide the formal government acceptance date, monthly due-versus-accepted denominator, quality, rework, cost, or schedule variance.",
+      "phase_56k_remaining_gap": "Formal acceptance date, monthly due and accepted aircraft, schedule variance, rework, quality escapes, labor input, and unit cost.",
+      "phase_56k_reopening_rule": "Reopen when the Air Force, DCMA, or program office publishes the formal acceptance record or a monthly due-versus-accepted series."
     },
     {
       "test_id": "test-56e-hornsdale-power-reserve",
@@ -687,5 +727,6 @@
   "phase_56g_acquisition_ledger": "phase-56g-operating-record-acquisition.json",
   "phase_56h_acquisition_ledger": "phase-56h-acquisition-and-deepening.json",
   "phase_56i_acquisition_ledger": "phase-56i-remaining-rails-first-pass.json",
-  "phase_56j_acquisition_ledger": "phase-56j-evidence-value-continuation.json"
+  "phase_56j_acquisition_ledger": "phase-56j-evidence-value-continuation.json",
+  "phase_56k_acquisition_ledger": "phase-56k-exact-record-continuation.json"
 }

@@ -30,7 +30,9 @@
     "Phase 56I completes 1 first-pass decision in this pathway while retaining each coverage ID and continuation rule.",
     "No selected closure state changes; genuinely new denominators publish and repeated evidence remains referenced rather than relabeled as a new finding.",
     "Phase 56J adds 1 named continuation decision to this pathway under the ordered evidence-value queue.",
-    "Acquisition order describes evidence opportunity and does not rank entities, performance, safety, quality, readiness, or value."
+    "Acquisition order describes evidence opportunity and does not rank entities, performance, safety, quality, readiness, or value.",
+    "Phase 56K checks 3 exact named records in this pathway and preserves explicit non-closures.",
+    "An exact-record check can improve the evidence rail without changing the selected closure state."
   ],
   "primary_topics": [
     "Policy and Standards",
@@ -72,7 +74,8 @@
     "signal-56e-doe-information-security-alternative-test",
     "signal-56e-dot-information-security-alternative-test",
     "signal-56f-ai-cyber-coverage-closure",
-    "signal-56h-doe-fy2025-cyber-result"
+    "signal-56h-doe-fy2025-cyber-result",
+    "signal-56k-va-ifams-recommendations-open"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -138,7 +141,8 @@
     "source-56h-doe-fy2025-cyber-management-letter",
     "source-56h-va-ifams-access-controls-2026",
     "source-56h-dot-recommendation-dashboard-2026",
-    "source-56j-doe-ferc-fisma-scope-2026"
+    "source-56j-doe-ferc-fisma-scope-2026",
+    "source-56k-va-ifams-recommendation-status-2026"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -159,7 +163,8 @@
     "briefing-research-watch-011-operating-record-acquisition",
     "briefing-research-watch-012-acquisition-and-deepening",
     "briefing-research-watch-013-first-pass-completion",
-    "briefing-research-watch-014-evidence-value-continuation"
+    "briefing-research-watch-014-evidence-value-continuation",
+    "briefing-research-watch-015-exact-record-continuation"
   ],
   "dependency_map_ids": [
     "dependency-map-post-quantum-standards-are-not-migration",
@@ -178,7 +183,8 @@
     "research-collection-operating-record-acquisition-closure-batch-two-2026",
     "research-collection-open-rail-acquisition-partial-closure-deepening-2026",
     "research-collection-remaining-open-rails-partial-closure-first-pass-2026",
-    "research-collection-evidence-value-continuation-queue-batch-one-2026"
+    "research-collection-evidence-value-continuation-queue-batch-one-2026",
+    "research-collection-exact-record-continuation-batch-two-2026"
   ],
   "evidence_gap_ids": [
     "gap-009",
@@ -265,6 +271,11 @@
       "stage": "Phase 56J evidence-value continuation",
       "current_state": "Five named records are reviewed; four bounded findings publish, one scope mismatch remains held, and only Manatee changes evidence state.",
       "boundary": "A monthly row, constraint entry, operator event, official plan, or component audit is not complete performance or a causal result."
+    },
+    {
+      "stage": "Phase 56K exact-record continuation",
+      "current_state": "Seven named records are checked; three bounded observations publish, four exact non-closures are recorded, and no evidence state changes.",
+      "boundary": "A response filing, recommendation icon, arrival date, index check, audit catalog, fleet report, or audit initiation is not a differently scoped final result."
     }
   ],
   "evidence_limits": [
@@ -285,7 +296,8 @@
     "Phase 56G acquisition outcomes measure evidence closure only and cannot be converted into entity performance, a comparison, or a score.",
     "Phase 56H closure and deepening states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
     "Phase 56I first-pass and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
-    "Phase 56J acquisition order and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims."
+    "Phase 56J acquisition order and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
+    "Phase 56K exact-record decisions cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
@@ -309,6 +321,8 @@
     "Reopen when the HHS OIG tracker changes a FY 2025 recommendation status or a component control test is published.",
     "Reopen when VA OIG publishes the FY 2025 FISMA audit or closes the named iFAMS recommendations.",
     "Reopen when DOT OIG publishes the FY 2026 quality-control review or a dated recommendation closure.",
-    "Reopen when DOE OIG publishes the department-wide FY 2025 FISMA evaluation, a dated official status for that review, or finding-level remediation with department scope."
+    "Reopen when DOE OIG publishes the department-wide FY 2025 FISMA evaluation, a dated official status for that review, or finding-level remediation with department scope.",
+    "Reopen when VA OIG changes a recommendation to Closed-Implemented or publishes a later department-wide FISMA result.",
+    "Reopen when DOT OIG publishes the FY 2026 result or a dated recommendation-status change."
   ]
 }

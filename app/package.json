@@ -14,7 +14,8 @@
     "validate:candidates": "node ./scripts/validate-source-candidates.mjs",
     "validate:content": "node ./scripts/validate-content-references.mjs",
     "source:health": "node ./scripts/source-health-report.mjs",
-    "verify:release": "node ./scripts/verify-release.mjs"
+    "verify:release": "node ./scripts/verify-release.mjs",
+    "verify:phase56k": "node ./scripts/assert-phase56k.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.0",
