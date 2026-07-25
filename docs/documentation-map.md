@@ -1546,6 +1546,7 @@ Purpose:
 - Record the completed Phase 56B twelve-panel entity collection, sixteen signal decisions, 20-file archive, Research Watch 006, stable-entity contract, four ranking holds, deployment receipt, and Phase 56C handoff.
 - Record the completed Phase 56C twelve-dossier collection, sixteen signal decisions, 27-file archive, Research Watch 007, attribution and no-causation contract, deployment receipt, and Phase 56D handoff.
 - Record the completed Phase 56D twelve-test collection, sixteen signal decisions, 27-file archive, Research Watch 008, compatibility and attribution contract, six explicit holds, and Phase 56E handoff.
+- Record the completed Phase 56E second cohort, twelve panels, twelve dossiers, twelve tests, forty signal decisions, 51-file archive, Research Watch 009, four portfolio holds, and Phase 56F handoff.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 
@@ -1564,6 +1565,7 @@ Primary file:
 - `docs/work-packages/phase-56b-entity-operating-panels.md` for the completed twelve-panel build, sixteen publication decisions, stable-entity and no-ranking contract, archive contract, validation and deployment evidence, and Phase 56C handoff
 - `docs/work-packages/phase-56c-entity-driver-constraint-dossiers.md` for the completed twelve-dossier build, sixteen publication decisions, attribution, independent-validation, alternative-explanation, and no-causation contract, archive contract, validation and deployment evidence, and Phase 56D handoff
 - `docs/work-packages/phase-56d-repeat-outcomes-alternative-explanation-tests.md` for the completed twelve-test build, sixteen publication decisions, compatibility, attribution, closure, no-ranking, and no-causation contract, archive contract, validation evidence, and Phase 56E handoff
+- `docs/work-packages/phase-56e-second-entity-cohort-vertical-replication.md` for the completed twelve-entity screen, 36 vertical entity layers, forty publication decisions, stable-identity, attribution, compatibility, no-ranking, and no-causation contract, archive contract, validation evidence, and Phase 56F handoff
 
 Update when:
 
@@ -1581,6 +1583,7 @@ Update when:
 - the Phase 56C dossiers, attribution, validation, alternative explanations, publication decisions, archive, or deployment receipt changes,
 - the Phase 56D repeat-outcome and alternative-explanation tests, compatibility decisions, publication decisions, archive, or deployment receipt changes,
 - the Phase 56E second-cohort composition, source-sufficiency screen, vertical replication contract, or handoff changes,
+- the Phase 56F cross-cohort coverage ledger, missing-record priorities, bounded closure batches, or handoff changes,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

@@ -2612,3 +2612,29 @@ Deployment receipt:
 Boundary:
 
 Later sequence is not causal proof. Manufacturer roles, certifications, supplier clauses, and historical inspections are not same-line production outcomes. Device-event reports without a units-distributed or production-line denominator do not establish a rate. Incident response, cleanup milestones, corrective action, partial return to service, availability, and asset value remain separate measures. Carrier operating percentages remain distinct from brand-level complaints and causal attribution. No ranking, composite score, readiness score, or unsupported cross-entity comparison is authorized. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.
+
+## 2026-07-24: Phase 56E Replicates Entity Depth, Not Rankings
+
+Decision:
+
+Retain all twelve screened second-cohort entities and build each vertically through a panel, driver-and-constraint dossier, and alternative-explanation test. Publish the 36 bounded entity layers and retain four portfolio interpretations `In Review`.
+
+Rationale:
+
+The user authorized continued aggressive expansion without waiting for future releases. A pre-authoring screen confirmed that VA, DOE, DOT, three named aircraft production lines, three battery assets, and three passenger carriers each had stable identity and at least four primary or official records. Reusing the three-layer contract expands depth and coverage while keeping incompatible units and denominators out of comparative claims.
+
+Implemented:
+
+- twelve of twelve candidates retained at a four-record minimum;
+- 40 public source profiles and 48 Published entity-specific summaries;
+- twelve panels, twelve driver-and-constraint dossiers, and twelve alternative-explanation tests;
+- forty publication decisions: 36 Published and four `In Review`;
+- Research Watch 009 and a verified 51-file archive;
+- separate panel, dossier, test, and publication-review ledgers;
+- integration across eight topics, six pathways, Research Watch 008, and the comparison-boundary map;
+- a verified 1,204-page, 502-source, 260-signal contract with 199 Published, 61 In Review, 33 updates, fourteen collections, 324 documents, and 307 current Published-support sources;
+- Phase 56F selected as the next content gate for cross-cohort coverage and missing-record closure across all 24 named entities.
+
+Boundary:
+
+Vertical evidence depth does not create horizontal comparability. Annual cyber reviews, recommendation inventories, cumulative deliveries, delivery lateness, production interruptions, battery event response, installed capacity, cancellation rates, monthly on-time arrivals, complaint records, and service commitments remain separate. Attribution stays attached to the auditor, regulator, system operator, government program office, company, or carrier that supplied it. No causal effect, ranking, composite score, readiness score, or unsupported cross-entity comparison is authorized. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.

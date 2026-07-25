@@ -147,8 +147,9 @@ What is now stable:
 - The verified Phase 56C contract is 1,012 pages, 442 sources, 204 signals, 153 Published signals, 51 In Review signals, 251 current Published-support sources, fifteen briefings, seven maps, twelve research collections, 252 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 31 updates, and five public-data exports.
 - Phase 56C local content commit `573b98bf5474d2a13ca6db91f96afd7a19a1ec2e` matches exact private source projection `81ebce0bfe90d2175ca7152400dcd75ef03d65e0`, deployed as owner-only Sites version 28 in deployment `appgdep_6a640d2c01808191ab0e543f842302cf` with one allowed owner and no groups.
 - Phase 56D adds twelve entity-level alternative-explanation tests, four portfolio holds, 20 primary-source profiles, 24 entity-specific summaries, Research Watch 008, machine-readable test and publication ledgers, and a verified 27-file archive.
-- The verified Phase 56D contract is 1,074 pages, 462 sources, 220 signals, 163 Published signals, 57 In Review signals, 267 current Published-support sources, sixteen briefings, seven maps, thirteen research collections, 276 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 32 updates, and five public-data exports.
-- Phase 56D local content commit `9716a4ef19db8edc46950b32c23ee38a572440a5` matches exact private source projection `ed6345357651c4f870355fb166a985680a9588f7`, deployed as owner-only Sites version 29 in deployment `appgdep_6a6417219bc8819190172e54ef9e166e` with one allowed owner and no groups.
+- Phase 56E retains twelve of twelve screened entities and adds twelve panels, twelve driver-and-constraint dossiers, twelve alternative-explanation tests, four portfolio holds, 40 source profiles, 48 Published summaries, Research Watch 009, four machine-readable ledgers, and a verified 51-file archive.
+- The verified Phase 56E contract is 1,204 pages, 502 sources, 260 signals, 199 Published signals, 61 In Review signals, 307 current Published-support sources, seventeen briefings, seven maps, fourteen research collections, 324 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 33 updates, and five public-data exports.
+- Owner-only Sites version 29 continues to serve the Phase 56D checkpoint while the verified Phase 56E package proceeds through the unchanged private deployment gate.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 267 current Published-support sources are governed by the same current-source release assertion.
@@ -170,7 +171,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only Sites version 29 and continue with Phase 56E second-cohort vertical replication. Phase 56D is complete, release-verified, and owner-only deployed. Screen a second twelve-entity cohort before drafting, then build each retained entity through a named panel, driver-and-constraint dossier, and alternative-explanation test. Target three additional federal agencies, three manufacturers with named facility or line records, three battery assets with stable identity, and three passenger carriers with compatible operating and service-delivery records. Prohibit causal inference, rankings, composite scores, and readiness scores. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only Sites access and continue with Phase 56F cross-cohort coverage and missing-record closure. Phase 56E is complete and release-verified locally. Build one coverage ledger across all 24 named entities, record the strongest compatible closure or outcome evidence already present, and identify one highest-value missing operating record per entity. Execute bounded agency, production-line, battery, and carrier closure batches without creating rankings, composite scores, readiness scores, or causal conclusions. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -354,17 +355,18 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 56E second entity cohort and vertical replication
+Phase 56F cross-cohort coverage and missing-record closure
 ```
 
 Proceed by:
 
-- screen a second twelve-entity cohort before drafting any public records,
-- target three additional federal agencies, three manufacturers, three battery assets, and three passenger carriers,
-- build the panel, driver-and-constraint dossier, and alternative-explanation test vertically for each retained entity,
-- distinguish regulator, auditor, company, operator, and third-party attribution,
+- build one coverage ledger across all 24 named entities,
+- record the strongest current panel, dossier, alternative test, compatible outcome, closure, input, denominator, attribution, and validation evidence,
+- select one highest-value missing operating record per entity,
+- execute bounded closure batches across agencies, production lines, battery assets, and passenger carriers,
+- distinguish regulator, auditor, company, operator, carrier, and third-party attribution,
 - disclose stable identity, unit, denominator, period, geography, method, attribution, missing evidence, revisions, and reporting breaks,
-- record independent validation and alternative explanations where available,
+- retain unavailable or incompatible records as named gaps with reopening rules,
 - apply explicit publish or hold decisions before changing sitemap or export membership,
 - use the remaining Phase 55S authority backlog only where it fills a named corpus gap,
 - run all six dated tasks as bounded inserts without pausing the queue,
@@ -448,16 +450,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 56D repeat outcomes and alternative-explanation tests.
+Phase 56E second entity cohort and vertical replication.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 56D candidate: package 0.2.0-dev, 462 public sources, 150 first-pass-triaged private candidates, 220 signals, 17 topics, 32 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,074 generated site pages, 163 Published signals, 9 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 13 research collections, 276 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, four 27-file, 35-file, 51-file, and 20-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 313 Manual Review and 149 Probe Ready records.
+v0.2 Phase 56E candidate: package 0.2.0-dev, 502 public sources, 150 first-pass-triaged private candidates, 260 signals, 17 topics, 33 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,204 generated site pages, 199 Published signals, 10 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 14 research collections, 324 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, four 27-file, 35-file, two 51-file, and 20-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 341 Manual Review and 161 Probe Ready records.
 
 Next decision gate:
-Preserve owner-only Sites version 29 and begin Phase 56E. Screen a second twelve-entity cohort, then build each retained entity vertically through a named panel, driver-and-constraint dossier, and alternative-explanation test. Target three additional federal agencies, three manufacturers with named facility or line records, three battery assets with stable identity, and three passenger carriers with compatible operating and service-delivery records. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Do not infer causation or create rankings, composite scores, or readiness scores. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve owner-only Sites access and begin Phase 56F. Create a cross-cohort coverage ledger for all 24 named entities, identify the strongest compatible closure or outcome already present, and select one highest-value missing operating record for each. Close those records in bounded portfolio batches. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Do not infer causation or create rankings, composite scores, or readiness scores. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

@@ -17,7 +17,9 @@
     "Phase 56C adds entity-matched controls, inputs, constraints, later observations, attribution, independent-validation limits, and alternative explanations.",
     "Temporal order is preserved without converting association into causation, ranking, composite scoring, or readiness scoring.",
     "Phase 56D adds later observations and explicit tests of named Phase 56C alternative explanations for the same twelve entities.",
-    "Compatibility, attribution, validation status, missing denominators, and series breaks remain visible before any interpretation."
+    "Compatibility, attribution, validation status, missing denominators, and series breaks remain visible before any interpretation.",
+    "Phase 56E adds a second vertically replicated cohort: American Airlines, Alaska Airlines, JetBlue Airways.",
+    "Every retained entity carries a panel, a driver-and-constraint dossier, and an alternative-explanation test under one stable identity."
   ],
   "primary_topics": [
     "Policy and Standards",
@@ -66,7 +68,16 @@
     "signal-56c-delta-service-constraints",
     "signal-56d-united-repeat-service-test",
     "signal-56d-southwest-repeat-service-test",
-    "signal-56d-delta-repeat-service-test"
+    "signal-56d-delta-repeat-service-test",
+    "signal-56e-american-airlines-panel",
+    "signal-56e-alaska-airlines-panel",
+    "signal-56e-jetblue-airways-panel",
+    "signal-56e-american-airlines-dossier",
+    "signal-56e-alaska-airlines-dossier",
+    "signal-56e-jetblue-airways-dossier",
+    "signal-56e-american-airlines-alternative-test",
+    "signal-56e-alaska-airlines-alternative-test",
+    "signal-56e-jetblue-airways-alternative-test"
   ],
   "source_ids": [
     "source-virginia-scc-large-load-gs5-2025",
@@ -107,7 +118,11 @@
     "source-56c-dot-atcr-2025-series",
     "source-56c-dot-airline-customer-service-dashboard",
     "source-56d-dot-atcr-february-2026",
-    "source-56d-dot-atcr-july-2026"
+    "source-56d-dot-atcr-july-2026",
+    "source-56e-atcr-full-year-2024",
+    "source-56e-atcr-full-year-2025",
+    "source-56e-atcr-may-2026",
+    "source-56e-dot-airline-dashboard"
   ],
   "organization_ids": [],
   "technology_ids": [],
@@ -117,7 +132,8 @@
     "briefing-research-watch-005-longitudinal-operating-series",
     "briefing-research-watch-006-entity-operating-panels",
     "briefing-research-watch-007-entity-driver-constraint-dossiers",
-    "briefing-research-watch-008-repeat-outcomes-alternative-tests"
+    "briefing-research-watch-008-repeat-outcomes-alternative-tests",
+    "briefing-research-watch-009-second-cohort-vertical-replication"
   ],
   "dependency_map_ids": [
     "dependency-map-local-authorization-is-not-operation",
@@ -130,7 +146,8 @@
     "research-collection-longitudinal-operating-series-2020-2025",
     "research-collection-entity-operating-panels-2021-2026",
     "research-collection-entity-driver-constraint-dossiers-2021-2026",
-    "research-collection-repeat-outcomes-alternative-explanation-tests-2010-2026"
+    "research-collection-repeat-outcomes-alternative-explanation-tests-2010-2026",
+    "research-collection-second-entity-cohort-vertical-replication-2018-2026"
   ],
   "evidence_gap_ids": [
     "gap-011",
@@ -179,6 +196,11 @@
       "stage": "Alternative-explanation test",
       "current_state": "Twelve entity tests map later records to named competing explanations.",
       "boundary": "A test may narrow an explanation without isolating cause or producing a score."
+    },
+    {
+      "stage": "Second-cohort vertical replication",
+      "current_state": "Twelve additional entities passed a four-primary-record screen and received all three evidence layers.",
+      "boundary": "Entity depth can increase without making different entities comparable."
     }
   ],
   "evidence_limits": [
@@ -192,7 +214,9 @@
     "A named intervention, control, input, or response does not by itself explain an observed outcome.",
     "Company and operator claims remain attributed until independently validated.",
     "A recommendation status, certification, supplier clause, incident response, monthly cause mix, or complaint count does not create a common performance measure.",
-    "Different units, methods, identities, observation windows, and attribution levels remain split."
+    "Different units, methods, identities, observation windows, and attribution levels remain split.",
+    "The second cohort preserves attribution, unit, denominator, method, observation window, reporting breaks, and identity changes.",
+    "A vertical entity record does not authorize cross-entity ranking, composite scoring, readiness scoring, or causal inference."
   ],
   "next_records": [
     "Northern Virginia route, construction, energization, customer-service, water, emissions-compliance, reliability, and local-outcome records.",
@@ -203,6 +227,8 @@
     "Repeated outcomes using the same entity, unit, denominator, method, and observation window.",
     "Independent validation of implementation, control operation, corrective-action closure, and downstream effects.",
     "Later observations using the same entity, unit, denominator, method, and observation window.",
-    "Independent control-operation, closure, line-performance, availability, dispatch, and service-delivery evidence."
+    "Independent control-operation, closure, line-performance, availability, dispatch, and service-delivery evidence.",
+    "Later observations using the same entity, unit, denominator, method, attribution, and observation window.",
+    "Independent closure and outcome records for the named controls, production lines, battery assets, or carrier services."
   ]
 }

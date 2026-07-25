@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: entity dossiers can accept later outcomes and alternative-explanation tests only when stable identity, compatibility, attribution, validation status, and denominator breaks remain attached.",
+  "summary": "A comparison and inference protocol: two twelve-entity cohorts now carry panels, dossiers, and alternative tests while stable identity, compatibility, attribution, validation status, and denominator breaks remain attached.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -158,7 +158,47 @@
     "source-56d-gateway-cpuc-resolution-e5428-2025",
     "source-56d-gateway-epa-bess-safety-2025",
     "source-56d-dot-atcr-february-2026",
-    "source-56d-dot-atcr-july-2026"
+    "source-56d-dot-atcr-july-2026",
+    "source-56e-va-fisma-fy2022",
+    "source-56e-va-fisma-fy2023",
+    "source-56e-va-fisma-fy2024",
+    "source-56e-doe-fisma-fy2023",
+    "source-56e-doe-fisma-fy2024",
+    "source-56e-doe-management-letter-fy2025",
+    "source-56e-dot-fisma-fy2023",
+    "source-56e-dot-fisma-fy2024",
+    "source-56e-dot-fisma-fy2025",
+    "source-56e-va-cio-open-recommendations-2026",
+    "source-56e-doe-cyber-sharing-2026",
+    "source-56e-dot-continuous-monitoring-2024",
+    "source-56e-f35-gao-2024",
+    "source-56e-f35-gao-2025",
+    "source-56e-f35-lockheed-deliveries-2025",
+    "source-56e-kc46-usaf-budget-fy2025",
+    "source-56e-kc46-gao-2026",
+    "source-56e-kc46-100th-delivery-2025",
+    "source-56e-f15ex-first-deliveries-2021",
+    "source-56e-f15ex-four-deliveries-2023",
+    "source-56e-f15ex-gao-2025",
+    "source-56e-f35-gao-sustainment-2026",
+    "source-56e-kc46-105th-delivery-2026",
+    "source-56e-f15ex-production-resumes-2025",
+    "source-56e-hornsdale-aemo-2019-preliminary",
+    "source-56e-hornsdale-aemo-2020-final",
+    "source-56e-hornsdale-aer-2022",
+    "source-56e-vbb-esv-fire-findings-2021",
+    "source-56e-vbb-aemo-registration-2021",
+    "source-56e-vbb-aemo-operational-2021",
+    "source-56e-dalrymple-arena-operational-2020",
+    "source-56e-dalrymple-aemo-minimum-demand-2020",
+    "source-56e-dalrymple-arena-final-2021",
+    "source-56e-hornsdale-sa-current",
+    "source-56e-vbb-esv-investigations",
+    "source-56e-dalrymple-arena-retrospective-2021",
+    "source-56e-atcr-full-year-2024",
+    "source-56e-atcr-full-year-2025",
+    "source-56e-atcr-may-2026",
+    "source-56e-dot-airline-dashboard"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -222,7 +262,43 @@
     "signal-56d-gateway-repeat-test",
     "signal-56d-united-repeat-service-test",
     "signal-56d-southwest-repeat-service-test",
-    "signal-56d-delta-repeat-service-test"
+    "signal-56d-delta-repeat-service-test",
+    "signal-56e-va-information-security-panel",
+    "signal-56e-doe-information-security-panel",
+    "signal-56e-dot-information-security-panel",
+    "signal-56e-va-information-security-dossier",
+    "signal-56e-doe-information-security-dossier",
+    "signal-56e-dot-information-security-dossier",
+    "signal-56e-va-information-security-alternative-test",
+    "signal-56e-doe-information-security-alternative-test",
+    "signal-56e-dot-information-security-alternative-test",
+    "signal-56e-f35-fort-worth-line-panel",
+    "signal-56e-kc46-everett-line-panel",
+    "signal-56e-f15ex-st-louis-line-panel",
+    "signal-56e-f35-fort-worth-line-dossier",
+    "signal-56e-kc46-everett-line-dossier",
+    "signal-56e-f15ex-st-louis-line-dossier",
+    "signal-56e-f35-fort-worth-line-alternative-test",
+    "signal-56e-kc46-everett-line-alternative-test",
+    "signal-56e-f15ex-st-louis-line-alternative-test",
+    "signal-56e-hornsdale-power-reserve-panel",
+    "signal-56e-victorian-big-battery-panel",
+    "signal-56e-dalrymple-escri-bess-panel",
+    "signal-56e-hornsdale-power-reserve-dossier",
+    "signal-56e-victorian-big-battery-dossier",
+    "signal-56e-dalrymple-escri-bess-dossier",
+    "signal-56e-hornsdale-power-reserve-alternative-test",
+    "signal-56e-victorian-big-battery-alternative-test",
+    "signal-56e-dalrymple-escri-bess-alternative-test",
+    "signal-56e-american-airlines-panel",
+    "signal-56e-alaska-airlines-panel",
+    "signal-56e-jetblue-airways-panel",
+    "signal-56e-american-airlines-dossier",
+    "signal-56e-alaska-airlines-dossier",
+    "signal-56e-jetblue-airways-dossier",
+    "signal-56e-american-airlines-alternative-test",
+    "signal-56e-alaska-airlines-alternative-test",
+    "signal-56e-jetblue-airways-alternative-test"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -340,6 +416,19 @@
       "label": "Denominator or method break",
       "node_type": "Constraint",
       "note": "Different units, methods, identities, windows, and attribution levels stop silent series extension."
+    },
+    {
+      "id": "node-second-cohort-screen",
+      "label": "Four-record entity sufficiency screen",
+      "node_type": "Constraint",
+      "note": "A candidate enters only when stable identity and at least four primary or official records support all three layers."
+    },
+    {
+      "id": "node-second-cohort-vertical",
+      "label": "Second-cohort panel, dossier, and test",
+      "node_type": "Signal",
+      "record_id": "signal-56e-f35-fort-worth-line-alternative-test",
+      "note": "All twelve retained entities carry the same three-layer publication contract."
     }
   ],
   "links": [
@@ -468,6 +557,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "A broken or missing denominator prevents causal or performance interpretation."
+    },
+    {
+      "from": "node-second-cohort-vertical",
+      "to": "node-second-cohort-screen",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Twelve of twelve candidates passed the four-record screen."
+    },
+    {
+      "from": "node-second-cohort-vertical",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "The vertical contract preserves method, attribution, identity, and denominator breaks."
+    },
+    {
+      "from": "node-second-cohort-vertical",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Four portfolio interpretations remain held even though all 36 entity layers publish."
     }
   ],
   "what_this_map_supports": [
@@ -481,7 +591,9 @@
     "A stable entity panel may deepen into a temporally ordered driver and constraint dossier.",
     "Attribution, independent validation, and alternative explanations can be published without claiming causation.",
     "A later record may narrow, support, challenge, or leave unresolved a named alternative explanation.",
-    "Regulator-verified obligations, partial progress, company claims, operator filings, and independent outcomes can remain distinct."
+    "Regulator-verified obligations, partial progress, company claims, operator filings, and independent outcomes can remain distinct.",
+    "A second cohort can be screened once and then built vertically through the same three evidence layers.",
+    "Independent, regulator, operator, company, and carrier-attributed records can remain visibly distinct inside one entity dossier."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -493,7 +605,9 @@
     "It does not prove that a named intervention, control, input, commitment, or corrective action caused an observed outcome.",
     "It does not authorize a readiness score, composite score, or entity ranking.",
     "It does not prove that one tested alternative caused the observed outcome.",
-    "It does not authorize denominator mixing, causal effects, rankings, composites, or readiness scores."
+    "It does not authorize denominator mixing, causal effects, rankings, composites, or readiness scores.",
+    "It does not make the two cohorts or their entities rankable.",
+    "It does not convert vertical evidence depth into a causal effect, composite, or readiness score."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -508,6 +622,8 @@
     "Independent verification of control operation, implementation, corrective-action closure, and downstream results.",
     "Records capable of testing the named alternative explanations.",
     "Repeated compatible outcomes with the same unit, denominator, method, entity, and observation window.",
-    "Independent closure, control-operation, same-line performance, availability, dispatch, and service-delivery records."
+    "Independent closure, control-operation, same-line performance, availability, dispatch, and service-delivery records.",
+    "Closure and repeat-outcome records with stable units, denominators, methods, identities, and observation windows.",
+    "Matched agency controls, line inputs and outputs, battery operating series, and carrier service-delivery denominators."
   ]
 }

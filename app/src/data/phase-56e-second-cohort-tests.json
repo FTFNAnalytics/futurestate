@@ -1,0 +1,417 @@
+{
+  "phase": "56E",
+  "captured_date": "2026-07-24",
+  "test_count": 12,
+  "tests": [
+    {
+      "test_id": "test-56e-va-information-security",
+      "portfolio": "ai_cyber",
+      "parent_dossier_id": "dossier-56e-va-information-security",
+      "parent_panel_id": "panel-56e-va-information-security",
+      "entity_id": "agency-va",
+      "entity_name": "Department of Veterans Affairs",
+      "source_ids": [
+        "source-56e-va-fisma-fy2024",
+        "source-56e-va-cio-open-recommendations-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Changed audit scope",
+        "Recommendation consolidation or reopening",
+        "Different system populations",
+        "Corrective work not captured by headline counts"
+      ],
+      "later_observations": [
+        "The FY 2024 audit still identified significant challenges across a larger stated application and system sample.",
+        "GAO's January 2026 inventory retained 38 open CIO recommendations, including four priority items."
+      ],
+      "compatibility": "Same agency and control domain; the annual audits and GAO inventory use different scopes and must remain separate.",
+      "result": "Later official records sustain the corrective-action workload explanation but do not establish unchanged risk, control operation, incident rate, recovery, or veteran-service effect.",
+      "attribution": "VA OIG and GAO",
+      "validation_status": "Independent official oversight; no closure or effectiveness is inferred from a recommendation count.",
+      "causal_boundary": "The later records test alternatives and deepen the entity record; they do not establish causation.",
+      "signal_id": "signal-56e-va-information-security-alternative-test",
+      "record_status": "Published",
+      "next_records": [
+        "FY 2025 or FY 2026 FISMA results",
+        "Recommendation-level closures and tested control operation",
+        "Incidents, recovery, affected services, and mission effects"
+      ]
+    },
+    {
+      "test_id": "test-56e-doe-information-security",
+      "portfolio": "ai_cyber",
+      "parent_dossier_id": "dossier-56e-doe-information-security",
+      "parent_panel_id": "panel-56e-doe-information-security",
+      "entity_id": "agency-doe",
+      "entity_name": "Department of Energy",
+      "source_ids": [
+        "source-56e-doe-management-letter-fy2025",
+        "source-56e-doe-cyber-sharing-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Scope expansion",
+        "Changed metric design",
+        "Repeat versus new finding classification",
+        "Narrow statutory compliance despite broader control weaknesses"
+      ],
+      "later_observations": [
+        "The 2026 information-sharing review made no formal recommendations.",
+        "That bounded result coexists with the FY 2025 management letter's access-control significant deficiency."
+      ],
+      "compatibility": "Same department but different audit objectives, tested controls, and denominators.",
+      "result": "The narrow information-sharing determination challenges any claim of uniform failure, while the management letter blocks any claim of enterprise-wide closure.",
+      "attribution": "DOE OIG",
+      "validation_status": "Independent DOE OIG records; statutory implementation and general program effectiveness remain distinct.",
+      "causal_boundary": "The later records test alternatives and deepen the entity record; they do not establish causation.",
+      "signal_id": "signal-56e-doe-information-security-alternative-test",
+      "record_status": "Published",
+      "next_records": [
+        "FY 2025 FISMA evaluation",
+        "Finding-level closure and repeat-finding resolution",
+        "System incidents, recovery, mission and laboratory service effects"
+      ]
+    },
+    {
+      "test_id": "test-56e-dot-information-security",
+      "portfolio": "ai_cyber",
+      "parent_dossier_id": "dossier-56e-dot-information-security",
+      "parent_panel_id": "panel-56e-dot-information-security",
+      "entity_id": "agency-dot",
+      "entity_name": "Department of Transportation",
+      "source_ids": [
+        "source-56e-dot-fisma-fy2025",
+        "source-56e-dot-continuous-monitoring-2024"
+      ],
+      "tested_alternative_explanations": [
+        "Expanded testing",
+        "Metric changes",
+        "Component variation",
+        "Safety constraints on monitoring frequency"
+      ],
+      "later_observations": [
+        "The FY 2025 review rated the program Level 2, Defined.",
+        "The 2024 control-specific audit identifies where safety and monitoring coverage interact."
+      ],
+      "compatibility": "Same department and cyber domain; annual maturity, recommendation counts, and NAS monitoring coverage are not interchangeable.",
+      "result": "The monitoring audit supplies an observable implementation constraint but does not establish why the annual program rating remained below effective.",
+      "attribution": "DOT OIG and its independent auditor",
+      "validation_status": "Independent DOT OIG records with explicit scope; later recommendation closures require their own dates.",
+      "causal_boundary": "The later records test alternatives and deepen the entity record; they do not establish causation.",
+      "signal_id": "signal-56e-dot-information-security-alternative-test",
+      "record_status": "Published",
+      "next_records": [
+        "FY 2026 annual review",
+        "Closure evidence for the monitoring recommendations",
+        "System incidents, recovery, affected transportation services, and mission outcomes"
+      ]
+    },
+    {
+      "test_id": "test-56e-f35-fort-worth-line",
+      "portfolio": "manufacturing",
+      "parent_dossier_id": "dossier-56e-f35-fort-worth-line",
+      "parent_panel_id": "panel-56e-f35-fort-worth-line",
+      "entity_id": "manufacturer-lockheed-f35-fort-worth",
+      "entity_name": "Lockheed Martin F-35 Fort Worth final-assembly line",
+      "source_ids": [
+        "source-56e-f35-lockheed-deliveries-2025",
+        "source-56e-f35-gao-sustainment-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Backlog release rather than new-period throughput",
+        "Acceptance-policy changes",
+        "Parts arrivals",
+        "Schedule and contract incentives"
+      ],
+      "later_observations": [
+        "Lockheed Martin attributed a record 191 deliveries to 2025.",
+        "GAO's June 2026 sustainment review still identified constrained private-sector parts capacity."
+      ],
+      "compatibility": "Same aircraft program; due-date timeliness, contractor deliveries, and fleet sustainment use different denominators.",
+      "result": "The later delivery total supports backlog movement, while independent sustainment evidence leaves parts capacity and accepted capability unresolved.",
+      "attribution": "GAO, DOD program records, and Lockheed Martin for the 2025 statement",
+      "validation_status": "GAO independently validates program records; the 2025 production claim remains contractor-attributed.",
+      "causal_boundary": "The later records test alternatives and deepen the entity record; they do not establish causation.",
+      "signal_id": "signal-56e-f35-fort-worth-line-alternative-test",
+      "record_status": "Published",
+      "next_records": [
+        "Aircraft due versus accepted by month",
+        "Fort Worth labor hours, rework, first-pass yield, and line inventory",
+        "TR-3 capability acceptance and supplier shortage series"
+      ]
+    },
+    {
+      "test_id": "test-56e-kc46-everett-line",
+      "portfolio": "manufacturing",
+      "parent_dossier_id": "dossier-56e-kc46-everett-line",
+      "parent_panel_id": "panel-56e-kc46-everett-line",
+      "entity_id": "manufacturer-boeing-kc46-everett",
+      "entity_name": "Boeing KC-46A Everett production line",
+      "source_ids": [
+        "source-56e-kc46-100th-delivery-2025",
+        "source-56e-kc46-105th-delivery-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Fielding lag after delivery",
+        "Modification or rework timing",
+        "Acceptance scheduling",
+        "Budget plan changes"
+      ],
+      "later_observations": [
+        "The line moved from the 100th to the 105th delivery between December 2025 and April 2026.",
+        "GAO still reported unresolved deficiencies and a later full-rate decision window."
+      ],
+      "compatibility": "Same product and line; fielded, delivered, planned rate, and deficiency status remain separate.",
+      "result": "The milestones support continued output but do not show that critical deficiencies, schedule, quality, or cost constraints were resolved.",
+      "attribution": "U.S. Air Force, Department of the Air Force, and GAO",
+      "validation_status": "Government milestone records plus independent GAO program review.",
+      "causal_boundary": "The later records test alternatives and deepen the entity record; they do not establish causation.",
+      "signal_id": "signal-56e-kc46-everett-line-alternative-test",
+      "record_status": "Published",
+      "next_records": [
+        "Monthly due and accepted deliveries",
+        "Rework, quality escapes, labor, cost, and modification hours",
+        "Deficiency closure and full-rate decision evidence"
+      ]
+    },
+    {
+      "test_id": "test-56e-f15ex-st-louis-line",
+      "portfolio": "manufacturing",
+      "parent_dossier_id": "dossier-56e-f15ex-st-louis-line",
+      "parent_panel_id": "panel-56e-f15ex-st-louis-line",
+      "entity_id": "manufacturer-boeing-f15ex-st-louis",
+      "entity_name": "Boeing F-15EX St. Louis production line",
+      "source_ids": [
+        "source-56e-f15ex-gao-2025",
+        "source-56e-f15ex-production-resumes-2025"
+      ],
+      "tested_alternative_explanations": [
+        "Delivery timing rather than assembly completion",
+        "Acceptance backlog",
+        "Supplier and rework flow",
+        "Strike-related versus pre-existing schedule effects"
+      ],
+      "later_observations": [
+        "The Air Force attributed a production halt from August 4 through November 17, 2025, to a strike.",
+        "Deliveries through aircraft 16 were recorded after work resumed."
+      ],
+      "compatibility": "Same line and product; milestone counts and the strike interval establish sequence, not a counterfactual.",
+      "result": "The restart record supports temporal attribution for the interruption but does not isolate its total schedule, cost, quality, or labor effect.",
+      "attribution": "U.S. Air Force and GAO",
+      "validation_status": "Air Force operational account and independent GAO program context.",
+      "causal_boundary": "The later records test alternatives and deepen the entity record; they do not establish causation.",
+      "signal_id": "signal-56e-f15ex-st-louis-line-alternative-test",
+      "record_status": "Published",
+      "next_records": [
+        "Monthly planned and accepted deliveries",
+        "Line labor hours, rework, yield, supplier constraints, and cost",
+        "Post-restart delivery cadence and quality findings"
+      ]
+    },
+    {
+      "test_id": "test-56e-hornsdale-power-reserve",
+      "portfolio": "infrastructure",
+      "parent_dossier_id": "dossier-56e-hornsdale-power-reserve",
+      "parent_panel_id": "panel-56e-hornsdale-power-reserve",
+      "entity_id": "battery-hornsdale-power-reserve",
+      "entity_name": "Hornsdale Power Reserve",
+      "source_ids": [
+        "source-56e-hornsdale-aer-2022",
+        "source-56e-hornsdale-sa-current"
+      ],
+      "tested_alternative_explanations": [
+        "Event conditions",
+        "Control-setting changes",
+        "Dispatch instructions",
+        "Expansion effects"
+      ],
+      "later_observations": [
+        "The enforcement record confirms a bounded service-capability mismatch during 2019 offers.",
+        "The state profile confirms later 150 MW installed power capacity."
+      ],
+      "compatibility": "Stable asset identity; event response, compliance intervals, and installed capacity are not one performance series.",
+      "result": "The record supports both demonstrated fast response and a regulator-verified service boundary without converting either into an asset score.",
+      "attribution": "AEMO, Australian Energy Regulator, and Government of South Australia",
+      "validation_status": "Independent system operator, regulator, court, and state records.",
+      "causal_boundary": "The later records test alternatives and deepen the entity record; they do not establish causation.",
+      "signal_id": "signal-56e-hornsdale-power-reserve-alternative-test",
+      "record_status": "Published",
+      "next_records": [
+        "Annual availability and dispatch",
+        "Service enablement and delivery by interval",
+        "Cycling, degradation, revenue, safety, and customer outcomes"
+      ]
+    },
+    {
+      "test_id": "test-56e-victorian-big-battery",
+      "portfolio": "infrastructure",
+      "parent_dossier_id": "dossier-56e-victorian-big-battery",
+      "parent_panel_id": "panel-56e-victorian-big-battery",
+      "entity_id": "battery-victorian-big-battery",
+      "entity_name": "Victorian Big Battery",
+      "source_ids": [
+        "source-56e-vbb-aemo-operational-2021",
+        "source-56e-vbb-esv-investigations"
+      ],
+      "tested_alternative_explanations": [
+        "Commissioning-specific conditions",
+        "Control or isolation changes",
+        "Registration timing",
+        "Scheme dispatch rules"
+      ],
+      "later_observations": [
+        "AEMO registered the asset after the commissioning event.",
+        "AEMO then reported the stated emergency-reserve capability operational."
+      ],
+      "compatibility": "Stable asset; the sequence supports temporal order but not causal proof that one action produced later performance.",
+      "result": "Official records support operational progression after the incident while leaving closure, availability, dispatch, degradation, and benefit measures open.",
+      "attribution": "Energy Safe Victoria and AEMO",
+      "validation_status": "Independent safety regulator and system operator records.",
+      "causal_boundary": "The later records test alternatives and deepen the entity record; they do not establish causation.",
+      "signal_id": "signal-56e-victorian-big-battery-alternative-test",
+      "record_status": "Published",
+      "next_records": [
+        "Corrective-action closure",
+        "Annual availability, dispatch, and cycling",
+        "Degradation, revenue, scheme activation, safety, and customer effects"
+      ]
+    },
+    {
+      "test_id": "test-56e-dalrymple-escri-bess",
+      "portfolio": "infrastructure",
+      "parent_dossier_id": "dossier-56e-dalrymple-escri-bess",
+      "parent_panel_id": "panel-56e-dalrymple-escri-bess",
+      "entity_id": "battery-dalrymple-escri-sa",
+      "entity_name": "Dalrymple ESCRI-SA Battery Energy Storage System",
+      "source_ids": [
+        "source-56e-dalrymple-arena-final-2021",
+        "source-56e-dalrymple-arena-retrospective-2021"
+      ],
+      "tested_alternative_explanations": [
+        "Network event mix",
+        "Enabled service and dispatch rules",
+        "State-of-charge management",
+        "Project reporting window"
+      ],
+      "later_observations": [
+        "AEMO independently documented a state-of-charge constraint during one operating condition.",
+        "The final and retrospective records preserve broader project operation without a counterfactual comparator."
+      ],
+      "compatibility": "Same asset; project and system-operator records overlap but use different windows and outcome measures.",
+      "result": "The mixed record supports multi-service operation and a real operating constraint while leaving net reliability and economic causation unresolved.",
+      "attribution": "ElectraNet project reporting through ARENA and independent AEMO observations",
+      "validation_status": "AEMO supplies an independent system observation; other results remain project-attributed through ARENA.",
+      "causal_boundary": "The later records test alternatives and deepen the entity record; they do not establish causation.",
+      "signal_id": "signal-56e-dalrymple-escri-bess-alternative-test",
+      "record_status": "Published",
+      "next_records": [
+        "Later availability, dispatch, and islanding events",
+        "State-of-charge and degradation series",
+        "Revenue, avoided cost, reliability, and customer-outcome denominators"
+      ]
+    },
+    {
+      "test_id": "test-56e-american-airlines",
+      "portfolio": "mobility",
+      "parent_dossier_id": "dossier-56e-american-airlines",
+      "parent_panel_id": "panel-56e-american-airlines",
+      "entity_id": "carrier-american-airlines",
+      "entity_name": "American Airlines",
+      "source_ids": [
+        "source-56e-atcr-may-2026",
+        "source-56e-dot-airline-dashboard"
+      ],
+      "tested_alternative_explanations": [
+        "Schedule mix",
+        "Airport exposure",
+        "Weather",
+        "Maintenance or staffing",
+        "Late inbound aircraft"
+      ],
+      "later_observations": [
+        "May 2026 American operating flights arrived on time 75.1 percent of the time in DOT's table.",
+        "DOT's dashboard records stated service commitments but does not verify delivery for individual disruptions."
+      ],
+      "compatibility": "Same carrier identity; annual cancellations, monthly on-time arrivals, and commitments use different denominators.",
+      "result": "The later month and commitment layer broaden the service record but do not explain the annual cancellation change or verify remedy delivery.",
+      "attribution": "Carrier-reported data compiled by DOT and BTS",
+      "validation_status": "Official DOT compilation; carrier-reported cause and commitment information remains attributed.",
+      "causal_boundary": "The later records test alternatives and deepen the entity record; they do not establish causation.",
+      "signal_id": "signal-56e-american-airlines-alternative-test",
+      "record_status": "Published",
+      "next_records": [
+        "Later full-year cancellation rate",
+        "Flight-level cause, route, airport, weather, and schedule controls",
+        "Eligible disruption counts and verified remedy delivery"
+      ]
+    },
+    {
+      "test_id": "test-56e-alaska-airlines",
+      "portfolio": "mobility",
+      "parent_dossier_id": "dossier-56e-alaska-airlines",
+      "parent_panel_id": "panel-56e-alaska-airlines",
+      "entity_id": "carrier-alaska-airlines",
+      "entity_name": "Alaska Airlines",
+      "source_ids": [
+        "source-56e-atcr-may-2026",
+        "source-56e-dot-airline-dashboard"
+      ],
+      "tested_alternative_explanations": [
+        "Hawaiian integration",
+        "Schedule mix",
+        "Weather and airport exposure",
+        "Maintenance or staffing"
+      ],
+      "later_observations": [
+        "DOT reported 82.4 percent on-time arrivals for Alaska operating flights in May 2026.",
+        "The May record operates after the certificate break and cannot silently extend the pre-integration series."
+      ],
+      "compatibility": "The carrier name continues, but the operating population changes after the single certificate.",
+      "result": "The later official record supports a post-integration observation while blocking a simple trend or causal reading across the certificate break.",
+      "attribution": "Carrier-reported data compiled by DOT and BTS",
+      "validation_status": "Official DOT compilation with the identity break explicitly disclosed.",
+      "causal_boundary": "The later records test alternatives and deepen the entity record; they do not establish causation.",
+      "signal_id": "signal-56e-alaska-airlines-alternative-test",
+      "record_status": "Published",
+      "next_records": [
+        "Post-integration full-year operating denominator",
+        "Separate branded and operating flight attribution",
+        "Route, airport, weather, cause, and verified remedy records"
+      ]
+    },
+    {
+      "test_id": "test-56e-jetblue-airways",
+      "portfolio": "mobility",
+      "parent_dossier_id": "dossier-56e-jetblue-airways",
+      "parent_panel_id": "panel-56e-jetblue-airways",
+      "entity_id": "carrier-jetblue-airways",
+      "entity_name": "JetBlue Airways",
+      "source_ids": [
+        "source-56e-atcr-may-2026",
+        "source-56e-dot-airline-dashboard"
+      ],
+      "tested_alternative_explanations": [
+        "Schedule reduction",
+        "Route and airport mix",
+        "Weather",
+        "Maintenance or staffing",
+        "Late inbound aircraft"
+      ],
+      "later_observations": [
+        "DOT reported 81.0 percent on-time arrivals for JetBlue in May 2026.",
+        "DOT also reported distinct baggage and wheelchair or scooter denominators that cannot be merged with cancellation performance."
+      ],
+      "compatibility": "Stable carrier identity; annual cancellation and monthly service measures remain separate.",
+      "result": "The May record shows a bounded later operating observation but does not isolate why the annual cancellation rate changed.",
+      "attribution": "Carrier-reported data compiled by DOT and BTS",
+      "validation_status": "Official DOT compilation; carrier reporting is not an independent causal determination.",
+      "causal_boundary": "The later records test alternatives and deepen the entity record; they do not establish causation.",
+      "signal_id": "signal-56e-jetblue-airways-alternative-test",
+      "record_status": "Published",
+      "next_records": [
+        "Later full-year cancellation and schedule denominator",
+        "Route, airport, weather, cause, maintenance, and crew controls",
+        "Complaint rates and verified remedy delivery"
+      ]
+    }
+  ]
+}

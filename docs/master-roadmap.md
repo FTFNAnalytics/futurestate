@@ -997,7 +997,8 @@ These are the next practical actions from the current project state.
 288. Complete Phase 56B entity-level operating panels. Status: complete and owner-only deployed; added twelve Published named panels, four cross-entity ranking holds, 17 official records, a 20-file archive, Research Watch 006, and a machine-readable panel ledger; verified the 950-page release contract and deployed Sites version 27.
 289. Complete Phase 56C entity driver and constraint dossiers. Status: complete and owner-only deployed; added twelve Published dossiers, four causal-inference holds, 20 primary-source profiles, 24 summaries, a 27-file archive, Research Watch 007, and machine-readable dossier and publication ledgers; verified the 1,012-page release contract and deployed Sites version 28.
 290. Complete Phase 56D repeat outcomes and alternative-explanation tests. Status: complete and owner-only deployed; screened twelve entity tests, published ten bounded findings, retained two entity tests and four portfolio claims In Review, added 20 primary-source profiles, 24 summaries, a 27-file archive, Research Watch 008, and machine-readable test and publication ledgers; verified the 1,074-page release contract and deployed Sites version 29.
-291. Begin Phase 56E second entity cohort and vertical replication. Status: next content gate; screen twelve additional entities for source sufficiency, then build the panel, driver-and-constraint dossier, and alternative-explanation test vertically for each retained entity.
+291. Complete Phase 56E second entity cohort and vertical replication. Status: complete locally; retained twelve of twelve screened entities, added 40 source profiles, 48 Published summaries, twelve panels, twelve dossiers, twelve alternative-explanation tests, four portfolio holds, Research Watch 009, four machine-readable ledgers, and a 51-file archive; verified the 1,204-page release contract.
+292. Begin Phase 56F cross-cohort coverage and missing-record closure. Status: next content gate; build one coverage ledger across all 24 entities, name the highest-value missing record for each, and close bounded agency, production-line, battery, and carrier operating gaps without creating rankings or scores.
 
 ## 10. Current Stage Map
 
@@ -1040,7 +1041,7 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a second private queue batch that turns promoted Phase 49 source records into bounded review candidates.
 - six Phase 50 bounded source-item signals spanning a DOE/Grants.gov opportunity, MAG local projections, USAspending award, NSF award, USGS gallium record, and Toronto planning application.
 - a frozen v0.1.1 release package with app version 0.1.1, deployment manifest, versioned session brief, release roadmap, local release-QA evidence, and Git checkpoint `4845597`.
-- a current `0.2.0-dev` build with 462 sources, 220 signals, 32 update entries, 163 Published signals, five public JSON exports, and 1,074 pages.
+- a current `0.2.0-dev` build with 502 sources, 260 signals, 33 update entries, 199 Published signals, five public JSON exports, and 1,204 pages.
 - a private 150-record source-candidate shelf across 15 evidence profiles, with all 150 first-pass triaged and zero automatic public promotions.
 - Source Monitor review-state groups and next actions plus Strong, Developing, and Weak Source Coverage summaries.
 - a passed v0.2 local release gate with a versioned manifest, repeatable release assertions, desktop/mobile browser evidence, repaired 44-pixel header targets, and a public-facing launch note plus limitations statement.
@@ -1242,7 +1243,9 @@ Next candidate work:
 - Phase 56C adds twelve Published entity driver and constraint dossiers, four causal-inference holds, Research Watch 007, and a verified 27-file archive while preserving attribution, independent-validation limits, and alternative explanations.
 - The verified Phase 56D contract is 1,074 pages, 462 sources, 220 signals, 163 Published, 57 In Review, 267 current Published-support sources, sixteen briefings, seven maps, thirteen research collections, 276 research documents, fifteen pathways across 19 Atlas surfaces, and 32 updates.
 - Phase 56D adds twelve entity-level alternative-explanation tests, four portfolio holds, Research Watch 008, and a verified 27-file archive while keeping incompatible methods and causal interpretations outside Published membership.
-- Phase 56E next: screen a second twelve-entity cohort and vertically replicate the panel, dossier, and alternative-explanation-test contracts for each retained entity.
+- The verified Phase 56E contract is 1,204 pages, 502 sources, 260 signals, 199 Published, 61 In Review, 307 current Published-support sources, seventeen briefings, seven maps, fourteen research collections, 324 research documents, fifteen pathways across 19 Atlas surfaces, and 33 updates.
+- Phase 56E retains twelve of twelve screened entities, adds 36 Published vertical layers, four portfolio holds, Research Watch 009, and a verified 51-file archive.
+- Phase 56F next: create a cross-cohort coverage ledger across all 24 entities and close the highest-value missing operating record for each in bounded portfolio batches.
 - Phase 55H, Phase 55R, Space Coast license, Arizona wastewater, Loudoun standards, and Nevada delivery remain scheduled inserts that do not pause the expansion queue.
 - Continue the NSTC and NAPMP recipient-level reconciliation, GAO prototype-OTA oversight trail, O-RAN external testing and adoption trail, PIV revision and pilot trail, Phoenix Fab 3 conversion trail, and Project Baccara downstream stages only where they serve a selected pathway or evidence gap.
 - Keep future In Review dependency-map details `noindex, follow` and outside the sitemap; local-system profiles remain qualitative prelaunch dossiers without a Published state.

@@ -72,6 +72,10 @@ const phase56CReviewPath = join(appRoot, "src", "data", "phase-56c-publication-r
 const phase56CDossiersPath = join(appRoot, "src", "data", "phase-56c-entity-dossiers.json");
 const phase56DReviewPath = join(appRoot, "src", "data", "phase-56d-publication-review.json");
 const phase56DTestsPath = join(appRoot, "src", "data", "phase-56d-alternative-tests.json");
+const phase56EReviewPath = join(appRoot, "src", "data", "phase-56e-publication-review.json");
+const phase56EPanelsPath = join(appRoot, "src", "data", "phase-56e-second-cohort-panels.json");
+const phase56EDossiersPath = join(appRoot, "src", "data", "phase-56e-second-cohort-dossiers.json");
+const phase56ETestsPath = join(appRoot, "src", "data", "phase-56e-second-cohort-tests.json");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
@@ -106,6 +110,10 @@ const phase56CReview = await readJson(phase56CReviewPath);
 const phase56CDossiers = await readJson(phase56CDossiersPath);
 const phase56DReview = await readJson(phase56DReviewPath);
 const phase56DTests = await readJson(phase56DTestsPath);
+const phase56EReview = await readJson(phase56EReviewPath);
+const phase56EPanels = await readJson(phase56EPanelsPath);
+const phase56EDossiers = await readJson(phase56EDossiersPath);
+const phase56ETests = await readJson(phase56ETestsPath);
 const evidenceGaps = await Promise.all(
   evidenceGapFiles.map((name) => readJson(join(evidenceGapDirectory, name))),
 );
@@ -724,6 +732,161 @@ check(
 check(
   phase56DReview.comparison_rule.includes("No causal effect, ranking, composite score, readiness score"),
   "Phase 56D publication review is missing the causal, comparison, and scoring stop rule.",
+);
+
+const phase56ESignals = phase56EReview.signal_decisions;
+const phase56ESignalIds = [...phase56ESignals.promoted, ...phase56ESignals.held];
+check(phase56EReview.source_count === 40, `Expected 40 Phase 56E source profiles, found ${phase56EReview.source_count}.`);
+check(phase56EReview.document_count === 48, `Expected 48 Phase 56E documents, found ${phase56EReview.document_count}.`);
+check(phase56EReview.entity_count === 12, `Expected twelve Phase 56E entities, found ${phase56EReview.entity_count}.`);
+check(phase56EReview.vertical_layer_count === 36, `Expected 36 Phase 56E entity layers, found ${phase56EReview.vertical_layer_count}.`);
+check(
+  phase56EReview.cohort_screen.screened === 12
+    && phase56EReview.cohort_screen.retained === 12
+    && phase56EReview.cohort_screen.held_for_insufficient_evidence === 0,
+  "Phase 56E cohort screen must retain all twelve screened entities with no insufficient-evidence holds.",
+);
+check(phase56ESignals.reviewed === 40, `Expected 40 Phase 56E signal decisions, found ${phase56ESignals.reviewed}.`);
+check(phase56ESignals.promoted.length === 36, `Expected 36 Phase 56E Published signals, found ${phase56ESignals.promoted.length}.`);
+check(phase56ESignals.held.length === 4, `Expected four Phase 56E held signals, found ${phase56ESignals.held.length}.`);
+check(new Set(phase56ESignalIds).size === 40, "Phase 56E signal decision IDs must be unique.");
+for (const id of phase56ESignals.promoted) {
+  check(signalStatusById.get(id) === "Published", `Phase 56E Published signal ${id} has the wrong status.`);
+}
+for (const id of phase56ESignals.held) {
+  check(signalStatusById.get(id) === "In Review", `Phase 56E held signal ${id} has the wrong status.`);
+}
+
+check(
+  phase56EPanels.panel_count === 12 && phase56EPanels.panels.length === 12,
+  "Phase 56E panel ledger must contain twelve entity panels.",
+);
+check(
+  phase56EDossiers.dossier_count === 12 && phase56EDossiers.dossiers.length === 12,
+  "Phase 56E dossier ledger must contain twelve entity dossiers.",
+);
+check(
+  phase56ETests.test_count === 12 && phase56ETests.tests.length === 12,
+  "Phase 56E test ledger must contain twelve alternative-explanation tests.",
+);
+const phase56EPanelEntityIds = new Set(phase56EPanels.panels.map((panel) => panel.entity_id));
+const phase56EDossierEntityIds = new Set(phase56EDossiers.dossiers.map((dossier) => dossier.entity_id));
+const phase56ETestEntityIds = new Set(phase56ETests.tests.map((test) => test.entity_id));
+check(phase56EPanelEntityIds.size === 12, "Phase 56E panels must preserve twelve unique stable entity IDs.");
+check(
+  [...phase56EPanelEntityIds].every((id) => phase56EDossierEntityIds.has(id) && phase56ETestEntityIds.has(id)),
+  "Every Phase 56E entity must resolve across the panel, dossier, and test ledgers.",
+);
+for (const panel of phase56EPanels.panels) {
+  check(
+    [
+      panel.panel_id,
+      panel.entity_id,
+      panel.indicator,
+      panel.unit,
+      panel.denominator,
+      panel.method,
+      panel.attribution,
+      panel.signal_id,
+      panel.comparison_boundary,
+    ].every(Boolean),
+    `Phase 56E panel ${panel.panel_id} is missing a measurement or publication-contract field.`,
+  );
+  check(
+    panel.source_ids.length >= 3
+      && panel.observations.length >= 3
+      && panel.reporting_breaks.length > 0
+      && panel.next_records.length > 0,
+    `Phase 56E panel ${panel.panel_id} is missing source, observation, break, or next-record coverage.`,
+  );
+}
+for (const dossier of phase56EDossiers.dossiers) {
+  check(
+    [
+      dossier.dossier_id,
+      dossier.parent_panel_id,
+      dossier.entity_id,
+      dossier.signal_id,
+      dossier.attribution,
+      dossier.temporal_boundary,
+    ].every(Boolean),
+    `Phase 56E dossier ${dossier.dossier_id} is missing its parent, attribution, or temporal boundary.`,
+  );
+  check(
+    dossier.source_ids.length === 4
+      && dossier.driver_candidates.length > 0
+      && dossier.constraints.length > 0
+      && dossier.alternative_explanations.length > 0
+      && dossier.next_records.length > 0,
+    `Phase 56E dossier ${dossier.dossier_id} is missing its four-record or driver-and-constraint contract.`,
+  );
+}
+for (const test of phase56ETests.tests) {
+  check(
+    [
+      test.test_id,
+      test.parent_dossier_id,
+      test.parent_panel_id,
+      test.entity_id,
+      test.signal_id,
+      test.compatibility,
+      test.result,
+      test.attribution,
+      test.validation_status,
+      test.causal_boundary,
+    ].every(Boolean),
+    `Phase 56E test ${test.test_id} is missing a compatibility, attribution, validation, or parent-contract field.`,
+  );
+  check(
+    test.source_ids.length === 2
+      && test.tested_alternative_explanations.length > 0
+      && test.later_observations.length === 2
+      && test.next_records.length > 0,
+    `Phase 56E test ${test.test_id} must preserve two later records, named alternatives, two observations, and next records.`,
+  );
+  check(
+    test.causal_boundary.includes("do not establish causation"),
+    `Phase 56E test ${test.test_id} is missing the causal-inference boundary.`,
+  );
+}
+const phase56ECollection = researchCollections.find(
+  (collection) => collection.id === "research-collection-second-entity-cohort-vertical-replication-2018-2026",
+);
+check(Boolean(phase56ECollection), "Phase 56E second-cohort research collection is missing.");
+if (phase56ECollection) {
+  check(phase56ECollection.document_ids.length === 48, `Expected 48 Phase 56E documents, found ${phase56ECollection.document_ids.length}.`);
+  const resolvedPhase56EDocuments = phase56ECollection.document_ids
+    .map((documentId) => researchDocumentById.get(documentId))
+    .filter(Boolean);
+  check(resolvedPhase56EDocuments.length === 48, `Expected all 48 Phase 56E documents to resolve, found ${resolvedPhase56EDocuments.length}.`);
+  check(
+    resolvedPhase56EDocuments.every((document) => document.record_status === "Published"),
+    "All Phase 56E research documents should be Published.",
+  );
+  check(
+    resolvedPhase56EDocuments.every((document) => document.capture_status === "Official link record"),
+    "Phase 56E research documents must use the official-link capture contract.",
+  );
+}
+check(
+  briefingStatusById.get("briefing-research-watch-009-second-cohort-vertical-replication") === "Published",
+  "Phase 56E second-cohort briefing should be Published.",
+);
+check(
+  phase56EReview.vertical_rule.includes("panel, driver-and-constraint dossier, and alternative-explanation test"),
+  "Phase 56E review is missing the vertical-replication rule.",
+);
+check(
+  phase56EReview.attribution_rule.includes("who made the claim"),
+  "Phase 56E review is missing the attribution rule.",
+);
+check(
+  phase56EReview.compatibility_rule.includes("Entity, unit, denominator, method, attribution, and observation window"),
+  "Phase 56E review is missing the compatibility rule.",
+);
+check(
+  phase56EReview.comparison_rule.includes("No causal effect, ranking, composite score, readiness score"),
+  "Phase 56E review is missing the causal, comparison, and scoring stop rule.",
 );
 
 for (const collection of researchCollections) {

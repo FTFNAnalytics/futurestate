@@ -376,12 +376,13 @@ Recommended active schedule:
 | Completed | Phase 56B | twelve named entity panels, four ranking holds, 17 official records, and Research Watch 006 |
 | Completed | Phase 56C | twelve entity driver and constraint dossiers, four causal holds, and Research Watch 007 |
 | Completed | Phase 56D | twelve alternative-explanation tests, six holds, Research Watch 008, and owner-only Sites version 29 |
-| Current content gate | Phase 56E | second twelve-entity cohort and vertical replication |
+| Completed locally | Phase 56E | second twelve-entity cohort, 36 vertical entity layers, four portfolio holds, and Research Watch 009 |
+| Current content gate | Phase 56F | cross-cohort coverage ledger and highest-value missing-record closure across 24 entities |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build, owner-only preview, and Phases 55S-56D aggressive expansion are complete locally and owner-only deployed. Phases 55A-56D established the authority, research, synthesis, pathway, evidence-gap, publication, navigation, export, operating-evidence, comparison-boundary, longitudinal-series, named-entity-panel, driver-and-constraint, and alternative-explanation-test foundations. The next non-public content gate is Phase 56E: a second twelve-entity cohort built vertically through those three entity layers. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build, owner-only preview, and Phases 55S-56D aggressive expansion are complete locally and owner-only deployed; Phase 56E is complete locally and ready for the same owner-only deployment gate. Phases 55A-56E established the authority, research, synthesis, pathway, evidence-gap, publication, navigation, export, operating-evidence, comparison-boundary, longitudinal-series, named-entity-panel, driver-and-constraint, alternative-explanation-test, and second-cohort vertical-replication foundations. The next non-public content gate is Phase 56F: a cross-cohort coverage and missing-record closure program across all 24 named entities. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -896,7 +897,7 @@ Completion receipt:
 - local content commit `9716a4ef19db8edc46950b32c23ee38a572440a5` is represented by exact private source projection `ed6345357651c4f870355fb166a985680a9588f7`;
 - owner-only Sites version 29 succeeded in deployment `appgdep_6a6417219bc8819190172e54ef9e166e` under custom access with one allowed owner and no groups.
 
-### Phase 56E: Second Entity Cohort And Vertical Replication - Next Content Gate
+### Phase 56E: Second Entity Cohort And Vertical Replication - Complete Locally
 
 Goal: apply the Phase 56B through Phase 56D contracts to a second twelve-entity cohort so content expansion continues without waiting for new records from the first cohort.
 
@@ -922,6 +923,38 @@ Exit criteria:
 - every Published claim discloses unit, period, geography, method, attribution, missing evidence, and reporting breaks;
 - each named alternative explanation is tested by a compatible record or retained as an explicit evidence gap;
 - every publication decision is represented in the review ledgers before sitemap or export membership changes;
+- the full local release and owner-only deployment gates pass.
+
+Completion receipt:
+
+- screened twelve candidates and retained all twelve at a four-primary-record minimum;
+- added VA, DOE, DOT, the F-35 Fort Worth, KC-46 Everett, and F-15EX St. Louis lines, Hornsdale, Victorian Big Battery, Dalrymple, American, Alaska, and JetBlue;
+- published twelve panels, twelve driver-and-constraint dossiers, and twelve alternative-explanation tests under stable entity IDs;
+- retained four cross-entity portfolio interpretations `In Review`;
+- added 40 source profiles, 48 Published summaries, Research Watch 009, one collection, four machine-readable ledgers, one update, and a verified 51-file archive;
+- release-verified 1,204 pages, 502 sources, 260 signals, 199 Published signals, 61 In Review signals, 324 research documents, and 307 current Published-support sources.
+
+### Phase 56F: Cross-Cohort Coverage And Missing-Record Closure - Next Content Gate
+
+Goal: turn the two twelve-entity cohorts into a 24-entity coverage program that closes the most important missing operating records without creating a league table.
+
+Deliverables:
+
+- create one coverage ledger across all 24 entities and the panel, dossier, and test layers;
+- record the strongest current compatible outcome, closure, input, denominator, attribution, and validation evidence for each entity;
+- identify one highest-value missing record per entity;
+- execute bounded closure batches across agency control operation, manufacturing line inputs and accepted output, battery availability and dispatch, and carrier service-delivery denominators;
+- route unavailable records to explicit evidence gaps with a named source and reopening rule;
+- publish only independently useful entity findings after separate record-level review;
+- deepen the collections, briefings, pathways, topics, comparison protocol, and update log from the resulting records.
+
+Exit criteria:
+
+- all 24 entities have a current coverage decision and named next record;
+- no broad context source is added where a specific closure or outcome record is required;
+- compatibility, attribution, identity, denominator, and observation-window breaks remain visible;
+- cross-cohort comparisons remain held unless the underlying records share a genuinely common measurement contract;
+- no causal effect, ranking, composite score, or readiness score is created;
 - the full local release and owner-only deployment gates pass.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
@@ -1030,11 +1063,11 @@ v0.2 is successful when:
 - release QA remains repeatable,
 - no automated process publishes claims without review.
 
-The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T brought every topic to a four-signal and two-Published-record floor. Phase 55U added three evidence-dense local systems, 26 official sources, 15 signals, three pathways and gaps, one briefing, and one map. Phase 55V added an 18-document cross-corridor shelf, a 21-file archive, a new synthesis briefing, and downstream evidence integration. Phase 55W added the record-level publication ledger, promoted 12 bounded signals, published one briefing and one map, expanded the pathway network to 15, and made the larger corpus discoverable through separate shelves, filters, and five exports. Phase 55X added 24 implementation records and twelve signals across three local systems. Phase 55Y added 24 operating and receiving-system records. Phase 55Z added 32 operating-outcome records, sixteen signals, a comparison-boundary map, and an explicit four-record hold set. Phase 56A added 48 observations in sixteen three-record series, twenty signal decisions, Research Watch 005, and a 51-file archive. Phase 56B added twelve Published entity panels, four ranking holds, 17 official records, Research Watch 006, and a 20-file archive. Phase 56C added twelve Published driver-and-constraint dossiers, four causal-inference holds, 20 source profiles, 24 summaries, Research Watch 007, and a 27-file archive. Phase 56D added twelve entity-level alternative-explanation tests, four portfolio holds, 20 source profiles, 24 summaries, Research Watch 008, and a 27-file archive. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
+The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T brought every topic to a four-signal and two-Published-record floor. Phase 55U added three evidence-dense local systems, 26 official sources, 15 signals, three pathways and gaps, one briefing, and one map. Phase 55V added an 18-document cross-corridor shelf, a 21-file archive, a new synthesis briefing, and downstream evidence integration. Phase 55W added the record-level publication ledger, promoted 12 bounded signals, published one briefing and one map, expanded the pathway network to 15, and made the larger corpus discoverable through separate shelves, filters, and five exports. Phase 55X added 24 implementation records and twelve signals across three local systems. Phase 55Y added 24 operating and receiving-system records. Phase 55Z added 32 operating-outcome records, sixteen signals, a comparison-boundary map, and an explicit four-record hold set. Phase 56A added 48 observations in sixteen three-record series, twenty signal decisions, Research Watch 005, and a 51-file archive. Phase 56B added twelve Published entity panels, four ranking holds, 17 official records, Research Watch 006, and a 20-file archive. Phase 56C added twelve Published driver-and-constraint dossiers, four causal-inference holds, 20 source profiles, 24 summaries, Research Watch 007, and a 27-file archive. Phase 56D added twelve entity-level alternative-explanation tests, four portfolio holds, 20 source profiles, 24 summaries, Research Watch 008, and a 27-file archive. Phase 56E added a second twelve-entity cohort, 36 Published vertical layers, four portfolio holds, 40 source profiles, 48 summaries, Research Watch 009, and a 51-file archive. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
 
 ## Immediate Next Step
 
-Begin Phase 56E with a second twelve-entity cohort. Screen the entire cohort for source sufficiency first, then build each retained entity vertically through a named panel, driver-and-constraint dossier, and alternative-explanation test. Target three additional federal agencies, three manufacturers with named facility or line evidence, three battery assets with stable identity, and three passenger carriers with compatible operating and service-delivery records. Route insufficient entities to explicit holds rather than lowering evidence requirements.
+Begin Phase 56F with a cross-cohort coverage ledger for all 24 named entities. Identify the strongest compatible closure or outcome already present and the single highest-value missing record for each entity. Open bounded batches by portfolio, beginning with records that expose agency control operation, line-level inputs and accepted output, battery availability and dispatch, or carrier service-delivery denominators. Do not add broad context where the missing requirement is a specific operating record.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 

@@ -19,7 +19,9 @@
     "Phase 56C adds entity-matched controls, inputs, constraints, later observations, attribution, independent-validation limits, and alternative explanations.",
     "Temporal order is preserved without converting association into causation, ranking, composite scoring, or readiness scoring.",
     "Phase 56D adds later observations and explicit tests of named Phase 56C alternative explanations for the same twelve entities.",
-    "Compatibility, attribution, validation status, missing denominators, and series breaks remain visible before any interpretation."
+    "Compatibility, attribution, validation status, missing denominators, and series breaks remain visible before any interpretation.",
+    "Phase 56E adds a second vertically replicated cohort: Lockheed Martin F-35 Fort Worth final-assembly line, Boeing KC-46A Everett production line, Boeing F-15EX St. Louis production line.",
+    "Every retained entity carries a panel, a driver-and-constraint dossier, and an alternative-explanation test under one stable identity."
   ],
   "primary_topics": [
     "Advanced Manufacturing",
@@ -52,7 +54,16 @@
     "signal-56c-current-applications-drivers",
     "signal-56c-island-components-drivers",
     "signal-56c-monaghan-medical-drivers",
-    "signal-56d-monaghan-medical-repeat-test"
+    "signal-56d-monaghan-medical-repeat-test",
+    "signal-56e-f35-fort-worth-line-panel",
+    "signal-56e-kc46-everett-line-panel",
+    "signal-56e-f15ex-st-louis-line-panel",
+    "signal-56e-f35-fort-worth-line-dossier",
+    "signal-56e-kc46-everett-line-dossier",
+    "signal-56e-f15ex-st-louis-line-dossier",
+    "signal-56e-f35-fort-worth-line-alternative-test",
+    "signal-56e-kc46-everett-line-alternative-test",
+    "signal-56e-f15ex-st-louis-line-alternative-test"
   ],
   "source_ids": [
     "source-nsf-award-search-api",
@@ -89,7 +100,19 @@
     "source-56d-island-components-quality-clauses-2025",
     "source-56d-island-components-certifications-2026",
     "source-56d-monaghan-fda-tplc-2025",
-    "source-56d-monaghan-iso14001-boundary-2024"
+    "source-56d-monaghan-iso14001-boundary-2024",
+    "source-56e-f35-gao-2024",
+    "source-56e-f35-gao-2025",
+    "source-56e-f35-lockheed-deliveries-2025",
+    "source-56e-kc46-usaf-budget-fy2025",
+    "source-56e-kc46-gao-2026",
+    "source-56e-kc46-100th-delivery-2025",
+    "source-56e-f15ex-first-deliveries-2021",
+    "source-56e-f15ex-four-deliveries-2023",
+    "source-56e-f15ex-gao-2025",
+    "source-56e-f35-gao-sustainment-2026",
+    "source-56e-kc46-105th-delivery-2026",
+    "source-56e-f15ex-production-resumes-2025"
   ],
   "organization_ids": [
     "org-nist",
@@ -106,7 +129,8 @@
     "briefing-research-watch-005-longitudinal-operating-series",
     "briefing-research-watch-006-entity-operating-panels",
     "briefing-research-watch-007-entity-driver-constraint-dossiers",
-    "briefing-research-watch-008-repeat-outcomes-alternative-tests"
+    "briefing-research-watch-008-repeat-outcomes-alternative-tests",
+    "briefing-research-watch-009-second-cohort-vertical-replication"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -118,7 +142,8 @@
     "research-collection-longitudinal-operating-series-2020-2025",
     "research-collection-entity-operating-panels-2021-2026",
     "research-collection-entity-driver-constraint-dossiers-2021-2026",
-    "research-collection-repeat-outcomes-alternative-explanation-tests-2010-2026"
+    "research-collection-repeat-outcomes-alternative-explanation-tests-2010-2026",
+    "research-collection-second-entity-cohort-vertical-replication-2018-2026"
   ],
   "evidence_gap_ids": [
     "gap-003",
@@ -170,6 +195,11 @@
       "stage": "Alternative-explanation test",
       "current_state": "Twelve entity tests map later records to named competing explanations.",
       "boundary": "A test may narrow an explanation without isolating cause or producing a score."
+    },
+    {
+      "stage": "Second-cohort vertical replication",
+      "current_state": "Twelve additional entities passed a four-primary-record screen and received all three evidence layers.",
+      "boundary": "Entity depth can increase without making different entities comparable."
     }
   ],
   "evidence_limits": [
@@ -184,7 +214,9 @@
     "A named intervention, control, input, or response does not by itself explain an observed outcome.",
     "Company and operator claims remain attributed until independently validated.",
     "A recommendation status, certification, supplier clause, incident response, monthly cause mix, or complaint count does not create a common performance measure.",
-    "Different units, methods, identities, observation windows, and attribution levels remain split."
+    "Different units, methods, identities, observation windows, and attribution levels remain split.",
+    "The second cohort preserves attribution, unit, denominator, method, observation window, reporting breaks, and identity changes.",
+    "A vertical entity record does not authorize cross-entity ranking, composite scoring, readiness scoring, or causal inference."
   ],
   "next_records": [
     "Institute research outputs, datasets, replications, patents, licensing, industry collaborations, material qualification, and manufacturing-transfer records.",
@@ -200,6 +232,8 @@
     "Repeated outcomes using the same entity, unit, denominator, method, and observation window.",
     "Independent validation of implementation, control operation, corrective-action closure, and downstream effects.",
     "Later observations using the same entity, unit, denominator, method, and observation window.",
-    "Independent control-operation, closure, line-performance, availability, dispatch, and service-delivery evidence."
+    "Independent control-operation, closure, line-performance, availability, dispatch, and service-delivery evidence.",
+    "Later observations using the same entity, unit, denominator, method, attribution, and observation window.",
+    "Independent closure and outcome records for the named controls, production lines, battery assets, or carrier services."
   ]
 }

@@ -1,0 +1,465 @@
+{
+  "phase": "56E",
+  "captured_date": "2026-07-24",
+  "dossier_count": 12,
+  "dossiers": [
+    {
+      "dossier_id": "dossier-56e-va-information-security",
+      "portfolio": "ai_cyber",
+      "parent_panel_id": "panel-56e-va-information-security",
+      "entity_id": "agency-va",
+      "entity_name": "Department of Veterans Affairs",
+      "source_ids": [
+        "source-56e-va-fisma-fy2022",
+        "source-56e-va-fisma-fy2023",
+        "source-56e-va-fisma-fy2024",
+        "source-56e-va-cio-open-recommendations-2026"
+      ],
+      "driver_candidates": [
+        "Agency-wide corrective-action program",
+        "System and cloud authorization practices",
+        "Identity, access, configuration, and remediation controls"
+      ],
+      "constraints": [
+        "Changing samples and metrics",
+        "Large federated healthcare environment",
+        "Open recommendations with different age and severity"
+      ],
+      "alternative_explanations": [
+        "Changed audit scope",
+        "Recommendation consolidation or reopening",
+        "Different system populations",
+        "Corrective work not captured by headline counts"
+      ],
+      "attribution": "VA OIG and GAO",
+      "temporal_boundary": "Sequence is preserved without converting temporal order into causal proof.",
+      "signal_id": "signal-56e-va-information-security-dossier",
+      "record_status": "Published",
+      "next_records": [
+        "FY 2025 or FY 2026 FISMA results",
+        "Recommendation-level closures and tested control operation",
+        "Incidents, recovery, affected services, and mission effects"
+      ]
+    },
+    {
+      "dossier_id": "dossier-56e-doe-information-security",
+      "portfolio": "ai_cyber",
+      "parent_panel_id": "panel-56e-doe-information-security",
+      "entity_id": "agency-doe",
+      "entity_name": "Department of Energy",
+      "source_ids": [
+        "source-56e-doe-fisma-fy2023",
+        "source-56e-doe-fisma-fy2024",
+        "source-56e-doe-management-letter-fy2025",
+        "source-56e-doe-cyber-sharing-2026"
+      ],
+      "driver_candidates": [
+        "Corrective-action execution",
+        "Access control and financial-system safeguards",
+        "Threat-indicator policies and automated sharing"
+      ],
+      "constraints": [
+        "Repeat findings",
+        "Different reporting systems",
+        "Information-quality fatigue and control scope"
+      ],
+      "alternative_explanations": [
+        "Scope expansion",
+        "Changed metric design",
+        "Repeat versus new finding classification",
+        "Narrow statutory compliance despite broader control weaknesses"
+      ],
+      "attribution": "DOE OIG",
+      "temporal_boundary": "Sequence is preserved without converting temporal order into causal proof.",
+      "signal_id": "signal-56e-doe-information-security-dossier",
+      "record_status": "Published",
+      "next_records": [
+        "FY 2025 FISMA evaluation",
+        "Finding-level closure and repeat-finding resolution",
+        "System incidents, recovery, mission and laboratory service effects"
+      ]
+    },
+    {
+      "dossier_id": "dossier-56e-dot-information-security",
+      "portfolio": "ai_cyber",
+      "parent_panel_id": "panel-56e-dot-information-security",
+      "entity_id": "agency-dot",
+      "entity_name": "Department of Transportation",
+      "source_ids": [
+        "source-56e-dot-fisma-fy2023",
+        "source-56e-dot-fisma-fy2024",
+        "source-56e-dot-fisma-fy2025",
+        "source-56e-dot-continuous-monitoring-2024"
+      ],
+      "driver_candidates": [
+        "Plans of action and milestones",
+        "Asset and software inventory",
+        "Logging, incident response, and contingency planning"
+      ],
+      "constraints": [
+        "Safety-sensitive NAS monitoring",
+        "Federated operating administrations",
+        "Changing system samples and closure dates"
+      ],
+      "alternative_explanations": [
+        "Expanded testing",
+        "Metric changes",
+        "Component variation",
+        "Safety constraints on monitoring frequency"
+      ],
+      "attribution": "DOT OIG and its independent auditor",
+      "temporal_boundary": "Sequence is preserved without converting temporal order into causal proof.",
+      "signal_id": "signal-56e-dot-information-security-dossier",
+      "record_status": "Published",
+      "next_records": [
+        "FY 2026 annual review",
+        "Closure evidence for the monitoring recommendations",
+        "System incidents, recovery, affected transportation services, and mission outcomes"
+      ]
+    },
+    {
+      "dossier_id": "dossier-56e-f35-fort-worth-line",
+      "portfolio": "manufacturing",
+      "parent_panel_id": "panel-56e-f35-fort-worth-line",
+      "entity_id": "manufacturer-lockheed-f35-fort-worth",
+      "entity_name": "Lockheed Martin F-35 Fort Worth final-assembly line",
+      "source_ids": [
+        "source-56e-f35-gao-2024",
+        "source-56e-f35-gao-2025",
+        "source-56e-f35-lockheed-deliveries-2025",
+        "source-56e-f35-gao-sustainment-2026"
+      ],
+      "driver_candidates": [
+        "Technology Refresh 3 completion",
+        "Parts and engine availability",
+        "Acceptance and rework flow"
+      ],
+      "constraints": [
+        "Supplier shortages",
+        "Software and modernization maturity",
+        "Production capacity and incentive design"
+      ],
+      "alternative_explanations": [
+        "Backlog release rather than new-period throughput",
+        "Acceptance-policy changes",
+        "Parts arrivals",
+        "Schedule and contract incentives"
+      ],
+      "attribution": "GAO, DOD program records, and Lockheed Martin for the 2025 statement",
+      "temporal_boundary": "Sequence is preserved without converting temporal order into causal proof.",
+      "signal_id": "signal-56e-f35-fort-worth-line-dossier",
+      "record_status": "Published",
+      "next_records": [
+        "Aircraft due versus accepted by month",
+        "Fort Worth labor hours, rework, first-pass yield, and line inventory",
+        "TR-3 capability acceptance and supplier shortage series"
+      ]
+    },
+    {
+      "dossier_id": "dossier-56e-kc46-everett-line",
+      "portfolio": "manufacturing",
+      "parent_panel_id": "panel-56e-kc46-everett-line",
+      "entity_id": "manufacturer-boeing-kc46-everett",
+      "entity_name": "Boeing KC-46A Everett production line",
+      "source_ids": [
+        "source-56e-kc46-usaf-budget-fy2025",
+        "source-56e-kc46-gao-2026",
+        "source-56e-kc46-100th-delivery-2025",
+        "source-56e-kc46-105th-delivery-2026"
+      ],
+      "driver_candidates": [
+        "Everett sustaining-rate plan",
+        "Acceptance and modification flow",
+        "Boom and remote-vision corrective work"
+      ],
+      "constraints": [
+        "Critical deficiencies",
+        "Quality issues",
+        "Testing before a full-rate decision"
+      ],
+      "alternative_explanations": [
+        "Fielding lag after delivery",
+        "Modification or rework timing",
+        "Acceptance scheduling",
+        "Budget plan changes"
+      ],
+      "attribution": "U.S. Air Force, Department of the Air Force, and GAO",
+      "temporal_boundary": "Sequence is preserved without converting temporal order into causal proof.",
+      "signal_id": "signal-56e-kc46-everett-line-dossier",
+      "record_status": "Published",
+      "next_records": [
+        "Monthly due and accepted deliveries",
+        "Rework, quality escapes, labor, cost, and modification hours",
+        "Deficiency closure and full-rate decision evidence"
+      ]
+    },
+    {
+      "dossier_id": "dossier-56e-f15ex-st-louis-line",
+      "portfolio": "manufacturing",
+      "parent_panel_id": "panel-56e-f15ex-st-louis-line",
+      "entity_id": "manufacturer-boeing-f15ex-st-louis",
+      "entity_name": "Boeing F-15EX St. Louis production line",
+      "source_ids": [
+        "source-56e-f15ex-first-deliveries-2021",
+        "source-56e-f15ex-four-deliveries-2023",
+        "source-56e-f15ex-gao-2025",
+        "source-56e-f15ex-production-resumes-2025"
+      ],
+      "driver_candidates": [
+        "Production-rate increase plan",
+        "Fuselage rework and quality control",
+        "Acceptance and delivery scheduling"
+      ],
+      "constraints": [
+        "St. Louis labor interruption",
+        "Quality deficiencies",
+        "Low-rate production ramp"
+      ],
+      "alternative_explanations": [
+        "Delivery timing rather than assembly completion",
+        "Acceptance backlog",
+        "Supplier and rework flow",
+        "Strike-related versus pre-existing schedule effects"
+      ],
+      "attribution": "U.S. Air Force and GAO",
+      "temporal_boundary": "Sequence is preserved without converting temporal order into causal proof.",
+      "signal_id": "signal-56e-f15ex-st-louis-line-dossier",
+      "record_status": "Published",
+      "next_records": [
+        "Monthly planned and accepted deliveries",
+        "Line labor hours, rework, yield, supplier constraints, and cost",
+        "Post-restart delivery cadence and quality findings"
+      ]
+    },
+    {
+      "dossier_id": "dossier-56e-hornsdale-power-reserve",
+      "portfolio": "infrastructure",
+      "parent_panel_id": "panel-56e-hornsdale-power-reserve",
+      "entity_id": "battery-hornsdale-power-reserve",
+      "entity_name": "Hornsdale Power Reserve",
+      "source_ids": [
+        "source-56e-hornsdale-aemo-2019-preliminary",
+        "source-56e-hornsdale-aemo-2020-final",
+        "source-56e-hornsdale-aer-2022",
+        "source-56e-hornsdale-sa-current"
+      ],
+      "driver_candidates": [
+        "Fast inverter response",
+        "Control settings",
+        "Expansion from the original installation"
+      ],
+      "constraints": [
+        "State of charge and enabled service",
+        "Technical offer accuracy",
+        "Service-specific response requirements"
+      ],
+      "alternative_explanations": [
+        "Event conditions",
+        "Control-setting changes",
+        "Dispatch instructions",
+        "Expansion effects"
+      ],
+      "attribution": "AEMO, Australian Energy Regulator, and Government of South Australia",
+      "temporal_boundary": "Sequence is preserved without converting temporal order into causal proof.",
+      "signal_id": "signal-56e-hornsdale-power-reserve-dossier",
+      "record_status": "Published",
+      "next_records": [
+        "Annual availability and dispatch",
+        "Service enablement and delivery by interval",
+        "Cycling, degradation, revenue, safety, and customer outcomes"
+      ]
+    },
+    {
+      "dossier_id": "dossier-56e-victorian-big-battery",
+      "portfolio": "infrastructure",
+      "parent_panel_id": "panel-56e-victorian-big-battery",
+      "entity_id": "battery-victorian-big-battery",
+      "entity_name": "Victorian Big Battery",
+      "source_ids": [
+        "source-56e-vbb-esv-fire-findings-2021",
+        "source-56e-vbb-aemo-registration-2021",
+        "source-56e-vbb-aemo-operational-2021",
+        "source-56e-vbb-esv-investigations"
+      ],
+      "driver_candidates": [
+        "Commissioning and isolation work",
+        "System Integrity Protection Scheme registration",
+        "Automatic emergency reserve controls"
+      ],
+      "constraints": [
+        "Thermal-event risk",
+        "Commissioning sequence",
+        "Missing public annual operating series"
+      ],
+      "alternative_explanations": [
+        "Commissioning-specific conditions",
+        "Control or isolation changes",
+        "Registration timing",
+        "Scheme dispatch rules"
+      ],
+      "attribution": "Energy Safe Victoria and AEMO",
+      "temporal_boundary": "Sequence is preserved without converting temporal order into causal proof.",
+      "signal_id": "signal-56e-victorian-big-battery-dossier",
+      "record_status": "Published",
+      "next_records": [
+        "Corrective-action closure",
+        "Annual availability, dispatch, and cycling",
+        "Degradation, revenue, scheme activation, safety, and customer effects"
+      ]
+    },
+    {
+      "dossier_id": "dossier-56e-dalrymple-escri-bess",
+      "portfolio": "infrastructure",
+      "parent_panel_id": "panel-56e-dalrymple-escri-bess",
+      "entity_id": "battery-dalrymple-escri-sa",
+      "entity_name": "Dalrymple ESCRI-SA Battery Energy Storage System",
+      "source_ids": [
+        "source-56e-dalrymple-arena-operational-2020",
+        "source-56e-dalrymple-aemo-minimum-demand-2020",
+        "source-56e-dalrymple-arena-final-2021",
+        "source-56e-dalrymple-arena-retrospective-2021"
+      ],
+      "driver_candidates": [
+        "Fast frequency response",
+        "Islanding and local supply",
+        "Multiple market and network services"
+      ],
+      "constraints": [
+        "Short energy duration",
+        "State of charge",
+        "Event and market-window selection"
+      ],
+      "alternative_explanations": [
+        "Network event mix",
+        "Enabled service and dispatch rules",
+        "State-of-charge management",
+        "Project reporting window"
+      ],
+      "attribution": "ElectraNet project reporting through ARENA and independent AEMO observations",
+      "temporal_boundary": "Sequence is preserved without converting temporal order into causal proof.",
+      "signal_id": "signal-56e-dalrymple-escri-bess-dossier",
+      "record_status": "Published",
+      "next_records": [
+        "Later availability, dispatch, and islanding events",
+        "State-of-charge and degradation series",
+        "Revenue, avoided cost, reliability, and customer-outcome denominators"
+      ]
+    },
+    {
+      "dossier_id": "dossier-56e-american-airlines",
+      "portfolio": "mobility",
+      "parent_panel_id": "panel-56e-american-airlines",
+      "entity_id": "carrier-american-airlines",
+      "entity_name": "American Airlines",
+      "source_ids": [
+        "source-56e-atcr-full-year-2024",
+        "source-56e-atcr-full-year-2025",
+        "source-56e-atcr-may-2026",
+        "source-56e-dot-airline-dashboard"
+      ],
+      "driver_candidates": [
+        "Schedule and network design",
+        "Airport and national-system exposure",
+        "Maintenance, crew, and late-aircraft recovery"
+      ],
+      "constraints": [
+        "Weather and congestion",
+        "Partner-operation attribution",
+        "No public flight-level causal assignment in the panel"
+      ],
+      "alternative_explanations": [
+        "Schedule mix",
+        "Airport exposure",
+        "Weather",
+        "Maintenance or staffing",
+        "Late inbound aircraft"
+      ],
+      "attribution": "Carrier-reported data compiled by DOT and BTS",
+      "temporal_boundary": "Sequence is preserved without converting temporal order into causal proof.",
+      "signal_id": "signal-56e-american-airlines-dossier",
+      "record_status": "Published",
+      "next_records": [
+        "Later full-year cancellation rate",
+        "Flight-level cause, route, airport, weather, and schedule controls",
+        "Eligible disruption counts and verified remedy delivery"
+      ]
+    },
+    {
+      "dossier_id": "dossier-56e-alaska-airlines",
+      "portfolio": "mobility",
+      "parent_panel_id": "panel-56e-alaska-airlines",
+      "entity_id": "carrier-alaska-airlines",
+      "entity_name": "Alaska Airlines",
+      "source_ids": [
+        "source-56e-atcr-full-year-2024",
+        "source-56e-atcr-full-year-2025",
+        "source-56e-atcr-may-2026",
+        "source-56e-dot-airline-dashboard"
+      ],
+      "driver_candidates": [
+        "Schedule and network design",
+        "Integration and certificate transition",
+        "Airport, weather, maintenance, crew, and recovery conditions"
+      ],
+      "constraints": [
+        "Identity break inside the 2025 annual period",
+        "Partner and brand attribution",
+        "No common service-quality composite"
+      ],
+      "alternative_explanations": [
+        "Hawaiian integration",
+        "Schedule mix",
+        "Weather and airport exposure",
+        "Maintenance or staffing"
+      ],
+      "attribution": "Carrier-reported data compiled by DOT and BTS",
+      "temporal_boundary": "Sequence is preserved without converting temporal order into causal proof.",
+      "signal_id": "signal-56e-alaska-airlines-dossier",
+      "record_status": "Published",
+      "next_records": [
+        "Post-integration full-year operating denominator",
+        "Separate branded and operating flight attribution",
+        "Route, airport, weather, cause, and verified remedy records"
+      ]
+    },
+    {
+      "dossier_id": "dossier-56e-jetblue-airways",
+      "portfolio": "mobility",
+      "parent_panel_id": "panel-56e-jetblue-airways",
+      "entity_id": "carrier-jetblue-airways",
+      "entity_name": "JetBlue Airways",
+      "source_ids": [
+        "source-56e-atcr-full-year-2024",
+        "source-56e-atcr-full-year-2025",
+        "source-56e-atcr-may-2026",
+        "source-56e-dot-airline-dashboard"
+      ],
+      "driver_candidates": [
+        "Schedule and network concentration",
+        "Airport and national-system exposure",
+        "Maintenance, crew, and late-aircraft recovery"
+      ],
+      "constraints": [
+        "Changing flight denominator",
+        "Northeast weather and congestion exposure",
+        "No public matched flight-level causal model"
+      ],
+      "alternative_explanations": [
+        "Schedule reduction",
+        "Route and airport mix",
+        "Weather",
+        "Maintenance or staffing",
+        "Late inbound aircraft"
+      ],
+      "attribution": "Carrier-reported data compiled by DOT and BTS",
+      "temporal_boundary": "Sequence is preserved without converting temporal order into causal proof.",
+      "signal_id": "signal-56e-jetblue-airways-dossier",
+      "record_status": "Published",
+      "next_records": [
+        "Later full-year cancellation and schedule denominator",
+        "Route, airport, weather, cause, maintenance, and crew controls",
+        "Complaint rates and verified remedy delivery"
+      ]
+    }
+  ]
+}

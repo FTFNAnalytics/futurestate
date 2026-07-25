@@ -292,6 +292,8 @@ Every expansion wave must:
 4. Preserve the completed Phase 55U three-corridor local-systems network and its dated stop rules.
 5. Preserve the completed Phase 55V cross-corridor infrastructure-conversion research collection.
 6. Preserve the completed Phase 55W publication ledger, discovery surfaces, pathways, and export contract.
-7. Begin Phase 55X with three to five evidence-dense dossiers selected from under-connected reader journeys.
-8. Use the authority backlog to close named dossier-specific gaps.
-9. Continue to insert dated checks without pausing the active expansion queue.
+7. Preserve the completed Phase 55X through Phase 55Z implementation, receiving-system, and comparative-outcome collections.
+8. Preserve the completed Phase 56A longitudinal series, Phase 56B panels, Phase 56C dossiers, Phase 56D tests, and Phase 56E second-cohort vertical replication.
+9. Begin Phase 56F with one cross-cohort coverage ledger across all 24 named entities.
+10. Use the authority backlog and new official research only to close the highest-value missing operating record named for each entity.
+11. Continue to insert dated checks without pausing the active expansion queue.

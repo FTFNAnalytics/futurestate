@@ -1,0 +1,451 @@
+{
+  "phase": "56E",
+  "captured_date": "2026-07-24",
+  "cohort_screen": {
+    "screened": 12,
+    "retained": 12,
+    "held_for_insufficient_evidence": 0,
+    "minimum_primary_records_per_entity": 4
+  },
+  "panel_count": 12,
+  "panels": [
+    {
+      "panel_id": "panel-56e-va-information-security",
+      "portfolio": "ai_cyber",
+      "entity_id": "agency-va",
+      "entity_name": "Department of Veterans Affairs",
+      "entity_type": "Federal agency",
+      "scope": "VA agency information-security program",
+      "indicator": "Oversight findings, recommendations, and tested-system scope",
+      "unit": "Annual oversight record",
+      "denominator": "The systems, facilities, cloud services, metrics, and recommendation inventory stated in each record",
+      "period": "Fiscal years 2022-2024 and January 2026",
+      "method": "Independent IG annual evaluations plus GAO open-recommendation status",
+      "attribution": "VA OIG and GAO",
+      "source_ids": [
+        "source-56e-va-fisma-fy2022",
+        "source-56e-va-fisma-fy2023",
+        "source-56e-va-fisma-fy2024"
+      ],
+      "observations": [
+        "FY 2022: annual FISMA audit baseline",
+        "FY 2023: 25 recommendations after testing 45 systems",
+        "FY 2024: 23 recommendations after testing 49 applications and systems",
+        "January 2026: 38 open CIO recommendations across subjects and vintages"
+      ],
+      "reporting_breaks": [
+        "Tested systems increased from 45 to 49 between the stated FY 2023 and FY 2024 records.",
+        "GAO's CIO inventory is not the annual FISMA recommendation denominator."
+      ],
+      "signal_id": "signal-56e-va-information-security-panel",
+      "record_status": "Published",
+      "comparison_boundary": "Within-entity observations only; no cross-entity ranking, composite, or readiness score.",
+      "next_records": [
+        "FY 2025 or FY 2026 FISMA results",
+        "Recommendation-level closures and tested control operation",
+        "Incidents, recovery, affected services, and mission effects"
+      ]
+    },
+    {
+      "panel_id": "panel-56e-doe-information-security",
+      "portfolio": "ai_cyber",
+      "entity_id": "agency-doe",
+      "entity_name": "Department of Energy",
+      "entity_type": "Federal agency",
+      "scope": "DOE unclassified cybersecurity program",
+      "indicator": "Annual program weaknesses, recommendations, and bounded control reviews",
+      "unit": "Oversight finding or determination",
+      "denominator": "The audit scope and metric set declared by DOE OIG",
+      "period": "Fiscal years 2023-2025 and April 2026",
+      "method": "DOE OIG evaluations and consolidated-audit management letter",
+      "attribution": "DOE OIG",
+      "source_ids": [
+        "source-56e-doe-fisma-fy2023",
+        "source-56e-doe-fisma-fy2024",
+        "source-56e-doe-management-letter-fy2025"
+      ],
+      "observations": [
+        "FY 2023: continuing program weaknesses",
+        "FY 2024: 44 prior recommendations remained and 79 new recommendations were issued",
+        "FY 2025 management letter: 33 cyber findings, including 13 repeat findings",
+        "April 2026: reviewed Cybersecurity Act information-sharing actions were implemented"
+      ],
+      "reporting_breaks": [
+        "The FY 2025 management letter is a financial-audit record, not the annual FISMA metric set.",
+        "The 2026 information-sharing review covers a narrower statutory control domain."
+      ],
+      "signal_id": "signal-56e-doe-information-security-panel",
+      "record_status": "Published",
+      "comparison_boundary": "Within-entity observations only; no cross-entity ranking, composite, or readiness score.",
+      "next_records": [
+        "FY 2025 FISMA evaluation",
+        "Finding-level closure and repeat-finding resolution",
+        "System incidents, recovery, mission and laboratory service effects"
+      ]
+    },
+    {
+      "panel_id": "panel-56e-dot-information-security",
+      "portfolio": "ai_cyber",
+      "entity_id": "agency-dot",
+      "entity_name": "Department of Transportation",
+      "entity_type": "Federal agency",
+      "scope": "DOT agency information-security program and continuous monitoring",
+      "indicator": "Annual maturity, recommendations, and monitored-system coverage",
+      "unit": "Annual oversight record",
+      "denominator": "The systems, components, and metrics declared by DOT OIG",
+      "period": "Fiscal years 2023-2025 and September 2024 monitoring audit",
+      "method": "Independent annual FISMA reviews plus a control-specific audit",
+      "attribution": "DOT OIG and its independent auditor",
+      "source_ids": [
+        "source-56e-dot-fisma-fy2023",
+        "source-56e-dot-fisma-fy2024",
+        "source-56e-dot-fisma-fy2025"
+      ],
+      "observations": [
+        "FY 2023: two resolved-but-open recommendations",
+        "FY 2024: ten resolved-but-open recommendations",
+        "FY 2025: Level 2, Defined, with seven recommendations",
+        "September 2024: 62 of 85 reviewed NAS cyber-management systems lacked near-real-time monitoring"
+      ],
+      "reporting_breaks": [
+        "Annual metric sets and recommendation scopes changed.",
+        "The 62-of-85 denominator applies to reviewed NAS Cyber Management Systems, not all DOT systems."
+      ],
+      "signal_id": "signal-56e-dot-information-security-panel",
+      "record_status": "Published",
+      "comparison_boundary": "Within-entity observations only; no cross-entity ranking, composite, or readiness score.",
+      "next_records": [
+        "FY 2026 annual review",
+        "Closure evidence for the monitoring recommendations",
+        "System incidents, recovery, affected transportation services, and mission outcomes"
+      ]
+    },
+    {
+      "panel_id": "panel-56e-f35-fort-worth-line",
+      "portfolio": "manufacturing",
+      "entity_id": "manufacturer-lockheed-f35-fort-worth",
+      "entity_name": "Lockheed Martin F-35 Fort Worth final-assembly line",
+      "entity_type": "Named manufacturing line",
+      "scope": "Fort Worth final assembly inside the wider F-35 production and supplier system",
+      "indicator": "Program aircraft deliveries and delivery timeliness",
+      "unit": "Aircraft delivered or lateness measure",
+      "denominator": "Aircraft due or delivered in the stated calendar year",
+      "period": "Calendar years 2023-2025 and June 2026 sustainment record",
+      "method": "GAO program reviews plus a contractor annual delivery statement",
+      "attribution": "GAO, DOD program records, and Lockheed Martin for the 2025 statement",
+      "source_ids": [
+        "source-56e-f35-gao-2024",
+        "source-56e-f35-gao-2025",
+        "source-56e-f35-lockheed-deliveries-2025"
+      ],
+      "observations": [
+        "2023: 91 percent of delivered aircraft were late",
+        "2024: all 110 due aircraft were late; average lateness was 238 days",
+        "2025: Lockheed Martin reported 191 deliveries"
+      ],
+      "reporting_breaks": [
+        "The 2025 contractor total includes deliveries against prior-year obligations.",
+        "Program results include suppliers and acceptance work beyond the named final-assembly line."
+      ],
+      "signal_id": "signal-56e-f35-fort-worth-line-panel",
+      "record_status": "Published",
+      "comparison_boundary": "Within-entity observations only; no cross-entity ranking, composite, or readiness score.",
+      "next_records": [
+        "Aircraft due versus accepted by month",
+        "Fort Worth labor hours, rework, first-pass yield, and line inventory",
+        "TR-3 capability acceptance and supplier shortage series"
+      ]
+    },
+    {
+      "panel_id": "panel-56e-kc46-everett-line",
+      "portfolio": "manufacturing",
+      "entity_id": "manufacturer-boeing-kc46-everett",
+      "entity_name": "Boeing KC-46A Everett production line",
+      "entity_type": "Named manufacturing line",
+      "scope": "Everett KC-46A production and delivery center",
+      "indicator": "Cumulative delivered aircraft and program deficiency state",
+      "unit": "Cumulative aircraft milestone",
+      "denominator": "KC-46A aircraft accepted or fielded under the cited record",
+      "period": "Fiscal years 2019-2025 through April 2026",
+      "method": "Air Force milestone records, budget plan, and GAO program review",
+      "attribution": "U.S. Air Force, Department of the Air Force, and GAO",
+      "source_ids": [
+        "source-56e-kc46-usaf-budget-fy2025",
+        "source-56e-kc46-gao-2026",
+        "source-56e-kc46-100th-delivery-2025"
+      ],
+      "observations": [
+        "FY 2019-2025: GAO reported 84 fielded aircraft",
+        "December 2025: Air Force recorded the 100th delivery",
+        "April 2026: Air Mobility Command recorded the 105th delivery"
+      ],
+      "reporting_breaks": [
+        "Fielded and delivered are not identical states.",
+        "Cumulative milestones do not expose monthly output or aircraft due dates."
+      ],
+      "signal_id": "signal-56e-kc46-everett-line-panel",
+      "record_status": "Published",
+      "comparison_boundary": "Within-entity observations only; no cross-entity ranking, composite, or readiness score.",
+      "next_records": [
+        "Monthly due and accepted deliveries",
+        "Rework, quality escapes, labor, cost, and modification hours",
+        "Deficiency closure and full-rate decision evidence"
+      ]
+    },
+    {
+      "panel_id": "panel-56e-f15ex-st-louis-line",
+      "portfolio": "manufacturing",
+      "entity_id": "manufacturer-boeing-f15ex-st-louis",
+      "entity_name": "Boeing F-15EX St. Louis production line",
+      "entity_type": "Named manufacturing line",
+      "scope": "St. Louis F-15EX production and delivery sequence",
+      "indicator": "Cumulative aircraft delivery milestones and line interruption",
+      "unit": "Cumulative delivered aircraft",
+      "denominator": "F-15EX aircraft recorded as delivered by the Air Force",
+      "period": "March 2021 through December 2025",
+      "method": "Air Force delivery records plus GAO program review",
+      "attribution": "U.S. Air Force and GAO",
+      "source_ids": [
+        "source-56e-f15ex-first-deliveries-2021",
+        "source-56e-f15ex-four-deliveries-2023",
+        "source-56e-f15ex-gao-2025"
+      ],
+      "observations": [
+        "March 2021: first two aircraft received",
+        "December 2023: aircraft three and four received",
+        "June 2024: GAO recorded aircraft seven and eight delivered",
+        "December 2025: Air Force recorded delivery through aircraft 16 around the restart"
+      ],
+      "reporting_breaks": [
+        "The records are milestone snapshots rather than equal observation windows.",
+        "The 2025 article's delivery dates straddle a labor interruption."
+      ],
+      "signal_id": "signal-56e-f15ex-st-louis-line-panel",
+      "record_status": "Published",
+      "comparison_boundary": "Within-entity observations only; no cross-entity ranking, composite, or readiness score.",
+      "next_records": [
+        "Monthly planned and accepted deliveries",
+        "Line labor hours, rework, yield, supplier constraints, and cost",
+        "Post-restart delivery cadence and quality findings"
+      ]
+    },
+    {
+      "panel_id": "panel-56e-hornsdale-power-reserve",
+      "portfolio": "infrastructure",
+      "entity_id": "battery-hornsdale-power-reserve",
+      "entity_name": "Hornsdale Power Reserve",
+      "entity_type": "Named battery asset",
+      "scope": "Hornsdale grid-scale battery in South Australia",
+      "indicator": "Incident response, service capability, compliance, and stated capacity",
+      "unit": "Dated operating or regulatory observation",
+      "denominator": "The specific event, service, offer interval, or installed capacity stated in the record",
+      "period": "November 2019 through current installation profile",
+      "method": "AEMO system-event reports, AER enforcement, and state asset profile",
+      "attribution": "AEMO, Australian Energy Regulator, and Government of South Australia",
+      "source_ids": [
+        "source-56e-hornsdale-aemo-2019-preliminary",
+        "source-56e-hornsdale-aemo-2020-final",
+        "source-56e-hornsdale-aer-2022"
+      ],
+      "observations": [
+        "November 2019: rapid response supported frequency arrest during separation",
+        "Final report: service response varied by category and settings were adjusted",
+        "2022: court-enforced capability and offer violations for a 2019 period",
+        "Current state profile: 150 MW after the 2020 expansion"
+      ],
+      "reporting_breaks": [
+        "Event-specific response and multi-month offer compliance use different intervals.",
+        "Installed power capacity does not describe energy duration or delivered service."
+      ],
+      "signal_id": "signal-56e-hornsdale-power-reserve-panel",
+      "record_status": "Published",
+      "comparison_boundary": "Within-entity observations only; no cross-entity ranking, composite, or readiness score.",
+      "next_records": [
+        "Annual availability and dispatch",
+        "Service enablement and delivery by interval",
+        "Cycling, degradation, revenue, safety, and customer outcomes"
+      ]
+    },
+    {
+      "panel_id": "panel-56e-victorian-big-battery",
+      "portfolio": "infrastructure",
+      "entity_id": "battery-victorian-big-battery",
+      "entity_name": "Victorian Big Battery",
+      "entity_type": "Named battery asset",
+      "scope": "Victorian Big Battery at Moorabool",
+      "indicator": "Commissioning incident, registration, and scheme capability",
+      "unit": "Dated operating or regulatory milestone",
+      "denominator": "The incident, registered power, or reserve capability in the cited record",
+      "period": "July through December 2021 and current investigation index",
+      "method": "Energy Safe Victoria technical findings and AEMO system records",
+      "attribution": "Energy Safe Victoria and AEMO",
+      "source_ids": [
+        "source-56e-vbb-esv-fire-findings-2021",
+        "source-56e-vbb-aemo-registration-2021",
+        "source-56e-vbb-aemo-operational-2021"
+      ],
+      "observations": [
+        "July 2021: commissioning fire consumed two Megapacks",
+        "October 2021: AEMO recorded 300 MW registration",
+        "December 2021: AEMO reported 300 MW / 450 MWh fully operational with up to 250 MW reserve capability"
+      ],
+      "reporting_breaks": [
+        "Incident scope, registered power, stored energy, and reserve capability are different measures.",
+        "The regulator index does not supply a later performance observation."
+      ],
+      "signal_id": "signal-56e-victorian-big-battery-panel",
+      "record_status": "Published",
+      "comparison_boundary": "Within-entity observations only; no cross-entity ranking, composite, or readiness score.",
+      "next_records": [
+        "Corrective-action closure",
+        "Annual availability, dispatch, and cycling",
+        "Degradation, revenue, scheme activation, safety, and customer effects"
+      ]
+    },
+    {
+      "panel_id": "panel-56e-dalrymple-escri-bess",
+      "portfolio": "infrastructure",
+      "entity_id": "battery-dalrymple-escri-sa",
+      "entity_name": "Dalrymple ESCRI-SA Battery Energy Storage System",
+      "entity_type": "Named battery asset",
+      "scope": "Dalrymple 30 MW / 8 MWh battery in South Australia",
+      "indicator": "System-event response, islanding, state-of-charge constraint, and project results",
+      "unit": "Dated operating observation",
+      "denominator": "The system events, reporting window, or enabled service declared in each record",
+      "period": "December 2018 through April 2021",
+      "method": "ARENA project reports and AEMO system-planning review",
+      "attribution": "ElectraNet project reporting through ARENA and independent AEMO observations",
+      "source_ids": [
+        "source-56e-dalrymple-arena-operational-2020",
+        "source-56e-dalrymple-aemo-minimum-demand-2020",
+        "source-56e-dalrymple-arena-final-2021"
+      ],
+      "observations": [
+        "Operational report: 14 events, including three local-load supply events",
+        "AEMO review: a November 2019 state-of-charge limit reduced available response",
+        "Final report: 30 MW / 8 MWh with commercial operation from December 2018",
+        "Retrospective: project reporting summarized 29 events across 2018-2020"
+      ],
+      "reporting_breaks": [
+        "The 14-event and 29-event counts use different windows.",
+        "Project revenue, event response, islanding, and system reliability have separate denominators."
+      ],
+      "signal_id": "signal-56e-dalrymple-escri-bess-panel",
+      "record_status": "Published",
+      "comparison_boundary": "Within-entity observations only; no cross-entity ranking, composite, or readiness score.",
+      "next_records": [
+        "Later availability, dispatch, and islanding events",
+        "State-of-charge and degradation series",
+        "Revenue, avoided cost, reliability, and customer-outcome denominators"
+      ]
+    },
+    {
+      "panel_id": "panel-56e-american-airlines",
+      "portfolio": "mobility",
+      "entity_id": "carrier-american-airlines",
+      "entity_name": "American Airlines",
+      "entity_type": "Reporting operating air carrier",
+      "scope": "American Airlines operating-carrier domestic scheduled service",
+      "indicator": "Annual cancellation rate and later monthly on-time observation",
+      "unit": "Percentage of scheduled operations",
+      "denominator": "American Airlines reporting operating-carrier scheduled flights",
+      "period": "Calendar years 2023-2025 and May 2026",
+      "method": "DOT Air Travel Consumer Report operating-carrier tables",
+      "attribution": "Carrier-reported data compiled by DOT and BTS",
+      "source_ids": [
+        "source-56e-atcr-full-year-2024",
+        "source-56e-atcr-full-year-2025",
+        "source-56e-atcr-may-2026"
+      ],
+      "observations": [
+        "2023: 9,978 of 940,531 scheduled operations cancelled, 1.06 percent",
+        "2024: 15,252 of 984,306 cancelled, 1.55 percent",
+        "2025: 17,679 of 973,653 cancelled, 1.82 percent"
+      ],
+      "reporting_breaks": [
+        "Annual cancellation and monthly on-time percentages are different measures.",
+        "Brand commitments and complaints can include a different operating or marketing scope."
+      ],
+      "signal_id": "signal-56e-american-airlines-panel",
+      "record_status": "Published",
+      "comparison_boundary": "Within-entity observations only; no cross-entity ranking, composite, or readiness score.",
+      "next_records": [
+        "Later full-year cancellation rate",
+        "Flight-level cause, route, airport, weather, and schedule controls",
+        "Eligible disruption counts and verified remedy delivery"
+      ]
+    },
+    {
+      "panel_id": "panel-56e-alaska-airlines",
+      "portfolio": "mobility",
+      "entity_id": "carrier-alaska-airlines",
+      "entity_name": "Alaska Airlines",
+      "entity_type": "Reporting operating air carrier",
+      "scope": "Alaska Airlines operating-carrier domestic scheduled service",
+      "indicator": "Annual cancellation rate and later monthly on-time observation",
+      "unit": "Percentage of scheduled operations",
+      "denominator": "Alaska Airlines reporting operating-carrier scheduled flights under the applicable certificate",
+      "period": "Calendar years 2023-2025 and May 2026",
+      "method": "DOT Air Travel Consumer Report operating-carrier tables",
+      "attribution": "Carrier-reported data compiled by DOT and BTS",
+      "source_ids": [
+        "source-56e-atcr-full-year-2024",
+        "source-56e-atcr-full-year-2025",
+        "source-56e-atcr-may-2026"
+      ],
+      "observations": [
+        "2023: 1,977 of 245,344 scheduled operations cancelled, 0.81 percent",
+        "2024: 4,811 of 245,819 cancelled, 1.96 percent",
+        "2025: 2,974 of 245,588 cancelled, 1.21 percent"
+      ],
+      "reporting_breaks": [
+        "FAA recognized Alaska and Hawaiian under a single operating certificate on October 29, 2025.",
+        "Hawaiian-branded flights are operated by Alaska after the certificate change."
+      ],
+      "signal_id": "signal-56e-alaska-airlines-panel",
+      "record_status": "Published",
+      "comparison_boundary": "Within-entity observations only; no cross-entity ranking, composite, or readiness score.",
+      "next_records": [
+        "Post-integration full-year operating denominator",
+        "Separate branded and operating flight attribution",
+        "Route, airport, weather, cause, and verified remedy records"
+      ]
+    },
+    {
+      "panel_id": "panel-56e-jetblue-airways",
+      "portfolio": "mobility",
+      "entity_id": "carrier-jetblue-airways",
+      "entity_name": "JetBlue Airways",
+      "entity_type": "Reporting operating air carrier",
+      "scope": "JetBlue Airways operating-carrier domestic scheduled service",
+      "indicator": "Annual cancellation rate and later monthly on-time observation",
+      "unit": "Percentage of scheduled operations",
+      "denominator": "JetBlue Airways reporting operating-carrier scheduled flights",
+      "period": "Calendar years 2023-2025 and May 2026",
+      "method": "DOT Air Travel Consumer Report operating-carrier tables",
+      "attribution": "Carrier-reported data compiled by DOT and BTS",
+      "source_ids": [
+        "source-56e-atcr-full-year-2024",
+        "source-56e-atcr-full-year-2025",
+        "source-56e-atcr-may-2026"
+      ],
+      "observations": [
+        "2023: 5,763 of 274,852 scheduled operations cancelled, 2.10 percent",
+        "2024: 3,735 of 240,282 cancelled, 1.55 percent",
+        "2025: 3,825 of 231,413 cancelled, 1.65 percent"
+      ],
+      "reporting_breaks": [
+        "Scheduled operations declined across the three annual observations.",
+        "May on-time, baggage, wheelchair, complaint, and commitment records use different denominators."
+      ],
+      "signal_id": "signal-56e-jetblue-airways-panel",
+      "record_status": "Published",
+      "comparison_boundary": "Within-entity observations only; no cross-entity ranking, composite, or readiness score.",
+      "next_records": [
+        "Later full-year cancellation and schedule denominator",
+        "Route, airport, weather, cause, maintenance, and crew controls",
+        "Complaint rates and verified remedy delivery"
+      ]
+    }
+  ]
+}
