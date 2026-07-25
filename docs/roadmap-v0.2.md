@@ -379,13 +379,13 @@ Recommended active schedule:
 | Completed | Phase 56E | second twelve-entity cohort, 36 vertical entity layers, four portfolio holds, Research Watch 009, and owner-only Sites version 30 |
 | Completed | Phase 56F | 24-entity coverage ledger, one Closed, sixteen Partially Closed, seven Open, Research Watch 010, 27-file archive, and owner-only Sites version 31 |
 | Completed | Phase 56G | seven operating-record acquisition checks, one Open-to-Partially-Closed transition, Research Watch 011, and owner-only Sites version 32 |
-| Completed locally | Phase 56H | fourteen evidence decisions, three Open-to-Partially-Closed transitions, Research Watch 012, and a 17-file archive |
+| Completed | Phase 56H | fourteen evidence decisions, three Open-to-Partially-Closed transitions, Research Watch 012, 17-file archive, and owner-only Sites version 33 |
 | Current content gate | Phase 56I | continue the three Open rails and complete the first pass through the remaining nine Partially Closed records |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build, owner-only preview, and Phases 55S-56G aggressive expansion are complete and owner-only deployed through the Phase 56G release gate. Phase 56H is complete locally: all six Open rails received another named-source check, eight Partially Closed records received evidence-value decisions, and DOE, F-35 Fort Worth, and Hornsdale advanced to Partially Closed. The ledger now stands at one Closed, twenty Partially Closed, and three Open evidence states. The current non-public content gate is Phase 56I: continue DHS, Manatee, and Gateway while completing the first pass through the remaining nine Partially Closed records. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build, owner-only preview, and Phases 55S-56H aggressive expansion are complete and owner-only deployed through Sites version 33. Phase 56H checked all six Open rails, added evidence-value decisions for eight Partially Closed records, and advanced DOE, F-35 Fort Worth, and Hornsdale to Partially Closed. The ledger now stands at one Closed, twenty Partially Closed, and three Open evidence states. The current non-public content gate is Phase 56I: continue DHS, Manatee, and Gateway while completing the first pass through the remaining nine Partially Closed records. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -998,7 +998,7 @@ Completion result:
 - owner-only Sites version 32 succeeded in deployment `appgdep_6a644c6b7b748191919a3a25ad6dcbf3` under custom access with one allowed owner and no groups;
 - package version remains `0.2.0-dev`; public access, DNS, custom-domain, public GitHub, and release-freeze state remain unchanged.
 
-### Phase 56H: Open-Rail Acquisition Batch Three And Partial-Closure Deepening - Complete Locally
+### Phase 56H: Open-Rail Acquisition Batch Three And Partial-Closure Deepening - Complete
 
 Goal: continue content growth without waiting on scheduled records by running the six remaining Open rails alongside a disciplined first pass through the seventeen Partially Closed decisions.
 
@@ -1027,6 +1027,7 @@ Local result:
 - DHS, Manatee, and Gateway remain Open;
 - the current 24-entity ledger is one Closed, twenty Partially Closed, and three Open;
 - fourteen evidence documents, four Published signals, one held synthesis, Research Watch 012, and a 17-file archive passed the 1,299-page local release contract.
+- exact private source projection `85eb6ab5e8fcd5530a507aebc2dc5b53091575cf` is deployed as owner-only Sites version 33 in deployment `appgdep_6a6453f24d3481918d4a7f4ab6aaa3ee`.
 
 ### Phase 56I: Remaining Open Rails And Partial-Closure First-Pass Completion - Current Content Gate
 

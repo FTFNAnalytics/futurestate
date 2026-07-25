@@ -1549,7 +1549,7 @@ Purpose:
 - Record the completed Phase 56E second cohort, twelve panels, twelve dossiers, twelve tests, forty signal decisions, 51-file archive, Research Watch 009, four portfolio holds, and Phase 56F handoff.
 - Record the completed Phase 56F 24-entity coverage ledger, fourteen source profiles, 24 coverage documents, five signal decisions, 27-file archive, Research Watch 010, closure states, reopening rules, and Phase 56G handoff.
 - Record the completed Phase 56G seven-record acquisition batch, one Open-to-Partially-Closed transition, two signal decisions, 10-file archive, Research Watch 011, owner-only deployment receipt, continuation rules, and Phase 56H handoff.
-- Record the completed Phase 56H fourteen-record acquisition and deepening batch, three Open-to-Partially-Closed transitions, five signal decisions, 17-file archive, Research Watch 012, continuation rules, and Phase 56I handoff.
+- Record the completed Phase 56H fourteen-record acquisition and deepening batch, three Open-to-Partially-Closed transitions, five signal decisions, 17-file archive, Research Watch 012, owner-only deployment receipt, continuation rules, and Phase 56I handoff.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 

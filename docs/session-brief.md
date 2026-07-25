@@ -158,9 +158,10 @@ What is now stable:
 - Phase 56G local content commit `b726544c37e8df5f4ad219f7531f545c9cd5672e` matches exact private source projection `b9b5734b7d5c52d0017b1fa973df462f4ef27ca4`, deployed as owner-only Sites version 32 in deployment `appgdep_6a644c6b7b748191919a3a25ad6dcbf3` with one allowed owner and no groups.
 - The verified Phase 56H local contract is 1,299 pages, 534 sources, 272 signals, 208 Published signals, 64 In Review signals, 326 current Published-support sources, twenty briefings, seven maps, seventeen research collections, 369 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 36 updates, and five public-data exports.
 - Phase 56H checks all six Open rails and eight Partially Closed records, moves DOE, F-35 Fort Worth, and Hornsdale to Partially Closed, and leaves one Closed, twenty Partially Closed, and three Open evidence states.
+- Phase 56H local content commit `5878f83a7740827ad1ee4ff0b4d3362eb0e798f4` matches exact private source projection `85eb6ab5e8fcd5530a507aebc2dc5b53091575cf`, deployed as owner-only Sites version 33 in deployment `appgdep_6a6453f24d3481918d4a7f4ab6aaa3ee` with one allowed owner and no groups.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
-- All 321 current Published-support sources are governed by the same current-source release assertion.
+- All 326 current Published-support sources are governed by the same current-source release assertion.
 - The compact header defect was repaired: every brand and primary-navigation link now has at least a 44-pixel target.
 - `npm run verify:release` and `deployment/ftfn-v0.2-build.json` preserve the repeatable v0.2 release contract.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
@@ -179,7 +180,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only access and continue with Phase 56I remaining Open rails and partial-closure first-pass completion. Phase 56H is complete and release-verified locally: all six Open rails received another named-source check, eight Partially Closed records received evidence-value decisions, DOE, F-35 Fort Worth, and Hornsdale moved to Partially Closed, and three exact records remain Open. Continue DHS, Manatee, and Gateway while checking the remaining nine Partially Closed records. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only access and continue with Phase 56I remaining Open rails and partial-closure first-pass completion. Phase 56H is complete, release-verified, and owner-only deployed: all six Open rails received another named-source check, eight Partially Closed records received evidence-value decisions, DOE, F-35 Fort Worth, and Hornsdale moved to Partially Closed, and three exact records remain Open. Continue DHS, Manatee, and Gateway while checking the remaining nine Partially Closed records. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 

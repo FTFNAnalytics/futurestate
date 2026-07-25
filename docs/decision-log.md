@@ -2732,6 +2732,7 @@ Implemented:
 - Research Watch 012, one collection, one public update, two machine-readable ledgers, and a verified 17-file archive;
 - integration across five topics, five pathways, six entity-layer ledgers, and the comparison protocol;
 - a verified local 1,299-page, 534-source, 272-signal contract with 208 Published, 64 In Review, 36 updates, seventeen collections, 369 documents, and 326 current Published-support sources;
+- exact private source projection `85eb6ab5e8fcd5530a507aebc2dc5b53091575cf`, deployed as owner-only Sites version 33 in deployment `appgdep_6a6453f24d3481918d4a7f4ab6aaa3ee` with one allowed owner and no groups;
 - Phase 56I selected as the next content gate for DHS, Manatee, Gateway, and the remaining nine Partially Closed records.
 
 Boundary:
