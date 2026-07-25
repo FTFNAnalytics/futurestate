@@ -18,7 +18,9 @@
     "EIA reports utility-scale battery power capacity rising from 4,605 MW at the end of 2021 to 15,814 MW at the end of 2023.",
     "EIA's outage-duration series shows why major-event and non-major-event customer experience must remain separate.",
     "Plant code 260 rises from 400 MW to 750 MW by 2023; plant codes 60014 and 63834 retain 409 MW and 250 MW, respectively, across the three final vintages.",
-    "The panels measure nameplate power only and do not rank asset performance."
+    "The panels measure nameplate power only and do not rank asset performance.",
+    "Phase 56C adds entity-matched controls, inputs, constraints, later observations, attribution, independent-validation limits, and alternative explanations.",
+    "Temporal order is preserved without converting association into causation, ranking, composite scoring, or readiness scoring."
   ],
   "primary_topics": [
     "Energy",
@@ -47,7 +49,10 @@
     "signal-56a-eia-outage-duration",
     "signal-56b-moss-landing-capacity-panel",
     "signal-56b-manatee-capacity-panel",
-    "signal-56b-gateway-capacity-panel"
+    "signal-56b-gateway-capacity-panel",
+    "signal-56c-moss-landing-constraints",
+    "signal-56c-manatee-constraints",
+    "signal-56c-gateway-constraints"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -74,7 +79,13 @@
     "source-56a-eia-outage-duration-2023",
     "source-56b-eia860-2021",
     "source-56b-eia860-2022",
-    "source-56b-eia860-2023"
+    "source-56b-eia860-2023",
+    "source-56c-moss-landing-audit-2025",
+    "source-56c-moss-landing-audit-response-2025",
+    "source-56c-manatee-psc-operating-data-2025",
+    "source-56c-manatee-psc-rate-testimony-2025",
+    "source-56c-gateway-cpuc-audit-2025",
+    "source-56c-gateway-cpuc-audit-response-2025"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -88,7 +99,8 @@
     "briefing-stack-watch-004-implementation-outcomes",
     "briefing-research-watch-004-comparative-operating-outcomes",
     "briefing-research-watch-005-longitudinal-operating-series",
-    "briefing-research-watch-006-entity-operating-panels"
+    "briefing-research-watch-006-entity-operating-panels",
+    "briefing-research-watch-007-entity-driver-constraint-dossiers"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -101,7 +113,8 @@
     "research-collection-industrial-capacity-local-conversion-2025-2026",
     "research-collection-comparative-operating-outcomes-2023-2026",
     "research-collection-longitudinal-operating-series-2020-2025",
-    "research-collection-entity-operating-panels-2021-2026"
+    "research-collection-entity-operating-panels-2021-2026",
+    "research-collection-entity-driver-constraint-dossiers-2021-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -149,6 +162,11 @@
       "stage": "Named entity operating panel",
       "current_state": "Three named battery plants now have stable 2021-2023 plant-code capacity panels.",
       "boundary": "Nameplate megawatts are not stored energy, duration, availability, utilization, dispatch, safety, revenue, grid service, or customer reliability."
+    },
+    {
+      "stage": "Entity driver and constraint dossier",
+      "current_state": "Twelve dossiers order baseline, intervention or input, constraint, and later observation.",
+      "boundary": "Temporal sequence and attribution do not establish causal effect."
     }
   ],
   "evidence_limits": [
@@ -160,7 +178,9 @@
     "Battery power capacity, energy duration, dispatch, availability, frequency response, and customer reliability are different measures.",
     "Bulk-power performance and distribution customer outcomes remain separate system layers.",
     "Observation dates, major-event treatment, survey revisions, and utility reporting coverage govern comparison.",
-    "EIA can revise plant names, generator status, ownership, and capacity in later annual vintages."
+    "EIA can revise plant names, generator status, ownership, and capacity in later annual vintages.",
+    "A named intervention, control, input, or response does not by itself explain an observed outcome.",
+    "Company and operator claims remain attributed until independently validated."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -172,6 +192,8 @@
     "Storage duration, availability, state-of-charge, dispatch, market, failure, safety, and long-run reliability records by asset and region.",
     "Asset-level energy duration, availability, dispatch, failures, safety, revenue, and grid-service records.",
     "Utility- and customer-level interruption frequency, duration, restoration, cost, and weather-attribution records.",
-    "Later EIA vintages plus asset energy duration, availability, incidents, dispatch, revenue, and grid-service records."
+    "Later EIA vintages plus asset energy duration, availability, incidents, dispatch, revenue, and grid-service records.",
+    "Repeated outcomes using the same entity, unit, denominator, method, and observation window.",
+    "Independent validation of implementation, control operation, corrective-action closure, and downstream effects."
   ]
 }

@@ -48,7 +48,13 @@
     "source-56a-eia-outage-duration-2023",
     "source-56b-eia860-2021",
     "source-56b-eia860-2022",
-    "source-56b-eia860-2023"
+    "source-56b-eia860-2023",
+    "source-56c-moss-landing-audit-2025",
+    "source-56c-moss-landing-audit-response-2025",
+    "source-56c-manatee-psc-operating-data-2025",
+    "source-56c-manatee-psc-rate-testimony-2025",
+    "source-56c-gateway-cpuc-audit-2025",
+    "source-56c-gateway-cpuc-audit-response-2025"
   ],
   "watch_questions": [
     "Which frontier systems are becoming local grid-capacity questions rather than only technology questions?",
@@ -59,6 +65,9 @@
     "Where does a method change or series break require the longitudinal claim to stop?",
     "Which named entities now have a stable identifier and at least two compatible observations?",
     "Which reporting break, identity change, revision, missing denominator, or attribution limit stops the entity-level line?",
-    "Which later records can validate performance without creating a ranking or composite score?"
+    "Which later records can validate performance without creating a ranking or composite score?",
+    "Which entity-matched intervention, control, input, or constraint is temporally ordered before the observed outcome?",
+    "Who attributes the association, what has been independently validated, and which alternative explanations remain open?",
+    "Which later compatible observation can test persistence without creating a ranking or causal claim?"
   ]
 }

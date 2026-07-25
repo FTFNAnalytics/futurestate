@@ -68,6 +68,8 @@ const phase55ZReviewPath = join(appRoot, "src", "data", "phase-55z-publication-r
 const phase56AReviewPath = join(appRoot, "src", "data", "phase-56a-publication-review.json");
 const phase56BReviewPath = join(appRoot, "src", "data", "phase-56b-publication-review.json");
 const phase56BPanelsPath = join(appRoot, "src", "data", "phase-56b-entity-panels.json");
+const phase56CReviewPath = join(appRoot, "src", "data", "phase-56c-publication-review.json");
+const phase56CDossiersPath = join(appRoot, "src", "data", "phase-56c-entity-dossiers.json");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
@@ -98,6 +100,8 @@ const phase55ZReview = await readJson(phase55ZReviewPath);
 const phase56AReview = await readJson(phase56AReviewPath);
 const phase56BReview = await readJson(phase56BReviewPath);
 const phase56BPanels = await readJson(phase56BPanelsPath);
+const phase56CReview = await readJson(phase56CReviewPath);
+const phase56CDossiers = await readJson(phase56CDossiersPath);
 const evidenceGaps = await Promise.all(
   evidenceGapFiles.map((name) => readJson(join(evidenceGapDirectory, name))),
 );
@@ -534,6 +538,93 @@ check(
 check(
   phase56BReview.comparison_rule.includes("No cross-entity ranking"),
   "Phase 56B publication review is missing the cross-entity ranking stop rule.",
+);
+
+const phase56CSignals = phase56CReview.signal_decisions;
+const phase56CSignalIds = [...phase56CSignals.promoted, ...phase56CSignals.held];
+check(phase56CReview.source_count === 20, `Expected 20 Phase 56C source profiles, found ${phase56CReview.source_count}.`);
+check(phase56CReview.document_count === 24, `Expected 24 Phase 56C documents, found ${phase56CReview.document_count}.`);
+check(phase56CReview.dossier_count === 12, `Expected twelve Phase 56C dossiers, found ${phase56CReview.dossier_count}.`);
+check(phase56CSignals.reviewed === 16, `Expected sixteen Phase 56C signal decisions, found ${phase56CSignals.reviewed}.`);
+check(phase56CSignals.promoted.length === 12, `Expected twelve Phase 56C Published signals, found ${phase56CSignals.promoted.length}.`);
+check(phase56CSignals.held.length === 4, `Expected four Phase 56C held signals, found ${phase56CSignals.held.length}.`);
+check(new Set(phase56CSignalIds).size === 16, "Phase 56C signal decision IDs must be unique.");
+for (const id of phase56CSignals.promoted) {
+  check(signalStatusById.get(id) === "Published", `Phase 56C Published signal ${id} has the wrong status.`);
+}
+for (const id of phase56CSignals.held) {
+  check(signalStatusById.get(id) === "In Review", `Phase 56C held signal ${id} has the wrong status.`);
+}
+check(
+  phase56CDossiers.dossier_count === 12 && phase56CDossiers.dossiers.length === 12,
+  "Phase 56C entity-dossier ledger must contain twelve dossiers.",
+);
+check(
+  new Set(phase56CDossiers.dossiers.map((dossier) => dossier.entity_id)).size === 12,
+  "Phase 56C Published dossiers must preserve twelve unique stable entity IDs.",
+);
+for (const dossier of phase56CDossiers.dossiers) {
+  check(dossier.record_status === "Published", `Phase 56C dossier ${dossier.dossier_id} should be Published.`);
+  check(dossier.temporal_order.length === 4, `Phase 56C dossier ${dossier.dossier_id} must have four temporal stages.`);
+  check(
+    dossier.temporal_order.map((record) => record.stage).join("|")
+      === "Baseline condition|Named intervention or input|Constraint|Observed outcome or later boundary",
+    `Phase 56C dossier ${dossier.dossier_id} has an invalid temporal order.`,
+  );
+  check(
+    [
+      dossier.parent_panel_id,
+      dossier.parent_signal_id,
+      dossier.entity_id,
+      dossier.attribution,
+      dossier.independent_validation,
+      dossier.causal_boundary,
+    ].every(Boolean),
+    `Phase 56C dossier ${dossier.dossier_id} is missing an attribution or entity-contract field.`,
+  );
+  check(
+    dossier.alternative_explanations.length > 0 && dossier.next_records.length > 0 && dossier.source_ids.length > 0,
+    `Phase 56C dossier ${dossier.dossier_id} must preserve alternative explanations and next records.`,
+  );
+  check(
+    dossier.causal_boundary.includes("does not establish causation"),
+    `Phase 56C dossier ${dossier.dossier_id} is missing the causal-inference hold.`,
+  );
+}
+const phase56CCollection = researchCollections.find(
+  (collection) => collection.id === "research-collection-entity-driver-constraint-dossiers-2021-2026",
+);
+check(Boolean(phase56CCollection), "Phase 56C entity driver and constraint research collection is missing.");
+if (phase56CCollection) {
+  check(phase56CCollection.document_ids.length === 24, `Expected 24 Phase 56C documents, found ${phase56CCollection.document_ids.length}.`);
+  const resolvedPhase56CDocuments = phase56CCollection.document_ids
+    .map((documentId) => researchDocumentById.get(documentId))
+    .filter(Boolean);
+  check(resolvedPhase56CDocuments.length === 24, `Expected all 24 Phase 56C documents to resolve, found ${resolvedPhase56CDocuments.length}.`);
+  check(
+    resolvedPhase56CDocuments.every((document) => document.record_status === "Published"),
+    "All Phase 56C research documents should be Published.",
+  );
+  check(
+    resolvedPhase56CDocuments.every((document) => document.capture_status === "Official link record"),
+    "Phase 56C research documents must use the declared official-link capture contract.",
+  );
+}
+check(
+  briefingStatusById.get("briefing-research-watch-007-entity-driver-constraint-dossiers") === "Published",
+  "Phase 56C entity driver and constraint briefing should be Published.",
+);
+check(
+  phase56CReview.attribution_rule.includes("who made the claim"),
+  "Phase 56C publication review is missing the attribution rule.",
+);
+check(
+  phase56CReview.temporal_rule.includes("without converting sequence into proof"),
+  "Phase 56C publication review is missing the temporal-order stop rule.",
+);
+check(
+  phase56CReview.comparison_rule.includes("No ranking, composite score, readiness score"),
+  "Phase 56C publication review is missing the comparison and scoring stop rule.",
 );
 
 for (const collection of researchCollections) {

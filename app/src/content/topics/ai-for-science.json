@@ -47,7 +47,13 @@
     "source-56b-dhs-fisma-fy2023",
     "source-56b-hhs-fisma-fy2022",
     "source-56b-hhs-fisma-fy2023",
-    "source-56b-hhs-fisma-fy2024"
+    "source-56b-hhs-fisma-fy2024",
+    "source-56c-nasa-fisma-fy2025",
+    "source-56c-nasa-zero-trust-2025",
+    "source-56c-dhs-fisma-fy2024",
+    "source-56c-dhs-cdm-network-monitoring-2025",
+    "source-56c-hhs-fisma-fy2025",
+    "source-56c-hhs-cio-open-recommendations-2025"
   ],
   "watch_questions": [
     "Which AI-for-science claims are supported by validated datasets, instruments, user facilities, or peer-reviewed results?",
@@ -58,6 +64,9 @@
     "Where does a method change or series break require the longitudinal claim to stop?",
     "Which named entities now have a stable identifier and at least two compatible observations?",
     "Which reporting break, identity change, revision, missing denominator, or attribution limit stops the entity-level line?",
-    "Which later records can validate performance without creating a ranking or composite score?"
+    "Which later records can validate performance without creating a ranking or composite score?",
+    "Which entity-matched intervention, control, input, or constraint is temporally ordered before the observed outcome?",
+    "Who attributes the association, what has been independently validated, and which alternative explanations remain open?",
+    "Which later compatible observation can test persistence without creating a ranking or causal claim?"
   ]
 }

@@ -1,0 +1,544 @@
+{
+  "phase": "56C",
+  "captured_date": "2026-07-24",
+  "dossier_count": 12,
+  "dossiers": [
+    {
+      "dossier_id": "dossier-56c-nasa-cyber-controls",
+      "portfolio": "ai_cyber",
+      "parent_panel_id": "panel-56b-nasa-fisma",
+      "parent_signal_id": "signal-56b-nasa-fisma-panel",
+      "entity_id": "agency-nasa",
+      "entity_name": "National Aeronautics and Space Administration",
+      "record_status": "Published",
+      "signal_id": "signal-56c-nasa-cyber-controls",
+      "source_ids": [
+        "source-56c-nasa-fisma-fy2025",
+        "source-56c-nasa-zero-trust-2025"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "NASA remained at FISMA Level 3 across FY 2022-FY 2024."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "NASA assigned zero-trust leadership, planned phased corporate implementation, and funded corporate initiatives while mission and JPL owners retained separate responsibilities."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "Non-corporate implementation had not begun; legacy systems, distributed ownership, and unknown non-corporate costs remained open."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "The later FY 2025 FISMA evaluation again reported Level 3, Consistently Implemented."
+        }
+      ],
+      "attribution": "NASA OIG independently reports both the implementation condition and the annual maturity result.",
+      "independent_validation": "Independent oversight supplies two different official records; neither report validates a causal link between them.",
+      "alternative_explanations": [
+        "Annual metric design",
+        "Control scope and tested systems",
+        "Other remediation work",
+        "Legacy-system and mission-environment differences"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track FY 2026 FISMA results, pillar-level implementation across corporate and non-corporate systems, tested-control operation, incidents, recovery, service effects, and mission outcomes."
+      ]
+    },
+    {
+      "dossier_id": "dossier-56c-dhs-cyber-controls",
+      "portfolio": "ai_cyber",
+      "parent_panel_id": "panel-56b-dhs-fisma",
+      "parent_signal_id": "signal-56b-dhs-fisma-panel",
+      "entity_id": "agency-dhs",
+      "entity_name": "Department of Homeland Security",
+      "record_status": "Published",
+      "signal_id": "signal-56c-dhs-cyber-controls",
+      "source_ids": [
+        "source-56c-dhs-fisma-fy2024",
+        "source-56c-dhs-cdm-network-monitoring-2025"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "DHS moved from ineffective in FY 2021 to effective in FY 2022 and FY 2023."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "DHS and CISA continued operating the government-wide CDM program for asset visibility and network monitoring."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "GAO identified incomplete guidance, data-quality controls, endpoint onboarding, and cloud-asset management."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "DHS OIG rated the FY 2024 department program effective, with function ratings of Level 4 or Level 5."
+        }
+      ],
+      "attribution": "DHS OIG reports the department result; GAO independently reports CDM implementation constraints.",
+      "independent_validation": "Two independent oversight bodies support the coexistence of the records, not a causal relationship.",
+      "alternative_explanations": [
+        "Selected component and system scope",
+        "Annual FISMA metric changes",
+        "Controls outside CDM",
+        "Component-level variation"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track FY 2025 department and component ratings, recommendation closure evidence, CDM data quality, endpoint coverage, cloud assets, incidents, recovery, and service effects."
+      ]
+    },
+    {
+      "dossier_id": "dossier-56c-hhs-cyber-controls",
+      "portfolio": "ai_cyber",
+      "parent_panel_id": "panel-56b-hhs-fisma",
+      "parent_signal_id": "signal-56b-hhs-fisma-panel",
+      "entity_id": "agency-hhs",
+      "entity_name": "Department of Health and Human Services",
+      "record_status": "Published",
+      "signal_id": "signal-56c-hhs-cyber-controls",
+      "source_ids": [
+        "source-56c-hhs-fisma-fy2025",
+        "source-56c-hhs-cio-open-recommendations-2025"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "HHS remained Not Effective across FY 2022-FY 2024."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "HHS continued department and component remediation under the CIO and FISMA programs."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "GAO identified 82 open CIO recommendations, while HHS OIG found supplemental metrics at Ad Hoc maturity."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "The FY 2025 evaluation again rated the HHS information-security program Not Effective."
+        }
+      ],
+      "attribution": "HHS OIG supplies the annual rating; GAO independently inventories open recommendations.",
+      "independent_validation": "Independent oversight confirms both conditions, but open-recommendation counts do not validate the cause of the FISMA result.",
+      "alternative_explanations": [
+        "Federated operating-division maturity",
+        "Annual metric weighting",
+        "Recommendation age and severity",
+        "Control areas outside the open GAO set"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track FY 2026 FISMA results, recommendation closures, component control testing, incidents, recovery, affected services, and health-program outcomes."
+      ]
+    },
+    {
+      "dossier_id": "dossier-56c-current-applications-drivers",
+      "portfolio": "manufacturing",
+      "parent_panel_id": "panel-56b-current-applications-output",
+      "parent_signal_id": "signal-56b-current-applications-output-panel",
+      "entity_id": "manufacturer-current-applications-watertown-ny",
+      "entity_name": "Current Applications",
+      "record_status": "Published",
+      "signal_id": "signal-56c-current-applications-drivers",
+      "source_ids": [
+        "source-56c-current-applications-capabilities",
+        "source-56c-current-applications-cancelled-expansion"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "The Phase 56B panel records a company- and MEP-attributed line increase from 40 to 105 units per day."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "The company identifies custom engineering, testing, prototypes, and flexible tooling and fixtures as operating inputs."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "A proposed 10,200-square-foot expansion is recorded by New York as Cancelled/Declined with $0 disbursed."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "No later compatible output, labor, quality, cost, delivery, demand, or WIP observation is publicly exposed."
+        }
+      ],
+      "attribution": "Current capabilities are company claims; the project status is independently recorded by New York.",
+      "independent_validation": "The state record validates only the public project's status, not the company's operating claims or the reason for the earlier output change.",
+      "alternative_explanations": [
+        "Product mix",
+        "Demand and backlog",
+        "Labor input",
+        "Tooling and layout",
+        "Unrecorded private capital investment"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Obtain a dated repeat of the same line's output, labor hours, WIP, first-pass yield, scrap, downtime, cost, delivery, and demand."
+      ]
+    },
+    {
+      "dossier_id": "dossier-56c-island-components-drivers",
+      "portfolio": "manufacturing",
+      "parent_panel_id": "panel-56b-island-components-output",
+      "parent_signal_id": "signal-56b-island-components-output-panel",
+      "entity_id": "manufacturer-island-components-hauppauge-ny",
+      "entity_name": "Island Components Group",
+      "record_status": "Published",
+      "signal_id": "signal-56c-island-components-drivers",
+      "source_ids": [
+        "source-56c-island-components-acquisition-2021",
+        "source-56c-island-components-capabilities"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "The acquisition announcement says Island Components would continue operating independently as a G.W. Lisk division."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "The current capability profile lists winding, machining, automated equipment, assembly, inspection, environmental testing, and access to parent capabilities."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "The public records do not expose utilization, labor, quality, product mix, downtime, delivery, investment, or integration measures."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "The later MEP case reports daily output moving from 75 to 120 units, without a repeat observation window."
+        }
+      ],
+      "attribution": "Acquisition and capability records are company-attributed; the output result remains company- and MEP-attributed.",
+      "independent_validation": "No independent record validates the acquisition's operating effect or the persistence of the reported output change.",
+      "alternative_explanations": [
+        "Lean workflow changes",
+        "Product mix and demand",
+        "Parent resources",
+        "Capital equipment",
+        "Labor and staffing"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Collect repeated output, labor hours, WIP, first-pass yield, defects, downtime, delivery, and parent-resource use for the same line."
+      ]
+    },
+    {
+      "dossier_id": "dossier-56c-monaghan-medical-drivers",
+      "portfolio": "manufacturing",
+      "parent_panel_id": "panel-56b-monaghan-medical-output",
+      "parent_signal_id": "signal-56b-monaghan-medical-output-panel",
+      "entity_id": "manufacturer-monaghan-medical-plattsburgh-ny",
+      "entity_name": "Monaghan Medical",
+      "record_status": "Published",
+      "signal_id": "signal-56c-monaghan-medical-drivers",
+      "source_ids": [
+        "source-56c-monaghan-iso14001-2024",
+        "source-56c-monaghan-manufacturing-profile"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "Monaghan describes respiratory-device manufacturing under medical-device and environmental management controls."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "The company attained ISO 14001 certification and set continual-improvement, waste-diversion, and emissions-reduction objectives."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "No common quantitative series connects the management system to line output, product mix, labor, quality, cost, delivery, waste, or emissions."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "The later MEP case reports one line increasing from 6,000 to 9,000 units per day."
+        }
+      ],
+      "attribution": "Certification and environmental objectives are company-attributed; the output result is company- and MEP-attributed.",
+      "independent_validation": "Certification validates a management-system standard, not the magnitude, cause, persistence, or breadth of operating outcomes.",
+      "alternative_explanations": [
+        "Lean intervention",
+        "Demand and product mix",
+        "Staffing and shifts",
+        "Equipment and layout",
+        "Quality-control and supply conditions"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Collect same-line output, labor, yield, scrap, downtime, delivery, demand, waste, emissions, and certification-surveillance records."
+      ]
+    },
+    {
+      "dossier_id": "dossier-56c-moss-landing-constraints",
+      "portfolio": "infrastructure",
+      "parent_panel_id": "panel-56b-moss-landing-battery-capacity",
+      "parent_signal_id": "signal-56b-moss-landing-capacity-panel",
+      "entity_id": "eia-plant-260",
+      "entity_name": "Dynegy Moss Landing Power Plant Hybrid",
+      "record_status": "Published",
+      "signal_id": "signal-56c-moss-landing-constraints",
+      "source_ids": [
+        "source-56c-moss-landing-audit-2025",
+        "source-56c-moss-landing-audit-response-2025"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "EIA plant code 260 increased from 400 MW in 2021-2022 to 750 MW in 2023."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "CPUC conducted an on-site generation audit with equipment inspection, document review, and staff interviews."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "The audit identified potential GO 167 violations requiring response and corrective action."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "The operator filed dated responses and claimed corrective actions; later regulator closure and battery-specific performance remain unverified."
+        }
+      ],
+      "attribution": "CPUC attributes the findings; the operator attributes the responses and corrective actions.",
+      "independent_validation": "The regulator file independently validates that findings and responses exist, not the operating effect or durable closure of each item.",
+      "alternative_explanations": [
+        "Broader power-plant equipment",
+        "Battery-unit differences",
+        "Ownership and operating changes",
+        "Incident and outage conditions",
+        "EIA vintage revisions"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track regulator closure, later audits, generator identity, duration, availability, incidents, dispatch, revenue, grid service, and reliability effects."
+      ]
+    },
+    {
+      "dossier_id": "dossier-56c-manatee-constraints",
+      "portfolio": "infrastructure",
+      "parent_panel_id": "panel-56b-manatee-battery-capacity",
+      "parent_signal_id": "signal-56b-manatee-capacity-panel",
+      "entity_id": "eia-plant-60014",
+      "entity_name": "Manatee Solar Energy Center",
+      "record_status": "Published",
+      "signal_id": "signal-56c-manatee-constraints",
+      "source_ids": [
+        "source-56c-manatee-psc-operating-data-2025",
+        "source-56c-manatee-psc-rate-testimony-2025"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "EIA plant code 60014 remained at 409 MW across final 2021-2023 inventories."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "The utility placed a 409 MW, approximately 900 MWh battery in service in December 2021 near solar and transmission assets."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "Conversion losses, duration, system conditions, cycling, degradation, and rate recovery shape operation."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "PSC filings state uses for high load, reserves, transmission constraints, frequency response, and off-peak or solar charging."
+        }
+      ],
+      "attribution": "The utility supplies the operating descriptions inside Florida PSC proceedings.",
+      "independent_validation": "The regulator docket validates the filing and asset characteristics, but not realized dispatch frequency, value, reliability effect, or cost effectiveness.",
+      "alternative_explanations": [
+        "Load and weather",
+        "Solar availability",
+        "Transmission constraints",
+        "Market and dispatch rules",
+        "Degradation and outage conditions"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Collect interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer-cost records."
+      ]
+    },
+    {
+      "dossier_id": "dossier-56c-gateway-constraints",
+      "portfolio": "infrastructure",
+      "parent_panel_id": "panel-56b-gateway-battery-capacity",
+      "parent_signal_id": "signal-56b-gateway-capacity-panel",
+      "entity_id": "eia-plant-63834",
+      "entity_name": "Gateway Energy Storage System",
+      "record_status": "Published",
+      "signal_id": "signal-56c-gateway-constraints",
+      "source_ids": [
+        "source-56c-gateway-cpuc-audit-2025",
+        "source-56c-gateway-cpuc-audit-response-2025"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "EIA plant code 63834 remained at 250 MW across final 2021-2023 inventories."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "CPUC audited Gateway under GO 167-C and required responses to identified safety, maintenance, documentation, and work-management issues."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "The audit identified 16 findings requiring corrective action."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "Gateway stated that 14 findings were closed and two were targeted for closure by the end of October 2025."
+        }
+      ],
+      "attribution": "CPUC attributes the findings; Gateway attributes closure status and risk characterization.",
+      "independent_validation": "The regulator file validates the response, not independent closure, durability, safety effect, availability, dispatch, or customer outcome.",
+      "alternative_explanations": [
+        "New GO 167-C implementation timing",
+        "Facility operating history",
+        "Maintenance scheduling",
+        "Dispatch conditions",
+        "EIA capacity-only denominator"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track CPUC closure evidence, later audits, availability, incidents, dispatch, duration, degradation, revenue, grid service, and reliability effects."
+      ]
+    },
+    {
+      "dossier_id": "dossier-56c-united-service-constraints",
+      "portfolio": "mobility",
+      "parent_panel_id": "panel-56b-united-cancellations",
+      "parent_signal_id": "signal-56b-united-cancellation-panel",
+      "entity_id": "dot-operating-carrier-united-airlines",
+      "entity_name": "United Airlines",
+      "record_status": "Published",
+      "signal_id": "signal-56c-united-service-constraints",
+      "source_ids": [
+        "source-56c-dot-atcr-2025-series",
+        "source-56c-dot-airline-customer-service-dashboard"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "United reported 12,478 cancellations among 760,451 scheduled operations in 2024."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "United publishes customer-service commitments for specified controllable cancellations and delays through DOT's dashboard."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "Schedule mix, airports, weather, maintenance, crews, network recovery, and marketing-versus-operating identity remain separate."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "United reported 6,527 cancellations among 795,271 scheduled operations in 2025, a 0.82% rate."
+        }
+      ],
+      "attribution": "Carrier-filed operational data are published by DOT; commitments are carrier representations compiled by DOT.",
+      "independent_validation": "DOT validates the reporting rails, not a causal effect of commitments or universal delivery of remedies.",
+      "alternative_explanations": [
+        "Weather and airport exposure",
+        "Schedule and network mix",
+        "Maintenance and staffing",
+        "Air traffic constraints",
+        "Recovery decisions"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track 2026 full-year operations, delay causes, complaints, accessibility, schedule mix, airport exposure, commitment compliance, and revisions."
+      ]
+    },
+    {
+      "dossier_id": "dossier-56c-southwest-service-constraints",
+      "portfolio": "mobility",
+      "parent_panel_id": "panel-56b-southwest-cancellations",
+      "parent_signal_id": "signal-56b-southwest-cancellation-panel",
+      "entity_id": "dot-operating-carrier-southwest-airlines",
+      "entity_name": "Southwest Airlines",
+      "record_status": "Published",
+      "signal_id": "signal-56c-southwest-service-constraints",
+      "source_ids": [
+        "source-56c-dot-atcr-2025-series",
+        "source-56c-dot-airline-customer-service-dashboard"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "Southwest reported 11,772 cancellations among 1,419,419 scheduled operations in 2024."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "Southwest publishes customer-service commitments for specified controllable cancellations and delays through DOT's dashboard."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "Network structure, schedule mix, weather, airport exposure, maintenance, crews, and operational recovery remain open."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "Southwest reported 11,799 cancellations among 1,391,885 scheduled operations in 2025, a 0.85% rate."
+        }
+      ],
+      "attribution": "Carrier-filed operational data are published by DOT; commitments are carrier representations compiled by DOT.",
+      "independent_validation": "DOT validates the reporting rails, not the cause of the two-year movement or customer receipt of each remedy.",
+      "alternative_explanations": [
+        "Weather and airport exposure",
+        "Schedule and network structure",
+        "Maintenance and staffing",
+        "Air traffic constraints",
+        "Recovery decisions"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track 2026 full-year operations, delay causes, complaints, accessibility, schedule mix, airport exposure, commitment compliance, and revisions."
+      ]
+    },
+    {
+      "dossier_id": "dossier-56c-delta-service-constraints",
+      "portfolio": "mobility",
+      "parent_panel_id": "panel-56b-delta-cancellations",
+      "parent_signal_id": "signal-56b-delta-cancellation-panel",
+      "entity_id": "dot-operating-carrier-delta-air-lines",
+      "entity_name": "Delta Air Lines",
+      "record_status": "Published",
+      "signal_id": "signal-56c-delta-service-constraints",
+      "source_ids": [
+        "source-56c-dot-atcr-2025-series",
+        "source-56c-dot-airline-customer-service-dashboard"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "Delta reported 9,147 cancellations among 1,009,194 scheduled operations in 2024."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "Delta publishes customer-service commitments for specified controllable cancellations and delays through DOT's dashboard."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "Schedule mix, branded network identity, airports, weather, maintenance, crews, and recovery conditions remain separate."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "Delta reported 11,114 cancellations among 1,026,332 scheduled operations in 2025, a 1.08% rate."
+        }
+      ],
+      "attribution": "Carrier-filed operational data are published by DOT; commitments are carrier representations compiled by DOT.",
+      "independent_validation": "DOT validates the reporting rails, not a causal effect, a service-quality score, or universal delivery of remedies.",
+      "alternative_explanations": [
+        "Weather and airport exposure",
+        "Schedule and branded-network mix",
+        "Maintenance and staffing",
+        "Air traffic constraints",
+        "Recovery decisions"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track 2026 full-year operations, delay causes, complaints, accessibility, schedule mix, airport exposure, commitment compliance, and revisions."
+      ]
+    }
+  ]
+}

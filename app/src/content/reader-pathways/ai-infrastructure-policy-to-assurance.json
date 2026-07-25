@@ -17,7 +17,9 @@
     "Two compatible 23-agency inspector-general snapshots show that a majority of reviewed civilian programs remained below the effectiveness threshold in FY 2020 and FY 2022.",
     "NASA maintained annual public AI-use disclosure, but the inventories still lack stable mission-benefit and incident denominators.",
     "NASA remained at Level 3 across FY 2022-FY 2024, DHS moved from ineffective in FY 2021 to effective in FY 2022 and FY 2023, and HHS remained Not Effective across FY 2022-FY 2024.",
-    "The three agency sequences remain separate and do not support a cross-agency rank."
+    "The three agency sequences remain separate and do not support a cross-agency rank.",
+    "Phase 56C adds entity-matched controls, inputs, constraints, later observations, attribution, independent-validation limits, and alternative explanations.",
+    "Temporal order is preserved without converting association into causation, ranking, composite scoring, or readiness scoring."
   ],
   "primary_topics": [
     "AI for Science",
@@ -49,7 +51,10 @@
     "signal-56a-nasa-ai-inventory",
     "signal-56b-nasa-fisma-panel",
     "signal-56b-dhs-fisma-panel",
-    "signal-56b-hhs-fisma-panel"
+    "signal-56b-hhs-fisma-panel",
+    "signal-56c-nasa-cyber-controls",
+    "signal-56c-dhs-cyber-controls",
+    "signal-56c-hhs-cyber-controls"
   ],
   "source_ids": [
     "source-fy2027-rd-priorities-m-25-34",
@@ -93,7 +98,13 @@
     "source-56b-dhs-fisma-fy2023",
     "source-56b-hhs-fisma-fy2022",
     "source-56b-hhs-fisma-fy2023",
-    "source-56b-hhs-fisma-fy2024"
+    "source-56b-hhs-fisma-fy2024",
+    "source-56c-nasa-fisma-fy2025",
+    "source-56c-nasa-zero-trust-2025",
+    "source-56c-dhs-fisma-fy2024",
+    "source-56c-dhs-cdm-network-monitoring-2025",
+    "source-56c-hhs-fisma-fy2025",
+    "source-56c-hhs-cio-open-recommendations-2025"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -106,7 +117,8 @@
     "briefing-research-watch-003-operational-evidence",
     "briefing-research-watch-004-comparative-operating-outcomes",
     "briefing-research-watch-005-longitudinal-operating-series",
-    "briefing-research-watch-006-entity-operating-panels"
+    "briefing-research-watch-006-entity-operating-panels",
+    "briefing-research-watch-007-entity-driver-constraint-dossiers"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -118,7 +130,8 @@
     "research-collection-operational-evidence-receiving-systems-2024-2026",
     "research-collection-comparative-operating-outcomes-2023-2026",
     "research-collection-longitudinal-operating-series-2020-2025",
-    "research-collection-entity-operating-panels-2021-2026"
+    "research-collection-entity-operating-panels-2021-2026",
+    "research-collection-entity-driver-constraint-dossiers-2021-2026"
   ],
   "evidence_gap_ids": [
     "gap-008",
@@ -161,6 +174,11 @@
       "stage": "Named entity operating panel",
       "current_state": "Nine inspector-general records support three stable agency-level control panels.",
       "boundary": "Agency maturity and effectiveness labels do not share identical scope, sampling, metric design, system risk, incident exposure, or mission consequence."
+    },
+    {
+      "stage": "Entity driver and constraint dossier",
+      "current_state": "Twelve dossiers order baseline, intervention or input, constraint, and later observation.",
+      "boundary": "Temporal sequence and attribution do not establish causal effect."
     }
   ],
   "evidence_limits": [
@@ -172,7 +190,9 @@
     "Federal cyber metrics and automation rules changed across the reviewed reporting cycles.",
     "AI inventory continuity does not establish operational maturity, usage, reliability, safety, cost, or mission benefit.",
     "Annual FISMA metrics, tested systems, evaluator scope, component coverage, and calculated-rating methods can change.",
-    "An agency-level rating does not establish system-level control operation, incident reduction, service continuity, or mission benefit."
+    "An agency-level rating does not establish system-level control operation, incident reduction, service continuity, or mission benefit.",
+    "A named intervention, control, input, or response does not by itself explain an observed outcome.",
+    "Company and operator claims remain attributed until independently validated."
   ],
   "next_records": [
     "Later ARIA rounds, sector-specific evaluations, method-validation studies, and full AI TEVV drafts.",
@@ -183,6 +203,8 @@
     "Stable agency-level performance, incident, remediation, recovery, affected-person, and harm measures.",
     "System-level AI usage, accuracy, availability, override, impact-assessment, incident, cost, and mission-outcome records.",
     "Later agency and component ratings with explicit metric changes and tested-system coverage.",
-    "Control operation, authorization age, remediation, incidents, recovery, affected services, and mission-outcome records."
+    "Control operation, authorization age, remediation, incidents, recovery, affected services, and mission-outcome records.",
+    "Repeated outcomes using the same entity, unit, denominator, method, and observation window.",
+    "Independent validation of implementation, control operation, corrective-action closure, and downstream effects."
   ]
 }

@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison protocol showing how national context becomes a named entity panel only after identity, unit, denominator, period, geography, method, attribution, revisions, and reporting breaks align.",
+  "summary": "A comparison and causal-inference protocol: named entity panels can deepen into driver and constraint dossiers only when identity, temporal order, attribution, independent validation, alternative explanations, and measurement boundaries remain attached.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -118,7 +118,27 @@
     "source-56b-eia860-2022",
     "source-56b-eia860-2023",
     "source-56b-bts-atcr-full-year-2024",
-    "source-56b-dot-atcr-february-2026"
+    "source-56b-dot-atcr-february-2026",
+    "source-56c-nasa-fisma-fy2025",
+    "source-56c-nasa-zero-trust-2025",
+    "source-56c-dhs-fisma-fy2024",
+    "source-56c-dhs-cdm-network-monitoring-2025",
+    "source-56c-hhs-fisma-fy2025",
+    "source-56c-hhs-cio-open-recommendations-2025",
+    "source-56c-current-applications-capabilities",
+    "source-56c-current-applications-cancelled-expansion",
+    "source-56c-island-components-acquisition-2021",
+    "source-56c-island-components-capabilities",
+    "source-56c-monaghan-iso14001-2024",
+    "source-56c-monaghan-manufacturing-profile",
+    "source-56c-moss-landing-audit-2025",
+    "source-56c-moss-landing-audit-response-2025",
+    "source-56c-manatee-psc-operating-data-2025",
+    "source-56c-manatee-psc-rate-testimony-2025",
+    "source-56c-gateway-cpuc-audit-2025",
+    "source-56c-gateway-cpuc-audit-response-2025",
+    "source-56c-dot-atcr-2025-series",
+    "source-56c-dot-airline-customer-service-dashboard"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -160,7 +180,19 @@
     "signal-56b-gateway-capacity-panel",
     "signal-56b-united-cancellation-panel",
     "signal-56b-southwest-cancellation-panel",
-    "signal-56b-delta-cancellation-panel"
+    "signal-56b-delta-cancellation-panel",
+    "signal-56c-nasa-cyber-controls",
+    "signal-56c-dhs-cyber-controls",
+    "signal-56c-hhs-cyber-controls",
+    "signal-56c-current-applications-drivers",
+    "signal-56c-island-components-drivers",
+    "signal-56c-monaghan-medical-drivers",
+    "signal-56c-moss-landing-constraints",
+    "signal-56c-manatee-constraints",
+    "signal-56c-gateway-constraints",
+    "signal-56c-united-service-constraints",
+    "signal-56c-southwest-service-constraints",
+    "signal-56c-delta-service-constraints"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -252,6 +284,19 @@
       "node_type": "Signal",
       "record_id": "signal-56b-moss-landing-capacity-panel",
       "note": "At least two compatible observations can publish inside one named entity without becoming a rank."
+    },
+    {
+      "id": "node-entity-dossier",
+      "label": "Entity driver and constraint dossier",
+      "node_type": "Signal",
+      "record_id": "signal-56c-gateway-constraints",
+      "note": "Baseline, intervention or input, constraint, and later observation are ordered inside one stable entity."
+    },
+    {
+      "id": "node-causal-hold",
+      "label": "Causal-inference hold",
+      "node_type": "Constraint",
+      "note": "Attribution and temporal sequence do not establish an independently validated causal effect."
     }
   ],
   "links": [
@@ -338,6 +383,27 @@
       "relationship": "Limited By",
       "confidence": "Watch",
       "note": "Entity panels remain bounded and do not close cross-entity comparability."
+    },
+    {
+      "from": "node-entity-dossier",
+      "to": "node-entity-panel",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Every dossier inherits the parent panel's stable entity and measurement contract."
+    },
+    {
+      "from": "node-entity-dossier",
+      "to": "node-causal-hold",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "Alternative explanations and validation limits remain attached to every association."
+    },
+    {
+      "from": "node-causal-hold",
+      "to": "node-gap",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Repeated compatible outcomes and independent validation are incomplete."
     }
   ],
   "what_this_map_supports": [
@@ -347,7 +413,9 @@
     "A direction statement may publish after at least two compatible observations, with a two-point caveat.",
     "Revisions and method breaks can stop, split, or restate a longitudinal series.",
     "A named entity panel may publish after stable identity and at least two compatible observations are verified.",
-    "National context and entity performance remain separate layers."
+    "National context and entity performance remain separate layers.",
+    "A stable entity panel may deepen into a temporally ordered driver and constraint dossier.",
+    "Attribution, independent validation, and alternative explanations can be published without claiming causation."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -355,7 +423,9 @@
     "It does not convert company-attributed results into audited causal effects.",
     "It does not turn a two-point movement into a durable trend.",
     "It does not authorize normalization across incompatible domains.",
-    "It does not authorize a cross-agency, cross-manufacturer, cross-asset, or cross-carrier ranking."
+    "It does not authorize a cross-agency, cross-manufacturer, cross-asset, or cross-carrier ranking.",
+    "It does not prove that a named intervention, control, input, commitment, or corrective action caused an observed outcome.",
+    "It does not authorize a readiness score, composite score, or entity ranking."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -365,6 +435,9 @@
     "Later observations using unchanged definitions and denominators.",
     "Vintage, revision, and series-break metadata.",
     "Later entity observations with unchanged identity, unit, denominator, method, and attribution.",
-    "Explicit merger, exit, permit, revision, and reporting-break records."
+    "Explicit merger, exit, permit, revision, and reporting-break records.",
+    "Repeated outcomes after the named intervention using unchanged denominators and methods.",
+    "Independent verification of control operation, implementation, corrective-action closure, and downstream results.",
+    "Records capable of testing the named alternative explanations."
   ]
 }
