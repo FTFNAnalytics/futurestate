@@ -7,7 +7,7 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 56K exact-record continuation batch two (local validation complete; deployment pending)
+Latest completed work: Phase 56K exact-record continuation batch two
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
@@ -17,7 +17,7 @@ Content: 545 sources, 283 signals, 17 topics, 5 local systems, 20 research colle
 Publication: 217 Published signals, 66 In Review signals, 16 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
 Trust/data: 39 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, 15-file, 8-file, and 10-file research archives
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 35 remains the active hosted Phase 56J checkpoint while the validated Phase 56K runtime awaits deployment; one allowed owner and no groups
+Deployment: owner-only Sites version 36 is the active hosted Phase 56K checkpoint; local content commit aceeff568f3fb93b184f6fa0197260fbf563b9b2 maps to exact private runtime commit 560492d70ecf297da8ef427f34b29f460f5b3289 and deployment appgdep_6a65071a7cb88191a37bceaa69b831bc; one allowed owner and no groups
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 369 Manual Review, 176 Probe Ready; 14 Strong coverage lanes
 Next content gate: Phase 56L realized-outcome continuation; six dated inserts remain scheduled
