@@ -3,8 +3,8 @@
   "title": "Energy And Grid Capacity: From System Forecast To Named Service",
   "slug": "energy-grid-capacity-to-service",
   "record_status": "Published",
-  "summary": "Follow capacity through commissioning, storage duration, dispatch, grid service, customer interruption, restoration, cost, and revision-controlled operating outcomes.",
-  "current_state_summary": "EIA battery-capacity and outage-duration observations create separate multi-period capacity and customer-service rails, with major-event treatment preserved.",
+  "summary": "Follow national storage growth into named plant-code panels, energy duration, availability, dispatch, safety, revenue, grid service, and customer reliability.",
+  "current_state_summary": "Moss Landing, Manatee, and Gateway now have three-year EIA-860 nameplate power-capacity panels keyed to stable plant codes.",
   "current_state": [
     "Data-centre electricity growth is visible as a system constraint, but no global or national forecast proves local spare capacity.",
     "EIA's 2025 Form 860 early release and 2026 Form 923 update distinguish generator status from observed plant output; neither proves customer-level deliverable capacity.",
@@ -16,7 +16,9 @@
     "EIA reports 11 hours of average customer interruption in 2024, with major events responsible for 80 percent of the duration.",
     "NERC reports Texas batteries supplied up to all frequency-regulation capacity in several 2024 instances and more than 70 percent of response in individual disturbances.",
     "EIA reports utility-scale battery power capacity rising from 4,605 MW at the end of 2021 to 15,814 MW at the end of 2023.",
-    "EIA's outage-duration series shows why major-event and non-major-event customer experience must remain separate."
+    "EIA's outage-duration series shows why major-event and non-major-event customer experience must remain separate.",
+    "Plant code 260 rises from 400 MW to 750 MW by 2023; plant codes 60014 and 63834 retain 409 MW and 250 MW, respectively, across the three final vintages.",
+    "The panels measure nameplate power only and do not rank asset performance."
   ],
   "primary_topics": [
     "Energy",
@@ -42,7 +44,10 @@
     "signal-us-customer-outage-duration-eleven-hours-2024",
     "signal-texas-batteries-provide-frequency-response-2024",
     "signal-56a-eia-battery-capacity",
-    "signal-56a-eia-outage-duration"
+    "signal-56a-eia-outage-duration",
+    "signal-56b-moss-landing-capacity-panel",
+    "signal-56b-manatee-capacity-panel",
+    "signal-56b-gateway-capacity-panel"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -66,7 +71,10 @@
     "source-56a-eia-battery-capacity-2023",
     "source-56a-eia-outage-duration-2021",
     "source-56a-eia-outage-duration-2022",
-    "source-56a-eia-outage-duration-2023"
+    "source-56a-eia-outage-duration-2023",
+    "source-56b-eia860-2021",
+    "source-56b-eia860-2022",
+    "source-56b-eia860-2023"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -79,7 +87,8 @@
     "briefing-stack-watch-003-research-to-implementation",
     "briefing-stack-watch-004-implementation-outcomes",
     "briefing-research-watch-004-comparative-operating-outcomes",
-    "briefing-research-watch-005-longitudinal-operating-series"
+    "briefing-research-watch-005-longitudinal-operating-series",
+    "briefing-research-watch-006-entity-operating-panels"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -91,7 +100,8 @@
     "research-collection-implementation-outcomes-local-conversion-2025-2026",
     "research-collection-industrial-capacity-local-conversion-2025-2026",
     "research-collection-comparative-operating-outcomes-2023-2026",
-    "research-collection-longitudinal-operating-series-2020-2025"
+    "research-collection-longitudinal-operating-series-2020-2025",
+    "research-collection-entity-operating-panels-2021-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -134,6 +144,11 @@
       "stage": "Longitudinal operating series",
       "current_state": "Two infrastructure series now separate installed storage power capacity from delivered customer reliability.",
       "boundary": "Power capacity is not energy duration, availability, dispatch, reliability contribution, restoration performance, or customer outcome."
+    },
+    {
+      "stage": "Named entity operating panel",
+      "current_state": "Three named battery plants now have stable 2021-2023 plant-code capacity panels.",
+      "boundary": "Nameplate megawatts are not stored energy, duration, availability, utilization, dispatch, safety, revenue, grid service, or customer reliability."
     }
   ],
   "evidence_limits": [
@@ -144,7 +159,8 @@
     "The Ontario record remains upstream of project-level feeder, transformer, station, connection, construction, and energization evidence.",
     "Battery power capacity, energy duration, dispatch, availability, frequency response, and customer reliability are different measures.",
     "Bulk-power performance and distribution customer outcomes remain separate system layers.",
-    "Observation dates, major-event treatment, survey revisions, and utility reporting coverage govern comparison."
+    "Observation dates, major-event treatment, survey revisions, and utility reporting coverage govern comparison.",
+    "EIA can revise plant names, generator status, ownership, and capacity in later annual vintages."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -155,6 +171,7 @@
     "Utility- and customer-specific reliability, restoration, interconnection, consumption, curtailment, cost, and service-quality records.",
     "Storage duration, availability, state-of-charge, dispatch, market, failure, safety, and long-run reliability records by asset and region.",
     "Asset-level energy duration, availability, dispatch, failures, safety, revenue, and grid-service records.",
-    "Utility- and customer-level interruption frequency, duration, restoration, cost, and weather-attribution records."
+    "Utility- and customer-level interruption frequency, duration, restoration, cost, and weather-attribution records.",
+    "Later EIA vintages plus asset energy duration, availability, incidents, dispatch, revenue, and grid-service records."
   ]
 }

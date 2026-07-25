@@ -3,8 +3,8 @@
   "title": "Policy And Standards: From Rule To Institutional Implementation",
   "slug": "policy-standards-to-implementation",
   "record_status": "Published",
-  "summary": "Follow policy and standards into repeat agency reporting, measured implementation, inspector-general assessment, operating outcomes, and revision-controlled evidence.",
-  "current_state_summary": "Phase 56A adds recurring FISMA and federal AI reporting cycles and makes method changes, denominator changes, and series breaks visible implementation evidence.",
+  "summary": "Follow federal policy into recurring agency control measurement, named FISMA panels, tested systems, incidents, corrective actions, recovery, and mission outcomes.",
+  "current_state_summary": "NASA, DHS, and HHS now have named multi-year FISMA panels, with annual metric, scope, sampling, and component boundaries kept visible.",
   "current_state": [
     "OMB memoranda define federal AI use, acquisition, and covered-LLM control points without proving agency implementation.",
     "GSA's OneGov channel makes selected AI offerings purchasable under stated terms without establishing adoption or outcomes.",
@@ -12,7 +12,9 @@
     "GSA's PQC buyer's guide maps inventory, planning, implementation, maintenance, training, and use cases to acquisition support and contract vehicles without proving an agency order.",
     "PIV working drafts expose proposed credential changes but remain preliminary rather than final requirements.",
     "O-RAN testbed artifacts and version 1.7 software provide inspectable experimental implementation, not a final 6G standard or commercial deployment.",
-    "Annual federal reports can be followed as series only when the covered agency set, metric definition, method, and revision history remain explicit."
+    "Annual federal reports can be followed as series only when the covered agency set, metric definition, method, and revision history remain explicit.",
+    "NASA remained at Level 3 across FY 2022-FY 2024, DHS moved from ineffective in FY 2021 to effective in FY 2022 and FY 2023, and HHS remained Not Effective across FY 2022-FY 2024.",
+    "The three agency sequences remain separate and do not support a cross-agency rank."
   ],
   "primary_topics": [
     "Policy and Standards",
@@ -34,7 +36,10 @@
     "signal-56a-fisma-reporting",
     "signal-56a-gao-cyber-backlog",
     "signal-56a-fisma-effectiveness",
-    "signal-56a-nasa-ai-inventory"
+    "signal-56a-nasa-ai-inventory",
+    "signal-56b-nasa-fisma-panel",
+    "signal-56b-dhs-fisma-panel",
+    "signal-56b-hhs-fisma-panel"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -56,7 +61,16 @@
     "source-56a-gao-fisma-effectiveness-fy2022",
     "source-56a-nasa-ai-use-cases-2022",
     "source-56a-nasa-ai-use-cases-2023",
-    "source-56a-nasa-ai-use-cases-2024"
+    "source-56a-nasa-ai-use-cases-2024",
+    "source-56b-nasa-fisma-fy2022",
+    "source-56b-nasa-fisma-fy2023",
+    "source-56b-nasa-fisma-fy2024",
+    "source-56b-dhs-fisma-fy2021",
+    "source-56b-dhs-fisma-fy2022",
+    "source-56b-dhs-fisma-fy2023",
+    "source-56b-hhs-fisma-fy2022",
+    "source-56b-hhs-fisma-fy2023",
+    "source-56b-hhs-fisma-fy2024"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -68,7 +82,8 @@
   ],
   "briefing_ids": [
     "briefing-stack-watch-004-implementation-outcomes",
-    "briefing-research-watch-005-longitudinal-operating-series"
+    "briefing-research-watch-005-longitudinal-operating-series",
+    "briefing-research-watch-006-entity-operating-panels"
   ],
   "dependency_map_ids": [
     "dependency-map-post-quantum-standards-are-not-migration",
@@ -78,7 +93,8 @@
   "research_collection_ids": [
     "research-collection-darpa-usg-2025-2026",
     "research-collection-federal-implementation-evidence-2025-2026",
-    "research-collection-longitudinal-operating-series-2020-2025"
+    "research-collection-longitudinal-operating-series-2020-2025",
+    "research-collection-entity-operating-panels-2021-2026"
   ],
   "evidence_gap_ids": [
     "gap-009",
@@ -120,6 +136,11 @@
       "stage": "Longitudinal operating series",
       "current_state": "Recurring federal reporting now supplies multiple observations beyond one policy or one audit.",
       "boundary": "Reporting continuity is not equivalent to implementation effectiveness or operating benefit."
+    },
+    {
+      "stage": "Named entity operating panel",
+      "current_state": "Nine inspector-general records support three stable agency-level control panels.",
+      "boundary": "Agency maturity and effectiveness labels do not share identical scope, sampling, metric design, system risk, incident exposure, or mission consequence."
     }
   ],
   "evidence_limits": [
@@ -127,13 +148,17 @@
     "The post-quantum record now has a procurement path but still lacks institution-level inventories, orders, product validation, vendor readiness, budget, staffing, pilot, deployment, and retirement evidence.",
     "Preliminary PIV working drafts can change and should not be described as final requirements.",
     "NIST O-RAN laboratory evidence does not stand in for spectrum decisions, industry consensus, certification, secure deployment, or commercial adoption.",
-    "Administrative reporting can change scope, metric design, maturity scale, automation, and publication location."
+    "Administrative reporting can change scope, metric design, maturity scale, automation, and publication location.",
+    "Annual FISMA metrics, tested systems, evaluator scope, component coverage, and calculated-rating methods can change.",
+    "An agency-level rating does not establish system-level control operation, incident reduction, service continuity, or mission benefit."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
     "NIST PIV public drafts, final revisions, implementation guidance, product updates, validation records, agency pilots, and credential-migration plans.",
     "Institution-level cryptographic inventories, solicitations, task orders, vendor roadmaps, budgets, pilots, validated modules, deployments, maintenance results, and legacy retirement records.",
     "Later O-RAN software releases, external reproduction, multi-vendor tests, security evaluations, standards dispositions, certification programs, and commercial deployments.",
-    "Stable implementation measures tied to system authorization, monitored operation, incidents, corrective actions, and verified outcomes."
+    "Stable implementation measures tied to system authorization, monitored operation, incidents, corrective actions, and verified outcomes.",
+    "Later agency and component ratings with explicit metric changes and tested-system coverage.",
+    "Control operation, authorization age, remediation, incidents, recovery, affected services, and mission-outcome records."
   ]
 }

@@ -3,8 +3,8 @@
   "title": "Cross-Corridor Conversion: From Authorization To Operation",
   "slug": "cross-corridor-authorization-to-operation",
   "record_status": "Published",
-  "summary": "Compare local authorization and operating transitions with national carrier, road-testing, launch, and mission-service series while keeping every system denominator separate.",
-  "current_state_summary": "Carrier service, AV testing, commercial-space operations, and federal aerospace reports now provide national longitudinal context for bounded local corridors.",
+  "summary": "Compare authorization and operating transitions with named carrier service panels while keeping networks, schedules, causes, safety, accessibility, and local outcomes separate.",
+  "current_state_summary": "United, Southwest, and Delta now have two-year operating-carrier cancellation panels with scheduled-flight denominators preserved.",
   "current_state": [
     "Northern Virginia has load, rate, transmission, permit, and water rails; final route, construction, energization, customer service, use, and reliability remain incomplete.",
     "Nevada has federal land decisions, state permits, and a closed Thacker Pass loan; condition satisfaction, construction, commissioning, qualification, output, sales, and environmental performance remain incomplete.",
@@ -12,7 +12,8 @@
     "Florida now has an operational access bridge and one completed active-countdown resilience operation, but mission licensing and measured system outcomes remain incomplete.",
     "Research Watches 001 and 002 and Local Authorization Is Not Operation expose the shared stage-conversion problem without treating the corridors as legally or technically equivalent.",
     "USGS 2025 commodity data and FAA national operation counts provide operating comparators without resolving named Nevada or Florida project outcomes.",
-    "Four mobility and mission series supply context without converting national activity into local readiness or outcome claims."
+    "Four mobility and mission series supply context without converting national activity into local readiness or outcome claims.",
+    "DOT Table 6C supports within-carrier 2024-2025 cancellation reads without authorizing its cross-carrier ranking frame."
   ],
   "primary_topics": [
     "Policy and Standards",
@@ -52,7 +53,10 @@
     "signal-56a-air-travel-consumer",
     "signal-56a-california-av-miles",
     "signal-56a-faa-commercial-space",
-    "signal-56a-president-aerospace-report"
+    "signal-56a-president-aerospace-report",
+    "signal-56b-united-cancellation-panel",
+    "signal-56b-southwest-cancellation-panel",
+    "signal-56b-delta-cancellation-panel"
   ],
   "source_ids": [
     "source-virginia-scc-large-load-gs5-2025",
@@ -87,14 +91,17 @@
     "source-56a-faa-commercial-space-operations-fy2024",
     "source-56a-president-aerospace-fy2021-2022",
     "source-56a-president-aerospace-fy2023",
-    "source-56a-president-aerospace-fy2024"
+    "source-56a-president-aerospace-fy2024",
+    "source-56b-bts-atcr-full-year-2024",
+    "source-56b-dot-atcr-february-2026"
   ],
   "organization_ids": [],
   "technology_ids": [],
   "briefing_ids": [
     "briefing-research-watch-001-cross-corridor-infrastructure-conversion",
     "briefing-research-watch-004-comparative-operating-outcomes",
-    "briefing-research-watch-005-longitudinal-operating-series"
+    "briefing-research-watch-005-longitudinal-operating-series",
+    "briefing-research-watch-006-entity-operating-panels"
   ],
   "dependency_map_ids": [
     "dependency-map-local-authorization-is-not-operation",
@@ -104,7 +111,8 @@
     "research-collection-cross-corridor-infrastructure-conversion-2024-2026",
     "research-collection-local-implementation-dossiers-2022-2026",
     "research-collection-comparative-operating-outcomes-2023-2026",
-    "research-collection-longitudinal-operating-series-2020-2025"
+    "research-collection-longitudinal-operating-series-2020-2025",
+    "research-collection-entity-operating-panels-2021-2026"
   ],
   "evidence_gap_ids": [
     "gap-011",
@@ -138,6 +146,11 @@
       "stage": "Longitudinal operating series",
       "current_state": "Twelve national mobility and mission observations provide separate service, exposure, operation, and activity rails.",
       "boundary": "Flights, cancellations, test miles, licensed operations, missions, and local utilization use different denominators."
+    },
+    {
+      "stage": "Named entity operating panel",
+      "current_state": "Three reporting operating carriers now have named two-year cancellation panels.",
+      "boundary": "Cancellation rates do not share network, schedule mix, airport, weather, cause, customer, safety, accessibility, or local-effect context."
     }
   ],
   "evidence_limits": [
@@ -145,12 +158,15 @@
     "A rate decision, mining permit, federal loan, site license, environmental decision, and master plan are not interchangeable.",
     "No pathway record establishes corridor-wide readiness, spare capacity, qualified output, mission availability, or accepted local outcomes.",
     "National commodity and commercial-space operating baselines do not close project-level construction, qualification, mission, utilization, or local-outcome gates.",
-    "National series cannot establish a named corridor's readiness, service, safety, accessibility, cost, or local benefit."
+    "National series cannot establish a named corridor's readiness, service, safety, accessibility, cost, or local benefit.",
+    "Operating-carrier rows must remain separate from marketing-carrier networks and branded code-share partners.",
+    "Two observations do not establish a durable trend."
   ],
   "next_records": [
     "Northern Virginia route, construction, energization, customer-service, water, emissions-compliance, reliability, and local-outcome records.",
     "Nevada finance draws, water and permit-condition compliance, construction, commissioning, qualification, output, sales, environmental, and repayment records.",
     "Florida project appropriations, awards, construction, acceptance, operator and mission authorization, utilization, safety, resilience, and outcome records.",
-    "Carrier-, operator-, site-, mission-, and local-system records with compatible exposure and outcome denominators."
+    "Carrier-, operator-, site-, mission-, and local-system records with compatible exposure and outcome denominators.",
+    "Later carrier full-year reports, revision notices, causes, delays, complaints, accessibility, schedule mix, and airport exposure."
   ]
 }

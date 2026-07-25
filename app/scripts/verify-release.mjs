@@ -66,6 +66,8 @@ const phase55XReviewPath = join(appRoot, "src", "data", "phase-55x-publication-r
 const phase55YReviewPath = join(appRoot, "src", "data", "phase-55y-publication-review.json");
 const phase55ZReviewPath = join(appRoot, "src", "data", "phase-55z-publication-review.json");
 const phase56AReviewPath = join(appRoot, "src", "data", "phase-56a-publication-review.json");
+const phase56BReviewPath = join(appRoot, "src", "data", "phase-56b-publication-review.json");
+const phase56BPanelsPath = join(appRoot, "src", "data", "phase-56b-entity-panels.json");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
@@ -94,6 +96,8 @@ const phase55XReview = await readJson(phase55XReviewPath);
 const phase55YReview = await readJson(phase55YReviewPath);
 const phase55ZReview = await readJson(phase55ZReviewPath);
 const phase56AReview = await readJson(phase56AReviewPath);
+const phase56BReview = await readJson(phase56BReviewPath);
+const phase56BPanels = await readJson(phase56BPanelsPath);
 const evidenceGaps = await Promise.all(
   evidenceGapFiles.map((name) => readJson(join(evidenceGapDirectory, name))),
 );
@@ -439,6 +443,97 @@ check(
 check(
   phase56AReview.comparison_rule.includes("No cross-domain comparison or ranking"),
   "Phase 56A publication review is missing the cross-domain comparison stop rule.",
+);
+
+const phase56BSignals = phase56BReview.signal_decisions;
+const phase56BSignalIds = [...phase56BSignals.promoted, ...phase56BSignals.held];
+const phase56BDocuments = phase56BReview.document_decisions;
+check(phase56BReview.portfolio_count === 4, `Expected four Phase 56B portfolios, found ${phase56BReview.portfolio_count}.`);
+check(phase56BReview.panel_count === 12, `Expected twelve Phase 56B panels, found ${phase56BReview.panel_count}.`);
+check(phase56BReview.primary_record_count === 17, `Expected 17 Phase 56B primary records, found ${phase56BReview.primary_record_count}.`);
+check(phase56BSignals.reviewed === 16, `Expected sixteen Phase 56B signal decisions, found ${phase56BSignals.reviewed}.`);
+check(phase56BSignals.promoted.length === 12, `Expected twelve Phase 56B Published signals, found ${phase56BSignals.promoted.length}.`);
+check(phase56BSignals.held.length === 4, `Expected four Phase 56B held signals, found ${phase56BSignals.held.length}.`);
+check(new Set(phase56BSignalIds).size === 16, "Phase 56B signal decision IDs must be unique.");
+for (const id of phase56BSignals.promoted) {
+  check(signalStatusById.get(id) === "Published", `Phase 56B Published signal ${id} has the wrong status.`);
+}
+for (const id of phase56BSignals.held) {
+  check(signalStatusById.get(id) === "In Review", `Phase 56B held signal ${id} has the wrong status.`);
+}
+check(phase56BDocuments.reviewed === 17, `Expected 17 Phase 56B document decisions, found ${phase56BDocuments.reviewed}.`);
+check(phase56BDocuments.published.length === 17, `Expected 17 Phase 56B Published documents, found ${phase56BDocuments.published.length}.`);
+check(phase56BDocuments.held.length === 0, `Expected no Phase 56B held documents, found ${phase56BDocuments.held.length}.`);
+check(phase56BPanels.panel_count === 12 && phase56BPanels.panels.length === 12, "Phase 56B entity-panel ledger must contain twelve panels.");
+check(
+  new Set(phase56BPanels.panels.map((panel) => panel.entity_id)).size === 12,
+  "Phase 56B Published panels must have twelve unique stable entity IDs.",
+);
+for (const panel of phase56BPanels.panels) {
+  check(panel.record_status === "Published", `Phase 56B panel ${panel.panel_id} should be Published.`);
+  check(panel.observations.length >= 2, `Phase 56B panel ${panel.panel_id} needs at least two observations.`);
+  check(
+    [
+      panel.entity_id,
+      panel.indicator,
+      panel.unit,
+      panel.denominator,
+      panel.period,
+      panel.geography,
+      panel.method,
+      panel.attribution,
+      panel.comparison_boundary,
+    ].every(Boolean),
+    `Phase 56B panel ${panel.panel_id} is missing a measurement-contract field.`,
+  );
+  check(
+    panel.observations.every((observation) => observation.period && observation.label && observation.source_id),
+    `Phase 56B panel ${panel.panel_id} has an incomplete observation.`,
+  );
+  check(
+    panel.reporting_breaks.length > 0 && panel.missing_data.length > 0 && panel.merger_exit_notes.length > 0,
+    `Phase 56B panel ${panel.panel_id} must preserve breaks, missing data, and identity-change handling.`,
+  );
+}
+check(
+  Object.keys(phase56BReview.portfolio_panels).length === 4
+    && Object.values(phase56BReview.portfolio_panels).every((panelIds) => panelIds.length === 3),
+  "Phase 56B must contain three named panels in each of four portfolios.",
+);
+const phase56BCollection = researchCollections.find(
+  (collection) => collection.id === "research-collection-entity-operating-panels-2021-2026",
+);
+check(Boolean(phase56BCollection), "Phase 56B entity operating-panel research collection is missing.");
+if (phase56BCollection) {
+  check(phase56BCollection.document_ids.length === 17, `Expected 17 Phase 56B documents, found ${phase56BCollection.document_ids.length}.`);
+  const resolvedPhase56BDocuments = phase56BCollection.document_ids
+    .map((documentId) => researchDocumentById.get(documentId))
+    .filter(Boolean);
+  check(resolvedPhase56BDocuments.length === 17, `Expected all 17 Phase 56B documents to resolve, found ${resolvedPhase56BDocuments.length}.`);
+  check(
+    resolvedPhase56BDocuments.every((document) => document.record_status === "Published"),
+    "All Phase 56B research documents should be Published.",
+  );
+  check(
+    resolvedPhase56BDocuments.every((document) => document.capture_status === "Official link record"),
+    "Phase 56B research documents must use the declared official-link capture contract.",
+  );
+}
+check(
+  briefingStatusById.get("briefing-research-watch-006-entity-operating-panels") === "Published",
+  "Phase 56B entity operating-panel briefing should be Published.",
+);
+check(
+  phase56BReview.entity_rule.includes("stable entity ID") && phase56BReview.entity_rule.includes("at least two compatible observations"),
+  "Phase 56B publication review is missing the entity-panel publication rule.",
+);
+check(
+  phase56BReview.context_rule.includes("National context and entity performance remain separate"),
+  "Phase 56B publication review is missing the national-context boundary.",
+);
+check(
+  phase56BReview.comparison_rule.includes("No cross-entity ranking"),
+  "Phase 56B publication review is missing the cross-entity ranking stop rule.",
 );
 
 for (const collection of researchCollections) {

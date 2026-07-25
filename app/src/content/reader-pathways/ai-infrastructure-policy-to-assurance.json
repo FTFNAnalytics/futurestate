@@ -3,8 +3,8 @@
   "title": "AI Infrastructure: From Federal Priority To Assured Operation",
   "slug": "ai-infrastructure-policy-to-assurance",
   "record_status": "Published",
-  "summary": "Follow federal AI and cybersecurity policy into recurring inventories, control measurement, inspector-general effectiveness, incidents, remediation, and measured mission outcomes.",
-  "current_state_summary": "Four new multi-period federal series distinguish FISMA reporting, GAO recommendation backlogs, inspector-general effectiveness, and NASA AI-use disclosure while keeping each measurement contract separate.",
+  "summary": "Follow federal policy into recurring agency control measurement, named FISMA panels, tested systems, incidents, corrective actions, recovery, and mission outcomes.",
+  "current_state_summary": "NASA, DHS, and HHS now have named multi-year FISMA panels, with annual metric, scope, sampling, and component boundaries kept visible.",
   "current_state": [
     "Federal R&D, national-security, acquisition, and procurement records define the policy and buying stack.",
     "NIST ARIA 0.1 completed model, red-team, and field testing across seven applications from five organizations.",
@@ -15,7 +15,9 @@
     "Federal cybersecurity audits add endpoint, event-logging, network-monitoring, and data-quality measures, but not a common security-outcome denominator.",
     "The FY 2021 through FY 2023 FISMA reports show recurring federal measurement with changing automation and scoring methods.",
     "Two compatible 23-agency inspector-general snapshots show that a majority of reviewed civilian programs remained below the effectiveness threshold in FY 2020 and FY 2022.",
-    "NASA maintained annual public AI-use disclosure, but the inventories still lack stable mission-benefit and incident denominators."
+    "NASA maintained annual public AI-use disclosure, but the inventories still lack stable mission-benefit and incident denominators.",
+    "NASA remained at Level 3 across FY 2022-FY 2024, DHS moved from ineffective in FY 2021 to effective in FY 2022 and FY 2023, and HHS remained Not Effective across FY 2022-FY 2024.",
+    "The three agency sequences remain separate and do not support a cross-agency rank."
   ],
   "primary_topics": [
     "AI for Science",
@@ -44,7 +46,10 @@
     "signal-56a-fisma-reporting",
     "signal-56a-gao-cyber-backlog",
     "signal-56a-fisma-effectiveness",
-    "signal-56a-nasa-ai-inventory"
+    "signal-56a-nasa-ai-inventory",
+    "signal-56b-nasa-fisma-panel",
+    "signal-56b-dhs-fisma-panel",
+    "signal-56b-hhs-fisma-panel"
   ],
   "source_ids": [
     "source-fy2027-rd-priorities-m-25-34",
@@ -79,7 +84,16 @@
     "source-56a-gao-fisma-effectiveness-fy2022",
     "source-56a-nasa-ai-use-cases-2022",
     "source-56a-nasa-ai-use-cases-2023",
-    "source-56a-nasa-ai-use-cases-2024"
+    "source-56a-nasa-ai-use-cases-2024",
+    "source-56b-nasa-fisma-fy2022",
+    "source-56b-nasa-fisma-fy2023",
+    "source-56b-nasa-fisma-fy2024",
+    "source-56b-dhs-fisma-fy2021",
+    "source-56b-dhs-fisma-fy2022",
+    "source-56b-dhs-fisma-fy2023",
+    "source-56b-hhs-fisma-fy2022",
+    "source-56b-hhs-fisma-fy2023",
+    "source-56b-hhs-fisma-fy2024"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -91,7 +105,8 @@
     "briefing-stack-watch-003-research-to-implementation",
     "briefing-research-watch-003-operational-evidence",
     "briefing-research-watch-004-comparative-operating-outcomes",
-    "briefing-research-watch-005-longitudinal-operating-series"
+    "briefing-research-watch-005-longitudinal-operating-series",
+    "briefing-research-watch-006-entity-operating-panels"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -102,7 +117,8 @@
     "research-collection-federal-implementation-evidence-2025-2026",
     "research-collection-operational-evidence-receiving-systems-2024-2026",
     "research-collection-comparative-operating-outcomes-2023-2026",
-    "research-collection-longitudinal-operating-series-2020-2025"
+    "research-collection-longitudinal-operating-series-2020-2025",
+    "research-collection-entity-operating-panels-2021-2026"
   ],
   "evidence_gap_ids": [
     "gap-008",
@@ -140,6 +156,11 @@
       "stage": "Longitudinal operating series",
       "current_state": "Sixteen AI and cybersecurity observations now form four recurring institutional series.",
       "boundary": "Recommendation inventories, effectiveness ratings, security measures, incidents, AI use cases, and mission outcomes are not interchangeable."
+    },
+    {
+      "stage": "Named entity operating panel",
+      "current_state": "Nine inspector-general records support three stable agency-level control panels.",
+      "boundary": "Agency maturity and effectiveness labels do not share identical scope, sampling, metric design, system risk, incident exposure, or mission consequence."
     }
   ],
   "evidence_limits": [
@@ -149,7 +170,9 @@
     "Agency inventories use disclosure and maturity fields that do not replace usage, performance, incident, or benefit measures.",
     "Cybersecurity implementation measures cannot be ranked as equivalent risk or incident outcomes.",
     "Federal cyber metrics and automation rules changed across the reviewed reporting cycles.",
-    "AI inventory continuity does not establish operational maturity, usage, reliability, safety, cost, or mission benefit."
+    "AI inventory continuity does not establish operational maturity, usage, reliability, safety, cost, or mission benefit.",
+    "Annual FISMA metrics, tested systems, evaluator scope, component coverage, and calculated-rating methods can change.",
+    "An agency-level rating does not establish system-level control operation, incident reduction, service continuity, or mission benefit."
   ],
   "next_records": [
     "Later ARIA rounds, sector-specific evaluations, method-validation studies, and full AI TEVV drafts.",
@@ -158,6 +181,8 @@
     "Agency- and system-level usage, accuracy, availability, human-override, cost, mission-benefit, impact-assessment, incident, and corrective-action records.",
     "Compatible KEV remediation, event-logging, detection, response, recovery, and harm measures with agency-size and risk context.",
     "Stable agency-level performance, incident, remediation, recovery, affected-person, and harm measures.",
-    "System-level AI usage, accuracy, availability, override, impact-assessment, incident, cost, and mission-outcome records."
+    "System-level AI usage, accuracy, availability, override, impact-assessment, incident, cost, and mission-outcome records.",
+    "Later agency and component ratings with explicit metric changes and tested-system coverage.",
+    "Control operation, authorization age, remediation, incidents, recovery, affected services, and mission-outcome records."
   ]
 }

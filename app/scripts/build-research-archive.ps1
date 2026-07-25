@@ -59,10 +59,7 @@ $captureRows = foreach ($document in $documents) {
   $normalizedMemberPath = $memberPath.Replace("/", [System.IO.Path]::DirectorySeparatorChar)
   $capturePath = Join-Path $bundlePath $normalizedMemberPath
 
-  if (
-    -not (Test-Path -LiteralPath $capturePath -PathType Leaf) -and
-    $document.capture_status -eq "Official link record"
-  ) {
+  if ($document.capture_status -eq "Official link record") {
     $captureDirectory = Split-Path -Parent $capturePath
     if (-not (Test-Path -LiteralPath $captureDirectory -PathType Container)) {
       New-Item -ItemType Directory -Path $captureDirectory | Out-Null
