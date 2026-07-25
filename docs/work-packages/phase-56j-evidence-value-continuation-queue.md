@@ -2,7 +2,7 @@
 
 Date: 2026-07-25
 
-Status: complete locally; owner-only deployment pending
+Status: complete and owner-only deployed
 
 ## Objective
 
@@ -82,7 +82,16 @@ The following gates pass:
 
 ## Deployment Receipt
 
-Pending. Preserve the existing owner-only custom access policy with one allowed owner and no groups. Do not change public GitHub, package version, custom domain, Hostinger DNS, or public access.
+- local content commit: `ed8da2a25ef596a9c69df21755d4621e7aa09f50`
+- exact private runtime commit: `12a46d051e6f4f4e5019f005e468da2d62511a16`
+- Sites version: 35
+- version ID: `appgprj_6a614e1092d08191bf65779fc35df959~appgver_231fd79f71c881918355a977da714892`
+- deployment ID: `appgdep_6a64756ecb9c8191866b692f25b82ad0`
+- production URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- deployment status: succeeded
+- access: custom, one allowed owner, no groups
+
+Public GitHub, package version, custom domain, Hostinger DNS, and public access did not change.
 
 ## Phase 56K Handoff
 

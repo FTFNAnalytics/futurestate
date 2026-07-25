@@ -164,6 +164,7 @@ What is now stable:
 - Phase 56I local content commit `2760edee242f398850dcc9ef2aa7660830caf9af` produced exact private packaged source commit `41497faeebdb1d15b4fa26ceb05d5e3b7300bea5`, deployed as owner-only Sites version 34 in deployment `appgdep_6a646c5539708191a598952968b74f53` with one allowed owner and no groups.
 - The verified Phase 56J local contract is 1,336 pages, 542 sources, 280 signals, 214 Published signals, 66 In Review signals, 332 current Published-support sources, twenty-two briefings, seven maps, nineteen research collections, 386 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 38 updates, and five public-data exports.
 - Phase 56J orders all twenty original Partially Closed continuation rules, acquires five current records, moves only Manatee to Partially Closed, and leaves one Closed, twenty-one Partially Closed, and two Open evidence states.
+- Phase 56J local content commit `ed8da2a25ef596a9c69df21755d4621e7aa09f50` produced exact private runtime commit `12a46d051e6f4f4e5019f005e468da2d62511a16`, deployed as owner-only Sites version 35 in deployment `appgdep_6a64756ecb9c8191866b692f25b82ad0` with one allowed owner and no groups.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 332 current Published-support sources are governed by the same current-source release assertion.
@@ -185,7 +186,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only access and continue with Phase 56K high-value continuation batch two. Phase 56J is complete and release-verified locally: all twenty original Partially Closed continuation rules are ordered, five current records were acquired, and exact EIA-923 plant rows moved Manatee to Partially Closed. The ledger now contains one Closed, twenty-one Partially Closed, and two Open records. Continue DHS and Gateway, then pursue Moss Landing, VA, F-35 Fort Worth, F-15EX St. Louis, and DOT. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only access and continue with Phase 56K high-value continuation batch two. Phase 56J is complete, release-verified, and owner-only deployed as Sites version 35: all twenty original Partially Closed continuation rules are ordered, five current records were acquired, and exact EIA-923 plant rows moved Manatee to Partially Closed. The ledger now contains one Closed, twenty-one Partially Closed, and two Open records. Continue DHS and Gateway, then pursue Moss Landing, VA, F-35 Fort Worth, F-15EX St. Louis, and DOT. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 

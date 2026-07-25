@@ -2795,8 +2795,10 @@ Implemented:
 
 Deployment receipt:
 
-- pending exact local content commit, private packaged source commit, Sites version, and deployment ID;
-- preserve custom access with one allowed owner and no groups.
+- local content commit `ed8da2a25ef596a9c69df21755d4621e7aa09f50`;
+- exact private runtime commit `12a46d051e6f4f4e5019f005e468da2d62511a16`;
+- owner-only Sites version 35 in deployment `appgdep_6a64756ecb9c8191866b692f25b82ad0`;
+- custom access confirmed with one allowed owner and no groups.
 
 Boundary:
 

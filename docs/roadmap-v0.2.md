@@ -380,13 +380,13 @@ Recommended active schedule:
 | Completed | Phase 56F | 24-entity coverage ledger, one Closed, sixteen Partially Closed, seven Open, Research Watch 010, 27-file archive, and owner-only Sites version 31 |
 | Completed | Phase 56G | seven operating-record acquisition checks, one Open-to-Partially-Closed transition, Research Watch 011, and owner-only Sites version 32 |
 | Completed | Phase 56H | fourteen evidence decisions, three Open-to-Partially-Closed transitions, Research Watch 012, 17-file archive, and owner-only Sites version 33 |
-| Completed locally; deployment pending | Phase 56J | ordered continuation queue, five-record first batch, one bounded Manatee transition, and Research Watch 014 |
+| Completed | Phase 56J | ordered continuation queue, five-record first batch, one bounded Manatee transition, Research Watch 014, and owner-only Sites version 35 |
 | Current content gate | Phase 56K | continue DHS and Gateway, then pursue Moss Landing, VA, F-35, F-15EX, and DOT |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete through Sites version 34, and Phase 56J is complete and release-verified locally. Phase 56J ordered all twenty original Partially Closed continuation rules, acquired five current records, and advanced only Manatee to Partially Closed on exact plant-level EIA-923 monthly rows. The ledger now stands at one Closed, twenty-one Partially Closed, and two Open evidence states. The current non-public content gate is Phase 56K: continue DHS and Gateway, then pursue Moss Landing, VA, F-35 Fort Worth, F-15EX St. Louis, and DOT. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete through Sites version 35. Phase 56J ordered all twenty original Partially Closed continuation rules, acquired five current records, and advanced only Manatee to Partially Closed on exact plant-level EIA-923 monthly rows. The ledger now stands at one Closed, twenty-one Partially Closed, and two Open evidence states. The current non-public content gate is Phase 56K: continue DHS and Gateway, then pursue Moss Landing, VA, F-35 Fort Worth, F-15EX St. Louis, and DOT. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1059,7 +1059,7 @@ Local result:
 - three source profiles, twelve evidence documents, two Published signals, one held synthesis, Research Watch 013, and a 15-file archive passed the 1,319-page local release contract;
 - local content commit `2760edee242f398850dcc9ef2aa7660830caf9af` produced exact private packaged source commit `41497faeebdb1d15b4fa26ceb05d5e3b7300bea5`, deployed as owner-only Sites version 34 in deployment `appgdep_6a646c5539708191a598952968b74f53` with one allowed owner and no groups.
 
-### Phase 56J: Evidence-Value Continuation Queue - Complete Locally; Owner-Only Deployment Pending
+### Phase 56J: Evidence-Value Continuation Queue - Complete And Owner-Only Deployed
 
 Goal: keep expanding the 24-entity operating corpus after the completed first pass by pursuing the strongest named next record for each Partially Closed decision while continuing the three exact Open rails.
 
@@ -1088,7 +1088,7 @@ Local result:
 - four bounded signals publish and the DOE/FERC component-scope record remains `In Review`;
 - five source profiles, five research documents, Research Watch 014, one collection, one update, two machine-readable ledgers, and an eight-file archive pass the 1,336-page local release contract;
 - the evidence ledger now stands at one Closed, twenty-one Partially Closed, and two Open;
-- owner-only deployment remains pending under the existing one-owner, no-group access policy.
+- local content commit `ed8da2a25ef596a9c69df21755d4621e7aa09f50` produced exact private runtime commit `12a46d051e6f4f4e5019f005e468da2d62511a16`, deployed as owner-only Sites version 35 in deployment `appgdep_6a64756ecb9c8191866b692f25b82ad0` with one allowed owner and no groups.
 
 ### Phase 56K: High-Value Continuation Batch Two - Current Content Gate
 
