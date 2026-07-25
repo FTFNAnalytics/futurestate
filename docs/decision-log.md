@@ -2672,7 +2672,10 @@ Implemented:
 
 Deployment receipt:
 
-- pending the Phase 56F local content commit, exact private Sites source projection, owner-only Sites version, deployment ID, and access verification.
+- local content commit `e19f6dc3f45dfcbd362091c066c74e3416e9ed43`;
+- exact private Sites source projection `2446245cbbea3d80739f5d732977948d62a2d940`;
+- owner-only Sites version 31 in deployment `appgdep_6a6445cf1f3481919cec4feac642f9df`;
+- custom access confirmed with one allowed owner and no groups.
 
 Boundary:
 

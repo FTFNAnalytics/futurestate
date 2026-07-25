@@ -152,6 +152,7 @@ What is now stable:
 - Phase 56E local content commit `2aebf8fb94d9491cf4b0b376b94f674a09dbe8e4` matches exact private source projection `79964310eeb0e1f18be0b94cb4ffd29ab04c9df4`, deployed as owner-only Sites version 30 in deployment `appgdep_6a641dc36c188191b77181aa1ea9449f` with one allowed owner and no groups.
 - Phase 56F adds one 24-entity coverage ledger, fourteen source profiles, 24 coverage documents, four Published portfolio findings, one held comparison, Research Watch 010, one collection, a publication-review ledger, and a verified 27-file archive.
 - The verified Phase 56F local contract is 1,249 pages, 516 sources, 265 signals, 203 Published signals, 62 In Review signals, 321 current Published-support sources, eighteen briefings, seven maps, fifteen research collections, 348 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 34 updates, and five public-data exports.
+- Phase 56F local content commit `e19f6dc3f45dfcbd362091c066c74e3416e9ed43` matches exact private source projection `2446245cbbea3d80739f5d732977948d62a2d940`, deployed as owner-only Sites version 31 in deployment `appgdep_6a6445cf1f3481919cec4feac642f9df` with one allowed owner and no groups.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 321 current Published-support sources are governed by the same current-source release assertion.
@@ -173,7 +174,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only Sites access and continue with Phase 56G operating-record acquisition and closure batch two. Phase 56F is complete and release-verified locally. Start with the seven Open records: DHS and DOE annual FISMA results, F-35 Fort Worth monthly due and accepted output, Manatee interval operation, Gateway final investigation and restoration, Hornsdale annual operation, and Dalrymple post-project operation. Tie every acquisition to an existing Phase 56F coverage ID and reopening rule. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only Sites version 31 and continue with Phase 56G operating-record acquisition and closure batch two. Phase 56F is complete, release-verified, and owner-only deployed. Start with the seven Open records: DHS and DOE annual FISMA results, F-35 Fort Worth monthly due and accepted output, Manatee interval operation, Gateway final investigation and restoration, Hornsdale annual operation, and Dalrymple post-project operation. Tie every acquisition to an existing Phase 56F coverage ID and reopening rule. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 

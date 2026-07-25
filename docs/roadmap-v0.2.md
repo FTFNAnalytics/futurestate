@@ -377,13 +377,13 @@ Recommended active schedule:
 | Completed | Phase 56C | twelve entity driver and constraint dossiers, four causal holds, and Research Watch 007 |
 | Completed | Phase 56D | twelve alternative-explanation tests, six holds, Research Watch 008, and owner-only Sites version 29 |
 | Completed | Phase 56E | second twelve-entity cohort, 36 vertical entity layers, four portfolio holds, Research Watch 009, and owner-only Sites version 30 |
-| Completed locally | Phase 56F | 24-entity coverage ledger, one Closed, sixteen Partially Closed, seven Open, Research Watch 010, and 27-file archive |
+| Completed | Phase 56F | 24-entity coverage ledger, one Closed, sixteen Partially Closed, seven Open, Research Watch 010, 27-file archive, and owner-only Sites version 31 |
 | Current content gate | Phase 56G | operating-record acquisition and closure batch two, beginning with the seven Open rails |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build, owner-only preview, and Phases 55S-56E aggressive expansion are complete locally and owner-only deployed. Phase 56F is complete locally and adds a controlled acquisition layer: every one of the 24 named entities now has one selected official record, one highest-value missing record, a closure state, a remaining gap, and an explicit reopening rule. The current non-public content gate is Phase 56G: operating-record acquisition and closure batch two, beginning with the seven Open rails before revisiting the sixteen Partially Closed decisions. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build, owner-only preview, and Phases 55S-56F aggressive expansion are complete locally and owner-only deployed. Phase 56F adds a controlled acquisition layer: every one of the 24 named entities now has one selected official record, one highest-value missing record, a closure state, a remaining gap, and an explicit reopening rule. The current non-public content gate is Phase 56G: operating-record acquisition and closure batch two, beginning with the seven Open rails before revisiting the sixteen Partially Closed decisions. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -937,7 +937,7 @@ Completion receipt:
 - matched local content commit `2aebf8fb94d9491cf4b0b376b94f674a09dbe8e4` to exact private source projection `79964310eeb0e1f18be0b94cb4ffd29ab04c9df4`;
 - deployed owner-only Sites version 30 in deployment `appgdep_6a641dc36c188191b77181aa1ea9449f` and confirmed custom access with one allowed owner and no groups.
 
-### Phase 56F: Cross-Cohort Coverage And Missing-Record Closure - Complete Locally
+### Phase 56F: Cross-Cohort Coverage And Missing-Record Closure - Complete
 
 Goal: turn the two twelve-entity cohorts into a 24-entity coverage program that closes the most important missing operating records without creating a league table.
 
@@ -958,7 +958,9 @@ Exit criteria:
 - compatibility, attribution, identity, denominator, and observation-window breaks remain visible: passed;
 - the cross-cohort comparison remains held: passed;
 - no causal effect, ranking, composite score, or readiness score is created: passed;
-- the full local release gate passes; owner-only deployment is pending.
+- the full local release gate passes: passed;
+- exact local content commit `e19f6dc3f45dfcbd362091c066c74e3416e9ed43` is represented by private source projection `2446245cbbea3d80739f5d732977948d62a2d940`;
+- owner-only Sites version 31 succeeded in deployment `appgdep_6a6445cf1f3481919cec4feac642f9df` under custom access with one allowed owner and no groups.
 
 ### Phase 56G: Operating-Record Acquisition And Closure Batch Two - Current Content Gate
 

@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: complete locally; owner-only deployment pending
+Status: complete and owner-only deployed
 
 ## Goal
 
@@ -102,7 +102,14 @@ Archive:
 
 Deployment receipt:
 
-- pending the Phase 56F content commit, exact private source projection, Sites version, deployment ID, and owner-only access verification.
+- local content commit: `e19f6dc3f45dfcbd362091c066c74e3416e9ed43`;
+- exact private Sites source projection: `2446245cbbea3d80739f5d732977948d62a2d940`;
+- owner-only Sites version: 31;
+- version ID: `appgprj_6a614e1092d08191bf65779fc35df959~appgver_4a5674e745388191b396633c3d21bdd8`;
+- deployment ID: `appgdep_6a6445cf1f3481919cec4feac642f9df`;
+- production URL: `https://ftfn-analytics.jbumstead.chatgpt.site`;
+- deployment status: succeeded;
+- access verification: custom policy with one allowed owner and no groups.
 
 ## Publication Boundary
 
