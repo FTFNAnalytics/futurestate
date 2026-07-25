@@ -17,7 +17,9 @@
     "Three NIST MEP case studies expose compatible before-and-after units within each named line or facility.",
     "Product, labor, quality, cost, demand, follow-up, and attribution differences stop any cross-manufacturer ranking.",
     "Phase 56C adds entity-matched controls, inputs, constraints, later observations, attribution, independent-validation limits, and alternative explanations.",
-    "Temporal order is preserved without converting association into causation, ranking, composite scoring, or readiness scoring."
+    "Temporal order is preserved without converting association into causation, ranking, composite scoring, or readiness scoring.",
+    "Phase 56D adds later observations and explicit tests of named Phase 56C alternative explanations for the same twelve entities.",
+    "Compatibility, attribution, validation status, missing denominators, and series breaks remain visible before any interpretation."
   ],
   "primary_topics": [
     "Advanced Manufacturing",
@@ -49,7 +51,8 @@
     "signal-56b-monaghan-medical-output-panel",
     "signal-56c-current-applications-drivers",
     "signal-56c-island-components-drivers",
-    "signal-56c-monaghan-medical-drivers"
+    "signal-56c-monaghan-medical-drivers",
+    "signal-56d-monaghan-medical-repeat-test"
   ],
   "source_ids": [
     "source-nsf-award-search-api",
@@ -80,7 +83,13 @@
     "source-56c-island-components-acquisition-2021",
     "source-56c-island-components-capabilities",
     "source-56c-monaghan-iso14001-2024",
-    "source-56c-monaghan-manufacturing-profile"
+    "source-56c-monaghan-manufacturing-profile",
+    "source-56d-current-applications-team-2026",
+    "source-56d-current-applications-osha-inspection-2010",
+    "source-56d-island-components-quality-clauses-2025",
+    "source-56d-island-components-certifications-2026",
+    "source-56d-monaghan-fda-tplc-2025",
+    "source-56d-monaghan-iso14001-boundary-2024"
   ],
   "organization_ids": [
     "org-nist",
@@ -96,7 +105,8 @@
     "briefing-stack-watch-004-implementation-outcomes",
     "briefing-research-watch-005-longitudinal-operating-series",
     "briefing-research-watch-006-entity-operating-panels",
-    "briefing-research-watch-007-entity-driver-constraint-dossiers"
+    "briefing-research-watch-007-entity-driver-constraint-dossiers",
+    "briefing-research-watch-008-repeat-outcomes-alternative-tests"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -107,7 +117,8 @@
     "research-collection-federal-implementation-evidence-2025-2026",
     "research-collection-longitudinal-operating-series-2020-2025",
     "research-collection-entity-operating-panels-2021-2026",
-    "research-collection-entity-driver-constraint-dossiers-2021-2026"
+    "research-collection-entity-driver-constraint-dossiers-2021-2026",
+    "research-collection-repeat-outcomes-alternative-explanation-tests-2010-2026"
   ],
   "evidence_gap_ids": [
     "gap-003",
@@ -154,6 +165,11 @@
       "stage": "Entity driver and constraint dossier",
       "current_state": "Twelve dossiers order baseline, intervention or input, constraint, and later observation.",
       "boundary": "Temporal sequence and attribution do not establish causal effect."
+    },
+    {
+      "stage": "Alternative-explanation test",
+      "current_state": "Twelve entity tests map later records to named competing explanations.",
+      "boundary": "A test may narrow an explanation without isolating cause or producing a score."
     }
   ],
   "evidence_limits": [
@@ -166,7 +182,9 @@
     "Nominal dollars, participant counts, project counts, jobs, quality, and productivity cannot be combined without a shared method.",
     "The case studies do not expose a common observation window, product mix, labor input, quality, cost, demand, or follow-up denominator.",
     "A named intervention, control, input, or response does not by itself explain an observed outcome.",
-    "Company and operator claims remain attributed until independently validated."
+    "Company and operator claims remain attributed until independently validated.",
+    "A recommendation status, certification, supplier clause, incident response, monthly cause mix, or complaint count does not create a common performance measure.",
+    "Different units, methods, identities, observation windows, and attribution levels remain split."
   ],
   "next_records": [
     "Institute research outputs, datasets, replications, patents, licensing, industry collaborations, material qualification, and manufacturing-transfer records.",
@@ -180,6 +198,8 @@
     "Repeat facility output, labor hours, first-pass yield, scrap, downtime, cost, delivery, demand, and WIP observations.",
     "Independent validation and later measurements using the same line and denominator.",
     "Repeated outcomes using the same entity, unit, denominator, method, and observation window.",
-    "Independent validation of implementation, control operation, corrective-action closure, and downstream effects."
+    "Independent validation of implementation, control operation, corrective-action closure, and downstream effects.",
+    "Later observations using the same entity, unit, denominator, method, and observation window.",
+    "Independent control-operation, closure, line-performance, availability, dispatch, and service-delivery evidence."
   ]
 }

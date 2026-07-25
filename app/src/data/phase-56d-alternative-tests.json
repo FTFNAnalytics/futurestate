@@ -1,0 +1,395 @@
+{
+  "phase": "56D",
+  "captured_date": "2026-07-24",
+  "test_count": 12,
+  "tests": [
+    {
+      "test_id": "test-56d-nasa-repeat-control-test",
+      "portfolio": "ai_cyber",
+      "parent_dossier_id": "dossier-56c-nasa-cyber-controls",
+      "parent_panel_id": "panel-56b-nasa-fisma",
+      "entity_id": "agency-nasa",
+      "entity_name": "National Aeronautics and Space Administration",
+      "record_status": "Published",
+      "signal_id": "signal-56d-nasa-repeat-control-test",
+      "source_ids": [
+        "source-56d-nasa-gao-risk-management-2025",
+        "source-56d-nasa-cio-open-recommendations-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Other remediation work",
+        "Control scope and tested systems",
+        "Legacy-system and mission-environment differences"
+      ],
+      "later_observations": [
+        "GAO's May 2026 status retained multiple selected-system risk-management recommendations as open.",
+        "GAO identified thirty open recommendations under the NASA CIO in January 2026."
+      ],
+      "compatibility": "Same agency and overlapping cybersecurity-control domain; recommendation inventories are not the annual FISMA maturity metric.",
+      "result": "The later records support a bounded remediation-workload and control-scope update but do not resolve control operation, incidents, recovery, or mission effects.",
+      "attribution": "GAO independently reports the findings and public recommendation statuses.",
+      "validation_status": "Independent official oversight; closure is not inferred where evidence remained insufficient.",
+      "causal_boundary": "The record tests alternatives or adds a later observation; it does not establish causation.",
+      "next_records": [
+        "Add FY 2026 FISMA results and recommendation-level closure evidence with tested-system, incident, recovery, service, and mission denominators."
+      ]
+    },
+    {
+      "test_id": "test-56d-dhs-repeat-control-test",
+      "portfolio": "ai_cyber",
+      "parent_dossier_id": "dossier-56c-dhs-cyber-controls",
+      "parent_panel_id": "panel-56b-dhs-fisma",
+      "entity_id": "agency-dhs",
+      "entity_name": "Department of Homeland Security",
+      "record_status": "Published",
+      "signal_id": "signal-56d-dhs-repeat-control-test",
+      "source_ids": [
+        "source-56d-dhs-fisma-fy2025-project",
+        "source-56d-dhs-cdm-recommendations-may2026"
+      ],
+      "tested_alternative_explanations": [
+        "Controls outside CDM",
+        "Component-level variation",
+        "Selected component and system scope",
+        "Annual FISMA metric changes"
+      ],
+      "later_observations": [
+        "GAO retained four CDM recommendations as open in May 2026.",
+        "DHS OIG listed the FY 2025 enterprise evaluation as ongoing at capture."
+      ],
+      "compatibility": "Same department and CDM control input; the enterprise annual result and program recommendation statuses remain separate measurement systems.",
+      "result": "The later records challenge any closure assumption and block extension of the FY 2024 enterprise rating into FY 2025.",
+      "attribution": "GAO reports CDM status; DHS OIG reports the annual review stage.",
+      "validation_status": "Independent official status records; no missing annual outcome is imputed.",
+      "causal_boundary": "The record tests alternatives or adds a later observation; it does not establish causation.",
+      "next_records": [
+        "Add the released FY 2025 evaluation, component findings, recommendation closures, endpoint and cloud coverage, incidents, recovery, and service effects."
+      ]
+    },
+    {
+      "test_id": "test-56d-hhs-repeat-control-test",
+      "portfolio": "ai_cyber",
+      "parent_dossier_id": "dossier-56c-hhs-cyber-controls",
+      "parent_panel_id": "panel-56b-hhs-fisma",
+      "entity_id": "agency-hhs",
+      "entity_name": "Department of Health and Human Services",
+      "record_status": "Published",
+      "signal_id": "signal-56d-hhs-repeat-control-test",
+      "source_ids": [
+        "source-56d-hhs-fisma-recommendations-tracker-2026",
+        "source-56d-hhs-fisma-fy2025-method"
+      ],
+      "tested_alternative_explanations": [
+        "Federated operating-division maturity",
+        "Annual metric weighting",
+        "Recommendation age and severity",
+        "Control areas outside the open GAO set"
+      ],
+      "later_observations": [
+        "The tracker listed all ten FY 2025 report recommendations as open and unimplemented.",
+        "The FY 2025 review rated core metrics Consistently Implemented and supplemental metrics Ad Hoc."
+      ],
+      "compatibility": "Same department and annual evaluation, but tracker status, core metrics, supplemental metrics, and the headline result use distinct fields.",
+      "result": "The later records support a bounded closure and weighting test while leaving division-level operation and downstream outcomes unresolved.",
+      "attribution": "HHS OIG reports both the annual evaluation and recommendation status.",
+      "validation_status": "Independent oversight with an explicit tracker state; no division-level equivalence is assumed.",
+      "causal_boundary": "The record tests alternatives or adds a later observation; it does not establish causation.",
+      "next_records": [
+        "Add dated recommendation closures, division control tests, incidents, recovery, affected services, and health-program outcomes."
+      ]
+    },
+    {
+      "test_id": "test-56d-current-applications-repeat-test",
+      "portfolio": "manufacturing",
+      "parent_dossier_id": "dossier-56c-current-applications-drivers",
+      "parent_panel_id": "panel-56b-current-applications-output",
+      "entity_id": "manufacturer-current-applications-watertown-ny",
+      "entity_name": "Current Applications",
+      "record_status": "In Review",
+      "signal_id": "signal-56d-current-applications-repeat-test",
+      "source_ids": [
+        "source-56d-current-applications-team-2026",
+        "source-56d-current-applications-osha-inspection-2010"
+      ],
+      "tested_alternative_explanations": [
+        "Labor input",
+        "Tooling and layout",
+        "Product mix",
+        "Demand and backlog",
+        "Unrecorded private capital investment"
+      ],
+      "later_observations": [
+        "The current company page identifies manufacturing, engineering, quality, procurement, tooling, and information-system roles.",
+        "The independently attributable OSHA inspection predates the line intervention and is not a later production observation."
+      ],
+      "compatibility": "The company identity is stable; neither record uses the same line, output unit, labor denominator, or post-intervention window.",
+      "result": "The test remains held because public records do not expose a compatible repeat output or input series.",
+      "attribution": "Operating roles are company-attributed; the historical inspection is OSHA-attributed.",
+      "validation_status": "Entity continuity is partially supported; line performance is not independently validated.",
+      "causal_boundary": "The record tests alternatives or adds a later observation; it does not establish causation.",
+      "next_records": [
+        "Obtain same-line output, labor hours, WIP, yield, scrap, downtime, cost, delivery, demand, and dated capital records."
+      ]
+    },
+    {
+      "test_id": "test-56d-island-components-repeat-test",
+      "portfolio": "manufacturing",
+      "parent_dossier_id": "dossier-56c-island-components-drivers",
+      "parent_panel_id": "panel-56b-island-components-output",
+      "entity_id": "manufacturer-island-components-hauppauge-ny",
+      "entity_name": "Island Components Group",
+      "record_status": "In Review",
+      "signal_id": "signal-56d-island-components-repeat-test",
+      "source_ids": [
+        "source-56d-island-components-quality-clauses-2025",
+        "source-56d-island-components-certifications-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Lean workflow changes",
+        "Parent resources",
+        "Capital equipment",
+        "Labor and staffing",
+        "Product mix and demand"
+      ],
+      "later_observations": [
+        "The 2025 supplier clauses define nonconformance, corrective action, traceability, change control, and specified key-characteristic requirements.",
+        "The current certification page lists ISO 9001:2015 and AS9100D for the Hauppauge operation."
+      ],
+      "compatibility": "Same company and facility identity; control design and certification are not the same output, labor, WIP, yield, defect, downtime, or delivery measures.",
+      "result": "The test remains held because no repeat line outcome or surveillance finding is exposed.",
+      "attribution": "Both records are company-published; no independent surveillance report is available in the captured set.",
+      "validation_status": "The records support stated control design, not observed operation or causal effect.",
+      "causal_boundary": "The record tests alternatives or adds a later observation; it does not establish causation.",
+      "next_records": [
+        "Add certification-surveillance findings and same-line output, labor, WIP, yield, defects, downtime, delivery, demand, and parent-resource use."
+      ]
+    },
+    {
+      "test_id": "test-56d-monaghan-medical-repeat-test",
+      "portfolio": "manufacturing",
+      "parent_dossier_id": "dossier-56c-monaghan-medical-drivers",
+      "parent_panel_id": "panel-56b-monaghan-medical-output",
+      "entity_id": "manufacturer-monaghan-medical-plattsburgh-ny",
+      "entity_name": "Monaghan Medical",
+      "record_status": "Published",
+      "signal_id": "signal-56d-monaghan-medical-repeat-test",
+      "source_ids": [
+        "source-56d-monaghan-fda-tplc-2025",
+        "source-56d-monaghan-iso14001-boundary-2024"
+      ],
+      "tested_alternative_explanations": [
+        "Demand and product mix",
+        "Quality-control and supply conditions",
+        "Equipment and layout",
+        "Lean intervention"
+      ],
+      "later_observations": [
+        "FDA's portal showed 193 manufacturer-attributed device reports for 2025 at capture.",
+        "The company's ISO 14001 page supplies control objectives but no quantitative surveillance or environmental outcome."
+      ],
+      "compatibility": "Same manufacturer; product-event counts and environmental management controls do not identify the MEP production line or units distributed.",
+      "result": "The bounded record can publish as a denominator warning, but it does not test persistence of the reported line-output change.",
+      "attribution": "FDA exposes the event-report dataset; environmental-control claims remain company-attributed.",
+      "validation_status": "The event count is independently accessible; defect rate, line identity, and causal interpretation are not validated.",
+      "causal_boundary": "The record tests alternatives or adds a later observation; it does not establish causation.",
+      "next_records": [
+        "Add units distributed, product identity, same-line output, labor, yield, scrap, downtime, delivery, demand, waste, emissions, and surveillance findings."
+      ]
+    },
+    {
+      "test_id": "test-56d-moss-landing-repeat-test",
+      "portfolio": "infrastructure",
+      "parent_dossier_id": "dossier-56c-moss-landing-constraints",
+      "parent_panel_id": "panel-56b-moss-landing-battery-capacity",
+      "entity_id": "eia-plant-260",
+      "entity_name": "Dynegy Moss Landing Power Plant Hybrid",
+      "record_status": "Published",
+      "signal_id": "signal-56d-moss-landing-repeat-test",
+      "source_ids": [
+        "source-56d-moss-landing-epa-response-timeline-2026",
+        "source-56d-moss-landing-epa-agreement-2025"
+      ],
+      "tested_alternative_explanations": [
+        "Incident and outage conditions",
+        "Battery-unit differences",
+        "Broader power-plant equipment",
+        "Ownership and operating changes"
+      ],
+      "later_observations": [
+        "EPA reported 33,943 intact batteries de-energized and ready for recycling by June 24, 2026, with about 5,000 remaining in difficult areas.",
+        "The enforceable agreement created regulator-supervised removal, monitoring, and emergency-response obligations."
+      ],
+      "compatibility": "The records concern the 300 MW fire-affected battery building inside the broader Moss Landing complex; they are not a common 750 MW plant-performance observation.",
+      "result": "The later official record verifies corrective-action progress and an incident boundary while blocking a facility-wide availability or return-to-service claim.",
+      "attribution": "EPA independently reports the obligation and supervised response progress.",
+      "validation_status": "Regulator-verified work status; root cause, complete removal, return to service, and plant-wide performance remain unresolved.",
+      "causal_boundary": "The record tests alternatives or adds a later observation; it does not establish causation.",
+      "next_records": [
+        "Add final removal closure, CPUC investigation findings, generator reconciliation, availability, dispatch, duration, revenue, grid service, and reliability effects."
+      ]
+    },
+    {
+      "test_id": "test-56d-manatee-repeat-test",
+      "portfolio": "infrastructure",
+      "parent_dossier_id": "dossier-56c-manatee-constraints",
+      "parent_panel_id": "panel-56b-manatee-battery-capacity",
+      "entity_id": "eia-plant-60014",
+      "entity_name": "Manatee Solar Energy Center",
+      "record_status": "Published",
+      "signal_id": "signal-56d-manatee-repeat-test",
+      "source_ids": [
+        "source-56d-manatee-fpl-data-request-2025",
+        "source-56d-manatee-fpl-site-plan-2025"
+      ],
+      "tested_alternative_explanations": [
+        "Load and weather",
+        "Solar availability",
+        "Transmission constraints",
+        "Market and dispatch rules"
+      ],
+      "later_observations": [
+        "FPL attributed the location choice to high winter peak capacity need, existing transmission, and proximity to solar charging.",
+        "The 2025 site plan continued to list 409 MW of in-service storage at Manatee."
+      ],
+      "compatibility": "Same asset and power-capacity unit; both records are operator statements in regulatory filings rather than interval performance observations.",
+      "result": "The filings sharpen the stated operating logic and identity boundary but do not establish availability, cycling, dispatch, value, or customer effect.",
+      "attribution": "FPL makes the claims in filings maintained by the Florida PSC.",
+      "validation_status": "The docket independently validates that the statements were filed, not the realized operating outcomes.",
+      "causal_boundary": "The record tests alternatives or adds a later observation; it does not establish causation.",
+      "next_records": [
+        "Add interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer-cost records."
+      ]
+    },
+    {
+      "test_id": "test-56d-gateway-repeat-test",
+      "portfolio": "infrastructure",
+      "parent_dossier_id": "dossier-56c-gateway-constraints",
+      "parent_panel_id": "panel-56b-gateway-battery-capacity",
+      "entity_id": "eia-plant-62667",
+      "entity_name": "Gateway Energy Storage System",
+      "record_status": "Published",
+      "signal_id": "signal-56d-gateway-repeat-test",
+      "source_ids": [
+        "source-56d-gateway-cpuc-resolution-e5428-2025",
+        "source-56d-gateway-epa-bess-safety-2025"
+      ],
+      "tested_alternative_explanations": [
+        "Facility operating history",
+        "Maintenance scheduling",
+        "Dispatch conditions",
+        "New GO 167-C implementation timing"
+      ],
+      "later_observations": [
+        "CPUC recorded ongoing root-cause investigations and a partial return to service after the thermal event.",
+        "EPA recorded the May 2024 fire, seven days of flareups, and monitoring and work-plan requirements."
+      ],
+      "compatibility": "Same named asset and incident; the records do not expose a full-capacity availability denominator or compatible dispatch series.",
+      "result": "The later official record challenges any assumption that nameplate capacity represented uninterrupted operation.",
+      "attribution": "CPUC and EPA independently report the incident and response conditions.",
+      "validation_status": "Incident and partial-return status are independently attributable; full closure and performance remain unresolved.",
+      "causal_boundary": "The record tests alternatives or adds a later observation; it does not establish causation.",
+      "next_records": [
+        "Add final investigation and closure evidence, restored capacity, availability, dispatch, duration, degradation, revenue, grid service, and reliability effects."
+      ]
+    },
+    {
+      "test_id": "test-56d-united-repeat-service-test",
+      "portfolio": "mobility",
+      "parent_dossier_id": "dossier-56c-united-service-constraints",
+      "parent_panel_id": "panel-56b-united-cancellation",
+      "entity_id": "dot-carrier-ua",
+      "entity_name": "United Airlines",
+      "record_status": "Published",
+      "signal_id": "signal-56d-united-repeat-service-test",
+      "source_ids": [
+        "source-56d-dot-atcr-february-2026",
+        "source-56d-dot-atcr-july-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Weather and airport exposure",
+        "Schedule and network mix",
+        "Maintenance and staffing",
+        "Air traffic constraints",
+        "Recovery decisions"
+      ],
+      "later_observations": [
+        "December 2025: 65,865 records, 76.76% on time, 0.39% cancelled, with 6.41% air-carrier, 0.61% extreme-weather, 9.05% national-system, and 6.53% late-aircraft delay.",
+        "May 2026: 74,200 records, 79.47% on time, 0.39% cancelled, with 4.95% air-carrier, 0.39% extreme-weather, 8.64% national-system, and 5.87% late-aircraft delay; DOT separately recorded 744 brand-level complaints."
+      ],
+      "compatibility": "Same reporting operating carrier and monthly delay table; complaint counts are brand-level, can include partners, and use a separate denominator.",
+      "result": "The repeat record exposes cause mix and stable monthly cancellation percentage without proving why the distribution changed or whether service commitments were delivered.",
+      "attribution": "DOT publishes carrier-reported operations and separately received complaint cases.",
+      "validation_status": "Official common-table observations; causal attribution and commitment delivery remain unverified.",
+      "causal_boundary": "The record tests alternatives or adds a later observation; it does not establish causation.",
+      "next_records": [
+        "Add later operating months, schedule mix, airport exposure, complaints with passenger denominators, accessibility, and verified remedy delivery."
+      ]
+    },
+    {
+      "test_id": "test-56d-southwest-repeat-service-test",
+      "portfolio": "mobility",
+      "parent_dossier_id": "dossier-56c-southwest-service-constraints",
+      "parent_panel_id": "panel-56b-southwest-cancellation",
+      "entity_id": "dot-carrier-wn",
+      "entity_name": "Southwest Airlines",
+      "record_status": "Published",
+      "signal_id": "signal-56d-southwest-repeat-service-test",
+      "source_ids": [
+        "source-56d-dot-atcr-february-2026",
+        "source-56d-dot-atcr-july-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Weather and airport exposure",
+        "Schedule and network structure",
+        "Maintenance and staffing",
+        "Air traffic constraints",
+        "Recovery decisions"
+      ],
+      "later_observations": [
+        "December 2025: 118,075 records, 74.84% on time, 0.55% cancelled, with 7.60% air-carrier, 0.18% extreme-weather, 4.48% national-system, and 12.06% late-aircraft delay.",
+        "May 2026: 120,646 records, 71.88% on time, 0.39% cancelled, with 8.93% air-carrier, 0.37% extreme-weather, 4.82% national-system, and 13.25% late-aircraft delay; DOT separately recorded 224 complaints."
+      ],
+      "compatibility": "Same reporting operating carrier and monthly delay table; complaint counts use a separate denominator.",
+      "result": "The repeat record tests several alternatives simultaneously but cannot isolate schedule, staffing, weather, air-traffic, or recovery effects.",
+      "attribution": "DOT publishes carrier-reported operations and separately received complaint cases.",
+      "validation_status": "Official common-table observations; causal attribution and commitment delivery remain unverified.",
+      "causal_boundary": "The record tests alternatives or adds a later observation; it does not establish causation.",
+      "next_records": [
+        "Add later operating months, schedule structure, airport exposure, complaints with passenger denominators, accessibility, and verified remedy delivery."
+      ]
+    },
+    {
+      "test_id": "test-56d-delta-repeat-service-test",
+      "portfolio": "mobility",
+      "parent_dossier_id": "dossier-56c-delta-service-constraints",
+      "parent_panel_id": "panel-56b-delta-cancellation",
+      "entity_id": "dot-carrier-dl",
+      "entity_name": "Delta Air Lines",
+      "record_status": "Published",
+      "signal_id": "signal-56d-delta-repeat-service-test",
+      "source_ids": [
+        "source-56d-dot-atcr-february-2026",
+        "source-56d-dot-atcr-july-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Weather and airport exposure",
+        "Schedule and branded-network mix",
+        "Maintenance and staffing",
+        "Air traffic constraints",
+        "Recovery decisions"
+      ],
+      "later_observations": [
+        "December 2025: 85,139 records, 72.27% on time, 2.75% cancelled, with 9.01% air-carrier, 0.57% extreme-weather, 7.18% national-system, and 8.00% late-aircraft delay.",
+        "May 2026: 91,955 records, 80.99% on time, 1.24% cancelled, with 6.40% air-carrier, 0.39% extreme-weather, 5.66% national-system, and 5.04% late-aircraft delay; DOT separately recorded 705 brand-level complaints."
+      ],
+      "compatibility": "Same reporting operating carrier and monthly delay table; brand-level complaints may include partner-operated flights and use a separate denominator.",
+      "result": "The repeat record shows movement across several reported categories but cannot isolate one explanation or represent a full-year outcome.",
+      "attribution": "DOT publishes carrier-reported operations and separately received complaint cases.",
+      "validation_status": "Official common-table observations; causal attribution and commitment delivery remain unverified.",
+      "causal_boundary": "The record tests alternatives or adds a later observation; it does not establish causation.",
+      "next_records": [
+        "Add later operating months, branded-network mix, airport exposure, complaints with passenger denominators, accessibility, and verified remedy delivery."
+      ]
+    }
+  ]
+}

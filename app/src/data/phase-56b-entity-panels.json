@@ -91,8 +91,28 @@
       ],
       "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
       "next_records": [
-        "Track FY 2026 FISMA results, pillar-level implementation across corporate and non-corporate systems, tested-control operation, incidents, recovery, service effects, and mission outcomes."
-      ]
+        "Track FY 2026 FISMA results, pillar-level implementation across corporate and non-corporate systems, tested-control operation, incidents, recovery, service effects, and mission outcomes.",
+        "Add FY 2026 FISMA results and recommendation-level closure evidence with tested-system, incident, recovery, service, and mission denominators."
+      ],
+      "phase_56d_test_id": "test-56d-nasa-repeat-control-test",
+      "phase_56d_signal_id": "signal-56d-nasa-repeat-control-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-nasa-gao-risk-management-2025",
+        "source-56d-nasa-cio-open-recommendations-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Other remediation work",
+        "Control scope and tested systems",
+        "Legacy-system and mission-environment differences"
+      ],
+      "phase_56d_later_observations": [
+        "GAO's May 2026 status retained multiple selected-system risk-management recommendations as open.",
+        "GAO identified thirty open recommendations under the NASA CIO in January 2026."
+      ],
+      "phase_56d_compatibility": "Same agency and overlapping cybersecurity-control domain; recommendation inventories are not the annual FISMA maturity metric.",
+      "phase_56d_result": "The later records support a bounded remediation-workload and control-scope update but do not resolve control operation, incidents, recovery, or mission effects.",
+      "phase_56d_validation_status": "Independent official oversight; closure is not inferred where evidence remained insufficient."
     },
     {
       "panel_id": "panel-56b-dhs-fisma",
@@ -183,8 +203,29 @@
       ],
       "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
       "next_records": [
-        "Track FY 2025 department and component ratings, recommendation closure evidence, CDM data quality, endpoint coverage, cloud assets, incidents, recovery, and service effects."
-      ]
+        "Track FY 2025 department and component ratings, recommendation closure evidence, CDM data quality, endpoint coverage, cloud assets, incidents, recovery, and service effects.",
+        "Add the released FY 2025 evaluation, component findings, recommendation closures, endpoint and cloud coverage, incidents, recovery, and service effects."
+      ],
+      "phase_56d_test_id": "test-56d-dhs-repeat-control-test",
+      "phase_56d_signal_id": "signal-56d-dhs-repeat-control-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-dhs-fisma-fy2025-project",
+        "source-56d-dhs-cdm-recommendations-may2026"
+      ],
+      "tested_alternative_explanations": [
+        "Controls outside CDM",
+        "Component-level variation",
+        "Selected component and system scope",
+        "Annual FISMA metric changes"
+      ],
+      "phase_56d_later_observations": [
+        "GAO retained four CDM recommendations as open in May 2026.",
+        "DHS OIG listed the FY 2025 enterprise evaluation as ongoing at capture."
+      ],
+      "phase_56d_compatibility": "Same department and CDM control input; the enterprise annual result and program recommendation statuses remain separate measurement systems.",
+      "phase_56d_result": "The later records challenge any closure assumption and block extension of the FY 2024 enterprise rating into FY 2025.",
+      "phase_56d_validation_status": "Independent official status records; no missing annual outcome is imputed."
     },
     {
       "panel_id": "panel-56b-hhs-fisma",
@@ -274,8 +315,29 @@
       ],
       "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
       "next_records": [
-        "Track FY 2026 FISMA results, recommendation closures, component control testing, incidents, recovery, affected services, and health-program outcomes."
-      ]
+        "Track FY 2026 FISMA results, recommendation closures, component control testing, incidents, recovery, affected services, and health-program outcomes.",
+        "Add dated recommendation closures, division control tests, incidents, recovery, affected services, and health-program outcomes."
+      ],
+      "phase_56d_test_id": "test-56d-hhs-repeat-control-test",
+      "phase_56d_signal_id": "signal-56d-hhs-repeat-control-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-hhs-fisma-recommendations-tracker-2026",
+        "source-56d-hhs-fisma-fy2025-method"
+      ],
+      "tested_alternative_explanations": [
+        "Federated operating-division maturity",
+        "Annual metric weighting",
+        "Recommendation age and severity",
+        "Control areas outside the open GAO set"
+      ],
+      "phase_56d_later_observations": [
+        "The tracker listed all ten FY 2025 report recommendations as open and unimplemented.",
+        "The FY 2025 review rated core metrics Consistently Implemented and supplemental metrics Ad Hoc."
+      ],
+      "phase_56d_compatibility": "Same department and annual evaluation, but tracker status, core metrics, supplemental metrics, and the headline result use distinct fields.",
+      "phase_56d_result": "The later records support a bounded closure and weighting test while leaving division-level operation and downstream outcomes unresolved.",
+      "phase_56d_validation_status": "Independent oversight with an explicit tracker state; no division-level equivalence is assumed."
     },
     {
       "panel_id": "panel-56b-current-applications-output",
@@ -357,8 +419,30 @@
       ],
       "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
       "next_records": [
-        "Obtain a dated repeat of the same line's output, labor hours, WIP, first-pass yield, scrap, downtime, cost, delivery, and demand."
-      ]
+        "Obtain a dated repeat of the same line's output, labor hours, WIP, first-pass yield, scrap, downtime, cost, delivery, and demand.",
+        "Obtain same-line output, labor hours, WIP, yield, scrap, downtime, cost, delivery, demand, and dated capital records."
+      ],
+      "phase_56d_test_id": "test-56d-current-applications-repeat-test",
+      "phase_56d_signal_id": "signal-56d-current-applications-repeat-test",
+      "phase_56d_record_status": "In Review",
+      "phase_56d_source_ids": [
+        "source-56d-current-applications-team-2026",
+        "source-56d-current-applications-osha-inspection-2010"
+      ],
+      "tested_alternative_explanations": [
+        "Labor input",
+        "Tooling and layout",
+        "Product mix",
+        "Demand and backlog",
+        "Unrecorded private capital investment"
+      ],
+      "phase_56d_later_observations": [
+        "The current company page identifies manufacturing, engineering, quality, procurement, tooling, and information-system roles.",
+        "The independently attributable OSHA inspection predates the line intervention and is not a later production observation."
+      ],
+      "phase_56d_compatibility": "The company identity is stable; neither record uses the same line, output unit, labor denominator, or post-intervention window.",
+      "phase_56d_result": "The test remains held because public records do not expose a compatible repeat output or input series.",
+      "phase_56d_validation_status": "Entity continuity is partially supported; line performance is not independently validated."
     },
     {
       "panel_id": "panel-56b-island-components-output",
@@ -440,8 +524,30 @@
       ],
       "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
       "next_records": [
-        "Collect repeated output, labor hours, WIP, first-pass yield, defects, downtime, delivery, and parent-resource use for the same line."
-      ]
+        "Collect repeated output, labor hours, WIP, first-pass yield, defects, downtime, delivery, and parent-resource use for the same line.",
+        "Add certification-surveillance findings and same-line output, labor, WIP, yield, defects, downtime, delivery, demand, and parent-resource use."
+      ],
+      "phase_56d_test_id": "test-56d-island-components-repeat-test",
+      "phase_56d_signal_id": "signal-56d-island-components-repeat-test",
+      "phase_56d_record_status": "In Review",
+      "phase_56d_source_ids": [
+        "source-56d-island-components-quality-clauses-2025",
+        "source-56d-island-components-certifications-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Lean workflow changes",
+        "Parent resources",
+        "Capital equipment",
+        "Labor and staffing",
+        "Product mix and demand"
+      ],
+      "phase_56d_later_observations": [
+        "The 2025 supplier clauses define nonconformance, corrective action, traceability, change control, and specified key-characteristic requirements.",
+        "The current certification page lists ISO 9001:2015 and AS9100D for the Hauppauge operation."
+      ],
+      "phase_56d_compatibility": "Same company and facility identity; control design and certification are not the same output, labor, WIP, yield, defect, downtime, or delivery measures.",
+      "phase_56d_result": "The test remains held because no repeat line outcome or surveillance finding is exposed.",
+      "phase_56d_validation_status": "The records support stated control design, not observed operation or causal effect."
     },
     {
       "panel_id": "panel-56b-monaghan-medical-output",
@@ -523,8 +629,29 @@
       ],
       "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
       "next_records": [
-        "Collect same-line output, labor, yield, scrap, downtime, delivery, demand, waste, emissions, and certification-surveillance records."
-      ]
+        "Collect same-line output, labor, yield, scrap, downtime, delivery, demand, waste, emissions, and certification-surveillance records.",
+        "Add units distributed, product identity, same-line output, labor, yield, scrap, downtime, delivery, demand, waste, emissions, and surveillance findings."
+      ],
+      "phase_56d_test_id": "test-56d-monaghan-medical-repeat-test",
+      "phase_56d_signal_id": "signal-56d-monaghan-medical-repeat-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-monaghan-fda-tplc-2025",
+        "source-56d-monaghan-iso14001-boundary-2024"
+      ],
+      "tested_alternative_explanations": [
+        "Demand and product mix",
+        "Quality-control and supply conditions",
+        "Equipment and layout",
+        "Lean intervention"
+      ],
+      "phase_56d_later_observations": [
+        "FDA's portal showed 193 manufacturer-attributed device reports for 2025 at capture.",
+        "The company's ISO 14001 page supplies control objectives but no quantitative surveillance or environmental outcome."
+      ],
+      "phase_56d_compatibility": "Same manufacturer; product-event counts and environmental management controls do not identify the MEP production line or units distributed.",
+      "phase_56d_result": "The bounded record can publish as a denominator warning, but it does not test persistence of the reported line-output change.",
+      "phase_56d_validation_status": "The event count is independently accessible; defect rate, line identity, and causal interpretation are not validated."
     },
     {
       "panel_id": "panel-56b-moss-landing-battery-capacity",
@@ -614,8 +741,29 @@
       ],
       "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
       "next_records": [
-        "Track regulator closure, later audits, generator identity, duration, availability, incidents, dispatch, revenue, grid service, and reliability effects."
-      ]
+        "Track regulator closure, later audits, generator identity, duration, availability, incidents, dispatch, revenue, grid service, and reliability effects.",
+        "Add final removal closure, CPUC investigation findings, generator reconciliation, availability, dispatch, duration, revenue, grid service, and reliability effects."
+      ],
+      "phase_56d_test_id": "test-56d-moss-landing-repeat-test",
+      "phase_56d_signal_id": "signal-56d-moss-landing-repeat-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-moss-landing-epa-response-timeline-2026",
+        "source-56d-moss-landing-epa-agreement-2025"
+      ],
+      "tested_alternative_explanations": [
+        "Incident and outage conditions",
+        "Battery-unit differences",
+        "Broader power-plant equipment",
+        "Ownership and operating changes"
+      ],
+      "phase_56d_later_observations": [
+        "EPA reported 33,943 intact batteries de-energized and ready for recycling by June 24, 2026, with about 5,000 remaining in difficult areas.",
+        "The enforceable agreement created regulator-supervised removal, monitoring, and emergency-response obligations."
+      ],
+      "phase_56d_compatibility": "The records concern the 300 MW fire-affected battery building inside the broader Moss Landing complex; they are not a common 750 MW plant-performance observation.",
+      "phase_56d_result": "The later official record verifies corrective-action progress and an incident boundary while blocking a facility-wide availability or return-to-service claim.",
+      "phase_56d_validation_status": "Regulator-verified work status; root cause, complete removal, return to service, and plant-wide performance remain unresolved."
     },
     {
       "panel_id": "panel-56b-manatee-battery-capacity",
@@ -705,8 +853,29 @@
       ],
       "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
       "next_records": [
-        "Collect interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer-cost records."
-      ]
+        "Collect interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer-cost records.",
+        "Add interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer-cost records."
+      ],
+      "phase_56d_test_id": "test-56d-manatee-repeat-test",
+      "phase_56d_signal_id": "signal-56d-manatee-repeat-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-manatee-fpl-data-request-2025",
+        "source-56d-manatee-fpl-site-plan-2025"
+      ],
+      "tested_alternative_explanations": [
+        "Load and weather",
+        "Solar availability",
+        "Transmission constraints",
+        "Market and dispatch rules"
+      ],
+      "phase_56d_later_observations": [
+        "FPL attributed the location choice to high winter peak capacity need, existing transmission, and proximity to solar charging.",
+        "The 2025 site plan continued to list 409 MW of in-service storage at Manatee."
+      ],
+      "phase_56d_compatibility": "Same asset and power-capacity unit; both records are operator statements in regulatory filings rather than interval performance observations.",
+      "phase_56d_result": "The filings sharpen the stated operating logic and identity boundary but do not establish availability, cycling, dispatch, value, or customer effect.",
+      "phase_56d_validation_status": "The docket independently validates that the statements were filed, not the realized operating outcomes."
     },
     {
       "panel_id": "panel-56b-gateway-battery-capacity",
@@ -796,8 +965,29 @@
       ],
       "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
       "next_records": [
-        "Track CPUC closure evidence, later audits, availability, incidents, dispatch, duration, degradation, revenue, grid service, and reliability effects."
-      ]
+        "Track CPUC closure evidence, later audits, availability, incidents, dispatch, duration, degradation, revenue, grid service, and reliability effects.",
+        "Add final investigation and closure evidence, restored capacity, availability, dispatch, duration, degradation, revenue, grid service, and reliability effects."
+      ],
+      "phase_56d_test_id": "test-56d-gateway-repeat-test",
+      "phase_56d_signal_id": "signal-56d-gateway-repeat-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-gateway-cpuc-resolution-e5428-2025",
+        "source-56d-gateway-epa-bess-safety-2025"
+      ],
+      "tested_alternative_explanations": [
+        "Facility operating history",
+        "Maintenance scheduling",
+        "Dispatch conditions",
+        "New GO 167-C implementation timing"
+      ],
+      "phase_56d_later_observations": [
+        "CPUC recorded ongoing root-cause investigations and a partial return to service after the thermal event.",
+        "EPA recorded the May 2024 fire, seven days of flareups, and monitoring and work-plan requirements."
+      ],
+      "phase_56d_compatibility": "Same named asset and incident; the records do not expose a full-capacity availability denominator or compatible dispatch series.",
+      "phase_56d_result": "The later official record challenges any assumption that nameplate capacity represented uninterrupted operation.",
+      "phase_56d_validation_status": "Incident and partial-return status are independently attributable; full closure and performance remain unresolved."
     },
     {
       "panel_id": "panel-56b-united-cancellations",
@@ -1053,5 +1243,7 @@
     }
   ],
   "phase_56c_deepened_date": "2026-07-24",
-  "phase_56c_dossier_count": 12
+  "phase_56c_dossier_count": 12,
+  "phase_56d_deepened_date": "2026-07-24",
+  "phase_56d_test_count": 12
 }

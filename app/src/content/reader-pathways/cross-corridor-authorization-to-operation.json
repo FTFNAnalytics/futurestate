@@ -15,7 +15,9 @@
     "Four mobility and mission series supply context without converting national activity into local readiness or outcome claims.",
     "DOT Table 6C supports within-carrier 2024-2025 cancellation reads without authorizing its cross-carrier ranking frame.",
     "Phase 56C adds entity-matched controls, inputs, constraints, later observations, attribution, independent-validation limits, and alternative explanations.",
-    "Temporal order is preserved without converting association into causation, ranking, composite scoring, or readiness scoring."
+    "Temporal order is preserved without converting association into causation, ranking, composite scoring, or readiness scoring.",
+    "Phase 56D adds later observations and explicit tests of named Phase 56C alternative explanations for the same twelve entities.",
+    "Compatibility, attribution, validation status, missing denominators, and series breaks remain visible before any interpretation."
   ],
   "primary_topics": [
     "Policy and Standards",
@@ -61,7 +63,10 @@
     "signal-56b-delta-cancellation-panel",
     "signal-56c-united-service-constraints",
     "signal-56c-southwest-service-constraints",
-    "signal-56c-delta-service-constraints"
+    "signal-56c-delta-service-constraints",
+    "signal-56d-united-repeat-service-test",
+    "signal-56d-southwest-repeat-service-test",
+    "signal-56d-delta-repeat-service-test"
   ],
   "source_ids": [
     "source-virginia-scc-large-load-gs5-2025",
@@ -100,7 +105,9 @@
     "source-56b-bts-atcr-full-year-2024",
     "source-56b-dot-atcr-february-2026",
     "source-56c-dot-atcr-2025-series",
-    "source-56c-dot-airline-customer-service-dashboard"
+    "source-56c-dot-airline-customer-service-dashboard",
+    "source-56d-dot-atcr-february-2026",
+    "source-56d-dot-atcr-july-2026"
   ],
   "organization_ids": [],
   "technology_ids": [],
@@ -109,7 +116,8 @@
     "briefing-research-watch-004-comparative-operating-outcomes",
     "briefing-research-watch-005-longitudinal-operating-series",
     "briefing-research-watch-006-entity-operating-panels",
-    "briefing-research-watch-007-entity-driver-constraint-dossiers"
+    "briefing-research-watch-007-entity-driver-constraint-dossiers",
+    "briefing-research-watch-008-repeat-outcomes-alternative-tests"
   ],
   "dependency_map_ids": [
     "dependency-map-local-authorization-is-not-operation",
@@ -121,7 +129,8 @@
     "research-collection-comparative-operating-outcomes-2023-2026",
     "research-collection-longitudinal-operating-series-2020-2025",
     "research-collection-entity-operating-panels-2021-2026",
-    "research-collection-entity-driver-constraint-dossiers-2021-2026"
+    "research-collection-entity-driver-constraint-dossiers-2021-2026",
+    "research-collection-repeat-outcomes-alternative-explanation-tests-2010-2026"
   ],
   "evidence_gap_ids": [
     "gap-011",
@@ -165,6 +174,11 @@
       "stage": "Entity driver and constraint dossier",
       "current_state": "Twelve dossiers order baseline, intervention or input, constraint, and later observation.",
       "boundary": "Temporal sequence and attribution do not establish causal effect."
+    },
+    {
+      "stage": "Alternative-explanation test",
+      "current_state": "Twelve entity tests map later records to named competing explanations.",
+      "boundary": "A test may narrow an explanation without isolating cause or producing a score."
     }
   ],
   "evidence_limits": [
@@ -176,7 +190,9 @@
     "Operating-carrier rows must remain separate from marketing-carrier networks and branded code-share partners.",
     "Two observations do not establish a durable trend.",
     "A named intervention, control, input, or response does not by itself explain an observed outcome.",
-    "Company and operator claims remain attributed until independently validated."
+    "Company and operator claims remain attributed until independently validated.",
+    "A recommendation status, certification, supplier clause, incident response, monthly cause mix, or complaint count does not create a common performance measure.",
+    "Different units, methods, identities, observation windows, and attribution levels remain split."
   ],
   "next_records": [
     "Northern Virginia route, construction, energization, customer-service, water, emissions-compliance, reliability, and local-outcome records.",
@@ -185,6 +201,8 @@
     "Carrier-, operator-, site-, mission-, and local-system records with compatible exposure and outcome denominators.",
     "Later carrier full-year reports, revision notices, causes, delays, complaints, accessibility, schedule mix, and airport exposure.",
     "Repeated outcomes using the same entity, unit, denominator, method, and observation window.",
-    "Independent validation of implementation, control operation, corrective-action closure, and downstream effects."
+    "Independent validation of implementation, control operation, corrective-action closure, and downstream effects.",
+    "Later observations using the same entity, unit, denominator, method, and observation window.",
+    "Independent control-operation, closure, line-performance, availability, dispatch, and service-delivery evidence."
   ]
 }

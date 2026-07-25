@@ -70,6 +70,8 @@ const phase56BReviewPath = join(appRoot, "src", "data", "phase-56b-publication-r
 const phase56BPanelsPath = join(appRoot, "src", "data", "phase-56b-entity-panels.json");
 const phase56CReviewPath = join(appRoot, "src", "data", "phase-56c-publication-review.json");
 const phase56CDossiersPath = join(appRoot, "src", "data", "phase-56c-entity-dossiers.json");
+const phase56DReviewPath = join(appRoot, "src", "data", "phase-56d-publication-review.json");
+const phase56DTestsPath = join(appRoot, "src", "data", "phase-56d-alternative-tests.json");
 const researchCollectionFiles = (await readdir(researchCollectionDirectory)).filter((name) => name.endsWith(".json"));
 const researchDocumentFiles = (await readdir(researchDocumentDirectory)).filter((name) => name.endsWith(".json"));
 const readerPathwayFiles = (await readdir(readerPathwayDirectory)).filter((name) => name.endsWith(".json"));
@@ -102,6 +104,8 @@ const phase56BReview = await readJson(phase56BReviewPath);
 const phase56BPanels = await readJson(phase56BPanelsPath);
 const phase56CReview = await readJson(phase56CReviewPath);
 const phase56CDossiers = await readJson(phase56CDossiersPath);
+const phase56DReview = await readJson(phase56DReviewPath);
+const phase56DTests = await readJson(phase56DTestsPath);
 const evidenceGaps = await Promise.all(
   evidenceGapFiles.map((name) => readJson(join(evidenceGapDirectory, name))),
 );
@@ -625,6 +629,101 @@ check(
 check(
   phase56CReview.comparison_rule.includes("No ranking, composite score, readiness score"),
   "Phase 56C publication review is missing the comparison and scoring stop rule.",
+);
+
+const phase56DSignals = phase56DReview.signal_decisions;
+const phase56DSignalIds = [...phase56DSignals.promoted, ...phase56DSignals.held];
+check(phase56DReview.source_count === 20, `Expected 20 Phase 56D source profiles, found ${phase56DReview.source_count}.`);
+check(phase56DReview.document_count === 24, `Expected 24 Phase 56D documents, found ${phase56DReview.document_count}.`);
+check(phase56DReview.entity_test_count === 12, `Expected twelve Phase 56D entity tests, found ${phase56DReview.entity_test_count}.`);
+check(phase56DSignals.reviewed === 16, `Expected sixteen Phase 56D signal decisions, found ${phase56DSignals.reviewed}.`);
+check(phase56DSignals.promoted.length === 10, `Expected ten Phase 56D Published signals, found ${phase56DSignals.promoted.length}.`);
+check(phase56DSignals.held.length === 6, `Expected six Phase 56D held signals, found ${phase56DSignals.held.length}.`);
+check(new Set(phase56DSignalIds).size === 16, "Phase 56D signal decision IDs must be unique.");
+for (const id of phase56DSignals.promoted) {
+  check(signalStatusById.get(id) === "Published", `Phase 56D Published signal ${id} has the wrong status.`);
+}
+for (const id of phase56DSignals.held) {
+  check(signalStatusById.get(id) === "In Review", `Phase 56D held signal ${id} has the wrong status.`);
+}
+check(
+  phase56DTests.test_count === 12 && phase56DTests.tests.length === 12,
+  "Phase 56D alternative-explanation ledger must contain twelve entity tests.",
+);
+check(
+  new Set(phase56DTests.tests.map((test) => test.entity_id)).size === 12,
+  "Phase 56D tests must preserve twelve unique stable entity IDs.",
+);
+check(
+  phase56DTests.tests.filter((test) => test.record_status === "Published").length === 10
+    && phase56DTests.tests.filter((test) => test.record_status === "In Review").length === 2,
+  "Phase 56D entity tests must contain ten Published and two In Review records.",
+);
+for (const test of phase56DTests.tests) {
+  check(
+    [
+      test.parent_dossier_id,
+      test.parent_panel_id,
+      test.entity_id,
+      test.signal_id,
+      test.compatibility,
+      test.result,
+      test.attribution,
+      test.validation_status,
+      test.causal_boundary,
+    ].every(Boolean),
+    `Phase 56D test ${test.test_id} is missing a compatibility, attribution, validation, or parent-contract field.`,
+  );
+  check(
+    test.source_ids.length === 2
+      && test.tested_alternative_explanations.length > 0
+      && test.later_observations.length === 2
+      && test.next_records.length > 0,
+    `Phase 56D test ${test.test_id} must preserve two records, named alternatives, two observations, and next records.`,
+  );
+  check(
+    test.causal_boundary.includes("does not establish causation"),
+    `Phase 56D test ${test.test_id} is missing the causal-inference boundary.`,
+  );
+}
+const phase56DCollection = researchCollections.find(
+  (collection) => collection.id === "research-collection-repeat-outcomes-alternative-explanation-tests-2010-2026",
+);
+check(Boolean(phase56DCollection), "Phase 56D repeat-outcome and alternative-test research collection is missing.");
+if (phase56DCollection) {
+  check(phase56DCollection.document_ids.length === 24, `Expected 24 Phase 56D documents, found ${phase56DCollection.document_ids.length}.`);
+  const resolvedPhase56DDocuments = phase56DCollection.document_ids
+    .map((documentId) => researchDocumentById.get(documentId))
+    .filter(Boolean);
+  check(resolvedPhase56DDocuments.length === 24, `Expected all 24 Phase 56D documents to resolve, found ${resolvedPhase56DDocuments.length}.`);
+  check(
+    resolvedPhase56DDocuments.every((document) => document.record_status === "Published"),
+    "All Phase 56D research documents should be Published.",
+  );
+  check(
+    resolvedPhase56DDocuments.every((document) => document.capture_status === "Official link record"),
+    "Phase 56D research documents must use the declared official-link capture contract.",
+  );
+}
+check(
+  briefingStatusById.get("briefing-research-watch-008-repeat-outcomes-alternative-tests") === "Published",
+  "Phase 56D repeat-outcome and alternative-test briefing should be Published.",
+);
+check(
+  phase56DReview.compatibility_rule.includes("entity, unit, denominator, method, and observation window"),
+  "Phase 56D publication review is missing the compatibility rule.",
+);
+check(
+  phase56DReview.alternative_rule.includes("named Phase 56C alternative explanations"),
+  "Phase 56D publication review is missing the alternative-explanation rule.",
+);
+check(
+  phase56DReview.closure_rule.includes("Regulator-verified closure"),
+  "Phase 56D publication review is missing the closure-attribution rule.",
+);
+check(
+  phase56DReview.comparison_rule.includes("No causal effect, ranking, composite score, readiness score"),
+  "Phase 56D publication review is missing the causal, comparison, and scoring stop rule.",
 );
 
 for (const collection of researchCollections) {

@@ -1,0 +1,34 @@
+{
+  "phase": "56D",
+  "reviewed_date": "2026-07-24",
+  "source_count": 20,
+  "document_count": 24,
+  "entity_test_count": 12,
+  "signal_decisions": {
+    "reviewed": 16,
+    "promoted": [
+      "signal-56d-nasa-repeat-control-test",
+      "signal-56d-dhs-repeat-control-test",
+      "signal-56d-hhs-repeat-control-test",
+      "signal-56d-monaghan-medical-repeat-test",
+      "signal-56d-moss-landing-repeat-test",
+      "signal-56d-manatee-repeat-test",
+      "signal-56d-gateway-repeat-test",
+      "signal-56d-united-repeat-service-test",
+      "signal-56d-southwest-repeat-service-test",
+      "signal-56d-delta-repeat-service-test"
+    ],
+    "held": [
+      "signal-56d-current-applications-repeat-test",
+      "signal-56d-island-components-repeat-test",
+      "signal-56d-agency-alternative-explanation-hold",
+      "signal-56d-manufacturer-alternative-explanation-hold",
+      "signal-56d-battery-alternative-explanation-hold",
+      "signal-56d-carrier-alternative-explanation-hold"
+    ]
+  },
+  "compatibility_rule": "Every later observation declares whether entity, unit, denominator, method, and observation window are compatible.",
+  "alternative_rule": "Every record maps to one or more named Phase 56C alternative explanations.",
+  "closure_rule": "Regulator-verified closure remains distinct from company or operator claims, partial progress, and an open investigation.",
+  "comparison_rule": "No causal effect, ranking, composite score, readiness score, or unsupported cross-entity comparison is permitted."
+}

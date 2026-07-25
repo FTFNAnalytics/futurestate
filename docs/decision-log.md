@@ -2580,3 +2580,32 @@ Deployment receipt:
 Boundary:
 
 Sequence is not causal proof. Recommendation counts, audit findings, certifications, capability inventories, closure claims, commitments, capacity, and cancellation rates remain separate measures. Company and operator claims stay attributed until independently validated. No ranking, composite score, readiness score, or unsupported cross-entity comparison is authorized. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.
+
+## 2026-07-24: Phase 56D Tests Alternatives, Not Causal Effects
+
+Decision:
+
+Test the twelve Phase 56C dossiers with later compatible outcomes and records that bear directly on named alternative explanations. Publish ten bounded entity findings, retain two entity tests In Review, and hold four portfolio-level causal or comparative claims.
+
+Rationale:
+
+A later record is useful only when entity identity, unit, denominator, geography, period, method, and attribution remain compatible or the break is disclosed. Control operation, recommendation closure, certification, corrective action, partial return to service, availability, operating percentage, and complaint records answer different questions and cannot be collapsed into a common causal result.
+
+Implemented:
+
+- 20 primary-source profiles and 24 entity-specific research summaries;
+- twelve entity tests across federal systems, manufacturing, grid batteries, and passenger carriers;
+- sixteen publication decisions: ten Published and six In Review;
+- Research Watch 008 and a verified 27-file archive;
+- machine-readable alternative-test and publication-review ledgers;
+- integration across eight topics, six pathways, Research Watch 007, the Phase 56B panel ledger, the Phase 56C dossier ledger, and the comparison-boundary map;
+- a verified 1,074-page, 462-source, 220-signal contract with 163 Published, 57 In Review, 32 updates, thirteen collections, 276 documents, and 267 current Published-support sources;
+- Phase 56E selected as the next content gate for a second twelve-entity cohort and vertical replication.
+
+Deployment receipt:
+
+- owner-only deployment pending at the local completion checkpoint.
+
+Boundary:
+
+Later sequence is not causal proof. Manufacturer roles, certifications, supplier clauses, and historical inspections are not same-line production outcomes. Device-event reports without a units-distributed or production-line denominator do not establish a rate. Incident response, cleanup milestones, corrective action, partial return to service, availability, and asset value remain separate measures. Carrier operating percentages remain distinct from brand-level complaints and causal attribution. No ranking, composite score, readiness score, or unsupported cross-entity comparison is authorized. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.

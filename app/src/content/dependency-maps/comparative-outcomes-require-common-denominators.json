@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and causal-inference protocol: named entity panels can deepen into driver and constraint dossiers only when identity, temporal order, attribution, independent validation, alternative explanations, and measurement boundaries remain attached.",
+  "summary": "A comparison and inference protocol: entity dossiers can accept later outcomes and alternative-explanation tests only when stable identity, compatibility, attribution, validation status, and denominator breaks remain attached.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -138,7 +138,27 @@
     "source-56c-gateway-cpuc-audit-2025",
     "source-56c-gateway-cpuc-audit-response-2025",
     "source-56c-dot-atcr-2025-series",
-    "source-56c-dot-airline-customer-service-dashboard"
+    "source-56c-dot-airline-customer-service-dashboard",
+    "source-56d-nasa-gao-risk-management-2025",
+    "source-56d-nasa-cio-open-recommendations-2026",
+    "source-56d-dhs-fisma-fy2025-project",
+    "source-56d-dhs-cdm-recommendations-may2026",
+    "source-56d-hhs-fisma-recommendations-tracker-2026",
+    "source-56d-hhs-fisma-fy2025-method",
+    "source-56d-current-applications-team-2026",
+    "source-56d-current-applications-osha-inspection-2010",
+    "source-56d-island-components-quality-clauses-2025",
+    "source-56d-island-components-certifications-2026",
+    "source-56d-monaghan-fda-tplc-2025",
+    "source-56d-monaghan-iso14001-boundary-2024",
+    "source-56d-moss-landing-epa-response-timeline-2026",
+    "source-56d-moss-landing-epa-agreement-2025",
+    "source-56d-manatee-fpl-data-request-2025",
+    "source-56d-manatee-fpl-site-plan-2025",
+    "source-56d-gateway-cpuc-resolution-e5428-2025",
+    "source-56d-gateway-epa-bess-safety-2025",
+    "source-56d-dot-atcr-february-2026",
+    "source-56d-dot-atcr-july-2026"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -192,7 +212,17 @@
     "signal-56c-gateway-constraints",
     "signal-56c-united-service-constraints",
     "signal-56c-southwest-service-constraints",
-    "signal-56c-delta-service-constraints"
+    "signal-56c-delta-service-constraints",
+    "signal-56d-nasa-repeat-control-test",
+    "signal-56d-dhs-repeat-control-test",
+    "signal-56d-hhs-repeat-control-test",
+    "signal-56d-monaghan-medical-repeat-test",
+    "signal-56d-moss-landing-repeat-test",
+    "signal-56d-manatee-repeat-test",
+    "signal-56d-gateway-repeat-test",
+    "signal-56d-united-repeat-service-test",
+    "signal-56d-southwest-repeat-service-test",
+    "signal-56d-delta-repeat-service-test"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -297,6 +327,19 @@
       "label": "Causal-inference hold",
       "node_type": "Constraint",
       "note": "Attribution and temporal sequence do not establish an independently validated causal effect."
+    },
+    {
+      "id": "node-alternative-test",
+      "label": "Repeat outcome or alternative-explanation test",
+      "node_type": "Signal",
+      "record_id": "signal-56d-gateway-repeat-test",
+      "note": "A later record maps to named alternatives and declares compatibility, attribution, and validation status."
+    },
+    {
+      "id": "node-denominator-break",
+      "label": "Denominator or method break",
+      "node_type": "Constraint",
+      "note": "Different units, methods, identities, windows, and attribution levels stop silent series extension."
     }
   ],
   "links": [
@@ -404,6 +447,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Repeated compatible outcomes and independent validation are incomplete."
+    },
+    {
+      "from": "node-alternative-test",
+      "to": "node-entity-dossier",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Every test inherits the Phase 56C entity, dossier, and named alternatives."
+    },
+    {
+      "from": "node-alternative-test",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "Compatibility is declared before interpreting the later record."
+    },
+    {
+      "from": "node-denominator-break",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "A broken or missing denominator prevents causal or performance interpretation."
     }
   ],
   "what_this_map_supports": [
@@ -415,7 +479,9 @@
     "A named entity panel may publish after stable identity and at least two compatible observations are verified.",
     "National context and entity performance remain separate layers.",
     "A stable entity panel may deepen into a temporally ordered driver and constraint dossier.",
-    "Attribution, independent validation, and alternative explanations can be published without claiming causation."
+    "Attribution, independent validation, and alternative explanations can be published without claiming causation.",
+    "A later record may narrow, support, challenge, or leave unresolved a named alternative explanation.",
+    "Regulator-verified obligations, partial progress, company claims, operator filings, and independent outcomes can remain distinct."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -425,7 +491,9 @@
     "It does not authorize normalization across incompatible domains.",
     "It does not authorize a cross-agency, cross-manufacturer, cross-asset, or cross-carrier ranking.",
     "It does not prove that a named intervention, control, input, commitment, or corrective action caused an observed outcome.",
-    "It does not authorize a readiness score, composite score, or entity ranking."
+    "It does not authorize a readiness score, composite score, or entity ranking.",
+    "It does not prove that one tested alternative caused the observed outcome.",
+    "It does not authorize denominator mixing, causal effects, rankings, composites, or readiness scores."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -438,6 +506,8 @@
     "Explicit merger, exit, permit, revision, and reporting-break records.",
     "Repeated outcomes after the named intervention using unchanged denominators and methods.",
     "Independent verification of control operation, implementation, corrective-action closure, and downstream results.",
-    "Records capable of testing the named alternative explanations."
+    "Records capable of testing the named alternative explanations.",
+    "Repeated compatible outcomes with the same unit, denominator, method, entity, and observation window.",
+    "Independent closure, control-operation, same-line performance, availability, dispatch, and service-delivery records."
   ]
 }

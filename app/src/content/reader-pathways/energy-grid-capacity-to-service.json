@@ -20,7 +20,9 @@
     "Plant code 260 rises from 400 MW to 750 MW by 2023; plant codes 60014 and 63834 retain 409 MW and 250 MW, respectively, across the three final vintages.",
     "The panels measure nameplate power only and do not rank asset performance.",
     "Phase 56C adds entity-matched controls, inputs, constraints, later observations, attribution, independent-validation limits, and alternative explanations.",
-    "Temporal order is preserved without converting association into causation, ranking, composite scoring, or readiness scoring."
+    "Temporal order is preserved without converting association into causation, ranking, composite scoring, or readiness scoring.",
+    "Phase 56D adds later observations and explicit tests of named Phase 56C alternative explanations for the same twelve entities.",
+    "Compatibility, attribution, validation status, missing denominators, and series breaks remain visible before any interpretation."
   ],
   "primary_topics": [
     "Energy",
@@ -52,7 +54,10 @@
     "signal-56b-gateway-capacity-panel",
     "signal-56c-moss-landing-constraints",
     "signal-56c-manatee-constraints",
-    "signal-56c-gateway-constraints"
+    "signal-56c-gateway-constraints",
+    "signal-56d-moss-landing-repeat-test",
+    "signal-56d-manatee-repeat-test",
+    "signal-56d-gateway-repeat-test"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -85,7 +90,13 @@
     "source-56c-manatee-psc-operating-data-2025",
     "source-56c-manatee-psc-rate-testimony-2025",
     "source-56c-gateway-cpuc-audit-2025",
-    "source-56c-gateway-cpuc-audit-response-2025"
+    "source-56c-gateway-cpuc-audit-response-2025",
+    "source-56d-moss-landing-epa-response-timeline-2026",
+    "source-56d-moss-landing-epa-agreement-2025",
+    "source-56d-manatee-fpl-data-request-2025",
+    "source-56d-manatee-fpl-site-plan-2025",
+    "source-56d-gateway-cpuc-resolution-e5428-2025",
+    "source-56d-gateway-epa-bess-safety-2025"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -100,7 +111,8 @@
     "briefing-research-watch-004-comparative-operating-outcomes",
     "briefing-research-watch-005-longitudinal-operating-series",
     "briefing-research-watch-006-entity-operating-panels",
-    "briefing-research-watch-007-entity-driver-constraint-dossiers"
+    "briefing-research-watch-007-entity-driver-constraint-dossiers",
+    "briefing-research-watch-008-repeat-outcomes-alternative-tests"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -114,7 +126,8 @@
     "research-collection-comparative-operating-outcomes-2023-2026",
     "research-collection-longitudinal-operating-series-2020-2025",
     "research-collection-entity-operating-panels-2021-2026",
-    "research-collection-entity-driver-constraint-dossiers-2021-2026"
+    "research-collection-entity-driver-constraint-dossiers-2021-2026",
+    "research-collection-repeat-outcomes-alternative-explanation-tests-2010-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -167,6 +180,11 @@
       "stage": "Entity driver and constraint dossier",
       "current_state": "Twelve dossiers order baseline, intervention or input, constraint, and later observation.",
       "boundary": "Temporal sequence and attribution do not establish causal effect."
+    },
+    {
+      "stage": "Alternative-explanation test",
+      "current_state": "Twelve entity tests map later records to named competing explanations.",
+      "boundary": "A test may narrow an explanation without isolating cause or producing a score."
     }
   ],
   "evidence_limits": [
@@ -180,7 +198,9 @@
     "Observation dates, major-event treatment, survey revisions, and utility reporting coverage govern comparison.",
     "EIA can revise plant names, generator status, ownership, and capacity in later annual vintages.",
     "A named intervention, control, input, or response does not by itself explain an observed outcome.",
-    "Company and operator claims remain attributed until independently validated."
+    "Company and operator claims remain attributed until independently validated.",
+    "A recommendation status, certification, supplier clause, incident response, monthly cause mix, or complaint count does not create a common performance measure.",
+    "Different units, methods, identities, observation windows, and attribution levels remain split."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -194,6 +214,8 @@
     "Utility- and customer-level interruption frequency, duration, restoration, cost, and weather-attribution records.",
     "Later EIA vintages plus asset energy duration, availability, incidents, dispatch, revenue, and grid-service records.",
     "Repeated outcomes using the same entity, unit, denominator, method, and observation window.",
-    "Independent validation of implementation, control operation, corrective-action closure, and downstream effects."
+    "Independent validation of implementation, control operation, corrective-action closure, and downstream effects.",
+    "Later observations using the same entity, unit, denominator, method, and observation window.",
+    "Independent control-operation, closure, line-performance, availability, dispatch, and service-delivery evidence."
   ]
 }

@@ -16,7 +16,9 @@
     "NASA remained at Level 3 across FY 2022-FY 2024, DHS moved from ineffective in FY 2021 to effective in FY 2022 and FY 2023, and HHS remained Not Effective across FY 2022-FY 2024.",
     "The three agency sequences remain separate and do not support a cross-agency rank.",
     "Phase 56C adds entity-matched controls, inputs, constraints, later observations, attribution, independent-validation limits, and alternative explanations.",
-    "Temporal order is preserved without converting association into causation, ranking, composite scoring, or readiness scoring."
+    "Temporal order is preserved without converting association into causation, ranking, composite scoring, or readiness scoring.",
+    "Phase 56D adds later observations and explicit tests of named Phase 56C alternative explanations for the same twelve entities.",
+    "Compatibility, attribution, validation status, missing denominators, and series breaks remain visible before any interpretation."
   ],
   "primary_topics": [
     "Policy and Standards",
@@ -44,7 +46,10 @@
     "signal-56b-hhs-fisma-panel",
     "signal-56c-nasa-cyber-controls",
     "signal-56c-dhs-cyber-controls",
-    "signal-56c-hhs-cyber-controls"
+    "signal-56c-hhs-cyber-controls",
+    "signal-56d-nasa-repeat-control-test",
+    "signal-56d-dhs-repeat-control-test",
+    "signal-56d-hhs-repeat-control-test"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -81,7 +86,13 @@
     "source-56c-dhs-fisma-fy2024",
     "source-56c-dhs-cdm-network-monitoring-2025",
     "source-56c-hhs-fisma-fy2025",
-    "source-56c-hhs-cio-open-recommendations-2025"
+    "source-56c-hhs-cio-open-recommendations-2025",
+    "source-56d-nasa-gao-risk-management-2025",
+    "source-56d-nasa-cio-open-recommendations-2026",
+    "source-56d-dhs-fisma-fy2025-project",
+    "source-56d-dhs-cdm-recommendations-may2026",
+    "source-56d-hhs-fisma-recommendations-tracker-2026",
+    "source-56d-hhs-fisma-fy2025-method"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -95,7 +106,8 @@
     "briefing-stack-watch-004-implementation-outcomes",
     "briefing-research-watch-005-longitudinal-operating-series",
     "briefing-research-watch-006-entity-operating-panels",
-    "briefing-research-watch-007-entity-driver-constraint-dossiers"
+    "briefing-research-watch-007-entity-driver-constraint-dossiers",
+    "briefing-research-watch-008-repeat-outcomes-alternative-tests"
   ],
   "dependency_map_ids": [
     "dependency-map-post-quantum-standards-are-not-migration",
@@ -107,7 +119,8 @@
     "research-collection-federal-implementation-evidence-2025-2026",
     "research-collection-longitudinal-operating-series-2020-2025",
     "research-collection-entity-operating-panels-2021-2026",
-    "research-collection-entity-driver-constraint-dossiers-2021-2026"
+    "research-collection-entity-driver-constraint-dossiers-2021-2026",
+    "research-collection-repeat-outcomes-alternative-explanation-tests-2010-2026"
   ],
   "evidence_gap_ids": [
     "gap-009",
@@ -159,6 +172,11 @@
       "stage": "Entity driver and constraint dossier",
       "current_state": "Twelve dossiers order baseline, intervention or input, constraint, and later observation.",
       "boundary": "Temporal sequence and attribution do not establish causal effect."
+    },
+    {
+      "stage": "Alternative-explanation test",
+      "current_state": "Twelve entity tests map later records to named competing explanations.",
+      "boundary": "A test may narrow an explanation without isolating cause or producing a score."
     }
   ],
   "evidence_limits": [
@@ -170,7 +188,9 @@
     "Annual FISMA metrics, tested systems, evaluator scope, component coverage, and calculated-rating methods can change.",
     "An agency-level rating does not establish system-level control operation, incident reduction, service continuity, or mission benefit.",
     "A named intervention, control, input, or response does not by itself explain an observed outcome.",
-    "Company and operator claims remain attributed until independently validated."
+    "Company and operator claims remain attributed until independently validated.",
+    "A recommendation status, certification, supplier clause, incident response, monthly cause mix, or complaint count does not create a common performance measure.",
+    "Different units, methods, identities, observation windows, and attribution levels remain split."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
@@ -181,6 +201,8 @@
     "Later agency and component ratings with explicit metric changes and tested-system coverage.",
     "Control operation, authorization age, remediation, incidents, recovery, affected services, and mission-outcome records.",
     "Repeated outcomes using the same entity, unit, denominator, method, and observation window.",
-    "Independent validation of implementation, control operation, corrective-action closure, and downstream effects."
+    "Independent validation of implementation, control operation, corrective-action closure, and downstream effects.",
+    "Later observations using the same entity, unit, denominator, method, and observation window.",
+    "Independent control-operation, closure, line-performance, availability, dispatch, and service-delivery evidence."
   ]
 }
