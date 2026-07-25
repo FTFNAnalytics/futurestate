@@ -373,12 +373,13 @@ Recommended active schedule:
 | Completed | Phase 55Y | operational evidence and receiving-system expansion across four journeys |
 | Completed | Phase 55Z | 32-record comparative operating-outcome collection, sixteen signal decisions, and comparison boundary |
 | Completed | Phase 56A | 48 annual observations, sixteen three-point series, twenty signal decisions, and Research Watch 005 |
-| Current content gate | Phase 56B | entity-level operating panels and later observations for the strongest Phase 56A series |
+| Completed | Phase 56B | twelve named entity panels, four ranking holds, 17 official records, and Research Watch 006 |
+| Current content gate | Phase 56C | entity driver and constraint dossiers for the twelve Published panels |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build, owner-only preview, and Phases 55S-56A aggressive expansion are complete locally. Phases 55A-56A established the authority, research, synthesis, pathway, evidence-gap, publication, navigation, export, operating-evidence, comparison-boundary, and longitudinal-series foundations. The next non-public content gate is Phase 56B: entity-level operating panels and later observations for the strongest series. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build, owner-only preview, and Phases 55S-56B aggressive expansion are complete locally and owner-only deployed. Phases 55A-56B established the authority, research, synthesis, pathway, evidence-gap, publication, navigation, export, operating-evidence, comparison-boundary, longitudinal-series, and named-entity-panel foundations. The next non-public content gate is Phase 56C: entity driver and constraint dossiers for the twelve Published panels. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -793,7 +794,7 @@ Exit criteria:
 - the full local release passes at 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 211 research documents, and 214 current Published-support sources;
 - the owner-only deployment gate passes without changing public access, DNS, package version, or custom-domain state.
 
-### Phase 56B: Entity-Level Operating Panels - Next Content Gate
+### Phase 56B: Entity-Level Operating Panels - Complete
 
 Goal: extend the strongest Phase 56A national and program series into named agency, facility, asset, carrier, operator, and mission panels that can explain what drives the aggregate direction.
 
@@ -804,20 +805,51 @@ Target panels:
 3. named storage assets, utilities, water projects, mines, and processing facilities,
 4. named carriers, AV operators, launch sites, vehicles, and missions.
 
-Deliverables:
+Delivered:
 
-- select only series with a stable entity identifier and at least two compatible observations;
-- add later observations to the strongest Phase 56A series before opening a new indicator;
-- separate facility, operator, customer, and mission outcomes from national or program aggregates;
-- record revisions, missing periods, mergers, exits, permit changes, and reporting-rule breaks;
-- publish no panel, comparison, or direction without a named denominator and method;
-- keep the six scheduled checks and Project Baccara stages as bounded inserts.
+- published twelve named panels across federal agency information security, manufacturing output, battery-asset capacity, and operating-carrier cancellations;
+- held four cross-entity rankings `In Review` rather than manufacturing a shared score;
+- added 17 official source profiles and 17 Published research summaries;
+- added Research Watch 006, one collection, a machine-readable panel ledger, a publication ledger, and a verified 20-file archive;
+- deepened eight topics, six pathways, Research Watch 005, and the comparison-boundary map;
+- preserved stable entity IDs, compatible observations, missing evidence, revisions, and reporting breaks;
+- kept the six scheduled checks and Project Baccara stages as bounded inserts.
 
 Exit criteria:
 
 - every panel has a stable entity, unit, denominator, period, geography, method, and attribution;
 - national context is not restated as local or entity performance;
 - no panel ranking, composite score, or unsupported causal claim is created;
+- the full release passes at 950 pages, 422 sources, 188 signals, 141 Published signals, 47 In Review signals, 228 research documents, and 231 current Published-support sources;
+- owner-only Sites version 27 serves the exact Phase 56B source under custom access with one allowed owner and no groups.
+
+### Phase 56C: Entity Driver And Constraint Dossiers - Current Content Gate
+
+Goal: deepen each Published panel with entity-matched evidence about the interventions, controls, inputs, constraints, and operating conditions associated with observed movement, without converting temporal sequence or attribution into a causal claim.
+
+Target dossiers:
+
+1. agency controls, incidents, corrective actions, recovery, service effects, and mission outcomes,
+2. manufacturer labor, quality, scrap, downtime, cost, demand, delivery, and independent validation,
+3. battery duration, availability, dispatch, safety, revenue, grid service, and customer-reliability outcomes,
+4. carrier delay causes, complaints, accessibility, schedule mix, airport exposure, and later operating periods.
+
+Deliverables:
+
+- give every added record the same stable entity identifier as its parent panel;
+- organize records as baseline condition, named intervention or constraint, and observed outcome where official evidence permits;
+- add later compatible observations before opening new indicators;
+- record who attributes a change, what independent validation exists, and which alternative explanations remain open;
+- distinguish authorization, implementation, operation, and measured outcome;
+- deepen the panel ledger, research collection, briefing, comparison map, pathways, and topic surfaces without adding a ranking interface;
+- keep scheduled checks and Project Baccara stages as bounded inserts.
+
+Exit criteria:
+
+- every dossier is entity-matched and temporally ordered;
+- every claimed association discloses attribution and missing evidence;
+- no temporal sequence is presented as causal proof;
+- no ranking, composite score, readiness score, or unsupported cross-entity comparison is created;
 - the full local release and owner-only deployment gates pass.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
@@ -926,14 +958,14 @@ v0.2 is successful when:
 - release QA remains repeatable,
 - no automated process publishes claims without review.
 
-The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T brought every topic to a four-signal and two-Published-record floor. Phase 55U added three evidence-dense local systems, 26 official sources, 15 signals, three pathways and gaps, one briefing, and one map. Phase 55V added an 18-document cross-corridor shelf, a 21-file archive, a new synthesis briefing, and downstream evidence integration. Phase 55W added the record-level publication ledger, promoted 12 bounded signals, published one briefing and one map, expanded the pathway network to 15, and made the larger corpus discoverable through separate shelves, filters, and five exports. Phase 55X added 24 implementation records and twelve signals across three local systems. Phase 55Y added 24 operating and receiving-system records. Phase 55Z added 32 operating-outcome records, sixteen signals, a comparison-boundary map, and an explicit four-record hold set. Phase 56A added 48 observations in sixteen three-record series, twenty signal decisions, Research Watch 005, and a 51-file archive. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
+The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T brought every topic to a four-signal and two-Published-record floor. Phase 55U added three evidence-dense local systems, 26 official sources, 15 signals, three pathways and gaps, one briefing, and one map. Phase 55V added an 18-document cross-corridor shelf, a 21-file archive, a new synthesis briefing, and downstream evidence integration. Phase 55W added the record-level publication ledger, promoted 12 bounded signals, published one briefing and one map, expanded the pathway network to 15, and made the larger corpus discoverable through separate shelves, filters, and five exports. Phase 55X added 24 implementation records and twelve signals across three local systems. Phase 55Y added 24 operating and receiving-system records. Phase 55Z added 32 operating-outcome records, sixteen signals, a comparison-boundary map, and an explicit four-record hold set. Phase 56A added 48 observations in sixteen three-record series, twenty signal decisions, Research Watch 005, and a 51-file archive. Phase 56B added twelve Published entity panels, four ranking holds, 17 official records, Research Watch 006, and a 20-file archive. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
 
 ## Immediate Next Step
 
-Begin Phase 56B with entity-level operating panels. Start from the sixteen Phase 56A series, select only stable named entities with at least two compatible observations, and add later observations before opening new indicators. Preserve revisions, missing periods, reporting-rule breaks, and the boundary between national context and entity performance.
+Begin Phase 56C with entity driver and constraint dossiers. Start from the twelve Published Phase 56B panels and add entity-matched intervention, control, input, constraint, and outcome records. Require temporal ordering, explicit attribution, independent validation where available, and a named alternative-explanation boundary. Add later compatible observations before opening new indicators, and do not infer causation from sequence.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Sites version 26 serves local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` from private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49` in deployment `appgdep_6a63fb2b1bb081918ca79ccb1fba92ff`, under custom access with one allowed owner and no groups. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 27 serves local content commit `1e5e03153d0744975630848fe4db736ce8c39519` from private source commit `34e41bb13b8d4b0a73d6201dac0c6e8ccb57e6bf` in deployment `appgdep_6a640330de008191bd457d2d1b0bf9bf`, under custom access with one allowed owner and no groups. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

@@ -140,9 +140,12 @@ What is now stable:
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
+- Phase 56B adds twelve Published named entity panels, four cross-entity ranking holds, 17 official source profiles and research summaries, Research Watch 006, a machine-readable panel ledger, and a verified 20-file archive.
+- The verified Phase 56B contract is 950 pages, 422 sources, 188 signals, 141 Published signals, 47 In Review signals, 231 current Published-support sources, fourteen briefings, seven maps, eleven research collections, 228 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 30 updates, and five public-data exports.
+- Phase 56B local content commit `1e5e03153d0744975630848fe4db736ce8c39519` matches private source commit `34e41bb13b8d4b0a73d6201dac0c6e8ccb57e6bf`, deployed as owner-only Sites version 27 in deployment `appgdep_6a640330de008191bd457d2d1b0bf9bf` with one allowed owner and no groups.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
-- All 214 current Published-support sources are governed by the same current-source release assertion.
+- All 231 current Published-support sources are governed by the same current-source release assertion.
 - The compact header defect was repaired: every brand and primary-navigation link now has at least a 44-pixel target.
 - `npm run verify:release` and `deployment/ftfn-v0.2-build.json` preserve the repeatable v0.2 release contract.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
@@ -150,8 +153,8 @@ What is now stable:
 
 What is still prelaunch scaffolding:
 
-- One hundred and thirteen signal records are `Published`.
-- Thirty-nine signal records are still `In Review`; no Draft Sample remains.
+- One hundred and forty-one signal records are `Published`.
+- Forty-seven signal records are still `In Review`; no Draft Sample remains.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -161,27 +164,27 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve the owner-only Sites deployment and continue with Phase 56B entity-level operating panels. Phase 56A is complete and release-verified locally. Extend only the strongest series into named agency, facility, asset, carrier, operator, and mission panels. Require a stable entity identifier and at least two compatible observations, add later observations before new indicators, preserve revisions and reporting-rule breaks, and prohibit rankings or composite scores. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve the owner-only Sites deployment and continue with Phase 56C entity driver and constraint dossiers. Phase 56B is complete, release-verified, and owner-only deployed. Deepen the twelve Published panels with entity-matched intervention, control, input, constraint, and outcome records. Require temporal ordering, explicit attribution, independent validation where available, and later compatible observations before new indicators. Prohibit causal inference, rankings, composite scores, and readiness scores. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 172 signal records,
-- 405 source records,
+- 188 signal records,
+- 422 source records,
 - 17 topic records,
 - 5 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 13 briefings: 6 Published and 7 In Review,
+- 14 briefings: 7 Published and 7 In Review,
 - 16 evidence gap records,
-- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y, Phase 55Z, and Phase 56A reviews,
+- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y, Phase 55Z, Phase 56A, and Phase 56B reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 10 research collections with 211 document records,
+- 11 research collections with 228 document records,
 - 15 reader pathways across 19 existing Atlas surfaces,
-- 29 public update-log entries.
+- 30 public update-log entries.
 
-One hundred and thirteen official-source-backed signals are now `Published`.
+One hundred and forty-one official-source-backed signals are now `Published`.
 
 Phase 55M added thirteen bounded records to the prior 25-signal Published set:
 
@@ -345,15 +348,17 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 56A within-domain longitudinal outcome series
+Phase 56C entity driver and constraint dossiers
 ```
 
 Proceed by:
 
-- add 48 primary documents and twenty bounded signals across four existing portfolios,
-- prioritize compatible series for institutional AI/cyber systems, manufacturing cohorts and facilities, asset-level infrastructure, and carrier/operator/mission services,
-- require at least two compatible time points before describing movement as a trend,
-- disclose unit, denominator, period, geography, method, attribution, revisions, and series breaks,
+- start from the twelve Published Phase 56B panels rather than opening an unrelated portfolio,
+- add entity-matched intervention, control, input, constraint, and outcome records across the four existing portfolios,
+- require temporal ordering and disclose who attributes each change,
+- add later compatible observations before opening new indicators,
+- disclose stable identity, unit, denominator, period, geography, method, attribution, missing evidence, revisions, and reporting breaks,
+- record independent validation and alternative explanations where available,
 - apply explicit publish or hold decisions before changing sitemap or export membership,
 - use the remaining Phase 55S authority backlog only where it fills a named corpus gap,
 - run all six dated tasks as bounded inserts without pausing the queue,
@@ -437,16 +442,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 56A longitudinal operating series.
+Phase 56B entity operating panels.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 56A candidate: package 0.2.0-dev, 405 public sources, 150 first-pass-triaged private candidates, 172 signals, 17 topics, 29 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 898 generated site pages, 129 Published signals, 6 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 10 research collections, 211 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, 35-file, and 51-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 265 Manual Review and 140 Probe Ready records.
+v0.2 Phase 56B candidate: package 0.2.0-dev, 422 public sources, 150 first-pass-triaged private candidates, 188 signals, 17 topics, 30 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 950 generated site pages, 141 Published signals, 7 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 11 research collections, 228 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, 35-file, 51-file, and 20-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 279 Manual Review and 143 Probe Ready records.
 
 Next decision gate:
-Preserve the owner-only preview and begin Phase 56B. Extend only stable named entities into agency, facility, asset, carrier, operator, and mission panels, and add later observations before opening new indicators. Require compatible time points and preserve revisions and series breaks. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve the owner-only preview and begin Phase 56C. Deepen the twelve Published panels with entity-matched intervention, control, input, constraint, and outcome records. Require temporal ordering, explicit attribution, independent validation where available, and later compatible observations before opening new indicators. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Do not infer causation or create rankings, composite scores, or readiness scores. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

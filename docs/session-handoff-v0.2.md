@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 56A longitudinal operating series
+Latest completed work: Phase 56B entity operating panels
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 898 generated site pages
-Content: 405 sources, 172 signals, 17 topics, 5 local systems, 10 research collections / 211 research documents
-Publication: 129 Published signals, 43 In Review signals, 6 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
-Trust/data: 29 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, 35-file, and 51-file research archives
+Build: 950 generated site pages
+Content: 422 sources, 188 signals, 17 topics, 5 local systems, 11 research collections / 228 research documents
+Publication: 141 Published signals, 47 In Review signals, 7 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
+Trust/data: 30 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, 35-file, 51-file, and 20-file research archives
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 26 serves Phase 56A from local content commit 1fe4d73 and private source commit ca15ee3; one allowed owner and no groups
+Deployment: owner-only Sites version 27 serves Phase 56B from local content commit 1e5e031 and private source commit 34e41bb; one allowed owner and no groups
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 265 Manual Review, 140 Probe Ready; 14 Strong coverage lanes
-Next content gate: Phase 56B entity-level operating panels; six dated inserts remain scheduled
+Source health: 279 Manual Review, 143 Probe Ready; 14 Strong coverage lanes
+Next content gate: Phase 56C entity driver and constraint dossiers; six dated inserts remain scheduled
 ```
 
 ## Read First
@@ -107,6 +107,8 @@ The approved preview sequence is complete:
 52. Matched local app commit `db18ef9` to exact private source commit `2f1c2e6d07f24a75a80d0fb83bab123b38fa2fbf`, deployed the combined Phase 55Y and Phase 55Z state from the verified 780-page package as Sites version 25 in deployment `appgdep_6a63f3041f8481918754adf70ddeea70`, and confirmed custom access with one allowed owner and no groups.
 53. Completed Phase 56A locally: added 48 primary observations in sixteen three-record series, 48 source profiles, twenty signal decisions, a 51-file collection archive, and Research Watch 005. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds. Verified 898 pages, 405 sources, 172 signals, 129 Published, 43 In Review, 29 updates, ten collections, 211 research documents, and 214 current Published-support sources.
 54. Matched local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` to private Sites source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed the verified 898-page Phase 56A package as owner-only Sites version 26 in deployment `appgdep_6a63fb2b1bb081918ca79ccb1fba92ff`, and confirmed custom access with one allowed owner and no groups.
+55. Completed Phase 56B locally: added twelve Published named entity panels, four cross-entity ranking holds, 17 official source profiles and research summaries, one research collection and 20-file archive, Research Watch 006, and machine-readable panel and publication ledgers. Verified 950 pages, 422 sources, 188 signals, 141 Published, 47 In Review, 30 updates, eleven collections, 228 research documents, and 231 current Published-support sources.
+56. Matched local content commit `1e5e03153d0744975630848fe4db736ce8c39519` to private Sites source commit `34e41bb13b8d4b0a73d6201dac0c6e8ccb57e6bf`, deployed the verified 950-page Phase 56B package as owner-only Sites version 27 in deployment `appgdep_6a640330de008191bd457d2d1b0bf9bf`, and confirmed custom access with one allowed owner and no groups.
 
 ## Required Stop Points
 
@@ -160,9 +162,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 56A. The current candidate should be 0.2.0-dev on codex/phase51-content with 405 sources, 172 signals, 129 Published signals, 43 In Review signals, five local systems, six Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 29 public updates, five JSON exports, 898 generated site pages, ten research collections, 211 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, 35-file, and 51-file download archives. Public access and DNS remain unchanged.
+The latest completed work is Phase 56B. The current candidate should be 0.2.0-dev on codex/phase51-content with 422 sources, 188 signals, 141 Published signals, 47 In Review signals, five local systems, seven Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 30 public updates, five JSON exports, 950 generated site pages, eleven research collections, 228 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, two 27-file, 35-file, 51-file, and 20-file download archives. Public access and DNS remain unchanged.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 56A is complete; begin Phase 56B by extending only the strongest Phase 56A series into named agency, facility, asset, carrier, operator, and mission panels. Require a stable entity identifier and at least two compatible observations, add later observations before new indicators, preserve revisions and reporting-rule breaks, and do not turn national context into entity performance. Treat the August 1 Toronto, August 10 DARPA Lift, August 15 Space Coast license, September 22 Arizona wastewater, October 1 Loudoun standards, and January 15 Nevada delivery tasks as bounded inserts rather than pauses. Do not create rankings or composite scores. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve the owner-only preview and stop before changing access or attaching a domain. Phase 56B is complete; begin Phase 56C by deepening the twelve Published panels with entity-matched intervention, control, input, constraint, and outcome records. Require temporal ordering, explicit attribution, independent validation where available, and later compatible observations before new indicators. Treat the August 1 Toronto, August 10 DARPA Lift, August 15 Space Coast license, September 22 Arizona wastewater, October 1 Loudoun standards, and January 15 Nevada delivery tasks as bounded inserts rather than pauses. Do not infer causation, create rankings, or create composite or readiness scores. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

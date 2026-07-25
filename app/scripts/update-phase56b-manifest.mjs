@@ -50,7 +50,7 @@ manifest.release_delta_from_v0_1_1 = {
   ...manifest.release_delta_from_v0_1_1,
   static_pages_added: 768,
   signals_added: 170,
-  published_signals_added: 126,
+  published_signals_added: 138,
   sources_added: 320,
   summary: "Extends the Phase 55K through Phase 56A evidence baseline with Phase 56B entity operating panels: 422 public sources, 188 signals, 141 Published signals, five local systems, seven Published and seven In Review briefings, six Published and one In Review dependency maps, fifteen reader pathways, sixteen evidence gaps, 30 public updates, eleven research collections, 228 summarized research documents, and five versioned public-data exports.",
 };
@@ -152,7 +152,7 @@ manifest.known_limitations.unshift(
   "The Phase 56B download contains 17 official-link records supporting twelve Published named entity panels.",
   "Phase 56B adds twelve named entity operating panels without creating a cross-agency, cross-manufacturer, cross-asset, or cross-carrier ranking. National context and entity performance remain separate.",
 );
-manifest.notes = "This manifest records the validated Phase 56A deployment and the locally completed Phase 56B entity operating-panel pass. Phase 56B adds 17 official records and sixteen bounded signal decisions across named federal agencies, manufacturers, battery assets, and reporting operating carriers; twelve panels publish while four cross-entity rankings remain held. Research Watch 006 and the deepened comparison protocol preserve stable entity identity, unit, denominator, period, geography, method, attribution, missing evidence, revisions, and reporting breaks. The current release remains 0.2.0-dev and owner-only. Public access, DNS, public GitHub, custom-domain, and package changes are not authorized.";
+manifest.notes = "This manifest records the validated and owner-only deployed Phase 56B entity operating-panel pass. Phase 56B adds 17 official records and sixteen bounded signal decisions across named federal agencies, manufacturers, battery assets, and reporting operating carriers; twelve panels publish while four cross-entity rankings remain held. Research Watch 006 and the deepened comparison protocol preserve stable entity identity, unit, denominator, period, geography, method, attribution, missing evidence, revisions, and reporting breaks. The current release remains 0.2.0-dev and owner-only. Public access, DNS, public GitHub, custom-domain, and package changes are not authorized.";
 
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
 console.log(`Updated Phase 56B manifest with archive SHA-256 ${archiveSha256}.`);

@@ -1543,6 +1543,7 @@ Purpose:
 - Record the completed Phase 55Y 24-document operating-evidence collection, twelve signal decisions, 27-file archive, four journey repairs, and receiving-system boundaries.
 - Record the completed Phase 55Z 32-document operating-outcome collection, sixteen signal decisions, 35-file archive, comparison-boundary map, and Research Watch 004.
 - Record the completed Phase 56A 48-observation longitudinal collection, sixteen three-record series, twenty signal decisions, 51-file archive, Research Watch 005, revision and series-break contract, and Phase 56B handoff.
+- Record the completed Phase 56B twelve-panel entity collection, sixteen signal decisions, 20-file archive, Research Watch 006, stable-entity contract, four ranking holds, deployment receipt, and Phase 56C handoff.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 
@@ -1558,6 +1559,7 @@ Primary file:
 - `docs/work-packages/phase-55y-operational-evidence.md` for the completed operational-evidence and receiving-system expansion, publication decisions, archive contract, integration map, validation evidence, and Phase 55Z handoff
 - `docs/work-packages/phase-55z-comparative-operating-outcomes.md` for the completed four-portfolio outcome build, publication decisions, comparison boundary, archive contract, validation evidence, and Phase 56A handoff
 - `docs/work-packages/phase-56a-longitudinal-operating-series.md` for the completed sixteen-series build, twenty publication decisions, longitudinal comparison contract, archive contract, validation evidence, and Phase 56B handoff
+- `docs/work-packages/phase-56b-entity-operating-panels.md` for the completed twelve-panel build, sixteen publication decisions, stable-entity and no-ranking contract, archive contract, validation and deployment evidence, and Phase 56C handoff
 
 Update when:
 
@@ -1570,6 +1572,9 @@ Update when:
 - the Phase 55X collection, document or signal decisions, journey integration, archive, or deployment receipt changes,
 - the Phase 55Y collection, document or signal decisions, journey integration, archive, or deployment receipt changes,
 - the Phase 55Z collection, comparison boundary, document or signal decisions, integration, archive, or deployment receipt changes,
+- the Phase 56A series, revisions, breaks, publication decisions, archive, or deployment receipt changes,
+- the Phase 56B panels, stable identifiers, observation contracts, ranking holds, publication decisions, archive, or deployment receipt changes,
+- the Phase 56C driver-and-constraint dossier scope or handoff changes,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

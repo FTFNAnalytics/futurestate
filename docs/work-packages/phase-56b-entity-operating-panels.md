@@ -1,6 +1,6 @@
 # Phase 56B Work Package: Entity Operating Panels
 
-Status: implemented and under release validation  
+Status: complete and owner-only deployed
 Date: 2026-07-24  
 Release boundary: owner-only; no public launch, DNS, package freeze, public GitHub, or custom-domain change
 
@@ -96,4 +96,15 @@ At least two compatible observations are required. National or program context r
 
 ## Deployment receipt
 
-Pending final validation, content commit, private Sites source push, owner-only deployment, and post-deploy access verification.
+- Validation: 422 sources, 188 signals, 141 Published signals, 47 In Review signals, 228 research documents, 231 current Published-support sources, and 950 generated pages.
+- Local content commit: `1e5e03153d0744975630848fe4db736ce8c39519`
+- Private Sites source commit: `34e41bb13b8d4b0a73d6201dac0c6e8ccb57e6bf`
+- Sites version: 27 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_5f6c01b9b83481919aa83f59ce274207`)
+- Deployment: `appgdep_6a640330de008191bd457d2d1b0bf9bf`
+- URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- Access verification: custom owner-only policy, one allowed owner, no groups.
+- Archive: 20 files with 17 official-link records; SHA-256 `3B708BADA252145BC77865C0E3ED74793CE72D203B4C6E74BDB197F3CBA565B6`.
+
+## Handoff
+
+Phase 56C should deepen the twelve panels into entity driver and constraint dossiers. Add entity-matched records for interventions, controls, inputs, constraints, and observed outcomes; require temporal ordering and explicit attribution; and preserve later observations before opening new indicators. Do not infer causation, rank entities, or create composite scores.
