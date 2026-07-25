@@ -92,6 +92,20 @@ manifest.last_verified = {
   release_assertions: "passed-phase-56d",
   browser_qa: "passed-local-phase-55k; phase-55l-through-phase-56d-visual-qa-not-requested",
 };
+manifest.deployment_status = "owner-only-private-preview-deployed";
+manifest.private_preview = {
+  ...manifest.private_preview,
+  provider: "OpenAI Sites",
+  url: "https://ftfn-analytics.jbumstead.chatgpt.site",
+  access: "owner-only-custom-policy",
+  current_local_content_commit: "9716a4ef19db8edc46950b32c23ee38a572440a5",
+  current_source_commit: "ed6345357651c4f870355fb166a985680a9588f7",
+  current_version_id: "appgprj_6a614e1092d08191bf65779fc35df959~appgver_4d3acd7ad364819195977e21c42a6822",
+  current_version_number: 29,
+  current_deployment_id: "appgdep_6a6417219bc8819190172e54ef9e166e",
+  custom_domain_attached: false,
+  post_deploy_qa: "passed-version-29-deployment-status-and-owner-only-access-policy",
+};
 manifest.required_output_files = addUnique(manifest.required_output_files, [
   "dist/research/repeat-outcomes-alternative-explanation-tests-2010-2026/index.html",
   "dist/downloads/repeat-outcomes-alternative-explanation-tests-2010-2026.zip",

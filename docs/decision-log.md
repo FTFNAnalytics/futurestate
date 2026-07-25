@@ -2604,7 +2604,10 @@ Implemented:
 
 Deployment receipt:
 
-- owner-only deployment pending at the local completion checkpoint.
+- local content commit `9716a4ef19db8edc46950b32c23ee38a572440a5`;
+- exact private Sites source projection `ed6345357651c4f870355fb166a985680a9588f7`;
+- owner-only Sites version 29 in deployment `appgdep_6a6417219bc8819190172e54ef9e166e`;
+- custom access confirmed with one allowed owner and no groups.
 
 Boundary:
 

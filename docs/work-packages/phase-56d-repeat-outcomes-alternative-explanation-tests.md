@@ -1,6 +1,6 @@
 # Phase 56D Work Package: Repeat Outcomes and Alternative-Explanation Tests
 
-Status: complete locally; owner-only deployment pending  
+Status: complete and owner-only deployed
 Date: 2026-07-24  
 Release boundary: owner-only; no public launch, DNS, package freeze, public GitHub, or custom-domain change
 
@@ -96,8 +96,13 @@ Every entity test preserves:
 
 ## Deployment receipt
 
-Pending owner-only Sites deployment. This section must record the exact local content commit, private source projection, Sites version, deployment ID, URL, and verified access policy.
+- Local content commit: `9716a4ef19db8edc46950b32c23ee38a572440a5`
+- Exact private source projection: `ed6345357651c4f870355fb166a985680a9588f7`
+- Owner-only Sites version: 29
+- Deployment: `appgdep_6a6417219bc8819190172e54ef9e166e`
+- URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- Access: custom policy with one allowed owner and no groups
 
 ## Handoff
 
-After the owner-only deployment receipt is recorded, Phase 56E should begin a second twelve-entity cohort using the same panel, dossier, and alternative-test contracts. Select three additional federal agencies, three manufacturers with named facility or line outcomes, three battery assets with official operating or incident records, and three reporting carriers. Build each entity vertically before opening another portfolio. Dated Phase 55H, Phase 55R, Space Coast, Arizona, Loudoun, Nevada, and Project Baccara checks remain bounded inserts rather than blockers.
+Phase 56E should begin a second twelve-entity cohort using the same panel, dossier, and alternative-test contracts. Select three additional federal agencies, three manufacturers with named facility or line outcomes, three battery assets with official operating or incident records, and three reporting carriers. Build each entity vertically before opening another portfolio. Dated Phase 55H, Phase 55R, Space Coast, Arizona, Loudoun, Nevada, and Project Baccara checks remain bounded inserts rather than blockers.
