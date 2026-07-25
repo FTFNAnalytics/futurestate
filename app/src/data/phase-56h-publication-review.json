@@ -1,0 +1,44 @@
+{
+  "phase": "56H",
+  "reviewed_date": "2026-07-24",
+  "source_profiles_added": 11,
+  "acquisition_count": 14,
+  "document_decisions": {
+    "reviewed": 14,
+    "promoted": [
+      "research-doc-56h-doe-fy2025-fisma-management-letter",
+      "research-doc-56h-f35-delivery-capability-denominator",
+      "research-doc-56h-hornsdale-final-project-operation",
+      "research-doc-56h-va-ifams-access-controls-2026",
+      "research-doc-56h-dot-fy2025-recommendation-dashboard",
+      "research-doc-56h-kc46-current-program-denominator-2026",
+      "research-doc-56h-dalrymple-constraint-event-2026",
+      "research-doc-56h-f15ex-current-acquisition-assessment-2026"
+    ],
+    "held": [
+      "research-doc-56h-dhs-fy2025-fisma-continuation",
+      "research-doc-56h-manatee-interval-operation-continuation",
+      "research-doc-56h-gateway-final-investigation-continuation",
+      "research-doc-56h-nasa-fy2026-recommendation-continuation",
+      "research-doc-56h-hhs-fy2025-recommendation-status",
+      "research-doc-56h-moss-landing-investigation-status-2026"
+    ]
+  },
+  "signal_decisions": {
+    "reviewed": 5,
+    "promoted": [
+      "signal-56h-doe-fy2025-cyber-result",
+      "signal-56h-f35-delivery-capability-advance",
+      "signal-56h-hornsdale-final-operating-record",
+      "signal-56h-dalrymple-constraint-event"
+    ],
+    "held": [
+      "signal-56h-three-open-rails-six-partial-continuations"
+    ]
+  },
+  "acquisition_rule": "Every check retains its Phase 56F coverage ID and named continuation rule.",
+  "partial_deepening_rule": "A Partially Closed record may deepen without becoming Closed; the exact remaining denominator stays visible.",
+  "unavailable_record_rule": "An unavailable exact record produces a dated source check and continuation rule, not generic replacement context.",
+  "closure_rule": "DOE, F-35 Fort Worth, and Hornsdale move from Open to Partially Closed; DHS, Manatee, and Gateway remain Open.",
+  "comparison_rule": "No causal effect, ranking, completeness score, composite score, readiness score, or inference from missing disclosure is permitted."
+}

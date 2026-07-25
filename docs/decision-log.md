@@ -2712,3 +2712,28 @@ Deployment receipt:
 Boundary:
 
 A current index, governance audit, cumulative fleet total, capacity filing, interconnection-queue entry, or historical interval extract cannot substitute for the selected exact operating or closure record. Missing disclosure is not failure. No causal effect, ranking, completeness score, composite score, readiness score, or unsupported cross-entity comparison is authorized. Public GitHub synchronization, package freeze, public access, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.
+
+## 2026-07-24: Phase 56H Advances Three Open Rails And Deepens Eight Partial Records
+
+Decision:
+
+Continue all six Phase 56G Open rails and begin the Partially Closed queue with eight high-evidence-value checks. Move DOE, F-35 Fort Worth, and Hornsdale from Open to Partially Closed; preserve DHS, Manatee, and Gateway as Open; deepen the other eight records without treating them as fully closed.
+
+Rationale:
+
+DOE OIG now exposes a bounded FY 2025 FISMA and cybersecurity-review result. GAO supplies compatible F-35 delivery, backlog, provisional-acceptance, and capability-state observations. ARENA supplies a later Hornsdale asset-specific final project record with linked operations material. Each closes part of the named evidence question while leaving remediation, monthly, annual, interval, or outcome denominators open.
+
+Implemented:
+
+- fourteen evidence decisions tied to stable Phase 56F coverage IDs and continuation rules;
+- three Open-to-Partially-Closed transitions, three retained Open decisions, and eight retained Partially Closed decisions;
+- eleven new source profiles and fourteen evidence documents;
+- four Published bounded signals and one held continuation synthesis;
+- Research Watch 012, one collection, one public update, two machine-readable ledgers, and a verified 17-file archive;
+- integration across five topics, five pathways, six entity-layer ledgers, and the comparison protocol;
+- a verified local 1,299-page, 534-source, 272-signal contract with 208 Published, 64 In Review, 36 updates, seventeen collections, 369 documents, and 326 current Published-support sources;
+- Phase 56I selected as the next content gate for DHS, Manatee, Gateway, and the remaining nine Partially Closed records.
+
+Boundary:
+
+A financial-control audit cannot replace FISMA. An annual program total cannot replace monthly line output. Fleet monitoring cannot replace asset interval operation. A current catalog cannot replace a final investigation or restored operation. Recommendation status, acquisition milestones, and constraint events remain bounded by their units, methods, and observation windows. No causal effect, ranking, completeness score, composite score, readiness score, or unsupported cross-entity comparison is authorized. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.

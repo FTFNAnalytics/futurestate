@@ -1,0 +1,48 @@
+{
+  "id": "research-doc-56h-dalrymple-constraint-event-2026",
+  "collection_id": "research-collection-open-rail-acquisition-partial-closure-deepening-2026",
+  "title": "Dalrymple ESCRI-SA Battery Energy Storage System: Phase 56H Evidence Decision",
+  "slug": "56h-dalrymple-constraint-event-2026",
+  "record_status": "Published",
+  "publisher": "Australian Energy Market Operator",
+  "publication_date": "2026-03-01",
+  "document_type": "Data Release",
+  "summary": "AEMO's February 2026 report identifies the Dalrymple Battery islanding constraint S_DLBAT-G_ISL and records 20 dispatch intervals, or 1.66 hours, in which that constraint equation was violated. Phase 56H decision: The asset-specific event count deepens the later operating record, but the evidence state remains Partially Closed because a constraint violation is not an islanding activation, availability series, or dispatch history.",
+  "key_findings": [
+    "Phase 56F coverage ID: coverage-56f-dalrymple.",
+    "Highest-value missing record: Post-project availability, dispatch, and islanding events.",
+    "Evidence state: Partially Closed to Partially Closed.",
+    "Continuation rule: Reopen when ElectraNet, AGL, AEMO, ARENA, or the South Australian regulator publishes dated islanding activations or an asset-level operating series."
+  ],
+  "why_it_matters": "The record tests a named acquisition or reopening rule while keeping adjacent context separate from exact operating, corrective-action, or closure evidence.",
+  "ftfn_relevance": [
+    "Preserves stable entity ID battery-dalrymple-escri-sa.",
+    "Records the official rail, compatible observation, and decision at a date.",
+    "Separates evidence-state movement from entity performance, quality, readiness, or value."
+  ],
+  "evidence_limits": [
+    "Constraint-equation violation intervals do not establish actual islanding, delivered service, full dispatch, availability, degradation, revenue, or customer outcomes.",
+    "Post-2021 availability, dispatch, realized islanding activations, state of charge, degradation, revenue, reliability, and customer outcomes.",
+    "No causal effect, ranking, composite score, readiness score, or unsupported cross-entity comparison is supported."
+  ],
+  "primary_topics": [
+    "Energy"
+  ],
+  "framework_layers": [
+    "Resource Foundations",
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Power",
+    "Infrastructure",
+    "Data Quality",
+    "Safety"
+  ],
+  "source_id": "source-56h-dalrymple-aemo-constraint-report-2026",
+  "official_url": "https://www.aemo.com.au/-/media/files/electricity/nem/security_and_reliability/congestion-information/statistics/2026/february-2026.pdf?rev=64beb99418f441daaa631b2995a562d2&sc_lang=en",
+  "local_capture_path": "/downloads/open-rail-acquisition-partial-closure-deepening-2026/official-links/13-dalrymple-constraint-event-2026.txt",
+  "archive_member": "official-links/13-dalrymple-constraint-event-2026.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-07-24"
+}
