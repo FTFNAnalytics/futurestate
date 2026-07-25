@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: 24 entities carry vertical evidence layers, coverage decisions, completed first-pass records, an ordered continuation queue, and seven exact-record checks while identity, compatibility, attribution, validation status, denominator breaks, and reopening rules remain attached.",
+  "summary": "A comparison and inference protocol: 24 entities carry vertical evidence layers, coverage decisions, a continuation queue, exact-record checks, and three manufacturer realized-outcome decisions while identity, compatibility, attribution, validation status, denominator breaks, and reopening rules remain attached.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -241,7 +241,9 @@
     "source-56j-doe-ferc-fisma-scope-2026",
     "source-56k-moss-landing-go167-corrective-action-2025",
     "source-56k-va-ifams-recommendation-status-2026",
-    "source-56k-f15ex-ex16-portland-receipt-2026"
+    "source-56k-f15ex-ex16-portland-receipt-2026",
+    "source-56l-island-components-paris-fye2023",
+    "source-56l-monaghan-medical-ccida-fye2025"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -359,7 +361,9 @@
     "signal-56j-kc46-readiness-plan",
     "signal-56k-moss-landing-corrective-action-status",
     "signal-56k-va-ifams-recommendations-open",
-    "signal-56k-f15ex-ex16-portland-receipt"
+    "signal-56k-f15ex-ex16-portland-receipt",
+    "signal-56l-island-components-certified-employment",
+    "signal-56l-monaghan-medical-certified-project"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -526,6 +530,12 @@
       "label": "Seven exact-record decisions",
       "node_type": "Signal",
       "note": "Three bounded observations publish; four verified non-closures remain explicit; no evidence state changes."
+    },
+    {
+      "id": "node-phase56l-realized-outcomes",
+      "label": "Three manufacturer realized-outcome decisions",
+      "node_type": "Signal",
+      "note": "Two certified reported-employment records publish; one repeat-series non-closure remains explicit; no evidence state changes."
     }
   ],
   "links": [
@@ -794,6 +804,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Publication, non-publication, recommendation status, and delivery timing do not establish comparative performance or causation."
+    },
+    {
+      "from": "node-phase56l-realized-outcomes",
+      "to": "node-phase56j-continuation",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 56L executes the next three named manufacturer continuation rules without replacing stable IDs or evidence states."
+    },
+    {
+      "from": "node-phase56l-realized-outcomes",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Employment, project amount, completion, and operating output retain their actual entity, project, period, and source role."
+    },
+    {
+      "from": "node-phase56l-realized-outcomes",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Reported current employment and project completion do not establish project causation or comparative performance."
     }
   ],
   "what_this_map_supports": [
@@ -817,7 +848,9 @@
     "A bounded evidence-value continuation order for twenty original Partially Closed records plus three active Open rails.",
     "One exact evidence-state change from Open to Partially Closed for Manatee on the named EIA plant record.",
     "Seven exact-record decisions with current source identity, evidence state, limitation, and reopening rule.",
-    "Three bounded advancements for Moss Landing, VA iFAMS, and F-15EX EX16 without a closure-state change."
+    "Three bounded advancements for Moss Landing, VA iFAMS, and F-15EX EX16 without a closure-state change.",
+    "Three manufacturer realized-outcome decisions with stable identity, current source, evidence state, limitation, and reopening rule.",
+    "Certified reported-employment advancements for Island Components and Monaghan Medical without a closure-state change."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -837,7 +870,8 @@
     "That a management letter, annual total, cumulative fleet count, recommendation state, ongoing investigation, or constraint event is a complete operating or outcome record.",
     "That first-pass completion, a monthly table, a program commitment, a project plan, or a current catalog check is a complete operating or outcome record.",
     "That evidence acquisition order ranks entities or that a monthly row, constraint entry, event report, intervention plan, or component audit is complete performance.",
-    "That a company response is regulator closure, an arrival is formal contractual acceptance, or an audit initiation is an audit result."
+    "That a company response is regulator closure, an arrival is formal contractual acceptance, or an audit initiation is an audit result.",
+    "That reported current FTEs were caused by an incentive project, a project amount was fully spent, or one intervention is a repeat operating series."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -890,6 +924,9 @@
     "Reopen when VA OIG changes a recommendation to Closed-Implemented or publishes a later department-wide FISMA result.",
     "Reopen when the F-35 Joint Program Office, DOD, DCMA, GAO, or the contractor publishes a monthly due-and-accepted table with capability state.",
     "Reopen when the Air Force, DCMA, or program office publishes the formal acceptance record or a monthly due-versus-accepted series.",
-    "Reopen when DOT OIG publishes the FY 2026 result or a dated recommendation-status change."
+    "Reopen when DOT OIG publishes the FY 2026 result or a dated recommendation-status change.",
+    "Reopen when a dated company, MEP, grant, or customer record reports repeat same-line input and output under a declared compatible window.",
+    "Reopen when SCIDA, the company, a registrar, or a customer publishes completed investment or repeat operating output under a declared compatible period.",
+    "Reopen when ESD reports certification or credit issuance for the later commitment, or FDA or company records expose units distributed and a compatible production window."
   ]
 }

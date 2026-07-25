@@ -35,7 +35,9 @@
     "Phase 56J adds 1 named continuation decision to this pathway under the ordered evidence-value queue.",
     "Acquisition order describes evidence opportunity and does not rank entities, performance, safety, quality, readiness, or value.",
     "Phase 56K checks 2 exact named records in this pathway and preserves explicit non-closures.",
-    "An exact-record check can improve the evidence rail without changing the selected closure state."
+    "An exact-record check can improve the evidence rail without changing the selected closure state.",
+    "Phase 56L adds two certified realized-employment denominators and retains one exact repeat-series non-closure across three manufacturer rails.",
+    "Project amount, project completion, current employment, later commitments, and operating output remain distinct evidence types."
   ],
   "primary_topics": [
     "Advanced Manufacturing",
@@ -86,7 +88,9 @@
     "signal-56h-f35-delivery-capability-advance",
     "signal-56i-monaghan-program-commitment",
     "signal-56j-kc46-readiness-plan",
-    "signal-56k-f15ex-ex16-portland-receipt"
+    "signal-56k-f15ex-ex16-portland-receipt",
+    "signal-56l-island-components-certified-employment",
+    "signal-56l-monaghan-medical-certified-project"
   ],
   "source_ids": [
     "source-nist-smart-manufacturing-ai-roadmap-2026",
@@ -159,7 +163,9 @@
     "source-56h-gao-weapon-systems-2026",
     "source-56i-monaghan-excelsior-q1-2026",
     "source-56j-kc46-readiness-plan-2026",
-    "source-56k-f15ex-ex16-portland-receipt-2026"
+    "source-56k-f15ex-ex16-portland-receipt-2026",
+    "source-56l-island-components-paris-fye2023",
+    "source-56l-monaghan-medical-ccida-fye2025"
   ],
   "organization_ids": [
     "org-nist",
@@ -184,7 +190,8 @@
     "briefing-research-watch-012-acquisition-and-deepening",
     "briefing-research-watch-013-first-pass-completion",
     "briefing-research-watch-014-evidence-value-continuation",
-    "briefing-research-watch-015-exact-record-continuation"
+    "briefing-research-watch-015-exact-record-continuation",
+    "briefing-research-watch-016-realized-outcome-continuation"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -206,7 +213,8 @@
     "research-collection-open-rail-acquisition-partial-closure-deepening-2026",
     "research-collection-remaining-open-rails-partial-closure-first-pass-2026",
     "research-collection-evidence-value-continuation-queue-batch-one-2026",
-    "research-collection-exact-record-continuation-batch-two-2026"
+    "research-collection-exact-record-continuation-batch-two-2026",
+    "research-collection-realized-outcome-continuation-batch-one-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -293,6 +301,11 @@
       "stage": "Phase 56K exact-record continuation",
       "current_state": "Seven named records are checked; three bounded observations publish, four exact non-closures are recorded, and no evidence state changes.",
       "boundary": "A response filing, recommendation icon, arrival date, index check, audit catalog, fleet report, or audit initiation is not a differently scoped final result."
+    },
+    {
+      "stage": "Phase 56L realized-outcome continuation",
+      "current_state": "Island Components and Monaghan Medical gain certified reported-employment outcomes; Current Applications retains an exact repeat-series non-closure.",
+      "boundary": "Reported FTEs do not prove causation, project amounts do not prove executed spending, and one intervention is not a repeat series."
     }
   ],
   "evidence_limits": [
@@ -315,7 +328,8 @@
     "Phase 56H closure and deepening states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
     "Phase 56I first-pass and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
     "Phase 56J acquisition order and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
-    "Phase 56K exact-record decisions cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims."
+    "Phase 56K exact-record decisions cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
+    "Phase 56L realized-outcome records cannot be converted into productivity, ranking, readiness, value, or causal claims."
   ],
   "next_records": [
     "ASML enrollment, completion, credential, placement, retention, and customer-training records.",
@@ -343,6 +357,9 @@
     "Reopen when ESD reports certification or credit issuance, or FDA/company records expose units distributed and a compatible production window.",
     "Reopen when the Air Force, GAO, or DOD publishes observed availability under a compatible baseline or another current delivery-and-acceptance denominator.",
     "Reopen when the F-35 Joint Program Office, DOD, DCMA, GAO, or the contractor publishes a monthly due-and-accepted table with capability state.",
-    "Reopen when the Air Force, DCMA, or program office publishes the formal acceptance record or a monthly due-versus-accepted series."
+    "Reopen when the Air Force, DCMA, or program office publishes the formal acceptance record or a monthly due-versus-accepted series.",
+    "Reopen when a dated company, MEP, grant, or customer record reports repeat same-line input and output under a declared compatible window.",
+    "Reopen when SCIDA, the company, a registrar, or a customer publishes completed investment or repeat operating output under a declared compatible period.",
+    "Reopen when ESD reports certification or credit issuance for the later commitment, or FDA or company records expose units distributed and a compatible production window."
   ]
 }

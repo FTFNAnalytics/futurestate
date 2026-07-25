@@ -227,7 +227,17 @@
       "phase_56i_reopening_rule": "Reopen when a dated company, MEP, grant, or customer record reports repeat same-line input and output under a declared window.",
       "phase_56j_queue_lane": "C — named realized-outcome rails",
       "phase_56j_acquisition_order": 12,
-      "phase_56j_named_next_record": "Repeat same-line input and output under one declared period"
+      "phase_56j_named_next_record": "Repeat same-line input and output under one declared period",
+      "phase_56l_acquisition_id": "acquisition-56l-current-applications-repeat-output-status",
+      "phase_56l_named_record": "Repeat same-line input and output under one declared period",
+      "phase_56l_checked_source_id": "source-56b-nist-mep-current-applications-lean",
+      "phase_56l_checked_date": "2026-07-25",
+      "phase_56l_prior_closure_status": "Partially Closed",
+      "phase_56l_current_closure_status": "Partially Closed",
+      "phase_56l_acquisition_result": "The authoritative NIST MEP record still supplies one attributed intervention: production increased from 40 to 105 units per day, work in process fell from 105 to 5 units, and lead time fell 50 percent. The current official rail does not add a second compatible observation window.",
+      "phase_56l_decision": "Retain Partially Closed. The original same-line intervention remains useful, but it is not a repeat series and cannot be republished as a new realized outcome.",
+      "phase_56l_remaining_gap": "A second dated same-line observation with compatible output, labor input, work in process, yield, scrap, downtime, cost, delivery, demand, or capital execution.",
+      "phase_56l_reopening_rule": "Reopen when a dated company, MEP, grant, or customer record reports repeat same-line input and output under a declared compatible window."
     },
     {
       "test_id": "test-56d-island-components-repeat-test",
@@ -278,7 +288,17 @@
       "phase_56i_reopening_rule": "Reopen when SCIDA, the company, a registrar, or a customer publishes a dated realized outcome for the Hauppauge operation.",
       "phase_56j_queue_lane": "C — named realized-outcome rails",
       "phase_56j_acquisition_order": 13,
-      "phase_56j_named_next_record": "Realized Hauppauge jobs, investment, or repeat operating output"
+      "phase_56j_named_next_record": "Realized Hauppauge jobs, investment, or repeat operating output",
+      "phase_56l_acquisition_id": "acquisition-56l-island-components-certified-employment-outcome",
+      "phase_56l_named_record": "Realized Hauppauge jobs, investment, or repeat operating output",
+      "phase_56l_checked_source_id": "source-56l-island-components-paris-fye2023",
+      "phase_56l_checked_date": "2026-07-25",
+      "phase_56l_prior_closure_status": "Partially Closed",
+      "phase_56l_current_closure_status": "Partially Closed",
+      "phase_56l_acquisition_result": "The certified FYE 2023 PARIS record reports 25 FTEs before IDA status, 33 current FTEs, and a net employment change of eight for project 47052302A. It also records a $2,042,250 total project amount and $16,349 of reporting-year exemptions.",
+      "phase_56l_decision": "Retain Partially Closed. The record advances the rail from planned jobs to a reported realized employment denominator, but the project amount is not proof of completed spending and the report does not expose repeat production output.",
+      "phase_56l_remaining_gap": "Completed and paid investment, repeat output, labor hours, work in process, yield, defects, downtime, delivery, demand, and independent surveillance findings.",
+      "phase_56l_reopening_rule": "Reopen when SCIDA, the company, a registrar, or a customer publishes completed investment or repeat operating output under a declared compatible period."
     },
     {
       "test_id": "test-56d-monaghan-medical-repeat-test",
@@ -328,7 +348,17 @@
       "phase_56i_reopening_rule": "Reopen when ESD reports certification or credit issuance, or FDA/company records expose units distributed and a compatible production window.",
       "phase_56j_queue_lane": "C — named realized-outcome rails",
       "phase_56j_acquisition_order": 14,
-      "phase_56j_named_next_record": "Certified investment, realized jobs, or units under a compatible window"
+      "phase_56j_named_next_record": "Certified investment, realized jobs, or units under a compatible window",
+      "phase_56l_acquisition_id": "acquisition-56l-monaghan-medical-certified-project-outcome",
+      "phase_56l_named_record": "Certified investment, realized jobs, or units under a compatible window",
+      "phase_56l_checked_source_id": "source-56l-monaghan-medical-ccida-fye2025",
+      "phase_56l_checked_date": "2026-07-25",
+      "phase_56l_prior_closure_status": "Partially Closed",
+      "phase_56l_current_closure_status": "Partially Closed",
+      "phase_56l_acquisition_result": "The certified FYE 2025 record for project 0902-18-05 lists a $10 million total project amount, notes construction complete in 2021, and reports 91 current FTEs against 68 before IDA status, a net employment change of 23.",
+      "phase_56l_decision": "Retain Partially Closed. The record establishes a completed earlier IDA project and a realized reported employment denominator, but it does not certify the separate 2025 ESD commitment or publish compatible production units.",
+      "phase_56l_remaining_gap": "Execution and certification of the separate 2025 facility and machinery commitment, units distributed, same-line output, labor input, yield, scrap, downtime, delivery, and patient outcomes.",
+      "phase_56l_reopening_rule": "Reopen when ESD reports certification or credit issuance for the later commitment, or FDA or company records expose units distributed and a compatible production window."
     },
     {
       "test_id": "test-56d-moss-landing-repeat-test",
@@ -699,5 +729,6 @@
   "phase_56h_acquisition_ledger": "phase-56h-acquisition-and-deepening.json",
   "phase_56i_acquisition_ledger": "phase-56i-remaining-rails-first-pass.json",
   "phase_56j_acquisition_ledger": "phase-56j-evidence-value-continuation.json",
-  "phase_56k_acquisition_ledger": "phase-56k-exact-record-continuation.json"
+  "phase_56k_acquisition_ledger": "phase-56k-exact-record-continuation.json",
+  "phase_56l_acquisition_ledger": "phase-56l-realized-outcome-continuation.json"
 }
