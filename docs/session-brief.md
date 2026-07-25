@@ -149,10 +149,10 @@ What is now stable:
 - Phase 56D adds twelve entity-level alternative-explanation tests, four portfolio holds, 20 primary-source profiles, 24 entity-specific summaries, Research Watch 008, machine-readable test and publication ledgers, and a verified 27-file archive.
 - Phase 56E retains twelve of twelve screened entities and adds twelve panels, twelve driver-and-constraint dossiers, twelve alternative-explanation tests, four portfolio holds, 40 source profiles, 48 Published summaries, Research Watch 009, four machine-readable ledgers, and a verified 51-file archive.
 - The verified Phase 56E contract is 1,204 pages, 502 sources, 260 signals, 199 Published signals, 61 In Review signals, 307 current Published-support sources, seventeen briefings, seven maps, fourteen research collections, 324 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 33 updates, and five public-data exports.
-- Owner-only Sites version 29 continues to serve the Phase 56D checkpoint while the verified Phase 56E package proceeds through the unchanged private deployment gate.
+- Phase 56E local content commit `2aebf8fb94d9491cf4b0b376b94f674a09dbe8e4` matches exact private source projection `79964310eeb0e1f18be0b94cb4ffd29ab04c9df4`, deployed as owner-only Sites version 30 in deployment `appgdep_6a641dc36c188191b77181aa1ea9449f` with one allowed owner and no groups.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
-- All 267 current Published-support sources are governed by the same current-source release assertion.
+- All 307 current Published-support sources are governed by the same current-source release assertion.
 - The compact header defect was repaired: every brand and primary-navigation link now has at least a 44-pixel target.
 - `npm run verify:release` and `deployment/ftfn-v0.2-build.json` preserve the repeatable v0.2 release contract.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
@@ -160,8 +160,8 @@ What is now stable:
 
 What is still prelaunch scaffolding:
 
-- One hundred and fifty-three signal records are `Published`.
-- Fifty-one signal records are still `In Review`; no Draft Sample remains.
+- One hundred and ninety-nine signal records are `Published`.
+- Sixty-one signal records are still `In Review`; no Draft Sample remains.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -171,7 +171,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only Sites access and continue with Phase 56F cross-cohort coverage and missing-record closure. Phase 56E is complete and release-verified locally. Build one coverage ledger across all 24 named entities, record the strongest compatible closure or outcome evidence already present, and identify one highest-value missing operating record per entity. Execute bounded agency, production-line, battery, and carrier closure batches without creating rankings, composite scores, readiness scores, or causal conclusions. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only Sites version 30 and continue with Phase 56F cross-cohort coverage and missing-record closure. Phase 56E is complete, release-verified, and owner-only deployed. Build one coverage ledger across all 24 named entities, record the strongest compatible closure or outcome evidence already present, and identify one highest-value missing operating record per entity. Execute bounded agency, production-line, battery, and carrier closure batches without creating rankings, composite scores, readiness scores, or causal conclusions. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 

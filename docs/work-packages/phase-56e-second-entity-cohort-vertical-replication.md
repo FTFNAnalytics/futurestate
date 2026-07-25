@@ -2,7 +2,7 @@
 
 Date: 2026-07-24
 
-Status: complete locally; owner-only deployment pending
+Status: complete and owner-only deployed
 
 ## Goal
 
@@ -94,6 +94,17 @@ Archive:
 - official-link records: 48;
 - SHA-256: `C25C04172E7BF91DCD19389FEB56635B6650FF4C54C7FDAB16ADDC1C004DD736`.
 
+Deployment receipt:
+
+- local content commit: `2aebf8fb94d9491cf4b0b376b94f674a09dbe8e4`;
+- exact private Sites source projection: `79964310eeb0e1f18be0b94cb4ffd29ab04c9df4`;
+- owner-only Sites version: 30;
+- version ID: `appgprj_6a614e1092d08191bf65779fc35df959~appgver_e686cd76e4d08191b330747321d7db1d`;
+- deployment ID: `appgdep_6a641dc36c188191b77181aa1ea9449f`;
+- production URL: `https://ftfn-analytics.jbumstead.chatgpt.site`;
+- deployment status: succeeded;
+- access verification: custom policy with one allowed owner and no groups.
+
 ## Publication Boundary
 
 The build does not establish causal effects, comparative performance, readiness, or a common cross-entity score. Recommendation counts, audit findings, cumulative deliveries, fielding, contractor totals, incident response, installed capacity, annual cancellations, monthly on-time arrivals, complaints, and stated commitments remain separate measures. Company, operator, regulator, auditor, and independent-oversight attribution remain visible.
@@ -111,4 +122,3 @@ Priorities:
 - close gaps in bounded batches across agency control operation, manufacturing line inputs and accepted output, battery availability and dispatch, and carrier service-delivery denominators;
 - publish new entity findings only after separate record-level review;
 - keep any cross-cohort comparison held unless a genuinely common measurement contract exists.
-

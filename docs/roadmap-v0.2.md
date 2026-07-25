@@ -376,13 +376,13 @@ Recommended active schedule:
 | Completed | Phase 56B | twelve named entity panels, four ranking holds, 17 official records, and Research Watch 006 |
 | Completed | Phase 56C | twelve entity driver and constraint dossiers, four causal holds, and Research Watch 007 |
 | Completed | Phase 56D | twelve alternative-explanation tests, six holds, Research Watch 008, and owner-only Sites version 29 |
-| Completed locally | Phase 56E | second twelve-entity cohort, 36 vertical entity layers, four portfolio holds, and Research Watch 009 |
+| Completed | Phase 56E | second twelve-entity cohort, 36 vertical entity layers, four portfolio holds, Research Watch 009, and owner-only Sites version 30 |
 | Current content gate | Phase 56F | cross-cohort coverage ledger and highest-value missing-record closure across 24 entities |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build, owner-only preview, and Phases 55S-56D aggressive expansion are complete locally and owner-only deployed; Phase 56E is complete locally and ready for the same owner-only deployment gate. Phases 55A-56E established the authority, research, synthesis, pathway, evidence-gap, publication, navigation, export, operating-evidence, comparison-boundary, longitudinal-series, named-entity-panel, driver-and-constraint, alternative-explanation-test, and second-cohort vertical-replication foundations. The next non-public content gate is Phase 56F: a cross-cohort coverage and missing-record closure program across all 24 named entities. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build, owner-only preview, and Phases 55S-56E aggressive expansion are complete locally and owner-only deployed. Phases 55A-56E established the authority, research, synthesis, pathway, evidence-gap, publication, navigation, export, operating-evidence, comparison-boundary, longitudinal-series, named-entity-panel, driver-and-constraint, alternative-explanation-test, and second-cohort vertical-replication foundations. The next non-public content gate is Phase 56F: a cross-cohort coverage and missing-record closure program across all 24 named entities. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -933,6 +933,8 @@ Completion receipt:
 - retained four cross-entity portfolio interpretations `In Review`;
 - added 40 source profiles, 48 Published summaries, Research Watch 009, one collection, four machine-readable ledgers, one update, and a verified 51-file archive;
 - release-verified 1,204 pages, 502 sources, 260 signals, 199 Published signals, 61 In Review signals, 324 research documents, and 307 current Published-support sources.
+- matched local content commit `2aebf8fb94d9491cf4b0b376b94f674a09dbe8e4` to exact private source projection `79964310eeb0e1f18be0b94cb4ffd29ab04c9df4`;
+- deployed owner-only Sites version 30 in deployment `appgdep_6a641dc36c188191b77181aa1ea9449f` and confirmed custom access with one allowed owner and no groups.
 
 ### Phase 56F: Cross-Cohort Coverage And Missing-Record Closure - Next Content Gate
 
@@ -1073,4 +1075,4 @@ Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Sites version 29 serves local content commit `9716a4ef19db8edc46950b32c23ee38a572440a5` from exact private source projection `ed6345357651c4f870355fb166a985680a9588f7` in deployment `appgdep_6a6417219bc8819190172e54ef9e166e`, under custom access with one allowed owner and no groups. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 30 serves local content commit `2aebf8fb94d9491cf4b0b376b94f674a09dbe8e4` from exact private source projection `79964310eeb0e1f18be0b94cb4ffd29ab04c9df4` in deployment `appgdep_6a641dc36c188191b77181aa1ea9449f`, under custom access with one allowed owner and no groups. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
