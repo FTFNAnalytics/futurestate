@@ -153,7 +153,17 @@ manifest.known_limitations.unshift(
   "The Phase 56C download contains 24 official-link records supporting twelve Published entity driver and constraint dossiers.",
   "Phase 56C preserves temporal order, attribution, independent-validation limits, and alternative explanations without claiming that controls, inputs, corrective actions, or commitments caused observed outcomes.",
 );
-manifest.notes = "This manifest records the validated Phase 56C entity driver and constraint dossier pass for owner-only deployment. Phase 56C adds 20 source profiles, 24 summaries, and sixteen bounded signal decisions across named agencies, manufacturers, battery assets, and operating carriers; twelve dossiers publish while four causal interpretations remain held. Research Watch 007 and the deepened comparison protocol preserve stable entity identity, temporal order, attribution, independent-validation limits, alternative explanations, and the no-causation boundary. The release remains 0.2.0-dev and owner-only. Public access, DNS, public GitHub, custom-domain, and package changes are not authorized.";
+manifest.private_preview = {
+  ...manifest.private_preview,
+  current_local_content_commit: "573b98bf5474d2a13ca6db91f96afd7a19a1ec2e",
+  current_source_commit: "81ebce0bfe90d2175ca7152400dcd75ef03d65e0",
+  current_version_id: "appgprj_6a614e1092d08191bf65779fc35df959~appgver_1195f5269b888191b4510cf459899552",
+  current_version_number: 28,
+  current_deployment_id: "appgdep_6a640d2c01808191ab0e543f842302cf",
+  post_deploy_qa: "passed-version-28-deployment-status-and-owner-only-access-policy",
+};
+manifest.last_verified.preview_qa = "passed-owner-only-version-28-deployment-status; custom-access-one-owner-no-groups";
+manifest.notes = "This manifest records the validated and owner-only deployed Phase 56C entity driver and constraint dossier pass. Phase 56C adds 20 source profiles, 24 summaries, and sixteen bounded signal decisions across named agencies, manufacturers, battery assets, and operating carriers; twelve dossiers publish while four causal interpretations remain held. Research Watch 007 and the deepened comparison protocol preserve stable entity identity, temporal order, attribution, independent-validation limits, alternative explanations, and the no-causation boundary. Sites version 28 serves exact private source commit 81ebce0bfe90d2175ca7152400dcd75ef03d65e0 under custom access with one allowed owner and no groups. The release remains 0.2.0-dev and owner-only. Public access, DNS, public GitHub, custom-domain, and package changes are not authorized.";
 
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
 console.log(`Updated Phase 56C manifest with archive SHA-256 ${archiveSha256}.`);

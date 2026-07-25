@@ -1,6 +1,6 @@
 # Phase 56C Work Package: Entity Driver and Constraint Dossiers
 
-Status: implementation complete; owner-only deployment pending  
+Status: complete and owner-only deployed
 Date: 2026-07-24  
 Release boundary: owner-only; no public launch, DNS, package freeze, public GitHub, or custom-domain change
 
@@ -93,6 +93,16 @@ Every Published dossier preserves:
 - Static build: 1,012 pages.
 - Published layer: 153 signals, 251 unique supporting sources, and 250 public research export records.
 - Archive: 27 files with 24 official-link records.
+
+## Deployment receipt
+
+- Local content commit: `573b98bf5474d2a13ca6db91f96afd7a19a1ec2e`
+- Exact private source projection: `81ebce0bfe90d2175ca7152400dcd75ef03d65e0`
+- Sites version: 28 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_1195f5269b888191b4510cf459899552`)
+- Deployment: `appgdep_6a640d2c01808191ab0e543f842302cf`
+- URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- Access verification: custom owner-only policy, one allowed owner, no groups.
+- Archive SHA-256: `E684D5D380FF82322B7EA895C92625E3F5EE190AF78D5DC7A8A841D4486546C3`
 
 ## Handoff
 

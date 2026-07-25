@@ -2548,3 +2548,35 @@ Deployment receipt:
 Boundary:
 
 At least two compatible observations are required before direction is described. A two-point movement is not a durable trend without an explicit caveat. A material unit, denominator, scope, method, attribution, revision, or series-definition break stops or restates the line. National context is not entity performance. Cross-domain rankings and composite scores remain prohibited. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.
+
+## 2026-07-24: Phase 56C Publishes Dossiers, Not Causal Effects
+
+Decision:
+
+Deepen the twelve Phase 56B panels with entity-matched controls, inputs, constraints, later observations, attribution, independent-validation limits, and named alternative explanations. Publish twelve bounded dossiers and hold four portfolio-level causal interpretations.
+
+Rationale:
+
+Temporal order and source attribution make an entity record more useful, but they do not establish that a named intervention, control, capability, corrective action, or commitment caused an observed outcome. Regulator findings, operator responses, company claims, and independent oversight must remain visibly distinct.
+
+Implemented:
+
+- 20 primary-source profiles and 24 Published entity-specific summaries;
+- twelve four-stage dossiers preserving baseline, intervention or input, constraint, and observed outcome or later boundary;
+- sixteen signal decisions: twelve Published and four held causal interpretations;
+- Research Watch 007 and a verified 27-file archive;
+- a deepened Phase 56B panel ledger plus separate Phase 56C dossier and publication ledgers;
+- integration across eight topics, six pathways, Research Watch 006, and the comparison-boundary map;
+- a verified 1,012-page, 442-source, 204-signal contract with 153 Published, 51 In Review, 31 updates, twelve collections, 252 documents, and 251 current Published-support sources;
+- Phase 56D selected as the next content gate for repeat outcomes and alternative-explanation tests.
+
+Deployment receipt:
+
+- local content commit `573b98bf5474d2a13ca6db91f96afd7a19a1ec2e`;
+- exact private Sites source projection `81ebce0bfe90d2175ca7152400dcd75ef03d65e0`;
+- owner-only Sites version 28 in deployment `appgdep_6a640d2c01808191ab0e543f842302cf`;
+- custom access confirmed with one allowed owner and no groups.
+
+Boundary:
+
+Sequence is not causal proof. Recommendation counts, audit findings, certifications, capability inventories, closure claims, commitments, capacity, and cancellation rates remain separate measures. Company and operator claims stay attributed until independently validated. No ranking, composite score, readiness score, or unsupported cross-entity comparison is authorized. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.

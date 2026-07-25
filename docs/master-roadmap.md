@@ -995,7 +995,8 @@ These are the next practical actions from the current project state.
 286. Complete Phase 55Z comparative operating outcomes. Status: complete and owner-only deployed; added 32 primary records, 30 source profiles, sixteen bounded signals, a 35-file archive, Research Watch 004, evidence gap `gap-016`, and one Published comparison-boundary map; published twelve signals and 28 document summaries, held four signals and four documents, verified the 780-page release contract, and deployed Sites version 25.
 287. Complete Phase 56A within-domain longitudinal outcome series. Status: complete and owner-only deployed; added 48 primary observations in sixteen three-record series, twenty bounded signal decisions, a 51-file archive, and Research Watch 005; published sixteen series signals and 44 document summaries, held four cross-series composites and four document observations, deepened eleven topics, nine pathways, nine gaps, and the comparison map, verified the 898-page release contract, and deployed Sites version 26.
 288. Complete Phase 56B entity-level operating panels. Status: complete and owner-only deployed; added twelve Published named panels, four cross-entity ranking holds, 17 official records, a 20-file archive, Research Watch 006, and a machine-readable panel ledger; verified the 950-page release contract and deployed Sites version 27.
-289. Begin Phase 56C entity driver and constraint dossiers. Status: next content gate; deepen the twelve Published panels with entity-matched intervention, control, input, constraint, and outcome records while requiring temporal ordering, explicit attribution, later observations first, and no causal, ranking, readiness, or composite claims.
+289. Complete Phase 56C entity driver and constraint dossiers. Status: complete and owner-only deployed; added twelve Published dossiers, four causal-inference holds, 20 primary-source profiles, 24 summaries, a 27-file archive, Research Watch 007, and machine-readable dossier and publication ledgers; verified the 1,012-page release contract and deployed Sites version 28.
+290. Begin Phase 56D repeat outcomes and alternative-explanation tests. Status: next content gate; keep the same twelve entities, add later compatible outcomes first, map each new record to a named Phase 56C alternative explanation, and distinguish independent verification from company or operator attribution.
 
 ## 10. Current Stage Map
 
@@ -1038,12 +1039,12 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a second private queue batch that turns promoted Phase 49 source records into bounded review candidates.
 - six Phase 50 bounded source-item signals spanning a DOE/Grants.gov opportunity, MAG local projections, USAspending award, NSF award, USGS gallium record, and Toronto planning application.
 - a frozen v0.1.1 release package with app version 0.1.1, deployment manifest, versioned session brief, release roadmap, local release-QA evidence, and Git checkpoint `4845597`.
-- a current `0.2.0-dev` build with 422 sources, 188 signals, 30 update entries, 141 Published signals, five public JSON exports, and 950 pages.
+- a current `0.2.0-dev` build with 442 sources, 204 signals, 31 update entries, 153 Published signals, five public JSON exports, and 1,012 pages.
 - a private 150-record source-candidate shelf across 15 evidence profiles, with all 150 first-pass triaged and zero automatic public promotions.
 - Source Monitor review-state groups and next actions plus Strong, Developing, and Weak Source Coverage summaries.
 - a passed v0.2 local release gate with a versioned manifest, repeatable release assertions, desktop/mobile browser evidence, repaired 44-pixel header targets, and a public-facing launch note plus limitations statement.
 
-It is not yet a public launch product. An owner-only Sites preview exists, while package-version freeze, public access, `ftfn.io` attachment, Hostinger DNS changes, analytics decisions, and final public-launch approval remain separate. The current v0.2 build passes the Phase 56B release gate with 141 Published and 47 In Review signals, seven Published and seven In Review briefings, six Published and one In Review dependency maps, and five local-system dossiers. Longitudinal and entity-panel outcomes remain bounded by stable identity, unit, denominator, period, geography, method, attribution, missing evidence, revisions, and reporting breaks.
+It is not yet a public launch product. An owner-only Sites preview exists, while package-version freeze, public access, `ftfn.io` attachment, Hostinger DNS changes, analytics decisions, and final public-launch approval remain separate. The current v0.2 build passes the Phase 56C release gate with 153 Published and 51 In Review signals, eight Published and seven In Review briefings, six Published and one In Review dependency maps, and five local-system dossiers. Longitudinal, entity-panel, and driver-and-constraint outcomes remain bounded by stable identity, unit, denominator, period, geography, method, attribution, independent-validation limits, alternative explanations, missing evidence, revisions, and reporting breaks.
 
 ### Stage 1: Reader-Journey QA
 
@@ -1236,12 +1237,14 @@ Next candidate work:
 - Phase 56A adds sixteen three-observation series, twenty signal decisions, Research Watch 005, and a verified 51-file archive while preserving revisions and series breaks.
 - The verified Phase 56B contract is 950 pages, 422 sources, 188 signals, 141 Published, 47 In Review, 231 current Published-support sources, fourteen briefings, seven maps, eleven research collections, 228 research documents, fifteen pathways across 19 Atlas surfaces, and 30 updates.
 - Phase 56B adds twelve Published entity panels, four ranking holds, Research Watch 006, and a verified 20-file archive while keeping national context separate from entity performance.
-- Phase 56C next: deepen those panels with entity-matched driver, constraint, intervention, and outcome evidence without turning sequence or attribution into causation.
+- The verified Phase 56C contract is 1,012 pages, 442 sources, 204 signals, 153 Published, 51 In Review, 251 current Published-support sources, fifteen briefings, seven maps, twelve research collections, 252 research documents, fifteen pathways across 19 Atlas surfaces, and 31 updates.
+- Phase 56C adds twelve Published entity driver and constraint dossiers, four causal-inference holds, Research Watch 007, and a verified 27-file archive while preserving attribution, independent-validation limits, and alternative explanations.
+- Phase 56D next: test the same twelve dossiers with later compatible outcomes and records capable of confirming or challenging their named alternative explanations.
 - Phase 55H, Phase 55R, Space Coast license, Arizona wastewater, Loudoun standards, and Nevada delivery remain scheduled inserts that do not pause the expansion queue.
 - Continue the NSTC and NAPMP recipient-level reconciliation, GAO prototype-OTA oversight trail, O-RAN external testing and adoption trail, PIV revision and pilot trail, Phoenix Fab 3 conversion trail, and Project Baccara downstream stages only where they serve a selected pathway or evidence gap.
 - Keep future In Review dependency-map details `noindex, follow` and outside the sitemap; local-system profiles remain qualitative prelaunch dossiers without a Published state.
 - Preserve separate award, obligation, physical milestone, permit, test, acceptance, operation, and scale stages for every record.
-- Phase 56B local content commit `1e5e03153d0744975630848fe4db736ce8c39519` is represented by private source commit `34e41bb13b8d4b0a73d6201dac0c6e8ccb57e6bf` and supplies the current owner-only Sites version 27 checkpoint.
+- Phase 56C local content commit `573b98bf5474d2a13ca6db91f96afd7a19a1ec2e` is represented by exact private source projection `81ebce0bfe90d2175ca7152400dcd75ef03d65e0` and supplies the current owner-only Sites version 28 checkpoint.
 - Keep Supabase activation, public access, package freeze, DNS, custom-domain attachment, and public GitHub synchronization as separate tracks or approval gates.
 
 Decision:

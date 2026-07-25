@@ -823,7 +823,7 @@ Exit criteria:
 - the full release passes at 950 pages, 422 sources, 188 signals, 141 Published signals, 47 In Review signals, 228 research documents, and 231 current Published-support sources;
 - owner-only Sites version 27 serves the exact Phase 56B source under custom access with one allowed owner and no groups.
 
-### Phase 56C: Entity Driver And Constraint Dossiers - Current Content Gate
+### Phase 56C: Entity Driver And Constraint Dossiers - Complete
 
 Goal: deepen each Published panel with entity-matched evidence about the interventions, controls, inputs, constraints, and operating conditions associated with observed movement, without converting temporal sequence or attribution into a causal claim.
 
@@ -834,15 +834,16 @@ Target dossiers:
 3. battery duration, availability, dispatch, safety, revenue, grid service, and customer-reliability outcomes,
 4. carrier delay causes, complaints, accessibility, schedule mix, airport exposure, and later operating periods.
 
-Deliverables:
+Delivered:
 
-- give every added record the same stable entity identifier as its parent panel;
-- organize records as baseline condition, named intervention or constraint, and observed outcome where official evidence permits;
-- add later compatible observations before opening new indicators;
-- record who attributes a change, what independent validation exists, and which alternative explanations remain open;
-- distinguish authorization, implementation, operation, and measured outcome;
-- deepen the panel ledger, research collection, briefing, comparison map, pathways, and topic surfaces without adding a ranking interface;
-- keep scheduled checks and Project Baccara stages as bounded inserts.
+- preserved the twelve Phase 56B stable entity identifiers and parent-panel links;
+- added 20 primary-source profiles and 24 Published entity-specific summaries;
+- published twelve four-stage dossiers and held four portfolio-level causal interpretations `In Review`;
+- ordered every dossier as baseline, named intervention or input, constraint, and observed outcome or later boundary;
+- recorded attribution, independent-validation limits, named alternative explanations, and next compatible records;
+- added Research Watch 007, one collection, a machine-readable dossier ledger, a publication ledger, and a verified 27-file archive;
+- deepened the Phase 56B panel ledger, eight topics, six pathways, Research Watch 006, and the comparison-boundary map;
+- kept scheduled checks and Project Baccara stages as bounded inserts.
 
 Exit criteria:
 
@@ -850,6 +851,38 @@ Exit criteria:
 - every claimed association discloses attribution and missing evidence;
 - no temporal sequence is presented as causal proof;
 - no ranking, composite score, readiness score, or unsupported cross-entity comparison is created;
+- the full release passes at 1,012 pages, 442 sources, 204 signals, 153 Published signals, 51 In Review signals, 252 research documents, and 251 current Published-support sources;
+- owner-only Sites version 28 serves exact private source projection `81ebce0bfe90d2175ca7152400dcd75ef03d65e0` under custom access with one allowed owner and no groups.
+
+### Phase 56D: Repeat Outcomes And Alternative-Explanation Tests - Current Content Gate
+
+Goal: test the strongest Phase 56C associations with later compatible outcomes and records capable of confirming or challenging the named alternative explanations.
+
+Target records:
+
+1. agency control-operation, recommendation-closure, incident, recovery, affected-service, and mission-outcome records,
+2. manufacturer same-line output, labor hours, first-pass yield, scrap, downtime, cost, delivery, demand, and certification-surveillance records,
+3. battery corrective-action closure, availability, cycling, dispatch, incident, degradation, revenue, grid-service, and customer-reliability records,
+4. carrier delay-cause, complaint, accessibility, commitment-delivery, schedule-mix, airport-exposure, and later operating records.
+
+Deliverables:
+
+- keep the same twelve entities and measurement contracts before adding another portfolio;
+- add the latest compatible observation first and disclose any method, identity, or reporting break;
+- map every new record to one or more Phase 56C alternative explanations;
+- distinguish regulator-verified closure from operator or company closure claims;
+- distinguish stated capability or commitment from observed use, compliance, and outcome;
+- split records that use a different unit, denominator, population, geography, or method;
+- publish only independently useful bounded findings and retain unresolved causal interpretations `In Review`;
+- deepen the dossiers, collection, briefing, comparison map, pathways, topics, update log, and downloadable archive;
+- treat dated annual releases as later inserts rather than pauses in the available-now queue.
+
+Exit criteria:
+
+- every added record either tests a named alternative explanation or supplies a later compatible outcome;
+- each closure or performance statement has explicit attribution and validation status;
+- series breaks and missing denominators remain visible;
+- no causal effect, ranking, composite score, readiness score, or unsupported cross-entity comparison is created;
 - the full local release and owner-only deployment gates pass.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
@@ -946,7 +979,7 @@ In v0.2, only source discovery and change detection may become semi-automated. C
 
 v0.2 is successful when:
 
-- the current 113-signal Published set remains bounded and every future promotion passes a separate record-level gate,
+- the current 153-signal Published set remains bounded and every future promotion passes a separate record-level gate,
 - every current and future briefing and dependency map has an explicit publish, repair, split, or hold decision,
 - the fifteen current pathways remain valid as evidence-bounded journeys,
 - the highest-value local and implementation gaps have named next records and dated stop rules,
@@ -958,14 +991,14 @@ v0.2 is successful when:
 - release QA remains repeatable,
 - no automated process publishes claims without review.
 
-The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T brought every topic to a four-signal and two-Published-record floor. Phase 55U added three evidence-dense local systems, 26 official sources, 15 signals, three pathways and gaps, one briefing, and one map. Phase 55V added an 18-document cross-corridor shelf, a 21-file archive, a new synthesis briefing, and downstream evidence integration. Phase 55W added the record-level publication ledger, promoted 12 bounded signals, published one briefing and one map, expanded the pathway network to 15, and made the larger corpus discoverable through separate shelves, filters, and five exports. Phase 55X added 24 implementation records and twelve signals across three local systems. Phase 55Y added 24 operating and receiving-system records. Phase 55Z added 32 operating-outcome records, sixteen signals, a comparison-boundary map, and an explicit four-record hold set. Phase 56A added 48 observations in sixteen three-record series, twenty signal decisions, Research Watch 005, and a 51-file archive. Phase 56B added twelve Published entity panels, four ranking holds, 17 official records, Research Watch 006, and a 20-file archive. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
+The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T brought every topic to a four-signal and two-Published-record floor. Phase 55U added three evidence-dense local systems, 26 official sources, 15 signals, three pathways and gaps, one briefing, and one map. Phase 55V added an 18-document cross-corridor shelf, a 21-file archive, a new synthesis briefing, and downstream evidence integration. Phase 55W added the record-level publication ledger, promoted 12 bounded signals, published one briefing and one map, expanded the pathway network to 15, and made the larger corpus discoverable through separate shelves, filters, and five exports. Phase 55X added 24 implementation records and twelve signals across three local systems. Phase 55Y added 24 operating and receiving-system records. Phase 55Z added 32 operating-outcome records, sixteen signals, a comparison-boundary map, and an explicit four-record hold set. Phase 56A added 48 observations in sixteen three-record series, twenty signal decisions, Research Watch 005, and a 51-file archive. Phase 56B added twelve Published entity panels, four ranking holds, 17 official records, Research Watch 006, and a 20-file archive. Phase 56C added twelve Published driver-and-constraint dossiers, four causal-inference holds, 20 source profiles, 24 summaries, Research Watch 007, and a 27-file archive. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
 
 ## Immediate Next Step
 
-Begin Phase 56C with entity driver and constraint dossiers. Start from the twelve Published Phase 56B panels and add entity-matched intervention, control, input, constraint, and outcome records. Require temporal ordering, explicit attribution, independent validation where available, and a named alternative-explanation boundary. Add later compatible observations before opening new indicators, and do not infer causation from sequence.
+Begin Phase 56D with repeat outcomes and alternative-explanation tests. Keep the same twelve entities, add the latest compatible outcome records first, and map each new record to a named Phase 56C alternative explanation. Prioritize independently verified control operation, corrective-action closure, same-line manufacturing measures, battery availability and dispatch, and carrier causes and service-delivery records. Split any changed unit, denominator, geography, method, or identity rather than extending the line silently.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Sites version 27 serves local content commit `1e5e03153d0744975630848fe4db736ce8c39519` from private source commit `34e41bb13b8d4b0a73d6201dac0c6e8ccb57e6bf` in deployment `appgdep_6a640330de008191bd457d2d1b0bf9bf`, under custom access with one allowed owner and no groups. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 28 serves local content commit `573b98bf5474d2a13ca6db91f96afd7a19a1ec2e` from exact private source projection `81ebce0bfe90d2175ca7152400dcd75ef03d65e0` in deployment `appgdep_6a640d2c01808191ab0e543f842302cf`, under custom access with one allowed owner and no groups. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
