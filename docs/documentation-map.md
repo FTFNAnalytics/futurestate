@@ -1550,6 +1550,7 @@ Purpose:
 - Record the completed Phase 56F 24-entity coverage ledger, fourteen source profiles, 24 coverage documents, five signal decisions, 27-file archive, Research Watch 010, closure states, reopening rules, and Phase 56G handoff.
 - Record the completed Phase 56G seven-record acquisition batch, one Open-to-Partially-Closed transition, two signal decisions, 10-file archive, Research Watch 011, owner-only deployment receipt, continuation rules, and Phase 56H handoff.
 - Record the completed Phase 56H fourteen-record acquisition and deepening batch, three Open-to-Partially-Closed transitions, five signal decisions, 17-file archive, Research Watch 012, owner-only deployment receipt, continuation rules, and Phase 56I handoff.
+- Record the completed Phase 56I twelve-decision first-pass batch, three signal decisions, 15-file archive, Research Watch 013, unchanged one Closed, twenty Partially Closed, and three Open states, continuation rules, and Phase 56J handoff.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 
@@ -1572,6 +1573,7 @@ Primary file:
 - `docs/work-packages/phase-56f-cross-cohort-coverage-missing-record-closure.md` for the completed 24-entity coverage program, one-record priority, closure-state and reopening-rule contract, five publication decisions, archive contract, validation evidence, and Phase 56G handoff
 - `docs/work-packages/phase-56g-operating-record-acquisition-closure-batch-two.md` for the completed seven-rail acquisition pass, one bounded closure transition, dated continuation rules, two publication decisions, archive contract, validation and deployment evidence, and Phase 56H handoff
 - `docs/work-packages/phase-56h-open-rail-acquisition-partial-closure-deepening.md` for the completed fourteen-decision pass, three bounded closure transitions, partial-record deepening, five publication decisions, archive contract, validation evidence, and Phase 56I handoff
+- `docs/work-packages/phase-56i-remaining-open-rails-partial-first-pass.md` for the completed twelve-decision first pass, unchanged closure-state ledger, three publication decisions, archive contract, validation evidence, continuation rules, and Phase 56J handoff
 
 Update when:
 
@@ -1592,7 +1594,7 @@ Update when:
 - the Phase 56F cross-cohort coverage ledger, missing-record priorities, bounded closure batches, or handoff changes,
 - the Phase 56G operating-record acquisition queue, record-level publication decisions, or reopening-rule outcomes change,
 - the Phase 56H open-rail or partial-closure acquisition priorities change,
-- the Phase 56I remaining Open rails or partial-closure first-pass priorities change,
+- the Phase 56I remaining Open rails, first-pass results, archive, deployment receipt, or Phase 56J continuation priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

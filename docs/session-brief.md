@@ -159,6 +159,8 @@ What is now stable:
 - The verified Phase 56H local contract is 1,299 pages, 534 sources, 272 signals, 208 Published signals, 64 In Review signals, 326 current Published-support sources, twenty briefings, seven maps, seventeen research collections, 369 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 36 updates, and five public-data exports.
 - Phase 56H checks all six Open rails and eight Partially Closed records, moves DOE, F-35 Fort Worth, and Hornsdale to Partially Closed, and leaves one Closed, twenty Partially Closed, and three Open evidence states.
 - Phase 56H local content commit `5878f83a7740827ad1ee4ff0b4d3362eb0e798f4` matches exact private source projection `85eb6ab5e8fcd5530a507aebc2dc5b53091575cf`, deployed as owner-only Sites version 33 in deployment `appgdep_6a6453f24d3481918d4a7f4ab6aaa3ee` with one allowed owner and no groups.
+- The verified Phase 56I local contract is 1,319 pages, 537 sources, 275 signals, 210 Published signals, 65 In Review signals, 328 current Published-support sources, twenty-one briefings, seven maps, eighteen research collections, 381 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 37 updates, and five public-data exports.
+- Phase 56I checks all three Open rails and the nine remaining Partially Closed records, retains one Closed, twenty Partially Closed, and three Open evidence states, and adds two Published findings plus one held continuation synthesis.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
 - All 326 current Published-support sources are governed by the same current-source release assertion.
@@ -180,7 +182,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only access and continue with Phase 56I remaining Open rails and partial-closure first-pass completion. Phase 56H is complete, release-verified, and owner-only deployed: all six Open rails received another named-source check, eight Partially Closed records received evidence-value decisions, DOE, F-35 Fort Worth, and Hornsdale moved to Partially Closed, and three exact records remain Open. Continue DHS, Manatee, and Gateway while checking the remaining nine Partially Closed records. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only access and continue with Phase 56J evidence-value continuation. Phase 56I is complete and release-verified locally: the first pass now covers all 24 named records, one remains Closed, twenty remain Partially Closed, and DHS, Manatee, and Gateway remain Open. Order the twenty partial continuation rules by likely evidence gain while continuing the three exact Open rails. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -279,7 +281,7 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 55X: Local Implementation Dossiers
+Phase 56I: Remaining Open Rails And Partial-Closure First-Pass Completion
 ```
 
 Key files:
@@ -364,12 +366,13 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 56I remaining Open rails and partial-closure first-pass completion
+Phase 56J evidence-value continuation queue
 ```
 
 Proceed by:
 
-- continue the three Open exact-record rails under their Phase 56H continuation rules,
+- continue the three Open exact-record rails under their Phase 56I continuation rules,
+- order the twenty Partially Closed records by likely evidence gain and acquire them in bounded batches,
 - complete the first pass through the remaining nine Partially Closed records in evidence-value order,
 - tie every acquisition to its existing coverage ID and reopening rule,
 - execute bounded record batches across agencies, production lines, and battery assets,
@@ -459,16 +462,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 56G operating-record acquisition and closure batch two.
+Phase 56I remaining Open rails and partial-closure first-pass completion.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 56H candidate: package 0.2.0-dev, 534 public sources, 150 first-pass-triaged private candidates, 272 signals, 17 topics, 36 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,299 generated site pages, 208 Published signals, 13 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 17 research collections, 369 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, and 17-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 363 Manual Review and 171 Probe Ready records.
+v0.2 Phase 56I candidate: package 0.2.0-dev, 537 public sources, 150 first-pass-triaged private candidates, 275 signals, 17 topics, 37 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,319 generated site pages, 210 Published signals, 14 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 18 research collections, 381 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, and 15-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 365 Manual Review and 172 Probe Ready records.
 
 Next decision gate:
-Preserve owner-only Sites access and begin Phase 56I. Continue DHS, Manatee, and Gateway while checking Current Applications, Island Components, Monaghan Medical, United, Southwest, Delta, American, Alaska, and JetBlue in evidence-value order. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Do not infer causation or create rankings, composite scores, or readiness scores. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve owner-only Sites access and begin Phase 56J. Order the twenty Partially Closed continuation rules by likely evidence gain while continuing DHS, Manatee, and Gateway. Require a genuinely new record before changing closure state or publishing a new finding. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Do not infer causation or create rankings, composite scores, or readiness scores. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

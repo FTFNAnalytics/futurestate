@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: 24 entities now carry vertical evidence layers, one-record coverage decisions, repeated acquisition results, and bounded partial-closure deepening while identity, compatibility, attribution, validation status, denominator breaks, and continuation rules remain attached.",
+  "summary": "A comparison and inference protocol: 24 entities now carry vertical evidence layers, coverage decisions, repeated acquisition results, and a completed first pass through every remaining closure state while identity, compatibility, attribution, validation status, denominator breaks, and continuation rules remain attached.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -230,7 +230,10 @@
     "source-56h-dot-recommendation-dashboard-2026",
     "source-56h-moss-landing-cpuc-investigation-status-2026",
     "source-56h-gao-weapon-systems-2026",
-    "source-56h-dalrymple-aemo-constraint-report-2026"
+    "source-56h-dalrymple-aemo-constraint-report-2026",
+    "source-56i-eia923-may2026-release",
+    "source-56i-gateway-epa-site-profile-2026",
+    "source-56i-monaghan-excelsior-q1-2026"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -339,7 +342,9 @@
     "signal-56h-doe-fy2025-cyber-result",
     "signal-56h-f35-delivery-capability-advance",
     "signal-56h-hornsdale-final-operating-record",
-    "signal-56h-dalrymple-constraint-event"
+    "signal-56h-dalrymple-constraint-event",
+    "signal-56i-eia923-monthly-operating-rail",
+    "signal-56i-monaghan-program-commitment"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -488,6 +493,12 @@
       "label": "Fourteen acquisition and deepening decisions",
       "node_type": "Signal",
       "note": "DOE, F-35, and Hornsdale advance to Partially Closed; three exact rails remain Open and eight partial records deepen."
+    },
+    {
+      "id": "node-phase56i-first-pass",
+      "label": "Twelve remaining first-pass decisions",
+      "node_type": "Signal",
+      "note": "Three Open and nine Partially Closed records retain their states; two genuinely new bounded denominators publish."
     }
   ],
   "links": [
@@ -693,6 +704,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Acquisition and evidence-state movement do not measure performance and support no causal inference, ranking, or score."
+    },
+    {
+      "from": "node-phase56i-first-pass",
+      "to": "node-phase56h-acquisition",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "Phase 56I continues the three remaining Open rails and completes the nine-record partial first pass."
+    },
+    {
+      "from": "node-phase56i-first-pass",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Monthly releases, program commitments, project descriptions, and current source checks retain annual, interval, execution, restoration, and outcome gaps."
+    },
+    {
+      "from": "node-phase56i-first-pass",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "First-pass completion and evidence availability do not measure performance and support no causal inference, ranking, or score."
     }
   ],
   "what_this_map_supports": [
@@ -711,7 +743,8 @@
     "Independent, regulator, operator, company, and carrier-attributed records can remain visibly distinct inside one entity dossier.",
     "A one-record-per-entity acquisition queue with explicit closure states and reopening rules.",
     "A dated acquisition trail showing which named reopening conditions did and did not change evidence state.",
-    "A dated trail showing three bounded Open-to-Partially-Closed advances and eight partial-record deepenings."
+    "A dated trail showing three bounded Open-to-Partially-Closed advances and eight partial-record deepenings.",
+    "A dated first-pass decision for all three remaining Open rails and all nine previously unreviewed Partially Closed records."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -728,7 +761,8 @@
     "It does not convert vertical evidence depth into a causal effect, composite, or readiness score.",
     "That a Closed, Partially Closed, or Open coverage state measures entity performance, readiness, safety, quality, value, or relative standing.",
     "That a current index, governance audit, cumulative total, capacity record, queue entry, or historical extract closes a different operating question.",
-    "That a management letter, annual total, cumulative fleet count, recommendation state, ongoing investigation, or constraint event is a complete operating or outcome record."
+    "That a management letter, annual total, cumulative fleet count, recommendation state, ongoing investigation, or constraint event is a complete operating or outcome record.",
+    "That first-pass completion, a monthly table, a program commitment, a project plan, or a current catalog check is a complete operating or outcome record."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -765,6 +799,11 @@
     "Reopen when CPUC publishes the formal investigation or audit report, facility response, or closure notice.",
     "Reopen when GAO or the Air Force publishes another program profile or a monthly line delivery and acceptance table.",
     "Reopen when ElectraNet, AGL, AEMO, ARENA, or the South Australian regulator publishes dated islanding activations or an asset-level operating series.",
-    "Reopen when the Air Force, DCMA, GAO, or Boeing publishes realized post-restart delivery and acceptance dates."
+    "Reopen when the Air Force, DCMA, GAO, or Boeing publishes realized post-restart delivery and acceptance dates.",
+    "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes asset-specific operating data with a declared interval and availability denominator.",
+    "Reopen when a dated company, MEP, grant, or customer record reports repeat same-line input and output under a declared window.",
+    "Reopen when SCIDA, the company, a registrar, or a customer publishes a dated realized outcome for the Hauppauge operation.",
+    "Reopen when ESD reports certification or credit issuance, or FDA/company records expose units distributed and a compatible production window.",
+    "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables."
   ]
 }
