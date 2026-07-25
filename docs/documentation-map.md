@@ -1551,6 +1551,7 @@ Purpose:
 - Record the completed Phase 56G seven-record acquisition batch, one Open-to-Partially-Closed transition, two signal decisions, 10-file archive, Research Watch 011, owner-only deployment receipt, continuation rules, and Phase 56H handoff.
 - Record the completed Phase 56H fourteen-record acquisition and deepening batch, three Open-to-Partially-Closed transitions, five signal decisions, 17-file archive, Research Watch 012, owner-only deployment receipt, continuation rules, and Phase 56I handoff.
 - Record the completed Phase 56I twelve-decision first-pass batch, three signal decisions, 15-file archive, Research Watch 013, unchanged one Closed, twenty Partially Closed, and three Open states, owner-only deployment receipt, continuation rules, and Phase 56J handoff.
+- Record the completed Phase 56J ordered continuation queue, five-record first batch, one Open-to-Partially-Closed transition, five signal decisions, eight-file archive, Research Watch 014, continuation rules, and Phase 56K handoff.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 
@@ -1574,6 +1575,7 @@ Primary file:
 - `docs/work-packages/phase-56g-operating-record-acquisition-closure-batch-two.md` for the completed seven-rail acquisition pass, one bounded closure transition, dated continuation rules, two publication decisions, archive contract, validation and deployment evidence, and Phase 56H handoff
 - `docs/work-packages/phase-56h-open-rail-acquisition-partial-closure-deepening.md` for the completed fourteen-decision pass, three bounded closure transitions, partial-record deepening, five publication decisions, archive contract, validation evidence, and Phase 56I handoff
 - `docs/work-packages/phase-56i-remaining-open-rails-partial-first-pass.md` for the completed twelve-decision first pass, unchanged closure-state ledger, three publication decisions, archive contract, validation and owner-only deployment evidence, continuation rules, and Phase 56J handoff
+- `docs/work-packages/phase-56j-evidence-value-continuation-queue.md` for the ordered twenty-record continuation queue, five-record first batch, one bounded closure transition, publication decisions, archive contract, validation and owner-only deployment evidence, and Phase 56K handoff
 
 Update when:
 
@@ -1595,6 +1597,7 @@ Update when:
 - the Phase 56G operating-record acquisition queue, record-level publication decisions, or reopening-rule outcomes change,
 - the Phase 56H open-rail or partial-closure acquisition priorities change,
 - the Phase 56I remaining Open rails, first-pass results, archive, deployment receipt, or Phase 56J continuation priorities change,
+- the Phase 56J queue order, batch results, closure state, archive, deployment receipt, or Phase 56K priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

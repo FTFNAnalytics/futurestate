@@ -380,12 +380,13 @@ Recommended active schedule:
 | Completed | Phase 56F | 24-entity coverage ledger, one Closed, sixteen Partially Closed, seven Open, Research Watch 010, 27-file archive, and owner-only Sites version 31 |
 | Completed | Phase 56G | seven operating-record acquisition checks, one Open-to-Partially-Closed transition, Research Watch 011, and owner-only Sites version 32 |
 | Completed | Phase 56H | fourteen evidence decisions, three Open-to-Partially-Closed transitions, Research Watch 012, 17-file archive, and owner-only Sites version 33 |
-| Current content gate | Phase 56I | continue the three Open rails and complete the first pass through the remaining nine Partially Closed records |
+| Completed locally; deployment pending | Phase 56J | ordered continuation queue, five-record first batch, one bounded Manatee transition, and Research Watch 014 |
+| Current content gate | Phase 56K | continue DHS and Gateway, then pursue Moss Landing, VA, F-35, F-15EX, and DOT |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build, owner-only preview, and Phases 55S-56H aggressive expansion are complete and owner-only deployed through Sites version 33. Phase 56H checked all six Open rails, added evidence-value decisions for eight Partially Closed records, and advanced DOE, F-35 Fort Worth, and Hornsdale to Partially Closed. The ledger now stands at one Closed, twenty Partially Closed, and three Open evidence states. The current non-public content gate is Phase 56I: continue DHS, Manatee, and Gateway while completing the first pass through the remaining nine Partially Closed records. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete through Sites version 34, and Phase 56J is complete and release-verified locally. Phase 56J ordered all twenty original Partially Closed continuation rules, acquired five current records, and advanced only Manatee to Partially Closed on exact plant-level EIA-923 monthly rows. The ledger now stands at one Closed, twenty-one Partially Closed, and two Open evidence states. The current non-public content gate is Phase 56K: continue DHS and Gateway, then pursue Moss Landing, VA, F-35 Fort Worth, F-15EX St. Louis, and DOT. Phase 55H, Phase 55R, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1058,7 +1059,7 @@ Local result:
 - three source profiles, twelve evidence documents, two Published signals, one held synthesis, Research Watch 013, and a 15-file archive passed the 1,319-page local release contract;
 - local content commit `2760edee242f398850dcc9ef2aa7660830caf9af` produced exact private packaged source commit `41497faeebdb1d15b4fa26ceb05d5e3b7300bea5`, deployed as owner-only Sites version 34 in deployment `appgdep_6a646c5539708191a598952968b74f53` with one allowed owner and no groups.
 
-### Phase 56J: Evidence-Value Continuation Queue - Current Content Gate
+### Phase 56J: Evidence-Value Continuation Queue - Complete Locally; Owner-Only Deployment Pending
 
 Goal: keep expanding the 24-entity operating corpus after the completed first pass by pursuing the strongest named next record for each Partially Closed decision while continuing the three exact Open rails.
 
@@ -1076,6 +1077,38 @@ Exit criteria:
 - each new record improves the selected evidence question rather than adding broad context;
 - closure changes require the exact selected record and receive independent publication review;
 - incompatible units, periods, routes, methods, and attribution remain explicit;
+- no ranking, composite, readiness score, or causal claim is created;
+- the full local release and owner-only deployment gates pass.
+
+Local result:
+
+- all twenty original Partially Closed continuation rules now have a deterministic evidence-value acquisition order that does not rank entities;
+- DHS, Manatee, and Gateway remained active while five current records were acquired for Manatee, Dalrymple, Hornsdale, KC-46 Everett, and DOE/FERC;
+- exact EIA-923 plant 60014 monthly rows move Manatee from Open to Partially Closed while interval availability remains unresolved;
+- four bounded signals publish and the DOE/FERC component-scope record remains `In Review`;
+- five source profiles, five research documents, Research Watch 014, one collection, one update, two machine-readable ledgers, and an eight-file archive pass the 1,336-page local release contract;
+- the evidence ledger now stands at one Closed, twenty-one Partially Closed, and two Open;
+- owner-only deployment remains pending under the existing one-owner, no-group access policy.
+
+### Phase 56K: High-Value Continuation Batch Two - Current Content Gate
+
+Goal: continue the two exact Open rails and acquire the next current A-band records whose denominators can materially improve evidence state.
+
+Priority rails:
+
+- continue DHS FY 2025 enterprise FISMA and Gateway final investigation plus full restoration;
+- pursue Moss Landing final regulator findings or corrective-action closure;
+- pursue VA FY 2025 FISMA or iFAMS recommendation closure;
+- pursue current F-35 due, accepted, and capability-state output;
+- pursue realized F-15EX delivery and acceptance;
+- pursue the FY 2026 DOT review result or dated recommendation closure;
+- keep NASA, HHS, realized manufacturer outcomes, carrier full-year releases, and scheduled tasks as bounded inserts.
+
+Exit criteria:
+
+- every acquisition is tied to its existing coverage ID and reopening rule;
+- closure changes use the exact selected record under a declared compatible denominator;
+- component, plan, event, annual, and adjacent records are not substituted for the selected evidence question;
 - no ranking, composite, readiness score, or causal claim is created;
 - the full local release and owner-only deployment gates pass.
 

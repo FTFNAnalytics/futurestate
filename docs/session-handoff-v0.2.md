@@ -1,26 +1,26 @@
 # FTFN v0.2 Session Handoff Plan
 
-Date: 2026-07-24
+Date: 2026-07-25
 
 Use this document to restart FTFN in a new Codex session without reconstructing the project from chat history.
 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 56I remaining Open rails and partial-closure first-pass completion
+Latest completed work: Phase 56J evidence-value continuation queue batch one
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 1,319 generated site pages
-Content: 537 sources, 275 signals, 17 topics, 5 local systems, 18 research collections / 381 research documents
-Publication: 210 Published signals, 65 In Review signals, 14 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
-Trust/data: 37 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, and 15-file research archives
+Build: 1,336 generated site pages
+Content: 542 sources, 280 signals, 17 topics, 5 local systems, 19 research collections / 386 research documents
+Publication: 214 Published signals, 66 In Review signals, 15 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
+Trust/data: 38 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, 15-file, and 8-file research archives
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 34 is the active hosted Phase 56I checkpoint; one allowed owner and no groups
+Deployment: owner-only Sites version 34 remains active while Phase 56J awaits deployment; one allowed owner and no groups
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 365 Manual Review, 172 Probe Ready; 14 Strong coverage lanes
-Next content gate: Phase 56J evidence-value continuation queue; six dated inserts remain scheduled
+Source health: 367 Manual Review, 175 Probe Ready; 14 Strong coverage lanes
+Next content gate: Phase 56K high-value continuation batch two; six dated inserts remain scheduled
 ```
 
 ## Read First
@@ -123,6 +123,7 @@ The approved preview sequence is complete:
 68. Matched local content commit `5878f83a7740827ad1ee4ff0b4d3362eb0e798f4` to exact private source projection `85eb6ab5e8fcd5530a507aebc2dc5b53091575cf`, deployed the verified Phase 56H package as owner-only Sites version 33 in deployment `appgdep_6a6453f24d3481918d4a7f4ab6aaa3ee`, and confirmed custom access with one allowed owner and no groups.
 69. Completed Phase 56I locally: checked the three remaining Open rails and all nine Partially Closed records not selected in Phase 56H, retained one Closed, twenty Partially Closed, and three Open evidence states, added three source profiles, twelve evidence documents, three signal decisions, Research Watch 013, two machine-readable ledgers, one collection, and a 15-file archive. Verified 1,319 pages, 537 sources, 275 signals, 210 Published, 65 In Review, 37 updates, eighteen collections, 381 research documents, and 328 current Published-support sources.
 70. Matched local content commit `2760edee242f398850dcc9ef2aa7660830caf9af` to exact private packaged source commit `41497faeebdb1d15b4fa26ceb05d5e3b7300bea5`, deployed the verified Phase 56I package as owner-only Sites version 34 in deployment `appgdep_6a646c5539708191a598952968b74f53`, and confirmed custom access with one allowed owner and no groups.
+71. Completed Phase 56J locally: ordered all twenty original Partially Closed continuation rules, continued the three Open rails, acquired five current primary records, moved only Manatee to Partially Closed, added five source profiles, five research documents, five signal decisions, Research Watch 014, two machine-readable ledgers, one collection, and an eight-file archive. Verified 1,336 pages, 542 sources, 280 signals, 214 Published, 66 In Review, 38 updates, nineteen collections, 386 research documents, and 332 current Published-support sources.
 
 ## Required Stop Points
 
@@ -176,9 +177,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed local work is Phase 56I. The current candidate should be 0.2.0-dev on codex/phase51-content with 537 sources, 275 signals, 210 Published signals, 65 In Review signals, five local systems, fourteen Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 37 public updates, five JSON exports, 1,319 generated site pages, eighteen research collections, 381 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, and 15-file download archives. Public access and DNS remain unchanged.
+The latest completed local work is Phase 56J. The current candidate should be 0.2.0-dev on codex/phase51-content with 542 sources, 280 signals, 214 Published signals, 66 In Review signals, five local systems, fifteen Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 38 public updates, five JSON exports, 1,336 generated site pages, nineteen research collections, 386 research documents, and verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, 15-file, and eight-file download archives. Public access and DNS remain unchanged.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve owner-only Sites access and stop before changing access or attaching a domain. Phase 56I is complete, release-verified, and owner-only deployed; begin Phase 56J by ordering all twenty Partially Closed continuation rules by likely evidence gain while keeping the three Open exact rails—DHS FY 2025 FISMA, Manatee interval dispatch and availability, and Gateway final investigation and full restoration—active. Require a genuinely new named record before calling any finding new or moving a closure state. Tie every acquisition to an existing coverage ID and continuation rule. Treat the August 1 Toronto, August 10 DARPA Lift, August 15 Space Coast license, September 22 Arizona wastewater, October 1 Loudoun standards, and January 15 Nevada delivery tasks as bounded inserts rather than pauses. Do not infer causation, create rankings, or create composite or readiness scores. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve owner-only Sites access and stop before changing access or attaching a domain. Phase 56J is complete and release-verified locally; begin Phase 56K by continuing the DHS FY 2025 enterprise FISMA and Gateway final-investigation/full-restoration rails, then pursue Moss Landing final regulator closure, VA FISMA or iFAMS recommendation closure, current F-35 due/accepted/capability output, realized F-15EX delivery and acceptance, and the FY 2026 DOT review result. Require a genuinely new named record before calling any finding new or moving a closure state. Tie every acquisition to an existing coverage ID and continuation rule. Treat the August 1 Toronto, August 10 DARPA Lift, August 15 Space Coast license, September 22 Arizona wastewater, October 1 Loudoun standards, and January 15 Nevada delivery tasks as bounded inserts rather than pauses. Do not infer causation, create rankings, or create composite or readiness scores. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

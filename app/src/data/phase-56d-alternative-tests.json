@@ -47,7 +47,10 @@
       "phase_56h_current_closure_status": "Partially Closed",
       "phase_56h_acquisition_result": "NASA OIG's current open-recommendations rail remains available, but no FY 2026 FISMA evaluation or newly scoped cyber recommendation closure is published on the selected rail.",
       "phase_56h_remaining_gap": "FY 2026 FISMA result, tested-system coverage, incidents, recovery, service effects, and mission outcomes.",
-      "phase_56h_reopening_rule": "Reopen when NASA OIG publishes the FY 2026 FISMA evaluation or recommendation-level cyber closure data with tested-system scope."
+      "phase_56h_reopening_rule": "Reopen when NASA OIG publishes the FY 2026 FISMA evaluation or recommendation-level cyber closure data with tested-system scope.",
+      "phase_56j_queue_lane": "B — periodic official record rails",
+      "phase_56j_acquisition_order": 10,
+      "phase_56j_named_next_record": "FY 2026 FISMA result or recommendation-level cyber closure"
     },
     {
       "test_id": "test-56d-dhs-repeat-control-test",
@@ -110,7 +113,10 @@
       "phase_56i_current_closure_status": "Open",
       "phase_56i_acquisition_result": "The DHS OIG report index checked on July 25, 2026 still exposes the FY 2024 enterprise information-security evaluation but does not list the selected FY 2025 enterprise evaluation.",
       "phase_56i_remaining_gap": "Released FY 2025 FISMA evaluation, component findings, closure dates, endpoint and cloud coverage, incidents, recovery, and service effects.",
-      "phase_56i_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome."
+      "phase_56i_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome.",
+      "phase_56j_queue_lane": "Open rail",
+      "phase_56j_acquisition_order": null,
+      "phase_56j_named_next_record": "Released FY 2025 enterprise FISMA evaluation"
     },
     {
       "test_id": "test-56d-hhs-repeat-control-test",
@@ -157,7 +163,10 @@
       "phase_56h_current_closure_status": "Partially Closed",
       "phase_56h_acquisition_result": "The current HHS OIG tracker lists all 10 recommendations associated with OAS-25-18-041 as Open and Unimplemented, with the next update expected in September 2026.",
       "phase_56h_remaining_gap": "Implemented corrective actions, closed recommendations, component control tests, incidents, recovery, affected services, and health-program outcomes.",
-      "phase_56h_reopening_rule": "Reopen when the HHS OIG tracker changes a FY 2025 recommendation status or a component control test is published."
+      "phase_56h_reopening_rule": "Reopen when the HHS OIG tracker changes a FY 2025 recommendation status or a component control test is published.",
+      "phase_56j_queue_lane": "B — periodic official record rails",
+      "phase_56j_acquisition_order": 11,
+      "phase_56j_named_next_record": "FY 2025 recommendation status change or component control test"
     },
     {
       "test_id": "test-56d-current-applications-repeat-test",
@@ -205,7 +214,10 @@
       "phase_56i_current_closure_status": "Partially Closed",
       "phase_56i_acquisition_result": "The NIST MEP record pairs an approximately 60-person current workforce description with attributed results of production rising from 40 to 105 units per day, lead time falling 50 percent, and WIP falling from 105 to 5 units.",
       "phase_56i_remaining_gap": "Repeat same-line output, labor hours, yield, scrap, downtime, cost, delivery, demand, and dated capital execution under a compatible window.",
-      "phase_56i_reopening_rule": "Reopen when a dated company, MEP, grant, or customer record reports repeat same-line input and output under a declared window."
+      "phase_56i_reopening_rule": "Reopen when a dated company, MEP, grant, or customer record reports repeat same-line input and output under a declared window.",
+      "phase_56j_queue_lane": "C — named realized-outcome rails",
+      "phase_56j_acquisition_order": 12,
+      "phase_56j_named_next_record": "Repeat same-line input and output under one declared period"
     },
     {
       "test_id": "test-56d-island-components-repeat-test",
@@ -253,7 +265,10 @@
       "phase_56i_current_closure_status": "Partially Closed",
       "phase_56i_acquisition_result": "The selected SCIDA record defines a $2 million relocation, a 14,200-square-foot Hauppauge facility, and fourteen planned engineering and manufacturing positions.",
       "phase_56i_remaining_gap": "Realized jobs, completed investment, output, labor hours, WIP, yield, defects, downtime, delivery, demand, and independent surveillance findings.",
-      "phase_56i_reopening_rule": "Reopen when SCIDA, the company, a registrar, or a customer publishes a dated realized outcome for the Hauppauge operation."
+      "phase_56i_reopening_rule": "Reopen when SCIDA, the company, a registrar, or a customer publishes a dated realized outcome for the Hauppauge operation.",
+      "phase_56j_queue_lane": "C — named realized-outcome rails",
+      "phase_56j_acquisition_order": 13,
+      "phase_56j_named_next_record": "Realized Hauppauge jobs, investment, or repeat operating output"
     },
     {
       "test_id": "test-56d-monaghan-medical-repeat-test",
@@ -300,7 +315,10 @@
       "phase_56i_current_closure_status": "Partially Closed",
       "phase_56i_acquisition_result": "The March 2026 Excelsior report records Monaghan with a 72-job employment base, ten committed net new jobs, $9.575 million of committed investment, and up to $340,000 in tax credits.",
       "phase_56i_remaining_gap": "Investment execution, credit certification, facility and machinery operation, realized jobs, units distributed, same-line output, yield, scrap, delivery, and patient outcomes.",
-      "phase_56i_reopening_rule": "Reopen when ESD reports certification or credit issuance, or FDA/company records expose units distributed and a compatible production window."
+      "phase_56i_reopening_rule": "Reopen when ESD reports certification or credit issuance, or FDA/company records expose units distributed and a compatible production window.",
+      "phase_56j_queue_lane": "C — named realized-outcome rails",
+      "phase_56j_acquisition_order": 14,
+      "phase_56j_named_next_record": "Certified investment, realized jobs, or units under a compatible window"
     },
     {
       "test_id": "test-56d-moss-landing-repeat-test",
@@ -347,7 +365,10 @@
       "phase_56h_current_closure_status": "Partially Closed",
       "phase_56h_acquisition_result": "CPUC's July 14, 2026 update says its Generation and Energy Storage Section is conducting an ongoing investigation into the January 16, 2025 Moss Landing incident after an initial January 22, 2025 site visit.",
       "phase_56h_remaining_gap": "Final regulator findings, facility response, corrective-action acceptance, verified implementation, restored operation, and later safety performance.",
-      "phase_56h_reopening_rule": "Reopen when CPUC publishes the formal investigation or audit report, facility response, or closure notice."
+      "phase_56h_reopening_rule": "Reopen when CPUC publishes the formal investigation or audit report, facility response, or closure notice.",
+      "phase_56j_queue_lane": "A — current official record rails",
+      "phase_56j_acquisition_order": 1,
+      "phase_56j_named_next_record": "Final regulator investigation and corrective-action closure"
     },
     {
       "test_id": "test-56d-manatee-repeat-test",
@@ -410,7 +431,18 @@
       "phase_56i_current_closure_status": "Open",
       "phase_56i_acquisition_result": "EIA's July 23 release extends the official EIA-923 rail through May 2026 and describes monthly and annual plant- and prime-mover-level generation data.",
       "phase_56i_remaining_gap": "Interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer cost.",
-      "phase_56i_reopening_rule": "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes asset-specific operating data with a declared interval and availability denominator."
+      "phase_56i_reopening_rule": "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes asset-specific operating data with a declared interval and availability denominator.",
+      "phase_56j_queue_lane": "Open rail",
+      "phase_56j_acquisition_order": null,
+      "phase_56j_named_next_record": "Asset-specific operating data with interval dispatch and availability",
+      "phase_56j_acquisition_id": "acquisition-56j-manatee-eia923-plant-operation",
+      "phase_56j_checked_source_id": "source-56j-manatee-eia923-plant-60014",
+      "phase_56j_checked_date": "2026-07-25",
+      "phase_56j_prior_closure_status": "Open",
+      "phase_56j_current_closure_status": "Partially Closed",
+      "phase_56j_acquisition_result": "The EIA-923 energy-storage worksheet identifies plant 60014 as Manatee Solar Energy Center. Its battery row reports January-May 2026 monthly charging-energy quantities of 7,082, 7,188, 10,333, 11,364, and 9,375 MWh; gross generation of 5,755, 4,778, 9,005, 9,439, and 8,751 MWh; and reported net generation of -1,327, -2,140, -1,328, -1,924, and -624 MWh.",
+      "phase_56j_remaining_gap": "Interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, revisions, and customer cost.",
+      "phase_56j_reopening_rule": "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes plant 60014 interval dispatch or availability under a declared denominator."
     },
     {
       "test_id": "test-56d-gateway-repeat-test",
@@ -473,7 +505,10 @@
       "phase_56i_current_closure_status": "Open",
       "phase_56i_acquisition_result": "EPA's current Gateway site profile says the root cause remains under investigation and that cleanup, environmental monitoring, battery handling, and progress reporting remain under agency oversight.",
       "phase_56i_remaining_gap": "Final investigation, full return to service, contracted-capacity restoration, availability, dispatch, duration, degradation, revenue, and reliability effects.",
-      "phase_56i_reopening_rule": "Reopen when CPUC, EPA, CAISO, SCE, or the operator publishes final findings or a full-capacity operating record."
+      "phase_56i_reopening_rule": "Reopen when CPUC, EPA, CAISO, SCE, or the operator publishes final findings or a full-capacity operating record.",
+      "phase_56j_queue_lane": "Open rail",
+      "phase_56j_acquisition_order": null,
+      "phase_56j_named_next_record": "Final investigation and full contracted-capacity restoration"
     },
     {
       "test_id": "test-56d-united-repeat-service-test",
@@ -521,7 +556,10 @@
       "phase_56i_current_closure_status": "Partially Closed",
       "phase_56i_acquisition_result": "DOT's May 2026 operating-carrier table records United Airlines on-time arrivals at 79.5 percent across 130 reported airports.",
       "phase_56i_remaining_gap": "2026 full-year operations, delay causes, route and airport controls, complaints, accessibility, commitment compliance, and revisions.",
-      "phase_56i_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables."
+      "phase_56i_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables.",
+      "phase_56j_queue_lane": "D — shared full-year carrier release gate",
+      "phase_56j_acquisition_order": 15,
+      "phase_56j_named_next_record": "2026 full-year operating denominator and cause-controlled outcomes"
     },
     {
       "test_id": "test-56d-southwest-repeat-service-test",
@@ -569,7 +607,10 @@
       "phase_56i_current_closure_status": "Partially Closed",
       "phase_56i_acquisition_result": "DOT's May 2026 operating-carrier table records Southwest Airlines on-time arrivals at 71.9 percent across 108 reported airports.",
       "phase_56i_remaining_gap": "2026 full-year operations, delay causes, route and airport controls, complaints, accessibility, commitment compliance, and revisions.",
-      "phase_56i_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables."
+      "phase_56i_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables.",
+      "phase_56j_queue_lane": "D — shared full-year carrier release gate",
+      "phase_56j_acquisition_order": 16,
+      "phase_56j_named_next_record": "2026 full-year operating denominator and cause-controlled outcomes"
     },
     {
       "test_id": "test-56d-delta-repeat-service-test",
@@ -617,11 +658,15 @@
       "phase_56i_current_closure_status": "Partially Closed",
       "phase_56i_acquisition_result": "DOT's May 2026 operating-carrier table records Delta Air Lines on-time arrivals at 81.0 percent across 140 reported airports.",
       "phase_56i_remaining_gap": "2026 full-year operations, delay causes, route and airport controls, complaints, accessibility, commitment compliance, and revisions.",
-      "phase_56i_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables."
+      "phase_56i_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables.",
+      "phase_56j_queue_lane": "D — shared full-year carrier release gate",
+      "phase_56j_acquisition_order": 17,
+      "phase_56j_named_next_record": "2026 full-year operating denominator and cause-controlled outcomes"
     }
   ],
   "phase_56f_coverage_ledger": "phase-56f-cross-cohort-coverage.json",
   "phase_56g_acquisition_ledger": "phase-56g-operating-record-acquisition.json",
   "phase_56h_acquisition_ledger": "phase-56h-acquisition-and-deepening.json",
-  "phase_56i_acquisition_ledger": "phase-56i-remaining-rails-first-pass.json"
+  "phase_56i_acquisition_ledger": "phase-56i-remaining-rails-first-pass.json",
+  "phase_56j_acquisition_ledger": "phase-56j-evidence-value-continuation.json"
 }

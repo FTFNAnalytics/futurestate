@@ -162,9 +162,11 @@ What is now stable:
 - The verified Phase 56I local contract is 1,319 pages, 537 sources, 275 signals, 210 Published signals, 65 In Review signals, 328 current Published-support sources, twenty-one briefings, seven maps, eighteen research collections, 381 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 37 updates, and five public-data exports.
 - Phase 56I checks all three Open rails and the nine remaining Partially Closed records, retains one Closed, twenty Partially Closed, and three Open evidence states, and adds two Published findings plus one held continuation synthesis.
 - Phase 56I local content commit `2760edee242f398850dcc9ef2aa7660830caf9af` produced exact private packaged source commit `41497faeebdb1d15b4fa26ceb05d5e3b7300bea5`, deployed as owner-only Sites version 34 in deployment `appgdep_6a646c5539708191a598952968b74f53` with one allowed owner and no groups.
+- The verified Phase 56J local contract is 1,336 pages, 542 sources, 280 signals, 214 Published signals, 66 In Review signals, 332 current Published-support sources, twenty-two briefings, seven maps, nineteen research collections, 386 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 38 updates, and five public-data exports.
+- Phase 56J orders all twenty original Partially Closed continuation rules, acquires five current records, moves only Manatee to Partially Closed, and leaves one Closed, twenty-one Partially Closed, and two Open evidence states.
 - Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
 - Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
-- All 326 current Published-support sources are governed by the same current-source release assertion.
+- All 332 current Published-support sources are governed by the same current-source release assertion.
 - The compact header defect was repaired: every brand and primary-navigation link now has at least a 44-pixel target.
 - `npm run verify:release` and `deployment/ftfn-v0.2-build.json` preserve the repeatable v0.2 release contract.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
@@ -183,27 +185,27 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only access and continue with Phase 56J evidence-value continuation. Phase 56I is complete, release-verified, and owner-only deployed: the first pass now covers all 24 named records, one remains Closed, twenty remain Partially Closed, and DHS, Manatee, and Gateway remain Open. Order the twenty partial continuation rules by likely evidence gain while continuing the three exact Open rails. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only access and continue with Phase 56K high-value continuation batch two. Phase 56J is complete and release-verified locally: all twenty original Partially Closed continuation rules are ordered, five current records were acquired, and exact EIA-923 plant rows moved Manatee to Partially Closed. The ledger now contains one Closed, twenty-one Partially Closed, and two Open records. Continue DHS and Gateway, then pursue Moss Landing, VA, F-35 Fort Worth, F-15EX St. Louis, and DOT. All six scheduled checks are bounded inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 267 signal records,
-- 523 source records,
+- 280 signal records,
+- 542 source records,
 - 17 topic records,
 - 5 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 19 briefings: 12 Published and 7 In Review,
+- 22 briefings: 15 Published and 7 In Review,
 - 16 evidence gap records,
 - 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56G reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 16 research collections with 355 document records,
+- 19 research collections with 386 document records,
 - 15 reader pathways across 19 existing Atlas surfaces,
-- 35 public update-log entries.
+- 38 public update-log entries.
 
-Two hundred and four official-source-backed signals are now `Published`.
+Two hundred and fourteen official-source-backed signals are now `Published`.
 
 Phase 55M added thirteen bounded records to the prior 25-signal Published set:
 
@@ -282,7 +284,7 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 56I: Remaining Open Rails And Partial-Closure First-Pass Completion
+Phase 56J: Evidence-Value Continuation Queue Batch One
 ```
 
 Key files:
@@ -311,6 +313,7 @@ Key files:
 - `docs/work-packages/phase-55t-thin-topic-corpus-build.md`
 - `docs/work-packages/phase-55u-local-systems-network.md`
 - `docs/work-packages/phase-55x-local-implementation-dossiers.md`
+- `docs/work-packages/phase-56j-evidence-value-continuation-queue.md`
 - `docs/work-packages/phase-55l-implementation-evidence-conversion.md`
 - `docs/work-packages/phase-55n-implementation-outcomes-local-conversion.md`
 - `docs/release-qa-v0.2.md`
@@ -367,14 +370,13 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 56J evidence-value continuation queue
+Phase 56K high-value continuation batch two
 ```
 
 Proceed by:
 
-- continue the three Open exact-record rails under their Phase 56I continuation rules,
-- order the twenty Partially Closed records by likely evidence gain and acquire them in bounded batches,
-- complete the first pass through the remaining nine Partially Closed records in evidence-value order,
+- continue the two Open exact-record rails under their Phase 56J continuation rules,
+- pursue Moss Landing, VA, F-35 Fort Worth, F-15EX St. Louis, and DOT in current evidence-value order,
 - tie every acquisition to its existing coverage ID and reopening rule,
 - execute bounded record batches across agencies, production lines, and battery assets,
 - distinguish regulator, auditor, company, operator, carrier, and third-party attribution,
@@ -463,16 +465,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 56I remaining Open rails and partial-closure first-pass completion.
+Phase 56J evidence-value continuation queue batch one.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 56I candidate: package 0.2.0-dev, 537 public sources, 150 first-pass-triaged private candidates, 275 signals, 17 topics, 37 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,319 generated site pages, 210 Published signals, 14 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 18 research collections, 381 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, and 15-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 365 Manual Review and 172 Probe Ready records.
+v0.2 Phase 56J candidate: package 0.2.0-dev, 542 public sources, 150 first-pass-triaged private candidates, 280 signals, 17 topics, 38 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,336 generated site pages, 214 Published signals, 15 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 19 research collections, 386 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, 15-file, and 8-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 367 Manual Review and 175 Probe Ready records.
 
 Next decision gate:
-Preserve owner-only Sites access and begin Phase 56J. Order the twenty Partially Closed continuation rules by likely evidence gain while continuing DHS, Manatee, and Gateway. Require a genuinely new record before changing closure state or publishing a new finding. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Do not infer causation or create rankings, composite scores, or readiness scores. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve owner-only Sites access and begin Phase 56K. Continue DHS FY 2025 enterprise FISMA and Gateway final investigation plus full restoration, then pursue Moss Landing final regulator closure, VA FISMA or iFAMS recommendation closure, current F-35 due/accepted/capability output, realized F-15EX delivery and acceptance, and the FY 2026 DOT review result. Require a genuinely new record before changing closure state or publishing a new finding. Treat all six scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Do not infer causation or create rankings, composite scores, or readiness scores. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

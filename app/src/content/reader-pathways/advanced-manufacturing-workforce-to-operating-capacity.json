@@ -31,7 +31,9 @@
     "Phase 56H checked 3 named records in this pathway against existing coverage IDs and continuation rules.",
     "1 selected evidence state advances from Open to Partially Closed; the remaining denominators stay explicit.",
     "Phase 56I completes 3 first-pass decisions in this pathway while retaining each coverage ID and continuation rule.",
-    "No selected closure state changes; genuinely new denominators publish and repeated evidence remains referenced rather than relabeled as a new finding."
+    "No selected closure state changes; genuinely new denominators publish and repeated evidence remains referenced rather than relabeled as a new finding.",
+    "Phase 56J adds 1 named continuation decision to this pathway under the ordered evidence-value queue.",
+    "Acquisition order describes evidence opportunity and does not rank entities, performance, safety, quality, readiness, or value."
   ],
   "primary_topics": [
     "Advanced Manufacturing",
@@ -80,7 +82,8 @@
     "signal-56e-f15ex-st-louis-line-alternative-test",
     "signal-56f-manufacturing-coverage-closure",
     "signal-56h-f35-delivery-capability-advance",
-    "signal-56i-monaghan-program-commitment"
+    "signal-56i-monaghan-program-commitment",
+    "signal-56j-kc46-readiness-plan"
   ],
   "source_ids": [
     "source-nist-smart-manufacturing-ai-roadmap-2026",
@@ -151,7 +154,8 @@
     "source-56g-f35-fast-facts-april-2026",
     "source-56h-f35-gao-late-deliveries-2025",
     "source-56h-gao-weapon-systems-2026",
-    "source-56i-monaghan-excelsior-q1-2026"
+    "source-56i-monaghan-excelsior-q1-2026",
+    "source-56j-kc46-readiness-plan-2026"
   ],
   "organization_ids": [
     "org-nist",
@@ -174,7 +178,8 @@
     "briefing-research-watch-010-cross-cohort-coverage",
     "briefing-research-watch-011-operating-record-acquisition",
     "briefing-research-watch-012-acquisition-and-deepening",
-    "briefing-research-watch-013-first-pass-completion"
+    "briefing-research-watch-013-first-pass-completion",
+    "briefing-research-watch-014-evidence-value-continuation"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -194,7 +199,8 @@
     "research-collection-cross-cohort-coverage-missing-record-closure-2010-2026",
     "research-collection-operating-record-acquisition-closure-batch-two-2026",
     "research-collection-open-rail-acquisition-partial-closure-deepening-2026",
-    "research-collection-remaining-open-rails-partial-closure-first-pass-2026"
+    "research-collection-remaining-open-rails-partial-closure-first-pass-2026",
+    "research-collection-evidence-value-continuation-queue-batch-one-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -271,6 +277,11 @@
       "stage": "Phase 56I first-pass completion",
       "current_state": "Every remaining Open and Partially Closed queue item has a dated decision; two genuinely new bounded denominators publish.",
       "boundary": "A first-pass decision, monthly record, program commitment, or current source check is not full closure or entity performance."
+    },
+    {
+      "stage": "Phase 56J evidence-value continuation",
+      "current_state": "Five named records are reviewed; four bounded findings publish, one scope mismatch remains held, and only Manatee changes evidence state.",
+      "boundary": "A monthly row, constraint entry, operator event, official plan, or component audit is not complete performance or a causal result."
     }
   ],
   "evidence_limits": [
@@ -291,7 +302,8 @@
     "Phase 56F closure states apply to one named missing record per entity and cannot be converted into a ranking, composite, readiness score, or causal claim.",
     "Phase 56G acquisition outcomes measure evidence closure only and cannot be converted into entity performance, a comparison, or a score.",
     "Phase 56H closure and deepening states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
-    "Phase 56I first-pass and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims."
+    "Phase 56I first-pass and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
+    "Phase 56J acquisition order and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims."
   ],
   "next_records": [
     "ASML enrollment, completion, credential, placement, retention, and customer-training records.",
@@ -316,6 +328,7 @@
     "Reopen when the Air Force, DCMA, GAO, or Boeing publishes realized post-restart delivery and acceptance dates.",
     "Reopen when a dated company, MEP, grant, or customer record reports repeat same-line input and output under a declared window.",
     "Reopen when SCIDA, the company, a registrar, or a customer publishes a dated realized outcome for the Hauppauge operation.",
-    "Reopen when ESD reports certification or credit issuance, or FDA/company records expose units distributed and a compatible production window."
+    "Reopen when ESD reports certification or credit issuance, or FDA/company records expose units distributed and a compatible production window.",
+    "Reopen when the Air Force, GAO, or DOD publishes observed availability under a compatible baseline or another current delivery-and-acceptance denominator."
   ]
 }

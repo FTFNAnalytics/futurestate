@@ -1,0 +1,48 @@
+{
+  "id": "research-doc-56j-manatee-eia923-plant-operation",
+  "collection_id": "research-collection-evidence-value-continuation-queue-batch-one-2026",
+  "title": "Manatee Solar Energy Center: Phase 56J Continuation Decision",
+  "slug": "56j-manatee-eia923-plant-operation",
+  "record_status": "Published",
+  "publisher": "U.S. Energy Information Administration",
+  "publication_date": "2026-07-23",
+  "document_type": "Data Release",
+  "summary": "The EIA-923 energy-storage worksheet identifies plant 60014 as Manatee Solar Energy Center. Its battery row reports January-May 2026 monthly charging-energy quantities of 7,082, 7,188, 10,333, 11,364, and 9,375 MWh; gross generation of 5,755, 4,778, 9,005, 9,439, and 8,751 MWh; and reported net generation of -1,327, -2,140, -1,328, -1,924, and -624 MWh. Phase 56J decision: Move the selected evidence state from Open to Partially Closed. The named asset now has an official monthly operating record, but the record does not supply interval dispatch, availability, state of charge, cycling, degradation, revenue, or customer outcomes.",
+  "key_findings": [
+    "Phase 56F coverage ID: coverage-56f-manatee.",
+    "Highest-value missing record: Asset-specific operating input and output under the current monthly survey.",
+    "Evidence state: Open to Partially Closed.",
+    "Continuation rule: Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes plant 60014 interval dispatch or availability under a declared denominator."
+  ],
+  "why_it_matters": "The continuation decision tests a named next record against the selected denominator instead of expanding broad context or inferring performance from disclosure.",
+  "ftfn_relevance": [
+    "Preserves stable entity ID eia-plant-60014.",
+    "Separates a new operating, program, or scope observation from complete closure.",
+    "Keeps evidence state separate from performance, safety, quality, readiness, value, and causation."
+  ],
+  "evidence_limits": [
+    "The EIA survey row is monthly, subject to revision, and does not expose interval dispatch or availability. Its quantity-consumed, gross-generation, and net-generation fields must not be converted into an efficiency claim without reconciling the survey definitions and reported totals.",
+    "Interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, revisions, and customer cost.",
+    "No causal effect, entity ranking, composite score, readiness score, or unsupported cross-entity comparison is supported."
+  ],
+  "primary_topics": [
+    "Energy"
+  ],
+  "framework_layers": [
+    "Resource Foundations",
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Power",
+    "Infrastructure",
+    "Data Quality",
+    "Safety"
+  ],
+  "source_id": "source-56j-manatee-eia923-plant-60014",
+  "official_url": "https://www.eia.gov/electricity/data/eia923/xls/f923_2026.zip",
+  "local_capture_path": "/downloads/evidence-value-continuation-queue-batch-one-2026/official-links/01-manatee-eia923-plant-operation.txt",
+  "archive_member": "official-links/01-manatee-eia923-plant-operation.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-07-25"
+}

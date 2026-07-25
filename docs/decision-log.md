@@ -2770,3 +2770,34 @@ Deployment receipt:
 Boundary:
 
 A completed first pass is not a completed evidence question. Monthly or annual plant data does not establish interval availability; program commitments do not establish execution; an index check does not substitute for the missing annual evaluation; an active investigation does not establish final cause or restored operation; and one-period carrier observations do not establish full-year outcomes or causation. No causal effect, ranking, completeness score, composite score, readiness score, or unsupported cross-entity comparison is authorized. Owner-only access, public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.
+
+## 2026-07-25: Phase 56J Orders Evidence Opportunities And Advances Only Manatee
+
+Decision:
+
+Order all twenty original Partially Closed continuation rules by likely evidence gain, source authority, denominator fit, and current availability; keep the three Open rails active; and execute a five-record first batch. Treat the order as an acquisition queue, not an entity ranking.
+
+Rationale:
+
+The official EIA-923 workbook now supplies exact plant 60014 monthly energy-storage rows, which materially improves the Manatee evidence question but still does not supply interval availability. Later AEMO, Hornsdale operator, and Air Force records add bounded asset, event, service, and plan evidence. The FERC FY 2025 FISMA result is useful only as a component-scope boundary because FERC is an independent agency within DOE and cannot substitute for a department-wide DOE result.
+
+Implemented:
+
+- a deterministic order for all twenty original Partially Closed continuation rules;
+- continued DHS, Manatee, and Gateway Open rails;
+- five new source profiles, five research documents, and five signal decisions;
+- four Published bounded records and one In Review scope hold;
+- one Manatee Open-to-Partially-Closed transition, leaving one Closed, twenty-one Partially Closed, and two Open;
+- Research Watch 014, one collection, one public update, two machine-readable ledgers, and a verified eight-file archive;
+- integration across five topics, five pathways, six entity ledgers, and the comparison protocol;
+- a verified local 1,336-page, 542-source, 280-signal contract with 214 Published, 66 In Review, 38 updates, nineteen collections, 386 documents, and 332 current Published-support sources;
+- Phase 56K selected as the next content gate for DHS, Gateway, Moss Landing, VA, F-35 Fort Worth, F-15EX St. Louis, and DOT.
+
+Deployment receipt:
+
+- pending exact local content commit, private packaged source commit, Sites version, and deployment ID;
+- preserve custom access with one allowed owner and no groups.
+
+Boundary:
+
+Acquisition order ranks evidence opportunity, not entities. Monthly EIA fields do not establish interval availability; a market constraint does not establish asset availability or islanding performance; operator event evidence does not establish independently verified annual availability; readiness targets are not realized outcomes; and a FERC result is not a department-wide DOE result. No causal effect, ranking, composite score, readiness score, or unsupported cross-entity comparison is authorized. Public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.
