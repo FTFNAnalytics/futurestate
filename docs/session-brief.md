@@ -172,7 +172,7 @@ What is now stable:
 - Phase 57A reviews sixteen fixed-cohort completion and realized-outcome records. Thirteen publish and three remain In Review; five new Tier 1 sources and three carried official sources support the batch with zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
 - The verified Phase 57A contract is 1,962 pages, 672 sources, 506 signals, 431 Published signals, 75 In Review signals, 455 current Published-support sources, thirty-nine briefings, thirty-six research collections, 622 research documents, 55 updates, and a nineteen-file archive. Local content commit `b30c63b04f4633e3937a0d45e16fc8f4f87ee59f` maps to exact private runtime commit `e4ba82a9c248c60db917c07944143bb5b186a463`, deployed as owner-only Sites version 53 in `appgdep_6a6fa914ec0081918a598ddc330311fb` with one owner, no groups, no editors, and zero external visitors.
 - Phase 57B reviews seventeen accepted-service and independent-outcome records. Ten publish and seven remain In Review; eleven new Tier 1 sources and five carried official sources support the batch with zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
-- The locally verified Phase 57B contract is 2,009 pages, 683 sources, 523 signals, 441 Published signals, 82 In Review signals, 463 current Published-support sources, forty briefings, thirty-seven research collections, 639 research documents, 56 updates, and a twenty-file archive. Owner-only Sites packaging is pending; version 53 remains the active private checkpoint.
+- The verified Phase 57B contract is 2,009 pages, 683 sources, 523 signals, 441 Published signals, 82 In Review signals, 463 current Published-support sources, forty briefings, thirty-seven research collections, 639 research documents, 56 updates, and a twenty-file archive. Local content commit `35a34fd9e57ea3e96df24a717bf21630098814ee` maps to exact private runtime commit `93f62742251f40c79f99d2c0c4df63cb32fbecc3`, deployed as owner-only Sites version 54 in `appgdep_6a6fc63ce3408191ae44dcd4ea8acae7` with one owner, no groups, no editors, and zero external visitors.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
@@ -414,15 +414,15 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 57B accepted-service cohorts and independent outcome validation
+Phase 57C service reliability, adoption, and recurring-output validation
 ```
 
 Proceed by:
 
-- add project- or location-level DOT completion-to-service panels beneath the system outcomes,
-- follow BEAD entities into disclosed construction, activated BSLs, operational tests, subscriber samples, adoption, and closeout,
-- extend Hanford records with facility-level periods, throughput, contaminant removal, residual inventory, disposal, cost, downtime, and compliance evidence,
-- follow W87-1 production into recurring accepted output while keeping LAP4, SRPPF, integrated schedule, lifecycle cost, and GAO sufficiency separate,
+- add Amtrak feature availability, outage, maintenance, passenger-use, and rider-experience records for the same named station and railcar cohorts,
+- follow the Louisiana 104-location cohort into stable location lists, installations, subscribers, test distributions, latency, uptime, affordability, adoption, complaints, and accepted closeout,
+- extend Hanford records with compatible monthly throughput, contaminant mass, quality, rejects, residual inventory, shipment, acceptance, disposal, cost, downtime, and compliance evidence,
+- follow W87-1 production into recurring qualified output while keeping LAP4, SRPPF, integrated schedule, lifecycle cost, and GAO sufficiency separate,
 - publish only an exact record, a new authoritative status, or a materially narrower locator,
 - do not represent a public search as agency contact or a submitted FOIA request,
 - preserve stop rules, reopening triggers, authority conflicts, and time-bounded milestone checks as inserts rather than pauses,

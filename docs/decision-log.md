@@ -2890,7 +2890,12 @@ The new Amtrak, Louisiana, Hanford, NNSA, and GAO records materially advance nam
 
 Deployment receipt:
 
-- pending owner-only packaging and deployment;
+- local content commit `35a34fd9e57ea3e96df24a717bf21630098814ee`;
+- exact private runtime commit `93f62742251f40c79f99d2c0c4df63cb32fbecc3`;
+- owner-only Sites version 54 in deployment `appgdep_6a6fc63ce3408191ae44dcd4ea8acae7`;
+- 2,807-file hosted runtime archive with content hash `sha256:a19ae21ba620506ff2984d2ba0325161dc1c9ac3e47d814ef749ac377749d244`;
+- five hosted Phase 57B routes passed with no browser-console errors;
+- custom access confirmed with one owner, no groups, no editors, and zero external visitors;
 - public access, package freeze, public GitHub, Hostinger DNS, custom-domain attachment, and launch remain unchanged.
 
 Boundary:

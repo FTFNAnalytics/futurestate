@@ -2,7 +2,7 @@
 
 Date: 2026-08-02
 
-Status: complete and validated locally; owner-only deployment pending
+Status: complete, validated, and owner-only deployed
 
 ## Goal
 
@@ -84,4 +84,12 @@ Build service reliability, adoption, and recurring-output validation. Prioritize
 
 ## Deployment receipt
 
-Pending owner-only Sites packaging and deployment. Public access, DNS, the custom domain, package freeze, and the public GitHub remote remain unchanged.
+- Local content commit: `35a34fd9e57ea3e96df24a717bf21630098814ee`.
+- Exact private runtime commit: `93f62742251f40c79f99d2c0c4df63cb32fbecc3`.
+- OpenAI Sites version: 54 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_f80d834f867c8191acba7e258fa5cef0`).
+- Deployment: `appgdep_6a6fc63ce3408191ae44dcd4ea8acae7`.
+- Hosted runtime: 2,807 files, 140,277,760 bytes, content hash `sha256:a19ae21ba620506ff2984d2ba0325161dc1c9ac3e47d814ef749ac377749d244`.
+- Local compressed package: 93,605,290 bytes, SHA-256 `7CA3A1CE056CAFAEE3DF4EAB60F4233A06A4C4AD5E3DFC12E5463B0EE9FC94D8`.
+- Hosted QA: home, collection, briefing, one Published signal, and one In Review signal passed; canonical and robots boundaries were correct and no browser-console errors appeared.
+- Access: custom owner-only, one owner, no groups, no editors, and zero external visitors.
+- Public access, DNS, the custom domain, package freeze, and the public GitHub remote remain unchanged.
