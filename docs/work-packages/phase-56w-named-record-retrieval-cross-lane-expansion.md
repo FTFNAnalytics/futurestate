@@ -2,7 +2,7 @@
 
 Date: 2026-08-02
 
-Status: complete and release-verified locally; owner-only deployment pending
+Status: complete, release-verified, and owner-only deployed
 
 ## Goal
 
@@ -56,7 +56,14 @@ Six records pass because they add a new authoritative status or materially narro
 
 ## Owner-only deployment receipt
 
-Pending. The verified candidate must be deployed owner-only without changing public access, package version, public GitHub state, Hostinger DNS, or custom-domain attachment.
+- Local content commit: `487a57c3fd9a9cd01a99533e637b05ad4efda745`.
+- Exact private runtime commit: `70f52b01e9475f6d1755d1ffb8dd57948848573c`.
+- Sites version: 49 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_3cf53e6aeda08191bd4c1962120a5d35`).
+- Deployment: `appgdep_6a6f0df0e5188191a6aee3d2a12affab` at `https://ftfn-analytics.jbumstead.chatgpt.site`.
+- Runtime archive: 2,498 files.
+- Packaging integrity: the final route tree was regenerated from source and verified at 1,798 traversable HTML pages before the version 49 replacement deployment.
+- Access verification: custom owner-only policy with one owner, no groups, no editors, and zero external visitors.
+- Public access, package freeze, public GitHub, Hostinger DNS, and custom-domain attachment remain unchanged.
 
 ## Evidence boundaries
 
