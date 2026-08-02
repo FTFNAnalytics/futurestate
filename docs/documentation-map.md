@@ -1604,6 +1604,7 @@ Primary file:
 - `docs/work-packages/phase-56v-second-order-recovery-leads-supporting-artifacts.md` for the ten lead chains, twelve official source profiles, directive tests, recommendation-specific supporting-artifact boundary, publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56W handoff
 - `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md` for the seven named-target decisions, three compatible cross-lane records, six Published additions, four In Review holds, seven Tier 1 sources, publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56X handoff
 - `docs/work-packages/phase-56x-implementation-to-outcome-expansion.md` for the four award-review denominators, three operating outputs, three site denominators, three project-baseline records, six Tier 1 sources, publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56Y handoff
+- `docs/work-packages/phase-56y-longitudinal-delivery-outcomes.md` for the four funding-execution records, two award-to-service contracts, three sustained-operation records, four cleanup-delivery-and-outcome records, two project-implementation records, eleven new Tier 1 sources, publication ledgers, archive contract, validation evidence, and Phase 56Z handoff
 
 Update when:
 
@@ -1640,6 +1641,7 @@ Update when:
 - the Phase 56V lead chains, supporting-artifact boundaries, named-record retrieval queue, archive, deployment receipt, or Phase 56W priorities change,
 - the Phase 56W record decisions, publication holds, cross-lane boundaries, archive, deployment receipt, or Phase 56X priorities change,
 - the Phase 56X evidence-stage records, denominators, archive, deployment receipt, or Phase 56Y priorities change,
+- the Phase 56Y longitudinal records, universe and stage breaks, archive, deployment receipt, or Phase 56Z priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.
