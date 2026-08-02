@@ -397,13 +397,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 56W | seven named-target decisions, three cross-lane records, six Published additions, four In Review holds, a verified 1,798-page contract, and Sites version 49 |
 | Completed and owner-only deployed | Phase 56X | thirteen Published implementation-to-outcome records, six Tier 1 sources, Research Watch 028, a sixteen-file archive, a verified 1,832-page contract, and Sites version 50 |
 | Completed and owner-only deployed | Phase 56Y | fifteen Published longitudinal delivery-and-outcome records, eleven Tier 1 sources, Research Watch 029, an eighteen-file archive, a verified 1,875-page contract, and Sites version 51 |
-| Completed and validated locally | Phase 56Z | thirteen Published panels, four explicit holds, twelve Tier 1 sources, Research Watch 030, a twenty-file archive, and a verified 1,923-page contract; owner-only deployment pending |
+| Completed and owner-only deployed | Phase 56Z | thirteen Published panels, four explicit holds, twelve Tier 1 sources, Research Watch 030, a twenty-file archive, a verified 1,923-page contract, and Sites version 52 |
 | Next content gate | Phase 57A | fixed-cohort completion and realized-outcome panels using stable entity, universe, stage, period, unit, method, denominator, and revision history |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now passes a verified 1,923-page Phase 56Z contract. Phase 56Z reviews seventeen records, publishes thirteen repeat or completed-stage panels, and retains four explicit holds where construction is prospective, reporting universes conflict, or results remain forecast. Twelve new Tier 1 source profiles and seven carried sources support the batch. No exact target artifact or trigger is recorded, and no directive scope, implementation, closure, agency-contact, FOIA, or entity-evidence state changes. Sites version 51 remains the current owner-only hosting checkpoint until the validated Phase 56Z runtime is deployed. The next non-public content gate is Phase 57A: build fixed-cohort completion and realized-outcome panels while exact-artifact checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now passes a verified 1,923-page Phase 56Z contract. Phase 56Z reviews seventeen records, publishes thirteen repeat or completed-stage panels, and retains four explicit holds where construction is prospective, reporting universes conflict, or results remain forecast. Twelve new Tier 1 source profiles and seven carried sources support the batch. No exact target artifact or trigger is recorded, and no directive scope, implementation, closure, agency-contact, FOIA, or entity-evidence state changes. Sites version 52 is the current owner-only hosting checkpoint. The next non-public content gate is Phase 57A: build fixed-cohort completion and realized-outcome panels while exact-artifact checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1539,7 +1539,7 @@ Boundaries:
 - no ranking, composite score, readiness score, realized-savings claim, or causal inference;
 - dated checks remain inserts and do not block compatible content expansion.
 
-### Phase 56Z: Repeat-Measurement And Accepted-Operation Panels - Complete And Validated
+### Phase 56Z: Repeat-Measurement And Accepted-Operation Panels - Complete And Owner-Only Deployed
 
 Goal: turn the strongest Phase 56Y identities into multi-period or completed-stage panels that distinguish recurring delivery, operational acceptance, sustained performance, closeout, and realized outcomes.
 
@@ -1573,6 +1573,7 @@ Delivered:
 7. added twelve Tier 1 source profiles, Research Watch 030, two ledgers, one collection, one update, and a twenty-file archive;
 8. passed content references, source health, Astro diagnostics, the 1,923-page production build, Phase 56Z assertions, release assertions, sitemap membership, exports, and private-registry exclusion;
 9. preserved one Closed, twenty-one Partially Closed, and two Open entity records with zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
+10. matched local content commit `11f8f7da8c0229d6c65dca5f4f11282b6c83bf9f` to exact private runtime commit `404c9661a1ca64ca5b82226e2b1ce3d6aad30b1f`, saved the 2,680-file runtime as Sites version 52, deployed it in `appgdep_6a6fa0e4a0188191b7f11b33f3bb3c5a`, and confirmed one owner, no groups, no editors, and zero external visitors.
 
 ### Phase 57A: Fixed-Cohort Completion And Realized-Outcome Panels - Next Content Gate
 
@@ -1714,4 +1715,4 @@ Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 56Y is complete and owner-only deployed at 1,875 pages. Sites version 51 serves exact private runtime commit `da452ab128d8d7584fe83238c9a696a2797666a7` under custom access with one owner, no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phase 56Z is complete and owner-only deployed at 1,923 pages. Sites version 52 serves exact private runtime commit `404c9661a1ca64ca5b82226e2b1ce3d6aad30b1f` under custom access with one owner, no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

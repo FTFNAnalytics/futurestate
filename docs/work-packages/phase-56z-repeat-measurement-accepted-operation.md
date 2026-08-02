@@ -2,7 +2,7 @@
 
 Date: 2026-08-02
 
-Status: complete and validated; owner-only deployment pending
+Status: complete, validated, and owner-only deployed
 
 ## Goal
 
@@ -87,3 +87,12 @@ Turn stable Phase 56Y identities into compatible repeat-measurement, accepted-op
 
 Build fixed-cohort completion and realized-outcome panels. Prioritize program-level DOT delivery cohorts, BEAD signed subgrants through accepted service and tests, repeat cleanup throughput and residual inventories, final regulatory closure and disposal stages, and LAP4 or SRPPF qualification, CD-4, acceptance, and attributable output. Require a stable entity, universe, lifecycle stage, period, unit, method, denominator, and revision history. Exact-artifact checks remain non-blocking inserts.
 
+## Deployment receipt
+
+- local content commit: `11f8f7da8c0229d6c65dca5f4f11282b6c83bf9f`;
+- exact private runtime commit: `404c9661a1ca64ca5b82226e2b1ce3d6aad30b1f`;
+- Sites version: 52 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_699bcfe0e858819180b11c663a95e125`);
+- deployment: `appgdep_6a6fa0e4a0188191b7f11b33f3bb3c5a`;
+- hosted runtime archive: 2,680 files, 138,086,400 bytes, `sha256:86cd0ad2f495e3778ed1c37553156b593778ddedf49b802bd604669c39f5c5ec`;
+- access: custom owner-only policy with one owner, no groups, no editors, and zero external visitors;
+- live URL: `https://ftfn-analytics.jbumstead.chatgpt.site`.

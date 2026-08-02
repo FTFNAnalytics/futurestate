@@ -1605,7 +1605,7 @@ Primary file:
 - `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md` for the seven named-target decisions, three compatible cross-lane records, six Published additions, four In Review holds, seven Tier 1 sources, publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56X handoff
 - `docs/work-packages/phase-56x-implementation-to-outcome-expansion.md` for the four award-review denominators, three operating outputs, three site denominators, three project-baseline records, six Tier 1 sources, publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56Y handoff
 - `docs/work-packages/phase-56y-longitudinal-delivery-outcomes.md` for the four funding-execution records, two award-to-service contracts, three sustained-operation records, four cleanup-delivery-and-outcome records, two project-implementation records, eleven new Tier 1 sources, publication ledgers, archive contract, validation evidence, and Phase 56Z handoff
-- `docs/work-packages/phase-56z-repeat-measurement-accepted-operation.md` for the seventeen reviewed panels, thirteen Published decisions, four In Review holds, twelve new Tier 1 sources, repeat-measurement and accepted-operation contracts, archive, validation evidence, and Phase 57A handoff
+- `docs/work-packages/phase-56z-repeat-measurement-accepted-operation.md` for the seventeen reviewed panels, thirteen Published decisions, four In Review holds, twelve new Tier 1 sources, repeat-measurement and accepted-operation contracts, archive, validation and owner-only deployment evidence, and Phase 57A handoff
 
 Update when:
 
