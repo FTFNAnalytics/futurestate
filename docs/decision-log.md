@@ -2859,7 +2859,13 @@ Implemented:
 
 Deployment receipt:
 
-Pending owner-only Sites packaging and deployment. Public access, package freeze, public GitHub, Hostinger DNS, custom-domain attachment, and launch remain unchanged.
+- local content commit `b30c63b04f4633e3937a0d45e16fc8f4f87ee59f`;
+- exact private runtime commit `e4ba82a9c248c60db917c07944143bb5b186a463`;
+- owner-only Sites version 53 in deployment `appgdep_6a6fa914ec0081918a598ddc330311fb`;
+- 2,739-file hosted runtime archive with content hash `sha256:3e9af2cea716ad98a46996622af818085d75228fc0aef856c7d55c1f750c25b4`;
+- custom access confirmed with one owner, no groups, no editors, and zero external visitors.
+
+Public access, package freeze, public GitHub, Hostinger DNS, custom-domain attachment, and launch remain unchanged.
 
 Boundary:
 

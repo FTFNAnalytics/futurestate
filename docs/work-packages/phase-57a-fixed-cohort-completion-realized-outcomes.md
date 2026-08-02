@@ -2,7 +2,7 @@
 
 Date: 2026-08-02
 
-Status: complete and validated; owner-only deployment pending
+Status: complete, validated, and owner-only deployed
 
 ## Goal
 
@@ -89,4 +89,11 @@ Build accepted-service cohorts and independent outcome validation. Prioritize lo
 
 ## Deployment receipt
 
-Pending owner-only Sites packaging and deployment. Public access, package freeze, public GitHub, Hostinger DNS, custom-domain attachment, and launch remain unchanged.
+- Local content commit: `b30c63b04f4633e3937a0d45e16fc8f4f87ee59f`.
+- Exact private runtime commit: `e4ba82a9c248c60db917c07944143bb5b186a463`.
+- OpenAI Sites version: 53 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_b903899eb564819180bb112347e23265`).
+- Deployment: `appgdep_6a6fa914ec0081918a598ddc330311fb`, status succeeded at `https://ftfn-analytics.jbumstead.chatgpt.site`.
+- Sites runtime archive: 2,739 files, 139,089,920 bytes, content hash `sha256:3e9af2cea716ad98a46996622af818085d75228fc0aef856c7d55c1f750c25b4`.
+- Local compressed deployment archive: 93,453,799 bytes, SHA-256 `CBF0B0C3AE699EF07DC7D9EC9E23841EDF2D50EC87ED6D363CF3E3BC4CD9DDEF`.
+- Access reverified after deployment: custom owner-only, one allowed owner, no groups, no editors, and zero external visitors.
+- Public access, package freeze, public GitHub, Hostinger DNS, custom-domain attachment, and launch remain unchanged.

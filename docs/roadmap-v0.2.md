@@ -404,7 +404,7 @@ Recommended active schedule:
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now passes a verified 1,962-page Phase 57A contract. Phase 57A reviews sixteen records, publishes thirteen fixed-cohort, independently corroborated operating, or qualified-output panels, and retains three explicit holds where construction, test results, or a complete program baseline are absent. Five new Tier 1 source profiles and three carried official sources support the batch. No exact target artifact or trigger is recorded, and no directive scope, implementation, closure, agency-contact, FOIA, or entity-evidence state changes. Sites version 52 remains the current owner-only hosting checkpoint until Phase 57A is packaged. The next non-public content gate is Phase 57B: build accepted-service cohorts and independent outcome validation while exact-artifact checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now passes a verified 1,962-page Phase 57A contract. Phase 57A reviews sixteen records, publishes thirteen fixed-cohort, independently corroborated operating, or qualified-output panels, and retains three explicit holds where construction, test results, or a complete program baseline are absent. Five new Tier 1 source profiles and three carried official sources support the batch. No exact target artifact or trigger is recorded, and no directive scope, implementation, closure, agency-contact, FOIA, or entity-evidence state changes. Sites version 53 is the current owner-only hosting checkpoint for the exact Phase 57A runtime. The next non-public content gate is Phase 57B: build accepted-service cohorts and independent outcome validation while exact-artifact checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1576,7 +1576,7 @@ Delivered:
 9. preserved one Closed, twenty-one Partially Closed, and two Open entity records with zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
 10. matched local content commit `11f8f7da8c0229d6c65dca5f4f11282b6c83bf9f` to exact private runtime commit `404c9661a1ca64ca5b82226e2b1ce3d6aad30b1f`, saved the 2,680-file runtime as Sites version 52, deployed it in `appgdep_6a6fa0e4a0188191b7f11b33f3bb3c5a`, and confirmed one owner, no groups, no editors, and zero external visitors.
 
-### Phase 57A: Fixed-Cohort Completion And Realized-Outcome Panels - Complete And Validated
+### Phase 57A: Fixed-Cohort Completion And Realized-Outcome Panels - Complete And Owner-Only Deployed
 
 Goal: move the strongest Phase 56Z panels into stable program cohorts, accepted service, repeat operating periods, regulatory closeout, and realized outcomes without weakening the comparison contract.
 
@@ -1606,6 +1606,7 @@ Delivered:
 - two BEAD pre-completion holds and one NNSA program-baseline hold;
 - five new Tier 1 sources, Research Watch 031, two ledgers, one collection, one update, and a nineteen-file archive;
 - a verified 1,962-page contract with thirteen Published and three In Review records.
+- local content commit `b30c63b04f4633e3937a0d45e16fc8f4f87ee59f` matched exact private runtime commit `e4ba82a9c248c60db917c07944143bb5b186a463`, saved as Sites version 53, deployed in `appgdep_6a6fa914ec0081918a598ddc330311fb`, and reverified with one owner, no groups, no editors, and zero external visitors.
 
 ### Phase 57B: Accepted-Service Cohorts And Independent Outcome Validation - Next Content Gate
 
@@ -1744,4 +1745,4 @@ Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 57A is complete and validated at 1,962 pages, 672 sources, 506 signals, 431 Published signals, 75 In Review signals, 36 collections, 622 research documents, 39 briefings, and 55 updates. The owner-only deployment remains Sites version 52 until the Phase 57A package is saved and deployed. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phase 57A is complete, validated, and owner-only deployed as Sites version 53 at 1,962 pages, 672 sources, 506 signals, 431 Published signals, 75 In Review signals, 36 collections, 622 research documents, 39 briefings, and 55 updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

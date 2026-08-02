@@ -1606,7 +1606,7 @@ Primary file:
 - `docs/work-packages/phase-56x-implementation-to-outcome-expansion.md` for the four award-review denominators, three operating outputs, three site denominators, three project-baseline records, six Tier 1 sources, publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56Y handoff
 - `docs/work-packages/phase-56y-longitudinal-delivery-outcomes.md` for the four funding-execution records, two award-to-service contracts, three sustained-operation records, four cleanup-delivery-and-outcome records, two project-implementation records, eleven new Tier 1 sources, publication ledgers, archive contract, validation evidence, and Phase 56Z handoff
 - `docs/work-packages/phase-56z-repeat-measurement-accepted-operation.md` for the seventeen reviewed panels, thirteen Published decisions, four In Review holds, twelve new Tier 1 sources, repeat-measurement and accepted-operation contracts, archive, validation and owner-only deployment evidence, and Phase 57A handoff
-- `docs/work-packages/phase-57a-fixed-cohort-completion-realized-outcomes.md` for the sixteen reviewed panels, thirteen Published decisions, three In Review holds, five new Tier 1 sources, fixed-cohort, independent-operation, qualified-output, archive, validation, and Phase 57B handoff contracts
+- `docs/work-packages/phase-57a-fixed-cohort-completion-realized-outcomes.md` for the sixteen reviewed panels, thirteen Published decisions, three In Review holds, five new Tier 1 sources, fixed-cohort, independent-operation, qualified-output, archive, validation, owner-only deployment evidence, and Phase 57B handoff contracts
 
 Update when:
 
