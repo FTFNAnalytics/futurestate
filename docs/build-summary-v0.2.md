@@ -1,6 +1,6 @@
 # FTFN v0.2 Build Summary
 
-Date: 2026-08-01
+Date: 2026-08-02
 
 ## Executive State
 
@@ -101,17 +101,19 @@ Phase 56P decomposes the DOE, HHS, DOT, and VA priority letters into twenty-two 
 
 Phase 56Q resolves the twenty-two Phase 56P local keys against current official GAO product pages. Twenty actions publish with exact report-and-recommendation identities; HHS-04 and VA-02 remain In Review because each local parent aggregates two separately numbered recommendations. Twenty-one official source profiles, twenty-two research documents, twenty Published and two In Review signals, Research Watch 021, two machine-readable ledgers, one collection, one update, and a verified twenty-five-file archive raise the candidate to 1,539 pages, 587 sources, 349 signals, 281 Published, 68 In Review, 45 updates, twenty-nine briefings, twenty-six research collections, 461 research documents, and 374 current Published-support sources. Eighteen exact recommendations are Open and two are Open – Partially Addressed; agency response, implementation, GAO status, Phase 56F evidence state, recommendation closure, and operating outcome remain distinct. The evidence ledger stays one Closed, twenty-one Partially Closed, and two Open, and the inherited HHS tracker check remains held. Content validation, source health, Astro diagnostics, the production build, Phase 56K through Phase 56Q assertions, release assertions, sitemap membership, exports, and private-registry exclusion pass. Local content commit `684352779fb9dd36de92d4a53f17a47e5e878322` produced exact private runtime commit `7d8d188bb68dd5e7712e0a0f9f555e7917d9e48d`, deployed successfully as owner-only Sites version 42 in deployment `appgdep_6a6edd381a848191b6201f22284eea77` with no groups and no external visitors.
 
+Phase 56R preserves HHS-04 and VA-02 as parent crosswalks while publishing four recommendation-specific children, then continues the twenty exact Phase 56Q identities into one twenty-four-record implementation-artifact and milestone ledger. Five separately public agency artifacts support the bounded status histories: FAA Flight Plan 2026, the FAA Air Traffic Controller Workforce Plan 2026–2028, the FAA Drone Normalization Strategy Report Update 2026, DOT's 2025 Automated Vehicle Framework, and VA Notice 24-08. The batch contains eleven Promised, four Submitted, one Under GAO review, four Partially addressed, and four No conforming artifact reported records; none is represented as Implemented or Closed. Thirteen named dates remain monitors, including three elapsed periods with no official acceptance or closure record. Five source profiles, twenty-four Published research documents, twenty-four Published signals, Research Watch 022, two machine-readable ledgers, one collection, one update, and a verified twenty-seven-file archive raise the candidate to 1,594 pages, 592 sources, 373 signals, 305 Published, 68 In Review, 46 updates, thirty briefings, twenty-seven research collections, 485 research documents, and 381 current Published-support sources. Twenty recommendations remain Open and four remain Open – Partially Addressed; the Phase 56F evidence ledger stays one Closed, twenty-one Partially Closed, and two Open. Content validation, source health, Astro diagnostics, the production build, Phase 56K through Phase 56R assertions, release assertions, sitemap membership, exports, and private-registry exclusion pass. Owner-only Sites deployment remains the final Phase 56R handoff step.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 1,472 | +1,290 |
-| Sources | 102 | 566 | +464 |
-| Signals | 18 | 327 | +309 |
-| Published signals | 3 | 261 | +258 |
-| In Review signals | 14 | 66 | +52 |
+| Generated HTML pages | 182 | 1,594 | +1,412 |
+| Sources | 102 | 592 | +490 |
+| Signals | 18 | 373 | +355 |
+| Published signals | 3 | 305 | +302 |
+| In Review signals | 14 | 68 | +54 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
 | Public update entries | 0 | 44 | +44 |
@@ -260,13 +262,15 @@ Phase 56P publishes twenty-two actions explicitly named by the current DOE, HHS,
 
 Phase 56Q resolves twenty local action keys to exact official GAO report-and-recommendation identities and holds HHS-04 plus VA-02 as one-to-many mappings containing four preserved recommendation candidates. It adds twenty-one official product-page sources, twenty-two research documents, twenty Published and two In Review signals, one collection, Research Watch 021, one public update, and separate identity-crosswalk and publication-review ledgers. The verified candidate is 1,539 pages, 587 sources, 349 signals, 281 Published, 68 In Review, 45 public updates, twenty-nine briefings, twenty-six collections, 461 research documents, and 374 current Published-support sources. The unchanged entity evidence ledger remains one Closed, twenty-one Partially Closed, and two Open. Local content commit `684352779fb9dd36de92d4a53f17a47e5e878322` produced private runtime commit `7d8d188bb68dd5e7712e0a0f9f555e7917d9e48d`, deployed as owner-only Sites version 42 in deployment `appgdep_6a6edd381a848191b6201f22284eea77`.
 
+Phase 56R preserves both held parents and publishes four recommendation-specific children plus twenty exact continuation records. Five public agency artifacts, thirteen milestone monitors, twenty-four Published documents and signals, one collection, Research Watch 022, one public update, and separate artifact-milestone and publication-review ledgers raise the verified candidate to 1,594 pages, 592 sources, 373 signals, 305 Published, 68 In Review, 46 public updates, thirty briefings, twenty-seven collections, 485 research documents, and 381 current Published-support sources. Twenty recommendations remain Open and four remain Open – Partially Addressed; no record claims implementation or closure, and the entity evidence ledger remains one Closed, twenty-one Partially Closed, and two Open.
+
 Verified results:
 
-- 1,539 generated site pages,
-- exact exports for 587 sources, 17 topics, 281 Published signals, 442 Published research records and collections, and 11 Published pathways,
-- all 281 Published signal routes included in the sitemap,
+- 1,594 generated site pages,
+- exact exports for 592 sources, 17 topics, 305 Published signals, 467 Published research records and collections, and 11 Published pathways,
+- all 305 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
-- all twenty-two Published briefing routes included in the sitemap and all seven held briefing routes excluded,
+- all twenty-three Published briefing routes included in the sitemap and all seven held briefing routes excluded,
 - all six Published dependency-map routes included in the sitemap and the one held map route excluded,
 - all fifteen reader pathways rendered across 19 Atlas surfaces with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records,
 - all sixteen evidence-gap details included in the sitemap, including the comparison-denominator gap,
@@ -277,16 +281,16 @@ Verified results:
 - exactly 150 unique private candidates, 10 in each of 15 profiles, with all records assigned a first-pass triage state,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
-- all twenty-six collection routes and 461 document records built under the publication and indexing contract,
-- the Phase 56Q twenty-five-file ZIP archive and all prior archives verified with manifests and checksums.
+- all twenty-seven collection routes and 485 document records built under the publication and indexing contract,
+- the Phase 56R twenty-seven-file ZIP archive and all prior archives verified with manifests and checksums.
 
-The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56q-gao-recommendation-identity-agency-response-resolution.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
+The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56r-recommendation-implementation-artifact-milestone-follow-through.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
 The local release work is preserved on `codex/phase51-content`. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
-The current hosting checkpoint is owner-only Sites version 42. Local content commit `684352779fb9dd36de92d4a53f17a47e5e878322` produced exact private runtime commit `7d8d188bb68dd5e7712e0a0f9f555e7917d9e48d` in deployment `appgdep_6a6edd381a848191b6201f22284eea77`. The custom policy allows only the owner, no groups, and no external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
+The current hosting checkpoint is owner-only Sites version 42 while the verified Phase 56R package awaits its owner-only deployment. The custom policy allows only the owner, no groups, and no external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
 The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-22 to remain outside Cloudflare, with Google Workspace mail records active. Before any nameserver or DNS change, inventory and preserve every mail and verification record. Hosting-provider selection remains an explicit Phase 55 decision: Cloudflare Pages is the documented default, but another static host may be chosen if avoiding a nameserver migration is more important.
 
@@ -365,12 +369,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-arc
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug cross-agency-priority-remediation-portfolios-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug agency-priority-recommendation-action-ledger-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug gao-recommendation-identity-agency-response-crosswalk-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug gao-recommendation-implementation-artifact-milestone-ledger-2026
 npm.cmd run check
 npm.cmd run build
 npm.cmd run verify:phase56o
 npm.cmd run verify:phase56p
 npm.cmd run verify:phase56q
+npm.cmd run verify:phase56r
 npm.cmd run verify:release
 ```
 
-Expected output: 1,539 generated site pages, the prior verified research archives plus the Phase 56Q twenty-five-file archive, twenty exact Phase 56Q identity matches, two held one-to-many mappings, twenty Published and two In Review Phase 56Q signals, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and a passing v0.2 release assertion.
+Expected output: 1,594 generated site pages, the prior verified research archives plus the Phase 56R twenty-seven-file archive, twenty exact Phase 56R continuations, four recommendation-specific children, twenty-four Published Phase 56R signals, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and a passing v0.2 release assertion.

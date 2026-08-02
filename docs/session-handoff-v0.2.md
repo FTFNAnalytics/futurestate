@@ -1,26 +1,26 @@
 # FTFN v0.2 Session Handoff Plan
 
-Date: 2026-08-01
+Date: 2026-08-02
 
 Use this document to restart FTFN in a new Codex session without reconstructing the project from chat history.
 
 ## Handoff Snapshot
 
 ```text
-Latest completed work: Phase 56Q GAO recommendation identity and agency-response resolution
+Latest completed work: Phase 56R recommendation-specific implementation artifact and milestone follow-through
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 1,539 generated site pages
-Content: 587 sources, 349 signals, 17 topics, 5 local systems, 26 research collections / 461 research documents
-Publication: 281 Published signals, 68 In Review signals, 22 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
-Trust/data: 45 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, all prior verified research archives plus the Phase 56Q 25-file archive
+Build: 1,594 generated site pages
+Content: 592 sources, 373 signals, 17 topics, 5 local systems, 27 research collections / 485 research documents
+Publication: 305 Published signals, 68 In Review signals, 23 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
+Trust/data: 46 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, all prior verified research archives plus the Phase 56R 27-file archive
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 42 is the active hosted Phase 56Q checkpoint; local content commit 684352779fb9dd36de92d4a53f17a47e5e878322 maps to exact private runtime commit 7d8d188bb68dd5e7712e0a0f9f555e7917d9e48d and deployment appgdep_6a6edd381a848191b6201f22284eea77; custom owner-only access, no groups, and no external visitors
+Deployment: owner-only Sites version 42 remains the active hosted checkpoint while the verified Phase 56R package awaits owner-only deployment; custom owner-only access, no groups, and no external visitors
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 409 Manual Review, 178 Probe Ready; 14 Strong coverage lanes
-Next content gate: Phase 56R recommendation-specific implementation artifact and milestone follow-through; the inherited HHS tracker recheck and remaining dated inserts do not block expansion
+Source health: 414 Manual Review, 178 Probe Ready; 14 Strong coverage lanes
+Next content gate: Phase 56S recommendation artifact scope audit and missing-document acquisition; the inherited HHS tracker recheck and remaining dated inserts do not block expansion
 ```
 
 ## Read First
@@ -139,6 +139,7 @@ The approved preview sequence is complete:
 84. Matched local content commit `fd45e1d2772b1a35c5ea366ec012dd4ff425d1de` to exact private runtime commit `5c4bdc09987a1e71c18ff6da5c279a3bd589ed6d`, deployed the verified Phase 56P package as owner-only Sites version 41 in deployment `appgdep_6a6ecfc72e5c81919535362e1beb7c97`, and confirmed custom owner-only access with no groups and no external visitors.
 85. Completed Phase 56Q locally: checked all twenty-two Phase 56P action keys against current official GAO product pages; published twenty exact report-and-recommendation identities; held HHS-04 and VA-02 as one-to-many mappings with four preserved candidates; added twenty-one source profiles, twenty-two research documents, twenty Published and two In Review signals, Research Watch 021, two machine-readable ledgers, one collection, and a twenty-five-file archive. Verified 1,539 pages, 587 sources, 349 signals, 281 Published, 68 In Review, 45 updates, twenty-six collections, 461 research documents, and 374 current Published-support sources while preserving response, implementation, status, entity-ledger, closure, and outcome boundaries.
 86. Matched local content commit `684352779fb9dd36de92d4a53f17a47e5e878322` to exact private runtime commit `7d8d188bb68dd5e7712e0a0f9f555e7917d9e48d`, deployed the verified Phase 56Q package as owner-only Sites version 42 in deployment `appgdep_6a6edd381a848191b6201f22284eea77`, and confirmed custom owner-only access with no groups and no external visitors.
+87. Completed Phase 56R locally: preserved HHS-04 and VA-02 as parent crosswalks; published four recommendation-specific children and twenty exact continuations; linked five separately public agency artifacts; tracked thirteen milestone monitors; added twenty-four Published research documents and signals, Research Watch 022, two machine-readable ledgers, one collection, one update, and a twenty-seven-file archive. Verified 1,594 pages, 592 sources, 373 signals, 305 Published, 68 In Review, 46 updates, twenty-seven collections, 485 research documents, and 381 current Published-support sources while preserving promise, artifact, submission, GAO-review, partial-addressing, implementation, closure, entity-evidence, and outcome boundaries.
 
 ## Required Stop Points
 
@@ -192,9 +193,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed local work is Phase 56Q. The current candidate should be 0.2.0-dev on codex/phase51-content with 587 sources, 349 signals, 281 Published signals, 68 In Review signals, five local systems, twenty-two Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 45 public updates, five JSON exports, 1,539 generated site pages, twenty-six research collections, 461 research documents, all prior verified archives, and the Phase 56Q twenty-five-file archive. Public access and DNS remain unchanged.
+The latest completed local work is Phase 56R. The current candidate should be 0.2.0-dev on codex/phase51-content with 592 sources, 373 signals, 305 Published signals, 68 In Review signals, five local systems, twenty-three Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 46 public updates, five JSON exports, 1,594 generated site pages, twenty-seven research collections, 485 research documents, all prior verified archives, and the Phase 56R twenty-seven-file archive. Public access and DNS remain unchanged.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve owner-only Sites access and stop before changing access or attaching a domain. Phase 56Q is complete, release-verified, and owner-only deployed as Sites version 42; begin Phase 56R by decomposing HHS-04 and VA-02 into four recommendation-specific child records and acquiring public implementation artifacts, milestone evidence, and later official status changes for the twenty exact identities. Preserve promised, submitted, under-review, partially addressed, implemented, closed, entity-evidence, and operating-outcome states as separate. Keep the Phase 56P local key as the parent crosswalk and never overwrite it with a child identity. Continue compatible battery, manufacturer, and carrier records in parallel. Rerun the inherited HHS tracker check only when the official tracker changes. Treat scheduled tasks as bounded inserts rather than pauses. Do not infer causation, create rankings, or create composite or readiness scores. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
+Preserve owner-only Sites access and stop before changing access or attaching a domain. Phase 56R is complete locally and release-verified; begin Phase 56S by building recommendation-element scope checklists and searching official agency publication libraries, policy repositories, reading rooms, dashboards, budget records, and report portals for every response artifact still described but not separately linked. Publish document-level evidence or explicit availability findings, preserve HHS-04 and VA-02 as parent crosswalks, and keep agency assertions, FTFN scope checks, GAO acceptance, implementation, closure, entity-evidence, and operating outcomes separate. Continue compatible battery, manufacturer, and carrier records in parallel. Rerun the inherited HHS tracker check only when the official tracker changes. Treat scheduled tasks as bounded inserts rather than pauses. Do not infer causation, create rankings, or create composite, readiness, or savings scores. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval. Preserve all Google Workspace DNS records if domain work is approved.
 ```

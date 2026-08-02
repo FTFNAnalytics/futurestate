@@ -38,7 +38,8 @@
     "Phase 56K checks 2 exact named records in this pathway and preserves explicit non-closures.",
     "An exact-record check can improve the evidence rail without changing the selected closure state.",
     "Phase 56P adds five exact DOE actions across nuclear modernization, environmental liabilities, energy security, and program management.",
-    "Phase 56Q attaches exact official recommendation identities and response histories to all five DOE actions."
+    "Phase 56Q attaches exact official recommendation identities and response histories to all five DOE actions.",
+    "Phase 56R connects all five DOE recommendations to the current artifact state, milestone, official review state, and remaining gap."
   ],
   "primary_topics": [
     "Energy",
@@ -101,7 +102,12 @@
     "signal-56q-doe-complex-wide-waste-disposal-analysis",
     "signal-56q-doe-strategic-petroleum-reserve-periodic-reviews",
     "signal-56q-doe-nuclear-demonstration-project-oversight",
-    "signal-56q-doe-hanford-waste-treatment-pause-conditions"
+    "signal-56q-doe-hanford-waste-treatment-pause-conditions",
+    "signal-56r-doe-pit-production-lifecycle-cost-estimate",
+    "signal-56r-doe-complex-wide-waste-disposal-analysis",
+    "signal-56r-doe-strategic-petroleum-reserve-periodic-reviews",
+    "signal-56r-doe-nuclear-demonstration-project-oversight",
+    "signal-56r-doe-hanford-waste-treatment-pause-conditions"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -201,7 +207,8 @@
     "briefing-research-watch-014-evidence-value-continuation",
     "briefing-research-watch-015-exact-record-continuation",
     "briefing-research-watch-020-action-level-priority-recommendations",
-    "briefing-research-watch-021-gao-recommendation-identity-agency-response"
+    "briefing-research-watch-021-gao-recommendation-identity-agency-response",
+    "briefing-research-watch-022-recommendation-implementation-artifacts-milestones"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -225,7 +232,8 @@
     "research-collection-evidence-value-continuation-queue-batch-one-2026",
     "research-collection-exact-record-continuation-batch-two-2026",
     "research-collection-agency-priority-recommendation-action-ledger-2026",
-    "research-collection-gao-recommendation-identity-agency-response-crosswalk-2026"
+    "research-collection-gao-recommendation-identity-agency-response-crosswalk-2026",
+    "research-collection-gao-recommendation-implementation-artifact-milestone-ledger-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -328,6 +336,11 @@
       "stage": "Phase 56Q recommendation identity and agency response",
       "current_state": "Phase 56Q attaches exact official recommendation identities and response histories to all five DOE actions.",
       "boundary": "Cost estimates, reviews, analyses, and pause conditions remain management evidence rather than project completion, service, savings, or outcome evidence."
+    },
+    {
+      "stage": "Phase 56R implementation artifacts and milestones",
+      "current_state": "Phase 56R connects all five DOE recommendations to the current artifact state, milestone, official review state, and remaining gap.",
+      "boundary": "A cost estimate, review, analysis, policy, or pause decision remains management evidence rather than project completion, service, savings, or outcome evidence."
     }
   ],
   "evidence_limits": [
@@ -356,7 +369,10 @@
     "FTFN Phase 56P action keys are stable local references, not official GAO Recommendations Database numbers.",
     "Cost estimates, reviews, analyses, and pause conditions remain management evidence rather than project completion, service, savings, or outcome evidence.",
     "The official identity is the GAO report number plus recommendation number; FTFN does not invent a separate opaque database ID.",
-    "HHS-04 and VA-02 remain held because each local action maps to two official recommendations."
+    "HHS-04 and VA-02 remain held because each local action maps to two official recommendations.",
+    "A cost estimate, review, analysis, policy, or pause decision remains management evidence rather than project completion, service, savings, or outcome evidence.",
+    "HHS-04 and VA-02 remain parent crosswalks; their recommendation-specific children do not overwrite them.",
+    "Named dates are bounded monitors and do not pause content expansion."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -389,6 +405,7 @@
     "Reopen when AEMO, AER, the South Australian government, or the operator publishes a full asset-specific annual operating series with availability and dispatch denominators.",
     "Reopen when CPUC or another competent regulator publishes final January 2025 incident findings or verifies closure of the relevant corrective actions.",
     "Underlying GAO Recommendations Database records, agency responses, and later action-specific status changes for the Phase 56P ledger.",
-    "Recommendation-specific implementation artifacts, GAO status changes, and attributable operating outcomes for the Phase 56Q crosswalk."
+    "Recommendation-specific implementation artifacts, GAO status changes, and attributable operating outcomes for the Phase 56Q crosswalk.",
+    "Later GAO decisions on submitted artifacts, late-2026 milestone deliverables, exact implementation evidence, and attributable operating outcomes."
   ]
 }

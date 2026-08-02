@@ -319,6 +319,130 @@
         "decision": "Retain the Phase 56F evidence state. Recommendation identity and agency response improve follow-through but do not establish entity-level implementation or operating outcome.",
         "exact_matches": 4,
         "held_mappings": 1
+      },
+      "phase_56r_implementation_artifact_milestone_follow_through": [
+        {
+          "action_key": "VA-01",
+          "parent_action_key": "VA-01",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-25-106969 Recommendation 2",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Promised",
+          "response_artifact_type": "Revised VHA enterprise risk-management function",
+          "artifact_availability": "Planned actions described on the GAO page",
+          "named_milestone": "September 2028",
+          "milestone_state": "Future monitor",
+          "gao_review_state": "Implementation not yet demonstrated",
+          "remaining_gap": "A risk-management function that fully incorporates all GAO leading practices.",
+          "continuation_rule": "Recheck for interim policies and evidence before the September 2028 target. Preserve VA-01 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-25-106969-recommendation-status"
+          ],
+          "signal_id": "signal-56r-va-health-system-enterprise-risk-practices"
+        },
+        {
+          "action_key": "VA-02-R1",
+          "parent_action_key": "VA-02",
+          "record_relationship": "Recommendation-specific child",
+          "official_identity": "GAO-25-106874 Recommendation 1",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Promised",
+          "response_artifact_type": "Independent total life-cycle cost estimate",
+          "artifact_availability": "Planned artifact described on the GAO page; no full-life-cycle estimate located",
+          "named_milestone": "May 2028 contract horizon",
+          "milestone_state": "Future but scope-limited",
+          "gao_review_state": "GAO says planned scope is insufficient",
+          "remaining_gap": "An updated independent estimate covering the full modernization life cycle and following GAO best practices.",
+          "continuation_rule": "Recheck for a full-life-cycle estimate, not only a current-contract estimate. Preserve VA-02 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-25-106874-recommendation-status"
+          ],
+          "signal_id": "signal-56r-va-ehr-full-lifecycle-cost-estimate"
+        },
+        {
+          "action_key": "VA-02-R2",
+          "parent_action_key": "VA-02",
+          "record_relationship": "Recommendation-specific child",
+          "official_identity": "GAO-25-106874 Recommendation 2",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Promised",
+          "response_artifact_type": "Full-program integrated master schedule",
+          "artifact_availability": "Planned artifact described on the GAO page; no full-program schedule located",
+          "named_milestone": "May 2028 contract horizon",
+          "milestone_state": "Future but scope-limited",
+          "gao_review_state": "GAO says planned scope is insufficient",
+          "remaining_gap": "A reliable integrated master schedule covering the full modernization effort and following GAO best practices.",
+          "continuation_rule": "Recheck for a full-program schedule, not only a current-contract deployment schedule. Preserve VA-02 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-25-106874-recommendation-status"
+          ],
+          "signal_id": "signal-56r-va-ehr-full-integrated-master-schedule"
+        },
+        {
+          "action_key": "VA-03",
+          "parent_action_key": "VA-03",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-22-105195 Recommendation 1",
+          "current_status": "Open – Partially Addressed",
+          "normalized_implementation_stage": "Partially addressed",
+          "response_artifact_type": "VA Notice 24-08 establishing the Acquisition Lifecycle Framework",
+          "artifact_availability": "Public official artifact located; notice later expired without proving full implementation",
+          "named_milestone": null,
+          "milestone_state": "No current completion date",
+          "gao_review_state": "GAO classifies the recommendation Open – Partially Addressed",
+          "remaining_gap": "A finalized and operating governance structure that addresses cost data, workforce, process alignment, and compliance.",
+          "continuation_rule": "Recheck for the successor directive and evidence that the framework's governance mechanisms operate. Preserve VA-03 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-22-105195-recommendation-status",
+            "source-56r-va-notice-24-08-acquisition-lifecycle-framework"
+          ],
+          "signal_id": "signal-56r-va-major-acquisition-oversight-framework-risks"
+        },
+        {
+          "action_key": "VA-04",
+          "parent_action_key": "VA-04",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-25-107398 Recommendation 4",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Promised",
+          "response_artifact_type": "VA 180-day response letter",
+          "artifact_availability": "Not reflected on the current GAO page",
+          "named_milestone": "Spring 2026",
+          "milestone_state": "Elapsed; no response reflected",
+          "gao_review_state": "Response pending on official record",
+          "remaining_gap": "Category-specific savings and cost-avoidance goals with tracked progress.",
+          "continuation_rule": "Recheck when the official GAO page posts the response or implementation evidence. Preserve VA-04 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-25-107398-recommendation-status"
+          ],
+          "signal_id": "signal-56r-va-common-spend-savings-goals-tracking"
+        },
+        {
+          "action_key": "VA-05",
+          "parent_action_key": "VA-05",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-24-106189 Recommendation 5",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Promised",
+          "response_artifact_type": "Joint Transition Task Force draft effectiveness assessment",
+          "artifact_availability": "Draft described on the GAO page; no separate public assessment located",
+          "named_milestone": "December 2026",
+          "milestone_state": "Future monitor",
+          "gao_review_state": "Draft not accepted as implementation",
+          "remaining_gap": "A completed cross-department assessment and recommended changes addressing gaps, overlap, or duplication.",
+          "continuation_rule": "Recheck after the December 2026 completion target or an earlier public assessment. Preserve VA-05 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-24-106189-recommendation-status"
+          ],
+          "signal_id": "signal-56r-va-dod-servicemember-transition-coordination"
+        }
+      ],
+      "phase_56r_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Recommendation-specific artifacts and milestones deepen follow-through but do not establish implementation, closure, or operating outcome.",
+        "recommendation_records": 6,
+        "child_records": 2
       }
     },
     {
@@ -622,6 +746,110 @@
         "decision": "Retain the Phase 56F evidence state. Recommendation identity and agency response improve follow-through but do not establish entity-level implementation or operating outcome.",
         "exact_matches": 5,
         "held_mappings": 0
+      },
+      "phase_56r_implementation_artifact_milestone_follow_through": [
+        {
+          "action_key": "DOE-01",
+          "parent_action_key": "DOE-01",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-23-104661 Recommendation 1",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Promised",
+          "response_artifact_type": "Life-cycle cost estimate",
+          "artifact_availability": "Not yet completed or publicly linked on the GAO page",
+          "named_milestone": "December 2026",
+          "milestone_state": "Future monitor",
+          "gao_review_state": "Not submitted",
+          "remaining_gap": "A complete estimate aligned with GAO cost-estimating best practices.",
+          "continuation_rule": "Recheck the official GAO page after the December 2026 estimate milestone. Preserve DOE-01 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-23-104661-recommendation-status"
+          ],
+          "signal_id": "signal-56r-doe-pit-production-lifecycle-cost-estimate"
+        },
+        {
+          "action_key": "DOE-02",
+          "parent_action_key": "DOE-02",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-25-107109 Recommendation 3",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Submitted",
+          "response_artifact_type": "April 2026 180-day letter and cited analyses",
+          "artifact_availability": "Described on the GAO page; no separate public response artifact linked",
+          "named_milestone": null,
+          "milestone_state": "No named date",
+          "gao_review_state": "GAO says submitted material is incomplete",
+          "remaining_gap": "A complex-wide analysis that compares waste-disposal alternatives and identifies an optimal strategy.",
+          "continuation_rule": "Recheck for a complex-wide analysis or a GAO status change. Preserve DOE-02 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-25-107109-recommendation-status"
+          ],
+          "signal_id": "signal-56r-doe-complex-wide-waste-disposal-analysis"
+        },
+        {
+          "action_key": "DOE-03",
+          "parent_action_key": "DOE-03",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-18-477 Recommendation 2",
+          "current_status": "Open",
+          "normalized_implementation_stage": "No conforming artifact reported",
+          "response_artifact_type": "Strategic Petroleum Reserve Long-Term Strategic Review",
+          "artifact_availability": "No completed review linked on the GAO page",
+          "named_milestone": "Fiscal year 2021",
+          "milestone_state": "Elapsed without conforming artifact",
+          "gao_review_state": "No completed artifact reported",
+          "remaining_gap": "A finalized periodic review with timely cost-and-benefit information for Congress.",
+          "continuation_rule": "Recheck when DOE finalizes a periodic review or GAO changes the recommendation status. Preserve DOE-03 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-18-477-recommendation-status"
+          ],
+          "signal_id": "signal-56r-doe-strategic-petroleum-reserve-periodic-reviews"
+        },
+        {
+          "action_key": "DOE-04",
+          "parent_action_key": "DOE-04",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-22-105394 Recommendation 1",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Submitted",
+          "response_artifact_type": "OCED compliance-oversight framework and independent-assessment policy",
+          "artifact_availability": "Described on the GAO page; no separate public artifact located",
+          "named_milestone": null,
+          "milestone_state": "No named date",
+          "gao_review_state": "GAO says artifact scope is incomplete",
+          "remaining_gap": "A requirement for external independent reviews across all covered large nuclear demonstration projects and decision points.",
+          "continuation_rule": "Recheck for a revised cross-office policy or GAO status change. Preserve DOE-04 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-22-105394-recommendation-status"
+          ],
+          "signal_id": "signal-56r-doe-nuclear-demonstration-project-oversight"
+        },
+        {
+          "action_key": "DOE-05",
+          "parent_action_key": "DOE-05",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-24-106989 Recommendation 3",
+          "current_status": "Open",
+          "normalized_implementation_stage": "No conforming artifact reported",
+          "response_artifact_type": "Pause decision and prerequisite analysis",
+          "artifact_availability": "No implementation artifact reported",
+          "named_milestone": null,
+          "milestone_state": "No named date",
+          "gao_review_state": "Agency nonconcurrence; no conforming action",
+          "remaining_gap": "The specified pause until prerequisites and consideration of an independent alternatives analysis are complete.",
+          "continuation_rule": "Recheck only for an exact pause decision, prerequisite analysis, or GAO status change. Preserve DOE-05 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-24-106989-recommendation-status"
+          ],
+          "signal_id": "signal-56r-doe-hanford-waste-treatment-pause-conditions"
+        }
+      ],
+      "phase_56r_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Recommendation-specific artifacts and milestones deepen follow-through but do not establish implementation, closure, or operating outcome.",
+        "recommendation_records": 5,
+        "child_records": 0
       }
     },
     {
@@ -1001,6 +1229,172 @@
         "decision": "Retain the Phase 56F evidence state. Recommendation identity and agency response improve follow-through but do not establish entity-level implementation or operating outcome.",
         "exact_matches": 8,
         "held_mappings": 0
+      },
+      "phase_56r_implementation_artifact_milestone_follow_through": [
+        {
+          "action_key": "DOT-01",
+          "parent_action_key": "DOT-01",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-21-310 Recommendation 1",
+          "current_status": "Open",
+          "normalized_implementation_stage": "No conforming artifact reported",
+          "response_artifact_type": "Quantitative mission-critical skill-gap assessment",
+          "artifact_availability": "No completed assessment reported",
+          "named_milestone": null,
+          "milestone_state": "No scheduled completion",
+          "gao_review_state": "No conforming artifact reported",
+          "remaining_gap": "A quantitative assessment covering all critical skills and mission-critical occupations.",
+          "continuation_rule": "Recheck when FAA resumes and completes the assessment or GAO changes status. Preserve DOT-01 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-21-310-recommendation-status"
+          ],
+          "signal_id": "signal-56r-dot-faa-mission-critical-skill-gap-data"
+        },
+        {
+          "action_key": "DOT-02",
+          "parent_action_key": "DOT-02",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-26-107320 Recommendation 3",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Under GAO review",
+          "response_artifact_type": "Controller hiring and training performance dashboard plus 180-day response",
+          "artifact_availability": "Two related public FAA plans located; dashboard documentation remains described on the GAO page",
+          "named_milestone": null,
+          "milestone_state": "No named GAO review date",
+          "gao_review_state": "Artifact under GAO review",
+          "remaining_gap": "GAO confirmation that FAA uses integrated data to assess processes and inform improvements.",
+          "continuation_rule": "Recheck the official GAO page for its dashboard-review decision. Preserve DOT-02 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-26-107320-recommendation-status",
+            "source-56r-faa-flight-plan-2026",
+            "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028"
+          ],
+          "signal_id": "signal-56r-dot-air-traffic-controller-workforce-processes"
+        },
+        {
+          "action_key": "DOT-03",
+          "parent_action_key": "DOT-03",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-17-20 Recommendation 1",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Promised",
+          "response_artifact_type": "Discretionary Grants Lifecycle Management System and department-wide guidance",
+          "artifact_availability": "Planned artifacts described on the GAO page; no completed system or guidance located",
+          "named_milestone": "October 2026",
+          "milestone_state": "Future monitor",
+          "gao_review_state": "Implementation not yet submitted",
+          "remaining_gap": "A completed department-wide directive or equivalent system-and-guidance package satisfying all three directive elements.",
+          "continuation_rule": "Recheck after the October 2026 completion target. Preserve DOT-03 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-17-20-recommendation-status"
+          ],
+          "signal_id": "signal-56r-dot-discretionary-grant-department-wide-directive"
+        },
+        {
+          "action_key": "DOT-04",
+          "parent_action_key": "DOT-04",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-25-107166 Recommendation 1",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Promised",
+          "response_artifact_type": "Grants Transparency Dashboard and grant lifecycle system",
+          "artifact_availability": "Planned artifacts described on the GAO page",
+          "named_milestone": "Second quarter of fiscal year 2027",
+          "milestone_state": "Future monitor",
+          "gao_review_state": "Recommendation remains unaddressed",
+          "remaining_gap": "Complete formula-versus-discretionary obligation and outlay information provided to Congress.",
+          "continuation_rule": "Recheck for a congressional reporting artifact before or alongside the planned dashboard. Preserve DOT-04 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-25-107166-recommendation-status"
+          ],
+          "signal_id": "signal-56r-dot-iija-grant-status-reporting"
+        },
+        {
+          "action_key": "DOT-05",
+          "parent_action_key": "DOT-05",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-25-107166 Recommendation 2",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Submitted",
+          "response_artifact_type": "January 2026 enterprise-risk guidance and planned fiscal-year 2026 risk emphasis",
+          "artifact_availability": "Described on the GAO page; separate guidance not linked",
+          "named_milestone": "Fiscal year 2026 cycle",
+          "milestone_state": "Active cycle",
+          "gao_review_state": "GAO says submitted actions are incomplete",
+          "remaining_gap": "A portfolio-wide assessment identifying, rating, monitoring, and responding to grant-agreement risks.",
+          "continuation_rule": "Recheck for the fiscal-year 2026 enterprise risk profile and GAO's scope assessment. Preserve DOT-05 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-25-107166-recommendation-status"
+          ],
+          "signal_id": "signal-56r-dot-grant-agreement-awardee-risk-assessment"
+        },
+        {
+          "action_key": "DOT-06",
+          "parent_action_key": "DOT-06",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-23-105189 Recommendation 1",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Promised",
+          "response_artifact_type": "FAA Drone Normalization Strategy Report Update 2026",
+          "artifact_availability": "Public official artifact located",
+          "named_milestone": "June 30, 2026",
+          "milestone_state": "Elapsed; GAO page has no review update",
+          "gao_review_state": "GAO acceptance not recorded",
+          "remaining_gap": "GAO confirmation that the revised strategy contains all seven elements of a comprehensive strategy.",
+          "continuation_rule": "Recheck the official GAO page for its review of the public updated strategy. Preserve DOT-06 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-23-105189-recommendation-status",
+            "source-56r-faa-drone-normalization-strategy-update-2026"
+          ],
+          "signal_id": "signal-56r-dot-faa-drone-integration-strategy"
+        },
+        {
+          "action_key": "DOT-07",
+          "parent_action_key": "DOT-07",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-26-107648 Recommendation 1",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Promised",
+          "response_artifact_type": "BVLOS rulemaking, industry standards, phased deployment, and long-term research initiatives",
+          "artifact_availability": "Public official strategy located; other actions remain described on the GAO page",
+          "named_milestone": "March 30, 2027",
+          "milestone_state": "Future monitor",
+          "gao_review_state": "Initial actions not yet complete",
+          "remaining_gap": "Implemented actions with clear roles, estimated costs, and technical milestones for communication and detect-and-avoid capability.",
+          "continuation_rule": "Recheck at material rule, standards, or March 2027 milestone changes. Preserve DOT-07 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-26-107648-recommendation-status",
+            "source-56r-faa-drone-normalization-strategy-update-2026"
+          ],
+          "signal_id": "signal-56r-dot-faa-information-centric-airspace-milestones"
+        },
+        {
+          "action_key": "DOT-08",
+          "parent_action_key": "DOT-08",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-18-132 Recommendation 1",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Submitted",
+          "response_artifact_type": "DOT Automated Vehicle Framework and related initiatives",
+          "artifact_availability": "Public official artifact located",
+          "named_milestone": null,
+          "milestone_state": "No named date",
+          "gao_review_state": "GAO says artifact scope is incomplete",
+          "remaining_gap": "One department-wide plan with goals, priorities, steps, milestones, and performance measures.",
+          "continuation_rule": "Recheck for a comprehensive plan or GAO status change. Preserve DOT-08 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-18-132-recommendation-status",
+            "source-56r-dot-automated-vehicle-framework-2025"
+          ],
+          "signal_id": "signal-56r-dot-automated-vehicle-initiative-plan"
+        }
+      ],
+      "phase_56r_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Recommendation-specific artifacts and milestones deepen follow-through but do not establish implementation, closure, or operating outcome.",
+        "recommendation_records": 8,
+        "child_records": 0
       }
     },
     {
@@ -1559,5 +1953,6 @@
   "phase_56n_continuation_ledger": "phase-56n-verified-remediation-outcomes.json",
   "phase_56o_continuation_ledger": "phase-56o-cross-agency-remediation.json",
   "phase_56p_continuation_ledger": "phase-56p-action-recommendation-ledger.json",
-  "phase_56q_continuation_ledger": "phase-56q-recommendation-identity-crosswalk.json"
+  "phase_56q_continuation_ledger": "phase-56q-recommendation-identity-crosswalk.json",
+  "phase_56r_continuation_ledger": "phase-56r-implementation-artifact-milestone-ledger.json"
 }

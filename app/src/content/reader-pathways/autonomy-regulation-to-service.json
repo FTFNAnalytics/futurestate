@@ -17,7 +17,8 @@
     "The DMV series separates safety-driver and driverless public-road testing and retains the rule against cross-company capability rankings.",
     "DOT's 2026 priority portfolio adds exact implementation and current-workload context for emerging-technology integration without changing the service evidence gate.",
     "Phase 56P adds exact FAA drone-strategy and airspace-milestone actions plus DOT's department-wide automated-vehicle planning action.",
-    "Phase 56Q attaches exact official recommendation identities and current response states to all eight DOT actions, including the three emerging-technology records."
+    "Phase 56Q attaches exact official recommendation identities and current response states to all eight DOT actions, including the three emerging-technology records.",
+    "Phase 56R connects eight DOT recommendations to current artifacts, milestone periods, GAO review states, and exact remaining gaps."
   ],
   "primary_topics": [
     "Mobility",
@@ -51,7 +52,15 @@
     "signal-56q-dot-grant-agreement-awardee-risk-assessment",
     "signal-56q-dot-faa-drone-integration-strategy",
     "signal-56q-dot-faa-information-centric-airspace-milestones",
-    "signal-56q-dot-automated-vehicle-initiative-plan"
+    "signal-56q-dot-automated-vehicle-initiative-plan",
+    "signal-56r-dot-faa-mission-critical-skill-gap-data",
+    "signal-56r-dot-air-traffic-controller-workforce-processes",
+    "signal-56r-dot-discretionary-grant-department-wide-directive",
+    "signal-56r-dot-iija-grant-status-reporting",
+    "signal-56r-dot-grant-agreement-awardee-risk-assessment",
+    "signal-56r-dot-faa-drone-integration-strategy",
+    "signal-56r-dot-faa-information-centric-airspace-milestones",
+    "signal-56r-dot-automated-vehicle-initiative-plan"
   ],
   "source_ids": [
     "source-dot-automated-vehicle-framework-2025",
@@ -80,7 +89,11 @@
     "source-56q-gao-25-107166-recommendation-status",
     "source-56q-gao-23-105189-recommendation-status",
     "source-56q-gao-26-107648-recommendation-status",
-    "source-56q-gao-18-132-recommendation-status"
+    "source-56q-gao-18-132-recommendation-status",
+    "source-56r-faa-flight-plan-2026",
+    "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028",
+    "source-56r-faa-drone-normalization-strategy-update-2026",
+    "source-56r-dot-automated-vehicle-framework-2025"
   ],
   "organization_ids": [],
   "technology_ids": [
@@ -92,7 +105,8 @@
     "briefing-research-watch-005-longitudinal-operating-series",
     "briefing-research-watch-019-cross-agency-remediation",
     "briefing-research-watch-020-action-level-priority-recommendations",
-    "briefing-research-watch-021-gao-recommendation-identity-agency-response"
+    "briefing-research-watch-021-gao-recommendation-identity-agency-response",
+    "briefing-research-watch-022-recommendation-implementation-artifacts-milestones"
   ],
   "dependency_map_ids": [
     "dependency-map-autonomy-rules-are-not-service",
@@ -105,7 +119,8 @@
     "research-collection-longitudinal-operating-series-2020-2025",
     "research-collection-cross-agency-priority-remediation-portfolios-2026",
     "research-collection-agency-priority-recommendation-action-ledger-2026",
-    "research-collection-gao-recommendation-identity-agency-response-crosswalk-2026"
+    "research-collection-gao-recommendation-identity-agency-response-crosswalk-2026",
+    "research-collection-gao-recommendation-implementation-artifact-milestone-ledger-2026"
   ],
   "evidence_gap_ids": [
     "gap-010",
@@ -152,6 +167,11 @@
       "stage": "Phase 56Q recommendation identity and agency response",
       "current_state": "Phase 56Q attaches exact official recommendation identities and current response states to all eight DOT actions, including the three emerging-technology records.",
       "boundary": "An open FAA or DOT recommendation and its response history do not establish authorization, integration, deployment, safety, or service outcomes."
+    },
+    {
+      "stage": "Phase 56R implementation artifacts and milestones",
+      "current_state": "Phase 56R connects eight DOT recommendations to current artifacts, milestone periods, GAO review states, and exact remaining gaps.",
+      "boundary": "A public FAA or DOT plan does not establish implementation, authorization, integration, deployment, safety, or service outcome."
     }
   ],
   "evidence_limits": [
@@ -165,7 +185,10 @@
     "FTFN Phase 56P action keys are stable local references, not official GAO Recommendations Database numbers.",
     "An open FAA or DOT recommendation and its response history do not establish authorization, integration, deployment, safety, or service outcomes.",
     "The official identity is the GAO report number plus recommendation number; FTFN does not invent a separate opaque database ID.",
-    "HHS-04 and VA-02 remain held because each local action maps to two official recommendations."
+    "HHS-04 and VA-02 remain held because each local action maps to two official recommendations.",
+    "A public FAA or DOT plan does not establish implementation, authorization, integration, deployment, safety, or service outcome.",
+    "HHS-04 and VA-02 remain parent crosswalks; their recommendation-specific children do not overwrite them.",
+    "Named dates are bounded monitors and do not pause content expansion."
   ],
   "next_records": [
     "Carrier-level CPUC trip, fleet, service-hour, availability, cancellation, accessibility, and cost records.",
@@ -176,6 +199,7 @@
     "Operator service trips, paid and deadhead miles, fleet, domain, wait time, accessibility, incidents, normalized safety, cost, and geography.",
     "Action-level implementation evidence for DOT's emerging-technology priorities and the open AI-inventory action.",
     "Underlying GAO Recommendations Database records, agency responses, and later action-specific status changes for the Phase 56P ledger.",
-    "Recommendation-specific implementation artifacts, GAO status changes, and attributable operating outcomes for the Phase 56Q crosswalk."
+    "Recommendation-specific implementation artifacts, GAO status changes, and attributable operating outcomes for the Phase 56Q crosswalk.",
+    "Later GAO decisions on submitted artifacts, late-2026 milestone deliverables, exact implementation evidence, and attributable operating outcomes."
   ]
 }

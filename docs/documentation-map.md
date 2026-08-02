@@ -1559,6 +1559,7 @@ Purpose:
 - Record the completed Phase 56O eight-record cross-agency priority-remediation batch, seven agency portfolios, one bounded government-wide benefit model, eight Published signals, inherited HHS hold, unchanged evidence-state ledger, eleven-file archive, Research Watch 019, owner-only deployment receipt, and Phase 56P handoff.
 - Record the completed Phase 56P twenty-two-action priority-recommendation decomposition, four full-report source profiles, twenty-two Published signals, local-key and priority-designation boundaries, inherited HHS hold, unchanged evidence-state ledger, twenty-five-file archive, Research Watch 020, owner-only deployment receipt, and Phase 56Q handoff.
 - Record the completed Phase 56Q twenty-two-action recommendation-identity pass, twenty exact matches, two one-to-many holds, four preserved candidates, twenty-one official source profiles, twenty Published and two In Review signals, response and implementation boundaries, inherited HHS hold, unchanged evidence-state ledger, twenty-five-file archive, Research Watch 021, owner-only deployment receipt, and Phase 56R handoff.
+- Record the completed Phase 56R twenty-four-recommendation artifact-and-milestone pass, four recommendation-specific children, preserved parent crosswalks, five public agency artifacts, thirteen milestone monitors, twenty-four Published signals, implementation-state boundaries, inherited HHS hold, unchanged evidence-state ledger, twenty-seven-file archive, Research Watch 022, owner-only deployment receipt, and Phase 56S handoff.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 
@@ -1590,6 +1591,7 @@ Primary file:
 - `docs/work-packages/phase-56o-cross-agency-remediation-follow-through.md` for the seven agency priority portfolios, bounded government-wide benefit model, eight source profiles, eight Published signals, portfolio-arithmetic, modeled-versus-realized, no-ranking, and no-causation boundaries, inherited HHS hold, unchanged evidence-state ledger, archive contract, validation and owner-only deployment evidence, and Phase 56P handoff
 - `docs/work-packages/phase-56p-action-level-priority-recommendation-decomposition.md` for the twenty-two DOE, HHS, DOT, and VA action records, four full-report source profiles, twenty-two Published signals, local-key and priority-designation boundaries, action and publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56Q handoff
 - `docs/work-packages/phase-56q-gao-recommendation-identity-agency-response-resolution.md` for the twenty exact official identities, HHS-04 and VA-02 one-to-many holds, four preserved candidates, twenty-one product-page source profiles, twenty Published and two In Review signals, response, implementation, status, entity-ledger, closure, and outcome boundaries, identity and publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56R handoff
+- `docs/work-packages/phase-56r-recommendation-implementation-artifact-milestone-follow-through.md` for the twenty exact continuations, four recommendation-specific children, preserved parent crosswalks, five public agency artifact sources, thirteen milestone monitors, twenty-four Published signals, state and publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56S handoff
 
 Update when:
 
@@ -1619,6 +1621,7 @@ Update when:
 - the Phase 56O agency portfolios, government-wide model, action-level decomposition queue, archive, deployment receipt, or Phase 56P priorities change,
 - the Phase 56P action identities, local-key crosswalk, publication decisions, archive, deployment receipt, or Phase 56Q identity-resolution priorities change,
 - the Phase 56Q identity decisions, one-to-many holds, agency responses, archive, deployment receipt, or Phase 56R artifact and milestone priorities change,
+- the Phase 56R parent/child identities, artifact visibility, normalized implementation stages, milestone states, archive, deployment receipt, or Phase 56S missing-document priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

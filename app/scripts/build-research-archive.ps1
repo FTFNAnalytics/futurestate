@@ -67,6 +67,12 @@ $captureRows = foreach ($document in $documents) {
 
     $publicationDate = if ($document.publication_date) { $document.publication_date } else { "Not stated" }
     $boundary = @($document.evidence_limits) -join " "
+    $supportingUrls = @($document.supporting_official_urls)
+    $supportingLines = if ($supportingUrls.Count -gt 0) {
+      @("", "Supporting public artifacts:") + @($supportingUrls | ForEach-Object { "- $_" })
+    } else {
+      @()
+    }
     @(
       "Title: $($document.title)",
       "Publisher: $($document.publisher)",
@@ -77,6 +83,7 @@ $captureRows = foreach ($document in $documents) {
       "Captured by FTFN: $($document.captured_date)",
       "",
       "Boundary: $boundary"
+      $supportingLines
     ) | Set-Content -LiteralPath $capturePath -Encoding utf8
   }
 
@@ -99,6 +106,8 @@ $captureRows = foreach ($document in $documents) {
     sha256 = $hash.Hash.ToLowerInvariant()
     official_url = $document.official_url
     source_id = $document.source_id
+    supporting_source_ids = @($document.supporting_source_ids)
+    supporting_official_urls = @($document.supporting_official_urls)
   }
 }
 

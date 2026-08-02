@@ -503,6 +503,110 @@
         "decision": "Retain the Phase 56F evidence state. Recommendation identity and agency response improve follow-through but do not establish entity-level implementation or operating outcome.",
         "exact_matches": 3,
         "held_mappings": 1
+      },
+      "phase_56r_implementation_artifact_milestone_follow_through": [
+        {
+          "action_key": "HHS-01",
+          "parent_action_key": "HHS-01",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-16-568 Recommendation 2",
+          "current_status": "Open",
+          "normalized_implementation_stage": "No conforming artifact reported",
+          "response_artifact_type": "Revised Medicare uncompensated-care payment methodology",
+          "artifact_availability": "No implementation artifact reported",
+          "named_milestone": null,
+          "milestone_state": "No named date",
+          "gao_review_state": "No conforming action reported",
+          "remaining_gap": "A methodology that accounts for Medicaid payments offsetting uncompensated-care costs.",
+          "continuation_rule": "Recheck for an exact methodology change or GAO status change. Preserve HHS-01 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-16-568-recommendation-status"
+          ],
+          "signal_id": "signal-56r-hhs-medicaid-offsets-medicare-hospital-payments"
+        },
+        {
+          "action_key": "HHS-02",
+          "parent_action_key": "HHS-02",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-18-564 Recommendation 1",
+          "current_status": "Open – Partially Addressed",
+          "normalized_implementation_stage": "Partially addressed",
+          "response_artifact_type": "National risk tool, reorganization, and staffing actions",
+          "artifact_availability": "Actions described on the GAO page; underlying tool is not linked",
+          "named_milestone": null,
+          "milestone_state": "No named date",
+          "gao_review_state": "GAO classifies the recommendation Open – Partially Addressed",
+          "remaining_gap": "A current national Medicaid program-integrity risk assessment tied to oversight-resource allocation.",
+          "continuation_rule": "Recheck for a completed national assessment and evidence that it informs resource allocation. Preserve HHS-02 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-18-564-recommendation-status"
+          ],
+          "signal_id": "signal-56r-hhs-medicaid-oversight-national-risk-assessment"
+        },
+        {
+          "action_key": "HHS-03",
+          "parent_action_key": "HHS-03",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-26-107507 Recommendation 4",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Promised",
+          "response_artifact_type": "HHS 180-day response letter",
+          "artifact_availability": "Not yet reflected on the GAO page",
+          "named_milestone": "Summer 2026",
+          "milestone_state": "Current seasonal monitor",
+          "gao_review_state": "Response pending",
+          "remaining_gap": "A response and later evidence that CDC collects, analyzes, and uses jurisdiction capability information.",
+          "continuation_rule": "Recheck after the summer 2026 response appears on the official GAO page. Preserve HHS-03 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-26-107507-recommendation-status"
+          ],
+          "signal_id": "signal-56r-hhs-public-health-preparedness-capability-gaps"
+        },
+        {
+          "action_key": "HHS-04-R1",
+          "parent_action_key": "HHS-04",
+          "record_relationship": "Recommendation-specific child",
+          "official_identity": "GAO-24-106276 Recommendation 1",
+          "current_status": "Open – Partially Addressed",
+          "normalized_implementation_stage": "Partially addressed",
+          "response_artifact_type": "Department-wide after-action program standard operating procedures",
+          "artifact_availability": "Described on the GAO page; no separate public SOP located",
+          "named_milestone": null,
+          "milestone_state": "No named date",
+          "gao_review_state": "GAO classifies Recommendation 1 Open – Partially Addressed",
+          "remaining_gap": "An exercise or response after-action report demonstrating cross-component coordination under the procedures.",
+          "continuation_rule": "Recheck for an after-action report that demonstrates Recommendation 1 in operation. Preserve HHS-04 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-24-106276-recommendation-status"
+          ],
+          "signal_id": "signal-56r-hhs-after-action-component-coordination"
+        },
+        {
+          "action_key": "HHS-04-R2",
+          "parent_action_key": "HHS-04",
+          "record_relationship": "Recommendation-specific child",
+          "official_identity": "GAO-24-106276 Recommendation 2",
+          "current_status": "Open – Partially Addressed",
+          "normalized_implementation_stage": "Partially addressed",
+          "response_artifact_type": "External-stakeholder after-action participation standard operating procedures",
+          "artifact_availability": "Described on the GAO page; no separate public SOP located",
+          "named_milestone": null,
+          "milestone_state": "No named date",
+          "gao_review_state": "GAO classifies Recommendation 2 Open – Partially Addressed",
+          "remaining_gap": "An exercise or response after-action report demonstrating relevant external-stakeholder participation.",
+          "continuation_rule": "Recheck for an after-action report that demonstrates Recommendation 2 in operation. Preserve HHS-04 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-24-106276-recommendation-status"
+          ],
+          "signal_id": "signal-56r-hhs-after-action-external-stakeholder-participation"
+        }
+      ],
+      "phase_56r_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Recommendation-specific artifacts and milestones deepen follow-through but do not establish implementation, closure, or operating outcome.",
+        "recommendation_records": 5,
+        "child_records": 2
       }
     },
     {
@@ -1062,5 +1166,6 @@
   "phase_56n_continuation_ledger": "phase-56n-verified-remediation-outcomes.json",
   "phase_56o_continuation_ledger": "phase-56o-cross-agency-remediation.json",
   "phase_56p_continuation_ledger": "phase-56p-action-recommendation-ledger.json",
-  "phase_56q_continuation_ledger": "phase-56q-recommendation-identity-crosswalk.json"
+  "phase_56q_continuation_ledger": "phase-56q-recommendation-identity-crosswalk.json",
+  "phase_56r_continuation_ledger": "phase-56r-implementation-artifact-milestone-ledger.json"
 }
