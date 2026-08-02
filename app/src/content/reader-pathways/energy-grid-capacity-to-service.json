@@ -39,7 +39,8 @@
     "An exact-record check can improve the evidence rail without changing the selected closure state.",
     "Phase 56P adds five exact DOE actions across nuclear modernization, environmental liabilities, energy security, and program management.",
     "Phase 56Q attaches exact official recommendation identities and response histories to all five DOE actions.",
-    "Phase 56R connects all five DOE recommendations to the current artifact state, milestone, official review state, and remaining gap."
+    "Phase 56R connects all five DOE recommendations to the current artifact state, milestone, official review state, and remaining gap.",
+    "Phase 56S gives all five DOE recommendation records an element-level scope audit and records two adjacent public sources plus three unresolved public-document gaps."
   ],
   "primary_topics": [
     "Energy",
@@ -107,7 +108,12 @@
     "signal-56r-doe-complex-wide-waste-disposal-analysis",
     "signal-56r-doe-strategic-petroleum-reserve-periodic-reviews",
     "signal-56r-doe-nuclear-demonstration-project-oversight",
-    "signal-56r-doe-hanford-waste-treatment-pause-conditions"
+    "signal-56r-doe-hanford-waste-treatment-pause-conditions",
+    "signal-56s-doe-pit-production-lifecycle-cost-estimate",
+    "signal-56s-doe-complex-wide-waste-disposal-analysis",
+    "signal-56s-doe-strategic-petroleum-reserve-periodic-reviews",
+    "signal-56s-doe-nuclear-demonstration-project-oversight",
+    "signal-56s-doe-hanford-waste-treatment-pause-conditions"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -182,7 +188,9 @@
     "source-56q-gao-25-107109-recommendation-status",
     "source-56q-gao-18-477-recommendation-status",
     "source-56q-gao-22-105394-recommendation-status",
-    "source-56q-gao-24-106989-recommendation-status"
+    "source-56q-gao-24-106989-recommendation-status",
+    "source-56s-doe-spr-long-term-strategic-review-2016",
+    "source-56s-oced-independent-assessments-guidance-2024"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -208,7 +216,8 @@
     "briefing-research-watch-015-exact-record-continuation",
     "briefing-research-watch-020-action-level-priority-recommendations",
     "briefing-research-watch-021-gao-recommendation-identity-agency-response",
-    "briefing-research-watch-022-recommendation-implementation-artifacts-milestones"
+    "briefing-research-watch-022-recommendation-implementation-artifacts-milestones",
+    "briefing-research-watch-023-recommendation-artifact-scope-audit"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -233,7 +242,8 @@
     "research-collection-exact-record-continuation-batch-two-2026",
     "research-collection-agency-priority-recommendation-action-ledger-2026",
     "research-collection-gao-recommendation-identity-agency-response-crosswalk-2026",
-    "research-collection-gao-recommendation-implementation-artifact-milestone-ledger-2026"
+    "research-collection-gao-recommendation-implementation-artifact-milestone-ledger-2026",
+    "research-collection-gao-recommendation-artifact-scope-audit-missing-document-register-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -341,6 +351,11 @@
       "stage": "Phase 56R implementation artifacts and milestones",
       "current_state": "Phase 56R connects all five DOE recommendations to the current artifact state, milestone, official review state, and remaining gap.",
       "boundary": "A cost estimate, review, analysis, policy, or pause decision remains management evidence rather than project completion, service, savings, or outcome evidence."
+    },
+    {
+      "stage": "Phase 56S artifact scope audit",
+      "current_state": "Phase 56S gives all five DOE recommendation records an element-level scope audit and records two adjacent public sources plus three unresolved public-document gaps.",
+      "boundary": "An adjacent review or assessment guide does not establish the recommendation-specific plan, analysis, oversight, pause condition, implementation, or outcome."
     }
   ],
   "evidence_limits": [
@@ -372,7 +387,10 @@
     "HHS-04 and VA-02 remain held because each local action maps to two official recommendations.",
     "A cost estimate, review, analysis, policy, or pause decision remains management evidence rather than project completion, service, savings, or outcome evidence.",
     "HHS-04 and VA-02 remain parent crosswalks; their recommendation-specific children do not overwrite them.",
-    "Named dates are bounded monitors and do not pause content expansion."
+    "Named dates are bounded monitors and do not pause content expansion.",
+    "An adjacent review or assessment guide does not establish the recommendation-specific plan, analysis, oversight, pause condition, implementation, or outcome.",
+    "Not publicly located does not mean nonexistent, and a public candidate artifact is not necessarily sufficient.",
+    "The 1 Closed / 21 Partially Closed / 2 Open Phase 56F entity evidence ledger does not change."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -406,6 +424,7 @@
     "Reopen when CPUC or another competent regulator publishes final January 2025 incident findings or verifies closure of the relevant corrective actions.",
     "Underlying GAO Recommendations Database records, agency responses, and later action-specific status changes for the Phase 56P ledger.",
     "Recommendation-specific implementation artifacts, GAO status changes, and attributable operating outcomes for the Phase 56Q crosswalk.",
-    "Later GAO decisions on submitted artifacts, late-2026 milestone deliverables, exact implementation evidence, and attributable operating outcomes."
+    "Later GAO decisions on submitted artifacts, late-2026 milestone deliverables, exact implementation evidence, and attributable operating outcomes.",
+    "Exact agency response artifacts, official GAO sufficiency decisions, and later attributable implementation and operating-outcome evidence."
   ]
 }

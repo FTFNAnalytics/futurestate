@@ -607,6 +607,216 @@
         "decision": "Retain the Phase 56F entity evidence state. Recommendation-specific artifacts and milestones deepen follow-through but do not establish implementation, closure, or operating outcome.",
         "recommendation_records": 5,
         "child_records": 2
+      },
+      "phase_56s_artifact_scope_audit": [
+        {
+          "action_key": "HHS-01",
+          "parent_action_key": "HHS-01",
+          "official_identity": "GAO-16-568 Recommendation 2",
+          "availability_class": "Scope-adjacent public material located",
+          "scope_elements_total": 3,
+          "public_supported_elements": 1,
+          "public_partially_supported_elements": 0,
+          "public_unestablished_elements": 2,
+          "scope_checklist": [
+            {
+              "requirement": "Hospital-level Medicare uncompensated-care methodology",
+              "status": "Supported by located public record",
+              "evidence": "CMS publishes the current rule and hospital payment files."
+            },
+            {
+              "requirement": "Identification of Medicaid payments that offset uncompensated-care costs",
+              "status": "Not established by located public record",
+              "evidence": "The located rule does not expose the GAO-recommended offset treatment."
+            },
+            {
+              "requirement": "Adjustment of individual Medicare hospital payments for those offsets",
+              "status": "Not established by located public record",
+              "evidence": "No public exact methodology change located."
+            }
+          ],
+          "repositories_checked": [
+            "HHS and CMS policy and report libraries",
+            "CMS rule and program-integrity repositories",
+            "CDC and ASPR preparedness libraries",
+            "HHS FOIA and electronic reading-room surfaces",
+            "current GAO recommendation page"
+          ],
+          "located_source_ids": [
+            "source-56s-cms-fy2026-ipps-final-rule"
+          ],
+          "search_finding": "Relevant official public material was located, but it does not expose or satisfy every element of the exact response artifact.",
+          "ftfn_scope_finding": "FTFN public-scope check: 1 supported, 0 partial, and 2 not established across three directive elements.",
+          "gao_acceptance_state": "No conforming action reported",
+          "signal_id": "signal-56s-hhs-medicaid-offsets-medicare-hospital-payments"
+        },
+        {
+          "action_key": "HHS-02",
+          "parent_action_key": "HHS-02",
+          "official_identity": "GAO-18-564 Recommendation 1",
+          "availability_class": "Scope-adjacent public material located",
+          "scope_elements_total": 3,
+          "public_supported_elements": 0,
+          "public_partially_supported_elements": 2,
+          "public_unestablished_elements": 1,
+          "scope_checklist": [
+            {
+              "requirement": "National view of Medicaid program-integrity risks",
+              "status": "Partly supported by located public record",
+              "evidence": "The plan documents a centralized vulnerability process and named risk areas."
+            },
+            {
+              "requirement": "Assessment of oversight-resource capacity",
+              "status": "Not established by located public record",
+              "evidence": "The plan does not publish a national resource-capacity assessment."
+            },
+            {
+              "requirement": "Allocation of resources to highest-risk areas",
+              "status": "Partly supported by located public record",
+              "evidence": "The plan describes risk prioritization, but not the complete recommendation-specific allocation decision."
+            }
+          ],
+          "repositories_checked": [
+            "HHS and CMS policy and report libraries",
+            "CMS rule and program-integrity repositories",
+            "CDC and ASPR preparedness libraries",
+            "HHS FOIA and electronic reading-room surfaces",
+            "current GAO recommendation page"
+          ],
+          "located_source_ids": [
+            "source-56s-cms-comprehensive-medicaid-integrity-plan-2024-2028"
+          ],
+          "search_finding": "Relevant official public material was located, but it does not expose or satisfy every element of the exact response artifact.",
+          "ftfn_scope_finding": "FTFN public-scope check: 0 supported, 2 partial, and 1 not established across three directive elements.",
+          "gao_acceptance_state": "GAO classifies the recommendation Open – Partially Addressed",
+          "signal_id": "signal-56s-hhs-medicaid-oversight-national-risk-assessment"
+        },
+        {
+          "action_key": "HHS-03",
+          "parent_action_key": "HHS-03",
+          "official_identity": "GAO-26-107507 Recommendation 4",
+          "availability_class": "Scope-adjacent public material located",
+          "scope_elements_total": 3,
+          "public_supported_elements": 0,
+          "public_partially_supported_elements": 2,
+          "public_unestablished_elements": 1,
+          "scope_checklist": [
+            {
+              "requirement": "Collection of jurisdiction capability information",
+              "status": "Partly supported by located public record",
+              "evidence": "The framework guides PHEP priorities but does not publish the requested jurisdiction-level dataset."
+            },
+            {
+              "requirement": "Analysis of capability gaps across jurisdictions",
+              "status": "Not established by located public record",
+              "evidence": "No current national capability-gap analysis located."
+            },
+            {
+              "requirement": "Use of results for preparedness support and decisions",
+              "status": "Partly supported by located public record",
+              "evidence": "The framework prioritizes local support and data modernization without providing the recommendation-specific analysis."
+            }
+          ],
+          "repositories_checked": [
+            "HHS and CMS policy and report libraries",
+            "CMS rule and program-integrity repositories",
+            "CDC and ASPR preparedness libraries",
+            "HHS FOIA and electronic reading-room surfaces",
+            "current GAO recommendation page"
+          ],
+          "located_source_ids": [
+            "source-56s-cdc-response-readiness-framework-2024-2028"
+          ],
+          "search_finding": "Relevant official public material was located, but it does not expose or satisfy every element of the exact response artifact.",
+          "ftfn_scope_finding": "FTFN public-scope check: 0 supported, 2 partial, and 1 not established across three directive elements.",
+          "gao_acceptance_state": "Response pending",
+          "signal_id": "signal-56s-hhs-public-health-preparedness-capability-gaps"
+        },
+        {
+          "action_key": "HHS-04-R1",
+          "parent_action_key": "HHS-04",
+          "official_identity": "GAO-24-106276 Recommendation 1",
+          "availability_class": "No separately public response artifact located",
+          "scope_elements_total": 3,
+          "public_supported_elements": 0,
+          "public_partially_supported_elements": 0,
+          "public_unestablished_elements": 3,
+          "scope_checklist": [
+            {
+              "requirement": "Department-wide coordination procedures",
+              "status": "Not established by located public record",
+              "evidence": "No separately public SOP located."
+            },
+            {
+              "requirement": "Use across HHS component agencies",
+              "status": "Not established by located public record",
+              "evidence": "No public exercise or response record demonstrates operation."
+            },
+            {
+              "requirement": "After-action report documenting coordination",
+              "status": "Not established by located public record",
+              "evidence": "No qualifying public AAR located."
+            }
+          ],
+          "repositories_checked": [
+            "HHS and CMS policy and report libraries",
+            "CMS rule and program-integrity repositories",
+            "CDC and ASPR preparedness libraries",
+            "HHS FOIA and electronic reading-room surfaces",
+            "current GAO recommendation page"
+          ],
+          "located_source_ids": [],
+          "search_finding": "The official repository pass did not locate a separate public copy of the exact response artifact as of the capture date; this does not prove the artifact does not exist.",
+          "ftfn_scope_finding": "FTFN public-scope check: 0 supported, 0 partial, and 3 not established across three directive elements.",
+          "gao_acceptance_state": "GAO classifies Recommendation 1 Open – Partially Addressed",
+          "signal_id": "signal-56s-hhs-after-action-component-coordination"
+        },
+        {
+          "action_key": "HHS-04-R2",
+          "parent_action_key": "HHS-04",
+          "official_identity": "GAO-24-106276 Recommendation 2",
+          "availability_class": "No separately public response artifact located",
+          "scope_elements_total": 3,
+          "public_supported_elements": 0,
+          "public_partially_supported_elements": 0,
+          "public_unestablished_elements": 3,
+          "scope_checklist": [
+            {
+              "requirement": "Procedure for relevant external-stakeholder participation",
+              "status": "Not established by located public record",
+              "evidence": "No separately public SOP located."
+            },
+            {
+              "requirement": "Identification and inclusion of appropriate stakeholders",
+              "status": "Not established by located public record",
+              "evidence": "No public exercise or response record demonstrates the procedure."
+            },
+            {
+              "requirement": "After-action report documenting participation",
+              "status": "Not established by located public record",
+              "evidence": "No qualifying public AAR located."
+            }
+          ],
+          "repositories_checked": [
+            "HHS and CMS policy and report libraries",
+            "CMS rule and program-integrity repositories",
+            "CDC and ASPR preparedness libraries",
+            "HHS FOIA and electronic reading-room surfaces",
+            "current GAO recommendation page"
+          ],
+          "located_source_ids": [],
+          "search_finding": "The official repository pass did not locate a separate public copy of the exact response artifact as of the capture date; this does not prove the artifact does not exist.",
+          "ftfn_scope_finding": "FTFN public-scope check: 0 supported, 0 partial, and 3 not established across three directive elements.",
+          "gao_acceptance_state": "GAO classifies Recommendation 2 Open – Partially Addressed",
+          "signal_id": "signal-56s-hhs-after-action-external-stakeholder-participation"
+        }
+      ],
+      "phase_56s_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Public-document availability and FTFN scope findings deepen the evidence shelf but do not establish GAO acceptance, implementation, closure, or operating outcome.",
+        "recommendation_records": 5,
+        "scope_elements": 15
       }
     },
     {
@@ -1167,5 +1377,6 @@
   "phase_56o_continuation_ledger": "phase-56o-cross-agency-remediation.json",
   "phase_56p_continuation_ledger": "phase-56p-action-recommendation-ledger.json",
   "phase_56q_continuation_ledger": "phase-56q-recommendation-identity-crosswalk.json",
-  "phase_56r_continuation_ledger": "phase-56r-implementation-artifact-milestone-ledger.json"
+  "phase_56r_continuation_ledger": "phase-56r-implementation-artifact-milestone-ledger.json",
+  "phase_56s_scope_audit_ledger": "phase-56s-artifact-scope-audit-missing-document-register.json"
 }

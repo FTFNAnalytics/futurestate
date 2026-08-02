@@ -102,6 +102,7 @@ for (const source of artifactSources) {
     last_checked_date: capturedDate,
     watch_lanes: ["Security and Standards", "Cross-Cutting Official Rails"],
     live_access_type: source.url.endsWith(".pdf") ? "Data Download" : "Release Page",
+    ...(source.url.endsWith(".pdf") ? { data_download_url: source.url } : {}),
     review_cadence_days: 45,
     monitoring_status: "Active",
     coverage_role: ["Primary Data", "Source Freshness"],

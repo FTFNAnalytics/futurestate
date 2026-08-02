@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: 24 entity coverage states now carry exact continuation decisions through Phase 56R, while parent action, child recommendation, artifact state, milestone, official review, closure, operating outcome, period, denominator, and reopening boundaries remain attached.",
+  "summary": "A comparison and inference protocol: twenty-four recommendation records now carry seventy-two directive-element checks and explicit public-document availability findings, while FTFN scope, GAO acceptance, implementation, closure, entity evidence, outcome, period, denominator, and reopening boundaries remain attached.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -288,7 +288,19 @@
     "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028",
     "source-56r-faa-drone-normalization-strategy-update-2026",
     "source-56r-dot-automated-vehicle-framework-2025",
-    "source-56r-va-notice-24-08-acquisition-lifecycle-framework"
+    "source-56r-va-notice-24-08-acquisition-lifecycle-framework",
+    "source-56s-doe-spr-long-term-strategic-review-2016",
+    "source-56s-oced-independent-assessments-guidance-2024",
+    "source-56s-cms-fy2026-ipps-final-rule",
+    "source-56s-cms-comprehensive-medicaid-integrity-plan-2024-2028",
+    "source-56s-cdc-response-readiness-framework-2024-2028",
+    "source-56s-faa-aviation-safety-workforce-plan-2026",
+    "source-56s-dot-fy2026-budget-discretionary-grants-centralization",
+    "source-56s-dot-iija-funding-status-2026",
+    "source-56s-vha-enterprise-risk-management",
+    "source-56s-va-fy2026-ehr-budget-submission",
+    "source-56s-va-ehr-deployment-schedule-2026-2031",
+    "source-56s-va-acquisition-lifecycle-publication-status"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -494,7 +506,31 @@
     "signal-56r-va-ehr-full-integrated-master-schedule",
     "signal-56r-va-major-acquisition-oversight-framework-risks",
     "signal-56r-va-common-spend-savings-goals-tracking",
-    "signal-56r-va-dod-servicemember-transition-coordination"
+    "signal-56r-va-dod-servicemember-transition-coordination",
+    "signal-56s-doe-pit-production-lifecycle-cost-estimate",
+    "signal-56s-doe-complex-wide-waste-disposal-analysis",
+    "signal-56s-doe-strategic-petroleum-reserve-periodic-reviews",
+    "signal-56s-doe-nuclear-demonstration-project-oversight",
+    "signal-56s-doe-hanford-waste-treatment-pause-conditions",
+    "signal-56s-hhs-medicaid-offsets-medicare-hospital-payments",
+    "signal-56s-hhs-medicaid-oversight-national-risk-assessment",
+    "signal-56s-hhs-public-health-preparedness-capability-gaps",
+    "signal-56s-hhs-after-action-component-coordination",
+    "signal-56s-hhs-after-action-external-stakeholder-participation",
+    "signal-56s-dot-faa-mission-critical-skill-gap-data",
+    "signal-56s-dot-air-traffic-controller-workforce-processes",
+    "signal-56s-dot-discretionary-grant-department-wide-directive",
+    "signal-56s-dot-iija-grant-status-reporting",
+    "signal-56s-dot-grant-agreement-awardee-risk-assessment",
+    "signal-56s-dot-faa-drone-integration-strategy",
+    "signal-56s-dot-faa-information-centric-airspace-milestones",
+    "signal-56s-dot-automated-vehicle-initiative-plan",
+    "signal-56s-va-health-system-enterprise-risk-practices",
+    "signal-56s-va-ehr-full-lifecycle-cost-estimate",
+    "signal-56s-va-ehr-full-integrated-master-schedule",
+    "signal-56s-va-major-acquisition-oversight-framework-risks",
+    "signal-56s-va-common-spend-savings-goals-tracking",
+    "signal-56s-va-dod-servicemember-transition-coordination"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -703,6 +739,12 @@
       "label": "Twenty-four recommendation artifact and milestone records",
       "node_type": "Signal",
       "note": "Twenty exact continuations plus four recommendation-specific children preserve the implementation-state boundary."
+    },
+    {
+      "id": "node-phase56s-artifact-scope-audit",
+      "label": "Seventy-two directive-element checks",
+      "node_type": "Signal",
+      "note": "Twenty-four records distinguish public candidates, adjacent material, missing public copies, and unresolved authoritative acceptance."
     }
   ],
   "links": [
@@ -1118,6 +1160,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Artifacts and milestones do not establish performance, value, readiness, safety, savings, or causation."
+    },
+    {
+      "from": "node-phase56s-artifact-scope-audit",
+      "to": "node-phase56r-artifact-milestone-ledger",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 56S audits the exact artifact and milestone records established in Phase 56R."
+    },
+    {
+      "from": "node-phase56s-artifact-scope-audit",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Availability, scope, acceptance, implementation, closure, and outcome use different evidence tests."
+    },
+    {
+      "from": "node-phase56s-artifact-scope-audit",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "The shelf does not establish performance, readiness, safety, savings, value, ranking, score, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -1152,7 +1215,9 @@
     "Twenty exact one-to-one GAO report-and-recommendation identities with affected component, status, agency response, last-update period, limitation, and continuation rule.",
     "Two explicit one-to-many holds covering four candidate recommendations.",
     "Twenty-four recommendation-specific records with artifact visibility, normalized implementation stage, named milestone, GAO review state, remaining gap, and continuation rule.",
-    "Four child records resolving the HHS-04 and VA-02 holds while preserving both parents."
+    "Four child records resolving the HHS-04 and VA-02 holds while preserving both parents.",
+    "Twenty-four recommendation-level public-document searches and seventy-two directive-element scope findings.",
+    "Separate availability results for three public candidates, thirteen adjacent records, and eight missing public copies."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -1179,7 +1244,8 @@
     "That portfolio implementation counts are comparable agency rates or that modeled potential benefits are realized savings.",
     "That FTFN action keys are official GAO recommendation numbers or that a named priority action has been implemented or closed.",
     "That an agency response is implementation, a recommendation status is an entity evidence state, or recommendation closure is an operating outcome.",
-    "That a public artifact, agency submission, milestone, or partial addressing constitutes implementation, closure, agency performance, or operating outcome."
+    "That a public artifact, agency submission, milestone, or partial addressing constitutes implementation, closure, agency performance, or operating outcome.",
+    "That public availability or an FTFN scope finding constitutes GAO acceptance, implementation, closure, agency performance, or operating outcome."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -1254,6 +1320,7 @@
     "Reopen when GAO updates the model, publishes realized benefit attribution, or materially revises the open-recommendation inventory.",
     "Official GAO Recommendations Database identities, agency responses, and later status or operating-outcome records for Phase 56P actions.",
     "Implementation artifacts and later GAO status changes for the twenty exact matches, plus recommendation-specific child records for HHS-04 and VA-02.",
-    "Official GAO sufficiency decisions, late-2026 milestone artifacts, exact implementation evidence, and attributable operating outcomes for the Phase 56R ledger."
+    "Official GAO sufficiency decisions, late-2026 milestone artifacts, exact implementation evidence, and attributable operating outcomes for the Phase 56R ledger.",
+    "Exact missing agency response documents, official sufficiency decisions, and attributable implementation and operating-outcome evidence for the Phase 56S register."
   ]
 }
