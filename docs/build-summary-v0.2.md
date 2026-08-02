@@ -99,6 +99,8 @@ Phase 56O publishes seven exact agency priority-recommendation portfolios for DO
 
 Phase 56P decomposes the DOE, HHS, DOT, and VA priority letters into twenty-two explicitly named action records: five DOE, four HHS, eight DOT, and five VA. Four full-report source profiles, twenty-two research documents, twenty-two Published signals, Research Watch 020, two machine-readable ledgers, one collection, one update, and a verified twenty-five-file archive raise the candidate to 1,472 pages, 566 sources, 327 signals, 261 Published, 66 In Review, 44 updates, twenty-eight briefings, twenty-five research collections, 439 research documents, and 355 current Published-support sources. FTFN action keys are visibly local crosswalk references, not GAO Recommendations Database identifiers; priority designation is not implementation, closure, performance, readiness, value, safety, or causation. The evidence ledger remains one Closed, twenty-one Partially Closed, and two Open, and the inherited HHS tracker check remains held. Content validation, source health, Astro diagnostics, the production build, Phase 56K through Phase 56P assertions, release assertions, sitemap membership, exports, and private-registry exclusion pass. Local content commit `fd45e1d2772b1a35c5ea366ec012dd4ff425d1de` produced exact private runtime commit `5c4bdc09987a1e71c18ff6da5c279a3bd589ed6d`, deployed successfully as owner-only Sites version 41 in deployment `appgdep_6a6ecfc72e5c81919535362e1beb7c97` with no groups and no external visitors.
 
+Phase 56Q resolves the twenty-two Phase 56P local keys against current official GAO product pages. Twenty actions publish with exact report-and-recommendation identities; HHS-04 and VA-02 remain In Review because each local parent aggregates two separately numbered recommendations. Twenty-one official source profiles, twenty-two research documents, twenty Published and two In Review signals, Research Watch 021, two machine-readable ledgers, one collection, one update, and a verified twenty-five-file archive raise the candidate to 1,539 pages, 587 sources, 349 signals, 281 Published, 68 In Review, 45 updates, twenty-nine briefings, twenty-six research collections, 461 research documents, and 374 current Published-support sources. Eighteen exact recommendations are Open and two are Open – Partially Addressed; agency response, implementation, GAO status, Phase 56F evidence state, recommendation closure, and operating outcome remain distinct. The evidence ledger stays one Closed, twenty-one Partially Closed, and two Open, and the inherited HHS tracker check remains held. Content validation, source health, Astro diagnostics, the production build, Phase 56K through Phase 56Q assertions, release assertions, sitemap membership, exports, and private-registry exclusion pass. Local content commit `684352779fb9dd36de92d4a53f17a47e5e878322` produced exact private runtime commit `7d8d188bb68dd5e7712e0a0f9f555e7917d9e48d`, deployed successfully as owner-only Sites version 42 in deployment `appgdep_6a6edd381a848191b6201f22284eea77` with no groups and no external visitors.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
@@ -121,12 +123,12 @@ Additional current records:
 - 5 technologies,
 - 5 local systems,
 - 16 evidence gaps,
-- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56P reviews,
+- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56Q reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
 - 28 briefings: 21 Published and 7 In Review,
 - 25 research collections with 439 document records,
 - 15 reader pathways across 19 Atlas surfaces,
-- 41 official local captures plus 398 official-link records across the existing verified archives and the Phase 56P twenty-five-file ZIP archive.
+- 41 official local captures plus 420 official-link records across the existing verified archives and the Phase 56Q twenty-five-file ZIP archive.
 
 ## What Is Built
 
@@ -256,13 +258,15 @@ Phase 56O publishes seven agency priority portfolios and one government-wide ben
 
 Phase 56P publishes twenty-two actions explicitly named by the current DOE, HHS, DOT, and VA priority-recommendation letters. It adds four full-report sources, twenty-two research documents, twenty-two Published signals, one collection, Research Watch 020, one public update, and separate action and publication-review ledgers. The verified candidate is 1,472 pages, 566 sources, 327 signals, 261 Published, 66 In Review, 44 public updates, twenty-eight briefings, twenty-five collections, 439 research documents, and 355 current Published-support sources. Local action keys are not official GAO recommendation IDs, and the unchanged evidence ledger remains one Closed, twenty-one Partially Closed, and two Open. Local content commit `fd45e1d2772b1a35c5ea366ec012dd4ff425d1de` produced private runtime commit `5c4bdc09987a1e71c18ff6da5c279a3bd589ed6d`, deployed as owner-only Sites version 41 in deployment `appgdep_6a6ecfc72e5c81919535362e1beb7c97`.
 
+Phase 56Q resolves twenty local action keys to exact official GAO report-and-recommendation identities and holds HHS-04 plus VA-02 as one-to-many mappings containing four preserved recommendation candidates. It adds twenty-one official product-page sources, twenty-two research documents, twenty Published and two In Review signals, one collection, Research Watch 021, one public update, and separate identity-crosswalk and publication-review ledgers. The verified candidate is 1,539 pages, 587 sources, 349 signals, 281 Published, 68 In Review, 45 public updates, twenty-nine briefings, twenty-six collections, 461 research documents, and 374 current Published-support sources. The unchanged entity evidence ledger remains one Closed, twenty-one Partially Closed, and two Open. Local content commit `684352779fb9dd36de92d4a53f17a47e5e878322` produced private runtime commit `7d8d188bb68dd5e7712e0a0f9f555e7917d9e48d`, deployed as owner-only Sites version 42 in deployment `appgdep_6a6edd381a848191b6201f22284eea77`.
+
 Verified results:
 
-- 1,472 generated site pages,
-- exact exports for 566 sources, 17 topics, 261 Published signals, 421 Published research records and collections, and 11 Published pathways,
-- all 261 Published signal routes included in the sitemap,
+- 1,539 generated site pages,
+- exact exports for 587 sources, 17 topics, 281 Published signals, 442 Published research records and collections, and 11 Published pathways,
+- all 281 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
-- all twenty-one Published briefing routes included in the sitemap and all seven held briefing routes excluded,
+- all twenty-two Published briefing routes included in the sitemap and all seven held briefing routes excluded,
 - all six Published dependency-map routes included in the sitemap and the one held map route excluded,
 - all fifteen reader pathways rendered across 19 Atlas surfaces with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records,
 - all sixteen evidence-gap details included in the sitemap, including the comparison-denominator gap,
@@ -273,23 +277,23 @@ Verified results:
 - exactly 150 unique private candidates, 10 in each of 15 profiles, with all records assigned a first-pass triage state,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
-- all twenty-five collection routes and 439 document pages built under the publication and indexing contract,
-- the Phase 56P twenty-five-file ZIP archive and all prior archives verified with manifests and checksums.
+- all twenty-six collection routes and 461 document records built under the publication and indexing contract,
+- the Phase 56Q twenty-five-file ZIP archive and all prior archives verified with manifests and checksums.
 
-The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56p-action-level-priority-recommendation-decomposition.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
+The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56q-gao-recommendation-identity-agency-response-resolution.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
 The local release work is preserved on `codex/phase51-content`. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
-The current hosting checkpoint is owner-only Sites version 41. Local content commit `fd45e1d2772b1a35c5ea366ec012dd4ff425d1de` produced exact private runtime commit `5c4bdc09987a1e71c18ff6da5c279a3bd589ed6d` in deployment `appgdep_6a6ecfc72e5c81919535362e1beb7c97`. The custom policy allows only the owner, no groups, and no external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
+The current hosting checkpoint is owner-only Sites version 42. Local content commit `684352779fb9dd36de92d4a53f17a47e5e878322` produced exact private runtime commit `7d8d188bb68dd5e7712e0a0f9f555e7917d9e48d` in deployment `appgdep_6a6edd381a848191b6201f22284eea77`. The custom policy allows only the owner, no groups, and no external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
 The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-22 to remain outside Cloudflare, with Google Workspace mail records active. Before any nameserver or DNS change, inventory and preserve every mail and verification record. Hosting-provider selection remains an explicit Phase 55 decision: Cloudflare Pages is the documented default, but another static host may be chosen if avoiding a nameserver migration is more important.
 
 ## Known Limitations
 
-- Sixty-six signals remain `In Review`; the four Phase 56A holds prohibit cross-series composites, the four Phase 56B holds prohibit cross-entity rankings, the four Phase 56C holds prohibit causal inference from temporal sequence or attribution, the six Phase 56D holds preserve compatibility and causal boundaries, the four Phase 56E holds prohibit second-cohort portfolio rankings, the Phase 56F hold prohibits turning coverage status into cross-cohort comparison, the Phase 56G hold prevents dated source checks from becoming substitute closures, the Phase 56H hold preserves nine continuation rules, the Phase 56I hold prevents a completed first pass from becoming an unsupported closure claim, the Phase 56J hold prevents a FERC component result from substituting for department-wide DOE evidence, and the inherited HHS post-date record remains held until its public tracker changes. Two hundred and sixty-one bounded signals are Published.
-- Seven briefings and all five local-system profiles remain prelaunch or research material. The twenty Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
+- Sixty-eight signals remain `In Review`; the four Phase 56A holds prohibit cross-series composites, the four Phase 56B holds prohibit cross-entity rankings, the four Phase 56C holds prohibit causal inference from temporal sequence or attribution, the six Phase 56D holds preserve compatibility and causal boundaries, the four Phase 56E holds prohibit second-cohort portfolio rankings, the Phase 56F hold prohibits turning coverage status into cross-cohort comparison, the Phase 56G hold prevents dated source checks from becoming substitute closures, the Phase 56H hold preserves nine continuation rules, the Phase 56I hold prevents a completed first pass from becoming an unsupported closure claim, the Phase 56J hold prevents a FERC component result from substituting for department-wide DOE evidence, HHS-04 and VA-02 preserve one-to-many recommendation identities, and the inherited HHS post-date record remains held until its public tracker changes. Two hundred and eighty-one bounded signals are Published.
+- Seven briefings and all five local-system profiles remain prelaunch or research material. The twenty-two Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
 - Six Phase 55N sources have official-link records because their official hosts blocked or complicated automated export; the collection preserves direct official URLs rather than third-party substitutes.
@@ -312,6 +316,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 - Phase 56N uses ten official-link records. Nine bounded recommendation, portfolio, and component decisions publish while one HHS post-date tracker check remains held; agency, component, recommendation, status period, portfolio, and enterprise identities remain distinct.
 - Phase 56O uses eight official-link records. Seven agency portfolios and one government-wide model publish while agency inventories, subject mixes, arithmetic, benefit modeling, attribution, and realization remain distinct.
 - Phase 56P uses four full official reports to publish twenty-two letter-named action records and signals. FTFN action keys are local crosswalk references, not official recommendation IDs, and no priority designation is presented as implementation, closure, performance, readiness, safety, value, or causation.
+- Phase 56Q uses twenty-one official product pages to publish twenty exact report-and-recommendation identities and hold two one-to-many mappings. HHS-04 and VA-02 preserve four distinct candidates; agency response, recommendation status, Phase 56F evidence state, implementation, closure, and operating outcome remain separate.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - The Project Baccara record now includes an official 4-1 County action and active final air permit; the fully executed MCP, condition compliance, service, construction, testing, occupancy, and operation remain unverified.
 - Toronto item `2026.SC33.9` is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted amendment, confirmed building permit, start, completion, or occupancy is yet available. A bounded recheck is scheduled for August 1.
@@ -358,11 +363,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-arc
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug remaining-open-rails-partial-closure-first-pass-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug evidence-value-continuation-queue-batch-one-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug cross-agency-priority-remediation-portfolios-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug agency-priority-recommendation-action-ledger-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug gao-recommendation-identity-agency-response-crosswalk-2026
 npm.cmd run check
 npm.cmd run build
 npm.cmd run verify:phase56o
 npm.cmd run verify:phase56p
+npm.cmd run verify:phase56q
 npm.cmd run verify:release
 ```
 
-Expected output: 1,472 generated site pages, the prior verified research archives plus the Phase 56P twenty-five-file archive, twenty-two Phase 56P action decisions, twenty-two Phase 56P Published signals, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and a passing v0.2 release assertion.
+Expected output: 1,539 generated site pages, the prior verified research archives plus the Phase 56Q twenty-five-file archive, twenty exact Phase 56Q identity matches, two held one-to-many mappings, twenty Published and two In Review Phase 56Q signals, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and a passing v0.2 release assertion.
