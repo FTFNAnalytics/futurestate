@@ -1,7 +1,7 @@
 # Phase 56R: Recommendation-Specific Implementation Artifact and Milestone Follow-Through
 
 Date: 2026-08-02
-Status: Complete locally; owner-only deployment pending
+Status: Complete and owner-only deployed
 
 ## Goal
 
@@ -69,6 +69,16 @@ The four child identities are GAO-24-106276 Recommendations 1 and 2 under HHS-04
 - thirteen named milestone monitors, including three elapsed without official acceptance or closure
 - twenty-seven-file archive generated and verified
 - the Phase 56F entity evidence ledger remains one Closed, twenty-one Partially Closed, and two Open
+
+## Deployment receipt
+
+- Local content commit: `f088a6de59a6d5dc70b64a3b8635124f4a689283`
+- Exact private runtime commit: `1728d29f0022a357c384ebd337dea3c3f7cf66f0`
+- Sites version: 43
+- Deployment: `appgdep_6a6ee5c0c65481919c1f619682d8c0b9`
+- Archive: 2,198 files, 129,454,080 bytes, `sha256:db8676794db6e1c634b742a1b954febcedd5efaa3eea1b0d0f51fa7d8b460495`
+- Live URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- Access reverified after deployment: custom owner-only, one allowed user, no groups, and no external visitors
 
 ## Phase 56S handoff
 

@@ -389,13 +389,13 @@ Recommended active schedule:
 | Completed | Phase 56O | seven agency priority portfolios, one bounded government-wide model, eight Published signals, Research Watch 019, eleven-file archive, and owner-only Sites version 40 |
 | Completed | Phase 56P | twenty-two letter-named actions, four full-report sources, twenty-two Published signals, Research Watch 020, twenty-five-file archive, and owner-only Sites version 41 |
 | Completed | Phase 56Q | twenty exact GAO recommendation identities, two one-to-many holds, twenty-one official sources, Research Watch 021, twenty-five-file archive, and owner-only Sites version 42 |
-| Completed locally | Phase 56R | four recommendation-specific children, twenty-four artifact-and-milestone records, five public agency artifacts, Research Watch 022, and a twenty-seven-file archive |
+| Completed and owner-only deployed | Phase 56R | four recommendation-specific children, twenty-four artifact-and-milestone records, five public agency artifacts, Research Watch 022, a twenty-seven-file archive, and Sites version 43 |
 | Current content gate | Phase 56S | audit artifact scope and aggressively acquire the missing response documents without waiting for dated milestones |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete through Sites version 42, and Phase 56R is complete locally under a verified 1,594-page contract. HHS-04 and VA-02 remain parent crosswalks while four recommendation-specific children publish. The resulting twenty-four-record ledger contains twenty Open and four Open – Partially Addressed recommendations, five separately public agency artifacts, thirteen milestone monitors, and no implementation or closure claim; the Phase 56F ledger remains one Closed, twenty-one Partially Closed, and two Open entity evidence states. The current non-public content gate is Phase 56S: audit the scope of every named response artifact, search official agency repositories for the remaining separately unavailable materials, and publish document-level evidence or explicit availability findings without waiting for dated milestones. Phase 55H, Phase 55R, the inherited HHS tracker hold, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete through Sites version 43, including Phase 56R under a verified 1,594-page contract. HHS-04 and VA-02 remain parent crosswalks while four recommendation-specific children publish. The resulting twenty-four-record ledger contains twenty Open and four Open – Partially Addressed recommendations, five separately public agency artifacts, thirteen milestone monitors, and no implementation or closure claim; the Phase 56F ledger remains one Closed, twenty-one Partially Closed, and two Open entity evidence states. The current non-public content gate is Phase 56S: audit the scope of every named response artifact, search official agency repositories for the remaining separately unavailable materials, and publish document-level evidence or explicit availability findings without waiting for dated milestones. Phase 55H, Phase 55R, the inherited HHS tracker hold, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1297,7 +1297,7 @@ Completion:
 - passed the 1,539-page release contract with 587 sources, 349 signals, 281 Published signals, 68 In Review signals, 461 research documents, 45 public updates, and 374 current Published-support sources;
 - local content commit `684352779fb9dd36de92d4a53f17a47e5e878322` produced exact private runtime commit `7d8d188bb68dd5e7712e0a0f9f555e7917d9e48d`, deployed successfully as owner-only Sites version 42 in deployment `appgdep_6a6edd381a848191b6201f22284eea77` with no groups and no external visitors.
 
-### Phase 56R: Recommendation-Specific Implementation Artifact And Milestone Follow-Through - Complete Locally
+### Phase 56R: Recommendation-Specific Implementation Artifact And Milestone Follow-Through - Complete And Owner-Only Deployed
 
 Goal: move from identity and response summaries into recommendation-specific implementation evidence without treating plans or submissions as closure.
 
@@ -1327,7 +1327,8 @@ Completion:
 - added five source profiles, twenty-four Published research documents, twenty-four Published signals, Research Watch 022, two machine-readable ledgers, one collection, one update, and a twenty-seven-file archive;
 - integrated six entity ledgers, three reader pathways, six topics, two organizations, and the comparison-boundary map;
 - passed the 1,594-page release contract with 592 sources, 373 signals, 305 Published signals, 68 In Review signals, 485 research documents, 46 public updates, and 381 current Published-support sources;
-- preserved the one Closed, twenty-one Partially Closed, and two Open Phase 56F entity evidence ledger and the inherited HHS tracker hold.
+- preserved the one Closed, twenty-one Partially Closed, and two Open Phase 56F entity evidence ledger and the inherited HHS tracker hold;
+- local content commit `f088a6de59a6d5dc70b64a3b8635124f4a689283` produced exact private runtime commit `1728d29f0022a357c384ebd337dea3c3f7cf66f0`, deployed successfully as owner-only Sites version 43 in deployment `appgdep_6a6ee5c0c65481919c1f619682d8c0b9` with no groups and no external visitors.
 
 ### Phase 56S: Recommendation Artifact Scope Audit And Missing-Document Acquisition - Next Content Gate
 
@@ -1466,4 +1467,4 @@ Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Sites version 42 serves local content commit `684352779fb9dd36de92d4a53f17a47e5e878322` from exact private runtime commit `7d8d188bb68dd5e7712e0a0f9f555e7917d9e48d` in deployment `appgdep_6a6edd381a848191b6201f22284eea77`, under custom owner-only access with no groups and no external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 43 serves local content commit `f088a6de59a6d5dc70b64a3b8635124f4a689283` from exact private runtime commit `1728d29f0022a357c384ebd337dea3c3f7cf66f0` in deployment `appgdep_6a6ee5c0c65481919c1f619682d8c0b9`, under custom owner-only access with no groups and no external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
