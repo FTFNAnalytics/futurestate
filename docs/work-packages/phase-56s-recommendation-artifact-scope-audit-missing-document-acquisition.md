@@ -1,7 +1,7 @@
 # Phase 56S: Recommendation Artifact Scope Audit And Missing-Document Acquisition
 
 Date: 2026-08-02
-Status: Complete locally; owner-only deployment pending
+Status: Complete and owner-only deployed
 
 ## Goal
 
@@ -79,7 +79,13 @@ These sources are recommendation-adjacent evidence only where the directive chec
 
 ## Deployment receipt
 
-Pending owner-only Sites deployment.
+- Local content commit: `6d157e202faff214d4824d7bfecfb6b3b1b76b5c`
+- Exact private runtime commit: `e1906494fce21f1c59b62dca8eecf9de5407d78d`
+- Sites version: 44
+- Deployment: `appgdep_6a6eedb5d234819189721f5d2fae8b62`
+- Runtime archive: 2,288 files, 130,969,600 bytes, `sha256:76e7037e765813de65084f25c4f5c2d06366a8a586063dfc4bddff3895359273`
+- Live URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- Access reverified after deployment: custom owner-only, one allowed owner, no groups, no editors, and zero external visitors
 
 ## Phase 56T handoff
 
