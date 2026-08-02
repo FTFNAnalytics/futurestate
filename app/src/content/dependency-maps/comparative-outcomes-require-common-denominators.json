@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 57C adds twelve Published inventory, repeat-output, accepted-disposal, closed-loop, or baseline-boundary panels and eight explicit reliability, adoption, activation, recurring-output, capacity, or baseline holds.",
+  "summary": "A comparison and inference protocol: Phase 57D adds twelve compatible service or material-flow series while preserving eight reliability, adoption, activation, recurring-output, capacity, or baseline holds.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -381,7 +381,14 @@
     "source-57b-nnsa-sasc-testimony-may-2026",
     "source-57b-nnsa-pit-production-draft-peis-2026",
     "source-57c-hanford-20-containers-2025",
-    "source-57c-hanford-tbi-2000-gallons-2025"
+    "source-57c-hanford-tbi-2000-gallons-2025",
+    "source-57d-amtrak-ada-progress-december-2024",
+    "source-57d-amtrak-ada-progress-june-2025",
+    "source-57d-amtrak-ada-progress-december-2025",
+    "source-57d-hanford-wtp-consent-may-2026",
+    "source-57d-hanford-wtp-consent-june-2026",
+    "source-57d-hanford-wtp-consent-july-2026",
+    "source-57d-hanford-tpa-june-2026"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -735,7 +742,19 @@
     "signal-57c-hanford-emf-first-transfer-boundary",
     "signal-57c-hanford-first-ilaw-disposal-boundary",
     "signal-57c-hanford-tbi-closed-loop-cohort",
-    "signal-57c-nnsa-project-program-baseline-boundary"
+    "signal-57c-nnsa-project-program-baseline-boundary",
+    "signal-57d-amtrak-portfolio-denominator-series",
+    "signal-57d-amtrak-construction-project-series",
+    "signal-57d-amtrak-design-project-series",
+    "signal-57d-amtrak-pids-revision-series",
+    "signal-57d-amtrak-bridge-plate-series",
+    "signal-57d-amtrak-ramp-method-series",
+    "signal-57d-hanford-monthly-waste-feed-series",
+    "signal-57d-hanford-cumulative-feed-reconciliation",
+    "signal-57d-hanford-effluent-transfer-series",
+    "signal-57d-hanford-tscr-feed-space-dependency",
+    "signal-57d-hanford-material-flow-stage-ledger",
+    "signal-57d-hanford-may-production-record"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -1010,6 +1029,12 @@
       "label": "Twelve service or recurring-output panels; eight holds",
       "node_type": "Signal",
       "note": "Fixed cohorts advance only when stage, period, unit, method, denominator, revision history, and authority remain explicit."
+    },
+    {
+      "id": "node-phase57d-persistent-service-quality-time-series",
+      "label": "Twelve compatible service or material-flow series; eight holds",
+      "node_type": "Signal",
+      "note": "Repeated observations advance only when entity, cohort, stage, period, unit, threshold operator, denominator, method, revision history, and authority remain explicit."
     }
   ],
   "links": [
@@ -1656,6 +1681,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Deployment, serviceability, cumulative snapshots, first transfers, analytical capacity, and component baselines do not establish generalized causation, ranking, adoption, recurring rate, or readiness."
+    },
+    {
+      "from": "node-phase57d-persistent-service-quality-time-series",
+      "to": "node-phase57c-service-reliability-adoption-recurring-output",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57D replicates Phase 57C cohorts across compatible periods and preserves every hold."
+    },
+    {
+      "from": "node-phase57d-persistent-service-quality-time-series",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Changing station portfolios, projects, assets, locations, gallons, containers, and qualified units remain non-interchangeable denominators."
+    },
+    {
+      "from": "node-phase57d-persistent-service-quality-time-series",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Repeated inventories and material-flow thresholds do not establish reliability, adoption, accepted output, steady-state rate, readiness, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -1702,7 +1748,8 @@
     "Thirteen bounded repeat or completed-stage panels plus four visible holds under explicit comparison contracts.",
     "Thirteen bounded fixed-cohort, independently corroborated operating, or qualified-output panels plus three visible holds.",
     "Ten bounded named accepted-service or observed-output panels plus seven visible closeout, performance, rate, capacity, or baseline holds.",
-    "Twelve bounded inventory, repeat-output, accepted-disposal, closed-loop, or baseline-boundary panels plus eight visible reliability, adoption, activation, recurring-output, capacity, or baseline holds."
+    "Twelve bounded inventory, repeat-output, accepted-disposal, closed-loop, or baseline-boundary panels plus eight visible reliability, adoption, activation, recurring-output, capacity, or baseline holds.",
+    "Twelve bounded compatible service or material-flow series plus eight visible reliability, adoption, activation, recurring-output, capacity, or baseline holds."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -1820,6 +1867,7 @@
     "Later compatible periods, accepted service, sustained operation, closeout, and realized-outcome evidence under the same entity and denominator.",
     "Compatible later periods, accepted service and tests, facility-level operating series, recurring qualified output, complete cost and schedule baselines, closeout, and realized-outcome evidence.",
     "Compatible service use, test samples, quality, uptime, contaminant removal, recurring qualified output, complete cost and schedule baselines, accepted closeout, and realized-outcome evidence.",
-    "Compatible uptime, maintenance, use, adoption, monthly quality, rejects, rework, downtime, acceptance, disposal, compliance, recurring qualified output, complete program baselines, and realized-outcome evidence."
+    "Compatible uptime, maintenance, use, adoption, monthly quality, rejects, rework, downtime, acceptance, disposal, compliance, recurring qualified output, complete program baselines, and realized-outcome evidence.",
+    "Named-asset service quality, cohort adoption and retention, complete monthly material balances, qualified site-period output, GAO-sufficient program baselines, and independently accepted outcomes."
   ]
 }

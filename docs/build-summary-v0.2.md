@@ -298,6 +298,8 @@ Phase 57B adds seventeen accepted-service and independent-outcome records. Five 
 
 Phase 57C adds twenty service-reliability, adoption, and recurring-output validation records. Five service-inventory boundaries, four repeat outputs, two accepted-disposal or closed-loop outcomes, and one project-to-program baseline boundary publish; two reliability, three adoption-or-activation, and three recurring-output-or-baseline records remain In Review. Two new Tier 1 sources and fourteen carried official sources support Research Watch 033, two ledgers, one collection, one public update, and a twenty-three-file archive. The verified candidate is now 2,053 pages, 685 sources, 543 signals, 453 Published, 90 In Review, 57 updates, forty-one briefings, thirty-eight collections, 659 research documents, and 465 current Published-support sources. All seven Phase 57B holds remain explicit, and all scope, implementation, closure, contact, FOIA, and entity-evidence states remain unchanged. Local content commit `8e247466e1e95c032a0e14c455e42ed5d1790416` produced exact private runtime commit `928dcf828052b5e71208f838264fef5d73c057ad`, deployed as owner-only Sites version 55 in `appgdep_6a6fccf316908191b69b2541e9e6c79d`.
 
+Phase 57D adds twenty persistent-service-quality and compatible-time-series records. Six compatible Amtrak service-inventory series and six Hanford monthly material-flow panels publish; two service-quality, three adoption-or-activation, and three recurring-output-or-baseline records remain In Review. Seven new Tier 1 sources and eight carried official sources support Research Watch 034, two ledgers, one collection, one public update, and a twenty-three-file archive. The verified candidate is now 2,102 pages, 692 sources, 563 signals, 465 Published, 98 In Review, 58 updates, forty-two briefings, thirty-nine collections, 679 research documents, and 472 current Published-support sources. All eight Phase 57C holds remain explicit, and all scope, implementation, closure, contact, FOIA, and entity-evidence states remain unchanged. Owner-only deployment is pending.
+
 Verified Phase 56W results:
 
 - 1,798 generated site pages,
@@ -373,11 +375,21 @@ Verified Phase 57C results:
 - the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
 - content references, source health, Astro diagnostics, the 2,053-page build, Phase 57C assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the twenty-three-file archive pass.
 
+Verified Phase 57D results:
+
+- twelve Published records and eight In Review holds with a 6 / 6 / 2 / 3 / 3 compatible-service-series, monthly-material-flow-series, service-quality-hold, adoption-or-activation-hold, and recurring-output-or-baseline-hold split;
+- seven new Tier 1 source profiles, eight carried official sources, Research Watch 034, one collection, one update, and two machine-readable ledgers;
+- all eight Phase 57C holds preserved with no new hold added;
+- explicit changing-denominator, revision-break, threshold-operator, asset-identity, feed, glass, container-stage, quality, shipment, acceptance, disposal, capacity, program-baseline, and authority-attribution boundaries;
+- zero exact targets, triggers, directive-scope changes, implementation changes, closure changes, agency contacts, and FOIA requests;
+- the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
+- content references, source health, Astro diagnostics, the 2,102-page build, Phase 57D assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the twenty-three-file archive pass.
+
 The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
-The local release work is preserved on `codex/phase51-content`. Phase 57C is complete, validated, and owner-only deployed. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
+The local release work is preserved on `codex/phase51-content`. Phase 57D is complete and validated locally; its owner-only deployment receipt is pending. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
 The current hosting checkpoint is owner-only Sites version 55, serving the verified Phase 57C package from exact private runtime commit `928dcf828052b5e71208f838264fef5d73c057ad` in deployment `appgdep_6a6fccf316908191b69b2541e9e6c79d`. The custom policy allows only the owner, no groups, no editors, and zero external visitors. Deployment status, source provenance, runtime archive, and access passed; visual route QA was not requested for Phase 57C. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
@@ -385,7 +397,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Ninety signals remain `In Review`; the eight Phase 57C holds keep unaccepted closeout, undisclosed service reliability and adoption, forward activation, reporting instructions, production targets, analytical capacity, and the incomplete NNSA program baseline outside the Published layer. Four hundred and fifty-three bounded signals are Published.
+- Ninety-eight signals remain `In Review`; the eight Phase 57D holds keep unaccepted closeout, undisclosed asset-level service quality and adoption, forward activation, reporting instructions, production targets, analytical capacity, and the incomplete NNSA program baseline outside the Published layer. Four hundred and sixty-five bounded signals are Published.
 - Seven briefings and all five local-system profiles remain prelaunch or research material. The thirty-four Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
@@ -488,4 +500,4 @@ npm.cmd run verify:phase57a
 npm.cmd run verify:release
 ```
 
-Expected output: 2,053 generated site pages, the prior verified research archives plus the Phase 57C twenty-three-file archive, twelve Published Phase 57C records and eight In Review holds, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57C and v0.2 release assertions.
+Expected output: 2,102 generated site pages, the prior verified research archives plus the Phase 57D twenty-three-file archive, twelve Published Phase 57D records and eight In Review holds, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57D and v0.2 release assertions.

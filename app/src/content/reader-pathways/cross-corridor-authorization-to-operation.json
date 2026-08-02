@@ -92,7 +92,13 @@
     "signal-57c-amtrak-construction-pipeline",
     "signal-57c-amtrak-design-pipeline",
     "signal-57c-amtrak-boarding-ramp-backlog",
-    "signal-57c-amtrak-pids-deployment-inventory"
+    "signal-57c-amtrak-pids-deployment-inventory",
+    "signal-57d-amtrak-portfolio-denominator-series",
+    "signal-57d-amtrak-construction-project-series",
+    "signal-57d-amtrak-design-project-series",
+    "signal-57d-amtrak-pids-revision-series",
+    "signal-57d-amtrak-bridge-plate-series",
+    "signal-57d-amtrak-ramp-method-series"
   ],
   "source_ids": [
     "source-virginia-scc-large-load-gs5-2025",
@@ -143,7 +149,10 @@
     "source-57b-amtrak-ada-progress-june-2026",
     "source-57b-louisiana-nextlink-first-bead-tower",
     "source-57b-louisiana-starlink-bead-agreement",
-    "source-57b-montana-bead-quarterly-report-june-2026"
+    "source-57b-montana-bead-quarterly-report-june-2026",
+    "source-57d-amtrak-ada-progress-december-2024",
+    "source-57d-amtrak-ada-progress-june-2025",
+    "source-57d-amtrak-ada-progress-december-2025"
   ],
   "organization_ids": [],
   "technology_ids": [],
@@ -158,7 +167,8 @@
     "briefing-research-watch-010-cross-cohort-coverage",
     "briefing-research-watch-013-first-pass-completion",
     "briefing-research-watch-032-accepted-service-independent-outcome-validation",
-    "briefing-research-watch-033-service-reliability-adoption-recurring-output-validation"
+    "briefing-research-watch-033-service-reliability-adoption-recurring-output-validation",
+    "briefing-research-watch-034-persistent-service-quality-compatible-time-series-replication"
   ],
   "dependency_map_ids": [
     "dependency-map-local-authorization-is-not-operation",
@@ -176,7 +186,8 @@
     "research-collection-cross-cohort-coverage-missing-record-closure-2010-2026",
     "research-collection-remaining-open-rails-partial-closure-first-pass-2026",
     "research-collection-accepted-service-independent-outcome-validation-2026",
-    "research-collection-service-reliability-adoption-recurring-output-validation-2026"
+    "research-collection-service-reliability-adoption-recurring-output-validation-2026",
+    "research-collection-persistent-service-quality-compatible-time-series-replication-2026"
   ],
   "evidence_gap_ids": [
     "gap-011",
@@ -250,6 +261,11 @@
       "stage": "Phase 57C service reliability, adoption, and recurring-output validation panels",
       "current_state": "Twelve Published panels and eight In Review holds distinguish inventory, reliability, adoption, repeat output, recurring rate, accepted disposal, closed-loop outcomes, project baselines, and program baselines.",
       "boundary": "A snapshot is not persistence, serviceability is not adoption, and project data are not a complete program baseline."
+    },
+    {
+      "stage": "Phase 57D persistent service quality and compatible time-series replication panels",
+      "current_state": "Twelve Published compatible Amtrak or Hanford time-series panels and eight preserved In Review holds.",
+      "boundary": "Repeated inventory is not reliability, serviceability is not adoption, feed is not accepted output, and capacity is not qualified production."
     }
   ],
   "evidence_limits": [
@@ -269,7 +285,8 @@
     "Phase 56F closure states apply to one named missing record per entity and cannot be converted into a ranking, composite, readiness score, or causal claim.",
     "Phase 56I first-pass and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
     "Phase 57B prohibits denominator-free comparison, turnover-based outcome claims, capacity-to-output inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
-    "Phase 57C prohibits denominator-free reliability or adoption claims, snapshot-to-rate inference, project-to-program inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
+    "Phase 57C prohibits denominator-free reliability or adoption claims, snapshot-to-rate inference, project-to-program inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
+    "Phase 57D prohibits denominator-free persistence, silent revision repair, threshold-to-exact conversion, inventory-to-reliability inflation, feed-to-accepted-output collapse, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Northern Virginia route, construction, energization, customer-service, water, emissions-compliance, reliability, and local-outcome records.",
@@ -286,6 +303,7 @@
     "Acquire the seven Open exact records, then revisit the sixteen Partially Closed records only when their named reopening condition is met.",
     "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables.",
     "Compatible service use, disclosed tests, quality, downtime, independent review, accepted closeout, recurring qualified output, complete baselines, and realized outcomes under the same named-cohort contract.",
-    "Compatible uptime, use, adoption, monthly quality, rejects, rework, downtime, acceptance, disposal, compliance, recurring qualified output, complete program baselines, and realized outcomes under the same fixed-cohort contract."
+    "Compatible uptime, use, adoption, monthly quality, rejects, rework, downtime, acceptance, disposal, compliance, recurring qualified output, complete program baselines, and realized outcomes under the same fixed-cohort contract.",
+    "Named-asset service quality, cohort adoption and retention, complete monthly material balances, qualified site-period output, GAO-sufficient program baselines, and independently accepted outcomes."
   ]
 }

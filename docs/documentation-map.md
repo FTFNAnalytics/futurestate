@@ -1609,6 +1609,7 @@ Primary file:
 - `docs/work-packages/phase-57a-fixed-cohort-completion-realized-outcomes.md` for the sixteen reviewed panels, thirteen Published decisions, three In Review holds, five new Tier 1 sources, fixed-cohort, independent-operation, qualified-output, archive, validation, owner-only deployment evidence, and Phase 57B handoff contracts
 - `docs/work-packages/phase-57b-accepted-service-independent-outcome-validation.md` for the seventeen reviewed panels, ten Published decisions, seven In Review holds, eleven new Tier 1 sources, accepted-service, observed-output, closeout, performance, rate, capacity, baseline, archive, validation, owner-only deployment, and Phase 57C handoff contracts
 - `docs/work-packages/phase-57c-service-reliability-adoption-recurring-output-validation.md` for the twenty reviewed panels, twelve Published decisions, eight In Review holds, all seven Phase 57B holds preserved, two new Tier 1 sources, service-inventory, reliability, adoption, repeat-output, accepted-disposal, closed-loop, project/program-baseline, archive, validation, owner-only deployment, and Phase 57D handoff contracts
+- `docs/work-packages/phase-57d-persistent-service-quality-compatible-time-series-replication.md` for the twenty reviewed panels, twelve Published decisions, eight preserved In Review holds, seven new Tier 1 sources, compatible Amtrak service series, Hanford monthly material-flow series, revision, threshold, archive, validation, owner-only deployment, and Phase 57E handoff contracts
 
 Update when:
 
@@ -1650,6 +1651,7 @@ Update when:
 - the Phase 57A fixed cohorts, accepted outcomes, hold decisions, archive, deployment receipt, or Phase 57B priorities change,
 - the Phase 57B accepted-service cohorts, observed outputs, hold decisions, archive, deployment receipt, or Phase 57C priorities change,
 - the Phase 57C service inventories, reliability or adoption holds, recurring-output panels, archive, deployment receipt, or Phase 57D priorities change,
+- the Phase 57D compatible service series, monthly material-flow panels, preserved holds, archive, deployment receipt, or Phase 57E priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

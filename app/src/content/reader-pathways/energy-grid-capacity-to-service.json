@@ -173,7 +173,13 @@
     "signal-57c-hanford-emf-first-transfer-boundary",
     "signal-57c-hanford-first-ilaw-disposal-boundary",
     "signal-57c-hanford-tbi-closed-loop-cohort",
-    "signal-57c-nnsa-project-program-baseline-boundary"
+    "signal-57c-nnsa-project-program-baseline-boundary",
+    "signal-57d-hanford-monthly-waste-feed-series",
+    "signal-57d-hanford-cumulative-feed-reconciliation",
+    "signal-57d-hanford-effluent-transfer-series",
+    "signal-57d-hanford-tscr-feed-space-dependency",
+    "signal-57d-hanford-material-flow-stage-ledger",
+    "signal-57d-hanford-may-production-record"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -294,7 +300,11 @@
     "source-57b-nnsa-sasc-testimony-may-2026",
     "source-57b-nnsa-pit-production-draft-peis-2026",
     "source-57c-hanford-20-containers-2025",
-    "source-57c-hanford-tbi-2000-gallons-2025"
+    "source-57c-hanford-tbi-2000-gallons-2025",
+    "source-57d-hanford-wtp-consent-may-2026",
+    "source-57d-hanford-wtp-consent-june-2026",
+    "source-57d-hanford-wtp-consent-july-2026",
+    "source-57d-hanford-tpa-june-2026"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -331,7 +341,8 @@
     "briefing-research-watch-030-repeat-measurement-accepted-operation",
     "briefing-research-watch-031-fixed-cohort-completion-realized-outcomes",
     "briefing-research-watch-032-accepted-service-independent-outcome-validation",
-    "briefing-research-watch-033-service-reliability-adoption-recurring-output-validation"
+    "briefing-research-watch-033-service-reliability-adoption-recurring-output-validation",
+    "briefing-research-watch-034-persistent-service-quality-compatible-time-series-replication"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -367,7 +378,8 @@
     "research-collection-repeat-measurement-accepted-operation-2026",
     "research-collection-fixed-cohort-completion-realized-outcomes-2026",
     "research-collection-accepted-service-independent-outcome-validation-2026",
-    "research-collection-service-reliability-adoption-recurring-output-validation-2026"
+    "research-collection-service-reliability-adoption-recurring-output-validation-2026",
+    "research-collection-persistent-service-quality-compatible-time-series-replication-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -530,6 +542,11 @@
       "stage": "Phase 57C service reliability, adoption, and recurring-output validation panels",
       "current_state": "Twelve Published panels and eight In Review holds distinguish inventory, reliability, adoption, repeat output, recurring rate, accepted disposal, closed-loop outcomes, project baselines, and program baselines.",
       "boundary": "A snapshot is not persistence, serviceability is not adoption, and project data are not a complete program baseline."
+    },
+    {
+      "stage": "Phase 57D persistent service quality and compatible time-series replication panels",
+      "current_state": "Twelve Published compatible Amtrak or Hanford time-series panels and eight preserved In Review holds.",
+      "boundary": "Repeated inventory is not reliability, serviceability is not adoption, feed is not accepted output, and capacity is not qualified production."
     }
   ],
   "evidence_limits": [
@@ -579,7 +596,8 @@
     "Phase 56Z prohibits denominator-free trends, stage inflation, cross-entity rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57A prohibits denominator-free comparison, target-based causal claims, stage inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57B prohibits denominator-free comparison, turnover-based outcome claims, capacity-to-output inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
-    "Phase 57C prohibits denominator-free reliability or adoption claims, snapshot-to-rate inference, project-to-program inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
+    "Phase 57C prohibits denominator-free reliability or adoption claims, snapshot-to-rate inference, project-to-program inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
+    "Phase 57D prohibits denominator-free persistence, silent revision repair, threshold-to-exact conversion, inventory-to-reliability inflation, feed-to-accepted-output collapse, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -624,6 +642,7 @@
     "Compatible later observations, completed delivery, operational acceptance, sustained performance, closeout, and realized outcomes under the same measurement contract.",
     "Compatible later periods, accepted projects and service, reported tests, recurring output, complete baselines, closeout, and realized outcomes under the same cohort contract.",
     "Compatible service use, disclosed tests, quality, downtime, independent review, accepted closeout, recurring qualified output, complete baselines, and realized outcomes under the same named-cohort contract.",
-    "Compatible uptime, use, adoption, monthly quality, rejects, rework, downtime, acceptance, disposal, compliance, recurring qualified output, complete program baselines, and realized outcomes under the same fixed-cohort contract."
+    "Compatible uptime, use, adoption, monthly quality, rejects, rework, downtime, acceptance, disposal, compliance, recurring qualified output, complete program baselines, and realized outcomes under the same fixed-cohort contract.",
+    "Named-asset service quality, cohort adoption and retention, complete monthly material balances, qualified site-period output, GAO-sufficient program baselines, and independently accepted outcomes."
   ]
 }
