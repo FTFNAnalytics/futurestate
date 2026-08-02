@@ -37,7 +37,7 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 1,773
+static pages generated: 1,875
 current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
@@ -51,7 +51,7 @@ App routes currently include:
 - Atlas landing page,
 - topic index and detail pages,
 - source index and detail pages,
-- research collection index, twenty-one collection details, and 396 document detail pages,
+- research collection index, thirty-four collection details, and 589 document detail pages,
 - organization index and detail pages,
 - technology index and detail pages,
 - local system index and detail pages,
@@ -166,7 +166,7 @@ What is now stable:
 - Phase 56X publishes thirteen agency-, site-, waste-stream-, project-, and evidence-stage-specific records: four award-review denominators, three Hanford operating outputs, three DOE EM site-maintenance denominators, and three NNSA project-baseline series. Six Tier 1 sources support the batch; zero exact target artifacts or triggers and no scope, implementation, closure, agency-contact, or FOIA changes are recorded.
 - The verified Phase 56X contract is 1,832 pages, 644 sources, 458 signals, 390 Published signals, 68 In Review signals, 433 current Published-support sources, thirty-six briefings, thirty-three research collections, 574 research documents, 52 updates, and a sixteen-file archive. Local content commit `ed10683470cda8a9b7b9f11498de40955d7af679` maps to exact private runtime commit `0781d928b7d88442659c9a5ff9aa8a3bc29b85b6`, deployed as owner-only Sites version 50 in deployment `appgdep_6a6f14c3b4188191977eab6fbd9a8611` with one owner, no groups, no editors, and zero external visitors.
 - Phase 56Y publishes fifteen stable-identity follow-through records: four DOT funding-execution records, two BEAD agreement-and-test records, three Hanford sustained-operation records, four Savannah River and Idaho cleanup-delivery-and-outcome records, and two LAP4/SRPPF project-implementation records. Eleven new Tier 1 sources and one reused NNSA budget source support the batch; zero exact target artifacts or triggers and no scope, implementation, closure, agency-contact, or FOIA changes are recorded.
-- The verified Phase 56Y contract is 1,875 pages, 655 sources, 473 signals, 405 Published signals, 68 In Review signals, 444 current Published-support sources, thirty-seven briefings, thirty-four research collections, 589 research documents, 53 updates, and an eighteen-file archive. Its owner-only replacement deployment is pending; Sites version 50 remains the active Phase 56X checkpoint until that receipt is recorded.
+- The verified Phase 56Y contract is 1,875 pages, 655 sources, 473 signals, 405 Published signals, 68 In Review signals, 444 current Published-support sources, thirty-seven briefings, thirty-four research collections, 589 research documents, 53 updates, and an eighteen-file archive. Local content commit `a904fe2ba6a14c48c16a0388a1639799e1e00e47` maps to exact private runtime commit `da452ab128d8d7584fe83238c9a696a2797666a7`, deployed as owner-only Sites version 51 in deployment `appgdep_6a6f972e06388191b34a3e2f5975c986` with one owner, no groups, no editors, and zero external visitors.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
@@ -216,7 +216,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only access, finish the Phase 56Y replacement deployment, and continue with Phase 56Z repeat-measurement and accepted-operation panels. Prioritize compatible second observations and completed-stage evidence for DOT, BEAD, Hanford, Savannah River, Idaho, LAP4, and SRPPF while treating exact-artifact checks as non-blocking inserts. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only Sites version 51 and continue with Phase 56Z repeat-measurement and accepted-operation panels. Prioritize compatible second observations and completed-stage evidence for DOT, BEAD, Hanford, Savannah River, Idaho, LAP4, and SRPPF while treating exact-artifact checks as non-blocking inserts. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -408,15 +408,15 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 56Y longitudinal delivery-and-outcome follow-through
+Phase 56Z repeat-measurement and accepted-operation panels
 ```
 
 Proceed by:
 
-- retrieve the FY 2025 JEC Co-Chair Priority Guidance Memorandum, Joint Operating Plan, TEC-HEC POAMM, and Joint Transition Task Force draft assessment,
-- trace DOT's unified-grants procurement to authoritative award, baseline, deployment, data-model, and operating-assessment records,
-- search DOE Waste Disposal Office products, NNSA Production Modernization supporting books, and Hanford decision records for the named exact targets,
-- search HHS and ASPR exercise repositories for completed department-wide AARs citing the January 2026 SOP,
+- add a second compatible DOT execution snapshot or program-level completion cohort without mixing formula and discretionary universes,
+- follow signed BEAD entities into disclosed construction, activation, operational tests, subscriber samples, adoption, and closeout,
+- extend Hanford, Savannah River, and Idaho records with repeat periods, accepted-operation denominators, throughput, residual inventory, disposal, cost, downtime, and compliance evidence,
+- follow LAP4 and SRPPF subprojects into delivered equipment, installation, CD-4, operational acceptance, and attributable output,
 - publish only an exact record, a new authoritative status, or a materially narrower locator,
 - do not represent a public search as agency contact or a submitted FOIA request,
 - preserve stop rules, reopening triggers, authority conflicts, and time-bounded milestone checks as inserts rather than pauses,
@@ -519,7 +519,7 @@ Current development state:
 v0.2 Phase 56Y candidate: package 0.2.0-dev, 655 public sources, 150 first-pass-triaged private candidates, 473 signals, 17 topics, 53 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,875 generated site pages, 405 Published signals, 30 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 34 research collections, 589 research documents, all prior verified archives plus the Phase 56Y 18-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 447 Manual Review and 208 Probe Ready records.
 
 Next decision gate:
-Preserve owner-only Sites access, record the exact Phase 56Y replacement deployment, and begin Phase 56Z. Build compatible second-observation and accepted-operation panels for DOT, BEAD, Hanford, Savannah River, Idaho, LAP4, and SRPPF while inserting exact JEC, DOT, DOE, NNSA, Hanford, and HHS target artifacts only when authoritative triggers appear. Preserve agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, funding universe, stage, period, unit, method, and denominator as separate. Do not infer causation or create rankings, composite scores, readiness scores, or generalized savings claims. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve owner-only Sites version 51 and begin Phase 56Z. Build compatible second-observation and accepted-operation panels for DOT, BEAD, Hanford, Savannah River, Idaho, LAP4, and SRPPF while inserting exact JEC, DOT, DOE, NNSA, Hanford, and HHS target artifacts only when authoritative triggers appear. Preserve agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, funding universe, stage, period, unit, method, and denominator as separate. Do not infer causation or create rankings, composite scores, readiness scores, or generalized savings claims. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

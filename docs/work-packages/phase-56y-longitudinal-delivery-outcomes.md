@@ -2,7 +2,7 @@
 
 Date: 2026-08-02
 
-Status: complete and validated; owner-only deployment pending
+Status: complete, validated, and owner-only deployed
 
 ## Goal
 
@@ -85,4 +85,11 @@ Build repeat-measurement and accepted-operation panels around the strongest Phas
 
 ## Owner-only deployment receipt
 
-Pending. Deploy only the exact validated content commit to the existing Sites project, preserve the custom owner-only policy, and do not change public GitHub, package version, Hostinger DNS, custom domain, or public access.
+- Local content commit: `a904fe2ba6a14c48c16a0388a1639799e1e00e47`.
+- Exact private runtime commit: `da452ab128d8d7584fe83238c9a696a2797666a7`.
+- Runtime tree: `4d4653c2877b63193088a7d33f18a944e7f76794`, containing only `.openai` and `dist` at the root.
+- Sites version: 51 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_45785155ef708191896966afb7d4c8a8`).
+- Deployment: `appgdep_6a6f972e06388191b34a3e2f5975c986`, succeeded at `https://ftfn-analytics.jbumstead.chatgpt.site`.
+- Runtime archive: 2,611 files, 136,878,080 bytes, `sha256:ce8fb4b9d6ce758f202fd4930fbdf29b8eef23ac1daf91c72896d4caedd631b4`.
+- Access verification: custom owner-only policy, one owner, no groups, no editors, and zero external visitors.
+- Public GitHub, package version, Hostinger DNS, custom domain, and public access remain unchanged.
