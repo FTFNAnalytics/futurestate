@@ -395,7 +395,7 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 56U | eight recovery searches, ten official near-matches, seven new source profiles, Research Watch 025, a verified 1,739-page contract, and Sites version 46 |
 | Completed and owner-only deployed | Phase 56V | ten second-order lead chains, twelve official source profiles, Research Watch 026, a verified 1,773-page contract, and Sites version 47 |
 | Completed and owner-only deployed | Phase 56W | seven named-target decisions, three cross-lane records, six Published additions, four In Review holds, a verified 1,798-page contract, and Sites version 49 |
-| Completed and release-verified locally | Phase 56X | thirteen Published implementation-to-outcome records, six Tier 1 sources, Research Watch 028, a sixteen-file archive, and a verified 1,832-page contract |
+| Completed and owner-only deployed | Phase 56X | thirteen Published implementation-to-outcome records, six Tier 1 sources, Research Watch 028, a sixteen-file archive, a verified 1,832-page contract, and Sites version 50 |
 | Next content gate | Phase 56Y | longitudinal delivery-and-outcome follow-through using compatible Phase 56X identities and denominators |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
@@ -1489,7 +1489,7 @@ Completion:
 - recorded zero exact target artifacts, directive-scope changes, implementation changes, closure changes, agency contacts, or FOIA requests and preserved the one Closed, twenty-one Partially Closed, and two Open entity evidence ledger.
 - local content commit `487a57c3fd9a9cd01a99533e637b05ad4efda745` produced exact private runtime commit `70f52b01e9475f6d1755d1ffb8dd57948848573c`; after a OneDrive placeholder check triggered a clean 1,798-page route-tree regeneration, the corrected package deployed successfully as owner-only Sites version 49 in deployment `appgdep_6a6f0df0e5188191a6aee3d2a12affab` with no groups, no editors, and zero external visitors.
 
-### Phase 56X: Implementation-To-Outcome Expansion And Exact-Artifact Recovery Batch Three - Complete And Release-Verified Locally
+### Phase 56X: Implementation-To-Outcome Expansion And Exact-Artifact Recovery Batch Three - Complete And Owner-Only Deployed
 
 Goal: extend Phase 56W's official records from plans, budgets, decisions, and aggregate status toward agency-specific implementation and operating evidence while continuing exact-artifact recovery as a non-blocking lane.
 
@@ -1502,6 +1502,7 @@ Delivered:
 5. added six Tier 1 sources, thirteen Published documents and signals, Research Watch 028, one collection, one update, two ledgers, and a verified sixteen-file archive;
 6. passed content references, source health, Astro diagnostics, the 1,832-page build, Phase 56X assertions, release assertions, sitemap membership, exports, and private-registry exclusion;
 7. preserved zero exact targets, exact-target triggers, directive-scope changes, implementation changes, closure changes, agency contacts, and FOIA submissions.
+8. matched local content commit `ed10683470cda8a9b7b9f11498de40955d7af679` to exact private runtime commit `0781d928b7d88442659c9a5ff9aa8a3bc29b85b6`, deployed Sites version 50 in deployment `appgdep_6a6f14c3b4188191977eab6fbd9a8611`, and confirmed custom owner-only access with no groups, no editors, and zero external visitors.
 
 Boundaries:
 
@@ -1651,4 +1652,4 @@ Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Sites version 49 serves local content commit `487a57c3fd9a9cd01a99533e637b05ad4efda745` from exact private runtime commit `70f52b01e9475f6d1755d1ffb8dd57948848573c` in deployment `appgdep_6a6f0df0e5188191a6aee3d2a12affab`, under custom owner-only access with no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 50 serves local content commit `ed10683470cda8a9b7b9f11498de40955d7af679` from exact private runtime commit `0781d928b7d88442659c9a5ff9aa8a3bc29b85b6` in deployment `appgdep_6a6f14c3b4188191977eab6fbd9a8611`, under custom owner-only access with no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

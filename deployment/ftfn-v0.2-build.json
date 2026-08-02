@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "build_id": "ftfn-v0.2",
-  "generated_date": "2026-07-25",
+  "generated_date": "2026-08-02",
   "project": "FTFN",
   "package_name": "ftfn-app",
   "package_version": "0.2.0-dev",
@@ -12,13 +12,13 @@
     "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
     "access": "owner-only-custom-policy",
     "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
-    "current_local_content_commit": "487a57c3fd9a9cd01a99533e637b05ad4efda745",
-    "current_source_commit": "70f52b01e9475f6d1755d1ffb8dd57948848573c",
-    "current_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_3cf53e6aeda08191bd4c1962120a5d35",
-    "current_version_number": 49,
-    "current_deployment_id": "appgdep_6a6f0df0e5188191a6aee3d2a12affab",
+    "current_local_content_commit": "ed10683470cda8a9b7b9f11498de40955d7af679",
+    "current_source_commit": "0781d928b7d88442659c9a5ff9aa8a3bc29b85b6",
+    "current_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_cb6962b1176c8191b850f6f8557cfa35",
+    "current_version_number": 50,
+    "current_deployment_id": "appgdep_6a6f14c3b4188191977eab6fbd9a8611",
     "custom_domain_attached": false,
-    "post_deploy_qa": "passed-version-49-clean-route-tree-deployment-status-source-provenance-and-owner-only-access-policy"
+    "post_deploy_qa": "passed-version-50-clean-route-tree-deployment-status-source-provenance-and-owner-only-access-policy"
   },
   "canonical_site": "https://ftfn.io",
   "app_root": "app",
@@ -357,7 +357,7 @@
     ],
     "browser_routes_checked": 10,
     "hosted_routes_checked": 2,
-    "preview_qa": "passed-owner-only-version-43-deployment-status; custom-access-one-owner-no-groups-no-external-visitors"
+    "preview_qa": "passed-owner-only-version-50-deployment-status-source-provenance; custom-access-one-owner-no-groups-no-editors-zero-external-visitors"
   },
   "required_output_files": [
     "dist/index.html",
@@ -2502,6 +2502,14 @@
     "organizations_deepened": 2,
     "dependency_maps_deepened": 1,
     "public_update_entries_added": 1,
-    "generated_pages_added": 34
+    "generated_pages_added": 34,
+    "local_content_commit": "ed10683470cda8a9b7b9f11498de40955d7af679",
+    "private_runtime_commit": "0781d928b7d88442659c9a5ff9aa8a3bc29b85b6",
+    "sites_version_number": 50,
+    "sites_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_cb6962b1176c8191b850f6f8557cfa35",
+    "sites_deployment_id": "appgdep_6a6f14c3b4188191977eab6fbd9a8611",
+    "sites_runtime_archive_file_count": 2549,
+    "sites_runtime_archive_content_hash": "sha256:b6a52155a66948203c57e230c89dd21e9a8c0f4e179e92f0bc1d21d57323613a",
+    "sites_access": "custom-owner-only-one-owner-no-groups-no-editors-zero-external-visitors"
   }
 }
