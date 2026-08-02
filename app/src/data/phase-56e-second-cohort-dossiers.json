@@ -1099,6 +1099,131 @@
         "exact_target_artifacts_acquired": 0,
         "near_matches_reviewed": 2,
         "agency_status_conflicts": 0
+      },
+      "phase_56v_supporting_artifact_decomposition": [
+        {
+          "lead_id": "lead-56v-09",
+          "action_key": "VA-04",
+          "official_identity": "GAO-25-107398 Recommendation 4",
+          "target_artifact": "VA 180-day response letter",
+          "lead_type": "Authority and measurement lineage",
+          "phase_56u_near_match": {
+            "source_id": "source-56u-va-category-management-training",
+            "locator": "FCL-VA 0302, VA Category Management",
+            "relation": "Current role-oriented category-management training",
+            "why_not_exact": "The course description does not contain the 180-day response, savings goals, baselines, methods, or tracked progress."
+          },
+          "decomposition_path": [
+            {
+              "source_id": "source-56v-va-category-management-authority-delegation",
+              "locator": "June 23, 2026 memorandum, sections 1-7",
+              "artifact_function": "Names current execution authority, governance accountability, reporting responsibility, and the objective of reducing unaligned spending.",
+              "why_not_target": "The memorandum contains no category-specific cost-avoidance or budget-savings goals, baselines, methods, or progress register."
+            },
+            {
+              "source_id": "source-56v-va-fy2024-annual-performance-report",
+              "locator": "OALC category-management performance measures and FY 2024 results",
+              "artifact_function": "Provides the existing spend-under-management and best-in-class measurement lineage and portfolio targets.",
+              "why_not_target": "Portfolio spend measures are not the recommendation-specific category-level savings goals and calculation methods requested by GAO."
+            }
+          ],
+          "material_narrowing": "The missing artifact can now be tested against two concrete supporting rails: the current OALC governance delegation and the established OALC performance-measure series.",
+          "exact_target_artifact_acquired": false,
+          "recommendation_specific_supporting_artifact_located": false,
+          "directive_element_tests": [
+            {
+              "directive_element": 1,
+              "requirement": "Category-specific cost-avoidance and budget-savings goals",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The performance report provides portfolio category-management measures, not category-specific cost-avoidance and budget-savings goals.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Baselines and methods for each goal",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "Neither record supplies baselines and calculation methods for each requested category-level goal.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "Tracked progress and governance accountability",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The delegation establishes accountability and reporting authority, but no recommendation-specific tracked progress register is published.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Search the OALC performance series, governance reports, and GAO correspondence for the 180-day letter plus category-level goals, baselines, methods, owners, and progress.",
+          "signal_id": "signal-56v-va-category-management-governance-metrics"
+        },
+        {
+          "lead_id": "lead-56v-10",
+          "action_key": "VA-05",
+          "official_identity": "GAO-24-106189 Recommendation 5",
+          "target_artifact": "Joint Transition Task Force draft effectiveness assessment",
+          "lead_type": "Recommendation-specific supporting correspondence",
+          "phase_56u_near_match": {
+            "source_id": "source-56u-dod-fy2026-dhra-budget",
+            "locator": "Military-Civilian Transition Office, pages 20-21 and 70-73",
+            "relation": "Current transition governance, evaluation, and performance architecture",
+            "why_not_exact": "It does not contain the task force draft, gap or overlap findings, or recommended changes."
+          },
+          "decomposition_path": [
+            {
+              "source_id": "source-56v-va-fy2026-congressional-supplemental-appendices",
+              "locator": "Pages 53-54, GAO-24-106189 Recommendation 5 response",
+              "artifact_function": "Names the Office of Enterprise Integration, JEC, TEC and HEC, FY 2025 priority guidance, Joint Operating Plan, planned POAMM, gaps-or-redundancies analysis, and then-current target.",
+              "why_not_target": "The appendix describes planned work but does not include the Joint Transition Task Force draft assessment, completed findings, recommended changes, or GAO acceptance."
+            }
+          ],
+          "material_narrowing": "The ticket now has four named downstream objects to recover: the FY 2025 JEC Co-Chair Priority Guidance Memorandum, Joint Operating Plan, TEC-HEC POAMM, and Joint Transition Task Force draft assessment.",
+          "exact_target_artifact_acquired": false,
+          "recommendation_specific_supporting_artifact_located": true,
+          "directive_element_tests": [
+            {
+              "directive_element": 1,
+              "requirement": "Joint VA–DOD assessment of transition support",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The appendix describes a planned joint assessment structure but does not publish the completed assessment.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Identification of gaps, overlap, or duplication",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "It says the planned work will identify gaps or redundancies but does not contain the resulting findings.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "Recommended changes and joint follow-through",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "It anticipates analysis and recommendations but does not publish recommended changes or completed joint follow-through.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Search JEC, OEI, TEC, HEC, VA, DOD, and GAO records for the named priority guidance, Joint Operating Plan, POAMM, draft assessment, findings, and recommendations.",
+          "signal_id": "signal-56v-va-dod-transition-plan-of-action-lineage"
+        }
+      ],
+      "phase_56v_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56V adds downstream locators and supporting-artifact chains but no exact target artifact, GAO acceptance, directive-scope change, implementation, closure, or operating outcome.",
+        "parent_near_matches_decomposed": 2,
+        "official_supporting_artifacts_profiled": 3,
+        "recommendation_specific_supporting_artifacts_located": 1,
+        "exact_target_artifacts_acquired": 0
       }
     },
     {
@@ -2100,6 +2225,191 @@
         "exact_target_artifacts_acquired": 0,
         "near_matches_reviewed": 3,
         "agency_status_conflicts": 1
+      },
+      "phase_56v_supporting_artifact_decomposition": [
+        {
+          "lead_id": "lead-56v-01",
+          "action_key": "DOE-01",
+          "official_identity": "GAO-23-104661 Recommendation 1",
+          "target_artifact": "Life-cycle cost estimate",
+          "lead_type": "Program budget and office lineage",
+          "phase_56u_near_match": {
+            "source_id": "source-56u-doe-fy2027-gao-ig-act",
+            "locator": "Appendix 1, page 9",
+            "relation": "Recommendation-specific DOE status and estimated completion date",
+            "why_not_exact": "The table does not contain the life-cycle estimate, its GAO-aligned method, or uncertainty analysis."
+          },
+          "decomposition_path": [
+            {
+              "source_id": "source-56v-nnsa-fy2027-overview",
+              "locator": "Overview pages 5-8, Production Modernization and plutonium-pit capability discussion",
+              "artifact_function": "Names the current program, production objective, program structure, and budget series most likely to carry the estimate.",
+              "why_not_target": "The overview does not contain the complete capability life-cycle estimate, GAO-aligned assumptions, or uncertainty analysis."
+            }
+          ],
+          "material_narrowing": "The search can now target the Production Modernization budget series and its supporting cost-estimate attachments instead of treating the NNSA budget portal as one undifferentiated repository.",
+          "exact_target_artifact_acquired": false,
+          "recommendation_specific_supporting_artifact_located": false,
+          "directive_element_tests": [
+            {
+              "directive_element": 1,
+              "requirement": "Full pit-production capability life-cycle scope",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The overview names the program and capability objective but does not publish a full capability life-cycle estimate.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "GAO-aligned cost-estimating method and assumptions",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "Budget narrative and control totals do not expose the recommendation-specific GAO-aligned estimating method and assumptions.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "Risk and uncertainty analysis across the production capability",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "No capability-wide risk and uncertainty analysis is published in the overview.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Search later Production Modernization supporting books, cost-estimate attachments, and GAO correspondence for a complete capability estimate; retain the December 2026 monitor as a bounded insert.",
+          "signal_id": "signal-56v-doe-pit-production-budget-lineage"
+        },
+        {
+          "lead_id": "lead-56v-02",
+          "action_key": "DOE-02",
+          "official_identity": "GAO-25-107109 Recommendation 3",
+          "target_artifact": "April 2026 180-day letter and cited analyses",
+          "lead_type": "Custodian and function decomposition",
+          "phase_56u_near_match": {
+            "source_id": "source-56u-doe-fy2027-gao-ig-act",
+            "locator": "Appendix 1, page 15",
+            "relation": "Recommendation-specific DOE status and April 2026 estimated completion date",
+            "why_not_exact": "The table does not reproduce the 180-day letter, complex-wide analysis, alternatives model, or optimal-strategy basis."
+          },
+          "decomposition_path": [
+            {
+              "source_id": "source-56v-doe-em-mission-functions",
+              "locator": "Pages 41-42, Waste Disposal Office mission and functions",
+              "artifact_function": "Identifies the EM office charged with integrating, planning, and analyzing waste streams for complex-wide disposal operations.",
+              "why_not_target": "The organizational statement predates the recommendation and does not reproduce the April 2026 letter, alternatives analysis, or optimal-strategy basis."
+            }
+          ],
+          "material_narrowing": "The ticket now points to Waste Disposal Office planning products, forecasts, and correspondence rather than the Office of Environmental Management generally.",
+          "exact_target_artifact_acquired": false,
+          "recommendation_specific_supporting_artifact_located": false,
+          "directive_element_tests": [
+            {
+              "directive_element": 1,
+              "requirement": "Complex-wide inventory and disposal pathways",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The office's complex-wide inventory and disposal function is named, but no recommendation-specific inventory and pathway analysis is published.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Comparison of disposal alternatives across sites",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The authority to plan and analyze does not provide the required cross-site alternatives comparison.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "Identification of an optimal strategy and basis",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "No optimal strategy, decision rule, or basis is contained in the organizational statement.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Search Waste Disposal Office planning products, complex-wide forecasts, correspondence-center packages, and April 2026 attachments for the exact analysis and decision basis.",
+          "signal_id": "signal-56v-doe-waste-disposal-custodian-function"
+        },
+        {
+          "lead_id": "lead-56v-03",
+          "action_key": "DOE-05",
+          "official_identity": "GAO-24-106989 Recommendation 3",
+          "target_artifact": "Pause decision and prerequisite analysis",
+          "lead_type": "Cited analysis and implementation-instrument lineage",
+          "phase_56u_near_match": {
+            "source_id": "source-56u-doe-fy2027-gao-ig-act",
+            "locator": "Appendix 1, page 13",
+            "relation": "Recommendation-specific DOE closure assertion",
+            "why_not_exact": "The table does not provide a pause decision, prerequisite package, independent analysis, or GAO acceptance."
+          },
+          "decomposition_path": [
+            {
+              "source_id": "source-56v-hanford-dfhlw-2025-supplement-analysis",
+              "locator": "Pages 10-12 and references to the January 2023 HLW AoA",
+              "artifact_function": "Shows the post-recommendation implementation analysis and the cited decision lineage for Direct-Feed High-Level Waste.",
+              "why_not_target": "It supports continued implementation and does not document the GAO-requested pause or prerequisite package."
+            },
+            {
+              "source_id": "source-56v-hanford-hlw-aoa-final-2023",
+              "locator": "Final report, alternatives, cost, schedule, risk, and estimating appendices",
+              "artifact_function": "Provides the underlying 2023 treatment-configuration alternatives analysis cited by the later supplement.",
+              "why_not_target": "It predates GAO-24-106989 and is not an independent recommendation-specific optimization or pause decision."
+            },
+            {
+              "source_id": "source-56v-hanford-hlw-aoa-addendum-2023",
+              "locator": "Addendum 1, Alternative 18 approach, assumptions, scoring, cost, and risk sections",
+              "artifact_function": "Documents the phased Alternative 18 configuration selected in the later decision trail.",
+              "why_not_target": "It predates the recommendation and does not establish pause, prerequisite completion, or GAO acceptance."
+            }
+          ],
+          "material_narrowing": "The agency-GAO conflict now has a document lineage: 2023 AoA, 2023 Addendum 1, and 2025 supplement. The missing object is no longer a generic Hanford analysis; it is the distinct post-recommendation pause and prerequisite decision package.",
+          "exact_target_artifact_acquired": false,
+          "recommendation_specific_supporting_artifact_located": false,
+          "directive_element_tests": [
+            {
+              "directive_element": 1,
+              "requirement": "Pause in covered Hanford facility work",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The located records describe continued implementation, not a pause in covered facility work.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Completion of named prerequisites",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "They do not document completion of the recommendation's named mission-need, independent-analysis, and safety prerequisites.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "Consideration of an independent high-level-waste alternatives analysis",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The 2023 AoA is a treatment-configuration analysis that predates the recommendation; it is not the required post-recommendation independent decision record.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Search Hanford decision memoranda, project-direction correspondence, independent-review attachments, and GAO correspondence for the distinct pause and prerequisite package; preserve the DOE-GAO status conflict.",
+          "signal_id": "signal-56v-doe-hanford-alternatives-lineage"
+        }
+      ],
+      "phase_56v_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56V adds downstream locators and supporting-artifact chains but no exact target artifact, GAO acceptance, directive-scope change, implementation, closure, or operating outcome.",
+        "parent_near_matches_decomposed": 3,
+        "official_supporting_artifacts_profiled": 5,
+        "recommendation_specific_supporting_artifacts_located": 0,
+        "exact_target_artifacts_acquired": 0
       }
     },
     {
@@ -3479,6 +3789,179 @@
         "exact_target_artifacts_acquired": 0,
         "near_matches_reviewed": 3,
         "agency_status_conflicts": 0
+      },
+      "phase_56v_supporting_artifact_decomposition": [
+        {
+          "lead_id": "lead-56v-06",
+          "action_key": "DOT-05",
+          "official_identity": "GAO-25-107166 Recommendation 2",
+          "target_artifact": "January 2026 enterprise-risk guidance and planned fiscal-year 2026 risk emphasis",
+          "lead_type": "Independent oversight lineage",
+          "phase_56u_near_match": {
+            "source_id": "source-56u-dot-fy2026-annual-performance-plan",
+            "locator": "Major Management Priorities and Challenges, page 10",
+            "relation": "Enterprise Risk Profile informs FY 2026 management challenges",
+            "why_not_exact": "It does not contain the January guidance or grant-agreement risk method."
+          },
+          "decomposition_path": [
+            {
+              "source_id": "source-56v-dot-oig-fy2026-top-management-challenges",
+              "locator": "Financial Stewardship and Curbing Fraud, Waste, and Abuse challenge sections",
+              "artifact_function": "Names current department-wide grant-process and stewardship vulnerabilities from DOT's independent inspector general.",
+              "why_not_target": "It does not publish the January 2026 ERM guidance, full risk profiles, or a recommendation-specific portfolio assessment."
+            }
+          ],
+          "material_narrowing": "The performance-plan lead now resolves to a named independent oversight series that can be checked for later audits of the January 2026 ERM cycle.",
+          "exact_target_artifact_acquired": false,
+          "recommendation_specific_supporting_artifact_located": false,
+          "directive_element_tests": [
+            {
+              "directive_element": 1,
+              "requirement": "Portfolio-wide grant-agreement risk identification",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The challenge statement is department-wide context, not a portfolio-wide identification of grant-agreement risks.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Risk rating, monitoring, and response method",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "It does not publish a likelihood, severity, monitoring, and response method for awardee challenges.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "Coverage across operating administrations",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "It does not demonstrate full operating-administration coverage of the recommendation-specific assessment.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Monitor DOT OIG audits and the FY 2026 ERM record for a portfolio assessment that identifies, rates, monitors, and assigns responses to grant-agreement risks.",
+          "signal_id": "signal-56v-dot-financial-stewardship-oversight-lineage"
+        },
+        {
+          "lead_id": "lead-56v-07",
+          "action_key": "DOT-05",
+          "official_identity": "GAO-25-107166 Recommendation 2",
+          "target_artifact": "January 2026 enterprise-risk guidance and planned fiscal-year 2026 risk emphasis",
+          "lead_type": "Planned system and procurement lineage",
+          "phase_56u_near_match": {
+            "source_id": "source-56u-dot-fy2025-agency-financial-report",
+            "locator": "Enterprise Risk Management section",
+            "relation": "Department-wide ERM cycle and selected public risks",
+            "why_not_exact": "It omits the recommendation-specific guidance and full risk profiles."
+          },
+          "decomposition_path": [
+            {
+              "source_id": "source-56v-dot-unified-grants-lifecycle-procurement",
+              "locator": "Opportunity 685586-2025-248, description, award state, and period of performance",
+              "artifact_function": "Names the planned common system, analytics, decision tools, and Grants Transparency Dashboard later referenced by DOT and GAO.",
+              "why_not_target": "The displayed forecast says the contract was not awarded and does not establish an operating assessment, monitoring method, or risk response."
+            }
+          ],
+          "material_narrowing": "The ticket now has a procurement identifier, system title, forecast value band, and expected performance window for later award and deployment checks.",
+          "exact_target_artifact_acquired": false,
+          "recommendation_specific_supporting_artifact_located": false,
+          "directive_element_tests": [
+            {
+              "directive_element": 1,
+              "requirement": "Portfolio-wide grant-agreement risk identification",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "A planned data system does not itself comprehensively identify grant-agreement risks across the portfolio.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Risk rating, monitoring, and response method",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The forecast describes analytics and decision tools but no operating likelihood, severity, monitoring, or response method.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "Coverage across operating administrations",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "Common-system intent does not demonstrate actual coverage across operating administrations.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Track the named procurement to an authoritative award, system baseline, data model, deployment record, and operating risk-assessment output before changing scope or implementation status.",
+          "signal_id": "signal-56v-dot-unified-grants-system-lineage"
+        },
+        {
+          "lead_id": "lead-56v-08",
+          "action_key": "DOT-05",
+          "official_identity": "GAO-25-107166 Recommendation 2",
+          "target_artifact": "January 2026 enterprise-risk guidance and planned fiscal-year 2026 risk emphasis",
+          "lead_type": "Policy-page and missing-attachment decomposition",
+          "phase_56u_near_match": {
+            "source_id": "source-56u-dot-grants-financial-assistance-office",
+            "locator": "Office overview",
+            "relation": "Named department-wide grants policy custodian",
+            "why_not_exact": "The page describes authority, not the January 2026 guidance or implementation evidence."
+          },
+          "decomposition_path": [
+            {
+              "source_id": "source-56v-dot-federal-grant-regulations-guidance",
+              "locator": "January 28, 2026 page text and linked federal rules",
+              "artifact_function": "Identifies the grants-policy surface where DOT-specific guidance is expected to appear and separates 2 CFR adoption from ERM guidance.",
+              "why_not_target": "The page says additional DOT-specific resources will be provided as available and does not contain the January 2026 ERM guidance or risk profiles."
+            }
+          ],
+          "material_narrowing": "The grants-office branch is now bounded to a specific policy page and missing future resource, rather than the grants office generally.",
+          "exact_target_artifact_acquired": false,
+          "recommendation_specific_supporting_artifact_located": false,
+          "directive_element_tests": [
+            {
+              "directive_element": 1,
+              "requirement": "Portfolio-wide grant-agreement risk identification",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "Government-wide grant rules are not the recommendation-specific portfolio risk identification required by GAO.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Risk rating, monitoring, and response method",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The page does not publish DOT's risk-rating, monitoring, or response method.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "Coverage across operating administrations",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "No operating-administration risk profiles or implementation evidence are linked.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Reopen when this page adds DOT-specific ERM guidance, an operating-administration profile, or a portfolio assessment addressing grant-agreement risks.",
+          "signal_id": "signal-56v-dot-grants-guidance-lineage"
+        }
+      ],
+      "phase_56v_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56V adds downstream locators and supporting-artifact chains but no exact target artifact, GAO acceptance, directive-scope change, implementation, closure, or operating outcome.",
+        "parent_near_matches_decomposed": 3,
+        "official_supporting_artifacts_profiled": 3,
+        "recommendation_specific_supporting_artifacts_located": 0,
+        "exact_target_artifacts_acquired": 0
       }
     },
     {
@@ -4058,5 +4541,6 @@
   "phase_56r_continuation_ledger": "phase-56r-implementation-artifact-milestone-ledger.json",
   "phase_56s_scope_audit_ledger": "phase-56s-artifact-scope-audit-missing-document-register.json",
   "phase_56t_acquisition_sufficiency_ledger": "phase-56t-official-response-acquisition-artifact-sufficiency-queue.json",
-  "phase_56u_exact_artifact_recovery_ledger": "phase-56u-custodian-exact-artifact-recovery-batch-one.json"
+  "phase_56u_exact_artifact_recovery_ledger": "phase-56u-custodian-exact-artifact-recovery-batch-one.json",
+  "phase_56v_supporting_artifact_decomposition_ledger": "phase-56v-second-order-recovery-leads-supporting-artifacts.json"
 }

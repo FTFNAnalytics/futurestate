@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: the eight Phase 56T acquisition tickets now carry custodian-level public recovery results while exact target, near-match, agency status, GAO acceptance, implementation, closure, entity evidence, outcome, period, denominator, and reopening boundaries remain separate.",
+  "summary": "A comparison and inference protocol: ten Phase 56U near-matches now resolve to named second-order artifacts while target, supporting record, agency status, GAO acceptance, directive scope, implementation, closure, entity evidence, outcome, period, denominator, and reopening boundaries remain separate.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -315,7 +315,19 @@
     "source-56u-dot-fy2025-agency-financial-report",
     "source-56u-dot-grants-financial-assistance-office",
     "source-56u-va-category-management-training",
-    "source-56u-dod-fy2026-dhra-budget"
+    "source-56u-dod-fy2026-dhra-budget",
+    "source-56v-nnsa-fy2027-overview",
+    "source-56v-doe-em-mission-functions",
+    "source-56v-hanford-dfhlw-2025-supplement-analysis",
+    "source-56v-hanford-hlw-aoa-final-2023",
+    "source-56v-hanford-hlw-aoa-addendum-2023",
+    "source-56v-hhs-aar-improvement-plan-template-catalog",
+    "source-56v-dot-oig-fy2026-top-management-challenges",
+    "source-56v-dot-unified-grants-lifecycle-procurement",
+    "source-56v-dot-federal-grant-regulations-guidance",
+    "source-56v-va-category-management-authority-delegation",
+    "source-56v-va-fy2024-annual-performance-report",
+    "source-56v-va-fy2026-congressional-supplemental-appendices"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -577,7 +589,17 @@
     "signal-56u-hhs-after-action-external-stakeholder-participation",
     "signal-56u-dot-grant-agreement-awardee-risk-assessment",
     "signal-56u-va-common-spend-savings-goals-tracking",
-    "signal-56u-va-dod-servicemember-transition-coordination"
+    "signal-56u-va-dod-servicemember-transition-coordination",
+    "signal-56v-doe-pit-production-budget-lineage",
+    "signal-56v-doe-waste-disposal-custodian-function",
+    "signal-56v-doe-hanford-alternatives-lineage",
+    "signal-56v-hhs-component-after-action-evaluation-instrument",
+    "signal-56v-hhs-stakeholder-after-action-template",
+    "signal-56v-dot-financial-stewardship-oversight-lineage",
+    "signal-56v-dot-unified-grants-system-lineage",
+    "signal-56v-dot-grants-guidance-lineage",
+    "signal-56v-va-category-management-governance-metrics",
+    "signal-56v-va-dod-transition-plan-of-action-lineage"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -804,6 +826,12 @@
       "label": "Eight custodian-level public recovery results",
       "node_type": "Signal",
       "note": "Zero exact target artifacts acquired, ten official near-matches bounded, and one agency-GAO status conflict preserved."
+    },
+    {
+      "id": "node-phase56v-supporting-artifact-decomposition",
+      "label": "Ten second-order supporting-artifact chains",
+      "node_type": "Signal",
+      "note": "Twelve official sources add ten materially narrower locators and one recommendation-specific supporting artifact; exact targets remain unacquired."
     }
   ],
   "links": [
@@ -1282,6 +1310,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "The recovery batch does not establish performance, readiness, safety, savings, value, ranking, score, or causation."
+    },
+    {
+      "from": "node-phase56v-supporting-artifact-decomposition",
+      "to": "node-phase56u-exact-artifact-recovery",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 56V decomposes all ten Phase 56U official near-matches exactly once."
+    },
+    {
+      "from": "node-phase56v-supporting-artifact-decomposition",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "A supporting locator and the target artifact use different evidence tests."
+    },
+    {
+      "from": "node-phase56v-supporting-artifact-decomposition",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "The supporting records do not establish performance, readiness, safety, savings, value, ranking, score, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -1320,7 +1369,8 @@
     "Twenty-four recommendation-level public-document searches and seventy-two directive-element scope findings.",
     "Separate availability results for three public candidates, thirteen adjacent records, and eight missing public copies.",
     "Eight named missing-document acquisition tickets, thirteen adjacent-source directive matrices, and three public-candidate sufficiency matrices.",
-    "Eight bounded custodian-level public searches, ten reviewed official near-matches, and one explicitly unresolved agency-GAO status conflict."
+    "Eight bounded custodian-level public searches, ten reviewed official near-matches, and one explicitly unresolved agency-GAO status conflict.",
+    "Ten bounded second-order chains across twelve official sources, including one recommendation-specific VA supporting artifact."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -1350,7 +1400,8 @@
     "That a public artifact, agency submission, milestone, or partial addressing constitutes implementation, closure, agency performance, or operating outcome.",
     "That public availability or an FTFN scope finding constitutes GAO acceptance, implementation, closure, agency performance, or operating outcome.",
     "That a failed public search proves nonexistence or that an FTFN matrix constitutes GAO acceptance, implementation, closure, or operating outcome.",
-    "That an unacquired public copy is nonexistent, that FTFN submitted an agency request, or that an agency statement or near-match constitutes GAO acceptance, implementation, closure, or outcome."
+    "That an unacquired public copy is nonexistent, that FTFN submitted an agency request, or that an agency statement or near-match constitutes GAO acceptance, implementation, closure, or outcome.",
+    "That a supporting artifact is the exact target, that a planned action occurred, or that GAO accepted, implemented, or closed any recommendation."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -1428,6 +1479,7 @@
     "Official GAO sufficiency decisions, late-2026 milestone artifacts, exact implementation evidence, and attributable operating outcomes for the Phase 56R ledger.",
     "Exact missing agency response documents, official sufficiency decisions, and attributable implementation and operating-outcome evidence for the Phase 56S register.",
     "Exact artifacts from named custodians, successor directives, and authoritative GAO sufficiency decisions for the Phase 56T queue.",
-    "The eight exact target artifacts, their public attachments, or authoritative GAO sufficiency decisions triggered by later agency submissions."
+    "The eight exact target artifacts, their public attachments, or authoritative GAO sufficiency decisions triggered by later agency submissions.",
+    "The eight exact target artifacts plus the newly named JEC, DOT system, DOE analysis, NNSA estimate, Hanford decision, and HHS AAR records."
   ]
 }

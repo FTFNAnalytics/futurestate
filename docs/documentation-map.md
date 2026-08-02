@@ -1563,6 +1563,7 @@ Purpose:
 - Record the completed Phase 56S twenty-four-recommendation artifact-scope audit, seventy-two directive elements, twelve official source profiles, 3 / 13 / 8 availability split, twenty-four Published signals, unchanged implementation, closure, and evidence-state ledgers, twenty-seven-file archive, Research Watch 023, owner-only deployment receipt, and Phase 56T handoff.
 - Record the completed Phase 56T official-response acquisition and artifact-sufficiency queue, eight missing-document tickets, thirteen adjacent-source directive matrices, three public-candidate matrices, seventy-two locators, eight repository-routing sources, twenty-four Published signals, unchanged implementation, closure, and evidence-state ledgers, twenty-seven-file archive, Research Watch 024, owner-only deployment receipt, and Phase 56U handoff.
 - Record the completed Phase 56U custodian-level recovery batch, eight searches, ten official near-matches, seven source profiles, eight Published signals, one agency-GAO conflict, zero exact target artifacts, unchanged directive-scope, implementation, closure, and evidence-state ledgers, eleven-file archive, Research Watch 025, owner-only deployment receipt, and Phase 56V handoff.
+- Record the completed Phase 56V second-order decomposition, ten lead chains, twelve official source profiles, ten Published signals, one recommendation-specific VA supporting artifact, zero exact target artifacts, unchanged directive-scope, implementation, closure, and evidence-state ledgers, thirteen-file archive, Research Watch 026, owner-only deployment receipt, and Phase 56W handoff.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 
@@ -1598,6 +1599,7 @@ Primary file:
 - `docs/work-packages/phase-56s-recommendation-artifact-scope-audit-missing-document-acquisition.md` for the twenty-four recommendation audits, seventy-two directive-element decisions, twelve official source profiles, 3 / 13 / 8 availability split, scope and publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56T handoff
 - `docs/work-packages/phase-56t-official-response-acquisition-artifact-sufficiency-queue.md` for the eight acquisition tickets, thirteen adjacent-source directive matrices, three public-candidate matrices, seventy-two directive locators, eight repository-routing sources, queue and publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56U handoff
 - `docs/work-packages/phase-56u-custodian-exact-artifact-recovery-batch-one.md` for the eight recovery searches, ten official near-matches, ticket outcomes, authority-conflict boundary, recovery and publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56V handoff
+- `docs/work-packages/phase-56v-second-order-recovery-leads-supporting-artifacts.md` for the ten lead chains, twelve official source profiles, directive tests, recommendation-specific supporting-artifact boundary, publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56W handoff
 
 Update when:
 
@@ -1631,6 +1633,7 @@ Update when:
 - the Phase 56S directive-element checks, public-document availability classes, scope findings, archive, deployment receipt, or Phase 56T acquisition priorities change,
 - the Phase 56T acquisition tickets, directive matrices, locators, repository routes, stop rules, reopening triggers, archive, deployment receipt, or Phase 56U recovery priorities change,
 - the Phase 56U recovery results, second-order leads, authority conflicts, archive, deployment receipt, or Phase 56V priorities change,
+- the Phase 56V lead chains, supporting-artifact boundaries, named-record retrieval queue, archive, deployment receipt, or Phase 56W priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

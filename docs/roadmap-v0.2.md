@@ -393,12 +393,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 56S | seventy-two directive-element checks, 3 / 13 / 8 availability split, Research Watch 023, and Sites version 44 |
 | Completed and owner-only deployed | Phase 56T | eight acquisition tickets, thirteen adjacent-source matrices, three public-candidate matrices, Research Watch 024, a verified 1,714-page contract, and Sites version 45 |
 | Completed and owner-only deployed | Phase 56U | eight recovery searches, ten official near-matches, seven new source profiles, Research Watch 025, a verified 1,739-page contract, and Sites version 46 |
-| Next content gate | Phase 56V | decompose the official near-matches into second-order recovery leads and supporting-artifact checks while other content lanes continue |
+| Completed locally; owner-only refresh pending | Phase 56V | ten second-order lead chains, twelve official source profiles, Research Watch 026, and a verified 1,773-page contract |
+| Next content gate | Phase 56W | retrieve the precise JEC, DOT system, DOE analysis, NNSA estimate, Hanford decision, and HHS AAR records named by Phase 56V |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now passes a verified 1,739-page Phase 56U contract. Phase 56U ran all eight custodian-level recovery tickets, reviewed ten current official near-matches, added seven source profiles and eight bounded Published decisions, and found no exact target artifact in the searched public repositories. One DOE self-reported closure conflicts with GAO's current Open status; both are preserved as separate authority records. No directive scope, implementation, closure, or Phase 56F entity evidence state changed. The next non-public content gate is Phase 56V: decompose the near-matches into second-order recovery leads and supporting-artifact checks while continuing compatible content lanes. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now passes a verified 1,773-page Phase 56V contract. Phase 56V decomposes all ten Phase 56U official near-matches across twelve official supporting sources and adds ten bounded Published decisions. One VA congressional appendix is recommendation-specific supporting correspondence, but no exact target artifact is acquired. The DOE agency-GAO conflict remains separate, and no directive scope, implementation, closure, or Phase 56F entity evidence state changes. The next non-public content gate is Phase 56W: retrieve the precise JEC, DOT system, DOE analysis, NNSA estimate, Hanford decision, and HHS AAR records named by Phase 56V while continuing compatible content lanes. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1425,7 +1426,7 @@ Completion:
 - recorded no directive-scope, implementation, or closure changes and preserved the one Closed, twenty-one Partially Closed, and two Open entity evidence ledger.
 - local content commit `c55a70906b250b95df5f527420b766e976a56995` produced exact private runtime commit `11b87a567de581b6d4d5368b60d8c944df376332`, deployed successfully as owner-only Sites version 46 in deployment `appgdep_6a6efe2ef8c481919544fd5000713e22` with no groups, no editors, and zero external visitors.
 
-### Phase 56V: Second-Order Recovery Leads And Supporting-Artifact Decomposition - Next Content Gate
+### Phase 56V: Second-Order Recovery Leads And Supporting-Artifact Decomposition - Complete And Release-Verified
 
 Goal: convert the Phase 56U official near-matches into named downstream recovery leads without waiting for dated milestones.
 
@@ -1443,6 +1444,36 @@ Boundaries:
 - a cited plan or program description cannot fill a directive gap by inference;
 - dated milestones remain monitors rather than dependencies for content expansion;
 - public access, DNS, release freeze, and public launch remain separate decisions.
+
+Completion:
+
+- decomposed all ten Phase 56U near-matches exactly once into named downstream offices, analyses, templates, systems, governance records, and correspondence;
+- added twelve current Tier 1 official source profiles, ten Published documents, ten Published signals, Research Watch 026, two machine-readable ledgers, one collection, one update, and a verified thirteen-file archive;
+- identified one recommendation-specific VA supporting artifact naming OEI, JEC, TEC, HEC, the Joint Operating Plan, a planned POAMM, and the transition-assessment lineage without representing it as the missing draft assessment;
+- resolved DOE's Hanford implementation chain to the 2023 HLW AoA, Addendum 1, and 2025 supplement while preserving GAO's Open status and the distinct post-recommendation pause-package gap;
+- resolved DOT's three branches to an OIG oversight series, a named unified-grants procurement forecast, and the January 2026 grants-guidance surface without representing any as an operating portfolio control;
+- passed content validation, source health, Astro diagnostics, the 1,773-page production build, Phase 56V assertions, sitemap membership, exports, and private-registry exclusion;
+- recorded zero exact target artifacts, directive-scope changes, implementation changes, closure changes, agency contacts, or FOIA requests and preserved the one Closed, twenty-one Partially Closed, and two Open entity evidence ledger.
+
+### Phase 56W: Named-Record Retrieval Batch Two And Cross-Lane Expansion - Next Content Gate
+
+Goal: retrieve the exact named records exposed by Phase 56V while continuing compatible content expansion without waiting for dated milestones.
+
+Priorities:
+
+1. seek the FY 2025 JEC Co-Chair Priority Guidance Memorandum, Joint Operating Plan, TEC-HEC POAMM, and Joint Transition Task Force draft assessment;
+2. trace DOT's unified-grants procurement to an authoritative award, system baseline, deployment record, data model, and operating assessment output;
+3. search DOE Waste Disposal Office planning products and correspondence for the April 2026 complex-wide analysis and optimal-strategy basis;
+4. search NNSA Production Modernization supporting books and GAO correspondence for the complete pit-production capability estimate;
+5. search Hanford decision memoranda and independent-review attachments for the post-recommendation pause and prerequisite package;
+6. search HHS and ASPR exercise repositories for completed department-wide AARs that cite the January 2026 SOP and name component and external-stakeholder participation.
+
+Boundaries:
+
+- a newly named record is not automatically the exact target;
+- award, deployment, use, assessment, acceptance, implementation, and closure remain separate;
+- publish only an exact record, a new authoritative status, or a materially narrower locator;
+- scheduled checks remain inserts and do not pause battery, manufacturer, carrier, local-system, or other compatible evidence lanes.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
 
@@ -1556,7 +1587,7 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 56V by decomposing the ten Phase 56U official near-matches into named second-order leads: cited appendices, referenced plans, underlying program offices, archived versions, attachments, and implementation instruments. Test each lead against the existing directive elements, publish only a new locator or materially narrower result, and retain the stop rule and reopening trigger where the gap remains. Continue compatible content lanes without waiting for dated milestones.
+Begin Phase 56W with the named-record retrieval queue produced by Phase 56V: the four VA-DOD JEC transition records, DOT's unified-grants award and deployment trail, DOE Waste Disposal Office analyses, the NNSA Production Modernization estimate lineage, Hanford pause and independent-review decision records, and completed HHS department-wide AARs. Publish only an exact record, a new authoritative status, or a materially narrower locator, and continue compatible content lanes without waiting for dated milestones.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 

@@ -42,7 +42,8 @@
     "Phase 56R connects all five DOE recommendations to the current artifact state, milestone, official review state, and remaining gap.",
     "Phase 56S gives all five DOE recommendation records an element-level scope audit and records two adjacent public sources plus three unresolved public-document gaps.",
     "Phase 56T assigns DOE missing artifacts to named custodians and repositories while preserving two adjacent-source matrices.",
-    "Phase 56U adds recommendation-specific DOE congressional status for three tickets while retaining the exact life-cycle estimate, disposal analyses, and Hanford pause package as unacquired."
+    "Phase 56U adds recommendation-specific DOE congressional status for three tickets while retaining the exact life-cycle estimate, disposal analyses, and Hanford pause package as unacquired.",
+    "Phase 56V names NNSA's Production Modernization budget lineage, EM's Waste Disposal Office, and Hanford's 2023 AoA-to-2025-supplement chain while retaining all three DOE target artifacts as unacquired."
   ],
   "primary_topics": [
     "Energy",
@@ -123,7 +124,10 @@
     "signal-56t-doe-hanford-waste-treatment-pause-conditions",
     "signal-56u-doe-pit-production-lifecycle-cost-estimate",
     "signal-56u-doe-complex-wide-waste-disposal-analysis",
-    "signal-56u-doe-hanford-waste-treatment-pause-conditions"
+    "signal-56u-doe-hanford-waste-treatment-pause-conditions",
+    "signal-56v-doe-pit-production-budget-lineage",
+    "signal-56v-doe-waste-disposal-custodian-function",
+    "signal-56v-doe-hanford-alternatives-lineage"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -203,7 +207,12 @@
     "source-56s-oced-independent-assessments-guidance-2024",
     "source-56t-doe-osti-repository",
     "source-56t-doe-nepa-document-repository",
-    "source-56u-doe-fy2027-gao-ig-act"
+    "source-56u-doe-fy2027-gao-ig-act",
+    "source-56v-nnsa-fy2027-overview",
+    "source-56v-doe-em-mission-functions",
+    "source-56v-hanford-dfhlw-2025-supplement-analysis",
+    "source-56v-hanford-hlw-aoa-final-2023",
+    "source-56v-hanford-hlw-aoa-addendum-2023"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -232,7 +241,8 @@
     "briefing-research-watch-022-recommendation-implementation-artifacts-milestones",
     "briefing-research-watch-023-recommendation-artifact-scope-audit",
     "briefing-research-watch-024-official-response-acquisition-queue",
-    "briefing-research-watch-025-exact-artifact-recovery-batch-one"
+    "briefing-research-watch-025-exact-artifact-recovery-batch-one",
+    "briefing-research-watch-026-second-order-recovery-leads"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -260,7 +270,8 @@
     "research-collection-gao-recommendation-implementation-artifact-milestone-ledger-2026",
     "research-collection-gao-recommendation-artifact-scope-audit-missing-document-register-2026",
     "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
-    "research-collection-gao-custodian-exact-artifact-recovery-batch-one-2026"
+    "research-collection-gao-custodian-exact-artifact-recovery-batch-one-2026",
+    "research-collection-gao-second-order-recovery-leads-supporting-artifacts-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -383,6 +394,11 @@
       "stage": "Phase 56U exact-artifact recovery batch one",
       "current_state": "Phase 56U adds recommendation-specific DOE congressional status for three tickets while retaining the exact life-cycle estimate, disposal analyses, and Hanford pause package as unacquired.",
       "boundary": "DOE's status table is a first-party agency statement; where it conflicts with GAO, FTFN retains GAO's current recommendation status."
+    },
+    {
+      "stage": "Phase 56V second-order recovery leads",
+      "current_state": "Phase 56V names NNSA's Production Modernization budget lineage, EM's Waste Disposal Office, and Hanford's 2023 AoA-to-2025-supplement chain while retaining all three DOE target artifacts as unacquired.",
+      "boundary": "Program lineage and cited analyses cannot substitute for the recommendation-specific estimate, complex-wide optimization, or Hanford pause and prerequisite package."
     }
   ],
   "evidence_limits": [
@@ -421,7 +437,9 @@
     "OSTI and NEPA repositories are retrieval rails; they are not substitutes for recommendation-specific estimates, analyses, reviews, or decisions.",
     "Not publicly acquired does not establish nonexistence, withholding, or a failure to submit.",
     "DOE's status table is a first-party agency statement; where it conflicts with GAO, FTFN retains GAO's current recommendation status.",
-    "FTFN submitted no agency contact or FOIA request in this public-repository pass."
+    "FTFN submitted no agency contact or FOIA request in this public-repository pass.",
+    "Program lineage and cited analyses cannot substitute for the recommendation-specific estimate, complex-wide optimization, or Hanford pause and prerequisite package.",
+    "FTFN submitted no agency contact or FOIA request in this public-record decomposition."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -458,6 +476,7 @@
     "Later GAO decisions on submitted artifacts, late-2026 milestone deliverables, exact implementation evidence, and attributable operating outcomes.",
     "Exact agency response artifacts, official GAO sufficiency decisions, and later attributable implementation and operating-outcome evidence.",
     "Exact artifacts released by named custodians, successor directives, and explicit GAO acceptance or remaining-deficiency decisions.",
-    "Exact public artifacts, recommendation correspondence attachments, or explicit GAO acceptance and remaining-deficiency decisions for the eight Phase 56U tickets."
+    "Exact public artifacts, recommendation correspondence attachments, or explicit GAO acceptance and remaining-deficiency decisions for the eight Phase 56U tickets.",
+    "The exact target artifacts, newly named attachments and plans, or explicit GAO acceptance and remaining-deficiency decisions for the eight acquisition tickets."
   ]
 }

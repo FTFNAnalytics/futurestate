@@ -109,20 +109,22 @@ Phase 56T converts the complete Phase 56S 3 / 13 / 8 split into twenty-four cont
 
 Phase 56U runs the first exact-title and custodian-level recovery pass for all eight Phase 56T acquisition tickets. Ten current official near-matches produce three recommendation-specific DOE status results and five current official near-match results, but no exact target artifact is acquired. Seven source profiles, eight Published documents and signals, Research Watch 025, two machine-readable ledgers, one collection, one update, and a verified eleven-file archive raise the candidate to 1,739 pages, 619 sources, 429 signals, 361 Published, 68 In Review, 49 updates, thirty-three briefings, thirty research collections, 541 research documents, and 408 current Published-support sources. Source health reports 428 Manual Review and 191 Probe Ready endpoints. One DOE agency-versus-GAO status conflict is preserved explicitly. Content validation, the production build, Phase 56U assertions, release assertions, sitemap membership, exports, and private-registry exclusion pass. No directive-scope, implementation, closure, or entity-evidence state changes. Local content commit `c55a70906b250b95df5f527420b766e976a56995` produced exact private runtime commit `11b87a567de581b6d4d5368b60d8c944df376332`, deployed as owner-only Sites version 46 in deployment `appgdep_6a6efe2ef8c481919544fd5000713e22`.
 
+Phase 56V decomposes all ten Phase 56U official near-matches into named downstream offices, analyses, templates, systems, governance records, and correspondence. Twelve Tier 1 source profiles support ten Published documents and signals, Research Watch 026, two machine-readable ledgers, one collection, one update, and a verified thirteen-file archive. VA's FY 2026 congressional appendix is one recommendation-specific supporting artifact and names the JEC plan, POAMM, responsible offices, and transition-assessment lineage; it is not the missing draft assessment. The candidate reaches 1,773 pages, 631 sources, 439 signals, 371 Published, 68 In Review, 50 updates, thirty-four briefings, thirty-one research collections, 551 research documents, and 420 current Published-support sources. Source health reports 432 Manual Review and 199 Probe Ready endpoints. No exact target artifact, directive-scope change, implementation change, closure change, agency contact, or FOIA request is recorded. Content validation, Astro diagnostics, the production build, Phase 56V assertions, sitemap membership, exports, and private-registry exclusion pass.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 1,739 | +1,557 |
-| Sources | 102 | 619 | +517 |
-| Signals | 18 | 429 | +411 |
-| Published signals | 3 | 361 | +358 |
+| Generated HTML pages | 182 | 1,773 | +1,591 |
+| Sources | 102 | 631 | +529 |
+| Signals | 18 | 439 | +421 |
+| Published signals | 3 | 371 | +368 |
 | In Review signals | 14 | 68 | +54 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 49 | +49 |
+| Public update entries | 0 | 50 | +50 |
 | Versioned JSON exports | 0 | 5 | +5 |
 
 Additional current records:
@@ -131,12 +133,12 @@ Additional current records:
 - 5 technologies,
 - 5 local systems,
 - 16 evidence gaps,
-- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56U reviews,
+- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56V reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 33 briefings: 26 Published and 7 In Review,
-- 30 research collections with 541 document records,
+- 34 briefings: 27 Published and 7 In Review,
+- 31 research collections with 551 document records,
 - 15 reader pathways across 19 Atlas surfaces,
-- all prior verified archives plus the Phase 56U eleven-file ZIP archive.
+- all prior verified archives plus the Phase 56V thirteen-file ZIP archive.
 
 ## What Is Built
 

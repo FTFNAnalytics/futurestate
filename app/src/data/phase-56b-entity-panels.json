@@ -1412,6 +1412,125 @@
         "exact_target_artifacts_acquired": 0,
         "near_matches_reviewed": 2,
         "agency_status_conflicts": 0
+      },
+      "phase_56v_supporting_artifact_decomposition": [
+        {
+          "lead_id": "lead-56v-04",
+          "action_key": "HHS-04-R1",
+          "official_identity": "GAO-24-106276 Recommendation 1",
+          "target_artifact": "Department-wide after-action program standard operating procedures",
+          "lead_type": "Referenced implementation instrument",
+          "phase_56u_near_match": {
+            "source_id": "source-56u-hhs-all-hazards-plan-catalog",
+            "locator": "Resource description and official plan link",
+            "relation": "Department-wide emergency coordination plan",
+            "why_not_exact": "It is not the 2026 after-action SOP and does not demonstrate the SOP in use through a qualifying AAR."
+          },
+          "decomposition_path": [
+            {
+              "source_id": "source-56v-hhs-aar-improvement-plan-template-catalog",
+              "locator": "Resource description and linked AAR/IP template",
+              "artifact_function": "Identifies a public HHS-hosted format for documenting exercise or event performance and improvement actions.",
+              "why_not_target": "The provider template is not the January 2026 department-wide SOP and does not demonstrate collaboration across HHS components."
+            }
+          ],
+          "material_narrowing": "The search can now distinguish SOP text from the separate AAR/IP implementation record GAO is waiting to review.",
+          "exact_target_artifact_acquired": false,
+          "recommendation_specific_supporting_artifact_located": false,
+          "directive_element_tests": [
+            {
+              "directive_element": 1,
+              "requirement": "Department-wide coordination procedures",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "A generic AAR/IP instrument does not establish HHS's department-wide coordination procedures.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Use across HHS component agencies",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The catalog does not show use across HHS component agencies.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "After-action report documenting coordination",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "No qualifying exercise or response AAR documenting component collaboration is attached.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Search HHS and ASPR exercise repositories for a completed AAR/IP that names participating components and cites the January 2026 SOP.",
+          "signal_id": "signal-56v-hhs-component-after-action-evaluation-instrument"
+        },
+        {
+          "lead_id": "lead-56v-05",
+          "action_key": "HHS-04-R2",
+          "official_identity": "GAO-24-106276 Recommendation 2",
+          "target_artifact": "External-stakeholder after-action participation standard operating procedures",
+          "lead_type": "Template-to-procedure gap decomposition",
+          "phase_56u_near_match": {
+            "source_id": "source-56u-hhs-all-hazards-plan-catalog",
+            "locator": "Resource description and official plan link",
+            "relation": "Broad coordinated emergency-response framework",
+            "why_not_exact": "The catalog does not provide the 2026 stakeholder-participation SOP, participant-selection process, or an implementation AAR."
+          },
+          "decomposition_path": [
+            {
+              "source_id": "source-56v-hhs-aar-improvement-plan-template-catalog",
+              "locator": "Resource description and linked AAR/IP template",
+              "artifact_function": "Provides a public after-action documentation instrument against which the stakeholder-specific SOP and completed AAR can be distinguished.",
+              "why_not_target": "The resource does not define relevant external stakeholders, selection criteria, participation steps, or a completed qualifying AAR."
+            }
+          ],
+          "material_narrowing": "The downstream search is now for the SOP's stakeholder-selection procedure plus a completed AAR/IP naming participating external organizations, not for another broad emergency plan.",
+          "exact_target_artifact_acquired": false,
+          "recommendation_specific_supporting_artifact_located": false,
+          "directive_element_tests": [
+            {
+              "directive_element": 1,
+              "requirement": "Procedure for relevant external-stakeholder participation",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The generic template does not establish a procedure for relevant external-stakeholder participation.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Identification and inclusion of appropriate stakeholders",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "It does not identify which stakeholders were selected or included in a department-wide exercise or response review.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "After-action report documenting participation",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "No completed AAR documents stakeholder participation and resulting solutions.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Search for a completed HHS exercise or response AAR/IP that identifies external participants, selection rationale, challenges, solutions, and the governing January 2026 SOP.",
+          "signal_id": "signal-56v-hhs-stakeholder-after-action-template"
+        }
+      ],
+      "phase_56v_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56V adds downstream locators and supporting-artifact chains but no exact target artifact, GAO acceptance, directive-scope change, implementation, closure, or operating outcome.",
+        "parent_near_matches_decomposed": 2,
+        "official_supporting_artifacts_profiled": 2,
+        "recommendation_specific_supporting_artifacts_located": 0,
+        "exact_target_artifacts_acquired": 0
       }
     },
     {
@@ -2588,5 +2707,6 @@
   "phase_56r_continuation_ledger": "phase-56r-implementation-artifact-milestone-ledger.json",
   "phase_56s_scope_audit_ledger": "phase-56s-artifact-scope-audit-missing-document-register.json",
   "phase_56t_acquisition_sufficiency_ledger": "phase-56t-official-response-acquisition-artifact-sufficiency-queue.json",
-  "phase_56u_exact_artifact_recovery_ledger": "phase-56u-custodian-exact-artifact-recovery-batch-one.json"
+  "phase_56u_exact_artifact_recovery_ledger": "phase-56u-custodian-exact-artifact-recovery-batch-one.json",
+  "phase_56v_supporting_artifact_decomposition_ledger": "phase-56v-second-order-recovery-leads-supporting-artifacts.json"
 }
