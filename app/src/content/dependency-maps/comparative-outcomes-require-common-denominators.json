@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 56Y adds fifteen longitudinal funding, agreement, operating, cleanup, and project records while entity, universe, stage, period, unit, method, denominator, acceptance, closure, and outcome remain separate.",
+  "summary": "A comparison and inference protocol: Phase 56Z adds thirteen Published repeat or completed-stage panels and four explicit holds while entity, universe, stage, period, unit, method, denominator, acceptance, closeout, and outcome remain separate.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -351,7 +351,19 @@
     "source-56y-srs-drone-inspections-2026",
     "source-56y-idaho-iwtu-storage-expansion-2026",
     "source-56y-idaho-iwtu-treatment-milestone-2026",
-    "source-56y-srppf-contract-qa-2026"
+    "source-56y-srppf-contract-qa-2026",
+    "source-56z-dot-iija-financial-summary-mar2025",
+    "source-56z-ntia-bead-progress-dashboard-may2026",
+    "source-56z-sc-bead-agreements-jun2026",
+    "source-56z-oregon-bead-community-hub-2026",
+    "source-56z-delaware-bead-milestone-mar2026",
+    "source-56z-hanford-tank-a102-retrieval-may2026",
+    "source-56z-srs-salt-waste-throughput-feb2024",
+    "source-56z-srs-tank3-pcwr-sep2025",
+    "source-56z-srs-gwsb1-double-stack-apr2024",
+    "source-56z-srs-liquid-waste-plan-jul2026",
+    "source-56z-nnsa-brookings-remarks-mar2024",
+    "source-56z-nnsa-hudson-remarks-jan2025"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -657,7 +669,20 @@
     "signal-56y-idaho-iwtu-storage-accepted-capacity",
     "signal-56y-idaho-iwtu-treatment-throughput",
     "signal-56y-nnsa-lap4-fy2027-delivery-plan",
-    "signal-56y-nnsa-srppf-transition-delivery-inputs"
+    "signal-56y-nnsa-srppf-transition-delivery-inputs",
+    "signal-56z-dot-iija-aggregate-repeat-panel",
+    "signal-56z-dot-fhwa-repeat-panel",
+    "signal-56z-dot-fta-repeat-panel",
+    "signal-56z-dot-fra-repeat-panel",
+    "signal-56z-ntia-bead-agreement-repeat-panel",
+    "signal-56z-sc-bead-agreement-to-construction-boundary",
+    "signal-56z-hanford-dflaw-accepted-operation-sequence",
+    "signal-56z-hanford-tank-retrieval-cumulative-panel",
+    "signal-56z-srs-tank3-pcwr-regulatory-cohort",
+    "signal-56z-srs-gwsb1-accepted-storage-capacity",
+    "signal-56z-idaho-iwtu-repeat-treatment-storage-panel",
+    "signal-56z-lap4-first-glovebox-delivery",
+    "signal-56z-srppf-demolition-training-delivery"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -908,6 +933,12 @@
       "label": "Fifteen longitudinal delivery-and-outcome records",
       "node_type": "Signal",
       "note": "Funding execution, award agreements, sustained operations, cleanup delivery, and project inputs advance stable identities without changing closure."
+    },
+    {
+      "id": "node-phase56z-repeat-measurement-accepted-operation",
+      "label": "Thirteen repeat or accepted-stage panels; four holds",
+      "node_type": "Signal",
+      "note": "Stable identities advance only when period, unit, method, denominator, and lifecycle stage remain explicit."
     }
   ],
   "links": [
@@ -1470,6 +1501,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "The records do not establish rankings, composite readiness, generalized savings, or unsupported causation."
+    },
+    {
+      "from": "node-phase56z-repeat-measurement-accepted-operation",
+      "to": "node-phase56y-longitudinal-delivery-outcomes",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 56Z extends Phase 56Y identities into repeat observations, accepted operation, delivered inputs, and explicit holds."
+    },
+    {
+      "from": "node-phase56z-repeat-measurement-accepted-operation",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Authority bases, facility universes, periods, and stages can change between observations."
+    },
+    {
+      "from": "node-phase56z-repeat-measurement-accepted-operation",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Two points and agency assertions do not establish durable trend, ranking, generalized savings, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -1512,7 +1564,8 @@
     "Ten bounded second-order chains across twelve official sources, including one recommendation-specific VA supporting artifact.",
     "Six current authoritative additions and four explicit publication holds across seven named recovery targets and three compatible cross-lane records.",
     "Thirteen bounded agency, site, waste-stream, and project follow-through records with explicit evidence stages and denominators.",
-    "Fifteen bounded longitudinal follow-through records with explicit entity, universe, stage, period, unit, method, and denominator."
+    "Fifteen bounded longitudinal follow-through records with explicit entity, universe, stage, period, unit, method, and denominator.",
+    "Thirteen bounded repeat or completed-stage panels plus four visible holds under explicit comparison contracts."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -1626,6 +1679,7 @@
     "The eight exact target artifacts plus the newly named JEC, DOT system, DOE analysis, NNSA estimate, Hanford decision, and HHS AAR records.",
     "Exact JEC, DOT, DOE, NNSA, Hanford, and HHS artifacts plus agency-specific operating and realized-outcome records for the cross-lane additions.",
     "Later accepted operation and realized-outcome evidence using the same Phase 56X identities, periods, units, methods, and denominators.",
-    "Later completed delivery, accepted operation, sustained performance, closeout, and realized-outcome evidence using the same Phase 56Y identities and denominators."
+    "Later completed delivery, accepted operation, sustained performance, closeout, and realized-outcome evidence using the same Phase 56Y identities and denominators.",
+    "Later compatible periods, accepted service, sustained operation, closeout, and realized-outcome evidence under the same entity and denominator."
   ]
 }

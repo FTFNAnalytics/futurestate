@@ -37,7 +37,7 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 1,875
+static pages generated: 1,923
 current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
@@ -167,6 +167,8 @@ What is now stable:
 - The verified Phase 56X contract is 1,832 pages, 644 sources, 458 signals, 390 Published signals, 68 In Review signals, 433 current Published-support sources, thirty-six briefings, thirty-three research collections, 574 research documents, 52 updates, and a sixteen-file archive. Local content commit `ed10683470cda8a9b7b9f11498de40955d7af679` maps to exact private runtime commit `0781d928b7d88442659c9a5ff9aa8a3bc29b85b6`, deployed as owner-only Sites version 50 in deployment `appgdep_6a6f14c3b4188191977eab6fbd9a8611` with one owner, no groups, no editors, and zero external visitors.
 - Phase 56Y publishes fifteen stable-identity follow-through records: four DOT funding-execution records, two BEAD agreement-and-test records, three Hanford sustained-operation records, four Savannah River and Idaho cleanup-delivery-and-outcome records, and two LAP4/SRPPF project-implementation records. Eleven new Tier 1 sources and one reused NNSA budget source support the batch; zero exact target artifacts or triggers and no scope, implementation, closure, agency-contact, or FOIA changes are recorded.
 - The verified Phase 56Y contract is 1,875 pages, 655 sources, 473 signals, 405 Published signals, 68 In Review signals, 444 current Published-support sources, thirty-seven briefings, thirty-four research collections, 589 research documents, 53 updates, and an eighteen-file archive. Local content commit `a904fe2ba6a14c48c16a0388a1639799e1e00e47` maps to exact private runtime commit `da452ab128d8d7584fe83238c9a696a2797666a7`, deployed as owner-only Sites version 51 in deployment `appgdep_6a6f972e06388191b34a3e2f5975c986` with one owner, no groups, no editors, and zero external visitors.
+- Phase 56Z reviews seventeen repeat-measurement and accepted-operation records. Thirteen panels publish and four remain In Review; twelve new Tier 1 sources and seven carried sources support the batch with zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
+- The verified Phase 56Z contract is 1,923 pages, 667 sources, 490 signals, 418 Published signals, 72 In Review signals, 452 current Published-support sources, thirty-eight briefings, thirty-five research collections, 606 research documents, 54 updates, and a twenty-file archive. Owner-only deployment is pending; Sites version 51 remains the current hosting checkpoint.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
@@ -216,7 +218,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only Sites version 51 and continue with Phase 56Z repeat-measurement and accepted-operation panels. Prioritize compatible second observations and completed-stage evidence for DOT, BEAD, Hanford, Savannah River, Idaho, LAP4, and SRPPF while treating exact-artifact checks as non-blocking inserts. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should deploy the validated Phase 56Z runtime under the existing owner-only policy, then continue with Phase 57A fixed-cohort completion and realized-outcome panels. Prioritize stable DOT program cohorts, BEAD subgrants through accepted service and testing, repeat cleanup throughput and residual inventories, regulatory closure and disposal, and LAP4 or SRPPF qualification, CD-4, acceptance, and attributable output while treating exact-artifact checks as non-blocking inserts. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -408,7 +410,7 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 56Z repeat-measurement and accepted-operation panels
+Phase 57A fixed-cohort completion and realized-outcome panels
 ```
 
 Proceed by:
@@ -510,16 +512,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 56Y longitudinal delivery-and-outcome follow-through.
+Phase 56Z repeat-measurement and accepted-operation panels.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 56Y candidate: package 0.2.0-dev, 655 public sources, 150 first-pass-triaged private candidates, 473 signals, 17 topics, 53 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,875 generated site pages, 405 Published signals, 30 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 34 research collections, 589 research documents, all prior verified archives plus the Phase 56Y 18-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 447 Manual Review and 208 Probe Ready records.
+v0.2 Phase 56Z candidate: package 0.2.0-dev, 667 public sources, 150 first-pass-triaged private candidates, 490 signals, 17 topics, 54 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,923 generated site pages, 418 Published signals, 31 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 35 research collections, 606 research documents, all prior verified archives plus the Phase 56Z 20-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 458 Manual Review and 209 Probe Ready records.
 
 Next decision gate:
-Preserve owner-only Sites version 51 and begin Phase 56Z. Build compatible second-observation and accepted-operation panels for DOT, BEAD, Hanford, Savannah River, Idaho, LAP4, and SRPPF while inserting exact JEC, DOT, DOE, NNSA, Hanford, and HHS target artifacts only when authoritative triggers appear. Preserve agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, funding universe, stage, period, unit, method, and denominator as separate. Do not infer causation or create rankings, composite scores, readiness scores, or generalized savings claims. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Deploy Phase 56Z under the existing owner-only policy and begin Phase 57A. Build fixed-cohort completion and realized-outcome panels for DOT, BEAD, Hanford, Savannah River, Idaho, LAP4, and SRPPF while inserting exact JEC, DOT, DOE, NNSA, Hanford, and HHS target artifacts only when authoritative triggers appear. Preserve agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, funding universe, stage, period, unit, method, denominator, revision history, and realized outcomes as separate. Do not infer causation or create rankings, composite scores, readiness scores, or generalized savings claims. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

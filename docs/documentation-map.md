@@ -1605,6 +1605,7 @@ Primary file:
 - `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md` for the seven named-target decisions, three compatible cross-lane records, six Published additions, four In Review holds, seven Tier 1 sources, publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56X handoff
 - `docs/work-packages/phase-56x-implementation-to-outcome-expansion.md` for the four award-review denominators, three operating outputs, three site denominators, three project-baseline records, six Tier 1 sources, publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56Y handoff
 - `docs/work-packages/phase-56y-longitudinal-delivery-outcomes.md` for the four funding-execution records, two award-to-service contracts, three sustained-operation records, four cleanup-delivery-and-outcome records, two project-implementation records, eleven new Tier 1 sources, publication ledgers, archive contract, validation evidence, and Phase 56Z handoff
+- `docs/work-packages/phase-56z-repeat-measurement-accepted-operation.md` for the seventeen reviewed panels, thirteen Published decisions, four In Review holds, twelve new Tier 1 sources, repeat-measurement and accepted-operation contracts, archive, validation evidence, and Phase 57A handoff
 
 Update when:
 
@@ -1642,6 +1643,7 @@ Update when:
 - the Phase 56W record decisions, publication holds, cross-lane boundaries, archive, deployment receipt, or Phase 56X priorities change,
 - the Phase 56X evidence-stage records, denominators, archive, deployment receipt, or Phase 56Y priorities change,
 - the Phase 56Y longitudinal records, universe and stage breaks, archive, deployment receipt, or Phase 56Z priorities change,
+- the Phase 56Z panels, changing denominators, operation and hold decisions, archive, deployment receipt, or Phase 57A priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed local work: Phase 56Y longitudinal delivery-and-outcome follow-through
+Latest completed local work: Phase 56Z repeat-measurement and accepted-operation panels
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 1,875 generated site pages
-Content: 655 sources, 473 signals, 17 topics, 5 local systems, 34 research collections / 589 research documents
-Publication: 405 Published signals, 68 In Review signals, 30 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
-Trust/data: 53 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, all prior verified research archives plus the Phase 56Y 18-file archive
+Build: 1,923 generated site pages
+Content: 667 sources, 490 signals, 17 topics, 5 local systems, 35 research collections / 606 research documents
+Publication: 418 Published signals, 72 In Review signals, 31 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
+Trust/data: 54 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, all prior verified research archives plus the Phase 56Z 20-file archive
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 51 serves the exact Phase 56Y runtime commit `da452ab128d8d7584fe83238c9a696a2797666a7` in deployment `appgdep_6a6f972e06388191b34a3e2f5975c986`
+Deployment: owner-only Sites version 51 remains the current hosting checkpoint; the validated Phase 56Z runtime is pending owner-only deployment
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 447 Manual Review, 208 Probe Ready, zero incomplete endpoint declarations; 14 Strong coverage lanes
-Next content gate: Phase 56Z repeat-measurement and accepted-operation panels; exact-artifact checks, the inherited HHS tracker recheck, and remaining dated inserts do not block expansion
+Source health: 458 Manual Review, 209 Probe Ready, zero incomplete endpoint declarations; 14 Strong coverage lanes
+Next content gate: Phase 57A fixed-cohort completion and realized-outcome panels; exact-artifact checks, the inherited HHS tracker recheck, and remaining dated inserts do not block expansion
 ```
 
 ## Read First
@@ -212,5 +212,5 @@ The latest completed local work is Phase 56Y. The current candidate should be 0.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve owner-only Sites version 51 and stop before changing access or attaching a domain. Phase 56Y is complete and deployed; begin Phase 56Z by building compatible second-observation and accepted-operation panels for DOT, BEAD, Hanford, Savannah River, Idaho, LAP4, and SRPPF. Insert exact-artifact recoveries only on authoritative public triggers and retain stop rules for unresolved gaps. Do not represent a search as agency contact or a submitted FOIA request. Keep agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, funding universe, stage, period, unit, method, denominator, and operating outcomes separate. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval.
+Deploy the validated Phase 56Z runtime only under the existing owner-only Sites policy and stop before changing access or attaching a domain. Then begin Phase 57A with fixed-cohort completion and realized-outcome panels for DOT, BEAD, Hanford, Savannah River, Idaho, LAP4, and SRPPF. Insert exact-artifact recoveries only on authoritative public triggers and retain stop rules for unresolved gaps. Do not represent a search as agency contact or a submitted FOIA request. Keep agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, funding universe, stage, period, unit, method, denominator, and operating outcomes separate. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval.
 ```

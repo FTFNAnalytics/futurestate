@@ -150,7 +150,14 @@
     "signal-56y-idaho-iwtu-storage-accepted-capacity",
     "signal-56y-idaho-iwtu-treatment-throughput",
     "signal-56y-nnsa-lap4-fy2027-delivery-plan",
-    "signal-56y-nnsa-srppf-transition-delivery-inputs"
+    "signal-56y-nnsa-srppf-transition-delivery-inputs",
+    "signal-56z-hanford-dflaw-accepted-operation-sequence",
+    "signal-56z-hanford-tank-retrieval-cumulative-panel",
+    "signal-56z-srs-tank3-pcwr-regulatory-cohort",
+    "signal-56z-srs-gwsb1-accepted-storage-capacity",
+    "signal-56z-idaho-iwtu-repeat-treatment-storage-panel",
+    "signal-56z-lap4-first-glovebox-delivery",
+    "signal-56z-srppf-demolition-training-delivery"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -253,7 +260,14 @@
     "source-56y-srs-drone-inspections-2026",
     "source-56y-idaho-iwtu-storage-expansion-2026",
     "source-56y-idaho-iwtu-treatment-milestone-2026",
-    "source-56y-srppf-contract-qa-2026"
+    "source-56y-srppf-contract-qa-2026",
+    "source-56z-hanford-tank-a102-retrieval-may2026",
+    "source-56z-srs-salt-waste-throughput-feb2024",
+    "source-56z-srs-tank3-pcwr-sep2025",
+    "source-56z-srs-gwsb1-double-stack-apr2024",
+    "source-56z-srs-liquid-waste-plan-jul2026",
+    "source-56z-nnsa-brookings-remarks-mar2024",
+    "source-56z-nnsa-hudson-remarks-jan2025"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -286,7 +300,8 @@
     "briefing-research-watch-026-second-order-recovery-leads",
     "briefing-research-watch-027-named-record-retrieval",
     "briefing-research-watch-028-implementation-to-outcome",
-    "briefing-research-watch-029-longitudinal-delivery-outcomes"
+    "briefing-research-watch-029-longitudinal-delivery-outcomes",
+    "briefing-research-watch-030-repeat-measurement-accepted-operation"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -318,7 +333,8 @@
     "research-collection-gao-second-order-recovery-leads-supporting-artifacts-2026",
     "research-collection-gao-named-record-retrieval-cross-lane-expansion-2026",
     "research-collection-implementation-to-outcome-evidence-2026",
-    "research-collection-longitudinal-delivery-outcomes-2026"
+    "research-collection-longitudinal-delivery-outcomes-2026",
+    "research-collection-repeat-measurement-accepted-operation-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -461,6 +477,11 @@
       "stage": "Phase 56Y longitudinal delivery-and-outcome follow-through",
       "current_state": "Fifteen Published records separate four funding-execution, two award-to-service, three sustained-operation, four cleanup-delivery, and two project-implementation records.",
       "boundary": "Entity, funding universe, stage, period, unit, method, and denominator remain explicit; a requirement, forecast, payment, delivered input, or output is not acceptance, closure, generalized savings, or causation."
+    },
+    {
+      "stage": "Phase 56Z repeat-measurement and accepted-operation panels",
+      "current_state": "Thirteen Published panels and four In Review holds separate repeat funding, award progression, accepted cleanup operation, delivered project inputs, and unresolved comparison contracts.",
+      "boundary": "Two points are not automatically a trend; changing denominators, planned construction, installed inputs, accepted operation, output, outcome, closeout, implementation, and closure remain separate."
     }
   ],
   "evidence_limits": [
@@ -506,7 +527,8 @@
     "Four Phase 56W exact-artifact searches remain In Review because no new exact artifact or authoritative narrowing was located.",
     "FTFN submitted no agency contact or FOIA request; public search does not establish nonexistence, withholding, or failure to submit.",
     "Phase 56X funding, Hanford, DOE EM, and NNSA records use distinct evidence stages and denominators; they cannot support agency rankings, composite scores, readiness scores, realized-savings claims, or causal inference.",
-    "Phase 56Y records preserve formula/discretionary, construction/operation, forecast/actual, and output/outcome series breaks; they cannot support rankings, composite scores, readiness scores, generalized savings, or unsupported causal inference."
+    "Phase 56Y records preserve formula/discretionary, construction/operation, forecast/actual, and output/outcome series breaks; they cannot support rankings, composite scores, readiness scores, generalized savings, or unsupported causal inference.",
+    "Phase 56Z prohibits denominator-free trends, stage inflation, cross-entity rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -547,6 +569,7 @@
     "The exact target artifacts, newly named attachments and plans, or explicit GAO acceptance and remaining-deficiency decisions for the eight acquisition tickets.",
     "The four JEC records, DOT unified-grants award and operating artifacts, DOE waste-optimization package, NNSA complete capability estimate, Hanford independent analysis and pause record, and HHS qualifying department-wide AARs.",
     "Later award, obligation, disbursement, deployment, use, output, acceptance, closure, and realized-outcome records using the same Phase 56X identity and denominator.",
-    "Later completed delivery, operational acceptance, sustained performance, closeout, and realized-outcome records using the same Phase 56Y identities and denominators."
+    "Later completed delivery, operational acceptance, sustained performance, closeout, and realized-outcome records using the same Phase 56Y identities and denominators.",
+    "Compatible later observations, completed delivery, operational acceptance, sustained performance, closeout, and realized outcomes under the same measurement contract."
   ]
 }

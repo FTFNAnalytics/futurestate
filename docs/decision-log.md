@@ -2803,3 +2803,27 @@ Deployment receipt:
 Boundary:
 
 Acquisition order ranks evidence opportunity, not entities. Monthly EIA fields do not establish interval availability; a market constraint does not establish asset availability or islanding performance; operator event evidence does not establish independently verified annual availability; readiness targets are not realized outcomes; and a FERC result is not a department-wide DOE result. No causal effect, ranking, composite score, readiness score, or unsupported cross-entity comparison is authorized. Public GitHub synchronization, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.
+
+## 2026-08-02: Phase 56Z Publishes Repeat And Accepted-Operation Panels With Four Explicit Holds
+
+Decision:
+
+Convert stable Phase 56Y identities into repeat-measurement, accepted-operation, and delivered-input panels only when their entity, universe, stage, period, unit, method, and denominator remain explicit. Keep pre-construction, incompatible-universe, and forecast-only cases In Review.
+
+Rationale:
+
+DOT now supplies a second financial statement, but adjusted authority changes across the observations. NTIA supplies a compatible 56-entity agreement snapshot and South Carolina supplies a reduced provider cohort, while Oregon and Delaware remain pre-construction. DOE and NNSA records add first disposal, completed retrieval, regulatory concurrence, accepted interim storage, approximate repeat treatment, installed equipment, demolition, recycling, and training inputs. These advances are useful only if they are not converted into fixed-cohort completion, steady-state operation, final disposal, closure, realized outcomes, or causal claims.
+
+Implemented:
+
+- seventeen reviewed records, thirteen Published and four In Review;
+- four DOT repeat funding panels, four BEAD records, five accepted cleanup-operation panels, two NNSA delivered-input panels, and two comparison holds;
+- twelve new Tier 1 sources and seven carried sources;
+- Research Watch 030, one collection, one public update, two machine-readable ledgers, and a verified twenty-file archive;
+- integrations across five topics, three pathways, one organization, and the comparative-outcomes dependency map;
+- a verified 1,923-page, 667-source, 490-signal contract with 418 Published, 72 In Review, 54 updates, thirty-eight briefings, thirty-five collections, 606 research documents, and 452 current Published-support sources;
+- Phase 57A selected as the next non-public content gate for fixed-cohort completion and realized-outcome panels.
+
+Boundary:
+
+Two observations are not automatically a trend. A changing funding denominator, signed agreement, planned construction, installed input, first operating event, preliminary regulatory concurrence, interim storage, output, forecast reduction, realized outcome, closeout, implementation, and closure remain separate. No ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference is authorized. Public GitHub synchronization, package freeze, public access, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.

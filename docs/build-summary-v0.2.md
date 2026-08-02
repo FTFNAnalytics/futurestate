@@ -290,6 +290,8 @@ Phase 56X converts those aggregate and planned records into four agency award-re
 
 Phase 56Y carries those stable identities into four DOT funding-execution records, two NTIA BEAD agreement-and-test records, three Hanford sustained-operation records, four Savannah River and Idaho cleanup-delivery-and-outcome records, and two LAP4/SRPPF project-implementation records. Eleven new official sources and one carried-forward NNSA budget source support fifteen Published documents and signals, one collection, Research Watch 029, one public update, and separate evidence and publication ledgers. The verified candidate is now 1,875 pages, 655 sources, 473 signals, 405 Published, 68 In Review, 53 updates, thirty-seven briefings, thirty-four collections, 589 research documents, and 444 current Published-support sources. No exact target or trigger, directive-scope, implementation, closure, agency-contact, FOIA, or entity-evidence state changes. Local content commit `a904fe2ba6a14c48c16a0388a1639799e1e00e47` produced exact private runtime commit `da452ab128d8d7584fe83238c9a696a2797666a7`, deployed as owner-only Sites version 51 in deployment `appgdep_6a6f972e06388191b34a3e2f5975c986` with one owner, no groups, no editors, and zero external visitors.
 
+Phase 56Z turns the strongest identities into four DOT repeat financial panels, four BEAD agreement or pre-construction records, five accepted cleanup-operation panels, two NNSA delivered-input panels, and two Savannah River comparison holds. Twelve new official sources and seven carried sources support thirteen Published documents and signals, four In Review documents and signals, one collection, Research Watch 030, one public update, and separate evidence and publication ledgers. The verified candidate is now 1,923 pages, 667 sources, 490 signals, 418 Published, 72 In Review, 54 updates, thirty-eight briefings, thirty-five collections, 606 research documents, and 452 current Published-support sources. No exact target or trigger, directive-scope, implementation, closure, agency-contact, FOIA, or entity-evidence state changes. Owner-only deployment is pending; Sites version 51 remains the current hosting checkpoint.
+
 Verified Phase 56W results:
 
 - 1,798 generated site pages,
@@ -328,11 +330,20 @@ Verified Phase 56Y results:
 - the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
 - content references, source health, Astro diagnostics, the 1,875-page build, Phase 56Y assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the eighteen-file archive all pass.
 
+Verified Phase 56Z results:
+
+- thirteen Published records and four In Review holds with a 4 / 2+2 / 5 / 2 / 2 repeat-funding, award-progression, accepted-cleanup-operation, project-delivery-input, and comparison-hold split;
+- twelve new Tier 1 official source profiles, seven carried sources, Research Watch 030, one collection, one update, and two machine-readable ledgers;
+- explicit changing-denominator, pre-construction, incompatible-universe, approximate-value, delivered-input, accepted-operation, forecast-versus-realized, and outcome boundaries;
+- zero exact targets, trigger events, directive-scope changes, implementation changes, closure changes, agency contacts, and FOIA requests;
+- the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
+- content references, source health, Astro diagnostics, the 1,923-page build, Phase 56Z assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the twenty-file archive all pass.
+
 The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
-The local release work is preserved on `codex/phase51-content`. Phase 56Y is complete, validated, and recorded at local content commit `a904fe2ba6a14c48c16a0388a1639799e1e00e47`. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
+The local release work is preserved on `codex/phase51-content`. Phase 56Z is complete and validated locally; its content commit and owner-only deployment receipt are pending. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
 The current hosting checkpoint is owner-only Sites version 51, serving the verified Phase 56Y package from exact private runtime commit `da452ab128d8d7584fe83238c9a696a2797666a7` in deployment `appgdep_6a6f972e06388191b34a3e2f5975c986`. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
@@ -340,8 +351,8 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Sixty-eight signals remain `In Review`; the four Phase 56A holds prohibit cross-series composites, the four Phase 56B holds prohibit cross-entity rankings, the four Phase 56C holds prohibit causal inference from temporal sequence or attribution, the six Phase 56D holds preserve compatibility and causal boundaries, the four Phase 56E holds prohibit second-cohort portfolio rankings, the Phase 56F hold prohibits turning coverage status into cross-cohort comparison, the Phase 56G hold prevents dated source checks from becoming substitute closures, the Phase 56H hold preserves nine continuation rules, the Phase 56I hold prevents a completed first pass from becoming an unsupported closure claim, the Phase 56J hold prevents a FERC component result from substituting for department-wide DOE evidence, HHS-04 and VA-02 preserve one-to-many recommendation identities, and the inherited HHS post-date record remains held until its public tracker changes. Three hundred and ninety bounded signals are Published.
-- Seven briefings and all five local-system profiles remain prelaunch or research material. The twenty-nine Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
+- Seventy-two signals remain `In Review`; the four Phase 56Z holds keep pre-construction BEAD records, incompatible Savannah River throughput periods, and a forecast canister reduction outside the Published layer. Four hundred and eighteen bounded signals are Published.
+- Seven briefings and all five local-system profiles remain prelaunch or research material. The thirty-one Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
 - Six Phase 55N sources have official-link records because their official hosts blocked or complicated automated export; the collection preserves direct official URLs rather than third-party substitutes.
@@ -371,6 +382,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 - Phase 56W uses ten official-link records. Six bounded additions publish and four exact-artifact searches remain In Review; project-level costs, aggregate funding, low-activity waste, potential savings, agency progress, and planned procurement retain distinct scopes and cannot be converted into complete estimates, DOT-only results, high-level-waste evidence, realized savings, independent validation, awards, implementation, or closure.
 - Phase 56X uses thirteen official-link records. Award review, obligation, disbursement, first use, operating output, site maintenance, project baseline, placeholder, fabrication, completion, acceptance, and outcome remain separate; the batch cannot support rankings, composite scores, readiness scores, realized-savings claims, or causation.
 - Phase 56Y uses fifteen official-link records. Formula and discretionary funding, award and service stages, requirements and observed results, construction and operation, forecast and actual, current-run and cumulative measures, delivered inputs, accepted capacity, operating output, realized outcome, and closure remain separate; the batch cannot support rankings, composite scores, readiness scores, generalized savings claims, or unsupported causation.
+- Phase 56Z uses seventeen official-link records. Thirteen repeat or completed-stage panels publish and four remain In Review; changing denominators, pre-construction plans, incompatible reporting universes, approximate measures, installed inputs, accepted operation, forecast outcomes, and realized results remain separate.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - The Project Baccara record now includes an official 4-1 County action and active final air permit; the fully executed MCP, condition compliance, service, construction, testing, occupancy, and operation remain unverified.
 - Toronto item `2026.SC33.9` is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted amendment, confirmed building permit, start, completion, or occupancy is yet available. A bounded recheck is scheduled for August 1.
@@ -424,6 +436,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-arc
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug implementation-to-outcome-evidence-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug longitudinal-delivery-outcomes-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug repeat-measurement-accepted-operation-2026
 npm.cmd run check
 npm.cmd run build
 npm.cmd run verify:phase56o
@@ -434,7 +447,8 @@ npm.cmd run verify:phase56s
 npm.cmd run verify:phase56t
 npm.cmd run verify:phase56x
 npm.cmd run verify:phase56y
+npm.cmd run verify:phase56z
 npm.cmd run verify:release
 ```
 
-Expected output: 1,875 generated site pages, the prior verified research archives plus the Phase 56Y eighteen-file archive, fifteen Published Phase 56Y records with a 4 / 2 / 3 / 4 / 2 evidence-stage split, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 56Y and v0.2 release assertions.
+Expected output: 1,923 generated site pages, the prior verified research archives plus the Phase 56Z twenty-file archive, thirteen Published Phase 56Z records and four In Review holds, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 56Z and v0.2 release assertions.
