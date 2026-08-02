@@ -1,7 +1,7 @@
 # Phase 56O: Cross-Agency Priority Remediation Follow-Through
 
 Date: 2026-08-01
-Status: In progress
+Status: Complete and owner-only deployed
 
 ## Goal
 
@@ -47,3 +47,31 @@ Extend the exact remediation rail with seven current agency priority-recommendat
 - The eleven-file archive passes manifest and checksum validation.
 - Content validation, source health, Astro diagnostics, production build, Phase 56K through 56O assertions, release assertions, sitemap membership, exports, and private-registry exclusion pass.
 - The exact prepared runtime is saved and deployed as a new owner-only Sites version with one allowed owner and no groups.
+
+## Local validation
+
+- 1,422 static pages
+- 562 sources
+- 305 signals: 239 Published and 66 In Review
+- 351 current sources supporting Published signals
+- 27 briefings: 20 Published and seven In Review
+- 24 research collections and 417 research documents
+- 43 public updates
+- 384 source endpoints classified `Manual Review`; 178 classified `Probe Ready`
+- eight Published research documents and signals
+- eleven-file archive generated and verified
+- the evidence ledger remains one Closed, twenty-one Partially Closed, and two Open
+
+## Deployment receipt
+
+- Local content commit: `a8183035a7772d7071c38608f05835496b378547`
+- Exact private runtime commit: `f553e70e01be6728ff08c82bafbc048ae1b6c453`
+- Sites version: 40 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_5fb41f39bae48191b1b18e8e203c548f`)
+- Deployment: `appgdep_6a6eca1aff88819187418a57ed928404`
+- Production URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- Access: custom owner-only policy; no groups and no external visitors
+- Sites archive: `sha256:a4f2bb26316a3dc65e16a9a476dcf8cb9f9ab23c0b9be48008af5b73cdb4e3ac`
+
+## Phase 56P handoff
+
+Decompose the seven agency letters into action-level priority-recommendation records where the official enclosures support stable identities and status claims. Prioritize DOE, HHS, DOT, and VA because they extend existing Phase 56F rails; keep GSA, OSTP, NTIA, and the government-wide model contextual unless a named action closes an existing gap. Preserve the inherited HHS hold until its tracker changes, and keep battery, manufacturer, and carrier continuation rules active as a parallel acquisition queue.

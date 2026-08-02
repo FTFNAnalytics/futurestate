@@ -145,6 +145,8 @@ What is now stable:
 - The verified Phase 56M contract is 1,370 pages, 549 sources, 288 signals, 222 Published signals, 66 In Review signals, 339 current Published-support sources, twenty-five briefings, twenty-two research collections, 399 research documents, 41 updates, and a six-file collection archive. Local content commit `1d05ce5e7503fe3798c6cee7e65fdf16d115ddea` maps to private runtime commit `7b23ccf49197b39060c7f7cc2aad58688326d151`, deployed as owner-only Sites version 38.
 - Phase 56N checks ten exact recommendation, portfolio, and component records across NASA, DOE, HHS, DHS, DOT, and VA. Nine bounded records publish; the HHS post-date tracker check remains In Review because no post-July 29 public outcome was available. The evidence ledger remains one Closed, twenty-one Partially Closed, and two Open.
 - The verified Phase 56N contract is 1,396 pages, 554 sources, 297 signals, 231 Published signals, 66 In Review signals, 343 current Published-support sources, twenty-six briefings, twenty-three research collections, 409 research documents, 42 updates, and a thirteen-file collection archive. Local content commit `a611431f233bcbd848f31ab46fa68e471250d7d3` maps to private runtime commit `95c8569d0d1d699b26bfc2ba4ed84710074ac35d`, deployed as owner-only Sites version 39.
+- Phase 56O publishes seven exact agency priority portfolios and one bounded government-wide benefit model. Eight records and signals publish; the inherited HHS tracker check remains In Review. Agency inventories, subject mixes, portfolio arithmetic, modeled potential, and realized benefits remain distinct. The evidence ledger remains one Closed, twenty-one Partially Closed, and two Open.
+- The verified Phase 56O contract is 1,422 pages, 562 sources, 305 signals, 239 Published signals, 66 In Review signals, 351 current Published-support sources, twenty-seven briefings, twenty-four research collections, 417 research documents, 43 updates, and an eleven-file collection archive. Local content commit `a8183035a7772d7071c38608f05835496b378547` maps to private runtime commit `f553e70e01be6728ff08c82bafbc048ae1b6c453`, deployed as owner-only Sites version 40.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
@@ -183,38 +185,38 @@ What is now stable:
 
 What is still prelaunch scaffolding:
 
-- Two hundred and three signal records are `Published`.
-- Sixty-three signal records are still `In Review`; no Draft Sample remains.
+- Two hundred and thirty-nine signal records are `Published`.
+- Sixty-six signal records are still `In Review`; no Draft Sample remains.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
 - There is no automation, ingestion, database, alerting, user account system, or numeric 42/59 scoring. Public metadata datasets now exist as static exports.
-- There is no public deployment, custom-domain attachment, DNS change, analytics, newsletter capture, or public access yet.
+- There is an owner-only Sites deployment, but no public access, custom-domain attachment, DNS change, analytics, or newsletter capture yet.
 - Broader assistive-technology testing, analytics decisions, package freeze, custom-domain verification, and final public launch approval still need later passes.
 
 Current strategic direction:
 
-FTFN should preserve owner-only access and continue with Phase 56O cross-agency remediation follow-through and outcome continuation. Phase 56N is complete, release-verified, and owner-only deployed as Sites version 39: nine exact recommendation, portfolio, and component outcomes publish, while the stale HHS post-date tracker check remains In Review. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Pursue the still-open GAO AI actions, DOE insider-threat recommendations 1 and 7, VA Southern Oregon recommendations 1, 2, 5, 6, and 7, and compatible battery, manufacturer, and carrier outcomes under their existing reopening rules. All scheduled checks are inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only access and continue with Phase 56P action-level priority-recommendation decomposition. Phase 56O is complete, release-verified, and owner-only deployed as Sites version 40: seven agency portfolios and one bounded government-wide model publish, while the inherited HHS tracker check remains In Review. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Decompose DOE, HHS, DOT, and VA portfolios first, keep GSA, OSTP, NTIA, and the government-wide model contextual unless named action evidence closes an existing gap, and continue compatible battery, manufacturer, and carrier outcomes in parallel. All scheduled checks are inserts rather than pauses. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 297 signal records,
-- 554 source records,
+- 305 signal records,
+- 562 source records,
 - 17 topic records,
 - 5 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 26 briefings: 19 Published and 7 In Review,
+- 27 briefings: 20 Published and 7 In Review,
 - 16 evidence gap records,
-- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56N reviews,
+- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56O reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 23 research collections with 409 document records,
+- 24 research collections with 417 document records,
 - 15 reader pathways across 19 existing Atlas surfaces,
-- 42 public update-log entries.
+- 43 public update-log entries.
 
-Two hundred and thirty-one official-source-backed signals are now `Published`.
+Two hundred and thirty-nine official-source-backed signals are now `Published`.
 
 Phase 55M added thirteen bounded records to the prior 25-signal Published set:
 
@@ -293,7 +295,7 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 56N: Verified Remediation And Component Outcome Continuation
+Phase 56O: Cross-Agency Priority Remediation Follow-Through
 ```
 
 Key files:
@@ -327,6 +329,7 @@ Key files:
 - `docs/work-packages/phase-56l-realized-outcome-continuation.md`
 - `docs/work-packages/phase-56m-federal-remediation-outcomes.md`
 - `docs/work-packages/phase-56n-verified-remediation-component-outcomes.md`
+- `docs/work-packages/phase-56o-cross-agency-remediation-follow-through.md`
 - `docs/work-packages/phase-55l-implementation-evidence-conversion.md`
 - `docs/work-packages/phase-55n-implementation-outcomes-local-conversion.md`
 - `docs/release-qa-v0.2.md`
@@ -383,15 +386,15 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 56O cross-agency remediation follow-through and outcome continuation
+Phase 56P action-level priority-recommendation decomposition
 ```
 
 Proceed by:
 
-- pursue the still-open GAO AI recommendation actions at NASA, DOE, HHS, DHS, and DOT,
-- continue DOE insider-threat recommendations 1 and 7 and VA Southern Oregon recommendations 1, 2, 5, 6, and 7 under their exact identities,
-- rerun the held HHS tracker check only when a post-July 29 public outcome appears,
-- continue compatible battery, manufacturer, and carrier outcome rails only under their existing reopening rules,
+- decompose the DOE, HHS, DOT, and VA priority portfolios into stable action-level records first,
+- keep GSA, OSTP, NTIA, and the government-wide benefit model contextual unless named action evidence closes an existing gap,
+- rerun the held HHS tracker check only when the official tracker changes,
+- continue compatible battery, manufacturer, and carrier outcome rails under their existing reopening rules,
 - tie every acquisition to its existing coverage ID and reopening rule,
 - execute bounded record batches across agencies, providers, production lines, and battery assets,
 - distinguish regulator, auditor, company, operator, carrier, and third-party attribution,
@@ -480,16 +483,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 56N verified remediation and component outcome continuation.
+Phase 56O cross-agency priority-remediation follow-through.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 56N candidate: package 0.2.0-dev, 554 public sources, 150 first-pass-triaged private candidates, 297 signals, 17 topics, 42 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,396 generated site pages, 231 Published signals, 19 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 23 research collections, 409 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, 15-file, 8-file, 10-file, two 6-file, and 13-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 376 Manual Review and 178 Probe Ready records.
+v0.2 Phase 56O candidate: package 0.2.0-dev, 562 public sources, 150 first-pass-triaged private candidates, 305 signals, 17 topics, 43 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,422 generated site pages, 239 Published signals, 20 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 24 research collections, 417 research documents, verified 26-file, 11-file, 19-file, 11-file, 13-file, 21-file, five 27-file, 35-file, two 51-file, 20-file, 10-file, 17-file, 15-file, 8-file, 10-file, two 6-file, 13-file, and 11-file research archives, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 384 Manual Review and 178 Probe Ready records.
 
 Next decision gate:
-Preserve owner-only Sites access and begin Phase 56O. Pursue the still-open GAO AI actions, DOE insider-threat recommendations 1 and 7, VA Southern Oregon recommendations 1, 2, 5, 6, and 7, and compatible battery, manufacturer, and carrier records under their existing reopening rules. Rerun the held HHS tracker check only after a post-July 29 public outcome appears. Require a genuinely new named record before changing closure state or publishing a new finding. Keep agency, component, recommendation, audit period, portfolio, action state, and enterprise conclusions distinct. Treat all scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Do not infer causation or create rankings, composite scores, or readiness scores. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve owner-only Sites access and begin Phase 56P. Decompose the seven Phase 56O agency portfolios into stable action-level recommendation records, prioritizing DOE, HHS, DOT, and VA. Keep GSA, OSTP, NTIA, and the government-wide model contextual unless named action evidence closes an existing gap. Continue compatible battery, manufacturer, and carrier records in parallel. Rerun the held HHS tracker check only when the official tracker changes. Require a genuinely new named record before changing closure state or publishing a new finding. Keep agency, component, recommendation, audit period, portfolio, action state, model, benefit attribution, and realized outcome distinct. Treat all scheduled checks as dated inserts. Keep Project Baccara's executed MCP, condition compliance, service, construction, testing, occupancy, and operation as dated monitors. Do not infer causation or create rankings, composite scores, or readiness scores. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

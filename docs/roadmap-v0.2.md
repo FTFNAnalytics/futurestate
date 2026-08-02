@@ -386,12 +386,13 @@ Recommended active schedule:
 | Completed | Phase 56L | three manufacturer outcome decisions, two bounded advancements, Research Watch 016, six-file archive, and owner-only Sites version 37 |
 | Completed | Phase 56M | three federal remediation decisions, three bounded signals, Research Watch 017, six-file archive, and owner-only Sites version 38 |
 | Completed | Phase 56N | ten verified remediation decisions, nine bounded signals, Research Watch 018, thirteen-file archive, and owner-only Sites version 39 |
-| Current content gate | Phase 56O | continue cross-agency remediation follow-through and exact outcome acquisition without waiting for scheduled checks |
+| Completed | Phase 56O | seven agency priority portfolios, one bounded government-wide model, eight Published signals, Research Watch 019, eleven-file archive, and owner-only Sites version 40 |
+| Current content gate | Phase 56P | decompose priority portfolios into action-level records and continue compatible outcome acquisition without waiting for scheduled checks |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete through Sites version 39. Phase 56N published nine bounded recommendation, portfolio, and component outcomes across NASA, DOE, HHS, DHS, DOT, and VA while holding the stale HHS post-date tracker check In Review. The ledger remains one Closed, twenty-one Partially Closed, and two Open evidence states. The current non-public content gate is Phase 56O: continue exact recommendation follow-through and compatible federal, battery, manufacturer, and carrier outcome records under their existing reopening rules without waiting for dated inserts or the shared annual carrier denominator. Phase 55H, Phase 55R, the held HHS tracker recheck, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete through Sites version 40. Phase 56O publishes seven bounded agency priority portfolios and one government-wide benefit model while holding agency arithmetic, subject mix, recommendation state, modeled potential, and realized benefit apart. The ledger remains one Closed, twenty-one Partially Closed, and two Open evidence states. The current non-public content gate is Phase 56P: decompose the strongest agency portfolios into action-level records, prioritize DOE, HHS, DOT, and VA continuation rails, and continue compatible battery, manufacturer, and carrier outcomes without waiting for dated inserts or the shared annual carrier denominator. Phase 55H, Phase 55R, the inherited HHS tracker hold, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1221,25 +1222,37 @@ Local result:
 - the evidence ledger remains one Closed, twenty-one Partially Closed, and two Open;
 - local content commit `a611431f233bcbd848f31ab46fa68e471250d7d3` produced exact private runtime commit `95c8569d0d1d699b26bfc2ba4ed84710074ac35d`, deployed successfully as owner-only Sites version 39 in deployment `appgdep_6a6ec4793e908191949090205040fbf3` with one allowed owner and no groups.
 
-### Phase 56O: Cross-Agency Remediation Follow-Through And Outcome Continuation - Next Content Gate
+### Phase 56O: Cross-Agency Priority Remediation Follow-Through - Complete And Owner-Only Deployed
 
-Goal: turn the strongest remaining open recommendation and component rails into a larger exact-record continuation queue without waiting for scheduled checks.
+Goal: extend the exact remediation rail with current agency portfolio movement and bounded government-wide benefit context without turning annual counts into comparable performance.
 
-Priority rails:
+Completion:
 
-- acquire implementation evidence for the still-open GAO AI actions at NASA, DOE, HHS, DHS, and DOT only when an official record names the exact recommendation and new state;
-- continue DOE insider-threat recommendations 1 and 7 and VA Southern Oregon recommendations 1, 2, 5, 6, and 7 under their current status identities;
-- rerun the held HHS tracker check when the public tracker publishes a post-July 29 update, but keep that dated result as an insert rather than a blocker;
-- screen the remaining Phase 56J queue, battery, manufacturer, and carrier rails for compatible accepted, delivered, restored, certified, implemented, or repeat operating records;
-- preserve the six-carrier 2026 full-year comparison gate and all existing no-ranking and no-causation boundaries.
+- published seven exact agency priority portfolios for DOE, HHS, DOT, VA, GSA, OSTP, and NTIA plus GAO's bounded government-wide open-recommendation benefit model;
+- added eight source profiles, eight research documents, eight Published signals, Research Watch 019, one collection, two machine-readable ledgers, and an eleven-file archive;
+- integrated four existing Phase 56F agency rails, three reader pathways, eight topics, two organizations, and the common-denominator comparison map;
+- preserved implemented, added, de-prioritized, current, modeled, and realized states as distinct and retained the inherited HHS tracker hold;
+- passed the 1,422-page release contract with 562 sources, 305 signals, 239 Published signals, 417 research documents, and 43 public updates;
+- local content commit `a8183035a7772d7071c38608f05835496b378547` produced exact private runtime commit `f553e70e01be6728ff08c82bafbc048ae1b6c453`, deployed successfully as owner-only Sites version 40 in deployment `appgdep_6a6eca1aff88819187418a57ed928404` with no groups and no external visitors.
 
-Exit criteria:
+### Phase 56P: Action-Level Priority Recommendation Decomposition - Next Content Gate
 
-- each record retains agency or component, recommendation or project, source, status period, finding, and reopening-rule identity;
-- recommendation closure, portfolio movement, component remediation, and operating outcomes remain separate evidence types;
-- exact non-closures publish only when they materially improve reader value;
-- no ranking, composite, productivity, readiness, safety, quality, value, or causal claim is created;
-- the full local release and owner-only deployment gates pass.
+Goal: move from portfolio arithmetic to stable named action records without implying that annual counts are comparable agency performance.
+
+Priorities:
+
+1. extract action-level identities, stated status, subject scope, and continuation rules from the seven Phase 56O agency letters where the official enclosures support them;
+2. prioritize DOE, HHS, DOT, and VA because they extend existing Phase 56F coverage rails and already have named open actions;
+3. keep GSA, OSTP, NTIA, and the government-wide model contextual unless a named action supplies exact evidence for an existing gap;
+4. preserve the inherited HHS tracker hold until the official tracker changes;
+5. continue compatible battery, manufacturer, and carrier acquisitions in parallel under their existing reopening rules.
+
+Boundaries:
+
+- a priority designation is not a closure state;
+- an agency letter is not proof of the operating outcome behind every recommendation;
+- portfolio counts with different inventories and subject mixes do not support rankings or comparable rates;
+- modeled potential benefits remain separate from recommendation-level attribution and realized savings.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
 
@@ -1349,12 +1362,14 @@ v0.2 is successful when:
 
 The v0.2 build and publication thresholds pass in the current candidate. Phase 55S batches one and two promoted 60 retained candidates and added 61 sources, 12 bounded signals, 18 research documents, two collections, and one briefing draft. Phase 55T brought every topic to a four-signal and two-Published-record floor. Phase 55U added three evidence-dense local systems, 26 official sources, 15 signals, three pathways and gaps, one briefing, and one map. Phase 55V added an 18-document cross-corridor shelf, a 21-file archive, a new synthesis briefing, and downstream evidence integration. Phase 55W added the record-level publication ledger, promoted 12 bounded signals, published one briefing and one map, expanded the pathway network to 15, and made the larger corpus discoverable through separate shelves, filters, and five exports. Phase 55X added 24 implementation records and twelve signals across three local systems. Phase 55Y added 24 operating and receiving-system records. Phase 55Z added 32 operating-outcome records, sixteen signals, a comparison-boundary map, and an explicit four-record hold set. Phase 56A added 48 observations in sixteen three-record series, twenty signal decisions, Research Watch 005, and a 51-file archive. Phase 56B added twelve Published entity panels, four ranking holds, 17 official records, Research Watch 006, and a 20-file archive. Phase 56C added twelve Published driver-and-constraint dossiers, four causal-inference holds, 20 source profiles, 24 summaries, Research Watch 007, and a 27-file archive. Phase 56D added twelve entity-level alternative-explanation tests, four portfolio holds, 20 source profiles, 24 summaries, Research Watch 008, and a 27-file archive. Phase 56E added a second twelve-entity cohort, 36 Published vertical layers, four portfolio holds, 40 source profiles, 48 summaries, Research Watch 009, and a 51-file archive. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
 
+Phase 56F through Phase 56O then built the exact continuation system: 24 stable entity rails, explicit closure and reopening states, seven follow-through batches, and current agency portfolio context. Phase 56O closes at 1,422 pages, 562 sources, 305 signals, 239 Published signals, 24 research collections, and 417 research documents. The release remains `0.2.0-dev`, owner-only, and outside the public-launch boundary.
+
 ## Immediate Next Step
 
-Begin Phase 56O by expanding the exact-record continuation queue across the still-open GAO AI actions, DOE insider-threat recommendations 1 and 7, VA Southern Oregon recommendations 1, 2, 5, 6, and 7, and compatible battery, manufacturer, and carrier rails. Rerun the held HHS tracker check only when a post-July 29 public update appears. Keep the shared 2026 carrier release gate intact and do not pause content expansion while those full-year denominators mature.
+Begin Phase 56P by decomposing the seven Phase 56O agency portfolios into action-level priority-recommendation records. Start with DOE, HHS, DOT, and VA, where named recommendation states can extend existing Phase 56F rails; treat GSA, OSTP, NTIA, and the government-wide model as contextual until a named action closes an existing gap. Continue compatible battery, manufacturer, and carrier records in parallel. Rerun the held HHS tracker check only when the official tracker changes, keep the shared 2026 carrier release gate intact, and do not pause content expansion while full-year denominators mature.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Sites version 39 serves local content commit `a611431f233bcbd848f31ab46fa68e471250d7d3` from exact private runtime commit `95c8569d0d1d699b26bfc2ba4ed84710074ac35d` in deployment `appgdep_6a6ec4793e908191949090205040fbf3`, under custom access with one allowed owner and no groups. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 40 serves local content commit `a8183035a7772d7071c38608f05835496b378547` from exact private runtime commit `f553e70e01be6728ff08c82bafbc048ae1b6c453` in deployment `appgdep_6a6eca1aff88819187418a57ed928404`, under custom owner-only access with no groups and no external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
