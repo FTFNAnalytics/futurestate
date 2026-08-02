@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed local work: Phase 57B accepted-service and independent-outcome validation
+Latest completed local work: Phase 57C service reliability, adoption, and recurring-output validation
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 2,009 generated site pages
-Content: 683 sources, 523 signals, 17 topics, 5 local systems, 37 research collections / 639 research documents
-Publication: 441 Published signals, 82 In Review signals, 33 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
-Trust/data: 56 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, all prior verified research archives plus the Phase 57B 20-file archive
+Build: 2,053 generated site pages
+Content: 685 sources, 543 signals, 17 topics, 5 local systems, 38 research collections / 659 research documents
+Publication: 453 Published signals, 90 In Review signals, 34 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
+Trust/data: 57 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, all prior verified research archives plus the Phase 57C 23-file archive
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 54 serves exact private runtime commit 93f62742251f40c79f99d2c0c4df63cb32fbecc3 in appgdep_6a6fc63ce3408191ae44dcd4ea8acae7
+Deployment: owner-only Sites version 54 remains active on the exact Phase 57B runtime until the validated Phase 57C package receives its deployment receipt
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 466 Manual Review, 217 Probe Ready, zero incomplete endpoint declarations; 14 Strong coverage lanes
-Next content gate: Phase 57C service reliability, adoption, and recurring-output validation; exact-artifact checks, the inherited HHS tracker recheck, and remaining dated inserts do not block expansion
+Source health: 468 Manual Review, 217 Probe Ready, zero incomplete endpoint declarations; 14 Strong coverage lanes
+Next content gate: Phase 57D persistent service quality and compatible time-series replication; exact-artifact checks, the inherited HHS tracker recheck, and remaining dated inserts do not block expansion
 ```
 
 ## Read First
@@ -161,6 +161,7 @@ The approved preview sequence is complete:
 106. Matched local content commit `b30c63b04f4633e3937a0d45e16fc8f4f87ee59f` to exact private runtime commit `e4ba82a9c248c60db917c07944143bb5b186a463`, saved the 2,739-file runtime archive as Sites version 53, deployed it successfully in `appgdep_6a6fa914ec0081918a598ddc330311fb`, and confirmed custom owner-only access with one owner, no groups, no editors, and zero external visitors.
 107. Completed and validated Phase 57B locally: reviewed seventeen accepted-service and independent-outcome records; published ten and held seven; added eleven Tier 1 sources, Research Watch 032, two ledgers, one collection, one update, and a twenty-file archive; verified 2,009 pages, 683 sources, 523 signals, 441 Published, 82 In Review, 56 updates, thirty-seven collections, 639 research documents, and 463 current Published-support sources while preserving zero exact targets, scope changes, implementation changes, closure changes, agency contacts, FOIA requests, or entity-evidence changes.
 108. Matched local content commit `35a34fd9e57ea3e96df24a717bf21630098814ee` to exact private runtime commit `93f62742251f40c79f99d2c0c4df63cb32fbecc3`, saved the 2,807-file runtime archive as Sites version 54, deployed it successfully in `appgdep_6a6fc63ce3408191ae44dcd4ea8acae7`, passed five hosted route checks, and confirmed custom owner-only access with one owner, no groups, no editors, and zero external visitors.
+109. Completed and validated Phase 57C locally: reviewed twenty service-reliability, adoption, and recurring-output records; published twelve and held eight; preserved all seven Phase 57B holds; added two Tier 1 sources, Research Watch 033, two ledgers, one collection, one update, and a twenty-three-file archive; verified 2,053 pages, 685 sources, 543 signals, 453 Published, 90 In Review, 57 updates, thirty-eight collections, 659 research documents, and 465 current Published-support sources while preserving zero exact targets, scope changes, implementation changes, closure changes, agency contacts, FOIA requests, or entity-evidence changes.
 
 ## Required Stop Points
 
@@ -214,9 +215,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed work is Phase 57B. The current candidate should be 0.2.0-dev on codex/phase51-content with 683 sources, 523 signals, 441 Published signals, 82 In Review signals, five local systems, thirty-three Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 56 public updates, five JSON exports, 2,009 generated site pages, thirty-seven research collections, 639 research documents, all prior verified archives, and the Phase 57B twenty-file archive. Owner-only Sites version 54 serves exact private runtime commit `93f62742251f40c79f99d2c0c4df63cb32fbecc3`; public access and DNS remain unchanged.
+The latest completed work is Phase 57C. The current candidate should be 0.2.0-dev on codex/phase51-content with 685 sources, 543 signals, 453 Published signals, 90 In Review signals, five local systems, thirty-four Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 57 public updates, five JSON exports, 2,053 generated site pages, thirty-eight research collections, 659 research documents, all prior verified archives, and the Phase 57C twenty-three-file archive. Owner-only Sites version 54 remains the preceding hosting checkpoint until the exact Phase 57C package is deployed; public access and DNS remain unchanged.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Begin Phase 57C with service reliability, adoption, and recurring-output validation for the same named Amtrak, Louisiana, Hanford, and NNSA cohorts. Preserve all seven Phase 57B holds until their named reopening conditions are met. Do not represent a search as agency contact or a submitted FOIA request. Keep agency assertions, regulator evidence, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, cohort, stage, period, unit, method, denominator, revision history, attribution, and operating outcomes separate. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval.
+Begin Phase 57D with persistent service quality and compatible time-series replication for the same named Amtrak, Louisiana, Hanford, and NNSA cohorts. Preserve every current hold until its named reopening condition is met. Do not represent a search as agency contact or a submitted FOIA request. Keep agency assertions, regulator evidence, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, cohort, stage, period, unit, method, denominator, revision history, attribution, and operating outcomes separate. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval.
 ```

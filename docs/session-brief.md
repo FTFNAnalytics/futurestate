@@ -173,6 +173,8 @@ What is now stable:
 - The verified Phase 57A contract is 1,962 pages, 672 sources, 506 signals, 431 Published signals, 75 In Review signals, 455 current Published-support sources, thirty-nine briefings, thirty-six research collections, 622 research documents, 55 updates, and a nineteen-file archive. Local content commit `b30c63b04f4633e3937a0d45e16fc8f4f87ee59f` maps to exact private runtime commit `e4ba82a9c248c60db917c07944143bb5b186a463`, deployed as owner-only Sites version 53 in `appgdep_6a6fa914ec0081918a598ddc330311fb` with one owner, no groups, no editors, and zero external visitors.
 - Phase 57B reviews seventeen accepted-service and independent-outcome records. Ten publish and seven remain In Review; eleven new Tier 1 sources and five carried official sources support the batch with zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
 - The verified Phase 57B contract is 2,009 pages, 683 sources, 523 signals, 441 Published signals, 82 In Review signals, 463 current Published-support sources, forty briefings, thirty-seven research collections, 639 research documents, 56 updates, and a twenty-file archive. Local content commit `35a34fd9e57ea3e96df24a717bf21630098814ee` maps to exact private runtime commit `93f62742251f40c79f99d2c0c4df63cb32fbecc3`, deployed as owner-only Sites version 54 in `appgdep_6a6fc63ce3408191ae44dcd4ea8acae7` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57C reviews twenty service-reliability, adoption, and recurring-output records. Twelve publish and eight remain In Review; two new Tier 1 sources and fourteen carried official sources support the batch, all seven Phase 57B holds remain explicit, and zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests are recorded.
+- The verified Phase 57C contract is 2,053 pages, 685 sources, 543 signals, 453 Published signals, 90 In Review signals, 465 current Published-support sources, forty-one briefings, thirty-eight research collections, 659 research documents, 57 updates, and a twenty-three-file archive. Owner-only Sites version 54 remains the preceding hosting checkpoint until the exact Phase 57C package receives its deployment receipt.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
@@ -211,8 +213,8 @@ What is now stable:
 
 What is still prelaunch scaffolding:
 
-- Four hundred and thirty-one signal records are `Published`.
-- Eighty-two signal records are still `In Review`; no Draft Sample remains. Two are the Phase 56Q HHS-04 and VA-02 one-to-many holds, three are the inherited Phase 57A completion or baseline holds, and seven are the Phase 57B closeout, performance, rate, capacity, or baseline holds.
+- Four hundred and fifty-three signal records are `Published`.
+- Ninety signal records are still `In Review`; no Draft Sample remains. Phase 57C adds two service-reliability, three adoption-or-activation, and three recurring-output-or-baseline holds while explicitly preserving all seven Phase 57B holds.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -222,27 +224,27 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should continue with Phase 57C service reliability, adoption, and recurring-output validation. Follow the same Amtrak station and railcar, Louisiana 104-location, Hanford facility and container, groundwater, and NNSA program cohorts into compatible use, quality, uptime, adoption, closeout, recurring accepted output, and complete cost-and-schedule baselines while treating exact-artifact checks as non-blocking inserts. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should continue with Phase 57D persistent service quality and compatible time-series replication. Follow the same Amtrak station, PIDS, and railcar; Louisiana 104-location; Hanford material-flow and groundwater; and NNSA program cohorts into repeated compatible uptime, use, adoption, quality, rejects, rework, downtime, acceptance, disposal, qualified output, and complete cost-and-schedule baselines while treating exact-artifact checks as non-blocking inserts. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 506 signal records,
-- 672 source records,
+- 543 signal records,
+- 685 source records,
 - 17 topic records,
 - 5 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 39 briefings: 32 Published and 7 In Review,
+- 41 briefings: 34 Published and 7 In Review,
 - 16 evidence gap records,
-- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 57A reviews,
+- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 57C reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 36 research collections with 622 document records,
+- 38 research collections with 659 document records,
 - 15 reader pathways across 19 existing Atlas surfaces,
-- 55 public update-log entries.
+- 57 public update-log entries.
 
-Four hundred and thirty-one official-source-backed signals are now `Published`.
+Four hundred and fifty-three official-source-backed signals are now `Published`.
 
 Phase 55M added thirteen bounded records to the prior 25-signal Published set:
 
@@ -414,7 +416,7 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 57C service reliability, adoption, and recurring-output validation
+Phase 57D persistent service quality and compatible time-series replication
 ```
 
 Proceed by:
@@ -516,16 +518,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 57B accepted-service and independent-outcome validation.
+Phase 57C service reliability, adoption, and recurring-output validation.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 57B candidate: package 0.2.0-dev, 683 public sources, 150 first-pass-triaged private candidates, 523 signals, 17 topics, 56 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 2,009 generated site pages, 441 Published signals, 33 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 37 research collections, 639 research documents, all prior verified archives plus the Phase 57B 20-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 466 Manual Review and 217 Probe Ready records.
+v0.2 Phase 57C candidate: package 0.2.0-dev, 685 public sources, 150 first-pass-triaged private candidates, 543 signals, 17 topics, 57 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 2,053 generated site pages, 453 Published signals, 34 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 38 research collections, 659 research documents, all prior verified archives plus the Phase 57C 23-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 468 Manual Review and 217 Probe Ready records.
 
 Next decision gate:
-Begin Phase 57C. Build service reliability, adoption, and recurring-output validation for the same named Amtrak, Louisiana, Hanford, and NNSA cohorts while inserting exact target artifacts only when authoritative triggers appear. Preserve agency assertions, regulator corroboration, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, cohort, stage, period, unit, method, denominator, revision history, attribution, and realized outcomes as separate. Do not infer causation or create rankings, composite scores, readiness scores, or generalized savings claims. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Begin Phase 57D. Build persistent service quality and compatible time-series replication for the same named Amtrak, Louisiana, Hanford, and NNSA cohorts while inserting exact target artifacts only when authoritative triggers appear. Preserve agency assertions, regulator corroboration, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, cohort, stage, period, unit, method, denominator, revision history, attribution, and realized outcomes as separate. Do not infer causation or create rankings, composite scores, readiness scores, or generalized savings claims. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

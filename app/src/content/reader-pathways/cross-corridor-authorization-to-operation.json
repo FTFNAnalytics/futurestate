@@ -87,7 +87,12 @@
     "signal-57b-amtrak-eight-station-final-completion-cohort",
     "signal-57b-amtrak-three-station-substantial-to-final-match",
     "signal-57b-amtrak-thirteen-accessible-boarding-ramp-deployments",
-    "signal-57b-louisiana-nextlink-104-location-live-service"
+    "signal-57b-louisiana-nextlink-104-location-live-service",
+    "signal-57c-amtrak-station-portfolio-coverage",
+    "signal-57c-amtrak-construction-pipeline",
+    "signal-57c-amtrak-design-pipeline",
+    "signal-57c-amtrak-boarding-ramp-backlog",
+    "signal-57c-amtrak-pids-deployment-inventory"
   ],
   "source_ids": [
     "source-virginia-scc-large-load-gs5-2025",
@@ -152,7 +157,8 @@
     "briefing-research-watch-009-second-cohort-vertical-replication",
     "briefing-research-watch-010-cross-cohort-coverage",
     "briefing-research-watch-013-first-pass-completion",
-    "briefing-research-watch-032-accepted-service-independent-outcome-validation"
+    "briefing-research-watch-032-accepted-service-independent-outcome-validation",
+    "briefing-research-watch-033-service-reliability-adoption-recurring-output-validation"
   ],
   "dependency_map_ids": [
     "dependency-map-local-authorization-is-not-operation",
@@ -169,7 +175,8 @@
     "research-collection-second-entity-cohort-vertical-replication-2018-2026",
     "research-collection-cross-cohort-coverage-missing-record-closure-2010-2026",
     "research-collection-remaining-open-rails-partial-closure-first-pass-2026",
-    "research-collection-accepted-service-independent-outcome-validation-2026"
+    "research-collection-accepted-service-independent-outcome-validation-2026",
+    "research-collection-service-reliability-adoption-recurring-output-validation-2026"
   ],
   "evidence_gap_ids": [
     "gap-011",
@@ -238,6 +245,11 @@
       "stage": "Phase 57B accepted-service and independent-outcome validation panels",
       "current_state": "Ten Published panels and seven In Review holds distinguish named accepted service, observed output, closeout, performance, rate, capacity, and baseline evidence.",
       "boundary": "Turnover, service availability, subscribers, tests, accepted operation, recurring rate, capacity, baseline, outcome, closeout, implementation, and closure remain separate."
+    },
+    {
+      "stage": "Phase 57C service reliability, adoption, and recurring-output validation panels",
+      "current_state": "Twelve Published panels and eight In Review holds distinguish inventory, reliability, adoption, repeat output, recurring rate, accepted disposal, closed-loop outcomes, project baselines, and program baselines.",
+      "boundary": "A snapshot is not persistence, serviceability is not adoption, and project data are not a complete program baseline."
     }
   ],
   "evidence_limits": [
@@ -256,7 +268,8 @@
     "A vertical entity record does not authorize cross-entity ranking, composite scoring, readiness scoring, or causal inference.",
     "Phase 56F closure states apply to one named missing record per entity and cannot be converted into a ranking, composite, readiness score, or causal claim.",
     "Phase 56I first-pass and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
-    "Phase 57B prohibits denominator-free comparison, turnover-based outcome claims, capacity-to-output inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
+    "Phase 57B prohibits denominator-free comparison, turnover-based outcome claims, capacity-to-output inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
+    "Phase 57C prohibits denominator-free reliability or adoption claims, snapshot-to-rate inference, project-to-program inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Northern Virginia route, construction, energization, customer-service, water, emissions-compliance, reliability, and local-outcome records.",
@@ -272,6 +285,7 @@
     "Independent closure and outcome records for the named controls, production lines, battery assets, or carrier services.",
     "Acquire the seven Open exact records, then revisit the sixteen Partially Closed records only when their named reopening condition is met.",
     "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables.",
-    "Compatible service use, disclosed tests, quality, downtime, independent review, accepted closeout, recurring qualified output, complete baselines, and realized outcomes under the same named-cohort contract."
+    "Compatible service use, disclosed tests, quality, downtime, independent review, accepted closeout, recurring qualified output, complete baselines, and realized outcomes under the same named-cohort contract.",
+    "Compatible uptime, use, adoption, monthly quality, rejects, rework, downtime, acceptance, disposal, compliance, recurring qualified output, complete program baselines, and realized outcomes under the same fixed-cohort contract."
   ]
 }

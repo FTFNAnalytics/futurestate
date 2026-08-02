@@ -398,13 +398,14 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 56X | thirteen Published implementation-to-outcome records, six Tier 1 sources, Research Watch 028, a sixteen-file archive, a verified 1,832-page contract, and Sites version 50 |
 | Completed and owner-only deployed | Phase 56Y | fifteen Published longitudinal delivery-and-outcome records, eleven Tier 1 sources, Research Watch 029, an eighteen-file archive, a verified 1,875-page contract, and Sites version 51 |
 | Completed and owner-only deployed | Phase 56Z | thirteen Published panels, four explicit holds, twelve Tier 1 sources, Research Watch 030, a twenty-file archive, a verified 1,923-page contract, and Sites version 52 |
-| Completed and validated | Phase 57B | ten Published panels, seven explicit holds, eleven new Tier 1 sources, Research Watch 032, a twenty-file archive, and a verified 2,009-page contract |
-| Next content gate | Phase 57C | service reliability, adoption, and recurring-output validation using the same named cohorts and compatible periods |
+| Completed and owner-only deployed | Phase 57B | ten Published panels, seven explicit holds, eleven new Tier 1 sources, Research Watch 032, a twenty-file archive, a verified 2,009-page contract, and Sites version 54 |
+| Completed and validated | Phase 57C | twelve Published panels, eight explicit holds, all seven Phase 57B holds preserved, two new Tier 1 sources, Research Watch 033, a twenty-three-file archive, and a verified 2,053-page contract |
+| Next content gate | Phase 57D | persistent service quality and compatible time-series replication using the same named cohorts and denominators |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now passes a verified 2,009-page Phase 57B contract. Phase 57B reviews seventeen records, publishes ten named accepted-service or observed-output panels, and retains seven explicit closeout, performance, rate, capacity, or baseline holds. Eleven new Tier 1 source profiles and five carried official sources support the batch. No exact target artifact or trigger is recorded, and no directive scope, implementation, closure, agency-contact, FOIA, or entity-evidence state changes. Sites version 54 is the current owner-only hosting checkpoint for the exact Phase 57B runtime. The next non-public content gate is Phase 57C: service reliability, adoption, and recurring-output validation while exact-artifact checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now passes a verified 2,053-page Phase 57C contract. Phase 57C reviews twenty records, publishes twelve bounded service-inventory, repeat-output, accepted-disposal, closed-loop, or project/program-boundary panels, and retains eight explicit reliability, adoption, activation, recurring-output, capacity, or baseline holds. Two new Tier 1 source profiles and fourteen carried official sources support the batch, and all seven Phase 57B holds remain explicit. No exact target artifact or trigger is recorded, and no directive scope, implementation, closure, agency-contact, FOIA, or entity-evidence state changes. Sites version 54 remains the current owner-only hosting checkpoint until the exact Phase 57C runtime receives its deployment receipt. The next non-public content gate is Phase 57D: persistent service quality and compatible time-series replication while exact-artifact checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1638,22 +1639,45 @@ Delivered:
 - zero exact-target artifacts, triggers, scope changes, implementation changes, closure changes, agency contacts, FOIA requests, or entity-evidence changes.
 - local content commit `35a34fd9e57ea3e96df24a717bf21630098814ee` matched exact private runtime commit `93f62742251f40c79f99d2c0c4df63cb32fbecc3`, saved as Sites version 54, deployed in `appgdep_6a6fc63ce3408191ae44dcd4ea8acae7`, and reverified with one owner, no groups, no editors, and zero external visitors.
 
-### Phase 57C: Service Reliability, Adoption, And Recurring-Output Validation - Next Content Gate
+### Phase 57C: Service Reliability, Adoption, And Recurring-Output Validation - Complete And Validated
 
 Goal: follow the named Phase 57B cohorts into compatible use, quality, reliability, adoption, closeout, and recurring accepted-output evidence without substituting broader or differently defined populations.
 
-Priorities:
+Delivered:
 
-1. add Amtrak feature availability, outage, maintenance, passenger-use, and rider-experience records for the same named station and railcar cohorts;
-2. follow the Louisiana 104-location cohort through stable location lists, installations, subscribers, test distributions, latency, uptime, affordability, adoption, complaints, and accepted closeout;
-3. build compatible Hanford monthly series for throughput, quality, rejects, downtime, contaminant mass, energy, cost, shipment, acceptance, disposal, and residual inventory;
-4. add recurring qualified NNSA output only when the site, period, acceptance method, rejects, rework, integrated schedule, lifecycle cost, and GAO sufficiency are explicit;
-5. preserve the seven Phase 57B holds until their exact reopening conditions are met.
+- twenty reviewed records with twelve Published panels and eight explicit In Review holds;
+- five Amtrak service-inventory panels, four Hanford repeat-output panels, two accepted-disposal or closed-loop outcomes, and one NNSA project-to-program baseline boundary;
+- two Amtrak reliability holds, three BEAD adoption or activation holds, and three NNSA recurring-output or baseline holds;
+- all seven Phase 57B holds preserved and one new named Amtrak cohort-reliability hold;
+- two new Tier 1 source profiles and fourteen carried official sources;
+- Research Watch 033, two ledgers, one collection, one update, and a twenty-three-file archive;
+- a verified 2,053-page contract with 685 sources, 543 signals, 453 Published, 90 In Review, 38 collections, 659 research documents, 41 briefings, and 57 updates;
+- zero exact-target artifacts, triggers, scope changes, implementation changes, closure changes, agency contacts, FOIA requests, or entity-evidence changes.
 
 Boundaries:
 
 - a single turnover, availability, shipment, or operating snapshot does not establish persistence;
 - adoption requires a stable eligible or serviceable denominator and disclosed subscriber or user records;
+- operator, regulator, agency, contractor, and independent evidence retain distinct attribution;
+- no cross-system ranking, composite, readiness score, generalized savings claim, or unsupported causal inference.
+
+### Phase 57D: Persistent Service Quality And Compatible Time-Series Replication - Next Content Gate
+
+Goal: replace one-time inventory and cumulative checkpoints with compatible repeated observations for the same assets, locations, material flows, and production programs.
+
+Priorities:
+
+1. add Amtrak station, PIDS, and railcar uptime, outage, maintenance, actual-use, complaint, boarding-time, and rider-experience series under the same identifiers;
+2. follow the Louisiana 104-location cohort through stable eligible, serviceable, installed, subscribed, tested, retained, price, complaint, and accepted-closeout denominators;
+3. build a Hanford monthly material-flow ledger for feed, glass, containers, quality, rejects, rework, downtime, shipment, acceptance, disposal, contaminant mass, compliance, cost, and residual inventory;
+4. add qualified NNSA output by named site and period only with acceptance authority, rejects, rework, revision history, integrated schedule, lifecycle cost, and GAO sufficiency;
+5. keep every current hold visible until the exact named reopening condition is met.
+
+Boundaries:
+
+- persistence requires repeated compatible observations, not a second incompatible snapshot;
+- adoption requires stable eligible and serviceable denominators plus disclosed subscribers or users;
+- monthly material-flow stages remain non-interchangeable;
 - operator, regulator, agency, contractor, and independent evidence retain distinct attribution;
 - no cross-system ranking, composite, readiness score, generalized savings claim, or unsupported causal inference.
 
@@ -1769,10 +1793,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 57C with service reliability, adoption, and recurring-output validation. Use the exact Phase 57B station, railcar, 104-location broadband, Hanford facility, container, groundwater, and NNSA program cohorts. Require compatible entity, cohort, lifecycle stage, period, unit, method, denominator, revision history, and attribution before promotion. Preserve all seven Phase 57B holds until their named reopening conditions are met.
+Begin Phase 57D with persistent service quality and compatible time-series replication. Use the exact Phase 57C station, PIDS, railcar, 104-location broadband, Hanford material-flow, groundwater, and NNSA program cohorts. Require repeated compatible entity, cohort, lifecycle stage, period, unit, method, denominator, revision history, and attribution before promotion. Preserve all current holds until their named reopening conditions are met.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 57B is complete, validated, and owner-only deployed as Sites version 54 at 2,009 pages, 683 sources, 523 signals, 441 Published signals, 82 In Review signals, 37 collections, 639 research documents, 40 briefings, and 56 updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phase 57C is complete and validated at 2,053 pages, 685 sources, 543 signals, 453 Published signals, 90 In Review signals, 38 collections, 659 research documents, 41 briefings, and 57 updates. The preceding owner-only Sites version 54 remains active until the exact Phase 57C package receives its deployment receipt. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
