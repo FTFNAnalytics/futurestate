@@ -1,7 +1,7 @@
 # Phase 56N: Verified Remediation and Component Outcome Continuation
 
 Date: 2026-08-01
-Status: Complete locally; owner-only deployment pending
+Status: Complete and owner-only deployed
 
 ## Goal
 
@@ -72,4 +72,10 @@ Continue exact official remediation and component-outcome records without waitin
 
 ## Deployment receipt
 
-Pending validation and owner-only Sites deployment.
+- Local content commit: `a611431f233bcbd848f31ab46fa68e471250d7d3`
+- Exact private runtime commit: `95c8569d0d1d699b26bfc2ba4ed84710074ac35d`
+- Sites version: 39 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_9258910bd10c81919afd8cf9e4d26df0`)
+- Deployment: `appgdep_6a6ec4793e908191949090205040fbf3`
+- Production URL: `https://ftfn-analytics.jbumstead.chatgpt.site`
+- Access: custom owner-only policy; one allowed owner, no groups, and no external visitors
+- Sites archive: `sha256:b1829bcc44ce5256bce8544a28ff766d14c25b90c3691dd8158c4b16b0c91f0b`
