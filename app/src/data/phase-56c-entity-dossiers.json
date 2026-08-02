@@ -426,6 +426,28 @@
           "record_status": "In Review",
           "reopening_rule": "Reopen when the tracker displays a post-July 29 update, response, implementation state, or closure for actions 26-A-18-035.01 through .04."
         }
+      ],
+      "phase_56o_coverage_decision": {
+        "coverage_id": "coverage-56f-hhs",
+        "entity_id": "agency-hhs",
+        "entity_name": "Department of Health and Human Services",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-26-108997 HHS priority recommendation portfolio: GAO reports that HHS implemented four of thirty-five prior priority recommendations, added seven, and now has thirty-eight priority recommendations focused on program integrity and public-health oversight.",
+        "decision": "Retain Partially Closed. Portfolio movement improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO publishes the next HHS priority letter, changes a named priority status, or HHS OIG posts the held hospital-control update."
+      },
+      "phase_56o_records": [
+        {
+          "record_id": "record-56o-hhs-priority-portfolio-2026",
+          "exact_record": "GAO-26-108997 HHS priority recommendation portfolio",
+          "status_period": "May 2025 baseline through May 2026",
+          "finding": "GAO reports that HHS implemented four of thirty-five prior priority recommendations, added seven, and now has thirty-eight priority recommendations focused on program integrity and public-health oversight.",
+          "decision": "Publish the exact portfolio movement without treating it as clinical, provider, or preparedness performance.",
+          "source_id": "source-56o-hhs-priority-recommendations-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO publishes the next HHS priority letter, changes a named priority status, or HHS OIG posts the held hospital-control update."
+        }
       ]
     },
     {
@@ -1308,5 +1330,6 @@
   "phase_56k_acquisition_ledger": "phase-56k-exact-record-continuation.json",
   "phase_56l_acquisition_ledger": "phase-56l-realized-outcome-continuation.json",
   "phase_56m_continuation_ledger": "phase-56m-federal-remediation-outcomes.json",
-  "phase_56n_continuation_ledger": "phase-56n-verified-remediation-outcomes.json"
+  "phase_56n_continuation_ledger": "phase-56n-verified-remediation-outcomes.json",
+  "phase_56o_continuation_ledger": "phase-56o-cross-agency-remediation.json"
 }

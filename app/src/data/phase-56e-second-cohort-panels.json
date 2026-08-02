@@ -106,6 +106,28 @@
           "record_status": "Published",
           "reopening_rule": "Reopen when VA OIG changes one of recommendations 1, 2, 5, 6, or 7 or publishes another compatible Southern Oregon follow-up."
         }
+      ],
+      "phase_56o_coverage_decision": {
+        "coverage_id": "coverage-56f-va",
+        "entity_id": "agency-va",
+        "entity_name": "Department of Veterans Affairs",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-26-108978 VA priority recommendation portfolio: GAO reports that VA implemented two of twenty-nine prior priority recommendations, added three, and now has thirty priority recommendations across health-care access, IT modernization, and acquisition management.",
+        "decision": "Retain Partially Closed. Portfolio movement improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO publishes the next VA priority letter or VA OIG changes the named iFAMS or Southern Oregon recommendation states."
+      },
+      "phase_56o_records": [
+        {
+          "record_id": "record-56o-va-priority-portfolio-2026",
+          "exact_record": "GAO-26-108978 VA priority recommendation portfolio",
+          "status_period": "May 2025 baseline through May 2026",
+          "finding": "GAO reports that VA implemented two of twenty-nine prior priority recommendations, added three, and now has thirty priority recommendations across health-care access, IT modernization, and acquisition management.",
+          "decision": "Publish the exact portfolio movement without substituting it for iFAMS, Southern Oregon, enterprise FISMA, or veteran-outcome evidence.",
+          "source_id": "source-56o-va-priority-recommendations-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO publishes the next VA priority letter or VA OIG changes the named iFAMS or Southern Oregon recommendation states."
+        }
       ]
     },
     {
@@ -211,6 +233,28 @@
           "record_status": "Published",
           "reopening_rule": "Reopen when GAO changes recommendation 1 or 7 status or DOE provides accepted tracking and resource-allocation evidence."
         }
+      ],
+      "phase_56o_coverage_decision": {
+        "coverage_id": "coverage-56f-doe",
+        "entity_id": "agency-doe",
+        "entity_name": "Department of Energy",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-26-109001 DOE priority recommendation portfolio: GAO reports that DOE implemented five of thirty prior priority recommendations, added one priority recommendation, removed priority status from two, and now has twenty-four priority recommendations.",
+        "decision": "Retain Partially Closed. Portfolio movement improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO publishes the next DOE priority letter or changes a named current recommendation status."
+      },
+      "phase_56o_records": [
+        {
+          "record_id": "record-56o-doe-priority-portfolio-2026",
+          "exact_record": "GAO-26-109001 DOE priority recommendation portfolio",
+          "status_period": "April 2025 baseline through July 2026",
+          "finding": "GAO reports that DOE implemented five of thirty prior priority recommendations, added one priority recommendation, removed priority status from two, and now has twenty-four priority recommendations.",
+          "decision": "Publish the exact portfolio movement while keeping implemented, newly added, de-prioritized, and currently prioritized states distinct.",
+          "source_id": "source-56o-doe-priority-recommendations-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO publishes the next DOE priority letter or changes a named current recommendation status."
+        }
       ]
     },
     {
@@ -298,6 +342,28 @@
           "source_id": "source-56n-gao-federal-ai-recommendation-status-2026",
           "record_status": "Published",
           "reopening_rule": "Reopen when GAO changes recommendation 25 status, DOT supplies accepted inventory evidence, or DOT OIG publishes the FY 2026 review result."
+        }
+      ],
+      "phase_56o_coverage_decision": {
+        "coverage_id": "coverage-56f-dot",
+        "entity_id": "agency-dot",
+        "entity_name": "Department of Transportation",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-26-109050 DOT priority recommendation portfolio: GAO reports that DOT implemented three of twenty-one prior priority recommendations, added six, removed priority status from two, and now has twenty-two priority recommendations.",
+        "decision": "Retain Partially Closed. Portfolio movement improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO publishes the next DOT priority letter, changes a named recommendation status, or DOT OIG publishes the FY 2026 review result."
+      },
+      "phase_56o_records": [
+        {
+          "record_id": "record-56o-dot-priority-portfolio-2026",
+          "exact_record": "GAO-26-109050 DOT priority recommendation portfolio",
+          "status_period": "June 2025 baseline through June 2026",
+          "finding": "GAO reports that DOT implemented three of twenty-one prior priority recommendations, added six, removed priority status from two, and now has twenty-two priority recommendations.",
+          "decision": "Publish the exact portfolio movement while preserving workforce, grants, drones, automated-vehicle, and AI-inventory scopes.",
+          "source_id": "source-56o-dot-priority-recommendations-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO publishes the next DOT priority letter, changes a named recommendation status, or DOT OIG publishes the FY 2026 review result."
         }
       ]
     },
@@ -854,5 +920,6 @@
   "phase_56i_acquisition_ledger": "phase-56i-remaining-rails-first-pass.json",
   "phase_56j_acquisition_ledger": "phase-56j-evidence-value-continuation.json",
   "phase_56k_acquisition_ledger": "phase-56k-exact-record-continuation.json",
-  "phase_56n_continuation_ledger": "phase-56n-verified-remediation-outcomes.json"
+  "phase_56n_continuation_ledger": "phase-56n-verified-remediation-outcomes.json",
+  "phase_56o_continuation_ledger": "phase-56o-cross-agency-remediation.json"
 }

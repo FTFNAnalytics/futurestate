@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: 24 entity coverage states now carry exact continuation decisions through Phase 56N, while agency, component, portfolio, recommendation, validation, period, denominator, and reopening boundaries remain attached.",
+  "summary": "A comparison and inference protocol: 24 entity coverage states now carry exact continuation decisions through Phase 56O, while portfolio arithmetic, agency scope, subject mix, recommendation identity, model assumptions, benefit realization, period, denominator, and reopening boundaries remain attached.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -250,7 +250,15 @@
     "source-56n-hhs-oig-recommendations-tracker-2026",
     "source-56n-dhs-gao-priority-recommendations-2026",
     "source-56n-doe-insider-threat-recommendations-2026",
-    "source-56n-va-southern-oregon-followup-2026"
+    "source-56n-va-southern-oregon-followup-2026",
+    "source-56o-doe-priority-recommendations-2026",
+    "source-56o-hhs-priority-recommendations-2026",
+    "source-56o-dot-priority-recommendations-2026",
+    "source-56o-va-priority-recommendations-2026",
+    "source-56o-gsa-priority-recommendations-2026",
+    "source-56o-ostp-priority-recommendations-2026",
+    "source-56o-ntia-priority-recommendations-2026",
+    "source-56o-gao-open-recommendations-benefit-model-2026"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -382,7 +390,15 @@
     "signal-56n-va-ai-inventory-recommendation-closed",
     "signal-56n-dhs-priority-recommendation-portfolio",
     "signal-56n-doe-insider-threat-five-closed-two-partial",
-    "signal-56n-va-southern-oregon-three-closed-five-open"
+    "signal-56n-va-southern-oregon-three-closed-five-open",
+    "signal-56o-doe-priority-portfolio-five-implemented-24-current",
+    "signal-56o-hhs-priority-portfolio-four-implemented-38-current",
+    "signal-56o-dot-priority-portfolio-three-implemented-22-current",
+    "signal-56o-va-priority-portfolio-two-implemented-30-current",
+    "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+    "signal-56o-ostp-priority-portfolio-three-implemented-four-current",
+    "signal-56o-ntia-priority-portfolio-one-implemented-10-current",
+    "signal-56o-gao-open-recommendations-132-251b-modeled-benefit"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -567,6 +583,12 @@
       "label": "Ten verified remediation and component decisions",
       "node_type": "Signal",
       "note": "Nine bounded records publish and one dated HHS tracker check remains held; no Phase 56F evidence state changes."
+    },
+    {
+      "id": "node-phase56o-cross-agency-remediation",
+      "label": "Eight cross-agency remediation follow-through records",
+      "node_type": "Signal",
+      "note": "Seven agency portfolios and one government-wide model publish; no Phase 56F evidence state changes."
     }
   ],
   "links": [
@@ -898,6 +920,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "No recommendation or component status establishes system performance, enterprise effectiveness, service outcomes, or causation."
+    },
+    {
+      "from": "node-phase56o-cross-agency-remediation",
+      "to": "node-phase56n-verified-remediation",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 56O continues the exact remediation rail from action and component status into annual agency portfolio movement."
+    },
+    {
+      "from": "node-phase56o-cross-agency-remediation",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Agency inventories, subject mixes, additions, removals, implementation counts, and model assumptions are not shared denominators."
+    },
+    {
+      "from": "node-phase56o-cross-agency-remediation",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Portfolio movement and modeled potential benefits do not establish performance, realized savings, service outcomes, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -926,7 +969,8 @@
     "Certified reported-employment advancements for Island Components and Monaghan Medical without a closure-state change.",
     "One exact NASA recommendation non-closure and two bounded HHS component control tests with stable identity, period, source, limitation, and continuation rule.",
     "Ten exact federal recommendation, portfolio, and component decisions with stable identity, status period, source, limitation, and continuation rule.",
-    "A visible publication hold where the expected HHS tracker date passed without a post-date public update."
+    "A visible publication hold where the expected HHS tracker date passed without a post-date public update.",
+    "Eight exact portfolio or model records with stable agency, arithmetic, state, period, scope, limitation, and continuation identity."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -949,7 +993,8 @@
     "That a company response is regulator closure, an arrival is formal contractual acceptance, or an audit initiation is an audit result.",
     "That reported current FTEs were caused by an incentive project, a project amount was fully spent, or one intervention is a repeat operating series.",
     "That open recommendation count measures NASA performance, or that either anonymous hospital test represents HHS, CMS, the health sector, or later operations.",
-    "That recommendation closure, inventory completeness, portfolio movement, or component remediation measures agency performance, system safety, readiness, quality, value, or causal effect."
+    "That recommendation closure, inventory completeness, portfolio movement, or component remediation measures agency performance, system safety, readiness, quality, value, or causal effect.",
+    "That portfolio implementation counts are comparable agency rates or that modeled potential benefits are realized savings."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -1013,6 +1058,14 @@
     "Reopen when GAO changes recommendation 15 status or HHS publishes a corrected inventory that GAO accepts as implementation evidence. Reopen when the tracker displays a post-July 29 update, response, implementation state, or closure for actions 26-A-18-035.01 through .04.",
     "Reopen when GAO changes recommendation 17 status or DHS provides the authorities-review and M-21-06 plan evidence GAO identifies as missing. Reopen when GAO publishes the next DHS priority-recommendation letter or action-level status changes for the current portfolio.",
     "Reopen when GAO changes recommendation 25 status, DOT supplies accepted inventory evidence, or DOT OIG publishes the FY 2026 review result.",
-    "Reopen when VA OIG closes a named iFAMS recommendation, publishes the FY 2025 FISMA result, or GAO revises the recommendation 28 status. Reopen when VA OIG changes one of recommendations 1, 2, 5, 6, or 7 or publishes another compatible Southern Oregon follow-up."
+    "Reopen when VA OIG closes a named iFAMS recommendation, publishes the FY 2025 FISMA result, or GAO revises the recommendation 28 status. Reopen when VA OIG changes one of recommendations 1, 2, 5, 6, or 7 or publishes another compatible Southern Oregon follow-up.",
+    "Reopen when GAO publishes the next DOE priority letter or changes a named current recommendation status.",
+    "Reopen when GAO publishes the next HHS priority letter, changes a named priority status, or HHS OIG posts the held hospital-control update.",
+    "Reopen when GAO publishes the next DOT priority letter, changes a named recommendation status, or DOT OIG publishes the FY 2026 review result.",
+    "Reopen when GAO publishes the next VA priority letter or VA OIG changes the named iFAMS or Southern Oregon recommendation states.",
+    "Reopen when GAO publishes the next GSA priority letter or a named current recommendation changes status.",
+    "Reopen when GAO publishes the next OSTP priority letter or a named current recommendation changes status.",
+    "Reopen when GAO publishes the next NTIA priority letter or a named current recommendation changes status.",
+    "Reopen when GAO updates the model, publishes realized benefit attribution, or materially revises the open-recommendation inventory."
   ]
 }
