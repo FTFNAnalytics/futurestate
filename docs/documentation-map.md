@@ -1564,6 +1564,7 @@ Purpose:
 - Record the completed Phase 56T official-response acquisition and artifact-sufficiency queue, eight missing-document tickets, thirteen adjacent-source directive matrices, three public-candidate matrices, seventy-two locators, eight repository-routing sources, twenty-four Published signals, unchanged implementation, closure, and evidence-state ledgers, twenty-seven-file archive, Research Watch 024, owner-only deployment receipt, and Phase 56U handoff.
 - Record the completed Phase 56U custodian-level recovery batch, eight searches, ten official near-matches, seven source profiles, eight Published signals, one agency-GAO conflict, zero exact target artifacts, unchanged directive-scope, implementation, closure, and evidence-state ledgers, eleven-file archive, Research Watch 025, owner-only deployment receipt, and Phase 56V handoff.
 - Record the completed Phase 56V second-order decomposition, ten lead chains, twelve official source profiles, ten Published signals, one recommendation-specific VA supporting artifact, zero exact target artifacts, unchanged directive-scope, implementation, closure, and evidence-state ledgers, thirteen-file archive, Research Watch 026, owner-only deployment receipt, and Phase 56W handoff.
+- Record the completed Phase 56W named-record retrieval and cross-lane expansion, seven target decisions, three cross-lane records, six Published additions, four In Review holds, seven official source profiles, zero exact target artifacts, unchanged directive-scope, implementation, closure, and evidence-state ledgers, thirteen-file archive, Research Watch 027, owner-only deployment receipt, and Phase 56X handoff.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 
@@ -1600,6 +1601,7 @@ Primary file:
 - `docs/work-packages/phase-56t-official-response-acquisition-artifact-sufficiency-queue.md` for the eight acquisition tickets, thirteen adjacent-source directive matrices, three public-candidate matrices, seventy-two directive locators, eight repository-routing sources, queue and publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56U handoff
 - `docs/work-packages/phase-56u-custodian-exact-artifact-recovery-batch-one.md` for the eight recovery searches, ten official near-matches, ticket outcomes, authority-conflict boundary, recovery and publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56V handoff
 - `docs/work-packages/phase-56v-second-order-recovery-leads-supporting-artifacts.md` for the ten lead chains, twelve official source profiles, directive tests, recommendation-specific supporting-artifact boundary, publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56W handoff
+- `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md` for the seven named-target decisions, three compatible cross-lane records, six Published additions, four In Review holds, seven Tier 1 sources, publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56X handoff
 
 Update when:
 
@@ -1634,6 +1636,7 @@ Update when:
 - the Phase 56T acquisition tickets, directive matrices, locators, repository routes, stop rules, reopening triggers, archive, deployment receipt, or Phase 56U recovery priorities change,
 - the Phase 56U recovery results, second-order leads, authority conflicts, archive, deployment receipt, or Phase 56V priorities change,
 - the Phase 56V lead chains, supporting-artifact boundaries, named-record retrieval queue, archive, deployment receipt, or Phase 56W priorities change,
+- the Phase 56W record decisions, publication holds, cross-lane boundaries, archive, deployment receipt, or Phase 56X priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: ten Phase 56U near-matches now resolve to named second-order artifacts while target, supporting record, agency status, GAO acceptance, directive scope, implementation, closure, entity evidence, outcome, period, denominator, and reopening boundaries remain separate.",
+  "summary": "A comparison and inference protocol: Phase 56W adds six authoritative records and holds four unchanged target searches while exact artifact, agency status, GAO acceptance, implementation, closure, waste stream, project, program, period, outcome, and denominator remain separate.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -327,7 +327,14 @@
     "source-56v-dot-federal-grant-regulations-guidance",
     "source-56v-va-category-management-authority-delegation",
     "source-56v-va-fy2024-annual-performance-report",
-    "source-56v-va-fy2026-congressional-supplemental-appendices"
+    "source-56v-va-fy2026-congressional-supplemental-appendices",
+    "source-56w-gao-va-health-transition-status-2025",
+    "source-56w-nnsa-fy2027-weapons-activities",
+    "source-56w-hanford-dfhlw-amended-rod",
+    "source-56w-hanford-hlw-progress-july2026",
+    "source-56w-gao-iija-ira-funding-status-2026",
+    "source-56w-gao-hanford-law-grout-plans-2026",
+    "source-56w-gao-em-aging-infrastructure-2026"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -599,7 +606,13 @@
     "signal-56v-dot-unified-grants-system-lineage",
     "signal-56v-dot-grants-guidance-lineage",
     "signal-56v-va-category-management-governance-metrics",
-    "signal-56v-va-dod-transition-plan-of-action-lineage"
+    "signal-56v-va-dod-transition-plan-of-action-lineage",
+    "signal-56w-va-jec-effectiveness-assessment-status",
+    "signal-56w-nnsa-pit-production-project-cost-trail",
+    "signal-56w-hanford-dfhlw-decision-and-progress-record",
+    "signal-56w-infrastructure-funding-review-status",
+    "signal-56w-hanford-low-activity-waste-grout-plan",
+    "signal-56w-doe-em-aging-infrastructure-constraint"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -832,6 +845,12 @@
       "label": "Ten second-order supporting-artifact chains",
       "node_type": "Signal",
       "note": "Twelve official sources add ten materially narrower locators and one recommendation-specific supporting artifact; exact targets remain unacquired."
+    },
+    {
+      "id": "node-phase56w-named-record-retrieval",
+      "label": "Six Published records and four held searches",
+      "node_type": "Signal",
+      "note": "Seven new Tier 1 sources support six Published results; four exact-artifact searches remain In Review and zero exact targets are acquired."
     }
   ],
   "links": [
@@ -1331,6 +1350,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "The supporting records do not establish performance, readiness, safety, savings, value, ranking, score, or causation."
+    },
+    {
+      "from": "node-phase56w-named-record-retrieval",
+      "to": "node-phase56v-supporting-artifact-decomposition",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 56W follows seven named recovery targets exposed by the Phase 56V decomposition."
+    },
+    {
+      "from": "node-phase56w-named-record-retrieval",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Aggregate, project-level, waste-stream, and potential-savings figures require distinct denominators."
+    },
+    {
+      "from": "node-phase56w-named-record-retrieval",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "No Phase 56W record supports inferred readiness, safety, realized savings, value, ranking, composite score, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -1370,7 +1410,8 @@
     "Separate availability results for three public candidates, thirteen adjacent records, and eight missing public copies.",
     "Eight named missing-document acquisition tickets, thirteen adjacent-source directive matrices, and three public-candidate sufficiency matrices.",
     "Eight bounded custodian-level public searches, ten reviewed official near-matches, and one explicitly unresolved agency-GAO status conflict.",
-    "Ten bounded second-order chains across twelve official sources, including one recommendation-specific VA supporting artifact."
+    "Ten bounded second-order chains across twelve official sources, including one recommendation-specific VA supporting artifact.",
+    "Six current authoritative additions and four explicit publication holds across seven named recovery targets and three compatible cross-lane records."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -1401,7 +1442,8 @@
     "That public availability or an FTFN scope finding constitutes GAO acceptance, implementation, closure, agency performance, or operating outcome.",
     "That a failed public search proves nonexistence or that an FTFN matrix constitutes GAO acceptance, implementation, closure, or operating outcome.",
     "That an unacquired public copy is nonexistent, that FTFN submitted an agency request, or that an agency statement or near-match constitutes GAO acceptance, implementation, closure, or outcome.",
-    "That a supporting artifact is the exact target, that a planned action occurred, or that GAO accepted, implemented, or closed any recommendation."
+    "That a supporting artifact is the exact target, that a planned action occurred, or that GAO accepted, implemented, or closed any recommendation.",
+    "That a named record was acquired, a forecast became an award, a plan became an operating system, a project estimate became a capability estimate, potential savings were realized, or GAO accepted or closed a recommendation."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -1480,6 +1522,7 @@
     "Exact missing agency response documents, official sufficiency decisions, and attributable implementation and operating-outcome evidence for the Phase 56S register.",
     "Exact artifacts from named custodians, successor directives, and authoritative GAO sufficiency decisions for the Phase 56T queue.",
     "The eight exact target artifacts, their public attachments, or authoritative GAO sufficiency decisions triggered by later agency submissions.",
-    "The eight exact target artifacts plus the newly named JEC, DOT system, DOE analysis, NNSA estimate, Hanford decision, and HHS AAR records."
+    "The eight exact target artifacts plus the newly named JEC, DOT system, DOE analysis, NNSA estimate, Hanford decision, and HHS AAR records.",
+    "Exact JEC, DOT, DOE, NNSA, Hanford, and HHS artifacts plus agency-specific operating and realized-outcome records for the cross-lane additions."
   ]
 }

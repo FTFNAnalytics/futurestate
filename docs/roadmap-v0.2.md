@@ -394,12 +394,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 56T | eight acquisition tickets, thirteen adjacent-source matrices, three public-candidate matrices, Research Watch 024, a verified 1,714-page contract, and Sites version 45 |
 | Completed and owner-only deployed | Phase 56U | eight recovery searches, ten official near-matches, seven new source profiles, Research Watch 025, a verified 1,739-page contract, and Sites version 46 |
 | Completed and owner-only deployed | Phase 56V | ten second-order lead chains, twelve official source profiles, Research Watch 026, a verified 1,773-page contract, and Sites version 47 |
-| Next content gate | Phase 56W | retrieve the precise JEC, DOT system, DOE analysis, NNSA estimate, Hanford decision, and HHS AAR records named by Phase 56V |
+| Completed locally; owner-only deployment pending | Phase 56W | seven named-target decisions, three cross-lane records, six Published additions, four In Review holds, and a verified 1,798-page contract |
+| Next content gate | Phase 56X | implementation-to-outcome expansion and exact-artifact recovery batch three without waiting for dated milestones |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now passes a verified 1,773-page Phase 56V contract. Phase 56V decomposes all ten Phase 56U official near-matches across twelve official supporting sources and adds ten bounded Published decisions. One VA congressional appendix is recommendation-specific supporting correspondence, but no exact target artifact is acquired. The DOE agency-GAO conflict remains separate, and no directive scope, implementation, closure, or Phase 56F entity evidence state changes. The next non-public content gate is Phase 56W: retrieve the precise JEC, DOT system, DOE analysis, NNSA estimate, Hanford decision, and HHS AAR records named by Phase 56V while continuing compatible content lanes. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now passes a verified 1,798-page Phase 56W contract. Phase 56W reviews seven named recovery targets and three compatible cross-lane records, publishes six new authoritative or materially narrower results, and holds four unchanged exact-artifact searches In Review. Seven Tier 1 source profiles support the batch. No exact target artifact is acquired; DOE-02 and DOE-05 retain agency-GAO status conflicts; and no directive scope, implementation, closure, or Phase 56F entity evidence state changes. The next non-public content gate is Phase 56X: expand the current official record from implementation toward operating outcomes while inserting exact-artifact recoveries when authoritative triggers appear. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1456,7 +1457,7 @@ Completion:
 - recorded zero exact target artifacts, directive-scope changes, implementation changes, closure changes, agency contacts, or FOIA requests and preserved the one Closed, twenty-one Partially Closed, and two Open entity evidence ledger.
 - local content commit `4b9cdbf204439fabf7ee0f88e8fdb726941338f3` produced exact private runtime commit `be7a90b50e4aae94ba621260cf1c6057b33d0025`, deployed successfully as owner-only Sites version 47 in deployment `appgdep_6a6f045fb3a481919e56fc7bfde5c76e` with no groups, no editors, and zero external visitors.
 
-### Phase 56W: Named-Record Retrieval Batch Two And Cross-Lane Expansion - Next Content Gate
+### Phase 56W: Named-Record Retrieval Batch Two And Cross-Lane Expansion - Complete And Release-Verified Locally
 
 Goal: retrieve the exact named records exposed by Phase 56V while continuing compatible content expansion without waiting for dated milestones.
 
@@ -1475,6 +1476,37 @@ Boundaries:
 - award, deployment, use, assessment, acceptance, implementation, and closure remain separate;
 - publish only an exact record, a new authoritative status, or a materially narrower locator;
 - scheduled checks remain inserts and do not pause battery, manufacturer, carrier, local-system, or other compatible evidence lanes.
+
+Completion:
+
+- reviewed seven named recovery targets and three compatible cross-lane records;
+- added seven Tier 1 official source profiles, six Published documents and signals, four In Review documents, Research Watch 027, two machine-readable ledgers, one collection, one update, and a verified thirteen-file archive;
+- added NNSA project-level cost detail, an authoritative VA inventory-versus-effectiveness distinction, and Hanford decision-and-progress records without representing any as the missing exact target;
+- published bounded GAO records for four-agency infrastructure funding, Hanford low-activity-waste grouting, and DOE Environmental Management infrastructure constraints;
+- held DOT's unified-grants award and deployment record, DOE's complex-wide waste-optimization package, and two completed HHS department-wide AARs In Review;
+- passed content validation, source health, Astro diagnostics, the 1,798-page production build, Phase 56W assertions, release assertions, sitemap membership, exports, and private-registry exclusion;
+- recorded zero exact target artifacts, directive-scope changes, implementation changes, closure changes, agency contacts, or FOIA requests and preserved the one Closed, twenty-one Partially Closed, and two Open entity evidence ledger.
+
+### Phase 56X: Implementation-To-Outcome Expansion And Exact-Artifact Recovery Batch Three - Next Content Gate
+
+Goal: extend Phase 56W's official records from plans, budgets, decisions, and aggregate status toward agency-specific implementation and operating evidence while continuing exact-artifact recovery as a non-blocking lane.
+
+Priorities:
+
+1. decompose the four-agency IIJA and IRA status into agency, program, award, obligation, disbursement, cancellation, completion, and outcome records where authoritative denominators exist;
+2. follow Hanford low-activity-waste procurement from solicitation to award, full lifecycle-cost boundary, disposal destination, operating record, and realized outcome while keeping it separate from high-level waste;
+3. deepen DOE Environmental Management infrastructure records with corrected asset data, site-level need integration, project delivery, and realized rather than potential savings;
+4. extend NNSA plutonium-modernization project tables into stable project, subproject, site, estimate, schedule, risk, and change-control series without calling them the complete capability estimate;
+5. continue VA-DOD transition, HHS after-action, DOT grants, and DOE recommendation lanes with agency-specific use and outcome evidence;
+6. insert the exact JEC, DOT, DOE, NNSA, Hanford, and HHS target artifacts whenever authoritative public triggers appear.
+
+Boundaries:
+
+- plan, award, obligation, deployment, use, output, outcome, acceptance, and closure remain separate;
+- program, agency, project, waste stream, site, period, unit, method, and denominator must remain explicit;
+- potential savings are not realized savings, and reported progress is not independent validation;
+- no automatic ranking, composite score, readiness score, savings claim, or causal inference;
+- dated exact-artifact checks remain inserts and never pause compatible current-record expansion.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
 
@@ -1588,7 +1620,7 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 56W with the named-record retrieval queue produced by Phase 56V: the four VA-DOD JEC transition records, DOT's unified-grants award and deployment trail, DOE Waste Disposal Office analyses, the NNSA Production Modernization estimate lineage, Hanford pause and independent-review decision records, and completed HHS department-wide AARs. Publish only an exact record, a new authoritative status, or a materially narrower locator, and continue compatible content lanes without waiting for dated milestones.
+Begin Phase 56X with implementation-to-outcome expansion: deepen the four-agency infrastructure-funding review, Hanford low-activity-waste plan, DOE Environmental Management infrastructure findings, NNSA project-cost series, VA-DOD transition work, HHS after-action work, and DOT grants lane into agency-specific award, deployment, use, output, and outcome records where authoritative denominators exist. Insert exact JEC, DOT, DOE, NNSA, Hanford, and HHS target artifacts when public triggers appear, but do not wait for dated milestones.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 

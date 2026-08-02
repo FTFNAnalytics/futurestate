@@ -1224,6 +1224,36 @@
         "official_supporting_artifacts_profiled": 3,
         "recommendation_specific_supporting_artifacts_located": 1,
         "exact_target_artifacts_acquired": 0
+      },
+      "phase_56w_named_record_retrieval": [
+        {
+          "record_id": "record-56w-va-jec-effectiveness-assessment-status",
+          "action_key": "VA-05",
+          "parent_lead_id": "lead-56v-10",
+          "record_type": "Named target retrieval",
+          "record_status": "Published",
+          "target_artifact": "FY 2025 JEC Co-Chair Priority Guidance Memorandum, Joint Operating Plan, TEC-HEC POAMM, and Joint Transition Task Force draft effectiveness assessment",
+          "finding": "GAO's December 2025 testimony states that the 2022 JEC work was an inventory, not the assessment of effectiveness called for by the recommendation, and that the recommendation remained unimplemented as of November 2025. The four named downstream artifacts remain publicly unacquired.",
+          "material_narrowing": "The public record now contains an authoritative inventory-versus-effectiveness distinction and a later GAO implementation status, while the exact guidance, plan, POAMM, and draft assessment remain separate retrieval targets.",
+          "evidence_limits": [
+            "The testimony does not contain the four exact named records.",
+            "The existence of a draft assessment does not establish consolidated feedback, final findings, recommended changes, joint follow-through, or GAO acceptance.",
+            "The current GAO recommendation page later reports a December 2026 expected completion date; that dated milestone remains a bounded monitor."
+          ],
+          "exact_target_artifact_acquired": false,
+          "agency_gao_status_conflict": false,
+          "next_action": "Retrieve the four named JEC records or a later GAO status update that reports their contents and remaining deficiencies.",
+          "signal_id": "signal-56w-va-jec-effectiveness-assessment-status"
+        }
+      ],
+      "phase_56w_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56W adds new authoritative status and materially narrower official records but no exact target artifact, GAO acceptance, directive-scope change, implementation change, closure change, or operating outcome.",
+        "records_reviewed": 1,
+        "records_published": 1,
+        "records_held_in_review": 0,
+        "exact_target_artifacts_acquired": 0
       }
     },
     {
@@ -2409,6 +2439,112 @@
         "parent_near_matches_decomposed": 3,
         "official_supporting_artifacts_profiled": 5,
         "recommendation_specific_supporting_artifacts_located": 0,
+        "exact_target_artifacts_acquired": 0
+      },
+      "phase_56w_named_record_retrieval": [
+        {
+          "record_id": "record-56w-doe-waste-disposal-optimal-strategy-analysis",
+          "action_key": "DOE-02",
+          "parent_lead_id": "lead-56v-02",
+          "record_type": "Named target retrieval",
+          "record_status": "In Review",
+          "target_artifact": "April 2026 Waste Disposal Office complex-wide waste inventory, alternatives analysis, optimization model, and optimal-strategy basis",
+          "finding": "DOE's April 2026 response, as summarized by GAO, says that complex-wide analysis and an optimal strategy exist, but GAO retains the recommendation as Open. The exact analysis, model, alternatives comparison, and decision basis were not located as separate public records.",
+          "material_narrowing": "The custodian and claimed product are named, but the evidence needed to evaluate completeness, tradeoffs, and GAO's remaining concerns is still absent.",
+          "evidence_limits": [
+            "An agency statement that analysis exists is not the analysis.",
+            "GAO's Open status is not overwritten by DOE's view that the recommendation is complete.",
+            "General EM infrastructure records do not substitute for a complex-wide waste-disposal optimization."
+          ],
+          "exact_target_artifact_acquired": false,
+          "agency_gao_status_conflict": true,
+          "next_action": "Retrieve the April 2026 response attachments, complex-wide inventory, alternatives model, optimization criteria, and final decision basis.",
+          "signal_id": null
+        },
+        {
+          "record_id": "record-56w-nnsa-pit-production-project-cost-trail",
+          "action_key": "DOE-01",
+          "parent_lead_id": "lead-56v-01",
+          "record_type": "Named target retrieval",
+          "record_status": "Published",
+          "target_artifact": "Complete multi-site pit-production capability life-cycle cost estimate using a GAO-aligned method and uncertainty analysis",
+          "finding": "The FY 2027 Weapons Activities volume provides detailed project and subproject cost tables for plutonium modernization, including a $5.879431 billion current total project cost for the Los Alamos Plutonium Pit Production Project. GAO still reports that a conforming complete capability estimate is expected in December 2026.",
+          "material_narrowing": "The search now has a detailed project-level cost baseline and page range inside the Weapons Activities volume, while the missing object is clearly the complete multi-site capability estimate rather than another individual project table.",
+          "evidence_limits": [
+            "A project total is not the complete pit-production capability life-cycle estimate.",
+            "The budget volume does not expose the recommendation-specific GAO-aligned method across all sites.",
+            "Project tables do not provide the required capability-wide risk and uncertainty analysis."
+          ],
+          "exact_target_artifact_acquired": false,
+          "agency_gao_status_conflict": false,
+          "next_action": "Track the December 2026 complete capability estimate and compare its scope, method, assumptions, and uncertainty treatment with the project-level FY 2027 tables.",
+          "signal_id": "signal-56w-nnsa-pit-production-project-cost-trail"
+        },
+        {
+          "record_id": "record-56w-hanford-dfhlw-decision-and-progress-record",
+          "action_key": "DOE-05",
+          "parent_lead_id": "lead-56v-03",
+          "record_type": "Named target retrieval",
+          "record_status": "Published",
+          "target_artifact": "Post-recommendation pause decision, independent optimization analysis, mission-need reset, and safety-prerequisite completion package",
+          "finding": "DOE's October 2025 amended Record of Decision selects Direct-Feed High-Level Waste implementation and added storage, while DOE's July 2026 progress article reports testing and continued design advancement. GAO's February 2026 update still reports the pause and independent-analysis recommendations as Open.",
+          "material_narrowing": "The public decision trail now has an amended ROD and a current implementation-status record. Together they make the agency-GAO conflict explicit without supplying the distinct pause and prerequisite package.",
+          "evidence_limits": [
+            "Continued implementation is not evidence of the requested pause.",
+            "Agency progress reporting is not an independent optimization analysis.",
+            "The amended decision does not establish GAO acceptance or closure of either recommendation."
+          ],
+          "exact_target_artifact_acquired": false,
+          "agency_gao_status_conflict": true,
+          "next_action": "Retrieve the planned independent FFRDC analysis, any pause decision, mission-need reset, safety-prerequisite record, and later GAO sufficiency determination.",
+          "signal_id": "signal-56w-hanford-dfhlw-decision-and-progress-record"
+        },
+        {
+          "record_id": "record-56w-hanford-low-activity-waste-grout-plan",
+          "action_key": "DOE-CROSS-01",
+          "parent_lead_id": null,
+          "record_type": "Compatible cross-lane expansion",
+          "record_status": "Published",
+          "target_artifact": "Current plan, volume, cost range, procurement status, and scope boundary for off-site low-activity-waste grouting",
+          "finding": "GAO reports a plan to grout about 24 million gallons of low-activity waste, a $480 million to $1.1 billion estimate that excludes transportation and disposal, a December 2025 solicitation, proposals under review in April 2026, and an award planned later in 2026.",
+          "material_narrowing": "The report adds a cost-and-procurement record for a distinct Hanford waste stream while preventing low-activity-waste planning from being used as evidence about the high-level-waste recommendation target.",
+          "evidence_limits": [
+            "Low-activity waste is not high-level waste.",
+            "The estimate excludes transportation and disposal.",
+            "A planned contract award is not an awarded, operating, or outcome-producing system."
+          ],
+          "exact_target_artifact_acquired": false,
+          "agency_gao_status_conflict": false,
+          "next_action": "Track the procurement award, full lifecycle cost boundary, disposal destination, operating performance, and realized outcomes as separate records.",
+          "signal_id": "signal-56w-hanford-low-activity-waste-grout-plan"
+        },
+        {
+          "record_id": "record-56w-doe-em-aging-infrastructure-constraint",
+          "action_key": "DOE-CROSS-02",
+          "parent_lead_id": null,
+          "record_type": "Compatible cross-lane expansion",
+          "record_status": "Published",
+          "target_artifact": "Current facility condition, repair need, maintenance cost, planning-quality, and cost-avoidance evidence for DOE Environmental Management infrastructure",
+          "finding": "GAO reports roughly 4,300 facilities, more than $1.5 billion in repair needs, more than $950 million planned for fiscal year 2026 maintenance, an 80 percent maintenance-cost increase since fiscal year 2020, inconsistent data and scorecards, and 19 projects that could save about $120 million.",
+          "material_narrowing": "The report establishes aging infrastructure and inconsistent asset data as measurable cleanup constraints, without substituting asset planning for waste-disposal optimization.",
+          "evidence_limits": [
+            "Repair needs and maintenance plans are not the complex-wide waste inventory or optimal disposal strategy.",
+            "Potential savings are not realized savings.",
+            "Inconsistent data limits cross-site comparison and prioritization."
+          ],
+          "exact_target_artifact_acquired": false,
+          "agency_gao_status_conflict": false,
+          "next_action": "Track DOE's corrected asset data, site-level need integration, project completion, realized savings, and any direct connection to disposal-strategy choices.",
+          "signal_id": "signal-56w-doe-em-aging-infrastructure-constraint"
+        }
+      ],
+      "phase_56w_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56W adds new authoritative status and materially narrower official records but no exact target artifact, GAO acceptance, directive-scope change, implementation change, closure change, or operating outcome.",
+        "records_reviewed": 5,
+        "records_published": 4,
+        "records_held_in_review": 1,
         "exact_target_artifacts_acquired": 0
       }
     },
@@ -3962,6 +4098,55 @@
         "official_supporting_artifacts_profiled": 3,
         "recommendation_specific_supporting_artifacts_located": 0,
         "exact_target_artifacts_acquired": 0
+      },
+      "phase_56w_named_record_retrieval": [
+        {
+          "record_id": "record-56w-dot-unified-grants-award-deployment-record",
+          "action_key": "DOT-05",
+          "parent_lead_id": "lead-56v-07",
+          "record_type": "Named target retrieval",
+          "record_status": "In Review",
+          "target_artifact": "Authoritative unified-grants contract award, system baseline, data model, deployment record, and operating risk assessment",
+          "finding": "The official procurement forecast still identifies a planned $20 million to $50 million effort and states that the contract was not awarded on the displayed record. GAO's March 2026 update reports revised ERM guidance and a planned FY 2027 unified system, not an awarded or operating control.",
+          "material_narrowing": "The search remains anchored to opportunity 685586-2025-248 and its intended September 2025 to September 2030 performance window, but no exact award or deployment artifact was located.",
+          "evidence_limits": [
+            "A forecast is not an award.",
+            "Updated guidance is not a deployed common system or portfolio-wide operating assessment.",
+            "The planned FY 2027 system date does not establish current implementation."
+          ],
+          "exact_target_artifact_acquired": false,
+          "agency_gao_status_conflict": false,
+          "next_action": "Reopen on an authoritative award notice, system baseline, data model, deployment record, or operating portfolio-risk output.",
+          "signal_id": null
+        },
+        {
+          "record_id": "record-56w-infrastructure-funding-review-status",
+          "action_key": "DOT-CROSS-01",
+          "parent_lead_id": null,
+          "record_type": "Compatible cross-lane expansion",
+          "record_status": "Published",
+          "target_artifact": "Current aggregate obligation, disbursement, approval, cancellation, and pending-project status for selected IIJA and IRA programs",
+          "finding": "GAO reports that the four selected agencies had obligated 76 percent of IIJA funding and disbursed 54 percent of obligated funds, with approximately 9,500 projects approved for $128 billion, 800 canceled for $17.8 billion, and 2,500 pending for $33.6 billion.",
+          "material_narrowing": "The report adds a current cross-agency infrastructure-funding status rail that can be compared over time without converting aggregate figures into a DOT-only portfolio result.",
+          "evidence_limits": [
+            "The figures are aggregate across four selected agencies.",
+            "The review is not evidence of DOT's unified-grants system or recommendation-specific operating control.",
+            "Approval, obligation, disbursement, cancellation, and project completion are distinct states."
+          ],
+          "exact_target_artifact_acquired": false,
+          "agency_gao_status_conflict": false,
+          "next_action": "Track later agency-specific funding updates and preserve program, agency, status, period, and denominator boundaries.",
+          "signal_id": "signal-56w-infrastructure-funding-review-status"
+        }
+      ],
+      "phase_56w_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56W adds new authoritative status and materially narrower official records but no exact target artifact, GAO acceptance, directive-scope change, implementation change, closure change, or operating outcome.",
+        "records_reviewed": 2,
+        "records_published": 1,
+        "records_held_in_review": 1,
+        "exact_target_artifacts_acquired": 0
       }
     },
     {
@@ -4542,5 +4727,6 @@
   "phase_56s_scope_audit_ledger": "phase-56s-artifact-scope-audit-missing-document-register.json",
   "phase_56t_acquisition_sufficiency_ledger": "phase-56t-official-response-acquisition-artifact-sufficiency-queue.json",
   "phase_56u_exact_artifact_recovery_ledger": "phase-56u-custodian-exact-artifact-recovery-batch-one.json",
-  "phase_56v_supporting_artifact_decomposition_ledger": "phase-56v-second-order-recovery-leads-supporting-artifacts.json"
+  "phase_56v_supporting_artifact_decomposition_ledger": "phase-56v-second-order-recovery-leads-supporting-artifacts.json",
+  "phase_56w_named_record_retrieval_ledger": "phase-56w-named-record-retrieval-cross-lane-expansion.json"
 }

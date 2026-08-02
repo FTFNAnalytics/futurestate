@@ -43,7 +43,8 @@
     "Phase 56S gives all five DOE recommendation records an element-level scope audit and records two adjacent public sources plus three unresolved public-document gaps.",
     "Phase 56T assigns DOE missing artifacts to named custodians and repositories while preserving two adjacent-source matrices.",
     "Phase 56U adds recommendation-specific DOE congressional status for three tickets while retaining the exact life-cycle estimate, disposal analyses, and Hanford pause package as unacquired.",
-    "Phase 56V names NNSA's Production Modernization budget lineage, EM's Waste Disposal Office, and Hanford's 2023 AoA-to-2025-supplement chain while retaining all three DOE target artifacts as unacquired."
+    "Phase 56V names NNSA's Production Modernization budget lineage, EM's Waste Disposal Office, and Hanford's 2023 AoA-to-2025-supplement chain while retaining all three DOE target artifacts as unacquired.",
+    "Phase 56W adds NNSA project-cost detail, Hanford decision and progress records, a bounded low-activity-waste plan, and EM infrastructure constraints while holding the complex-wide waste-optimization artifact In Review."
   ],
   "primary_topics": [
     "Energy",
@@ -127,7 +128,11 @@
     "signal-56u-doe-hanford-waste-treatment-pause-conditions",
     "signal-56v-doe-pit-production-budget-lineage",
     "signal-56v-doe-waste-disposal-custodian-function",
-    "signal-56v-doe-hanford-alternatives-lineage"
+    "signal-56v-doe-hanford-alternatives-lineage",
+    "signal-56w-nnsa-pit-production-project-cost-trail",
+    "signal-56w-hanford-dfhlw-decision-and-progress-record",
+    "signal-56w-hanford-low-activity-waste-grout-plan",
+    "signal-56w-doe-em-aging-infrastructure-constraint"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -212,7 +217,12 @@
     "source-56v-doe-em-mission-functions",
     "source-56v-hanford-dfhlw-2025-supplement-analysis",
     "source-56v-hanford-hlw-aoa-final-2023",
-    "source-56v-hanford-hlw-aoa-addendum-2023"
+    "source-56v-hanford-hlw-aoa-addendum-2023",
+    "source-56w-nnsa-fy2027-weapons-activities",
+    "source-56w-hanford-dfhlw-amended-rod",
+    "source-56w-hanford-hlw-progress-july2026",
+    "source-56w-gao-hanford-law-grout-plans-2026",
+    "source-56w-gao-em-aging-infrastructure-2026"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -242,7 +252,8 @@
     "briefing-research-watch-023-recommendation-artifact-scope-audit",
     "briefing-research-watch-024-official-response-acquisition-queue",
     "briefing-research-watch-025-exact-artifact-recovery-batch-one",
-    "briefing-research-watch-026-second-order-recovery-leads"
+    "briefing-research-watch-026-second-order-recovery-leads",
+    "briefing-research-watch-027-named-record-retrieval"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -271,7 +282,8 @@
     "research-collection-gao-recommendation-artifact-scope-audit-missing-document-register-2026",
     "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
     "research-collection-gao-custodian-exact-artifact-recovery-batch-one-2026",
-    "research-collection-gao-second-order-recovery-leads-supporting-artifacts-2026"
+    "research-collection-gao-second-order-recovery-leads-supporting-artifacts-2026",
+    "research-collection-gao-named-record-retrieval-cross-lane-expansion-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -399,6 +411,11 @@
       "stage": "Phase 56V second-order recovery leads",
       "current_state": "Phase 56V names NNSA's Production Modernization budget lineage, EM's Waste Disposal Office, and Hanford's 2023 AoA-to-2025-supplement chain while retaining all three DOE target artifacts as unacquired.",
       "boundary": "Program lineage and cited analyses cannot substitute for the recommendation-specific estimate, complex-wide optimization, or Hanford pause and prerequisite package."
+    },
+    {
+      "stage": "Phase 56W named-record retrieval",
+      "current_state": "Phase 56W adds NNSA project-cost detail, Hanford decision and progress records, a bounded low-activity-waste plan, and EM infrastructure constraints while holding the complex-wide waste-optimization artifact In Review.",
+      "boundary": "Project costs, continued implementation, low-activity-waste planning, and asset constraints do not substitute for a complete capability estimate, high-level-waste pause package, or complex-wide disposal optimization."
     }
   ],
   "evidence_limits": [
@@ -439,7 +456,10 @@
     "DOE's status table is a first-party agency statement; where it conflicts with GAO, FTFN retains GAO's current recommendation status.",
     "FTFN submitted no agency contact or FOIA request in this public-repository pass.",
     "Program lineage and cited analyses cannot substitute for the recommendation-specific estimate, complex-wide optimization, or Hanford pause and prerequisite package.",
-    "FTFN submitted no agency contact or FOIA request in this public-record decomposition."
+    "FTFN submitted no agency contact or FOIA request in this public-record decomposition.",
+    "Project costs, continued implementation, low-activity-waste planning, and asset constraints do not substitute for a complete capability estimate, high-level-waste pause package, or complex-wide disposal optimization.",
+    "Four Phase 56W exact-artifact searches remain In Review because no new exact artifact or authoritative narrowing was located.",
+    "FTFN submitted no agency contact or FOIA request; public search does not establish nonexistence, withholding, or failure to submit."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -477,6 +497,7 @@
     "Exact agency response artifacts, official GAO sufficiency decisions, and later attributable implementation and operating-outcome evidence.",
     "Exact artifacts released by named custodians, successor directives, and explicit GAO acceptance or remaining-deficiency decisions.",
     "Exact public artifacts, recommendation correspondence attachments, or explicit GAO acceptance and remaining-deficiency decisions for the eight Phase 56U tickets.",
-    "The exact target artifacts, newly named attachments and plans, or explicit GAO acceptance and remaining-deficiency decisions for the eight acquisition tickets."
+    "The exact target artifacts, newly named attachments and plans, or explicit GAO acceptance and remaining-deficiency decisions for the eight acquisition tickets.",
+    "The four JEC records, DOT unified-grants award and operating artifacts, DOE waste-optimization package, NNSA complete capability estimate, Hanford independent analysis and pause record, and HHS qualifying department-wide AARs."
   ]
 }

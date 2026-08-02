@@ -161,6 +161,8 @@ What is now stable:
 - The verified Phase 56U contract is 1,739 pages, 619 sources, 429 signals, 361 Published signals, 68 In Review signals, 408 current Published-support sources, thirty-three briefings, thirty research collections, 541 research documents, 49 updates, and an eleven-file archive. No directive-scope, implementation, closure, or entity-evidence state changes. Local content commit `c55a70906b250b95df5f527420b766e976a56995` maps to private runtime commit `11b87a567de581b6d4d5368b60d8c944df376332`, deployed as owner-only Sites version 46 in deployment `appgdep_6a6efe2ef8c481919544fd5000713e22`.
 - Phase 56V decomposes all ten Phase 56U near-matches across twelve official supporting sources. Ten lead records and signals publish, one VA congressional appendix is recommendation-specific supporting correspondence, and no exact target artifact, directive-scope change, implementation change, closure change, agency contact, or FOIA request is recorded.
 - The verified Phase 56V contract is 1,773 pages, 631 sources, 439 signals, 371 Published signals, 68 In Review signals, 420 current Published-support sources, thirty-four briefings, thirty-one research collections, 551 research documents, 50 updates, and a thirteen-file archive. Local content commit `4b9cdbf204439fabf7ee0f88e8fdb726941338f3` maps to exact private runtime commit `be7a90b50e4aae94ba621260cf1c6057b33d0025`, deployed as owner-only Sites version 47 in deployment `appgdep_6a6f045fb3a481919e56fc7bfde5c76e`.
+- Phase 56W reviews seven named recovery targets and three compatible cross-lane records. Six authoritative or materially narrower records publish, four unchanged exact-artifact searches remain In Review, and seven Tier 1 source profiles support the batch. No exact target, directive-scope change, implementation change, closure change, agency contact, or FOIA request is recorded.
+- The verified Phase 56W contract is 1,798 pages, 638 sources, 445 signals, 377 Published signals, 68 In Review signals, 427 current Published-support sources, thirty-five briefings, thirty-two research collections, 561 research documents, 51 updates, and a thirteen-file archive. Owner-only deployment is pending.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
@@ -199,7 +201,7 @@ What is now stable:
 
 What is still prelaunch scaffolding:
 
-- Three hundred and seventy-one signal records are `Published`.
+- Three hundred and seventy-seven signal records are `Published`.
 - Sixty-eight signal records are still `In Review`; no Draft Sample remains. Two are the Phase 56Q HHS-04 and VA-02 one-to-many holds.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
@@ -210,27 +212,27 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only access and continue with Phase 56W named-record retrieval batch two. Phase 56V is complete and release-verified: retrieve the four named VA-DOD JEC transition records, DOT's unified-grants award and deployment trail, DOE Waste Disposal Office analyses, NNSA Production Modernization estimate lineage, Hanford pause and independent-review decisions, and completed HHS department-wide AARs. Publish only an exact record, a new authoritative status, or a materially narrower locator. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only access and continue with Phase 56X implementation-to-outcome expansion. Phase 56W is complete and release-verified locally: deepen the current infrastructure-funding, Hanford, DOE Environmental Management, NNSA, VA-DOD, HHS, and DOT records toward agency-specific implementation and operating outcomes while treating exact-artifact checks as non-blocking inserts. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 439 signal records,
-- 631 source records,
+- 445 signal records,
+- 638 source records,
 - 17 topic records,
 - 5 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 32 briefings: 25 Published and 7 In Review,
+- 35 briefings: 28 Published and 7 In Review,
 - 16 evidence gap records,
-- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56T reviews,
+- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56W reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 30 research collections with 541 document records,
+- 32 research collections with 561 document records,
 - 15 reader pathways across 19 existing Atlas surfaces,
-- 48 public update-log entries.
+- 51 public update-log entries.
 
-Three hundred and fifty-three official-source-backed signals are now `Published`.
+Three hundred and seventy-seven official-source-backed signals are now `Published`.
 
 Phase 55M added thirteen bounded records to the prior 25-signal Published set:
 
@@ -504,16 +506,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 56V second-order recovery leads and supporting-artifact decomposition.
+Phase 56W named-record retrieval and compatible cross-lane expansion.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 56V candidate: package 0.2.0-dev, 631 public sources, 150 first-pass-triaged private candidates, 439 signals, 17 topics, 50 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,773 generated site pages, 371 Published signals, 27 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 31 research collections, 551 research documents, all prior verified archives plus the Phase 56V 13-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 432 Manual Review and 199 Probe Ready records.
+v0.2 Phase 56W candidate: package 0.2.0-dev, 638 public sources, 150 first-pass-triaged private candidates, 445 signals, 17 topics, 51 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,798 generated site pages, 377 Published signals, 28 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 32 research collections, 561 research documents, all prior verified archives plus the Phase 56W 13-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 436 Manual Review and 202 Probe Ready records.
 
 Next decision gate:
-Preserve owner-only Sites access and begin Phase 56W. Retrieve the precise JEC, DOT system, DOE analysis, NNSA estimate, Hanford decision, and HHS AAR records named by Phase 56V. Publish only an exact record, a new authoritative status, or a materially narrower locator; otherwise retain the bounded result and reopening trigger. Preserve agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, and outcomes as separate. Treat scheduled checks as dated inserts and continue compatible content lanes in parallel. Do not infer causation or create rankings, composite scores, readiness scores, or savings claims. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve owner-only Sites access and begin Phase 56X. Extend the current official records from plan, budget, award, and aggregate status toward agency-specific deployment, use, output, and outcome evidence while inserting exact JEC, DOT, DOE, NNSA, Hanford, and HHS target artifacts only when authoritative triggers appear. Preserve agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, waste stream, period, unit, method, and denominator as separate. Do not infer causation or create rankings, composite scores, readiness scores, or savings claims. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

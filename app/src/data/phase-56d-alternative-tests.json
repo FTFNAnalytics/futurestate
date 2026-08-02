@@ -1290,6 +1290,55 @@
         "official_supporting_artifacts_profiled": 2,
         "recommendation_specific_supporting_artifacts_located": 0,
         "exact_target_artifacts_acquired": 0
+      },
+      "phase_56w_named_record_retrieval": [
+        {
+          "record_id": "record-56w-hhs-cross-component-after-action-report",
+          "action_key": "HHS-04-R1",
+          "parent_lead_id": "lead-56v-04",
+          "record_type": "Named target retrieval",
+          "record_status": "In Review",
+          "target_artifact": "Completed department-wide exercise or response AAR citing the January 2026 SOP and documenting cross-component collaboration",
+          "finding": "GAO reports that HHS established a January 2026 SOP and was awaiting a qualifying exercise or response AAR for review. No completed department-wide AAR naming participating HHS components was located.",
+          "material_narrowing": "The missing evidence is now a completed use record, not another template or general emergency plan.",
+          "evidence_limits": [
+            "An SOP is not evidence of use.",
+            "A provider-oriented AAR template is not a department-wide cross-component AAR.",
+            "Open—Partially Addressed remains the controlling GAO status."
+          ],
+          "exact_target_artifact_acquired": false,
+          "agency_gao_status_conflict": false,
+          "next_action": "Retrieve the first completed AAR that cites the January 2026 SOP and documents participating HHS components, findings, corrective actions, and follow-through.",
+          "signal_id": null
+        },
+        {
+          "record_id": "record-56w-hhs-external-stakeholder-after-action-report",
+          "action_key": "HHS-04-R2",
+          "parent_lead_id": "lead-56v-05",
+          "record_type": "Named target retrieval",
+          "record_status": "In Review",
+          "target_artifact": "Completed department-wide AAR documenting relevant external-stakeholder selection, participation, challenges, solutions, and follow-through under the January 2026 SOP",
+          "finding": "GAO reports the January 2026 SOP as a partial response and is awaiting a qualifying use record. No completed AAR identifying external participants and the procedure used to include them was located.",
+          "material_narrowing": "The target is bounded to one completed department-wide implementation record that joins stakeholder-selection procedure to actual participation and corrective action.",
+          "evidence_limits": [
+            "A generic AAR template does not define relevant stakeholder selection.",
+            "An SOP without a completed use record does not establish implementation.",
+            "Open—Partially Addressed remains the controlling GAO status."
+          ],
+          "exact_target_artifact_acquired": false,
+          "agency_gao_status_conflict": false,
+          "next_action": "Retrieve the first qualifying AAR that identifies external participants, selection rationale, participation, findings, solutions, and accountable follow-through.",
+          "signal_id": null
+        }
+      ],
+      "phase_56w_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56W adds new authoritative status and materially narrower official records but no exact target artifact, GAO acceptance, directive-scope change, implementation change, closure change, or operating outcome.",
+        "records_reviewed": 2,
+        "records_published": 0,
+        "records_held_in_review": 2,
+        "exact_target_artifacts_acquired": 0
       }
     },
     {
@@ -1854,5 +1903,6 @@
   "phase_56s_scope_audit_ledger": "phase-56s-artifact-scope-audit-missing-document-register.json",
   "phase_56t_acquisition_sufficiency_ledger": "phase-56t-official-response-acquisition-artifact-sufficiency-queue.json",
   "phase_56u_exact_artifact_recovery_ledger": "phase-56u-custodian-exact-artifact-recovery-batch-one.json",
-  "phase_56v_supporting_artifact_decomposition_ledger": "phase-56v-second-order-recovery-leads-supporting-artifacts.json"
+  "phase_56v_supporting_artifact_decomposition_ledger": "phase-56v-second-order-recovery-leads-supporting-artifacts.json",
+  "phase_56w_named_record_retrieval_ledger": "phase-56w-named-record-retrieval-cross-lane-expansion.json"
 }

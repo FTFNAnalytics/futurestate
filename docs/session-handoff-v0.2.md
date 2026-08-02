@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed local work: Phase 56V second-order recovery leads and supporting-artifact decomposition
+Latest completed local work: Phase 56W named-record retrieval and compatible cross-lane expansion
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 1,773 generated site pages
-Content: 631 sources, 439 signals, 17 topics, 5 local systems, 31 research collections / 551 research documents
-Publication: 371 Published signals, 68 In Review signals, 27 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
-Trust/data: 50 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, all prior verified research archives plus the Phase 56V 13-file archive
+Build: 1,798 generated site pages
+Content: 638 sources, 445 signals, 17 topics, 5 local systems, 32 research collections / 561 research documents
+Publication: 377 Published signals, 68 In Review signals, 28 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
+Trust/data: 51 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, all prior verified research archives plus the Phase 56W 13-file archive
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 47 is the active Phase 56V checkpoint; custom owner-only access, no groups, no editors, and zero external visitors
+Deployment: owner-only Sites version 47 remains active while the release-verified Phase 56W candidate awaits owner-only deployment; public access is unchanged
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 432 Manual Review, 199 Probe Ready, zero incomplete endpoint declarations; 14 Strong coverage lanes
-Next content gate: Phase 56W named-record retrieval batch two and cross-lane expansion; the inherited HHS tracker recheck and remaining dated inserts do not block expansion
+Source health: 436 Manual Review, 202 Probe Ready, zero incomplete endpoint declarations; 14 Strong coverage lanes
+Next content gate: Phase 56X implementation-to-outcome expansion and exact-artifact recovery batch three; the inherited HHS tracker recheck and remaining dated inserts do not block expansion
 ```
 
 ## Read First
@@ -149,6 +149,7 @@ The approved preview sequence is complete:
 94. Matched local content commit `c55a70906b250b95df5f527420b766e976a56995` to exact private runtime commit `11b87a567de581b6d4d5368b60d8c944df376332`, deployed the verified Phase 56U package as owner-only Sites version 46 in deployment `appgdep_6a6efe2ef8c481919544fd5000713e22`, and confirmed custom owner-only access with no groups, no editors, and zero external visitors.
 95. Completed Phase 56V locally: decomposed all ten Phase 56U near-matches, added twelve official sources, ten Published documents and signals, Research Watch 026, two ledgers, one collection, one update, and a thirteen-file archive. Verified 1,773 pages, 631 sources, 439 signals, 371 Published, 68 In Review, 50 updates, thirty-one collections, 551 research documents, and 420 current Published-support sources. Located one recommendation-specific VA supporting artifact but zero exact targets, and recorded no directive-scope, implementation, closure, agency-contact, FOIA, or entity-evidence changes.
 96. Matched local content commit `4b9cdbf204439fabf7ee0f88e8fdb726941338f3` to exact private runtime commit `be7a90b50e4aae94ba621260cf1c6057b33d0025`, deployed the verified Phase 56V package as owner-only Sites version 47 in deployment `appgdep_6a6f045fb3a481919e56fc7bfde5c76e`, and confirmed custom owner-only access with no groups, no editors, and zero external visitors.
+97. Completed Phase 56W locally: reviewed seven named recovery targets and three compatible cross-lane records; added seven Tier 1 sources, six Published documents and signals, four In Review document holds, Research Watch 027, two ledgers, one collection, one update, and a thirteen-file archive. Verified 1,798 pages, 638 sources, 445 signals, 377 Published, 68 In Review, 51 updates, thirty-two collections, 561 research documents, and 427 current Published-support sources while preserving zero exact targets and no directive-scope, implementation, closure, agency-contact, FOIA, or entity-evidence changes.
 
 ## Required Stop Points
 
@@ -202,9 +203,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed local work is Phase 56V. The current candidate should be 0.2.0-dev on codex/phase51-content with 631 sources, 439 signals, 371 Published signals, 68 In Review signals, five local systems, twenty-seven Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 50 public updates, five JSON exports, 1,773 generated site pages, thirty-one research collections, 551 research documents, all prior verified archives, and the Phase 56V thirteen-file archive. Public access and DNS remain unchanged.
+The latest completed local work is Phase 56W. The current candidate should be 0.2.0-dev on codex/phase51-content with 638 sources, 445 signals, 377 Published signals, 68 In Review signals, five local systems, twenty-eight Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 51 public updates, five JSON exports, 1,798 generated site pages, thirty-two research collections, 561 research documents, all prior verified archives, and the Phase 56W thirteen-file archive. Public access and DNS remain unchanged.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Preserve owner-only Sites access and stop before changing access or attaching a domain. Phase 56V is complete and release-verified; begin Phase 56W by retrieving the named JEC, DOT system, DOE analysis, NNSA estimate, Hanford decision, and HHS AAR records exposed by its ten lead chains. Publish only an exact record, a new authoritative status, or a materially narrower locator; retain stop rules and reopening triggers for unresolved gaps. Do not represent a search as agency contact or a submitted FOIA request. Keep agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity-evidence, and operating outcomes separate, and do not equate a failed public search with nonexistence. Continue compatible content lanes in parallel. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval.
+Preserve owner-only Sites access and stop before changing access or attaching a domain. Phase 56W is complete and release-verified locally; begin Phase 56X by extending infrastructure-funding, Hanford, DOE Environmental Management, NNSA, VA-DOD, HHS, and DOT records toward agency-specific implementation and operating outcomes. Insert exact-artifact recoveries only on authoritative public triggers and retain stop rules for unresolved gaps. Do not represent a search as agency contact or a submitted FOIA request. Keep agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity-evidence, waste stream, period, unit, method, denominator, and operating outcomes separate. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval.
 ```
