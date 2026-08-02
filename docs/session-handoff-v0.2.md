@@ -17,7 +17,7 @@ Content: 631 sources, 439 signals, 17 topics, 5 local systems, 31 research colle
 Publication: 371 Published signals, 68 In Review signals, 27 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
 Trust/data: 50 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, all prior verified research archives plus the Phase 56V 13-file archive
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: owner-only Sites version 46 remains the active Phase 56U checkpoint while the verified Phase 56V refresh is pending; custom owner-only access, no groups, no editors, and zero external visitors
+Deployment: owner-only Sites version 47 is the active Phase 56V checkpoint; custom owner-only access, no groups, no editors, and zero external visitors
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 432 Manual Review, 199 Probe Ready, zero incomplete endpoint declarations; 14 Strong coverage lanes
 Next content gate: Phase 56W named-record retrieval batch two and cross-lane expansion; the inherited HHS tracker recheck and remaining dated inserts do not block expansion
@@ -148,6 +148,7 @@ The approved preview sequence is complete:
 93. Completed Phase 56U locally: ran all eight custodian-level recovery tickets, reviewed ten current official near-matches, added seven source profiles, eight Published documents and signals, Research Watch 025, two ledgers, one collection, one update, and an eleven-file archive. Verified 1,739 pages, 619 sources, 429 signals, 361 Published, 68 In Review, 49 updates, thirty collections, 541 research documents, and 408 current Published-support sources. Acquired zero exact target artifacts, preserved one DOE agency-versus-GAO status conflict, and recorded no directive-scope, implementation, closure, or entity-evidence changes.
 94. Matched local content commit `c55a70906b250b95df5f527420b766e976a56995` to exact private runtime commit `11b87a567de581b6d4d5368b60d8c944df376332`, deployed the verified Phase 56U package as owner-only Sites version 46 in deployment `appgdep_6a6efe2ef8c481919544fd5000713e22`, and confirmed custom owner-only access with no groups, no editors, and zero external visitors.
 95. Completed Phase 56V locally: decomposed all ten Phase 56U near-matches, added twelve official sources, ten Published documents and signals, Research Watch 026, two ledgers, one collection, one update, and a thirteen-file archive. Verified 1,773 pages, 631 sources, 439 signals, 371 Published, 68 In Review, 50 updates, thirty-one collections, 551 research documents, and 420 current Published-support sources. Located one recommendation-specific VA supporting artifact but zero exact targets, and recorded no directive-scope, implementation, closure, agency-contact, FOIA, or entity-evidence changes.
+96. Matched local content commit `4b9cdbf204439fabf7ee0f88e8fdb726941338f3` to exact private runtime commit `be7a90b50e4aae94ba621260cf1c6057b33d0025`, deployed the verified Phase 56V package as owner-only Sites version 47 in deployment `appgdep_6a6f045fb3a481919e56fc7bfde5c76e`, and confirmed custom owner-only access with no groups, no editors, and zero external visitors.
 
 ## Required Stop Points
 

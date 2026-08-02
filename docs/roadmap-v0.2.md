@@ -393,7 +393,7 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 56S | seventy-two directive-element checks, 3 / 13 / 8 availability split, Research Watch 023, and Sites version 44 |
 | Completed and owner-only deployed | Phase 56T | eight acquisition tickets, thirteen adjacent-source matrices, three public-candidate matrices, Research Watch 024, a verified 1,714-page contract, and Sites version 45 |
 | Completed and owner-only deployed | Phase 56U | eight recovery searches, ten official near-matches, seven new source profiles, Research Watch 025, a verified 1,739-page contract, and Sites version 46 |
-| Completed locally; owner-only refresh pending | Phase 56V | ten second-order lead chains, twelve official source profiles, Research Watch 026, and a verified 1,773-page contract |
+| Completed and owner-only deployed | Phase 56V | ten second-order lead chains, twelve official source profiles, Research Watch 026, a verified 1,773-page contract, and Sites version 47 |
 | Next content gate | Phase 56W | retrieve the precise JEC, DOT system, DOE analysis, NNSA estimate, Hanford decision, and HHS AAR records named by Phase 56V |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
@@ -1426,7 +1426,7 @@ Completion:
 - recorded no directive-scope, implementation, or closure changes and preserved the one Closed, twenty-one Partially Closed, and two Open entity evidence ledger.
 - local content commit `c55a70906b250b95df5f527420b766e976a56995` produced exact private runtime commit `11b87a567de581b6d4d5368b60d8c944df376332`, deployed successfully as owner-only Sites version 46 in deployment `appgdep_6a6efe2ef8c481919544fd5000713e22` with no groups, no editors, and zero external visitors.
 
-### Phase 56V: Second-Order Recovery Leads And Supporting-Artifact Decomposition - Complete And Release-Verified
+### Phase 56V: Second-Order Recovery Leads And Supporting-Artifact Decomposition - Complete And Owner-Only Deployed
 
 Goal: convert the Phase 56U official near-matches into named downstream recovery leads without waiting for dated milestones.
 
@@ -1454,6 +1454,7 @@ Completion:
 - resolved DOT's three branches to an OIG oversight series, a named unified-grants procurement forecast, and the January 2026 grants-guidance surface without representing any as an operating portfolio control;
 - passed content validation, source health, Astro diagnostics, the 1,773-page production build, Phase 56V assertions, sitemap membership, exports, and private-registry exclusion;
 - recorded zero exact target artifacts, directive-scope changes, implementation changes, closure changes, agency contacts, or FOIA requests and preserved the one Closed, twenty-one Partially Closed, and two Open entity evidence ledger.
+- local content commit `4b9cdbf204439fabf7ee0f88e8fdb726941338f3` produced exact private runtime commit `be7a90b50e4aae94ba621260cf1c6057b33d0025`, deployed successfully as owner-only Sites version 47 in deployment `appgdep_6a6f045fb3a481919e56fc7bfde5c76e` with no groups, no editors, and zero external visitors.
 
 ### Phase 56W: Named-Record Retrieval Batch Two And Cross-Lane Expansion - Next Content Gate
 
@@ -1593,4 +1594,4 @@ Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Sites version 46 serves local content commit `c55a70906b250b95df5f527420b766e976a56995` from exact private runtime commit `11b87a567de581b6d4d5368b60d8c944df376332` in deployment `appgdep_6a6efe2ef8c481919544fd5000713e22`, under custom owner-only access with no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 47 serves local content commit `4b9cdbf204439fabf7ee0f88e8fdb726941338f3` from exact private runtime commit `be7a90b50e4aae94ba621260cf1c6057b33d0025` in deployment `appgdep_6a6f045fb3a481919e56fc7bfde5c76e`, under custom owner-only access with no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

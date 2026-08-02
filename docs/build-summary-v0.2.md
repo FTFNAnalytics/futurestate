@@ -109,7 +109,7 @@ Phase 56T converts the complete Phase 56S 3 / 13 / 8 split into twenty-four cont
 
 Phase 56U runs the first exact-title and custodian-level recovery pass for all eight Phase 56T acquisition tickets. Ten current official near-matches produce three recommendation-specific DOE status results and five current official near-match results, but no exact target artifact is acquired. Seven source profiles, eight Published documents and signals, Research Watch 025, two machine-readable ledgers, one collection, one update, and a verified eleven-file archive raise the candidate to 1,739 pages, 619 sources, 429 signals, 361 Published, 68 In Review, 49 updates, thirty-three briefings, thirty research collections, 541 research documents, and 408 current Published-support sources. Source health reports 428 Manual Review and 191 Probe Ready endpoints. One DOE agency-versus-GAO status conflict is preserved explicitly. Content validation, the production build, Phase 56U assertions, release assertions, sitemap membership, exports, and private-registry exclusion pass. No directive-scope, implementation, closure, or entity-evidence state changes. Local content commit `c55a70906b250b95df5f527420b766e976a56995` produced exact private runtime commit `11b87a567de581b6d4d5368b60d8c944df376332`, deployed as owner-only Sites version 46 in deployment `appgdep_6a6efe2ef8c481919544fd5000713e22`.
 
-Phase 56V decomposes all ten Phase 56U official near-matches into named downstream offices, analyses, templates, systems, governance records, and correspondence. Twelve Tier 1 source profiles support ten Published documents and signals, Research Watch 026, two machine-readable ledgers, one collection, one update, and a verified thirteen-file archive. VA's FY 2026 congressional appendix is one recommendation-specific supporting artifact and names the JEC plan, POAMM, responsible offices, and transition-assessment lineage; it is not the missing draft assessment. The candidate reaches 1,773 pages, 631 sources, 439 signals, 371 Published, 68 In Review, 50 updates, thirty-four briefings, thirty-one research collections, 551 research documents, and 420 current Published-support sources. Source health reports 432 Manual Review and 199 Probe Ready endpoints. No exact target artifact, directive-scope change, implementation change, closure change, agency contact, or FOIA request is recorded. Content validation, Astro diagnostics, the production build, Phase 56V assertions, sitemap membership, exports, and private-registry exclusion pass.
+Phase 56V decomposes all ten Phase 56U official near-matches into named downstream offices, analyses, templates, systems, governance records, and correspondence. Twelve Tier 1 source profiles support ten Published documents and signals, Research Watch 026, two machine-readable ledgers, one collection, one update, and a verified thirteen-file archive. VA's FY 2026 congressional appendix is one recommendation-specific supporting artifact and names the JEC plan, POAMM, responsible offices, and transition-assessment lineage; it is not the missing draft assessment. The candidate reaches 1,773 pages, 631 sources, 439 signals, 371 Published, 68 In Review, 50 updates, thirty-four briefings, thirty-one research collections, 551 research documents, and 420 current Published-support sources. Source health reports 432 Manual Review and 199 Probe Ready endpoints. No exact target artifact, directive-scope change, implementation change, closure change, agency contact, or FOIA request is recorded. Content validation, Astro diagnostics, the production build, Phase 56V assertions, sitemap membership, exports, and private-registry exclusion pass. Local content commit `4b9cdbf204439fabf7ee0f88e8fdb726941338f3` produced exact private runtime commit `be7a90b50e4aae94ba621260cf1c6057b33d0025`, deployed as owner-only Sites version 47 in deployment `appgdep_6a6f045fb3a481919e56fc7bfde5c76e`.
 
 ## Build Inventory
 
@@ -278,13 +278,15 @@ Phase 56T operationalizes those availability results as eight missing-document a
 
 Phase 56U executes the eight acquisition tickets against current public congressional submissions, recommendation pages, reading-room catalogs, agency plans, performance reports, training repositories, and budget material. Ten official near-matches, seven source profiles, eight Published documents and signals, one collection, Research Watch 025, one public update, and separate recovery and publication-review ledgers raise the verified candidate to 1,739 pages, 619 sources, 429 signals, 361 Published, 68 In Review, 49 updates, thirty-three briefings, thirty collections, 541 research documents, and 408 current Published-support sources. No exact target artifact is acquired. One DOE self-reported closure conflicts with GAO's Open status and remains explicitly unresolved. No directive-scope, implementation, closure, or entity-evidence state changes.
 
+Phase 56V decomposes all ten official near-matches into materially narrower second-order recovery chains. Twelve official supporting sources, ten Published documents and signals, one collection, Research Watch 026, one public update, and separate lead and publication-review ledgers raise the verified candidate to 1,773 pages, 631 sources, 439 signals, 371 Published, 68 In Review, 50 updates, thirty-four briefings, thirty-one collections, 551 research documents, and 420 current Published-support sources. One recommendation-specific VA supporting artifact is located, but no exact target, directive-scope, implementation, closure, or entity-evidence state changes.
+
 Verified results:
 
-- 1,739 generated site pages,
-- exact exports for 612 sources, 17 topics, 353 Published signals, 517 Published research records and collections, and 11 Published pathways,
-- all 353 Published signal routes included in the sitemap,
+- 1,773 generated site pages,
+- exact exports for 631 sources, 17 topics, 371 Published signals, 537 Published research records and collections, and 11 Published pathways,
+- all 371 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
-- all twenty-five Published briefing routes included in the sitemap and all seven held briefing routes excluded,
+- all twenty-seven Published briefing routes included in the sitemap and all seven held briefing routes excluded,
 - all six Published dependency-map routes included in the sitemap and the one held map route excluded,
 - all fifteen reader pathways rendered across 19 Atlas surfaces with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records,
 - all sixteen evidence-gap details included in the sitemap, including the comparison-denominator gap,
@@ -295,16 +297,16 @@ Verified results:
 - exactly 150 unique private candidates, 10 in each of 15 profiles, with all records assigned a first-pass triage state,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
-- all twenty-nine collection routes and 533 document records built under the publication and indexing contract,
-- the Phase 56U eleven-file ZIP archive and all prior archives verified with manifests and checksums.
+- all thirty-one collection routes and 551 document records built under the publication and indexing contract,
+- the Phase 56V thirteen-file ZIP archive and all prior archives verified with manifests and checksums.
 
-The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56u-custodian-exact-artifact-recovery-batch-one.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
+The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56v-second-order-recovery-leads-supporting-artifacts.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
 The local release work is preserved on `codex/phase51-content`. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
-The current hosting checkpoint is owner-only Sites version 46, serving the verified Phase 56U package. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
+The current hosting checkpoint is owner-only Sites version 47, serving the verified Phase 56V package from exact private runtime commit `be7a90b50e4aae94ba621260cf1c6057b33d0025`. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
 The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-22 to remain outside Cloudflare, with Google Workspace mail records active. Before any nameserver or DNS change, inventory and preserve every mail and verification record. Hosting-provider selection remains an explicit Phase 55 decision: Cloudflare Pages is the documented default, but another static host may be chosen if avoiding a nameserver migration is more important.
 

@@ -2,7 +2,7 @@
 
 Date: 2026-08-02
 
-Status: complete and release-verified; owner-only deployment pending
+Status: complete, release-verified, and owner-only deployed
 
 ## Goal
 
@@ -54,6 +54,15 @@ Every record adds either a new official locator or a materially narrower search 
 - Archive SHA-256: `D222C5457D125CECF4E2E5D6CA0C368D8079BC768D1D700C7CDDD07FAB7AD62A`.
 - Directive-scope, implementation, and closure changes: zero.
 - Entity evidence ledger: one Closed, twenty-one Partially Closed, and two Open.
+
+## Owner-only deployment receipt
+
+- Local content commit: `4b9cdbf204439fabf7ee0f88e8fdb726941338f3`.
+- Exact private runtime commit: `be7a90b50e4aae94ba621260cf1c6057b33d0025`.
+- Sites version: 47 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_682367dfdf208191bb424e0e4c95301f`).
+- Deployment: `appgdep_6a6f045fb3a481919e56fc7bfde5c76e` at `https://ftfn-analytics.jbumstead.chatgpt.site`.
+- Access verification: custom owner-only policy with one owner, no groups, no editors, and zero external visitors.
+- Public access, package freeze, Hostinger DNS, custom-domain attachment, public GitHub synchronization, and public launch remain unchanged.
 
 ## Interpretation boundaries
 
