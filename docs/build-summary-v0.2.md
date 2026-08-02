@@ -105,20 +105,22 @@ Phase 56R preserves HHS-04 and VA-02 as parent crosswalks while publishing four 
 
 Phase 56S turns the twenty-four Phase 56R recommendation records into a seventy-two-element public-document scope audit. Three elements are supported by located public records, twenty-three are partly supported, and forty-six remain unestablished. Three records have public candidate artifacts with unresolved GAO sufficiency, thirteen have only scope-adjacent public material, and eight have no separately public response artifact located in the bounded search. Twelve official source profiles, twenty-four Published research documents, twenty-four Published signals, Research Watch 023, two machine-readable ledgers, one collection, one update, and a verified twenty-seven-file archive raise the candidate to 1,656 pages, 604 sources, 397 signals, 329 Published, 68 In Review, 47 updates, thirty-one briefings, twenty-eight research collections, 509 research documents, and 393 current Published-support sources. No implementation or closure state changes, and the Phase 56F entity evidence ledger remains one Closed, twenty-one Partially Closed, and two Open. Content validation, complete source-endpoint metadata, Astro diagnostics, the production build, Phase 56K through Phase 56S assertions, release assertions, sitemap membership, exports, and private-registry exclusion pass. Local content commit `6d157e202faff214d4824d7bfecfb6b3b1b76b5c` produced exact private runtime commit `e1906494fce21f1c59b62dca8eecf9de5407d78d`, deployed successfully as owner-only Sites version 44 in deployment `appgdep_6a6eedb5d234819189721f5d2fae8b62` with no groups, no editors, and zero external visitors.
 
+Phase 56T converts the complete Phase 56S 3 / 13 / 8 split into twenty-four controlled decisions: eight missing-document acquisition tickets, thirteen adjacent-source directive matrices, and three public-candidate sufficiency matrices. All records name the target artifact, likely custodian, repositories, search terms, stop rule, reopening trigger, next action, and GAO acceptance state; all seventy-two directive elements carry locators and authority boundaries. Eight official repository-routing sources, twenty-four Published documents and signals, Research Watch 024, two machine-readable ledgers, one collection, one update, and a verified twenty-seven-file archive raise the candidate to 1,714 pages, 612 sources, 421 signals, 353 Published, 68 In Review, 48 updates, thirty-two briefings, twenty-nine research collections, 533 research documents, and 401 current Published-support sources. Source health reports 425 Manual Review and 187 Probe Ready endpoints with no incomplete endpoint declarations. Content validation, Astro diagnostics, the production build, Phase 56T assertions, release assertions, sitemap membership, exports, and private-registry exclusion pass. No implementation or closure state changes; the Phase 56F entity evidence ledger remains one Closed, twenty-one Partially Closed, and two Open. Owner-only deployment receipt is pending.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 1,656 | +1,474 |
-| Sources | 102 | 592 | +490 |
-| Signals | 18 | 373 | +355 |
-| Published signals | 3 | 305 | +302 |
+| Generated HTML pages | 182 | 1,714 | +1,532 |
+| Sources | 102 | 612 | +510 |
+| Signals | 18 | 421 | +403 |
+| Published signals | 3 | 353 | +350 |
 | In Review signals | 14 | 68 | +54 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 44 | +44 |
+| Public update entries | 0 | 48 | +48 |
 | Versioned JSON exports | 0 | 5 | +5 |
 
 Additional current records:
@@ -127,12 +129,12 @@ Additional current records:
 - 5 technologies,
 - 5 local systems,
 - 16 evidence gaps,
-- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56Q reviews,
+- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56T reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 28 briefings: 21 Published and 7 In Review,
-- 25 research collections with 439 document records,
+- 32 briefings: 25 Published and 7 In Review,
+- 29 research collections with 533 document records,
 - 15 reader pathways across 19 Atlas surfaces,
-- 41 official local captures plus 420 official-link records across the existing verified archives and the Phase 56Q twenty-five-file ZIP archive.
+- all prior verified archives plus the Phase 56T twenty-seven-file ZIP archive.
 
 ## What Is Built
 
@@ -268,13 +270,15 @@ Phase 56R preserves both held parents and publishes four recommendation-specific
 
 Phase 56S audits seventy-two directive elements across twenty-four recommendation records. Twelve new official sources, twenty-four Published documents and signals, one collection, Research Watch 023, one public update, and separate scope-audit and publication-review ledgers raise the verified candidate to 1,656 pages, 604 sources, 397 signals, 329 Published, 68 In Review, 47 public updates, thirty-one briefings, twenty-eight collections, 509 research documents, and 393 current Published-support sources. The audit records three supported, twenty-three partial, and forty-six not-established elements plus three candidate, thirteen adjacent, and eight missing-public-copy availability results. No implementation or closure state changes.
 
+Phase 56T operationalizes those availability results as eight missing-document acquisition tickets, thirteen adjacent-source directive matrices, and three page- or section-level public-candidate matrices. Eight repository-routing source profiles, twenty-four Published documents and signals, one collection, Research Watch 024, one public update, and separate queue and publication-review ledgers raise the verified candidate to 1,714 pages, 612 sources, 421 signals, 353 Published, 68 In Review, 48 public updates, thirty-two briefings, twenty-nine collections, 533 research documents, and 401 current Published-support sources. All seventy-two directive decisions include a locator and an explicit GAO-authority boundary. No implementation or closure state changes.
+
 Verified results:
 
-- 1,656 generated site pages,
-- exact exports for 604 sources, 17 topics, 329 Published signals, 492 Published research records and collections, and 11 Published pathways,
-- all 329 Published signal routes included in the sitemap,
+- 1,714 generated site pages,
+- exact exports for 612 sources, 17 topics, 353 Published signals, 517 Published research records and collections, and 11 Published pathways,
+- all 353 Published signal routes included in the sitemap,
 - all non-published signal routes excluded from the sitemap,
-- all twenty-four Published briefing routes included in the sitemap and all seven held briefing routes excluded,
+- all twenty-five Published briefing routes included in the sitemap and all seven held briefing routes excluded,
 - all six Published dependency-map routes included in the sitemap and the one held map route excluded,
 - all fifteen reader pathways rendered across 19 Atlas surfaces with current state, dependency stack, evidence limits, Published evidence, open gaps, and named next records,
 - all sixteen evidence-gap details included in the sitemap, including the comparison-denominator gap,
@@ -285,16 +289,16 @@ Verified results:
 - exactly 150 unique private candidates, 10 in each of 15 profiles, with all records assigned a first-pass triage state,
 - no private candidate IDs or registry-path references in generated output.
 - focused desktop/mobile checks on Source Monitor and Source Coverage, with no document overflow or browser-console warning/error.
-- all twenty-eight collection routes and 509 document records built under the publication and indexing contract,
-- the Phase 56S twenty-seven-file ZIP archive and all prior archives verified with manifests and checksums.
+- all twenty-nine collection routes and 533 document records built under the publication and indexing contract,
+- the Phase 56T twenty-seven-file ZIP archive and all prior archives verified with manifests and checksums.
 
-The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56s-recommendation-artifact-scope-audit-missing-document-acquisition.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
+The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56t-official-response-acquisition-artifact-sufficiency-queue.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
 The local release work is preserved on `codex/phase51-content`. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
-The current hosting checkpoint is owner-only Sites version 44, serving the verified Phase 56S package. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
+The current hosting checkpoint is owner-only Sites version 44, serving the verified Phase 56S package; the locally verified Phase 56T package is ready for the next owner-only deployment. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
 The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-22 to remain outside Cloudflare, with Google Workspace mail records active. Before any nameserver or DNS change, inventory and preserve every mail and verification record. Hosting-provider selection remains an explicit Phase 55 decision: Cloudflare Pages is the documented default, but another static host may be chosen if avoiding a nameserver migration is more important.
 
@@ -327,6 +331,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 - Phase 56Q uses twenty-one official product pages to publish twenty exact report-and-recommendation identities and hold two one-to-many mappings. HHS-04 and VA-02 preserve four distinct candidates; agency response, recommendation status, Phase 56F evidence state, implementation, closure, and operating outcome remain separate.
 - Phase 56R uses five separately public agency artifacts to deepen twenty-four recommendation records without treating plans, submissions, milestones, partial addressing, or public availability as implementation or closure.
 - Phase 56S uses twelve new official records and twenty-four recommendation-level search trails. Three candidate artifacts remain subject to GAO sufficiency, thirteen records are scope-adjacent, and eight exact response artifacts were not separately located; absence from the bounded public search does not establish nonexistence.
+- Phase 56T uses eight repository-routing sources and twenty-four controlled decisions. An acquisition ticket is not evidence that a document exists, a repository result is not the exact artifact, and a page- or section-level FTFN matrix is not GAO acceptance.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - The Project Baccara record now includes an official 4-1 County action and active final air permit; the fully executed MCP, condition compliance, service, construction, testing, occupancy, and operation remain unverified.
 - Toronto item `2026.SC33.9` is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted amendment, confirmed building permit, start, completion, or occupancy is yet available. A bounded recheck is scheduled for August 1.
@@ -377,6 +382,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-arc
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug gao-recommendation-identity-agency-response-crosswalk-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug gao-recommendation-implementation-artifact-milestone-ledger-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug gao-recommendation-artifact-scope-audit-missing-document-register-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026
 npm.cmd run check
 npm.cmd run build
 npm.cmd run verify:phase56o
@@ -384,7 +390,8 @@ npm.cmd run verify:phase56p
 npm.cmd run verify:phase56q
 npm.cmd run verify:phase56r
 npm.cmd run verify:phase56s
+npm.cmd run verify:phase56t
 npm.cmd run verify:release
 ```
 
-Expected output: 1,656 generated site pages, the prior verified research archives plus the Phase 56S twenty-seven-file archive, twenty-four recommendation audits, seventy-two directive-element checks, twenty-four Published Phase 56S signals, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and a passing v0.2 release assertion.
+Expected output: 1,714 generated site pages, the prior verified research archives plus the Phase 56T twenty-seven-file archive, eight acquisition tickets, thirteen adjacent-source matrices, three public-candidate matrices, seventy-two directive decisions, twenty-four Published Phase 56T signals, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and a passing v0.2 release assertion.

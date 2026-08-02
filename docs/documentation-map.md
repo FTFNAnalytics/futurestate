@@ -1561,6 +1561,7 @@ Purpose:
 - Record the completed Phase 56Q twenty-two-action recommendation-identity pass, twenty exact matches, two one-to-many holds, four preserved candidates, twenty-one official source profiles, twenty Published and two In Review signals, response and implementation boundaries, inherited HHS hold, unchanged evidence-state ledger, twenty-five-file archive, Research Watch 021, owner-only deployment receipt, and Phase 56R handoff.
 - Record the completed Phase 56R twenty-four-recommendation artifact-and-milestone pass, four recommendation-specific children, preserved parent crosswalks, five public agency artifacts, thirteen milestone monitors, twenty-four Published signals, implementation-state boundaries, inherited HHS hold, unchanged evidence-state ledger, twenty-seven-file archive, Research Watch 022, owner-only deployment receipt, and Phase 56S handoff.
 - Record the completed Phase 56S twenty-four-recommendation artifact-scope audit, seventy-two directive elements, twelve official source profiles, 3 / 13 / 8 availability split, twenty-four Published signals, unchanged implementation, closure, and evidence-state ledgers, twenty-seven-file archive, Research Watch 023, owner-only deployment receipt, and Phase 56T handoff.
+- Record the completed Phase 56T official-response acquisition and artifact-sufficiency queue, eight missing-document tickets, thirteen adjacent-source directive matrices, three public-candidate matrices, seventy-two locators, eight repository-routing sources, twenty-four Published signals, unchanged implementation, closure, and evidence-state ledgers, twenty-seven-file archive, Research Watch 024, owner-only deployment receipt, and Phase 56U handoff.
 - Record directional corpus targets without turning them into automatic publication quotas.
 - Keep Phase 55H, Phase 55R, Arizona wastewater, and Project Baccara monitors as dated inserts.
 
@@ -1594,6 +1595,7 @@ Primary file:
 - `docs/work-packages/phase-56q-gao-recommendation-identity-agency-response-resolution.md` for the twenty exact official identities, HHS-04 and VA-02 one-to-many holds, four preserved candidates, twenty-one product-page source profiles, twenty Published and two In Review signals, response, implementation, status, entity-ledger, closure, and outcome boundaries, identity and publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56R handoff
 - `docs/work-packages/phase-56r-recommendation-implementation-artifact-milestone-follow-through.md` for the twenty exact continuations, four recommendation-specific children, preserved parent crosswalks, five public agency artifact sources, thirteen milestone monitors, twenty-four Published signals, state and publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56S handoff
 - `docs/work-packages/phase-56s-recommendation-artifact-scope-audit-missing-document-acquisition.md` for the twenty-four recommendation audits, seventy-two directive-element decisions, twelve official source profiles, 3 / 13 / 8 availability split, scope and publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56T handoff
+- `docs/work-packages/phase-56t-official-response-acquisition-artifact-sufficiency-queue.md` for the eight acquisition tickets, thirteen adjacent-source directive matrices, three public-candidate matrices, seventy-two directive locators, eight repository-routing sources, queue and publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56U handoff
 
 Update when:
 
@@ -1625,6 +1627,7 @@ Update when:
 - the Phase 56Q identity decisions, one-to-many holds, agency responses, archive, deployment receipt, or Phase 56R artifact and milestone priorities change,
 - the Phase 56R parent/child identities, artifact visibility, normalized implementation stages, milestone states, archive, deployment receipt, or Phase 56S missing-document priorities change,
 - the Phase 56S directive-element checks, public-document availability classes, scope findings, archive, deployment receipt, or Phase 56T acquisition priorities change,
+- the Phase 56T acquisition tickets, directive matrices, locators, repository routes, stop rules, reopening triggers, archive, deployment receipt, or Phase 56U recovery priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

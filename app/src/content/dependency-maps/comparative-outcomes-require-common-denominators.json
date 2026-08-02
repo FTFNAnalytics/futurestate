@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: twenty-four recommendation records now carry seventy-two directive-element checks and explicit public-document availability findings, while FTFN scope, GAO acceptance, implementation, closure, entity evidence, outcome, period, denominator, and reopening boundaries remain attached.",
+  "summary": "A comparison and inference protocol: twenty-four recommendation records now carry controlled retrieval routes and directive-element matrices while source location, visible scope, GAO acceptance, implementation, closure, entity evidence, outcome, period, denominator, and reopening boundaries remain attached.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -300,7 +300,15 @@
     "source-56s-vha-enterprise-risk-management",
     "source-56s-va-fy2026-ehr-budget-submission",
     "source-56s-va-ehr-deployment-schedule-2026-2031",
-    "source-56s-va-acquisition-lifecycle-publication-status"
+    "source-56s-va-acquisition-lifecycle-publication-status",
+    "source-56t-doe-osti-repository",
+    "source-56t-doe-nepa-document-repository",
+    "source-56t-hhs-foia-library",
+    "source-56t-hhs-guidance-portal",
+    "source-56t-dot-ost-electronic-reading-room",
+    "source-56t-dot-chief-foia-officer-report-2026",
+    "source-56t-va-plans-budget-finances-performance",
+    "source-56t-va-budget-portal"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -530,7 +538,31 @@
     "signal-56s-va-ehr-full-integrated-master-schedule",
     "signal-56s-va-major-acquisition-oversight-framework-risks",
     "signal-56s-va-common-spend-savings-goals-tracking",
-    "signal-56s-va-dod-servicemember-transition-coordination"
+    "signal-56s-va-dod-servicemember-transition-coordination",
+    "signal-56t-doe-pit-production-lifecycle-cost-estimate",
+    "signal-56t-doe-complex-wide-waste-disposal-analysis",
+    "signal-56t-doe-strategic-petroleum-reserve-periodic-reviews",
+    "signal-56t-doe-nuclear-demonstration-project-oversight",
+    "signal-56t-doe-hanford-waste-treatment-pause-conditions",
+    "signal-56t-hhs-medicaid-offsets-medicare-hospital-payments",
+    "signal-56t-hhs-medicaid-oversight-national-risk-assessment",
+    "signal-56t-hhs-public-health-preparedness-capability-gaps",
+    "signal-56t-hhs-after-action-component-coordination",
+    "signal-56t-hhs-after-action-external-stakeholder-participation",
+    "signal-56t-dot-faa-mission-critical-skill-gap-data",
+    "signal-56t-dot-air-traffic-controller-workforce-processes",
+    "signal-56t-dot-discretionary-grant-department-wide-directive",
+    "signal-56t-dot-iija-grant-status-reporting",
+    "signal-56t-dot-grant-agreement-awardee-risk-assessment",
+    "signal-56t-dot-faa-drone-integration-strategy",
+    "signal-56t-dot-faa-information-centric-airspace-milestones",
+    "signal-56t-dot-automated-vehicle-initiative-plan",
+    "signal-56t-va-health-system-enterprise-risk-practices",
+    "signal-56t-va-ehr-full-lifecycle-cost-estimate",
+    "signal-56t-va-ehr-full-integrated-master-schedule",
+    "signal-56t-va-major-acquisition-oversight-framework-risks",
+    "signal-56t-va-common-spend-savings-goals-tracking",
+    "signal-56t-va-dod-servicemember-transition-coordination"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -745,6 +777,12 @@
       "label": "Seventy-two directive-element checks",
       "node_type": "Signal",
       "note": "Twenty-four records distinguish public candidates, adjacent material, missing public copies, and unresolved authoritative acceptance."
+    },
+    {
+      "id": "node-phase56t-acquisition-sufficiency-queue",
+      "label": "Twenty-four controlled acquisition or sufficiency decisions",
+      "node_type": "Signal",
+      "note": "Eight tickets, thirteen adjacent matrices, and three candidate matrices name retrieval and authority boundaries."
     }
   ],
   "links": [
@@ -1181,6 +1219,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "The shelf does not establish performance, readiness, safety, savings, value, ranking, score, or causation."
+    },
+    {
+      "from": "node-phase56t-acquisition-sufficiency-queue",
+      "to": "node-phase56s-artifact-scope-audit",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 56T operationalizes the Phase 56S availability and scope results."
+    },
+    {
+      "from": "node-phase56t-acquisition-sufficiency-queue",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Retrieval, scope, acceptance, implementation, closure, and outcome use different evidence tests."
+    },
+    {
+      "from": "node-phase56t-acquisition-sufficiency-queue",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "The queue does not establish performance, readiness, safety, savings, value, ranking, score, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -1217,7 +1276,8 @@
     "Twenty-four recommendation-specific records with artifact visibility, normalized implementation stage, named milestone, GAO review state, remaining gap, and continuation rule.",
     "Four child records resolving the HHS-04 and VA-02 holds while preserving both parents.",
     "Twenty-four recommendation-level public-document searches and seventy-two directive-element scope findings.",
-    "Separate availability results for three public candidates, thirteen adjacent records, and eight missing public copies."
+    "Separate availability results for three public candidates, thirteen adjacent records, and eight missing public copies.",
+    "Eight named missing-document acquisition tickets, thirteen adjacent-source directive matrices, and three public-candidate sufficiency matrices."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -1245,7 +1305,8 @@
     "That FTFN action keys are official GAO recommendation numbers or that a named priority action has been implemented or closed.",
     "That an agency response is implementation, a recommendation status is an entity evidence state, or recommendation closure is an operating outcome.",
     "That a public artifact, agency submission, milestone, or partial addressing constitutes implementation, closure, agency performance, or operating outcome.",
-    "That public availability or an FTFN scope finding constitutes GAO acceptance, implementation, closure, agency performance, or operating outcome."
+    "That public availability or an FTFN scope finding constitutes GAO acceptance, implementation, closure, agency performance, or operating outcome.",
+    "That a failed public search proves nonexistence or that an FTFN matrix constitutes GAO acceptance, implementation, closure, or operating outcome."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -1321,6 +1382,7 @@
     "Official GAO Recommendations Database identities, agency responses, and later status or operating-outcome records for Phase 56P actions.",
     "Implementation artifacts and later GAO status changes for the twenty exact matches, plus recommendation-specific child records for HHS-04 and VA-02.",
     "Official GAO sufficiency decisions, late-2026 milestone artifacts, exact implementation evidence, and attributable operating outcomes for the Phase 56R ledger.",
-    "Exact missing agency response documents, official sufficiency decisions, and attributable implementation and operating-outcome evidence for the Phase 56S register."
+    "Exact missing agency response documents, official sufficiency decisions, and attributable implementation and operating-outcome evidence for the Phase 56S register.",
+    "Exact artifacts from named custodians, successor directives, and authoritative GAO sufficiency decisions for the Phase 56T queue."
   ]
 }
