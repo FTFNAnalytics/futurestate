@@ -37,7 +37,7 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 1,714
+static pages generated: 1,739
 current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
@@ -157,6 +157,8 @@ What is now stable:
 - The verified Phase 56S contract is 1,656 pages, 604 sources, 397 signals, 329 Published signals, 68 In Review signals, 393 current Published-support sources, thirty-one briefings, twenty-eight research collections, 509 research documents, 47 updates, and a twenty-seven-file collection archive. No implementation or closure status changes, and the entity evidence ledger remains one Closed, twenty-one Partially Closed, and two Open. Local content commit `6d157e202faff214d4824d7bfecfb6b3b1b76b5c` maps to private runtime commit `e1906494fce21f1c59b62dca8eecf9de5407d78d`, deployed as owner-only Sites version 44 in deployment `appgdep_6a6eedb5d234819189721f5d2fae8b62`.
 - Phase 56T converts the Phase 56S availability split into eight missing-document acquisition tickets, thirteen adjacent-source directive matrices, and three page- or section-level public-candidate sufficiency matrices. Every record names a target artifact, likely custodian, repository route, search terms, stop rule, reopening trigger, next action, directive locators, and GAO acceptance state.
 - The verified Phase 56T contract is 1,714 pages, 612 sources, 421 signals, 353 Published signals, 68 In Review signals, 401 current Published-support sources, thirty-two briefings, twenty-nine research collections, 533 research documents, 48 updates, and a twenty-seven-file collection archive. No implementation or closure status changes, and the entity evidence ledger remains one Closed, twenty-one Partially Closed, and two Open. Local content commit `324fde7e98a8177d5174a245008c476520f58c15` maps to private runtime commit `080d49505f8c1a305c1418f29c894d2c43069dfd`, deployed as owner-only Sites version 45 in deployment `appgdep_6a6ef47d383881919292c6a8dd0b5e86`.
+- Phase 56U executes all eight exact-title and custodian-level recovery tickets against current official repositories. Ten official near-matches produce three recommendation-specific DOE status results and five current near-match results; no exact target artifact is acquired. One DOE self-reported closure conflicts with GAO's Open status and remains unresolved.
+- The verified Phase 56U contract is 1,739 pages, 619 sources, 429 signals, 361 Published signals, 68 In Review signals, 408 current Published-support sources, thirty-three briefings, thirty research collections, 541 research documents, 49 updates, and an eleven-file archive. No directive-scope, implementation, closure, or entity-evidence state changes.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
@@ -206,14 +208,14 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should preserve owner-only access and continue with Phase 56U custodian-level exact-artifact recovery. Phase 56T is complete and release-verified: run exact-title and custodian searches for the eight acquisition tickets across public congressional submissions, correspondence attachments, archived directives, component reading rooms, and program-management repositories. Publish only artifacts that materially narrow a directive-element gap; otherwise retain the bounded repository result and reopening trigger. Do not represent a public search as agency contact or a submitted FOIA request. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should preserve owner-only access and continue with Phase 56V second-order recovery leads and supporting-artifact decomposition. Phase 56U is complete and release-verified: convert each official near-match into named cited appendices, referenced plans, underlying program offices, archived versions, attachments, and implementation-instrument checks. Publish only a new locator, materially narrower result, or exact artifact; otherwise retain the stop rule and reopening trigger. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 421 signal records,
-- 612 source records,
+- 429 signal records,
+- 619 source records,
 - 17 topic records,
 - 5 local system profiles,
 - 19 organization records,
@@ -222,7 +224,7 @@ Current seed content includes:
 - 16 evidence gap records,
 - 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56T reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 29 research collections with 533 document records,
+- 30 research collections with 541 document records,
 - 15 reader pathways across 19 existing Atlas surfaces,
 - 48 public update-log entries.
 
@@ -397,16 +399,16 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 56U custodian-level exact-artifact recovery batch one
+Phase 56V second-order recovery leads and supporting-artifact decomposition
 ```
 
 Proceed by:
 
-- run exact-title and custodian-level searches for the eight Phase 56T acquisition tickets,
-- search public congressional submissions, correspondence attachments, archived directives, component reading rooms, and program-management repositories,
-- publish exact artifacts that materially narrow a directive-element gap or a bounded repository result when no public copy is acquired,
+- decompose the ten Phase 56U official near-matches into cited appendices, referenced plans, underlying program offices, archived versions, attachments, and implementation instruments,
+- test every second-order lead against the existing directive elements,
+- publish only a new locator, a materially narrower scope result, or an exact target artifact,
 - do not represent a public search as agency contact or a submitted FOIA request,
-- preserve HHS-04 and VA-02 as parent crosswalks and keep time-bounded DOE, DOT, HHS, and VA milestone checks as inserts rather than pauses,
+- preserve stop rules, reopening triggers, authority conflicts, and time-bounded milestone checks as inserts rather than pauses,
 - rerun the held HHS tracker check only when the official tracker changes,
 - continue compatible battery, manufacturer, and carrier outcome rails under their existing reopening rules,
 - tie every acquisition to its existing coverage ID and reopening rule,
@@ -497,16 +499,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 56T official-response acquisition and artifact-sufficiency decision queue.
+Phase 56U custodian-level exact-artifact recovery batch one.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 56T candidate: package 0.2.0-dev, 612 public sources, 150 first-pass-triaged private candidates, 421 signals, 17 topics, 48 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,714 generated site pages, 353 Published signals, 25 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 29 research collections, 533 research documents, all prior verified archives plus the Phase 56T 27-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 425 Manual Review and 187 Probe Ready records.
+v0.2 Phase 56U candidate: package 0.2.0-dev, 619 public sources, 150 first-pass-triaged private candidates, 429 signals, 17 topics, 49 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,739 generated site pages, 361 Published signals, 26 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 30 research collections, 541 research documents, all prior verified archives plus the Phase 56U 11-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 428 Manual Review and 191 Probe Ready records.
 
 Next decision gate:
-Preserve owner-only Sites access and begin Phase 56U. Run exact-title and custodian-level recovery for the eight Phase 56T acquisition tickets across public congressional submissions, correspondence attachments, archived directives, component reading rooms, and program-management repositories. Publish only exact artifacts that materially narrow a directive-element gap; otherwise retain the bounded result and reopening trigger. Do not represent a public search as agency contact or a submitted FOIA request. Preserve HHS-04 and VA-02 as parent crosswalks, keep agency assertions, FTFN matrices, and GAO acceptance separate, and treat all scheduled checks as dated inserts. Continue compatible battery, manufacturer, and carrier records in parallel. Do not infer causation or create rankings, composite scores, readiness scores, or savings claims. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve owner-only Sites access and begin Phase 56V. Convert the ten Phase 56U official near-matches into cited appendices, referenced plans, underlying program offices, archived versions, attachments, and implementation-instrument checks. Publish only a new locator, a materially narrower scope result, or an exact target artifact; otherwise retain the bounded result and reopening trigger. Preserve agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, and outcomes as separate. Treat scheduled checks as dated inserts and continue compatible content lanes in parallel. Do not infer causation or create rankings, composite scores, readiness scores, or savings claims. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

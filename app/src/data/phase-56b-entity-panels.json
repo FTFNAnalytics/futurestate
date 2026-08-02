@@ -1339,6 +1339,79 @@
         "acquisition_tickets": 2,
         "adjacent_matrices": 3,
         "candidate_matrices": 0
+      },
+      "phase_56u_exact_artifact_recovery": [
+        {
+          "action_key": "HHS-04-R1",
+          "official_identity": "GAO-24-106276 Recommendation 1",
+          "target_artifact": "Department-wide after-action program standard operating procedures",
+          "likely_custodian": "HHS Administration for Strategic Preparedness and Response and Office of the Secretary",
+          "result_class": "Current official near-match reviewed; exact target artifact not acquired",
+          "exact_target_artifact_acquired": false,
+          "near_matches": [
+            {
+              "source_id": "source-56u-hhs-all-hazards-plan-catalog",
+              "locator": "Resource description and official plan link",
+              "relation": "Department-wide emergency coordination plan",
+              "why_not_exact": "It is not the 2026 after-action SOP and does not demonstrate the SOP in use through a qualifying AAR."
+            }
+          ],
+          "search_surfaces": [
+            "Current GAO recommendation page",
+            "HHS FOIA Library",
+            "HHS Guidance Portal",
+            "ASPR TRACIE resource catalog",
+            "ASPR legal publications",
+            "HHS component reading rooms"
+          ],
+          "official_repository_result": "ASPR TRACIE's current catalog confirms the 2024 HHS All-Hazards Plan and department-wide response coordination. The cataloged plan predates the SOPs described by GAO in January 2026, and the linked PDF endpoint was unavailable during this pass. Neither the exact SOP nor an implementation after-action report was acquired.",
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Monitor the HHS FOIA Library, Guidance Portal, ASPR TRACIE, and GAO for the exact SOP or a response or exercise AAR that demonstrates component collaboration.",
+          "agency_status_conflict": false,
+          "gao_acceptance_state": "GAO classifies Recommendation 1 Open – Partially Addressed",
+          "signal_id": "signal-56u-hhs-after-action-component-coordination"
+        },
+        {
+          "action_key": "HHS-04-R2",
+          "official_identity": "GAO-24-106276 Recommendation 2",
+          "target_artifact": "External-stakeholder after-action participation standard operating procedures",
+          "likely_custodian": "HHS Administration for Strategic Preparedness and Response and Office of the Secretary",
+          "result_class": "Current official near-match reviewed; exact target artifact not acquired",
+          "exact_target_artifact_acquired": false,
+          "near_matches": [
+            {
+              "source_id": "source-56u-hhs-all-hazards-plan-catalog",
+              "locator": "Resource description and official plan link",
+              "relation": "Broad coordinated emergency-response framework",
+              "why_not_exact": "The catalog does not provide the 2026 stakeholder-participation SOP, participant-selection process, or an implementation AAR."
+            }
+          ],
+          "search_surfaces": [
+            "Current GAO recommendation page",
+            "HHS FOIA Library",
+            "HHS Guidance Portal",
+            "ASPR TRACIE resource catalog",
+            "ASPR legal publications",
+            "HHS component reading rooms"
+          ],
+          "official_repository_result": "The current ASPR TRACIE catalog provides a live official record for HHS's 2024 All-Hazards Plan, but it does not expose the later external-stakeholder after-action SOP described by GAO. No public exercise or response AAR was found that shows how relevant external stakeholders were selected and included.",
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Monitor the named HHS and ASPR repositories for the exact stakeholder SOP or a qualifying AAR; do not infer participation from a broad emergency plan.",
+          "agency_status_conflict": false,
+          "gao_acceptance_state": "GAO classifies Recommendation 2 Open – Partially Addressed",
+          "signal_id": "signal-56u-hhs-after-action-external-stakeholder-participation"
+        }
+      ],
+      "phase_56u_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56U records public recovery results and near-match boundaries but no exact target artifact, GAO acceptance, implementation, closure, or operating outcome.",
+        "acquisition_tickets_checked": 2,
+        "exact_target_artifacts_acquired": 0,
+        "near_matches_reviewed": 2,
+        "agency_status_conflicts": 0
       }
     },
     {
@@ -2514,5 +2587,6 @@
   "phase_56q_continuation_ledger": "phase-56q-recommendation-identity-crosswalk.json",
   "phase_56r_continuation_ledger": "phase-56r-implementation-artifact-milestone-ledger.json",
   "phase_56s_scope_audit_ledger": "phase-56s-artifact-scope-audit-missing-document-register.json",
-  "phase_56t_acquisition_sufficiency_ledger": "phase-56t-official-response-acquisition-artifact-sufficiency-queue.json"
+  "phase_56t_acquisition_sufficiency_ledger": "phase-56t-official-response-acquisition-artifact-sufficiency-queue.json",
+  "phase_56u_exact_artifact_recovery_ledger": "phase-56u-custodian-exact-artifact-recovery-batch-one.json"
 }

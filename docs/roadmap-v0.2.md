@@ -392,12 +392,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 56R | four recommendation-specific children, twenty-four artifact-and-milestone records, five public agency artifacts, Research Watch 022, a twenty-seven-file archive, and Sites version 43 |
 | Completed and owner-only deployed | Phase 56S | seventy-two directive-element checks, 3 / 13 / 8 availability split, Research Watch 023, and Sites version 44 |
 | Completed and owner-only deployed | Phase 56T | eight acquisition tickets, thirteen adjacent-source matrices, three public-candidate matrices, Research Watch 024, a verified 1,714-page contract, and Sites version 45 |
-| Next content gate | Phase 56U | run custodian-level exact-artifact recovery batch one for the eight acquisition tickets while other content lanes continue |
+| Completed and release-verified | Phase 56U | eight recovery searches, ten official near-matches, seven new source profiles, Research Watch 025, and a verified 1,739-page contract |
+| Next content gate | Phase 56V | decompose the official near-matches into second-order recovery leads and supporting-artifact checks while other content lanes continue |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete through Sites version 45 under a verified 1,714-page contract. Phase 56T's twenty-four controlled records contain eight missing-document acquisition tickets, thirteen adjacent-source directive matrices, and three page- or section-level public-candidate matrices. Eight official repository-routing sources, seventy-two directive locators, named custodians, search terms, stop rules, reopening triggers, and next actions deepen retrieval without changing implementation, closure, or the Phase 56F one Closed / twenty-one Partially Closed / two Open entity evidence ledger. The next non-public content gate is Phase 56U: a custodian-level exact-artifact recovery batch for the eight tickets. Phase 55H, Phase 55R, the inherited HHS tracker hold, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build remains owner-only and now passes a verified 1,739-page Phase 56U contract. Phase 56U ran all eight custodian-level recovery tickets, reviewed ten current official near-matches, added seven source profiles and eight bounded Published decisions, and found no exact target artifact in the searched public repositories. One DOE self-reported closure conflicts with GAO's current Open status; both are preserved as separate authority records. No directive scope, implementation, closure, or Phase 56F entity evidence state changed. The next non-public content gate is Phase 56V: decompose the near-matches into second-order recovery leads and supporting-artifact checks while continuing compatible content lanes. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1395,7 +1396,7 @@ Completion:
 - recorded no implementation or closure changes and preserved the one Closed, twenty-one Partially Closed, and two Open Phase 56F entity evidence ledger.
 - local content commit `324fde7e98a8177d5174a245008c476520f58c15` produced exact private runtime commit `080d49505f8c1a305c1418f29c894d2c43069dfd`, deployed successfully as owner-only Sites version 45 in deployment `appgdep_6a6ef47d383881919292c6a8dd0b5e86` with no groups, no editors, and zero external visitors.
 
-### Phase 56U: Custodian-Level Exact-Artifact Recovery Batch One - Next Content Gate
+### Phase 56U: Custodian-Level Exact-Artifact Recovery Batch One - Complete And Release-Verified
 
 Goal: attempt the first exact-artifact recovery pass for the eight Phase 56T acquisition tickets without pausing other content expansion.
 
@@ -1413,6 +1414,34 @@ Boundaries:
 - do not represent search terms or routing instructions as a submitted request;
 - do not infer support across missing directive elements;
 - do not pause battery, manufacturer, carrier, local-system, or other compatible content lanes while recovery continues.
+
+Completion:
+
+- ran all eight exact-title and custodian-level recovery tickets and reviewed ten current official near-matches;
+- added seven official source profiles, eight Published documents, eight Published signals, Research Watch 025, two machine-readable ledgers, one collection, one update, and a verified eleven-file archive;
+- recorded zero exact target artifacts acquired, three recommendation-specific agency status results, and five current official near-match results;
+- preserved one DOE agency-versus-GAO status conflict without converting either authority into inferred closure;
+- passed content validation, source health, the 1,739-page production build, Phase 56U assertions, release assertions, sitemap membership, exports, and private-registry exclusion;
+- recorded no directive-scope, implementation, or closure changes and preserved the one Closed, twenty-one Partially Closed, and two Open entity evidence ledger.
+
+### Phase 56V: Second-Order Recovery Leads And Supporting-Artifact Decomposition - Next Content Gate
+
+Goal: convert the Phase 56U official near-matches into named downstream recovery leads without waiting for dated milestones.
+
+Priorities:
+
+1. extract cited appendices, referenced plans, underlying program offices, archived versions, attachments, and implementation instruments from each near-match;
+2. test each downstream lead against the existing recommendation-specific directive elements;
+3. publish only a new locator, a materially narrower scope result, or an exact artifact;
+4. retain the Phase 56T stop rules and reopening triggers where the downstream lead does not close a gap;
+5. continue compatible battery, manufacturer, carrier, local-system, and other evidence lanes in parallel.
+
+Boundaries:
+
+- a second-order lead is not the target artifact;
+- a cited plan or program description cannot fill a directive gap by inference;
+- dated milestones remain monitors rather than dependencies for content expansion;
+- public access, DNS, release freeze, and public launch remain separate decisions.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
 
@@ -1526,7 +1555,7 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 56U with the eight Phase 56T acquisition tickets. Run exact-title and custodian-level recovery across public congressional submissions, recommendation correspondence and attachments, archived directives, component reading rooms, and program-management repositories. Publish exact artifacts that materially narrow a directive-element gap; otherwise record a bounded repository result and retain the reopening trigger. Preserve GAO acceptance, implementation, closure, entity evidence, and operating outcomes as separate, and do not pause other content expansion while recovery work or dated milestones mature.
+Begin Phase 56V by decomposing the ten Phase 56U official near-matches into named second-order leads: cited appendices, referenced plans, underlying program offices, archived versions, attachments, and implementation instruments. Test each lead against the existing directive elements, publish only a new locator or materially narrower result, and retain the stop rule and reopening trigger where the gap remains. Continue compatible content lanes without waiting for dated milestones.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 

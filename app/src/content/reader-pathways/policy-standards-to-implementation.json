@@ -43,7 +43,8 @@
     "Phase 56Q resolves twenty local actions to exact official GAO report-and-recommendation identities and holds two one-to-many mappings.",
     "Phase 56R publishes twenty-four recommendation-specific artifact and milestone records, including four children that resolve the two held parent mappings.",
     "Phase 56S audits seventy-two directive elements across twenty-four recommendations and distinguishes public candidate artifacts, scope-adjacent records, and missing public copies.",
-    "Phase 56T converts all twenty-four artifact-availability results into controlled acquisition tickets or directive-element sufficiency matrices."
+    "Phase 56T converts all twenty-four artifact-availability results into controlled acquisition tickets or directive-element sufficiency matrices.",
+    "Phase 56U completes eight custodian-level public recovery passes: no exact target artifact was acquired, ten official near-matches were bounded, and one agency-GAO status conflict was preserved."
   ],
   "primary_topics": [
     "Policy and Standards",
@@ -220,7 +221,15 @@
     "signal-56t-va-ehr-full-integrated-master-schedule",
     "signal-56t-va-major-acquisition-oversight-framework-risks",
     "signal-56t-va-common-spend-savings-goals-tracking",
-    "signal-56t-va-dod-servicemember-transition-coordination"
+    "signal-56t-va-dod-servicemember-transition-coordination",
+    "signal-56u-doe-pit-production-lifecycle-cost-estimate",
+    "signal-56u-doe-complex-wide-waste-disposal-analysis",
+    "signal-56u-doe-hanford-waste-treatment-pause-conditions",
+    "signal-56u-hhs-after-action-component-coordination",
+    "signal-56u-hhs-after-action-external-stakeholder-participation",
+    "signal-56u-dot-grant-agreement-awardee-risk-assessment",
+    "signal-56u-va-common-spend-savings-goals-tracking",
+    "signal-56u-va-dod-servicemember-transition-coordination"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -352,7 +361,14 @@
     "source-56t-dot-ost-electronic-reading-room",
     "source-56t-dot-chief-foia-officer-report-2026",
     "source-56t-va-plans-budget-finances-performance",
-    "source-56t-va-budget-portal"
+    "source-56t-va-budget-portal",
+    "source-56u-doe-fy2027-gao-ig-act",
+    "source-56u-hhs-all-hazards-plan-catalog",
+    "source-56u-dot-fy2026-annual-performance-plan",
+    "source-56u-dot-fy2025-agency-financial-report",
+    "source-56u-dot-grants-financial-assistance-office",
+    "source-56u-va-category-management-training",
+    "source-56u-dod-fy2026-dhra-budget"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -382,7 +398,8 @@
     "briefing-research-watch-021-gao-recommendation-identity-agency-response",
     "briefing-research-watch-022-recommendation-implementation-artifacts-milestones",
     "briefing-research-watch-023-recommendation-artifact-scope-audit",
-    "briefing-research-watch-024-official-response-acquisition-queue"
+    "briefing-research-watch-024-official-response-acquisition-queue",
+    "briefing-research-watch-025-exact-artifact-recovery-batch-one"
   ],
   "dependency_map_ids": [
     "dependency-map-post-quantum-standards-are-not-migration",
@@ -410,7 +427,8 @@
     "research-collection-gao-recommendation-identity-agency-response-crosswalk-2026",
     "research-collection-gao-recommendation-implementation-artifact-milestone-ledger-2026",
     "research-collection-gao-recommendation-artifact-scope-audit-missing-document-register-2026",
-    "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026"
+    "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+    "research-collection-gao-custodian-exact-artifact-recovery-batch-one-2026"
   ],
   "evidence_gap_ids": [
     "gap-009",
@@ -542,6 +560,11 @@
       "stage": "Phase 56T acquisition and sufficiency queue",
       "current_state": "Phase 56T converts all twenty-four artifact-availability results into controlled acquisition tickets or directive-element sufficiency matrices.",
       "boundary": "A repository route, source locator, or FTFN sufficiency matrix is not GAO acceptance, implementation, closure, or outcome evidence."
+    },
+    {
+      "stage": "Phase 56U exact-artifact recovery batch one",
+      "current_state": "Phase 56U completes eight custodian-level public recovery passes: no exact target artifact was acquired, ten official near-matches were bounded, and one agency-GAO status conflict was preserved.",
+      "boundary": "A failed public search, near-match, or agency self-assessment is not nonexistence, GAO acceptance, implementation, closure, or outcome evidence."
     }
   ],
   "evidence_limits": [
@@ -581,7 +604,9 @@
     "Not publicly located does not mean nonexistent, and a public candidate artifact is not necessarily sufficient.",
     "The 1 Closed / 21 Partially Closed / 2 Open Phase 56F entity evidence ledger does not change.",
     "A repository route, source locator, or FTFN sufficiency matrix is not GAO acceptance, implementation, closure, or outcome evidence.",
-    "Not publicly acquired does not establish nonexistence, withholding, or a failure to submit."
+    "Not publicly acquired does not establish nonexistence, withholding, or a failure to submit.",
+    "A failed public search, near-match, or agency self-assessment is not nonexistence, GAO acceptance, implementation, closure, or outcome evidence.",
+    "FTFN submitted no agency contact or FOIA request in this public-repository pass."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
@@ -628,6 +653,7 @@
     "Recommendation-specific implementation artifacts, GAO status changes, and attributable operating outcomes for the Phase 56Q crosswalk.",
     "Later GAO decisions on submitted artifacts, late-2026 milestone deliverables, exact implementation evidence, and attributable operating outcomes.",
     "Exact agency response artifacts, official GAO sufficiency decisions, and later attributable implementation and operating-outcome evidence.",
-    "Exact artifacts released by named custodians, successor directives, and explicit GAO acceptance or remaining-deficiency decisions."
+    "Exact artifacts released by named custodians, successor directives, and explicit GAO acceptance or remaining-deficiency decisions.",
+    "Exact public artifacts, recommendation correspondence attachments, or explicit GAO acceptance and remaining-deficiency decisions for the eight Phase 56U tickets."
   ]
 }

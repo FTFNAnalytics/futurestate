@@ -41,7 +41,8 @@
     "Phase 56Q attaches exact official recommendation identities and response histories to all five DOE actions.",
     "Phase 56R connects all five DOE recommendations to the current artifact state, milestone, official review state, and remaining gap.",
     "Phase 56S gives all five DOE recommendation records an element-level scope audit and records two adjacent public sources plus three unresolved public-document gaps.",
-    "Phase 56T assigns DOE missing artifacts to named custodians and repositories while preserving two adjacent-source matrices."
+    "Phase 56T assigns DOE missing artifacts to named custodians and repositories while preserving two adjacent-source matrices.",
+    "Phase 56U adds recommendation-specific DOE congressional status for three tickets while retaining the exact life-cycle estimate, disposal analyses, and Hanford pause package as unacquired."
   ],
   "primary_topics": [
     "Energy",
@@ -119,7 +120,10 @@
     "signal-56t-doe-complex-wide-waste-disposal-analysis",
     "signal-56t-doe-strategic-petroleum-reserve-periodic-reviews",
     "signal-56t-doe-nuclear-demonstration-project-oversight",
-    "signal-56t-doe-hanford-waste-treatment-pause-conditions"
+    "signal-56t-doe-hanford-waste-treatment-pause-conditions",
+    "signal-56u-doe-pit-production-lifecycle-cost-estimate",
+    "signal-56u-doe-complex-wide-waste-disposal-analysis",
+    "signal-56u-doe-hanford-waste-treatment-pause-conditions"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -198,7 +202,8 @@
     "source-56s-doe-spr-long-term-strategic-review-2016",
     "source-56s-oced-independent-assessments-guidance-2024",
     "source-56t-doe-osti-repository",
-    "source-56t-doe-nepa-document-repository"
+    "source-56t-doe-nepa-document-repository",
+    "source-56u-doe-fy2027-gao-ig-act"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -226,7 +231,8 @@
     "briefing-research-watch-021-gao-recommendation-identity-agency-response",
     "briefing-research-watch-022-recommendation-implementation-artifacts-milestones",
     "briefing-research-watch-023-recommendation-artifact-scope-audit",
-    "briefing-research-watch-024-official-response-acquisition-queue"
+    "briefing-research-watch-024-official-response-acquisition-queue",
+    "briefing-research-watch-025-exact-artifact-recovery-batch-one"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -253,7 +259,8 @@
     "research-collection-gao-recommendation-identity-agency-response-crosswalk-2026",
     "research-collection-gao-recommendation-implementation-artifact-milestone-ledger-2026",
     "research-collection-gao-recommendation-artifact-scope-audit-missing-document-register-2026",
-    "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026"
+    "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+    "research-collection-gao-custodian-exact-artifact-recovery-batch-one-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -371,6 +378,11 @@
       "stage": "Phase 56T acquisition and sufficiency queue",
       "current_state": "Phase 56T assigns DOE missing artifacts to named custodians and repositories while preserving two adjacent-source matrices.",
       "boundary": "OSTI and NEPA repositories are retrieval rails; they are not substitutes for recommendation-specific estimates, analyses, reviews, or decisions."
+    },
+    {
+      "stage": "Phase 56U exact-artifact recovery batch one",
+      "current_state": "Phase 56U adds recommendation-specific DOE congressional status for three tickets while retaining the exact life-cycle estimate, disposal analyses, and Hanford pause package as unacquired.",
+      "boundary": "DOE's status table is a first-party agency statement; where it conflicts with GAO, FTFN retains GAO's current recommendation status."
     }
   ],
   "evidence_limits": [
@@ -407,7 +419,9 @@
     "Not publicly located does not mean nonexistent, and a public candidate artifact is not necessarily sufficient.",
     "The 1 Closed / 21 Partially Closed / 2 Open Phase 56F entity evidence ledger does not change.",
     "OSTI and NEPA repositories are retrieval rails; they are not substitutes for recommendation-specific estimates, analyses, reviews, or decisions.",
-    "Not publicly acquired does not establish nonexistence, withholding, or a failure to submit."
+    "Not publicly acquired does not establish nonexistence, withholding, or a failure to submit.",
+    "DOE's status table is a first-party agency statement; where it conflicts with GAO, FTFN retains GAO's current recommendation status.",
+    "FTFN submitted no agency contact or FOIA request in this public-repository pass."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -443,6 +457,7 @@
     "Recommendation-specific implementation artifacts, GAO status changes, and attributable operating outcomes for the Phase 56Q crosswalk.",
     "Later GAO decisions on submitted artifacts, late-2026 milestone deliverables, exact implementation evidence, and attributable operating outcomes.",
     "Exact agency response artifacts, official GAO sufficiency decisions, and later attributable implementation and operating-outcome evidence.",
-    "Exact artifacts released by named custodians, successor directives, and explicit GAO acceptance or remaining-deficiency decisions."
+    "Exact artifacts released by named custodians, successor directives, and explicit GAO acceptance or remaining-deficiency decisions.",
+    "Exact public artifacts, recommendation correspondence attachments, or explicit GAO acceptance and remaining-deficiency decisions for the eight Phase 56U tickets."
   ]
 }

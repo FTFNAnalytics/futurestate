@@ -1022,6 +1022,79 @@
         "acquisition_tickets": 2,
         "adjacent_matrices": 3,
         "candidate_matrices": 1
+      },
+      "phase_56u_exact_artifact_recovery": [
+        {
+          "action_key": "VA-04",
+          "official_identity": "GAO-25-107398 Recommendation 4",
+          "target_artifact": "VA 180-day response letter",
+          "likely_custodian": "VA Office of Acquisition, Logistics, and Construction",
+          "result_class": "Current official near-match reviewed; exact target artifact not acquired",
+          "exact_target_artifact_acquired": false,
+          "near_matches": [
+            {
+              "source_id": "source-56u-va-category-management-training",
+              "locator": "FCL-VA 0302, VA Category Management",
+              "relation": "Current role-oriented category-management training",
+              "why_not_exact": "The course description does not contain the 180-day response, savings goals, baselines, methods, or tracked progress."
+            }
+          ],
+          "search_surfaces": [
+            "Current GAO recommendation page",
+            "VA Publications",
+            "VA plans and performance portal",
+            "VA budget portal",
+            "VA Acquisition Academy",
+            "VA acquisition and logistics policy pages"
+          ],
+          "official_repository_result": "VA's Acquisition Academy now publicly describes category-management training, including demand and vendor management. The current GAO page still says it will update after VA provides its expected spring 2026 180-day letter. No letter, category-specific savings goals, baselines, method, or progress register was acquired.",
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Monitor GAO and VA acquisition surfaces for the 180-day letter or a goal register with baselines, methods, ownership, and progress reporting.",
+          "agency_status_conflict": false,
+          "gao_acceptance_state": "Response pending on official record",
+          "signal_id": "signal-56u-va-common-spend-savings-goals-tracking"
+        },
+        {
+          "action_key": "VA-05",
+          "official_identity": "GAO-24-106189 Recommendation 5",
+          "target_artifact": "Joint Transition Task Force draft effectiveness assessment",
+          "likely_custodian": "VA-DOD Joint Executive Committee and VA Office of Enterprise Integration",
+          "result_class": "Current official near-match reviewed; exact target artifact not acquired",
+          "exact_target_artifact_acquired": false,
+          "near_matches": [
+            {
+              "source_id": "source-56u-dod-fy2026-dhra-budget",
+              "locator": "Military-Civilian Transition Office, pages 20-21 and 70-73",
+              "relation": "Current transition governance, evaluation, and performance architecture",
+              "why_not_exact": "It does not contain the task force draft, gap or overlap findings, or recommended changes."
+            }
+          ],
+          "search_surfaces": [
+            "Current GAO recommendation page",
+            "VA plans and performance portal",
+            "VA publications",
+            "DOD Comptroller budget materials",
+            "DOD transition-program records",
+            "VA-DOD Joint Executive Committee public records"
+          ],
+          "official_repository_result": "DOD's FY 2026 Defense Human Resources Activity budget identifies transition-program governance, evaluation, assessment, metrics, and VA-DOD Joint Executive Committee coordination. It does not publish the Joint Transition Task Force draft assessment, its identified gaps or overlap, or recommended changes. GAO continues to record planned completion in December 2026.",
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Recheck at the December 2026 milestone or when the Joint Executive Committee, DOD, VA, or GAO publishes the assessment or an explicit status update.",
+          "agency_status_conflict": false,
+          "gao_acceptance_state": "Draft not accepted as implementation",
+          "signal_id": "signal-56u-va-dod-servicemember-transition-coordination"
+        }
+      ],
+      "phase_56u_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56U records public recovery results and near-match boundaries but no exact target artifact, GAO acceptance, implementation, closure, or operating outcome.",
+        "acquisition_tickets_checked": 2,
+        "exact_target_artifacts_acquired": 0,
+        "near_matches_reviewed": 2,
+        "agency_status_conflicts": 0
       }
     },
     {
@@ -1915,6 +1988,110 @@
         "acquisition_tickets": 3,
         "adjacent_matrices": 2,
         "candidate_matrices": 0
+      },
+      "phase_56u_exact_artifact_recovery": [
+        {
+          "action_key": "DOE-01",
+          "official_identity": "GAO-23-104661 Recommendation 1",
+          "target_artifact": "Life-cycle cost estimate",
+          "likely_custodian": "NNSA Office of Plutonium Modernization",
+          "result_class": "Recommendation-specific agency status located; exact target artifact not acquired",
+          "exact_target_artifact_acquired": false,
+          "near_matches": [
+            {
+              "source_id": "source-56u-doe-fy2027-gao-ig-act",
+              "locator": "Appendix 1, page 9",
+              "relation": "Recommendation-specific DOE status and estimated completion date",
+              "why_not_exact": "The table does not contain the life-cycle estimate, its GAO-aligned method, or uncertainty analysis."
+            }
+          ],
+          "search_surfaces": [
+            "Current GAO recommendation page",
+            "DOE FY 2027 GAO-IG Act congressional submission",
+            "DOE OSTI",
+            "DOE NEPA repository",
+            "NNSA program and budget records",
+            "DOE and NNSA public reading-room surfaces"
+          ],
+          "official_repository_result": "DOE's FY 2027 congressional submission lists Recommendation 1 as open, corrective actions ongoing, and an estimated completion date of September 2026 as of October 1, 2025. GAO's newer April 2026 update instead records a December 2026 estimate. Neither surface publishes the life-cycle cost estimate.",
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Recheck after the current GAO-recorded December 2026 estimate milestone or when NNSA publishes a recommendation-specific estimate or attachment.",
+          "agency_status_conflict": false,
+          "gao_acceptance_state": "Not submitted",
+          "signal_id": "signal-56u-doe-pit-production-lifecycle-cost-estimate"
+        },
+        {
+          "action_key": "DOE-02",
+          "official_identity": "GAO-25-107109 Recommendation 3",
+          "target_artifact": "April 2026 180-day letter and cited analyses",
+          "likely_custodian": "DOE Office of Environmental Management",
+          "result_class": "Recommendation-specific agency status located; exact target artifact not acquired",
+          "exact_target_artifact_acquired": false,
+          "near_matches": [
+            {
+              "source_id": "source-56u-doe-fy2027-gao-ig-act",
+              "locator": "Appendix 1, page 15",
+              "relation": "Recommendation-specific DOE status and April 2026 estimated completion date",
+              "why_not_exact": "The table does not reproduce the 180-day letter, complex-wide analysis, alternatives model, or optimal-strategy basis."
+            }
+          ],
+          "search_surfaces": [
+            "Current GAO recommendation page",
+            "DOE FY 2027 GAO-IG Act congressional submission",
+            "DOE Environmental Management reports",
+            "DOE OSTI",
+            "DOE NEPA repository",
+            "DOE public reading-room surfaces"
+          ],
+          "official_repository_result": "GAO's current page describes DOE's April 2026 180-day response, including partial concurrence and DOE's assertion that site-level analyses make the recommendation complete. DOE's congressional status table records the recommendation as open and corrective actions ongoing. The exact letter and cited analyses remain absent from the bounded public surfaces.",
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Monitor DOE Environmental Management and GAO for a public copy or attachment containing the April 2026 letter and its cited analyses.",
+          "agency_status_conflict": false,
+          "gao_acceptance_state": "GAO says submitted material is incomplete",
+          "signal_id": "signal-56u-doe-complex-wide-waste-disposal-analysis"
+        },
+        {
+          "action_key": "DOE-05",
+          "official_identity": "GAO-24-106989 Recommendation 3",
+          "target_artifact": "Pause decision and prerequisite analysis",
+          "likely_custodian": "DOE Office of Environmental Management, Hanford Site",
+          "result_class": "Recommendation-specific agency status located; exact target artifact not acquired",
+          "exact_target_artifact_acquired": false,
+          "near_matches": [
+            {
+              "source_id": "source-56u-doe-fy2027-gao-ig-act",
+              "locator": "Appendix 1, page 13",
+              "relation": "Recommendation-specific DOE closure assertion",
+              "why_not_exact": "The table does not provide a pause decision, prerequisite package, independent analysis, or GAO acceptance."
+            }
+          ],
+          "search_surfaces": [
+            "Current GAO recommendation page",
+            "DOE FY 2027 GAO-IG Act congressional submission",
+            "Hanford project records",
+            "DOE Environmental Management reports",
+            "DOE NEPA repository",
+            "DOE public reading-room surfaces"
+          ],
+          "official_repository_result": "DOE's FY 2027 congressional submission labels Recommendation 3 closed and says corrective actions were completed in January 2025. GAO's current page says the recommendation remains open and DOE had taken no action as of February 2026. The underlying pause decision and prerequisite analysis were not acquired, so FTFN retains GAO's status and records the agency-GAO conflict without resolving it.",
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Reopen on a public pause decision, prerequisite package, independent analysis, or explicit GAO status change; retain the agency-GAO disagreement meanwhile.",
+          "agency_status_conflict": true,
+          "gao_acceptance_state": "Agency nonconcurrence; no conforming action",
+          "signal_id": "signal-56u-doe-hanford-waste-treatment-pause-conditions"
+        }
+      ],
+      "phase_56u_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56U records public recovery results and near-match boundaries but no exact target artifact, GAO acceptance, implementation, closure, or operating outcome.",
+        "acquisition_tickets_checked": 3,
+        "exact_target_artifacts_acquired": 0,
+        "near_matches_reviewed": 3,
+        "agency_status_conflicts": 1
       }
     },
     {
@@ -3236,6 +3413,60 @@
         "acquisition_tickets": 1,
         "adjacent_matrices": 5,
         "candidate_matrices": 2
+      },
+      "phase_56u_exact_artifact_recovery": [
+        {
+          "action_key": "DOT-05",
+          "official_identity": "GAO-25-107166 Recommendation 2",
+          "target_artifact": "January 2026 enterprise-risk guidance and planned fiscal-year 2026 risk emphasis",
+          "likely_custodian": "DOT Office of the Secretary, Office of Grants and Financial Assistance",
+          "result_class": "Current official near-match reviewed; exact target artifact not acquired",
+          "exact_target_artifact_acquired": false,
+          "near_matches": [
+            {
+              "source_id": "source-56u-dot-fy2026-annual-performance-plan",
+              "locator": "Major Management Priorities and Challenges, page 10",
+              "relation": "Enterprise Risk Profile informs FY 2026 management challenges",
+              "why_not_exact": "It does not contain the January guidance or grant-agreement risk method."
+            },
+            {
+              "source_id": "source-56u-dot-fy2025-agency-financial-report",
+              "locator": "Enterprise Risk Management section",
+              "relation": "Department-wide ERM cycle and selected public risks",
+              "why_not_exact": "It omits the recommendation-specific guidance and full risk profiles."
+            },
+            {
+              "source_id": "source-56u-dot-grants-financial-assistance-office",
+              "locator": "Office overview",
+              "relation": "Named department-wide grants policy custodian",
+              "why_not_exact": "The page describes authority, not the January 2026 guidance or implementation evidence."
+            }
+          ],
+          "search_surfaces": [
+            "Current GAO recommendation page",
+            "OST Electronic Reading Room",
+            "DOT FY 2026 Annual Performance Plan",
+            "DOT FY 2025 Agency Financial Report",
+            "DOT grants policy pages",
+            "DOT component policy libraries"
+          ],
+          "official_repository_result": "DOT's FY 2026 performance plan names grant stewardship and grantee capacity among department-wide challenges, its FY 2025 financial report describes the enterprise-risk cycle, and the grants office page identifies the policy custodian. None publishes the January 2026 ERM guidance, operating-administration risk profiles, or the full grant-agreement risk identification, rating, monitoring, and response method.",
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Monitor OST, the grants office, and GAO for the January 2026 guidance, an OA risk-profile attachment, or a public enterprise assessment covering grant-agreement risks.",
+          "agency_status_conflict": false,
+          "gao_acceptance_state": "GAO says submitted actions are incomplete",
+          "signal_id": "signal-56u-dot-grant-agreement-awardee-risk-assessment"
+        }
+      ],
+      "phase_56u_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56U records public recovery results and near-match boundaries but no exact target artifact, GAO acceptance, implementation, closure, or operating outcome.",
+        "acquisition_tickets_checked": 1,
+        "exact_target_artifacts_acquired": 0,
+        "near_matches_reviewed": 3,
+        "agency_status_conflicts": 0
       }
     },
     {
@@ -3778,5 +4009,6 @@
   "phase_56q_continuation_ledger": "phase-56q-recommendation-identity-crosswalk.json",
   "phase_56r_continuation_ledger": "phase-56r-implementation-artifact-milestone-ledger.json",
   "phase_56s_scope_audit_ledger": "phase-56s-artifact-scope-audit-missing-document-register.json",
-  "phase_56t_acquisition_sufficiency_ledger": "phase-56t-official-response-acquisition-artifact-sufficiency-queue.json"
+  "phase_56t_acquisition_sufficiency_ledger": "phase-56t-official-response-acquisition-artifact-sufficiency-queue.json",
+  "phase_56u_exact_artifact_recovery_ledger": "phase-56u-custodian-exact-artifact-recovery-batch-one.json"
 }
