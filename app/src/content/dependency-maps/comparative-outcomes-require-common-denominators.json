@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 56W adds six authoritative records and holds four unchanged target searches while exact artifact, agency status, GAO acceptance, implementation, closure, waste stream, project, program, period, outcome, and denominator remain separate.",
+  "summary": "A comparison and inference protocol: Phase 56X adds thirteen agency-, site-, waste-stream-, and project-specific records while evidence stage, period, unit, method, denominator, acceptance, closure, and outcome remain separate.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -334,7 +334,13 @@
     "source-56w-hanford-hlw-progress-july2026",
     "source-56w-gao-iija-ira-funding-status-2026",
     "source-56w-gao-hanford-law-grout-plans-2026",
-    "source-56w-gao-em-aging-infrastructure-2026"
+    "source-56w-gao-em-aging-infrastructure-2026",
+    "source-56x-gao-iija-ira-agency-status-2026",
+    "source-56x-gao-em-site-infrastructure-2026",
+    "source-56x-gao-nnsa-major-projects-2026",
+    "source-56x-hanford-vitrification-100k-2026",
+    "source-56x-hanford-first-ilaw-disposal-2026",
+    "source-56x-hanford-emf-concentrate-grout-2026"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -612,7 +618,20 @@
     "signal-56w-hanford-dfhlw-decision-and-progress-record",
     "signal-56w-infrastructure-funding-review-status",
     "signal-56w-hanford-low-activity-waste-grout-plan",
-    "signal-56w-doe-em-aging-infrastructure-constraint"
+    "signal-56w-doe-em-aging-infrastructure-constraint",
+    "signal-56x-epa-infrastructure-review-denominator",
+    "signal-56x-interior-infrastructure-review-denominator",
+    "signal-56x-ntia-infrastructure-review-denominator",
+    "signal-56x-dot-infrastructure-review-denominator",
+    "signal-56x-hanford-vitrification-commissioning-output",
+    "signal-56x-hanford-first-ilaw-disposal-use-record",
+    "signal-56x-hanford-emf-concentrate-grout-transfer",
+    "signal-56x-em-hanford-maintenance-denominator",
+    "signal-56x-em-savannah-river-maintenance-denominator",
+    "signal-56x-em-idaho-maintenance-denominator",
+    "signal-56x-nnsa-lap4-baseline-change-series",
+    "signal-56x-nnsa-srppf-subproject-baseline-series",
+    "signal-56x-nnsa-major-project-portfolio-performance"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -851,6 +870,12 @@
       "label": "Six Published records and four held searches",
       "node_type": "Signal",
       "note": "Seven new Tier 1 sources support six Published results; four exact-artifact searches remain In Review and zero exact targets are acquired."
+    },
+    {
+      "id": "node-phase56x-implementation-to-outcome",
+      "label": "Thirteen bounded implementation-to-outcome records",
+      "node_type": "Signal",
+      "note": "Four award-review, three operating-output, three site-denominator, and three project-baseline records add stable follow-through identities without changing closure."
     }
   ],
   "links": [
@@ -1371,6 +1396,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "No Phase 56W record supports inferred readiness, safety, realized savings, value, ranking, composite score, or causation."
+    },
+    {
+      "from": "node-phase56x-implementation-to-outcome",
+      "to": "node-phase56w-named-record-retrieval",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 56X decomposes the aggregate and planned evidence exposed in Phase 56W."
+    },
+    {
+      "from": "node-phase56x-implementation-to-outcome",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Agencies, projects, sites, waste streams, evidence stages, periods, units, and methods differ."
+    },
+    {
+      "from": "node-phase56x-implementation-to-outcome",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "The records do not establish rankings, composite scores, readiness, realized savings, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -1411,7 +1457,8 @@
     "Eight named missing-document acquisition tickets, thirteen adjacent-source directive matrices, and three public-candidate sufficiency matrices.",
     "Eight bounded custodian-level public searches, ten reviewed official near-matches, and one explicitly unresolved agency-GAO status conflict.",
     "Ten bounded second-order chains across twelve official sources, including one recommendation-specific VA supporting artifact.",
-    "Six current authoritative additions and four explicit publication holds across seven named recovery targets and three compatible cross-lane records."
+    "Six current authoritative additions and four explicit publication holds across seven named recovery targets and three compatible cross-lane records.",
+    "Thirteen bounded agency, site, waste-stream, and project follow-through records with explicit evidence stages and denominators."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -1523,6 +1570,7 @@
     "Exact artifacts from named custodians, successor directives, and authoritative GAO sufficiency decisions for the Phase 56T queue.",
     "The eight exact target artifacts, their public attachments, or authoritative GAO sufficiency decisions triggered by later agency submissions.",
     "The eight exact target artifacts plus the newly named JEC, DOT system, DOE analysis, NNSA estimate, Hanford decision, and HHS AAR records.",
-    "Exact JEC, DOT, DOE, NNSA, Hanford, and HHS artifacts plus agency-specific operating and realized-outcome records for the cross-lane additions."
+    "Exact JEC, DOT, DOE, NNSA, Hanford, and HHS artifacts plus agency-specific operating and realized-outcome records for the cross-lane additions.",
+    "Later accepted operation and realized-outcome evidence using the same Phase 56X identities, periods, units, methods, and denominators."
   ]
 }

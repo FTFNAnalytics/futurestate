@@ -113,6 +113,8 @@ Phase 56V decomposes all ten Phase 56U official near-matches into named downstre
 
 Phase 56W reviews seven named recovery targets and three compatible cross-lane records. Seven Tier 1 source profiles support six Published research documents and signals, four In Review document holds, Research Watch 027, two machine-readable ledgers, one collection, one update, and a verified thirteen-file archive. NNSA project-cost detail, GAO's VA inventory-versus-effectiveness distinction, and Hanford decision-and-progress records materially narrow three named lanes without yielding an exact target. Current GAO reviews add four-agency infrastructure-funding status, a bounded Hanford low-activity-waste grouting plan, and quantified DOE Environmental Management infrastructure constraints. The candidate reaches 1,798 pages, 638 sources, 445 signals, 377 Published, 68 In Review, 51 updates, thirty-five briefings, thirty-two research collections, 561 research documents, and 427 current Published-support sources. Source health reports 436 Manual Review and 202 Probe Ready endpoints. No exact target artifact, directive-scope change, implementation change, closure change, agency contact, or FOIA request is recorded. Content validation, Astro diagnostics, the clean production rebuild, Phase 56W assertions, release assertions, sitemap membership, exports, and private-registry exclusion pass. Local content commit `487a57c3fd9a9cd01a99533e637b05ad4efda745` produced exact private runtime commit `70f52b01e9475f6d1755d1ffb8dd57948848573c`, deployed as owner-only Sites version 49 in deployment `appgdep_6a6f0df0e5188191a6aee3d2a12affab` after a OneDrive placeholder check triggered a clean route-tree regeneration.
 
+Phase 56X decomposes aggregate and planned evidence into thirteen agency-, site-, waste-stream-, project-, and stage-specific records. Six Tier 1 sources support four agency funding-review denominators, three Hanford operating-output records, three DOE Environmental Management site-maintenance records, three NNSA project-baseline records, Research Watch 028, two machine-readable ledgers, one collection, one update, and a verified sixteen-file archive. The batch separates EPA, Interior, NTIA, and DOT review units; distinguishes Hanford vitrified low-activity waste, secondary EMF concentrate, the pending 22-tank grout plan, and high-level waste; and preserves definition-phase ranges, execution baselines, placeholders, fabrication inputs, completion, acceptance, and production output as separate NNSA states. The candidate reaches 1,832 pages, 644 sources, 458 signals, 390 Published, 68 In Review, 52 updates, thirty-six briefings, thirty-three research collections, 574 research documents, and 433 current Published-support sources. Source health reports 439 Manual Review and 205 Probe Ready endpoints. No exact target artifact or trigger, directive-scope change, implementation change, closure change, agency contact, or FOIA request is recorded. Content validation, Astro diagnostics, the production build, Phase 56X assertions, release assertions, sitemap membership, exports, and private-registry exclusion pass. Owner-only Sites deployment remains the final Phase 56X release step.
+
 ## Build Inventory
 
 The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
@@ -135,12 +137,12 @@ Additional current records:
 - 5 technologies,
 - 5 local systems,
 - 16 evidence gaps,
-- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56W reviews,
+- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56X reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
 - 34 briefings: 27 Published and 7 In Review,
 - 31 research collections with 551 document records,
 - 15 reader pathways across 19 Atlas surfaces,
-- all prior verified archives plus the Phase 56W thirteen-file ZIP archive.
+- all prior verified archives plus the Phase 56X sixteen-file ZIP archive.
 
 ## What Is Built
 
@@ -284,6 +286,8 @@ Phase 56V decomposes all ten official near-matches into materially narrower seco
 
 Phase 56W tests seven named recovery targets and adds three compatible cross-lane records. Seven official sources, six Published documents and signals, four In Review document holds, one collection, Research Watch 027, one public update, and separate retrieval and publication-review ledgers raise the verified candidate to 1,798 pages, 638 sources, 445 signals, 377 Published, 68 In Review, 51 updates, thirty-five briefings, thirty-two collections, 561 research documents, and 427 current Published-support sources. No exact target, directive-scope, implementation, closure, or entity-evidence state changes.
 
+Phase 56X converts those aggregate and planned records into four agency award-review denominators, three Hanford operating outputs, three DOE EM site-maintenance denominators, and three NNSA project-baseline series. Six official sources, thirteen Published documents and signals, one collection, Research Watch 028, one public update, and separate evidence and publication ledgers raise the verified candidate to 1,832 pages, 644 sources, 458 signals, 390 Published, 68 In Review, 52 updates, thirty-six briefings, thirty-three collections, 574 research documents, and 433 current Published-support sources. No exact target or trigger, directive-scope, implementation, closure, or entity-evidence state changes.
+
 Verified Phase 56W results:
 
 - 1,798 generated site pages,
@@ -304,6 +308,15 @@ Verified Phase 56W results:
 - all thirty-two collection routes and 561 document records built under the publication and indexing contract,
 - the Phase 56W thirteen-file ZIP archive and all prior archives verified with manifests and checksums.
 
+Verified Phase 56X results:
+
+- thirteen Published records with a 4 / 3 / 3 / 3 award-review, operating-output, site-denominator, and project-baseline split;
+- six Tier 1 official source profiles, Research Watch 028, one collection, one update, and two machine-readable ledgers;
+- explicit agency, project, site, waste-stream, stage, period, unit, method, and denominator boundaries;
+- zero exact targets, trigger events, directive-scope changes, implementation changes, closure changes, agency contacts, and FOIA requests;
+- the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
+- content references, source health, Astro diagnostics, 1,832-page build, Phase 56X assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the sixteen-file archive all pass.
+
 The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
@@ -316,8 +329,8 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Sixty-eight signals remain `In Review`; the four Phase 56A holds prohibit cross-series composites, the four Phase 56B holds prohibit cross-entity rankings, the four Phase 56C holds prohibit causal inference from temporal sequence or attribution, the six Phase 56D holds preserve compatibility and causal boundaries, the four Phase 56E holds prohibit second-cohort portfolio rankings, the Phase 56F hold prohibits turning coverage status into cross-cohort comparison, the Phase 56G hold prevents dated source checks from becoming substitute closures, the Phase 56H hold preserves nine continuation rules, the Phase 56I hold prevents a completed first pass from becoming an unsupported closure claim, the Phase 56J hold prevents a FERC component result from substituting for department-wide DOE evidence, HHS-04 and VA-02 preserve one-to-many recommendation identities, and the inherited HHS post-date record remains held until its public tracker changes. Three hundred and twenty-nine bounded signals are Published.
-- Seven briefings and all five local-system profiles remain prelaunch or research material. The twenty-four Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
+- Sixty-eight signals remain `In Review`; the four Phase 56A holds prohibit cross-series composites, the four Phase 56B holds prohibit cross-entity rankings, the four Phase 56C holds prohibit causal inference from temporal sequence or attribution, the six Phase 56D holds preserve compatibility and causal boundaries, the four Phase 56E holds prohibit second-cohort portfolio rankings, the Phase 56F hold prohibits turning coverage status into cross-cohort comparison, the Phase 56G hold prevents dated source checks from becoming substitute closures, the Phase 56H hold preserves nine continuation rules, the Phase 56I hold prevents a completed first pass from becoming an unsupported closure claim, the Phase 56J hold prevents a FERC component result from substituting for department-wide DOE evidence, HHS-04 and VA-02 preserve one-to-many recommendation identities, and the inherited HHS post-date record remains held until its public tracker changes. Three hundred and ninety bounded signals are Published.
+- Seven briefings and all five local-system profiles remain prelaunch or research material. The twenty-nine Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
 - Six Phase 55N sources have official-link records because their official hosts blocked or complicated automated export; the collection preserves direct official URLs rather than third-party substitutes.
@@ -345,6 +358,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 - Phase 56S uses twelve new official records and twenty-four recommendation-level search trails. Three candidate artifacts remain subject to GAO sufficiency, thirteen records are scope-adjacent, and eight exact response artifacts were not separately located; absence from the bounded public search does not establish nonexistence.
 - Phase 56T uses eight repository-routing sources and twenty-four controlled decisions. Phase 56U adds eight bounded recovery results and ten official near-matches. An acquisition ticket or near-match is not evidence that a target document exists, a repository result is not the exact artifact, and an agency self-reported status does not override GAO's status.
 - Phase 56W uses ten official-link records. Six bounded additions publish and four exact-artifact searches remain In Review; project-level costs, aggregate funding, low-activity waste, potential savings, agency progress, and planned procurement retain distinct scopes and cannot be converted into complete estimates, DOT-only results, high-level-waste evidence, realized savings, independent validation, awards, implementation, or closure.
+- Phase 56X uses thirteen official-link records. Award review, obligation, disbursement, first use, operating output, site maintenance, project baseline, placeholder, fabrication, completion, acceptance, and outcome remain separate; the batch cannot support rankings, composite scores, readiness scores, realized-savings claims, or causation.
 - The local dossiers do not prove corridor-wide readiness, project completion, capacity sufficiency, occupancy, or workforce outcomes.
 - The Project Baccara record now includes an official 4-1 County action and active final air permit; the fully executed MCP, condition compliance, service, construction, testing, occupancy, and operation remain unverified.
 - Toronto item `2026.SC33.9` is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted amendment, confirmed building permit, start, completion, or occupancy is yet available. A bounded recheck is scheduled for August 1.
@@ -396,6 +410,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-arc
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug gao-recommendation-implementation-artifact-milestone-ledger-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug gao-recommendation-artifact-scope-audit-missing-document-register-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug implementation-to-outcome-evidence-2026
 npm.cmd run check
 npm.cmd run build
 npm.cmd run verify:phase56o
@@ -404,7 +419,8 @@ npm.cmd run verify:phase56q
 npm.cmd run verify:phase56r
 npm.cmd run verify:phase56s
 npm.cmd run verify:phase56t
+npm.cmd run verify:phase56x
 npm.cmd run verify:release
 ```
 
-Expected output: 1,739 generated site pages, the prior verified research archives plus the Phase 56U eleven-file archive, eight bounded exact-artifact recovery results, ten official near-matches, eight Published Phase 56U signals, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and a passing v0.2 release assertion.
+Expected output: 1,832 generated site pages, the prior verified research archives plus the Phase 56X sixteen-file archive, thirteen Published Phase 56X records with a 4 / 3 / 3 / 3 evidence-stage split, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 56X and v0.2 release assertions.

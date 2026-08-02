@@ -247,7 +247,20 @@
     "signal-56w-hanford-dfhlw-decision-and-progress-record",
     "signal-56w-infrastructure-funding-review-status",
     "signal-56w-hanford-low-activity-waste-grout-plan",
-    "signal-56w-doe-em-aging-infrastructure-constraint"
+    "signal-56w-doe-em-aging-infrastructure-constraint",
+    "signal-56x-epa-infrastructure-review-denominator",
+    "signal-56x-interior-infrastructure-review-denominator",
+    "signal-56x-ntia-infrastructure-review-denominator",
+    "signal-56x-dot-infrastructure-review-denominator",
+    "signal-56x-hanford-vitrification-commissioning-output",
+    "signal-56x-hanford-first-ilaw-disposal-use-record",
+    "signal-56x-hanford-emf-concentrate-grout-transfer",
+    "signal-56x-em-hanford-maintenance-denominator",
+    "signal-56x-em-savannah-river-maintenance-denominator",
+    "signal-56x-em-idaho-maintenance-denominator",
+    "signal-56x-nnsa-lap4-baseline-change-series",
+    "signal-56x-nnsa-srppf-subproject-baseline-series",
+    "signal-56x-nnsa-major-project-portfolio-performance"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -405,7 +418,13 @@
     "source-56w-hanford-hlw-progress-july2026",
     "source-56w-gao-iija-ira-funding-status-2026",
     "source-56w-gao-hanford-law-grout-plans-2026",
-    "source-56w-gao-em-aging-infrastructure-2026"
+    "source-56w-gao-em-aging-infrastructure-2026",
+    "source-56x-gao-iija-ira-agency-status-2026",
+    "source-56x-gao-em-site-infrastructure-2026",
+    "source-56x-gao-nnsa-major-projects-2026",
+    "source-56x-hanford-vitrification-100k-2026",
+    "source-56x-hanford-first-ilaw-disposal-2026",
+    "source-56x-hanford-emf-concentrate-grout-2026"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -438,7 +457,8 @@
     "briefing-research-watch-024-official-response-acquisition-queue",
     "briefing-research-watch-025-exact-artifact-recovery-batch-one",
     "briefing-research-watch-026-second-order-recovery-leads",
-    "briefing-research-watch-027-named-record-retrieval"
+    "briefing-research-watch-027-named-record-retrieval",
+    "briefing-research-watch-028-implementation-to-outcome"
   ],
   "dependency_map_ids": [
     "dependency-map-post-quantum-standards-are-not-migration",
@@ -469,7 +489,8 @@
     "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
     "research-collection-gao-custodian-exact-artifact-recovery-batch-one-2026",
     "research-collection-gao-second-order-recovery-leads-supporting-artifacts-2026",
-    "research-collection-gao-named-record-retrieval-cross-lane-expansion-2026"
+    "research-collection-gao-named-record-retrieval-cross-lane-expansion-2026",
+    "research-collection-implementation-to-outcome-evidence-2026"
   ],
   "evidence_gap_ids": [
     "gap-009",
@@ -616,6 +637,11 @@
       "stage": "Phase 56W named-record retrieval",
       "current_state": "Phase 56W reviews seven named recovery targets and three compatible cross-lane records: six new official records are Published, four unchanged target searches remain In Review, and no exact target or closure change is recorded.",
       "boundary": "Named, planned, project-level, aggregate, and agency-reported evidence remains separate from exact acquisition, implementation, GAO acceptance, closure, and operating outcomes."
+    },
+    {
+      "stage": "Phase 56X implementation-to-outcome expansion",
+      "current_state": "Thirteen Published records separate four award-review denominators, three operating outputs, three site-maintenance denominators, and three project-baseline series.",
+      "boundary": "Agency, project, site, waste stream, evidence stage, period, unit, method, and denominator remain explicit; an implementation input or output is not acceptance, closure, realized outcome, ranking, or causation."
     }
   ],
   "evidence_limits": [
@@ -662,7 +688,8 @@
     "FTFN submitted no agency contact or FOIA request in this public-record decomposition.",
     "Named, planned, project-level, aggregate, and agency-reported evidence remains separate from exact acquisition, implementation, GAO acceptance, closure, and operating outcomes.",
     "Four Phase 56W exact-artifact searches remain In Review because no new exact artifact or authoritative narrowing was located.",
-    "FTFN submitted no agency contact or FOIA request; public search does not establish nonexistence, withholding, or failure to submit."
+    "FTFN submitted no agency contact or FOIA request; public search does not establish nonexistence, withholding, or failure to submit.",
+    "Phase 56X funding, Hanford, DOE EM, and NNSA records use distinct evidence stages and denominators; they cannot support agency rankings, composite scores, readiness scores, realized-savings claims, or causal inference."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
@@ -712,6 +739,7 @@
     "Exact artifacts released by named custodians, successor directives, and explicit GAO acceptance or remaining-deficiency decisions.",
     "Exact public artifacts, recommendation correspondence attachments, or explicit GAO acceptance and remaining-deficiency decisions for the eight Phase 56U tickets.",
     "The exact target artifacts, newly named attachments and plans, or explicit GAO acceptance and remaining-deficiency decisions for the eight acquisition tickets.",
-    "The four JEC records, DOT unified-grants award and operating artifacts, DOE waste-optimization package, NNSA complete capability estimate, Hanford independent analysis and pause record, and HHS qualifying department-wide AARs."
+    "The four JEC records, DOT unified-grants award and operating artifacts, DOE waste-optimization package, NNSA complete capability estimate, Hanford independent analysis and pause record, and HHS qualifying department-wide AARs.",
+    "Later award, obligation, disbursement, deployment, use, output, acceptance, closure, and realized-outcome records using the same Phase 56X identity and denominator."
   ]
 }
