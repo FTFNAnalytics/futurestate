@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: 24 entity coverage states now carry exact continuation decisions through Phase 56P, while agency, letter, action text, local key, official recommendation identity, status period, response, implementation, closure, operating outcome, denominator, and reopening boundaries remain attached.",
+  "summary": "A comparison and inference protocol: 24 entity coverage states now carry exact continuation decisions through Phase 56Q, while local action key, official report-and-recommendation identity, affected component, GAO status, agency response, implementation, closure, operating outcome, period, denominator, and reopening boundaries remain attached.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -262,7 +262,28 @@
     "source-56p-doe-priority-letter-full-report-2026",
     "source-56p-hhs-priority-letter-full-report-2026",
     "source-56p-dot-priority-letter-full-report-2026",
-    "source-56p-va-priority-letter-full-report-2026"
+    "source-56p-va-priority-letter-full-report-2026",
+    "source-56q-gao-23-104661-recommendation-status",
+    "source-56q-gao-25-107109-recommendation-status",
+    "source-56q-gao-18-477-recommendation-status",
+    "source-56q-gao-22-105394-recommendation-status",
+    "source-56q-gao-24-106989-recommendation-status",
+    "source-56q-gao-16-568-recommendation-status",
+    "source-56q-gao-18-564-recommendation-status",
+    "source-56q-gao-26-107507-recommendation-status",
+    "source-56q-gao-24-106276-recommendation-status",
+    "source-56q-gao-21-310-recommendation-status",
+    "source-56q-gao-26-107320-recommendation-status",
+    "source-56q-gao-17-20-recommendation-status",
+    "source-56q-gao-25-107166-recommendation-status",
+    "source-56q-gao-23-105189-recommendation-status",
+    "source-56q-gao-26-107648-recommendation-status",
+    "source-56q-gao-18-132-recommendation-status",
+    "source-56q-gao-25-106969-recommendation-status",
+    "source-56q-gao-25-106874-recommendation-status",
+    "source-56q-gao-22-105195-recommendation-status",
+    "source-56q-gao-25-107398-recommendation-status",
+    "source-56q-gao-24-106189-recommendation-status"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -424,7 +445,27 @@
     "signal-56p-va-ehr-lifecycle-cost-and-master-schedule",
     "signal-56p-va-major-acquisition-oversight-framework-risks",
     "signal-56p-va-common-spend-savings-goals-tracking",
-    "signal-56p-va-dod-servicemember-transition-coordination"
+    "signal-56p-va-dod-servicemember-transition-coordination",
+    "signal-56q-doe-pit-production-lifecycle-cost-estimate",
+    "signal-56q-doe-complex-wide-waste-disposal-analysis",
+    "signal-56q-doe-strategic-petroleum-reserve-periodic-reviews",
+    "signal-56q-doe-nuclear-demonstration-project-oversight",
+    "signal-56q-doe-hanford-waste-treatment-pause-conditions",
+    "signal-56q-hhs-medicaid-offsets-medicare-hospital-payments",
+    "signal-56q-hhs-medicaid-oversight-national-risk-assessment",
+    "signal-56q-hhs-public-health-preparedness-capability-gaps",
+    "signal-56q-dot-faa-mission-critical-skill-gap-data",
+    "signal-56q-dot-air-traffic-controller-workforce-processes",
+    "signal-56q-dot-discretionary-grant-department-wide-directive",
+    "signal-56q-dot-iija-grant-status-reporting",
+    "signal-56q-dot-grant-agreement-awardee-risk-assessment",
+    "signal-56q-dot-faa-drone-integration-strategy",
+    "signal-56q-dot-faa-information-centric-airspace-milestones",
+    "signal-56q-dot-automated-vehicle-initiative-plan",
+    "signal-56q-va-health-system-enterprise-risk-practices",
+    "signal-56q-va-major-acquisition-oversight-framework-risks",
+    "signal-56q-va-common-spend-savings-goals-tracking",
+    "signal-56q-va-dod-servicemember-transition-coordination"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -621,6 +662,12 @@
       "label": "Twenty-two letter-named priority actions",
       "node_type": "Signal",
       "note": "Five DOE, four HHS, eight DOT, and five VA actions publish under local keys; no Phase 56F evidence state changes."
+    },
+    {
+      "id": "node-phase56q-recommendation-crosswalk",
+      "label": "Twenty exact identities and two held mappings",
+      "node_type": "Signal",
+      "note": "Twenty Phase 56P actions resolve one-to-one; HHS-04 and VA-02 remain held as one-to-many mappings."
     }
   ],
   "links": [
@@ -994,6 +1041,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "A named open priority action does not establish performance, operating outcomes, savings, readiness, safety, or causation."
+    },
+    {
+      "from": "node-phase56q-recommendation-crosswalk",
+      "to": "node-phase56p-action-ledger",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 56Q resolves the local action identities established in Phase 56P."
+    },
+    {
+      "from": "node-phase56q-recommendation-crosswalk",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Local actions, official recommendations, response states, closure states, and operating outcomes are distinct denominators."
+    },
+    {
+      "from": "node-phase56q-recommendation-crosswalk",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Identity and response evidence do not establish performance, value, readiness, safety, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -1024,7 +1092,9 @@
     "Ten exact federal recommendation, portfolio, and component decisions with stable identity, status period, source, limitation, and continuation rule.",
     "A visible publication hold where the expected HHS tracker date passed without a post-date public update.",
     "Eight exact portfolio or model records with stable agency, arithmetic, state, period, scope, limitation, and continuation identity.",
-    "Twenty-two exact letter-named actions with stable agency, letter, subject, local key, status period, identity boundary, limitation, and continuation rule."
+    "Twenty-two exact letter-named actions with stable agency, letter, subject, local key, status period, identity boundary, limitation, and continuation rule.",
+    "Twenty exact one-to-one GAO report-and-recommendation identities with affected component, status, agency response, last-update period, limitation, and continuation rule.",
+    "Two explicit one-to-many holds covering four candidate recommendations."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -1049,7 +1119,8 @@
     "That open recommendation count measures NASA performance, or that either anonymous hospital test represents HHS, CMS, the health sector, or later operations.",
     "That recommendation closure, inventory completeness, portfolio movement, or component remediation measures agency performance, system safety, readiness, quality, value, or causal effect.",
     "That portfolio implementation counts are comparable agency rates or that modeled potential benefits are realized savings.",
-    "That FTFN action keys are official GAO recommendation numbers or that a named priority action has been implemented or closed."
+    "That FTFN action keys are official GAO recommendation numbers or that a named priority action has been implemented or closed.",
+    "That an agency response is implementation, a recommendation status is an entity evidence state, or recommendation closure is an operating outcome."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -1122,6 +1193,7 @@
     "Reopen when GAO publishes the next OSTP priority letter or a named current recommendation changes status.",
     "Reopen when GAO publishes the next NTIA priority letter or a named current recommendation changes status.",
     "Reopen when GAO updates the model, publishes realized benefit attribution, or materially revises the open-recommendation inventory.",
-    "Official GAO Recommendations Database identities, agency responses, and later status or operating-outcome records for Phase 56P actions."
+    "Official GAO Recommendations Database identities, agency responses, and later status or operating-outcome records for Phase 56P actions.",
+    "Implementation artifacts and later GAO status changes for the twenty exact matches, plus recommendation-specific child records for HHS-04 and VA-02."
   ]
 }

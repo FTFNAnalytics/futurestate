@@ -39,7 +39,8 @@
     "Closed-Implemented, Open, Open-Partially Addressed, no-longer-valid, component, portfolio, and held states remain distinct.",
     "Phase 56O adds seven exact agency priority portfolios and one bounded government-wide potential-benefit model.",
     "Implemented, added, de-prioritized, current, modeled, and realized states remain distinct.",
-    "Phase 56P decomposes four federal priority portfolios into twenty-two stable letter-named actions without inventing recommendation numbers or implementation states."
+    "Phase 56P decomposes four federal priority portfolios into twenty-two stable letter-named actions without inventing recommendation numbers or implementation states.",
+    "Phase 56Q resolves twenty local actions to exact official GAO report-and-recommendation identities and holds two one-to-many mappings."
   ],
   "primary_topics": [
     "Policy and Standards",
@@ -124,7 +125,27 @@
     "signal-56p-va-ehr-lifecycle-cost-and-master-schedule",
     "signal-56p-va-major-acquisition-oversight-framework-risks",
     "signal-56p-va-common-spend-savings-goals-tracking",
-    "signal-56p-va-dod-servicemember-transition-coordination"
+    "signal-56p-va-dod-servicemember-transition-coordination",
+    "signal-56q-doe-pit-production-lifecycle-cost-estimate",
+    "signal-56q-doe-complex-wide-waste-disposal-analysis",
+    "signal-56q-doe-strategic-petroleum-reserve-periodic-reviews",
+    "signal-56q-doe-nuclear-demonstration-project-oversight",
+    "signal-56q-doe-hanford-waste-treatment-pause-conditions",
+    "signal-56q-hhs-medicaid-offsets-medicare-hospital-payments",
+    "signal-56q-hhs-medicaid-oversight-national-risk-assessment",
+    "signal-56q-hhs-public-health-preparedness-capability-gaps",
+    "signal-56q-dot-faa-mission-critical-skill-gap-data",
+    "signal-56q-dot-air-traffic-controller-workforce-processes",
+    "signal-56q-dot-discretionary-grant-department-wide-directive",
+    "signal-56q-dot-iija-grant-status-reporting",
+    "signal-56q-dot-grant-agreement-awardee-risk-assessment",
+    "signal-56q-dot-faa-drone-integration-strategy",
+    "signal-56q-dot-faa-information-centric-airspace-milestones",
+    "signal-56q-dot-automated-vehicle-initiative-plan",
+    "signal-56q-va-health-system-enterprise-risk-practices",
+    "signal-56q-va-major-acquisition-oversight-framework-risks",
+    "signal-56q-va-common-spend-savings-goals-tracking",
+    "signal-56q-va-dod-servicemember-transition-coordination"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -210,7 +231,28 @@
     "source-56p-doe-priority-letter-full-report-2026",
     "source-56p-hhs-priority-letter-full-report-2026",
     "source-56p-dot-priority-letter-full-report-2026",
-    "source-56p-va-priority-letter-full-report-2026"
+    "source-56p-va-priority-letter-full-report-2026",
+    "source-56q-gao-23-104661-recommendation-status",
+    "source-56q-gao-25-107109-recommendation-status",
+    "source-56q-gao-18-477-recommendation-status",
+    "source-56q-gao-22-105394-recommendation-status",
+    "source-56q-gao-24-106989-recommendation-status",
+    "source-56q-gao-16-568-recommendation-status",
+    "source-56q-gao-18-564-recommendation-status",
+    "source-56q-gao-26-107507-recommendation-status",
+    "source-56q-gao-24-106276-recommendation-status",
+    "source-56q-gao-21-310-recommendation-status",
+    "source-56q-gao-26-107320-recommendation-status",
+    "source-56q-gao-17-20-recommendation-status",
+    "source-56q-gao-25-107166-recommendation-status",
+    "source-56q-gao-23-105189-recommendation-status",
+    "source-56q-gao-26-107648-recommendation-status",
+    "source-56q-gao-18-132-recommendation-status",
+    "source-56q-gao-25-106969-recommendation-status",
+    "source-56q-gao-25-106874-recommendation-status",
+    "source-56q-gao-22-105195-recommendation-status",
+    "source-56q-gao-25-107398-recommendation-status",
+    "source-56q-gao-24-106189-recommendation-status"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -236,7 +278,8 @@
     "briefing-research-watch-017-federal-remediation-outcomes",
     "briefing-research-watch-018-verified-remediation-outcomes",
     "briefing-research-watch-019-cross-agency-remediation",
-    "briefing-research-watch-020-action-level-priority-recommendations"
+    "briefing-research-watch-020-action-level-priority-recommendations",
+    "briefing-research-watch-021-gao-recommendation-identity-agency-response"
   ],
   "dependency_map_ids": [
     "dependency-map-post-quantum-standards-are-not-migration",
@@ -260,7 +303,8 @@
     "research-collection-federal-remediation-outcomes-batch-one-2026",
     "research-collection-verified-remediation-component-outcomes-batch-two-2026",
     "research-collection-cross-agency-priority-remediation-portfolios-2026",
-    "research-collection-agency-priority-recommendation-action-ledger-2026"
+    "research-collection-agency-priority-recommendation-action-ledger-2026",
+    "research-collection-gao-recommendation-identity-agency-response-crosswalk-2026"
   ],
   "evidence_gap_ids": [
     "gap-009",
@@ -372,6 +416,11 @@
       "stage": "Phase 56P action-level priority recommendation decomposition",
       "current_state": "Phase 56P decomposes four federal priority portfolios into twenty-two stable letter-named actions without inventing recommendation numbers or implementation states.",
       "boundary": "A local action key and open priority designation do not establish a GAO database identity, implementation, closure, operating outcome, or agency performance."
+    },
+    {
+      "stage": "Phase 56Q recommendation identity and agency response",
+      "current_state": "Phase 56Q resolves twenty local actions to exact official GAO report-and-recommendation identities and holds two one-to-many mappings.",
+      "boundary": "Official identity and agency response do not establish implementation, closure, operating outcome, or agency performance."
     }
   ],
   "evidence_limits": [
@@ -400,7 +449,10 @@
     "Phase 56O portfolio counts use different agency inventories and subject mixes and cannot support agency rankings or comparable rates.",
     "The $132 billion to $251 billion range is modeled potential benefit, not a forecast, appropriation, agency allocation, or realized saving.",
     "A local action key and open priority designation do not establish a GAO database identity, implementation, closure, operating outcome, or agency performance.",
-    "FTFN Phase 56P action keys are stable local references, not official GAO Recommendations Database numbers."
+    "FTFN Phase 56P action keys are stable local references, not official GAO Recommendations Database numbers.",
+    "Official identity and agency response do not establish implementation, closure, operating outcome, or agency performance.",
+    "The official identity is the GAO report number plus recommendation number; FTFN does not invent a separate opaque database ID.",
+    "HHS-04 and VA-02 remain held because each local action maps to two official recommendations."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
@@ -443,6 +495,7 @@
     "Reopen when GAO publishes the next OSTP priority letter or a named current recommendation changes status.",
     "Reopen when GAO publishes the next NTIA priority letter or a named current recommendation changes status.",
     "Reopen when GAO updates the model, publishes realized benefit attribution, or materially revises the open-recommendation inventory.",
-    "Underlying GAO Recommendations Database records, agency responses, and later action-specific status changes for the Phase 56P ledger."
+    "Underlying GAO Recommendations Database records, agency responses, and later action-specific status changes for the Phase 56P ledger.",
+    "Recommendation-specific implementation artifacts, GAO status changes, and attributable operating outcomes for the Phase 56Q crosswalk."
   ]
 }

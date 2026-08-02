@@ -415,7 +415,95 @@
           "source_id": "source-56p-hhs-priority-letter-full-report-2026",
           "signal_id": "signal-56p-hhs-after-action-program-fragmentation"
         }
-      ]
+      ],
+      "phase_56q_recommendation_identity_crosswalk": [
+        {
+          "action_key": "HHS-01",
+          "resolution_decision": "Exact one-to-one",
+          "report_id": "GAO-16-568",
+          "recommendation_number": 2,
+          "official_identity": "GAO-16-568 Recommendation 2",
+          "candidate_recommendations": [],
+          "affected_component": "Centers for Medicare & Medicaid Services; Administrator",
+          "current_status": "Open",
+          "agency_response_summary": "HHS initially concurred but repeatedly reconsidered implementation, including through December 2025. GAO continues to maintain that the action is needed.",
+          "last_update_period": "December 2025",
+          "response_boundary": "Agency response does not establish implementation or closure.",
+          "continuation_rule": "Recheck GAO-16-568 Recommendation 2 when GAO changes the status or adds agency-response evidence after December 2025.",
+          "source_id": "source-56q-gao-16-568-recommendation-status",
+          "signal_id": "signal-56q-hhs-medicaid-offsets-medicare-hospital-payments"
+        },
+        {
+          "action_key": "HHS-02",
+          "resolution_decision": "Exact one-to-one",
+          "report_id": "GAO-18-564",
+          "recommendation_number": 1,
+          "official_identity": "GAO-18-564 Recommendation 1",
+          "candidate_recommendations": [],
+          "affected_component": "Centers for Medicare & Medicaid Services; Administrator",
+          "current_status": "Open – Partially Addressed",
+          "agency_response_summary": "HHS concurred. GAO reported no further information in February 2026 and said a national risk assessment was still required.",
+          "last_update_period": "February 2026",
+          "response_boundary": "Agency response does not establish implementation or closure.",
+          "continuation_rule": "Recheck GAO-18-564 Recommendation 1 when GAO changes the status or adds agency-response evidence after February 2026.",
+          "source_id": "source-56q-gao-18-564-recommendation-status",
+          "signal_id": "signal-56q-hhs-medicaid-oversight-national-risk-assessment"
+        },
+        {
+          "action_key": "HHS-03",
+          "resolution_decision": "Exact one-to-one",
+          "report_id": "GAO-26-107507",
+          "recommendation_number": 4,
+          "official_identity": "GAO-26-107507 Recommendation 4",
+          "candidate_recommendations": [],
+          "affected_component": "Centers for Disease Control and Prevention; Director",
+          "current_status": "Open",
+          "agency_response_summary": "HHS concurred. GAO said it would update the status after receiving HHS's 180-day letter, expected in summer 2026.",
+          "last_update_period": "Summer 2026 response pending",
+          "response_boundary": "Agency response does not establish implementation or closure.",
+          "continuation_rule": "Recheck GAO-26-107507 Recommendation 4 when GAO changes the status or adds agency-response evidence after Summer 2026 response pending.",
+          "source_id": "source-56q-gao-26-107507-recommendation-status",
+          "signal_id": "signal-56q-hhs-public-health-preparedness-capability-gaps"
+        },
+        {
+          "action_key": "HHS-04",
+          "resolution_decision": "Held — one-to-many",
+          "report_id": "GAO-24-106276",
+          "recommendation_number": null,
+          "official_identity": null,
+          "candidate_recommendations": [
+            {
+              "report_id": "GAO-24-106276",
+              "recommendation_number": 1,
+              "official_identity": "GAO-24-106276 Recommendation 1",
+              "summary": "Coordinate after-action work across HHS component agencies and integrate existing component programs.",
+              "current_status": "Open – Partially Addressed"
+            },
+            {
+              "report_id": "GAO-24-106276",
+              "recommendation_number": 2,
+              "official_identity": "GAO-24-106276 Recommendation 2",
+              "summary": "Include relevant external stakeholders in each emergency-response after-action process.",
+              "current_status": "Open – Partially Addressed"
+            }
+          ],
+          "affected_component": "Department of Health and Human Services; Secretary",
+          "current_status": "Open – Partially Addressed",
+          "agency_response_summary": "HHS developed standard operating procedures. GAO is awaiting evidence from an exercise or response after-action report before determining whether either recommendation is implemented.",
+          "last_update_period": "January 2026",
+          "response_boundary": "Agency response does not establish implementation or closure.",
+          "continuation_rule": "Preserve HHS-04 as the parent local action and create recommendation-specific child records before publication; do not collapse Recommendations 1 and 2.",
+          "source_id": "source-56q-gao-24-106276-recommendation-status",
+          "signal_id": "signal-56q-hhs-after-action-program-fragmentation"
+        }
+      ],
+      "phase_56q_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F evidence state. Recommendation identity and agency response improve follow-through but do not establish entity-level implementation or operating outcome.",
+        "exact_matches": 3,
+        "held_mappings": 1
+      }
     },
     {
       "test_id": "test-56d-current-applications-repeat-test",
@@ -973,5 +1061,6 @@
   "phase_56m_continuation_ledger": "phase-56m-federal-remediation-outcomes.json",
   "phase_56n_continuation_ledger": "phase-56n-verified-remediation-outcomes.json",
   "phase_56o_continuation_ledger": "phase-56o-cross-agency-remediation.json",
-  "phase_56p_continuation_ledger": "phase-56p-action-recommendation-ledger.json"
+  "phase_56p_continuation_ledger": "phase-56p-action-recommendation-ledger.json",
+  "phase_56q_continuation_ledger": "phase-56q-recommendation-identity-crosswalk.json"
 }
