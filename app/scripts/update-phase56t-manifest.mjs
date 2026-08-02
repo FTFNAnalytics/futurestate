@@ -59,6 +59,7 @@ manifest.release_delta_from_v0_1_1 = {
   summary: "Extends the Phase 55K through Phase 56S evidence baseline with Phase 56T official-response acquisition and artifact-sufficiency controls: 612 public sources, 421 signals, 353 Published signals, five local systems, twenty-five Published and seven In Review briefings, six Published and one In Review dependency maps, fifteen reader pathways, sixteen evidence gaps, 48 public updates, twenty-nine research collections, 533 summarized research documents, and five versioned public-data exports.",
 };
 manifest.phase_56t_delta = {
+  ...(manifest.phase_56t_delta ?? {}),
   recommendation_records_controlled: 24,
   directive_element_decisions: 72,
   missing_document_acquisition_tickets: 8,

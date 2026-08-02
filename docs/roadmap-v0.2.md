@@ -391,13 +391,13 @@ Recommended active schedule:
 | Completed | Phase 56Q | twenty exact GAO recommendation identities, two one-to-many holds, twenty-one official sources, Research Watch 021, twenty-five-file archive, and owner-only Sites version 42 |
 | Completed and owner-only deployed | Phase 56R | four recommendation-specific children, twenty-four artifact-and-milestone records, five public agency artifacts, Research Watch 022, a twenty-seven-file archive, and Sites version 43 |
 | Completed and owner-only deployed | Phase 56S | seventy-two directive-element checks, 3 / 13 / 8 availability split, Research Watch 023, and Sites version 44 |
-| Complete locally; deployment pending | Phase 56T | eight acquisition tickets, thirteen adjacent-source matrices, three public-candidate matrices, Research Watch 024, and a verified 1,714-page contract |
+| Completed and owner-only deployed | Phase 56T | eight acquisition tickets, thirteen adjacent-source matrices, three public-candidate matrices, Research Watch 024, a verified 1,714-page contract, and Sites version 45 |
 | Next content gate | Phase 56U | run custodian-level exact-artifact recovery batch one for the eight acquisition tickets while other content lanes continue |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete through Sites version 44, and Phase 56T is complete locally under a verified 1,714-page contract. Its twenty-four controlled records contain eight missing-document acquisition tickets, thirteen adjacent-source directive matrices, and three page- or section-level public-candidate matrices. Eight official repository-routing sources, seventy-two directive locators, named custodians, search terms, stop rules, reopening triggers, and next actions deepen retrieval without changing implementation, closure, or the Phase 56F one Closed / twenty-one Partially Closed / two Open entity evidence ledger. The next non-public content gate is Phase 56U: a custodian-level exact-artifact recovery batch for the eight tickets. Phase 55H, Phase 55R, the inherited HHS tracker hold, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete through Sites version 45 under a verified 1,714-page contract. Phase 56T's twenty-four controlled records contain eight missing-document acquisition tickets, thirteen adjacent-source directive matrices, and three page- or section-level public-candidate matrices. Eight official repository-routing sources, seventy-two directive locators, named custodians, search terms, stop rules, reopening triggers, and next actions deepen retrieval without changing implementation, closure, or the Phase 56F one Closed / twenty-one Partially Closed / two Open entity evidence ledger. The next non-public content gate is Phase 56U: a custodian-level exact-artifact recovery batch for the eight tickets. Phase 55H, Phase 55R, the inherited HHS tracker hold, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1363,7 +1363,7 @@ Completion:
 - recorded no implementation or closure changes and preserved the one Closed, twenty-one Partially Closed, and two Open Phase 56F entity evidence ledger.
 - local content commit `6d157e202faff214d4824d7bfecfb6b3b1b76b5c` produced exact private runtime commit `e1906494fce21f1c59b62dca8eecf9de5407d78d`, deployed successfully as owner-only Sites version 44 in deployment `appgdep_6a6eedb5d234819189721f5d2fae8b62` with no groups, no editors, and zero external visitors.
 
-### Phase 56T: Official-Response Acquisition Escalation And Artifact-Sufficiency Decision Queue - Complete And Release-Verified
+### Phase 56T: Official-Response Acquisition Escalation And Artifact-Sufficiency Decision Queue - Complete And Owner-Only Deployed
 
 Goal: convert every Phase 56S availability result into a bounded acquisition or sufficiency decision without waiting for future milestone dates.
 
@@ -1393,6 +1393,7 @@ Completion:
 - corrected the FAA Drone Normalization Strategy Report Update 2026 download endpoint to the verified official PDF;
 - passed content validation, source health, Astro diagnostics, the 1,714-page production build, Phase 56T assertions, release assertions, sitemap membership, exports, and private-registry exclusion;
 - recorded no implementation or closure changes and preserved the one Closed, twenty-one Partially Closed, and two Open Phase 56F entity evidence ledger.
+- local content commit `324fde7e98a8177d5174a245008c476520f58c15` produced exact private runtime commit `080d49505f8c1a305c1418f29c894d2c43069dfd`, deployed successfully as owner-only Sites version 45 in deployment `appgdep_6a6ef47d383881919292c6a8dd0b5e86` with no groups, no editors, and zero external visitors.
 
 ### Phase 56U: Custodian-Level Exact-Artifact Recovery Batch One - Next Content Gate
 
@@ -1531,4 +1532,4 @@ Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Sites version 44 serves local content commit `6d157e202faff214d4824d7bfecfb6b3b1b76b5c` from exact private runtime commit `e1906494fce21f1c59b62dca8eecf9de5407d78d` in deployment `appgdep_6a6eedb5d234819189721f5d2fae8b62`, under custom owner-only access with no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 45 serves local content commit `324fde7e98a8177d5174a245008c476520f58c15` from exact private runtime commit `080d49505f8c1a305c1418f29c894d2c43069dfd` in deployment `appgdep_6a6ef47d383881919292c6a8dd0b5e86`, under custom owner-only access with no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

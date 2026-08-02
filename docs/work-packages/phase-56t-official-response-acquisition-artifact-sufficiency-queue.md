@@ -2,7 +2,7 @@
 
 Date: 2026-08-02
 
-Status: complete, release-verified, and awaiting owner-only deployment receipt
+Status: complete, release-verified, and owner-only deployed
 
 ## Goal
 
@@ -62,6 +62,11 @@ These records are retrieval rails. They are not substitutes for the recommendati
 - Public updates: 48.
 - Research export records: 517.
 - Archive SHA-256: `4E10435E516E709E351E032668C363D8046C52C719DF8AA17F929E578F38AE58`.
+- Local content commit: `324fde7e98a8177d5174a245008c476520f58c15`.
+- Exact private runtime commit: `080d49505f8c1a305c1418f29c894d2c43069dfd`.
+- Sites version: 45.
+- Deployment: `appgdep_6a6ef47d383881919292c6a8dd0b5e86`.
+- Access: custom owner-only policy with one owner, no groups, no editors, and zero external visitors.
 
 ## Interpretation boundaries
 
