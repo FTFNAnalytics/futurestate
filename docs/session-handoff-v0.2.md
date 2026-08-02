@@ -7,20 +7,20 @@ Use this document to restart FTFN in a new Codex session without reconstructing 
 ## Handoff Snapshot
 
 ```text
-Latest completed local work: Phase 56Z repeat-measurement and accepted-operation panels
+Latest completed local work: Phase 57A fixed-cohort completion and realized-outcome panels
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 1,923 generated site pages
-Content: 667 sources, 490 signals, 17 topics, 5 local systems, 35 research collections / 606 research documents
-Publication: 418 Published signals, 72 In Review signals, 31 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
-Trust/data: 54 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, all prior verified research archives plus the Phase 56Z 20-file archive
+Build: 1,962 generated site pages
+Content: 672 sources, 506 signals, 17 topics, 5 local systems, 36 research collections / 622 research documents
+Publication: 431 Published signals, 75 In Review signals, 32 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
+Trust/data: 55 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, all prior verified research archives plus the Phase 57A 19-file archive
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
 Deployment: owner-only Sites version 52 serves exact private runtime commit 404c9661a1ca64ca5b82226e2b1ce3d6aad30b1f in appgdep_6a6fa0e4a0188191b7f11b33f3bb3c5a
 Domain: ftfn.io is ready; production DNS is unchanged
-Source health: 458 Manual Review, 209 Probe Ready, zero incomplete endpoint declarations; 14 Strong coverage lanes
-Next content gate: Phase 57A fixed-cohort completion and realized-outcome panels; exact-artifact checks, the inherited HHS tracker recheck, and remaining dated inserts do not block expansion
+Source health: 461 Manual Review, 211 Probe Ready, zero incomplete endpoint declarations; 14 Strong coverage lanes
+Next content gate: Phase 57B accepted-service cohorts and independent outcome validation; exact-artifact checks, the inherited HHS tracker recheck, and remaining dated inserts do not block expansion
 ```
 
 ## Read First
@@ -157,6 +157,7 @@ The approved preview sequence is complete:
 102. Matched local content commit `a904fe2ba6a14c48c16a0388a1639799e1e00e47` to exact private runtime commit `da452ab128d8d7584fe83238c9a696a2797666a7`, saved the 2,611-file runtime archive as Sites version 51, deployed it successfully in `appgdep_6a6f972e06388191b34a3e2f5975c986`, and confirmed custom owner-only access with one owner, no groups, no editors, and zero external visitors.
 103. Completed and validated Phase 56Z: reviewed seventeen repeat-measurement and accepted-operation records; published thirteen and held four; added twelve Tier 1 sources, Research Watch 030, two ledgers, one collection, one update, and a twenty-file archive; verified 1,923 pages, 667 sources, 490 signals, 418 Published, 72 In Review, 54 updates, thirty-five collections, 606 research documents, and 452 current Published-support sources.
 104. Matched local content commit `11f8f7da8c0229d6c65dca5f4f11282b6c83bf9f` to exact private runtime commit `404c9661a1ca64ca5b82226e2b1ce3d6aad30b1f`, saved the 2,680-file runtime archive as Sites version 52, deployed it successfully in `appgdep_6a6fa0e4a0188191b7f11b33f3bb3c5a`, and confirmed custom owner-only access with one owner, no groups, no editors, and zero external visitors.
+105. Completed and validated Phase 57A: reviewed sixteen fixed-cohort completion and realized-outcome records; published thirteen and held three; added five Tier 1 sources, Research Watch 031, two ledgers, one collection, one update, and a nineteen-file archive; verified 1,962 pages, 672 sources, 506 signals, 431 Published, 75 In Review, 55 updates, thirty-six collections, 622 research documents, and 455 current Published-support sources.
 
 ## Required Stop Points
 
@@ -210,9 +211,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed local work is Phase 56Z. The current candidate should be 0.2.0-dev on codex/phase51-content with 667 sources, 490 signals, 418 Published signals, 72 In Review signals, five local systems, thirty-one Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 54 public updates, five JSON exports, 1,923 generated site pages, thirty-five research collections, 606 research documents, all prior verified archives, and the Phase 56Z twenty-file archive. Owner-only Sites version 52 is deployed; public access and DNS remain unchanged.
+The latest completed local work is Phase 57A. The current candidate should be 0.2.0-dev on codex/phase51-content with 672 sources, 506 signals, 431 Published signals, 75 In Review signals, five local systems, thirty-two Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 55 public updates, five JSON exports, 1,962 generated site pages, thirty-six research collections, 622 research documents, all prior verified archives, and the Phase 57A nineteen-file archive. Owner-only Sites version 52 remains deployed until Phase 57A packaging completes; public access and DNS remain unchanged.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Begin Phase 57A with fixed-cohort completion and realized-outcome panels for DOT, BEAD, Hanford, Savannah River, Idaho, LAP4, and SRPPF. Insert exact-artifact recoveries only on authoritative public triggers and retain stop rules for unresolved gaps. Do not represent a search as agency contact or a submitted FOIA request. Keep agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, funding universe, stage, period, unit, method, denominator, and operating outcomes separate. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval.
+Begin Phase 57B with accepted-service cohorts and independent outcome validation for DOT, BEAD, Hanford, and NNSA. Preserve the Louisiana, Montana, and NNSA baseline holds until their named reopening conditions are met. Do not represent a search as agency contact or a submitted FOIA request. Keep agency assertions, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, cohort, stage, period, unit, method, denominator, revision history, attribution, and operating outcomes separate. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval.
 ```

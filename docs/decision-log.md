@@ -2835,3 +2835,32 @@ Deployment receipt:
 Boundary:
 
 Two observations are not automatically a trend. A changing funding denominator, signed agreement, planned construction, installed input, first operating event, preliminary regulatory concurrence, interim storage, output, forecast reduction, realized outcome, closeout, implementation, and closure remain separate. No ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference is authorized. Public GitHub synchronization, package freeze, public access, Hostinger DNS, custom-domain attachment, and public launch remain separate decisions.
+
+## 2026-08-02: Phase 57A Publishes Fixed-Cohort And Accepted-Outcome Panels With Three Explicit Holds
+
+Decision:
+
+Publish system outcomes, independently corroborated operation, and qualified production output only when the cohort, lifecycle stage, period, unit, method, denominator, and authority remain explicit. Keep pre-construction authorization, test protocols without results, and incomplete program baselines In Review.
+
+Rationale:
+
+DOT's FY 2025 performance report supplies nine useful system outcomes, but their backlog, asset, area, eligibility, ratio, station, and operating-time denominators are not interchangeable. Washington Ecology provides an independent regulator vantage on Hanford operation and cumulative treatment. NNSA verifies one W87-1 First Production Unit at war-reserve quality, but that single accepted unit cannot establish recurring production or close GAO's open cost-and-schedule gap. Louisiana and Montana make the BEAD completion contract clearer without yet supplying completed delivery or operating results.
+
+Implemented:
+
+- sixteen reviewed records, thirteen Published and three In Review;
+- nine fixed-cohort DOT system outcomes, three regulator-corroborated Hanford operating records, one qualified NNSA output, two BEAD pre-completion holds, and one NNSA program-baseline hold;
+- five new Tier 1 sources and three carried official sources;
+- Research Watch 031, one collection, one public update, two machine-readable ledgers, and a verified nineteen-file archive;
+- integrations across five topics, three pathways, one organization, and the comparative-outcomes dependency map;
+- a verified 1,962-page, 672-source, 506-signal contract with 431 Published, 75 In Review, 55 updates, thirty-nine briefings, thirty-six collections, 622 research documents, and 455 current Published-support sources;
+- zero exact target artifacts, trigger events, directive-scope changes, implementation changes, closure changes, agency contacts, FOIA submissions, or entity-evidence changes;
+- Phase 57B selected as the next non-public content gate for accepted-service cohorts and independent outcome validation.
+
+Deployment receipt:
+
+Pending owner-only Sites packaging and deployment. Public access, package freeze, public GitHub, Hostinger DNS, custom-domain attachment, and launch remain unchanged.
+
+Boundary:
+
+Target attainment is not a causal evaluation. A reporting-method break prevents false completion arithmetic. Regulator corroboration is not a complete facility-level outcome series. Cumulative water treated is not contaminant mass removed or aquifer restoration. One qualified unit is not recurring production, annual capacity, enterprise schedule, lifecycle cost, or readiness. Authorization, protocol, construction, acceptance, operation, qualified output, recurring rate, closeout, implementation, and closure remain separate. No ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference is authorized.

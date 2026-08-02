@@ -1606,6 +1606,7 @@ Primary file:
 - `docs/work-packages/phase-56x-implementation-to-outcome-expansion.md` for the four award-review denominators, three operating outputs, three site denominators, three project-baseline records, six Tier 1 sources, publication ledgers, archive contract, validation and owner-only deployment evidence, and Phase 56Y handoff
 - `docs/work-packages/phase-56y-longitudinal-delivery-outcomes.md` for the four funding-execution records, two award-to-service contracts, three sustained-operation records, four cleanup-delivery-and-outcome records, two project-implementation records, eleven new Tier 1 sources, publication ledgers, archive contract, validation evidence, and Phase 56Z handoff
 - `docs/work-packages/phase-56z-repeat-measurement-accepted-operation.md` for the seventeen reviewed panels, thirteen Published decisions, four In Review holds, twelve new Tier 1 sources, repeat-measurement and accepted-operation contracts, archive, validation and owner-only deployment evidence, and Phase 57A handoff
+- `docs/work-packages/phase-57a-fixed-cohort-completion-realized-outcomes.md` for the sixteen reviewed panels, thirteen Published decisions, three In Review holds, five new Tier 1 sources, fixed-cohort, independent-operation, qualified-output, archive, validation, and Phase 57B handoff contracts
 
 Update when:
 
@@ -1644,6 +1645,7 @@ Update when:
 - the Phase 56X evidence-stage records, denominators, archive, deployment receipt, or Phase 56Y priorities change,
 - the Phase 56Y longitudinal records, universe and stage breaks, archive, deployment receipt, or Phase 56Z priorities change,
 - the Phase 56Z panels, changing denominators, operation and hold decisions, archive, deployment receipt, or Phase 57A priorities change,
+- the Phase 57A fixed cohorts, accepted outcomes, hold decisions, archive, deployment receipt, or Phase 57B priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

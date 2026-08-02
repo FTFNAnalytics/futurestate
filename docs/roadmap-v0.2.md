@@ -398,12 +398,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 56X | thirteen Published implementation-to-outcome records, six Tier 1 sources, Research Watch 028, a sixteen-file archive, a verified 1,832-page contract, and Sites version 50 |
 | Completed and owner-only deployed | Phase 56Y | fifteen Published longitudinal delivery-and-outcome records, eleven Tier 1 sources, Research Watch 029, an eighteen-file archive, a verified 1,875-page contract, and Sites version 51 |
 | Completed and owner-only deployed | Phase 56Z | thirteen Published panels, four explicit holds, twelve Tier 1 sources, Research Watch 030, a twenty-file archive, a verified 1,923-page contract, and Sites version 52 |
-| Next content gate | Phase 57A | fixed-cohort completion and realized-outcome panels using stable entity, universe, stage, period, unit, method, denominator, and revision history |
+| Completed and validated | Phase 57A | thirteen Published panels, three explicit holds, five Tier 1 sources, Research Watch 031, a nineteen-file archive, and a verified 1,962-page contract |
+| Next content gate | Phase 57B | accepted-service cohorts and independent outcome validation using stable entity, cohort, stage, period, unit, method, denominator, revision history, and attribution |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now passes a verified 1,923-page Phase 56Z contract. Phase 56Z reviews seventeen records, publishes thirteen repeat or completed-stage panels, and retains four explicit holds where construction is prospective, reporting universes conflict, or results remain forecast. Twelve new Tier 1 source profiles and seven carried sources support the batch. No exact target artifact or trigger is recorded, and no directive scope, implementation, closure, agency-contact, FOIA, or entity-evidence state changes. Sites version 52 is the current owner-only hosting checkpoint. The next non-public content gate is Phase 57A: build fixed-cohort completion and realized-outcome panels while exact-artifact checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now passes a verified 1,962-page Phase 57A contract. Phase 57A reviews sixteen records, publishes thirteen fixed-cohort, independently corroborated operating, or qualified-output panels, and retains three explicit holds where construction, test results, or a complete program baseline are absent. Five new Tier 1 source profiles and three carried official sources support the batch. No exact target artifact or trigger is recorded, and no directive scope, implementation, closure, agency-contact, FOIA, or entity-evidence state changes. Sites version 52 remains the current owner-only hosting checkpoint until Phase 57A is packaged. The next non-public content gate is Phase 57B: build accepted-service cohorts and independent outcome validation while exact-artifact checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1575,7 +1576,7 @@ Delivered:
 9. preserved one Closed, twenty-one Partially Closed, and two Open entity records with zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
 10. matched local content commit `11f8f7da8c0229d6c65dca5f4f11282b6c83bf9f` to exact private runtime commit `404c9661a1ca64ca5b82226e2b1ce3d6aad30b1f`, saved the 2,680-file runtime as Sites version 52, deployed it in `appgdep_6a6fa0e4a0188191b7f11b33f3bb3c5a`, and confirmed one owner, no groups, no editors, and zero external visitors.
 
-### Phase 57A: Fixed-Cohort Completion And Realized-Outcome Panels - Next Content Gate
+### Phase 57A: Fixed-Cohort Completion And Realized-Outcome Panels - Complete And Validated
 
 Goal: move the strongest Phase 56Z panels into stable program cohorts, accepted service, repeat operating periods, regulatory closeout, and realized outcomes without weakening the comparison contract.
 
@@ -1595,6 +1596,34 @@ Boundaries:
 - fixed-cohort completion is not automatically service quality or realized outcome;
 - regulatory concurrence, physical closure, post-closure monitoring, and environmental outcome remain separate;
 - agency, contractor, regulator, and independent evaluation claims retain distinct attribution;
+- no rankings, composites, readiness scores, generalized savings, or unsupported causal inference.
+
+Delivered:
+
+- nine fixed-cohort DOT system outcomes;
+- three Washington Ecology Hanford operating records;
+- one qualified W87-1 First Production Unit;
+- two BEAD pre-completion holds and one NNSA program-baseline hold;
+- five new Tier 1 sources, Research Watch 031, two ledgers, one collection, one update, and a nineteen-file archive;
+- a verified 1,962-page contract with thirteen Published and three In Review records.
+
+### Phase 57B: Accepted-Service Cohorts And Independent Outcome Validation - Next Content Gate
+
+Goal: extend the Phase 57A cohorts into project- or location-level accepted service and independently validated outcomes without weakening the comparison or authority contract.
+
+Priorities:
+
+1. trace selected DOT system outcomes into named accepted projects and service results;
+2. follow BEAD cohorts from construction into activated BSLs, disclosed subscriber-test samples, field acceptance, adoption, and closeout;
+3. add Hanford facility-level throughput, downtime, contaminant removal, compliance, residual inventory, and cost periods;
+4. track recurring accepted W87-1 output while keeping LAP4, SRPPF, integrated schedule, lifecycle cost, and GAO sufficiency separate;
+5. preserve the Louisiana, Montana, and NNSA baseline holds until their exact reopening conditions are met.
+
+Boundaries:
+
+- accepted service requires a stable location or project cohort;
+- regulator, operator, agency, contractor, and independent claims retain distinct attribution;
+- one period or unit does not establish rate, persistence, causation, or enterprise readiness;
 - no rankings, composites, readiness scores, generalized savings, or unsupported causal inference.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
@@ -1709,10 +1738,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 57A with fixed-cohort completion and realized-outcome panels. Prioritize stable DOT program cohorts, BEAD construction through accepted service and testing, repeat cleanup throughput and residual-inventory series, regulatory closeout and disposal, and LAP4 or SRPPF qualification, CD-4, acceptance, and attributable output. Require stable entity, universe, stage, period, unit, method, denominator, and revision history before publication. Insert exact JEC, DOT, DOE, NNSA, Hanford, and HHS target artifacts when public triggers appear, but do not wait for dated milestones.
+Begin Phase 57B with accepted-service cohorts and independent outcome validation. Prioritize project- or location-level DOT completion-to-service evidence, BEAD construction through activated BSLs and disclosed subscriber-test samples, Hanford facility-level throughput and contaminant-removal series, and recurring accepted W87-1 output paired with integrated schedule and lifecycle-cost baselines. Require stable entity, cohort, lifecycle stage, period, unit, method, denominator, revision history, and attribution before publication. Preserve the Louisiana, Montana, and NNSA baseline holds until their named reopening conditions are met.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 56Z is complete and owner-only deployed at 1,923 pages. Sites version 52 serves exact private runtime commit `404c9661a1ca64ca5b82226e2b1ce3d6aad30b1f` under custom access with one owner, no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phase 57A is complete and validated at 1,962 pages, 672 sources, 506 signals, 431 Published signals, 75 In Review signals, 36 collections, 622 research documents, 39 briefings, and 55 updates. The owner-only deployment remains Sites version 52 until the Phase 57A package is saved and deployed. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
