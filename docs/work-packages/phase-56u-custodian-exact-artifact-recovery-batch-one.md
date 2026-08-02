@@ -2,7 +2,7 @@
 
 Date: 2026-08-02
 
-Status: complete and release-verified; owner-only deployment pending
+Status: complete, release-verified, and owner-only deployed
 
 ## Goal
 
@@ -58,6 +58,11 @@ These are bounded public-repository results. They do not establish that an unacq
 - Closure changes: zero.
 - Directive-scope changes: zero.
 - Entity evidence ledger: one Closed, twenty-one Partially Closed, and two Open.
+- Local content commit: `c55a70906b250b95df5f527420b766e976a56995`.
+- Exact private runtime commit: `11b87a567de581b6d4d5368b60d8c944df376332`.
+- Sites version: 46.
+- Deployment: `appgdep_6a6efe2ef8c481919544fd5000713e22`.
+- Access: custom owner-only policy with one owner, no groups, no editors, and zero external visitors.
 
 ## Interpretation boundaries
 
