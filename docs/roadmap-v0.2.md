@@ -387,12 +387,13 @@ Recommended active schedule:
 | Completed | Phase 56M | three federal remediation decisions, three bounded signals, Research Watch 017, six-file archive, and owner-only Sites version 38 |
 | Completed | Phase 56N | ten verified remediation decisions, nine bounded signals, Research Watch 018, thirteen-file archive, and owner-only Sites version 39 |
 | Completed | Phase 56O | seven agency priority portfolios, one bounded government-wide model, eight Published signals, Research Watch 019, eleven-file archive, and owner-only Sites version 40 |
-| Current content gate | Phase 56P | decompose priority portfolios into action-level records and continue compatible outcome acquisition without waiting for scheduled checks |
+| Completed | Phase 56P | twenty-two letter-named actions, four full-report sources, twenty-two Published signals, Research Watch 020, twenty-five-file archive, and owner-only Sites version 41 |
+| Current content gate | Phase 56Q | resolve local action keys to exact GAO recommendation identities and agency responses while holding ambiguous matches |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build and owner-only preview are complete through Sites version 40. Phase 56O publishes seven bounded agency priority portfolios and one government-wide benefit model while holding agency arithmetic, subject mix, recommendation state, modeled potential, and realized benefit apart. The ledger remains one Closed, twenty-one Partially Closed, and two Open evidence states. The current non-public content gate is Phase 56P: decompose the strongest agency portfolios into action-level records, prioritize DOE, HHS, DOT, and VA continuation rails, and continue compatible battery, manufacturer, and carrier outcomes without waiting for dated inserts or the shared annual carrier denominator. Phase 55H, Phase 55R, the inherited HHS tracker hold, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
+The planned v0.2 build and owner-only preview are complete through Sites version 41. Phase 56P publishes twenty-two actions explicitly named in four GAO agency letters while labeling every FTFN action key as a local reference rather than an official recommendation number. The ledger remains one Closed, twenty-one Partially Closed, and two Open evidence states. The current non-public content gate is Phase 56Q: resolve those local keys to exact GAO report and recommendation records, responsible components, agency responses, and status dates, publishing only one-to-one matches and holding ambiguous results. Phase 55H, Phase 55R, the inherited HHS tracker hold, and the remaining dated checks are scheduled inserts, not blockers. Public GitHub synchronization, release freeze, public access, and a production-domain launch remain separately approved external gates. Supabase activation remains a parallel private-backend track.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1235,7 +1236,7 @@ Completion:
 - passed the 1,422-page release contract with 562 sources, 305 signals, 239 Published signals, 417 research documents, and 43 public updates;
 - local content commit `a8183035a7772d7071c38608f05835496b378547` produced exact private runtime commit `f553e70e01be6728ff08c82bafbc048ae1b6c453`, deployed successfully as owner-only Sites version 40 in deployment `appgdep_6a6eca1aff88819187418a57ed928404` with no groups and no external visitors.
 
-### Phase 56P: Action-Level Priority Recommendation Decomposition - Next Content Gate
+### Phase 56P: Action-Level Priority Recommendation Decomposition - Complete And Owner-Only Deployed
 
 Goal: move from portfolio arithmetic to stable named action records without implying that annual counts are comparable agency performance.
 
@@ -1253,6 +1254,35 @@ Boundaries:
 - an agency letter is not proof of the operating outcome behind every recommendation;
 - portfolio counts with different inventories and subject mixes do not support rankings or comparable rates;
 - modeled potential benefits remain separate from recommendation-level attribution and realized savings.
+
+Completion:
+
+- extracted five DOE, four HHS, eight DOT, and five VA actions explicitly named in four current GAO letters;
+- assigned stable local action keys while labeling them as FTFN references rather than GAO Recommendations Database numbers;
+- added four full-report source profiles, twenty-two research documents, twenty-two Published signals, Research Watch 020, two machine-readable ledgers, one collection, one update, and a twenty-five-file archive;
+- integrated four existing Phase 56F agency rails, three reader pathways, six topics, two organizations, and the comparison-boundary map;
+- preserved GSA, OSTP, NTIA, the government-wide model, and the inherited HHS tracker hold as separate contextual or held records;
+- passed the 1,472-page release contract with 566 sources, 327 signals, 261 Published signals, 439 research documents, and 44 public updates;
+- local content commit `fd45e1d2772b1a35c5ea366ec012dd4ff425d1de` produced exact private runtime commit `5c4bdc09987a1e71c18ff6da5c279a3bd589ed6d`, deployed successfully as owner-only Sites version 41 in deployment `appgdep_6a6ecfc72e5c81919535362e1beb7c97` with no groups and no external visitors.
+
+### Phase 56Q: GAO Recommendation Identity And Agency-Response Resolution - Next Content Gate
+
+Goal: replace local-only action identity with exact official recommendation records wherever a one-to-one match can be proven.
+
+Priorities:
+
+1. search the GAO Recommendations Database for each Phase 56P action and attach report number, recommendation number, responsible component, current status, agency response, and last-update date;
+2. prioritize DOT drone, airspace, and automated-vehicle actions; DOE pit-production, Hanford, reserve, and demonstration-project actions; HHS preparedness and program-integrity actions; and VA EHR and acquisition actions;
+3. publish only exact one-to-one matches and hold ambiguous, one-to-many, or textually adjacent results;
+4. retain the Phase 56P local key as a crosswalk, never as a substitute for the official identifier;
+5. preserve the inherited HHS tracker hold and Phase 56O contextual records as separate evidence rails.
+
+Boundaries:
+
+- text similarity does not establish recommendation identity;
+- an agency response is not implementation or closure;
+- recommendation closure does not establish agency performance or operating outcomes;
+- unresolved matches remain explicit holds rather than inferred identities.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
 
@@ -1366,10 +1396,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 56P by decomposing the seven Phase 56O agency portfolios into action-level priority-recommendation records. Start with DOE, HHS, DOT, and VA, where named recommendation states can extend existing Phase 56F rails; treat GSA, OSTP, NTIA, and the government-wide model as contextual until a named action closes an existing gap. Continue compatible battery, manufacturer, and carrier records in parallel. Rerun the held HHS tracker check only when the official tracker changes, keep the shared 2026 carrier release gate intact, and do not pause content expansion while full-year denominators mature.
+Begin Phase 56Q by resolving the twenty-two Phase 56P local action keys to exact GAO recommendation records. Attach the underlying report and recommendation numbers, responsible component, agency response, current status, and last-update date only where one-to-one identity is supported. Hold ambiguous or one-to-many matches. Continue compatible battery, manufacturer, and carrier records in parallel, rerun the held HHS tracker check only when the official tracker changes, and do not pause content expansion while scheduled denominators mature.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Sites version 40 serves local content commit `a8183035a7772d7071c38608f05835496b378547` from exact private runtime commit `f553e70e01be6728ff08c82bafbc048ae1b6c453` in deployment `appgdep_6a6eca1aff88819187418a57ed928404`, under custom owner-only access with no groups and no external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Sites version 41 serves local content commit `fd45e1d2772b1a35c5ea366ec012dd4ff425d1de` from exact private runtime commit `5c4bdc09987a1e71c18ff6da5c279a3bd589ed6d` in deployment `appgdep_6a6ecfc72e5c81919535362e1beb7c97`, under custom owner-only access with no groups and no external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
