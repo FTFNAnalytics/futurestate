@@ -2920,7 +2920,11 @@ The Amtrak and broadband records establish delivery or serviceability rather tha
 
 Deployment receipt:
 
-- pending the exact validated Phase 57C source commit, private runtime package, Sites version, and owner-only deployment verification;
+- local content commit `8e247466e1e95c032a0e14c455e42ed5d1790416`;
+- exact private runtime commit `928dcf828052b5e71208f838264fef5d73c057ad`;
+- owner-only Sites version 55 in deployment `appgdep_6a6fccf316908191b69b2541e9e6c79d`;
+- 2,875-file hosted runtime archive with content hash `sha256:2a06f0eba5215390010de8f3342894cc71d2a553709b91b9939c10bf1e6c41b4`;
+- custom access confirmed with one owner, no groups, no editors, and zero external visitors;
 - public access, package freeze, public GitHub, Hostinger DNS, custom-domain attachment, and launch remain unchanged.
 
 Boundary:

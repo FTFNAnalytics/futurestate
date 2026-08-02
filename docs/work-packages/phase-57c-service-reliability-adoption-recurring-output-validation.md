@@ -2,7 +2,7 @@
 
 Date: 2026-08-02
 
-Status: complete and validated; owner-only deployment receipt pending
+Status: complete, validated, and owner-only deployed
 
 ## Goal
 
@@ -90,4 +90,12 @@ Build persistent service quality and compatible time-series replication. Priorit
 
 ## Deployment receipt
 
-To be recorded after the exact validated Phase 57C source commit is packaged, saved, deployed, and reverified under the existing owner-only Sites access policy. Public access, DNS, the custom domain, package freeze, and the public GitHub remote remain unchanged.
+- Local content commit: `8e247466e1e95c032a0e14c455e42ed5d1790416`.
+- Exact private runtime commit: `928dcf828052b5e71208f838264fef5d73c057ad`.
+- OpenAI Sites version: 55 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_52f0943adcdc8191a2764e07de4715d5`).
+- Deployment: `appgdep_6a6fccf316908191b69b2541e9e6c79d`.
+- Hosted runtime: 2,875 files, 141,434,880 bytes, content hash `sha256:2a06f0eba5215390010de8f3342894cc71d2a553709b91b9939c10bf1e6c41b4`.
+- Local compressed package: 93,738,296 bytes, SHA-256 `87A2F4EDB1E3906FBEE761EEF9564324A9F8A836FA3F2513A86DBEDEE6997449`.
+- Deployment, source provenance, runtime archive, and access policy passed; visual route QA was not requested for Phase 57C.
+- Access: custom owner-only, one owner, no groups, no editors, and zero external visitors.
+- Public access, DNS, the custom domain, package freeze, and the public GitHub remote remain unchanged.
