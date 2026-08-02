@@ -171,6 +171,8 @@ What is now stable:
 - The verified Phase 56Z contract is 1,923 pages, 667 sources, 490 signals, 418 Published signals, 72 In Review signals, 452 current Published-support sources, thirty-eight briefings, thirty-five research collections, 606 research documents, 54 updates, and a twenty-file archive. Local content commit `11f8f7da8c0229d6c65dca5f4f11282b6c83bf9f` maps to exact private runtime commit `404c9661a1ca64ca5b82226e2b1ce3d6aad30b1f`, deployed as owner-only Sites version 52 in `appgdep_6a6fa0e4a0188191b7f11b33f3bb3c5a` with one owner, no groups, no editors, and zero external visitors.
 - Phase 57A reviews sixteen fixed-cohort completion and realized-outcome records. Thirteen publish and three remain In Review; five new Tier 1 sources and three carried official sources support the batch with zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
 - The verified Phase 57A contract is 1,962 pages, 672 sources, 506 signals, 431 Published signals, 75 In Review signals, 455 current Published-support sources, thirty-nine briefings, thirty-six research collections, 622 research documents, 55 updates, and a nineteen-file archive. Local content commit `b30c63b04f4633e3937a0d45e16fc8f4f87ee59f` maps to exact private runtime commit `e4ba82a9c248c60db917c07944143bb5b186a463`, deployed as owner-only Sites version 53 in `appgdep_6a6fa914ec0081918a598ddc330311fb` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57B reviews seventeen accepted-service and independent-outcome records. Ten publish and seven remain In Review; eleven new Tier 1 sources and five carried official sources support the batch with zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
+- The locally verified Phase 57B contract is 2,009 pages, 683 sources, 523 signals, 441 Published signals, 82 In Review signals, 463 current Published-support sources, forty briefings, thirty-seven research collections, 639 research documents, 56 updates, and a twenty-file archive. Owner-only Sites packaging is pending; version 53 remains the active private checkpoint.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
@@ -210,7 +212,7 @@ What is now stable:
 What is still prelaunch scaffolding:
 
 - Four hundred and thirty-one signal records are `Published`.
-- Seventy-five signal records are still `In Review`; no Draft Sample remains. Two are the Phase 56Q HHS-04 and VA-02 one-to-many holds, and three are the Phase 57A completion or baseline holds.
+- Eighty-two signal records are still `In Review`; no Draft Sample remains. Two are the Phase 56Q HHS-04 and VA-02 one-to-many holds, three are the inherited Phase 57A completion or baseline holds, and seven are the Phase 57B closeout, performance, rate, capacity, or baseline holds.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -220,7 +222,7 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should continue with Phase 57B accepted-service cohorts and independent outcome validation. Prioritize project- or location-level DOT completion-to-service evidence, BEAD construction through activated BSLs and test samples, Hanford facility-level throughput and contaminant removal, and recurring accepted W87-1 output paired with cost and schedule baselines while treating exact-artifact checks as non-blocking inserts. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should continue with Phase 57C service reliability, adoption, and recurring-output validation. Follow the same Amtrak station and railcar, Louisiana 104-location, Hanford facility and container, groundwater, and NNSA program cohorts into compatible use, quality, uptime, adoption, closeout, recurring accepted output, and complete cost-and-schedule baselines while treating exact-artifact checks as non-blocking inserts. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
@@ -319,7 +321,7 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 57A: Fixed-Cohort Completion And Realized-Outcome Panels
+Phase 57B: Accepted-Service And Independent-Outcome Validation
 ```
 
 Key files:
@@ -514,16 +516,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 57A fixed-cohort completion and realized-outcome panels.
+Phase 57B accepted-service and independent-outcome validation.
 
 Current release checkpoint:
 v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
 
 Current development state:
-v0.2 Phase 57A candidate: package 0.2.0-dev, 672 public sources, 150 first-pass-triaged private candidates, 506 signals, 17 topics, 55 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 1,962 generated site pages, 431 Published signals, 32 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 36 research collections, 622 research documents, all prior verified archives plus the Phase 57A 19-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 461 Manual Review and 211 Probe Ready records.
+v0.2 Phase 57B candidate: package 0.2.0-dev, 683 public sources, 150 first-pass-triaged private candidates, 523 signals, 17 topics, 56 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 2,009 generated site pages, 441 Published signals, 33 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 37 research collections, 639 research documents, all prior verified archives plus the Phase 57B 20-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 466 Manual Review and 217 Probe Ready records.
 
 Next decision gate:
-Begin Phase 57B. Build accepted-service cohorts and independent outcome validation for DOT, BEAD, Hanford, and NNSA while inserting exact target artifacts only when authoritative triggers appear. Preserve agency assertions, regulator corroboration, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, cohort, stage, period, unit, method, denominator, revision history, attribution, and realized outcomes as separate. Do not infer causation or create rankings, composite scores, readiness scores, or generalized savings claims. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Begin Phase 57C. Build service reliability, adoption, and recurring-output validation for the same named Amtrak, Louisiana, Hanford, and NNSA cohorts while inserting exact target artifacts only when authoritative triggers appear. Preserve agency assertions, regulator corroboration, FTFN matrices, GAO acceptance, implementation, closure, entity evidence, cohort, stage, period, unit, method, denominator, revision history, attribution, and realized outcomes as separate. Do not infer causation or create rankings, composite scores, readiness scores, or generalized savings claims. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

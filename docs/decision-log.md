@@ -2870,3 +2870,29 @@ Public access, package freeze, public GitHub, Hostinger DNS, custom-domain attac
 Boundary:
 
 Target attainment is not a causal evaluation. A reporting-method break prevents false completion arithmetic. Regulator corroboration is not a complete facility-level outcome series. Cumulative water treated is not contaminant mass removed or aquifer restoration. One qualified unit is not recurring production, annual capacity, enterprise schedule, lifecycle cost, or readiness. Authorization, protocol, construction, acceptance, operation, qualified output, recurring rate, closeout, implementation, and closure remain separate. No ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference is authorized.
+
+## 2026-08-02: Phase 57B Publishes Ten Accepted-Service Or Observed-Output Panels And Holds Seven Validation Gaps
+
+Decision:
+
+- publish five named accepted-service cohorts and five observed operating-output panels;
+- retain four closeout or performance records and three rate, capacity, or baseline records as explicit `In Review` holds;
+- partially reopen the Louisiana BEAD service hold only for the named 104-location Nextlink availability cohort while preserving the broader nearly 5,000-location authorization cohort;
+- keep service availability separate from subscribers, adoption, performance tests, affordability, reliability, and closeout;
+- keep accepted service, installed equipment, gallons, filled containers, shipments, accepted disposal, recurring rate, analytical capacity, and complete baselines as distinct evidence stages;
+- preserve the one Closed, twenty-one Partially Closed, and two Open entity evidence ledger;
+- record zero exact-target artifacts, triggers, directive-scope changes, implementation changes, closure changes, agency contacts, or FOIA requests;
+- select Phase 57C service reliability, adoption, and recurring-output validation as the next non-public content gate.
+
+Reason:
+
+The new Amtrak, Louisiana, Hanford, NNSA, and GAO records materially advance named cohorts, but the available public evidence does not support stage inflation into use, quality, persistence, adoption, accepted closeout, recurring production, enterprise readiness, or generalized outcomes.
+
+Deployment receipt:
+
+- pending owner-only packaging and deployment;
+- public access, package freeze, public GitHub, Hostinger DNS, custom-domain attachment, and launch remain unchanged.
+
+Boundary:
+
+Turnover is not final completion, service quality, or outcome. Availability is not use, test performance, adoption, affordability, or closeout. Accepted service is not observed throughput or uptime. Filled, shipped, accepted, and disposed containers remain separate. Production objectives and analytical capacities are not recurring accepted output or enterprise readiness. No ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference is authorized.

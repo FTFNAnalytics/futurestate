@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 57A adds thirteen Published fixed-cohort, independently corroborated operating, or qualified-output panels and three explicit holds while cohort, method, denominator, acceptance, rate, closeout, and outcome remain separate.",
+  "summary": "A comparison and inference protocol: Phase 57B adds ten Published named accepted-service or observed-output panels and seven explicit holds while turnover, use, performance, rate, capacity, baseline, closeout, and outcome remain separate.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -368,7 +368,18 @@
     "source-57a-wa-ecology-hanford-overview",
     "source-57a-nnsa-w87-1-first-production-unit",
     "source-57a-louisiana-bead-nepa-approvals",
-    "source-57a-montana-bead-disbursement-guide"
+    "source-57a-montana-bead-disbursement-guide",
+    "source-57b-amtrak-ada-progress-june-2026",
+    "source-57b-louisiana-nextlink-first-bead-tower",
+    "source-57b-louisiana-starlink-bead-agreement",
+    "source-57b-montana-bead-quarterly-report-june-2026",
+    "source-57b-hanford-central-plateau-water-operational",
+    "source-57b-hanford-etf-six-month-campaign",
+    "source-57b-ecology-wtp-byproduct-response-comments",
+    "source-57b-hanford-wtp-project-managers-may-2026",
+    "source-57b-hanford-groundwater-decade-fy2024",
+    "source-57b-nnsa-sasc-testimony-may-2026",
+    "source-57b-nnsa-pit-production-draft-peis-2026"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -700,7 +711,17 @@
     "signal-57a-hanford-law-facility-regulator-confirmed-operation",
     "signal-57a-hanford-idf-regulator-confirmed-acceptance",
     "signal-57a-hanford-groundwater-cumulative-treatment",
-    "signal-57a-nnsa-w87-1-qualified-first-production-unit"
+    "signal-57a-nnsa-w87-1-qualified-first-production-unit",
+    "signal-57b-amtrak-eleven-station-passenger-use-cohort",
+    "signal-57b-amtrak-eight-station-final-completion-cohort",
+    "signal-57b-amtrak-three-station-substantial-to-final-match",
+    "signal-57b-amtrak-thirteen-accessible-boarding-ramp-deployments",
+    "signal-57b-louisiana-nextlink-104-location-live-service",
+    "signal-57b-hanford-central-plateau-water-accepted-service",
+    "signal-57b-hanford-etf-725-million-gallon-campaign",
+    "signal-57b-hanford-ecology-50000-gallons-34-containers",
+    "signal-57b-hanford-joint-minutes-66-containers-shipped",
+    "signal-57b-hanford-groundwater-fy2024-repeat-outcome"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -963,6 +984,12 @@
       "label": "Thirteen fixed-cohort or accepted-result panels; three holds",
       "node_type": "Signal",
       "note": "Stable cohorts advance only when stage, period, unit, method, denominator, and authority remain explicit."
+    },
+    {
+      "id": "node-phase57b-accepted-service-independent-outcomes",
+      "label": "Ten accepted-service or observed-output panels; seven holds",
+      "node_type": "Signal",
+      "note": "Named cohorts advance only when stage, period, unit, method, denominator, revision history, and authority remain explicit."
     }
   ],
   "links": [
@@ -1567,6 +1594,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Target attainment, regulator corroboration, and a first production unit do not establish generalized causation, ranking, or enterprise readiness."
+    },
+    {
+      "from": "node-phase57b-accepted-service-independent-outcomes",
+      "to": "node-phase57a-fixed-cohort-completion-realized-outcomes",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57B extends fixed cohorts into named accepted service, observed operating output, and explicit validation holds."
+    },
+    {
+      "from": "node-phase57b-accepted-service-independent-outcomes",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Stations, railcars, broadband locations, gallons, containers, pits, capacity, and cost baselines are non-interchangeable denominators."
+    },
+    {
+      "from": "node-phase57b-accepted-service-independent-outcomes",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Turnover, live service, regulator snapshots, analytical capacity, and targets do not establish generalized causation, ranking, or readiness."
     }
   ],
   "what_this_map_supports": [
@@ -1611,7 +1659,8 @@
     "Thirteen bounded agency, site, waste-stream, and project follow-through records with explicit evidence stages and denominators.",
     "Fifteen bounded longitudinal follow-through records with explicit entity, universe, stage, period, unit, method, and denominator.",
     "Thirteen bounded repeat or completed-stage panels plus four visible holds under explicit comparison contracts.",
-    "Thirteen bounded fixed-cohort, independently corroborated operating, or qualified-output panels plus three visible holds."
+    "Thirteen bounded fixed-cohort, independently corroborated operating, or qualified-output panels plus three visible holds.",
+    "Ten bounded named accepted-service or observed-output panels plus seven visible closeout, performance, rate, capacity, or baseline holds."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -1727,6 +1776,7 @@
     "Later accepted operation and realized-outcome evidence using the same Phase 56X identities, periods, units, methods, and denominators.",
     "Later completed delivery, accepted operation, sustained performance, closeout, and realized-outcome evidence using the same Phase 56Y identities and denominators.",
     "Later compatible periods, accepted service, sustained operation, closeout, and realized-outcome evidence under the same entity and denominator.",
-    "Compatible later periods, accepted service and tests, facility-level operating series, recurring qualified output, complete cost and schedule baselines, closeout, and realized-outcome evidence."
+    "Compatible later periods, accepted service and tests, facility-level operating series, recurring qualified output, complete cost and schedule baselines, closeout, and realized-outcome evidence.",
+    "Compatible service use, test samples, quality, uptime, contaminant removal, recurring qualified output, complete cost and schedule baselines, accepted closeout, and realized-outcome evidence."
   ]
 }

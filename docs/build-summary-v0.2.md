@@ -294,6 +294,8 @@ Phase 56Z turns the strongest identities into four DOT repeat financial panels, 
 
 Phase 57A converts the strongest records into nine fixed-cohort DOT system outcomes, three Washington Ecology Hanford operating records, one qualified W87-1 First Production Unit, two BEAD pre-completion holds, and one NNSA program-baseline hold. Five new official sources and three carried sources support thirteen Published documents and signals, three In Review documents and signals, one collection, Research Watch 031, one public update, and separate evidence and publication ledgers. The verified candidate is now 1,962 pages, 672 sources, 506 signals, 431 Published, 75 In Review, 55 updates, thirty-nine briefings, thirty-six collections, 622 research documents, and 455 current Published-support sources. No exact target or trigger, directive-scope, implementation, closure, agency-contact, FOIA, or entity-evidence state changes. Local content commit `b30c63b04f4633e3937a0d45e16fc8f4f87ee59f` produced exact private runtime commit `e4ba82a9c248c60db917c07944143bb5b186a463`, deployed as owner-only Sites version 53 in `appgdep_6a6fa914ec0081918a598ddc330311fb`.
 
+Phase 57B adds seventeen accepted-service and independent-outcome records. Five accepted-service cohorts and five observed operating outputs publish; four closeout or performance records and three rate, capacity, or baseline records remain In Review. Eleven new Tier 1 sources and five carried official sources support Research Watch 032, two ledgers, one collection, one public update, and a twenty-file archive. The locally verified candidate is now 2,009 pages, 683 sources, 523 signals, 441 Published, 82 In Review, 56 updates, forty briefings, thirty-seven collections, 639 research documents, and 463 current Published-support sources. One Louisiana hold is partially reopened only for a 104-location service-availability cohort; all other scope, implementation, closure, contact, FOIA, and entity-evidence states remain unchanged. Owner-only packaging is pending.
+
 Verified Phase 56W results:
 
 - 1,798 generated site pages,
@@ -350,11 +352,20 @@ Verified Phase 57A results:
 - the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
 - content references, source health, Astro diagnostics, the 1,962-page build, Phase 57A assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the nineteen-file archive all pass.
 
+Verified Phase 57B results:
+
+- ten Published records and seven In Review holds with a 5 / 5 / 4 / 3 accepted-service, observed-output, closeout-or-performance-hold, and rate-capacity-baseline-hold split;
+- eleven new Tier 1 source profiles, five carried official sources, Research Watch 032, one collection, one update, and two machine-readable ledgers;
+- explicit turnover, final-completion, availability, subscriber, test, throughput, quality, shipment, acceptance, recurring-rate, analytical-capacity, baseline, and outcome boundaries;
+- zero exact targets, triggers, directive-scope changes, implementation changes, closure changes, agency contacts, and FOIA requests;
+- the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
+- content references, source health, Astro diagnostics, the 2,009-page build, Phase 57B assertions, sitemap membership, exports, private-registry exclusion, and the twenty-file archive pass; the full release assertion is rerun against the updated manifest before packaging.
+
 The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
-The local release work is preserved on `codex/phase51-content`. Phase 57A is complete, validated, and owner-only deployed. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
+The local release work is preserved on `codex/phase51-content`. Phase 57B is complete and locally validated; owner-only packaging is the remaining release operation. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
 The current hosting checkpoint is owner-only Sites version 53, serving the verified Phase 57A package from exact private runtime commit `e4ba82a9c248c60db917c07944143bb5b186a463` in deployment `appgdep_6a6fa914ec0081918a598ddc330311fb`. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
@@ -362,7 +373,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- Seventy-five signals remain `In Review`; the three Phase 57A holds keep pre-construction BEAD authorization, a test protocol without results, and the incomplete NNSA program baseline outside the Published layer. Four hundred and thirty-one bounded signals are Published.
+- Eighty-two signals remain `In Review`; the seven Phase 57B holds keep unaccepted closeout, undisclosed service performance, forward activation, reporting instructions, production targets, analytical capacity, and the incomplete NNSA program baseline outside the Published layer. Four hundred and forty-one bounded signals are Published.
 - Seven briefings and all five local-system profiles remain prelaunch or research material. The thirty-two Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
@@ -465,4 +476,4 @@ npm.cmd run verify:phase57a
 npm.cmd run verify:release
 ```
 
-Expected output: 1,962 generated site pages, the prior verified research archives plus the Phase 57A nineteen-file archive, thirteen Published Phase 57A records and three In Review holds, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57A and v0.2 release assertions.
+Expected output: 2,009 generated site pages, the prior verified research archives plus the Phase 57B twenty-file archive, ten Published Phase 57B records and seven In Review holds, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57B and v0.2 release assertions.
