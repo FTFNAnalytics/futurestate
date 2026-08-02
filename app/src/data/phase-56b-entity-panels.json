@@ -584,6 +584,78 @@
           "record_status": "Published",
           "reopening_rule": "Reopen when GAO publishes the next HHS priority letter, changes a named priority status, or HHS OIG posts the held hospital-control update."
         }
+      ],
+      "phase_56p_coverage_decision": {
+        "coverage_id": "coverage-56f-hhs",
+        "entity_id": "agency-hhs",
+        "entity_name": "Department of Health and Human Services",
+        "action_count": 4,
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain Partially Closed. The letter supplies named actions but not the implementation or operating evidence required to close the selected Phase 56F gap.",
+        "reopening_rule": "Reopen when an exact GAO database record, agency response, or later HHS priority letter changes a named action state."
+      },
+      "phase_56p_actions": [
+        {
+          "action_id": "action-56p-hhs-01",
+          "action_key": "HHS-01",
+          "letter_id": "GAO-26-108997",
+          "subject": "Medicare and Medicaid program integrity",
+          "action_text": "CMS should account for Medicaid payments that offset costs for uninsured or low-income care when making Medicare payments to individual hospitals.",
+          "status_period": "Open priority portfolio as of May 2026; letter dated June 3, 2026",
+          "letter_state": "Open priority action named in the 2026 agency letter",
+          "identity_boundary": "FTFN key HHS-01 identifies the action text in GAO-26-108997; it is not a GAO Recommendations Database number.",
+          "decision": "Publish as a letter-named action without assigning an unsupported GAO recommendation number or implementation state.",
+          "remaining_gap": "Underlying GAO Recommendations Database identity, agency response, implementation evidence, closure state, and operating outcome.",
+          "reopening_rule": "Recheck the GAO Recommendations Database or the next HHS priority letter for an exact identifier or status change tied to this action.",
+          "source_id": "source-56p-hhs-priority-letter-full-report-2026",
+          "signal_id": "signal-56p-hhs-medicaid-offsets-medicare-hospital-payments"
+        },
+        {
+          "action_id": "action-56p-hhs-02",
+          "action_key": "HHS-02",
+          "letter_id": "GAO-26-108997",
+          "subject": "Medicaid oversight",
+          "action_text": "CMS should complete a national risk assessment so oversight resources can be tested for adequacy and allocated to the highest-risk areas.",
+          "status_period": "Open priority portfolio as of May 2026; letter dated June 3, 2026",
+          "letter_state": "Open priority action named in the 2026 agency letter",
+          "identity_boundary": "FTFN key HHS-02 identifies the action text in GAO-26-108997; it is not a GAO Recommendations Database number.",
+          "decision": "Publish as a letter-named action without assigning an unsupported GAO recommendation number or implementation state.",
+          "remaining_gap": "Underlying GAO Recommendations Database identity, agency response, implementation evidence, closure state, and operating outcome.",
+          "reopening_rule": "Recheck the GAO Recommendations Database or the next HHS priority letter for an exact identifier or status change tied to this action.",
+          "source_id": "source-56p-hhs-priority-letter-full-report-2026",
+          "signal_id": "signal-56p-hhs-medicaid-oversight-national-risk-assessment"
+        },
+        {
+          "action_id": "action-56p-hhs-03",
+          "action_key": "HHS-03",
+          "letter_id": "GAO-26-108997",
+          "subject": "Public-health preparedness",
+          "action_text": "CDC should collect and analyze information on jurisdictions' ability to meet preparedness capabilities and the gaps in their ability to do so.",
+          "status_period": "Open priority portfolio as of May 2026; letter dated June 3, 2026",
+          "letter_state": "Open priority action named in the 2026 agency letter",
+          "identity_boundary": "FTFN key HHS-03 identifies the action text in GAO-26-108997; it is not a GAO Recommendations Database number.",
+          "decision": "Publish as a letter-named action without assigning an unsupported GAO recommendation number or implementation state.",
+          "remaining_gap": "Underlying GAO Recommendations Database identity, agency response, implementation evidence, closure state, and operating outcome.",
+          "reopening_rule": "Recheck the GAO Recommendations Database or the next HHS priority letter for an exact identifier or status change tied to this action.",
+          "source_id": "source-56p-hhs-priority-letter-full-report-2026",
+          "signal_id": "signal-56p-hhs-public-health-preparedness-capability-gaps"
+        },
+        {
+          "action_id": "action-56p-hhs-04",
+          "action_key": "HHS-04",
+          "letter_id": "GAO-26-108997",
+          "subject": "Emergency-response coordination",
+          "action_text": "HHS should better manage fragmentation in department-wide after-action programs used to identify and resolve recurring emergency-response challenges.",
+          "status_period": "Open priority portfolio as of May 2026; letter dated June 3, 2026",
+          "letter_state": "Open priority action named in the 2026 agency letter",
+          "identity_boundary": "FTFN key HHS-04 identifies the action text in GAO-26-108997; it is not a GAO Recommendations Database number.",
+          "decision": "Publish as a letter-named action without assigning an unsupported GAO recommendation number or implementation state.",
+          "remaining_gap": "Underlying GAO Recommendations Database identity, agency response, implementation evidence, closure state, and operating outcome.",
+          "reopening_rule": "Recheck the GAO Recommendations Database or the next HHS priority letter for an exact identifier or status change tied to this action.",
+          "source_id": "source-56p-hhs-priority-letter-full-report-2026",
+          "signal_id": "signal-56p-hhs-after-action-program-fragmentation"
+        }
       ]
     },
     {
@@ -1754,5 +1826,6 @@
   "phase_56l_acquisition_ledger": "phase-56l-realized-outcome-continuation.json",
   "phase_56m_continuation_ledger": "phase-56m-federal-remediation-outcomes.json",
   "phase_56n_continuation_ledger": "phase-56n-verified-remediation-outcomes.json",
-  "phase_56o_continuation_ledger": "phase-56o-cross-agency-remediation.json"
+  "phase_56o_continuation_ledger": "phase-56o-cross-agency-remediation.json",
+  "phase_56p_continuation_ledger": "phase-56p-action-recommendation-ledger.json"
 }

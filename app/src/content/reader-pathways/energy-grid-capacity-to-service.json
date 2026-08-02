@@ -36,7 +36,8 @@
     "Phase 56J adds 3 named continuation decisions to this pathway under the ordered evidence-value queue.",
     "Acquisition order describes evidence opportunity and does not rank entities, performance, safety, quality, readiness, or value.",
     "Phase 56K checks 2 exact named records in this pathway and preserves explicit non-closures.",
-    "An exact-record check can improve the evidence rail without changing the selected closure state."
+    "An exact-record check can improve the evidence rail without changing the selected closure state.",
+    "Phase 56P adds five exact DOE actions across nuclear modernization, environmental liabilities, energy security, and program management."
   ],
   "primary_topics": [
     "Energy",
@@ -89,7 +90,12 @@
     "signal-56j-manatee-monthly-operation",
     "signal-56j-dalrymple-march-constraint",
     "signal-56j-hornsdale-event-operation",
-    "signal-56k-moss-landing-corrective-action-status"
+    "signal-56k-moss-landing-corrective-action-status",
+    "signal-56p-doe-pit-production-lifecycle-cost-estimate",
+    "signal-56p-doe-complex-wide-waste-disposal-analysis",
+    "signal-56p-doe-strategic-petroleum-reserve-periodic-reviews",
+    "signal-56p-doe-nuclear-demonstration-project-oversight",
+    "signal-56p-doe-hanford-waste-treatment-pause-conditions"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -158,7 +164,8 @@
     "source-56j-manatee-eia923-plant-60014",
     "source-56j-dalrymple-aemo-march-2026",
     "source-56j-hornsdale-h1-2024-operations",
-    "source-56k-moss-landing-go167-corrective-action-2025"
+    "source-56k-moss-landing-go167-corrective-action-2025",
+    "source-56p-doe-priority-letter-full-report-2026"
   ],
   "organization_ids": [
     "org-us-department-energy",
@@ -181,7 +188,8 @@
     "briefing-research-watch-012-acquisition-and-deepening",
     "briefing-research-watch-013-first-pass-completion",
     "briefing-research-watch-014-evidence-value-continuation",
-    "briefing-research-watch-015-exact-record-continuation"
+    "briefing-research-watch-015-exact-record-continuation",
+    "briefing-research-watch-020-action-level-priority-recommendations"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -203,7 +211,8 @@
     "research-collection-open-rail-acquisition-partial-closure-deepening-2026",
     "research-collection-remaining-open-rails-partial-closure-first-pass-2026",
     "research-collection-evidence-value-continuation-queue-batch-one-2026",
-    "research-collection-exact-record-continuation-batch-two-2026"
+    "research-collection-exact-record-continuation-batch-two-2026",
+    "research-collection-agency-priority-recommendation-action-ledger-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -296,6 +305,11 @@
       "stage": "Phase 56K exact-record continuation",
       "current_state": "Seven named records are checked; three bounded observations publish, four exact non-closures are recorded, and no evidence state changes.",
       "boundary": "A response filing, recommendation icon, arrival date, index check, audit catalog, fleet report, or audit initiation is not a differently scoped final result."
+    },
+    {
+      "stage": "Phase 56P action-level priority recommendation decomposition",
+      "current_state": "Phase 56P adds five exact DOE actions across nuclear modernization, environmental liabilities, energy security, and program management.",
+      "boundary": "Cost estimates, analyses, reviews, oversight, and pause conditions do not establish project completion, cleanup savings, reserve adequacy, or service outcomes."
     }
   ],
   "evidence_limits": [
@@ -319,7 +333,9 @@
     "Phase 56H closure and deepening states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
     "Phase 56I first-pass and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
     "Phase 56J acquisition order and closure states cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
-    "Phase 56K exact-record decisions cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims."
+    "Phase 56K exact-record decisions cannot be converted into rankings, scores, readiness, quality, safety, value, or causal claims.",
+    "Cost estimates, analyses, reviews, oversight, and pause conditions do not establish project completion, cleanup savings, reserve adequacy, or service outcomes.",
+    "FTFN Phase 56P action keys are stable local references, not official GAO Recommendations Database numbers."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -350,6 +366,7 @@
     "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes plant 60014 interval dispatch or availability under a declared denominator.",
     "Reopen when ElectraNet, AGL, AEMO, ARENA, or the South Australian regulator publishes a later asset-specific operating series or confirmed islanding activation.",
     "Reopen when AEMO, AER, the South Australian government, or the operator publishes a full asset-specific annual operating series with availability and dispatch denominators.",
-    "Reopen when CPUC or another competent regulator publishes final January 2025 incident findings or verifies closure of the relevant corrective actions."
+    "Reopen when CPUC or another competent regulator publishes final January 2025 incident findings or verifies closure of the relevant corrective actions.",
+    "Underlying GAO Recommendations Database records, agency responses, and later action-specific status changes for the Phase 56P ledger."
   ]
 }
