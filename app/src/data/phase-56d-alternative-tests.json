@@ -72,6 +72,29 @@
           "source_id": "source-56d-nasa-gao-risk-management-2025",
           "reopening_rule": "Reopen when GAO changes any GAO-25-108138 recommendation to implemented or closed, or NASA OIG publishes the FY 2026 FISMA evaluation with tested-system scope."
         }
+      ],
+      "phase_56n_coverage_decision": {
+        "coverage_id": "coverage-56f-nasa",
+        "entity_id": "agency-nasa",
+        "entity_name": "National Aeronautics and Space Administration",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-24-105980 recommendations 33 and 34: GAO lists both NASA recommendations Open. NASA reported evaluating use cases and retiring 38, but did not provide supporting documentation for the required plan; GAO also found the 2025 AI inventory missing start dates and required high-impact-use information.",
+        "decision": "Retain Partially Closed. The new recommendation or component record improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO changes recommendation 33 or 34 status or NASA publishes documentation that GAO accepts as implementation evidence."
+      },
+      "phase_56n_records": [
+        {
+          "record_id": "record-56n-nasa-ai-recommendation-status",
+          "entity_id": "agency-nasa",
+          "exact_record": "GAO-24-105980 recommendations 33 and 34",
+          "status_period": "Recommendation 33 evidence through December 2024; recommendation 34 review in February 2026",
+          "finding": "GAO lists both NASA recommendations Open. NASA reported evaluating use cases and retiring 38, but did not provide supporting documentation for the required plan; GAO also found the 2025 AI inventory missing start dates and required high-impact-use information.",
+          "decision": "Publish the exact two-action non-closure. The record materially separates reported agency activity from GAO-verified recommendation implementation.",
+          "source_id": "source-56n-gao-federal-ai-recommendation-status-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO changes recommendation 33 or 34 status or NASA publishes documentation that GAO accepts as implementation evidence."
+        }
       ]
     },
     {
@@ -148,7 +171,41 @@
       "phase_56k_acquisition_result": "The current DHS OIG public report index does not expose a final FY 2025 enterprise FISMA evaluation. Previously captured component and vulnerability-management records remain adjacent evidence and do not replace the named enterprise result.",
       "phase_56k_decision": "Retain Open. No exact enterprise-wide FY 2025 evaluation or dated replacement outcome was identified on the authoritative public rail.",
       "phase_56k_remaining_gap": "Final FY 2025 DHS enterprise FISMA evaluation, finding-level results, remediation status, incidents, recovery, and mission effects.",
-      "phase_56k_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome."
+      "phase_56k_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome.",
+      "phase_56n_coverage_decision": {
+        "coverage_id": "coverage-56f-dhs",
+        "entity_id": "agency-dhs",
+        "entity_name": "Department of Homeland Security",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-24-105980 recommendations 16, 17, and 18: GAO lists recommendations 16 and 18 Closed-Implemented after DHS published its M-25-21 compliance plan and supplied a complete 2025 AI inventory. Recommendation 17 remains Open because GAO had not received documentation of the separate authorities review and M-21-06 plan. GAO-26-109077 DHS priority recommendation portfolio: GAO reports that DHS implemented five prior priority recommendations, two were closed as no longer valid, seven new priority recommendations were added, and the current portfolio remains 39.",
+        "decision": "Retain Partially Closed. The new recommendation or component record improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO changes recommendation 17 status or DHS provides the authorities-review and M-21-06 plan evidence GAO identifies as missing. Reopen when GAO publishes the next DHS priority-recommendation letter or action-level status changes for the current portfolio."
+      },
+      "phase_56n_records": [
+        {
+          "record_id": "record-56n-dhs-ai-recommendation-split-status",
+          "entity_id": "agency-dhs",
+          "exact_record": "GAO-24-105980 recommendations 16, 17, and 18",
+          "status_period": "Compliance-plan and inventory evidence through February 2026",
+          "finding": "GAO lists recommendations 16 and 18 Closed-Implemented after DHS published its M-25-21 compliance plan and supplied a complete 2025 AI inventory. Recommendation 17 remains Open because GAO had not received documentation of the separate authorities review and M-21-06 plan.",
+          "decision": "Publish the exact two-closed, one-open split while preserving the separate legal-authority, compliance-plan, and inventory-control identities.",
+          "source_id": "source-56n-gao-federal-ai-recommendation-status-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO changes recommendation 17 status or DHS provides the authorities-review and M-21-06 plan evidence GAO identifies as missing."
+        },
+        {
+          "record_id": "record-56n-dhs-priority-recommendation-portfolio-2026",
+          "entity_id": "agency-dhs",
+          "exact_record": "GAO-26-109077 DHS priority recommendation portfolio",
+          "status_period": "May 2025 baseline through July 2026",
+          "finding": "GAO reports that DHS implemented five prior priority recommendations, two were closed as no longer valid, seven new priority recommendations were added, and the current portfolio remains 39.",
+          "decision": "Publish the exact portfolio movement as a remediation-throughput record while keeping implemented, no-longer-valid, newly added, and currently open states distinct.",
+          "source_id": "source-56n-dhs-gao-priority-recommendations-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO publishes the next DHS priority-recommendation letter or action-level status changes for the current portfolio."
+        }
+      ]
     },
     {
       "test_id": "test-56d-hhs-repeat-control-test",
@@ -229,6 +286,40 @@
           "decision": "Retain Partially Closed at the HHS coverage level. This is a positive component control test with an exact no-recommendation result, not evidence of department-wide effectiveness or a closed FY 2025 FISMA recommendation.",
           "source_id": "source-56m-hhs-small-hospital-cyber-controls-2026",
           "reopening_rule": "Reopen when HHS OIG publishes a compatible repeat test, a named incident or recovery outcome, or recommendation-level department remediation."
+        }
+      ],
+      "phase_56n_coverage_decision": {
+        "coverage_id": "coverage-56f-hhs",
+        "entity_id": "agency-hhs",
+        "entity_name": "Department of Health and Human Services",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-24-105980 recommendations 14 and 15: GAO lists recommendation 14 Closed-Implemented after HHS published its M-25-21 compliance plan, while recommendation 15 remains Open because the 2025 AI inventory included future dates where deployment or pilot-start information was required. A-18-22-08021 actions 26-A-18-035.01 through .04 post-July 29 recheck: The tracker still lists all four actions Open Unimplemented, Response Not Yet Due, no Last Update Received, and Next Update Expected July 29, 2026. The tracker itself had not been refreshed beyond July 22.",
+        "decision": "Retain Partially Closed. The new recommendation or component record improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO changes recommendation 15 status or HHS publishes a corrected inventory that GAO accepts as implementation evidence. Reopen when the tracker displays a post-July 29 update, response, implementation state, or closure for actions 26-A-18-035.01 through .04."
+      },
+      "phase_56n_records": [
+        {
+          "record_id": "record-56n-hhs-ai-recommendation-split-status",
+          "entity_id": "agency-hhs",
+          "exact_record": "GAO-24-105980 recommendations 14 and 15",
+          "status_period": "Recommendation 14 action in September 2025; recommendation 15 review in March 2026",
+          "finding": "GAO lists recommendation 14 Closed-Implemented after HHS published its M-25-21 compliance plan, while recommendation 15 remains Open because the 2025 AI inventory included future dates where deployment or pilot-start information was required.",
+          "decision": "Publish the split status and keep plan implementation separate from inventory completeness and from the HHS hospital-control audits.",
+          "source_id": "source-56n-gao-federal-ai-recommendation-status-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO changes recommendation 15 status or HHS publishes a corrected inventory that GAO accepts as implementation evidence."
+        },
+        {
+          "record_id": "record-56n-hhs-large-hospital-post-date-recheck",
+          "entity_id": "provider-hhs-oig-large-southeastern-hospital-a-18-22-08021",
+          "exact_record": "A-18-22-08021 actions 26-A-18-035.01 through .04 post-July 29 recheck",
+          "status_period": "Tracker last updated July 22, 2026; checked August 1, 2026",
+          "finding": "The tracker still lists all four actions Open Unimplemented, Response Not Yet Due, no Last Update Received, and Next Update Expected July 29, 2026. The tracker itself had not been refreshed beyond July 22.",
+          "decision": "Hold In Review. The dated check documents that no post-July 29 public tracker outcome is yet available, but it does not add a new remediation result beyond Phase 56M.",
+          "source_id": "source-56n-hhs-oig-recommendations-tracker-2026",
+          "record_status": "In Review",
+          "reopening_rule": "Reopen when the tracker displays a post-July 29 update, response, implementation state, or closure for actions 26-A-18-035.01 through .04."
         }
       ]
     },
@@ -785,5 +876,6 @@
   "phase_56j_acquisition_ledger": "phase-56j-evidence-value-continuation.json",
   "phase_56k_acquisition_ledger": "phase-56k-exact-record-continuation.json",
   "phase_56l_acquisition_ledger": "phase-56l-realized-outcome-continuation.json",
-  "phase_56m_continuation_ledger": "phase-56m-federal-remediation-outcomes.json"
+  "phase_56m_continuation_ledger": "phase-56m-federal-remediation-outcomes.json",
+  "phase_56n_continuation_ledger": "phase-56n-verified-remediation-outcomes.json"
 }

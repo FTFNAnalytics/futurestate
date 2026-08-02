@@ -63,7 +63,41 @@
       "phase_56k_acquisition_result": "The live VA OIG report page lists all three iFAMS access-control recommendations as Open. The page therefore supplies a current recommendation-level status but no implemented closure.",
       "phase_56k_decision": "Retain Partially Closed. The selected remediation rail is now explicit and current, but none of the three recommendations is marked Closed-Implemented.",
       "phase_56k_remaining_gap": "Implemented closure for the three iFAMS access-control recommendations or a later department-wide FISMA result with finding-level remediation.",
-      "phase_56k_reopening_rule": "Reopen when VA OIG changes a recommendation to Closed-Implemented or publishes a later department-wide FISMA result."
+      "phase_56k_reopening_rule": "Reopen when VA OIG changes a recommendation to Closed-Implemented or publishes a later department-wide FISMA result.",
+      "phase_56n_coverage_decision": {
+        "coverage_id": "coverage-56f-va",
+        "entity_id": "agency-va",
+        "entity_name": "Department of Veterans Affairs",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-24-105980 recommendation 28: GAO lists recommendation 28 Closed-Implemented after determining that VA's 2025 AI use-case inventory included the required information and aligned with instructions. VA OIG 25-02402-83 recommendations 1-8: The live VA OIG page shows recommendations 3, 4, and 8 Closed-Implemented on June 25, 2026 and recommendations 1, 2, 5, 6, and 7 Open. The follow-up found deficiencies across configuration management, security management, and access controls.",
+        "decision": "Retain Partially Closed. The new recommendation or component record improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when VA OIG closes a named iFAMS recommendation, publishes the FY 2025 FISMA result, or GAO revises the recommendation 28 status. Reopen when VA OIG changes one of recommendations 1, 2, 5, 6, or 7 or publishes another compatible Southern Oregon follow-up."
+      },
+      "phase_56n_records": [
+        {
+          "record_id": "record-56n-va-ai-inventory-recommendation-closed",
+          "entity_id": "agency-va",
+          "exact_record": "GAO-24-105980 recommendation 28",
+          "status_period": "GAO assessment of VA's 2025 AI inventory in March 2026",
+          "finding": "GAO lists recommendation 28 Closed-Implemented after determining that VA's 2025 AI use-case inventory included the required information and aligned with instructions.",
+          "decision": "Publish the exact recommendation closure as a bounded inventory-governance result; do not substitute it for the open iFAMS access-control rail.",
+          "source_id": "source-56n-gao-federal-ai-recommendation-status-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when VA OIG closes a named iFAMS recommendation, publishes the FY 2025 FISMA result, or GAO revises the recommendation 28 status."
+        },
+        {
+          "record_id": "record-56n-va-southern-oregon-followup-status",
+          "entity_id": "agency-va",
+          "exact_record": "VA OIG 25-02402-83 recommendations 1-8",
+          "status_period": "Follow-up inspection issued June 25, 2026",
+          "finding": "The live VA OIG page shows recommendations 3, 4, and 8 Closed-Implemented on June 25, 2026 and recommendations 1, 2, 5, 6, and 7 Open. The follow-up found deficiencies across configuration management, security management, and access controls.",
+          "decision": "Publish the three-closed, five-open component result while keeping it separate from VA-wide FISMA and iFAMS remediation.",
+          "source_id": "source-56n-va-southern-oregon-followup-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when VA OIG changes one of recommendations 1, 2, 5, 6, or 7 or publishes another compatible Southern Oregon follow-up."
+        }
+      ]
     },
     {
       "test_id": "test-56e-doe-information-security",
@@ -131,7 +165,41 @@
       "phase_56j_current_closure_status": "Partially Closed",
       "phase_56j_acquisition_result": "DOE OIG's FY 2025 evaluation concludes that FERC's unclassified cybersecurity program was effective and makes no recommendations, but the report explicitly concerns FERC as an independent agency within DOE.",
       "phase_56j_remaining_gap": "Department-wide FY 2025 FISMA evaluation, finding-level remediation, incidents, recovery, and laboratory or mission effects.",
-      "phase_56j_reopening_rule": "Reopen when DOE OIG publishes the department-wide FY 2025 FISMA evaluation, a dated official status for that review, or finding-level remediation with department scope."
+      "phase_56j_reopening_rule": "Reopen when DOE OIG publishes the department-wide FY 2025 FISMA evaluation, a dated official status for that review, or finding-level remediation with department scope.",
+      "phase_56n_coverage_decision": {
+        "coverage_id": "coverage-56f-doe",
+        "entity_id": "agency-doe",
+        "entity_name": "Department of Energy",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-24-105980 recommendation 13: GAO lists recommendation 13 Open because DOE's 2025 AI inventory omitted required operational or pilot start dates and demographic-variable information for several use cases. GAO-23-105576 recommendations 1-7: GAO lists recommendations 2 through 6 Closed-Implemented. Recommendations 1 and 7 remain Open-Partially Addressed while GAO monitors DOE's planned quarterly tracking mechanism and evidence of resource recommendations or allocations.",
+        "decision": "Retain Partially Closed. The new recommendation or component record improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO changes recommendation 13 status or DOE publishes a corrected inventory that GAO accepts as implementation evidence. Reopen when GAO changes recommendation 1 or 7 status or DOE provides accepted tracking and resource-allocation evidence."
+      },
+      "phase_56n_records": [
+        {
+          "record_id": "record-56n-doe-ai-inventory-recommendation-open",
+          "entity_id": "agency-doe",
+          "exact_record": "GAO-24-105980 recommendation 13",
+          "status_period": "GAO review of DOE's 2025 AI use-case inventory as of February 2026",
+          "finding": "GAO lists recommendation 13 Open because DOE's 2025 AI inventory omitted required operational or pilot start dates and demographic-variable information for several use cases.",
+          "decision": "Publish the exact inventory-recommendation non-closure; it adds a named data-quality rail without substituting for DOE's FY 2025 FISMA result.",
+          "source_id": "source-56n-gao-federal-ai-recommendation-status-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO changes recommendation 13 status or DOE publishes a corrected inventory that GAO accepts as implementation evidence."
+        },
+        {
+          "record_id": "record-56n-doe-insider-threat-recommendation-status",
+          "entity_id": "agency-doe",
+          "exact_record": "GAO-23-105576 recommendations 1-7",
+          "status_period": "Recommendation updates through May 2026",
+          "finding": "GAO lists recommendations 2 through 6 Closed-Implemented. Recommendations 1 and 7 remain Open-Partially Addressed while GAO monitors DOE's planned quarterly tracking mechanism and evidence of resource recommendations or allocations.",
+          "decision": "Publish the exact five-closed, two-partial remediation state while preserving the insider-threat-program scope.",
+          "source_id": "source-56n-doe-insider-threat-recommendations-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO changes recommendation 1 or 7 status or DOE provides accepted tracking and resource-allocation evidence."
+        }
+      ]
     },
     {
       "test_id": "test-56e-dot-information-security",
@@ -193,7 +261,30 @@
       "phase_56k_acquisition_result": "DOT OIG's authoritative page still identifies the FY 2026 information-security review as initiated. The public rail does not yet supply the review result or a dated recommendation-closure decision.",
       "phase_56k_decision": "Retain Partially Closed. Audit initiation defines the next review identity but cannot be converted into an audit result or remediation outcome.",
       "phase_56k_remaining_gap": "FY 2026 FISMA result, recommendation-level closure, tested-control outcome, incidents, recovery, and transportation-service effects.",
-      "phase_56k_reopening_rule": "Reopen when DOT OIG publishes the FY 2026 result or a dated recommendation-status change."
+      "phase_56k_reopening_rule": "Reopen when DOT OIG publishes the FY 2026 result or a dated recommendation-status change.",
+      "phase_56n_coverage_decision": {
+        "coverage_id": "coverage-56f-dot",
+        "entity_id": "agency-dot",
+        "entity_name": "Department of Transportation",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-24-105980 recommendations 24 and 25: GAO lists recommendation 24 Closed-Implemented after DOT supplied its authorities review and M-21-06 plan. Recommendation 25 remains Open because DOT had not provided a later update on AI inventory completeness.",
+        "decision": "Retain Partially Closed. The new recommendation or component record improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO changes recommendation 25 status, DOT supplies accepted inventory evidence, or DOT OIG publishes the FY 2026 review result."
+      },
+      "phase_56n_records": [
+        {
+          "record_id": "record-56n-dot-ai-recommendation-split-status",
+          "entity_id": "agency-dot",
+          "exact_record": "GAO-24-105980 recommendations 24 and 25",
+          "status_period": "Recommendation 24 evidence assessed in May 2024; recommendation 25 status through August 2025",
+          "finding": "GAO lists recommendation 24 Closed-Implemented after DOT supplied its authorities review and M-21-06 plan. Recommendation 25 remains Open because DOT had not provided a later update on AI inventory completeness.",
+          "decision": "Publish the split governance status without treating the older open-status date as a current operating result or the FY 2026 DOT audit result.",
+          "source_id": "source-56n-gao-federal-ai-recommendation-status-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO changes recommendation 25 status, DOT supplies accepted inventory evidence, or DOT OIG publishes the FY 2026 review result."
+        }
+      ]
     },
     {
       "test_id": "test-56e-f35-fort-worth-line",
@@ -728,5 +819,6 @@
   "phase_56h_acquisition_ledger": "phase-56h-acquisition-and-deepening.json",
   "phase_56i_acquisition_ledger": "phase-56i-remaining-rails-first-pass.json",
   "phase_56j_acquisition_ledger": "phase-56j-evidence-value-continuation.json",
-  "phase_56k_acquisition_ledger": "phase-56k-exact-record-continuation.json"
+  "phase_56k_acquisition_ledger": "phase-56k-exact-record-continuation.json",
+  "phase_56n_continuation_ledger": "phase-56n-verified-remediation-outcomes.json"
 }

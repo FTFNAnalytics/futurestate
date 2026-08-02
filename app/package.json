@@ -17,7 +17,8 @@
     "verify:release": "node ./scripts/verify-release.mjs",
     "verify:phase56k": "node ./scripts/assert-phase56k.mjs",
     "verify:phase56l": "node ./scripts/assert-phase56l.mjs",
-    "verify:phase56m": "node ./scripts/assert-phase56m.mjs"
+    "verify:phase56m": "node ./scripts/assert-phase56m.mjs",
+    "verify:phase56n": "node ./scripts/assert-phase56n.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.0",

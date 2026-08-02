@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: 24 entity coverage states now carry exact continuation decisions through Phase 56M, while agency, provider, audit, period, recommendation, validation, denominator, and reopening boundaries remain attached.",
+  "summary": "A comparison and inference protocol: 24 entity coverage states now carry exact continuation decisions through Phase 56N, while agency, component, portfolio, recommendation, validation, period, denominator, and reopening boundaries remain attached.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -245,7 +245,12 @@
     "source-56l-island-components-paris-fye2023",
     "source-56l-monaghan-medical-ccida-fye2025",
     "source-56m-hhs-large-hospital-cyber-controls-2026",
-    "source-56m-hhs-small-hospital-cyber-controls-2026"
+    "source-56m-hhs-small-hospital-cyber-controls-2026",
+    "source-56n-gao-federal-ai-recommendation-status-2026",
+    "source-56n-hhs-oig-recommendations-tracker-2026",
+    "source-56n-dhs-gao-priority-recommendations-2026",
+    "source-56n-doe-insider-threat-recommendations-2026",
+    "source-56n-va-southern-oregon-followup-2026"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -368,7 +373,16 @@
     "signal-56l-monaghan-medical-certified-project",
     "signal-56m-nasa-gao-sixteen-open-recommendations",
     "signal-56m-hhs-large-hospital-open-cyber-actions",
-    "signal-56m-hhs-small-hospital-effective-cyber-test"
+    "signal-56m-hhs-small-hospital-effective-cyber-test",
+    "signal-56n-nasa-ai-recommendations-open",
+    "signal-56n-doe-ai-inventory-recommendation-open",
+    "signal-56n-hhs-ai-recommendations-split",
+    "signal-56n-dhs-ai-recommendations-two-closed-one-open",
+    "signal-56n-dot-ai-recommendations-split",
+    "signal-56n-va-ai-inventory-recommendation-closed",
+    "signal-56n-dhs-priority-recommendation-portfolio",
+    "signal-56n-doe-insider-threat-five-closed-two-partial",
+    "signal-56n-va-southern-oregon-three-closed-five-open"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -547,6 +561,12 @@
       "label": "Three federal remediation and component outcome records",
       "node_type": "Signal",
       "note": "One NASA exact non-closure and two HHS provider control tests publish; no evidence state changes."
+    },
+    {
+      "id": "node-phase56n-verified-remediation",
+      "label": "Ten verified remediation and component decisions",
+      "node_type": "Signal",
+      "note": "Nine bounded records publish and one dated HHS tracker check remains held; no Phase 56F evidence state changes."
     }
   ],
   "links": [
@@ -857,6 +877,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "No record establishes department-wide effectiveness, sector performance, real-incident outcomes, or patient causation."
+    },
+    {
+      "from": "node-phase56n-verified-remediation",
+      "to": "node-phase56m-federal-remediation",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 56N continues the federal recommendation rail with exact action, portfolio, and component states."
+    },
+    {
+      "from": "node-phase56n-verified-remediation",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Plans, inventories, portfolios, programs, and facility inspections retain different identities, scopes, periods, and denominators."
+    },
+    {
+      "from": "node-phase56n-verified-remediation",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "No recommendation or component status establishes system performance, enterprise effectiveness, service outcomes, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -883,7 +924,9 @@
     "Three bounded advancements for Moss Landing, VA iFAMS, and F-15EX EX16 without a closure-state change.",
     "Three manufacturer realized-outcome decisions with stable identity, current source, evidence state, limitation, and reopening rule.",
     "Certified reported-employment advancements for Island Components and Monaghan Medical without a closure-state change.",
-    "One exact NASA recommendation non-closure and two bounded HHS component control tests with stable identity, period, source, limitation, and continuation rule."
+    "One exact NASA recommendation non-closure and two bounded HHS component control tests with stable identity, period, source, limitation, and continuation rule.",
+    "Ten exact federal recommendation, portfolio, and component decisions with stable identity, status period, source, limitation, and continuation rule.",
+    "A visible publication hold where the expected HHS tracker date passed without a post-date public update."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -905,7 +948,8 @@
     "That evidence acquisition order ranks entities or that a monthly row, constraint entry, event report, intervention plan, or component audit is complete performance.",
     "That a company response is regulator closure, an arrival is formal contractual acceptance, or an audit initiation is an audit result.",
     "That reported current FTEs were caused by an incentive project, a project amount was fully spent, or one intervention is a repeat operating series.",
-    "That open recommendation count measures NASA performance, or that either anonymous hospital test represents HHS, CMS, the health sector, or later operations."
+    "That open recommendation count measures NASA performance, or that either anonymous hospital test represents HHS, CMS, the health sector, or later operations.",
+    "That recommendation closure, inventory completeness, portfolio movement, or component remediation measures agency performance, system safety, readiness, quality, value, or causal effect."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -963,6 +1007,12 @@
     "Reopen when SCIDA, the company, a registrar, or a customer publishes completed investment or repeat operating output under a declared compatible period.",
     "Reopen when ESD reports certification or credit issuance for the later commitment, or FDA or company records expose units distributed and a compatible production window.",
     "Reopen when GAO changes any GAO-25-108138 recommendation to implemented or closed, or NASA OIG publishes the FY 2026 FISMA evaluation with tested-system scope.",
-    "Reopen when a named HHS recommendation changes status, a compatible component retest publishes, or department-level closure evidence becomes available."
+    "Reopen when a named HHS recommendation changes status, a compatible component retest publishes, or department-level closure evidence becomes available.",
+    "Reopen when GAO changes recommendation 33 or 34 status or NASA publishes documentation that GAO accepts as implementation evidence.",
+    "Reopen when GAO changes recommendation 13 status or DOE publishes a corrected inventory that GAO accepts as implementation evidence. Reopen when GAO changes recommendation 1 or 7 status or DOE provides accepted tracking and resource-allocation evidence.",
+    "Reopen when GAO changes recommendation 15 status or HHS publishes a corrected inventory that GAO accepts as implementation evidence. Reopen when the tracker displays a post-July 29 update, response, implementation state, or closure for actions 26-A-18-035.01 through .04.",
+    "Reopen when GAO changes recommendation 17 status or DHS provides the authorities-review and M-21-06 plan evidence GAO identifies as missing. Reopen when GAO publishes the next DHS priority-recommendation letter or action-level status changes for the current portfolio.",
+    "Reopen when GAO changes recommendation 25 status, DOT supplies accepted inventory evidence, or DOT OIG publishes the FY 2026 review result.",
+    "Reopen when VA OIG closes a named iFAMS recommendation, publishes the FY 2025 FISMA result, or GAO revises the recommendation 28 status. Reopen when VA OIG changes one of recommendations 1, 2, 5, 6, or 7 or publishes another compatible Southern Oregon follow-up."
   ]
 }
