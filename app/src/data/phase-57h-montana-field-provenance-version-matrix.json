@@ -1,0 +1,838 @@
+{
+  "phase": "57H",
+  "captured_date": "2026-08-03",
+  "matrix_type": "Official-field provenance and project-version compatibility matrix",
+  "source_versions": [
+    {
+      "source_id": "source-57g-montana-bead-final-proposal-january-2026",
+      "role": "Approved proposal baseline"
+    },
+    {
+      "source_id": "source-57g-montana-deployment-projects-csv",
+      "role": "Approved proposal baseline"
+    },
+    {
+      "source_id": "source-57g-montana-locations-csv",
+      "role": "Approved proposal baseline"
+    },
+    {
+      "source_id": "source-57g-montana-subgrantees-csv",
+      "role": "Approved proposal baseline"
+    },
+    {
+      "source_id": "source-57g-montana-cai-csv",
+      "role": "Approved proposal baseline"
+    },
+    {
+      "source_id": "source-57f-montana-bead-resource-index-august-2026",
+      "role": "Terrestrial monitoring and reporting contract"
+    },
+    {
+      "source_id": "source-57f-montana-leo-quarterly-instructions-june-2026",
+      "role": "LEO reporting contract"
+    },
+    {
+      "source_id": "source-57e-montana-quarterly-report-instructions-june-2026",
+      "role": "Terrestrial monitoring and reporting contract"
+    },
+    {
+      "source_id": "source-57e-montana-project-monitoring-guide-june-2026",
+      "role": "Terrestrial monitoring and reporting contract"
+    }
+  ],
+  "field_count": 13,
+  "project_count": 32,
+  "technology_code_values": [
+    "50",
+    "61",
+    "70",
+    "71",
+    "72"
+  ],
+  "technology_code_definition_state": "unresolved_official_mapping",
+  "privacy_boundary": {
+    "individual_bsl_identifiers_published": 0,
+    "individual_cai_details_published": 0,
+    "public_granularity": "Project-level counts and raw code distributions only"
+  },
+  "compatibility_rule": "A future observation must match project_id, reporting period, field definition/version, reporting rail, unit, authority, and acceptance state. Terrestrial and LEO reporting fields are not interchangeable.",
+  "field_dictionary": [
+    {
+      "field": "project_id",
+      "official_source_field": "project_id",
+      "authority": "Official CSV field",
+      "definition": "Public project identifier",
+      "privacy_class": "public",
+      "join_role": "join key",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_applicable"
+    },
+    {
+      "field": "project_name",
+      "official_source_field": "project_name",
+      "authority": "Official CSV field",
+      "definition": "Public project name",
+      "privacy_class": "public",
+      "join_role": "label",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_applicable"
+    },
+    {
+      "field": "uei",
+      "official_source_field": "uei",
+      "authority": "Official CSV field",
+      "definition": "Subgrantee Unique Entity Identifier",
+      "privacy_class": "public",
+      "join_role": "join key",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_applicable"
+    },
+    {
+      "field": "subgrantee_id",
+      "official_source_field": null,
+      "authority": "FTFN derived field",
+      "definition": "Namespaced UEI join key",
+      "privacy_class": "public",
+      "join_role": "derived join key",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_applicable"
+    },
+    {
+      "field": "bsl_count",
+      "official_source_field": null,
+      "authority": "FTFN aggregate",
+      "definition": "Count of proposal-baseline BSL rows assigned to the project",
+      "privacy_class": "privacy-safe aggregate",
+      "join_role": "denominator",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_applicable"
+    },
+    {
+      "field": "cai_count",
+      "official_source_field": null,
+      "authority": "FTFN aggregate",
+      "definition": "Count of proposal-baseline CAI rows assigned to the project",
+      "privacy_class": "privacy-safe aggregate",
+      "join_role": "denominator",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_applicable"
+    },
+    {
+      "field": "bead_support_usd",
+      "official_source_field": "bead_support",
+      "authority": "Official CSV field",
+      "definition": "Approved proposal support amount in U.S. dollars",
+      "privacy_class": "public",
+      "join_role": "baseline amount",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_applicable"
+    },
+    {
+      "field": "subgrantee_match_usd",
+      "official_source_field": "subgrantee_match",
+      "authority": "Official CSV field",
+      "definition": "Approved proposal match amount in U.S. dollars",
+      "privacy_class": "public",
+      "join_role": "baseline amount",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_applicable"
+    },
+    {
+      "field": "raw_technology_codes",
+      "official_source_field": "technology",
+      "authority": "Official raw code",
+      "definition": "Untranslated technology code values retained from the source",
+      "privacy_class": "public aggregate",
+      "join_role": "classification pending schema",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_joined_in_current_public_source_set"
+    },
+    {
+      "field": "intersects_tribal_land",
+      "official_source_field": null,
+      "authority": "FTFN normalized field",
+      "definition": "Project-level indicator derived from the public proposal record",
+      "privacy_class": "public project level",
+      "join_role": "routing attribute",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_applicable"
+    },
+    {
+      "field": "tribal_consent_name",
+      "official_source_field": null,
+      "authority": "FTFN normalized field",
+      "definition": "Public project-level Tribal consent name when present",
+      "privacy_class": "public project level",
+      "join_role": "routing attribute",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_applicable"
+    },
+    {
+      "field": "reporting_contract",
+      "official_source_field": null,
+      "authority": "FTFN routing decision",
+      "definition": "Expected terrestrial or LEO reporting rail",
+      "privacy_class": "public project level",
+      "join_role": "compatibility routing",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_applicable"
+    },
+    {
+      "field": "outcome_state",
+      "official_source_field": null,
+      "authority": "FTFN reserved field",
+      "definition": "Reserved operating-outcome slot",
+      "privacy_class": "public null",
+      "join_role": "future observation",
+      "source_version": "Montana BEAD Final Proposal files dated 2026-01-05",
+      "official_code_definition_available": "not_applicable"
+    }
+  ],
+  "project_versions": [
+    {
+      "project_id": "CM61-BEAD-MT-4644",
+      "subgrantee_id": "MT-BEAD-UEI-PX3CHN4WCPG3",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 24957,
+        "cai_count": 0,
+        "bead_support_usd": 14974200,
+        "subgrantee_match_usd": 4991400,
+        "raw_technology_codes": [
+          "61"
+        ]
+      },
+      "reporting_rail": "LEO",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4644|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4655",
+      "subgrantee_id": "MT-BEAD-UEI-KU6LTS39K9N4",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 3724,
+        "cai_count": 24,
+        "bead_support_usd": 26234612,
+        "subgrantee_match_usd": 8744870,
+        "raw_technology_codes": [
+          "70",
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4655|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4654",
+      "subgrantee_id": "MT-BEAD-UEI-K9JTRFBU4DH1",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 6495,
+        "cai_count": 60,
+        "bead_support_usd": 92428300,
+        "subgrantee_match_usd": 16310876,
+        "raw_technology_codes": [
+          "71",
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4654|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4685",
+      "subgrantee_id": "MT-BEAD-UEI-FBU3ABAM3KE7",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 135,
+        "cai_count": 0,
+        "bead_support_usd": 2023515,
+        "subgrantee_match_usd": 674505,
+        "raw_technology_codes": [
+          "71"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4685|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4669",
+      "subgrantee_id": "MT-BEAD-UEI-C6M7C2FLKER5",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 18705,
+        "cai_count": 0,
+        "bead_support_usd": 31008075,
+        "subgrantee_match_usd": 28443945,
+        "raw_technology_codes": [
+          "61"
+        ]
+      },
+      "reporting_rail": "LEO",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4669|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4657",
+      "subgrantee_id": "MT-BEAD-UEI-K9JTRFBU4DH1",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 1275,
+        "cai_count": 14,
+        "bead_support_usd": 10196154,
+        "subgrantee_match_usd": 3398899,
+        "raw_technology_codes": [
+          "71",
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4657|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4658",
+      "subgrantee_id": "MT-BEAD-UEI-U3USRJUWGMN6",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 1122,
+        "cai_count": 43,
+        "bead_support_usd": 8523919,
+        "subgrantee_match_usd": 2841419,
+        "raw_technology_codes": [
+          "50",
+          "71"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4658|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4648",
+      "subgrantee_id": "MT-BEAD-UEI-FBU3ABAM3KE7",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 458,
+        "cai_count": 0,
+        "bead_support_usd": 6813095,
+        "subgrantee_match_usd": 2272000,
+        "raw_technology_codes": [
+          "71"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4648|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4673",
+      "subgrantee_id": "MT-BEAD-UEI-VKTRZ9JF5RB3",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 379,
+        "cai_count": 1,
+        "bead_support_usd": 3148600,
+        "subgrantee_match_usd": 3148600,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4673|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4672",
+      "subgrantee_id": "MT-BEAD-UEI-VKTRZ9JF5RB3",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 83,
+        "cai_count": 0,
+        "bead_support_usd": 620925,
+        "subgrantee_match_usd": 206975,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4672|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4670",
+      "subgrantee_id": "MT-BEAD-UEI-VKTRZ9JF5RB3",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 19,
+        "cai_count": 2,
+        "bead_support_usd": 218500,
+        "subgrantee_match_usd": 72834,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4670|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4662",
+      "subgrantee_id": "MT-BEAD-UEI-VKTRZ9JF5RB3",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 200,
+        "cai_count": 0,
+        "bead_support_usd": 1687140,
+        "subgrantee_match_usd": 908460,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4662|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4677",
+      "subgrantee_id": "MT-BEAD-UEI-WFF1YRLNLA35",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 70,
+        "cai_count": 0,
+        "bead_support_usd": 770603,
+        "subgrantee_match_usd": 256867,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4677|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4679",
+      "subgrantee_id": "MT-BEAD-UEI-UN1WNQVV11X7",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 1154,
+        "cai_count": 10,
+        "bead_support_usd": 4600623,
+        "subgrantee_match_usd": 6241873,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4679|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4651",
+      "subgrantee_id": "MT-BEAD-UEI-PTVEPVDJH2K5",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 132,
+        "cai_count": 0,
+        "bead_support_usd": 1000000,
+        "subgrantee_match_usd": 1073776,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4651|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4686",
+      "subgrantee_id": "MT-BEAD-UEI-JJVXC1A7BYG6",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 120,
+        "cai_count": 0,
+        "bead_support_usd": 1758075,
+        "subgrantee_match_usd": 3125465,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4686|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4668",
+      "subgrantee_id": "MT-BEAD-UEI-JJVXC1A7BYG6",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 184,
+        "cai_count": 0,
+        "bead_support_usd": 2356969,
+        "subgrantee_match_usd": 785656,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4668|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4675",
+      "subgrantee_id": "MT-BEAD-UEI-DCJTA84G5C75",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 217,
+        "cai_count": 0,
+        "bead_support_usd": 1348584,
+        "subgrantee_match_usd": 449527,
+        "raw_technology_codes": [
+          "72",
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4675|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4661",
+      "subgrantee_id": "MT-BEAD-UEI-KY5RFTW5TEU3",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 894,
+        "cai_count": 4,
+        "bead_support_usd": 8960175,
+        "subgrantee_match_usd": 2986725,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4661|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4693",
+      "subgrantee_id": "MT-BEAD-UEI-L5W6ZMH9GM51",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 171,
+        "cai_count": 0,
+        "bead_support_usd": 2468674,
+        "subgrantee_match_usd": 822891,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4693|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4692",
+      "subgrantee_id": "MT-BEAD-UEI-L5W6ZMH9GM51",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 1483,
+        "cai_count": 0,
+        "bead_support_usd": 19159362,
+        "subgrantee_match_usd": 6386455,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4692|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4691",
+      "subgrantee_id": "MT-BEAD-UEI-L5W6ZMH9GM51",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 283,
+        "cai_count": 0,
+        "bead_support_usd": 2162620,
+        "subgrantee_match_usd": 720873,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4691|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4689",
+      "subgrantee_id": "MT-BEAD-UEI-L5W6ZMH9GM51",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 442,
+        "cai_count": 0,
+        "bead_support_usd": 3478221,
+        "subgrantee_match_usd": 1159407,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4689|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4645",
+      "subgrantee_id": "MT-BEAD-UEI-KVGRDKXST245",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 388,
+        "cai_count": 0,
+        "bead_support_usd": 599573,
+        "subgrantee_match_usd": 199858,
+        "raw_technology_codes": [
+          "71"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4645|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4256",
+      "subgrantee_id": "MT-BEAD-UEI-FBU3ABAM3KE7",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 561,
+        "cai_count": 0,
+        "bead_support_usd": 7807654,
+        "subgrantee_match_usd": 2602552,
+        "raw_technology_codes": [
+          "71"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4256|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4261",
+      "subgrantee_id": "MT-BEAD-UEI-FBU3ABAM3KE7",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 2894,
+        "cai_count": 0,
+        "bead_support_usd": 43394500,
+        "subgrantee_match_usd": 39546500,
+        "raw_technology_codes": [
+          "71"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4261|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4246",
+      "subgrantee_id": "MT-BEAD-UEI-T6NTQ7J74C95",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 758,
+        "cai_count": 1,
+        "bead_support_usd": 828823,
+        "subgrantee_match_usd": 169231,
+        "raw_technology_codes": [
+          "71",
+          "72",
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4246|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4218",
+      "subgrantee_id": "MT-BEAD-UEI-H14NYL2SZJF9",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 686,
+        "cai_count": 0,
+        "bead_support_usd": 1823196,
+        "subgrantee_match_usd": 5551078,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4218|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4206",
+      "subgrantee_id": "MT-BEAD-UEI-ZXZSJJQPHEB9",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 214,
+        "cai_count": 0,
+        "bead_support_usd": 2234435,
+        "subgrantee_match_usd": 744811,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4206|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4149",
+      "subgrantee_id": "MT-BEAD-UEI-FEHNV13B9994",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 36,
+        "cai_count": 0,
+        "bead_support_usd": 331803,
+        "subgrantee_match_usd": 110601,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4149|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4212",
+      "subgrantee_id": "MT-BEAD-UEI-FEHNV13B9994",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 76,
+        "cai_count": 3,
+        "bead_support_usd": 692479,
+        "subgrantee_match_usd": 230827,
+        "raw_technology_codes": [
+          "50"
+        ]
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4212|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    },
+    {
+      "project_id": "CM61-BEAD-MT-4678",
+      "subgrantee_id": "MT-BEAD-UEI-KVGRDKXST245",
+      "proposal_version": "2026-01-05-approved-final-proposal",
+      "baseline": {
+        "bsl_count": 0,
+        "cai_count": 21,
+        "bead_support_usd": 33124,
+        "subgrantee_match_usd": 11042,
+        "raw_technology_codes": []
+      },
+      "reporting_rail": "terrestrial",
+      "compatible_future_observation_key": "CM61-BEAD-MT-4678|reporting-period|field-definition-version",
+      "current_completed_project_quarter": null,
+      "current_service_state": null,
+      "current_adoption_state": null,
+      "current_acceptance_state": null
+    }
+  ]
+}

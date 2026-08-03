@@ -1,0 +1,77 @@
+{
+  "id": "research-doc-57h-montana-official-field-provenance-dictionary",
+  "collection_id": "research-collection-registry-revision-provenance-compatible-observation-joins-2026",
+  "title": "Montana BEAD fields now distinguish official values, FTFN aggregates, and reserved slots",
+  "slug": "57h-montana-official-field-provenance-dictionary",
+  "record_status": "Published",
+  "publisher": "Montana Department of Administration",
+  "publication_date": "2026-08-03",
+  "document_type": "Data Release",
+  "summary": "The dictionary classifies 13 public fields by authority, source version, privacy class, and join role. Denominator: 13 fields across 32 projects.",
+  "key_findings": [
+    "Evidence stage: Field provenance and version compatibility.",
+    "Finding: The dictionary classifies 13 public fields by authority, source version, privacy class, and join role.",
+    "Denominator: 13 fields across 32 projects.",
+    "Boundary: FTFN-derived fields are not labeled official.",
+    "Boundary: Reserved outcome fields remain null.",
+    "Boundary: Definitions are version-specific.",
+    "Next action: Join official schema revisions at field level before ingesting later reports."
+  ],
+  "why_it_matters": "The record makes source-version, identity, field, authority, stage, unit, and work-breakdown compatibility inspectable before later observations are joined.",
+  "ftfn_relevance": [
+    "Makes revisions and join decisions reproducible.",
+    "Preserves unresolved identities and incompatible observations.",
+    "Separates provenance from operating outcomes, implementation, acceptance, and closure."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "FTFN-derived fields are not labeled official.",
+    "Reserved outcome fields remain null.",
+    "Definitions are version-specific.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-montana-bead-final-proposal-january-2026",
+  "supporting_source_ids": [
+    "source-57g-montana-bead-final-proposal-january-2026",
+    "source-57g-montana-deployment-projects-csv",
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-subgrantees-csv",
+    "source-57g-montana-cai-csv",
+    "source-57f-montana-bead-resource-index-august-2026",
+    "source-57f-montana-leo-quarterly-instructions-june-2026",
+    "source-57e-montana-quarterly-report-instructions-june-2026",
+    "source-57e-montana-project-monitoring-guide-june-2026"
+  ],
+  "supporting_official_urls": [
+    "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+    "https://doa.mt.gov/_docs/connectmt/fp_deployment_projects-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_locations-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_subgrantees-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_CAI-1.5.26.csv",
+    "https://doa.mt.gov/ConnectMT/iija/",
+    "https://doa.mt.gov/_docs/connectmt/LEO-Quarterly-Report-Instructions-6.1.26.pdf",
+    "https://doa.mt.gov/_docs/connectmt/Quarterly-Report-Instructions-Terrestrial-6.1.26.pdf",
+    "https://doa.mt.gov/_docs/connectmt/BEAD-Project-Subgrantee-Monitoring-Guide-6.1.26.pdf"
+  ],
+  "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+  "local_capture_path": "/downloads/registry-revision-provenance-compatible-observation-joins-2026/official-links/06-montana-official-field-provenance-dictionary.txt",
+  "archive_member": "official-links/06-montana-official-field-provenance-dictionary.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-03"
+}

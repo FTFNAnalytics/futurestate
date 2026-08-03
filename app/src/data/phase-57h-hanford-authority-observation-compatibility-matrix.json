@@ -1,0 +1,751 @@
+{
+  "phase": "57H",
+  "captured_date": "2026-08-03",
+  "matrix_type": "Authority, custody, transition, threshold-operator, unit, and observation-compatibility matrix",
+  "authority_count": 9,
+  "transition_count": 14,
+  "observation_count": 9,
+  "observation_pair_count": 36,
+  "direct_numeric_joins_allowed": 0,
+  "public_batch_ids": 0,
+  "public_container_ids": 0,
+  "compatibility_counts": {
+    "milestone_and_quantity_not_directly_comparable": 21,
+    "same_unit_different_stage_not_directly_comparable": 9,
+    "incompatible_measure_or_unit": 5,
+    "same_stage_unit_but_terms_or_operators_require_alignment": 1
+  },
+  "authority_rows": [
+    {
+      "source_id": "source-57g-hanford-dflaw-process-animation",
+      "authority": "DOE Office of Environmental Management",
+      "record_role": "process description",
+      "can_establish_regulator_acceptance": "no",
+      "can_establish_container_identity": "no",
+      "can_establish_batch_identity": "no"
+    },
+    {
+      "source_id": "source-57g-hanford-ap106-feed-staging",
+      "authority": "DOE Office of Environmental Management",
+      "record_role": "tank-operations mission statement",
+      "can_establish_regulator_acceptance": "no",
+      "can_establish_container_identity": "no",
+      "can_establish_batch_identity": "no"
+    },
+    {
+      "source_id": "source-57c-hanford-20-containers-2025",
+      "authority": "DOE Office of Environmental Management",
+      "record_role": "commissioning campaign statement",
+      "can_establish_regulator_acceptance": "no",
+      "can_establish_container_identity": "no",
+      "can_establish_batch_identity": "no"
+    },
+    {
+      "source_id": "source-57e-doe-hanford-acceptable-glass-startup",
+      "authority": "DOE Office of Environmental Management",
+      "record_role": "startup milestone statement",
+      "can_establish_regulator_acceptance": "no",
+      "can_establish_container_identity": "no",
+      "can_establish_batch_identity": "no"
+    },
+    {
+      "source_id": "source-57f-hanford-wtp-pmm-february-2026",
+      "authority": "DOE and Washington State project managers",
+      "record_role": "joint project-management record",
+      "can_establish_regulator_acceptance": "no",
+      "can_establish_container_identity": "no",
+      "can_establish_batch_identity": "no"
+    },
+    {
+      "source_id": "source-57b-ecology-wtp-byproduct-response-comments",
+      "authority": "Washington State Department of Ecology",
+      "record_role": "regulatory record",
+      "can_establish_regulator_acceptance": "only_when_explicitly_stated",
+      "can_establish_container_identity": "no",
+      "can_establish_batch_identity": "no"
+    },
+    {
+      "source_id": "source-56x-hanford-first-ilaw-disposal-2026",
+      "authority": "DOE Office of Environmental Management",
+      "record_role": "disposal milestone statement",
+      "can_establish_regulator_acceptance": "no",
+      "can_establish_container_identity": "no",
+      "can_establish_batch_identity": "no"
+    },
+    {
+      "source_id": "source-57b-hanford-wtp-project-managers-may-2026",
+      "authority": "DOE and Washington State project managers",
+      "record_role": "joint project-management record",
+      "can_establish_regulator_acceptance": "only_when_explicitly_stated",
+      "can_establish_container_identity": "no",
+      "can_establish_batch_identity": "no"
+    },
+    {
+      "source_id": "source-57f-doe-hanford-100k-gallons-may-2026",
+      "authority": "DOE Office of Environmental Management",
+      "record_role": "cumulative volume threshold statement",
+      "can_establish_regulator_acceptance": "no",
+      "can_establish_container_identity": "no",
+      "can_establish_batch_identity": "no"
+    }
+  ],
+  "transitions": [
+    {
+      "transition_id": "HANFORD-TRANSITION-01",
+      "from_stage_id": "HANFORD-DFLAW-RETRIEVAL",
+      "to_stage_id": "HANFORD-DFLAW-TSCR",
+      "from_custodian": "DOE Hanford tank operations",
+      "to_custodian": "DOE Hanford tank operations",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-02",
+      "from_stage_id": "HANFORD-DFLAW-TSCR",
+      "to_stage_id": "HANFORD-DFLAW-AP106",
+      "from_custodian": "DOE Hanford tank operations",
+      "to_custodian": "DOE Hanford tank operations",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-03",
+      "from_stage_id": "HANFORD-DFLAW-AP106",
+      "to_stage_id": "HANFORD-DFLAW-222S",
+      "from_custodian": "DOE Hanford tank operations",
+      "to_custodian": "DOE Hanford laboratory operations",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-04",
+      "from_stage_id": "HANFORD-DFLAW-222S",
+      "to_stage_id": "HANFORD-DFLAW-TRANSFER",
+      "from_custodian": "DOE Hanford laboratory operations",
+      "to_custodian": "DOE Hanford tank operations",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-05",
+      "from_stage_id": "HANFORD-DFLAW-TRANSFER",
+      "to_stage_id": "HANFORD-LAW-FEED",
+      "from_custodian": "DOE Hanford tank operations",
+      "to_custodian": "Waste Treatment and Immobilization Plant",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-06",
+      "from_stage_id": "HANFORD-LAW-FEED",
+      "to_stage_id": "HANFORD-LAW-MELTER-1",
+      "from_custodian": "Waste Treatment and Immobilization Plant",
+      "to_custodian": "Waste Treatment and Immobilization Plant",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-07",
+      "from_stage_id": "HANFORD-LAW-FEED",
+      "to_stage_id": "HANFORD-LAW-MELTER-2",
+      "from_custodian": "Waste Treatment and Immobilization Plant",
+      "to_custodian": "Waste Treatment and Immobilization Plant",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-08",
+      "from_stage_id": "HANFORD-LAW-MELTER-1",
+      "to_stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "from_custodian": "Waste Treatment and Immobilization Plant",
+      "to_custodian": "Waste Treatment and Immobilization Plant",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-09",
+      "from_stage_id": "HANFORD-LAW-MELTER-2",
+      "to_stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "from_custodian": "Waste Treatment and Immobilization Plant",
+      "to_custodian": "Waste Treatment and Immobilization Plant",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-10",
+      "from_stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "to_stage_id": "HANFORD-LAW-CONTAINER-HANDLING",
+      "from_custodian": "Waste Treatment and Immobilization Plant",
+      "to_custodian": "Waste Treatment and Immobilization Plant",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-11",
+      "from_stage_id": "HANFORD-LAW-CONTAINER-HANDLING",
+      "to_stage_id": "HANFORD-LAW-EXPORT-BAY",
+      "from_custodian": "Waste Treatment and Immobilization Plant",
+      "to_custodian": "Waste Treatment and Immobilization Plant",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-12",
+      "from_stage_id": "HANFORD-LAW-EXPORT-BAY",
+      "to_stage_id": "HANFORD-IDF-TRANSPORT",
+      "from_custodian": "Waste Treatment and Immobilization Plant",
+      "to_custodian": "DOE Hanford waste operations",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-13",
+      "from_stage_id": "HANFORD-IDF-TRANSPORT",
+      "to_stage_id": "HANFORD-IDF-STAGING",
+      "from_custodian": "DOE Hanford waste operations",
+      "to_custodian": "Integrated Disposal Facility",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    },
+    {
+      "transition_id": "HANFORD-TRANSITION-14",
+      "from_stage_id": "HANFORD-IDF-STAGING",
+      "to_stage_id": "HANFORD-IDF-DISPOSAL",
+      "from_custodian": "Integrated Disposal Facility",
+      "to_custodian": "Integrated Disposal Facility",
+      "stable_public_batch_join": false,
+      "stable_public_container_join": false,
+      "compatible_observation_requirements": [
+        "same identified cohort",
+        "dated transfer and receipt",
+        "compatible units and method",
+        "explicit quality and acceptance state"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "event_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION",
+      "observation_date": "2020-02-18",
+      "observation_period": "2020 AP-106 commissioning plan",
+      "stage_id": "HANFORD-DFLAW-AP106",
+      "measure": "AP-106 designated for pretreated-feed staging",
+      "operator": "milestone",
+      "value": null,
+      "unit": null,
+      "source_id": "source-57g-hanford-ap106-feed-staging",
+      "authority": "DOE Office of Environmental Management",
+      "identity_join_state": "no_public_batch_or_container_id"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2025-09-20-CONTAINERS",
+      "observation_date": null,
+      "observation_period": "2025 extended hot-commissioning campaign",
+      "stage_id": "HANFORD-LAW-CONTAINER-HANDLING",
+      "measure": "immobilized-waste containers completed",
+      "operator": ">",
+      "value": 20,
+      "unit": "containers",
+      "source_id": "source-57c-hanford-20-containers-2025",
+      "authority": "DOE Office of Environmental Management",
+      "identity_join_state": "no_public_batch_or_container_id"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS",
+      "observation_date": null,
+      "observation_period": "2025-10 consent-decree startup window",
+      "stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "measure": "acceptable-quality glass consent-decree startup milestone",
+      "operator": "milestone",
+      "value": null,
+      "unit": null,
+      "source_id": "source-57e-doe-hanford-acceptable-glass-startup",
+      "authority": "DOE Office of Environmental Management",
+      "identity_join_state": "no_public_batch_or_container_id"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2026-02-19-SENT",
+      "observation_date": "2026-02-12",
+      "stage_id": "HANFORD-IDF-TRANSPORT",
+      "measure": "vitrified-waste containers sent to IDF",
+      "operator": "=",
+      "value": 19,
+      "unit": "containers",
+      "source_id": "source-57f-hanford-wtp-pmm-february-2026",
+      "authority": "DOE and Washington State project managers",
+      "identity_join_state": "no_public_batch_or_container_id"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2026-02-34-FILLED",
+      "observation_date": null,
+      "observation_period": "2026-02 regulator snapshot",
+      "stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "measure": "containers filled in regulator snapshot",
+      "operator": "=",
+      "value": 34,
+      "unit": "containers",
+      "source_id": "source-57b-ecology-wtp-byproduct-response-comments",
+      "authority": "Washington State Department of Ecology",
+      "identity_join_state": "no_public_batch_or_container_id"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "observation_date": "2026-04-08",
+      "stage_id": "HANFORD-IDF-DISPOSAL",
+      "measure": "first batch permanently disposed",
+      "operator": "milestone",
+      "value": null,
+      "unit": null,
+      "source_id": "source-56x-hanford-first-ilaw-disposal-2026",
+      "authority": "DOE Office of Environmental Management",
+      "identity_join_state": "no_public_batch_or_container_id"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2026-04-30-STAGED",
+      "observation_date": "2026-04-08",
+      "stage_id": "HANFORD-IDF-STAGING",
+      "measure": "containers staged at first-disposal event",
+      "operator": "approximately",
+      "value": 30,
+      "unit": "containers",
+      "source_id": "source-56x-hanford-first-ilaw-disposal-2026",
+      "authority": "DOE Office of Environmental Management",
+      "identity_join_state": "no_public_batch_or_container_id"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2026-05-66-SHIPPED",
+      "observation_date": null,
+      "observation_period": "2026-05 project-managers meeting",
+      "stage_id": "HANFORD-IDF-TRANSPORT",
+      "measure": "containers shipped to IDF",
+      "operator": "=",
+      "value": 66,
+      "unit": "containers",
+      "source_id": "source-57b-hanford-wtp-project-managers-may-2026",
+      "authority": "DOE and Washington State project managers",
+      "identity_join_state": "no_public_batch_or_container_id"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "observation_date": "2026-05-26",
+      "stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "measure": "tank-waste volume immobilized since hot commissioning",
+      "operator": ">",
+      "value": 100000,
+      "unit": "gallons",
+      "source_id": "source-57f-doe-hanford-100k-gallons-may-2026",
+      "authority": "DOE Office of Environmental Management",
+      "identity_join_state": "no_public_batch_or_container_id"
+    }
+  ],
+  "observation_pairs": [
+    {
+      "pair_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION__HANFORD-EVENT-2025-09-20-CONTAINERS",
+      "left_event_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION",
+      "right_event_id": "HANFORD-EVENT-2025-09-20-CONTAINERS",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION__HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS",
+      "left_event_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION",
+      "right_event_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION__HANFORD-EVENT-2026-02-19-SENT",
+      "left_event_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION",
+      "right_event_id": "HANFORD-EVENT-2026-02-19-SENT",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION__HANFORD-EVENT-2026-02-34-FILLED",
+      "left_event_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION",
+      "right_event_id": "HANFORD-EVENT-2026-02-34-FILLED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION__HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "left_event_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION",
+      "right_event_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION__HANFORD-EVENT-2026-04-30-STAGED",
+      "left_event_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION",
+      "right_event_id": "HANFORD-EVENT-2026-04-30-STAGED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION__HANFORD-EVENT-2026-05-66-SHIPPED",
+      "left_event_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION",
+      "right_event_id": "HANFORD-EVENT-2026-05-66-SHIPPED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION__HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "left_event_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION",
+      "right_event_id": "HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-09-20-CONTAINERS__HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS",
+      "left_event_id": "HANFORD-EVENT-2025-09-20-CONTAINERS",
+      "right_event_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-09-20-CONTAINERS__HANFORD-EVENT-2026-02-19-SENT",
+      "left_event_id": "HANFORD-EVENT-2025-09-20-CONTAINERS",
+      "right_event_id": "HANFORD-EVENT-2026-02-19-SENT",
+      "same_stage": false,
+      "same_unit": true,
+      "compatibility": "same_unit_different_stage_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-09-20-CONTAINERS__HANFORD-EVENT-2026-02-34-FILLED",
+      "left_event_id": "HANFORD-EVENT-2025-09-20-CONTAINERS",
+      "right_event_id": "HANFORD-EVENT-2026-02-34-FILLED",
+      "same_stage": false,
+      "same_unit": true,
+      "compatibility": "same_unit_different_stage_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-09-20-CONTAINERS__HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "left_event_id": "HANFORD-EVENT-2025-09-20-CONTAINERS",
+      "right_event_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-09-20-CONTAINERS__HANFORD-EVENT-2026-04-30-STAGED",
+      "left_event_id": "HANFORD-EVENT-2025-09-20-CONTAINERS",
+      "right_event_id": "HANFORD-EVENT-2026-04-30-STAGED",
+      "same_stage": false,
+      "same_unit": true,
+      "compatibility": "same_unit_different_stage_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-09-20-CONTAINERS__HANFORD-EVENT-2026-05-66-SHIPPED",
+      "left_event_id": "HANFORD-EVENT-2025-09-20-CONTAINERS",
+      "right_event_id": "HANFORD-EVENT-2026-05-66-SHIPPED",
+      "same_stage": false,
+      "same_unit": true,
+      "compatibility": "same_unit_different_stage_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-09-20-CONTAINERS__HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "left_event_id": "HANFORD-EVENT-2025-09-20-CONTAINERS",
+      "right_event_id": "HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "incompatible_measure_or_unit",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS__HANFORD-EVENT-2026-02-19-SENT",
+      "left_event_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS",
+      "right_event_id": "HANFORD-EVENT-2026-02-19-SENT",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS__HANFORD-EVENT-2026-02-34-FILLED",
+      "left_event_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS",
+      "right_event_id": "HANFORD-EVENT-2026-02-34-FILLED",
+      "same_stage": true,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS__HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "left_event_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS",
+      "right_event_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS__HANFORD-EVENT-2026-04-30-STAGED",
+      "left_event_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS",
+      "right_event_id": "HANFORD-EVENT-2026-04-30-STAGED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS__HANFORD-EVENT-2026-05-66-SHIPPED",
+      "left_event_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS",
+      "right_event_id": "HANFORD-EVENT-2026-05-66-SHIPPED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS__HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "left_event_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS",
+      "right_event_id": "HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "same_stage": true,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-02-19-SENT__HANFORD-EVENT-2026-02-34-FILLED",
+      "left_event_id": "HANFORD-EVENT-2026-02-19-SENT",
+      "right_event_id": "HANFORD-EVENT-2026-02-34-FILLED",
+      "same_stage": false,
+      "same_unit": true,
+      "compatibility": "same_unit_different_stage_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-02-19-SENT__HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "left_event_id": "HANFORD-EVENT-2026-02-19-SENT",
+      "right_event_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-02-19-SENT__HANFORD-EVENT-2026-04-30-STAGED",
+      "left_event_id": "HANFORD-EVENT-2026-02-19-SENT",
+      "right_event_id": "HANFORD-EVENT-2026-04-30-STAGED",
+      "same_stage": false,
+      "same_unit": true,
+      "compatibility": "same_unit_different_stage_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-02-19-SENT__HANFORD-EVENT-2026-05-66-SHIPPED",
+      "left_event_id": "HANFORD-EVENT-2026-02-19-SENT",
+      "right_event_id": "HANFORD-EVENT-2026-05-66-SHIPPED",
+      "same_stage": true,
+      "same_unit": true,
+      "compatibility": "same_stage_unit_but_terms_or_operators_require_alignment",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-02-19-SENT__HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "left_event_id": "HANFORD-EVENT-2026-02-19-SENT",
+      "right_event_id": "HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "incompatible_measure_or_unit",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-02-34-FILLED__HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "left_event_id": "HANFORD-EVENT-2026-02-34-FILLED",
+      "right_event_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-02-34-FILLED__HANFORD-EVENT-2026-04-30-STAGED",
+      "left_event_id": "HANFORD-EVENT-2026-02-34-FILLED",
+      "right_event_id": "HANFORD-EVENT-2026-04-30-STAGED",
+      "same_stage": false,
+      "same_unit": true,
+      "compatibility": "same_unit_different_stage_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-02-34-FILLED__HANFORD-EVENT-2026-05-66-SHIPPED",
+      "left_event_id": "HANFORD-EVENT-2026-02-34-FILLED",
+      "right_event_id": "HANFORD-EVENT-2026-05-66-SHIPPED",
+      "same_stage": false,
+      "same_unit": true,
+      "compatibility": "same_unit_different_stage_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-02-34-FILLED__HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "left_event_id": "HANFORD-EVENT-2026-02-34-FILLED",
+      "right_event_id": "HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "same_stage": true,
+      "same_unit": false,
+      "compatibility": "incompatible_measure_or_unit",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL__HANFORD-EVENT-2026-04-30-STAGED",
+      "left_event_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "right_event_id": "HANFORD-EVENT-2026-04-30-STAGED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL__HANFORD-EVENT-2026-05-66-SHIPPED",
+      "left_event_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "right_event_id": "HANFORD-EVENT-2026-05-66-SHIPPED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL__HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "left_event_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "right_event_id": "HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "milestone_and_quantity_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-04-30-STAGED__HANFORD-EVENT-2026-05-66-SHIPPED",
+      "left_event_id": "HANFORD-EVENT-2026-04-30-STAGED",
+      "right_event_id": "HANFORD-EVENT-2026-05-66-SHIPPED",
+      "same_stage": false,
+      "same_unit": true,
+      "compatibility": "same_unit_different_stage_not_directly_comparable",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-04-30-STAGED__HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "left_event_id": "HANFORD-EVENT-2026-04-30-STAGED",
+      "right_event_id": "HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "incompatible_measure_or_unit",
+      "direct_numeric_join_allowed": false
+    },
+    {
+      "pair_id": "HANFORD-EVENT-2026-05-66-SHIPPED__HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "left_event_id": "HANFORD-EVENT-2026-05-66-SHIPPED",
+      "right_event_id": "HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "same_stage": false,
+      "same_unit": false,
+      "compatibility": "incompatible_measure_or_unit",
+      "direct_numeric_join_allowed": false
+    }
+  ],
+  "nonconversion_rules": [
+    "Do not multiply a nominal seven-metric-ton filled-container specification by a container count.",
+    "Do not convert gallons of feed or immobilized waste into glass or waste mass without a source method.",
+    "Do not assume that filled, sent, shipped, staged, accepted, and disposed counts cover the same container identities.",
+    "Do not treat an agency milestone as regulator acceptance unless the accepting authority says so."
+  ]
+}

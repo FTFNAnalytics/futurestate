@@ -1,0 +1,65 @@
+{
+  "id": "research-doc-57h-hanford-nonconversion-rejection-contract",
+  "collection_id": "research-collection-registry-revision-provenance-compatible-observation-joins-2026",
+  "title": "Hanford joins now reject synthetic container-mass and gallon conversions",
+  "slug": "57h-hanford-nonconversion-rejection-contract",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy Hanford Field Office and Washington State Department of Ecology",
+  "publication_date": "2026-08-03",
+  "document_type": "Data Release",
+  "summary": "The release encodes the four Phase 57G nonconversion rules as compatibility gates rather than narrative cautions alone. Denominator: Nine observations, thirty-six pairs, fourteen transitions, zero direct numeric joins.",
+  "key_findings": [
+    "Evidence stage: Authority and observation compatibility.",
+    "Finding: The release encodes the four Phase 57G nonconversion rules as compatibility gates rather than narrative cautions alone.",
+    "Denominator: Nine observations, thirty-six pairs, fourteen transitions, zero direct numeric joins.",
+    "Boundary: Nominal container weight is not observed output.",
+    "Boundary: Gallons cannot be converted without a source method.",
+    "Boundary: Filled, shipped, staged, and disposed counts need identity joins.",
+    "Next action: Require a regulator-verifiable batch-container ledger before mass-balance reconciliation."
+  ],
+  "why_it_matters": "The record makes source-version, identity, field, authority, stage, unit, and work-breakdown compatibility inspectable before later observations are joined.",
+  "ftfn_relevance": [
+    "Makes revisions and join decisions reproducible.",
+    "Preserves unresolved identities and incompatible observations.",
+    "Separates provenance from operating outcomes, implementation, acceptance, and closure."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Nominal container weight is not observed output.",
+    "Gallons cannot be converted without a source method.",
+    "Filled, shipped, staged, and disposed counts need identity joins.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57f-hanford-wtp-pmm-february-2026",
+  "supporting_source_ids": [
+    "source-57f-hanford-wtp-pmm-february-2026",
+    "source-57f-doe-hanford-100k-gallons-may-2026",
+    "source-56x-hanford-first-ilaw-disposal-2026"
+  ],
+  "supporting_official_urls": [
+    "https://pdw.hanford.gov/download/v2/AR-39756",
+    "https://www.energy.gov/em/articles/over-100000-gallons-hanford-tank-waste-turned-glass",
+    "https://www.energy.gov/em/articles/hanford-disposes-first-batch-vitrified-tank-waste-marking-key-progress"
+  ],
+  "official_url": "https://pdw.hanford.gov/download/v2/AR-39756",
+  "local_capture_path": "/downloads/registry-revision-provenance-compatible-observation-joins-2026/official-links/15-hanford-nonconversion-rejection-contract.txt",
+  "archive_member": "official-links/15-hanford-nonconversion-rejection-contract.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-03"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "research-doc-57h-amtrak-controlled-station-alias-registry",
+  "collection_id": "research-collection-registry-revision-provenance-compatible-observation-joins-2026",
+  "title": "Amtrak station names now resolve through a controlled alias registry",
+  "slug": "57h-amtrak-controlled-station-alias-registry",
+  "record_status": "Published",
+  "publisher": "National Railroad Passenger Corporation",
+  "publication_date": "2026-08-03",
+  "document_type": "Data Release",
+  "summary": "10 current names match exactly and 1 resolves through the explicit Mount-to-Mt. rule. Denominator: 16 distinct current names against 178 historical station keys.",
+  "key_findings": [
+    "Evidence stage: Alias and revision provenance.",
+    "Finding: 10 current names match exactly and 1 resolves through the explicit Mount-to-Mt. rule.",
+    "Denominator: 16 distinct current names against 178 historical station keys.",
+    "Boundary: FTFN normalization is not an official rename.",
+    "Boundary: State and identity must remain explicit.",
+    "Boundary: Unresolved names are not silently merged.",
+    "Next action: Attach future station records through source-versioned aliases and keep ambiguous matches unresolved."
+  ],
+  "why_it_matters": "The record makes source-version, identity, field, authority, stage, unit, and work-breakdown compatibility inspectable before later observations are joined.",
+  "ftfn_relevance": [
+    "Makes revisions and join decisions reproducible.",
+    "Preserves unresolved identities and incompatible observations.",
+    "Separates provenance from operating outcomes, implementation, acceptance, and closure."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "FTFN normalization is not an official rename.",
+    "State and identity must remain explicit.",
+    "Unresolved names are not silently merged.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Mobility",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57f-amtrak-stations-alp-fy24-29",
+  "supporting_source_ids": [
+    "source-57f-amtrak-stations-alp-fy24-29",
+    "source-57b-amtrak-ada-progress-june-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-ada-progress-report-june-2026.pdf"
+  ],
+  "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+  "local_capture_path": "/downloads/registry-revision-provenance-compatible-observation-joins-2026/official-links/01-amtrak-controlled-station-alias-registry.txt",
+  "archive_member": "official-links/01-amtrak-controlled-station-alias-registry.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-03"
+}

@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 57G adds four stable identity-and-lineage registries and twenty bounded panels while preserving nine operating-outcome holds.",
+  "summary": "A comparison and inference protocol: Phase 57H adds four versioned provenance and compatibility matrices while preserving nine operating-outcome holds.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -828,7 +828,27 @@
     "signal-57g-nnsa-lap4-work-breakdown-registry",
     "signal-57g-nnsa-srppf-work-breakdown-registry",
     "signal-57g-nnsa-capacity-qualification-acceptance-crosswalk",
-    "signal-57g-nnsa-gao-baseline-work-breakdown-crosswalk"
+    "signal-57g-nnsa-gao-baseline-work-breakdown-crosswalk",
+    "signal-57h-amtrak-controlled-station-alias-registry",
+    "signal-57h-amtrak-current-completion-cohort-intersection",
+    "signal-57h-amtrak-five-unresolved-current-names",
+    "signal-57h-amtrak-nonappearance-is-not-removal",
+    "signal-57h-amtrak-revision-state-vocabulary",
+    "signal-57h-montana-official-field-provenance-dictionary",
+    "signal-57h-montana-thirty-two-project-version-baseline",
+    "signal-57h-montana-privacy-classification-matrix",
+    "signal-57h-montana-raw-technology-code-hold",
+    "signal-57h-montana-terrestrial-leo-compatibility-routing",
+    "signal-57h-hanford-source-authority-matrix",
+    "signal-57h-hanford-fourteen-transition-custody-matrix",
+    "signal-57h-hanford-unit-threshold-operator-matrix",
+    "signal-57h-hanford-thirty-six-observation-pair-decisions",
+    "signal-57h-hanford-nonconversion-rejection-contract",
+    "signal-57h-nnsa-fy26-fy27-object-change-history",
+    "signal-57h-nnsa-lap4-versioned-scope-cost-matrix",
+    "signal-57h-nnsa-srppf-versioned-baseline-matrix",
+    "signal-57h-nnsa-capacity-qualification-output-separation",
+    "signal-57h-nnsa-gao-independent-baseline-provenance"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -1127,6 +1147,12 @@
       "label": "Four identity registries; twenty Published panels; nine holds",
       "node_type": "Signal",
       "note": "Stable station, project, lifecycle-stage, and work-breakdown identities create join rails without asserting operating outcomes."
+    },
+    {
+      "id": "node-phase57h-provenance-matrices",
+      "label": "Four versioned provenance matrices; twenty Published panels; nine holds",
+      "node_type": "Signal",
+      "note": "Alias, field, authority, unit, stage, and work-breakdown joins become inspectable without asserting outcomes."
     }
   ],
   "links": [
@@ -1857,6 +1883,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Identity and lineage do not establish reliability, adoption, yield, readiness, output, implementation, closure, or causation."
+    },
+    {
+      "from": "node-phase57h-provenance-matrices",
+      "to": "node-phase57g-identity-registries",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57H versions and constrains the four Phase 57G registries."
+    },
+    {
+      "from": "node-phase57h-provenance-matrices",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Unresolved aliases, field definitions, identities, periods, units, operators, and work-breakdown changes remain explicit."
+    },
+    {
+      "from": "node-phase57h-provenance-matrices",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Provenance and compatibility do not establish operating outcomes or causation."
     }
   ],
   "what_this_map_supports": [
@@ -1907,7 +1954,8 @@
     "Twelve bounded compatible service or material-flow series plus eight visible reliability, adoption, activation, recurring-output, capacity, or baseline holds.",
     "Fifteen bounded Phase 57E asset, control, accepted-output, or independent-closure records plus nine visible operating-result holds.",
     "Sixteen bounded Phase 57F denominator, measurement-contract, material-stage, or output-state records plus nine preserved operating-outcome holds.",
-    "Four Phase 57G identity-and-lineage registries, twenty bounded Published panels, and nine preserved operating-outcome holds."
+    "Four Phase 57G identity-and-lineage registries, twenty bounded Published panels, and nine preserved operating-outcome holds.",
+    "Four Phase 57H versioned provenance matrices, twenty bounded Published panels, and nine preserved operating-outcome holds."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -2029,6 +2077,7 @@
     "Named-asset service quality, cohort adoption and retention, complete monthly material balances, qualified site-period output, GAO-sufficient program baselines, and independently accepted outcomes.",
     "Named-asset reliability, privacy-safe cohort adoption and retention, complete monthly material balances, qualified site-period output, and exact enterprise-baseline sufficiency.",
     "Current asset reliability, privacy-safe adoption and retention, complete material balances, site-period qualified output, and exact enterprise-baseline sufficiency.",
-    "Compatible current asset, project-quarter, batch-container, site-period qualified-output, and exact independent-baseline observations."
+    "Compatible current asset, project-quarter, batch-container, site-period qualified-output, and exact independent-baseline observations.",
+    "Compatible source-versioned observations with stable identity, definition, period, unit, method, authority, quality, acceptance, and disposition."
   ]
 }

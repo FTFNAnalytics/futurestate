@@ -183,6 +183,8 @@ What is now stable:
 - The verified Phase 57F contract is 2,218 pages, 706 sources, 612 signals, 496 Published signals, 116 In Review signals, 485 current Published-support sources, forty-four briefings, forty-one research collections, 728 research documents, 60 updates, 672 research export records, and a twenty-eight-file archive. Local content commit `2071278ff7244c6cef3bb6428d2913209bc0d963` maps to exact private runtime commit `63921ba8da76c7496a974bb572dbdd2436ecabfe`, deployed as owner-only Sites version 58 in `appgdep_6a7105d5cea48191aae1577dec4deff4` with one owner, no groups, no editors, and zero external visitors.
 - Phase 57G reviews twenty-nine named-asset and project-cohort registry records. Twenty publish and nine remain In Review; nine new Tier 1 sources and twenty-seven carried official sources support four structured registries, all nine Phase 57F holds remain explicit, no new hold is added, and zero exact targets, triggers, scope, implementation, closure, agency-contact, or FOIA changes are recorded.
 - The verified Phase 57G contract is 2,287 pages, 715 sources, 641 signals, 516 Published signals, 125 In Review signals, 495 current Published-support sources, forty-five briefings, forty-two research collections, 757 research documents, 61 updates, 693 research export records, and a thirty-two-file archive. Local content commit `c4410e56f5dd8e569deee100241e683fb3aaf937` maps to exact private runtime commit `aa7a53d4e60b59120a641620fcf40c7a1704ec24`, deployed as owner-only Sites version 59 in `appgdep_6a71116f01f48191b22ec5f4709f8409` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57H reviews twenty-nine registry-revision, provenance, and compatible-observation records. Twenty publish and nine remain In Review; thirty-six carried Tier 1 sources support four structured matrices, all nine Phase 57G holds remain explicit, no new hold is added, and zero exact targets, triggers, scope, implementation, closure, agency-contact, or FOIA changes are recorded.
+- The verified Phase 57H contract is 2,347 pages, 715 sources, 670 signals, 536 Published signals, 134 In Review signals, 495 current Published-support sources, forty-six briefings, forty-three research collections, 786 research documents, 62 updates, 714 research export records, and a thirty-two-file archive. Owner-only deployment is pending; Sites version 59 remains the hosted Phase 57G checkpoint.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
@@ -221,8 +223,8 @@ What is now stable:
 
 What is still prelaunch scaffolding:
 
-- Five hundred and sixteen signal records are `Published`.
-- One hundred and twenty-five signal records are still `In Review`; no Draft Sample remains. Phase 57G preserves two measured-reliability, three observed-adoption, one complete mass-balance, and three qualified-output-or-baseline holds, explicitly preserving all nine Phase 57F holds and adding no new hold.
+- Five hundred and thirty-six signal records are `Published`.
+- One hundred and thirty-four signal records are still `In Review`; no Draft Sample remains. Phase 57H preserves two measured-reliability, three observed-adoption, one complete mass-balance, and three qualified-output-or-baseline holds, explicitly preserving all nine Phase 57G holds and adding no new hold.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
@@ -232,27 +234,27 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should continue with Phase 57H registry revision, provenance, and compatible-observation joins. Build the Amtrak station alias and historical-to-current revision matrix, Montana official field dictionary and per-project version table, Hanford authority and observation-compatibility matrix, and NNSA FY2026-to-FY2027-to-GAO work-breakdown change history. Treat aliases, definitions, version changes, and compatibility decisions as provenance evidence rather than reliability, adoption, yield, readiness, or closure results; preserve all nine Phase 57G holds. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should complete the Phase 57H owner-only deployment and continue with Phase 57I versioned registry change detection and bounded-observation ingestion. Build the Amtrak source-diff queue, Montana field-schema migration and completed-project-quarter intake contract, Hanford compatible-observation validator, and NNSA object-level FY/GAO source-diff ledger. Treat detected changes and compatible joins as reviewed source-version evidence rather than reliability, adoption, yield, readiness, or closure results; preserve all nine Phase 57H holds. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 641 signal records,
+- 670 signal records,
 - 715 source records,
 - 17 topic records,
 - 5 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 45 briefings: 38 Published and 7 In Review,
+- 46 briefings: 39 Published and 7 In Review,
 - 16 evidence gap records,
-- current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 57G reviews,
+- current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 57H reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 42 research collections with 757 document records,
+- 43 research collections with 786 document records,
 - 15 reader pathways across 19 existing Atlas surfaces,
-- 61 public update-log entries.
+- 62 public update-log entries.
 
-Four hundred and ninety-six official-source-backed signals are now `Published`.
+Five hundred and thirty-six official-source-backed signals are now `Published`.
 
 Phase 55M added thirteen bounded records to the prior 25-signal Published set:
 
@@ -425,16 +427,16 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 57H registry revision, provenance, and compatible-observation join matrix
+Phase 57I versioned registry change detection and bounded-observation ingestion
 ```
 
 Proceed by:
 
-- build an Amtrak alias and historical-to-current revision matrix across the 197 Appendix B memberships and later official station records,
-- add Montana's official field dictionary and per-project attribute/version matrix while keeping individual BSL and CAI details private,
-- build Hanford authority, custody, transition, unit, threshold-operator, and observation-compatibility decisions without synthetic conversion,
-- build the NNSA FY2026-to-FY2027-to-GAO work-breakdown change history across LAP4, SRPPF, qualification, capacity, and independent baseline objects,
-- preserve all nine Phase 57G holds and process later outcome publications as source-versioned bounded inserts,
+- build an Amtrak source-version diff queue with official station-code resolution and explicit unchanged, added, removed, renamed, replaced, and unresolved decisions,
+- add Montana field-schema migration and completed-project-quarter intake ledgers while keeping individual BSL, subscriber, and CAI details private,
+- build a Hanford observation validator that rejects incompatible identity, stage, period, measure, threshold-operator, method, unit, authority, quality, acceptance, and disposition joins,
+- build an NNSA object-level FY and GAO source-diff ledger across LAP4, SRPPF, qualification, capacity, output, completion, capability, and independent baseline objects,
+- preserve all nine Phase 57H holds and process later outcome publications only as reviewed source-versioned bounded inserts,
 - publish only an exact record, a new authoritative status, or a materially narrower locator,
 - do not represent a public search as agency contact or a submitted FOIA request,
 - preserve stop rules, reopening triggers, authority conflicts, and time-bounded milestone checks as inserts rather than pauses,
@@ -528,16 +530,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 57G named-asset and project-cohort registry expansion; complete, validated, and owner-only deployed.
+Phase 57H registry revision, provenance, and compatible-observation joins; complete and validated locally, with owner-only deployment pending.
 
 Current release checkpoint:
-v0.1.1 remains the frozen 102-source / 18-signal / 182-page checkpoint; the active local development candidate is Phase 57G, and the hosted non-public checkpoint is owner-only Sites version 59 on exact Phase 57G runtime commit `aa7a53d4e60b59120a641620fcf40c7a1704ec24`.
+v0.1.1 remains the frozen 102-source / 18-signal / 182-page checkpoint; the active local development candidate is Phase 57H, and the hosted non-public checkpoint remains owner-only Sites version 59 on exact Phase 57G runtime commit `aa7a53d4e60b59120a641620fcf40c7a1704ec24` until the Phase 57H deployment completes.
 
 Current development state:
-v0.2 Phase 57G candidate: package 0.2.0-dev, 715 public sources, 150 first-pass-triaged private candidates, 641 signals, 17 topics, 61 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 2,287 generated site pages, 516 Published signals, 38 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 42 research collections, 757 research documents, four structured Phase 57G registries, all prior verified archives plus the Phase 57G 32-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 494 Manual Review and 221 Probe Ready records.
+v0.2 Phase 57H candidate: package 0.2.0-dev, 715 public sources, 150 first-pass-triaged private candidates, 670 signals, 17 topics, 62 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 2,347 generated site pages, 536 Published signals, 39 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 43 research collections, 786 research documents, four structured Phase 57H provenance matrices, all prior verified archives plus the Phase 57H 32-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 494 Manual Review and 221 Probe Ready records.
 
 Next decision gate:
-Begin Phase 57H. Build the Amtrak station alias and revision matrix, Montana official field dictionary and project-attribute version table, Hanford authority and observation-compatibility matrix, and NNSA FY2026-to-FY2027-to-GAO work-breakdown change history. Treat every alias, field definition, version change, and compatibility decision as provenance evidence rather than a reliability, adoption, yield, readiness, or closure result. Preserve all nine Phase 57G holds. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Complete the Phase 57H owner-only deployment, then begin Phase 57I. Build the Amtrak source-diff queue, Montana field-schema migration and completed-project-quarter intake contract, Hanford compatible-observation validator, and NNSA object-level FY/GAO source-diff ledger. Treat every detected change and accepted join as reviewed source-version evidence rather than a reliability, adoption, yield, readiness, or closure result. Preserve all nine Phase 57H holds. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

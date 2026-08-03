@@ -1,0 +1,65 @@
+{
+  "id": "research-doc-57h-montana-privacy-classification-matrix",
+  "collection_id": "research-collection-registry-revision-provenance-compatible-observation-joins-2026",
+  "title": "Montana project fields now carry explicit privacy classifications",
+  "slug": "57h-montana-privacy-classification-matrix",
+  "record_status": "Published",
+  "publisher": "Montana Department of Administration",
+  "publication_date": "2026-08-03",
+  "document_type": "Data Release",
+  "summary": "Project identifiers and aggregate counts remain public while individual BSL, subscriber, and CAI detail stays excluded. Denominator: Zero individual BSL identifiers and zero individual CAI details in public output.",
+  "key_findings": [
+    "Evidence stage: Field provenance and version compatibility.",
+    "Finding: Project identifiers and aggregate counts remain public while individual BSL, subscriber, and CAI detail stays excluded.",
+    "Denominator: Zero individual BSL identifiers and zero individual CAI details in public output.",
+    "Boundary: Aggregate counts cannot be reversed into locations.",
+    "Boundary: Subscriber records are outside scope.",
+    "Boundary: CAI facility detail remains excluded.",
+    "Next action: Apply the same classification before publishing any later quarterly extract."
+  ],
+  "why_it_matters": "The record makes source-version, identity, field, authority, stage, unit, and work-breakdown compatibility inspectable before later observations are joined.",
+  "ftfn_relevance": [
+    "Makes revisions and join decisions reproducible.",
+    "Preserves unresolved identities and incompatible observations.",
+    "Separates provenance from operating outcomes, implementation, acceptance, and closure."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Aggregate counts cannot be reversed into locations.",
+    "Subscriber records are outside scope.",
+    "CAI facility detail remains excluded.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-montana-locations-csv",
+  "supporting_source_ids": [
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-cai-csv",
+    "source-57g-montana-deployment-projects-csv"
+  ],
+  "supporting_official_urls": [
+    "https://doa.mt.gov/_docs/connectmt/fp_locations-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_CAI-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_deployment_projects-1.5.26.csv"
+  ],
+  "official_url": "https://doa.mt.gov/_docs/connectmt/fp_locations-1.5.26.csv",
+  "local_capture_path": "/downloads/registry-revision-provenance-compatible-observation-joins-2026/official-links/08-montana-privacy-classification-matrix.txt",
+  "archive_member": "official-links/08-montana-privacy-classification-matrix.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-03"
+}
