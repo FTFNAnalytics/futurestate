@@ -2,7 +2,7 @@
 
 Date: 2026-08-03
 
-Status: complete and validated; owner-only deployment pending
+Status: complete, validated, and owner-only deployed
 
 ## Goal
 
@@ -105,4 +105,15 @@ Execute a historical backfill and review-queue expansion without waiting for new
 
 ## Deployment receipt
 
-Pending owner-only Sites deployment. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
+- Local content commit: `eacabc093596da563d4f2e1c9f728420c0847cca`.
+- Exact private runtime commit: `2b1470a666c2b3069295c46cf43d0e0fa16c2a69`.
+- Private runtime parent: `2ff8ba6a79dbca070f73df3536604d7274b13a48` (Phase 57H).
+- Sites version: 61 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_a7116e2613d4819190855ebe64ae4af8`).
+- Deployment: `appgdep_6a7121a3c66081919439713d92b3b7ba`, succeeded.
+- Live URL: `https://ftfn-analytics.jbumstead.chatgpt.site`.
+- Runtime archive: 3,409 files, 151,070,720 bytes, `sha256:9580e794a7f081b77c15fdb03caa0dc43dc6ca188bb59921dc85279478dbdf7c`.
+- Local compressed deployment archive: 94,780,439 bytes, SHA-256 `D3107860EAC661F1C0ABD2AB02925A4EDB3DFB186D2FDDFC2FFD03CF5AD8F24F`.
+- Access reverified after deployment: custom owner-only, one owner, no groups, no editors, and zero external visitors.
+- Visual route QA was not requested for Phase 57I.
+
+Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
