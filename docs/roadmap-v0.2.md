@@ -402,12 +402,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 57C | twelve Published panels, eight explicit holds, all seven Phase 57B holds preserved, two new Tier 1 sources, Research Watch 033, a twenty-three-file archive, a verified 2,053-page contract, and Sites version 55 |
 | Completed and owner-only deployed | Phase 57D | twelve Published compatible series, eight preserved holds, seven new Tier 1 sources, Research Watch 034, a twenty-three-file archive, a verified 2,102-page contract, and Sites version 56 |
 | Completed and owner-only deployed | Phase 57E | fifteen Published records, nine explicit holds, all eight Phase 57D holds preserved, seven new Tier 1 sources, Research Watch 035, a twenty-seven-file archive, a verified 2,159-page contract, and Sites version 57 |
-| Next content gate | Phase 57F | measured reliability, observed adoption, and full output reconciliation using the same named assets, locations, material-flow stages, and production programs |
+| Completed; owner-only deployment pending | Phase 57F | sixteen Published denominator, measurement-contract, material-stage, and output-state records, nine preserved holds, seven new Tier 1 sources, Research Watch 036, a twenty-eight-file archive, and a verified 2,218-page contract |
+| Next content gate | Phase 57G | named-asset and project-cohort registry expansion across Amtrak, BEAD, Hanford, and NNSA without waiting for dated outcome holds |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now passes a verified 2,159-page Phase 57E contract. Phase 57E reviews twenty-four records, publishes three Amtrak asset-quality reconciliations, four Montana BEAD acceptance controls, four Hanford accepted-output records, and four independent GAO governance closures; it preserves all eight Phase 57D holds and adds one complete Hanford monthly mass-balance hold. Seven new Tier 1 source profiles and fourteen carried official sources support the batch. No exact target artifact, trigger, directive-scope change, agency contact, or FOIA request is recorded. Four GAO-24-106342 recommendations are independently Closed-Implemented without changing the inherited one Closed / twenty-one Partially Closed / two Open entity ledger or the separate GAO-23-104661 hold. Local content commit `bdf4a3a45d321578b62bf6c90fc59e233e60ea79` maps to exact private runtime commit `a0139a2e104c2b282eef0601620c7af53c9757fb`, deployed as owner-only Sites version 57 in `appgdep_6a70fc9dc100819192e7756b5af9d4e6`. The next non-public content gate is Phase 57F: measured reliability, observed adoption, and full output reconciliation while exact-artifact checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now passes a verified 2,218-page Phase 57F contract. Phase 57F reviews twenty-five records and publishes sixteen bounded historical-denominator, adoption-measurement, material-stage, and output-state reconciliations while preserving all nine Phase 57E holds and adding no new hold. Seven new Tier 1 source profiles and seventeen carried official sources support the batch. The new evidence anchors Amtrak's 120 / 96 / 93 / 117 PIDS lineage, Montana's ten-year LEO measurement contract, Hanford's 19 / 34 / 66 / approximately-30 container-stage ledger and greater-than-100,000-gallon milestone, and NNSA's first-unit versus current R&D-only public-state conflict. GAO-23-104661 remains Open with a December 2026 estimate forecast. No exact target artifact, trigger, directive-scope, implementation, closure, agency-contact, FOIA, or entity-ledger change is recorded. The Phase 57F owner-only deployment receipt is pending. The next non-public content gate is Phase 57G named-asset and project-cohort registry expansion while dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1711,18 +1712,19 @@ Boundaries:
 - acceptance authority and independent sufficiency remain explicit;
 - no ranking, composite, readiness score, generalized savings claim, or unsupported causal inference.
 
-### Phase 57F: Measured Reliability, Observed Adoption, And Full Output Reconciliation - Next Content Gate
+### Phase 57F: Measured Reliability, Observed Adoption, And Full Output Reconciliation - Complete And Locally Validated
 
-Goal: replace asset and acceptance controls with privacy-safe observed outcomes and close the remaining material and production reconciliation gaps for the exact Phase 57E cohorts.
+Goal: advance the exact Phase 57E cohorts into the strongest current public measurement layer without converting historical cohorts, reporting controls, cumulative lower bounds, nominal specifications, single qualified units, capacity targets, or forecasts into operating outcomes.
 
-Priorities:
+Delivered:
 
-1. reconcile Amtrak's 93-versus-117 PIDS inventories into a stable station-device register and add compatible asset-period uptime, outage, maintenance, actual use, complaint, resolution, and rider outcomes;
-2. follow the same Louisiana and Montana location cohorts through installed, serviceable, subscribed, tested, retained, priced, complained, remediated, and accepted-closeout results without exposing subscriber identities;
-3. build a regulator-verifiable Hanford monthly batch and container mass balance across feed, glass, quality release, rejects, rework, filled, shipped, accepted, disposed, secondary streams, and ending inventory;
-4. add NNSA produced, qualified, rejected, reworked, and accepted output only by named site and period with explicit acceptance authority;
-5. reopen the enterprise-baseline hold only on the exact GAO-23-104661 integrated-schedule and lifecycle-cost sufficiency decision;
-6. preserve all nine Phase 57E holds until their exact reopening conditions are met.
+- twenty-five reviewed records with sixteen Published and nine In Review;
+- four Amtrak historical-denominator reconciliations, four Montana adoption-measurement contracts, four Hanford output-stage reconciliations, and four NNSA output-and-baseline-state reconciliations;
+- all nine Phase 57E holds preserved exactly once and no new hold added;
+- seven new Tier 1 sources, seventeen carried official sources, Research Watch 036, two ledgers, one collection, one update, and a twenty-eight-file archive;
+- a verified 2,218-page contract with 706 sources, 612 signals, 496 Published, 116 In Review, 41 collections, 728 research documents, 44 briefings, 60 updates, and 485 Published-support sources;
+- zero exact-target artifacts, triggers, directive-scope changes, implementation changes, closure changes, agency contacts, or FOIA requests;
+- owner-only Sites deployment receipt pending.
 
 Boundaries:
 
@@ -1730,6 +1732,26 @@ Boundaries:
 - test controls are not test results, serviceability is not adoption, and adoption is not retention;
 - privacy-safe aggregates must retain an exact eligible or serviceable denominator;
 - separate material stages and separate GAO recommendation identities remain non-interchangeable;
+- no ranking, composite, readiness score, generalized savings claim, or unsupported causal inference.
+
+### Phase 57G: Named-Asset And Project-Cohort Registry Expansion - Next Content Gate
+
+Goal: use existing official inventories to build stable public entity and lifecycle registries that are ready to accept future outcome observations without waiting for the nine Phase 57F holds to clear.
+
+Priorities:
+
+1. extract and normalize Amtrak's named Appendix B PIDS, train-access, and access-and-amenity station cohorts, preserving historical and current revision states;
+2. join Montana final-proposal award, subgrantee, deployment-project, and location files to the terrestrial and LEO reporting contracts under privacy-safe project denominators;
+3. define a Hanford batch, container, lifecycle-stage, date, mass-unit, quality-disposition, shipment, acceptance, and disposal registry from current regulator and agency records without synthetic conversion;
+4. build an NNSA site, facility, program, capacity, development, qualification, acceptance, and GAO-baseline work-breakdown crosswalk;
+5. preserve all nine Phase 57F holds and process later outcome publications as bounded inserts.
+
+Boundaries:
+
+- a registry entry is an identity and lineage record, not a reliability, adoption, yield, readiness, or closure result;
+- historical and current revisions remain explicit;
+- subscriber identities and sensitive location details remain outside public output;
+- material stage and mass units remain non-interchangeable;
 - no ranking, composite, readiness score, generalized savings claim, or unsupported causal inference.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
@@ -1844,10 +1866,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 57F with measured reliability, observed adoption, and full output reconciliation. Use the exact Phase 57E Amtrak assets, Louisiana and Montana location cohorts, Hanford material-flow stages, and NNSA production-program identities. Require compatible entity, cohort, stage, period, unit, threshold operator, denominator, method, revision history, acceptance authority, and attribution before promotion. Preserve all nine current holds until their named reopening conditions are met.
+Begin Phase 57G with named-asset and project-cohort registry expansion. Extract Amtrak's station-level Appendix B cohorts, connect Montana award and location baselines to its measurement contracts, formalize Hanford batch-container-stage identities, and build the NNSA site-facility-capacity-qualification-baseline crosswalk. Treat every registry row as identity and lineage evidence rather than an operating result. Preserve all nine Phase 57F holds until their named reopening conditions are met.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 57E is complete and owner-only deployed at 2,159 pages, 699 sources, 587 signals, 480 Published signals, 107 In Review signals, 40 collections, 703 research documents, 43 briefings, and 59 updates. Sites version 57 serves exact private runtime commit `a0139a2e104c2b282eef0601620c7af53c9757fb` in `appgdep_6a70fc9dc100819192e7756b5af9d4e6` with one owner, no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phase 57F is complete and locally validated at 2,218 pages, 706 sources, 612 signals, 496 Published signals, 116 In Review signals, 41 collections, 728 research documents, 44 briefings, and 60 updates. The owner-only Phase 57F deployment receipt is pending; Sites version 57 remains the current hosted checkpoint until that deployment completes. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

@@ -1,0 +1,102 @@
+{
+  "phase": "57F",
+  "captured_date": "2026-08-03",
+  "promoted_document_ids": [
+    "research-doc-57f-amtrak-historical-pids-cohort-reconciliation",
+    "research-doc-57f-amtrak-ada-responsibility-boundary",
+    "research-doc-57f-amtrak-train-access-historical-cohort",
+    "research-doc-57f-amtrak-amenity-historical-closure-cohort",
+    "research-doc-57f-montana-leo-ten-year-reporting-window",
+    "research-doc-57f-montana-leo-active-subscriber-count-contract",
+    "research-doc-57f-montana-leo-cpe-shipment-contract",
+    "research-doc-57f-montana-leo-served-location-validation-contract",
+    "research-doc-57f-hanford-nineteen-container-shipment-snapshot",
+    "research-doc-57f-hanford-container-progression-reconciliation",
+    "research-doc-57f-hanford-one-hundred-thousand-gallon-milestone",
+    "research-doc-57f-hanford-container-specification-boundary",
+    "research-doc-57f-nnsa-current-r-and-d-capability-state",
+    "research-doc-57f-nnsa-first-unit-current-capability-crosswalk",
+    "research-doc-57f-nnsa-two-site-capacity-target-boundary",
+    "research-doc-57f-nnsa-gao-baseline-status-reconciliation"
+  ],
+  "promoted_signal_ids": [
+    "signal-57f-amtrak-historical-pids-cohort-reconciliation",
+    "signal-57f-amtrak-ada-responsibility-boundary",
+    "signal-57f-amtrak-train-access-historical-cohort",
+    "signal-57f-amtrak-amenity-historical-closure-cohort",
+    "signal-57f-montana-leo-ten-year-reporting-window",
+    "signal-57f-montana-leo-active-subscriber-count-contract",
+    "signal-57f-montana-leo-cpe-shipment-contract",
+    "signal-57f-montana-leo-served-location-validation-contract",
+    "signal-57f-hanford-nineteen-container-shipment-snapshot",
+    "signal-57f-hanford-container-progression-reconciliation",
+    "signal-57f-hanford-one-hundred-thousand-gallon-milestone",
+    "signal-57f-hanford-container-specification-boundary",
+    "signal-57f-nnsa-current-r-and-d-capability-state",
+    "signal-57f-nnsa-first-unit-current-capability-crosswalk",
+    "signal-57f-nnsa-two-site-capacity-target-boundary",
+    "signal-57f-nnsa-gao-baseline-status-reconciliation"
+  ],
+  "held_document_ids": [
+    "research-doc-57f-amtrak-pids-closeout-reliability-hold",
+    "research-doc-57f-amtrak-named-asset-reliability-hold",
+    "research-doc-57f-louisiana-nextlink-observed-adoption-hold",
+    "research-doc-57f-louisiana-starlink-observed-adoption-hold",
+    "research-doc-57f-montana-quarterly-observed-results-hold",
+    "research-doc-57f-hanford-complete-material-balance-hold",
+    "research-doc-57f-nnsa-recurring-qualified-output-hold",
+    "research-doc-57f-nnsa-final-capacity-readiness-hold",
+    "research-doc-57f-nnsa-exact-gao-baseline-hold"
+  ],
+  "held_signal_ids": [
+    "signal-57f-amtrak-pids-closeout-reliability-hold",
+    "signal-57f-amtrak-named-asset-reliability-hold",
+    "signal-57f-louisiana-nextlink-observed-adoption-hold",
+    "signal-57f-louisiana-starlink-observed-adoption-hold",
+    "signal-57f-montana-quarterly-observed-results-hold",
+    "signal-57f-hanford-complete-material-balance-hold",
+    "signal-57f-nnsa-recurring-qualified-output-hold",
+    "signal-57f-nnsa-final-capacity-readiness-hold",
+    "signal-57f-nnsa-exact-gao-baseline-hold"
+  ],
+  "inherited_hold_lineage": [
+    {
+      "action_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-05",
+      "parent_hold_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-04"
+    },
+    {
+      "action_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-04",
+      "parent_hold_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-03"
+    },
+    {
+      "action_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-05",
+      "parent_hold_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-04"
+    },
+    {
+      "action_key": "LA-BEAD-STARLINK-HOLD-2026-05",
+      "parent_hold_key": "LA-BEAD-STARLINK-HOLD-2026-04"
+    },
+    {
+      "action_key": "MT-BEAD-QUARTERLY-HOLD-2026-05",
+      "parent_hold_key": "MT-BEAD-QUARTERLY-HOLD-2026-04"
+    },
+    {
+      "action_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-02",
+      "parent_hold_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-01"
+    },
+    {
+      "action_key": "NNSA-PIT-RATE-HOLD-2026-05",
+      "parent_hold_key": "NNSA-PIT-RATE-HOLD-2026-04"
+    },
+    {
+      "action_key": "NNSA-PIT-PEIS-HOLD-2026-05",
+      "parent_hold_key": "NNSA-PIT-PEIS-HOLD-2026-04"
+    },
+    {
+      "action_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-06",
+      "parent_hold_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-05"
+    }
+  ],
+  "exact_target_artifacts_acquired": 0,
+  "decision": "Sixteen bounded reconciliation or measurement-contract records publish. All nine Phase 57E operating-outcome holds remain visible with unchanged reopening conditions; no new hold, trigger, contact, scope change, implementation change, or closure change is recorded."
+}

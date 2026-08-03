@@ -302,6 +302,8 @@ Phase 57D adds twenty persistent-service-quality and compatible-time-series reco
 
 Phase 57E adds twenty-four asset-reliability, cohort-adoption, accepted-output, and independent-closure records. Three Amtrak asset-quality reconciliations, four Montana BEAD acceptance controls, four Hanford accepted-output records, and four independent GAO governance closures publish; two asset-reliability, three adoption-or-retention, one complete mass-balance, and three recurring-output-or-baseline records remain In Review. Seven new Tier 1 sources and fourteen carried official sources support Research Watch 035, two ledgers, one collection, one public update, and a twenty-seven-file archive. The verified candidate is now 2,159 pages, 699 sources, 587 signals, 480 Published, 107 In Review, 59 updates, forty-three briefings, forty collections, 703 research documents, and 479 current Published-support sources. All eight Phase 57D holds remain explicit and one Hanford mass-balance hold is added. GAO-24-106342 Recommendations 1 through 4 are recorded Closed-Implemented independently; the inherited one Closed / twenty-one Partially Closed / two Open entity ledger and the separate GAO-23-104661 hold do not change. Local content commit `bdf4a3a45d321578b62bf6c90fc59e233e60ea79` produced exact private runtime commit `a0139a2e104c2b282eef0601620c7af53c9757fb`, deployed as owner-only Sites version 57 in `appgdep_6a70fc9dc100819192e7756b5af9d4e6`.
 
+Phase 57F adds twenty-five measured-reliability, observed-adoption, material-stage, and qualified-output records. Four Amtrak historical-denominator reconciliations, four Montana LEO measurement contracts, four Hanford stage reconciliations, and four NNSA output-and-baseline-state reconciliations publish; all nine Phase 57E operating-outcome holds remain In Review and no new hold is added. Seven new Tier 1 sources and seventeen carried official sources support Research Watch 036, two ledgers, one collection, one public update, and a twenty-eight-file archive. The verified candidate is now 2,218 pages, 706 sources, 612 signals, 496 Published, 116 In Review, 60 updates, forty-four briefings, forty-one collections, 728 research documents, 672 research export records, and 485 current Published-support sources. The evidence anchors Amtrak's 120 / 96 / 93 / 117 PIDS lineage, Montana's ten-year LEO reporting contract, Hanford's 19 / 34 / 66 / approximately-30 stage ledger, and NNSA's first-unit versus current R&D-only capability state. GAO-23-104661 remains Open with a December 2026 estimate forecast; the inherited one Closed / twenty-one Partially Closed / two Open entity ledger does not change. Owner-only Sites deployment is pending.
+
 Verified Phase 56W results:
 
 - 1,798 generated site pages,
@@ -397,11 +399,21 @@ Verified Phase 57E results:
 - zero exact targets, triggers, directive-scope changes, agency contacts, and FOIA requests;
 - content references, source health, candidate validation, Astro diagnostics, the 2,159-page build, Phase 57E assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the twenty-seven-file archive pass.
 
+Verified Phase 57F results:
+
+- sixteen Published records and nine In Review holds with a 4 / 2 / 4 / 3 / 4 / 1 / 4 / 3 measured-reliability-denominator, reliability-hold, adoption-measurement, adoption-hold, output-reconciliation, mass-balance-hold, qualified-output-reconciliation, and qualified-output-or-baseline-hold split;
+- seven new Tier 1 source profiles, seventeen carried official sources, Research Watch 036, one collection, one update, and two machine-readable ledgers;
+- all nine Phase 57E holds preserved exactly once with no new hold;
+- exact historical Amtrak cohort lineage, Montana LEO reporting fields and ten-year duration, bounded Hanford container and volume stages, and the NNSA first-unit/current-capability/GAO-state crosswalk;
+- zero exact targets, triggers, directive-scope changes, implementation changes, closure changes, agency contacts, and FOIA requests;
+- the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
+- content references, source health, candidate validation, Astro diagnostics, the 2,218-page build, Phase 57F assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the twenty-eight-file archive pass.
+
 The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
-The local release work is preserved on `codex/phase51-content`. Phase 57E is complete, validated, and owner-only deployed. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
+The local release work is preserved on `codex/phase51-content`. Phase 57F is complete and locally validated; owner-only deployment is pending. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
 The current hosting checkpoint is owner-only Sites version 57, serving the verified Phase 57E package from exact private runtime commit `a0139a2e104c2b282eef0601620c7af53c9757fb` in deployment `appgdep_6a70fc9dc100819192e7756b5af9d4e6`. The custom policy allows only the owner, no groups, no editors, and zero external visitors. Deployment status, source provenance, the 3,033-file runtime archive, and access passed; visual route QA was not requested for Phase 57E. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
@@ -409,7 +421,7 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- One hundred and seven signals remain `In Review`; the nine Phase 57E holds keep unaccepted Amtrak closeout and named-asset reliability, undisclosed Louisiana and Montana adoption results, the complete Hanford monthly mass balance, recurring qualified NNSA output, final capacity, and the exact GAO-23-104661 enterprise baseline outside the Published layer. Four hundred and eighty bounded signals are Published.
+- One hundred and sixteen signals remain `In Review`; the nine preserved Phase 57F holds keep unaccepted Amtrak closeout and named-asset reliability, undisclosed Louisiana and Montana adoption results, the complete Hanford monthly mass balance, recurring qualified NNSA output, final capacity, and the exact GAO-23-104661 enterprise baseline outside the Published layer. Four hundred and ninety-six bounded signals are Published.
 - Seven briefings and all five local-system profiles remain prelaunch or research material. The thirty-four Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
@@ -497,6 +509,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-arc
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug longitudinal-delivery-outcomes-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug repeat-measurement-accepted-operation-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug fixed-cohort-completion-realized-outcomes-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug measured-reliability-observed-adoption-full-output-reconciliation-2026
 npm.cmd run check
 npm.cmd run build
 npm.cmd run verify:phase56o
@@ -509,7 +522,8 @@ npm.cmd run verify:phase56x
 npm.cmd run verify:phase56y
 npm.cmd run verify:phase56z
 npm.cmd run verify:phase57a
+npm.cmd run verify:phase57f
 npm.cmd run verify:release
 ```
 
-Expected output: 2,159 generated site pages, the prior verified research archives plus the Phase 57E twenty-seven-file archive, fifteen Published Phase 57E records and nine In Review holds, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57E and v0.2 release assertions.
+Expected output: 2,218 generated site pages, the prior verified research archives plus the Phase 57F twenty-eight-file archive, sixteen Published Phase 57F records and nine In Review holds, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57F and v0.2 release assertions.

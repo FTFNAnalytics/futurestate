@@ -105,7 +105,15 @@
     "signal-57e-montana-bead-speed-acceptance-control",
     "signal-57e-montana-bead-latency-acceptance-control",
     "signal-57e-montana-bead-availability-acceptance-control",
-    "signal-57e-montana-bead-active-subscriber-test-control"
+    "signal-57e-montana-bead-active-subscriber-test-control",
+    "signal-57f-amtrak-historical-pids-cohort-reconciliation",
+    "signal-57f-amtrak-ada-responsibility-boundary",
+    "signal-57f-amtrak-train-access-historical-cohort",
+    "signal-57f-amtrak-amenity-historical-closure-cohort",
+    "signal-57f-montana-leo-ten-year-reporting-window",
+    "signal-57f-montana-leo-active-subscriber-count-contract",
+    "signal-57f-montana-leo-cpe-shipment-contract",
+    "signal-57f-montana-leo-served-location-validation-contract"
   ],
   "source_ids": [
     "source-virginia-scc-large-load-gs5-2025",
@@ -163,7 +171,10 @@
     "source-57e-amtrak-accessibility-progress-june-2026",
     "source-57e-montana-bead-faq-july-2026",
     "source-57e-montana-quarterly-report-instructions-june-2026",
-    "source-57e-montana-project-monitoring-guide-june-2026"
+    "source-57e-montana-project-monitoring-guide-june-2026",
+    "source-57f-amtrak-stations-alp-fy24-29",
+    "source-57f-montana-bead-resource-index-august-2026",
+    "source-57f-montana-leo-quarterly-instructions-june-2026"
   ],
   "organization_ids": [],
   "technology_ids": [],
@@ -180,7 +191,8 @@
     "briefing-research-watch-032-accepted-service-independent-outcome-validation",
     "briefing-research-watch-033-service-reliability-adoption-recurring-output-validation",
     "briefing-research-watch-034-persistent-service-quality-compatible-time-series-replication",
-    "briefing-research-watch-035-asset-reliability-cohort-adoption-accepted-output-closure"
+    "briefing-research-watch-035-asset-reliability-cohort-adoption-accepted-output-closure",
+    "briefing-research-watch-036-measured-reliability-observed-adoption-full-output-reconciliation"
   ],
   "dependency_map_ids": [
     "dependency-map-local-authorization-is-not-operation",
@@ -200,7 +212,8 @@
     "research-collection-accepted-service-independent-outcome-validation-2026",
     "research-collection-service-reliability-adoption-recurring-output-validation-2026",
     "research-collection-persistent-service-quality-compatible-time-series-replication-2026",
-    "research-collection-asset-reliability-cohort-adoption-accepted-output-closure-2026"
+    "research-collection-asset-reliability-cohort-adoption-accepted-output-closure-2026",
+    "research-collection-measured-reliability-observed-adoption-full-output-reconciliation-2026"
   ],
   "evidence_gap_ids": [
     "gap-011",
@@ -284,6 +297,11 @@
       "stage": "Phase 57E asset reliability, cohort adoption, and accepted-output closure panels",
       "current_state": "Fifteen Published reconciliations, controls, accepted-output closures, or independent recommendation closures and nine visible holds.",
       "boundary": "Requirements are not results, inventory is not reliability, serviceability is not adoption, filled is not disposed, and portfolio-governance closure is not a complete plutonium baseline."
+    },
+    {
+      "stage": "Phase 57F measured reliability, observed adoption, and full output reconciliation panels",
+      "current_state": "Sixteen Published historical-denominator, measurement-contract, material-stage, or official-state reconciliations and nine preserved operating-outcome holds.",
+      "boundary": "Historical completion is not current reliability, reporting schema is not adoption, cumulative or nominal values are not a mass balance, and a first unit, target, or forecast is not recurring accepted output or closure."
     }
   ],
   "evidence_limits": [
@@ -305,7 +323,8 @@
     "Phase 57B prohibits denominator-free comparison, turnover-based outcome claims, capacity-to-output inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57C prohibits denominator-free reliability or adoption claims, snapshot-to-rate inference, project-to-program inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57D prohibits denominator-free persistence, silent revision repair, threshold-to-exact conversion, inventory-to-reliability inflation, feed-to-accepted-output collapse, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
-    "Phase 57E prohibits cross-report count merging, control-to-outcome inflation, stage-to-acceptance collapse, recommendation substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
+    "Phase 57E prohibits cross-report count merging, control-to-outcome inflation, stage-to-acceptance collapse, recommendation substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
+    "Phase 57F prohibits historical-to-current inflation, control-to-outcome promotion, cross-stage material multiplication, forecast-to-completion promotion, recommendation substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Northern Virginia route, construction, energization, customer-service, water, emissions-compliance, reliability, and local-outcome records.",
@@ -324,6 +343,7 @@
     "Compatible service use, disclosed tests, quality, downtime, independent review, accepted closeout, recurring qualified output, complete baselines, and realized outcomes under the same named-cohort contract.",
     "Compatible uptime, use, adoption, monthly quality, rejects, rework, downtime, acceptance, disposal, compliance, recurring qualified output, complete program baselines, and realized outcomes under the same fixed-cohort contract.",
     "Named-asset service quality, cohort adoption and retention, complete monthly material balances, qualified site-period output, GAO-sufficient program baselines, and independently accepted outcomes.",
-    "Named-asset reliability, privacy-safe cohort adoption and retention, complete monthly material balances, qualified site-period output, and exact independent baseline sufficiency."
+    "Named-asset reliability, privacy-safe cohort adoption and retention, complete monthly material balances, qualified site-period output, and exact independent baseline sufficiency.",
+    "Current asset-period reliability, privacy-safe cohort adoption and retention, complete monthly material balances, site-period qualified output, and exact independent baseline sufficiency."
   ]
 }
