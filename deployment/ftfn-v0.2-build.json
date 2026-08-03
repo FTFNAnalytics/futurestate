@@ -12,13 +12,13 @@
     "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
     "access": "owner-only-custom-policy",
     "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
-    "current_local_content_commit": "bdf4a3a45d321578b62bf6c90fc59e233e60ea79",
-    "current_source_commit": "a0139a2e104c2b282eef0601620c7af53c9757fb",
-    "current_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_feb6a5594b408191b84dbc1f84e79a3b",
-    "current_version_number": 57,
-    "current_deployment_id": "appgdep_6a70fc9dc100819192e7756b5af9d4e6",
+    "current_local_content_commit": "2071278ff7244c6cef3bb6428d2913209bc0d963",
+    "current_source_commit": "63921ba8da76c7496a974bb572dbdd2436ecabfe",
+    "current_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_0933ec64326c81918c7a5ddbe27007ae",
+    "current_version_number": 58,
+    "current_deployment_id": "appgdep_6a7105d5cea48191aae1577dec4deff4",
     "custom_domain_attached": false,
-    "post_deploy_qa": "passed-version-57-deployment-status-source-provenance-runtime-archive-owner-only-access; visual-route-qa-not-requested"
+    "post_deploy_qa": "passed-version-58-deployment-status-source-provenance-runtime-archive-owner-only-access; visual-route-qa-not-requested"
   },
   "canonical_site": "https://ftfn.io",
   "app_root": "app",
@@ -373,7 +373,7 @@
     ],
     "browser_routes_checked": 10,
     "hosted_routes_checked": 0,
-    "preview_qa": "pending-phase-57f-owner-only-deployment; phase-57e-owner-only-version-57-custom-access-one-owner-no-groups-no-editors-zero-external-visitors"
+    "preview_qa": "passed-owner-only-version-58-deployment-status-source-provenance-runtime-archive; custom-access-one-owner-no-groups-no-editors-zero-external-visitors; visual-route-qa-not-requested"
   },
   "required_output_files": [
     "dist/index.html",
@@ -3244,6 +3244,17 @@
     "organizations_deepened": 2,
     "dependency_maps_deepened": 1,
     "public_update_entries_added": 1,
-    "generated_pages_added": 59
+    "generated_pages_added": 59,
+    "local_content_commit": "2071278ff7244c6cef3bb6428d2913209bc0d963",
+    "private_runtime_commit": "63921ba8da76c7496a974bb572dbdd2436ecabfe",
+    "sites_version_number": 58,
+    "sites_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_0933ec64326c81918c7a5ddbe27007ae",
+    "sites_deployment_id": "appgdep_6a7105d5cea48191aae1577dec4deff4",
+    "sites_runtime_archive_file_count": 3121,
+    "sites_runtime_archive_content_hash": "sha256:f560a89075f2e7be2c3a43f3d7e52380d1c6d9dea1be8c856c357c5a6523e38a",
+    "sites_runtime_archive_size_bytes": 145827840,
+    "local_compressed_deployment_archive_size_bytes": 94234368,
+    "local_compressed_deployment_archive_sha256": "78503CB09CE31F37CC290C418874F6416D24DE660547A078DD15C8DF4F3F6539",
+    "sites_access": "custom-owner-only-one-owner-no-groups-no-editors-zero-external-visitors"
   }
 }

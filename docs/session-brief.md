@@ -180,7 +180,7 @@ What is now stable:
 - Phase 57E reviews twenty-four asset-reliability, cohort-adoption, accepted-output, and independent-closure records. Fifteen publish and nine remain In Review; seven new Tier 1 sources and fourteen carried official sources support the batch, all eight Phase 57D holds remain explicit, one complete Hanford mass-balance hold is added, and zero exact targets, directive-scope changes, agency contacts, or FOIA requests are recorded.
 - The verified Phase 57E contract is 2,159 pages, 699 sources, 587 signals, 480 Published signals, 107 In Review signals, 479 current Published-support sources, forty-three briefings, forty research collections, 703 research documents, 59 updates, and a twenty-seven-file archive. Four GAO-24-106342 recommendations are independently Closed-Implemented without changing the inherited entity ledger or the separate GAO-23-104661 hold. Local content commit `bdf4a3a45d321578b62bf6c90fc59e233e60ea79` maps to exact private runtime commit `a0139a2e104c2b282eef0601620c7af53c9757fb`, deployed as owner-only Sites version 57 in `appgdep_6a70fc9dc100819192e7756b5af9d4e6` with one owner, no groups, no editors, and zero external visitors.
 - Phase 57F reviews twenty-five measured-reliability, observed-adoption, material-stage, and qualified-output records. Sixteen publish and nine remain In Review; seven new Tier 1 sources and seventeen carried official sources support the batch, all nine Phase 57E holds remain explicit, no new hold is added, and zero exact targets, triggers, scope, implementation, closure, agency-contact, or FOIA changes are recorded.
-- The verified Phase 57F contract is 2,218 pages, 706 sources, 612 signals, 496 Published signals, 116 In Review signals, 485 current Published-support sources, forty-four briefings, forty-one research collections, 728 research documents, 60 updates, 672 research export records, and a twenty-eight-file archive. The Phase 57F owner-only deployment receipt is pending; Sites version 57 remains the current hosted checkpoint until deployment completes.
+- The verified Phase 57F contract is 2,218 pages, 706 sources, 612 signals, 496 Published signals, 116 In Review signals, 485 current Published-support sources, forty-four briefings, forty-one research collections, 728 research documents, 60 updates, 672 research export records, and a twenty-eight-file archive. Local content commit `2071278ff7244c6cef3bb6428d2913209bc0d963` maps to exact private runtime commit `63921ba8da76c7496a974bb572dbdd2436ecabfe`, deployed as owner-only Sites version 58 in `appgdep_6a7105d5cea48191aae1577dec4deff4` with one owner, no groups, no editors, and zero external visitors.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
@@ -230,27 +230,27 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should continue with Phase 57F measured reliability, observed adoption, and full output reconciliation. Reconcile the same Amtrak station and device identities into asset-period quality; follow the same Louisiana and Montana cohorts into privacy-safe installed, subscribed, tested, retained, priced, complained, remediated, and accepted-closeout results; close the Hanford batch and container mass balance; and require named-site NNSA accepted output plus exact GAO-23-104661 baseline sufficiency while treating exact-artifact checks as non-blocking inserts. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should continue with Phase 57G named-asset and project-cohort registry expansion. Extract Amtrak Appendix B station cohorts, connect Montana award and location baselines to its terrestrial and LEO reporting contracts, formalize Hanford batch-container-stage identities, and build the NNSA site-facility-capacity-qualification-baseline crosswalk. Treat registry rows as identity and lineage evidence rather than reliability, adoption, yield, readiness, or closure results; preserve all nine Phase 57F holds. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 587 signal records,
-- 699 source records,
+- 612 signal records,
+- 706 source records,
 - 17 topic records,
 - 5 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 43 briefings: 36 Published and 7 In Review,
+- 44 briefings: 37 Published and 7 In Review,
 - 16 evidence gap records,
-- 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 57C reviews,
+- current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 57F reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 40 research collections with 703 document records,
+- 41 research collections with 728 document records,
 - 15 reader pathways across 19 existing Atlas surfaces,
-- 59 public update-log entries.
+- 60 public update-log entries.
 
-Four hundred and eighty official-source-backed signals are now `Published`.
+Four hundred and ninety-six official-source-backed signals are now `Published`.
 
 Phase 55M added thirteen bounded records to the prior 25-signal Published set:
 
@@ -268,7 +268,7 @@ Phase 55M added thirteen bounded records to the prior 25-signal Published set:
 - GSA's Buy AI purchasing channel,
 - and NIST's preliminary PIV post-quantum working drafts.
 
-Seventy-five signals remain `In Review`. Important holds include:
+One hundred and sixteen signals remain `In Review`. Important holds include:
 
 - the DARPA Lift Challenge scheduled trial until official post-August 9 results,
 - the Joby certification-test company claim,
@@ -422,15 +422,16 @@ Key files:
 Next executable decision identified in the roadmap:
 
 ```text
-Phase 57F measured reliability, observed adoption, and full output reconciliation
+Phase 57G named-asset and project-cohort registry expansion
 ```
 
 Proceed by:
 
-- reconcile Amtrak's 93-versus-117 PIDS inventories into a stable station-device register with asset-period availability, outage, maintenance, use, complaints, resolution, and rider outcomes,
-- follow the same Louisiana and Montana cohorts into privacy-safe installations, subscribers, test results, retention, price, complaints, remediation, and accepted closeout,
-- complete a regulator-verifiable Hanford monthly batch and container mass balance through quality release, shipment, acceptance, disposal, secondary streams, and ending inventory,
-- add named-site NNSA produced, qualified, rejected, reworked, and accepted output while keeping the exact GAO-23-104661 baseline sufficiency decision separate,
+- extract and normalize Amtrak Appendix B PIDS, train-access, and access-and-amenity station cohorts with explicit historical and current revision states,
+- join Montana final-proposal award, subgrantee, deployment-project, and location baselines to the terrestrial and LEO reporting contracts under privacy-safe denominators,
+- define Hanford batch, container, lifecycle-stage, date, mass-unit, quality-disposition, shipment, acceptance, and disposal identities without synthetic conversion,
+- build the NNSA site, facility, program, capacity, development, qualification, acceptance, and GAO-baseline work-breakdown crosswalk,
+- preserve all nine Phase 57F holds and process later outcome publications as bounded inserts,
 - publish only an exact record, a new authoritative status, or a materially narrower locator,
 - do not represent a public search as agency contact or a submitted FOIA request,
 - preserve stop rules, reopening triggers, authority conflicts, and time-bounded milestone checks as inserts rather than pauses,
@@ -524,10 +525,10 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 57F measured reliability, observed adoption, and full output reconciliation; complete and locally validated, with owner-only deployment pending.
+Phase 57F measured reliability, observed adoption, and full output reconciliation; complete, validated, and owner-only deployed.
 
 Current release checkpoint:
-v0.1.1 remains the frozen 102-source / 18-signal / 182-page checkpoint; the active local development candidate is Phase 57F, while the hosted non-public checkpoint remains owner-only Sites version 57 on exact private runtime commit `a0139a2e104c2b282eef0601620c7af53c9757fb` until the Phase 57F deployment completes.
+v0.1.1 remains the frozen 102-source / 18-signal / 182-page checkpoint; the active local development candidate is Phase 57F, and the hosted non-public checkpoint is owner-only Sites version 58 on exact private runtime commit `63921ba8da76c7496a974bb572dbdd2436ecabfe` in deployment `appgdep_6a7105d5cea48191aae1577dec4deff4`.
 
 Current development state:
 v0.2 Phase 57F candidate: package 0.2.0-dev, 706 public sources, 150 first-pass-triaged private candidates, 612 signals, 17 topics, 60 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 2,218 generated site pages, 496 Published signals, 37 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 41 research collections, 728 research documents, all prior verified archives plus the Phase 57F 28-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 489 Manual Review and 217 Probe Ready records.
