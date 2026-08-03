@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 57D adds twelve compatible service or material-flow series while preserving eight reliability, adoption, activation, recurring-output, capacity, or baseline holds.",
+  "summary": "A comparison and inference protocol: Phase 57E adds fifteen bounded asset, control, accepted-output, or independent-closure records while preserving nine operating-result holds.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -388,7 +388,14 @@
     "source-57d-hanford-wtp-consent-may-2026",
     "source-57d-hanford-wtp-consent-june-2026",
     "source-57d-hanford-wtp-consent-july-2026",
-    "source-57d-hanford-tpa-june-2026"
+    "source-57d-hanford-tpa-june-2026",
+    "source-57e-amtrak-accessibility-progress-june-2026",
+    "source-57e-montana-bead-faq-july-2026",
+    "source-57e-montana-quarterly-report-instructions-june-2026",
+    "source-57e-montana-project-monitoring-guide-june-2026",
+    "source-57e-gao-nnsa-production-modernization-integration",
+    "source-57e-doe-hanford-acceptable-glass-startup",
+    "source-57e-hanford-dflaw-current-program-page"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -754,7 +761,22 @@
     "signal-57d-hanford-effluent-transfer-series",
     "signal-57d-hanford-tscr-feed-space-dependency",
     "signal-57d-hanford-material-flow-stage-ledger",
-    "signal-57d-hanford-may-production-record"
+    "signal-57d-hanford-may-production-record",
+    "signal-57e-amtrak-pids-cross-report-reconciliation",
+    "signal-57e-amtrak-induction-loop-cohort-boundary",
+    "signal-57e-amtrak-digital-accessibility-defect-remediation",
+    "signal-57e-montana-bead-speed-acceptance-control",
+    "signal-57e-montana-bead-latency-acceptance-control",
+    "signal-57e-montana-bead-availability-acceptance-control",
+    "signal-57e-montana-bead-active-subscriber-test-control",
+    "signal-57e-hanford-acceptable-glass-milestone",
+    "signal-57e-hanford-regulator-filled-container-snapshot",
+    "signal-57e-hanford-filled-shipped-disposed-stage-crosswalk",
+    "signal-57e-hanford-emf-concentrate-permit-closure",
+    "signal-57e-nnsa-schedule-requirements-closure",
+    "signal-57e-nnsa-integrated-master-schedule-governance-closure",
+    "signal-57e-nnsa-cost-estimating-requirements-closure",
+    "signal-57e-nnsa-lifecycle-cost-governance-closure"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -1035,6 +1057,12 @@
       "label": "Twelve compatible service or material-flow series; eight holds",
       "node_type": "Signal",
       "note": "Repeated observations advance only when entity, cohort, stage, period, unit, threshold operator, denominator, method, revision history, and authority remain explicit."
+    },
+    {
+      "id": "node-phase57e-asset-adoption-accepted-output",
+      "label": "Fifteen asset, acceptance-control, accepted-output, or closure records; nine holds",
+      "node_type": "Signal",
+      "note": "Requirements, results, acceptance, implementation, and independent closure advance only under exact entity, cohort, stage, denominator, method, and authority identities."
     }
   ],
   "links": [
@@ -1702,6 +1730,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Repeated inventories and material-flow thresholds do not establish reliability, adoption, accepted output, steady-state rate, readiness, or causation."
+    },
+    {
+      "from": "node-phase57e-asset-adoption-accepted-output",
+      "to": "node-phase57d-persistent-service-quality-time-series",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57E preserves the compatible Phase 57D cohorts and all inherited holds."
+    },
+    {
+      "from": "node-phase57e-asset-adoption-accepted-output",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "PIDS counts, subscriber cohorts, container stages, recommendation identities, and production sites remain non-interchangeable denominators."
+    },
+    {
+      "from": "node-phase57e-asset-adoption-accepted-output",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Controls and closure decisions do not establish operating reliability, adoption, sustained output, readiness, savings, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -1749,7 +1798,8 @@
     "Thirteen bounded fixed-cohort, independently corroborated operating, or qualified-output panels plus three visible holds.",
     "Ten bounded named accepted-service or observed-output panels plus seven visible closeout, performance, rate, capacity, or baseline holds.",
     "Twelve bounded inventory, repeat-output, accepted-disposal, closed-loop, or baseline-boundary panels plus eight visible reliability, adoption, activation, recurring-output, capacity, or baseline holds.",
-    "Twelve bounded compatible service or material-flow series plus eight visible reliability, adoption, activation, recurring-output, capacity, or baseline holds."
+    "Twelve bounded compatible service or material-flow series plus eight visible reliability, adoption, activation, recurring-output, capacity, or baseline holds.",
+    "Fifteen bounded Phase 57E asset, control, accepted-output, or independent-closure records plus nine visible operating-result holds."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -1868,6 +1918,7 @@
     "Compatible later periods, accepted service and tests, facility-level operating series, recurring qualified output, complete cost and schedule baselines, closeout, and realized-outcome evidence.",
     "Compatible service use, test samples, quality, uptime, contaminant removal, recurring qualified output, complete cost and schedule baselines, accepted closeout, and realized-outcome evidence.",
     "Compatible uptime, maintenance, use, adoption, monthly quality, rejects, rework, downtime, acceptance, disposal, compliance, recurring qualified output, complete program baselines, and realized-outcome evidence.",
-    "Named-asset service quality, cohort adoption and retention, complete monthly material balances, qualified site-period output, GAO-sufficient program baselines, and independently accepted outcomes."
+    "Named-asset service quality, cohort adoption and retention, complete monthly material balances, qualified site-period output, GAO-sufficient program baselines, and independently accepted outcomes.",
+    "Named-asset reliability, privacy-safe cohort adoption and retention, complete monthly material balances, qualified site-period output, and exact enterprise-baseline sufficiency."
   ]
 }

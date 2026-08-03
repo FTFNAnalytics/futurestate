@@ -1,0 +1,102 @@
+{
+  "phase": "57E",
+  "captured_date": "2026-08-03",
+  "promoted_document_ids": [
+    "research-doc-57e-amtrak-pids-cross-report-reconciliation",
+    "research-doc-57e-amtrak-induction-loop-cohort-boundary",
+    "research-doc-57e-amtrak-digital-accessibility-defect-remediation",
+    "research-doc-57e-montana-bead-speed-acceptance-control",
+    "research-doc-57e-montana-bead-latency-acceptance-control",
+    "research-doc-57e-montana-bead-availability-acceptance-control",
+    "research-doc-57e-montana-bead-active-subscriber-test-control",
+    "research-doc-57e-hanford-acceptable-glass-milestone",
+    "research-doc-57e-hanford-regulator-filled-container-snapshot",
+    "research-doc-57e-hanford-filled-shipped-disposed-stage-crosswalk",
+    "research-doc-57e-hanford-emf-concentrate-permit-closure",
+    "research-doc-57e-nnsa-schedule-requirements-closure",
+    "research-doc-57e-nnsa-integrated-master-schedule-governance-closure",
+    "research-doc-57e-nnsa-cost-estimating-requirements-closure",
+    "research-doc-57e-nnsa-lifecycle-cost-governance-closure"
+  ],
+  "promoted_signal_ids": [
+    "signal-57e-amtrak-pids-cross-report-reconciliation",
+    "signal-57e-amtrak-induction-loop-cohort-boundary",
+    "signal-57e-amtrak-digital-accessibility-defect-remediation",
+    "signal-57e-montana-bead-speed-acceptance-control",
+    "signal-57e-montana-bead-latency-acceptance-control",
+    "signal-57e-montana-bead-availability-acceptance-control",
+    "signal-57e-montana-bead-active-subscriber-test-control",
+    "signal-57e-hanford-acceptable-glass-milestone",
+    "signal-57e-hanford-regulator-filled-container-snapshot",
+    "signal-57e-hanford-filled-shipped-disposed-stage-crosswalk",
+    "signal-57e-hanford-emf-concentrate-permit-closure",
+    "signal-57e-nnsa-schedule-requirements-closure",
+    "signal-57e-nnsa-integrated-master-schedule-governance-closure",
+    "signal-57e-nnsa-cost-estimating-requirements-closure",
+    "signal-57e-nnsa-lifecycle-cost-governance-closure"
+  ],
+  "held_document_ids": [
+    "research-doc-57e-amtrak-pids-closeout-quality-hold",
+    "research-doc-57e-amtrak-named-asset-reliability-hold",
+    "research-doc-57e-louisiana-nextlink-adoption-hold",
+    "research-doc-57e-louisiana-starlink-adoption-hold",
+    "research-doc-57e-montana-quarterly-results-hold",
+    "research-doc-57e-hanford-complete-monthly-mass-balance-hold",
+    "research-doc-57e-nnsa-recurring-qualified-output-hold",
+    "research-doc-57e-nnsa-peis-capacity-hold",
+    "research-doc-57e-nnsa-plutonium-enterprise-baseline-hold"
+  ],
+  "held_signal_ids": [
+    "signal-57e-amtrak-pids-closeout-quality-hold",
+    "signal-57e-amtrak-named-asset-reliability-hold",
+    "signal-57e-louisiana-nextlink-adoption-hold",
+    "signal-57e-louisiana-starlink-adoption-hold",
+    "signal-57e-montana-quarterly-results-hold",
+    "signal-57e-hanford-complete-monthly-mass-balance-hold",
+    "signal-57e-nnsa-recurring-qualified-output-hold",
+    "signal-57e-nnsa-peis-capacity-hold",
+    "signal-57e-nnsa-plutonium-enterprise-baseline-hold"
+  ],
+  "inherited_hold_lineage": [
+    {
+      "action_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-04",
+      "parent_hold_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-03"
+    },
+    {
+      "action_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-03",
+      "parent_hold_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-02"
+    },
+    {
+      "action_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-04",
+      "parent_hold_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-03"
+    },
+    {
+      "action_key": "LA-BEAD-STARLINK-HOLD-2026-04",
+      "parent_hold_key": "LA-BEAD-STARLINK-HOLD-2026-03"
+    },
+    {
+      "action_key": "MT-BEAD-QUARTERLY-HOLD-2026-04",
+      "parent_hold_key": "MT-BEAD-QUARTERLY-HOLD-2026-03"
+    },
+    {
+      "action_key": "NNSA-PIT-RATE-HOLD-2026-04",
+      "parent_hold_key": "NNSA-PIT-RATE-HOLD-2026-03"
+    },
+    {
+      "action_key": "NNSA-PIT-PEIS-HOLD-2026-04",
+      "parent_hold_key": "NNSA-PIT-PEIS-HOLD-2026-03"
+    },
+    {
+      "action_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-05",
+      "parent_hold_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-04"
+    }
+  ],
+  "independent_recommendation_closures": [
+    "GAO-24-106342-REC-1-CLOSURE-2026-01",
+    "GAO-24-106342-REC-2-CLOSURE-2026-01",
+    "GAO-24-106342-REC-3-CLOSURE-2026-01",
+    "GAO-24-106342-REC-4-CLOSURE-2026-01"
+  ],
+  "exact_target_artifacts_acquired": 0,
+  "decision": "Fifteen records publish as asset-quality reconciliations, adoption acceptance controls, accepted-output closures, or independently closed NNSA governance recommendations. All eight Phase 57D holds remain visible and one complete Hanford mass-balance hold is added."
+}

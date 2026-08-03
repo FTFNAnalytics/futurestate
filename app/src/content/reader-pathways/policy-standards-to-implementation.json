@@ -335,7 +335,22 @@
     "signal-57d-hanford-effluent-transfer-series",
     "signal-57d-hanford-tscr-feed-space-dependency",
     "signal-57d-hanford-material-flow-stage-ledger",
-    "signal-57d-hanford-may-production-record"
+    "signal-57d-hanford-may-production-record",
+    "signal-57e-amtrak-pids-cross-report-reconciliation",
+    "signal-57e-amtrak-induction-loop-cohort-boundary",
+    "signal-57e-amtrak-digital-accessibility-defect-remediation",
+    "signal-57e-montana-bead-speed-acceptance-control",
+    "signal-57e-montana-bead-latency-acceptance-control",
+    "signal-57e-montana-bead-availability-acceptance-control",
+    "signal-57e-montana-bead-active-subscriber-test-control",
+    "signal-57e-hanford-acceptable-glass-milestone",
+    "signal-57e-hanford-regulator-filled-container-snapshot",
+    "signal-57e-hanford-filled-shipped-disposed-stage-crosswalk",
+    "signal-57e-hanford-emf-concentrate-permit-closure",
+    "signal-57e-nnsa-schedule-requirements-closure",
+    "signal-57e-nnsa-integrated-master-schedule-governance-closure",
+    "signal-57e-nnsa-cost-estimating-requirements-closure",
+    "signal-57e-nnsa-lifecycle-cost-governance-closure"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -547,7 +562,14 @@
     "source-57d-hanford-wtp-consent-may-2026",
     "source-57d-hanford-wtp-consent-june-2026",
     "source-57d-hanford-wtp-consent-july-2026",
-    "source-57d-hanford-tpa-june-2026"
+    "source-57d-hanford-tpa-june-2026",
+    "source-57e-amtrak-accessibility-progress-june-2026",
+    "source-57e-montana-bead-faq-july-2026",
+    "source-57e-montana-quarterly-report-instructions-june-2026",
+    "source-57e-montana-project-monitoring-guide-june-2026",
+    "source-57e-gao-nnsa-production-modernization-integration",
+    "source-57e-doe-hanford-acceptable-glass-startup",
+    "source-57e-hanford-dflaw-current-program-page"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -587,7 +609,8 @@
     "briefing-research-watch-031-fixed-cohort-completion-realized-outcomes",
     "briefing-research-watch-032-accepted-service-independent-outcome-validation",
     "briefing-research-watch-033-service-reliability-adoption-recurring-output-validation",
-    "briefing-research-watch-034-persistent-service-quality-compatible-time-series-replication"
+    "briefing-research-watch-034-persistent-service-quality-compatible-time-series-replication",
+    "briefing-research-watch-035-asset-reliability-cohort-adoption-accepted-output-closure"
   ],
   "dependency_map_ids": [
     "dependency-map-post-quantum-standards-are-not-migration",
@@ -625,7 +648,8 @@
     "research-collection-fixed-cohort-completion-realized-outcomes-2026",
     "research-collection-accepted-service-independent-outcome-validation-2026",
     "research-collection-service-reliability-adoption-recurring-output-validation-2026",
-    "research-collection-persistent-service-quality-compatible-time-series-replication-2026"
+    "research-collection-persistent-service-quality-compatible-time-series-replication-2026",
+    "research-collection-asset-reliability-cohort-adoption-accepted-output-closure-2026"
   ],
   "evidence_gap_ids": [
     "gap-009",
@@ -807,6 +831,11 @@
       "stage": "Phase 57D persistent service quality and compatible time-series replication panels",
       "current_state": "Twelve Published compatible Amtrak or Hanford time-series panels and eight preserved In Review holds.",
       "boundary": "Repeated inventory is not reliability, serviceability is not adoption, feed is not accepted output, and capacity is not qualified production."
+    },
+    {
+      "stage": "Phase 57E asset reliability, cohort adoption, and accepted-output closure panels",
+      "current_state": "Fifteen Published reconciliations, controls, accepted-output closures, or independent recommendation closures and nine visible holds.",
+      "boundary": "Requirements are not results, inventory is not reliability, serviceability is not adoption, filled is not disposed, and portfolio-governance closure is not a complete plutonium baseline."
     }
   ],
   "evidence_limits": [
@@ -860,7 +889,8 @@
     "Phase 57A prohibits denominator-free comparison, target-based causal claims, stage inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57B prohibits denominator-free comparison, turnover-based outcome claims, capacity-to-output inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57C prohibits denominator-free reliability or adoption claims, snapshot-to-rate inference, project-to-program inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
-    "Phase 57D prohibits denominator-free persistence, silent revision repair, threshold-to-exact conversion, inventory-to-reliability inflation, feed-to-accepted-output collapse, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
+    "Phase 57D prohibits denominator-free persistence, silent revision repair, threshold-to-exact conversion, inventory-to-reliability inflation, feed-to-accepted-output collapse, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
+    "Phase 57E prohibits cross-report count merging, control-to-outcome inflation, stage-to-acceptance collapse, recommendation substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
@@ -917,6 +947,7 @@
     "Compatible later periods, accepted projects and service, reported tests, recurring output, complete baselines, closeout, and realized outcomes under the same cohort contract.",
     "Compatible service use, disclosed tests, quality, downtime, independent review, accepted closeout, recurring qualified output, complete baselines, and realized outcomes under the same named-cohort contract.",
     "Compatible uptime, use, adoption, monthly quality, rejects, rework, downtime, acceptance, disposal, compliance, recurring qualified output, complete program baselines, and realized outcomes under the same fixed-cohort contract.",
-    "Named-asset service quality, cohort adoption and retention, complete monthly material balances, qualified site-period output, GAO-sufficient program baselines, and independently accepted outcomes."
+    "Named-asset service quality, cohort adoption and retention, complete monthly material balances, qualified site-period output, GAO-sufficient program baselines, and independently accepted outcomes.",
+    "Named-asset reliability, privacy-safe cohort adoption and retention, complete monthly material balances, qualified site-period output, and exact independent baseline sufficiency."
   ]
 }
