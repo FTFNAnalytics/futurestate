@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 57H adds four versioned provenance and compatibility matrices while preserving nine operating-outcome holds.",
+  "summary": "A comparison and inference protocol: Phase 57I adds four reviewed change-detection and bounded-ingestion rails while preserving nine operating-outcome holds.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -848,7 +848,27 @@
     "signal-57h-nnsa-lap4-versioned-scope-cost-matrix",
     "signal-57h-nnsa-srppf-versioned-baseline-matrix",
     "signal-57h-nnsa-capacity-qualification-output-separation",
-    "signal-57h-nnsa-gao-independent-baseline-provenance"
+    "signal-57h-nnsa-gao-independent-baseline-provenance",
+    "signal-57i-amtrak-sixteen-name-source-diff-queue",
+    "signal-57i-amtrak-eleven-reviewed-identity-joins",
+    "signal-57i-amtrak-official-station-code-resolution-queue",
+    "signal-57i-amtrak-five-unresolved-diff-decisions",
+    "signal-57i-amtrak-zero-asserted-registry-changes",
+    "signal-57i-montana-thirteen-field-schema-migration-ledger",
+    "signal-57i-montana-thirty-two-project-quarter-envelopes",
+    "signal-57i-montana-thirty-terrestrial-two-leo-intake-rails",
+    "signal-57i-montana-privacy-gated-observation-intake",
+    "signal-57i-montana-zero-completed-project-quarters-ingested",
+    "signal-57i-hanford-nine-bounded-observation-envelopes",
+    "signal-57i-hanford-thirty-six-pair-validator-rejections",
+    "signal-57i-hanford-eleven-field-compatibility-contract",
+    "signal-57i-hanford-fourteen-transition-intake-boundaries",
+    "signal-57i-hanford-zero-material-balance-joins",
+    "signal-57i-nnsa-seventy-two-object-version-cells",
+    "signal-57i-nnsa-ten-bounded-source-diff-events",
+    "signal-57i-nnsa-lap4-object-level-diff-guard",
+    "signal-57i-nnsa-srppf-object-level-diff-guard",
+    "signal-57i-nnsa-zero-outcome-implementation-closure-promotions"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -1153,6 +1173,12 @@
       "label": "Four versioned provenance matrices; twenty Published panels; nine holds",
       "node_type": "Signal",
       "note": "Alias, field, authority, unit, stage, and work-breakdown joins become inspectable without asserting outcomes."
+    },
+    {
+      "id": "node-phase57i-ingestion-rails",
+      "label": "Four reviewed diff and ingestion rails; twenty Published controls; nine holds",
+      "node_type": "Signal",
+      "note": "Source changes and standalone observations become reviewable without bypassing identity, schema, compatibility, privacy, or publication gates."
     }
   ],
   "links": [
@@ -1904,6 +1930,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Provenance and compatibility do not establish operating outcomes or causation."
+    },
+    {
+      "from": "node-phase57i-ingestion-rails",
+      "to": "node-phase57h-provenance-matrices",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57I operationalizes the four Phase 57H provenance matrices."
+    },
+    {
+      "from": "node-phase57i-ingestion-rails",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Unresolved identities, missing schemas, incompatible fields, and object-definition changes remain explicit."
+    },
+    {
+      "from": "node-phase57i-ingestion-rails",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Validation and ingestion controls do not establish operating outcomes or causation."
     }
   ],
   "what_this_map_supports": [
@@ -1955,7 +2002,8 @@
     "Fifteen bounded Phase 57E asset, control, accepted-output, or independent-closure records plus nine visible operating-result holds.",
     "Sixteen bounded Phase 57F denominator, measurement-contract, material-stage, or output-state records plus nine preserved operating-outcome holds.",
     "Four Phase 57G identity-and-lineage registries, twenty bounded Published panels, and nine preserved operating-outcome holds.",
-    "Four Phase 57H versioned provenance matrices, twenty bounded Published panels, and nine preserved operating-outcome holds."
+    "Four Phase 57H versioned provenance matrices, twenty bounded Published panels, and nine preserved operating-outcome holds.",
+    "Four Phase 57I change-detection and bounded-ingestion rails, twenty Published control panels, and nine preserved operating-outcome holds."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -2078,6 +2126,7 @@
     "Named-asset reliability, privacy-safe cohort adoption and retention, complete monthly material balances, qualified site-period output, and exact enterprise-baseline sufficiency.",
     "Current asset reliability, privacy-safe adoption and retention, complete material balances, site-period qualified output, and exact enterprise-baseline sufficiency.",
     "Compatible current asset, project-quarter, batch-container, site-period qualified-output, and exact independent-baseline observations.",
-    "Compatible source-versioned observations with stable identity, definition, period, unit, method, authority, quality, acceptance, and disposition."
+    "Compatible source-versioned observations with stable identity, definition, period, unit, method, authority, quality, acceptance, and disposition.",
+    "Compatible reviewed observations with stable identity, schema, definition, period, stage, measure, operator, method, unit, authority, privacy, quality, acceptance, and disposition."
   ]
 }

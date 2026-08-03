@@ -1,0 +1,67 @@
+{
+  "id": "research-doc-57i-nnsa-lap4-object-level-diff-guard",
+  "collection_id": "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
+  "title": "LAP4 diffs remain attached to the umbrella or exact child object",
+  "slug": "57i-nnsa-lap4-object-level-diff-guard",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+  "publication_date": "2026-08-03",
+  "document_type": "Data Release",
+  "summary": "The validator prevents umbrella cost, 30 Diamond scope, subproject baseline, and critical-decision states from replacing one another. Denominator: One LAP4 umbrella and six registered child objects across four source versions.",
+  "key_findings": [
+    "Evidence stage: Object-level source diff.",
+    "Finding: The validator prevents umbrella cost, 30 Diamond scope, subproject baseline, and critical-decision states from replacing one another.",
+    "Denominator: One LAP4 umbrella and six registered child objects across four source versions.",
+    "Boundary: Umbrella cost is not enterprise lifecycle cost.",
+    "Boundary: Scope strategy is not completion.",
+    "Boundary: Critical decision is not operating output.",
+    "Next action: Store each later LAP4 change at its exact work-breakdown object."
+  ],
+  "why_it_matters": "The record makes change detection, schema migration, observation validation, and object-level source diffs reviewable before publication.",
+  "ftfn_relevance": [
+    "Turns provenance matrices into repeatable review rails.",
+    "Keeps rejected joins and unresolved identities explicit.",
+    "Separates bounded inserts from operating outcomes, implementation, acceptance, and closure."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Umbrella cost is not enterprise lifecycle cost.",
+    "Scope strategy is not completion.",
+    "Critical decision is not operating output.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-nnsa-fy2026-weapons-activities",
+  "supporting_source_ids": [
+    "source-57g-nnsa-fy2026-weapons-activities",
+    "source-56w-nnsa-fy2027-weapons-activities",
+    "source-56x-gao-nnsa-major-projects-2026",
+    "source-56q-gao-23-104661-recommendation-status"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+    "https://www.energy.gov/documents/doe-fy-2027-volume-1-wa",
+    "https://www.gao.gov/assets/gao-26-107777.pdf",
+    "https://www.gao.gov/products/gao-23-104661"
+  ],
+  "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+  "local_capture_path": "/downloads/versioned-registry-change-detection-bounded-observation-ingestion-2026/official-links/18-nnsa-lap4-object-level-diff-guard.txt",
+  "archive_member": "official-links/18-nnsa-lap4-object-level-diff-guard.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-03"
+}

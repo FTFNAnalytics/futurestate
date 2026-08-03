@@ -1614,6 +1614,7 @@ Primary file:
 - `docs/work-packages/phase-57f-measured-reliability-observed-adoption-full-output-reconciliation.md` for the twenty-five reviewed records, sixteen Published decisions, nine preserved In Review holds, no new hold, seven new Tier 1 sources, Amtrak historical-denominator reconciliation, Montana privacy-safe adoption measurement contracts, Hanford stage and specification reconciliation, NNSA qualified-output and exact GAO baseline-state reconciliation, archive, validation, owner-only deployment, and Phase 57G handoff contracts
 - `docs/work-packages/phase-57g-named-asset-project-cohort-registry-expansion.md` for the twenty-nine reviewed records, twenty Published registry decisions, nine preserved In Review holds, no new hold, nine new Tier 1 sources, four structured registries, Amtrak Appendix B station membership normalization, Montana privacy-safe project cohorts, Hanford lifecycle-stage identities, NNSA work-breakdown identities, archive, validation, owner-only deployment state, and Phase 57H handoff contracts
 - `docs/work-packages/phase-57h-registry-revision-provenance-compatible-observation-joins.md` for the twenty-nine reviewed records, twenty Published provenance decisions, nine preserved In Review holds, no new hold, thirty-six carried Tier 1 sources, four structured matrices, Amtrak alias and revision state, Montana field and project-version provenance, Hanford authority and observation compatibility, NNSA FY2026-to-FY2027-to-GAO object history, archive, validation, owner-only deployment state, and Phase 57I handoff contracts
+- `docs/work-packages/phase-57i-versioned-registry-change-detection-bounded-observation-ingestion.md` for the twenty-nine reviewed records, twenty Published change-detection and ingestion-control decisions, nine preserved In Review holds, no new hold, thirty-six carried Tier 1 sources, four structured rails, Amtrak source-diff and station-code queues, Montana field migrations and project-quarter envelopes, Hanford bounded observation validation, NNSA object-level source diffs, archive, validation, owner-only deployment state, and Phase 57J handoff contracts
 
 Update when:
 
@@ -1660,6 +1661,7 @@ Update when:
 - the Phase 57F historical-denominator, adoption-measurement, material-stage, qualified-output, or exact GAO-state reconciliations, preserved holds, archive, deployment receipt, or Phase 57G priorities change,
 - the Phase 57G station-membership, project-cohort, lifecycle-stage, work-breakdown, privacy, provenance, preserved-hold, archive, deployment receipt, or Phase 57H priorities change,
 - the Phase 57H alias, field, authority, observation-compatibility, work-breakdown-version, preserved-hold, archive, deployment receipt, or Phase 57I priorities change,
+- the Phase 57I change-detection, schema-migration, project-envelope, observation-validator, object-diff, preserved-hold, archive, deployment receipt, or Phase 57J priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

@@ -406,7 +406,27 @@
     "signal-57h-nnsa-lap4-versioned-scope-cost-matrix",
     "signal-57h-nnsa-srppf-versioned-baseline-matrix",
     "signal-57h-nnsa-capacity-qualification-output-separation",
-    "signal-57h-nnsa-gao-independent-baseline-provenance"
+    "signal-57h-nnsa-gao-independent-baseline-provenance",
+    "signal-57i-amtrak-sixteen-name-source-diff-queue",
+    "signal-57i-amtrak-eleven-reviewed-identity-joins",
+    "signal-57i-amtrak-official-station-code-resolution-queue",
+    "signal-57i-amtrak-five-unresolved-diff-decisions",
+    "signal-57i-amtrak-zero-asserted-registry-changes",
+    "signal-57i-montana-thirteen-field-schema-migration-ledger",
+    "signal-57i-montana-thirty-two-project-quarter-envelopes",
+    "signal-57i-montana-thirty-terrestrial-two-leo-intake-rails",
+    "signal-57i-montana-privacy-gated-observation-intake",
+    "signal-57i-montana-zero-completed-project-quarters-ingested",
+    "signal-57i-hanford-nine-bounded-observation-envelopes",
+    "signal-57i-hanford-thirty-six-pair-validator-rejections",
+    "signal-57i-hanford-eleven-field-compatibility-contract",
+    "signal-57i-hanford-fourteen-transition-intake-boundaries",
+    "signal-57i-hanford-zero-material-balance-joins",
+    "signal-57i-nnsa-seventy-two-object-version-cells",
+    "signal-57i-nnsa-ten-bounded-source-diff-events",
+    "signal-57i-nnsa-lap4-object-level-diff-guard",
+    "signal-57i-nnsa-srppf-object-level-diff-guard",
+    "signal-57i-nnsa-zero-outcome-implementation-closure-promotions"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -685,7 +705,8 @@
     "briefing-research-watch-035-asset-reliability-cohort-adoption-accepted-output-closure",
     "briefing-research-watch-036-measured-reliability-observed-adoption-full-output-reconciliation",
     "briefing-research-watch-037-named-asset-project-cohort-registry-expansion",
-    "briefing-research-watch-038-registry-revision-provenance-compatible-observation-joins"
+    "briefing-research-watch-038-registry-revision-provenance-compatible-observation-joins",
+    "briefing-research-watch-039-versioned-registry-change-detection-bounded-observation-ingestion"
   ],
   "dependency_map_ids": [
     "dependency-map-post-quantum-standards-are-not-migration",
@@ -727,7 +748,8 @@
     "research-collection-asset-reliability-cohort-adoption-accepted-output-closure-2026",
     "research-collection-measured-reliability-observed-adoption-full-output-reconciliation-2026",
     "research-collection-named-asset-project-cohort-registry-expansion-2026",
-    "research-collection-registry-revision-provenance-compatible-observation-joins-2026"
+    "research-collection-registry-revision-provenance-compatible-observation-joins-2026",
+    "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026"
   ],
   "evidence_gap_ids": [
     "gap-009",
@@ -929,6 +951,11 @@
       "stage": "Phase 57H versioned provenance and compatibility matrices",
       "current_state": "Twenty Published provenance panels, four structured matrices, and nine preserved operating-outcome holds.",
       "boundary": "A revision or compatible join is not reliability, adoption, material balance, readiness, output, implementation, acceptance, or closure."
+    },
+    {
+      "stage": "Phase 57I change-detection and bounded-ingestion rails",
+      "current_state": "Twenty Published control panels, four structured rails, and nine preserved operating-outcome holds.",
+      "boundary": "A queued diff, migration plan, accepted envelope, validator decision, or bounded source change is not an operating outcome, implementation, acceptance, capability, or closure."
     }
   ],
   "evidence_limits": [
@@ -986,7 +1013,8 @@
     "Phase 57E prohibits cross-report count merging, control-to-outcome inflation, stage-to-acceptance collapse, recommendation substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57F prohibits historical-to-current inflation, control-to-outcome promotion, cross-stage material multiplication, forecast-to-completion promotion, recommendation substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57G prohibits synthetic identity joins, historical-to-current promotion, location-detail exposure, raw-code guessing, cross-stage conversion, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
-    "Phase 57H prohibits silent alias merges, source-version erasure, raw-code guessing, privacy-detail exposure, cross-stage or cross-unit conversion, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
+    "Phase 57H prohibits silent alias merges, source-version erasure, raw-code guessing, privacy-detail exposure, cross-stage or cross-unit conversion, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
+    "Phase 57I prohibits silent identity merges, guessed station codes or field mappings, privacy-detail exposure, cross-rail migration, coerced missing fields, synthetic numeric joins, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
@@ -1047,6 +1075,7 @@
     "Named-asset reliability, privacy-safe cohort adoption and retention, complete monthly material balances, qualified site-period output, and exact independent baseline sufficiency.",
     "Current asset-period reliability, privacy-safe cohort adoption and retention, complete monthly material balances, site-period qualified output, and exact independent baseline sufficiency.",
     "Compatible current asset, project-quarter, batch-container, site-period output, and exact independent-baseline observations joined to stable registry identities.",
-    "Source-versioned compatible observations with stable identity, period, field definition, unit, method, authority, quality, acceptance, and disposition."
+    "Source-versioned compatible observations with stable identity, period, field definition, unit, method, authority, quality, acceptance, and disposition.",
+    "Reviewed source-version inserts with stable identity, definition, period, stage, measure, operator, method, unit, authority, privacy, quality, acceptance, and disposition."
   ]
 }
