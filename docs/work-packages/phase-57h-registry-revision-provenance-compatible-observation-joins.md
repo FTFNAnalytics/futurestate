@@ -2,7 +2,7 @@
 
 Date: 2026-08-03
 
-Status: complete and validated; owner-only deployment pending
+Status: complete, validated, and owner-only deployed
 
 ## Goal
 
@@ -105,4 +105,4 @@ Build a versioned registry change-detection and bounded-observation ingestion la
 
 ## Deployment receipt
 
-Pending owner-only Sites deployment. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
+Local content commit `7d7e4dcf2aad983a480d7e64c487a40438c15b88` maps to exact private runtime commit `2ff8ba6a79dbca070f73df3536604d7274b13a48`, whose verified parent is the Phase 57G runtime `aa7a53d4e60b59120a641620fcf40c7a1704ec24`. The 3,316-file runtime archive was saved as Sites version 60 and deployed successfully in `appgdep_6a711a0bdc348191aceec93762957132` at `https://ftfn-analytics.jbumstead.chatgpt.site`. The hosted archive is 149,350,400 bytes with content hash `sha256:379ef83160e4ca5eda4e3e362a34ce0330b12a7d3c3f72ff38f2db09af65b39f`; the local compressed archive is 94,612,459 bytes with SHA-256 `60C57EC7E35C41E12E46D710D68872B08A8D6CE2CA72A1912693BDFFCEBB1B13`. Post-deploy checks confirmed the exact source provenance, successful deployment, and custom owner-only access with one owner, no groups, no editors, and zero external visitors. Visual route QA was not requested for Phase 57H. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.

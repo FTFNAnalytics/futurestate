@@ -404,13 +404,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 57E | fifteen Published records, nine explicit holds, all eight Phase 57D holds preserved, seven new Tier 1 sources, Research Watch 035, a twenty-seven-file archive, a verified 2,159-page contract, and Sites version 57 |
 | Completed and owner-only deployed | Phase 57F | sixteen Published denominator, measurement-contract, material-stage, and output-state records, nine preserved holds, seven new Tier 1 sources, Research Watch 036, a twenty-eight-file archive, a verified 2,218-page contract, and Sites version 58 |
 | Completed and owner-only deployed | Phase 57G | twenty Published identity-and-lineage panels, nine preserved holds, nine new Tier 1 sources, four structured registries, Research Watch 037, a thirty-two-file archive, a verified 2,287-page contract, and Sites version 59 |
-| Completed and validated; owner-only deployment pending | Phase 57H | twenty Published provenance panels, nine preserved holds, four versioned matrices, Research Watch 038, a thirty-two-file archive, and a verified 2,347-page contract |
+| Completed and owner-only deployed | Phase 57H | twenty Published provenance panels, nine preserved holds, four versioned matrices, Research Watch 038, a thirty-two-file archive, a verified 2,347-page contract, and Sites version 60 |
 | Next content gate | Phase 57I | versioned registry change detection and bounded-observation ingestion across Amtrak, Montana, Hanford, and NNSA |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now passes a verified 2,347-page Phase 57H contract. Phase 57H reviews twenty-nine records and publishes twenty bounded provenance and compatibility panels while preserving all nine Phase 57G holds and adding no new hold. Thirty-six carried Tier 1 sources support four structured matrices spanning Amtrak alias and revision state, Montana field provenance and project versions, Hanford authority and observation compatibility, and NNSA FY2026-to-FY2027-to-GAO work-breakdown history. No exact target artifact, trigger, directive-scope, implementation, closure, agency-contact, FOIA, or entity-ledger change is recorded. Owner-only Phase 57H deployment is pending; Sites version 59 remains the hosted Phase 57G checkpoint until that deployment completes. The next non-public content gate is Phase 57I versioned change detection and bounded-observation ingestion while dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now passes a verified 2,347-page Phase 57H contract. Phase 57H reviews twenty-nine records and publishes twenty bounded provenance and compatibility panels while preserving all nine Phase 57G holds and adding no new hold. Thirty-six carried Tier 1 sources support four structured matrices spanning Amtrak alias and revision state, Montana field provenance and project versions, Hanford authority and observation compatibility, and NNSA FY2026-to-FY2027-to-GAO work-breakdown history. No exact target artifact, trigger, directive-scope, implementation, closure, agency-contact, FOIA, or entity-ledger change is recorded. Owner-only Sites version 60 now serves exact Phase 57H runtime commit `2ff8ba6a79dbca070f73df3536604d7274b13a48`. The next non-public content gate is Phase 57I versioned change detection and bounded-observation ingestion while dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1768,7 +1768,7 @@ Delivered:
 - zero exact-target artifacts, triggers, directive-scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
 - local content commit `c4410e56f5dd8e569deee100241e683fb3aaf937` matched exact private runtime commit `aa7a53d4e60b59120a641620fcf40c7a1704ec24`, saved as Sites version 59, deployed in `appgdep_6a71116f01f48191b22ec5f4709f8409`, and reverified with one owner, no groups, no editors, and zero external visitors.
 
-### Phase 57H: Registry Revision, Provenance, And Compatible-Observation Join Matrix - Complete And Validated; Owner-Only Deployment Pending
+### Phase 57H: Registry Revision, Provenance, And Compatible-Observation Join Matrix - Complete And Owner-Only Deployed
 
 Goal: make the four Phase 57G registries version-aware and observation-ready without treating a field match or source update as an operating result.
 
@@ -1798,6 +1798,7 @@ Delivered:
 - thirty-six carried Tier 1 sources, four structured matrices, Research Watch 038, one collection, one update, and a thirty-two-file archive;
 - a verified 2,347-page contract with 715 sources, 670 signals, 536 Published, 134 In Review, 43 collections, 786 research documents, 46 briefings, 62 updates, 495 Published-support sources, and 714 research export records;
 - all nine Phase 57G holds preserved exactly once, no new hold, and zero exact-target, trigger, directive-scope, implementation, closure, agency-contact, FOIA, or inherited entity-ledger change.
+- local content commit `7d7e4dcf2aad983a480d7e64c487a40438c15b88` matched exact private runtime commit `2ff8ba6a79dbca070f73df3536604d7274b13a48`, saved as Sites version 60, deployed successfully in `appgdep_6a711a0bdc348191aceec93762957132`, and reverified with one owner, no groups, no editors, and zero external visitors.
 
 ### Phase 57I: Versioned Registry Change Detection And Bounded-Observation Ingestion - Next Content Gate
 
@@ -1931,10 +1932,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Complete the owner-only Phase 57H deployment, then begin Phase 57I versioned registry change detection and bounded-observation ingestion. Build the Amtrak source-diff queue, Montana field-schema migration and project-quarter intake contract, Hanford compatibility validator, and NNSA object-level source-diff ledger. Treat every detected change and accepted join as a reviewed source-version insert rather than an operating result. Preserve all nine Phase 57H holds until their named reopening conditions are met.
+Begin Phase 57I versioned registry change detection and bounded-observation ingestion. Build the Amtrak source-diff queue, Montana field-schema migration and project-quarter intake contract, Hanford compatibility validator, and NNSA object-level source-diff ledger. Treat every detected change and accepted join as a reviewed source-version insert rather than an operating result. Preserve all nine Phase 57H holds until their named reopening conditions are met.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 57H is complete and validated locally at 2,347 pages, 715 sources, 670 signals, 536 Published signals, 134 In Review signals, 43 collections, 786 research documents, 46 briefings, and 62 updates. Owner-only deployment is pending; Sites version 59 remains the hosted Phase 57G checkpoint. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phase 57H is complete, validated, and owner-only deployed at 2,347 pages, 715 sources, 670 signals, 536 Published signals, 134 In Review signals, 43 collections, 786 research documents, 46 briefings, and 62 updates. Sites version 60 serves exact private runtime commit `2ff8ba6a79dbca070f73df3536604d7274b13a48` under the unchanged one-owner access policy. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
