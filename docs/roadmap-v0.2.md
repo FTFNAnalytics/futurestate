@@ -406,12 +406,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 57G | twenty Published identity-and-lineage panels, nine preserved holds, nine new Tier 1 sources, four structured registries, Research Watch 037, a thirty-two-file archive, a verified 2,287-page contract, and Sites version 59 |
 | Completed and owner-only deployed | Phase 57H | twenty Published provenance panels, nine preserved holds, four versioned matrices, Research Watch 038, a thirty-two-file archive, a verified 2,347-page contract, and Sites version 60 |
 | Completed and owner-only deployed | Phase 57I | twenty Published control panels, nine preserved holds, four structured rails, Research Watch 039, a thirty-two-file archive, a verified 2,407-page contract, and Sites version 61 |
-| Next content gate | Phase 57J | historical backfill, rejection taxonomy, and review-queue execution across Amtrak, Montana, Hanford, and NNSA |
+| Completed and validated; owner-only deployment pending | Phase 57J | twenty Published backfill and rejection-taxonomy panels, nine preserved holds, four executed review rails, Research Watch 040, a thirty-two-file archive, and a verified 2,467-page contract |
+| Next content gate | Phase 57K | cross-version transition matrices, longitudinal panels, and a machine-readable reopening-trigger registry |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now passes a verified 2,407-page Phase 57I contract. Phase 57I reviews twenty-nine records and publishes twenty bounded change-detection and ingestion-control panels while preserving all nine Phase 57H holds and adding no new hold. Thirty-six carried Tier 1 sources support four structured rails spanning Amtrak station-identity diffs, Montana schema migrations and project-quarter envelopes, Hanford bounded observation validation, and NNSA object-level source diffs. No operating-outcome, exact-target, trigger, directive-scope, implementation, closure, agency-contact, FOIA, or entity-ledger change is recorded. Owner-only Sites version 61 now serves the exact Phase 57I runtime with one owner, no groups, no editors, and zero external visitors. The next non-public content gate is Phase 57J historical backfill, rejection taxonomy, and review-queue execution while dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now passes a verified 2,467-page Phase 57J contract. Phase 57J reviews twenty-nine records and publishes twenty bounded historical-backfill, rejection-taxonomy, and queue-execution panels while preserving all nine Phase 57I holds and adding no new hold. Thirty-six carried Tier 1 sources support four executed rails spanning 178 Amtrak historical identity decisions, thirteen Montana migration tests and thirty-two project-envelope tests, nine Hanford observations plus thirty-six pair and fourteen transition reviews, and seventy-two NNSA cells with 864 dimension classifications. No operating-outcome, structural-change, completed-quarter, custody, material-balance, capability, implementation, closure, agency-contact, FOIA, or entity-ledger change is recorded. Owner-only Sites version 61 remains the hosted Phase 57I checkpoint until Phase 57J deployment completes. The next non-public content gate is Phase 57K cross-version transition matrices, longitudinal panels, and reopening-trigger registry expansion while dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1833,7 +1834,7 @@ Delivered:
 - all nine Phase 57H holds preserved exactly once, no new hold, and zero exact-target, trigger, directive-scope, implementation, closure, agency-contact, FOIA, or inherited entity-ledger change.
 - local content commit `eacabc093596da563d4f2e1c9f728420c0847cca` matched exact private runtime commit `2b1470a666c2b3069295c46cf43d0e0fa16c2a69`, with the Phase 57H runtime as its parent; the 3,409-file runtime was saved as Sites version 61, deployed successfully in `appgdep_6a7121a3c66081919439713d92b3b7ba`, and reverified with one owner, no groups, no editors, and zero external visitors.
 
-### Phase 57J: Historical Backfill, Rejection Taxonomy, And Review-Queue Execution - Next Content Gate
+### Phase 57J: Historical Backfill, Rejection Taxonomy, And Review-Queue Execution - Complete And Validated; Owner-Only Deployment Pending
 
 Goal: execute the Phase 57I rails across the full carried historical state so the review system gains more adjudicated records without waiting for later operating publications.
 
@@ -1850,6 +1851,36 @@ Boundaries:
 - historical backfill is not a current operating result;
 - rejected records stay visible as rejected control decisions rather than disappearing;
 - a test case cannot populate a missing official value;
+- no automated publication, ranking, composite, readiness score, generalized savings claim, or unsupported causal inference.
+
+Delivered:
+
+- twenty-nine reviewed records with twenty Published backfill and rejection-taxonomy panels and nine preserved In Review holds;
+- an Amtrak rail with two source snapshots, 178 historical identity decisions, eleven bounded current links, 167 historical-only retentions, sixteen executed current-name reviews, and five visible rejected links;
+- a Montana rail with thirteen rejected migration tests, thirty-two rejected project envelopes, seven envelope-rejection classes, 224 reason assignments, thirty terrestrial rails, two LEO rails, and zero accepted quarters;
+- a Hanford rail with nine normalized observations, six observation-level blocker classes, thirty-six pair rejections, fourteen transition rejections, and zero custody or material-balance joins;
+- an NNSA rail with eighteen objects, four source versions, seventy-two cells, twelve dimensions, 864 classifications, ten retained bounded diffs, and zero outcome, capability, implementation, or closure promotion;
+- thirty-six carried Tier 1 sources, four executed structured rails, Research Watch 040, one collection, one update, and a thirty-two-file archive;
+- a verified 2,467-page contract with 715 sources, 728 signals, 576 Published, 152 In Review, 45 collections, 844 research documents, 48 briefings, 64 updates, 495 Published-support sources, and 756 research export records;
+- all nine Phase 57I holds preserved exactly once, no new hold, and zero exact-target, trigger, directive-scope, implementation, closure, agency-contact, FOIA, or inherited entity-ledger change.
+
+### Phase 57K: Cross-Version Transition Matrices, Longitudinal Panels, And Reopening-Trigger Registry - Next Content Gate
+
+Goal: turn the complete Phase 57J decisions into bounded longitudinal transition records and explicit reopening contracts without treating a classified transition or defined trigger as evidence that an operating event occurred.
+
+Priorities:
+
+1. construct a 178-identity-by-snapshot Amtrak longitudinal presence matrix while preserving the sixteen-name current queue and five identity rejections;
+2. construct a thirty-two-project-by-thirteen-field Montana compatibility matrix while preserving terrestrial, LEO, privacy, schema, definition, and state-disposition boundaries;
+3. classify all 126 Hanford observation-to-transition applicability cells and seventy transition-requirement checks without manufacturing batch, container, custody, unit, or mass joins;
+4. classify eighteen NNSA objects across three adjacent source-version transitions and twelve dimensions, preserving agency and independent authority;
+5. attach each of the nine preserved holds to a machine-readable reopening contract and publish only control or bounded historical records.
+
+Boundaries:
+
+- a transition classification is not evidence that the transition occurred;
+- a reopening trigger definition is not evidence that the trigger fired;
+- longitudinal completeness cannot fill missing official values;
 - no automated publication, ranking, composite, readiness score, generalized savings claim, or unsupported causal inference.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
@@ -1964,10 +1995,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 57J historical backfill, rejection taxonomy, and review-queue execution. Backfill Amtrak source snapshots and identity decisions, exercise Montana migration and intake rejection reasons, normalize Hanford observation and transition requirements, and classify all NNSA object-version cell differences. Treat every control decision and bounded historical insert as reviewed evidence rather than an operating result. Preserve all nine Phase 57I holds until their named reopening conditions are met.
+Complete the owner-only Phase 57J deployment, then begin Phase 57K cross-version transition matrices, longitudinal panels, and reopening-trigger registry expansion. Build Amtrak identity-snapshot history, Montana project-field compatibility, Hanford observation-transition applicability, NNSA object-transition dimensions, and nine explicit reopening contracts. Treat every transition or trigger definition as reviewed control evidence rather than an operating result. Preserve all nine Phase 57J holds until their named reopening conditions are met.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 57I is complete, validated, and owner-only deployed at 2,407 pages, 715 sources, 699 signals, 556 Published signals, 143 In Review signals, 44 collections, 815 research documents, 47 briefings, and 63 updates. Sites version 61 serves exact private runtime commit `2b1470a666c2b3069295c46cf43d0e0fa16c2a69` in deployment `appgdep_6a7121a3c66081919439713d92b3b7ba`. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phase 57J is complete and validated locally at 2,467 pages, with 715 sources, 728 signals, 576 Published signals, 152 In Review signals, 45 collections, 844 research documents, 48 briefings, and 64 updates. Owner-only deployment is pending; Sites version 61 remains the hosted Phase 57I checkpoint. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

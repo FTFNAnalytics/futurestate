@@ -1,0 +1,110 @@
+{
+  "phase": "57J",
+  "captured_date": "2026-08-03",
+  "promoted_document_ids": [
+    "research-doc-57j-amtrak-178-identity-source-snapshot-manifest",
+    "research-doc-57j-amtrak-11-current-links-167-historical-retentions",
+    "research-doc-57j-amtrak-16-name-review-queue-executed",
+    "research-doc-57j-amtrak-five-identity-rejections-remain-visible",
+    "research-doc-57j-amtrak-zero-structural-or-outcome-promotions-after-backfill",
+    "research-doc-57j-montana-13-field-migration-tests-rejected",
+    "research-doc-57j-montana-11-missing-target-schema-rejections",
+    "research-doc-57j-montana-code-dictionary-and-completed-record-blockers",
+    "research-doc-57j-montana-32-project-envelope-rejections-classified",
+    "research-doc-57j-montana-30-terrestrial-two-leo-zero-accepted-envelopes",
+    "research-doc-57j-hanford-nine-observations-normalized-for-review",
+    "research-doc-57j-hanford-six-observation-join-blocker-classes",
+    "research-doc-57j-hanford-36-pair-rejections-classified",
+    "research-doc-57j-hanford-14-transition-requirements-rejected",
+    "research-doc-57j-hanford-zero-material-balance-or-custody-promotions",
+    "research-doc-57j-nnsa-72-cells-864-dimension-classifications",
+    "research-doc-57j-nnsa-30-agency-present-30-not-used-cells",
+    "research-doc-57j-nnsa-12-independent-source-cells-separated",
+    "research-doc-57j-nnsa-10-bounded-diffs-linked-to-classification-queue",
+    "research-doc-57j-nnsa-zero-outcome-capability-implementation-closure-promotions"
+  ],
+  "promoted_signal_ids": [
+    "signal-57j-amtrak-178-identity-source-snapshot-manifest",
+    "signal-57j-amtrak-11-current-links-167-historical-retentions",
+    "signal-57j-amtrak-16-name-review-queue-executed",
+    "signal-57j-amtrak-five-identity-rejections-remain-visible",
+    "signal-57j-amtrak-zero-structural-or-outcome-promotions-after-backfill",
+    "signal-57j-montana-13-field-migration-tests-rejected",
+    "signal-57j-montana-11-missing-target-schema-rejections",
+    "signal-57j-montana-code-dictionary-and-completed-record-blockers",
+    "signal-57j-montana-32-project-envelope-rejections-classified",
+    "signal-57j-montana-30-terrestrial-two-leo-zero-accepted-envelopes",
+    "signal-57j-hanford-nine-observations-normalized-for-review",
+    "signal-57j-hanford-six-observation-join-blocker-classes",
+    "signal-57j-hanford-36-pair-rejections-classified",
+    "signal-57j-hanford-14-transition-requirements-rejected",
+    "signal-57j-hanford-zero-material-balance-or-custody-promotions",
+    "signal-57j-nnsa-72-cells-864-dimension-classifications",
+    "signal-57j-nnsa-30-agency-present-30-not-used-cells",
+    "signal-57j-nnsa-12-independent-source-cells-separated",
+    "signal-57j-nnsa-10-bounded-diffs-linked-to-classification-queue",
+    "signal-57j-nnsa-zero-outcome-capability-implementation-closure-promotions"
+  ],
+  "held_document_ids": [
+    "research-doc-57j-preserved-amtrak-pids-closeout-reliability-hold",
+    "research-doc-57j-preserved-amtrak-named-asset-reliability-hold",
+    "research-doc-57j-preserved-louisiana-nextlink-observed-adoption-hold",
+    "research-doc-57j-preserved-louisiana-starlink-observed-adoption-hold",
+    "research-doc-57j-preserved-montana-quarterly-observed-results-hold",
+    "research-doc-57j-preserved-hanford-complete-material-balance-hold",
+    "research-doc-57j-preserved-nnsa-recurring-qualified-output-hold",
+    "research-doc-57j-preserved-nnsa-final-capacity-readiness-hold",
+    "research-doc-57j-preserved-nnsa-exact-gao-baseline-hold"
+  ],
+  "held_signal_ids": [
+    "signal-57j-preserved-amtrak-pids-closeout-reliability-hold",
+    "signal-57j-preserved-amtrak-named-asset-reliability-hold",
+    "signal-57j-preserved-louisiana-nextlink-observed-adoption-hold",
+    "signal-57j-preserved-louisiana-starlink-observed-adoption-hold",
+    "signal-57j-preserved-montana-quarterly-observed-results-hold",
+    "signal-57j-preserved-hanford-complete-material-balance-hold",
+    "signal-57j-preserved-nnsa-recurring-qualified-output-hold",
+    "signal-57j-preserved-nnsa-final-capacity-readiness-hold",
+    "signal-57j-preserved-nnsa-exact-gao-baseline-hold"
+  ],
+  "inherited_hold_lineage": [
+    {
+      "action_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-09",
+      "parent_hold_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-08"
+    },
+    {
+      "action_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-08",
+      "parent_hold_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-07"
+    },
+    {
+      "action_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-09",
+      "parent_hold_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-08"
+    },
+    {
+      "action_key": "LA-BEAD-STARLINK-HOLD-2026-09",
+      "parent_hold_key": "LA-BEAD-STARLINK-HOLD-2026-08"
+    },
+    {
+      "action_key": "MT-BEAD-QUARTERLY-HOLD-2026-09",
+      "parent_hold_key": "MT-BEAD-QUARTERLY-HOLD-2026-08"
+    },
+    {
+      "action_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-06",
+      "parent_hold_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-05"
+    },
+    {
+      "action_key": "NNSA-PIT-RATE-HOLD-2026-09",
+      "parent_hold_key": "NNSA-PIT-RATE-HOLD-2026-08"
+    },
+    {
+      "action_key": "NNSA-PIT-PEIS-HOLD-2026-09",
+      "parent_hold_key": "NNSA-PIT-PEIS-HOLD-2026-08"
+    },
+    {
+      "action_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-10",
+      "parent_hold_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-09"
+    }
+  ],
+  "exact_target_artifacts_acquired": 0,
+  "decision": "Twenty bounded backfill, rejection-taxonomy, and queue-execution panels publish. All nine Phase 57I operating-outcome holds remain visible; no new hold, trigger, contact, scope change, implementation change, or closure change is recorded."
+}

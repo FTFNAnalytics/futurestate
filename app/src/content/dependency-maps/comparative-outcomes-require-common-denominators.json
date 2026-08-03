@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 57I adds four reviewed change-detection and bounded-ingestion rails while preserving nine operating-outcome holds.",
+  "summary": "A comparison and inference protocol: Phase 57J executes four historical and review queues with visible rejection taxonomies while preserving nine operating-outcome holds.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -868,7 +868,27 @@
     "signal-57i-nnsa-ten-bounded-source-diff-events",
     "signal-57i-nnsa-lap4-object-level-diff-guard",
     "signal-57i-nnsa-srppf-object-level-diff-guard",
-    "signal-57i-nnsa-zero-outcome-implementation-closure-promotions"
+    "signal-57i-nnsa-zero-outcome-implementation-closure-promotions",
+    "signal-57j-amtrak-178-identity-source-snapshot-manifest",
+    "signal-57j-amtrak-11-current-links-167-historical-retentions",
+    "signal-57j-amtrak-16-name-review-queue-executed",
+    "signal-57j-amtrak-five-identity-rejections-remain-visible",
+    "signal-57j-amtrak-zero-structural-or-outcome-promotions-after-backfill",
+    "signal-57j-montana-13-field-migration-tests-rejected",
+    "signal-57j-montana-11-missing-target-schema-rejections",
+    "signal-57j-montana-code-dictionary-and-completed-record-blockers",
+    "signal-57j-montana-32-project-envelope-rejections-classified",
+    "signal-57j-montana-30-terrestrial-two-leo-zero-accepted-envelopes",
+    "signal-57j-hanford-nine-observations-normalized-for-review",
+    "signal-57j-hanford-six-observation-join-blocker-classes",
+    "signal-57j-hanford-36-pair-rejections-classified",
+    "signal-57j-hanford-14-transition-requirements-rejected",
+    "signal-57j-hanford-zero-material-balance-or-custody-promotions",
+    "signal-57j-nnsa-72-cells-864-dimension-classifications",
+    "signal-57j-nnsa-30-agency-present-30-not-used-cells",
+    "signal-57j-nnsa-12-independent-source-cells-separated",
+    "signal-57j-nnsa-10-bounded-diffs-linked-to-classification-queue",
+    "signal-57j-nnsa-zero-outcome-capability-implementation-closure-promotions"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -1179,6 +1199,12 @@
       "label": "Four reviewed diff and ingestion rails; twenty Published controls; nine holds",
       "node_type": "Signal",
       "note": "Source changes and standalone observations become reviewable without bypassing identity, schema, compatibility, privacy, or publication gates."
+    },
+    {
+      "id": "node-phase57j-review-queue-execution",
+      "label": "Four executed review queues; twenty Published controls; visible rejection taxonomies; nine holds",
+      "node_type": "Signal",
+      "note": "Historical decisions and rejected records become auditable without manufacturing missing values or operating states."
     }
   ],
   "links": [
@@ -1951,6 +1977,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Validation and ingestion controls do not establish operating outcomes or causation."
+    },
+    {
+      "from": "node-phase57j-review-queue-execution",
+      "to": "node-phase57i-ingestion-rails",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57J executes the four Phase 57I change-detection and bounded-ingestion rails."
+    },
+    {
+      "from": "node-phase57j-review-queue-execution",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Rejected identity, schema, privacy, compatibility, custody, and object-scope decisions remain explicit."
+    },
+    {
+      "from": "node-phase57j-review-queue-execution",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Backfill and taxonomy completion do not establish operating outcomes or causation."
     }
   ],
   "what_this_map_supports": [
@@ -2003,7 +2050,8 @@
     "Sixteen bounded Phase 57F denominator, measurement-contract, material-stage, or output-state records plus nine preserved operating-outcome holds.",
     "Four Phase 57G identity-and-lineage registries, twenty bounded Published panels, and nine preserved operating-outcome holds.",
     "Four Phase 57H versioned provenance matrices, twenty bounded Published panels, and nine preserved operating-outcome holds.",
-    "Four Phase 57I change-detection and bounded-ingestion rails, twenty Published control panels, and nine preserved operating-outcome holds."
+    "Four Phase 57I change-detection and bounded-ingestion rails, twenty Published control panels, and nine preserved operating-outcome holds.",
+    "Four Phase 57J executed review rails, twenty Published control panels, explicit rejection taxonomies, and nine preserved operating-outcome holds."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -2127,6 +2175,7 @@
     "Current asset reliability, privacy-safe adoption and retention, complete material balances, site-period qualified output, and exact enterprise-baseline sufficiency.",
     "Compatible current asset, project-quarter, batch-container, site-period qualified-output, and exact independent-baseline observations.",
     "Compatible source-versioned observations with stable identity, definition, period, unit, method, authority, quality, acceptance, and disposition.",
-    "Compatible reviewed observations with stable identity, schema, definition, period, stage, measure, operator, method, unit, authority, privacy, quality, acceptance, and disposition."
+    "Compatible reviewed observations with stable identity, schema, definition, period, stage, measure, operator, method, unit, authority, privacy, quality, acceptance, and disposition.",
+    "Source-explicit records that clear named rejection classes without changing identity, denominator, object scope, authority, privacy, acceptance, capability, implementation, or closure attribution."
   ]
 }

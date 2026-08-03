@@ -225,7 +225,17 @@
     "signal-57i-nnsa-ten-bounded-source-diff-events",
     "signal-57i-nnsa-lap4-object-level-diff-guard",
     "signal-57i-nnsa-srppf-object-level-diff-guard",
-    "signal-57i-nnsa-zero-outcome-implementation-closure-promotions"
+    "signal-57i-nnsa-zero-outcome-implementation-closure-promotions",
+    "signal-57j-hanford-nine-observations-normalized-for-review",
+    "signal-57j-hanford-six-observation-join-blocker-classes",
+    "signal-57j-hanford-36-pair-rejections-classified",
+    "signal-57j-hanford-14-transition-requirements-rejected",
+    "signal-57j-hanford-zero-material-balance-or-custody-promotions",
+    "signal-57j-nnsa-72-cells-864-dimension-classifications",
+    "signal-57j-nnsa-30-agency-present-30-not-used-cells",
+    "signal-57j-nnsa-12-independent-source-cells-separated",
+    "signal-57j-nnsa-10-bounded-diffs-linked-to-classification-queue",
+    "signal-57j-nnsa-zero-outcome-capability-implementation-closure-promotions"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -404,7 +414,8 @@
     "briefing-research-watch-036-measured-reliability-observed-adoption-full-output-reconciliation",
     "briefing-research-watch-037-named-asset-project-cohort-registry-expansion",
     "briefing-research-watch-038-registry-revision-provenance-compatible-observation-joins",
-    "briefing-research-watch-039-versioned-registry-change-detection-bounded-observation-ingestion"
+    "briefing-research-watch-039-versioned-registry-change-detection-bounded-observation-ingestion",
+    "briefing-research-watch-040-historical-backfill-rejection-taxonomy-review-queue-execution"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -446,7 +457,8 @@
     "research-collection-measured-reliability-observed-adoption-full-output-reconciliation-2026",
     "research-collection-named-asset-project-cohort-registry-expansion-2026",
     "research-collection-registry-revision-provenance-compatible-observation-joins-2026",
-    "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026"
+    "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
+    "research-collection-historical-backfill-rejection-taxonomy-review-queue-execution-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -639,6 +651,11 @@
       "stage": "Phase 57I change-detection and bounded-ingestion rails",
       "current_state": "Twenty Published control panels, four structured rails, and nine preserved operating-outcome holds.",
       "boundary": "A queued diff, migration plan, accepted envelope, validator decision, or bounded source change is not an operating outcome, implementation, acceptance, capability, or closure."
+    },
+    {
+      "stage": "Phase 57J historical backfill and rejection taxonomy",
+      "current_state": "Twenty Published control panels, four executed review rails, complete rejection taxonomies, and nine preserved operating-outcome holds.",
+      "boundary": "A completed queue, rejected test, reviewer disposition, or object-version classification is not an operating outcome, implementation, acceptance, capability, or closure."
     }
   ],
   "evidence_limits": [
@@ -694,7 +711,8 @@
     "Phase 57F prohibits historical-to-current inflation, control-to-outcome promotion, cross-stage material multiplication, forecast-to-completion promotion, recommendation substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57G prohibits synthetic identity joins, historical-to-current promotion, location-detail exposure, raw-code guessing, cross-stage conversion, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57H prohibits silent alias merges, source-version erasure, raw-code guessing, privacy-detail exposure, cross-stage or cross-unit conversion, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
-    "Phase 57I prohibits silent identity merges, guessed station codes or field mappings, privacy-detail exposure, cross-rail migration, coerced missing fields, synthetic numeric joins, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
+    "Phase 57I prohibits silent identity merges, guessed station codes or field mappings, privacy-detail exposure, cross-rail migration, coerced missing fields, synthetic numeric joins, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
+    "Phase 57J prohibits silent rejection, deletion inference, guessed codes or schemas, privacy-detail exposure, cross-rail migration, coerced missing fields, synthetic custody or numeric joins, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -745,6 +763,7 @@
     "Current asset-period reliability, privacy-safe cohort adoption and retention, complete monthly material balances, site-period qualified output, and exact independent baseline sufficiency.",
     "Compatible current asset, project-quarter, batch-container, site-period output, and exact independent-baseline observations joined to stable registry identities.",
     "Source-versioned compatible observations with stable identity, period, field definition, unit, method, authority, quality, acceptance, and disposition.",
-    "Reviewed source-version inserts with stable identity, definition, period, stage, measure, operator, method, unit, authority, privacy, quality, acceptance, and disposition."
+    "Reviewed source-version inserts with stable identity, definition, period, stage, measure, operator, method, unit, authority, privacy, quality, acceptance, and disposition.",
+    "Source-explicit records that clear named Phase 57J rejection classes while preserving exact identity, definition, period, stage, method, unit, authority, privacy, acceptance, custody, object scope, and closure attribution."
   ]
 }
