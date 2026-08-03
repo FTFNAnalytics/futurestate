@@ -12,13 +12,13 @@
     "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
     "access": "owner-only-custom-policy",
     "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
-    "current_local_content_commit": "8e247466e1e95c032a0e14c455e42ed5d1790416",
-    "current_source_commit": "928dcf828052b5e71208f838264fef5d73c057ad",
-    "current_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_52f0943adcdc8191a2764e07de4715d5",
-    "current_version_number": 55,
-    "current_deployment_id": "appgdep_6a6fccf316908191b69b2541e9e6c79d",
+    "current_local_content_commit": "2958965b94068a278de4cabf30b24ab7854d7f8a",
+    "current_source_commit": "c04053a70ee1e215802acc800c87c3ec1fa388d2",
+    "current_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_60553c4fac308191926121b0eae9dfdf",
+    "current_version_number": 56,
+    "current_deployment_id": "appgdep_6a70f38077b88191b373e0c573a0abcf",
     "custom_domain_attached": false,
-    "post_deploy_qa": "passed-version-55-deployment-status-source-provenance-runtime-archive-owner-only-access; visual-route-qa-not-requested"
+    "post_deploy_qa": "passed-version-56-deployment-status-source-provenance-runtime-archive-owner-only-access; visual-route-qa-not-requested"
   },
   "canonical_site": "https://ftfn.io",
   "app_root": "app",
@@ -369,7 +369,7 @@
     ],
     "browser_routes_checked": 10,
     "hosted_routes_checked": 0,
-    "preview_qa": "passed-owner-only-version-55-deployment-status-source-provenance-runtime-archive; custom-access-one-owner-no-groups-no-editors-zero-external-visitors"
+    "preview_qa": "passed-owner-only-version-56-deployment-status-source-provenance-runtime-archive; custom-access-one-owner-no-groups-no-editors-zero-external-visitors; visual-route-qa-not-requested"
   },
   "required_output_files": [
     "dist/index.html",
@@ -3018,6 +3018,17 @@
     "organizations_deepened": 1,
     "dependency_maps_deepened": 1,
     "public_update_entries_added": 1,
-    "generated_pages_added": 49
+    "generated_pages_added": 49,
+    "local_content_commit": "2958965b94068a278de4cabf30b24ab7854d7f8a",
+    "private_runtime_commit": "c04053a70ee1e215802acc800c87c3ec1fa388d2",
+    "sites_version_number": 56,
+    "sites_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_60553c4fac308191926121b0eae9dfdf",
+    "sites_deployment_id": "appgdep_6a70f38077b88191b373e0c573a0abcf",
+    "sites_runtime_archive_file_count": 2948,
+    "sites_runtime_archive_content_hash": "sha256:a268a2febdb3bed405cefabd915525739de8ae9616e3391802bd75edfac46b0f",
+    "sites_runtime_archive_size_bytes": 142755840,
+    "local_compressed_deployment_archive_size_bytes": 93886480,
+    "local_compressed_deployment_archive_sha256": "01045E3908CCED4BC6BD6206DBDED8AF25839C714A23E88AB7A144CC08FF657B",
+    "sites_access": "custom-owner-only-one-owner-no-groups-no-editors-zero-external-visitors"
   }
 }

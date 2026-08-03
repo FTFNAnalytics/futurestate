@@ -2,7 +2,7 @@
 
 Date: 2026-08-02
 
-Status: complete and validated locally; owner-only deployment pending
+Status: complete, validated, and owner-only deployed
 
 ## Goal
 
@@ -89,4 +89,11 @@ Build asset-level reliability, cohort adoption, and accepted-output closure. Pri
 
 ## Deployment receipt
 
-Pending owner-only Phase 57D deployment. Public access, DNS, the custom domain, package freeze, and the public GitHub remote remain unchanged.
+- Local content commit: `2958965b94068a278de4cabf30b24ab7854d7f8a`.
+- Exact private runtime commit: `c04053a70ee1e215802acc800c87c3ec1fa388d2`.
+- Sites version: 56 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_60553c4fac308191926121b0eae9dfdf`).
+- Deployment: `appgdep_6a70f38077b88191b373e0c573a0abcf`, succeeded at `https://ftfn-analytics.jbumstead.chatgpt.site`.
+- Runtime archive: 2,948 files, 142,755,840 bytes, `sha256:a268a2febdb3bed405cefabd915525739de8ae9616e3391802bd75edfac46b0f`.
+- Local compressed deployment archive: 93,886,480 bytes, SHA-256 `01045E3908CCED4BC6BD6206DBDED8AF25839C714A23E88AB7A144CC08FF657B`.
+- Access reverified after deployment: custom owner-only, one owner, no groups, no editors, and zero external visitors.
+- Visual route QA was not requested. Public access, DNS, the custom domain, package freeze, and the public GitHub remote remain unchanged.
