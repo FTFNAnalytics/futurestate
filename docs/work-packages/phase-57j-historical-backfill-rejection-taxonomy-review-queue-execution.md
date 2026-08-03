@@ -2,7 +2,7 @@
 
 Date: 2026-08-03
 
-Status: complete and validated; owner-only deployment pending
+Status: complete, validated, and owner-only deployed
 
 ## Goal
 
@@ -108,4 +108,4 @@ Build cross-version transition matrices, denominator-aware longitudinal panels, 
 
 ## Deployment receipt
 
-Pending owner-only Sites deployment. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
+Local content commit `072da57ec806756b6ec60a7c9f32fdd59531b09c` produced exact private runtime commit `e106dc9c7a9d14276ced1aee755b2fa79ca0d930`, with the Phase 57I runtime as its parent. The 3,502-file runtime was saved as Sites version 62 and deployed successfully in `appgdep_6a712967b444819194beb29dfe23132c`. Post-deployment access remained custom owner-only with one owner, no groups, no editors, and zero external visitors. Visual route QA was not requested. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
