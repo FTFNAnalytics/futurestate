@@ -1,0 +1,164 @@
+{
+  "phase": "57G",
+  "captured_date": "2026-08-03",
+  "registry_type": "Site-facility-program-capacity-qualification-baseline work-breakdown crosswalk",
+  "entry_count": 18,
+  "source_ids": [
+    "source-57f-nnsa-pit-production-current",
+    "source-57f-nnsa-stockpile-current",
+    "source-57g-nnsa-lap4-30-base-construction",
+    "source-57g-nnsa-fy2026-weapons-activities",
+    "source-56w-nnsa-fy2027-weapons-activities",
+    "source-56x-gao-nnsa-major-projects-2026",
+    "source-57a-nnsa-w87-1-first-production-unit",
+    "source-56q-gao-23-104661-recommendation-status"
+  ],
+  "object_type_rule": "Site, facility, project umbrella, subproject, scope strategy, qualification event, capacity plan, and independent recommendation baseline are distinct objects and may not substitute for one another.",
+  "boundary": "The crosswalk stabilizes work-breakdown identity and lineage. It does not establish completion, readiness, recurring qualified output, final capacity, recommendation implementation, or independent baseline sufficiency.",
+  "entries": [
+    {
+      "registry_id": "NNSA-PIT-MISSION",
+      "parent_id": null,
+      "object_type": "Enterprise mission",
+      "name": "NNSA plutonium-pit production mission",
+      "bounded_state": "Two-site plan for resilient capacity; not an output record",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-LANL",
+      "parent_id": "NNSA-PIT-MISSION",
+      "object_type": "Site",
+      "name": "Los Alamos National Laboratory",
+      "bounded_state": "Planned 30-pits-per-year capacity contribution",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-LANL-PF4",
+      "parent_id": "NNSA-LANL",
+      "object_type": "Operating facility",
+      "name": "Plutonium Facility 4",
+      "bounded_state": "Sole current U.S. pit-production capability; facility state is not recurring qualified output",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-LANL-LAP4",
+      "parent_id": "NNSA-LANL-PF4",
+      "object_type": "Capital-project umbrella",
+      "name": "Los Alamos Plutonium Pit Production Project (LAP4)",
+      "bounded_state": "Infrastructure project supporting PF-4 production capability",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-LANL-LAP4-30B",
+      "parent_id": "NNSA-LANL-LAP4",
+      "object_type": "Subproject",
+      "name": "30 Base Equipment Installation",
+      "bounded_state": "CD-2/3 scope for basic 30-per-year equipment capacity; $1.864 billion ceiling and no-later-than August 2030 completion in 2023 approval",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-LANL-LAP4-30R",
+      "parent_id": "NNSA-LANL-LAP4",
+      "object_type": "Subproject",
+      "name": "30 Reliable Equipment Installation",
+      "bounded_state": "Equipment scope intended to improve reliability of producing 30 per year",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-LANL-LAP4-30D",
+      "parent_id": "NNSA-LANL-LAP4",
+      "object_type": "Scope strategy",
+      "name": "30 Diamond scope",
+      "bounded_state": "Later budget scope and realignment object; not a facility or qualified-output state",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-LANL-LAP4-DD",
+      "parent_id": "NNSA-LANL-LAP4",
+      "object_type": "Subproject",
+      "name": "Decontamination and Demolition",
+      "bounded_state": "Enabling subproject; progress is not production capacity",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-LANL-LAP4-TDC",
+      "parent_id": "NNSA-LANL-LAP4",
+      "object_type": "Subproject",
+      "name": "Training and Development Center",
+      "bounded_state": "Workforce and development support scope",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-LANL-LAP4-WECF",
+      "parent_id": "NNSA-LANL-LAP4",
+      "object_type": "Subproject",
+      "name": "West Entry Control Facility",
+      "bounded_state": "Access-control enabling scope",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-SRS",
+      "parent_id": "NNSA-PIT-MISSION",
+      "object_type": "Site",
+      "name": "Savannah River Site",
+      "bounded_state": "Planned at-least-50-pits-per-year capacity contribution",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-SRS-MOX",
+      "parent_id": "NNSA-SRS",
+      "object_type": "Existing facility",
+      "name": "Former Mixed Oxide Fuel Fabrication Facility",
+      "bounded_state": "Repurposed host building; not itself an accepted pit-production capability",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-SRS-SRPPF",
+      "parent_id": "NNSA-SRS-MOX",
+      "object_type": "Capital-project umbrella",
+      "name": "Savannah River Plutonium Processing Facility",
+      "bounded_state": "Project intended to establish the Savannah River capacity contribution",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-SRS-SRPPF-MPB",
+      "parent_id": "NNSA-SRS-SRPPF",
+      "object_type": "Subproject",
+      "name": "Main Process Building",
+      "bounded_state": "Core process-building scope with baseline state tracked separately",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-SRS-SRPPF-HFTOC",
+      "parent_id": "NNSA-SRS-SRPPF",
+      "object_type": "Subproject",
+      "name": "High-Fidelity Training and Operations Center",
+      "bounded_state": "Training and operations-support scope with its own critical-decision state",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-W87-1-FPU",
+      "parent_id": "NNSA-LANL-PF4",
+      "object_type": "Qualification and acceptance event",
+      "name": "W87-1 first production unit",
+      "bounded_state": "One fully qualified and diamond-stamped war-reserve-quality unit verified October 1, 2024; not a recurring rate",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-GAO-23-104661-REC1",
+      "parent_id": "NNSA-PIT-MISSION",
+      "object_type": "Independent recommendation baseline",
+      "name": "GAO-23-104661 Recommendation 1",
+      "bounded_state": "Open recommendation for a life-cycle cost estimate meeting GAO characteristics; December 2026 estimate remains a forecast",
+      "operating_outcome": null
+    },
+    {
+      "registry_id": "NNSA-CAPACITY-30-50-80",
+      "parent_id": "NNSA-PIT-MISSION",
+      "object_type": "Capacity plan",
+      "name": "LANL 30 plus Savannah River 50 for at least 80 pits per year",
+      "bounded_state": "Capacity objective and site allocation, not qualified production or accepted readiness",
+      "operating_outcome": null
+    }
+  ]
+}

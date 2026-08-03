@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 57F adds sixteen bounded denominator, measurement-contract, material-stage, or official-state reconciliations while preserving nine operating-outcome holds.",
+  "summary": "A comparison and inference protocol: Phase 57G adds four stable identity-and-lineage registries and twenty bounded panels while preserving nine operating-outcome holds.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -402,7 +402,16 @@
     "source-57f-hanford-wtp-pmm-february-2026",
     "source-57f-doe-hanford-100k-gallons-may-2026",
     "source-57f-nnsa-pit-production-current",
-    "source-57f-nnsa-stockpile-current"
+    "source-57f-nnsa-stockpile-current",
+    "source-57g-montana-bead-final-proposal-january-2026",
+    "source-57g-montana-deployment-projects-csv",
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-subgrantees-csv",
+    "source-57g-montana-cai-csv",
+    "source-57g-hanford-dflaw-process-animation",
+    "source-57g-hanford-ap106-feed-staging",
+    "source-57g-nnsa-lap4-30-base-construction",
+    "source-57g-nnsa-fy2026-weapons-activities"
   ],
   "signal_ids": [
     "signal-federal-ai-inventories-nearly-doubled-2024",
@@ -799,7 +808,27 @@
     "signal-57f-nnsa-current-r-and-d-capability-state",
     "signal-57f-nnsa-first-unit-current-capability-crosswalk",
     "signal-57f-nnsa-two-site-capacity-target-boundary",
-    "signal-57f-nnsa-gao-baseline-status-reconciliation"
+    "signal-57f-nnsa-gao-baseline-status-reconciliation",
+    "signal-57g-amtrak-appendix-b-membership-registry",
+    "signal-57g-amtrak-pids-120-station-status-registry",
+    "signal-57g-amtrak-train-access-30-station-status-registry",
+    "signal-57g-amtrak-access-amenity-47-station-registry",
+    "signal-57g-amtrak-cross-cohort-identity-and-revision-contract",
+    "signal-57g-montana-nineteen-subgrantee-identity-registry",
+    "signal-57g-montana-thirty-two-deployment-project-registry",
+    "signal-57g-montana-68315-bsl-project-denominator",
+    "signal-57g-montana-183-cai-project-denominator",
+    "signal-57g-montana-funding-and-reporting-contract-join",
+    "signal-57g-hanford-fourteen-stage-dflaw-registry",
+    "signal-57g-hanford-tscr-ap106-lab-feed-crosswalk",
+    "signal-57g-hanford-melter-container-handling-registry",
+    "signal-57g-hanford-nine-observation-stage-ledger",
+    "signal-57g-hanford-null-identity-and-nonconversion-contract",
+    "signal-57g-nnsa-two-site-site-facility-registry",
+    "signal-57g-nnsa-lap4-work-breakdown-registry",
+    "signal-57g-nnsa-srppf-work-breakdown-registry",
+    "signal-57g-nnsa-capacity-qualification-acceptance-crosswalk",
+    "signal-57g-nnsa-gao-baseline-work-breakdown-crosswalk"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -1092,6 +1121,12 @@
       "label": "Sixteen denominator, measurement, material-stage, or output-state records; nine holds",
       "node_type": "Signal",
       "note": "Outcomes advance only under stable entity, cohort, asset or material stage, period, unit, denominator, method, and authority identities."
+    },
+    {
+      "id": "node-phase57g-identity-registries",
+      "label": "Four identity registries; twenty Published panels; nine holds",
+      "node_type": "Signal",
+      "note": "Stable station, project, lifecycle-stage, and work-breakdown identities create join rails without asserting operating outcomes."
     }
   ],
   "links": [
@@ -1801,6 +1836,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Controls, cumulative lower bounds, nominal specifications, one first unit, targets, and forecasts do not establish sustained outcomes or causation."
+    },
+    {
+      "from": "node-phase57g-identity-registries",
+      "to": "node-phase57f-measured-adoption-output",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57G preserves all nine Phase 57F holds and their exact reopening conditions."
+    },
+    {
+      "from": "node-phase57g-identity-registries",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Historical cohorts, proposal projects, material stages, and work-breakdown objects remain revisioned and non-interchangeable."
+    },
+    {
+      "from": "node-phase57g-identity-registries",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Identity and lineage do not establish reliability, adoption, yield, readiness, output, implementation, closure, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -1850,7 +1906,8 @@
     "Twelve bounded inventory, repeat-output, accepted-disposal, closed-loop, or baseline-boundary panels plus eight visible reliability, adoption, activation, recurring-output, capacity, or baseline holds.",
     "Twelve bounded compatible service or material-flow series plus eight visible reliability, adoption, activation, recurring-output, capacity, or baseline holds.",
     "Fifteen bounded Phase 57E asset, control, accepted-output, or independent-closure records plus nine visible operating-result holds.",
-    "Sixteen bounded Phase 57F denominator, measurement-contract, material-stage, or output-state records plus nine preserved operating-outcome holds."
+    "Sixteen bounded Phase 57F denominator, measurement-contract, material-stage, or output-state records plus nine preserved operating-outcome holds.",
+    "Four Phase 57G identity-and-lineage registries, twenty bounded Published panels, and nine preserved operating-outcome holds."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -1971,6 +2028,7 @@
     "Compatible uptime, maintenance, use, adoption, monthly quality, rejects, rework, downtime, acceptance, disposal, compliance, recurring qualified output, complete program baselines, and realized-outcome evidence.",
     "Named-asset service quality, cohort adoption and retention, complete monthly material balances, qualified site-period output, GAO-sufficient program baselines, and independently accepted outcomes.",
     "Named-asset reliability, privacy-safe cohort adoption and retention, complete monthly material balances, qualified site-period output, and exact enterprise-baseline sufficiency.",
-    "Current asset reliability, privacy-safe adoption and retention, complete material balances, site-period qualified output, and exact enterprise-baseline sufficiency."
+    "Current asset reliability, privacy-safe adoption and retention, complete material balances, site-period qualified output, and exact enterprise-baseline sufficiency.",
+    "Compatible current asset, project-quarter, batch-container, site-period qualified-output, and exact independent-baseline observations."
   ]
 }

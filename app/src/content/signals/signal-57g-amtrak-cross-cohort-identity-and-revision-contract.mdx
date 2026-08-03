@@ -1,0 +1,66 @@
+---
+id: "signal-57g-amtrak-cross-cohort-identity-and-revision-contract"
+title: "Stable station keys now expose overlap without collapsing cohort or revision identity"
+slug: "57g-amtrak-cross-cohort-identity-and-revision-contract"
+record_status: "Published"
+summary: "The 197 memberships resolve to 178 unique normalized station keys; each key preserves its separate train-access, PIDS, and amenity memberships so later revisions can add or close rows without rewriting the historical baseline."
+source_ids:
+  - "source-57f-amtrak-stations-alp-fy24-29"
+  - "source-57e-amtrak-accessibility-progress-june-2026"
+published_date: 2026-08-03
+captured_date: 2026-08-03
+primary_topic: "Mobility"
+framework_layers:
+  - "Enabling Infrastructure"
+  - "Human Systems"
+signal_type: "Research Result"
+maturity_level: "Infrastructure"
+time_horizon: "Now"
+evidence_quality: "Official Data"
+verification_status: "Verified Against Primary Source"
+why_it_matters: "Evidence stage: Named-asset registry. Denominator: 178 unique normalized station keys derived from 197 source memberships, with no assumed device-level identity."
+dependencies:
+  - "stable public identity and lineage"
+  - "explicit cohort, lifecycle stage, or work-breakdown level"
+  - "compatible period, unit, denominator, method, revision, privacy boundary, and authority"
+  - "separate observation, outcome, forecast, implementation, acceptance, and closure evidence"
+constraints:
+  - "Data Quality"
+  - "Regulation"
+  - "Public Trust"
+receiving_systems:
+  - "Phase 57G named-asset and project-cohort registries"
+local_implications:
+  - "Treat every registry row as identity and lineage evidence; do not infer reliability, adoption, yield, readiness, output, implementation, or closure."
+evidence_gap_ids:
+  - "gap-015"
+  - "gap-016"
+claim_scope: "Specific Source Update"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-08-03
+editorial_notes: "Published under the Phase 57G identity-and-lineage registry contract."
+---
+
+## Phase 57G registry panel
+
+The 197 memberships resolve to 178 unique normalized station keys; each key preserves its separate train-access, PIDS, and amenity memberships so later revisions can add or close rows without rewriting the historical baseline.
+
+## Evidence stage and denominator
+
+**Named-asset registry.** 178 unique normalized station keys derived from 197 source memberships, with no assumed device-level identity.
+
+Structured registry: `phase-57g-amtrak-named-station-registry.json`.
+
+## Evidence boundaries
+
+- Name normalization does not prove a current Amtrak station code.
+- Cross-cohort overlap does not establish a shared underlying asset.
+- Revision lineage requires explicit source evidence for every added, removed, renamed, replaced, or retired record.
+
+Exact target artifact acquired: **No**. FTFN submitted no agency contact or FOIA request.
+
+Next action: Acquire a current official station-device register and publish a row-level revision crosswalk.
+
+## Authority boundary
+
+A registry row is an identity, lineage, cohort, stage, or work-breakdown object—not reliability, adoption, yield, readiness, output, implementation, or closure. Historical and current revisions, site and facility, project and subproject, BSL and CAI, feed and glass, container stages, capacity and qualified output, agency assertions and independent acceptance remain separate. No record supports a ranking, composite, readiness score, generalized savings claim, or unsupported causal attribution.

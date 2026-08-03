@@ -1612,6 +1612,7 @@ Primary file:
 - `docs/work-packages/phase-57d-persistent-service-quality-compatible-time-series-replication.md` for the twenty reviewed panels, twelve Published decisions, eight preserved In Review holds, seven new Tier 1 sources, compatible Amtrak service series, Hanford monthly material-flow series, revision, threshold, archive, validation, owner-only deployment, and Phase 57E handoff contracts
 - `docs/work-packages/phase-57e-asset-reliability-cohort-adoption-accepted-output-closure.md` for the twenty-four reviewed records, fifteen Published decisions, nine In Review holds, all eight Phase 57D holds preserved, one new material-balance hold, seven new Tier 1 sources, Amtrak asset-quality reconciliation, Montana acceptance controls, Hanford accepted-output closure, independent GAO governance closure, archive, validation, owner-only deployment, and Phase 57F handoff contracts
 - `docs/work-packages/phase-57f-measured-reliability-observed-adoption-full-output-reconciliation.md` for the twenty-five reviewed records, sixteen Published decisions, nine preserved In Review holds, no new hold, seven new Tier 1 sources, Amtrak historical-denominator reconciliation, Montana privacy-safe adoption measurement contracts, Hanford stage and specification reconciliation, NNSA qualified-output and exact GAO baseline-state reconciliation, archive, validation, owner-only deployment, and Phase 57G handoff contracts
+- `docs/work-packages/phase-57g-named-asset-project-cohort-registry-expansion.md` for the twenty-nine reviewed records, twenty Published registry decisions, nine preserved In Review holds, no new hold, nine new Tier 1 sources, four structured registries, Amtrak Appendix B station membership normalization, Montana privacy-safe project cohorts, Hanford lifecycle-stage identities, NNSA work-breakdown identities, archive, validation, owner-only deployment state, and Phase 57H handoff contracts
 
 Update when:
 
@@ -1656,6 +1657,7 @@ Update when:
 - the Phase 57D compatible service series, monthly material-flow panels, preserved holds, archive, deployment receipt, or Phase 57E priorities change,
 - the Phase 57E asset-quality reconciliations, acceptance controls, accepted-output records, independent GAO closures, preserved holds, archive, deployment receipt, or Phase 57F priorities change,
 - the Phase 57F historical-denominator, adoption-measurement, material-stage, qualified-output, or exact GAO-state reconciliations, preserved holds, archive, deployment receipt, or Phase 57G priorities change,
+- the Phase 57G station-membership, project-cohort, lifecycle-stage, work-breakdown, privacy, provenance, preserved-hold, archive, deployment receipt, or Phase 57H priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

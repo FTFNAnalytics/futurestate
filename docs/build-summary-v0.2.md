@@ -304,6 +304,8 @@ Phase 57E adds twenty-four asset-reliability, cohort-adoption, accepted-output, 
 
 Phase 57F adds twenty-five measured-reliability, observed-adoption, material-stage, and qualified-output records. Four Amtrak historical-denominator reconciliations, four Montana LEO measurement contracts, four Hanford stage reconciliations, and four NNSA output-and-baseline-state reconciliations publish; all nine Phase 57E operating-outcome holds remain In Review and no new hold is added. Seven new Tier 1 sources and seventeen carried official sources support Research Watch 036, two ledgers, one collection, one public update, and a twenty-eight-file archive. The verified candidate is now 2,218 pages, 706 sources, 612 signals, 496 Published, 116 In Review, 60 updates, forty-four briefings, forty-one collections, 728 research documents, 672 research export records, and 485 current Published-support sources. The evidence anchors Amtrak's 120 / 96 / 93 / 117 PIDS lineage, Montana's ten-year LEO reporting contract, Hanford's 19 / 34 / 66 / approximately-30 stage ledger, and NNSA's first-unit versus current R&D-only capability state. GAO-23-104661 remains Open with a December 2026 estimate forecast; the inherited one Closed / twenty-one Partially Closed / two Open entity ledger does not change. Local content commit `2071278ff7244c6cef3bb6428d2913209bc0d963` produced exact private runtime commit `63921ba8da76c7496a974bb572dbdd2436ecabfe`, deployed as owner-only Sites version 58 in `appgdep_6a7105d5cea48191aae1577dec4deff4`.
 
+Phase 57G adds twenty-nine named-asset and project-cohort registry records. Five Amtrak, five Montana, five Hanford, and five NNSA identity-and-lineage panels publish; all nine Phase 57F operating-outcome holds remain In Review and no new hold is added. Nine new Tier 1 sources and twenty-seven carried official sources support four structured registries, Research Watch 037, one collection, one public update, and a thirty-two-file archive. The verified candidate is now 2,287 pages, 715 sources, 641 signals, 516 Published, 125 In Review, 61 updates, forty-five briefings, forty-two collections, 757 research documents, 693 research export records, and 495 current Published-support sources. The evidence preserves 197 Amtrak Appendix B memberships and 178 normalized station keys; nineteen Montana subgrantees, thirty-two projects, 68,315 BSL rows and 183 CAI rows at privacy-safe project granularity; fourteen Hanford lifecycle nodes and nine bounded observations with zero public batch or container IDs; and eighteen distinct NNSA work-breakdown objects. The one Closed / twenty-one Partially Closed / two Open entity ledger does not change. Owner-only deployment is pending the Phase 57G content commit.
+
 Verified Phase 56W results:
 
 - 1,798 generated site pages,
@@ -409,11 +411,22 @@ Verified Phase 57F results:
 - the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
 - content references, source health, candidate validation, Astro diagnostics, the 2,218-page build, Phase 57F assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the twenty-eight-file archive pass.
 
+Verified Phase 57G results:
+
+- twenty Published registry records and nine preserved In Review holds with a five / five / five / five Amtrak, Montana, Hanford, and NNSA Published split;
+- nine new Tier 1 source profiles, twenty-seven carried official sources, four structured registries, Research Watch 037, one collection, one update, and a thirty-two-file archive;
+- all nine Phase 57F holds preserved exactly once with no new hold;
+- 197 Amtrak historical memberships resolving to 178 normalized station keys; nineteen Montana subgrantees, thirty-two projects, 68,315 BSL rows, 183 CAI rows, and exact proposed funding totals; fourteen Hanford lifecycle stages and nine bounded observations; and eighteen NNSA work-breakdown objects;
+- zero public Hanford batch IDs, zero public Hanford container IDs, zero individual Montana BSL identifiers, and zero individual CAI details in public registry output;
+- zero exact targets, triggers, directive-scope changes, implementation changes, closure changes, agency contacts, and FOIA requests;
+- the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
+- content references, source health, Astro diagnostics, the 2,287-page build, Phase 57G assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the thirty-two-file archive pass.
+
 The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
-The local release work is preserved on `codex/phase51-content`. Phase 57F is complete, validated, and owner-only deployed. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
+The local release work is preserved on `codex/phase51-content`. Phase 57G is complete and validated; the owner-only deployment is pending the Phase 57G content commit. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
 The current hosting checkpoint is owner-only Sites version 58, serving the verified Phase 57F package from exact private runtime commit `63921ba8da76c7496a974bb572dbdd2436ecabfe` in deployment `appgdep_6a7105d5cea48191aae1577dec4deff4`. The custom policy allows only the owner, no groups, no editors, and zero external visitors. Deployment status, source provenance, the 3,121-file runtime archive, and access passed; visual route QA was not requested for Phase 57F. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
@@ -421,7 +434,8 @@ The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-2
 
 ## Known Limitations
 
-- One hundred and sixteen signals remain `In Review`; the nine preserved Phase 57F holds keep unaccepted Amtrak closeout and named-asset reliability, undisclosed Louisiana and Montana adoption results, the complete Hanford monthly mass balance, recurring qualified NNSA output, final capacity, and the exact GAO-23-104661 enterprise baseline outside the Published layer. Four hundred and ninety-six bounded signals are Published.
+- One hundred and twenty-five signals remain `In Review`; the nine preserved Phase 57G holds keep unaccepted Amtrak closeout and named-asset reliability, undisclosed Louisiana and Montana adoption results, the complete Hanford monthly mass balance, recurring qualified NNSA output, final capacity, and the exact GAO-23-104661 enterprise baseline outside the Published layer. Five hundred and sixteen bounded signals are Published.
+- Phase 57G registry rows are identity and lineage records, not operating outcomes. Amtrak names are not device IDs; Montana public output excludes individual BSL and CAI details and leaves raw codes untranslated; Hanford records zero public batch and container IDs and prohibits synthetic mass conversion; NNSA site, facility, project, subproject, strategy, capacity, qualification, and GAO-baseline objects remain distinct.
 - Seven briefings and all five local-system profiles remain prelaunch or research material. The thirty-four Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
@@ -510,6 +524,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-arc
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug repeat-measurement-accepted-operation-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug fixed-cohort-completion-realized-outcomes-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug measured-reliability-observed-adoption-full-output-reconciliation-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug named-asset-project-cohort-registry-expansion-2026
 npm.cmd run check
 npm.cmd run build
 npm.cmd run verify:phase56o
@@ -523,7 +538,8 @@ npm.cmd run verify:phase56y
 npm.cmd run verify:phase56z
 npm.cmd run verify:phase57a
 npm.cmd run verify:phase57f
+npm.cmd run verify:phase57g
 npm.cmd run verify:release
 ```
 
-Expected output: 2,218 generated site pages, the prior verified research archives plus the Phase 57F twenty-eight-file archive, sixteen Published Phase 57F records and nine In Review holds, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57F and v0.2 release assertions.
+Expected output: 2,287 generated site pages, the prior verified research archives plus the Phase 57G thirty-two-file archive, twenty Published Phase 57G records and nine In Review holds, four structured Phase 57G registries, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57G and v0.2 release assertions.

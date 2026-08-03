@@ -366,7 +366,27 @@
     "signal-57f-nnsa-current-r-and-d-capability-state",
     "signal-57f-nnsa-first-unit-current-capability-crosswalk",
     "signal-57f-nnsa-two-site-capacity-target-boundary",
-    "signal-57f-nnsa-gao-baseline-status-reconciliation"
+    "signal-57f-nnsa-gao-baseline-status-reconciliation",
+    "signal-57g-amtrak-appendix-b-membership-registry",
+    "signal-57g-amtrak-pids-120-station-status-registry",
+    "signal-57g-amtrak-train-access-30-station-status-registry",
+    "signal-57g-amtrak-access-amenity-47-station-registry",
+    "signal-57g-amtrak-cross-cohort-identity-and-revision-contract",
+    "signal-57g-montana-nineteen-subgrantee-identity-registry",
+    "signal-57g-montana-thirty-two-deployment-project-registry",
+    "signal-57g-montana-68315-bsl-project-denominator",
+    "signal-57g-montana-183-cai-project-denominator",
+    "signal-57g-montana-funding-and-reporting-contract-join",
+    "signal-57g-hanford-fourteen-stage-dflaw-registry",
+    "signal-57g-hanford-tscr-ap106-lab-feed-crosswalk",
+    "signal-57g-hanford-melter-container-handling-registry",
+    "signal-57g-hanford-nine-observation-stage-ledger",
+    "signal-57g-hanford-null-identity-and-nonconversion-contract",
+    "signal-57g-nnsa-two-site-site-facility-registry",
+    "signal-57g-nnsa-lap4-work-breakdown-registry",
+    "signal-57g-nnsa-srppf-work-breakdown-registry",
+    "signal-57g-nnsa-capacity-qualification-acceptance-crosswalk",
+    "signal-57g-nnsa-gao-baseline-work-breakdown-crosswalk"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -592,7 +612,16 @@
     "source-57f-hanford-wtp-pmm-february-2026",
     "source-57f-doe-hanford-100k-gallons-may-2026",
     "source-57f-nnsa-pit-production-current",
-    "source-57f-nnsa-stockpile-current"
+    "source-57f-nnsa-stockpile-current",
+    "source-57g-montana-bead-final-proposal-january-2026",
+    "source-57g-montana-deployment-projects-csv",
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-subgrantees-csv",
+    "source-57g-montana-cai-csv",
+    "source-57g-hanford-dflaw-process-animation",
+    "source-57g-hanford-ap106-feed-staging",
+    "source-57g-nnsa-lap4-30-base-construction",
+    "source-57g-nnsa-fy2026-weapons-activities"
   ],
   "organization_ids": [
     "org-executive-office-president",
@@ -634,7 +663,8 @@
     "briefing-research-watch-033-service-reliability-adoption-recurring-output-validation",
     "briefing-research-watch-034-persistent-service-quality-compatible-time-series-replication",
     "briefing-research-watch-035-asset-reliability-cohort-adoption-accepted-output-closure",
-    "briefing-research-watch-036-measured-reliability-observed-adoption-full-output-reconciliation"
+    "briefing-research-watch-036-measured-reliability-observed-adoption-full-output-reconciliation",
+    "briefing-research-watch-037-named-asset-project-cohort-registry-expansion"
   ],
   "dependency_map_ids": [
     "dependency-map-post-quantum-standards-are-not-migration",
@@ -674,7 +704,8 @@
     "research-collection-service-reliability-adoption-recurring-output-validation-2026",
     "research-collection-persistent-service-quality-compatible-time-series-replication-2026",
     "research-collection-asset-reliability-cohort-adoption-accepted-output-closure-2026",
-    "research-collection-measured-reliability-observed-adoption-full-output-reconciliation-2026"
+    "research-collection-measured-reliability-observed-adoption-full-output-reconciliation-2026",
+    "research-collection-named-asset-project-cohort-registry-expansion-2026"
   ],
   "evidence_gap_ids": [
     "gap-009",
@@ -866,6 +897,11 @@
       "stage": "Phase 57F measured reliability, observed adoption, and full output reconciliation panels",
       "current_state": "Sixteen Published historical-denominator, measurement-contract, material-stage, or official-state reconciliations and nine preserved operating-outcome holds.",
       "boundary": "Historical completion is not current reliability, reporting schema is not adoption, cumulative or nominal values are not a mass balance, and a first unit, target, or forecast is not recurring accepted output or closure."
+    },
+    {
+      "stage": "Phase 57G named-asset and project-cohort registry panels",
+      "current_state": "Twenty Published identity-and-lineage records, four structured registries, and nine preserved operating-outcome holds.",
+      "boundary": "Registry identity is not reliability, adoption, material balance, readiness, qualified output, implementation, acceptance, or closure."
     }
   ],
   "evidence_limits": [
@@ -921,7 +957,8 @@
     "Phase 57C prohibits denominator-free reliability or adoption claims, snapshot-to-rate inference, project-to-program inflation, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57D prohibits denominator-free persistence, silent revision repair, threshold-to-exact conversion, inventory-to-reliability inflation, feed-to-accepted-output collapse, cross-system rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57E prohibits cross-report count merging, control-to-outcome inflation, stage-to-acceptance collapse, recommendation substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
-    "Phase 57F prohibits historical-to-current inflation, control-to-outcome promotion, cross-stage material multiplication, forecast-to-completion promotion, recommendation substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
+    "Phase 57F prohibits historical-to-current inflation, control-to-outcome promotion, cross-stage material multiplication, forecast-to-completion promotion, recommendation substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
+    "Phase 57G prohibits synthetic identity joins, historical-to-current promotion, location-detail exposure, raw-code guessing, cross-stage conversion, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
@@ -980,6 +1017,7 @@
     "Compatible uptime, use, adoption, monthly quality, rejects, rework, downtime, acceptance, disposal, compliance, recurring qualified output, complete program baselines, and realized outcomes under the same fixed-cohort contract.",
     "Named-asset service quality, cohort adoption and retention, complete monthly material balances, qualified site-period output, GAO-sufficient program baselines, and independently accepted outcomes.",
     "Named-asset reliability, privacy-safe cohort adoption and retention, complete monthly material balances, qualified site-period output, and exact independent baseline sufficiency.",
-    "Current asset-period reliability, privacy-safe cohort adoption and retention, complete monthly material balances, site-period qualified output, and exact independent baseline sufficiency."
+    "Current asset-period reliability, privacy-safe cohort adoption and retention, complete monthly material balances, site-period qualified output, and exact independent baseline sufficiency.",
+    "Compatible current asset, project-quarter, batch-container, site-period output, and exact independent-baseline observations joined to stable registry identities."
   ]
 }
