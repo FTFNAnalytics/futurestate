@@ -182,7 +182,7 @@ What is now stable:
 - Phase 57F reviews twenty-five measured-reliability, observed-adoption, material-stage, and qualified-output records. Sixteen publish and nine remain In Review; seven new Tier 1 sources and seventeen carried official sources support the batch, all nine Phase 57E holds remain explicit, no new hold is added, and zero exact targets, triggers, scope, implementation, closure, agency-contact, or FOIA changes are recorded.
 - The verified Phase 57F contract is 2,218 pages, 706 sources, 612 signals, 496 Published signals, 116 In Review signals, 485 current Published-support sources, forty-four briefings, forty-one research collections, 728 research documents, 60 updates, 672 research export records, and a twenty-eight-file archive. Local content commit `2071278ff7244c6cef3bb6428d2913209bc0d963` maps to exact private runtime commit `63921ba8da76c7496a974bb572dbdd2436ecabfe`, deployed as owner-only Sites version 58 in `appgdep_6a7105d5cea48191aae1577dec4deff4` with one owner, no groups, no editors, and zero external visitors.
 - Phase 57G reviews twenty-nine named-asset and project-cohort registry records. Twenty publish and nine remain In Review; nine new Tier 1 sources and twenty-seven carried official sources support four structured registries, all nine Phase 57F holds remain explicit, no new hold is added, and zero exact targets, triggers, scope, implementation, closure, agency-contact, or FOIA changes are recorded.
-- The verified Phase 57G contract is 2,287 pages, 715 sources, 641 signals, 516 Published signals, 125 In Review signals, 495 current Published-support sources, forty-five briefings, forty-two research collections, 757 research documents, 61 updates, 693 research export records, and a thirty-two-file archive. Owner-only deployment is pending the Phase 57G content commit; Sites version 58 continues to serve the prior Phase 57F checkpoint until then.
+- The verified Phase 57G contract is 2,287 pages, 715 sources, 641 signals, 516 Published signals, 125 In Review signals, 495 current Published-support sources, forty-five briefings, forty-two research collections, 757 research documents, 61 updates, 693 research export records, and a thirty-two-file archive. Local content commit `c4410e56f5dd8e569deee100241e683fb3aaf937` maps to exact private runtime commit `aa7a53d4e60b59120a641620fcf40c7a1704ec24`, deployed as owner-only Sites version 59 in `appgdep_6a71116f01f48191b22ec5f4709f8409` with one owner, no groups, no editors, and zero external visitors.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
@@ -221,7 +221,7 @@ What is now stable:
 
 What is still prelaunch scaffolding:
 
-- Four hundred and ninety-six signal records are `Published`.
+- Five hundred and sixteen signal records are `Published`.
 - One hundred and twenty-five signal records are still `In Review`; no Draft Sample remains. Phase 57G preserves two measured-reliability, three observed-adoption, one complete mass-balance, and three qualified-output-or-baseline holds, explicitly preserving all nine Phase 57F holds and adding no new hold.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
@@ -238,19 +238,19 @@ FTFN should continue with Phase 57H registry revision, provenance, and compatibl
 
 Current seed content includes:
 
-- 612 signal records,
-- 706 source records,
+- 641 signal records,
+- 715 source records,
 - 17 topic records,
 - 5 local system profiles,
 - 19 organization records,
 - 5 technology records,
-- 44 briefings: 37 Published and 7 In Review,
+- 45 briefings: 38 Published and 7 In Review,
 - 16 evidence gap records,
 - current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 57G reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 41 research collections with 728 document records,
+- 42 research collections with 757 document records,
 - 15 reader pathways across 19 existing Atlas surfaces,
-- 60 public update-log entries.
+- 61 public update-log entries.
 
 Four hundred and ninety-six official-source-backed signals are now `Published`.
 
@@ -528,10 +528,10 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 57G named-asset and project-cohort registry expansion; complete and validated, with owner-only deployment pending the content commit.
+Phase 57G named-asset and project-cohort registry expansion; complete, validated, and owner-only deployed.
 
 Current release checkpoint:
-v0.1.1 remains the frozen 102-source / 18-signal / 182-page checkpoint; the active local development candidate is Phase 57G, and the hosted non-public checkpoint remains owner-only Sites version 58 on the prior Phase 57F runtime commit until the Phase 57G refresh is deployed.
+v0.1.1 remains the frozen 102-source / 18-signal / 182-page checkpoint; the active local development candidate is Phase 57G, and the hosted non-public checkpoint is owner-only Sites version 59 on exact Phase 57G runtime commit `aa7a53d4e60b59120a641620fcf40c7a1704ec24`.
 
 Current development state:
 v0.2 Phase 57G candidate: package 0.2.0-dev, 715 public sources, 150 first-pass-triaged private candidates, 641 signals, 17 topics, 61 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 2,287 generated site pages, 516 Published signals, 38 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 42 research collections, 757 research documents, four structured Phase 57G registries, all prior verified archives plus the Phase 57G 32-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 494 Manual Review and 221 Probe Ready records.

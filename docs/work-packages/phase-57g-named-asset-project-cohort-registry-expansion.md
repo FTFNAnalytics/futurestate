@@ -2,7 +2,7 @@
 
 Date: 2026-08-03
 
-Status: complete and validated; owner-only deployment pending
+Status: complete, validated, and owner-only deployed
 
 ## Goal
 
@@ -103,4 +103,4 @@ Build a registry-revision, provenance, and compatible-observation join matrix wi
 
 ## Deployment receipt
 
-Owner-only deployment is pending the Phase 57G content commit. Public access, Hostinger DNS, custom-domain attachment, package freeze, and the public GitHub remote remain unchanged.
+Local content commit `c4410e56f5dd8e569deee100241e683fb3aaf937` maps to exact private runtime commit `aa7a53d4e60b59120a641620fcf40c7a1704ec24`. The 3,223-file runtime archive was saved as Sites version 59 and deployed successfully in `appgdep_6a71116f01f48191b22ec5f4709f8409`. Post-deploy checks confirmed the exact source provenance, runtime archive, successful deployment, and custom owner-only access with one owner, no groups, no editors, and zero external visitors. Visual route QA was not requested for Phase 57G. Public access, Hostinger DNS, custom-domain attachment, package freeze, and the public GitHub remote remain unchanged.
