@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 57J executes four historical and review queues with visible rejection taxonomies while preserving nine operating-outcome holds.",
+  "summary": "A comparison and inference protocol: Phase 57K classifies four complete longitudinal matrices and nine reopening contracts while preserving every operating-outcome hold.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -888,7 +888,27 @@
     "signal-57j-nnsa-30-agency-present-30-not-used-cells",
     "signal-57j-nnsa-12-independent-source-cells-separated",
     "signal-57j-nnsa-10-bounded-diffs-linked-to-classification-queue",
-    "signal-57j-nnsa-zero-outcome-capability-implementation-closure-promotions"
+    "signal-57j-nnsa-zero-outcome-capability-implementation-closure-promotions",
+    "signal-57k-amtrak-356-snapshot-presence-cells",
+    "signal-57k-amtrak-178-longitudinal-transition-classifications",
+    "signal-57k-amtrak-16-name-lineage-rows-retained",
+    "signal-57k-amtrak-five-unresolved-identities-linked-to-trigger",
+    "signal-57k-amtrak-zero-structural-or-outcome-transitions",
+    "signal-57k-montana-416-project-field-compatibility-cells",
+    "signal-57k-montana-352-schema-32-dictionary-32-quarter-blockers",
+    "signal-57k-montana-224-envelope-requirement-checks-unmet",
+    "signal-57k-montana-30-terrestrial-two-leo-boundaries-retained",
+    "signal-57k-montana-zero-compatible-cells-or-completed-quarters",
+    "signal-57k-hanford-126-observation-transition-applicability-cells",
+    "signal-57k-hanford-stage-candidate-and-not-applicable-states",
+    "signal-57k-hanford-70-transition-requirement-checks-unmet",
+    "signal-57k-hanford-zero-custody-links-after-applicability-review",
+    "signal-57k-hanford-zero-complete-material-balances",
+    "signal-57k-nnsa-54-object-adjacent-version-transitions",
+    "signal-57k-nnsa-648-transition-dimension-classifications",
+    "signal-57k-nnsa-authority-boundaries-retained-across-transitions",
+    "signal-57k-nnsa-ten-bounded-diffs-retained-in-transition-panel",
+    "signal-57k-nnsa-zero-outcome-capability-implementation-closure-transitions"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -1205,6 +1225,12 @@
       "label": "Four executed review queues; twenty Published controls; visible rejection taxonomies; nine holds",
       "node_type": "Signal",
       "note": "Historical decisions and rejected records become auditable without manufacturing missing values or operating states."
+    },
+    {
+      "id": "node-phase57k-transition-matrices",
+      "label": "Four longitudinal matrices; twenty Published controls; nine reopening contracts; zero triggers",
+      "node_type": "Signal",
+      "note": "Transition and trigger classifications become machine-readable without manufacturing an operating event."
     }
   ],
   "links": [
@@ -1998,6 +2024,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Backfill and taxonomy completion do not establish operating outcomes or causation."
+    },
+    {
+      "from": "node-phase57k-transition-matrices",
+      "to": "node-phase57j-review-queue-execution",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57K turns complete Phase 57J decisions into bounded longitudinal cells and contracts."
+    },
+    {
+      "from": "node-phase57k-transition-matrices",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Identity, schema, privacy, compatibility, custody, object-scope, period, and denominator boundaries remain explicit."
+    },
+    {
+      "from": "node-phase57k-transition-matrices",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "A classified transition or defined trigger does not establish an operating outcome or causation."
     }
   ],
   "what_this_map_supports": [
@@ -2051,7 +2098,8 @@
     "Four Phase 57G identity-and-lineage registries, twenty bounded Published panels, and nine preserved operating-outcome holds.",
     "Four Phase 57H versioned provenance matrices, twenty bounded Published panels, and nine preserved operating-outcome holds.",
     "Four Phase 57I change-detection and bounded-ingestion rails, twenty Published control panels, and nine preserved operating-outcome holds.",
-    "Four Phase 57J executed review rails, twenty Published control panels, explicit rejection taxonomies, and nine preserved operating-outcome holds."
+    "Four Phase 57J executed review rails, twenty Published control panels, explicit rejection taxonomies, and nine preserved operating-outcome holds.",
+    "Four Phase 57K longitudinal matrices, twenty Published transition controls, nine machine-readable reopening contracts, and nine preserved operating-outcome holds."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -2176,6 +2224,7 @@
     "Compatible current asset, project-quarter, batch-container, site-period qualified-output, and exact independent-baseline observations.",
     "Compatible source-versioned observations with stable identity, definition, period, unit, method, authority, quality, acceptance, and disposition.",
     "Compatible reviewed observations with stable identity, schema, definition, period, stage, measure, operator, method, unit, authority, privacy, quality, acceptance, and disposition.",
-    "Source-explicit records that clear named rejection classes without changing identity, denominator, object scope, authority, privacy, acceptance, capability, implementation, or closure attribution."
+    "Source-explicit records that clear named rejection classes without changing identity, denominator, object scope, authority, privacy, acceptance, capability, implementation, or closure attribution.",
+    "Source-explicit records that fully satisfy a named reopening contract without changing identity, denominator, object scope, authority, privacy, acceptance, capability, implementation, or closure attribution."
   ]
 }

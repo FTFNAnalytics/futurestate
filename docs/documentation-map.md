@@ -1616,6 +1616,7 @@ Primary file:
 - `docs/work-packages/phase-57h-registry-revision-provenance-compatible-observation-joins.md` for the twenty-nine reviewed records, twenty Published provenance decisions, nine preserved In Review holds, no new hold, thirty-six carried Tier 1 sources, four structured matrices, Amtrak alias and revision state, Montana field and project-version provenance, Hanford authority and observation compatibility, NNSA FY2026-to-FY2027-to-GAO object history, archive, validation, owner-only deployment state, and Phase 57I handoff contracts
 - `docs/work-packages/phase-57i-versioned-registry-change-detection-bounded-observation-ingestion.md` for the twenty-nine reviewed records, twenty Published change-detection and ingestion-control decisions, nine preserved In Review holds, no new hold, thirty-six carried Tier 1 sources, four structured rails, Amtrak source-diff and station-code queues, Montana field migrations and project-quarter envelopes, Hanford bounded observation validation, NNSA object-level source diffs, archive, validation, owner-only deployment state, and Phase 57J handoff contracts
 - `docs/work-packages/phase-57j-historical-backfill-rejection-taxonomy-review-queue-execution.md` for the twenty-nine reviewed records, twenty Published historical-backfill and rejection-taxonomy decisions, nine preserved In Review holds, no new hold, thirty-six carried Tier 1 sources, four executed review rails, Amtrak historical identity decisions, Montana migration and envelope rejections, Hanford observation, pair, and transition taxonomies, NNSA object-version dimension classifications, archive, validation, owner-only deployment state, and Phase 57K handoff contracts
+- `docs/work-packages/phase-57k-cross-version-transition-matrices-longitudinal-panels.md` for the twenty-nine reviewed records, twenty Published transition controls, nine preserved In Review holds, four longitudinal matrices, 1,546 bounded matrix cells, 294 requirement checks, nine machine-readable reopening contracts, archive, validation, owner-only deployment state, and Phase 57L handoff contracts
 
 Update when:
 
@@ -1664,6 +1665,7 @@ Update when:
 - the Phase 57H alias, field, authority, observation-compatibility, work-breakdown-version, preserved-hold, archive, deployment receipt, or Phase 57I priorities change,
 - the Phase 57I change-detection, schema-migration, project-envelope, observation-validator, object-diff, preserved-hold, archive, deployment receipt, or Phase 57J priorities change,
 - the Phase 57J historical decisions, migration tests, envelope rejections, observation, pair, transition, object-version classifications, preserved holds, archive, deployment receipt, or Phase 57K priorities change,
+- the Phase 57K transition matrices, requirement checks, reopening contracts, preserved holds, archive, deployment receipt, or Phase 57L priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

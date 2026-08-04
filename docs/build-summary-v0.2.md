@@ -312,6 +312,8 @@ Phase 57I adds twenty-nine versioned change-detection and bounded-observation in
 
 Phase 57J adds twenty-nine historical-backfill, rejection-taxonomy, and review-queue records. Five Amtrak, five Montana, five Hanford, and five NNSA control panels publish; all nine Phase 57I operating-outcome holds remain In Review and no new hold is added. Thirty-six carried Tier 1 sources support four executed structured rails, Research Watch 040, one collection, one public update, and a thirty-two-file archive. The verified release contract is 2,467 pages, 715 sources, 728 signals, 576 Published, 152 In Review, 64 updates, forty-eight briefings, forty-five collections, 844 research documents, 756 research export records, and 495 current Published-support sources. The evidence classifies all 178 Amtrak historical identities and sixteen current-name reviews; rejects thirteen Montana migration tests and thirty-two project envelopes with explicit reasons; normalizes nine Hanford observations while rejecting thirty-six pair and fourteen transition reviews; and classifies seventy-two NNSA object-version cells across twelve dimensions and 864 bounded states. The one Closed / twenty-one Partially Closed / two Open entity ledger does not change. Local content commit `072da57ec806756b6ec60a7c9f32fdd59531b09c` produced exact private runtime commit `e106dc9c7a9d14276ced1aee755b2fa79ca0d930`, deployed as owner-only Sites version 62 in `appgdep_6a712967b444819194beb29dfe23132c`.
 
+Phase 57K adds twenty-nine cross-version transition, longitudinal-panel, and reopening-contract records. Five Amtrak, five Montana, five Hanford, and five NNSA transition controls publish; all nine Phase 57J operating-outcome holds remain In Review, each receives one machine-readable reopening contract, and no new hold is added. Thirty-six carried Tier 1 sources support four longitudinal matrices, nine contracts, Research Watch 041, one collection, one public update, and a thirty-two-file archive. The verified release contract is 2,527 pages, 715 sources, 757 signals, 596 Published, 161 In Review, 65 updates, forty-nine briefings, forty-six collections, 873 research documents, 777 research export records, and 495 current Published-support sources. The evidence classifies 356 Amtrak identity-snapshot cells and 178 transitions; 416 Montana project-field cells and 224 envelope requirements; 126 Hanford applicability cells and seventy transition requirements; and fifty-four NNSA object transitions across twelve dimensions and 648 bounded cells. All nine contracts remain not fired, prohibit automated publication, and require human review. The one Closed / twenty-one Partially Closed / two Open entity ledger does not change. Owner-only deployment is pending; Sites version 62 remains the hosted Phase 57J checkpoint.
+
 Verified Phase 56W results:
 
 - 1,798 generated site pages,
@@ -467,20 +469,34 @@ Verified Phase 57J results:
 - the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
 - content references, source health, Astro diagnostics, the 2,467-page build, Phase 57J assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the thirty-two-file archive pass.
 
+Verified Phase 57K results:
+
+- twenty Published transition and longitudinal controls and nine preserved In Review holds with a five / five / five / five Amtrak, Montana, Hanford, and NNSA Published split;
+- thirty-six carried Tier 1 source profiles, four longitudinal matrices, nine reopening contracts, Research Watch 041, one collection, one update, and a thirty-two-file archive;
+- all nine Phase 57J holds preserved exactly once with no new hold;
+- 356 Amtrak identity-snapshot cells, 178 transition rows, eleven bounded current observations, 167 nonobservations with no deletion inference, five unresolved identities, and zero structural or operating promotions;
+- 416 Montana project-field cells, 352 schema blockers, thirty-two dictionary blockers, thirty-two completed-quarter blockers, 224 unmet envelope checks, and zero accepted quarters;
+- 126 Hanford observation-transition applicability cells, eight from-stage candidates, twelve to-stage candidates, 106 stage-not-applicable cells, seventy unmet transition checks, and zero batch, container, custody, numeric, or material-balance joins;
+- fifty-four NNSA object transitions, twelve dimensions, 648 bounded transition cells, eighteen authority-boundary transitions, ten retained diffs, and zero outcome, capability, implementation, or closure promotions;
+- nine unique reopening contracts, sixty required fields, zero trigger events, zero automated publications, and mandatory human review;
+- zero exact targets, directive-scope changes, implementation changes, closure changes, agency contacts, and FOIA requests;
+- the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
+- content references, source health, Astro diagnostics, the 2,527-page build, Phase 57K assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the thirty-two-file archive pass.
+
 The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
-The local release work is preserved on `codex/phase51-content`. Phase 57J is complete, release-verified, and owner-only deployed. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
+The local release work is preserved on `codex/phase51-content`. Phase 57K is complete and release-verified locally; owner-only deployment is pending. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
-The current hosting checkpoint is owner-only Sites version 62, serving the verified Phase 57J package from exact private runtime commit `e106dc9c7a9d14276ced1aee755b2fa79ca0d930` in deployment `appgdep_6a712967b444819194beb29dfe23132c`. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
+The current hosting checkpoint is owner-only Sites version 62, serving the verified Phase 57J package from exact private runtime commit `e106dc9c7a9d14276ced1aee755b2fa79ca0d930` in deployment `appgdep_6a712967b444819194beb29dfe23132c` until the Phase 57K deployment completes. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
 The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-22 to remain outside Cloudflare, with Google Workspace mail records active. Before any nameserver or DNS change, inventory and preserve every mail and verification record. Hosting-provider selection remains an explicit Phase 55 decision: Cloudflare Pages is the documented default, but another static host may be chosen if avoiding a nameserver migration is more important.
 
 ## Known Limitations
 
-- One hundred and forty-three signals remain `In Review`; the nine preserved Phase 57I holds keep unaccepted Amtrak closeout and named-asset reliability, undisclosed Louisiana and Montana adoption results, the complete Hanford monthly mass balance, recurring qualified NNSA output, final capacity, and the exact GAO-23-104661 enterprise baseline outside the Published layer. Five hundred and fifty-six bounded signals are Published.
-- Phase 57I rails are change-detection and ingestion controls, not operating outcomes. Amtrak codes and structural changes remain unasserted; Montana completed-quarter slots remain empty and privacy-gated; Hanford accepts standalone observations but zero direct numeric joins; NNSA source diffs preserve cost, scope, capacity, qualification, output, completion, capability, implementation, and independent closure as distinct states.
+- One hundred and sixty-one signals remain `In Review`; the nine preserved Phase 57K holds keep unaccepted Amtrak closeout and named-asset reliability, undisclosed Louisiana and Montana adoption results, the complete Hanford material balance, recurring qualified NNSA output, final accepted capacity, and the exact GAO-23-104661 enterprise baseline outside the Published layer. Five hundred and ninety-six bounded signals are Published.
+- Phase 57K matrices and reopening contracts are transition and intake controls, not operating outcomes or readiness scores. Amtrak structural changes remain unasserted; Montana completed-quarter slots remain empty and privacy-gated; Hanford accepts zero custody or material-balance joins; NNSA transitions preserve cost, scope, schedule, capacity, qualification, output, completion, capability, implementation, and independent closure as distinct states; no reopening contract has fired.
 - Seven briefings and all five local-system profiles remain prelaunch or research material. The thirty-eight Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
@@ -570,6 +586,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-arc
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug fixed-cohort-completion-realized-outcomes-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug measured-reliability-observed-adoption-full-output-reconciliation-2026
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug named-asset-project-cohort-registry-expansion-2026
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-research-archive.ps1 -CollectionSlug cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026
 npm.cmd run check
 npm.cmd run build
 npm.cmd run verify:phase56o
@@ -587,7 +604,8 @@ npm.cmd run verify:phase57g
 npm.cmd run verify:phase57h
 npm.cmd run verify:phase57i
 npm.cmd run verify:phase57j
+npm.cmd run verify:phase57k
 npm.cmd run verify:release
 ```
 
-Expected output: 2,467 generated site pages, the prior verified research archives plus the Phase 57J thirty-two-file archive, twenty Published Phase 57J records and nine In Review holds, four executed Phase 57J historical-backfill and rejection-taxonomy rails, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57J and v0.2 release assertions.
+Expected output: 2,527 generated site pages, the prior verified research archives plus the Phase 57K thirty-two-file archive, twenty Published Phase 57K records and nine In Review holds, four longitudinal matrices, nine not-fired reopening contracts, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57K and v0.2 release assertions.
