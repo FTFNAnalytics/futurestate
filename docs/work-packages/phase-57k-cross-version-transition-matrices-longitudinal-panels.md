@@ -2,7 +2,7 @@
 
 Date: 2026-08-03
 
-Status: complete and validated; owner-only deployment pending
+Status: complete and validated; owner-only deployment retry pending on a Sites compatibility migration
 
 ## Goal
 
@@ -99,6 +99,15 @@ Nine contracts cover Amtrak PIDS closeout, Amtrak named-asset reliability, Louis
 
 Build contract-field coverage matrices, first-eligible-record intake queues, and exception-resolution playbooks across the nine reopening contracts. Classify all sixty required contract fields as present, absent, incompatible, authority-mismatched, period-mismatched, privacy-gated, or not yet evaluated; retain source-specific denominators and authority; and define the first eligible record for each rail without scoring readiness or implying that a source exists. Preserve all nine Phase 57K holds until every required field clears and human review approves publication.
 
-## Deployment receipt
+## Hosting checkpoint
 
-Pending owner-only Sites deployment. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
+- Local content commit `54189b4dcc0b720f915a1d70fa1c5548d293ba1b` contains the complete release-validated Phase 57K build.
+- Exact packaged runtime commit `9d8edd4bb3af52c372ca364c2866bc95a67739e8` contains 3,595 files and explicitly disables Node compatibility for the static-assets-only worker.
+- Sites versions 63 through 66 were saved but rejected before publication by the August 4, 2026 host compatibility migration, which continued to inject the retired `nodejs_compat` value after the archive supplied omitted, empty, and explicit negative configurations.
+- A source-only version 67 retry was also non-publishing because the packaged runtime intentionally has no source-build `package.json`.
+- The existing owner-only Sites version 62 remains the live Phase 57J checkpoint with one owner, no groups, no editors, and zero external visitors. No public-access or DNS setting changed.
+- Retry the Phase 57K owner-only deployment after the host migration clears. This hosting retry does not block Phase 57L content expansion.
+
+## Deployment checkpoint
+
+The exact Phase 57K package is saved but not live. The current owner-only site remains on the last successful Phase 57J deployment while the Sites compatibility migration is resolved. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.

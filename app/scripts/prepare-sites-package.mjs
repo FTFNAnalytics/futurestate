@@ -21,7 +21,12 @@ if (typeof hosting.project_id !== "string" || hosting.project_id.length === 0) {
   throw new Error("app/.openai/hosting.json must contain the Sites project_id.");
 }
 
-await rm(stageRoot, { recursive: true, force: true });
+await rm(stageRoot, {
+  recursive: true,
+  force: true,
+  maxRetries: 5,
+  retryDelay: 200
+});
 await mkdir(clientDir, { recursive: true });
 await mkdir(serverDir, { recursive: true });
 await mkdir(path.join(stageRoot, ".openai"), { recursive: true });
@@ -42,7 +47,7 @@ const wrangler = {
   topLevelName: "ftfn-app",
   name: "ftfn-app",
   compatibility_date: "2026-07-22",
-  compatibility_flags: ["nodejs_compat"],
+  compatibility_flags: ["no_nodejs_compat"],
   main: "index.js",
   no_bundle: true,
   rules: [{ type: "ESModule", globs: ["**/*.js", "**/*.mjs"] }],
