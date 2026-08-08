@@ -2,7 +2,7 @@
 
 Date: 2026-08-08
 
-Status: complete and release-validated; owner-only deployment pending
+Status: complete, release-validated, and owner-only deployed as Sites version 68
 
 ## Goal
 
@@ -122,6 +122,8 @@ Build source-schema adapters, candidate-evidence packet templates, and human-rev
 
 ## Deployment checkpoint
 
-The production renderer and complete release assertions pass at 2,587 pages, 715 sources, 786 signals, 616 Published, 170 In Review, fifty briefings, forty-seven collections, 902 research documents, 798 research export records, and 498 Published-support sources. Owner-only Sites publication is pending. The existing private site remains the safe live checkpoint until the exact Phase 57L package deploys successfully. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
+The production renderer and complete release assertions pass at 2,587 pages, 715 sources, 786 signals, 616 Published, 170 In Review, fifty briefings, forty-seven collections, 902 research documents, 798 research export records, and 498 Published-support sources. Local content commit `886fdc7c0faa2f21e5db40441bd3169aa5deed37` maps to exact private runtime commit `44240958e241895323c4199a61b60be252bcf1f7`, whose verified parent is the prior private source checkpoint `704c33db3897b8ed6be333a8b2825cf8ece84b71`. The 3,688-file runtime archive was saved as Sites version 68 and deployed successfully in `appgdep_6a77b85bb3c08191bda7f79917018300` at `https://ftfn-analytics.jbumstead.chatgpt.site`.
+
+The hosted archive is 156,395,520 bytes with content hash `sha256:0cb9ddba9295fdeca59ae547e0f0faf89c824e3e1722d18b6f93b5bbead2f095`; the local compressed deployment archive was 95,293,681 bytes with SHA-256 `995F4C782D6E5128E40F92A62F2A6188B451A68A9E1C08D0B1A7EF3F1CCCE7FC`. Post-deploy checks confirmed the exact source provenance, successful deployment, and custom owner-only access with one owner, no groups, no editors, and zero external visitors. Visual route QA was not requested. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
 
 The thirty-two-file research archive is 37,915 bytes with SHA-256 `84895884E663D1D0D7BAF588E676447FB062031DE60B064A863137DF7E7B2510`.

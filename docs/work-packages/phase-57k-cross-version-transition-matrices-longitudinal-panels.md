@@ -2,7 +2,7 @@
 
 Date: 2026-08-03
 
-Status: complete and validated; owner-only deployment retry pending on a Sites compatibility migration
+Status: complete and validated; full content included in owner-only Sites version 68
 
 ## Goal
 
@@ -105,9 +105,8 @@ Build contract-field coverage matrices, first-eligible-record intake queues, and
 - Exact packaged runtime commit `9d8edd4bb3af52c372ca364c2866bc95a67739e8` contains 3,595 files and explicitly disables Node compatibility for the static-assets-only worker.
 - Sites versions 63 through 66 were saved but rejected before publication by the August 4, 2026 host compatibility migration, which continued to inject the retired `nodejs_compat` value after the archive supplied omitted, empty, and explicit negative configurations.
 - A source-only version 67 retry was also non-publishing because the packaged runtime intentionally has no source-build `package.json`.
-- The existing owner-only Sites version 62 remains the live Phase 57J checkpoint with one owner, no groups, no editors, and zero external visitors. No public-access or DNS setting changed.
-- Retry the Phase 57K owner-only deployment after the host migration clears. This hosting retry does not block Phase 57L content expansion.
+- The compatibility interruption was cleared by the later Phase 57L runtime. Sites version 68 successfully deployed the complete Phase 57K and Phase 57L content stack with one owner, no groups, no editors, and zero external visitors. No public-access or DNS setting changed.
 
 ## Deployment checkpoint
 
-The exact Phase 57K package is saved but not live. The current owner-only site remains on the last successful Phase 57J deployment while the Sites compatibility migration is resolved. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
+The standalone Phase 57K package remains preserved as a historical checkpoint. Its complete content is live inside the later Phase 57L runtime commit `44240958e241895323c4199a61b60be252bcf1f7`, deployed as owner-only Sites version 68 in `appgdep_6a77b85bb3c08191bda7f79917018300`. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.

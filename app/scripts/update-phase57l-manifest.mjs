@@ -138,6 +138,20 @@ manifest.phase_57l_delta = {
   generated_pages_added: 60,
 };
 
+manifest.private_preview = {
+  ...manifest.private_preview,
+  provider: "OpenAI Sites",
+  url: "https://ftfn-analytics.jbumstead.chatgpt.site",
+  access: "owner-only-custom-policy",
+  current_local_content_commit: "886fdc7c0faa2f21e5db40441bd3169aa5deed37",
+  current_source_commit: "44240958e241895323c4199a61b60be252bcf1f7",
+  current_version_id: "appgprj_6a614e1092d08191bf65779fc35df959~appgver_e161ada41fe0819189c2eabfcabd0ef1",
+  current_version_number: 68,
+  current_deployment_id: "appgdep_6a77b85bb3c08191bda7f79917018300",
+  custom_domain_attached: false,
+  post_deploy_qa: "passed-version-68-deployment-status-source-provenance-runtime-archive-owner-only-access; visual-route-qa-not-requested",
+};
+
 manifest.last_verified = {
   ...manifest.last_verified,
   date: capturedDate,
@@ -152,7 +166,7 @@ manifest.last_verified = {
   static_pages_built: 2587,
   release_assertions: "passed-phase-57l",
   browser_qa: "passed-local-phase-55k; phase-55l-through-phase-57l-visual-qa-not-requested",
-  preview_qa: "pending-phase-57l-owner-only-deployment; phase-57j-owner-only-version-62-custom-access-one-owner-no-groups-no-editors-zero-external-visitors",
+  preview_qa: "passed-phase-57l-version-68-owner-only-custom-access-one-owner-no-groups-no-editors-zero-external-visitors; visual-route-qa-not-requested",
 };
 
 manifest.required_output_files = addUnique(manifest.required_output_files, [
