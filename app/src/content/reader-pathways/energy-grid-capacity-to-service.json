@@ -245,7 +245,17 @@
     "signal-57k-nnsa-648-transition-dimension-classifications",
     "signal-57k-nnsa-authority-boundaries-retained-across-transitions",
     "signal-57k-nnsa-ten-bounded-diffs-retained-in-transition-panel",
-    "signal-57k-nnsa-zero-outcome-capability-implementation-closure-transitions"
+    "signal-57k-nnsa-zero-outcome-capability-implementation-closure-transitions",
+    "signal-57l-hanford-12-contract-fields-classified",
+    "signal-57l-hanford-coverage-state-distribution",
+    "signal-57l-hanford-1-first-eligible-record-queues",
+    "signal-57l-hanford-12-field-resolution-actions",
+    "signal-57l-hanford-zero-eligible-records-or-trigger-events",
+    "signal-57l-nnsa-17-contract-fields-classified",
+    "signal-57l-nnsa-coverage-state-distribution",
+    "signal-57l-nnsa-3-first-eligible-record-queues",
+    "signal-57l-nnsa-17-field-resolution-actions",
+    "signal-57l-nnsa-zero-eligible-records-or-trigger-events"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -426,7 +436,8 @@
     "briefing-research-watch-038-registry-revision-provenance-compatible-observation-joins",
     "briefing-research-watch-039-versioned-registry-change-detection-bounded-observation-ingestion",
     "briefing-research-watch-040-historical-backfill-rejection-taxonomy-review-queue-execution",
-    "briefing-research-watch-041-cross-version-transition-matrices-longitudinal-panels"
+    "briefing-research-watch-041-cross-version-transition-matrices-longitudinal-panels",
+    "briefing-research-watch-042-contract-field-coverage-intake-playbooks"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -470,7 +481,8 @@
     "research-collection-registry-revision-provenance-compatible-observation-joins-2026",
     "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
     "research-collection-historical-backfill-rejection-taxonomy-review-queue-execution-2026",
-    "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026"
+    "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+    "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -673,6 +685,11 @@
       "stage": "Phase 57K cross-version transition matrices and reopening contracts",
       "current_state": "Twenty Published transition controls, four longitudinal matrices, nine not-fired reopening contracts, and nine preserved operating-outcome holds.",
       "boundary": "A classified transition or defined reopening trigger is not evidence that an operating event occurred or that the trigger fired."
+    },
+    {
+      "stage": "Phase 57L contract-field coverage and first-eligible intake",
+      "current_state": "Sixty classified fields, nine intake queues, nine playbooks, sixty actions, zero accepted eligible records, and nine preserved holds.",
+      "boundary": "Coverage is not readiness, a queue definition is not a candidate record, and partial matches cannot fire a trigger."
     }
   ],
   "evidence_limits": [
@@ -730,7 +747,8 @@
     "Phase 57H prohibits silent alias merges, source-version erasure, raw-code guessing, privacy-detail exposure, cross-stage or cross-unit conversion, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57I prohibits silent identity merges, guessed station codes or field mappings, privacy-detail exposure, cross-rail migration, coerced missing fields, synthetic numeric joins, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57J prohibits silent rejection, deletion inference, guessed codes or schemas, privacy-detail exposure, cross-rail migration, coerced missing fields, synthetic custody or numeric joins, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
-    "Phase 57K prohibits deletion inference, schema coercion, privacy-detail exposure, cross-rail migration, synthetic custody or numeric joins, authority substitution, automatic trigger publication, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference."
+    "Phase 57K prohibits deletion inference, schema coercion, privacy-detail exposure, cross-rail migration, synthetic custody or numeric joins, authority substitution, automatic trigger publication, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
+    "Phase 57L prohibits cross-record field assembly, readiness scoring, priority inference, schema coercion, privacy-detail exposure, authority substitution, automatic closure or publication, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -783,6 +801,7 @@
     "Source-versioned compatible observations with stable identity, period, field definition, unit, method, authority, quality, acceptance, and disposition.",
     "Reviewed source-version inserts with stable identity, definition, period, stage, measure, operator, method, unit, authority, privacy, quality, acceptance, and disposition.",
     "Source-explicit records that clear named Phase 57J rejection classes while preserving exact identity, definition, period, stage, method, unit, authority, privacy, acceptance, custody, object scope, and closure attribution.",
-    "Source-explicit records that satisfy a named Phase 57K reopening contract while preserving exact identity, cohort, denominator, definition, period, stage, method, unit, authority, privacy, acceptance, custody, object scope, and closure attribution."
+    "Source-explicit records that satisfy a named Phase 57K reopening contract while preserving exact identity, cohort, denominator, definition, period, stage, method, unit, authority, privacy, acceptance, custody, object scope, and closure attribution.",
+    "One source-explicit candidate package that satisfies every field in a named Phase 57L intake envelope and passes human publication review."
   ]
 }

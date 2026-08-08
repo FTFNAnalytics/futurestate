@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 57K classifies four complete longitudinal matrices and nine reopening contracts while preserving every operating-outcome hold.",
+  "summary": "A comparison and inference protocol: Phase 57L operationalizes all nine reopening contracts at field level while accepting zero complete eligible records and preserving every operating-outcome hold.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -908,7 +908,27 @@
     "signal-57k-nnsa-648-transition-dimension-classifications",
     "signal-57k-nnsa-authority-boundaries-retained-across-transitions",
     "signal-57k-nnsa-ten-bounded-diffs-retained-in-transition-panel",
-    "signal-57k-nnsa-zero-outcome-capability-implementation-closure-transitions"
+    "signal-57k-nnsa-zero-outcome-capability-implementation-closure-transitions",
+    "signal-57l-amtrak-12-contract-fields-classified",
+    "signal-57l-amtrak-coverage-state-distribution",
+    "signal-57l-amtrak-2-first-eligible-record-queues",
+    "signal-57l-amtrak-12-field-resolution-actions",
+    "signal-57l-amtrak-zero-eligible-records-or-trigger-events",
+    "signal-57l-broadband-19-contract-fields-classified",
+    "signal-57l-broadband-coverage-state-distribution",
+    "signal-57l-broadband-3-first-eligible-record-queues",
+    "signal-57l-broadband-19-field-resolution-actions",
+    "signal-57l-broadband-zero-eligible-records-or-trigger-events",
+    "signal-57l-hanford-12-contract-fields-classified",
+    "signal-57l-hanford-coverage-state-distribution",
+    "signal-57l-hanford-1-first-eligible-record-queues",
+    "signal-57l-hanford-12-field-resolution-actions",
+    "signal-57l-hanford-zero-eligible-records-or-trigger-events",
+    "signal-57l-nnsa-17-contract-fields-classified",
+    "signal-57l-nnsa-coverage-state-distribution",
+    "signal-57l-nnsa-3-first-eligible-record-queues",
+    "signal-57l-nnsa-17-field-resolution-actions",
+    "signal-57l-nnsa-zero-eligible-records-or-trigger-events"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -1231,6 +1251,12 @@
       "label": "Four longitudinal matrices; twenty Published controls; nine reopening contracts; zero triggers",
       "node_type": "Signal",
       "note": "Transition and trigger classifications become machine-readable without manufacturing an operating event."
+    },
+    {
+      "id": "node-phase57l-contract-field-intake",
+      "label": "Sixty fields; nine intake queues; sixty playbook actions; zero eligible records",
+      "node_type": "Signal",
+      "note": "Contracts become field-operational without creating readiness scores or firing triggers."
     }
   ],
   "links": [
@@ -2045,6 +2071,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "A classified transition or defined trigger does not establish an operating outcome or causation."
+    },
+    {
+      "from": "node-phase57l-contract-field-intake",
+      "to": "node-phase57k-transition-matrices",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57L operationalizes the nine Phase 57K reopening contracts."
+    },
+    {
+      "from": "node-phase57l-contract-field-intake",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "All fields must align inside one identity, period, schema, privacy, and authority envelope."
+    },
+    {
+      "from": "node-phase57l-contract-field-intake",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Partial coverage and queue definitions do not establish operating outcomes or causation."
     }
   ],
   "what_this_map_supports": [
@@ -2099,7 +2146,8 @@
     "Four Phase 57H versioned provenance matrices, twenty bounded Published panels, and nine preserved operating-outcome holds.",
     "Four Phase 57I change-detection and bounded-ingestion rails, twenty Published control panels, and nine preserved operating-outcome holds.",
     "Four Phase 57J executed review rails, twenty Published control panels, explicit rejection taxonomies, and nine preserved operating-outcome holds.",
-    "Four Phase 57K longitudinal matrices, twenty Published transition controls, nine machine-readable reopening contracts, and nine preserved operating-outcome holds."
+    "Four Phase 57K longitudinal matrices, twenty Published transition controls, nine machine-readable reopening contracts, and nine preserved operating-outcome holds.",
+    "Sixty Phase 57L field classifications, nine first-eligible-record queues, nine exception playbooks, sixty field actions, and nine preserved holds."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -2225,6 +2273,7 @@
     "Compatible source-versioned observations with stable identity, definition, period, unit, method, authority, quality, acceptance, and disposition.",
     "Compatible reviewed observations with stable identity, schema, definition, period, stage, measure, operator, method, unit, authority, privacy, quality, acceptance, and disposition.",
     "Source-explicit records that clear named rejection classes without changing identity, denominator, object scope, authority, privacy, acceptance, capability, implementation, or closure attribution.",
-    "Source-explicit records that fully satisfy a named reopening contract without changing identity, denominator, object scope, authority, privacy, acceptance, capability, implementation, or closure attribution."
+    "Source-explicit records that fully satisfy a named reopening contract without changing identity, denominator, object scope, authority, privacy, acceptance, capability, implementation, or closure attribution.",
+    "One complete contract-eligible evidence package that clears every field without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution."
   ]
 }

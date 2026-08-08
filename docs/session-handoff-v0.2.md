@@ -1,26 +1,26 @@
 # FTFN v0.2 Session Handoff Plan
 
-Date: 2026-08-03
+Date: 2026-08-08
 
 Use this document to restart FTFN in a new Codex session without reconstructing the project from chat history.
 
 ## Handoff Snapshot
 
 ```text
-Latest completed local work: Phase 57K cross-version transition matrices, longitudinal panels, and reopening-trigger registry
+Latest completed local work: Phase 57L contract-field coverage, first-eligible-record intake queues, and exception-resolution playbooks
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 2,527 generated site pages
-Content: 715 sources, 757 signals, 17 topics, 5 local systems, 46 research collections / 873 research documents
-Publication: 596 Published signals, 161 In Review signals, 42 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
-Trust/data: 65 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, four Phase 57K longitudinal matrices, nine reopening contracts, all prior verified research archives plus the Phase 57K 32-file archive
+Build: 2,587 generated site pages
+Content: 715 sources, 786 signals, 17 topics, 5 local systems, 47 research collections / 902 research documents
+Publication: 616 Published signals, 170 In Review signals, 43 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
+Trust/data: 66 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, sixty Phase 57L field classifications, nine intake queues, nine playbooks, sixty field actions, all prior verified research archives plus the Phase 57L 32-file archive
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
 Deployment: Phase 57J owner-only Sites version 62 remains live on exact private runtime commit e106dc9c7a9d14276ced1aee755b2fa79ca0d930 in appgdep_6a712967b444819194beb29dfe23132c; one owner, no groups, no editors, zero external visitors; the Phase 57K owner-only retry is pending on the August 4 Sites compatibility migration
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 494 Manual Review, 221 Probe Ready, zero incomplete endpoint declarations; 14 Strong coverage lanes
-Next content gate: Phase 57L contract-field coverage matrices, first-eligible-record intake queues, and exception-resolution playbooks; exact-artifact checks, the inherited HHS tracker recheck, and remaining dated inserts do not block expansion
+Next content gate: Phase 57M source-schema adapters, candidate-evidence packet templates, and human-review decision tables; the hosting retry, exact-artifact checks, inherited HHS tracker recheck, and remaining dated inserts do not block expansion
 ```
 
 ## Read First
@@ -186,6 +186,8 @@ The approved preview sequence is complete:
 131. Completed and release-validated the Phase 57K content layer: reviewed twenty-nine cross-version transition and reopening-contract records; published twenty and held nine; preserved all nine Phase 57J holds exactly once and added no new hold; reused thirty-six Tier 1 sources; added four longitudinal matrices, nine reopening contracts, Research Watch 041, one collection, one update, and a thirty-two-file archive; verified 2,527 pages, 715 sources, 757 signals, 596 Published, 161 In Review, 65 updates, forty-six collections, 873 research documents, 777 research export records, and 495 current Published-support sources.
 132. Classified 356 Amtrak identity-snapshot cells and 178 transitions; 416 Montana project-field cells and 224 envelope requirements; 126 Hanford applicability cells and seventy transition requirements; and fifty-four NNSA object transitions across twelve dimensions and 648 cells. Created nine unique reopening contracts with sixty required fields, zero fired triggers, no automated publication, and mandatory human review. Phase 57K records zero operating events, structural changes, completed project quarters, custody or material joins, capability promotions, implementation changes, closure changes, agency contacts, or FOIA requests.
 133. Packaged exact Phase 57K runtime commit `9d8edd4bb3af52c372ca364c2866bc95a67739e8` as a 3,595-file Sites archive and saved it through version 66. Owner-only publication was rejected before the live checkpoint changed because the August 4 host migration continued to inject the retired `nodejs_compat` value after omitted, empty, and explicit negative archive configurations; a source-only version 67 retry remained non-publishing because the packaged runtime has no source-build `package.json`. Version 62 remains healthy and owner-only. No public-access or DNS setting changed, and Phase 57L is not blocked.
+134. Completed and release-validated the Phase 57L content layer: reviewed twenty-nine contract-field coverage, intake-queue, and exception-resolution records; published twenty and held nine; preserved all nine Phase 57K holds exactly once and added no new hold; reused thirty-six Tier 1 sources; added a sixty-row field matrix, nine intake queues, nine playbooks, sixty actions, Research Watch 042, one collection, one update, and a thirty-two-file archive; verified 2,587 pages, 715 sources, 786 signals, 616 Published, 170 In Review, 66 updates, forty-seven collections, 902 research documents, 798 research export records, and 498 current Published-support sources.
+135. Classified fifteen fields present and forty-five blocked across twenty-eight absent, five incompatible, two authority-mismatched, six period-mismatched, three privacy-gated, and one not-yet-evaluated state. Created nine source-specific first-eligible-record envelopes and sixty human-reviewed resolution actions while accepting zero candidate or eligible records, firing zero triggers, closing zero fields automatically, and prohibiting cross-record value carry. Phase 57L records zero operating-outcome, directive-scope, implementation, capability, closure, agency-contact, or FOIA changes.
 
 ## Required Stop Points
 
@@ -239,9 +241,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed content work is Phase 57K. The current candidate should be 0.2.0-dev on codex/phase51-content with 715 sources, 757 signals, 596 Published signals, 161 In Review signals, five local systems, forty-two Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 65 public updates, five JSON exports, 2,527 generated site pages, forty-six research collections, 873 research documents, 777 research export records, four Phase 57K longitudinal matrices, nine reopening contracts, all prior verified archives, and the Phase 57K thirty-two-file archive. The Phase 57K owner-only hosting retry is pending on the August 4 compatibility migration; Sites version 62 still serves exact Phase 57J runtime commit `e106dc9c7a9d14276ced1aee755b2fa79ca0d930` in deployment `appgdep_6a712967b444819194beb29dfe23132c`. Public access and DNS remain unchanged.
+The latest completed content work is Phase 57L. The current candidate should be 0.2.0-dev on codex/phase51-content with 715 sources, 786 signals, 616 Published signals, 170 In Review signals, five local systems, forty-three Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 66 public updates, five JSON exports, 2,587 generated site pages, forty-seven research collections, 902 research documents, 798 research export records, sixty field classifications, nine intake queues, nine playbooks, sixty field actions, all prior verified archives, and the Phase 57L thirty-two-file archive. The owner-only hosting retry remains pending; Sites version 62 still serves exact Phase 57J runtime commit `e106dc9c7a9d14276ced1aee755b2fa79ca0d930` in deployment `appgdep_6a712967b444819194beb29dfe23132c`. Public access and DNS remain unchanged.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Begin Phase 57L contract-field coverage matrices, first-eligible-record intake queues, and exception-resolution playbooks without waiting for the separate Phase 57K hosting retry. Classify all sixty required contract fields without creating a readiness score, define the exact eligible-record envelope for each rail, retain partial matches as non-triggering evidence, and preserve all nine Phase 57K holds until every required field clears and human review approves publication. Retry the owner-only Phase 57K deployment when the Sites compatibility migration clears. Do not represent a search as agency contact or a submitted FOIA request. Keep agency assertions, regulator evidence, FTFN controls, GAO acceptance, implementation, closure, entity evidence, identity, schema, cohort, stage, period, unit, threshold operator, method, denominator, revision history, privacy boundary, attribution, and operating outcomes separate. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval.
+Complete the Phase 57L owner-only publication attempt, then begin Phase 57M source-schema adapters, candidate-evidence packet templates, and human-review decision tables. Map all sixty fields to accepted labels without coercion, keep every empty or incomplete fixture explicitly non-evidentiary, rehearse bounded human decisions, and preserve all nine Phase 57L holds. Do not represent a search as agency contact or a submitted FOIA request. Keep agency assertions, regulator evidence, FTFN controls, GAO acceptance, implementation, closure, entity evidence, identity, schema, cohort, stage, period, unit, threshold operator, method, denominator, revision history, privacy boundary, attribution, and operating outcomes separate. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval.
 ```
