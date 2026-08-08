@@ -1,0 +1,65 @@
+{
+  "id": "research-doc-57m-amtrak-12-non-coercive-field-adapters",
+  "collection_id": "research-collection-source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026",
+  "title": "Amtrak maps 12 required fields through non-coercive schema adapters",
+  "slug": "57m-amtrak-12-non-coercive-field-adapters",
+  "record_status": "Published",
+  "publisher": "National Railroad Passenger Corporation",
+  "publication_date": "2026-08-08",
+  "document_type": "Data Release",
+  "summary": "12 field adapters preserve exact labels, definitions, units, authority, period, and privacy boundaries without populating a source value. Denominator: 2 contracts, 12 adapters, and zero observed or populated adapter values.",
+  "key_findings": [
+    "Evidence stage: Amtrak adapter and review-control operationalization.",
+    "Finding: 12 field adapters preserve exact labels, definitions, units, authority, period, and privacy boundaries without populating a source value.",
+    "Denominator: 2 contracts, 12 adapters, and zero observed or populated adapter values.",
+    "Boundary: An adapter vocabulary is not evidence that a source field exists.",
+    "Boundary: Unrecognized labels are never coerced.",
+    "Boundary: No value transformation or cross-record carry is allowed.",
+    "Next action: Apply the adapter only to one cited candidate packet and return any ambiguous label for clarification."
+  ],
+  "why_it_matters": "The record makes a future evidence-review workflow executable while keeping adapter vocabulary, fixtures, and rehearsals outside the evidence ledger.",
+  "ftfn_relevance": [
+    "Maps all sixty Phase 57L fields without coercion.",
+    "Provides empty and deliberately incomplete non-evidence packet fixtures for all nine queues.",
+    "Defines six bounded human-review outcomes without automatic acceptance, trigger, closure, or publication."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "An adapter vocabulary is not evidence that a source field exists.",
+    "Unrecognized labels are never coerced.",
+    "No value transformation or cross-record carry is allowed.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Mobility",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57f-amtrak-stations-alp-fy24-29",
+  "supporting_source_ids": [
+    "source-57f-amtrak-stations-alp-fy24-29",
+    "source-57b-amtrak-ada-progress-june-2026",
+    "source-57e-amtrak-accessibility-progress-june-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-ada-progress-report-june-2026.pdf",
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-accessibility-plan-feedback-process-canada-act-0626.pdf"
+  ],
+  "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+  "local_capture_path": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/01-amtrak-12-non-coercive-field-adapters.txt",
+  "archive_member": "official-links/01-amtrak-12-non-coercive-field-adapters.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-08"
+}

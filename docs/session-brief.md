@@ -37,7 +37,7 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 2,587
+static pages generated: 2,647
 current local release manifest: deployment/ftfn-v0.2-build.json
 current branch: codex/phase51-content
 ```
@@ -193,6 +193,8 @@ What is now stable:
 - The verified Phase 57K contract is 2,527 pages, 715 sources, 757 signals, 596 Published signals, 161 In Review signals, 495 current Published-support sources, forty-nine briefings, forty-six research collections, 873 research documents, 65 updates, 777 research export records, and a thirty-two-file archive. Content references, source health, Astro diagnostics, the production build, Phase 57K assertions, and release assertions pass. Its standalone 3,595-file runtime was saved through Sites version 66 but interrupted by the August 4 host compatibility migration; the complete Phase 57K layer is now live inside owner-only Sites version 68.
 - Phase 57L reviews twenty-nine contract-field coverage, first-eligible-record intake, and exception-resolution records. Twenty publish and nine remain In Review; thirty-six carried Tier 1 sources support sixty field classifications, nine intake queues, nine playbooks, and sixty field actions; all nine Phase 57K holds remain explicit, no new hold is added, and zero eligible-record, trigger, operating-outcome, scope, implementation, capability, closure, agency-contact, or FOIA changes are recorded.
 - The verified Phase 57L contract is 2,587 pages, 715 sources, 786 signals, 616 Published signals, 170 In Review signals, 498 current Published-support sources, fifty briefings, forty-seven research collections, 902 research documents, 66 updates, 798 research export records, and a thirty-two-file archive. Content references, source health, Astro diagnostics, the production build, Phase 57L assertions, and release assertions pass. Local content commit `886fdc7c0faa2f21e5db40441bd3169aa5deed37` maps to exact private runtime commit `44240958e241895323c4199a61b60be252bcf1f7`, deployed as owner-only Sites version 68 in `appgdep_6a77b85bb3c08191bda7f79917018300` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57M reviews twenty-nine source-schema adapter, packet-fixture, and decision-table records. Twenty publish and nine remain In Review; thirty-six carried Tier 1 sources support sixty non-coercive adapters, 120 exact labels, eighteen non-evidence fixtures, nine six-outcome tables, and fifty-four rehearsal rows; all nine Phase 57L holds remain explicit, no new hold is added, and zero actual candidate evaluations, accept decisions, triggers, operating outcomes, scope, implementation, closure, agency-contact, or FOIA changes are recorded.
+- The verified Phase 57M contract is 2,647 pages, 715 sources, 815 signals, 636 Published signals, 179 In Review signals, 498 current Published-support sources, fifty-one briefings, forty-eight research collections, 931 research documents, 67 updates, 819 research export records, and a thirty-two-file archive. Content references, source health, Astro diagnostics, the production build, Phase 57M assertions, and release assertions pass. Owner-only publication is the remaining release action; Sites version 68 remains the healthy Phase 57L checkpoint until that package deploys.
 - Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
 - The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
 - Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
@@ -242,13 +244,13 @@ What is still prelaunch scaffolding:
 
 Current strategic direction:
 
-FTFN should continue with Phase 57M source-schema adapters, candidate-evidence packet templates, and human-review decision tables. Map all sixty fields without coercion, keep every fixture explicitly non-evidentiary, rehearse bounded human decisions, and preserve all nine Phase 57L holds. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
+FTFN should continue with Phase 57N adapter-conformance tests, packet-validation harnesses, and reviewer-receipt ledgers. Exercise all 120 accepted labels and ambiguity rejections, run all eighteen fixtures against expected decisions, and record bounded human-review receipts without firing triggers or publishing automatically. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 728 signal records,
+- 815 signal records,
 - 715 source records,
 - 17 topic records,
 - 5 local system profiles,
@@ -538,16 +540,16 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 57L contract-field coverage matrices, first-eligible-record intake queues, and exception-resolution playbooks; complete, release-validated, and owner-only deployed as Sites version 68.
+Phase 57M source-schema adapters, candidate-evidence packet templates, and human-review decision tables; complete and release-validated, with owner-only publication pending.
 
 Current release checkpoint:
-v0.1.1 remains the frozen 102-source / 18-signal / 182-page checkpoint; the active development candidate is Phase 57L, and the hosted non-public checkpoint is owner-only Sites version 68 on exact runtime commit `44240958e241895323c4199a61b60be252bcf1f7`.
+v0.1.1 remains the frozen 102-source / 18-signal / 182-page checkpoint; the active development candidate is Phase 57M, while the hosted non-public checkpoint remains owner-only Phase 57L Sites version 68 on exact runtime commit `44240958e241895323c4199a61b60be252bcf1f7` until the new package deploys.
 
 Current development state:
-v0.2 Phase 57L candidate: package 0.2.0-dev, 715 public sources, 150 first-pass-triaged private candidates, 786 signals, 17 topics, 66 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 2,587 generated site pages, 616 Published signals, 43 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 47 research collections, 902 research documents, sixty contract-field classifications, nine intake queues, nine playbooks, sixty field actions, all prior verified archives plus the Phase 57L 32-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 494 Manual Review and 221 Probe Ready records.
+v0.2 Phase 57M candidate: package 0.2.0-dev, 715 public sources, 150 first-pass-triaged private candidates, 815 signals, 17 topics, 67 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 2,647 generated site pages, 636 Published signals, 44 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 48 research collections, 931 research documents, sixty non-coercive adapters, 120 exact labels, eighteen non-evidence fixtures, nine six-outcome review tables, fifty-four rehearsal rows, all prior verified archives plus the Phase 57M 32-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 494 Manual Review and 221 Probe Ready records.
 
 Next decision gate:
-Begin Phase 57M. Map all sixty fields to accepted source labels without coercion, build empty and deliberately incomplete packet fixtures as workflow infrastructure rather than evidence, rehearse accept, reject, clarification, privacy, authority, and period decisions, and preserve all nine Phase 57L holds. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Begin Phase 57N. Test all 120 accepted labels and ambiguity rejections, execute all eighteen fixtures against their expected review outcomes, and add machine-readable reviewer receipts for identity, reason, citation, decision time, escalation, and publication-review handoff. Preserve all nine holds and prohibit automatic triggers or publication. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
 Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```

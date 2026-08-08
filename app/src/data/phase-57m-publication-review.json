@@ -1,0 +1,121 @@
+{
+  "phase": "57M",
+  "captured_date": "2026-08-08",
+  "promoted_document_ids": [
+    "research-doc-57m-amtrak-12-non-coercive-field-adapters",
+    "research-doc-57m-amtrak-24-accepted-input-labels",
+    "research-doc-57m-amtrak-2-empty-2-incomplete-packet-fixtures",
+    "research-doc-57m-amtrak-12-human-review-decision-rows",
+    "research-doc-57m-amtrak-zero-evidence-packets-accepted-or-triggers-fired",
+    "research-doc-57m-broadband-19-non-coercive-field-adapters",
+    "research-doc-57m-broadband-38-accepted-input-labels",
+    "research-doc-57m-broadband-3-empty-3-incomplete-packet-fixtures",
+    "research-doc-57m-broadband-18-human-review-decision-rows",
+    "research-doc-57m-broadband-zero-evidence-packets-accepted-or-triggers-fired",
+    "research-doc-57m-hanford-12-non-coercive-field-adapters",
+    "research-doc-57m-hanford-24-accepted-input-labels",
+    "research-doc-57m-hanford-1-empty-1-incomplete-packet-fixtures",
+    "research-doc-57m-hanford-6-human-review-decision-rows",
+    "research-doc-57m-hanford-zero-evidence-packets-accepted-or-triggers-fired",
+    "research-doc-57m-nnsa-17-non-coercive-field-adapters",
+    "research-doc-57m-nnsa-34-accepted-input-labels",
+    "research-doc-57m-nnsa-3-empty-3-incomplete-packet-fixtures",
+    "research-doc-57m-nnsa-18-human-review-decision-rows",
+    "research-doc-57m-nnsa-zero-evidence-packets-accepted-or-triggers-fired"
+  ],
+  "promoted_signal_ids": [
+    "signal-57m-amtrak-12-non-coercive-field-adapters",
+    "signal-57m-amtrak-24-accepted-input-labels",
+    "signal-57m-amtrak-2-empty-2-incomplete-packet-fixtures",
+    "signal-57m-amtrak-12-human-review-decision-rows",
+    "signal-57m-amtrak-zero-evidence-packets-accepted-or-triggers-fired",
+    "signal-57m-broadband-19-non-coercive-field-adapters",
+    "signal-57m-broadband-38-accepted-input-labels",
+    "signal-57m-broadband-3-empty-3-incomplete-packet-fixtures",
+    "signal-57m-broadband-18-human-review-decision-rows",
+    "signal-57m-broadband-zero-evidence-packets-accepted-or-triggers-fired",
+    "signal-57m-hanford-12-non-coercive-field-adapters",
+    "signal-57m-hanford-24-accepted-input-labels",
+    "signal-57m-hanford-1-empty-1-incomplete-packet-fixtures",
+    "signal-57m-hanford-6-human-review-decision-rows",
+    "signal-57m-hanford-zero-evidence-packets-accepted-or-triggers-fired",
+    "signal-57m-nnsa-17-non-coercive-field-adapters",
+    "signal-57m-nnsa-34-accepted-input-labels",
+    "signal-57m-nnsa-3-empty-3-incomplete-packet-fixtures",
+    "signal-57m-nnsa-18-human-review-decision-rows",
+    "signal-57m-nnsa-zero-evidence-packets-accepted-or-triggers-fired"
+  ],
+  "held_document_ids": [
+    "research-doc-57m-preserved-amtrak-pids",
+    "research-doc-57m-preserved-amtrak-reliability",
+    "research-doc-57m-preserved-la-nextlink-adoption",
+    "research-doc-57m-preserved-la-starlink-adoption",
+    "research-doc-57m-preserved-mt-bead-quarter",
+    "research-doc-57m-preserved-hanford-mass-balance",
+    "research-doc-57m-preserved-nnsa-qualified-rate",
+    "research-doc-57m-preserved-nnsa-accepted-capacity",
+    "research-doc-57m-preserved-nnsa-gao-baseline"
+  ],
+  "held_signal_ids": [
+    "signal-57m-preserved-amtrak-pids",
+    "signal-57m-preserved-amtrak-reliability",
+    "signal-57m-preserved-la-nextlink-adoption",
+    "signal-57m-preserved-la-starlink-adoption",
+    "signal-57m-preserved-mt-bead-quarter",
+    "signal-57m-preserved-hanford-mass-balance",
+    "signal-57m-preserved-nnsa-qualified-rate",
+    "signal-57m-preserved-nnsa-accepted-capacity",
+    "signal-57m-preserved-nnsa-gao-baseline"
+  ],
+  "inherited_hold_lineage": [
+    {
+      "action_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-12",
+      "parent_hold_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-11",
+      "reopening_contract_id": "REOPEN-AMTRAK-PIDS"
+    },
+    {
+      "action_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-11",
+      "parent_hold_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-10",
+      "reopening_contract_id": "REOPEN-AMTRAK-RELIABILITY"
+    },
+    {
+      "action_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-12",
+      "parent_hold_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-11",
+      "reopening_contract_id": "REOPEN-LA-NEXTLINK-ADOPTION"
+    },
+    {
+      "action_key": "LA-BEAD-STARLINK-HOLD-2026-12",
+      "parent_hold_key": "LA-BEAD-STARLINK-HOLD-2026-11",
+      "reopening_contract_id": "REOPEN-LA-STARLINK-ADOPTION"
+    },
+    {
+      "action_key": "MT-BEAD-QUARTERLY-HOLD-2026-12",
+      "parent_hold_key": "MT-BEAD-QUARTERLY-HOLD-2026-11",
+      "reopening_contract_id": "REOPEN-MT-BEAD-QUARTER"
+    },
+    {
+      "action_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-09",
+      "parent_hold_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-08",
+      "reopening_contract_id": "REOPEN-HANFORD-MASS-BALANCE"
+    },
+    {
+      "action_key": "NNSA-PIT-RATE-HOLD-2026-12",
+      "parent_hold_key": "NNSA-PIT-RATE-HOLD-2026-11",
+      "reopening_contract_id": "REOPEN-NNSA-QUALIFIED-RATE"
+    },
+    {
+      "action_key": "NNSA-PIT-PEIS-HOLD-2026-12",
+      "parent_hold_key": "NNSA-PIT-PEIS-HOLD-2026-11",
+      "reopening_contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY"
+    },
+    {
+      "action_key": "NNSA-PIT-GAO-BASELINE-HOLD-2027-01",
+      "parent_hold_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-12",
+      "reopening_contract_id": "REOPEN-NNSA-GAO-BASELINE"
+    }
+  ],
+  "candidate_packets_evaluated": 0,
+  "eligible_records_accepted": 0,
+  "actual_accept_decisions": 0,
+  "decision": "Twenty adapter, packet-fixture, and reviewer-decision controls publish. Nine inherited holds remain In Review; every fixture and rehearsal is non-evidence, no candidate packet is evaluated or accepted, and no trigger, scope, implementation, or closure change is recorded."
+}

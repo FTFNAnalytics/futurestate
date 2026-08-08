@@ -1618,6 +1618,7 @@ Primary file:
 - `docs/work-packages/phase-57j-historical-backfill-rejection-taxonomy-review-queue-execution.md` for the twenty-nine reviewed records, twenty Published historical-backfill and rejection-taxonomy decisions, nine preserved In Review holds, no new hold, thirty-six carried Tier 1 sources, four executed review rails, Amtrak historical identity decisions, Montana migration and envelope rejections, Hanford observation, pair, and transition taxonomies, NNSA object-version dimension classifications, archive, validation, owner-only deployment state, and Phase 57K handoff contracts
 - `docs/work-packages/phase-57k-cross-version-transition-matrices-longitudinal-panels.md` for the twenty-nine reviewed records, twenty Published transition controls, nine preserved In Review holds, four longitudinal matrices, 1,546 bounded matrix cells, 294 requirement checks, nine machine-readable reopening contracts, archive, validation, owner-only deployment state, and Phase 57L handoff contracts
 - `docs/work-packages/phase-57l-contract-field-coverage-intake-queues-exception-playbooks.md` for the twenty-nine reviewed records, twenty Published field-operationalization controls, nine preserved In Review holds, sixty classified contract fields, nine first-eligible-record intake queues, nine exception-resolution playbooks, sixty human-reviewed field actions, archive, validation, owner-only deployment state, and Phase 57M handoff contracts
+- `docs/work-packages/phase-57m-source-schema-adapters-packet-templates-review-decision-tables.md` for the twenty-nine reviewed records, twenty Published workflow controls, nine preserved In Review holds, sixty non-coercive adapters, 120 accepted labels, eighteen non-evidence packet fixtures, nine six-outcome decision tables, fifty-four rehearsal rows, archive, validation, owner-only deployment state, and Phase 57N handoff contracts
 
 Update when:
 
@@ -1668,6 +1669,7 @@ Update when:
 - the Phase 57J historical decisions, migration tests, envelope rejections, observation, pair, transition, object-version classifications, preserved holds, archive, deployment receipt, or Phase 57K priorities change,
 - the Phase 57K transition matrices, requirement checks, reopening contracts, preserved holds, archive, deployment receipt, or Phase 57L priorities change,
 - the Phase 57L field coverage, intake envelopes, exception actions, preserved holds, archive, deployment receipt, or Phase 57M priorities change,
+- the Phase 57M adapters, accepted labels, packet fixtures, decision tables, preserved holds, archive, deployment receipt, or Phase 57N priorities change,
 - a new local system or research collection is selected,
 - the publication or navigation scale gate changes,
 - a dated insert materially changes the active expansion queue.

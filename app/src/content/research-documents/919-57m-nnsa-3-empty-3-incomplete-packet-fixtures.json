@@ -1,0 +1,79 @@
+{
+  "id": "research-doc-57m-nnsa-3-empty-3-incomplete-packet-fixtures",
+  "collection_id": "research-collection-source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026",
+  "title": "NNSA builds empty and deliberately incomplete non-evidence packet fixtures",
+  "slug": "57m-nnsa-3-empty-3-incomplete-packet-fixtures",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+  "publication_date": "2026-08-08",
+  "document_type": "Data Release",
+  "summary": "3 empty canonical packets and 3 incomplete synthetic packets expose missing-field, privacy, authority, period, and disqualifier handling. Denominator: 6 fixtures and zero candidate evidence records.",
+  "key_findings": [
+    "Evidence stage: NNSA adapter and review-control operationalization.",
+    "Finding: 3 empty canonical packets and 3 incomplete synthetic packets expose missing-field, privacy, authority, period, and disqualifier handling.",
+    "Denominator: 6 fixtures and zero candidate evidence records.",
+    "Boundary: Fixture placeholders are not source values.",
+    "Boundary: Fixtures cannot enter the evidence ledger.",
+    "Boundary: Incomplete packets cannot fire a trigger.",
+    "Next action: Use the fixtures only to test intake behavior before reviewing a cited official record."
+  ],
+  "why_it_matters": "The record makes a future evidence-review workflow executable while keeping adapter vocabulary, fixtures, and rehearsals outside the evidence ledger.",
+  "ftfn_relevance": [
+    "Maps all sixty Phase 57L fields without coercion.",
+    "Provides empty and deliberately incomplete non-evidence packet fixtures for all nine queues.",
+    "Defines six bounded human-review outcomes without automatic acceptance, trigger, closure, or publication."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Fixture placeholders are not source values.",
+    "Fixtures cannot enter the evidence ledger.",
+    "Incomplete packets cannot fire a trigger.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-nnsa-fy2026-weapons-activities",
+  "supporting_source_ids": [
+    "source-57g-nnsa-fy2026-weapons-activities",
+    "source-56w-nnsa-fy2027-weapons-activities",
+    "source-56x-gao-nnsa-major-projects-2026",
+    "source-56q-gao-23-104661-recommendation-status",
+    "source-57f-nnsa-pit-production-current",
+    "source-57f-nnsa-stockpile-current",
+    "source-57g-nnsa-lap4-30-base-construction",
+    "source-57a-nnsa-w87-1-first-production-unit",
+    "source-57b-nnsa-sasc-testimony-may-2026",
+    "source-57b-nnsa-pit-production-draft-peis-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+    "https://www.energy.gov/documents/doe-fy-2027-volume-1-wa",
+    "https://www.gao.gov/assets/gao-26-107777.pdf",
+    "https://www.gao.gov/products/gao-23-104661",
+    "https://www.energy.gov/nnsa/plutonium-pit-production",
+    "https://www.energy.gov/nnsa/us-nuclear-weapons-stockpile",
+    "https://www.energy.gov/nnsa/articles/nnsa-approves-start-construction-plutonium-pit-production-subproject-los-alamos",
+    "https://www.energy.gov/nnsa/articles/nnsa-completes-and-diamond-stamps-first-plutonium-pit-w87-1-warhead",
+    "https://www.energy.gov/sites/default/files/2026-05/2026.05.13%20SASC-%20DOE-NNSA%20Joint%20Final%20Testimony.pdf",
+    "https://www.energy.gov/sites/default/files/2026-04/draft-eis-0573-plutonium-pit-production-vol-1-2026-04.pdf"
+  ],
+  "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+  "local_capture_path": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/18-nnsa-3-empty-3-incomplete-packet-fixtures.txt",
+  "archive_member": "official-links/18-nnsa-3-empty-3-incomplete-packet-fixtures.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-08"
+}

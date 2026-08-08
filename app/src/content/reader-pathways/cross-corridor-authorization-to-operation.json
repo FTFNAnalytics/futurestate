@@ -173,7 +173,17 @@
     "signal-57l-broadband-coverage-state-distribution",
     "signal-57l-broadband-3-first-eligible-record-queues",
     "signal-57l-broadband-19-field-resolution-actions",
-    "signal-57l-broadband-zero-eligible-records-or-trigger-events"
+    "signal-57l-broadband-zero-eligible-records-or-trigger-events",
+    "signal-57m-amtrak-12-non-coercive-field-adapters",
+    "signal-57m-amtrak-24-accepted-input-labels",
+    "signal-57m-amtrak-2-empty-2-incomplete-packet-fixtures",
+    "signal-57m-amtrak-12-human-review-decision-rows",
+    "signal-57m-amtrak-zero-evidence-packets-accepted-or-triggers-fired",
+    "signal-57m-broadband-19-non-coercive-field-adapters",
+    "signal-57m-broadband-38-accepted-input-labels",
+    "signal-57m-broadband-3-empty-3-incomplete-packet-fixtures",
+    "signal-57m-broadband-18-human-review-decision-rows",
+    "signal-57m-broadband-zero-evidence-packets-accepted-or-triggers-fired"
   ],
   "source_ids": [
     "source-virginia-scc-large-load-gs5-2025",
@@ -263,7 +273,8 @@
     "briefing-research-watch-039-versioned-registry-change-detection-bounded-observation-ingestion",
     "briefing-research-watch-040-historical-backfill-rejection-taxonomy-review-queue-execution",
     "briefing-research-watch-041-cross-version-transition-matrices-longitudinal-panels",
-    "briefing-research-watch-042-contract-field-coverage-intake-playbooks"
+    "briefing-research-watch-042-contract-field-coverage-intake-playbooks",
+    "briefing-research-watch-043-source-schema-adapters-packet-review-controls"
   ],
   "dependency_map_ids": [
     "dependency-map-local-authorization-is-not-operation",
@@ -290,7 +301,8 @@
     "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
     "research-collection-historical-backfill-rejection-taxonomy-review-queue-execution-2026",
     "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
-    "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026"
+    "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+    "research-collection-source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026"
   ],
   "evidence_gap_ids": [
     "gap-011",
@@ -409,6 +421,11 @@
       "stage": "Phase 57L contract-field coverage and first-eligible intake",
       "current_state": "Sixty classified fields, nine intake queues, nine playbooks, sixty actions, zero accepted eligible records, and nine preserved holds.",
       "boundary": "Coverage is not readiness, a queue definition is not a candidate record, and partial matches cannot fire a trigger."
+    },
+    {
+      "stage": "Phase 57M source-schema adapters and packet review",
+      "current_state": "Sixty adapters, eighteen non-evidence fixtures, nine six-outcome decision tables, zero evaluated packets, zero accepted records, and nine preserved holds.",
+      "boundary": "Adapter vocabularies and rehearsal fixtures are workflow infrastructure, not evidence or a publication decision."
     }
   ],
   "evidence_limits": [
@@ -437,7 +454,8 @@
     "Phase 57I prohibits silent identity merges, guessed station codes or field mappings, privacy-detail exposure, cross-rail migration, coerced missing fields, synthetic numeric joins, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57J prohibits silent rejection, deletion inference, guessed codes or schemas, privacy-detail exposure, cross-rail migration, coerced missing fields, synthetic custody or numeric joins, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57K prohibits deletion inference, schema coercion, privacy-detail exposure, cross-rail migration, synthetic custody or numeric joins, authority substitution, automatic trigger publication, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
-    "Phase 57L prohibits cross-record field assembly, readiness scoring, priority inference, schema coercion, privacy-detail exposure, authority substitution, automatic closure or publication, generalized savings, and unsupported causal inference."
+    "Phase 57L prohibits cross-record field assembly, readiness scoring, priority inference, schema coercion, privacy-detail exposure, authority substitution, automatic closure or publication, generalized savings, and unsupported causal inference.",
+    "Phase 57M prohibits semantic label coercion, invented or transformed values, cross-record packet assembly, fixture promotion, automatic acceptance, trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Northern Virginia route, construction, energization, customer-service, water, emissions-compliance, reliability, and local-outcome records.",
@@ -463,6 +481,7 @@
     "Reviewed source-version inserts with stable identity, definition, period, stage, measure, operator, method, unit, authority, privacy, quality, acceptance, and disposition.",
     "Source-explicit records that clear named Phase 57J rejection classes while preserving exact identity, definition, period, stage, method, unit, authority, privacy, acceptance, custody, object scope, and closure attribution.",
     "Source-explicit records that satisfy a named Phase 57K reopening contract while preserving exact identity, cohort, denominator, definition, period, stage, method, unit, authority, privacy, acceptance, custody, object scope, and closure attribution.",
-    "One source-explicit candidate package that satisfies every field in a named Phase 57L intake envelope and passes human publication review."
+    "One source-explicit candidate package that satisfies every field in a named Phase 57L intake envelope and passes human publication review.",
+    "One cited source-explicit candidate packet that satisfies a Phase 57M adapter and receives a bounded named human-review decision."
   ]
 }
