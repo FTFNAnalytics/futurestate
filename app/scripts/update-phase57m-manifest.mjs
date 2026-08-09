@@ -53,6 +53,21 @@ manifest.expected_build = {
   pathway_export_records: 11,
 };
 
+manifest.deployment_status = "owner-only-private-preview-deployed";
+manifest.private_preview = {
+  ...manifest.private_preview,
+  provider: "OpenAI Sites",
+  url: "https://ftfn-analytics.jbumstead.chatgpt.site",
+  access: "owner-only-custom-policy",
+  current_local_content_commit: "a33ffde16c7548f3be44cf74f943dbd45852e257",
+  current_source_commit: "ab6e14d05ca55daf4f92655218d307d247547a3e",
+  current_version_id: "appgprj_6a614e1092d08191bf65779fc35df959~appgver_a36695d12fdc8191ab5a24eede9e53b6",
+  current_version_number: 69,
+  current_deployment_id: "appgdep_6a77c388da3c8191816d4e0c85636594",
+  custom_domain_attached: false,
+  post_deploy_qa: "passed-version-69-deployment-status-source-provenance-runtime-archive-owner-only-access; visual-route-qa-not-requested",
+};
+
 manifest.release_delta_from_v0_1_1 = {
   ...manifest.release_delta_from_v0_1_1,
   static_pages_added: 2465,
@@ -116,6 +131,14 @@ manifest.phase_57m_delta = {
   dependency_maps_deepened: 1,
   public_update_entries_added: 1,
   generated_pages_added: 60,
+  local_content_commit: "a33ffde16c7548f3be44cf74f943dbd45852e257",
+  private_runtime_commit: "ab6e14d05ca55daf4f92655218d307d247547a3e",
+  private_runtime_parent: "44240958e241895323c4199a61b60be252bcf1f7",
+  sites_version_number: 69,
+  sites_runtime_file_count: 3781,
+  sites_runtime_size_bytes: 158218240,
+  sites_deployment_id: "appgdep_6a77c388da3c8191816d4e0c85636594",
+  owner_only_access_verified: true,
 };
 
 manifest.last_verified = {
@@ -132,7 +155,7 @@ manifest.last_verified = {
   static_pages_built: 2647,
   release_assertions: "passed-phase-57m",
   browser_qa: "passed-local-phase-55k; phase-55l-through-phase-57m-visual-qa-not-requested",
-  preview_qa: "pending-phase-57m-owner-only-deployment; phase-57l-owner-only-version-68-custom-access-one-owner-no-groups-no-editors-zero-external-visitors",
+  preview_qa: "passed-phase-57m-owner-only-sites-version-69-custom-access-one-owner-no-groups-no-editors-zero-external-visitors",
 };
 
 manifest.required_output_files = addUnique(manifest.required_output_files, [
@@ -171,7 +194,7 @@ manifest.release_gates = addUnique(manifest.release_gates, [
   "Confirm the Phase 57M collection contains twenty-nine official-link records backed by thirty-six carried Tier 1 sources and a thirty-two-file archive",
 ]);
 
-manifest.notes = "This manifest records the Phase 57M source-schema adapter, packet-template, and human-review decision-table expansion. Thirty-six carried Tier 1 sources support twenty Published workflow controls, nine preserved In Review holds, sixty non-coercive adapters, 120 accepted adapter labels, nine empty and nine deliberately incomplete non-evidence fixtures, nine six-outcome decision tables, fifty-four rehearsal rows, Research Watch 043, one collection, one update, and a thirty-two-file archive. Zero source values are populated in adapters, zero candidate packets are evaluated or accepted, and zero triggers fire. Fixtures and rehearsals remain outside the evidence ledger, values cannot be invented or assembled across records, and human publication review remains mandatory. The release remains 0.2.0-dev and owner-only. Public access, Hostinger DNS, custom-domain attachment, public GitHub synchronization, and package freeze remain unchanged.";
+manifest.notes = "This manifest records the Phase 57M source-schema adapter, packet-template, and human-review decision-table expansion. Thirty-six carried Tier 1 sources support twenty Published workflow controls, nine preserved In Review holds, sixty non-coercive adapters, 120 accepted adapter labels, nine empty and nine deliberately incomplete non-evidence fixtures, nine six-outcome decision tables, fifty-four rehearsal rows, Research Watch 043, one collection, one update, and a thirty-two-file archive. Zero source values are populated in adapters, zero candidate packets are evaluated or accepted, and zero triggers fire. Fixtures and rehearsals remain outside the evidence ledger, values cannot be invented or assembled across records, and human publication review remains mandatory. Local content commit a33ffde16c7548f3be44cf74f943dbd45852e257 maps to exact private runtime commit ab6e14d05ca55daf4f92655218d307d247547a3e, deployed as owner-only Sites version 69 in appgdep_6a77c388da3c8191816d4e0c85636594 with one owner, no groups, no editors, and zero external visitors. The release remains 0.2.0-dev and owner-only. Public access, Hostinger DNS, custom-domain attachment, public GitHub synchronization, and package freeze remain unchanged.";
 
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
 console.log(`Updated Phase 57M manifest at ${manifestPath}`);

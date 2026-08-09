@@ -2,7 +2,7 @@
 
 Date: 2026-08-08
 
-Status: complete and release-validated; owner-only deployment pending
+Status: complete, release-validated, and owner-only deployed as Sites version 69
 
 ## Goal
 
@@ -118,6 +118,6 @@ Build adapter-conformance tests, packet-validation harnesses, and reviewer-recei
 
 ## Deployment checkpoint
 
-Content references, source health, Astro diagnostics, the 2,647-page production build, Phase 57M assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the thirty-two-file archive pass at 715 sources, 815 signals, 636 Published, 179 In Review, fifty-one briefings, forty-eight collections, 931 research documents, sixty adapters, eighteen fixtures, nine decision tables, and fifty-four rehearsal rows. Owner-only Sites publication remains pending. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
+Content references, source health, Astro diagnostics, the 2,647-page production build, Phase 57M assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the thirty-two-file archive pass at 715 sources, 815 signals, 636 Published, 179 In Review, fifty-one briefings, forty-eight collections, 931 research documents, sixty adapters, eighteen fixtures, nine decision tables, and fifty-four rehearsal rows. Local content commit `a33ffde16c7548f3be44cf74f943dbd45852e257` maps to exact private runtime commit `ab6e14d05ca55daf4f92655218d307d247547a3e`, whose parent is the Phase 57L runtime `44240958e241895323c4199a61b60be252bcf1f7`. The 3,781-file runtime is deployed as owner-only Sites version 69 in `appgdep_6a77c388da3c8191816d4e0c85636594` with one owner, no groups, no editors, and zero external visitors. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
 
 The thirty-two-file research archive is 38,431 bytes with SHA-256 `8B947312FA5514D2110BD79B57AE74E5A4CCFDACEC0C37FCBFFDD975F3254D2B`.
