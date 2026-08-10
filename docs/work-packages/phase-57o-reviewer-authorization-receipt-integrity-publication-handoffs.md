@@ -2,7 +2,7 @@
 
 Date: 2026-08-09
 
-Status: complete and release-validated locally; deployment not requested
+Status: complete, release-validated, and owner-only deployed
 
 ## Goal
 
@@ -120,4 +120,4 @@ Private-candidate validation, content references, source health, Astro diagnosti
 
 The archive is 39,395 bytes with SHA-256 `DE4E3A4B99229099CDF3DAB0A62767D570788860026F37421EE4F8BB9AB418F2`.
 
-Deployment was not requested. Owner-only Sites version 70 continues to serve the exact Phase 57N runtime commit `77654203b4ce005620138de766966e5f3e2236c6` in `appgdep_6a792e9a01fc819192dabb660ae9bcd3` with one owner, no groups, no editors, and zero external visitors. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
+Local content commit `f84addeada142cf6658403d117c34b197c173215` maps to exact private runtime commit `6bd0660578fa398a8d1440a96588458999636250`, whose verified parent is the Phase 57N runtime `77654203b4ce005620138de766966e5f3e2236c6`. The 3,967-file runtime was saved as Sites version 71 and deployed successfully in `appgdep_6a793730bb54819190b33f119cbbac1b` at `https://ftfn-analytics.jbumstead.chatgpt.site`. Access remains custom owner-only with one owner, no groups, no editors, and zero external visitors. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
