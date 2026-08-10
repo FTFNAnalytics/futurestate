@@ -1,0 +1,65 @@
+{
+  "id": "research-doc-57n-preserved-nnsa-gao-baseline",
+  "collection_id": "research-collection-adapter-conformance-packet-validation-reviewer-receipt-ledgers-2026",
+  "title": "NNSA GAO enterprise baseline remains In Review after conformance and receipt-harness execution",
+  "slug": "57n-preserved-nnsa-gao-baseline",
+  "record_status": "In Review",
+  "publisher": "U.S. Government Accountability Office",
+  "publication_date": "2026-08-09",
+  "document_type": "Technical Report",
+  "summary": "15 adapter tests and two fixture validations pass deterministically, but no actual candidate packet, reviewer receipt, cited-source decision, or publication-review handoff exists. Denominator: One inherited hold, 15 adapter tests, 2 fixture executions, six receipt templates, zero actual receipts, and zero trigger events.",
+  "key_findings": [
+    "Evidence stage: Conformance and receipt hold.",
+    "Finding: 15 adapter tests and two fixture validations pass deterministically, but no actual candidate packet, reviewer receipt, cited-source decision, or publication-review handoff exists.",
+    "Denominator: One inherited hold, 15 adapter tests, 2 fixture executions, six receipt templates, zero actual receipts, and zero trigger events.",
+    "Boundary: Synthetic test passage is not evidence or eligibility.",
+    "Boundary: Receipt templates do not create reviewer identities or decisions.",
+    "Boundary: The inherited hold cannot close automatically.",
+    "Next action: GAO recommendation-status record with responsive agency evidence"
+  ],
+  "why_it_matters": "The hold remains actionable while synthetic conformance results stay separate from an actual cited packet and receipted human decision.",
+  "ftfn_relevance": [
+    "Exercises every accepted Phase 57M adapter label plus one explicit ambiguity rejection per field.",
+    "Runs all eighteen packet fixtures through deterministic validators.",
+    "Defines audit receipts for all fifty-four review-table rows without creating an actual reviewer or decision."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Synthetic test passage is not evidence or eligibility.",
+    "Receipt templates do not create reviewer identities or decisions.",
+    "The inherited hold cannot close automatically.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-56q-gao-23-104661-recommendation-status",
+  "supporting_source_ids": [
+    "source-56q-gao-23-104661-recommendation-status",
+    "source-56x-gao-nnsa-major-projects-2026",
+    "source-57f-nnsa-pit-production-current"
+  ],
+  "supporting_official_urls": [
+    "https://www.gao.gov/products/gao-23-104661",
+    "https://www.gao.gov/assets/gao-26-107777.pdf",
+    "https://www.energy.gov/nnsa/plutonium-pit-production"
+  ],
+  "official_url": "https://www.gao.gov/products/gao-23-104661",
+  "local_capture_path": "/downloads/adapter-conformance-packet-validation-reviewer-receipt-ledgers-2026/official-links/29-preserved-nnsa-gao-baseline.txt",
+  "archive_member": "official-links/29-preserved-nnsa-gao-baseline.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}

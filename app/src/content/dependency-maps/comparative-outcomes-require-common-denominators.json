@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 57M makes nine evidence-intake workflows executable through non-coercive adapters, non-evidence fixtures, and bounded human-review tables while preserving every operating-outcome hold.",
+  "summary": "A comparison and inference protocol: Phase 57N proves deterministic adapter and packet routing and defines reviewer receipts while preserving every operating-outcome hold and the separate publication gate.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -948,7 +948,27 @@
     "signal-57m-nnsa-34-accepted-input-labels",
     "signal-57m-nnsa-3-empty-3-incomplete-packet-fixtures",
     "signal-57m-nnsa-18-human-review-decision-rows",
-    "signal-57m-nnsa-zero-evidence-packets-accepted-or-triggers-fired"
+    "signal-57m-nnsa-zero-evidence-packets-accepted-or-triggers-fired",
+    "signal-57n-amtrak-24-accepted-label-conformance-tests",
+    "signal-57n-amtrak-12-ambiguous-label-rejections",
+    "signal-57n-amtrak-4-packet-fixture-validations",
+    "signal-57n-amtrak-12-reviewer-receipt-templates",
+    "signal-57n-amtrak-zero-candidate-review-trigger-or-publication-events",
+    "signal-57n-broadband-38-accepted-label-conformance-tests",
+    "signal-57n-broadband-19-ambiguous-label-rejections",
+    "signal-57n-broadband-6-packet-fixture-validations",
+    "signal-57n-broadband-18-reviewer-receipt-templates",
+    "signal-57n-broadband-zero-candidate-review-trigger-or-publication-events",
+    "signal-57n-hanford-24-accepted-label-conformance-tests",
+    "signal-57n-hanford-12-ambiguous-label-rejections",
+    "signal-57n-hanford-2-packet-fixture-validations",
+    "signal-57n-hanford-6-reviewer-receipt-templates",
+    "signal-57n-hanford-zero-candidate-review-trigger-or-publication-events",
+    "signal-57n-nnsa-34-accepted-label-conformance-tests",
+    "signal-57n-nnsa-17-ambiguous-label-rejections",
+    "signal-57n-nnsa-6-packet-fixture-validations",
+    "signal-57n-nnsa-18-reviewer-receipt-templates",
+    "signal-57n-nnsa-zero-candidate-review-trigger-or-publication-events"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -1283,6 +1303,12 @@
       "label": "Sixty adapters; eighteen fixtures; fifty-four review rows; zero accepted packets",
       "node_type": "Signal",
       "note": "Workflow controls become executable without treating labels, fixtures, or rehearsals as evidence."
+    },
+    {
+      "id": "node-phase57n-conformance-receipt-ledger",
+      "label": "180 adapter tests; eighteen fixture executions; fifty-four receipt templates; zero actual decisions",
+      "node_type": "Signal",
+      "note": "Deterministic workflow controls pass without creating evidence, reviewer identity, eligibility, closure, or publication."
     }
   ],
   "links": [
@@ -2139,6 +2165,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Adapters and rehearsals do not establish operating outcomes, eligibility, closure, or causation."
+    },
+    {
+      "from": "node-phase57n-conformance-receipt-ledger",
+      "to": "node-phase57m-adapter-packet-review",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57N executes the adapters, fixtures, and decision shapes defined in Phase 57M."
+    },
+    {
+      "from": "node-phase57n-conformance-receipt-ledger",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "An actual receipt still requires one cited packet with compatible identity, definition, unit, method, denominator, period, privacy, and authority."
+    },
+    {
+      "from": "node-phase57n-conformance-receipt-ledger",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Synthetic tests and receipt templates do not establish operating outcomes, eligibility, closure, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -2195,7 +2242,8 @@
     "Four Phase 57J executed review rails, twenty Published control panels, explicit rejection taxonomies, and nine preserved operating-outcome holds.",
     "Four Phase 57K longitudinal matrices, twenty Published transition controls, nine machine-readable reopening contracts, and nine preserved operating-outcome holds.",
     "Sixty Phase 57L field classifications, nine first-eligible-record queues, nine exception playbooks, sixty field actions, and nine preserved holds.",
-    "Sixty Phase 57M schema adapters, eighteen packet fixtures, nine six-outcome human-review tables, fifty-four rehearsal rows, and nine preserved holds."
+    "Sixty Phase 57M schema adapters, eighteen packet fixtures, nine six-outcome human-review tables, fifty-four rehearsal rows, and nine preserved holds.",
+    "120 accepted-label tests, sixty ambiguity rejections, eighteen fixture executions, fifty-four receipt templates, zero actual review events, and nine preserved holds."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -2323,6 +2371,7 @@
     "Source-explicit records that clear named rejection classes without changing identity, denominator, object scope, authority, privacy, acceptance, capability, implementation, or closure attribution.",
     "Source-explicit records that fully satisfy a named reopening contract without changing identity, denominator, object scope, authority, privacy, acceptance, capability, implementation, or closure attribution.",
     "One complete contract-eligible evidence package that clears every field without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution.",
-    "One complete cited packet that passes exact adapter matching and receives a named human-review decision without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution."
+    "One complete cited packet that passes exact adapter matching and receives a named human-review decision without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution.",
+    "One complete cited packet that passes deterministic validation and receives a complete named reviewer receipt without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution."
   ]
 }

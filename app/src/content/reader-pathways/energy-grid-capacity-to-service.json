@@ -265,7 +265,17 @@
     "signal-57m-nnsa-34-accepted-input-labels",
     "signal-57m-nnsa-3-empty-3-incomplete-packet-fixtures",
     "signal-57m-nnsa-18-human-review-decision-rows",
-    "signal-57m-nnsa-zero-evidence-packets-accepted-or-triggers-fired"
+    "signal-57m-nnsa-zero-evidence-packets-accepted-or-triggers-fired",
+    "signal-57n-hanford-24-accepted-label-conformance-tests",
+    "signal-57n-hanford-12-ambiguous-label-rejections",
+    "signal-57n-hanford-2-packet-fixture-validations",
+    "signal-57n-hanford-6-reviewer-receipt-templates",
+    "signal-57n-hanford-zero-candidate-review-trigger-or-publication-events",
+    "signal-57n-nnsa-34-accepted-label-conformance-tests",
+    "signal-57n-nnsa-17-ambiguous-label-rejections",
+    "signal-57n-nnsa-6-packet-fixture-validations",
+    "signal-57n-nnsa-18-reviewer-receipt-templates",
+    "signal-57n-nnsa-zero-candidate-review-trigger-or-publication-events"
   ],
   "source_ids": [
     "source-iea-data-centre-electricity-2026",
@@ -448,7 +458,8 @@
     "briefing-research-watch-040-historical-backfill-rejection-taxonomy-review-queue-execution",
     "briefing-research-watch-041-cross-version-transition-matrices-longitudinal-panels",
     "briefing-research-watch-042-contract-field-coverage-intake-playbooks",
-    "briefing-research-watch-043-source-schema-adapters-packet-review-controls"
+    "briefing-research-watch-043-source-schema-adapters-packet-review-controls",
+    "briefing-research-watch-044-adapter-conformance-packet-validation-receipts"
   ],
   "dependency_map_ids": [
     "dependency-map-federal-research-industrial-capacity",
@@ -494,7 +505,8 @@
     "research-collection-historical-backfill-rejection-taxonomy-review-queue-execution-2026",
     "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
     "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
-    "research-collection-source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026"
+    "research-collection-source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026",
+    "research-collection-adapter-conformance-packet-validation-reviewer-receipt-ledgers-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -707,6 +719,11 @@
       "stage": "Phase 57M source-schema adapters and packet review",
       "current_state": "Sixty adapters, eighteen non-evidence fixtures, nine six-outcome decision tables, zero evaluated packets, zero accepted records, and nine preserved holds.",
       "boundary": "Adapter vocabularies and rehearsal fixtures are workflow infrastructure, not evidence or a publication decision."
+    },
+    {
+      "stage": "Phase 57N deterministic validation and reviewer receipts",
+      "current_state": "180 adapter tests and eighteen fixture executions pass; fifty-four receipt templates exist; zero actual packets, receipts, decisions, triggers, closures, or publications are recorded.",
+      "boundary": "Synthetic test passage and receipt templates are workflow infrastructure, not evidence, eligibility, reviewer identity, or a publication decision."
     }
   ],
   "evidence_limits": [
@@ -766,7 +783,8 @@
     "Phase 57J prohibits silent rejection, deletion inference, guessed codes or schemas, privacy-detail exposure, cross-rail migration, coerced missing fields, synthetic custody or numeric joins, work-breakdown substitution, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57K prohibits deletion inference, schema coercion, privacy-detail exposure, cross-rail migration, synthetic custody or numeric joins, authority substitution, automatic trigger publication, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57L prohibits cross-record field assembly, readiness scoring, priority inference, schema coercion, privacy-detail exposure, authority substitution, automatic closure or publication, generalized savings, and unsupported causal inference.",
-    "Phase 57M prohibits semantic label coercion, invented or transformed values, cross-record packet assembly, fixture promotion, automatic acceptance, trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference."
+    "Phase 57M prohibits semantic label coercion, invented or transformed values, cross-record packet assembly, fixture promotion, automatic acceptance, trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference.",
+    "Phase 57N prohibits semantic label coercion, fixture promotion, invented reviewer identities or citations, automatic trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Southline permitting, rights-of-way, financing, construction, substation, interconnection, energization, and capacity-service records.",
@@ -821,6 +839,7 @@
     "Source-explicit records that clear named Phase 57J rejection classes while preserving exact identity, definition, period, stage, method, unit, authority, privacy, acceptance, custody, object scope, and closure attribution.",
     "Source-explicit records that satisfy a named Phase 57K reopening contract while preserving exact identity, cohort, denominator, definition, period, stage, method, unit, authority, privacy, acceptance, custody, object scope, and closure attribution.",
     "One source-explicit candidate package that satisfies every field in a named Phase 57L intake envelope and passes human publication review.",
-    "One cited source-explicit candidate packet that satisfies a Phase 57M adapter and receives a bounded named human-review decision."
+    "One cited source-explicit candidate packet that satisfies a Phase 57M adapter and receives a bounded named human-review decision.",
+    "One complete cited packet that passes deterministic validation and receives a complete named human-review receipt before separate publication review."
   ]
 }

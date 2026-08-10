@@ -1,0 +1,63 @@
+{
+  "id": "research-doc-57n-preserved-la-nextlink-adoption",
+  "collection_id": "research-collection-adapter-conformance-packet-validation-reviewer-receipt-ledgers-2026",
+  "title": "Louisiana Nextlink adoption remains In Review after conformance and receipt-harness execution",
+  "slug": "57n-preserved-la-nextlink-adoption",
+  "record_status": "In Review",
+  "publisher": "Louisiana Office of Broadband Development and Connectivity",
+  "publication_date": "2026-08-09",
+  "document_type": "Technical Report",
+  "summary": "18 adapter tests and two fixture validations pass deterministically, but no actual candidate packet, reviewer receipt, cited-source decision, or publication-review handoff exists. Denominator: One inherited hold, 18 adapter tests, 2 fixture executions, six receipt templates, zero actual receipts, and zero trigger events.",
+  "key_findings": [
+    "Evidence stage: Conformance and receipt hold.",
+    "Finding: 18 adapter tests and two fixture validations pass deterministically, but no actual candidate packet, reviewer receipt, cited-source decision, or publication-review handoff exists.",
+    "Denominator: One inherited hold, 18 adapter tests, 2 fixture executions, six receipt templates, zero actual receipts, and zero trigger events.",
+    "Boundary: Synthetic test passage is not evidence or eligibility.",
+    "Boundary: Receipt templates do not create reviewer identities or decisions.",
+    "Boundary: The inherited hold cannot close automatically.",
+    "Next action: Privacy-safe official completed-period adoption table"
+  ],
+  "why_it_matters": "The hold remains actionable while synthetic conformance results stay separate from an actual cited packet and receipted human decision.",
+  "ftfn_relevance": [
+    "Exercises every accepted Phase 57M adapter label plus one explicit ambiguity rejection per field.",
+    "Runs all eighteen packet fixtures through deterministic validators.",
+    "Defines audit receipts for all fifty-four review-table rows without creating an actual reviewer or decision."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Synthetic test passage is not evidence or eligibility.",
+    "Receipt templates do not create reviewer identities or decisions.",
+    "The inherited hold cannot close automatically.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57b-louisiana-nextlink-first-bead-tower",
+  "supporting_source_ids": [
+    "source-57b-louisiana-nextlink-first-bead-tower",
+    "source-57f-montana-leo-quarterly-instructions-june-2026"
+  ],
+  "supporting_official_urls": [
+    "https://connect.la.gov/press-releases/nextlink-activates-first-bead-funded-tower-in-the-united-states-connecting-rural-louisiana",
+    "https://doa.mt.gov/_docs/connectmt/LEO-Quarterly-Report-Instructions-6.1.26.pdf"
+  ],
+  "official_url": "https://connect.la.gov/press-releases/nextlink-activates-first-bead-funded-tower-in-the-united-states-connecting-rural-louisiana",
+  "local_capture_path": "/downloads/adapter-conformance-packet-validation-reviewer-receipt-ledgers-2026/official-links/23-preserved-la-nextlink-adoption.txt",
+  "archive_member": "official-links/23-preserved-la-nextlink-adoption.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}

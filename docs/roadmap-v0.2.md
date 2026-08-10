@@ -1,6 +1,6 @@
 # FTFN v0.2 Roadmap
 
-Date: 2026-07-25
+Date: 2026-08-09
 
 v0.2 is the first authority-loop build: a release that proves FTFN can maintain a current, source-led analytical resource through repeatable human review.
 
@@ -410,12 +410,13 @@ Recommended active schedule:
 | Completed and included in owner-only Sites version 68 | Phase 57K | twenty Published transition controls, nine preserved holds, four longitudinal matrices, nine reopening contracts, Research Watch 041, a thirty-two-file archive, and a verified 2,527-page contract |
 | Completed and owner-only deployed | Phase 57L | twenty Published field-operationalization controls, nine preserved holds, sixty classified fields, nine intake queues, nine playbooks, sixty actions, Research Watch 042, a thirty-two-file archive, a verified 2,587-page contract, and Sites version 68 |
 | Completed and owner-only deployed | Phase 57M | twenty Published workflow controls, nine preserved holds, sixty adapters, 120 accepted labels, eighteen non-evidence fixtures, nine decision tables, fifty-four rehearsal rows, Research Watch 043, a thirty-two-file archive, a verified 2,647-page contract, and Sites version 69 |
-| Next content gate | Phase 57N | adapter-conformance tests, packet-validation harnesses, and reviewer-receipt ledgers |
+| Completed locally; deployment not requested | Phase 57N | twenty Published deterministic controls, nine preserved holds, 120 accepted-label tests, sixty ambiguity rejections, eighteen fixture executions, fifty-four receipt templates, Research Watch 044, a thirty-two-file archive, and a verified 2,707-page contract |
+| Next content gate | Phase 57O | reviewer-role authorization matrices, receipt-integrity checks, and publication-handoff state machines |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now contains the Phase 57M adapter and human-review-control layer. Phase 57M reviews twenty-nine records and publishes twenty bounded workflow controls while preserving all nine Phase 57L holds and adding no new hold. Thirty-six carried Tier 1 sources support sixty non-coercive adapters and 120 exact adapter-vocabulary labels with zero populated source values, semantic coercions, or transformations. Nine empty and nine deliberately incomplete fixtures remain synthetic non-evidence records. Nine six-outcome human-review tables contain fifty-four rehearsal rows while evaluating and accepting zero actual candidate packets and firing zero triggers. No operating-outcome, directive-scope, implementation, capability, closure, agency-contact, FOIA, or entity-ledger change is recorded. Owner-only Sites version 69 now serves the verified Phase 57M package with one owner, no groups, no editors, and zero external visitors. Phase 57N conformance tests, validation harnesses, and reviewer receipts are next; dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now contains the local Phase 57N deterministic-validation and reviewer-receipt layer. Phase 57N reviews twenty-nine records and publishes twenty bounded workflow controls while preserving all nine Phase 57M holds and adding no new hold. Thirty-six carried Tier 1 sources support 120 accepted-label tests, sixty explicit ambiguity rejections, eighteen bounded fixture executions, and fifty-four machine-readable receipt templates with zero actual packets, reviewer identities, citations, receipts, decisions, handoffs, triggers, closures, or publications. No operating-outcome, directive-scope, implementation, capability, closure, agency-contact, FOIA, or entity-ledger change is recorded. Deployment was not requested; owner-only Sites version 69 continues to serve the verified Phase 57M package with one owner, no groups, no editors, and zero external visitors. Phase 57O reviewer authorization, receipt integrity, and publication-handoff controls are next; dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -1959,7 +1960,7 @@ Boundaries:
 - a review rehearsal cannot fire a trigger or publish an outcome;
 - no automated publication, ranking, composite, generalized savings claim, or unsupported causal inference.
 
-### Phase 57N: Adapter-Conformance Tests, Packet-Validation Harnesses, And Reviewer-Receipt Ledgers - Next Content Gate
+### Phase 57N: Adapter-Conformance Tests, Packet-Validation Harnesses, And Reviewer-Receipt Ledgers - Complete And Release-Validated Locally; Deployment Not Requested
 
 Goal: prove that the Phase 57M workflow controls behave deterministically before any actual candidate evidence packet enters review.
 
@@ -1976,6 +1977,35 @@ Boundaries:
 - synthetic test execution is not evidence ingestion;
 - a passing conformance test does not establish that an official candidate packet exists;
 - reviewer-receipt templates cannot create an actual reviewer identity or decision;
+- no automated trigger firing, closure, publication, ranking, composite, generalized savings claim, or unsupported causal inference.
+
+Delivered:
+
+- twenty-nine reviewed records with twenty Published deterministic-workflow controls and nine preserved In Review holds;
+- 120 accepted-label cases and sixty explicit ambiguity rejections across all sixty Phase 57M adapters, with 180 passes, zero failures, zero semantic coercions, and zero source values or evidence records created;
+- all nine empty and nine deliberately incomplete fixtures executed exactly once through nine contract validators, with one rejection, eleven clarification routes, two privacy holds, two authority holds, two period holds, and zero accept routes;
+- fifty-four machine-readable receipt templates covering reviewer identity, reason code, cited source, decision time, escalation state, and publication-review handoff, with zero actual reviewer identities, citations, receipts, decisions, or handoffs;
+- thirty-six carried Tier 1 sources, Research Watch 044, one collection, one update, and a thirty-two-file archive;
+- a verified 2,707-page contract with 715 sources, 844 signals, 656 Published, 188 In Review, forty-nine collections, 960 research documents, fifty-two briefings, 68 updates, 840 research export records, and 498 Published-support sources;
+- all nine Phase 57M holds preserved exactly once, no new hold, and zero trigger, directive-scope, implementation, closure, agency-contact, FOIA, or inherited entity-ledger change.
+
+### Phase 57O: Reviewer-Role Authorization, Receipt Integrity, And Publication-Handoff State Machines - Next Content Gate
+
+Goal: make the Phase 57N receipt contract enforceable without creating an automated publication path or inventing reviewer identity, citation, or decision data.
+
+Priorities:
+
+1. define evidence-reviewer and publication-reviewer role separation for all nine contracts;
+2. validate receipt completeness, decision-specific reason codes, cited-source identity, immutable decision time, and escalation state;
+3. reject missing, incompatible, or mutated receipt fields and preserve a machine-readable audit reason;
+4. prove that only a complete accept receipt can enter a separate human publication-review queue and that no other decision can advance;
+5. preserve all nine Phase 57N holds and publish only role, integrity, and handoff-control records.
+
+Boundaries:
+
+- authorization matrices and state machines are workflow controls, not actual user accounts or reviewer assignments;
+- receipt-integrity tests cannot create or validate evidence that was never cited;
+- a valid handoff state is not a publication decision and cannot fire a reopening trigger;
 - no automated trigger firing, closure, publication, ranking, composite, generalized savings claim, or unsupported causal inference.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
@@ -2090,10 +2120,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 57N adapter-conformance tests, packet-validation harnesses, and reviewer-receipt ledgers. Test all 120 accepted labels plus explicit ambiguity rejections, execute all eighteen fixtures against their bounded expected outcomes, keep every synthetic result explicitly non-evidentiary, and preserve all nine Phase 57M holds.
+Begin Phase 57O reviewer-role authorization matrices, receipt-integrity checks, and publication-handoff state machines. Require role separation, complete cited receipts, decision-specific reason codes, immutable decision times, bounded escalation states, and a separate human publication-review queue while preserving all nine Phase 57N holds.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 57M is complete, production-rendered, release-validated, and owner-only deployed at 2,647 pages, with 715 sources, 815 signals, 636 Published signals, 179 In Review signals, 48 collections, 931 research documents, 51 briefings, 67 updates, 819 research export records, and 498 Published-support sources. Sites version 69 serves exact private runtime commit `ab6e14d05ca55daf4f92655218d307d247547a3e` in `appgdep_6a77c388da3c8191816d4e0c85636594` with one owner, no groups, no editors, and zero external visitors. Phase 57N may proceed without waiting on dated source updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phase 57N is complete, production-rendered, and release-validated locally at 2,707 pages, with 715 sources, 844 signals, 656 Published signals, 188 In Review signals, 49 collections, 960 research documents, 52 briefings, 68 updates, 840 research export records, and 498 Published-support sources. Deployment was not requested. Sites version 69 continues to serve the exact Phase 57M private runtime commit `ab6e14d05ca55daf4f92655218d307d247547a3e` in `appgdep_6a77c388da3c8191816d4e0c85636594` with one owner, no groups, no editors, and zero external visitors. Phase 57O may proceed without waiting on dated source updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

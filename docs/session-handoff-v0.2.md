@@ -1,26 +1,26 @@
 # FTFN v0.2 Session Handoff Plan
 
-Date: 2026-08-08
+Date: 2026-08-09
 
 Use this document to restart FTFN in a new Codex session without reconstructing the project from chat history.
 
 ## Handoff Snapshot
 
 ```text
-Latest completed local work: Phase 57M source-schema adapters, candidate-evidence packet templates, and human-review decision tables
+Latest completed local work: Phase 57N adapter-conformance tests, packet-validation harnesses, and reviewer-receipt ledgers
 Current branch: codex/phase51-content
 Preserved Phase 52B checkpoint: 35f26f4
 Git state: branch remains unpushed to public GitHub; exact hosted checkpoint exists in the private Sites source repository
 Package: 0.2.0-dev
-Build: 2,647 generated site pages
-Content: 715 sources, 815 signals, 17 topics, 5 local systems, 48 research collections / 931 research documents
-Publication: 636 Published signals, 179 In Review signals, 44 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
-Trust/data: 67 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, sixty Phase 57M non-coercive adapters, 120 accepted labels, 18 non-evidence fixtures, nine six-outcome review tables, 54 rehearsal rows, all prior verified research archives plus the Phase 57M 32-file archive
+Build: 2,707 generated site pages
+Content: 715 sources, 844 signals, 17 topics, 5 local systems, 49 research collections / 960 research documents
+Publication: 656 Published signals, 188 In Review signals, 45 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency maps
+Trust/data: 68 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 versioned JSON exports, 180 Phase 57N adapter tests, 18 deterministic non-evidence fixture executions, 54 reviewer-receipt templates, all prior verified research archives plus the Phase 57N 32-file archive
 Private authority layer: 150 candidates, 15 profiles, 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage
-Deployment: Phase 57M owner-only Sites version 69 is live on exact private runtime commit ab6e14d05ca55daf4f92655218d307d247547a3e in appgdep_6a77c388da3c8191816d4e0c85636594; one owner, no groups, no editors, zero external visitors
+Deployment: Phase 57N deployment was not requested; Phase 57M owner-only Sites version 69 remains live on exact private runtime commit ab6e14d05ca55daf4f92655218d307d247547a3e in appgdep_6a77c388da3c8191816d4e0c85636594; one owner, no groups, no editors, zero external visitors
 Domain: ftfn.io is ready; production DNS is unchanged
 Source health: 494 Manual Review, 221 Probe Ready, zero incomplete endpoint declarations; 14 Strong coverage lanes
-Next content gate: Phase 57N adapter-conformance tests, packet-validation harnesses, and reviewer-receipt ledgers; exact-artifact checks, the inherited HHS tracker recheck, and remaining dated inserts do not block expansion
+Next content gate: Phase 57O reviewer-role authorization matrices, receipt-integrity checks, and publication-handoff state machines; exact-artifact checks, the inherited HHS tracker recheck, and remaining dated inserts do not block expansion
 ```
 
 ## Read First
@@ -192,6 +192,9 @@ The approved preview sequence is complete:
 137. Completed and release-validated the Phase 57M content layer: reviewed twenty-nine adapter, packet-fixture, and decision-table records; published twenty and held nine; preserved all nine Phase 57L holds exactly once and added no new hold; reused thirty-six Tier 1 sources; added sixty non-coercive adapters, 120 exact labels, eighteen non-evidence fixtures, nine six-outcome review tables, Research Watch 043, one collection, one update, and a thirty-two-file archive; verified 2,647 pages, 715 sources, 815 signals, 636 Published, 179 In Review, 67 updates, forty-eight collections, 931 research documents, 819 research export records, and 498 current Published-support sources.
 138. Mapped all sixty contract fields one-to-one without transformations or populated source values; rehearsed fifty-four accept, reject, clarification, privacy, authority, and period rows while routing accept only to separate publication review; and recorded zero actual candidate evaluations, accept decisions, eligible-record promotions, or triggers. Phase 57M records zero operating-outcome, directive-scope, implementation, capability, closure, agency-contact, or FOIA changes.
 139. Matched local content commit `a33ffde16c7548f3be44cf74f943dbd45852e257` to exact private runtime commit `ab6e14d05ca55daf4f92655218d307d247547a3e`, verified Phase 57L runtime `44240958e241895323c4199a61b60be252bcf1f7` as its parent, saved the 3,781-file runtime as Sites version 69, deployed it successfully in `appgdep_6a77c388da3c8191816d4e0c85636594`, and confirmed custom owner-only access with one owner, no groups, no editors, and zero external visitors. Visual route QA was not requested.
+140. Completed and release-validated the Phase 57N content layer locally: reviewed twenty-nine conformance, validation, and receipt-control records; published twenty and held nine; preserved all nine Phase 57M holds exactly once and added no new hold; reused thirty-six Tier 1 sources; added 180 adapter tests, eighteen fixture executions, fifty-four reviewer-receipt templates, Research Watch 044, one collection, one update, and a thirty-two-file archive; verified 2,707 pages, 715 sources, 844 signals, 656 Published, 188 In Review, 68 updates, forty-nine collections, 960 research documents, 840 research export records, and 498 current Published-support sources.
+141. Passed all 120 accepted-label cases and sixty explicit ambiguity rejections, then executed all nine empty and nine incomplete fixtures through nine deterministic validators. Defined one receipt template for every Phase 57M decision row with reviewer identity, reason code, cited source, decision time, escalation state, and publication-review handoff fields while recording zero actual packets, reviewers, citations, receipts, decisions, handoffs, triggers, closures, or publications. Phase 57N records zero operating-outcome, directive-scope, implementation, capability, closure, agency-contact, or FOIA changes.
+142. Deployment was not requested for Phase 57N. Owner-only Sites version 69 continues to serve the exact Phase 57M private runtime commit `ab6e14d05ca55daf4f92655218d307d247547a3e` in `appgdep_6a77c388da3c8191816d4e0c85636594` with one owner, no groups, no editors, and zero external visitors. Public access, package freeze, custom-domain attachment, Hostinger DNS, and public GitHub synchronization remain unchanged.
 
 ## Required Stop Points
 
@@ -245,9 +248,9 @@ Read, in order:
 
 Then verify the actual Git status, current commit, branch relationship to origin/main, package version, and release-manifest counts. Do not rely on the documents if the repository disagrees.
 
-The latest completed content work is Phase 57M. The current candidate should be 0.2.0-dev on codex/phase51-content with 715 sources, 815 signals, 636 Published signals, 179 In Review signals, five local systems, forty-four Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 67 public updates, five JSON exports, 2,647 generated site pages, forty-eight research collections, 931 research documents, 819 research export records, sixty non-coercive adapters, 120 exact labels, eighteen non-evidence fixtures, nine six-outcome decision tables, fifty-four rehearsal rows, all prior verified archives, and the Phase 57M thirty-two-file archive. Sites version 69 serves exact private runtime commit `ab6e14d05ca55daf4f92655218d307d247547a3e` in deployment `appgdep_6a77c388da3c8191816d4e0c85636594` with owner-only access. Public access and DNS remain unchanged.
+The latest completed content work is Phase 57N. The current candidate should be 0.2.0-dev on codex/phase51-content with 715 sources, 844 signals, 656 Published signals, 188 In Review signals, five local systems, forty-five Published briefings, seven In Review briefings, six Published and one In Review dependency map, sixteen evidence gaps, fifteen reader pathways across 19 Atlas surfaces, 68 public updates, five JSON exports, 2,707 generated site pages, forty-nine research collections, 960 research documents, 840 research export records, 120 accepted-label tests, sixty ambiguity rejections, eighteen deterministic fixture executions, fifty-four reviewer-receipt templates, all prior verified archives, and the Phase 57N thirty-two-file archive. Phase 57N deployment was not requested. Sites version 69 continues to serve the exact Phase 57M private runtime commit `ab6e14d05ca55daf4f92655218d307d247547a3e` in deployment `appgdep_6a77c388da3c8191816d4e0c85636594` with owner-only access. Public access and DNS remain unchanged.
 
 The private authority layer contains 150 local-only candidates across 15 profiles: 72 Candidate, 71 Active Source Record, four Watchlist Only, two Blocked, one Rejected, and zero Needs Triage. Confirm the registry remains Git-ignored, run npm.cmd run validate:candidates, and do not copy candidate IDs, private notes, registry structure, or non-promoted candidate contents into public Git, app content, exports, issues, or build artifacts.
 
-Begin Phase 57N adapter-conformance tests, packet-validation harnesses, and reviewer-receipt ledgers. Exercise all 120 accepted labels plus ambiguity rejections, run all eighteen Phase 57M fixtures against their expected decisions, and define machine-readable receipts for reviewer identity, reason code, cited source, decision time, escalation state, and publication-review handoff. Preserve all nine holds, prohibit automatic trigger or publication behavior, and do not represent a search as agency contact or a submitted FOIA request. Keep agency assertions, regulator evidence, FTFN controls, GAO acceptance, implementation, closure, entity evidence, identity, schema, cohort, stage, period, unit, threshold operator, method, denominator, revision history, privacy boundary, attribution, and operating outcomes separate. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval.
+Begin Phase 57O reviewer-role authorization matrices, receipt-integrity checks, and publication-handoff state machines. Require separation between evidence reviewer and publication reviewer, validate receipt completeness and decision-specific reason codes, reject missing or mutated citations and timestamps, and prove that only a complete accept receipt can enter a separate publication-review queue. Preserve all nine holds, prohibit automatic trigger or publication behavior, and do not represent a search as agency contact or a submitted FOIA request. Keep agency assertions, regulator evidence, FTFN controls, reviewer identity, GAO acceptance, implementation, closure, entity evidence, identity, schema, cohort, stage, period, unit, threshold operator, method, denominator, revision history, privacy boundary, attribution, and operating outcomes separate. Do not change Hostinger DNS, freeze 0.2.0, launch publicly, or activate public database behavior without separate explicit approval.
 ```
