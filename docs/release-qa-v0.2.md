@@ -2,7 +2,7 @@
 
 Date: 2026-08-09
 
-Status: Phase 57N local release gates passed; deployment not requested. Phase 57M owner-only Sites version 69 remains live.
+Status: Phase 57N release gates passed; owner-only Sites version 70 deployed successfully.
 
 ## Artifact Under Review
 
@@ -338,4 +338,4 @@ The 2,707-page artifact passes:
 - the 68-entry update log and five versioned public-data exports;
 - canonicals, robots, sitemap, required outputs, private-registry exclusion, and public/private export boundaries.
 
-A repeat visual/browser pass was not requested because Phase 57N uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, and release-contract checks pass. Deployment was not requested. Owner-only Sites version 69 remains on the exact Phase 57M runtime commit `ab6e14d05ca55daf4f92655218d307d247547a3e` in deployment `appgdep_6a77c388da3c8191816d4e0c85636594` with one owner, no groups, no editors, and zero external visitors. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.
+A repeat visual/browser pass was not requested because Phase 57N uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, and release-contract checks pass. Local content commit `8a22c032b58b64a6543d0d1c876465e2ad75ddce` maps to exact private runtime commit `77654203b4ce005620138de766966e5f3e2236c6`, deployed successfully as owner-only Sites version 70 in deployment `appgdep_6a792e9a01fc819192dabb660ae9bcd3` with one owner, no groups, no editors, and zero external visitors. The 3,874-file runtime archive provenance and source parent were verified after deployment. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.

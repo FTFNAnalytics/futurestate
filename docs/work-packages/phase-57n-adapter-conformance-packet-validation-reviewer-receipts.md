@@ -2,7 +2,7 @@
 
 Date: 2026-08-09
 
-Status: complete and release-validated locally; deployment not requested
+Status: complete, release-validated, and owner-only deployed as Sites version 70
 
 ## Goal
 
@@ -117,10 +117,10 @@ The nine inherited Amtrak closeout and reliability, Louisiana and Montana adopti
 
 Build reviewer-role authorization matrices, receipt-integrity checks, and publication-handoff state machines across all nine contracts. Require separation between evidence reviewer and publication reviewer, validate receipt completeness and reason-code compatibility, reject missing or mutated citations and timestamps, and prove that only a complete accept receipt can enter a separate publication-review queue. Preserve all nine Phase 57N holds, keep every synthetic test outside the evidence ledger, and prohibit automated trigger firing, closure, or publication.
 
-## Validation checkpoint
+## Deployment checkpoint
 
 Private-candidate validation, content references, source health, Astro diagnostics, the 2,707-page production build, Phase 57N harness and assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the thirty-two-file archive pass at 715 sources, 844 signals, 656 Published, 188 In Review, fifty-two briefings, forty-nine collections, 960 research documents, 180 adapter tests, eighteen fixture executions, and fifty-four receipt templates.
 
 The archive is 38,876 bytes with SHA-256 `8101224456C53AD595E3BB9056EC51BE14A2DBF822E4D7BE75AA68B8999D60FF`.
 
-Deployment was not requested. Owner-only Sites version 69 continues to serve the exact Phase 57M runtime commit `ab6e14d05ca55daf4f92655218d307d247547a3e` in `appgdep_6a77c388da3c8191816d4e0c85636594` with one owner, no groups, no editors, and zero external visitors. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
+Local content commit `8a22c032b58b64a6543d0d1c876465e2ad75ddce` maps to exact private runtime commit `77654203b4ce005620138de766966e5f3e2236c6`, whose parent is the Phase 57M runtime `ab6e14d05ca55daf4f92655218d307d247547a3e`. The 3,874-file runtime is deployed successfully as owner-only Sites version 70 in `appgdep_6a792e9a01fc819192dabb660ae9bcd3` with one owner, no groups, no editors, and zero external visitors. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
