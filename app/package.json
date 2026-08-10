@@ -45,7 +45,9 @@
     "verify:phase57l": "node ./scripts/assert-phase57l.mjs",
     "verify:phase57m": "node ./scripts/assert-phase57m.mjs",
     "test:phase57n": "node ./scripts/phase57n-validation-harness.mjs",
-    "verify:phase57n": "node ./scripts/assert-phase57n.mjs"
+    "verify:phase57n": "node ./scripts/assert-phase57n.mjs",
+    "test:phase57o": "node ./scripts/phase57o-workflow-harness.mjs",
+    "verify:phase57o": "node ./scripts/assert-phase57o.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.0",

@@ -193,7 +193,17 @@
     "signal-57n-broadband-19-ambiguous-label-rejections",
     "signal-57n-broadband-6-packet-fixture-validations",
     "signal-57n-broadband-18-reviewer-receipt-templates",
-    "signal-57n-broadband-zero-candidate-review-trigger-or-publication-events"
+    "signal-57n-broadband-zero-candidate-review-trigger-or-publication-events",
+    "signal-57o-amtrak-2-reviewer-role-authorization-matrices",
+    "signal-57o-amtrak-60-receipt-completeness-reason-code-checks",
+    "signal-57o-amtrak-24-citation-timestamp-mutation-rejections",
+    "signal-57o-amtrak-20-publication-handoff-state-routes",
+    "signal-57o-amtrak-zero-actual-review-handoff-trigger-or-publication-events",
+    "signal-57o-broadband-3-reviewer-role-authorization-matrices",
+    "signal-57o-broadband-90-receipt-completeness-reason-code-checks",
+    "signal-57o-broadband-36-citation-timestamp-mutation-rejections",
+    "signal-57o-broadband-30-publication-handoff-state-routes",
+    "signal-57o-broadband-zero-actual-review-handoff-trigger-or-publication-events"
   ],
   "source_ids": [
     "source-virginia-scc-large-load-gs5-2025",
@@ -285,7 +295,8 @@
     "briefing-research-watch-041-cross-version-transition-matrices-longitudinal-panels",
     "briefing-research-watch-042-contract-field-coverage-intake-playbooks",
     "briefing-research-watch-043-source-schema-adapters-packet-review-controls",
-    "briefing-research-watch-044-adapter-conformance-packet-validation-receipts"
+    "briefing-research-watch-044-adapter-conformance-packet-validation-receipts",
+    "briefing-research-watch-045-reviewer-authorization-receipt-integrity-publication-handoffs"
   ],
   "dependency_map_ids": [
     "dependency-map-local-authorization-is-not-operation",
@@ -314,7 +325,8 @@
     "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
     "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
     "research-collection-source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026",
-    "research-collection-adapter-conformance-packet-validation-reviewer-receipt-ledgers-2026"
+    "research-collection-adapter-conformance-packet-validation-reviewer-receipt-ledgers-2026",
+    "research-collection-reviewer-authorization-receipt-integrity-publication-handoff-state-machines-2026"
   ],
   "evidence_gap_ids": [
     "gap-011",
@@ -443,6 +455,11 @@
       "stage": "Phase 57N deterministic validation and reviewer receipts",
       "current_state": "180 adapter tests and eighteen fixture executions pass; fifty-four receipt templates exist; zero actual packets, receipts, decisions, triggers, closures, or publications are recorded.",
       "boundary": "Synthetic test passage and receipt templates are workflow infrastructure, not evidence, eligibility, reviewer identity, or a publication decision."
+    },
+    {
+      "stage": "Phase 57O reviewer authorization, receipt integrity, and publication handoffs",
+      "current_state": "Nine role matrices, 270 receipt-integrity cases, 63 authorization cases, and 90 handoff cases pass; zero actual packets, reviewers, receipts, decisions, triggers, closures, or publications are recorded.",
+      "boundary": "Synthetic identities, receipts, signatures, and queue transitions are workflow infrastructure, not evidence, reviewer assignments, eligibility, closure, or publication."
     }
   ],
   "evidence_limits": [
@@ -473,7 +490,8 @@
     "Phase 57K prohibits deletion inference, schema coercion, privacy-detail exposure, cross-rail migration, synthetic custody or numeric joins, authority substitution, automatic trigger publication, rankings, composite scores, readiness scores, generalized savings, and unsupported causal inference.",
     "Phase 57L prohibits cross-record field assembly, readiness scoring, priority inference, schema coercion, privacy-detail exposure, authority substitution, automatic closure or publication, generalized savings, and unsupported causal inference.",
     "Phase 57M prohibits semantic label coercion, invented or transformed values, cross-record packet assembly, fixture promotion, automatic acceptance, trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference.",
-    "Phase 57N prohibits semantic label coercion, fixture promotion, invented reviewer identities or citations, automatic trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference."
+    "Phase 57N prohibits semantic label coercion, fixture promotion, invented reviewer identities or citations, automatic trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference.",
+    "Phase 57O prohibits same-person evidence and publication review, missing or incompatible receipt fields, mutated signed citations or times, non-accept handoffs, automatic trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Northern Virginia route, construction, energization, customer-service, water, emissions-compliance, reliability, and local-outcome records.",
@@ -501,6 +519,7 @@
     "Source-explicit records that satisfy a named Phase 57K reopening contract while preserving exact identity, cohort, denominator, definition, period, stage, method, unit, authority, privacy, acceptance, custody, object scope, and closure attribution.",
     "One source-explicit candidate package that satisfies every field in a named Phase 57L intake envelope and passes human publication review.",
     "One cited source-explicit candidate packet that satisfies a Phase 57M adapter and receives a bounded named human-review decision.",
-    "One complete cited packet that passes deterministic validation and receives a complete named human-review receipt before separate publication review."
+    "One complete cited packet that passes deterministic validation and receives a complete named human-review receipt before separate publication review.",
+    "One complete cited accept packet with an immutable signed receipt, distinct authorized evidence and publication reviewers, and a separately recorded publication decision."
   ]
 }

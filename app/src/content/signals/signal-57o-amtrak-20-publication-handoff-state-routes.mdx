@@ -1,0 +1,66 @@
+---
+id: "signal-57o-amtrak-20-publication-handoff-state-routes"
+title: "Amtrak routes 20 publication-handoff cases without automatic publication"
+slug: "57o-amtrak-20-publication-handoff-state-routes"
+record_status: "Published"
+summary: "2 complete accept fixtures reach a separate publication-review queue, 10 non-accept fixtures terminate without handoff, and 8 invalid accept fixtures are rejected."
+source_ids:
+  - "source-57f-amtrak-stations-alp-fy24-29"
+  - "source-57b-amtrak-ada-progress-june-2026"
+  - "source-57e-amtrak-accessibility-progress-june-2026"
+published_date: 2026-08-09
+captured_date: 2026-08-09
+primary_topic: "Mobility"
+framework_layers:
+  - "Enabling Infrastructure"
+  - "Human Systems"
+signal_type: "Research Result"
+maturity_level: "Infrastructure"
+time_horizon: "Now"
+evidence_quality: "Official Data"
+verification_status: "Verified Against Primary Source"
+why_it_matters: "Evidence stage: Amtrak reviewer authorization, receipt integrity, and publication handoff controls. Denominator: 20 state-machine cases across 2 contracts; zero actual handoffs, triggers, closures, or publications."
+dependencies:
+  - "one complete cited candidate evidence packet"
+  - "a named evidence reviewer and immutable complete receipt"
+  - "a distinct authorized publication reviewer and separate publication decision"
+constraints:
+  - "Data Quality"
+  - "Regulation"
+  - "Public Trust"
+receiving_systems:
+  - "Phase 57O reviewer authorization, receipt integrity, and publication-handoff controls"
+local_implications:
+  - "Do not convert a synthetic role, receipt, integrity result, or queue transition into evidence, reviewer identity, eligibility, a trigger, closure, or publication."
+evidence_gap_ids:
+  - "gap-015"
+  - "gap-016"
+claim_scope: "Specific Source Update"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-08-09
+editorial_notes: "Published under the Phase 57O reviewer-separation and receipt-integrity control contract."
+---
+
+## Phase 57O workflow control
+
+2 complete accept fixtures reach a separate publication-review queue, 10 non-accept fixtures terminate without handoff, and 8 invalid accept fixtures are rejected.
+
+## Evidence stage and denominator
+
+**Amtrak reviewer authorization, receipt integrity, and publication handoff controls.** 20 state-machine cases across 2 contracts; zero actual handoffs, triggers, closures, or publications.
+
+Structured registry: phase-57o-publication-handoff-state-machines.json.
+
+## Evidence boundaries
+
+- Queue entry is not a publication decision.
+- Only complete accept receipts may reach separate publication review.
+- No state transition fires a trigger, closes a hold, or publishes automatically.
+
+Actual candidate packets evaluated: **Zero**. Actual reviewer identities, signed receipts, publication-review handoffs, and publication decisions: **Zero**. Trigger and closure events: **Zero**. FTFN submitted no agency contact or FOIA request.
+
+Next action: Keep the publication queue empty until one actual complete accept receipt has a distinct authorized reviewer.
+
+## Authority boundary
+
+Agency assertions, independent oversight, FTFN workflow controls, evidence-review identity, publication-review identity, receipt integrity, acceptance, implementation, capability, closure, and operating outcomes remain separate evidence states.
