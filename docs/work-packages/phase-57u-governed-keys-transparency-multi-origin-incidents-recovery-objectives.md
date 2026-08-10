@@ -1,6 +1,6 @@
 # Phase 57U Work Package: Governed Keys, Transparency, Multi-Origin Integrity, Incidents, and Recovery Objectives
 
-Status: complete and release-validated locally; owner-only deployment pending
+Status: complete, release-validated, and owner-only deployed as Sites version 77
 
 Captured: 2026-08-09
 
@@ -104,6 +104,10 @@ The 66-file archive contains 63 official-link records, consolidated summaries, a
 ## Phase 57V handoff
 
 Build threshold release authorization, independent witness checkpoints, cross-log gossip, trusted-time anti-rollback receipts, verifier-diversity conformance, and key-compromise recovery across all nine contracts. Require an explicit M-of-N authorization policy without same-actor quorum, independently witnessed transparency checkpoints, gossip detection of split views, monotonic trusted time, reproducible results across at least three verifier implementations, and bounded crypto-agility and compromise recovery without retroactively trusting artifacts signed by a compromised key. Preserve all nine Phase 57U holds and keep every synthetic threshold share, witness signature, checkpoint, gossip message, time receipt, verifier result, compromise event, recovery action, and drill outside the evidence ledger.
+
+## Deployment receipt
+
+Local content commit `8facebbffbcf6f3d27910de1c549e755f5fe11d0` maps to exact private runtime commit `07121a8290c775e6672574a678fe659cbe94d38b`, whose verified parent is the Phase 57T runtime `784f72c412f3dda8592d097fe665296206bd273f`. The 4,846-file runtime archive is 181,022,720 bytes with content hash `sha256:dd0a576c90333242ef626440ce3fa463f12c98647365de863d9a74c816cefb9a`. Sites version 77 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_058244f69c248191b918e83a4703b6b7`) deployed successfully in `appgdep_6a7964874854819198ab50f448f65039` at `https://ftfn-analytics.jbumstead.chatgpt.site`. Access remains custom owner-only with one owner, no groups, no editors, and zero external visitors. Visual route QA was not requested because this release uses the existing content templates and route families.
 
 ## Validation checkpoint
 

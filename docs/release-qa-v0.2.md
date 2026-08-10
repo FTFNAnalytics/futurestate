@@ -2,7 +2,7 @@
 
 Date: 2026-08-09
 
-Status: Phase 57U release gates pass locally; exact-source commit and owner-only deployment are pending while Sites version 76 remains live.
+Status: Phase 57U release gates and owner-only Sites version 77 deployment pass.
 
 ## Artifact Under Review
 
@@ -517,4 +517,4 @@ The 3,341-page artifact passes:
 - the 75-entry update log and five versioned public-data exports;
 - canonicals, robots, sitemap, required outputs, private-registry exclusion, and public/private export boundaries.
 
-A repeat visual/browser pass was not requested because Phase 57U uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, Phase 57T regression, candidate validation, content-reference validation, and source-health checks pass. Exact-source commit and owner-only deployment receipts remain pending; Sites version 76 remains live under the unchanged one-owner policy. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.
+A repeat visual/browser pass was not requested because Phase 57U uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, Phase 57T regression, candidate validation, content-reference validation, and source-health checks pass. Local content commit `8facebbffbcf6f3d27910de1c549e755f5fe11d0` maps to exact private runtime commit `07121a8290c775e6672574a678fe659cbe94d38b`, whose verified parent is Phase 57T runtime `784f72c412f3dda8592d097fe665296206bd273f`. The 4,846-file runtime archive is 181,022,720 bytes with content hash `sha256:dd0a576c90333242ef626440ce3fa463f12c98647365de863d9a74c816cefb9a`; it deployed successfully as owner-only Sites version 77 in `appgdep_6a7964874854819198ab50f448f65039` with one owner, no groups, no editors, and zero external visitors. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.
