@@ -1,6 +1,6 @@
 # Phase 57Y Work Package: Federation Remediation, Rotation, Recusal, Holdover, Coordinated Rollout, and Long-Term Recovery
 
-Status: complete and locally release-validated; exact content commit receipt pending
+Status: complete, locally release-validated, and preserved in combined content commit `dad34e4463a34dd0d121d5521755f8f6ead62ccf`; owner-only deployment pending
 
 Captured: 2026-08-10
 
@@ -77,7 +77,7 @@ Return the roadmap to dated primary-source evidence. Recheck Toronto after its C
 
 ## Deployment boundary
 
-Phase 57Y is complete and release-validated locally. Its exact content commit will be recorded with the combined Phase 57Z package. No private-runtime mapping or deployment receipt exists for Phase 57Y or Phase 57Z. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Packaging, deployment, access, domain, DNS, release freeze, public GitHub synchronization, and public launch remain separate explicit decisions.
+Phase 57Y is complete and release-validated locally in combined content commit `dad34e4463a34dd0d121d5521755f8f6ead62ccf`. No private-runtime mapping or deployment receipt exists for Phase 57Y or Phase 57Z. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Packaging, deployment, access, domain, DNS, release freeze, public GitHub synchronization, and public launch remain separate explicit decisions.
 
 ## Validation checkpoint
 

@@ -706,7 +706,7 @@ The completed expansion program is defined in `docs/work-packages/phase-55s-55w-
 
 ## Repository And Deployment State
 
-The local release work is preserved on `codex/phase51-content`. Phases 57Y and 57Z are complete, production-rendered, and release-validated locally; the exact combined content commit is pending its receipt update. Private-runtime mapping and owner-only deployment remain pending. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
+The local release work is preserved on `codex/phase51-content`. Phases 57Y and 57Z are complete, production-rendered, and release-validated locally in combined content commit `dad34e4463a34dd0d121d5521755f8f6ead62ccf`. Private-runtime mapping and owner-only deployment remain pending. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
 The current hosting checkpoint is owner-only Sites version 79, serving the verified Phase 57W package from exact private runtime commit `00be8bbd39173a2f726e9cea100a803b02a398c8` in deployment `appgdep_6a7977dd422881919873d6d165ff1f58`. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. Exact-source commit, owner-only redeployment, GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
