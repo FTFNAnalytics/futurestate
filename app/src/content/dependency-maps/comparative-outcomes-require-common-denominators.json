@@ -1403,6 +1403,12 @@
       "label": "Nine release checklists; nine immutable bundles; nine reversible lifecycles; zero actual events",
       "node_type": "Signal",
       "note": "Release remains distinct from publication, exact artifacts remain digest-bound, and withdrawal or rollback never erases prior history."
+    },
+    {
+      "id": "node-phase57r-publication-status-provenance",
+      "label": "Nine status registries; nine immutable notice contracts; nine restore schemas; zero actual events",
+      "node_type": "Signal",
+      "note": "Availability derives from append-only history; notice bindings are immutable; restoration or republication requires a new human authorization and exact bundle digest."
     }
   ],
   "links": [
@@ -2343,6 +2349,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Release and publication controls do not establish operating outcomes, eligibility, implementation, closure, or causation."
+    },
+    {
+      "from": "node-phase57r-publication-status-provenance",
+      "to": "node-phase57q-manual-release-bundles",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57R derives status only from Phase 57Q append-only release, publication, withdrawal, rollback, and supersession history."
+    },
+    {
+      "from": "node-phase57r-publication-status-provenance",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "A reader-facing status cannot cure an incompatible identity, definition, unit, method, denominator, period, privacy, authority, or acceptance boundary."
+    },
+    {
+      "from": "node-phase57r-publication-status-provenance",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Status, notices, and provenance do not establish implementation, capability, closure, operating outcomes, attribution, or causation."
     }
   ],
   "what_this_map_supports": [

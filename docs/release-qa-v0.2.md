@@ -414,3 +414,28 @@ The 2,919-page artifact passes:
 - canonicals, robots, sitemap, required outputs, private-registry exclusion, and public/private export boundaries.
 
 A repeat visual/browser pass was not requested because Phase 57Q uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, Phase 57P regression, and release-contract checks pass. Local content commit `7a9157cdf91292742730570dc5744192c6ab8834` maps to exact private runtime commit `f368df8788f6aceeccd1815e91b9927be8a760e9`, whose verified parent is the Phase 57P runtime `f3702d3d1727af02ccd0daa8d44968bfbe6b658a`. The 4,201-file runtime is deployed successfully as owner-only Sites version 73 in `appgdep_6a794c51082481919b795efa52769323` with one owner, no groups, no editors, and zero external visitors. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.
+
+## Phase 57R Publication Status, Change Notice, Restore, And Provenance QA Scope
+
+Phase 57R adds executable reader-facing status and provenance controls without changing components, styles, layouts, navigation, or client-side behavior. It adds nine current-publication-status registries, nine immutable change-notice schemas, nine restore and republication schemas, forty-five signal routes, forty-five research-document routes, one collection route, one Published briefing route, one update, and a forty-eight-file archive.
+
+The 3,011-page artifact passes:
+
+- private-candidate validation for the unchanged 150-record local-only registry and duplicate checks against 715 public sources;
+- content-reference validation across 715 sources, 992 signals, 17 topics, five local systems, fifty-six briefings, sixteen evidence gaps, seven dependency maps, fifty-three research collections, 1,108 research documents, fifteen reader pathways, and 72 updates;
+- source endpoint metadata review for 494 Manual Review and 221 Probe Ready sources;
+- all 126 status-derivation cases, including fifty-four valid states plus missing-event, duplicate-ID, chronology, receipt, truncation, mutation, automation, and evidence-inflation rejections;
+- all 126 immutable-notice cases, including fifty-four valid publication, withdrawal, rollback, supersession, restoration, and republication notices plus seventy-two identifier, type, event, receipt, event-digest, bundle-digest, rewrite, and state-inflation rejections;
+- all 144 restore and provenance cases, including new-human-authorization, new-bundle, prior-history-preservation, and controlling-event advancement routes plus ninety stale, automated, unknown-target, duplicate, chronology, rewrite, publication, evidence, and closure rejections;
+- Astro diagnostics with zero errors or warnings and one inherited non-blocking unused-variable hint in the Phase 57L generator;
+- production generation of 3,011 pages;
+- all 768 Published signal routes in the sitemap and all 224 In Review routes outside it;
+- exactly 498 current Published-support sources;
+- all forty-nine Published briefing routes in the sitemap and all seven In Review briefing routes outside it;
+- all six Published dependency-map routes in the sitemap and the one In Review map outside it;
+- fifty-three research collections, 1,108 document routes, and 956 research export records;
+- a verified forty-eight-file ZIP containing forty-five official-link records, summaries, README, and SHA-256 manifest;
+- the 72-entry update log and five versioned public-data exports;
+- canonicals, robots, sitemap, required outputs, private-registry exclusion, and public/private export boundaries.
+
+A repeat visual/browser pass was not requested because Phase 57R uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, Phase 57Q regression, and release-contract checks pass. Exact-source commit and owner-only deployment receipts are pending; Sites version 73 remains live under the unchanged one-owner policy. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.

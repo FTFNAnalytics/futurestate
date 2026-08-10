@@ -414,12 +414,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 57O | twenty Published reviewer-authorization, receipt-integrity, and handoff controls, nine preserved holds, nine role matrices, 423 workflow cases, Research Watch 045, a thirty-two-file archive, a verified 2,767-page contract, and Sites version 71 |
 | Completed and owner-only deployed | Phase 57P | twenty Published append-only audit, publication-receipt, and adjudication controls, nine preserved holds, nine audit chains, 333 workflow cases, Research Watch 046, a thirty-two-file archive, a verified 2,827-page contract, and Sites version 72 |
 | Completed and owner-only deployed | Phase 57Q | thirty-six Published contract-specific release, bundle, rollback, and zero-automation controls, nine preserved holds, twenty-seven schemas, 396 workflow cases, Research Watch 047, a forty-eight-file archive, a verified 2,919-page contract, and Sites version 73 |
-| Next content gate | Phase 57R | reader-facing publication-status registries, immutable change notices, restore and republication receipts, and provenance timelines |
+| Completed locally; owner-only deployment pending | Phase 57R | thirty-six Published status, notice, restore, republication, provenance, and zero-state-inflation controls, nine preserved holds, twenty-seven schemas, 396 workflow cases, Research Watch 048, a forty-eight-file archive, and a verified 3,011-page contract |
+| Next content gate | Phase 57S | reader-verifiable lifecycle manifests, stale-view detection, provenance exports, and digest-chain reconciliation |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now contains the deployed Phase 57Q manual release, immutable publication-bundle, and reversible-publication layer. Phase 57Q reviews forty-five records and publishes thirty-six contract-specific controls while preserving all nine Phase 57P holds and adding no new hold. Thirty-six carried Tier 1 sources support nine twelve-item release checklists, nine immutable bundle schemas, nine lifecycle machines, and 396 passing workflow cases with zero actual packets, reviewers, release actors, authorizations, bundles, publications, withdrawals, rollbacks, supersessions, triggers, closures, or operating-outcome changes. Release remains distinct from publication, exact artifacts remain digest-bound, and withdrawal or rollback cannot erase prior history or inflate evidence state. No directive-scope, implementation, capability, closure, agency-contact, FOIA, or entity-ledger change is recorded. Local content commit `7a9157cdf91292742730570dc5744192c6ab8834` maps to exact private runtime commit `f368df8788f6aceeccd1815e91b9927be8a760e9`, deployed as owner-only Sites version 73 in `appgdep_6a794c51082481919b795efa52769323` with one owner, no groups, no editors, and zero external visitors. Phase 57R reader-facing status and provenance controls are next; dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now contains the locally complete Phase 57R reader-facing publication-status, immutable change-notice, restore, republication, and provenance layer. Phase 57R reviews forty-five records and publishes thirty-six contract-specific controls while preserving all nine Phase 57Q holds and adding no new hold. Thirty-six carried Tier 1 sources support nine status registries, nine notice schemas, nine restore schemas, and 396 passing workflow cases with zero actual statuses, notices, restore actors, restore authorizations, restorations, republications, triggers, closures, or operating-outcome changes. Current availability derives from complete append-only history, notices bind controlling receipts, and restoration or republication requires new human authorization and a new exact bundle digest. No directive-scope, implementation, capability, closure, agency-contact, FOIA, or entity-ledger change is recorded. The 3,011-page contract is production-rendered and release-validated; exact-source commit and owner-only deployment receipts are pending, while Phase 57Q Sites version 73 remains live with one owner, no groups, no editors, and zero external visitors. Phase 57S reader verification and stale-view controls are next; dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -2079,7 +2080,7 @@ Delivered:
 - a verified 2,919-page contract with 715 sources, 947 signals, 732 Published, 215 In Review, fifty-two collections, 1,063 research documents, fifty-five briefings, 71 updates, 919 research export records, and 498 Published-support sources;
 - all nine Phase 57P holds preserved exactly once, no new hold, and zero actual actor, authorization, bundle, publication, withdrawal, rollback, supersession, trigger, directive-scope, implementation, capability, closure, operating-outcome, agency-contact, FOIA, or inherited entity-ledger change.
 
-### Phase 57R: Publication Status, Change Notices, And Restore Receipts - Next Content Gate
+### Phase 57R: Publication Status, Change Notices, And Restore Receipts - Complete Locally
 
 Goal: expose the append-only publication lifecycle to readers without allowing a status display or provenance timeline to create evidence or change claim state.
 
@@ -2097,6 +2098,35 @@ Boundaries:
 - derived current availability cannot hide or rewrite earlier publication history;
 - restore or republication never reuses a withdrawn or rolled-back authorization or stale bundle digest;
 - no status display changes evidence, acceptance, implementation, capability, closure, operating outcomes, or causal attribution.
+
+Delivered:
+
+- forty-five reviewed records with thirty-six Published contract-specific controls and nine preserved In Review holds;
+- nine reader-facing current-publication-status registries and 126 cases with fifty-four valid derived states and seventy-two explicit rejections;
+- nine immutable change-notice schemas and 126 cases binding publication, withdrawal, rollback, supersession, restoration, and republication notices to controlling events, receipts, event digests, and bundle digests;
+- nine restore and republication schemas and 144 cases requiring new named-human authorization, new exact bundle digests, existing targets, unique receipts, forward chronology, and complete prior-history preservation;
+- thirty-six carried Tier 1 sources, Research Watch 048, one collection, one update, and a forty-eight-file archive;
+- a verified 3,011-page contract with 715 sources, 992 signals, 768 Published, 224 In Review, fifty-three collections, 1,108 research documents, fifty-six briefings, 72 updates, 956 research export records, and 498 Published-support sources;
+- all nine Phase 57Q holds preserved exactly once, no new hold, and zero actual status, notice, actor, authorization, restore, republication, trigger, directive-scope, implementation, capability, closure, operating-outcome, agency-contact, FOIA, history-mutation, or inherited entity-ledger change.
+
+### Phase 57S: Reader Verification, Freshness, And Provenance Exports - Next Content Gate
+
+Goal: let readers verify displayed status against the complete lifecycle manifest and fail closed when a status view, notice set, receipt chain, or export is stale, partial, or digest-inconsistent.
+
+Priorities:
+
+1. create reader-verifiable lifecycle manifests that enumerate every event, notice, receipt binding, and controlling digest;
+2. create stale-view and partial-history detection between lifecycle history and reader-facing status;
+3. create provenance export snapshots that retain prior states, immutable notices, and verification metadata;
+4. create digest-chain reconciliation receipts that identify the exact mismatch without rewriting source history;
+5. preserve all nine Phase 57R holds and publish only verification, freshness, export, and reconciliation controls.
+
+Boundaries:
+
+- a successful verification is not publication, restoration, acceptance, implementation, capability, closure, attribution, or an operating outcome;
+- a stale, incomplete, or digest-inconsistent view fails closed and cannot replace the lifecycle ledger;
+- reconciliation appends a finding and never rewrites an event, notice, receipt, bundle, or prior export;
+- synthetic verifiers, manifests, exports, mismatches, and receipts remain outside the evidence ledger.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
 
@@ -2210,10 +2240,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 57R reader-facing publication-status registries, immutable change notices, restore and republication receipts, and provenance timelines. Require current availability to be derived from append-only history, bind each public notice to its controlling receipt, require a new human authorization and exact bundle digest for restoration or republication, and preserve all nine Phase 57Q holds.
+Begin Phase 57S reader-verifiable lifecycle manifests, stale-view detection, provenance export snapshots, and digest-chain reconciliation. Require every displayed status to reconcile to the complete append-only lifecycle and controlling receipt, fail closed on partial or stale views, preserve every prior event and immutable notice in exports, and preserve all nine Phase 57R holds.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 57Q is complete, production-rendered, release-validated, and owner-only deployed at 2,919 pages, with 715 sources, 947 signals, 732 Published signals, 215 In Review signals, 52 collections, 1,063 research documents, 55 briefings, 71 updates, 919 research export records, and 498 Published-support sources. Local content commit `7a9157cdf91292742730570dc5744192c6ab8834` maps to exact private runtime commit `f368df8788f6aceeccd1815e91b9927be8a760e9`, whose parent is the verified Phase 57P runtime `f3702d3d1727af02ccd0daa8d44968bfbe6b658a`. Sites version 73 is live in `appgdep_6a794c51082481919b795efa52769323` with one owner, no groups, no editors, and zero external visitors. Phase 57R may proceed without waiting on dated source updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phase 57R is complete, production-rendered, and release-validated at 3,011 pages, with 715 sources, 992 signals, 768 Published signals, 224 In Review signals, 53 collections, 1,108 research documents, 56 briefings, 72 updates, 956 research export records, and 498 Published-support sources. Exact-source commit and owner-only deployment receipts are pending; Phase 57Q Sites version 73 remains live in `appgdep_6a794c51082481919b795efa52769323` with one owner, no groups, no editors, and zero external visitors. Phase 57S may proceed after the deployment receipt is recorded without waiting on dated source updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

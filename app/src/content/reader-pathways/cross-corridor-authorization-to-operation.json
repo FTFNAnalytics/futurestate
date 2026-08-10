@@ -360,7 +360,8 @@
     "research-collection-adapter-conformance-packet-validation-reviewer-receipt-ledgers-2026",
     "research-collection-reviewer-authorization-receipt-integrity-publication-handoff-state-machines-2026",
     "research-collection-dual-review-audit-chains-adjudication-publication-decision-receipts-2026",
-    "research-collection-manual-release-authorization-publication-bundles-withdrawal-rollback-receipts-2026"
+    "research-collection-manual-release-authorization-publication-bundles-withdrawal-rollback-receipts-2026",
+    "research-collection-publication-status-change-notices-restore-republication-provenance-2026"
   ],
   "evidence_gap_ids": [
     "gap-011",
@@ -504,6 +505,11 @@
       "stage": "Phase 57Q manual release, immutable bundles, and reversible publication",
       "current_state": "Nine release checklists, nine bundle schemas, nine lifecycle machines, and 396 cases pass; zero actual actors, releases, publications, withdrawals, rollbacks, triggers, or closures are recorded.",
       "boundary": "Synthetic actors, bundles, receipts, and transitions are workflow infrastructure, not evidence, eligibility, release, publication, closure, or operating outcomes."
+    },
+    {
+      "stage": "Phase 57R publication status, change notices, and provenance",
+      "current_state": "Nine status registries, nine notice schemas, nine restore schemas, and 396 cases pass; zero actual statuses, notices, restores, republications, triggers, or closures are recorded.",
+      "boundary": "Reader-facing status and provenance are derived workflow views, not evidence, acceptance, implementation, capability, closure, attribution, or operating outcomes."
     }
   ],
   "evidence_limits": [
