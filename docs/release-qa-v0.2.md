@@ -2,7 +2,7 @@
 
 Date: 2026-08-09
 
-Status: Phase 57T release gates pass locally; exact-source commit and owner-only deployment are pending while Sites version 75 remains live.
+Status: Phase 57T release gates pass and the exact runtime is live as owner-only Sites version 76.
 
 ## Artifact Under Review
 
@@ -490,4 +490,4 @@ The 3,213-page artifact passes:
 - the 74-entry update log and five versioned public-data exports;
 - canonicals, robots, sitemap, required outputs, private-registry exclusion, and public/private export boundaries.
 
-A repeat visual/browser pass was not requested because Phase 57T uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, Phase 57S regression, candidate validation, content-reference validation, source-health checks, and release-contract checks pass. Exact-source commit and owner-only deployment receipts remain pending; Sites version 75 remains live under the unchanged one-owner policy. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.
+A repeat visual/browser pass was not requested because Phase 57T uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, Phase 57S regression, candidate validation, content-reference validation, source-health checks, and release-contract checks pass. Local content commit `5cc00b6f1185047db1f406ecb6d85ff444421cd2` maps to exact private runtime commit `784f72c412f3dda8592d097fe665296206bd273f`, whose verified parent is the Phase 57S runtime `f5aeb8660169e6e2403a024cc394b2c74fcebae7`. The 4,651-file runtime archive is 176,578,560 bytes with content hash `sha256:c55c09e3344885cbd04e5b4f2f5fabbb47db6b9d06030fa094fd8522113e833f`; it is deployed successfully as owner-only Sites version 76 in `appgdep_6a795e03fc9c8191990fc6877713c004` with one owner, no groups, no editors, and zero external visitors. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.

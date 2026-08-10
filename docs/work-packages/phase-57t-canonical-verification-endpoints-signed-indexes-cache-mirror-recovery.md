@@ -1,6 +1,6 @@
 # Phase 57T Work Package: Canonical Verification Endpoints, Signed Indexes, Cache and Mirror Integrity, and Recovery
 
-Status: complete and release-validated locally; owner-only deployment pending
+Status: complete, release-validated, and owner-only deployed
 
 Captured: 2026-08-09
 
@@ -94,6 +94,10 @@ The 57-file archive contains 54 official-link records, consolidated summaries, a
 ## Phase 57U handoff
 
 Build governed verification-key registries, rotation and revocation receipts, transparency-log inclusion and consistency proofs, multi-origin quorum checks, incident-containment receipts, and recovery-objective drills across all nine contracts. Prove that a reader can identify the currently trusted key, reject a revoked or unknown signer, verify that current and prior release indexes remain included in an append-only transparency log, detect origin divergence without majority-state substitution, and measure bounded recovery-point and recovery-time objectives without activating reconstructed state. Preserve all nine Phase 57T holds and keep every synthetic key, signature, log entry, proof, origin observation, incident, receipt, replay, and drill outside the evidence ledger.
+
+## Deployment receipt
+
+Local content commit `5cc00b6f1185047db1f406ecb6d85ff444421cd2` maps to exact private runtime commit `784f72c412f3dda8592d097fe665296206bd273f`, whose verified parent is the Phase 57S runtime `f5aeb8660169e6e2403a024cc394b2c74fcebae7`. The 4,651-file runtime archive is 176,578,560 bytes with content hash `sha256:c55c09e3344885cbd04e5b4f2f5fabbb47db6b9d06030fa094fd8522113e833f`. Sites version 76 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_cf0569bb6fb0819190d9a361f986a045`) deployed successfully as `appgdep_6a795e03fc9c8191990fc6877713c004` at `https://ftfn-analytics.jbumstead.chatgpt.site`. Access remains custom and owner-only with one owner, no groups, no editors, and zero external visitors.
 
 ## Validation checkpoint
 
