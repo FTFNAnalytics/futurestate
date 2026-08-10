@@ -7,6 +7,7 @@ const appRoot = fileURLToPath(new URL("..", import.meta.url));
 const workspaceRoot = dirname(appRoot);
 const manifestPath = join(workspaceRoot, "deployment", "ftfn-v0.2-build.json");
 const capturedDate = "2026-08-10";
+const localContentCommit = "86c4a615";
 const archiveSlug = "federation-health-witness-diversity-fork-adjudication-time-corroboration-patch-provenance-legacy-decommissioning-2026";
 const briefingSlug = "research-watch-054-federation-health-and-reversible-decommissioning";
 const archivePath = join(appRoot, "public", "downloads", `${archiveSlug}.zip`);
@@ -47,14 +48,15 @@ manifest.phase_57x_delta = {
   structured_time_corroboration_registries_added: 1, structured_patch_provenance_registries_added: 1, structured_decommissioning_registries_added: 1,
   research_documents_added_published: 54, research_documents_added_in_review: 9, signals_added_published: 54, signals_added_in_review: 9, downloadable_records: 63,
   archive_file_count: 66, archive_bytes: archiveBuffer.length, archive_sha256: archiveSha256, briefings_added_published: 1, reader_pathways_deepened: 3, topics_deepened: 5, dependency_maps_deepened: 1, public_update_entries_added: 1, generated_pages_added: 128,
-  deployment_status: "pending_exact_source_commit_and_owner_only_deployment_phase-57w-version-79-remains-live"
+  local_content_commit: localContentCommit,
+  deployment_status: "local_content_commit_recorded_owner_only_deployment_pending_phase-57w-version-79-remains-live"
 };
 
 manifest.last_verified = {
   ...manifest.last_verified, date: capturedDate, published_support_minimum_date: "2026-07-22", validate_content: "passed-715-sources-1343-signals-1459-research-documents",
   source_health: "passed", source_health_manual_review: 494, source_health_probe_ready: 221, source_monitor_current: 715, astro_check: "passed", build: "passed", static_pages_built: 3725,
   release_assertions: "passed-phase-57x", browser_qa: "passed-local-phase-55k; phase-55l-through-phase-57x-visual-qa-not-requested",
-  preview_qa: "phase-57x-owner-only-deployment-pending-exact-source-commit; phase-57w-owner-only-sites-version-79-remains-live-and-verified"
+  preview_qa: `phase-57x-local-content-commit-${localContentCommit}-owner-only-deployment-pending; phase-57w-owner-only-sites-version-79-remains-live-and-verified`
 };
 
 manifest.required_output_files = addUnique(manifest.required_output_files, [`dist/research/${archiveSlug}/index.html`, `dist/downloads/${archiveSlug}.zip`, `dist/briefings/${briefingSlug}/index.html`, ...publishedSignalSlugs.map((slug) => `dist/signals/${slug}/index.html`)]);
@@ -85,7 +87,7 @@ manifest.release_gates = addUnique(manifest.release_gates, [
   "Confirm the Phase 57X collection contains sixty-three official-link records backed by thirty-six carried Tier 1 sources and a sixty-six-file archive"
 ]);
 
-manifest.notes = "This manifest records the locally release-validated Phase 57X federation-health, witness-diversity, fork-adjudication, time-corroboration, patch-provenance, and reversible-decommissioning expansion. Thirty-six carried Tier 1 sources support fifty-four Published contract-specific controls, nine preserved In Review holds, fifty-four schemas, 1,593 executable cases, Research Watch 054, one collection, one update, and a sixty-six-file archive. Threshold lowering, diversity substitution, automatic human blame, imported time rollback, vulnerable-lineage rewriting, forced migration, and irreversible decommissioning fail closed. Zero production health events, partitions, audits, adjudications, appeals, time comparisons, advisories, patches, decommissionings, rollbacks, notifications, reader-state changes, blame assignments, triggers, publications, closures, or operating-outcome changes are recorded. The Phase 57X package awaits exact-source commit and owner-only deployment. Sites version 79 continues to serve the exact Phase 57W package with one owner, no groups, no editors, and zero external visitors. The release remains 0.2.0-dev. Public access, Hostinger DNS, custom-domain attachment, public GitHub synchronization, and package freeze remain unchanged.";
+manifest.notes = `This manifest records the locally release-validated Phase 57X federation-health, witness-diversity, fork-adjudication, time-corroboration, patch-provenance, and reversible-decommissioning expansion in exact local content commit ${localContentCommit}. Thirty-six carried Tier 1 sources support fifty-four Published contract-specific controls, nine preserved In Review holds, fifty-four schemas, 1,593 executable cases, Research Watch 054, one collection, one update, and a sixty-six-file archive. Threshold lowering, diversity substitution, automatic human blame, imported time rollback, vulnerable-lineage rewriting, forced migration, and irreversible decommissioning fail closed. Zero production health events, partitions, audits, adjudications, appeals, time comparisons, advisories, patches, decommissionings, rollbacks, notifications, reader-state changes, blame assignments, triggers, publications, closures, or operating-outcome changes are recorded. Private-runtime mapping and owner-only deployment remain pending. Sites version 79 continues to serve the exact Phase 57W package with one owner, no groups, no editors, and zero external visitors. The release remains 0.2.0-dev. Public access, Hostinger DNS, custom-domain attachment, public GitHub synchronization, and package freeze remain unchanged.`;
 
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
 console.log(`Updated Phase 57X manifest at ${manifestPath}; archive ${archiveBuffer.length} bytes, SHA-256 ${archiveSha256}`);

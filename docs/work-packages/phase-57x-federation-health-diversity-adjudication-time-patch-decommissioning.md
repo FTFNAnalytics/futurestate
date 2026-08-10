@@ -1,6 +1,6 @@
 # Phase 57X Work Package: Federation Health, Witness Diversity, Fork Adjudication, Time Corroboration, Patch Provenance, and Reversible Decommissioning
 
-Status: complete and locally release-validated; exact-source commit and owner-only deployment pending
+Status: complete, locally release-validated, and preserved in content commit `86c4a615`; owner-only deployment pending
 
 Captured: 2026-08-10
 
@@ -118,7 +118,7 @@ Build breach-remediation and capacity-planning receipts for sustained health-bud
 
 ## Deployment boundary
 
-Phase 57X is complete and release-validated locally but has no exact-source commit or deployment receipt yet. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Creating a commit, packaging a private runtime, deploying another owner-only version, changing access, attaching `ftfn.io`, changing Hostinger DNS, freezing `0.2.0`, synchronizing public GitHub, or launching publicly remains a separate explicit decision.
+Phase 57X is complete and release-validated locally in exact content commit `86c4a615`. It has no private-runtime mapping or deployment receipt yet. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Packaging a private runtime, deploying another owner-only version, changing access, attaching `ftfn.io`, changing Hostinger DNS, freezing `0.2.0`, synchronizing public GitHub, or launching publicly remains a separate explicit decision.
 
 ## Validation checkpoint
 
