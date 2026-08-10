@@ -1409,6 +1409,12 @@
       "label": "Nine status registries; nine immutable notice contracts; nine restore schemas; zero actual events",
       "node_type": "Signal",
       "note": "Availability derives from append-only history; notice bindings are immutable; restoration or republication requires a new human authorization and exact bundle digest."
+    },
+    {
+      "id": "node-phase57s-reader-verification-freshness",
+      "label": "Nine lifecycle manifests; nine freshness detectors; nine provenance exports; zero actual events",
+      "node_type": "Signal",
+      "note": "Complete histories and notices are digest-bound, stale or partial views fail closed, and reconciliation appends findings without rewrite."
     }
   ],
   "links": [
@@ -2370,6 +2376,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Status, notices, and provenance do not establish implementation, capability, closure, operating outcomes, attribution, or causation."
+    },
+    {
+      "from": "node-phase57s-reader-verification-freshness",
+      "to": "node-phase57r-publication-status-provenance",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57S verifies the complete status, notice, restore, republication, and provenance histories produced by Phase 57R."
+    },
+    {
+      "from": "node-phase57s-reader-verification-freshness",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "A valid digest chain cannot cure an incompatible identity, definition, unit, method, denominator, period, privacy, authority, or acceptance boundary."
+    },
+    {
+      "from": "node-phase57s-reader-verification-freshness",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Verification and provenance integrity do not establish implementation, capability, closure, operating outcomes, attribution, or causation."
     }
   ],
   "what_this_map_supports": [

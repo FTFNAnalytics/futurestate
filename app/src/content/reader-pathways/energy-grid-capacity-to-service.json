@@ -549,7 +549,8 @@
     "research-collection-reviewer-authorization-receipt-integrity-publication-handoff-state-machines-2026",
     "research-collection-dual-review-audit-chains-adjudication-publication-decision-receipts-2026",
     "research-collection-manual-release-authorization-publication-bundles-withdrawal-rollback-receipts-2026",
-    "research-collection-publication-status-change-notices-restore-republication-provenance-2026"
+    "research-collection-publication-status-change-notices-restore-republication-provenance-2026",
+    "research-collection-reader-verifiable-lifecycle-manifests-stale-view-provenance-exports-2026"
   ],
   "evidence_gap_ids": [
     "gap-001",
@@ -787,6 +788,11 @@
       "stage": "Phase 57R publication status, change notices, and provenance",
       "current_state": "Nine status registries, nine notice schemas, nine restore schemas, and 396 cases pass; zero actual statuses, notices, restores, republications, triggers, or closures are recorded.",
       "boundary": "Reader-facing status and provenance are derived workflow views, not evidence, acceptance, implementation, capability, closure, attribution, or operating outcomes."
+    },
+    {
+      "stage": "Phase 57S reader verification, freshness, and provenance exports",
+      "current_state": "Nine lifecycle manifests, nine freshness schemas, nine export schemas, and 450 cases pass; zero actual manifests, verifications, exports, reconciliation receipts, triggers, or closures are recorded.",
+      "boundary": "Verification, freshness, exports, and reconciliation are integrity controls, not evidence, acceptance, implementation, capability, closure, attribution, or operating outcomes."
     }
   ],
   "evidence_limits": [

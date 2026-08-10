@@ -439,3 +439,28 @@ The 3,011-page artifact passes:
 - canonicals, robots, sitemap, required outputs, private-registry exclusion, and public/private export boundaries.
 
 A repeat visual/browser pass was not requested because Phase 57R uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, Phase 57Q regression, and release-contract checks pass. Local content commit `043cebae1a76ad3d68898a3e3dcea76c55b71f91` maps to exact private runtime commit `1dc8df329c59f0e8d85a6f48da800d44463578cc`, whose verified parent is the Phase 57Q runtime `f368df8788f6aceeccd1815e91b9927be8a760e9`. The 4,342-file runtime is deployed successfully as owner-only Sites version 74 in `appgdep_6a79521cb5408191812dbc5d5c18700c` with one owner, no groups, no editors, and zero external visitors. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.
+
+## Phase 57S Reader Verification, Freshness, Provenance Export, And Reconciliation QA Scope
+
+Phase 57S adds executable reader-verification and fail-closed integrity controls without changing components, styles, layouts, navigation, or client-side behavior. It adds nine lifecycle-manifest schemas, nine status-freshness schemas, nine provenance-export and reconciliation schemas, forty-five signal routes, forty-five research-document routes, one collection route, one Published briefing route, one update, and a forty-eight-file archive.
+
+The 3,103-page artifact passes:
+
+- private-candidate validation for the unchanged 150-record local-only registry and duplicate checks against 715 public sources;
+- content-reference validation across 715 sources, 1,037 signals, 17 topics, five local systems, fifty-seven briefings, sixteen evidence gaps, seven dependency maps, fifty-four research collections, 1,153 research documents, fifteen reader pathways, and 73 updates;
+- source endpoint metadata review for 494 Manual Review and 221 Probe Ready sources;
+- all 144 lifecycle-manifest cases, including complete histories, event chains, immutable-notice bindings, controlling receipts, prior-state visibility, and ninety-nine explicit integrity rejections;
+- all 144 freshness cases, including thirty-six current complete views and 108 stale, partial, mismatched, unverified, warning-only, automated, or evidence-inflating fail-closed routes;
+- all 162 provenance-export and reconciliation cases, including fifty-four complete or preservation routes and 108 scope, digest, count, binding, rewrite, automation, evidence, or closure rejections;
+- Astro diagnostics with zero errors or warnings and one inherited non-blocking unused-variable hint in the Phase 57L generator;
+- production generation of 3,103 pages;
+- all 804 Published signal routes in the sitemap and all 233 In Review routes outside it;
+- exactly 498 current Published-support sources;
+- all fifty Published briefing routes in the sitemap and all seven In Review briefing routes outside it;
+- all six Published dependency-map routes in the sitemap and the one In Review map outside it;
+- fifty-four research collections, 1,153 document routes, and 993 research export records;
+- a verified forty-eight-file ZIP containing forty-five official-link records, summaries, README, and SHA-256 manifest;
+- the 73-entry update log and five versioned public-data exports;
+- canonicals, robots, sitemap, required outputs, private-registry exclusion, and public/private export boundaries.
+
+A repeat visual/browser pass was not requested because Phase 57S uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, Phase 57R regression, and release-contract checks pass. Exact-source commit and owner-only deployment receipts are pending; Sites version 74 remains live under the unchanged one-owner policy. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.

@@ -380,6 +380,7 @@
     "Which actual packet first passes every Phase 57O authorization, completeness, reason-code, signed-field, and publication-handoff gate?",
     "Which actual packet first clears every Phase 57P append-only receipt, disagreement, escalation-owner, supersession, and manual-release gate?",
     "Which actual packet first clears every Phase 57Q release-role, digest-integrity, publication, withdrawal, rollback, and history-preservation gate?",
-    "Which real Phase 57R lifecycle history first supports a reader-facing status, controlling-receipt notice, or separately authorized restoration without hiding earlier states or inflating evidence?"
+    "Which real Phase 57R lifecycle history first supports a reader-facing status, controlling-receipt notice, or separately authorized restoration without hiding earlier states or inflating evidence?",
+    "Which real Phase 57S lifecycle manifest first lets a reader verify current status, detect a stale or partial view, export complete provenance, and reconcile an exact digest mismatch without changing evidence state?"
   ]
 }
