@@ -59,7 +59,9 @@
     "test:phase57t": "node ./scripts/phase57t-canonical-delivery-recovery-harness.mjs",
     "verify:phase57t": "node ./scripts/assert-phase57t.mjs",
     "test:phase57u": "node ./scripts/phase57u-governed-trust-recovery-harness.mjs",
-    "verify:phase57u": "node ./scripts/assert-phase57u.mjs"
+    "verify:phase57u": "node ./scripts/assert-phase57u.mjs",
+    "test:phase57v": "node ./scripts/phase57v-threshold-witness-gossip-compromise-harness.mjs",
+    "verify:phase57v": "node ./scripts/assert-phase57v.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.0",

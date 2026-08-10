@@ -1,0 +1,70 @@
+{
+  "id": "research-doc-57v-nnsa-qualified-rate-cross-log-gossip-split-view-detection",
+  "collection_id": "research-collection-threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026",
+  "title": "NNSA recurring qualified rate receives cross-log gossip split-view detection",
+  "slug": "57v-nnsa-qualified-rate-cross-log-gossip-split-view-detection",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy",
+  "publication_date": "2026-08-10",
+  "document_type": "Data Release",
+  "summary": "Primary and independent witness logs exchange the same checkpoint digest, tree root, and tree size; missing peers, stale observations, any split view, history rewrite, or majority substitution fails closed. Denominator: One gossip schema, twenty-two adversarial cases, six bounded valid routes, sixteen explicit rejections, and zero production gossip messages exchanged.",
+  "key_findings": [
+    "Evidence stage: Cross-log gossip and split-view detection controls.",
+    "Finding: Primary and independent witness logs exchange the same checkpoint digest, tree root, and tree size; missing peers, stale observations, any split view, history rewrite, or majority substitution fails closed.",
+    "Denominator: One gossip schema, twenty-two adversarial cases, six bounded valid routes, sixteen explicit rejections, and zero production gossip messages exchanged.",
+    "Boundary: Fixture gossip messages are synthetic and do not establish continuous log availability.",
+    "Boundary: Missing logs or peers, stale messages, divergent digests, roots, sizes, unknown logs, replay, override, majority substitution, rewriting, activation, publication, closure, or evidence inflation reject.",
+    "Boundary: Log agreement is an integrity control and cannot create source evidence or an editorial decision.",
+    "Next action: Fail NNSA recurring qualified rate verification closed on any cross-log split view without allowing two matching logs to vote a divergent log into authority."
+  ],
+  "why_it_matters": "The record makes release quorum, witness independence, split-view detection, temporal ordering, verifier reproducibility, and compromise recovery independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Requires three-of-five release authorization without same-actor or same-domain quorum.",
+    "Federates independently witnessed checkpoints through cross-log gossip and trusted time.",
+    "Requires three independent verifier implementations and clean compromise recovery without retroactive trust."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Fixture gossip messages are synthetic and do not establish continuous log availability.",
+    "Missing logs or peers, stale messages, divergent digests, roots, sizes, unknown logs, replay, override, majority substitution, rewriting, activation, publication, closure, or evidence inflation reject.",
+    "Log agreement is an integrity control and cannot create source evidence or an editorial decision.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-nnsa-fy2026-weapons-activities",
+  "supporting_source_ids": [
+    "source-57g-nnsa-fy2026-weapons-activities",
+    "source-56w-nnsa-fy2027-weapons-activities",
+    "source-56x-gao-nnsa-major-projects-2026",
+    "source-56q-gao-23-104661-recommendation-status",
+    "source-57f-nnsa-pit-production-current",
+    "source-57f-nnsa-stockpile-current",
+    "source-57g-nnsa-lap4-30-base-construction",
+    "source-57a-nnsa-w87-1-first-production-unit",
+    "source-57b-nnsa-sasc-testimony-may-2026",
+    "source-57b-nnsa-pit-production-draft-peis-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+  ],
+  "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+  "local_capture_path": "/downloads/threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026/official-links/39-phase57v-record.txt",
+  "archive_member": "official-links/39-phase57v-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-10"
+}

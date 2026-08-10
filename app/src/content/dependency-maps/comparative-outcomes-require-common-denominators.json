@@ -1427,6 +1427,12 @@
       "label": "Nine governed trust roots; transparency and three-origin integrity; incident and recovery objectives; zero actual events",
       "node_type": "Signal",
       "note": "Unknown or revoked keys, inconsistent logs, divergent origins, incomplete containment, or missed recovery objectives fail closed while reconstructed state remains inactive."
+    },
+    {
+      "id": "node-phase57v-threshold-federation-compromise-recovery",
+      "label": "Nine threshold trust federations; witnessed gossip and trusted time; three verifiers; clean compromise recovery; zero actual events",
+      "node_type": "Signal",
+      "note": "Conflicted quorum, unwitnessed checkpoints, split views, rollback, verifier divergence, or retroactive compromised-key trust fail closed while reconstructed state remains inactive."
     }
   ],
   "links": [
@@ -2451,6 +2457,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Keys, proofs, origin agreement, incident receipts, and recovery objectives do not establish implementation, capability, closure, operating outcomes, attribution, or causation."
+    },
+    {
+      "from": "node-phase57v-threshold-federation-compromise-recovery",
+      "to": "node-phase57u-governed-trust-recovery",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57V federates the governed keys, append-only transparency, exact-origin integrity, containment, and inactive recovery state established by Phase 57U."
+    },
+    {
+      "from": "node-phase57v-threshold-federation-compromise-recovery",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Federated cryptographic integrity cannot cure an incompatible identity, definition, unit, method, denominator, period, privacy, authority, or acceptance boundary."
+    },
+    {
+      "from": "node-phase57v-threshold-federation-compromise-recovery",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Quorum, witnesses, gossip, trusted time, verifier agreement, and recovery do not establish implementation, capability, closure, operating outcomes, attribution, or causation."
     }
   ],
   "what_this_map_supports": [

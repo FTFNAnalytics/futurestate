@@ -1,0 +1,1659 @@
+﻿{
+    "collection_id":  "research-collection-threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026",
+    "title":  "Threshold Authorization, Witness Federation, Trusted Time, Verifier Diversity, and Compromise Recovery, 2026",
+    "captured_date":  "2026-08-10",
+    "generated_at":  "2026-08-10T06:08:01Z",
+    "document_count":  63,
+    "local_capture_count":  0,
+    "official_link_record_count":  63,
+    "disclosure":  "The sixty-six-file archive contains sixty-three official-link records, consolidated summaries, a README, and a checksum manifest.",
+    "method_note":  "Every threshold share, witness signature, checkpoint, gossip message, time receipt, verifier result, compromise event, recovery action, and migration is synthetic. Insufficient or conflicted quorum, unwitnessed checkpoints, split views, time rollback, verifier divergence, and retroactive compromised-key trust fail closed; reconstructed state never activates automatically.",
+    "documents":  [
+                      {
+                          "id":  "research-doc-57v-amtrak-pids-threshold-release-authorization",
+                          "title":  "Amtrak PIDS closeout receives actor- and domain-separated threshold authorization",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/01-phase57v-record.txt",
+                          "bytes":  1409,
+                          "sha256":  "0189f5e2bc8dee4a87176cff9cc09d2f1382e3a8074e3706e064e2739af2d87a",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-amtrak-pids-independent-witness-checkpoints",
+                          "title":  "Amtrak PIDS closeout receives independently witnessed transparency checkpoints",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/02-phase57v-record.txt",
+                          "bytes":  1400,
+                          "sha256":  "7065389de3d80037705f5a150c1fc0c1bea94c7e9fb5de510cd34e92e355d731",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-amtrak-pids-cross-log-gossip-split-view-detection",
+                          "title":  "Amtrak PIDS closeout receives cross-log gossip split-view detection",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/03-phase57v-record.txt",
+                          "bytes":  1367,
+                          "sha256":  "0533176430f06cd3e3b56d425aa4fd066ad35b02462263c2eadbe03d85e19107",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-amtrak-pids-trusted-time-anti-rollback-receipts",
+                          "title":  "Amtrak PIDS closeout receives monotonic trusted-time receipts",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/04-phase57v-record.txt",
+                          "bytes":  1345,
+                          "sha256":  "621e173523aedbe860b097d768258d30f3ca6099f362ca8686ac313a2a6bc1c0",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-amtrak-pids-three-implementation-verifier-diversity",
+                          "title":  "Amtrak PIDS closeout receives three-implementation verifier conformance",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/05-phase57v-record.txt",
+                          "bytes":  1461,
+                          "sha256":  "689f321c20851909562f12f5f0ff9fff2b296c575c39ab4dfe739a18d6b78b09",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-amtrak-pids-algorithm-key-compromise-recovery",
+                          "title":  "Amtrak PIDS closeout receives bounded algorithm and key-compromise recovery",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/06-phase57v-record.txt",
+                          "bytes":  1430,
+                          "sha256":  "6666f93645bb704716c03b9bd8fa412f1841d18adef37f092df45d4807d724f3",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-amtrak-reliability-threshold-release-authorization",
+                          "title":  "Amtrak named-asset reliability receives actor- and domain-separated threshold authorization",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/07-phase57v-record.txt",
+                          "bytes":  1419,
+                          "sha256":  "2b61dcb9e945dfe02779ed943672ce68dd4b0f8bace54d079df2569cf479d880",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-amtrak-reliability-independent-witness-checkpoints",
+                          "title":  "Amtrak named-asset reliability receives independently witnessed transparency checkpoints",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/08-phase57v-record.txt",
+                          "bytes":  1410,
+                          "sha256":  "8c0cf3dc3262046b8e6ed9f6ed3f5b60525ab212f97c6e8c13dbc58af88fa50f",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-amtrak-reliability-cross-log-gossip-split-view-detection",
+                          "title":  "Amtrak named-asset reliability receives cross-log gossip split-view detection",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/09-phase57v-record.txt",
+                          "bytes":  1377,
+                          "sha256":  "f21adc707982c47503d551ea58b8a81cb6a03b9e003b14caf9cce12234abc738",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-amtrak-reliability-trusted-time-anti-rollback-receipts",
+                          "title":  "Amtrak named-asset reliability receives monotonic trusted-time receipts",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/10-phase57v-record.txt",
+                          "bytes":  1355,
+                          "sha256":  "b32f51c54237d665f789d6d270850214b7eaedae23159053f5a90b1d6368ae2b",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-amtrak-reliability-three-implementation-verifier-diversity",
+                          "title":  "Amtrak named-asset reliability receives three-implementation verifier conformance",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/11-phase57v-record.txt",
+                          "bytes":  1471,
+                          "sha256":  "63b6c6493ac8f4695d75697774b5ff42f61cf28b29672a737c9d035e9d9bb1f8",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-amtrak-reliability-algorithm-key-compromise-recovery",
+                          "title":  "Amtrak named-asset reliability receives bounded algorithm and key-compromise recovery",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/12-phase57v-record.txt",
+                          "bytes":  1440,
+                          "sha256":  "8800e133eefe428e19032401cd7287b0c180822aa273f89dc14da166be3d11c6",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-la-nextlink-adoption-threshold-release-authorization",
+                          "title":  "Louisiana Nextlink adoption receives actor- and domain-separated threshold authorization",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/13-phase57v-record.txt",
+                          "bytes":  1281,
+                          "sha256":  "20d70d9b988ad9dd41c065a3f135343449595745245a0b2bb773a1432e3a278c",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-la-nextlink-adoption-independent-witness-checkpoints",
+                          "title":  "Louisiana Nextlink adoption receives independently witnessed transparency checkpoints",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/14-phase57v-record.txt",
+                          "bytes":  1272,
+                          "sha256":  "a81bd6995042703d2b6ce2c6a9f61fab0fcd293ab3fb10a37415bf4344af67bc",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-la-nextlink-adoption-cross-log-gossip-split-view-detection",
+                          "title":  "Louisiana Nextlink adoption receives cross-log gossip split-view detection",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/15-phase57v-record.txt",
+                          "bytes":  1239,
+                          "sha256":  "718714c8e4898838de2f1f3259ac84ebf191d3e5b5ff2f4690fb4a10636fc63a",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-la-nextlink-adoption-trusted-time-anti-rollback-receipts",
+                          "title":  "Louisiana Nextlink adoption receives monotonic trusted-time receipts",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/16-phase57v-record.txt",
+                          "bytes":  1217,
+                          "sha256":  "83f6b1cc5389a8618237e5161a04c4565124a21fc67ff640b84d418f33e8d706",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-la-nextlink-adoption-three-implementation-verifier-diversity",
+                          "title":  "Louisiana Nextlink adoption receives three-implementation verifier conformance",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/17-phase57v-record.txt",
+                          "bytes":  1333,
+                          "sha256":  "5a65d3cc9b64aa02640bf7936eb343243a4c04427107cf619fe1b8b2d648f8c7",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-la-nextlink-adoption-algorithm-key-compromise-recovery",
+                          "title":  "Louisiana Nextlink adoption receives bounded algorithm and key-compromise recovery",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/18-phase57v-record.txt",
+                          "bytes":  1302,
+                          "sha256":  "2835c2d03363b1389defe72ef94244f035d9f7504aec3c9165b03eb395df9257",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-la-starlink-adoption-threshold-release-authorization",
+                          "title":  "Louisiana Starlink adoption receives actor- and domain-separated threshold authorization",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/19-phase57v-record.txt",
+                          "bytes":  1281,
+                          "sha256":  "1d2a5347951b6678ae69bf46892d5d0b8959ebf608c1dfe616ff7f8bbda5479f",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-la-starlink-adoption-independent-witness-checkpoints",
+                          "title":  "Louisiana Starlink adoption receives independently witnessed transparency checkpoints",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/20-phase57v-record.txt",
+                          "bytes":  1272,
+                          "sha256":  "0d1dbc36e50088caaee8ec41c21993c4d424f5e4d29a05c5c712e8162ee1dbe2",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-la-starlink-adoption-cross-log-gossip-split-view-detection",
+                          "title":  "Louisiana Starlink adoption receives cross-log gossip split-view detection",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/21-phase57v-record.txt",
+                          "bytes":  1239,
+                          "sha256":  "155421b1fa3191113d5590335b9961f33f5045c0cee6e69e260fa05ef6212a3d",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-la-starlink-adoption-trusted-time-anti-rollback-receipts",
+                          "title":  "Louisiana Starlink adoption receives monotonic trusted-time receipts",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/22-phase57v-record.txt",
+                          "bytes":  1217,
+                          "sha256":  "68989899be66e4a20c242964fd124599e36fd2e74cc94ee8e14657f0967a26d4",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-la-starlink-adoption-three-implementation-verifier-diversity",
+                          "title":  "Louisiana Starlink adoption receives three-implementation verifier conformance",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/23-phase57v-record.txt",
+                          "bytes":  1333,
+                          "sha256":  "51893288f1446d3f4aabc6466164ae0a44a44e49cf6a0fc6f943d8606ef7b310",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-la-starlink-adoption-algorithm-key-compromise-recovery",
+                          "title":  "Louisiana Starlink adoption receives bounded algorithm and key-compromise recovery",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/24-phase57v-record.txt",
+                          "bytes":  1302,
+                          "sha256":  "9c4f6939d53f5d620da216ded0afe5d0fe513ec5ce725635626fe84b4cb52419",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-mt-bead-quarter-threshold-release-authorization",
+                          "title":  "Montana BEAD completed quarter receives actor- and domain-separated threshold authorization",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/25-phase57v-record.txt",
+                          "bytes":  1284,
+                          "sha256":  "b291263e002c5176c2f223113146a2d92146c14bb5bb1d0b91c7d7f7b6a45dc6",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-mt-bead-quarter-independent-witness-checkpoints",
+                          "title":  "Montana BEAD completed quarter receives independently witnessed transparency checkpoints",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/26-phase57v-record.txt",
+                          "bytes":  1275,
+                          "sha256":  "19ecfec39b357358da3c12306e565310ae388bc9da2bc53374c6d7ac2a492892",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-mt-bead-quarter-cross-log-gossip-split-view-detection",
+                          "title":  "Montana BEAD completed quarter receives cross-log gossip split-view detection",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/27-phase57v-record.txt",
+                          "bytes":  1242,
+                          "sha256":  "fdd308ce37a40741d372178dc161e8c56e0d38c48fbd4bf97dfe58cbe9e6a762",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-mt-bead-quarter-trusted-time-anti-rollback-receipts",
+                          "title":  "Montana BEAD completed quarter receives monotonic trusted-time receipts",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/28-phase57v-record.txt",
+                          "bytes":  1220,
+                          "sha256":  "d8dd2e2879ccea035393af88ce27a781c9fa4be5e6a40f23c3e008bb22dd93fb",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-mt-bead-quarter-three-implementation-verifier-diversity",
+                          "title":  "Montana BEAD completed quarter receives three-implementation verifier conformance",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/29-phase57v-record.txt",
+                          "bytes":  1336,
+                          "sha256":  "976fc0f69cbf447694e627f5c7841d798099769f97439e22e47db163d029033c",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-mt-bead-quarter-algorithm-key-compromise-recovery",
+                          "title":  "Montana BEAD completed quarter receives bounded algorithm and key-compromise recovery",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/30-phase57v-record.txt",
+                          "bytes":  1305,
+                          "sha256":  "868e0383d96a960fca6ba29decf318fd1ed326f64e8e562fbfd498e299bea951",
+                          "official_url":  "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+                          "source_id":  "source-57g-montana-bead-final-proposal-january-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57g-montana-bead-final-proposal-january-2026",
+                                                        "source-57g-montana-deployment-projects-csv",
+                                                        "source-57g-montana-locations-csv",
+                                                        "source-57g-montana-subgrantees-csv",
+                                                        "source-57g-montana-cai-csv",
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026",
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57b-louisiana-starlink-bead-agreement"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-hanford-mass-balance-threshold-release-authorization",
+                          "title":  "Hanford complete material balance receives actor- and domain-separated threshold authorization",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/31-phase57v-record.txt",
+                          "bytes":  1326,
+                          "sha256":  "20832895da2451a0166b366b5b89820ddeb6e8d636d78a75cf01bd640862a93f",
+                          "official_url":  "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+                          "source_id":  "source-57g-hanford-dflaw-process-animation",
+                          "supporting_source_ids":  [
+                                                        "source-57g-hanford-dflaw-process-animation",
+                                                        "source-57g-hanford-ap106-feed-staging",
+                                                        "source-57c-hanford-20-containers-2025",
+                                                        "source-57e-doe-hanford-acceptable-glass-startup",
+                                                        "source-57f-hanford-wtp-pmm-february-2026",
+                                                        "source-57b-ecology-wtp-byproduct-response-comments",
+                                                        "source-56x-hanford-first-ilaw-disposal-2026",
+                                                        "source-57b-hanford-wtp-project-managers-may-2026",
+                                                        "source-57f-doe-hanford-100k-gallons-may-2026",
+                                                        "source-57d-hanford-wtp-consent-may-2026",
+                                                        "source-57d-hanford-wtp-consent-june-2026",
+                                                        "source-57d-hanford-wtp-consent-july-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-hanford-mass-balance-independent-witness-checkpoints",
+                          "title":  "Hanford complete material balance receives independently witnessed transparency checkpoints",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/32-phase57v-record.txt",
+                          "bytes":  1317,
+                          "sha256":  "51e00ffb43a9058ac82504020df95c63a3212648db385c2a4ea5a81811b060d7",
+                          "official_url":  "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+                          "source_id":  "source-57g-hanford-dflaw-process-animation",
+                          "supporting_source_ids":  [
+                                                        "source-57g-hanford-dflaw-process-animation",
+                                                        "source-57g-hanford-ap106-feed-staging",
+                                                        "source-57c-hanford-20-containers-2025",
+                                                        "source-57e-doe-hanford-acceptable-glass-startup",
+                                                        "source-57f-hanford-wtp-pmm-february-2026",
+                                                        "source-57b-ecology-wtp-byproduct-response-comments",
+                                                        "source-56x-hanford-first-ilaw-disposal-2026",
+                                                        "source-57b-hanford-wtp-project-managers-may-2026",
+                                                        "source-57f-doe-hanford-100k-gallons-may-2026",
+                                                        "source-57d-hanford-wtp-consent-may-2026",
+                                                        "source-57d-hanford-wtp-consent-june-2026",
+                                                        "source-57d-hanford-wtp-consent-july-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-hanford-mass-balance-cross-log-gossip-split-view-detection",
+                          "title":  "Hanford complete material balance receives cross-log gossip split-view detection",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/33-phase57v-record.txt",
+                          "bytes":  1284,
+                          "sha256":  "ab82f3b39d7f756b36d0aa483640254fabba3754fc724a7ce005f432da4f1bc2",
+                          "official_url":  "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+                          "source_id":  "source-57g-hanford-dflaw-process-animation",
+                          "supporting_source_ids":  [
+                                                        "source-57g-hanford-dflaw-process-animation",
+                                                        "source-57g-hanford-ap106-feed-staging",
+                                                        "source-57c-hanford-20-containers-2025",
+                                                        "source-57e-doe-hanford-acceptable-glass-startup",
+                                                        "source-57f-hanford-wtp-pmm-february-2026",
+                                                        "source-57b-ecology-wtp-byproduct-response-comments",
+                                                        "source-56x-hanford-first-ilaw-disposal-2026",
+                                                        "source-57b-hanford-wtp-project-managers-may-2026",
+                                                        "source-57f-doe-hanford-100k-gallons-may-2026",
+                                                        "source-57d-hanford-wtp-consent-may-2026",
+                                                        "source-57d-hanford-wtp-consent-june-2026",
+                                                        "source-57d-hanford-wtp-consent-july-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-hanford-mass-balance-trusted-time-anti-rollback-receipts",
+                          "title":  "Hanford complete material balance receives monotonic trusted-time receipts",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/34-phase57v-record.txt",
+                          "bytes":  1262,
+                          "sha256":  "e8e44cdeba912a4141b40910242878942349c11cb370121de3d11a118100f2d3",
+                          "official_url":  "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+                          "source_id":  "source-57g-hanford-dflaw-process-animation",
+                          "supporting_source_ids":  [
+                                                        "source-57g-hanford-dflaw-process-animation",
+                                                        "source-57g-hanford-ap106-feed-staging",
+                                                        "source-57c-hanford-20-containers-2025",
+                                                        "source-57e-doe-hanford-acceptable-glass-startup",
+                                                        "source-57f-hanford-wtp-pmm-february-2026",
+                                                        "source-57b-ecology-wtp-byproduct-response-comments",
+                                                        "source-56x-hanford-first-ilaw-disposal-2026",
+                                                        "source-57b-hanford-wtp-project-managers-may-2026",
+                                                        "source-57f-doe-hanford-100k-gallons-may-2026",
+                                                        "source-57d-hanford-wtp-consent-may-2026",
+                                                        "source-57d-hanford-wtp-consent-june-2026",
+                                                        "source-57d-hanford-wtp-consent-july-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-hanford-mass-balance-three-implementation-verifier-diversity",
+                          "title":  "Hanford complete material balance receives three-implementation verifier conformance",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/35-phase57v-record.txt",
+                          "bytes":  1378,
+                          "sha256":  "4c675e870328f2b82a95f22df75edd351518bfd518f094304a25eaa7122de5f1",
+                          "official_url":  "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+                          "source_id":  "source-57g-hanford-dflaw-process-animation",
+                          "supporting_source_ids":  [
+                                                        "source-57g-hanford-dflaw-process-animation",
+                                                        "source-57g-hanford-ap106-feed-staging",
+                                                        "source-57c-hanford-20-containers-2025",
+                                                        "source-57e-doe-hanford-acceptable-glass-startup",
+                                                        "source-57f-hanford-wtp-pmm-february-2026",
+                                                        "source-57b-ecology-wtp-byproduct-response-comments",
+                                                        "source-56x-hanford-first-ilaw-disposal-2026",
+                                                        "source-57b-hanford-wtp-project-managers-may-2026",
+                                                        "source-57f-doe-hanford-100k-gallons-may-2026",
+                                                        "source-57d-hanford-wtp-consent-may-2026",
+                                                        "source-57d-hanford-wtp-consent-june-2026",
+                                                        "source-57d-hanford-wtp-consent-july-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-hanford-mass-balance-algorithm-key-compromise-recovery",
+                          "title":  "Hanford complete material balance receives bounded algorithm and key-compromise recovery",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/36-phase57v-record.txt",
+                          "bytes":  1347,
+                          "sha256":  "af21e139eaeab5f104b12ce40c49a69ab023e302549b554d807c4897ba595ef5",
+                          "official_url":  "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+                          "source_id":  "source-57g-hanford-dflaw-process-animation",
+                          "supporting_source_ids":  [
+                                                        "source-57g-hanford-dflaw-process-animation",
+                                                        "source-57g-hanford-ap106-feed-staging",
+                                                        "source-57c-hanford-20-containers-2025",
+                                                        "source-57e-doe-hanford-acceptable-glass-startup",
+                                                        "source-57f-hanford-wtp-pmm-february-2026",
+                                                        "source-57b-ecology-wtp-byproduct-response-comments",
+                                                        "source-56x-hanford-first-ilaw-disposal-2026",
+                                                        "source-57b-hanford-wtp-project-managers-may-2026",
+                                                        "source-57f-doe-hanford-100k-gallons-may-2026",
+                                                        "source-57d-hanford-wtp-consent-may-2026",
+                                                        "source-57d-hanford-wtp-consent-june-2026",
+                                                        "source-57d-hanford-wtp-consent-july-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-qualified-rate-threshold-release-authorization",
+                          "title":  "NNSA recurring qualified rate receives actor- and domain-separated threshold authorization",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/37-phase57v-record.txt",
+                          "bytes":  1264,
+                          "sha256":  "da17c741471b170064faa2ae639baee7af79a153a03a22dade18d0aece9ccecf",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-qualified-rate-independent-witness-checkpoints",
+                          "title":  "NNSA recurring qualified rate receives independently witnessed transparency checkpoints",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/38-phase57v-record.txt",
+                          "bytes":  1255,
+                          "sha256":  "18b389ec6b5589c2766b8a6b1731fa5716ece08edd3c2fbe3c4bd10543e248ed",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-qualified-rate-cross-log-gossip-split-view-detection",
+                          "title":  "NNSA recurring qualified rate receives cross-log gossip split-view detection",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/39-phase57v-record.txt",
+                          "bytes":  1222,
+                          "sha256":  "3a71656b4e6fc9cbbfa587a217bcdce5f9eb07589dabdfa93f97fa991ebd61c6",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-qualified-rate-trusted-time-anti-rollback-receipts",
+                          "title":  "NNSA recurring qualified rate receives monotonic trusted-time receipts",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/40-phase57v-record.txt",
+                          "bytes":  1200,
+                          "sha256":  "0d8927768fd503b7143e412d5221f71b76edac301da439454dd0c3673220cd6a",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-qualified-rate-three-implementation-verifier-diversity",
+                          "title":  "NNSA recurring qualified rate receives three-implementation verifier conformance",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/41-phase57v-record.txt",
+                          "bytes":  1316,
+                          "sha256":  "6dec7bd234c73f9aed9a763d1ae9cfc38ab7d48545bdfe808234e3bef8dc4217",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-qualified-rate-algorithm-key-compromise-recovery",
+                          "title":  "NNSA recurring qualified rate receives bounded algorithm and key-compromise recovery",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/42-phase57v-record.txt",
+                          "bytes":  1285,
+                          "sha256":  "9faa4c6ce99b9a4e55378db38ec5a2966786fae995db85352b0e56c62692bf92",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-accepted-capacity-threshold-release-authorization",
+                          "title":  "NNSA accepted operating capacity receives actor- and domain-separated threshold authorization",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/43-phase57v-record.txt",
+                          "bytes":  1267,
+                          "sha256":  "af659efc4f3762781076ae53680a2fba7e1a359eb9b58c3a445de0f5f3b6bc25",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-accepted-capacity-independent-witness-checkpoints",
+                          "title":  "NNSA accepted operating capacity receives independently witnessed transparency checkpoints",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/44-phase57v-record.txt",
+                          "bytes":  1258,
+                          "sha256":  "fab71ab3a8fd0a16ec34c2caaafb54a06e94972022a4f6c2f8251d0175a11fb0",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-accepted-capacity-cross-log-gossip-split-view-detection",
+                          "title":  "NNSA accepted operating capacity receives cross-log gossip split-view detection",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/45-phase57v-record.txt",
+                          "bytes":  1225,
+                          "sha256":  "4a95dbd98bca2856c30a518f092b011b36115b318564fa820d2bbb3ea2289fdd",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-accepted-capacity-trusted-time-anti-rollback-receipts",
+                          "title":  "NNSA accepted operating capacity receives monotonic trusted-time receipts",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/46-phase57v-record.txt",
+                          "bytes":  1203,
+                          "sha256":  "4f2fe9242645f34a2bf5b0b09ed536da39506365412c03cbc17382eb8dadda5e",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-accepted-capacity-three-implementation-verifier-diversity",
+                          "title":  "NNSA accepted operating capacity receives three-implementation verifier conformance",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/47-phase57v-record.txt",
+                          "bytes":  1319,
+                          "sha256":  "ec3727e6690163b367821eed3cb9df3817857eb975c51276af5e3a59852a9ac2",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-accepted-capacity-algorithm-key-compromise-recovery",
+                          "title":  "NNSA accepted operating capacity receives bounded algorithm and key-compromise recovery",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/48-phase57v-record.txt",
+                          "bytes":  1288,
+                          "sha256":  "1f6126f75b2a153d34f5ac9c168dbc4357960c484807adc7ac2d4c84e75f0a0b",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-gao-baseline-threshold-release-authorization",
+                          "title":  "NNSA GAO enterprise baseline receives actor- and domain-separated threshold authorization",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/49-phase57v-record.txt",
+                          "bytes":  1263,
+                          "sha256":  "d57c8d23b3771c33bae412a324d94d570b1cfd0df776c8aadacf3eeb82429962",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-gao-baseline-independent-witness-checkpoints",
+                          "title":  "NNSA GAO enterprise baseline receives independently witnessed transparency checkpoints",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/50-phase57v-record.txt",
+                          "bytes":  1254,
+                          "sha256":  "99823395c3450a0d8acff0131a0dc00b83f39ff9219c9abf67cc2b3e434429c6",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-gao-baseline-cross-log-gossip-split-view-detection",
+                          "title":  "NNSA GAO enterprise baseline receives cross-log gossip split-view detection",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/51-phase57v-record.txt",
+                          "bytes":  1221,
+                          "sha256":  "f1df9ee7dcb6f847895ef9bc2398ad3a232389cf65f0c0d4a24a6c000f234e8e",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-gao-baseline-trusted-time-anti-rollback-receipts",
+                          "title":  "NNSA GAO enterprise baseline receives monotonic trusted-time receipts",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/52-phase57v-record.txt",
+                          "bytes":  1199,
+                          "sha256":  "bd3eae1c7c77c0fd724ff1a898909d71d324aabec1e3298a885032756ab0b2e0",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-gao-baseline-three-implementation-verifier-diversity",
+                          "title":  "NNSA GAO enterprise baseline receives three-implementation verifier conformance",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/53-phase57v-record.txt",
+                          "bytes":  1315,
+                          "sha256":  "4360c5e65a040be7a10b2e188b1b4a29e4988f13dbfbce732ae3d623c71d0273",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-nnsa-gao-baseline-algorithm-key-compromise-recovery",
+                          "title":  "NNSA GAO enterprise baseline receives bounded algorithm and key-compromise recovery",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Data Release",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/54-phase57v-record.txt",
+                          "bytes":  1284,
+                          "sha256":  "dc0b225190b90eac866160c69cbd8cbf0672295dbd74a61e421598b8d6a4c75e",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+                          "source_id":  "source-57g-nnsa-fy2026-weapons-activities",
+                          "supporting_source_ids":  [
+                                                        "source-57g-nnsa-fy2026-weapons-activities",
+                                                        "source-56w-nnsa-fy2027-weapons-activities",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57f-nnsa-stockpile-current",
+                                                        "source-57g-nnsa-lap4-30-base-construction",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026",
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-preserved-amtrak-pids",
+                          "title":  "Amtrak PIDS closeout remains In Review after threshold trust and compromise-recovery execution",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Technical Report",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/55-phase57v-record.txt",
+                          "bytes":  1402,
+                          "sha256":  "0090f838cc2c279283a6d4a8e4c41cd8b6ed88965b8d29b345e0754a86f9f1ee",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57b-amtrak-ada-progress-june-2026",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-preserved-amtrak-reliability",
+                          "title":  "Amtrak named-asset reliability remains In Review after threshold trust and compromise-recovery execution",
+                          "publisher":  "National Railroad Passenger Corporation",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Technical Report",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/56-phase57v-record.txt",
+                          "bytes":  1412,
+                          "sha256":  "c68a4c147f03927d8139f7c85f2b67bc365229a6450d89e1a08eb4c3711798fe",
+                          "official_url":  "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+                          "source_id":  "source-57f-amtrak-stations-alp-fy24-29",
+                          "supporting_source_ids":  [
+                                                        "source-57f-amtrak-stations-alp-fy24-29",
+                                                        "source-57e-amtrak-accessibility-progress-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-preserved-la-nextlink-adoption",
+                          "title":  "Louisiana Nextlink adoption remains In Review after threshold trust and compromise-recovery execution",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Technical Report",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/57-phase57v-record.txt",
+                          "bytes":  1394,
+                          "sha256":  "3cef3951c2c57e671f1d65b48c9762a421203ada8143c7be2c53a583de4bbf3f",
+                          "official_url":  "https://connect.la.gov/press-releases/nextlink-activates-first-bead-funded-tower-in-the-united-states-connecting-rural-louisiana",
+                          "source_id":  "source-57b-louisiana-nextlink-first-bead-tower",
+                          "supporting_source_ids":  [
+                                                        "source-57b-louisiana-nextlink-first-bead-tower",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://connect.la.gov/press-releases/nextlink-activates-first-bead-funded-tower-in-the-united-states-connecting-rural-louisiana"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-preserved-la-starlink-adoption",
+                          "title":  "Louisiana Starlink adoption remains In Review after threshold trust and compromise-recovery execution",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Technical Report",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/58-phase57v-record.txt",
+                          "bytes":  1424,
+                          "sha256":  "5d0b0f987127d7d7f2b2ba030a5931f1a7c22c35c500154925bf220b57363c42",
+                          "official_url":  "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access",
+                          "source_id":  "source-57b-louisiana-starlink-bead-agreement",
+                          "supporting_source_ids":  [
+                                                        "source-57b-louisiana-starlink-bead-agreement",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-preserved-mt-bead-quarter",
+                          "title":  "Montana BEAD completed quarter remains In Review after threshold trust and compromise-recovery execution",
+                          "publisher":  "National Telecommunications and Information Administration",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Technical Report",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/59-phase57v-record.txt",
+                          "bytes":  1209,
+                          "sha256":  "1184f0c8c5ea8cf6cf52d96c1494321675690696ba1d50ca45645d07843ebbab",
+                          "official_url":  "https://doa.mt.gov/ConnectMT/iija/",
+                          "source_id":  "source-57f-montana-bead-resource-index-august-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57f-montana-bead-resource-index-august-2026",
+                                                        "source-57f-montana-leo-quarterly-instructions-june-2026",
+                                                        "source-57e-montana-quarterly-report-instructions-june-2026",
+                                                        "source-57e-montana-project-monitoring-guide-june-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://doa.mt.gov/ConnectMT/iija/"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-preserved-hanford-mass-balance",
+                          "title":  "Hanford complete material balance remains In Review after threshold trust and compromise-recovery execution",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Technical Report",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/60-phase57v-record.txt",
+                          "bytes":  1199,
+                          "sha256":  "6596864e6fd3b518cae46cf19ec893eea2fa8d79c4bbcb1eb550bd49bffbed16",
+                          "official_url":  "https://pdw.hanford.gov/download/v2/AR-39756",
+                          "source_id":  "source-57f-hanford-wtp-pmm-february-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57f-hanford-wtp-pmm-february-2026",
+                                                        "source-57f-doe-hanford-100k-gallons-may-2026",
+                                                        "source-57d-hanford-wtp-consent-may-2026",
+                                                        "source-57d-hanford-wtp-consent-june-2026",
+                                                        "source-57d-hanford-wtp-consent-july-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://pdw.hanford.gov/download/v2/AR-39756"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-preserved-nnsa-qualified-rate",
+                          "title":  "NNSA recurring qualified rate remains In Review after threshold trust and compromise-recovery execution",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Technical Report",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/61-phase57v-record.txt",
+                          "bytes":  1211,
+                          "sha256":  "a48d67f7e29e6a35f20f17c06a62d0121e4d2a91719cb1448df406d6d2a94a50",
+                          "official_url":  "https://www.energy.gov/nnsa/plutonium-pit-production",
+                          "source_id":  "source-57f-nnsa-pit-production-current",
+                          "supporting_source_ids":  [
+                                                        "source-57f-nnsa-pit-production-current",
+                                                        "source-57a-nnsa-w87-1-first-production-unit",
+                                                        "source-57b-nnsa-sasc-testimony-may-2026"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/nnsa/plutonium-pit-production"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-preserved-nnsa-accepted-capacity",
+                          "title":  "NNSA accepted operating capacity remains In Review after threshold trust and compromise-recovery execution",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Technical Report",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/62-phase57v-record.txt",
+                          "bytes":  1326,
+                          "sha256":  "a17d9aa11a199e867339f2d28c1a5557d1d5f69a487ad88cff7d04a937e8a5d1",
+                          "official_url":  "https://www.energy.gov/sites/default/files/2026-04/draft-eis-0573-plutonium-pit-production-vol-1-2026-04.pdf",
+                          "source_id":  "source-57b-nnsa-pit-production-draft-peis-2026",
+                          "supporting_source_ids":  [
+                                                        "source-57b-nnsa-pit-production-draft-peis-2026",
+                                                        "source-57f-nnsa-pit-production-current"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.energy.gov/sites/default/files/2026-04/draft-eis-0573-plutonium-pit-production-vol-1-2026-04.pdf"
+                                                       ]
+                      },
+                      {
+                          "id":  "research-doc-57v-preserved-nnsa-gao-baseline",
+                          "title":  "NNSA GAO enterprise baseline remains In Review after threshold trust and compromise-recovery execution",
+                          "publisher":  "U.S. Department of Energy",
+                          "publication_date":  "2026-08-10",
+                          "document_type":  "Technical Report",
+                          "capture_status":  "Official link record",
+                          "archive_member":  "official-links/63-phase57v-record.txt",
+                          "bytes":  1190,
+                          "sha256":  "cfe491447c7614637fcc1cff9697888f68379b44b95fdef8c068306201950dd6",
+                          "official_url":  "https://www.gao.gov/products/gao-23-104661",
+                          "source_id":  "source-56q-gao-23-104661-recommendation-status",
+                          "supporting_source_ids":  [
+                                                        "source-56q-gao-23-104661-recommendation-status",
+                                                        "source-56x-gao-nnsa-major-projects-2026",
+                                                        "source-57f-nnsa-pit-production-current"
+                                                    ],
+                          "supporting_official_urls":  [
+                                                           "https://www.gao.gov/products/gao-23-104661"
+                                                       ]
+                      }
+                  ]
+}

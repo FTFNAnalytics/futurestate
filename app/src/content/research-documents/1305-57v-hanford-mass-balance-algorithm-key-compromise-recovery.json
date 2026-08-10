@@ -1,0 +1,72 @@
+{
+  "id": "research-doc-57v-hanford-mass-balance-algorithm-key-compromise-recovery",
+  "collection_id": "research-collection-threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026",
+  "title": "Hanford complete material balance receives bounded algorithm and key-compromise recovery",
+  "slug": "57v-hanford-mass-balance-algorithm-key-compromise-recovery",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy",
+  "publication_date": "2026-08-10",
+  "document_type": "Data Release",
+  "summary": "A declared compromise freezes and revokes the affected key, disables its algorithm, requires a distinct replacement key and algorithm, threshold authorization, witnessed checkpoint, trusted time, and independent historical re-verification while reconstructed state remains inactive. Denominator: One compromise-recovery schema, twenty-six adversarial cases, seven valid or preservation routes, nineteen explicit rejections, and zero actual compromise events, recovery actions, algorithm migrations, or reader activations.",
+  "key_findings": [
+    "Evidence stage: Algorithm and key-compromise recovery controls.",
+    "Finding: A declared compromise freezes and revokes the affected key, disables its algorithm, requires a distinct replacement key and algorithm, threshold authorization, witnessed checkpoint, trusted time, and independent historical re-verification while reconstructed state remains inactive.",
+    "Denominator: One compromise-recovery schema, twenty-six adversarial cases, seven valid or preservation routes, nineteen explicit rejections, and zero actual compromise events, recovery actions, algorithm migrations, or reader activations.",
+    "Boundary: Fixture compromise events and recovery actions are drills, not reports of an operational compromise.",
+    "Boundary: Missing containment, reused keys or algorithms, absent quorum, witness or time proof, retroactive trust, automatic re-trust, rewrite, replay, backdating, activation, publication, closure, or evidence inflation reject.",
+    "Boundary: Recovery never retroactively trusts artifacts signed by a compromised key and cannot publish or close a hold automatically.",
+    "Next action: Recover Hanford complete material balance only through clean key and algorithm replacement plus independent re-verification, with all reconstructed state inactive."
+  ],
+  "why_it_matters": "The record makes release quorum, witness independence, split-view detection, temporal ordering, verifier reproducibility, and compromise recovery independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Requires three-of-five release authorization without same-actor or same-domain quorum.",
+    "Federates independently witnessed checkpoints through cross-log gossip and trusted time.",
+    "Requires three independent verifier implementations and clean compromise recovery without retroactive trust."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Fixture compromise events and recovery actions are drills, not reports of an operational compromise.",
+    "Missing containment, reused keys or algorithms, absent quorum, witness or time proof, retroactive trust, automatic re-trust, rewrite, replay, backdating, activation, publication, closure, or evidence inflation reject.",
+    "Recovery never retroactively trusts artifacts signed by a compromised key and cannot publish or close a hold automatically.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-hanford-dflaw-process-animation",
+  "supporting_source_ids": [
+    "source-57g-hanford-dflaw-process-animation",
+    "source-57g-hanford-ap106-feed-staging",
+    "source-57c-hanford-20-containers-2025",
+    "source-57e-doe-hanford-acceptable-glass-startup",
+    "source-57f-hanford-wtp-pmm-february-2026",
+    "source-57b-ecology-wtp-byproduct-response-comments",
+    "source-56x-hanford-first-ilaw-disposal-2026",
+    "source-57b-hanford-wtp-project-managers-may-2026",
+    "source-57f-doe-hanford-100k-gallons-may-2026",
+    "source-57d-hanford-wtp-consent-may-2026",
+    "source-57d-hanford-wtp-consent-june-2026",
+    "source-57d-hanford-wtp-consent-july-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation"
+  ],
+  "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+  "local_capture_path": "/downloads/threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026/official-links/36-phase57v-record.txt",
+  "archive_member": "official-links/36-phase57v-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-10"
+}

@@ -1,0 +1,106 @@
+---
+id: "briefing-research-watch-052-threshold-trust-and-compromise-recovery"
+title: "Research Watch 052: Threshold Trust and Compromise Recovery"
+slug: "research-watch-052-threshold-trust-and-compromise-recovery"
+record_status: "Published"
+summary: "Phase 57V passes 1,296 synthetic threshold, witness, gossip, trusted-time, verifier-diversity, and compromise-recovery cases while preserving all nine holds and keeping every production trust, recovery, trigger, and evidence-event count at zero."
+published_date: 2026-08-10
+captured_date: 2026-08-10
+signal_ids:
+  - "signal-57v-amtrak-pids-threshold-release-authorization"
+  - "signal-57v-amtrak-pids-independent-witness-checkpoints"
+  - "signal-57v-amtrak-pids-cross-log-gossip-split-view-detection"
+  - "signal-57v-amtrak-pids-trusted-time-anti-rollback-receipts"
+  - "signal-57v-amtrak-pids-three-implementation-verifier-diversity"
+  - "signal-57v-amtrak-pids-algorithm-key-compromise-recovery"
+  - "signal-57v-amtrak-reliability-threshold-release-authorization"
+  - "signal-57v-amtrak-reliability-independent-witness-checkpoints"
+  - "signal-57v-amtrak-reliability-cross-log-gossip-split-view-detection"
+  - "signal-57v-amtrak-reliability-trusted-time-anti-rollback-receipts"
+  - "signal-57v-amtrak-reliability-three-implementation-verifier-diversity"
+  - "signal-57v-amtrak-reliability-algorithm-key-compromise-recovery"
+  - "signal-57v-la-nextlink-adoption-threshold-release-authorization"
+  - "signal-57v-la-nextlink-adoption-independent-witness-checkpoints"
+  - "signal-57v-la-nextlink-adoption-cross-log-gossip-split-view-detection"
+  - "signal-57v-la-nextlink-adoption-trusted-time-anti-rollback-receipts"
+  - "signal-57v-la-nextlink-adoption-three-implementation-verifier-diversity"
+  - "signal-57v-la-nextlink-adoption-algorithm-key-compromise-recovery"
+  - "signal-57v-la-starlink-adoption-threshold-release-authorization"
+  - "signal-57v-la-starlink-adoption-independent-witness-checkpoints"
+  - "signal-57v-la-starlink-adoption-cross-log-gossip-split-view-detection"
+  - "signal-57v-la-starlink-adoption-trusted-time-anti-rollback-receipts"
+  - "signal-57v-la-starlink-adoption-three-implementation-verifier-diversity"
+  - "signal-57v-la-starlink-adoption-algorithm-key-compromise-recovery"
+  - "signal-57v-mt-bead-quarter-threshold-release-authorization"
+  - "signal-57v-mt-bead-quarter-independent-witness-checkpoints"
+  - "signal-57v-mt-bead-quarter-cross-log-gossip-split-view-detection"
+  - "signal-57v-mt-bead-quarter-trusted-time-anti-rollback-receipts"
+  - "signal-57v-mt-bead-quarter-three-implementation-verifier-diversity"
+  - "signal-57v-mt-bead-quarter-algorithm-key-compromise-recovery"
+  - "signal-57v-hanford-mass-balance-threshold-release-authorization"
+  - "signal-57v-hanford-mass-balance-independent-witness-checkpoints"
+  - "signal-57v-hanford-mass-balance-cross-log-gossip-split-view-detection"
+  - "signal-57v-hanford-mass-balance-trusted-time-anti-rollback-receipts"
+  - "signal-57v-hanford-mass-balance-three-implementation-verifier-diversity"
+  - "signal-57v-hanford-mass-balance-algorithm-key-compromise-recovery"
+  - "signal-57v-nnsa-qualified-rate-threshold-release-authorization"
+  - "signal-57v-nnsa-qualified-rate-independent-witness-checkpoints"
+  - "signal-57v-nnsa-qualified-rate-cross-log-gossip-split-view-detection"
+  - "signal-57v-nnsa-qualified-rate-trusted-time-anti-rollback-receipts"
+  - "signal-57v-nnsa-qualified-rate-three-implementation-verifier-diversity"
+  - "signal-57v-nnsa-qualified-rate-algorithm-key-compromise-recovery"
+  - "signal-57v-nnsa-accepted-capacity-threshold-release-authorization"
+  - "signal-57v-nnsa-accepted-capacity-independent-witness-checkpoints"
+  - "signal-57v-nnsa-accepted-capacity-cross-log-gossip-split-view-detection"
+  - "signal-57v-nnsa-accepted-capacity-trusted-time-anti-rollback-receipts"
+  - "signal-57v-nnsa-accepted-capacity-three-implementation-verifier-diversity"
+  - "signal-57v-nnsa-accepted-capacity-algorithm-key-compromise-recovery"
+  - "signal-57v-nnsa-gao-baseline-threshold-release-authorization"
+  - "signal-57v-nnsa-gao-baseline-independent-witness-checkpoints"
+  - "signal-57v-nnsa-gao-baseline-cross-log-gossip-split-view-detection"
+  - "signal-57v-nnsa-gao-baseline-trusted-time-anti-rollback-receipts"
+  - "signal-57v-nnsa-gao-baseline-three-implementation-verifier-diversity"
+  - "signal-57v-nnsa-gao-baseline-algorithm-key-compromise-recovery"
+  - "signal-57v-preserved-amtrak-pids"
+  - "signal-57v-preserved-amtrak-reliability"
+  - "signal-57v-preserved-la-nextlink-adoption"
+  - "signal-57v-preserved-la-starlink-adoption"
+  - "signal-57v-preserved-mt-bead-quarter"
+  - "signal-57v-preserved-hanford-mass-balance"
+  - "signal-57v-preserved-nnsa-qualified-rate"
+  - "signal-57v-preserved-nnsa-accepted-capacity"
+  - "signal-57v-preserved-nnsa-gao-baseline"
+evidence_gap_ids:
+  - "gap-008"
+  - "gap-015"
+  - "gap-016"
+claim_scope: "Editorial Synthesis"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-08-10
+top_takeaways:
+  - "Nine three-of-five policies reject same-actor and same-domain quorum construction."
+  - "Nine independently witnessed checkpoint systems require distinct operators and infrastructure domains."
+  - "Cross-log gossip and monotonic trusted time fail split views and rollback attempts closed."
+  - "Three verifier implementations must reproduce one integrity-only result; compromise recovery never retroactively trusts artifacts signed by the compromised key."
+constraint_watch:
+  - "Data Quality"
+  - "Regulation"
+  - "Public Trust"
+what_to_watch_next:
+  - "One production M-of-N policy operated by distinct actors and authority domains"
+  - "Independent witness services publishing checkpoint signatures on separate infrastructure"
+  - "Cross-log gossip and trusted-time receipts that expose split views or rollback"
+  - "Reproducible conformance across three production verifier implementations and one clean compromise-recovery exercise"
+---
+
+## What Phase 57V proves
+
+Release integrity can be federated through actor- and domain-separated threshold authorization, independently witnessed checkpoints, cross-log gossip, monotonic trusted time, verifier diversity, and compromise recovery that forbids retroactive trust.
+
+## What did not move
+
+No synthetic threshold share, witness signature, checkpoint, gossip message, time receipt, verifier result, compromise event, recovery action, or algorithm migration is an actual editorial or infrastructure event. No reader state activates, no trigger or hold closes, and every inherited hold remains In Review.
+
+## Evidence boundary
+
+The entity ledger remains one Closed, twenty-one Partially Closed, and two Open. Phase 57V records no agency contact, FOIA request, directive-scope change, implementation change, capability change, closure change, attribution change, or operating-outcome change.

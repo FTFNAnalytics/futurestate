@@ -1,0 +1,71 @@
+{
+  "id": "research-doc-57v-la-nextlink-adoption-trusted-time-anti-rollback-receipts",
+  "collection_id": "research-collection-threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026",
+  "title": "Louisiana Nextlink adoption receives monotonic trusted-time receipts",
+  "slug": "57v-la-nextlink-adoption-trusted-time-anti-rollback-receipts",
+  "record_status": "Published",
+  "publisher": "National Telecommunications and Information Administration",
+  "publication_date": "2026-08-10",
+  "document_type": "Data Release",
+  "summary": "An independent time authority binds monotonic sequence, counter, observation time, prior receipt, release digest, and checkpoint digest; time regression, counter reuse, lineage loss, authority conflict, or backdating fails closed. Denominator: One trusted-time schema, twenty-three adversarial cases, six bounded valid routes, seventeen explicit rejections, and zero production time receipts issued.",
+  "key_findings": [
+    "Evidence stage: Trusted-time and anti-rollback receipt controls.",
+    "Finding: An independent time authority binds monotonic sequence, counter, observation time, prior receipt, release digest, and checkpoint digest; time regression, counter reuse, lineage loss, authority conflict, or backdating fails closed.",
+    "Denominator: One trusted-time schema, twenty-three adversarial cases, six bounded valid routes, seventeen explicit rejections, and zero production time receipts issued.",
+    "Boundary: Fixture time receipts are synthetic and provide no production timestamping guarantee.",
+    "Boundary: Regressive, reused, missing, mismatched, conflicted, invalid, skewed, stale, rewritten, publishing, closing, or evidence-inflating time fixtures reject.",
+    "Boundary: Trusted time orders integrity events but cannot make evidence true, accepted, implemented, closed, attributable, or outcome-bearing.",
+    "Next action: Accept a Louisiana Nextlink adoption integrity event only after independent monotonic time and prior-receipt lineage verify."
+  ],
+  "why_it_matters": "The record makes release quorum, witness independence, split-view detection, temporal ordering, verifier reproducibility, and compromise recovery independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Requires three-of-five release authorization without same-actor or same-domain quorum.",
+    "Federates independently witnessed checkpoints through cross-log gossip and trusted time.",
+    "Requires three independent verifier implementations and clean compromise recovery without retroactive trust."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Fixture time receipts are synthetic and provide no production timestamping guarantee.",
+    "Regressive, reused, missing, mismatched, conflicted, invalid, skewed, stale, rewritten, publishing, closing, or evidence-inflating time fixtures reject.",
+    "Trusted time orders integrity events but cannot make evidence true, accepted, implemented, closed, attributable, or outcome-bearing.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-montana-bead-final-proposal-january-2026",
+  "supporting_source_ids": [
+    "source-57g-montana-bead-final-proposal-january-2026",
+    "source-57g-montana-deployment-projects-csv",
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-subgrantees-csv",
+    "source-57g-montana-cai-csv",
+    "source-57f-montana-bead-resource-index-august-2026",
+    "source-57f-montana-leo-quarterly-instructions-june-2026",
+    "source-57e-montana-quarterly-report-instructions-june-2026",
+    "source-57e-montana-project-monitoring-guide-june-2026",
+    "source-57b-louisiana-nextlink-first-bead-tower",
+    "source-57b-louisiana-starlink-bead-agreement"
+  ],
+  "supporting_official_urls": [
+    "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+  ],
+  "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+  "local_capture_path": "/downloads/threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026/official-links/16-phase57v-record.txt",
+  "archive_member": "official-links/16-phase57v-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-10"
+}
