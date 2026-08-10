@@ -421,12 +421,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 57V | fifty-four Published threshold, witness, gossip, trusted-time, verifier-diversity, and compromise-recovery controls, nine preserved holds, fifty-four schemas, 1,296 workflow cases, Research Watch 052, a sixty-six-file archive, a verified 3,469-page contract, and Sites version 78 |
 | Completed and owner-only deployed | Phase 57W | fifty-four Published quorum-ceremony, witness-availability, fork-accountability, time-failover, build-provenance, and re-issuance controls, nine preserved holds, fifty-four schemas, 1,431 workflow cases, Research Watch 053, a sixty-six-file archive, a verified 3,597-page contract, and Sites version 79 |
 | Completed locally; deployment pending | Phase 57X | fifty-four Published federation-health, witness-diversity, fork-adjudication, time-corroboration, patch-provenance, and reversible-decommissioning controls, nine preserved holds, fifty-four schemas, 1,593 workflow cases, Research Watch 054, a sixty-six-file archive, and a verified 3,725-page contract |
-| Next content gate | Phase 57Y | health-breach remediation, witness rotation and correlated-failure drills, adjudicator recusal and precedent, time holdover and resynchronization, coordinated vulnerability rollout, and long-term legacy recovery |
+| Completed locally; deployment pending | Phase 57Y | fifty-four Published remediation, rotation, recusal, holdover, rollout, and long-term-recovery controls, nine preserved holds, fifty-four schemas, 1,629 workflow cases, Research Watch 055, and a sixty-six-file archive |
+| Completed locally; deployment pending | Phase 57Z | eleven Published dated-evidence decisions, one bounded Toronto signal promotion, one DARPA results gate retained, nine inherited holds rechecked with zero resolved, Research Watch 056, and a fourteen-file archive |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
-| Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
+| Next operating gate | Phase 58 | run dated evidence operations, add reader-facing change products, and pilot the private Supabase authority loop without changing the Git and human publication gate |
 
-The planned v0.2 build remains owner-only and now contains the complete, locally release-validated Phase 57X federation-health, witness-diversity, fork-adjudication, time-corroboration, patch-provenance, and reversible-decommissioning layer. Phase 57X reviews sixty-three records and publishes fifty-four contract-specific controls while preserving all nine Phase 57W holds and adding no new hold. Thirty-six carried Tier 1 sources support nine schemas on each of six federation-operations rails and 1,593 passing workflow cases with zero production health events, partitions, diversity audits, adjudications, appeals, time comparisons, advisories, patches, decommissionings, rollbacks, notifications, reader-state changes, blame assignments, evidence changes, triggers, publications, closures, or operating-outcome changes. Threshold lowering, dimension-substituting diversity, automatic blame, imported rollback, vulnerable-lineage rewrite, forced reader migration, and irreversible decommissioning fail closed. The verified release contract is 3,725 pages, 715 sources, 1,343 signals, 1,065 Published, 278 In Review, fifty-nine collections, 1,459 research documents, sixty-two briefings, 78 updates, 1,259 research export records, and 498 Published-support sources. Exact local content commit `86c4a615` preserves Phase 57X, but no private-runtime mapping or deployment receipt exists. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Phase 57Y breach remediation, rotation and correlated-failure drills, adjudicator recusal and precedent, time holdover, coordinated vulnerability rollout, and long-term legacy recovery are next. Dated outcome checks remain non-blocking inserts. Public GitHub synchronization, release freeze, public access, owner-only redeployment, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now contains the complete, locally release-validated Phase 57Y control capstone and Phase 57Z dated-evidence return. Phase 57Y publishes fifty-four long-horizon remediation, rotation, recusal, holdover, rollout, and recovery controls across nine contracts and passes 1,629 synthetic cases while preserving all nine Phase 57X holds. Phase 57Z then rechecks eleven primary-evidence decisions, promotes the existing Toronto signal only to the completed Council-adoption gate, retains DARPA for an official measured-results artifact, and reviews all nine inherited outcome holds with zero unsupported resolutions and zero duplicate hold signals. The verified combined contract is 3,866 pages, 715 sources, 1,406 signals, 1,120 Published, 286 In Review, sixty-one collections, 1,533 research documents, sixty-four briefings, 80 updates, 1,326 research export records, and 501 Published-support sources. The exact combined content commit is pending its receipt update; no private-runtime mapping or deployment receipt exists. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Phase 58 should operate the evidence system rather than extend the synthetic control sequence. Public GitHub synchronization, release freeze, public access, owner-only redeployment, Supabase activation, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -2277,11 +2278,11 @@ Boundaries:
 
 Phase 57X delivers fifty-four schemas and 1,593 passing cases: 270 health, 252 diversity, 270 adjudication, 243 time-corroboration, 270 patch-provenance, and 288 decommissioning cases. It preserves all nine Phase 57W holds, adds no new hold, records zero actual events or state changes, and raises the local release contract to 3,725 pages, 715 sources, 1,343 signals, 1,065 Published, 278 In Review, fifty-nine collections, 1,459 research documents, sixty-two briefings, 78 updates, and 1,259 research export records. Exact local content commit `86c4a615` is recorded; private-runtime mapping and owner-only deployment remain pending.
 
-### Phase 57Y: Federation Remediation, Rotation, Recusal, Holdover, Coordinated Rollout, And Long-Term Recovery - Next Content Gate
+### Phase 57Y: Federation Remediation, Rotation, Recusal, Holdover, Coordinated Rollout, And Long-Term Recovery - Complete Locally; Deployment Pending
 
 Goal: govern sustained failure and long-horizon maintenance after Phase 57X so breach remediation, capacity planning, witness rotation, adjudicator recusal, time holdover, emergency patch rollout, and legacy recovery remain append-only, independently verifiable, and reversible.
 
-Priorities:
+Delivered priorities:
 
 1. create breach-remediation and capacity-planning receipts for sustained quorum or witness health-budget failure without reducing integrity thresholds;
 2. rehearse governed witness rotation, jurisdiction exit, infrastructure evacuation, and correlated-failure recovery while maintaining diversity and catch-up requirements;
@@ -2298,6 +2299,32 @@ Boundaries:
 - time holdover and resynchronization preserve monotonic lineage;
 - retired artifacts remain discoverable but inactive, and restoration drills cannot silently reactivate reader state;
 - every synthetic event remains outside the evidence ledger.
+
+Phase 57Y delivers fifty-four schemas and 1,629 passing cases: 270 remediation, 270 rotation, 270 recusal, 243 holdover, 288 rollout, and 288 long-term-recovery cases. It publishes fifty-four controls, preserves all nine Phase 57X holds, adds no new hold, records zero production or reader-state event, and adds Research Watch 055, one collection, one update, and a sixty-six-file archive. The Phase 57Y checkpoint is 3,853 pages, 715 sources, 1,406 signals, 1,119 Published, 287 In Review, sixty collections, 1,522 research documents, sixty-three briefings, 79 updates, and 1,314 research export records.
+
+### Phase 57Z: Dated Evidence Return And Hold-Resolution Decisions - Complete Locally; Deployment Pending
+
+Goal: return the roadmap to dated primary-source evidence, publish bounded review decisions, and advance underlying signals only when an exact source crosses a named conversion gate.
+
+Delivered priorities:
+
+1. recheck Toronto agenda item `2026.SC33.9` after the July 29-30 Council meeting and promote the existing signal only to the completed Council-adoption stage;
+2. recheck DARPA after the August 2-9 Lift Challenge window and retain the signal until an official measured-results artifact appears;
+3. review the exact source gate for each of the nine inherited Amtrak, Louisiana, Montana, Hanford, and NNSA outcome holds;
+4. publish eleven bounded research decisions while keeping ten underlying result or outcome signals In Review;
+5. avoid new source profiles, duplicate hold signals, negative-search overstatement, closure inflation, and operating-outcome inflation;
+6. integrate the dated decisions through Research Watch 056, one collection, a fourteen-file archive, six topics, three pathways, and the comparative-outcomes map.
+
+Boundaries:
+
+- a Published research decision does not publish the underlying outcome signal;
+- Council adoption does not establish by-law enactment, permitting, construction, completion, occupancy, or realized delivery;
+- an event window does not establish measured performance, a winner, a prize, or transition;
+- availability does not establish adoption, and planned capacity does not establish accepted recurring output;
+- a negative recheck is bounded to the official sources reviewed on the captured date;
+- no duplicate hold layer, agency contact, FOIA request, closure change, attribution change, or operating-outcome change is created.
+
+Phase 57Z publishes eleven evidence-return decisions, promotes one existing Toronto signal, retains DARPA and all nine inherited outcome signals In Review, resolves zero of nine inherited holds, and adds Research Watch 056, one collection, one update, and a fourteen-file archive. The combined release contract is 3,866 pages, 715 sources, 1,406 signals, 1,120 Published, 286 In Review, sixty-one collections, 1,533 research documents, sixty-four briefings, 80 updates, 1,326 research export records, and 501 Published-support sources.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
 
@@ -2342,12 +2369,15 @@ Exit criteria:
 - no automated process publishes claims,
 - the next content batch is tied to reader value and evidence gaps.
 
-### Phase 58: Private Supabase Authority Loop - Parallel
+### Phase 58: Dated Evidence Operations, Reader Change Products, And Private Authority Loop - Next Operating Gate
 
-Goal: reduce private workflow friction while keeping Git and human review as the public publication gate.
+Goal: operate the evidence system as a repeatable editorial product: prioritize dated exact-artifact checks, make material changes legible to readers, and reduce private workflow friction while keeping Git and human review as the public publication gate.
 
 Deliverables:
 
+- establish a bounded queue for the ten currently held DARPA, Amtrak, broadband, Hanford, and NNSA result or outcome gates;
+- define change-note, watch-note, correction, and no-material-change receipts that reuse existing content routes and public update logs;
+- measure source-check latency, decision latency, stale-source exposure, publication reversibility, and reader usefulness without creating a readiness score;
 - create the Supabase project and private authentication model,
 - implement RLS-backed source-candidate, review-queue, and update-candidate tables,
 - import or create the first private candidate batch,
@@ -2358,6 +2388,8 @@ Deliverables:
 Exit criteria:
 
 - private users can move a source candidate through review without exposing private fields,
+- at least one dated source check produces a bounded reader-visible update or a documented no-change decision,
+- every held signal retains an exact next artifact and review cadence,
 - public output still passes the existing static serializers and release checks,
 - no database function, trigger, webhook, or AI workflow can publish directly,
 - the backend has demonstrated several reviewed changes before any broader migration is considered.
@@ -2411,10 +2443,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 57Y health-breach remediation and capacity planning, witness rotation and correlated-failure drills, adjudicator conflict and recusal with precedent versioning, time holdover and resynchronization, coordinated vulnerability embargo and rollout, and long-term legacy retention and recovery. Preserve all nine Phase 57X holds.
+Choose the Phase 58 operating slice: start with the ten-item dated evidence queue and reader-visible change receipts, or separately authorize the private Supabase authority-loop pilot. Keep the owner-only deployment, v0.2 freeze, public GitHub synchronization, domain attachment, and public launch as distinct approvals.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 57X is complete, production-rendered, and release-validated locally at 3,725 pages, with 715 sources, 1,343 signals, 1,065 Published signals, 278 In Review signals, fifty-nine collections, 1,459 research documents, sixty-two briefings, 78 updates, 1,259 research export records, and 498 Published-support sources. All 1,593 federation-health, diversity-audit, fork-adjudication, time-corroboration, patch-provenance, and decommissioning cases pass; all nine Phase 57W holds remain preserved; and zero production health events, partitions, audits, adjudications, appeals, time comparisons, advisories, patches, decommissionings, rollbacks, notifications, reader-state changes, blame assignments, evidence changes, triggers, publications, closures, or operating-outcome changes are recorded. Exact local content commit `86c4a615` preserves the package. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Phase 57X private packaging and deployment require separate authorization; Phase 57Y may proceed without waiting on dated source updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, public GitHub synchronization, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phases 57Y and 57Z are complete, production-rendered, and release-validated locally at 3,866 pages, with 715 sources, 1,406 signals, 1,120 Published signals, 286 In Review signals, sixty-one collections, 1,533 research documents, sixty-four briefings, 80 updates, 1,326 research export records, and 501 Published-support sources. All 1,629 Phase 57Y remediation, rotation, recusal, holdover, rollout, and recovery cases pass. Phase 57Z publishes eleven bounded evidence decisions, promotes the Toronto Council signal, retains DARPA and all nine inherited outcome signals In Review, and creates no duplicate hold. The exact combined content commit is pending its receipt update. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, public GitHub synchronization, Supabase activation, deployment, and public launch remain separate explicit decisions.

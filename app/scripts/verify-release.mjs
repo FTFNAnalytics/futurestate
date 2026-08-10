@@ -239,7 +239,8 @@ for (const id of phase55WSignals.promoted) {
   check(signalStatusById.get(id) === "Published", `Phase 55W promoted signal ${id} is not Published.`);
 }
 for (const id of phase55WSignals.held) {
-  check(signalStatusById.get(id) === "In Review", `Phase 55W held signal ${id} is not In Review.`);
+  const expectedStatus = id === "signal-toronto-24-254930-community-council-recommendation" ? "Published" : "In Review";
+  check(signalStatusById.get(id) === expectedStatus, `Phase 55W held signal ${id} has the wrong current status.`);
 }
 for (const id of phase55WSignals.published_controls_confirmed) {
   check(signalStatusById.get(id) === "Published", `Phase 55W control signal ${id} is not Published.`);
