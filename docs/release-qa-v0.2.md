@@ -2,7 +2,7 @@
 
 Date: 2026-08-09
 
-Status: Phase 57O release gates passed and owner-only Sites version 71 is live.
+Status: Phase 57P local release gates passed; exact-source commit and owner-only deployment are pending. Phase 57O Sites version 71 remains live.
 
 ## Artifact Under Review
 
@@ -364,3 +364,28 @@ The 2,767-page artifact passes:
 - canonicals, robots, sitemap, required outputs, private-registry exclusion, and public/private export boundaries.
 
 A repeat visual/browser pass was not requested because Phase 57O uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, and release-contract checks pass. Local content commit `f84addeada142cf6658403d117c34b197c173215` maps to exact private runtime commit `6bd0660578fa398a8d1440a96588458999636250`, whose verified parent is the Phase 57N runtime `77654203b4ce005620138de766966e5f3e2236c6`. The 3,967-file runtime is deployed successfully as owner-only Sites version 71 in `appgdep_6a793730bb54819190b33f119cbbac1b` with one owner, no groups, no editors, and zero external visitors. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.
+
+## Phase 57P Dual-Review Audit, Adjudication, And Publication-Receipt QA Scope
+
+Phase 57P adds executable append-only review controls, content records, and evidence relationships without changing components, styles, layouts, navigation, or client-side behavior. It adds nine audit-chain schemas, eighty-one audit-integrity cases, 162 publication-review receipt cases, ninety cross-role adjudication cases, twenty-nine signal routes, twenty-nine research-document routes, one collection route, one Published briefing route, one update, and a thirty-two-file archive.
+
+The 2,827-page artifact passes:
+
+- private-candidate validation for the unchanged 150-record local-only registry and duplicate checks against 715 public sources;
+- content-reference validation across 715 sources, 902 signals, 17 topics, five local systems, fifty-four briefings, sixteen evidence gaps, seven dependency maps, fifty-one research collections, 1,018 research documents, fifteen reader pathways, and 70 updates;
+- source endpoint metadata review for 494 Manual Review and 221 Probe Ready sources;
+- all eighty-one append-only audit-chain cases, including ordered append, hash linkage, prior-receipt preservation, supersession, mutation rejection, chronology rejection, and duplicate-event rejection;
+- all 162 publication-receipt cases, including fifty-four valid receipts, fifty-four incompatible publication reason-code rejections, and fifty-four mutated-attribution rejections;
+- all ninety adjudication cases, with nine concordant accepts awaiting manual release, eighteen explicit disagreement escalations, twenty-seven bounded-block escalations, and explicit authorization, escalation-owner, and nonaccept-override rejections;
+- Astro diagnostics with zero errors or warnings apart from any inherited non-blocking generator hint;
+- production generation of 2,827 pages;
+- all 696 Published signal routes in the sitemap and all 206 In Review routes outside it;
+- exactly 498 current Published-support sources;
+- all forty-seven Published briefing routes in the sitemap and all seven In Review briefing routes outside it;
+- all six Published dependency-map routes in the sitemap and the one In Review map outside it;
+- fifty-one research collections, 1,018 document routes, and 882 research export records;
+- a verified thirty-two-file ZIP containing twenty-nine official-link records, summaries, README, and SHA-256 manifest;
+- the 70-entry update log and five versioned public-data exports;
+- canonicals, robots, sitemap, required outputs, private-registry exclusion, and public/private export boundaries.
+
+A repeat visual/browser pass was not requested because Phase 57P uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, and release-contract checks pass. Exact-source commit, owner-only deployment, and deployment receipt verification remain pending. Sites version 71 continues to serve the verified Phase 57O runtime with one owner, no groups, no editors, and zero external visitors. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.

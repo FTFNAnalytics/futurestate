@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 57O separates reviewer roles, rejects incomplete or mutated receipts, and gates publication handoff while preserving every operating-outcome hold.",
+  "summary": "A comparison and inference protocol: Phase 57P keeps dual-review receipts, disagreement adjudication, supersession, and release authorization append-only while preserving every operating-outcome hold.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -988,7 +988,27 @@
     "signal-57o-nnsa-90-receipt-completeness-reason-code-checks",
     "signal-57o-nnsa-36-citation-timestamp-mutation-rejections",
     "signal-57o-nnsa-30-publication-handoff-state-routes",
-    "signal-57o-nnsa-zero-actual-review-handoff-trigger-or-publication-events"
+    "signal-57o-nnsa-zero-actual-review-handoff-trigger-or-publication-events",
+    "signal-57p-amtrak-2-append-only-dual-review-audit-chain-schemas",
+    "signal-57p-amtrak-18-audit-chain-integrity-cases",
+    "signal-57p-amtrak-36-publication-review-decision-receipt-cases",
+    "signal-57p-amtrak-20-cross-role-adjudication-cases",
+    "signal-57p-amtrak-zero-actual-audit-adjudication-release-or-publication-events",
+    "signal-57p-broadband-3-append-only-dual-review-audit-chain-schemas",
+    "signal-57p-broadband-27-audit-chain-integrity-cases",
+    "signal-57p-broadband-54-publication-review-decision-receipt-cases",
+    "signal-57p-broadband-30-cross-role-adjudication-cases",
+    "signal-57p-broadband-zero-actual-audit-adjudication-release-or-publication-events",
+    "signal-57p-hanford-1-append-only-dual-review-audit-chain-schemas",
+    "signal-57p-hanford-9-audit-chain-integrity-cases",
+    "signal-57p-hanford-18-publication-review-decision-receipt-cases",
+    "signal-57p-hanford-10-cross-role-adjudication-cases",
+    "signal-57p-hanford-zero-actual-audit-adjudication-release-or-publication-events",
+    "signal-57p-nnsa-3-append-only-dual-review-audit-chain-schemas",
+    "signal-57p-nnsa-27-audit-chain-integrity-cases",
+    "signal-57p-nnsa-54-publication-review-decision-receipt-cases",
+    "signal-57p-nnsa-30-cross-role-adjudication-cases",
+    "signal-57p-nnsa-zero-actual-audit-adjudication-release-or-publication-events"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -1335,6 +1355,12 @@
       "label": "Nine role matrices; 423 integrity and handoff cases; zero actual review events",
       "node_type": "Signal",
       "note": "Only a complete accept receipt with distinct authorized reviewers may reach separate publication review, and queue entry never publishes automatically."
+    },
+    {
+      "id": "node-phase57p-dual-review-audit",
+      "label": "Nine append-only chains; 333 receipt and adjudication cases; zero release events",
+      "node_type": "Signal",
+      "note": "Evidence and publication receipts remain separately attributable, disagreement cannot collapse into accept, and even concordant accept awaits manual release authorization."
     }
   ],
   "links": [
@@ -2233,6 +2259,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Authorization and receipt integrity do not establish operating outcomes, eligibility, closure, or causation."
+    },
+    {
+      "from": "node-phase57p-dual-review-audit",
+      "to": "node-phase57o-role-integrity-handoff",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57P appends publication decisions and adjudication to the separated reviewer roles and immutable handoff controls proved in Phase 57O."
+    },
+    {
+      "from": "node-phase57p-dual-review-audit",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "An actual chain still requires one cited packet with compatible identity, definition, unit, method, denominator, period, privacy, authority, and acceptance."
+    },
+    {
+      "from": "node-phase57p-dual-review-audit",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Append-only review history does not establish operating outcomes, eligibility, implementation, closure, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -2291,7 +2338,8 @@
     "Sixty Phase 57L field classifications, nine first-eligible-record queues, nine exception playbooks, sixty field actions, and nine preserved holds.",
     "Sixty Phase 57M schema adapters, eighteen packet fixtures, nine six-outcome human-review tables, fifty-four rehearsal rows, and nine preserved holds.",
     "120 accepted-label tests, sixty ambiguity rejections, eighteen fixture executions, fifty-four receipt templates, zero actual review events, and nine preserved holds.",
-    "Nine role matrices, 270 receipt-integrity cases, 63 authorization cases, 90 handoff cases, zero actual review events, and nine preserved holds."
+    "Nine role matrices, 270 receipt-integrity cases, 63 authorization cases, 90 handoff cases, zero actual review events, and nine preserved holds.",
+    "Nine append-only chains, 81 audit cases, 162 publication-receipt cases, 90 adjudication cases, zero actual release events, and nine preserved holds."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -2421,6 +2469,7 @@
     "One complete contract-eligible evidence package that clears every field without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution.",
     "One complete cited packet that passes exact adapter matching and receives a named human-review decision without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution.",
     "One complete cited packet that passes deterministic validation and receives a complete named reviewer receipt without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution.",
-    "One complete cited accept packet with distinct named evidence and publication reviewers, immutable receipt fields, and a separately recorded publication decision without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution."
+    "One complete cited accept packet with distinct named evidence and publication reviewers, immutable receipt fields, and a separately recorded publication decision without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution.",
+    "One complete cited packet with immutable evidence and publication receipts, explicit adjudication and escalation ownership when needed, and a separately attributable manual release authorization without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution."
   ]
 }

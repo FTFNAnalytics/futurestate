@@ -412,12 +412,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 57M | twenty Published workflow controls, nine preserved holds, sixty adapters, 120 accepted labels, eighteen non-evidence fixtures, nine decision tables, fifty-four rehearsal rows, Research Watch 043, a thirty-two-file archive, a verified 2,647-page contract, and Sites version 69 |
 | Completed and owner-only deployed | Phase 57N | twenty Published deterministic controls, nine preserved holds, 120 accepted-label tests, sixty ambiguity rejections, eighteen fixture executions, fifty-four receipt templates, Research Watch 044, a thirty-two-file archive, a verified 2,707-page contract, and Sites version 70 |
 | Completed and owner-only deployed | Phase 57O | twenty Published reviewer-authorization, receipt-integrity, and handoff controls, nine preserved holds, nine role matrices, 423 workflow cases, Research Watch 045, a thirty-two-file archive, a verified 2,767-page contract, and Sites version 71 |
-| Next content gate | Phase 57P | append-only dual-review audit chains, cross-role adjudication fixtures, and publication-review decision receipts |
+| Completed and release-validated locally; deployment pending | Phase 57P | twenty Published append-only audit, publication-receipt, and adjudication controls, nine preserved holds, nine audit chains, 333 workflow cases, Research Watch 046, a thirty-two-file archive, and a verified 2,827-page contract |
+| Next content gate | Phase 57Q | manual release-authorization checklists, immutable publication-bundle manifests, and withdrawal and rollback receipts |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now contains the deployed Phase 57O reviewer-authorization, receipt-integrity, and publication-handoff layer. Phase 57O reviews twenty-nine records and publishes twenty bounded workflow controls while preserving all nine Phase 57N holds and adding no new hold. Thirty-six carried Tier 1 sources support nine role matrices, 270 integrity cases, sixty-three authorization cases, and ninety handoff cases with zero actual packets, reviewer identities, citations, receipts, decisions, handoffs, triggers, closures, or publications. No operating-outcome, directive-scope, implementation, capability, closure, agency-contact, FOIA, or entity-ledger change is recorded. Local content commit `f84addeada142cf6658403d117c34b197c173215` maps to exact private runtime commit `6bd0660578fa398a8d1440a96588458999636250`, deployed as owner-only Sites version 71 in `appgdep_6a793730bb54819190b33f119cbbac1b` with one owner, no groups, no editors, and zero external visitors. Phase 57P append-only audit-chain and adjudication controls are next; dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now contains the release-validated local Phase 57P append-only dual-review audit, publication-receipt, and adjudication layer. Phase 57P reviews twenty-nine records and publishes twenty bounded workflow controls while preserving all nine Phase 57O holds and adding no new hold. Thirty-six carried Tier 1 sources support nine audit chains, eighty-one audit cases, 162 publication-receipt cases, and ninety adjudication cases with zero actual packets, reviewer identities, evidence receipts, publication receipts, adjudications, escalations, releases, triggers, closures, or publications. Disagreement cannot collapse into accept, supersession cannot mutate prior receipts, and even concordant accept stops at manual release authorization. No operating-outcome, directive-scope, implementation, capability, closure, agency-contact, FOIA, or entity-ledger change is recorded. Owner-only Sites version 71 continues to serve the verified Phase 57O package with one owner, no groups, no editors, and zero external visitors while Phase 57P awaits exact-source commit and deployment. Phase 57Q manual-release and publication-bundle controls are next; dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -2019,7 +2020,7 @@ Delivered:
 - a verified 2,767-page contract with 715 sources, 873 signals, 676 Published, 197 In Review, fifty collections, 989 research documents, fifty-three briefings, 69 updates, 861 research export records, and 498 Published-support sources;
 - all nine Phase 57N holds preserved exactly once, no new hold, and zero actual packet, reviewer, receipt, handoff, trigger, directive-scope, implementation, closure, agency-contact, FOIA, or inherited entity-ledger change.
 
-### Phase 57P: Dual-Review Audit Chains, Adjudication Fixtures, And Publication-Decision Receipts - Next Content Gate
+### Phase 57P: Dual-Review Audit Chains, Adjudication Fixtures, And Publication-Decision Receipts - Complete And Release-Validated Locally; Deployment Pending
 
 Goal: make evidence review and later publication review separately attributable and append-only without creating an automated publication path.
 
@@ -2036,6 +2037,35 @@ Boundaries:
 - synthetic identities, receipts, adjudications, and audit events are not actual reviewer assignments or evidence decisions;
 - a publication-review receipt cannot mutate or replace the evidence-review receipt;
 - audit-chain completion cannot fire a reopening trigger, close a hold, or publish automatically;
+- no automated publication, ranking, composite, generalized savings claim, or unsupported causal inference.
+
+Delivered:
+
+- twenty-nine reviewed records with twenty Published append-only audit, publication-receipt, and adjudication controls and nine preserved In Review holds;
+- nine audit-chain schemas and eighty-one audit-integrity cases covering ordered append, hash linkage, immutable prior receipts, append-only supersession, mutation rejection, chronology rejection, and duplicate-event rejection;
+- 162 publication-review receipt cases covering six decision types, fifty-four valid receipts, fifty-four incompatible-reason rejections, and fifty-four mutated-attribution rejections;
+- ninety cross-role adjudication cases with nine concordant accepts awaiting manual release, forty-five explicit disagreement or bounded-block escalations, and append-only supersession;
+- thirty-six carried Tier 1 sources, Research Watch 046, one collection, one update, and a thirty-two-file archive;
+- a verified 2,827-page contract with 715 sources, 902 signals, 696 Published, 206 In Review, fifty-one collections, 1,018 research documents, fifty-four briefings, 70 updates, 882 research export records, and 498 Published-support sources;
+- all nine Phase 57O holds preserved exactly once, no new hold, and zero actual receipt, adjudication, escalation, release, trigger, directive-scope, implementation, closure, agency-contact, FOIA, or inherited entity-ledger change.
+
+### Phase 57Q: Manual Release Authorization, Publication Bundles, And Rollback Receipts - Next Content Gate
+
+Goal: make the final human release decision separately attributable and reversible without allowing review completion or release infrastructure to publish automatically.
+
+Priorities:
+
+1. create manual release-authorization checklists distinct from evidence, publication, and escalation roles;
+2. bind exact cited packets and both review receipts into immutable publication-bundle manifests;
+3. test release authorization, withdrawal, rollback, and supersession as append-only events;
+4. prove that withdrawal and rollback preserve all earlier review and publication history;
+5. preserve all nine Phase 57P holds and publish only release-control, bundle-integrity, and rollback-receipt controls.
+
+Boundaries:
+
+- synthetic release actors, bundles, receipts, withdrawals, rollbacks, and audit events are not actual release or publication decisions;
+- a manual release receipt cannot mutate either review receipt or the evidence packet;
+- withdrawal and rollback cannot erase history or alter evidence, acceptance, implementation, capability, closure, or operating-outcome state automatically;
 - no automated publication, ranking, composite, generalized savings claim, or unsupported causal inference.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
@@ -2150,10 +2180,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 57P append-only dual-review audit chains, cross-role adjudication fixtures, and publication-review decision receipts. Require separate immutable evidence and publication receipts, explicit disagreement and escalation states, decision-specific publication reason codes, and supersession without mutation while preserving all nine Phase 57O holds.
+Begin Phase 57Q manual release-authorization checklists, immutable publication-bundle manifests, and withdrawal and rollback receipts. Require a separately attributed human release receipt after concordant dual accept, exact bundle hashes covering the cited packet and both review receipts, and append-only withdrawal and rollback history while preserving all nine Phase 57P holds.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 57O is complete, production-rendered, release-validated, and owner-only deployed at 2,767 pages, with 715 sources, 873 signals, 676 Published signals, 197 In Review signals, 50 collections, 989 research documents, 53 briefings, 69 updates, 861 research export records, and 498 Published-support sources. Local content commit `f84addeada142cf6658403d117c34b197c173215` maps to exact private runtime commit `6bd0660578fa398a8d1440a96588458999636250`, whose parent is the verified Phase 57N runtime `77654203b4ce005620138de766966e5f3e2236c6`. Sites version 71 is live in `appgdep_6a793730bb54819190b33f119cbbac1b` with one owner, no groups, no editors, and zero external visitors. Phase 57P may proceed without waiting on dated source updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phase 57P is complete, production-rendered, and release-validated locally at 2,827 pages, with 715 sources, 902 signals, 696 Published signals, 206 In Review signals, 51 collections, 1,018 research documents, 54 briefings, 70 updates, 882 research export records, and 498 Published-support sources. Sites version 71 continues to serve the exact Phase 57O private runtime commit `6bd0660578fa398a8d1440a96588458999636250` in `appgdep_6a793730bb54819190b33f119cbbac1b` with one owner, no groups, no editors, and zero external visitors while Phase 57P awaits exact-source commit and deployment. Phase 57Q may proceed after Phase 57P deployment without waiting on dated source updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

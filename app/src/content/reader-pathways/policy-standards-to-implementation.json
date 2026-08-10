@@ -546,7 +546,27 @@
     "signal-57o-nnsa-90-receipt-completeness-reason-code-checks",
     "signal-57o-nnsa-36-citation-timestamp-mutation-rejections",
     "signal-57o-nnsa-30-publication-handoff-state-routes",
-    "signal-57o-nnsa-zero-actual-review-handoff-trigger-or-publication-events"
+    "signal-57o-nnsa-zero-actual-review-handoff-trigger-or-publication-events",
+    "signal-57p-amtrak-2-append-only-dual-review-audit-chain-schemas",
+    "signal-57p-amtrak-18-audit-chain-integrity-cases",
+    "signal-57p-amtrak-36-publication-review-decision-receipt-cases",
+    "signal-57p-amtrak-20-cross-role-adjudication-cases",
+    "signal-57p-amtrak-zero-actual-audit-adjudication-release-or-publication-events",
+    "signal-57p-broadband-3-append-only-dual-review-audit-chain-schemas",
+    "signal-57p-broadband-27-audit-chain-integrity-cases",
+    "signal-57p-broadband-54-publication-review-decision-receipt-cases",
+    "signal-57p-broadband-30-cross-role-adjudication-cases",
+    "signal-57p-broadband-zero-actual-audit-adjudication-release-or-publication-events",
+    "signal-57p-hanford-1-append-only-dual-review-audit-chain-schemas",
+    "signal-57p-hanford-9-audit-chain-integrity-cases",
+    "signal-57p-hanford-18-publication-review-decision-receipt-cases",
+    "signal-57p-hanford-10-cross-role-adjudication-cases",
+    "signal-57p-hanford-zero-actual-audit-adjudication-release-or-publication-events",
+    "signal-57p-nnsa-3-append-only-dual-review-audit-chain-schemas",
+    "signal-57p-nnsa-27-audit-chain-integrity-cases",
+    "signal-57p-nnsa-54-publication-review-decision-receipt-cases",
+    "signal-57p-nnsa-30-cross-role-adjudication-cases",
+    "signal-57p-nnsa-zero-actual-audit-adjudication-release-or-publication-events"
   ],
   "source_ids": [
     "source-omb-m-25-21-federal-ai-use",
@@ -832,7 +852,8 @@
     "briefing-research-watch-042-contract-field-coverage-intake-playbooks",
     "briefing-research-watch-043-source-schema-adapters-packet-review-controls",
     "briefing-research-watch-044-adapter-conformance-packet-validation-receipts",
-    "briefing-research-watch-045-reviewer-authorization-receipt-integrity-publication-handoffs"
+    "briefing-research-watch-045-reviewer-authorization-receipt-integrity-publication-handoffs",
+    "briefing-research-watch-046-dual-review-audit-chains-adjudication-publication-receipts"
   ],
   "dependency_map_ids": [
     "dependency-map-post-quantum-standards-are-not-migration",
@@ -881,7 +902,8 @@
     "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
     "research-collection-source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026",
     "research-collection-adapter-conformance-packet-validation-reviewer-receipt-ledgers-2026",
-    "research-collection-reviewer-authorization-receipt-integrity-publication-handoff-state-machines-2026"
+    "research-collection-reviewer-authorization-receipt-integrity-publication-handoff-state-machines-2026",
+    "research-collection-dual-review-audit-chains-adjudication-publication-decision-receipts-2026"
   ],
   "evidence_gap_ids": [
     "gap-009",
@@ -1118,6 +1140,11 @@
       "stage": "Phase 57O reviewer authorization, receipt integrity, and publication handoffs",
       "current_state": "Nine role matrices, 270 receipt-integrity cases, 63 authorization cases, and 90 handoff cases pass; zero actual packets, reviewers, receipts, decisions, triggers, closures, or publications are recorded.",
       "boundary": "Synthetic identities, receipts, signatures, and queue transitions are workflow infrastructure, not evidence, reviewer assignments, eligibility, closure, or publication."
+    },
+    {
+      "stage": "Phase 57P append-only dual review, adjudication, and publication receipts",
+      "current_state": "Nine audit chains, 81 audit-integrity cases, 162 publication-receipt cases, and 90 adjudication cases pass; zero actual receipts, escalations, releases, triggers, closures, or publications are recorded.",
+      "boundary": "Synthetic identities, receipts, events, disagreements, and supersessions are workflow infrastructure, not evidence, reviewer assignments, eligibility, release, closure, or publication."
     }
   ],
   "evidence_limits": [
@@ -1182,7 +1209,8 @@
     "Phase 57L prohibits cross-record field assembly, readiness scoring, priority inference, schema coercion, privacy-detail exposure, authority substitution, automatic closure or publication, generalized savings, and unsupported causal inference.",
     "Phase 57M prohibits semantic label coercion, invented or transformed values, cross-record packet assembly, fixture promotion, automatic acceptance, trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference.",
     "Phase 57N prohibits semantic label coercion, fixture promotion, invented reviewer identities or citations, automatic trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference.",
-    "Phase 57O prohibits same-person evidence and publication review, missing or incompatible receipt fields, mutated signed citations or times, non-accept handoffs, automatic trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference."
+    "Phase 57O prohibits same-person evidence and publication review, missing or incompatible receipt fields, mutated signed citations or times, non-accept handoffs, automatic trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference.",
+    "Phase 57P prohibits prior-event mutation, reviewer-role collapse, decision-incompatible publication reason codes, disagreement collapse into accept, unowned escalation, automatic release, trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Agency AI inventories, acquisition plans, orders, authorizations, contract clauses, performance measures, incident records, renewal decisions, and outcome evaluations.",
@@ -1250,6 +1278,7 @@
     "One source-explicit candidate package that satisfies every field in a named Phase 57L intake envelope and passes human publication review.",
     "One cited source-explicit candidate packet that satisfies a Phase 57M adapter and receives a bounded named human-review decision.",
     "One complete cited packet that passes deterministic validation and receives a complete named human-review receipt before separate publication review.",
-    "One complete cited accept packet with an immutable signed receipt, distinct authorized evidence and publication reviewers, and a separately recorded publication decision."
+    "One complete cited accept packet with an immutable signed receipt, distinct authorized evidence and publication reviewers, and a separately recorded publication decision.",
+    "One complete cited packet with separately attributable evidence and publication receipts, explicit adjudication when needed, and a later manual release authorization recorded as a new immutable event."
   ]
 }

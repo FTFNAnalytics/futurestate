@@ -1,0 +1,83 @@
+{
+  "id": "research-doc-57p-hanford-1-append-only-dual-review-audit-chain-schemas",
+  "collection_id": "research-collection-dual-review-audit-chains-adjudication-publication-decision-receipts-2026",
+  "title": "Hanford defines 1 append-only dual-review audit chains",
+  "slug": "57p-hanford-1-append-only-dual-review-audit-chain-schemas",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy, Office of Environmental Management",
+  "publication_date": "2026-08-09",
+  "document_type": "Data Release",
+  "summary": "1 contract-specific chains link evidence, publication, adjudication, supersession, release-authorization, and withdrawal events without permitting prior-event mutation. Denominator: 1 immutable schemas, six append-only event types per schema, and zero actual audit events.",
+  "key_findings": [
+    "Evidence stage: Hanford append-only audit, adjudication, and publication-receipt controls.",
+    "Finding: 1 contract-specific chains link evidence, publication, adjudication, supersession, release-authorization, and withdrawal events without permitting prior-event mutation.",
+    "Denominator: 1 immutable schemas, six append-only event types per schema, and zero actual audit events.",
+    "Boundary: Audit schemas are workflow controls, not actual review history.",
+    "Boundary: A later event may reference but never update, replace, or delete a prior receipt.",
+    "Boundary: Audit-chain completion cannot trigger, close, release, or publish automatically.",
+    "Next action: Create the first actual chain only after one complete cited packet receives a named evidence-review receipt."
+  ],
+  "why_it_matters": "The record makes dual-review attribution, disagreement escalation, and supersession append-only without creating an actual editorial or release event.",
+  "ftfn_relevance": [
+    "Links but never merges evidence-review and publication-review receipts across all nine contracts.",
+    "Tests publication reason-code compatibility, immutable attribution, disagreement ownership, and append-only supersession.",
+    "Proves that even concordant accept requires separate manual release authorization and cannot publish automatically."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Audit schemas are workflow controls, not actual review history.",
+    "A later event may reference but never update, replace, or delete a prior receipt.",
+    "Audit-chain completion cannot trigger, close, release, or publish automatically.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-hanford-dflaw-process-animation",
+  "supporting_source_ids": [
+    "source-57g-hanford-dflaw-process-animation",
+    "source-57g-hanford-ap106-feed-staging",
+    "source-57c-hanford-20-containers-2025",
+    "source-57e-doe-hanford-acceptable-glass-startup",
+    "source-57f-hanford-wtp-pmm-february-2026",
+    "source-57b-ecology-wtp-byproduct-response-comments",
+    "source-56x-hanford-first-ilaw-disposal-2026",
+    "source-57b-hanford-wtp-project-managers-may-2026",
+    "source-57f-doe-hanford-100k-gallons-may-2026",
+    "source-57d-hanford-wtp-consent-may-2026",
+    "source-57d-hanford-wtp-consent-june-2026",
+    "source-57d-hanford-wtp-consent-july-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+    "https://www.energy.gov/em/articles/making-space-hanford-prepares-key-tank-waste-treatment-mission",
+    "https://www.energy.gov/em/articles/hanford-plant-completes-20-containers-immobilized-waste",
+    "https://www.energy.gov/em/articles/hanford-site-begins-solidifying-tank-waste-glass",
+    "https://pdw.hanford.gov/download/v2/AR-39756",
+    "https://apps.ecology.wa.gov/publications/documents/2605007.pdf",
+    "https://www.energy.gov/em/articles/hanford-disposes-first-batch-vitrified-tank-waste-marking-key-progress",
+    "https://pdw.hanford.gov/download/v2/AR-40646",
+    "https://www.energy.gov/em/articles/over-100000-gallons-hanford-tank-waste-turned-glass",
+    "https://pdw.hanford.gov/download/v2/AR-40184",
+    "https://pdw.hanford.gov/download/v2/AR-40547",
+    "https://pdw.hanford.gov/download/v2/AR-40938"
+  ],
+  "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+  "local_capture_path": "/downloads/dual-review-audit-chains-adjudication-publication-decision-receipts-2026/official-links/11-hanford-1-append-only-dual-review-audit-chain-schemas.txt",
+  "archive_member": "official-links/11-hanford-1-append-only-dual-review-audit-chain-schemas.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}
