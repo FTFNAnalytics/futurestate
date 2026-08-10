@@ -417,12 +417,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 57R | thirty-six Published status, notice, restore, republication, provenance, and zero-state-inflation controls, nine preserved holds, twenty-seven schemas, 396 workflow cases, Research Watch 048, a forty-eight-file archive, a verified 3,011-page contract, and Sites version 74 |
 | Completed and owner-only deployed | Phase 57S | thirty-six Published reader-verification, freshness, provenance-export, and digest-reconciliation controls, nine preserved holds, twenty-seven schemas, 450 workflow cases, Research Watch 049, a forty-eight-file archive, a verified 3,103-page contract, and Sites version 75 |
 | Completed and owner-only deployed | Phase 57T | forty-five Published canonical-endpoint, signed-index, cache, mirror, redirect, and recovery controls, nine preserved holds, forty-five schemas, 828 workflow cases, Research Watch 050, a fifty-seven-file archive, a verified 3,213-page contract, and Sites version 76 |
-| Next content gate | Phase 57U | verification-key rotation and revocation, transparency-log proofs, multi-origin consistency, incident receipts, and recovery objectives |
+| Completed locally; owner-only deployment pending | Phase 57U | fifty-four Published governed-key, lifecycle, transparency, multi-origin, incident, and recovery-objective controls, nine preserved holds, fifty-four schemas, 1,170 workflow cases, Research Watch 051, a sixty-six-file archive, and a verified 3,341-page contract |
+| Next content gate | Phase 57V | threshold authorization, independent witnesses, cross-log gossip, trusted time, verifier diversity, and key-compromise recovery |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now contains the complete Phase 57T canonical-delivery, signed-index, cache-coherence, mirror and redirect integrity, and immutable-source recovery layer. Phase 57T reviews fifty-four records and publishes forty-five contract-specific controls while preserving all nine Phase 57S holds and adding no new hold. Thirty-six carried Tier 1 sources support nine schemas on each of five integrity rails and 828 passing workflow cases with zero actual endpoints, signatures, cache receipts, mirror or redirect events, recovery drills, reader-state changes, evidence changes, triggers, publications, closures, or operating-outcome changes. Stable verification URIs bind exact current manifests, exports, indexes, representations, and entity tags; stale delivery fails closed; indexes remain append-only; mirrors and redirects cannot drift, transform, downgrade, inject, or loop; and recovery reconstructs inactive reader state only from immutable source history. No directive-scope, implementation, capability, closure, agency-contact, FOIA, or entity-ledger change is recorded. The verified release contract is 3,213 pages, 715 sources, 1,091 signals, 849 Published, 242 In Review, fifty-five collections, 1,207 research documents, fifty-eight briefings, 74 updates, 1,039 research export records, and 498 Published-support sources. Sites version 76 serves the exact Phase 57T runtime under the unchanged policy with one owner, no groups, no editors, and zero external visitors. Phase 57U governed keys, transparency proofs, multi-origin consistency, incident receipts, and recovery objectives are next; dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now contains the locally complete Phase 57U governed-key, key-lifecycle, transparency-proof, multi-origin, incident-containment, and recovery-objective layer. Phase 57U reviews sixty-three records and publishes fifty-four contract-specific controls while preserving all nine Phase 57T holds and adding no new hold. Thirty-six carried Tier 1 sources support nine schemas on each of six integrity rails and 1,170 passing workflow cases with zero production keys, signatures, lifecycle events, log entries, proofs, origin observations, incidents, receipts, replays, recovery drills, reader-state changes, evidence changes, triggers, publications, closures, or operating-outcome changes. Unknown, expired, revoked, staged, ambiguous, or role-conflicted keys fail closed; current and prior indexes remain in append-only transparency history; canonical, mirror, and archive observations must agree without voting; containment is explicit and complete; and missed RPO or RTO objectives cannot activate degraded state. No directive-scope, implementation, capability, closure, agency-contact, FOIA, or entity-ledger change is recorded. The verified release contract is 3,341 pages, 715 sources, 1,154 signals, 903 Published, 251 In Review, fifty-six collections, 1,270 research documents, fifty-nine briefings, 75 updates, 1,094 research export records, and 498 Published-support sources. Owner-only Phase 57U deployment is pending; the verified Phase 57T Sites version 76 remains live with one owner, no groups, no editors, and zero external visitors. Phase 57V threshold trust, witness federation, cross-log gossip, trusted time, verifier diversity, and compromise recovery are next; dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -2171,7 +2172,7 @@ Delivered:
 - a verified 3,213-page contract with 715 sources, 1,091 signals, 849 Published, 242 In Review, fifty-five collections, 1,207 research documents, fifty-eight briefings, 74 updates, 1,039 research export records, and 498 Published-support sources;
 - all nine Phase 57S holds preserved exactly once, no new hold, and zero actual endpoint, production signature, cache receipt, mirror or redirect event, recovery drill, reader-state change, trigger, publication, directive-scope, implementation, capability, closure, operating-outcome, agency-contact, FOIA, history-mutation, or inherited entity-ledger change.
 
-### Phase 57U: Governed Keys, Transparency Proofs, Multi-Origin Consistency, And Incident Recovery - Next Content Gate
+### Phase 57U: Governed Keys, Transparency Proofs, Multi-Origin Consistency, And Incident Recovery - Complete Locally
 
 Goal: let readers verify the current trust root and append-only release history across origins while revoked keys, inconsistent logs, divergent origins, undeclared incidents, or missed recovery objectives fail closed without creating evidence or activating reconstructed state.
 
@@ -2190,6 +2191,40 @@ Boundaries:
 - origin quorum detects divergence but cannot vote an inconsistent state into authority;
 - incident and recovery receipts append new control history and never rewrite prior keys, indexes, proofs, manifests, exports, notices, or evidence;
 - every synthetic key, signature, log entry, proof, origin observation, incident, receipt, replay, and drill remains outside the evidence ledger.
+
+Delivered:
+
+- sixty-three reviewed records with fifty-four Published contract-specific controls and nine preserved In Review holds;
+- nine governed-key schemas and 180 cases with fifty-four valid or preservation routes and 126 explicit rejections;
+- nine key-lifecycle schemas and 198 cases with sixty-three valid or preservation routes and 135 explicit rejections;
+- nine transparency-proof schemas and 198 cases with sixty-three valid or preservation routes and 135 explicit rejections;
+- nine multi-origin schemas and 180 cases with forty-five exact routes and 135 fail-closed rejections without majority substitution;
+- nine incident-containment schemas and 198 cases with fifty-four valid routes and 144 explicit rejections;
+- nine recovery-objective schemas and 216 cases with sixty-three valid or preservation routes and 153 explicit rejections;
+- thirty-six carried Tier 1 sources, Research Watch 051, one collection, one update, and a sixty-six-file archive;
+- a verified 3,341-page contract with 715 sources, 1,154 signals, 903 Published, 251 In Review, fifty-six collections, 1,270 research documents, fifty-nine briefings, 75 updates, 1,094 research export records, and 498 Published-support sources;
+- all nine Phase 57T holds preserved exactly once, no new hold, and zero production key, signature, lifecycle, log, proof, origin, incident, receipt, recovery, reader-state, trigger, publication, directive-scope, implementation, capability, closure, operating-outcome, agency-contact, FOIA, history-mutation, or inherited entity-ledger change.
+
+### Phase 57V: Threshold Trust, Witness Federation, Cross-Log Gossip, And Compromise Recovery - Next Content Gate
+
+Goal: distribute trust across independent actors and implementations so a single signer, witness, log, clock, verifier, or compromised key cannot authorize, conceal, roll back, or retroactively legitimize reader state.
+
+Priorities:
+
+1. create explicit M-of-N release-authorization policies with independent actors and no same-actor quorum;
+2. create independently witnessed transparency checkpoints and threshold witness receipts;
+3. create cross-log gossip and split-view detection across independent checkpoints;
+4. bind monotonic trusted-time and anti-rollback receipts to keys, releases, proofs, incidents, and recovery;
+5. run reproducible conformance across at least three verifier implementations;
+6. rehearse algorithm migration and key-compromise recovery without retroactively trusting artifacts signed by the compromised key while preserving all nine Phase 57U holds.
+
+Boundaries:
+
+- threshold shares, witness signatures, gossip messages, time receipts, verifier results, compromise events, migrations, recovery actions, and drills do not publish, restore, accept, implement, close, attribute, or create operating outcomes;
+- a quorum cannot contain duplicate, dependent, conflicted, revoked, or same-actor approvals;
+- witness or gossip agreement cannot replace the canonical immutable lifecycle history;
+- a compromised key invalidates affected trust paths prospectively and cannot be used to rewrite or retroactively authorize prior history;
+- every synthetic threshold share, witness signature, checkpoint, gossip message, time receipt, verifier result, compromise event, recovery action, and drill remains outside the evidence ledger.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
 
@@ -2303,10 +2338,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 57U governed verification-key registries, rotation and revocation receipts, transparency-log inclusion and consistency proofs, multi-origin consistency checks, incident-containment receipts, and recovery-objective drills. Require readers to identify the currently trusted key, reject revoked or unknown signers, verify current and prior indexes in an append-only log, detect origin divergence without majority-state substitution, measure bounded recovery-point and recovery-time objectives without activating reconstructed state, and preserve all nine Phase 57T holds.
+Begin Phase 57V threshold release authorization, independent witness checkpoints, cross-log gossip, trusted-time anti-rollback receipts, verifier-diversity conformance, and key-compromise recovery. Require explicit M-of-N authorization without same-actor quorum, independently witnessed checkpoints, split-view detection across logs, monotonic trusted time, reproducible results across at least three verifier implementations, crypto-agility, and compromise recovery without retroactively trusting artifacts signed by a compromised key. Preserve all nine Phase 57U holds.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 57T is complete, production-rendered, release-validated, and owner-only deployed at 3,213 pages, with 715 sources, 1,091 signals, 849 Published signals, 242 In Review signals, fifty-five collections, 1,207 research documents, fifty-eight briefings, 74 updates, 1,039 research export records, and 498 Published-support sources. All 828 endpoint, signed-index, cache, mirror, redirect, and recovery cases pass; all nine Phase 57S holds remain preserved; and zero actual endpoints, signatures, cache receipts, mirror or redirect events, recovery drills, reader-state changes, evidence changes, triggers, publications, closures, or operating-outcome changes are recorded. Exact private runtime `784f72c412f3dda8592d097fe665296206bd273f` is live as Sites version 76 in deployment `appgdep_6a795e03fc9c8191990fc6877713c004` with one owner, no groups, no editors, and zero external visitors. Phase 57U may proceed without waiting on dated source updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phase 57U is complete, production-rendered, and release-validated locally while awaiting its owner-only deployment gate at 3,341 pages, with 715 sources, 1,154 signals, 903 Published signals, 251 In Review signals, fifty-six collections, 1,270 research documents, fifty-nine briefings, 75 updates, 1,094 research export records, and 498 Published-support sources. All 1,170 governed-key, lifecycle, transparency, multi-origin, incident, and recovery-objective cases pass; all nine Phase 57T holds remain preserved; and zero production keys, signatures, lifecycle events, log entries, proofs, origin observations, incidents, receipts, replays, recoveries, reader-state changes, evidence changes, triggers, publications, closures, or operating-outcome changes are recorded. The verified Phase 57T Sites version 76 remains live with one owner, no groups, no editors, and zero external visitors until Phase 57U deployment succeeds. Phase 57V may proceed after that release checkpoint without waiting on dated source updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

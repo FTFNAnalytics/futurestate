@@ -1421,6 +1421,12 @@
       "label": "Nine canonical endpoints; signed indexes; cache and mirror integrity; immutable recovery; zero actual events",
       "node_type": "Signal",
       "note": "Stable URIs bind exact verification bundles, stale delivery fails closed, and recovery reconstructs inactive reader state only from immutable history."
+    },
+    {
+      "id": "node-phase57u-governed-trust-recovery",
+      "label": "Nine governed trust roots; transparency and three-origin integrity; incident and recovery objectives; zero actual events",
+      "node_type": "Signal",
+      "note": "Unknown or revoked keys, inconsistent logs, divergent origins, incomplete containment, or missed recovery objectives fail closed while reconstructed state remains inactive."
     }
   ],
   "links": [
@@ -2424,6 +2430,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Endpoint, signature, cache, mirror, redirect, and recovery integrity do not establish implementation, capability, closure, operating outcomes, attribution, or causation."
+    },
+    {
+      "from": "node-phase57u-governed-trust-recovery",
+      "to": "node-phase57t-canonical-delivery-recovery",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57U governs and observes only the exact canonical release indexes, representations, mirrors, archives, and immutable recovery state established by Phase 57T."
+    },
+    {
+      "from": "node-phase57u-governed-trust-recovery",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Cryptographic and operational integrity cannot cure an incompatible identity, definition, unit, method, denominator, period, privacy, authority, or acceptance boundary."
+    },
+    {
+      "from": "node-phase57u-governed-trust-recovery",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Keys, proofs, origin agreement, incident receipts, and recovery objectives do not establish implementation, capability, closure, operating outcomes, attribution, or causation."
     }
   ],
   "what_this_map_supports": [
