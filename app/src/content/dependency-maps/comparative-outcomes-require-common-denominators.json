@@ -1433,6 +1433,12 @@
       "label": "Nine threshold trust federations; witnessed gossip and trusted time; three verifiers; clean compromise recovery; zero actual events",
       "node_type": "Signal",
       "note": "Conflicted quorum, unwitnessed checkpoints, split views, rollback, verifier divergence, or retroactive compromised-key trust fail closed while reconstructed state remains inactive."
+    },
+    {
+      "id": "node-phase57w-operational-federation-reissuance",
+      "label": "Nine operational trust federations; governed ceremonies, witness catch-up, fork quarantine, time failover, reproducible builds, and lineage-preserving re-issuance",
+      "node_type": "Signal",
+      "note": "Threshold lowering, stale-witness counting, incomplete catch-up, automatic blame, rollback, divergent provenance, lineage rewrite, or retroactive trust fail closed while reader migration remains inactive."
     }
   ],
   "links": [
@@ -2474,6 +2480,27 @@
     },
     {
       "from": "node-phase57v-threshold-federation-compromise-recovery",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Quorum, witnesses, gossip, trusted time, verifier agreement, and recovery do not establish implementation, capability, closure, operating outcomes, attribution, or causation."
+    },
+    {
+      "from": "node-phase57w-operational-federation-reissuance",
+      "to": "node-phase57v-threshold-federation-compromise-recovery",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57W operationalizes the threshold authorization, witnessed transparency, cross-log gossip, trusted time, verifier diversity, and compromise-recovery state established by Phase 57V."
+    },
+    {
+      "from": "node-phase57w-operational-federation-reissuance",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Federated cryptographic integrity cannot cure an incompatible identity, definition, unit, method, denominator, period, privacy, authority, or acceptance boundary."
+    },
+    {
+      "from": "node-phase57w-operational-federation-reissuance",
       "to": "node-causal-hold",
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
