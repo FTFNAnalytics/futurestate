@@ -1,6 +1,6 @@
 # Phase 57R Work Package: Publication Status, Change Notices, Restore Receipts, and Provenance
 
-Status: complete locally; owner-only deployment pending
+Status: complete and owner-only deployed
 
 Captured: 2026-08-09
 
@@ -89,3 +89,7 @@ Build reader-verifiable lifecycle manifests, status-freshness and stale-view det
 Private-candidate validation, content references, source health, the Phase 57Q regression, the Phase 57R harness and assertions, Astro diagnostics, the expected 3,011-page production build, release assertions, sitemap membership, exports, private-registry exclusion, and the 48-file archive must pass at the counts above.
 
 Public access, Hostinger DNS, custom-domain attachment, package freeze, public GitHub synchronization, and Supabase activation remain separate explicit decisions.
+
+## Deployment receipt
+
+Local content commit `043cebae1a76ad3d68898a3e3dcea76c55b71f91` maps to exact private runtime commit `1dc8df329c59f0e8d85a6f48da800d44463578cc`, whose verified parent is the Phase 57Q runtime `f368df8788f6aceeccd1815e91b9927be8a760e9`. The 4,342-file runtime was saved as Sites version 74 and deployed successfully in `appgdep_6a79521cb5408191812dbc5d5c18700c` at `https://ftfn-analytics.jbumstead.chatgpt.site`. Access remains custom owner-only with one owner, no groups, no editors, and zero external visitors. Public access, Hostinger DNS, custom-domain attachment, package freeze, and public GitHub synchronization remain unchanged.
