@@ -1415,6 +1415,12 @@
       "label": "Nine lifecycle manifests; nine freshness detectors; nine provenance exports; zero actual events",
       "node_type": "Signal",
       "note": "Complete histories and notices are digest-bound, stale or partial views fail closed, and reconciliation appends findings without rewrite."
+    },
+    {
+      "id": "node-phase57t-canonical-delivery-recovery",
+      "label": "Nine canonical endpoints; signed indexes; cache and mirror integrity; immutable recovery; zero actual events",
+      "node_type": "Signal",
+      "note": "Stable URIs bind exact verification bundles, stale delivery fails closed, and recovery reconstructs inactive reader state only from immutable history."
     }
   ],
   "links": [
@@ -2397,6 +2403,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Verification and provenance integrity do not establish implementation, capability, closure, operating outcomes, attribution, or causation."
+    },
+    {
+      "from": "node-phase57t-canonical-delivery-recovery",
+      "to": "node-phase57s-reader-verification-freshness",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57T delivers and reconstructs only the complete manifest, freshness, export, and reconciliation state established by Phase 57S."
+    },
+    {
+      "from": "node-phase57t-canonical-delivery-recovery",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Canonical transport and recovery cannot cure an incompatible identity, definition, unit, method, denominator, period, privacy, authority, or acceptance boundary."
+    },
+    {
+      "from": "node-phase57t-canonical-delivery-recovery",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Endpoint, signature, cache, mirror, redirect, and recovery integrity do not establish implementation, capability, closure, operating outcomes, attribution, or causation."
     }
   ],
   "what_this_map_supports": [

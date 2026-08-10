@@ -55,7 +55,9 @@
     "test:phase57r": "node ./scripts/phase57r-publication-status-harness.mjs",
     "verify:phase57r": "node ./scripts/assert-phase57r.mjs",
     "test:phase57s": "node ./scripts/phase57s-reader-verification-harness.mjs",
-    "verify:phase57s": "node ./scripts/assert-phase57s.mjs"
+    "verify:phase57s": "node ./scripts/assert-phase57s.mjs",
+    "test:phase57t": "node ./scripts/phase57t-canonical-delivery-recovery-harness.mjs",
+    "verify:phase57t": "node ./scripts/assert-phase57t.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.0",

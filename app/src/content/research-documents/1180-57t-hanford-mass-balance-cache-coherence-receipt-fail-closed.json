@@ -1,0 +1,72 @@
+{
+  "id": "research-doc-57t-hanford-mass-balance-cache-coherence-receipt-fail-closed",
+  "collection_id": "research-collection-canonical-verification-endpoints-signed-release-indexes-cache-mirror-recovery-2026",
+  "title": "Hanford complete material balance receives digest-bound cache-coherence receipts",
+  "slug": "57t-hanford-mass-balance-cache-coherence-receipt-fail-closed",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy",
+  "publication_date": "2026-08-09",
+  "document_type": "Data Release",
+  "summary": "A cached verification representation remains usable only when its canonical URI, release-index digest, entity tag, representation digest, manifest digest, export digest, and revalidation time match the current endpoint. Denominator: One contract-specific cache schema, eighteen adversarial cases, five bounded valid routes, thirteen fail-closed rejections, and zero actual cache-coherence receipts issued.",
+  "key_findings": [
+    "Evidence stage: Cache-coherence receipt and fail-closed controls.",
+    "Finding: A cached verification representation remains usable only when its canonical URI, release-index digest, entity tag, representation digest, manifest digest, export digest, and revalidation time match the current endpoint.",
+    "Denominator: One contract-specific cache schema, eighteen adversarial cases, five bounded valid routes, thirteen fail-closed rejections, and zero actual cache-coherence receipts issued.",
+    "Boundary: Serve-stale-on-error and warning-only mismatch behavior are prohibited.",
+    "Boundary: Age-window, revalidation, partition, transform, entity-tag, manifest, export, and index drift fail closed.",
+    "Boundary: Cache validation cannot create evidence, publish a claim, or change an inherited hold.",
+    "Next action: Fail every cached Hanford complete material balance representation closed until all seven coherence comparisons revalidate."
+  ],
+  "why_it_matters": "The record makes canonical delivery, signed release lineage, cache coherence, mirror and redirect integrity, and immutable-source recovery independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Binds stable reader-verification URIs to the exact current Phase 57S manifest and export.",
+    "Fails stale caches, transformed mirrors, and unsafe redirects closed.",
+    "Reconstructs reader state only from immutable history under a nonactivating recovery receipt."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Serve-stale-on-error and warning-only mismatch behavior are prohibited.",
+    "Age-window, revalidation, partition, transform, entity-tag, manifest, export, and index drift fail closed.",
+    "Cache validation cannot create evidence, publish a claim, or change an inherited hold.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-hanford-dflaw-process-animation",
+  "supporting_source_ids": [
+    "source-57g-hanford-dflaw-process-animation",
+    "source-57g-hanford-ap106-feed-staging",
+    "source-57c-hanford-20-containers-2025",
+    "source-57e-doe-hanford-acceptable-glass-startup",
+    "source-57f-hanford-wtp-pmm-february-2026",
+    "source-57b-ecology-wtp-byproduct-response-comments",
+    "source-56x-hanford-first-ilaw-disposal-2026",
+    "source-57b-hanford-wtp-project-managers-may-2026",
+    "source-57f-doe-hanford-100k-gallons-may-2026",
+    "source-57d-hanford-wtp-consent-may-2026",
+    "source-57d-hanford-wtp-consent-june-2026",
+    "source-57d-hanford-wtp-consent-july-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation"
+  ],
+  "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+  "local_capture_path": "/downloads/canonical-verification-endpoints-signed-release-indexes-cache-mirror-recovery-2026/official-links/28-phase57t-record.txt",
+  "archive_member": "official-links/28-phase57t-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}
