@@ -12,13 +12,13 @@
     "url": "https://ftfn-analytics.jbumstead.chatgpt.site",
     "access": "owner-only-custom-policy",
     "initial_source_commit": "bb3d92fe5ac666aba1970a87eb8c4c8d5c0bb955",
-    "current_local_content_commit": "f84addeada142cf6658403d117c34b197c173215",
-    "current_source_commit": "6bd0660578fa398a8d1440a96588458999636250",
-    "current_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_c5870e1825108191a68490208cad7008",
-    "current_version_number": 71,
-    "current_deployment_id": "appgdep_6a793730bb54819190b33f119cbbac1b",
+    "current_local_content_commit": "936c680a1690250372ac03a47ac8dc4aacd6eea6",
+    "current_source_commit": "f3702d3d1727af02ccd0daa8d44968bfbe6b658a",
+    "current_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_d90b2dacf00c8191a782b294c562a31b",
+    "current_version_number": 72,
+    "current_deployment_id": "appgdep_6a79433b68248191967a5310585d5d73",
     "custom_domain_attached": false,
-    "post_deploy_qa": "passed-version-71-deployment-status-source-provenance-runtime-archive-owner-only-access; visual-route-qa-not-requested"
+    "post_deploy_qa": "passed-version-72-deployment-status-source-provenance-runtime-archive-owner-only-access; visual-route-qa-not-requested"
   },
   "canonical_site": "https://ftfn.io",
   "app_root": "app",
@@ -396,7 +396,7 @@
     ],
     "browser_routes_checked": 10,
     "hosted_routes_checked": 0,
-    "preview_qa": "phase-57p-owner-only-deployment-pending-exact-source-commit; phase-57o-owner-only-sites-version-71-remains-live-and-verified"
+    "preview_qa": "passed-phase-57p-owner-only-sites-version-72-deployment-status-source-provenance-runtime-archive-and-access; visual-route-qa-not-requested"
   },
   "required_output_files": [
     "dist/index.html",
@@ -2926,7 +2926,7 @@
     "The Toronto application 24 254930 record is scheduled for City Council on July 29-31, 2026; no Council disposition, enacted by-law, permit, start, completion, or occupancy is claimed before that meeting.",
     "Supabase activation, automated monitoring, analytics, accounts, and public alerting are separate later decisions."
   ],
-  "notes": "This manifest records the local Phase 57P append-only dual-review audit, publication-receipt, and adjudication expansion. Thirty-six carried Tier 1 sources support twenty Published workflow controls, nine preserved In Review holds, nine audit chains, 81 audit cases, 162 publication-receipt cases, 90 adjudication cases, Research Watch 046, one collection, one update, and a thirty-two-file archive. Zero actual candidate packets, reviewer identities, evidence receipts, publication receipts, adjudications, escalations, manual release authorizations, triggers, closures, or publications are recorded. Synthetic identities, receipts, events, disagreements, and supersessions remain outside the evidence and publication ledgers; disagreement cannot collapse into accept, prior receipts remain immutable, and even concordant accept requires separate manual release authorization. The Phase 57P package is locally validated; exact-source commit and owner-only deployment are pending. Sites version 71 continues to serve the exact Phase 57O runtime commit 6bd0660578fa398a8d1440a96588458999636250 in appgdep_6a793730bb54819190b33f119cbbac1b with one owner, no groups, no editors, and zero external visitors. The release remains 0.2.0-dev. Public access, Hostinger DNS, custom-domain attachment, public GitHub synchronization, and package freeze remain unchanged.",
+  "notes": "This manifest records the deployed Phase 57P append-only dual-review audit, publication-receipt, and adjudication expansion. Thirty-six carried Tier 1 sources support twenty Published workflow controls, nine preserved In Review holds, nine audit chains, 81 audit cases, 162 publication-receipt cases, 90 adjudication cases, Research Watch 046, one collection, one update, and a thirty-two-file archive. Zero actual candidate packets, reviewer identities, evidence receipts, publication receipts, adjudications, escalations, manual release authorizations, triggers, closures, or publications are recorded. Synthetic identities, receipts, events, disagreements, and supersessions remain outside the evidence and publication ledgers; disagreement cannot collapse into accept, prior receipts remain immutable, and even concordant accept requires separate manual release authorization. Local content commit 936c680a1690250372ac03a47ac8dc4aacd6eea6 maps to exact private runtime commit f3702d3d1727af02ccd0daa8d44968bfbe6b658a, deployed as owner-only Sites version 72 in appgdep_6a79433b68248191967a5310585d5d73 with one owner, no groups, no editors, and zero external visitors. The release remains 0.2.0-dev. Public access, Hostinger DNS, custom-domain attachment, public GitHub synchronization, and package freeze remain unchanged.",
   "phase_55y_delta": {
     "journeys_deepened": 4,
     "sources_added": 20,
@@ -4735,6 +4735,19 @@
     "dependency_maps_deepened": 1,
     "public_update_entries_added": 1,
     "generated_pages_added": 60,
-    "deployment_status": "pending_exact_source_commit_and_owner_only_deployment_phase-57o-version-71-remains-live"
+    "local_content_commit": "936c680a1690250372ac03a47ac8dc4aacd6eea6",
+    "private_runtime_commit": "f3702d3d1727af02ccd0daa8d44968bfbe6b658a",
+    "private_runtime_parent": "6bd0660578fa398a8d1440a96588458999636250",
+    "sites_version_number": 72,
+    "sites_version_id": "appgprj_6a614e1092d08191bf65779fc35df959~appgver_d90b2dacf00c8191a782b294c562a31b",
+    "sites_runtime_file_count": 4060,
+    "sites_runtime_content_hash": "sha256:c3c57ac54f21f8425be4c9a86ce14890938c8992acc78aaef2b0068ab1367d3e",
+    "sites_runtime_size_bytes": 163809280,
+    "local_compressed_deployment_archive_size_bytes": 95942809,
+    "local_compressed_deployment_archive_sha256": "7BD80C9E95361159731F026E01DBB632A7F38655445AE6DC08FE12826A101990",
+    "sites_deployment_id": "appgdep_6a79433b68248191967a5310585d5d73",
+    "sites_live_url": "https://ftfn-analytics.jbumstead.chatgpt.site",
+    "owner_only_access_verified": true,
+    "deployment_status": "owner_only_version_72_deployed"
   }
 }
