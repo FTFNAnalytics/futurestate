@@ -1,6 +1,6 @@
 # Phase 57V Work Package: Threshold Authorization, Witness Federation, Trusted Time, Verifier Diversity, and Compromise Recovery
 
-Status: complete and release-validated locally; owner-only deployment pending
+Status: complete, release-validated, and owner-only deployed as Sites version 78
 
 Captured: 2026-08-10
 
@@ -104,6 +104,10 @@ The 66-file archive contains 63 official-link records, consolidated summaries, a
 ## Phase 57W handoff
 
 Build quorum-ceremony and member-lifecycle receipts, witness availability and catch-up proofs, attributable fork evidence, federated time-authority failover, verifier build-provenance and reproducible-build attestations, and post-compromise artifact re-issuance and reader migration across all nine contracts. Require governed member admission, suspension, replacement, and emergency quorum procedures without lowering the threshold; bounded witness staleness with append-only catch-up; fork attribution without automatic blame or publication; time failover without rollback; at least three verifiers bound to reproducible build provenance; and artifact re-issuance that preserves the compromised lineage without rewriting it. Preserve all nine Phase 57V holds and keep every synthetic ceremony, membership event, availability observation, catch-up proof, fork artifact, time-failover receipt, build attestation, re-issuance, migration, and drill outside the evidence ledger.
+
+## Deployment receipt
+
+Local content commit `cdeeb87ff1d59765cf9dd540df758cc98efcdf36` maps to exact private runtime commit `c85b7ca11ba9b964a4206e97bfc3aa4f34653837`, whose verified parent is the Phase 57U runtime `07121a8290c775e6672574a678fe659cbe94d38b`. The 5,041-file runtime archive is 185,415,680 bytes with content hash `sha256:cc7cbfd354a80a9d9e7ed8d22fbdfd9264566087065233c4b576497bedc83648`. Sites version 78 (`appgprj_6a614e1092d08191bf65779fc35df959~appgver_f4b9532ba110819195963dfb14b690d9`) deployed successfully in `appgdep_6a796ddfa9a88191b3d6eb6eddb48b36` at `https://ftfn-analytics.jbumstead.chatgpt.site`. Access remains custom owner-only with one owner, no groups, no editors, and zero external visitors. Visual route QA was not requested because this release uses the existing content templates and route families.
 
 ## Validation checkpoint
 

@@ -2,7 +2,7 @@
 
 Date: 2026-08-09
 
-Status: Phase 57V release gates pass locally; exact-source commit and owner-only deployment are pending while Sites version 77 remains live.
+Status: Phase 57V release gates and owner-only Sites version 78 deployment pass.
 
 ## Artifact Under Review
 
@@ -538,4 +538,4 @@ The QA contract requires:
 - the entity ledger remains one Closed, twenty-one Partially Closed, and two Open;
 - the final contract contains 3,469 pages, 715 sources, 1,217 signals, 957 Published, 260 In Review, 76 updates, sixty briefings, fifty-seven collections, 1,333 research documents, 1,149 research export records, and 498 Published-support sources.
 
-A repeat visual/browser pass was not requested because Phase 57V uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, Phase 57U regression, candidate validation, content-reference validation, and source-health checks pass. Exact-source commit and owner-only deployment receipts remain pending; Sites version 77 remains live under the unchanged one-owner policy. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.
+A repeat visual/browser pass was not requested because Phase 57V uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, Phase 57U regression, candidate validation, content-reference validation, and source-health checks pass. Local content commit `cdeeb87ff1d59765cf9dd540df758cc98efcdf36` maps to exact private runtime commit `c85b7ca11ba9b964a4206e97bfc3aa4f34653837`, whose verified parent is Phase 57U runtime `07121a8290c775e6672574a678fe659cbe94d38b`. The 5,041-file runtime archive is 185,415,680 bytes with content hash `sha256:cc7cbfd354a80a9d9e7ed8d22fbdfd9264566087065233c4b576497bedc83648`; it deployed successfully as owner-only Sites version 78 in `appgdep_6a796ddfa9a88191b3d6eb6eddb48b36` with one owner, no groups, no editors, and zero external visitors. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.
