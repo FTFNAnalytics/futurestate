@@ -1,6 +1,6 @@
 # Phase 57W Work Package: Quorum Ceremonies, Witness Availability, Fork Accountability, Time Failover, Build Provenance, and Re-Issuance
 
-Status: release candidate generated; validation and owner-only deployment pending
+Status: complete, release-validated, and owner-only deployed as Sites version 79
 
 Captured: 2026-08-10
 
@@ -119,10 +119,10 @@ Build federation health budgets and partition policy, independent witness-divers
 
 ## Deployment receipt
 
-Pending exact local content commit, exact private runtime commit, package hash, Sites version, deployment identifier, live URL verification, and owner-only access verification.
+Local content commit 589d4d4b00b693baa07f8f62634f2e6e942c5844 maps to exact private runtime commit 00be8bbd39173a2f726e9cea100a803b02a398c8, whose verified parent is the Phase 57V runtime c85b7ca11ba9b964a4206e97bfc3aa4f34653837. The 5,198-file runtime archive is 189,726,720 bytes with content hash sha256:494c782636c96724ad04d3665f002ccb3a18fa7e6358ad99bb28d0c594f5718b. Sites version 79 (appgprj_6a614e1092d08191bf65779fc35df959~appgver_1f33db6da5dc8191aa1f972909040cf7) deployed successfully in appgdep_6a7977dd422881919873d6d165ff1f58 at https://ftfn-analytics.jbumstead.chatgpt.site. Access remains custom owner-only with one owner, no groups, no editors, and zero external visitors. Visual route QA was not requested because this release uses the existing content templates and route families.
 
 ## Validation checkpoint
 
-Pending private-candidate validation, content-reference validation, source health, the Phase 57V regression, the Phase 57W harness and assertions, Astro diagnostics, the 3,597-page production build, release assertions, sitemap membership, exports, private-registry exclusion, and the 66-file archive.
+Private-candidate validation, content-reference validation, source health, the Phase 57V regression, the Phase 57W harness and assertions, Astro diagnostics, the 3,597-page production build, release assertions, sitemap membership, exports, private-registry exclusion, and the 66-file archive pass at the counts above.
 
 Public access, Hostinger DNS, custom-domain attachment, package freeze, public GitHub synchronization, and Supabase activation remain separate explicit decisions.
