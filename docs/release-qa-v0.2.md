@@ -1,17 +1,17 @@
 # FTFN v0.2 Release QA
 
-Date: 2026-08-09
+Date: 2026-08-10
 
-Status: Phase 57V release gates and owner-only Sites version 78 deployment pass.
+Status: Phase 57X local release gates pass; Phase 57W remains live as owner-only Sites version 79 and Phase 57X deployment is pending.
 
 ## Artifact Under Review
 
 - Build manifest: `deployment/ftfn-v0.2-build.json`
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
-- Expected build: 638 HTML pages
-- Content baseline: 307 sources, 124 signals, 17 topics, 26 update entries, 13 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 local systems, 10 briefings, 6 dependency maps, 7 research collections, 107 research documents
-- Publication baseline: 93 Published signals, 31 In Review signals, 3 Published briefings, 7 In Review briefings, 4 Published dependency maps, 2 In Review dependency maps
+- Expected build: 3,725 generated pages
+- Content baseline: 715 sources, 1,343 signals, 17 topics, 78 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 local systems, 62 briefings, 7 dependency maps, 59 research collections, 1,459 research documents
+- Publication baseline: 1,065 Published signals, 278 In Review signals, 55 Published briefings, 7 In Review briefings, 6 Published dependency maps, 1 In Review dependency map
 
 The package remains `0.2.0-dev`. The owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
 
@@ -32,17 +32,17 @@ Result:
 | Check | Result |
 | --- | --- |
 | Private candidates | Passed: 150 records; 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage |
-| Content references | Passed: 307 sources, 124 signals, 17 topics, 19 organizations, 5 technologies, 5 local systems, 10 briefings, 13 evidence gaps, 6 dependency maps, 7 research collections, 107 research documents, 15 reader pathways, 26 updates |
-| Source endpoint metadata | Passed: 198 Manual Review, 109 Probe Ready |
-| Astro diagnostics | Passed: 0 errors, 0 warnings, 0 hints |
-| Static build | Passed: 638 HTML pages |
-| Release assertions | Passed: required outputs, 12 Phase 55X signal decisions, 24 Phase 55X document decisions, 5 local systems, 6 Phase 55Q gap decisions, 15 pathways across 19 Atlas surfaces, 7 research collections / 107 documents, update log, five exports, Published-source dates, robots, sitemap, canonical, and indexing boundaries |
+| Content references | Passed: 715 sources, 1,343 signals, 17 topics, 19 organizations, 5 technologies, 5 local systems, 62 briefings, 16 evidence gaps, 7 dependency maps, 59 research collections, 1,459 research documents, 15 reader pathways, 78 updates |
+| Source endpoint metadata | Passed: 494 Manual Review, 221 Probe Ready |
+| Astro diagnostics | Passed: 0 errors, 0 warnings, 1 inherited non-blocking hint |
+| Static build | Passed: 3,725 generated pages |
+| Release assertions | Passed: required outputs, all inherited phase gates, 54 Phase 57X schemas, 1,593 Phase 57X cases, 5 local systems, 4 current Phase 55Q gap decisions, 15 pathways across 19 Atlas surfaces, 59 research collections / 1,459 documents, update log, five exports, Published-source dates, robots, sitemap, canonical, indexing, archive, and private-registry boundaries |
 
 The release assertion is preserved as `npm run verify:release`. It reads the v0.2 manifest and fails if the checked build no longer matches the release contract.
 
 ## Current-Source Gate
 
-The 93 Published signals resolve to 139 unique source records. All 139 have a `last_checked_date` on or after `2026-07-22`.
+The 1,065 Published signals resolve to 498 unique source records. All 498 have a `last_checked_date` on or after `2026-07-22`.
 
 Phase 55F retained the Phase 54 source floor and refreshed the older NASA Artemis, USDA plant-breeding, and CMHC portal support rails. The verifier now reads the expected support-source count and minimum checked date from the release manifest rather than hard-coding the earlier nine-record baseline.
 
@@ -539,3 +539,32 @@ The QA contract requires:
 - the final contract contains 3,469 pages, 715 sources, 1,217 signals, 957 Published, 260 In Review, 76 updates, sixty briefings, fifty-seven collections, 1,333 research documents, 1,149 research export records, and 498 Published-support sources.
 
 A repeat visual/browser pass was not requested because Phase 57V uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, Phase 57U regression, candidate validation, content-reference validation, and source-health checks pass. Local content commit `cdeeb87ff1d59765cf9dd540df758cc98efcdf36` maps to exact private runtime commit `c85b7ca11ba9b964a4206e97bfc3aa4f34653837`, whose verified parent is Phase 57U runtime `07121a8290c775e6672574a678fe659cbe94d38b`. The 5,041-file runtime archive is 185,415,680 bytes with content hash `sha256:cc7cbfd354a80a9d9e7ed8d22fbdfd9264566087065233c4b576497bedc83648`; it deployed successfully as owner-only Sites version 78 in `appgdep_6a796ddfa9a88191b3d6eb6eddb48b36` with one owner, no groups, no editors, and zero external visitors. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.
+
+## Phase 57X Federation Health, Diversity, Adjudication, Time Corroboration, Patch Provenance, And Decommissioning QA Scope
+
+Phase 57X adds executable federation-operations controls without changing components, styles, layouts, navigation, or client-side behavior. It adds nine health and partition schemas, nine witness-diversity schemas, nine fork-adjudication and appeal schemas, nine time-corroboration schemas, nine vulnerability and patch-provenance schemas, nine reversible-decommissioning schemas, sixty-three signal routes, sixty-three research-document routes, one collection route, one Published briefing route, one update, and a sixty-six-file archive.
+
+The 3,725-page artifact passes:
+
+- private-candidate validation for the unchanged 150-record local-only registry and duplicate checks against 715 public sources;
+- content-reference validation across 715 sources, 1,343 signals, 17 topics, five local systems, sixty-two briefings, sixteen evidence gaps, seven dependency maps, fifty-nine research collections, 1,459 research documents, fifteen reader pathways, and 78 updates;
+- source endpoint metadata review for 494 Manual Review and 221 Probe Ready sources;
+- all 270 federation-health cases, including seventy-two health-window, budget, partition, recovery, and fixed-threshold routes plus 198 explicit rejections;
+- all 252 witness-diversity cases, including sixty-three four-dimension audit and lineage routes plus 189 explicit rejections;
+- all 270 fork-adjudication cases, including seventy-two preserved-evidence, independent-panel, appeal, and quarantine routes plus 198 explicit rejections;
+- all 243 time-corroboration cases, including sixty-three independent-authority, skew, monotonic-lineage, and disagreement-quarantine routes plus 180 explicit rejections;
+- all 270 patch-provenance cases, including seventy-two advisory, lineage, reproducible-build, and inactive-rollout routes plus 198 explicit rejections;
+- all 288 decommissioning cases, including seventy-two frozen-history, verified-replacement, notification, grace, rollback, authorization, and post-verification routes plus 216 explicit rejections;
+- all nine Phase 57W holds preserved exactly once and no new hold;
+- zero production health events, partitions, diversity audits, adjudications, appeals, time comparisons, vulnerability advisories, patches, decommissionings, reader rollbacks, notifications, reader-state changes, human-blame assignments, evidence records, history rewrites, triggers, automated publications, or automated closures;
+- production generation of 3,725 pages;
+- all 1,065 Published signal routes in the sitemap and all 278 In Review routes outside it;
+- exactly 498 current Published-support sources;
+- all fifty-five Published briefing routes in the sitemap and all seven In Review briefing routes outside it;
+- all six Published dependency-map routes in the sitemap and the one In Review map outside it;
+- fifty-nine research collections, 1,459 document routes, and 1,259 research export records;
+- a verified 69,321-byte, sixty-six-file ZIP containing sixty-three official-link records, summaries, README, and SHA-256 manifest, with checksum `6AD9E0D7623BD69B0CB58968B19542EF6CE652ECAA703D32D7AC3B13FD3A7CA6`;
+- the 78-entry update log and five versioned public-data exports;
+- canonicals, robots, sitemap, required outputs, private-registry exclusion, and public/private export boundaries.
+
+A repeat visual/browser pass was not requested because Phase 57X uses existing content templates and route families. The executable harness, structural assertions, Astro diagnostics, full static build, archive validation, candidate validation, content-reference validation, source-health checks, and release-contract checks pass. Phase 57X has no exact-source commit or deployment receipt. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Public access, the package version, public GitHub, Hostinger DNS, and the custom-domain state remain unchanged.

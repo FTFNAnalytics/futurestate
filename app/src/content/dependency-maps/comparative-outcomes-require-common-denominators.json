@@ -1439,6 +1439,12 @@
       "label": "Nine operational trust federations; governed ceremonies, witness catch-up, fork quarantine, time failover, reproducible builds, and lineage-preserving re-issuance",
       "node_type": "Signal",
       "note": "Threshold lowering, stale-witness counting, incomplete catch-up, automatic blame, rollback, divergent provenance, lineage rewrite, or retroactive trust fail closed while reader migration remains inactive."
+    },
+    {
+      "id": "node-phase57x-health-adjudication-decommissioning",
+      "label": "Nine federation operations; fixed-threshold health, four-dimension diversity, independent adjudication and appeal, time corroboration, patch provenance, and reversible decommissioning",
+      "node_type": "Signal",
+      "note": "Threshold lowering, diversity substitution, automatic blame, imported rollback, vulnerable-lineage rewrite, forced migration, or irreversible decommissioning fail closed."
     }
   ],
   "links": [
@@ -2505,6 +2511,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Quorum, witnesses, gossip, trusted time, verifier agreement, and recovery do not establish implementation, capability, closure, operating outcomes, attribution, or causation."
+    },
+    {
+      "from": "node-phase57x-health-adjudication-decommissioning",
+      "to": "node-phase57w-operational-federation-reissuance",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57X measures, disputes, patches, and retires the operational federation established by Phase 57W."
+    },
+    {
+      "from": "node-phase57x-health-adjudication-decommissioning",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Operational trust controls cannot cure an incompatible identity, definition, unit, method, denominator, period, privacy, authority, or acceptance boundary."
+    },
+    {
+      "from": "node-phase57x-health-adjudication-decommissioning",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Federation health, adjudication, time corroboration, patching, and decommissioning do not establish implementation, capability, closure, operating outcomes, attribution, or causation."
     }
   ],
   "what_this_map_supports": [

@@ -63,7 +63,9 @@
     "test:phase57v": "node ./scripts/phase57v-threshold-witness-gossip-compromise-harness.mjs",
     "verify:phase57v": "node ./scripts/assert-phase57v.mjs",
     "test:phase57w": "node ./scripts/phase57w-ceremony-availability-fork-provenance-reissuance-harness.mjs",
-    "verify:phase57w": "node ./scripts/assert-phase57w.mjs"
+    "verify:phase57w": "node ./scripts/assert-phase57w.mjs",
+    "test:phase57x": "node ./scripts/phase57x-health-diversity-adjudication-patch-decommission-harness.mjs",
+    "verify:phase57x": "node ./scripts/assert-phase57x.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.0",

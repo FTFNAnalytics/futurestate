@@ -1,6 +1,6 @@
 # FTFN v0.2 Build Summary
 
-Date: 2026-08-09
+Date: 2026-08-10
 
 ## Executive State
 
@@ -121,14 +121,14 @@ The current release contract is recorded in `deployment/ftfn-v0.2-build.json`.
 
 | Measure | v0.1.1 checkpoint | v0.2 candidate | Change |
 | --- | ---: | ---: | ---: |
-| Generated HTML pages | 182 | 1,773 | +1,591 |
-| Sources | 102 | 631 | +529 |
-| Signals | 18 | 439 | +421 |
-| Published signals | 3 | 371 | +368 |
-| In Review signals | 14 | 68 | +54 |
+| Generated HTML pages | 182 | 3,725 | +3,543 |
+| Sources | 102 | 715 | +613 |
+| Signals | 18 | 1,343 | +1,325 |
+| Published signals | 3 | 1,065 | +1,062 |
+| In Review signals | 14 | 278 | +264 |
 | Draft Sample signals | 1 | 0 | -1 |
 | Topics | 17 | 17 | 0 |
-| Public update entries | 0 | 50 | +50 |
+| Public update entries | 0 | 78 | +78 |
 | Versioned JSON exports | 0 | 5 | +5 |
 
 Additional current records:
@@ -139,10 +139,10 @@ Additional current records:
 - 16 evidence gaps,
 - 4 current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 56Y reviews,
 - 7 dependency maps: 6 Published and 1 In Review,
-- 34 briefings: 27 Published and 7 In Review,
-- 31 research collections with 551 document records,
+- 62 briefings: 55 Published and 7 In Review,
+- 59 research collections with 1,459 document records,
 - 15 reader pathways across 19 Atlas surfaces,
-- all prior verified archives plus the Phase 56X sixteen-file ZIP archive.
+- all prior verified archives plus the Phase 57X sixty-six-file ZIP archive.
 
 ## What Is Built
 
@@ -162,12 +162,12 @@ The public application includes:
 
 The editorial and authority layer includes:
 
-- 442 structured source records with authority, freshness, access, monitoring, and review metadata,
-- 204 bounded signal records with explicit claim and evidence limits,
-- 153 Published signals backed by 251 current support sources,
+- 715 structured source records with authority, freshness, access, monitoring, and review metadata,
+- 1,343 bounded signal records with explicit claim and evidence limits,
+- 1,065 Published signals backed by 498 current support sources,
 - named Arizona and Ontario conversion trails that stop at the last verified stage,
 - fifteen evidence-bounded reader pathways that connect Published records to dependency stacks and visible gaps,
-- a public 31-entry update and correction log,
+- a public 78-entry update and correction log,
 - a private update queue and documented signal-repair workflow,
 - a pre-Supabase public/private data contract,
 - a local-only 150-record source-candidate registry across 15 evidence profiles,
@@ -335,6 +335,10 @@ Phase 57T expands to fifty-four canonical-endpoint, signed-release-index, cache-
 Phase 57U expands to sixty-three governed-key, key-lifecycle, transparency-proof, multi-origin, incident-containment, recovery-objective, and zero-state-inflation records. Six contract-specific controls publish for each of the nine reopening contracts; all nine Phase 57T outcome holds remain In Review and no new hold is added. Thirty-six carried Tier 1 sources support nine schemas on each of six integrity rails, 1,170 executable cases, Research Watch 051, one collection, one public update, and a sixty-six-file archive. The verified release contract is 3,341 pages, 715 sources, 1,154 signals, 903 Published, 251 In Review, 75 updates, fifty-nine briefings, fifty-six collections, 1,270 research documents, 1,094 research export records, and 498 current Published-support sources. Three hundred forty-two exact or preservation routes verify, while 828 unknown, expired, revoked, ambiguous, conflicting, regressive, truncated, split-view, divergent, incomplete, mutable, missed-objective, activating, automated, or state-inflating fixtures reject or fail closed. Zero production keys, signatures, lifecycle events, log entries, proofs, origin observations, incidents, receipts, replays, recovery drills, reader-state changes, triggers, publications, closures, or operating-outcome changes are recorded, and the one Closed / twenty-one Partially Closed / two Open entity ledger does not change. Local content commit `8facebbffbcf6f3d27910de1c549e755f5fe11d0` maps to exact private runtime commit `07121a8290c775e6672574a678fe659cbe94d38b`, deployed successfully as owner-only Sites version 77 in `appgdep_6a7964874854819198ab50f448f65039`.
 
 Phase 57V expands to sixty-three threshold-authorization, independent-witness, cross-log-gossip, trusted-time, verifier-diversity, compromise-recovery, and zero-state-inflation records. Six contract-specific controls publish for each of the nine reopening contracts; all nine Phase 57U outcome holds remain In Review and no new hold is added. Thirty-six carried Tier 1 sources support nine schemas on each of six federated-trust rails, 1,296 executable cases, Research Watch 052, one collection, one public update, and a sixty-six-file archive. The verified release contract is 3,469 pages, 715 sources, 1,217 signals, 957 Published, 260 In Review, 76 updates, sixty briefings, fifty-seven collections, 1,333 research documents, 1,149 research export records, and 498 current Published-support sources. Three hundred sixty exact or preservation routes verify, while 936 deficient, duplicated, conflicted, stale, divergent, regressive, replayed, retroactively trusting, rewriting, activating, automated, or state-inflating fixtures reject or fail closed. Zero production threshold shares, witness signatures, checkpoints, gossip messages, time receipts, verifier runs, compromise events, recovery actions, algorithm migrations, reader-state changes, triggers, publications, closures, or operating-outcome changes are recorded, and the one Closed / twenty-one Partially Closed / two Open entity ledger does not change. Local content commit `cdeeb87ff1d59765cf9dd540df758cc98efcdf36` maps to exact private runtime commit `c85b7ca11ba9b964a4206e97bfc3aa4f34653837`, deployed successfully as owner-only Sites version 78 in `appgdep_6a796ddfa9a88191b3d6eb6eddb48b36`.
+
+Phase 57W expands to sixty-three quorum-ceremony, witness-availability, attributable-fork, time-failover, build-provenance, re-issuance, and zero-state-inflation records. Six contract-specific controls publish for each of the nine reopening contracts; all nine Phase 57V outcome holds remain In Review and no new hold is added. Thirty-six carried Tier 1 sources support nine schemas on each of six operational-federation rails, 1,431 executable cases, Research Watch 053, one collection, one public update, and a sixty-six-file archive. The verified release contract is 3,597 pages, 715 sources, 1,280 signals, 1,011 Published, 269 In Review, 77 updates, sixty-one briefings, fifty-eight collections, 1,396 research documents, 1,204 research export records, and 498 current Published-support sources. Three hundred ninety-six exact or preservation routes verify, while 1,035 threshold-lowering, stale-counting, automatic-blame, rollback, divergent-build, lineage-rewriting, activating, automated, or state-inflating fixtures reject or fail closed. Zero production ceremonies, membership events, availability observations, catch-up proofs, fork events, attributions, time failovers, build attestations, re-issuances, reader migrations, reader-state changes, triggers, publications, closures, or operating-outcome changes are recorded, and the entity ledger does not change. Local content commit `589d4d4b00b693baa07f8f62634f2e6e942c5844` maps to exact private runtime commit `00be8bbd39173a2f726e9cea100a803b02a398c8`, deployed successfully as owner-only Sites version 79 in `appgdep_6a7977dd422881919873d6d165ff1f58`.
+
+Phase 57X expands to sixty-three federation-health, witness-diversity, fork-adjudication, time-corroboration, patch-provenance, reversible-decommissioning, and zero-state-inflation records. Six contract-specific controls publish for each of the nine reopening contracts; all nine Phase 57W outcome holds remain In Review and no new hold is added. Thirty-six carried Tier 1 sources support nine schemas on each of six federation-operations rails, 1,593 executable cases, Research Watch 054, one collection, one public update, and a sixty-six-file archive. The verified local release contract is 3,725 pages, 715 sources, 1,343 signals, 1,065 Published, 278 In Review, 78 updates, sixty-two briefings, fifty-nine collections, 1,459 research documents, 1,259 research export records, and 498 current Published-support sources. Four hundred fourteen exact or preservation routes verify, while 1,179 threshold-lowering, diversity-substituting, blame-assigning, rollback-importing, vulnerable-lineage-rewriting, forced-migration, irreversible, automated, or state-inflating fixtures reject or fail closed. Zero production health events, partitions, audits, adjudications, appeals, time comparisons, advisories, patches, decommissionings, rollbacks, notifications, reader-state changes, blame assignments, triggers, publications, closures, or operating-outcome changes are recorded, and the entity ledger does not change. Exact-source commit and owner-only deployment remain pending; Phase 57W Sites version 79 remains live with unchanged access.
 
 Verified Phase 56W results:
 
@@ -658,21 +662,40 @@ Verified Phase 57V results:
 - the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
 - private-candidate validation, content references, source health, Astro diagnostics, the 3,469-page production build, the Phase 57U regression, the Phase 57V harness and assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the sixty-six-file archive pass.
 
+Verified Phase 57W results:
+
+- fifty-four Published contract-specific ceremony, availability, fork-evidence, time-failover, build-provenance, re-issuance, and zero-state-inflation controls plus nine preserved In Review holds;
+- all nine Phase 57V holds preserved exactly once with no new hold;
+- all 252 ceremony, 234 availability, 216 fork-evidence, 225 time-failover, 243 build-provenance, and 261 re-issuance cases pass;
+- zero production ceremonies, membership events, availability observations, catch-up proofs, fork events, attributions, time failovers, build attestations, re-issuances, migrations, reader-state changes, triggers, publications, or closures;
+- private-candidate validation, content references, source health, Astro diagnostics, the 3,597-page production build, the Phase 57V regression, the Phase 57W harness and assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the sixty-six-file archive pass.
+
+Verified Phase 57X results:
+
+- fifty-four Published contract-specific health, diversity, adjudication, time-corroboration, patch-provenance, decommissioning, and zero-state-inflation controls plus nine preserved In Review holds;
+- thirty-six carried Tier 1 source profiles, nine schemas on each of six federation-operations rails, Research Watch 054, one collection, one update, and a sixty-six-file archive;
+- all nine Phase 57W holds preserved exactly once with no new hold;
+- all 270 health, 252 diversity, 270 adjudication, 243 time-corroboration, 270 patch-provenance, and 288 decommissioning cases pass;
+- the 69,321-byte archive has SHA-256 `6AD9E0D7623BD69B0CB58968B19542EF6CE652ECAA703D32D7AC3B13FD3A7CA6`;
+- zero production health events, partitions, diversity audits, adjudications, appeals, time comparisons, advisories, patches, decommissionings, rollbacks, notifications, reader-state changes, human-blame assignments, exact targets, operating-outcome promotions, directive-scope changes, implementation changes, capability changes, closure changes, agency contacts, or FOIA requests;
+- the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
+- private-candidate validation, content references, source health, Astro diagnostics, the 3,725-page production build, the Phase 57X harness and assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the sixty-six-file archive pass.
+
 The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
-The local release work is preserved on `codex/phase51-content`. Phase 57V is complete, production-rendered, release-validated, and owner-only deployed. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
+The local release work is preserved on `codex/phase51-content`. Phase 57X is complete, production-rendered, and release-validated locally; its exact-source commit and owner-only deployment remain pending. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
-The current hosting checkpoint is owner-only Sites version 78, serving the verified Phase 57V package from exact private runtime commit `c85b7ca11ba9b964a4206e97bfc3aa4f34653837` in deployment `appgdep_6a796ddfa9a88191b3d6eb6eddb48b36`. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
+The current hosting checkpoint is owner-only Sites version 79, serving the verified Phase 57W package from exact private runtime commit `00be8bbd39173a2f726e9cea100a803b02a398c8` in deployment `appgdep_6a7977dd422881919873d6d165ff1f58`. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. Exact-source commit, owner-only redeployment, GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
 The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-22 to remain outside Cloudflare, with Google Workspace mail records active. Before any nameserver or DNS change, inventory and preserve every mail and verification record. Hosting-provider selection remains an explicit Phase 55 decision: Cloudflare Pages is the documented default, but another static host may be chosen if avoiding a nameserver migration is more important.
 
 ## Known Limitations
 
-- Two hundred and sixty signals remain `In Review`; the nine preserved Phase 57V holds keep unaccepted Amtrak closeout and named-asset reliability, undisclosed Louisiana and Montana adoption results, the complete Hanford material balance, recurring qualified NNSA output, final accepted capacity, and the exact GAO-23-104661 enterprise baseline outside the Published layer. Nine hundred and fifty-seven bounded signals are Published.
-- Phase 57V threshold shares, witness signatures, checkpoints, gossip messages, time receipts, verifier results, compromise events, recovery actions, and migrations are integrity controls, not live infrastructure, source evidence, operating outcomes, reviewer assignments, production secret material, actual compromises, service guarantees, corrections, or readiness scores. Passing tests do not establish production quorum, witness federation, gossip operation, trusted-time service, verifier certification, compromise occurrence, recovery execution, packet existence, or eligibility; synthetic controls create no actual editorial event and no reopening contract has fired.
-- Seven briefings and all five local-system profiles remain prelaunch or research material. The fifty-two Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
+- Two hundred and seventy-eight signals remain `In Review`; the nine preserved Phase 57X holds keep unaccepted Amtrak closeout and named-asset reliability, undisclosed Louisiana and Montana adoption results, the complete Hanford material balance, recurring qualified NNSA output, final accepted capacity, and the exact GAO-23-104661 enterprise baseline outside the Published layer. One thousand sixty-five bounded signals are Published.
+- Phase 57X health receipts, partitions, diversity audits, adjudications, appeals, time comparisons, advisories, patches, decommissionings, rollbacks, notifications, and drills are integrity controls, not live infrastructure, source evidence, operating outcomes, reviewer assignments, production vulnerability disclosures, actual failures, service guarantees, corrections, blame determinations, or readiness scores. Passing tests do not establish production federation health, diversity, adjudication, time service, patched-verifier deployment, reader migration, decommissioning, packet existence, or eligibility; synthetic controls create no actual editorial event and no reopening contract has fired.
+- Seven briefings and all five local-system profiles remain prelaunch or research material. The fifty-five Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
 - Six Phase 55N sources have official-link records because their official hosts blocked or complicated automated export; the collection preserves direct official URLs rather than third-party substitutes.
@@ -802,7 +825,11 @@ npm.cmd run test:phase57u
 npm.cmd run verify:phase57u
 npm.cmd run test:phase57v
 npm.cmd run verify:phase57v
+npm.cmd run test:phase57w
+npm.cmd run verify:phase57w
+npm.cmd run test:phase57x
+npm.cmd run verify:phase57x
 npm.cmd run verify:release
 ```
 
-Expected output: 3,469 generated site pages, the prior verified research archives plus the Phase 57V sixty-six-file archive, fifty-four Published Phase 57V controls and nine In Review holds, fifty-four contract-specific schemas, 1,296 threshold, witness, gossip, trusted-time, verifier-diversity, and compromise-recovery cases, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57V, Phase 57U regression, and v0.2 release assertions.
+Expected output: 3,725 generated site pages, the prior verified research archives plus the Phase 57X sixty-six-file archive, fifty-four Published Phase 57X controls and nine In Review holds, fifty-four contract-specific schemas, 1,593 federation-health, witness-diversity, fork-adjudication, time-corroboration, patch-provenance, and decommissioning cases, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57X, inherited regressions, and v0.2 release assertions.
