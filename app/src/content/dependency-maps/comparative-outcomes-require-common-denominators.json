@@ -2,7 +2,7 @@
   "id": "dependency-map-comparative-outcomes-require-common-denominators",
   "title": "Comparative outcomes require common denominators",
   "slug": "comparative-outcomes-require-common-denominators",
-  "summary": "A comparison and inference protocol: Phase 57P keeps dual-review receipts, disagreement adjudication, supersession, and release authorization append-only while preserving every operating-outcome hold.",
+  "summary": "A comparison and inference protocol: Phase 57Q keeps release authorization, exact publication bundles, publication, withdrawal, rollback, and supersession separately attributable and append-only while preserving every operating-outcome hold.",
   "map_type": "Evidence Gap Map",
   "record_status": "Published",
   "primary_topic": "Policy and Standards",
@@ -1008,7 +1008,43 @@
     "signal-57p-nnsa-27-audit-chain-integrity-cases",
     "signal-57p-nnsa-54-publication-review-decision-receipt-cases",
     "signal-57p-nnsa-30-cross-role-adjudication-cases",
-    "signal-57p-nnsa-zero-actual-audit-adjudication-release-or-publication-events"
+    "signal-57p-nnsa-zero-actual-audit-adjudication-release-or-publication-events",
+    "signal-57q-amtrak-pids-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-amtrak-pids-immutable-publication-bundle-manifest",
+    "signal-57q-amtrak-pids-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-amtrak-pids-zero-actual-release-publication-withdrawal-or-rollback-events",
+    "signal-57q-amtrak-reliability-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-amtrak-reliability-immutable-publication-bundle-manifest",
+    "signal-57q-amtrak-reliability-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-amtrak-reliability-zero-actual-release-publication-withdrawal-or-rollback-events",
+    "signal-57q-la-nextlink-adoption-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-la-nextlink-adoption-immutable-publication-bundle-manifest",
+    "signal-57q-la-nextlink-adoption-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-la-nextlink-adoption-zero-actual-release-publication-withdrawal-or-rollback-events",
+    "signal-57q-la-starlink-adoption-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-la-starlink-adoption-immutable-publication-bundle-manifest",
+    "signal-57q-la-starlink-adoption-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-la-starlink-adoption-zero-actual-release-publication-withdrawal-or-rollback-events",
+    "signal-57q-mt-bead-quarter-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-mt-bead-quarter-immutable-publication-bundle-manifest",
+    "signal-57q-mt-bead-quarter-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-mt-bead-quarter-zero-actual-release-publication-withdrawal-or-rollback-events",
+    "signal-57q-hanford-mass-balance-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-hanford-mass-balance-immutable-publication-bundle-manifest",
+    "signal-57q-hanford-mass-balance-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-hanford-mass-balance-zero-actual-release-publication-withdrawal-or-rollback-events",
+    "signal-57q-nnsa-qualified-rate-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-nnsa-qualified-rate-immutable-publication-bundle-manifest",
+    "signal-57q-nnsa-qualified-rate-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-nnsa-qualified-rate-zero-actual-release-publication-withdrawal-or-rollback-events",
+    "signal-57q-nnsa-accepted-capacity-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-nnsa-accepted-capacity-immutable-publication-bundle-manifest",
+    "signal-57q-nnsa-accepted-capacity-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-nnsa-accepted-capacity-zero-actual-release-publication-withdrawal-or-rollback-events",
+    "signal-57q-nnsa-gao-baseline-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-nnsa-gao-baseline-immutable-publication-bundle-manifest",
+    "signal-57q-nnsa-gao-baseline-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-nnsa-gao-baseline-zero-actual-release-publication-withdrawal-or-rollback-events"
   ],
   "technology_ids": [],
   "local_system_ids": [],
@@ -1361,6 +1397,12 @@
       "label": "Nine append-only chains; 333 receipt and adjudication cases; zero release events",
       "node_type": "Signal",
       "note": "Evidence and publication receipts remain separately attributable, disagreement cannot collapse into accept, and even concordant accept awaits manual release authorization."
+    },
+    {
+      "id": "node-phase57q-manual-release-bundles",
+      "label": "Nine release checklists; nine immutable bundles; nine reversible lifecycles; zero actual events",
+      "node_type": "Signal",
+      "note": "Release remains distinct from publication, exact artifacts remain digest-bound, and withdrawal or rollback never erases prior history."
     }
   ],
   "links": [
@@ -2280,6 +2322,27 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "Append-only review history does not establish operating outcomes, eligibility, implementation, closure, or causation."
+    },
+    {
+      "from": "node-phase57q-manual-release-bundles",
+      "to": "node-phase57p-dual-review-audit",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Phase 57Q begins only after Phase 57P keeps both review receipts, disagreements, adjudication, and supersession separately attributable and immutable."
+    },
+    {
+      "from": "node-phase57q-manual-release-bundles",
+      "to": "node-denominator-break",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "An actual bundle still requires one cited packet with compatible identity, definition, unit, method, denominator, period, privacy, authority, and acceptance."
+    },
+    {
+      "from": "node-phase57q-manual-release-bundles",
+      "to": "node-causal-hold",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Release and publication controls do not establish operating outcomes, eligibility, implementation, closure, or causation."
     }
   ],
   "what_this_map_supports": [
@@ -2339,7 +2402,8 @@
     "Sixty Phase 57M schema adapters, eighteen packet fixtures, nine six-outcome human-review tables, fifty-four rehearsal rows, and nine preserved holds.",
     "120 accepted-label tests, sixty ambiguity rejections, eighteen fixture executions, fifty-four receipt templates, zero actual review events, and nine preserved holds.",
     "Nine role matrices, 270 receipt-integrity cases, 63 authorization cases, 90 handoff cases, zero actual review events, and nine preserved holds.",
-    "Nine append-only chains, 81 audit cases, 162 publication-receipt cases, 90 adjudication cases, zero actual release events, and nine preserved holds."
+    "Nine append-only chains, 81 audit cases, 162 publication-receipt cases, 90 adjudication cases, zero actual release events, and nine preserved holds.",
+    "Nine release checklists, nine immutable bundle schemas, nine reversible publication lifecycles, 396 passing cases, zero actual events, and nine preserved holds."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -2470,6 +2534,7 @@
     "One complete cited packet that passes exact adapter matching and receives a named human-review decision without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution.",
     "One complete cited packet that passes deterministic validation and receives a complete named reviewer receipt without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution.",
     "One complete cited accept packet with distinct named evidence and publication reviewers, immutable receipt fields, and a separately recorded publication decision without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution.",
-    "One complete cited packet with immutable evidence and publication receipts, explicit adjudication and escalation ownership when needed, and a separately attributable manual release authorization without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution."
+    "One complete cited packet with immutable evidence and publication receipts, explicit adjudication and escalation ownership when needed, and a separately attributable manual release authorization without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution.",
+    "One complete cited packet with immutable review receipts, a separate human release receipt, an exact signed publication bundle, and a separate manual publication event without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, closure, or outcome attribution."
   ]
 }

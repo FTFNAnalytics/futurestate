@@ -413,12 +413,13 @@ Recommended active schedule:
 | Completed and owner-only deployed | Phase 57N | twenty Published deterministic controls, nine preserved holds, 120 accepted-label tests, sixty ambiguity rejections, eighteen fixture executions, fifty-four receipt templates, Research Watch 044, a thirty-two-file archive, a verified 2,707-page contract, and Sites version 70 |
 | Completed and owner-only deployed | Phase 57O | twenty Published reviewer-authorization, receipt-integrity, and handoff controls, nine preserved holds, nine role matrices, 423 workflow cases, Research Watch 045, a thirty-two-file archive, a verified 2,767-page contract, and Sites version 71 |
 | Completed and owner-only deployed | Phase 57P | twenty Published append-only audit, publication-receipt, and adjudication controls, nine preserved holds, nine audit chains, 333 workflow cases, Research Watch 046, a thirty-two-file archive, a verified 2,827-page contract, and Sites version 72 |
-| Next content gate | Phase 57Q | manual release-authorization checklists, immutable publication-bundle manifests, and withdrawal and rollback receipts |
+| Completed and release-validated locally; deployment pending | Phase 57Q | thirty-six Published contract-specific release, bundle, rollback, and zero-automation controls, nine preserved holds, twenty-seven schemas, 396 workflow cases, Research Watch 047, a forty-eight-file archive, and a verified 2,919-page contract |
+| Next content gate | Phase 57R | reader-facing publication-status registries, immutable change notices, restore and republication receipts, and provenance timelines |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
 | Parallel | Phase 58 | activate Supabase as a private authority-loop backend without changing the public publication gate |
 
-The planned v0.2 build remains owner-only and now contains the deployed Phase 57P append-only dual-review audit, publication-receipt, and adjudication layer. Phase 57P reviews twenty-nine records and publishes twenty bounded workflow controls while preserving all nine Phase 57O holds and adding no new hold. Thirty-six carried Tier 1 sources support nine audit chains, eighty-one audit cases, 162 publication-receipt cases, and ninety adjudication cases with zero actual packets, reviewer identities, evidence receipts, publication receipts, adjudications, escalations, releases, triggers, closures, or publications. Disagreement cannot collapse into accept, supersession cannot mutate prior receipts, and even concordant accept stops at manual release authorization. No operating-outcome, directive-scope, implementation, capability, closure, agency-contact, FOIA, or entity-ledger change is recorded. Local content commit `936c680a1690250372ac03a47ac8dc4aacd6eea6` maps to exact private runtime commit `f3702d3d1727af02ccd0daa8d44968bfbe6b658a`, deployed as owner-only Sites version 72 in `appgdep_6a79433b68248191967a5310585d5d73` with one owner, no groups, no editors, and zero external visitors. Phase 57Q manual-release and publication-bundle controls are next; dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now contains the release-validated local Phase 57Q manual release, immutable publication-bundle, and reversible-publication layer. Phase 57Q reviews forty-five records and publishes thirty-six contract-specific controls while preserving all nine Phase 57P holds and adding no new hold. Thirty-six carried Tier 1 sources support nine twelve-item release checklists, nine immutable bundle schemas, nine lifecycle machines, and 396 passing workflow cases with zero actual packets, reviewers, release actors, authorizations, bundles, publications, withdrawals, rollbacks, supersessions, triggers, closures, or operating-outcome changes. Release remains distinct from publication, exact artifacts remain digest-bound, and withdrawal or rollback cannot erase prior history or inflate evidence state. No directive-scope, implementation, capability, closure, agency-contact, FOIA, or entity-ledger change is recorded. Owner-only Sites version 72 continues to serve the exact Phase 57P package with one owner, no groups, no editors, and zero external visitors while Phase 57Q awaits exact-source commit and deployment. Phase 57R reader-facing status and provenance controls are next; dated outcome checks remain non-blocking inserts. Phase 55H, Phase 55R, the inherited HHS tracker hold, and remaining dated checks are inserts, not blockers. Public GitHub synchronization, release freeze, public access, and production-domain launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -2049,7 +2050,7 @@ Delivered:
 - a verified 2,827-page contract with 715 sources, 902 signals, 696 Published, 206 In Review, fifty-one collections, 1,018 research documents, fifty-four briefings, 70 updates, 882 research export records, and 498 Published-support sources;
 - all nine Phase 57O holds preserved exactly once, no new hold, and zero actual receipt, adjudication, escalation, release, trigger, directive-scope, implementation, closure, agency-contact, FOIA, or inherited entity-ledger change.
 
-### Phase 57Q: Manual Release Authorization, Publication Bundles, And Rollback Receipts - Next Content Gate
+### Phase 57Q: Manual Release Authorization, Publication Bundles, And Rollback Receipts - Complete And Release-Validated Locally; Deployment Pending
 
 Goal: make the final human release decision separately attributable and reversible without allowing review completion or release infrastructure to publish automatically.
 
@@ -2067,6 +2068,35 @@ Boundaries:
 - a manual release receipt cannot mutate either review receipt or the evidence packet;
 - withdrawal and rollback cannot erase history or alter evidence, acceptance, implementation, capability, closure, or operating-outcome state automatically;
 - no automated publication, ranking, composite, generalized savings claim, or unsupported causal inference.
+
+Delivered:
+
+- forty-five reviewed records with thirty-six Published contract-specific controls and nine preserved In Review holds;
+- nine twelve-item manual release-authorization checklists and 126 cases with nine bounded valid routes awaiting separate publication and 117 explicit rejections;
+- nine immutable publication-bundle schemas and 126 cases binding the exact packet, both review receipts, cited-source digests, canonical artifact order, release receipt, and manifest signature;
+- nine lifecycle state machines and 144 release, publication, withdrawal, rollback, supersession, history-preservation, mutation-rejection, chronology, authority, target, and state-inflation cases;
+- thirty-six carried Tier 1 sources, Research Watch 047, one collection, one update, and a forty-eight-file archive;
+- a verified 2,919-page contract with 715 sources, 947 signals, 732 Published, 215 In Review, fifty-two collections, 1,063 research documents, fifty-five briefings, 71 updates, 919 research export records, and 498 Published-support sources;
+- all nine Phase 57P holds preserved exactly once, no new hold, and zero actual actor, authorization, bundle, publication, withdrawal, rollback, supersession, trigger, directive-scope, implementation, capability, closure, operating-outcome, agency-contact, FOIA, or inherited entity-ledger change.
+
+### Phase 57R: Publication Status, Change Notices, And Restore Receipts - Next Content Gate
+
+Goal: expose the append-only publication lifecycle to readers without allowing a status display or provenance timeline to create evidence or change claim state.
+
+Priorities:
+
+1. create a reader-facing current-publication-status registry derived only from append-only lifecycle events;
+2. create immutable public change notices bound to the controlling release, publication, withdrawal, rollback, or supersession receipt;
+3. create restore and republication receipts that require a new human authorization and new exact bundle digest;
+4. render provenance timelines that preserve every earlier state and identify the currently controlling event;
+5. preserve all nine Phase 57Q holds and publish only status, provenance, notice-integrity, and restore-control records.
+
+Boundaries:
+
+- synthetic publication statuses, notices, restores, republications, actors, receipts, and timelines are not actual public claim states;
+- derived current availability cannot hide or rewrite earlier publication history;
+- restore or republication never reuses a withdrawn or rolled-back authorization or stale bundle digest;
+- no status display changes evidence, acceptance, implementation, capability, closure, operating outcomes, or causal attribution.
 
 ### Phase 56: v0.2 Production Release And Domain - Conditional
 
@@ -2180,10 +2210,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Begin Phase 57Q manual release-authorization checklists, immutable publication-bundle manifests, and withdrawal and rollback receipts. Require a separately attributed human release receipt after concordant dual accept, exact bundle hashes covering the cited packet and both review receipts, and append-only withdrawal and rollback history while preserving all nine Phase 57P holds.
+Begin Phase 57R reader-facing publication-status registries, immutable change notices, restore and republication receipts, and provenance timelines. Require current availability to be derived from append-only history, bind each public notice to its controlling receipt, require a new human authorization and exact bundle digest for restoration or republication, and preserve all nine Phase 57Q holds.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phase 57P is complete, production-rendered, release-validated, and owner-only deployed at 2,827 pages, with 715 sources, 902 signals, 696 Published signals, 206 In Review signals, 51 collections, 1,018 research documents, 54 briefings, 70 updates, 882 research export records, and 498 Published-support sources. Local content commit `936c680a1690250372ac03a47ac8dc4aacd6eea6` maps to exact private runtime commit `f3702d3d1727af02ccd0daa8d44968bfbe6b658a`, whose parent is the verified Phase 57O runtime `6bd0660578fa398a8d1440a96588458999636250`. Sites version 72 is live in `appgdep_6a79433b68248191967a5310585d5d73` with one owner, no groups, no editors, and zero external visitors. Phase 57Q may proceed without waiting on dated source updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.
+Phase 57Q is complete, production-rendered, and release-validated locally at 2,919 pages, with 715 sources, 947 signals, 732 Published signals, 215 In Review signals, 52 collections, 1,063 research documents, 55 briefings, 71 updates, 919 research export records, and 498 Published-support sources. Sites version 72 continues to serve the exact Phase 57P private runtime commit `f3702d3d1727af02ccd0daa8d44968bfbe6b658a` in `appgdep_6a79433b68248191967a5310585d5d73` with one owner, no groups, no editors, and zero external visitors while Phase 57Q awaits exact-source commit and deployment. Phase 57R may proceed after Phase 57Q deployment without waiting on dated source updates. Public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch remain separate explicit decisions. Supabase activation may proceed separately and must preserve Git plus the static build as the public publication gate.

@@ -213,7 +213,27 @@
     "signal-57p-broadband-27-audit-chain-integrity-cases",
     "signal-57p-broadband-54-publication-review-decision-receipt-cases",
     "signal-57p-broadband-30-cross-role-adjudication-cases",
-    "signal-57p-broadband-zero-actual-audit-adjudication-release-or-publication-events"
+    "signal-57p-broadband-zero-actual-audit-adjudication-release-or-publication-events",
+    "signal-57q-amtrak-pids-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-amtrak-pids-immutable-publication-bundle-manifest",
+    "signal-57q-amtrak-pids-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-amtrak-pids-zero-actual-release-publication-withdrawal-or-rollback-events",
+    "signal-57q-amtrak-reliability-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-amtrak-reliability-immutable-publication-bundle-manifest",
+    "signal-57q-amtrak-reliability-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-amtrak-reliability-zero-actual-release-publication-withdrawal-or-rollback-events",
+    "signal-57q-la-nextlink-adoption-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-la-nextlink-adoption-immutable-publication-bundle-manifest",
+    "signal-57q-la-nextlink-adoption-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-la-nextlink-adoption-zero-actual-release-publication-withdrawal-or-rollback-events",
+    "signal-57q-la-starlink-adoption-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-la-starlink-adoption-immutable-publication-bundle-manifest",
+    "signal-57q-la-starlink-adoption-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-la-starlink-adoption-zero-actual-release-publication-withdrawal-or-rollback-events",
+    "signal-57q-mt-bead-quarter-twelve-item-manual-release-authorization-checklist",
+    "signal-57q-mt-bead-quarter-immutable-publication-bundle-manifest",
+    "signal-57q-mt-bead-quarter-withdrawal-rollback-and-supersession-receipts",
+    "signal-57q-mt-bead-quarter-zero-actual-release-publication-withdrawal-or-rollback-events"
   ],
   "source_ids": [
     "source-virginia-scc-large-load-gs5-2025",
@@ -307,7 +327,8 @@
     "briefing-research-watch-043-source-schema-adapters-packet-review-controls",
     "briefing-research-watch-044-adapter-conformance-packet-validation-receipts",
     "briefing-research-watch-045-reviewer-authorization-receipt-integrity-publication-handoffs",
-    "briefing-research-watch-046-dual-review-audit-chains-adjudication-publication-receipts"
+    "briefing-research-watch-046-dual-review-audit-chains-adjudication-publication-receipts",
+    "briefing-research-watch-047-manual-release-publication-bundles-rollback-receipts"
   ],
   "dependency_map_ids": [
     "dependency-map-local-authorization-is-not-operation",
@@ -338,7 +359,8 @@
     "research-collection-source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026",
     "research-collection-adapter-conformance-packet-validation-reviewer-receipt-ledgers-2026",
     "research-collection-reviewer-authorization-receipt-integrity-publication-handoff-state-machines-2026",
-    "research-collection-dual-review-audit-chains-adjudication-publication-decision-receipts-2026"
+    "research-collection-dual-review-audit-chains-adjudication-publication-decision-receipts-2026",
+    "research-collection-manual-release-authorization-publication-bundles-withdrawal-rollback-receipts-2026"
   ],
   "evidence_gap_ids": [
     "gap-011",
@@ -477,6 +499,11 @@
       "stage": "Phase 57P append-only dual review, adjudication, and publication receipts",
       "current_state": "Nine audit chains, 81 audit-integrity cases, 162 publication-receipt cases, and 90 adjudication cases pass; zero actual receipts, escalations, releases, triggers, closures, or publications are recorded.",
       "boundary": "Synthetic identities, receipts, events, disagreements, and supersessions are workflow infrastructure, not evidence, reviewer assignments, eligibility, release, closure, or publication."
+    },
+    {
+      "stage": "Phase 57Q manual release, immutable bundles, and reversible publication",
+      "current_state": "Nine release checklists, nine bundle schemas, nine lifecycle machines, and 396 cases pass; zero actual actors, releases, publications, withdrawals, rollbacks, triggers, or closures are recorded.",
+      "boundary": "Synthetic actors, bundles, receipts, and transitions are workflow infrastructure, not evidence, eligibility, release, publication, closure, or operating outcomes."
     }
   ],
   "evidence_limits": [
@@ -509,7 +536,8 @@
     "Phase 57M prohibits semantic label coercion, invented or transformed values, cross-record packet assembly, fixture promotion, automatic acceptance, trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference.",
     "Phase 57N prohibits semantic label coercion, fixture promotion, invented reviewer identities or citations, automatic trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference.",
     "Phase 57O prohibits same-person evidence and publication review, missing or incompatible receipt fields, mutated signed citations or times, non-accept handoffs, automatic trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference.",
-    "Phase 57P prohibits prior-event mutation, reviewer-role collapse, decision-incompatible publication reason codes, disagreement collapse into accept, unowned escalation, automatic release, trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference."
+    "Phase 57P prohibits prior-event mutation, reviewer-role collapse, decision-incompatible publication reason codes, disagreement collapse into accept, unowned escalation, automatic release, trigger firing, closure, publication, ranking, generalized savings, and unsupported causal inference.",
+    "Phase 57Q prohibits release-role collapse, digest mutation, history erasure, automatic publication, rollback state inflation, trigger firing, closure, ranking, generalized savings, and unsupported causal inference."
   ],
   "next_records": [
     "Northern Virginia route, construction, energization, customer-service, water, emissions-compliance, reliability, and local-outcome records.",
@@ -539,6 +567,7 @@
     "One cited source-explicit candidate packet that satisfies a Phase 57M adapter and receives a bounded named human-review decision.",
     "One complete cited packet that passes deterministic validation and receives a complete named human-review receipt before separate publication review.",
     "One complete cited accept packet with an immutable signed receipt, distinct authorized evidence and publication reviewers, and a separately recorded publication decision.",
-    "One complete cited packet with separately attributable evidence and publication receipts, explicit adjudication when needed, and a later manual release authorization recorded as a new immutable event."
+    "One complete cited packet with separately attributable evidence and publication receipts, explicit adjudication when needed, and a later manual release authorization recorded as a new immutable event.",
+    "One complete cited packet with immutable evidence and publication receipts, a separately attributable human release authorization, an exact signed bundle, and a separate manual publication event."
   ]
 }

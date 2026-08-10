@@ -324,6 +324,8 @@ Phase 57O adds twenty-nine reviewer-authorization, receipt-integrity, and public
 
 Phase 57P adds twenty-nine append-only dual-review audit, publication-decision receipt, and cross-role adjudication records. Five Amtrak, five broadband, five Hanford, and five NNSA workflow controls publish; all nine Phase 57O outcome holds remain In Review and no new hold is added. Thirty-six carried Tier 1 sources support nine audit-chain schemas, eighty-one audit-integrity cases, 162 publication-receipt cases, ninety adjudication cases, Research Watch 046, one collection, one public update, and a thirty-two-file archive. The verified release contract is 2,827 pages, 715 sources, 902 signals, 696 Published, 206 In Review, 70 updates, fifty-four briefings, fifty-one collections, 1,018 research documents, 882 research export records, and 498 current Published-support sources. Nine concordant accept fixtures stop at manual release authorization, forty-five disagreement or bounded-block fixtures escalate explicitly, and nine supersessions append without mutating prior receipts. Zero actual evidence receipts, publication receipts, adjudications, escalations, manual release authorizations, triggers, closures, or publications are recorded, and the one Closed / twenty-one Partially Closed / two Open entity ledger does not change. Local content commit `936c680a1690250372ac03a47ac8dc4aacd6eea6` maps to exact private runtime commit `f3702d3d1727af02ccd0daa8d44968bfbe6b658a`, deployed successfully as owner-only Sites version 72 in `appgdep_6a79433b68248191967a5310585d5d73`.
 
+Phase 57Q expands to forty-five manual release, immutable publication-bundle, withdrawal, rollback, supersession, and zero-automation records. Four contract-specific controls publish for each of the nine reopening contracts; all nine Phase 57P outcome holds remain In Review and no new hold is added. Thirty-six carried Tier 1 sources support nine twelve-item release checklists, nine immutable bundle schemas, nine lifecycle machines, 126 release cases, 126 bundle-integrity cases, 144 lifecycle cases, Research Watch 047, one collection, one public update, and a forty-eight-file archive. The verified release contract is 2,919 pages, 715 sources, 947 signals, 732 Published, 215 In Review, 71 updates, fifty-five briefings, fifty-two collections, 1,063 research documents, 919 research export records, and 498 current Published-support sources. Nine complete release fixtures stop before a separate manual publication event, 117 release fixtures and 117 bundle fixtures reject invalid states, and ninety lifecycle attacks reject mutation, erasure, chronology, authority, target, automation, or state inflation. Zero actual release actors, authorizations, bundles, publications, withdrawals, rollbacks, supersessions, triggers, closures, or operating-outcome changes are recorded, and the one Closed / twenty-one Partially Closed / two Open entity ledger does not change. Exact-source commit and owner-only deployment remain pending; Sites version 72 continues to serve the verified Phase 57P package.
+
 Verified Phase 56W results:
 
 - 1,798 generated site pages,
@@ -560,21 +562,34 @@ Verified Phase 57P results:
 - the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
 - private-candidate validation, content references, source health, Astro diagnostics, the 2,827-page production build, Phase 57P harness and assertions, release assertions, sitemap membership, exports, private-registry exclusion, and the thirty-two-file archive pass.
 
+Verified Phase 57Q results:
+
+- thirty-six Published contract-specific release, bundle, rollback, and zero-automation controls plus nine preserved In Review holds;
+- thirty-six carried Tier 1 source profiles, nine twelve-item release checklists, nine immutable publication-bundle schemas, nine lifecycle state machines, Research Watch 047, one collection, one update, and a forty-eight-file archive;
+- all nine Phase 57P holds preserved exactly once with no new hold;
+- all 126 release-authorization cases pass, with nine bounded valid routes awaiting separate publication and 117 explicit rejections;
+- all 126 bundle-integrity cases pass, binding exact packets, both review receipts, cited-source digests, canonical artifact order, release receipts, and manifest signatures;
+- all 144 lifecycle cases pass, appending release, publication, withdrawal, rollback, and supersession while rejecting mutation, deletion, replacement, chronology regression, unauthorized actors, history erasure, unknown targets, automatic publication, and state inflation;
+- the forty-eight-file archive is 56,386 bytes with SHA-256 `E14D3E1059664CEE1F1161890E4B3A35269A9F526AF6186E0016B113C0E5100A`;
+- zero actual packets, reviewers, release actors, authorizations, bundles, publications, withdrawals, rollbacks, supersessions, exact targets, operating-outcome promotions, directive-scope changes, implementation changes, capability changes, closure changes, agency contacts, and FOIA requests;
+- the one Closed / twenty-one Partially Closed / two Open entity evidence ledger remains unchanged;
+- private-candidate validation, content references, source health, Astro diagnostics, the 2,919-page production build, Phase 57Q harness and assertions, Phase 57P regression, release assertions, sitemap membership, exports, private-registry exclusion, and the forty-eight-file archive pass.
+
 The completed expansion program is defined in `docs/work-packages/phase-55s-55w-aggressive-content-expansion.md`; later phases retain individual work packages through `docs/work-packages/phase-56w-named-record-retrieval-cross-lane-expansion.md`. The expansion does not change the package version, public GitHub state, or pending `ftfn.io` and `www.ftfn.io` DNS boundary.
 
 ## Repository And Deployment State
 
-The local release work is preserved on `codex/phase51-content`. Phase 57P is complete, production-rendered, release-validated, and owner-only deployed as Sites version 72. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
+The local release work is preserved on `codex/phase51-content`. Phase 57Q is complete, production-rendered, and release-validated locally; exact-source commit and owner-only deployment are pending. The branch remains ahead of `origin/main`; verify the exact HEAD and ahead count before any external action.
 
-The current hosting checkpoint is owner-only Sites version 72, serving the verified Phase 57P package from exact private runtime commit `f3702d3d1727af02ccd0daa8d44968bfbe6b658a` in deployment `appgdep_6a79433b68248191967a5310585d5d73`. Its 4,060-file runtime has the Phase 57O runtime as its direct parent. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
+The current hosting checkpoint is owner-only Sites version 72, serving the verified Phase 57P package from exact private runtime commit `f3702d3d1727af02ccd0daa8d44968bfbe6b658a` in deployment `appgdep_6a79433b68248191967a5310585d5d73`. Its 4,060-file runtime has the Phase 57O runtime as its direct parent. Phase 57Q remains local until the validated package is committed and deployed. The custom policy allows only the owner, no groups, no editors, and zero external visitors. The public GitHub branch remains unsynchronized. GitHub push, pull-request review, merge, public access, and custom-domain attachment remain separate decisions. Do not deploy an older `origin/main` checkout: it stops at the Phase 50B baseline.
 
 The domain `ftfn.io` is available for the project. DNS was observed on 2026-07-22 to remain outside Cloudflare, with Google Workspace mail records active. Before any nameserver or DNS change, inventory and preserve every mail and verification record. Hosting-provider selection remains an explicit Phase 55 decision: Cloudflare Pages is the documented default, but another static host may be chosen if avoiding a nameserver migration is more important.
 
 ## Known Limitations
 
-- One hundred and ninety-seven signals remain `In Review`; the nine preserved Phase 57O holds keep unaccepted Amtrak closeout and named-asset reliability, undisclosed Louisiana and Montana adoption results, the complete Hanford material balance, recurring qualified NNSA output, final accepted capacity, and the exact GAO-23-104661 enterprise baseline outside the Published layer. Six hundred and seventy-six bounded signals are Published.
-- Phase 57O authorization matrices, receipt-integrity cases, and handoff state machines are workflow controls, not source evidence, operating outcomes, reviewer assignments, signed receipts, decisions, or readiness scores. Passing tests do not establish packet existence or eligibility, synthetic identities and receipts create no actual reviewer or citation, queue entry is not publication, and no reopening contract has fired.
-- Seven briefings and all five local-system profiles remain prelaunch or research material. The forty-five Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
+- Two hundred and fifteen signals remain `In Review`; the nine preserved Phase 57Q holds keep unaccepted Amtrak closeout and named-asset reliability, undisclosed Louisiana and Montana adoption results, the complete Hanford material balance, recurring qualified NNSA output, final accepted capacity, and the exact GAO-23-104661 enterprise baseline outside the Published layer. Seven hundred and thirty-two bounded signals are Published.
+- Phase 57Q release checklists, immutable bundle manifests, and withdrawal and rollback lifecycle machines are workflow controls, not source evidence, operating outcomes, reviewer assignments, signed receipts, actual releases, publications, withdrawals, or readiness scores. Passing tests do not establish packet existence or eligibility, synthetic actors and artifacts create no actual editorial event, release remains distinct from publication, and no reopening contract has fired.
+- Seven briefings and all five local-system profiles remain prelaunch or research material. The forty-eight Published briefings and six Published dependency maps are bounded synthesis products, not readiness assessments.
 - The 2026 National Defense Strategy has an official-link file rather than a captured PDF because the official host allowed review but suppressed automated export.
 - Three Phase 55L sources have official-link records rather than local page captures because the Department of War and INL hosts allowed review but blocked automated export.
 - Six Phase 55N sources have official-link records because their official hosts blocked or complicated automated export; the collection preserves direct official URLs rather than third-party substitutes.
@@ -688,7 +703,13 @@ npm.cmd run verify:phase57l
 npm.cmd run verify:phase57m
 npm.cmd run test:phase57n
 npm.cmd run verify:phase57n
+npm.cmd run test:phase57o
+npm.cmd run verify:phase57o
+npm.cmd run test:phase57p
+npm.cmd run verify:phase57p
+npm.cmd run test:phase57q
+npm.cmd run verify:phase57q
 npm.cmd run verify:release
 ```
 
-Expected output: 2,767 generated site pages, the prior verified research archives plus the Phase 57O thirty-two-file archive, twenty Published Phase 57O records and nine In Review holds, nine role matrices, 270 receipt-integrity cases, sixty-three role-authorization cases, ninety publication-handoff cases, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57O and v0.2 release assertions.
+Expected output: 2,919 generated site pages, the prior verified research archives plus the Phase 57Q forty-eight-file archive, thirty-six Published Phase 57Q controls and nine In Review holds, twenty-seven contract-specific schemas, 396 release, bundle, and lifecycle cases, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57Q, Phase 57P regression, and v0.2 release assertions.
