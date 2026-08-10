@@ -1,6 +1,6 @@
 # Phase 57S Work Package: Reader Verification, Freshness, Provenance Exports, and Digest Reconciliation
 
-Status: complete locally; owner-only deployment pending
+Status: complete, release-validated, and owner-only deployed
 
 Captured: 2026-08-09
 
@@ -85,6 +85,10 @@ Build canonical reader-verification endpoints, signed release indexes, cache-coh
 
 ## Validation checkpoint
 
-Private-candidate validation, content references, source health, the Phase 57R regression, the Phase 57S harness and assertions, Astro diagnostics, the expected 3,103-page production build, release assertions, sitemap membership, exports, private-registry exclusion, and the 48-file archive must pass at the counts above.
+Private-candidate validation, content references, source health, the Phase 57R regression, the Phase 57S harness and assertions, Astro diagnostics, the 3,103-page production build, release assertions, sitemap membership, exports, private-registry exclusion, and the 48-file archive pass at the counts above.
+
+## Deployment receipt
+
+Local content commit `ce3229bc387c8f0eb703d5484c926e80e9ba5c9e` maps to exact private runtime commit `f5aeb8660169e6e2403a024cc394b2c74fcebae7`, whose parent is the verified Phase 57R runtime `1dc8df329c59f0e8d85a6f48da800d44463578cc`. The 4,483-file runtime is saved as Sites version 75 and deployed successfully in `appgdep_6a795722242c8191bee9cb8d2e175081` at `https://ftfn-analytics.jbumstead.chatgpt.site`. Access remains custom owner-only with one owner, no groups, no editors, and zero external visitors. Visual route QA was not requested because Phase 57S uses existing content templates and route families.
 
 Public access, Hostinger DNS, custom-domain attachment, package freeze, public GitHub synchronization, and Supabase activation remain separate explicit decisions.
