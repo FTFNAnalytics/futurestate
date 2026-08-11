@@ -1,6 +1,6 @@
 # FTFN v0.2 Build Summary
 
-Date: 2026-08-10
+Date: 2026-08-11
 
 ## Executive State
 
@@ -343,6 +343,8 @@ Phase 57X expands to sixty-three federation-health, witness-diversity, fork-adju
 Phase 57Y closes the synthetic federation-control arc with sixty-three remediation, rotation, recusal, holdover, coordinated-rollout, long-term-recovery, and zero-state-inflation records. Fifty-four controls publish, all nine Phase 57X outcome holds remain In Review, and no new hold is added. Thirty-six carried Tier 1 sources support fifty-four schemas and 1,629 passing cases: 270 remediation, 270 rotation, 270 recusal, 243 holdover, 288 rollout, and 288 recovery. Research Watch 055, one collection, one update, and a verified sixty-six-file archive are added. The Phase 57Y checkpoint reaches 3,853 pages, 1,119 Published signals, 287 In Review signals, sixty collections, 1,522 research documents, sixty-three briefings, 79 updates, and 1,314 research export records without creating a production event, evidence record, state change, trigger, publication, closure, blame assignment, or operating outcome.
 
 Phase 57Z returns the roadmap to dated primary-source evidence. Eleven bounded research decisions publish; the existing Toronto application signal advances to City Council adoption, the DARPA Lift Challenge signal remains held for an official measured-results artifact, and all nine inherited Amtrak, broadband, Hanford, and NNSA outcome holds remain unresolved after exact-source rechecks. No new source profile or duplicate hold signal is created. Research Watch 056, one collection, one update, and a fourteen-file archive raise the combined candidate to 3,866 pages, 715 sources, 1,406 signals, 1,120 Published, 286 In Review, sixty-one collections, 1,533 research documents, sixty-four briefings, 80 updates, 1,326 research export records, and 501 current Published-support sources.
+
+Phase 58 turns the ten held result and outcome signals into a dated operating queue with exact artifacts, stop rules, cadences, and next check dates. Change Note, Watch Note, Correction, and No Material Change receipts extend the existing Updates route. The first August 11 DARPA check publishes a bounded No Material Change receipt and retains the signal In Review. Research Watch 057 and a ten-record evidence-queue export raise the candidate to 3,867 pages, sixty-five briefings, 81 updates, and six public JSON contracts without changing source, signal, research, pathway, gap, map, or outcome counts. A local five-table forced-RLS authority schema and deterministic workflow harness pass; no Supabase project or runtime activation is claimed.
 
 Verified Phase 56W results:
 
@@ -854,7 +856,34 @@ npm.cmd run verify:phase57x
 npm.cmd run test:phase57y
 npm.cmd run verify:phase57y
 npm.cmd run verify:phase57z
+npm.cmd run test:phase58
+npm.cmd run verify:phase58
 npm.cmd run verify:release
 ```
 
-Expected output: 3,866 generated site pages, the prior verified research archives plus the Phase 57Y sixty-six-file and Phase 57Z fourteen-file archives, fifty-four Published Phase 57Y controls and nine preserved holds, fifty-four contract-specific schemas, 1,629 remediation, rotation, recusal, holdover, rollout, and recovery cases, eleven Published Phase 57Z evidence decisions, one bounded signal promotion, zero of nine inherited holds resolved, fifteen reader pathways across 19 Atlas surfaces, five local systems, five public-data exports, and passing Phase 57Y, Phase 57Z, inherited regressions, and v0.2 release assertions.
+Expected output: 3,867 generated site pages, the prior verified research archives plus the Phase 57Y sixty-six-file and Phase 57Z fourteen-file archives, ten Phase 58 held-gate queue records, four receipt types, one bounded DARPA No Material Change receipt, zero stale queue items, five forced-RLS authority tables, fifteen reader pathways across 19 Atlas surfaces, five local systems, six public-data exports, and passing Phase 57Y, Phase 57Z, Phase 58, inherited regressions, and v0.2 release assertions.
+
+## Phase 58 Dated Evidence Operations And Reader Change Products
+
+Phase 58 turns the ten result and outcome signals held by Phase 57Z into a bounded operating queue. Every item now identifies the controlling source, exact next artifact, stop rule, last check date, cadence, and next check date. The queue is published as a sixth static JSON contract without exposing private candidate notes or review state.
+
+The first operating cycle checks the canonical DARPA Lift Challenge page on August 11. The reviewed page links an event guide and scoreboard surface but does not publish the final results table, measured scores, winner, or prize decisions required for promotion. A No Material Change receipt advances source freshness and sets an August 14 recheck while the signal remains In Review. The receipt is explicitly bounded and does not claim that results do not exist.
+
+The Updates schema and route now support Change Note, Watch Note, Correction, and No Material Change receipts with prior state, current state, source-check date, decision date, publication effect, and next check date. Research Watch 057 explains the operating product. Phase 58 adds one Published briefing, one public update, one JSON export, and one generated HTML page; signal, source, research collection, research document, pathway, gap, and dependency-map counts remain unchanged.
+
+The local private-authority foundation defines five tables in a custom `authority` schema: source candidates, review queue, update candidates, append-only review receipts, and dual-control export batches. All five force RLS; grants are explicit; authenticated policies use `app_metadata.ftfn_role`, ownership, and assigned-review conditions; and the public projection is a security-invoker view that omits private notes. No database function, trigger, webhook, service-role browser client, or direct-publication path exists.
+
+The Supabase design is not activated. No project, login, link, key, Auth user, migration application, local Docker stack, runtime RLS test, Studio connection, or remote deployment is claimed. The environment lacked the CLI and Docker, and a project-local CLI install did not complete, so the repository truthfully records a declarative design and deterministic harness rather than a fabricated migration result.
+
+Verified Phase 58 result:
+
+- 3,867 generated HTML pages;
+- 715 sources and 1,406 signals, including 1,120 Published and 286 In Review;
+- sixty-five briefings: fifty-eight Published and seven In Review;
+- 81 public updates and six versioned JSON exports;
+- ten evidence-queue records, four receipt types, one No Material Change receipt, and zero stale queue items at capture;
+- five forced-RLS authority tables and a passing assigned-review/dual-control workflow harness;
+- sixty-one research collections, 1,533 research documents, 1,326 research export records, fifteen reader pathways, and 501 Published-support sources unchanged;
+- Phase 57Y, Phase 57Z, Phase 58, Astro, content, source-health, export, sitemap, canonical, robots, private-registry, and release gates pass.
+
+Phase 58 content commit `26da2fbfeb6c7da5a6c75338ea907663c0fe1301` preserves the operating slice. No private-runtime mapping or deployment receipt exists for Phase 58. Phase 57W Sites version 79 remains live with owner-only access; public access, v0.2 freeze, public GitHub, Supabase activation, DNS, and launch remain unchanged.

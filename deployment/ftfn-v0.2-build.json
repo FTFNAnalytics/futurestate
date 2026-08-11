@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "build_id": "ftfn-v0.2",
-  "generated_date": "2026-08-10",
+  "generated_date": "2026-08-11",
   "project": "FTFN",
   "package_name": "ftfn-app",
   "package_version": "0.2.0-dev",
@@ -145,12 +145,14 @@
     "npm run test:phase57y",
     "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/build-research-archive.ps1 -CollectionSlug dated-evidence-return-council-adoption-results-gates-hold-resolution-decisions-2026",
     "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/build-research-archive.ps1 -CollectionSlug federation-remediation-witness-rotation-recusal-time-holdover-coordinated-rollout-legacy-recovery-2026",
+    "npm run test:phase58",
+    "npm run verify:phase58",
     "npm run verify:release"
   ],
   "build_command": "npm run build",
   "output_directory": "dist",
   "expected_build": {
-    "static_pages": 3866,
+    "static_pages": 3867,
     "signals": 1406,
     "published_signals": 1120,
     "in_review_signals": 286,
@@ -161,8 +163,8 @@
     "organizations": 19,
     "technologies": 5,
     "local_systems": 5,
-    "briefings": 64,
-    "published_briefings": 57,
+    "briefings": 65,
+    "published_briefings": 58,
     "in_review_briefings": 7,
     "evidence_gaps": 16,
     "dependency_maps": 7,
@@ -174,10 +176,11 @@
     "published_reader_pathways": 11,
     "reader_pathway_surfaces": 19,
     "phase_55q_gap_decisions": 4,
-    "updates": 80,
-    "public_json_exports": 5,
+    "updates": 81,
+    "public_json_exports": 6,
     "research_export_records": 1326,
-    "pathway_export_records": 11
+    "pathway_export_records": 11,
+    "evidence_queue_records": 10
   },
   "private_authority_layer": {
     "registry_visibility": "local-only-git-ignored",
@@ -198,13 +201,13 @@
     "public_output_policy": "Candidate records, IDs, private notes, and registry paths must not appear in static output or public exports."
   },
   "release_delta_from_v0_1_1": {
-    "static_pages_added": 3684,
+    "static_pages_added": 3685,
     "signals_added": 1388,
     "published_signals_added": 1117,
     "sources_added": 613,
-    "public_json_exports_added": 5,
+    "public_json_exports_added": 6,
     "public_update_log_added": true,
-    "summary": "Extends the Phase 55K through Phase 57X evidence baseline with Phase 57Y long-horizon federation remediation and Phase 57Z dated-evidence return: 715 public sources, 1,406 signals, 1,120 Published signals, five local systems, fifty-seven Published and seven In Review briefings, six Published and one In Review dependency maps, fifteen reader pathways, sixteen evidence gaps, 80 public updates, sixty-one research collections, 1,533 summarized research documents, 1,326 research export records, and five versioned public-data exports."
+    "summary": "Extends the Phase 55K through Phase 57Z evidence baseline with Phase 58 dated evidence operations and reader change receipts: 715 public sources, 1,406 signals, 1,120 Published signals, five local systems, fifty-eight Published and seven In Review briefings, six Published and one In Review dependency maps, fifteen reader pathways, sixteen evidence gaps, 81 public updates, sixty-one research collections, 1,533 summarized research documents, 1,326 research export records, a ten-item evidence queue, and six versioned public-data exports."
   },
   "phase_55k_delta": {
     "static_pages_added": 60,
@@ -401,7 +404,7 @@
     "generated_pages_added": 47
   },
   "last_verified": {
-    "date": "2026-08-10",
+    "date": "2026-08-11",
     "published_support_minimum_date": "2026-07-22",
     "candidate_validation": "passed-150-local-only-records",
     "validate_content": "passed-715-sources-1406-signals-1533-research-documents",
@@ -416,16 +419,16 @@
     "source_coverage_weak_lanes": 0,
     "astro_check": "passed",
     "build": "passed",
-    "static_pages_built": 3866,
-    "release_assertions": "passed-phase-57y-and-phase-57z",
-    "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-57z-visual-qa-not-requested",
+    "static_pages_built": 3867,
+    "release_assertions": "passed-phase-57y-phase-57z-and-phase-58-operating-slice",
+    "browser_qa": "passed-local-phase-55k; phase-55l-through-phase-58-visual-qa-not-requested",
     "browser_viewports": [
       "1440x900",
       "390x844"
     ],
     "browser_routes_checked": 10,
     "hosted_routes_checked": 0,
-    "preview_qa": "phase-57y-and-phase-57z-local-content-commit-dad34e4463a34dd0d121d5521755f8f6ead62ccf-owner-only-deployment-pending; phase-57w-owner-only-sites-version-79-remains-live-and-verified"
+    "preview_qa": "phase-58-local-content-commit-26da2fbfeb6c7da5a6c75338ea907663c0fe1301-owner-only-deployment-pending; phase-57w-owner-only-sites-version-79-remains-live-and-verified"
   },
   "required_output_files": [
     "dist/index.html",
@@ -1520,7 +1523,9 @@
     "dist/signals/57y-amtrak-pids-health-breach-remediation-capacity-planning/index.html",
     "dist/signals/toronto-24-254930-scarborough-community-council-recommendation/index.html",
     "dist/downloads/federation-remediation-witness-rotation-recusal-time-holdover-coordinated-rollout-legacy-recovery-2026.zip",
-    "dist/downloads/dated-evidence-return-council-adoption-results-gates-hold-resolution-decisions-2026.zip"
+    "dist/downloads/dated-evidence-return-council-adoption-results-gates-hold-resolution-decisions-2026.zip",
+    "dist/briefings/research-watch-057-dated-evidence-operations-and-change-receipts/index.html",
+    "dist/data/evidence-queue.json"
   ],
   "published_signal_routes": [
     "/signals/56a-air-travel-consumer/",
@@ -3739,6 +3744,7 @@
     "/briefings/research-watch-054-federation-health-and-reversible-decommissioning/",
     "/briefings/research-watch-055-federation-remediation-and-long-term-recovery/",
     "/briefings/research-watch-056-dated-evidence-return-and-hold-resolution/",
+    "/briefings/research-watch-057-dated-evidence-operations-and-change-receipts/",
     "/briefings/stack-watch-003-research-to-implementation/",
     "/briefings/stack-watch-004-implementation-outcomes/"
   ],
@@ -6884,5 +6890,37 @@
     "research_export_records_added": 12,
     "local_content_commit": "dad34e4463a34dd0d121d5521755f8f6ead62ccf",
     "deployment_status": "local_content_commit_recorded_owner_only_deployment_pending_phase-57w-version-79-remains-live"
+  },
+  "phase_58_delta": {
+    "operating_slice": "dated-evidence-queue-reader-change-receipts-local-authority-foundation",
+    "held_signal_queue_records": 10,
+    "exact_next_artifacts": 10,
+    "review_cadences": 10,
+    "receipt_types_defined": 4,
+    "dated_source_checks_completed": 1,
+    "no_material_change_receipts_published": 1,
+    "material_record_changes": 0,
+    "underlying_signal_state_changes": 0,
+    "duplicate_hold_signals_created": 0,
+    "stale_queue_items_at_checkpoint": 0,
+    "composite_scores_created": 0,
+    "public_evidence_queue_records": 10,
+    "public_json_exports_added": 1,
+    "public_update_entries_added": 1,
+    "briefings_added_published": 1,
+    "generated_pages_added": 1,
+    "supabase_declarative_schemas": 1,
+    "private_authority_tables": 5,
+    "forced_rls_tables": 5,
+    "anon_authority_grants": 0,
+    "direct_publication_functions_triggers_or_webhooks": 0,
+    "deterministic_private_workflow_harness": "passed",
+    "external_supabase_project_created": false,
+    "supabase_project_linked": false,
+    "migration_applied": false,
+    "runtime_rls_tested": false,
+    "private_studio_connected": false,
+    "local_content_commit": "26da2fbfeb6c7da5a6c75338ea907663c0fe1301",
+    "deployment_status": "local_operating_slice_release_validated_owner_only_deployment_pending_phase-57w-version-79-remains-live"
   }
 }

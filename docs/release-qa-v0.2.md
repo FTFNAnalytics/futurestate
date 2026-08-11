@@ -1,17 +1,17 @@
 # FTFN v0.2 Release QA
 
-Date: 2026-08-10
+Date: 2026-08-11
 
-Status: Phase 57Y and Phase 57Z local release gates pass; Phase 57W remains live as owner-only Sites version 79 and the combined Phase 57Y/57Z deployment is pending.
+Status: Phase 58 operating-slice release gates pass locally; Phase 57W remains live as owner-only Sites version 79 and the Phase 58 deployment is pending.
 
 ## Artifact Under Review
 
 - Build manifest: `deployment/ftfn-v0.2-build.json`
 - App package: `0.2.0-dev`
 - Static output: `app/dist/`
-- Expected build: 3,866 generated pages
-- Content baseline: 715 sources, 1,406 signals, 17 topics, 80 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 local systems, 64 briefings, 7 dependency maps, 61 research collections, 1,533 research documents
-- Publication baseline: 1,120 Published signals, 286 In Review signals, 57 Published briefings, 7 In Review briefings, 6 Published dependency maps, 1 In Review dependency map
+- Expected build: 3,867 generated pages
+- Content baseline: 715 sources, 1,406 signals, 17 topics, 81 update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 5 local systems, 65 briefings, 7 dependency maps, 61 research collections, 1,533 research documents
+- Publication baseline: 1,120 Published signals, 286 In Review signals, 58 Published briefings, 7 In Review briefings, 6 Published dependency maps, 1 In Review dependency map
 
 The package remains `0.2.0-dev`. The owner-only deployment is a private checkpoint and does not authorize public access, a custom domain, or release freeze.
 
@@ -24,6 +24,8 @@ npm run validate:content
 npm run source:health
 npm run check
 npm run build
+npm run test:phase58
+npm run verify:phase58
 npm run verify:release
 ```
 
@@ -32,11 +34,12 @@ Result:
 | Check | Result |
 | --- | --- |
 | Private candidates | Passed: 150 records; 72 Candidate, 71 Active Source Record, 4 Watchlist Only, 2 Blocked, 1 Rejected, 0 Needs Triage |
-| Content references | Passed: 715 sources, 1,406 signals, 17 topics, 19 organizations, 5 technologies, 5 local systems, 64 briefings, 16 evidence gaps, 7 dependency maps, 61 research collections, 1,533 research documents, 15 reader pathways, 80 updates |
+| Content references | Passed: 715 sources, 1,406 signals, 17 topics, 19 organizations, 5 technologies, 5 local systems, 65 briefings, 16 evidence gaps, 7 dependency maps, 61 research collections, 1,533 research documents, 15 reader pathways, 81 updates |
 | Source endpoint metadata | Passed: 494 Manual Review, 221 Probe Ready |
 | Astro diagnostics | Passed: 0 errors, 0 warnings, 1 inherited non-blocking hint |
-| Static build | Passed: 3,866 generated pages |
-| Release assertions | Passed: required outputs, all inherited phase gates, 54 Phase 57Y schemas, 1,629 Phase 57Y cases, 11 Phase 57Z evidence decisions, 5 local systems, 4 current Phase 55Q gap decisions, 15 pathways across 19 Atlas surfaces, 61 research collections / 1,533 documents, update log, five exports, Published-source dates, robots, sitemap, canonical, indexing, archives, and private-registry boundaries |
+| Static build | Passed: 3,867 generated pages |
+| Phase 58 authority loop | Passed: 5 forced-RLS tables, private roles, ownership, assigned review, dual-control export, private-field exclusion, and zero direct publication |
+| Release assertions | Passed: required outputs, all inherited phase gates, 10 evidence-queue records, 4 receipt types, 1 bounded DARPA receipt, 0 stale queue items, 5 local systems, 15 pathways across 19 Atlas surfaces, 61 research collections / 1,533 documents, update log, six exports, Published-source dates, robots, sitemap, canonical, indexing, archives, and private-registry boundaries |
 
 The release assertion is preserved as `npm run verify:release`. It reads the v0.2 manifest and fails if the checked build no longer matches the release contract.
 
@@ -608,3 +611,27 @@ The combined 3,866-page artifact passes:
 - canonicals, robots, sitemap, required outputs, private-registry exclusion, and public/private export boundaries.
 
 A repeat visual/browser pass was not requested because Phases 57Y and 57Z use existing content templates and route families. The Phase 57Y harness, Phase 57Y and Phase 57Z structural assertions, Astro diagnostics, full static build, archive validation, candidate validation, content-reference validation, source-health checks, and release-contract checks pass. Combined content commit `dad34e4463a34dd0d121d5521755f8f6ead62ccf` preserves the package; no private-runtime mapping or deployment receipt exists. Phase 57W remains live as owner-only Sites version 79 with unchanged access. Public access, the package version, public GitHub, Hostinger DNS, Supabase activation, and the custom-domain state remain unchanged.
+
+## Phase 58 Dated Evidence Operations, Change Receipts, And Private Authority Foundation QA Scope
+
+Phase 58 adds one Published briefing route, one public update entry, one static evidence-queue JSON route, optional receipt fields on the existing Updates route, a ten-record operating queue, a four-type receipt contract, one bounded DARPA No Material Change receipt, one declarative private-authority schema, and one deterministic workflow harness. It changes no signal state and creates no source, signal, research collection, research document, pathway, gap, or dependency-map record.
+
+The 3,867-page artifact passes:
+
+- private-candidate validation for 150 local-only records and duplicate checks against 715 public sources;
+- content-reference validation across 715 sources, 1,406 signals, 17 topics, five local systems, sixty-five briefings, sixteen evidence gaps, seven dependency maps, sixty-one research collections, 1,533 research documents, fifteen reader pathways, and 81 updates;
+- source endpoint metadata review for 494 Manual Review and 221 Probe Ready sources;
+- exactly ten queue records matching the ten Phase 57Z held signal IDs;
+- ten exact next artifacts, ten stop rules, ten positive cadences, and ten next dates with zero stale items on August 11;
+- exactly four receipt types and one August 11 DARPA No Material Change receipt;
+- the DARPA source freshness update and August 14 next check while the underlying signal remains In Review;
+- six schema-version-1.0 public JSON contracts, including ten bounded evidence-queue records;
+- five authority tables with forced RLS, explicit authenticated grants, app-metadata roles, update `USING` and `WITH CHECK` predicates, append-only receipts, dual-control export, and a security-invoker projection;
+- deterministic rejection of unauthorized creation, non-owner submission, editor self-review, unassigned review, single-reviewer export, private-field export, and direct publication;
+- zero database functions, triggers, webhooks, direct-publication paths, anon authority grants, destructive delete grants, or composite scores;
+- all 1,120 Published signal routes in the sitemap and all 286 In Review routes outside it;
+- all fifty-eight Published briefing routes in the sitemap and all seven In Review routes outside it;
+- exactly 501 Published-support sources, 1,326 research export records, and eleven pathway export records;
+- canonicals, robots, sitemap, required outputs, private-registry exclusion, and public/private export boundaries.
+
+Astro diagnostics, the full production build, the Phase 57Y and Phase 57Z regressions, the Phase 58 authority harness, Phase 58 structural assertions, candidate validation, content-reference validation, source health, and release verification pass. A repeat visual/browser pass was not requested. Content commit `26da2fbfeb6c7da5a6c75338ea907663c0fe1301` preserves the Phase 58 operating slice. No Supabase project, migration application, Auth runtime, RLS runtime result, Studio connection, private-runtime mapping, deployment receipt, or access change exists. Phase 57W remains live as owner-only Sites version 79.

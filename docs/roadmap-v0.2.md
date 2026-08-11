@@ -1,6 +1,6 @@
 # FTFN v0.2 Roadmap
 
-Date: 2026-08-09
+Date: 2026-08-11
 
 v0.2 is the first authority-loop build: a release that proves FTFN can maintain a current, source-led analytical resource through repeatable human review.
 
@@ -425,9 +425,9 @@ Recommended active schedule:
 | Completed locally; deployment pending | Phase 57Z | eleven Published dated-evidence decisions, one bounded Toronto signal promotion, one DARPA results gate retained, nine inherited holds rechecked with zero resolved, Research Watch 056, and a fourteen-file archive |
 | Conditional | Phase 56 | freeze `0.2.0`, preserve email DNS, attach `ftfn.io`, and complete production verification |
 | Ongoing | Phase 57 | establish the source-review and public-update operating rhythm |
-| Next operating gate | Phase 58 | run dated evidence operations, add reader-facing change products, and pilot the private Supabase authority loop without changing the Git and human publication gate |
+| Operating slice complete locally; private backend activation pending | Phase 58 | ten held gates on dated rails, four reader-facing receipt types, one bounded DARPA no-change receipt, one sixth public export, and a five-table forced-RLS authority-loop foundation with no direct publication path |
 
-The planned v0.2 build remains owner-only and now contains the complete, locally release-validated Phase 57Y control capstone and Phase 57Z dated-evidence return. Phase 57Y publishes fifty-four long-horizon remediation, rotation, recusal, holdover, rollout, and recovery controls across nine contracts and passes 1,629 synthetic cases while preserving all nine Phase 57X holds. Phase 57Z then rechecks eleven primary-evidence decisions, promotes the existing Toronto signal only to the completed Council-adoption gate, retains DARPA for an official measured-results artifact, and reviews all nine inherited outcome holds with zero unsupported resolutions and zero duplicate hold signals. The verified combined contract is 3,866 pages, 715 sources, 1,406 signals, 1,120 Published, 286 In Review, sixty-one collections, 1,533 research documents, sixty-four briefings, 80 updates, 1,326 research export records, and 501 Published-support sources. Combined content commit `dad34e4463a34dd0d121d5521755f8f6ead62ccf` preserves the package; no private-runtime mapping or deployment receipt exists. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Phase 58 should operate the evidence system rather than extend the synthetic control sequence. Public GitHub synchronization, release freeze, public access, owner-only redeployment, Supabase activation, and production-domain launch remain separately approved external gates.
+The planned v0.2 build remains owner-only and now contains the locally release-validated Phase 58 operating slice. The ten result and outcome signals held by Phase 57Z each have an exact next artifact, stop rule, cadence, and next check date. Four receipt types make evidence decisions legible without conflating research activity with a record change. The August 11 DARPA canonical-page check publishes a bounded No Material Change receipt, advances source freshness, and retains the signal In Review. The verified contract is 3,867 pages, 715 sources, 1,406 signals, 1,120 Published, 286 In Review, sixty-one collections, 1,533 research documents, sixty-five briefings, 81 updates, six public JSON exports, ten evidence-queue records, 1,326 research export records, and 501 Published-support sources. A local five-table authority schema and deterministic harness establish explicit grants, forced RLS, assigned review, dual-control export, private-field exclusion, and zero direct publication. No Supabase project, migration application, runtime RLS result, private Studio connection, deployment, or public access change is claimed. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Public GitHub synchronization, release freeze, owner-only redeployment, Supabase activation, DNS, and production launch remain separately approved external gates.
 
 ## Post-Phase 54 Release Roadmap
 
@@ -2369,7 +2369,7 @@ Exit criteria:
 - no automated process publishes claims,
 - the next content batch is tied to reader value and evidence gaps.
 
-### Phase 58: Dated Evidence Operations, Reader Change Products, And Private Authority Loop - Next Operating Gate
+### Phase 58: Dated Evidence Operations, Reader Change Products, And Private Authority Loop - Operating Slice Complete Locally; Private Supabase Activation Pending
 
 Goal: operate the evidence system as a repeatable editorial product: prioritize dated exact-artifact checks, make material changes legible to readers, and reduce private workflow friction while keeping Git and human review as the public publication gate.
 
@@ -2393,6 +2393,16 @@ Exit criteria:
 - public output still passes the existing static serializers and release checks,
 - no database function, trigger, webhook, or AI workflow can publish directly,
 - the backend has demonstrated several reviewed changes before any broader migration is considered.
+
+Operating-slice result on August 11, 2026:
+
+- the ten held result and outcome signals are covered exactly once by a public dated queue;
+- all ten records expose an exact artifact, stop rule, last check, cadence, and next check;
+- Change Note, Watch Note, Correction, and No Material Change receipts are part of the existing update schema and route;
+- the first DARPA check publishes a bounded No Material Change receipt while the underlying signal remains In Review;
+- source-check latency is one day, decision latency is same-day, and stale exposure is zero of ten without a composite score;
+- the static build exposes six public JSON contracts and passes at 3,867 HTML pages;
+- the local Supabase foundation defines five forced-RLS tables and a deterministic review/export harness, but external project creation, migration application, Auth users, runtime RLS testing, and Studio connection remain unperformed pending separate approval.
 
 ### v0.3 Decision Gate
 
@@ -2443,10 +2453,10 @@ Phase 56F through Phase 56O then built the exact continuation system: 24 stable 
 
 ## Immediate Next Step
 
-Choose the Phase 58 operating slice: start with the ten-item dated evidence queue and reader-visible change receipts, or separately authorize the private Supabase authority-loop pilot. Keep the owner-only deployment, v0.2 freeze, public GitHub synchronization, domain attachment, and public launch as distinct approvals.
+Operate the Phase 58 queue beginning with the August 14 DARPA recheck, then follow the exact dates for Louisiana Starlink, Amtrak, Louisiana Nextlink, Montana, Hanford, and NNSA. Separately authorize a private Supabase development pilot only if runtime Auth, RLS, backup, and export testing is now desired. Keep owner-only deployment, v0.2 freeze, public GitHub synchronization, domain attachment, and public launch as distinct approvals.
 
 Run Phase 55H on August 1, Phase 55R on August 10, the Space Coast license check on August 15, the Arizona wastewater check on September 22, the Loudoun standards check on October 1, and the Nevada delivery check on January 15 through their scheduled project tasks. Each dated result is a bounded insert, not a reason to pause the active content queue.
 
 Keep the Project Baccara executed-MCP, condition-compliance, service, military, construction, testing, occupancy, and operation layers as dated monitors. Aggressive expansion does not authorize automatic publication or stage inflation.
 
-Phases 57Y and 57Z are complete, production-rendered, and release-validated locally at 3,866 pages, with 715 sources, 1,406 signals, 1,120 Published signals, 286 In Review signals, sixty-one collections, 1,533 research documents, sixty-four briefings, 80 updates, 1,326 research export records, and 501 Published-support sources. All 1,629 Phase 57Y remediation, rotation, recusal, holdover, rollout, and recovery cases pass. Phase 57Z publishes eleven bounded evidence decisions, promotes the Toronto Council signal, retains DARPA and all nine inherited outcome signals In Review, and creates no duplicate hold. Combined content commit `dad34e4463a34dd0d121d5521755f8f6ead62ccf` preserves the package. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, public GitHub synchronization, Supabase activation, deployment, and public launch remain separate explicit decisions.
+Phase 58's operating slice is production-rendered and release-validated locally at 3,867 pages, with 715 sources, 1,406 signals, 1,120 Published signals, 286 In Review signals, sixty-one collections, 1,533 research documents, sixty-five briefings, 81 updates, six JSON exports, ten evidence-queue records, 1,326 research export records, and 501 Published-support sources. The queue covers exactly the ten result and outcome signals held by Phase 57Z. One August 11 DARPA No Material Change receipt publishes without changing the signal state. The local authority schema and deterministic harness pass, but no Supabase project or runtime has been activated. Phase 57W remains live as owner-only Sites version 79 with one owner, no groups, no editors, and zero external visitors. Public access, package freeze, Hostinger DNS, custom-domain attachment, public GitHub synchronization, Supabase activation, deployment, and public launch remain separate explicit decisions.
