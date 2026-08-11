@@ -49,6 +49,7 @@ const sources = await readJson(join(distRoot, "data", "sources.json"));
 const topics = await readJson(join(distRoot, "data", "topics.json"));
 const researchExport = await readJson(join(distRoot, "data", "research.json"));
 const pathwaysExport = await readJson(join(distRoot, "data", "pathways.json"));
+const evidenceQueueExport = await readJson(join(distRoot, "data", "evidence-queue.json"));
 const sitemap = await readText(join(distRoot, "sitemap.xml"));
 const robots = await readText(join(distRoot, "robots.txt"));
 const updatesHtml = await readText(join(distRoot, "updates", "index.html"));
@@ -195,10 +196,18 @@ check(
   `Expected ${manifest.expected_build.dependency_maps} dependency maps, found ${dependencyMapFiles.length}.`,
 );
 check(
-  [signals, sources, topics, researchExport, pathwaysExport].every((dataset) => dataset.schema_version === "1.0"),
+  [signals, sources, topics, researchExport, pathwaysExport, evidenceQueueExport].every((dataset) => dataset.schema_version === "1.0"),
   "All public exports must use schema version 1.0.",
 );
-check(manifest.expected_build.public_json_exports === 5, "Manifest must record five public JSON exports.");
+check(manifest.expected_build.public_json_exports === 6, "Manifest must record six public JSON exports.");
+check(
+  evidenceQueueExport.count === manifest.expected_build.evidence_queue_records,
+  `Expected ${manifest.expected_build.evidence_queue_records} evidence-queue records, found ${evidenceQueueExport.count}.`,
+);
+check(
+  evidenceQueueExport.records.every((record) => record.underlying_signal_status === "In Review" && record.exact_next_artifact && record.next_check_date),
+  "Evidence-queue export contains an unbounded or non-held record.",
+);
 check(
   researchExport.count === manifest.expected_build.research_export_records,
   `Expected ${manifest.expected_build.research_export_records} research export records, found ${researchExport.count}.`,

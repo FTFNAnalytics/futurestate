@@ -164,7 +164,7 @@ export function serializePublicReaderPathway(pathway: CollectionEntry<"readerPat
 }
 
 export function publicDatasetResponse(
-  dataset: "sources" | "topics" | "signals" | "research" | "pathways",
+  dataset: "sources" | "topics" | "signals" | "research" | "pathways" | "evidence_queue",
   recordScope: string,
   records: unknown[]
 ): Response {

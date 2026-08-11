@@ -25,9 +25,10 @@ function formatDate(date: Date): string {
     <div class="eyebrow">Trust Surface</div>
     <h1 class="page-title">Updates and corrections</h1>
     <p class="lede">
-      Material changes should be visible. This log records source refreshes,
-      signal repairs, publication promotions, corrections, and archives without
-      creating an automated path from ingestion to publication.
+      Evidence decisions should be visible, including bounded checks that do not
+      change a record. This log records source refreshes, signal repairs,
+      publication promotions, corrections, archives, and no-material-change
+      receipts without creating an automated path from ingestion to publication.
     </p>
     <div class="meta-row">
       <MetaPill label={`${updates.length} logged changes`} />
@@ -44,6 +45,9 @@ function formatDate(date: Date): string {
         material evidence update. A signal repair revises a record against new
         evidence. A publication promotion records a review decision. An archive
         removes a record from current intelligence while preserving its history.
+        A no-material-change receipt records the exact source checked, retained
+        state, missing artifact, and next check date without claiming that the
+        artifact does not exist.
       </p>
     </div>
     <div class="prose">
@@ -66,11 +70,27 @@ function formatDate(date: Date): string {
         <article class="source-row">
           <div class="meta-row">
             <MetaPill label={update.data.entry_type} tone="review" />
+            {update.data.receipt_type && <MetaPill label={update.data.receipt_type} tone="possibility" />}
+            {update.data.materiality && <MetaPill label={update.data.materiality} />}
             <MetaPill label={formatDate(update.data.effective_date)} />
           </div>
           <h2>{update.data.title}</h2>
           <p>{update.data.summary}</p>
           <p><strong>Evidence note:</strong> {update.data.evidence_note}</p>
+          {update.data.receipt_id && (
+            <div>
+              <strong>Receipt details</strong>
+              <ul class="compact-list">
+                <li><strong>Receipt:</strong> <code>{update.data.receipt_id}</code></li>
+                {update.data.source_checked_date && <li><strong>Source checked:</strong> {formatDate(update.data.source_checked_date)}</li>}
+                {update.data.decision_date && <li><strong>Decision date:</strong> {formatDate(update.data.decision_date)}</li>}
+                {update.data.prior_state && <li><strong>Prior state:</strong> {update.data.prior_state}</li>}
+                {update.data.current_state && <li><strong>Current state:</strong> {update.data.current_state}</li>}
+                {update.data.publication_effect && <li><strong>Publication effect:</strong> {update.data.publication_effect}</li>}
+                {update.data.next_check_date && <li><strong>Next check:</strong> {formatDate(update.data.next_check_date)}</li>}
+              </ul>
+            </div>
+          )}
           <div>
             <strong>Affected records</strong>
             <ul class="compact-list">

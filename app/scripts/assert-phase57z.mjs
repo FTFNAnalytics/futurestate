@@ -35,11 +35,11 @@ check(ledger.post_batch_closure_counts.Closed === 1 && ledger.post_batch_closure
 const torontoSignal = await readFile(join(contentRoot, "signals", "signal-toronto-24-254930-community-council-recommendation.mdx"), "utf8");
 const darpaSignal = await readFile(join(contentRoot, "signals", "signal-darpa-lift-challenge-2026-scheduled-field-trial.mdx"), "utf8");
 check(/record_status: "Published"/.test(torontoSignal) && /adopted item 2026\.SC33\.9 without amendments and without debate/.test(torontoSignal), "Toronto signal must be Published at the bounded Council-adoption stage.");
-check(/record_status: "In Review"/.test(darpaSignal) && /no reviewed official artifact yet provides final measured results/.test(darpaSignal), "DARPA signal must remain In Review pending official measured results.");
+check(/record_status: "In Review"/.test(darpaSignal) && /does not publish a final results table/.test(darpaSignal), "DARPA signal must remain In Review pending official measured results.");
 const torontoSource = await readJson(join(contentRoot, "sources", "source-toronto-2026-sc33-9-item-history.json"));
 const darpaSource = await readJson(join(contentRoot, "sources", "source-darpa-lift-challenge-2026.json"));
 check(torontoSource.last_checked_date === "2026-08-10" && /City Council adoption/.test(torontoSource.known_limitations), "Toronto source profile must record the August 10 post-Council check.");
-check(darpaSource.last_checked_date === "2026-08-10" && /final results table/.test(darpaSource.known_limitations), "DARPA source profile must record the August 10 official-results recheck.");
+check(darpaSource.last_checked_date >= "2026-08-10" && /final results table/.test(darpaSource.known_limitations), "DARPA source profile must retain the August 10-or-later official-results recheck.");
 
 const collection = await readJson(join(contentRoot, "research-collections", `${collectionSlug}.json`));
 check(collection.id === collectionId && collection.document_ids.length === 11 && new Set(collection.document_ids).size === 11 && /fourteen-file/.test(collection.download_note), "Phase 57Z collection must include eleven documents and declare a fourteen-file archive.");

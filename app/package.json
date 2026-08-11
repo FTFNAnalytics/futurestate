@@ -68,7 +68,9 @@
     "verify:phase57x": "node ./scripts/assert-phase57x.mjs",
     "test:phase57y": "node ./scripts/phase57y-remediation-rotation-recusal-rollout-recovery-harness.mjs",
     "verify:phase57y": "node ./scripts/assert-phase57y.mjs",
-    "verify:phase57z": "node ./scripts/assert-phase57z.mjs"
+    "verify:phase57z": "node ./scripts/assert-phase57z.mjs",
+    "test:phase58": "node ./scripts/phase58-authority-loop-harness.mjs",
+    "verify:phase58": "node ./scripts/assert-phase58.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.0",

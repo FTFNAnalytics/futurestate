@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../components/layout/BaseLayout.astro";
 import MetaPill from "../../components/ui/MetaPill.astro";
+import evidenceQueue from "../../data/phase-58-dated-evidence-queue.json";
 
 const sources = await getCollection("sources");
 const topics = await getCollection("topics");
@@ -43,13 +44,19 @@ const datasets = [
     href: "/data/pathways.json",
     count: readerPathways.length,
     summary: "Published reader journeys connecting signals, sources, synthesis, research collections, local systems, and open gaps."
+  },
+  {
+    title: "Dated Evidence Queue",
+    href: "/data/evidence-queue.json",
+    count: evidenceQueue.records.length,
+    summary: "Held result and outcome gates with exact next artifacts, dated checks, cadences, stop rules, and reader-visible receipts."
   }
 ];
 ---
 
 <BaseLayout
   title="Data Exports | FTFN"
-  description="Versioned public JSON exports for FTFN signals, sources, topics, research records, and reader pathways."
+  description="Versioned public JSON exports for FTFN signals, sources, topics, research records, reader pathways, and the dated evidence queue."
 >
   <section class="page-section hero">
     <div class="hero__copy">
@@ -72,7 +79,7 @@ const datasets = [
     <div class="section-heading">
       <div>
         <div class="eyebrow">Datasets</div>
-        <h2>Five bounded public contracts.</h2>
+        <h2>Six bounded public contracts.</h2>
         <p>Each file reports its schema version, dataset name, record scope, count, and records.</p>
       </div>
       <a class="inline-link" href="/method/">Read the publication method</a>

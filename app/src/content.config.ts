@@ -305,6 +305,20 @@ const updateEntryType = z.enum([
   "Research Collection"
 ]);
 
+const changeReceiptType = z.enum([
+  "Change Note",
+  "Watch Note",
+  "Correction",
+  "No Material Change"
+]);
+
+const changeMateriality = z.enum([
+  "Material record change",
+  "Watch posture change",
+  "Correction",
+  "No record-state change"
+]);
+
 const researchDocumentType = z.enum([
   "Budget Justification",
   "Broad Agency Announcement",
@@ -584,6 +598,15 @@ const updates = defineCollection({
     affected_record_ids: requiredStrings,
     related_paths: z.array(z.string()).default([]),
     evidence_note: z.string(),
+    receipt_id: z.string().optional(),
+    receipt_type: changeReceiptType.optional(),
+    materiality: changeMateriality.optional(),
+    source_checked_date: z.coerce.date().optional(),
+    decision_date: z.coerce.date().optional(),
+    prior_state: z.string().optional(),
+    current_state: z.string().optional(),
+    publication_effect: z.string().optional(),
+    next_check_date: z.coerce.date().optional(),
     work_package: z.string().optional()
   })
 });
