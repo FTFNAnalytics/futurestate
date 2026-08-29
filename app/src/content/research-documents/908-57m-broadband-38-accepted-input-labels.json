@@ -1,0 +1,81 @@
+{
+  "id": "research-doc-57m-broadband-38-accepted-input-labels",
+  "collection_id": "research-collection-source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026",
+  "title": "Broadband declares 38 exact accepted input labels",
+  "slug": "57m-broadband-38-accepted-input-labels",
+  "record_status": "Published",
+  "publisher": "Montana Department of Administration",
+  "publication_date": "2026-08-08",
+  "document_type": "Data Release",
+  "summary": "Each Broadband field admits one canonical label and one readable label while rejecting unrecognized or ambiguous labels without inference. Denominator: 38 adapter-vocabulary labels across 19 required fields.",
+  "key_findings": [
+    "Evidence stage: Broadband adapter and review-control operationalization.",
+    "Finding: Each Broadband field admits one canonical label and one readable label while rejecting unrecognized or ambiguous labels without inference.",
+    "Denominator: 38 adapter-vocabulary labels across 19 required fields.",
+    "Boundary: Accepted labels are workflow vocabulary, not observed source evidence.",
+    "Boundary: Case normalization does not permit semantic aliasing.",
+    "Boundary: A label match cannot supply a value.",
+    "Next action: Record the exact source label and citation when an actual candidate packet enters review."
+  ],
+  "why_it_matters": "The record makes a future evidence-review workflow executable while keeping adapter vocabulary, fixtures, and rehearsals outside the evidence ledger.",
+  "ftfn_relevance": [
+    "Maps all sixty Phase 57L fields without coercion.",
+    "Provides empty and deliberately incomplete non-evidence packet fixtures for all nine queues.",
+    "Defines six bounded human-review outcomes without automatic acceptance, trigger, closure, or publication."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Accepted labels are workflow vocabulary, not observed source evidence.",
+    "Case normalization does not permit semantic aliasing.",
+    "A label match cannot supply a value.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-montana-bead-final-proposal-january-2026",
+  "supporting_source_ids": [
+    "source-57g-montana-bead-final-proposal-january-2026",
+    "source-57g-montana-deployment-projects-csv",
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-subgrantees-csv",
+    "source-57g-montana-cai-csv",
+    "source-57f-montana-bead-resource-index-august-2026",
+    "source-57f-montana-leo-quarterly-instructions-june-2026",
+    "source-57e-montana-quarterly-report-instructions-june-2026",
+    "source-57e-montana-project-monitoring-guide-june-2026",
+    "source-57b-louisiana-nextlink-first-bead-tower",
+    "source-57b-louisiana-starlink-bead-agreement"
+  ],
+  "supporting_official_urls": [
+    "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+    "https://doa.mt.gov/_docs/connectmt/fp_deployment_projects-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_locations-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_subgrantees-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_CAI-1.5.26.csv",
+    "https://doa.mt.gov/ConnectMT/iija/",
+    "https://doa.mt.gov/_docs/connectmt/LEO-Quarterly-Report-Instructions-6.1.26.pdf",
+    "https://doa.mt.gov/_docs/connectmt/Quarterly-Report-Instructions-Terrestrial-6.1.26.pdf",
+    "https://doa.mt.gov/_docs/connectmt/BEAD-Project-Subgrantee-Monitoring-Guide-6.1.26.pdf",
+    "https://connect.la.gov/press-releases/nextlink-activates-first-bead-funded-tower-in-the-united-states-connecting-rural-louisiana",
+    "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access"
+  ],
+  "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+  "local_capture_path": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/07-broadband-38-accepted-input-labels.txt",
+  "archive_member": "official-links/07-broadband-38-accepted-input-labels.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-08"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "research-doc-57v-nnsa-accepted-capacity-threshold-release-authorization",
+  "collection_id": "research-collection-threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026",
+  "title": "NNSA accepted operating capacity receives actor- and domain-separated threshold authorization",
+  "slug": "57v-nnsa-accepted-capacity-threshold-release-authorization",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy",
+  "publication_date": "2026-08-10",
+  "document_type": "Data Release",
+  "summary": "A contract-specific three-of-five release policy binds each share to the exact release digest, named role, distinct actor, and independent authority domain; same-actor or same-domain quorum construction fails closed and authorization never publishes automatically. Denominator: One threshold schema, twenty-five adversarial cases, seven bounded valid routes, eighteen explicit rejections, and zero production threshold shares or release authorizations issued.",
+  "key_findings": [
+    "Evidence stage: M-of-N threshold release-authorization controls.",
+    "Finding: A contract-specific three-of-five release policy binds each share to the exact release digest, named role, distinct actor, and independent authority domain; same-actor or same-domain quorum construction fails closed and authorization never publishes automatically.",
+    "Denominator: One threshold schema, twenty-five adversarial cases, seven bounded valid routes, eighteen explicit rejections, and zero production threshold shares or release authorizations issued.",
+    "Boundary: Fixture shares contain no production secret material and confer no production authority.",
+    "Boundary: Below-threshold, duplicated, unknown, expired, revoked, staged, mismatched, replayed, rewritten, publishing, closing, or evidence-inflating quorum fixtures reject.",
+    "Boundary: Threshold authorization proves a bounded integrity decision only; it cannot accept evidence, publish, restore, implement, close, attribute, or establish outcomes.",
+    "Next action: Authorize a NNSA accepted operating capacity release only after three distinct actors in three independent domains bind valid shares to the exact digest."
+  ],
+  "why_it_matters": "The record makes release quorum, witness independence, split-view detection, temporal ordering, verifier reproducibility, and compromise recovery independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Requires three-of-five release authorization without same-actor or same-domain quorum.",
+    "Federates independently witnessed checkpoints through cross-log gossip and trusted time.",
+    "Requires three independent verifier implementations and clean compromise recovery without retroactive trust."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Fixture shares contain no production secret material and confer no production authority.",
+    "Below-threshold, duplicated, unknown, expired, revoked, staged, mismatched, replayed, rewritten, publishing, closing, or evidence-inflating quorum fixtures reject.",
+    "Threshold authorization proves a bounded integrity decision only; it cannot accept evidence, publish, restore, implement, close, attribute, or establish outcomes.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-nnsa-fy2026-weapons-activities",
+  "supporting_source_ids": [
+    "source-57g-nnsa-fy2026-weapons-activities",
+    "source-56w-nnsa-fy2027-weapons-activities",
+    "source-56x-gao-nnsa-major-projects-2026",
+    "source-56q-gao-23-104661-recommendation-status",
+    "source-57f-nnsa-pit-production-current",
+    "source-57f-nnsa-stockpile-current",
+    "source-57g-nnsa-lap4-30-base-construction",
+    "source-57a-nnsa-w87-1-first-production-unit",
+    "source-57b-nnsa-sasc-testimony-may-2026",
+    "source-57b-nnsa-pit-production-draft-peis-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+  ],
+  "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+  "local_capture_path": "/downloads/threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026/official-links/43-phase57v-record.txt",
+  "archive_member": "official-links/43-phase57v-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-10"
+}

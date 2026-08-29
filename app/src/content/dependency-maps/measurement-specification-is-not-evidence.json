@@ -1,0 +1,74 @@
+{
+  "id": "dependency-map-measurement-specification-is-not-evidence",
+  "title": "Measurement Specification Is Not Evidence",
+  "slug": "measurement-specification-is-not-evidence",
+  "summary": "A map separating a measure definition, empty intake envelope, reviewed observation, compatible series point, admitted cohort, and bounded outcome.",
+  "map_type": "Evidence Gap Map",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Data Quality", "Interpretation", "Standards", "Public Trust"],
+  "map_question": "What must happen between a measurement definition and a reader-visible outcome?",
+  "interpretation_boundary": "The nodes are separate governed objects, not an automatic pipeline. A specification, envelope, observation, series point, cohort, and outcome each require their own evidence and decision.",
+  "source_ids": [
+    "source-phoenix-tsmc-july-2026-fab-update",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-faa-shuttle-landing-facility-license",
+    "source-doe-thacker-pass-loan-2024",
+    "source-gsa-pqc-buyers-guide-2025",
+    "source-nist-aria-pilot-evaluation-2025",
+    "source-cpuc-waymo-al2-disposition-2024"
+  ],
+  "signal_ids": [
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-faa-part450-operator-transition",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-gsa-pqc-procurement-paths",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-cpuc-waymo-fared-driverless-expansion-2024"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate",
+    "local-northern-virginia-data-center-corridor",
+    "local-florida-space-coast-launch-corridor",
+    "local-nevada-lithium-processing-corridor"
+  ],
+  "evidence_gap_ids": ["gap-001", "gap-002", "gap-003", "gap-004", "gap-005", "gap-007", "gap-008", "gap-009", "gap-010", "gap-011", "gap-012", "gap-013", "gap-014", "gap-015", "gap-016"],
+  "nodes": [
+    {"id": "node-specification", "label": "Measurement specification", "node_type": "Constraint", "note": "Defines entity, numerator, denominator, unit, period, method, exceptions, revisions, and propagation."},
+    {"id": "node-envelope", "label": "Empty intake envelope", "node_type": "Constraint", "note": "Reserves no value, receipt, source attempt, decision, or publication state."},
+    {"id": "node-observation", "label": "Reviewed observation", "node_type": "Signal", "note": "A real same-entity artifact passes all eighteen fields and independent review."},
+    {"id": "node-break", "label": "Break adjudication", "node_type": "Constraint", "note": "Compatibility, bridge, segmentation, rejection, and blocker decisions preserve changed fields."},
+    {"id": "node-series", "label": "Compatible series point", "node_type": "Constraint", "note": "One accepted observation joins an existing series only after every compatibility and break test."},
+    {"id": "node-cohort", "label": "Admitted cohort", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "A human decision admits an exact entity and measure contract; no Phase 69 cohort is admitted."},
+    {"id": "node-outcome", "label": "Bounded outcome", "node_type": "Evidence Gap", "record_id": "gap-015", "note": "An admitted compatible series may support one scoped outcome without implying comparison or causation."}
+  ],
+  "links": [
+    {"from": "node-specification", "to": "node-envelope", "relationship": "Depends On", "confidence": "Supported", "note": "The envelope inherits one exact specification and its required fields."},
+    {"from": "node-envelope", "to": "node-observation", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "All thirty-two envelopes remain empty."},
+    {"from": "node-observation", "to": "node-break", "relationship": "Depends On", "confidence": "Partial", "note": "A reviewed observation must expose every prospective break before joining a series."},
+    {"from": "node-break", "to": "node-series", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "No actual break or bridge decision exists because no observation exists."},
+    {"from": "node-series", "to": "node-cohort", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "A series point cannot admit a cohort automatically."},
+    {"from": "node-cohort", "to": "node-outcome", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Admission is not an outcome and no admitted cohort exists."}
+  ],
+  "what_this_map_supports": [
+    "Separate public contracts for measurement, intake, break review, series membership, cohort admission, and outcomes.",
+    "Fail-closed handling of missing fields, hidden breaks, forced bridges, and automatic admission.",
+    "Useful empty-state publication without inventing a value."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not establish that any observation or qualifying artifact exists.",
+    "It does not convert an empty envelope into an attempted check.",
+    "It does not create a value, trend, score, rank, comparison, causation, or outcome."
+  ],
+  "next_records_needed": [
+    "A real same-entity artifact satisfying one exact measurement specification.",
+    "An independently reviewed eighteen-field observation intake.",
+    "A bounded break, bridge, segmentation, or compatibility decision before series membership."
+  ]
+}

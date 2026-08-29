@@ -1,0 +1,36 @@
+{
+  "id": "dependency-map-participation-volume-is-not-consent-or-legitimacy",
+  "title": "Participation Volume Is Not Consent Or Legitimacy",
+  "slug": "participation-volume-is-not-consent-or-legitimacy",
+  "summary": "A dependency map separating reach and volume from standing, representativeness, evidence, rights, consultation, consent, reasons, legitimacy, and authorization.",
+  "map_type": "Dependency Stack",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": ["Human Systems", "Frontier Domains"],
+  "constraint_tags": ["Public Trust", "Regulation", "Data Quality", "Interpretation"],
+  "map_question": "How can participation inform a decision without turning comments, attendance, organizations, or sentiment into automatic consent or legitimacy?",
+  "interpretation_boundary": "Participation volume may describe salience or reach. It does not establish representative coverage, evidence weight, rights compliance, consent, consensus, legitimacy, decision authority, or a durable mandate.",
+  "source_ids": ["source-toronto-2026-sc33-9-item-history", "source-faa-shuttle-landing-facility-license", "source-cpuc-waymo-al2-disposition-2024"],
+  "signal_ids": ["signal-toronto-24-254930-community-council-recommendation", "signal-faa-part450-operator-transition", "signal-cpuc-waymo-fared-driverless-expansion-2024"],
+  "technology_ids": [],
+  "local_system_ids": ["local-ontario-real-estate", "local-florida-space-coast-launch-corridor"],
+  "evidence_gap_ids": ["gap-004", "gap-010", "gap-013", "gap-015", "gap-016"],
+  "nodes": [
+    {"id": "node-volume", "label": "Comments, attendance, signatures, and organizations", "node_type": "Constraint", "note": "Volume is descriptive, not dispositive."},
+    {"id": "node-coverage", "label": "Standing and constituency coverage", "node_type": "Constraint", "note": "Who participated and who was excluded remain explicit."},
+    {"id": "node-quality", "label": "Access, safety, evidence, alternatives, voice, and influence", "node_type": "Constraint", "note": "Quality is multidimensional and not collapsed into a score."},
+    {"id": "node-rights", "label": "Rights, treaty, consultation, accommodation, and consent", "node_type": "Constraint", "note": "Each has its own authority and record."},
+    {"id": "node-reason", "label": "Reasoned response and residual dissent", "node_type": "Constraint", "note": "Material issues require specific public reasons."},
+    {"id": "node-mandate", "label": "Separate legitimacy audit and mandate decision", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No public mandate exists."}
+  ],
+  "links": [
+    {"from": "node-volume", "to": "node-coverage", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Counts do not reveal missing or overrepresented publics."},
+    {"from": "node-coverage", "to": "node-quality", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Coverage and quality require separate evidence."},
+    {"from": "node-quality", "to": "node-rights", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Good process does not satisfy every rights or consent duty."},
+    {"from": "node-rights", "to": "node-reason", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Rights and consultation findings remain in the reasons."},
+    {"from": "node-reason", "to": "node-mandate", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Participation cannot self-authorize a mandate."}
+  ],
+  "what_this_map_supports": ["Descriptive reporting of reach and volume with explicit limits.", "Separate standing, quality, rights, consent, reason, legitimacy, and authority records.", "Retention of dissent and non-consensus after process closure."],
+  "what_this_map_does_not_prove": ["It does not establish that a majority is representative or correct.", "It does not infer consent from attendance, silence, continued engagement, or process completion.", "It does not generate a legitimacy score, mandate, rank, or policy decision."],
+  "next_records_needed": ["Completed standing and accessible-notice receipts.", "A public record containing submissions, hearings, evidence, alternatives, and dissent.", "Separate consent findings where applicable, reasoned responses, legitimacy audit, and mandate receipt."]
+}

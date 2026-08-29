@@ -1,0 +1,280 @@
+{
+  "id": "dependency-map-autonomy-rules-are-not-service",
+  "title": "Autonomy rules are not service",
+  "slug": "autonomy-rules-are-not-service",
+  "summary": "A technology-readiness map connecting policy, reporting, recalls, vehicle and passenger-service authority, operating exposure, aviation approvals, local systems, and measured service outcomes.",
+  "map_type": "Technology Readiness Map",
+  "record_status": "Published",
+  "primary_topic": "Aviation",
+  "framework_layers": [
+    "Frontier Domains",
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Certification",
+    "Safety",
+    "Regulation",
+    "Data Quality",
+    "Infrastructure",
+    "Weather",
+    "Public Trust"
+  ],
+  "map_question": "How do mobility and aviation policy records become certified, locally authorized, safety-evidenced autonomous service?",
+  "interpretation_boundary": "The map now supports a named road passenger-service authorization and measured testing exposure. It does not prove actual trip volume, comparative safety, accessibility, cost, local outcomes, eVTOL certification, or aviation service.",
+  "source_ids": [
+    "source-dot-automated-vehicle-framework-2025",
+    "source-nhtsa-av-step-proposal-2024",
+    "source-nhtsa-sgo-crash-reporting",
+    "source-nhtsa-waymo-26e026-recall-2026",
+    "source-faa-powered-lift-final-rule-2024",
+    "source-faa-eipp-selections-2026",
+    "source-cpuc-waymo-al2-disposition-2024",
+    "source-cpuc-av-advice-letter-status-2026",
+    "source-california-dmv-av-miles-2024",
+    "source-nhtsa-zoox-demonstration-exemption-2025",
+    "source-nhtsa-cruise-reporting-consent-order-2024"
+  ],
+  "signal_ids": [
+    "signal-sample-005",
+    "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+    "signal-faa-powered-lift-final-operating-rule",
+    "signal-faa-2026-evtol-integration-pilot-selections",
+    "signal-cpuc-waymo-fared-driverless-expansion-2024",
+    "signal-california-av-testing-miles-2024"
+  ],
+  "technology_ids": [
+    "technology-evtol-aircraft"
+  ],
+  "local_system_ids": [],
+  "evidence_gap_ids": [
+    "gap-010",
+    "gap-015"
+  ],
+  "nodes": [
+    {
+      "id": "node-policy",
+      "label": "Federal policy and program design",
+      "node_type": "Constraint",
+      "note": "The AV Framework and AV STEP proposal define possible federal directions without proving final implementation."
+    },
+    {
+      "id": "node-reporting",
+      "label": "Crash reporting and defect evidence",
+      "node_type": "Signal",
+      "record_id": "signal-sample-005",
+      "note": "NHTSA's amended SGO supplies a reporting rail with explicit data limitations."
+    },
+    {
+      "id": "node-recall",
+      "label": "Weather-related ADS recall",
+      "node_type": "Signal",
+      "record_id": "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+      "note": "A specific recall exposes software, map, weather, operating-scope, and remedy dependencies."
+    },
+    {
+      "id": "node-aviation-rule",
+      "label": "Powered-lift operating rule",
+      "node_type": "Signal",
+      "record_id": "signal-faa-powered-lift-final-operating-rule",
+      "note": "FAA has completed one pilot and operating-rule layer while aircraft and operator approvals remain separate."
+    },
+    {
+      "id": "node-pilot-selection",
+      "label": "eVTOL pilot selections",
+      "node_type": "Signal",
+      "record_id": "signal-faa-2026-evtol-integration-pilot-selections",
+      "note": "Eight selected proposals create a test lane but do not establish sites, flights, safety results, or service."
+    },
+    {
+      "id": "node-road-service-authority",
+      "label": "Road passenger-service authority",
+      "node_type": "Signal",
+      "record_id": "signal-cpuc-waymo-fared-driverless-expansion-2024",
+      "note": "CPUC authorizes fared Waymo driverless passenger service in specified California geographies."
+    },
+    {
+      "id": "node-road-operating-exposure",
+      "label": "Road operating exposure",
+      "node_type": "Signal",
+      "record_id": "signal-california-av-testing-miles-2024",
+      "note": "DMV testing miles provide measured exposure with scope and comparison limits."
+    },
+    {
+      "id": "node-road-service-authority",
+      "label": "Road passenger-service authority",
+      "node_type": "Signal",
+      "record_id": "signal-cpuc-waymo-fared-driverless-expansion-2024",
+      "note": "CPUC authorizes fared Waymo driverless passenger service in specified California geographies."
+    },
+    {
+      "id": "node-road-operating-exposure",
+      "label": "Road operating exposure",
+      "node_type": "Signal",
+      "record_id": "signal-california-av-testing-miles-2024",
+      "note": "DMV testing miles provide measured exposure with scope and comparison limits."
+    },
+    {
+      "id": "node-road-service-authority",
+      "label": "Road passenger-service authority",
+      "node_type": "Signal",
+      "record_id": "signal-cpuc-waymo-fared-driverless-expansion-2024",
+      "note": "CPUC authorizes fared Waymo driverless passenger service in specified California geographies."
+    },
+    {
+      "id": "node-road-operating-exposure",
+      "label": "Road operating exposure",
+      "node_type": "Signal",
+      "record_id": "signal-california-av-testing-miles-2024",
+      "note": "DMV testing miles provide measured exposure with scope and comparison limits."
+    },
+    {
+      "id": "node-certification",
+      "label": "Vehicle, aircraft, and operator approval",
+      "node_type": "Constraint",
+      "note": "Type, production, exemption, operator, route, and operational-design-domain approvals remain system-specific."
+    },
+    {
+      "id": "node-local-system",
+      "label": "Local infrastructure and permission",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-010",
+      "note": "FTFN still needs sites, roads, airspace, vertiports, charging, emergency processes, insurance, weather, noise, and community records."
+    },
+    {
+      "id": "node-service",
+      "label": "Operating service and outcomes",
+      "node_type": "Constraint",
+      "note": "Flights or trips, availability, safety, disruptions, costs, ridership, service area, and enforcement establish operation and scale."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-policy",
+      "to": "node-road-service-authority",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "California DMV and CPUC approvals close named vehicle and passenger-service authority gates."
+    },
+    {
+      "from": "node-road-service-authority",
+      "to": "node-road-operating-exposure",
+      "relationship": "Related Signal",
+      "confidence": "Partial",
+      "note": "Testing exposure is measurable but remains distinct from fared service trips."
+    },
+    {
+      "from": "node-road-operating-exposure",
+      "to": "node-service",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Actual service outcomes require carrier-level trips, fleet, availability, safety, accessibility, cost, and local-effect records."
+    },
+    {
+      "from": "node-policy",
+      "to": "node-road-service-authority",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "California DMV and CPUC approvals close named vehicle and passenger-service authority gates."
+    },
+    {
+      "from": "node-road-service-authority",
+      "to": "node-road-operating-exposure",
+      "relationship": "Related Signal",
+      "confidence": "Partial",
+      "note": "Testing exposure is measurable but remains distinct from fared service trips."
+    },
+    {
+      "from": "node-road-operating-exposure",
+      "to": "node-service",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Actual service outcomes require carrier-level trips, fleet, availability, safety, accessibility, cost, and local-effect records."
+    },
+    {
+      "from": "node-policy",
+      "to": "node-road-service-authority",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "California DMV and CPUC approvals close named vehicle and passenger-service authority gates."
+    },
+    {
+      "from": "node-road-service-authority",
+      "to": "node-road-operating-exposure",
+      "relationship": "Related Signal",
+      "confidence": "Partial",
+      "note": "Testing exposure is measurable but remains distinct from fared service trips."
+    },
+    {
+      "from": "node-road-operating-exposure",
+      "to": "node-service",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Actual service outcomes require carrier-level trips, fleet, availability, safety, accessibility, cost, and local-effect records."
+    },
+    {
+      "from": "node-policy",
+      "to": "node-certification",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "Policy direction becomes operational through named final rules and approval decisions."
+    },
+    {
+      "from": "node-reporting",
+      "to": "node-certification",
+      "relationship": "Related Signal",
+      "confidence": "Partial",
+      "note": "Safety reporting can inform oversight but cannot alone establish a certification or comparative safety finding."
+    },
+    {
+      "from": "node-recall",
+      "to": "node-certification",
+      "relationship": "Related Signal",
+      "confidence": "Supported",
+      "note": "The recall is a regulator-visible defect and remedy record for a specific ADS."
+    },
+    {
+      "from": "node-aviation-rule",
+      "to": "node-certification",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "The operating rule leaves aircraft and operator approvals as distinct gates."
+    },
+    {
+      "from": "node-pilot-selection",
+      "to": "node-certification",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "Selected pilots still require agreements, approved systems, sites, and test plans."
+    },
+    {
+      "from": "node-certification",
+      "to": "node-local-system",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Federal approval does not replace named local infrastructure, authority, and operating conditions."
+    },
+    {
+      "from": "node-local-system",
+      "to": "node-service",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Service requires executed local systems and operating records."
+    }
+  ],
+  "what_this_map_supports": [
+    "A named road carrier has effective authority for fared driverless passenger service in specified California geographies.",
+    "California testing-mile reports and NHTSA crash reporting provide operating-exposure and safety-oversight rails with explicit limits.",
+    "Road passenger-service authority and powered-lift aviation remain separate legal and operating systems."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not prove trip volume, comparative safety, service quality, accessibility, cost, local acceptance, or scale.",
+    "It does not treat testing miles as passenger-service trips.",
+    "It does not transfer road authorization into aircraft, operator, route, site, or aviation-service approval."
+  ],
+  "next_records_needed": [
+    "carrier-level CPUC trip, fleet, service-hour, availability, accessibility, cost, and incident reports.",
+    "DMV deployment activity and exposure-normalized NHTSA and local safety evidence.",
+    "type, production, operator, route, site, infrastructure, flight, and service records for powered-lift aviation."
+  ]
+}

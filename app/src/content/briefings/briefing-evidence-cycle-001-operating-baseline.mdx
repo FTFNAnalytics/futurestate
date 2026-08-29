@@ -1,0 +1,97 @@
+---
+id: "briefing-evidence-cycle-001-operating-baseline"
+title: "Evidence Cycle 001: Operating Baseline And Next Decisions"
+slug: "evidence-cycle-001-operating-baseline"
+record_status: "Published"
+summary: "Evidence Cycle 001 now records two complete Wave 60B decisions: DARPA measured results under a bounded Change Note and the unresolved Shuttle Landing Facility disposition under a bounded No Material Change receipt."
+published_date: 2026-08-11
+captured_date: 2026-08-11
+signal_ids:
+  - "signal-darpa-lift-challenge-2026-scheduled-field-trial"
+  - "signal-shuttle-landing-facility-license-status-watch"
+  - "signal-57y-preserved-la-starlink-adoption"
+  - "signal-57y-preserved-la-nextlink-adoption"
+  - "signal-57y-preserved-amtrak-pids"
+  - "signal-57y-preserved-hanford-mass-balance"
+  - "signal-57y-preserved-nnsa-gao-baseline"
+  - "signal-57y-preserved-mt-bead-quarter"
+  - "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+  - "signal-57y-preserved-nnsa-accepted-capacity"
+  - "signal-loudoun-phase2-data-center-standards-watch"
+  - "signal-57y-preserved-amtrak-reliability"
+  - "signal-57y-preserved-nnsa-qualified-rate"
+evidence_gap_ids:
+  - "gap-002"
+  - "gap-008"
+  - "gap-011"
+  - "gap-013"
+  - "gap-015"
+  - "gap-016"
+claim_scope: "Editorial Synthesis"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-08-23
+top_takeaways:
+  - "Thirteen gates now share one operating window from August 14 through October 9, including ten Phase 58 result gates and three existing local monitors."
+  - "A check cannot disappear into editorial silence: after its date passes it needs a decision receipt, a bounded blocker receipt, or a Watch Note that records a new date."
+  - "Wave 60B closes with two fully propagated receipts: one bounded DARPA result promotion and one unchanged Shuttle Landing Facility licence hold."
+constraint_watch:
+  - "Data Quality"
+  - "Interpretation"
+  - "Public Trust"
+  - "Regulation"
+what_to_watch_next:
+  - "Louisiana Starlink adoption on September 1; the Shuttle Landing Facility formal disposition recheck on September 15"
+  - "Louisiana adoption on September 1 and 9; Amtrak, Hanford, and NNSA baseline records on September 10; Montana on September 15"
+  - "Arizona wastewater delivery on September 22, NNSA accepted capacity on September 24, Loudoun standards on October 1, and the October 9 reliability and recurring-output gates"
+---
+
+## Operating baseline
+
+Evidence Cycle 001 is the operating layer above the dated queue and the Phase 59 reader products. It does not create another evidence-acquisition wave. It assigns thirteen existing gates to one August 11–October 9 window and makes the handoff from source check to reader-facing decision testable.
+
+Ten gates come from the Phase 58 held-result queue. Three are existing local monitors: the Space Coast Shuttle Landing Facility licence, Phoenix and TSMC wastewater delivery, and Loudoun's Phase 2 data-center standards. All thirteen retain their original source, stage, stop rule, and exact next artifact.
+
+## Decision waves
+
+| Wave | Dates | Gates |
+| --- | --- | --- |
+| 60B | August 14–15 | DARPA measured results; Shuttle Landing Facility licence disposition |
+| 60C | September 1–15 | Louisiana Starlink and Nextlink adoption; Amtrak PIDS closeout; Hanford material balance; NNSA GAO baseline; Montana completed project quarter |
+| 60D | September 22–October 9 | Arizona wastewater delivery; NNSA accepted capacity; Loudoun standards; Amtrak named-asset reliability; NNSA recurring qualified output |
+
+## Propagation contract
+
+The required sequence is:
+
+`source check → receipt → signal decision → canonical dossier → reader pathway → dependency map → Outcomes Watch → update log → Git-backed release validation`
+
+A material record change must update every affected surface in the same reviewed change set. A bounded no-change decision retains the prior record state, names what was checked and what remains missing, and still moves through the assigned reader surfaces. A blocked check needs a visible blocker receipt. A missed date without a receipt or an explicit reschedule fails the Phase 60 gate.
+
+## First complete proof
+
+Receipt `receipt-58-darpa-2026-08-11-no-material-change` is the seed proof. The source check advanced the DARPA source freshness date; the result signal remained In Review; the autonomy adoption dossier, autonomy pathway, shared adoption map, Outcomes Watch, this digest, and the Phase 60 update all carry the same bounded decision and August 14 next check.
+
+The proof does not say that results do not exist. It says only that the official surfaces reviewed on August 11 did not supply the final measured-results artifact required by the gate.
+
+## No silent overdue work
+
+A check is due on its recorded day and becomes silently overdue only after that date passes without a decision date and receipt. A technical or access blocker is not a reason to omit the check; it becomes a bounded blocker receipt with the attempted source, the limitation, and the next action. A schedule change requires a Watch Note.
+
+## Evidence boundary
+
+Wave 60B now has two dated decisions and complete propagation. The eleven Wave 60C-60D items remain scheduled; Phase 60 does not claim September adoption or acceptance, October reliability, or recurring-output evidence before those checks occur. The DARPA result changes one existing signal at the measured competition-result stage; the Shuttle Landing Facility decision changes no signal or named-file stage. Neither receipt creates a score, ranking, or operating-outcome conclusion.
+
+## Phase 67 qualification control plane
+
+[Evidence Return Control Room 001](/briefings/evidence-return-control-room-001-forty-five-governed-returns/) joins thirty-two named-file qualification packets to thirteen Evidence Cycle return envelopes. Two Wave 60B envelopes are Release Verified, eleven remain scheduled, and zero Phase 64 cells advanced.
+
+## Wave 60B decisions
+
+- **DARPA Lift Challenge — Change Note receipt-60-darpa-2026-08-23-results.** DARPA's official August 11 release supplies measured objective-category ratios, winners, and prize decisions. The existing signal advances to Published at that exact stage. The result does not establish the 4:1 objective was achieved, certification, production, service, repeat operation, or outcomes, and it does not transfer to Waymo.
+- **Shuttle Landing Facility — No Material Change receipt-60-slf-2026-08-15-no-material-change.** The August 15 FAA check supplied no later formal disposition beyond the displayed January 15, 2026 expiration or the 2021 licence revision. The signal and Space Coast named file remain unchanged; the next bounded recheck is September 15.
+
+Both decisions propagate through their assigned source, signal decision, dossiers, pathways, maps, Outcomes Watch, this digest, update log, and applicable gap, local system, and named file. The remaining eleven cycle items stay scheduled.
+
+## Wave 60C field guide
+
+[Evidence Cycle 001: Wave 60C Field Guide](/briefings/evidence-cycle-001-wave-60c-field-guide/) defines the September 1–15 desk before any source decision occurs. It keeps the six cycle gates separate from the Toronto and Shuttle Landing Facility companion rechecks, names qualifying and insufficient evidence for all eight items, and preserves empty future receipt fields until each real review date.

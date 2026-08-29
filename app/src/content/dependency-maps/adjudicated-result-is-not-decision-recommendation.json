@@ -1,0 +1,82 @@
+{
+  "id": "dependency-map-adjudicated-result-is-not-decision-recommendation",
+  "title": "An Adjudicated Result Is Not A Decision Recommendation",
+  "slug": "adjudicated-result-is-not-decision-recommendation",
+  "summary": "A map separating result eligibility, compatibility, independence, contradiction review, triangulation, evidence grading, external challenge, option translation, recommendation, authorization, and reevaluation.",
+  "map_type": "Evidence Gap Map",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Data Quality", "Interpretation", "Standards", "Public Trust"],
+  "map_question": "What decisions remain between an adjudicated result and a bounded, challengeable, reversible decision recommendation?",
+  "interpretation_boundary": "A result does not become a body of evidence by repetition, a synthesis does not choose policy, and a recommendation does not create authority or an operating outcome. Independence, contradictions, harms, dissent, challenge, sunset, and correction remain explicit.",
+  "source_ids": [
+    "source-phoenix-tsmc-july-2026-fab-update",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-faa-shuttle-landing-facility-license",
+    "source-doe-thacker-pass-loan-2024",
+    "source-gsa-pqc-buyers-guide-2025",
+    "source-nist-aria-pilot-evaluation-2025",
+    "source-cpuc-waymo-al2-disposition-2024"
+  ],
+  "signal_ids": [
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-faa-part450-operator-transition",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-gsa-pqc-procurement-paths",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-cpuc-waymo-fared-driverless-expansion-2024"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate",
+    "local-northern-virginia-data-center-corridor",
+    "local-florida-space-coast-launch-corridor",
+    "local-nevada-lithium-processing-corridor"
+  ],
+  "evidence_gap_ids": ["gap-001", "gap-002", "gap-003", "gap-004", "gap-005", "gap-007", "gap-008", "gap-009", "gap-010", "gap-011", "gap-012", "gap-013", "gap-014", "gap-015", "gap-016"],
+  "nodes": [
+    {"id": "node-result", "label": "Adjudicated Phase 73 result", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No Phase 73 result has been adjudicated."},
+    {"id": "node-input", "label": "Eligible synthesis input", "node_type": "Constraint", "note": "Fourteen gates preserve result identity, scope, uncertainty, adverse evidence, replication, and correction lineage."},
+    {"id": "node-compatibility", "label": "Compatibility and independence", "node_type": "Constraint", "note": "Measures, estimands, designs, cohorts, sources, code, operators, and shared assumptions are resolved."},
+    {"id": "node-contradiction", "label": "Contradiction register", "node_type": "Constraint", "note": "Ten contradiction categories remain visible and can remain unresolved."},
+    {"id": "node-triangulation", "label": "Triangulation and replication portfolio", "node_type": "Constraint", "note": "Independent methods and settings are separated from repeated use of one dependency."},
+    {"id": "node-grade", "label": "Bounded evidence grade", "node_type": "Constraint", "note": "A qualitative human decision constrains body-level language without scoring or ranking."},
+    {"id": "node-challenge", "label": "External challenge and response", "node_type": "Constraint", "note": "A versioned claim can receive evidence-bound critique, public response, and independent adjudication."},
+    {"id": "node-options", "label": "Decision options, harms, and distribution", "node_type": "Constraint", "note": "Action, status quo, benefits, harms, equity, feasibility, capacity, uncertainty, and reversibility are explicit."},
+    {"id": "node-recommendation", "label": "Bounded recommendation with dissent", "node_type": "Constraint", "note": "Evidence and values remain separate; conflicts and minority positions stay attached."},
+    {"id": "node-authority", "label": "Independent decision authority", "node_type": "Constraint", "note": "A recommendation cannot authorize implementation or prove operation."},
+    {"id": "node-reevaluation", "label": "Monitoring, sunset, and reevaluation", "node_type": "Evidence Gap", "record_id": "gap-015", "note": "New evidence, adverse events, corrections, challenges, authority changes, and sunset can reopen the decision."}
+  ],
+  "links": [
+    {"from": "node-result", "to": "node-input", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No adjudicated result exists."},
+    {"from": "node-input", "to": "node-compatibility", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No eligible input exists."},
+    {"from": "node-compatibility", "to": "node-contradiction", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Compatibility cannot erase disagreement."},
+    {"from": "node-contradiction", "to": "node-triangulation", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "No contradiction or triangulation record exists."},
+    {"from": "node-triangulation", "to": "node-grade", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No replication portfolio or evidence grade exists."},
+    {"from": "node-grade", "to": "node-challenge", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No synthesis claim is open to challenge."},
+    {"from": "node-challenge", "to": "node-options", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Unresolved challenge can hold translation."},
+    {"from": "node-options", "to": "node-recommendation", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No option or recommendation record exists."},
+    {"from": "node-recommendation", "to": "node-authority", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Recommendation and authorization are separate decisions."},
+    {"from": "node-authority", "to": "node-reevaluation", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No authorization, monitoring, sunset, or reevaluation exists."}
+  ],
+  "what_this_map_supports": [
+    "Fourteen result-input gates, fourteen synthesis gates, ten contradiction categories, twelve challenge gates, fourteen translation gates, and ten reevaluation triggers.",
+    "Visible separation between result eligibility, compatibility, triangulation, evidence grade, challenge, recommendation, authority, and reevaluation.",
+    "Fail-closed correction propagation from a source result through every dependent synthesis and decision artifact."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not establish an adjudicated result, synthesis, evidence grade, contradiction resolution, challenge outcome, or recommendation.",
+    "It does not establish independence, compatibility, transferability, net benefit, legal authority, implementation, adoption, or operating outcome.",
+    "It does not create a composite score, rank, forecast, automatic decision, or causal upgrade."
+  ],
+  "next_records_needed": [
+    "A real Phase 73 result-adjudication receipt with current correction and withdrawal lineage.",
+    "A registered synthesis protocol and at least two eligible results with explicit compatibility and shared-dependency records.",
+    "A dual-adjudicated synthesis, open challenge packet, bounded option translation, and sunset rule."
+  ]
+}

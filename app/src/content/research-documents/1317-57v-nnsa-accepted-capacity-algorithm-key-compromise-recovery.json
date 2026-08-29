@@ -1,0 +1,70 @@
+{
+  "id": "research-doc-57v-nnsa-accepted-capacity-algorithm-key-compromise-recovery",
+  "collection_id": "research-collection-threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026",
+  "title": "NNSA accepted operating capacity receives bounded algorithm and key-compromise recovery",
+  "slug": "57v-nnsa-accepted-capacity-algorithm-key-compromise-recovery",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy",
+  "publication_date": "2026-08-10",
+  "document_type": "Data Release",
+  "summary": "A declared compromise freezes and revokes the affected key, disables its algorithm, requires a distinct replacement key and algorithm, threshold authorization, witnessed checkpoint, trusted time, and independent historical re-verification while reconstructed state remains inactive. Denominator: One compromise-recovery schema, twenty-six adversarial cases, seven valid or preservation routes, nineteen explicit rejections, and zero actual compromise events, recovery actions, algorithm migrations, or reader activations.",
+  "key_findings": [
+    "Evidence stage: Algorithm and key-compromise recovery controls.",
+    "Finding: A declared compromise freezes and revokes the affected key, disables its algorithm, requires a distinct replacement key and algorithm, threshold authorization, witnessed checkpoint, trusted time, and independent historical re-verification while reconstructed state remains inactive.",
+    "Denominator: One compromise-recovery schema, twenty-six adversarial cases, seven valid or preservation routes, nineteen explicit rejections, and zero actual compromise events, recovery actions, algorithm migrations, or reader activations.",
+    "Boundary: Fixture compromise events and recovery actions are drills, not reports of an operational compromise.",
+    "Boundary: Missing containment, reused keys or algorithms, absent quorum, witness or time proof, retroactive trust, automatic re-trust, rewrite, replay, backdating, activation, publication, closure, or evidence inflation reject.",
+    "Boundary: Recovery never retroactively trusts artifacts signed by a compromised key and cannot publish or close a hold automatically.",
+    "Next action: Recover NNSA accepted operating capacity only through clean key and algorithm replacement plus independent re-verification, with all reconstructed state inactive."
+  ],
+  "why_it_matters": "The record makes release quorum, witness independence, split-view detection, temporal ordering, verifier reproducibility, and compromise recovery independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Requires three-of-five release authorization without same-actor or same-domain quorum.",
+    "Federates independently witnessed checkpoints through cross-log gossip and trusted time.",
+    "Requires three independent verifier implementations and clean compromise recovery without retroactive trust."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Fixture compromise events and recovery actions are drills, not reports of an operational compromise.",
+    "Missing containment, reused keys or algorithms, absent quorum, witness or time proof, retroactive trust, automatic re-trust, rewrite, replay, backdating, activation, publication, closure, or evidence inflation reject.",
+    "Recovery never retroactively trusts artifacts signed by a compromised key and cannot publish or close a hold automatically.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-nnsa-fy2026-weapons-activities",
+  "supporting_source_ids": [
+    "source-57g-nnsa-fy2026-weapons-activities",
+    "source-56w-nnsa-fy2027-weapons-activities",
+    "source-56x-gao-nnsa-major-projects-2026",
+    "source-56q-gao-23-104661-recommendation-status",
+    "source-57f-nnsa-pit-production-current",
+    "source-57f-nnsa-stockpile-current",
+    "source-57g-nnsa-lap4-30-base-construction",
+    "source-57a-nnsa-w87-1-first-production-unit",
+    "source-57b-nnsa-sasc-testimony-may-2026",
+    "source-57b-nnsa-pit-production-draft-peis-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+  ],
+  "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+  "local_capture_path": "/downloads/threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026/official-links/48-phase57v-record.txt",
+  "archive_member": "official-links/48-phase57v-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-10"
+}

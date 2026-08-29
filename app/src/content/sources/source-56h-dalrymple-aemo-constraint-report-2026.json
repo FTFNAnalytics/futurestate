@@ -1,0 +1,35 @@
+{
+  "id": "source-56h-dalrymple-aemo-constraint-report-2026",
+  "name": "AEMO February 2026 Monthly Constraint Report",
+  "url": "https://www.aemo.com.au/-/media/files/electricity/nem/security_and_reliability/congestion-information/statistics/2026/february-2026.pdf?rev=64beb99418f441daaa631b2995a562d2&sc_lang=en",
+  "source_type": "Government Agency",
+  "credibility_level": "Tier 1",
+  "primary_topics": [
+    "Energy"
+  ],
+  "framework_layers": [
+    "Resource Foundations",
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "country_or_region": "Australia",
+  "update_frequency": "Event-driven",
+  "capture_priority": "High",
+  "known_limitations": "Constraint-equation violation intervals do not establish actual islanding, delivered service, full dispatch, availability, degradation, revenue, or customer outcomes. Phase 56H keeps the coverage ID, attribution, observation window, evidence state, and continuation rule attached.",
+  "last_checked_date": "2026-07-24",
+  "watch_lanes": [
+    "Power and Grid",
+    "Cross-Cutting Official Rails"
+  ],
+  "live_access_type": "Data Download",
+  "data_download_url": "https://www.aemo.com.au/-/media/files/electricity/nem/security_and_reliability/congestion-information/statistics/2026/february-2026.pdf?rev=64beb99418f441daaa631b2995a562d2&sc_lang=en",
+  "review_cadence_days": 60,
+  "monitoring_status": "Active",
+  "coverage_role": [
+    "Primary Data",
+    "Source Freshness"
+  ],
+  "jurisdiction": "South Australia",
+  "source_owner": "Australian Energy Market Operator",
+  "notes": "Phase 56H acquisition and partial-closure deepening source. Collection: open-rail-acquisition-partial-closure-deepening-2026."
+}

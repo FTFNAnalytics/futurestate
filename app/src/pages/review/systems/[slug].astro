@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/v03-editorial-program.json";
+
+export function getStaticPaths() {
+  return program.cross_system_stories.map((story) => ({ params: { slug: story.slug }, props: { storyId: story.story_id } }));
+}
+const { storyId } = Astro.props;
+const story = program.cross_system_stories.find((item) => item.story_id === storyId)!;
+const topics = await getCollection("topics");
+const selectedTopics = story.topic_ids.map((id) => topics.find((topic) => topic.data.id === id)).filter(Boolean);
+const topicNames = new Set(selectedTopics.map((topic) => topic!.data.name));
+const systems = await getCollection("localSystems");
+const selectedSystems = story.local_system_ids.map((id) => systems.find((system) => system.data.id === id)).filter(Boolean);
+const signals = (await getCollection("signals")).filter((signal) => signal.data.record_status === "Published" && topicNames.has(signal.data.primary_topic)).sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf());
+---
+
+<BaseLayout title={`${story.title} | Cross-system atlas`} description={story.editorial_question}>
+  <ReviewHeader eyebrow="Cross-system atlas" title={story.title} summary={story.editorial_question} phase={105} />
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Three lenses</div><h2>Read each system, then inspect the connections.</h2></div></div><div class="signal-grid">{selectedTopics.map((topic) => <article class="record-card"><MetaPill label="Canonical chapter" /><h3><a href={`/review/topics/${topic!.data.slug}/`}>{topic!.data.name}</a></h3><p>{topic!.data.summary}</p></article>)}</div></section>
+  {selectedSystems.length > 0 && <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Where this becomes local</div><h2>Conversion conditions are place-specific.</h2><p>These portraits show the authorities, infrastructure and missing local evidence behind the cross-system question.</p></div><div class="source-list">{selectedSystems.map((system) => <article class="source-row"><h3><a href={`/review/places/${system!.data.slug}/`}>{system!.data.name}</a></h3><p>{system!.data.current_equilibrium}</p></article>)}</div></section>}
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Evidence intersections</div><h2>Recent records across the selected topics.</h2></div><MetaPill label={`${signals.length} Published signals`} /></div><div class="signal-grid">{signals.slice(0, 9).map((signal) => <article class="record-card"><div class="meta-row"><MetaPill label={signal.data.primary_topic} /><MetaPill label={signal.data.maturity_level} /></div><h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3><p>{signal.data.summary}</p></article>)}</div></section>
+  <section class="page-section prose-page"><h2>Interpretation boundary</h2><p>{story.interpretation_boundary}</p><p>A connection shown here is a reason to inspect dependencies. It is not evidence that one record caused another, that a proposal will succeed, or that performance improved.</p></section>
+</BaseLayout>

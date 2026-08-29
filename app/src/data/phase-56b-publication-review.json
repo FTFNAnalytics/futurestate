@@ -1,0 +1,78 @@
+{
+  "phase": "56B",
+  "reviewed_date": "2026-07-24",
+  "portfolio_count": 4,
+  "panel_count": 12,
+  "primary_record_count": 17,
+  "signal_decisions": {
+    "reviewed": 16,
+    "promoted": [
+      "signal-56b-nasa-fisma-panel",
+      "signal-56b-dhs-fisma-panel",
+      "signal-56b-hhs-fisma-panel",
+      "signal-56b-current-applications-output-panel",
+      "signal-56b-island-components-output-panel",
+      "signal-56b-monaghan-medical-output-panel",
+      "signal-56b-moss-landing-capacity-panel",
+      "signal-56b-manatee-capacity-panel",
+      "signal-56b-gateway-capacity-panel",
+      "signal-56b-united-cancellation-panel",
+      "signal-56b-southwest-cancellation-panel",
+      "signal-56b-delta-cancellation-panel"
+    ],
+    "held": [
+      "signal-56b-agency-fisma-ranking-hold",
+      "signal-56b-manufacturer-productivity-ranking-hold",
+      "signal-56b-battery-performance-ranking-hold",
+      "signal-56b-carrier-ranking-hold"
+    ]
+  },
+  "document_decisions": {
+    "reviewed": 17,
+    "published": [
+      "research-doc-56b-nasa-fisma-fy2022",
+      "research-doc-56b-nasa-fisma-fy2023",
+      "research-doc-56b-nasa-fisma-fy2024",
+      "research-doc-56b-dhs-fisma-fy2021",
+      "research-doc-56b-dhs-fisma-fy2022",
+      "research-doc-56b-dhs-fisma-fy2023",
+      "research-doc-56b-hhs-fisma-fy2022",
+      "research-doc-56b-hhs-fisma-fy2023",
+      "research-doc-56b-hhs-fisma-fy2024",
+      "research-doc-56b-nist-mep-current-applications-lean",
+      "research-doc-56b-nist-mep-island-components-lean",
+      "research-doc-56b-nist-mep-monaghan-medical-lean",
+      "research-doc-56b-eia860-2021",
+      "research-doc-56b-eia860-2022",
+      "research-doc-56b-eia860-2023",
+      "research-doc-56b-bts-atcr-full-year-2024",
+      "research-doc-56b-dot-atcr-february-2026"
+    ],
+    "held": []
+  },
+  "portfolio_panels": {
+    "ai_cyber": [
+      "panel-56b-nasa-fisma",
+      "panel-56b-dhs-fisma",
+      "panel-56b-hhs-fisma"
+    ],
+    "manufacturing": [
+      "panel-56b-current-applications-output",
+      "panel-56b-island-components-output",
+      "panel-56b-monaghan-medical-output"
+    ],
+    "infrastructure": [
+      "panel-56b-moss-landing-battery-capacity",
+      "panel-56b-manatee-battery-capacity",
+      "panel-56b-gateway-battery-capacity"
+    ],
+    "mobility": [
+      "panel-56b-united-cancellations",
+      "panel-56b-southwest-cancellations",
+      "panel-56b-delta-cancellations"
+    ]
+  },
+  "entity_rule": "Every Published panel requires a stable entity ID and at least two compatible observations with unit, denominator, period, geography, method, attribution, and reporting breaks attached.",
+  "context_rule": "National context and entity performance remain separate evidence layers.",
+  "comparison_rule": "No cross-entity ranking, composite score, or causal claim is permitted without a common measurement contract and independent validation."
+}

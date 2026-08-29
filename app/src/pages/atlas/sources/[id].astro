@@ -28,6 +28,9 @@ const technologies = (await getCollection("technologies")).filter((technology) =
 const localSystems = (await getCollection("localSystems")).filter((system) =>
   system.data.source_ids.includes(source.data.id)
 );
+const researchDocuments = (await getCollection("researchDocuments")).filter(
+  (document) => document.data.source_id === source.data.id
+);
 const relatedDependencyMaps = (await getCollection("dependencyMaps"))
   .filter((dependencyMap) => dependencyMap.data.source_ids.includes(source.data.id))
   .map((dependencyMap) => ({
@@ -136,6 +139,30 @@ const endpointLinks = [
           <h2>How this source can feed future updates.</h2>
         </div>
         <p>{source.data.automation_notes}</p>
+      </div>
+    </section>
+  )}
+
+  {researchDocuments.length > 0 && (
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Research Collection Summary</div>
+          <h2>Reviewed documents from this source.</h2>
+        </div>
+        <a class="inline-link" href="/research/">All research collections</a>
+      </div>
+      <div class="grid">
+        {researchDocuments.map((document) => (
+          <article class="record-card">
+            <div class="meta-row">
+              <MetaPill label={document.data.document_type} />
+              <MetaPill label={document.data.capture_status} tone={document.data.capture_status === "Official link record" ? "review" : "possibility"} />
+            </div>
+            <h3><a href={`/research/documents/${document.data.slug}/`}>{document.data.title}</a></h3>
+            <p>{document.data.summary}</p>
+          </article>
+        ))}
       </div>
     </section>
   )}

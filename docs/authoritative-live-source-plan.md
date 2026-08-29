@@ -130,6 +130,12 @@ Remaining gaps after Phase 50B:
 - the selected USAspending award still needs site, permit, construction, commissioning, production, and offtake follow-up,
 - the gallium record still needs trade, supplier, inventory, qualification, project, substitution, and recycling follow-up.
 
+## Phase 51 Local Evidence Status
+
+Phases 51A through 51C added twelve official records across the two local dossiers. The Southwest chip-corridor trail now includes SRP implementation, the E-67 large-load tariff, a named online Meta electric-service project, Phoenix provider-water context, a project-specific TSMC wastewater agreement, the North Phoenix 3,500 PUD, current TSMC fab and employment claims, and named technician-apprenticeship cohorts. The Ontario trail follows application 24 254930 from notice through staff review and community-council recommendation and pairs it with Toronto's citywide Development Pipeline.
+
+Remaining local gaps are downstream rather than general: semiconductor-customer electric service and load evidence; completed wastewater and industrial-reclaimed-water infrastructure; named Phoenix permits and occupancy; apprenticeship outcomes and supplier capacity; Toronto City Council and enacted by-laws; and the named project's permit, start, completion, and occupancy trail.
+
 ## Acquisition Rule
 
 Add sources in this order:

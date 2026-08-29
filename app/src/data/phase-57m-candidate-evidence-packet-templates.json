@@ -1,0 +1,893 @@
+{
+  "phase": "57M",
+  "captured_date": "2026-08-08",
+  "registry_type": "Candidate-evidence packet templates and non-evidence fixtures",
+  "template_count": 9,
+  "empty_fixture_count": 9,
+  "incomplete_fixture_count": 9,
+  "total_fixture_count": 18,
+  "populated_synthetic_test_fields": 9,
+  "candidate_records_evaluated": 0,
+  "eligible_records_accepted": 0,
+  "triggers_fired": 0,
+  "fixtures_are_evidence": false,
+  "review_rule": "Empty and incomplete fixtures test workflow behavior only. Synthetic placeholders are not source values, cannot be combined across records, and cannot enter a publication decision as evidence.",
+  "templates": [
+    {
+      "template_id": "PACKET-TEMPLATE-01-REOPEN-AMTRAK-PIDS",
+      "contract_id": "REOPEN-AMTRAK-PIDS",
+      "queue_id": "INTAKE-01-REOPEN-AMTRAK-PIDS",
+      "evidence_rail": "Amtrak",
+      "phase57l_hold_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-11",
+      "candidate_record_type": "Code-bearing official current asset register or closeout table",
+      "required_field_count": 5,
+      "required_fields": [
+        "official_station_code",
+        "asset_id",
+        "reporting_period",
+        "closeout_state",
+        "acceptance_authority"
+      ],
+      "source_metadata_fields": [
+        "official_url",
+        "publisher",
+        "publication_date",
+        "source_authority",
+        "captured_date",
+        "record_identifier"
+      ],
+      "empty_packet": {
+        "fixture_id": "EMPTY-REOPEN-AMTRAK-PIDS",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_empty_workflow_fixture",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": null
+        },
+        "fields": {
+          "official_station_code": null,
+          "asset_id": null,
+          "reporting_period": null,
+          "closeout_state": null,
+          "acceptance_authority": null
+        },
+        "populated_field_count": 0,
+        "missing_required_fields": [
+          "official_station_code",
+          "asset_id",
+          "reporting_period",
+          "closeout_state",
+          "acceptance_authority"
+        ],
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "incomplete_packet": {
+        "fixture_id": "INCOMPLETE-REOPEN-AMTRAK-PIDS",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_deliberately_incomplete_synthetic_fixture",
+        "synthetic_test_condition": "missing_required_fields",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": "FIXTURE-NOT-A-SOURCE"
+        },
+        "fields": {
+          "official_station_code": "[fixture-only:station-code]",
+          "asset_id": null,
+          "reporting_period": null,
+          "closeout_state": null,
+          "acceptance_authority": null
+        },
+        "populated_field_count": 1,
+        "missing_required_fields": [
+          "asset_id",
+          "reporting_period",
+          "closeout_state",
+          "acceptance_authority"
+        ],
+        "expected_review_decision": "return_for_clarification",
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "cross_record_assembly_allowed": false,
+      "human_review_required": true
+    },
+    {
+      "template_id": "PACKET-TEMPLATE-02-REOPEN-AMTRAK-RELIABILITY",
+      "contract_id": "REOPEN-AMTRAK-RELIABILITY",
+      "queue_id": "INTAKE-02-REOPEN-AMTRAK-RELIABILITY",
+      "evidence_rail": "Amtrak",
+      "phase57l_hold_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-10",
+      "candidate_record_type": "Named-asset-period reliability table",
+      "required_field_count": 7,
+      "required_fields": [
+        "official_station_code",
+        "asset_id",
+        "measure_definition",
+        "numerator",
+        "denominator",
+        "reporting_period",
+        "source_authority"
+      ],
+      "source_metadata_fields": [
+        "official_url",
+        "publisher",
+        "publication_date",
+        "source_authority",
+        "captured_date",
+        "record_identifier"
+      ],
+      "empty_packet": {
+        "fixture_id": "EMPTY-REOPEN-AMTRAK-RELIABILITY",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_empty_workflow_fixture",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": null
+        },
+        "fields": {
+          "official_station_code": null,
+          "asset_id": null,
+          "measure_definition": null,
+          "numerator": null,
+          "denominator": null,
+          "reporting_period": null,
+          "source_authority": null
+        },
+        "populated_field_count": 0,
+        "missing_required_fields": [
+          "official_station_code",
+          "asset_id",
+          "measure_definition",
+          "numerator",
+          "denominator",
+          "reporting_period",
+          "source_authority"
+        ],
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "incomplete_packet": {
+        "fixture_id": "INCOMPLETE-REOPEN-AMTRAK-RELIABILITY",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_deliberately_incomplete_synthetic_fixture",
+        "synthetic_test_condition": "explicit_disqualifier",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": "FIXTURE-NOT-A-SOURCE"
+        },
+        "fields": {
+          "official_station_code": null,
+          "asset_id": null,
+          "measure_definition": "[fixture-only:systemwide-not-asset-level]",
+          "numerator": null,
+          "denominator": null,
+          "reporting_period": null,
+          "source_authority": null
+        },
+        "populated_field_count": 1,
+        "missing_required_fields": [
+          "official_station_code",
+          "asset_id",
+          "numerator",
+          "denominator",
+          "reporting_period",
+          "source_authority"
+        ],
+        "expected_review_decision": "reject",
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "cross_record_assembly_allowed": false,
+      "human_review_required": true
+    },
+    {
+      "template_id": "PACKET-TEMPLATE-03-REOPEN-LA-NEXTLINK-ADOPTION",
+      "contract_id": "REOPEN-LA-NEXTLINK-ADOPTION",
+      "queue_id": "INTAKE-03-REOPEN-LA-NEXTLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "phase57l_hold_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-11",
+      "candidate_record_type": "Privacy-safe official completed-period adoption table",
+      "required_field_count": 6,
+      "required_fields": [
+        "award_id",
+        "cohort_denominator",
+        "active_subscriber_measure",
+        "reporting_period",
+        "privacy_review",
+        "state_disposition"
+      ],
+      "source_metadata_fields": [
+        "official_url",
+        "publisher",
+        "publication_date",
+        "source_authority",
+        "captured_date",
+        "record_identifier"
+      ],
+      "empty_packet": {
+        "fixture_id": "EMPTY-REOPEN-LA-NEXTLINK-ADOPTION",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_empty_workflow_fixture",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": null
+        },
+        "fields": {
+          "award_id": null,
+          "cohort_denominator": null,
+          "active_subscriber_measure": null,
+          "reporting_period": null,
+          "privacy_review": null,
+          "state_disposition": null
+        },
+        "populated_field_count": 0,
+        "missing_required_fields": [
+          "award_id",
+          "cohort_denominator",
+          "active_subscriber_measure",
+          "reporting_period",
+          "privacy_review",
+          "state_disposition"
+        ],
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "incomplete_packet": {
+        "fixture_id": "INCOMPLETE-REOPEN-LA-NEXTLINK-ADOPTION",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_deliberately_incomplete_synthetic_fixture",
+        "synthetic_test_condition": "privacy_review_missing",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": "FIXTURE-NOT-A-SOURCE"
+        },
+        "fields": {
+          "award_id": "[fixture-only:award-id]",
+          "cohort_denominator": null,
+          "active_subscriber_measure": null,
+          "reporting_period": null,
+          "privacy_review": null,
+          "state_disposition": null
+        },
+        "populated_field_count": 1,
+        "missing_required_fields": [
+          "cohort_denominator",
+          "active_subscriber_measure",
+          "reporting_period",
+          "privacy_review",
+          "state_disposition"
+        ],
+        "expected_review_decision": "privacy_hold",
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "cross_record_assembly_allowed": false,
+      "human_review_required": true
+    },
+    {
+      "template_id": "PACKET-TEMPLATE-04-REOPEN-LA-STARLINK-ADOPTION",
+      "contract_id": "REOPEN-LA-STARLINK-ADOPTION",
+      "queue_id": "INTAKE-04-REOPEN-LA-STARLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "phase57l_hold_key": "LA-BEAD-STARLINK-HOLD-2026-11",
+      "candidate_record_type": "Privacy-safe official completed-period LEO adoption table",
+      "required_field_count": 6,
+      "required_fields": [
+        "award_id",
+        "cohort_denominator",
+        "active_subscriber_measure",
+        "reporting_period",
+        "privacy_review",
+        "state_disposition"
+      ],
+      "source_metadata_fields": [
+        "official_url",
+        "publisher",
+        "publication_date",
+        "source_authority",
+        "captured_date",
+        "record_identifier"
+      ],
+      "empty_packet": {
+        "fixture_id": "EMPTY-REOPEN-LA-STARLINK-ADOPTION",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_empty_workflow_fixture",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": null
+        },
+        "fields": {
+          "award_id": null,
+          "cohort_denominator": null,
+          "active_subscriber_measure": null,
+          "reporting_period": null,
+          "privacy_review": null,
+          "state_disposition": null
+        },
+        "populated_field_count": 0,
+        "missing_required_fields": [
+          "award_id",
+          "cohort_denominator",
+          "active_subscriber_measure",
+          "reporting_period",
+          "privacy_review",
+          "state_disposition"
+        ],
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "incomplete_packet": {
+        "fixture_id": "INCOMPLETE-REOPEN-LA-STARLINK-ADOPTION",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_deliberately_incomplete_synthetic_fixture",
+        "synthetic_test_condition": "privacy_review_missing",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": "FIXTURE-NOT-A-SOURCE"
+        },
+        "fields": {
+          "award_id": "[fixture-only:award-id]",
+          "cohort_denominator": null,
+          "active_subscriber_measure": null,
+          "reporting_period": null,
+          "privacy_review": null,
+          "state_disposition": null
+        },
+        "populated_field_count": 1,
+        "missing_required_fields": [
+          "cohort_denominator",
+          "active_subscriber_measure",
+          "reporting_period",
+          "privacy_review",
+          "state_disposition"
+        ],
+        "expected_review_decision": "privacy_hold",
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "cross_record_assembly_allowed": false,
+      "human_review_required": true
+    },
+    {
+      "template_id": "PACKET-TEMPLATE-05-REOPEN-MT-BEAD-QUARTER",
+      "contract_id": "REOPEN-MT-BEAD-QUARTER",
+      "queue_id": "INTAKE-05-REOPEN-MT-BEAD-QUARTER",
+      "evidence_rail": "Broadband",
+      "phase57l_hold_key": "MT-BEAD-QUARTERLY-HOLD-2026-11",
+      "candidate_record_type": "Completed public project-quarter table",
+      "required_field_count": 7,
+      "required_fields": [
+        "project_id",
+        "reporting_rail",
+        "reporting_period",
+        "source_schema_id",
+        "field_definition_version",
+        "privacy_review",
+        "state_disposition"
+      ],
+      "source_metadata_fields": [
+        "official_url",
+        "publisher",
+        "publication_date",
+        "source_authority",
+        "captured_date",
+        "record_identifier"
+      ],
+      "empty_packet": {
+        "fixture_id": "EMPTY-REOPEN-MT-BEAD-QUARTER",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_empty_workflow_fixture",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": null
+        },
+        "fields": {
+          "project_id": null,
+          "reporting_rail": null,
+          "reporting_period": null,
+          "source_schema_id": null,
+          "field_definition_version": null,
+          "privacy_review": null,
+          "state_disposition": null
+        },
+        "populated_field_count": 0,
+        "missing_required_fields": [
+          "project_id",
+          "reporting_rail",
+          "reporting_period",
+          "source_schema_id",
+          "field_definition_version",
+          "privacy_review",
+          "state_disposition"
+        ],
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "incomplete_packet": {
+        "fixture_id": "INCOMPLETE-REOPEN-MT-BEAD-QUARTER",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_deliberately_incomplete_synthetic_fixture",
+        "synthetic_test_condition": "period_not_completed",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": "FIXTURE-NOT-A-SOURCE"
+        },
+        "fields": {
+          "project_id": null,
+          "reporting_rail": null,
+          "reporting_period": "[fixture-only:open-period]",
+          "source_schema_id": null,
+          "field_definition_version": null,
+          "privacy_review": null,
+          "state_disposition": null
+        },
+        "populated_field_count": 1,
+        "missing_required_fields": [
+          "project_id",
+          "reporting_rail",
+          "source_schema_id",
+          "field_definition_version",
+          "privacy_review",
+          "state_disposition"
+        ],
+        "expected_review_decision": "period_hold",
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "cross_record_assembly_allowed": false,
+      "human_review_required": true
+    },
+    {
+      "template_id": "PACKET-TEMPLATE-06-REOPEN-HANFORD-MASS-BALANCE",
+      "contract_id": "REOPEN-HANFORD-MASS-BALANCE",
+      "queue_id": "INTAKE-06-REOPEN-HANFORD-MASS-BALANCE",
+      "evidence_rail": "Hanford",
+      "phase57l_hold_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-08",
+      "candidate_record_type": "Stable-identity transfer, receipt, and disposition evidence chain",
+      "required_field_count": 12,
+      "required_fields": [
+        "stable_batch_id",
+        "stable_container_id",
+        "from_stage",
+        "to_stage",
+        "transfer_date",
+        "receipt_date",
+        "measure",
+        "unit",
+        "method",
+        "quality_state",
+        "acceptance_state",
+        "disposition_state"
+      ],
+      "source_metadata_fields": [
+        "official_url",
+        "publisher",
+        "publication_date",
+        "source_authority",
+        "captured_date",
+        "record_identifier"
+      ],
+      "empty_packet": {
+        "fixture_id": "EMPTY-REOPEN-HANFORD-MASS-BALANCE",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_empty_workflow_fixture",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": null
+        },
+        "fields": {
+          "stable_batch_id": null,
+          "stable_container_id": null,
+          "from_stage": null,
+          "to_stage": null,
+          "transfer_date": null,
+          "receipt_date": null,
+          "measure": null,
+          "unit": null,
+          "method": null,
+          "quality_state": null,
+          "acceptance_state": null,
+          "disposition_state": null
+        },
+        "populated_field_count": 0,
+        "missing_required_fields": [
+          "stable_batch_id",
+          "stable_container_id",
+          "from_stage",
+          "to_stage",
+          "transfer_date",
+          "receipt_date",
+          "measure",
+          "unit",
+          "method",
+          "quality_state",
+          "acceptance_state",
+          "disposition_state"
+        ],
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "incomplete_packet": {
+        "fixture_id": "INCOMPLETE-REOPEN-HANFORD-MASS-BALANCE",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_deliberately_incomplete_synthetic_fixture",
+        "synthetic_test_condition": "identity_chain_incomplete",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": "FIXTURE-NOT-A-SOURCE"
+        },
+        "fields": {
+          "stable_batch_id": "[fixture-only:batch-id]",
+          "stable_container_id": null,
+          "from_stage": null,
+          "to_stage": null,
+          "transfer_date": null,
+          "receipt_date": null,
+          "measure": null,
+          "unit": null,
+          "method": null,
+          "quality_state": null,
+          "acceptance_state": null,
+          "disposition_state": null
+        },
+        "populated_field_count": 1,
+        "missing_required_fields": [
+          "stable_container_id",
+          "from_stage",
+          "to_stage",
+          "transfer_date",
+          "receipt_date",
+          "measure",
+          "unit",
+          "method",
+          "quality_state",
+          "acceptance_state",
+          "disposition_state"
+        ],
+        "expected_review_decision": "return_for_clarification",
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "cross_record_assembly_allowed": false,
+      "human_review_required": true
+    },
+    {
+      "template_id": "PACKET-TEMPLATE-07-REOPEN-NNSA-QUALIFIED-RATE",
+      "contract_id": "REOPEN-NNSA-QUALIFIED-RATE",
+      "queue_id": "INTAKE-07-REOPEN-NNSA-QUALIFIED-RATE",
+      "evidence_rail": "NNSA",
+      "phase57l_hold_key": "NNSA-PIT-RATE-HOLD-2026-11",
+      "candidate_record_type": "Official site-period recurring qualified-output table",
+      "required_field_count": 6,
+      "required_fields": [
+        "site_id",
+        "reporting_period",
+        "qualified_units",
+        "accepted_units",
+        "rate_denominator",
+        "acceptance_authority"
+      ],
+      "source_metadata_fields": [
+        "official_url",
+        "publisher",
+        "publication_date",
+        "source_authority",
+        "captured_date",
+        "record_identifier"
+      ],
+      "empty_packet": {
+        "fixture_id": "EMPTY-REOPEN-NNSA-QUALIFIED-RATE",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_empty_workflow_fixture",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": null
+        },
+        "fields": {
+          "site_id": null,
+          "reporting_period": null,
+          "qualified_units": null,
+          "accepted_units": null,
+          "rate_denominator": null,
+          "acceptance_authority": null
+        },
+        "populated_field_count": 0,
+        "missing_required_fields": [
+          "site_id",
+          "reporting_period",
+          "qualified_units",
+          "accepted_units",
+          "rate_denominator",
+          "acceptance_authority"
+        ],
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "incomplete_packet": {
+        "fixture_id": "INCOMPLETE-REOPEN-NNSA-QUALIFIED-RATE",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_deliberately_incomplete_synthetic_fixture",
+        "synthetic_test_condition": "acceptance_authority_mismatch",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": "FIXTURE-NOT-A-SOURCE"
+        },
+        "fields": {
+          "site_id": null,
+          "reporting_period": null,
+          "qualified_units": null,
+          "accepted_units": null,
+          "rate_denominator": null,
+          "acceptance_authority": "[fixture-only:self-attestation]"
+        },
+        "populated_field_count": 1,
+        "missing_required_fields": [
+          "site_id",
+          "reporting_period",
+          "qualified_units",
+          "accepted_units",
+          "rate_denominator"
+        ],
+        "expected_review_decision": "authority_hold",
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "cross_record_assembly_allowed": false,
+      "human_review_required": true
+    },
+    {
+      "template_id": "PACKET-TEMPLATE-08-REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "queue_id": "INTAKE-08-REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "evidence_rail": "NNSA",
+      "phase57l_hold_key": "NNSA-PIT-PEIS-HOLD-2026-11",
+      "candidate_record_type": "Official site-period installed, qualified, and accepted capacity table",
+      "required_field_count": 6,
+      "required_fields": [
+        "site_id",
+        "reporting_period",
+        "installed_capacity",
+        "qualified_capacity",
+        "accepted_capacity",
+        "acceptance_authority"
+      ],
+      "source_metadata_fields": [
+        "official_url",
+        "publisher",
+        "publication_date",
+        "source_authority",
+        "captured_date",
+        "record_identifier"
+      ],
+      "empty_packet": {
+        "fixture_id": "EMPTY-REOPEN-NNSA-ACCEPTED-CAPACITY",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_empty_workflow_fixture",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": null
+        },
+        "fields": {
+          "site_id": null,
+          "reporting_period": null,
+          "installed_capacity": null,
+          "qualified_capacity": null,
+          "accepted_capacity": null,
+          "acceptance_authority": null
+        },
+        "populated_field_count": 0,
+        "missing_required_fields": [
+          "site_id",
+          "reporting_period",
+          "installed_capacity",
+          "qualified_capacity",
+          "accepted_capacity",
+          "acceptance_authority"
+        ],
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "incomplete_packet": {
+        "fixture_id": "INCOMPLETE-REOPEN-NNSA-ACCEPTED-CAPACITY",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_deliberately_incomplete_synthetic_fixture",
+        "synthetic_test_condition": "acceptance_authority_mismatch",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": "FIXTURE-NOT-A-SOURCE"
+        },
+        "fields": {
+          "site_id": null,
+          "reporting_period": null,
+          "installed_capacity": null,
+          "qualified_capacity": null,
+          "accepted_capacity": null,
+          "acceptance_authority": "[fixture-only:self-attestation]"
+        },
+        "populated_field_count": 1,
+        "missing_required_fields": [
+          "site_id",
+          "reporting_period",
+          "installed_capacity",
+          "qualified_capacity",
+          "accepted_capacity"
+        ],
+        "expected_review_decision": "authority_hold",
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "cross_record_assembly_allowed": false,
+      "human_review_required": true
+    },
+    {
+      "template_id": "PACKET-TEMPLATE-09-REOPEN-NNSA-GAO-BASELINE",
+      "contract_id": "REOPEN-NNSA-GAO-BASELINE",
+      "queue_id": "INTAKE-09-REOPEN-NNSA-GAO-BASELINE",
+      "evidence_rail": "NNSA",
+      "phase57l_hold_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-12",
+      "candidate_record_type": "GAO recommendation-status record with responsive agency evidence",
+      "required_field_count": 5,
+      "required_fields": [
+        "recommendation_id",
+        "agency_evidence_date",
+        "agency_evidence_scope",
+        "gao_status",
+        "gao_status_date"
+      ],
+      "source_metadata_fields": [
+        "official_url",
+        "publisher",
+        "publication_date",
+        "source_authority",
+        "captured_date",
+        "record_identifier"
+      ],
+      "empty_packet": {
+        "fixture_id": "EMPTY-REOPEN-NNSA-GAO-BASELINE",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_empty_workflow_fixture",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": null
+        },
+        "fields": {
+          "recommendation_id": null,
+          "agency_evidence_date": null,
+          "agency_evidence_scope": null,
+          "gao_status": null,
+          "gao_status_date": null
+        },
+        "populated_field_count": 0,
+        "missing_required_fields": [
+          "recommendation_id",
+          "agency_evidence_date",
+          "agency_evidence_scope",
+          "gao_status",
+          "gao_status_date"
+        ],
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "incomplete_packet": {
+        "fixture_id": "INCOMPLETE-REOPEN-NNSA-GAO-BASELINE",
+        "fixture_only": true,
+        "evidence_status": "non_evidence_deliberately_incomplete_synthetic_fixture",
+        "synthetic_test_condition": "gao_status_date_missing",
+        "source_metadata": {
+          "official_url": null,
+          "publisher": null,
+          "publication_date": null,
+          "source_authority": null,
+          "captured_date": null,
+          "record_identifier": "FIXTURE-NOT-A-SOURCE"
+        },
+        "fields": {
+          "recommendation_id": null,
+          "agency_evidence_date": null,
+          "agency_evidence_scope": null,
+          "gao_status": null,
+          "gao_status_date": "[fixture-only:undated-status]"
+        },
+        "populated_field_count": 1,
+        "missing_required_fields": [
+          "recommendation_id",
+          "agency_evidence_date",
+          "agency_evidence_scope",
+          "gao_status"
+        ],
+        "expected_review_decision": "period_hold",
+        "eligible_record": false,
+        "fires_trigger": false,
+        "automated_publication_allowed": false
+      },
+      "cross_record_assembly_allowed": false,
+      "human_review_required": true
+    }
+  ]
+}

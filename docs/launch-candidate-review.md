@@ -146,13 +146,65 @@ Phase 35 also added publication-date visibility to signal detail pages. A `Publi
 - evidence gaps where relevant,
 - original source links.
 
+## Phase 53 Publication Review
+
+Review date: 2026-07-22.
+
+Phase 53 applied the current publication policy to all 33 signal records. The result is a nine-record Published set, a 23-record `In Review` shelf, and one retained `Draft Sample`.
+
+Six records moved from `In Review` to `Published`:
+
+| Record | Decision | Boundary retained |
+| --- | --- | --- |
+| `signal-doe-critical-minerals-materials-accelerator-nofo` | Published | Funding opportunity, not an award or deployment result. |
+| `signal-nsf-ai-materials-institute-award-2433348` | Published | Award and proposed scope, not scientific results or delivered infrastructure. |
+| `signal-usgs-2026-gallium-import-supplied-semiconductor-constraint` | Published | National commodity structure, not a current shortage or facility disruption. |
+| `signal-srp-e67-large-load-service-conditions` | Published | Tariff conditions, not proof of adequate site capacity or a customer agreement. |
+| `signal-srp-huckleberry-meta-mesa-online-service` | Published | One named customer project, not corridor-wide spare capacity or transfer to TSMC. |
+| `signal-toronto-2025-development-pipeline-delivery-gap` | Published | Pipeline potential and stage counts, not guaranteed completions. |
+
+The three earlier Published records also passed a current-source recheck: NOAA's 9 July ENSO discussion, USGS Mineral Commodity Summaries 2026 version 1.3, and NIST's current PQC standards and migration page.
+
+No record moved to `Needs Update` or `Archived`. The remaining records stay in review for specific item, local stage, outcome, live-award, authority, or interested-party evidence reasons. The complete record-by-record matrix is in `docs/work-packages/phase-53-publication-candidate-review.md`.
+
 ## Follow-Up
 
-Phase 36 completed the launch package and static deployment-readiness checklist without deploying.
+Phase 53 completed the second publication gate without deploying.
 
 Current next scope:
 
-- run final desktop and mobile browser QA,
-- inspect `robots.txt`, `sitemap.xml`, and metadata through local or preview routes,
-- decide whether to execute a Cloudflare Pages preview deploy,
+- run Phase 54 desktop and mobile browser and accessibility QA,
+- inspect the nine Published routes, update log, exports, `robots.txt`, `sitemap.xml`, canonical metadata, and noindex routes,
+- prepare the v0.2 launch note and limitations statement,
+- decide whether to execute a preview deploy only after explicit approval,
 - keep production domain attachment, DNS changes, analytics, automation, ingestion, CMS, database migration, scoring, and accounts out of scope unless separately approved.
+
+## Phase 55F Publication Review
+
+Review date: 2026-07-23.
+
+Phase 55F reviewed the eight records repaired or added in Phase 55E. Seven moved to `Published`:
+
+| Record | Decision boundary |
+| --- | --- |
+| `signal-sample-009` | Aggregate IEA data-centre electricity growth and bottleneck analysis, not AI-only demand or a local capacity forecast. |
+| `signal-sample-005` | NHTSA reporting rule and data-quality limits, not normalized manufacturer safety rankings. |
+| `signal-sample-003` | Definitive CHIPS funding agreement, not a qualified material, commercial product, fab, or production result. |
+| `signal-sample-006` | Artemis hardware-integration milestone, not launch readiness, schedule proof, or mission success. |
+| `signal-sample-008` | USDA award portfolio, not successful traits, field performance, commercialization, or adoption. |
+| `signal-statcan-building-permits-construction-intentions-signal` | Specific monthly permit intentions, not starts, completions, affordability, or delivered housing. |
+| `signal-doe-storage-step-prize-production-readiness` | Prize design and funding intent, not a winner, validated production process, or deployment. |
+
+`signal-sample-010` remains `In Review`. Joby's first-flight and aircraft-status descriptions remain interested-party evidence, while the selected FAA page provides general program context rather than independent confirmation of the aircraft milestone.
+
+The complete decision matrix is in `docs/work-packages/phase-55f-publication-readiness-review.md`.
+
+## Phase 55F Follow-Up
+
+The Published set now contains 16 records and the public update log contains eight entries. The next content lane should follow named downstream evidence rather than add volume:
+
+- Toronto Council and by-law evidence after the 29-31 July 2026 meeting window,
+- Project Baccara's executed county record or final air permit,
+- or a named federal-agency post-quantum implementation or procurement record.
+
+The Sites deployment remains owner-only. Package freeze, public access, custom-domain attachment, Hostinger DNS changes, and public launch remain separate decisions.

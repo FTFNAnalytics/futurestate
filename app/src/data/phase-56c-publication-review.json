@@ -1,0 +1,33 @@
+{
+  "phase": "56C",
+  "reviewed_date": "2026-07-24",
+  "source_count": 20,
+  "document_count": 24,
+  "dossier_count": 12,
+  "signal_decisions": {
+    "reviewed": 16,
+    "promoted": [
+      "signal-56c-nasa-cyber-controls",
+      "signal-56c-dhs-cyber-controls",
+      "signal-56c-hhs-cyber-controls",
+      "signal-56c-current-applications-drivers",
+      "signal-56c-island-components-drivers",
+      "signal-56c-monaghan-medical-drivers",
+      "signal-56c-moss-landing-constraints",
+      "signal-56c-manatee-constraints",
+      "signal-56c-gateway-constraints",
+      "signal-56c-united-service-constraints",
+      "signal-56c-southwest-service-constraints",
+      "signal-56c-delta-service-constraints"
+    ],
+    "held": [
+      "signal-56c-agency-causal-inference-hold",
+      "signal-56c-manufacturer-causal-inference-hold",
+      "signal-56c-battery-causal-inference-hold",
+      "signal-56c-carrier-causal-inference-hold"
+    ]
+  },
+  "attribution_rule": "Every association identifies who made the claim and whether a separate official record independently validates it.",
+  "temporal_rule": "Every dossier orders baseline, intervention or input, constraint, and later observation without converting sequence into proof.",
+  "comparison_rule": "No ranking, composite score, readiness score, or unsupported cross-entity comparison is permitted."
+}

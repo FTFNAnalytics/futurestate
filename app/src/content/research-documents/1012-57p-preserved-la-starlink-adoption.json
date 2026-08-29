@@ -1,0 +1,63 @@
+{
+  "id": "research-doc-57p-preserved-la-starlink-adoption",
+  "collection_id": "research-collection-dual-review-audit-chains-adjudication-publication-decision-receipts-2026",
+  "title": "Louisiana Starlink adoption remains In Review after dual-review audit and adjudication execution",
+  "slug": "57p-preserved-la-starlink-adoption",
+  "record_status": "In Review",
+  "publisher": "Louisiana Office of Broadband Development and Connectivity",
+  "publication_date": "2026-08-09",
+  "document_type": "Technical Report",
+  "summary": "37 fixture-only cases pass, but no actual evidence receipt, publication receipt, adjudication, escalation, or manual release authorization exists. Denominator: One inherited hold, one append-only chain, 9 audit cases, 18 publication-receipt cases, 10 adjudication cases, and zero actual workflow events.",
+  "key_findings": [
+    "Evidence stage: Dual-review audit and adjudication hold.",
+    "Finding: 37 fixture-only cases pass, but no actual evidence receipt, publication receipt, adjudication, escalation, or manual release authorization exists.",
+    "Denominator: One inherited hold, one append-only chain, 9 audit cases, 18 publication-receipt cases, 10 adjudication cases, and zero actual workflow events.",
+    "Boundary: Synthetic dual-review chains are not actual audit history.",
+    "Boundary: No fixture creates a reviewer identity, adjudication, or release decision.",
+    "Boundary: The inherited hold cannot close or publish automatically.",
+    "Next action: Privacy-safe official completed-period LEO adoption table"
+  ],
+  "why_it_matters": "The hold remains actionable while synthetic audit and adjudication results stay separate from an actual cited packet and named human decisions.",
+  "ftfn_relevance": [
+    "Links but never merges evidence-review and publication-review receipts across all nine contracts.",
+    "Tests publication reason-code compatibility, immutable attribution, disagreement ownership, and append-only supersession.",
+    "Proves that even concordant accept requires separate manual release authorization and cannot publish automatically."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Synthetic dual-review chains are not actual audit history.",
+    "No fixture creates a reviewer identity, adjudication, or release decision.",
+    "The inherited hold cannot close or publish automatically.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57b-louisiana-starlink-bead-agreement",
+  "supporting_source_ids": [
+    "source-57b-louisiana-starlink-bead-agreement",
+    "source-57f-montana-leo-quarterly-instructions-june-2026"
+  ],
+  "supporting_official_urls": [
+    "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access",
+    "https://doa.mt.gov/_docs/connectmt/LEO-Quarterly-Report-Instructions-6.1.26.pdf"
+  ],
+  "official_url": "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access",
+  "local_capture_path": "/downloads/dual-review-audit-chains-adjudication-publication-decision-receipts-2026/official-links/24-preserved-la-starlink-adoption.txt",
+  "archive_member": "official-links/24-preserved-la-starlink-adoption.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}

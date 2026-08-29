@@ -1,0 +1,70 @@
+{
+  "id": "research-doc-57t-nnsa-accepted-capacity-signed-release-index-chain",
+  "collection_id": "research-collection-canonical-verification-endpoints-signed-release-indexes-cache-mirror-recovery-2026",
+  "title": "NNSA accepted operating capacity receives an append-only signed release-index chain",
+  "slug": "57t-nnsa-accepted-capacity-signed-release-index-chain",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy",
+  "publication_date": "2026-08-09",
+  "document_type": "Data Release",
+  "summary": "Each release index binds the canonical verification URI, current manifest and export digests, release sequence, prior index digest, signing-key identity, index digest, and detached signature without erasing earlier indexes. Denominator: One contract-specific signed-index schema, eighteen adversarial cases, six valid or preservation routes, twelve explicit rejections, and zero production indexes signed.",
+  "key_findings": [
+    "Evidence stage: Signed release-index chain controls.",
+    "Finding: Each release index binds the canonical verification URI, current manifest and export digests, release sequence, prior index digest, signing-key identity, index digest, and detached signature without erasing earlier indexes.",
+    "Denominator: One contract-specific signed-index schema, eighteen adversarial cases, six valid or preservation routes, twelve explicit rejections, and zero production indexes signed.",
+    "Boundary: Fixture signatures are nonproduction controls and do not represent a released artifact.",
+    "Boundary: Missing, unauthorized, mismatched, regressive, substituted, or erasing indexes reject.",
+    "Boundary: A valid signature establishes integrity and signer-key binding, not evidence truth or acceptance.",
+    "Next action: Append the next NNSA accepted operating capacity release index only with a separately governed signing identity and an intact prior-index digest."
+  ],
+  "why_it_matters": "The record makes canonical delivery, signed release lineage, cache coherence, mirror and redirect integrity, and immutable-source recovery independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Binds stable reader-verification URIs to the exact current Phase 57S manifest and export.",
+    "Fails stale caches, transformed mirrors, and unsafe redirects closed.",
+    "Reconstructs reader state only from immutable history under a nonactivating recovery receipt."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Fixture signatures are nonproduction controls and do not represent a released artifact.",
+    "Missing, unauthorized, mismatched, regressive, substituted, or erasing indexes reject.",
+    "A valid signature establishes integrity and signer-key binding, not evidence truth or acceptance.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-nnsa-fy2026-weapons-activities",
+  "supporting_source_ids": [
+    "source-57g-nnsa-fy2026-weapons-activities",
+    "source-56w-nnsa-fy2027-weapons-activities",
+    "source-56x-gao-nnsa-major-projects-2026",
+    "source-56q-gao-23-104661-recommendation-status",
+    "source-57f-nnsa-pit-production-current",
+    "source-57f-nnsa-stockpile-current",
+    "source-57g-nnsa-lap4-30-base-construction",
+    "source-57a-nnsa-w87-1-first-production-unit",
+    "source-57b-nnsa-sasc-testimony-may-2026",
+    "source-57b-nnsa-pit-production-draft-peis-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+  ],
+  "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+  "local_capture_path": "/downloads/canonical-verification-endpoints-signed-release-indexes-cache-mirror-recovery-2026/official-links/37-phase57t-record.txt",
+  "archive_member": "official-links/37-phase57t-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}

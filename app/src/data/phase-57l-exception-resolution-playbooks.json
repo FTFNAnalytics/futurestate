@@ -1,0 +1,738 @@
+{
+  "phase": "57L",
+  "captured_date": "2026-08-08",
+  "registry_type": "Contract exception-resolution playbooks",
+  "playbook_count": 9,
+  "field_action_count": 60,
+  "unresolved_exception_count": 45,
+  "automated_closure_actions": 0,
+  "human_review_required": true,
+  "playbooks": [
+    {
+      "playbook_id": "PLAYBOOK-REOPEN-AMTRAK-PIDS",
+      "contract_id": "REOPEN-AMTRAK-PIDS",
+      "evidence_rail": "Amtrak",
+      "phase57k_hold_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-10",
+      "exception_count": 5,
+      "field_action_count": 5,
+      "candidate_record_type": "Code-bearing official current asset register or closeout table",
+      "intake_decision": "keep_hold_in_review",
+      "trigger_state": "not_fired",
+      "escalation_rule": "Escalate to human publication review only after one candidate package clears every field; retain agency and independent authority as separate evidence layers.",
+      "actions": [
+        {
+          "action_id": "REOPEN-AMTRAK-PIDS-ACTION-01",
+          "field_name": "official_station_code",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit official_station_code value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Code-bearing official current asset register or closeout table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-AMTRAK-PIDS-ACTION-02",
+          "field_name": "asset_id",
+          "current_coverage_state": "incompatible",
+          "reviewer_action": "Require a contract-compatible asset_id definition and prohibit coercion, aliasing, or cross-record migration.",
+          "evidence_needed": "Code-bearing official current asset register or closeout table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-AMTRAK-PIDS-ACTION-03",
+          "field_name": "reporting_period",
+          "current_coverage_state": "period_mismatched",
+          "reviewer_action": "Obtain reporting_period for the same completed reporting period as every other required field.",
+          "evidence_needed": "Code-bearing official current asset register or closeout table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-AMTRAK-PIDS-ACTION-04",
+          "field_name": "closeout_state",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit closeout_state value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Code-bearing official current asset register or closeout table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-AMTRAK-PIDS-ACTION-05",
+          "field_name": "acceptance_authority",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit acceptance_authority value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Code-bearing official current asset register or closeout table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "playbook_id": "PLAYBOOK-REOPEN-AMTRAK-RELIABILITY",
+      "contract_id": "REOPEN-AMTRAK-RELIABILITY",
+      "evidence_rail": "Amtrak",
+      "phase57k_hold_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-09",
+      "exception_count": 6,
+      "field_action_count": 7,
+      "candidate_record_type": "Named-asset-period reliability table",
+      "intake_decision": "keep_hold_in_review",
+      "trigger_state": "not_fired",
+      "escalation_rule": "Escalate to human publication review only after one candidate package clears every field; retain agency and independent authority as separate evidence layers.",
+      "actions": [
+        {
+          "action_id": "REOPEN-AMTRAK-RELIABILITY-ACTION-01",
+          "field_name": "official_station_code",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit official_station_code value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Named-asset-period reliability table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-AMTRAK-RELIABILITY-ACTION-02",
+          "field_name": "asset_id",
+          "current_coverage_state": "incompatible",
+          "reviewer_action": "Require a contract-compatible asset_id definition and prohibit coercion, aliasing, or cross-record migration.",
+          "evidence_needed": "Named-asset-period reliability table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-AMTRAK-RELIABILITY-ACTION-03",
+          "field_name": "measure_definition",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit measure_definition value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Named-asset-period reliability table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-AMTRAK-RELIABILITY-ACTION-04",
+          "field_name": "numerator",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit numerator value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Named-asset-period reliability table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-AMTRAK-RELIABILITY-ACTION-05",
+          "field_name": "denominator",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit denominator value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Named-asset-period reliability table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-AMTRAK-RELIABILITY-ACTION-06",
+          "field_name": "reporting_period",
+          "current_coverage_state": "period_mismatched",
+          "reviewer_action": "Obtain reporting_period for the same completed reporting period as every other required field.",
+          "evidence_needed": "Named-asset-period reliability table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-AMTRAK-RELIABILITY-ACTION-07",
+          "field_name": "source_authority",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate source_authority inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "Named-asset-period reliability table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "playbook_id": "PLAYBOOK-REOPEN-LA-NEXTLINK-ADOPTION",
+      "contract_id": "REOPEN-LA-NEXTLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "phase57k_hold_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-10",
+      "exception_count": 4,
+      "field_action_count": 6,
+      "candidate_record_type": "Privacy-safe official completed-period adoption table",
+      "intake_decision": "keep_hold_in_review",
+      "trigger_state": "not_fired",
+      "escalation_rule": "Escalate to human publication review only after one candidate package clears every field; retain agency and independent authority as separate evidence layers.",
+      "actions": [
+        {
+          "action_id": "REOPEN-LA-NEXTLINK-ADOPTION-ACTION-01",
+          "field_name": "award_id",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate award_id inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "Privacy-safe official completed-period adoption table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-LA-NEXTLINK-ADOPTION-ACTION-02",
+          "field_name": "cohort_denominator",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate cohort_denominator inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "Privacy-safe official completed-period adoption table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-LA-NEXTLINK-ADOPTION-ACTION-03",
+          "field_name": "active_subscriber_measure",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit active_subscriber_measure value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Privacy-safe official completed-period adoption table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-LA-NEXTLINK-ADOPTION-ACTION-04",
+          "field_name": "reporting_period",
+          "current_coverage_state": "period_mismatched",
+          "reviewer_action": "Obtain reporting_period for the same completed reporting period as every other required field.",
+          "evidence_needed": "Privacy-safe official completed-period adoption table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-LA-NEXTLINK-ADOPTION-ACTION-05",
+          "field_name": "privacy_review",
+          "current_coverage_state": "privacy_gated",
+          "reviewer_action": "Require a public privacy review or suppression-safe aggregate that explicitly clears privacy_review for publication.",
+          "evidence_needed": "Privacy-safe official completed-period adoption table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-LA-NEXTLINK-ADOPTION-ACTION-06",
+          "field_name": "state_disposition",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit state_disposition value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Privacy-safe official completed-period adoption table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "playbook_id": "PLAYBOOK-REOPEN-LA-STARLINK-ADOPTION",
+      "contract_id": "REOPEN-LA-STARLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "phase57k_hold_key": "LA-BEAD-STARLINK-HOLD-2026-10",
+      "exception_count": 4,
+      "field_action_count": 6,
+      "candidate_record_type": "Privacy-safe official completed-period LEO adoption table",
+      "intake_decision": "keep_hold_in_review",
+      "trigger_state": "not_fired",
+      "escalation_rule": "Escalate to human publication review only after one candidate package clears every field; retain agency and independent authority as separate evidence layers.",
+      "actions": [
+        {
+          "action_id": "REOPEN-LA-STARLINK-ADOPTION-ACTION-01",
+          "field_name": "award_id",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate award_id inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "Privacy-safe official completed-period LEO adoption table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-LA-STARLINK-ADOPTION-ACTION-02",
+          "field_name": "cohort_denominator",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate cohort_denominator inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "Privacy-safe official completed-period LEO adoption table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-LA-STARLINK-ADOPTION-ACTION-03",
+          "field_name": "active_subscriber_measure",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit active_subscriber_measure value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Privacy-safe official completed-period LEO adoption table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-LA-STARLINK-ADOPTION-ACTION-04",
+          "field_name": "reporting_period",
+          "current_coverage_state": "period_mismatched",
+          "reviewer_action": "Obtain reporting_period for the same completed reporting period as every other required field.",
+          "evidence_needed": "Privacy-safe official completed-period LEO adoption table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-LA-STARLINK-ADOPTION-ACTION-05",
+          "field_name": "privacy_review",
+          "current_coverage_state": "privacy_gated",
+          "reviewer_action": "Require a public privacy review or suppression-safe aggregate that explicitly clears privacy_review for publication.",
+          "evidence_needed": "Privacy-safe official completed-period LEO adoption table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-LA-STARLINK-ADOPTION-ACTION-06",
+          "field_name": "state_disposition",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit state_disposition value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Privacy-safe official completed-period LEO adoption table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "playbook_id": "PLAYBOOK-REOPEN-MT-BEAD-QUARTER",
+      "contract_id": "REOPEN-MT-BEAD-QUARTER",
+      "evidence_rail": "Broadband",
+      "phase57k_hold_key": "MT-BEAD-QUARTERLY-HOLD-2026-10",
+      "exception_count": 5,
+      "field_action_count": 7,
+      "candidate_record_type": "Completed public project-quarter table",
+      "intake_decision": "keep_hold_in_review",
+      "trigger_state": "not_fired",
+      "escalation_rule": "Escalate to human publication review only after one candidate package clears every field; retain agency and independent authority as separate evidence layers.",
+      "actions": [
+        {
+          "action_id": "REOPEN-MT-BEAD-QUARTER-ACTION-01",
+          "field_name": "project_id",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate project_id inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "Completed public project-quarter table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-MT-BEAD-QUARTER-ACTION-02",
+          "field_name": "reporting_rail",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate reporting_rail inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "Completed public project-quarter table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-MT-BEAD-QUARTER-ACTION-03",
+          "field_name": "reporting_period",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit reporting_period value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Completed public project-quarter table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-MT-BEAD-QUARTER-ACTION-04",
+          "field_name": "source_schema_id",
+          "current_coverage_state": "incompatible",
+          "reviewer_action": "Require a contract-compatible source_schema_id definition and prohibit coercion, aliasing, or cross-record migration.",
+          "evidence_needed": "Completed public project-quarter table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-MT-BEAD-QUARTER-ACTION-05",
+          "field_name": "field_definition_version",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit field_definition_version value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Completed public project-quarter table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-MT-BEAD-QUARTER-ACTION-06",
+          "field_name": "privacy_review",
+          "current_coverage_state": "privacy_gated",
+          "reviewer_action": "Require a public privacy review or suppression-safe aggregate that explicitly clears privacy_review for publication.",
+          "evidence_needed": "Completed public project-quarter table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-MT-BEAD-QUARTER-ACTION-07",
+          "field_name": "state_disposition",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit state_disposition value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Completed public project-quarter table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "playbook_id": "PLAYBOOK-REOPEN-HANFORD-MASS-BALANCE",
+      "contract_id": "REOPEN-HANFORD-MASS-BALANCE",
+      "evidence_rail": "Hanford",
+      "phase57k_hold_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-07",
+      "exception_count": 9,
+      "field_action_count": 12,
+      "candidate_record_type": "Stable-identity transfer, receipt, and disposition evidence chain",
+      "intake_decision": "keep_hold_in_review",
+      "trigger_state": "not_fired",
+      "escalation_rule": "Escalate to human publication review only after one candidate package clears every field; retain agency and independent authority as separate evidence layers.",
+      "actions": [
+        {
+          "action_id": "REOPEN-HANFORD-MASS-BALANCE-ACTION-01",
+          "field_name": "stable_batch_id",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit stable_batch_id value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Stable-identity transfer, receipt, and disposition evidence chain",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-HANFORD-MASS-BALANCE-ACTION-02",
+          "field_name": "stable_container_id",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit stable_container_id value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Stable-identity transfer, receipt, and disposition evidence chain",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-HANFORD-MASS-BALANCE-ACTION-03",
+          "field_name": "from_stage",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate from_stage inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "Stable-identity transfer, receipt, and disposition evidence chain",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-HANFORD-MASS-BALANCE-ACTION-04",
+          "field_name": "to_stage",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate to_stage inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "Stable-identity transfer, receipt, and disposition evidence chain",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-HANFORD-MASS-BALANCE-ACTION-05",
+          "field_name": "transfer_date",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit transfer_date value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Stable-identity transfer, receipt, and disposition evidence chain",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-HANFORD-MASS-BALANCE-ACTION-06",
+          "field_name": "receipt_date",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit receipt_date value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Stable-identity transfer, receipt, and disposition evidence chain",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-HANFORD-MASS-BALANCE-ACTION-07",
+          "field_name": "measure",
+          "current_coverage_state": "incompatible",
+          "reviewer_action": "Require a contract-compatible measure definition and prohibit coercion, aliasing, or cross-record migration.",
+          "evidence_needed": "Stable-identity transfer, receipt, and disposition evidence chain",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-HANFORD-MASS-BALANCE-ACTION-08",
+          "field_name": "unit",
+          "current_coverage_state": "incompatible",
+          "reviewer_action": "Require a contract-compatible unit definition and prohibit coercion, aliasing, or cross-record migration.",
+          "evidence_needed": "Stable-identity transfer, receipt, and disposition evidence chain",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-HANFORD-MASS-BALANCE-ACTION-09",
+          "field_name": "method",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate method inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "Stable-identity transfer, receipt, and disposition evidence chain",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-HANFORD-MASS-BALANCE-ACTION-10",
+          "field_name": "quality_state",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit quality_state value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Stable-identity transfer, receipt, and disposition evidence chain",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-HANFORD-MASS-BALANCE-ACTION-11",
+          "field_name": "acceptance_state",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit acceptance_state value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Stable-identity transfer, receipt, and disposition evidence chain",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-HANFORD-MASS-BALANCE-ACTION-12",
+          "field_name": "disposition_state",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit disposition_state value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Stable-identity transfer, receipt, and disposition evidence chain",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "playbook_id": "PLAYBOOK-REOPEN-NNSA-QUALIFIED-RATE",
+      "contract_id": "REOPEN-NNSA-QUALIFIED-RATE",
+      "evidence_rail": "NNSA",
+      "phase57k_hold_key": "NNSA-PIT-RATE-HOLD-2026-10",
+      "exception_count": 5,
+      "field_action_count": 6,
+      "candidate_record_type": "Official site-period recurring qualified-output table",
+      "intake_decision": "keep_hold_in_review",
+      "trigger_state": "not_fired",
+      "escalation_rule": "Escalate to human publication review only after one candidate package clears every field; retain agency and independent authority as separate evidence layers.",
+      "actions": [
+        {
+          "action_id": "REOPEN-NNSA-QUALIFIED-RATE-ACTION-01",
+          "field_name": "site_id",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate site_id inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "Official site-period recurring qualified-output table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-QUALIFIED-RATE-ACTION-02",
+          "field_name": "reporting_period",
+          "current_coverage_state": "period_mismatched",
+          "reviewer_action": "Obtain reporting_period for the same completed reporting period as every other required field.",
+          "evidence_needed": "Official site-period recurring qualified-output table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-QUALIFIED-RATE-ACTION-03",
+          "field_name": "qualified_units",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit qualified_units value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Official site-period recurring qualified-output table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-QUALIFIED-RATE-ACTION-04",
+          "field_name": "accepted_units",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit accepted_units value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Official site-period recurring qualified-output table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-QUALIFIED-RATE-ACTION-05",
+          "field_name": "rate_denominator",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit rate_denominator value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Official site-period recurring qualified-output table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-QUALIFIED-RATE-ACTION-06",
+          "field_name": "acceptance_authority",
+          "current_coverage_state": "authority_mismatched",
+          "reviewer_action": "Obtain acceptance_authority from the named acceptance or closure authority and retain the current source as a separate evidence layer.",
+          "evidence_needed": "Official site-period recurring qualified-output table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "playbook_id": "PLAYBOOK-REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "evidence_rail": "NNSA",
+      "phase57k_hold_key": "NNSA-PIT-PEIS-HOLD-2026-10",
+      "exception_count": 5,
+      "field_action_count": 6,
+      "candidate_record_type": "Official site-period installed, qualified, and accepted capacity table",
+      "intake_decision": "keep_hold_in_review",
+      "trigger_state": "not_fired",
+      "escalation_rule": "Escalate to human publication review only after one candidate package clears every field; retain agency and independent authority as separate evidence layers.",
+      "actions": [
+        {
+          "action_id": "REOPEN-NNSA-ACCEPTED-CAPACITY-ACTION-01",
+          "field_name": "site_id",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate site_id inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "Official site-period installed, qualified, and accepted capacity table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-ACCEPTED-CAPACITY-ACTION-02",
+          "field_name": "reporting_period",
+          "current_coverage_state": "period_mismatched",
+          "reviewer_action": "Obtain reporting_period for the same completed reporting period as every other required field.",
+          "evidence_needed": "Official site-period installed, qualified, and accepted capacity table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-ACCEPTED-CAPACITY-ACTION-03",
+          "field_name": "installed_capacity",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit installed_capacity value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Official site-period installed, qualified, and accepted capacity table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-ACCEPTED-CAPACITY-ACTION-04",
+          "field_name": "qualified_capacity",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit qualified_capacity value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Official site-period installed, qualified, and accepted capacity table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-ACCEPTED-CAPACITY-ACTION-05",
+          "field_name": "accepted_capacity",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit accepted_capacity value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "Official site-period installed, qualified, and accepted capacity table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-ACCEPTED-CAPACITY-ACTION-06",
+          "field_name": "acceptance_authority",
+          "current_coverage_state": "authority_mismatched",
+          "reviewer_action": "Obtain acceptance_authority from the named acceptance or closure authority and retain the current source as a separate evidence layer.",
+          "evidence_needed": "Official site-period installed, qualified, and accepted capacity table",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "playbook_id": "PLAYBOOK-REOPEN-NNSA-GAO-BASELINE",
+      "contract_id": "REOPEN-NNSA-GAO-BASELINE",
+      "evidence_rail": "NNSA",
+      "phase57k_hold_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-11",
+      "exception_count": 2,
+      "field_action_count": 5,
+      "candidate_record_type": "GAO recommendation-status record with responsive agency evidence",
+      "intake_decision": "keep_hold_in_review",
+      "trigger_state": "not_fired",
+      "escalation_rule": "Escalate to human publication review only after one candidate package clears every field; retain agency and independent authority as separate evidence layers.",
+      "actions": [
+        {
+          "action_id": "REOPEN-NNSA-GAO-BASELINE-ACTION-01",
+          "field_name": "recommendation_id",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate recommendation_id inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "GAO recommendation-status record with responsive agency evidence",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-GAO-BASELINE-ACTION-02",
+          "field_name": "agency_evidence_date",
+          "current_coverage_state": "absent",
+          "reviewer_action": "Require an explicit agency_evidence_date value in the same official candidate record; keep the field null until it is supplied.",
+          "evidence_needed": "GAO recommendation-status record with responsive agency evidence",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-GAO-BASELINE-ACTION-03",
+          "field_name": "agency_evidence_scope",
+          "current_coverage_state": "not_yet_evaluated",
+          "reviewer_action": "Evaluate agency_evidence_scope only when one complete candidate evidence package enters the intake queue.",
+          "evidence_needed": "GAO recommendation-status record with responsive agency evidence",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-GAO-BASELINE-ACTION-04",
+          "field_name": "gao_status",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate gao_status inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "GAO recommendation-status record with responsive agency evidence",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        },
+        {
+          "action_id": "REOPEN-NNSA-GAO-BASELINE-ACTION-05",
+          "field_name": "gao_status_date",
+          "current_coverage_state": "present",
+          "reviewer_action": "Revalidate gao_status_date inside the same candidate record and preserve its exact identity, period, definition, and authority.",
+          "evidence_needed": "GAO recommendation-status record with responsive agency evidence",
+          "close_field_automatically": false,
+          "carry_value_from_other_record": false,
+          "human_review_required": true
+        }
+      ]
+    }
+  ]
+}

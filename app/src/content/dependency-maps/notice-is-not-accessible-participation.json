@@ -1,0 +1,36 @@
+{
+  "id": "dependency-map-notice-is-not-accessible-participation",
+  "title": "Notice Is Not Accessible Participation",
+  "slug": "notice-is-not-accessible-participation",
+  "summary": "A dependency map separating message publication from discoverability, comprehension, access, support, safe participation, standing review, and receipt.",
+  "map_type": "Evidence Gap Map",
+  "record_status": "Published",
+  "primary_topic": "Human Futures",
+  "framework_layers": ["Human Systems", "Enabling Infrastructure"],
+  "constraint_tags": ["Public Trust", "Infrastructure", "Data Quality", "Interpretation"],
+  "map_question": "What must happen before a public notice can support a claim that affected people had a usable opportunity to participate?",
+  "interpretation_boundary": "Publication, delivery, page views, attendance, and comment counts do not establish discoverability, accessibility, understanding, standing coverage, safe participation, consent, legitimacy, or authorization.",
+  "source_ids": ["source-toronto-2026-sc33-9-item-history", "source-cpuc-waymo-al2-disposition-2024"],
+  "signal_ids": ["signal-toronto-24-254930-community-council-recommendation", "signal-cpuc-waymo-fared-driverless-expansion-2024"],
+  "technology_ids": [],
+  "local_system_ids": ["local-ontario-real-estate"],
+  "evidence_gap_ids": ["gap-004", "gap-005", "gap-015", "gap-016"],
+  "nodes": [
+    {"id": "node-question", "label": "Real public decision question", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No Phase 77 decision question is open."},
+    {"id": "node-standing", "label": "Affected-public and rights-holder standing", "node_type": "Constraint", "note": "The intended audience must be identified and reviewable."},
+    {"id": "node-notice", "label": "Versioned notice plan", "node_type": "Constraint", "note": "Content, timing, channels, languages, and reach are explicit."},
+    {"id": "node-access", "label": "Usable accessibility and support", "node_type": "Constraint", "note": "Format, disability access, interpretation, location, time, technology, safety, and support are tested."},
+    {"id": "node-participation", "label": "Meaningful opportunity to participate", "node_type": "Constraint", "note": "People can submit, question, deliberate, dissent, and seek correction."},
+    {"id": "node-receipt", "label": "Notice and access receipt", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No completed notice or access receipt exists."}
+  ],
+  "links": [
+    {"from": "node-question", "to": "node-standing", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Standing cannot open without a real question."},
+    {"from": "node-standing", "to": "node-notice", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Notice design follows the affected-public inventory."},
+    {"from": "node-notice", "to": "node-access", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Delivery is insufficient when the channel is unusable."},
+    {"from": "node-access", "to": "node-participation", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Usable access precedes meaningful participation."},
+    {"from": "node-participation", "to": "node-receipt", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Completion needs independent review and a receipt."}
+  ],
+  "what_this_map_supports": ["Explicit affected-public, notice, accessibility, support, privacy, and challenge controls.", "Review of who could discover, understand, access, and safely use a process.", "A bounded receipt without claiming consent or legitimacy."],
+  "what_this_map_does_not_prove": ["It does not establish that notice occurred or that any person participated.", "It does not convert access into agreement, consent, legitimacy, or authority.", "It does not create a participation score, rank, mandate, or outcome claim."],
+  "next_records_needed": ["An admitted Phase 76 finding and real decision question.", "A standing decision plus tested notice, accessibility, and support plans.", "Independent review of reach, unresolved barriers, challenges, and receipt."]
+}

@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.0",
+  "phase": "60C",
+  "desk_id": "evidence-cycle-001-wave-60c-editorial-desk",
+  "title": "Evidence Cycle 001 Wave 60C Editorial Desk",
+  "captured_date": "2026-08-23",
+  "operating_window_start": "2026-09-01",
+  "operating_window_end": "2026-09-15",
+  "desk_status": "preflight_ready",
+  "record_scope": "Six Wave 60C Evidence Cycle gates and two separate named-file companion rechecks, each with an exact artifact, admissibility test, hold rule, and propagation assignment.",
+  "publication_boundary": "This desk is a future-safe editorial plan. It creates no receipt, source-check result, decision, signal promotion, project-stage change, matrix-cell advance, score, ranking, or operating-outcome claim before the real dated review.",
+  "decision_contract": {
+    "allowed_receipt_types": [
+      "Change Note",
+      "Watch Note",
+      "Correction",
+      "No Material Change",
+      "Blocked Check"
+    ],
+    "independence_rule": "Every gate receives its own source review, receipt identity, evidence-stage decision, and propagation proof even when several checks share a date or topic.",
+    "future_field_rule": "Decision dates, receipt IDs, attempted surfaces, access results, and propagation results remain absent from this desk and empty in the operating envelopes until the real check date.",
+    "named_file_rule": "A companion recheck may change only its same-entity Phase 61 file and only when a qualifying official artifact changes the file's current evidence stage.",
+    "publication_rule": "A gate publishes only after the source check, bounded receipt, source and signal decision, assigned reader-surface propagation, validation, and Git-backed release review are complete."
+  },
+  "records": [
+    {
+      "desk_item_id": "60C-DESK-001",
+      "item_kind": "cycle_gate",
+      "cycle_item_id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+      "return_envelope_id": "67-RETURN-003",
+      "named_file_id": null,
+      "conversion_gate_id": null,
+      "target": "Louisiana Starlink observed adoption",
+      "scheduled_check_date": "2026-09-01",
+      "source_ids": [
+        "source-57b-louisiana-starlink-bead-agreement"
+      ],
+      "signal_ids": [
+        "signal-57y-preserved-la-starlink-adoption"
+      ],
+      "exact_next_artifact": "Observed subscription or installation evidence for a fixed eligible-location cohort after service becomes available.",
+      "qualifying_evidence": "An official location-cohort record with actual installations or subscriptions, a dated observation period, a stable eligible-location denominator, and a disclosed method.",
+      "insufficient_evidence": "The grant agreement, planned 10,635-location coverage, service-availability language, provider-wide subscriber totals, forecasts, or an undated anecdote.",
+      "potential_publication_effect": "May advance only the existing Louisiana Starlink adoption signal to the exact observed cohort stage supported by the returned artifact.",
+      "required_propagation": [
+        "source record",
+        "underlying signal decision",
+        "Outcomes Watch 001",
+        "Policy And Standards To Implementation pathway",
+        "Comparative Outcomes Require Common Denominators map",
+        "Evidence Cycle 001 digest",
+        "public update"
+      ]
+    },
+    {
+      "desk_item_id": "60C-DESK-002",
+      "item_kind": "cycle_gate",
+      "cycle_item_id": "60-CYCLE-LOUISIANA-NEXTLINK-ADOPTION",
+      "return_envelope_id": "67-RETURN-004",
+      "named_file_id": null,
+      "conversion_gate_id": null,
+      "target": "Louisiana Nextlink observed adoption",
+      "scheduled_check_date": "2026-09-09",
+      "source_ids": [
+        "source-57b-louisiana-nextlink-first-bead-tower"
+      ],
+      "signal_ids": [
+        "signal-57y-preserved-la-nextlink-adoption"
+      ],
+      "exact_next_artifact": "Observed subscription or take-rate evidence for a fixed eligible-location cohort after service availability.",
+      "qualifying_evidence": "An official fixed-cohort subscriber or take-rate record for the 104-location service area or another explicitly identified Louisiana BEAD cohort, with period and denominator.",
+      "insufficient_evidence": "A live tower, service availability, gigabit capability, statewide provider totals, planned sectors, marketing claims, or connections without a fixed cohort denominator.",
+      "potential_publication_effect": "May advance only the existing Louisiana Nextlink adoption signal to the exact cohort and observation period supported by the returned artifact.",
+      "required_propagation": [
+        "source record",
+        "underlying signal decision",
+        "Outcomes Watch 001",
+        "Policy And Standards To Implementation pathway",
+        "Comparative Outcomes Require Common Denominators map",
+        "Evidence Cycle 001 digest",
+        "public update"
+      ]
+    },
+    {
+      "desk_item_id": "60C-DESK-003",
+      "item_kind": "named_file_recheck",
+      "cycle_item_id": null,
+      "return_envelope_id": null,
+      "named_file_id": "61-PROJECT-TORONTO-24-254930",
+      "conversion_gate_id": "63-GATE-TORONTO-24-254930",
+      "target": "Toronto application 24 254930 enactment, condition, and permit recheck",
+      "scheduled_check_date": "2026-09-09",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-toronto-2025-development-pipeline-delivery-gap"
+      ],
+      "exact_next_artifact": "Introduced or enacted amendment numbers, accepted condition-compliance records, or the first confirmed permit, start, completion, or occupancy record for application 24 254930.",
+      "qualifying_evidence": "An official City record tied to application 24 254930 that identifies enacted instruments, accepted conditions, or a dated project-specific delivery milestone.",
+      "insufficient_evidence": "Council adoption alone, draft amendments, aggregate Toronto pipeline totals, an unrelated permit, marketing, financing intent, or a project milestone without the application identity.",
+      "potential_publication_effect": "May append one same-file conversion event and update the Toronto named file only to the exact enacted, condition-cleared, permit, construction, completion, or occupancy stage established.",
+      "required_propagation": [
+        "Toronto source and signal decision",
+        "Toronto project-conversion briefing",
+        "Ontario local system",
+        "Southwest-Ontario and cross-corridor pathways",
+        "Local Authorization Is Not Operation map",
+        "gap-004 and gap-005",
+        "conversion event, gate, and matrix contracts",
+        "public update"
+      ]
+    },
+    {
+      "desk_item_id": "60C-DESK-004",
+      "item_kind": "cycle_gate",
+      "cycle_item_id": "60-CYCLE-AMTRAK-PIDS-CLOSEOUT",
+      "return_envelope_id": "67-RETURN-005",
+      "named_file_id": null,
+      "conversion_gate_id": null,
+      "target": "Amtrak PIDS final closeout",
+      "scheduled_check_date": "2026-09-10",
+      "source_ids": [
+        "source-57b-amtrak-ada-progress-june-2026"
+      ],
+      "signal_ids": [
+        "signal-57y-preserved-amtrak-pids"
+      ],
+      "exact_next_artifact": "A final FRA-accepted closeout record tied to the PIDS program scope and completed deployment denominator.",
+      "qualifying_evidence": "A final accepted closeout identifying the PIDS program, completed deployment denominator, review authority, acceptance date, exceptions, and remaining obligations.",
+      "insufficient_evidence": "The 93-of-93 deployment count, the completed period of performance, pending final review, a target closeout date, station construction totals, or passenger-service claims.",
+      "potential_publication_effect": "May advance the PIDS signal only to accepted program closeout; it cannot establish display uptime, trip usability, accessibility outcomes, or named-asset reliability.",
+      "required_propagation": [
+        "source record",
+        "underlying signal decision",
+        "Outcomes Watch 001",
+        "Autonomy Regulation To Service pathway",
+        "Comparative Outcomes Require Common Denominators map",
+        "Evidence Cycle 001 digest",
+        "public update"
+      ]
+    },
+    {
+      "desk_item_id": "60C-DESK-005",
+      "item_kind": "cycle_gate",
+      "cycle_item_id": "60-CYCLE-HANFORD-MATERIAL-BALANCE",
+      "return_envelope_id": "67-RETURN-006",
+      "named_file_id": null,
+      "conversion_gate_id": null,
+      "target": "Hanford complete material balance",
+      "scheduled_check_date": "2026-09-10",
+      "source_ids": [
+        "source-57d-hanford-wtp-consent-july-2026"
+      ],
+      "signal_ids": [
+        "signal-57y-preserved-hanford-mass-balance"
+      ],
+      "exact_next_artifact": "A compatible material balance covering feed, immobilized glass, secondary waste, inventory change, losses, period, and reconciliation method.",
+      "qualifying_evidence": "An official same-period balance with feed, product, secondary waste, inventory change, losses or adjustments, reconciliation method, acceptance or quality state, and compatible units.",
+      "insufficient_evidence": "Feed volume alone, cumulative effluent alone, glass-container counts without quality and reconciliation, qualitative operating progress, milestone status, or values from incompatible periods.",
+      "potential_publication_effect": "May advance the existing Hanford signal only to the complete material-balance scope actually reconciled; it cannot establish throughput efficiency, compliance, cost, or causation without separate evidence.",
+      "required_propagation": [
+        "source record",
+        "underlying signal decision",
+        "Outcomes Watch 001",
+        "Advanced Manufacturing Research To Production pathway",
+        "Comparative Outcomes Require Common Denominators map",
+        "Evidence Cycle 001 digest",
+        "public update"
+      ]
+    },
+    {
+      "desk_item_id": "60C-DESK-006",
+      "item_kind": "cycle_gate",
+      "cycle_item_id": "60-CYCLE-NNSA-GAO-BASELINE",
+      "return_envelope_id": "67-RETURN-007",
+      "named_file_id": null,
+      "conversion_gate_id": null,
+      "target": "NNSA GAO enterprise baseline closure",
+      "scheduled_check_date": "2026-09-10",
+      "source_ids": [
+        "source-56q-gao-23-104661-recommendation-status"
+      ],
+      "signal_ids": [
+        "signal-57y-preserved-nnsa-gao-baseline"
+      ],
+      "exact_next_artifact": "A final enterprise-wide integrated cost and schedule baseline plus GAO closure evidence tied to recommendation GAO-23-104661.",
+      "qualifying_evidence": "A program-wide life-cycle cost estimate and integrated schedule aligned with GAO best practices, plus an explicit GAO recommendation-status decision establishing closure or implementation.",
+      "insufficient_evidence": "Agency concurrence, a forecast completion date, a project-only baseline, partial design progress, a first production unit, budget authority, or a source that does not include GAO's closure decision.",
+      "potential_publication_effect": "May advance the existing NNSA baseline signal only to the exact enterprise-baseline and independent-closure stage established; it cannot establish accepted capacity, recurring output, or cost performance.",
+      "required_propagation": [
+        "source record",
+        "underlying signal decision",
+        "Outcomes Watch 001",
+        "Policy And Standards To Implementation pathway",
+        "Comparative Outcomes Require Common Denominators map",
+        "Evidence Cycle 001 digest",
+        "public update"
+      ]
+    },
+    {
+      "desk_item_id": "60C-DESK-007",
+      "item_kind": "cycle_gate",
+      "cycle_item_id": "60-CYCLE-MONTANA-COMPLETED-QUARTER",
+      "return_envelope_id": "67-RETURN-008",
+      "named_file_id": null,
+      "conversion_gate_id": null,
+      "target": "Montana BEAD completed quarterly outcome",
+      "scheduled_check_date": "2026-09-15",
+      "source_ids": [
+        "source-57f-montana-bead-resource-index-august-2026"
+      ],
+      "signal_ids": [
+        "signal-57y-preserved-mt-bead-quarter"
+      ],
+      "exact_next_artifact": "One complete public quarterly report with project identity, reporting period, locations, completion state, and outcome denominator.",
+      "qualifying_evidence": "A completed official awardee or project-quarter report with stable project identity, period, location denominator, completion state, served or active-subscriber evidence, and disclosed reporting method.",
+      "insufficient_evidence": "Instructions, blank templates, a resource index, an application location list, permit status, reimbursement guidance, statewide totals, or a partially completed quarter.",
+      "potential_publication_effect": "May advance only the existing Montana project-quarter signal to the exact completed and disclosed reporting stage; it cannot establish statewide adoption or outcome causation.",
+      "required_propagation": [
+        "source record",
+        "underlying signal decision",
+        "Outcomes Watch 001",
+        "Policy And Standards To Implementation pathway",
+        "Local Authorization Is Not Operation map",
+        "Evidence Cycle 001 digest",
+        "public update"
+      ]
+    },
+    {
+      "desk_item_id": "60C-DESK-008",
+      "item_kind": "named_file_recheck",
+      "cycle_item_id": null,
+      "return_envelope_id": null,
+      "named_file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "conversion_gate_id": "63-GATE-SPACE-COAST-AUTHORITY",
+      "target": "Shuttle Landing Facility formal licence-disposition recheck",
+      "scheduled_check_date": "2026-09-15",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license"
+      ],
+      "signal_ids": [
+        "signal-shuttle-landing-facility-license-status-watch"
+      ],
+      "exact_next_artifact": "A formal FAA renewal, replacement, lapse, surrender, or other current disposition for Shuttle Landing Facility licence LRSO 18-018.",
+      "qualifying_evidence": "A dated FAA licence, order, register entry, surrender, enforcement, or other formal disposition that identifies LRSO 18-018 or an explicit successor authority.",
+      "insufficient_evidence": "The unchanged page, displayed January 15, 2026 expiry, the 2021 licence PDF, operator proposals, mission activity, third-party summaries, or inference from silence.",
+      "potential_publication_effect": "May update only the Shuttle Landing Facility licence rail inside the Space Coast named file; operator authority, mission use, utilization, reliability, and local outcomes remain separate.",
+      "required_propagation": [
+        "FAA source and signal decision",
+        "Space Coast project-conversion briefing",
+        "Space Coast local system",
+        "Space Coast and cross-corridor pathways",
+        "Local Authorization Is Not Operation map",
+        "gap-013",
+        "conversion gate and matrix contracts",
+        "public update"
+      ],
+      "prior_receipt_id": "receipt-60-slf-2026-08-15-no-material-change"
+    }
+  ]
+}

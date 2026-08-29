@@ -1,0 +1,72 @@
+---
+id: "signal-57i-hanford-nine-bounded-observation-envelopes"
+title: "Nine Hanford records now ingest as bounded standalone observations"
+slug: "57i-hanford-nine-bounded-observation-envelopes"
+record_status: "Published"
+summary: "Each observation preserves source, stage, date or period, measure, threshold operator, value, unit, and authority while leaving missing identity and disposition fields null."
+source_ids:
+  - "source-57g-hanford-dflaw-process-animation"
+  - "source-57g-hanford-ap106-feed-staging"
+  - "source-57c-hanford-20-containers-2025"
+  - "source-57e-doe-hanford-acceptable-glass-startup"
+  - "source-57f-hanford-wtp-pmm-february-2026"
+  - "source-57b-ecology-wtp-byproduct-response-comments"
+  - "source-56x-hanford-first-ilaw-disposal-2026"
+  - "source-57b-hanford-wtp-project-managers-may-2026"
+  - "source-57f-doe-hanford-100k-gallons-may-2026"
+published_date: 2026-08-03
+captured_date: 2026-08-03
+primary_topic: "Energy"
+framework_layers:
+  - "Enabling Infrastructure"
+  - "Resource Foundations"
+signal_type: "Research Result"
+maturity_level: "Infrastructure"
+time_horizon: "Now"
+evidence_quality: "Official Data"
+verification_status: "Verified Against Primary Source"
+why_it_matters: "Evidence stage: Compatible-observation validation. Denominator: Nine source-attributed observations across the DFLAW lifecycle."
+dependencies:
+  - "stable source snapshots and identity lineage"
+  - "schema, period, stage, measure, operator, method, unit, authority, privacy, acceptance, and disposition compatibility"
+  - "separate outcome, implementation, capability, and closure evidence"
+constraints:
+  - "Data Quality"
+  - "Regulation"
+  - "Public Trust"
+receiving_systems:
+  - "Phase 57I change-detection and bounded-ingestion rails"
+local_implications:
+  - "Do not promote a queued diff, accepted envelope, or validator result into an operating outcome."
+evidence_gap_ids:
+  - "gap-008"
+  - "gap-016"
+claim_scope: "Specific Source Update"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-08-03
+editorial_notes: "Published under the Phase 57I change-detection-and-ingestion contract."
+---
+
+## Phase 57I control panel
+
+Each observation preserves source, stage, date or period, measure, threshold operator, value, unit, and authority while leaving missing identity and disposition fields null.
+
+## Evidence stage and denominator
+
+**Compatible-observation validation.** Nine source-attributed observations across the DFLAW lifecycle.
+
+Structured rail: phase-57i-hanford-bounded-observation-validator.json.
+
+## Evidence boundaries
+
+- Standalone acceptance is not a numeric join.
+- Null identity is not a shared cohort.
+- Milestones and quantities remain distinct.
+
+Exact target artifact acquired: **No**. FTFN submitted no agency contact or FOIA request.
+
+Next action: Add later observations through the same envelope before comparison.
+
+## Authority boundary
+
+A queued diff, accepted identity match, migration plan, intake envelope, validator result, source-version cell, or bounded insert is not an operating outcome. Unresolved identities, missing fields, privacy-sensitive detail, incompatible periods, stages, units, operators, methods, authorities, dispositions, work-breakdown objects, implementation states, and closure states remain explicit. No record supports rankings, composite scores, readiness scores, generalized savings, or unsupported causal attribution.

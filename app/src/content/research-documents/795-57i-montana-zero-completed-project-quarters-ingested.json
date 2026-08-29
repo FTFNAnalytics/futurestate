@@ -1,0 +1,77 @@
+{
+  "id": "research-doc-57i-montana-zero-completed-project-quarters-ingested",
+  "collection_id": "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
+  "title": "No completed Montana project-quarter result is ingested in Phase 57I",
+  "slug": "57i-montana-zero-completed-project-quarters-ingested",
+  "record_status": "Published",
+  "publisher": "Montana Department of Administration",
+  "publication_date": "2026-08-03",
+  "document_type": "Data Release",
+  "summary": "The source set provides contracts and baselines but no compatible completed public project-quarter table, so all operating outcome slots remain null. Denominator: Thirty-two waiting project envelopes and zero completed project-quarter inserts.",
+  "key_findings": [
+    "Evidence stage: Schema migration and bounded intake.",
+    "Finding: The source set provides contracts and baselines but no compatible completed public project-quarter table, so all operating outcome slots remain null.",
+    "Denominator: Thirty-two waiting project envelopes and zero completed project-quarter inserts.",
+    "Boundary: Instructions are not results.",
+    "Boundary: Required fields are not observed values.",
+    "Boundary: No acceptance or corrective action is inferred.",
+    "Next action: Reopen when a compatible official completed table and state disposition are public."
+  ],
+  "why_it_matters": "The record makes change detection, schema migration, observation validation, and object-level source diffs reviewable before publication.",
+  "ftfn_relevance": [
+    "Turns provenance matrices into repeatable review rails.",
+    "Keeps rejected joins and unresolved identities explicit.",
+    "Separates bounded inserts from operating outcomes, implementation, acceptance, and closure."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Instructions are not results.",
+    "Required fields are not observed values.",
+    "No acceptance or corrective action is inferred.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-montana-bead-final-proposal-january-2026",
+  "supporting_source_ids": [
+    "source-57g-montana-bead-final-proposal-january-2026",
+    "source-57g-montana-deployment-projects-csv",
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-subgrantees-csv",
+    "source-57g-montana-cai-csv",
+    "source-57f-montana-bead-resource-index-august-2026",
+    "source-57f-montana-leo-quarterly-instructions-june-2026",
+    "source-57e-montana-quarterly-report-instructions-june-2026",
+    "source-57e-montana-project-monitoring-guide-june-2026"
+  ],
+  "supporting_official_urls": [
+    "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+    "https://doa.mt.gov/_docs/connectmt/fp_deployment_projects-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_locations-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_subgrantees-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_CAI-1.5.26.csv",
+    "https://doa.mt.gov/ConnectMT/iija/",
+    "https://doa.mt.gov/_docs/connectmt/LEO-Quarterly-Report-Instructions-6.1.26.pdf",
+    "https://doa.mt.gov/_docs/connectmt/Quarterly-Report-Instructions-Terrestrial-6.1.26.pdf",
+    "https://doa.mt.gov/_docs/connectmt/BEAD-Project-Subgrantee-Monitoring-Guide-6.1.26.pdf"
+  ],
+  "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+  "local_capture_path": "/downloads/versioned-registry-change-detection-bounded-observation-ingestion-2026/official-links/10-montana-zero-completed-project-quarters-ingested.txt",
+  "archive_member": "official-links/10-montana-zero-completed-project-quarters-ingested.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-03"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "update-2026-08-23-phase-69-measurement-observation-intake",
+  "effective_date": "2026-08-23",
+  "entry_type": "Source Refresh",
+  "title": "Phase 69 publishes thirty-two measurement contracts with zero values",
+  "summary": "Thirty-two Phase 68 candidate measures now have exact public specifications and empty intake envelopes. Eight prospective break registers preserve ten break types and entity-specific stop rules without creating an observation, series point, admitted cohort, or outcome.",
+  "affected_record_ids": [
+    "briefing-measurement-dictionary-001",
+    "briefing-series-break-adjudication-001",
+    "dependency-map-measurement-specification-is-not-evidence",
+    "briefing-outcome-cohort-admission-desk-001",
+    "briefing-outcomes-watch-001-what-actually-changed",
+    "gap-015",
+    "gap-016"
+  ],
+  "related_paths": [
+    "/evidence/measurements/",
+    "/briefings/measurement-dictionary-001/",
+    "/briefings/series-break-adjudication-001/",
+    "/atlas/dependency-maps/measurement-specification-is-not-evidence/",
+    "/data/measurement-specifications.json"
+  ],
+  "evidence_note": "This release contains specifications, empty envelopes, prospective break rules, and synthetic-only validation. It does not contain a source attempt, artifact return, observation payload, value, receipt, actual break event, series point, cohort admission, trend, comparison, causal claim, or outcome.",
+  "materiality": "No record-state change",
+  "publication_effect": "Adds two Published briefings, one Published dependency map, one searchable registry with thirty-two detail routes, one public export, and reader-surface integrations while leaving all evidence and outcome states unchanged.",
+  "next_check_date": "2026-09-01",
+  "work_package": "docs/work-packages/phase-69-measurement-observation-series-break-control.md"
+}

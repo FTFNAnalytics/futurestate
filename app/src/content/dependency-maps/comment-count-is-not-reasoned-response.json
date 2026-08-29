@@ -1,0 +1,36 @@
+{
+  "id": "dependency-map-comment-count-is-not-reasoned-response",
+  "title": "A Comment Count Is Not A Reasoned Response",
+  "slug": "comment-count-is-not-reasoned-response",
+  "summary": "A dependency map tracing submissions through record integrity, material-issue classification, evidence, alternatives, reasons, dissent, independent review, and appeal.",
+  "map_type": "Evidence Gap Map",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": ["Human Systems"],
+  "constraint_tags": ["Public Trust", "Data Quality", "Interpretation", "Regulation"],
+  "map_question": "What converts a collection of public submissions into an accountable public response without treating comments as votes?",
+  "interpretation_boundary": "Receipt, publication, topic tagging, deduplication, summary, sentiment, and counts do not establish materiality, evidentiary weight, response adequacy, consensus, legitimacy, or authorization.",
+  "source_ids": ["source-toronto-2026-sc33-9-item-history", "source-nist-aria-evaluation-program"],
+  "signal_ids": ["signal-toronto-24-254930-community-council-recommendation", "signal-nist-aria-pilot-multilevel-evaluation"],
+  "technology_ids": [],
+  "local_system_ids": ["local-ontario-real-estate"],
+  "evidence_gap_ids": ["gap-004", "gap-005", "gap-014", "gap-016"],
+  "nodes": [
+    {"id": "node-submission", "label": "Versioned public submissions and hearing records", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No Phase 77 submission exists."},
+    {"id": "node-integrity", "label": "Provenance, privacy, correction, and deduplication", "node_type": "Constraint", "note": "Administrative processing preserves distinct positions."},
+    {"id": "node-issue", "label": "Material-issue matrix", "node_type": "Constraint", "note": "Every issue has scope, evidence, alternative, affected group, and challenge lineage."},
+    {"id": "node-response", "label": "Specific reasoned response", "node_type": "Constraint", "note": "Reasons identify authority, evidence, uncertainty, decision effect, and residual dispute."},
+    {"id": "node-review", "label": "Independent completeness and conflict review", "node_type": "Constraint", "note": "Omission and unsupported inference remain challengeable."},
+    {"id": "node-appeal", "label": "Closure receipt and appeal route", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No response closure or appeal record exists."}
+  ],
+  "links": [
+    {"from": "node-submission", "to": "node-integrity", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "A usable public record preserves identity and corrections appropriately."},
+    {"from": "node-integrity", "to": "node-issue", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Classification follows a stable record."},
+    {"from": "node-issue", "to": "node-response", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Every material issue needs a response."},
+    {"from": "node-response", "to": "node-review", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Reasons require independent completeness review."},
+    {"from": "node-review", "to": "node-appeal", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Closure remains contestable."}
+  ],
+  "what_this_map_supports": ["A twelve-class issue matrix retaining submissions, evidence, responses, and dissent.", "Reviewable materiality decisions and public reasons.", "Independent closure and an explicit appeal path."],
+  "what_this_map_does_not_prove": ["It does not establish that any comment is correct or representative.", "It does not infer response adequacy from publication or process closure.", "It does not create consensus, consent, legitimacy, mandate, score, or rank."],
+  "next_records_needed": ["An authorized process and stable common evidence record.", "Actual submissions, hearings, issue classifications, challenges, and draft responses.", "Independent review, closure receipt, and appeal availability."]
+}

@@ -1,0 +1,469 @@
+{
+  "schema_version": "1.0",
+  "phase": "61",
+  "registry_id": "project-conversion-registry-001",
+  "title": "Named Project Conversion Registry",
+  "captured_date": "2026-08-11",
+  "record_scope": "Eight named conversion files that bind existing evidence to one current stage, one downstream artifact, one stop rule, and the reader surfaces that must change when evidence changes.",
+  "interpretation_boundary": "Registry stages are editorial evidence states, not readiness, performance, risk, probability, or value scores. A record advances only when a source-explicit artifact satisfies the named downstream gate.",
+  "records": [
+    {
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "kind": "local_project",
+      "title": "TSMC Arizona campus",
+      "named_entity": "TSMC Arizona",
+      "current_stage": "Facility build and bounded production claim",
+      "established": "Phoenix records a Fab 1 volume-production claim, Fab 2 construction completion, a Fab 3 structural milestone, and a project wastewater agreement.",
+      "unresolved": "Named accepted electric capacity, completed wastewater assets, metered service, facility qualification, customer acceptance, and repeat facility-level output remain incomplete.",
+      "exact_next_artifact": "A facility-specific accepted utility, inspection, occupancy, qualification, customer-acceptance, or compatible recurring production record.",
+      "next_check_date": "2026-09-22",
+      "reopening_trigger": null,
+      "stop_rule": "Do not infer accepted service or campus-wide output from utility territory, an agreement, construction status, or one facility claim.",
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "signal_ids": [
+        "signal-phoenix-tsmc-fab1-production-fab2-construction-complete",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ],
+      "evidence_gap_ids": [
+        "gap-001",
+        "gap-002",
+        "gap-003"
+      ],
+      "local_system_ids": [
+        "local-us-southwest-chip-corridor"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-001-tsmc-arizona",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-chips-compute-research-to-fab",
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas"
+      ]
+    },
+    {
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "kind": "local_project",
+      "title": "Toronto application 24 254930",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "current_stage": "City Council adoption with amendment bills withheld",
+      "established": "Toronto City Council adopted item 2026.SC33.9 without amendments while retaining wind, land-exchange, and laneway conditions before the amendment bills proceed.",
+      "unresolved": "Enacted instruments, satisfied conditions, servicing, a building permit, financing, start, completion, and occupancy remain open.",
+      "exact_next_artifact": "Introduced or enacted amendment numbers, accepted condition-compliance records, or the first confirmed permit, start, completion, or occupancy record for the application.",
+      "next_check_date": "2026-09-09",
+      "reopening_trigger": null,
+      "stop_rule": "Do not treat Council adoption as enactment or use aggregate Toronto and CMHC stages as this project's delivery outcome.",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-toronto-2025-development-pipeline-delivery-gap"
+      ],
+      "evidence_gap_ids": [
+        "gap-004",
+        "gap-005"
+      ],
+      "local_system_ids": [
+        "local-ontario-real-estate"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-002-toronto-24-254930",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-local-authorization-is-not-operation"
+      ]
+    },
+    {
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "kind": "local_project",
+      "title": "Northern Virginia Golden-Mars and GS-5 large-load trail",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "current_stage": "Conditional transmission authority and approved future rate class",
+      "established": "Virginia has an approved GS-5 large-load rate class and a conditional Golden-Mars transmission decision with a named local route dependency.",
+      "unresolved": "Final route, land rights, construction, inspection, energization, customer agreement, metered service, reliability, and local effects remain open.",
+      "exact_next_artifact": "A final route or land decision followed by construction, inspection, energization, or a named GS-5 customer service record.",
+      "next_check_date": "2026-10-01",
+      "reopening_trigger": null,
+      "stop_rule": "Do not convert a forecast, rate class, application, or conditional approval into available capacity or accepted customer service.",
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "signal_ids": [
+        "signal-virginia-gs5-large-load-rate-class",
+        "signal-golden-mars-transmission-conditional-approval"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-011"
+      ],
+      "local_system_ids": [
+        "local-northern-virginia-data-center-corridor"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-003-northern-virginia-large-load",
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas"
+      ]
+    },
+    {
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "kind": "local_project",
+      "title": "Space Coast authorization-to-mission stack",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "current_stage": "Mixed site and environmental authority with one unresolved licence rail",
+      "established": "LC-39A and SLC-40 have final environmental decisions; the August 15 FAA check leaves the Shuttle Landing Facility public licence disposition unresolved under a bounded No Material Change receipt.",
+      "unresolved": "Formal licence disposition, operator-specific authority, capital acceptance, mission use, utilization, reliability, and local outcomes remain separate gates.",
+      "exact_next_artifact": "The FAA's formal Shuttle Landing Facility licence disposition or a named operator authorization, accepted capital asset, mission, or repeated service record.",
+      "next_check_date": "2026-09-15",
+      "reopening_trigger": null,
+      "stop_rule": "Do not treat environmental review, a site licence, or an infrastructure milestone as operator approval, mission completion, or corridor reliability.",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "signal_ids": [
+        "signal-shuttle-landing-facility-license-status-watch",
+        "signal-faa-starship-lc39a-environmental-decision",
+        "signal-slc40-final-environmental-decision"
+      ],
+      "evidence_gap_ids": [
+        "gap-013",
+        "gap-016"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-004-space-coast-authority",
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas"
+      ],
+      "latest_decision_date": "2026-08-15",
+      "latest_receipt_id": "receipt-60-slf-2026-08-15-no-material-change",
+      "latest_decision_status": "no_material_change"
+    },
+    {
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "kind": "local_project",
+      "title": "Nevada lithium project pair",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "current_stage": "Authorized and financed project rails before qualified material",
+      "established": "Thacker Pass has a federal loan close and Rhyolite Ridge has an explicit water-permit pre-operation stack.",
+      "unresolved": "Condition satisfaction, construction, commissioning, compliant operation, product qualification, accepted shipments, and recurring supply remain open.",
+      "exact_next_artifact": "A named inspection, construction completion, commissioning test, compliant operating measurement, qualified lot, customer receipt, or recurring output series.",
+      "next_check_date": null,
+      "reopening_trigger": "An official project, regulator, lender, or customer record reaches construction acceptance, commissioning, compliance, qualification, shipment, or recurring output.",
+      "stop_rule": "Do not convert authorization, a permit, financial close, projected capacity, or reserve context into qualified domestic supply.",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "signal_ids": [
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates"
+      ],
+      "evidence_gap_ids": [
+        "gap-007",
+        "gap-012"
+      ],
+      "local_system_ids": [
+        "local-nevada-lithium-processing-corridor"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-005-nevada-lithium",
+      "reader_pathway_ids": [
+        "reader-pathway-nevada-lithium-authorization-to-output"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-technology-adoption-is-not-operating-outcome"
+      ]
+    },
+    {
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "kind": "adoption_case",
+      "title": "GSA post-quantum acquisition path",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "current_stage": "Named federal procurement mechanism before an agency migration",
+      "established": "GSA maps inventory, planning, implementation, maintenance, training, and use cases to acquisition support and contract vehicles.",
+      "unresolved": "A named agency order, validated implementation, tested cutover, operational acceptance, and vulnerable-system retirement remain open.",
+      "exact_next_artifact": "A named agency inventory, solicitation, award, interoperability test, cutover, acceptance, or legacy-retirement record.",
+      "next_check_date": null,
+      "reopening_trigger": "An official agency or GSA record identifies a named PQC procurement or system migration milestone.",
+      "stop_rule": "Do not treat a buyer's guide, standard, draft credential specification, or deadline as an order or completed migration.",
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-federal-pqc-migration-plans-and-deadlines"
+      ],
+      "evidence_gap_ids": [
+        "gap-009",
+        "gap-016"
+      ],
+      "local_system_ids": [],
+      "canonical_briefing_id": "briefing-adoption-case-001-gsa-pqc",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-post-quantum-standards-are-not-migration"
+      ]
+    },
+    {
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "kind": "adoption_case",
+      "title": "NIST ARIA assurance path",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "current_stage": "Multi-level evaluation pilot before continuous system assurance",
+      "established": "NIST evaluated seven AI applications from five organizations through model testing, red teaming, and field testing.",
+      "unresolved": "Named operating authorization, continuous monitoring, incidents, corrective action, independent review, and comparable mission outcomes remain open.",
+      "exact_next_artifact": "A named system evaluation and authorization record linked to deployment monitoring, incident handling, corrective action, or a stable mission-outcome measure.",
+      "next_check_date": null,
+      "reopening_trigger": "NIST or a participating institution publishes a named system-level assurance, deployment, or outcome artifact.",
+      "stop_rule": "Do not treat an evaluation pilot, framework, inventory, or purchasing channel as assured operation or measured benefit.",
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nasa-ai-use-cases-lack-comparable-outcome-measures"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-014",
+        "gap-016"
+      ],
+      "local_system_ids": [],
+      "canonical_briefing_id": "briefing-adoption-case-002-nist-aria",
+      "reader_pathway_ids": [
+        "reader-pathway-ai-infrastructure-policy-to-assurance",
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome"
+      ]
+    },
+    {
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "kind": "adoption_case",
+      "title": "Waymo California fared driverless service",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "current_stage": "Expanded service authority before a comparable persistent-outcome series",
+      "established": "CPUC authorized fared driverless service in specified Los Angeles and San Francisco Peninsula areas and requires detailed operator reporting.",
+      "unresolved": "A current public rollup of service miles, rides, availability, interventions, safety, accessibility, cost, complaints, and coverage remains incomplete.",
+      "exact_next_artifact": "A stable Waymo operating series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, and comparable definitions.",
+      "next_check_date": null,
+      "reopening_trigger": "CPUC or another official California authority publishes a current operator-level passenger-service and outcome rollup.",
+      "stop_rule": "Do not convert legal authority, testing miles, or a reporting requirement into persistent service quality, safety, accessibility, or adoption.",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-cpuc-av-reporting-needs-public-comparable-rollup"
+      ],
+      "evidence_gap_ids": [
+        "gap-010",
+        "gap-015",
+        "gap-016"
+      ],
+      "local_system_ids": [],
+      "canonical_briefing_id": "briefing-adoption-case-003-waymo-california",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-autonomy-rules-are-not-service"
+      ]
+    }
+  ],
+  "gap_operating_register": [
+    {
+      "gap_id": "gap-001",
+      "lane": "TSMC power",
+      "exact_next_artifact": "Named accepted electric-service capacity, energization, metering, or reliability record",
+      "next_check_date": null,
+      "reopening_trigger": "A utility, regulator, City, or TSMC record identifies facility-specific accepted service",
+      "file_ids": [
+        "61-PROJECT-TSMC-ARIZONA"
+      ]
+    },
+    {
+      "gap_id": "gap-002",
+      "lane": "TSMC water",
+      "exact_next_artifact": "Accepted wastewater or reclaimed-water infrastructure and measured operating record",
+      "next_check_date": "2026-09-22",
+      "reopening_trigger": null,
+      "file_ids": [
+        "61-PROJECT-TSMC-ARIZONA"
+      ]
+    },
+    {
+      "gap_id": "gap-003",
+      "lane": "Southwest chip workforce and qualification",
+      "exact_next_artifact": "Occupation-level completion, placement, retention, qualification, or accepted-output record",
+      "next_check_date": null,
+      "reopening_trigger": "A named program or fab publishes compatible downstream outcomes",
+      "file_ids": [
+        "61-PROJECT-TSMC-ARIZONA"
+      ]
+    },
+    {
+      "gap_id": "gap-004",
+      "lane": "Ontario municipal conversion",
+      "exact_next_artifact": "Enacted amendments and condition-compliance record for application 24 254930",
+      "next_check_date": "2026-09-09",
+      "reopening_trigger": null,
+      "file_ids": [
+        "61-PROJECT-TORONTO-24-254930"
+      ]
+    },
+    {
+      "gap_id": "gap-005",
+      "lane": "Ontario permit to occupancy",
+      "exact_next_artifact": "Confirmed permit, start, completion, or occupancy record for application 24 254930",
+      "next_check_date": "2026-09-09",
+      "reopening_trigger": null,
+      "file_ids": [
+        "61-PROJECT-TORONTO-24-254930"
+      ]
+    },
+    {
+      "gap_id": "gap-006",
+      "lane": "Local ENSO interpretation",
+      "exact_next_artifact": "Named regional teleconnection analysis, sector exposure record, and local water, crop, or hazard outcome series",
+      "next_check_date": null,
+      "reopening_trigger": "An official regional or sector record links an ENSO phase to a named local mechanism and bounded outcome without asserting deterministic causation",
+      "file_ids": []
+    },
+    {
+      "gap_id": "gap-007",
+      "lane": "Critical-mineral project conversion",
+      "exact_next_artifact": "Named commissioning, qualification, accepted shipment, or recurring supply record",
+      "next_check_date": null,
+      "reopening_trigger": "A regulator, project, lender, or customer publishes a downstream operating artifact",
+      "file_ids": [
+        "61-PROJECT-NEVADA-LITHIUM"
+      ]
+    },
+    {
+      "gap_id": "gap-008",
+      "lane": "Compute power and assurance",
+      "exact_next_artifact": "Named accepted large-load service or named AI system assurance and operating outcome",
+      "next_check_date": "2026-10-01",
+      "reopening_trigger": null,
+      "file_ids": [
+        "61-PROJECT-NOVA-LARGE-LOAD",
+        "61-ADOPTION-NIST-ARIA"
+      ]
+    },
+    {
+      "gap_id": "gap-009",
+      "lane": "PQC institutional migration",
+      "exact_next_artifact": "Named agency procurement, tested cutover, acceptance, or legacy retirement",
+      "next_check_date": null,
+      "reopening_trigger": "An official agency or GSA record identifies a system-specific migration milestone",
+      "file_ids": [
+        "61-ADOPTION-GSA-PQC"
+      ]
+    },
+    {
+      "gap_id": "gap-010",
+      "lane": "Autonomy exposure and safety",
+      "exact_next_artifact": "Stable operator-level service exposure, intervention, crash, and passenger outcome series",
+      "next_check_date": null,
+      "reopening_trigger": "A California authority publishes a current comparable operator rollup",
+      "file_ids": [
+        "61-ADOPTION-WAYMO-CALIFORNIA"
+      ]
+    },
+    {
+      "gap_id": "gap-011",
+      "lane": "Northern Virginia large-load delivery",
+      "exact_next_artifact": "Final standards or route plus construction, energization, service, and measured-effect record",
+      "next_check_date": "2026-10-01",
+      "reopening_trigger": null,
+      "file_ids": [
+        "61-PROJECT-NOVA-LARGE-LOAD"
+      ]
+    },
+    {
+      "gap_id": "gap-012",
+      "lane": "Nevada water and environmental operation",
+      "exact_next_artifact": "Project pumping, monitoring, compliance, mitigation, discharge, or enforcement record",
+      "next_check_date": null,
+      "reopening_trigger": "A project-specific regulator record reaches operating measurement or compliance",
+      "file_ids": [
+        "61-PROJECT-NEVADA-LITHIUM"
+      ]
+    },
+    {
+      "gap_id": "gap-013",
+      "lane": "Space Coast licence and mission use",
+      "exact_next_artifact": "Formal Shuttle Landing Facility licence disposition and downstream mission-use record",
+      "next_check_date": "2026-09-15",
+      "reopening_trigger": null,
+      "file_ids": [
+        "61-PROJECT-SPACE-COAST-AUTHORITY"
+      ]
+    },
+    {
+      "gap_id": "gap-014",
+      "lane": "AI assurance outcomes",
+      "exact_next_artifact": "Named system authorization, monitoring, incidents, corrective action, and mission outcome",
+      "next_check_date": null,
+      "reopening_trigger": "NIST or an operating institution publishes a system-level assurance artifact",
+      "file_ids": [
+        "61-ADOPTION-NIST-ARIA"
+      ]
+    },
+    {
+      "gap_id": "gap-015",
+      "lane": "Persistent autonomous service",
+      "exact_next_artifact": "Repeated service availability, rides, accessibility, cost, complaints, and coverage under stable definitions",
+      "next_check_date": null,
+      "reopening_trigger": "A regulator publishes a compatible operator service series",
+      "file_ids": [
+        "61-ADOPTION-WAYMO-CALIFORNIA"
+      ]
+    },
+    {
+      "gap_id": "gap-016",
+      "lane": "Comparable operating outcomes",
+      "exact_next_artifact": "Repeated measurements with stable entity, stage, period, denominator, method, and acceptance",
+      "next_check_date": null,
+      "reopening_trigger": "Two or more compatible named-entity outcome records become available",
+      "file_ids": [
+        "61-PROJECT-SPACE-COAST-AUTHORITY",
+        "61-ADOPTION-GSA-PQC",
+        "61-ADOPTION-NIST-ARIA",
+        "61-ADOPTION-WAYMO-CALIFORNIA"
+      ]
+    }
+  ],
+  "last_operated_date": "2026-08-23"
+}

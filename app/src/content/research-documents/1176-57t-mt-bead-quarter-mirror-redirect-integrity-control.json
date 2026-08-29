@@ -1,0 +1,71 @@
+{
+  "id": "research-doc-57t-mt-bead-quarter-mirror-redirect-integrity-control",
+  "collection_id": "research-collection-canonical-verification-endpoints-signed-release-indexes-cache-mirror-recovery-2026",
+  "title": "Montana BEAD completed quarter receives mirror and redirect integrity enforcement",
+  "slug": "57t-mt-bead-quarter-mirror-redirect-integrity-control",
+  "record_status": "Published",
+  "publisher": "National Telecommunications and Information Administration",
+  "publication_date": "2026-08-09",
+  "document_type": "Data Release",
+  "summary": "Mirrors must preserve the exact representation and release-index digests, declare the canonical URI, enforce transport security, and use a single permanent redirect with no downgrade, query injection, fragment injection, loop, or transform. Denominator: One contract-specific mirror and redirect schema, eighteen adversarial cases, five bounded valid routes, thirteen explicit rejections, and zero actual mirror or redirect events recorded.",
+  "key_findings": [
+    "Evidence stage: Mirror and redirect integrity controls.",
+    "Finding: Mirrors must preserve the exact representation and release-index digests, declare the canonical URI, enforce transport security, and use a single permanent redirect with no downgrade, query injection, fragment injection, loop, or transform.",
+    "Denominator: One contract-specific mirror and redirect schema, eighteen adversarial cases, five bounded valid routes, thirteen explicit rejections, and zero actual mirror or redirect events recorded.",
+    "Boundary: A mirror never becomes the lifecycle source-of-truth.",
+    "Boundary: Digest drift, canonical-header drift, target drift, loops, temporary redirects, downgrade, injection, and transforms reject.",
+    "Boundary: Mirror or redirect integrity cannot publish, accept, restore, implement, close, or create evidence.",
+    "Next action: Permit a Montana BEAD completed quarter mirror or redirect only when it preserves the exact canonical representation and index chain."
+  ],
+  "why_it_matters": "The record makes canonical delivery, signed release lineage, cache coherence, mirror and redirect integrity, and immutable-source recovery independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Binds stable reader-verification URIs to the exact current Phase 57S manifest and export.",
+    "Fails stale caches, transformed mirrors, and unsafe redirects closed.",
+    "Reconstructs reader state only from immutable history under a nonactivating recovery receipt."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "A mirror never becomes the lifecycle source-of-truth.",
+    "Digest drift, canonical-header drift, target drift, loops, temporary redirects, downgrade, injection, and transforms reject.",
+    "Mirror or redirect integrity cannot publish, accept, restore, implement, close, or create evidence.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-montana-bead-final-proposal-january-2026",
+  "supporting_source_ids": [
+    "source-57g-montana-bead-final-proposal-january-2026",
+    "source-57g-montana-deployment-projects-csv",
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-subgrantees-csv",
+    "source-57g-montana-cai-csv",
+    "source-57f-montana-bead-resource-index-august-2026",
+    "source-57f-montana-leo-quarterly-instructions-june-2026",
+    "source-57e-montana-quarterly-report-instructions-june-2026",
+    "source-57e-montana-project-monitoring-guide-june-2026",
+    "source-57b-louisiana-nextlink-first-bead-tower",
+    "source-57b-louisiana-starlink-bead-agreement"
+  ],
+  "supporting_official_urls": [
+    "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+  ],
+  "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+  "local_capture_path": "/downloads/canonical-verification-endpoints-signed-release-indexes-cache-mirror-recovery-2026/official-links/24-phase57t-record.txt",
+  "archive_member": "official-links/24-phase57t-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}

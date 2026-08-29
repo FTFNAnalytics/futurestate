@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-72-outcome-evidence-counterfactual-design-registry.json";
+
+const packets = registry.outcome_evidence_packets;
+const alternatives = registry.alternative_explanation_registers;
+const designs = registry.counterfactual_design_dockets;
+const cohorts = [...new Set(packets.map((record) => record.cohort_id))].sort();
+---
+
+<BaseLayout title="Outcome Evidence And Counterfactual Designs | FTFN" description="Thirty-two empty outcome-evidence packets, eight alternative-explanation registers, and eight inactive counterfactual-design dockets.">
+  <section class="page-section hero"><div class="hero__copy"><div class="eyebrow">FTFN / Claim Strength</div><h1 class="page-title">Classify the sentence before judging the evidence.</h1><p class="lede">Phase 72 separates structural status, descriptive results, association, attribution, and causal effect before a reviewer sees a favorable pattern.</p><div class="meta-row"><MetaPill label="32 empty packets" tone="possibility" /><MetaPill label="8 alternative registers" /><MetaPill label="8 inactive designs" /><MetaPill label="0 proposed claims" tone="review" /><MetaPill label="0 registered designs" tone="review" /><MetaPill label="0 results" tone="review" /></div></div></section>
+
+  <section class="page-section"><div class="status-panel"><article class="status-item"><h2>Seven claim classes</h2><p>Structural status, level, change, target, association, attribution, and causal effect carry different evidence ceilings.</p></article><article class="status-item"><h2>Ten alternative categories</h2><p>Pre-trends, concurrent interventions, policy, market, capacity, workforce, infrastructure, measurement, selection, and external events remain visible.</p></article><article class="status-item"><h2>Twelve design gates</h2><p>Question, estimand, controls, assumptions, spillovers, confounding, missingness, falsification, uncertainty, and registration precede results.</p></article></div></section>
+
+  <section class="page-section" data-claim-registry>
+    <div class="section-heading"><div><div class="eyebrow">Outcome Evidence Packets</div><h2>Search thirty-two empty claim packets.</h2></div><a class="inline-link" href="/briefings/outcome-evidence-packet-desk-001/">Read the packet method</a></div>
+    <form class="filter-panel" id="claim-filters"><label class="filter-panel__search">Search<input type="search" name="search" placeholder="Entity, cohort, measure or packet" /></label><label>Cohort<select name="cohort"><option value="">All cohorts</option>{cohorts.map((cohort) => <option value={cohort}>{cohort}</option>)}</select></label><button class="filter-panel__reset" type="reset">Reset</button></form>
+    <div class="grid" id="claim-records">{packets.map((record) => <article class="record-card" data-claim-record data-cohort={record.cohort_id} data-search={`${record.evidence_packet_id} ${record.panel_id} ${record.cohort_id} ${record.named_entity} ${record.measure_label}`.toLowerCase()}><div class="meta-row"><MetaPill label={record.evidence_packet_id} tone="possibility" /><MetaPill label={record.packet_state} tone="review" /></div><h3><a href={`/evidence/claims/${record.slug}/`}>{record.measure_label}</a></h3><p>{record.named_entity}</p><div class="meta-row"><MetaPill label="12 not ready" /><MetaPill label="no class" /><MetaPill label="no claim" /></div></article>)}</div>
+  </section>
+
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Counterfactual Design</div><h2>Eight design dockets remain Inactive.</h2></div><a class="inline-link" href="/briefings/counterfactual-design-desk-001/">Read the design protocol</a></div><div class="grid">{designs.map((record, index) => <article class="record-card"><div class="meta-row"><MetaPill label={record.counterfactual_docket_id} tone="possibility" /><MetaPill label={record.design_decision} tone="review" /></div><h3><a href={`/evidence/claims/${record.slug}/`}>{record.named_entity}</a></h3><p>{record.design_state}</p><div class="meta-row"><MetaPill label="12 inactive gates" /><MetaPill label={`${alternatives[index].category_assessments.length} unassessed alternatives`} /><MetaPill label="0 designs" /></div></article>)}</div></section>
+
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Public Contract</div><h2>Inspect the missing claim and design state.</h2><p>The export publishes claim-strength and research-design controls. It contains no proposed sentence, assessment, selected design, result, effect estimate, reviewer, or receipt.</p></div><article class="record-card"><a class="inline-link" href="/data/outcome-evidence-counterfactual-designs.json">Evidence packet and design JSON</a><br /><a class="inline-link" href="/evidence/analysis/">Continue to Phase 73 execution controls</a></article></section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    const form = document.querySelector('#claim-filters'); const records = [...document.querySelectorAll('[data-claim-record]')]; if (!form) return;
+    const apply = () => { const data = new FormData(form); const search = String(data.get('search') || '').trim().toLowerCase(); const cohort = String(data.get('cohort') || ''); records.forEach((record) => { record.hidden = Boolean((search && !record.dataset.search.includes(search)) || (cohort && record.dataset.cohort !== cohort)); }); };
+    form.addEventListener('input', apply); form.addEventListener('change', apply); form.addEventListener('reset', () => requestAnimationFrame(apply));
+  })();
+</script>

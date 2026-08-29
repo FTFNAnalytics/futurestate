@@ -1,0 +1,71 @@
+---
+id: "briefing-qualification-method-002-receiving-system-acceptance"
+title: "Qualification Method 002: Receiving-System Acceptance"
+slug: "qualification-method-002-receiving-system-acceptance"
+record_status: "Published"
+summary: "A field method for proving that a named receiver accepted a defined asset, service, product, cutover, occupancy, or operating condition."
+published_date: 2026-08-12
+captured_date: 2026-08-12
+signal_ids:
+  - "signal-aps-tsmc-service-territory-capacity-boundary"
+  - "signal-phoenix-tsmc-fab3-topping-out"
+  - "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+  - "signal-toronto-24-254930-community-council-recommendation"
+  - "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+  - "signal-virginia-data-center-air-permit-trail"
+  - "signal-virginia-gs5-large-load-rate-class"
+  - "signal-faa-part450-operator-transition"
+evidence_gap_ids:
+  - "gap-016"
+claim_scope: "Editorial Synthesis"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-08-12
+top_takeaways:
+  - "The test applies only to the same named entity and stage."
+  - "Method, denominator or not-applicable basis, exceptions, and corrections are required fields rather than optional narrative."
+  - "A passing packet becomes eligible for human review; it never publishes or advances state automatically."
+constraint_watch:
+  - "Data Quality"
+  - "Interpretation"
+  - "Standards"
+what_to_watch_next:
+  - "A real same-entity artifact satisfying the complete packet contract"
+  - "An independent review decision and bounded receipt"
+  - "Complete propagation or an explicit no-change, watch, correction, or blocker trail"
+---
+
+## Question
+
+Does a named receiving authority or customer accept the defined asset, service, product, cutover, occupancy, or operating condition?
+
+## Minimum admissible fields
+
+- **Artifact types:** Signed acceptance or closeout; Occupancy or operating authorization; Accepted cutover record; Customer receipt or qualified-product acceptance; Receiving-authority decision.
+- **Time:** The acceptance date, effective date, accepted configuration, and any conditions must be explicit.
+- **Method:** The named receiver, acceptance criterion, accepted scope, conditions, exceptions, and sign-off authority must be inspectable.
+- **Denominator:** The accepted asset, service scope, units, locations, configuration, or explicit not-applicable basis must be declared.
+- **Exceptions:** Conditional acceptance, punch-list items, exceptions, rollback conditions, and later corrections must be preserved.
+- **Recurrence boundary:** One accepted event establishes only that bounded acceptance and does not establish persistent service or output.
+
+## Eight-file packet set
+
+- [67-QP-002: TSMC Arizona](/evidence/qualification/67-qp-002-tsmc-arizona-acceptance/) — **Not Established / Awaiting Qualifying Artifact.** A named receiving-authority or customer acceptance record. Facility-specific inspection, utility acceptance, equipment or product qualification, customer acceptance, and a compatible repeat production series.
+- [67-QP-006: Toronto 24 254930](/evidence/qualification/67-qp-006-toronto-24-254930-acceptance/) — **Not Established / Awaiting Qualifying Artifact.** A named receiving-authority or customer acceptance record. Enacted amendment numbers or accepted condition compliance followed by a project-specific building permit, start, completion, and occupancy record.
+- [67-QP-010: Northern Virginia large load](/evidence/qualification/67-qp-010-northern-virginia-large-load-acceptance/) — **Not Established / Awaiting Qualifying Artifact.** A named receiving-authority or customer acceptance record. Final route and land rights followed by construction, inspection, energization, a named GS-5 service agreement, metered operation, and compatible reliability.
+- [67-QP-014: Space Coast authority stack](/evidence/qualification/67-qp-014-space-coast-authority-acceptance/) — **Not Established / Awaiting Qualifying Artifact.** A named receiving-authority or customer acceptance record. A formal Shuttle Landing Facility licence disposition or site-and-operator-specific asset acceptance, mission use, repeated service, utilization, safety, and reliability record.
+- [67-QP-018: Nevada lithium](/evidence/qualification/67-qp-018-nevada-lithium-acceptance/) — **Not Established / Awaiting Qualifying Artifact.** A named receiving-authority or customer acceptance record. A named inspection, accepted construction completion, commissioning result, compliant operating measurement, qualified lot, customer receipt, or recurring output series.
+- [67-QP-022: GSA post-quantum acquisition](/evidence/qualification/67-qp-022-gsa-pqc-acceptance/) — **Not Established / Awaiting Qualifying Artifact.** A named receiving-authority or customer acceptance record. A named agency inventory, solicitation, award, interoperability result, tested cutover, receiving-authority acceptance, rollback record, or legacy retirement.
+- [67-QP-026: NIST ARIA](/evidence/qualification/67-qp-026-nist-aria-acceptance/) — **Not Established / Awaiting Qualifying Artifact.** A named receiving-authority or customer acceptance record. A named system evaluation connected to authorization, deployment monitoring, incidents, corrective action, repeat review, and a stable mission or service measure.
+- [67-QP-030: Waymo California](/evidence/qualification/67-qp-030-waymo-california-acceptance/) — **Partial / Held / Awaiting Completion Artifact.** A named receiving-authority or customer acceptance record. A stable Waymo passenger-service series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, cost, and compatible definitions.
+
+## Reject conditions
+
+Reject or hold a return when entity, authority, scope, date, method, denominator, exception history, correction trail, stage identity, receipt timing, or propagation is incomplete. A rejected synthetic fixture or returned document is not evidence that the underlying condition does not exist.
+
+## Decision outputs
+
+The only reader-visible outputs are a Change Note, Watch Note, Correction, No Material Change receipt, or Blocked Check. Every output requires human review and the existing Phase 60 propagation contract.
+
+## Publication boundary
+
+This method describes admissibility. It assigns no readiness score, probability, rank, maturity value, or automatic publication state.

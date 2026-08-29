@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/v03-editorial-program.json";
+---
+<BaseLayout title="Editorial calendar | FTFN Review">
+  <ReviewHeader eyebrow="Living publication" title="Editorial calendar" summary="A visible cadence keeps the Review current while leaving evidence-gate decisions to their exact scheduled checks." phase={110} />
+  <section class="page-section"><div class="signal-grid">{program.editorial_calendar.map((item) => <article class="record-card"><MetaPill label={item.cadence} /><h2>{item.deliverable}</h2><p>Next due: <strong>{item.next_due}</strong></p></article>)}</div></section>
+  <section class="page-section prose-page"><h2>Two calendars, kept separate</h2><p>The editorial calendar governs reading, corrections and page maintenance. The Phase 60 evidence calendar governs exact artifact checks and receipts. An editorial review cannot predate, replace or silently operate an evidence gate.</p><a class="inline-link" href="/review/freshness/">Open the freshness board</a></section>
+</BaseLayout>

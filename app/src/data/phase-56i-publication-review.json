@@ -1,0 +1,40 @@
+{
+  "phase": "56I",
+  "reviewed_date": "2026-07-25",
+  "source_profiles_added": 3,
+  "acquisition_count": 12,
+  "document_decisions": {
+    "reviewed": 12,
+    "promoted": [
+      "research-doc-56i-manatee-eia923-monthly-data-rail",
+      "research-doc-56i-current-applications-first-pass-decision",
+      "research-doc-56i-monaghan-excelsior-commitment-denominator",
+      "research-doc-56i-united-may2026-first-pass",
+      "research-doc-56i-southwest-may2026-first-pass",
+      "research-doc-56i-delta-may2026-first-pass",
+      "research-doc-56i-american-may2026-first-pass",
+      "research-doc-56i-alaska-may2026-first-pass",
+      "research-doc-56i-jetblue-may2026-first-pass"
+    ],
+    "held": [
+      "research-doc-56i-dhs-fy2025-fisma-index-continuation",
+      "research-doc-56i-gateway-epa-investigation-continuation",
+      "research-doc-56i-island-components-first-pass-decision"
+    ]
+  },
+  "signal_decisions": {
+    "reviewed": 3,
+    "promoted": [
+      "signal-56i-eia923-monthly-operating-rail",
+      "signal-56i-monaghan-program-commitment"
+    ],
+    "held": [
+      "signal-56i-first-pass-continuation-hold"
+    ]
+  },
+  "acquisition_rule": "Every check retains its Phase 56F coverage ID and named continuation rule.",
+  "first_pass_rule": "Existing findings are referenced rather than republished as new findings; only genuinely new bounded records produce new signals.",
+  "unavailable_record_rule": "An unavailable exact record produces a dated source check and continuation rule, not generic replacement context.",
+  "closure_rule": "DHS, Manatee, and Gateway remain Open; all nine selected partial records remain Partially Closed.",
+  "comparison_rule": "No causal effect, ranking, completeness score, composite score, readiness score, or inference from missing disclosure is permitted."
+}

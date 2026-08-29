@@ -1,0 +1,37 @@
+{
+  "phase": "56J",
+  "reviewed_date": "2026-07-25",
+  "source_profiles_added": 5,
+  "original_partially_closed_queue_count": 20,
+  "open_rails_continued": 3,
+  "batch_one_acquisition_count": 5,
+  "document_decisions": {
+    "reviewed": 5,
+    "promoted": [
+      "research-doc-56j-manatee-eia923-plant-operation",
+      "research-doc-56j-dalrymple-aemo-march-constraint",
+      "research-doc-56j-hornsdale-h1-2024-operation",
+      "research-doc-56j-kc46-readiness-plan"
+    ],
+    "held": [
+      "research-doc-56j-doe-ferc-fisma-scope-boundary"
+    ]
+  },
+  "signal_decisions": {
+    "reviewed": 5,
+    "promoted": [
+      "signal-56j-manatee-monthly-operation",
+      "signal-56j-dalrymple-march-constraint",
+      "signal-56j-hornsdale-event-operation",
+      "signal-56j-kc46-readiness-plan"
+    ],
+    "held": [
+      "signal-56j-doe-ferc-scope-hold"
+    ]
+  },
+  "closure_decision": "Manatee moves from Open to Partially Closed because the exact named asset now has monthly operating data. Every other selected state remains unchanged.",
+  "scope_rule": "The FERC FY 2025 cybersecurity result is authoritative for FERC but cannot substitute for a department-wide DOE result.",
+  "target_rule": "KC-46 availability percentages are plan targets and are not described as realized outcomes.",
+  "attribution_rule": "Hornsdale event observations remain attributed to the operator-authored report hosted by ARENA.",
+  "comparison_rule": "Evidence-value order is an acquisition queue, not an entity ranking; no causal, composite, readiness, quality, safety, or value score is permitted."
+}

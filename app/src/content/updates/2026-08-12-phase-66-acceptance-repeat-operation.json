@@ -1,0 +1,35 @@
+{
+  "id": "update-2026-08-12-phase-66-acceptance-repeat-operation",
+  "effective_date": "2026-08-12",
+  "entry_type": "Signal Repair",
+  "title": "Phase 66 tests named files for acceptance and repeated operation",
+  "summary": "Sixty-four Phase 65 named-file records now have record-level downstream classifications, and all eight files have explicit validation, acceptance, recurring-operation, and comparable-outcome decisions. Eight dossiers, two reader guides, and one dependency map publish without changing an underlying evidence state.",
+  "affected_record_ids": [
+    "briefing-acceptance-dossier-001-tsmc-arizona",
+    "briefing-acceptance-dossier-002-toronto-24-254930",
+    "briefing-acceptance-dossier-003-northern-virginia-large-load",
+    "briefing-acceptance-dossier-004-space-coast-authority",
+    "briefing-acceptance-dossier-005-nevada-lithium",
+    "briefing-acceptance-dossier-006-gsa-pqc",
+    "briefing-acceptance-dossier-007-nist-aria",
+    "briefing-acceptance-dossier-008-waymo-california",
+    "briefing-acceptance-watch-002-eight-files-four-tests",
+    "briefing-repeat-operation-watch-001-after-acceptance",
+    "dependency-map-acceptance-is-not-repeat-operation"
+  ],
+  "related_paths": [
+    "/briefings/",
+    "/atlas/dependency-maps/acceptance-is-not-repeat-operation/",
+    "/atlas/local-systems/",
+    "/atlas/pathways/"
+  ],
+  "evidence_note": "Phase 66 reuses the sixty-four Phase 65 named-file reviews and preserves their official source identities. It records one Evidence Present, four Partial/Held, and twenty-seven Not Established downstream decisions with zero matrix advances.",
+  "receipt_type": "No Material Change",
+  "materiality": "No record-state change",
+  "source_checked_date": "2026-08-12",
+  "decision_date": "2026-08-12",
+  "prior_state": "Phase 65 exposed eight reporting packs but did not apply one explicit downstream qualification test to every record.",
+  "current_state": "Every named-file record is classified as same-entity downstream evidence, stage-adjacent or held, or context only; every file has four exact downstream decisions and a Published dossier.",
+  "publication_effect": "Adds eight Published acceptance dossiers, two Published reader guides, one Published dependency map, one update, and no source, signal, receipt, event, gate, matrix, export, score, ranking, or operating-outcome change.",
+  "work_package": "docs/work-packages/phase-66-acceptance-repeated-operation.md"
+}

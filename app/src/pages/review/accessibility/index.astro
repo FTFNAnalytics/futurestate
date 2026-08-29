@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/v031-content-expansion.json";
+---
+
+<BaseLayout title="Accessible and international reading | FTFN Review" description="Linear reading editions, jurisdiction lenses and transparent translation-review status.">
+  <ReviewHeader eyebrow="Phase 115 · Accessible and international reading" title="Choose a reading form that fits the task." summary="The evidence stays the same; structure, density and jurisdiction context change." phase={115} />
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Linear editions</div><h2>Four flagship reports without card-grid dependence.</h2></div></div><div class="signal-grid">{program.reports.map((report) => <article class="record-card"><MetaPill label="Linear reading edition" /><h3><a href={`/review/accessibility/reports/${report.slug}/`}>{report.title}</a></h3><p>{report.thesis}</p></article>)}</div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Jurisdiction lenses</div><h2>Context before comparison.</h2><p>Five lenses explain how to read authority, delivery and outcome records across different institutional settings.</p></div><div class="source-list">{program.lenses.map((lens) => <a class="source-row" href={`/review/lenses/${lens.slug}/`}><strong>{lens.title}</strong><span>{lens.reading_rule}</span></a>)}</div></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Translation status</div><h2>Review is visible—and unfinished work stays unpublished.</h2></div></div><div class="signal-grid">{program.translation_pilots.map((pilot) => <article class="record-card"><MetaPill label={pilot.status} tone="review" /><h3>{pilot.language}</h3><p>{pilot.next_action}</p><p class="card-note">No public route exists.</p></article>)}</div></section>
+</BaseLayout>

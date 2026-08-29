@@ -1,0 +1,84 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-71-longitudinal-panel-outcome-comparison-registry.json";
+
+const panels = registry.longitudinal_panel_shells;
+const outcomes = registry.outcome_claim_dockets;
+const comparisons = registry.comparison_embargo_registers;
+const cohorts = [...new Set(panels.map((record) => record.cohort_id))].sort();
+---
+
+<BaseLayout title="Longitudinal Panels And Outcome Claims | FTFN" description="Thirty-two empty longitudinal panel shells, eight not-ready outcome-claim dockets, and eight active comparison embargoes.">
+  <section class="page-section hero">
+    <div class="hero__copy">
+      <div class="eyebrow">FTFN / Longitudinal Outcomes</div>
+      <h1 class="page-title">Admitted series first. Outcome claims later.</h1>
+      <p class="lede">Phase 71 publishes the empty panel and adjudication layer without converting an admission contract into a value, trend, outcome, peer comparison, score, or rank.</p>
+      <div class="meta-row">
+        <MetaPill label="32 empty panels" tone="possibility" />
+        <MetaPill label="8 claim dockets" />
+        <MetaPill label="8 comparison embargoes" />
+        <MetaPill label="0 values" tone="review" />
+        <MetaPill label="0 outcome claims" tone="review" />
+        <MetaPill label="0 rankings" tone="review" />
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="status-panel">
+      <article class="status-item"><h2>Exact panel contracts</h2><p>Each shell preserves one entity, measure, denominator, period, method, revision, break, and uncertainty boundary.</p></article>
+      <article class="status-item"><h2>Ten outcome gates</h2><p>Series basis, sufficiency, direction, adverse evidence, alternatives, attribution, uncertainty, dual control, and propagation stay separate.</p></article>
+      <article class="status-item"><h2>Ten comparison gates</h2><p>No peer statement is allowed without a common question, measure, denominator, period, method, lifecycle, and uncertainty contract.</p></article>
+    </div>
+  </section>
+
+  <section class="page-section" data-outcome-registry>
+    <div class="section-heading"><div><div class="eyebrow">Longitudinal Panels</div><h2>Search thirty-two empty panel shells.</h2></div><a class="inline-link" href="/briefings/longitudinal-panel-desk-001/">Read the panel method</a></div>
+    <form class="filter-panel" id="outcome-filters">
+      <label class="filter-panel__search">Search<input type="search" name="search" placeholder="Entity, cohort, measure or panel" /></label>
+      <label>Cohort<select name="cohort"><option value="">All cohorts</option>{cohorts.map((cohort) => <option value={cohort}>{cohort}</option>)}</select></label>
+      <button class="filter-panel__reset" type="reset">Reset</button>
+    </form>
+    <div class="grid" id="outcome-records">
+      {panels.map((record) => (
+        <article class="record-card" data-outcome-record data-cohort={record.cohort_id} data-search={`${record.panel_id} ${record.specification_id} ${record.cohort_id} ${record.named_entity} ${record.measure_label}`.toLowerCase()}>
+          <div class="meta-row"><MetaPill label={record.panel_id} tone="possibility" /><MetaPill label={record.panel_state} tone="review" /></div>
+          <h3><a href={`/evidence/outcomes/${record.slug}/`}>{record.measure_label}</a></h3><p>{record.named_entity}</p>
+          <div class="meta-row"><MetaPill label="0 points" /><MetaPill label="0 values" /><MetaPill label="no trend" /></div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Outcome Adjudication</div><h2>Eight claim dockets remain Not Ready.</h2></div><a class="inline-link" href="/briefings/outcome-claim-comparison-protocol-001/">Read the claim protocol</a></div>
+    <div class="grid">
+      {outcomes.map((record, index) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={record.outcome_claim_docket_id} tone="possibility" /><MetaPill label={record.claim_decision} tone="review" /></div>
+          <h3><a href={`/evidence/outcomes/${record.slug}/`}>{record.named_entity}</a></h3><p>{record.docket_state}</p>
+          <div class="meta-row"><MetaPill label="10 not ready" /><MetaPill label={comparisons[index].comparison_state} tone="review" /><MetaPill label="0 claims" /></div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Public Contract</div><h2>Inspect the empty outcome state.</h2><p>The export includes panel, claim, and comparison controls. It contains no series payload, value, trend, claim, score, ranking, reviewer identity, or decision receipt.</p></div><article class="record-card"><a class="inline-link" href="/data/longitudinal-panels-outcome-claims.json">Panel and claim JSON</a><br /><a class="inline-link" href="/evidence/claims/">Continue to Phase 72 claim-strength controls</a></article></section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    const form = document.querySelector('#outcome-filters');
+    const records = [...document.querySelectorAll('[data-outcome-record]')];
+    if (!form) return;
+    const apply = () => {
+      const data = new FormData(form);
+      const search = String(data.get('search') || '').trim().toLowerCase();
+      const cohort = String(data.get('cohort') || '');
+      records.forEach((record) => { record.hidden = Boolean((search && !record.dataset.search.includes(search)) || (cohort && record.dataset.cohort !== cohort)); });
+    };
+    form.addEventListener('input', apply); form.addEventListener('change', apply); form.addEventListener('reset', () => requestAnimationFrame(apply));
+  })();
+</script>

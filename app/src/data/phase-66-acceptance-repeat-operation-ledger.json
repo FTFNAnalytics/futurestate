@@ -1,0 +1,1299 @@
+{
+  "schema_version": "1.0",
+  "phase": "66",
+  "ledger_id": "acceptance-repeat-operation-ledger-001",
+  "title": "Acceptance And Repeated Operation Dossiers",
+  "captured_date": "2026-08-12",
+  "as_of_date": "2026-08-12",
+  "scope": "Sixty-four Phase 65 named-file records tested against validation, acceptance, recurring operation, and comparable outcome for the same eight Phase 61 files.",
+  "interpretation_boundary": "A reviewed record changes only the exact same-entity downstream question it satisfies. Authority, commitment, construction, planning, adjacent assets, other entities, and one-time observations do not transfer into acceptance, repeat operation, or outcome evidence.",
+  "stage_taxonomy": [
+    {
+      "stage_id": "66-STAGE-01-VALIDATION",
+      "phase64_stage_id": "64-STAGE-05-VALIDATION",
+      "label": "Validation",
+      "question": "Does a same-entity record document the named inspection, test, compliance check, qualification, result, exception, correction, or retest?"
+    },
+    {
+      "stage_id": "66-STAGE-02-ACCEPTANCE",
+      "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+      "label": "Acceptance",
+      "question": "Does a named receiving authority or customer accept the defined asset, service, product, cutover, occupancy, or operating condition?"
+    },
+    {
+      "stage_id": "66-STAGE-03-REPEAT",
+      "phase64_stage_id": "64-STAGE-07-REPEAT",
+      "label": "Recurring operation",
+      "question": "Does the record establish compatible repeated service, output, use, monitoring, shipment, or operation for the same entity?"
+    },
+    {
+      "stage_id": "66-STAGE-04-OUTCOME",
+      "phase64_stage_id": "64-STAGE-08-OUTCOME",
+      "label": "Comparable outcome",
+      "question": "Does a repeated series preserve entity, period, definition, method, denominator, and receiving-system acceptance well enough to support an outcome claim?"
+    }
+  ],
+  "decision_states": [
+    "Evidence Present",
+    "Partial / Held",
+    "Not Established"
+  ],
+  "metrics": {
+    "named_files": 8,
+    "records_reviewed": 64,
+    "stage_decisions": 32,
+    "evidence_present": 1,
+    "partial_or_held": 4,
+    "not_established": 27,
+    "same_entity_downstream_records": 2,
+    "stage_adjacent_or_held_records": 15,
+    "context_only_records": 47,
+    "matrix_cells_advanced": 0,
+    "new_sources": 0,
+    "new_signals": 0,
+    "signal_promotions": 0,
+    "receipts_created": 0,
+    "public_exports_added": 0,
+    "scores_created": 0,
+    "rankings_created": 0
+  },
+  "dossier_rows": [
+    {
+      "dossier_id": "66-DOSSIER-01",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "named_entity": "TSMC Arizona",
+      "kind": "local_project",
+      "canonical_briefing_id": "briefing-project-conversion-001-tsmc-arizona",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-001-tsmc-arizona",
+      "gate_id": "63-GATE-TSMC-ARIZONA",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-22",
+      "reopening_trigger": null,
+      "exact_next_artifact": "A facility-specific accepted utility, inspection, occupancy, qualification, customer-acceptance, or compatible recurring production record.",
+      "stop_rule": "Do not infer accepted service or campus-wide output from utility territory, an agreement, construction status, or one facility claim.",
+      "interpretation_boundary": "The City-relayed Fab 1 volume-production statement remains a bounded single observation. Construction, planning, workforce, water, and agreement records do not establish accepted utility service, customer qualification, or a compatible recurring facility series.",
+      "stage_decisions": [
+        {
+          "stage_id": "66-STAGE-01-VALIDATION",
+          "phase64_stage_id": "64-STAGE-05-VALIDATION",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Facility-specific inspection, utility acceptance, equipment qualification, and customer qualification remain open.",
+          "exact_qualifying_artifact": "A same-entity facility-specific inspection, utility acceptance, equipment or product qualification, customer acceptance, and a compatible repeat production series."
+        },
+        {
+          "stage_id": "66-STAGE-02-ACCEPTANCE",
+          "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "No selected event establishes accepted service, customer acceptance, or accepted product.",
+          "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. Facility-specific inspection, utility acceptance, equipment or product qualification, customer acceptance, and a compatible repeat production series."
+        },
+        {
+          "stage_id": "66-STAGE-03-REPEAT",
+          "phase64_stage_id": "64-STAGE-07-REPEAT",
+          "decision_state": "Partial / Held",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [
+            "research-doc-phase65-001"
+          ],
+          "basis": "A bounded Fab 1 volume-production claim exists without a compatible recurring facility series.",
+          "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. Facility-specific inspection, utility acceptance, equipment or product qualification, customer acceptance, and a compatible repeat production series."
+        },
+        {
+          "stage_id": "66-STAGE-04-OUTCOME",
+          "phase64_stage_id": "64-STAGE-08-OUTCOME",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Stable facility-level output, workforce, water, reliability, cost, and compliance outcomes are not established.",
+          "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. Facility-specific inspection, utility acceptance, equipment or product qualification, customer acceptance, and a compatible repeat production series."
+        }
+      ],
+      "record_reviews": [
+        "66-REVIEW-01",
+        "66-REVIEW-02",
+        "66-REVIEW-03",
+        "66-REVIEW-04",
+        "66-REVIEW-05",
+        "66-REVIEW-06",
+        "66-REVIEW-07",
+        "66-REVIEW-08"
+      ]
+    },
+    {
+      "dossier_id": "66-DOSSIER-02",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "kind": "local_project",
+      "canonical_briefing_id": "briefing-project-conversion-002-toronto-24-254930",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-002-toronto-24-254930",
+      "gate_id": "63-GATE-TORONTO-24-254930",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-09",
+      "reopening_trigger": null,
+      "exact_next_artifact": "Introduced or enacted amendment numbers, accepted condition-compliance records, or the first confirmed permit, start, completion, or occupancy record for the application.",
+      "stop_rule": "Do not treat Council adoption as enactment or use aggregate Toronto and CMHC stages as this project's delivery outcome.",
+      "interpretation_boundary": "Council adoption and item history establish authority and unresolved conditions. Citywide pipeline, permit, power, and reliability records cannot substitute for this application's condition compliance, permit, start, completion, or occupancy.",
+      "stage_decisions": [
+        {
+          "stage_id": "66-STAGE-01-VALIDATION",
+          "phase64_stage_id": "64-STAGE-05-VALIDATION",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Accepted wind, land-exchange, laneway, servicing, inspection, and condition-compliance records remain open.",
+          "exact_qualifying_artifact": "A same-entity enacted amendment numbers or accepted condition compliance followed by a project-specific building permit, start, completion, and occupancy record."
+        },
+        {
+          "stage_id": "66-STAGE-02-ACCEPTANCE",
+          "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "No permit, completion, occupancy, or other receiving-authority acceptance is established.",
+          "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. Enacted amendment numbers or accepted condition compliance followed by a project-specific building permit, start, completion, and occupancy record."
+        },
+        {
+          "stage_id": "66-STAGE-03-REPEAT",
+          "phase64_stage_id": "64-STAGE-07-REPEAT",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Recurring project operation is outside the established evidence stage.",
+          "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. Enacted amendment numbers or accepted condition compliance followed by a project-specific building permit, start, completion, and occupancy record."
+        },
+        {
+          "stage_id": "66-STAGE-04-OUTCOME",
+          "phase64_stage_id": "64-STAGE-08-OUTCOME",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "No stable project-level housing delivery or occupancy outcome series is established.",
+          "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. Enacted amendment numbers or accepted condition compliance followed by a project-specific building permit, start, completion, and occupancy record."
+        }
+      ],
+      "record_reviews": [
+        "66-REVIEW-09",
+        "66-REVIEW-10",
+        "66-REVIEW-11",
+        "66-REVIEW-12",
+        "66-REVIEW-13",
+        "66-REVIEW-14",
+        "66-REVIEW-15",
+        "66-REVIEW-16"
+      ]
+    },
+    {
+      "dossier_id": "66-DOSSIER-03",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "kind": "local_project",
+      "canonical_briefing_id": "briefing-project-conversion-003-northern-virginia-large-load",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-003-northern-virginia-large-load",
+      "gate_id": "63-GATE-NOVA-LARGE-LOAD",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-10-01",
+      "reopening_trigger": null,
+      "exact_next_artifact": "A final route or land decision followed by construction, inspection, energization, or a named GS-5 customer service record.",
+      "stop_rule": "Do not convert a forecast, rate class, application, or conditional approval into available capacity or accepted customer service.",
+      "interpretation_boundary": "A future rate class, conditional transmission decision, forecast, permit trail, land-use rule, and reclaimed-water program remain upstream of an accepted named-customer service record.",
+      "stage_decisions": [
+        {
+          "stage_id": "66-STAGE-01-VALIDATION",
+          "phase64_stage_id": "64-STAGE-05-VALIDATION",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Inspection, energization tests, and accepted compliance are not established.",
+          "exact_qualifying_artifact": "A same-entity final route and land rights followed by construction, inspection, energization, a named gs-5 service agreement, metered operation, and compatible reliability."
+        },
+        {
+          "stage_id": "66-STAGE-02-ACCEPTANCE",
+          "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Available capacity and accepted named-customer service are not established.",
+          "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. Final route and land rights followed by construction, inspection, energization, a named GS-5 service agreement, metered operation, and compatible reliability."
+        },
+        {
+          "stage_id": "66-STAGE-03-REPEAT",
+          "phase64_stage_id": "64-STAGE-07-REPEAT",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Recurring metered service and reliability are not established.",
+          "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. Final route and land rights followed by construction, inspection, energization, a named GS-5 service agreement, metered operation, and compatible reliability."
+        },
+        {
+          "stage_id": "66-STAGE-04-OUTCOME",
+          "phase64_stage_id": "64-STAGE-08-OUTCOME",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Stable cost, reliability, permit, and community-effect outcomes are not established.",
+          "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. Final route and land rights followed by construction, inspection, energization, a named GS-5 service agreement, metered operation, and compatible reliability."
+        }
+      ],
+      "record_reviews": [
+        "66-REVIEW-17",
+        "66-REVIEW-18",
+        "66-REVIEW-19",
+        "66-REVIEW-20",
+        "66-REVIEW-21",
+        "66-REVIEW-22",
+        "66-REVIEW-23",
+        "66-REVIEW-24"
+      ]
+    },
+    {
+      "dossier_id": "66-DOSSIER-04",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "kind": "local_project",
+      "canonical_briefing_id": "briefing-project-conversion-004-space-coast-authority",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-004-space-coast-authority",
+      "gate_id": "63-GATE-SPACE-COAST-AUTHORITY",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-08-15",
+      "reopening_trigger": null,
+      "exact_next_artifact": "The FAA's formal Shuttle Landing Facility licence disposition or a named operator authorization, accepted capital asset, mission, or repeated service record.",
+      "stop_rule": "Do not treat environmental review, a site licence, or an infrastructure milestone as operator approval, mission completion, or corridor reliability.",
+      "interpretation_boundary": "Operator transition, environmental decisions, a programme shelf, a master plan, and an operational causeway bridge concern distinct scopes. None transfers acceptance or repeat-operation evidence into the Shuttle Landing Facility, LC-39A, or SLC-40 file.",
+      "stage_decisions": [
+        {
+          "stage_id": "66-STAGE-01-VALIDATION",
+          "phase64_stage_id": "64-STAGE-05-VALIDATION",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Operator licensing, safety acceptance, and asset acceptance remain open.",
+          "exact_qualifying_artifact": "A same-entity a formal shuttle landing facility licence disposition or site-and-operator-specific asset acceptance, mission use, repeated service, utilization, safety, and reliability record."
+        },
+        {
+          "stage_id": "66-STAGE-02-ACCEPTANCE",
+          "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "No selected event establishes an accepted operator service or mission capability.",
+          "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. A formal Shuttle Landing Facility licence disposition or site-and-operator-specific asset acceptance, mission use, repeated service, utilization, safety, and reliability record."
+        },
+        {
+          "stage_id": "66-STAGE-03-REPEAT",
+          "phase64_stage_id": "64-STAGE-07-REPEAT",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Repeated mission or facility service is not established.",
+          "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. A formal Shuttle Landing Facility licence disposition or site-and-operator-specific asset acceptance, mission use, repeated service, utilization, safety, and reliability record."
+        },
+        {
+          "stage_id": "66-STAGE-04-OUTCOME",
+          "phase64_stage_id": "64-STAGE-08-OUTCOME",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Compatible utilization, delay, safety, reliability, and local-outcome series are not established.",
+          "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A formal Shuttle Landing Facility licence disposition or site-and-operator-specific asset acceptance, mission use, repeated service, utilization, safety, and reliability record."
+        }
+      ],
+      "record_reviews": [
+        "66-REVIEW-25",
+        "66-REVIEW-26",
+        "66-REVIEW-27",
+        "66-REVIEW-28",
+        "66-REVIEW-29",
+        "66-REVIEW-30",
+        "66-REVIEW-31",
+        "66-REVIEW-32"
+      ]
+    },
+    {
+      "dossier_id": "66-DOSSIER-05",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "kind": "local_project",
+      "canonical_briefing_id": "briefing-project-conversion-005-nevada-lithium",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-005-nevada-lithium",
+      "gate_id": "63-GATE-NEVADA-LITHIUM",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "An official project, regulator, lender, or customer record reaches construction acceptance, commissioning, compliance, qualification, shipment, or recurring output.",
+      "exact_next_artifact": "A named inspection, construction completion, commissioning test, compliant operating measurement, qualified lot, customer receipt, or recurring output series.",
+      "stop_rule": "Do not convert authorization, a permit, financial close, projected capacity, or reserve context into qualified domestic supply.",
+      "interpretation_boundary": "Rhyolite Ridge's water permit defines future inspection, monitoring, modeling, reporting, and pre-operation duties but does not establish their satisfaction. Thacker Pass authorization and financial close do not establish qualified material or customer receipt.",
+      "stage_decisions": [
+        {
+          "stage_id": "66-STAGE-01-VALIDATION",
+          "phase64_stage_id": "64-STAGE-05-VALIDATION",
+          "decision_state": "Partial / Held",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [
+            "research-doc-phase65-040"
+          ],
+          "basis": "The permit defines future inspection, modeling, monitoring, and reporting duties without establishing their satisfaction.",
+          "exact_qualifying_artifact": "A same-entity a named inspection, accepted construction completion, commissioning result, compliant operating measurement, qualified lot, customer receipt, or recurring output series."
+        },
+        {
+          "stage_id": "66-STAGE-02-ACCEPTANCE",
+          "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Commissioning acceptance, qualified material, and customer receipt are not established.",
+          "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. A named inspection, accepted construction completion, commissioning result, compliant operating measurement, qualified lot, customer receipt, or recurring output series."
+        },
+        {
+          "stage_id": "66-STAGE-03-REPEAT",
+          "phase64_stage_id": "64-STAGE-07-REPEAT",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Compatible recurring qualified output or shipment is not established.",
+          "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. A named inspection, accepted construction completion, commissioning result, compliant operating measurement, qualified lot, customer receipt, or recurring output series."
+        },
+        {
+          "stage_id": "66-STAGE-04-OUTCOME",
+          "phase64_stage_id": "64-STAGE-08-OUTCOME",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Stable output, compliance, water, sales, and receiving-system outcome series are not established.",
+          "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A named inspection, accepted construction completion, commissioning result, compliant operating measurement, qualified lot, customer receipt, or recurring output series."
+        }
+      ],
+      "record_reviews": [
+        "66-REVIEW-33",
+        "66-REVIEW-34",
+        "66-REVIEW-35",
+        "66-REVIEW-36",
+        "66-REVIEW-37",
+        "66-REVIEW-38",
+        "66-REVIEW-39",
+        "66-REVIEW-40"
+      ]
+    },
+    {
+      "dossier_id": "66-DOSSIER-06",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "kind": "adoption_case",
+      "canonical_briefing_id": "briefing-adoption-case-001-gsa-pqc",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-006-gsa-pqc",
+      "gate_id": "63-GATE-GSA-PQC",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "An official agency or GSA record identifies a named PQC procurement or system migration milestone.",
+      "exact_next_artifact": "A named agency inventory, solicitation, award, interoperability test, cutover, acceptance, or legacy-retirement record.",
+      "stop_rule": "Do not treat a buyer's guide, standard, draft credential specification, or deadline as an order or completed migration.",
+      "interpretation_boundary": "Acquisition channels, migration policy, credential drafts, preliminary interoperability material, cybersecurity guidance, and oversight context do not identify a completed named agency migration.",
+      "stage_decisions": [
+        {
+          "stage_id": "66-STAGE-01-VALIDATION",
+          "phase64_stage_id": "64-STAGE-05-VALIDATION",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Interoperability, security validation, rollback testing, and corrective action are not established for a named migration.",
+          "exact_qualifying_artifact": "A same-entity a named agency inventory, solicitation, award, interoperability result, tested cutover, receiving-authority acceptance, rollback record, or legacy retirement."
+        },
+        {
+          "stage_id": "66-STAGE-02-ACCEPTANCE",
+          "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Accepted cutover and legacy retirement are not established.",
+          "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. A named agency inventory, solicitation, award, interoperability result, tested cutover, receiving-authority acceptance, rollback record, or legacy retirement."
+        },
+        {
+          "stage_id": "66-STAGE-03-REPEAT",
+          "phase64_stage_id": "64-STAGE-07-REPEAT",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Recurring post-cutover operation across a stable system cohort is not established.",
+          "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. A named agency inventory, solicitation, award, interoperability result, tested cutover, receiving-authority acceptance, rollback record, or legacy retirement."
+        },
+        {
+          "stage_id": "66-STAGE-04-OUTCOME",
+          "phase64_stage_id": "64-STAGE-08-OUTCOME",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Comparable migration coverage, incident, cost, and operating outcome evidence is not established.",
+          "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A named agency inventory, solicitation, award, interoperability result, tested cutover, receiving-authority acceptance, rollback record, or legacy retirement."
+        }
+      ],
+      "record_reviews": [
+        "66-REVIEW-41",
+        "66-REVIEW-42",
+        "66-REVIEW-43",
+        "66-REVIEW-44",
+        "66-REVIEW-45",
+        "66-REVIEW-46",
+        "66-REVIEW-47",
+        "66-REVIEW-48"
+      ]
+    },
+    {
+      "dossier_id": "66-DOSSIER-07",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "kind": "adoption_case",
+      "canonical_briefing_id": "briefing-adoption-case-002-nist-aria",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-007-nist-aria",
+      "gate_id": "63-GATE-NIST-ARIA",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "NIST or a participating institution publishes a named system-level assurance, deployment, or outcome artifact.",
+      "exact_next_artifact": "A named system evaluation and authorization record linked to deployment monitoring, incident handling, corrective action, or a stable mission-outcome measure.",
+      "stop_rule": "Do not treat an evaluation pilot, framework, inventory, or purchasing channel as assured operation or measured benefit.",
+      "interpretation_boundary": "The ARIA 0.1 pilot is direct evidence of one multi-level evaluation. It does not establish a receiving institution's authorization, continuous monitoring, incident response, correction, repeated independent review, or mission outcome.",
+      "stage_decisions": [
+        {
+          "stage_id": "66-STAGE-01-VALIDATION",
+          "phase64_stage_id": "64-STAGE-05-VALIDATION",
+          "decision_state": "Evidence Present",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [
+            "research-doc-phase65-049"
+          ],
+          "basis": "ARIA used model testing, red teaming, and field testing in one named evaluation pilot.",
+          "exact_qualifying_artifact": "A same-entity a named system evaluation connected to authorization, deployment monitoring, incidents, corrective action, repeat review, and a stable mission or service measure."
+        },
+        {
+          "stage_id": "66-STAGE-02-ACCEPTANCE",
+          "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "System authorization and accepted continuous assurance are not established.",
+          "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. A named system evaluation connected to authorization, deployment monitoring, incidents, corrective action, repeat review, and a stable mission or service measure."
+        },
+        {
+          "stage_id": "66-STAGE-03-REPEAT",
+          "phase64_stage_id": "64-STAGE-07-REPEAT",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Recurring monitoring, incident, override, correction, and independent-review evidence is not established.",
+          "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. A named system evaluation connected to authorization, deployment monitoring, incidents, corrective action, repeat review, and a stable mission or service measure."
+        },
+        {
+          "stage_id": "66-STAGE-04-OUTCOME",
+          "phase64_stage_id": "64-STAGE-08-OUTCOME",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Stable mission, service, cost, quality, or user outcomes remain absent from the reviewed public layer.",
+          "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A named system evaluation connected to authorization, deployment monitoring, incidents, corrective action, repeat review, and a stable mission or service measure."
+        }
+      ],
+      "record_reviews": [
+        "66-REVIEW-49",
+        "66-REVIEW-50",
+        "66-REVIEW-51",
+        "66-REVIEW-52",
+        "66-REVIEW-53",
+        "66-REVIEW-54",
+        "66-REVIEW-55",
+        "66-REVIEW-56"
+      ]
+    },
+    {
+      "dossier_id": "66-DOSSIER-08",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "kind": "adoption_case",
+      "canonical_briefing_id": "briefing-adoption-case-003-waymo-california",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-008-waymo-california",
+      "gate_id": "63-GATE-WAYMO-CALIFORNIA",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "CPUC or another official California authority publishes a current operator-level passenger-service and outcome rollup.",
+      "exact_next_artifact": "A stable Waymo operating series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, and comparable definitions.",
+      "stop_rule": "Do not convert legal authority, testing miles, or a reporting requirement into persistent service quality, safety, accessibility, or adoption.",
+      "interpretation_boundary": "CPUC service authority supplies partial acceptance evidence and creates a recurring reporting rail. DMV testing miles and general oversight records do not establish stable passenger-service availability, quality, accessibility, safety, complaints, cost, or coverage.",
+      "stage_decisions": [
+        {
+          "stage_id": "66-STAGE-01-VALIDATION",
+          "phase64_stage_id": "64-STAGE-05-VALIDATION",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "A current comparable operator validation series is not established by the selected events.",
+          "exact_qualifying_artifact": "A same-entity a stable waymo passenger-service series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, cost, and compatible definitions."
+        },
+        {
+          "stage_id": "66-STAGE-02-ACCEPTANCE",
+          "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+          "decision_state": "Partial / Held",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [
+            "research-doc-phase65-057"
+          ],
+          "basis": "Service authority permits operation but does not establish availability, accessibility, quality, or receiving-system acceptance.",
+          "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. A stable Waymo passenger-service series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, cost, and compatible definitions."
+        },
+        {
+          "stage_id": "66-STAGE-03-REPEAT",
+          "phase64_stage_id": "64-STAGE-07-REPEAT",
+          "decision_state": "Partial / Held",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [
+            "research-doc-phase65-058"
+          ],
+          "basis": "Required reporting creates a recurring evidence rail while one current comparable public rollup remains missing.",
+          "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. A stable Waymo passenger-service series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, cost, and compatible definitions."
+        },
+        {
+          "stage_id": "66-STAGE-04-OUTCOME",
+          "phase64_stage_id": "64-STAGE-08-OUTCOME",
+          "decision_state": "Not Established",
+          "decision": "No Change",
+          "supporting_phase65_record_ids": [],
+          "basis": "Stable service exposure, rides, interventions, safety, accessibility, complaints, cost, and coverage outcomes are not established together.",
+          "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A stable Waymo passenger-service series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, cost, and compatible definitions."
+        }
+      ],
+      "record_reviews": [
+        "66-REVIEW-57",
+        "66-REVIEW-58",
+        "66-REVIEW-59",
+        "66-REVIEW-60",
+        "66-REVIEW-61",
+        "66-REVIEW-62",
+        "66-REVIEW-63",
+        "66-REVIEW-64"
+      ]
+    }
+  ],
+  "record_reviews": [
+    {
+      "review_id": "66-REVIEW-01",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "phase65_record_id": "research-doc-phase65-001",
+      "source_document_id": "research-doc-55y-tsmc-arizona-operating-update-2026",
+      "title": "Phoenix TSMC Operating And Employment Update — Phase 65 TSMC Arizona delivery review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [
+        "66-STAGE-03-REPEAT"
+      ],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-02",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "phase65_record_id": "research-doc-phase65-002",
+      "source_document_id": "research-doc-55n-phoenix-tsmc-fab3-topping-out",
+      "title": "Phoenix TSMC Fab 3 Topping-Out Record — Phase 65 TSMC Arizona delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-03",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "phase65_record_id": "research-doc-phase65-003",
+      "source_document_id": "research-doc-55n-phoenix-tsmc-wastewater-agreement",
+      "title": "Phoenix TSMC Wastewater Facilities Development Agreement Record — Phase 65 TSMC Arizona delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-04",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "phase65_record_id": "research-doc-phase65-004",
+      "source_document_id": "research-doc-55s2-phoenix-preliminary-cip-2026-2031",
+      "title": "City of Phoenix Preliminary Capital Improvement Program, 2026-2031 — Phase 65 TSMC Arizona delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-05",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "phase65_record_id": "research-doc-phase65-005",
+      "source_document_id": "research-doc-55s-phoenix-ama-fifth-management-plan",
+      "title": "Phoenix Active Management Area Fifth Management Plan — Phase 65 TSMC Arizona delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-06",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "phase65_record_id": "research-doc-phase65-006",
+      "source_document_id": "research-doc-55y-asml-technical-academy-2025",
+      "title": "ASML Phoenix Technical Academy Becomes Fully Operational — Phase 65 TSMC Arizona delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-07",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "phase65_record_id": "research-doc-phase65-007",
+      "source_document_id": "research-doc-55y-intel-arizona-apprenticeship-2024",
+      "title": "Intel Arizona Manufacturing Technician Apprenticeship Launch — Phase 65 TSMC Arizona delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-08",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "phase65_record_id": "research-doc-phase65-008",
+      "source_document_id": "research-doc-55y-intel-arizona-water-2024",
+      "title": "Intel Arizona 2024 Water Metrics — Phase 65 TSMC Arizona delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-09",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "phase65_record_id": "research-doc-phase65-009",
+      "source_document_id": "research-doc-57z-toronto-council-adoption",
+      "title": "Toronto application 24 254930 clears the City Council gate with enactment conditions retained — Phase 65 Toronto application 24 254930 delivery review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-10",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "phase65_record_id": "research-doc-phase65-010",
+      "source_document_id": "research-doc-55n-toronto-sc33-9-item-history",
+      "title": "Toronto Application 24 254930 Council-Gate Item History — Phase 65 Toronto application 24 254930 delivery review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-11",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "phase65_record_id": "research-doc-phase65-011",
+      "source_document_id": "research-doc-55s2-toronto-capital-project-pipeline-2026",
+      "title": "Toronto Capital Projects Pipeline — Phase 65 Toronto application 24 254930 delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-12",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "phase65_record_id": "research-doc-phase65-012",
+      "source_document_id": "research-doc-55s2-oeb-eb-2026-0129",
+      "title": "Ontario Energy Board Proceeding EB-2026-0129 — Phase 65 Toronto application 24 254930 delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-13",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "phase65_record_id": "research-doc-phase65-013",
+      "source_document_id": "research-doc-55s2-census-bps-annual-2025",
+      "title": "Building Permits Survey: Final Annual 2025 Data — Phase 65 Toronto application 24 254930 delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-14",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "phase65_record_id": "research-doc-phase65-014",
+      "source_document_id": "research-doc-55z-eia-us-outage-duration-2024",
+      "title": "EIA U.S. Electricity Interruption Duration for 2024 — Phase 65 Toronto application 24 254930 delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-15",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "phase65_record_id": "research-doc-phase65-015",
+      "source_document_id": "research-doc-55z-nerc-state-of-reliability-2025",
+      "title": "NERC 2025 State of Reliability Overview — Phase 65 Toronto application 24 254930 delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-16",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "phase65_record_id": "research-doc-phase65-016",
+      "source_document_id": "research-doc-55s2-eia-860-early-release-2025",
+      "title": "Form EIA-860 Early Release: 2025 Generator Inventory — Phase 65 Toronto application 24 254930 delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-17",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "phase65_record_id": "research-doc-phase65-017",
+      "source_document_id": "research-doc-55v-virginia-jlarc-data-centers-2024",
+      "title": "Data Centers in Virginia — Phase 65 Northern Virginia large-load delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-18",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "phase65_record_id": "research-doc-phase65-018",
+      "source_document_id": "research-doc-55v-loudoun-electrical-infrastructure-plan-2026",
+      "title": "Loudoun Electrical Infrastructure Comprehensive Plan Amendments — Phase 65 Northern Virginia large-load delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-19",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "phase65_record_id": "research-doc-phase65-019",
+      "source_document_id": "research-doc-55v-virginia-scc-gs5-large-load-rate-decision-2025",
+      "title": "Virginia SCC GS-5 Large-Load Rate Decision — Phase 65 Northern Virginia large-load delivery review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-20",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "phase65_record_id": "research-doc-phase65-020",
+      "source_document_id": "research-doc-55v-golden-mars-transmission-decision-2026",
+      "title": "Golden-Mars Transmission Project Decision Trail — Phase 65 Northern Virginia large-load delivery review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-21",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "phase65_record_id": "research-doc-phase65-021",
+      "source_document_id": "research-doc-55v-virginia-data-center-air-permits-2026",
+      "title": "Virginia Issued Air Permits for Data Centers — Phase 65 Northern Virginia large-load delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-22",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "phase65_record_id": "research-doc-phase65-022",
+      "source_document_id": "research-doc-55x-pjm-load-forecast-2026",
+      "title": "PJM Load Forecast Report - January 2026 — Phase 65 Northern Virginia large-load delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-23",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "phase65_record_id": "research-doc-phase65-023",
+      "source_document_id": "research-doc-55x-loudoun-phase2-data-center-standards",
+      "title": "Loudoun Phase 2 Data Center Standards and Locations Project — Phase 65 Northern Virginia large-load delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-24",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "phase65_record_id": "research-doc-phase65-024",
+      "source_document_id": "research-doc-55v-loudoun-reclaimed-water-program",
+      "title": "Loudoun Water Reclaimed Water Program — Phase 65 Northern Virginia large-load delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-25",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "phase65_record_id": "research-doc-phase65-025",
+      "source_document_id": "research-doc-55v-faa-part450-transition-2026",
+      "title": "FAA Part 450 Operator Transition — Phase 65 Florida Space Coast authority and mission delivery review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-26",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "phase65_record_id": "research-doc-phase65-026",
+      "source_document_id": "research-doc-55v-slc40-final-environmental-decision-2025",
+      "title": "SLC-40 Final Environmental Assessment and Decision — Phase 65 Florida Space Coast authority and mission delivery review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-27",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "phase65_record_id": "research-doc-phase65-027",
+      "source_document_id": "research-doc-55v-space-florida-annual-report-2025",
+      "title": "Space Florida Annual Report 2025 — Phase 65 Florida Space Coast authority and mission delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-28",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "phase65_record_id": "research-doc-phase65-028",
+      "source_document_id": "research-doc-55v-fdot-spaceport-improvement-program",
+      "title": "Florida Spaceport Improvement Program — Phase 65 Florida Space Coast authority and mission delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-29",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "phase65_record_id": "research-doc-phase65-029",
+      "source_document_id": "research-doc-55v-faa-spaceports-by-state-2026",
+      "title": "FAA Spaceports by State — Phase 65 Florida Space Coast authority and mission delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-30",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "phase65_record_id": "research-doc-phase65-030",
+      "source_document_id": "research-doc-55v-kennedy-master-plan-2026",
+      "title": "Kennedy Space Center Master Plan Digest — Phase 65 Florida Space Coast authority and mission delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-31",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "phase65_record_id": "research-doc-phase65-031",
+      "source_document_id": "research-doc-55x-ksc-causeway-bridge-operational-2025",
+      "title": "Kennedy Causeway Bridge Operational Milestone — Phase 65 Florida Space Coast authority and mission delivery review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-32",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "phase65_record_id": "research-doc-phase65-032",
+      "source_document_id": "research-doc-55x-ksc-phsf-roman-upgrades-2026",
+      "title": "Kennedy Payload Hazardous Servicing Facility Roman Upgrades — Phase 65 Florida Space Coast authority and mission delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-33",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "phase65_record_id": "research-doc-phase65-033",
+      "source_document_id": "research-doc-55v-thacker-pass-blm-rod-2021",
+      "title": "Thacker Pass Bureau of Land Management Record of Decision — Phase 65 Nevada lithium project delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-34",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "phase65_record_id": "research-doc-phase65-034",
+      "source_document_id": "research-doc-55v-thacker-pass-doe-financial-close-2024",
+      "title": "Thacker Pass Department of Energy Loan Financial Close — Phase 65 Nevada lithium project delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-35",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "phase65_record_id": "research-doc-phase65-035",
+      "source_document_id": "research-doc-55v-thacker-pass-ndep-permit-hub",
+      "title": "Nevada Thacker Pass Environmental Permit Hub — Phase 65 Nevada lithium project delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-36",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "phase65_record_id": "research-doc-phase65-036",
+      "source_document_id": "research-doc-55v-thacker-pass-water-permit-2022",
+      "title": "Thacker Pass Water Pollution Control Permit NEV2020104 — Phase 65 Nevada lithium project delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-37",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "phase65_record_id": "research-doc-phase65-037",
+      "source_document_id": "research-doc-55x-thacker-pass-mining-notice-decisions-2022",
+      "title": "Thacker Pass Water and Reclamation Permit Notices of Decision — Phase 65 Nevada lithium project delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-38",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "phase65_record_id": "research-doc-phase65-038",
+      "source_document_id": "research-doc-55x-thacker-pass-reclamation-permit-2022",
+      "title": "Thacker Pass Mine Reclamation Permit — Phase 65 Nevada lithium project delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-39",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "phase65_record_id": "research-doc-phase65-039",
+      "source_document_id": "research-doc-55x-thacker-pass-air-permit-decision-2022",
+      "title": "Thacker Pass Air Pollution Control Permit Notice of Decision — Phase 65 Nevada lithium project delivery review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-40",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "phase65_record_id": "research-doc-phase65-040",
+      "source_document_id": "research-doc-55x-rhyolite-ridge-water-permit-2025",
+      "title": "Rhyolite Ridge Water Pollution Control Permit NEV2020107 — Phase 65 Nevada lithium project delivery review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [
+        "66-STAGE-01-VALIDATION"
+      ],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-41",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "phase65_record_id": "research-doc-phase65-041",
+      "source_document_id": "research-doc-55n-gsa-buy-ai-onegov",
+      "title": "GSA Buy AI and OneGov Procurement Channel — Phase 65 GSA post-quantum acquisition review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-42",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "phase65_record_id": "research-doc-phase65-042",
+      "source_document_id": "research-doc-56o-gsa-priority-portfolio-2026",
+      "title": "U.S. General Services Administration: Phase 56O Remediation Follow-Through — Phase 65 GSA post-quantum acquisition review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-43",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "phase65_record_id": "research-doc-phase65-043",
+      "source_document_id": "research-doc-55z-gao-federal-ai-acquisitions-2026",
+      "title": "GAO: Artificial Intelligence Acquisitions — Phase 65 GSA post-quantum acquisition review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-44",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "phase65_record_id": "research-doc-phase65-044",
+      "source_document_id": "research-doc-55n-nist-piv-pqc-working-drafts",
+      "title": "NIST PQC Updates to PIV Working Drafts — Phase 65 GSA post-quantum acquisition review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-45",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "phase65_record_id": "research-doc-phase65-045",
+      "source_document_id": "research-doc-55s-nccoe-pqc-interoperability-preliminary-draft",
+      "title": "NIST SP 1800-38C: Quantum Readiness Interoperability and Performance Preliminary Draft — Phase 65 GSA post-quantum acquisition review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-46",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "phase65_record_id": "research-doc-phase65-046",
+      "source_document_id": "research-doc-55s-nist-csf-2-0",
+      "title": "The NIST Cybersecurity Framework 2.0 — Phase 65 GSA post-quantum acquisition review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-47",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "phase65_record_id": "research-doc-phase65-047",
+      "source_document_id": "research-doc-55z-gao-federal-incident-response-2023",
+      "title": "GAO: Federal Cybersecurity Incident Response Preparedness — Phase 65 GSA post-quantum acquisition review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-48",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "phase65_record_id": "research-doc-phase65-048",
+      "source_document_id": "research-doc-55z-gao-cdm-network-monitoring-2025",
+      "title": "GAO: Continuous Diagnostics and Mitigation Network Monitoring — Phase 65 GSA post-quantum acquisition review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-49",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "phase65_record_id": "research-doc-phase65-049",
+      "source_document_id": "research-doc-55y-nist-aria-pilot-evaluation-2025",
+      "title": "NIST ARIA 0.1 Pilot Evaluation Report — Phase 65 NIST ARIA assurance adoption review",
+      "review_class": "Same-entity downstream evidence",
+      "relevant_stage_ids": [
+        "66-STAGE-01-VALIDATION"
+      ],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record concerns the named file and supports only the bounded Phase 64 state cited in this dossier; it does not flow automatically to a later stage."
+    },
+    {
+      "review_id": "66-REVIEW-50",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "phase65_record_id": "research-doc-phase65-050",
+      "source_document_id": "research-doc-55y-nist-aria-evaluation-program",
+      "title": "NIST ARIA Evaluation Environment — Phase 65 NIST ARIA assurance adoption review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-51",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "phase65_record_id": "research-doc-phase65-051",
+      "source_document_id": "research-doc-55y-nist-ai-metrology-center",
+      "title": "NIST AI Metrology Center — Phase 65 NIST ARIA assurance adoption review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-52",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "phase65_record_id": "research-doc-phase65-052",
+      "source_document_id": "research-doc-55y-nist-ai-tevv-program",
+      "title": "NIST AI TEVV Program — Phase 65 NIST ARIA assurance adoption review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-53",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "phase65_record_id": "research-doc-phase65-053",
+      "source_document_id": "research-doc-55y-nist-ai-rmf-core",
+      "title": "NIST AI RMF Core — Phase 65 NIST ARIA assurance adoption review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-54",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "phase65_record_id": "research-doc-phase65-054",
+      "source_document_id": "research-doc-55s-nist-ai-rmf-critical-infrastructure-concept-2026",
+      "title": "NIST AI RMF Trustworthy AI in Critical Infrastructure Profile Concept Note — Phase 65 NIST ARIA assurance adoption review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-55",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "phase65_record_id": "research-doc-phase65-055",
+      "source_document_id": "research-doc-55z-gao-operational-ai-use-cases-2026",
+      "title": "GAO Artificial Intelligence Use Cases — Phase 65 NIST ARIA assurance adoption review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-56",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "phase65_record_id": "research-doc-phase65-056",
+      "source_document_id": "research-doc-55z-gao-irs-ai-management-2026",
+      "title": "GAO: IRS AI Skills, Information Quality, and Strategic Management — Phase 65 NIST ARIA assurance adoption review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-57",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "phase65_record_id": "research-doc-phase65-057",
+      "source_document_id": "research-doc-55y-cpuc-waymo-al2-disposition-2024",
+      "title": "CPUC Authorizes Expanded Waymo Fared Driverless Service — Phase 65 Waymo California service review",
+      "review_class": "Same-entity downstream evidence",
+      "relevant_stage_ids": [
+        "66-STAGE-02-ACCEPTANCE"
+      ],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record concerns the named file and supports only the bounded Phase 64 state cited in this dossier; it does not flow automatically to a later stage."
+    },
+    {
+      "review_id": "66-REVIEW-58",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "phase65_record_id": "research-doc-phase65-058",
+      "source_document_id": "research-doc-55y-cpuc-av-advice-status-2026",
+      "title": "CPUC Driverless Deployment Authorization Ledger — Phase 65 Waymo California service review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [
+        "66-STAGE-03-REPEAT"
+      ],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-59",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "phase65_record_id": "research-doc-phase65-059",
+      "source_document_id": "research-doc-55y-california-dmv-av-miles-2024",
+      "title": "California DMV 2024 Autonomous Testing Mileage — Phase 65 Waymo California service review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-60",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "phase65_record_id": "research-doc-phase65-060",
+      "source_document_id": "research-doc-55z-california-dmv-av-test-miles-2025",
+      "title": "California DMV Autonomous Vehicle Test Miles for 2025 — Phase 65 Waymo California service review",
+      "review_class": "Stage-adjacent / held",
+      "relevant_stage_ids": [],
+      "decision": "Retain only at the stated same-entity or adjacent stage",
+      "rationale": "The record is relevant to the file or downstream question but lacks the accepted result, stable series, exact scope, or receiving-system proof required for a complete downstream state."
+    },
+    {
+      "review_id": "66-REVIEW-61",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "phase65_record_id": "research-doc-phase65-061",
+      "source_document_id": "research-doc-56a-california-av-testing-2022-2023",
+      "title": "California autonomous-vehicle public-road testing: 2022-2023 reporting period — Phase 65 Waymo California service review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-62",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "phase65_record_id": "research-doc-phase65-062",
+      "source_document_id": "research-doc-55z-nhtsa-ads-crash-data-june-2026",
+      "title": "NHTSA ADS and Level 2 Crash Data Through June 2026 — Phase 65 Waymo California service review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-63",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "phase65_record_id": "research-doc-phase65-063",
+      "source_document_id": "research-doc-56a-california-av-testing-2021-2022",
+      "title": "California autonomous-vehicle public-road testing: 2021-2022 reporting period — Phase 65 Waymo California service review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    },
+    {
+      "review_id": "66-REVIEW-64",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "phase65_record_id": "research-doc-phase65-064",
+      "source_document_id": "research-doc-56r-dot-automated-vehicle-initiative-plan",
+      "title": "DOT-08: GAO-18-132 Recommendation 1 implementation artifact and milestone record — Phase 65 Waymo California service review",
+      "review_class": "Context only",
+      "relevant_stage_ids": [],
+      "decision": "Do not transfer into a downstream stage",
+      "rationale": "The record supplies local, sector, policy, planning, comparison, or adjacent-entity context and cannot be transferred into validation, acceptance, recurring operation, or outcome evidence for this named file."
+    }
+  ],
+  "cross_file_rules": [
+    "The named entity and exact asset, system, site, operator, institution, or project scope must match.",
+    "The record must name the downstream authority, test, acceptance event, repeated series, or outcome definition it supports.",
+    "An adjacent entity, corridor aggregate, planning baseline, forecast, permit obligation, or general programme record cannot be transferred into a named-file stage.",
+    "A single accepted event does not establish recurring operation; repeated operation does not establish a comparable outcome without stable definitions and denominators.",
+    "Any future stage change requires a real source review and the existing Phase 60-64 propagation contract."
+  ]
+}

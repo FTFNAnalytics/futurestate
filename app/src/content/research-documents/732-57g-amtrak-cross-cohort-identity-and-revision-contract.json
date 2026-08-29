@@ -1,0 +1,63 @@
+{
+  "id": "research-doc-57g-amtrak-cross-cohort-identity-and-revision-contract",
+  "collection_id": "research-collection-named-asset-project-cohort-registry-expansion-2026",
+  "title": "Stable station keys now expose overlap without collapsing cohort or revision identity",
+  "slug": "57g-amtrak-cross-cohort-identity-and-revision-contract",
+  "record_status": "Published",
+  "publisher": "National Railroad Passenger Corporation",
+  "publication_date": "2026-08-03",
+  "document_type": "Data Release",
+  "summary": "The 197 memberships resolve to 178 unique normalized station keys; each key preserves its separate train-access, PIDS, and amenity memberships so later revisions can add or close rows without rewriting the historical baseline. Denominator: 178 unique normalized station keys derived from 197 source memberships, with no assumed device-level identity.",
+  "key_findings": [
+    "Evidence stage: Named-asset registry.",
+    "Finding: The 197 memberships resolve to 178 unique normalized station keys; each key preserves its separate train-access, PIDS, and amenity memberships so later revisions can add or close rows without rewriting the historical baseline.",
+    "Denominator: 178 unique normalized station keys derived from 197 source memberships, with no assumed device-level identity.",
+    "Boundary: Name normalization does not prove a current Amtrak station code.",
+    "Boundary: Cross-cohort overlap does not establish a shared underlying asset.",
+    "Boundary: Revision lineage requires explicit source evidence for every added, removed, renamed, replaced, or retired record.",
+    "Next action: Acquire a current official station-device register and publish a row-level revision crosswalk."
+  ],
+  "why_it_matters": "The record creates a stable public identity, lineage, cohort, stage, or work-breakdown join without promoting structure into an unsupported outcome.",
+  "ftfn_relevance": [
+    "Stabilizes public identity before later observations are joined.",
+    "Preserves entity, cohort, stage, period, unit, threshold operator, method, revision, privacy boundary, and authority.",
+    "Keeps registry structure, operating outcomes, forecasts, implementation, acceptance, and closure distinct."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Name normalization does not prove a current Amtrak station code.",
+    "Cross-cohort overlap does not establish a shared underlying asset.",
+    "Revision lineage requires explicit source evidence for every added, removed, renamed, replaced, or retired record.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Mobility",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57f-amtrak-stations-alp-fy24-29",
+  "supporting_source_ids": [
+    "source-57f-amtrak-stations-alp-fy24-29",
+    "source-57e-amtrak-accessibility-progress-june-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-accessibility-plan-feedback-process-canada-act-0626.pdf"
+  ],
+  "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+  "local_capture_path": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/05-amtrak-cross-cohort-identity-and-revision-contract.txt",
+  "archive_member": "official-links/05-amtrak-cross-cohort-identity-and-revision-contract.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-03"
+}

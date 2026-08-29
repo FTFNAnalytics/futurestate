@@ -1,0 +1,67 @@
+---
+id: "signal-57g-hanford-null-identity-and-nonconversion-contract"
+title: "Missing batch and container identities are now explicit null fields, not synthetic joins"
+slug: "57g-hanford-null-identity-and-nonconversion-contract"
+record_status: "Published"
+summary: "The Hanford schema reserves batch ID, container ID, stage date, unit, quality disposition, shipment, receipt, acceptance, and disposal fields while recording zero public batch IDs and zero public container IDs in the current source set."
+source_ids:
+  - "source-57g-hanford-dflaw-process-animation"
+  - "source-57f-hanford-wtp-pmm-february-2026"
+  - "source-57f-doe-hanford-100k-gallons-may-2026"
+published_date: 2026-08-03
+captured_date: 2026-08-03
+primary_topic: "Energy"
+framework_layers:
+  - "Enabling Infrastructure"
+  - "Resource Foundations"
+signal_type: "Research Result"
+maturity_level: "Infrastructure"
+time_horizon: "Now"
+evidence_quality: "Official Data"
+verification_status: "Verified Against Primary Source"
+why_it_matters: "Evidence stage: Batch-container-stage registry. Denominator: The 14-stage registry and nine observations, with identity availability explicitly recorded as zero rather than inferred."
+dependencies:
+  - "stable public identity and lineage"
+  - "explicit cohort, lifecycle stage, or work-breakdown level"
+  - "compatible period, unit, denominator, method, revision, privacy boundary, and authority"
+  - "separate observation, outcome, forecast, implementation, acceptance, and closure evidence"
+constraints:
+  - "Data Quality"
+  - "Regulation"
+  - "Public Trust"
+receiving_systems:
+  - "Phase 57G named-asset and project-cohort registries"
+local_implications:
+  - "Treat every registry row as identity and lineage evidence; do not infer reliability, adoption, yield, readiness, output, implementation, or closure."
+evidence_gap_ids:
+  - "gap-008"
+  - "gap-016"
+claim_scope: "Specific Source Update"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-08-03
+editorial_notes: "Published under the Phase 57G identity-and-lineage registry contract."
+---
+
+## Phase 57G registry panel
+
+The Hanford schema reserves batch ID, container ID, stage date, unit, quality disposition, shipment, receipt, acceptance, and disposal fields while recording zero public batch IDs and zero public container IDs in the current source set.
+
+## Evidence stage and denominator
+
+**Batch-container-stage registry.** The 14-stage registry and nine observations, with identity availability explicitly recorded as zero rather than inferred.
+
+Structured registry: `phase-57g-hanford-batch-container-stage-registry.json`.
+
+## Evidence boundaries
+
+- Unknown identity is not evidence that no identifier exists operationally.
+- Nominal weight may not be multiplied by aggregate counts.
+- Gallon, glass, container, shipment, acceptance, and disposal observations cannot be synthetically converted.
+
+Exact target artifact acquired: **No**. FTFN submitted no agency contact or FOIA request.
+
+Next action: Reopen the mass-balance hold only with regulator-verifiable batch and container identities across every material stage.
+
+## Authority boundary
+
+A registry row is an identity, lineage, cohort, stage, or work-breakdown object—not reliability, adoption, yield, readiness, output, implementation, or closure. Historical and current revisions, site and facility, project and subproject, BSL and CAI, feed and glass, container stages, capacity and qualified output, agency assertions and independent acceptance remain separate. No record supports a ranking, composite, readiness score, generalized savings claim, or unsupported causal attribution.

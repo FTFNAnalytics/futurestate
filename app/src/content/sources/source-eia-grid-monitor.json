@@ -10,7 +10,7 @@
   "update_frequency": "Hourly and daily",
   "capture_priority": "High",
   "known_limitations": "Balancing-authority data helps characterize grid operations, but it does not by itself prove site-level interconnection capacity, deliverability, rate impacts, or utility service commitments.",
-  "last_checked_date": "2026-07-09",
+  "last_checked_date": "2026-07-22",
   "watch_lanes": ["Power and Grid", "Compute and Chips", "Local Systems"],
   "live_access_type": "API",
   "api_url": "https://api.eia.gov/v2/electricity/rto/region-data/data/",
@@ -20,5 +20,5 @@
   "jurisdiction": "United States",
   "source_owner": "U.S. Energy Information Administration",
   "automation_notes": "Track balancing-authority demand, generation, interchange, and regional grid operating patterns for power constraint signals.",
-  "notes": "First power-watch source for near-real-time grid operating context."
+  "notes": "First power-watch source for near-real-time grid operating context. Rechecked 2026-07-22: the EIA-930 monitor, downloads, and API remain active; hourly values are preliminary, can be revised or imputed, and do not establish project-level service or capacity."
 }

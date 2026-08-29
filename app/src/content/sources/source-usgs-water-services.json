@@ -10,7 +10,7 @@
   "update_frequency": "Daily to real-time, depending on service",
   "capture_priority": "High",
   "known_limitations": "USGS water observations support hydrologic context, but local supply claims still require water-rights, provider, reservoir, allocation, quality, and demand records.",
-  "last_checked_date": "2026-07-09",
+  "last_checked_date": "2026-07-23",
   "watch_lanes": ["Water", "Climate", "Local Systems"],
   "live_access_type": "API",
   "api_url": "https://waterservices.usgs.gov/nwis/iv/",
@@ -20,5 +20,5 @@
   "jurisdiction": "United States",
   "source_owner": "U.S. Geological Survey",
   "automation_notes": "Use for streamflow, groundwater, site, and water-quality services after selecting station IDs and parameters.",
-  "notes": "Core hydrologic evidence source for water stress and local conversion dossiers."
+  "notes": "Core hydrologic evidence source for water stress and local conversion dossiers. Phase 55E recheck recorded USGS's notice that WaterServices will be decommissioned in early 2027 and future integrations must migrate to api.waterdata.usgs.gov."
 }

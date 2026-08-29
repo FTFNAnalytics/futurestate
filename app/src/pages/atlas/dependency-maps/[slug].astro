@@ -83,6 +83,7 @@ const confidenceCounts = dependencyMap.data.links.reduce<Record<DependencyMapLin
   }
 );
 const confidenceSummary = Object.entries(confidenceCounts).filter(([, count]) => count > 0);
+const robots = dependencyMap.data.record_status === "Published" ? "index, follow" : "noindex, follow";
 
 function getConfidenceTone(confidence: DependencyMapLink["confidence"]) {
   if (confidence === "Supported") return "possibility";
@@ -103,7 +104,7 @@ function getNodeHref(node: DependencyMapNode) {
 }
 ---
 
-<BaseLayout title={`${dependencyMap.data.title} | FTFN`} description={dependencyMap.data.summary}>
+<BaseLayout title={`${dependencyMap.data.title} | FTFN`} description={dependencyMap.data.summary} robots={robots}>
   <section class="page-section">
     <div class="eyebrow">Dependency Map</div>
     <h1 class="page-title">{dependencyMap.data.title}</h1>

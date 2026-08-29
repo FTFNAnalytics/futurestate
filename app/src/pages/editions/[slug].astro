@@ -1,0 +1,43 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../components/review/ReviewHeader.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+import program from "../../data/v03-editorial-program.json";
+
+export function getStaticPaths() {
+  return program.accessible_editions.map((edition) => ({ params: { slug: edition.slug }, props: { editionId: edition.edition_id } }));
+}
+const { editionId } = Astro.props;
+const edition = program.accessible_editions.find((item) => item.edition_id === editionId)!;
+const topics = await getCollection("topics");
+const systems = await getCollection("localSystems");
+const topic = edition.topic_id ? topics.find((item) => item.data.id === edition.topic_id) : null;
+const system = edition.local_system_id ? systems.find((item) => item.data.id === edition.local_system_id) : null;
+const signals = topic ? (await getCollection("signals")).filter((signal) => signal.data.record_status === "Published" && signal.data.primary_topic === topic.data.name).sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf()).slice(0, 4) : [];
+---
+
+<BaseLayout title={`${edition.title} | FTFN accessible edition`} description={topic?.data.summary ?? system?.data.summary}>
+  <ReviewHeader eyebrow={edition.edition_type === "plain_language_topic" ? "Plain-language edition" : "Low-bandwidth field note"} title={edition.title} summary={topic?.data.summary ?? system!.data.summary} phase={109} />
+  <section class="page-section prose-page accessible-note">
+    <div class="meta-row"><MetaPill label="English" /><MetaPill label="Human-authored" /><MetaPill label={edition.review_state} /></div>
+    {topic ? (
+      <>
+        <h2>What is happening?</h2><p>{topic.data.summary}</p>
+        <h2>Why is this hard?</h2><p>Progress has to pass through real constraints: {topic.data.primary_constraints.join(", ")}. A plan or announcement can matter without proving that a system has been built, accepted, used repeatedly or improved.</p>
+        <h2>What evidence can you read now?</h2><ul>{signals.map((signal) => <li><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a> — {signal.data.summary}</li>)}</ul>
+        <h2>What should we watch next?</h2><ul>{topic.data.watch_questions.slice(0, 5).map((question) => <li>{question}</li>)}</ul>
+        <a class="inline-link" href={`/review/topics/${topic.data.slug}/`}>Open the full chapter</a>
+      </>
+    ) : (
+      <>
+        <h2>Place</h2><p>{system!.data.geography}</p>
+        <h2>Current position</h2><p>{system!.data.current_equilibrium}</p>
+        <h2>Main constraints</h2><ul>{system!.data.core_constraints.map((item) => <li>{item}</li>)}</ul>
+        <h2>Information still missing</h2><ul>{system!.data.missing_data.map((item) => <li>{item}</li>)}</ul>
+        <p><strong>Reading rule:</strong> do not replace missing local evidence with a national average or an announced target.</p>
+        <a class="inline-link" href={`/review/places/${system!.data.slug}/`}>Open the full place portrait</a>
+      </>
+    )}
+  </section>
+</BaseLayout>

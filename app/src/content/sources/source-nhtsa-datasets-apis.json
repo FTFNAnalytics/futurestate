@@ -10,7 +10,7 @@
   "update_frequency": "Daily, weekly, monthly, and annual depending on dataset",
   "capture_priority": "High",
   "known_limitations": "NHTSA datasets support safety and vehicle evidence, but interpretation depends on dataset definitions, reporting lags, manufacturer reporting behavior, exposure denominators, and investigation status.",
-  "last_checked_date": "2026-07-09",
+  "last_checked_date": "2026-07-23",
   "watch_lanes": ["Mobility Certification", "Security and Standards", "Cross-Cutting Official Rails"],
   "live_access_type": "API",
   "api_url": "https://api.nhtsa.gov/",
@@ -20,5 +20,5 @@
   "jurisdiction": "United States federal",
   "source_owner": "National Highway Traffic Safety Administration",
   "automation_notes": "Track recalls, complaints, vehicle safety data, crash data, manufacturer data, and AV-related datasets.",
-  "notes": "Core mobility safety data rail."
+  "notes": "Core mobility safety data rail. Phase 55E recheck confirmed the dataset directory remains available and connected it to the bounded Standing General Order record."
 }

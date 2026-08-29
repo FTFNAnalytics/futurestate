@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../components/review/ReviewHeader.astro";
+import program from "../../data/v03-editorial-program.json";
+---
+
+<BaseLayout title="Editorial method | The FTFN Review">
+  <ReviewHeader eyebrow="Editorial method" title="Synthesis is a reading layer, not new evidence." summary="The Review assembles existing records into a legible argument while preserving the status, date, scope and uncertainty of every underlying claim." phase={103} />
+  <section class="page-section prose-page">
+    <h2>The editorial contract</h2>
+    <ol>
+      <li><strong>Start with the record.</strong> Topic chapters, casebooks and stories resolve Published signals, sources, briefings, local systems and governed operating files.</li>
+      <li><strong>Keep stages separate.</strong> Funding is not delivery; authority is not operation; operation is not a measured outcome.</li>
+      <li><strong>Carry the denominator.</strong> An outcome page names the population, asset, geography, period, unit and recurrence needed before it interprets a value.</li>
+      <li><strong>Publish the challenge.</strong> Every topic gets an uncertainty page that asks what else could explain the evidence and what would change the reading.</li>
+      <li><strong>Expose maintenance.</strong> Freshness, corrections, archives and review dates are public parts of the publication.</li>
+    </ol>
+    <h2>Non-negotiable boundaries</h2>
+    <ul>{program.publication_boundaries.map((boundary) => <li>{boundary}</li>)}</ul>
+    <h2>Accessible publication</h2>
+    <p>Plain-language topic pages and low-bandwidth place notes are Published in English. French and Spanish are translation pilots only: both remain In Review and have no public route until a qualified human reviewer verifies terminology, claims and links.</p>
+    <h2>How to audit a chapter</h2>
+    <p>Open the linked signal, inspect its source list and claim scope, then compare the chapter’s unresolved questions with the source limitations. When a chapter and a source conflict, the dated primary-source record governs and the correction log records the editorial repair.</p>
+  </section>
+</BaseLayout>

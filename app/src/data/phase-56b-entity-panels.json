@@ -1,0 +1,2762 @@
+{
+  "phase": "56B",
+  "captured_date": "2026-07-24",
+  "panel_count": 12,
+  "panels": [
+    {
+      "panel_id": "panel-56b-nasa-fisma",
+      "portfolio": "ai_cyber",
+      "entity_id": "agency-nasa",
+      "entity_name": "National Aeronautics and Space Administration",
+      "entity_type": "Federal agency",
+      "indicator": "Inspector-general FISMA program maturity",
+      "unit": "FISMA maturity level",
+      "denominator": "NASA agency information-security program under the stated fiscal-year IG metrics",
+      "period": "Fiscal years 2022-2024",
+      "geography": "United States federal civil-space agency",
+      "method": "Annual independent FISMA evaluation using the applicable IG metrics",
+      "attribution": "NASA Office of Inspector General and its independent evaluator",
+      "record_status": "Published",
+      "signal_id": "signal-56b-nasa-fisma-panel",
+      "source_ids": [
+        "source-56b-nasa-fisma-fy2022",
+        "source-56b-nasa-fisma-fy2023",
+        "source-56b-nasa-fisma-fy2024"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-fisma-reporting",
+        "signal-56a-fisma-effectiveness"
+      ],
+      "observations": [
+        {
+          "period": "FY 2022",
+          "value": 3,
+          "label": "Level 3 - Consistently Implemented",
+          "source_id": "source-56b-nasa-fisma-fy2022"
+        },
+        {
+          "period": "FY 2023",
+          "value": 3,
+          "label": "Level 3 - Consistently Implemented",
+          "source_id": "source-56b-nasa-fisma-fy2023"
+        },
+        {
+          "period": "FY 2024",
+          "value": 3,
+          "label": "Level 3 - Consistently Implemented",
+          "source_id": "source-56b-nasa-fisma-fy2024"
+        }
+      ],
+      "reporting_breaks": [
+        "The FY 2023 evaluation period ended May 31, 2023; annual metric sets can change."
+      ],
+      "missing_data": [
+        "Track FY 2025 metrics, function-level maturity, control testing, authorization age, remediation, incidents, recovery, affected services, and mission effects."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the repeated agency-program rating only. Do not infer unchanged cyber risk, system performance, incidents, mission effect, or equivalence with another agency.",
+      "phase_56c_dossier_id": "dossier-56c-nasa-cyber-controls",
+      "phase_56c_signal_id": "signal-56c-nasa-cyber-controls",
+      "driver_constraint_source_ids": [
+        "source-56c-nasa-fisma-fy2025",
+        "source-56c-nasa-zero-trust-2025"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "NASA remained at FISMA Level 3 across FY 2022-FY 2024."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "NASA assigned zero-trust leadership, planned phased corporate implementation, and funded corporate initiatives while mission and JPL owners retained separate responsibilities."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "Non-corporate implementation had not begun; legacy systems, distributed ownership, and unknown non-corporate costs remained open."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "The later FY 2025 FISMA evaluation again reported Level 3, Consistently Implemented."
+        }
+      ],
+      "driver_constraint_attribution": "NASA OIG independently reports both the implementation condition and the annual maturity result.",
+      "independent_validation": "Independent oversight supplies two different official records; neither report validates a causal link between them.",
+      "alternative_explanations": [
+        "Annual metric design",
+        "Control scope and tested systems",
+        "Other remediation work",
+        "Legacy-system and mission-environment differences"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track FY 2026 FISMA results, pillar-level implementation across corporate and non-corporate systems, tested-control operation, incidents, recovery, service effects, and mission outcomes.",
+        "Add FY 2026 FISMA results and recommendation-level closure evidence with tested-system, incident, recovery, service, and mission denominators."
+      ],
+      "phase_56d_test_id": "test-56d-nasa-repeat-control-test",
+      "phase_56d_signal_id": "signal-56d-nasa-repeat-control-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-nasa-gao-risk-management-2025",
+        "source-56d-nasa-cio-open-recommendations-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Other remediation work",
+        "Control scope and tested systems",
+        "Legacy-system and mission-environment differences"
+      ],
+      "phase_56d_later_observations": [
+        "GAO's May 2026 status retained multiple selected-system risk-management recommendations as open.",
+        "GAO identified thirty open recommendations under the NASA CIO in January 2026."
+      ],
+      "phase_56d_compatibility": "Same agency and overlapping cybersecurity-control domain; recommendation inventories are not the annual FISMA maturity metric.",
+      "phase_56d_result": "The later records support a bounded remediation-workload and control-scope update but do not resolve control operation, incidents, recovery, or mission effects.",
+      "phase_56d_validation_status": "Independent official oversight; closure is not inferred where evidence remained insufficient.",
+      "phase_56f_coverage_id": "coverage-56f-nasa",
+      "phase_56f_closure_status": "Partially Closed",
+      "phase_56f_record_status": "Published",
+      "phase_56f_selected_source_id": "source-56f-nasa-open-recommendations-july-2026",
+      "phase_56f_highest_value_missing_record": "FY 2026 FISMA result and recommendation-level closure",
+      "phase_56f_remaining_gap": "FY 2026 FISMA result, tested-system coverage, incidents, recovery, service effects, and mission outcomes.",
+      "phase_56f_reopening_rule": "Reopen when NASA OIG publishes the FY 2026 FISMA evaluation or recommendation-level cyber closure data with tested-system scope.",
+      "phase_56h_acquisition_id": "acquisition-56h-nasa-fy2026-recommendation-continuation",
+      "phase_56h_checked_source_id": "source-56f-nasa-open-recommendations-july-2026",
+      "phase_56h_checked_date": "2026-07-24",
+      "phase_56h_prior_closure_status": "Partially Closed",
+      "phase_56h_current_closure_status": "Partially Closed",
+      "phase_56h_acquisition_result": "NASA OIG's current open-recommendations rail remains available, but no FY 2026 FISMA evaluation or newly scoped cyber recommendation closure is published on the selected rail.",
+      "phase_56h_remaining_gap": "FY 2026 FISMA result, tested-system coverage, incidents, recovery, service effects, and mission outcomes.",
+      "phase_56h_reopening_rule": "Reopen when NASA OIG publishes the FY 2026 FISMA evaluation or recommendation-level cyber closure data with tested-system scope.",
+      "phase_56j_queue_lane": "B — periodic official record rails",
+      "phase_56j_acquisition_order": 10,
+      "phase_56j_named_next_record": "FY 2026 FISMA result or recommendation-level cyber closure",
+      "phase_56m_coverage_decision": {
+        "coverage_id": "coverage-56f-nasa",
+        "entity_id": "agency-nasa",
+        "entity_name": "National Aeronautics and Space Administration",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-25-108138 recommendations 1-16 all remain Open under status notes current through May 2026.",
+        "decision": "Publish the exact non-closure because it resolves all sixteen action identities and statuses without implying implementation.",
+        "reopening_rule": "Reopen when GAO changes any GAO-25-108138 recommendation to implemented or closed, or NASA OIG publishes the FY 2026 FISMA evaluation with tested-system scope."
+      },
+      "phase_56m_records": [
+        {
+          "record_id": "record-56m-nasa-gao-risk-management-recommendation-status",
+          "entity_id": "agency-nasa",
+          "exact_record": "GAO-25-108138 recommendations 1-16",
+          "tested_or_status_period": "GAO recommendation status current through May 2026",
+          "finding": "GAO lists all 16 recommendations from GAO-25-108138 as Open. The set spans organization-wide risk assessment, system impact levels, control-baseline oversight, critical-control assessment documentation, remediation plans, authorization-package quality control, and continuous-monitoring guidance.",
+          "decision": "Retain Partially Closed. Exact recommendation identity and May 2026 status now publish as a bounded non-closure; no recommendation in this set is reported implemented or closed.",
+          "source_id": "source-56d-nasa-gao-risk-management-2025",
+          "reopening_rule": "Reopen when GAO changes any GAO-25-108138 recommendation to implemented or closed, or NASA OIG publishes the FY 2026 FISMA evaluation with tested-system scope."
+        }
+      ],
+      "phase_56n_coverage_decision": {
+        "coverage_id": "coverage-56f-nasa",
+        "entity_id": "agency-nasa",
+        "entity_name": "National Aeronautics and Space Administration",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-24-105980 recommendations 33 and 34: GAO lists both NASA recommendations Open. NASA reported evaluating use cases and retiring 38, but did not provide supporting documentation for the required plan; GAO also found the 2025 AI inventory missing start dates and required high-impact-use information.",
+        "decision": "Retain Partially Closed. The new recommendation or component record improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO changes recommendation 33 or 34 status or NASA publishes documentation that GAO accepts as implementation evidence."
+      },
+      "phase_56n_records": [
+        {
+          "record_id": "record-56n-nasa-ai-recommendation-status",
+          "entity_id": "agency-nasa",
+          "exact_record": "GAO-24-105980 recommendations 33 and 34",
+          "status_period": "Recommendation 33 evidence through December 2024; recommendation 34 review in February 2026",
+          "finding": "GAO lists both NASA recommendations Open. NASA reported evaluating use cases and retiring 38, but did not provide supporting documentation for the required plan; GAO also found the 2025 AI inventory missing start dates and required high-impact-use information.",
+          "decision": "Publish the exact two-action non-closure. The record materially separates reported agency activity from GAO-verified recommendation implementation.",
+          "source_id": "source-56n-gao-federal-ai-recommendation-status-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO changes recommendation 33 or 34 status or NASA publishes documentation that GAO accepts as implementation evidence."
+        }
+      ]
+    },
+    {
+      "panel_id": "panel-56b-dhs-fisma",
+      "portfolio": "ai_cyber",
+      "entity_id": "agency-dhs",
+      "entity_name": "Department of Homeland Security",
+      "entity_type": "Federal agency",
+      "indicator": "Inspector-general FISMA program effectiveness",
+      "unit": "Annual effectiveness determination",
+      "denominator": "DHS department information-security program under the stated fiscal-year IG metrics",
+      "period": "Fiscal years 2021-2023",
+      "geography": "United States federal homeland-security department",
+      "method": "Annual independent FISMA evaluation with function-level maturity testing",
+      "attribution": "DHS Office of Inspector General and its independent evaluator",
+      "record_status": "Published",
+      "signal_id": "signal-56b-dhs-fisma-panel",
+      "source_ids": [
+        "source-56b-dhs-fisma-fy2021",
+        "source-56b-dhs-fisma-fy2022",
+        "source-56b-dhs-fisma-fy2023"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-fisma-reporting",
+        "signal-56a-fisma-effectiveness"
+      ],
+      "observations": [
+        {
+          "period": "FY 2021",
+          "value": 0,
+          "label": "Ineffective",
+          "source_id": "source-56b-dhs-fisma-fy2021"
+        },
+        {
+          "period": "FY 2022",
+          "value": 1,
+          "label": "Effective",
+          "source_id": "source-56b-dhs-fisma-fy2022"
+        },
+        {
+          "period": "FY 2023",
+          "value": 1,
+          "label": "Effective",
+          "source_id": "source-56b-dhs-fisma-fy2023"
+        }
+      ],
+      "reporting_breaks": [
+        "The FY 2021 department-wide determination excluded Coast Guard ratings.",
+        "Annual FISMA reporting instructions and calculated-average methods can change."
+      ],
+      "missing_data": [
+        "Track later department and component ratings, metric changes, tested-system coverage, overdue corrective actions, vulnerabilities, incidents, and recovery."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the within-agency sequence with the Coast Guard scope note and annual metric rules attached. Do not turn it into a cross-agency ranking or a claim that deficiencies or incidents ended.",
+      "phase_56c_dossier_id": "dossier-56c-dhs-cyber-controls",
+      "phase_56c_signal_id": "signal-56c-dhs-cyber-controls",
+      "driver_constraint_source_ids": [
+        "source-56c-dhs-fisma-fy2024",
+        "source-56c-dhs-cdm-network-monitoring-2025"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "DHS moved from ineffective in FY 2021 to effective in FY 2022 and FY 2023."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "DHS and CISA continued operating the government-wide CDM program for asset visibility and network monitoring."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "GAO identified incomplete guidance, data-quality controls, endpoint onboarding, and cloud-asset management."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "DHS OIG rated the FY 2024 department program effective, with function ratings of Level 4 or Level 5."
+        }
+      ],
+      "driver_constraint_attribution": "DHS OIG reports the department result; GAO independently reports CDM implementation constraints.",
+      "independent_validation": "Two independent oversight bodies support the coexistence of the records, not a causal relationship.",
+      "alternative_explanations": [
+        "Selected component and system scope",
+        "Annual FISMA metric changes",
+        "Controls outside CDM",
+        "Component-level variation"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track FY 2025 department and component ratings, recommendation closure evidence, CDM data quality, endpoint coverage, cloud assets, incidents, recovery, and service effects.",
+        "Add the released FY 2025 evaluation, component findings, recommendation closures, endpoint and cloud coverage, incidents, recovery, and service effects."
+      ],
+      "phase_56d_test_id": "test-56d-dhs-repeat-control-test",
+      "phase_56d_signal_id": "signal-56d-dhs-repeat-control-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-dhs-fisma-fy2025-project",
+        "source-56d-dhs-cdm-recommendations-may2026"
+      ],
+      "tested_alternative_explanations": [
+        "Controls outside CDM",
+        "Component-level variation",
+        "Selected component and system scope",
+        "Annual FISMA metric changes"
+      ],
+      "phase_56d_later_observations": [
+        "GAO retained four CDM recommendations as open in May 2026.",
+        "DHS OIG listed the FY 2025 enterprise evaluation as ongoing at capture."
+      ],
+      "phase_56d_compatibility": "Same department and CDM control input; the enterprise annual result and program recommendation statuses remain separate measurement systems.",
+      "phase_56d_result": "The later records challenge any closure assumption and block extension of the FY 2024 enterprise rating into FY 2025.",
+      "phase_56d_validation_status": "Independent official status records; no missing annual outcome is imputed.",
+      "phase_56f_coverage_id": "coverage-56f-dhs",
+      "phase_56f_closure_status": "Open",
+      "phase_56f_record_status": "In Review",
+      "phase_56f_selected_source_id": "source-56d-dhs-fisma-fy2025-project",
+      "phase_56f_highest_value_missing_record": "Released FY 2025 enterprise FISMA result",
+      "phase_56f_remaining_gap": "Released FY 2025 evaluation, component findings, closure dates, endpoint and cloud coverage, incidents, recovery, and service effects.",
+      "phase_56f_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome.",
+      "phase_56g_acquisition_id": "acquisition-56g-dhs-fisma-fy2025",
+      "phase_56g_checked_source_id": "source-56g-dhs-oig-report-index-july-2026",
+      "phase_56g_checked_date": "2026-07-24",
+      "phase_56g_prior_closure_status": "Open",
+      "phase_56g_current_closure_status": "Open",
+      "phase_56g_acquisition_result": "The DHS OIG report index was checked on July 24, 2026. It did not expose a final FY 2025 enterprise FISMA evaluation; the existing project record remains the latest exact review identifier in the FTFN evidence stack.",
+      "phase_56g_remaining_gap": "Released FY 2025 evaluation, component findings, closure dates, endpoint and cloud coverage, incidents, recovery, and service effects.",
+      "phase_56g_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome.",
+      "phase_56h_acquisition_id": "acquisition-56h-dhs-fy2025-fisma-continuation",
+      "phase_56h_checked_source_id": "source-56h-dhs-fy2025-financial-it-controls",
+      "phase_56h_checked_date": "2026-07-24",
+      "phase_56h_prior_closure_status": "Open",
+      "phase_56h_current_closure_status": "Open",
+      "phase_56h_acquisition_result": "DHS OIG's FY 2025 financial audit identifies information-technology control weakness in a current enterprise oversight record, but it is not the missing enterprise FISMA evaluation.",
+      "phase_56h_remaining_gap": "Released FY 2025 FISMA evaluation, component findings, closure dates, endpoint and cloud coverage, incidents, recovery, and service effects.",
+      "phase_56h_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome.",
+      "phase_56i_acquisition_id": "acquisition-56i-dhs-fy2025-fisma-index-continuation",
+      "phase_56i_checked_source_id": "source-56g-dhs-oig-report-index-july-2026",
+      "phase_56i_checked_date": "2026-07-25",
+      "phase_56i_prior_closure_status": "Open",
+      "phase_56i_current_closure_status": "Open",
+      "phase_56i_acquisition_result": "The DHS OIG report index checked on July 25, 2026 still exposes the FY 2024 enterprise information-security evaluation but does not list the selected FY 2025 enterprise evaluation.",
+      "phase_56i_remaining_gap": "Released FY 2025 FISMA evaluation, component findings, closure dates, endpoint and cloud coverage, incidents, recovery, and service effects.",
+      "phase_56i_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome.",
+      "phase_56j_queue_lane": "Open rail",
+      "phase_56j_acquisition_order": null,
+      "phase_56j_named_next_record": "Released FY 2025 enterprise FISMA evaluation",
+      "phase_56k_acquisition_id": "acquisition-56k-dhs-fy2025-enterprise-fisma-status",
+      "phase_56k_named_record": "Released FY 2025 enterprise FISMA evaluation",
+      "phase_56k_checked_source_id": "source-56g-dhs-oig-report-index-july-2026",
+      "phase_56k_checked_date": "2026-07-25",
+      "phase_56k_prior_closure_status": "Open",
+      "phase_56k_current_closure_status": "Open",
+      "phase_56k_acquisition_result": "The current DHS OIG public report index does not expose a final FY 2025 enterprise FISMA evaluation. Previously captured component and vulnerability-management records remain adjacent evidence and do not replace the named enterprise result.",
+      "phase_56k_decision": "Retain Open. No exact enterprise-wide FY 2025 evaluation or dated replacement outcome was identified on the authoritative public rail.",
+      "phase_56k_remaining_gap": "Final FY 2025 DHS enterprise FISMA evaluation, finding-level results, remediation status, incidents, recovery, and mission effects.",
+      "phase_56k_reopening_rule": "Reopen when DHS OIG publishes the final FY 2025 enterprise evaluation or a dated replacement outcome.",
+      "phase_56n_coverage_decision": {
+        "coverage_id": "coverage-56f-dhs",
+        "entity_id": "agency-dhs",
+        "entity_name": "Department of Homeland Security",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-24-105980 recommendations 16, 17, and 18: GAO lists recommendations 16 and 18 Closed-Implemented after DHS published its M-25-21 compliance plan and supplied a complete 2025 AI inventory. Recommendation 17 remains Open because GAO had not received documentation of the separate authorities review and M-21-06 plan. GAO-26-109077 DHS priority recommendation portfolio: GAO reports that DHS implemented five prior priority recommendations, two were closed as no longer valid, seven new priority recommendations were added, and the current portfolio remains 39.",
+        "decision": "Retain Partially Closed. The new recommendation or component record improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO changes recommendation 17 status or DHS provides the authorities-review and M-21-06 plan evidence GAO identifies as missing. Reopen when GAO publishes the next DHS priority-recommendation letter or action-level status changes for the current portfolio."
+      },
+      "phase_56n_records": [
+        {
+          "record_id": "record-56n-dhs-ai-recommendation-split-status",
+          "entity_id": "agency-dhs",
+          "exact_record": "GAO-24-105980 recommendations 16, 17, and 18",
+          "status_period": "Compliance-plan and inventory evidence through February 2026",
+          "finding": "GAO lists recommendations 16 and 18 Closed-Implemented after DHS published its M-25-21 compliance plan and supplied a complete 2025 AI inventory. Recommendation 17 remains Open because GAO had not received documentation of the separate authorities review and M-21-06 plan.",
+          "decision": "Publish the exact two-closed, one-open split while preserving the separate legal-authority, compliance-plan, and inventory-control identities.",
+          "source_id": "source-56n-gao-federal-ai-recommendation-status-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO changes recommendation 17 status or DHS provides the authorities-review and M-21-06 plan evidence GAO identifies as missing."
+        },
+        {
+          "record_id": "record-56n-dhs-priority-recommendation-portfolio-2026",
+          "entity_id": "agency-dhs",
+          "exact_record": "GAO-26-109077 DHS priority recommendation portfolio",
+          "status_period": "May 2025 baseline through July 2026",
+          "finding": "GAO reports that DHS implemented five prior priority recommendations, two were closed as no longer valid, seven new priority recommendations were added, and the current portfolio remains 39.",
+          "decision": "Publish the exact portfolio movement as a remediation-throughput record while keeping implemented, no-longer-valid, newly added, and currently open states distinct.",
+          "source_id": "source-56n-dhs-gao-priority-recommendations-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO publishes the next DHS priority-recommendation letter or action-level status changes for the current portfolio."
+        }
+      ]
+    },
+    {
+      "panel_id": "panel-56b-hhs-fisma",
+      "portfolio": "ai_cyber",
+      "entity_id": "agency-hhs",
+      "entity_name": "Department of Health and Human Services",
+      "entity_type": "Federal agency",
+      "indicator": "Inspector-general FISMA program effectiveness",
+      "unit": "Annual effectiveness determination",
+      "denominator": "HHS department information-security program under the stated fiscal-year IG metrics",
+      "period": "Fiscal years 2022-2024",
+      "geography": "United States federal health department",
+      "method": "Annual independent FISMA audit using core and applicable supplemental IG metrics",
+      "attribution": "HHS Office of Inspector General and its independent auditor",
+      "record_status": "Published",
+      "signal_id": "signal-56b-hhs-fisma-panel",
+      "source_ids": [
+        "source-56b-hhs-fisma-fy2022",
+        "source-56b-hhs-fisma-fy2023",
+        "source-56b-hhs-fisma-fy2024"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-fisma-reporting",
+        "signal-56a-fisma-effectiveness"
+      ],
+      "observations": [
+        {
+          "period": "FY 2022",
+          "value": 0,
+          "label": "Not Effective",
+          "source_id": "source-56b-hhs-fisma-fy2022"
+        },
+        {
+          "period": "FY 2023",
+          "value": 0,
+          "label": "Not Effective",
+          "source_id": "source-56b-hhs-fisma-fy2023"
+        },
+        {
+          "period": "FY 2024",
+          "value": 0,
+          "label": "Not Effective",
+          "source_id": "source-56b-hhs-fisma-fy2024"
+        }
+      ],
+      "reporting_breaks": [
+        "Audit sampling and the set of reviewed operating divisions can differ by year."
+      ],
+      "missing_data": [
+        "Track operating-division maturity, tested coverage, inventory accuracy, corrective-action closure, incident exposure, service disruption, and later metric changes."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the repeated department rating only. Do not equate the headline result with identical component risk, incidents, health-service disruption, or patient harm.",
+      "phase_56c_dossier_id": "dossier-56c-hhs-cyber-controls",
+      "phase_56c_signal_id": "signal-56c-hhs-cyber-controls",
+      "driver_constraint_source_ids": [
+        "source-56c-hhs-fisma-fy2025",
+        "source-56c-hhs-cio-open-recommendations-2025"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "HHS remained Not Effective across FY 2022-FY 2024."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "HHS continued department and component remediation under the CIO and FISMA programs."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "GAO identified 82 open CIO recommendations, while HHS OIG found supplemental metrics at Ad Hoc maturity."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "The FY 2025 evaluation again rated the HHS information-security program Not Effective."
+        }
+      ],
+      "driver_constraint_attribution": "HHS OIG supplies the annual rating; GAO independently inventories open recommendations.",
+      "independent_validation": "Independent oversight confirms both conditions, but open-recommendation counts do not validate the cause of the FISMA result.",
+      "alternative_explanations": [
+        "Federated operating-division maturity",
+        "Annual metric weighting",
+        "Recommendation age and severity",
+        "Control areas outside the open GAO set"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track FY 2026 FISMA results, recommendation closures, component control testing, incidents, recovery, affected services, and health-program outcomes.",
+        "Add dated recommendation closures, division control tests, incidents, recovery, affected services, and health-program outcomes."
+      ],
+      "phase_56d_test_id": "test-56d-hhs-repeat-control-test",
+      "phase_56d_signal_id": "signal-56d-hhs-repeat-control-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-hhs-fisma-recommendations-tracker-2026",
+        "source-56d-hhs-fisma-fy2025-method"
+      ],
+      "tested_alternative_explanations": [
+        "Federated operating-division maturity",
+        "Annual metric weighting",
+        "Recommendation age and severity",
+        "Control areas outside the open GAO set"
+      ],
+      "phase_56d_later_observations": [
+        "The tracker listed all ten FY 2025 report recommendations as open and unimplemented.",
+        "The FY 2025 review rated core metrics Consistently Implemented and supplemental metrics Ad Hoc."
+      ],
+      "phase_56d_compatibility": "Same department and annual evaluation, but tracker status, core metrics, supplemental metrics, and the headline result use distinct fields.",
+      "phase_56d_result": "The later records support a bounded closure and weighting test while leaving division-level operation and downstream outcomes unresolved.",
+      "phase_56d_validation_status": "Independent oversight with an explicit tracker state; no division-level equivalence is assumed.",
+      "phase_56f_coverage_id": "coverage-56f-hhs",
+      "phase_56f_closure_status": "Partially Closed",
+      "phase_56f_record_status": "Published",
+      "phase_56f_selected_source_id": "source-56d-hhs-fisma-recommendations-tracker-2026",
+      "phase_56f_highest_value_missing_record": "Recommendation-level closure after the FY 2025 review",
+      "phase_56f_remaining_gap": "Dated closures, component control tests, incidents, recovery, affected services, and health-program outcomes.",
+      "phase_56f_reopening_rule": "Reopen when the HHS OIG tracker changes a FY 2025 recommendation status or a component control test is published.",
+      "phase_56h_acquisition_id": "acquisition-56h-hhs-fy2025-recommendation-status",
+      "phase_56h_checked_source_id": "source-56d-hhs-fisma-recommendations-tracker-2026",
+      "phase_56h_checked_date": "2026-07-24",
+      "phase_56h_prior_closure_status": "Partially Closed",
+      "phase_56h_current_closure_status": "Partially Closed",
+      "phase_56h_acquisition_result": "The current HHS OIG tracker lists all 10 recommendations associated with OAS-25-18-041 as Open and Unimplemented, with the next update expected in September 2026.",
+      "phase_56h_remaining_gap": "Implemented corrective actions, closed recommendations, component control tests, incidents, recovery, affected services, and health-program outcomes.",
+      "phase_56h_reopening_rule": "Reopen when the HHS OIG tracker changes a FY 2025 recommendation status or a component control test is published.",
+      "phase_56j_queue_lane": "B — periodic official record rails",
+      "phase_56j_acquisition_order": 11,
+      "phase_56j_named_next_record": "FY 2025 recommendation status change or component control test",
+      "phase_56m_coverage_decision": {
+        "coverage_id": "coverage-56f-hhs",
+        "entity_id": "agency-hhs",
+        "entity_name": "Department of Health and Human Services",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "Two HHS OIG component tests now publish: one selected hospital has four Open Unimplemented actions, while another selected hospital had an effective tested result and no recommendations.",
+        "decision": "Publish both component tests, keep their anonymous entities and periods separate, and retain the department-level Partially Closed state.",
+        "reopening_rule": "Reopen when a named HHS recommendation changes status, a compatible component retest publishes, or department-level closure evidence becomes available."
+      },
+      "phase_56m_records": [
+        {
+          "record_id": "record-56m-hhs-large-hospital-cyber-control-test",
+          "entity_id": "provider-hhs-oig-large-southeastern-hospital-a-18-22-08021",
+          "exact_record": "A-18-22-08021; tracker actions 26-A-18-035.01 through .04",
+          "tested_or_status_period": "Four internet-facing web applications tested August-September 2022",
+          "finding": "HHS OIG found that the hospital had continuity, backup, incident-response, and disaster-recovery controls and prevented or detected most simulated attacks. Testing also exposed weak authentication in one account-management application and weak input validation without adequate web-application-firewall protection in another. Four associated tracker actions are Open Unimplemented, with the next update expected July 29, 2026.",
+          "decision": "Retain Partially Closed at the HHS coverage level. The component test satisfies the missing-record rule and publishes with four exact open actions; it does not establish department-wide remediation or current hospital control operation.",
+          "source_id": "source-56m-hhs-large-hospital-cyber-controls-2026",
+          "reopening_rule": "Reopen after the expected July 29, 2026 tracker update if any of the four actions changes status, or when HHS OIG publishes a compatible follow-up test."
+        },
+        {
+          "record_id": "record-56m-hhs-small-hospital-effective-cyber-control-test",
+          "entity_id": "provider-hhs-oig-small-southeastern-hospital-oas-25-18-033",
+          "exact_record": "OAS-25-18-033; no recommendations",
+          "tested_or_status_period": "Four public-facing websites tested in June 2025",
+          "finding": "HHS OIG reported that the hospital detected and prevented simulated attacks against the selected systems. The audit also documented incident-response procedures, continuous monitoring, twice-yearly contingency-plan tests, nightly off-site replicated backups tested at least monthly, and quarterly disaster-recovery exercises. OIG made no recommendations.",
+          "decision": "Retain Partially Closed at the HHS coverage level. This is a positive component control test with an exact no-recommendation result, not evidence of department-wide effectiveness or a closed FY 2025 FISMA recommendation.",
+          "source_id": "source-56m-hhs-small-hospital-cyber-controls-2026",
+          "reopening_rule": "Reopen when HHS OIG publishes a compatible repeat test, a named incident or recovery outcome, or recommendation-level department remediation."
+        }
+      ],
+      "phase_56n_coverage_decision": {
+        "coverage_id": "coverage-56f-hhs",
+        "entity_id": "agency-hhs",
+        "entity_name": "Department of Health and Human Services",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-24-105980 recommendations 14 and 15: GAO lists recommendation 14 Closed-Implemented after HHS published its M-25-21 compliance plan, while recommendation 15 remains Open because the 2025 AI inventory included future dates where deployment or pilot-start information was required. A-18-22-08021 actions 26-A-18-035.01 through .04 post-July 29 recheck: The tracker still lists all four actions Open Unimplemented, Response Not Yet Due, no Last Update Received, and Next Update Expected July 29, 2026. The tracker itself had not been refreshed beyond July 22.",
+        "decision": "Retain Partially Closed. The new recommendation or component record improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO changes recommendation 15 status or HHS publishes a corrected inventory that GAO accepts as implementation evidence. Reopen when the tracker displays a post-July 29 update, response, implementation state, or closure for actions 26-A-18-035.01 through .04."
+      },
+      "phase_56n_records": [
+        {
+          "record_id": "record-56n-hhs-ai-recommendation-split-status",
+          "entity_id": "agency-hhs",
+          "exact_record": "GAO-24-105980 recommendations 14 and 15",
+          "status_period": "Recommendation 14 action in September 2025; recommendation 15 review in March 2026",
+          "finding": "GAO lists recommendation 14 Closed-Implemented after HHS published its M-25-21 compliance plan, while recommendation 15 remains Open because the 2025 AI inventory included future dates where deployment or pilot-start information was required.",
+          "decision": "Publish the split status and keep plan implementation separate from inventory completeness and from the HHS hospital-control audits.",
+          "source_id": "source-56n-gao-federal-ai-recommendation-status-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO changes recommendation 15 status or HHS publishes a corrected inventory that GAO accepts as implementation evidence."
+        },
+        {
+          "record_id": "record-56n-hhs-large-hospital-post-date-recheck",
+          "entity_id": "provider-hhs-oig-large-southeastern-hospital-a-18-22-08021",
+          "exact_record": "A-18-22-08021 actions 26-A-18-035.01 through .04 post-July 29 recheck",
+          "status_period": "Tracker last updated July 22, 2026; checked August 1, 2026",
+          "finding": "The tracker still lists all four actions Open Unimplemented, Response Not Yet Due, no Last Update Received, and Next Update Expected July 29, 2026. The tracker itself had not been refreshed beyond July 22.",
+          "decision": "Hold In Review. The dated check documents that no post-July 29 public tracker outcome is yet available, but it does not add a new remediation result beyond Phase 56M.",
+          "source_id": "source-56n-hhs-oig-recommendations-tracker-2026",
+          "record_status": "In Review",
+          "reopening_rule": "Reopen when the tracker displays a post-July 29 update, response, implementation state, or closure for actions 26-A-18-035.01 through .04."
+        }
+      ],
+      "phase_56o_coverage_decision": {
+        "coverage_id": "coverage-56f-hhs",
+        "entity_id": "agency-hhs",
+        "entity_name": "Department of Health and Human Services",
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "result": "GAO-26-108997 HHS priority recommendation portfolio: GAO reports that HHS implemented four of thirty-five prior priority recommendations, added seven, and now has thirty-eight priority recommendations focused on program integrity and public-health oversight.",
+        "decision": "Retain Partially Closed. Portfolio movement improves remediation visibility but does not close the selected Phase 56F evidence question.",
+        "reopening_rule": "Reopen when GAO publishes the next HHS priority letter, changes a named priority status, or HHS OIG posts the held hospital-control update."
+      },
+      "phase_56o_records": [
+        {
+          "record_id": "record-56o-hhs-priority-portfolio-2026",
+          "exact_record": "GAO-26-108997 HHS priority recommendation portfolio",
+          "status_period": "May 2025 baseline through May 2026",
+          "finding": "GAO reports that HHS implemented four of thirty-five prior priority recommendations, added seven, and now has thirty-eight priority recommendations focused on program integrity and public-health oversight.",
+          "decision": "Publish the exact portfolio movement without treating it as clinical, provider, or preparedness performance.",
+          "source_id": "source-56o-hhs-priority-recommendations-2026",
+          "record_status": "Published",
+          "reopening_rule": "Reopen when GAO publishes the next HHS priority letter, changes a named priority status, or HHS OIG posts the held hospital-control update."
+        }
+      ],
+      "phase_56p_coverage_decision": {
+        "coverage_id": "coverage-56f-hhs",
+        "entity_id": "agency-hhs",
+        "entity_name": "Department of Health and Human Services",
+        "action_count": 4,
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain Partially Closed. The letter supplies named actions but not the implementation or operating evidence required to close the selected Phase 56F gap.",
+        "reopening_rule": "Reopen when an exact GAO database record, agency response, or later HHS priority letter changes a named action state."
+      },
+      "phase_56p_actions": [
+        {
+          "action_id": "action-56p-hhs-01",
+          "action_key": "HHS-01",
+          "letter_id": "GAO-26-108997",
+          "subject": "Medicare and Medicaid program integrity",
+          "action_text": "CMS should account for Medicaid payments that offset costs for uninsured or low-income care when making Medicare payments to individual hospitals.",
+          "status_period": "Open priority portfolio as of May 2026; letter dated June 3, 2026",
+          "letter_state": "Open priority action named in the 2026 agency letter",
+          "identity_boundary": "FTFN key HHS-01 identifies the action text in GAO-26-108997; it is not a GAO Recommendations Database number.",
+          "decision": "Publish as a letter-named action without assigning an unsupported GAO recommendation number or implementation state.",
+          "remaining_gap": "Underlying GAO Recommendations Database identity, agency response, implementation evidence, closure state, and operating outcome.",
+          "reopening_rule": "Recheck the GAO Recommendations Database or the next HHS priority letter for an exact identifier or status change tied to this action.",
+          "source_id": "source-56p-hhs-priority-letter-full-report-2026",
+          "signal_id": "signal-56p-hhs-medicaid-offsets-medicare-hospital-payments"
+        },
+        {
+          "action_id": "action-56p-hhs-02",
+          "action_key": "HHS-02",
+          "letter_id": "GAO-26-108997",
+          "subject": "Medicaid oversight",
+          "action_text": "CMS should complete a national risk assessment so oversight resources can be tested for adequacy and allocated to the highest-risk areas.",
+          "status_period": "Open priority portfolio as of May 2026; letter dated June 3, 2026",
+          "letter_state": "Open priority action named in the 2026 agency letter",
+          "identity_boundary": "FTFN key HHS-02 identifies the action text in GAO-26-108997; it is not a GAO Recommendations Database number.",
+          "decision": "Publish as a letter-named action without assigning an unsupported GAO recommendation number or implementation state.",
+          "remaining_gap": "Underlying GAO Recommendations Database identity, agency response, implementation evidence, closure state, and operating outcome.",
+          "reopening_rule": "Recheck the GAO Recommendations Database or the next HHS priority letter for an exact identifier or status change tied to this action.",
+          "source_id": "source-56p-hhs-priority-letter-full-report-2026",
+          "signal_id": "signal-56p-hhs-medicaid-oversight-national-risk-assessment"
+        },
+        {
+          "action_id": "action-56p-hhs-03",
+          "action_key": "HHS-03",
+          "letter_id": "GAO-26-108997",
+          "subject": "Public-health preparedness",
+          "action_text": "CDC should collect and analyze information on jurisdictions' ability to meet preparedness capabilities and the gaps in their ability to do so.",
+          "status_period": "Open priority portfolio as of May 2026; letter dated June 3, 2026",
+          "letter_state": "Open priority action named in the 2026 agency letter",
+          "identity_boundary": "FTFN key HHS-03 identifies the action text in GAO-26-108997; it is not a GAO Recommendations Database number.",
+          "decision": "Publish as a letter-named action without assigning an unsupported GAO recommendation number or implementation state.",
+          "remaining_gap": "Underlying GAO Recommendations Database identity, agency response, implementation evidence, closure state, and operating outcome.",
+          "reopening_rule": "Recheck the GAO Recommendations Database or the next HHS priority letter for an exact identifier or status change tied to this action.",
+          "source_id": "source-56p-hhs-priority-letter-full-report-2026",
+          "signal_id": "signal-56p-hhs-public-health-preparedness-capability-gaps"
+        },
+        {
+          "action_id": "action-56p-hhs-04",
+          "action_key": "HHS-04",
+          "letter_id": "GAO-26-108997",
+          "subject": "Emergency-response coordination",
+          "action_text": "HHS should better manage fragmentation in department-wide after-action programs used to identify and resolve recurring emergency-response challenges.",
+          "status_period": "Open priority portfolio as of May 2026; letter dated June 3, 2026",
+          "letter_state": "Open priority action named in the 2026 agency letter",
+          "identity_boundary": "FTFN key HHS-04 identifies the action text in GAO-26-108997; it is not a GAO Recommendations Database number.",
+          "decision": "Publish as a letter-named action without assigning an unsupported GAO recommendation number or implementation state.",
+          "remaining_gap": "Underlying GAO Recommendations Database identity, agency response, implementation evidence, closure state, and operating outcome.",
+          "reopening_rule": "Recheck the GAO Recommendations Database or the next HHS priority letter for an exact identifier or status change tied to this action.",
+          "source_id": "source-56p-hhs-priority-letter-full-report-2026",
+          "signal_id": "signal-56p-hhs-after-action-program-fragmentation"
+        }
+      ],
+      "phase_56q_recommendation_identity_crosswalk": [
+        {
+          "action_key": "HHS-01",
+          "resolution_decision": "Exact one-to-one",
+          "report_id": "GAO-16-568",
+          "recommendation_number": 2,
+          "official_identity": "GAO-16-568 Recommendation 2",
+          "candidate_recommendations": [],
+          "affected_component": "Centers for Medicare & Medicaid Services; Administrator",
+          "current_status": "Open",
+          "agency_response_summary": "HHS initially concurred but repeatedly reconsidered implementation, including through December 2025. GAO continues to maintain that the action is needed.",
+          "last_update_period": "December 2025",
+          "response_boundary": "Agency response does not establish implementation or closure.",
+          "continuation_rule": "Recheck GAO-16-568 Recommendation 2 when GAO changes the status or adds agency-response evidence after December 2025.",
+          "source_id": "source-56q-gao-16-568-recommendation-status",
+          "signal_id": "signal-56q-hhs-medicaid-offsets-medicare-hospital-payments"
+        },
+        {
+          "action_key": "HHS-02",
+          "resolution_decision": "Exact one-to-one",
+          "report_id": "GAO-18-564",
+          "recommendation_number": 1,
+          "official_identity": "GAO-18-564 Recommendation 1",
+          "candidate_recommendations": [],
+          "affected_component": "Centers for Medicare & Medicaid Services; Administrator",
+          "current_status": "Open – Partially Addressed",
+          "agency_response_summary": "HHS concurred. GAO reported no further information in February 2026 and said a national risk assessment was still required.",
+          "last_update_period": "February 2026",
+          "response_boundary": "Agency response does not establish implementation or closure.",
+          "continuation_rule": "Recheck GAO-18-564 Recommendation 1 when GAO changes the status or adds agency-response evidence after February 2026.",
+          "source_id": "source-56q-gao-18-564-recommendation-status",
+          "signal_id": "signal-56q-hhs-medicaid-oversight-national-risk-assessment"
+        },
+        {
+          "action_key": "HHS-03",
+          "resolution_decision": "Exact one-to-one",
+          "report_id": "GAO-26-107507",
+          "recommendation_number": 4,
+          "official_identity": "GAO-26-107507 Recommendation 4",
+          "candidate_recommendations": [],
+          "affected_component": "Centers for Disease Control and Prevention; Director",
+          "current_status": "Open",
+          "agency_response_summary": "HHS concurred. GAO said it would update the status after receiving HHS's 180-day letter, expected in summer 2026.",
+          "last_update_period": "Summer 2026 response pending",
+          "response_boundary": "Agency response does not establish implementation or closure.",
+          "continuation_rule": "Recheck GAO-26-107507 Recommendation 4 when GAO changes the status or adds agency-response evidence after Summer 2026 response pending.",
+          "source_id": "source-56q-gao-26-107507-recommendation-status",
+          "signal_id": "signal-56q-hhs-public-health-preparedness-capability-gaps"
+        },
+        {
+          "action_key": "HHS-04",
+          "resolution_decision": "Held — one-to-many",
+          "report_id": "GAO-24-106276",
+          "recommendation_number": null,
+          "official_identity": null,
+          "candidate_recommendations": [
+            {
+              "report_id": "GAO-24-106276",
+              "recommendation_number": 1,
+              "official_identity": "GAO-24-106276 Recommendation 1",
+              "summary": "Coordinate after-action work across HHS component agencies and integrate existing component programs.",
+              "current_status": "Open – Partially Addressed"
+            },
+            {
+              "report_id": "GAO-24-106276",
+              "recommendation_number": 2,
+              "official_identity": "GAO-24-106276 Recommendation 2",
+              "summary": "Include relevant external stakeholders in each emergency-response after-action process.",
+              "current_status": "Open – Partially Addressed"
+            }
+          ],
+          "affected_component": "Department of Health and Human Services; Secretary",
+          "current_status": "Open – Partially Addressed",
+          "agency_response_summary": "HHS developed standard operating procedures. GAO is awaiting evidence from an exercise or response after-action report before determining whether either recommendation is implemented.",
+          "last_update_period": "January 2026",
+          "response_boundary": "Agency response does not establish implementation or closure.",
+          "continuation_rule": "Preserve HHS-04 as the parent local action and create recommendation-specific child records before publication; do not collapse Recommendations 1 and 2.",
+          "source_id": "source-56q-gao-24-106276-recommendation-status",
+          "signal_id": "signal-56q-hhs-after-action-program-fragmentation"
+        }
+      ],
+      "phase_56q_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F evidence state. Recommendation identity and agency response improve follow-through but do not establish entity-level implementation or operating outcome.",
+        "exact_matches": 3,
+        "held_mappings": 1
+      },
+      "phase_56r_implementation_artifact_milestone_follow_through": [
+        {
+          "action_key": "HHS-01",
+          "parent_action_key": "HHS-01",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-16-568 Recommendation 2",
+          "current_status": "Open",
+          "normalized_implementation_stage": "No conforming artifact reported",
+          "response_artifact_type": "Revised Medicare uncompensated-care payment methodology",
+          "artifact_availability": "No implementation artifact reported",
+          "named_milestone": null,
+          "milestone_state": "No named date",
+          "gao_review_state": "No conforming action reported",
+          "remaining_gap": "A methodology that accounts for Medicaid payments offsetting uncompensated-care costs.",
+          "continuation_rule": "Recheck for an exact methodology change or GAO status change. Preserve HHS-01 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-16-568-recommendation-status"
+          ],
+          "signal_id": "signal-56r-hhs-medicaid-offsets-medicare-hospital-payments"
+        },
+        {
+          "action_key": "HHS-02",
+          "parent_action_key": "HHS-02",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-18-564 Recommendation 1",
+          "current_status": "Open – Partially Addressed",
+          "normalized_implementation_stage": "Partially addressed",
+          "response_artifact_type": "National risk tool, reorganization, and staffing actions",
+          "artifact_availability": "Actions described on the GAO page; underlying tool is not linked",
+          "named_milestone": null,
+          "milestone_state": "No named date",
+          "gao_review_state": "GAO classifies the recommendation Open – Partially Addressed",
+          "remaining_gap": "A current national Medicaid program-integrity risk assessment tied to oversight-resource allocation.",
+          "continuation_rule": "Recheck for a completed national assessment and evidence that it informs resource allocation. Preserve HHS-02 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-18-564-recommendation-status"
+          ],
+          "signal_id": "signal-56r-hhs-medicaid-oversight-national-risk-assessment"
+        },
+        {
+          "action_key": "HHS-03",
+          "parent_action_key": "HHS-03",
+          "record_relationship": "Recommendation-level continuation",
+          "official_identity": "GAO-26-107507 Recommendation 4",
+          "current_status": "Open",
+          "normalized_implementation_stage": "Promised",
+          "response_artifact_type": "HHS 180-day response letter",
+          "artifact_availability": "Not yet reflected on the GAO page",
+          "named_milestone": "Summer 2026",
+          "milestone_state": "Current seasonal monitor",
+          "gao_review_state": "Response pending",
+          "remaining_gap": "A response and later evidence that CDC collects, analyzes, and uses jurisdiction capability information.",
+          "continuation_rule": "Recheck after the summer 2026 response appears on the official GAO page. Preserve HHS-03 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-26-107507-recommendation-status"
+          ],
+          "signal_id": "signal-56r-hhs-public-health-preparedness-capability-gaps"
+        },
+        {
+          "action_key": "HHS-04-R1",
+          "parent_action_key": "HHS-04",
+          "record_relationship": "Recommendation-specific child",
+          "official_identity": "GAO-24-106276 Recommendation 1",
+          "current_status": "Open – Partially Addressed",
+          "normalized_implementation_stage": "Partially addressed",
+          "response_artifact_type": "Department-wide after-action program standard operating procedures",
+          "artifact_availability": "Described on the GAO page; no separate public SOP located",
+          "named_milestone": null,
+          "milestone_state": "No named date",
+          "gao_review_state": "GAO classifies Recommendation 1 Open – Partially Addressed",
+          "remaining_gap": "An exercise or response after-action report demonstrating cross-component coordination under the procedures.",
+          "continuation_rule": "Recheck for an after-action report that demonstrates Recommendation 1 in operation. Preserve HHS-04 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-24-106276-recommendation-status"
+          ],
+          "signal_id": "signal-56r-hhs-after-action-component-coordination"
+        },
+        {
+          "action_key": "HHS-04-R2",
+          "parent_action_key": "HHS-04",
+          "record_relationship": "Recommendation-specific child",
+          "official_identity": "GAO-24-106276 Recommendation 2",
+          "current_status": "Open – Partially Addressed",
+          "normalized_implementation_stage": "Partially addressed",
+          "response_artifact_type": "External-stakeholder after-action participation standard operating procedures",
+          "artifact_availability": "Described on the GAO page; no separate public SOP located",
+          "named_milestone": null,
+          "milestone_state": "No named date",
+          "gao_review_state": "GAO classifies Recommendation 2 Open – Partially Addressed",
+          "remaining_gap": "An exercise or response after-action report demonstrating relevant external-stakeholder participation.",
+          "continuation_rule": "Recheck for an after-action report that demonstrates Recommendation 2 in operation. Preserve HHS-04 as the parent crosswalk; do not translate an artifact, promise, submission, or GAO review into implementation, closure, or operating outcome.",
+          "source_ids": [
+            "source-56q-gao-24-106276-recommendation-status"
+          ],
+          "signal_id": "signal-56r-hhs-after-action-external-stakeholder-participation"
+        }
+      ],
+      "phase_56r_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Recommendation-specific artifacts and milestones deepen follow-through but do not establish implementation, closure, or operating outcome.",
+        "recommendation_records": 5,
+        "child_records": 2
+      },
+      "phase_56s_artifact_scope_audit": [
+        {
+          "action_key": "HHS-01",
+          "parent_action_key": "HHS-01",
+          "official_identity": "GAO-16-568 Recommendation 2",
+          "availability_class": "Scope-adjacent public material located",
+          "scope_elements_total": 3,
+          "public_supported_elements": 1,
+          "public_partially_supported_elements": 0,
+          "public_unestablished_elements": 2,
+          "scope_checklist": [
+            {
+              "requirement": "Hospital-level Medicare uncompensated-care methodology",
+              "status": "Supported by located public record",
+              "evidence": "CMS publishes the current rule and hospital payment files."
+            },
+            {
+              "requirement": "Identification of Medicaid payments that offset uncompensated-care costs",
+              "status": "Not established by located public record",
+              "evidence": "The located rule does not expose the GAO-recommended offset treatment."
+            },
+            {
+              "requirement": "Adjustment of individual Medicare hospital payments for those offsets",
+              "status": "Not established by located public record",
+              "evidence": "No public exact methodology change located."
+            }
+          ],
+          "repositories_checked": [
+            "HHS and CMS policy and report libraries",
+            "CMS rule and program-integrity repositories",
+            "CDC and ASPR preparedness libraries",
+            "HHS FOIA and electronic reading-room surfaces",
+            "current GAO recommendation page"
+          ],
+          "located_source_ids": [
+            "source-56s-cms-fy2026-ipps-final-rule"
+          ],
+          "search_finding": "Relevant official public material was located, but it does not expose or satisfy every element of the exact response artifact.",
+          "ftfn_scope_finding": "FTFN public-scope check: 1 supported, 0 partial, and 2 not established across three directive elements.",
+          "gao_acceptance_state": "No conforming action reported",
+          "signal_id": "signal-56s-hhs-medicaid-offsets-medicare-hospital-payments"
+        },
+        {
+          "action_key": "HHS-02",
+          "parent_action_key": "HHS-02",
+          "official_identity": "GAO-18-564 Recommendation 1",
+          "availability_class": "Scope-adjacent public material located",
+          "scope_elements_total": 3,
+          "public_supported_elements": 0,
+          "public_partially_supported_elements": 2,
+          "public_unestablished_elements": 1,
+          "scope_checklist": [
+            {
+              "requirement": "National view of Medicaid program-integrity risks",
+              "status": "Partly supported by located public record",
+              "evidence": "The plan documents a centralized vulnerability process and named risk areas."
+            },
+            {
+              "requirement": "Assessment of oversight-resource capacity",
+              "status": "Not established by located public record",
+              "evidence": "The plan does not publish a national resource-capacity assessment."
+            },
+            {
+              "requirement": "Allocation of resources to highest-risk areas",
+              "status": "Partly supported by located public record",
+              "evidence": "The plan describes risk prioritization, but not the complete recommendation-specific allocation decision."
+            }
+          ],
+          "repositories_checked": [
+            "HHS and CMS policy and report libraries",
+            "CMS rule and program-integrity repositories",
+            "CDC and ASPR preparedness libraries",
+            "HHS FOIA and electronic reading-room surfaces",
+            "current GAO recommendation page"
+          ],
+          "located_source_ids": [
+            "source-56s-cms-comprehensive-medicaid-integrity-plan-2024-2028"
+          ],
+          "search_finding": "Relevant official public material was located, but it does not expose or satisfy every element of the exact response artifact.",
+          "ftfn_scope_finding": "FTFN public-scope check: 0 supported, 2 partial, and 1 not established across three directive elements.",
+          "gao_acceptance_state": "GAO classifies the recommendation Open – Partially Addressed",
+          "signal_id": "signal-56s-hhs-medicaid-oversight-national-risk-assessment"
+        },
+        {
+          "action_key": "HHS-03",
+          "parent_action_key": "HHS-03",
+          "official_identity": "GAO-26-107507 Recommendation 4",
+          "availability_class": "Scope-adjacent public material located",
+          "scope_elements_total": 3,
+          "public_supported_elements": 0,
+          "public_partially_supported_elements": 2,
+          "public_unestablished_elements": 1,
+          "scope_checklist": [
+            {
+              "requirement": "Collection of jurisdiction capability information",
+              "status": "Partly supported by located public record",
+              "evidence": "The framework guides PHEP priorities but does not publish the requested jurisdiction-level dataset."
+            },
+            {
+              "requirement": "Analysis of capability gaps across jurisdictions",
+              "status": "Not established by located public record",
+              "evidence": "No current national capability-gap analysis located."
+            },
+            {
+              "requirement": "Use of results for preparedness support and decisions",
+              "status": "Partly supported by located public record",
+              "evidence": "The framework prioritizes local support and data modernization without providing the recommendation-specific analysis."
+            }
+          ],
+          "repositories_checked": [
+            "HHS and CMS policy and report libraries",
+            "CMS rule and program-integrity repositories",
+            "CDC and ASPR preparedness libraries",
+            "HHS FOIA and electronic reading-room surfaces",
+            "current GAO recommendation page"
+          ],
+          "located_source_ids": [
+            "source-56s-cdc-response-readiness-framework-2024-2028"
+          ],
+          "search_finding": "Relevant official public material was located, but it does not expose or satisfy every element of the exact response artifact.",
+          "ftfn_scope_finding": "FTFN public-scope check: 0 supported, 2 partial, and 1 not established across three directive elements.",
+          "gao_acceptance_state": "Response pending",
+          "signal_id": "signal-56s-hhs-public-health-preparedness-capability-gaps"
+        },
+        {
+          "action_key": "HHS-04-R1",
+          "parent_action_key": "HHS-04",
+          "official_identity": "GAO-24-106276 Recommendation 1",
+          "availability_class": "No separately public response artifact located",
+          "scope_elements_total": 3,
+          "public_supported_elements": 0,
+          "public_partially_supported_elements": 0,
+          "public_unestablished_elements": 3,
+          "scope_checklist": [
+            {
+              "requirement": "Department-wide coordination procedures",
+              "status": "Not established by located public record",
+              "evidence": "No separately public SOP located."
+            },
+            {
+              "requirement": "Use across HHS component agencies",
+              "status": "Not established by located public record",
+              "evidence": "No public exercise or response record demonstrates operation."
+            },
+            {
+              "requirement": "After-action report documenting coordination",
+              "status": "Not established by located public record",
+              "evidence": "No qualifying public AAR located."
+            }
+          ],
+          "repositories_checked": [
+            "HHS and CMS policy and report libraries",
+            "CMS rule and program-integrity repositories",
+            "CDC and ASPR preparedness libraries",
+            "HHS FOIA and electronic reading-room surfaces",
+            "current GAO recommendation page"
+          ],
+          "located_source_ids": [],
+          "search_finding": "The official repository pass did not locate a separate public copy of the exact response artifact as of the capture date; this does not prove the artifact does not exist.",
+          "ftfn_scope_finding": "FTFN public-scope check: 0 supported, 0 partial, and 3 not established across three directive elements.",
+          "gao_acceptance_state": "GAO classifies Recommendation 1 Open – Partially Addressed",
+          "signal_id": "signal-56s-hhs-after-action-component-coordination"
+        },
+        {
+          "action_key": "HHS-04-R2",
+          "parent_action_key": "HHS-04",
+          "official_identity": "GAO-24-106276 Recommendation 2",
+          "availability_class": "No separately public response artifact located",
+          "scope_elements_total": 3,
+          "public_supported_elements": 0,
+          "public_partially_supported_elements": 0,
+          "public_unestablished_elements": 3,
+          "scope_checklist": [
+            {
+              "requirement": "Procedure for relevant external-stakeholder participation",
+              "status": "Not established by located public record",
+              "evidence": "No separately public SOP located."
+            },
+            {
+              "requirement": "Identification and inclusion of appropriate stakeholders",
+              "status": "Not established by located public record",
+              "evidence": "No public exercise or response record demonstrates the procedure."
+            },
+            {
+              "requirement": "After-action report documenting participation",
+              "status": "Not established by located public record",
+              "evidence": "No qualifying public AAR located."
+            }
+          ],
+          "repositories_checked": [
+            "HHS and CMS policy and report libraries",
+            "CMS rule and program-integrity repositories",
+            "CDC and ASPR preparedness libraries",
+            "HHS FOIA and electronic reading-room surfaces",
+            "current GAO recommendation page"
+          ],
+          "located_source_ids": [],
+          "search_finding": "The official repository pass did not locate a separate public copy of the exact response artifact as of the capture date; this does not prove the artifact does not exist.",
+          "ftfn_scope_finding": "FTFN public-scope check: 0 supported, 0 partial, and 3 not established across three directive elements.",
+          "gao_acceptance_state": "GAO classifies Recommendation 2 Open – Partially Addressed",
+          "signal_id": "signal-56s-hhs-after-action-external-stakeholder-participation"
+        }
+      ],
+      "phase_56s_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Public-document availability and FTFN scope findings deepen the evidence shelf but do not establish GAO acceptance, implementation, closure, or operating outcome.",
+        "recommendation_records": 5,
+        "scope_elements": 15
+      },
+      "phase_56t_acquisition_sufficiency_queue": [
+        {
+          "action_key": "HHS-01",
+          "official_identity": "GAO-16-568 Recommendation 2",
+          "decision_class": "Adjacent-source directive matrix",
+          "target_artifact": "Revised Medicare uncompensated-care payment methodology",
+          "likely_custodian": "HHS Office of the Secretary and the responsible operating division",
+          "acquisition_status": "Adjacent record retained; exact implementation artifact acquisition remains open",
+          "directive_matrix": [
+            {
+              "directive_element": 1,
+              "requirement": "Hospital-level Medicare uncompensated-care methodology",
+              "phase_56s_scope_status": "Supported by located public record",
+              "matrix_decision": "Supported by located public record",
+              "evidence": "CMS publishes the current rule and hospital payment files.",
+              "locator": "CMS FY 2026 IPPS final-rule page, Uncompensated Care Payments section and hospital payment files.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Identification of Medicaid payments that offset uncompensated-care costs",
+              "phase_56s_scope_status": "Not established by located public record",
+              "matrix_decision": "Not established by located public record",
+              "evidence": "The located rule does not expose the GAO-recommended offset treatment.",
+              "locator": "CMS FY 2026 IPPS final-rule page, Uncompensated Care Payments section and hospital payment files.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "Adjustment of individual Medicare hospital payments for those offsets",
+              "phase_56s_scope_status": "Not established by located public record",
+              "matrix_decision": "Not established by located public record",
+              "evidence": "No public exact methodology change located.",
+              "locator": "CMS FY 2026 IPPS final-rule page, Uncompensated Care Payments section and hospital payment files.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "priority_repositories": [
+            "Current GAO recommendation page",
+            "Named agency publication portal",
+            "Agency electronic reading room",
+            "Program budget, policy, and report library"
+          ],
+          "search_terms": [
+            "GAO-16-568 Recommendation 2",
+            "Revised Medicare uncompensated-care payment methodology",
+            "Centers for Medicare & Medicaid Services; Administrator",
+            "HHS-01"
+          ],
+          "stop_rule": "Stop treating the adjacent source as a substitute once its visible scope and missing directive elements are recorded; reopen on a more exact artifact or GAO update.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Seek the exact directive, dashboard, assessment, schedule, or implementation record named by the unresolved matrix elements; keep the adjacent source as context only.",
+          "gao_acceptance_state": "No conforming action reported",
+          "signal_id": "signal-56t-hhs-medicaid-offsets-medicare-hospital-payments"
+        },
+        {
+          "action_key": "HHS-02",
+          "official_identity": "GAO-18-564 Recommendation 1",
+          "decision_class": "Adjacent-source directive matrix",
+          "target_artifact": "National risk tool, reorganization, and staffing actions",
+          "likely_custodian": "HHS Office of the Secretary and the responsible operating division",
+          "acquisition_status": "Adjacent record retained; exact implementation artifact acquisition remains open",
+          "directive_matrix": [
+            {
+              "directive_element": 1,
+              "requirement": "National view of Medicaid program-integrity risks",
+              "phase_56s_scope_status": "Partly supported by located public record",
+              "matrix_decision": "Partly supported by located public record",
+              "evidence": "The plan documents a centralized vulnerability process and named risk areas.",
+              "locator": "CMS Comprehensive Medicaid Integrity Plan FY 2024–2028, vulnerability-management and risk-prioritization sections; no national capacity-allocation table.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Assessment of oversight-resource capacity",
+              "phase_56s_scope_status": "Not established by located public record",
+              "matrix_decision": "Not established by located public record",
+              "evidence": "The plan does not publish a national resource-capacity assessment.",
+              "locator": "CMS Comprehensive Medicaid Integrity Plan FY 2024–2028, vulnerability-management and risk-prioritization sections; no national capacity-allocation table.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "Allocation of resources to highest-risk areas",
+              "phase_56s_scope_status": "Partly supported by located public record",
+              "matrix_decision": "Partly supported by located public record",
+              "evidence": "The plan describes risk prioritization, but not the complete recommendation-specific allocation decision.",
+              "locator": "CMS Comprehensive Medicaid Integrity Plan FY 2024–2028, vulnerability-management and risk-prioritization sections; no national capacity-allocation table.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "priority_repositories": [
+            "Current GAO recommendation page",
+            "Named agency publication portal",
+            "Agency electronic reading room",
+            "Program budget, policy, and report library"
+          ],
+          "search_terms": [
+            "GAO-18-564 Recommendation 1",
+            "National risk tool, reorganization, and staffing actions",
+            "Centers for Medicare & Medicaid Services; Administrator",
+            "HHS-02"
+          ],
+          "stop_rule": "Stop treating the adjacent source as a substitute once its visible scope and missing directive elements are recorded; reopen on a more exact artifact or GAO update.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Seek the exact directive, dashboard, assessment, schedule, or implementation record named by the unresolved matrix elements; keep the adjacent source as context only.",
+          "gao_acceptance_state": "GAO classifies the recommendation Open – Partially Addressed",
+          "signal_id": "signal-56t-hhs-medicaid-oversight-national-risk-assessment"
+        },
+        {
+          "action_key": "HHS-03",
+          "official_identity": "GAO-26-107507 Recommendation 4",
+          "decision_class": "Adjacent-source directive matrix",
+          "target_artifact": "HHS 180-day response letter",
+          "likely_custodian": "HHS Office of the Secretary and the responsible operating division",
+          "acquisition_status": "Adjacent record retained; exact implementation artifact acquisition remains open",
+          "directive_matrix": [
+            {
+              "directive_element": 1,
+              "requirement": "Collection of jurisdiction capability information",
+              "phase_56s_scope_status": "Partly supported by located public record",
+              "matrix_decision": "Partly supported by located public record",
+              "evidence": "The framework guides PHEP priorities but does not publish the requested jurisdiction-level dataset.",
+              "locator": "CDC Public Health Response Readiness Framework 2024–2028, priorities on local support and data modernization; no jurisdiction-level national gap dataset.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Analysis of capability gaps across jurisdictions",
+              "phase_56s_scope_status": "Not established by located public record",
+              "matrix_decision": "Not established by located public record",
+              "evidence": "No current national capability-gap analysis located.",
+              "locator": "CDC Public Health Response Readiness Framework 2024–2028, priorities on local support and data modernization; no jurisdiction-level national gap dataset.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "Use of results for preparedness support and decisions",
+              "phase_56s_scope_status": "Partly supported by located public record",
+              "matrix_decision": "Partly supported by located public record",
+              "evidence": "The framework prioritizes local support and data modernization without providing the recommendation-specific analysis.",
+              "locator": "CDC Public Health Response Readiness Framework 2024–2028, priorities on local support and data modernization; no jurisdiction-level national gap dataset.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "priority_repositories": [
+            "Current GAO recommendation page",
+            "Named agency publication portal",
+            "Agency electronic reading room",
+            "Program budget, policy, and report library"
+          ],
+          "search_terms": [
+            "GAO-26-107507 Recommendation 4",
+            "HHS 180-day response letter",
+            "Centers for Disease Control and Prevention; Director",
+            "HHS-03"
+          ],
+          "stop_rule": "Stop treating the adjacent source as a substitute once its visible scope and missing directive elements are recorded; reopen on a more exact artifact or GAO update.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Seek the exact directive, dashboard, assessment, schedule, or implementation record named by the unresolved matrix elements; keep the adjacent source as context only.",
+          "gao_acceptance_state": "Response pending",
+          "signal_id": "signal-56t-hhs-public-health-preparedness-capability-gaps"
+        },
+        {
+          "action_key": "HHS-04-R1",
+          "official_identity": "GAO-24-106276 Recommendation 1",
+          "decision_class": "Missing-document acquisition ticket",
+          "target_artifact": "Department-wide after-action program standard operating procedures",
+          "likely_custodian": "HHS Administration for Strategic Preparedness and Response and Office of the Secretary",
+          "acquisition_status": "Exact artifact not acquired from a public repository",
+          "directive_matrix": [
+            {
+              "directive_element": 1,
+              "requirement": "Department-wide coordination procedures",
+              "phase_56s_scope_status": "Not established by located public record",
+              "matrix_decision": "Not established by located public record",
+              "evidence": "No separately public SOP located.",
+              "locator": "No separately public exact artifact acquired as of 2026-08-02.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Use across HHS component agencies",
+              "phase_56s_scope_status": "Not established by located public record",
+              "matrix_decision": "Not established by located public record",
+              "evidence": "No public exercise or response record demonstrates operation.",
+              "locator": "No separately public exact artifact acquired as of 2026-08-02.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "After-action report documenting coordination",
+              "phase_56s_scope_status": "Not established by located public record",
+              "matrix_decision": "Not established by located public record",
+              "evidence": "No qualifying public AAR located.",
+              "locator": "No separately public exact artifact acquired as of 2026-08-02.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "priority_repositories": [
+            "HHS FOIA Library",
+            "HHS Guidance Portal",
+            "ASPR TRACIE",
+            "GAO recommendation correspondence"
+          ],
+          "search_terms": [
+            "department-wide after-action standard operating procedures",
+            "GAO-24-106276 recommendation 1",
+            "HHS component collaboration after action",
+            "exercise after-action report"
+          ],
+          "stop_rule": "Stop the bounded public-search pass after the named program, publication, reading-room, budget, and current GAO surfaces have been checked; reopen on a new exact-title, correspondence, attachment, or custodian lead.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Route the exact-title query to HHS Administration for Strategic Preparedness and Response and Office of the Secretary; monitor the named repositories and GAO page for a public attachment. No request has been submitted by FTFN.",
+          "gao_acceptance_state": "GAO classifies Recommendation 1 Open – Partially Addressed",
+          "signal_id": "signal-56t-hhs-after-action-component-coordination"
+        },
+        {
+          "action_key": "HHS-04-R2",
+          "official_identity": "GAO-24-106276 Recommendation 2",
+          "decision_class": "Missing-document acquisition ticket",
+          "target_artifact": "External-stakeholder after-action participation standard operating procedures",
+          "likely_custodian": "HHS Administration for Strategic Preparedness and Response and Office of the Secretary",
+          "acquisition_status": "Exact artifact not acquired from a public repository",
+          "directive_matrix": [
+            {
+              "directive_element": 1,
+              "requirement": "Procedure for relevant external-stakeholder participation",
+              "phase_56s_scope_status": "Not established by located public record",
+              "matrix_decision": "Not established by located public record",
+              "evidence": "No separately public SOP located.",
+              "locator": "No separately public exact artifact acquired as of 2026-08-02.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Identification and inclusion of appropriate stakeholders",
+              "phase_56s_scope_status": "Not established by located public record",
+              "matrix_decision": "Not established by located public record",
+              "evidence": "No public exercise or response record demonstrates the procedure.",
+              "locator": "No separately public exact artifact acquired as of 2026-08-02.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "After-action report documenting participation",
+              "phase_56s_scope_status": "Not established by located public record",
+              "matrix_decision": "Not established by located public record",
+              "evidence": "No qualifying public AAR located.",
+              "locator": "No separately public exact artifact acquired as of 2026-08-02.",
+              "authority_boundary": "FTFN records visible public coverage only; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "priority_repositories": [
+            "HHS FOIA Library",
+            "HHS Guidance Portal",
+            "ASPR TRACIE",
+            "GAO recommendation correspondence"
+          ],
+          "search_terms": [
+            "external stakeholder after-action standard operating procedures",
+            "GAO-24-106276 recommendation 2",
+            "public health emergency stakeholder after action",
+            "exercise after-action report"
+          ],
+          "stop_rule": "Stop the bounded public-search pass after the named program, publication, reading-room, budget, and current GAO surfaces have been checked; reopen on a new exact-title, correspondence, attachment, or custodian lead.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Route the exact-title query to HHS Administration for Strategic Preparedness and Response and Office of the Secretary; monitor the named repositories and GAO page for a public attachment. No request has been submitted by FTFN.",
+          "gao_acceptance_state": "GAO classifies Recommendation 2 Open – Partially Addressed",
+          "signal_id": "signal-56t-hhs-after-action-external-stakeholder-participation"
+        }
+      ],
+      "phase_56t_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56T creates retrieval and sufficiency controls but does not establish GAO acceptance, implementation, closure, or operating outcome.",
+        "recommendation_records": 5,
+        "acquisition_tickets": 2,
+        "adjacent_matrices": 3,
+        "candidate_matrices": 0
+      },
+      "phase_56u_exact_artifact_recovery": [
+        {
+          "action_key": "HHS-04-R1",
+          "official_identity": "GAO-24-106276 Recommendation 1",
+          "target_artifact": "Department-wide after-action program standard operating procedures",
+          "likely_custodian": "HHS Administration for Strategic Preparedness and Response and Office of the Secretary",
+          "result_class": "Current official near-match reviewed; exact target artifact not acquired",
+          "exact_target_artifact_acquired": false,
+          "near_matches": [
+            {
+              "source_id": "source-56u-hhs-all-hazards-plan-catalog",
+              "locator": "Resource description and official plan link",
+              "relation": "Department-wide emergency coordination plan",
+              "why_not_exact": "It is not the 2026 after-action SOP and does not demonstrate the SOP in use through a qualifying AAR."
+            }
+          ],
+          "search_surfaces": [
+            "Current GAO recommendation page",
+            "HHS FOIA Library",
+            "HHS Guidance Portal",
+            "ASPR TRACIE resource catalog",
+            "ASPR legal publications",
+            "HHS component reading rooms"
+          ],
+          "official_repository_result": "ASPR TRACIE's current catalog confirms the 2024 HHS All-Hazards Plan and department-wide response coordination. The cataloged plan predates the SOPs described by GAO in January 2026, and the linked PDF endpoint was unavailable during this pass. Neither the exact SOP nor an implementation after-action report was acquired.",
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Monitor the HHS FOIA Library, Guidance Portal, ASPR TRACIE, and GAO for the exact SOP or a response or exercise AAR that demonstrates component collaboration.",
+          "agency_status_conflict": false,
+          "gao_acceptance_state": "GAO classifies Recommendation 1 Open – Partially Addressed",
+          "signal_id": "signal-56u-hhs-after-action-component-coordination"
+        },
+        {
+          "action_key": "HHS-04-R2",
+          "official_identity": "GAO-24-106276 Recommendation 2",
+          "target_artifact": "External-stakeholder after-action participation standard operating procedures",
+          "likely_custodian": "HHS Administration for Strategic Preparedness and Response and Office of the Secretary",
+          "result_class": "Current official near-match reviewed; exact target artifact not acquired",
+          "exact_target_artifact_acquired": false,
+          "near_matches": [
+            {
+              "source_id": "source-56u-hhs-all-hazards-plan-catalog",
+              "locator": "Resource description and official plan link",
+              "relation": "Broad coordinated emergency-response framework",
+              "why_not_exact": "The catalog does not provide the 2026 stakeholder-participation SOP, participant-selection process, or an implementation AAR."
+            }
+          ],
+          "search_surfaces": [
+            "Current GAO recommendation page",
+            "HHS FOIA Library",
+            "HHS Guidance Portal",
+            "ASPR TRACIE resource catalog",
+            "ASPR legal publications",
+            "HHS component reading rooms"
+          ],
+          "official_repository_result": "The current ASPR TRACIE catalog provides a live official record for HHS's 2024 All-Hazards Plan, but it does not expose the later external-stakeholder after-action SOP described by GAO. No public exercise or response AAR was found that shows how relevant external stakeholders were selected and included.",
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Monitor the named HHS and ASPR repositories for the exact stakeholder SOP or a qualifying AAR; do not infer participation from a broad emergency plan.",
+          "agency_status_conflict": false,
+          "gao_acceptance_state": "GAO classifies Recommendation 2 Open – Partially Addressed",
+          "signal_id": "signal-56u-hhs-after-action-external-stakeholder-participation"
+        }
+      ],
+      "phase_56u_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56U records public recovery results and near-match boundaries but no exact target artifact, GAO acceptance, implementation, closure, or operating outcome.",
+        "acquisition_tickets_checked": 2,
+        "exact_target_artifacts_acquired": 0,
+        "near_matches_reviewed": 2,
+        "agency_status_conflicts": 0
+      },
+      "phase_56v_supporting_artifact_decomposition": [
+        {
+          "lead_id": "lead-56v-04",
+          "action_key": "HHS-04-R1",
+          "official_identity": "GAO-24-106276 Recommendation 1",
+          "target_artifact": "Department-wide after-action program standard operating procedures",
+          "lead_type": "Referenced implementation instrument",
+          "phase_56u_near_match": {
+            "source_id": "source-56u-hhs-all-hazards-plan-catalog",
+            "locator": "Resource description and official plan link",
+            "relation": "Department-wide emergency coordination plan",
+            "why_not_exact": "It is not the 2026 after-action SOP and does not demonstrate the SOP in use through a qualifying AAR."
+          },
+          "decomposition_path": [
+            {
+              "source_id": "source-56v-hhs-aar-improvement-plan-template-catalog",
+              "locator": "Resource description and linked AAR/IP template",
+              "artifact_function": "Identifies a public HHS-hosted format for documenting exercise or event performance and improvement actions.",
+              "why_not_target": "The provider template is not the January 2026 department-wide SOP and does not demonstrate collaboration across HHS components."
+            }
+          ],
+          "material_narrowing": "The search can now distinguish SOP text from the separate AAR/IP implementation record GAO is waiting to review.",
+          "exact_target_artifact_acquired": false,
+          "recommendation_specific_supporting_artifact_located": false,
+          "directive_element_tests": [
+            {
+              "directive_element": 1,
+              "requirement": "Department-wide coordination procedures",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "A generic AAR/IP instrument does not establish HHS's department-wide coordination procedures.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Use across HHS component agencies",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The catalog does not show use across HHS component agencies.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "After-action report documenting coordination",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "No qualifying exercise or response AAR documenting component collaboration is attached.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Search HHS and ASPR exercise repositories for a completed AAR/IP that names participating components and cites the January 2026 SOP.",
+          "signal_id": "signal-56v-hhs-component-after-action-evaluation-instrument"
+        },
+        {
+          "lead_id": "lead-56v-05",
+          "action_key": "HHS-04-R2",
+          "official_identity": "GAO-24-106276 Recommendation 2",
+          "target_artifact": "External-stakeholder after-action participation standard operating procedures",
+          "lead_type": "Template-to-procedure gap decomposition",
+          "phase_56u_near_match": {
+            "source_id": "source-56u-hhs-all-hazards-plan-catalog",
+            "locator": "Resource description and official plan link",
+            "relation": "Broad coordinated emergency-response framework",
+            "why_not_exact": "The catalog does not provide the 2026 stakeholder-participation SOP, participant-selection process, or an implementation AAR."
+          },
+          "decomposition_path": [
+            {
+              "source_id": "source-56v-hhs-aar-improvement-plan-template-catalog",
+              "locator": "Resource description and linked AAR/IP template",
+              "artifact_function": "Provides a public after-action documentation instrument against which the stakeholder-specific SOP and completed AAR can be distinguished.",
+              "why_not_target": "The resource does not define relevant external stakeholders, selection criteria, participation steps, or a completed qualifying AAR."
+            }
+          ],
+          "material_narrowing": "The downstream search is now for the SOP's stakeholder-selection procedure plus a completed AAR/IP naming participating external organizations, not for another broad emergency plan.",
+          "exact_target_artifact_acquired": false,
+          "recommendation_specific_supporting_artifact_located": false,
+          "directive_element_tests": [
+            {
+              "directive_element": 1,
+              "requirement": "Procedure for relevant external-stakeholder participation",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "The generic template does not establish a procedure for relevant external-stakeholder participation.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 2,
+              "requirement": "Identification and inclusion of appropriate stakeholders",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "It does not identify which stakeholders were selected or included in a department-wide exercise or response review.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            },
+            {
+              "directive_element": 3,
+              "requirement": "After-action report documenting participation",
+              "prior_decision": "Not established by located public record",
+              "phase_56v_decision": "Not established by located public record",
+              "downstream_test": "No completed AAR documents stakeholder participation and resulting solutions.",
+              "authority_boundary": "A supporting locator or planned instrument cannot fill the directive element by inference; GAO retains recommendation-sufficiency and closure authority."
+            }
+          ],
+          "stop_rule": "Stop this public pass after the current GAO page, named custodian surfaces, congressional or budget records, agency reading rooms, and relevant program repositories have been checked. A failed public search is not a nonexistence finding.",
+          "reopening_trigger": "A new agency attachment, public exact-title match, successor directive, GAO page update, or named custodian release.",
+          "next_action": "Search for a completed HHS exercise or response AAR/IP that identifies external participants, selection rationale, challenges, solutions, and the governing January 2026 SOP.",
+          "signal_id": "signal-56v-hhs-stakeholder-after-action-template"
+        }
+      ],
+      "phase_56v_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56V adds downstream locators and supporting-artifact chains but no exact target artifact, GAO acceptance, directive-scope change, implementation, closure, or operating outcome.",
+        "parent_near_matches_decomposed": 2,
+        "official_supporting_artifacts_profiled": 2,
+        "recommendation_specific_supporting_artifacts_located": 0,
+        "exact_target_artifacts_acquired": 0
+      },
+      "phase_56w_named_record_retrieval": [
+        {
+          "record_id": "record-56w-hhs-cross-component-after-action-report",
+          "action_key": "HHS-04-R1",
+          "parent_lead_id": "lead-56v-04",
+          "record_type": "Named target retrieval",
+          "record_status": "In Review",
+          "target_artifact": "Completed department-wide exercise or response AAR citing the January 2026 SOP and documenting cross-component collaboration",
+          "finding": "GAO reports that HHS established a January 2026 SOP and was awaiting a qualifying exercise or response AAR for review. No completed department-wide AAR naming participating HHS components was located.",
+          "material_narrowing": "The missing evidence is now a completed use record, not another template or general emergency plan.",
+          "evidence_limits": [
+            "An SOP is not evidence of use.",
+            "A provider-oriented AAR template is not a department-wide cross-component AAR.",
+            "Open—Partially Addressed remains the controlling GAO status."
+          ],
+          "exact_target_artifact_acquired": false,
+          "agency_gao_status_conflict": false,
+          "next_action": "Retrieve the first completed AAR that cites the January 2026 SOP and documents participating HHS components, findings, corrective actions, and follow-through.",
+          "signal_id": null
+        },
+        {
+          "record_id": "record-56w-hhs-external-stakeholder-after-action-report",
+          "action_key": "HHS-04-R2",
+          "parent_lead_id": "lead-56v-05",
+          "record_type": "Named target retrieval",
+          "record_status": "In Review",
+          "target_artifact": "Completed department-wide AAR documenting relevant external-stakeholder selection, participation, challenges, solutions, and follow-through under the January 2026 SOP",
+          "finding": "GAO reports the January 2026 SOP as a partial response and is awaiting a qualifying use record. No completed AAR identifying external participants and the procedure used to include them was located.",
+          "material_narrowing": "The target is bounded to one completed department-wide implementation record that joins stakeholder-selection procedure to actual participation and corrective action.",
+          "evidence_limits": [
+            "A generic AAR template does not define relevant stakeholder selection.",
+            "An SOP without a completed use record does not establish implementation.",
+            "Open—Partially Addressed remains the controlling GAO status."
+          ],
+          "exact_target_artifact_acquired": false,
+          "agency_gao_status_conflict": false,
+          "next_action": "Retrieve the first qualifying AAR that identifies external participants, selection rationale, participation, findings, solutions, and accountable follow-through.",
+          "signal_id": null
+        }
+      ],
+      "phase_56w_coverage_decision": {
+        "prior_closure_status": "Partially Closed",
+        "current_closure_status": "Partially Closed",
+        "decision": "Retain the Phase 56F entity evidence state. Phase 56W adds new authoritative status and materially narrower official records but no exact target artifact, GAO acceptance, directive-scope change, implementation change, closure change, or operating outcome.",
+        "records_reviewed": 2,
+        "records_published": 0,
+        "records_held_in_review": 2,
+        "exact_target_artifacts_acquired": 0
+      }
+    },
+    {
+      "panel_id": "panel-56b-current-applications-output",
+      "portfolio": "manufacturing",
+      "entity_id": "manufacturer-current-applications-watertown-ny",
+      "entity_name": "Current Applications",
+      "entity_type": "Manufacturing company",
+      "indicator": "Reported production output on the improved line",
+      "unit": "Units per day",
+      "denominator": "The product line described in the NIST MEP case study",
+      "period": "Before and after the reported lean intervention",
+      "geography": "Watertown, New York",
+      "method": "Company-attributed before-and-after result reported in a NIST MEP success story",
+      "attribution": "Current Applications, CITEC, New York MEP, and NIST MEP",
+      "record_status": "Published",
+      "signal_id": "signal-56b-current-applications-output-panel",
+      "source_ids": [
+        "source-56b-nist-mep-current-applications-lean"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-mep-national-impact"
+      ],
+      "observations": [
+        {
+          "period": "Pre-intervention",
+          "value": 40,
+          "label": "40 units per day",
+          "source_id": "source-56b-nist-mep-current-applications-lean"
+        },
+        {
+          "period": "Post-intervention",
+          "value": 105,
+          "label": "105 units per day",
+          "source_id": "source-56b-nist-mep-current-applications-lean"
+        }
+      ],
+      "reporting_breaks": [
+        "The official case study does not state observation dates or a repeated post-intervention measurement window."
+      ],
+      "missing_data": [
+        "Track later output, product mix, labor hours, first-pass yield, scrap, downtime, delivery, demand, WIP, and independent validation."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish as a company- and program-attributed intervention result. Do not infer audited causality, persistence, company-wide productivity, quality, labor intensity, or customer outcomes.",
+      "phase_56c_dossier_id": "dossier-56c-current-applications-drivers",
+      "phase_56c_signal_id": "signal-56c-current-applications-drivers",
+      "driver_constraint_source_ids": [
+        "source-56c-current-applications-capabilities",
+        "source-56c-current-applications-cancelled-expansion"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "The Phase 56B panel records a company- and MEP-attributed line increase from 40 to 105 units per day."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "The company identifies custom engineering, testing, prototypes, and flexible tooling and fixtures as operating inputs."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "A proposed 10,200-square-foot expansion is recorded by New York as Cancelled/Declined with $0 disbursed."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "No later compatible output, labor, quality, cost, delivery, demand, or WIP observation is publicly exposed."
+        }
+      ],
+      "driver_constraint_attribution": "Current capabilities are company claims; the project status is independently recorded by New York.",
+      "independent_validation": "The state record validates only the public project's status, not the company's operating claims or the reason for the earlier output change.",
+      "alternative_explanations": [
+        "Product mix",
+        "Demand and backlog",
+        "Labor input",
+        "Tooling and layout",
+        "Unrecorded private capital investment"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Obtain a dated repeat of the same line's output, labor hours, WIP, first-pass yield, scrap, downtime, cost, delivery, and demand.",
+        "Obtain same-line output, labor hours, WIP, yield, scrap, downtime, cost, delivery, demand, and dated capital records."
+      ],
+      "phase_56d_test_id": "test-56d-current-applications-repeat-test",
+      "phase_56d_signal_id": "signal-56d-current-applications-repeat-test",
+      "phase_56d_record_status": "In Review",
+      "phase_56d_source_ids": [
+        "source-56d-current-applications-team-2026",
+        "source-56d-current-applications-osha-inspection-2010"
+      ],
+      "tested_alternative_explanations": [
+        "Labor input",
+        "Tooling and layout",
+        "Product mix",
+        "Demand and backlog",
+        "Unrecorded private capital investment"
+      ],
+      "phase_56d_later_observations": [
+        "The current company page identifies manufacturing, engineering, quality, procurement, tooling, and information-system roles.",
+        "The independently attributable OSHA inspection predates the line intervention and is not a later production observation."
+      ],
+      "phase_56d_compatibility": "The company identity is stable; neither record uses the same line, output unit, labor denominator, or post-intervention window.",
+      "phase_56d_result": "The test remains held because public records do not expose a compatible repeat output or input series.",
+      "phase_56d_validation_status": "Entity continuity is partially supported; line performance is not independently validated.",
+      "phase_56f_coverage_id": "coverage-56f-current-applications",
+      "phase_56f_closure_status": "Partially Closed",
+      "phase_56f_record_status": "Published",
+      "phase_56f_selected_source_id": "source-56f-current-applications-workforce",
+      "phase_56f_highest_value_missing_record": "Current facility workforce denominator paired with repeat same-line output",
+      "phase_56f_remaining_gap": "Line output, labor hours, WIP, yield, scrap, downtime, cost, delivery, demand, and dated capital execution.",
+      "phase_56f_reopening_rule": "Reopen when a dated company, MEP, grant, or customer record reports same-line input and output under a declared window.",
+      "phase_56i_acquisition_id": "acquisition-56i-current-applications-first-pass-decision",
+      "phase_56i_checked_source_id": "source-56b-nist-mep-current-applications-lean",
+      "phase_56i_checked_date": "2026-07-25",
+      "phase_56i_prior_closure_status": "Partially Closed",
+      "phase_56i_current_closure_status": "Partially Closed",
+      "phase_56i_acquisition_result": "The NIST MEP record pairs an approximately 60-person current workforce description with attributed results of production rising from 40 to 105 units per day, lead time falling 50 percent, and WIP falling from 105 to 5 units.",
+      "phase_56i_remaining_gap": "Repeat same-line output, labor hours, yield, scrap, downtime, cost, delivery, demand, and dated capital execution under a compatible window.",
+      "phase_56i_reopening_rule": "Reopen when a dated company, MEP, grant, or customer record reports repeat same-line input and output under a declared window.",
+      "phase_56j_queue_lane": "C — named realized-outcome rails",
+      "phase_56j_acquisition_order": 12,
+      "phase_56j_named_next_record": "Repeat same-line input and output under one declared period",
+      "phase_56l_acquisition_id": "acquisition-56l-current-applications-repeat-output-status",
+      "phase_56l_named_record": "Repeat same-line input and output under one declared period",
+      "phase_56l_checked_source_id": "source-56b-nist-mep-current-applications-lean",
+      "phase_56l_checked_date": "2026-07-25",
+      "phase_56l_prior_closure_status": "Partially Closed",
+      "phase_56l_current_closure_status": "Partially Closed",
+      "phase_56l_acquisition_result": "The authoritative NIST MEP record still supplies one attributed intervention: production increased from 40 to 105 units per day, work in process fell from 105 to 5 units, and lead time fell 50 percent. The current official rail does not add a second compatible observation window.",
+      "phase_56l_decision": "Retain Partially Closed. The original same-line intervention remains useful, but it is not a repeat series and cannot be republished as a new realized outcome.",
+      "phase_56l_remaining_gap": "A second dated same-line observation with compatible output, labor input, work in process, yield, scrap, downtime, cost, delivery, demand, or capital execution.",
+      "phase_56l_reopening_rule": "Reopen when a dated company, MEP, grant, or customer record reports repeat same-line input and output under a declared compatible window."
+    },
+    {
+      "panel_id": "panel-56b-island-components-output",
+      "portfolio": "manufacturing",
+      "entity_id": "manufacturer-island-components-hauppauge-ny",
+      "entity_name": "Island Components Group",
+      "entity_type": "Manufacturing company",
+      "indicator": "Reported daily motor-assembly output",
+      "unit": "Units per day",
+      "denominator": "The department and motor-assembly flow described in the NIST MEP case study",
+      "period": "Before and after the reported lean intervention",
+      "geography": "Hauppauge, New York",
+      "method": "Company-attributed before-and-after result reported in a NIST MEP success story",
+      "attribution": "Island Components Group, Long Island MEP, New York MEP, and NIST MEP",
+      "record_status": "Published",
+      "signal_id": "signal-56b-island-components-output-panel",
+      "source_ids": [
+        "source-56b-nist-mep-island-components-lean"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-mep-national-impact"
+      ],
+      "observations": [
+        {
+          "period": "Pre-intervention",
+          "value": 75,
+          "label": "75 units per day",
+          "source_id": "source-56b-nist-mep-island-components-lean"
+        },
+        {
+          "period": "Post-intervention",
+          "value": 120,
+          "label": "120 units per day",
+          "source_id": "source-56b-nist-mep-island-components-lean"
+        }
+      ],
+      "reporting_breaks": [
+        "The case study does not expose the measurement window, product-mix adjustment, or later follow-up."
+      ],
+      "missing_data": [
+        "Track the same line's output, labor hours, WIP, first-pass yield, defects, downtime, delivery, cost, and persistence."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the facility intervention result without converting it into a benchmark, causal estimate, or statement about quality, labor, cost, delivery, or sustained demand.",
+      "phase_56c_dossier_id": "dossier-56c-island-components-drivers",
+      "phase_56c_signal_id": "signal-56c-island-components-drivers",
+      "driver_constraint_source_ids": [
+        "source-56c-island-components-acquisition-2021",
+        "source-56c-island-components-capabilities"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "The acquisition announcement says Island Components would continue operating independently as a G.W. Lisk division."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "The current capability profile lists winding, machining, automated equipment, assembly, inspection, environmental testing, and access to parent capabilities."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "The public records do not expose utilization, labor, quality, product mix, downtime, delivery, investment, or integration measures."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "The later MEP case reports daily output moving from 75 to 120 units, without a repeat observation window."
+        }
+      ],
+      "driver_constraint_attribution": "Acquisition and capability records are company-attributed; the output result remains company- and MEP-attributed.",
+      "independent_validation": "No independent record validates the acquisition's operating effect or the persistence of the reported output change.",
+      "alternative_explanations": [
+        "Lean workflow changes",
+        "Product mix and demand",
+        "Parent resources",
+        "Capital equipment",
+        "Labor and staffing"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Collect repeated output, labor hours, WIP, first-pass yield, defects, downtime, delivery, and parent-resource use for the same line.",
+        "Add certification-surveillance findings and same-line output, labor, WIP, yield, defects, downtime, delivery, demand, and parent-resource use."
+      ],
+      "phase_56d_test_id": "test-56d-island-components-repeat-test",
+      "phase_56d_signal_id": "signal-56d-island-components-repeat-test",
+      "phase_56d_record_status": "In Review",
+      "phase_56d_source_ids": [
+        "source-56d-island-components-quality-clauses-2025",
+        "source-56d-island-components-certifications-2026"
+      ],
+      "tested_alternative_explanations": [
+        "Lean workflow changes",
+        "Parent resources",
+        "Capital equipment",
+        "Labor and staffing",
+        "Product mix and demand"
+      ],
+      "phase_56d_later_observations": [
+        "The 2025 supplier clauses define nonconformance, corrective action, traceability, change control, and specified key-characteristic requirements.",
+        "The current certification page lists ISO 9001:2015 and AS9100D for the Hauppauge operation."
+      ],
+      "phase_56d_compatibility": "Same company and facility identity; control design and certification are not the same output, labor, WIP, yield, defect, downtime, or delivery measures.",
+      "phase_56d_result": "The test remains held because no repeat line outcome or surveillance finding is exposed.",
+      "phase_56d_validation_status": "The records support stated control design, not observed operation or causal effect.",
+      "phase_56f_coverage_id": "coverage-56f-island-components",
+      "phase_56f_closure_status": "Partially Closed",
+      "phase_56f_record_status": "Published",
+      "phase_56f_selected_source_id": "source-56f-island-components-scida-2023",
+      "phase_56f_highest_value_missing_record": "Realized facility, capital, and employment inputs paired with repeat output",
+      "phase_56f_remaining_gap": "Realized jobs, output, labor hours, WIP, yield, defects, downtime, delivery, demand, and independent surveillance findings.",
+      "phase_56f_reopening_rule": "Reopen when SCIDA, the company, a registrar, or a customer publishes a dated realized outcome for the Hauppauge operation.",
+      "phase_56i_acquisition_id": "acquisition-56i-island-components-first-pass-decision",
+      "phase_56i_checked_source_id": "source-56f-island-components-scida-2023",
+      "phase_56i_checked_date": "2026-07-25",
+      "phase_56i_prior_closure_status": "Partially Closed",
+      "phase_56i_current_closure_status": "Partially Closed",
+      "phase_56i_acquisition_result": "The selected SCIDA record defines a $2 million relocation, a 14,200-square-foot Hauppauge facility, and fourteen planned engineering and manufacturing positions.",
+      "phase_56i_remaining_gap": "Realized jobs, completed investment, output, labor hours, WIP, yield, defects, downtime, delivery, demand, and independent surveillance findings.",
+      "phase_56i_reopening_rule": "Reopen when SCIDA, the company, a registrar, or a customer publishes a dated realized outcome for the Hauppauge operation.",
+      "phase_56j_queue_lane": "C — named realized-outcome rails",
+      "phase_56j_acquisition_order": 13,
+      "phase_56j_named_next_record": "Realized Hauppauge jobs, investment, or repeat operating output",
+      "phase_56l_acquisition_id": "acquisition-56l-island-components-certified-employment-outcome",
+      "phase_56l_named_record": "Realized Hauppauge jobs, investment, or repeat operating output",
+      "phase_56l_checked_source_id": "source-56l-island-components-paris-fye2023",
+      "phase_56l_checked_date": "2026-07-25",
+      "phase_56l_prior_closure_status": "Partially Closed",
+      "phase_56l_current_closure_status": "Partially Closed",
+      "phase_56l_acquisition_result": "The certified FYE 2023 PARIS record reports 25 FTEs before IDA status, 33 current FTEs, and a net employment change of eight for project 47052302A. It also records a $2,042,250 total project amount and $16,349 of reporting-year exemptions.",
+      "phase_56l_decision": "Retain Partially Closed. The record advances the rail from planned jobs to a reported realized employment denominator, but the project amount is not proof of completed spending and the report does not expose repeat production output.",
+      "phase_56l_remaining_gap": "Completed and paid investment, repeat output, labor hours, work in process, yield, defects, downtime, delivery, demand, and independent surveillance findings.",
+      "phase_56l_reopening_rule": "Reopen when SCIDA, the company, a registrar, or a customer publishes completed investment or repeat operating output under a declared compatible period."
+    },
+    {
+      "panel_id": "panel-56b-monaghan-medical-output",
+      "portfolio": "manufacturing",
+      "entity_id": "manufacturer-monaghan-medical-plattsburgh-ny",
+      "entity_name": "Monaghan Medical",
+      "entity_type": "Manufacturing company",
+      "indicator": "Reported daily output on one production line",
+      "unit": "Units per day",
+      "denominator": "The production line described in the NIST MEP case study",
+      "period": "Before and after the reported lean intervention",
+      "geography": "Plattsburgh, New York",
+      "method": "Company-attributed before-and-after result reported in a NIST MEP success story",
+      "attribution": "Monaghan Medical, CITEC, New York MEP, and NIST MEP",
+      "record_status": "Published",
+      "signal_id": "signal-56b-monaghan-medical-output-panel",
+      "source_ids": [
+        "source-56b-nist-mep-monaghan-medical-lean"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-mep-national-impact"
+      ],
+      "observations": [
+        {
+          "period": "Pre-intervention",
+          "value": 6000,
+          "label": "6,000 units per day",
+          "source_id": "source-56b-nist-mep-monaghan-medical-lean"
+        },
+        {
+          "period": "Post-intervention",
+          "value": 9000,
+          "label": "9,000 units per day",
+          "source_id": "source-56b-nist-mep-monaghan-medical-lean"
+        }
+      ],
+      "reporting_breaks": [
+        "The case study does not state a post-intervention follow-up period or company-wide denominator."
+      ],
+      "missing_data": [
+        "Track line identity, output, product mix, labor hours, first-pass yield, scrap, downtime, cost, delivery, demand, and later measurements."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish as one line's attributed result. Do not generalize it to the whole company, sector productivity, product quality, labor displacement, cost, or clinical outcomes.",
+      "phase_56c_dossier_id": "dossier-56c-monaghan-medical-drivers",
+      "phase_56c_signal_id": "signal-56c-monaghan-medical-drivers",
+      "driver_constraint_source_ids": [
+        "source-56c-monaghan-iso14001-2024",
+        "source-56c-monaghan-manufacturing-profile"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "Monaghan describes respiratory-device manufacturing under medical-device and environmental management controls."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "The company attained ISO 14001 certification and set continual-improvement, waste-diversion, and emissions-reduction objectives."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "No common quantitative series connects the management system to line output, product mix, labor, quality, cost, delivery, waste, or emissions."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "The later MEP case reports one line increasing from 6,000 to 9,000 units per day."
+        }
+      ],
+      "driver_constraint_attribution": "Certification and environmental objectives are company-attributed; the output result is company- and MEP-attributed.",
+      "independent_validation": "Certification validates a management-system standard, not the magnitude, cause, persistence, or breadth of operating outcomes.",
+      "alternative_explanations": [
+        "Lean intervention",
+        "Demand and product mix",
+        "Staffing and shifts",
+        "Equipment and layout",
+        "Quality-control and supply conditions"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Collect same-line output, labor, yield, scrap, downtime, delivery, demand, waste, emissions, and certification-surveillance records.",
+        "Add units distributed, product identity, same-line output, labor, yield, scrap, downtime, delivery, demand, waste, emissions, and surveillance findings."
+      ],
+      "phase_56d_test_id": "test-56d-monaghan-medical-repeat-test",
+      "phase_56d_signal_id": "signal-56d-monaghan-medical-repeat-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-monaghan-fda-tplc-2025",
+        "source-56d-monaghan-iso14001-boundary-2024"
+      ],
+      "tested_alternative_explanations": [
+        "Demand and product mix",
+        "Quality-control and supply conditions",
+        "Equipment and layout",
+        "Lean intervention"
+      ],
+      "phase_56d_later_observations": [
+        "FDA's portal showed 193 manufacturer-attributed device reports for 2025 at capture.",
+        "The company's ISO 14001 page supplies control objectives but no quantitative surveillance or environmental outcome."
+      ],
+      "phase_56d_compatibility": "Same manufacturer; product-event counts and environmental management controls do not identify the MEP production line or units distributed.",
+      "phase_56d_result": "The bounded record can publish as a denominator warning, but it does not test persistence of the reported line-output change.",
+      "phase_56d_validation_status": "The event count is independently accessible; defect rate, line identity, and causal interpretation are not validated.",
+      "phase_56f_coverage_id": "coverage-56f-monaghan-medical",
+      "phase_56f_closure_status": "Partially Closed",
+      "phase_56f_record_status": "Published",
+      "phase_56f_selected_source_id": "source-56f-monaghan-esd-capital-2025",
+      "phase_56f_highest_value_missing_record": "Executed facility and machinery investment paired with units distributed or line output",
+      "phase_56f_remaining_gap": "Grant execution, facility operation, machinery in service, realized jobs, units distributed, same-line output, yield, scrap, delivery, and patient outcomes.",
+      "phase_56f_reopening_rule": "Reopen when ESD records disbursement or completion, or FDA/company records expose units distributed and a compatible production window.",
+      "phase_56i_acquisition_id": "acquisition-56i-monaghan-excelsior-commitment-denominator",
+      "phase_56i_checked_source_id": "source-56i-monaghan-excelsior-q1-2026",
+      "phase_56i_checked_date": "2026-07-25",
+      "phase_56i_prior_closure_status": "Partially Closed",
+      "phase_56i_current_closure_status": "Partially Closed",
+      "phase_56i_acquisition_result": "The March 2026 Excelsior report records Monaghan with a 72-job employment base, ten committed net new jobs, $9.575 million of committed investment, and up to $340,000 in tax credits.",
+      "phase_56i_remaining_gap": "Investment execution, credit certification, facility and machinery operation, realized jobs, units distributed, same-line output, yield, scrap, delivery, and patient outcomes.",
+      "phase_56i_reopening_rule": "Reopen when ESD reports certification or credit issuance, or FDA/company records expose units distributed and a compatible production window.",
+      "phase_56j_queue_lane": "C — named realized-outcome rails",
+      "phase_56j_acquisition_order": 14,
+      "phase_56j_named_next_record": "Certified investment, realized jobs, or units under a compatible window",
+      "phase_56l_acquisition_id": "acquisition-56l-monaghan-medical-certified-project-outcome",
+      "phase_56l_named_record": "Certified investment, realized jobs, or units under a compatible window",
+      "phase_56l_checked_source_id": "source-56l-monaghan-medical-ccida-fye2025",
+      "phase_56l_checked_date": "2026-07-25",
+      "phase_56l_prior_closure_status": "Partially Closed",
+      "phase_56l_current_closure_status": "Partially Closed",
+      "phase_56l_acquisition_result": "The certified FYE 2025 record for project 0902-18-05 lists a $10 million total project amount, notes construction complete in 2021, and reports 91 current FTEs against 68 before IDA status, a net employment change of 23.",
+      "phase_56l_decision": "Retain Partially Closed. The record establishes a completed earlier IDA project and a realized reported employment denominator, but it does not certify the separate 2025 ESD commitment or publish compatible production units.",
+      "phase_56l_remaining_gap": "Execution and certification of the separate 2025 facility and machinery commitment, units distributed, same-line output, labor input, yield, scrap, downtime, delivery, and patient outcomes.",
+      "phase_56l_reopening_rule": "Reopen when ESD reports certification or credit issuance for the later commitment, or FDA or company records expose units distributed and a compatible production window."
+    },
+    {
+      "panel_id": "panel-56b-moss-landing-battery-capacity",
+      "portfolio": "infrastructure",
+      "entity_id": "eia-plant-260",
+      "entity_name": "Dynegy Moss Landing Power Plant Hybrid",
+      "entity_type": "Battery-storage generating plant",
+      "indicator": "Operating battery-generator nameplate power capacity",
+      "unit": "Megawatts",
+      "denominator": "Operating battery generators assigned to EIA plant code 260 in each final EIA-860 vintage",
+      "period": "Calendar years 2021-2023",
+      "geography": "California, United States",
+      "method": "Sum of nameplate capacity for operating battery generators in the final annual EIA-860 generator inventory",
+      "attribution": "U.S. Energy Information Administration; FTFN plant-code aggregation",
+      "record_status": "Published",
+      "signal_id": "signal-56b-moss-landing-capacity-panel",
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-eia-battery-capacity"
+      ],
+      "observations": [
+        {
+          "period": "2021",
+          "value": 400,
+          "label": "400 MW",
+          "source_id": "source-56b-eia860-2021"
+        },
+        {
+          "period": "2022",
+          "value": 400,
+          "label": "400 MW",
+          "source_id": "source-56b-eia860-2022"
+        },
+        {
+          "period": "2023",
+          "value": 750,
+          "label": "750 MW",
+          "source_id": "source-56b-eia860-2023"
+        }
+      ],
+      "reporting_breaks": [
+        "Plant name and generator records can be revised in later EIA vintages; plant code 260 is the stable identity key."
+      ],
+      "missing_data": [
+        "Track later EIA vintages, generator additions and retirements, energy capacity, availability, incidents, dispatch, revenue, and grid-service results."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the nameplate power-capacity panel only. Do not infer energy duration, availability, utilization, safety, dispatch, revenue, grid service, or customer reliability.",
+      "phase_56c_dossier_id": "dossier-56c-moss-landing-constraints",
+      "phase_56c_signal_id": "signal-56c-moss-landing-constraints",
+      "driver_constraint_source_ids": [
+        "source-56c-moss-landing-audit-2025",
+        "source-56c-moss-landing-audit-response-2025"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "EIA plant code 260 increased from 400 MW in 2021-2022 to 750 MW in 2023."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "CPUC conducted an on-site generation audit with equipment inspection, document review, and staff interviews."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "The audit identified potential GO 167 violations requiring response and corrective action."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "The operator filed dated responses and claimed corrective actions; later regulator closure and battery-specific performance remain unverified."
+        }
+      ],
+      "driver_constraint_attribution": "CPUC attributes the findings; the operator attributes the responses and corrective actions.",
+      "independent_validation": "The regulator file independently validates that findings and responses exist, not the operating effect or durable closure of each item.",
+      "alternative_explanations": [
+        "Broader power-plant equipment",
+        "Battery-unit differences",
+        "Ownership and operating changes",
+        "Incident and outage conditions",
+        "EIA vintage revisions"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track regulator closure, later audits, generator identity, duration, availability, incidents, dispatch, revenue, grid service, and reliability effects.",
+        "Add final removal closure, CPUC investigation findings, generator reconciliation, availability, dispatch, duration, revenue, grid service, and reliability effects."
+      ],
+      "phase_56d_test_id": "test-56d-moss-landing-repeat-test",
+      "phase_56d_signal_id": "signal-56d-moss-landing-repeat-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-moss-landing-epa-response-timeline-2026",
+        "source-56d-moss-landing-epa-agreement-2025"
+      ],
+      "tested_alternative_explanations": [
+        "Incident and outage conditions",
+        "Battery-unit differences",
+        "Broader power-plant equipment",
+        "Ownership and operating changes"
+      ],
+      "phase_56d_later_observations": [
+        "EPA reported 33,943 intact batteries de-energized and ready for recycling by June 24, 2026, with about 5,000 remaining in difficult areas.",
+        "The enforceable agreement created regulator-supervised removal, monitoring, and emergency-response obligations."
+      ],
+      "phase_56d_compatibility": "The records concern the 300 MW fire-affected battery building inside the broader Moss Landing complex; they are not a common 750 MW plant-performance observation.",
+      "phase_56d_result": "The later official record verifies corrective-action progress and an incident boundary while blocking a facility-wide availability or return-to-service claim.",
+      "phase_56d_validation_status": "Regulator-verified work status; root cause, complete removal, return to service, and plant-wide performance remain unresolved.",
+      "phase_56f_coverage_id": "coverage-56f-moss-landing",
+      "phase_56f_closure_status": "Partially Closed",
+      "phase_56f_record_status": "Published",
+      "phase_56f_selected_source_id": "source-56f-cpuc-gess-july-2026",
+      "phase_56f_highest_value_missing_record": "Final regulator investigation and corrective-action closure",
+      "phase_56f_remaining_gap": "Final investigation, corrective-action closure, generator identity, return to service, availability, dispatch, duration, revenue, and reliability effects.",
+      "phase_56f_reopening_rule": "Reopen when CPUC publishes the formal investigation or audit report, facility response, or closure notice.",
+      "phase_56h_acquisition_id": "acquisition-56h-moss-landing-investigation-status-2026",
+      "phase_56h_checked_source_id": "source-56h-moss-landing-cpuc-investigation-status-2026",
+      "phase_56h_checked_date": "2026-07-24",
+      "phase_56h_prior_closure_status": "Partially Closed",
+      "phase_56h_current_closure_status": "Partially Closed",
+      "phase_56h_acquisition_result": "CPUC's July 14, 2026 update says its Generation and Energy Storage Section is conducting an ongoing investigation into the January 16, 2025 Moss Landing incident after an initial January 22, 2025 site visit.",
+      "phase_56h_remaining_gap": "Final regulator findings, facility response, corrective-action acceptance, verified implementation, restored operation, and later safety performance.",
+      "phase_56h_reopening_rule": "Reopen when CPUC publishes the formal investigation or audit report, facility response, or closure notice.",
+      "phase_56j_queue_lane": "A — current official record rails",
+      "phase_56j_acquisition_order": 1,
+      "phase_56j_named_next_record": "Final regulator investigation and corrective-action closure",
+      "phase_56k_acquisition_id": "acquisition-56k-moss-landing-plant-corrective-action-status",
+      "phase_56k_named_record": "Final regulator investigation and corrective-action closure",
+      "phase_56k_checked_source_id": "source-56k-moss-landing-go167-corrective-action-2025",
+      "phase_56k_checked_date": "2026-07-25",
+      "phase_56k_prior_closure_status": "Partially Closed",
+      "phase_56k_current_closure_status": "Partially Closed",
+      "phase_56k_acquisition_result": "The posted response addresses 28 conventional plant-audit findings: 13 are labeled Complete and 15 In progress. The filing is a company corrective-action response to a March 2025 GO 167 generation audit; it is not a final regulator determination and not the final investigation of the January 2025 battery fire.",
+      "phase_56k_decision": "Retain Partially Closed. The record adds a finding-level corrective-action denominator but does not close the selected battery-incident investigation or prove regulator acceptance of the company's status labels.",
+      "phase_56k_remaining_gap": "Final battery-incident findings, regulator-verified corrective-action closure, restored operation, availability, safety performance, and customer or grid outcomes.",
+      "phase_56k_reopening_rule": "Reopen when CPUC or another competent regulator publishes final January 2025 incident findings or verifies closure of the relevant corrective actions."
+    },
+    {
+      "panel_id": "panel-56b-manatee-battery-capacity",
+      "portfolio": "infrastructure",
+      "entity_id": "eia-plant-60014",
+      "entity_name": "Manatee Solar Energy Center",
+      "entity_type": "Battery-storage generating plant",
+      "indicator": "Operating battery-generator nameplate power capacity",
+      "unit": "Megawatts",
+      "denominator": "Operating battery generators assigned to EIA plant code 60014 in each final EIA-860 vintage",
+      "period": "Calendar years 2021-2023",
+      "geography": "Florida, United States",
+      "method": "Sum of nameplate capacity for operating battery generators in the final annual EIA-860 generator inventory",
+      "attribution": "U.S. Energy Information Administration; FTFN plant-code aggregation",
+      "record_status": "Published",
+      "signal_id": "signal-56b-manatee-capacity-panel",
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-eia-battery-capacity"
+      ],
+      "observations": [
+        {
+          "period": "2021",
+          "value": 409,
+          "label": "409 MW",
+          "source_id": "source-56b-eia860-2021"
+        },
+        {
+          "period": "2022",
+          "value": 409,
+          "label": "409 MW",
+          "source_id": "source-56b-eia860-2022"
+        },
+        {
+          "period": "2023",
+          "value": 409,
+          "label": "409 MW",
+          "source_id": "source-56b-eia860-2023"
+        }
+      ],
+      "reporting_breaks": [
+        "Plant and generator records can be revised in later EIA vintages; plant code 60014 is the stable identity key."
+      ],
+      "missing_data": [
+        "Track later EIA vintages, energy duration, availability, incidents, dispatch, curtailment, revenue, and grid-service performance."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "An unchanged nameplate value is not evidence of unchanged operating performance, stored energy, availability, safety, utilization, or customer benefit.",
+      "phase_56c_dossier_id": "dossier-56c-manatee-constraints",
+      "phase_56c_signal_id": "signal-56c-manatee-constraints",
+      "driver_constraint_source_ids": [
+        "source-56c-manatee-psc-operating-data-2025",
+        "source-56c-manatee-psc-rate-testimony-2025"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "EIA plant code 60014 remained at 409 MW across final 2021-2023 inventories."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "The utility placed a 409 MW, approximately 900 MWh battery in service in December 2021 near solar and transmission assets."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "Conversion losses, duration, system conditions, cycling, degradation, and rate recovery shape operation."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "PSC filings state uses for high load, reserves, transmission constraints, frequency response, and off-peak or solar charging."
+        }
+      ],
+      "driver_constraint_attribution": "The utility supplies the operating descriptions inside Florida PSC proceedings.",
+      "independent_validation": "The regulator docket validates the filing and asset characteristics, but not realized dispatch frequency, value, reliability effect, or cost effectiveness.",
+      "alternative_explanations": [
+        "Load and weather",
+        "Solar availability",
+        "Transmission constraints",
+        "Market and dispatch rules",
+        "Degradation and outage conditions"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Collect interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer-cost records.",
+        "Add interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer-cost records."
+      ],
+      "phase_56d_test_id": "test-56d-manatee-repeat-test",
+      "phase_56d_signal_id": "signal-56d-manatee-repeat-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-manatee-fpl-data-request-2025",
+        "source-56d-manatee-fpl-site-plan-2025"
+      ],
+      "tested_alternative_explanations": [
+        "Load and weather",
+        "Solar availability",
+        "Transmission constraints",
+        "Market and dispatch rules"
+      ],
+      "phase_56d_later_observations": [
+        "FPL attributed the location choice to high winter peak capacity need, existing transmission, and proximity to solar charging.",
+        "The 2025 site plan continued to list 409 MW of in-service storage at Manatee."
+      ],
+      "phase_56d_compatibility": "Same asset and power-capacity unit; both records are operator statements in regulatory filings rather than interval performance observations.",
+      "phase_56d_result": "The filings sharpen the stated operating logic and identity boundary but do not establish availability, cycling, dispatch, value, or customer effect.",
+      "phase_56d_validation_status": "The docket independently validates that the statements were filed, not the realized operating outcomes.",
+      "phase_56f_coverage_id": "coverage-56f-manatee",
+      "phase_56f_closure_status": "Open",
+      "phase_56f_record_status": "In Review",
+      "phase_56f_selected_source_id": "source-56d-manatee-fpl-data-request-2025",
+      "phase_56f_highest_value_missing_record": "Interval dispatch and availability for the named battery",
+      "phase_56f_remaining_gap": "Interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer cost.",
+      "phase_56f_reopening_rule": "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes asset-specific operating data with a declared interval.",
+      "phase_56g_acquisition_id": "acquisition-56g-manatee-interval-operation",
+      "phase_56g_checked_source_id": "source-56g-manatee-fpl-site-plan-2026",
+      "phase_56g_checked_date": "2026-07-24",
+      "phase_56g_prior_closure_status": "Open",
+      "phase_56g_current_closure_status": "Open",
+      "phase_56g_acquisition_result": "FPL's 2026 plan lists Manatee Battery Storage as one 409 MW unit in commercial operation as of December 31, 2025. It does not publish interval dispatch, availability, cycles, state of charge, or degradation.",
+      "phase_56g_remaining_gap": "Interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer cost.",
+      "phase_56g_reopening_rule": "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes asset-specific operating data with a declared interval.",
+      "phase_56h_acquisition_id": "acquisition-56h-manatee-interval-operation-continuation",
+      "phase_56h_checked_source_id": "source-56h-manatee-fpl-rate-testimony-2025",
+      "phase_56h_checked_date": "2026-07-24",
+      "phase_56h_prior_closure_status": "Open",
+      "phase_56h_current_closure_status": "Open",
+      "phase_56h_acquisition_result": "FPL's filed testimony identifies Manatee as a 409 MW, 2.2-hour battery placed in commercial operation in 2021 and describes centralized monitoring, dispatch, and control at the fleet level.",
+      "phase_56h_remaining_gap": "Interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer cost.",
+      "phase_56h_reopening_rule": "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes asset-specific operating data with a declared interval.",
+      "phase_56i_acquisition_id": "acquisition-56i-manatee-eia923-monthly-data-rail",
+      "phase_56i_checked_source_id": "source-56i-eia923-may2026-release",
+      "phase_56i_checked_date": "2026-07-25",
+      "phase_56i_prior_closure_status": "Open",
+      "phase_56i_current_closure_status": "Open",
+      "phase_56i_acquisition_result": "EIA's July 23 release extends the official EIA-923 rail through May 2026 and describes monthly and annual plant- and prime-mover-level generation data.",
+      "phase_56i_remaining_gap": "Interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer cost.",
+      "phase_56i_reopening_rule": "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes asset-specific operating data with a declared interval and availability denominator.",
+      "phase_56j_queue_lane": "Open rail",
+      "phase_56j_acquisition_order": null,
+      "phase_56j_named_next_record": "Asset-specific operating data with interval dispatch and availability",
+      "phase_56j_acquisition_id": "acquisition-56j-manatee-eia923-plant-operation",
+      "phase_56j_checked_source_id": "source-56j-manatee-eia923-plant-60014",
+      "phase_56j_checked_date": "2026-07-25",
+      "phase_56j_prior_closure_status": "Open",
+      "phase_56j_current_closure_status": "Partially Closed",
+      "phase_56j_acquisition_result": "The EIA-923 energy-storage worksheet identifies plant 60014 as Manatee Solar Energy Center. Its battery row reports January-May 2026 monthly charging-energy quantities of 7,082, 7,188, 10,333, 11,364, and 9,375 MWh; gross generation of 5,755, 4,778, 9,005, 9,439, and 8,751 MWh; and reported net generation of -1,327, -2,140, -1,328, -1,924, and -624 MWh.",
+      "phase_56j_remaining_gap": "Interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, revisions, and customer cost.",
+      "phase_56j_reopening_rule": "Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes plant 60014 interval dispatch or availability under a declared denominator."
+    },
+    {
+      "panel_id": "panel-56b-gateway-battery-capacity",
+      "portfolio": "infrastructure",
+      "entity_id": "eia-plant-63834",
+      "entity_name": "Gateway Energy Storage System",
+      "entity_type": "Battery-storage generating plant",
+      "indicator": "Operating battery-generator nameplate power capacity",
+      "unit": "Megawatts",
+      "denominator": "Operating battery generators assigned to EIA plant code 63834 in each final EIA-860 vintage",
+      "period": "Calendar years 2021-2023",
+      "geography": "California, United States",
+      "method": "Sum of nameplate capacity for operating battery generators in the final annual EIA-860 generator inventory",
+      "attribution": "U.S. Energy Information Administration; FTFN plant-code aggregation",
+      "record_status": "Published",
+      "signal_id": "signal-56b-gateway-capacity-panel",
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-eia-battery-capacity"
+      ],
+      "observations": [
+        {
+          "period": "2021",
+          "value": 250,
+          "label": "250 MW",
+          "source_id": "source-56b-eia860-2021"
+        },
+        {
+          "period": "2022",
+          "value": 250,
+          "label": "250 MW",
+          "source_id": "source-56b-eia860-2022"
+        },
+        {
+          "period": "2023",
+          "value": 250,
+          "label": "250 MW",
+          "source_id": "source-56b-eia860-2023"
+        }
+      ],
+      "reporting_breaks": [
+        "Plant and generator records can be revised in later EIA vintages; plant code 63834 is the stable identity key."
+      ],
+      "missing_data": [
+        "Track later EIA vintages, energy duration, availability, incidents, dispatch, revenue, and grid-service performance."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the repeated nameplate figure without treating it as availability, utilization, safety, duration, revenue, grid service, or reliability performance.",
+      "phase_56c_dossier_id": "dossier-56c-gateway-constraints",
+      "phase_56c_signal_id": "signal-56c-gateway-constraints",
+      "driver_constraint_source_ids": [
+        "source-56c-gateway-cpuc-audit-2025",
+        "source-56c-gateway-cpuc-audit-response-2025"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "EIA plant code 63834 remained at 250 MW across final 2021-2023 inventories."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "CPUC audited Gateway under GO 167-C and required responses to identified safety, maintenance, documentation, and work-management issues."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "The audit identified 16 findings requiring corrective action."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "Gateway stated that 14 findings were closed and two were targeted for closure by the end of October 2025."
+        }
+      ],
+      "driver_constraint_attribution": "CPUC attributes the findings; Gateway attributes closure status and risk characterization.",
+      "independent_validation": "The regulator file validates the response, not independent closure, durability, safety effect, availability, dispatch, or customer outcome.",
+      "alternative_explanations": [
+        "New GO 167-C implementation timing",
+        "Facility operating history",
+        "Maintenance scheduling",
+        "Dispatch conditions",
+        "EIA capacity-only denominator"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track CPUC closure evidence, later audits, availability, incidents, dispatch, duration, degradation, revenue, grid service, and reliability effects.",
+        "Add final investigation and closure evidence, restored capacity, availability, dispatch, duration, degradation, revenue, grid service, and reliability effects."
+      ],
+      "phase_56d_test_id": "test-56d-gateway-repeat-test",
+      "phase_56d_signal_id": "signal-56d-gateway-repeat-test",
+      "phase_56d_record_status": "Published",
+      "phase_56d_source_ids": [
+        "source-56d-gateway-cpuc-resolution-e5428-2025",
+        "source-56d-gateway-epa-bess-safety-2025"
+      ],
+      "tested_alternative_explanations": [
+        "Facility operating history",
+        "Maintenance scheduling",
+        "Dispatch conditions",
+        "New GO 167-C implementation timing"
+      ],
+      "phase_56d_later_observations": [
+        "CPUC recorded ongoing root-cause investigations and a partial return to service after the thermal event.",
+        "EPA recorded the May 2024 fire, seven days of flareups, and monitoring and work-plan requirements."
+      ],
+      "phase_56d_compatibility": "Same named asset and incident; the records do not expose a full-capacity availability denominator or compatible dispatch series.",
+      "phase_56d_result": "The later official record challenges any assumption that nameplate capacity represented uninterrupted operation.",
+      "phase_56d_validation_status": "Incident and partial-return status are independently attributable; full closure and performance remain unresolved.",
+      "phase_56f_coverage_id": "coverage-56f-gateway",
+      "phase_56f_closure_status": "Open",
+      "phase_56f_record_status": "In Review",
+      "phase_56f_selected_source_id": "source-56d-gateway-cpuc-resolution-e5428-2025",
+      "phase_56f_highest_value_missing_record": "Final investigation and full contracted-capacity restoration",
+      "phase_56f_remaining_gap": "Final investigation, full return to service, contracted-capacity restoration, availability, dispatch, duration, degradation, revenue, and reliability effects.",
+      "phase_56f_reopening_rule": "Reopen when CPUC, EPA, CAISO, SCE, or the operator publishes final findings or a full-capacity operating record.",
+      "phase_56g_acquisition_id": "acquisition-56g-gateway-investigation-restoration",
+      "phase_56g_checked_source_id": "source-56g-gateway-caiso-queue-2026",
+      "phase_56g_checked_date": "2026-07-24",
+      "phase_56g_prior_closure_status": "Open",
+      "phase_56g_current_closure_status": "Open",
+      "phase_56g_acquisition_result": "CAISO's current queue entry identifies Gateway project 1170 as completed, 250 MW, full capacity, with an executed interconnection agreement and April 22, 2025 current online date.",
+      "phase_56g_remaining_gap": "Final investigation, full return to service, contracted-capacity restoration, availability, dispatch, duration, degradation, revenue, and reliability effects.",
+      "phase_56g_reopening_rule": "Reopen when CPUC, EPA, CAISO, SCE, or the operator publishes final findings or a full-capacity operating record.",
+      "phase_56h_acquisition_id": "acquisition-56h-gateway-final-investigation-continuation",
+      "phase_56h_checked_source_id": "source-56h-gateway-cpuc-go167-catalog-2026",
+      "phase_56h_checked_date": "2026-07-24",
+      "phase_56h_prior_closure_status": "Open",
+      "phase_56h_current_closure_status": "Open",
+      "phase_56h_acquisition_result": "The current CPUC GO 167-C catalog continues to expose Gateway's June 2, 2025 audit report and facility response, but no later final incident finding or full-capacity restoration record is listed.",
+      "phase_56h_remaining_gap": "Final investigation, full return to service, contracted-capacity restoration, availability, dispatch, duration, degradation, revenue, and reliability effects.",
+      "phase_56h_reopening_rule": "Reopen when CPUC, EPA, CAISO, SCE, or the operator publishes final findings or a full-capacity operating record.",
+      "phase_56i_acquisition_id": "acquisition-56i-gateway-epa-investigation-continuation",
+      "phase_56i_checked_source_id": "source-56i-gateway-epa-site-profile-2026",
+      "phase_56i_checked_date": "2026-07-25",
+      "phase_56i_prior_closure_status": "Open",
+      "phase_56i_current_closure_status": "Open",
+      "phase_56i_acquisition_result": "EPA's current Gateway site profile says the root cause remains under investigation and that cleanup, environmental monitoring, battery handling, and progress reporting remain under agency oversight.",
+      "phase_56i_remaining_gap": "Final investigation, full return to service, contracted-capacity restoration, availability, dispatch, duration, degradation, revenue, and reliability effects.",
+      "phase_56i_reopening_rule": "Reopen when CPUC, EPA, CAISO, SCE, or the operator publishes final findings or a full-capacity operating record.",
+      "phase_56j_queue_lane": "Open rail",
+      "phase_56j_acquisition_order": null,
+      "phase_56j_named_next_record": "Final investigation and full contracted-capacity restoration",
+      "phase_56k_acquisition_id": "acquisition-56k-gateway-final-investigation-restoration-status",
+      "phase_56k_named_record": "Final investigation and full contracted-capacity restoration",
+      "phase_56k_checked_source_id": "source-56h-gateway-cpuc-go167-catalog-2026",
+      "phase_56k_checked_date": "2026-07-25",
+      "phase_56k_prior_closure_status": "Open",
+      "phase_56k_current_closure_status": "Open",
+      "phase_56k_acquisition_result": "The current CPUC catalog retains Gateway's June 2025 audit and response, while Resolution E-5428 continues to describe ongoing investigations and phased future module additions. No final incident finding or full contracted-capacity operating record is published on this rail.",
+      "phase_56k_decision": "Retain Open. The audit-response pair and phased restoration plan are relevant but do not satisfy the selected final-finding and full-restoration record.",
+      "phase_56k_remaining_gap": "Final investigation findings, corrective-action closure, restored contracted capacity, dispatch, availability, and customer or grid outcomes.",
+      "phase_56k_reopening_rule": "Reopen when CPUC, EPA, CAISO, SCE, or the operator publishes final findings or a full-capacity operating record."
+    },
+    {
+      "panel_id": "panel-56b-united-cancellations",
+      "portfolio": "mobility",
+      "entity_id": "dot-operating-carrier-united-airlines",
+      "entity_name": "United Airlines",
+      "entity_type": "Reporting operating air carrier",
+      "indicator": "Cancelled scheduled domestic flight operations",
+      "unit": "Percent of scheduled operations cancelled",
+      "denominator": "Scheduled domestic flight operations reported for United Airlines as an operating carrier",
+      "period": "Calendar years 2024 and 2025",
+      "geography": "United States domestic system",
+      "method": "DOT Air Travel Consumer Report Table 6C under 14 CFR Part 234",
+      "attribution": "Carrier-filed BTS data published by DOT OACP",
+      "record_status": "Published",
+      "signal_id": "signal-56b-united-cancellation-panel",
+      "source_ids": [
+        "source-56b-bts-atcr-full-year-2024",
+        "source-56b-dot-atcr-february-2026"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-air-travel-consumer"
+      ],
+      "observations": [
+        {
+          "period": "2024",
+          "value": 1.64,
+          "label": "12,478 of 760,451 scheduled operations; 1.64%",
+          "source_id": "source-56b-dot-atcr-february-2026"
+        },
+        {
+          "period": "2025",
+          "value": 0.82,
+          "label": "6,527 of 795,271 scheduled operations; 0.82%",
+          "source_id": "source-56b-dot-atcr-february-2026"
+        }
+      ],
+      "reporting_breaks": [
+        "Use only the operating-carrier row; do not mix it with the United Airlines Network marketing-carrier row."
+      ],
+      "missing_data": [
+        "Track later full-year reports, schedule mix, weather, airport exposure, completion, delays, complaints, accessibility, and revision notices."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the within-carrier change only. Do not reproduce the report's carrier ranking or infer safety, customer experience, causality, schedule quality, or network equivalence.",
+      "phase_56c_dossier_id": "dossier-56c-united-service-constraints",
+      "phase_56c_signal_id": "signal-56c-united-service-constraints",
+      "driver_constraint_source_ids": [
+        "source-56c-dot-atcr-2025-series",
+        "source-56c-dot-airline-customer-service-dashboard"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "United reported 12,478 cancellations among 760,451 scheduled operations in 2024."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "United publishes customer-service commitments for specified controllable cancellations and delays through DOT's dashboard."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "Schedule mix, airports, weather, maintenance, crews, network recovery, and marketing-versus-operating identity remain separate."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "United reported 6,527 cancellations among 795,271 scheduled operations in 2025, a 0.82% rate."
+        }
+      ],
+      "driver_constraint_attribution": "Carrier-filed operational data are published by DOT; commitments are carrier representations compiled by DOT.",
+      "independent_validation": "DOT validates the reporting rails, not a causal effect of commitments or universal delivery of remedies.",
+      "alternative_explanations": [
+        "Weather and airport exposure",
+        "Schedule and network mix",
+        "Maintenance and staffing",
+        "Air traffic constraints",
+        "Recovery decisions"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track 2026 full-year operations, delay causes, complaints, accessibility, schedule mix, airport exposure, commitment compliance, and revisions."
+      ],
+      "phase_56f_coverage_id": "coverage-56f-united-airlines",
+      "phase_56f_closure_status": "Partially Closed",
+      "phase_56f_record_status": "Published",
+      "phase_56f_selected_source_id": "source-56f-bts-may-2026-data",
+      "phase_56f_highest_value_missing_record": "2026 full-year operating denominator and cause-controlled service outcomes",
+      "phase_56f_remaining_gap": "2026 full-year operations, delay causes, route and airport controls, complaints, accessibility, commitment compliance, and revisions.",
+      "phase_56f_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables.",
+      "phase_56i_acquisition_id": "acquisition-56i-united-may2026-first-pass",
+      "phase_56i_checked_source_id": "source-56e-atcr-may-2026",
+      "phase_56i_checked_date": "2026-07-25",
+      "phase_56i_prior_closure_status": "Partially Closed",
+      "phase_56i_current_closure_status": "Partially Closed",
+      "phase_56i_acquisition_result": "DOT's May 2026 operating-carrier table records United Airlines on-time arrivals at 79.5 percent across 130 reported airports.",
+      "phase_56i_remaining_gap": "2026 full-year operations, delay causes, route and airport controls, complaints, accessibility, commitment compliance, and revisions.",
+      "phase_56i_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables.",
+      "phase_56j_queue_lane": "D — shared full-year carrier release gate",
+      "phase_56j_acquisition_order": 15,
+      "phase_56j_named_next_record": "2026 full-year operating denominator and cause-controlled outcomes"
+    },
+    {
+      "panel_id": "panel-56b-southwest-cancellations",
+      "portfolio": "mobility",
+      "entity_id": "dot-operating-carrier-southwest-airlines",
+      "entity_name": "Southwest Airlines",
+      "entity_type": "Reporting operating air carrier",
+      "indicator": "Cancelled scheduled domestic flight operations",
+      "unit": "Percent of scheduled operations cancelled",
+      "denominator": "Scheduled domestic flight operations reported for Southwest Airlines as an operating carrier",
+      "period": "Calendar years 2024 and 2025",
+      "geography": "United States domestic system",
+      "method": "DOT Air Travel Consumer Report Table 6C under 14 CFR Part 234",
+      "attribution": "Carrier-filed BTS data published by DOT OACP",
+      "record_status": "Published",
+      "signal_id": "signal-56b-southwest-cancellation-panel",
+      "source_ids": [
+        "source-56b-bts-atcr-full-year-2024",
+        "source-56b-dot-atcr-february-2026"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-air-travel-consumer"
+      ],
+      "observations": [
+        {
+          "period": "2024",
+          "value": 0.83,
+          "label": "11,772 of 1,419,419 scheduled operations; 0.83%",
+          "source_id": "source-56b-dot-atcr-february-2026"
+        },
+        {
+          "period": "2025",
+          "value": 0.85,
+          "label": "11,799 of 1,391,885 scheduled operations; 0.85%",
+          "source_id": "source-56b-dot-atcr-february-2026"
+        }
+      ],
+      "reporting_breaks": [
+        "Two annual observations do not establish a durable trend; future carrier structure and reporting rules can change."
+      ],
+      "missing_data": [
+        "Track later full-year reports, schedule mix, weather, airport exposure, completion, delays, complaints, accessibility, and revisions."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Describe the small two-point movement without calling it a durable trend or comparing rank. Schedule mix, weather, network structure, and operating conditions remain separate.",
+      "phase_56c_dossier_id": "dossier-56c-southwest-service-constraints",
+      "phase_56c_signal_id": "signal-56c-southwest-service-constraints",
+      "driver_constraint_source_ids": [
+        "source-56c-dot-atcr-2025-series",
+        "source-56c-dot-airline-customer-service-dashboard"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "Southwest reported 11,772 cancellations among 1,419,419 scheduled operations in 2024."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "Southwest publishes customer-service commitments for specified controllable cancellations and delays through DOT's dashboard."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "Network structure, schedule mix, weather, airport exposure, maintenance, crews, and operational recovery remain open."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "Southwest reported 11,799 cancellations among 1,391,885 scheduled operations in 2025, a 0.85% rate."
+        }
+      ],
+      "driver_constraint_attribution": "Carrier-filed operational data are published by DOT; commitments are carrier representations compiled by DOT.",
+      "independent_validation": "DOT validates the reporting rails, not the cause of the two-year movement or customer receipt of each remedy.",
+      "alternative_explanations": [
+        "Weather and airport exposure",
+        "Schedule and network structure",
+        "Maintenance and staffing",
+        "Air traffic constraints",
+        "Recovery decisions"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track 2026 full-year operations, delay causes, complaints, accessibility, schedule mix, airport exposure, commitment compliance, and revisions."
+      ],
+      "phase_56f_coverage_id": "coverage-56f-southwest-airlines",
+      "phase_56f_closure_status": "Partially Closed",
+      "phase_56f_record_status": "Published",
+      "phase_56f_selected_source_id": "source-56f-bts-may-2026-data",
+      "phase_56f_highest_value_missing_record": "2026 full-year operating denominator and cause-controlled service outcomes",
+      "phase_56f_remaining_gap": "2026 full-year operations, delay causes, route and airport controls, complaints, accessibility, commitment compliance, and revisions.",
+      "phase_56f_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables.",
+      "phase_56i_acquisition_id": "acquisition-56i-southwest-may2026-first-pass",
+      "phase_56i_checked_source_id": "source-56e-atcr-may-2026",
+      "phase_56i_checked_date": "2026-07-25",
+      "phase_56i_prior_closure_status": "Partially Closed",
+      "phase_56i_current_closure_status": "Partially Closed",
+      "phase_56i_acquisition_result": "DOT's May 2026 operating-carrier table records Southwest Airlines on-time arrivals at 71.9 percent across 108 reported airports.",
+      "phase_56i_remaining_gap": "2026 full-year operations, delay causes, route and airport controls, complaints, accessibility, commitment compliance, and revisions.",
+      "phase_56i_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables.",
+      "phase_56j_queue_lane": "D — shared full-year carrier release gate",
+      "phase_56j_acquisition_order": 16,
+      "phase_56j_named_next_record": "2026 full-year operating denominator and cause-controlled outcomes"
+    },
+    {
+      "panel_id": "panel-56b-delta-cancellations",
+      "portfolio": "mobility",
+      "entity_id": "dot-operating-carrier-delta-air-lines",
+      "entity_name": "Delta Air Lines",
+      "entity_type": "Reporting operating air carrier",
+      "indicator": "Cancelled scheduled domestic flight operations",
+      "unit": "Percent of scheduled operations cancelled",
+      "denominator": "Scheduled domestic flight operations reported for Delta Air Lines as an operating carrier",
+      "period": "Calendar years 2024 and 2025",
+      "geography": "United States domestic system",
+      "method": "DOT Air Travel Consumer Report Table 6C under 14 CFR Part 234",
+      "attribution": "Carrier-filed BTS data published by DOT OACP",
+      "record_status": "Published",
+      "signal_id": "signal-56b-delta-cancellation-panel",
+      "source_ids": [
+        "source-56b-bts-atcr-full-year-2024",
+        "source-56b-dot-atcr-february-2026"
+      ],
+      "national_context_signal_ids": [
+        "signal-56a-air-travel-consumer"
+      ],
+      "observations": [
+        {
+          "period": "2024",
+          "value": 0.91,
+          "label": "9,147 of 1,009,194 scheduled operations; 0.91%",
+          "source_id": "source-56b-dot-atcr-february-2026"
+        },
+        {
+          "period": "2025",
+          "value": 1.08,
+          "label": "11,114 of 1,026,332 scheduled operations; 1.08%",
+          "source_id": "source-56b-dot-atcr-february-2026"
+        }
+      ],
+      "reporting_breaks": [
+        "Use only the operating-carrier row; do not mix it with the Delta Air Lines Network marketing-carrier row."
+      ],
+      "missing_data": [
+        "Track later full-year reports, schedule mix, weather, airport exposure, completion, delays, complaints, accessibility, and revisions."
+      ],
+      "merger_exit_notes": [
+        "No entity merger or exit is applied inside this panel; later changes must create an explicit break or identity update."
+      ],
+      "comparison_boundary": "Publish the within-carrier movement only. Do not reproduce a rank or infer safety, service quality, causality, network equivalence, or a durable trend from two points.",
+      "phase_56c_dossier_id": "dossier-56c-delta-service-constraints",
+      "phase_56c_signal_id": "signal-56c-delta-service-constraints",
+      "driver_constraint_source_ids": [
+        "source-56c-dot-atcr-2025-series",
+        "source-56c-dot-airline-customer-service-dashboard"
+      ],
+      "temporal_order": [
+        {
+          "stage": "Baseline condition",
+          "statement": "Delta reported 9,147 cancellations among 1,009,194 scheduled operations in 2024."
+        },
+        {
+          "stage": "Named intervention or input",
+          "statement": "Delta publishes customer-service commitments for specified controllable cancellations and delays through DOT's dashboard."
+        },
+        {
+          "stage": "Constraint",
+          "statement": "Schedule mix, branded network identity, airports, weather, maintenance, crews, and recovery conditions remain separate."
+        },
+        {
+          "stage": "Observed outcome or later boundary",
+          "statement": "Delta reported 11,114 cancellations among 1,026,332 scheduled operations in 2025, a 1.08% rate."
+        }
+      ],
+      "driver_constraint_attribution": "Carrier-filed operational data are published by DOT; commitments are carrier representations compiled by DOT.",
+      "independent_validation": "DOT validates the reporting rails, not a causal effect, a service-quality score, or universal delivery of remedies.",
+      "alternative_explanations": [
+        "Weather and airport exposure",
+        "Schedule and branded-network mix",
+        "Maintenance and staffing",
+        "Air traffic constraints",
+        "Recovery decisions"
+      ],
+      "causal_boundary": "Temporal order and association may be described; the record does not establish causation.",
+      "next_records": [
+        "Track 2026 full-year operations, delay causes, complaints, accessibility, schedule mix, airport exposure, commitment compliance, and revisions."
+      ],
+      "phase_56f_coverage_id": "coverage-56f-delta-air-lines",
+      "phase_56f_closure_status": "Partially Closed",
+      "phase_56f_record_status": "Published",
+      "phase_56f_selected_source_id": "source-56f-bts-may-2026-data",
+      "phase_56f_highest_value_missing_record": "2026 full-year operating denominator and cause-controlled service outcomes",
+      "phase_56f_remaining_gap": "2026 full-year operations, delay causes, route and airport controls, complaints, accessibility, commitment compliance, and revisions.",
+      "phase_56f_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables.",
+      "phase_56i_acquisition_id": "acquisition-56i-delta-may2026-first-pass",
+      "phase_56i_checked_source_id": "source-56e-atcr-may-2026",
+      "phase_56i_checked_date": "2026-07-25",
+      "phase_56i_prior_closure_status": "Partially Closed",
+      "phase_56i_current_closure_status": "Partially Closed",
+      "phase_56i_acquisition_result": "DOT's May 2026 operating-carrier table records Delta Air Lines on-time arrivals at 81.0 percent across 140 reported airports.",
+      "phase_56i_remaining_gap": "2026 full-year operations, delay causes, route and airport controls, complaints, accessibility, commitment compliance, and revisions.",
+      "phase_56i_reopening_rule": "Reopen after BTS publishes December 2026 data and DOT issues the full-year 2026 reporting tables.",
+      "phase_56j_queue_lane": "D — shared full-year carrier release gate",
+      "phase_56j_acquisition_order": 17,
+      "phase_56j_named_next_record": "2026 full-year operating denominator and cause-controlled outcomes"
+    }
+  ],
+  "phase_56c_deepened_date": "2026-07-24",
+  "phase_56c_dossier_count": 12,
+  "phase_56d_deepened_date": "2026-07-24",
+  "phase_56d_test_count": 12,
+  "phase_56f_coverage_ledger": "phase-56f-cross-cohort-coverage.json",
+  "phase_56g_acquisition_ledger": "phase-56g-operating-record-acquisition.json",
+  "phase_56h_acquisition_ledger": "phase-56h-acquisition-and-deepening.json",
+  "phase_56i_acquisition_ledger": "phase-56i-remaining-rails-first-pass.json",
+  "phase_56j_acquisition_ledger": "phase-56j-evidence-value-continuation.json",
+  "phase_56k_acquisition_ledger": "phase-56k-exact-record-continuation.json",
+  "phase_56l_acquisition_ledger": "phase-56l-realized-outcome-continuation.json",
+  "phase_56m_continuation_ledger": "phase-56m-federal-remediation-outcomes.json",
+  "phase_56n_continuation_ledger": "phase-56n-verified-remediation-outcomes.json",
+  "phase_56o_continuation_ledger": "phase-56o-cross-agency-remediation.json",
+  "phase_56p_continuation_ledger": "phase-56p-action-recommendation-ledger.json",
+  "phase_56q_continuation_ledger": "phase-56q-recommendation-identity-crosswalk.json",
+  "phase_56r_continuation_ledger": "phase-56r-implementation-artifact-milestone-ledger.json",
+  "phase_56s_scope_audit_ledger": "phase-56s-artifact-scope-audit-missing-document-register.json",
+  "phase_56t_acquisition_sufficiency_ledger": "phase-56t-official-response-acquisition-artifact-sufficiency-queue.json",
+  "phase_56u_exact_artifact_recovery_ledger": "phase-56u-custodian-exact-artifact-recovery-batch-one.json",
+  "phase_56v_supporting_artifact_decomposition_ledger": "phase-56v-second-order-recovery-leads-supporting-artifacts.json",
+  "phase_56w_named_record_retrieval_ledger": "phase-56w-named-record-retrieval-cross-lane-expansion.json"
+}

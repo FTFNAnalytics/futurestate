@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/v03-editorial-program.json";
+import cohorts from "../../../data/phase-68-compatible-series-outcome-cohorts.json";
+import measurements from "../../../data/phase-69-measurement-observation-break-registry.json";
+import panels from "../../../data/phase-71-longitudinal-panel-outcome-comparison-registry.json";
+
+export function getStaticPaths() {
+  return program.outcomes.map((record) => ({ params: { slug: record.slug }, props: { fileId: record.file_id } }));
+}
+const { fileId } = Astro.props;
+const editorial = program.outcomes.find((item) => item.file_id === fileId)!;
+const cohort = cohorts.cohort_records.find((item) => item.file_id === fileId)!;
+const specs = measurements.measurement_specifications.filter((item) => item.file_id === fileId);
+const outcomePanels = panels.longitudinal_panel_shells.filter((item) => item.file_id === fileId);
+const docket = panels.outcome_claim_dockets.find((item) => item.file_id === fileId)!;
+const embargo = panels.comparison_embargo_registers.find((item) => item.file_id === fileId)!;
+const observationCount = specs.reduce((sum, item) => sum + item.current_observation_count, 0);
+const seriesPointCount = outcomePanels.reduce((sum, item) => sum + item.series_point_ids.length, 0);
+---
+
+<BaseLayout title={`${editorial.title} | Outcomes observatory`} description={editorial.outcome_question}>
+  <ReviewHeader eyebrow="Outcomes observatory" title={editorial.title} summary={editorial.outcome_question} phase={106} />
+  <section class="page-section"><div class="metric-strip" aria-label="Current measurement state"><div class="metric"><strong>{observationCount}</strong><span>accepted observations</span></div><div class="metric"><strong>{seriesPointCount}</strong><span>series points</span></div><div class="metric"><strong>{docket.claim_decision}</strong><span>claim decision</span></div><div class="metric"><strong>{embargo.comparison_state}</strong><span>comparison state</span></div></div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Cohort admission</div><h2>{cohort.admission_state}</h2><p>{cohort.admission_reason}</p><div class="meta-row"><MetaPill label={cohort.admission_decision} tone="review" /><MetaPill label={`${specs.length} measurement contracts`} /></div></div><article class="record-card record-card--featured"><div class="eyebrow">Exact next artifact</div><p>{cohort.exact_next_admission_artifact}</p><p class="card-note">No automatic admission or outcome publication is allowed.</p></article></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Measurement contracts</div><h2>What has to be counted—and against what.</h2></div></div><div class="signal-grid">{specs.map((spec) => <article class="record-card"><div class="meta-row"><MetaPill label={spec.specification_state} /><MetaPill label={spec.unit_contract} /></div><h3>{spec.measure_label}</h3><p><strong>Numerator:</strong> {spec.numerator_contract}</p><p><strong>Denominator:</strong> {spec.denominator_contract}</p><p><strong>Period:</strong> {spec.period_contract}</p><p class="card-note">Next: {spec.exact_next_artifact}</p></article>)}</div></section>
+  <section class="page-section review-columns"><article><div class="eyebrow">Outcome boundary</div><h2>{docket.claim_decision}</h2><p>{docket.uncertainty_statement}</p><p>{docket.attribution_statement}</p></article><article><div class="eyebrow">Comparison boundary</div><h2>{embargo.comparison_state}</h2><p>{embargo.embargo_reason}</p><p class="card-note">No score or ranking is created by this page.</p></article></section>
+  <section class="page-section"><a class="inline-link" href={`/review/casebooks/${editorial.slug}/`}>Return to the narrative casebook</a></section>
+</BaseLayout>

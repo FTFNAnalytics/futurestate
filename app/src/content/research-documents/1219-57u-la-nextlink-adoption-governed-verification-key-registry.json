@@ -1,0 +1,71 @@
+{
+  "id": "research-doc-57u-la-nextlink-adoption-governed-verification-key-registry",
+  "collection_id": "research-collection-governed-keys-transparency-multi-origin-incidents-recovery-objectives-2026",
+  "title": "Louisiana Nextlink adoption receives a role-separated verification-key registry",
+  "slug": "57u-la-nextlink-adoption-governed-verification-key-registry",
+  "record_status": "Published",
+  "publisher": "National Telecommunications and Information Administration",
+  "publication_date": "2026-08-09",
+  "document_type": "Data Release",
+  "summary": "A contract-specific registry identifies staged, active, rotated, expired, and revoked keys; permits exactly one active key; binds that key to the current release index; and separates signing, custody, release authorization, and incident command. Denominator: One contract-specific key-registry schema, twenty adversarial cases, six bounded valid routes, fourteen explicit rejections, and zero production keys activated or signatures issued.",
+  "key_findings": [
+    "Evidence stage: Governed verification-key registry controls.",
+    "Finding: A contract-specific registry identifies staged, active, rotated, expired, and revoked keys; permits exactly one active key; binds that key to the current release index; and separates signing, custody, release authorization, and incident command.",
+    "Denominator: One contract-specific key-registry schema, twenty adversarial cases, six bounded valid routes, fourteen explicit rejections, and zero production keys activated or signatures issued.",
+    "Boundary: Fixture keys are nonproduction identities and contain no production key material.",
+    "Boundary: Unknown, expired, revoked, staged, overlapping, ambiguous, downgraded, rewritten, or role-conflicted keys fail closed.",
+    "Boundary: A trusted key proves bounded signer identity and integrity, not evidence truth, acceptance, publication, or operating outcome.",
+    "Next action: Expose a Louisiana Nextlink adoption trusted-key view only after one active key and four separated authority roles verify."
+  ],
+  "why_it_matters": "The record makes key governance, release-history transparency, multi-origin agreement, incident containment, and measured recovery independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Binds the exact Phase 57T release index to one governed active key and separated authority roles.",
+    "Verifies current and prior indexes through append-only transparency proofs across three origins.",
+    "Contains integrity incidents and measures RPO/RTO while reconstructed state remains inactive."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Fixture keys are nonproduction identities and contain no production key material.",
+    "Unknown, expired, revoked, staged, overlapping, ambiguous, downgraded, rewritten, or role-conflicted keys fail closed.",
+    "A trusted key proves bounded signer identity and integrity, not evidence truth, acceptance, publication, or operating outcome.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-montana-bead-final-proposal-january-2026",
+  "supporting_source_ids": [
+    "source-57g-montana-bead-final-proposal-january-2026",
+    "source-57g-montana-deployment-projects-csv",
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-subgrantees-csv",
+    "source-57g-montana-cai-csv",
+    "source-57f-montana-bead-resource-index-august-2026",
+    "source-57f-montana-leo-quarterly-instructions-june-2026",
+    "source-57e-montana-quarterly-report-instructions-june-2026",
+    "source-57e-montana-project-monitoring-guide-june-2026",
+    "source-57b-louisiana-nextlink-first-bead-tower",
+    "source-57b-louisiana-starlink-bead-agreement"
+  ],
+  "supporting_official_urls": [
+    "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+  ],
+  "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+  "local_capture_path": "/downloads/governed-keys-transparency-multi-origin-incidents-recovery-objectives-2026/official-links/13-phase57u-record.txt",
+  "archive_member": "official-links/13-phase57u-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}

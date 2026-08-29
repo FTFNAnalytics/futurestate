@@ -1,0 +1,239 @@
+{
+  "id": "dependency-map-frontier-system-constraint-atlas",
+  "title": "Frontier-System Constraint Atlas",
+  "slug": "frontier-system-constraint-atlas",
+  "summary": "A five-corridor qualitative map connecting frontier demand and authorization to the power, water, workforce, permitting, construction, acceptance, qualification, and outcome gates that local receiving systems must clear.",
+  "map_type": "Local Constraint Map",
+  "record_status": "Published",
+  "primary_topic": "Chips and Compute",
+  "framework_layers": [
+    "Resource Foundations",
+    "Enabling Infrastructure",
+    "Frontier Domains",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Power",
+    "Water",
+    "Labor",
+    "Permitting",
+    "Infrastructure",
+    "Capital",
+    "Supply Chain",
+    "Public Trust",
+    "Data Quality"
+  ],
+  "map_question": "Where do five evidence-dense frontier systems encounter shared local conversion constraints, and what exact downstream records would advance them?",
+  "interpretation_boundary": "The map compares evidence stages and constraint classes. It does not rank systems, normalize unlike measures, establish readiness, or imply technological, economic, environmental, or institutional equivalence.",
+  "source_ids": [],
+  "signal_ids": [
+    "signal-srp-e67-large-load-service-conditions",
+    "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-golden-mars-transmission-conditional-approval",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-rhyolite-ridge-water-permit-preoperation-gates",
+    "signal-space-florida-lc46-site-license-renewal",
+    "signal-ksc-causeway-bridge-operational",
+    "signal-toronto-2025-development-pipeline-delivery-gap",
+    "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-northern-virginia-data-center-corridor",
+    "local-nevada-lithium-processing-corridor",
+    "local-florida-space-coast-launch-corridor",
+    "local-ontario-real-estate"
+  ],
+  "evidence_gap_ids": [
+    "gap-001",
+    "gap-002",
+    "gap-003",
+    "gap-004",
+    "gap-005",
+    "gap-007",
+    "gap-008",
+    "gap-011",
+    "gap-012",
+    "gap-013",
+    "gap-016"
+  ],
+  "nodes": [
+    {
+      "id": "node-southwest-chips",
+      "label": "Southwest chips",
+      "node_type": "Local System",
+      "record_id": "local-us-southwest-chip-corridor",
+      "note": "Physical fab progress remains dependent on named power, water, workforce, equipment, qualification, and production evidence."
+    },
+    {
+      "id": "node-northern-virginia",
+      "label": "Northern Virginia compute",
+      "node_type": "Local System",
+      "record_id": "local-northern-virginia-data-center-corridor",
+      "note": "Forecast demand must pass contracts, grid construction, land, permits, water, energization, compliance, and measured effects."
+    },
+    {
+      "id": "node-nevada-lithium",
+      "label": "Nevada lithium",
+      "node_type": "Local System",
+      "record_id": "local-nevada-lithium-processing-corridor",
+      "note": "Authorized and financed projects remain upstream of construction, commissioning, qualified material, sales, and sustained performance."
+    },
+    {
+      "id": "node-space-coast",
+      "label": "Florida Space Coast",
+      "node_type": "Local System",
+      "record_id": "local-florida-space-coast-launch-corridor",
+      "note": "Planning and site decisions must pass capital delivery, operator authority, service, mission use, and repeat performance."
+    },
+    {
+      "id": "node-ontario-housing",
+      "label": "Ontario housing",
+      "node_type": "Local System",
+      "record_id": "local-ontario-real-estate",
+      "note": "Targets and approvals must pass legal enactment, servicing, permits, starts, completions, and occupancy."
+    },
+    {
+      "id": "node-power",
+      "label": "Accepted power and utility service",
+      "node_type": "Constraint",
+      "note": "Requires project-specific agreements, completed assets, energization, metering, cost, and reliability."
+    },
+    {
+      "id": "node-water",
+      "label": "Accepted water and environmental capacity",
+      "node_type": "Constraint",
+      "note": "Requires allocation, built infrastructure, actual use, treatment, monitoring, compliance, and impact evidence."
+    },
+    {
+      "id": "node-authority",
+      "label": "Authority and public acceptance",
+      "node_type": "Constraint",
+      "note": "Requires final legal instruments, condition satisfaction, operating authority, and locally legible effects."
+    },
+    {
+      "id": "node-delivery",
+      "label": "Construction, acceptance, and qualification",
+      "node_type": "Constraint",
+      "note": "The common downstream hinge between an authorized project and an accepted operating asset."
+    },
+    {
+      "id": "node-outcomes",
+      "label": "Compatible measured outcomes",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-016",
+      "note": "Requires stable identity, stage, period, definition, denominator, method, and acceptance before comparison."
+    },
+    {
+      "id": "node-project-conversion-registry",
+      "label": "Five named local project files",
+      "node_type": "Evidence Gap",
+      "note": "Phase 61 binds TSMC Arizona, Toronto application 24 254930, Northern Virginia large-load delivery, the Space Coast authority stack, and Nevada lithium to exact downstream artifacts, dates or triggers, and stop rules."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-southwest-chips",
+      "to": "node-power",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "Utility territory, rate, and system-plan evidence exists; named accepted capacity remains incomplete."
+    },
+    {
+      "from": "node-southwest-chips",
+      "to": "node-water",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "A named wastewater agreement exists while accepted infrastructure and measured use remain open."
+    },
+    {
+      "from": "node-northern-virginia",
+      "to": "node-power",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "Forecast, rate, and transmission records are strong; customer service and energization remain project-specific gates."
+    },
+    {
+      "from": "node-northern-virginia",
+      "to": "node-authority",
+      "relationship": "Constrained By",
+      "confidence": "Partial",
+      "note": "Local standards and permits expose authority layers while final policy and operating compliance remain open."
+    },
+    {
+      "from": "node-nevada-lithium",
+      "to": "node-water",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "Water and environmental permits define obligations without establishing compliant operation."
+    },
+    {
+      "from": "node-nevada-lithium",
+      "to": "node-delivery",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Construction, commissioning, product qualification, customer acceptance, and sustained output remain incomplete."
+    },
+    {
+      "from": "node-space-coast",
+      "to": "node-authority",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "Site, environmental, and operator authority are separate stages tied to named facilities and missions."
+    },
+    {
+      "from": "node-space-coast",
+      "to": "node-delivery",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "One shared asset is operational while many planned projects and services remain upstream of acceptance and use."
+    },
+    {
+      "from": "node-ontario-housing",
+      "to": "node-authority",
+      "relationship": "Constrained By",
+      "confidence": "Supported",
+      "note": "The selected project exposes the distinction between recommendation, Council action, enactment, and satisfied conditions."
+    },
+    {
+      "from": "node-ontario-housing",
+      "to": "node-delivery",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "The selected application still needs a matched permit, start, completion, and occupancy trail."
+    },
+    {
+      "from": "node-delivery",
+      "to": "node-outcomes",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Accepted assets and compatible repeated results are prerequisites for cross-system outcome interpretation."
+    },
+    {
+      "from": "node-project-conversion-registry",
+      "to": "node-delivery",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "Named files make the next delivery artifact inspectable without advancing a project beyond its evidence."
+    }
+  ],
+  "what_this_map_supports": [
+    "Five evidence-dense local systems share recurring receiving-system and downstream delivery gates.",
+    "Project-level power, water, authority, construction, acceptance, and qualification records are more useful than another upstream announcement.",
+    "The same evidence-stage vocabulary can improve reader navigation across unlike sectors."
+    ,"Phase 61 adds five named local project files with exact artifacts, dates or reopening triggers, and stop rules."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not rank local systems or create a readiness, performance, risk, or value score.",
+    "It does not treat unlike legal instruments, projects, technologies, units, or outcomes as equivalent.",
+    "It does not establish spare capacity, project viability, accepted operation, causality, or local benefit."
+  ],
+  "next_records_needed": [
+    "Named service agreements, completed utility assets, energization, metered use, and reliability.",
+    "Water allocation, built infrastructure, actual use, treatment, compliance, and impact records.",
+    "Construction completion, inspection, acceptance, commissioning, qualification, and operating evidence.",
+    "Matched project or facility outcomes with stable identity, period, denominator, method, and acceptance."
+  ]
+}

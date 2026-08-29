@@ -2,9 +2,9 @@
   "id": "dependency-map-post-quantum-standards-are-not-migration",
   "title": "Post-quantum standards are not migration",
   "slug": "post-quantum-standards-are-not-migration",
-  "summary": "A qualitative technology-readiness map showing how NIST post-quantum cryptography standards create a migration clock, while institution-level implementation evidence remains unresolved.",
+  "summary": "A qualitative technology-readiness map built from Published NIST standards and preliminary PIV specification records, showing how post-quantum cryptography becomes migration work while institution-level implementation remains unresolved.",
   "map_type": "Technology Readiness Map",
-  "record_status": "In Review",
+  "record_status": "Published",
   "primary_topic": "Quantum",
   "framework_layers": [
     "Enabling Infrastructure",
@@ -19,12 +19,18 @@
     "Interpretation"
   ],
   "map_question": "How do post-quantum cryptography standards become operational migration work, and where does FTFN still lack implementation evidence?",
-  "interpretation_boundary": "This map shows that standards progress can create a security migration clock. It does not prove that any institution, vendor, sector, or local system has completed post-quantum migration.",
+  "interpretation_boundary": "This map connects final PQC standards, federal direction, implementation requirements, and a preliminary credential-specification artifact. It does not prove that an agency, contractor, vendor, critical-infrastructure operator, or local system has completed post-quantum migration.",
   "source_ids": [
-    "source-nist-pqc"
+    "source-nist-pqc",
+    "source-white-house-eo-14412-pqc-migration",
+    "source-omb-m-26-15-pqc-migration",
+    "source-nist-piv-pqc-working-drafts-2026",
+    "source-nist-hqc-selection-2025"
   ],
   "signal_ids": [
-    "signal-sample-007"
+    "signal-sample-007",
+    "signal-nist-piv-pqc-working-drafts",
+    "signal-nist-hqc-backup-algorithm-selection"
   ],
   "technology_ids": [
     "technology-post-quantum-cryptography"
@@ -53,7 +59,35 @@
       "label": "NIST PQC standards signal",
       "node_type": "Signal",
       "record_id": "signal-sample-007",
-      "note": "An in-review security signal framing PQC as near-term migration work rather than distant theory."
+      "note": "A Published security signal framing PQC as near-term migration work rather than distant theory."
+    },
+    {
+      "id": "node-pqc-executive-order-source",
+      "label": "Executive Order 14412",
+      "node_type": "Source",
+      "record_id": "source-white-house-eo-14412-pqc-migration",
+      "note": "A Tier 1 directive establishing federal leadership, system-transition, pilot, guidance, and procurement deadlines."
+    },
+    {
+      "id": "node-pqc-omb-source",
+      "label": "OMB M-26-15",
+      "node_type": "Source",
+      "record_id": "source-omb-m-26-15-pqc-migration",
+      "note": "A Tier 1 implementation memorandum requiring agency plans, risk prioritization, modernization, and vendor-readiness work."
+    },
+    {
+      "id": "node-piv-pqc-signal",
+      "label": "PIV post-quantum working drafts",
+      "node_type": "Signal",
+      "record_id": "signal-nist-piv-pqc-working-drafts",
+      "note": "A Published preliminary specification artifact that proposes ML-DSA and ML-KEM support for federal identity credentials without claiming a final requirement or deployed capability."
+    },
+    {
+      "id": "node-hqc-selection",
+      "label": "HQC backup-algorithm selection",
+      "node_type": "Signal",
+      "record_id": "signal-nist-hqc-backup-algorithm-selection",
+      "note": "A Published selection-stage record that adds mathematical diversity upstream of a draft and final standard."
     },
     {
       "id": "node-pqc-technology",
@@ -79,7 +113,7 @@
       "label": "Institution-level migration evidence",
       "node_type": "Evidence Gap",
       "record_id": "gap-009",
-      "note": "FTFN still needs procurement, inventory, vendor-readiness, and implementation evidence before stronger migration claims."
+      "note": "FTFN now has federal requirements and deadlines but still needs agency inventories, plans, procurement records, vendor readiness, and completed milestones."
     }
   ],
   "links": [
@@ -95,7 +129,7 @@
       "to": "node-nist-pqc-source",
       "relationship": "Evidenced By",
       "confidence": "Supported",
-      "note": "The in-review signal cites NIST PQC as its source."
+      "note": "The Published standards signal cites NIST PQC as its source."
     },
     {
       "from": "node-pqc-signal",
@@ -103,6 +137,48 @@
       "relationship": "Related Technology",
       "confidence": "Supported",
       "note": "The signal and technology profile share the same primary source and topic context."
+    },
+    {
+      "from": "node-piv-pqc-signal",
+      "to": "node-pqc-executive-order-source",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "The Published PIV record cites Executive Order 14412 as part of the federal policy context for credential migration."
+    },
+    {
+      "from": "node-piv-pqc-signal",
+      "to": "node-pqc-omb-source",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "The Published PIV record cites OMB M-26-15 as part of the federal planning, modernization, and vendor-readiness context."
+    },
+    {
+      "from": "node-piv-pqc-signal",
+      "to": "node-pqc-technology",
+      "relationship": "Related Technology",
+      "confidence": "Supported",
+      "note": "The working drafts translate NIST-standardized algorithms into proposed credential data models, interfaces, and migration behavior."
+    },
+    {
+      "from": "node-piv-pqc-signal",
+      "to": "node-institution-migration-gap",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "The preliminary specification narrows one implementation layer but does not supply final requirements, validated products, completed pilots, issued credentials, or system-transition evidence."
+    },
+    {
+      "from": "node-hqc-selection",
+      "to": "node-pqc-technology",
+      "relationship": "Related Technology",
+      "confidence": "Supported",
+      "note": "HQC is a selected backup key-encapsulation algorithm based on different mathematics from ML-KEM."
+    },
+    {
+      "from": "node-hqc-selection",
+      "to": "node-institution-migration-gap",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "Algorithm selection strengthens the standards-diversity trail but does not supply a final standard, product support, procurement, or migration evidence."
     },
     {
       "from": "node-pqc-technology",
@@ -128,17 +204,21 @@
   ],
   "what_this_map_supports": [
     "FTFN can distinguish standards progress from operational migration progress.",
-    "FTFN can show how a standards source, a security signal, a technology profile, and an evidence gap fit together.",
+    "FTFN can show how standards, executive direction, OMB implementation requirements, security signals, a technology profile, and an evidence gap fit together.",
+    "Federal direction, implementation requirements, and preliminary PIV specifications expose a dated migration and standards stack.",
+    "The HQC selection adds a bounded standards-diversity milestone without changing the current ML-KEM migration baseline.",
+    "The PIV working drafts make credential data models and interfaces inspectable while remaining upstream of formal standards and deployment.",
     "Post-quantum cryptography can be tracked as infrastructure migration work without numeric scoring."
   ],
   "what_this_map_does_not_prove": [
     "It does not prove that any institution has completed post-quantum migration.",
-    "It does not prove vendor readiness, procurement compliance, cryptographic inventory completeness, or critical-infrastructure execution.",
+    "It does not prove agency plan acceptance, final PIV requirements, validated products, vendor readiness, procurement compliance, cryptographic inventory completeness, migrated systems, or critical-infrastructure execution.",
     "It does not rank quantum risk or create a 42/59 score."
   ],
   "next_records_needed": [
-    "sector-specific PQC migration guidance from an official source.",
-    "procurement or compliance records that require PQC migration planning.",
+    "the first disclosed agency migration plan or progress report.",
+    "proposed and final Federal Acquisition Regulation records and contract clauses.",
+    "NIST pilot results and CISA critical-infrastructure or cryptographic bill-of-materials guidance.",
     "vendor-readiness evidence tied to specific software, hardware, or service categories.",
     "institution-level implementation plans or audit-ready migration milestones."
   ]

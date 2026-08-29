@@ -1,0 +1,77 @@
+{
+  "id": "research-doc-57i-hanford-thirty-six-pair-validator-rejections",
+  "collection_id": "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
+  "title": "The Hanford validator rejects all thirty-six direct numeric pair joins",
+  "slug": "57i-hanford-thirty-six-pair-validator-rejections",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy, Office of Environmental Management",
+  "publication_date": "2026-08-03",
+  "document_type": "Data Release",
+  "summary": "Every candidate pair fails at least one required compatibility field; no direct numeric join is accepted. Denominator: Thirty-six unordered observation pairs and eleven required validator fields.",
+  "key_findings": [
+    "Evidence stage: Compatible-observation validation.",
+    "Finding: Every candidate pair fails at least one required compatibility field; no direct numeric join is accepted.",
+    "Denominator: Thirty-six unordered observation pairs and eleven required validator fields.",
+    "Boundary: Same unit is insufficient.",
+    "Boundary: Same stage is insufficient.",
+    "Boundary: Different authorities and dispositions remain explicit.",
+    "Next action: Re-evaluate only when every required compatibility field is present and aligned."
+  ],
+  "why_it_matters": "The record makes change detection, schema migration, observation validation, and object-level source diffs reviewable before publication.",
+  "ftfn_relevance": [
+    "Turns provenance matrices into repeatable review rails.",
+    "Keeps rejected joins and unresolved identities explicit.",
+    "Separates bounded inserts from operating outcomes, implementation, acceptance, and closure."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Same unit is insufficient.",
+    "Same stage is insufficient.",
+    "Different authorities and dispositions remain explicit.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-hanford-dflaw-process-animation",
+  "supporting_source_ids": [
+    "source-57g-hanford-dflaw-process-animation",
+    "source-57g-hanford-ap106-feed-staging",
+    "source-57c-hanford-20-containers-2025",
+    "source-57e-doe-hanford-acceptable-glass-startup",
+    "source-57f-hanford-wtp-pmm-february-2026",
+    "source-57b-ecology-wtp-byproduct-response-comments",
+    "source-56x-hanford-first-ilaw-disposal-2026",
+    "source-57b-hanford-wtp-project-managers-may-2026",
+    "source-57f-doe-hanford-100k-gallons-may-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+    "https://www.energy.gov/em/articles/making-space-hanford-prepares-key-tank-waste-treatment-mission",
+    "https://www.energy.gov/em/articles/hanford-plant-completes-20-containers-immobilized-waste",
+    "https://www.energy.gov/em/articles/hanford-site-begins-solidifying-tank-waste-glass",
+    "https://pdw.hanford.gov/download/v2/AR-39756",
+    "https://apps.ecology.wa.gov/publications/documents/2605007.pdf",
+    "https://www.energy.gov/em/articles/hanford-disposes-first-batch-vitrified-tank-waste-marking-key-progress",
+    "https://pdw.hanford.gov/download/v2/AR-40646",
+    "https://www.energy.gov/em/articles/over-100000-gallons-hanford-tank-waste-turned-glass"
+  ],
+  "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+  "local_capture_path": "/downloads/versioned-registry-change-detection-bounded-observation-ingestion-2026/official-links/12-hanford-thirty-six-pair-validator-rejections.txt",
+  "archive_member": "official-links/12-hanford-thirty-six-pair-validator-rejections.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-03"
+}

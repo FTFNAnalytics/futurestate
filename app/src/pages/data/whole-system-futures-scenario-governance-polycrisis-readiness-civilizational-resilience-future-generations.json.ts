@@ -1,0 +1,5 @@
+import registry from "../../data/phase-101-whole-system-futures-scenario-governance-polycrisis-readiness-civilizational-resilience-future-generations-registry.json";
+export function GET() {
+  const records = [...registry.whole_system_scenario_assumption_boundary_driver_uncertainty_dossiers, ...registry.cross_domain_dependency_cascade_compound_risk_polycrisis_stress_test_ledgers, ...registry.preparedness_option_portfolio_continuity_recovery_transformation_registers, ...registry.civilizational_resilience_renewal_future_generations_stewardship_ledgers];
+  return new Response(JSON.stringify({ schema_version: registry.schema_version, dataset: "whole_system_futures_scenario_governance_polycrisis_readiness_civilizational_resilience_future_generations", generated_date: registry.effective_date, record_scope: "Published inactive scenario, polycrisis, readiness, recovery, resilience, renewal, and future-generations contracts. No forecast, probability, risk, capability, recovery, renewal, or future-generations decision is inferred.", count: records.length, records }, null, 2), { headers: { "Content-Type": "application/json; charset=utf-8" } });
+}

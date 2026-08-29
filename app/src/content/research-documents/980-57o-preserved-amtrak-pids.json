@@ -1,0 +1,65 @@
+{
+  "id": "research-doc-57o-preserved-amtrak-pids",
+  "collection_id": "research-collection-reviewer-authorization-receipt-integrity-publication-handoff-state-machines-2026",
+  "title": "Amtrak PIDS closeout remains In Review after authorization and receipt-integrity execution",
+  "slug": "57o-preserved-amtrak-pids",
+  "record_status": "In Review",
+  "publisher": "National Railroad Passenger Corporation",
+  "publication_date": "2026-08-09",
+  "document_type": "Technical Report",
+  "summary": "47 fixture-only workflow cases pass, but no actual packet, reviewer identity, signed receipt, or publication-review handoff exists. Denominator: One inherited hold, one role matrix, 30 integrity cases, 7 authorization cases, 10 handoff cases, zero actual receipts, and zero trigger events.",
+  "key_findings": [
+    "Evidence stage: Authorization, integrity, and handoff hold.",
+    "Finding: 47 fixture-only workflow cases pass, but no actual packet, reviewer identity, signed receipt, or publication-review handoff exists.",
+    "Denominator: One inherited hold, one role matrix, 30 integrity cases, 7 authorization cases, 10 handoff cases, zero actual receipts, and zero trigger events.",
+    "Boundary: Synthetic authorization and integrity passage is not evidence or eligibility.",
+    "Boundary: No fixture creates a reviewer identity, signed receipt, or publication decision.",
+    "Boundary: The inherited hold cannot close automatically.",
+    "Next action: Code-bearing official current asset register or closeout table"
+  ],
+  "why_it_matters": "The hold remains actionable while synthetic authorization and integrity results stay separate from an actual cited packet and named human decision.",
+  "ftfn_relevance": [
+    "Defines separate evidence-review, publication-review, and escalation roles across all nine contracts.",
+    "Tests every receipt template for completeness, reason-code compatibility, and signed citation and timestamp integrity.",
+    "Proves that only a complete accept receipt may enter a separate publication-review queue without automatic publication."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Synthetic authorization and integrity passage is not evidence or eligibility.",
+    "No fixture creates a reviewer identity, signed receipt, or publication decision.",
+    "The inherited hold cannot close automatically.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Mobility",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57f-amtrak-stations-alp-fy24-29",
+  "supporting_source_ids": [
+    "source-57f-amtrak-stations-alp-fy24-29",
+    "source-57b-amtrak-ada-progress-june-2026",
+    "source-57e-amtrak-accessibility-progress-june-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-ada-progress-report-june-2026.pdf",
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-accessibility-plan-feedback-process-canada-act-0626.pdf"
+  ],
+  "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+  "local_capture_path": "/downloads/reviewer-authorization-receipt-integrity-publication-handoff-state-machines-2026/official-links/21-preserved-amtrak-pids.txt",
+  "archive_member": "official-links/21-preserved-amtrak-pids.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}

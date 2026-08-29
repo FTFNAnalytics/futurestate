@@ -1,0 +1,146 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-70-observation-review-series-admission-registry.json";
+
+const reviewDockets = registry.observation_review_dockets;
+const admissionDockets = registry.series_admission_dockets;
+const cohorts = [...new Set(reviewDockets.map((record) => record.cohort_id))].sort();
+---
+
+<BaseLayout
+  title="Observation Review And Series Admission Registry | FTFN"
+  description="Thirty-two empty observation-review dockets, thirty-two empty revision-lineage registers, and eight not-ready series-admission dockets."
+>
+  <section class="page-section hero">
+    <div class="hero__copy">
+      <div class="eyebrow">FTFN / Human Review</div>
+      <h1 class="page-title">Review before acceptance. Admission after compatibility.</h1>
+      <p class="lede">
+        A complete Phase 69 intake can begin human review. It cannot accept a
+        value, issue a receipt, join a series, or admit a cohort automatically.
+      </p>
+      <div class="meta-row">
+        <MetaPill label="32 review dockets" tone="possibility" />
+        <MetaPill label="32 empty lineage registers" />
+        <MetaPill label="8 admission dockets" />
+        <MetaPill label="0 submissions" tone="review" />
+        <MetaPill label="0 accepted observations" tone="review" />
+        <MetaPill label="0 admitted series" tone="review" />
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="status-panel">
+      <article class="status-item">
+        <h2>Twelve review dimensions</h2>
+        <p>Identity, authority, provenance, period, numerator, denominator, method, acceptance, exceptions, revisions, breaks, receipt, and propagation.</p>
+      </article>
+      <article class="status-item">
+        <h2>Independent second review</h2>
+        <p>The first reviewer cannot self-authorize acceptance. Conflicts and recusals produce an explicit hold or adjudication.</p>
+      </article>
+      <article class="status-item">
+        <h2>Eight admission gates</h2>
+        <p>A reviewed observation set still requires compatible recurrence, measure, denominator, period, method, break, and propagation decisions.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section" data-review-registry>
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Review Dockets</div>
+        <h2>Search the empty observation-review desk.</h2>
+      </div>
+      <a class="inline-link" href="/briefings/observation-review-desk-001/">Read the review method</a>
+    </div>
+
+    <form class="filter-panel" id="review-filters">
+      <label class="filter-panel__search">
+        Search
+        <input type="search" name="search" placeholder="Entity, cohort, measure or docket" />
+      </label>
+      <label>
+        Cohort
+        <select name="cohort">
+          <option value="">All cohorts</option>
+          {cohorts.map((cohort) => <option value={cohort}>{cohort}</option>)}
+        </select>
+      </label>
+      <button class="filter-panel__reset" type="reset">Reset</button>
+    </form>
+
+    <div class="grid" id="review-records">
+      {reviewDockets.map((record) => (
+        <article
+          class="record-card"
+          data-review-record
+          data-cohort={record.cohort_id}
+          data-search={`${record.review_docket_id} ${record.specification_id} ${record.cohort_id} ${record.named_entity} ${record.measure_label}`.toLowerCase()}
+        >
+          <div class="meta-row">
+            <MetaPill label={record.review_docket_id} tone="possibility" />
+            <MetaPill label={record.docket_state} tone="review" />
+          </div>
+          <h3><a href={`/evidence/review/${record.slug}/`}>{record.measure_label}</a></h3>
+          <p>{record.named_entity}</p>
+          <div class="meta-row">
+            <MetaPill label="12 not reviewed" />
+            <MetaPill label="0 submissions" />
+            <MetaPill label="0 receipts" />
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div><div class="eyebrow">Series Admission</div><h2>Eight cohorts remain Not Admitted.</h2></div>
+      <a class="inline-link" href="/briefings/series-admission-protocol-001/">Read the admission protocol</a>
+    </div>
+    <div class="grid">
+      {admissionDockets.map((record) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={record.admission_docket_id} tone="possibility" /><MetaPill label={record.admission_decision} tone="review" /></div>
+          <h3><a href={`/evidence/review/${record.slug}/`}>{record.named_entity}</a></h3>
+          <p>{record.admission_state}</p>
+          <div class="meta-row"><MetaPill label="1 contract present" /><MetaPill label="7 not ready" /><MetaPill label="0 series" /></div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Public Contract</div>
+      <h2>Inspect the empty decision state.</h2>
+      <p>The export contains review, lineage, and admission contracts. It contains no observation payload, reviewer identity, decision, receipt, value, or series.</p>
+    </div>
+    <article class="record-card"><a class="inline-link" href="/data/observation-review-series-admission.json">Review and admission JSON</a><br /><a class="inline-link" href="/evidence/outcomes/">Continue to Phase 71 outcome controls</a></article>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    const form = document.querySelector('#review-filters');
+    const records = [...document.querySelectorAll('[data-review-record]')];
+    if (!form) return;
+    const apply = () => {
+      const data = new FormData(form);
+      const search = String(data.get('search') || '').trim().toLowerCase();
+      const cohort = String(data.get('cohort') || '');
+      records.forEach((record) => {
+        record.hidden = Boolean(
+          (search && !record.dataset.search.includes(search)) ||
+          (cohort && record.dataset.cohort !== cohort)
+        );
+      });
+    };
+    form.addEventListener('input', apply);
+    form.addEventListener('change', apply);
+    form.addEventListener('reset', () => requestAnimationFrame(apply));
+  })();
+</script>

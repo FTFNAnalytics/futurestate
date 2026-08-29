@@ -1,0 +1,1807 @@
+{
+  "phase": "57I",
+  "captured_date": "2026-08-03",
+  "rail_type": "Versioned station registry change-detection queue",
+  "source_snapshots": [
+    {
+      "snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "source_id": "source-57f-amtrak-stations-alp-fy24-29",
+      "source_date": "2023-04-30",
+      "role": "Historical Appendix B membership and plan-state snapshot"
+    },
+    {
+      "snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "source_id": "source-57b-amtrak-ada-progress-june-2026",
+      "source_date": "2026-06",
+      "role": "Named substantial- and final-completion cohort observations"
+    }
+  ],
+  "review_vocabulary": [
+    "unchanged identity",
+    "added",
+    "removed",
+    "renamed",
+    "replaced",
+    "unresolved",
+    "new bounded observation"
+  ],
+  "current_name_queue_count": 16,
+  "historical_identity_queue_count": 178,
+  "accepted_identity_joins": 11,
+  "unresolved_identity_joins": 5,
+  "official_station_codes_present": 0,
+  "official_station_codes_pending": 16,
+  "asserted_additions": 0,
+  "asserted_removals": 0,
+  "asserted_renames": 0,
+  "asserted_replacements": 0,
+  "operating_outcomes_ingested": 0,
+  "promotion_rule": "A diff decision requires compatible source scope, identity authority, station code or controlled crosswalk, effective date, and reviewer disposition. A cohort appearance remains a bounded observation, not an addition, rename, replacement, or reliability result.",
+  "current_name_diff_queue": [
+    {
+      "queue_id": "AMTRAK-DIFF-001",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Camden",
+      "current_cohorts": [
+        "substantial_completion",
+        "final_completion"
+      ],
+      "historical_station_id": "AMTRAK-STATION-SC-camden",
+      "historical_display_name": "Camden",
+      "historical_state": "SC",
+      "official_station_code": null,
+      "match_method": "exact_display_name",
+      "identity_review_state": "accepted_exact_identity_join",
+      "diff_decision": "existing_identity_with_new_source_observation",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-002",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Detroit Lakes",
+      "current_cohorts": [
+        "substantial_completion",
+        "final_completion"
+      ],
+      "historical_station_id": "AMTRAK-STATION-MN-detroit-lakes",
+      "historical_display_name": "Detroit Lakes",
+      "historical_state": "MN",
+      "official_station_code": null,
+      "match_method": "exact_display_name",
+      "identity_review_state": "accepted_exact_identity_join",
+      "diff_decision": "existing_identity_with_new_source_observation",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-003",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Du Quoin",
+      "current_cohorts": [
+        "substantial_completion"
+      ],
+      "historical_station_id": null,
+      "historical_display_name": null,
+      "historical_state": null,
+      "official_station_code": null,
+      "match_method": "unresolved_no_historical_name_match",
+      "identity_review_state": "blocked_pending_official_station_code_or_crosswalk",
+      "diff_decision": "unresolved_identity",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-004",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Fort Morgan",
+      "current_cohorts": [
+        "substantial_completion",
+        "final_completion"
+      ],
+      "historical_station_id": "AMTRAK-STATION-CO-fort-morgan",
+      "historical_display_name": "Fort Morgan",
+      "historical_state": "CO",
+      "official_station_code": null,
+      "match_method": "exact_display_name",
+      "identity_review_state": "accepted_exact_identity_join",
+      "diff_decision": "existing_identity_with_new_source_observation",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-005",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Granby",
+      "current_cohorts": [
+        "substantial_completion"
+      ],
+      "historical_station_id": null,
+      "historical_display_name": null,
+      "historical_state": null,
+      "official_station_code": null,
+      "match_method": "unresolved_no_historical_name_match",
+      "identity_review_state": "blocked_pending_official_station_code_or_crosswalk",
+      "diff_decision": "unresolved_identity",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-006",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Hamlet",
+      "current_cohorts": [
+        "substantial_completion"
+      ],
+      "historical_station_id": null,
+      "historical_display_name": null,
+      "historical_state": null,
+      "official_station_code": null,
+      "match_method": "unresolved_no_historical_name_match",
+      "identity_review_state": "blocked_pending_official_station_code_or_crosswalk",
+      "diff_decision": "unresolved_identity",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-007",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Havre",
+      "current_cohorts": [
+        "substantial_completion"
+      ],
+      "historical_station_id": "AMTRAK-STATION-MT-havre",
+      "historical_display_name": "Havre",
+      "historical_state": "MT",
+      "official_station_code": null,
+      "match_method": "exact_display_name",
+      "identity_review_state": "accepted_exact_identity_join",
+      "diff_decision": "existing_identity_with_new_source_observation",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-008",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Miami",
+      "current_cohorts": [
+        "substantial_completion"
+      ],
+      "historical_station_id": "AMTRAK-STATION-FL-miami",
+      "historical_display_name": "Miami",
+      "historical_state": "FL",
+      "official_station_code": null,
+      "match_method": "exact_display_name",
+      "identity_review_state": "accepted_exact_identity_join",
+      "diff_decision": "existing_identity_with_new_source_observation",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-009",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Pomona",
+      "current_cohorts": [
+        "substantial_completion"
+      ],
+      "historical_station_id": null,
+      "historical_display_name": null,
+      "historical_state": null,
+      "official_station_code": null,
+      "match_method": "unresolved_no_historical_name_match",
+      "identity_review_state": "blocked_pending_official_station_code_or_crosswalk",
+      "diff_decision": "unresolved_identity",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-010",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Rocklin",
+      "current_cohorts": [
+        "substantial_completion"
+      ],
+      "historical_station_id": null,
+      "historical_display_name": null,
+      "historical_state": null,
+      "official_station_code": null,
+      "match_method": "unresolved_no_historical_name_match",
+      "identity_review_state": "blocked_pending_official_station_code_or_crosswalk",
+      "diff_decision": "unresolved_identity",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-011",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Rugby",
+      "current_cohorts": [
+        "substantial_completion"
+      ],
+      "historical_station_id": "AMTRAK-STATION-ND-rugby",
+      "historical_display_name": "Rugby",
+      "historical_state": "ND",
+      "official_station_code": null,
+      "match_method": "exact_display_name",
+      "identity_review_state": "accepted_exact_identity_join",
+      "diff_decision": "existing_identity_with_new_source_observation",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-012",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Albany",
+      "current_cohorts": [
+        "final_completion"
+      ],
+      "historical_station_id": "AMTRAK-STATION-OR-albany",
+      "historical_display_name": "Albany",
+      "historical_state": "OR",
+      "official_station_code": null,
+      "match_method": "exact_display_name",
+      "identity_review_state": "accepted_exact_identity_join",
+      "diff_decision": "existing_identity_with_new_source_observation",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-013",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Columbus",
+      "current_cohorts": [
+        "final_completion"
+      ],
+      "historical_station_id": "AMTRAK-STATION-WI-columbus",
+      "historical_display_name": "Columbus",
+      "historical_state": "WI",
+      "official_station_code": null,
+      "match_method": "exact_display_name",
+      "identity_review_state": "accepted_exact_identity_join",
+      "diff_decision": "existing_identity_with_new_source_observation",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-014",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Devils Lake",
+      "current_cohorts": [
+        "final_completion"
+      ],
+      "historical_station_id": "AMTRAK-STATION-ND-devils-lake",
+      "historical_display_name": "Devils Lake",
+      "historical_state": "ND",
+      "official_station_code": null,
+      "match_method": "exact_display_name",
+      "identity_review_state": "accepted_exact_identity_join",
+      "diff_decision": "existing_identity_with_new_source_observation",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-015",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Mount Pleasant",
+      "current_cohorts": [
+        "final_completion"
+      ],
+      "historical_station_id": "AMTRAK-STATION-IA-mt-pleasant",
+      "historical_display_name": "Mt. Pleasant",
+      "historical_state": "IA",
+      "official_station_code": null,
+      "match_method": "controlled_alias_rule_mount_to_mt",
+      "identity_review_state": "accepted_controlled_alias_join",
+      "diff_decision": "existing_identity_with_new_source_observation",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    },
+    {
+      "queue_id": "AMTRAK-DIFF-016",
+      "historical_snapshot_id": "AMTRAK-APPENDIX-B-FY2024-2029",
+      "current_snapshot_id": "AMTRAK-ADA-PROGRESS-JUNE-2026",
+      "current_display_name": "Tomah",
+      "current_cohorts": [
+        "final_completion"
+      ],
+      "historical_station_id": "AMTRAK-STATION-WI-tomah",
+      "historical_display_name": "Tomah",
+      "historical_state": "WI",
+      "official_station_code": null,
+      "match_method": "exact_display_name",
+      "identity_review_state": "accepted_exact_identity_join",
+      "diff_decision": "existing_identity_with_new_source_observation",
+      "added_state": "not_assessed",
+      "removed_state": "not_assessed",
+      "renamed_state": "not_assessed",
+      "replaced_state": "not_assessed",
+      "operating_outcome": null
+    }
+  ],
+  "historical_identity_queue": [
+    {
+      "historical_station_id": "AMTRAK-STATION-TX-marshall",
+      "historical_display_name": "Marshall",
+      "historical_state": "TX",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-VA-clifton-forge",
+      "historical_display_name": "Clifton Forge",
+      "historical_state": "VA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CO-glenwood-springs",
+      "historical_display_name": "Glenwood Springs",
+      "historical_state": "CO",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-paoli",
+      "historical_display_name": "Paoli",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-mount-joy",
+      "historical_display_name": "Mount Joy",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NY-buffalo-exchange-st",
+      "historical_display_name": "Buffalo - Exchange St.",
+      "historical_state": "NY",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MS-hazlehurst",
+      "historical_display_name": "Hazlehurst",
+      "historical_state": "MS",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MS-picayune",
+      "historical_display_name": "Picayune",
+      "historical_state": "MS",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NC-gastonia",
+      "historical_display_name": "Gastonia",
+      "historical_state": "NC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-GA-toccoa",
+      "historical_display_name": "Toccoa",
+      "historical_state": "GA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-TX-sanderson",
+      "historical_display_name": "Sanderson",
+      "historical_state": "TX",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-VA-ashland",
+      "historical_display_name": "Ashland",
+      "historical_state": "VA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-tyrone",
+      "historical_display_name": "Tyrone",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WV-alderson",
+      "historical_display_name": "Alderson",
+      "historical_state": "WV",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-middletown",
+      "historical_display_name": "Middletown",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IN-crawfordsville",
+      "historical_display_name": "Crawfordsville",
+      "historical_state": "IN",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-RI-westerly",
+      "historical_display_name": "Westerly",
+      "historical_state": "RI",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WV-thurmond",
+      "historical_display_name": "Thurmond",
+      "historical_state": "WV",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-DE-newark",
+      "historical_display_name": "Newark",
+      "historical_state": "DE",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-ardmore",
+      "historical_display_name": "Ardmore",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MS-mccomb",
+      "historical_display_name": "McComb",
+      "historical_state": "MS",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-latrobe",
+      "historical_display_name": "Latrobe",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-AZ-yuma",
+      "historical_display_name": "Yuma",
+      "historical_state": "AZ",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-philadelphia-north",
+      "historical_display_name": "Philadelphia - North",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NV-elko",
+      "historical_display_name": "Elko",
+      "historical_state": "NV",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WV-harpers-ferry",
+      "historical_display_name": "Harpers Ferry",
+      "historical_state": "WV",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MD-aberdeen",
+      "historical_display_name": "Aberdeen",
+      "historical_state": "MD",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-parkesburg",
+      "historical_display_name": "Parkesburg",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-coatesville",
+      "historical_display_name": "Coatesville",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-downingtown",
+      "historical_display_name": "Downingtown",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IL-bloomington-normal",
+      "historical_display_name": "Bloomington - Normal",
+      "historical_state": "IL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MD-new-carrolton",
+      "historical_display_name": "New Carrolton",
+      "historical_state": "MD",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-DE-wilmington",
+      "historical_display_name": "Wilmington",
+      "historical_state": "DE",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MD-baltimore",
+      "historical_display_name": "Baltimore",
+      "historical_state": "MD",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CO-denver",
+      "historical_display_name": "Denver",
+      "historical_state": "CO",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-ND-minot",
+      "historical_display_name": "Minot",
+      "historical_state": "ND",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CA-anaheim",
+      "historical_display_name": "Anaheim",
+      "historical_state": "CA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MI-dearborn",
+      "historical_display_name": "Dearborn",
+      "historical_state": "MI",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-ND-fargo",
+      "historical_display_name": "Fargo",
+      "historical_state": "ND",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MT-east-glacier-park",
+      "historical_display_name": "East Glacier Park",
+      "historical_state": "MT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WV-huntington",
+      "historical_display_name": "Huntington",
+      "historical_state": "WV",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-johnstown",
+      "historical_display_name": "Johnstown",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-VA-norfolk",
+      "historical_display_name": "Norfolk",
+      "historical_state": "VA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CA-davis",
+      "historical_display_name": "Davis",
+      "historical_state": "CA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-GA-savannah",
+      "historical_display_name": "Savannah",
+      "historical_state": "GA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-AL-tuscaloosa",
+      "historical_display_name": "Tuscaloosa",
+      "historical_state": "AL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-DC-washington",
+      "historical_display_name": "Washington",
+      "historical_state": "DC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-SC-florence",
+      "historical_display_name": "Florence",
+      "historical_state": "SC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-SC-greenville",
+      "historical_display_name": "Greenville",
+      "historical_state": "SC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-VA-lorton-auto-train",
+      "historical_display_name": "Lorton (Auto Train)",
+      "historical_state": "VA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WV-prince",
+      "historical_display_name": "Prince",
+      "historical_state": "WV",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-RI-providence",
+      "historical_display_name": "Providence",
+      "historical_state": "RI",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MA-route-128-westwood",
+      "historical_display_name": "Route 128 - Westwood",
+      "historical_state": "MA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MT-shelby",
+      "historical_display_name": "Shelby",
+      "historical_state": "MT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WA-seattle-king-st-station",
+      "historical_display_name": "Seattle - King St. Station",
+      "historical_state": "WA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-FL-sanford-auto-train",
+      "historical_display_name": "Sanford (Auto Train)",
+      "historical_state": "FL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-OR-klamath-falls",
+      "historical_display_name": "Klamath Falls",
+      "historical_state": "OR",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CT-meriden",
+      "historical_display_name": "Meriden",
+      "historical_state": "CT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-ME-portland",
+      "historical_display_name": "Portland",
+      "historical_state": "ME",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NY-rochester",
+      "historical_display_name": "Rochester",
+      "historical_state": "NY",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-ME-saco",
+      "historical_display_name": "Saco",
+      "historical_state": "ME",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WA-tukwila",
+      "historical_display_name": "Tukwila",
+      "historical_state": "WA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CT-wallingford",
+      "historical_display_name": "Wallingford",
+      "historical_state": "CT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IN-waterloo",
+      "historical_display_name": "Waterloo",
+      "historical_state": "IN",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NY-albany-rensselaer",
+      "historical_display_name": "Albany - Rensselaer",
+      "historical_state": "NY",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-TX-austin",
+      "historical_display_name": "Austin",
+      "historical_state": "TX",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CT-berlin",
+      "historical_display_name": "Berlin",
+      "historical_state": "CT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NC-burlington",
+      "historical_display_name": "Burlington",
+      "historical_state": "NC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-ME-brunswick",
+      "historical_display_name": "Brunswick",
+      "historical_state": "ME",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IL-carlinville",
+      "historical_display_name": "Carlinville",
+      "historical_state": "IL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NC-cary",
+      "historical_display_name": "Cary",
+      "historical_state": "NC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NC-durham",
+      "historical_display_name": "Durham",
+      "historical_state": "NC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-OR-eugene-springfield",
+      "historical_display_name": "Eugene - Springfield",
+      "historical_state": "OR",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-ME-freeport",
+      "historical_display_name": "Freeport",
+      "historical_state": "ME",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MT-havre",
+      "historical_display_name": "Havre",
+      "historical_state": "MT",
+      "current_observation_state": "observed_in_june_2026_completion_cohort",
+      "removal_state": "not_assessed",
+      "review_action": "retain_identity_and_attach_bounded_observation"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-TX-houston",
+      "historical_display_name": "Houston",
+      "historical_state": "TX",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-FL-jacksonville",
+      "historical_display_name": "Jacksonville",
+      "historical_state": "FL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CO-la-junta",
+      "historical_display_name": "La Junta",
+      "historical_state": "CO",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CT-new-london",
+      "historical_display_name": "New London",
+      "historical_state": "CT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-ME-old-orchard-beach",
+      "historical_display_name": "Old Orchard Beach",
+      "historical_state": "ME",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-FL-orlando",
+      "historical_display_name": "Orlando",
+      "historical_state": "FL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NC-raleigh",
+      "historical_display_name": "Raleigh",
+      "historical_state": "NC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-VA-richmond-staples-mill-road",
+      "historical_display_name": "Richmond - Staples Mill Road",
+      "historical_state": "VA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NY-schenectady",
+      "historical_display_name": "Schenectady",
+      "historical_state": "NY",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-OR-salem",
+      "historical_display_name": "Salem",
+      "historical_state": "OR",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WA-tacoma",
+      "historical_display_name": "Tacoma",
+      "historical_state": "WA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-FL-tampa",
+      "historical_display_name": "Tampa",
+      "historical_state": "FL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-ME-wells",
+      "historical_display_name": "Wells",
+      "historical_state": "ME",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-ND-williston",
+      "historical_display_name": "Williston",
+      "historical_state": "ND",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-SC-charleston",
+      "historical_display_name": "Charleston",
+      "historical_state": "SC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-FL-winter-haven",
+      "historical_display_name": "Winter Haven",
+      "historical_state": "FL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-VA-alexandria",
+      "historical_display_name": "Alexandria",
+      "historical_state": "VA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-VA-fredericksburg",
+      "historical_display_name": "Fredericksburg",
+      "historical_state": "VA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NE-omaha",
+      "historical_display_name": "Omaha",
+      "historical_state": "NE",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MD-bwi-marshall-airport",
+      "historical_display_name": "BWI Marshall Airport",
+      "historical_state": "MD",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IL-carbondale",
+      "historical_display_name": "Carbondale",
+      "historical_state": "IL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-RI-kingston",
+      "historical_display_name": "Kingston",
+      "historical_state": "RI",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WA-olympia-lacey",
+      "historical_display_name": "Olympia/Lacey",
+      "historical_state": "WA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-philadelphia-30th-street-station",
+      "historical_display_name": "Philadelphia-30th Street Station",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CT-old-saybrook",
+      "historical_display_name": "Old Saybrook",
+      "historical_state": "CT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NY-rhinecliff",
+      "historical_display_name": "Rhinecliff",
+      "historical_state": "NY",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NY-new-york-penn-station",
+      "historical_display_name": "New York - Penn Station",
+      "historical_state": "NY",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-harrisburg",
+      "historical_display_name": "Harrisburg",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-lancaster",
+      "historical_display_name": "Lancaster",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IL-chicago-union-station",
+      "historical_display_name": "Chicago - Union Station",
+      "historical_state": "IL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-OR-albany",
+      "historical_display_name": "Albany",
+      "historical_state": "OR",
+      "current_observation_state": "observed_in_june_2026_completion_cohort",
+      "removal_state": "not_assessed",
+      "review_action": "retain_identity_and_attach_bounded_observation"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MI-battle-creek",
+      "historical_display_name": "Battle Creek",
+      "historical_state": "MI",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CO-grand-junction",
+      "historical_display_name": "Grand Junction",
+      "historical_state": "CO",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-TX-longview",
+      "historical_display_name": "Longview",
+      "historical_state": "TX",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WA-everett",
+      "historical_display_name": "Everett",
+      "historical_state": "WA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MO-kirkwood",
+      "historical_display_name": "Kirkwood",
+      "historical_state": "MO",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CA-oxnard",
+      "historical_display_name": "Oxnard",
+      "historical_state": "CA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WA-pasco",
+      "historical_display_name": "Pasco",
+      "historical_state": "WA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IN-south-bend",
+      "historical_display_name": "South Bend",
+      "historical_state": "IN",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-AZ-tucson",
+      "historical_display_name": "Tucson",
+      "historical_state": "AZ",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-PA-pittsburgh",
+      "historical_display_name": "Pittsburgh",
+      "historical_state": "PA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-SC-columbia",
+      "historical_display_name": "Columbia",
+      "historical_state": "SC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-VA-charlottesville",
+      "historical_display_name": "Charlottesville",
+      "historical_state": "VA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NC-fayetteville",
+      "historical_display_name": "Fayetteville",
+      "historical_state": "NC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NY-hudson",
+      "historical_display_name": "Hudson",
+      "historical_state": "NY",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MO-kansas-city",
+      "historical_display_name": "Kansas City",
+      "historical_state": "MO",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-FL-miami",
+      "historical_display_name": "Miami",
+      "historical_state": "FL",
+      "current_observation_state": "observed_in_june_2026_completion_cohort",
+      "removal_state": "not_assessed",
+      "review_action": "retain_identity_and_attach_bounded_observation"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-VA-newport-news",
+      "historical_display_name": "Newport News",
+      "historical_state": "VA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IL-springfield",
+      "historical_display_name": "Springfield",
+      "historical_state": "IL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NY-utica",
+      "historical_display_name": "Utica",
+      "historical_state": "NY",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-VA-williamsburg",
+      "historical_display_name": "Williamsburg",
+      "historical_state": "VA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IL-galesburg",
+      "historical_display_name": "Galesburg",
+      "historical_state": "IL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NY-saratoga-springs",
+      "historical_display_name": "Saratoga Springs",
+      "historical_state": "NY",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-VA-lynchburg",
+      "historical_display_name": "Lynchburg",
+      "historical_state": "VA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NM-albuquerque",
+      "historical_display_name": "Albuquerque",
+      "historical_state": "NM",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MI-ann-arbor",
+      "historical_display_name": "Ann Arbor",
+      "historical_state": "MI",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WA-bellingham",
+      "historical_display_name": "Bellingham",
+      "historical_state": "WA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-FL-deland",
+      "historical_display_name": "Deland",
+      "historical_state": "FL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WA-edmonds",
+      "historical_display_name": "Edmonds",
+      "historical_state": "WA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-TX-el-paso",
+      "historical_display_name": "El Paso",
+      "historical_state": "TX",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-TX-fort-worth",
+      "historical_display_name": "Fort Worth",
+      "historical_state": "TX",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MS-jackson",
+      "historical_display_name": "Jackson",
+      "historical_state": "MS",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WA-kelso-longview",
+      "historical_display_name": "Kelso-Longview",
+      "historical_state": "WA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-OR-portland",
+      "historical_display_name": "Portland",
+      "historical_state": "OR",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NC-rocky-mount",
+      "historical_display_name": "Rocky Mount",
+      "historical_state": "NC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MT-whitefish",
+      "historical_display_name": "Whitefish",
+      "historical_state": "MT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NC-wilson",
+      "historical_display_name": "Wilson",
+      "historical_state": "NC",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NY-buffalo-depew",
+      "historical_display_name": "Buffalo - Depew",
+      "historical_state": "NY",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CA-salinas",
+      "historical_display_name": "Salinas",
+      "historical_state": "CA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CA-hanford",
+      "historical_display_name": "Hanford",
+      "historical_state": "CA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MI-detroit",
+      "historical_display_name": "Detroit",
+      "historical_state": "MI",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-GA-atlanta",
+      "historical_display_name": "Atlanta",
+      "historical_state": "GA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-AL-birmingham",
+      "historical_display_name": "Birmingham",
+      "historical_state": "AL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-SC-camden",
+      "historical_display_name": "Camden",
+      "historical_state": "SC",
+      "current_observation_state": "observed_in_june_2026_completion_cohort",
+      "removal_state": "not_assessed",
+      "review_action": "retain_identity_and_attach_bounded_observation"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WI-columbus",
+      "historical_display_name": "Columbus",
+      "historical_state": "WI",
+      "current_observation_state": "observed_in_june_2026_completion_cohort",
+      "removal_state": "not_assessed",
+      "review_action": "retain_identity_and_attach_bounded_observation"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MT-cut-bank",
+      "historical_display_name": "Cut Bank",
+      "historical_state": "MT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MN-detroit-lakes",
+      "historical_display_name": "Detroit Lakes",
+      "historical_state": "MN",
+      "current_observation_state": "observed_in_june_2026_completion_cohort",
+      "removal_state": "not_assessed",
+      "review_action": "retain_identity_and_attach_bounded_observation"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-ND-devils-lake",
+      "historical_display_name": "Devils Lake",
+      "historical_state": "ND",
+      "current_observation_state": "observed_in_june_2026_completion_cohort",
+      "removal_state": "not_assessed",
+      "review_action": "retain_identity_and_attach_bounded_observation"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-GA-gainesville",
+      "historical_display_name": "Gainesville",
+      "historical_state": "GA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MT-glasgow",
+      "historical_display_name": "Glasgow",
+      "historical_state": "MT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-UT-helper",
+      "historical_display_name": "Helper",
+      "historical_state": "UT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MT-libby",
+      "historical_display_name": "Libby",
+      "historical_state": "MT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IL-macomb",
+      "historical_display_name": "Macomb",
+      "historical_state": "IL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MT-malta",
+      "historical_display_name": "Malta",
+      "historical_state": "MT",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-KY-maysville",
+      "historical_display_name": "Maysville",
+      "historical_state": "KY",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-TX-mcgregor",
+      "historical_display_name": "McGregor",
+      "historical_state": "TX",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IA-mt-pleasant",
+      "historical_display_name": "Mt. Pleasant",
+      "historical_state": "IA",
+      "current_observation_state": "observed_in_june_2026_completion_cohort",
+      "removal_state": "not_assessed",
+      "review_action": "retain_identity_and_attach_bounded_observation"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MI-niles",
+      "historical_display_name": "Niles",
+      "historical_state": "MI",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NY-plattsburgh",
+      "historical_display_name": "Plattsburgh",
+      "historical_state": "NY",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MI-port-huron",
+      "historical_display_name": "Port Huron",
+      "historical_state": "MI",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-NM-raton",
+      "historical_display_name": "Raton",
+      "historical_state": "NM",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MN-red-wing",
+      "historical_display_name": "Red Wing",
+      "historical_state": "MN",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-ND-rugby",
+      "historical_display_name": "Rugby",
+      "historical_state": "ND",
+      "current_observation_state": "observed_in_june_2026_completion_cohort",
+      "removal_state": "not_assessed",
+      "review_action": "retain_identity_and_attach_bounded_observation"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MN-st-cloud",
+      "historical_display_name": "St. Cloud",
+      "historical_state": "MN",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-ND-stanley",
+      "historical_display_name": "Stanley",
+      "historical_state": "ND",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-VA-staunton",
+      "historical_display_name": "Staunton",
+      "historical_state": "VA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MN-winona",
+      "historical_display_name": "Winona",
+      "historical_state": "MN",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-TX-alpine",
+      "historical_display_name": "Alpine",
+      "historical_state": "TX",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-CO-fort-morgan",
+      "historical_display_name": "Fort Morgan",
+      "historical_state": "CO",
+      "current_observation_state": "observed_in_june_2026_completion_cohort",
+      "removal_state": "not_assessed",
+      "review_action": "retain_identity_and_attach_bounded_observation"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IL-princeton",
+      "historical_display_name": "Princeton",
+      "historical_state": "IL",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-WI-tomah",
+      "historical_display_name": "Tomah",
+      "historical_state": "WI",
+      "current_observation_state": "observed_in_june_2026_completion_cohort",
+      "removal_state": "not_assessed",
+      "review_action": "retain_identity_and_attach_bounded_observation"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-IA-creston",
+      "historical_display_name": "Creston",
+      "historical_state": "IA",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    },
+    {
+      "historical_station_id": "AMTRAK-STATION-MD-cumberland",
+      "historical_display_name": "Cumberland",
+      "historical_state": "MD",
+      "current_observation_state": "not_observed_in_june_2026_completion_cohorts",
+      "removal_state": "not_assessed",
+      "review_action": "retain_historical_identity_without_deletion_inference"
+    }
+  ]
+}

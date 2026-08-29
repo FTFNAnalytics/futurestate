@@ -1,0 +1,63 @@
+{
+  "id": "research-doc-57t-amtrak-pids-cache-coherence-receipt-fail-closed",
+  "collection_id": "research-collection-canonical-verification-endpoints-signed-release-indexes-cache-mirror-recovery-2026",
+  "title": "Amtrak PIDS closeout receives digest-bound cache-coherence receipts",
+  "slug": "57t-amtrak-pids-cache-coherence-receipt-fail-closed",
+  "record_status": "Published",
+  "publisher": "National Railroad Passenger Corporation",
+  "publication_date": "2026-08-09",
+  "document_type": "Data Release",
+  "summary": "A cached verification representation remains usable only when its canonical URI, release-index digest, entity tag, representation digest, manifest digest, export digest, and revalidation time match the current endpoint. Denominator: One contract-specific cache schema, eighteen adversarial cases, five bounded valid routes, thirteen fail-closed rejections, and zero actual cache-coherence receipts issued.",
+  "key_findings": [
+    "Evidence stage: Cache-coherence receipt and fail-closed controls.",
+    "Finding: A cached verification representation remains usable only when its canonical URI, release-index digest, entity tag, representation digest, manifest digest, export digest, and revalidation time match the current endpoint.",
+    "Denominator: One contract-specific cache schema, eighteen adversarial cases, five bounded valid routes, thirteen fail-closed rejections, and zero actual cache-coherence receipts issued.",
+    "Boundary: Serve-stale-on-error and warning-only mismatch behavior are prohibited.",
+    "Boundary: Age-window, revalidation, partition, transform, entity-tag, manifest, export, and index drift fail closed.",
+    "Boundary: Cache validation cannot create evidence, publish a claim, or change an inherited hold.",
+    "Next action: Fail every cached Amtrak PIDS closeout representation closed until all seven coherence comparisons revalidate."
+  ],
+  "why_it_matters": "The record makes canonical delivery, signed release lineage, cache coherence, mirror and redirect integrity, and immutable-source recovery independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Binds stable reader-verification URIs to the exact current Phase 57S manifest and export.",
+    "Fails stale caches, transformed mirrors, and unsafe redirects closed.",
+    "Reconstructs reader state only from immutable history under a nonactivating recovery receipt."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Serve-stale-on-error and warning-only mismatch behavior are prohibited.",
+    "Age-window, revalidation, partition, transform, entity-tag, manifest, export, and index drift fail closed.",
+    "Cache validation cannot create evidence, publish a claim, or change an inherited hold.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Mobility",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57f-amtrak-stations-alp-fy24-29",
+  "supporting_source_ids": [
+    "source-57f-amtrak-stations-alp-fy24-29",
+    "source-57b-amtrak-ada-progress-june-2026",
+    "source-57e-amtrak-accessibility-progress-june-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+  ],
+  "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+  "local_capture_path": "/downloads/canonical-verification-endpoints-signed-release-indexes-cache-mirror-recovery-2026/official-links/03-phase57t-record.txt",
+  "archive_member": "official-links/03-phase57t-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}

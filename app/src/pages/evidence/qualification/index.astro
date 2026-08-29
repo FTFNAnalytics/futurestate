@@ -1,0 +1,189 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import qualificationRegistry from "../../../data/phase-67-qualification-packet-registry.json";
+import returnLedger from "../../../data/phase-67-evidence-return-envelope-ledger.json";
+
+const packets = qualificationRegistry.packet_records.map((record) => ({
+  id: record.packet_id,
+  slug: record.slug,
+  kind: "Qualification Packet",
+  stage: record.stage_label,
+  state: record.packet_state,
+  entity: record.short_name,
+  title: `${record.packet_id}: ${record.short_name} — ${record.stage_label}`,
+  summary: record.exact_qualifying_artifact,
+  date: record.next_check_date,
+  boundary: record.current_decision_state
+}));
+const envelopes = returnLedger.envelope_records.map((record) => ({
+  id: record.envelope_id,
+  slug: record.slug,
+  kind: "Return Envelope",
+  stage: record.wave,
+  state: record.envelope_state,
+  entity: record.target,
+  title: `${record.envelope_id}: ${record.target}`,
+  summary: record.exact_next_artifact,
+  date: record.scheduled_check_date,
+  boundary: record.named_file_ids.length > 0 ? `${record.named_file_ids.length} named-file binding` : "No named-file transfer"
+}));
+const records = [...packets, ...envelopes];
+const states = [...new Set(records.map((record) => record.state))].sort();
+const stages = [...new Set(records.map((record) => record.stage))].sort();
+---
+
+<BaseLayout
+  title="Qualification And Evidence Return Registry | FTFN"
+  description="Thirty-two named-file qualification packets and thirteen dated evidence-return envelopes with exact evidence rules, bindings, receipts, and propagation state."
+>
+  <section class="page-section hero">
+    <div class="hero__copy">
+      <div class="eyebrow">FTFN / Evidence Qualification</div>
+      <h1 class="page-title">Forty-five governed paths from evidence requirement to reader state.</h1>
+      <p class="lede">
+        Qualification packets define what would answer a downstream question.
+        Return envelopes govern the real dated checks. Neither record family is
+        evidence that its requirement has been met.
+      </p>
+      <div class="meta-row">
+        <MetaPill label="32 qualification packets" tone="possibility" />
+        <MetaPill label="13 return envelopes" />
+        <MetaPill label="0 future receipts" tone="review" />
+        <MetaPill label="0 matrix advances" tone="review" />
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="status-panel">
+      <article class="status-item">
+        <h2>Structural gate complete</h2>
+        <p>Packet schemas, envelope joins, reader products, exports, and deterministic rule fixtures are assembled.</p>
+      </article>
+      <article class="status-item">
+        <h2>Operational gate scheduled</h2>
+        <p>The first real checks remain August 14 for DARPA and August 15 for the Shuttle Landing Facility licence.</p>
+      </article>
+      <article class="status-item">
+        <h2>Human decision required</h2>
+        <p>A structurally complete return is eligible for review, never direct publication or automatic stage movement.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section" data-qualification-registry>
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Registry</div>
+        <h2>Search the packet and return contracts.</h2>
+      </div>
+      <a class="inline-link" href="/briefings/evidence-return-control-room-001-forty-five-governed-returns/">Open the control-room guide</a>
+    </div>
+
+    <form class="filter-panel" id="qualification-filters">
+      <label class="filter-panel__search">
+        Search
+        <input type="search" name="search" placeholder="Entity, packet, artifact or gate" />
+      </label>
+      <label>
+        Record family
+        <select name="kind">
+          <option value="">All families</option>
+          <option value="Qualification Packet">Qualification packets</option>
+          <option value="Return Envelope">Return envelopes</option>
+        </select>
+      </label>
+      <label>
+        Stage or wave
+        <select name="stage">
+          <option value="">All stages and waves</option>
+          {stages.map((stage) => <option value={stage}>{stage}</option>)}
+        </select>
+      </label>
+      <label>
+        State
+        <select name="state">
+          <option value="">All states</option>
+          {states.map((state) => <option value={state}>{state}</option>)}
+        </select>
+      </label>
+      <button class="filter-panel__reset" type="reset">Reset</button>
+    </form>
+
+    <div class="grid" id="qualification-records">
+      {records.map((record) => (
+        <article
+          class="record-card"
+          data-qualification-record
+          data-kind={record.kind}
+          data-stage={record.stage}
+          data-state={record.state}
+          data-search={`${record.id} ${record.entity} ${record.title} ${record.summary}`.toLowerCase()}
+        >
+          <div class="meta-row">
+            <MetaPill label={record.kind} tone={record.kind === "Qualification Packet" ? "possibility" : "review"} />
+            <MetaPill label={record.stage} />
+            <MetaPill label={record.state} />
+          </div>
+          <h3><a href={`/evidence/qualification/${record.slug}/`}>{record.title}</a></h3>
+          <p>{record.summary}</p>
+          <div class="meta-row">
+            <MetaPill label={record.boundary} />
+            {record.date && <MetaPill label={record.date} />}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Public Contracts</div>
+      <h2>Inspect the machine-readable registry.</h2>
+      <p>The exports omit private candidate notes and preserve empty receipt, decision, and propagation fields for future checks.</p>
+    </div>
+    <article class="record-card">
+      <a class="inline-link" href="/data/qualification-packets.json">Qualification packets JSON</a>
+      <a class="inline-link" href="/data/evidence-return-envelopes.json">Evidence-return envelopes JSON</a>
+    </article>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Next Control Layer</div>
+      <h2>Measurement specifications and empty observation intake.</h2>
+      <p>Phase 69 translates the thirty-two comparable-outcome measure families into exact intake contracts without creating values or admitting a cohort.</p>
+    </div>
+    <article class="record-card">
+      <a class="inline-link" href="/evidence/measurements/">Open the measurement registry</a>
+      <a class="inline-link" href="/data/measurement-specifications.json">Measurement specifications JSON</a>
+    </article>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    const form = document.querySelector('#qualification-filters');
+    const records = [...document.querySelectorAll('[data-qualification-record]')];
+    if (!form) return;
+    const apply = () => {
+      const data = new FormData(form);
+      const search = String(data.get('search') || '').trim().toLowerCase();
+      const kind = String(data.get('kind') || '');
+      const stage = String(data.get('stage') || '');
+      const state = String(data.get('state') || '');
+      records.forEach((record) => {
+        record.hidden = Boolean(
+          (search && !record.dataset.search.includes(search)) ||
+          (kind && record.dataset.kind !== kind) ||
+          (stage && record.dataset.stage !== stage) ||
+          (state && record.dataset.state !== state)
+        );
+      });
+    };
+    form.addEventListener('input', apply);
+    form.addEventListener('change', apply);
+    form.addEventListener('reset', () => requestAnimationFrame(apply));
+  })();
+</script>

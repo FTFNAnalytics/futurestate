@@ -1,0 +1,68 @@
+---
+id: "signal-57s-amtrak-reliability-status-freshness-partial-view-fail-closed"
+title: "Amtrak named-asset reliability receives stale-view and partial-history fail-closed detection"
+slug: "57s-amtrak-reliability-status-freshness-partial-view-fail-closed"
+record_status: "Published"
+summary: "A displayed status is usable only when its manifest digest, full event and notice counts, controlling event, controlling receipt, source revision, and verification time match the current manifest."
+source_ids:
+  - "source-57f-amtrak-stations-alp-fy24-29"
+  - "source-57b-amtrak-ada-progress-june-2026"
+  - "source-57e-amtrak-accessibility-progress-june-2026"
+published_date: 2026-08-09
+captured_date: 2026-08-09
+primary_topic: "Mobility"
+framework_layers:
+  - "Enabling Infrastructure"
+  - "Human Systems"
+signal_type: "Research Result"
+maturity_level: "Infrastructure"
+time_horizon: "Now"
+evidence_quality: "Official Data"
+verification_status: "Verified Against Primary Source"
+why_it_matters: "Evidence stage: Status-freshness and partial-view fail-closed controls. Denominator: One contract-specific freshness schema, sixteen adversarial cases, four bounded valid comparison routes, twelve fail-closed rejections, and zero actual status verifications."
+dependencies:
+  - "complete append-only lifecycle history"
+  - "complete immutable change-notice set"
+  - "controlling event and receipt digests"
+  - "freshness and completeness comparison"
+  - "append-only mismatch reconciliation"
+constraints:
+  - "Data Quality"
+  - "Regulation"
+  - "Public Trust"
+receiving_systems:
+  - "Phase 57S reader-verification, freshness, provenance-export, and reconciliation controls"
+local_implications:
+  - "Do not convert a synthetic verifier, manifest, export, mismatch, receipt, or reconciliation into evidence, eligibility, implementation, capability, closure, attribution, or operating outcomes."
+evidence_gap_ids:
+  - "gap-015"
+  - "gap-016"
+claim_scope: "Specific Source Update"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-08-09
+editorial_notes: "Published under the Phase 57S reader-verification and fail-closed freshness contract."
+---
+
+## Phase 57S reader-verification control
+
+A displayed status is usable only when its manifest digest, full event and notice counts, controlling event, controlling receipt, source revision, and verification time match the current manifest.
+
+## Evidence stage and denominator
+
+**Status-freshness and partial-view fail-closed controls.** One contract-specific freshness schema, sixteen adversarial cases, four bounded valid comparison routes, twelve fail-closed rejections, and zero actual status verifications.
+
+Structured registry: phase-57s-status-freshness-stale-view-detection.json.
+
+## Evidence boundaries
+
+- A warning-only response is not sufficient for a failed verification.
+- A stale or partial view cannot replace the current manifest.
+- Verification cannot publish, restore, create evidence, or change claim state.
+
+Actual manifests, verifications, exports, reconciliation receipts, triggers, and closures: **Zero**. FTFN submitted no agency contact or FOIA request.
+
+Next action: Fail the Amtrak named-asset reliability display closed whenever any freshness or completeness comparison diverges.
+
+## Authority boundary
+
+Agency assertions, regulator evidence, FTFN controls, evidence-review identity, publication-review identity, release identity, publication identity, withdrawal identity, rollback identity, restore identity, republication identity, verification identity, reconciliation identity, GAO acceptance, implementation, capability, closure, attribution, and operating outcomes remain separate evidence states.

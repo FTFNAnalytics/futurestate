@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+const systems = (await getCollection("localSystems")).sort((a, b) => (a.data.last_reviewed_date?.valueOf() ?? 0) - (b.data.last_reviewed_date?.valueOf() ?? 0));
+const topics = await getCollection("topics");
+const signals = (await getCollection("signals")).filter((signal) => signal.data.record_status === "Published");
+const topicFreshness = topics.map((topic) => { const records = signals.filter((signal) => signal.data.primary_topic === topic.data.name); const last = records.sort((a,b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf())[0]; return { topic, last }; }).sort((a,b) => (a.last?.data.captured_date.valueOf() ?? 0) - (b.last?.data.captured_date.valueOf() ?? 0));
+---
+<BaseLayout title="Content freshness | FTFN Review">
+  <ReviewHeader eyebrow="Living publication" title="Freshness is visible" summary="This board shows the most recent Published signal by topic and the last review date for each place portrait. It is a review queue, not a claim that older evidence is false." phase={110} />
+  <section class="page-section review-columns"><article><div class="eyebrow">Topic freshness</div><h2>Oldest latest record first.</h2><div class="source-list">{topicFreshness.map(({topic,last}) => <article class="source-row"><h3><a href={`/review/topics/${topic.data.slug}/`}>{topic.data.name}</a></h3><p>{last ? `Latest Published signal captured ${last.data.captured_date.toISOString().slice(0,10)}` : "No Published signal"}</p></article>)}</div></article><article><div class="eyebrow">Place review</div><h2>Local portraits by review date.</h2><div class="source-list">{systems.map((system) => <article class="source-row"><h3><a href={`/review/places/${system.data.slug}/`}>{system.data.name}</a></h3><div class="meta-row"><MetaPill label={system.data.last_reviewed_date ? `Reviewed ${system.data.last_reviewed_date.toISOString().slice(0,10)}` : "Review date not recorded"} /></div></article>)}</div></article></section>
+</BaseLayout>

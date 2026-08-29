@@ -89,7 +89,7 @@ Recommended next source-monitoring work:
 
 1. Turn high-priority probe-ready sources into a private scheduled-check queue before any public automated update behavior. Status: started in Phase 47 with `docs/private-update-queue.md`; first queue items moved into content in Phase 48.
 2. Create the source candidate registry described in `docs/source-broadening-and-intake-plan.md`. Status: still needed before another broad source-promotion batch.
-3. Add or select named Arizona utility dockets, provider water records, Phoenix permits/applications, and Ontario municipal servicing or completion evidence.
+3. Add or select named Arizona utility dockets, provider water records, Phoenix permits/applications, and Ontario municipal servicing or completion evidence. Status: Phase 51C added a named Meta online-service project, current TSMC facility milestones, and active apprenticeship cohorts; semiconductor service, built water infrastructure, project permits, workforce outcomes, Toronto by-laws, and project completion remain.
 4. Move the best promoted Phase 49 source records into bounded source checks for patents, space licensing, agriculture biotechnology, finance, and local systems. Status: funding, research, and first commodity-specific selections completed in Phase 50B.
 5. Add source records for post-quantum migration guidance and procurement evidence.
 6. Add source records for FAA/NHTSA dated certification or safety updates.
@@ -148,6 +148,50 @@ Completed in Phase 50B:
 - selected USAspending award DEMS0000003, NSF award 2433348, the USGS 2026 gallium material, and Toronto application 24 254930,
 - added four more `In Review` signals and updated `gap-004`, `gap-007`, and the Ontario Real Estate profile,
 - validated the `0.2.0-dev` app at 102 sources, 22 signals, 17 topics, and 186 built pages.
+
+Completed in Phase 51A:
+
+- added SRP's 2025 ISP Actions Progress Report as a named utility implementation record,
+- added Phoenix Water Services' April 2026 council update as a named provider-level water record,
+- added Toronto's June 2026 decision report for application 24 254930 as a staff-recommendation and servicing-review record,
+- added three `In Review` signals and strengthened four local evidence gaps,
+- validated the app at 105 sources, 25 signals, 17 topics, and 193 built pages,
+- kept customer-level service, final approvals, permits, starts, completions, and occupancy unresolved.
+
+Completed in Phase 51B:
+
+- added six official records spanning large-load power conditions, industrial wastewater infrastructure, a Phoenix planning case, facility-linked workforce training, Toronto committee follow-through, and citywide delivery stages,
+- added six `In Review` signals and kept the Published export unchanged,
+- advanced the source library to 111 records and the signal library to 31 records,
+- advanced `gap-003` to `Source Added` while keeping all five affected gaps unresolved at their next downstream gate,
+- preserved Git and the static build as the public publication gate.
+
+Completed in Phase 51C:
+
+- added SRP Project Huckleberry as the first named customer electric-service and energization trail,
+- added Phoenix's current TSMC fab and employment update with company-claim labeling,
+- repaired the TSMC apprenticeship signal with an eight-person first cohort and a 46-person second cohort,
+- advanced the source library to 114 records and the signal library to 33 records,
+- kept wastewater operation, Phoenix occupancy, apprenticeship outcomes, and Toronto enactment as unresolved monitors,
+- preserved Git and human review as the public publication gate.
+
+Completed in Phase 53:
+
+- rechecked the three existing Published records and the strongest current `In Review` candidates,
+- promoted six bounded records and reached a nine-signal Published set,
+- documented 23 In Review holds and kept the Draft Sample outside the public export,
+- added a Publication Promotion update entry,
+- preserved unresolved local outcomes and company claims as monitors or holds,
+- moved the default next step to Phase 54 release QA.
+
+Completed in Phase 54:
+
+- audited the 12 unique sources supporting the nine Published signals,
+- rechecked the remaining older CMHC construction-table directory and brought all 12 supporting sources to a `2026-07-22` check date,
+- added a repeatable release assertion that fails if a Published-support source is missing or no longer matches the manifest check date,
+- verified the Source Monitor and Source Coverage reader journeys at desktop and mobile widths,
+- preserved the unresolved Phase 51 trails as dated monitors rather than release blockers,
+- moved the default external step to an explicit private-preview decision while keeping Supabase as a separate private authority-loop track.
 
 ## Not Yet
 

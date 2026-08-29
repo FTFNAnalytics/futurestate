@@ -1,0 +1,30 @@
+{
+  "id": "update-2026-08-11-phase-62-conversion-event-ledgers",
+  "effective_date": "2026-08-11",
+  "entry_type": "Source Refresh",
+  "title": "Phase 62 adds source-resolved event history to all eight named conversion files",
+  "summary": "Seventeen reviewed evidence events now preserve the date basis, prior and current stage, artifact, source and signal identity, materiality, boundary, and next gate for every Phase 61 named file. Thirteen explicit bindings connect the ledgers to the Phase 60 operating cycle without manufacturing historical receipts.",
+  "affected_record_ids": [
+    "briefing-conversion-ledger-method-001",
+    "briefing-project-conversion-001-tsmc-arizona",
+    "briefing-project-conversion-002-toronto-24-254930",
+    "briefing-project-conversion-003-northern-virginia-large-load",
+    "briefing-project-conversion-004-space-coast-authority",
+    "briefing-project-conversion-005-nevada-lithium",
+    "briefing-adoption-case-001-gsa-pqc",
+    "briefing-adoption-case-002-nist-aria",
+    "briefing-adoption-case-003-waymo-california"
+  ],
+  "related_paths": [
+    "/briefings/conversion-ledger-method-001-snapshot-to-evidence-history/",
+    "/briefings/project-conversion-watch-001-authority-to-delivery/",
+    "/data/project-conversion.json",
+    "/data/conversion-events.json"
+  ],
+  "evidence_note": "Phase 62 backfills only events that resolve to existing reviewed signals and their cited sources. Backfill is not a receipt, and the phase adds no source, signal, promotion, score, forecast, readiness claim, or operating-outcome claim.",
+  "prior_state": "The eight Phase 61 files exposed a current stage and exact next gate but did not expose a stable event-by-event evidence history.",
+  "current_state": "Each named file has an append-only conversion ledger, its canonical briefing displays the event timeline, and every Phase 60 cycle item has an explicit same-entity binding or no-transfer decision.",
+  "publication_effect": "Publishes one method briefing, seventeen public conversion-event records, one ninth JSON export, eight canonical briefing timelines, and this update without changing any underlying evidence state.",
+  "next_check_date": "2026-08-14",
+  "work_package": "docs/work-packages/phase-62-conversion-event-ledgers.md"
+}

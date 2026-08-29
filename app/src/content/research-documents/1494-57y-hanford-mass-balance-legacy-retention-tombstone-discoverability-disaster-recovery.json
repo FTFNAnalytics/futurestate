@@ -1,0 +1,72 @@
+{
+  "id": "research-doc-57y-hanford-mass-balance-legacy-retention-tombstone-discoverability-disaster-recovery",
+  "collection_id": "research-collection-federation-remediation-witness-rotation-recusal-time-holdover-coordinated-rollout-legacy-recovery-2026",
+  "title": "Hanford complete material balance receives long-term retention and inactive-by-default recovery",
+  "slug": "57y-hanford-mass-balance-legacy-retention-tombstone-discoverability-disaster-recovery",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy",
+  "publication_date": "2026-08-10",
+  "document_type": "Technical Report",
+  "summary": "Bounded retention and append-only tombstones keep retired artifacts discoverable but inactive; authorized restore drills verify exact digests without changing reader state; and disaster recovery remains reversible with notice, grace, and rollback intact. Denominator: One recovery schema, thirty-two adversarial cases, eight bounded preservation routes, twenty-four explicit rejections, and zero production tombstones, restorations, reader migrations, or disaster events.",
+  "key_findings": [
+    "Evidence stage: Long-term legacy retention, tombstone, discoverability, and disaster-recovery controls.",
+    "Finding: Bounded retention and append-only tombstones keep retired artifacts discoverable but inactive; authorized restore drills verify exact digests without changing reader state; and disaster recovery remains reversible with notice, grace, and rollback intact.",
+    "Denominator: One recovery schema, thirty-two adversarial cases, eight bounded preservation routes, twenty-four explicit rejections, and zero production tombstones, restorations, reader migrations, or disaster events.",
+    "Boundary: Every retention, tombstone, restore, and disaster-recovery fixture is synthetic.",
+    "Boundary: Retired artifacts cannot be deleted, hidden, silently reactivated, or restored with a mismatched digest.",
+    "Boundary: A drill cannot force reader migration, acceptance, implementation, closure, publication, or an operating outcome.",
+    "Next action: Retain Hanford complete material balance legacy artifacts behind append-only tombstones and verify recovery by exact digest without reactivating readers."
+  ],
+  "why_it_matters": "The record makes sustained federation failure, maintenance, emergency rollout, and long-term recovery auditable without granting operational controls evidence or editorial authority.",
+  "ftfn_relevance": [
+    "Preserves fixed integrity thresholds through sustained failure and emergency maintenance.",
+    "Separates recusal and precedent from automatic blame, acceptance, and publication.",
+    "Keeps rollout and long-term recovery reproducible, append-only, and reversible."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Every retention, tombstone, restore, and disaster-recovery fixture is synthetic.",
+    "Retired artifacts cannot be deleted, hidden, silently reactivated, or restored with a mismatched digest.",
+    "A drill cannot force reader migration, acceptance, implementation, closure, publication, or an operating outcome.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-hanford-dflaw-process-animation",
+  "supporting_source_ids": [
+    "source-57g-hanford-dflaw-process-animation",
+    "source-57g-hanford-ap106-feed-staging",
+    "source-57c-hanford-20-containers-2025",
+    "source-57e-doe-hanford-acceptable-glass-startup",
+    "source-57f-hanford-wtp-pmm-february-2026",
+    "source-57b-ecology-wtp-byproduct-response-comments",
+    "source-56x-hanford-first-ilaw-disposal-2026",
+    "source-57b-hanford-wtp-project-managers-may-2026",
+    "source-57f-doe-hanford-100k-gallons-may-2026",
+    "source-57d-hanford-wtp-consent-may-2026",
+    "source-57d-hanford-wtp-consent-june-2026",
+    "source-57d-hanford-wtp-consent-july-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation"
+  ],
+  "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+  "local_capture_path": "/downloads/federation-remediation-witness-rotation-recusal-time-holdover-coordinated-rollout-legacy-recovery-2026/official-links/36-phase57y-record.txt",
+  "archive_member": "official-links/36-phase57y-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-10"
+}

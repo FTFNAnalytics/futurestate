@@ -1,0 +1,71 @@
+{
+  "id": "research-doc-57y-la-nextlink-adoption-legacy-retention-tombstone-discoverability-disaster-recovery",
+  "collection_id": "research-collection-federation-remediation-witness-rotation-recusal-time-holdover-coordinated-rollout-legacy-recovery-2026",
+  "title": "Louisiana Nextlink adoption receives long-term retention and inactive-by-default recovery",
+  "slug": "57y-la-nextlink-adoption-legacy-retention-tombstone-discoverability-disaster-recovery",
+  "record_status": "Published",
+  "publisher": "National Telecommunications and Information Administration",
+  "publication_date": "2026-08-10",
+  "document_type": "Technical Report",
+  "summary": "Bounded retention and append-only tombstones keep retired artifacts discoverable but inactive; authorized restore drills verify exact digests without changing reader state; and disaster recovery remains reversible with notice, grace, and rollback intact. Denominator: One recovery schema, thirty-two adversarial cases, eight bounded preservation routes, twenty-four explicit rejections, and zero production tombstones, restorations, reader migrations, or disaster events.",
+  "key_findings": [
+    "Evidence stage: Long-term legacy retention, tombstone, discoverability, and disaster-recovery controls.",
+    "Finding: Bounded retention and append-only tombstones keep retired artifacts discoverable but inactive; authorized restore drills verify exact digests without changing reader state; and disaster recovery remains reversible with notice, grace, and rollback intact.",
+    "Denominator: One recovery schema, thirty-two adversarial cases, eight bounded preservation routes, twenty-four explicit rejections, and zero production tombstones, restorations, reader migrations, or disaster events.",
+    "Boundary: Every retention, tombstone, restore, and disaster-recovery fixture is synthetic.",
+    "Boundary: Retired artifacts cannot be deleted, hidden, silently reactivated, or restored with a mismatched digest.",
+    "Boundary: A drill cannot force reader migration, acceptance, implementation, closure, publication, or an operating outcome.",
+    "Next action: Retain Louisiana Nextlink adoption legacy artifacts behind append-only tombstones and verify recovery by exact digest without reactivating readers."
+  ],
+  "why_it_matters": "The record makes sustained federation failure, maintenance, emergency rollout, and long-term recovery auditable without granting operational controls evidence or editorial authority.",
+  "ftfn_relevance": [
+    "Preserves fixed integrity thresholds through sustained failure and emergency maintenance.",
+    "Separates recusal and precedent from automatic blame, acceptance, and publication.",
+    "Keeps rollout and long-term recovery reproducible, append-only, and reversible."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Every retention, tombstone, restore, and disaster-recovery fixture is synthetic.",
+    "Retired artifacts cannot be deleted, hidden, silently reactivated, or restored with a mismatched digest.",
+    "A drill cannot force reader migration, acceptance, implementation, closure, publication, or an operating outcome.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-montana-bead-final-proposal-january-2026",
+  "supporting_source_ids": [
+    "source-57g-montana-bead-final-proposal-january-2026",
+    "source-57g-montana-deployment-projects-csv",
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-subgrantees-csv",
+    "source-57g-montana-cai-csv",
+    "source-57f-montana-bead-resource-index-august-2026",
+    "source-57f-montana-leo-quarterly-instructions-june-2026",
+    "source-57e-montana-quarterly-report-instructions-june-2026",
+    "source-57e-montana-project-monitoring-guide-june-2026",
+    "source-57b-louisiana-nextlink-first-bead-tower",
+    "source-57b-louisiana-starlink-bead-agreement"
+  ],
+  "supporting_official_urls": [
+    "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+  ],
+  "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+  "local_capture_path": "/downloads/federation-remediation-witness-rotation-recusal-time-holdover-coordinated-rollout-legacy-recovery-2026/official-links/18-phase57y-record.txt",
+  "archive_member": "official-links/18-phase57y-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-10"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "research-doc-57w-amtrak-reliability-post-compromise-artifact-reissuance-reader-migration",
+  "collection_id": "research-collection-quorum-ceremonies-witness-availability-fork-accountability-time-failover-build-provenance-reissuance-2026",
+  "title": "Amtrak named-asset reliability receives lineage-preserving artifact re-issuance",
+  "slug": "57w-amtrak-reliability-post-compromise-artifact-reissuance-reader-migration",
+  "record_status": "Published",
+  "publisher": "National Railroad Passenger Corporation",
+  "publication_date": "2026-08-10",
+  "document_type": "Data Release",
+  "summary": "A distinct artifact is re-issued only after threshold authorization, witness catch-up, federated time, reproducible build provenance, and independent re-verification; compromised lineage remains visible and inactive while reader migration remains unactivated. Denominator: One re-issuance schema, twenty-nine adversarial cases, eight bounded preservation routes, twenty-one explicit rejections, and zero production re-issuances or reader migrations.",
+  "key_findings": [
+    "Evidence stage: Post-compromise artifact re-issuance and reader-migration controls.",
+    "Finding: A distinct artifact is re-issued only after threshold authorization, witness catch-up, federated time, reproducible build provenance, and independent re-verification; compromised lineage remains visible and inactive while reader migration remains unactivated.",
+    "Denominator: One re-issuance schema, twenty-nine adversarial cases, eight bounded preservation routes, twenty-one explicit rejections, and zero production re-issuances or reader migrations.",
+    "Boundary: Re-issuance and reader-migration receipts are synthetic and do not report a production compromise.",
+    "Boundary: Lineage loss, artifact reuse, rewrite, retroactive trust, missing authorization or proof, activation, publication, closure, attribution, or outcome claims reject.",
+    "Boundary: The compromised artifact remains preserved as compromised history; it is never rewritten or silently re-trusted.",
+    "Next action: Re-issue Amtrak named-asset reliability artifacts with an explicit compromised-lineage link and migrate readers only after separately governed activation."
+  ],
+  "why_it_matters": "The record makes quorum lifecycle, witness availability, fork handling, time failover, build provenance, and post-compromise re-issuance independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Keeps member lifecycle and emergency ceremonies at the fixed three-of-five threshold.",
+    "Excludes stale witnesses until append-only catch-up and quarantines attributable forks without automatic blame.",
+    "Binds three reproducible verifier builds and preserves compromised lineage through inactive re-issuance migration."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Re-issuance and reader-migration receipts are synthetic and do not report a production compromise.",
+    "Lineage loss, artifact reuse, rewrite, retroactive trust, missing authorization or proof, activation, publication, closure, attribution, or outcome claims reject.",
+    "The compromised artifact remains preserved as compromised history; it is never rewritten or silently re-trusted.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Mobility",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57f-amtrak-stations-alp-fy24-29",
+  "supporting_source_ids": [
+    "source-57f-amtrak-stations-alp-fy24-29",
+    "source-57b-amtrak-ada-progress-june-2026",
+    "source-57e-amtrak-accessibility-progress-june-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf"
+  ],
+  "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+  "local_capture_path": "/downloads/quorum-ceremonies-witness-availability-fork-accountability-time-failover-build-provenance-reissuance-2026/official-links/12-phase57w-record.txt",
+  "archive_member": "official-links/12-phase57w-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-10"
+}

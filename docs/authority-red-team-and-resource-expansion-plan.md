@@ -8,9 +8,9 @@ Run a skeptical authority review of the current FTFN site and define the next ex
 
 This is not a launch approval. It is a plan for turning a credible static MVP into a comprehensive resource.
 
-Phase 39, Phase 40, Phase 49, and Phase 50 update:
+Phase 39, Phase 40, Phase 49, Phase 50, Phase 51, and Phase 53 update:
 
-The source-count and self-updating findings below are a pre-Phase 39 audit snapshot. Phase 39 responded by expanding the source library from 25 to 55 records, adding watch-lane and live-access source metadata, adding `/atlas/source-coverage/`, expanding `/atlas/source-monitor/` with health and probe-readiness states, adding `npm run source:health`, and turning local system evidence sections into dossier-style tables. Phase 40 added `Cybersecurity` and `Discovery Technologies`, expanded the source library to 66 records, and added stronger Discovery Technologies and local dossier source anchors. Phase 49 expanded the source library to 102 records. Phase 50B completed six bounded `In Review` additions spanning a funding opportunity, regional dataset, federal award, research award, commodity-specific gallium record, and named Toronto application. The remaining red-team concerns are incomplete multi-constraint local trails, broad `In Review` records that need dated repair, no live polling, no public update log, and no automated publishing.
+The source-count and self-updating findings below are a pre-Phase 39 audit snapshot. Phase 39 responded by expanding the source library from 25 to 55 records, adding watch-lane and live-access source metadata, adding `/atlas/source-coverage/`, expanding `/atlas/source-monitor/` with health and probe-readiness states, adding `npm run source:health`, and turning local system evidence sections into dossier-style tables. Phase 40 added `Cybersecurity` and `Discovery Technologies`, expanded the source library to 66 records, and added stronger Discovery Technologies and local dossier source anchors. Phase 49 expanded the source library to 102 records. Phase 50B completed six bounded `In Review` additions. Phases 51A through 51C added twelve local records, bringing the library to 114 sources and 33 signals across utility planning, large-load service, named energization, provider water, industrial wastewater, municipal planning, facility delivery, workforce cohorts, servicing, committee, and delivery layers. Phase 52A added the public update log and data exports. Phase 53 promoted six bounded records and brought the public core to nine Published signals. The remaining red-team concerns are unresolved downstream permits and outcomes, Phase 54 release QA, no live polling, and no automated publishing.
 
 ## Red-Team Standard
 
@@ -606,16 +606,16 @@ FTFN is authoritative enough for broader public sharing when:
 
 ## Recommended Next Step
 
-Run Phase 41: Private Update Queue and Dated Signal Repair.
+Run Phase 54 release QA and preview-gate review.
 
 Do not launch yet. Do not add ingestion yet. Do not add numeric 42/59 scoring yet.
 
 The highest-value next work is:
 
-1. Recheck the review-due and claim-critical sources.
-2. Select high-priority probe-ready sources for a private source-change queue.
-3. Add named local records for Arizona power/water/permitting and Ontario development/servicing/completions.
-4. Repair broad In Review records into dated source-backed signals.
-5. Keep local-system conclusions cautious until record-level evidence exists.
+1. Run the complete content, source-health, Astro, and production-build suite.
+2. Test desktop and mobile reader journeys, accessibility, and compact-header touch targets.
+3. Verify Published and noindex boundaries across routes, sitemap, robots, canonical metadata, update log, and exports.
+4. Prepare the v0.2 launch note and limitations statement.
+5. Request explicit approval before any preview deployment, DNS, or public launch action.
 
-That path moves FTFN toward being the primary resource for these topics without pretending automation or volume equals authority.
+That path tests whether the nine-record public core and trust surfaces work as a release, while the unresolved local trails remain dated monitors.

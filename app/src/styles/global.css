@@ -64,6 +64,10 @@ p {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
   font-weight: 800;
   letter-spacing: 0;
   text-decoration: none;
@@ -72,12 +76,18 @@ p {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-3);
+  gap: var(--space-2);
   color: var(--color-muted);
   font-size: 0.95rem;
 }
 
 .nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding-inline: var(--space-1);
   text-decoration: none;
 }
 
@@ -204,14 +214,25 @@ p {
   font-weight: 700;
 }
 
-.filter-panel select {
+.filter-panel select,
+.filter-panel input {
   min-height: 2.4rem;
+  padding-inline: var(--space-2);
   border: 1px solid var(--color-line);
   border-radius: var(--radius-sm);
   background: var(--color-surface);
   color: var(--color-ink);
   font: inherit;
   font-weight: 500;
+}
+
+.filter-panel__search {
+  flex: 1 1 260px;
+}
+
+.filter-panel__reset {
+  align-self: end;
+  min-height: 2.4rem;
 }
 
 .meta-row {
@@ -654,11 +675,74 @@ p {
   padding-block: var(--space-5);
 }
 
+.review-hero {
+  padding-bottom: var(--space-5);
+}
+
+.review-hero h1 {
+  max-width: 980px;
+  margin-block: var(--space-2) var(--space-3);
+  font-size: clamp(2.7rem, 7vw, 5.8rem);
+  line-height: 0.96;
+}
+
+.review-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-line);
+}
+
+.review-subnav a {
+  color: var(--color-ink-soft);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.review-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-7);
+}
+
+.prose-page {
+  max-width: 860px;
+}
+
+.prose-page h2,
+.journey-list h2 {
+  margin-top: var(--space-6);
+}
+
+.timeline-list,
+.journey-list {
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.timeline-list > li,
+.journey-list > li {
+  padding: 0 0 var(--space-5) var(--space-3);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.accessible-note {
+  font-size: 1.06rem;
+  line-height: 1.75;
+}
+
 @media (max-width: 720px) {
   .site-header__inner {
     align-items: flex-start;
     flex-direction: column;
-    padding-block: var(--space-4);
+    gap: 0;
+    padding-block: var(--space-2);
   }
 
   .page-section,
@@ -682,7 +766,8 @@ p {
   .signal-grid,
   .two-column-section,
   .briefing-band,
-  .status-panel {
+  .status-panel,
+  .review-columns {
     grid-template-columns: 1fr;
   }
 

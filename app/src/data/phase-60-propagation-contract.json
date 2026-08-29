@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "phase": "60",
+  "captured_date": "2026-08-11",
+  "contract_id": "phase-60-evidence-to-decision-propagation",
+  "required_sequence": [
+    "source_check",
+    "receipt",
+    "signal_decision",
+    "canonical_dossier",
+    "reader_pathway",
+    "dependency_map",
+    "outcomes_watch",
+    "update_log",
+    "git_backed_release_validation"
+  ],
+  "decision_rules": {
+    "material_change": "Update every affected reader surface in the same reviewed change set. A material source record may not change only the signal while leaving canonical synthesis stale.",
+    "no_material_change": "Retain the prior record state, publish a bounded receipt, propagate the check through the assigned surfaces, and set the next exact artifact and date.",
+    "watch_change": "Issue a Watch Note when the expected artifact, source authority, cadence, or next date changes without changing the underlying public record.",
+    "correction": "Preserve the prior claim and correction trail, update every affected surface, and keep the change reversible in Git.",
+    "blocked_check": "A blocked check requires a visible receipt naming the attempted surface, blocker, evidence boundary, and next action; silence is not a valid state."
+  },
+  "publication_boundary": "No source check, receipt, private database row, scheduled task, or generated draft can publish directly. Human review, static serialization, release validation, and a Git commit remain mandatory.",
+  "seed_propagation_proof": {
+    "proof_id": "60-PROP-DARPA-2026-08-11",
+    "receipt_id": "receipt-58-darpa-2026-08-11-no-material-change",
+    "source_id": "source-darpa-lift-challenge-2026",
+    "signal_id": "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+    "signal_decision": "retain_in_review",
+    "canonical_dossier_ids": [
+      "briefing-adoption-003-autonomy-evtol",
+      "briefing-outcomes-watch-001-what-actually-changed",
+      "briefing-evidence-cycle-001-operating-baseline"
+    ],
+    "reader_pathway_ids": [
+      "reader-pathway-autonomy-regulation-to-service"
+    ],
+    "dependency_map_ids": [
+      "dependency-map-technology-adoption-is-not-operating-outcome"
+    ],
+    "update_id": "update-2026-08-11-phase-60-evidence-to-decision-cycle",
+    "next_check_date": "2026-08-14",
+    "propagation_status": "complete",
+    "bounded_result": "The August 11 canonical-page check changed source freshness and reader-visible watch state without changing the In Review result signal or claiming that results do not exist."
+  },
+  "integrity_requirements": {
+    "receipt_must_resolve": true,
+    "source_and_signal_must_resolve": true,
+    "signal_status_must_match_receipt": true,
+    "assigned_briefings_must_reference_signal": true,
+    "assigned_pathways_must_reference_source_receipt_and_cycle_briefing": true,
+    "assigned_maps_must_reference_source_and_receipt": true,
+    "update_must_name_all_propagated_surfaces": true,
+    "future_checks_must_not_have_precreated_receipts": true
+  },
+  "last_operated_date": "2026-08-23",
+  "cycle_decision_proofs": [
+    {
+      "proof_id": "60-PROP-DARPA-2026-08-23",
+      "cycle_item_id": "60-CYCLE-DARPA-RESULTS",
+      "receipt_id": "receipt-60-darpa-2026-08-23-results",
+      "source_id": "source-darpa-lift-challenge-2026",
+      "signal_id": "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+      "signal_decision": "promote_to_published_measured_result",
+      "canonical_dossier_ids": [
+        "briefing-adoption-003-autonomy-evtol",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "update_id": "update-2026-08-23-phase-60b-evidence-decisions",
+      "next_check_date": "2026-09-23",
+      "propagation_status": "complete",
+      "bounded_result": "Official measured competition results and prize decisions publish; no evidence transfers to Waymo or to an operating-outcome stage."
+    },
+    {
+      "proof_id": "60-PROP-SLF-2026-08-15",
+      "cycle_item_id": "60-CYCLE-SPACE-COAST-SLF-LICENCE",
+      "receipt_id": "receipt-60-slf-2026-08-15-no-material-change",
+      "source_id": "source-faa-shuttle-landing-facility-license",
+      "signal_id": "signal-shuttle-landing-facility-license-status-watch",
+      "signal_decision": "retain_in_review_no_material_change",
+      "canonical_dossier_ids": [
+        "briefing-local-conversion-004-space-coast",
+        "briefing-project-conversion-004-space-coast-authority",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-local-authorization-is-not-operation"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "named_file_ids": [
+        "61-PROJECT-SPACE-COAST-AUTHORITY"
+      ],
+      "update_id": "update-2026-08-23-phase-60b-evidence-decisions",
+      "next_check_date": "2026-09-15",
+      "propagation_status": "complete",
+      "bounded_result": "The formal site-licence disposition remains unresolved; no named-file stage, matrix cell, mission, operation, or utilization state changes."
+    }
+  ]
+}

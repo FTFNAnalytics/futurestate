@@ -1,0 +1,120 @@
+{
+  "phase": "57L",
+  "captured_date": "2026-08-08",
+  "promoted_document_ids": [
+    "research-doc-57l-amtrak-12-contract-fields-classified",
+    "research-doc-57l-amtrak-coverage-state-distribution",
+    "research-doc-57l-amtrak-2-first-eligible-record-queues",
+    "research-doc-57l-amtrak-12-field-resolution-actions",
+    "research-doc-57l-amtrak-zero-eligible-records-or-trigger-events",
+    "research-doc-57l-broadband-19-contract-fields-classified",
+    "research-doc-57l-broadband-coverage-state-distribution",
+    "research-doc-57l-broadband-3-first-eligible-record-queues",
+    "research-doc-57l-broadband-19-field-resolution-actions",
+    "research-doc-57l-broadband-zero-eligible-records-or-trigger-events",
+    "research-doc-57l-hanford-12-contract-fields-classified",
+    "research-doc-57l-hanford-coverage-state-distribution",
+    "research-doc-57l-hanford-1-first-eligible-record-queues",
+    "research-doc-57l-hanford-12-field-resolution-actions",
+    "research-doc-57l-hanford-zero-eligible-records-or-trigger-events",
+    "research-doc-57l-nnsa-17-contract-fields-classified",
+    "research-doc-57l-nnsa-coverage-state-distribution",
+    "research-doc-57l-nnsa-3-first-eligible-record-queues",
+    "research-doc-57l-nnsa-17-field-resolution-actions",
+    "research-doc-57l-nnsa-zero-eligible-records-or-trigger-events"
+  ],
+  "promoted_signal_ids": [
+    "signal-57l-amtrak-12-contract-fields-classified",
+    "signal-57l-amtrak-coverage-state-distribution",
+    "signal-57l-amtrak-2-first-eligible-record-queues",
+    "signal-57l-amtrak-12-field-resolution-actions",
+    "signal-57l-amtrak-zero-eligible-records-or-trigger-events",
+    "signal-57l-broadband-19-contract-fields-classified",
+    "signal-57l-broadband-coverage-state-distribution",
+    "signal-57l-broadband-3-first-eligible-record-queues",
+    "signal-57l-broadband-19-field-resolution-actions",
+    "signal-57l-broadband-zero-eligible-records-or-trigger-events",
+    "signal-57l-hanford-12-contract-fields-classified",
+    "signal-57l-hanford-coverage-state-distribution",
+    "signal-57l-hanford-1-first-eligible-record-queues",
+    "signal-57l-hanford-12-field-resolution-actions",
+    "signal-57l-hanford-zero-eligible-records-or-trigger-events",
+    "signal-57l-nnsa-17-contract-fields-classified",
+    "signal-57l-nnsa-coverage-state-distribution",
+    "signal-57l-nnsa-3-first-eligible-record-queues",
+    "signal-57l-nnsa-17-field-resolution-actions",
+    "signal-57l-nnsa-zero-eligible-records-or-trigger-events"
+  ],
+  "held_document_ids": [
+    "research-doc-57l-preserved-amtrak-pids",
+    "research-doc-57l-preserved-amtrak-reliability",
+    "research-doc-57l-preserved-la-nextlink-adoption",
+    "research-doc-57l-preserved-la-starlink-adoption",
+    "research-doc-57l-preserved-mt-bead-quarter",
+    "research-doc-57l-preserved-hanford-mass-balance",
+    "research-doc-57l-preserved-nnsa-qualified-rate",
+    "research-doc-57l-preserved-nnsa-accepted-capacity",
+    "research-doc-57l-preserved-nnsa-gao-baseline"
+  ],
+  "held_signal_ids": [
+    "signal-57l-preserved-amtrak-pids",
+    "signal-57l-preserved-amtrak-reliability",
+    "signal-57l-preserved-la-nextlink-adoption",
+    "signal-57l-preserved-la-starlink-adoption",
+    "signal-57l-preserved-mt-bead-quarter",
+    "signal-57l-preserved-hanford-mass-balance",
+    "signal-57l-preserved-nnsa-qualified-rate",
+    "signal-57l-preserved-nnsa-accepted-capacity",
+    "signal-57l-preserved-nnsa-gao-baseline"
+  ],
+  "inherited_hold_lineage": [
+    {
+      "action_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-11",
+      "parent_hold_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-10",
+      "reopening_contract_id": "REOPEN-AMTRAK-PIDS"
+    },
+    {
+      "action_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-10",
+      "parent_hold_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-09",
+      "reopening_contract_id": "REOPEN-AMTRAK-RELIABILITY"
+    },
+    {
+      "action_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-11",
+      "parent_hold_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-10",
+      "reopening_contract_id": "REOPEN-LA-NEXTLINK-ADOPTION"
+    },
+    {
+      "action_key": "LA-BEAD-STARLINK-HOLD-2026-11",
+      "parent_hold_key": "LA-BEAD-STARLINK-HOLD-2026-10",
+      "reopening_contract_id": "REOPEN-LA-STARLINK-ADOPTION"
+    },
+    {
+      "action_key": "MT-BEAD-QUARTERLY-HOLD-2026-11",
+      "parent_hold_key": "MT-BEAD-QUARTERLY-HOLD-2026-10",
+      "reopening_contract_id": "REOPEN-MT-BEAD-QUARTER"
+    },
+    {
+      "action_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-08",
+      "parent_hold_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-07",
+      "reopening_contract_id": "REOPEN-HANFORD-MASS-BALANCE"
+    },
+    {
+      "action_key": "NNSA-PIT-RATE-HOLD-2026-11",
+      "parent_hold_key": "NNSA-PIT-RATE-HOLD-2026-10",
+      "reopening_contract_id": "REOPEN-NNSA-QUALIFIED-RATE"
+    },
+    {
+      "action_key": "NNSA-PIT-PEIS-HOLD-2026-11",
+      "parent_hold_key": "NNSA-PIT-PEIS-HOLD-2026-10",
+      "reopening_contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY"
+    },
+    {
+      "action_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-12",
+      "parent_hold_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-11",
+      "reopening_contract_id": "REOPEN-NNSA-GAO-BASELINE"
+    }
+  ],
+  "exact_target_artifacts_acquired": 0,
+  "eligible_records_accepted": 0,
+  "decision": "Twenty field-coverage, intake-queue, and exception-resolution controls publish. Nine inherited holds remain In Review; partial coverage is non-triggering, no complete eligible record is accepted, and no contact, scope, implementation, or closure change is recorded."
+}

@@ -157,6 +157,12 @@ const evidenceGapStatus = z.enum([
 ]);
 
 const evidenceGapPriority = z.enum(["High", "Medium", "Low"]);
+const evidenceGapDecision = z.enum([
+  "Source Added",
+  "Narrowed",
+  "Dated Hold",
+  "Resolved"
+]);
 
 const dependencyMapType = z.enum([
   "Dependency Stack",
@@ -290,10 +296,70 @@ const localSystemType = z.enum([
   "Infrastructure System"
 ]);
 
+const updateEntryType = z.enum([
+  "Correction",
+  "Source Refresh",
+  "Signal Repair",
+  "Publication Promotion",
+  "Archive",
+  "Research Collection"
+]);
+
+const changeReceiptType = z.enum([
+  "Change Note",
+  "Watch Note",
+  "Correction",
+  "No Material Change"
+]);
+
+const changeMateriality = z.enum([
+  "Material record change",
+  "Watch posture change",
+  "Correction",
+  "No record-state change"
+]);
+
+const researchDocumentType = z.enum([
+  "Budget Justification",
+  "Broad Agency Announcement",
+  "Agency Strategy",
+  "Agency Announcement",
+  "Federal Award Record",
+  "Contract Announcement",
+  "Program Milestone",
+  "Standards and Testbed Record",
+  "Oversight Report",
+  "Local Government Record",
+  "Regulatory Decision",
+  "Procurement Channel",
+  "Policy Memorandum",
+  "National Strategy",
+  "Threat Assessment",
+  "Action Plan",
+  "Presidential Memorandum",
+  "Executive Order",
+  "Draft Study",
+  "Congressional Primer",
+  "Research Roadmap",
+  "Technical Report",
+  "Data Release"
+]);
+
+const researchCaptureStatus = z.enum([
+  "Original file captured",
+  "Official page captured",
+  "Official link record"
+]);
+
 const requiredStrings = z.array(z.string()).min(1);
 const requiredFrameworkLayers = z.array(frameworkLayer).min(1);
 const requiredTopics = z.array(topicPillar).min(1);
 const requiredConstraints = z.array(constraintTag).min(1);
+const readerPathwayDependency = z.object({
+  stage: z.string(),
+  current_state: z.string(),
+  boundary: z.string()
+});
 
 const signals = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/signals" }),
@@ -469,6 +535,15 @@ const evidenceGaps = defineCollection({
     related_source_ids: z.array(z.string()).default([]),
     related_signal_ids: z.array(z.string()).default([]),
     related_local_system_ids: z.array(z.string()).default([]),
+    latest_review: z.object({
+      phase: z.string(),
+      decision: evidenceGapDecision,
+      review_date: z.coerce.date(),
+      named_records: requiredStrings,
+      stage_result: z.string(),
+      stop_rule: z.string(),
+      next_check_date: z.coerce.date().optional()
+    }).optional(),
     notes: z.string().optional()
   })
 });
@@ -512,6 +587,102 @@ const dependencyMaps = defineCollection({
   })
 });
 
+const updates = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/updates" }),
+  schema: z.object({
+    id: z.string(),
+    effective_date: z.coerce.date(),
+    entry_type: updateEntryType,
+    title: z.string(),
+    summary: z.string(),
+    affected_record_ids: requiredStrings,
+    related_paths: z.array(z.string()).default([]),
+    evidence_note: z.string(),
+    receipt_id: z.string().optional(),
+    receipt_type: changeReceiptType.optional(),
+    materiality: changeMateriality.optional(),
+    source_checked_date: z.coerce.date().optional(),
+    decision_date: z.coerce.date().optional(),
+    prior_state: z.string().optional(),
+    current_state: z.string().optional(),
+    publication_effect: z.string().optional(),
+    next_check_date: z.coerce.date().optional(),
+    work_package: z.string().optional()
+  })
+});
+
+const researchCollections = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/research-collections" }),
+  schema: z.object({
+    id: z.string(),
+    title: z.string(),
+    slug: z.string(),
+    record_status: recordStatus,
+    summary: z.string(),
+    scope: z.string(),
+    captured_date: z.coerce.date(),
+    document_ids: requiredStrings,
+    download_path: z.string(),
+    download_note: z.string(),
+    method_note: z.string()
+  })
+});
+
+const researchDocuments = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/research-documents" }),
+  schema: z.object({
+    id: z.string(),
+    collection_id: z.string(),
+    title: z.string(),
+    slug: z.string(),
+    record_status: recordStatus,
+    publisher: z.string(),
+    publication_date: z.coerce.date().nullable(),
+    document_type: researchDocumentType,
+    summary: z.string(),
+    key_findings: requiredStrings,
+    why_it_matters: z.string(),
+    ftfn_relevance: requiredStrings,
+    evidence_limits: requiredStrings,
+    primary_topics: requiredTopics,
+    framework_layers: requiredFrameworkLayers,
+    constraint_tags: requiredConstraints,
+    source_id: z.string(),
+    official_url: z.string().url(),
+    local_capture_path: z.string(),
+    archive_member: z.string(),
+    capture_status: researchCaptureStatus,
+    captured_date: z.coerce.date()
+  })
+});
+
+const readerPathways = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/reader-pathways" }),
+  schema: z.object({
+    id: z.string(),
+    title: z.string(),
+    slug: z.string(),
+    record_status: recordStatus.default("Published"),
+    summary: z.string(),
+    current_state_summary: z.string(),
+    current_state: requiredStrings,
+    primary_topics: requiredTopics,
+    topic_ids: z.array(z.string()).default([]),
+    local_system_ids: z.array(z.string()).default([]),
+    signal_ids: requiredStrings,
+    source_ids: requiredStrings,
+    organization_ids: z.array(z.string()).default([]),
+    technology_ids: z.array(z.string()).default([]),
+    briefing_ids: requiredStrings,
+    dependency_map_ids: requiredStrings,
+    research_collection_ids: requiredStrings,
+    evidence_gap_ids: requiredStrings,
+    dependency_stack: z.array(readerPathwayDependency).min(1),
+    evidence_limits: requiredStrings,
+    next_records: requiredStrings
+  })
+});
+
 export const collections = {
   signals,
   sources,
@@ -521,5 +692,9 @@ export const collections = {
   localSystems,
   briefings,
   evidenceGaps,
-  dependencyMaps
+  dependencyMaps,
+  updates,
+  researchCollections,
+  researchDocuments,
+  readerPathways
 };

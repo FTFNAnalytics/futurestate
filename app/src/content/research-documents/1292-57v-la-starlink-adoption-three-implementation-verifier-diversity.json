@@ -1,0 +1,71 @@
+{
+  "id": "research-doc-57v-la-starlink-adoption-three-implementation-verifier-diversity",
+  "collection_id": "research-collection-threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026",
+  "title": "Louisiana Starlink adoption receives three-implementation verifier conformance",
+  "slug": "57v-la-starlink-adoption-three-implementation-verifier-diversity",
+  "record_status": "Published",
+  "publisher": "National Telecommunications and Information Administration",
+  "publication_date": "2026-08-10",
+  "document_type": "Data Release",
+  "summary": "At least three independently operated verifier implementations from distinct codebase families must reproduce the same artifact digest, integrity-only decision, and deterministic result digest; every divergence fails closed without majority substitution. Denominator: One verifier-diversity schema, twenty-four adversarial cases, seven valid or preservation routes, seventeen explicit rejections, and zero production verifier runs executed.",
+  "key_findings": [
+    "Evidence stage: Verifier-diversity and reproducible-conformance controls.",
+    "Finding: At least three independently operated verifier implementations from distinct codebase families must reproduce the same artifact digest, integrity-only decision, and deterministic result digest; every divergence fails closed without majority substitution.",
+    "Denominator: One verifier-diversity schema, twenty-four adversarial cases, seven valid or preservation routes, seventeen explicit rejections, and zero production verifier runs executed.",
+    "Boundary: Fixture verifier identities and results are synthetic and do not certify production software.",
+    "Boundary: Insufficient diversity, shared codebases or operators, digest or decision divergence, conformance failure, nondeterminism, unknown or revoked implementations, rewriting, activation, publication, closure, or evidence inflation reject.",
+    "Boundary: Verifier agreement establishes bounded reproducibility only, not evidence acceptance, publication, implementation, closure, attribution, or outcomes.",
+    "Next action: Require reproducible Louisiana Starlink adoption integrity results across at least three independent implementations before reader acceptance."
+  ],
+  "why_it_matters": "The record makes release quorum, witness independence, split-view detection, temporal ordering, verifier reproducibility, and compromise recovery independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Requires three-of-five release authorization without same-actor or same-domain quorum.",
+    "Federates independently witnessed checkpoints through cross-log gossip and trusted time.",
+    "Requires three independent verifier implementations and clean compromise recovery without retroactive trust."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Fixture verifier identities and results are synthetic and do not certify production software.",
+    "Insufficient diversity, shared codebases or operators, digest or decision divergence, conformance failure, nondeterminism, unknown or revoked implementations, rewriting, activation, publication, closure, or evidence inflation reject.",
+    "Verifier agreement establishes bounded reproducibility only, not evidence acceptance, publication, implementation, closure, attribution, or outcomes.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-montana-bead-final-proposal-january-2026",
+  "supporting_source_ids": [
+    "source-57g-montana-bead-final-proposal-january-2026",
+    "source-57g-montana-deployment-projects-csv",
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-subgrantees-csv",
+    "source-57g-montana-cai-csv",
+    "source-57f-montana-bead-resource-index-august-2026",
+    "source-57f-montana-leo-quarterly-instructions-june-2026",
+    "source-57e-montana-quarterly-report-instructions-june-2026",
+    "source-57e-montana-project-monitoring-guide-june-2026",
+    "source-57b-louisiana-nextlink-first-bead-tower",
+    "source-57b-louisiana-starlink-bead-agreement"
+  ],
+  "supporting_official_urls": [
+    "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+  ],
+  "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+  "local_capture_path": "/downloads/threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026/official-links/23-phase57v-record.txt",
+  "archive_member": "official-links/23-phase57v-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-10"
+}

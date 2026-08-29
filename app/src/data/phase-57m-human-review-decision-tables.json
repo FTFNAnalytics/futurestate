@@ -1,0 +1,1074 @@
+{
+  "phase": "57M",
+  "captured_date": "2026-08-08",
+  "registry_type": "Human-review decision tables",
+  "table_count": 9,
+  "decision_types": [
+    "accept",
+    "reject",
+    "return_for_clarification",
+    "privacy_hold",
+    "authority_hold",
+    "period_hold"
+  ],
+  "decision_row_count": 54,
+  "decision_type_counts": {
+    "accept": 9,
+    "reject": 9,
+    "return_for_clarification": 9,
+    "privacy_hold": 9,
+    "authority_hold": 9,
+    "period_hold": 9
+  },
+  "actual_candidate_packets_evaluated": 0,
+  "actual_accept_decisions": 0,
+  "actual_reopening_triggers_fired": 0,
+  "automated_publication_allowed": false,
+  "review_rule": "Decision rows are workflow rehearsals, not decisions on evidence. Even an accept-path rehearsal leads only to a separate human publication review and never fires a trigger automatically.",
+  "tables": [
+    {
+      "table_id": "DECISION-TABLE-01-REOPEN-AMTRAK-PIDS",
+      "contract_id": "REOPEN-AMTRAK-PIDS",
+      "queue_id": "INTAKE-01-REOPEN-AMTRAK-PIDS",
+      "evidence_rail": "Amtrak",
+      "phase57l_hold_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-11",
+      "actual_candidate_packets_evaluated": 0,
+      "actual_accept_decisions": 0,
+      "trigger_state": "not_fired",
+      "rows": [
+        {
+          "decision_id": "REOPEN-AMTRAK-PIDS-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "rehearsal_only": true,
+          "scenario": "Every required field is source-explicit in one candidate packet and all identity, schema, definition, unit, period, privacy, authority, and acceptance checks pass.",
+          "minimum_conditions": [
+            "all required fields present in one packet",
+            "eligible source authority",
+            "compatible identity, schema, definition, unit, method, denominator, and completed period",
+            "privacy and acceptance boundaries cleared",
+            "named human reviewer signs the separate publication review"
+          ],
+          "resulting_state": "ready_for_separate_publication_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-AMTRAK-PIDS-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "rehearsal_only": true,
+          "scenario": "A named disqualifier, incompatible definition, cross-record assembly, fabricated value, or prohibited transformation is present.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "rejected_non_eligible",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-AMTRAK-PIDS-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "rehearsal_only": true,
+          "scenario": "A required label, value, definition, source citation, identity, unit, method, or denominator is missing or ambiguous.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "returned_without_trigger",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-AMTRAK-PIDS-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "rehearsal_only": true,
+          "scenario": "A privacy review or suppression-safe public disposition is absent, ambiguous, or exposes prohibited detail.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_privacy_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-AMTRAK-PIDS-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "rehearsal_only": true,
+          "scenario": "The supplied authority cannot establish the required acceptance, disposition, or closure state.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_named_authority",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-AMTRAK-PIDS-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "rehearsal_only": true,
+          "scenario": "Required fields do not share the same completed reporting period or an event date remains outside the contract boundary.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_compatible_period",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "table_id": "DECISION-TABLE-02-REOPEN-AMTRAK-RELIABILITY",
+      "contract_id": "REOPEN-AMTRAK-RELIABILITY",
+      "queue_id": "INTAKE-02-REOPEN-AMTRAK-RELIABILITY",
+      "evidence_rail": "Amtrak",
+      "phase57l_hold_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-10",
+      "actual_candidate_packets_evaluated": 0,
+      "actual_accept_decisions": 0,
+      "trigger_state": "not_fired",
+      "rows": [
+        {
+          "decision_id": "REOPEN-AMTRAK-RELIABILITY-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "rehearsal_only": true,
+          "scenario": "Every required field is source-explicit in one candidate packet and all identity, schema, definition, unit, period, privacy, authority, and acceptance checks pass.",
+          "minimum_conditions": [
+            "all required fields present in one packet",
+            "eligible source authority",
+            "compatible identity, schema, definition, unit, method, denominator, and completed period",
+            "privacy and acceptance boundaries cleared",
+            "named human reviewer signs the separate publication review"
+          ],
+          "resulting_state": "ready_for_separate_publication_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-AMTRAK-RELIABILITY-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "rehearsal_only": true,
+          "scenario": "A named disqualifier, incompatible definition, cross-record assembly, fabricated value, or prohibited transformation is present.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "rejected_non_eligible",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-AMTRAK-RELIABILITY-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "rehearsal_only": true,
+          "scenario": "A required label, value, definition, source citation, identity, unit, method, or denominator is missing or ambiguous.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "returned_without_trigger",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-AMTRAK-RELIABILITY-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "rehearsal_only": true,
+          "scenario": "A privacy review or suppression-safe public disposition is absent, ambiguous, or exposes prohibited detail.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_privacy_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-AMTRAK-RELIABILITY-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "rehearsal_only": true,
+          "scenario": "The supplied authority cannot establish the required acceptance, disposition, or closure state.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_named_authority",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-AMTRAK-RELIABILITY-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "rehearsal_only": true,
+          "scenario": "Required fields do not share the same completed reporting period or an event date remains outside the contract boundary.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_compatible_period",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "table_id": "DECISION-TABLE-03-REOPEN-LA-NEXTLINK-ADOPTION",
+      "contract_id": "REOPEN-LA-NEXTLINK-ADOPTION",
+      "queue_id": "INTAKE-03-REOPEN-LA-NEXTLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "phase57l_hold_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-11",
+      "actual_candidate_packets_evaluated": 0,
+      "actual_accept_decisions": 0,
+      "trigger_state": "not_fired",
+      "rows": [
+        {
+          "decision_id": "REOPEN-LA-NEXTLINK-ADOPTION-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "rehearsal_only": true,
+          "scenario": "Every required field is source-explicit in one candidate packet and all identity, schema, definition, unit, period, privacy, authority, and acceptance checks pass.",
+          "minimum_conditions": [
+            "all required fields present in one packet",
+            "eligible source authority",
+            "compatible identity, schema, definition, unit, method, denominator, and completed period",
+            "privacy and acceptance boundaries cleared",
+            "named human reviewer signs the separate publication review"
+          ],
+          "resulting_state": "ready_for_separate_publication_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-LA-NEXTLINK-ADOPTION-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "rehearsal_only": true,
+          "scenario": "A named disqualifier, incompatible definition, cross-record assembly, fabricated value, or prohibited transformation is present.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "rejected_non_eligible",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-LA-NEXTLINK-ADOPTION-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "rehearsal_only": true,
+          "scenario": "A required label, value, definition, source citation, identity, unit, method, or denominator is missing or ambiguous.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "returned_without_trigger",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-LA-NEXTLINK-ADOPTION-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "rehearsal_only": true,
+          "scenario": "A privacy review or suppression-safe public disposition is absent, ambiguous, or exposes prohibited detail.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_privacy_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-LA-NEXTLINK-ADOPTION-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "rehearsal_only": true,
+          "scenario": "The supplied authority cannot establish the required acceptance, disposition, or closure state.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_named_authority",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-LA-NEXTLINK-ADOPTION-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "rehearsal_only": true,
+          "scenario": "Required fields do not share the same completed reporting period or an event date remains outside the contract boundary.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_compatible_period",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "table_id": "DECISION-TABLE-04-REOPEN-LA-STARLINK-ADOPTION",
+      "contract_id": "REOPEN-LA-STARLINK-ADOPTION",
+      "queue_id": "INTAKE-04-REOPEN-LA-STARLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "phase57l_hold_key": "LA-BEAD-STARLINK-HOLD-2026-11",
+      "actual_candidate_packets_evaluated": 0,
+      "actual_accept_decisions": 0,
+      "trigger_state": "not_fired",
+      "rows": [
+        {
+          "decision_id": "REOPEN-LA-STARLINK-ADOPTION-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "rehearsal_only": true,
+          "scenario": "Every required field is source-explicit in one candidate packet and all identity, schema, definition, unit, period, privacy, authority, and acceptance checks pass.",
+          "minimum_conditions": [
+            "all required fields present in one packet",
+            "eligible source authority",
+            "compatible identity, schema, definition, unit, method, denominator, and completed period",
+            "privacy and acceptance boundaries cleared",
+            "named human reviewer signs the separate publication review"
+          ],
+          "resulting_state": "ready_for_separate_publication_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-LA-STARLINK-ADOPTION-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "rehearsal_only": true,
+          "scenario": "A named disqualifier, incompatible definition, cross-record assembly, fabricated value, or prohibited transformation is present.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "rejected_non_eligible",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-LA-STARLINK-ADOPTION-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "rehearsal_only": true,
+          "scenario": "A required label, value, definition, source citation, identity, unit, method, or denominator is missing or ambiguous.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "returned_without_trigger",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-LA-STARLINK-ADOPTION-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "rehearsal_only": true,
+          "scenario": "A privacy review or suppression-safe public disposition is absent, ambiguous, or exposes prohibited detail.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_privacy_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-LA-STARLINK-ADOPTION-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "rehearsal_only": true,
+          "scenario": "The supplied authority cannot establish the required acceptance, disposition, or closure state.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_named_authority",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-LA-STARLINK-ADOPTION-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "rehearsal_only": true,
+          "scenario": "Required fields do not share the same completed reporting period or an event date remains outside the contract boundary.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_compatible_period",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "table_id": "DECISION-TABLE-05-REOPEN-MT-BEAD-QUARTER",
+      "contract_id": "REOPEN-MT-BEAD-QUARTER",
+      "queue_id": "INTAKE-05-REOPEN-MT-BEAD-QUARTER",
+      "evidence_rail": "Broadband",
+      "phase57l_hold_key": "MT-BEAD-QUARTERLY-HOLD-2026-11",
+      "actual_candidate_packets_evaluated": 0,
+      "actual_accept_decisions": 0,
+      "trigger_state": "not_fired",
+      "rows": [
+        {
+          "decision_id": "REOPEN-MT-BEAD-QUARTER-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "rehearsal_only": true,
+          "scenario": "Every required field is source-explicit in one candidate packet and all identity, schema, definition, unit, period, privacy, authority, and acceptance checks pass.",
+          "minimum_conditions": [
+            "all required fields present in one packet",
+            "eligible source authority",
+            "compatible identity, schema, definition, unit, method, denominator, and completed period",
+            "privacy and acceptance boundaries cleared",
+            "named human reviewer signs the separate publication review"
+          ],
+          "resulting_state": "ready_for_separate_publication_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-MT-BEAD-QUARTER-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "rehearsal_only": true,
+          "scenario": "A named disqualifier, incompatible definition, cross-record assembly, fabricated value, or prohibited transformation is present.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "rejected_non_eligible",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-MT-BEAD-QUARTER-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "rehearsal_only": true,
+          "scenario": "A required label, value, definition, source citation, identity, unit, method, or denominator is missing or ambiguous.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "returned_without_trigger",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-MT-BEAD-QUARTER-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "rehearsal_only": true,
+          "scenario": "A privacy review or suppression-safe public disposition is absent, ambiguous, or exposes prohibited detail.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_privacy_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-MT-BEAD-QUARTER-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "rehearsal_only": true,
+          "scenario": "The supplied authority cannot establish the required acceptance, disposition, or closure state.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_named_authority",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-MT-BEAD-QUARTER-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "rehearsal_only": true,
+          "scenario": "Required fields do not share the same completed reporting period or an event date remains outside the contract boundary.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_compatible_period",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "table_id": "DECISION-TABLE-06-REOPEN-HANFORD-MASS-BALANCE",
+      "contract_id": "REOPEN-HANFORD-MASS-BALANCE",
+      "queue_id": "INTAKE-06-REOPEN-HANFORD-MASS-BALANCE",
+      "evidence_rail": "Hanford",
+      "phase57l_hold_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-08",
+      "actual_candidate_packets_evaluated": 0,
+      "actual_accept_decisions": 0,
+      "trigger_state": "not_fired",
+      "rows": [
+        {
+          "decision_id": "REOPEN-HANFORD-MASS-BALANCE-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "rehearsal_only": true,
+          "scenario": "Every required field is source-explicit in one candidate packet and all identity, schema, definition, unit, period, privacy, authority, and acceptance checks pass.",
+          "minimum_conditions": [
+            "all required fields present in one packet",
+            "eligible source authority",
+            "compatible identity, schema, definition, unit, method, denominator, and completed period",
+            "privacy and acceptance boundaries cleared",
+            "named human reviewer signs the separate publication review"
+          ],
+          "resulting_state": "ready_for_separate_publication_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-HANFORD-MASS-BALANCE-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "rehearsal_only": true,
+          "scenario": "A named disqualifier, incompatible definition, cross-record assembly, fabricated value, or prohibited transformation is present.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "rejected_non_eligible",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-HANFORD-MASS-BALANCE-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "rehearsal_only": true,
+          "scenario": "A required label, value, definition, source citation, identity, unit, method, or denominator is missing or ambiguous.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "returned_without_trigger",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-HANFORD-MASS-BALANCE-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "rehearsal_only": true,
+          "scenario": "A privacy review or suppression-safe public disposition is absent, ambiguous, or exposes prohibited detail.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_privacy_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-HANFORD-MASS-BALANCE-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "rehearsal_only": true,
+          "scenario": "The supplied authority cannot establish the required acceptance, disposition, or closure state.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_named_authority",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-HANFORD-MASS-BALANCE-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "rehearsal_only": true,
+          "scenario": "Required fields do not share the same completed reporting period or an event date remains outside the contract boundary.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_compatible_period",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "table_id": "DECISION-TABLE-07-REOPEN-NNSA-QUALIFIED-RATE",
+      "contract_id": "REOPEN-NNSA-QUALIFIED-RATE",
+      "queue_id": "INTAKE-07-REOPEN-NNSA-QUALIFIED-RATE",
+      "evidence_rail": "NNSA",
+      "phase57l_hold_key": "NNSA-PIT-RATE-HOLD-2026-11",
+      "actual_candidate_packets_evaluated": 0,
+      "actual_accept_decisions": 0,
+      "trigger_state": "not_fired",
+      "rows": [
+        {
+          "decision_id": "REOPEN-NNSA-QUALIFIED-RATE-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "rehearsal_only": true,
+          "scenario": "Every required field is source-explicit in one candidate packet and all identity, schema, definition, unit, period, privacy, authority, and acceptance checks pass.",
+          "minimum_conditions": [
+            "all required fields present in one packet",
+            "eligible source authority",
+            "compatible identity, schema, definition, unit, method, denominator, and completed period",
+            "privacy and acceptance boundaries cleared",
+            "named human reviewer signs the separate publication review"
+          ],
+          "resulting_state": "ready_for_separate_publication_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-QUALIFIED-RATE-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "rehearsal_only": true,
+          "scenario": "A named disqualifier, incompatible definition, cross-record assembly, fabricated value, or prohibited transformation is present.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "rejected_non_eligible",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-QUALIFIED-RATE-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "rehearsal_only": true,
+          "scenario": "A required label, value, definition, source citation, identity, unit, method, or denominator is missing or ambiguous.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "returned_without_trigger",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-QUALIFIED-RATE-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "rehearsal_only": true,
+          "scenario": "A privacy review or suppression-safe public disposition is absent, ambiguous, or exposes prohibited detail.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_privacy_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-QUALIFIED-RATE-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "rehearsal_only": true,
+          "scenario": "The supplied authority cannot establish the required acceptance, disposition, or closure state.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_named_authority",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-QUALIFIED-RATE-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "rehearsal_only": true,
+          "scenario": "Required fields do not share the same completed reporting period or an event date remains outside the contract boundary.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_compatible_period",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "table_id": "DECISION-TABLE-08-REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "queue_id": "INTAKE-08-REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "evidence_rail": "NNSA",
+      "phase57l_hold_key": "NNSA-PIT-PEIS-HOLD-2026-11",
+      "actual_candidate_packets_evaluated": 0,
+      "actual_accept_decisions": 0,
+      "trigger_state": "not_fired",
+      "rows": [
+        {
+          "decision_id": "REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "rehearsal_only": true,
+          "scenario": "Every required field is source-explicit in one candidate packet and all identity, schema, definition, unit, period, privacy, authority, and acceptance checks pass.",
+          "minimum_conditions": [
+            "all required fields present in one packet",
+            "eligible source authority",
+            "compatible identity, schema, definition, unit, method, denominator, and completed period",
+            "privacy and acceptance boundaries cleared",
+            "named human reviewer signs the separate publication review"
+          ],
+          "resulting_state": "ready_for_separate_publication_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "rehearsal_only": true,
+          "scenario": "A named disqualifier, incompatible definition, cross-record assembly, fabricated value, or prohibited transformation is present.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "rejected_non_eligible",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "rehearsal_only": true,
+          "scenario": "A required label, value, definition, source citation, identity, unit, method, or denominator is missing or ambiguous.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "returned_without_trigger",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "rehearsal_only": true,
+          "scenario": "A privacy review or suppression-safe public disposition is absent, ambiguous, or exposes prohibited detail.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_privacy_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "rehearsal_only": true,
+          "scenario": "The supplied authority cannot establish the required acceptance, disposition, or closure state.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_named_authority",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "rehearsal_only": true,
+          "scenario": "Required fields do not share the same completed reporting period or an event date remains outside the contract boundary.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_compatible_period",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        }
+      ]
+    },
+    {
+      "table_id": "DECISION-TABLE-09-REOPEN-NNSA-GAO-BASELINE",
+      "contract_id": "REOPEN-NNSA-GAO-BASELINE",
+      "queue_id": "INTAKE-09-REOPEN-NNSA-GAO-BASELINE",
+      "evidence_rail": "NNSA",
+      "phase57l_hold_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-12",
+      "actual_candidate_packets_evaluated": 0,
+      "actual_accept_decisions": 0,
+      "trigger_state": "not_fired",
+      "rows": [
+        {
+          "decision_id": "REOPEN-NNSA-GAO-BASELINE-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "rehearsal_only": true,
+          "scenario": "Every required field is source-explicit in one candidate packet and all identity, schema, definition, unit, period, privacy, authority, and acceptance checks pass.",
+          "minimum_conditions": [
+            "all required fields present in one packet",
+            "eligible source authority",
+            "compatible identity, schema, definition, unit, method, denominator, and completed period",
+            "privacy and acceptance boundaries cleared",
+            "named human reviewer signs the separate publication review"
+          ],
+          "resulting_state": "ready_for_separate_publication_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-GAO-BASELINE-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "rehearsal_only": true,
+          "scenario": "A named disqualifier, incompatible definition, cross-record assembly, fabricated value, or prohibited transformation is present.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "rejected_non_eligible",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-GAO-BASELINE-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "rehearsal_only": true,
+          "scenario": "A required label, value, definition, source citation, identity, unit, method, or denominator is missing or ambiguous.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "returned_without_trigger",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-GAO-BASELINE-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "rehearsal_only": true,
+          "scenario": "A privacy review or suppression-safe public disposition is absent, ambiguous, or exposes prohibited detail.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_privacy_review",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-GAO-BASELINE-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "rehearsal_only": true,
+          "scenario": "The supplied authority cannot establish the required acceptance, disposition, or closure state.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_named_authority",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        },
+        {
+          "decision_id": "REOPEN-NNSA-GAO-BASELINE-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "rehearsal_only": true,
+          "scenario": "Required fields do not share the same completed reporting period or an event date remains outside the contract boundary.",
+          "minimum_conditions": [
+            "route the packet to this decision when the named scenario is observed",
+            "retain the Phase 57L hold",
+            "record the reason without inferring an outcome"
+          ],
+          "resulting_state": "held_for_compatible_period",
+          "fires_trigger": false,
+          "closes_hold_automatically": false,
+          "automated_publication_allowed": false,
+          "actual_candidate_evaluated": false,
+          "human_review_required": true
+        }
+      ]
+    }
+  ]
+}

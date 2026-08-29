@@ -1,0 +1,63 @@
+{
+  "id": "research-doc-57j-amtrak-178-identity-source-snapshot-manifest",
+  "collection_id": "research-collection-historical-backfill-rejection-taxonomy-review-queue-execution-2026",
+  "title": "Amtrak's 178 historical identities now have explicit source-snapshot decisions",
+  "slug": "57j-amtrak-178-identity-source-snapshot-manifest",
+  "record_status": "Published",
+  "publisher": "National Railroad Passenger Corporation",
+  "publication_date": "2026-08-03",
+  "document_type": "Data Release",
+  "summary": "All 178 identities remain present in the FY2024-2029 source snapshot and carry a review disposition rather than an inferred current registry state. Denominator: Two source snapshots and 178 historical identity decisions.",
+  "key_findings": [
+    "Evidence stage: Historical identity backfill.",
+    "Finding: All 178 identities remain present in the FY2024-2029 source snapshot and carry a review disposition rather than an inferred current registry state.",
+    "Denominator: Two source snapshots and 178 historical identity decisions.",
+    "Boundary: Historical source presence is not current asset presence.",
+    "Boundary: A snapshot is not a complete station-code registry.",
+    "Boundary: Operating outcomes remain null.",
+    "Next action: Attach later source versions only through the same identity and effective-period contract."
+  ],
+  "why_it_matters": "The record turns a carried queue into explicit reviewed decisions while keeping rejections and missing values visible.",
+  "ftfn_relevance": [
+    "Executes the Phase 57I review rails across their full carried state.",
+    "Turns rejected records into auditable taxonomy rather than silent omissions.",
+    "Separates historical and control evidence from operating outcomes, implementation, capability, and closure."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Historical source presence is not current asset presence.",
+    "A snapshot is not a complete station-code registry.",
+    "Operating outcomes remain null.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Mobility",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57f-amtrak-stations-alp-fy24-29",
+  "supporting_source_ids": [
+    "source-57f-amtrak-stations-alp-fy24-29",
+    "source-57b-amtrak-ada-progress-june-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-ada-progress-report-june-2026.pdf"
+  ],
+  "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+  "local_capture_path": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/01-amtrak-178-identity-source-snapshot-manifest.txt",
+  "archive_member": "official-links/01-amtrak-178-identity-source-snapshot-manifest.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-03"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "research-doc-57p-broadband-27-audit-chain-integrity-cases",
+  "collection_id": "research-collection-dual-review-audit-chains-adjudication-publication-decision-receipts-2026",
+  "title": "Broadband passes 27 append-only audit-chain integrity cases",
+  "slug": "57p-broadband-27-audit-chain-integrity-cases",
+  "record_status": "Published",
+  "publisher": "Montana Department of Administration",
+  "publication_date": "2026-08-09",
+  "document_type": "Data Release",
+  "summary": "Every Broadband chain accepts ordered appends and rejects payload mutation, event replacement, time regression, and duplicate identifiers while preserving superseded receipts. Denominator: 27 fixture-only audit cases across 3 contracts; zero failures and zero actual audit events.",
+  "key_findings": [
+    "Evidence stage: Broadband append-only audit, adjudication, and publication-receipt controls.",
+    "Finding: Every Broadband chain accepts ordered appends and rejects payload mutation, event replacement, time regression, and duplicate identifiers while preserving superseded receipts.",
+    "Denominator: 27 fixture-only audit cases across 3 contracts; zero failures and zero actual audit events.",
+    "Boundary: Passing fixtures do not create evidence or reviewer history.",
+    "Boundary: A valid hash link does not validate the underlying claim.",
+    "Boundary: Supersession preserves rather than rewrites the earlier decision.",
+    "Next action: Require contiguous sequence, increasing time, prior-event digest, payload digest, and immutable event digest for every actual append."
+  ],
+  "why_it_matters": "The record makes dual-review attribution, disagreement escalation, and supersession append-only without creating an actual editorial or release event.",
+  "ftfn_relevance": [
+    "Links but never merges evidence-review and publication-review receipts across all nine contracts.",
+    "Tests publication reason-code compatibility, immutable attribution, disagreement ownership, and append-only supersession.",
+    "Proves that even concordant accept requires separate manual release authorization and cannot publish automatically."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Passing fixtures do not create evidence or reviewer history.",
+    "A valid hash link does not validate the underlying claim.",
+    "Supersession preserves rather than rewrites the earlier decision.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-montana-bead-final-proposal-january-2026",
+  "supporting_source_ids": [
+    "source-57g-montana-bead-final-proposal-january-2026",
+    "source-57g-montana-deployment-projects-csv",
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-subgrantees-csv",
+    "source-57g-montana-cai-csv",
+    "source-57f-montana-bead-resource-index-august-2026",
+    "source-57f-montana-leo-quarterly-instructions-june-2026",
+    "source-57e-montana-quarterly-report-instructions-june-2026",
+    "source-57e-montana-project-monitoring-guide-june-2026",
+    "source-57b-louisiana-nextlink-first-bead-tower",
+    "source-57b-louisiana-starlink-bead-agreement"
+  ],
+  "supporting_official_urls": [
+    "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+    "https://doa.mt.gov/_docs/connectmt/fp_deployment_projects-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_locations-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_subgrantees-1.5.26.csv",
+    "https://doa.mt.gov/_docs/connectmt/fp_CAI-1.5.26.csv",
+    "https://doa.mt.gov/ConnectMT/iija/",
+    "https://doa.mt.gov/_docs/connectmt/LEO-Quarterly-Report-Instructions-6.1.26.pdf",
+    "https://doa.mt.gov/_docs/connectmt/Quarterly-Report-Instructions-Terrestrial-6.1.26.pdf",
+    "https://doa.mt.gov/_docs/connectmt/BEAD-Project-Subgrantee-Monitoring-Guide-6.1.26.pdf",
+    "https://connect.la.gov/press-releases/nextlink-activates-first-bead-funded-tower-in-the-united-states-connecting-rural-louisiana",
+    "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access"
+  ],
+  "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+  "local_capture_path": "/downloads/dual-review-audit-chains-adjudication-publication-decision-receipts-2026/official-links/07-broadband-27-audit-chain-integrity-cases.txt",
+  "archive_member": "official-links/07-broadband-27-audit-chain-integrity-cases.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}

@@ -37,9 +37,9 @@ package version: 0.2.0-dev
 npm run validate:content: passing
 npm run check: passing
 npm run build: passing
-static pages generated: 186
-current frozen deployment manifest: deployment/ftfn-v0.1.1-build.json
-current branch: codex/v0.2-phase50b
+static pages generated: 2,647
+current local release manifest: deployment/ftfn-v0.2-build.json
+current branch: codex/phase51-content
 ```
 
 Use `npm.cmd` on Windows if PowerShell blocks `npm.ps1`.
@@ -51,6 +51,7 @@ App routes currently include:
 - Atlas landing page,
 - topic index and detail pages,
 - source index and detail pages,
+- research collection index, thirty-four collection details, and 589 document detail pages,
 - organization index and detail pages,
 - technology index and detail pages,
 - local system index and detail pages,
@@ -58,10 +59,12 @@ App routes currently include:
 - dependency map index and detail pages,
 - briefing index and detail pages,
 - method and publication policy page,
+- updates and corrections page,
+- versioned source, topic, and Published-signal JSON endpoints,
 - generated source monitor,
 - about page.
 
-## Checkpoint Assessment After The First Phase 50 Content Batch
+## Checkpoint Assessment After Phase 54
 
 FTFN has moved from concept and documentation into a functioning static-first MVP scaffold.
 
@@ -74,7 +77,7 @@ What is now stable:
 - Content collections and schema validation are active.
 - Cross-record reference validation is active through `npm run validate:content`.
 - Editorial method, review checklists, source strategy, content model, evidence gaps, and dependency-map rules are documented.
-- Two qualitative dependency maps exist, pass the current selection rules, and have a tested reader journey.
+- Three qualitative dependency maps are Published, pass the current selection rules, and have tested reader journeys.
 - Space, Agriculture and Bioeconomy, AI for Science, and Advanced Manufacturing now have source-backed topic anchors.
 - A publication-readiness triage layer now separates launch candidates from actual `Published` promotion.
 - A public Method page and publication policy now explain source transparency, correction/update posture, and publication gates.
@@ -86,72 +89,212 @@ What is now stable:
 - A Phase 38 authority red-team now identifies where the site is still a credible prelaunch scaffold rather than a comprehensive public resource.
 - Phase 49 expanded the source library to 102 records, including broad official catalogs, funding and spending APIs, international statistics, research APIs, patent/IP sources, water and mineral datasets, space licensing, agriculture biotechnology regulation, and Phoenix/MAG local-system data.
 - Phase 50 completed its six-item bounded evidence batch: DOE/Grants.gov, MAG projections, USAspending award DEMS0000003, NSF award 2433348, USGS 2026 gallium, and Toronto application 24 254930.
+- Phase 52A added the validated public update log, three versioned data exports, and the pre-Supabase public/private contract.
+- Phase 52B added a Git-ignored 150-record candidate registry across 15 evidence profiles and added validation plus public-build leak assertions. Phase 55S batch two leaves 72 `Candidate`, 71 `Active Source Record`, four `Watchlist Only`, two `Blocked`, one `Rejected`, and zero `Needs Triage`.
+- Source Monitor now groups work by review state and exposes a specific next action; Source Coverage now distinguishes Strong, Developing, and Weak lanes with gap-led actions.
+- Phase 51C added named Meta electric-service and TSMC facility milestones, repaired the apprenticeship signal with active cohort counts, and brought the library to 33 signals without forcing missing downstream outcomes.
+- Phase 55B added the White House and OMB post-quantum migration records, a named Arizona Project Baccara certificate trail, and two bounded `In Review` signals; it also refreshed the Toronto, Ontario, and ACC monitoring rails.
+- Phase 55C repaired the existing Project Baccara signal with official County conditions, an official proposed-air-permit notice, and independent vote corroboration while keeping final permits, construction, occupancy, and operation unresolved.
+- Phase 55D deployed the unchanged 218-page candidate to an owner-only Sites URL and passed hosted route, metadata, indexing, robots, sitemap, and source-export checks without touching Hostinger DNS.
+- Phase 55E rechecked all 17 aging source rails, reviewed 15 additional private candidates, repaired seven broad signals, added one storage-funding signal, and reached 128 sources, 36 signals, and 227 pages without a new Published promotion.
+- Phase 55F applied the full publication gate to those eight records, promoted seven bounded updates, held the Joby company claim, and expanded the public core to 16 Published signals without changing the 227-page route count.
+- Phase 55G added Maricopa County's official 4-1 Project Baccara action and MCAQD's active final Permit `P0013417`, kept the signal `In Review`, and refreshed the exact 229-page / 130-source package as owner-only Sites version 5.
+- Phase 55H now records Toronto's July 29-31 Council gate, the wind-study, land-exchange, and laneway conditions that precede amendment enactment, and bounded negative Building Permit searches across all eight project addresses; Sites version 6 serves the exact pre-decision checkpoint.
+- Phase 55I reviewed the remaining 90 private candidates, added ten monitoring rails plus 12 dated source records, created nine bounded `In Review` signals, repaired the local-system evidence trails, and reached 152 sources, 45 signals, and 260 pages without a new Published promotion; Sites version 7 serves the exact checkpoint under owner-only access.
+- Phase 55J applied the full publication gate to those nine signals, added OMB M-26-04 to preserve the current policy stack, and promoted all nine while preserving the missing implementation, adoption, delivery, facility, and site-service stages.
+- Phase 55K added a 23-document DARPA and U.S. Government research collection with 22 local captures, one official-link record, per-document summaries and evidence limits, 23 source profiles, five `In Review` synthesis signals, five organizations, one briefing, one dependency map, and a verified 26-file download archive.
+- Phase 55L converted eight of those research directions into named implementation trails, added seven source profiles and seven `In Review` signals, repaired the Talon USAspending signal, added a briefing, expanded the dependency map, produced an 11-file archive, and deployed exact commit `d1300d5503244c52541ac597163af9f991594294` as owner-only Sites version 10.
+- Phase 55N added a 16-record implementation-outcomes and local-conversion collection, six source profiles and six `In Review` signals, reconciled four existing trails, added two briefings and four organizations, deepened both local dossiers and four evidence gaps, expanded the dependency map, and produced a verified 19-file archive.
+- Phase 55N exact source commit `c14551c7fad7e0ba6aac0e9e9ce03e5ad6189575` is deployed as owner-only Sites version 11 with no access or DNS change.
+- Phase 55M rechecked fourteen implementation signals against current primary sources, promoted thirteen bounded records, held the future DARPA Lift trial, and expanded the public set to 38 Published signals backed by 66 current sources without adding routes.
+- Phase 55M exact source commit `c1038783998234025ec2af65dae495272a263cc1` is deployed as owner-only Sites version 12 with no access or DNS change.
+- Phase 55O reviewed all five briefings and three dependency maps, published Stack Watch 003 and Stack Watch 004, held three briefings with explicit evidence-stage reasons, repaired all three maps around Published signals, and added synthesis-specific sitemap and indexing assertions.
+- The Phase 55O contract remains 380 pages, 189 sources, 63 signals, 38 Published signals, and 25 In Review signals, with two Published briefings, three In Review briefings, three Published dependency maps, and 17 updates. Exact source commit `b4f5f63ff33c72ec9ce58191b981904ad9fed4ad` is deployed as owner-only Sites version 13.
+- Phase 55P added six structured reader pathways across five priority topic pages and both local-system pages. The pathways connect 30 distinct Published signals to the Published briefing, map, and research layers while preserving eight explicit evidence gaps and adding no new route family.
+- The Phase 55P contract remains 380 pages, 189 sources, 63 signals, 38 Published signals, and 25 In Review signals, with six reader pathways across seven Atlas surfaces and 18 updates. Exact source commit `8b43caeb7db1debefab3292ed1913ce8bd2b557e` is deployed as owner-only Sites version 14.
+- Phase 55Q reviewed six high-value gaps, added five named official sources and four bounded Published signals, repaired both local dossiers and five reader pathways, and added structured latest-review decisions to the gap register.
+- The Phase 55Q contract is 389 pages, 194 sources, 67 signals, 42 Published signals, 25 In Review signals, six structured gap decisions, and 19 updates. Exact source commit `9d9643fd2d46a03f7148b90971d50d10d24baa97` is deployed as owner-only Sites version 15.
+- Phase 55S batch one promoted 30 High-priority private candidates into separately authored public source records, added one specific NIST roadmap source, five bounded signals, eight research summaries, a fourth research collection, and an 11-file archive.
+- The Phase 55S batch-one contract is 434 pages, 225 sources, 72 signals, 45 Published signals, 27 In Review signals, four research collections, 55 research documents, and 20 updates. Exact source commit `9e393f0731d996662d95d912e9737bafdaa1ad67` is deployed as owner-only Sites version 16.
+- Phase 55S batch two promoted the next 30 High-priority candidates, added 30 sources, seven bounded signals, ten research summaries, a fifth collection, a 13-file archive, and Stack Watch 005 as an `In Review` briefing draft.
+- The verified batch-two contract is 483 pages, 255 sources, 79 signals, 51 Published signals, 28 In Review signals, five research collections, 65 research documents, six briefings, and 21 updates. Exact source commit `3e2310de99382612be7c5221d0070184188f85d4` is deployed as owner-only Sites version 17.
+- Phase 55T added 17 named official sources and 18 signals across nine thin topic families. Ten records passed independent publication gates and eight remain `In Review`.
+- The verified Phase 55T contract is 521 pages, 272 sources, 97 signals, 61 Published signals, 36 In Review signals, seven briefings, five dependency maps, eight pathways across 12 Atlas surfaces, and 22 updates. Every topic now has at least four signals and two Published records. Exact source commit `b0527aa7795fef7cb15273aad923904f69c4133e` is deployed as owner-only Sites version 18.
+- Phase 55U added Northern Virginia compute, Nevada lithium and battery materials, and Florida Space Coast launch corridors with 26 official source profiles, three 16-source dossiers, and 15 bounded signals.
+- The verified Phase 55U contract is 570 pages, 298 sources, 112 signals, 73 Published signals, 39 In Review signals, five local systems, eight briefings, six dependency maps, eleven pathways across 18 Atlas surfaces, 13 evidence gaps, and 23 updates. Phase 55U app content commit `8d53ebe35904c719145b5f0ad1d2b2388cc1a2be` is deployed as owner-only Sites version 20. Three new one-time tasks preserve the unresolved FAA, Loudoun, and Nevada checks.
+- Phase 55V added an eighteen-document cross-corridor research collection with six records each for Northern Virginia, Nevada, and Florida, four local official-PDF captures, fourteen official-link records, a verified 21-file archive, and Research Watch 001.
+- The verified Phase 55V contract is 590 pages, 298 sources, 112 signals, 73 Published signals, 39 In Review signals, nine briefings, six research collections, 83 research documents, eleven pathways across 18 Atlas surfaces, 13 evidence gaps, and 24 updates. Three local dossiers and pathways are deepened, gaps `011` through `013` are narrowed, and the Rhyolite Ridge DOE financing stage is corrected without claiming financial close.
+- Phase 55V app content commit `3bdb52a9348e5cf963ec6569838f880611d2491c` matches private Sites source commit `b2db5978f0c4a37c35998f849fcd75158c115cec`, deployed as owner-only Sites version 21 with one allowed owner and no groups. Deployment status and the protected sign-in gate pass.
+- Phase 55W reviewed 45 signal decisions, promoted 12, held 27, and reconfirmed six Published controls. Research Watch 001 and `Local Authorization Is Not Operation` are now Published.
+- Phase 55W adds four pathways, multi-dimensional signal and Source Monitor filtering, separate collection and document research shelves, topic-level latest-evidence shelves, a data landing page, and research/pathway exports.
+- The verified Phase 55W contract is 591 pages, 298 sources, 112 signals, 85 Published signals, 27 In Review signals, 134 current Published-support sources, nine briefings, six maps, six research collections, 83 research documents, fifteen pathways across 19 Atlas surfaces, 13 evidence gaps, 25 updates, and five public-data exports.
+- Phase 55W local app commit `bdc34a225f0e27233c39d28df4ccf3c61e7d8776` matches private source commit `7ba179bf4ee1beaec5a7ba2299800bebb210c0c8`, deployed as owner-only Sites version 22 with one allowed owner and no groups.
+- Phase 55X adds 24 official implementation records, twelve bounded signals, a 27-file archive, Research Watch 002, and integrated repairs across the Northern Virginia, Nevada, and Florida Space Coast journeys.
+- The verified Phase 55X contract is 638 pages, 307 sources, 124 signals, 93 Published signals, 31 In Review signals, 139 current Published-support sources, ten briefings, six maps, seven research collections, 107 research documents, fifteen pathways across 19 Atlas surfaces, 13 evidence gaps, 26 updates, and five public-data exports. Eight signals and 22 document summaries passed their separate publication gates; all three end-to-end local pathways remain `In Review`.
+- Phase 55X local app commit `ce590cb8d847501b0a21fe4eb760037d3e531ea8` matches private source commit `6cb7cbfb1a5f3e8e6348d97ffdb311d0622eccac`, deployed as owner-only Sites version 23 with one allowed owner and no groups.
+- Phase 55Y adds 24 official records, twenty source profiles, twelve bounded signals, a 27-file archive, Research Watch 003, two evidence gaps, and integrated repairs across four reader journeys and topic pages.
+- The verified Phase 55Y contract is 698 pages, 327 sources, 136 signals, 101 Published signals, 35 In Review signals, 150 current Published-support sources, eleven briefings, six maps, eight research collections, 131 research documents, fifteen pathways across 19 Atlas surfaces, 15 evidence gaps, 27 updates, and five public-data exports. Eight signals and twenty document summaries publish; four signals and four documents retain explicit pre-operational holds. The autonomy pathway and dependency map are now Published.
+- Phase 55Z adds 32 primary outcome records, 30 source profiles, sixteen bounded signals, a 35-file archive, Research Watch 004, evidence gap `gap-016`, a Published comparison-boundary map, and integrations across eleven topics, eight pathways, and seven existing gaps.
+- The verified Phase 55Z contract is 780 pages, 357 sources, 152 signals, 113 Published signals, 39 In Review signals, 166 current Published-support sources, twelve briefings, seven maps, nine research collections, 163 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 28 updates, and five public-data exports. Twelve signals and 28 document summaries publish; four signals and four documents retain explicit denominator or comparability holds.
+- Phase 55Z local app commit `db18ef9` matches private source commit `2f1c2e6d07f24a75a80d0fb83bab123b38fa2fbf`, deployed from the verified 780-page package as owner-only Sites version 25 with one allowed owner and no groups.
+- Phase 56K checks seven exact continuation records across DHS, Gateway, Moss Landing, VA, F-35, F-15EX, and DOT. Three bounded signals publish, four exact non-closure documents remain `In Review`, and the evidence ledger remains one Closed, twenty-one Partially Closed, and two Open.
+- The verified Phase 56K contract is 1,351 pages, 545 sources, 283 signals, 217 Published signals, 66 In Review signals, 335 current Published-support sources, twenty-three briefings, twenty research collections, 393 research documents, 39 updates, and a ten-file collection archive. Local content commit `aceeff568f3fb93b184f6fa0197260fbf563b9b2` maps to private runtime commit `560492d70ecf297da8ef427f34b29f460f5b3289`, deployed as owner-only Sites version 36.
+- Phase 56L checks Current Applications, Island Components, and Monaghan Medical. Two certified reported-employment outcomes publish, one exact repeat-series decision remains `In Review`, and the evidence ledger remains one Closed, twenty-one Partially Closed, and two Open.
+- The verified Phase 56L contract is 1,360 pages, 547 sources, 285 signals, 219 Published signals, 66 In Review signals, 337 current Published-support sources, twenty-four briefings, twenty-one research collections, 396 research documents, 40 updates, and a six-file collection archive. Local content commit `b20723b0f8ef52c0c927f46d3a50988fef461842` maps to private runtime commit `20dab10a2836a39486143a5107800d8b1c7c1382`, deployed as owner-only Sites version 37.
+- Phase 56M checks GAO's sixteen NASA cybersecurity recommendations and two distinct HHS hospital audits. All NASA actions remain Open; the large-hospital record keeps two findings and four Open Unimplemented tracker actions distinct; the small-hospital record records an effective selected component test with no recommendations. The evidence ledger remains one Closed, twenty-one Partially Closed, and two Open.
+- The verified Phase 56M contract is 1,370 pages, 549 sources, 288 signals, 222 Published signals, 66 In Review signals, 339 current Published-support sources, twenty-five briefings, twenty-two research collections, 399 research documents, 41 updates, and a six-file collection archive. Local content commit `1d05ce5e7503fe3798c6cee7e65fdf16d115ddea` maps to private runtime commit `7b23ccf49197b39060c7f7cc2aad58688326d151`, deployed as owner-only Sites version 38.
+- Phase 56N checks ten exact recommendation, portfolio, and component records across NASA, DOE, HHS, DHS, DOT, and VA. Nine bounded records publish; the HHS post-date tracker check remains In Review because no post-July 29 public outcome was available. The evidence ledger remains one Closed, twenty-one Partially Closed, and two Open.
+- The verified Phase 56N contract is 1,396 pages, 554 sources, 297 signals, 231 Published signals, 66 In Review signals, 343 current Published-support sources, twenty-six briefings, twenty-three research collections, 409 research documents, 42 updates, and a thirteen-file collection archive. Local content commit `a611431f233bcbd848f31ab46fa68e471250d7d3` maps to private runtime commit `95c8569d0d1d699b26bfc2ba4ed84710074ac35d`, deployed as owner-only Sites version 39.
+- Phase 56O publishes seven exact agency priority portfolios and one bounded government-wide benefit model. Eight records and signals publish; the inherited HHS tracker check remains In Review. Agency inventories, subject mixes, portfolio arithmetic, modeled potential, and realized benefits remain distinct. The evidence ledger remains one Closed, twenty-one Partially Closed, and two Open.
+- The verified Phase 56O contract is 1,422 pages, 562 sources, 305 signals, 239 Published signals, 66 In Review signals, 351 current Published-support sources, twenty-seven briefings, twenty-four research collections, 417 research documents, 43 updates, and an eleven-file collection archive. Local content commit `a8183035a7772d7071c38608f05835496b378547` maps to private runtime commit `f553e70e01be6728ff08c82bafbc048ae1b6c453`, deployed as owner-only Sites version 40.
+- Phase 56P decomposes four priority letters into twenty-two explicitly named actions: five DOE, four HHS, eight DOT, and five VA. All twenty-two signals publish with visible local-key and priority-designation boundaries; the inherited HHS tracker check remains In Review and the evidence ledger remains one Closed, twenty-one Partially Closed, and two Open.
+- The verified Phase 56P contract is 1,472 pages, 566 sources, 327 signals, 261 Published signals, 66 In Review signals, 355 current Published-support sources, twenty-eight briefings, twenty-five research collections, 439 research documents, 44 updates, and a twenty-five-file collection archive. Local content commit `fd45e1d2772b1a35c5ea366ec012dd4ff425d1de` maps to private runtime commit `5c4bdc09987a1e71c18ff6da5c279a3bd589ed6d`, deployed as owner-only Sites version 41.
+- Phase 56Q resolves twenty action keys to exact official GAO report-and-recommendation identities and holds HHS-04 plus VA-02 because each local parent spans two separately numbered recommendations. Twenty Published and two In Review signals preserve response, implementation, status, entity-ledger, closure, and outcome boundaries; the evidence ledger remains one Closed, twenty-one Partially Closed, and two Open.
+- The verified Phase 56Q contract is 1,539 pages, 587 sources, 349 signals, 281 Published signals, 68 In Review signals, 374 current Published-support sources, twenty-nine briefings, twenty-six research collections, 461 research documents, 45 updates, and a twenty-five-file collection archive. Local content commit `684352779fb9dd36de92d4a53f17a47e5e878322` maps to private runtime commit `7d8d188bb68dd5e7712e0a0f9f555e7917d9e48d`, deployed as owner-only Sites version 42 in deployment `appgdep_6a6edd381a848191b6201f22284eea77`.
+- Phase 56R preserves HHS-04 and VA-02 as parent crosswalks while publishing four recommendation-specific children and twenty exact continuations. Five separately public agency artifacts, thirteen milestone monitors, and explicit Promised, Submitted, Under GAO review, Partially addressed, and No conforming artifact reported states preserve the boundary between artifact visibility, sufficiency, implementation, closure, and outcome.
+- The verified Phase 56R contract is 1,594 pages, 592 sources, 373 signals, 305 Published signals, 68 In Review signals, 381 current Published-support sources, thirty briefings, twenty-seven research collections, 485 research documents, 46 updates, and a twenty-seven-file collection archive. Twenty recommendations remain Open, four remain Open – Partially Addressed, and the entity evidence ledger remains one Closed, twenty-one Partially Closed, and two Open. Local content commit `f088a6de59a6d5dc70b64a3b8635124f4a689283` maps to private runtime commit `1728d29f0022a357c384ebd337dea3c3f7cf66f0`, deployed as owner-only Sites version 43 in deployment `appgdep_6a6ee5c0c65481919c1f619682d8c0b9`.
+- Phase 56S audits all twenty-four recommendation records against seventy-two directive elements. Three elements are supported, twenty-three partially supported, and forty-six not established by the located public record; three artifacts are public candidates with unresolved GAO sufficiency, thirteen are scope-adjacent, and eight exact response artifacts were not separately located.
+- The verified Phase 56S contract is 1,656 pages, 604 sources, 397 signals, 329 Published signals, 68 In Review signals, 393 current Published-support sources, thirty-one briefings, twenty-eight research collections, 509 research documents, 47 updates, and a twenty-seven-file collection archive. No implementation or closure status changes, and the entity evidence ledger remains one Closed, twenty-one Partially Closed, and two Open. Local content commit `6d157e202faff214d4824d7bfecfb6b3b1b76b5c` maps to private runtime commit `e1906494fce21f1c59b62dca8eecf9de5407d78d`, deployed as owner-only Sites version 44 in deployment `appgdep_6a6eedb5d234819189721f5d2fae8b62`.
+- Phase 56T converts the Phase 56S availability split into eight missing-document acquisition tickets, thirteen adjacent-source directive matrices, and three page- or section-level public-candidate sufficiency matrices. Every record names a target artifact, likely custodian, repository route, search terms, stop rule, reopening trigger, next action, directive locators, and GAO acceptance state.
+- The verified Phase 56T contract is 1,714 pages, 612 sources, 421 signals, 353 Published signals, 68 In Review signals, 401 current Published-support sources, thirty-two briefings, twenty-nine research collections, 533 research documents, 48 updates, and a twenty-seven-file collection archive. No implementation or closure status changes, and the entity evidence ledger remains one Closed, twenty-one Partially Closed, and two Open. Local content commit `324fde7e98a8177d5174a245008c476520f58c15` maps to private runtime commit `080d49505f8c1a305c1418f29c894d2c43069dfd`, deployed as owner-only Sites version 45 in deployment `appgdep_6a6ef47d383881919292c6a8dd0b5e86`.
+- Phase 56U executes all eight exact-title and custodian-level recovery tickets against current official repositories. Ten official near-matches produce three recommendation-specific DOE status results and five current near-match results; no exact target artifact is acquired. One DOE self-reported closure conflicts with GAO's Open status and remains unresolved.
+- The verified Phase 56U contract is 1,739 pages, 619 sources, 429 signals, 361 Published signals, 68 In Review signals, 408 current Published-support sources, thirty-three briefings, thirty research collections, 541 research documents, 49 updates, and an eleven-file archive. No directive-scope, implementation, closure, or entity-evidence state changes. Local content commit `c55a70906b250b95df5f527420b766e976a56995` maps to private runtime commit `11b87a567de581b6d4d5368b60d8c944df376332`, deployed as owner-only Sites version 46 in deployment `appgdep_6a6efe2ef8c481919544fd5000713e22`.
+- Phase 56V decomposes all ten Phase 56U near-matches across twelve official supporting sources. Ten lead records and signals publish, one VA congressional appendix is recommendation-specific supporting correspondence, and no exact target artifact, directive-scope change, implementation change, closure change, agency contact, or FOIA request is recorded.
+- The verified Phase 56V contract is 1,773 pages, 631 sources, 439 signals, 371 Published signals, 68 In Review signals, 420 current Published-support sources, thirty-four briefings, thirty-one research collections, 551 research documents, 50 updates, and a thirteen-file archive. Local content commit `4b9cdbf204439fabf7ee0f88e8fdb726941338f3` maps to exact private runtime commit `be7a90b50e4aae94ba621260cf1c6057b33d0025`, deployed as owner-only Sites version 47 in deployment `appgdep_6a6f045fb3a481919e56fc7bfde5c76e`.
+- Phase 56W reviews seven named recovery targets and three compatible cross-lane records. Six authoritative or materially narrower records publish, four unchanged exact-artifact searches remain In Review, and seven Tier 1 source profiles support the batch. No exact target, directive-scope change, implementation change, closure change, agency contact, or FOIA request is recorded.
+- The verified Phase 56W contract is 1,798 pages, 638 sources, 445 signals, 377 Published signals, 68 In Review signals, 427 current Published-support sources, thirty-five briefings, thirty-two research collections, 561 research documents, 51 updates, and a thirteen-file archive. Local content commit `487a57c3fd9a9cd01a99533e637b05ad4efda745` maps to exact private runtime commit `70f52b01e9475f6d1755d1ffb8dd57948848573c`, deployed as the clean owner-only Sites version 49 replacement in deployment `appgdep_6a6f0df0e5188191a6aee3d2a12affab`.
+- Phase 56X publishes thirteen agency-, site-, waste-stream-, project-, and evidence-stage-specific records: four award-review denominators, three Hanford operating outputs, three DOE EM site-maintenance denominators, and three NNSA project-baseline series. Six Tier 1 sources support the batch; zero exact target artifacts or triggers and no scope, implementation, closure, agency-contact, or FOIA changes are recorded.
+- The verified Phase 56X contract is 1,832 pages, 644 sources, 458 signals, 390 Published signals, 68 In Review signals, 433 current Published-support sources, thirty-six briefings, thirty-three research collections, 574 research documents, 52 updates, and a sixteen-file archive. Local content commit `ed10683470cda8a9b7b9f11498de40955d7af679` maps to exact private runtime commit `0781d928b7d88442659c9a5ff9aa8a3bc29b85b6`, deployed as owner-only Sites version 50 in deployment `appgdep_6a6f14c3b4188191977eab6fbd9a8611` with one owner, no groups, no editors, and zero external visitors.
+- Phase 56Y publishes fifteen stable-identity follow-through records: four DOT funding-execution records, two BEAD agreement-and-test records, three Hanford sustained-operation records, four Savannah River and Idaho cleanup-delivery-and-outcome records, and two LAP4/SRPPF project-implementation records. Eleven new Tier 1 sources and one reused NNSA budget source support the batch; zero exact target artifacts or triggers and no scope, implementation, closure, agency-contact, or FOIA changes are recorded.
+- The verified Phase 56Y contract is 1,875 pages, 655 sources, 473 signals, 405 Published signals, 68 In Review signals, 444 current Published-support sources, thirty-seven briefings, thirty-four research collections, 589 research documents, 53 updates, and an eighteen-file archive. Local content commit `a904fe2ba6a14c48c16a0388a1639799e1e00e47` maps to exact private runtime commit `da452ab128d8d7584fe83238c9a696a2797666a7`, deployed as owner-only Sites version 51 in deployment `appgdep_6a6f972e06388191b34a3e2f5975c986` with one owner, no groups, no editors, and zero external visitors.
+- Phase 56Z reviews seventeen repeat-measurement and accepted-operation records. Thirteen panels publish and four remain In Review; twelve new Tier 1 sources and seven carried sources support the batch with zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
+- The verified Phase 56Z contract is 1,923 pages, 667 sources, 490 signals, 418 Published signals, 72 In Review signals, 452 current Published-support sources, thirty-eight briefings, thirty-five research collections, 606 research documents, 54 updates, and a twenty-file archive. Local content commit `11f8f7da8c0229d6c65dca5f4f11282b6c83bf9f` maps to exact private runtime commit `404c9661a1ca64ca5b82226e2b1ce3d6aad30b1f`, deployed as owner-only Sites version 52 in `appgdep_6a6fa0e4a0188191b7f11b33f3bb3c5a` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57A reviews sixteen fixed-cohort completion and realized-outcome records. Thirteen publish and three remain In Review; five new Tier 1 sources and three carried official sources support the batch with zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
+- The verified Phase 57A contract is 1,962 pages, 672 sources, 506 signals, 431 Published signals, 75 In Review signals, 455 current Published-support sources, thirty-nine briefings, thirty-six research collections, 622 research documents, 55 updates, and a nineteen-file archive. Local content commit `b30c63b04f4633e3937a0d45e16fc8f4f87ee59f` maps to exact private runtime commit `e4ba82a9c248c60db917c07944143bb5b186a463`, deployed as owner-only Sites version 53 in `appgdep_6a6fa914ec0081918a598ddc330311fb` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57B reviews seventeen accepted-service and independent-outcome records. Ten publish and seven remain In Review; eleven new Tier 1 sources and five carried official sources support the batch with zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests.
+- The verified Phase 57B contract is 2,009 pages, 683 sources, 523 signals, 441 Published signals, 82 In Review signals, 463 current Published-support sources, forty briefings, thirty-seven research collections, 639 research documents, 56 updates, and a twenty-file archive. Local content commit `35a34fd9e57ea3e96df24a717bf21630098814ee` maps to exact private runtime commit `93f62742251f40c79f99d2c0c4df63cb32fbecc3`, deployed as owner-only Sites version 54 in `appgdep_6a6fc63ce3408191ae44dcd4ea8acae7` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57C reviews twenty service-reliability, adoption, and recurring-output records. Twelve publish and eight remain In Review; two new Tier 1 sources and fourteen carried official sources support the batch, all seven Phase 57B holds remain explicit, and zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests are recorded.
+- The verified Phase 57C contract is 2,053 pages, 685 sources, 543 signals, 453 Published signals, 90 In Review signals, 465 current Published-support sources, forty-one briefings, thirty-eight research collections, 659 research documents, 57 updates, and a twenty-three-file archive. Local content commit `8e247466e1e95c032a0e14c455e42ed5d1790416` maps to exact private runtime commit `928dcf828052b5e71208f838264fef5d73c057ad`, deployed as owner-only Sites version 55 in `appgdep_6a6fccf316908191b69b2541e9e6c79d` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57D reviews twenty persistent-service-quality and compatible-time-series records. Twelve publish and eight remain In Review; seven new Tier 1 sources and eight carried official sources support the batch, all eight Phase 57C holds remain explicit, and zero exact targets, scope changes, implementation changes, closure changes, agency contacts, or FOIA requests are recorded.
+- The verified Phase 57D contract is 2,102 pages, 692 sources, 563 signals, 465 Published signals, 98 In Review signals, 472 current Published-support sources, forty-two briefings, thirty-nine research collections, 679 research documents, 58 updates, and a twenty-three-file archive. Local content commit `2958965b94068a278de4cabf30b24ab7854d7f8a` maps to exact private runtime commit `c04053a70ee1e215802acc800c87c3ec1fa388d2`, deployed as owner-only Sites version 56 in `appgdep_6a70f38077b88191b373e0c573a0abcf` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57E reviews twenty-four asset-reliability, cohort-adoption, accepted-output, and independent-closure records. Fifteen publish and nine remain In Review; seven new Tier 1 sources and fourteen carried official sources support the batch, all eight Phase 57D holds remain explicit, one complete Hanford mass-balance hold is added, and zero exact targets, directive-scope changes, agency contacts, or FOIA requests are recorded.
+- The verified Phase 57E contract is 2,159 pages, 699 sources, 587 signals, 480 Published signals, 107 In Review signals, 479 current Published-support sources, forty-three briefings, forty research collections, 703 research documents, 59 updates, and a twenty-seven-file archive. Four GAO-24-106342 recommendations are independently Closed-Implemented without changing the inherited entity ledger or the separate GAO-23-104661 hold. Local content commit `bdf4a3a45d321578b62bf6c90fc59e233e60ea79` maps to exact private runtime commit `a0139a2e104c2b282eef0601620c7af53c9757fb`, deployed as owner-only Sites version 57 in `appgdep_6a70fc9dc100819192e7756b5af9d4e6` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57F reviews twenty-five measured-reliability, observed-adoption, material-stage, and qualified-output records. Sixteen publish and nine remain In Review; seven new Tier 1 sources and seventeen carried official sources support the batch, all nine Phase 57E holds remain explicit, no new hold is added, and zero exact targets, triggers, scope, implementation, closure, agency-contact, or FOIA changes are recorded.
+- The verified Phase 57F contract is 2,218 pages, 706 sources, 612 signals, 496 Published signals, 116 In Review signals, 485 current Published-support sources, forty-four briefings, forty-one research collections, 728 research documents, 60 updates, 672 research export records, and a twenty-eight-file archive. Local content commit `2071278ff7244c6cef3bb6428d2913209bc0d963` maps to exact private runtime commit `63921ba8da76c7496a974bb572dbdd2436ecabfe`, deployed as owner-only Sites version 58 in `appgdep_6a7105d5cea48191aae1577dec4deff4` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57G reviews twenty-nine named-asset and project-cohort registry records. Twenty publish and nine remain In Review; nine new Tier 1 sources and twenty-seven carried official sources support four structured registries, all nine Phase 57F holds remain explicit, no new hold is added, and zero exact targets, triggers, scope, implementation, closure, agency-contact, or FOIA changes are recorded.
+- The verified Phase 57G contract is 2,287 pages, 715 sources, 641 signals, 516 Published signals, 125 In Review signals, 495 current Published-support sources, forty-five briefings, forty-two research collections, 757 research documents, 61 updates, 693 research export records, and a thirty-two-file archive. Local content commit `c4410e56f5dd8e569deee100241e683fb3aaf937` maps to exact private runtime commit `aa7a53d4e60b59120a641620fcf40c7a1704ec24`, deployed as owner-only Sites version 59 in `appgdep_6a71116f01f48191b22ec5f4709f8409` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57H reviews twenty-nine registry-revision, provenance, and compatible-observation records. Twenty publish and nine remain In Review; thirty-six carried Tier 1 sources support four structured matrices, all nine Phase 57G holds remain explicit, no new hold is added, and zero exact targets, triggers, scope, implementation, closure, agency-contact, or FOIA changes are recorded.
+- The verified Phase 57H contract is 2,347 pages, 715 sources, 670 signals, 536 Published signals, 134 In Review signals, 495 current Published-support sources, forty-six briefings, forty-three research collections, 786 research documents, 62 updates, 714 research export records, and a thirty-two-file archive. Local content commit `7d7e4dcf2aad983a480d7e64c487a40438c15b88` maps to exact private runtime commit `2ff8ba6a79dbca070f73df3536604d7274b13a48`, deployed as owner-only Sites version 60 in `appgdep_6a711a0bdc348191aceec93762957132` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57I reviews twenty-nine versioned change-detection and bounded-observation ingestion records. Twenty publish and nine remain In Review; thirty-six carried Tier 1 sources support four structured rails, all nine Phase 57H holds remain explicit, no new hold is added, and zero operating outcomes, exact targets, triggers, scope, implementation, closure, agency-contact, or FOIA changes are recorded.
+- The verified Phase 57I contract is 2,407 pages, 715 sources, 699 signals, 556 Published signals, 143 In Review signals, 495 current Published-support sources, forty-seven briefings, forty-four research collections, 815 research documents, 63 updates, 735 research export records, and a thirty-two-file archive. Local content commit `eacabc093596da563d4f2e1c9f728420c0847cca` maps to exact private runtime commit `2b1470a666c2b3069295c46cf43d0e0fa16c2a69`, deployed as owner-only Sites version 61 in `appgdep_6a7121a3c66081919439713d92b3b7ba` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57J reviews twenty-nine historical-backfill, rejection-taxonomy, and queue-execution records. Twenty publish and nine remain In Review; thirty-six carried Tier 1 sources support four executed rails, all nine Phase 57I holds remain explicit, no new hold is added, and zero operating outcomes, structural changes, completed-quarter results, custody or material joins, capability promotions, implementation, closure, agency-contact, or FOIA changes are recorded.
+- The verified Phase 57J contract is 2,467 pages, 715 sources, 728 signals, 576 Published signals, 152 In Review signals, 495 current Published-support sources, forty-eight briefings, forty-five research collections, 844 research documents, 64 updates, 756 research export records, and a thirty-two-file archive. Content references, source health, Astro diagnostics, the production build, Phase 57J assertions, and release assertions pass. Local content commit `072da57ec806756b6ec60a7c9f32fdd59531b09c` maps to exact private runtime commit `e106dc9c7a9d14276ced1aee755b2fa79ca0d930`, deployed as owner-only Sites version 62 in `appgdep_6a712967b444819194beb29dfe23132c` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57K reviews twenty-nine cross-version transition, longitudinal-panel, and reopening-contract records. Twenty publish and nine remain In Review; thirty-six carried Tier 1 sources support four complete matrices, all nine Phase 57J holds remain explicit, each receives one machine-readable reopening contract, no new hold is added, and zero trigger, operating-event, structural, completed-quarter, custody, material-balance, capability, implementation, closure, agency-contact, or FOIA changes are recorded.
+- The verified Phase 57K contract is 2,527 pages, 715 sources, 757 signals, 596 Published signals, 161 In Review signals, 495 current Published-support sources, forty-nine briefings, forty-six research collections, 873 research documents, 65 updates, 777 research export records, and a thirty-two-file archive. Content references, source health, Astro diagnostics, the production build, Phase 57K assertions, and release assertions pass. Its standalone 3,595-file runtime was saved through Sites version 66 but interrupted by the August 4 host compatibility migration; the complete Phase 57K layer is now live inside owner-only Sites version 68.
+- Phase 57L reviews twenty-nine contract-field coverage, first-eligible-record intake, and exception-resolution records. Twenty publish and nine remain In Review; thirty-six carried Tier 1 sources support sixty field classifications, nine intake queues, nine playbooks, and sixty field actions; all nine Phase 57K holds remain explicit, no new hold is added, and zero eligible-record, trigger, operating-outcome, scope, implementation, capability, closure, agency-contact, or FOIA changes are recorded.
+- The verified Phase 57L contract is 2,587 pages, 715 sources, 786 signals, 616 Published signals, 170 In Review signals, 498 current Published-support sources, fifty briefings, forty-seven research collections, 902 research documents, 66 updates, 798 research export records, and a thirty-two-file archive. Content references, source health, Astro diagnostics, the production build, Phase 57L assertions, and release assertions pass. Local content commit `886fdc7c0faa2f21e5db40441bd3169aa5deed37` maps to exact private runtime commit `44240958e241895323c4199a61b60be252bcf1f7`, deployed as owner-only Sites version 68 in `appgdep_6a77b85bb3c08191bda7f79917018300` with one owner, no groups, no editors, and zero external visitors.
+- Phase 57M reviews twenty-nine source-schema adapter, packet-fixture, and decision-table records. Twenty publish and nine remain In Review; thirty-six carried Tier 1 sources support sixty non-coercive adapters, 120 exact labels, eighteen non-evidence fixtures, nine six-outcome tables, and fifty-four rehearsal rows; all nine Phase 57L holds remain explicit, no new hold is added, and zero actual candidate evaluations, accept decisions, triggers, operating outcomes, scope, implementation, closure, agency-contact, or FOIA changes are recorded.
+- The verified Phase 57M contract is 2,647 pages, 715 sources, 815 signals, 636 Published signals, 179 In Review signals, 498 current Published-support sources, fifty-one briefings, forty-eight research collections, 931 research documents, 67 updates, 819 research export records, and a thirty-two-file archive. Content references, source health, Astro diagnostics, the production build, Phase 57M assertions, and release assertions pass. Local content commit `a33ffde16c7548f3be44cf74f943dbd45852e257` maps to exact private runtime commit `ab6e14d05ca55daf4f92655218d307d247547a3e`, deployed as owner-only Sites version 69 in `appgdep_6a77c388da3c8191816d4e0c85636594` with one owner, no groups, no editors, and zero external visitors.
+- Phase 56A adds 48 primary observations in sixteen three-record official series, 48 source profiles, twenty signal decisions, Research Watch 005, and a verified 51-file archive.
+- The verified Phase 56A contract is 898 pages, 405 sources, 172 signals, 129 Published signals, 43 In Review signals, 214 current Published-support sources, thirteen briefings, seven maps, ten research collections, 211 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 29 updates, and five public-data exports. Sixteen series signals and 44 document summaries publish; four cross-series composites and four documents retain explicit method, route, or combined-period holds.
+- Phase 56A local content commit `1fe4d73de3f2af80eba24ef3d4c69856f02a599b` matches private source commit `ca15ee348e3b012b38c4188273c6c1f2a3961b49`, deployed as owner-only Sites version 26 with one allowed owner and no groups.
+- Phase 56B adds twelve Published named entity panels, four cross-entity ranking holds, 17 official source profiles and research summaries, Research Watch 006, a machine-readable panel ledger, and a verified 20-file archive.
+- The verified Phase 56B contract is 950 pages, 422 sources, 188 signals, 141 Published signals, 47 In Review signals, 231 current Published-support sources, fourteen briefings, seven maps, eleven research collections, 228 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 30 updates, and five public-data exports.
+- Phase 56B local content commit `1e5e03153d0744975630848fe4db736ce8c39519` matches private source commit `34e41bb13b8d4b0a73d6201dac0c6e8ccb57e6bf`, deployed as owner-only Sites version 27 in deployment `appgdep_6a640330de008191bd457d2d1b0bf9bf` with one allowed owner and no groups.
+- Phase 56C adds twelve Published entity driver and constraint dossiers, four causal-inference holds, 20 primary-source profiles, 24 entity-specific summaries, Research Watch 007, machine-readable dossier and publication ledgers, and a verified 27-file archive.
+- The verified Phase 56C contract is 1,012 pages, 442 sources, 204 signals, 153 Published signals, 51 In Review signals, 251 current Published-support sources, fifteen briefings, seven maps, twelve research collections, 252 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 31 updates, and five public-data exports.
+- Phase 56C local content commit `573b98bf5474d2a13ca6db91f96afd7a19a1ec2e` matches exact private source projection `81ebce0bfe90d2175ca7152400dcd75ef03d65e0`, deployed as owner-only Sites version 28 in deployment `appgdep_6a640d2c01808191ab0e543f842302cf` with one allowed owner and no groups.
+- Phase 56D adds twelve entity-level alternative-explanation tests, four portfolio holds, 20 primary-source profiles, 24 entity-specific summaries, Research Watch 008, machine-readable test and publication ledgers, and a verified 27-file archive.
+- Phase 56E retains twelve of twelve screened entities and adds twelve panels, twelve driver-and-constraint dossiers, twelve alternative-explanation tests, four portfolio holds, 40 source profiles, 48 Published summaries, Research Watch 009, four machine-readable ledgers, and a verified 51-file archive.
+- The verified Phase 56E contract is 1,204 pages, 502 sources, 260 signals, 199 Published signals, 61 In Review signals, 307 current Published-support sources, seventeen briefings, seven maps, fourteen research collections, 324 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 33 updates, and five public-data exports.
+- Phase 56E local content commit `2aebf8fb94d9491cf4b0b376b94f674a09dbe8e4` matches exact private source projection `79964310eeb0e1f18be0b94cb4ffd29ab04c9df4`, deployed as owner-only Sites version 30 in deployment `appgdep_6a641dc36c188191b77181aa1ea9449f` with one allowed owner and no groups.
+- Phase 56F adds one 24-entity coverage ledger, fourteen source profiles, 24 coverage documents, four Published portfolio findings, one held comparison, Research Watch 010, one collection, a publication-review ledger, and a verified 27-file archive.
+- The verified Phase 56F local contract is 1,249 pages, 516 sources, 265 signals, 203 Published signals, 62 In Review signals, 321 current Published-support sources, eighteen briefings, seven maps, fifteen research collections, 348 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 34 updates, and five public-data exports.
+- Phase 56F local content commit `e19f6dc3f45dfcbd362091c066c74e3416e9ed43` matches exact private source projection `2446245cbbea3d80739f5d732977948d62a2d940`, deployed as owner-only Sites version 31 in deployment `appgdep_6a6445cf1f3481919cec4feac642f9df` with one allowed owner and no groups.
+- Phase 56G checks all seven Open rails, moves Dalrymple to Partially Closed, retains six exact records as Open, adds seven source profiles, seven acquisition documents, one Published signal, one held synthesis, Research Watch 011, one collection, two machine-readable ledgers, and a verified 10-file archive.
+- The verified Phase 56G local contract is 1,267 pages, 523 sources, 267 signals, 204 Published signals, 63 In Review signals, 322 current Published-support sources, nineteen briefings, seven maps, sixteen research collections, 355 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 35 updates, and five public-data exports.
+- Phase 56G local content commit `b726544c37e8df5f4ad219f7531f545c9cd5672e` matches exact private source projection `b9b5734b7d5c52d0017b1fa973df462f4ef27ca4`, deployed as owner-only Sites version 32 in deployment `appgdep_6a644c6b7b748191919a3a25ad6dcbf3` with one allowed owner and no groups.
+- The verified Phase 56H local contract is 1,299 pages, 534 sources, 272 signals, 208 Published signals, 64 In Review signals, 326 current Published-support sources, twenty briefings, seven maps, seventeen research collections, 369 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 36 updates, and five public-data exports.
+- Phase 56H checks all six Open rails and eight Partially Closed records, moves DOE, F-35 Fort Worth, and Hornsdale to Partially Closed, and leaves one Closed, twenty Partially Closed, and three Open evidence states.
+- Phase 56H local content commit `5878f83a7740827ad1ee4ff0b4d3362eb0e798f4` matches exact private source projection `85eb6ab5e8fcd5530a507aebc2dc5b53091575cf`, deployed as owner-only Sites version 33 in deployment `appgdep_6a6453f24d3481918d4a7f4ab6aaa3ee` with one allowed owner and no groups.
+- The verified Phase 56I local contract is 1,319 pages, 537 sources, 275 signals, 210 Published signals, 65 In Review signals, 328 current Published-support sources, twenty-one briefings, seven maps, eighteen research collections, 381 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 37 updates, and five public-data exports.
+- Phase 56I checks all three Open rails and the nine remaining Partially Closed records, retains one Closed, twenty Partially Closed, and three Open evidence states, and adds two Published findings plus one held continuation synthesis.
+- Phase 56I local content commit `2760edee242f398850dcc9ef2aa7660830caf9af` produced exact private packaged source commit `41497faeebdb1d15b4fa26ceb05d5e3b7300bea5`, deployed as owner-only Sites version 34 in deployment `appgdep_6a646c5539708191a598952968b74f53` with one allowed owner and no groups.
+- The verified Phase 56J local contract is 1,336 pages, 542 sources, 280 signals, 214 Published signals, 66 In Review signals, 332 current Published-support sources, twenty-two briefings, seven maps, nineteen research collections, 386 research documents, fifteen pathways across 19 Atlas surfaces, 16 evidence gaps, 38 updates, and five public-data exports.
+- Phase 56J orders all twenty original Partially Closed continuation rules, acquires five current records, moves only Manatee to Partially Closed, and leaves one Closed, twenty-one Partially Closed, and two Open evidence states.
+- Phase 56J local content commit `ed8da2a25ef596a9c69df21755d4621e7aa09f50` produced exact private runtime commit `12a46d051e6f4f4e5019f005e468da2d62511a16`, deployed as owner-only Sites version 35 in deployment `appgdep_6a64756ecb9c8191866b692f25b82ad0` with one allowed owner and no groups.
+- Phase 53 rechecked the complete publication set, promoted six bounded records, documented the holds for all remaining records, and brought the public core to nine Published signals.
+- Phase 54 passed the local v0.2 release gate across content validation, source health, Astro diagnostics, a 210-page build, exact sitemap/indexing/export assertions, and ten core journeys at desktop and mobile widths.
+- All 339 current Published-support sources are governed by the same current-source release assertion.
+- The compact header defect was repaired: every brand and primary-navigation link now has at least a 44-pixel target.
+- `npm run verify:release` and `deployment/ftfn-v0.2-build.json` preserve the repeatable v0.2 release contract.
 - Git commit `4845597` preserves the frozen v0.1.1 182-page preview candidate before v0.2 development changes.
-- Frozen v0.1.1 desktop/mobile and indexing QA passed locally; no preview deployment was created.
+- Frozen v0.1.1 desktop/mobile and indexing QA passed locally; the current v0.2 candidate now also has an owner-only hosted preview.
 
 What is still prelaunch scaffolding:
 
-- Three signal records are `Published`.
-- Eighteen signal records are still `In Review`; one remains `Draft Sample`.
+- Five hundred and seventy-six signal records are `Published`.
+- One hundred and fifty-two signal records are still `In Review`; no Draft Sample remains. Phase 57J preserves two measured-reliability, three observed-adoption, one complete mass-balance, and three qualified-output-or-baseline holds, explicitly preserving all nine Phase 57I holds and adding no new hold.
 - The source base is now broad enough for v0.2 authority work, but the signal library and named local evidence trails are still narrow relative to the full ambition.
 - Local system profiles remain constraint maps, not final local intelligence products.
 - Evidence gaps remain active and unresolved.
-- There is no automation, ingestion, database, public dataset, alerting, user account system, or numeric 42/59 scoring.
-- There is no deployment, DNS change, analytics, newsletter capture, or Cloudflare Pages project yet.
-- Brand polish, v0.2 Phase 54 browser/accessibility QA, preview/post-deploy checks, analytics decisions, and final public launch approval still need later passes.
+- There is no automation, ingestion, database, alerting, user account system, or numeric 42/59 scoring. Public metadata datasets now exist as static exports.
+- There is an owner-only Sites deployment, but no public access, custom-domain attachment, DNS change, analytics, or newsletter capture yet.
+- Broader assistive-technology testing, analytics decisions, package freeze, custom-domain verification, and final public launch approval still need later passes.
 
 Current strategic direction:
 
-FTFN should now use the generated Source Monitor, Source Coverage matrix, signals roadmap, authority red-team plan, authoritative live source plan, source broadening plan, private update queue, and signal repair workflow together. Phase 47 created the v0.2 authority-loop workflow; Phase 48 moved the first queue items into app content; Phase 49 expanded the source library from 66 to 102 records and added 18 promoted-source candidates to the private queue; Phase 50 completed six bounded additions and moved the app to 22 signals. The next practical work is Phase 51 named local evidence deepening without claiming project-level readiness. Automated ingestion and automated publishing remain out of scope.
+FTFN should continue with Phase 57N adapter-conformance tests, packet-validation harnesses, and reviewer-receipt ledgers. Exercise all 120 accepted labels and ambiguity rejections, run all eighteen fixtures against expected decisions, and record bounded human-review receipts without firing triggers or publishing automatically. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
 ## Content State
 
 Current seed content includes:
 
-- 22 signal records,
-- 102 source records,
+- 815 signal records,
+- 715 source records,
 - 17 topic records,
-- 2 local system profiles,
-- 10 organization records,
+- 5 local system profiles,
+- 19 organization records,
 - 5 technology records,
-- 1 briefing in review,
-- 10 evidence gap records,
-- 2 dependency maps in review.
+- 48 briefings: 41 Published and 7 In Review,
+- 16 evidence gap records,
+- current structured Phase 55Q evidence-gap decisions plus Phase 55Y through Phase 57J reviews,
+- 7 dependency maps: 6 Published and 1 In Review,
+- 45 research collections with 844 document records,
+- 15 reader pathways across 19 existing Atlas surfaces,
+- 64 public update-log entries.
 
-Three official-source-backed signals are now `Published`:
+Five hundred and seventy-six official-source-backed signals are now `Published`.
 
-- ENSO outlook signal,
-- USGS mineral commodity signal,
-- NIST post-quantum cryptography signal.
+Phase 55M added thirteen bounded records to the prior 25-signal Published set:
 
-Eighteen official-source-backed or official-analysis-backed signals are `In Review`:
+- Talon Nickel's USAspending award trail,
+- MP Materials' executed heavy rare-earth separation loan,
+- the NAPMP award chronology with the later Commerce governance discontinuity,
+- Southline's awarded transmission capacity contract,
+- Project Pele's first delivered TRISO fuel batch,
+- the OpenAI prototype OTA ceiling and initial-obligation distinction,
+- NIST's O-RAN standards and testbed artifacts,
+- Commerce's attributed NSTC / Natcast action,
+- GAO's department-wide prototype-OTA tracking gap,
+- NIST O-RAN automation version 1.7,
+- Phoenix TSMC Fab 3 topping out,
+- GSA's Buy AI purchasing channel,
+- and NIST's preliminary PIV post-quantum working drafts.
 
-- CHIPS program signal,
-- FAA advanced air mobility signal,
-- NHTSA automated vehicle safety signal,
-- NASA Artemis and lunar infrastructure signal,
-- USDA plant genomics and future agriculture signal,
-- AI electricity and grid constraint signal,
-- EIA Arizona electricity and chip-corridor power signal,
-- Arizona water resources and chip-corridor governance signal,
-- Ontario housing supply and local capacity signal,
-- Statistics Canada building permits and construction intentions signal,
-- CISA KEV cybersecurity operating-rail signal,
-- Federal Register/Regulations.gov regulatory watch-rail signal,
-- DOE Critical Minerals and Materials Accelerator funding-opportunity signal,
-- MAG 2023 projections Phoenix-region local-dossier signal,
-- USAspending Talon Nickel award signal,
-- NSF AI-Materials Institute award signal,
-- USGS 2026 gallium import-supplied semiconductor-constraint signal,
-- Toronto application 24 254930 named planning-record signal.
+One hundred and sixteen signals remain `In Review`. Important holds include:
 
-One remaining signal record is still `Draft Sample`:
+- the DARPA Lift Challenge scheduled trial until official post-August 9 results,
+- the Joby certification-test company claim,
+- Project Baccara's still-open executed-MCP, condition, service, construction, occupancy, and operation stages,
+- Toronto application 24 254930 until the July 29-31 Council disposition and later permit evidence,
+- broader local power, water, workforce, facility, and delivery records that do not yet support a bounded public conclusion.
 
-- Joby/eVTOL company-claim example.
+No local system profile or company-claim record should be treated as `Published`. Project Huckleberry is Published only as a bounded single-project conversion record, not as a local-system readiness conclusion.
 
-No local constraint records, briefings, dependency maps, company-claim records, or draft samples should be treated as `Published`.
+Stack Watch 003 and Stack Watch 004 are Published. Local Watch 001 and 002 and Stack Watch 001, 002, 005, and 006 remain `In Review`. Three dependency maps are Published and three remain `In Review`; every map remains qualitative and retains explicit evidence gaps and interpretation boundaries.
 
-The current briefing is `Stack Watch 001: Local constraints are where the future arrives`. It is `In Review` and uses reviewed signals, but it should not be treated as a published report.
+Reader pathways are editorial navigation layers rather than new claim records. No pathway changes the publication state of a linked record.
 
 ## Editorial Rules
 
@@ -169,10 +312,13 @@ Operating rules:
 
 ## Local Systems
 
-Two local system profiles exist:
+Five local system profiles exist:
 
 - Ontario Real Estate,
-- U.S. Southwest Chip Corridor.
+- U.S. Southwest Chip Corridor,
+- Northern Virginia Data Center Corridor,
+- Nevada Lithium And Battery Materials Corridor,
+- Florida Space Coast Launch Corridor.
 
 Both profiles were hardened in Phase 13 with:
 
@@ -197,13 +343,50 @@ The current local profiles are useful constraint maps, not final local intellige
 Latest completed work package:
 
 ```text
-Phase 50: Bounded Source Recheck And Content Expansion
+Phase 57K: Cross-Version Transition Matrices, Longitudinal Panels, And Reopening-Trigger Registry
 ```
 
 Key files:
 
 - `docs/work-packages/phase-49-broad-source-promotion-batch.md`
 - `docs/work-packages/phase-50-bounded-source-recheck-and-content-expansion.md`
+- `docs/work-packages/phase-51a-named-utility-water-and-servicing-records.md`
+- `docs/work-packages/phase-51b-service-permitting-workforce-and-delivery-records.md`
+- `docs/work-packages/phase-51c-downstream-service-and-facility-evidence.md`
+- `docs/work-packages/phase-53-publication-candidate-review.md`
+- `docs/work-packages/phase-54-v0.2-release-qa-and-preview-gate.md`
+- `docs/work-packages/phase-55a-local-checkpoint-and-authority-refresh.md`
+- `docs/work-packages/phase-55e-bounded-content-expansion.md`
+- `docs/work-packages/phase-55b-migration-and-facility-evidence.md`
+- `docs/work-packages/phase-55c-conditional-permit-follow-through.md`
+- `docs/work-packages/phase-55d-owner-only-sites-preview.md`
+- `docs/work-packages/phase-55f-publication-readiness-review.md`
+- `docs/work-packages/phase-55g-baccara-authority-conversion.md`
+- `docs/work-packages/phase-55h-toronto-pre-decision-authority-gate.md`
+- `docs/work-packages/phase-55k-darpa-usg-research-collection.md`
+- `docs/work-packages/phase-55l-implementation-evidence-conversion.md`
+- `docs/work-packages/phase-55n-implementation-outcomes-local-conversion.md`
+- `docs/work-packages/phase-55m-publication-readiness-review.md`
+- `docs/work-packages/phase-55o-briefing-dependency-map-publication.md`
+- `docs/work-packages/phase-55p-reader-pathways-priority-dossiers.md`
+- `docs/work-packages/phase-55t-thin-topic-corpus-build.md`
+- `docs/work-packages/phase-55u-local-systems-network.md`
+- `docs/work-packages/phase-55x-local-implementation-dossiers.md`
+- `docs/work-packages/phase-56j-evidence-value-continuation-queue.md`
+- `docs/work-packages/phase-56k-exact-record-continuation.md`
+- `docs/work-packages/phase-56l-realized-outcome-continuation.md`
+- `docs/work-packages/phase-56m-federal-remediation-outcomes.md`
+- `docs/work-packages/phase-56n-verified-remediation-component-outcomes.md`
+- `docs/work-packages/phase-56o-cross-agency-remediation-follow-through.md`
+- `docs/work-packages/phase-56p-action-level-priority-recommendation-decomposition.md`
+- `docs/work-packages/phase-56v-second-order-recovery-leads-supporting-artifacts.md`
+- `docs/work-packages/phase-57g-named-asset-project-cohort-registry-expansion.md`
+- `docs/work-packages/phase-55l-implementation-evidence-conversion.md`
+- `docs/work-packages/phase-55n-implementation-outcomes-local-conversion.md`
+- `docs/release-qa-v0.2.md`
+- `docs/launch-note-v0.2.md`
+- `deployment/ftfn-v0.2-build.json`
+- `app/scripts/verify-release.mjs`
 - `docs/source-broadening-and-intake-plan.md`
 - `docs/private-update-queue.md`
 - `docs/signal-repair-workflow.md`
@@ -249,46 +432,63 @@ Key files:
 - `docs/content-model.md`
 - `docs/documentation-map.md`
 
-## Next Roadmap Phase
+## Next Decision Gate
 
-Next phase identified in the roadmap:
+Next executable decision identified in the roadmap:
 
 ```text
-Phase 51: Local Evidence Dossier Deepening
+Phase 57J historical backfill, rejection taxonomy, and review-queue execution
 ```
 
-Expected focus:
+Proceed by:
 
-- select one named Arizona utility docket, planning filing, or transmission record,
-- select one provider-level Arizona water, allocation, service-area, conservation, or infrastructure record,
-- track Toronto application 24 254930 to a staff report, decision, or status update,
-- add a Toronto/Ontario servicing, permit, start, completion, or occupancy record,
-- add workforce, construction-labor, supplier, or facility evidence where it can be bounded,
-- apply `docs/signal-repair-workflow.md` and keep new records `In Review`,
-- update the local profiles and evidence gaps in the same batch,
-- preserve the passed v0.1.1 local release-QA record in `docs/release-qa-v0.1.1.md`,
-- decide whether to run a Cloudflare Pages preview deploy now that local browser/indexing QA has passed,
-- if preview deployment is approved, deploy only to a preview URL and run the launch checklist there,
-- do not attach `ftfn.io`, change DNS, add analytics, or publicly launch without explicit approval.
+- build a 178-identity-by-snapshot Amtrak longitudinal matrix while retaining the sixteen-name current queue and five visible identity rejections,
+- build a thirty-two-project-by-thirteen-field Montana compatibility matrix while preserving terrestrial, LEO, privacy, schema, definition, and state-disposition boundaries,
+- classify all 126 Hanford observation-to-transition applicability cells and seventy transition-requirement checks without manufacturing custody or material joins,
+- classify eighteen NNSA objects across three adjacent source-version transitions and twelve dimensions while keeping agency and independent authority separate,
+- attach all nine Phase 57J holds to machine-readable reopening contracts and process later outcome publications only as reviewed source-versioned bounded inserts,
+- publish only an exact record, a new authoritative status, or a materially narrower locator,
+- do not represent a public search as agency contact or a submitted FOIA request,
+- preserve stop rules, reopening triggers, authority conflicts, and time-bounded milestone checks as inserts rather than pauses,
+- rerun the held HHS tracker check only when the official tracker changes,
+- continue compatible battery, manufacturer, and carrier outcome rails under their existing reopening rules,
+- tie every acquisition to its existing coverage ID and reopening rule,
+- execute bounded record batches across agencies, providers, production lines, and battery assets,
+- distinguish regulator, auditor, company, operator, carrier, and third-party attribution,
+- disclose stable identity, unit, denominator, period, geography, method, attribution, missing evidence, revisions, and reporting breaks,
+- retain unavailable or incompatible records as named gaps with reopening rules,
+- apply explicit publish or hold decisions before changing sitemap or export membership,
+- use the remaining Phase 55S authority backlog only where it fills a named corpus gap,
+- run all six dated tasks as bounded inserts without pausing the queue,
+- keep Git and the static build as the public publication gate,
+- preserve owner-only Sites access,
+- keep Phase 56 public access, package freeze, Hostinger DNS, custom-domain attachment, and public launch as separate explicit decisions.
 
 ## Most Important Documents
 
 Start future work by reading:
 
-1. `README.md`
-2. `docs/session-brief.md`
-3. `docs/master-roadmap.md`
-4. `docs/decision-log.md`
-5. `docs/content-expansion-plan.md`
-6. `docs/signals-roadmap.md`
-7. `docs/source-monitoring-plan.md`
-8. `docs/authoritative-live-source-plan.md`
-9. `docs/authority-red-team-and-resource-expansion-plan.md`
-10. `docs/publication-readiness-triage.md`
-11. `docs/launch-candidate-review.md`
-12. `docs/publication-policy.md`
-13. `docs/launch-package.md`
-14. the latest work package in `docs/work-packages/`
+1. `docs/build-summary-v0.2.md`
+2. `docs/roadmap-v0.2.md`
+3. `docs/session-handoff-v0.2.md`
+4. `deployment/ftfn-v0.2-build.json`
+5. `docs/release-qa-v0.2.md`
+6. `docs/launch-package.md`
+7. `README.md`
+8. `docs/session-brief.md`
+9. `docs/master-roadmap.md`
+10. `docs/decision-log.md`
+11. `docs/content-expansion-plan.md`
+12. `docs/signals-roadmap.md`
+13. `docs/source-monitoring-plan.md`
+14. `docs/authoritative-live-source-plan.md`
+15. `docs/authority-red-team-and-resource-expansion-plan.md`
+16. `docs/publication-readiness-triage.md`
+17. `docs/launch-candidate-review.md`
+18. `docs/publication-policy.md`
+19. `docs/public-data-exports.md`
+20. `docs/supabase-activation-plan.md`
+21. the latest work package in `docs/work-packages/`
 
 Use these as needed:
 
@@ -311,6 +511,12 @@ Paste this into a new chat to continue efficiently:
 Continue FTFN from the current project state.
 
 Read:
+- docs/build-summary-v0.2.md
+- docs/roadmap-v0.2.md
+- docs/session-handoff-v0.2.md
+- docs/release-qa-v0.2.md
+- docs/launch-note-v0.2.md
+- deployment/ftfn-v0.2-build.json
 - docs/session-brief-v0.1.1.md
 - docs/roadmap-v0.1.1.md
 - deployment/ftfn-v0.1.1-build.json
@@ -333,19 +539,19 @@ Preserve:
 - "Civilization is a choice,"
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
-Current completed phase:
-Phase 50B: Bounded Evidence Conversion.
+Current completed work:
+Phase 57M source-schema adapters, candidate-evidence packet templates, and human-review decision tables; complete, release-validated, and owner-only deployed as Sites version 69.
 
 Current release checkpoint:
-v0.1.1 static preview candidate: 102 sources, 18 signals, 17 topics, and 182 pages.
+v0.1.1 remains the frozen 102-source / 18-signal / 182-page checkpoint; the active development and hosted non-public candidate is Phase 57M in owner-only Sites version 69 on exact runtime commit `ab6e14d05ca55daf4f92655218d307d247547a3e`.
 
 Current development state:
-v0.2 development: package 0.2.0-dev, 102 sources, 22 signals, 17 topics, and 186 pages on codex/v0.2-phase50b.
+v0.2 Phase 57M candidate: package 0.2.0-dev, 715 public sources, 150 first-pass-triaged private candidates, 815 signals, 17 topics, 67 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 2,647 generated site pages, 636 Published signals, 44 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 48 research collections, 931 research documents, sixty non-coercive adapters, 120 exact labels, eighteen non-evidence fixtures, nine six-outcome review tables, fifty-four rehearsal rows, all prior verified archives plus the Phase 57M 32-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 494 Manual Review and 221 Probe Ready records.
 
-Next roadmap phase:
-Begin Phase 51: deepen the Arizona and Ontario dossiers with named power, water, permitting, servicing, workforce, and completion records while preserving project-level evidence limits.
+Next decision gate:
+Begin Phase 57N. Test all 120 accepted labels and ambiguity rejections, execute all eighteen fixtures against their expected review outcomes, and add machine-readable reviewer receipts for identity, reason, citation, decision time, escalation, and publication-review handoff. Preserve all nine holds and prohibit automatic triggers or publication. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
 
-Please confirm the current state from the docs, then generate the next phase prompt before implementing.
+Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
 ```
 
 ## Implementation Reminders

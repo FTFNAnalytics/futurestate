@@ -1,0 +1,63 @@
+{
+  "id": "research-doc-57h-hanford-fourteen-transition-custody-matrix",
+  "collection_id": "research-collection-registry-revision-provenance-compatible-observation-joins-2026",
+  "title": "Fourteen Hanford transitions now preserve stage and custody boundaries",
+  "slug": "57h-hanford-fourteen-transition-custody-matrix",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy, Office of Environmental Management",
+  "publication_date": "2026-08-03",
+  "document_type": "Data Release",
+  "summary": "The matrix expands the lifecycle into fourteen directed transitions across tank operations, laboratory certification, LAW processing, transport, staging, and disposal. Denominator: 14 transitions across fourteen registered stages.",
+  "key_findings": [
+    "Evidence stage: Authority and observation compatibility.",
+    "Finding: The matrix expands the lifecycle into fourteen directed transitions across tank operations, laboratory certification, LAW processing, transport, staging, and disposal.",
+    "Denominator: 14 transitions across fourteen registered stages.",
+    "Boundary: A process edge is not an observed transfer.",
+    "Boundary: Custody label is not container acceptance.",
+    "Boundary: Parallel melters do not create container lineage.",
+    "Next action: Add transfer and receipt events only with compatible identifiers, dates, units, and dispositions."
+  ],
+  "why_it_matters": "The record makes source-version, identity, field, authority, stage, unit, and work-breakdown compatibility inspectable before later observations are joined.",
+  "ftfn_relevance": [
+    "Makes revisions and join decisions reproducible.",
+    "Preserves unresolved identities and incompatible observations.",
+    "Separates provenance from operating outcomes, implementation, acceptance, and closure."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "A process edge is not an observed transfer.",
+    "Custody label is not container acceptance.",
+    "Parallel melters do not create container lineage.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-hanford-dflaw-process-animation",
+  "supporting_source_ids": [
+    "source-57g-hanford-dflaw-process-animation",
+    "source-57g-hanford-ap106-feed-staging"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+    "https://www.energy.gov/em/articles/making-space-hanford-prepares-key-tank-waste-treatment-mission"
+  ],
+  "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+  "local_capture_path": "/downloads/registry-revision-provenance-compatible-observation-joins-2026/official-links/12-hanford-fourteen-transition-custody-matrix.txt",
+  "archive_member": "official-links/12-hanford-fourteen-transition-custody-matrix.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-03"
+}

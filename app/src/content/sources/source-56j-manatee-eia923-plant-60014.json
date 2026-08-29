@@ -1,0 +1,35 @@
+{
+  "id": "source-56j-manatee-eia923-plant-60014",
+  "name": "EIA-923 May 2026 Energy Storage Rows — Plant 60014",
+  "url": "https://www.eia.gov/electricity/data/eia923/xls/f923_2026.zip",
+  "source_type": "Government Agency",
+  "credibility_level": "Tier 1",
+  "primary_topics": [
+    "Energy"
+  ],
+  "framework_layers": [
+    "Resource Foundations",
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "country_or_region": "United States",
+  "update_frequency": "Event-driven",
+  "capture_priority": "High",
+  "known_limitations": "The EIA survey row is monthly, subject to revision, and does not expose interval dispatch or availability. Its quantity-consumed, gross-generation, and net-generation fields must not be converted into an efficiency claim without reconciling the survey definitions and reported totals. Phase 56J keeps the coverage ID, entity identity, attribution, period, evidence state, and continuation rule attached.",
+  "last_checked_date": "2026-07-25",
+  "watch_lanes": [
+    "Power and Grid",
+    "Cross-Cutting Official Rails"
+  ],
+  "live_access_type": "Data Download",
+  "data_download_url": "https://www.eia.gov/electricity/data/eia923/xls/f923_2026.zip",
+  "review_cadence_days": 60,
+  "monitoring_status": "Active",
+  "coverage_role": [
+    "Primary Data",
+    "Source Freshness"
+  ],
+  "jurisdiction": "United States electric power system",
+  "source_owner": "U.S. Energy Information Administration",
+  "notes": "Phase 56J evidence-value continuation source. Collection: evidence-value-continuation-queue-batch-one-2026."
+}

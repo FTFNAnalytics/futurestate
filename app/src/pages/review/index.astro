@@ -1,0 +1,86 @@
+---
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../components/review/ReviewHeader.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+import program from "../../data/v03-editorial-program.json";
+import expansion from "../../data/v031-content-expansion.json";
+---
+
+<BaseLayout title="The FTFN Review | Public knowledge edition" description={program.summary}>
+  <ReviewHeader eyebrow="The public knowledge edition" title="The FTFN Review" summary={program.summary} phase={103} />
+
+  <section class="page-section">
+    <div class="metric-strip" aria-label="Editorial program counts">
+      <div class="metric"><strong>{program.counts.canonical_topic_chapters}</strong><span>topic chapters</span></div>
+      <div class="metric"><strong>{program.counts.casebooks}</strong><span>casebooks</span></div>
+      <div class="metric"><strong>{program.counts.cross_system_stories}</strong><span>system stories</span></div>
+      <div class="metric"><strong>{program.counts.public_routes}</strong><span>public routes</span></div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Canonical chapters</div><h2>Start with a system.</h2></div><a class="inline-link" href="/review/method/">How synthesis works</a></div>
+    <div class="signal-grid">
+      {program.topics.map((topic) => (
+        <article class="record-card">
+          <MetaPill label="Topic review" />
+          <h3><a href={`/review/topics/${topic.slug}/`}>{topic.name}</a></h3>
+          <p>Read the current evidence, limits, constraints and next questions as one bounded chapter.</p>
+          <div class="button-row"><a class="inline-link" href={`/review/topics/${topic.slug}/`}>Open chapter</a><a class="inline-link" href={`/learn/${topic.slug}/`}>Learning edition</a></div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Place portraits</div>
+      <h2>See where the stack has to land.</h2>
+      <p>Five local systems collect the power, water, land, workforce, finance, authority and legitimacy constraints that decide whether frontier signals convert.</p>
+    </div>
+    <div class="source-list">
+      {program.local_systems.map((system) => (
+        <article class="source-row"><h3><a href={`/review/places/${system.slug}/`}>{system.name}</a></h3><p>{system.summary}</p></article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Narrative casebooks</div><h2>Follow named files, not generic promise.</h2></div></div>
+    <div class="signal-grid">
+      {program.casebooks.map((record) => (
+        <article class="record-card"><MetaPill label={record.kind === "local_project" ? "Project file" : "Adoption case"} /><h3><a href={`/review/casebooks/${record.slug}/`}>{record.title}</a></h3><p>{record.editorial_question}</p><a class="inline-link" href={`/review/journeys/${record.slug}/`}>Follow the full evidence journey</a></article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Cross-system atlas</div><h2>Read across the silos.</h2></div></div>
+    <div class="signal-grid">
+      {program.cross_system_stories.map((story) => (
+        <article class="record-card"><MetaPill label="Cross-system story" tone="possibility" /><h3><a href={`/review/systems/${story.slug}/`}>{story.title}</a></h3><p>{story.editorial_question}</p></article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy"><div class="eyebrow">Living publication</div><h2>Maintenance is part of the product.</h2><p>Freshness, corrections and scheduled review are public surfaces—not invisible editorial chores.</p></div>
+    <div class="source-list">
+      <a class="source-row" href="/review/state-of-frontier-systems/"><strong>State of frontier systems</strong><span>Current edition</span></a>
+      <a class="source-row" href="/review/outcomes/tsmc-arizona/"><strong>Outcomes observatory</strong><span>Eight named measurement files</span></a>
+      <a class="source-row" href="/review/uncertainty/advanced-manufacturing/"><strong>Uncertainty library</strong><span>Seventeen topic challenges</span></a>
+      <a class="source-row" href="/review/freshness/"><strong>Freshness board</strong><span>What needs review next</span></a>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Evidence in public context</div><h2>The next content shelf is open.</h2><p>Phases 111–115 connect live evidence operations to more places, named cases, comparative reports and accessible reading forms.</p></div><MetaPill label={`${expansion.counts.public_routes} new routes`} tone="possibility" /></div>
+    <div class="signal-grid">
+      <article class="record-card"><MetaPill label="Phase 111" /><h3><a href="/review/evidence-cycle/">Evidence Cycle 001</a></h3><p>See all thirteen gates with dated decisions and future scheduled checks kept separate.</p></article>
+      <article class="record-card"><MetaPill label="Phase 112" /><h3><a href={`/review/regions/${expansion.regions[0].slug}/`}>Fifteen local-system portraits</a></h3><p>Ten additional place-bound views extend the original five-system editorial shelf.</p></article>
+      <article class="record-card"><MetaPill label="Phase 113" /><h3><a href={`/review/casebooks/expanded/${expansion.casebooks[0].slug}/`}>Twenty-four named casebooks</a></h3><p>Sixteen new asset, delivery and operating narratives join the original eight.</p></article>
+      <article class="record-card"><MetaPill label="Phase 114" /><h3><a href={`/review/reports/${expansion.reports[0].slug}/`}>Four comparative reports</a></h3><p>Long-form synthesis across infrastructure, adoption, utilities and delivery.</p></article>
+      <article class="record-card"><MetaPill label="Phase 115" /><h3><a href="/review/accessibility/">Accessible and jurisdiction editions</a></h3><p>Linear reading forms, five jurisdiction lenses and transparent translation-review status.</p></article>
+    </div>
+  </section>
+</BaseLayout>

@@ -10,7 +10,7 @@
   "update_frequency": "Ongoing metadata and dataset catalog",
   "capture_priority": "High",
   "known_limitations": "CMR is a metadata search layer; claims still require selecting the actual dataset, instrument, processing level, spatial and temporal coverage, and data-quality notes.",
-  "last_checked_date": "2026-07-10",
+  "last_checked_date": "2026-07-24",
   "watch_lanes": ["Discovery Technologies", "Climate", "Space", "Water"],
   "live_access_type": "API",
   "api_url": "https://cmr.earthdata.nasa.gov/search/collections.json",
@@ -20,5 +20,5 @@
   "jurisdiction": "United States federal and global Earth science data",
   "source_owner": "NASA Earthdata",
   "automation_notes": "Use CMR API queries to discover NASA Earth science datasets relevant to climate, water, land, atmosphere, ocean, and remote-sensing signals.",
-  "notes": "Phase 40 Discovery Technologies anchor."
+  "notes": "Phase 40 Discovery Technologies anchor. Phase 55T recheck confirmed the official CMR Search API documentation remains available and continues to document collection and granule search, result formats, query parameters, paging, and current search-after guidance."
 }

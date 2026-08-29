@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/v031-content-expansion.json";
+
+export function getStaticPaths() { return program.lenses.map((lens) => ({ params: { slug: lens.slug }, props: { lensId: lens.lens_id } })); }
+const lens = program.lenses.find((item) => item.lens_id === Astro.props.lensId)!;
+---
+
+<BaseLayout title={`${lens.title} | FTFN jurisdiction lens`} description={lens.reading_rule}>
+  <ReviewHeader eyebrow="Phase 115 · Jurisdiction lens" title={lens.title} summary={lens.reading_rule} phase={115} />
+  <section class="page-section"><div class="signal-grid"><article class="record-card"><MetaPill label="1 · Identity" /><h2>Name the authority and asset.</h2><p>Keep agencies, operators, places, programs and named assets explicit before comparing evidence.</p></article><article class="record-card"><MetaPill label="2 · Stage" /><h2>Locate the conversion gate.</h2><p>Separate announcement, authority, finance, construction, commissioning, acceptance, operation and repeated outcome.</p></article><article class="record-card"><MetaPill label="3 · Denominator" /><h2>Make comparison conditions visible.</h2><p>Use stable periods, populations, assets, locations and definitions; do not fill missing values.</p></article></div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Reading rule</div><h2>{lens.reading_rule}</h2><p>Institutional differences are evidence context. This lens does not rank jurisdictions or imply that unlike measures are comparable.</p></div><article class="record-card"><h3>Continue into the evidence</h3><p><a class="inline-link" href="/review/evidence-cycle/">Evidence Cycle 001</a></p><p><a class="inline-link" href="/review/reports/permission-is-not-operation/">Permission is not operation</a></p></article></section>
+</BaseLayout>

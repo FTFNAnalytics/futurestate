@@ -1,0 +1,962 @@
+{
+  "schema_version": "1.0",
+  "program_id": "FTFN-V0.3.1-CONTENT-EXPANSION",
+  "title": "FTFN v0.3.1 — Evidence in public context",
+  "effective_date": "2026-08-29",
+  "record_status": "Published",
+  "summary": "A 54-route expansion that turns the operating cycle, additional place systems, named cases and cross-system analysis into bounded public reading surfaces.",
+  "publication_boundaries": [
+    "No future Phase 60 gate is operated before its scheduled date, and no missing receipt or outcome is inferred.",
+    "Every new page resolves existing Published evidence or an explicit scheduled operating contract; it creates no source fact, receipt, observation, outcome, score or ranking.",
+    "French and Spanish editions remain In Review and unrouteable until a qualified human reviewer approves terminology, claims and links."
+  ],
+  "counts": {
+    "phases_complete": 5,
+    "public_routes": 54,
+    "evidence_cycle_routes": 14,
+    "editorial_local_systems_added": 10,
+    "editorial_local_systems_total": 15,
+    "casebooks_added": 16,
+    "casebooks_total": 24,
+    "comparative_reports": 4,
+    "accessible_and_lens_routes": 10
+  },
+  "phases": [
+    {
+      "phase": 111,
+      "title": "Evidence-to-publication activation",
+      "content_goal": "Publish a reader-facing evidence-cycle desk while preserving every dated decision and future scheduled gate.",
+      "status": "Complete",
+      "routes": [
+        "/review/evidence-cycle/",
+        "/review/evidence-cycle/darpa-results/",
+        "/review/evidence-cycle/space-coast-slf-licence/",
+        "/review/evidence-cycle/louisiana-starlink-adoption/",
+        "/review/evidence-cycle/louisiana-nextlink-adoption/",
+        "/review/evidence-cycle/amtrak-pids-closeout/",
+        "/review/evidence-cycle/hanford-material-balance/",
+        "/review/evidence-cycle/nnsa-gao-baseline/",
+        "/review/evidence-cycle/montana-completed-quarter/",
+        "/review/evidence-cycle/arizona-wastewater/",
+        "/review/evidence-cycle/nnsa-accepted-capacity/",
+        "/review/evidence-cycle/loudoun-standards/",
+        "/review/evidence-cycle/amtrak-named-asset-reliability/",
+        "/review/evidence-cycle/nnsa-recurring-qualified-rate/"
+      ]
+    },
+    {
+      "phase": 112,
+      "title": "Local-system expansion",
+      "content_goal": "Add ten place-bound system portraits, expanding editorial local-system coverage from five to fifteen.",
+      "status": "Complete",
+      "routes": [
+        "/review/regions/california-autonomous-mobility/",
+        "/review/regions/louisiana-broadband-adoption/",
+        "/review/regions/montana-bead-delivery/",
+        "/review/regions/hanford-waste-treatment/",
+        "/review/regions/amtrak-accessibility-and-reliability/",
+        "/review/regions/nnsa-two-site-production/",
+        "/review/regions/south-australia-grid-storage/",
+        "/review/regions/victoria-grid-storage/",
+        "/review/regions/florida-utility-storage/",
+        "/review/regions/california-battery-safety/"
+      ]
+    },
+    {
+      "phase": 113,
+      "title": "Casebook expansion",
+      "content_goal": "Add sixteen named-asset and delivery casebooks, expanding the casebook shelf from eight to twenty-four.",
+      "status": "Complete",
+      "routes": [
+        "/review/casebooks/expanded/manatee-battery-storage/",
+        "/review/casebooks/expanded/moss-landing-battery-safety/",
+        "/review/casebooks/expanded/gateway-battery-storage/",
+        "/review/casebooks/expanded/hornsdale-power-reserve/",
+        "/review/casebooks/expanded/victoria-big-battery/",
+        "/review/casebooks/expanded/dalrymple-grid-battery/",
+        "/review/casebooks/expanded/f35-production-readiness/",
+        "/review/casebooks/expanded/f15ex-production-delivery/",
+        "/review/casebooks/expanded/kc46-readiness/",
+        "/review/casebooks/expanded/current-applications-capacity/",
+        "/review/casebooks/expanded/island-components-capacity/",
+        "/review/casebooks/expanded/monaghan-medical-capacity/",
+        "/review/casebooks/expanded/amtrak-accessible-stations/",
+        "/review/casebooks/expanded/hanford-dflaw-operation/",
+        "/review/casebooks/expanded/montana-bead-completed-quarter/",
+        "/review/casebooks/expanded/nnsa-qualified-production/"
+      ]
+    },
+    {
+      "phase": 114,
+      "title": "Comparative public reports",
+      "content_goal": "Publish four flagship reports that connect evidence across systems without creating causal findings or rankings.",
+      "status": "Complete",
+      "routes": [
+        "/review/reports/compute-power-water/",
+        "/review/reports/permission-is-not-operation/",
+        "/review/reports/standards-to-adoption/",
+        "/review/reports/infrastructure-delivery-in-practice/"
+      ]
+    },
+    {
+      "phase": 115,
+      "title": "Accessible and international reading",
+      "content_goal": "Publish linear reading editions and five jurisdiction lenses while holding French and Spanish translations for qualified human review.",
+      "status": "Complete",
+      "routes": [
+        "/review/accessibility/",
+        "/review/accessibility/reports/compute-power-water/",
+        "/review/accessibility/reports/permission-is-not-operation/",
+        "/review/accessibility/reports/standards-to-adoption/",
+        "/review/accessibility/reports/infrastructure-delivery-in-practice/",
+        "/review/lenses/us-federal-delivery/",
+        "/review/lenses/state-and-local-conversion/",
+        "/review/lenses/canada-and-ontario/",
+        "/review/lenses/public-infrastructure-operators/",
+        "/review/lenses/international-comparative-reading/"
+      ]
+    }
+  ],
+  "evidence_cycle": {
+    "cycle_id": "evidence-cycle-001",
+    "cycle_status": "wave_60b_complete_wave_60c_scheduled",
+    "cycle_end_date": "2026-10-09",
+    "publication_boundary": "Phase 60 publishes the operating contract and schedule, not future evidence. A scheduled gate remains scheduled until its source is checked, a human decision is recorded, required surfaces are propagated, validation passes, and the change is committed to Git.",
+    "records": [
+      {
+        "cycle_item_id": "60-CYCLE-DARPA-RESULTS",
+        "wave": "60B",
+        "target": "DARPA Lift Challenge official measured results",
+        "origin_record_id": "58-QUEUE-DARPA-RESULTS",
+        "source_ids": [
+          "source-darpa-lift-challenge-2026"
+        ],
+        "underlying_signal_id": "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+        "exact_next_artifact": "A dated DARPA final-results artifact identifying measured team performance, winners, and prize decisions.",
+        "scheduled_check_date": "2026-08-14",
+        "decision_status": "material_change",
+        "decision_date": "2026-08-23",
+        "receipt_id": "receipt-60-darpa-2026-08-23-results",
+        "canonical_dossier_ids": [
+          "briefing-adoption-003-autonomy-evtol"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-autonomy-regulation-to-service"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-technology-adoption-is-not-operating-outcome"
+        ],
+        "local_system_ids": [],
+        "source_checked_date": "2026-08-23",
+        "receipt_type": "Change Note",
+        "propagation_status": "complete",
+        "next_check_date": "2026-09-23",
+        "slug": "darpa-results",
+        "public_state": "Dated decision"
+      },
+      {
+        "cycle_item_id": "60-CYCLE-SPACE-COAST-SLF-LICENCE",
+        "wave": "60B",
+        "target": "Space Coast Shuttle Landing Facility licence disposition",
+        "origin_record_id": "gap-013",
+        "source_ids": [
+          "source-faa-shuttle-landing-facility-license"
+        ],
+        "underlying_signal_id": "signal-shuttle-landing-facility-license-status-watch",
+        "exact_next_artifact": "A formal FAA renewal, replacement, lapse, surrender, or other current disposition for the Shuttle Landing Facility site licence.",
+        "scheduled_check_date": "2026-08-15",
+        "decision_status": "no_material_change",
+        "decision_date": "2026-08-15",
+        "receipt_id": "receipt-60-slf-2026-08-15-no-material-change",
+        "canonical_dossier_ids": [
+          "briefing-local-conversion-004-space-coast"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-space-coast-plan-to-mission"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-local-authorization-is-not-operation"
+        ],
+        "local_system_ids": [
+          "local-florida-space-coast-launch-corridor"
+        ],
+        "source_checked_date": "2026-08-15",
+        "receipt_type": "No Material Change",
+        "propagation_status": "complete",
+        "next_check_date": "2026-09-15",
+        "slug": "space-coast-slf-licence",
+        "public_state": "Dated decision"
+      },
+      {
+        "cycle_item_id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+        "wave": "60C",
+        "target": "Louisiana Starlink observed adoption",
+        "origin_record_id": "58-QUEUE-LOUISIANA-STARLINK-ADOPTION",
+        "source_ids": [
+          "source-57b-louisiana-starlink-bead-agreement"
+        ],
+        "underlying_signal_id": "signal-57y-preserved-la-starlink-adoption",
+        "exact_next_artifact": "Observed subscription or installation evidence for a fixed eligible-location cohort after service becomes available.",
+        "scheduled_check_date": "2026-09-01",
+        "decision_status": "scheduled",
+        "decision_date": null,
+        "receipt_id": null,
+        "canonical_dossier_ids": [
+          "briefing-outcomes-watch-001-what-actually-changed"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-policy-standards-to-implementation"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-comparative-outcomes-require-common-denominators"
+        ],
+        "local_system_ids": [],
+        "slug": "louisiana-starlink-adoption",
+        "public_state": "Scheduled evidence gate"
+      },
+      {
+        "cycle_item_id": "60-CYCLE-LOUISIANA-NEXTLINK-ADOPTION",
+        "wave": "60C",
+        "target": "Louisiana Nextlink observed adoption",
+        "origin_record_id": "58-QUEUE-LOUISIANA-NEXTLINK-ADOPTION",
+        "source_ids": [
+          "source-57b-louisiana-nextlink-first-bead-tower"
+        ],
+        "underlying_signal_id": "signal-57y-preserved-la-nextlink-adoption",
+        "exact_next_artifact": "Observed subscription or take-rate evidence for a fixed eligible-location cohort after service availability.",
+        "scheduled_check_date": "2026-09-09",
+        "decision_status": "scheduled",
+        "decision_date": null,
+        "receipt_id": null,
+        "canonical_dossier_ids": [
+          "briefing-outcomes-watch-001-what-actually-changed"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-policy-standards-to-implementation"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-comparative-outcomes-require-common-denominators"
+        ],
+        "local_system_ids": [],
+        "slug": "louisiana-nextlink-adoption",
+        "public_state": "Scheduled evidence gate"
+      },
+      {
+        "cycle_item_id": "60-CYCLE-AMTRAK-PIDS-CLOSEOUT",
+        "wave": "60C",
+        "target": "Amtrak PIDS final closeout",
+        "origin_record_id": "58-QUEUE-AMTRAK-PIDS-CLOSEOUT",
+        "source_ids": [
+          "source-57b-amtrak-ada-progress-june-2026"
+        ],
+        "underlying_signal_id": "signal-57y-preserved-amtrak-pids",
+        "exact_next_artifact": "A final FRA-accepted closeout record tied to the PIDS program scope and completed deployment denominator.",
+        "scheduled_check_date": "2026-09-10",
+        "decision_status": "scheduled",
+        "decision_date": null,
+        "receipt_id": null,
+        "canonical_dossier_ids": [
+          "briefing-outcomes-watch-001-what-actually-changed"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-autonomy-regulation-to-service"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-comparative-outcomes-require-common-denominators"
+        ],
+        "local_system_ids": [],
+        "slug": "amtrak-pids-closeout",
+        "public_state": "Scheduled evidence gate"
+      },
+      {
+        "cycle_item_id": "60-CYCLE-HANFORD-MATERIAL-BALANCE",
+        "wave": "60C",
+        "target": "Hanford complete material balance",
+        "origin_record_id": "58-QUEUE-HANFORD-MATERIAL-BALANCE",
+        "source_ids": [
+          "source-57d-hanford-wtp-consent-july-2026"
+        ],
+        "underlying_signal_id": "signal-57y-preserved-hanford-mass-balance",
+        "exact_next_artifact": "A compatible material balance covering feed, immobilized glass, secondary waste, inventory change, losses, period, and reconciliation method.",
+        "scheduled_check_date": "2026-09-10",
+        "decision_status": "scheduled",
+        "decision_date": null,
+        "receipt_id": null,
+        "canonical_dossier_ids": [
+          "briefing-outcomes-watch-001-what-actually-changed"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-advanced-manufacturing-research-to-production"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-comparative-outcomes-require-common-denominators"
+        ],
+        "local_system_ids": [],
+        "slug": "hanford-material-balance",
+        "public_state": "Scheduled evidence gate"
+      },
+      {
+        "cycle_item_id": "60-CYCLE-NNSA-GAO-BASELINE",
+        "wave": "60C",
+        "target": "NNSA GAO enterprise baseline closure",
+        "origin_record_id": "58-QUEUE-NNSA-GAO-ENTERPRISE-BASELINE",
+        "source_ids": [
+          "source-56q-gao-23-104661-recommendation-status"
+        ],
+        "underlying_signal_id": "signal-57y-preserved-nnsa-gao-baseline",
+        "exact_next_artifact": "A final enterprise-wide integrated cost and schedule baseline plus GAO closure evidence tied to recommendation GAO-23-104661.",
+        "scheduled_check_date": "2026-09-10",
+        "decision_status": "scheduled",
+        "decision_date": null,
+        "receipt_id": null,
+        "canonical_dossier_ids": [
+          "briefing-outcomes-watch-001-what-actually-changed"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-policy-standards-to-implementation"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-comparative-outcomes-require-common-denominators"
+        ],
+        "local_system_ids": [],
+        "slug": "nnsa-gao-baseline",
+        "public_state": "Scheduled evidence gate"
+      },
+      {
+        "cycle_item_id": "60-CYCLE-MONTANA-COMPLETED-QUARTER",
+        "wave": "60C",
+        "target": "Montana BEAD completed quarterly outcome",
+        "origin_record_id": "58-QUEUE-MONTANA-COMPLETED-QUARTER",
+        "source_ids": [
+          "source-57f-montana-bead-resource-index-august-2026"
+        ],
+        "underlying_signal_id": "signal-57y-preserved-mt-bead-quarter",
+        "exact_next_artifact": "One complete public quarterly report with project identity, reporting period, locations, completion state, and outcome denominator.",
+        "scheduled_check_date": "2026-09-15",
+        "decision_status": "scheduled",
+        "decision_date": null,
+        "receipt_id": null,
+        "canonical_dossier_ids": [
+          "briefing-outcomes-watch-001-what-actually-changed"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-policy-standards-to-implementation"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-local-authorization-is-not-operation"
+        ],
+        "local_system_ids": [],
+        "slug": "montana-completed-quarter",
+        "public_state": "Scheduled evidence gate"
+      },
+      {
+        "cycle_item_id": "60-CYCLE-ARIZONA-WASTEWATER",
+        "wave": "60D",
+        "target": "Phoenix and TSMC wastewater delivery and operation",
+        "origin_record_id": "gap-002",
+        "source_ids": [
+          "source-phoenix-tsmc-2026-wastewater-development-agreement"
+        ],
+        "underlying_signal_id": "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+        "exact_next_artifact": "A project record establishing completed and accepted conveyance work, operating reclaimed-water infrastructure, measured flow, discharge or compliance, or a facility water balance.",
+        "scheduled_check_date": "2026-09-22",
+        "decision_status": "scheduled",
+        "decision_date": null,
+        "receipt_id": null,
+        "canonical_dossier_ids": [
+          "briefing-local-conversion-001-southwest-chips"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-industrial-water-agreement-to-reuse-operation"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-frontier-system-constraint-atlas"
+        ],
+        "local_system_ids": [
+          "local-us-southwest-chip-corridor"
+        ],
+        "slug": "arizona-wastewater",
+        "public_state": "Scheduled evidence gate"
+      },
+      {
+        "cycle_item_id": "60-CYCLE-NNSA-ACCEPTED-CAPACITY",
+        "wave": "60D",
+        "target": "NNSA accepted operating capacity",
+        "origin_record_id": "58-QUEUE-NNSA-ACCEPTED-CAPACITY",
+        "source_ids": [
+          "source-57b-nnsa-pit-production-draft-peis-2026"
+        ],
+        "underlying_signal_id": "signal-57y-preserved-nnsa-accepted-capacity",
+        "exact_next_artifact": "A final accepted operating-capacity artifact linked to operating configuration, acceptance criteria, and observed qualified output.",
+        "scheduled_check_date": "2026-09-24",
+        "decision_status": "scheduled",
+        "decision_date": null,
+        "receipt_id": null,
+        "canonical_dossier_ids": [
+          "briefing-adoption-004-advanced-manufacturing"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-advanced-manufacturing-research-to-production"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-technology-adoption-is-not-operating-outcome"
+        ],
+        "local_system_ids": [],
+        "slug": "nnsa-accepted-capacity",
+        "public_state": "Scheduled evidence gate"
+      },
+      {
+        "cycle_item_id": "60-CYCLE-LOUDOUN-STANDARDS",
+        "wave": "60D",
+        "target": "Loudoun Phase 2 data-center standards",
+        "origin_record_id": "gap-011",
+        "source_ids": [
+          "source-loudoun-phase2-data-center-standards"
+        ],
+        "underlying_signal_id": "signal-loudoun-phase2-data-center-standards-watch",
+        "exact_next_artifact": "A county staff report, public-hearing record, board action, adopted text, effective date, or formal revised schedule for Phase 2 standards.",
+        "scheduled_check_date": "2026-10-01",
+        "decision_status": "scheduled",
+        "decision_date": null,
+        "receipt_id": null,
+        "canonical_dossier_ids": [
+          "briefing-local-conversion-002-northern-virginia-compute"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-northern-virginia-compute-to-service"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-frontier-system-constraint-atlas"
+        ],
+        "local_system_ids": [
+          "local-northern-virginia-data-center-corridor"
+        ],
+        "slug": "loudoun-standards",
+        "public_state": "Scheduled evidence gate"
+      },
+      {
+        "cycle_item_id": "60-CYCLE-AMTRAK-NAMED-ASSET-RELIABILITY",
+        "wave": "60D",
+        "target": "Amtrak named-asset reliability",
+        "origin_record_id": "58-QUEUE-AMTRAK-NAMED-ASSET-RELIABILITY",
+        "source_ids": [
+          "source-57e-amtrak-accessibility-progress-june-2026"
+        ],
+        "underlying_signal_id": "signal-57y-preserved-amtrak-reliability",
+        "exact_next_artifact": "A repeated named-asset reliability series with stable asset identity, period, denominator, failure definition, and repair outcome.",
+        "scheduled_check_date": "2026-10-09",
+        "decision_status": "scheduled",
+        "decision_date": null,
+        "receipt_id": null,
+        "canonical_dossier_ids": [
+          "briefing-outcomes-watch-001-what-actually-changed"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-autonomy-regulation-to-service"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-comparative-outcomes-require-common-denominators"
+        ],
+        "local_system_ids": [],
+        "slug": "amtrak-named-asset-reliability",
+        "public_state": "Scheduled evidence gate"
+      },
+      {
+        "cycle_item_id": "60-CYCLE-NNSA-RECURRING-QUALIFIED-RATE",
+        "wave": "60D",
+        "target": "NNSA recurring qualified pit rate",
+        "origin_record_id": "58-QUEUE-NNSA-RECURRING-QUALIFIED-RATE",
+        "source_ids": [
+          "source-57f-nnsa-pit-production-current"
+        ],
+        "underlying_signal_id": "signal-57y-preserved-nnsa-qualified-rate",
+        "exact_next_artifact": "A recurring qualified-output series with acceptance definition, facility identity, period, denominator, and comparable rate calculation.",
+        "scheduled_check_date": "2026-10-09",
+        "decision_status": "scheduled",
+        "decision_date": null,
+        "receipt_id": null,
+        "canonical_dossier_ids": [
+          "briefing-adoption-004-advanced-manufacturing"
+        ],
+        "reader_pathway_ids": [
+          "reader-pathway-advanced-manufacturing-research-to-production"
+        ],
+        "dependency_map_ids": [
+          "dependency-map-technology-adoption-is-not-operating-outcome"
+        ],
+        "local_system_ids": [],
+        "slug": "nnsa-recurring-qualified-rate",
+        "public_state": "Scheduled evidence gate"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "portrait_id": "112-REGION-001",
+      "slug": "california-autonomous-mobility",
+      "title": "California autonomous mobility",
+      "geography": "California, United States",
+      "signal_terms": [
+        "waymo",
+        "california-av",
+        "cpuc-av"
+      ],
+      "editorial_question": "Read operating authority, service exposure, accessibility, safety and accountability as one place-bound system.",
+      "unresolved": "Stable service, exposure and public-accountability denominators remain decisive.",
+      "interpretation_boundary": "This portrait organizes existing Published records for place-based reading. It creates no new source fact, causal finding, gate decision, observation, score, ranking or outcome."
+    },
+    {
+      "portrait_id": "112-REGION-002",
+      "slug": "louisiana-broadband-adoption",
+      "title": "Louisiana broadband adoption",
+      "geography": "Louisiana, United States",
+      "signal_terms": [
+        "louisiana-starlink",
+        "louisiana-nextlink"
+      ],
+      "editorial_question": "Follow service availability into observed installation, subscription and take-rate evidence without treating an award as adoption.",
+      "unresolved": "The two scheduled September adoption gates must be checked independently.",
+      "interpretation_boundary": "This portrait organizes existing Published records for place-based reading. It creates no new source fact, causal finding, gate decision, observation, score, ranking or outcome."
+    },
+    {
+      "portrait_id": "112-REGION-003",
+      "slug": "montana-bead-delivery",
+      "title": "Montana BEAD delivery",
+      "geography": "Montana, United States",
+      "signal_terms": [
+        "montana"
+      ],
+      "editorial_question": "Connect project identity, deployment progress and completed-quarter reporting to a stable location denominator.",
+      "unresolved": "A complete public quarterly outcome remains the next decisive artifact.",
+      "interpretation_boundary": "This portrait organizes existing Published records for place-based reading. It creates no new source fact, causal finding, gate decision, observation, score, ranking or outcome."
+    },
+    {
+      "portrait_id": "112-REGION-004",
+      "slug": "hanford-waste-treatment",
+      "title": "Hanford waste treatment",
+      "geography": "Washington, United States",
+      "signal_terms": [
+        "hanford",
+        "dflaw"
+      ],
+      "editorial_question": "Read commissioning, regulator-confirmed operation and material-balance evidence across the waste-treatment system.",
+      "unresolved": "Operation does not establish a complete reconciled material balance.",
+      "interpretation_boundary": "This portrait organizes existing Published records for place-based reading. It creates no new source fact, causal finding, gate decision, observation, score, ranking or outcome."
+    },
+    {
+      "portrait_id": "112-REGION-005",
+      "slug": "amtrak-accessibility-and-reliability",
+      "title": "Amtrak accessibility and reliability",
+      "geography": "United States intercity rail system",
+      "signal_terms": [
+        "amtrak",
+        "pids"
+      ],
+      "editorial_question": "Bring station accessibility, passenger information deployment, closeout and named-asset reliability into a common operating frame.",
+      "unresolved": "Program closeout and repeated reliability are separate evidence decisions.",
+      "interpretation_boundary": "This portrait organizes existing Published records for place-based reading. It creates no new source fact, causal finding, gate decision, observation, score, ranking or outcome."
+    },
+    {
+      "portrait_id": "112-REGION-006",
+      "slug": "nnsa-two-site-production",
+      "title": "NNSA two-site production",
+      "geography": "Savannah River and Los Alamos, United States",
+      "signal_terms": [
+        "nnsa",
+        "pit-production"
+      ],
+      "editorial_question": "Separate facility progress, accepted capacity and recurring qualified output across a two-site production system.",
+      "unresolved": "Baselines, accepted capacity and qualified recurring rate remain distinct gates.",
+      "interpretation_boundary": "This portrait organizes existing Published records for place-based reading. It creates no new source fact, causal finding, gate decision, observation, score, ranking or outcome."
+    },
+    {
+      "portrait_id": "112-REGION-007",
+      "slug": "south-australia-grid-storage",
+      "title": "South Australia grid storage",
+      "geography": "South Australia, Australia",
+      "signal_terms": [
+        "hornsdale",
+        "dalrymple"
+      ],
+      "editorial_question": "Compare grid-service claims with asset identity, operating period, event definition and measured system role.",
+      "unresolved": "Comparable recurring performance requires stable definitions across assets and periods.",
+      "interpretation_boundary": "This portrait organizes existing Published records for place-based reading. It creates no new source fact, causal finding, gate decision, observation, score, ranking or outcome."
+    },
+    {
+      "portrait_id": "112-REGION-008",
+      "slug": "victoria-grid-storage",
+      "title": "Victoria grid storage",
+      "geography": "Victoria, Australia",
+      "signal_terms": [
+        "victoria-big-battery",
+        "vbb"
+      ],
+      "editorial_question": "Follow a named storage asset from commissioning claims into recurring, denominator-explicit operating evidence.",
+      "unresolved": "A single milestone is not a longitudinal reliability or public-value series.",
+      "interpretation_boundary": "This portrait organizes existing Published records for place-based reading. It creates no new source fact, causal finding, gate decision, observation, score, ranking or outcome."
+    },
+    {
+      "portrait_id": "112-REGION-009",
+      "slug": "florida-utility-storage",
+      "title": "Florida utility storage",
+      "geography": "Florida, United States",
+      "signal_terms": [
+        "manatee"
+      ],
+      "editorial_question": "Read the Manatee storage record as an asset-level conversion case bounded by acceptance and repeated operation.",
+      "unresolved": "Capacity and commissioning statements do not by themselves establish recurring system outcomes.",
+      "interpretation_boundary": "This portrait organizes existing Published records for place-based reading. It creates no new source fact, causal finding, gate decision, observation, score, ranking or outcome."
+    },
+    {
+      "portrait_id": "112-REGION-010",
+      "slug": "california-battery-safety",
+      "title": "California battery safety",
+      "geography": "California, United States",
+      "signal_terms": [
+        "moss-landing",
+        "gateway-energy-storage",
+        "gateway-capacity",
+        "gateway-constraints",
+        "gateway-repeat"
+      ],
+      "editorial_question": "Connect named battery assets to incident, safety, availability and operating evidence without collapsing different sites.",
+      "unresolved": "Asset identity, incident scope and comparable operating periods must stay separate.",
+      "interpretation_boundary": "This portrait organizes existing Published records for place-based reading. It creates no new source fact, causal finding, gate decision, observation, score, ranking or outcome."
+    }
+  ],
+  "casebooks": [
+    {
+      "casebook_id": "113-CASE-001",
+      "slug": "manatee-battery-storage",
+      "title": "Manatee Battery Energy Storage Center",
+      "signal_terms": [
+        "manatee"
+      ],
+      "editorial_question": "What evidence moves a named storage asset from capacity announcement through acceptance to repeated operation?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-002",
+      "slug": "moss-landing-battery-safety",
+      "title": "Moss Landing battery safety and operation",
+      "signal_terms": [
+        "moss-landing"
+      ],
+      "editorial_question": "How should incident, safety response and operating evidence be separated across a named storage site?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-003",
+      "slug": "gateway-battery-storage",
+      "title": "Gateway battery storage",
+      "signal_terms": [
+        "gateway-energy-storage",
+        "gateway-capacity",
+        "gateway-constraints",
+        "gateway-repeat"
+      ],
+      "editorial_question": "Which asset-level records distinguish installed capacity from accepted and recurring grid service?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-004",
+      "slug": "hornsdale-power-reserve",
+      "title": "Hornsdale Power Reserve",
+      "signal_terms": [
+        "hornsdale"
+      ],
+      "editorial_question": "Which stable periods and denominators make the asset's operating contribution comparable over time?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-005",
+      "slug": "victoria-big-battery",
+      "title": "Victoria Big Battery",
+      "signal_terms": [
+        "victoria-big-battery",
+        "vbb"
+      ],
+      "editorial_question": "How does a commissioning milestone become a repeated and comparable operating record?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-006",
+      "slug": "dalrymple-grid-battery",
+      "title": "Dalrymple grid battery",
+      "signal_terms": [
+        "dalrymple"
+      ],
+      "editorial_question": "How should constraint events and operating records be read without overgeneralizing from individual events?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-007",
+      "slug": "f35-production-readiness",
+      "title": "F-35 production readiness",
+      "signal_terms": [
+        "f35",
+        "f-35"
+      ],
+      "editorial_question": "Which delivery, readiness and sustainment measures establish accepted operational capacity?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-008",
+      "slug": "f15ex-production-delivery",
+      "title": "F-15EX production and delivery",
+      "signal_terms": [
+        "f15ex",
+        "f-15ex"
+      ],
+      "editorial_question": "Which accepted-aircraft and recurring-delivery records separate production progress from fleet outcome?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-009",
+      "slug": "kc46-readiness",
+      "title": "KC-46 readiness",
+      "signal_terms": [
+        "kc46",
+        "kc-46"
+      ],
+      "editorial_question": "How should production, remediation and readiness evidence be linked without treating delivery as mission availability?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-010",
+      "slug": "current-applications-capacity",
+      "title": "Current Applications industrial capacity",
+      "signal_terms": [
+        "current-applications"
+      ],
+      "editorial_question": "Which facility, qualification and accepted-output records establish dependable production capacity?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-011",
+      "slug": "island-components-capacity",
+      "title": "Island Components industrial capacity",
+      "signal_terms": [
+        "island-components"
+      ],
+      "editorial_question": "How does a named supplier move from support and expansion into qualified recurring output?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-012",
+      "slug": "monaghan-medical-capacity",
+      "title": "Monaghan Medical manufacturing capacity",
+      "signal_terms": [
+        "monaghan"
+      ],
+      "editorial_question": "Which accepted production and delivery evidence establishes durable medical-manufacturing capacity?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-013",
+      "slug": "amtrak-accessible-stations",
+      "title": "Amtrak accessible-station delivery",
+      "signal_terms": [
+        "amtrak",
+        "accessible-boarding",
+        "pids"
+      ],
+      "editorial_question": "Which station identities, acceptance records and denominators establish completed accessible service?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-014",
+      "slug": "hanford-dflaw-operation",
+      "title": "Hanford DFLAW operation",
+      "signal_terms": [
+        "hanford",
+        "dflaw"
+      ],
+      "editorial_question": "Which regulator, operating and material-balance records establish sustained treatment rather than a one-time milestone?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-015",
+      "slug": "montana-bead-completed-quarter",
+      "title": "Montana BEAD completed quarter",
+      "signal_terms": [
+        "montana"
+      ],
+      "editorial_question": "What must a complete public quarter contain before deployment can be treated as an observed outcome?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    },
+    {
+      "casebook_id": "113-CASE-016",
+      "slug": "nnsa-qualified-production",
+      "title": "NNSA qualified production",
+      "signal_terms": [
+        "nnsa",
+        "pit-production"
+      ],
+      "editorial_question": "Which baseline, accepted-capacity and qualified-rate records support a recurring production claim?",
+      "established": "The casebook resolves existing Published records and preserves their individual dates, identities and evidence boundaries.",
+      "unresolved": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "interpretation_boundary": "This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking."
+    }
+  ],
+  "reports": [
+    {
+      "report_id": "114-REPORT-001",
+      "slug": "compute-power-water",
+      "title": "Compute, power and water",
+      "signal_terms": [
+        "chips",
+        "data-center",
+        "water",
+        "tsmc",
+        "large-load"
+      ],
+      "thesis": "Announcements become durable capacity only when utilities, water, facilities and accepted service can be read on compatible project and operating periods.",
+      "sections": [
+        "The public claim",
+        "The conversion chain",
+        "Where evidence breaks",
+        "What would change the conclusion"
+      ],
+      "interpretation_boundary": "This comparative report synthesizes existing Published records. It is not a causal evaluation, forecast, recommendation, score, ranking or new operating outcome."
+    },
+    {
+      "report_id": "114-REPORT-002",
+      "slug": "permission-is-not-operation",
+      "title": "Permission is not operation",
+      "signal_terms": [
+        "permit",
+        "licence",
+        "authority",
+        "acceptance",
+        "operation"
+      ],
+      "thesis": "Approval, finance and authority remove constraints; accepted operation and repeated service require different evidence.",
+      "sections": [
+        "The public claim",
+        "The conversion chain",
+        "Where evidence breaks",
+        "What would change the conclusion"
+      ],
+      "interpretation_boundary": "This comparative report synthesizes existing Published records. It is not a causal evaluation, forecast, recommendation, score, ranking or new operating outcome."
+    },
+    {
+      "report_id": "114-REPORT-003",
+      "slug": "standards-to-adoption",
+      "title": "Standards to adoption",
+      "signal_terms": [
+        "pqc",
+        "aria",
+        "standard",
+        "adoption",
+        "migration"
+      ],
+      "thesis": "A published standard becomes adoption through inventory, procurement, validation, cutover, monitoring and retirement evidence.",
+      "sections": [
+        "The public claim",
+        "The conversion chain",
+        "Where evidence breaks",
+        "What would change the conclusion"
+      ],
+      "interpretation_boundary": "This comparative report synthesizes existing Published records. It is not a causal evaluation, forecast, recommendation, score, ranking or new operating outcome."
+    },
+    {
+      "report_id": "114-REPORT-004",
+      "slug": "infrastructure-delivery-in-practice",
+      "title": "Infrastructure delivery in practice",
+      "signal_terms": [
+        "amtrak",
+        "hanford",
+        "montana",
+        "gateway",
+        "construction"
+      ],
+      "thesis": "Named assets reveal where construction, commissioning, acceptance, handover and recurring service diverge.",
+      "sections": [
+        "The public claim",
+        "The conversion chain",
+        "Where evidence breaks",
+        "What would change the conclusion"
+      ],
+      "interpretation_boundary": "This comparative report synthesizes existing Published records. It is not a causal evaluation, forecast, recommendation, score, ranking or new operating outcome."
+    }
+  ],
+  "lenses": [
+    {
+      "lens_id": "115-LENS-001",
+      "slug": "us-federal-delivery",
+      "title": "United States federal delivery",
+      "reading_rule": "Read appropriations, standards and program authority separately from asset acceptance, service and public outcomes."
+    },
+    {
+      "lens_id": "115-LENS-002",
+      "slug": "state-and-local-conversion",
+      "title": "State and local conversion",
+      "reading_rule": "Read local authority, utilities, permits, public process and operating evidence as distinct gates."
+    },
+    {
+      "lens_id": "115-LENS-003",
+      "slug": "canada-and-ontario",
+      "title": "Canada and Ontario",
+      "reading_rule": "Read council, provincial, servicing, construction and occupancy records without converting approval into delivery."
+    },
+    {
+      "lens_id": "115-LENS-004",
+      "slug": "public-infrastructure-operators",
+      "title": "Public infrastructure operators",
+      "reading_rule": "Read handover, closeout, maintenance, accessibility and reliability through named assets and stable denominators."
+    },
+    {
+      "lens_id": "115-LENS-005",
+      "slug": "international-comparative-reading",
+      "title": "International comparative reading",
+      "reading_rule": "Compare evidence structures and conversion stages without ranking jurisdictions or erasing institutional context."
+    }
+  ],
+  "translation_pilots": [
+    {
+      "pilot_id": "115-TRANSLATION-FR",
+      "language": "French",
+      "status": "In Review",
+      "publication_route": null,
+      "next_action": "Qualified human review of terminology, claims and links."
+    },
+    {
+      "pilot_id": "115-TRANSLATION-ES",
+      "language": "Spanish",
+      "status": "In Review",
+      "publication_route": null,
+      "next_action": "Qualified human review of terminology, claims and links."
+    }
+  ]
+}

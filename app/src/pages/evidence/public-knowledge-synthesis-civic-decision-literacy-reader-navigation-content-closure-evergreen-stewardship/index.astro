@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-102-public-knowledge-synthesis-civic-decision-literacy-reader-navigation-content-closure-evergreen-stewardship-registry.json";
+const families = [
+  { label: "Canonical Public-Synthesis Dossiers", records: registry.canonical_public_synthesis_claim_boundary_evidence_lineage_dossiers, state: "synthesis_state", id: "canonical_public_synthesis_claim_boundary_evidence_lineage_dossier_id", gates: 20, summary: "Claim identity, evidence lineage, counterevidence, uncertainty, citations, review, correction and publication remain empty." },
+  { label: "Civic Decision-Literacy Ledgers", records: registry.civic_decision_literacy_uncertainty_tradeoff_public_reason_ledgers, state: "decision_literacy_state", id: "civic_decision_literacy_uncertainty_tradeoff_public_reason_ledger_id", gates: 22, summary: "Authority, options, tradeoffs, distribution, rights, numeracy, public reason, implementation and accountability remain empty." },
+  { label: "Reader-Navigation Registers", records: registry.reader_navigation_learning_pathway_accessibility_translation_registers, state: "reader_navigation_state", id: "reader_navigation_learning_pathway_accessibility_translation_register_id", gates: 22, summary: "Orientation, learning pathways, plain language, accessibility, translation, low-bandwidth access and usability remain empty." },
+  { label: "Evergreen Content-Stewardship Ledgers", records: registry.content_completeness_maintenance_correction_archive_evergreen_stewardship_ledgers, state: "content_stewardship_state", id: "content_completeness_maintenance_correction_archive_evergreen_stewardship_ledger_id", gates: 24, summary: "Coverage, source health, maintenance, refresh triggers, corrections, archives, retained history and closure review remain empty." }
+];
+---
+
+<BaseLayout title="Public Knowledge Synthesis, Civic Decision Literacy, Reader Navigation, Content Closure And Evergreen Stewardship | FTFN" description="Thirty-two inactive public-synthesis, decision-literacy, reader-navigation, accessibility, content-closure, and evergreen-stewardship contracts.">
+  <section class="page-section hero" data-public-knowledge-decision-literacy-content-stewardship-registry>
+    <div class="hero__copy">
+      <div class="eyebrow">FTFN / Content Completion</div>
+      <h1 class="page-title">A synthesis is not new evidence, and a stable page is not evergreen truth.</h1>
+      <p class="lede">Phase 102 closes the planned content roadmap with governed canonical synthesis, civic decision literacy, accessible reader navigation, and durable correction, archive and evergreen-stewardship controls.</p>
+      <div class="meta-row"><MetaPill label="8 inactive synthesis dossiers" tone="possibility" /><MetaPill label="8 inactive literacy ledgers" /><MetaPill label="8 inactive navigation registers" /><MetaPill label="8 inactive stewardship ledgers" /><MetaPill label="0 content-closure decisions" tone="review" /></div>
+    </div>
+  </section>
+  {families.map((family) => (
+    <section class="page-section">
+      <div class="section-heading"><div><div class="eyebrow">{family.label}</div><h2>Eight records remain inactive.</h2></div></div>
+      <div class="grid">{family.records.map((record: any) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={record[family.state]} tone="review" /><MetaPill label={family.gates + " inactive gates"} /></div>
+          <h3><a href={"/evidence/public-knowledge-synthesis-civic-decision-literacy-reader-navigation-content-closure-evergreen-stewardship/" + record.slug + "/"}>{record[family.id]}: {record.named_entity}</a></h3>
+          <p>{family.summary}</p>
+        </article>
+      ))}</div>
+    </section>
+  ))}
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Content-Complete Contract</div><h2>The roadmap closes; evidence operations continue.</h2><p>This terminal content layer makes synthesis, public reasoning, accessibility, correction and maintenance inspectable. It does not end dated evidence checks, authorize publication actions or treat volume and stability as completeness and truth.</p></div><article class="record-card"><a class="inline-link" href="/data/public-knowledge-synthesis-civic-decision-literacy-reader-navigation-content-closure-evergreen-stewardship.json">Content stewardship JSON</a></article></section>
+</BaseLayout>

@@ -1,0 +1,33 @@
+{
+  "phase": "56G",
+  "reviewed_date": "2026-07-24",
+  "source_profiles_added": 7,
+  "acquisition_count": 7,
+  "document_decisions": {
+    "reviewed": 7,
+    "promoted": [
+      "research-doc-56g-dalrymple-post-project-operation"
+    ],
+    "held": [
+      "research-doc-56g-dhs-fisma-fy2025",
+      "research-doc-56g-doe-fisma-fy2025",
+      "research-doc-56g-f35-fort-worth-monthly-output",
+      "research-doc-56g-manatee-interval-operation",
+      "research-doc-56g-gateway-investigation-restoration",
+      "research-doc-56g-hornsdale-annual-operation"
+    ]
+  },
+  "signal_decisions": {
+    "reviewed": 2,
+    "promoted": [
+      "signal-56g-dalrymple-operating-record-advance"
+    ],
+    "held": [
+      "signal-56g-six-open-record-continuation"
+    ]
+  },
+  "acquisition_rule": "Every check must retain its Phase 56F coverage ID and named reopening rule.",
+  "unavailable_record_rule": "An unavailable exact record produces a dated source check and continuation rule, not generic replacement context.",
+  "closure_rule": "Only Dalrymple changes closure state; the other six selected records remain Open.",
+  "comparison_rule": "No causal effect, ranking, completeness score, composite score, readiness score, or inference from missing disclosure is permitted."
+}

@@ -1,0 +1,106 @@
+{
+  "id": "reader-pathway-climate-observation-to-local-decision",
+  "title": "Climate Observation To Local Decision",
+  "slug": "climate-observation-to-local-decision",
+  "record_status": "In Review",
+  "summary": "Follow global climate baselines, seasonal forecasts, public radar data, national elevation design, transportation-risk synthesis, interpretation, local exposure, authority, implementation, and outcomes.",
+  "current_state_summary": "FTFN now has a multi-record observation shelf and an explicit dependency map showing why data availability must pass through coverage, validation, interpretation, local exposure, authority, action, and measurement before becoming a local claim.",
+  "current_state": [
+    "NOAA supplies dated annual and seasonal climate observation records with global and probabilistic boundaries.",
+    "NISAR has crossed into public science-data availability, while archive completion, validation, user adoption, and decision use remain downstream.",
+    "USGS has defined a next-generation 3DEP model based on improved quality, refresh, elevation-hydrography integration, and analysis-ready delivery.",
+    "NCA5 identifies transportation climate risk across planning, design, operations, maintenance, workforce, and technology.",
+    "EPA distinguishes national inventory and threshold-based facility reporting, preventing incompatible emissions comparisons."
+  ],
+  "primary_topics": [
+    "Climate",
+    "Discovery Technologies",
+    "Water",
+    "Mobility",
+    "Agriculture and Bioeconomy"
+  ],
+  "topic_ids": [
+    "topic-climate",
+    "topic-discovery-technologies"
+  ],
+  "local_system_ids": [],
+  "signal_ids": [
+    "signal-sample-001",
+    "signal-noaa-2025-global-climate-observation-baseline",
+    "signal-nisar-july-2026-public-radar-data",
+    "signal-usgs-next-generation-3dep-transition",
+    "signal-noaa-2025-ocean-exploration-mapping-operations",
+    "signal-nca5-transportation-climate-adaptation-stack",
+    "signal-epa-inventory-ghgrp-coverage-boundary"
+  ],
+  "source_ids": [
+    "source-noaa-cpc-enso",
+    "source-noaa-2025-global-climate-report",
+    "source-nasa-nisar-public-data-july-2026",
+    "source-usgs-next-generation-3dep-2025",
+    "source-noaa-ocean-exploration-2025-report",
+    "source-usgcrp-nca5-transportation",
+    "source-epa-ghg-inventory-reporting-boundary"
+  ],
+  "organization_ids": [],
+  "technology_ids": [
+    "technology-lidar"
+  ],
+  "briefing_ids": [
+    "briefing-stack-watch-006-thin-topic-conversion",
+    "briefing-frontier-topic-001-agriculture-bioeconomy",
+    "briefing-frontier-topic-002-discovery-technologies",
+    "briefing-frontier-topic-003-quantum",
+    "briefing-frontier-topic-004-climate",
+    "briefing-qualification-method-003-compatible-recurring-operation",
+    "briefing-evidence-return-control-room-001"
+  ],
+  "dependency_map_ids": [
+    "dependency-map-observation-data-is-not-local-decision",
+    "dependency-map-artifact-return-to-reader-state",
+    "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+  ],
+  "research_collection_ids": [
+    "research-collection-thin-topic-authority-foundations-2023-2026",
+    "research-collection-phase65-named-project-delivery",
+    "research-collection-phase65-institutional-acceptance",
+    "research-collection-phase65-undercovered-frontier-systems"
+  ],
+  "evidence_gap_ids": [
+    "gap-006"
+  ],
+  "dependency_stack": [
+    {
+      "stage": "Official Observation",
+      "current_state": "NOAA, NASA, USGS, and NOAA Ocean Exploration publish climate, radar, elevation, mapping, and field-operation records.",
+      "boundary": "Availability does not prove complete coverage, correct product selection, validated interpretation, or local use."
+    },
+    {
+      "stage": "Quality And Interpretation",
+      "current_state": "Each rail carries a time, geography, method, coverage, version, and uncertainty boundary.",
+      "boundary": "A global ranking, radar image, elevation product, or expedition observation cannot be converted directly into a local causal claim."
+    },
+    {
+      "stage": "Local Exposure And Authority",
+      "current_state": "NCA5 identifies the planning, design, operating, maintenance, workforce, and capital layers through which climate evidence reaches transportation.",
+      "boundary": "The national assessment does not name the asset condition, authority, funding, or implemented response for a local system."
+    },
+    {
+      "stage": "Decision, Implementation, And Outcome",
+      "current_state": "The pathway identifies the plan, budget, permit, procurement, construction, operating, and outcome records needed after interpretation.",
+      "boundary": "FTFN does not claim a changed decision or measured benefit without those records."
+    }
+  ],
+  "evidence_limits": [
+    "The pathway joins different datasets and assessments to expose a conversion sequence; it does not treat them as interchangeable.",
+    "Global and national evidence does not establish local hazards, losses, adaptation, resilience, emissions, or causation.",
+    "Data availability does not prove institutional adoption, funded implementation, or measured outcomes."
+  ],
+  "next_records": [
+    "product-specific coverage, calibration, version, quality, resolution, and revision records.",
+    "regional models, ground truth, assumptions, uncertainty, and validation.",
+    "named local assets, hazards, exposure, vulnerability, decision authority, plans, budgets, permits, procurements, and construction.",
+    "operating changes, service, losses, resilience, yield, water, safety, and other measured outcomes.",
+    "A real same-entity artifact returned through its Phase 67 qualification packet with authority, scope, date, method, denominator or not-applicable basis, exceptions, correction trail, decision receipt, and complete propagation."
+  ]
+}

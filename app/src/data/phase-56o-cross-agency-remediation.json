@@ -1,0 +1,191 @@
+{
+  "phase": "56O",
+  "captured_date": "2026-08-01",
+  "batch_rule": "Publish exact official priority-portfolio and government-wide model records with stable agency, arithmetic, state, period, limitation, and continuation identities.",
+  "prior_closure_counts": {
+    "closed": 1,
+    "partially_closed": 21,
+    "open": 2
+  },
+  "post_batch_closure_counts": {
+    "closed": 1,
+    "partially_closed": 21,
+    "open": 2
+  },
+  "closure_changes": [],
+  "coverage_decisions": [
+    {
+      "coverage_id": "coverage-56f-doe",
+      "entity_id": "agency-doe",
+      "entity_name": "Department of Energy",
+      "prior_closure_status": "Partially Closed",
+      "current_closure_status": "Partially Closed",
+      "result": "GAO-26-109001 DOE priority recommendation portfolio: GAO reports that DOE implemented five of thirty prior priority recommendations, added one priority recommendation, removed priority status from two, and now has twenty-four priority recommendations.",
+      "decision": "Retain Partially Closed. Portfolio movement improves remediation visibility but does not close the selected Phase 56F evidence question.",
+      "reopening_rule": "Reopen when GAO publishes the next DOE priority letter or changes a named current recommendation status."
+    },
+    {
+      "coverage_id": "coverage-56f-hhs",
+      "entity_id": "agency-hhs",
+      "entity_name": "Department of Health and Human Services",
+      "prior_closure_status": "Partially Closed",
+      "current_closure_status": "Partially Closed",
+      "result": "GAO-26-108997 HHS priority recommendation portfolio: GAO reports that HHS implemented four of thirty-five prior priority recommendations, added seven, and now has thirty-eight priority recommendations focused on program integrity and public-health oversight.",
+      "decision": "Retain Partially Closed. Portfolio movement improves remediation visibility but does not close the selected Phase 56F evidence question.",
+      "reopening_rule": "Reopen when GAO publishes the next HHS priority letter, changes a named priority status, or HHS OIG posts the held hospital-control update."
+    },
+    {
+      "coverage_id": "coverage-56f-dot",
+      "entity_id": "agency-dot",
+      "entity_name": "Department of Transportation",
+      "prior_closure_status": "Partially Closed",
+      "current_closure_status": "Partially Closed",
+      "result": "GAO-26-109050 DOT priority recommendation portfolio: GAO reports that DOT implemented three of twenty-one prior priority recommendations, added six, removed priority status from two, and now has twenty-two priority recommendations.",
+      "decision": "Retain Partially Closed. Portfolio movement improves remediation visibility but does not close the selected Phase 56F evidence question.",
+      "reopening_rule": "Reopen when GAO publishes the next DOT priority letter, changes a named recommendation status, or DOT OIG publishes the FY 2026 review result."
+    },
+    {
+      "coverage_id": "coverage-56f-va",
+      "entity_id": "agency-va",
+      "entity_name": "Department of Veterans Affairs",
+      "prior_closure_status": "Partially Closed",
+      "current_closure_status": "Partially Closed",
+      "result": "GAO-26-108978 VA priority recommendation portfolio: GAO reports that VA implemented two of twenty-nine prior priority recommendations, added three, and now has thirty priority recommendations across health-care access, IT modernization, and acquisition management.",
+      "decision": "Retain Partially Closed. Portfolio movement improves remediation visibility but does not close the selected Phase 56F evidence question.",
+      "reopening_rule": "Reopen when GAO publishes the next VA priority letter or VA OIG changes the named iFAMS or Southern Oregon recommendation states."
+    }
+  ],
+  "context_records": [
+    "record-56o-gsa-priority-portfolio-2026",
+    "record-56o-ostp-priority-portfolio-2026",
+    "record-56o-ntia-priority-portfolio-2026",
+    "record-56o-gao-open-recommendations-benefit-model-2026"
+  ],
+  "inherited_hold": {
+    "record_id": "record-56n-hhs-large-hospital-post-date-recheck",
+    "status": "In Review",
+    "reason": "The public HHS tracker remained last updated July 22 with no post-July 29 response or status change on the August 1 check."
+  },
+  "records": [
+    {
+      "record_id": "record-56o-doe-priority-portfolio-2026",
+      "coverage_id": "coverage-56f-doe",
+      "entity_id": "agency-doe",
+      "entity_name": "Department of Energy",
+      "source_id": "source-56o-doe-priority-recommendations-2026",
+      "source_url": "https://www.gao.gov/products/gao-26-109001",
+      "exact_record": "GAO-26-109001 DOE priority recommendation portfolio",
+      "status_period": "April 2025 baseline through July 2026",
+      "finding": "GAO reports that DOE implemented five of thirty prior priority recommendations, added one priority recommendation, removed priority status from two, and now has twenty-four priority recommendations.",
+      "decision": "Publish the exact portfolio movement while keeping implemented, newly added, de-prioritized, and currently prioritized states distinct.",
+      "remaining_gap": "Action-level identities and closure evidence for the current twenty-four, including DOE insider-threat recommendations 1 and 7 and the separate AI-inventory action.",
+      "reopening_rule": "Reopen when GAO publishes the next DOE priority letter or changes a named current recommendation status.",
+      "record_status": "Published"
+    },
+    {
+      "record_id": "record-56o-hhs-priority-portfolio-2026",
+      "coverage_id": "coverage-56f-hhs",
+      "entity_id": "agency-hhs",
+      "entity_name": "Department of Health and Human Services",
+      "source_id": "source-56o-hhs-priority-recommendations-2026",
+      "source_url": "https://www.gao.gov/products/gao-26-108997",
+      "exact_record": "GAO-26-108997 HHS priority recommendation portfolio",
+      "status_period": "May 2025 baseline through May 2026",
+      "finding": "GAO reports that HHS implemented four of thirty-five prior priority recommendations, added seven, and now has thirty-eight priority recommendations focused on program integrity and public-health oversight.",
+      "decision": "Publish the exact portfolio movement without treating it as clinical, provider, or preparedness performance.",
+      "remaining_gap": "Action-level closure evidence for the thirty-eight priorities, the open AI-inventory action, and a post-July 29 public update for the four held hospital-control recommendations.",
+      "reopening_rule": "Reopen when GAO publishes the next HHS priority letter, changes a named priority status, or HHS OIG posts the held hospital-control update.",
+      "record_status": "Published"
+    },
+    {
+      "record_id": "record-56o-dot-priority-portfolio-2026",
+      "coverage_id": "coverage-56f-dot",
+      "entity_id": "agency-dot",
+      "entity_name": "Department of Transportation",
+      "source_id": "source-56o-dot-priority-recommendations-2026",
+      "source_url": "https://www.gao.gov/products/gao-26-109050",
+      "exact_record": "GAO-26-109050 DOT priority recommendation portfolio",
+      "status_period": "June 2025 baseline through June 2026",
+      "finding": "GAO reports that DOT implemented three of twenty-one prior priority recommendations, added six, removed priority status from two, and now has twenty-two priority recommendations.",
+      "decision": "Publish the exact portfolio movement while preserving workforce, grants, drones, automated-vehicle, and AI-inventory scopes.",
+      "remaining_gap": "Action-level closure evidence for the current twenty-two, the open AI-inventory action, and the FY 2026 information-security review result.",
+      "reopening_rule": "Reopen when GAO publishes the next DOT priority letter, changes a named recommendation status, or DOT OIG publishes the FY 2026 review result.",
+      "record_status": "Published"
+    },
+    {
+      "record_id": "record-56o-va-priority-portfolio-2026",
+      "coverage_id": "coverage-56f-va",
+      "entity_id": "agency-va",
+      "entity_name": "Department of Veterans Affairs",
+      "source_id": "source-56o-va-priority-recommendations-2026",
+      "source_url": "https://www.gao.gov/products/gao-26-108978",
+      "exact_record": "GAO-26-108978 VA priority recommendation portfolio",
+      "status_period": "May 2025 baseline through May 2026",
+      "finding": "GAO reports that VA implemented two of twenty-nine prior priority recommendations, added three, and now has thirty priority recommendations across health-care access, IT modernization, and acquisition management.",
+      "decision": "Publish the exact portfolio movement without substituting it for iFAMS, Southern Oregon, enterprise FISMA, or veteran-outcome evidence.",
+      "remaining_gap": "Action-level closure evidence for the thirty priorities, the open iFAMS recommendations, and Southern Oregon recommendations 1, 2, 5, 6, and 7.",
+      "reopening_rule": "Reopen when GAO publishes the next VA priority letter or VA OIG changes the named iFAMS or Southern Oregon recommendation states.",
+      "record_status": "Published"
+    },
+    {
+      "record_id": "record-56o-gsa-priority-portfolio-2026",
+      "coverage_id": "context-56o-gsa-priority-portfolio",
+      "entity_id": "org-general-services-administration",
+      "entity_name": "U.S. General Services Administration",
+      "source_id": "source-56o-gsa-priority-recommendations-2026",
+      "source_url": "https://www.gao.gov/products/gao-26-108996",
+      "exact_record": "GAO-26-108996 GSA priority recommendation portfolio",
+      "status_period": "May 2025 baseline through June 2026",
+      "finding": "GAO reports that GSA implemented two of eight prior priority recommendations, removed priority status from one, added six, and now has eleven priority recommendations.",
+      "decision": "Publish the exact portfolio movement as federal shared-services and award-oversight context.",
+      "remaining_gap": "Action-level identities and closure evidence for the eleven current priorities and operating outcomes for real property, shared services, awards, and procurement channels.",
+      "reopening_rule": "Reopen when GAO publishes the next GSA priority letter or a named current recommendation changes status.",
+      "record_status": "Published"
+    },
+    {
+      "record_id": "record-56o-ostp-priority-portfolio-2026",
+      "coverage_id": "context-56o-ostp-priority-portfolio",
+      "entity_id": "org-executive-office-president",
+      "entity_name": "Office of Science and Technology Policy",
+      "source_id": "source-56o-ostp-priority-recommendations-2026",
+      "source_url": "https://www.gao.gov/products/gao-26-109139",
+      "exact_record": "GAO-26-109139 OSTP priority recommendation portfolio",
+      "status_period": "June 2025 baseline through June 2026",
+      "finding": "GAO reports that OSTP implemented three of six prior priority recommendations, added one, and now has four priority recommendations focused on national science-and-technology goals and research security.",
+      "decision": "Publish the exact portfolio movement while keeping national-goal tracking and research-security information sharing separate.",
+      "remaining_gap": "Action-level closure evidence for the four current priorities and measured outcomes from national-goal tracking or research-security coordination.",
+      "reopening_rule": "Reopen when GAO publishes the next OSTP priority letter or a named current recommendation changes status.",
+      "record_status": "Published"
+    },
+    {
+      "record_id": "record-56o-ntia-priority-portfolio-2026",
+      "coverage_id": "context-56o-ntia-priority-portfolio",
+      "entity_id": "agency-ntia",
+      "entity_name": "National Telecommunications and Information Administration",
+      "source_id": "source-56o-ntia-priority-recommendations-2026",
+      "source_url": "https://www.gao.gov/products/gao-26-109042",
+      "exact_record": "GAO-26-109042 NTIA priority recommendation portfolio",
+      "status_period": "July 2025 baseline through June 2026",
+      "finding": "GAO reports that NTIA implemented one of eleven prior priority recommendations and now has ten priorities across spectrum, IT and cybersecurity, and broadband programs.",
+      "decision": "Publish the exact portfolio movement without converting one implementation into an infrastructure-security or broadband-performance conclusion.",
+      "remaining_gap": "Action-level closure evidence for the ten priorities and operating measures for spectrum coordination, infrastructure security, and broadband-program sustainability.",
+      "reopening_rule": "Reopen when GAO publishes the next NTIA priority letter or a named current recommendation changes status.",
+      "record_status": "Published"
+    },
+    {
+      "record_id": "record-56o-gao-open-recommendations-benefit-model-2026",
+      "coverage_id": "context-56o-gao-open-recommendations-benefit-model",
+      "entity_id": "oversight-gao-governmentwide",
+      "entity_name": "United States federal government",
+      "source_id": "source-56o-gao-open-recommendations-benefit-model-2026",
+      "source_url": "https://www.gao.gov/products/gao-26-108932",
+      "exact_record": "GAO-26-108932 government-wide open-recommendation benefit model",
+      "status_period": "Open recommendations as of October 2025; report published May 2026",
+      "finding": "GAO estimates that implementing open recommendations could produce $132 billion to $251 billion in measurable future financial benefits; the range is model-based, excludes many nonquantifiable benefits, and is not realized savings.",
+      "decision": "Publish the modeled range as bounded government-wide context with the method and realization limits attached.",
+      "remaining_gap": "Recommendation-level implementation, attribution, timing, realized savings, nonfinancial outcomes, and agency-specific allocation of any benefit.",
+      "reopening_rule": "Reopen when GAO updates the model, publishes realized benefit attribution, or materially revises the open-recommendation inventory.",
+      "record_status": "Published"
+    }
+  ]
+}

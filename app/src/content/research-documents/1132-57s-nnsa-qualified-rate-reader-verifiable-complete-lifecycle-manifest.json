@@ -1,0 +1,70 @@
+{
+  "id": "research-doc-57s-nnsa-qualified-rate-reader-verifiable-complete-lifecycle-manifest",
+  "collection_id": "research-collection-reader-verifiable-lifecycle-manifests-stale-view-provenance-exports-2026",
+  "title": "NNSA recurring qualified rate receives a reader-verifiable complete lifecycle manifest",
+  "slug": "57s-nnsa-qualified-rate-reader-verifiable-complete-lifecycle-manifest",
+  "record_status": "Published",
+  "publisher": "U.S. Department of Energy",
+  "publication_date": "2026-08-09",
+  "document_type": "Data Release",
+  "summary": "The manifest enumerates every lifecycle event and immutable notice, chains event digests, and exposes the controlling event, receipt, bundle, event count, notice count, and manifest digest for independent reconciliation. Denominator: One contract-specific manifest schema, sixteen adversarial cases, five bounded valid verification routes, eleven explicit rejections, and zero actual lifecycle manifests issued.",
+  "key_findings": [
+    "Evidence stage: Reader-verifiable complete lifecycle-manifest controls.",
+    "Finding: The manifest enumerates every lifecycle event and immutable notice, chains event digests, and exposes the controlling event, receipt, bundle, event count, notice count, and manifest digest for independent reconciliation.",
+    "Denominator: One contract-specific manifest schema, sixteen adversarial cases, five bounded valid verification routes, eleven explicit rejections, and zero actual lifecycle manifests issued.",
+    "Boundary: A verified manifest proves completeness and digest consistency, not claim truth.",
+    "Boundary: The manifest cannot replace or rewrite the lifecycle ledger.",
+    "Boundary: Missing identifiers, incomplete bindings, broken chains, notice drift, chronology regression, and state inflation reject.",
+    "Next action: Publish a NNSA recurring qualified rate verification manifest only from the complete immutable lifecycle and notice set."
+  ],
+  "why_it_matters": "The record makes lifecycle completeness, displayed-status freshness, provenance export integrity, and exact mismatch reconciliation independently verifiable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Lets readers reconcile current status to complete immutable lifecycle history across all nine contracts.",
+    "Fails stale, partial, or digest-inconsistent status views closed.",
+    "Preserves complete event and notice histories in digest-bound exports and append-only mismatch receipts."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "A verified manifest proves completeness and digest consistency, not claim truth.",
+    "The manifest cannot replace or rewrite the lifecycle ledger.",
+    "Missing identifiers, incomplete bindings, broken chains, notice drift, chronology regression, and state inflation reject.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Energy",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Resource Foundations"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-nnsa-fy2026-weapons-activities",
+  "supporting_source_ids": [
+    "source-57g-nnsa-fy2026-weapons-activities",
+    "source-56w-nnsa-fy2027-weapons-activities",
+    "source-56x-gao-nnsa-major-projects-2026",
+    "source-56q-gao-23-104661-recommendation-status",
+    "source-57f-nnsa-pit-production-current",
+    "source-57f-nnsa-stockpile-current",
+    "source-57g-nnsa-lap4-30-base-construction",
+    "source-57a-nnsa-w87-1-first-production-unit",
+    "source-57b-nnsa-sasc-testimony-may-2026",
+    "source-57b-nnsa-pit-production-draft-peis-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf"
+  ],
+  "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+  "local_capture_path": "/downloads/reader-verifiable-lifecycle-manifests-stale-view-provenance-exports-2026/official-links/25-phase57s-record.txt",
+  "archive_member": "official-links/25-phase57s-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "research-doc-57t-la-nextlink-adoption-immutable-history-recovery-drill",
+  "collection_id": "research-collection-canonical-verification-endpoints-signed-release-indexes-cache-mirror-recovery-2026",
+  "title": "Louisiana Nextlink adoption receives a bounded immutable-history recovery drill",
+  "slug": "57t-la-nextlink-adoption-immutable-history-recovery-drill",
+  "record_status": "Published",
+  "publisher": "National Telecommunications and Information Administration",
+  "publication_date": "2026-08-09",
+  "document_type": "Data Release",
+  "summary": "Recovery reconstructs reader state only from complete immutable lifecycle history, notices, the controlling manifest, provenance export, and signed release index, then appends a nonactivating receipt without rewriting or automatically displaying anything. Denominator: One contract-specific recovery schema, twenty adversarial cases, six valid reconstruction routes, fourteen explicit rejections, and zero actual recovery drills or reader-state changes executed.",
+  "key_findings": [
+    "Evidence stage: Immutable-history recovery-drill controls.",
+    "Finding: Recovery reconstructs reader state only from complete immutable lifecycle history, notices, the controlling manifest, provenance export, and signed release index, then appends a nonactivating receipt without rewriting or automatically displaying anything.",
+    "Denominator: One contract-specific recovery schema, twenty adversarial cases, six valid reconstruction routes, fourteen explicit rejections, and zero actual recovery drills or reader-state changes executed.",
+    "Boundary: A drill proves deterministic reconstruction under fixture conditions, not service continuity or claim truth.",
+    "Boundary: Missing, mutable, mismatched, substituted, rewriting, activating, publishing, or closing recovery attempts reject.",
+    "Boundary: Recovery cannot bypass human publication authority or convert reconstructed state into evidence.",
+    "Next action: Run a Louisiana Nextlink adoption recovery only against immutable source history and keep the reconstructed state inactive until separate human verification."
+  ],
+  "why_it_matters": "The record makes canonical delivery, signed release lineage, cache coherence, mirror and redirect integrity, and immutable-source recovery independently auditable without creating an editorial event or changing evidence state.",
+  "ftfn_relevance": [
+    "Binds stable reader-verification URIs to the exact current Phase 57S manifest and export.",
+    "Fails stale caches, transformed mirrors, and unsafe redirects closed.",
+    "Reconstructs reader state only from immutable history under a nonactivating recovery receipt."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "A drill proves deterministic reconstruction under fixture conditions, not service continuity or claim truth.",
+    "Missing, mutable, mismatched, substituted, rewriting, activating, publishing, or closing recovery attempts reject.",
+    "Recovery cannot bypass human publication authority or convert reconstructed state into evidence.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Chips and Compute",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57g-montana-bead-final-proposal-january-2026",
+  "supporting_source_ids": [
+    "source-57g-montana-bead-final-proposal-january-2026",
+    "source-57g-montana-deployment-projects-csv",
+    "source-57g-montana-locations-csv",
+    "source-57g-montana-subgrantees-csv",
+    "source-57g-montana-cai-csv",
+    "source-57f-montana-bead-resource-index-august-2026",
+    "source-57f-montana-leo-quarterly-instructions-june-2026",
+    "source-57e-montana-quarterly-report-instructions-june-2026",
+    "source-57e-montana-project-monitoring-guide-june-2026",
+    "source-57b-louisiana-nextlink-first-bead-tower",
+    "source-57b-louisiana-starlink-bead-agreement"
+  ],
+  "supporting_official_urls": [
+    "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf"
+  ],
+  "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+  "local_capture_path": "/downloads/canonical-verification-endpoints-signed-release-indexes-cache-mirror-recovery-2026/official-links/15-phase57t-record.txt",
+  "archive_member": "official-links/15-phase57t-record.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "dependency-map-portfolio-benefit-is-not-shared-benefit",
+  "title": "A Portfolio Benefit Is Not A Shared Benefit",
+  "slug": "portfolio-benefit-is-not-shared-benefit",
+  "summary": "A map separating project outcomes from shared dependencies, concentration, cumulative burden, distribution, portfolio safeguards, rebalancing, and exit.",
+  "map_type": "Evidence Gap Map",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Infrastructure", "Capital", "Labor", "Data Quality", "Public Trust"],
+  "map_question": "What must be known before project-level results can support a portfolio-level benefit or resilience decision?",
+  "interpretation_boundary": "Project compliance does not prove portfolio carrying capacity. Aggregate benefit does not prove equal incidence. More projects do not prove diversification when dependencies, hazards, authority, or burdens remain concentrated.",
+  "source_ids": ["source-phoenix-tsmc-july-2026-fab-update", "source-toronto-2026-sc33-9-item-history", "source-virginia-scc-large-load-gs5-2025", "source-faa-shuttle-landing-facility-license", "source-doe-thacker-pass-loan-2024", "source-gsa-pqc-buyers-guide-2025", "source-nist-aria-pilot-evaluation-2025", "source-cpuc-waymo-al2-disposition-2024"],
+  "signal_ids": ["signal-aps-tsmc-service-territory-capacity-boundary", "signal-toronto-24-254930-community-council-recommendation", "signal-virginia-gs5-large-load-rate-class", "signal-faa-part450-operator-transition", "signal-thacker-pass-doe-loan-financial-close", "signal-gsa-pqc-procurement-paths", "signal-nist-aria-pilot-multilevel-evaluation", "signal-cpuc-waymo-fared-driverless-expansion-2024"],
+  "technology_ids": [],
+  "local_system_ids": ["local-us-southwest-chip-corridor", "local-ontario-real-estate", "local-northern-virginia-data-center-corridor", "local-florida-space-coast-launch-corridor", "local-nevada-lithium-processing-corridor"],
+  "evidence_gap_ids": ["gap-001", "gap-002", "gap-003", "gap-004", "gap-005", "gap-007", "gap-008", "gap-009", "gap-010", "gap-011", "gap-012", "gap-013", "gap-014", "gap-015", "gap-016"],
+  "nodes": [
+    {"id": "node-members", "label": "Versioned portfolio membership", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No governed portfolio membership decision exists."},
+    {"id": "node-results", "label": "Admitted cross-case evidence", "node_type": "Constraint", "note": "Each member retains its own audit, context, harm, and distribution record."},
+    {"id": "node-dependency", "label": "Shared dependencies", "node_type": "Constraint", "note": "Infrastructure, suppliers, workforce, capital, authority, and schedules are mapped."},
+    {"id": "node-concentration", "label": "Concentration and common-mode risk", "node_type": "Constraint", "note": "More members can still share a single point of failure."},
+    {"id": "node-burden", "label": "Cumulative local burden", "node_type": "Constraint", "note": "Project-level compliance does not establish system carrying capacity."},
+    {"id": "node-distribution", "label": "Cross-project distribution", "node_type": "Constraint", "note": "Benefits, costs, access, exclusion, and risk are traced by affected group and place."},
+    {"id": "node-options", "label": "Safeguard, sequence, substitute, rebalance, or exit", "node_type": "Constraint", "note": "Portfolio choices include pause and divestment, not only expansion."},
+    {"id": "node-decision", "label": "Accountable portfolio decision", "node_type": "Evidence Gap", "record_id": "gap-015", "note": "No portfolio governance decision or receipt exists."}
+  ],
+  "links": [
+    {"from": "node-members", "to": "node-results", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No admitted portfolio evidence exists."},
+    {"from": "node-results", "to": "node-dependency", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Member outcomes cannot reveal all shared dependencies alone."},
+    {"from": "node-dependency", "to": "node-concentration", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No concentration analysis exists."},
+    {"from": "node-concentration", "to": "node-burden", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "System burden is independently reviewed."},
+    {"from": "node-burden", "to": "node-distribution", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Aggregate burden cannot replace incidence."},
+    {"from": "node-distribution", "to": "node-options", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No safeguard or rebalancing options are adjudicated."},
+    {"from": "node-options", "to": "node-decision", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No accountable portfolio decision exists."}
+  ],
+  "what_this_map_supports": ["Fourteen portfolio-governance gates and twelve risk triggers.", "Visible dependency, concentration, cumulative-burden, distribution, and exit review.", "Project identities and adverse evidence remain intact inside a portfolio."],
+  "what_this_map_does_not_prove": ["It does not establish portfolio membership, shared benefit, diversification, resilience, carrying capacity, equity, or net benefit.", "It does not authorize resource reallocation, expansion, pause, substitution, or exit.", "It does not score or rank projects or portfolios."],
+  "next_records_needed": ["Admitted audited decisions and pairwise findings.", "A versioned portfolio purpose, membership, owner, and authority record.", "Shared-dependency, concentration, cumulative-burden, distribution, safeguard, and governance receipts."]
+}

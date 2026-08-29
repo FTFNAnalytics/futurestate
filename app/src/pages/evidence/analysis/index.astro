@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-73-analysis-execution-result-adjudication-registry.json";
+
+const executions = registry.analysis_execution_dockets;
+const deviations = registry.protocol_deviation_registers;
+const adjudications = registry.result_adjudication_dockets;
+const corrections = registry.correction_withdrawal_registers;
+const cohorts = [...new Set(executions.map((record) => record.cohort_id))].sort();
+---
+
+<BaseLayout title="Analysis Execution And Result Adjudication | FTFN" description="Thirty-two inactive analysis-execution dockets, eight empty deviation registers, eight inactive result-adjudication dockets, and eight empty correction-withdrawal registers.">
+  <section class="page-section hero"><div class="hero__copy"><div class="eyebrow">FTFN / Registered Analysis</div><h1 class="page-title">Freeze the run before inspecting the result.</h1><p class="lede">Phase 73 separates registered design, execution authorization, unblinding, deviation review, technical validation, replication, claim adjudication, and correction duties.</p><div class="meta-row"><MetaPill label="32 inactive executions" tone="possibility" /><MetaPill label="8 empty deviation registers" /><MetaPill label="8 inactive adjudications" /><MetaPill label="8 empty correction registers" /><MetaPill label="0 executions" tone="review" /><MetaPill label="0 results" tone="review" /></div></div></section>
+
+  <section class="page-section"><div class="status-panel"><article class="status-item"><h2>Fourteen execution gates</h2><p>Design receipt, frozen inputs, code, environment, plan, randomness, authority, tests, blinding, logs, outputs, deviations, replication, and review precede any result.</p></article><article class="status-item"><h2>Ten deviation categories</h2><p>Population, inputs, measures, time, controls, methods, missingness, interference, runtime, and post-result changes remain visible.</p></article><article class="status-item"><h2>Fourteen adjudication gates</h2><p>Blind break, primary result, uncertainty, robustness, falsification, adverse evidence, multiplicity, deviations, replication, alternatives, language, correction readiness, and review remain separate.</p></article></div></section>
+
+  <section class="page-section" data-analysis-registry>
+    <div class="section-heading"><div><div class="eyebrow">Execution Dockets</div><h2>Search thirty-two inactive analysis executions.</h2></div><a class="inline-link" href="/briefings/registered-analysis-execution-desk-001/">Read the execution method</a></div>
+    <form class="filter-panel" id="analysis-filters"><label class="filter-panel__search">Search<input type="search" name="search" placeholder="Entity, cohort, measure or execution" /></label><label>Cohort<select name="cohort"><option value="">All cohorts</option>{cohorts.map((cohort) => <option value={cohort}>{cohort}</option>)}</select></label><button class="filter-panel__reset" type="reset">Reset</button></form>
+    <div class="grid" id="analysis-records">{executions.map((record) => <article class="record-card" data-analysis-record data-cohort={record.cohort_id} data-search={`${record.analysis_execution_docket_id} ${record.evidence_packet_id} ${record.cohort_id} ${record.named_entity} ${record.measure_label}`.toLowerCase()}><div class="meta-row"><MetaPill label={record.analysis_execution_docket_id} tone="possibility" /><MetaPill label={record.execution_state} tone="review" /></div><h3><a href={`/evidence/analysis/${record.slug}/`}>{record.measure_label}</a></h3><p>{record.named_entity}</p><div class="meta-row"><MetaPill label="14 inactive gates" /><MetaPill label="no frozen input" /><MetaPill label="no run" /></div></article>)}</div>
+  </section>
+
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Result Adjudication</div><h2>Eight adjudication dockets remain Inactive.</h2></div><a class="inline-link" href="/briefings/result-adjudication-desk-001/">Read the adjudication protocol</a></div><div class="grid">{adjudications.map((record, index) => <article class="record-card"><div class="meta-row"><MetaPill label={record.result_adjudication_docket_id} tone="possibility" /><MetaPill label={record.adjudication_decision} tone="review" /></div><h3><a href={`/evidence/analysis/${record.slug}/`}>{record.named_entity}</a></h3><p>{record.adjudication_state}</p><div class="meta-row"><MetaPill label={`${deviations[index].category_records.length} unrecorded deviations`} /><MetaPill label={`${corrections[index].correction_classes.length} no-event correction classes`} /><MetaPill label="0 results" /></div></article>)}</div></section>
+
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Public Contract</div><h2>Inspect the missing execution and result state.</h2><p>The export publishes execution, deviation, adjudication, and correction controls. It contains no design receipt, input snapshot, run, output, result, replication, claim, reviewer, correction, withdrawal, or receipt.</p></div><article class="record-card"><a class="inline-link" href="/data/analysis-execution-result-adjudication.json">Analysis execution and result JSON</a></article></section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    const form = document.querySelector('#analysis-filters'); const records = [...document.querySelectorAll('[data-analysis-record]')]; if (!form) return;
+    const apply = () => { const data = new FormData(form); const search = String(data.get('search') || '').trim().toLowerCase(); const cohort = String(data.get('cohort') || ''); records.forEach((record) => { record.hidden = Boolean((search && !record.dataset.search.includes(search)) || (cohort && record.dataset.cohort !== cohort)); }); };
+    form.addEventListener('input', apply); form.addEventListener('change', apply); form.addEventListener('reset', () => requestAnimationFrame(apply));
+  })();
+</script>

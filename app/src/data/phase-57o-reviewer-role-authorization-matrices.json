@@ -1,0 +1,2118 @@
+{
+  "phase": "57O",
+  "captured_date": "2026-08-09",
+  "registry_type": "Reviewer-role authorization matrices and separation-of-duties tests",
+  "matrix_count": 9,
+  "contract_count": 9,
+  "role_classes_per_matrix": 3,
+  "decision_authorization_rows": 54,
+  "role_authorization_case_count": 63,
+  "same_actor_separation_rejections": 9,
+  "passed_case_count": 63,
+  "failed_case_count": 0,
+  "actual_reviewer_identities_created": 0,
+  "actual_authorizations_recorded": 0,
+  "automated_trigger_closure_or_publication_allowed": false,
+  "authorization_rule": "An evidence reviewer may sign the bounded evidence decision receipt but may not perform publication review for the same packet. Only a distinct publication reviewer may inspect a complete accept receipt, and neither role may trigger, close, or publish automatically.",
+  "matrices": [
+    {
+      "matrix_id": "57O-ROLE-MATRIX-REOPEN-AMTRAK-PIDS",
+      "contract_id": "REOPEN-AMTRAK-PIDS",
+      "queue_id": "INTAKE-01-REOPEN-AMTRAK-PIDS",
+      "evidence_rail": "Amtrak",
+      "role_classes": [
+        {
+          "role": "evidence_reviewer",
+          "may": [
+            "review_candidate_packet",
+            "select_bounded_decision",
+            "sign_evidence_receipt"
+          ],
+          "may_not": [
+            "perform_publication_review",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        },
+        {
+          "role": "publication_reviewer",
+          "may": [
+            "verify_complete_accept_receipt",
+            "record_separate_publication_review_outcome"
+          ],
+          "may_not": [
+            "act_as_evidence_reviewer_for_same_packet",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold_automatically",
+            "publish_automatically"
+          ]
+        },
+        {
+          "role": "escalation_reviewer",
+          "may": [
+            "resolve_role_authorization_escalation",
+            "resolve_receipt_integrity_escalation"
+          ],
+          "may_not": [
+            "supply_missing_evidence",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        }
+      ],
+      "decision_authorizations": [
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": true,
+          "separation_of_duties_required": true,
+          "publication_queue_entry_allowed": true,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        }
+      ]
+    },
+    {
+      "matrix_id": "57O-ROLE-MATRIX-REOPEN-AMTRAK-RELIABILITY",
+      "contract_id": "REOPEN-AMTRAK-RELIABILITY",
+      "queue_id": "INTAKE-02-REOPEN-AMTRAK-RELIABILITY",
+      "evidence_rail": "Amtrak",
+      "role_classes": [
+        {
+          "role": "evidence_reviewer",
+          "may": [
+            "review_candidate_packet",
+            "select_bounded_decision",
+            "sign_evidence_receipt"
+          ],
+          "may_not": [
+            "perform_publication_review",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        },
+        {
+          "role": "publication_reviewer",
+          "may": [
+            "verify_complete_accept_receipt",
+            "record_separate_publication_review_outcome"
+          ],
+          "may_not": [
+            "act_as_evidence_reviewer_for_same_packet",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold_automatically",
+            "publish_automatically"
+          ]
+        },
+        {
+          "role": "escalation_reviewer",
+          "may": [
+            "resolve_role_authorization_escalation",
+            "resolve_receipt_integrity_escalation"
+          ],
+          "may_not": [
+            "supply_missing_evidence",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        }
+      ],
+      "decision_authorizations": [
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": true,
+          "separation_of_duties_required": true,
+          "publication_queue_entry_allowed": true,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        }
+      ]
+    },
+    {
+      "matrix_id": "57O-ROLE-MATRIX-REOPEN-LA-NEXTLINK-ADOPTION",
+      "contract_id": "REOPEN-LA-NEXTLINK-ADOPTION",
+      "queue_id": "INTAKE-03-REOPEN-LA-NEXTLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "role_classes": [
+        {
+          "role": "evidence_reviewer",
+          "may": [
+            "review_candidate_packet",
+            "select_bounded_decision",
+            "sign_evidence_receipt"
+          ],
+          "may_not": [
+            "perform_publication_review",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        },
+        {
+          "role": "publication_reviewer",
+          "may": [
+            "verify_complete_accept_receipt",
+            "record_separate_publication_review_outcome"
+          ],
+          "may_not": [
+            "act_as_evidence_reviewer_for_same_packet",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold_automatically",
+            "publish_automatically"
+          ]
+        },
+        {
+          "role": "escalation_reviewer",
+          "may": [
+            "resolve_role_authorization_escalation",
+            "resolve_receipt_integrity_escalation"
+          ],
+          "may_not": [
+            "supply_missing_evidence",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        }
+      ],
+      "decision_authorizations": [
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": true,
+          "separation_of_duties_required": true,
+          "publication_queue_entry_allowed": true,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        }
+      ]
+    },
+    {
+      "matrix_id": "57O-ROLE-MATRIX-REOPEN-LA-STARLINK-ADOPTION",
+      "contract_id": "REOPEN-LA-STARLINK-ADOPTION",
+      "queue_id": "INTAKE-04-REOPEN-LA-STARLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "role_classes": [
+        {
+          "role": "evidence_reviewer",
+          "may": [
+            "review_candidate_packet",
+            "select_bounded_decision",
+            "sign_evidence_receipt"
+          ],
+          "may_not": [
+            "perform_publication_review",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        },
+        {
+          "role": "publication_reviewer",
+          "may": [
+            "verify_complete_accept_receipt",
+            "record_separate_publication_review_outcome"
+          ],
+          "may_not": [
+            "act_as_evidence_reviewer_for_same_packet",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold_automatically",
+            "publish_automatically"
+          ]
+        },
+        {
+          "role": "escalation_reviewer",
+          "may": [
+            "resolve_role_authorization_escalation",
+            "resolve_receipt_integrity_escalation"
+          ],
+          "may_not": [
+            "supply_missing_evidence",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        }
+      ],
+      "decision_authorizations": [
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": true,
+          "separation_of_duties_required": true,
+          "publication_queue_entry_allowed": true,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        }
+      ]
+    },
+    {
+      "matrix_id": "57O-ROLE-MATRIX-REOPEN-MT-BEAD-QUARTER",
+      "contract_id": "REOPEN-MT-BEAD-QUARTER",
+      "queue_id": "INTAKE-05-REOPEN-MT-BEAD-QUARTER",
+      "evidence_rail": "Broadband",
+      "role_classes": [
+        {
+          "role": "evidence_reviewer",
+          "may": [
+            "review_candidate_packet",
+            "select_bounded_decision",
+            "sign_evidence_receipt"
+          ],
+          "may_not": [
+            "perform_publication_review",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        },
+        {
+          "role": "publication_reviewer",
+          "may": [
+            "verify_complete_accept_receipt",
+            "record_separate_publication_review_outcome"
+          ],
+          "may_not": [
+            "act_as_evidence_reviewer_for_same_packet",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold_automatically",
+            "publish_automatically"
+          ]
+        },
+        {
+          "role": "escalation_reviewer",
+          "may": [
+            "resolve_role_authorization_escalation",
+            "resolve_receipt_integrity_escalation"
+          ],
+          "may_not": [
+            "supply_missing_evidence",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        }
+      ],
+      "decision_authorizations": [
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": true,
+          "separation_of_duties_required": true,
+          "publication_queue_entry_allowed": true,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        }
+      ]
+    },
+    {
+      "matrix_id": "57O-ROLE-MATRIX-REOPEN-HANFORD-MASS-BALANCE",
+      "contract_id": "REOPEN-HANFORD-MASS-BALANCE",
+      "queue_id": "INTAKE-06-REOPEN-HANFORD-MASS-BALANCE",
+      "evidence_rail": "Hanford",
+      "role_classes": [
+        {
+          "role": "evidence_reviewer",
+          "may": [
+            "review_candidate_packet",
+            "select_bounded_decision",
+            "sign_evidence_receipt"
+          ],
+          "may_not": [
+            "perform_publication_review",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        },
+        {
+          "role": "publication_reviewer",
+          "may": [
+            "verify_complete_accept_receipt",
+            "record_separate_publication_review_outcome"
+          ],
+          "may_not": [
+            "act_as_evidence_reviewer_for_same_packet",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold_automatically",
+            "publish_automatically"
+          ]
+        },
+        {
+          "role": "escalation_reviewer",
+          "may": [
+            "resolve_role_authorization_escalation",
+            "resolve_receipt_integrity_escalation"
+          ],
+          "may_not": [
+            "supply_missing_evidence",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        }
+      ],
+      "decision_authorizations": [
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": true,
+          "separation_of_duties_required": true,
+          "publication_queue_entry_allowed": true,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        }
+      ]
+    },
+    {
+      "matrix_id": "57O-ROLE-MATRIX-REOPEN-NNSA-QUALIFIED-RATE",
+      "contract_id": "REOPEN-NNSA-QUALIFIED-RATE",
+      "queue_id": "INTAKE-07-REOPEN-NNSA-QUALIFIED-RATE",
+      "evidence_rail": "NNSA",
+      "role_classes": [
+        {
+          "role": "evidence_reviewer",
+          "may": [
+            "review_candidate_packet",
+            "select_bounded_decision",
+            "sign_evidence_receipt"
+          ],
+          "may_not": [
+            "perform_publication_review",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        },
+        {
+          "role": "publication_reviewer",
+          "may": [
+            "verify_complete_accept_receipt",
+            "record_separate_publication_review_outcome"
+          ],
+          "may_not": [
+            "act_as_evidence_reviewer_for_same_packet",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold_automatically",
+            "publish_automatically"
+          ]
+        },
+        {
+          "role": "escalation_reviewer",
+          "may": [
+            "resolve_role_authorization_escalation",
+            "resolve_receipt_integrity_escalation"
+          ],
+          "may_not": [
+            "supply_missing_evidence",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        }
+      ],
+      "decision_authorizations": [
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": true,
+          "separation_of_duties_required": true,
+          "publication_queue_entry_allowed": true,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        }
+      ]
+    },
+    {
+      "matrix_id": "57O-ROLE-MATRIX-REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "queue_id": "INTAKE-08-REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "evidence_rail": "NNSA",
+      "role_classes": [
+        {
+          "role": "evidence_reviewer",
+          "may": [
+            "review_candidate_packet",
+            "select_bounded_decision",
+            "sign_evidence_receipt"
+          ],
+          "may_not": [
+            "perform_publication_review",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        },
+        {
+          "role": "publication_reviewer",
+          "may": [
+            "verify_complete_accept_receipt",
+            "record_separate_publication_review_outcome"
+          ],
+          "may_not": [
+            "act_as_evidence_reviewer_for_same_packet",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold_automatically",
+            "publish_automatically"
+          ]
+        },
+        {
+          "role": "escalation_reviewer",
+          "may": [
+            "resolve_role_authorization_escalation",
+            "resolve_receipt_integrity_escalation"
+          ],
+          "may_not": [
+            "supply_missing_evidence",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        }
+      ],
+      "decision_authorizations": [
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": true,
+          "separation_of_duties_required": true,
+          "publication_queue_entry_allowed": true,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        }
+      ]
+    },
+    {
+      "matrix_id": "57O-ROLE-MATRIX-REOPEN-NNSA-GAO-BASELINE",
+      "contract_id": "REOPEN-NNSA-GAO-BASELINE",
+      "queue_id": "INTAKE-09-REOPEN-NNSA-GAO-BASELINE",
+      "evidence_rail": "NNSA",
+      "role_classes": [
+        {
+          "role": "evidence_reviewer",
+          "may": [
+            "review_candidate_packet",
+            "select_bounded_decision",
+            "sign_evidence_receipt"
+          ],
+          "may_not": [
+            "perform_publication_review",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        },
+        {
+          "role": "publication_reviewer",
+          "may": [
+            "verify_complete_accept_receipt",
+            "record_separate_publication_review_outcome"
+          ],
+          "may_not": [
+            "act_as_evidence_reviewer_for_same_packet",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold_automatically",
+            "publish_automatically"
+          ]
+        },
+        {
+          "role": "escalation_reviewer",
+          "may": [
+            "resolve_role_authorization_escalation",
+            "resolve_receipt_integrity_escalation"
+          ],
+          "may_not": [
+            "supply_missing_evidence",
+            "mutate_signed_receipt",
+            "fire_reopening_trigger",
+            "close_hold",
+            "publish"
+          ]
+        }
+      ],
+      "decision_authorizations": [
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-01-ACCEPT",
+          "decision_type": "accept",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": true,
+          "separation_of_duties_required": true,
+          "publication_queue_entry_allowed": true,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-02-REJECT",
+          "decision_type": "reject",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-03-RETURN-FOR-CLARIFICATION",
+          "decision_type": "return_for_clarification",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-04-PRIVACY-HOLD",
+          "decision_type": "privacy_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-05-AUTHORITY-HOLD",
+          "decision_type": "authority_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        },
+        {
+          "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-06-PERIOD-HOLD",
+          "decision_type": "period_hold",
+          "evidence_reviewer_required": true,
+          "publication_reviewer_required": false,
+          "separation_of_duties_required": false,
+          "publication_queue_entry_allowed": false,
+          "automated_publication_allowed": false
+        }
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-01-ACCEPT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-AMTRAK-PIDS",
+      "evidence_rail": "Amtrak",
+      "decision_type": "accept",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "separate_reviewers_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-01-ACCEPT-same-actor-rejected",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-AMTRAK-PIDS",
+      "evidence_rail": "Amtrak",
+      "decision_type": "accept",
+      "test_class": "same_actor_separation_rejection",
+      "expected_decision": "authorization_rejected",
+      "actual_decision": "authorization_rejected",
+      "reason_code": "evidence_and_publication_reviewers_must_differ",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-02-REJECT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-02-REJECT",
+      "contract_id": "REOPEN-AMTRAK-PIDS",
+      "evidence_rail": "Amtrak",
+      "decision_type": "reject",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-03-RETURN-FOR-CLARIFICATION-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-03-RETURN-FOR-CLARIFICATION",
+      "contract_id": "REOPEN-AMTRAK-PIDS",
+      "evidence_rail": "Amtrak",
+      "decision_type": "return_for_clarification",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-04-PRIVACY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-04-PRIVACY-HOLD",
+      "contract_id": "REOPEN-AMTRAK-PIDS",
+      "evidence_rail": "Amtrak",
+      "decision_type": "privacy_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-05-AUTHORITY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-05-AUTHORITY-HOLD",
+      "contract_id": "REOPEN-AMTRAK-PIDS",
+      "evidence_rail": "Amtrak",
+      "decision_type": "authority_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-06-PERIOD-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-PIDS-DECISION-06-PERIOD-HOLD",
+      "contract_id": "REOPEN-AMTRAK-PIDS",
+      "evidence_rail": "Amtrak",
+      "decision_type": "period_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-01-ACCEPT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-AMTRAK-RELIABILITY",
+      "evidence_rail": "Amtrak",
+      "decision_type": "accept",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "separate_reviewers_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-01-ACCEPT-same-actor-rejected",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-AMTRAK-RELIABILITY",
+      "evidence_rail": "Amtrak",
+      "decision_type": "accept",
+      "test_class": "same_actor_separation_rejection",
+      "expected_decision": "authorization_rejected",
+      "actual_decision": "authorization_rejected",
+      "reason_code": "evidence_and_publication_reviewers_must_differ",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-02-REJECT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-02-REJECT",
+      "contract_id": "REOPEN-AMTRAK-RELIABILITY",
+      "evidence_rail": "Amtrak",
+      "decision_type": "reject",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-03-RETURN-FOR-CLARIFICATION-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-03-RETURN-FOR-CLARIFICATION",
+      "contract_id": "REOPEN-AMTRAK-RELIABILITY",
+      "evidence_rail": "Amtrak",
+      "decision_type": "return_for_clarification",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-04-PRIVACY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-04-PRIVACY-HOLD",
+      "contract_id": "REOPEN-AMTRAK-RELIABILITY",
+      "evidence_rail": "Amtrak",
+      "decision_type": "privacy_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-05-AUTHORITY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-05-AUTHORITY-HOLD",
+      "contract_id": "REOPEN-AMTRAK-RELIABILITY",
+      "evidence_rail": "Amtrak",
+      "decision_type": "authority_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-06-PERIOD-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-AMTRAK-RELIABILITY-DECISION-06-PERIOD-HOLD",
+      "contract_id": "REOPEN-AMTRAK-RELIABILITY",
+      "evidence_rail": "Amtrak",
+      "decision_type": "period_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-01-ACCEPT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-LA-NEXTLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "accept",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "separate_reviewers_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-01-ACCEPT-same-actor-rejected",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-LA-NEXTLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "accept",
+      "test_class": "same_actor_separation_rejection",
+      "expected_decision": "authorization_rejected",
+      "actual_decision": "authorization_rejected",
+      "reason_code": "evidence_and_publication_reviewers_must_differ",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-02-REJECT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-02-REJECT",
+      "contract_id": "REOPEN-LA-NEXTLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "reject",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-03-RETURN-FOR-CLARIFICATION-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-03-RETURN-FOR-CLARIFICATION",
+      "contract_id": "REOPEN-LA-NEXTLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "return_for_clarification",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-04-PRIVACY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-04-PRIVACY-HOLD",
+      "contract_id": "REOPEN-LA-NEXTLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "privacy_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-05-AUTHORITY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-05-AUTHORITY-HOLD",
+      "contract_id": "REOPEN-LA-NEXTLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "authority_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-06-PERIOD-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-NEXTLINK-ADOPTION-DECISION-06-PERIOD-HOLD",
+      "contract_id": "REOPEN-LA-NEXTLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "period_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-01-ACCEPT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-LA-STARLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "accept",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "separate_reviewers_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-01-ACCEPT-same-actor-rejected",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-LA-STARLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "accept",
+      "test_class": "same_actor_separation_rejection",
+      "expected_decision": "authorization_rejected",
+      "actual_decision": "authorization_rejected",
+      "reason_code": "evidence_and_publication_reviewers_must_differ",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-02-REJECT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-02-REJECT",
+      "contract_id": "REOPEN-LA-STARLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "reject",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-03-RETURN-FOR-CLARIFICATION-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-03-RETURN-FOR-CLARIFICATION",
+      "contract_id": "REOPEN-LA-STARLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "return_for_clarification",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-04-PRIVACY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-04-PRIVACY-HOLD",
+      "contract_id": "REOPEN-LA-STARLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "privacy_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-05-AUTHORITY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-05-AUTHORITY-HOLD",
+      "contract_id": "REOPEN-LA-STARLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "authority_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-06-PERIOD-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-LA-STARLINK-ADOPTION-DECISION-06-PERIOD-HOLD",
+      "contract_id": "REOPEN-LA-STARLINK-ADOPTION",
+      "evidence_rail": "Broadband",
+      "decision_type": "period_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-01-ACCEPT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-MT-BEAD-QUARTER",
+      "evidence_rail": "Broadband",
+      "decision_type": "accept",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "separate_reviewers_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-01-ACCEPT-same-actor-rejected",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-MT-BEAD-QUARTER",
+      "evidence_rail": "Broadband",
+      "decision_type": "accept",
+      "test_class": "same_actor_separation_rejection",
+      "expected_decision": "authorization_rejected",
+      "actual_decision": "authorization_rejected",
+      "reason_code": "evidence_and_publication_reviewers_must_differ",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-02-REJECT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-02-REJECT",
+      "contract_id": "REOPEN-MT-BEAD-QUARTER",
+      "evidence_rail": "Broadband",
+      "decision_type": "reject",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-03-RETURN-FOR-CLARIFICATION-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-03-RETURN-FOR-CLARIFICATION",
+      "contract_id": "REOPEN-MT-BEAD-QUARTER",
+      "evidence_rail": "Broadband",
+      "decision_type": "return_for_clarification",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-04-PRIVACY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-04-PRIVACY-HOLD",
+      "contract_id": "REOPEN-MT-BEAD-QUARTER",
+      "evidence_rail": "Broadband",
+      "decision_type": "privacy_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-05-AUTHORITY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-05-AUTHORITY-HOLD",
+      "contract_id": "REOPEN-MT-BEAD-QUARTER",
+      "evidence_rail": "Broadband",
+      "decision_type": "authority_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-06-PERIOD-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-MT-BEAD-QUARTER-DECISION-06-PERIOD-HOLD",
+      "contract_id": "REOPEN-MT-BEAD-QUARTER",
+      "evidence_rail": "Broadband",
+      "decision_type": "period_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-01-ACCEPT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-HANFORD-MASS-BALANCE",
+      "evidence_rail": "Hanford",
+      "decision_type": "accept",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "separate_reviewers_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-01-ACCEPT-same-actor-rejected",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-HANFORD-MASS-BALANCE",
+      "evidence_rail": "Hanford",
+      "decision_type": "accept",
+      "test_class": "same_actor_separation_rejection",
+      "expected_decision": "authorization_rejected",
+      "actual_decision": "authorization_rejected",
+      "reason_code": "evidence_and_publication_reviewers_must_differ",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-02-REJECT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-02-REJECT",
+      "contract_id": "REOPEN-HANFORD-MASS-BALANCE",
+      "evidence_rail": "Hanford",
+      "decision_type": "reject",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-03-RETURN-FOR-CLARIFICATION-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-03-RETURN-FOR-CLARIFICATION",
+      "contract_id": "REOPEN-HANFORD-MASS-BALANCE",
+      "evidence_rail": "Hanford",
+      "decision_type": "return_for_clarification",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-04-PRIVACY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-04-PRIVACY-HOLD",
+      "contract_id": "REOPEN-HANFORD-MASS-BALANCE",
+      "evidence_rail": "Hanford",
+      "decision_type": "privacy_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-05-AUTHORITY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-05-AUTHORITY-HOLD",
+      "contract_id": "REOPEN-HANFORD-MASS-BALANCE",
+      "evidence_rail": "Hanford",
+      "decision_type": "authority_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-06-PERIOD-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-HANFORD-MASS-BALANCE-DECISION-06-PERIOD-HOLD",
+      "contract_id": "REOPEN-HANFORD-MASS-BALANCE",
+      "evidence_rail": "Hanford",
+      "decision_type": "period_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-01-ACCEPT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-NNSA-QUALIFIED-RATE",
+      "evidence_rail": "NNSA",
+      "decision_type": "accept",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "separate_reviewers_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-01-ACCEPT-same-actor-rejected",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-NNSA-QUALIFIED-RATE",
+      "evidence_rail": "NNSA",
+      "decision_type": "accept",
+      "test_class": "same_actor_separation_rejection",
+      "expected_decision": "authorization_rejected",
+      "actual_decision": "authorization_rejected",
+      "reason_code": "evidence_and_publication_reviewers_must_differ",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-02-REJECT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-02-REJECT",
+      "contract_id": "REOPEN-NNSA-QUALIFIED-RATE",
+      "evidence_rail": "NNSA",
+      "decision_type": "reject",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-03-RETURN-FOR-CLARIFICATION-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-03-RETURN-FOR-CLARIFICATION",
+      "contract_id": "REOPEN-NNSA-QUALIFIED-RATE",
+      "evidence_rail": "NNSA",
+      "decision_type": "return_for_clarification",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-04-PRIVACY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-04-PRIVACY-HOLD",
+      "contract_id": "REOPEN-NNSA-QUALIFIED-RATE",
+      "evidence_rail": "NNSA",
+      "decision_type": "privacy_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-05-AUTHORITY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-05-AUTHORITY-HOLD",
+      "contract_id": "REOPEN-NNSA-QUALIFIED-RATE",
+      "evidence_rail": "NNSA",
+      "decision_type": "authority_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-06-PERIOD-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-QUALIFIED-RATE-DECISION-06-PERIOD-HOLD",
+      "contract_id": "REOPEN-NNSA-QUALIFIED-RATE",
+      "evidence_rail": "NNSA",
+      "decision_type": "period_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-01-ACCEPT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "evidence_rail": "NNSA",
+      "decision_type": "accept",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "separate_reviewers_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-01-ACCEPT-same-actor-rejected",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "evidence_rail": "NNSA",
+      "decision_type": "accept",
+      "test_class": "same_actor_separation_rejection",
+      "expected_decision": "authorization_rejected",
+      "actual_decision": "authorization_rejected",
+      "reason_code": "evidence_and_publication_reviewers_must_differ",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-02-REJECT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-02-REJECT",
+      "contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "evidence_rail": "NNSA",
+      "decision_type": "reject",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-03-RETURN-FOR-CLARIFICATION-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-03-RETURN-FOR-CLARIFICATION",
+      "contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "evidence_rail": "NNSA",
+      "decision_type": "return_for_clarification",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-04-PRIVACY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-04-PRIVACY-HOLD",
+      "contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "evidence_rail": "NNSA",
+      "decision_type": "privacy_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-05-AUTHORITY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-05-AUTHORITY-HOLD",
+      "contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "evidence_rail": "NNSA",
+      "decision_type": "authority_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-06-PERIOD-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-ACCEPTED-CAPACITY-DECISION-06-PERIOD-HOLD",
+      "contract_id": "REOPEN-NNSA-ACCEPTED-CAPACITY",
+      "evidence_rail": "NNSA",
+      "decision_type": "period_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-01-ACCEPT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-NNSA-GAO-BASELINE",
+      "evidence_rail": "NNSA",
+      "decision_type": "accept",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "separate_reviewers_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-01-ACCEPT-same-actor-rejected",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-01-ACCEPT",
+      "contract_id": "REOPEN-NNSA-GAO-BASELINE",
+      "evidence_rail": "NNSA",
+      "decision_type": "accept",
+      "test_class": "same_actor_separation_rejection",
+      "expected_decision": "authorization_rejected",
+      "actual_decision": "authorization_rejected",
+      "reason_code": "evidence_and_publication_reviewers_must_differ",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-02-REJECT-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-02-REJECT",
+      "contract_id": "REOPEN-NNSA-GAO-BASELINE",
+      "evidence_rail": "NNSA",
+      "decision_type": "reject",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-03-RETURN-FOR-CLARIFICATION-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-03-RETURN-FOR-CLARIFICATION",
+      "contract_id": "REOPEN-NNSA-GAO-BASELINE",
+      "evidence_rail": "NNSA",
+      "decision_type": "return_for_clarification",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-04-PRIVACY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-04-PRIVACY-HOLD",
+      "contract_id": "REOPEN-NNSA-GAO-BASELINE",
+      "evidence_rail": "NNSA",
+      "decision_type": "privacy_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-05-AUTHORITY-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-05-AUTHORITY-HOLD",
+      "contract_id": "REOPEN-NNSA-GAO-BASELINE",
+      "evidence_rail": "NNSA",
+      "decision_type": "authority_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    },
+    {
+      "test_id": "57O-ROLE-RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-06-PERIOD-HOLD-authorized",
+      "receipt_template_id": "RECEIPT-TEMPLATE-REOPEN-NNSA-GAO-BASELINE-DECISION-06-PERIOD-HOLD",
+      "contract_id": "REOPEN-NNSA-GAO-BASELINE",
+      "evidence_rail": "NNSA",
+      "decision_type": "period_hold",
+      "test_class": "authorized_role_configuration",
+      "expected_decision": "authorized_for_fixture_review",
+      "actual_decision": "authorized_for_fixture_review",
+      "reason_code": "bounded_nonaccept_role_authorized",
+      "passed": true,
+      "fixture_only": true,
+      "actual_reviewer_identity_created": false,
+      "fires_trigger": false,
+      "closes_hold_automatically": false,
+      "automated_publication_allowed": false,
+      "evidence_created": false
+    }
+  ]
+}

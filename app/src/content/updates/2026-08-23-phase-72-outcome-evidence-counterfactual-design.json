@@ -1,0 +1,29 @@
+{
+  "id": "update-2026-08-23-phase-72-outcome-evidence-counterfactual-design",
+  "effective_date": "2026-08-23",
+  "entry_type": "Source Refresh",
+  "title": "Phase 72 publishes outcome-evidence and counterfactual design controls",
+  "summary": "Thirty-two empty outcome-evidence packets, eight empty alternative-explanation registers, and eight inactive counterfactual-design dockets now expose the decision path between an eligible panel and stronger claim language. All proposed claim, assessment, design, result, review, receipt, and propagation fields remain empty.",
+  "affected_record_ids": [
+    "briefing-outcome-evidence-packet-desk-001",
+    "briefing-counterfactual-design-desk-001",
+    "dependency-map-descriptive-change-is-not-causal-effect",
+    "briefing-longitudinal-panel-desk-001",
+    "briefing-outcome-claim-comparison-protocol-001",
+    "briefing-outcomes-watch-001-what-actually-changed",
+    "gap-015",
+    "gap-016"
+  ],
+  "related_paths": [
+    "/evidence/claims/",
+    "/briefings/outcome-evidence-packet-desk-001/",
+    "/briefings/counterfactual-design-desk-001/",
+    "/atlas/dependency-maps/descriptive-change-is-not-causal-effect/",
+    "/data/outcome-evidence-counterfactual-designs.json"
+  ],
+  "evidence_note": "This release contains empty evidence-packet, alternative-explanation, and counterfactual-design contracts plus synthetic-only validation. It does not contain an eligible panel, selected claim class, proposed sentence, calculation, assessment, attribution, selected design, registered design, inspected result, effect estimate, causal claim, comparison, score, ranking, reviewer decision, or receipt.",
+  "materiality": "No record-state change",
+  "publication_effect": "Adds two Published briefings, one Published dependency map, one searchable registry with forty detail routes, one public export, and reader-surface integrations while leaving all evidence, cohort, stage, panel, claim, and comparison states unchanged.",
+  "next_check_date": "2026-09-01",
+  "work_package": "docs/work-packages/phase-72-outcome-evidence-counterfactual-design-control.md"
+}

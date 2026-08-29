@@ -10,7 +10,7 @@
   "update_frequency": "Ongoing as filings are disseminated",
   "capture_priority": "High",
   "known_limitations": "Companyfacts data supports structured financial statement checks, but it does not replace full filings, footnotes, segment context, risk disclosures, or operational records.",
-  "last_checked_date": "2026-07-09",
+  "last_checked_date": "2026-07-23",
   "watch_lanes": ["Compute and Chips", "Finance and Human Futures", "Power and Grid", "Space"],
   "live_access_type": "API",
   "api_url": "https://data.sec.gov/api/xbrl/companyfacts/",
@@ -20,5 +20,5 @@
   "jurisdiction": "United States federal",
   "source_owner": "U.S. Securities and Exchange Commission",
   "automation_notes": "Use CIK-specific queries for chipmakers, data-center operators, utilities, launch firms, and major suppliers.",
-  "notes": "Separate source record for structured company financial fact monitoring."
+  "notes": "Separate source record for structured company financial fact monitoring. Phase 55E recheck confirmed the SEC still documents no-key JSON access, real-time dissemination updates, and nightly bulk files."
 }

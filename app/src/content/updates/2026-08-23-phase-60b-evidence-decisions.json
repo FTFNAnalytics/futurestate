@@ -1,0 +1,46 @@
+{
+  "id": "update-2026-08-23-phase-60b-evidence-decisions",
+  "effective_date": "2026-08-23",
+  "entry_type": "Source Refresh",
+  "title": "Evidence Cycle 001 closes both Wave 60B source checks",
+  "summary": "DARPA's official Lift Challenge results close the measured-performance and prize-decision gate, while the current FAA Shuttle Landing Facility surfaces still provide no later formal licence disposition. The two decisions retain separate receipts, identities, boundaries, and next actions.",
+  "affected_record_ids": [
+    "source-darpa-lift-challenge-2026",
+    "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+    "briefing-adoption-003-autonomy-evtol",
+    "reader-pathway-autonomy-regulation-to-service",
+    "dependency-map-technology-adoption-is-not-operating-outcome",
+    "source-faa-shuttle-landing-facility-license",
+    "signal-shuttle-landing-facility-license-status-watch",
+    "briefing-local-conversion-004-space-coast",
+    "briefing-project-conversion-004-space-coast-authority",
+    "reader-pathway-space-coast-plan-to-mission",
+    "dependency-map-local-authorization-is-not-operation",
+    "briefing-outcomes-watch-001-what-actually-changed",
+    "briefing-evidence-cycle-001-operating-baseline",
+    "gap-013",
+    "local-florida-space-coast-launch-corridor"
+  ],
+  "related_paths": [
+    "/signals/darpa-lift-challenge-2026-scheduled-field-trial/",
+    "/signals/shuttle-landing-facility-license-status-watch/",
+    "/briefings/evidence-cycle-001-operating-baseline/",
+    "/briefings/outcomes-watch-001-what-actually-changed/",
+    "/briefings/project-conversion-004-space-coast-authority-to-mission/",
+    "/data/operating-cycle.json",
+    "/data/evidence-return-envelopes.json"
+  ],
+  "evidence_note": "The DARPA decision is limited to the official measured competition result and prizes. The FAA decision is limited to the official pages and licence document reviewed on August 23; it does not establish lapse, renewal, surrender, closure, or nonexistence. Neither receipt establishes operating outcomes.",
+  "receipt_ids": [
+    "receipt-60-darpa-2026-08-23-results",
+    "receipt-60-slf-2026-08-15-no-material-change"
+  ],
+  "decision_date": "2026-08-23",
+  "materiality": "Material record change",
+  "publication_effect": "Publishes two independently reviewed receipts, promotes the DARPA result signal to the exact measured-result stage, retains the Shuttle Landing Facility signal In Review, and advances no named-file stage or operating outcome.",
+  "next_check_dates": [
+    "2026-09-15",
+    "2026-09-23"
+  ],
+  "work_package": "docs/work-packages/phase-60-evidence-to-decision-operating-cycle.md"
+}

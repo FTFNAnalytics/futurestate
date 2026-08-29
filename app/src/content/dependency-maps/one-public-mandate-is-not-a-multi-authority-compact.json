@@ -1,0 +1,188 @@
+{
+  "id": "dependency-map-one-public-mandate-is-not-a-multi-authority-compact",
+  "title": "One Public Mandate Is Not A Multi-Authority Compact",
+  "slug": "one-public-mandate-is-not-a-multi-authority-compact",
+  "summary": "A dependency path from one bounded public mandate through jurisdiction, treaty, standing, externality, party authorization, joint terms, and receipts.",
+  "map_type": "Dependency Stack",
+  "record_status": "Published",
+  "primary_topic": "Human Futures",
+  "framework_layers": [
+    "Human Systems",
+    "Enabling Infrastructure",
+    "Frontier Domains"
+  ],
+  "constraint_tags": [
+    "Public Trust",
+    "Regulation",
+    "Infrastructure",
+    "Interpretation"
+  ],
+  "map_question": "What records are required before one public mandate is not a multi-authority compact can move from assertion to a bounded public decision?",
+  "interpretation_boundary": "This map is a control path. It does not establish a mandate, jurisdiction, compact, contribution, mutual-aid activation, emergency, rights restriction, normalization, receipt, score, rank, or outcome.",
+  "source_ids": [
+    "source-phoenix-tsmc-july-2026-fab-update",
+    "source-phoenix-tsmc-2026-wastewater-development-agreement",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-toronto-development-pipeline-2025",
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-virginia-scc-golden-mars-2026",
+    "source-faa-shuttle-landing-facility-license",
+    "source-faa-starship-lc39a-final-eis-rod"
+  ],
+  "signal_ids": [
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-phoenix-tsmc-fab3-topping-out",
+    "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-cmhc-june-2026-toronto-construction-stage-baseline",
+    "signal-virginia-data-center-air-permit-trail",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-faa-part450-operator-transition",
+    "signal-kennedy-multiuser-master-plan",
+    "signal-ksc-causeway-bridge-operational",
+    "signal-thacker-pass-federal-land-authorization",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-thacker-pass-state-environmental-permit-stack",
+    "signal-rhyolite-ridge-water-permit-preoperation-gates",
+    "signal-gsa-pqc-procurement-paths",
+    "signal-gsa-onegov-ai-procurement-channel",
+    "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+    "signal-sample-007",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-nist-ai-metrology-method-selection-layer",
+    "signal-nist-ai-rmf-critical-infrastructure-profile-concept",
+    "signal-cpuc-waymo-fared-driverless-expansion-2024",
+    "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+    "signal-california-av-testing-miles-2024"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate",
+    "local-northern-virginia-data-center-corridor",
+    "local-florida-space-coast-launch-corridor",
+    "local-nevada-lithium-processing-corridor"
+  ],
+  "evidence_gap_ids": [
+    "gap-001",
+    "gap-002",
+    "gap-003",
+    "gap-004",
+    "gap-005",
+    "gap-008",
+    "gap-011",
+    "gap-013",
+    "gap-016",
+    "gap-007",
+    "gap-012",
+    "gap-009",
+    "gap-014",
+    "gap-010",
+    "gap-015"
+  ],
+  "nodes": [
+    {
+      "id": "node-mandate",
+      "label": "Authorized time-bounded public mandate",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-016",
+      "note": "No qualifying Phase 77 mandate exists."
+    },
+    {
+      "id": "node-authority",
+      "label": "Jurisdiction, treaty, rights, duty, and standing map",
+      "node_type": "Constraint",
+      "note": "Authority and affected-public identities remain separate."
+    },
+    {
+      "id": "node-externality",
+      "label": "Cross-boundary benefit, burden, risk, and residual-duty record",
+      "node_type": "Constraint",
+      "note": "Flows are traced across the full system."
+    },
+    {
+      "id": "node-terms",
+      "label": "Joint purpose, alternatives, allocation, contribution, and governance terms",
+      "node_type": "Constraint",
+      "note": "Agreement terms require independent authorization."
+    },
+    {
+      "id": "node-continuity",
+      "label": "Continuity, dispute, emergency, rights, and remedy controls",
+      "node_type": "Constraint",
+      "note": "Operating readiness does not expand authority."
+    },
+    {
+      "id": "node-normalize",
+      "label": "Expiry, restoration, accounting, and democratic reauthorization",
+      "node_type": "Constraint",
+      "note": "Extraordinary action must return to ordinary authority."
+    },
+    {
+      "id": "node-receipt",
+      "label": "Independent review, dissent, public notice, archive, and receipts",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-016",
+      "note": "No Phase 78 receipt exists."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-mandate",
+      "to": "node-authority",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "One public mandate cannot assign every authority."
+    },
+    {
+      "from": "node-authority",
+      "to": "node-externality",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Scope and duty determine which flows must be tested."
+    },
+    {
+      "from": "node-externality",
+      "to": "node-terms",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Allocation needs explicit benefit and burden evidence."
+    },
+    {
+      "from": "node-terms",
+      "to": "node-continuity",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Operating duties must be authorized and safeguarded."
+    },
+    {
+      "from": "node-continuity",
+      "to": "node-normalize",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Activation requires a bounded exit and restoration path."
+    },
+    {
+      "from": "node-normalize",
+      "to": "node-receipt",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Every change and closure needs an inspectable decision receipt."
+    }
+  ],
+  "what_this_map_supports": [
+    "Separate authority, public-value, contribution, continuity, emergency, and normalization decisions.",
+    "Explicit rights, treaty, accessibility, distribution, dispute, remedy, expiry, and residual-duty controls.",
+    "Public receipts without composite scoring or jurisdictional ranking."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not establish a current compact, emergency, benefit, burden, contribution, dispute, or reauthorization.",
+    "It does not permit silent renewal, authority laundering, contribution-as-control, or automatic rights suspension.",
+    "It does not create a score, rank, stage advance, or operating-outcome change."
+  ],
+  "next_records_needed": [
+    "A real, authorized, time-bounded Phase 77 mandate and receipt.",
+    "Completed authority, standing, treaty, externality, public-value, burden, contribution, and dispute records.",
+    "Separately authorized compact, activation, normalization, and reauthorization decisions with receipts."
+  ]
+}

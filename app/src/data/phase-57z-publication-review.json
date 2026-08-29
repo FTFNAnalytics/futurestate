@@ -1,0 +1,80 @@
+{
+  "phase": "57Z",
+  "captured_date": "2026-08-10",
+  "published_research_document_ids": [
+    "research-doc-57z-toronto-council-adoption",
+    "research-doc-57z-darpa-official-results-gate-recheck",
+    "research-doc-57z-amtrak-pids-closeout-hold-recheck",
+    "research-doc-57z-amtrak-named-asset-reliability-hold-recheck",
+    "research-doc-57z-louisiana-nextlink-adoption-hold-recheck",
+    "research-doc-57z-louisiana-starlink-adoption-hold-recheck",
+    "research-doc-57z-montana-bead-completed-quarter-hold-recheck",
+    "research-doc-57z-hanford-complete-material-balance-hold-recheck",
+    "research-doc-57z-nnsa-recurring-qualified-rate-hold-recheck",
+    "research-doc-57z-nnsa-accepted-operating-capacity-hold-recheck",
+    "research-doc-57z-nnsa-gao-enterprise-baseline-hold-recheck"
+  ],
+  "promoted_signal_ids": [
+    "signal-toronto-24-254930-community-council-recommendation"
+  ],
+  "held_signal_ids": [
+    "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+    "signal-57y-preserved-amtrak-pids",
+    "signal-57y-preserved-amtrak-reliability",
+    "signal-57y-preserved-la-nextlink-adoption",
+    "signal-57y-preserved-la-starlink-adoption",
+    "signal-57y-preserved-mt-bead-quarter",
+    "signal-57y-preserved-hanford-mass-balance",
+    "signal-57y-preserved-nnsa-qualified-rate",
+    "signal-57y-preserved-nnsa-accepted-capacity",
+    "signal-57y-preserved-nnsa-gao-baseline"
+  ],
+  "inherited_hold_decisions": [
+    {
+      "parent_hold_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2027-12",
+      "decision": "hold_not_resolved",
+      "exact_missing_evidence": "A final FRA-accepted closeout record tied to the PIDS program scope and completed deployment denominator."
+    },
+    {
+      "parent_hold_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2027-11",
+      "decision": "hold_not_resolved",
+      "exact_missing_evidence": "A repeated named-asset reliability series with a stable asset identity, period, denominator, failure definition, and repair outcome."
+    },
+    {
+      "parent_hold_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2027-12",
+      "decision": "hold_not_resolved",
+      "exact_missing_evidence": "Observed subscription or take-rate evidence for a fixed eligible-location cohort after service availability."
+    },
+    {
+      "parent_hold_key": "LA-BEAD-STARLINK-HOLD-2027-12",
+      "decision": "hold_not_resolved",
+      "exact_missing_evidence": "Observed subscription or installation evidence for a fixed eligible-location cohort after service becomes available."
+    },
+    {
+      "parent_hold_key": "MT-BEAD-QUARTERLY-HOLD-2027-12",
+      "decision": "hold_not_resolved",
+      "exact_missing_evidence": "One complete public quarterly report with project identity, reporting period, locations, completion state, and outcome denominator."
+    },
+    {
+      "parent_hold_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2027-09",
+      "decision": "hold_not_resolved",
+      "exact_missing_evidence": "A complete compatible material balance covering feed, immobilized glass, secondary waste, inventory change, losses, period, and reconciliation method."
+    },
+    {
+      "parent_hold_key": "NNSA-PIT-RATE-HOLD-2027-12",
+      "decision": "hold_not_resolved",
+      "exact_missing_evidence": "A recurring qualified-output series with acceptance definition, facility identity, period, denominator, and comparable rate calculation."
+    },
+    {
+      "parent_hold_key": "NNSA-PIT-PEIS-HOLD-2027-12",
+      "decision": "hold_not_resolved",
+      "exact_missing_evidence": "A final accepted operating-capacity artifact linked to operating configuration, acceptance criteria, and observed qualified output."
+    },
+    {
+      "parent_hold_key": "NNSA-PIT-GAO-BASELINE-HOLD-2027-13",
+      "decision": "hold_not_resolved",
+      "exact_missing_evidence": "A final enterprise baseline and GAO closure evidence tied to the exact recommendation identity and acceptance criteria."
+    }
+  ],
+  "editorial_boundary": "A bounded evidence-return decision may be Published while the underlying outcome signal remains In Review. No duplicate hold signal is created."
+}

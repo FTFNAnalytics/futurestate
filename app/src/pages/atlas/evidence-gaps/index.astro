@@ -35,6 +35,9 @@ const openCount = evidenceGaps.filter((gap) => gap.data.status !== "Resolved" &&
             <MetaPill label={gap.data.priority} tone={gap.data.priority === "High" ? "urgency" : "default"} />
             <MetaPill label={gap.data.status} tone={getEvidenceGapTone(gap.data.status)} />
             <MetaPill label={gap.data.primary_topic} />
+            {gap.data.latest_review && (
+              <MetaPill label={`${gap.data.latest_review.phase}: ${gap.data.latest_review.decision}`} tone="review" />
+            )}
           </div>
           <h2><a href={`/atlas/evidence-gaps/${gap.data.slug}/`}>{gap.data.title}</a></h2>
           <p>{gap.data.question}</p>

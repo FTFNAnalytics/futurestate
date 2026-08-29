@@ -9,6 +9,36 @@ const generatedAt = new Date();
 const sources = await getCollection("sources");
 const signals = await getCollection("signals");
 
+const getNextAction = (
+  source: (typeof sources)[number],
+  freshness: ReturnType<typeof getSourceFreshness>,
+  health: ReturnType<typeof getSourceHealth>,
+  relatedSignalCount: number
+) => {
+  if (["Blocked", "Paused"].includes(source.data.monitoring_status)) {
+    return `Resolve ${source.data.monitoring_status.toLowerCase()} monitoring status before reuse.`;
+  }
+  if (freshness.status === "Review due") {
+    return "Recheck the source and record the dated result before supporting a new claim.";
+  }
+  if (freshness.status === "Watch soon") {
+    return "Schedule the next source check inside the current review window.";
+  }
+  if (health.status === "Needs endpoint") {
+    return "Add a stable endpoint or confirm that this source must remain manual-only.";
+  }
+  if (source.data.watch_lanes.length === 0) {
+    return "Assign a watch lane before using this source in the authority queue.";
+  }
+  if (source.data.capture_priority === "High" && relatedSignalCount === 0) {
+    return "Select one bounded source item or reduce the source's capture priority.";
+  }
+  if (health.status === "Probe ready") {
+    return "Run a bounded no-write probe when this watch lane next enters review.";
+  }
+  return "Keep on its documented cadence and review manually when the lane is active.";
+};
+
 const sourceRows = sources
   .map((source) => {
     const freshness = getSourceFreshness(
@@ -27,7 +57,8 @@ const sourceRows = sources
       source,
       freshness,
       health,
-      relatedSignalCount
+      relatedSignalCount,
+      nextAction: getNextAction(source, freshness, health, relatedSignalCount)
     };
   })
   .sort((a, b) => {
@@ -49,6 +80,35 @@ const highPrioritySources = sourceRows.filter((row) => row.source.data.capture_p
 const probeReadySources = sourceRows.filter((row) => row.health.status === "Probe ready");
 const manualReviewSources = sourceRows.filter((row) => row.health.status === "Manual review");
 const needsEndpointSources = sourceRows.filter((row) => row.health.status === "Needs endpoint");
+const currentHighPriority = currentSources.filter((row) => row.source.data.capture_priority === "High");
+const currentRemaining = currentSources.filter((row) => row.source.data.capture_priority !== "High");
+
+const reviewGroups = [
+  {
+    id: "review-due",
+    label: "Review Due",
+    summary: "Recheck these records before they support any new public claim.",
+    rows: reviewDue
+  },
+  {
+    id: "watch-soon",
+    label: "Watch Soon",
+    summary: "Schedule these checks before their current review windows close.",
+    rows: watchSoon
+  },
+  {
+    id: "current-high-priority",
+    label: "Current / High Priority",
+    summary: "Use these current sources for the next bounded, gap-closing evidence pass.",
+    rows: currentHighPriority
+  },
+  {
+    id: "current-maintenance",
+    label: "Current / Maintenance",
+    summary: "Keep these sources on cadence without expanding the queue by default.",
+    rows: currentRemaining
+  }
+].filter((group) => group.rows.length > 0);
 
 const topicCounts = new Map<string, number>();
 const watchLaneCounts = new Map<string, number>();
@@ -76,6 +136,31 @@ const topWatchLanes = [...watchLaneCounts.entries()]
   .slice(0, 8);
 const accessTypes = [...accessTypeCounts.entries()]
   .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+const sourceTypes = [...new Set(sourceRows.map((row) => row.source.data.source_type))].sort();
+const freshnessStatuses = [...new Set(sourceRows.map((row) => row.freshness.status))].sort();
+const sourceTopics = [...topicCounts.keys()].sort();
+const sourceWatchLanes = [...watchLaneCounts.keys()].sort();
+
+const watchLaneRows = [...watchLaneCounts.keys()]
+  .sort((a, b) => a.localeCompare(b))
+  .map((lane) => {
+    const rows = sourceRows.filter((row) => (row.source.data.watch_lanes as string[]).includes(lane));
+    const nextRow = rows[0];
+    return {
+      lane,
+      sourceCount: rows.length,
+      reviewDueCount: rows.filter((row) => row.freshness.status === "Review due").length,
+      watchSoonCount: rows.filter((row) => row.freshness.status === "Watch soon").length,
+      highPriorityCount: rows.filter((row) => row.source.data.capture_priority === "High").length,
+      nextRow
+    };
+  })
+  .sort((a, b) =>
+    b.reviewDueCount - a.reviewDueCount ||
+    b.watchSoonCount - a.watchSoonCount ||
+    b.highPriorityCount - a.highPriorityCount ||
+    a.lane.localeCompare(b.lane)
+  );
 
 const formatList = (values: string[]) => values.length > 0 ? values.join(", ") : "Unassigned";
 ---
@@ -216,6 +301,43 @@ const formatList = (values: string[]) => values.length > 0 ? values.join(", ") :
   <section class="page-section">
     <div class="section-heading">
       <div>
+        <div class="eyebrow">Watch-Lane Review Map</div>
+        <h2>Each lane now points to its next evidence action.</h2>
+        <p>
+          Lanes are ordered by overdue reviews, approaching reviews, and high-priority
+          source depth. The named source is the first item to inspect, not an automatic
+          publication candidate.
+        </p>
+      </div>
+      <a class="inline-link" href="/atlas/source-coverage/">Compare source coverage</a>
+    </div>
+
+    <div class="coverage-grid">
+      {watchLaneRows.map((row) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label={`${row.sourceCount} sources`} />
+            <MetaPill label={`${row.reviewDueCount} review due`} tone={row.reviewDueCount > 0 ? "urgency" : "default"} />
+            <MetaPill label={`${row.watchSoonCount} watch soon`} tone={row.watchSoonCount > 0 ? "review" : "default"} />
+            <MetaPill label={`${row.highPriorityCount} high priority`} tone={row.highPriorityCount > 0 ? "possibility" : "default"} />
+          </div>
+          <h3>{row.lane}</h3>
+          {row.nextRow ? (
+            <>
+              <p><strong>Next source:</strong> <a href={`/atlas/sources/${row.nextRow.source.data.id}/`}>{row.nextRow.source.data.name}</a></p>
+              <p class="card-note"><strong>Next action:</strong> {row.nextRow.nextAction}</p>
+            </>
+          ) : (
+            <p class="card-note">No active source is assigned to this lane.</p>
+          )}
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
         <div class="eyebrow">Review Queue</div>
         <h2>Review due sources first.</h2>
         <p>
@@ -227,53 +349,165 @@ const formatList = (values: string[]) => values.length > 0 ? values.join(", ") :
       <a class="inline-link" href="/atlas/sources/">Open source atlas</a>
     </div>
 
-    <div class="source-list">
-      {sourceRows.map(({ source, freshness, health, relatedSignalCount }) => (
-        <article class="source-row">
-          <div class="meta-row">
-            <MetaPill label={freshness.status} tone={freshness.tone} />
-            <MetaPill label={health.status} tone={health.tone} />
-            <MetaPill label={source.data.credibility_level} />
-            <MetaPill
-              label={source.data.capture_priority}
-              tone={source.data.capture_priority === "High" ? "urgency" : "default"}
-            />
-            <MetaPill label={source.data.live_access_type} />
-            <MetaPill label={source.data.monitoring_status} tone={source.data.monitoring_status === "Active" ? "possibility" : "review"} />
-            <MetaPill label={`${relatedSignalCount} signal${relatedSignalCount === 1 ? "" : "s"}`} />
+    <form class="filter-panel" data-source-filter>
+      <label class="filter-panel__search">
+        Search
+        <input type="search" data-filter="search" placeholder="Source, limitation, next action..." />
+      </label>
+      <label>
+        Freshness
+        <select data-filter="freshness">
+          <option value="">All freshness states</option>
+          {freshnessStatuses.map((status) => <option value={status}>{status}</option>)}
+        </select>
+      </label>
+      <label>
+        Topic
+        <select data-filter="topic">
+          <option value="">All topics</option>
+          {sourceTopics.map((topic) => <option value={topic}>{topic}</option>)}
+        </select>
+      </label>
+      <label>
+        Watch lane
+        <select data-filter="watchLane">
+          <option value="">All watch lanes</option>
+          {sourceWatchLanes.map((lane) => <option value={lane}>{lane}</option>)}
+        </select>
+      </label>
+      <label>
+        Source type
+        <select data-filter="sourceType">
+          <option value="">All source types</option>
+          {sourceTypes.map((sourceType) => <option value={sourceType}>{sourceType}</option>)}
+        </select>
+      </label>
+      <button class="button button--secondary filter-panel__reset" type="button" data-filter-reset>
+        Clear filters
+      </button>
+    </form>
+    <p class="muted" data-source-result-count>{sourceRows.length} sources shown</p>
+    <p class="muted" data-source-empty hidden>No sources match the selected filters.</p>
+
+    {reviewGroups.map((group) => (
+      <div class="page-section" id={group.id} data-source-group>
+        <div class="section-heading section-heading--stacked">
+          <div>
+            <div class="eyebrow">{group.rows.length} Sources</div>
+            <h3>{group.label}</h3>
           </div>
-          <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
-          <p>{source.data.known_limitations}</p>
-          <dl class="source-facts">
-            <div>
-              <dt>Last Checked</dt>
-              <dd>{formatDate(source.data.last_checked_date)}</dd>
-            </div>
-            <div>
-              <dt>Review Window</dt>
-              <dd>{freshness.reviewAfterDays} days</dd>
-            </div>
-            <div>
-              <dt>Age</dt>
-              <dd>{freshness.ageDays} days</dd>
-            </div>
-            <div>
-              <dt>Update Cadence</dt>
-              <dd>{source.data.update_frequency}</dd>
-            </div>
-            <div>
-              <dt>Watch Lanes</dt>
-              <dd>{formatList(source.data.watch_lanes)}</dd>
-            </div>
-            <div>
-              <dt>Coverage Role</dt>
-              <dd>{formatList(source.data.coverage_role)}</dd>
-            </div>
-          </dl>
-          <p class="card-note">{freshness.note}</p>
-          <p class="card-note">{health.note}</p>
-        </article>
-      ))}
-    </div>
+          <p>{group.summary}</p>
+        </div>
+        <div class="source-list">
+          {group.rows.map(({ source, freshness, health, relatedSignalCount, nextAction }) => (
+            <article
+              class="source-row"
+              data-source-card
+              data-freshness={freshness.status}
+              data-topic={source.data.primary_topics.join("||")}
+              data-watch-lane={source.data.watch_lanes.join("||")}
+              data-source-type={source.data.source_type}
+              data-search={`${source.data.name} ${source.data.known_limitations} ${nextAction}`.toLowerCase()}
+            >
+              <div class="meta-row">
+                <MetaPill label={freshness.status} tone={freshness.tone} />
+                <MetaPill label={health.status} tone={health.tone} />
+                <MetaPill label={source.data.credibility_level} />
+                <MetaPill
+                  label={source.data.capture_priority}
+                  tone={source.data.capture_priority === "High" ? "urgency" : "default"}
+                />
+                <MetaPill label={source.data.live_access_type} />
+                <MetaPill label={source.data.monitoring_status} tone={source.data.monitoring_status === "Active" ? "possibility" : "review"} />
+                <MetaPill label={`${relatedSignalCount} signal${relatedSignalCount === 1 ? "" : "s"}`} />
+              </div>
+              <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+              <p>{source.data.known_limitations}</p>
+              <p class="card-note"><strong>Next action:</strong> {nextAction}</p>
+              <dl class="source-facts">
+                <div>
+                  <dt>Last Checked</dt>
+                  <dd>{formatDate(source.data.last_checked_date)}</dd>
+                </div>
+                <div>
+                  <dt>Review Window</dt>
+                  <dd>{freshness.reviewAfterDays} days</dd>
+                </div>
+                <div>
+                  <dt>Age</dt>
+                  <dd>{freshness.ageDays} days</dd>
+                </div>
+                <div>
+                  <dt>Update Cadence</dt>
+                  <dd>{source.data.update_frequency}</dd>
+                </div>
+                <div>
+                  <dt>Watch Lanes</dt>
+                  <dd>{formatList(source.data.watch_lanes)}</dd>
+                </div>
+                <div>
+                  <dt>Coverage Role</dt>
+                  <dd>{formatList(source.data.coverage_role)}</dd>
+                </div>
+              </dl>
+              <p class="card-note">{freshness.note}</p>
+              <p class="card-note">{health.note}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    ))}
   </section>
+
+  <script is:inline>
+    const filterRoot = document.querySelector("[data-source-filter]");
+
+    if (filterRoot) {
+      const controls = Array.from(filterRoot.querySelectorAll("[data-filter]"));
+      const cards = Array.from(document.querySelectorAll("[data-source-card]"));
+      const groups = Array.from(document.querySelectorAll("[data-source-group]"));
+      const resultCount = document.querySelector("[data-source-result-count]");
+      const emptyState = document.querySelector("[data-source-empty]");
+      const resetButton = filterRoot.querySelector("[data-filter-reset]");
+
+      function updateSourceQueue() {
+        const activeFilters = Object.fromEntries(
+          controls.map((control) => [control.dataset.filter, control.value.trim()])
+        );
+        let visibleCount = 0;
+
+        for (const card of cards) {
+          const isVisible = Object.entries(activeFilters).every(([key, value]) => {
+            if (!value) return true;
+            if (key === "search") return card.dataset.search?.includes(value.toLowerCase());
+            return card.dataset[key]?.split("||").includes(value);
+          });
+
+          card.hidden = !isVisible;
+          if (isVisible) visibleCount += 1;
+        }
+
+        for (const group of groups) {
+          const groupCards = Array.from(group.querySelectorAll("[data-source-card]"));
+          group.hidden = !groupCards.some((card) => !card.hidden);
+        }
+
+        if (resultCount) {
+          resultCount.textContent = `${visibleCount} source${visibleCount === 1 ? "" : "s"} shown`;
+        }
+        if (emptyState) emptyState.hidden = visibleCount !== 0;
+      }
+
+      controls.forEach((control) => {
+        control.addEventListener(control.type === "search" ? "input" : "change", updateSourceQueue);
+      });
+      resetButton?.addEventListener("click", () => {
+        controls.forEach((control) => {
+          control.value = "";
+        });
+        updateSourceQueue();
+      });
+      updateSourceQueue();
+    }
+  </script>
 </BaseLayout>

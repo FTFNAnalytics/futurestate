@@ -1,0 +1,49 @@
+{
+  "id": "research-doc-56g-manatee-interval-operation",
+  "collection_id": "research-collection-operating-record-acquisition-closure-batch-two-2026",
+  "title": "Manatee Solar Energy Center: Phase 56G Acquisition Check",
+  "slug": "56g-manatee-interval-operation",
+  "record_status": "In Review",
+  "publisher": "Florida Power & Light Company",
+  "publication_date": null,
+  "document_type": "Data Release",
+  "summary": "FPL's 2026 plan lists Manatee Battery Storage as one 409 MW unit in commercial operation as of December 31, 2025. It does not publish interval dispatch, availability, cycles, state of charge, or degradation. Phase 56G decision: No closure change. Current capacity and in-service identity do not satisfy the interval operating-record requirement.",
+  "key_findings": [
+    "Phase 56F coverage ID: coverage-56f-manatee.",
+    "Highest-value missing record: Interval dispatch and availability for the named battery.",
+    "Closure state: Open to Open.",
+    "Continuation rule: Reopen when FPL, Florida PSC, EIA, or a balancing authority publishes asset-specific operating data with a declared interval."
+  ],
+  "why_it_matters": "The acquisition check tests one named reopening rule without allowing adjacent context to stand in for the requested operating or closure record.",
+  "ftfn_relevance": [
+    "Preserves the stable entity ID eia-plant-60014.",
+    "Records the exact official or first-party rail checked and the result at a date.",
+    "Separates a useful contextual record from the narrower evidence needed to change closure state."
+  ],
+  "evidence_limits": [
+    "The utility planning record supports asset identity and capacity at a date, not observed interval operation or independently verified performance.",
+    "Interval dispatch, availability, cycles, state of charge, degradation, revenue, curtailment, outage response, and customer cost.",
+    "No causal effect, ranking, composite score, readiness score, or unsupported cross-entity comparison is supported."
+  ],
+  "primary_topics": [
+    "Energy"
+  ],
+  "framework_layers": [
+    "Resource Foundations",
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Power",
+    "Infrastructure",
+    "Data Quality",
+    "Safety",
+    "Weather"
+  ],
+  "source_id": "source-56g-manatee-fpl-site-plan-2026",
+  "official_url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+  "local_capture_path": "/downloads/operating-record-acquisition-closure-batch-two-2026/official-links/04-manatee-interval-operation.txt",
+  "archive_member": "official-links/04-manatee-interval-operation.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-07-24"
+}

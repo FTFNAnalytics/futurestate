@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/v031-content-expansion.json";
+
+export function getStaticPaths() { return program.evidence_cycle.records.map((record) => ({ params: { slug: record.slug }, props: { cycleItemId: record.cycle_item_id } })); }
+const record = program.evidence_cycle.records.find((item) => item.cycle_item_id === Astro.props.cycleItemId)!;
+const signals = await getCollection("signals");
+const signal = signals.find((item) => item.data.id === record.underlying_signal_id);
+const sources = await getCollection("sources");
+const sourceById = new Map(sources.map((item) => [item.data.id, item]));
+---
+
+<BaseLayout title={`${record.target} | Evidence Cycle 001`} description={record.exact_next_artifact}>
+  <ReviewHeader eyebrow="Phase 111 · Independent evidence gate" title={record.target} summary={record.exact_next_artifact} phase={111} />
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Current public state</div><h2>{record.public_state}</h2><p>{record.decision_date ? `A dated ${record.receipt_type ?? "decision"} was recorded on ${record.decision_date}.` : `The source check is scheduled for ${record.scheduled_check_date}. No decision or receipt is represented before that check.`}</p></div><article class="record-card record-card--featured"><div class="meta-row"><MetaPill label={record.decision_status} tone={record.decision_date ? "possibility" : "review"} /><MetaPill label={record.scheduled_check_date} /></div><h3>{record.cycle_item_id}</h3>{record.receipt_id ? <p>Receipt: <code>{record.receipt_id}</code></p> : <p>No receipt exists in the operating record.</p>}</article></section>
+  {signal && <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Underlying signal</div><h2>Keep the upstream record visible.</h2></div></div><article class="record-card"><div class="meta-row"><MetaPill label={signal.data.record_status} /><MetaPill label={signal.data.signal_type} /></div><h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3><p>{signal.data.summary}</p></article></section>}
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Primary rails</div><h2>Sources assigned to this decision.</h2></div></div><div class="source-list">{record.source_ids.map((id) => sourceById.get(id)).filter(Boolean).map((source) => <article class="source-row"><h3><a href={`/atlas/sources/${source!.data.id}/`}>{source!.data.name}</a></h3><p>{source!.data.source_type} · last checked {source!.data.last_checked_date.toISOString().slice(0, 10)}</p></article>)}</div></section>
+  <section class="page-section prose-page"><h2>Decision boundary</h2><p>{program.evidence_cycle.publication_boundary}</p><p>This page does not infer that an artifact exists, that a scheduled event occurred, or that an operating outcome changed.</p></section>
+</BaseLayout>

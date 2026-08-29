@@ -1,0 +1,3187 @@
+{
+  "schema_version": "1.0",
+  "phase": "67",
+  "registry_id": "qualification-packet-registry-001",
+  "title": "Qualification Packet Registry",
+  "captured_date": "2026-08-12",
+  "as_of_date": "2026-08-23",
+  "structural_status": "Complete",
+  "operational_status": "Wave 60B Receipts Recorded; Qualification Packets Awaiting File Evidence",
+  "scope": "Thirty-two public qualification contracts covering validation, acceptance, recurring operation, and comparable outcome for all eight named files.",
+  "interpretation_boundary": "A packet defines what evidence would qualify and how it must propagate. The packet, a returned URL, or a synthetic test is not evidence that the requirement has been met.",
+  "state_machine": [
+    "Awaiting Artifact",
+    "Returned",
+    "Identity Verified",
+    "Evidence Tested",
+    "Independently Reviewed",
+    "Decision Receipt",
+    "Propagated",
+    "Release Verified"
+  ],
+  "terminal_states": [
+    "Rejected",
+    "Blocked",
+    "Superseded",
+    "No Material Change"
+  ],
+  "allowed_receipt_types": [
+    "Change Note",
+    "Watch Note",
+    "Correction",
+    "No Material Change",
+    "Blocked Check"
+  ],
+  "metrics": {
+    "qualification_packets": 32,
+    "named_files": 8,
+    "stage_tests_per_file": 4,
+    "continuity_monitoring": 1,
+    "awaiting_completion_artifact": 4,
+    "awaiting_qualifying_artifact": 27,
+    "receipts_created": 0,
+    "phase64_cells_advanced": 0,
+    "automatic_publications": 0
+  },
+  "packet_records": [
+    {
+      "packet_id": "67-QP-001",
+      "slug": "67-qp-001-tsmc-arizona-validation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "file_kind": "local_project",
+      "named_entity": "TSMC Arizona",
+      "short_name": "TSMC Arizona",
+      "geography": "Phoenix, Arizona",
+      "stage_id": "66-STAGE-01-VALIDATION",
+      "phase64_stage_id": "64-STAGE-05-VALIDATION",
+      "stage_label": "Validation",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a same-entity record document the named inspection, test, compliance check, qualification, result, exception, correction, or retest?",
+      "current_basis": "Facility-specific inspection, utility acceptance, equipment qualification, and customer qualification remain open.",
+      "exact_qualifying_artifact": "A same-entity facility-specific inspection, utility acceptance, equipment or product qualification, customer acceptance, and a compatible repeat production series.",
+      "recognized_authorities": [
+        "City of Phoenix",
+        "Serving electric or water utility",
+        "Named facility inspector or regulator",
+        "TSMC or a named customer"
+      ],
+      "entity_scope": "The named TSMC Arizona facility or campus component identified by the artifact; evidence from Intel, ASML, suppliers, or regional programs does not transfer.",
+      "admissible_artifact_types": [
+        "Named inspection report",
+        "Test or qualification result",
+        "Compliance measurement",
+        "Exception and correction record",
+        "Retest or independent verification"
+      ],
+      "temporal_requirement": "The artifact must state the inspection, test, measurement, or review date and the version, facility, system, or lot tested.",
+      "method_requirement": "The test method, acceptance criterion, observed result, exceptions, and disposition must be inspectable.",
+      "denominator_requirement": "The tested population, component set, lot, run, requirement set, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Failures, exceptions, deviations, corrections, and retests must be present or explicitly reported as none.",
+      "recurrence_requirement": "A validation packet may establish a bounded test result but does not establish receiving-system acceptance or recurring operation.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not infer accepted service or campus-wide output from utility territory, an agreement, construction status, or one facility claim."
+      ],
+      "gate_id": "63-GATE-TSMC-ARIZONA",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-22",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "signal_ids": [
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-phoenix-tsmc-fab3-topping-out",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ],
+      "evidence_gap_ids": [
+        "gap-001",
+        "gap-002",
+        "gap-003"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-001-tsmc-arizona",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-001-tsmc-arizona",
+      "qualification_playbook_id": "briefing-qualification-playbook-001-tsmc-arizona",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-chips-compute-research-to-fab",
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-002",
+      "slug": "67-qp-002-tsmc-arizona-acceptance",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "file_kind": "local_project",
+      "named_entity": "TSMC Arizona",
+      "short_name": "TSMC Arizona",
+      "geography": "Phoenix, Arizona",
+      "stage_id": "66-STAGE-02-ACCEPTANCE",
+      "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+      "stage_label": "Acceptance",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a named receiving authority or customer accept the defined asset, service, product, cutover, occupancy, or operating condition?",
+      "current_basis": "No selected event establishes accepted service, customer acceptance, or accepted product.",
+      "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. Facility-specific inspection, utility acceptance, equipment or product qualification, customer acceptance, and a compatible repeat production series.",
+      "recognized_authorities": [
+        "City of Phoenix",
+        "Serving electric or water utility",
+        "Named facility inspector or regulator",
+        "TSMC or a named customer"
+      ],
+      "entity_scope": "The named TSMC Arizona facility or campus component identified by the artifact; evidence from Intel, ASML, suppliers, or regional programs does not transfer.",
+      "admissible_artifact_types": [
+        "Signed acceptance or closeout",
+        "Occupancy or operating authorization",
+        "Accepted cutover record",
+        "Customer receipt or qualified-product acceptance",
+        "Receiving-authority decision"
+      ],
+      "temporal_requirement": "The acceptance date, effective date, accepted configuration, and any conditions must be explicit.",
+      "method_requirement": "The named receiver, acceptance criterion, accepted scope, conditions, exceptions, and sign-off authority must be inspectable.",
+      "denominator_requirement": "The accepted asset, service scope, units, locations, configuration, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Conditional acceptance, punch-list items, exceptions, rollback conditions, and later corrections must be preserved.",
+      "recurrence_requirement": "One accepted event establishes only that bounded acceptance and does not establish persistent service or output.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not infer accepted service or campus-wide output from utility territory, an agreement, construction status, or one facility claim."
+      ],
+      "gate_id": "63-GATE-TSMC-ARIZONA",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-22",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "signal_ids": [
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-phoenix-tsmc-fab3-topping-out",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ],
+      "evidence_gap_ids": [
+        "gap-001",
+        "gap-002",
+        "gap-003"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-001-tsmc-arizona",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-001-tsmc-arizona",
+      "qualification_playbook_id": "briefing-qualification-playbook-001-tsmc-arizona",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-chips-compute-research-to-fab",
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-003",
+      "slug": "67-qp-003-tsmc-arizona-recurring-operation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "file_kind": "local_project",
+      "named_entity": "TSMC Arizona",
+      "short_name": "TSMC Arizona",
+      "geography": "Phoenix, Arizona",
+      "stage_id": "66-STAGE-03-REPEAT",
+      "phase64_stage_id": "64-STAGE-07-REPEAT",
+      "stage_label": "Recurring operation",
+      "current_decision_state": "Partial / Held",
+      "packet_state": "Awaiting Completion Artifact",
+      "claim_question": "Does the record establish compatible repeated service, output, use, monitoring, shipment, or operation for the same entity?",
+      "current_basis": "A bounded Fab 1 volume-production claim exists without a compatible recurring facility series.",
+      "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. Facility-specific inspection, utility acceptance, equipment or product qualification, customer acceptance, and a compatible repeat production series.",
+      "recognized_authorities": [
+        "City of Phoenix",
+        "Serving electric or water utility",
+        "Named facility inspector or regulator",
+        "TSMC or a named customer"
+      ],
+      "entity_scope": "The named TSMC Arizona facility or campus component identified by the artifact; evidence from Intel, ASML, suppliers, or regional programs does not transfer.",
+      "admissible_artifact_types": [
+        "Compatible operating series",
+        "Repeated service or shipment records",
+        "Recurring monitoring series",
+        "Repeated accepted output",
+        "Named reliability or utilization series"
+      ],
+      "temporal_requirement": "Multiple named periods or observations must be present with stable entity and scope; a one-time event is insufficient.",
+      "method_requirement": "Definitions, collection method, frequency, revision policy, and treatment of missing periods must remain compatible.",
+      "denominator_requirement": "The service population, exposure, asset count, capacity, output unit, or explicit not-applicable basis must remain stable or be reconciled.",
+      "exception_requirement": "Outages, failed runs, rejected lots, service interruptions, revisions, and missing observations must be disclosed.",
+      "recurrence_requirement": "The packet must explain why the number and spacing of observations establish recurrence for this entity without applying a universal threshold.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not infer accepted service or campus-wide output from utility territory, an agreement, construction status, or one facility claim."
+      ],
+      "gate_id": "63-GATE-TSMC-ARIZONA",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-22",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "signal_ids": [
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-phoenix-tsmc-fab3-topping-out",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ],
+      "evidence_gap_ids": [
+        "gap-001",
+        "gap-002",
+        "gap-003"
+      ],
+      "supporting_phase65_record_ids": [
+        "research-doc-phase65-001"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-001-tsmc-arizona",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-001-tsmc-arizona",
+      "qualification_playbook_id": "briefing-qualification-playbook-001-tsmc-arizona",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-chips-compute-research-to-fab",
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-004",
+      "slug": "67-qp-004-tsmc-arizona-comparable-outcome",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "file_kind": "local_project",
+      "named_entity": "TSMC Arizona",
+      "short_name": "TSMC Arizona",
+      "geography": "Phoenix, Arizona",
+      "stage_id": "66-STAGE-04-OUTCOME",
+      "phase64_stage_id": "64-STAGE-08-OUTCOME",
+      "stage_label": "Comparable outcome",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a repeated series preserve entity, period, definition, method, denominator, and receiving-system acceptance well enough to support an outcome claim?",
+      "current_basis": "Stable facility-level output, workforce, water, reliability, cost, and compliance outcomes are not established.",
+      "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. Facility-specific inspection, utility acceptance, equipment or product qualification, customer acceptance, and a compatible repeat production series.",
+      "recognized_authorities": [
+        "City of Phoenix",
+        "Serving electric or water utility",
+        "Named facility inspector or regulator",
+        "TSMC or a named customer"
+      ],
+      "entity_scope": "The named TSMC Arizona facility or campus component identified by the artifact; evidence from Intel, ASML, suppliers, or regional programs does not transfer.",
+      "admissible_artifact_types": [
+        "Compatible longitudinal outcome series",
+        "Accepted performance series",
+        "Stable service-quality series",
+        "Repeated compliance or reliability outcome",
+        "Cohort outcome with explicit denominator"
+      ],
+      "temporal_requirement": "A compatible multi-period series must preserve period definitions, breaks, revisions, and the accepted operating state.",
+      "method_requirement": "Measure definition, collection method, attribution boundary, comparability test, and alternative explanations must be inspectable.",
+      "denominator_requirement": "Entity, cohort, exposure, capacity, asset, output, customer, or other denominator must be stable or fully reconciled across periods.",
+      "exception_requirement": "Breaks, missing periods, scope changes, failures, corrections, revisions, and adverse observations must remain visible.",
+      "recurrence_requirement": "The series must establish accepted repeated operation before supporting a bounded outcome; activity volume alone is insufficient.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not infer accepted service or campus-wide output from utility territory, an agreement, construction status, or one facility claim."
+      ],
+      "gate_id": "63-GATE-TSMC-ARIZONA",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-22",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "signal_ids": [
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-phoenix-tsmc-fab3-topping-out",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ],
+      "evidence_gap_ids": [
+        "gap-001",
+        "gap-002",
+        "gap-003"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-001-tsmc-arizona",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-001-tsmc-arizona",
+      "qualification_playbook_id": "briefing-qualification-playbook-001-tsmc-arizona",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-chips-compute-research-to-fab",
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-005",
+      "slug": "67-qp-005-toronto-24-254930-validation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "file_kind": "local_project",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "short_name": "Toronto 24 254930",
+      "geography": "Toronto, Ontario",
+      "stage_id": "66-STAGE-01-VALIDATION",
+      "phase64_stage_id": "64-STAGE-05-VALIDATION",
+      "stage_label": "Validation",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a same-entity record document the named inspection, test, compliance check, qualification, result, exception, correction, or retest?",
+      "current_basis": "Accepted wind, land-exchange, laneway, servicing, inspection, and condition-compliance records remain open.",
+      "exact_qualifying_artifact": "A same-entity enacted amendment numbers or accepted condition compliance followed by a project-specific building permit, start, completion, and occupancy record.",
+      "recognized_authorities": [
+        "City of Toronto clerk or planning authority",
+        "City building or permitting authority",
+        "Named condition-acceptance authority"
+      ],
+      "entity_scope": "Application 24 254930 at Victoria Park Avenue and Thora Avenue; citywide pipelines, permits, starts, completions, and occupancy totals remain context only.",
+      "admissible_artifact_types": [
+        "Named inspection report",
+        "Test or qualification result",
+        "Compliance measurement",
+        "Exception and correction record",
+        "Retest or independent verification"
+      ],
+      "temporal_requirement": "The artifact must state the inspection, test, measurement, or review date and the version, facility, system, or lot tested.",
+      "method_requirement": "The test method, acceptance criterion, observed result, exceptions, and disposition must be inspectable.",
+      "denominator_requirement": "The tested population, component set, lot, run, requirement set, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Failures, exceptions, deviations, corrections, and retests must be present or explicitly reported as none.",
+      "recurrence_requirement": "A validation packet may establish a bounded test result but does not establish receiving-system acceptance or recurring operation.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat Council adoption as enactment or use aggregate Toronto and CMHC stages as this project's delivery outcome."
+      ],
+      "gate_id": "63-GATE-TORONTO-24-254930",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-09",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+      ],
+      "evidence_gap_ids": [
+        "gap-004",
+        "gap-005"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-002-toronto-24-254930",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-002-toronto-24-254930",
+      "qualification_playbook_id": "briefing-qualification-playbook-002-toronto-24-254930",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-local-authorization-is-not-operation",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-006",
+      "slug": "67-qp-006-toronto-24-254930-acceptance",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "file_kind": "local_project",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "short_name": "Toronto 24 254930",
+      "geography": "Toronto, Ontario",
+      "stage_id": "66-STAGE-02-ACCEPTANCE",
+      "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+      "stage_label": "Acceptance",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a named receiving authority or customer accept the defined asset, service, product, cutover, occupancy, or operating condition?",
+      "current_basis": "No permit, completion, occupancy, or other receiving-authority acceptance is established.",
+      "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. Enacted amendment numbers or accepted condition compliance followed by a project-specific building permit, start, completion, and occupancy record.",
+      "recognized_authorities": [
+        "City of Toronto clerk or planning authority",
+        "City building or permitting authority",
+        "Named condition-acceptance authority"
+      ],
+      "entity_scope": "Application 24 254930 at Victoria Park Avenue and Thora Avenue; citywide pipelines, permits, starts, completions, and occupancy totals remain context only.",
+      "admissible_artifact_types": [
+        "Signed acceptance or closeout",
+        "Occupancy or operating authorization",
+        "Accepted cutover record",
+        "Customer receipt or qualified-product acceptance",
+        "Receiving-authority decision"
+      ],
+      "temporal_requirement": "The acceptance date, effective date, accepted configuration, and any conditions must be explicit.",
+      "method_requirement": "The named receiver, acceptance criterion, accepted scope, conditions, exceptions, and sign-off authority must be inspectable.",
+      "denominator_requirement": "The accepted asset, service scope, units, locations, configuration, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Conditional acceptance, punch-list items, exceptions, rollback conditions, and later corrections must be preserved.",
+      "recurrence_requirement": "One accepted event establishes only that bounded acceptance and does not establish persistent service or output.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat Council adoption as enactment or use aggregate Toronto and CMHC stages as this project's delivery outcome."
+      ],
+      "gate_id": "63-GATE-TORONTO-24-254930",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-09",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+      ],
+      "evidence_gap_ids": [
+        "gap-004",
+        "gap-005"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-002-toronto-24-254930",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-002-toronto-24-254930",
+      "qualification_playbook_id": "briefing-qualification-playbook-002-toronto-24-254930",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-local-authorization-is-not-operation",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-007",
+      "slug": "67-qp-007-toronto-24-254930-recurring-operation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "file_kind": "local_project",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "short_name": "Toronto 24 254930",
+      "geography": "Toronto, Ontario",
+      "stage_id": "66-STAGE-03-REPEAT",
+      "phase64_stage_id": "64-STAGE-07-REPEAT",
+      "stage_label": "Recurring operation",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does the record establish compatible repeated service, output, use, monitoring, shipment, or operation for the same entity?",
+      "current_basis": "Recurring project operation is outside the established evidence stage.",
+      "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. Enacted amendment numbers or accepted condition compliance followed by a project-specific building permit, start, completion, and occupancy record.",
+      "recognized_authorities": [
+        "City of Toronto clerk or planning authority",
+        "City building or permitting authority",
+        "Named condition-acceptance authority"
+      ],
+      "entity_scope": "Application 24 254930 at Victoria Park Avenue and Thora Avenue; citywide pipelines, permits, starts, completions, and occupancy totals remain context only.",
+      "admissible_artifact_types": [
+        "Compatible operating series",
+        "Repeated service or shipment records",
+        "Recurring monitoring series",
+        "Repeated accepted output",
+        "Named reliability or utilization series"
+      ],
+      "temporal_requirement": "Multiple named periods or observations must be present with stable entity and scope; a one-time event is insufficient.",
+      "method_requirement": "Definitions, collection method, frequency, revision policy, and treatment of missing periods must remain compatible.",
+      "denominator_requirement": "The service population, exposure, asset count, capacity, output unit, or explicit not-applicable basis must remain stable or be reconciled.",
+      "exception_requirement": "Outages, failed runs, rejected lots, service interruptions, revisions, and missing observations must be disclosed.",
+      "recurrence_requirement": "The packet must explain why the number and spacing of observations establish recurrence for this entity without applying a universal threshold.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat Council adoption as enactment or use aggregate Toronto and CMHC stages as this project's delivery outcome."
+      ],
+      "gate_id": "63-GATE-TORONTO-24-254930",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-09",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+      ],
+      "evidence_gap_ids": [
+        "gap-004",
+        "gap-005"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-002-toronto-24-254930",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-002-toronto-24-254930",
+      "qualification_playbook_id": "briefing-qualification-playbook-002-toronto-24-254930",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-local-authorization-is-not-operation",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-008",
+      "slug": "67-qp-008-toronto-24-254930-comparable-outcome",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "file_kind": "local_project",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "short_name": "Toronto 24 254930",
+      "geography": "Toronto, Ontario",
+      "stage_id": "66-STAGE-04-OUTCOME",
+      "phase64_stage_id": "64-STAGE-08-OUTCOME",
+      "stage_label": "Comparable outcome",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a repeated series preserve entity, period, definition, method, denominator, and receiving-system acceptance well enough to support an outcome claim?",
+      "current_basis": "No stable project-level housing delivery or occupancy outcome series is established.",
+      "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. Enacted amendment numbers or accepted condition compliance followed by a project-specific building permit, start, completion, and occupancy record.",
+      "recognized_authorities": [
+        "City of Toronto clerk or planning authority",
+        "City building or permitting authority",
+        "Named condition-acceptance authority"
+      ],
+      "entity_scope": "Application 24 254930 at Victoria Park Avenue and Thora Avenue; citywide pipelines, permits, starts, completions, and occupancy totals remain context only.",
+      "admissible_artifact_types": [
+        "Compatible longitudinal outcome series",
+        "Accepted performance series",
+        "Stable service-quality series",
+        "Repeated compliance or reliability outcome",
+        "Cohort outcome with explicit denominator"
+      ],
+      "temporal_requirement": "A compatible multi-period series must preserve period definitions, breaks, revisions, and the accepted operating state.",
+      "method_requirement": "Measure definition, collection method, attribution boundary, comparability test, and alternative explanations must be inspectable.",
+      "denominator_requirement": "Entity, cohort, exposure, capacity, asset, output, customer, or other denominator must be stable or fully reconciled across periods.",
+      "exception_requirement": "Breaks, missing periods, scope changes, failures, corrections, revisions, and adverse observations must remain visible.",
+      "recurrence_requirement": "The series must establish accepted repeated operation before supporting a bounded outcome; activity volume alone is insufficient.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat Council adoption as enactment or use aggregate Toronto and CMHC stages as this project's delivery outcome."
+      ],
+      "gate_id": "63-GATE-TORONTO-24-254930",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-09",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+      ],
+      "evidence_gap_ids": [
+        "gap-004",
+        "gap-005"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-002-toronto-24-254930",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-002-toronto-24-254930",
+      "qualification_playbook_id": "briefing-qualification-playbook-002-toronto-24-254930",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-local-authorization-is-not-operation",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-009",
+      "slug": "67-qp-009-northern-virginia-large-load-validation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "file_kind": "local_project",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "short_name": "Northern Virginia large load",
+      "geography": "Northern Virginia",
+      "stage_id": "66-STAGE-01-VALIDATION",
+      "phase64_stage_id": "64-STAGE-05-VALIDATION",
+      "stage_label": "Validation",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a same-entity record document the named inspection, test, compliance check, qualification, result, exception, correction, or retest?",
+      "current_basis": "Inspection, energization tests, and accepted compliance are not established.",
+      "exact_qualifying_artifact": "A same-entity final route and land rights followed by construction, inspection, energization, a named gs-5 service agreement, metered operation, and compatible reliability.",
+      "recognized_authorities": [
+        "Virginia State Corporation Commission",
+        "Dominion Energy",
+        "Named county land-use authority",
+        "Named GS-5 customer or receiving system"
+      ],
+      "entity_scope": "The Golden-Mars transmission project, Dominion GS-5 receiving class, or an explicitly joined named customer; regional forecasts and unrelated projects do not transfer.",
+      "admissible_artifact_types": [
+        "Named inspection report",
+        "Test or qualification result",
+        "Compliance measurement",
+        "Exception and correction record",
+        "Retest or independent verification"
+      ],
+      "temporal_requirement": "The artifact must state the inspection, test, measurement, or review date and the version, facility, system, or lot tested.",
+      "method_requirement": "The test method, acceptance criterion, observed result, exceptions, and disposition must be inspectable.",
+      "denominator_requirement": "The tested population, component set, lot, run, requirement set, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Failures, exceptions, deviations, corrections, and retests must be present or explicitly reported as none.",
+      "recurrence_requirement": "A validation packet may establish a bounded test result but does not establish receiving-system acceptance or recurring operation.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not convert a forecast, rate class, application, or conditional approval into available capacity or accepted customer service."
+      ],
+      "gate_id": "63-GATE-NOVA-LARGE-LOAD",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-10-01",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "signal_ids": [
+        "signal-virginia-data-center-air-permit-trail",
+        "signal-virginia-gs5-large-load-rate-class"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-011"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-003-northern-virginia-large-load",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-003-northern-virginia-large-load",
+      "qualification_playbook_id": "briefing-qualification-playbook-003-northern-virginia-large-load",
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-010",
+      "slug": "67-qp-010-northern-virginia-large-load-acceptance",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "file_kind": "local_project",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "short_name": "Northern Virginia large load",
+      "geography": "Northern Virginia",
+      "stage_id": "66-STAGE-02-ACCEPTANCE",
+      "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+      "stage_label": "Acceptance",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a named receiving authority or customer accept the defined asset, service, product, cutover, occupancy, or operating condition?",
+      "current_basis": "Available capacity and accepted named-customer service are not established.",
+      "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. Final route and land rights followed by construction, inspection, energization, a named GS-5 service agreement, metered operation, and compatible reliability.",
+      "recognized_authorities": [
+        "Virginia State Corporation Commission",
+        "Dominion Energy",
+        "Named county land-use authority",
+        "Named GS-5 customer or receiving system"
+      ],
+      "entity_scope": "The Golden-Mars transmission project, Dominion GS-5 receiving class, or an explicitly joined named customer; regional forecasts and unrelated projects do not transfer.",
+      "admissible_artifact_types": [
+        "Signed acceptance or closeout",
+        "Occupancy or operating authorization",
+        "Accepted cutover record",
+        "Customer receipt or qualified-product acceptance",
+        "Receiving-authority decision"
+      ],
+      "temporal_requirement": "The acceptance date, effective date, accepted configuration, and any conditions must be explicit.",
+      "method_requirement": "The named receiver, acceptance criterion, accepted scope, conditions, exceptions, and sign-off authority must be inspectable.",
+      "denominator_requirement": "The accepted asset, service scope, units, locations, configuration, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Conditional acceptance, punch-list items, exceptions, rollback conditions, and later corrections must be preserved.",
+      "recurrence_requirement": "One accepted event establishes only that bounded acceptance and does not establish persistent service or output.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not convert a forecast, rate class, application, or conditional approval into available capacity or accepted customer service."
+      ],
+      "gate_id": "63-GATE-NOVA-LARGE-LOAD",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-10-01",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "signal_ids": [
+        "signal-virginia-data-center-air-permit-trail",
+        "signal-virginia-gs5-large-load-rate-class"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-011"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-003-northern-virginia-large-load",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-003-northern-virginia-large-load",
+      "qualification_playbook_id": "briefing-qualification-playbook-003-northern-virginia-large-load",
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-011",
+      "slug": "67-qp-011-northern-virginia-large-load-recurring-operation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "file_kind": "local_project",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "short_name": "Northern Virginia large load",
+      "geography": "Northern Virginia",
+      "stage_id": "66-STAGE-03-REPEAT",
+      "phase64_stage_id": "64-STAGE-07-REPEAT",
+      "stage_label": "Recurring operation",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does the record establish compatible repeated service, output, use, monitoring, shipment, or operation for the same entity?",
+      "current_basis": "Recurring metered service and reliability are not established.",
+      "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. Final route and land rights followed by construction, inspection, energization, a named GS-5 service agreement, metered operation, and compatible reliability.",
+      "recognized_authorities": [
+        "Virginia State Corporation Commission",
+        "Dominion Energy",
+        "Named county land-use authority",
+        "Named GS-5 customer or receiving system"
+      ],
+      "entity_scope": "The Golden-Mars transmission project, Dominion GS-5 receiving class, or an explicitly joined named customer; regional forecasts and unrelated projects do not transfer.",
+      "admissible_artifact_types": [
+        "Compatible operating series",
+        "Repeated service or shipment records",
+        "Recurring monitoring series",
+        "Repeated accepted output",
+        "Named reliability or utilization series"
+      ],
+      "temporal_requirement": "Multiple named periods or observations must be present with stable entity and scope; a one-time event is insufficient.",
+      "method_requirement": "Definitions, collection method, frequency, revision policy, and treatment of missing periods must remain compatible.",
+      "denominator_requirement": "The service population, exposure, asset count, capacity, output unit, or explicit not-applicable basis must remain stable or be reconciled.",
+      "exception_requirement": "Outages, failed runs, rejected lots, service interruptions, revisions, and missing observations must be disclosed.",
+      "recurrence_requirement": "The packet must explain why the number and spacing of observations establish recurrence for this entity without applying a universal threshold.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not convert a forecast, rate class, application, or conditional approval into available capacity or accepted customer service."
+      ],
+      "gate_id": "63-GATE-NOVA-LARGE-LOAD",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-10-01",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "signal_ids": [
+        "signal-virginia-data-center-air-permit-trail",
+        "signal-virginia-gs5-large-load-rate-class"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-011"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-003-northern-virginia-large-load",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-003-northern-virginia-large-load",
+      "qualification_playbook_id": "briefing-qualification-playbook-003-northern-virginia-large-load",
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-012",
+      "slug": "67-qp-012-northern-virginia-large-load-comparable-outcome",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "file_kind": "local_project",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "short_name": "Northern Virginia large load",
+      "geography": "Northern Virginia",
+      "stage_id": "66-STAGE-04-OUTCOME",
+      "phase64_stage_id": "64-STAGE-08-OUTCOME",
+      "stage_label": "Comparable outcome",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a repeated series preserve entity, period, definition, method, denominator, and receiving-system acceptance well enough to support an outcome claim?",
+      "current_basis": "Stable cost, reliability, permit, and community-effect outcomes are not established.",
+      "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. Final route and land rights followed by construction, inspection, energization, a named GS-5 service agreement, metered operation, and compatible reliability.",
+      "recognized_authorities": [
+        "Virginia State Corporation Commission",
+        "Dominion Energy",
+        "Named county land-use authority",
+        "Named GS-5 customer or receiving system"
+      ],
+      "entity_scope": "The Golden-Mars transmission project, Dominion GS-5 receiving class, or an explicitly joined named customer; regional forecasts and unrelated projects do not transfer.",
+      "admissible_artifact_types": [
+        "Compatible longitudinal outcome series",
+        "Accepted performance series",
+        "Stable service-quality series",
+        "Repeated compliance or reliability outcome",
+        "Cohort outcome with explicit denominator"
+      ],
+      "temporal_requirement": "A compatible multi-period series must preserve period definitions, breaks, revisions, and the accepted operating state.",
+      "method_requirement": "Measure definition, collection method, attribution boundary, comparability test, and alternative explanations must be inspectable.",
+      "denominator_requirement": "Entity, cohort, exposure, capacity, asset, output, customer, or other denominator must be stable or fully reconciled across periods.",
+      "exception_requirement": "Breaks, missing periods, scope changes, failures, corrections, revisions, and adverse observations must remain visible.",
+      "recurrence_requirement": "The series must establish accepted repeated operation before supporting a bounded outcome; activity volume alone is insufficient.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not convert a forecast, rate class, application, or conditional approval into available capacity or accepted customer service."
+      ],
+      "gate_id": "63-GATE-NOVA-LARGE-LOAD",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-10-01",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "signal_ids": [
+        "signal-virginia-data-center-air-permit-trail",
+        "signal-virginia-gs5-large-load-rate-class"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-011"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-003-northern-virginia-large-load",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-003-northern-virginia-large-load",
+      "qualification_playbook_id": "briefing-qualification-playbook-003-northern-virginia-large-load",
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-013",
+      "slug": "67-qp-013-space-coast-authority-validation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "file_kind": "local_project",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "short_name": "Space Coast authority stack",
+      "geography": "Florida Space Coast",
+      "stage_id": "66-STAGE-01-VALIDATION",
+      "phase64_stage_id": "64-STAGE-05-VALIDATION",
+      "stage_label": "Validation",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a same-entity record document the named inspection, test, compliance check, qualification, result, exception, correction, or retest?",
+      "current_basis": "Operator licensing, safety acceptance, and asset acceptance remain open.",
+      "exact_qualifying_artifact": "A same-entity a formal shuttle landing facility licence disposition or site-and-operator-specific asset acceptance, mission use, repeated service, utilization, safety, and reliability record.",
+      "recognized_authorities": [
+        "Federal Aviation Administration",
+        "Space Florida",
+        "NASA or Kennedy Space Center",
+        "Named licensed operator or accepting authority"
+      ],
+      "entity_scope": "The Shuttle Landing Facility, LC-39A, or SLC-40 component named by the artifact; authority for one site does not establish operation at another.",
+      "admissible_artifact_types": [
+        "Named inspection report",
+        "Test or qualification result",
+        "Compliance measurement",
+        "Exception and correction record",
+        "Retest or independent verification"
+      ],
+      "temporal_requirement": "The artifact must state the inspection, test, measurement, or review date and the version, facility, system, or lot tested.",
+      "method_requirement": "The test method, acceptance criterion, observed result, exceptions, and disposition must be inspectable.",
+      "denominator_requirement": "The tested population, component set, lot, run, requirement set, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Failures, exceptions, deviations, corrections, and retests must be present or explicitly reported as none.",
+      "recurrence_requirement": "A validation packet may establish a bounded test result but does not establish receiving-system acceptance or recurring operation.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat environmental review, a site licence, or an infrastructure milestone as operator approval, mission completion, or corridor reliability."
+      ],
+      "gate_id": "63-GATE-SPACE-COAST-AUTHORITY",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-15",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "signal_ids": [
+        "signal-faa-part450-operator-transition",
+        "signal-kennedy-multiuser-master-plan",
+        "signal-ksc-causeway-bridge-operational"
+      ],
+      "evidence_gap_ids": [
+        "gap-013",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-004-space-coast-authority",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-004-space-coast-authority",
+      "qualification_playbook_id": "briefing-qualification-playbook-004-space-coast-authority",
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-014",
+      "slug": "67-qp-014-space-coast-authority-acceptance",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "file_kind": "local_project",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "short_name": "Space Coast authority stack",
+      "geography": "Florida Space Coast",
+      "stage_id": "66-STAGE-02-ACCEPTANCE",
+      "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+      "stage_label": "Acceptance",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a named receiving authority or customer accept the defined asset, service, product, cutover, occupancy, or operating condition?",
+      "current_basis": "No selected event establishes an accepted operator service or mission capability.",
+      "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. A formal Shuttle Landing Facility licence disposition or site-and-operator-specific asset acceptance, mission use, repeated service, utilization, safety, and reliability record.",
+      "recognized_authorities": [
+        "Federal Aviation Administration",
+        "Space Florida",
+        "NASA or Kennedy Space Center",
+        "Named licensed operator or accepting authority"
+      ],
+      "entity_scope": "The Shuttle Landing Facility, LC-39A, or SLC-40 component named by the artifact; authority for one site does not establish operation at another.",
+      "admissible_artifact_types": [
+        "Signed acceptance or closeout",
+        "Occupancy or operating authorization",
+        "Accepted cutover record",
+        "Customer receipt or qualified-product acceptance",
+        "Receiving-authority decision"
+      ],
+      "temporal_requirement": "The acceptance date, effective date, accepted configuration, and any conditions must be explicit.",
+      "method_requirement": "The named receiver, acceptance criterion, accepted scope, conditions, exceptions, and sign-off authority must be inspectable.",
+      "denominator_requirement": "The accepted asset, service scope, units, locations, configuration, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Conditional acceptance, punch-list items, exceptions, rollback conditions, and later corrections must be preserved.",
+      "recurrence_requirement": "One accepted event establishes only that bounded acceptance and does not establish persistent service or output.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat environmental review, a site licence, or an infrastructure milestone as operator approval, mission completion, or corridor reliability."
+      ],
+      "gate_id": "63-GATE-SPACE-COAST-AUTHORITY",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-15",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "signal_ids": [
+        "signal-faa-part450-operator-transition",
+        "signal-kennedy-multiuser-master-plan",
+        "signal-ksc-causeway-bridge-operational"
+      ],
+      "evidence_gap_ids": [
+        "gap-013",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-004-space-coast-authority",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-004-space-coast-authority",
+      "qualification_playbook_id": "briefing-qualification-playbook-004-space-coast-authority",
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-015",
+      "slug": "67-qp-015-space-coast-authority-recurring-operation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "file_kind": "local_project",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "short_name": "Space Coast authority stack",
+      "geography": "Florida Space Coast",
+      "stage_id": "66-STAGE-03-REPEAT",
+      "phase64_stage_id": "64-STAGE-07-REPEAT",
+      "stage_label": "Recurring operation",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does the record establish compatible repeated service, output, use, monitoring, shipment, or operation for the same entity?",
+      "current_basis": "Repeated mission or facility service is not established.",
+      "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. A formal Shuttle Landing Facility licence disposition or site-and-operator-specific asset acceptance, mission use, repeated service, utilization, safety, and reliability record.",
+      "recognized_authorities": [
+        "Federal Aviation Administration",
+        "Space Florida",
+        "NASA or Kennedy Space Center",
+        "Named licensed operator or accepting authority"
+      ],
+      "entity_scope": "The Shuttle Landing Facility, LC-39A, or SLC-40 component named by the artifact; authority for one site does not establish operation at another.",
+      "admissible_artifact_types": [
+        "Compatible operating series",
+        "Repeated service or shipment records",
+        "Recurring monitoring series",
+        "Repeated accepted output",
+        "Named reliability or utilization series"
+      ],
+      "temporal_requirement": "Multiple named periods or observations must be present with stable entity and scope; a one-time event is insufficient.",
+      "method_requirement": "Definitions, collection method, frequency, revision policy, and treatment of missing periods must remain compatible.",
+      "denominator_requirement": "The service population, exposure, asset count, capacity, output unit, or explicit not-applicable basis must remain stable or be reconciled.",
+      "exception_requirement": "Outages, failed runs, rejected lots, service interruptions, revisions, and missing observations must be disclosed.",
+      "recurrence_requirement": "The packet must explain why the number and spacing of observations establish recurrence for this entity without applying a universal threshold.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat environmental review, a site licence, or an infrastructure milestone as operator approval, mission completion, or corridor reliability."
+      ],
+      "gate_id": "63-GATE-SPACE-COAST-AUTHORITY",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-15",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "signal_ids": [
+        "signal-faa-part450-operator-transition",
+        "signal-kennedy-multiuser-master-plan",
+        "signal-ksc-causeway-bridge-operational"
+      ],
+      "evidence_gap_ids": [
+        "gap-013",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-004-space-coast-authority",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-004-space-coast-authority",
+      "qualification_playbook_id": "briefing-qualification-playbook-004-space-coast-authority",
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-016",
+      "slug": "67-qp-016-space-coast-authority-comparable-outcome",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "file_kind": "local_project",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "short_name": "Space Coast authority stack",
+      "geography": "Florida Space Coast",
+      "stage_id": "66-STAGE-04-OUTCOME",
+      "phase64_stage_id": "64-STAGE-08-OUTCOME",
+      "stage_label": "Comparable outcome",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a repeated series preserve entity, period, definition, method, denominator, and receiving-system acceptance well enough to support an outcome claim?",
+      "current_basis": "Compatible utilization, delay, safety, reliability, and local-outcome series are not established.",
+      "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A formal Shuttle Landing Facility licence disposition or site-and-operator-specific asset acceptance, mission use, repeated service, utilization, safety, and reliability record.",
+      "recognized_authorities": [
+        "Federal Aviation Administration",
+        "Space Florida",
+        "NASA or Kennedy Space Center",
+        "Named licensed operator or accepting authority"
+      ],
+      "entity_scope": "The Shuttle Landing Facility, LC-39A, or SLC-40 component named by the artifact; authority for one site does not establish operation at another.",
+      "admissible_artifact_types": [
+        "Compatible longitudinal outcome series",
+        "Accepted performance series",
+        "Stable service-quality series",
+        "Repeated compliance or reliability outcome",
+        "Cohort outcome with explicit denominator"
+      ],
+      "temporal_requirement": "A compatible multi-period series must preserve period definitions, breaks, revisions, and the accepted operating state.",
+      "method_requirement": "Measure definition, collection method, attribution boundary, comparability test, and alternative explanations must be inspectable.",
+      "denominator_requirement": "Entity, cohort, exposure, capacity, asset, output, customer, or other denominator must be stable or fully reconciled across periods.",
+      "exception_requirement": "Breaks, missing periods, scope changes, failures, corrections, revisions, and adverse observations must remain visible.",
+      "recurrence_requirement": "The series must establish accepted repeated operation before supporting a bounded outcome; activity volume alone is insufficient.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat environmental review, a site licence, or an infrastructure milestone as operator approval, mission completion, or corridor reliability."
+      ],
+      "gate_id": "63-GATE-SPACE-COAST-AUTHORITY",
+      "gate_mode": "Dated Check",
+      "next_check_date": "2026-09-15",
+      "reopening_trigger": null,
+      "gate_receipt_state": "Awaiting Dated Check",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "signal_ids": [
+        "signal-faa-part450-operator-transition",
+        "signal-kennedy-multiuser-master-plan",
+        "signal-ksc-causeway-bridge-operational"
+      ],
+      "evidence_gap_ids": [
+        "gap-013",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-004-space-coast-authority",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-004-space-coast-authority",
+      "qualification_playbook_id": "briefing-qualification-playbook-004-space-coast-authority",
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-017",
+      "slug": "67-qp-017-nevada-lithium-validation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "file_kind": "local_project",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "short_name": "Nevada lithium",
+      "geography": "Nevada",
+      "stage_id": "66-STAGE-01-VALIDATION",
+      "phase64_stage_id": "64-STAGE-05-VALIDATION",
+      "stage_label": "Validation",
+      "current_decision_state": "Partial / Held",
+      "packet_state": "Awaiting Completion Artifact",
+      "claim_question": "Does a same-entity record document the named inspection, test, compliance check, qualification, result, exception, correction, or retest?",
+      "current_basis": "The permit defines future inspection, modeling, monitoring, and reporting duties without establishing their satisfaction.",
+      "exact_qualifying_artifact": "A same-entity a named inspection, accepted construction completion, commissioning result, compliant operating measurement, qualified lot, customer receipt, or recurring output series.",
+      "recognized_authorities": [
+        "Bureau of Land Management",
+        "Nevada environmental regulator",
+        "Department of Energy or named lender",
+        "Named operator, qualifier, or customer"
+      ],
+      "entity_scope": "Thacker Pass or Rhyolite Ridge as explicitly identified; a permit, financing record, reserve estimate, or result from the other project does not transfer.",
+      "admissible_artifact_types": [
+        "Named inspection report",
+        "Test or qualification result",
+        "Compliance measurement",
+        "Exception and correction record",
+        "Retest or independent verification"
+      ],
+      "temporal_requirement": "The artifact must state the inspection, test, measurement, or review date and the version, facility, system, or lot tested.",
+      "method_requirement": "The test method, acceptance criterion, observed result, exceptions, and disposition must be inspectable.",
+      "denominator_requirement": "The tested population, component set, lot, run, requirement set, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Failures, exceptions, deviations, corrections, and retests must be present or explicitly reported as none.",
+      "recurrence_requirement": "A validation packet may establish a bounded test result but does not establish receiving-system acceptance or recurring operation.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not convert authorization, a permit, financial close, projected capacity, or reserve context into qualified domestic supply."
+      ],
+      "gate_id": "63-GATE-NEVADA-LITHIUM",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "An official project, regulator, lender, or customer record reaches construction acceptance, commissioning, compliance, qualification, shipment, or recurring output.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "signal_ids": [
+        "signal-thacker-pass-federal-land-authorization",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-thacker-pass-state-environmental-permit-stack",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates"
+      ],
+      "evidence_gap_ids": [
+        "gap-007",
+        "gap-012"
+      ],
+      "supporting_phase65_record_ids": [
+        "research-doc-phase65-040"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-005-nevada-lithium",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-005-nevada-lithium",
+      "qualification_playbook_id": "briefing-qualification-playbook-005-nevada-lithium",
+      "reader_pathway_ids": [
+        "reader-pathway-nevada-lithium-authorization-to-output"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-018",
+      "slug": "67-qp-018-nevada-lithium-acceptance",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "file_kind": "local_project",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "short_name": "Nevada lithium",
+      "geography": "Nevada",
+      "stage_id": "66-STAGE-02-ACCEPTANCE",
+      "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+      "stage_label": "Acceptance",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a named receiving authority or customer accept the defined asset, service, product, cutover, occupancy, or operating condition?",
+      "current_basis": "Commissioning acceptance, qualified material, and customer receipt are not established.",
+      "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. A named inspection, accepted construction completion, commissioning result, compliant operating measurement, qualified lot, customer receipt, or recurring output series.",
+      "recognized_authorities": [
+        "Bureau of Land Management",
+        "Nevada environmental regulator",
+        "Department of Energy or named lender",
+        "Named operator, qualifier, or customer"
+      ],
+      "entity_scope": "Thacker Pass or Rhyolite Ridge as explicitly identified; a permit, financing record, reserve estimate, or result from the other project does not transfer.",
+      "admissible_artifact_types": [
+        "Signed acceptance or closeout",
+        "Occupancy or operating authorization",
+        "Accepted cutover record",
+        "Customer receipt or qualified-product acceptance",
+        "Receiving-authority decision"
+      ],
+      "temporal_requirement": "The acceptance date, effective date, accepted configuration, and any conditions must be explicit.",
+      "method_requirement": "The named receiver, acceptance criterion, accepted scope, conditions, exceptions, and sign-off authority must be inspectable.",
+      "denominator_requirement": "The accepted asset, service scope, units, locations, configuration, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Conditional acceptance, punch-list items, exceptions, rollback conditions, and later corrections must be preserved.",
+      "recurrence_requirement": "One accepted event establishes only that bounded acceptance and does not establish persistent service or output.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not convert authorization, a permit, financial close, projected capacity, or reserve context into qualified domestic supply."
+      ],
+      "gate_id": "63-GATE-NEVADA-LITHIUM",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "An official project, regulator, lender, or customer record reaches construction acceptance, commissioning, compliance, qualification, shipment, or recurring output.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "signal_ids": [
+        "signal-thacker-pass-federal-land-authorization",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-thacker-pass-state-environmental-permit-stack",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates"
+      ],
+      "evidence_gap_ids": [
+        "gap-007",
+        "gap-012"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-005-nevada-lithium",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-005-nevada-lithium",
+      "qualification_playbook_id": "briefing-qualification-playbook-005-nevada-lithium",
+      "reader_pathway_ids": [
+        "reader-pathway-nevada-lithium-authorization-to-output"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-019",
+      "slug": "67-qp-019-nevada-lithium-recurring-operation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "file_kind": "local_project",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "short_name": "Nevada lithium",
+      "geography": "Nevada",
+      "stage_id": "66-STAGE-03-REPEAT",
+      "phase64_stage_id": "64-STAGE-07-REPEAT",
+      "stage_label": "Recurring operation",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does the record establish compatible repeated service, output, use, monitoring, shipment, or operation for the same entity?",
+      "current_basis": "Compatible recurring qualified output or shipment is not established.",
+      "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. A named inspection, accepted construction completion, commissioning result, compliant operating measurement, qualified lot, customer receipt, or recurring output series.",
+      "recognized_authorities": [
+        "Bureau of Land Management",
+        "Nevada environmental regulator",
+        "Department of Energy or named lender",
+        "Named operator, qualifier, or customer"
+      ],
+      "entity_scope": "Thacker Pass or Rhyolite Ridge as explicitly identified; a permit, financing record, reserve estimate, or result from the other project does not transfer.",
+      "admissible_artifact_types": [
+        "Compatible operating series",
+        "Repeated service or shipment records",
+        "Recurring monitoring series",
+        "Repeated accepted output",
+        "Named reliability or utilization series"
+      ],
+      "temporal_requirement": "Multiple named periods or observations must be present with stable entity and scope; a one-time event is insufficient.",
+      "method_requirement": "Definitions, collection method, frequency, revision policy, and treatment of missing periods must remain compatible.",
+      "denominator_requirement": "The service population, exposure, asset count, capacity, output unit, or explicit not-applicable basis must remain stable or be reconciled.",
+      "exception_requirement": "Outages, failed runs, rejected lots, service interruptions, revisions, and missing observations must be disclosed.",
+      "recurrence_requirement": "The packet must explain why the number and spacing of observations establish recurrence for this entity without applying a universal threshold.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not convert authorization, a permit, financial close, projected capacity, or reserve context into qualified domestic supply."
+      ],
+      "gate_id": "63-GATE-NEVADA-LITHIUM",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "An official project, regulator, lender, or customer record reaches construction acceptance, commissioning, compliance, qualification, shipment, or recurring output.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "signal_ids": [
+        "signal-thacker-pass-federal-land-authorization",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-thacker-pass-state-environmental-permit-stack",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates"
+      ],
+      "evidence_gap_ids": [
+        "gap-007",
+        "gap-012"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-005-nevada-lithium",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-005-nevada-lithium",
+      "qualification_playbook_id": "briefing-qualification-playbook-005-nevada-lithium",
+      "reader_pathway_ids": [
+        "reader-pathway-nevada-lithium-authorization-to-output"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-020",
+      "slug": "67-qp-020-nevada-lithium-comparable-outcome",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "file_kind": "local_project",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "short_name": "Nevada lithium",
+      "geography": "Nevada",
+      "stage_id": "66-STAGE-04-OUTCOME",
+      "phase64_stage_id": "64-STAGE-08-OUTCOME",
+      "stage_label": "Comparable outcome",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a repeated series preserve entity, period, definition, method, denominator, and receiving-system acceptance well enough to support an outcome claim?",
+      "current_basis": "Stable output, compliance, water, sales, and receiving-system outcome series are not established.",
+      "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A named inspection, accepted construction completion, commissioning result, compliant operating measurement, qualified lot, customer receipt, or recurring output series.",
+      "recognized_authorities": [
+        "Bureau of Land Management",
+        "Nevada environmental regulator",
+        "Department of Energy or named lender",
+        "Named operator, qualifier, or customer"
+      ],
+      "entity_scope": "Thacker Pass or Rhyolite Ridge as explicitly identified; a permit, financing record, reserve estimate, or result from the other project does not transfer.",
+      "admissible_artifact_types": [
+        "Compatible longitudinal outcome series",
+        "Accepted performance series",
+        "Stable service-quality series",
+        "Repeated compliance or reliability outcome",
+        "Cohort outcome with explicit denominator"
+      ],
+      "temporal_requirement": "A compatible multi-period series must preserve period definitions, breaks, revisions, and the accepted operating state.",
+      "method_requirement": "Measure definition, collection method, attribution boundary, comparability test, and alternative explanations must be inspectable.",
+      "denominator_requirement": "Entity, cohort, exposure, capacity, asset, output, customer, or other denominator must be stable or fully reconciled across periods.",
+      "exception_requirement": "Breaks, missing periods, scope changes, failures, corrections, revisions, and adverse observations must remain visible.",
+      "recurrence_requirement": "The series must establish accepted repeated operation before supporting a bounded outcome; activity volume alone is insufficient.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not convert authorization, a permit, financial close, projected capacity, or reserve context into qualified domestic supply."
+      ],
+      "gate_id": "63-GATE-NEVADA-LITHIUM",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "An official project, regulator, lender, or customer record reaches construction acceptance, commissioning, compliance, qualification, shipment, or recurring output.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "signal_ids": [
+        "signal-thacker-pass-federal-land-authorization",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-thacker-pass-state-environmental-permit-stack",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates"
+      ],
+      "evidence_gap_ids": [
+        "gap-007",
+        "gap-012"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-project-conversion-005-nevada-lithium",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-005-nevada-lithium",
+      "qualification_playbook_id": "briefing-qualification-playbook-005-nevada-lithium",
+      "reader_pathway_ids": [
+        "reader-pathway-nevada-lithium-authorization-to-output"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-021",
+      "slug": "67-qp-021-gsa-pqc-validation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "file_kind": "adoption_case",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "short_name": "GSA post-quantum acquisition",
+      "geography": "United States federal government",
+      "stage_id": "66-STAGE-01-VALIDATION",
+      "phase64_stage_id": "64-STAGE-05-VALIDATION",
+      "stage_label": "Validation",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a same-entity record document the named inspection, test, compliance check, qualification, result, exception, correction, or retest?",
+      "current_basis": "Interoperability, security validation, rollback testing, and corrective action are not established for a named migration.",
+      "exact_qualifying_artifact": "A same-entity a named agency inventory, solicitation, award, interoperability result, tested cutover, receiving-authority acceptance, rollback record, or legacy retirement.",
+      "recognized_authorities": [
+        "General Services Administration",
+        "Named federal procuring agency",
+        "Named system owner or authorizing official",
+        "Named receiving program"
+      ],
+      "entity_scope": "A named federal agency, system, procurement, migration, or retirement action using the GSA channel; standards and buyer guidance alone remain upstream.",
+      "admissible_artifact_types": [
+        "Named inspection report",
+        "Test or qualification result",
+        "Compliance measurement",
+        "Exception and correction record",
+        "Retest or independent verification"
+      ],
+      "temporal_requirement": "The artifact must state the inspection, test, measurement, or review date and the version, facility, system, or lot tested.",
+      "method_requirement": "The test method, acceptance criterion, observed result, exceptions, and disposition must be inspectable.",
+      "denominator_requirement": "The tested population, component set, lot, run, requirement set, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Failures, exceptions, deviations, corrections, and retests must be present or explicitly reported as none.",
+      "recurrence_requirement": "A validation packet may establish a bounded test result but does not establish receiving-system acceptance or recurring operation.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat a buyer's guide, standard, draft credential specification, or deadline as an order or completed migration."
+      ],
+      "gate_id": "63-GATE-GSA-PQC",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "An official agency or GSA record identifies a named PQC procurement or system migration milestone.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-gsa-onegov-ai-procurement-channel",
+        "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+        "signal-sample-007"
+      ],
+      "evidence_gap_ids": [
+        "gap-009",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-adoption-case-001-gsa-pqc",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-006-gsa-pqc",
+      "qualification_playbook_id": "briefing-qualification-playbook-006-gsa-pqc",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-post-quantum-standards-are-not-migration",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-022",
+      "slug": "67-qp-022-gsa-pqc-acceptance",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "file_kind": "adoption_case",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "short_name": "GSA post-quantum acquisition",
+      "geography": "United States federal government",
+      "stage_id": "66-STAGE-02-ACCEPTANCE",
+      "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+      "stage_label": "Acceptance",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a named receiving authority or customer accept the defined asset, service, product, cutover, occupancy, or operating condition?",
+      "current_basis": "Accepted cutover and legacy retirement are not established.",
+      "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. A named agency inventory, solicitation, award, interoperability result, tested cutover, receiving-authority acceptance, rollback record, or legacy retirement.",
+      "recognized_authorities": [
+        "General Services Administration",
+        "Named federal procuring agency",
+        "Named system owner or authorizing official",
+        "Named receiving program"
+      ],
+      "entity_scope": "A named federal agency, system, procurement, migration, or retirement action using the GSA channel; standards and buyer guidance alone remain upstream.",
+      "admissible_artifact_types": [
+        "Signed acceptance or closeout",
+        "Occupancy or operating authorization",
+        "Accepted cutover record",
+        "Customer receipt or qualified-product acceptance",
+        "Receiving-authority decision"
+      ],
+      "temporal_requirement": "The acceptance date, effective date, accepted configuration, and any conditions must be explicit.",
+      "method_requirement": "The named receiver, acceptance criterion, accepted scope, conditions, exceptions, and sign-off authority must be inspectable.",
+      "denominator_requirement": "The accepted asset, service scope, units, locations, configuration, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Conditional acceptance, punch-list items, exceptions, rollback conditions, and later corrections must be preserved.",
+      "recurrence_requirement": "One accepted event establishes only that bounded acceptance and does not establish persistent service or output.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat a buyer's guide, standard, draft credential specification, or deadline as an order or completed migration."
+      ],
+      "gate_id": "63-GATE-GSA-PQC",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "An official agency or GSA record identifies a named PQC procurement or system migration milestone.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-gsa-onegov-ai-procurement-channel",
+        "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+        "signal-sample-007"
+      ],
+      "evidence_gap_ids": [
+        "gap-009",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-adoption-case-001-gsa-pqc",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-006-gsa-pqc",
+      "qualification_playbook_id": "briefing-qualification-playbook-006-gsa-pqc",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-post-quantum-standards-are-not-migration",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-023",
+      "slug": "67-qp-023-gsa-pqc-recurring-operation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "file_kind": "adoption_case",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "short_name": "GSA post-quantum acquisition",
+      "geography": "United States federal government",
+      "stage_id": "66-STAGE-03-REPEAT",
+      "phase64_stage_id": "64-STAGE-07-REPEAT",
+      "stage_label": "Recurring operation",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does the record establish compatible repeated service, output, use, monitoring, shipment, or operation for the same entity?",
+      "current_basis": "Recurring post-cutover operation across a stable system cohort is not established.",
+      "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. A named agency inventory, solicitation, award, interoperability result, tested cutover, receiving-authority acceptance, rollback record, or legacy retirement.",
+      "recognized_authorities": [
+        "General Services Administration",
+        "Named federal procuring agency",
+        "Named system owner or authorizing official",
+        "Named receiving program"
+      ],
+      "entity_scope": "A named federal agency, system, procurement, migration, or retirement action using the GSA channel; standards and buyer guidance alone remain upstream.",
+      "admissible_artifact_types": [
+        "Compatible operating series",
+        "Repeated service or shipment records",
+        "Recurring monitoring series",
+        "Repeated accepted output",
+        "Named reliability or utilization series"
+      ],
+      "temporal_requirement": "Multiple named periods or observations must be present with stable entity and scope; a one-time event is insufficient.",
+      "method_requirement": "Definitions, collection method, frequency, revision policy, and treatment of missing periods must remain compatible.",
+      "denominator_requirement": "The service population, exposure, asset count, capacity, output unit, or explicit not-applicable basis must remain stable or be reconciled.",
+      "exception_requirement": "Outages, failed runs, rejected lots, service interruptions, revisions, and missing observations must be disclosed.",
+      "recurrence_requirement": "The packet must explain why the number and spacing of observations establish recurrence for this entity without applying a universal threshold.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat a buyer's guide, standard, draft credential specification, or deadline as an order or completed migration."
+      ],
+      "gate_id": "63-GATE-GSA-PQC",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "An official agency or GSA record identifies a named PQC procurement or system migration milestone.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-gsa-onegov-ai-procurement-channel",
+        "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+        "signal-sample-007"
+      ],
+      "evidence_gap_ids": [
+        "gap-009",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-adoption-case-001-gsa-pqc",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-006-gsa-pqc",
+      "qualification_playbook_id": "briefing-qualification-playbook-006-gsa-pqc",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-post-quantum-standards-are-not-migration",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-024",
+      "slug": "67-qp-024-gsa-pqc-comparable-outcome",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "file_kind": "adoption_case",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "short_name": "GSA post-quantum acquisition",
+      "geography": "United States federal government",
+      "stage_id": "66-STAGE-04-OUTCOME",
+      "phase64_stage_id": "64-STAGE-08-OUTCOME",
+      "stage_label": "Comparable outcome",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a repeated series preserve entity, period, definition, method, denominator, and receiving-system acceptance well enough to support an outcome claim?",
+      "current_basis": "Comparable migration coverage, incident, cost, and operating outcome evidence is not established.",
+      "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A named agency inventory, solicitation, award, interoperability result, tested cutover, receiving-authority acceptance, rollback record, or legacy retirement.",
+      "recognized_authorities": [
+        "General Services Administration",
+        "Named federal procuring agency",
+        "Named system owner or authorizing official",
+        "Named receiving program"
+      ],
+      "entity_scope": "A named federal agency, system, procurement, migration, or retirement action using the GSA channel; standards and buyer guidance alone remain upstream.",
+      "admissible_artifact_types": [
+        "Compatible longitudinal outcome series",
+        "Accepted performance series",
+        "Stable service-quality series",
+        "Repeated compliance or reliability outcome",
+        "Cohort outcome with explicit denominator"
+      ],
+      "temporal_requirement": "A compatible multi-period series must preserve period definitions, breaks, revisions, and the accepted operating state.",
+      "method_requirement": "Measure definition, collection method, attribution boundary, comparability test, and alternative explanations must be inspectable.",
+      "denominator_requirement": "Entity, cohort, exposure, capacity, asset, output, customer, or other denominator must be stable or fully reconciled across periods.",
+      "exception_requirement": "Breaks, missing periods, scope changes, failures, corrections, revisions, and adverse observations must remain visible.",
+      "recurrence_requirement": "The series must establish accepted repeated operation before supporting a bounded outcome; activity volume alone is insufficient.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat a buyer's guide, standard, draft credential specification, or deadline as an order or completed migration."
+      ],
+      "gate_id": "63-GATE-GSA-PQC",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "An official agency or GSA record identifies a named PQC procurement or system migration milestone.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-gsa-onegov-ai-procurement-channel",
+        "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+        "signal-sample-007"
+      ],
+      "evidence_gap_ids": [
+        "gap-009",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-adoption-case-001-gsa-pqc",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-006-gsa-pqc",
+      "qualification_playbook_id": "briefing-qualification-playbook-006-gsa-pqc",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-post-quantum-standards-are-not-migration",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-025",
+      "slug": "67-qp-025-nist-aria-validation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "file_kind": "adoption_case",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "short_name": "NIST ARIA",
+      "geography": "United States",
+      "stage_id": "66-STAGE-01-VALIDATION",
+      "phase64_stage_id": "64-STAGE-05-VALIDATION",
+      "stage_label": "Validation",
+      "current_decision_state": "Evidence Present",
+      "packet_state": "Continuity Monitoring",
+      "claim_question": "Does a same-entity record document the named inspection, test, compliance check, qualification, result, exception, correction, or retest?",
+      "current_basis": "ARIA used model testing, red teaming, and field testing in one named evaluation pilot.",
+      "exact_qualifying_artifact": "A same-entity a named system evaluation connected to authorization, deployment monitoring, incidents, corrective action, repeat review, and a stable mission or service measure.",
+      "recognized_authorities": [
+        "National Institute of Standards and Technology",
+        "Named participating institution",
+        "Named system authorizing or oversight authority",
+        "Independent evaluator identified by the program"
+      ],
+      "entity_scope": "The NIST ARIA pilot or a named participating system explicitly tied to the evaluation; general AI inventories, frameworks, and procurement channels do not transfer.",
+      "admissible_artifact_types": [
+        "Named inspection report",
+        "Test or qualification result",
+        "Compliance measurement",
+        "Exception and correction record",
+        "Retest or independent verification"
+      ],
+      "temporal_requirement": "The artifact must state the inspection, test, measurement, or review date and the version, facility, system, or lot tested.",
+      "method_requirement": "The test method, acceptance criterion, observed result, exceptions, and disposition must be inspectable.",
+      "denominator_requirement": "The tested population, component set, lot, run, requirement set, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Failures, exceptions, deviations, corrections, and retests must be present or explicitly reported as none.",
+      "recurrence_requirement": "A validation packet may establish a bounded test result but does not establish receiving-system acceptance or recurring operation.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat an evaluation pilot, framework, inventory, or purchasing channel as assured operation or measured benefit."
+      ],
+      "gate_id": "63-GATE-NIST-ARIA",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "NIST or a participating institution publishes a named system-level assurance, deployment, or outcome artifact.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nist-ai-metrology-method-selection-layer",
+        "signal-nist-ai-rmf-critical-infrastructure-profile-concept"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-014",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [
+        "research-doc-phase65-049"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-002-nist-aria",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-007-nist-aria",
+      "qualification_playbook_id": "briefing-qualification-playbook-007-nist-aria",
+      "reader_pathway_ids": [
+        "reader-pathway-ai-infrastructure-policy-to-assurance",
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-026",
+      "slug": "67-qp-026-nist-aria-acceptance",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "file_kind": "adoption_case",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "short_name": "NIST ARIA",
+      "geography": "United States",
+      "stage_id": "66-STAGE-02-ACCEPTANCE",
+      "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+      "stage_label": "Acceptance",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a named receiving authority or customer accept the defined asset, service, product, cutover, occupancy, or operating condition?",
+      "current_basis": "System authorization and accepted continuous assurance are not established.",
+      "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. A named system evaluation connected to authorization, deployment monitoring, incidents, corrective action, repeat review, and a stable mission or service measure.",
+      "recognized_authorities": [
+        "National Institute of Standards and Technology",
+        "Named participating institution",
+        "Named system authorizing or oversight authority",
+        "Independent evaluator identified by the program"
+      ],
+      "entity_scope": "The NIST ARIA pilot or a named participating system explicitly tied to the evaluation; general AI inventories, frameworks, and procurement channels do not transfer.",
+      "admissible_artifact_types": [
+        "Signed acceptance or closeout",
+        "Occupancy or operating authorization",
+        "Accepted cutover record",
+        "Customer receipt or qualified-product acceptance",
+        "Receiving-authority decision"
+      ],
+      "temporal_requirement": "The acceptance date, effective date, accepted configuration, and any conditions must be explicit.",
+      "method_requirement": "The named receiver, acceptance criterion, accepted scope, conditions, exceptions, and sign-off authority must be inspectable.",
+      "denominator_requirement": "The accepted asset, service scope, units, locations, configuration, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Conditional acceptance, punch-list items, exceptions, rollback conditions, and later corrections must be preserved.",
+      "recurrence_requirement": "One accepted event establishes only that bounded acceptance and does not establish persistent service or output.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat an evaluation pilot, framework, inventory, or purchasing channel as assured operation or measured benefit."
+      ],
+      "gate_id": "63-GATE-NIST-ARIA",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "NIST or a participating institution publishes a named system-level assurance, deployment, or outcome artifact.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nist-ai-metrology-method-selection-layer",
+        "signal-nist-ai-rmf-critical-infrastructure-profile-concept"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-014",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-adoption-case-002-nist-aria",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-007-nist-aria",
+      "qualification_playbook_id": "briefing-qualification-playbook-007-nist-aria",
+      "reader_pathway_ids": [
+        "reader-pathway-ai-infrastructure-policy-to-assurance",
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-027",
+      "slug": "67-qp-027-nist-aria-recurring-operation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "file_kind": "adoption_case",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "short_name": "NIST ARIA",
+      "geography": "United States",
+      "stage_id": "66-STAGE-03-REPEAT",
+      "phase64_stage_id": "64-STAGE-07-REPEAT",
+      "stage_label": "Recurring operation",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does the record establish compatible repeated service, output, use, monitoring, shipment, or operation for the same entity?",
+      "current_basis": "Recurring monitoring, incident, override, correction, and independent-review evidence is not established.",
+      "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. A named system evaluation connected to authorization, deployment monitoring, incidents, corrective action, repeat review, and a stable mission or service measure.",
+      "recognized_authorities": [
+        "National Institute of Standards and Technology",
+        "Named participating institution",
+        "Named system authorizing or oversight authority",
+        "Independent evaluator identified by the program"
+      ],
+      "entity_scope": "The NIST ARIA pilot or a named participating system explicitly tied to the evaluation; general AI inventories, frameworks, and procurement channels do not transfer.",
+      "admissible_artifact_types": [
+        "Compatible operating series",
+        "Repeated service or shipment records",
+        "Recurring monitoring series",
+        "Repeated accepted output",
+        "Named reliability or utilization series"
+      ],
+      "temporal_requirement": "Multiple named periods or observations must be present with stable entity and scope; a one-time event is insufficient.",
+      "method_requirement": "Definitions, collection method, frequency, revision policy, and treatment of missing periods must remain compatible.",
+      "denominator_requirement": "The service population, exposure, asset count, capacity, output unit, or explicit not-applicable basis must remain stable or be reconciled.",
+      "exception_requirement": "Outages, failed runs, rejected lots, service interruptions, revisions, and missing observations must be disclosed.",
+      "recurrence_requirement": "The packet must explain why the number and spacing of observations establish recurrence for this entity without applying a universal threshold.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat an evaluation pilot, framework, inventory, or purchasing channel as assured operation or measured benefit."
+      ],
+      "gate_id": "63-GATE-NIST-ARIA",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "NIST or a participating institution publishes a named system-level assurance, deployment, or outcome artifact.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nist-ai-metrology-method-selection-layer",
+        "signal-nist-ai-rmf-critical-infrastructure-profile-concept"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-014",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-adoption-case-002-nist-aria",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-007-nist-aria",
+      "qualification_playbook_id": "briefing-qualification-playbook-007-nist-aria",
+      "reader_pathway_ids": [
+        "reader-pathway-ai-infrastructure-policy-to-assurance",
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-028",
+      "slug": "67-qp-028-nist-aria-comparable-outcome",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "file_kind": "adoption_case",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "short_name": "NIST ARIA",
+      "geography": "United States",
+      "stage_id": "66-STAGE-04-OUTCOME",
+      "phase64_stage_id": "64-STAGE-08-OUTCOME",
+      "stage_label": "Comparable outcome",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a repeated series preserve entity, period, definition, method, denominator, and receiving-system acceptance well enough to support an outcome claim?",
+      "current_basis": "Stable mission, service, cost, quality, or user outcomes remain absent from the reviewed public layer.",
+      "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A named system evaluation connected to authorization, deployment monitoring, incidents, corrective action, repeat review, and a stable mission or service measure.",
+      "recognized_authorities": [
+        "National Institute of Standards and Technology",
+        "Named participating institution",
+        "Named system authorizing or oversight authority",
+        "Independent evaluator identified by the program"
+      ],
+      "entity_scope": "The NIST ARIA pilot or a named participating system explicitly tied to the evaluation; general AI inventories, frameworks, and procurement channels do not transfer.",
+      "admissible_artifact_types": [
+        "Compatible longitudinal outcome series",
+        "Accepted performance series",
+        "Stable service-quality series",
+        "Repeated compliance or reliability outcome",
+        "Cohort outcome with explicit denominator"
+      ],
+      "temporal_requirement": "A compatible multi-period series must preserve period definitions, breaks, revisions, and the accepted operating state.",
+      "method_requirement": "Measure definition, collection method, attribution boundary, comparability test, and alternative explanations must be inspectable.",
+      "denominator_requirement": "Entity, cohort, exposure, capacity, asset, output, customer, or other denominator must be stable or fully reconciled across periods.",
+      "exception_requirement": "Breaks, missing periods, scope changes, failures, corrections, revisions, and adverse observations must remain visible.",
+      "recurrence_requirement": "The series must establish accepted repeated operation before supporting a bounded outcome; activity volume alone is insufficient.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not treat an evaluation pilot, framework, inventory, or purchasing channel as assured operation or measured benefit."
+      ],
+      "gate_id": "63-GATE-NIST-ARIA",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "NIST or a participating institution publishes a named system-level assurance, deployment, or outcome artifact.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nist-ai-metrology-method-selection-layer",
+        "signal-nist-ai-rmf-critical-infrastructure-profile-concept"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-014",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-adoption-case-002-nist-aria",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-007-nist-aria",
+      "qualification_playbook_id": "briefing-qualification-playbook-007-nist-aria",
+      "reader_pathway_ids": [
+        "reader-pathway-ai-infrastructure-policy-to-assurance",
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-029",
+      "slug": "67-qp-029-waymo-california-validation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "file_kind": "adoption_case",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "short_name": "Waymo California",
+      "geography": "California",
+      "stage_id": "66-STAGE-01-VALIDATION",
+      "phase64_stage_id": "64-STAGE-05-VALIDATION",
+      "stage_label": "Validation",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a same-entity record document the named inspection, test, compliance check, qualification, result, exception, correction, or retest?",
+      "current_basis": "A current comparable operator validation series is not established by the selected events.",
+      "exact_qualifying_artifact": "A same-entity a stable waymo passenger-service series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, cost, and compatible definitions.",
+      "recognized_authorities": [
+        "California Public Utilities Commission",
+        "California Department of Motor Vehicles",
+        "National Highway Traffic Safety Administration",
+        "Waymo through an authority-required operator report"
+      ],
+      "entity_scope": "Waymo fared driverless passenger service in California with explicit geography and service scope; other operators, testing-only mileage, and national aggregates do not transfer.",
+      "admissible_artifact_types": [
+        "Named inspection report",
+        "Test or qualification result",
+        "Compliance measurement",
+        "Exception and correction record",
+        "Retest or independent verification"
+      ],
+      "temporal_requirement": "The artifact must state the inspection, test, measurement, or review date and the version, facility, system, or lot tested.",
+      "method_requirement": "The test method, acceptance criterion, observed result, exceptions, and disposition must be inspectable.",
+      "denominator_requirement": "The tested population, component set, lot, run, requirement set, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Failures, exceptions, deviations, corrections, and retests must be present or explicitly reported as none.",
+      "recurrence_requirement": "A validation packet may establish a bounded test result but does not establish receiving-system acceptance or recurring operation.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not convert legal authority, testing miles, or a reporting requirement into persistent service quality, safety, accessibility, or adoption."
+      ],
+      "gate_id": "63-GATE-WAYMO-CALIFORNIA",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "CPUC or another official California authority publishes a current operator-level passenger-service and outcome rollup.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+        "signal-california-av-testing-miles-2024"
+      ],
+      "evidence_gap_ids": [
+        "gap-010",
+        "gap-015",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-adoption-case-003-waymo-california",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-008-waymo-california",
+      "qualification_playbook_id": "briefing-qualification-playbook-008-waymo-california",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-autonomy-rules-are-not-service",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-030",
+      "slug": "67-qp-030-waymo-california-acceptance",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "file_kind": "adoption_case",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "short_name": "Waymo California",
+      "geography": "California",
+      "stage_id": "66-STAGE-02-ACCEPTANCE",
+      "phase64_stage_id": "64-STAGE-06-ACCEPTANCE",
+      "stage_label": "Acceptance",
+      "current_decision_state": "Partial / Held",
+      "packet_state": "Awaiting Completion Artifact",
+      "claim_question": "Does a named receiving authority or customer accept the defined asset, service, product, cutover, occupancy, or operating condition?",
+      "current_basis": "Service authority permits operation but does not establish availability, accessibility, quality, or receiving-system acceptance.",
+      "exact_qualifying_artifact": "A named receiving-authority or customer acceptance record. A stable Waymo passenger-service series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, cost, and compatible definitions.",
+      "recognized_authorities": [
+        "California Public Utilities Commission",
+        "California Department of Motor Vehicles",
+        "National Highway Traffic Safety Administration",
+        "Waymo through an authority-required operator report"
+      ],
+      "entity_scope": "Waymo fared driverless passenger service in California with explicit geography and service scope; other operators, testing-only mileage, and national aggregates do not transfer.",
+      "admissible_artifact_types": [
+        "Signed acceptance or closeout",
+        "Occupancy or operating authorization",
+        "Accepted cutover record",
+        "Customer receipt or qualified-product acceptance",
+        "Receiving-authority decision"
+      ],
+      "temporal_requirement": "The acceptance date, effective date, accepted configuration, and any conditions must be explicit.",
+      "method_requirement": "The named receiver, acceptance criterion, accepted scope, conditions, exceptions, and sign-off authority must be inspectable.",
+      "denominator_requirement": "The accepted asset, service scope, units, locations, configuration, or explicit not-applicable basis must be declared.",
+      "exception_requirement": "Conditional acceptance, punch-list items, exceptions, rollback conditions, and later corrections must be preserved.",
+      "recurrence_requirement": "One accepted event establishes only that bounded acceptance and does not establish persistent service or output.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not convert legal authority, testing miles, or a reporting requirement into persistent service quality, safety, accessibility, or adoption."
+      ],
+      "gate_id": "63-GATE-WAYMO-CALIFORNIA",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "CPUC or another official California authority publishes a current operator-level passenger-service and outcome rollup.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+        "signal-california-av-testing-miles-2024"
+      ],
+      "evidence_gap_ids": [
+        "gap-010",
+        "gap-015",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [
+        "research-doc-phase65-057"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-003-waymo-california",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-008-waymo-california",
+      "qualification_playbook_id": "briefing-qualification-playbook-008-waymo-california",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-autonomy-rules-are-not-service",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-031",
+      "slug": "67-qp-031-waymo-california-recurring-operation",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "file_kind": "adoption_case",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "short_name": "Waymo California",
+      "geography": "California",
+      "stage_id": "66-STAGE-03-REPEAT",
+      "phase64_stage_id": "64-STAGE-07-REPEAT",
+      "stage_label": "Recurring operation",
+      "current_decision_state": "Partial / Held",
+      "packet_state": "Awaiting Completion Artifact",
+      "claim_question": "Does the record establish compatible repeated service, output, use, monitoring, shipment, or operation for the same entity?",
+      "current_basis": "Required reporting creates a recurring evidence rail while one current comparable public rollup remains missing.",
+      "exact_qualifying_artifact": "A compatible repeated-operation record for the same entity. A stable Waymo passenger-service series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, cost, and compatible definitions.",
+      "recognized_authorities": [
+        "California Public Utilities Commission",
+        "California Department of Motor Vehicles",
+        "National Highway Traffic Safety Administration",
+        "Waymo through an authority-required operator report"
+      ],
+      "entity_scope": "Waymo fared driverless passenger service in California with explicit geography and service scope; other operators, testing-only mileage, and national aggregates do not transfer.",
+      "admissible_artifact_types": [
+        "Compatible operating series",
+        "Repeated service or shipment records",
+        "Recurring monitoring series",
+        "Repeated accepted output",
+        "Named reliability or utilization series"
+      ],
+      "temporal_requirement": "Multiple named periods or observations must be present with stable entity and scope; a one-time event is insufficient.",
+      "method_requirement": "Definitions, collection method, frequency, revision policy, and treatment of missing periods must remain compatible.",
+      "denominator_requirement": "The service population, exposure, asset count, capacity, output unit, or explicit not-applicable basis must remain stable or be reconciled.",
+      "exception_requirement": "Outages, failed runs, rejected lots, service interruptions, revisions, and missing observations must be disclosed.",
+      "recurrence_requirement": "The packet must explain why the number and spacing of observations establish recurrence for this entity without applying a universal threshold.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not convert legal authority, testing miles, or a reporting requirement into persistent service quality, safety, accessibility, or adoption."
+      ],
+      "gate_id": "63-GATE-WAYMO-CALIFORNIA",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "CPUC or another official California authority publishes a current operator-level passenger-service and outcome rollup.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+        "signal-california-av-testing-miles-2024"
+      ],
+      "evidence_gap_ids": [
+        "gap-010",
+        "gap-015",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [
+        "research-doc-phase65-058"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-003-waymo-california",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-008-waymo-california",
+      "qualification_playbook_id": "briefing-qualification-playbook-008-waymo-california",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-autonomy-rules-are-not-service",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    },
+    {
+      "packet_id": "67-QP-032",
+      "slug": "67-qp-032-waymo-california-comparable-outcome",
+      "record_kind": "qualification_packet",
+      "record_status": "Published",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "file_kind": "adoption_case",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "short_name": "Waymo California",
+      "geography": "California",
+      "stage_id": "66-STAGE-04-OUTCOME",
+      "phase64_stage_id": "64-STAGE-08-OUTCOME",
+      "stage_label": "Comparable outcome",
+      "current_decision_state": "Not Established",
+      "packet_state": "Awaiting Qualifying Artifact",
+      "claim_question": "Does a repeated series preserve entity, period, definition, method, denominator, and receiving-system acceptance well enough to support an outcome claim?",
+      "current_basis": "Stable service exposure, rides, interventions, safety, accessibility, complaints, cost, and coverage outcomes are not established together.",
+      "exact_qualifying_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A stable Waymo passenger-service series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, cost, and compatible definitions.",
+      "recognized_authorities": [
+        "California Public Utilities Commission",
+        "California Department of Motor Vehicles",
+        "National Highway Traffic Safety Administration",
+        "Waymo through an authority-required operator report"
+      ],
+      "entity_scope": "Waymo fared driverless passenger service in California with explicit geography and service scope; other operators, testing-only mileage, and national aggregates do not transfer.",
+      "admissible_artifact_types": [
+        "Compatible longitudinal outcome series",
+        "Accepted performance series",
+        "Stable service-quality series",
+        "Repeated compliance or reliability outcome",
+        "Cohort outcome with explicit denominator"
+      ],
+      "temporal_requirement": "A compatible multi-period series must preserve period definitions, breaks, revisions, and the accepted operating state.",
+      "method_requirement": "Measure definition, collection method, attribution boundary, comparability test, and alternative explanations must be inspectable.",
+      "denominator_requirement": "Entity, cohort, exposure, capacity, asset, output, customer, or other denominator must be stable or fully reconciled across periods.",
+      "exception_requirement": "Breaks, missing periods, scope changes, failures, corrections, revisions, and adverse observations must remain visible.",
+      "recurrence_requirement": "The series must establish accepted repeated operation before supporting a bounded outcome; activity volume alone is insufficient.",
+      "disqualifiers": [
+        "A record for a different entity, facility, project, operator, geography, or receiving system.",
+        "Authority, planning, commitment, construction, guidance, or availability presented as downstream proof.",
+        "An observation without its date, scope, method, denominator or explicit not-applicable basis, and exception trail.",
+        "Do not convert legal authority, testing miles, or a reporting requirement into persistent service quality, safety, accessibility, or adoption."
+      ],
+      "gate_id": "63-GATE-WAYMO-CALIFORNIA",
+      "gate_mode": "Source Trigger",
+      "next_check_date": null,
+      "reopening_trigger": "CPUC or another official California authority publishes a current operator-level passenger-service and outcome rollup.",
+      "gate_receipt_state": "Awaiting Source-Explicit Trigger",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+        "signal-california-av-testing-miles-2024"
+      ],
+      "evidence_gap_ids": [
+        "gap-010",
+        "gap-015",
+        "gap-016"
+      ],
+      "supporting_phase65_record_ids": [],
+      "canonical_briefing_id": "briefing-adoption-case-003-waymo-california",
+      "acceptance_briefing_id": "briefing-acceptance-dossier-008-waymo-california",
+      "qualification_playbook_id": "briefing-qualification-playbook-008-waymo-california",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-autonomy-rules-are-not-service",
+        "dependency-map-artifact-return-to-reader-state",
+        "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+      ],
+      "required_propagation": [
+        "source_check",
+        "intake_envelope",
+        "identity_verification",
+        "stage_test",
+        "independent_review",
+        "decision_receipt",
+        "signal_decision",
+        "conversion_event_if_same_entity",
+        "gate_decision",
+        "matrix_decision",
+        "canonical_dossier",
+        "acceptance_dossier",
+        "reader_pathways",
+        "dependency_maps",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "receipt_id": null,
+      "decision_date": null,
+      "phase64_cell_change": "none"
+    }
+  ],
+  "last_operated_date": "2026-08-23"
+}

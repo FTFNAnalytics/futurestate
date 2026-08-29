@@ -1,0 +1,61 @@
+---
+id: "signal-nist-piv-pqc-working-drafts"
+title: "NIST PIV working drafts translate PQC policy into credential changes"
+slug: "nist-piv-pqc-working-drafts"
+record_status: "Published"
+summary: "NIST released preliminary working drafts for adding ML-DSA and ML-KEM support to Personal Identity Verification standards through a backward-compatible dual-stack approach, creating a concrete specification artifact upstream of federal credential migration."
+source_ids:
+  - "source-nist-piv-pqc-working-drafts-2026"
+  - "source-white-house-eo-14412-pqc-migration"
+  - "source-omb-m-26-15-pqc-migration"
+published_date: 2026-07-23
+captured_date: 2026-07-23
+primary_topic: "Quantum"
+framework_layers:
+  - "Enabling Infrastructure"
+  - "Human Systems"
+signal_type: "Regulation"
+maturity_level: "Prototype"
+time_horizon: "2-5 Years"
+evidence_quality: "Primary Source"
+verification_status: "Verified Against Primary Source"
+why_it_matters: "Federal PQC migration requires changes to identity credentials, data models, certificate containers, interfaces, products, validation, and agency operations. The working drafts make one part of that implementation stack inspectable."
+dependencies:
+  - "formal NIST draft and final standards"
+  - "vendor implementations"
+  - "cryptographic module validation"
+  - "credential-system testing"
+  - "agency pilots"
+  - "issuance and migration plans"
+constraints:
+  - "Standards"
+  - "Cybersecurity"
+  - "Regulation"
+  - "Supply Chain"
+  - "Labor"
+receiving_systems:
+  - "Federal Personal Identity Verification systems"
+  - "Government credential vendors and integrators"
+evidence_gap_ids:
+  - "gap-009"
+claim_scope: "Specific Source Update"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-07-23
+editorial_notes: "NIST explicitly labels these materials preliminary working drafts, not formal public drafts. Do not describe the proposed dual-stack model as a final requirement or deployed federal capability. Phase 55M publication decision: publish the preliminary specification artifact and update it when NIST advances, revises, or withdraws the drafts."
+---
+
+## What changed
+
+NIST published a working set covering PIV data representation, card command interfaces, and allowed algorithms. The proposed approach retains classical objects while adding references and containers for ML-DSA and ML-KEM.
+
+## Evidence stage
+
+This supports `preliminary specification work`. It does not support `formal standard`, `validated product`, `agency pilot`, `issued credential`, or `completed migration`.
+
+## Why it matters
+
+The record moves the federal PQC trail from executive direction and agency planning requirements into one technical identity-system dependency.
+
+## What to watch next
+
+Follow formal drafts, public comments, final revisions, vendor support, module validation, interoperability testing, agency pilots, procurement, credential issuance, and migration outcomes.

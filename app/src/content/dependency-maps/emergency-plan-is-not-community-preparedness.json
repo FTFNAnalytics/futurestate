@@ -1,0 +1,199 @@
+{
+  "id": "dependency-map-emergency-plan-is-not-community-preparedness",
+  "title": "Emergency Plan Is Not Community Preparedness",
+  "slug": "emergency-plan-is-not-community-preparedness",
+  "summary": "From a written plan through named capacity, accessible warnings, hubs, supplies, people, drills, fallback, correction, and receipt.",
+  "map_type": "Dependency Stack",
+  "record_status": "Published",
+  "primary_topic": "Human Futures",
+  "framework_layers": [
+    "Human Systems",
+    "Enabling Infrastructure",
+    "Frontier Domains"
+  ],
+  "constraint_tags": [
+    "Public Trust",
+    "Infrastructure",
+    "Regulation",
+    "Labor",
+    "Interpretation"
+  ],
+  "map_question": "What records are required before emergency plan is not community preparedness can support a bounded community decision?",
+  "interpretation_boundary": "This map does not establish institution access, community trust, mutual-aid capacity, public knowledge, preparedness, collective recovery, remedy, score, rank, or receipt.",
+  "source_ids": [
+    "source-phoenix-tsmc-july-2026-fab-update",
+    "source-phoenix-tsmc-2026-wastewater-development-agreement",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-toronto-development-pipeline-2025",
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-virginia-scc-golden-mars-2026",
+    "source-faa-shuttle-landing-facility-license",
+    "source-faa-starship-lc39a-final-eis-rod",
+    "source-faa-slc40-final-ea",
+    "source-doe-thacker-pass-loan-2024",
+    "source-ndep-rhyolite-ridge-water-permit-2025",
+    "source-gsa-pqc-buyers-guide-2025",
+    "source-omb-m-26-15-pqc-migration",
+    "source-nist-aria-pilot-evaluation-2025",
+    "source-nist-aria-evaluation-program",
+    "source-55z-nasa-ai-use-cases-2024",
+    "source-cpuc-waymo-al2-disposition-2024",
+    "source-55z-cpuc-av-quarterly-reporting-2026"
+  ],
+  "signal_ids": [
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-phoenix-tsmc-fab3-topping-out",
+    "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-cmhc-june-2026-toronto-construction-stage-baseline",
+    "signal-virginia-data-center-air-permit-trail",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-faa-part450-operator-transition",
+    "signal-kennedy-multiuser-master-plan",
+    "signal-ksc-causeway-bridge-operational",
+    "signal-thacker-pass-federal-land-authorization",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-thacker-pass-state-environmental-permit-stack",
+    "signal-rhyolite-ridge-water-permit-preoperation-gates",
+    "signal-gsa-pqc-procurement-paths",
+    "signal-gsa-onegov-ai-procurement-channel",
+    "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+    "signal-sample-007",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-nist-ai-metrology-method-selection-layer",
+    "signal-nist-ai-rmf-critical-infrastructure-profile-concept",
+    "signal-cpuc-waymo-fared-driverless-expansion-2024",
+    "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+    "signal-california-av-testing-miles-2024"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate",
+    "local-northern-virginia-data-center-corridor",
+    "local-florida-space-coast-launch-corridor",
+    "local-nevada-lithium-processing-corridor"
+  ],
+  "evidence_gap_ids": [
+    "gap-001",
+    "gap-002",
+    "gap-003",
+    "gap-004",
+    "gap-005",
+    "gap-008",
+    "gap-011",
+    "gap-013",
+    "gap-016",
+    "gap-007",
+    "gap-012",
+    "gap-009",
+    "gap-014",
+    "gap-010",
+    "gap-015"
+  ],
+  "nodes": [
+    {
+      "id": "node-household",
+      "label": "Verified Phase 82 household-security chain",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-016",
+      "note": "No qualifying Phase 82 record exists."
+    },
+    {
+      "id": "node-institution",
+      "label": "Institutions, access, public purpose, trust, workforce, assets, and continuity",
+      "node_type": "Constraint",
+      "note": "Presence is not access or trust."
+    },
+    {
+      "id": "node-network",
+      "label": "Civic networks, cooperatives, mutual aid, volunteers, resources, and safeguards",
+      "node_type": "Constraint",
+      "note": "Goodwill and headcounts are not capacity."
+    },
+    {
+      "id": "node-information",
+      "label": "Local media, public records, trusted intermediaries, access, provenance, and correction",
+      "node_type": "Constraint",
+      "note": "Information supply is not public knowledge."
+    },
+    {
+      "id": "node-preparedness",
+      "label": "Hubs, warnings, continuity, people, supplies, drills, fallback, and normalization",
+      "node_type": "Constraint",
+      "note": "A plan is not readiness."
+    },
+    {
+      "id": "node-recovery",
+      "label": "Trauma repair, institutional restoration, reconnection, remedy, and recurrence prevention",
+      "node_type": "Constraint",
+      "note": "Reopening is not collective recovery."
+    },
+    {
+      "id": "node-receipt",
+      "label": "Independent review, challenge, correction, archive, and receipts",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-016",
+      "note": "No Phase 83 receipt exists."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-household",
+      "to": "node-institution",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "The downstream decision remains closed until its predecessor is reviewed and receipted."
+    },
+    {
+      "from": "node-institution",
+      "to": "node-network",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "The downstream decision remains closed until its predecessor is reviewed and receipted."
+    },
+    {
+      "from": "node-network",
+      "to": "node-information",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "The downstream decision remains closed until its predecessor is reviewed and receipted."
+    },
+    {
+      "from": "node-information",
+      "to": "node-preparedness",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "The downstream decision remains closed until its predecessor is reviewed and receipted."
+    },
+    {
+      "from": "node-preparedness",
+      "to": "node-recovery",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "The downstream decision remains closed until its predecessor is reviewed and receipted."
+    },
+    {
+      "from": "node-recovery",
+      "to": "node-receipt",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "The downstream decision remains closed until its predecessor is reviewed and receipted."
+    }
+  ],
+  "what_this_map_supports": [
+    "Separate institution, network, information, preparedness, recovery, and remedy decisions.",
+    "Explicit authority, affected publics, capacity, safeguards, distribution, challenge, and review.",
+    "Public reasoning without community scoring or ranking."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not admit an institution or network, allocate volunteers or funds, classify truth, suppress content, activate an emergency, close or restore an institution, or declare recovery.",
+    "It does not convert presence, participation, volume, consultation, a plan, or reopening into collective resilience.",
+    "It does not create a receipt, score, rank, stage advance, or operating-outcome change."
+  ],
+  "next_records_needed": [
+    "A verified Phase 82 household-security and recovery chain with receipts.",
+    "Separately adopted institution, civic-network, information-integrity, preparedness, trauma-recovery, closure, restoration, and remedy decisions.",
+    "Independent access, capacity, knowledge, recovery, correction, and propagation receipts."
+  ]
+}

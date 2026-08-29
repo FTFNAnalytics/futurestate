@@ -1,0 +1,159 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-69-measurement-observation-break-registry.json";
+
+const specifications = registry.measurement_specifications;
+const cohorts = [...new Set(specifications.map((record) => record.cohort_id))].sort();
+const envelopeBySpec = new Map(registry.observation_intake_envelopes.map((record) => [record.specification_id, record]));
+---
+
+<BaseLayout
+  title="Measurement And Observation Intake Registry | FTFN"
+  description="Thirty-two public measurement specifications, thirty-two empty observation envelopes, and eight prospective series-break registers with zero values."
+>
+  <section class="page-section hero">
+    <div class="hero__copy">
+      <div class="eyebrow">FTFN / Measurement Intake</div>
+      <h1 class="page-title">Thirty-two measurement contracts. Zero values.</h1>
+      <p class="lede">
+        Each specification defines exactly what a future same-entity observation
+        must contain. An empty envelope is not a source check, and a complete
+        payload remains subject to independent review before publication.
+      </p>
+      <div class="meta-row">
+        <MetaPill label="32 specifications" tone="possibility" />
+        <MetaPill label="32 empty envelopes" />
+        <MetaPill label="8 break registers" />
+        <MetaPill label="0 observations" tone="review" />
+        <MetaPill label="0 series points" tone="review" />
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="status-panel">
+      <article class="status-item">
+        <h2>Eighteen required fields</h2>
+        <p>Identity, source, authority, artifact, period, value, units, denominator, method, acceptance, exceptions, revisions, and propagation are mandatory.</p>
+      </article>
+      <article class="status-item">
+        <h2>Ten prospective breaks</h2>
+        <p>Identity, scope, unit, denominator, period, method, authority, revision, exception, and attribution changes stop silent joins.</p>
+      </article>
+      <article class="status-item">
+        <h2>Human review required</h2>
+        <p>A complete intake becomes eligible for review. It cannot create a receipt, series point, cohort admission, or outcome automatically.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section" data-measurement-registry>
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Registry</div>
+        <h2>Search the measurement specifications.</h2>
+      </div>
+      <a class="inline-link" href="/briefings/measurement-dictionary-001/">Read the measurement dictionary</a>
+    </div>
+
+    <form class="filter-panel" id="measurement-filters">
+      <label class="filter-panel__search">
+        Search
+        <input type="search" name="search" placeholder="Entity, cohort, measure or specification" />
+      </label>
+      <label>
+        Cohort
+        <select name="cohort">
+          <option value="">All cohorts</option>
+          {cohorts.map((cohort) => <option value={cohort}>{cohort}</option>)}
+        </select>
+      </label>
+      <button class="filter-panel__reset" type="reset">Reset</button>
+    </form>
+
+    <div class="grid" id="measurement-records">
+      {specifications.map((record) => {
+        const envelope = envelopeBySpec.get(record.specification_id);
+        return (
+          <article
+            class="record-card"
+            data-measurement-record
+            data-cohort={record.cohort_id}
+            data-search={`${record.specification_id} ${record.cohort_id} ${record.named_entity} ${record.measure_label} ${record.numerator_contract} ${record.denominator_contract}`.toLowerCase()}
+          >
+            <div class="meta-row">
+              <MetaPill label={record.specification_id} tone="possibility" />
+              <MetaPill label={record.specification_state} />
+              <MetaPill label={envelope?.envelope_state ?? "Missing envelope"} tone="review" />
+            </div>
+            <h3><a href={`/evidence/measurements/${record.slug}/`}>{record.measure_label}</a></h3>
+            <p>{record.named_entity}</p>
+            <p>{record.numerator_contract} / {record.denominator_contract}</p>
+            <div class="meta-row">
+              <MetaPill label="0 observations" />
+              <MetaPill label="0 series points" />
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Break Registers</div>
+        <h2>Eight cohorts, no admitted series.</h2>
+      </div>
+      <a class="inline-link" href="/briefings/series-break-adjudication-001/">Read the break method</a>
+    </div>
+    <div class="grid">
+      {registry.series_break_registers.map((record) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={record.register_state} tone="review" /></div>
+          <h3>{record.named_entity}</h3>
+          <p>{record.bridge_requirement}</p>
+          <div class="meta-row">
+            <MetaPill label="0 actual breaks" />
+            <MetaPill label="0 bridges" />
+            <MetaPill label="0 admitted series" />
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Public Contract</div>
+      <h2>Inspect the machine-readable empty state.</h2>
+      <p>The export contains specifications, envelopes, and prospective break rules. It contains no observation payload or value.</p>
+    </div>
+    <article class="record-card">
+      <a class="inline-link" href="/data/measurement-specifications.json">Measurement specifications JSON</a>
+    </article>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    const form = document.querySelector('#measurement-filters');
+    const records = [...document.querySelectorAll('[data-measurement-record]')];
+    if (!form) return;
+    const apply = () => {
+      const data = new FormData(form);
+      const search = String(data.get('search') || '').trim().toLowerCase();
+      const cohort = String(data.get('cohort') || '');
+      records.forEach((record) => {
+        record.hidden = Boolean(
+          (search && !record.dataset.search.includes(search)) ||
+          (cohort && record.dataset.cohort !== cohort)
+        );
+      });
+    };
+    form.addEventListener('input', apply);
+    form.addEventListener('change', apply);
+    form.addEventListener('reset', () => requestAnimationFrame(apply));
+  })();
+</script>

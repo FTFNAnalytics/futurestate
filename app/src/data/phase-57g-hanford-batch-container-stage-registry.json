@@ -1,0 +1,299 @@
+{
+  "phase": "57G",
+  "captured_date": "2026-08-03",
+  "registry_type": "DFLAW batch-container lifecycle-stage registry",
+  "stage_count": 14,
+  "observation_count": 9,
+  "identity_schema": [
+    "public_batch_id",
+    "public_container_id",
+    "source_stage_id",
+    "destination_stage_id",
+    "stage_date",
+    "measure",
+    "threshold_operator",
+    "value",
+    "unit",
+    "quality_disposition",
+    "shipment_state",
+    "receipt_state",
+    "acceptance_state",
+    "disposal_state",
+    "source_authority"
+  ],
+  "public_identity_availability": {
+    "batch_ids": 0,
+    "container_ids": 0
+  },
+  "nonconversion_rules": [
+    "Do not multiply a nominal seven-metric-ton filled-container specification by a container count.",
+    "Do not convert gallons of feed or immobilized waste into glass or waste mass without a source method.",
+    "Do not assume that filled, sent, shipped, staged, accepted, and disposed counts cover the same container identities.",
+    "Do not treat an agency milestone as regulator acceptance unless the accepting authority says so."
+  ],
+  "boundary": "Nodes and events define identity, custody, stage, date, operator, and unit. They do not create a synthetic batch lineage, container lineage, mass balance, quality yield, acceptance decision, or steady-state output rate.",
+  "source_ids": [
+    "source-57g-hanford-dflaw-process-animation",
+    "source-57g-hanford-ap106-feed-staging",
+    "source-57c-hanford-20-containers-2025",
+    "source-57e-doe-hanford-acceptable-glass-startup",
+    "source-57f-hanford-wtp-pmm-february-2026",
+    "source-57b-ecology-wtp-byproduct-response-comments",
+    "source-56x-hanford-first-ilaw-disposal-2026",
+    "source-57b-hanford-wtp-project-managers-may-2026",
+    "source-57f-doe-hanford-100k-gallons-may-2026"
+  ],
+  "stages": [
+    {
+      "sequence": 1,
+      "stage_id": "HANFORD-DFLAW-RETRIEVAL",
+      "label": "Tank-waste retrieval and source selection",
+      "object_type": "Process stage",
+      "custodian": "DOE Hanford tank operations",
+      "input_stage_id": null,
+      "output_stage_id": "HANFORD-DFLAW-TSCR",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 2,
+      "stage_id": "HANFORD-DFLAW-TSCR",
+      "label": "Tank-Side Cesium Removal solids and cesium separation",
+      "object_type": "Treatment system",
+      "custodian": "DOE Hanford tank operations",
+      "input_stage_id": "HANFORD-DFLAW-RETRIEVAL",
+      "output_stage_id": "HANFORD-DFLAW-AP106",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 3,
+      "stage_id": "HANFORD-DFLAW-AP106",
+      "label": "Tank AP-106 pretreated-feed staging",
+      "object_type": "Named tank and staging stage",
+      "custodian": "DOE Hanford tank operations",
+      "input_stage_id": "HANFORD-DFLAW-TSCR",
+      "output_stage_id": "HANFORD-DFLAW-222S",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 4,
+      "stage_id": "HANFORD-DFLAW-222S",
+      "label": "222-S Laboratory batch certification",
+      "object_type": "Quality-control stage",
+      "custodian": "DOE Hanford laboratory operations",
+      "input_stage_id": "HANFORD-DFLAW-AP106",
+      "output_stage_id": "HANFORD-DFLAW-TRANSFER",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 5,
+      "stage_id": "HANFORD-DFLAW-TRANSFER",
+      "label": "Underground transfer to the Low-Activity Waste Facility",
+      "object_type": "Transfer stage",
+      "custodian": "DOE Hanford tank operations",
+      "input_stage_id": "HANFORD-DFLAW-222S",
+      "output_stage_id": "HANFORD-LAW-FEED",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 6,
+      "stage_id": "HANFORD-LAW-FEED",
+      "label": "Low-Activity Waste Facility feed receipt",
+      "object_type": "Facility receipt stage",
+      "custodian": "Waste Treatment and Immobilization Plant",
+      "input_stage_id": "HANFORD-DFLAW-TRANSFER",
+      "output_stage_id": "HANFORD-LAW-MELTER-1",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 7,
+      "stage_id": "HANFORD-LAW-MELTER-1",
+      "label": "Low-Activity Waste Facility Melter 1",
+      "object_type": "Named production asset",
+      "custodian": "Waste Treatment and Immobilization Plant",
+      "input_stage_id": "HANFORD-LAW-FEED",
+      "output_stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 8,
+      "stage_id": "HANFORD-LAW-MELTER-2",
+      "label": "Low-Activity Waste Facility Melter 2",
+      "object_type": "Named production asset",
+      "custodian": "Waste Treatment and Immobilization Plant",
+      "input_stage_id": "HANFORD-LAW-FEED",
+      "output_stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 9,
+      "stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "label": "Stainless-steel container fill",
+      "object_type": "Container lifecycle stage",
+      "custodian": "Waste Treatment and Immobilization Plant",
+      "input_stage_id": "HANFORD-LAW-MELTER-1/2",
+      "output_stage_id": "HANFORD-LAW-CONTAINER-HANDLING",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 10,
+      "stage_id": "HANFORD-LAW-CONTAINER-HANDLING",
+      "label": "Lid placement, exterior swab, and quality handling",
+      "object_type": "Container quality stage",
+      "custodian": "Waste Treatment and Immobilization Plant",
+      "input_stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "output_stage_id": "HANFORD-LAW-EXPORT-BAY",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 11,
+      "stage_id": "HANFORD-LAW-EXPORT-BAY",
+      "label": "Low-Activity Waste Facility export bay",
+      "object_type": "Facility handoff stage",
+      "custodian": "Waste Treatment and Immobilization Plant",
+      "input_stage_id": "HANFORD-LAW-CONTAINER-HANDLING",
+      "output_stage_id": "HANFORD-IDF-TRANSPORT",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 12,
+      "stage_id": "HANFORD-IDF-TRANSPORT",
+      "label": "Reusable transport sleeve and shipment to IDF",
+      "object_type": "Shipment stage",
+      "custodian": "DOE Hanford waste operations",
+      "input_stage_id": "HANFORD-LAW-EXPORT-BAY",
+      "output_stage_id": "HANFORD-IDF-STAGING",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 13,
+      "stage_id": "HANFORD-IDF-STAGING",
+      "label": "Integrated Disposal Facility staging pad and receipt",
+      "object_type": "Receipt and staging stage",
+      "custodian": "Integrated Disposal Facility",
+      "input_stage_id": "HANFORD-IDF-TRANSPORT",
+      "output_stage_id": "HANFORD-IDF-DISPOSAL",
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    },
+    {
+      "sequence": 14,
+      "stage_id": "HANFORD-IDF-DISPOSAL",
+      "label": "Integrated Disposal Facility disposal cell",
+      "object_type": "Final disposal stage",
+      "custodian": "Integrated Disposal Facility",
+      "input_stage_id": "HANFORD-IDF-STAGING",
+      "output_stage_id": null,
+      "stable_public_batch_id_available": false,
+      "stable_public_container_id_available": false
+    }
+  ],
+  "observations": [
+    {
+      "event_id": "HANFORD-EVENT-2020-AP106-FEED-MISSION",
+      "observation_date": "2020-02-18",
+      "observation_period": "2020 AP-106 commissioning plan",
+      "stage_id": "HANFORD-DFLAW-AP106",
+      "measure": "AP-106 designated for pretreated-feed staging",
+      "operator": "milestone",
+      "value": null,
+      "unit": null,
+      "source_id": "source-57g-hanford-ap106-feed-staging"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2025-09-20-CONTAINERS",
+      "observation_date": null,
+      "observation_period": "2025 extended hot-commissioning campaign",
+      "stage_id": "HANFORD-LAW-CONTAINER-HANDLING",
+      "measure": "immobilized-waste containers completed",
+      "operator": ">",
+      "value": 20,
+      "unit": "containers",
+      "source_id": "source-57c-hanford-20-containers-2025"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2025-10-ACCEPTABLE-GLASS",
+      "observation_date": null,
+      "observation_period": "2025-10 consent-decree startup window",
+      "stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "measure": "acceptable-quality glass consent-decree startup milestone",
+      "operator": "milestone",
+      "value": null,
+      "unit": null,
+      "source_id": "source-57e-doe-hanford-acceptable-glass-startup"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2026-02-19-SENT",
+      "observation_date": "2026-02-12",
+      "stage_id": "HANFORD-IDF-TRANSPORT",
+      "measure": "vitrified-waste containers sent to IDF",
+      "operator": "=",
+      "value": 19,
+      "unit": "containers",
+      "source_id": "source-57f-hanford-wtp-pmm-february-2026"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2026-02-34-FILLED",
+      "observation_date": null,
+      "observation_period": "2026-02 regulator snapshot",
+      "stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "measure": "containers filled in regulator snapshot",
+      "operator": "=",
+      "value": 34,
+      "unit": "containers",
+      "source_id": "source-57b-ecology-wtp-byproduct-response-comments"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2026-04-FIRST-DISPOSAL",
+      "observation_date": "2026-04-08",
+      "stage_id": "HANFORD-IDF-DISPOSAL",
+      "measure": "first batch permanently disposed",
+      "operator": "milestone",
+      "value": null,
+      "unit": null,
+      "source_id": "source-56x-hanford-first-ilaw-disposal-2026"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2026-04-30-STAGED",
+      "observation_date": "2026-04-08",
+      "stage_id": "HANFORD-IDF-STAGING",
+      "measure": "containers staged at first-disposal event",
+      "operator": "approximately",
+      "value": 30,
+      "unit": "containers",
+      "source_id": "source-56x-hanford-first-ilaw-disposal-2026"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2026-05-66-SHIPPED",
+      "observation_date": null,
+      "observation_period": "2026-05 project-managers meeting",
+      "stage_id": "HANFORD-IDF-TRANSPORT",
+      "measure": "containers shipped to IDF",
+      "operator": "=",
+      "value": 66,
+      "unit": "containers",
+      "source_id": "source-57b-hanford-wtp-project-managers-may-2026"
+    },
+    {
+      "event_id": "HANFORD-EVENT-2026-05-100K-IMMOBILIZED",
+      "observation_date": "2026-05-26",
+      "stage_id": "HANFORD-LAW-CONTAINER-FILL",
+      "measure": "tank-waste volume immobilized since hot commissioning",
+      "operator": ">",
+      "value": 100000,
+      "unit": "gallons",
+      "source_id": "source-57f-doe-hanford-100k-gallons-may-2026"
+    }
+  ]
+}

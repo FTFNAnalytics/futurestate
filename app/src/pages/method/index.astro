@@ -101,10 +101,23 @@ import MetaPill from "../../components/ui/MetaPill.astro";
       becomes available, or local evidence changes the interpretation.
     </p>
     <p>
-      For MVP, material changes are controlled through editorial notes, source
-      checked dates, work packages, and the decision log. A public update history
-      can become a later feature once records are actually published.
+      Material public changes are recorded in the update log as corrections,
+      source refreshes, signal repairs, publication promotions, or archives.
+      Internal work packages and editorial notes retain the deeper review trail.
     </p>
+    <p><a class="inline-link" href="/updates/">Open updates and corrections</a></p>
+
+    <h2>Reusable Public Data</h2>
+    <p>
+      Versioned static JSON exports expose public source and topic metadata plus
+      Published signal metadata. Drafts, review records, editorial notes, and
+      internal automation instructions are not included.
+    </p>
+    <ul>
+      <li><a class="inline-link" href="/data/sources.json">Sources JSON</a></li>
+      <li><a class="inline-link" href="/data/topics.json">Topics JSON</a></li>
+      <li><a class="inline-link" href="/data/signals.json">Published signals JSON</a></li>
+    </ul>
 
     <h2>What FTFN Will Not Do At MVP</h2>
     <ul>

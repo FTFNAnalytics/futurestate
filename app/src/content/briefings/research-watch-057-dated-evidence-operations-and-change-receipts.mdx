@@ -1,0 +1,64 @@
+---
+id: "briefing-research-watch-057-dated-evidence-operations-and-change-receipts"
+title: "Research Watch 057: Dated Evidence Operations and Change Receipts"
+slug: "research-watch-057-dated-evidence-operations-and-change-receipts"
+record_status: "Published"
+summary: "Phase 58 turns ten held result and outcome gates into a dated operating queue, defines four reader-visible receipt types, and publishes a bounded DARPA no-material-change decision without changing the held signal."
+published_date: 2026-08-11
+captured_date: 2026-08-11
+signal_ids:
+  - "signal-darpa-lift-challenge-2026-scheduled-field-trial"
+  - "signal-57y-preserved-amtrak-pids"
+  - "signal-57y-preserved-amtrak-reliability"
+  - "signal-57y-preserved-la-nextlink-adoption"
+  - "signal-57y-preserved-la-starlink-adoption"
+  - "signal-57y-preserved-mt-bead-quarter"
+  - "signal-57y-preserved-hanford-mass-balance"
+  - "signal-57y-preserved-nnsa-qualified-rate"
+  - "signal-57y-preserved-nnsa-accepted-capacity"
+  - "signal-57y-preserved-nnsa-gao-baseline"
+evidence_gap_ids:
+  - "gap-004"
+  - "gap-005"
+  - "gap-008"
+  - "gap-015"
+  - "gap-016"
+claim_scope: "Editorial Synthesis"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-08-11
+top_takeaways:
+  - "Every held result or outcome gate now has an exact next artifact, a last checked date, a review cadence, a next check date, and a stop rule."
+  - "Change Note, Watch Note, Correction, and No Material Change receipts distinguish evidence work from public-record state changes."
+  - "The August 11 DARPA check produces a public no-material-change receipt while the underlying signal remains In Review."
+constraint_watch:
+  - "Data Quality"
+  - "Public Trust"
+  - "Interpretation"
+what_to_watch_next:
+  - "A dated DARPA final-results artifact with measured team performance, winners, and prize decisions"
+  - "The scheduled Amtrak, broadband, Montana, Hanford, and NNSA artifact checks in the public queue"
+  - "A separately authorized private Supabase activation and runtime RLS test before any backend pilot is described as live"
+---
+
+## The operating product
+
+Phase 58 replaces an open-ended “check again” posture with a ten-item queue. Each item names the held signal, controlling source, exact artifact required, bounded finding, stop rule, review cadence, and next check date. The queue is available as a static JSON export so readers can inspect the operating boundary without gaining access to private candidates or review notes.
+
+## The first receipt
+
+The canonical DARPA Lift Challenge page was reviewed on August 11. It links an event guide and scoreboard surface, but the reviewed DARPA page does not publish the final results table, measured scores, winner, or prize decisions required by the signal gate. The result is a **No Material Change** receipt: source freshness advances, the next check moves to August 14, and the signal remains In Review.
+
+This is not a finding that results do not exist. It is a dated decision about the official surfaces reviewed and the evidence they exposed at review time.
+
+## Change products
+
+- A **Change Note** records material evidence that changes a reviewed public record.
+- A **Watch Note** changes the watch posture or next artifact without changing a public record.
+- A **Correction** preserves an inaccurate prior claim and publishes its reviewed replacement.
+- A **No Material Change** receipt records a bounded check that did not satisfy the exact gate.
+
+Every receipt preserves prior state, current state, evidence boundary, publication effect, affected records, and next check date. None can bypass human review, the static serializers, release validation, or Git.
+
+## Private authority boundary
+
+The repository now contains a declarative Supabase authority-loop design with explicit grants, RLS policies, authenticated role claims, and a security-invoker export projection. It is a local foundation, not an activated project. No remote Supabase project, login, link, key, Data API schema, webhook, trigger, function, or direct-publication path has been created.

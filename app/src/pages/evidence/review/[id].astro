@@ -1,0 +1,113 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-70-observation-review-series-admission-registry.json";
+import measurementRegistry from "../../../data/phase-69-measurement-observation-break-registry.json";
+import outcomeRegistry from "../../../data/phase-71-longitudinal-panel-outcome-comparison-registry.json";
+
+export function getStaticPaths() {
+  return [
+    ...registry.observation_review_dockets.map((record) => ({ params: { id: record.slug }, props: { record, kind: "review" } })),
+    ...registry.series_admission_dockets.map((record) => ({ params: { id: record.slug }, props: { record, kind: "admission" } }))
+  ];
+}
+
+const { record, kind } = Astro.props as { record: any; kind: "review" | "admission" };
+const isReview = kind === "review";
+const specification = isReview ? measurementRegistry.measurement_specifications.find((item) => item.specification_id === record.specification_id) : null;
+const lineage = isReview ? registry.observation_revision_lineage_registers.find((item) => item.review_docket_id === record.review_docket_id) : null;
+const cohortReviews = !isReview ? registry.observation_review_dockets.filter((item) => item.cohort_id === record.cohort_id) : [];
+const nextPanel = isReview ? outcomeRegistry.longitudinal_panel_shells.find((item) => item.specification_id === record.specification_id) : null;
+const nextOutcome = !isReview ? outcomeRegistry.outcome_claim_dockets.find((item) => item.cohort_id === record.cohort_id) : null;
+const [briefings, dependencyMaps, signals, sources] = await Promise.all([
+  getCollection("briefings"), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")
+]);
+const briefingById = new Map(briefings.map((item) => [item.data.id, item]));
+const mapById = new Map(dependencyMaps.map((item) => [item.data.id, item]));
+const signalById = new Map(signals.map((item) => [item.data.id, item]));
+const sourceById = new Map(sources.map((item) => [item.data.id, item]));
+const title = isReview ? `${record.review_docket_id}: ${record.measure_label}` : `${record.admission_docket_id}: ${record.named_entity}`;
+---
+
+<BaseLayout
+  title={`${title} | FTFN`}
+  description={isReview ? `${record.named_entity}: empty observation-review docket with twelve human review dimensions.` : `${record.named_entity}: not-ready series-admission docket with eight admission gates.`}
+  robots="index, follow"
+>
+  <section class="page-section">
+    <div class="eyebrow">{isReview ? "Observation Review Docket" : "Series Admission Docket"}</div>
+    <h1 class="page-title">{title}</h1>
+    <p class="lede">{record.named_entity}</p>
+    <div class="meta-row">
+      <MetaPill label={isReview ? record.docket_state : record.admission_state} tone="review" />
+      <MetaPill label={record.cohort_id} />
+      <MetaPill label={isReview ? "0 submissions" : "Not Admitted"} tone="review" />
+      <MetaPill label="0 receipts" tone="review" />
+      <MetaPill label="0 series" tone="review" />
+    </div>
+  </section>
+
+  {isReview ? (
+    <>
+      <section class="page-section">
+        <div class="status-panel">
+          <article class="status-item"><h2>Specification</h2><p><a href={`/evidence/measurements/${specification?.slug}/`}>{record.specification_id}</a></p></article>
+          <article class="status-item"><h2>Intake envelope</h2><p>{record.intake_envelope_id}: Empty</p></article>
+          <article class="status-item"><h2>Measure</h2><p>{record.measure_label}</p></article>
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="section-heading"><div><div class="eyebrow">Human Review</div><h2>Twelve decisions remain Not Reviewed.</h2></div></div>
+        <div class="source-list">
+          {record.review_checks.map((check: any) => (
+            <article class="source-row"><h3>{check.label}</h3><p>{check.basis}</p><MetaPill label={check.decision_state} tone="review" /></article>
+          ))}
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="grid">
+          <article class="record-card"><h2>Dual-control state</h2><ul><li>First reviewer: none</li><li>Second reviewer: none</li><li>Conflict or recusal: none</li><li>Adjudication: none</li></ul></article>
+          <article class="record-card"><h2>Receipt and propagation</h2><ul><li>Decision: none</li><li>Receipt type: none</li><li>Receipt ID: none</li><li>Propagation: not started</li></ul></article>
+          <article class="record-card"><h2>Revision lineage</h2><p>{lineage?.lineage_register_id}: Empty.</p><p>0 versions, corrections, supersessions, withdrawals, or published observations.</p></article>
+          <article class="record-card"><h2>Phase 71 destination</h2><p>{nextPanel ? <a href={`/evidence/outcomes/${nextPanel.slug}/`}>{nextPanel.panel_id}: empty longitudinal panel</a> : "No panel contract"}</p></article>
+        </div>
+      </section>
+    </>
+  ) : (
+    <>
+      <section class="page-section">
+        <div class="section-heading"><div><div class="eyebrow">Admission Contract</div><h2>Eight gates before a compatible series.</h2></div></div>
+        <div class="source-list">
+          {record.admission_checks.map((check: any) => (
+            <article class="source-row"><h3>{check.label}</h3><p>{check.basis}</p><MetaPill label={check.decision_state} tone={check.decision_state === "Contract Present" ? "possibility" : "review"} /></article>
+          ))}
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="grid">
+          <article class="record-card"><h2>Connected review dockets</h2><ul>{cohortReviews.map((item) => <li><a href={`/evidence/review/${item.slug}/`}>{item.review_docket_id}: {item.measure_label}</a></li>)}</ul></article>
+          <article class="record-card"><h2>Exact next artifact</h2><p>{record.exact_next_artifact}</p></article>
+          <article class="record-card"><h2>Empty decision state</h2><ul><li>Candidate observations: 0</li><li>Eligible observations: 0</li><li>Proposed series: none</li><li>Reviewers: none</li><li>Receipt: none</li><li>Propagation: not started</li></ul></article>
+          <article class="record-card"><h2>Phase 71 destination</h2><p>{nextOutcome ? <a href={`/evidence/outcomes/${nextOutcome.slug}/`}>{nextOutcome.outcome_claim_docket_id}: outcome adjudication</a> : "No outcome contract"}</p></article>
+        </div>
+      </section>
+    </>
+  )}
+
+  <section class="page-section">
+    <div class="grid">
+      <article class="record-card"><h2>Connected briefings</h2><ul>{[record.canonical_briefing_id, "briefing-observation-review-desk-001", "briefing-series-admission-protocol-001"].map((id: string) => { const briefing = briefingById.get(id); return <li>{briefing ? <a href={`/briefings/${briefing.data.slug}/`}>{briefing.data.title}</a> : id}</li>; })}</ul></article>
+      <article class="record-card"><h2>Connected maps</h2><ul>{["dependency-map-measurement-specification-is-not-evidence", "dependency-map-reviewed-observation-is-not-admitted-series"].map((id: string) => { const map = mapById.get(id); return <li>{map ? <a href={`/atlas/dependency-maps/${map.data.slug}/`}>{map.data.title}</a> : id}</li>; })}</ul></article>
+      <article class="record-card"><h2>Connected evidence</h2><ul>{record.source_ids.map((id: string) => { const source = sourceById.get(id); return <li>{source ? <a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a> : id}</li>; })}{record.signal_ids.map((id: string) => { const signal = signalById.get(id); return <li>{signal ? <a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a> : id}</li>; })}</ul></article>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Boundary</div>
+      <h2>{isReview ? "A review docket is not a reviewed observation." : "An identity contract is not an admitted series."}</h2>
+      <p>No submission, reviewer decision, receipt, revision event, accepted value, series point, score, comparison, or outcome is recorded on this page.</p>
+    </div>
+  </section>
+</BaseLayout>

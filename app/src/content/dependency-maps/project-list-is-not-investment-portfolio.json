@@ -1,0 +1,189 @@
+{
+  "id": "dependency-map-project-list-is-not-investment-portfolio",
+  "title": "A Project List Is Not An Investment Portfolio",
+  "slug": "project-list-is-not-investment-portfolio",
+  "summary": "A path from mission, alternatives, assets, lifecycle duties, membership, dependencies, capacity, distribution, and review to a governed portfolio.",
+  "map_type": "Dependency Stack",
+  "record_status": "Published",
+  "primary_topic": "Human Futures",
+  "framework_layers": [
+    "Human Systems",
+    "Enabling Infrastructure",
+    "Frontier Domains"
+  ],
+  "constraint_tags": [
+    "Public Trust",
+    "Infrastructure",
+    "Regulation",
+    "Labor",
+    "Interpretation"
+  ],
+  "map_question": "What records are required before a project list is not an investment portfolio can support a bounded public-investment decision?",
+  "interpretation_boundary": "This map is a control path. It does not establish a mission, portfolio member, priority, sequence, funding, financing, capacity, transition, rebalancing, public-value result, score, rank, or receipt.",
+  "source_ids": [
+    "source-phoenix-tsmc-july-2026-fab-update",
+    "source-phoenix-tsmc-2026-wastewater-development-agreement",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-toronto-development-pipeline-2025",
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-virginia-scc-golden-mars-2026",
+    "source-faa-shuttle-landing-facility-license",
+    "source-faa-starship-lc39a-final-eis-rod"
+  ],
+  "signal_ids": [
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-phoenix-tsmc-fab3-topping-out",
+    "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-cmhc-june-2026-toronto-construction-stage-baseline",
+    "signal-virginia-data-center-air-permit-trail",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-faa-part450-operator-transition",
+    "signal-kennedy-multiuser-master-plan",
+    "signal-ksc-causeway-bridge-operational",
+    "signal-thacker-pass-federal-land-authorization",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-thacker-pass-state-environmental-permit-stack",
+    "signal-rhyolite-ridge-water-permit-preoperation-gates",
+    "signal-gsa-pqc-procurement-paths",
+    "signal-gsa-onegov-ai-procurement-channel",
+    "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+    "signal-sample-007",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-nist-ai-metrology-method-selection-layer",
+    "signal-nist-ai-rmf-critical-infrastructure-profile-concept",
+    "signal-cpuc-waymo-fared-driverless-expansion-2024",
+    "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+    "signal-california-av-testing-miles-2024"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate",
+    "local-northern-virginia-data-center-corridor",
+    "local-florida-space-coast-launch-corridor",
+    "local-nevada-lithium-processing-corridor"
+  ],
+  "evidence_gap_ids": [
+    "gap-001",
+    "gap-002",
+    "gap-003",
+    "gap-004",
+    "gap-005",
+    "gap-008",
+    "gap-011",
+    "gap-013",
+    "gap-016",
+    "gap-007",
+    "gap-012",
+    "gap-009",
+    "gap-014",
+    "gap-010",
+    "gap-015"
+  ],
+  "nodes": [
+    {
+      "id": "node-stewardship",
+      "label": "Verified Phase 79 stewardship chain",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-016",
+      "note": "No qualifying Phase 79 record exists."
+    },
+    {
+      "id": "node-thesis",
+      "label": "Mission, public need, alternatives, authority, and investment thesis",
+      "node_type": "Constraint",
+      "note": "A project announcement is not a public thesis."
+    },
+    {
+      "id": "node-portfolio",
+      "label": "Membership, dependencies, sequence, funding, financing, and stage gates",
+      "node_type": "Constraint",
+      "note": "Composition requires explicit judgment."
+    },
+    {
+      "id": "node-capacity",
+      "label": "Owner, workforce, suppliers, public options, and delivery capacity",
+      "node_type": "Constraint",
+      "note": "Contracting is not institutional capability."
+    },
+    {
+      "id": "node-place",
+      "label": "Land, water, energy, infrastructure, place, rights, and just transition",
+      "node_type": "Constraint",
+      "note": "Capacity and distribution are place-specific."
+    },
+    {
+      "id": "node-realize",
+      "label": "Stress, off-ramps, rebalancing, accepted outputs, and realized value",
+      "node_type": "Constraint",
+      "note": "Delivery and outcome remain separate."
+    },
+    {
+      "id": "node-receipt",
+      "label": "Independent review, dissent, correction, archive, and receipts",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-016",
+      "note": "No Phase 80 receipt exists."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-stewardship",
+      "to": "node-thesis",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Investment must begin from verified public assets and duties."
+    },
+    {
+      "from": "node-thesis",
+      "to": "node-portfolio",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Membership and sequence follow an admitted thesis."
+    },
+    {
+      "from": "node-portfolio",
+      "to": "node-capacity",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Delivery tests follow a bounded portfolio."
+    },
+    {
+      "from": "node-capacity",
+      "to": "node-place",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Readiness includes local systems and affected publics."
+    },
+    {
+      "from": "node-place",
+      "to": "node-realize",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Stress and realization need verified baselines."
+    },
+    {
+      "from": "node-realize",
+      "to": "node-receipt",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "Every decision needs review and a receipt."
+    }
+  ],
+  "what_this_map_supports": [
+    "Separate mission, membership, sequence, funding, financing, capacity, transition, rebalancing, and realization decisions.",
+    "Explicit dependencies, protected duties, affected publics, options, off-ramps, and review.",
+    "Public reasoning without composite project scoring or ranking."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not select, prioritize, fund, finance, sequence, rebalance, or validate a project or place.",
+    "It does not convert announcements, expenditure, procurement, delivery, or aggregate impact into public value.",
+    "It does not create a receipt, score, rank, stage advance, or operating-outcome change."
+  ],
+  "next_records_needed": [
+    "A verified Phase 79 stewardship chain with receipts.",
+    "Separately authorized thesis, membership, dependency, funding, capacity, resource, transition, stress, and realization records.",
+    "Independent review, dissent, correction, archive, and propagation receipts."
+  ]
+}

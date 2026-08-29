@@ -1,0 +1,53 @@
+{
+  "phase": "56F",
+  "reviewed_date": "2026-07-24",
+  "source_profiles_added": 14,
+  "entity_count": 24,
+  "document_decisions": {
+    "reviewed": 24,
+    "promoted": [
+      "research-doc-56f-nasa-coverage-decision",
+      "research-doc-56f-hhs-coverage-decision",
+      "research-doc-56f-current-applications-coverage-decision",
+      "research-doc-56f-island-components-coverage-decision",
+      "research-doc-56f-monaghan-medical-coverage-decision",
+      "research-doc-56f-moss-landing-coverage-decision",
+      "research-doc-56f-united-airlines-coverage-decision",
+      "research-doc-56f-southwest-airlines-coverage-decision",
+      "research-doc-56f-delta-air-lines-coverage-decision",
+      "research-doc-56f-va-coverage-decision",
+      "research-doc-56f-dot-coverage-decision",
+      "research-doc-56f-kc46-everett-coverage-decision",
+      "research-doc-56f-f15ex-st-louis-coverage-decision",
+      "research-doc-56f-victorian-big-battery-coverage-decision",
+      "research-doc-56f-american-airlines-coverage-decision",
+      "research-doc-56f-alaska-airlines-coverage-decision",
+      "research-doc-56f-jetblue-airways-coverage-decision"
+    ],
+    "held": [
+      "research-doc-56f-dhs-coverage-decision",
+      "research-doc-56f-manatee-coverage-decision",
+      "research-doc-56f-gateway-coverage-decision",
+      "research-doc-56f-doe-coverage-decision",
+      "research-doc-56f-f35-fort-worth-coverage-decision",
+      "research-doc-56f-hornsdale-coverage-decision",
+      "research-doc-56f-dalrymple-coverage-decision"
+    ]
+  },
+  "signal_decisions": {
+    "reviewed": 5,
+    "promoted": [
+      "signal-56f-ai-cyber-coverage-closure",
+      "signal-56f-manufacturing-coverage-closure",
+      "signal-56f-infrastructure-coverage-closure",
+      "signal-56f-mobility-coverage-closure"
+    ],
+    "held": [
+      "signal-56f-cross-cohort-comparison-hold"
+    ]
+  },
+  "priority_rule": "Every entity has exactly one highest-value missing operating or closure record.",
+  "closure_rule": "Closed, Partially Closed, and Open describe evidence state only; unavailable records retain a named source and reopening rule.",
+  "publication_rule": "Publish only independently useful record-level or portfolio coverage findings; hold unresolved exact-record claims and all cross-cohort comparisons.",
+  "comparison_rule": "No causal effect, ranking, completeness score, composite score, readiness score, or unsupported cross-entity comparison is permitted."
+}

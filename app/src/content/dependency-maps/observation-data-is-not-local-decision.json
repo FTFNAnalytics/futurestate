@@ -1,0 +1,164 @@
+{
+  "id": "dependency-map-observation-data-is-not-local-decision",
+  "title": "Observation data is not a local decision",
+  "slug": "observation-data-is-not-local-decision",
+  "summary": "A dependency map connecting global climate observations, public radar products, national elevation design, transportation-risk synthesis, interpretation, local exposure, and decision records without treating data availability as an outcome.",
+  "map_type": "Dependency Stack",
+  "record_status": "In Review",
+  "primary_topic": "Discovery Technologies",
+  "framework_layers": ["Planetary Conditions", "Resource Foundations", "Enabling Infrastructure", "Human Systems"],
+  "constraint_tags": ["Data Quality", "Interpretation", "Climate", "Infrastructure", "Standards", "Capital"],
+  "map_question": "What must happen after official observation data becomes available before FTFN can support a local climate, infrastructure, water, agriculture, or hazard decision claim?",
+  "interpretation_boundary": "This map supports a sequence from observations to local decisions. It does not prove that a specific institution used the data, chose the correct model, funded an action, implemented it, or achieved a measurable outcome.",
+  "source_ids": [
+    "source-noaa-2025-global-climate-report",
+    "source-nasa-nisar-public-data-july-2026",
+    "source-usgs-next-generation-3dep-2025",
+    "source-noaa-ocean-exploration-2025-report",
+    "source-usgcrp-nca5-transportation"
+  ],
+  "signal_ids": [
+    "signal-noaa-2025-global-climate-observation-baseline",
+    "signal-nisar-july-2026-public-radar-data",
+    "signal-usgs-next-generation-3dep-transition",
+    "signal-noaa-2025-ocean-exploration-mapping-operations",
+    "signal-nca5-transportation-climate-adaptation-stack"
+  ],
+  "technology_ids": ["technology-lidar"],
+  "local_system_ids": [],
+  "evidence_gap_ids": ["gap-006"],
+  "nodes": [
+    {
+      "id": "node-observation",
+      "label": "Official observations and surveys",
+      "node_type": "Constraint",
+      "note": "NOAA, NASA, and USGS records provide climate, radar, elevation, mapping, and exploration observations with different scopes and maturities."
+    },
+    {
+      "id": "node-climate-baseline",
+      "label": "NOAA 2025 climate baseline",
+      "node_type": "Signal",
+      "record_id": "signal-noaa-2025-global-climate-observation-baseline",
+      "note": "A dated global observation baseline that remains upstream of regional and local effects."
+    },
+    {
+      "id": "node-nisar-data",
+      "label": "NISAR public radar data",
+      "node_type": "Signal",
+      "record_id": "signal-nisar-july-2026-public-radar-data",
+      "note": "An operating public-data rail with coverage, validation, model, adoption, and outcome work still downstream."
+    },
+    {
+      "id": "node-3dep-design",
+      "label": "Next-generation 3DEP",
+      "node_type": "Signal",
+      "record_id": "signal-usgs-next-generation-3dep-transition",
+      "note": "A national program transition whose local coverage, quality, refresh, and use must be checked."
+    },
+    {
+      "id": "node-data-quality",
+      "label": "Coverage, calibration, version, and quality",
+      "node_type": "Constraint",
+      "note": "A decision needs the correct product, geography, time period, resolution, version, method, and limitations."
+    },
+    {
+      "id": "node-interpretation",
+      "label": "Domain model and interpretation",
+      "node_type": "Constraint",
+      "note": "Observations become sector evidence through validated models, ground truth, assumptions, and expert interpretation."
+    },
+    {
+      "id": "node-local-exposure",
+      "label": "Named local assets and exposure",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-006",
+      "note": "FTFN still needs local assets, exposure, vulnerability, decision authority, and outcome evidence before drawing local climate conclusions."
+    },
+    {
+      "id": "node-decision",
+      "label": "Documented decision and implementation",
+      "node_type": "Constraint",
+      "note": "A plan, budget, permit, procurement, construction, operating change, or other authority record must show how evidence affected action."
+    },
+    {
+      "id": "node-outcome",
+      "label": "Measured local outcome",
+      "node_type": "Constraint",
+      "note": "Performance, losses, service, resilience, yield, water, safety, or other outcomes require their own records and counterfactual care."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-climate-baseline",
+      "to": "node-observation",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "NOAA supplies the official annual observation record."
+    },
+    {
+      "from": "node-nisar-data",
+      "to": "node-observation",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "NASA supplies an operating radar-data rail."
+    },
+    {
+      "from": "node-3dep-design",
+      "to": "node-observation",
+      "relationship": "Related Signal",
+      "confidence": "Partial",
+      "note": "USGS defines the next acquisition and delivery model; local product status still varies."
+    },
+    {
+      "from": "node-observation",
+      "to": "node-data-quality",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Observation claims depend on inspectable data scope and quality."
+    },
+    {
+      "from": "node-data-quality",
+      "to": "node-interpretation",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "Suitable data must be interpreted through validated domain methods."
+    },
+    {
+      "from": "node-interpretation",
+      "to": "node-local-exposure",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Local meaning requires named assets, exposures, vulnerabilities, and authority."
+    },
+    {
+      "from": "node-local-exposure",
+      "to": "node-decision",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "Evidence matters only when a responsible institution documents a decision or action."
+    },
+    {
+      "from": "node-decision",
+      "to": "node-outcome",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "Implementation must be followed by operating and outcome evidence."
+    }
+  ],
+  "what_this_map_supports": [
+    "Official observation availability can be separated from interpretation, institutional adoption, action, and outcome.",
+    "Climate, radar, elevation, and exploration records can share a common evidence-conversion stack without being treated as equivalent datasets.",
+    "Local climate and infrastructure claims require named exposure and authority records."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not prove complete data coverage, correct model selection, local institutional use, funded implementation, causation, or measured benefit.",
+    "It does not convert global conditions into local forecasts or observed outcomes.",
+    "It does not score or rank local resilience."
+  ],
+  "next_records_needed": [
+    "product-specific coverage, calibration, version, resolution, quality, and revision records.",
+    "regional models, ground truth, assumptions, uncertainty, and validation.",
+    "named local asset, hazard, exposure, vulnerability, and authority records.",
+    "plans, budgets, permits, procurements, construction, operating changes, and measured outcomes."
+  ]
+}

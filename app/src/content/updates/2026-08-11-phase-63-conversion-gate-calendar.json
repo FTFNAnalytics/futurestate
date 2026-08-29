@@ -1,0 +1,30 @@
+{
+  "id": "update-2026-08-11-phase-63-conversion-gate-calendar",
+  "effective_date": "2026-08-11",
+  "entry_type": "Source Refresh",
+  "title": "Phase 63 turns named conversion files into an explicit next-evidence calendar",
+  "summary": "Every Phase 61 file now has one gate record joined to its latest Phase 62 event, exact dated check or source-explicit trigger, same-entity Phase 60 binding state, artifact, stop rule, and propagation surfaces.",
+  "affected_record_ids": [
+    "briefing-conversion-gate-calendar-001",
+    "briefing-project-conversion-001-tsmc-arizona",
+    "briefing-project-conversion-002-toronto-24-254930",
+    "briefing-project-conversion-003-northern-virginia-large-load",
+    "briefing-project-conversion-004-space-coast-authority",
+    "briefing-project-conversion-005-nevada-lithium",
+    "briefing-adoption-case-001-gsa-pqc",
+    "briefing-adoption-case-002-nist-aria",
+    "briefing-adoption-case-003-waymo-california"
+  ],
+  "related_paths": [
+    "/briefings/conversion-gate-calendar-001-what-can-move-next/",
+    "/data/conversion-gates.json",
+    "/data/conversion-events.json",
+    "/data/operating-cycle.json"
+  ],
+  "evidence_note": "Phase 63 reorganizes existing reviewed gates. It does not complete a future check, invent a trigger date, add a receipt, transfer evidence across entities, or create a readiness or urgency score.",
+  "prior_state": "The Phase 60 schedule, Phase 61 next gates, and Phase 62 event histories were inspectable but required separate reads to understand what could move each named file next.",
+  "current_state": "Eight joined gate records distinguish four dated files from four trigger-based files and expose the exact binding, artifact, receipt state, stop rule, and propagation surface for each.",
+  "publication_effect": "Publishes one calendar briefing, one eight-record public gate export, and this update without changing an underlying signal, event, receipt, or evidence stage.",
+  "next_check_date": "2026-08-15",
+  "work_package": "docs/work-packages/phase-63-named-conversion-gate-calendar.md"
+}

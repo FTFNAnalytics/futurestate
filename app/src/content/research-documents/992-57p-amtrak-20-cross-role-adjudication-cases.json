@@ -1,0 +1,65 @@
+{
+  "id": "research-doc-57p-amtrak-20-cross-role-adjudication-cases",
+  "collection_id": "research-collection-dual-review-audit-chains-adjudication-publication-decision-receipts-2026",
+  "title": "Amtrak routes 20 cross-role adjudication cases without automatic release",
+  "slug": "57p-amtrak-20-cross-role-adjudication-cases",
+  "record_status": "Published",
+  "publisher": "National Railroad Passenger Corporation",
+  "publication_date": "2026-08-09",
+  "document_type": "Data Release",
+  "summary": "2 concordant accept fixtures await manual release, 10 disagreements or bounded blocks escalate explicitly, and 2 later decisions append without mutation. Denominator: 20 adjudication fixtures across 2 contracts; zero actual escalations, releases, triggers, closures, or publications.",
+  "key_findings": [
+    "Evidence stage: Amtrak append-only audit, adjudication, and publication-receipt controls.",
+    "Finding: 2 concordant accept fixtures await manual release, 10 disagreements or bounded blocks escalate explicitly, and 2 later decisions append without mutation.",
+    "Denominator: 20 adjudication fixtures across 2 contracts; zero actual escalations, releases, triggers, closures, or publications.",
+    "Boundary: Disagreement cannot collapse into accept.",
+    "Boundary: Escalation requires a third role distinct from both reviewers.",
+    "Boundary: Even dual accept requires separate manual release authorization.",
+    "Next action: Keep all disagreement states unresolved until a distinct human escalation owner records an append-only outcome."
+  ],
+  "why_it_matters": "The record makes dual-review attribution, disagreement escalation, and supersession append-only without creating an actual editorial or release event.",
+  "ftfn_relevance": [
+    "Links but never merges evidence-review and publication-review receipts across all nine contracts.",
+    "Tests publication reason-code compatibility, immutable attribution, disagreement ownership, and append-only supersession.",
+    "Proves that even concordant accept requires separate manual release authorization and cannot publish automatically."
+  ],
+  "evidence_limits": [
+    "Not publicly acquired does not mean nonexistent, withheld, or never submitted.",
+    "FTFN public-source research is not agency contact or a submitted FOIA request.",
+    "Disagreement cannot collapse into accept.",
+    "Escalation requires a third role distinct from both reviewers.",
+    "Even dual accept requires separate manual release authorization.",
+    "The inherited 1 Closed / 21 Partially Closed / 2 Open entity ledger remains unchanged.",
+    "No record supports a ranking, composite score, readiness score, generalized savings claim, or unsupported causal inference."
+  ],
+  "primary_topics": [
+    "Mobility",
+    "Policy and Standards",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Regulation",
+    "Public Trust"
+  ],
+  "source_id": "source-57f-amtrak-stations-alp-fy24-29",
+  "supporting_source_ids": [
+    "source-57f-amtrak-stations-alp-fy24-29",
+    "source-57b-amtrak-ada-progress-june-2026",
+    "source-57e-amtrak-accessibility-progress-june-2026"
+  ],
+  "supporting_official_urls": [
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-ada-progress-report-june-2026.pdf",
+    "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-accessibility-plan-feedback-process-canada-act-0626.pdf"
+  ],
+  "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+  "local_capture_path": "/downloads/dual-review-audit-chains-adjudication-publication-decision-receipts-2026/official-links/04-amtrak-20-cross-role-adjudication-cases.txt",
+  "archive_member": "official-links/04-amtrak-20-cross-role-adjudication-cases.txt",
+  "capture_status": "Official link record",
+  "captured_date": "2026-08-09"
+}
