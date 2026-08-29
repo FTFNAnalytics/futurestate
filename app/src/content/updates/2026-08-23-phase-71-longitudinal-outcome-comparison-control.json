@@ -1,0 +1,29 @@
+{
+  "id": "update-2026-08-23-phase-71-longitudinal-outcome-comparison-control",
+  "effective_date": "2026-08-23",
+  "entry_type": "Source Refresh",
+  "title": "Phase 71 publishes empty longitudinal panels and outcome controls",
+  "summary": "Thirty-two empty longitudinal panel shells, eight not-ready outcome-claim dockets, and eight comparison embargo registers now expose the decision path after series admission. All series, point, value, trend, claim, comparison, score, rank, review, receipt, and propagation fields remain empty.",
+  "affected_record_ids": [
+    "briefing-longitudinal-panel-desk-001",
+    "briefing-outcome-claim-comparison-protocol-001",
+    "dependency-map-admitted-series-is-not-causal-outcome",
+    "briefing-observation-review-desk-001",
+    "briefing-series-admission-protocol-001",
+    "briefing-outcomes-watch-001-what-actually-changed",
+    "gap-015",
+    "gap-016"
+  ],
+  "related_paths": [
+    "/evidence/outcomes/",
+    "/briefings/longitudinal-panel-desk-001/",
+    "/briefings/outcome-claim-comparison-protocol-001/",
+    "/atlas/dependency-maps/admitted-series-is-not-causal-outcome/",
+    "/data/longitudinal-panels-outcome-claims.json"
+  ],
+  "evidence_note": "This release contains empty panel, claim, and comparison-control contracts plus synthetic-only validation. It does not contain an admitted series, real series point, source value, period result, trend, attribution, counterfactual, outcome claim, comparison, score, ranking, reviewer decision, or receipt.",
+  "materiality": "No record-state change",
+  "publication_effect": "Adds two Published briefings, one Published dependency map, one searchable registry with forty detail routes, one public export, and reader-surface integrations while leaving all evidence, cohort, stage, and outcome states unchanged.",
+  "next_check_date": "2026-09-01",
+  "work_package": "docs/work-packages/phase-71-longitudinal-panel-outcome-claim-comparison-control.md"
+}

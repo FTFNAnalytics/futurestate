@@ -29,7 +29,7 @@ export const GET: APIRoute = async () => {
 
   return publicDatasetResponse(
     "evidence_queue",
-    "Ten held result and outcome gates with exact next artifacts, dated checks, review cadences, bounded findings, stop rules, and public change receipts.",
+    "Ten result and outcome gates with exact artifacts, dated checks, review cadences, bounded findings, stop rules, and public change receipts; one measured-result gate is resolved and nine outcome gates remain held.",
     records
   );
 };

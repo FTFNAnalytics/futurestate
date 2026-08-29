@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-88-work-labor-livelihoods-economic-democracy-registry.json";
+import phase87 from "../../../data/phase-87-education-learning-skills-knowledge-cultural-capability-registry.json";
+import phase89 from "../../../data/phase-89-income-wealth-poverty-social-protection-economic-security-registry.json";
+
+export function getStaticPaths() {
+  return [
+    ...registry.job_access_matching_hiring_nondiscrimination_dossiers.map((record) => ({ params: { id: record.slug }, props: { kind: "access", record } })),
+    ...registry.job_quality_wages_benefits_hours_safety_ledgers.map((record) => ({ params: { id: record.slug }, props: { kind: "quality", record } })),
+    ...registry.worker_voice_organizing_collective_bargaining_economic_democracy_registers.map((record) => ({ params: { id: record.slug }, props: { kind: "voice", record } })),
+    ...registry.livelihood_security_displacement_just_transition_long_horizon_ledgers.map((record) => ({ params: { id: record.slug }, props: { kind: "livelihood", record } }))
+  ];
+}
+
+const { kind, record } = Astro.props as { kind: "access" | "quality" | "voice" | "livelihood"; record: any };
+const [briefings, dependencyMaps, signals, sources] = await Promise.all([getCollection("briefings"), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")]);
+const briefingById = new Map(briefings.map((item) => [item.data.id, item]));
+const mapById = new Map(dependencyMaps.map((item) => [item.data.id, item]));
+const signalById = new Map(signals.map((item) => [item.data.id, item]));
+const sourceById = new Map(sources.map((item) => [item.data.id, item]));
+const guideIds = ["briefing-work-labor-livelihoods-economic-democracy-doctrine-001", "briefing-job-access-matching-hiring-001", "briefing-job-quality-decent-work-001", "briefing-wages-benefits-household-livelihood-security-001", "briefing-hours-scheduling-time-autonomy-001", "briefing-worker-health-safety-dignity-001", "briefing-worker-voice-organizing-collective-bargaining-001", "briefing-platform-gig-informal-contingent-work-001", "briefing-care-domestic-agricultural-migrant-work-001", "briefing-automation-climate-industrial-transition-001", "briefing-cooperatives-employee-ownership-public-employment-001", "briefing-labor-standards-enforcement-remedy-001"];
+const mapIds = ["dependency-map-job-posting-is-not-available-job", "dependency-map-employment-is-not-decent-work", "dependency-map-wage-rate-is-not-household-livelihood-security", "dependency-map-training-completion-is-not-durable-career-mobility", "dependency-map-worker-consultation-is-not-bargaining-power", "dependency-map-reemployment-is-not-just-transition"];
+const state = kind === "access" ? record.job_access_state : kind === "quality" ? record.job_quality_state : kind === "voice" ? record.worker_voice_state : record.livelihood_state;
+const id = kind === "access" ? record.job_access_matching_hiring_nondiscrimination_dossier_id : kind === "quality" ? record.job_quality_wages_benefits_hours_safety_ledger_id : kind === "voice" ? record.worker_voice_organizing_collective_bargaining_economic_democracy_register_id : record.livelihood_security_displacement_just_transition_long_horizon_ledger_id;
+const title = `${id}: ${record.named_entity}`;
+const phase87Record = phase87.public_knowledge_culture_research_community_learning_ledgers.find((item) => item.cohort_id === record.cohort_id);
+const phase89Records = [
+  ...phase89.household_income_earnings_tax_transfer_resource_dossiers,
+  ...phase89.wealth_assets_debt_liabilities_intergenerational_balance_ledgers,
+  ...phase89.poverty_deprivation_social_protection_benefit_access_registers,
+  ...phase89.economic_security_distribution_shock_mobility_long_horizon_ledgers
+].filter((item) => item.cohort_id === record.cohort_id);
+const configs: Record<string, any> = {
+  access: { label: "Job Access, Matching, Hiring And Nondiscrimination Dossier", gates: record.job_access_checks, gateCount: 20, groups: [["Labor-market access channels", record.labor_market_access_channel_records, "channel_state"], ["Hiring-access and equity dimensions", record.hiring_access_equity_dimension_records, "dimension_state"], ["Job-matching and recruitment safeguards", record.job_matching_recruitment_safeguard_records, "safeguard_state"]], decision: record.job_access_decision },
+  quality: { label: "Job Quality, Wages, Benefits, Hours And Safety Ledger", gates: record.job_quality_checks, gateCount: 20, groups: [["Employment-arrangement classes", record.employment_arrangement_class_records, "arrangement_state"], ["Job-quality and compensation dimensions", record.job_quality_compensation_dimension_records, "dimension_state"], ["Workplace health, safety, and continuity safeguards", record.workplace_health_safety_continuity_safeguard_records, "safeguard_state"]], decision: record.job_quality_decision },
+  voice: { label: "Worker Voice, Organizing, Collective Bargaining And Economic Democracy Register", gates: record.worker_voice_checks, gateCount: 22, groups: [["Worker-voice and representation models", record.worker_voice_representation_model_records, "model_state"], ["Organizing and collective-bargaining safeguards", record.organizing_collective_bargaining_safeguard_records, "safeguard_state"], ["Economic-democracy and ownership dimensions", record.economic_democracy_ownership_dimension_records, "dimension_state"]], decision: record.worker_voice_decision },
+  livelihood: { label: "Livelihood Security, Displacement, Just Transition And Long-Horizon Ledger", gates: record.livelihood_checks, gateCount: 22, groups: [["Livelihood-security support systems", record.livelihood_security_support_system_records, "system_state"], ["Displacement and transition safeguards", record.displacement_transition_safeguard_records, "safeguard_state"], ["Regional labor-market equity dimensions", record.regional_labor_market_equity_dimension_records, "dimension_state"], ["Long-horizon economic-agency tests", record.long_horizon_economic_agency_test_records, "test_state"]], decision: record.livelihood_decision }
+};
+const config = configs[kind];
+---
+
+<BaseLayout title={title + " | FTFN"} description={title + ": inactive Phase 88 work, labor, livelihood, and economic-democracy contract."} robots="index, follow">
+  <section class="page-section"><div class="eyebrow">{config.label}</div><h1 class="page-title">{title}</h1><div class="meta-row"><MetaPill label={state} tone="review" /><MetaPill label="0 labor decisions" tone="review" /><MetaPill label="0 receipts" tone="review" /><MetaPill label="0 scores" tone="review" /></div></section>
+  <section class="page-section"><div class="status-panel"><article class="status-item"><h2>Phase 87 public-knowledge ledger</h2><p>{phase87Record ? <a href={'/evidence/education-knowledge-culture/' + phase87Record.slug + '/'}>{record.public_knowledge_culture_research_community_learning_ledger_id ?? phase87Record.public_knowledge_culture_research_community_learning_ledger_id}</a> : "No verified upstream record"}</p></article><article class="status-item"><h2>Decision state</h2><p>{config.decision}</p></article><article class="status-item"><h2>Governed results</h2><p>0 job-access, hiring, job-quality, safety, compensation, organizing, bargaining, ownership, livelihood, transition, receipt, score, ranking, or stage decisions</p></article></div></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Admission Control</div><h2>{config.gateCount} gates remain Inactive.</h2></div></div><div class="source-list">{config.gates.map((item: any) => <article class="source-row"><div><h3>{item.label}</h3><p>{item.basis}</p></div><MetaPill label={item.decision_state} tone="review" /></article>)}</div></section>
+  {config.groups.map(([label, items, stateField]: [string, any[], string]) => <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Controlled Taxonomy</div><h2>{label} remain unassigned.</h2></div></div><div class="grid">{items.map((item: any) => <article class="record-card"><h3>{item.label}</h3><p>No authority, evidence, finding, classification, allocation, decision, or receipt exists.</p><MetaPill label={item[stateField]} tone="review" /></article>)}</div></section>)}
+  <section class="page-section"><div class="grid"><article class="record-card"><h2>Connected guides</h2><ul>{guideIds.map((guideId) => { const item = briefingById.get(guideId); return <li>{item ? <a href={'/briefings/' + item.data.slug + '/'}>{item.data.title}</a> : guideId}</li>; })}</ul></article><article class="record-card"><h2>Connected maps</h2><ul>{mapIds.map((mapId) => { const item = mapById.get(mapId); return <li>{item ? <a href={'/atlas/dependency-maps/' + item.data.slug + '/'}>{item.data.title}</a> : mapId}</li>; })}</ul></article><article class="record-card"><h2>Connected evidence</h2><ul>{record.source_ids.map((sourceId: string) => { const item = sourceById.get(sourceId); return <li>{item ? <a href={'/atlas/sources/' + item.data.id + '/'}>{item.data.name}</a> : sourceId}</li>; })}{record.signal_ids.map((signalId: string) => { const item = signalById.get(signalId); return <li>{item ? <a href={'/signals/' + item.data.slug + '/'}>{item.data.title}</a> : signalId}</li>; })}</ul></article></div></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Phase 89 Destination</div><h2>Income, wealth, poverty, social-protection, and economic-security controls</h2></div></div><div class="source-list">{phase89Records.map((item: any) => <article class="source-row"><div><h3><a href={'/evidence/income-wealth-economic-security/' + item.slug + '/'}>{item.named_entity}</a></h3><p>Inactive until this Phase 88 chain is independently verified and receipted.</p></div><MetaPill label="Inactive" tone="review" /></article>)}</div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Boundary</div><h2>A job posting is not an available job; reemployment is not a just transition.</h2><p>No job-access or hiring decision, employment classification, job-quality, pay, hours, safety, dignity, worker-voice, organizing, bargaining, ownership, livelihood-security, displacement, just-transition, reviewer, receipt, score, rank, or stage change is recorded on this page.</p></div></section>
+</BaseLayout>

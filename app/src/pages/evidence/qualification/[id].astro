@@ -1,0 +1,222 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import qualificationRegistry from "../../../data/phase-67-qualification-packet-registry.json";
+import returnLedger from "../../../data/phase-67-evidence-return-envelope-ledger.json";
+
+export function getStaticPaths() {
+  return [
+    ...qualificationRegistry.packet_records.map((record) => ({
+      params: { id: record.slug },
+      props: { recordKind: "qualification_packet", record }
+    })),
+    ...returnLedger.envelope_records.map((record) => ({
+      params: { id: record.slug },
+      props: { recordKind: "evidence_return_envelope", record }
+    }))
+  ];
+}
+
+const { recordKind, record } = Astro.props as { recordKind: string; record: any };
+const isPacket = recordKind === "qualification_packet";
+const [briefings, dependencyMaps, signals] = await Promise.all([
+  getCollection("briefings"),
+  getCollection("dependencyMaps"),
+  getCollection("signals")
+]);
+const briefingById = new Map(briefings.map((item) => [item.data.id, item]));
+const mapById = new Map(dependencyMaps.map((item) => [item.data.id, item]));
+const signalById = new Map(signals.map((item) => [item.data.id, item]));
+const title = isPacket
+  ? `${record.packet_id}: ${record.short_name} — ${record.stage_label}`
+  : `${record.envelope_id}: ${record.target}`;
+const description = isPacket ? record.exact_qualifying_artifact : record.exact_next_artifact;
+const briefingIds = isPacket
+  ? [record.canonical_briefing_id, record.acceptance_briefing_id, record.qualification_playbook_id]
+  : record.canonical_dossier_ids;
+const mapIds = record.dependency_map_ids;
+const signalIds = isPacket ? record.signal_ids : [record.underlying_signal_id];
+---
+
+<BaseLayout title={`${title} | FTFN`} description={description} robots="index, follow">
+  <section class="page-section">
+    <div class="eyebrow">{isPacket ? "Qualification Packet" : "Evidence Return Envelope"}</div>
+    <h1 class="page-title">{title}</h1>
+    <p class="lede">{description}</p>
+    <div class="meta-row">
+      <MetaPill label={isPacket ? record.packet_state : record.envelope_state} tone="review" />
+      <MetaPill label={isPacket ? record.current_decision_state : record.wave} />
+      <MetaPill label={isPacket ? record.stage_label : record.scheduled_check_date} />
+      <MetaPill label="Published contract" tone="possibility" />
+    </div>
+  </section>
+
+  {isPacket ? (
+    <>
+      <section class="page-section">
+        <div class="status-panel">
+          <article class="status-item">
+            <h2>Question</h2>
+            <p>{record.claim_question}</p>
+          </article>
+          <article class="status-item">
+            <h2>Current basis</h2>
+            <p>{record.current_basis}</p>
+          </article>
+          <article class="status-item">
+            <h2>Entity scope</h2>
+            <p>{record.entity_scope}</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="grid">
+          <article class="record-card">
+            <h2>Recognized authority</h2>
+            <ul>{record.recognized_authorities.map((item: string) => <li>{item}</li>)}</ul>
+          </article>
+          <article class="record-card">
+            <h2>Admissible artifact types</h2>
+            <ul>{record.admissible_artifact_types.map((item: string) => <li>{item}</li>)}</ul>
+          </article>
+          <article class="record-card">
+            <h2>Disqualifiers</h2>
+            <ul>{record.disqualifiers.map((item: string) => <li>{item}</li>)}</ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Admission Contract</div>
+            <h2>Required fields before human review.</h2>
+          </div>
+        </div>
+        <div class="source-list">
+          {[
+            ["Time and identity", record.temporal_requirement],
+            ["Method", record.method_requirement],
+            ["Denominator", record.denominator_requirement],
+            ["Exceptions and corrections", record.exception_requirement],
+            ["Recurrence boundary", record.recurrence_requirement]
+          ].map(([label, value]) => (
+            <article class="source-row">
+              <h3>{label}</h3>
+              <p>{value}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="grid">
+          <article class="record-card">
+            <h2>Current gate</h2>
+            <p>{record.gate_id} — {record.gate_mode}</p>
+            <div class="meta-row">
+              <MetaPill label={record.gate_receipt_state} />
+              {record.next_check_date && <MetaPill label={record.next_check_date} />}
+            </div>
+            {record.reopening_trigger && <p>{record.reopening_trigger}</p>}
+          </article>
+          <article class="record-card">
+            <h2>Decision state</h2>
+            <p>Receipt: none. Decision date: none. Phase 64 cell change: none.</p>
+            <p>A returned artifact remains intake material until independently reviewed and propagated.</p>
+          </article>
+          <article class="record-card">
+            <h2>Required propagation</h2>
+            <ol>{record.required_propagation.map((item: string) => <li>{item.replaceAll("_", " ")}</li>)}</ol>
+          </article>
+        </div>
+      </section>
+    </>
+  ) : (
+    <>
+      <section class="page-section">
+        <div class="status-panel">
+          <article class="status-item">
+            <h2>Scheduled check</h2>
+            <p>{record.scheduled_check_date}. No attempted surface or access result is recorded before this date.</p>
+          </article>
+          <article class="status-item">
+            <h2>Binding decision</h2>
+            <p>{record.binding_decision}</p>
+          </article>
+          <article class="status-item">
+            <h2>Propagation state</h2>
+            <p>{record.propagation_status}. Receipt, decision date, and next check remain empty.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="grid">
+          <article class="record-card">
+            <h2>Exact artifact</h2>
+            <p>{record.exact_next_artifact}</p>
+          </article>
+          <article class="record-card">
+            <h2>Named-file scope</h2>
+            {record.named_file_ids.length > 0
+              ? <ul>{record.named_file_ids.map((item: string) => <li>{item}</li>)}</ul>
+              : <p>No named-file append is authorized.</p>}
+          </article>
+          <article class="record-card">
+            <h2>Future-state integrity</h2>
+            <ul>
+              <li>Attempted surfaces: {record.attempted_surfaces.length}</li>
+              <li>Access result: none</li>
+              <li>Receipt: none</li>
+              <li>Decision: scheduled</li>
+              <li>Propagation: not started</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section briefing-band">
+        <div class="briefing-band__copy">
+          <div class="eyebrow">Boundary</div>
+          <h2>A scheduled envelope is not a completed check.</h2>
+          <p>{record.publication_boundary}</p>
+        </div>
+      </section>
+    </>
+  )}
+
+  <section class="page-section">
+    <div class="grid">
+      <article class="record-card">
+        <h2>Connected briefings</h2>
+        <ul>
+          {briefingIds.map((id: string) => {
+            const briefing = briefingById.get(id);
+            return <li>{briefing ? <a href={`/briefings/${briefing.data.slug}/`}>{briefing.data.title}</a> : id}</li>;
+          })}
+        </ul>
+      </article>
+      <article class="record-card">
+        <h2>Connected dependency maps</h2>
+        <ul>
+          {mapIds.map((id: string) => {
+            const map = mapById.get(id);
+            return <li>{map ? <a href={`/atlas/dependency-maps/${map.data.slug}/`}>{map.data.title}</a> : id}</li>;
+          })}
+        </ul>
+      </article>
+      <article class="record-card">
+        <h2>Connected signals</h2>
+        <ul>
+          {signalIds.map((id: string) => {
+            const signal = signalById.get(id);
+            return <li>{signal ? <a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a> : id}</li>;
+          })}
+        </ul>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

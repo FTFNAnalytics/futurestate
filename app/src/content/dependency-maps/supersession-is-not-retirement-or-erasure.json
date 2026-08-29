@@ -1,0 +1,40 @@
+{
+  "id": "dependency-map-supersession-is-not-retirement-or-erasure",
+  "title": "Supersession Is Not Retirement Or Erasure",
+  "slug": "supersession-is-not-retirement-or-erasure",
+  "summary": "A map separating successor policy, supersession scope, transition, operational decommissioning, residual duties, remedy, independent confirmation, and permanent archive.",
+  "map_type": "Evidence Gap Map",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Regulation", "Standards", "Infrastructure", "Public Trust"],
+  "map_question": "What obligations remain after an institution selects a successor policy or decides to end an existing one?",
+  "interpretation_boundary": "A successor does not automatically terminate the prior authority, operation, contract, asset, data, service, remedy, or archive duty. Retirement does not permit deletion of evidence or unresolved harm.",
+  "source_ids": ["source-phoenix-tsmc-july-2026-fab-update", "source-toronto-2026-sc33-9-item-history", "source-virginia-scc-large-load-gs5-2025", "source-faa-shuttle-landing-facility-license", "source-doe-thacker-pass-loan-2024", "source-gsa-pqc-buyers-guide-2025", "source-nist-aria-pilot-evaluation-2025", "source-cpuc-waymo-al2-disposition-2024"],
+  "signal_ids": ["signal-aps-tsmc-service-territory-capacity-boundary", "signal-toronto-24-254930-community-council-recommendation", "signal-virginia-gs5-large-load-rate-class", "signal-faa-part450-operator-transition", "signal-thacker-pass-doe-loan-financial-close", "signal-gsa-pqc-procurement-paths", "signal-nist-aria-pilot-multilevel-evaluation", "signal-cpuc-waymo-fared-driverless-expansion-2024"],
+  "technology_ids": [],
+  "local_system_ids": ["local-us-southwest-chip-corridor", "local-ontario-real-estate", "local-northern-virginia-data-center-corridor", "local-florida-space-coast-launch-corridor", "local-nevada-lithium-processing-corridor"],
+  "evidence_gap_ids": ["gap-001", "gap-002", "gap-003", "gap-004", "gap-005", "gap-007", "gap-008", "gap-009", "gap-010", "gap-011", "gap-012", "gap-013", "gap-014", "gap-015", "gap-016"],
+  "nodes": [
+    {"id": "node-policy", "label": "Current authorized policy", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No Phase 76 policy lifecycle has opened."},
+    {"id": "node-review", "label": "Effect, harm, challenge, and sunset review", "node_type": "Constraint", "note": "Lifecycle evidence and unresolved duties are current."},
+    {"id": "node-successor", "label": "Authorized successor and supersession scope", "node_type": "Constraint", "note": "The exact provisions, users, systems, periods, and exceptions are named."},
+    {"id": "node-transition", "label": "Transition and continuity plan", "node_type": "Constraint", "note": "Users, accessibility, service, contracts, data, assets, workforce, and dependencies are protected."},
+    {"id": "node-decommission", "label": "Operational and technical decommissioning", "node_type": "Constraint", "note": "Obsolete practice is removed from live systems, not only documents."},
+    {"id": "node-residual", "label": "Residual duty and remedy ledger", "node_type": "Constraint", "note": "Audit, privacy, security, compensation, restoration, and legal duties may survive."},
+    {"id": "node-archive", "label": "Permanent discoverable archive", "node_type": "Constraint", "note": "Evidence, rationale, dissent, failure, correction, and retirement receipts remain linked."},
+    {"id": "node-confirm", "label": "Independent retirement confirmation", "node_type": "Evidence Gap", "record_id": "gap-015", "note": "No retirement or decommissioning receipt exists."}
+  ],
+  "links": [
+    {"from": "node-policy", "to": "node-review", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No authorized policy exists in Phase 76."},
+    {"from": "node-review", "to": "node-successor", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No successor or supersession decision exists."},
+    {"from": "node-successor", "to": "node-transition", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Supersession cannot skip transition."},
+    {"from": "node-transition", "to": "node-decommission", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No decommissioning plan exists."},
+    {"from": "node-decommission", "to": "node-residual", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Residual duties can outlive operations."},
+    {"from": "node-residual", "to": "node-archive", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No permanent archive decision exists."},
+    {"from": "node-archive", "to": "node-confirm", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No independent retirement confirmation exists."}
+  ],
+  "what_this_map_supports": ["Fourteen policy-lifecycle gates and ten decommissioning obligations.", "Visible separation among review, sunset, supersession, transition, retirement, decommissioning, residual duty, and archive.", "Permanent discoverability of evidence, dissent, failures, harms, and receipts."],
+  "what_this_map_does_not_prove": ["It does not establish a current policy, successor, supersession, sunset, retirement, decommissioning, remedy, or archive closure.", "It does not cancel authority, contracts, licences, operations, data duties, services, liabilities, or unresolved harms.", "It does not permit silent renewal, automatic retirement, archive deletion, scoring, or ranking."],
+  "next_records_needed": ["A real authorized policy and scheduled lifecycle review.", "A successor authorization with exact supersession and transition scope.", "Completed decommissioning obligations, residual-duty review, permanent archive, and independent public receipt."]
+}

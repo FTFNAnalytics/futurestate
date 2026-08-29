@@ -1,0 +1,187 @@
+{
+  "id": "dependency-map-government-continuity-is-not-democratic-resilience",
+  "title": "Government Continuity Is Not Democratic Resilience",
+  "slug": "government-continuity-is-not-democratic-resilience",
+  "summary": "From uninterrupted offices or services through constitutional order, civic space, plural contestation, resistance to capture, renewal and non-recurrence.",
+  "map_type": "Dependency Stack",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": [
+    "Human Systems",
+    "Enabling Infrastructure",
+    "Frontier Domains"
+  ],
+  "constraint_tags": [
+    "Public Trust",
+    "Infrastructure",
+    "Capital",
+    "Labor",
+    "Regulation",
+    "Interpretation"
+  ],
+  "map_question": "What records are required before government continuity is not democratic resilience can support a bounded democracy, government, accountability or legitimacy decision?",
+  "interpretation_boundary": "An election held is not inclusive representative democracy. A public institution is not administrative capacity. A published plan is not accountable government delivery. Open data is not usable civic information. Approval or compliance is not institutional legitimacy. Government continuity is not democratic resilience.",
+  "source_ids": [
+    "source-phoenix-tsmc-july-2026-fab-update",
+    "source-phoenix-tsmc-2026-wastewater-development-agreement",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-toronto-development-pipeline-2025",
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-virginia-scc-golden-mars-2026",
+    "source-faa-shuttle-landing-facility-license",
+    "source-faa-starship-lc39a-final-eis-rod",
+    "source-faa-slc40-final-ea",
+    "source-doe-thacker-pass-loan-2024",
+    "source-ndep-rhyolite-ridge-water-permit-2025",
+    "source-gsa-pqc-buyers-guide-2025",
+    "source-omb-m-26-15-pqc-migration",
+    "source-nist-aria-pilot-evaluation-2025",
+    "source-nist-aria-evaluation-program",
+    "source-55z-nasa-ai-use-cases-2024",
+    "source-cpuc-waymo-al2-disposition-2024",
+    "source-55z-cpuc-av-quarterly-reporting-2026"
+  ],
+  "signal_ids": [
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-phoenix-tsmc-fab3-topping-out",
+    "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-cmhc-june-2026-toronto-construction-stage-baseline",
+    "signal-virginia-data-center-air-permit-trail",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-faa-part450-operator-transition",
+    "signal-kennedy-multiuser-master-plan",
+    "signal-ksc-causeway-bridge-operational",
+    "signal-thacker-pass-federal-land-authorization",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-thacker-pass-state-environmental-permit-stack",
+    "signal-rhyolite-ridge-water-permit-preoperation-gates",
+    "signal-gsa-pqc-procurement-paths",
+    "signal-gsa-onegov-ai-procurement-channel",
+    "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+    "signal-sample-007",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-nist-ai-metrology-method-selection-layer",
+    "signal-nist-ai-rmf-critical-infrastructure-profile-concept",
+    "signal-cpuc-waymo-fared-driverless-expansion-2024",
+    "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+    "signal-california-av-testing-miles-2024"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate",
+    "local-northern-virginia-data-center-corridor",
+    "local-florida-space-coast-launch-corridor",
+    "local-nevada-lithium-processing-corridor"
+  ],
+  "evidence_gap_ids": [
+    "gap-001",
+    "gap-002",
+    "gap-003",
+    "gap-004",
+    "gap-005",
+    "gap-008",
+    "gap-011",
+    "gap-013",
+    "gap-016",
+    "gap-007",
+    "gap-012",
+    "gap-009",
+    "gap-014",
+    "gap-010",
+    "gap-015"
+  ],
+  "nodes": [
+    {
+      "id": "node-peace",
+      "label": "Verified Phase 98 security and peace-stewardship chain",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-016",
+      "note": "No qualifying Phase 98 record exists."
+    },
+    {
+      "id": "node-democracy",
+      "label": "Inclusive representative democracy",
+      "node_type": "Constraint",
+      "note": "An election event is not representative democracy."
+    },
+    {
+      "id": "node-government",
+      "label": "Capable accountable government delivery",
+      "node_type": "Constraint",
+      "note": "Institutions and plans are not operating capacity or delivery."
+    },
+    {
+      "id": "node-accountability",
+      "label": "Fiscal, audit, procurement and open-government accountability",
+      "node_type": "Constraint",
+      "note": "Publication and compliance are not usable transparency or integrity."
+    },
+    {
+      "id": "node-legitimacy",
+      "label": "Civic information, legitimacy and democratic resilience",
+      "node_type": "Constraint",
+      "note": "Approval and continuity are not legitimacy or resilience."
+    },
+    {
+      "id": "node-receipt",
+      "label": "Independent review, challenge, correction, remedy and receipts",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-016",
+      "note": "No Phase 99 receipt exists."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-peace",
+      "to": "node-democracy",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "The downstream decision remains closed until its predecessor is reviewed and receipted."
+    },
+    {
+      "from": "node-democracy",
+      "to": "node-government",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "The downstream decision remains closed until its predecessor is reviewed and receipted."
+    },
+    {
+      "from": "node-government",
+      "to": "node-accountability",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "The downstream decision remains closed until its predecessor is reviewed and receipted."
+    },
+    {
+      "from": "node-accountability",
+      "to": "node-legitimacy",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "The downstream decision remains closed until its predecessor is reviewed and receipted."
+    },
+    {
+      "from": "node-legitimacy",
+      "to": "node-receipt",
+      "relationship": "Depends On",
+      "confidence": "Missing Evidence",
+      "note": "The downstream decision remains closed until its predecessor is reviewed and receipted."
+    }
+  ],
+  "what_this_map_supports": [
+    "Separate democracy, government-capability, accountability, civic-information, legitimacy and resilience decisions.",
+    "Explicit authority, identities, rights, inclusion, distribution, alternatives, review, correction and remedy.",
+    "Public reasoning without voter, candidate, institution, media, community or jurisdiction scoring or ranking."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not establish representative democracy, administrative capacity, accountable delivery, usable civic information, legitimacy or resilience.",
+    "It does not convert elections, institutions, plans, portals, approval, compliance or continuity into outcomes.",
+    "It does not create a receipt, score, rank, stage advance or operating-outcome change."
+  ],
+  "next_records_needed": [
+    "A verified Phase 98 security and peace-stewardship chain.",
+    "Separately adopted democracy, government, accountability and legitimacy decisions.",
+    "Independent participation, delivery, fiscal, information, trust, correction and propagation receipts."
+  ]
+}

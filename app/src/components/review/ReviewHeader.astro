@@ -1,0 +1,23 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  summary: string;
+  phase?: number;
+}
+
+const { eyebrow, title, summary, phase } = Astro.props;
+---
+
+<header class="page-section review-hero">
+  <div class="eyebrow">{phase ? `Phase ${phase} · ${eyebrow}` : eyebrow}</div>
+  <h1>{title}</h1>
+  <p class="lede">{summary}</p>
+  <nav class="review-subnav" aria-label="Public knowledge edition">
+    <a href="/review/">Review</a>
+    <a href="/review/state-of-frontier-systems/">State report</a>
+    <a href="/learn/advanced-manufacturing/">Learn</a>
+    <a href="/review/method/">Editorial method</a>
+    <a href="/review/freshness/">Freshness</a>
+  </nav>
+</header>

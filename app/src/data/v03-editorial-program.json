@@ -1,0 +1,1156 @@
+{
+  "schema_version": "1.0",
+  "program_id": "FTFN-V0.3-EDITORIAL-PROGRAM",
+  "title": "FTFN v0.3 — The public knowledge edition",
+  "effective_date": "2026-08-29",
+  "record_status": "Published",
+  "summary": "An evidence-linked editorial layer that turns the existing signal, source, briefing, project, measurement and stewardship corpus into canonical reviews, narrative casebooks, cross-system stories, outcome observatories, uncertainty pages, learning modules, accessible editions and a living publication.",
+  "publication_boundaries": [
+    "Every public page resolves existing evidence and preserves the status of its upstream records.",
+    "No page creates a future receipt, advances a Phase 60 or Phase 61 gate, or converts a missing observation into an outcome.",
+    "Cross-system stories are editorial reading frames, not causal findings, forecasts, recommendations, scores or rankings.",
+    "French and Spanish translation briefs remain In Review until a qualified human reviewer signs off; no machine output is represented as reviewed translation."
+  ],
+  "counts": {
+    "phases_complete": 8,
+    "public_routes": 120,
+    "canonical_topic_chapters": 17,
+    "local_system_portraits": 5,
+    "casebooks": 8,
+    "cross_system_stories": 12,
+    "outcome_observatories": 8,
+    "uncertainty_pages": 17,
+    "learning_modules": 17,
+    "accessible_editions": 22,
+    "living_publication_routes": 12
+  },
+  "phases": [
+    {
+      "phase": 103,
+      "title": "Canonical review",
+      "content_goal": "Synthesize the existing evidence shelf into 17 topic chapters, five place portraits, a public method and a common review hub.",
+      "status": "Complete",
+      "routes": [
+        "/review/",
+        "/review/method/",
+        "/review/topics/advanced-manufacturing/",
+        "/review/topics/agriculture-and-bioeconomy/",
+        "/review/topics/ai-for-science/",
+        "/review/topics/aviation/",
+        "/review/topics/chips-and-compute/",
+        "/review/topics/climate/",
+        "/review/topics/critical-minerals/",
+        "/review/topics/cybersecurity/",
+        "/review/topics/discovery-technologies/",
+        "/review/topics/energy/",
+        "/review/topics/finance-and-risk/",
+        "/review/topics/human-futures/",
+        "/review/topics/mobility/",
+        "/review/topics/policy-and-standards/",
+        "/review/topics/quantum/",
+        "/review/topics/space/",
+        "/review/topics/water/",
+        "/review/places/florida-space-coast-launch-corridor/",
+        "/review/places/nevada-lithium-battery-materials-corridor/",
+        "/review/places/northern-virginia-data-center-corridor/",
+        "/review/places/ontario-real-estate/",
+        "/review/places/us-southwest-chip-corridor/"
+      ]
+    },
+    {
+      "phase": 104,
+      "title": "Narrative casebooks",
+      "content_goal": "Turn eight named project and adoption files into source-linked histories from authorization to operation.",
+      "status": "Complete",
+      "routes": [
+        "/review/casebooks/tsmc-arizona/",
+        "/review/casebooks/toronto-24-254930/",
+        "/review/casebooks/northern-virginia-large-load/",
+        "/review/casebooks/space-coast-authority-to-mission/",
+        "/review/casebooks/nevada-lithium-to-qualified-material/",
+        "/review/casebooks/gsa-pqc-adoption/",
+        "/review/casebooks/nist-aria-assurance/",
+        "/review/casebooks/waymo-california-service/"
+      ]
+    },
+    {
+      "phase": 105,
+      "title": "Cross-system atlas",
+      "content_goal": "Publish twelve evidence-bounded stories that make dependencies visible across topics and places.",
+      "status": "Complete",
+      "routes": [
+        "/review/systems/compute-power-water/",
+        "/review/systems/permission-to-operation/",
+        "/review/systems/standards-to-adoption/",
+        "/review/systems/autonomous-service-accountability/",
+        "/review/systems/research-to-assurance/",
+        "/review/systems/minerals-to-manufacturing/",
+        "/review/systems/space-capacity-to-cadence/",
+        "/review/systems/housing-infrastructure-conversion/",
+        "/review/systems/climate-water-industrial-resilience/",
+        "/review/systems/workforce-to-qualified-capacity/",
+        "/review/systems/finance-risk-and-infrastructure/",
+        "/review/systems/observation-to-outcome/"
+      ]
+    },
+    {
+      "phase": 106,
+      "title": "Outcomes observatory",
+      "content_goal": "Expose the eight measurement contracts, denominators and evidence gaps without manufacturing outcome claims.",
+      "status": "Complete",
+      "routes": [
+        "/review/outcomes/tsmc-arizona/",
+        "/review/outcomes/toronto-24-254930/",
+        "/review/outcomes/northern-virginia-large-load/",
+        "/review/outcomes/space-coast-authority-to-mission/",
+        "/review/outcomes/nevada-lithium-to-qualified-material/",
+        "/review/outcomes/gsa-pqc-adoption/",
+        "/review/outcomes/nist-aria-assurance/",
+        "/review/outcomes/waymo-california-service/"
+      ]
+    },
+    {
+      "phase": 107,
+      "title": "Uncertainty library",
+      "content_goal": "Give every topic a structured counterargument, competing-explanation and decisive-evidence reading page.",
+      "status": "Complete",
+      "routes": [
+        "/review/uncertainty/advanced-manufacturing/",
+        "/review/uncertainty/agriculture-and-bioeconomy/",
+        "/review/uncertainty/ai-for-science/",
+        "/review/uncertainty/aviation/",
+        "/review/uncertainty/chips-and-compute/",
+        "/review/uncertainty/climate/",
+        "/review/uncertainty/critical-minerals/",
+        "/review/uncertainty/cybersecurity/",
+        "/review/uncertainty/discovery-technologies/",
+        "/review/uncertainty/energy/",
+        "/review/uncertainty/finance-and-risk/",
+        "/review/uncertainty/human-futures/",
+        "/review/uncertainty/mobility/",
+        "/review/uncertainty/policy-and-standards/",
+        "/review/uncertainty/quantum/",
+        "/review/uncertainty/space/",
+        "/review/uncertainty/water/"
+      ]
+    },
+    {
+      "phase": 108,
+      "title": "Civic learning edition",
+      "content_goal": "Create seventeen topic modules with beginner, practitioner and expert reading paths.",
+      "status": "Complete",
+      "routes": [
+        "/learn/advanced-manufacturing/",
+        "/learn/agriculture-and-bioeconomy/",
+        "/learn/ai-for-science/",
+        "/learn/aviation/",
+        "/learn/chips-and-compute/",
+        "/learn/climate/",
+        "/learn/critical-minerals/",
+        "/learn/cybersecurity/",
+        "/learn/discovery-technologies/",
+        "/learn/energy/",
+        "/learn/finance-and-risk/",
+        "/learn/human-futures/",
+        "/learn/mobility/",
+        "/learn/policy-and-standards/",
+        "/learn/quantum/",
+        "/learn/space/",
+        "/learn/water/"
+      ]
+    },
+    {
+      "phase": 109,
+      "title": "Accessible editions",
+      "content_goal": "Publish seventeen plain-language topic editions and five low-bandwidth place notes; hold translations for human review.",
+      "status": "Complete",
+      "routes": [
+        "/editions/plain-language-advanced-manufacturing/",
+        "/editions/plain-language-agriculture-and-bioeconomy/",
+        "/editions/plain-language-ai-for-science/",
+        "/editions/plain-language-aviation/",
+        "/editions/plain-language-chips-and-compute/",
+        "/editions/plain-language-climate/",
+        "/editions/plain-language-critical-minerals/",
+        "/editions/plain-language-cybersecurity/",
+        "/editions/plain-language-discovery-technologies/",
+        "/editions/plain-language-energy/",
+        "/editions/plain-language-finance-and-risk/",
+        "/editions/plain-language-human-futures/",
+        "/editions/plain-language-mobility/",
+        "/editions/plain-language-policy-and-standards/",
+        "/editions/plain-language-quantum/",
+        "/editions/plain-language-space/",
+        "/editions/plain-language-water/",
+        "/editions/low-bandwidth-florida-space-coast-launch-corridor/",
+        "/editions/low-bandwidth-nevada-lithium-battery-materials-corridor/",
+        "/editions/low-bandwidth-northern-virginia-data-center-corridor/",
+        "/editions/low-bandwidth-ontario-real-estate/",
+        "/editions/low-bandwidth-us-southwest-chip-corridor/"
+      ]
+    },
+    {
+      "phase": 110,
+      "title": "Living publication",
+      "content_goal": "Establish the state report, correction log, freshness board, editorial calendar and eight evidence journeys.",
+      "status": "Complete",
+      "routes": [
+        "/review/state-of-frontier-systems/",
+        "/review/corrections/",
+        "/review/freshness/",
+        "/review/calendar/",
+        "/review/journeys/tsmc-arizona/",
+        "/review/journeys/toronto-24-254930/",
+        "/review/journeys/northern-virginia-large-load/",
+        "/review/journeys/space-coast-authority-to-mission/",
+        "/review/journeys/nevada-lithium-to-qualified-material/",
+        "/review/journeys/gsa-pqc-adoption/",
+        "/review/journeys/nist-aria-assurance/",
+        "/review/journeys/waymo-california-service/"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-advanced-manufacturing",
+      "name": "Advanced Manufacturing",
+      "slug": "advanced-manufacturing"
+    },
+    {
+      "id": "topic-agriculture-and-bioeconomy",
+      "name": "Agriculture and Bioeconomy",
+      "slug": "agriculture-and-bioeconomy"
+    },
+    {
+      "id": "topic-ai-for-science",
+      "name": "AI for Science",
+      "slug": "ai-for-science"
+    },
+    {
+      "id": "topic-aviation",
+      "name": "Aviation",
+      "slug": "aviation"
+    },
+    {
+      "id": "topic-chips-and-compute",
+      "name": "Chips and Compute",
+      "slug": "chips-and-compute"
+    },
+    {
+      "id": "topic-climate",
+      "name": "Climate",
+      "slug": "climate"
+    },
+    {
+      "id": "topic-critical-minerals",
+      "name": "Critical Minerals",
+      "slug": "critical-minerals"
+    },
+    {
+      "id": "topic-cybersecurity",
+      "name": "Cybersecurity",
+      "slug": "cybersecurity"
+    },
+    {
+      "id": "topic-discovery-technologies",
+      "name": "Discovery Technologies",
+      "slug": "discovery-technologies"
+    },
+    {
+      "id": "topic-energy",
+      "name": "Energy",
+      "slug": "energy"
+    },
+    {
+      "id": "topic-finance-and-risk",
+      "name": "Finance and Risk",
+      "slug": "finance-and-risk"
+    },
+    {
+      "id": "topic-human-futures",
+      "name": "Human Futures",
+      "slug": "human-futures"
+    },
+    {
+      "id": "topic-mobility",
+      "name": "Mobility",
+      "slug": "mobility"
+    },
+    {
+      "id": "topic-policy-and-standards",
+      "name": "Policy and Standards",
+      "slug": "policy-and-standards"
+    },
+    {
+      "id": "topic-quantum",
+      "name": "Quantum",
+      "slug": "quantum"
+    },
+    {
+      "id": "topic-space",
+      "name": "Space",
+      "slug": "space"
+    },
+    {
+      "id": "topic-water",
+      "name": "Water",
+      "slug": "water"
+    }
+  ],
+  "local_systems": [
+    {
+      "id": "local-florida-space-coast-launch-corridor",
+      "name": "Florida Space Coast Launch Corridor",
+      "slug": "florida-space-coast-launch-corridor",
+      "summary": "A multi-user launch and aerospace corridor where federal site and mission licensing, environmental review, range capacity, state capital programs, utilities, workforce, construction, and acceptance govern the conversion from launch demand to reliable infrastructure.",
+      "geography": "Kennedy Space Center, Cape Canaveral Space Force Station, and connected Florida Space Coast systems",
+      "core_constraints": [
+        "Infrastructure",
+        "Regulation",
+        "Permitting",
+        "Safety",
+        "Weather",
+        "Labor",
+        "Capital",
+        "Climate"
+      ],
+      "missing_data": [
+        "current Shuttle Landing Facility license disposition",
+        "project-level capital awards, contracts, construction, and acceptance",
+        "range availability, mission delays, and utilization",
+        "utility capacity and resilience for named facilities",
+        "workforce completion, vacancy, retention, and housing outcomes",
+        "measured environmental, safety, congestion, and local economic outcomes"
+      ]
+    },
+    {
+      "id": "local-nevada-lithium-processing-corridor",
+      "name": "Nevada Lithium And Battery Materials Corridor",
+      "slug": "nevada-lithium-battery-materials-corridor",
+      "summary": "A mine-to-processing corridor where federal land decisions, state air and water permits, water rights, federal credit, construction, commissioning, qualification, and environmental performance determine whether domestic resource potential becomes reliable material supply.",
+      "geography": "Humboldt and Esmeralda counties and connected Nevada processing networks",
+      "core_constraints": [
+        "Water",
+        "Permitting",
+        "Capital",
+        "Infrastructure",
+        "Supply Chain",
+        "Labor",
+        "Public Trust",
+        "Climate"
+      ],
+      "missing_data": [
+        "current construction completion and commissioning evidence",
+        "project-specific water rights, pumping, monitoring, and impacts",
+        "inspection, compliance, mitigation, and enforcement outcomes",
+        "qualified product output and customer acceptance",
+        "sustained operating cost, recovery, and production data",
+        "local workforce, housing, infrastructure, and community outcomes"
+      ]
+    },
+    {
+      "id": "local-northern-virginia-data-center-corridor",
+      "name": "Northern Virginia Data Center Corridor",
+      "slug": "northern-virginia-data-center-corridor",
+      "summary": "A concentrated compute market where utility planning, transmission siting, large-load tariffs, local land-use rules, air permits, water service, and community acceptance determine whether announced demand becomes durable operating capacity.",
+      "geography": "Loudoun, Prince William, and Fairfax counties, Virginia",
+      "core_constraints": [
+        "Power",
+        "Infrastructure",
+        "Land Use",
+        "Permitting",
+        "Water",
+        "Capital",
+        "Labor",
+        "Public Trust"
+      ],
+      "missing_data": [
+        "customer-specific load commitments and service agreements",
+        "completed transmission and substation milestones",
+        "facility-level water allocations, use, and cooling performance",
+        "permit-to-construction-to-operation conversion",
+        "workforce supply, completion, and retention outcomes",
+        "measured reliability, cost, noise, emissions, and community outcomes"
+      ]
+    },
+    {
+      "id": "local-ontario-real-estate",
+      "name": "Ontario Real Estate",
+      "slug": "ontario-real-estate",
+      "summary": "A housing and land market shaped by interest rates, migration, construction costs, zoning, infrastructure capacity, investor behavior, and household affordability.",
+      "geography": "Ontario, Canada",
+      "core_constraints": [
+        "Capital",
+        "Regulation",
+        "Labor",
+        "Infrastructure",
+        "Public Trust"
+      ],
+      "missing_data": [
+        "local inventory by submarket",
+        "permit timelines",
+        "infrastructure capacity by municipality",
+        "financing exposure by project type"
+      ]
+    },
+    {
+      "id": "local-us-southwest-chip-corridor",
+      "name": "U.S. Southwest Chip Corridor",
+      "slug": "us-southwest-chip-corridor",
+      "summary": "A semiconductor manufacturing region shaped by fab investment, industrial water demand, grid reliability, skilled labor, land use, supplier networks, and public incentives.",
+      "geography": "Arizona and adjacent U.S. Southwest industrial regions",
+      "core_constraints": [
+        "Water",
+        "Power",
+        "Labor",
+        "Manufacturing",
+        "Supply Chain",
+        "Public Trust"
+      ],
+      "missing_data": [
+        "facility-level water demand",
+        "interconnection queues",
+        "workforce pipeline capacity",
+        "supplier network maturity"
+      ]
+    }
+  ],
+  "casebooks": [
+    {
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "slug": "tsmc-arizona",
+      "title": "TSMC Arizona campus",
+      "named_entity": "TSMC Arizona",
+      "kind": "local_project",
+      "editorial_question": "How a semiconductor announcement becomes an accepted, serviced and repeat-producing facility.",
+      "canonical_briefing_id": "briefing-project-conversion-001-tsmc-arizona",
+      "local_system_ids": [
+        "local-us-southwest-chip-corridor"
+      ],
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "signal_ids": [
+        "signal-phoenix-tsmc-fab1-production-fab2-construction-complete",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ]
+    },
+    {
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "slug": "toronto-24-254930",
+      "title": "Toronto application 24 254930",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "kind": "local_project",
+      "editorial_question": "How a council decision moves through enactment, conditions, permitting, construction and occupancy.",
+      "canonical_briefing_id": "briefing-project-conversion-002-toronto-24-254930",
+      "local_system_ids": [
+        "local-ontario-real-estate"
+      ],
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-toronto-2025-development-pipeline-delivery-gap"
+      ]
+    },
+    {
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "slug": "northern-virginia-large-load",
+      "title": "Northern Virginia Golden-Mars and GS-5 large-load trail",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "kind": "local_project",
+      "editorial_question": "How compute demand meets tariffs, transmission, local standards and metered service.",
+      "canonical_briefing_id": "briefing-project-conversion-003-northern-virginia-large-load",
+      "local_system_ids": [
+        "local-northern-virginia-data-center-corridor"
+      ],
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "signal_ids": [
+        "signal-virginia-gs5-large-load-rate-class",
+        "signal-golden-mars-transmission-conditional-approval"
+      ]
+    },
+    {
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "slug": "space-coast-authority-to-mission",
+      "title": "Space Coast authorization-to-mission stack",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "kind": "local_project",
+      "editorial_question": "How site authority, environmental review and capital acceptance become recurring mission capacity.",
+      "canonical_briefing_id": "briefing-project-conversion-004-space-coast-authority",
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "signal_ids": [
+        "signal-shuttle-landing-facility-license-status-watch",
+        "signal-faa-starship-lc39a-environmental-decision",
+        "signal-slc40-final-environmental-decision"
+      ]
+    },
+    {
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "slug": "nevada-lithium-to-qualified-material",
+      "title": "Nevada lithium project pair",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "kind": "local_project",
+      "editorial_question": "How authorized and financed projects become compliant, qualified and repeatedly accepted material supply.",
+      "canonical_briefing_id": "briefing-project-conversion-005-nevada-lithium",
+      "local_system_ids": [
+        "local-nevada-lithium-processing-corridor"
+      ],
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "signal_ids": [
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates"
+      ]
+    },
+    {
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "slug": "gsa-pqc-adoption",
+      "title": "GSA post-quantum acquisition path",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "kind": "adoption_case",
+      "editorial_question": "How a procurement path becomes a validated migration and a retired vulnerable system.",
+      "canonical_briefing_id": "briefing-adoption-case-001-gsa-pqc",
+      "local_system_ids": [],
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-federal-pqc-migration-plans-and-deadlines"
+      ]
+    },
+    {
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "slug": "nist-aria-assurance",
+      "title": "NIST ARIA assurance path",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "kind": "adoption_case",
+      "editorial_question": "How an evaluation pilot becomes authorization, monitoring, correction and comparable mission evidence.",
+      "canonical_briefing_id": "briefing-adoption-case-002-nist-aria",
+      "local_system_ids": [],
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nasa-ai-use-cases-lack-comparable-outcome-measures"
+      ]
+    },
+    {
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "slug": "waymo-california-service",
+      "title": "Waymo California fared driverless service",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "kind": "adoption_case",
+      "editorial_question": "How operating authority becomes a stable public service, safety, access and reliability series.",
+      "canonical_briefing_id": "briefing-adoption-case-003-waymo-california",
+      "local_system_ids": [],
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-cpuc-av-reporting-needs-public-comparable-rollup"
+      ]
+    }
+  ],
+  "cross_system_stories": [
+    {
+      "story_id": "105-STORY-001",
+      "slug": "compute-power-water",
+      "title": "Compute, power and water",
+      "topic_ids": [
+        "topic-chips-and-compute",
+        "topic-energy",
+        "topic-water"
+      ],
+      "local_system_ids": [
+        "local-northern-virginia-data-center-corridor",
+        "local-us-southwest-chip-corridor"
+      ],
+      "editorial_question": "What must be accepted and measured before announced compute or fab capacity becomes durable operating capacity?",
+      "interpretation_boundary": "This story connects existing records for comparative reading. It creates no new evidence, causal conclusion, score, ranking or operating outcome."
+    },
+    {
+      "story_id": "105-STORY-002",
+      "slug": "permission-to-operation",
+      "title": "Permission is not operation",
+      "topic_ids": [
+        "topic-policy-and-standards",
+        "topic-finance-and-risk",
+        "topic-human-futures"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor",
+        "local-nevada-lithium-processing-corridor",
+        "local-northern-virginia-data-center-corridor",
+        "local-ontario-real-estate",
+        "local-us-southwest-chip-corridor"
+      ],
+      "editorial_question": "Where do permits, tariffs, finance and local legitimacy stop—and what evidence begins the operating claim?",
+      "interpretation_boundary": "This story connects existing records for comparative reading. It creates no new evidence, causal conclusion, score, ranking or operating outcome."
+    },
+    {
+      "story_id": "105-STORY-003",
+      "slug": "standards-to-adoption",
+      "title": "Standards to adoption",
+      "topic_ids": [
+        "topic-quantum",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "local_system_ids": [],
+      "editorial_question": "Which inventories, procurements, tests, cutovers and retirements distinguish a published standard from completed adoption?",
+      "interpretation_boundary": "This story connects existing records for comparative reading. It creates no new evidence, causal conclusion, score, ranking or operating outcome."
+    },
+    {
+      "story_id": "105-STORY-004",
+      "slug": "autonomous-service-accountability",
+      "title": "Autonomous service and public accountability",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "local_system_ids": [],
+      "editorial_question": "Which exposure, service, accessibility, complaint and safety denominators make an operating autonomy claim publicly legible?",
+      "interpretation_boundary": "This story connects existing records for comparative reading. It creates no new evidence, causal conclusion, score, ranking or operating outcome."
+    },
+    {
+      "story_id": "105-STORY-005",
+      "slug": "research-to-assurance",
+      "title": "Research to assurance",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-discovery-technologies",
+        "topic-cybersecurity"
+      ],
+      "local_system_ids": [],
+      "editorial_question": "What separates a successful evaluation from authorization, continuous monitoring and changed mission outcomes?",
+      "interpretation_boundary": "This story connects existing records for comparative reading. It creates no new evidence, causal conclusion, score, ranking or operating outcome."
+    },
+    {
+      "story_id": "105-STORY-006",
+      "slug": "minerals-to-manufacturing",
+      "title": "Minerals to manufacturing",
+      "topic_ids": [
+        "topic-critical-minerals",
+        "topic-advanced-manufacturing",
+        "topic-energy"
+      ],
+      "local_system_ids": [
+        "local-nevada-lithium-processing-corridor",
+        "local-us-southwest-chip-corridor"
+      ],
+      "editorial_question": "Which construction, commissioning, qualification and customer-acceptance gates connect resources to dependable industrial supply?",
+      "interpretation_boundary": "This story connects existing records for comparative reading. It creates no new evidence, causal conclusion, score, ranking or operating outcome."
+    },
+    {
+      "story_id": "105-STORY-007",
+      "slug": "space-capacity-to-cadence",
+      "title": "Space capacity to mission cadence",
+      "topic_ids": [
+        "topic-space",
+        "topic-aviation",
+        "topic-energy"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "editorial_question": "How do site authority, range capacity, utilities and accepted assets become repeated missions rather than one-off milestones?",
+      "interpretation_boundary": "This story connects existing records for comparative reading. It creates no new evidence, causal conclusion, score, ranking or operating outcome."
+    },
+    {
+      "story_id": "105-STORY-008",
+      "slug": "housing-infrastructure-conversion",
+      "title": "Housing and infrastructure conversion",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "local_system_ids": [
+        "local-ontario-real-estate"
+      ],
+      "editorial_question": "Which enactment, servicing, financing, construction and occupancy records reveal the distance between approvals and delivered homes?",
+      "interpretation_boundary": "This story connects existing records for comparative reading. It creates no new evidence, causal conclusion, score, ranking or operating outcome."
+    },
+    {
+      "story_id": "105-STORY-009",
+      "slug": "climate-water-industrial-resilience",
+      "title": "Climate, water and industrial resilience",
+      "topic_ids": [
+        "topic-climate",
+        "topic-water",
+        "topic-advanced-manufacturing"
+      ],
+      "local_system_ids": [
+        "local-us-southwest-chip-corridor",
+        "local-nevada-lithium-processing-corridor"
+      ],
+      "editorial_question": "Which local hazard, service and facility measurements connect climate context to actual industrial resilience?",
+      "interpretation_boundary": "This story connects existing records for comparative reading. It creates no new evidence, causal conclusion, score, ranking or operating outcome."
+    },
+    {
+      "story_id": "105-STORY-010",
+      "slug": "workforce-to-qualified-capacity",
+      "title": "Workforce to qualified capacity",
+      "topic_ids": [
+        "topic-advanced-manufacturing",
+        "topic-chips-and-compute",
+        "topic-human-futures"
+      ],
+      "local_system_ids": [
+        "local-us-southwest-chip-corridor"
+      ],
+      "editorial_question": "How do training seats, completions, placements, retention and facility qualification combine into an evidenced capacity claim?",
+      "interpretation_boundary": "This story connects existing records for comparative reading. It creates no new evidence, causal conclusion, score, ranking or operating outcome."
+    },
+    {
+      "story_id": "105-STORY-011",
+      "slug": "finance-risk-and-infrastructure",
+      "title": "Finance, risk and infrastructure",
+      "topic_ids": [
+        "topic-finance-and-risk",
+        "topic-policy-and-standards",
+        "topic-energy"
+      ],
+      "local_system_ids": [
+        "local-northern-virginia-data-center-corridor",
+        "local-nevada-lithium-processing-corridor"
+      ],
+      "editorial_question": "When does financing reduce a conversion constraint, and when does it merely move the project to a new unresolved gate?",
+      "interpretation_boundary": "This story connects existing records for comparative reading. It creates no new evidence, causal conclusion, score, ranking or operating outcome."
+    },
+    {
+      "story_id": "105-STORY-012",
+      "slug": "observation-to-outcome",
+      "title": "Observation to outcome",
+      "topic_ids": [
+        "topic-discovery-technologies",
+        "topic-ai-for-science",
+        "topic-climate"
+      ],
+      "local_system_ids": [],
+      "editorial_question": "What denominator, recurrence, uncertainty and attribution work is required before observations support an outcome claim?",
+      "interpretation_boundary": "This story connects existing records for comparative reading. It creates no new evidence, causal conclusion, score, ranking or operating outcome."
+    }
+  ],
+  "outcomes": [
+    {
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "slug": "tsmc-arizona",
+      "title": "TSMC Arizona campus",
+      "outcome_question": "Can accepted utility service, facility qualification and recurring output be measured on compatible periods?"
+    },
+    {
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "slug": "toronto-24-254930",
+      "title": "Toronto application 24 254930",
+      "outcome_question": "Can enactment, permits, starts, completions and occupancy be observed without treating approval as delivery?"
+    },
+    {
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "slug": "northern-virginia-large-load",
+      "title": "Northern Virginia Golden-Mars and GS-5 large-load trail",
+      "outcome_question": "Can accepted capacity, metered service, reliability and local effects be measured for named large-load assets?"
+    },
+    {
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "slug": "space-coast-authority-to-mission",
+      "title": "Space Coast authorization-to-mission stack",
+      "outcome_question": "Can accepted capital, missions, utilization and reliability be observed with operator and period denominators?"
+    },
+    {
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "slug": "nevada-lithium-to-qualified-material",
+      "title": "Nevada lithium project pair",
+      "outcome_question": "Can qualified lots, accepted shipments, environmental compliance and recurring output form a compatible series?"
+    },
+    {
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "slug": "gsa-pqc-adoption",
+      "title": "GSA post-quantum acquisition path",
+      "outcome_question": "Can inventories, cutovers, validated systems and vulnerable-system retirement be measured for a named agency?"
+    },
+    {
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "slug": "nist-aria-assurance",
+      "title": "NIST ARIA assurance path",
+      "outcome_question": "Can authorization, monitoring, incidents, corrective action and mission performance be linked without over-attribution?"
+    },
+    {
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "slug": "waymo-california-service",
+      "title": "Waymo California fared driverless service",
+      "outcome_question": "Can service exposure, rides, interventions, safety, accessibility and complaints be reported with stable definitions?"
+    }
+  ],
+  "journeys": [
+    {
+      "journey_id": "110-JOURNEY-001",
+      "slug": "tsmc-arizona",
+      "title": "TSMC Arizona: follow the evidence chain",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "entry_question": "How a semiconductor announcement becomes an accepted, serviced and repeat-producing facility.",
+      "stops": [
+        "canonical summary",
+        "verified chronology",
+        "current decision boundary",
+        "outcome measurement contract",
+        "next decisive artifact"
+      ]
+    },
+    {
+      "journey_id": "110-JOURNEY-002",
+      "slug": "toronto-24-254930",
+      "title": "Victoria Park Avenue and Thora Avenue application 24 254930: follow the evidence chain",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "entry_question": "How a council decision moves through enactment, conditions, permitting, construction and occupancy.",
+      "stops": [
+        "canonical summary",
+        "verified chronology",
+        "current decision boundary",
+        "outcome measurement contract",
+        "next decisive artifact"
+      ]
+    },
+    {
+      "journey_id": "110-JOURNEY-003",
+      "slug": "northern-virginia-large-load",
+      "title": "Golden-Mars transmission project and Dominion GS-5 service class: follow the evidence chain",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "entry_question": "How compute demand meets tariffs, transmission, local standards and metered service.",
+      "stops": [
+        "canonical summary",
+        "verified chronology",
+        "current decision boundary",
+        "outcome measurement contract",
+        "next decisive artifact"
+      ]
+    },
+    {
+      "journey_id": "110-JOURNEY-004",
+      "slug": "space-coast-authority-to-mission",
+      "title": "Shuttle Landing Facility, LC-39A, and SLC-40: follow the evidence chain",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "entry_question": "How site authority, environmental review and capital acceptance become recurring mission capacity.",
+      "stops": [
+        "canonical summary",
+        "verified chronology",
+        "current decision boundary",
+        "outcome measurement contract",
+        "next decisive artifact"
+      ]
+    },
+    {
+      "journey_id": "110-JOURNEY-005",
+      "slug": "nevada-lithium-to-qualified-material",
+      "title": "Thacker Pass and Rhyolite Ridge: follow the evidence chain",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "entry_question": "How authorized and financed projects become compliant, qualified and repeatedly accepted material supply.",
+      "stops": [
+        "canonical summary",
+        "verified chronology",
+        "current decision boundary",
+        "outcome measurement contract",
+        "next decisive artifact"
+      ]
+    },
+    {
+      "journey_id": "110-JOURNEY-006",
+      "slug": "gsa-pqc-adoption",
+      "title": "GSA Post-Quantum Cryptography Buyer's Guide: follow the evidence chain",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "entry_question": "How a procurement path becomes a validated migration and a retired vulnerable system.",
+      "stops": [
+        "canonical summary",
+        "verified chronology",
+        "current decision boundary",
+        "outcome measurement contract",
+        "next decisive artifact"
+      ]
+    },
+    {
+      "journey_id": "110-JOURNEY-007",
+      "slug": "nist-aria-assurance",
+      "title": "NIST ARIA 0.1 pilot: follow the evidence chain",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "entry_question": "How an evaluation pilot becomes authorization, monitoring, correction and comparable mission evidence.",
+      "stops": [
+        "canonical summary",
+        "verified chronology",
+        "current decision boundary",
+        "outcome measurement contract",
+        "next decisive artifact"
+      ]
+    },
+    {
+      "journey_id": "110-JOURNEY-008",
+      "slug": "waymo-california-service",
+      "title": "Waymo fared driverless passenger service in California: follow the evidence chain",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "entry_question": "How operating authority becomes a stable public service, safety, access and reliability series.",
+      "stops": [
+        "canonical summary",
+        "verified chronology",
+        "current decision boundary",
+        "outcome measurement contract",
+        "next decisive artifact"
+      ]
+    }
+  ],
+  "accessible_editions": [
+    {
+      "edition_id": "109-PLAIN-ADVANCED-MANUFACTURING",
+      "slug": "plain-language-advanced-manufacturing",
+      "title": "Advanced Manufacturing in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-advanced-manufacturing",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-AGRICULTURE-AND-BIOECONOMY",
+      "slug": "plain-language-agriculture-and-bioeconomy",
+      "title": "Agriculture and Bioeconomy in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-agriculture-and-bioeconomy",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-AI-FOR-SCIENCE",
+      "slug": "plain-language-ai-for-science",
+      "title": "AI for Science in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-ai-for-science",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-AVIATION",
+      "slug": "plain-language-aviation",
+      "title": "Aviation in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-aviation",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-CHIPS-AND-COMPUTE",
+      "slug": "plain-language-chips-and-compute",
+      "title": "Chips and Compute in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-chips-and-compute",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-CLIMATE",
+      "slug": "plain-language-climate",
+      "title": "Climate in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-climate",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-CRITICAL-MINERALS",
+      "slug": "plain-language-critical-minerals",
+      "title": "Critical Minerals in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-critical-minerals",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-CYBERSECURITY",
+      "slug": "plain-language-cybersecurity",
+      "title": "Cybersecurity in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-cybersecurity",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-DISCOVERY-TECHNOLOGIES",
+      "slug": "plain-language-discovery-technologies",
+      "title": "Discovery Technologies in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-discovery-technologies",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-ENERGY",
+      "slug": "plain-language-energy",
+      "title": "Energy in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-energy",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-FINANCE-AND-RISK",
+      "slug": "plain-language-finance-and-risk",
+      "title": "Finance and Risk in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-finance-and-risk",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-HUMAN-FUTURES",
+      "slug": "plain-language-human-futures",
+      "title": "Human Futures in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-human-futures",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-MOBILITY",
+      "slug": "plain-language-mobility",
+      "title": "Mobility in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-mobility",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-POLICY-AND-STANDARDS",
+      "slug": "plain-language-policy-and-standards",
+      "title": "Policy and Standards in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-policy-and-standards",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-QUANTUM",
+      "slug": "plain-language-quantum",
+      "title": "Quantum in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-quantum",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-SPACE",
+      "slug": "plain-language-space",
+      "title": "Space in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-space",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-PLAIN-WATER",
+      "slug": "plain-language-water",
+      "title": "Water in plain language",
+      "edition_type": "plain_language_topic",
+      "topic_id": "topic-water",
+      "local_system_id": null,
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-LOW-FLORIDA-SPACE-COAST-LAUNCH-CORRIDOR",
+      "slug": "low-bandwidth-florida-space-coast-launch-corridor",
+      "title": "Florida Space Coast Launch Corridor: low-bandwidth field note",
+      "edition_type": "low_bandwidth_place",
+      "topic_id": null,
+      "local_system_id": "local-florida-space-coast-launch-corridor",
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-LOW-NEVADA-LITHIUM-PROCESSING-CORRIDOR",
+      "slug": "low-bandwidth-nevada-lithium-battery-materials-corridor",
+      "title": "Nevada Lithium And Battery Materials Corridor: low-bandwidth field note",
+      "edition_type": "low_bandwidth_place",
+      "topic_id": null,
+      "local_system_id": "local-nevada-lithium-processing-corridor",
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-LOW-NORTHERN-VIRGINIA-DATA-CENTER-CORRIDOR",
+      "slug": "low-bandwidth-northern-virginia-data-center-corridor",
+      "title": "Northern Virginia Data Center Corridor: low-bandwidth field note",
+      "edition_type": "low_bandwidth_place",
+      "topic_id": null,
+      "local_system_id": "local-northern-virginia-data-center-corridor",
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-LOW-ONTARIO-REAL-ESTATE",
+      "slug": "low-bandwidth-ontario-real-estate",
+      "title": "Ontario Real Estate: low-bandwidth field note",
+      "edition_type": "low_bandwidth_place",
+      "topic_id": null,
+      "local_system_id": "local-ontario-real-estate",
+      "review_state": "Published"
+    },
+    {
+      "edition_id": "109-LOW-US-SOUTHWEST-CHIP-CORRIDOR",
+      "slug": "low-bandwidth-us-southwest-chip-corridor",
+      "title": "U.S. Southwest Chip Corridor: low-bandwidth field note",
+      "edition_type": "low_bandwidth_place",
+      "topic_id": null,
+      "local_system_id": "local-us-southwest-chip-corridor",
+      "review_state": "Published"
+    }
+  ],
+  "translation_pilots": [
+    {
+      "pilot_id": "109-TRANSLATION-FR",
+      "language": "French",
+      "status": "In Review",
+      "publication_route": null,
+      "next_action": "Qualified human review of terminology, claims and links."
+    },
+    {
+      "pilot_id": "109-TRANSLATION-ES",
+      "language": "Spanish",
+      "status": "In Review",
+      "publication_route": null,
+      "next_action": "Qualified human review of terminology, claims and links."
+    }
+  ],
+  "editorial_calendar": [
+    {
+      "cadence": "monthly",
+      "deliverable": "Freshness and correction review",
+      "next_due": "2026-09-30"
+    },
+    {
+      "cadence": "quarterly",
+      "deliverable": "Outcomes and casebook review",
+      "next_due": "2026-10-09"
+    },
+    {
+      "cadence": "annual",
+      "deliverable": "State of frontier systems edition",
+      "next_due": "2027-08-29"
+    }
+  ]
+}

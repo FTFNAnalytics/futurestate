@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../components/review/ReviewHeader.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+
+export async function getStaticPaths() {
+  const topics = await getCollection("topics");
+  return topics.map((topic) => ({ params: { slug: topic.data.slug }, props: { topicId: topic.data.id } }));
+}
+const { topicId } = Astro.props;
+const topic = (await getCollection("topics")).find((item) => item.data.id === topicId)!;
+const signals = (await getCollection("signals")).filter((signal) => signal.data.record_status === "Published" && signal.data.primary_topic === topic.data.name).sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf());
+---
+
+<BaseLayout title={`Learn ${topic.data.name} | FTFN`} description={`Beginner, practitioner and expert reading paths for ${topic.data.name}.`}>
+  <ReviewHeader eyebrow="Civic learning edition" title={`Learn ${topic.data.name}`} summary="Choose a depth, trace the evidence, and practice separating a public claim from the decision or outcome it does—and does not—support." phase={108} />
+  <section class="page-section review-columns">
+    <article class="record-card record-card--featured"><div class="eyebrow">Beginner · 10 minutes</div><h2>The big idea</h2><p>{topic.data.summary}</p><h3>Words to carry</h3><div class="meta-row">{topic.data.primary_constraints.map((item) => <MetaPill label={item} />)}</div><p class="card-note">Ask: is this record about a plan, money, permission, a built thing, repeated operation, or a measured outcome?</p></article>
+    <article class="record-card"><div class="eyebrow">Practitioner · 30 minutes</div><h2>Trace three records</h2><ol>{signals.slice(0, 3).map((signal) => <li><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a><br /><span>{signal.data.signal_type} · {signal.data.maturity_level}</span></li>)}</ol><p>For each record, identify the authority, named object, date, geography, receiving system and exact downstream gate.</p></article>
+  </section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Expert · evidence audit</div><h2>Test the canonical reading.</h2><ol><li>Open the source list on each signal and inspect primary versus supporting evidence.</li><li>Compare the signal’s claim scope with its summary and downstream dependencies.</li><li>Look for compatible denominators before comparing performance.</li><li>Record what observation would disconfirm the leading interpretation.</li></ol></div><article class="record-card"><div class="eyebrow">Audit questions</div><ul>{topic.data.watch_questions.slice(0, 5).map((question) => <li>{question}</li>)}</ul></article></section>
+  <section class="page-section prose-page"><h2>Practice prompt</h2><p>Choose one Published signal. Write two sentences: first, the strongest claim the source directly supports; second, the next artifact required before you would call the change implemented or operational. Then compare your answer with the signal’s evidence boundary.</p><div class="button-row"><a class="inline-link" href={`/review/topics/${topic.data.slug}/`}>Read the canonical chapter</a><a class="inline-link" href={`/review/uncertainty/${topic.data.slug}/`}>Challenge the chapter</a></div></section>
+</BaseLayout>

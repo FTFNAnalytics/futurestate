@@ -164,7 +164,7 @@ export function serializePublicReaderPathway(pathway: CollectionEntry<"readerPat
 }
 
 export function publicDatasetResponse(
-  dataset: "sources" | "topics" | "signals" | "research" | "pathways" | "evidence_queue",
+  dataset: "sources" | "topics" | "signals" | "research" | "pathways" | "evidence_queue" | "operating_cycle" | "project_conversion" | "conversion_events" | "conversion_gates" | "conversion_stage_matrix" | "qualification_packets" | "evidence_return_envelopes" | "phase_60c_editorial_desk" | "compatible_series_outcome_cohorts" | "measurement_specifications" | "observation_review_series_admission" | "longitudinal_panels_outcome_claims" | "outcome_evidence_counterfactual_designs" | "analysis_execution_result_adjudication",
   recordScope: string,
   records: unknown[]
 ): Response {

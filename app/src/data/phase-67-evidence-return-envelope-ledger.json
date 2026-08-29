@@ -1,0 +1,579 @@
+{
+  "schema_version": "1.0",
+  "phase": "67",
+  "ledger_id": "evidence-return-envelope-ledger-001",
+  "title": "Evidence Return Envelope Ledger",
+  "captured_date": "2026-08-12",
+  "as_of_date": "2026-08-23",
+  "structural_status": "Complete",
+  "operational_status": "Wave 60B Complete; Wave 60C Scheduled",
+  "scope": "Thirteen public-safe return envelopes preserving every Phase 60 Evidence Cycle 001 gate, exact artifact, date, source, signal, binding decision, and propagation surface.",
+  "interpretation_boundary": "An envelope is a scheduled intake contract. Future envelopes have no attempted surfaces, access results, receipts, decisions, or propagation claims.",
+  "metrics": {
+    "envelopes": 13,
+    "wave_60b": 2,
+    "wave_60c": 6,
+    "wave_60d": 5,
+    "named_file_bound": 3,
+    "no_transfer": 10,
+    "receipts_created": 2,
+    "decisions_completed": 2,
+    "propagation_completed": 2
+  },
+  "envelope_records": [
+    {
+      "envelope_id": "67-RETURN-001",
+      "slug": "67-return-001-darpa-results",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-DARPA-RESULTS",
+      "wave": "60B",
+      "target": "DARPA Lift Challenge official measured results",
+      "origin_record_id": "58-QUEUE-DARPA-RESULTS",
+      "scheduled_check_date": "2026-08-14",
+      "envelope_state": "Release Verified",
+      "exact_next_artifact": "A dated DARPA final-results artifact identifying measured team performance, winners, and prize decisions.",
+      "source_ids": [
+        "source-darpa-lift-challenge-2026"
+      ],
+      "underlying_signal_id": "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+      "named_file_ids": [],
+      "qualification_packet_ids": [],
+      "binding_decision": "No named-file append; DARPA Lift Challenge evidence cannot transfer to the Waymo operator file.",
+      "canonical_dossier_ids": [
+        "briefing-adoption-003-autonomy-evtol"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [],
+      "attempted_surfaces": [
+        "https://www.darpa.mil/news/2026/lift-challenge-awards",
+        "https://www.darpa.mil/research/programs/lift"
+      ],
+      "access_result": "Exact official results artifact found with measured objective-category ratios, winners, and prize decisions.",
+      "receipt_type": "Change Note",
+      "receipt_id": "receipt-60-darpa-2026-08-23-results",
+      "decision_date": "2026-08-23",
+      "decision_status": "material_change",
+      "propagation_status": "complete",
+      "next_check_date": "2026-09-23",
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    },
+    {
+      "envelope_id": "67-RETURN-002",
+      "slug": "67-return-002-space-coast-slf-licence",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-SPACE-COAST-SLF-LICENCE",
+      "wave": "60B",
+      "target": "Space Coast Shuttle Landing Facility licence disposition",
+      "origin_record_id": "gap-013",
+      "scheduled_check_date": "2026-08-15",
+      "envelope_state": "Release Verified",
+      "exact_next_artifact": "A formal FAA renewal, replacement, lapse, surrender, or other current disposition for the Shuttle Landing Facility site licence.",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license"
+      ],
+      "underlying_signal_id": "signal-shuttle-landing-facility-license-status-watch",
+      "named_file_ids": [
+        "61-PROJECT-SPACE-COAST-AUTHORITY"
+      ],
+      "qualification_packet_ids": [
+        "67-QP-013",
+        "67-QP-014",
+        "67-QP-015",
+        "67-QP-016"
+      ],
+      "binding_decision": "Append after the real licence receipt and propagation decision.",
+      "canonical_dossier_ids": [
+        "briefing-local-conversion-004-space-coast"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-local-authorization-is-not-operation",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "attempted_surfaces": [
+        "https://www.faa.gov/space/stakeholder_engagement/shuttle_landing_facility",
+        "https://www.faa.gov/space/spaceports_by_state",
+        "https://www.faa.gov/media/69216"
+      ],
+      "access_result": "Official FAA surfaces remained accessible but supplied no later formal disposition beyond the displayed January 15, 2026 expiration or the 2021 licence revision.",
+      "receipt_type": "No Material Change",
+      "receipt_id": "receipt-60-slf-2026-08-15-no-material-change",
+      "decision_date": "2026-08-15",
+      "decision_status": "no_material_change",
+      "propagation_status": "complete",
+      "next_check_date": "2026-09-15",
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    },
+    {
+      "envelope_id": "67-RETURN-003",
+      "slug": "67-return-003-louisiana-starlink-adoption",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+      "wave": "60C",
+      "target": "Louisiana Starlink observed adoption",
+      "origin_record_id": "58-QUEUE-LOUISIANA-STARLINK-ADOPTION",
+      "scheduled_check_date": "2026-09-01",
+      "envelope_state": "Scheduled",
+      "exact_next_artifact": "Observed subscription or installation evidence for a fixed eligible-location cohort after service becomes available.",
+      "source_ids": [
+        "source-57b-louisiana-starlink-bead-agreement"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-la-starlink-adoption",
+      "named_file_ids": [],
+      "qualification_packet_ids": [],
+      "binding_decision": "No Phase 61 named file shares the Louisiana provider identity.",
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [],
+      "attempted_surfaces": [],
+      "access_result": null,
+      "receipt_type": null,
+      "receipt_id": null,
+      "decision_date": null,
+      "decision_status": "scheduled",
+      "propagation_status": "not_started",
+      "next_check_date": null,
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    },
+    {
+      "envelope_id": "67-RETURN-004",
+      "slug": "67-return-004-louisiana-nextlink-adoption",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-LOUISIANA-NEXTLINK-ADOPTION",
+      "wave": "60C",
+      "target": "Louisiana Nextlink observed adoption",
+      "origin_record_id": "58-QUEUE-LOUISIANA-NEXTLINK-ADOPTION",
+      "scheduled_check_date": "2026-09-09",
+      "envelope_state": "Scheduled",
+      "exact_next_artifact": "Observed subscription or take-rate evidence for a fixed eligible-location cohort after service availability.",
+      "source_ids": [
+        "source-57b-louisiana-nextlink-first-bead-tower"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-la-nextlink-adoption",
+      "named_file_ids": [],
+      "qualification_packet_ids": [],
+      "binding_decision": "No Phase 61 named file shares the Louisiana provider identity.",
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [],
+      "attempted_surfaces": [],
+      "access_result": null,
+      "receipt_type": null,
+      "receipt_id": null,
+      "decision_date": null,
+      "decision_status": "scheduled",
+      "propagation_status": "not_started",
+      "next_check_date": null,
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    },
+    {
+      "envelope_id": "67-RETURN-005",
+      "slug": "67-return-005-amtrak-pids-closeout",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-AMTRAK-PIDS-CLOSEOUT",
+      "wave": "60C",
+      "target": "Amtrak PIDS final closeout",
+      "origin_record_id": "58-QUEUE-AMTRAK-PIDS-CLOSEOUT",
+      "scheduled_check_date": "2026-09-10",
+      "envelope_state": "Scheduled",
+      "exact_next_artifact": "A final FRA-accepted closeout record tied to the PIDS program scope and completed deployment denominator.",
+      "source_ids": [
+        "source-57b-amtrak-ada-progress-june-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-amtrak-pids",
+      "named_file_ids": [],
+      "qualification_packet_ids": [],
+      "binding_decision": "No Phase 61 named file covers the Amtrak asset.",
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [],
+      "attempted_surfaces": [],
+      "access_result": null,
+      "receipt_type": null,
+      "receipt_id": null,
+      "decision_date": null,
+      "decision_status": "scheduled",
+      "propagation_status": "not_started",
+      "next_check_date": null,
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    },
+    {
+      "envelope_id": "67-RETURN-006",
+      "slug": "67-return-006-hanford-material-balance",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-HANFORD-MATERIAL-BALANCE",
+      "wave": "60C",
+      "target": "Hanford complete material balance",
+      "origin_record_id": "58-QUEUE-HANFORD-MATERIAL-BALANCE",
+      "scheduled_check_date": "2026-09-10",
+      "envelope_state": "Scheduled",
+      "exact_next_artifact": "A compatible material balance covering feed, immobilized glass, secondary waste, inventory change, losses, period, and reconciliation method.",
+      "source_ids": [
+        "source-57d-hanford-wtp-consent-july-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-hanford-mass-balance",
+      "named_file_ids": [],
+      "qualification_packet_ids": [],
+      "binding_decision": "No Phase 61 named file covers the Hanford material system.",
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-advanced-manufacturing-research-to-production"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [],
+      "attempted_surfaces": [],
+      "access_result": null,
+      "receipt_type": null,
+      "receipt_id": null,
+      "decision_date": null,
+      "decision_status": "scheduled",
+      "propagation_status": "not_started",
+      "next_check_date": null,
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    },
+    {
+      "envelope_id": "67-RETURN-007",
+      "slug": "67-return-007-nnsa-gao-baseline",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-NNSA-GAO-BASELINE",
+      "wave": "60C",
+      "target": "NNSA GAO enterprise baseline closure",
+      "origin_record_id": "58-QUEUE-NNSA-GAO-ENTERPRISE-BASELINE",
+      "scheduled_check_date": "2026-09-10",
+      "envelope_state": "Scheduled",
+      "exact_next_artifact": "A final enterprise-wide integrated cost and schedule baseline plus GAO closure evidence tied to recommendation GAO-23-104661.",
+      "source_ids": [
+        "source-56q-gao-23-104661-recommendation-status"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-nnsa-gao-baseline",
+      "named_file_ids": [],
+      "qualification_packet_ids": [],
+      "binding_decision": "No Phase 61 named file covers the NNSA baseline.",
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [],
+      "attempted_surfaces": [],
+      "access_result": null,
+      "receipt_type": null,
+      "receipt_id": null,
+      "decision_date": null,
+      "decision_status": "scheduled",
+      "propagation_status": "not_started",
+      "next_check_date": null,
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    },
+    {
+      "envelope_id": "67-RETURN-008",
+      "slug": "67-return-008-montana-completed-quarter",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-MONTANA-COMPLETED-QUARTER",
+      "wave": "60C",
+      "target": "Montana BEAD completed quarterly outcome",
+      "origin_record_id": "58-QUEUE-MONTANA-COMPLETED-QUARTER",
+      "scheduled_check_date": "2026-09-15",
+      "envelope_state": "Scheduled",
+      "exact_next_artifact": "One complete public quarterly report with project identity, reporting period, locations, completion state, and outcome denominator.",
+      "source_ids": [
+        "source-57f-montana-bead-resource-index-august-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-mt-bead-quarter",
+      "named_file_ids": [],
+      "qualification_packet_ids": [],
+      "binding_decision": "No Phase 61 named file covers the Montana cohort.",
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-local-authorization-is-not-operation",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [],
+      "attempted_surfaces": [],
+      "access_result": null,
+      "receipt_type": null,
+      "receipt_id": null,
+      "decision_date": null,
+      "decision_status": "scheduled",
+      "propagation_status": "not_started",
+      "next_check_date": null,
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    },
+    {
+      "envelope_id": "67-RETURN-009",
+      "slug": "67-return-009-arizona-wastewater",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-ARIZONA-WASTEWATER",
+      "wave": "60D",
+      "target": "Phoenix and TSMC wastewater delivery and operation",
+      "origin_record_id": "gap-002",
+      "scheduled_check_date": "2026-09-22",
+      "envelope_state": "Scheduled",
+      "exact_next_artifact": "A project record establishing completed and accepted conveyance work, operating reclaimed-water infrastructure, measured flow, discharge or compliance, or a facility water balance.",
+      "source_ids": [
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "underlying_signal_id": "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+      "named_file_ids": [
+        "61-PROJECT-TSMC-ARIZONA"
+      ],
+      "qualification_packet_ids": [
+        "67-QP-001",
+        "67-QP-002",
+        "67-QP-003",
+        "67-QP-004"
+      ],
+      "binding_decision": "Append after the real wastewater receipt and propagation decision.",
+      "canonical_dossier_ids": [
+        "briefing-local-conversion-001-southwest-chips"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [
+        "local-us-southwest-chip-corridor"
+      ],
+      "attempted_surfaces": [],
+      "access_result": null,
+      "receipt_type": null,
+      "receipt_id": null,
+      "decision_date": null,
+      "decision_status": "scheduled",
+      "propagation_status": "not_started",
+      "next_check_date": null,
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    },
+    {
+      "envelope_id": "67-RETURN-010",
+      "slug": "67-return-010-nnsa-accepted-capacity",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-NNSA-ACCEPTED-CAPACITY",
+      "wave": "60D",
+      "target": "NNSA accepted operating capacity",
+      "origin_record_id": "58-QUEUE-NNSA-ACCEPTED-CAPACITY",
+      "scheduled_check_date": "2026-09-24",
+      "envelope_state": "Scheduled",
+      "exact_next_artifact": "A final accepted operating-capacity artifact linked to operating configuration, acceptance criteria, and observed qualified output.",
+      "source_ids": [
+        "source-57b-nnsa-pit-production-draft-peis-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-nnsa-accepted-capacity",
+      "named_file_ids": [],
+      "qualification_packet_ids": [],
+      "binding_decision": "No Phase 61 named file covers the NNSA capacity object.",
+      "canonical_dossier_ids": [
+        "briefing-adoption-004-advanced-manufacturing"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-advanced-manufacturing-research-to-production"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [],
+      "attempted_surfaces": [],
+      "access_result": null,
+      "receipt_type": null,
+      "receipt_id": null,
+      "decision_date": null,
+      "decision_status": "scheduled",
+      "propagation_status": "not_started",
+      "next_check_date": null,
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    },
+    {
+      "envelope_id": "67-RETURN-011",
+      "slug": "67-return-011-loudoun-standards",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-LOUDOUN-STANDARDS",
+      "wave": "60D",
+      "target": "Loudoun Phase 2 data-center standards",
+      "origin_record_id": "gap-011",
+      "scheduled_check_date": "2026-10-01",
+      "envelope_state": "Scheduled",
+      "exact_next_artifact": "A county staff report, public-hearing record, board action, adopted text, effective date, or formal revised schedule for Phase 2 standards.",
+      "source_ids": [
+        "source-loudoun-phase2-data-center-standards"
+      ],
+      "underlying_signal_id": "signal-loudoun-phase2-data-center-standards-watch",
+      "named_file_ids": [
+        "61-PROJECT-NOVA-LARGE-LOAD"
+      ],
+      "qualification_packet_ids": [
+        "67-QP-009",
+        "67-QP-010",
+        "67-QP-011",
+        "67-QP-012"
+      ],
+      "binding_decision": "Append only when the receipt materially changes the named large-load receiving-system stage.",
+      "canonical_dossier_ids": [
+        "briefing-local-conversion-002-northern-virginia-compute"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [
+        "local-northern-virginia-data-center-corridor"
+      ],
+      "attempted_surfaces": [],
+      "access_result": null,
+      "receipt_type": null,
+      "receipt_id": null,
+      "decision_date": null,
+      "decision_status": "scheduled",
+      "propagation_status": "not_started",
+      "next_check_date": null,
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    },
+    {
+      "envelope_id": "67-RETURN-012",
+      "slug": "67-return-012-amtrak-named-asset-reliability",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-AMTRAK-NAMED-ASSET-RELIABILITY",
+      "wave": "60D",
+      "target": "Amtrak named-asset reliability",
+      "origin_record_id": "58-QUEUE-AMTRAK-NAMED-ASSET-RELIABILITY",
+      "scheduled_check_date": "2026-10-09",
+      "envelope_state": "Scheduled",
+      "exact_next_artifact": "A repeated named-asset reliability series with stable asset identity, period, denominator, failure definition, and repair outcome.",
+      "source_ids": [
+        "source-57e-amtrak-accessibility-progress-june-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-amtrak-reliability",
+      "named_file_ids": [],
+      "qualification_packet_ids": [],
+      "binding_decision": "No Phase 61 named file covers the Amtrak asset.",
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [],
+      "attempted_surfaces": [],
+      "access_result": null,
+      "receipt_type": null,
+      "receipt_id": null,
+      "decision_date": null,
+      "decision_status": "scheduled",
+      "propagation_status": "not_started",
+      "next_check_date": null,
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    },
+    {
+      "envelope_id": "67-RETURN-013",
+      "slug": "67-return-013-nnsa-recurring-qualified-rate",
+      "record_kind": "evidence_return_envelope",
+      "record_status": "Published",
+      "cycle_item_id": "60-CYCLE-NNSA-RECURRING-QUALIFIED-RATE",
+      "wave": "60D",
+      "target": "NNSA recurring qualified pit rate",
+      "origin_record_id": "58-QUEUE-NNSA-RECURRING-QUALIFIED-RATE",
+      "scheduled_check_date": "2026-10-09",
+      "envelope_state": "Scheduled",
+      "exact_next_artifact": "A recurring qualified-output series with acceptance definition, facility identity, period, denominator, and comparable rate calculation.",
+      "source_ids": [
+        "source-57f-nnsa-pit-production-current"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-nnsa-qualified-rate",
+      "named_file_ids": [],
+      "qualification_packet_ids": [],
+      "binding_decision": "No Phase 61 named file covers the NNSA output object.",
+      "canonical_dossier_ids": [
+        "briefing-adoption-004-advanced-manufacturing"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-advanced-manufacturing-research-to-production"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [],
+      "attempted_surfaces": [],
+      "access_result": null,
+      "receipt_type": null,
+      "receipt_id": null,
+      "decision_date": null,
+      "decision_status": "scheduled",
+      "propagation_status": "not_started",
+      "next_check_date": null,
+      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+    }
+  ]
+}

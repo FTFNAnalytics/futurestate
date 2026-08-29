@@ -10,7 +10,7 @@
   "constraint_tags": ["Capital", "Data Quality", "Infrastructure"],
   "question": "Which permit intentions become starts, completions, and occupancy?",
   "why_it_matters": "Building permits are upstream intentions. FTFN needs conversion evidence to know whether approvals become starts, completions, occupied units, or stalled projects.",
-  "current_support": "FTFN has Statistics Canada permits, CMHC starts and completions data, a June 2026 CMHC Toronto CMA baseline separating approved units awaiting starts, units under construction, completions, and starts, Toronto's 2025 Development Pipeline, application 24 254930 records showing movement from initial notice through staff review to a July 2026 committee recommendation, and a full-address Building Permit portal recheck.",
+  "current_support": "FTFN has Statistics Canada permits, CMHC starts and completions data, a June 2026 CMHC Toronto CMA baseline separating approved units awaiting starts, units under construction, completions, and starts, Toronto's 2025 Development Pipeline, application 24 254930 records through City Council adoption on July 29-30, 2026, and a bounded full-address Building Permit portal recheck.",
   "missing_evidence": [
     "building permit and permit-to-start conversion for application 24 254930",
     "project construction start",
@@ -31,7 +31,7 @@
     "application 24 254930 start, completion, and occupancy record",
     "Toronto Development Pipeline stage-conversion update"
   ],
-  "next_action": "Keep CMHC's metropolitan stage stocks and flows separate and do not calculate an unmatched conversion rate. Recheck the Council and bill trail after July 29-31, then search the Building Permit portal with a confirmed application number or later project record and track construction start, completion, and occupancy.",
+  "next_action": "Keep CMHC's metropolitan stage stocks and flows separate and do not calculate an unmatched conversion rate. Recheck the bill and condition trail on September 9, then search the Building Permit portal using a confirmed application or later project identifier and track construction start, completion, and occupancy.",
   "future_data_model_need": ["Dataset", "Permit", "Local Actor"],
   "related_source_ids": [
     "source-statcan-building-permits-survey",
@@ -51,17 +51,17 @@
   ],
   "related_local_system_ids": ["local-ontario-real-estate"],
   "latest_review": {
-    "phase": "Phase 55Q",
+    "phase": "Phase 61",
     "decision": "Narrowed",
-    "review_date": "2026-07-24",
+    "review_date": "2026-08-11",
     "named_records": [
-      "CMHC June 2026 Housing Starts And Construction Data",
       "City of Toronto Building Application Status portal",
-      "Toronto City Council item 2026.SC33.9 for application 24 254930"
+      "Toronto City Council item 2026.SC33.9 for application 24 254930",
+      "Project Conversion File 002: Toronto Application 24 254930"
     ],
-    "stage_result": "The new CMHC record distinguishes current Toronto CMA stage stocks and flows, narrowing what an aggregate conversion baseline can show. It still supplies no matched project cohort, and the selected application remains upstream of a verified Council disposition and building permit.",
-    "stop_rule": "Do not divide approved-not-started stock by monthly starts or completions, and do not infer a project permit from an address search. Reopen the named project only after the Council trail changes or a confirmed permit, start, completion, or occupancy record appears.",
-    "next_check_date": "2026-08-01"
+    "stage_result": "The selected application has a verified Council disposition but remains upstream of enacted amendments, a confirmed building permit, construction start, completion, and occupancy. The aggregate baseline still supplies no matched project cohort.",
+    "stop_rule": "Do not divide approved-not-started stock by monthly starts or completions, infer a project permit from an address search, or treat Council adoption as a permit or delivered unit.",
+    "next_check_date": "2026-09-09"
   },
-  "notes": "Phase 55Q narrows the aggregate-data question and preserves the project boundary. The earlier eight address searches returned Application Not Found, but those bounded negative queries do not prove that no permit exists."
+  "notes": "Phase 61 reconciles the completed Council decision and retains the project boundary. The earlier eight address searches returned Application Not Found, but those bounded negative queries do not prove that no permit exists."
 }

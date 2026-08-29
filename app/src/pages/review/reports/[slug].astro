@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/v031-content-expansion.json";
+
+export function getStaticPaths() { return program.reports.map((report) => ({ params: { slug: report.slug }, props: { reportId: report.report_id } })); }
+const report = program.reports.find((item) => item.report_id === Astro.props.reportId)!;
+const allSignals = await getCollection("signals");
+const haystack = (signal: (typeof allSignals)[number]) => `${signal.data.id} ${signal.data.title} ${signal.data.summary}`.toLowerCase();
+const signals = allSignals.filter((signal) => signal.data.record_status === "Published" && report.signal_terms.some((term) => haystack(signal).includes(term))).sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf()).slice(0, 18);
+---
+
+<BaseLayout title={`${report.title} | FTFN public report`} description={report.thesis}>
+  <ReviewHeader eyebrow="Phase 114 · Comparative public report" title={report.title} summary={report.thesis} phase={114} />
+  <section class="page-section"><div class="metric-strip"><div class="metric"><strong>{signals.length}</strong><span>Published records in this edition</span></div><div class="metric"><strong>{new Set(signals.map((signal) => signal.data.primary_topic)).size}</strong><span>topic lenses</span></div><div class="metric"><strong>0</strong><span>new evidence claims</span></div></div></section>
+  {report.sections.map((section, index) => <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Chapter {index + 1}</div><h2>{section}</h2></div></div>{index === 0 ? <p class="lede">{report.thesis}</p> : <div class="signal-grid">{signals.slice((index - 1) * 6, index * 6).map((signal) => <article class="record-card"><div class="meta-row"><MetaPill label={signal.data.primary_topic} /><MetaPill label={signal.data.maturity_level} /></div><h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3><p>{signal.data.summary}</p></article>)}</div>}</section>)}
+  <section class="page-section prose-page"><h2>Interpretation boundary</h2><p>{report.interpretation_boundary}</p><p><a class="inline-link" href={`/review/accessibility/reports/${report.slug}/`}>Open the linear reading edition</a></p></section>
+</BaseLayout>

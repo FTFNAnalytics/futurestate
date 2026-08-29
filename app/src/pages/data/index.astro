@@ -3,6 +3,51 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../components/layout/BaseLayout.astro";
 import MetaPill from "../../components/ui/MetaPill.astro";
 import evidenceQueue from "../../data/phase-58-dated-evidence-queue.json";
+import operatingCycle from "../../data/phase-60-operating-cycle.json";
+import projectConversion from "../../data/phase-61-project-conversion-registry.json";
+import conversionEvents from "../../data/phase-62-conversion-event-ledgers.json";
+import conversionGates from "../../data/phase-63-conversion-gate-calendar.json";
+import conversionStageMatrix from "../../data/phase-64-conversion-stage-matrix.json";
+import qualificationPackets from "../../data/phase-67-qualification-packet-registry.json";
+import evidenceReturnEnvelopes from "../../data/phase-67-evidence-return-envelope-ledger.json";
+import phase60cDesk from "../../data/phase-60c-editorial-desk.json";
+import outcomeCohorts from "../../data/phase-68-compatible-series-outcome-cohorts.json";
+import measurementRegistry from "../../data/phase-69-measurement-observation-break-registry.json";
+import reviewRegistry from "../../data/phase-70-observation-review-series-admission-registry.json";
+import longitudinalOutcomeRegistry from "../../data/phase-71-longitudinal-panel-outcome-comparison-registry.json";
+import outcomeDesignRegistry from "../../data/phase-72-outcome-evidence-counterfactual-design-registry.json";
+import analysisRegistry from "../../data/phase-73-analysis-execution-result-adjudication-registry.json";
+import synthesisRegistry from "../../data/phase-74-evidence-synthesis-challenge-decision-translation-registry.json";
+import accountabilityRegistry from "../../data/phase-75-decision-accountability-realized-impact-registry.json";
+import learningRegistry from "../../data/phase-76-cross-case-learning-portfolio-policy-retirement-registry.json";
+import deliberationRegistry from "../../data/phase-77-public-deliberation-participatory-governance-adaptive-mandate-registry.json";
+import compactsRegistry from "../../data/phase-78-interjurisdictional-compacts-shared-public-value-emergency-resilience-registry.json";
+import stewardshipRegistry from "../../data/phase-79-public-wealth-long-horizon-stewardship-intergenerational-balance-sheet-registry.json";
+import investmentPortfolioRegistry from "../../data/phase-80-public-investment-portfolios-transition-pathways-place-based-capacity-registry.json";
+import universalServiceRegistry from "../../data/phase-81-universal-service-essential-systems-public-option-delivery-registry.json";
+import householdCapabilityRegistry from "../../data/phase-82-household-capability-care-infrastructure-everyday-security-registry.json";
+import communityInstitutionsRegistry from "../../data/phase-83-community-institutions-social-infrastructure-collective-resilience-registry.json";
+import foodSystemsRegistry from "../../data/phase-84-food-systems-local-provisioning-community-resource-security-registry.json";
+import housingPlaceRegistry from "../../data/phase-85-housing-shelter-land-use-place-stability-registry.json";
+import healthWellbeingRegistry from "../../data/phase-86-health-public-health-disability-population-wellbeing-registry.json";
+import educationKnowledgeCultureRegistry from "../../data/phase-87-education-learning-skills-knowledge-cultural-capability-registry.json";
+import workLaborLivelihoodsRegistry from "../../data/phase-88-work-labor-livelihoods-economic-democracy-registry.json";
+import incomeWealthSecurityRegistry from "../../data/phase-89-income-wealth-poverty-social-protection-economic-security-registry.json";
+import marketsFirmsGovernanceRegistry from "../../data/phase-90-markets-firms-competition-corporate-power-democratic-economic-governance-registry.json";
+import financeBankingCreditStabilityRegistry from "../../data/phase-91-finance-banking-credit-capital-allocation-monetary-systems-financial-stability-registry.json";
+import fiscalRevenueDebtMacroRegistry from "../../data/phase-92-fiscal-policy-public-revenue-sovereign-debt-trade-external-balance-macroeconomic-coordination-registry.json";
+import economicDevelopmentTransformationRegistry from "../../data/phase-93-economic-development-industrial-strategy-innovation-systems-regional-convergence-productive-transformation-registry.json";
+import physicalEconomySupplyChainRegistry from "../../data/phase-94-energy-materials-manufacturing-logistics-strategic-supply-chain-transformation-registry.json";
+import territorialSystemsDeliveryRegistry from "../../data/phase-95-infrastructure-construction-buildings-public-works-territorial-systems-delivery-registry.json";
+import mobilityNetworkAccessRegistry from "../../data/phase-96-mobility-transportation-freight-communications-digital-networks-territorial-access-registry.json";
+import environmentPlanetaryStewardshipRegistry from "../../data/phase-97-environment-climate-ecosystems-pollution-waste-circularity-planetary-system-stewardship-registry.json";
+import justiceSafetySecurityPeaceRegistry from "../../data/phase-98-law-justice-public-safety-emergency-management-security-defense-peace-registry.json";
+import democracyGovernmentLegitimacyRegistry from "../../data/phase-99-democracy-government-public-administration-civic-information-institutional-legitimacy-registry.json";
+import internationalOrderSharedFuturesRegistry from "../../data/phase-100-international-order-multilateral-cooperation-global-commons-cross-border-risk-shared-human-futures-registry.json";
+import wholeSystemFuturesRegistry from "../../data/phase-101-whole-system-futures-scenario-governance-polycrisis-readiness-civilizational-resilience-future-generations-registry.json";
+import publicKnowledgeStewardshipRegistry from "../../data/phase-102-public-knowledge-synthesis-civic-decision-literacy-reader-navigation-content-closure-evergreen-stewardship-registry.json";
+import v03EditorialProgram from "../../data/v03-editorial-program.json";
+import v031ContentExpansion from "../../data/v031-content-expansion.json";
 
 const sources = await getCollection("sources");
 const topics = await getCollection("topics");
@@ -15,6 +60,18 @@ const readerPathways = (await getCollection("readerPathways"))
   .filter((pathway) => pathway.data.record_status === "Published");
 
 const datasets = [
+  {
+    title: "FTFN v0.3.1 Content Expansion",
+    href: "/data/v031-content-expansion.json",
+    count: v031ContentExpansion.counts.public_routes,
+    summary: "Evidence-cycle records, ten additional local-system portraits, sixteen expanded casebooks, four comparative reports and ten accessible or jurisdiction reading routes."
+  },
+  {
+    title: "FTFN v0.3 Editorial Review",
+    href: "/data/v03-editorial-review.json",
+    count: v03EditorialProgram.counts.public_routes,
+    summary: "The public knowledge edition: canonical chapters, place portraits, named casebooks, cross-system stories, outcome observatories, uncertainty pages, learning modules, accessible editions and living-publication routes."
+  },
   {
     title: "Published Signals",
     href: "/data/signals.json",
@@ -50,13 +107,271 @@ const datasets = [
     href: "/data/evidence-queue.json",
     count: evidenceQueue.records.length,
     summary: "Held result and outcome gates with exact next artifacts, dated checks, cadences, stop rules, and reader-visible receipts."
+  },
+  {
+    title: "Evidence Cycle 001",
+    href: "/data/operating-cycle.json",
+    count: operatingCycle.records.length,
+    summary: "Thirteen scheduled gates with exact artifacts, decision state, and assigned dossier, pathway, map, and local-system propagation surfaces."
+  },
+  {
+    title: "Named Project Conversion Registry",
+    href: "/data/project-conversion.json",
+    count: projectConversion.records.length,
+    summary: "Five local project files and three adoption cases with exact downstream artifacts, dates or triggers, stop rules, and reader-surface links."
+  },
+  {
+    title: "Conversion Event Ledgers",
+    href: "/data/conversion-events.json",
+    count: conversionEvents.events.length,
+    summary: "Append-only, source-resolved event histories for the eight named conversion files, with explicit date bases, stage boundaries, materiality, and next gates."
+  },
+  {
+    title: "Named Conversion Gate Calendar",
+    href: "/data/conversion-gates.json",
+    count: conversionGates.gate_records.length,
+    summary: "Eight next-evidence gates joining each named file to its latest event, exact date or source trigger, cycle binding, receipt state, and propagation surfaces."
+  },
+  {
+    title: "Conversion Stage Matrix",
+    href: "/data/conversion-stage-matrix.json",
+    count: conversionStageMatrix.file_rows.reduce((total, row) => total + row.stage_cells.length, 0),
+    summary: "Sixty-four bounded cells asking eight common evidence-stage questions without ranking unlike files or turning upstream evidence into outcomes."
+  },
+  {
+    title: "Qualification Packets",
+    href: "/data/qualification-packets.json",
+    count: qualificationPackets.packet_records.length,
+    summary: "Thirty-two public contracts defining exact same-entity validation, acceptance, recurring-operation, and comparable-outcome evidence requirements."
+  },
+  {
+    title: "Evidence Return Envelopes",
+    href: "/data/evidence-return-envelopes.json",
+    count: evidenceReturnEnvelopes.envelope_records.length,
+    summary: "Thirteen scheduled return envelopes preserving dates, artifacts, bindings, no-transfer decisions, and empty future receipt fields."
+  },
+  {
+    title: "Wave 60C Editorial Desk",
+    href: "/data/phase-60c-editorial-desk.json",
+    count: phase60cDesk.records.length,
+    summary: "Six September cycle gates and two separate named-file rechecks with qualifying-evidence tests, mandatory holds, and future-safe publication assignments."
+  },
+  {
+    title: "Compatible Series And Outcome Cohorts",
+    href: "/data/compatible-series-outcome-cohorts.json",
+    count: outcomeCohorts.cohort_records.length,
+    summary: "Eight named-file admission contracts with sixty-four compatibility checks, thirty-two empty measure families, and zero manufactured trends or outcome claims."
+  },
+  {
+    title: "Measurement Specifications And Intake",
+    href: "/data/measurement-specifications.json",
+    count: measurementRegistry.measurement_specifications.length + measurementRegistry.observation_intake_envelopes.length + measurementRegistry.series_break_registers.length,
+    summary: "Thirty-two measurement specifications, thirty-two empty observation envelopes, and eight prospective break registers with zero values or series points."
+  },
+  {
+    title: "Observation Review And Series Admission",
+    href: "/data/observation-review-series-admission.json",
+    count: reviewRegistry.observation_review_dockets.length + reviewRegistry.observation_revision_lineage_registers.length + reviewRegistry.series_admission_dockets.length,
+    summary: "Thirty-two empty review dockets, thirty-two empty revision-lineage registers, and eight not-ready series-admission dockets with zero submissions or accepted observations."
+  },
+  {
+    title: "Longitudinal Panels And Outcome Claims",
+    href: "/data/longitudinal-panels-outcome-claims.json",
+    count: longitudinalOutcomeRegistry.longitudinal_panel_shells.length + longitudinalOutcomeRegistry.outcome_claim_dockets.length + longitudinalOutcomeRegistry.comparison_embargo_registers.length,
+    summary: "Thirty-two empty panel shells, eight not-ready outcome-claim dockets, and eight active comparison embargoes with zero values, trends, claims, scores, or rankings."
+  },
+  {
+    title: "Outcome Evidence And Counterfactual Designs",
+    href: "/data/outcome-evidence-counterfactual-designs.json",
+    count: outcomeDesignRegistry.outcome_evidence_packets.length + outcomeDesignRegistry.alternative_explanation_registers.length + outcomeDesignRegistry.counterfactual_design_dockets.length,
+    summary: "Thirty-two empty outcome-evidence packets, eight unassessed alternative registers, and eight inactive counterfactual dockets with zero proposed claims, registered designs, or inspected results."
+  },
+  {
+    title: "Analysis Execution And Result Adjudication",
+    href: "/data/analysis-execution-result-adjudication.json",
+    count: analysisRegistry.analysis_execution_dockets.length + analysisRegistry.protocol_deviation_registers.length + analysisRegistry.result_adjudication_dockets.length + analysisRegistry.correction_withdrawal_registers.length,
+    summary: "Thirty-two inactive execution dockets, eight empty deviation registers, eight inactive adjudication dockets, and eight empty correction-withdrawal registers with zero runs, results, claims, or corrections."
+  },
+  {
+    title: "Evidence Synthesis, Challenge And Decision Translation",
+    href: "/data/evidence-synthesis-challenge-decision-translation.json",
+    count: synthesisRegistry.result_synthesis_input_dockets.length + synthesisRegistry.synthesis_contradiction_dossiers.length + synthesisRegistry.external_challenge_response_dockets.length + synthesisRegistry.decision_translation_reevaluation_registers.length,
+    summary: "Thirty-two inactive result-input dockets and eight each of synthesis, challenge, and decision-translation/reevaluation controls with zero syntheses, evidence grades, recommendations, or authorizations."
+  },
+  {
+    title: "Decision Accountability And Realized Impact",
+    href: "/data/decision-accountability-realized-impact.json",
+    count: accountabilityRegistry.decision_accountability_dossiers.length + accountabilityRegistry.implementation_commitment_realization_ledgers.length + accountabilityRegistry.post_decision_audit_remediation_registers.length,
+    summary: "Eight inactive decision-accountability dossiers, thirty-two inactive implementation-and-realization ledgers, and eight inactive audit-remediation registers with zero authorizations, commitments, impacts, or remedies."
+  },
+  {
+    title: "Cross-Case Learning, Portfolios And Policy Retirement",
+    href: "/data/cross-case-learning-portfolio-policy-retirement.json",
+    count: learningRegistry.institutional_learning_dossiers.length + learningRegistry.cross_case_transfer_registers.length + learningRegistry.portfolio_governance_registers.length + learningRegistry.policy_supersession_retirement_ledgers.length,
+    summary: "Eight inactive learning dossiers, twenty-eight inactive pairwise transfer reviews, six inactive portfolio registers, and eight inactive policy-retirement ledgers with zero lessons, comparisons, portfolio findings, or retirements."
+  },
+  {
+    title: "Public Deliberation And Adaptive Mandate",
+    href: "/data/public-deliberation-adaptive-mandate.json",
+    count: deliberationRegistry.stakeholder_standing_notice_registers.length + deliberationRegistry.deliberation_issue_response_dockets.length + deliberationRegistry.mandate_legitimacy_appeal_registers.length + deliberationRegistry.adaptive_mandate_review_ledgers.length,
+    summary: "Eight inactive standing registers, eight inactive deliberation dockets, eight inactive mandate and appeal registers, and eight inactive adaptive-review ledgers with zero participation records, legitimacy findings, mandates, or reviews."
+  },
+  {
+    title: "Interjurisdictional Compacts And Emergency Resilience",
+    href: "/data/interjurisdictional-compacts-emergency-resilience.json",
+    count: compactsRegistry.interjurisdictional_authority_externality_maps.length + compactsRegistry.shared_public_value_contribution_compacts.length + compactsRegistry.mutual_aid_continuity_dispute_registers.length + compactsRegistry.emergency_authority_normalization_ledgers.length,
+    summary: "Eight inactive authority maps, eight inactive shared-value compacts, eight inactive continuity and dispute registers, and eight inactive emergency-normalization ledgers with zero compacts, activations, emergencies, or reauthorizations."
+  },
+  {
+    title: "Public Wealth And Intergenerational Stewardship",
+    href: "/data/public-wealth-intergenerational-stewardship.json",
+    count: stewardshipRegistry.public_asset_obligation_registers.length + stewardshipRegistry.lifecycle_cost_maintenance_ledgers.length + stewardshipRegistry.procurement_dependency_contingent_risk_registers.length + stewardshipRegistry.intergenerational_balance_sheet_stewardship_ledgers.length,
+    summary: "Eight inactive asset-obligation registers, eight inactive lifecycle-maintenance ledgers, eight inactive procurement-risk registers, and eight inactive intergenerational balance sheets with zero valuations, liabilities, funded obligations, or fiscal findings."
+  },
+  {
+    title: "Public Investment Portfolios And Transition Capacity",
+    href: "/data/public-investment-portfolios-transition-capacity.json",
+    count: investmentPortfolioRegistry.public_investment_mission_thesis_dossiers.length + investmentPortfolioRegistry.portfolio_membership_dependency_sequence_registers.length + investmentPortfolioRegistry.place_based_delivery_capacity_transition_ledgers.length + investmentPortfolioRegistry.portfolio_stress_rebalancing_realization_ledgers.length,
+    summary: "Eight inactive investment-thesis dossiers, eight inactive portfolio-sequence registers, eight inactive place-based capacity and transition ledgers, and eight inactive stress-rebalancing-realization ledgers with zero portfolio selections, funding decisions, readiness findings, or rankings."
+  },
+  {
+    title: "Universal Service And Essential Systems",
+    href: "/data/universal-service-essential-systems-public-options.json",
+    count: universalServiceRegistry.service_floor_universal_access_dossiers.length + universalServiceRegistry.affordability_cross_subsidy_coverage_ledgers.length + universalServiceRegistry.provider_plurality_interoperability_continuity_registers.length + universalServiceRegistry.rights_quality_step_in_restoration_ledgers.length,
+    summary: "Eight inactive service-floor dossiers and eight each of affordability, provider-continuity, and rights-restoration ledgers with zero floor, tariff, subsidy, provider, intervention, restoration, score, or ranking decisions."
+  },
+  {
+    title: "Household Capability, Care And Everyday Security",
+    href: "/data/household-capability-care-everyday-security.json",
+    count: householdCapabilityRegistry.household_capability_service_bundle_dossiers.length + householdCapabilityRegistry.care_infrastructure_workforce_capacity_ledgers.length + householdCapabilityRegistry.household_affordability_time_debt_administrative_burden_registers.length + householdCapabilityRegistry.neighborhood_access_displacement_crisis_recovery_ledgers.length,
+    summary: "Eight inactive household-capability dossiers and eight each of care-capacity, household-burden, and neighborhood-recovery ledgers with zero floor, allocation, protection, displacement, recovery, score, or ranking decisions."
+  },
+  {
+    title: "Community Institutions And Collective Resilience",
+    href: "/data/community-institutions-social-infrastructure-collective-resilience.json",
+    count: communityInstitutionsRegistry.community_institution_access_trust_continuity_dossiers.length + communityInstitutionsRegistry.civic_association_cooperative_mutual_aid_capacity_ledgers.length + communityInstitutionsRegistry.local_information_media_public_knowledge_integrity_registers.length + communityInstitutionsRegistry.collective_preparedness_trauma_recovery_resilience_ledgers.length,
+    summary: "Eight inactive institution dossiers and eight each of civic-network, local-information, and collective-resilience ledgers with zero admission, activation, closure, restoration, recovery, score, or ranking decisions."
+  },
+  {
+    title: "Food Systems And Community Resource Security",
+    href: "/data/food-systems-local-provisioning-community-resource-security.json",
+    count: foodSystemsRegistry.food_production_land_water_sovereignty_dossiers.length + foodSystemsRegistry.processing_storage_distribution_local_provisioning_ledgers.length + foodSystemsRegistry.food_access_affordability_nutrition_institutional_meals_registers.length + foodSystemsRegistry.reserve_contamination_circularity_community_resource_security_ledgers.length,
+    summary: "Eight inactive production dossiers and eight each of provisioning, food-access, and reserve-resource-security ledgers with zero allocation, procurement, nutrition, reserve, recall, circularity, score, or ranking decisions."
+  },
+  {
+    title: "Housing, Shelter, Land Use And Place Stability",
+    href: "/data/housing-shelter-land-use-place-stability.json",
+    count: housingPlaceRegistry.housing_need_supply_delivery_habitability_dossiers.length + housingPlaceRegistry.tenure_affordability_public_social_community_housing_ledgers.length + housingPlaceRegistry.homelessness_shelter_supportive_housing_displacement_registers.length + housingPlaceRegistry.retrofit_climate_disaster_reconstruction_place_stability_ledgers.length,
+    summary: "Eight inactive housing-delivery dossiers and eight each of tenure-affordability, housing-stability, and retrofit-reconstruction-place ledgers with zero allocation, placement, affordability, relocation, return, recovery, score, or ranking decisions."
+  },
+  {
+    title: "Health, Public Health, Disability And Population Wellbeing",
+    href: "/data/health-public-health-disability-population-wellbeing.json",
+    count: healthWellbeingRegistry.primary_preventive_community_care_access_dossiers.length + healthWellbeingRegistry.acute_emergency_specialty_behavioral_health_care_ledgers.length + healthWellbeingRegistry.public_health_surveillance_prevention_environmental_exposure_registers.length + healthWellbeingRegistry.disability_equity_preparedness_population_wellbeing_ledgers.length,
+    summary: "Eight inactive health-access dossiers and eight each of clinical-care, public-health, and disability-preparedness-wellbeing ledgers with zero eligibility, diagnosis, restriction, classification, recovery, score, or ranking decisions."
+  },
+  {
+    title: "Education, Learning, Skills, Knowledge And Cultural Capability",
+    href: "/data/education-learning-skills-knowledge-cultural-capability.json",
+    count: educationKnowledgeCultureRegistry.early_childhood_school_access_inclusion_learning_dossiers.length + educationKnowledgeCultureRegistry.postsecondary_vocational_apprenticeship_affordability_ledgers.length + educationKnowledgeCultureRegistry.learning_capability_credential_skills_transition_registers.length + educationKnowledgeCultureRegistry.public_knowledge_culture_research_community_learning_ledgers.length,
+    summary: "Eight inactive school-access dossiers and eight each of postsecondary, learning-capability, and public-knowledge and culture ledgers with zero enrollment, credential, transition, cultural-recovery, score, or ranking decisions."
+  },
+  {
+    title: "Work, Labor, Livelihoods And Economic Democracy",
+    href: "/data/work-labor-livelihoods-economic-democracy.json",
+    count: workLaborLivelihoodsRegistry.job_access_matching_hiring_nondiscrimination_dossiers.length + workLaborLivelihoodsRegistry.job_quality_wages_benefits_hours_safety_ledgers.length + workLaborLivelihoodsRegistry.worker_voice_organizing_collective_bargaining_economic_democracy_registers.length + workLaborLivelihoodsRegistry.livelihood_security_displacement_just_transition_long_horizon_ledgers.length,
+    summary: "Eight inactive job-access dossiers and eight each of job-quality, worker-voice and economic-democracy, and livelihood-security and just-transition ledgers with zero hiring, classification, bargaining, transition, score, or ranking decisions."
+  },
+  {
+    title: "Income, Wealth, Poverty, Social Protection And Economic Security",
+    href: "/data/income-wealth-poverty-social-protection-economic-security.json",
+    count: incomeWealthSecurityRegistry.household_income_earnings_tax_transfer_resource_dossiers.length + incomeWealthSecurityRegistry.wealth_assets_debt_liabilities_intergenerational_balance_ledgers.length + incomeWealthSecurityRegistry.poverty_deprivation_social_protection_benefit_access_registers.length + incomeWealthSecurityRegistry.economic_security_distribution_shock_mobility_long_horizon_ledgers.length,
+    summary: "Eight inactive household-income dossiers and eight each of wealth-balance, poverty and social-protection, and long-horizon economic-security ledgers with zero tax, transfer, eligibility, denial, wealth, distribution, mobility, score, or ranking decisions."
+  },
+  {
+    title: "Markets, Firms, Competition, Corporate Power And Democratic Economic Governance",
+    href: "/data/markets-firms-competition-corporate-power-democratic-economic-governance.json",
+    count: marketsFirmsGovernanceRegistry.firm_formation_ownership_control_governance_dossiers.length + marketsFirmsGovernanceRegistry.market_structure_competition_pricing_conduct_ledgers.length + marketsFirmsGovernanceRegistry.corporate_power_platform_supply_chain_public_support_registers.length + marketsFirmsGovernanceRegistry.democratic_economic_governance_rights_remedy_long_horizon_ledgers.length,
+    summary: "Eight inactive firm-governance dossiers and eight each of market-competition, corporate-power and public-support, and democratic-governance ledgers with zero firm, market, merger, remedy, public-value, score, or ranking decisions."
+  },
+  {
+    title: "Finance, Banking, Credit, Capital Allocation, Monetary Systems And Financial Stability",
+    href: "/data/finance-banking-credit-capital-allocation-monetary-systems-financial-stability.json",
+    count: financeBankingCreditStabilityRegistry.money_payments_banking_access_settlement_dossiers.length + financeBankingCreditStabilityRegistry.credit_underwriting_affordability_servicing_productive_allocation_ledgers.length + financeBankingCreditStabilityRegistry.capital_markets_institutional_investment_insurance_risk_transfer_registers.length + financeBankingCreditStabilityRegistry.monetary_policy_systemic_risk_resolution_public_guarantee_democratic_finance_ledgers.length,
+    summary: "Eight inactive money and banking dossiers and eight each of credit and productive-allocation, capital-market and insurance, and monetary-policy and financial-stability ledgers with zero access, credit, investment, insurance, intervention, guarantee, resolution, score, or ranking decisions."
+  },
+  {
+    title: "Fiscal Policy, Public Revenue, Sovereign Debt, Trade, External Balance And Macroeconomic Coordination",
+    href: "/data/fiscal-policy-public-revenue-sovereign-debt-trade-external-balance-macroeconomic-coordination.json",
+    count: fiscalRevenueDebtMacroRegistry.public_revenue_tax_expenditure_distribution_compliance_dossiers.length + fiscalRevenueDebtMacroRegistry.budget_expenditure_stabilizer_delivery_public_value_ledgers.length + fiscalRevenueDebtMacroRegistry.sovereign_debt_fiscal_rule_public_balance_sheet_resilience_registers.length + fiscalRevenueDebtMacroRegistry.trade_external_balance_supply_resilience_macroeconomic_coordination_ledgers.length,
+    summary: "Eight inactive revenue dossiers and eight each of budget and delivery, sovereign-debt and public-balance-sheet, and trade and macroeconomic-coordination ledgers with zero tax, allocation, sustainability, restructuring, treaty, supply-resilience, score, or ranking decisions."
+  },
+  {
+    title: "Economic Development, Industrial Strategy, Innovation Systems, Regional Convergence And Productive Transformation",
+    href: "/data/economic-development-industrial-strategy-innovation-systems-regional-convergence-productive-transformation.json",
+    count: economicDevelopmentTransformationRegistry.economic_development_mission_sector_strategy_production_ecosystem_dossiers.length + economicDevelopmentTransformationRegistry.innovation_research_diffusion_commercialization_standards_ledgers.length + economicDevelopmentTransformationRegistry.regional_cluster_corridor_supplier_workforce_convergence_registers.length + economicDevelopmentTransformationRegistry.productive_transformation_diversification_decarbonization_shared_prosperity_ledgers.length,
+    summary: "Eight inactive strategy dossiers and eight each of innovation, regional-convergence, and productive-transformation ledgers with zero mission, firm, innovation, cluster, convergence, transition, score, or ranking decisions."
+  },
+  {
+    title: "Energy, Materials, Manufacturing, Logistics And Strategic Supply-Chain Transformation",
+    href: "/data/energy-materials-manufacturing-logistics-strategic-supply-chain-transformation.json",
+    count: physicalEconomySupplyChainRegistry.energy_water_industrial_utility_reliability_dossiers.length + physicalEconomySupplyChainRegistry.minerals_materials_processing_circularity_qualification_ledgers.length + physicalEconomySupplyChainRegistry.manufacturing_equipment_automation_maintenance_quality_accepted_production_registers.length + physicalEconomySupplyChainRegistry.logistics_inventory_strategic_reserves_emergency_conversion_supply_chain_resilience_ledgers.length,
+    summary: "Eight inactive industrial-utility dossiers and eight each of material-qualification, accepted-production, and strategic supply-chain ledgers with zero allocation, reliability, qualification, production, resilience, sovereignty, transition, score, or ranking decisions."
+  },
+  {
+    title: "Infrastructure, Construction, Buildings, Public Works And Territorial Systems Delivery",
+    href: "/data/infrastructure-construction-buildings-public-works-territorial-systems-delivery.json",
+    count: territorialSystemsDeliveryRegistry.spatial_planning_land_assembly_rights_of_way_site_readiness_dossiers.length + territorialSystemsDeliveryRegistry.project_design_engineering_cost_estimation_permitting_procurement_ledgers.length + territorialSystemsDeliveryRegistry.construction_contractors_trades_materials_safety_inspection_registers.length + territorialSystemsDeliveryRegistry.commissioning_accessibility_asset_handover_operations_maintenance_adaptation_reconstruction_territorial_value_ledgers.length,
+    summary: "Eight inactive territorial-readiness dossiers and eight each of project-definition, construction-delivery, and asset-stewardship ledgers with zero land, permit, procurement, construction, commissioning, service, recovery, place-value, score, or ranking decisions."
+  },
+  {
+    title: "Mobility, Transportation, Freight, Communications, Digital Networks And Territorial Access",
+    href: "/data/mobility-transportation-freight-communications-digital-networks-territorial-access.json",
+    count: mobilityNetworkAccessRegistry.passenger_mobility_demand_accessibility_affordability_inclusion_dossiers.length + mobilityNetworkAccessRegistry.multimodal_transportation_service_planning_operations_safety_reliability_ledgers.length + mobilityNetworkAccessRegistry.freight_goods_movement_intermodal_logistics_delivery_resilience_registers.length + mobilityNetworkAccessRegistry.communications_broadband_mobile_digital_public_infrastructure_interoperability_territorial_access_ledgers.length,
+    summary: "Eight inactive mobility-access dossiers and eight each of transportation-service, freight-delivery, and digital-access ledgers with zero trip, safety, service, delivery, connectivity, restoration, recovery, score, or ranking decisions."
+  },
+  {
+    title: "Environment, Climate, Ecosystems, Pollution, Waste, Circularity And Planetary-System Stewardship",
+    href: "/data/environment-climate-ecosystems-pollution-waste-circularity-planetary-system-stewardship.json",
+    count: environmentPlanetaryStewardshipRegistry.greenhouse_gas_emissions_climate_mitigation_decarbonization_transition_dossiers.length + environmentPlanetaryStewardshipRegistry.air_water_soil_noise_chemical_pollution_exposure_environmental_justice_ledgers.length + environmentPlanetaryStewardshipRegistry.ecosystems_biodiversity_habitat_land_freshwater_ocean_restoration_registers.length + environmentPlanetaryStewardshipRegistry.waste_materials_circularity_climate_adaptation_disaster_risk_planetary_system_stewardship_ledgers.length,
+    summary: "Eight inactive climate-mitigation dossiers and eight each of pollution-exposure, ecosystem-restoration, and planetary-stewardship ledgers with zero mitigation, exposure, restoration, circularity, adaptation, recovery, score, or ranking decisions."
+  },
+  {
+    title: "Law, Justice, Public Safety, Emergency Management, Security, Defense And Peace",
+    href: "/data/law-justice-public-safety-emergency-management-security-defense-peace.json",
+    count: justiceSafetySecurityPeaceRegistry.rights_rule_of_law_courts_legal_aid_access_to_justice_dossiers.length + justiceSafetySecurityPeaceRegistry.public_safety_violence_prevention_policing_fire_corrections_accountability_ledgers.length + justiceSafetySecurityPeaceRegistry.emergency_management_civil_protection_critical_system_security_resilience_registers.length + justiceSafetySecurityPeaceRegistry.defense_intelligence_conflict_prevention_civilian_protection_peace_stewardship_ledgers.length,
+    summary: "Eight inactive justice-access dossiers and eight each of public-safety accountability, emergency-resilience, and security-peace ledgers with zero justice, safety, preparedness, security, defense, peace, score, or ranking decisions."
+  },
+  {
+    title: "Democracy, Government, Public Administration, Civic Information And Institutional Legitimacy",
+    href: "/data/democracy-government-public-administration-civic-information-institutional-legitimacy.json",
+    count: democracyGovernmentLegitimacyRegistry.elections_representation_participation_inclusion_democratic_integrity_dossiers.length + democracyGovernmentLegitimacyRegistry.constitutional_legislative_executive_public_administration_capability_ledgers.length + democracyGovernmentLegitimacyRegistry.public_accountability_fiscal_transparency_audit_procurement_integrity_open_government_registers.length + democracyGovernmentLegitimacyRegistry.civic_information_media_pluralism_public_trust_institutional_legitimacy_democratic_resilience_ledgers.length,
+    summary: "Eight inactive democracy dossiers and eight each of government-capability, public-accountability, and legitimacy-resilience ledgers with zero representation, delivery, transparency, civic-information, legitimacy, resilience, score, or ranking decisions."
+  },
+  {
+    title: "International Order, Multilateral Cooperation, Global Commons, Cross-Border Risk And Shared Human Futures",
+    href: "/data/international-order-multilateral-cooperation-global-commons-cross-border-risk-shared-human-futures.json",
+    count: internationalOrderSharedFuturesRegistry.international_order_diplomacy_treaties_international_law_peaceful_dispute_resolution_dossiers.length + internationalOrderSharedFuturesRegistry.multilateral_institutions_representation_development_cooperation_collective_delivery_ledgers.length + internationalOrderSharedFuturesRegistry.migration_displacement_refugee_asylum_humanitarian_protection_shared_responsibility_registers.length + internationalOrderSharedFuturesRegistry.global_commons_transboundary_risk_catastrophic_risk_intergenerational_shared_human_futures_ledgers.length,
+    summary: "Eight inactive international-order dossiers and eight each of multilateral-delivery, humanitarian-protection, and shared-futures ledgers with zero treaty, representation, delivery, protection, stewardship, risk-reduction, score, or ranking decisions."
+  },
+  {
+    title: "Whole-System Futures, Scenario Governance, Polycrisis Readiness, Civilizational Resilience And Future Generations",
+    href: "/data/whole-system-futures-scenario-governance-polycrisis-readiness-civilizational-resilience-future-generations.json",
+    count: wholeSystemFuturesRegistry.whole_system_scenario_assumption_boundary_driver_uncertainty_dossiers.length + wholeSystemFuturesRegistry.cross_domain_dependency_cascade_compound_risk_polycrisis_stress_test_ledgers.length + wholeSystemFuturesRegistry.preparedness_option_portfolio_continuity_recovery_transformation_registers.length + wholeSystemFuturesRegistry.civilizational_resilience_renewal_future_generations_stewardship_ledgers.length,
+    summary: "Eight inactive scenario dossiers and eight each of polycrisis, readiness, and civilizational-resilience ledgers with zero forecasts, readiness findings, recovery, renewal, future-generations, score, or ranking decisions."
+  },
+  {
+    title: "Public Knowledge Synthesis, Civic Decision Literacy, Reader Navigation, Content Closure And Evergreen Stewardship",
+    href: "/data/public-knowledge-synthesis-civic-decision-literacy-reader-navigation-content-closure-evergreen-stewardship.json",
+    count: publicKnowledgeStewardshipRegistry.canonical_public_synthesis_claim_boundary_evidence_lineage_dossiers.length + publicKnowledgeStewardshipRegistry.civic_decision_literacy_uncertainty_tradeoff_public_reason_ledgers.length + publicKnowledgeStewardshipRegistry.reader_navigation_learning_pathway_accessibility_translation_registers.length + publicKnowledgeStewardshipRegistry.content_completeness_maintenance_correction_archive_evergreen_stewardship_ledgers.length,
+    summary: "Eight inactive synthesis dossiers and eight each of civic-literacy, reader-navigation, and evergreen-stewardship ledgers with zero new-evidence, recommendation, reader, content-closure, archive, score, or ranking decisions."
   }
 ];
 ---
 
 <BaseLayout
   title="Data Exports | FTFN"
-  description="Versioned public JSON exports for FTFN signals, sources, topics, research records, reader pathways, and the dated evidence queue."
+  description="Versioned public JSON exports for FTFN signals, sources, topics, research records, reader pathways, evidence operations, named project conversion files, event ledgers, gate calendars, and stage matrices."
 >
   <section class="page-section hero">
     <div class="hero__copy">
@@ -79,7 +394,7 @@ const datasets = [
     <div class="section-heading">
       <div>
         <div class="eyebrow">Datasets</div>
-        <h2>Six bounded public contracts.</h2>
+        <h2>Fifty-one bounded public contracts.</h2>
         <p>Each file reports its schema version, dataset name, record scope, count, and records.</p>
       </div>
       <a class="inline-link" href="/method/">Read the publication method</a>

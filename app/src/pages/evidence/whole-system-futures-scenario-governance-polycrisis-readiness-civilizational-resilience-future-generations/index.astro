@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-101-whole-system-futures-scenario-governance-polycrisis-readiness-civilizational-resilience-future-generations-registry.json";
+const families = [
+  { label: "Whole-System Scenario Dossiers", records: registry.whole_system_scenario_assumption_boundary_driver_uncertainty_dossiers, state: "scenario_state", id: "whole_system_scenario_assumption_boundary_driver_uncertainty_dossier_id", gates: 20, summary: "Purpose, identities, drivers, assumptions, boundaries, uncertainty, models, branches, challenge and governed use remain empty." },
+  { label: "Polycrisis Stress-Test Ledgers", records: registry.cross_domain_dependency_cascade_compound_risk_polycrisis_stress_test_ledgers, state: "polycrisis_state", id: "cross_domain_dependency_cascade_compound_risk_polycrisis_stress_test_ledger_id", gates: 22, summary: "Dependencies, cascades, compound shocks, exercises, observations, after-action review and correction remain empty." },
+  { label: "Preparedness And Recovery Registers", records: registry.preparedness_option_portfolio_continuity_recovery_transformation_registers, state: "readiness_state", id: "preparedness_option_portfolio_continuity_recovery_transformation_register_id", gates: 22, summary: "Options, resources, reserves, continuity, mutual aid, recovery, transformation and monitoring remain empty." },
+  { label: "Civilizational-Resilience Ledgers", records: registry.civilizational_resilience_renewal_future_generations_stewardship_ledgers, state: "civilizational_resilience_state", id: "civilizational_resilience_renewal_future_generations_stewardship_ledger_id", gates: 24, summary: "Essential floors, ecological foundations, knowledge, institutions, renewal and future-generation stewardship remain empty." }
+];
+---
+
+<BaseLayout title="Whole-System Futures, Scenario Governance, Polycrisis Readiness, Civilizational Resilience And Future Generations | FTFN" description="Thirty-two inactive whole-system scenario, polycrisis, readiness, resilience, renewal, and future-generations contracts.">
+  <section class="page-section hero" data-whole-system-futures-polycrisis-civilizational-resilience-registry>
+    <div class="hero__copy">
+      <div class="eyebrow">FTFN / Whole-System Futures</div>
+      <h1 class="page-title">A scenario is not a forecast, and continuity is not renewal.</h1>
+      <p class="lede">Phase 101 traces governed scenario families, cross-domain cascades and polycrisis stress tests, preparedness and recovery portfolios, then civilizational resilience, renewal and future-generations stewardship.</p>
+      <div class="meta-row"><MetaPill label="8 inactive scenario dossiers" tone="possibility" /><MetaPill label="8 inactive polycrisis ledgers" /><MetaPill label="8 inactive readiness registers" /><MetaPill label="8 inactive resilience ledgers" /><MetaPill label="0 scenario or resilience decisions" tone="review" /></div>
+    </div>
+  </section>
+  {families.map((family) => (
+    <section class="page-section">
+      <div class="section-heading"><div><div class="eyebrow">{family.label}</div><h2>Eight records remain inactive.</h2></div></div>
+      <div class="grid">{family.records.map((record: any) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={record[family.state]} tone="review" /><MetaPill label={family.gates + " inactive gates"} /></div>
+          <h3><a href={"/evidence/whole-system-futures-scenario-governance-polycrisis-readiness-civilizational-resilience-future-generations/" + record.slug + "/"}>{record[family.id]}: {record.named_entity}</a></h3>
+          <p>{family.summary}</p>
+        </article>
+      ))}</div>
+    </section>
+  ))}
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Public Contract</div><h2>Inspect the empty futures and resilience state.</h2><p>The export exposes assumptions, dependencies, uncertainty, rights, distribution, readiness, recovery, renewal and future-generation safeguards without forecasting, ranking scenarios or creating a decision.</p></div><article class="record-card"><a class="inline-link" href="/data/whole-system-futures-scenario-governance-polycrisis-readiness-civilizational-resilience-future-generations.json">Whole-system futures JSON</a></article></section>
+</BaseLayout>

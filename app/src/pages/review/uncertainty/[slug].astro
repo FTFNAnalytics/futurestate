@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+
+export async function getStaticPaths() {
+  const topics = await getCollection("topics");
+  return topics.map((topic) => ({ params: { slug: topic.data.slug }, props: { topicId: topic.data.id } }));
+}
+const { topicId } = Astro.props;
+const topic = (await getCollection("topics")).find((item) => item.data.id === topicId)!;
+const signals = (await getCollection("signals")).filter((signal) => signal.data.record_status === "Published" && signal.data.primary_topic === topic.data.name).sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf());
+---
+
+<BaseLayout title={`${topic.data.name}: uncertainty library`} description={`Competing explanations and decisive evidence for ${topic.data.name}.`}>
+  <ReviewHeader eyebrow="Uncertainty library" title={`${topic.data.name}: challenge the reading`} summary="A strong synthesis should tell readers what else could explain the record, where the evidence stops, and what would force an editorial revision." phase={107} />
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Strongest current support</div><h2>Begin with the best Published records.</h2></div></div><div class="signal-grid">{signals.slice(0, 4).map((signal) => <article class="record-card"><MetaPill label={signal.data.evidence_quality} /><h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3><p>{signal.data.summary}</p><p class="card-note">Claim scope: {signal.data.claim_scope}</p></article>)}</div></section>
+  <section class="page-section review-columns"><article><div class="eyebrow">Competing explanations</div><h2>What may still be doing the work.</h2><ul>{topic.data.primary_constraints.map((constraint) => <li><strong>{constraint}:</strong> the observed direction may remain bounded by this constraint rather than representing durable system conversion.</li>)}</ul></article><article><div class="eyebrow">Disconfirming evidence</div><h2>What would change the editorial view.</h2><ol>{topic.data.watch_questions.map((question) => <li>{question}</li>)}</ol></article></section>
+  <section class="page-section prose-page"><h2>Confidence rule</h2><p>Volume is not corroboration. Repeated announcements from the same authority do not substitute for an independent implementation record, and one operating milestone does not establish persistence, distribution or causal impact.</p><a class="inline-link" href={`/review/topics/${topic.data.slug}/`}>Return to the canonical chapter</a></section>
+</BaseLayout>

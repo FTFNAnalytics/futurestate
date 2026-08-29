@@ -1,0 +1,49 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-73-analysis-execution-result-adjudication-registry.json";
+import synthesisRegistry from "../../../data/phase-74-evidence-synthesis-challenge-decision-translation-registry.json";
+
+export function getStaticPaths() {
+  return [
+    ...registry.analysis_execution_dockets.map((record) => ({ params: { id: record.slug }, props: { record, kind: "execution" } })),
+    ...registry.result_adjudication_dockets.map((record) => ({ params: { id: record.slug }, props: { record, kind: "adjudication" } }))
+  ];
+}
+
+const { record, kind } = Astro.props as { record: any; kind: "execution" | "adjudication" };
+const isExecution = kind === "execution";
+const executions = isExecution ? [] : registry.analysis_execution_dockets.filter((item) => item.cohort_id === record.cohort_id);
+const deviation = registry.protocol_deviation_registers.find((item) => item.protocol_deviation_register_id === record.protocol_deviation_register_id);
+const correction = isExecution ? null : registry.correction_withdrawal_registers.find((item) => item.correction_withdrawal_register_id === record.correction_withdrawal_register_id);
+const [briefings, dependencyMaps, signals, sources] = await Promise.all([getCollection("briefings"), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")]);
+const briefingById = new Map(briefings.map((item) => [item.data.id, item])); const mapById = new Map(dependencyMaps.map((item) => [item.data.id, item])); const signalById = new Map(signals.map((item) => [item.data.id, item])); const sourceById = new Map(sources.map((item) => [item.data.id, item]));
+const title = isExecution ? `${record.analysis_execution_docket_id}: ${record.measure_label}` : `${record.result_adjudication_docket_id}: ${record.named_entity}`;
+const synthesisInputs = synthesisRegistry.result_synthesis_input_dockets.filter((item) => isExecution ? item.analysis_execution_docket_id === record.analysis_execution_docket_id : item.cohort_id === record.cohort_id);
+const synthesisDossier = synthesisRegistry.synthesis_contradiction_dossiers.find((item) => item.cohort_id === record.cohort_id);
+---
+
+<BaseLayout title={`${title} | FTFN`} description={isExecution ? `${record.named_entity}: inactive analysis-execution docket with fourteen execution gates.` : `${record.named_entity}: inactive result-adjudication docket with fourteen adjudication gates.`} robots="index, follow">
+  <section class="page-section"><div class="eyebrow">{isExecution ? "Analysis Execution Docket" : "Result Adjudication Docket"}</div><h1 class="page-title">{title}</h1><p class="lede">{record.named_entity}</p><div class="meta-row"><MetaPill label={isExecution ? record.execution_state : record.adjudication_state} tone="review" /><MetaPill label={record.cohort_id} /><MetaPill label="0 executions" tone="review" /><MetaPill label="0 results" tone="review" /><MetaPill label="0 claims" tone="review" /></div></section>
+
+  {isExecution ? (
+    <>
+      <section class="page-section"><div class="status-panel"><article class="status-item"><h2>Phase 72 packet</h2><p><a href={`/evidence/claims/${record.evidence_packet_slug}/`}>{record.evidence_packet_id}</a></p></article><article class="status-item"><h2>Phase 72 design</h2><p><a href={`/evidence/claims/${record.counterfactual_docket_slug}/`}>{record.counterfactual_docket_id}</a>: {record.counterfactual_design_state}</p></article><article class="status-item"><h2>Execution decision</h2><p>{record.execution_decision}</p></article></div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Execution Authorization</div><h2>Fourteen execution gates remain Inactive.</h2></div></div><div class="source-list">{record.execution_checks.map((check: any) => <article class="source-row"><h3>{check.label}</h3><p>{check.basis}</p><MetaPill label={check.decision_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="grid"><article class="record-card"><h2>Frozen bundle</h2><ul><li>Design receipt: none</li><li>Input snapshot: none</li><li>Input manifests: 0</li><li>Code commit: none</li><li>Environment digest: none</li></ul></article><article class="record-card"><h2>Execution identity</h2><ul><li>Plan version: none</li><li>Estimand: none</li><li>Seed commitment: none</li><li>Runner: none</li><li>Start and completion: none</li></ul></article><article class="record-card"><h2>Output and review</h2><ul><li>Execution log: none</li><li>Output manifest: none</li><li>Primary result: none</li><li>Replications: 0</li><li>Receipt: none</li></ul></article></div></section>
+    </>
+  ) : (
+    <>
+      <section class="page-section"><div class="status-panel"><article class="status-item"><h2>Phase 72 design</h2><p><a href={`/evidence/claims/${record.counterfactual_docket_slug}/`}>{record.counterfactual_docket_id}</a>: {record.counterfactual_design_state}</p></article><article class="status-item"><h2>Deviation register</h2><p>{record.protocol_deviation_register_id}: Empty</p></article><article class="status-item"><h2>Adjudication decision</h2><p>{record.adjudication_decision}</p></article></div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Protocol Deviations</div><h2>Ten deviation categories remain Not Recorded.</h2></div></div><div class="source-list">{deviation?.category_records.map((item: any) => <article class="source-row"><h3>{item.label}</h3><p>No detection decision, timing, materiality, reason, impact, amendment, disposition, or receipt exists.</p><MetaPill label={item.record_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Result Adjudication</div><h2>Fourteen adjudication gates remain Inactive.</h2></div></div><div class="source-list">{record.adjudication_checks.map((check: any) => <article class="source-row"><h3>{check.label}</h3><p>{check.basis}</p><MetaPill label={check.decision_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Correction And Withdrawal</div><h2>Eight correction classes remain at No Event.</h2></div></div><div class="grid">{correction?.correction_classes.map((item: any) => <article class="record-card"><h3>{item.label}</h3><p>No correction, supersession, reader notice, or withdrawal exists.</p><MetaPill label={item.event_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="grid"><article class="record-card"><h2>Connected executions</h2><ul>{executions.map((item) => <li><a href={`/evidence/analysis/${item.slug}/`}>{item.analysis_execution_docket_id}: {item.measure_label}</a></li>)}</ul></article><article class="record-card"><h2>Empty result state</h2><ul><li>Blind break: none</li><li>Primary result: none</li><li>Uncertainty: none</li><li>Robustness records: 0</li><li>Falsification records: 0</li></ul></article><article class="record-card"><h2>Empty decision state</h2><ul><li>Replications: 0</li><li>Claim class: none</li><li>Proposed language: none</li><li>Reviewers: none</li><li>Receipt: none</li></ul></article></div></section>
+    </>
+  )}
+
+  <section class="page-section"><div class="grid"><article class="record-card"><h2>Connected briefings</h2><ul>{[record.canonical_briefing_id, "briefing-registered-analysis-execution-desk-001", "briefing-result-adjudication-desk-001"].map((id: string) => { const briefing = briefingById.get(id); return <li>{briefing ? <a href={`/briefings/${briefing.data.slug}/`}>{briefing.data.title}</a> : id}</li>; })}</ul></article><article class="record-card"><h2>Connected maps</h2><ul>{["dependency-map-descriptive-change-is-not-causal-effect", "dependency-map-registered-design-is-not-published-result"].map((id: string) => { const map = mapById.get(id); return <li>{map ? <a href={`/atlas/dependency-maps/${map.data.slug}/`}>{map.data.title}</a> : id}</li>; })}</ul></article><article class="record-card"><h2>Connected evidence</h2><ul>{record.source_ids.map((id: string) => { const source = sourceById.get(id); return <li>{source ? <a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a> : id}</li>; })}{record.signal_ids.map((id: string) => { const signal = signalById.get(id); return <li>{signal ? <a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a> : id}</li>; })}</ul></article></div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Boundary</div><h2>{isExecution ? "A registered design is not an authorized execution or result." : "A result artifact is not a publishable claim."}</h2><p>No frozen bundle, run, output, unblinded result, deviation, replication, claim, correction, withdrawal, reviewer decision, or receipt is recorded on this page.</p></div></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Phase 74 Destination</div><h2>No result has entered synthesis.</h2></div><a class="inline-link" href="/evidence/synthesis/">Open the synthesis registry</a></div><div class="grid">{synthesisInputs.map((item) => <article class="record-card"><h3><a href={`/evidence/synthesis/${item.slug}/`}>{item.result_synthesis_input_docket_id}</a></h3><p>{item.measure_label}: {item.input_state}</p></article>)}{synthesisDossier && <article class="record-card"><h3><a href={`/evidence/synthesis/${synthesisDossier.slug}/`}>{synthesisDossier.synthesis_contradiction_dossier_id}</a></h3><p>{synthesisDossier.synthesis_state}; no evidence grade or recommendation.</p></article>}</div></section>
+</BaseLayout>

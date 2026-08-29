@@ -2,9 +2,19 @@
   "id": "topic-discovery-technologies",
   "name": "Discovery Technologies",
   "slug": "discovery-technologies",
-  "summary": "The current shelf spans funded scientific data systems, public NISAR radar products, next-generation national elevation design, and ocean mapping and field operations. It distinguishes data availability and survey activity from validated models, institutional adoption, and changed decisions.",
-  "framework_layers": ["Planetary Conditions", "Resource Foundations", "Frontier Domains"],
-  "primary_constraints": ["Data Quality", "Interpretation", "Infrastructure", "Weather", "Compute"],
+  "summary": "The current shelf spans funded scientific data systems, public NISAR radar products, next-generation national elevation design, and ocean mapping and field operations. It distinguishes data availability and survey activity from validated models, institutional adoption, and changed decisions. Phase 65 adds a four-record reporting shelf and the Published briefing “Frontier Topic 002: Discovery Infrastructure Is Not Discovery Impact,” with explicit authority, implementation, acceptance, operating, and outcome boundaries.",
+  "framework_layers": [
+    "Planetary Conditions",
+    "Resource Foundations",
+    "Frontier Domains"
+  ],
+  "primary_constraints": [
+    "Data Quality",
+    "Interpretation",
+    "Infrastructure",
+    "Weather",
+    "Compute"
+  ],
   "featured_sources": [
     "source-usgs-3d-elevation-program",
     "source-nasa-earthdata-cmr-api",
@@ -24,6 +34,7 @@
   "watch_questions": [
     "Which NISAR, 3DEP, ocean-exploration, and integrated-data products have documented calibration, coverage, version, and public access?",
     "Where does better observation change a named decision about water, climate, minerals, infrastructure, agriculture, hazards, or safety?",
-    "Which ground-truth, model-validation, adoption, and outcome records are still missing before an observation becomes a local claim?"
+    "Which ground-truth, model-validation, adoption, and outcome records are still missing before an observation becomes a local claim?",
+    "Phase 65: Which records show a discovery instrument, dataset, testbed, or program becoming an inspectable research capability without treating availability as downstream use?"
   ]
 }

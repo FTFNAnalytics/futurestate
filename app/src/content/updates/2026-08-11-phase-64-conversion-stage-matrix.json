@@ -1,0 +1,25 @@
+{
+  "id": "update-2026-08-11-phase-64-conversion-stage-matrix",
+  "effective_date": "2026-08-11",
+  "entry_type": "Source Refresh",
+  "title": "Phase 64 publishes a bounded cross-file conversion stage matrix",
+  "summary": "Eight named files are now mapped across eight common evidence questions using sixty-four qualitative cells. The matrix preserves entity and event provenance while separating context, authority, commitment, implementation, validation, acceptance, recurring operation, and comparable outcomes.",
+  "affected_record_ids": [
+    "briefing-conversion-stage-matrix-001",
+    "dependency-map-conversion-stage-is-not-outcome",
+    "reader-pathway-cross-corridor-authorization-to-operation",
+    "briefing-conversion-gate-calendar-001"
+  ],
+  "related_paths": [
+    "/briefings/conversion-stage-matrix-001-comparable-questions-noncomparable-projects/",
+    "/atlas/dependency-maps/conversion-stage-is-not-outcome/",
+    "/data/conversion-stage-matrix.json",
+    "/data/conversion-gates.json"
+  ],
+  "evidence_note": "Phase 64 classifies only the reviewed Phase 62 event set. A Not Established cell is not proof of nonexistence, Evidence Present is not stage completion, and no cell state is a score or cross-file rank.",
+  "prior_state": "The named files exposed current stages, histories, and next gates but did not offer one bounded cross-file set of evidence questions.",
+  "current_state": "Sixty-four cells preserve file, stage, state, event provenance, and basis; all eight comparable-outcome cells remain Not Established under the reviewed evidence boundary.",
+  "publication_effect": "Publishes one matrix briefing, one dependency map, one sixty-four-cell public export, one pathway integration, and this update without changing an underlying event or evidence stage.",
+  "next_check_date": "2026-08-15",
+  "work_package": "docs/work-packages/phase-64-conversion-stage-matrix.md"
+}

@@ -1,0 +1,1777 @@
+{
+  "schema_version": "1.0",
+  "phase": "67",
+  "fixture_set_id": "return-workflow-fixtures-001",
+  "interpretation_boundary": "Synthetic workflow fixtures verify future-state integrity and are never serialized as evidence or completed checks.",
+  "expected_cases": 104,
+  "fixtures": [
+    {
+      "fixture_id": "67-RF-001-01",
+      "envelope_id": "67-RETURN-001",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-001-02",
+      "envelope_id": "67-RETURN-001",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-001-03",
+      "envelope_id": "67-RETURN-001",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-001-04",
+      "envelope_id": "67-RETURN-001",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-001-05",
+      "envelope_id": "67-RETURN-001",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-001-06",
+      "envelope_id": "67-RETURN-001",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-001-07",
+      "envelope_id": "67-RETURN-001",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-001-08",
+      "envelope_id": "67-RETURN-001",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-002-01",
+      "envelope_id": "67-RETURN-002",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-002-02",
+      "envelope_id": "67-RETURN-002",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-002-03",
+      "envelope_id": "67-RETURN-002",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-002-04",
+      "envelope_id": "67-RETURN-002",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-002-05",
+      "envelope_id": "67-RETURN-002",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-002-06",
+      "envelope_id": "67-RETURN-002",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-002-07",
+      "envelope_id": "67-RETURN-002",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-002-08",
+      "envelope_id": "67-RETURN-002",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-003-01",
+      "envelope_id": "67-RETURN-003",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-003-02",
+      "envelope_id": "67-RETURN-003",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-003-03",
+      "envelope_id": "67-RETURN-003",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-003-04",
+      "envelope_id": "67-RETURN-003",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-003-05",
+      "envelope_id": "67-RETURN-003",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-003-06",
+      "envelope_id": "67-RETURN-003",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-003-07",
+      "envelope_id": "67-RETURN-003",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-003-08",
+      "envelope_id": "67-RETURN-003",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-004-01",
+      "envelope_id": "67-RETURN-004",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-004-02",
+      "envelope_id": "67-RETURN-004",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-004-03",
+      "envelope_id": "67-RETURN-004",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-004-04",
+      "envelope_id": "67-RETURN-004",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-004-05",
+      "envelope_id": "67-RETURN-004",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-004-06",
+      "envelope_id": "67-RETURN-004",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-004-07",
+      "envelope_id": "67-RETURN-004",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-004-08",
+      "envelope_id": "67-RETURN-004",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-005-01",
+      "envelope_id": "67-RETURN-005",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-005-02",
+      "envelope_id": "67-RETURN-005",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-005-03",
+      "envelope_id": "67-RETURN-005",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-005-04",
+      "envelope_id": "67-RETURN-005",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-005-05",
+      "envelope_id": "67-RETURN-005",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-005-06",
+      "envelope_id": "67-RETURN-005",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-005-07",
+      "envelope_id": "67-RETURN-005",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-005-08",
+      "envelope_id": "67-RETURN-005",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-006-01",
+      "envelope_id": "67-RETURN-006",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-006-02",
+      "envelope_id": "67-RETURN-006",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-006-03",
+      "envelope_id": "67-RETURN-006",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-006-04",
+      "envelope_id": "67-RETURN-006",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-006-05",
+      "envelope_id": "67-RETURN-006",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-006-06",
+      "envelope_id": "67-RETURN-006",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-006-07",
+      "envelope_id": "67-RETURN-006",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-006-08",
+      "envelope_id": "67-RETURN-006",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-007-01",
+      "envelope_id": "67-RETURN-007",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-007-02",
+      "envelope_id": "67-RETURN-007",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-007-03",
+      "envelope_id": "67-RETURN-007",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-007-04",
+      "envelope_id": "67-RETURN-007",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-007-05",
+      "envelope_id": "67-RETURN-007",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-007-06",
+      "envelope_id": "67-RETURN-007",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-007-07",
+      "envelope_id": "67-RETURN-007",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-007-08",
+      "envelope_id": "67-RETURN-007",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-008-01",
+      "envelope_id": "67-RETURN-008",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-008-02",
+      "envelope_id": "67-RETURN-008",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-008-03",
+      "envelope_id": "67-RETURN-008",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-008-04",
+      "envelope_id": "67-RETURN-008",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-008-05",
+      "envelope_id": "67-RETURN-008",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-008-06",
+      "envelope_id": "67-RETURN-008",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-008-07",
+      "envelope_id": "67-RETURN-008",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-008-08",
+      "envelope_id": "67-RETURN-008",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-009-01",
+      "envelope_id": "67-RETURN-009",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-009-02",
+      "envelope_id": "67-RETURN-009",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-009-03",
+      "envelope_id": "67-RETURN-009",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-009-04",
+      "envelope_id": "67-RETURN-009",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-009-05",
+      "envelope_id": "67-RETURN-009",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-009-06",
+      "envelope_id": "67-RETURN-009",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-009-07",
+      "envelope_id": "67-RETURN-009",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-009-08",
+      "envelope_id": "67-RETURN-009",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-010-01",
+      "envelope_id": "67-RETURN-010",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-010-02",
+      "envelope_id": "67-RETURN-010",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-010-03",
+      "envelope_id": "67-RETURN-010",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-010-04",
+      "envelope_id": "67-RETURN-010",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-010-05",
+      "envelope_id": "67-RETURN-010",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-010-06",
+      "envelope_id": "67-RETURN-010",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-010-07",
+      "envelope_id": "67-RETURN-010",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-010-08",
+      "envelope_id": "67-RETURN-010",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-011-01",
+      "envelope_id": "67-RETURN-011",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-011-02",
+      "envelope_id": "67-RETURN-011",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-011-03",
+      "envelope_id": "67-RETURN-011",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-011-04",
+      "envelope_id": "67-RETURN-011",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-011-05",
+      "envelope_id": "67-RETURN-011",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-011-06",
+      "envelope_id": "67-RETURN-011",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-011-07",
+      "envelope_id": "67-RETURN-011",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-011-08",
+      "envelope_id": "67-RETURN-011",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-012-01",
+      "envelope_id": "67-RETURN-012",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-012-02",
+      "envelope_id": "67-RETURN-012",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-012-03",
+      "envelope_id": "67-RETURN-012",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-012-04",
+      "envelope_id": "67-RETURN-012",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-012-05",
+      "envelope_id": "67-RETURN-012",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-012-06",
+      "envelope_id": "67-RETURN-012",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-012-07",
+      "envelope_id": "67-RETURN-012",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-012-08",
+      "envelope_id": "67-RETURN-012",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-013-01",
+      "envelope_id": "67-RETURN-013",
+      "case_type": "valid_future_schedule",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "scheduled"
+    },
+    {
+      "fixture_id": "67-RF-013-02",
+      "envelope_id": "67-RETURN-013",
+      "case_type": "precreated_receipt",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": false,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-013-03",
+      "envelope_id": "67-RETURN-013",
+      "case_type": "premature_decision",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": false,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-013-04",
+      "envelope_id": "67-RETURN-013",
+      "case_type": "missing_source",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": false,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-013-05",
+      "envelope_id": "67-RETURN-013",
+      "case_type": "missing_signal",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": false,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-013-06",
+      "envelope_id": "67-RETURN-013",
+      "case_type": "missing_artifact",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": false,
+        "binding_matches": true,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-013-07",
+      "envelope_id": "67-RETURN-013",
+      "case_type": "unauthorized_named_file_transfer",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": false,
+        "propagation_not_started": true
+      },
+      "expected": "reject"
+    },
+    {
+      "fixture_id": "67-RF-013-08",
+      "envelope_id": "67-RETURN-013",
+      "case_type": "premature_propagation",
+      "synthetic_only": true,
+      "inputs": {
+        "scheduled_date_present": true,
+        "receipt_absent": true,
+        "decision_absent": true,
+        "source_resolves": true,
+        "signal_resolves": true,
+        "artifact_defined": true,
+        "binding_matches": true,
+        "propagation_not_started": false
+      },
+      "expected": "reject"
+    }
+  ]
+}

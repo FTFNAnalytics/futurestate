@@ -1,0 +1,140 @@
+{
+  "id": "dependency-map-acceptance-is-not-repeat-operation",
+  "title": "Acceptance Is Not Repeat Operation",
+  "slug": "acceptance-is-not-repeat-operation",
+  "summary": "A four-stage map separating validation, receiving-system acceptance, recurring operation, and comparable outcome while preserving the Phase 66 no-transfer rule.",
+  "map_type": "Evidence Gap Map",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Frontier Domains",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Data Quality",
+    "Interpretation",
+    "Regulation",
+    "Infrastructure",
+    "Public Trust"
+  ],
+  "map_question": "What evidence is required after implementation before a named file can support an accepted, repeated, or comparable operating claim?",
+  "interpretation_boundary": "The four nodes are distinct evidence questions, not a universal linear workflow. A file can enter at different points, and no node automatically proves the next one.",
+  "source_ids": [
+    "source-phoenix-tsmc-july-2026-fab-update",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-virginia-scc-golden-mars-2026",
+    "source-faa-shuttle-landing-facility-license",
+    "source-ndep-rhyolite-ridge-water-permit-2025",
+    "source-gsa-pqc-buyers-guide-2025",
+    "source-nist-aria-pilot-evaluation-2025",
+    "source-cpuc-waymo-al2-disposition-2024"
+  ],
+  "signal_ids": [
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-virginia-data-center-air-permit-trail",
+    "signal-faa-part450-operator-transition",
+    "signal-thacker-pass-federal-land-authorization",
+    "signal-gsa-pqc-procurement-paths",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-cpuc-waymo-fared-driverless-expansion-2024"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate",
+    "local-northern-virginia-data-center-corridor",
+    "local-florida-space-coast-launch-corridor",
+    "local-nevada-lithium-processing-corridor"
+  ],
+  "evidence_gap_ids": [
+    "gap-002",
+    "gap-004",
+    "gap-009",
+    "gap-011",
+    "gap-012",
+    "gap-013",
+    "gap-014",
+    "gap-015",
+    "gap-016"
+  ],
+  "nodes": [
+    {
+      "id": "node-validation",
+      "label": "Named validation",
+      "node_type": "Constraint",
+      "note": "Inspection, test, compliance, qualification, exception, correction, and retest must match the named scope."
+    },
+    {
+      "id": "node-acceptance",
+      "label": "Receiving-system acceptance",
+      "node_type": "Constraint",
+      "note": "A named authority or customer accepts the defined asset, service, product, occupancy, cutover, or operating condition."
+    },
+    {
+      "id": "node-repeat",
+      "label": "Compatible recurring operation",
+      "node_type": "Constraint",
+      "note": "Multiple observations preserve entity, scope, period, definition, method, denominator, and exceptions."
+    },
+    {
+      "id": "node-outcome",
+      "label": "Comparable outcome",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-016",
+      "note": "A repeated series supports only a bounded outcome with a stable measure, denominator, acceptance state, and attribution boundary."
+    },
+    {
+      "id": "node-no-transfer",
+      "label": "No automatic evidence transfer",
+      "node_type": "Constraint",
+      "note": "Adjacent entities, plans, authority, construction, one-time events, and context records do not flow forward or sideways."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-validation",
+      "to": "node-acceptance",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "A successful test may be necessary but does not itself establish acceptance."
+    },
+    {
+      "from": "node-acceptance",
+      "to": "node-repeat",
+      "relationship": "Depends On",
+      "confidence": "Partial",
+      "note": "One accepted event does not establish recurring operation."
+    },
+    {
+      "from": "node-repeat",
+      "to": "node-outcome",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Repeated activity still needs a stable outcome definition, denominator, and attribution boundary."
+    },
+    {
+      "from": "node-no-transfer",
+      "to": "node-outcome",
+      "relationship": "Limited By",
+      "confidence": "Supported",
+      "note": "The no-transfer rule prevents context and upstream records from becoming outcome evidence."
+    }
+  ],
+  "what_this_map_supports": [
+    "Validation, acceptance, recurring operation, and comparable outcome can be reviewed as separate downstream questions.",
+    "Same-entity identity, receiving-system authority, compatible repetition, and stable denominators are distinct evidence requirements.",
+    "A held or context record can guide the next search without changing a matrix cell."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not establish readiness, maturity, value, risk, safety, performance, or probability for any file.",
+    "It does not rank or compare unlike named systems.",
+    "It does not convert a test, acceptance event, or repeated activity into an operating outcome."
+  ],
+  "next_records_needed": [
+    "Same-entity validation results with exceptions, corrections, and retests.",
+    "Named receiving-system or customer acceptance records.",
+    "Compatible repeat-operation and outcome series with stable identity, method, period, and denominator."
+  ]
+}

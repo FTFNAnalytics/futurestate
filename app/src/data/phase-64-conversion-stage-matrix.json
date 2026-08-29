@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "phase": "64",
+  "matrix_id": "conversion-stage-matrix-001",
+  "title": "Named Conversion Stage Matrix",
+  "captured_date": "2026-08-11",
+  "record_scope": "Sixty-four bounded cells asking the same eight evidence-stage questions of the eight named conversion files.",
+  "interpretation_boundary": "The columns are common evidence questions, not claims that unlike projects and adoption cases share one legal, technical, commercial, or operating sequence. Cell states are qualitative evidence labels, not maturity, readiness, value, risk, performance, or probability scores.",
+  "cell_states": ["Evidence Present", "Partial / Held", "Not Established"],
+  "stage_taxonomy": [
+    {"stage_id": "64-STAGE-01-CONTEXT", "sequence": 1, "label": "Named context or baseline", "question": "Is the named entity and its current evidence boundary established?"},
+    {"stage_id": "64-STAGE-02-AUTHORITY", "sequence": 2, "label": "Policy or authority", "question": "Is a named policy, regulatory, permitting, or service authority established?"},
+    {"stage_id": "64-STAGE-03-COMMITMENT", "sequence": 3, "label": "Finance, procurement, or agreement", "question": "Is a named financial close, order, procurement, contract, or delivery agreement established?"},
+    {"stage_id": "64-STAGE-04-IMPLEMENTATION", "sequence": 4, "label": "Build or implementation", "question": "Is physical construction or system implementation established at the named entity?"},
+    {"stage_id": "64-STAGE-05-VALIDATION", "sequence": 5, "label": "Test, compliance, or qualification", "question": "Is named testing, inspection, compliance, qualification, or corrective action established?"},
+    {"stage_id": "64-STAGE-06-ACCEPTANCE", "sequence": 6, "label": "Accepted service, product, or cutover", "question": "Has a named receiving authority or customer accepted the asset, service, product, or transition?"},
+    {"stage_id": "64-STAGE-07-REPEAT", "sequence": 7, "label": "Recurring operation or output", "question": "Is compatible recurring service, operation, or output established?"},
+    {"stage_id": "64-STAGE-08-OUTCOME", "sequence": 8, "label": "Comparable outcome", "question": "Is a repeated outcome series established with stable identity, period, definition, and denominator?"}
+  ],
+  "file_rows": [
+    {
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "kind": "local_project",
+      "named_entity": "TSMC Arizona",
+      "gate_id": "63-GATE-TSMC-ARIZONA",
+      "current_boundary": "Facility milestones and a wastewater agreement are visible; accepted utilities, qualification, customer acceptance, and compatible recurring output remain open.",
+      "next_decisive_stage_id": "64-STAGE-05-VALIDATION",
+      "stage_cells": [
+        {"stage_id": "64-STAGE-01-CONTEXT", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-TSMC-WASTEWATER-AGREEMENT", "62-EVENT-TSMC-BOUNDED-PRODUCTION-CLAIM"], "basis": "Two facility-specific records establish a named campus trail with differentiated evidence stages."},
+        {"stage_id": "64-STAGE-02-AUTHORITY", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "The selected events do not establish a complete permitting or operating-authority stack for the campus."},
+        {"stage_id": "64-STAGE-03-COMMITMENT", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-TSMC-WASTEWATER-AGREEMENT"], "basis": "The Phoenix wastewater agreement is a named delivery instrument, not an accepted asset."},
+        {"stage_id": "64-STAGE-04-IMPLEMENTATION", "cell_state": "Partial / Held", "evidence_event_ids": ["62-EVENT-TSMC-BOUNDED-PRODUCTION-CLAIM"], "basis": "Facility construction milestones are differentiated, while the record does not establish one common campus implementation stage."},
+        {"stage_id": "64-STAGE-05-VALIDATION", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Facility-specific inspection, utility acceptance, equipment qualification, and customer qualification remain open."},
+        {"stage_id": "64-STAGE-06-ACCEPTANCE", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "No selected event establishes accepted service, customer acceptance, or accepted product."},
+        {"stage_id": "64-STAGE-07-REPEAT", "cell_state": "Partial / Held", "evidence_event_ids": ["62-EVENT-TSMC-BOUNDED-PRODUCTION-CLAIM"], "basis": "A bounded Fab 1 volume-production claim exists without a compatible recurring facility series."},
+        {"stage_id": "64-STAGE-08-OUTCOME", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Stable facility-level output, workforce, water, reliability, cost, and compliance outcomes are not established."}
+      ]
+    },
+    {
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "kind": "local_project",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "gate_id": "63-GATE-TORONTO-24-254930",
+      "current_boundary": "Council adoption is established while enactment, condition satisfaction, permit, start, completion, and occupancy remain open.",
+      "next_decisive_stage_id": "64-STAGE-02-AUTHORITY",
+      "stage_cells": [
+        {"stage_id": "64-STAGE-01-CONTEXT", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-TORONTO-PIPELINE-CONTEXT"], "basis": "The named application is interpreted against explicit citywide delivery stages without substituting aggregate counts for project evidence."},
+        {"stage_id": "64-STAGE-02-AUTHORITY", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-TORONTO-COUNCIL-ADOPTION"], "basis": "Council adopted the item, but the amendment bills remain withheld behind named conditions."},
+        {"stage_id": "64-STAGE-03-COMMITMENT", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "No selected event establishes financing, executed construction procurement, or a project delivery agreement."},
+        {"stage_id": "64-STAGE-04-IMPLEMENTATION", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "A project-specific construction start is not established."},
+        {"stage_id": "64-STAGE-05-VALIDATION", "cell_state": "Not Established", "evidence_event_ids": ["62-EVENT-TORONTO-COUNCIL-ADOPTION"], "basis": "Accepted wind, land-exchange, laneway, servicing, inspection, and condition-compliance records remain open."},
+        {"stage_id": "64-STAGE-06-ACCEPTANCE", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "No permit, completion, occupancy, or other receiving-authority acceptance is established."},
+        {"stage_id": "64-STAGE-07-REPEAT", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Recurring project operation is outside the established evidence stage."},
+        {"stage_id": "64-STAGE-08-OUTCOME", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "No stable project-level housing delivery or occupancy outcome series is established."}
+      ]
+    },
+    {
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "kind": "local_project",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "gate_id": "63-GATE-NOVA-LARGE-LOAD",
+      "current_boundary": "A future rate class and conditional transmission authority are established; final route, construction, energization, customer service, and outcomes remain open.",
+      "next_decisive_stage_id": "64-STAGE-02-AUTHORITY",
+      "stage_cells": [
+        {"stage_id": "64-STAGE-01-CONTEXT", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-NOVA-GS5-RATE-CLASS", "62-EVENT-NOVA-GOLDEN-MARS-CONDITIONAL"], "basis": "The commercial rule and named transmission project establish the file's current delivery context."},
+        {"stage_id": "64-STAGE-02-AUTHORITY", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-NOVA-GS5-RATE-CLASS", "62-EVENT-NOVA-GOLDEN-MARS-CONDITIONAL"], "basis": "Virginia approved the future rate class and conditional transmission project while retaining a local route dependency."},
+        {"stage_id": "64-STAGE-03-COMMITMENT", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "No executed named-customer GS-5 agreement is established."},
+        {"stage_id": "64-STAGE-04-IMPLEMENTATION", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Final route, land rights, and construction remain open."},
+        {"stage_id": "64-STAGE-05-VALIDATION", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Inspection, energization tests, and accepted compliance are not established."},
+        {"stage_id": "64-STAGE-06-ACCEPTANCE", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Available capacity and accepted named-customer service are not established."},
+        {"stage_id": "64-STAGE-07-REPEAT", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Recurring metered service and reliability are not established."},
+        {"stage_id": "64-STAGE-08-OUTCOME", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Stable cost, reliability, permit, and community-effect outcomes are not established."}
+      ]
+    },
+    {
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "kind": "local_project",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "gate_id": "63-GATE-SPACE-COAST-AUTHORITY",
+      "current_boundary": "Two environmental decisions and one unresolved site-licence rail do not establish operator authorization, accepted assets, missions, or recurring service.",
+      "next_decisive_stage_id": "64-STAGE-02-AUTHORITY",
+      "stage_cells": [
+        {"stage_id": "64-STAGE-01-CONTEXT", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-SPACE-SLC40-ENVIRONMENTAL", "62-EVENT-SPACE-LC39A-ENVIRONMENTAL", "62-EVENT-SPACE-SLF-LICENCE-HOLD"], "basis": "Three site-specific events establish a mixed and non-transferable authority context."},
+        {"stage_id": "64-STAGE-02-AUTHORITY", "cell_state": "Partial / Held", "evidence_event_ids": ["62-EVENT-SPACE-SLC40-ENVIRONMENTAL", "62-EVENT-SPACE-LC39A-ENVIRONMENTAL", "62-EVENT-SPACE-SLF-LICENCE-HOLD"], "basis": "Environmental review is complete at two sites while operator-specific authority and the Shuttle Landing Facility disposition remain open."},
+        {"stage_id": "64-STAGE-03-COMMITMENT", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "No selected event establishes a complete named capital or operator delivery commitment."},
+        {"stage_id": "64-STAGE-04-IMPLEMENTATION", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Accepted construction at the named sites is not established by the selected events."},
+        {"stage_id": "64-STAGE-05-VALIDATION", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Operator licensing, safety acceptance, and asset acceptance remain open."},
+        {"stage_id": "64-STAGE-06-ACCEPTANCE", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "No selected event establishes an accepted operator service or mission capability."},
+        {"stage_id": "64-STAGE-07-REPEAT", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Repeated mission or facility service is not established."},
+        {"stage_id": "64-STAGE-08-OUTCOME", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Compatible utilization, delay, safety, reliability, and local-outcome series are not established."}
+      ]
+    },
+    {
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "kind": "local_project",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "gate_id": "63-GATE-NEVADA-LITHIUM",
+      "current_boundary": "Financial close and water-permit conditions are established while construction acceptance, commissioning, qualification, shipment, and recurring output remain open.",
+      "next_decisive_stage_id": "64-STAGE-04-IMPLEMENTATION",
+      "stage_cells": [
+        {"stage_id": "64-STAGE-01-CONTEXT", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-NEVADA-THACKER-LOAN-CLOSE", "62-EVENT-NEVADA-RHYOLITE-WATER-PERMIT"], "basis": "Two named projects establish separate finance and environmental rails without one combined operating state."},
+        {"stage_id": "64-STAGE-02-AUTHORITY", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-NEVADA-RHYOLITE-WATER-PERMIT"], "basis": "The renewed water permit establishes regulated pre-operation authority and conditions for Rhyolite Ridge."},
+        {"stage_id": "64-STAGE-03-COMMITMENT", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-NEVADA-THACKER-LOAN-CLOSE"], "basis": "Thacker Pass reached federal loan financial close."},
+        {"stage_id": "64-STAGE-04-IMPLEMENTATION", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "A named accepted construction-completion record is not established."},
+        {"stage_id": "64-STAGE-05-VALIDATION", "cell_state": "Partial / Held", "evidence_event_ids": ["62-EVENT-NEVADA-RHYOLITE-WATER-PERMIT"], "basis": "The permit defines future inspection, modeling, monitoring, and reporting duties without establishing their satisfaction."},
+        {"stage_id": "64-STAGE-06-ACCEPTANCE", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Commissioning acceptance, qualified material, and customer receipt are not established."},
+        {"stage_id": "64-STAGE-07-REPEAT", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Compatible recurring qualified output or shipment is not established."},
+        {"stage_id": "64-STAGE-08-OUTCOME", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Stable output, compliance, water, sales, and receiving-system outcome series are not established."}
+      ]
+    },
+    {
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "kind": "adoption_case",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "gate_id": "63-GATE-GSA-PQC",
+      "current_boundary": "Federal migration policy and a procurement mechanism exist before any named agency order, validated cutover, acceptance, or retirement.",
+      "next_decisive_stage_id": "64-STAGE-03-COMMITMENT",
+      "stage_cells": [
+        {"stage_id": "64-STAGE-01-CONTEXT", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-PQC-GSA-BUYERS-GUIDE", "62-EVENT-PQC-FEDERAL-MIGRATION-POLICY"], "basis": "The federal migration obligation and GSA acquisition path establish a named institutional context."},
+        {"stage_id": "64-STAGE-02-AUTHORITY", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-PQC-FEDERAL-MIGRATION-POLICY"], "basis": "Federal policy establishes migration plans and dated transitions."},
+        {"stage_id": "64-STAGE-03-COMMITMENT", "cell_state": "Partial / Held", "evidence_event_ids": ["62-EVENT-PQC-GSA-BUYERS-GUIDE"], "basis": "GSA maps procurement paths, but no named agency order or award is established."},
+        {"stage_id": "64-STAGE-04-IMPLEMENTATION", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "A named system implementation is not established."},
+        {"stage_id": "64-STAGE-05-VALIDATION", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Interoperability, security validation, rollback testing, and corrective action are not established for a named migration."},
+        {"stage_id": "64-STAGE-06-ACCEPTANCE", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Accepted cutover and legacy retirement are not established."},
+        {"stage_id": "64-STAGE-07-REPEAT", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Recurring post-cutover operation across a stable system cohort is not established."},
+        {"stage_id": "64-STAGE-08-OUTCOME", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Comparable migration coverage, incident, cost, and operating outcome evidence is not established."}
+      ]
+    },
+    {
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "kind": "adoption_case",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "gate_id": "63-GATE-NIST-ARIA",
+      "current_boundary": "A multi-level evaluation pilot is established before named operating authorization, continuous assurance, correction, independent review, or stable outcomes.",
+      "next_decisive_stage_id": "64-STAGE-06-ACCEPTANCE",
+      "stage_cells": [
+        {"stage_id": "64-STAGE-01-CONTEXT", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-AI-NASA-OUTCOME-HOLD", "62-EVENT-AI-ARIA-PILOT"], "basis": "A public deployment inventory and a named evaluation pilot establish the assurance context and its missing outcome layer."},
+        {"stage_id": "64-STAGE-02-AUTHORITY", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "A named operating authorization tied to ARIA findings is not established."},
+        {"stage_id": "64-STAGE-03-COMMITMENT", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "A named deployment procurement or implementation commitment is not established."},
+        {"stage_id": "64-STAGE-04-IMPLEMENTATION", "cell_state": "Partial / Held", "evidence_event_ids": ["62-EVENT-AI-ARIA-PILOT"], "basis": "Seven applications participated in a bounded pilot without establishing continuous operating controls."},
+        {"stage_id": "64-STAGE-05-VALIDATION", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-AI-ARIA-PILOT"], "basis": "ARIA used model testing, red teaming, and field testing in one named evaluation pilot."},
+        {"stage_id": "64-STAGE-06-ACCEPTANCE", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "System authorization and accepted continuous assurance are not established."},
+        {"stage_id": "64-STAGE-07-REPEAT", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Recurring monitoring, incident, override, correction, and independent-review evidence is not established."},
+        {"stage_id": "64-STAGE-08-OUTCOME", "cell_state": "Not Established", "evidence_event_ids": ["62-EVENT-AI-NASA-OUTCOME-HOLD"], "basis": "Stable mission, service, cost, quality, or user outcomes remain absent from the reviewed public layer."}
+      ]
+    },
+    {
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "kind": "adoption_case",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "gate_id": "63-GATE-WAYMO-CALIFORNIA",
+      "current_boundary": "Expanded service authority and a reporting rail exist before one current comparable operator-level service and outcome series.",
+      "next_decisive_stage_id": "64-STAGE-07-REPEAT",
+      "stage_cells": [
+        {"stage_id": "64-STAGE-01-CONTEXT", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-WAYMO-FARED-SERVICE-AUTHORITY", "62-EVENT-WAYMO-REPORTING-ROLLUP-HOLD"], "basis": "The operator, service geography, legal authority, and reporting gap are named."},
+        {"stage_id": "64-STAGE-02-AUTHORITY", "cell_state": "Evidence Present", "evidence_event_ids": ["62-EVENT-WAYMO-FARED-SERVICE-AUTHORITY"], "basis": "CPUC authorized expanded fared driverless passenger service in specified areas."},
+        {"stage_id": "64-STAGE-03-COMMITMENT", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "The selected events do not establish a separate procurement or receiving-system agreement stage."},
+        {"stage_id": "64-STAGE-04-IMPLEMENTATION", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "Authority alone does not establish stable service availability or operating implementation."},
+        {"stage_id": "64-STAGE-05-VALIDATION", "cell_state": "Not Established", "evidence_event_ids": [], "basis": "A current comparable operator validation series is not established by the selected events."},
+        {"stage_id": "64-STAGE-06-ACCEPTANCE", "cell_state": "Partial / Held", "evidence_event_ids": ["62-EVENT-WAYMO-FARED-SERVICE-AUTHORITY"], "basis": "Service authority permits operation but does not establish availability, accessibility, quality, or receiving-system acceptance."},
+        {"stage_id": "64-STAGE-07-REPEAT", "cell_state": "Partial / Held", "evidence_event_ids": ["62-EVENT-WAYMO-REPORTING-ROLLUP-HOLD"], "basis": "Required reporting creates a recurring evidence rail while one current comparable public rollup remains missing."},
+        {"stage_id": "64-STAGE-08-OUTCOME", "cell_state": "Not Established", "evidence_event_ids": ["62-EVENT-WAYMO-REPORTING-ROLLUP-HOLD"], "basis": "Stable service exposure, rides, interventions, safety, accessibility, complaints, cost, and coverage outcomes are not established together."}
+      ]
+    }
+  ]
+}

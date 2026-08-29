@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import program from "../../../../data/v031-content-expansion.json";
+
+export function getStaticPaths() { return program.reports.map((report) => ({ params: { slug: report.slug }, props: { reportId: report.report_id } })); }
+const report = program.reports.find((item) => item.report_id === Astro.props.reportId)!;
+const allSignals = await getCollection("signals");
+const haystack = (signal: (typeof allSignals)[number]) => `${signal.data.id} ${signal.data.title} ${signal.data.summary}`.toLowerCase();
+const signals = allSignals.filter((signal) => signal.data.record_status === "Published" && report.signal_terms.some((term) => haystack(signal).includes(term))).sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf()).slice(0, 18);
+---
+
+<BaseLayout title={`${report.title} | Linear reading edition`} description={report.thesis}>
+  <ReviewHeader eyebrow="Phase 115 · Linear reading edition" title={report.title} summary={report.thesis} phase={115} />
+  <main class="page-section prose-page" id="main-reading-order">
+    <h2>Reading note</h2><p>This edition presents the report in one continuous document. Links use descriptive labels, headings preserve a single hierarchy, and no meaning depends on color, position or hover state.</p>
+    {report.sections.map((section, index) => <section><h2>{index + 1}. {section}</h2>{index === 0 ? <p>{report.thesis}</p> : signals.slice((index - 1) * 6, index * 6).map((signal) => <article><h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3><p>{signal.data.summary}</p><p><strong>Topic:</strong> {signal.data.primary_topic}. <strong>Evidence maturity:</strong> {signal.data.maturity_level}.</p></article>)}</section>)}
+    <section><h2>Interpretation boundary</h2><p>{report.interpretation_boundary}</p><p><a href={`/review/reports/${report.slug}/`}>Return to the standard report edition</a></p></section>
+  </main>
+</BaseLayout>

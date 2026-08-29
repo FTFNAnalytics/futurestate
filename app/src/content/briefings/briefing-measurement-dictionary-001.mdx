@@ -1,0 +1,124 @@
+---
+id: "briefing-measurement-dictionary-001"
+title: "Measurement Dictionary 001: Thirty-Two Measures, Zero Values"
+slug: "measurement-dictionary-001"
+record_status: "Published"
+summary: "A public measurement dictionary defining thirty-two same-entity specifications and empty observation envelopes with eighteen mandatory fields and no inferred values."
+published_date: 2026-08-23
+captured_date: 2026-08-23
+signal_ids:
+  - "signal-aps-tsmc-service-territory-capacity-boundary"
+  - "signal-toronto-24-254930-community-council-recommendation"
+  - "signal-virginia-gs5-large-load-rate-class"
+  - "signal-faa-part450-operator-transition"
+  - "signal-thacker-pass-doe-loan-financial-close"
+  - "signal-gsa-pqc-procurement-paths"
+  - "signal-nist-aria-pilot-multilevel-evaluation"
+  - "signal-cpuc-waymo-fared-driverless-expansion-2024"
+evidence_gap_ids:
+  - "gap-001"
+  - "gap-002"
+  - "gap-003"
+  - "gap-004"
+  - "gap-005"
+  - "gap-007"
+  - "gap-008"
+  - "gap-009"
+  - "gap-010"
+  - "gap-011"
+  - "gap-012"
+  - "gap-013"
+  - "gap-014"
+  - "gap-015"
+  - "gap-016"
+claim_scope: "Editorial Synthesis"
+local_evidence_level: "General Source Layer"
+last_reviewed_date: 2026-08-23
+top_takeaways:
+  - "Thirty-two specifications define future numerator, denominator, unit, period, method, acceptance, exception, revision, and propagation requirements."
+  - "Every intake envelope remains empty and every value, period, observation count, and series-point count remains null or zero."
+  - "A structurally complete observation becomes eligible for human review; it never publishes or admits a cohort automatically."
+constraint_watch:
+  - "Data Quality"
+  - "Interpretation"
+  - "Standards"
+  - "Public Trust"
+what_to_watch_next:
+  - "A real same-entity artifact returned through the exact measurement specification"
+  - "Source-declared units, denominator, method, exceptions, revision status, and acceptance basis"
+  - "Independent review and a bounded receipt before any observation becomes a series point"
+---
+
+## The measurement layer
+
+Phase 69 sits between an outcome-cohort acquisition contract and a real observation. It translates the thirty-two Phase 68 candidate measure families into inspectable specifications. Each specification names the entity, numerator, denominator, operating scope, unit rule, period rule, method rule, exception rule, acceptance and recurrence boundary, break rules, source identities, and reader surfaces.
+
+The dictionary deliberately contains **zero values**. A definition is not evidence that a measurement exists, and an empty intake envelope is not a source check.
+
+## Registry shape
+
+| Object | Count | Current state |
+| --- | ---: | --- |
+| Measurement specifications | 32 | Awaiting First Qualifying Observation |
+| Observation-intake envelopes | 32 | Empty |
+| Series-break registers | 8 | No Admitted Series |
+| Required observation fields | 18 | Contract only |
+| Prospective break types | 10 | Taxonomy only |
+| Real observations | 0 | None created |
+| Values and series points | 0 | None created |
+
+The searchable [Measurement Registry](/evidence/measurements/) exposes every specification and its connected cohort, dossier, source, signal, intake, and break rules.
+
+## Eighteen required fields
+
+Every returned observation must declare:
+
+1. exact measurement specification;
+2. exact Phase 68 cohort;
+3. same named entity;
+4. reviewed public source;
+5. issuing authority;
+6. stable artifact locator;
+7. observed date;
+8. period start;
+9. period end;
+10. numerator value;
+11. source-declared numerator unit;
+12. denominator value or explicit not-applicable basis;
+13. denominator unit or explicit not-applicable basis;
+14. method and version;
+15. acceptance and recurrence basis;
+16. exceptions and adverse observations;
+17. revision and correction status;
+18. complete propagation assignment.
+
+Silence cannot fill a field. In particular, a missing denominator cannot become “not applicable,” and an absent exception statement cannot become “none.”
+
+## Unit and denominator boundary
+
+The specification preserves the source-declared unit. Editorial work cannot infer a unit, silently convert units, normalize a rate, or join unlike quantities. A public bridge must state the original and transformed units, formula, precision, uncertainty, affected periods, authority, reviewer, receipt, and propagation. A bridge may still conclude that two segments are not comparable.
+
+The same rule applies to denominators. Capacity, operating time, trips, passenger miles, accepted units, produced units, customers, permits, requirements, findings, or service requests are not interchangeable exposure bases.
+
+## Observation workflow
+
+1. Attach the artifact to the exact empty intake envelope.
+2. Verify all eighteen fields without changing evidence state.
+3. Apply the one named measurement specification.
+4. Test prospective breaks and preserve every adverse observation.
+5. Require independent review.
+6. Issue a bounded Phase 60 receipt if the decision is approved.
+7. Append only the same-entity observation and complete reader-surface propagation.
+8. Keep the Phase 68 cohort in Acquisition until recurrence and all compatibility tests separately pass.
+
+## Reject conditions
+
+Reject or hold an intake that omits identity, authority, source, period, numerator, denominator, units, method, acceptance basis, exceptions, revisions, or propagation. Also reject cross-entity transfer, silent conversion, missing-period imputation, hidden adverse observations, automatic admission, direct publication, or a claim that one observation establishes a series.
+
+## Publication boundary
+
+The [machine-readable Phase 69 registry](/data/measurement-specifications.json) contains public specifications, empty envelopes, and prospective break registers. It contains no observation payload, value, receipt, actual break event, series point, trend, score, rank, comparison, causal result, or operating outcome.
+
+## Phase 70 review and admission control
+
+[Observation Review Desk 001](/briefings/observation-review-desk-001/) and the [Series Admission Protocol](/briefings/series-admission-protocol-001/) add empty review, revision-lineage, and admission dockets after Phase 69 intake. They create zero submissions, reviews, accepted observations, receipts, revision events, series, or outcomes.

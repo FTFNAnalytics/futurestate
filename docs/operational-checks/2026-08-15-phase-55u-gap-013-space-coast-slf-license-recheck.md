@@ -19,10 +19,11 @@ The FAA's page describes Sierra Space as applying for a Vehicle Operator License
 ## Action Taken
 
 - Refreshed both FAA source records, the Shuttle Landing Facility status-watch signal, and `gap-013` with the August 15 dated hold.
+- Recorded Phase 60B No Material Change receipt `receipt-60-slf-2026-08-15-no-material-change` and propagated it through the assigned reader surfaces without changing the named-file stage.
 - Preserved all site-license, vehicle or operator license, mission approval, infrastructure, operation, and utilization boundaries.
 - Did not create a renewal, lapse, operator, mission, infrastructure-completion, operation, or utilization claim.
 - Did not change Sites access, public GitHub, DNS, domain state, or release-freeze state.
 
 ## Stop Condition
 
-Reopen only when the FAA supplies a formal current disposition for `LRSO 18-018`. Do not schedule or infer a new status from an unchanged public display or adjacent Space Coast evidence.
+Recheck the exact FAA disposition surfaces on September 15, 2026. Reopen the evidence stage only when the FAA supplies a formal current disposition for `LRSO 18-018`; do not infer a new status from an unchanged public display or adjacent Space Coast evidence.

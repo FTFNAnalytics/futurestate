@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/v03-editorial-program.json";
+
+export async function getStaticPaths() {
+  const systems = await getCollection("localSystems");
+  return systems.map((system) => ({ params: { slug: system.data.slug }, props: { systemId: system.data.id } }));
+}
+const { systemId } = Astro.props;
+const systems = await getCollection("localSystems");
+const system = systems.find((item) => item.data.id === systemId)!;
+const sources = await getCollection("sources");
+const sourceById = new Map(sources.map((source) => [source.data.id, source]));
+const allSignals = await getCollection("signals");
+const relatedSignals = allSignals.filter((signal) => signal.data.record_status === "Published" && signal.data.source_ids.some((id) => system.data.source_ids.includes(id))).sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf());
+const casebooks = program.casebooks.filter((record) => record.local_system_ids.includes(system.data.id));
+---
+
+<BaseLayout title={`${system.data.name} | The FTFN Review`} description={system.data.summary}>
+  <ReviewHeader eyebrow="Local system portrait" title={system.data.name} summary={system.data.summary} phase={103} />
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Current equilibrium</div><h2>{system.data.geography}</h2><p>{system.data.current_equilibrium}</p><div class="meta-row">{system.data.core_constraints.map((item) => <MetaPill label={item} />)}</div></div><div><div class="eyebrow">Actors with authority</div><ul>{system.data.actors_with_authority.map((actor) => <li>{actor}</li>)}</ul></div></section>
+  {casebooks.length > 0 && <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Named files</div><h2>Where conversion becomes auditable.</h2></div></div><div class="signal-grid">{casebooks.map((record) => <article class="record-card"><h3><a href={`/review/casebooks/${record.slug}/`}>{record.title}</a></h3><p>{record.editorial_question}</p></article>)}</div></section>}
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Evidence shelf</div><h2>Recent Published records that touch this place.</h2></div><MetaPill label={`${relatedSignals.length} linked signals`} /></div><div class="signal-grid">{relatedSignals.slice(0, 8).map((signal) => <article class="record-card"><h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3><p>{signal.data.summary}</p></article>)}</div></section>
+  <section class="page-section review-columns"><article><div class="eyebrow">Missing local evidence</div><h2>Do not fill these gaps with national averages.</h2><ul>{system.data.missing_data.map((item) => <li>{item}</li>)}</ul></article><article><div class="eyebrow">Likely second-order effects</div><h2>Questions to observe, not outcomes to assume.</h2><ul>{system.data.likely_second_order_effects.map((item) => <li>{item}</li>)}</ul></article></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Primary rails</div><h2>Sources for continued review.</h2></div><a class="inline-link" href={`/editions/low-bandwidth-${system.data.slug}/`}>Low-bandwidth edition</a></div><div class="source-list">{system.data.source_ids.slice(0, 10).map((id) => sourceById.get(id)).filter(Boolean).map((source) => <article class="source-row"><h3><a href={`/atlas/sources/${source!.data.id}/`}>{source!.data.name}</a></h3><p>{source!.data.source_type}</p></article>)}</div></section>
+</BaseLayout>

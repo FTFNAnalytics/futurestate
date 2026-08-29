@@ -1,0 +1,82 @@
+{
+  "id": "dependency-map-recommendation-is-not-authorization-or-implementation",
+  "title": "A Recommendation Is Not Authorization Or Implementation",
+  "slug": "recommendation-is-not-authorization-or-implementation",
+  "summary": "A map separating evidence translation, institutional choice, decision ownership, authority, conditions, resources, capacity, milestones, safeguards, accepted output, and public accountability.",
+  "map_type": "Evidence Gap Map",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Regulation", "Capital", "Labor", "Standards", "Public Trust"],
+  "map_question": "What must be documented between a bounded recommendation and a reviewable implementation commitment?",
+  "interpretation_boundary": "A recommendation does not select an accountable institution, create authority, commit resources, establish delivery capacity, satisfy conditions, complete a milestone, or prove accepted operation.",
+  "source_ids": [
+    "source-phoenix-tsmc-july-2026-fab-update",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-faa-shuttle-landing-facility-license",
+    "source-doe-thacker-pass-loan-2024",
+    "source-gsa-pqc-buyers-guide-2025",
+    "source-nist-aria-pilot-evaluation-2025",
+    "source-cpuc-waymo-al2-disposition-2024"
+  ],
+  "signal_ids": [
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-faa-part450-operator-transition",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-gsa-pqc-procurement-paths",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-cpuc-waymo-fared-driverless-expansion-2024"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate",
+    "local-northern-virginia-data-center-corridor",
+    "local-florida-space-coast-launch-corridor",
+    "local-nevada-lithium-processing-corridor"
+  ],
+  "evidence_gap_ids": ["gap-001", "gap-002", "gap-003", "gap-004", "gap-005", "gap-007", "gap-008", "gap-009", "gap-010", "gap-011", "gap-012", "gap-013", "gap-014", "gap-015", "gap-016"],
+  "nodes": [
+    {"id": "node-translation", "label": "Phase 74 decision translation", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No Phase 74 translation has been adjudicated."},
+    {"id": "node-options", "label": "Complete option set and status quo", "node_type": "Constraint", "note": "Available choices, exclusions, benefits, harms, distribution, and feasibility remain explicit."},
+    {"id": "node-owner", "label": "Named decision owner", "node_type": "Constraint", "note": "The accountable institution, person, duty, conflict, recusal, and replacement authority are versioned."},
+    {"id": "node-authority", "label": "Current authority", "node_type": "Constraint", "note": "Legal, policy, fiscal, and operating authority are independently verified."},
+    {"id": "node-rationale", "label": "Selection rationale and dissent", "node_type": "Constraint", "note": "Evidence, values, uncertainty, conflicts, proportionality, and minority positions remain attached."},
+    {"id": "node-authorization", "label": "Authorization with terms", "node_type": "Constraint", "note": "Conditions, monitoring, safeguards, review, and sunset define the permission boundary."},
+    {"id": "node-commitment", "label": "Versioned implementation commitment", "node_type": "Constraint", "note": "Owner, scope, beneficiaries, budget, workforce, assets, and amendments are fixed."},
+    {"id": "node-capacity", "label": "Resource and capacity baseline", "node_type": "Constraint", "note": "Available funding, staff, facilities, data, suppliers, and institutional capacity are dated."},
+    {"id": "node-milestone", "label": "Milestones and dependencies", "node_type": "Constraint", "note": "Scheduled, initiated, completed, tested, accepted, and operating states remain separate."},
+    {"id": "node-safeguard", "label": "Safeguard and stop-work controls", "node_type": "Constraint", "note": "Thresholds, owners, evidence duties, pause, reversal, and remedy paths are explicit."},
+    {"id": "node-output", "label": "Accepted output", "node_type": "Evidence Gap", "record_id": "gap-015", "note": "No Phase 75 accepted implementation output exists."}
+  ],
+  "links": [
+    {"from": "node-translation", "to": "node-options", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No adjudicated translation exists."},
+    {"from": "node-options", "to": "node-owner", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No accountable institutional actor has selected an option."},
+    {"from": "node-owner", "to": "node-authority", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Ownership and authority are separate checks."},
+    {"from": "node-authority", "to": "node-rationale", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Authority cannot substitute for a transparent rationale."},
+    {"from": "node-rationale", "to": "node-authorization", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No authorization instrument or receipt exists."},
+    {"from": "node-authorization", "to": "node-commitment", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Authorization does not create an implementation commitment."},
+    {"from": "node-commitment", "to": "node-capacity", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No resource or capacity baseline exists."},
+    {"from": "node-capacity", "to": "node-milestone", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Capacity and dependencies constrain delivery."},
+    {"from": "node-milestone", "to": "node-safeguard", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Delivery cannot bypass safeguard and stop-work terms."},
+    {"from": "node-safeguard", "to": "node-output", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No output has been delivered or accepted."}
+  ],
+  "what_this_map_supports": [
+    "Sixteen accountability gates and sixteen implementation-and-realization gates.",
+    "Visible separation between recommendation, institutional decision, authorization, commitment, capacity, milestones, safeguards, and accepted output.",
+    "Append-only amendment, dissent, conflict, recusal, condition, and receipt lineage."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not establish a recommendation, decision owner, authority, selected option, rationale, authorization, commitment, resource, milestone, or output.",
+    "It does not establish implementation quality, accepted service, benefit, harm, equity, contribution, attribution, or net benefit.",
+    "It does not create a score, rank, forecast, automatic authorization, automatic stage advance, or silent renewal."
+  ],
+  "next_records_needed": [
+    "A real Phase 74 translation receipt and versioned recommendation.",
+    "A named decision owner, current authority record, option rationale, dissent archive, and authorization instrument.",
+    "A versioned implementation commitment with resources, capacity, milestones, safeguards, and acceptance criteria."
+  ]
+}

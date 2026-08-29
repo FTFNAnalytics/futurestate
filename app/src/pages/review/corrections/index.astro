@@ -1,0 +1,11 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+const updates = (await getCollection("updates")).sort((a, b) => b.data.effective_date.valueOf() - a.data.effective_date.valueOf());
+---
+<BaseLayout title="Corrections and change log | FTFN Review">
+  <ReviewHeader eyebrow="Living publication" title="Corrections and change log" summary="Material evidence changes, editorial repairs and no-material-change reviews remain dated and visible rather than silently overwritten." phase={110} />
+  <section class="page-section prose-page"><h2>Correction policy</h2><p>A correction identifies the affected claim, preserves the prior state through version history, links the controlling source and explains whether the change affects evidence, interpretation or presentation. A source refresh is not automatically a factual correction, and a missing artifact is never reported as proof of nonexistence.</p></section>
+  <section class="page-section"><div class="source-list">{updates.slice(0, 24).map((update) => <article class="source-row"><div class="eyebrow">{update.data.entry_type} · {update.data.effective_date.toISOString().slice(0,10)}</div><h3>{update.data.title}</h3><p>{update.data.summary}</p><p class="card-note">{update.data.materiality}</p></article>)}</div><a class="inline-link" href="/updates/">Open the complete update ledger</a></section>
+</BaseLayout>

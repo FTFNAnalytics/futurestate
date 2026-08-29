@@ -1,0 +1,82 @@
+{
+  "id": "dependency-map-delivered-output-is-not-realized-benefit",
+  "title": "A Delivered Output Is Not A Realized Benefit",
+  "slug": "delivered-output-is-not-realized-benefit",
+  "summary": "A map separating accepted output, service exposure, outcomes, benefits, harms, burdens, distribution, counterfactual contribution, attribution, sunset, reversal, and remediation.",
+  "map_type": "Evidence Gap Map",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Data Quality", "Interpretation", "Safety", "Standards", "Public Trust"],
+  "map_question": "What evidence and decisions remain between an accepted implementation output and a bounded realized-impact claim?",
+  "interpretation_boundary": "Output is not exposure, exposure is not outcome, outcome is not benefit, contribution is not attribution, an average is not equitable distribution, and a favorable result cannot erase harm, challenge, sunset, reversal, or remediation.",
+  "source_ids": [
+    "source-phoenix-tsmc-july-2026-fab-update",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-faa-shuttle-landing-facility-license",
+    "source-doe-thacker-pass-loan-2024",
+    "source-gsa-pqc-buyers-guide-2025",
+    "source-nist-aria-pilot-evaluation-2025",
+    "source-cpuc-waymo-al2-disposition-2024"
+  ],
+  "signal_ids": [
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-faa-part450-operator-transition",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-gsa-pqc-procurement-paths",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-cpuc-waymo-fared-driverless-expansion-2024"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate",
+    "local-northern-virginia-data-center-corridor",
+    "local-florida-space-coast-launch-corridor",
+    "local-nevada-lithium-processing-corridor"
+  ],
+  "evidence_gap_ids": ["gap-001", "gap-002", "gap-003", "gap-004", "gap-005", "gap-007", "gap-008", "gap-009", "gap-010", "gap-011", "gap-012", "gap-013", "gap-014", "gap-015", "gap-016"],
+  "nodes": [
+    {"id": "node-output", "label": "Accepted implementation output", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No Phase 75 accepted output exists."},
+    {"id": "node-exposure", "label": "Beneficiary reach and service exposure", "node_type": "Constraint", "note": "Eligibility, access, use, dose, duration, missingness, and exclusions are measured."},
+    {"id": "node-outcome", "label": "Compatible outcome observation", "node_type": "Constraint", "note": "Measure, unit, denominator, population, period, method, uncertainty, and revision lineage are fixed."},
+    {"id": "node-benefit", "label": "Benefit realization", "node_type": "Constraint", "note": "Magnitude, timing, durability, beneficiaries, uncertainty, and practical importance are adjudicated."},
+    {"id": "node-harm", "label": "Harm, burden, and unintended effects", "node_type": "Constraint", "note": "Adverse evidence uses the same identity and review discipline as benefits."},
+    {"id": "node-distribution", "label": "Distributional incidence", "node_type": "Constraint", "note": "Average effects do not replace affected-group, geography, access, cost, and risk records."},
+    {"id": "node-counterfactual", "label": "Counterfactual decision audit", "node_type": "Constraint", "note": "Status quo, alternative options, external shocks, spillovers, displacement, and co-interventions remain visible."},
+    {"id": "node-claim", "label": "Bounded realization claim", "node_type": "Constraint", "note": "Implementation, descriptive, association, contribution, attribution, and causal language remain separate."},
+    {"id": "node-audit", "label": "Independent post-decision audit", "node_type": "Constraint", "note": "Continuation, amendment, pause, or reversal is a human decision with a receipt."},
+    {"id": "node-sunset", "label": "Sunset and reauthorization", "node_type": "Constraint", "note": "Authority cannot silently renew after a review or expiry date."},
+    {"id": "node-remedy", "label": "Reversal, remediation, and restoration", "node_type": "Evidence Gap", "record_id": "gap-015", "note": "No Phase 75 remediation or closure receipt exists."}
+  ],
+  "links": [
+    {"from": "node-output", "to": "node-exposure", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Output does not prove access or use."},
+    {"from": "node-exposure", "to": "node-outcome", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Exposure does not prove outcome change."},
+    {"from": "node-outcome", "to": "node-benefit", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Outcome and benefit judgments remain separate."},
+    {"from": "node-benefit", "to": "node-harm", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Benefit cannot erase harm or burden."},
+    {"from": "node-harm", "to": "node-distribution", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Aggregate evidence cannot erase unequal incidence."},
+    {"from": "node-distribution", "to": "node-counterfactual", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No counterfactual decision audit exists."},
+    {"from": "node-counterfactual", "to": "node-claim", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Claim strength remains bounded by identification."},
+    {"from": "node-claim", "to": "node-audit", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No independent post-decision audit exists."},
+    {"from": "node-audit", "to": "node-sunset", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No continuation, renewal, or sunset decision exists."},
+    {"from": "node-sunset", "to": "node-remedy", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No reversal, remediation, restoration, or closure receipt exists."}
+  ],
+  "what_this_map_supports": [
+    "Sixteen implementation-and-realization gates, twelve audit gates, twelve safeguard triggers, and ten remediation classes.",
+    "Visible separation between output, exposure, outcome, benefit, harm, distribution, counterfactual contribution, attribution, audit, sunset, and remedy.",
+    "Fail-closed propagation for adverse events, challenges, evidence corrections, authority changes, and missed review dates."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not establish an output, service exposure, outcome, benefit, harm, disparity, counterfactual, realization claim, audit, sunset, reversal, or remediation.",
+    "It does not establish contribution, attribution, causality, net benefit, equitable distribution, restoration, or closure.",
+    "It does not create an automatic claim, score, rank, stage advance, renewal, or remediation closure."
+  ],
+  "next_records_needed": [
+    "A versioned implementation commitment and registered pre-decision baseline.",
+    "Accepted output, beneficiary exposure, compatible benefit, harm, burden, and distributional observations.",
+    "An independent counterfactual decision audit with sunset, reversal, remediation, and public-receipt decisions."
+  ]
+}

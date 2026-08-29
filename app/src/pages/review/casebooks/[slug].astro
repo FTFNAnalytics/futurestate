@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/v03-editorial-program.json";
+import projects from "../../../data/phase-61-project-conversion-registry.json";
+import chronology from "../../../data/phase-62-conversion-event-ledgers.json";
+import gates from "../../../data/phase-63-conversion-gate-calendar.json";
+import matrix from "../../../data/phase-64-conversion-stage-matrix.json";
+
+export function getStaticPaths() {
+  return program.casebooks.map((record) => ({ params: { slug: record.slug }, props: { fileId: record.file_id } }));
+}
+const { fileId } = Astro.props;
+const editorial = program.casebooks.find((item) => item.file_id === fileId)!;
+const project = projects.records.find((item) => item.file_id === fileId)!;
+const events = chronology.events.filter((item) => item.file_id === fileId).sort((a, b) => a.sequence - b.sequence);
+const gate = gates.gate_records.find((item) => item.file_id === fileId)!;
+const matrixRow = matrix.file_rows.find((item) => item.file_id === fileId)!;
+const signals = await getCollection("signals");
+const signalById = new Map(signals.map((signal) => [signal.data.id, signal]));
+const sources = await getCollection("sources");
+const sourceById = new Map(sources.map((source) => [source.data.id, source]));
+const briefings = await getCollection("briefings");
+const briefing = briefings.find((item) => item.data.id === project.canonical_briefing_id);
+---
+
+<BaseLayout title={`${project.title} | FTFN casebook`} description={editorial.editorial_question}>
+  <ReviewHeader eyebrow={project.kind === "local_project" ? "Project casebook" : "Adoption casebook"} title={project.title} summary={editorial.editorial_question} phase={104} />
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy"><div class="eyebrow">Current stage</div><h2>{project.current_stage}</h2><p>{project.established}</p>{briefing && <a class="inline-link" href={`/briefings/${briefing.data.slug}/`}>Read the canonical briefing</a>}</div>
+    <article class="record-card record-card--featured"><div class="eyebrow">Still unresolved</div><p>{project.unresolved}</p><div class="meta-row"><MetaPill label={gate.gate_mode} tone="review" />{project.next_check_date && <MetaPill label={`Check ${project.next_check_date}`} />}</div></article>
+  </section>
+  <section class="page-section" id="chronology"><div class="section-heading"><div><div class="eyebrow">Verified chronology</div><h2>What changed, in order.</h2></div><MetaPill label={`${events.length} dated events`} /></div><ol class="timeline-list">{events.map((event) => <li><div class="meta-row"><MetaPill label={event.event_date} /><MetaPill label={event.event_type} /></div><h3>{event.title}</h3><p>{event.materiality}</p><p class="card-note">Boundary: {event.interpretation_boundary}</p></li>)}</ol></section>
+  <section class="page-section review-columns"><article><div class="eyebrow">Decision boundary</div><h2>{matrixRow.current_boundary}</h2><p>The file is currently waiting on <strong>{gate.exact_next_artifact}</strong></p><p class="card-note">Stop rule: {gate.stop_rule}</p></article><article><div class="eyebrow">Next decisive evidence</div><h2>What would move the file.</h2><p>{project.exact_next_artifact}</p><a class="inline-link" href={`/review/outcomes/${editorial.slug}/`}>Open the outcome observatory</a></article></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Underlying evidence</div><h2>Signals and primary rails.</h2></div></div><div class="signal-grid">{project.signal_ids.map((id) => signalById.get(id)).filter(Boolean).map((signal) => <article class="record-card"><div class="meta-row"><MetaPill label={signal!.data.record_status} /><MetaPill label={signal!.data.signal_type} /></div><h3><a href={`/signals/${signal!.data.slug}/`}>{signal!.data.title}</a></h3><p>{signal!.data.summary}</p></article>)}</div><div class="source-list">{project.source_ids.map((id) => sourceById.get(id)).filter(Boolean).map((source) => <article class="source-row"><h3><a href={`/atlas/sources/${source!.data.id}/`}>{source!.data.name}</a></h3><p>{source!.data.source_type} · last checked {source!.data.last_checked_date.toISOString().slice(0,10)}</p></article>)}</div></section>
+</BaseLayout>

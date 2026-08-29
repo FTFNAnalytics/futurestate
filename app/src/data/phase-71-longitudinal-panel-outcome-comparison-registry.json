@@ -1,0 +1,4041 @@
+{
+  "schema_version": "1.0",
+  "phase": "71",
+  "registry_id": "longitudinal-panel-outcome-claim-comparison-control-registry-001",
+  "title": "Longitudinal Panel, Outcome Claim And Comparison Control Registry",
+  "captured_date": "2026-08-23",
+  "as_of_date": "2026-08-23",
+  "scope": "Thirty-two empty longitudinal panel shells, eight not-ready outcome-claim dockets, and eight comparison embargo registers for the Phase 70 admission layer.",
+  "interpretation_boundary": "A panel shell is not a series. An admitted series is not automatically a trend or outcome. A bounded outcome claim is not causation. No cross-entity comparison, score, composite, or ranking is permitted without a separately approved common contract.",
+  "outcome_inference_dimensions": [
+    {
+      "dimension_id": "71-OUTCOME-01-SERIES",
+      "label": "Admitted series basis",
+      "question": "Every supporting panel resolves to an explicitly admitted compatible series."
+    },
+    {
+      "dimension_id": "71-OUTCOME-02-IDENTITY",
+      "label": "Stable identity and scope",
+      "question": "The claim preserves one named entity, operating scope, receiving authority, and lifecycle stage."
+    },
+    {
+      "dimension_id": "71-OUTCOME-03-PERIODS",
+      "label": "Repeated-period sufficiency",
+      "question": "Period coverage, cadence, missingness, partial periods, and any minimum sufficiency decision are explicit."
+    },
+    {
+      "dimension_id": "71-OUTCOME-04-DIRECTION",
+      "label": "Direction and magnitude",
+      "question": "Any direction, magnitude, or rate is calculated only from admitted points under the declared measure contract."
+    },
+    {
+      "dimension_id": "71-OUTCOME-05-COMPATIBILITY",
+      "label": "Denominator and method compatibility",
+      "question": "Units, denominators, exposure, methods, versions, and revisions remain compatible or visibly segmented."
+    },
+    {
+      "dimension_id": "71-OUTCOME-06-ADVERSE",
+      "label": "Breaks, revisions, and adverse evidence",
+      "question": "Missing periods, failures, outages, exceptions, corrections, and adverse observations remain visible."
+    },
+    {
+      "dimension_id": "71-OUTCOME-07-ALTERNATIVES",
+      "label": "Alternative explanations and counterfactuals",
+      "question": "Plausible alternative explanations and the limits of any counterfactual are stated before attribution."
+    },
+    {
+      "dimension_id": "71-OUTCOME-08-ATTRIBUTION",
+      "label": "Attribution and receiving authority",
+      "question": "The responsible actor, receiving authority, intervention boundary, and non-transfer rule are explicit."
+    },
+    {
+      "dimension_id": "71-OUTCOME-09-UNCERTAINTY",
+      "label": "Uncertainty, sensitivity, and limitations",
+      "question": "Coverage, uncertainty, sensitivity to definitions, and interpretation limits accompany the claim."
+    },
+    {
+      "dimension_id": "71-OUTCOME-10-DECISION",
+      "label": "Dual-control claim decision and propagation",
+      "question": "Two authorized reviewers issue a bounded claim decision and complete every assigned reader-surface update."
+    }
+  ],
+  "comparison_eligibility_dimensions": [
+    {
+      "dimension_id": "71-COMPARE-01-QUESTION",
+      "label": "Common entity class and question",
+      "question": "Compared entities answer one explicitly common operating-outcome question."
+    },
+    {
+      "dimension_id": "71-COMPARE-02-MEASURE",
+      "label": "Common measure and unit",
+      "question": "The numerator definition and source-declared units are compatible."
+    },
+    {
+      "dimension_id": "71-COMPARE-03-DENOMINATOR",
+      "label": "Common denominator or exposure",
+      "question": "The denominator, population, capacity, exposure, or not-applicable basis is compatible."
+    },
+    {
+      "dimension_id": "71-COMPARE-04-PERIOD",
+      "label": "Compatible periods and cadence",
+      "question": "Coverage windows, cadence, partial periods, and missingness are compatible."
+    },
+    {
+      "dimension_id": "71-COMPARE-05-METHOD",
+      "label": "Compatible method and version",
+      "question": "Collection, calculation, test, threshold, and method versions are compatible."
+    },
+    {
+      "dimension_id": "71-COMPARE-06-LIFECYCLE",
+      "label": "Common lifecycle and acceptance stage",
+      "question": "The compared records occupy a common operating and receiving-system stage."
+    },
+    {
+      "dimension_id": "71-COMPARE-07-BREAKS",
+      "label": "Visible breaks, missingness, and revisions",
+      "question": "Every break, exclusion, correction, restatement, and missing period remains visible."
+    },
+    {
+      "dimension_id": "71-COMPARE-08-UNCERTAINTY",
+      "label": "Comparable uncertainty and coverage",
+      "question": "Coverage and uncertainty permit the bounded comparison being proposed."
+    },
+    {
+      "dimension_id": "71-COMPARE-09-NO-RANKING",
+      "label": "No composite or ranking inference",
+      "question": "A bounded comparison cannot silently become a score, league table, composite, or rank."
+    },
+    {
+      "dimension_id": "71-COMPARE-10-DECISION",
+      "label": "Human comparison decision and propagation",
+      "question": "Two authorized reviewers approve the exact comparison and propagate its receipt and limitations."
+    }
+  ],
+  "panel_states": [
+    "Empty - No Admitted Series",
+    "Held",
+    "Eligible For Panel Review",
+    "Published Panel"
+  ],
+  "outcome_claim_states": [
+    "Not Ready - No Admitted Series",
+    "Held",
+    "Eligible For Claim Review",
+    "Published Bounded Claim",
+    "Rejected"
+  ],
+  "comparison_states": [
+    "Embargoed - No Common Admitted Series",
+    "Held",
+    "Eligible For Comparison Review",
+    "Approved Bounded Comparison",
+    "Rejected"
+  ],
+  "metrics": {
+    "longitudinal_panel_shells": 32,
+    "empty_panel_shells": 32,
+    "outcome_claim_dockets": 8,
+    "not_ready_outcome_claim_dockets": 8,
+    "comparison_embargo_registers": 8,
+    "active_comparison_embargoes": 8,
+    "outcome_inference_dimensions": 10,
+    "comparison_eligibility_dimensions": 10,
+    "admitted_series_received": 0,
+    "panel_series_points": 0,
+    "values_published": 0,
+    "trends_created": 0,
+    "outcome_claims_published": 0,
+    "comparisons_approved": 0,
+    "scores_created": 0,
+    "rankings_created": 0,
+    "decision_receipts_created": 0,
+    "phase64_cells_advanced": 0
+  },
+  "longitudinal_panel_shells": [
+    {
+      "panel_id": "71-PANEL-001",
+      "slug": "71-panel-001-tsmc-arizona-accepted-qualified-output",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-001-TSMC-ARIZONA",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "file_kind": "local_project",
+      "named_entity": "TSMC Arizona",
+      "specification_id": "69-MS-001",
+      "specification_slug": "69-ms-001-tsmc-arizona-accepted-qualified-output",
+      "review_docket_id": "70-OR-001",
+      "series_admission_docket_id": "70-SA-001",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-001-TSMC-ARIZONA-01-QUALIFIED-OUTPUT",
+      "measure_label": "Accepted qualified output",
+      "numerator_contract": "Accepted qualified units or lots",
+      "denominator_contract": "Accepted production capacity or eligible lots",
+      "scope_contract": "Facility and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "signal_ids": [
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-phoenix-tsmc-fab3-topping-out",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ],
+      "evidence_gap_ids": [
+        "gap-001",
+        "gap-002",
+        "gap-003"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-001-tsmc-arizona",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-chips-compute-research-to-fab",
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "local_system_ids": [
+        "local-us-southwest-chip-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-002",
+      "slug": "71-panel-002-tsmc-arizona-accepted-utility-delivery-and-use",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-001-TSMC-ARIZONA",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "file_kind": "local_project",
+      "named_entity": "TSMC Arizona",
+      "specification_id": "69-MS-002",
+      "specification_slug": "69-ms-002-tsmc-arizona-accepted-utility-delivery-and-use",
+      "review_docket_id": "70-OR-002",
+      "series_admission_docket_id": "70-SA-001",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-001-TSMC-ARIZONA-02-UTILITY-DELIVERY",
+      "measure_label": "Accepted utility delivery and use",
+      "numerator_contract": "Metered electricity, water, reclaimed water, or wastewater service",
+      "denominator_contract": "Accepted service capacity or produced units",
+      "scope_contract": "Facility, utility, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "signal_ids": [
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-phoenix-tsmc-fab3-topping-out",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ],
+      "evidence_gap_ids": [
+        "gap-001",
+        "gap-002",
+        "gap-003"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-001-tsmc-arizona",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-chips-compute-research-to-fab",
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "local_system_ids": [
+        "local-us-southwest-chip-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-003",
+      "slug": "71-panel-003-tsmc-arizona-reliability-and-quality",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-001-TSMC-ARIZONA",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "file_kind": "local_project",
+      "named_entity": "TSMC Arizona",
+      "specification_id": "69-MS-003",
+      "specification_slug": "69-ms-003-tsmc-arizona-reliability-and-quality",
+      "review_docket_id": "70-OR-003",
+      "series_admission_docket_id": "70-SA-001",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-001-TSMC-ARIZONA-03-RELIABILITY-QUALITY",
+      "measure_label": "Reliability and quality",
+      "numerator_contract": "Accepted uptime, yield, rejects, interruptions, or corrective actions",
+      "denominator_contract": "Operating time, starts, or inspected units",
+      "scope_contract": "Facility, process, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "signal_ids": [
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-phoenix-tsmc-fab3-topping-out",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ],
+      "evidence_gap_ids": [
+        "gap-001",
+        "gap-002",
+        "gap-003"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-001-tsmc-arizona",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-chips-compute-research-to-fab",
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "local_system_ids": [
+        "local-us-southwest-chip-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-004",
+      "slug": "71-panel-004-tsmc-arizona-operating-workforce-delivery",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-001-TSMC-ARIZONA",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "file_kind": "local_project",
+      "named_entity": "TSMC Arizona",
+      "specification_id": "69-MS-004",
+      "specification_slug": "69-ms-004-tsmc-arizona-operating-workforce-delivery",
+      "review_docket_id": "70-OR-004",
+      "series_admission_docket_id": "70-SA-001",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-001-TSMC-ARIZONA-04-WORKFORCE-DELIVERY",
+      "measure_label": "Operating workforce delivery",
+      "numerator_contract": "Filled qualified roles, completions, placements, or retention",
+      "denominator_contract": "Named vacancies, enrollment, or operating headcount",
+      "scope_contract": "Facility, occupation, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "signal_ids": [
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-phoenix-tsmc-fab3-topping-out",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ],
+      "evidence_gap_ids": [
+        "gap-001",
+        "gap-002",
+        "gap-003"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-001-tsmc-arizona",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-chips-compute-research-to-fab",
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "local_system_ids": [
+        "local-us-southwest-chip-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-005",
+      "slug": "71-panel-005-toronto-24-254930-enacted-and-permitted-units",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-002-TORONTO-24-254930",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "file_kind": "local_project",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "specification_id": "69-MS-005",
+      "specification_slug": "69-ms-005-toronto-24-254930-enacted-and-permitted-units",
+      "review_docket_id": "70-OR-005",
+      "series_admission_docket_id": "70-SA-002",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-002-TORONTO-24-254930-01-APPROVED-UNITS",
+      "measure_label": "Enacted and permitted units",
+      "numerator_contract": "Units in the enacted instrument or issued permit",
+      "denominator_contract": "Units approved for the same application scope",
+      "scope_contract": "Application and instrument date",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+      ],
+      "evidence_gap_ids": [
+        "gap-004",
+        "gap-005"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-002-toronto-24-254930",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-ontario-real-estate"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-006",
+      "slug": "71-panel-006-toronto-24-254930-construction-delivery",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-002-TORONTO-24-254930",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "file_kind": "local_project",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "specification_id": "69-MS-006",
+      "specification_slug": "69-ms-006-toronto-24-254930-construction-delivery",
+      "review_docket_id": "70-OR-006",
+      "series_admission_docket_id": "70-SA-002",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-002-TORONTO-24-254930-02-CONSTRUCTION-FLOW",
+      "measure_label": "Construction delivery",
+      "numerator_contract": "Units started or completed",
+      "denominator_contract": "Permitted units in the same phase",
+      "scope_contract": "Application phase and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+      ],
+      "evidence_gap_ids": [
+        "gap-004",
+        "gap-005"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-002-toronto-24-254930",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-ontario-real-estate"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-007",
+      "slug": "71-panel-007-toronto-24-254930-occupancy-delivery",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-002-TORONTO-24-254930",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "file_kind": "local_project",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "specification_id": "69-MS-007",
+      "specification_slug": "69-ms-007-toronto-24-254930-occupancy-delivery",
+      "review_docket_id": "70-OR-007",
+      "series_admission_docket_id": "70-SA-002",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-002-TORONTO-24-254930-03-OCCUPANCY",
+      "measure_label": "Occupancy delivery",
+      "numerator_contract": "Units receiving occupancy authorization",
+      "denominator_contract": "Completed units in the same phase",
+      "scope_contract": "Application phase and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+      ],
+      "evidence_gap_ids": [
+        "gap-004",
+        "gap-005"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-002-toronto-24-254930",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-ontario-real-estate"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-008",
+      "slug": "71-panel-008-toronto-24-254930-condition-and-servicing-compliance",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-002-TORONTO-24-254930",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "file_kind": "local_project",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "specification_id": "69-MS-008",
+      "specification_slug": "69-ms-008-toronto-24-254930-condition-and-servicing-compliance",
+      "review_docket_id": "70-OR-008",
+      "series_admission_docket_id": "70-SA-002",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-002-TORONTO-24-254930-04-CONDITION-COMPLIANCE",
+      "measure_label": "Condition and servicing compliance",
+      "numerator_contract": "Accepted conditions or servicing milestones",
+      "denominator_contract": "Applicable named conditions",
+      "scope_contract": "Application, condition set, and decision date",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+      ],
+      "evidence_gap_ids": [
+        "gap-004",
+        "gap-005"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-002-toronto-24-254930",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-ontario-real-estate"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-009",
+      "slug": "71-panel-009-nova-large-load-accepted-delivered-service",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-003-NOVA-LARGE-LOAD",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "file_kind": "local_project",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "specification_id": "69-MS-009",
+      "specification_slug": "69-ms-009-nova-large-load-accepted-delivered-service",
+      "review_docket_id": "70-OR-009",
+      "series_admission_docket_id": "70-SA-003",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-003-NOVA-LARGE-LOAD-01-DELIVERED-SERVICE",
+      "measure_label": "Accepted delivered service",
+      "numerator_contract": "Metered energy or demand served",
+      "denominator_contract": "Contracted or accepted service capacity",
+      "scope_contract": "Named customer, service point, and billing period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "signal_ids": [
+        "signal-virginia-data-center-air-permit-trail",
+        "signal-virginia-gs5-large-load-rate-class"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-011"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-003-northern-virginia-large-load",
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-northern-virginia-data-center-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-010",
+      "slug": "71-panel-010-nova-large-load-service-reliability",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-003-NOVA-LARGE-LOAD",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "file_kind": "local_project",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "specification_id": "69-MS-010",
+      "specification_slug": "69-ms-010-nova-large-load-service-reliability",
+      "review_docket_id": "70-OR-010",
+      "series_admission_docket_id": "70-SA-003",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-003-NOVA-LARGE-LOAD-02-RELIABILITY",
+      "measure_label": "Service reliability",
+      "numerator_contract": "Interruptions, curtailments, or unavailable service time",
+      "denominator_contract": "Service hours or delivered energy",
+      "scope_contract": "Named customer, service point, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "signal_ids": [
+        "signal-virginia-data-center-air-permit-trail",
+        "signal-virginia-gs5-large-load-rate-class"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-011"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-003-northern-virginia-large-load",
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-northern-virginia-data-center-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-011",
+      "slug": "71-panel-011-nova-large-load-service-cost",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-003-NOVA-LARGE-LOAD",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "file_kind": "local_project",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "specification_id": "69-MS-011",
+      "specification_slug": "69-ms-011-nova-large-load-service-cost",
+      "review_docket_id": "70-OR-011",
+      "series_admission_docket_id": "70-SA-003",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-003-NOVA-LARGE-LOAD-03-COST",
+      "measure_label": "Service cost",
+      "numerator_contract": "Applicable billed cost or tariff component",
+      "denominator_contract": "Metered energy, demand, or contracted capacity",
+      "scope_contract": "Named customer, tariff version, and billing period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "signal_ids": [
+        "signal-virginia-data-center-air-permit-trail",
+        "signal-virginia-gs5-large-load-rate-class"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-011"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-003-northern-virginia-large-load",
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-northern-virginia-data-center-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-012",
+      "slug": "71-panel-012-nova-large-load-permit-and-operating-compliance",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-003-NOVA-LARGE-LOAD",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "file_kind": "local_project",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "specification_id": "69-MS-012",
+      "specification_slug": "69-ms-012-nova-large-load-permit-and-operating-compliance",
+      "review_docket_id": "70-OR-012",
+      "series_admission_docket_id": "70-SA-003",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-003-NOVA-LARGE-LOAD-04-COMPLIANCE",
+      "measure_label": "Permit and operating compliance",
+      "numerator_contract": "Compliant measurements, exceptions, or corrective actions",
+      "denominator_contract": "Applicable requirements or monitoring events",
+      "scope_contract": "Named facility, permit, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "signal_ids": [
+        "signal-virginia-data-center-air-permit-trail",
+        "signal-virginia-gs5-large-load-rate-class"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-011"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-003-northern-virginia-large-load",
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-northern-virginia-data-center-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-013",
+      "slug": "71-panel-013-space-coast-accepted-mission-or-facility-service",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-004-SPACE-COAST",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "file_kind": "local_project",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "specification_id": "69-MS-013",
+      "specification_slug": "69-ms-013-space-coast-accepted-mission-or-facility-service",
+      "review_docket_id": "70-OR-013",
+      "series_admission_docket_id": "70-SA-004",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-004-SPACE-COAST-01-MISSION-SERVICE",
+      "measure_label": "Accepted mission or facility service",
+      "numerator_contract": "Completed accepted missions or service events",
+      "denominator_contract": "Authorized or scheduled events for the same site and operator",
+      "scope_contract": "Site, operator, mission class, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "signal_ids": [
+        "signal-faa-part450-operator-transition",
+        "signal-kennedy-multiuser-master-plan",
+        "signal-ksc-causeway-bridge-operational"
+      ],
+      "evidence_gap_ids": [
+        "gap-013",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-004-space-coast-authority",
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-014",
+      "slug": "71-panel-014-space-coast-facility-utilization",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-004-SPACE-COAST",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "file_kind": "local_project",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "specification_id": "69-MS-014",
+      "specification_slug": "69-ms-014-space-coast-facility-utilization",
+      "review_docket_id": "70-OR-014",
+      "series_admission_docket_id": "70-SA-004",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-004-SPACE-COAST-02-UTILIZATION",
+      "measure_label": "Facility utilization",
+      "numerator_contract": "Occupied or active service time",
+      "denominator_contract": "Accepted available facility time",
+      "scope_contract": "Site, operator, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "signal_ids": [
+        "signal-faa-part450-operator-transition",
+        "signal-kennedy-multiuser-master-plan",
+        "signal-ksc-causeway-bridge-operational"
+      ],
+      "evidence_gap_ids": [
+        "gap-013",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-004-space-coast-authority",
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-015",
+      "slug": "71-panel-015-space-coast-schedule-and-asset-reliability",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-004-SPACE-COAST",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "file_kind": "local_project",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "specification_id": "69-MS-015",
+      "specification_slug": "69-ms-015-space-coast-schedule-and-asset-reliability",
+      "review_docket_id": "70-OR-015",
+      "series_admission_docket_id": "70-SA-004",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-004-SPACE-COAST-03-RELIABILITY",
+      "measure_label": "Schedule and asset reliability",
+      "numerator_contract": "Completed events, delays, scrubs, or outages",
+      "denominator_contract": "Scheduled events or available service time",
+      "scope_contract": "Site, asset, operator, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "signal_ids": [
+        "signal-faa-part450-operator-transition",
+        "signal-kennedy-multiuser-master-plan",
+        "signal-ksc-causeway-bridge-operational"
+      ],
+      "evidence_gap_ids": [
+        "gap-013",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-004-space-coast-authority",
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-016",
+      "slug": "71-panel-016-space-coast-safety-and-licence-compliance",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-004-SPACE-COAST",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "file_kind": "local_project",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "specification_id": "69-MS-016",
+      "specification_slug": "69-ms-016-space-coast-safety-and-licence-compliance",
+      "review_docket_id": "70-OR-016",
+      "series_admission_docket_id": "70-SA-004",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-004-SPACE-COAST-04-SAFETY-COMPLIANCE",
+      "measure_label": "Safety and licence compliance",
+      "numerator_contract": "Reportable events, compliant reviews, or corrective actions",
+      "denominator_contract": "Authorized events or applicable requirements",
+      "scope_contract": "Site, operator, licence, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "signal_ids": [
+        "signal-faa-part450-operator-transition",
+        "signal-kennedy-multiuser-master-plan",
+        "signal-ksc-causeway-bridge-operational"
+      ],
+      "evidence_gap_ids": [
+        "gap-013",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-004-space-coast-authority",
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-017",
+      "slug": "71-panel-017-nevada-lithium-accepted-qualified-output",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-005-NEVADA-LITHIUM",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "file_kind": "local_project",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "specification_id": "69-MS-017",
+      "specification_slug": "69-ms-017-nevada-lithium-accepted-qualified-output",
+      "review_docket_id": "70-OR-017",
+      "series_admission_docket_id": "70-SA-005",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-005-NEVADA-LITHIUM-01-QUALIFIED-OUTPUT",
+      "measure_label": "Accepted qualified output",
+      "numerator_contract": "Accepted product mass or qualified lots",
+      "denominator_contract": "Accepted operating time, feed, or designed capacity",
+      "scope_contract": "Named project, product, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "signal_ids": [
+        "signal-thacker-pass-federal-land-authorization",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-thacker-pass-state-environmental-permit-stack",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates"
+      ],
+      "evidence_gap_ids": [
+        "gap-007",
+        "gap-012"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-005-nevada-lithium",
+      "reader_pathway_ids": [
+        "reader-pathway-nevada-lithium-authorization-to-output"
+      ],
+      "local_system_ids": [
+        "local-nevada-lithium-processing-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-018",
+      "slug": "71-panel-018-nevada-lithium-customer-accepted-shipment",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-005-NEVADA-LITHIUM",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "file_kind": "local_project",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "specification_id": "69-MS-018",
+      "specification_slug": "69-ms-018-nevada-lithium-customer-accepted-shipment",
+      "review_docket_id": "70-OR-018",
+      "series_admission_docket_id": "70-SA-005",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-005-NEVADA-LITHIUM-02-SHIPMENT-ACCEPTANCE",
+      "measure_label": "Customer-accepted shipment",
+      "numerator_contract": "Accepted shipments or product mass",
+      "denominator_contract": "Produced shipments or product mass",
+      "scope_contract": "Named project, customer class, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "signal_ids": [
+        "signal-thacker-pass-federal-land-authorization",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-thacker-pass-state-environmental-permit-stack",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates"
+      ],
+      "evidence_gap_ids": [
+        "gap-007",
+        "gap-012"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-005-nevada-lithium",
+      "reader_pathway_ids": [
+        "reader-pathway-nevada-lithium-authorization-to-output"
+      ],
+      "local_system_ids": [
+        "local-nevada-lithium-processing-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-019",
+      "slug": "71-panel-019-nevada-lithium-water-and-energy-intensity",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-005-NEVADA-LITHIUM",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "file_kind": "local_project",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "specification_id": "69-MS-019",
+      "specification_slug": "69-ms-019-nevada-lithium-water-and-energy-intensity",
+      "review_docket_id": "70-OR-019",
+      "series_admission_docket_id": "70-SA-005",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-005-NEVADA-LITHIUM-03-RESOURCE-INTENSITY",
+      "measure_label": "Water and energy intensity",
+      "numerator_contract": "Metered water or energy use",
+      "denominator_contract": "Accepted product mass",
+      "scope_contract": "Named project, process boundary, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "signal_ids": [
+        "signal-thacker-pass-federal-land-authorization",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-thacker-pass-state-environmental-permit-stack",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates"
+      ],
+      "evidence_gap_ids": [
+        "gap-007",
+        "gap-012"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-005-nevada-lithium",
+      "reader_pathway_ids": [
+        "reader-pathway-nevada-lithium-authorization-to-output"
+      ],
+      "local_system_ids": [
+        "local-nevada-lithium-processing-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-020",
+      "slug": "71-panel-020-nevada-lithium-operating-compliance",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-005-NEVADA-LITHIUM",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "file_kind": "local_project",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "specification_id": "69-MS-020",
+      "specification_slug": "69-ms-020-nevada-lithium-operating-compliance",
+      "review_docket_id": "70-OR-020",
+      "series_admission_docket_id": "70-SA-005",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-005-NEVADA-LITHIUM-04-COMPLIANCE",
+      "measure_label": "Operating compliance",
+      "numerator_contract": "Compliant measurements, exceedances, or corrective actions",
+      "denominator_contract": "Applicable permit measurements",
+      "scope_contract": "Named project, permit, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "signal_ids": [
+        "signal-thacker-pass-federal-land-authorization",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-thacker-pass-state-environmental-permit-stack",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates"
+      ],
+      "evidence_gap_ids": [
+        "gap-007",
+        "gap-012"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-005-nevada-lithium",
+      "reader_pathway_ids": [
+        "reader-pathway-nevada-lithium-authorization-to-output"
+      ],
+      "local_system_ids": [
+        "local-nevada-lithium-processing-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-021",
+      "slug": "71-panel-021-gsa-pqc-cryptographic-inventory-coverage",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-006-GSA-PQC",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "file_kind": "adoption_case",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "specification_id": "69-MS-021",
+      "specification_slug": "69-ms-021-gsa-pqc-cryptographic-inventory-coverage",
+      "review_docket_id": "70-OR-021",
+      "series_admission_docket_id": "70-SA-006",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-006-GSA-PQC-01-INVENTORY-COVERAGE",
+      "measure_label": "Cryptographic inventory coverage",
+      "numerator_contract": "In-scope assets with completed inventory",
+      "denominator_contract": "In-scope assets",
+      "scope_contract": "Named agency, system boundary, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-gsa-onegov-ai-procurement-channel",
+        "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+        "signal-sample-007"
+      ],
+      "evidence_gap_ids": [
+        "gap-009",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-001-gsa-pqc",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-022",
+      "slug": "71-panel-022-gsa-pqc-tested-migration",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-006-GSA-PQC",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "file_kind": "adoption_case",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "specification_id": "69-MS-022",
+      "specification_slug": "69-ms-022-gsa-pqc-tested-migration",
+      "review_docket_id": "70-OR-022",
+      "series_admission_docket_id": "70-SA-006",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-006-GSA-PQC-02-TESTED-MIGRATION",
+      "measure_label": "Tested migration",
+      "numerator_contract": "Components passing named interoperability or cutover tests",
+      "denominator_contract": "Components tested",
+      "scope_contract": "Named system, algorithm profile, and test period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-gsa-onegov-ai-procurement-channel",
+        "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+        "signal-sample-007"
+      ],
+      "evidence_gap_ids": [
+        "gap-009",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-001-gsa-pqc",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-023",
+      "slug": "71-panel-023-gsa-pqc-accepted-cutover-and-retirement",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-006-GSA-PQC",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "file_kind": "adoption_case",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "specification_id": "69-MS-023",
+      "specification_slug": "69-ms-023-gsa-pqc-accepted-cutover-and-retirement",
+      "review_docket_id": "70-OR-023",
+      "series_admission_docket_id": "70-SA-006",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-006-GSA-PQC-03-ACCEPTED-CUTOVER",
+      "measure_label": "Accepted cutover and retirement",
+      "numerator_contract": "Accepted migrated components or retired legacy components",
+      "denominator_contract": "Components approved for migration",
+      "scope_contract": "Named system and release period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-gsa-onegov-ai-procurement-channel",
+        "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+        "signal-sample-007"
+      ],
+      "evidence_gap_ids": [
+        "gap-009",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-001-gsa-pqc",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-024",
+      "slug": "71-panel-024-gsa-pqc-operating-incidents-and-rollback",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-006-GSA-PQC",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "file_kind": "adoption_case",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "specification_id": "69-MS-024",
+      "specification_slug": "69-ms-024-gsa-pqc-operating-incidents-and-rollback",
+      "review_docket_id": "70-OR-024",
+      "series_admission_docket_id": "70-SA-006",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-006-GSA-PQC-04-OPERATING-RISK",
+      "measure_label": "Operating incidents and rollback",
+      "numerator_contract": "Incidents, exceptions, or rollback events",
+      "denominator_contract": "Accepted migrated components or operating time",
+      "scope_contract": "Named system, configuration, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-gsa-onegov-ai-procurement-channel",
+        "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+        "signal-sample-007"
+      ],
+      "evidence_gap_ids": [
+        "gap-009",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-001-gsa-pqc",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-025",
+      "slug": "71-panel-025-nist-aria-evaluation-coverage",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-007-NIST-ARIA",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "file_kind": "adoption_case",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "specification_id": "69-MS-025",
+      "specification_slug": "69-ms-025-nist-aria-evaluation-coverage",
+      "review_docket_id": "70-OR-025",
+      "series_admission_docket_id": "70-SA-007",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-007-NIST-ARIA-01-EVALUATION-COVERAGE",
+      "measure_label": "Evaluation coverage",
+      "numerator_contract": "Completed evaluation requirements or test cases",
+      "denominator_contract": "Applicable requirements or planned test cases",
+      "scope_contract": "Named system, version, and evaluation period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nist-ai-metrology-method-selection-layer",
+        "signal-nist-ai-rmf-critical-infrastructure-profile-concept"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-014",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-002-nist-aria",
+      "reader_pathway_ids": [
+        "reader-pathway-ai-infrastructure-policy-to-assurance",
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-026",
+      "slug": "71-panel-026-nist-aria-authorization-and-deployment",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-007-NIST-ARIA",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "file_kind": "adoption_case",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "specification_id": "69-MS-026",
+      "specification_slug": "69-ms-026-nist-aria-authorization-and-deployment",
+      "review_docket_id": "70-OR-026",
+      "series_admission_docket_id": "70-SA-007",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-007-NIST-ARIA-02-AUTHORIZATION",
+      "measure_label": "Authorization and deployment",
+      "numerator_contract": "Accepted authorizations or deployed evaluated configurations",
+      "denominator_contract": "Evaluated configurations",
+      "scope_contract": "Named system, authority, and release period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nist-ai-metrology-method-selection-layer",
+        "signal-nist-ai-rmf-critical-infrastructure-profile-concept"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-014",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-002-nist-aria",
+      "reader_pathway_ids": [
+        "reader-pathway-ai-infrastructure-policy-to-assurance",
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-027",
+      "slug": "71-panel-027-nist-aria-corrective-action-closure",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-007-NIST-ARIA",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "file_kind": "adoption_case",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "specification_id": "69-MS-027",
+      "specification_slug": "69-ms-027-nist-aria-corrective-action-closure",
+      "review_docket_id": "70-OR-027",
+      "series_admission_docket_id": "70-SA-007",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-007-NIST-ARIA-03-CORRECTIVE-ACTION",
+      "measure_label": "Corrective-action closure",
+      "numerator_contract": "Closed validated findings",
+      "denominator_contract": "Findings requiring action",
+      "scope_contract": "Named system, finding class, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nist-ai-metrology-method-selection-layer",
+        "signal-nist-ai-rmf-critical-infrastructure-profile-concept"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-014",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-002-nist-aria",
+      "reader_pathway_ids": [
+        "reader-pathway-ai-infrastructure-policy-to-assurance",
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-028",
+      "slug": "71-panel-028-nist-aria-mission-or-service-effect",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-007-NIST-ARIA",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "file_kind": "adoption_case",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "specification_id": "69-MS-028",
+      "specification_slug": "69-ms-028-nist-aria-mission-or-service-effect",
+      "review_docket_id": "70-OR-028",
+      "series_admission_docket_id": "70-SA-007",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-007-NIST-ARIA-04-MISSION-SERVICE",
+      "measure_label": "Mission or service effect",
+      "numerator_contract": "Stable accepted mission or service measure",
+      "denominator_contract": "Declared service population or exposure",
+      "scope_contract": "Named system, deployment scope, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nist-ai-metrology-method-selection-layer",
+        "signal-nist-ai-rmf-critical-infrastructure-profile-concept"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-014",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-002-nist-aria",
+      "reader_pathway_ids": [
+        "reader-pathway-ai-infrastructure-policy-to-assurance",
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-029",
+      "slug": "71-panel-029-waymo-california-passenger-service-exposure",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-008-WAYMO-CALIFORNIA",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "file_kind": "adoption_case",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "specification_id": "69-MS-029",
+      "specification_slug": "69-ms-029-waymo-california-passenger-service-exposure",
+      "review_docket_id": "70-OR-029",
+      "series_admission_docket_id": "70-SA-008",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-008-WAYMO-CALIFORNIA-01-SERVICE-EXPOSURE",
+      "measure_label": "Passenger-service exposure",
+      "numerator_contract": "Completed fared driverless trips or passenger miles",
+      "denominator_contract": "Authorized service time, vehicles, or service population",
+      "scope_contract": "Waymo, California geography, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+        "signal-california-av-testing-miles-2024"
+      ],
+      "evidence_gap_ids": [
+        "gap-010",
+        "gap-015",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-003-waymo-california",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-030",
+      "slug": "71-panel-030-waymo-california-safety-and-intervention",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-008-WAYMO-CALIFORNIA",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "file_kind": "adoption_case",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "specification_id": "69-MS-030",
+      "specification_slug": "69-ms-030-waymo-california-safety-and-intervention",
+      "review_docket_id": "70-OR-030",
+      "series_admission_docket_id": "70-SA-008",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-008-WAYMO-CALIFORNIA-02-SAFETY-INTERVENTION",
+      "measure_label": "Safety and intervention",
+      "numerator_contract": "Reportable events, interventions, recalls, or corrective actions",
+      "denominator_contract": "Passenger miles, trips, or operating hours",
+      "scope_contract": "Waymo, service scope, event definition, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+        "signal-california-av-testing-miles-2024"
+      ],
+      "evidence_gap_ids": [
+        "gap-010",
+        "gap-015",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-003-waymo-california",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-031",
+      "slug": "71-panel-031-waymo-california-accessibility-and-service-completion",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-008-WAYMO-CALIFORNIA",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "file_kind": "adoption_case",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "specification_id": "69-MS-031",
+      "specification_slug": "69-ms-031-waymo-california-accessibility-and-service-completion",
+      "review_docket_id": "70-OR-031",
+      "series_admission_docket_id": "70-SA-008",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-008-WAYMO-CALIFORNIA-03-ACCESSIBILITY",
+      "measure_label": "Accessibility and service completion",
+      "numerator_contract": "Completed accessible trips or fulfilled requests",
+      "denominator_contract": "Accessible-service requests or eligible trips",
+      "scope_contract": "Waymo, geography, service mode, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+        "signal-california-av-testing-miles-2024"
+      ],
+      "evidence_gap_ids": [
+        "gap-010",
+        "gap-015",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-003-waymo-california",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "panel_id": "71-PANEL-032",
+      "slug": "71-panel-032-waymo-california-complaints-and-service-quality",
+      "record_kind": "longitudinal_panel_shell",
+      "record_status": "Published",
+      "panel_state": "Empty - No Admitted Series",
+      "cohort_id": "68-COHORT-008-WAYMO-CALIFORNIA",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "file_kind": "adoption_case",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "specification_id": "69-MS-032",
+      "specification_slug": "69-ms-032-waymo-california-complaints-and-service-quality",
+      "review_docket_id": "70-OR-032",
+      "series_admission_docket_id": "70-SA-008",
+      "series_admission_state": "Not Ready - No Reviewed Observations",
+      "measure_id": "68-COHORT-008-WAYMO-CALIFORNIA-04-COMPLAINT-QUALITY",
+      "measure_label": "Complaints and service quality",
+      "numerator_contract": "Substantiated complaints, cancellations, or service failures",
+      "denominator_contract": "Trips, requests, or passenger-service exposure",
+      "scope_contract": "Waymo, geography, complaint definition, and reporting period",
+      "unit_contract": "Use only source-declared numerator and denominator units. Do not infer a unit, convert a unit, normalize a rate, or join unlike units without a documented public bridge and independent review.",
+      "period_contract": "The artifact must declare observation and coverage dates, cadence, partial periods, missing periods, and any revision to the period basis.",
+      "method_contract": "The artifact must declare the collection, calculation, test, or reporting method and its version, including corrections and restatements.",
+      "exception_contract": "Failures, outages, rejected units, exclusions, adverse observations, and alternative explanations must remain visible; silence cannot be converted into an explicit none statement.",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+        "signal-california-av-testing-miles-2024"
+      ],
+      "evidence_gap_ids": [
+        "gap-010",
+        "gap-015",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-003-waymo-california",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-reviewed-observation-is-not-admitted-series",
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "current_series_id": null,
+      "admitted": false,
+      "accepted_observation_ids": [],
+      "series_point_ids": [],
+      "period_axis": [],
+      "values": [],
+      "revisions": [],
+      "breaks": [],
+      "uncertainty_notes": [],
+      "first_period": null,
+      "last_period": null,
+      "minimum_periods_for_claim": null,
+      "current_direction": null,
+      "current_magnitude": null,
+      "current_trend": null,
+      "outcome_claim_ids": [],
+      "automatic_trend_allowed": false,
+      "phase64_cell_change": "none"
+    }
+  ],
+  "outcome_claim_dockets": [
+    {
+      "outcome_claim_docket_id": "71-OC-001",
+      "slug": "71-oc-001-tsmc-arizona",
+      "record_kind": "outcome_claim_docket",
+      "record_status": "Published",
+      "docket_state": "Not Ready - No Admitted Series",
+      "claim_decision": "Not Published",
+      "cohort_id": "68-COHORT-001-TSMC-ARIZONA",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "file_kind": "local_project",
+      "named_entity": "TSMC Arizona",
+      "series_admission_docket_id": "70-SA-001",
+      "panel_ids": [
+        "71-PANEL-001",
+        "71-PANEL-002",
+        "71-PANEL-003",
+        "71-PANEL-004"
+      ],
+      "outcome_inference_checks": [
+        {
+          "dimension_id": "71-OUTCOME-01-SERIES",
+          "label": "Admitted series basis",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-02-IDENTITY",
+          "label": "Stable identity and scope",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-03-PERIODS",
+          "label": "Repeated-period sufficiency",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-04-DIRECTION",
+          "label": "Direction and magnitude",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-05-COMPATIBILITY",
+          "label": "Denominator and method compatibility",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-06-ADVERSE",
+          "label": "Breaks, revisions, and adverse evidence",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-07-ALTERNATIVES",
+          "label": "Alternative explanations and counterfactuals",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-08-ATTRIBUTION",
+          "label": "Attribution and receiving authority",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-09-UNCERTAINTY",
+          "label": "Uncertainty, sensitivity, and limitations",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-10-DECISION",
+          "label": "Dual-control claim decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        }
+      ],
+      "exact_next_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. Facility-specific inspection, utility acceptance, equipment or product qualification, customer acceptance, and a compatible repeat production series.",
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "signal_ids": [
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-phoenix-tsmc-fab3-topping-out",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ],
+      "evidence_gap_ids": [
+        "gap-001",
+        "gap-002",
+        "gap-003"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-001-tsmc-arizona",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-chips-compute-research-to-fab",
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "local_system_ids": [
+        "local-us-southwest-chip-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "proposed_claim_text": null,
+      "proposed_claim_type": null,
+      "supporting_panel_ids": [],
+      "supporting_observation_ids": [],
+      "adverse_observation_ids": [],
+      "alternative_explanation_records": [],
+      "uncertainty_statement": null,
+      "attribution_statement": null,
+      "first_reviewer_id": null,
+      "second_reviewer_id": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "causal_claim_allowed": false,
+      "automatic_publication_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "outcome_claim_docket_id": "71-OC-002",
+      "slug": "71-oc-002-toronto-24-254930",
+      "record_kind": "outcome_claim_docket",
+      "record_status": "Published",
+      "docket_state": "Not Ready - No Admitted Series",
+      "claim_decision": "Not Published",
+      "cohort_id": "68-COHORT-002-TORONTO-24-254930",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "file_kind": "local_project",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "series_admission_docket_id": "70-SA-002",
+      "panel_ids": [
+        "71-PANEL-005",
+        "71-PANEL-006",
+        "71-PANEL-007",
+        "71-PANEL-008"
+      ],
+      "outcome_inference_checks": [
+        {
+          "dimension_id": "71-OUTCOME-01-SERIES",
+          "label": "Admitted series basis",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-02-IDENTITY",
+          "label": "Stable identity and scope",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-03-PERIODS",
+          "label": "Repeated-period sufficiency",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-04-DIRECTION",
+          "label": "Direction and magnitude",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-05-COMPATIBILITY",
+          "label": "Denominator and method compatibility",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-06-ADVERSE",
+          "label": "Breaks, revisions, and adverse evidence",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-07-ALTERNATIVES",
+          "label": "Alternative explanations and counterfactuals",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-08-ATTRIBUTION",
+          "label": "Attribution and receiving authority",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-09-UNCERTAINTY",
+          "label": "Uncertainty, sensitivity, and limitations",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-10-DECISION",
+          "label": "Dual-control claim decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        }
+      ],
+      "exact_next_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. Enacted amendment numbers or accepted condition compliance followed by a project-specific building permit, start, completion, and occupancy record.",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-cmhc-june-2026-toronto-construction-stage-baseline"
+      ],
+      "evidence_gap_ids": [
+        "gap-004",
+        "gap-005"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-002-toronto-24-254930",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-ontario-real-estate"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "proposed_claim_text": null,
+      "proposed_claim_type": null,
+      "supporting_panel_ids": [],
+      "supporting_observation_ids": [],
+      "adverse_observation_ids": [],
+      "alternative_explanation_records": [],
+      "uncertainty_statement": null,
+      "attribution_statement": null,
+      "first_reviewer_id": null,
+      "second_reviewer_id": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "causal_claim_allowed": false,
+      "automatic_publication_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "outcome_claim_docket_id": "71-OC-003",
+      "slug": "71-oc-003-nova-large-load",
+      "record_kind": "outcome_claim_docket",
+      "record_status": "Published",
+      "docket_state": "Not Ready - No Admitted Series",
+      "claim_decision": "Not Published",
+      "cohort_id": "68-COHORT-003-NOVA-LARGE-LOAD",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "file_kind": "local_project",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "series_admission_docket_id": "70-SA-003",
+      "panel_ids": [
+        "71-PANEL-009",
+        "71-PANEL-010",
+        "71-PANEL-011",
+        "71-PANEL-012"
+      ],
+      "outcome_inference_checks": [
+        {
+          "dimension_id": "71-OUTCOME-01-SERIES",
+          "label": "Admitted series basis",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-02-IDENTITY",
+          "label": "Stable identity and scope",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-03-PERIODS",
+          "label": "Repeated-period sufficiency",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-04-DIRECTION",
+          "label": "Direction and magnitude",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-05-COMPATIBILITY",
+          "label": "Denominator and method compatibility",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-06-ADVERSE",
+          "label": "Breaks, revisions, and adverse evidence",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-07-ALTERNATIVES",
+          "label": "Alternative explanations and counterfactuals",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-08-ATTRIBUTION",
+          "label": "Attribution and receiving authority",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-09-UNCERTAINTY",
+          "label": "Uncertainty, sensitivity, and limitations",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-10-DECISION",
+          "label": "Dual-control claim decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        }
+      ],
+      "exact_next_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. Final route and land rights followed by construction, inspection, energization, a named GS-5 service agreement, metered operation, and compatible reliability.",
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "signal_ids": [
+        "signal-virginia-data-center-air-permit-trail",
+        "signal-virginia-gs5-large-load-rate-class"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-011"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-003-northern-virginia-large-load",
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-northern-virginia-data-center-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "proposed_claim_text": null,
+      "proposed_claim_type": null,
+      "supporting_panel_ids": [],
+      "supporting_observation_ids": [],
+      "adverse_observation_ids": [],
+      "alternative_explanation_records": [],
+      "uncertainty_statement": null,
+      "attribution_statement": null,
+      "first_reviewer_id": null,
+      "second_reviewer_id": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "causal_claim_allowed": false,
+      "automatic_publication_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "outcome_claim_docket_id": "71-OC-004",
+      "slug": "71-oc-004-space-coast",
+      "record_kind": "outcome_claim_docket",
+      "record_status": "Published",
+      "docket_state": "Not Ready - No Admitted Series",
+      "claim_decision": "Not Published",
+      "cohort_id": "68-COHORT-004-SPACE-COAST",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "file_kind": "local_project",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "series_admission_docket_id": "70-SA-004",
+      "panel_ids": [
+        "71-PANEL-013",
+        "71-PANEL-014",
+        "71-PANEL-015",
+        "71-PANEL-016"
+      ],
+      "outcome_inference_checks": [
+        {
+          "dimension_id": "71-OUTCOME-01-SERIES",
+          "label": "Admitted series basis",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-02-IDENTITY",
+          "label": "Stable identity and scope",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-03-PERIODS",
+          "label": "Repeated-period sufficiency",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-04-DIRECTION",
+          "label": "Direction and magnitude",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-05-COMPATIBILITY",
+          "label": "Denominator and method compatibility",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-06-ADVERSE",
+          "label": "Breaks, revisions, and adverse evidence",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-07-ALTERNATIVES",
+          "label": "Alternative explanations and counterfactuals",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-08-ATTRIBUTION",
+          "label": "Attribution and receiving authority",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-09-UNCERTAINTY",
+          "label": "Uncertainty, sensitivity, and limitations",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-10-DECISION",
+          "label": "Dual-control claim decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        }
+      ],
+      "exact_next_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A formal Shuttle Landing Facility licence disposition or site-and-operator-specific asset acceptance, mission use, repeated service, utilization, safety, and reliability record.",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "signal_ids": [
+        "signal-faa-part450-operator-transition",
+        "signal-kennedy-multiuser-master-plan",
+        "signal-ksc-causeway-bridge-operational"
+      ],
+      "evidence_gap_ids": [
+        "gap-013",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-004-space-coast-authority",
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "proposed_claim_text": null,
+      "proposed_claim_type": null,
+      "supporting_panel_ids": [],
+      "supporting_observation_ids": [],
+      "adverse_observation_ids": [],
+      "alternative_explanation_records": [],
+      "uncertainty_statement": null,
+      "attribution_statement": null,
+      "first_reviewer_id": null,
+      "second_reviewer_id": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "causal_claim_allowed": false,
+      "automatic_publication_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "outcome_claim_docket_id": "71-OC-005",
+      "slug": "71-oc-005-nevada-lithium",
+      "record_kind": "outcome_claim_docket",
+      "record_status": "Published",
+      "docket_state": "Not Ready - No Admitted Series",
+      "claim_decision": "Not Published",
+      "cohort_id": "68-COHORT-005-NEVADA-LITHIUM",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "file_kind": "local_project",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "series_admission_docket_id": "70-SA-005",
+      "panel_ids": [
+        "71-PANEL-017",
+        "71-PANEL-018",
+        "71-PANEL-019",
+        "71-PANEL-020"
+      ],
+      "outcome_inference_checks": [
+        {
+          "dimension_id": "71-OUTCOME-01-SERIES",
+          "label": "Admitted series basis",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-02-IDENTITY",
+          "label": "Stable identity and scope",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-03-PERIODS",
+          "label": "Repeated-period sufficiency",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-04-DIRECTION",
+          "label": "Direction and magnitude",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-05-COMPATIBILITY",
+          "label": "Denominator and method compatibility",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-06-ADVERSE",
+          "label": "Breaks, revisions, and adverse evidence",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-07-ALTERNATIVES",
+          "label": "Alternative explanations and counterfactuals",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-08-ATTRIBUTION",
+          "label": "Attribution and receiving authority",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-09-UNCERTAINTY",
+          "label": "Uncertainty, sensitivity, and limitations",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-10-DECISION",
+          "label": "Dual-control claim decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        }
+      ],
+      "exact_next_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A named inspection, accepted construction completion, commissioning result, compliant operating measurement, qualified lot, customer receipt, or recurring output series.",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "signal_ids": [
+        "signal-thacker-pass-federal-land-authorization",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-thacker-pass-state-environmental-permit-stack",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates"
+      ],
+      "evidence_gap_ids": [
+        "gap-007",
+        "gap-012"
+      ],
+      "canonical_briefing_id": "briefing-project-conversion-005-nevada-lithium",
+      "reader_pathway_ids": [
+        "reader-pathway-nevada-lithium-authorization-to-output"
+      ],
+      "local_system_ids": [
+        "local-nevada-lithium-processing-corridor"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "proposed_claim_text": null,
+      "proposed_claim_type": null,
+      "supporting_panel_ids": [],
+      "supporting_observation_ids": [],
+      "adverse_observation_ids": [],
+      "alternative_explanation_records": [],
+      "uncertainty_statement": null,
+      "attribution_statement": null,
+      "first_reviewer_id": null,
+      "second_reviewer_id": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "causal_claim_allowed": false,
+      "automatic_publication_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "outcome_claim_docket_id": "71-OC-006",
+      "slug": "71-oc-006-gsa-pqc",
+      "record_kind": "outcome_claim_docket",
+      "record_status": "Published",
+      "docket_state": "Not Ready - No Admitted Series",
+      "claim_decision": "Not Published",
+      "cohort_id": "68-COHORT-006-GSA-PQC",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "file_kind": "adoption_case",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "series_admission_docket_id": "70-SA-006",
+      "panel_ids": [
+        "71-PANEL-021",
+        "71-PANEL-022",
+        "71-PANEL-023",
+        "71-PANEL-024"
+      ],
+      "outcome_inference_checks": [
+        {
+          "dimension_id": "71-OUTCOME-01-SERIES",
+          "label": "Admitted series basis",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-02-IDENTITY",
+          "label": "Stable identity and scope",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-03-PERIODS",
+          "label": "Repeated-period sufficiency",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-04-DIRECTION",
+          "label": "Direction and magnitude",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-05-COMPATIBILITY",
+          "label": "Denominator and method compatibility",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-06-ADVERSE",
+          "label": "Breaks, revisions, and adverse evidence",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-07-ALTERNATIVES",
+          "label": "Alternative explanations and counterfactuals",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-08-ATTRIBUTION",
+          "label": "Attribution and receiving authority",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-09-UNCERTAINTY",
+          "label": "Uncertainty, sensitivity, and limitations",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-10-DECISION",
+          "label": "Dual-control claim decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        }
+      ],
+      "exact_next_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A named agency inventory, solicitation, award, interoperability result, tested cutover, receiving-authority acceptance, rollback record, or legacy retirement.",
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-gsa-onegov-ai-procurement-channel",
+        "signal-56o-gsa-priority-portfolio-two-implemented-11-current",
+        "signal-sample-007"
+      ],
+      "evidence_gap_ids": [
+        "gap-009",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-001-gsa-pqc",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "proposed_claim_text": null,
+      "proposed_claim_type": null,
+      "supporting_panel_ids": [],
+      "supporting_observation_ids": [],
+      "adverse_observation_ids": [],
+      "alternative_explanation_records": [],
+      "uncertainty_statement": null,
+      "attribution_statement": null,
+      "first_reviewer_id": null,
+      "second_reviewer_id": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "causal_claim_allowed": false,
+      "automatic_publication_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "outcome_claim_docket_id": "71-OC-007",
+      "slug": "71-oc-007-nist-aria",
+      "record_kind": "outcome_claim_docket",
+      "record_status": "Published",
+      "docket_state": "Not Ready - No Admitted Series",
+      "claim_decision": "Not Published",
+      "cohort_id": "68-COHORT-007-NIST-ARIA",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "file_kind": "adoption_case",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "series_admission_docket_id": "70-SA-007",
+      "panel_ids": [
+        "71-PANEL-025",
+        "71-PANEL-026",
+        "71-PANEL-027",
+        "71-PANEL-028"
+      ],
+      "outcome_inference_checks": [
+        {
+          "dimension_id": "71-OUTCOME-01-SERIES",
+          "label": "Admitted series basis",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-02-IDENTITY",
+          "label": "Stable identity and scope",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-03-PERIODS",
+          "label": "Repeated-period sufficiency",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-04-DIRECTION",
+          "label": "Direction and magnitude",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-05-COMPATIBILITY",
+          "label": "Denominator and method compatibility",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-06-ADVERSE",
+          "label": "Breaks, revisions, and adverse evidence",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-07-ALTERNATIVES",
+          "label": "Alternative explanations and counterfactuals",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-08-ATTRIBUTION",
+          "label": "Attribution and receiving authority",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-09-UNCERTAINTY",
+          "label": "Uncertainty, sensitivity, and limitations",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-10-DECISION",
+          "label": "Dual-control claim decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        }
+      ],
+      "exact_next_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A named system evaluation connected to authorization, deployment monitoring, incidents, corrective action, repeat review, and a stable mission or service measure.",
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nist-ai-metrology-method-selection-layer",
+        "signal-nist-ai-rmf-critical-infrastructure-profile-concept"
+      ],
+      "evidence_gap_ids": [
+        "gap-008",
+        "gap-014",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-002-nist-aria",
+      "reader_pathway_ids": [
+        "reader-pathway-ai-infrastructure-policy-to-assurance",
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "proposed_claim_text": null,
+      "proposed_claim_type": null,
+      "supporting_panel_ids": [],
+      "supporting_observation_ids": [],
+      "adverse_observation_ids": [],
+      "alternative_explanation_records": [],
+      "uncertainty_statement": null,
+      "attribution_statement": null,
+      "first_reviewer_id": null,
+      "second_reviewer_id": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "causal_claim_allowed": false,
+      "automatic_publication_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "outcome_claim_docket_id": "71-OC-008",
+      "slug": "71-oc-008-waymo-california",
+      "record_kind": "outcome_claim_docket",
+      "record_status": "Published",
+      "docket_state": "Not Ready - No Admitted Series",
+      "claim_decision": "Not Published",
+      "cohort_id": "68-COHORT-008-WAYMO-CALIFORNIA",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "file_kind": "adoption_case",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "series_admission_docket_id": "70-SA-008",
+      "panel_ids": [
+        "71-PANEL-029",
+        "71-PANEL-030",
+        "71-PANEL-031",
+        "71-PANEL-032"
+      ],
+      "outcome_inference_checks": [
+        {
+          "dimension_id": "71-OUTCOME-01-SERIES",
+          "label": "Admitted series basis",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-02-IDENTITY",
+          "label": "Stable identity and scope",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-03-PERIODS",
+          "label": "Repeated-period sufficiency",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-04-DIRECTION",
+          "label": "Direction and magnitude",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-05-COMPATIBILITY",
+          "label": "Denominator and method compatibility",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-06-ADVERSE",
+          "label": "Breaks, revisions, and adverse evidence",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-07-ALTERNATIVES",
+          "label": "Alternative explanations and counterfactuals",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-08-ATTRIBUTION",
+          "label": "Attribution and receiving authority",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-09-UNCERTAINTY",
+          "label": "Uncertainty, sensitivity, and limitations",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        },
+        {
+          "dimension_id": "71-OUTCOME-10-DECISION",
+          "label": "Dual-control claim decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No admitted compatible series exists."
+        }
+      ],
+      "exact_next_artifact": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A stable Waymo passenger-service series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, cost, and compatible definitions.",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+        "signal-california-av-testing-miles-2024"
+      ],
+      "evidence_gap_ids": [
+        "gap-010",
+        "gap-015",
+        "gap-016"
+      ],
+      "canonical_briefing_id": "briefing-adoption-case-003-waymo-california",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "local_system_ids": [],
+      "dependency_map_ids": [
+        "dependency-map-admitted-series-is-not-causal-outcome"
+      ],
+      "proposed_claim_text": null,
+      "proposed_claim_type": null,
+      "supporting_panel_ids": [],
+      "supporting_observation_ids": [],
+      "adverse_observation_ids": [],
+      "alternative_explanation_records": [],
+      "uncertainty_statement": null,
+      "attribution_statement": null,
+      "first_reviewer_id": null,
+      "second_reviewer_id": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "causal_claim_allowed": false,
+      "automatic_publication_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    }
+  ],
+  "comparison_embargo_registers": [
+    {
+      "comparison_register_id": "71-COMP-001",
+      "record_kind": "comparison_embargo_register",
+      "record_status": "Published",
+      "comparison_state": "Embargoed - No Common Admitted Series",
+      "cohort_id": "68-COHORT-001-TSMC-ARIZONA",
+      "file_id": "61-PROJECT-TSMC-ARIZONA",
+      "named_entity": "TSMC Arizona",
+      "outcome_claim_docket_id": "71-OC-001",
+      "panel_ids": [
+        "71-PANEL-001",
+        "71-PANEL-002",
+        "71-PANEL-003",
+        "71-PANEL-004"
+      ],
+      "comparison_checks": [
+        {
+          "dimension_id": "71-COMPARE-01-QUESTION",
+          "label": "Common entity class and question",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-02-MEASURE",
+          "label": "Common measure and unit",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-03-DENOMINATOR",
+          "label": "Common denominator or exposure",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-04-PERIOD",
+          "label": "Compatible periods and cadence",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-05-METHOD",
+          "label": "Compatible method and version",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-06-LIFECYCLE",
+          "label": "Common lifecycle and acceptance stage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-07-BREAKS",
+          "label": "Visible breaks, missingness, and revisions",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-08-UNCERTAINTY",
+          "label": "Comparable uncertainty and coverage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-09-NO-RANKING",
+          "label": "No composite or ranking inference",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-10-DECISION",
+          "label": "Human comparison decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        }
+      ],
+      "embargo_reason": "No common admitted series preserves a shared measure, denominator, period, method, lifecycle, and uncertainty contract.",
+      "comparison_candidate_ids": [],
+      "approved_peer_ids": [],
+      "approved_measure_ids": [],
+      "comparison_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "cross_entity_transfer_allowed": false,
+      "automatic_comparison_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "comparison_register_id": "71-COMP-002",
+      "record_kind": "comparison_embargo_register",
+      "record_status": "Published",
+      "comparison_state": "Embargoed - No Common Admitted Series",
+      "cohort_id": "68-COHORT-002-TORONTO-24-254930",
+      "file_id": "61-PROJECT-TORONTO-24-254930",
+      "named_entity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "outcome_claim_docket_id": "71-OC-002",
+      "panel_ids": [
+        "71-PANEL-005",
+        "71-PANEL-006",
+        "71-PANEL-007",
+        "71-PANEL-008"
+      ],
+      "comparison_checks": [
+        {
+          "dimension_id": "71-COMPARE-01-QUESTION",
+          "label": "Common entity class and question",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-02-MEASURE",
+          "label": "Common measure and unit",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-03-DENOMINATOR",
+          "label": "Common denominator or exposure",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-04-PERIOD",
+          "label": "Compatible periods and cadence",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-05-METHOD",
+          "label": "Compatible method and version",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-06-LIFECYCLE",
+          "label": "Common lifecycle and acceptance stage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-07-BREAKS",
+          "label": "Visible breaks, missingness, and revisions",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-08-UNCERTAINTY",
+          "label": "Comparable uncertainty and coverage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-09-NO-RANKING",
+          "label": "No composite or ranking inference",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-10-DECISION",
+          "label": "Human comparison decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        }
+      ],
+      "embargo_reason": "No common admitted series preserves a shared measure, denominator, period, method, lifecycle, and uncertainty contract.",
+      "comparison_candidate_ids": [],
+      "approved_peer_ids": [],
+      "approved_measure_ids": [],
+      "comparison_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "cross_entity_transfer_allowed": false,
+      "automatic_comparison_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "comparison_register_id": "71-COMP-003",
+      "record_kind": "comparison_embargo_register",
+      "record_status": "Published",
+      "comparison_state": "Embargoed - No Common Admitted Series",
+      "cohort_id": "68-COHORT-003-NOVA-LARGE-LOAD",
+      "file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "named_entity": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "outcome_claim_docket_id": "71-OC-003",
+      "panel_ids": [
+        "71-PANEL-009",
+        "71-PANEL-010",
+        "71-PANEL-011",
+        "71-PANEL-012"
+      ],
+      "comparison_checks": [
+        {
+          "dimension_id": "71-COMPARE-01-QUESTION",
+          "label": "Common entity class and question",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-02-MEASURE",
+          "label": "Common measure and unit",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-03-DENOMINATOR",
+          "label": "Common denominator or exposure",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-04-PERIOD",
+          "label": "Compatible periods and cadence",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-05-METHOD",
+          "label": "Compatible method and version",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-06-LIFECYCLE",
+          "label": "Common lifecycle and acceptance stage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-07-BREAKS",
+          "label": "Visible breaks, missingness, and revisions",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-08-UNCERTAINTY",
+          "label": "Comparable uncertainty and coverage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-09-NO-RANKING",
+          "label": "No composite or ranking inference",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-10-DECISION",
+          "label": "Human comparison decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        }
+      ],
+      "embargo_reason": "No common admitted series preserves a shared measure, denominator, period, method, lifecycle, and uncertainty contract.",
+      "comparison_candidate_ids": [],
+      "approved_peer_ids": [],
+      "approved_measure_ids": [],
+      "comparison_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "cross_entity_transfer_allowed": false,
+      "automatic_comparison_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "comparison_register_id": "71-COMP-004",
+      "record_kind": "comparison_embargo_register",
+      "record_status": "Published",
+      "comparison_state": "Embargoed - No Common Admitted Series",
+      "cohort_id": "68-COHORT-004-SPACE-COAST",
+      "file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "named_entity": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "outcome_claim_docket_id": "71-OC-004",
+      "panel_ids": [
+        "71-PANEL-013",
+        "71-PANEL-014",
+        "71-PANEL-015",
+        "71-PANEL-016"
+      ],
+      "comparison_checks": [
+        {
+          "dimension_id": "71-COMPARE-01-QUESTION",
+          "label": "Common entity class and question",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-02-MEASURE",
+          "label": "Common measure and unit",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-03-DENOMINATOR",
+          "label": "Common denominator or exposure",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-04-PERIOD",
+          "label": "Compatible periods and cadence",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-05-METHOD",
+          "label": "Compatible method and version",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-06-LIFECYCLE",
+          "label": "Common lifecycle and acceptance stage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-07-BREAKS",
+          "label": "Visible breaks, missingness, and revisions",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-08-UNCERTAINTY",
+          "label": "Comparable uncertainty and coverage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-09-NO-RANKING",
+          "label": "No composite or ranking inference",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-10-DECISION",
+          "label": "Human comparison decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        }
+      ],
+      "embargo_reason": "No common admitted series preserves a shared measure, denominator, period, method, lifecycle, and uncertainty contract.",
+      "comparison_candidate_ids": [],
+      "approved_peer_ids": [],
+      "approved_measure_ids": [],
+      "comparison_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "cross_entity_transfer_allowed": false,
+      "automatic_comparison_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "comparison_register_id": "71-COMP-005",
+      "record_kind": "comparison_embargo_register",
+      "record_status": "Published",
+      "comparison_state": "Embargoed - No Common Admitted Series",
+      "cohort_id": "68-COHORT-005-NEVADA-LITHIUM",
+      "file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "named_entity": "Thacker Pass and Rhyolite Ridge",
+      "outcome_claim_docket_id": "71-OC-005",
+      "panel_ids": [
+        "71-PANEL-017",
+        "71-PANEL-018",
+        "71-PANEL-019",
+        "71-PANEL-020"
+      ],
+      "comparison_checks": [
+        {
+          "dimension_id": "71-COMPARE-01-QUESTION",
+          "label": "Common entity class and question",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-02-MEASURE",
+          "label": "Common measure and unit",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-03-DENOMINATOR",
+          "label": "Common denominator or exposure",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-04-PERIOD",
+          "label": "Compatible periods and cadence",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-05-METHOD",
+          "label": "Compatible method and version",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-06-LIFECYCLE",
+          "label": "Common lifecycle and acceptance stage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-07-BREAKS",
+          "label": "Visible breaks, missingness, and revisions",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-08-UNCERTAINTY",
+          "label": "Comparable uncertainty and coverage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-09-NO-RANKING",
+          "label": "No composite or ranking inference",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-10-DECISION",
+          "label": "Human comparison decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        }
+      ],
+      "embargo_reason": "No common admitted series preserves a shared measure, denominator, period, method, lifecycle, and uncertainty contract.",
+      "comparison_candidate_ids": [],
+      "approved_peer_ids": [],
+      "approved_measure_ids": [],
+      "comparison_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "cross_entity_transfer_allowed": false,
+      "automatic_comparison_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "comparison_register_id": "71-COMP-006",
+      "record_kind": "comparison_embargo_register",
+      "record_status": "Published",
+      "comparison_state": "Embargoed - No Common Admitted Series",
+      "cohort_id": "68-COHORT-006-GSA-PQC",
+      "file_id": "61-ADOPTION-GSA-PQC",
+      "named_entity": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "outcome_claim_docket_id": "71-OC-006",
+      "panel_ids": [
+        "71-PANEL-021",
+        "71-PANEL-022",
+        "71-PANEL-023",
+        "71-PANEL-024"
+      ],
+      "comparison_checks": [
+        {
+          "dimension_id": "71-COMPARE-01-QUESTION",
+          "label": "Common entity class and question",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-02-MEASURE",
+          "label": "Common measure and unit",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-03-DENOMINATOR",
+          "label": "Common denominator or exposure",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-04-PERIOD",
+          "label": "Compatible periods and cadence",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-05-METHOD",
+          "label": "Compatible method and version",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-06-LIFECYCLE",
+          "label": "Common lifecycle and acceptance stage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-07-BREAKS",
+          "label": "Visible breaks, missingness, and revisions",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-08-UNCERTAINTY",
+          "label": "Comparable uncertainty and coverage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-09-NO-RANKING",
+          "label": "No composite or ranking inference",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-10-DECISION",
+          "label": "Human comparison decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        }
+      ],
+      "embargo_reason": "No common admitted series preserves a shared measure, denominator, period, method, lifecycle, and uncertainty contract.",
+      "comparison_candidate_ids": [],
+      "approved_peer_ids": [],
+      "approved_measure_ids": [],
+      "comparison_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "cross_entity_transfer_allowed": false,
+      "automatic_comparison_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "comparison_register_id": "71-COMP-007",
+      "record_kind": "comparison_embargo_register",
+      "record_status": "Published",
+      "comparison_state": "Embargoed - No Common Admitted Series",
+      "cohort_id": "68-COHORT-007-NIST-ARIA",
+      "file_id": "61-ADOPTION-NIST-ARIA",
+      "named_entity": "NIST ARIA 0.1 pilot",
+      "outcome_claim_docket_id": "71-OC-007",
+      "panel_ids": [
+        "71-PANEL-025",
+        "71-PANEL-026",
+        "71-PANEL-027",
+        "71-PANEL-028"
+      ],
+      "comparison_checks": [
+        {
+          "dimension_id": "71-COMPARE-01-QUESTION",
+          "label": "Common entity class and question",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-02-MEASURE",
+          "label": "Common measure and unit",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-03-DENOMINATOR",
+          "label": "Common denominator or exposure",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-04-PERIOD",
+          "label": "Compatible periods and cadence",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-05-METHOD",
+          "label": "Compatible method and version",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-06-LIFECYCLE",
+          "label": "Common lifecycle and acceptance stage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-07-BREAKS",
+          "label": "Visible breaks, missingness, and revisions",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-08-UNCERTAINTY",
+          "label": "Comparable uncertainty and coverage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-09-NO-RANKING",
+          "label": "No composite or ranking inference",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-10-DECISION",
+          "label": "Human comparison decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        }
+      ],
+      "embargo_reason": "No common admitted series preserves a shared measure, denominator, period, method, lifecycle, and uncertainty contract.",
+      "comparison_candidate_ids": [],
+      "approved_peer_ids": [],
+      "approved_measure_ids": [],
+      "comparison_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "cross_entity_transfer_allowed": false,
+      "automatic_comparison_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    },
+    {
+      "comparison_register_id": "71-COMP-008",
+      "record_kind": "comparison_embargo_register",
+      "record_status": "Published",
+      "comparison_state": "Embargoed - No Common Admitted Series",
+      "cohort_id": "68-COHORT-008-WAYMO-CALIFORNIA",
+      "file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "named_entity": "Waymo fared driverless passenger service in California",
+      "outcome_claim_docket_id": "71-OC-008",
+      "panel_ids": [
+        "71-PANEL-029",
+        "71-PANEL-030",
+        "71-PANEL-031",
+        "71-PANEL-032"
+      ],
+      "comparison_checks": [
+        {
+          "dimension_id": "71-COMPARE-01-QUESTION",
+          "label": "Common entity class and question",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-02-MEASURE",
+          "label": "Common measure and unit",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-03-DENOMINATOR",
+          "label": "Common denominator or exposure",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-04-PERIOD",
+          "label": "Compatible periods and cadence",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-05-METHOD",
+          "label": "Compatible method and version",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-06-LIFECYCLE",
+          "label": "Common lifecycle and acceptance stage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-07-BREAKS",
+          "label": "Visible breaks, missingness, and revisions",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-08-UNCERTAINTY",
+          "label": "Comparable uncertainty and coverage",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-09-NO-RANKING",
+          "label": "No composite or ranking inference",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        },
+        {
+          "dimension_id": "71-COMPARE-10-DECISION",
+          "label": "Human comparison decision and propagation",
+          "decision_state": "Not Ready",
+          "basis": "No common admitted series and no approved comparison candidate exist."
+        }
+      ],
+      "embargo_reason": "No common admitted series preserves a shared measure, denominator, period, method, lifecycle, and uncertainty contract.",
+      "comparison_candidate_ids": [],
+      "approved_peer_ids": [],
+      "approved_measure_ids": [],
+      "comparison_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "propagation_status": "not_started",
+      "cross_entity_transfer_allowed": false,
+      "automatic_comparison_allowed": false,
+      "score_created": false,
+      "ranking_created": false,
+      "phase64_cell_change": "none"
+    }
+  ]
+}

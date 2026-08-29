@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-72-outcome-evidence-counterfactual-design-registry.json";
+import analysisRegistry from "../../../data/phase-73-analysis-execution-result-adjudication-registry.json";
+
+export function getStaticPaths() {
+  return [
+    ...registry.outcome_evidence_packets.map((record) => ({ params: { id: record.slug }, props: { record, kind: "packet" } })),
+    ...registry.counterfactual_design_dockets.map((record) => ({ params: { id: record.slug }, props: { record, kind: "design" } }))
+  ];
+}
+
+const { record, kind } = Astro.props as { record: any; kind: "packet" | "design" };
+const isPacket = kind === "packet";
+const packets = isPacket ? [] : registry.outcome_evidence_packets.filter((item) => item.cohort_id === record.cohort_id);
+const alternative = isPacket
+  ? registry.alternative_explanation_registers.find((item) => item.alternative_register_id === record.alternative_explanation_register_id)
+  : registry.alternative_explanation_registers.find((item) => item.alternative_register_id === record.alternative_explanation_register_id);
+const [briefings, dependencyMaps, signals, sources] = await Promise.all([getCollection("briefings"), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")]);
+const briefingById = new Map(briefings.map((item) => [item.data.id, item])); const mapById = new Map(dependencyMaps.map((item) => [item.data.id, item])); const signalById = new Map(signals.map((item) => [item.data.id, item])); const sourceById = new Map(sources.map((item) => [item.data.id, item]));
+const title = isPacket ? `${record.evidence_packet_id}: ${record.measure_label}` : `${record.counterfactual_docket_id}: ${record.named_entity}`;
+const phase73Destination: any = isPacket
+  ? analysisRegistry.analysis_execution_dockets.find((item) => item.evidence_packet_id === record.evidence_packet_id)
+  : analysisRegistry.result_adjudication_dockets.find((item) => item.counterfactual_docket_id === record.counterfactual_docket_id);
+---
+
+<BaseLayout title={`${title} | FTFN`} description={isPacket ? `${record.named_entity}: empty outcome-evidence packet with twelve claim-language gates.` : `${record.named_entity}: inactive counterfactual-design docket with twelve pre-registration gates.`} robots="index, follow">
+  <section class="page-section"><div class="eyebrow">{isPacket ? "Outcome Evidence Packet" : "Counterfactual Design Docket"}</div><h1 class="page-title">{title}</h1><p class="lede">{record.named_entity}</p><div class="meta-row"><MetaPill label={isPacket ? record.packet_state : record.design_state} tone="review" /><MetaPill label={record.cohort_id} /><MetaPill label="0 claims" tone="review" /><MetaPill label="0 designs" tone="review" /><MetaPill label="0 results" tone="review" /></div></section>
+
+  {isPacket ? (
+    <>
+      <section class="page-section"><div class="status-panel"><article class="status-item"><h2>Phase 71 panel</h2><p><a href={`/evidence/outcomes/${record.panel_slug}/`}>{record.panel_id}</a>: {record.panel_state}</p></article><article class="status-item"><h2>Measure</h2><p>{record.measure_label}</p></article><article class="status-item"><h2>Claim class</h2><p>None selected.</p></article></div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Packet Completeness</div><h2>Twelve evidence-packet gates remain Not Ready.</h2></div></div><div class="source-list">{record.packet_checks.map((check: any) => <article class="source-row"><h3>{check.label}</h3><p>{check.basis}</p><MetaPill label={check.decision_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Claim Classes</div><h2>Seven evidence ceilings, none selected.</h2></div></div><div class="grid">{registry.claim_class_taxonomy.map((item) => <article class="record-card"><h3>{item.label}</h3><p>{item.boundary}</p><MetaPill label="Not selected" tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="grid"><article class="record-card"><h2>Empty language state</h2><ul><li>Outcome question: none</li><li>Proposed sentence: none</li><li>Verb strength: none</li><li>Baseline and follow-up: none</li><li>Calculation: none</li></ul></article><article class="record-card"><h2>Empty evidence state</h2><ul><li>Supporting panels: 0</li><li>Supporting observations: 0</li><li>Adverse observations: 0</li><li>Alternative entries: 0</li><li>Reproducibility artifacts: 0</li></ul></article><article class="record-card"><h2>Decision state</h2><ul><li>Attribution boundary: none</li><li>Uncertainty: none</li><li>Reviewers: none</li><li>Receipt: none</li><li>Propagation: not started</li></ul></article></div></section>
+    </>
+  ) : (
+    <>
+      <section class="page-section"><div class="status-panel"><article class="status-item"><h2>Outcome docket</h2><p><a href={`/evidence/outcomes/${record.outcome_claim_docket_slug}/`}>{record.outcome_claim_docket_id}</a></p></article><article class="status-item"><h2>Alternative register</h2><p>{record.alternative_explanation_register_id}: Empty</p></article><article class="status-item"><h2>Design selection</h2><p>None.</p></article></div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Alternative Explanations</div><h2>Ten categories remain Not Assessed.</h2></div></div><div class="source-list">{alternative?.category_assessments.map((item: any) => <article class="source-row"><h3>{item.label}</h3><p>No applicability decision, evidence for, evidence against, uncertainty note, or disposition exists.</p><MetaPill label={item.assessment_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Counterfactual Registration</div><h2>Twelve design gates remain Inactive.</h2></div></div><div class="source-list">{record.design_checks.map((check: any) => <article class="source-row"><h3>{check.label}</h3><p>{check.basis}</p><MetaPill label={check.decision_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Candidate Families</div><h2>Six design families, none selected.</h2></div></div><div class="grid">{registry.counterfactual_design_families.map((item) => <article class="record-card"><h3>{item.label}</h3><p>Candidate family only. Suitability, assumptions, and registration have not been reviewed.</p><MetaPill label="Not selected" tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="grid"><article class="record-card"><h2>Connected packets</h2><ul>{packets.map((item) => <li><a href={`/evidence/claims/${item.slug}/`}>{item.evidence_packet_id}: {item.measure_label}</a></li>)}</ul></article><article class="record-card"><h2>Empty design state</h2><ul><li>Causal question: none</li><li>Intervention: none</li><li>Treatment unit: none</li><li>Outcome and estimand: none</li><li>Controls or donor pool: 0</li></ul></article><article class="record-card"><h2>Registration boundary</h2><ul><li>Pre-registration: none</li><li>Reviewers: none</li><li>Receipt: none</li><li>Result inspection: prohibited</li><li>Causal publication: prohibited</li></ul></article></div></section>
+    </>
+  )}
+
+  <section class="page-section"><article class="record-card"><h2>Phase 73 destination</h2><p>{phase73Destination ? <a href={`/evidence/analysis/${phase73Destination.slug}/`}>{isPacket ? phase73Destination.analysis_execution_docket_id : phase73Destination.result_adjudication_docket_id}: {isPacket ? "inactive execution docket" : "inactive result-adjudication docket"}</a> : "No execution or adjudication contract"}</p></article></section>
+
+  <section class="page-section"><div class="grid"><article class="record-card"><h2>Connected briefings</h2><ul>{[record.canonical_briefing_id, "briefing-outcome-evidence-packet-desk-001", "briefing-counterfactual-design-desk-001"].map((id: string) => { const briefing = briefingById.get(id); return <li>{briefing ? <a href={`/briefings/${briefing.data.slug}/`}>{briefing.data.title}</a> : id}</li>; })}</ul></article><article class="record-card"><h2>Connected maps</h2><ul>{["dependency-map-admitted-series-is-not-causal-outcome", "dependency-map-descriptive-change-is-not-causal-effect"].map((id: string) => { const map = mapById.get(id); return <li>{map ? <a href={`/atlas/dependency-maps/${map.data.slug}/`}>{map.data.title}</a> : id}</li>; })}</ul></article><article class="record-card"><h2>Connected evidence</h2><ul>{record.source_ids.map((id: string) => { const source = sourceById.get(id); return <li>{source ? <a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a> : id}</li>; })}{record.signal_ids.map((id: string) => { const signal = signalById.get(id); return <li>{signal ? <a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a> : id}</li>; })}</ul></article></div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Boundary</div><h2>{isPacket ? "An evidence-packet contract is not a proposed or published claim." : "A design-family list is not a registered counterfactual or causal result."}</h2><p>No eligible panel, sentence, class, calculation, assessment, design, inspected result, effect estimate, reviewer decision, or receipt is recorded on this page.</p></div></section>
+</BaseLayout>

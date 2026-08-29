@@ -1,0 +1,38 @@
+{
+  "id": "dependency-map-mandate-is-not-permanent-authorization",
+  "title": "A Mandate Is Not Permanent Authorization",
+  "slug": "mandate-is-not-permanent-authorization",
+  "summary": "A dependency map connecting mandate scope and conditions to baselines, monitoring, appeals, time and event triggers, renewed participation, adaptive decision, remedy, sunset, and retirement.",
+  "map_type": "Dependency Stack",
+  "record_status": "Published",
+  "primary_topic": "Human Futures",
+  "framework_layers": ["Human Systems", "Enabling Infrastructure", "Frontier Domains"],
+  "constraint_tags": ["Public Trust", "Regulation", "Standards", "Infrastructure"],
+  "map_question": "What keeps a public authorization bounded, reviewable, appealable, and capable of amendment, reversal, sunset, or retirement?",
+  "interpretation_boundary": "Initial authorization, elapsed time, continued funding, contract renewal, implementation activity, participation, or reported benefit does not establish permanent mandate, successful conditions, silent renewal, or immunity from review.",
+  "source_ids": ["source-doe-thacker-pass-loan-2024", "source-gsa-pqc-buyers-guide-2025", "source-cpuc-waymo-al2-disposition-2024"],
+  "signal_ids": ["signal-thacker-pass-doe-loan-financial-close", "signal-gsa-pqc-procurement-paths", "signal-cpuc-waymo-fared-driverless-expansion-2024"],
+  "technology_ids": [],
+  "local_system_ids": ["local-nevada-lithium-processing-corridor"],
+  "evidence_gap_ids": ["gap-007", "gap-009", "gap-012", "gap-015", "gap-016"],
+  "nodes": [
+    {"id": "node-mandate", "label": "Time-bounded mandate with conditions", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No Phase 77 mandate exists."},
+    {"id": "node-baseline", "label": "Benefit, harm, burden, access, and distribution baselines", "node_type": "Constraint", "note": "Review needs a registered starting point."},
+    {"id": "node-monitor", "label": "Monitoring, complaints, incidents, challenges, and appeals", "node_type": "Constraint", "note": "Operating and public evidence remains open to correction."},
+    {"id": "node-trigger", "label": "Scheduled and event-based reopening triggers", "node_type": "Constraint", "note": "Time, performance, harm, context, authority, and future-user changes can open review."},
+    {"id": "node-review", "label": "Renewed standing, notice, participation, and public reason", "node_type": "Constraint", "note": "The affected public and evidence can change."},
+    {"id": "node-decision", "label": "Continue, condition, amend, pause, reverse, sunset, or retire", "node_type": "Constraint", "note": "A human decision selects the bounded response."},
+    {"id": "node-receipt", "label": "Adaptive decision, remedy, archive, and receipt", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No adaptive decision or receipt exists."}
+  ],
+  "links": [
+    {"from": "node-mandate", "to": "node-baseline", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Conditions and review require baselines."},
+    {"from": "node-baseline", "to": "node-monitor", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Monitoring compares observed evidence with the registered state."},
+    {"from": "node-monitor", "to": "node-trigger", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Only defined evidence can activate review."},
+    {"from": "node-trigger", "to": "node-review", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "A trigger opens process; it does not decide the outcome."},
+    {"from": "node-review", "to": "node-decision", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "New reasons and affected-public evidence inform a separate decision."},
+    {"from": "node-decision", "to": "node-receipt", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Mandate change, remedy, and archive need a receipt."}
+  ],
+  "what_this_map_supports": ["Explicit mandate scope, conditions, duration, sunset, appeal, indicators, and triggers.", "Renewed standing and participation when material conditions change.", "Separate continuation, amendment, reversal, sunset, and retirement decisions."],
+  "what_this_map_does_not_prove": ["It does not establish a current mandate, trigger, review, benefit, harm, or failure.", "It does not authorize silent renewal or automatic extension.", "It does not create a score, rank, stage advance, or operating-outcome change."],
+  "next_records_needed": ["A completed Phase 77 legitimacy audit and mandate receipt.", "Registered baselines, indicators, complaints, incidents, appeals, and trigger criteria.", "A real trigger followed by renewed public process and an adaptive decision receipt."]
+}

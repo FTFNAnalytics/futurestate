@@ -1,0 +1,29 @@
+{
+  "id": "update-2026-08-23-phase-70-observation-review-series-admission",
+  "effective_date": "2026-08-23",
+  "entry_type": "Source Refresh",
+  "title": "Phase 70 publishes empty observation-review and series-admission dockets",
+  "summary": "Thirty-two observation-review dockets, thirty-two revision-lineage registers, and eight series-admission dockets now expose the human decision path after Phase 69 intake. All submission, review, receipt, revision, observation, and series fields remain empty.",
+  "affected_record_ids": [
+    "briefing-observation-review-desk-001",
+    "briefing-series-admission-protocol-001",
+    "dependency-map-reviewed-observation-is-not-admitted-series",
+    "briefing-measurement-dictionary-001",
+    "briefing-outcome-cohort-admission-desk-001",
+    "briefing-outcomes-watch-001-what-actually-changed",
+    "gap-015",
+    "gap-016"
+  ],
+  "related_paths": [
+    "/evidence/review/",
+    "/briefings/observation-review-desk-001/",
+    "/briefings/series-admission-protocol-001/",
+    "/atlas/dependency-maps/reviewed-observation-is-not-admitted-series/",
+    "/data/observation-review-series-admission.json"
+  ],
+  "evidence_note": "This release contains empty review and admission workflow contracts plus synthetic-only validation. It does not contain a submitted observation, source attempt, access result, review, decision, receipt, revision event, accepted value, actual break, series point, cohort admission, comparison, causal claim, or outcome.",
+  "materiality": "No record-state change",
+  "publication_effect": "Adds two Published briefings, one Published dependency map, one searchable registry with forty detail routes, one public export, and reader-surface integrations while leaving all evidence and outcome states unchanged.",
+  "next_check_date": "2026-09-01",
+  "work_package": "docs/work-packages/phase-70-observation-review-series-admission-control.md"
+}

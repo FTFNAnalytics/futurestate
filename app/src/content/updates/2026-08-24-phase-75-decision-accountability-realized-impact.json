@@ -1,0 +1,33 @@
+{
+  "id": "update-2026-08-24-phase-75-decision-accountability-realized-impact",
+  "effective_date": "2026-08-24",
+  "entry_type": "Source Refresh",
+  "title": "Phase 75 expands decision accountability, implementation, and realized-impact controls",
+  "summary": "Eight inactive decision-accountability dossiers, thirty-two inactive implementation-commitment and realization ledgers, and eight inactive post-decision audit and remediation registers now expose the path from recommendation through authorization, delivery, impact, sunset, reversal, and remedy. All operational and decision fields remain empty.",
+  "affected_record_ids": [
+    "briefing-decision-accountability-desk-001",
+    "briefing-implementation-commitment-ledger-001",
+    "briefing-realized-impact-audit-001",
+    "briefing-reversal-remediation-desk-001",
+    "dependency-map-recommendation-is-not-authorization-or-implementation",
+    "dependency-map-delivered-output-is-not-realized-benefit",
+    "briefing-outcomes-watch-001-what-actually-changed",
+    "gap-015",
+    "gap-016"
+  ],
+  "related_paths": [
+    "/evidence/accountability/",
+    "/briefings/decision-accountability-desk-001/",
+    "/briefings/implementation-commitment-ledger-001/",
+    "/briefings/realized-impact-audit-001/",
+    "/briefings/reversal-remediation-desk-001/",
+    "/atlas/dependency-maps/recommendation-is-not-authorization-or-implementation/",
+    "/atlas/dependency-maps/delivered-output-is-not-realized-benefit/",
+    "/data/decision-accountability-realized-impact.json"
+  ],
+  "evidence_note": "This release contains empty accountability, implementation, realization, audit, sunset, reversal, and remediation contracts plus synthetic-only validation. It does not contain an authorized decision, decision owner, option rationale, conflict, recusal, dissent, implementation commitment, baseline, resource, milestone, safeguard event, accepted output, benefit, harm, distributional finding, counterfactual decision audit, post-decision challenge, sunset action, reversal, remediation, correction, withdrawal, reviewer decision, or receipt.",
+  "materiality": "No record-state change",
+  "publication_effect": "Adds four Published briefings, two Published dependency maps, one searchable registry with forty detail routes, one public export, and reader-surface integrations while leaving all evidence, cohort, stage, panel, design, result, synthesis, decision, implementation, and operating states unchanged.",
+  "next_check_date": "2026-09-01",
+  "work_package": "docs/work-packages/phase-75-decision-accountability-implementation-realized-impact-audit.md"
+}

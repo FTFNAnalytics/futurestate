@@ -1,0 +1,55 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-75-decision-accountability-realized-impact-registry.json";
+
+export function getStaticPaths() {
+  return [
+    ...registry.implementation_commitment_realization_ledgers.map((record) => ({ params: { id: record.slug }, props: { kind: "ledger", record } })),
+    ...registry.decision_accountability_dossiers.map((record) => ({ params: { id: record.slug }, props: { kind: "decision", record } }))
+  ];
+}
+
+const { kind, record } = Astro.props as { kind: "ledger" | "decision"; record: any };
+const isLedger = kind === "ledger";
+const decision = isLedger
+  ? registry.decision_accountability_dossiers.find((item) => item.decision_accountability_dossier_id === record.decision_accountability_dossier_id)
+  : record;
+const ledgers = isLedger
+  ? [record]
+  : registry.implementation_commitment_realization_ledgers.filter((item) => item.decision_accountability_dossier_id === record.decision_accountability_dossier_id);
+const audit = registry.post_decision_audit_remediation_registers.find((item) => item.decision_accountability_dossier_id === decision?.decision_accountability_dossier_id);
+const [briefings, dependencyMaps, signals, sources] = await Promise.all([getCollection("briefings"), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")]);
+const briefingById = new Map(briefings.map((item) => [item.data.id, item]));
+const mapById = new Map(dependencyMaps.map((item) => [item.data.id, item]));
+const signalById = new Map(signals.map((item) => [item.data.id, item]));
+const sourceById = new Map(sources.map((item) => [item.data.id, item]));
+const title = isLedger ? record.implementation_commitment_realization_ledger_id + ": " + record.measure_label : record.decision_accountability_dossier_id + ": " + record.named_entity;
+const connectedRecord = isLedger ? record : ledgers[0];
+---
+
+<BaseLayout title={title + " | FTFN"} description={isLedger ? record.named_entity + ": inactive implementation-commitment and realized-impact ledger." : record.named_entity + ": inactive decision-accountability and post-decision audit dossier."} robots="index, follow">
+  <section class="page-section"><div class="eyebrow">{isLedger ? "Implementation And Realization Ledger" : "Decision Accountability Dossier"}</div><h1 class="page-title">{title}</h1><p class="lede">{record.named_entity}</p><div class="meta-row"><MetaPill label={isLedger ? record.commitment_state : record.accountability_state} tone="review" /><MetaPill label={record.cohort_id} /><MetaPill label="0 authorizations" tone="review" /><MetaPill label="0 impacts" tone="review" /><MetaPill label="0 remediations" tone="review" /></div></section>
+
+  {isLedger ? (
+    <>
+      <section class="page-section"><div class="status-panel"><article class="status-item"><h2>Phase 74 input</h2><p><a href={"/evidence/synthesis/" + record.result_synthesis_input_docket_slug + "/"}>{record.result_synthesis_input_docket_id}</a></p></article><article class="status-item"><h2>Decision dossier</h2><p><a href={"/evidence/accountability/" + record.decision_accountability_dossier_slug + "/"}>{record.decision_accountability_dossier_id}</a></p></article><article class="status-item"><h2>Realization state</h2><p>{record.realization_state}</p></article></div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Implementation And Realization</div><h2>Sixteen gates remain Inactive.</h2></div></div><div class="source-list">{record.implementation_realization_checks.map((check: any) => <article class="source-row"><h3>{check.label}</h3><p>{check.basis}</p><MetaPill label={check.decision_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Safeguard Triggers</div><h2>Twelve trigger classes remain Dormant.</h2></div></div><div class="grid">{record.safeguard_trigger_records.map((item: any) => <article class="record-card"><h3>{item.label}</h3><p>No event, materiality decision, response, or receipt exists.</p><MetaPill label={item.trigger_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="grid"><article class="record-card"><h2>Commitment</h2><ul><li>Authorization: none</li><li>Owner: none</li><li>Scope: none</li><li>Budget: 0 records</li><li>Milestones: 0</li></ul></article><article class="record-card"><h2>Delivery</h2><ul><li>Resource baseline: none</li><li>Capacity baseline: none</li><li>Safeguards: 0</li><li>Outputs: 0</li><li>Acceptance records: 0</li></ul></article><article class="record-card"><h2>Realization</h2><ul><li>Benefits: 0</li><li>Harms: 0</li><li>Distributional records: 0</li><li>Audit: none</li><li>Receipts: 0</li></ul></article></div></section>
+    </>
+  ) : (
+    <>
+      <section class="page-section"><div class="status-panel"><article class="status-item"><h2>Phase 74 translation</h2><p>{record.decision_translation_reevaluation_register_id}: {record.phase74_translation_decision}</p></article><article class="status-item"><h2>Implementation ledgers</h2><p>{ledgers.length} inactive measure-level records</p></article><article class="status-item"><h2>Post-decision audit</h2><p>{audit?.post_decision_audit_remediation_register_id}: {audit?.audit_decision}</p></article></div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Institutional Decision</div><h2>Sixteen accountability gates remain Inactive.</h2></div></div><div class="source-list">{record.accountability_checks.map((check: any) => <article class="source-row"><h3>{check.label}</h3><p>{check.basis}</p><MetaPill label={check.decision_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Post-Decision Audit</div><h2>Twelve audit gates remain Inactive.</h2></div></div><div class="source-list">{audit?.audit_checks.map((check: any) => <article class="source-row"><h3>{check.label}</h3><p>{check.basis}</p><MetaPill label={check.decision_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Remediation</div><h2>Ten action classes remain Unavailable.</h2></div></div><div class="grid">{audit?.remediation_class_records.map((item: any) => <article class="record-card"><h3>{item.label}</h3><p>No trigger, action, owner, evidence, decision, or receipt exists.</p><MetaPill label={item.action_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="grid"><article class="record-card"><h2>Connected ledgers</h2><ul>{ledgers.map((item) => <li><a href={"/evidence/accountability/" + item.slug + "/"}>{item.implementation_commitment_realization_ledger_id}: {item.measure_label}</a></li>)}</ul></article><article class="record-card"><h2>Empty decision state</h2><ul><li>Decision owner: none</li><li>Selected option: none</li><li>Rationale: none</li><li>Authorization: none</li><li>Dissent: 0</li></ul></article><article class="record-card"><h2>Empty audit state</h2><ul><li>Audit plan: none</li><li>Challenges: 0</li><li>Sunset: none</li><li>Reversal: none</li><li>Remediations: 0</li></ul></article></div></section>
+    </>
+  )}
+
+  <section class="page-section"><div class="grid"><article class="record-card"><h2>Connected guides</h2><ul>{[record.canonical_briefing_id, "briefing-decision-accountability-desk-001", "briefing-implementation-commitment-ledger-001", "briefing-realized-impact-audit-001", "briefing-reversal-remediation-desk-001"].map((id: string) => { const briefing = briefingById.get(id); return <li>{briefing ? <a href={"/briefings/" + briefing.data.slug + "/"}>{briefing.data.title}</a> : id}</li>; })}</ul></article><article class="record-card"><h2>Connected maps</h2><ul>{["dependency-map-recommendation-is-not-authorization-or-implementation", "dependency-map-delivered-output-is-not-realized-benefit"].map((id: string) => { const map = mapById.get(id); return <li>{map ? <a href={"/atlas/dependency-maps/" + map.data.slug + "/"}>{map.data.title}</a> : id}</li>; })}</ul></article><article class="record-card"><h2>Connected evidence</h2><ul>{connectedRecord?.source_ids.map((id: string) => { const source = sourceById.get(id); return <li>{source ? <a href={"/atlas/sources/" + source.data.id + "/"}>{source.data.name}</a> : id}</li>; })}{connectedRecord?.signal_ids.map((id: string) => { const signal = signalById.get(id); return <li>{signal ? <a href={"/signals/" + signal.data.slug + "/"}>{signal.data.title}</a> : id}</li>; })}</ul></article></div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Boundary</div><h2>{isLedger ? "Authorization is not implementation, and output is not realized benefit." : "A recommendation is not an accountable institutional decision."}</h2><p>No authorized decision, owner, option rationale, implementation commitment, baseline, safeguard event, output, benefit, harm, distributional finding, audit, sunset, reversal, remediation, reviewer decision, or receipt is recorded on this page.</p></div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Phase 76 Destination</div><h2>An audited decision would still need learning admission and a separate comparability review.</h2><p>The cross-case layer does not infer a lesson, precedent, transfer condition, portfolio conclusion, policy reuse, supersession, or retirement from this inactive Phase 75 record.</p></div><article class="record-card"><a class="inline-link" href="/evidence/learning/">Open cross-case learning</a></article></section>
+</BaseLayout>

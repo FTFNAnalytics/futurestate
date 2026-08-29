@@ -1,0 +1,390 @@
+{
+  "schema_version": "1.0",
+  "phase": "60",
+  "cycle_id": "evidence-cycle-001",
+  "title": "Evidence-to-Decision Operating Cycle 001",
+  "captured_date": "2026-08-11",
+  "cycle_start_date": "2026-08-11",
+  "cycle_end_date": "2026-10-09",
+  "cycle_status": "wave_60b_complete_wave_60c_scheduled",
+  "publication_boundary": "Phase 60 publishes the operating contract and schedule, not future evidence. A scheduled gate remains scheduled until its source is checked, a human decision is recorded, required surfaces are propagated, validation passes, and the change is committed to Git.",
+  "overdue_contract": {
+    "rule": "A scheduled item becomes silently overdue when its scheduled_check_date is earlier than the build date and it has neither a decision_date nor a receipt_id.",
+    "same_day_treatment": "An item is due, but not silently overdue, on its scheduled check date.",
+    "allowed_non_decision_states": [
+      "blocked_with_public_receipt",
+      "rescheduled_with_watch_note"
+    ],
+    "silent_overdue_count_at_capture": 0
+  },
+  "digest_contract": {
+    "series": "Evidence Cycle",
+    "required_sections": [
+      "period and decision count",
+      "material changes",
+      "bounded no-change decisions",
+      "blocked or overdue checks",
+      "affected reader surfaces",
+      "next exact artifacts and dates",
+      "evidence and publication boundaries"
+    ],
+    "first_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+    "cadence_rule": "Publish a cycle digest after each operating window or earlier when a material receipt changes a canonical reader conclusion. Do not publish an empty claim of progress."
+  },
+  "operating_measures": {
+    "scheduled_gate_count": 13,
+    "phase_58_held_gate_count": 10,
+    "local_monitor_count": 3,
+    "completed_cycle_decisions": 2,
+    "seed_receipts_propagated": 1,
+    "silent_overdue_count": 0,
+    "new_sources": 0,
+    "new_signals": 0,
+    "underlying_signal_promotions": 1,
+    "evidence_gaps_resolved": 0,
+    "composite_scores_created": 0,
+    "operating_outcome_changes": 0
+  },
+  "records": [
+    {
+      "cycle_item_id": "60-CYCLE-DARPA-RESULTS",
+      "wave": "60B",
+      "target": "DARPA Lift Challenge official measured results",
+      "origin_record_id": "58-QUEUE-DARPA-RESULTS",
+      "source_ids": [
+        "source-darpa-lift-challenge-2026"
+      ],
+      "underlying_signal_id": "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+      "exact_next_artifact": "A dated DARPA final-results artifact identifying measured team performance, winners, and prize decisions.",
+      "scheduled_check_date": "2026-08-14",
+      "decision_status": "material_change",
+      "decision_date": "2026-08-23",
+      "receipt_id": "receipt-60-darpa-2026-08-23-results",
+      "canonical_dossier_ids": [
+        "briefing-adoption-003-autonomy-evtol"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome"
+      ],
+      "local_system_ids": [],
+      "source_checked_date": "2026-08-23",
+      "receipt_type": "Change Note",
+      "propagation_status": "complete",
+      "next_check_date": "2026-09-23"
+    },
+    {
+      "cycle_item_id": "60-CYCLE-SPACE-COAST-SLF-LICENCE",
+      "wave": "60B",
+      "target": "Space Coast Shuttle Landing Facility licence disposition",
+      "origin_record_id": "gap-013",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license"
+      ],
+      "underlying_signal_id": "signal-shuttle-landing-facility-license-status-watch",
+      "exact_next_artifact": "A formal FAA renewal, replacement, lapse, surrender, or other current disposition for the Shuttle Landing Facility site licence.",
+      "scheduled_check_date": "2026-08-15",
+      "decision_status": "no_material_change",
+      "decision_date": "2026-08-15",
+      "receipt_id": "receipt-60-slf-2026-08-15-no-material-change",
+      "canonical_dossier_ids": [
+        "briefing-local-conversion-004-space-coast"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-local-authorization-is-not-operation"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "source_checked_date": "2026-08-15",
+      "receipt_type": "No Material Change",
+      "propagation_status": "complete",
+      "next_check_date": "2026-09-15"
+    },
+    {
+      "cycle_item_id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+      "wave": "60C",
+      "target": "Louisiana Starlink observed adoption",
+      "origin_record_id": "58-QUEUE-LOUISIANA-STARLINK-ADOPTION",
+      "source_ids": [
+        "source-57b-louisiana-starlink-bead-agreement"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-la-starlink-adoption",
+      "exact_next_artifact": "Observed subscription or installation evidence for a fixed eligible-location cohort after service becomes available.",
+      "scheduled_check_date": "2026-09-01",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "local_system_ids": []
+    },
+    {
+      "cycle_item_id": "60-CYCLE-LOUISIANA-NEXTLINK-ADOPTION",
+      "wave": "60C",
+      "target": "Louisiana Nextlink observed adoption",
+      "origin_record_id": "58-QUEUE-LOUISIANA-NEXTLINK-ADOPTION",
+      "source_ids": [
+        "source-57b-louisiana-nextlink-first-bead-tower"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-la-nextlink-adoption",
+      "exact_next_artifact": "Observed subscription or take-rate evidence for a fixed eligible-location cohort after service availability.",
+      "scheduled_check_date": "2026-09-09",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "local_system_ids": []
+    },
+    {
+      "cycle_item_id": "60-CYCLE-AMTRAK-PIDS-CLOSEOUT",
+      "wave": "60C",
+      "target": "Amtrak PIDS final closeout",
+      "origin_record_id": "58-QUEUE-AMTRAK-PIDS-CLOSEOUT",
+      "source_ids": [
+        "source-57b-amtrak-ada-progress-june-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-amtrak-pids",
+      "exact_next_artifact": "A final FRA-accepted closeout record tied to the PIDS program scope and completed deployment denominator.",
+      "scheduled_check_date": "2026-09-10",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "local_system_ids": []
+    },
+    {
+      "cycle_item_id": "60-CYCLE-HANFORD-MATERIAL-BALANCE",
+      "wave": "60C",
+      "target": "Hanford complete material balance",
+      "origin_record_id": "58-QUEUE-HANFORD-MATERIAL-BALANCE",
+      "source_ids": [
+        "source-57d-hanford-wtp-consent-july-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-hanford-mass-balance",
+      "exact_next_artifact": "A compatible material balance covering feed, immobilized glass, secondary waste, inventory change, losses, period, and reconciliation method.",
+      "scheduled_check_date": "2026-09-10",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-advanced-manufacturing-research-to-production"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "local_system_ids": []
+    },
+    {
+      "cycle_item_id": "60-CYCLE-NNSA-GAO-BASELINE",
+      "wave": "60C",
+      "target": "NNSA GAO enterprise baseline closure",
+      "origin_record_id": "58-QUEUE-NNSA-GAO-ENTERPRISE-BASELINE",
+      "source_ids": [
+        "source-56q-gao-23-104661-recommendation-status"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-nnsa-gao-baseline",
+      "exact_next_artifact": "A final enterprise-wide integrated cost and schedule baseline plus GAO closure evidence tied to recommendation GAO-23-104661.",
+      "scheduled_check_date": "2026-09-10",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "local_system_ids": []
+    },
+    {
+      "cycle_item_id": "60-CYCLE-MONTANA-COMPLETED-QUARTER",
+      "wave": "60C",
+      "target": "Montana BEAD completed quarterly outcome",
+      "origin_record_id": "58-QUEUE-MONTANA-COMPLETED-QUARTER",
+      "source_ids": [
+        "source-57f-montana-bead-resource-index-august-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-mt-bead-quarter",
+      "exact_next_artifact": "One complete public quarterly report with project identity, reporting period, locations, completion state, and outcome denominator.",
+      "scheduled_check_date": "2026-09-15",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-local-authorization-is-not-operation"
+      ],
+      "local_system_ids": []
+    },
+    {
+      "cycle_item_id": "60-CYCLE-ARIZONA-WASTEWATER",
+      "wave": "60D",
+      "target": "Phoenix and TSMC wastewater delivery and operation",
+      "origin_record_id": "gap-002",
+      "source_ids": [
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "underlying_signal_id": "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+      "exact_next_artifact": "A project record establishing completed and accepted conveyance work, operating reclaimed-water infrastructure, measured flow, discharge or compliance, or a facility water balance.",
+      "scheduled_check_date": "2026-09-22",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "canonical_dossier_ids": [
+        "briefing-local-conversion-001-southwest-chips"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas"
+      ],
+      "local_system_ids": [
+        "local-us-southwest-chip-corridor"
+      ]
+    },
+    {
+      "cycle_item_id": "60-CYCLE-NNSA-ACCEPTED-CAPACITY",
+      "wave": "60D",
+      "target": "NNSA accepted operating capacity",
+      "origin_record_id": "58-QUEUE-NNSA-ACCEPTED-CAPACITY",
+      "source_ids": [
+        "source-57b-nnsa-pit-production-draft-peis-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-nnsa-accepted-capacity",
+      "exact_next_artifact": "A final accepted operating-capacity artifact linked to operating configuration, acceptance criteria, and observed qualified output.",
+      "scheduled_check_date": "2026-09-24",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "canonical_dossier_ids": [
+        "briefing-adoption-004-advanced-manufacturing"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-advanced-manufacturing-research-to-production"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome"
+      ],
+      "local_system_ids": []
+    },
+    {
+      "cycle_item_id": "60-CYCLE-LOUDOUN-STANDARDS",
+      "wave": "60D",
+      "target": "Loudoun Phase 2 data-center standards",
+      "origin_record_id": "gap-011",
+      "source_ids": [
+        "source-loudoun-phase2-data-center-standards"
+      ],
+      "underlying_signal_id": "signal-loudoun-phase2-data-center-standards-watch",
+      "exact_next_artifact": "A county staff report, public-hearing record, board action, adopted text, effective date, or formal revised schedule for Phase 2 standards.",
+      "scheduled_check_date": "2026-10-01",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "canonical_dossier_ids": [
+        "briefing-local-conversion-002-northern-virginia-compute"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas"
+      ],
+      "local_system_ids": [
+        "local-northern-virginia-data-center-corridor"
+      ]
+    },
+    {
+      "cycle_item_id": "60-CYCLE-AMTRAK-NAMED-ASSET-RELIABILITY",
+      "wave": "60D",
+      "target": "Amtrak named-asset reliability",
+      "origin_record_id": "58-QUEUE-AMTRAK-NAMED-ASSET-RELIABILITY",
+      "source_ids": [
+        "source-57e-amtrak-accessibility-progress-june-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-amtrak-reliability",
+      "exact_next_artifact": "A repeated named-asset reliability series with stable asset identity, period, denominator, failure definition, and repair outcome.",
+      "scheduled_check_date": "2026-10-09",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "local_system_ids": []
+    },
+    {
+      "cycle_item_id": "60-CYCLE-NNSA-RECURRING-QUALIFIED-RATE",
+      "wave": "60D",
+      "target": "NNSA recurring qualified pit rate",
+      "origin_record_id": "58-QUEUE-NNSA-RECURRING-QUALIFIED-RATE",
+      "source_ids": [
+        "source-57f-nnsa-pit-production-current"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-nnsa-qualified-rate",
+      "exact_next_artifact": "A recurring qualified-output series with acceptance definition, facility identity, period, denominator, and comparable rate calculation.",
+      "scheduled_check_date": "2026-10-09",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "canonical_dossier_ids": [
+        "briefing-adoption-004-advanced-manufacturing"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-advanced-manufacturing-research-to-production"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome"
+      ],
+      "local_system_ids": []
+    }
+  ],
+  "last_operated_date": "2026-08-23"
+}

@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/v031-content-expansion.json";
+
+const records = program.evidence_cycle.records;
+const decided = records.filter((record) => record.decision_date && record.receipt_id);
+const scheduled = records.filter((record) => !record.decision_date && !record.receipt_id);
+---
+
+<BaseLayout title="Evidence Cycle 001 | FTFN Review" description={program.evidence_cycle.publication_boundary}>
+  <ReviewHeader eyebrow="Phase 111 · Evidence-to-publication" title="Evidence Cycle 001" summary="Thirteen independent evidence gates, shown with their actual dated state and next exact artifact." phase={111} />
+  <section class="page-section"><div class="metric-strip"><div class="metric"><strong>{records.length}</strong><span>independent gates</span></div><div class="metric"><strong>{decided.length}</strong><span>dated decisions</span></div><div class="metric"><strong>{scheduled.length}</strong><span>scheduled gates</span></div><div class="metric"><strong>{program.evidence_cycle.cycle_end_date}</strong><span>cycle close target</span></div></div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Operating boundary</div><h2>A schedule is not a result.</h2><p>{program.evidence_cycle.publication_boundary}</p></div><article class="record-card"><h3>Next due gate</h3><p>{scheduled[0]?.target}</p><div class="meta-row"><MetaPill label={scheduled[0]?.scheduled_check_date ?? "No scheduled gate"} tone="review" /></div></article></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Gate register</div><h2>Each identity and outcome stays separate.</h2></div></div><div class="signal-grid">{records.map((record) => <article class="record-card"><div class="meta-row"><MetaPill label={record.public_state} tone={record.decision_date ? "possibility" : "review"} /><MetaPill label={record.scheduled_check_date} /></div><h3><a href={`/review/evidence-cycle/${record.slug}/`}>{record.target}</a></h3><p>{record.exact_next_artifact}</p>{record.decision_date && <p class="card-note">Decision {record.decision_date} · {record.receipt_type}</p>}</article>)}</div></section>
+</BaseLayout>

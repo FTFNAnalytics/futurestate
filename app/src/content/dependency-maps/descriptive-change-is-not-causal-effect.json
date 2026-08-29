@@ -1,0 +1,78 @@
+{
+  "id": "dependency-map-descriptive-change-is-not-causal-effect",
+  "title": "Descriptive Change Is Not A Causal Effect",
+  "slug": "descriptive-change-is-not-causal-effect",
+  "summary": "A map separating eligible panels, claim language, adverse evidence, alternative explanations, attribution, registered counterfactual design, result inspection, and causal publication.",
+  "map_type": "Evidence Gap Map",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Data Quality", "Interpretation", "Standards", "Public Trust"],
+  "map_question": "What evidence and design decisions remain between a reviewed descriptive change and attribution or causal effect?",
+  "interpretation_boundary": "Claim classification, alternative-explanation assessment, attribution, counterfactual registration, result inspection, and causal publication are separate human decisions. A stronger verb cannot be inferred from the same descriptive evidence.",
+  "source_ids": [
+    "source-phoenix-tsmc-july-2026-fab-update",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-virginia-scc-large-load-gs5-2025",
+    "source-faa-shuttle-landing-facility-license",
+    "source-doe-thacker-pass-loan-2024",
+    "source-gsa-pqc-buyers-guide-2025",
+    "source-nist-aria-pilot-evaluation-2025",
+    "source-cpuc-waymo-al2-disposition-2024"
+  ],
+  "signal_ids": [
+    "signal-aps-tsmc-service-territory-capacity-boundary",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-virginia-gs5-large-load-rate-class",
+    "signal-faa-part450-operator-transition",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-gsa-pqc-procurement-paths",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-cpuc-waymo-fared-driverless-expansion-2024"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate",
+    "local-northern-virginia-data-center-corridor",
+    "local-florida-space-coast-launch-corridor",
+    "local-nevada-lithium-processing-corridor"
+  ],
+  "evidence_gap_ids": ["gap-001", "gap-002", "gap-003", "gap-004", "gap-005", "gap-007", "gap-008", "gap-009", "gap-010", "gap-011", "gap-012", "gap-013", "gap-014", "gap-015", "gap-016"],
+  "nodes": [
+    {"id": "node-panel", "label": "Eligible longitudinal panel", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "No Phase 71 panel contains an admitted series."},
+    {"id": "node-language", "label": "Proposed claim and class", "node_type": "Constraint", "note": "The exact sentence and evidence ceiling are selected before review."},
+    {"id": "node-packet", "label": "Complete outcome-evidence packet", "node_type": "Constraint", "note": "Calculation, timing, continuity, adverse evidence, uncertainty, and reproducibility remain inspectable."},
+    {"id": "node-alternatives", "label": "Alternative-explanation assessment", "node_type": "Constraint", "note": "Ten categories are assessed without converting silence into none."},
+    {"id": "node-descriptive", "label": "Bounded descriptive result", "node_type": "Evidence Gap", "record_id": "gap-015", "note": "A reviewed level, change, target, or association may be the strongest supportable claim."},
+    {"id": "node-attribution", "label": "Contribution or attribution", "node_type": "Constraint", "note": "Intervention, actor, receiver, comparison basis, alternatives, and spillovers are explicit."},
+    {"id": "node-design", "label": "Registered counterfactual design", "node_type": "Constraint", "note": "Question, estimand, controls, assumptions, robustness, and failure rules are frozen before results."},
+    {"id": "node-inspection", "label": "Planned result inspection", "node_type": "Constraint", "note": "Execution, deviations, assumptions, uncertainty, and falsification results are reviewed."},
+    {"id": "node-causal", "label": "Bounded causal result", "node_type": "Evidence Gap", "record_id": "gap-015", "note": "A separate human decision may publish only the effect and limits supported by the registered design."}
+  ],
+  "links": [
+    {"from": "node-panel", "to": "node-language", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "All thirty-two Phase 72 packets are empty."},
+    {"from": "node-language", "to": "node-packet", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "No question, class, sentence, or calculation exists."},
+    {"from": "node-packet", "to": "node-alternatives", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "All eighty alternative-category assessments remain empty."},
+    {"from": "node-alternatives", "to": "node-descriptive", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "A descriptive publication still requires dual review and a receipt."},
+    {"from": "node-descriptive", "to": "node-attribution", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Observed change cannot transfer attribution."},
+    {"from": "node-attribution", "to": "node-design", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Every counterfactual docket remains inactive."},
+    {"from": "node-design", "to": "node-inspection", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Result inspection is prohibited before registration."},
+    {"from": "node-inspection", "to": "node-causal", "relationship": "Depends On", "confidence": "Missing Evidence", "note": "Registration alone does not authorize causal publication."}
+  ],
+  "what_this_map_supports": [
+    "Seven explicit claim classes with escalating evidence ceilings.",
+    "Visible alternative-explanation, attribution, counterfactual, uncertainty, reproducibility, and pre-registration controls.",
+    "A fail-closed boundary between design registration, result inspection, and causal publication."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not establish an eligible panel, descriptive result, target attainment, association, attribution, or causal effect.",
+    "It does not establish that an alternative explanation is absent or that an identification assumption holds.",
+    "It does not create a comparison, composite, score, league table, rank, forecast, or policy-effect claim."
+  ],
+  "next_records_needed": [
+    "A real Phase 71 panel with admitted series lineage and a proposed bounded sentence.",
+    "A complete twelve-gate evidence packet and ten-category alternative assessment.",
+    "If causal language is proposed, a registered twelve-gate design receipt issued before result inspection."
+  ]
+}

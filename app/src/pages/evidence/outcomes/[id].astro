@@ -1,0 +1,48 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-71-longitudinal-panel-outcome-comparison-registry.json";
+import claimRegistry from "../../../data/phase-72-outcome-evidence-counterfactual-design-registry.json";
+
+export function getStaticPaths() {
+  return [
+    ...registry.longitudinal_panel_shells.map((record) => ({ params: { id: record.slug }, props: { record, kind: "panel" } })),
+    ...registry.outcome_claim_dockets.map((record) => ({ params: { id: record.slug }, props: { record, kind: "outcome" } }))
+  ];
+}
+
+const { record, kind } = Astro.props as { record: any; kind: "panel" | "outcome" };
+const isPanel = kind === "panel";
+const panels = isPanel ? [] : registry.longitudinal_panel_shells.filter((item) => item.cohort_id === record.cohort_id);
+const comparison = isPanel ? null : registry.comparison_embargo_registers.find((item) => item.outcome_claim_docket_id === record.outcome_claim_docket_id);
+const nextPacket = isPanel ? claimRegistry.outcome_evidence_packets.find((item) => item.panel_id === record.panel_id) : null;
+const nextDesign = !isPanel ? claimRegistry.counterfactual_design_dockets.find((item) => item.outcome_claim_docket_id === record.outcome_claim_docket_id) : null;
+const [briefings, dependencyMaps, signals, sources] = await Promise.all([getCollection("briefings"), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")]);
+const briefingById = new Map(briefings.map((item) => [item.data.id, item]));
+const mapById = new Map(dependencyMaps.map((item) => [item.data.id, item]));
+const signalById = new Map(signals.map((item) => [item.data.id, item]));
+const sourceById = new Map(sources.map((item) => [item.data.id, item]));
+const title = isPanel ? `${record.panel_id}: ${record.measure_label}` : `${record.outcome_claim_docket_id}: ${record.named_entity}`;
+---
+
+<BaseLayout title={`${title} | FTFN`} description={isPanel ? `${record.named_entity}: empty longitudinal panel shell with no admitted series or values.` : `${record.named_entity}: not-ready outcome-claim docket and active comparison embargo.`} robots="index, follow">
+  <section class="page-section"><div class="eyebrow">{isPanel ? "Longitudinal Panel Shell" : "Outcome Claim Docket"}</div><h1 class="page-title">{title}</h1><p class="lede">{record.named_entity}</p><div class="meta-row"><MetaPill label={isPanel ? record.panel_state : record.docket_state} tone="review" /><MetaPill label={record.cohort_id} /><MetaPill label="0 values" tone="review" /><MetaPill label="0 claims" tone="review" /><MetaPill label="0 rankings" tone="review" /></div></section>
+
+  {isPanel ? (
+    <>
+      <section class="page-section"><div class="status-panel"><article class="status-item"><h2>Measure</h2><p>{record.measure_label}</p></article><article class="status-item"><h2>Specification</h2><p><a href={`/evidence/measurements/${record.specification_slug}/`}>{record.specification_id}</a></p></article><article class="status-item"><h2>Admission state</h2><p>{record.series_admission_state}</p></article></div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Panel Definition</div><h2>Exact contracts before any point can appear.</h2></div></div><div class="grid"><article class="record-card"><h3>Numerator</h3><p>{record.numerator_contract}</p><h3>Denominator</h3><p>{record.denominator_contract}</p><h3>Scope</h3><p>{record.scope_contract}</p></article><article class="record-card"><h3>Unit</h3><p>{record.unit_contract}</p><h3>Period</h3><p>{record.period_contract}</p></article><article class="record-card"><h3>Method</h3><p>{record.method_contract}</p><h3>Exceptions</h3><p>{record.exception_contract}</p></article></div></section>
+      <section class="page-section"><div class="grid"><article class="record-card"><h2>Empty series state</h2><ul><li>Admitted series: none</li><li>Accepted observations: 0</li><li>Series points: 0</li><li>Periods: 0</li><li>Values: 0</li></ul></article><article class="record-card"><h2>Continuity state</h2><ul><li>Revisions: 0</li><li>Breaks: 0</li><li>Uncertainty notes: 0</li><li>Minimum periods: not decided</li></ul></article><article class="record-card"><h2>Interpretation state</h2><ul><li>Direction: none</li><li>Magnitude: none</li><li>Trend: none</li><li>Outcome claims: 0</li></ul></article><article class="record-card"><h2>Phase 72 destination</h2><p>{nextPacket ? <a href={`/evidence/claims/${nextPacket.slug}/`}>{nextPacket.evidence_packet_id}: empty claim packet</a> : "No evidence-packet contract"}</p></article></div></section>
+    </>
+  ) : (
+    <>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Outcome Inference</div><h2>Ten outcome gates remain Not Ready.</h2></div></div><div class="source-list">{record.outcome_inference_checks.map((check: any) => <article class="source-row"><h3>{check.label}</h3><p>{check.basis}</p><MetaPill label={check.decision_state} tone="review" /></article>)}</div></section>
+      <section class="page-section"><div class="grid"><article class="record-card"><h2>Connected panel shells</h2><ul>{panels.map((item) => <li><a href={`/evidence/outcomes/${item.slug}/`}>{item.panel_id}: {item.measure_label}</a></li>)}</ul></article><article class="record-card"><h2>Empty claim state</h2><ul><li>Proposed claim: none</li><li>Supporting panels: 0</li><li>Adverse observations: 0</li><li>Alternatives: 0</li><li>Uncertainty: none</li><li>Attribution: none</li></ul></article><article class="record-card"><h2>Decision state</h2><ul><li>Reviewers: none</li><li>Receipt: none</li><li>Propagation: not started</li><li>Causal claim: prohibited</li></ul></article><article class="record-card"><h2>Phase 72 destination</h2><p>{nextDesign ? <a href={`/evidence/claims/${nextDesign.slug}/`}>{nextDesign.counterfactual_docket_id}: inactive design docket</a> : "No design contract"}</p></article></div></section>
+      <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Comparison Embargo</div><h2>Ten comparison gates remain Not Ready.</h2></div></div><p class="lede">{comparison?.comparison_state}. {comparison?.embargo_reason}</p><div class="source-list">{comparison?.comparison_checks.map((check: any) => <article class="source-row"><h3>{check.label}</h3><p>{check.basis}</p><MetaPill label={check.decision_state} tone="review" /></article>)}</div></section>
+    </>
+  )}
+
+  <section class="page-section"><div class="grid"><article class="record-card"><h2>Connected briefings</h2><ul>{[record.canonical_briefing_id, "briefing-longitudinal-panel-desk-001", "briefing-outcome-claim-comparison-protocol-001"].map((id: string) => { const briefing = briefingById.get(id); return <li>{briefing ? <a href={`/briefings/${briefing.data.slug}/`}>{briefing.data.title}</a> : id}</li>; })}</ul></article><article class="record-card"><h2>Connected maps</h2><ul>{["dependency-map-reviewed-observation-is-not-admitted-series", "dependency-map-admitted-series-is-not-causal-outcome"].map((id: string) => { const map = mapById.get(id); return <li>{map ? <a href={`/atlas/dependency-maps/${map.data.slug}/`}>{map.data.title}</a> : id}</li>; })}</ul></article><article class="record-card"><h2>Connected evidence</h2><ul>{record.source_ids.map((id: string) => { const source = sourceById.get(id); return <li>{source ? <a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a> : id}</li>; })}{record.signal_ids.map((id: string) => { const signal = signalById.get(id); return <li>{signal ? <a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a> : id}</li>; })}</ul></article></div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Boundary</div><h2>{isPanel ? "A panel shell is not an admitted series or trend." : "An outcome docket is not an outcome claim or causal result."}</h2><p>No admitted series, point, value, direction, magnitude, claim, comparison, score, ranking, reviewer decision, or receipt is recorded on this page.</p></div></section>
+</BaseLayout>

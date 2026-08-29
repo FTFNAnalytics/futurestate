@@ -12,8 +12,17 @@
     "NCA5 identifies transportation climate risk across planning, design, operations, maintenance, workforce, and technology.",
     "EPA distinguishes national inventory and threshold-based facility reporting, preventing incompatible emissions comparisons."
   ],
-  "primary_topics": ["Climate", "Discovery Technologies", "Water", "Mobility", "Agriculture and Bioeconomy"],
-  "topic_ids": ["topic-climate", "topic-discovery-technologies"],
+  "primary_topics": [
+    "Climate",
+    "Discovery Technologies",
+    "Water",
+    "Mobility",
+    "Agriculture and Bioeconomy"
+  ],
+  "topic_ids": [
+    "topic-climate",
+    "topic-discovery-technologies"
+  ],
   "local_system_ids": [],
   "signal_ids": [
     "signal-sample-001",
@@ -34,11 +43,32 @@
     "source-epa-ghg-inventory-reporting-boundary"
   ],
   "organization_ids": [],
-  "technology_ids": ["technology-lidar"],
-  "briefing_ids": ["briefing-stack-watch-006-thin-topic-conversion"],
-  "dependency_map_ids": ["dependency-map-observation-data-is-not-local-decision"],
-  "research_collection_ids": ["research-collection-thin-topic-authority-foundations-2023-2026"],
-  "evidence_gap_ids": ["gap-006"],
+  "technology_ids": [
+    "technology-lidar"
+  ],
+  "briefing_ids": [
+    "briefing-stack-watch-006-thin-topic-conversion",
+    "briefing-frontier-topic-001-agriculture-bioeconomy",
+    "briefing-frontier-topic-002-discovery-technologies",
+    "briefing-frontier-topic-003-quantum",
+    "briefing-frontier-topic-004-climate",
+    "briefing-qualification-method-003-compatible-recurring-operation",
+    "briefing-evidence-return-control-room-001"
+  ],
+  "dependency_map_ids": [
+    "dependency-map-observation-data-is-not-local-decision",
+    "dependency-map-artifact-return-to-reader-state",
+    "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+  ],
+  "research_collection_ids": [
+    "research-collection-thin-topic-authority-foundations-2023-2026",
+    "research-collection-phase65-named-project-delivery",
+    "research-collection-phase65-institutional-acceptance",
+    "research-collection-phase65-undercovered-frontier-systems"
+  ],
+  "evidence_gap_ids": [
+    "gap-006"
+  ],
   "dependency_stack": [
     {
       "stage": "Official Observation",
@@ -70,6 +100,7 @@
     "product-specific coverage, calibration, version, quality, resolution, and revision records.",
     "regional models, ground truth, assumptions, uncertainty, and validation.",
     "named local assets, hazards, exposure, vulnerability, decision authority, plans, budgets, permits, procurements, and construction.",
-    "operating changes, service, losses, resilience, yield, water, safety, and other measured outcomes."
+    "operating changes, service, losses, resilience, yield, water, safety, and other measured outcomes.",
+    "A real same-entity artifact returned through its Phase 67 qualification packet with authority, scope, date, method, denominator or not-applicable basis, exceptions, correction trail, decision receipt, and complete propagation."
   ]
 }

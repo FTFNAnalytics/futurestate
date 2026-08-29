@@ -35,11 +35,11 @@ check(ledger.post_batch_closure_counts.Closed === 1 && ledger.post_batch_closure
 const torontoSignal = await readFile(join(contentRoot, "signals", "signal-toronto-24-254930-community-council-recommendation.mdx"), "utf8");
 const darpaSignal = await readFile(join(contentRoot, "signals", "signal-darpa-lift-challenge-2026-scheduled-field-trial.mdx"), "utf8");
 check(/record_status: "Published"/.test(torontoSignal) && /adopted item 2026\.SC33\.9 without amendments and without debate/.test(torontoSignal), "Toronto signal must be Published at the bounded Council-adoption stage.");
-check(/record_status: "In Review"/.test(darpaSignal) && /does not publish a final results table/.test(darpaSignal), "DARPA signal must remain In Review pending official measured results.");
+check(/record_status: "Published"/.test(darpaSignal) && /official measured competition result/.test(darpaSignal), "The historical Phase 57Z hold must permit the later Phase 60B DARPA result decision.");
 const torontoSource = await readJson(join(contentRoot, "sources", "source-toronto-2026-sc33-9-item-history.json"));
 const darpaSource = await readJson(join(contentRoot, "sources", "source-darpa-lift-challenge-2026.json"));
 check(torontoSource.last_checked_date === "2026-08-10" && /City Council adoption/.test(torontoSource.known_limitations), "Toronto source profile must record the August 10 post-Council check.");
-check(darpaSource.last_checked_date >= "2026-08-10" && /final results table/.test(darpaSource.known_limitations), "DARPA source profile must retain the August 10-or-later official-results recheck.");
+check(darpaSource.last_checked_date >= "2026-08-23" && /measured objective-category ratios/.test(darpaSource.known_limitations), "DARPA source profile must reflect the later official-results decision.");
 
 const collection = await readJson(join(contentRoot, "research-collections", `${collectionSlug}.json`));
 check(collection.id === collectionId && collection.document_ids.length === 11 && new Set(collection.document_ids).size === 11 && /fourteen-file/.test(collection.download_note), "Phase 57Z collection must include eleven documents and declare a fourteen-file archive.");
@@ -73,4 +73,4 @@ if (errors.length) {
   for (const error of errors) console.error(`- ${error}`);
   process.exit(1);
 }
-console.log("Phase 57Z assertions passed: 11 Published evidence-return decisions, 1 bounded Toronto signal promotion, DARPA held for official results, 9 of 9 inherited holds reviewed with 0 resolved, 0 duplicate holds, and unchanged outcome and closure ledgers.");
+console.log("Phase 57Z assertions passed as a historical checkpoint: 11 evidence-return decisions, 1 bounded Toronto promotion, the original DARPA hold preserved, and the later Phase 60B result promotion allowed without rewriting the nine inherited holds or closure ledger.");

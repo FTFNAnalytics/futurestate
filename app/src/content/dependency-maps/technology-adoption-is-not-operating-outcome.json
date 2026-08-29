@@ -1,0 +1,208 @@
+{
+  "id": "dependency-map-technology-adoption-is-not-operating-outcome",
+  "title": "Technology Adoption Is Not An Operating Outcome",
+  "slug": "technology-adoption-is-not-operating-outcome",
+  "summary": "A five-rail technology-readiness map separating standards, policy, awards, testing, and authorization from deployed, accepted, repeated, and measured operation.",
+  "map_type": "Technology Readiness Map",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": [
+    "Enabling Infrastructure",
+    "Frontier Domains",
+    "Human Systems"
+  ],
+  "constraint_tags": [
+    "Standards",
+    "Certification",
+    "Cybersecurity",
+    "Manufacturing",
+    "Materials",
+    "Data Quality",
+    "Public Trust"
+  ],
+  "map_question": "Which evidence stages separate upstream technology activity from accepted and measured operation across five adoption rails?",
+  "interpretation_boundary": "The map provides a common stage vocabulary, not a cross-technology ranking or claim of equal maturity, value, safety, performance, or adoption.",
+  "source_ids": [
+    "source-darpa-lift-challenge-2026"
+  ],
+  "signal_ids": [
+    "signal-federal-pqc-migration-plans-and-deadlines",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-faa-2026-evtol-integration-pilot-selections",
+    "signal-nist-napmp-advanced-packaging-final-awards",
+    "signal-doe-2026-critical-minerals-nineteen-project-selections"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [],
+  "evidence_gap_ids": [
+    "gap-003",
+    "gap-007",
+    "gap-009",
+    "gap-010",
+    "gap-014",
+    "gap-015",
+    "gap-016"
+  ],
+  "nodes": [
+    {
+      "id": "node-upstream",
+      "label": "Policy, standards, selection, award, or test",
+      "node_type": "Constraint",
+      "note": "A real upstream stage that defines direction, authority, resources, or learning without establishing adoption."
+    },
+    {
+      "id": "node-pqc",
+      "label": "Post-quantum migration",
+      "node_type": "Topic",
+      "note": "Needs institution-specific inventory, procurement, validation, cutover, acceptance, rollback, and legacy retirement."
+    },
+    {
+      "id": "node-ai",
+      "label": "AI assurance",
+      "node_type": "Topic",
+      "note": "Needs named system controls, evaluation, authorization, monitoring, incidents, independent review, and mission outcomes."
+    },
+    {
+      "id": "node-autonomy",
+      "label": "Autonomy and eVTOL",
+      "node_type": "Topic",
+      "note": "Needs certification, local authority, service exposure, safety, availability, accessibility, cost, and repeat outcomes."
+    },
+    {
+      "id": "node-manufacturing",
+      "label": "Advanced manufacturing",
+      "node_type": "Topic",
+      "note": "Needs installed equipment, qualification, accepted product, workforce outcomes, yield, downtime, rework, and repeat output."
+    },
+    {
+      "id": "node-minerals",
+      "label": "Critical minerals",
+      "node_type": "Topic",
+      "note": "Needs facility construction, commissioning, product specifications, qualification, offtake, recycling, and recurring supply."
+    },
+    {
+      "id": "node-accepted",
+      "label": "Accepted deployment or operation",
+      "node_type": "Constraint",
+      "note": "A named authority or receiving system accepts a defined capability, asset, service, product, or transition."
+    },
+    {
+      "id": "node-measured",
+      "label": "Compatible repeated outcome",
+      "node_type": "Evidence Gap",
+      "record_id": "gap-016",
+      "note": "Stable identities, definitions, periods, denominators, methods, and acceptance support bounded outcome interpretation."
+    },
+    {
+      "id": "node-named-adoption-cases",
+      "label": "Three named adoption cases",
+      "node_type": "Evidence Gap",
+      "note": "Phase 61 follows GSA PQC acquisition, NIST ARIA assurance, and Waymo California service into their next named operating artifact."
+    }
+  ],
+  "links": [
+    {
+      "from": "node-upstream",
+      "to": "node-pqc",
+      "relationship": "Related Technology",
+      "confidence": "Supported",
+      "note": "Standards and deadlines establish a migration rail without completing it."
+    },
+    {
+      "from": "node-upstream",
+      "to": "node-ai",
+      "relationship": "Related Technology",
+      "confidence": "Supported",
+      "note": "Frameworks and pilots create assurance methods without proving operating control effectiveness."
+    },
+    {
+      "from": "node-upstream",
+      "to": "node-autonomy",
+      "relationship": "Related Technology",
+      "confidence": "Supported",
+      "note": "Policy, tests, and pilot selection remain distinct from persistent service."
+    },
+    {
+      "from": "node-upstream",
+      "to": "node-manufacturing",
+      "relationship": "Related Technology",
+      "confidence": "Supported",
+      "note": "Roadmaps, awards, and facilities remain upstream of accepted repeat output."
+    },
+    {
+      "from": "node-upstream",
+      "to": "node-minerals",
+      "relationship": "Related Technology",
+      "confidence": "Supported",
+      "note": "Exposure, programs, and awards remain upstream of qualified material supply."
+    },
+    {
+      "from": "node-pqc",
+      "to": "node-accepted",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Completed named-system migrations and accepted transitions remain sparse."
+    },
+    {
+      "from": "node-ai",
+      "to": "node-accepted",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "Use cases and pilots exist while comparable assurance and outcome evidence remains incomplete."
+    },
+    {
+      "from": "node-autonomy",
+      "to": "node-accepted",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "Some service authority exists, but persistent exposure and outcome reporting remain uneven."
+    },
+    {
+      "from": "node-manufacturing",
+      "to": "node-accepted",
+      "relationship": "Limited By",
+      "confidence": "Partial",
+      "note": "Named outputs exist for bounded entities without a common or complete production rail."
+    },
+    {
+      "from": "node-minerals",
+      "to": "node-accepted",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Selections and projects remain upstream of qualified, accepted, recurring supply."
+    },
+    {
+      "from": "node-accepted",
+      "to": "node-measured",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Acceptance is a prerequisite but still does not establish durable or comparable outcome performance."
+    },
+    {
+      "from": "node-named-adoption-cases",
+      "to": "node-accepted",
+      "relationship": "Evidenced By",
+      "confidence": "Supported",
+      "note": "Named institutional and operator files expose the exact evidence needed to move from upstream activity toward accepted operation."
+    }
+  ],
+  "what_this_map_supports": [
+    "Five technology rails can use a common separation between upstream activity, accepted deployment, and measured outcomes.",
+    "The most valuable next evidence is attached to named institutions, systems, facilities, operators, products, and receiving authorities.",
+    "Adoption dossiers should preserve exact stage and stop-rule language.",
+    "DARPA receipt receipt-58-darpa-2026-08-11-no-material-change shows that an elapsed field event can receive a completed no-change decision while measured results and transition evidence remain open.",
+    "Phase 61 adds named GSA PQC, NIST ARIA, and Waymo California cases with exact downstream artifacts and stop rules.",
+    "Phase 60B receipt receipt-60-darpa-2026-08-23-results closes the measured competition-result gate while leaving maturation, certification, production, service, recurring operation, and outcomes open."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not rank technologies or create readiness, safety, performance, risk, or value scores.",
+    "It does not imply equal evidence depth or equivalent deployment conditions.",
+    "It does not turn policy, standards, awards, tests, permits, or authorizations into operating outcomes."
+  ],
+  "next_records_needed": [
+    "Named institutional PQC inventories, procurements, tests, cutovers, and acceptances.",
+    "Named AI system authorizations, monitoring, incidents, independent review, and mission outcomes.",
+    "Stable operator-level autonomy and eVTOL service, exposure, safety, accessibility, and cost records, including DARPA's dated Lift Challenge measured-results artifact.",
+    "Facility-level manufacturing and critical-minerals qualification, accepted output, and repeated performance."
+  ]
+}

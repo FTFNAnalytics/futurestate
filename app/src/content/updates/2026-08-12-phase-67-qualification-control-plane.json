@@ -1,0 +1,39 @@
+{
+  "id": "update-2026-08-12-phase-67-qualification-control-plane",
+  "effective_date": "2026-08-12",
+  "entry_type": "Signal Repair",
+  "title": "Phase 67 publishes the qualification and evidence-return control plane",
+  "summary": "Thirty-two named-file qualification packets, thirteen Evidence Cycle return envelopes, thirteen Published briefings, two Published dependency maps, and two public JSON contracts make downstream evidence acquisition inspectable without precreating a receipt or changing an evidence state.",
+  "affected_record_ids": [
+    "briefing-qualification-playbook-001-tsmc-arizona",
+    "briefing-qualification-playbook-002-toronto-24-254930",
+    "briefing-qualification-playbook-003-northern-virginia-large-load",
+    "briefing-qualification-playbook-004-space-coast-authority",
+    "briefing-qualification-playbook-005-nevada-lithium",
+    "briefing-qualification-playbook-006-gsa-pqc",
+    "briefing-qualification-playbook-007-nist-aria",
+    "briefing-qualification-playbook-008-waymo-california",
+    "briefing-qualification-method-001-validation-evidence",
+    "briefing-qualification-method-002-receiving-system-acceptance",
+    "briefing-qualification-method-003-compatible-recurring-operation",
+    "briefing-qualification-method-004-comparable-outcome-series",
+    "briefing-evidence-return-control-room-001",
+    "dependency-map-artifact-return-to-reader-state",
+    "dependency-map-validation-acceptance-recurrence-outcome-compatibility"
+  ],
+  "related_paths": [
+    "/evidence/qualification/",
+    "/briefings/",
+    "/atlas/dependency-maps/",
+    "/data/"
+  ],
+  "evidence_note": "Phase 67 serializes existing Phase 60-66 requirements into public-safe packet and envelope contracts. Synthetic fixtures test control behavior and are excluded from evidence counts.",
+  "receipt_type": "No Material Change",
+  "materiality": "No record-state change",
+  "source_checked_date": "2026-08-12",
+  "decision_date": "2026-08-12",
+  "prior_state": "Phase 66 named exact downstream artifacts but did not expose one executable packet and return-envelope contract for every open question and cycle gate.",
+  "current_state": "Every downstream question and Evidence Cycle gate now has an inspectable public contract, exact propagation requirements, and deterministic rule tests; all future receipts remain empty.",
+  "publication_effect": "Adds 45 public contract records, 46 qualification routes, 13 Published briefings, two Published dependency maps, two public JSON exports, one update, and no source, signal, research, receipt, event, gate, matrix, score, ranking, or operating-outcome change.",
+  "work_package": "docs/work-packages/phase-67-qualification-packet-evidence-return-control-plane.md"
+}

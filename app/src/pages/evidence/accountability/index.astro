@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-75-decision-accountability-realized-impact-registry.json";
+
+const decisions = registry.decision_accountability_dossiers;
+const ledgers = registry.implementation_commitment_realization_ledgers;
+const audits = registry.post_decision_audit_remediation_registers;
+---
+
+<BaseLayout title="Decision Accountability And Realized Impact | FTFN" description="Eight inactive decision-accountability dossiers, thirty-two implementation-and-realization ledgers, and eight post-decision audit and remediation registers.">
+  <section class="page-section hero" data-accountability-registry><div class="hero__copy"><div class="eyebrow">FTFN / Decision Accountability</div><h1 class="page-title">A recommendation is not authorization. A delivered output is not realized benefit.</h1><p class="lede">Phase 75 separates institutional choice, decision ownership, authority, implementation commitments, resources, capacity, safeguards, outputs, benefits, harms, distribution, counterfactual audit, sunset, reversal, and remediation.</p><div class="meta-row"><MetaPill label="8 inactive decisions" tone="possibility" /><MetaPill label="32 inactive ledgers" /><MetaPill label="8 inactive audits" /><MetaPill label="0 authorizations" tone="review" /><MetaPill label="0 impacts" tone="review" /></div></div></section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Decision Accountability</div><h2>Eight institutional decision records remain closed.</h2></div><a class="inline-link" href="/briefings/decision-accountability-desk-001/">Read the accountability method</a></div>
+    <div class="grid">{decisions.map((record) => <article class="record-card"><div class="meta-row"><MetaPill label={record.accountability_state} tone="review" /><MetaPill label={record.cohort_id} /></div><h3><a href={"/evidence/accountability/" + record.slug + "/"}>{record.named_entity}</a></h3><p>Sixteen gates preserve ownership, authority, options, rationale, conflicts, dissent, conditions, sunset, and receipts.</p></article>)}</div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Implementation And Realization</div><h2>Thirty-two measure-level ledgers remain inactive.</h2></div><a class="inline-link" href="/briefings/implementation-commitment-ledger-001/">Read the commitment method</a></div>
+    <div class="source-list">{ledgers.map((record) => <article class="source-row"><div><h3><a href={"/evidence/accountability/" + record.slug + "/"}>{record.implementation_commitment_realization_ledger_id}: {record.measure_label}</a></h3><p>{record.named_entity} · no commitment, baseline, resource, milestone, output, benefit, harm, distributional finding, audit, or receipt.</p></div><MetaPill label={record.commitment_state} tone="review" /></article>)}</div>
+  </section>
+
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Post-Decision Control</div><h2>Twelve audit gates and twelve triggers remain inactive.</h2></div><a class="inline-link" href="/briefings/reversal-remediation-desk-001/">Read the reversal method</a></div><div class="grid">{audits.map((record) => <article class="record-card"><h3>{record.post_decision_audit_remediation_register_id}: {record.named_entity}</h3><p>{record.audit_state}; ten remediation classes remain unavailable.</p><MetaPill label={record.audit_decision} tone="review" /></article>)}</div></section>
+
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Public Contract</div><h2>Inspect the missing decision, implementation, and impact state.</h2><p>The export publishes accountability, commitment, baseline, safeguard, realization, audit, sunset, reversal, and remediation controls. It contains no authorized decision, implementation record, realized impact, score, rank, or stage change.</p></div><article class="record-card"><a class="inline-link" href="/data/decision-accountability-realized-impact.json">Accountability and impact JSON</a></article></section>
+</BaseLayout>

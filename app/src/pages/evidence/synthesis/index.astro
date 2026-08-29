@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-74-evidence-synthesis-challenge-decision-translation-registry.json";
+
+const inputs = registry.result_synthesis_input_dockets;
+const syntheses = registry.synthesis_contradiction_dossiers;
+const challenges = registry.external_challenge_response_dockets;
+const translations = registry.decision_translation_reevaluation_registers;
+const cohorts = [...new Set(inputs.map((record) => record.cohort_id))].sort();
+---
+
+<BaseLayout title="Evidence Synthesis And Decision Translation | FTFN" description="Thirty-two inactive synthesis inputs and eight each of synthesis, contradiction, challenge, decision-translation, and reevaluation controls.">
+  <section class="page-section hero"><div class="hero__copy"><div class="eyebrow">FTFN / Evidence Synthesis</div><h1 class="page-title">A result is not a body of evidence. Evidence does not choose the decision.</h1><p class="lede">Phase 74 separates result eligibility, compatibility, independence, triangulation, contradiction review, evidence grades, external challenge, decision options, recommendation, authority, sunset, and reevaluation.</p><div class="meta-row"><MetaPill label="32 inactive inputs" tone="possibility" /><MetaPill label="8 inactive syntheses" /><MetaPill label="8 inactive challenges" /><MetaPill label="8 inactive translations" /><MetaPill label="0 evidence grades" tone="review" /><MetaPill label="0 recommendations" tone="review" /></div></div></section>
+
+  <section class="page-section"><div class="status-panel"><article class="status-item"><h2>Fourteen input gates</h2><p>Identity, scope, measure, intervention, time, design, provenance, uncertainty, deviations, robustness, adverse evidence, replication, claim, and review precede synthesis.</p></article><article class="status-item"><h2>Fourteen synthesis gates</h2><p>Eligibility, independence, compatibility, design diversity, direction, magnitude, uncertainty, heterogeneity, harms, bias, triangulation, grade, language, and review remain separate.</p></article><article class="status-item"><h2>Challenge and translation</h2><p>Twelve challenge gates, fourteen decision gates, and ten reevaluation triggers prevent a synthesis from silently becoming policy.</p></article></div></section>
+
+  <section class="page-section" data-synthesis-registry>
+    <div class="section-heading"><div><div class="eyebrow">Result Inputs</div><h2>Search thirty-two inactive synthesis inputs.</h2></div><a class="inline-link" href="/briefings/evidence-synthesis-desk-001/">Read the synthesis method</a></div>
+    <form class="filter-panel" id="synthesis-filters"><label class="filter-panel__search">Search<input type="search" name="search" placeholder="Entity, cohort, measure or input" /></label><label>Cohort<select name="cohort"><option value="">All cohorts</option>{cohorts.map((cohort) => <option value={cohort}>{cohort}</option>)}</select></label><button class="filter-panel__reset" type="reset">Reset</button></form>
+    <div class="grid" id="synthesis-records">{inputs.map((record) => <article class="record-card" data-synthesis-record data-cohort={record.cohort_id} data-search={`${record.result_synthesis_input_docket_id} ${record.analysis_execution_docket_id} ${record.cohort_id} ${record.named_entity} ${record.measure_label}`.toLowerCase()}><div class="meta-row"><MetaPill label={record.result_synthesis_input_docket_id} tone="possibility" /><MetaPill label={record.input_state} tone="review" /></div><h3><a href={`/evidence/synthesis/${record.slug}/`}>{record.measure_label}</a></h3><p>{record.named_entity}</p><div class="meta-row"><MetaPill label="14 inactive gates" /><MetaPill label="no adjudicated result" /><MetaPill label="not eligible" /></div></article>)}</div>
+  </section>
+
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Synthesis And Translation</div><h2>Eight body-level dossiers remain Inactive.</h2></div><a class="inline-link" href="/briefings/challenge-decision-translation-desk-001/">Read the decision boundary</a></div><div class="grid">{syntheses.map((record, index) => <article class="record-card"><div class="meta-row"><MetaPill label={record.synthesis_contradiction_dossier_id} tone="possibility" /><MetaPill label={record.synthesis_decision} tone="review" /></div><h3><a href={`/evidence/synthesis/${record.slug}/`}>{record.named_entity}</a></h3><p>{record.synthesis_state}</p><div class="meta-row"><MetaPill label={`${record.contradiction_register.length} unassessed contradictions`} /><MetaPill label={challenges[index].challenge_decision} /><MetaPill label={translations[index].translation_decision} /></div></article>)}</div></section>
+
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Public Contract</div><h2>Inspect the missing synthesis and decision state.</h2><p>The export publishes input, synthesis, contradiction, challenge, translation, and reevaluation controls. It contains no adjudicated result, evidence grade, body-level claim, challenge decision, option, recommendation, authority, sunset, reviewer, or receipt.</p></div><article class="record-card"><a class="inline-link" href="/data/evidence-synthesis-challenge-decision-translation.json">Synthesis and decision JSON</a></article></section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    const form = document.querySelector('#synthesis-filters'); const records = [...document.querySelectorAll('[data-synthesis-record]')]; if (!form) return;
+    const apply = () => { const data = new FormData(form); const search = String(data.get('search') || '').trim().toLowerCase(); const cohort = String(data.get('cohort') || ''); records.forEach((record) => { record.hidden = Boolean((search && !record.dataset.search.includes(search)) || (cohort && record.dataset.cohort !== cohort)); }); };
+    form.addEventListener('input', apply); form.addEventListener('change', apply); form.addEventListener('reset', () => requestAnimationFrame(apply));
+  })();
+</script>

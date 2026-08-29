@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "phase": "58",
-  "captured_date": "2026-08-11",
+  "captured_date": "2026-08-23",
   "publication_gate": "A receipt becomes public only after human review, static-content serialization, release validation, and a Git commit. Database state cannot publish directly.",
   "receipt_types": [
     {
@@ -54,6 +54,40 @@
       "evidence_boundary": "This decision is limited to the canonical DARPA challenge page and official DARPA surfaces reviewed on August 11. It does not establish that results do not exist, were not announced, or will not be published.",
       "publication_effect": "Publish the dated no-material-change receipt and source freshness update; do not promote, duplicate, correct, archive, or close the signal.",
       "next_check_date": "2026-08-14"
+    },
+    {
+      "receipt_id": "receipt-60-darpa-2026-08-23-results",
+      "receipt_type": "Change Note",
+      "source_checked_date": "2026-08-23",
+      "decision_date": "2026-08-23",
+      "affected_record_ids": [
+        "source-darpa-lift-challenge-2026",
+        "signal-darpa-lift-challenge-2026-scheduled-field-trial"
+      ],
+      "prior_state": "The DARPA Lift Challenge signal was In Review at the named-performer and dated-field-trial stage pending an official measured-results artifact.",
+      "current_state": "The signal is Published at the official measured competition-result and prize-decision stage.",
+      "bounded_finding": "DARPA's August 11 official results identify AVIDrone at 3.84:1, MTech Operations at 3.64:1, and Xtreme Aerial Concepts at 3.45:1 in the objective category and publish the objective and subjective prize decisions.",
+      "evidence_boundary": "The result establishes official competition measurements, winners, and prizes. It does not establish achievement of the 4:1 objective, certified service, production scale, recurring operation, military or commercial deployment, or a comparable operating outcome; it cannot transfer to the Waymo California named file.",
+      "publication_effect": "Promote the existing DARPA signal to Published at the measured-result stage and propagate the bounded result through its assigned reader surfaces without creating a new source, signal, named-file event, score, ranking, or operating-outcome claim.",
+      "next_check_date": "2026-09-23"
+    },
+    {
+      "receipt_id": "receipt-60-slf-2026-08-15-no-material-change",
+      "receipt_type": "No Material Change",
+      "source_checked_date": "2026-08-15",
+      "decision_date": "2026-08-15",
+      "affected_record_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "signal-shuttle-landing-facility-license-status-watch",
+        "gap-013",
+        "61-PROJECT-SPACE-COAST-AUTHORITY"
+      ],
+      "prior_state": "The Shuttle Landing Facility licence signal was In Review because the public FAA record displayed January 15, 2026 as the expiration date without a later formal disposition.",
+      "current_state": "The signal and Space Coast named file remain In Review and unchanged; the August 15 source check is recorded as a bounded dated hold.",
+      "bounded_finding": "The FAA Shuttle Landing Facility page, June 15 spaceport inventory, and linked LRSO 18-018 licence reviewed on August 15 still display the January 15, 2026 expiration or the 2021 revision and do not supply a later formal renewal, replacement, lapse, surrender, or other disposition.",
+      "evidence_boundary": "The checked FAA surfaces do not establish that a disposition does not exist. NASA facility management, infrastructure, environmental review, operator applications, missions, and utilization cannot substitute for the formal site-licence disposition.",
+      "publication_effect": "Publish the dated no-material-change receipt, retain the signal and named file at their prior stages, and set a bounded recheck without inferring renewal, lapse, current authorization, operation, closure, or utilization.",
+      "next_check_date": "2026-09-15"
     }
   ]
 }

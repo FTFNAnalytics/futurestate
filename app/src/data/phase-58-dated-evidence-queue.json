@@ -17,17 +17,17 @@
       "queue_id": "58-QUEUE-DARPA-RESULTS",
       "target": "DARPA Lift Challenge official measured results",
       "underlying_signal_id": "signal-darpa-lift-challenge-2026-scheduled-field-trial",
-      "underlying_signal_status": "In Review",
+      "underlying_signal_status": "Published",
       "source_id": "source-darpa-lift-challenge-2026",
-      "source_url": "https://www.darpa.mil/research/challenges/lift",
+      "source_url": "https://www.darpa.mil/news/2026/lift-challenge-awards",
       "exact_next_artifact": "A dated DARPA final-results artifact identifying measured team performance, winners, and prize decisions.",
-      "last_checked_date": "2026-08-11",
-      "next_check_date": "2026-08-14",
-      "review_cadence_days": 3,
-      "current_decision": "no_material_change",
-      "latest_receipt_id": "receipt-58-darpa-2026-08-11-no-material-change",
-      "bounded_finding": "The canonical DARPA challenge page links an event guide and scoreboard surface, but the reviewed DARPA page does not publish a final results table, winner, measured scores, or prize decisions.",
-      "stop_rule": "Do not promote the signal from an event guide, livestream, ceremony, unofficial scoreboard, team claim, or absence of a DARPA release."
+      "last_checked_date": "2026-08-23",
+      "next_check_date": "2026-09-23",
+      "review_cadence_days": 30,
+      "current_decision": "material_change",
+      "latest_receipt_id": "receipt-60-darpa-2026-08-23-results",
+      "bounded_finding": "DARPA's official results publish measured objective-category ratios, winners, and prize decisions; no official score reached the 4:1 target.",
+      "stop_rule": "Do not extend the measured competition result into certification, production, procurement, service, recurring operation, operating outcomes, or the unrelated Waymo California named file without separate exact evidence."
     },
     {
       "queue_id": "58-QUEUE-AMTRAK-PIDS-CLOSEOUT",
@@ -173,5 +173,6 @@
       "bounded_finding": "The exact recommendation record remains controlling and does not yet establish an accepted enterprise baseline satisfying the recommendation.",
       "stop_rule": "Do not use an adjacent GAO recommendation, agency plan, or partial baseline to close this exact recommendation."
     }
-  ]
+  ],
+  "last_operated_date": "2026-08-23"
 }

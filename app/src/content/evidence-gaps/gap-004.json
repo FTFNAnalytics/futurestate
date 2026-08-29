@@ -10,10 +10,10 @@
   "constraint_tags": ["Infrastructure", "Regulation", "Capital", "Labor"],
   "question": "Which municipal systems can convert housing targets into completed units?",
   "why_it_matters": "Provincial targets and housing demand matter only if municipal planning, servicing, approvals, infrastructure, labor, and financing can convert them into occupied homes.",
-  "current_support": "FTFN has Ontario housing supply progress, CMHC and Statistics Canada data, a June 2026 CMHC stage baseline for approved-but-not-started units, active construction, completions, and starts in the Toronto CMA, Toronto application 24 254930 from notice through staff report and Scarborough Community Council recommendation, a dated July 29-31 Council gate with explicit bill-withholding conditions, Toronto's 2025 Development Pipeline, Toronto Water's adopted 2026-2035 capital plan, IESO's 2026 electricity outlook, and Toronto Hydro's OEB distribution proceeding.",
+  "current_support": "FTFN has Ontario housing supply progress, CMHC and Statistics Canada data, a June 2026 CMHC stage baseline for approved-but-not-started units, active construction, completions, and starts in the Toronto CMA, and Toronto application 24 254930 from notice through staff review, committee recommendation, and City Council adoption without amendments on July 29-30, 2026. The Council record retains explicit bill-withholding conditions. Toronto's 2025 Development Pipeline, Toronto Water's adopted 2026-2035 capital plan, IESO's 2026 electricity outlook, and Toronto Hydro's OEB distribution proceeding remain system context.",
   "missing_evidence": [
     "final servicing conditions and detailed design",
-    "City Council disposition and enacted by-laws for application 24 254930",
+    "introduced and enacted by-laws for application 24 254930",
     "satisfaction of the wind-study, land-exchange, and laneway conditions",
     "project-specific infrastructure funding and utility connections",
     "permit processing",
@@ -32,7 +32,7 @@
     "priority Ontario municipality servicing plan",
     "municipal approval timeline source"
   ],
-  "next_action": "Use the current CMHC stage baseline as aggregate context only. Recheck application 24 254930 after the July 29-31 Council meeting for the disposition, amended recommendations, bill status and enacted by-laws, then track condition compliance, building permits, financing, start, completion, and occupancy.",
+  "next_action": "Use the current CMHC stage baseline as aggregate context only. Recheck application 24 254930 on September 9 for introduced or enacted amendment numbers and accepted wind, land-exchange, laneway, or servicing conditions, then track a confirmed building permit, financing, start, completion, and occupancy.",
   "future_data_model_need": ["Permit", "Dataset", "Local Actor", "Policy or Regulation"],
   "related_source_ids": [
     "source-city-toronto-application-information-centre",
@@ -61,16 +61,16 @@
   ],
   "related_local_system_ids": ["local-ontario-real-estate"],
   "latest_review": {
-    "phase": "Phase 55Q",
-    "decision": "Source Added",
-    "review_date": "2026-07-24",
+    "phase": "Phase 61",
+    "decision": "Narrowed",
+    "review_date": "2026-08-11",
     "named_records": [
-      "CMHC June 2026 Housing Starts And Construction Data",
-      "Toronto City Council item 2026.SC33.9 for application 24 254930"
+      "Toronto City Council item 2026.SC33.9 for application 24 254930",
+      "Project Conversion File 002: Toronto Application 24 254930"
     ],
-    "stage_result": "CMHC now supplies a current Toronto CMA baseline across approved-but-not-started units, active construction, completions, monthly starts, and year-to-date starts. The aggregate stage evidence improves the municipal conversion context but cannot be joined to the selected application, whose Council stage remains scheduled for July 29-31.",
-    "stop_rule": "Do not treat metropolitan stocks and flows as a same-project conversion rate or infer the selected application's outcome. Hold the project trail until the official Council item posts a disposition, bills, by-laws, or changed conditions.",
-    "next_check_date": "2026-08-01"
+    "stage_result": "The Council gate is closed: Toronto adopted item 2026.SC33.9 without amendments. The gap narrows to enactment and delivery because the amendment bills remain withheld behind named wind, land-exchange, and laneway conditions.",
+    "stop_rule": "Do not treat metropolitan stocks and flows as a same-project conversion rate, and do not treat Council adoption as enactment, servicing, a permit, start, completion, or occupancy.",
+    "next_check_date": "2026-09-09"
   },
-  "notes": "Phase 55Q adds current aggregate conversion-stage evidence while preserving the application-level date gate. Citywide and CMA measures do not prove Council adoption, enacted by-laws, condition compliance, project utility connections, a building permit, financing, construction, completion, or occupancy."
+  "notes": "Phase 61 reconciles the completed Council decision and removes the past-due watch language. Citywide and CMA measures still do not prove enacted by-laws, condition compliance, project utility connections, a building permit, financing, construction, completion, or occupancy."
 }

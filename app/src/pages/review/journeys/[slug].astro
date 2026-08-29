@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import program from "../../../data/v03-editorial-program.json";
+import projects from "../../../data/phase-61-project-conversion-registry.json";
+
+export function getStaticPaths() { return program.journeys.map((journey) => ({ params: { slug: journey.slug }, props: { journeyId: journey.journey_id } })); }
+const { journeyId } = Astro.props;
+const journey = program.journeys.find((item) => item.journey_id === journeyId)!;
+const project = projects.records.find((item) => item.file_id === journey.file_id)!;
+const casebook = program.casebooks.find((item) => item.file_id === journey.file_id)!;
+---
+<BaseLayout title={`${journey.title} | FTFN evidence journey`} description={journey.entry_question}>
+  <ReviewHeader eyebrow="Guided evidence journey" title={journey.title} summary={journey.entry_question} phase={110} />
+  <section class="page-section"><ol class="journey-list">
+    <li><div class="eyebrow">1 · Canonical summary</div><h2>Understand the named file.</h2><p>{project.established}</p><a class="inline-link" href={`/review/casebooks/${casebook.slug}/`}>Open the casebook</a></li>
+    <li><div class="eyebrow">2 · Verified chronology</div><h2>Separate dated events from narrative.</h2><p>The casebook orders every accepted event and carries its materiality and interpretation boundary.</p><a class="inline-link" href={`/review/casebooks/${casebook.slug}/#chronology`}>Inspect the chronology</a></li>
+    <li><div class="eyebrow">3 · Current decision boundary</div><h2>{project.current_stage}</h2><p>{project.unresolved}</p></li>
+    <li><div class="eyebrow">4 · Outcome contract</div><h2>Ask what must be measured.</h2><p>The observatory names numerator, denominator, period, method and comparison restrictions before accepting an outcome claim.</p><a class="inline-link" href={`/review/outcomes/${casebook.slug}/`}>Open the outcomes observatory</a></li>
+    <li><div class="eyebrow">5 · Next decisive artifact</div><h2>Know what could move the file.</h2><p>{project.exact_next_artifact}</p></li>
+  </ol></section>
+</BaseLayout>

@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+
+export async function getStaticPaths() {
+  const topics = await getCollection("topics");
+  return topics.map((topic) => ({ params: { slug: topic.data.slug }, props: { topicId: topic.data.id } }));
+}
+const { topicId } = Astro.props;
+const topics = await getCollection("topics");
+const topic = topics.find((item) => item.data.id === topicId)!;
+const allSignals = await getCollection("signals");
+const signals = allSignals.filter((signal) => signal.data.record_status === "Published" && signal.data.primary_topic === topic.data.name).sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf());
+const sources = await getCollection("sources");
+const sourceById = new Map(sources.map((source) => [source.data.id, source]));
+const featuredSources = topic.data.featured_sources.map((id) => sourceById.get(id)).filter(Boolean);
+const maps = (await getCollection("dependencyMaps")).filter((map) => map.data.record_status === "Published" && map.data.primary_topic === topic.data.name);
+---
+
+<BaseLayout title={`${topic.data.name} | The FTFN Review`} description={topic.data.summary}>
+  <ReviewHeader eyebrow="Canonical topic chapter" title={topic.data.name} summary={topic.data.summary} phase={103} />
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Current evidence</div><h2>What the shelf establishes.</h2></div><MetaPill label={`${signals.length} Published signals`} /></div>
+    <div class="signal-grid">
+      {signals.slice(0, 8).map((signal) => <article class="record-card"><div class="meta-row"><MetaPill label={signal.data.signal_type} /><MetaPill label={signal.data.maturity_level} /></div><h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3><p>{signal.data.summary}</p><p class="card-note">{signal.data.why_it_matters}</p></article>)}
+    </div>
+  </section>
+  <section class="page-section review-columns">
+    <article><div class="eyebrow">Binding constraints</div><h2>What conversion still runs through.</h2><ul>{topic.data.primary_constraints.map((item) => <li>{item}</li>)}</ul></article>
+    <article><div class="eyebrow">Decision boundary</div><h2>What this chapter does not prove.</h2>{maps.length ? <ul>{maps.slice(0, 6).map((map) => <li><a href={`/atlas/dependency-maps/${map.data.slug}/`}>{map.data.title}</a>: {map.data.what_this_map_does_not_prove}</li>)}</ul> : <p>The chapter summarizes the current shelf; it does not turn announcements, rules, funding or one-time milestones into implementation, recurring operation or outcomes.</p>}</article>
+  </section>
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy"><div class="eyebrow">Watch questions</div><h2>What would change the chapter.</h2><ol>{topic.data.watch_questions.map((question) => <li>{question}</li>)}</ol><div class="button-row"><a class="inline-link" href={`/review/uncertainty/${topic.data.slug}/`}>Challenge this reading</a><a class="inline-link" href={`/learn/${topic.data.slug}/`}>Open the learning module</a><a class="inline-link" href={`/editions/plain-language-${topic.data.slug}/`}>Plain-language edition</a></div></div>
+    <div class="source-list">{featuredSources.map((source) => <article class="source-row"><h3><a href={`/atlas/sources/${source!.data.id}/`}>{source!.data.name}</a></h3><p>{source!.data.source_type} · {source!.data.credibility_level}</p></article>)}</div>
+  </section>
+</BaseLayout>

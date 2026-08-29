@@ -1,0 +1,78 @@
+{
+  "id": "dependency-map-conversion-stage-is-not-outcome",
+  "title": "Conversion Stage Is Not Outcome",
+  "slug": "conversion-stage-is-not-outcome",
+  "summary": "An eight-question map for locating named project and adoption evidence without treating unlike stages as a common maturity scale or a later operating outcome.",
+  "map_type": "Evidence Gap Map",
+  "record_status": "Published",
+  "primary_topic": "Policy and Standards",
+  "framework_layers": ["Enabling Infrastructure", "Frontier Domains", "Human Systems"],
+  "constraint_tags": ["Regulation", "Capital", "Infrastructure", "Standards", "Data Quality", "Public Trust"],
+  "map_question": "Which distinct evidence questions separate named context from authority, commitment, implementation, validation, acceptance, recurring operation, and comparable outcomes?",
+  "interpretation_boundary": "The stages are shared questions, not a universal legal or technical sequence. The map does not rank files, equate unlike systems, create a readiness score, or allow an upstream event to prove a downstream stage.",
+  "source_ids": [
+    "source-phoenix-tsmc-2026-wastewater-development-agreement",
+    "source-toronto-2026-sc33-9-item-history",
+    "source-virginia-scc-golden-mars-2026",
+    "source-faa-shuttle-landing-facility-license",
+    "source-doe-thacker-pass-loan-2024",
+    "source-gsa-pqc-buyers-guide-2025",
+    "source-nist-aria-pilot-evaluation-2025",
+    "source-cpuc-waymo-al2-disposition-2024"
+  ],
+  "signal_ids": [
+    "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+    "signal-toronto-24-254930-community-council-recommendation",
+    "signal-golden-mars-transmission-conditional-approval",
+    "signal-faa-starship-lc39a-environmental-decision",
+    "signal-thacker-pass-doe-loan-financial-close",
+    "signal-gsa-pqc-procurement-paths",
+    "signal-nist-aria-pilot-multilevel-evaluation",
+    "signal-cpuc-waymo-fared-driverless-expansion-2024"
+  ],
+  "technology_ids": [],
+  "local_system_ids": [
+    "local-us-southwest-chip-corridor",
+    "local-ontario-real-estate",
+    "local-northern-virginia-data-center-corridor",
+    "local-florida-space-coast-launch-corridor",
+    "local-nevada-lithium-processing-corridor"
+  ],
+  "evidence_gap_ids": ["gap-002", "gap-004", "gap-009", "gap-011", "gap-013", "gap-014", "gap-015", "gap-016"],
+  "nodes": [
+    {"id": "node-stage-context", "label": "1. Named context", "node_type": "Constraint", "note": "Preserve the exact entity, place, institution, operator, and evidence boundary before reading movement."},
+    {"id": "node-stage-authority", "label": "2. Policy or authority", "node_type": "Constraint", "note": "A policy, permit, regulatory decision, or service authority is real but remains upstream of implementation and acceptance."},
+    {"id": "node-stage-commitment", "label": "3. Finance, procurement, or agreement", "node_type": "Constraint", "note": "A financial close, order, contract, or delivery agreement establishes commitment without proving delivery."},
+    {"id": "node-stage-implementation", "label": "4. Build or implementation", "node_type": "Constraint", "note": "Physical construction or system implementation must stay tied to the named entity and exact scope."},
+    {"id": "node-stage-validation", "label": "5. Test, compliance, or qualification", "node_type": "Constraint", "note": "Inspection, testing, compliance, qualification, and corrective action require their own accepted artifacts."},
+    {"id": "node-stage-acceptance", "label": "6. Accepted service, product, or cutover", "node_type": "Constraint", "note": "A receiving authority or customer must accept the defined asset, service, product, or transition."},
+    {"id": "node-stage-repeat", "label": "7. Recurring operation or output", "node_type": "Constraint", "note": "One acceptance or bounded claim does not establish compatible recurring operation."},
+    {"id": "node-stage-outcome", "label": "8. Comparable outcome", "node_type": "Evidence Gap", "record_id": "gap-016", "note": "A bounded outcome needs stable identity, period, definition, method, denominator, and acceptance."},
+    {"id": "node-boundary", "label": "No automatic stage transfer", "node_type": "Constraint", "note": "Each cell answers one question only; evidence does not flow forward automatically or sideways into another entity."}
+  ],
+  "links": [
+    {"from": "node-stage-context", "to": "node-stage-authority", "relationship": "Depends On", "confidence": "Partial", "note": "Authority can be interpreted only after the entity and scope are stable; some files enter through a different stage."},
+    {"from": "node-stage-authority", "to": "node-stage-commitment", "relationship": "Depends On", "confidence": "Partial", "note": "Authority and commitment are separate questions and may occur in different orders."},
+    {"from": "node-stage-commitment", "to": "node-stage-implementation", "relationship": "Depends On", "confidence": "Partial", "note": "A commitment does not itself establish build or implementation."},
+    {"from": "node-stage-implementation", "to": "node-stage-validation", "relationship": "Depends On", "confidence": "Partial", "note": "Implementation remains distinct from test, compliance, qualification, and corrective action."},
+    {"from": "node-stage-validation", "to": "node-stage-acceptance", "relationship": "Depends On", "confidence": "Partial", "note": "Testing or compliance does not prove receiving-system acceptance."},
+    {"from": "node-stage-acceptance", "to": "node-stage-repeat", "relationship": "Depends On", "confidence": "Partial", "note": "One accepted event does not establish recurring operation or output."},
+    {"from": "node-stage-repeat", "to": "node-stage-outcome", "relationship": "Limited By", "confidence": "Missing Evidence", "note": "Repeated activity still needs stable definitions, denominators, and outcome measures."},
+    {"from": "node-boundary", "to": "node-stage-outcome", "relationship": "Limited By", "confidence": "Supported", "note": "The no-transfer boundary prevents upstream, adjacent, or incompatible evidence from becoming an outcome claim."}
+  ],
+  "what_this_map_supports": [
+    "Eight named files can be asked the same evidence questions while retaining different legal, technical, and commercial paths.",
+    "Evidence Present, Partial / Held, and Not Established are bounded cell labels rather than numeric measures.",
+    "The next decisive artifact can target one open stage without implying every earlier or later stage is complete."
+  ],
+  "what_this_map_does_not_prove": [
+    "It does not rank files or compare maturity, readiness, value, risk, safety, or performance.",
+    "It does not imply a universal sequence or that unlike cell states are technically equivalent.",
+    "It does not convert authority, commitment, build, testing, acceptance, or repeated activity into a comparable outcome."
+  ],
+  "next_records_needed": [
+    "Accepted infrastructure, qualification, service, product, or cutover records tied to the named entity.",
+    "Compatible recurring operation or output with stable identity and period.",
+    "Repeated outcome records with stable definitions, methods, denominators, and receiving-system acceptance."
+  ]
+}

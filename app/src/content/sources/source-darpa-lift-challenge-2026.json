@@ -1,7 +1,7 @@
 {
   "id": "source-darpa-lift-challenge-2026",
-  "name": "DARPA Lift Challenge Official Challenge Page",
-  "url": "https://www.darpa.mil/research/challenges/lift",
+  "name": "DARPA Lift Challenge Official Results",
+  "url": "https://www.darpa.mil/news/2026/lift-challenge-awards",
   "source_type": "Government Agency",
   "credibility_level": "Tier 1",
   "primary_topics": ["Aviation", "Mobility", "Advanced Manufacturing"],
@@ -9,14 +9,14 @@
   "country_or_region": "United States",
   "update_frequency": "Program milestone",
   "capture_priority": "High",
-  "known_limitations": "The canonical DARPA challenge page reviewed on August 11 links an event guide and scoreboard surface, but the reviewed DARPA page does not publish a final results table, winner, measured team scores, prize decisions, or transition evidence. This bounded check does not establish that results do not exist or will not be published.",
-  "last_checked_date": "2026-08-11",
+  "known_limitations": "DARPA's August 11 official results name the measured objective-category ratios, award winners, and prize decisions. Only five teams completed scored runs, and the release does not establish certified service, production scale, recurring operation, or deployed military or commercial outcomes.",
+  "last_checked_date": "2026-08-23",
   "watch_lanes": ["Mobility Certification", "AI and Advanced Manufacturing"],
   "live_access_type": "Release Page",
-  "review_cadence_days": 3,
+  "review_cadence_days": 30,
   "monitoring_status": "Active",
   "coverage_role": ["Research Program Evidence", "Source Freshness"],
   "jurisdiction": "U.S. federal",
   "source_owner": "Defense Advanced Research Projects Agency",
-  "automation_notes": "Next bounded check: August 14, 2026. Continue checking the canonical DARPA challenge page and official news releases for a dated final-results artifact, measured payload-to-weight performance, winners, prize awards, and transition evidence."
+  "automation_notes": "The August 23 bounded check resolved the measured-results gate using DARPA's August 11 official results release. Monitor only for later official maturation, transition, production, certification, or operational evidence; do not infer those outcomes from the competition awards."
 }

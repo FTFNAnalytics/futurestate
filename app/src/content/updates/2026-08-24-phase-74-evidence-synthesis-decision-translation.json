@@ -1,0 +1,29 @@
+{
+  "id": "update-2026-08-24-phase-74-evidence-synthesis-decision-translation",
+  "effective_date": "2026-08-24",
+  "entry_type": "Source Refresh",
+  "title": "Phase 74 publishes evidence-synthesis, challenge, and decision-translation controls",
+  "summary": "Thirty-two inactive result-input dockets and eight each of synthesis-contradiction, external-challenge, and decision-translation/reevaluation controls now expose the path between an adjudicated result and a challengeable, reversible recommendation. All result, synthesis, grade, challenge, recommendation, authorization, reevaluation, review, and receipt fields remain empty.",
+  "affected_record_ids": [
+    "briefing-evidence-synthesis-desk-001",
+    "briefing-challenge-decision-translation-desk-001",
+    "dependency-map-adjudicated-result-is-not-decision-recommendation",
+    "briefing-registered-analysis-execution-desk-001",
+    "briefing-result-adjudication-desk-001",
+    "briefing-outcomes-watch-001-what-actually-changed",
+    "gap-015",
+    "gap-016"
+  ],
+  "related_paths": [
+    "/evidence/synthesis/",
+    "/briefings/evidence-synthesis-desk-001/",
+    "/briefings/challenge-decision-translation-desk-001/",
+    "/atlas/dependency-maps/adjudicated-result-is-not-decision-recommendation/",
+    "/data/evidence-synthesis-challenge-decision-translation.json"
+  ],
+  "evidence_note": "This release contains empty synthesis-input, contradiction, challenge-response, decision-translation, and reevaluation contracts plus synthetic-only validation. It does not contain an adjudicated result, effect, interval, evidence grade, body-level claim, contradiction decision, challenge, response, option, benefit, harm, recommendation, authorization, monitoring plan, sunset, reevaluation, correction, withdrawal, reviewer decision, or receipt.",
+  "materiality": "No record-state change",
+  "publication_effect": "Adds two Published briefings, one Published dependency map, one searchable registry with forty detail routes, one public export, and reader-surface integrations while leaving all evidence, cohort, stage, panel, design, result, claim, and operating states unchanged.",
+  "next_check_date": "2026-09-01",
+  "work_package": "docs/work-packages/phase-74-evidence-synthesis-challenge-decision-translation.md"
+}

@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import registry from "../../../data/phase-87-education-learning-skills-knowledge-cultural-capability-registry.json";
+import phase86 from "../../../data/phase-86-health-public-health-disability-population-wellbeing-registry.json";
+import phase88 from "../../../data/phase-88-work-labor-livelihoods-economic-democracy-registry.json";
+
+export function getStaticPaths() {
+  return [
+    ...registry.early_childhood_school_access_inclusion_learning_dossiers.map((record) => ({ params: { id: record.slug }, props: { kind: "school", record } })),
+    ...registry.postsecondary_vocational_apprenticeship_affordability_ledgers.map((record) => ({ params: { id: record.slug }, props: { kind: "postsecondary", record } })),
+    ...registry.learning_capability_credential_skills_transition_registers.map((record) => ({ params: { id: record.slug }, props: { kind: "capability", record } })),
+    ...registry.public_knowledge_culture_research_community_learning_ledgers.map((record) => ({ params: { id: record.slug }, props: { kind: "knowledge", record } }))
+  ];
+}
+
+const { kind, record } = Astro.props as { kind: "school" | "postsecondary" | "capability" | "knowledge"; record: any };
+const [briefings, dependencyMaps, signals, sources] = await Promise.all([getCollection("briefings"), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")]);
+const briefingById = new Map(briefings.map((item) => [item.data.id, item]));
+const mapById = new Map(dependencyMaps.map((item) => [item.data.id, item]));
+const signalById = new Map(signals.map((item) => [item.data.id, item]));
+const sourceById = new Map(sources.map((item) => [item.data.id, item]));
+const guideIds = ["briefing-education-human-development-doctrine-001", "briefing-early-childhood-family-development-001", "briefing-school-attendance-access-learning-inclusion-001", "briefing-disability-language-accessible-inclusive-education-001", "briefing-indigenous-education-jurisdiction-knowledge-language-001", "briefing-teachers-education-workers-institutional-capacity-001", "briefing-postsecondary-affordability-student-support-001", "briefing-vocational-apprenticeship-skills-recognition-001", "briefing-learning-assessment-credential-capability-001", "briefing-libraries-digital-access-media-information-literacy-001", "briefing-research-public-knowledge-translation-001", "briefing-arts-culture-community-learning-recovery-001"];
+const mapIds = ["dependency-map-enrollment-is-not-learning", "dependency-map-credential-is-not-demonstrated-capability", "dependency-map-training-seat-is-not-access-to-decent-work", "dependency-map-published-research-is-not-usable-public-knowledge", "dependency-map-digital-access-is-not-information-literacy", "dependency-map-institution-reopening-is-not-community-learning-recovery"];
+const state = kind === "school" ? record.school_state : kind === "postsecondary" ? record.postsecondary_state : kind === "capability" ? record.capability_state : record.knowledge_state;
+const id = kind === "school" ? record.early_childhood_school_access_inclusion_learning_dossier_id : kind === "postsecondary" ? record.postsecondary_vocational_apprenticeship_affordability_ledger_id : kind === "capability" ? record.learning_capability_credential_skills_transition_register_id : record.public_knowledge_culture_research_community_learning_ledger_id;
+const title = `${id}: ${record.named_entity}`;
+const phase86Record = phase86.disability_equity_preparedness_population_wellbeing_ledgers.find((item) => item.cohort_id === record.cohort_id);
+const phase88Records = [
+  ...phase88.job_access_matching_hiring_nondiscrimination_dossiers,
+  ...phase88.job_quality_wages_benefits_hours_safety_ledgers,
+  ...phase88.worker_voice_organizing_collective_bargaining_economic_democracy_registers,
+  ...phase88.livelihood_security_displacement_just_transition_long_horizon_ledgers
+].filter((item) => item.cohort_id === record.cohort_id);
+const configs: Record<string, any> = {
+  school: { label: "Early-Childhood And School Access, Inclusion And Learning Dossier", gates: record.school_checks, gateCount: 20, groups: [["Education-access settings", record.education_access_setting_records, "setting_state"], ["Education-inclusion and support dimensions", record.education_inclusion_support_dimension_records, "dimension_state"], ["Learning-condition safeguards", record.learning_condition_safeguard_records, "safeguard_state"]], decision: record.school_decision },
+  postsecondary: { label: "Postsecondary, Vocational, Apprenticeship And Affordability Ledger", gates: record.postsecondary_checks, gateCount: 20, groups: [["Postsecondary-learning pathways", record.postsecondary_learning_pathway_records, "pathway_state"], ["Postsecondary-affordability and support dimensions", record.postsecondary_affordability_support_dimension_records, "dimension_state"], ["Education-workforce and institution-continuity safeguards", record.education_workforce_institution_continuity_safeguard_records, "safeguard_state"]], decision: record.postsecondary_decision },
+  capability: { label: "Learning, Capability, Credential, Skills And Transition Register", gates: record.capability_checks, gateCount: 22, groups: [["Learning-capability domains", record.learning_capability_domain_records, "domain_state"], ["Assessment and credential safeguards", record.assessment_credential_safeguard_records, "safeguard_state"], ["Skills, work, and civic-transition dimensions", record.skills_work_civic_transition_dimension_records, "dimension_state"]], decision: record.capability_decision },
+  knowledge: { label: "Public-Knowledge, Culture, Research And Community-Learning Ledger", gates: record.knowledge_checks, gateCount: 22, groups: [["Public-knowledge institutions", record.public_knowledge_institution_records, "institution_state"], ["Research and public-knowledge safeguards", record.research_public_knowledge_safeguard_records, "safeguard_state"], ["Cultural-capability dimensions", record.cultural_capability_dimension_records, "dimension_state"], ["Long-horizon human-development tests", record.long_horizon_human_development_test_records, "test_state"]], decision: record.knowledge_decision }
+};
+const config = configs[kind];
+---
+
+<BaseLayout title={title + " | FTFN"} description={title + ": inactive Phase 87 education and cultural-capability contract."} robots="index, follow">
+  <section class="page-section"><div class="eyebrow">{config.label}</div><h1 class="page-title">{title}</h1><div class="meta-row"><MetaPill label={state} tone="review" /><MetaPill label="0 education decisions" tone="review" /><MetaPill label="0 receipts" tone="review" /><MetaPill label="0 scores" tone="review" /></div></section>
+  <section class="page-section"><div class="status-panel"><article class="status-item"><h2>Phase 86 population-wellbeing ledger</h2><p>{phase86Record ? <a href={'/evidence/health-population-wellbeing/' + phase86Record.slug + '/'}>{record.disability_equity_preparedness_population_wellbeing_ledger_id ?? phase86Record.disability_equity_preparedness_population_wellbeing_ledger_id}</a> : "No verified upstream record"}</p></article><article class="status-item"><h2>Decision state</h2><p>{config.decision}</p></article><article class="status-item"><h2>Governed results</h2><p>0 enrollment, admission, credential, capability, transition, knowledge, cultural-recovery, remedy, receipt, score, ranking, or stage decisions</p></article></div></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Admission Control</div><h2>{config.gateCount} gates remain Inactive.</h2></div></div><div class="source-list">{config.gates.map((item: any) => <article class="source-row"><div><h3>{item.label}</h3><p>{item.basis}</p></div><MetaPill label={item.decision_state} tone="review" /></article>)}</div></section>
+  {config.groups.map(([label, items, stateField]: [string, any[], string]) => <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Controlled Taxonomy</div><h2>{label} remain unassigned.</h2></div></div><div class="grid">{items.map((item: any) => <article class="record-card"><h3>{item.label}</h3><p>No authority, evidence, finding, credential, owner, allocation, decision, or receipt exists.</p><MetaPill label={item[stateField]} tone="review" /></article>)}</div></section>)}
+  <section class="page-section"><div class="grid"><article class="record-card"><h2>Connected guides</h2><ul>{guideIds.map((guideId) => { const item = briefingById.get(guideId); return <li>{item ? <a href={'/briefings/' + item.data.slug + '/'}>{item.data.title}</a> : guideId}</li>; })}</ul></article><article class="record-card"><h2>Connected maps</h2><ul>{mapIds.map((mapId) => { const item = mapById.get(mapId); return <li>{item ? <a href={'/atlas/dependency-maps/' + item.data.slug + '/'}>{item.data.title}</a> : mapId}</li>; })}</ul></article><article class="record-card"><h2>Connected evidence</h2><ul>{record.source_ids.map((sourceId: string) => { const item = sourceById.get(sourceId); return <li>{item ? <a href={'/atlas/sources/' + item.data.id + '/'}>{item.data.name}</a> : sourceId}</li>; })}{record.signal_ids.map((signalId: string) => { const item = signalById.get(signalId); return <li>{item ? <a href={'/signals/' + item.data.slug + '/'}>{item.data.title}</a> : signalId}</li>; })}</ul></article></div></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Phase 88 Destination</div><h2>Work, labor, livelihoods, and economic-democracy controls</h2></div></div><div class="source-list">{phase88Records.map((item: any) => <article class="source-row"><div><h3><a href={'/evidence/work-labor-livelihoods/' + item.slug + '/'}>{item.named_entity}</a></h3><p>Inactive until this Phase 87 chain is independently verified and receipted.</p></div><MetaPill label="Inactive" tone="review" /></article>)}</div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Boundary</div><h2>Enrollment is not learning; institution reopening is not community learning recovery.</h2><p>No enrollment or admission decision, learning or inclusion finding, affordability or debt decision, credential or capability conclusion, work or civic transition finding, research or public-knowledge finding, information-literacy finding, cultural classification, community-learning recovery conclusion, reviewer identity, receipt, score, rank, or stage change is recorded on this page.</p></div></section>
+</BaseLayout>
