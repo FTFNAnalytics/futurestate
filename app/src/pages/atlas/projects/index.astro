@@ -1,0 +1,70 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import atlas from "../../../data/phase-119-deep-project-place-atlas.json";
+
+const projects = atlas.projects;
+const governed = projects.filter((record) => record.coverage.tier_id === "Tier A");
+const curated = projects.filter((record) => record.coverage.tier_id === "Tier B");
+---
+
+<BaseLayout title="Project Atlas | FTFN" description="Twenty-four named project and adoption cases with explicit evidence relationships, conversion boundaries, and next artifacts.">
+  <section class="page-section">
+    <div class="eyebrow">Atlas / Projects</div>
+    <h1 class="page-title">Named projects, explicit evidence boundaries.</h1>
+    <p class="lede">
+      The Project Atlas joins every public casebook to stable identity, chronology,
+      evidence rails, unresolved gates, next artifacts, and update responsibility.
+      Coverage tiers describe the record structure—not project quality or readiness.
+    </p>
+    <div class="meta-row">
+      <MetaPill label={`${projects.length} named cases`} tone="published" />
+      <MetaPill label={`${governed.length} governed conversion files`} tone="review" />
+      <MetaPill label={`${curated.length} curated evidence cases`} />
+    </div>
+  </section>
+
+  <section class="page-section review-columns">
+    {atlas.coverage_tiers.map((tier) => (
+      <article>
+        <div class="eyebrow">{tier.tier_id}</div>
+        <h2>{tier.tier_id === "Tier A" ? "Governed conversion files" : "Curated evidence cases"}</h2>
+        <p>{tier.project_definition}</p>
+      </article>
+    ))}
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Tier A</div><h2>Governed conversion files.</h2></div></div>
+    <div class="grid">
+      {governed.map((project) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={project.canonical_id} /><MetaPill label={project.coverage.label} tone="review" /></div>
+          <h3><a href={project.routes.atlas}>{project.title}</a></h3>
+          <p>{project.conversion.current_stage}</p>
+          <p class="card-note">Next: {project.conversion.exact_next_artifact}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Tier B</div><h2>Curated cases awaiting governed promotion.</h2></div></div>
+    <div class="grid">
+      {curated.map((project) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={project.canonical_id} /><MetaPill label={project.coverage.label} /></div>
+          <h3><a href={project.routes.atlas}>{project.title}</a></h3>
+          <p>{project.editorial_question}</p>
+          <p class="card-note">{project.update_status}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section prose-page">
+    <h2>Publication boundary</h2>
+    <p>{atlas.interpretation_boundary}</p>
+    <p><a class="inline-link" href={atlas.routes.public_export}>Download the canonical Atlas registry</a></p>
+  </section>
+</BaseLayout>

@@ -1,0 +1,131 @@
+---
+import MetaPill from "../ui/MetaPill.astro";
+
+interface RequirementTest {
+  test_id: string;
+  requirement_index: number;
+  requirement: string;
+  review_state: string;
+  context_note_ids: string[];
+  relevant_note_ids: string[];
+  relevant_context: Array<{
+    note_id: string;
+    signal_id: string;
+    signal_route: string;
+    title: string;
+    factual_excerpt: string;
+    matched_terms: string[];
+    relevance_reason: string;
+    limitation_reason: string;
+  }>;
+  reasoning: string;
+  false_positive_guard: string;
+  exact_missing_record: string;
+  analysis_word_count: number;
+}
+
+interface MissionAudit {
+  audit_id: string;
+  audit_disposition: string;
+  upstream_answer_state: string;
+  evidence_note_ids: string[];
+  requirement_tests: RequirementTest[];
+  strongest_current_context: { selection_state: string; reason: string };
+  completion_review: { completed: boolean; reason: string };
+  next_acquisition_action: string;
+  narrative: {
+    audit_summary: string;
+    current_context: string;
+    method_and_denominator: string;
+    uncertainty_and_limits: string;
+    completion_review: string;
+    next_step: string;
+  };
+  interpretation_boundary: string;
+}
+
+const { audit } = Astro.props as { audit: MissionAudit };
+---
+
+<section class="page-section" aria-label="Phase 126 mission evidence audit">
+  <div class="section-heading">
+    <div>
+      <div class="eyebrow">Mission evidence audit · Phase 126</div>
+      <h2>Current context shelf screened; answer state unchanged.</h2>
+      <p>{audit.narrative.audit_summary}</p>
+    </div>
+    <div class="meta-row">
+      <MetaPill label={audit.audit_id} />
+      <MetaPill label={audit.audit_disposition} tone="review" />
+    </div>
+  </div>
+
+  <div class="metric-strip" aria-label="Mission audit status">
+    <div class="metric"><strong>{audit.requirement_tests.length}</strong><span>ordered requirements</span></div>
+    <div class="metric"><strong>{audit.evidence_note_ids.length}</strong><span>context notes screened</span></div>
+    <div class="metric"><strong>0</strong><span>requirements adjudicated</span></div>
+    <div class="metric"><strong>Open</strong><span>mission answer</span></div>
+  </div>
+
+  <div class="signal-grid">
+    {audit.requirement_tests.map((test) => (
+      <article class="record-card">
+        <div class="meta-row"><MetaPill label={test.test_id} /><MetaPill label={test.review_state} tone="review" /></div>
+        <h3>{test.requirement_index}. {test.requirement}</h3>
+        <p>{test.reasoning}</p>
+        {test.relevant_context.length > 0 ? (
+          <div class="source-list">
+            {test.relevant_context.map((context) => (
+              <div class="source-row">
+                <strong><a href={context.signal_route}>{context.note_id} · {context.title}</a></strong>
+                <span>Matched terms: {context.matched_terms.join(", ")}</span>
+                <p>“{context.factual_excerpt}”</p>
+                <p>{context.relevance_reason}</p>
+                <p class="card-note">{context.limitation_reason}</p>
+              </div>
+            ))}
+          </div>
+        ) : <p class="card-note">All {test.context_note_ids.length} note titles and factual nuclei were screened; no requirement-term overlap was found in those fields. This is not a semantic or external-existence decision.</p>}
+        <h4>False-positive guard</h4>
+        <p>{test.false_positive_guard}</p>
+        <h4>Exact missing record</h4>
+        <p>{test.exact_missing_record}</p>
+      </article>
+    ))}
+  </div>
+
+  <div class="review-columns">
+    <article>
+      <div class="eyebrow">Current context</div>
+      <h3>{audit.strongest_current_context.selection_state}</h3>
+      <p>{audit.narrative.current_context}</p>
+      <p>{audit.strongest_current_context.reason}</p>
+    </article>
+    <article>
+      <div class="eyebrow">Method and denominator</div>
+      <h3>Compatibility still has to be shown.</h3>
+      <p>{audit.narrative.method_and_denominator}</p>
+    </article>
+  </div>
+
+  <div class="review-columns">
+    <article>
+      <div class="eyebrow">Uncertainty and completion</div>
+      <p>{audit.narrative.uncertainty_and_limits}</p>
+      <p>{audit.narrative.completion_review}</p>
+      <p class="card-note">Completed: {audit.completion_review.completed ? "Yes" : "No"}. {audit.completion_review.reason}</p>
+    </article>
+    <article>
+      <div class="eyebrow">Next acquisition action</div>
+      <p>{audit.next_acquisition_action}</p>
+      <p>{audit.narrative.next_step}</p>
+    </article>
+  </div>
+
+  <div class="prose-page">
+    <h3>Interpretation boundary</h3>
+    <p>{audit.interpretation_boundary}</p>
+    <p>Upstream answer state: <strong>{audit.upstream_answer_state}</strong></p>
+    <p><a class="inline-link" href="/review/fieldbook/mission-audits/">Browse all mission evidence audits</a></p>
+  </div>
+</section>

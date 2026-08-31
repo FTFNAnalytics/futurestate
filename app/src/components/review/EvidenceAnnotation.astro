@@ -1,0 +1,71 @@
+---
+import MetaPill from "../ui/MetaPill.astro";
+
+interface EvidenceNote {
+  note_id: string;
+  annotation_state: string;
+  source_profiles: Array<{ source_id: string; name: string }>;
+  mission_ids: string[];
+  annotation: {
+    factual_nucleus: string;
+    bounded_support: string;
+    excluded_inference: string;
+    provenance_reading: string;
+    measurement_reading: string;
+    research_use: string;
+  };
+  interpretation_boundary: string;
+}
+
+const { note } = Astro.props as { note: EvidenceNote };
+---
+
+<section class="page-section" aria-label="Phase 125 source-linked evidence annotation">
+  <div class="section-heading">
+    <div>
+      <div class="eyebrow">Evidence annotation · Phase 125</div>
+      <h2>What this record supports—and where it stops.</h2>
+      <p>This overlay reads the existing Published signal in mission context without changing its evidence state.</p>
+    </div>
+    <div class="meta-row">
+      <MetaPill label={note.note_id} />
+      <MetaPill label={note.annotation_state} tone="review" />
+    </div>
+  </div>
+
+  <div class="review-columns">
+    <article>
+      <div class="eyebrow">Factual nucleus</div>
+      <h3>The inherited bounded statement</h3>
+      <p>{note.annotation.factual_nucleus}</p>
+      <h3>Bounded support</h3>
+      <p>{note.annotation.bounded_support}</p>
+    </article>
+    <article>
+      <div class="eyebrow">Excluded inference</div>
+      <h3>What this record cannot establish alone</h3>
+      <p>{note.annotation.excluded_inference}</p>
+      <h3>Measurement reading</h3>
+      <p>{note.annotation.measurement_reading}</p>
+    </article>
+  </div>
+
+  <div class="review-columns">
+    <article>
+      <div class="eyebrow">Provenance reading</div>
+      <p>{note.annotation.provenance_reading}</p>
+      <ul>{note.source_profiles.map((source) => <li><a href={`/atlas/sources/${source.source_id}/`}>{source.name}</a> · {source.source_id}</li>)}</ul>
+    </article>
+    <article>
+      <div class="eyebrow">Research use</div>
+      <p>{note.annotation.research_use}</p>
+      <p class="card-note">Linked as context to {note.mission_ids.length} mission{note.mission_ids.length === 1 ? "" : "s"}. Requirement satisfaction remains unadjudicated.</p>
+    </article>
+  </div>
+
+  <div class="prose-page">
+    <h3>Interpretation boundary</h3>
+    <p>{note.interpretation_boundary}</p>
+    <p><a class="inline-link" href="/review/fieldbook/evidence-notes/">Browse all source-linked evidence annotations</a></p>
+  </div>
+</section>

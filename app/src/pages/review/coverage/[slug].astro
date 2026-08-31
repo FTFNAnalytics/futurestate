@@ -1,0 +1,129 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/phase-116-coverage-architecture.json";
+
+export function getStaticPaths() {
+  return program.coverage_matrix.map((row) => ({ params: { slug: row.slug }, props: { topicId: row.topic_id } }));
+}
+
+const row = program.coverage_matrix.find((item) => item.topic_id === Astro.props.topicId)!;
+const topic = program.entity_registry.topics.find((item) => item.canonical_id === row.topic_id)!;
+const questions = program.priority_questions.filter((item) => row.priority_question_ids.includes(item.question_id));
+const localSystemIds = new Set<string>(row.local_system_ids as string[]);
+const casebookIds = new Set<string>(row.casebook_ids as string[]);
+const localSystems = program.entity_registry.local_systems.filter((item) => localSystemIds.has(item.canonical_id));
+const casebooks = program.entity_registry.casebooks.filter((item) => casebookIds.has(item.canonical_id));
+const stageById = new Map(program.conversion_stages.map((stage) => [stage.stage_id, stage]));
+const claimById = new Map(program.claim_types.map((claim) => [claim.claim_type_id, claim]));
+const geographySample = row.current_inventory.source_geographies.slice(0, 10);
+---
+
+<BaseLayout title={`${row.label} coverage | FTFN v0.4`} description={`The Phase 116 coverage baseline and research contract for ${row.label}.`}>
+  <ReviewHeader eyebrow="FTFN v0.4 · Coverage file" title={row.label} summary={row.baseline_state} phase={116} />
+
+  <section class="page-section">
+    <div class="metric-strip" aria-label={`${row.label} coverage counts`}>
+      <div class="metric"><strong>{row.current_inventory.published_signals}</strong><span>Published signals</span></div>
+      <div class="metric"><strong>{row.current_inventory.registered_sources}</strong><span>registered sources</span></div>
+      <div class="metric"><strong>{localSystems.length}</strong><span>place systems</span></div>
+      <div class="metric"><strong>{casebooks.length}</strong><span>casebooks</span></div>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Canonical identity</div>
+      <h2>{topic.canonical_id}</h2>
+      <p>Aliases: {topic.aliases.join(" · ")}</p>
+      <p>Latest Published signal captured: {row.current_inventory.latest_published_signal_capture_date ?? "No Published signal"}</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label="Next action" tone="possibility" />
+      <h3>Close the most structural gap first.</h3>
+      <p>{row.next_action}</p>
+      <a class="inline-link" href={`/review/topics/${row.slug}/`}>Read the canonical topic chapter</a>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Priority questions</div><h2>Four horizons from baseline to outcome.</h2><p>Each question has an evidence contract. A bounded gap or inadmissibility decision is preferable to an invented answer.</p></div></div>
+    <div class="signal-grid">
+      {questions.map((question) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={question.question_id} /><MetaPill label={question.research_horizon} tone="possibility" /></div>
+          <h3>{question.question}</h3>
+          <p>{question.why_priority}</p>
+          <div>
+            <strong>Required evidence</strong>
+            <ul>{question.required_evidence.map((item) => <li>{item}</li>)}</ul>
+          </div>
+          <p><strong>Completion:</strong> {question.completion_rule}</p>
+          <p class="card-note">{question.current_state}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Stage coverage</div><h2>Every conversion question has an owner.</h2></div></div>
+    <div class="table-wrap">
+      <table class="matrix-table">
+        <thead><tr><th>Stage</th><th>Evidence question</th><th>Priority question</th></tr></thead>
+        <tbody>
+          {row.stage_question_map.map((entry) => {
+            const stage = stageById.get(entry.stage_id)!;
+            return <tr><td>{stage.sequence}. {stage.label}</td><td>{stage.question}</td><td>{entry.question_ids.join(", ")}</td></tr>;
+          })}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Local systems</div>
+      <h2>{localSystems.length ? "Where this topic has to land." : "No named place system yet."}</h2>
+      <div class="source-list">
+        {localSystems.map((system) => <div class="source-row"><h3><a href={system.public_routes[0]}>{system.label}</a></h3><p>{system.geography_label} · {system.representation_tier.replaceAll("_", " ")}</p></div>)}
+      </div>
+    </article>
+    <article>
+      <div class="eyebrow">Casebooks</div>
+      <h2>{casebooks.length ? "Named conversion files and narratives." : "No named casebook yet."}</h2>
+      <div class="source-list">
+        {casebooks.map((casebook) => <div class="source-row"><h3><a href={casebook.public_routes[0]}>{casebook.label}</a></h3><p>{casebook.representation_tier.replaceAll("_", " ")}</p></div>)}
+      </div>
+    </article>
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Claim inventory</div>
+      <h2>Current Published record shapes.</h2>
+      <div class="source-list">
+        {Object.entries(row.current_inventory.claim_scope_distribution).map(([label, count]) => <div class="source-row"><strong>{label}</strong><span>{count} records</span></div>)}
+      </div>
+    </article>
+    <article>
+      <div class="eyebrow">Source geography</div>
+      <h2>Current registry footprint.</h2>
+      <p>{row.current_inventory.source_geographies.length} distinct source geography labels; the first {geographySample.length} are shown.</p>
+      <div class="compact-list">{geographySample.map((area) => <span>{area}</span>)}</div>
+    </article>
+  </section>
+
+  <section class="page-section prose-page">
+    <h2>Claim types used by this research contract</h2>
+    {questions.map((question) => (
+      <section>
+        <h3>{question.research_horizon}</h3>
+        <ul>{question.claim_type_ids.map((id) => { const claim = claimById.get(id)!; return <li><strong>{claim.label}:</strong> {claim.boundary}</li>; })}</ul>
+      </section>
+    ))}
+    <h2>Interpretation boundary</h2>
+    <p>{program.baseline.interpretation_boundary}</p>
+    <p>{program.publication_boundaries[0]}</p>
+  </section>
+</BaseLayout>

@@ -4,19 +4,22 @@ import BaseLayout from "../../../../components/layout/BaseLayout.astro";
 import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
 import MetaPill from "../../../../components/ui/MetaPill.astro";
 import program from "../../../../data/v031-content-expansion.json";
+import atlas from "../../../../data/phase-119-deep-project-place-atlas.json";
 
 export function getStaticPaths() { return program.casebooks.map((record) => ({ params: { slug: record.slug }, props: { casebookId: record.casebook_id } })); }
 const record = program.casebooks.find((item) => item.casebook_id === Astro.props.casebookId)!;
+const atlasProject = atlas.projects.find((item) => item.legacy_ids.includes(record.casebook_id))!;
 const allSignals = await getCollection("signals");
-const haystack = (signal: (typeof allSignals)[number]) => `${signal.data.id} ${signal.data.title} ${signal.data.summary}`.toLowerCase();
-const signals = allSignals.filter((signal) => signal.data.record_status === "Published" && record.signal_terms.some((term) => haystack(signal).includes(term))).sort((a, b) => a.data.captured_date.valueOf() - b.data.captured_date.valueOf()).slice(-16);
+const signalById = new Map(allSignals.map((signal) => [signal.data.id, signal]));
+const signals = atlasProject.evidence_rails.signal_ids.map((id) => signalById.get(id)).filter(Boolean) as typeof allSignals;
 const sources = await getCollection("sources");
-const sourceIds = [...new Set(signals.flatMap((signal) => signal.data.source_ids))];
-const selectedSources = sources.filter((source) => sourceIds.includes(source.data.id)).slice(0, 12);
+const sourceById = new Map(sources.map((source) => [source.data.id, source]));
+const selectedSources = atlasProject.evidence_rails.source_ids.map((id) => sourceById.get(id)).filter(Boolean) as typeof sources;
 ---
 
 <BaseLayout title={`${record.title} | FTFN casebook`} description={record.editorial_question}>
   <ReviewHeader eyebrow="Phase 113 · Expanded casebook" title={record.title} summary={record.editorial_question} phase={113} />
+  <section class="page-section"><div class="meta-row"><MetaPill label={atlasProject.coverage.label} tone="review" /><MetaPill label={atlasProject.atlas_project_id} /></div><p class="card-note">This shelf now resolves through explicit curated signal and source IDs. <a class="inline-link" href={atlasProject.routes.atlas}>Open the canonical Project Atlas file</a>.</p></section>
   <section class="page-section review-columns"><article><div class="eyebrow">Established</div><h2>What the shelf can support.</h2><p>{record.established}</p></article><article><div class="eyebrow">Still unresolved</div><h2>Where the claim stops.</h2><p>{record.unresolved}</p></article></section>
   <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Record sequence</div><h2>Named evidence, in capture order.</h2></div><MetaPill label={`${signals.length} Published signals`} /></div><ol class="timeline-list">{signals.map((signal) => <li><div class="meta-row"><MetaPill label={signal.data.captured_date.toISOString().slice(0, 10)} /><MetaPill label={signal.data.maturity_level} /></div><h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3><p>{signal.data.summary}</p></li>)}</ol></section>
   <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Primary sources</div><h2>Rails cited by the selected records.</h2></div></div><div class="source-list">{selectedSources.map((source) => <article class="source-row"><h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3><p>{source.data.source_type} · last checked {source.data.last_checked_date.toISOString().slice(0, 10)}</p></article>)}</div></section>

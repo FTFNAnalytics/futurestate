@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import VerificationPlaybook from "../../../../../components/review/VerificationPlaybook.astro";
+import library from "../../../../../data/phase-122-verification-playbook-library.json";
+
+export function getStaticPaths() {
+  return library.quality_audit_cards.map((record) => ({ params: { slug: record.slug }, props: { recordId: record.record_id } }));
+}
+
+const record = library.quality_audit_cards.find((item) => item.record_id === Astro.props.recordId)!;
+const allSignals = await getCollection("signals");
+const signalById = new Map(allSignals.map((signal) => [signal.data.id, signal]));
+const workedSignals = record.worked_example.signal_ids.map((id) => signalById.get(id)).filter((signal) => signal?.data.record_status === "Published");
+const counterSignals = record.counterexample.signal_ids.map((id) => signalById.get(id)).filter((signal) => signal?.data.record_status === "Published");
+---
+
+<VerificationPlaybook record={record} workedSignals={workedSignals} counterSignals={counterSignals} />

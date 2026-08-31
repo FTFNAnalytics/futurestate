@@ -4,24 +4,53 @@ import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import ReviewHeader from "../../../components/review/ReviewHeader.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 import program from "../../../data/v03-editorial-program.json";
+import dossiers from "../../../data/phase-123-comparative-delivery-dossiers.json";
+import atlas from "../../../data/phase-119-deep-project-place-atlas.json";
+import evidenceSyntheses from "../../../data/phase-129-cross-system-evidence-syntheses.json";
 
 export function getStaticPaths() {
   return program.cross_system_stories.map((story) => ({ params: { slug: story.slug }, props: { storyId: story.story_id } }));
 }
 const { storyId } = Astro.props;
 const story = program.cross_system_stories.find((item) => item.story_id === storyId)!;
+const dossier = dossiers.dossiers.find((item) => item.legacy_story_id === storyId)!;
+const synthesis = evidenceSyntheses.syntheses.find((item) => item.dossier_id === dossier.dossier_id)!;
 const topics = await getCollection("topics");
 const selectedTopics = story.topic_ids.map((id) => topics.find((topic) => topic.data.id === id)).filter(Boolean);
-const topicNames = new Set(selectedTopics.map((topic) => topic!.data.name));
 const systems = await getCollection("localSystems");
 const selectedSystems = story.local_system_ids.map((id) => systems.find((system) => system.data.id === id)).filter(Boolean);
-const signals = (await getCollection("signals")).filter((signal) => signal.data.record_status === "Published" && topicNames.has(signal.data.primary_topic)).sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf());
+const signalById = new Map((await getCollection("signals")).filter((signal) => signal.data.record_status === "Published").map((signal) => [signal.data.id, signal]));
+const signals = dossier.evidence_signal_ids.map((id) => signalById.get(id)).filter(Boolean);
+const sourceById = new Map((await getCollection("sources")).map((source) => [source.data.id, source]));
+const selectedSources = dossier.evidence_source_ids.map((id) => sourceById.get(id)).filter(Boolean);
+const selectedProjects = dossier.atlas_project_ids.map((id) => atlas.projects.find((record) => record.atlas_project_id === id)).filter(Boolean);
+const selectedPlaces = dossier.atlas_place_ids.map((id) => atlas.places.find((record) => record.atlas_place_id === id)).filter(Boolean);
 ---
 
 <BaseLayout title={`${story.title} | Cross-system atlas`} description={story.editorial_question}>
   <ReviewHeader eyebrow="Cross-system atlas" title={story.title} summary={story.editorial_question} phase={105} />
+  <section class="page-section">
+    <div class="metric-strip" aria-label="Phase 123 dossier identity">
+      <div class="metric"><strong>{dossier.atlas_project_ids.length}</strong><span>named projects</span></div>
+      <div class="metric"><strong>{dossier.atlas_place_ids.length}</strong><span>place systems</span></div>
+      <div class="metric"><strong>{signals.length}</strong><span>Published signals</span></div>
+      <div class="metric"><strong>{dossier.comparison_passport.verdict}</strong><span>comparison verdict</span></div>
+    </div>
+  </section>
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Phase 129 · Open Evidence Review</div><h2>{synthesis.title}.</h2><p>{synthesis.synthesis_state}</p></div><div class="meta-row"><MetaPill label={synthesis.synthesis_id} /><MetaPill label={synthesis.verdict} tone="review" /><MetaPill label={`${synthesis.authored_word_count.toLocaleString()} rendered analysis words`} tone="possibility" /></div></div>
+    <div class="briefing-band"><div class="briefing-band__copy"><h3>Synthesis read</h3><p>{synthesis.authored_sections.synthesis_read}</p></div><article class="record-card record-card--featured"><MetaPill label="Exact evidence set retained" tone="review" /><h3>Compatibility, not performance</h3><p>{evidenceSyntheses.dimension_contract.boundary}</p><p><a href="/review/fieldbook/system-reviews/">Open all system reviews</a></p></article></div>
+  </section>
+  <section class="page-section prose-page"><h2>Compatible reading</h2><p>{synthesis.authored_sections.compatible_reading}</p><h2>Incompatible reading</h2><p>{synthesis.authored_sections.incompatible_reading}</p><h2>Failure modes</h2><p>{synthesis.authored_sections.failure_modes}</p><h2>Next research</h2><p>{synthesis.authored_sections.next_research}</p></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Phase 129 compatibility passport</div><h2>Five independent determinations.</h2><p>Every determination remains Context only and preserves the Phase 123 evidence arrays exactly.</p></div></div><div class="signal-grid">{synthesis.compatibility_determinations.map((item) => <article class="record-card"><div class="meta-row"><MetaPill label={item.label} /><MetaPill label={item.state} tone="review" /></div><p>{item.determination}</p><p><strong>Incompatibility:</strong> {item.incompatibility}</p><p><strong>Next review:</strong> {item.next_review}</p></article>)}</div></section>
   <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Three lenses</div><h2>Read each system, then inspect the connections.</h2></div></div><div class="signal-grid">{selectedTopics.map((topic) => <article class="record-card"><MetaPill label="Canonical chapter" /><h3><a href={`/review/topics/${topic!.data.slug}/`}>{topic!.data.name}</a></h3><p>{topic!.data.summary}</p></article>)}</div></section>
   {selectedSystems.length > 0 && <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Where this becomes local</div><h2>Conversion conditions are place-specific.</h2><p>These portraits show the authorities, infrastructure and missing local evidence behind the cross-system question.</p></div><div class="source-list">{selectedSystems.map((system) => <article class="source-row"><h3><a href={`/review/places/${system!.data.slug}/`}>{system!.data.name}</a></h3><p>{system!.data.current_equilibrium}</p></article>)}</div></section>}
-  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Evidence intersections</div><h2>Recent records across the selected topics.</h2></div><MetaPill label={`${signals.length} Published signals`} /></div><div class="signal-grid">{signals.slice(0, 9).map((signal) => <article class="record-card"><div class="meta-row"><MetaPill label={signal.data.primary_topic} /><MetaPill label={signal.data.maturity_level} /></div><h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3><p>{signal.data.summary}</p></article>)}</div></section>
-  <section class="page-section prose-page"><h2>Interpretation boundary</h2><p>{story.interpretation_boundary}</p><p>A connection shown here is a reason to inspect dependencies. It is not evidence that one record caused another, that a proposal will succeed, or that performance improved.</p></section>
+  <section class="page-section review-columns">
+    <article><div class="eyebrow">Named project files</div><h2>Stable identities, not search matches.</h2><div class="source-list">{selectedProjects.map((record) => <div class="source-row"><h3><a href={`/atlas/projects/${record!.slug}/`}>{record!.title}</a></h3><p>{record!.coverage.label}</p></div>)}</div></article>
+    <article><div class="eyebrow">Named place files</div><h2>Receiving systems retain their own boundaries.</h2><div class="source-list">{selectedPlaces.map((record) => <div class="source-row"><h3><a href={`/atlas/places/${record!.slug}/`}>{record!.title}</a></h3><p>{record!.coverage.label}</p></div>)}</div></article>
+  </section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Shared dependency</div><h2>What these cases can illuminate together.</h2><p>{dossier.shared_dependency}</p><p><strong>Comparable:</strong> {dossier.what_is_comparable}</p></div><div class="source-list"><div class="source-row"><strong>Must not be compared</strong><span>{dossier.what_must_not_be_compared}</span></div><div class="source-row"><strong>Decisive next evidence</strong><span>{dossier.decisive_next_evidence}</span></div></div></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Explicit evidence intersections</div><h2>Curated records replace runtime topic matching.</h2></div><MetaPill label={`${signals.length} Published signals`} /></div><div class="signal-grid">{signals.map((signal) => <article class="record-card"><div class="meta-row"><MetaPill label={signal!.data.primary_topic} /><MetaPill label={signal!.data.maturity_level} /></div><h3><a href={`/signals/${signal!.data.slug}/`}>{signal!.data.title}</a></h3><p>{signal!.data.summary}</p></article>)}</div></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Exact source provenance</div><h2>Resolve every inherited source ID.</h2><p>These are the declared source rails inherited from the selected Atlas records. Their presence supplies provenance, not a shared denominator or a new evidence decision.</p></div><MetaPill label={`${selectedSources.length} resolved sources`} /></div><div class="source-list">{selectedSources.map((source) => <article class="source-row"><h3><a href={`/atlas/sources/${source!.data.id}/`}>{source!.data.name}</a></h3><p>{source!.data.source_type} · {source!.data.id} · checked {source!.data.last_checked_date.toISOString().slice(0, 10)}</p></article>)}</div></section>
+  <section class="page-section prose-page"><h2>Comparison passport</h2><p><strong>Identity:</strong> {dossier.comparison_passport.identity}</p><p><strong>Period:</strong> {dossier.comparison_passport.period}</p><p><strong>Unit and denominator:</strong> {dossier.comparison_passport.unit_and_denominator}</p><p><strong>Authority and provenance:</strong> {dossier.comparison_passport.authority_and_provenance}</p><p><strong>Method:</strong> {dossier.comparison_passport.method_compatibility}</p><h2>Reader checklist</h2><ol>{dossier.reader_checklist.map((item) => <li>{item}</li>)}</ol><h2>Interpretation boundary</h2><p>{dossier.interpretation_boundary}</p><p>{story.interpretation_boundary}</p></section>
 </BaseLayout>

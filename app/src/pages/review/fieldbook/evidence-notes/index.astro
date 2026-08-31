@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import ledger from "../../../../data/phase-125-evidence-annotation-ledger.json";
+
+const topicLabels = [...new Set(ledger.evidence_annotations.map((note) => note.topic_label))].sort();
+---
+
+<BaseLayout title="Source-linked Evidence Annotations | FTFN v0.6" description={ledger.summary}>
+  <ReviewHeader eyebrow="FTFN v0.6 · Open Evidence Review" title="Source-linked evidence annotations" summary={ledger.summary} phase={125} />
+
+  <section class="page-section">
+    <div class="metric-strip" aria-label="Phase 125 evidence annotation counts">
+      <div class="metric"><strong>{ledger.counts.evidence_annotations}</strong><span>Published signals annotated</span></div>
+      <div class="metric"><strong>{ledger.counts.source_records_resolved}</strong><span>exact sources resolved</span></div>
+      <div class="metric"><strong>{ledger.counts.mission_signal_links}</strong><span>mission-context joins</span></div>
+      <div class="metric"><strong>{ledger.counts.substantive_annotation_words.toLocaleString()}</strong><span>substantive annotation words</span></div>
+      <div class="metric"><strong>{ledger.counts.deduplicated_substantive_words.toLocaleString()}</strong><span>deduplicated substantive words</span></div>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">The annotation state</div>
+      <h2>{ledger.annotation_state}</h2>
+      <p>Each entry makes the factual nucleus, provenance, permitted use, measurement limit and excluded inference visible on the signal's existing canonical route.</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label="No evidence state changed" tone="review" />
+      <h3>Context is not requirement satisfaction.</h3>
+      <p>These records can orient a mission-specific review. They cannot answer that mission, admit an artifact or close an evidence gap.</p>
+    </article>
+  </section>
+
+  {topicLabels.map((topic) => {
+    const notes = ledger.evidence_annotations.filter((note) => note.topic_label === topic);
+    return (
+    <section class="page-section">
+      <div class="section-heading"><div><div class="eyebrow">Canonical topic</div><h2>{topic}</h2><p>{notes.length} source-linked annotation{notes.length === 1 ? "" : "s"}, kept at their existing signal identities.</p></div></div>
+      <div class="signal-grid">
+        {notes.map((note) => (
+          <article class="record-card">
+            <div class="meta-row"><MetaPill label={note.note_id} /><MetaPill label={`${note.mission_ids.length} mission joins`} /></div>
+            <h3><a href={note.signal_route}>{note.evidence_identity.title}</a></h3>
+            <p>{note.annotation.factual_nucleus}</p>
+            <p class="card-note">{note.source_ids.length} exact source record{note.source_ids.length === 1 ? "" : "s"} · {note.annotation_state}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+    );
+  })}
+
+  <section class="page-section prose-page">
+    <h2>Publication boundary</h2>
+    {ledger.publication_boundaries.map((boundary) => <p>{boundary}</p>)}
+    <p><a class="inline-link" href="/data/phase-125-evidence-annotation-ledger.json">Download the Phase 125 evidence annotation ledger</a></p>
+  </section>
+</BaseLayout>

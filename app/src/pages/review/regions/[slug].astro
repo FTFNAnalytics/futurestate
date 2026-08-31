@@ -4,16 +4,19 @@ import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import ReviewHeader from "../../../components/review/ReviewHeader.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 import program from "../../../data/v031-content-expansion.json";
+import atlas from "../../../data/phase-119-deep-project-place-atlas.json";
 
 export function getStaticPaths() { return program.regions.map((record) => ({ params: { slug: record.slug }, props: { portraitId: record.portrait_id } })); }
 const portrait = program.regions.find((item) => item.portrait_id === Astro.props.portraitId)!;
+const atlasPlace = atlas.places.find((item) => item.legacy_ids.includes(portrait.portrait_id))!;
 const allSignals = await getCollection("signals");
-const haystack = (signal: (typeof allSignals)[number]) => `${signal.data.id} ${signal.data.title} ${signal.data.summary}`.toLowerCase();
-const signals = allSignals.filter((signal) => signal.data.record_status === "Published" && portrait.signal_terms.some((term) => haystack(signal).includes(term))).sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf()).slice(0, 12);
+const signalById = new Map(allSignals.map((signal) => [signal.data.id, signal]));
+const signals = atlasPlace.evidence_rails.signal_ids.map((id) => signalById.get(id)).filter(Boolean) as typeof allSignals;
 ---
 
 <BaseLayout title={`${portrait.title} | FTFN local-system review`} description={portrait.editorial_question}>
   <ReviewHeader eyebrow="Phase 112 · Local-system expansion" title={portrait.title} summary={portrait.editorial_question} phase={112} />
+  <section class="page-section"><div class="meta-row"><MetaPill label={atlasPlace.coverage.label} tone="review" /><MetaPill label={atlasPlace.atlas_place_id} /></div><p class="card-note">This portrait now resolves through explicit curated signal and source IDs. <a class="inline-link" href={atlasPlace.routes.atlas}>Open the canonical Place Atlas file</a>.</p></section>
   <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Place and system</div><h2>{portrait.geography}</h2><p>{portrait.unresolved}</p></div><article class="record-card record-card--featured"><MetaPill label={`${signals.length} related Published records`} tone="possibility" /><h3>What this portrait does</h3><p>It keeps infrastructure, authority, acceptance and outcome questions in their place-specific context.</p></article></section>
   <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Evidence shelf</div><h2>Published records selected by named-system identity.</h2></div></div><div class="signal-grid">{signals.map((signal) => <article class="record-card"><div class="meta-row"><MetaPill label={signal.data.primary_topic} /><MetaPill label={signal.data.maturity_level} /></div><h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3><p>{signal.data.summary}</p></article>)}</div></section>
   <section class="page-section prose-page"><h2>Interpretation boundary</h2><p>{portrait.interpretation_boundary}</p></section>

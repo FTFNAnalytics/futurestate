@@ -1,0 +1,160 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+import MetaPill from "../ui/MetaPill.astro";
+
+interface Props {
+  chapter: any;
+  evidenceSignals: any[];
+  sources: any[];
+  chapterKind: "Topic chapter" | "Foundation chapter";
+}
+
+const { chapter, evidenceSignals, sources, chapterKind } = Astro.props;
+---
+
+<BaseLayout title={`${chapter.title} | FTFN Encyclopedia`} description={chapter.deck}>
+  <section class="page-section">
+    <div class="eyebrow">Phase 118 · {chapterKind}</div>
+    <h1 class="page-title">{chapter.title}</h1>
+    <p class="lede">{chapter.deck}</p>
+    <div class="meta-row">
+      <MetaPill label="Published evidence only" tone="possibility" />
+      <MetaPill label={`${evidenceSignals.length} curated signals`} />
+      <MetaPill label={`${sources.length} source records`} />
+    </div>
+  </section>
+
+  <section class="page-section prose-page">
+    <div class="eyebrow">Executive synthesis</div>
+    <h2>What the current evidence says.</h2>
+    {chapter.executive_synthesis.map((paragraph: string) => <p>{paragraph}</p>)}
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Historical baseline</div>
+      <h2>Where this account begins.</h2>
+      <p>{chapter.historical_baseline}</p>
+    </article>
+    <article>
+      <div class="eyebrow">Current evidence state</div>
+      <h2>What is established now.</h2>
+      <p>{chapter.current_evidence_state}</p>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading section-heading--stacked">
+      <div>
+        <div class="eyebrow">Dependency and conversion chain</div>
+        <h2>How the claim moves from possibility to evidence.</h2>
+      </div>
+      <p>Each stage requires its own identity and artifact. A later stage is never inferred from an earlier one.</p>
+    </div>
+    <div class="grid">
+      {chapter.conversion_chain.map((step: any, index: number) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={`Stage ${index + 1}`} /></div>
+          <h3>{step.stage}</h3>
+          <p>{step.reading}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Contested interpretations</div>
+          <h2>Strong readings and the counterevidence.</h2>
+        </div>
+      </div>
+      <div class="source-list">
+        {chapter.contested_interpretations.map((item: any) => (
+          <article class="source-row">
+            <h3>{item.interpretation}</h3>
+            <p><strong>Counterevidence:</strong> {item.counterevidence}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Decisive evidence</div>
+          <h2>Records that would change the chapter.</h2>
+        </div>
+      </div>
+      <ol>{chapter.decisive_evidence.map((item: string) => <li>{item}</li>)}</ol>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Curated Published evidence</div>
+        <h2>The records behind this reading.</h2>
+        <p>These cards retain the upstream signal's topic, maturity, date and public status.</p>
+      </div>
+    </div>
+    <div class="signal-grid">
+      {evidenceSignals.map((signal) => (
+        <article class="record-card">
+          <div class="meta-row">
+            <MetaPill label={signal.data.primary_topic} />
+            <MetaPill label={signal.data.maturity_level} />
+            <MetaPill label={signal.data.record_status} tone="possibility" />
+          </div>
+          <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+          <p>{signal.data.summary}</p>
+          <p class="card-note">{signal.data.why_it_matters}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Claim boundary</div>
+          <h2>What this chapter does not prove.</h2>
+        </div>
+      </div>
+      <ul>{chapter.claim_boundaries.map((item: string) => <li>{item}</li>)}</ul>
+      <p class="muted">This synthesis creates no new observation, gate decision, causal finding, forecast, score, ranking or outcome claim.</p>
+    </div>
+    <div>
+      <div class="section-heading section-heading--stacked">
+        <div>
+          <div class="eyebrow">Primary source trail</div>
+          <h2>Inspect the authorities.</h2>
+        </div>
+      </div>
+      <div class="source-list">
+        {sources.map((source) => (
+          <article class="source-row">
+            <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
+            <p>{source.data.source_type} · {source.data.credibility_level}</p>
+            <p>{source.data.known_limitations}</p>
+            <a class="inline-link" href={source.data.url}>Open official source</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Continue reading</div>
+      <h2>Keep the synthesis connected to its evidence.</h2>
+      <p>Return to the encyclopedia shelf, inspect the machine-readable registry, or open the publication method.</p>
+      <div class="button-row">
+        <a class="inline-link" href="/review/encyclopedia/">All encyclopedia chapters</a>
+        <a class="inline-link" href="/data/phase-118-canonical-living-encyclopedia.json">Download chapter registry</a>
+        <a class="inline-link" href="/review/method/">Read the FTFN method</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

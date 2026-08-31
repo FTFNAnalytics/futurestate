@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/v06-open-evidence-review.json";
+---
+
+<BaseLayout title="FTFN v0.6 | Open Evidence Review" description={program.summary}>
+  <ReviewHeader eyebrow="v0.6 · Open Evidence Review" title="Read the evidence chain, including where it stops." summary={program.summary} />
+
+  <section class="page-section">
+    <div class="metric-strip" aria-label="Open Evidence Review counts">
+      <div class="metric"><strong>{program.counts.evidence_annotations}</strong><span>evidence annotations</span></div>
+      <div class="metric"><strong>{program.counts.mission_audits}</strong><span>mission audits</span></div>
+      <div class="metric"><strong>{program.counts.project_biographies + program.counts.place_biographies}</strong><span>delivery biographies</span></div>
+      <div class="metric"><strong>{program.counts.substantive_surfaces}</strong><span>review surfaces</span></div>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy"><div class="eyebrow">Evidence posture</div><h2>Interpretation deepens. Evidence state does not move.</h2><p>{program.evidence_posture.interpretation_state}</p><p>{program.evidence_posture.acquisition_coverage}. The next dated gate is {program.evidence_posture.next_dated_gate}.</p></div>
+    <article class="record-card record-card--featured"><MetaPill label="Overlay only" tone="review" /><h3>Immutable upstream</h3><p>v0.6 does not rewrite the acquisition packets, mission contracts, workbench joins, Atlas tiers or comparison verdicts established by v0.5.</p></article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Phases 125–129</div><h2>Five connected review layers.</h2><p>Each layer resolves exact upstream IDs and adds record-specific interpretation without creating a new fact or decision.</p></div><MetaPill label="6 public exports" tone="possibility" /></div>
+    <div class="signal-grid">
+      {program.phases.map((phase) => <article class="record-card"><MetaPill label={`Phase ${phase.phase}`} /><h3><a href={phase.hub_route}>{phase.title}</a></h3><p>{phase.summary}</p><p>{phase.enhanced_existing_routes} canonical routes deepened</p></article>)}
+    </div>
+  </section>
+
+  <section class="page-section review-columns">
+    <article><div class="eyebrow">Visible limits</div><h2>Twelve acquisition gaps remain explicit.</h2><p>The edition records where current mission shelves do not establish the copied requirements. It cannot establish that qualifying evidence does not exist outside the reviewed corpus.</p><ul>{program.gap_mission_ids.map((id) => <li>{id}</li>)}</ul></article>
+    <article><div class="eyebrow">Publication boundaries</div><h2>What this edition cannot claim.</h2><ul>{program.publication_boundaries.map((boundary) => <li>{boundary}</li>)}</ul></article>
+  </section>
+
+  <section class="page-section prose-page"><h2>Machine-readable edition</h2><p>The aggregate registry distinguishes six new hubs from 218 enhanced canonical routes and lists all five phase exports.</p><p><a href="/data/v06-open-evidence-review.json">Open the v0.6 JSON registry</a> · <a href="/data/">Browse all public datasets</a></p></section>
+</BaseLayout>

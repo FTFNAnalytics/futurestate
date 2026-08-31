@@ -1,0 +1,107 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/phase-116-coverage-architecture.json";
+
+const thinTopics = program.coverage_matrix.filter((row) => row.local_system_ids.length === 0 || row.casebook_ids.length === 0);
+---
+
+<BaseLayout title="Coverage architecture | FTFN v0.4" description={program.summary}>
+  <ReviewHeader eyebrow="FTFN v0.4 · Phase 116" title="Coverage is a public contract" summary={program.summary} phase={116} />
+
+  <section class="page-section">
+    <div class="metric-strip" aria-label="Coverage architecture counts">
+      <div class="metric"><strong>{program.counts.topics}</strong><span>canonical topics</span></div>
+      <div class="metric"><strong>{program.counts.canonical_entities}</strong><span>named entities</span></div>
+      <div class="metric"><strong>{program.counts.priority_questions}</strong><span>priority questions</span></div>
+      <div class="metric"><strong>{program.counts.quality_dimensions}</strong><span>quality dimensions</span></div>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">The governing rule</div>
+      <h2>Record volume is not evidence quality.</h2>
+      <p>{program.baseline.interpretation_boundary}</p>
+      <p>The matrix freezes the Phase 115 handoff, so later expansion can be measured against a stable starting point.</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label="No aggregate score" tone="possibility" />
+      <h3>Ten dimensions, reviewed separately</h3>
+      <p>{program.completion_rubric.rule}</p>
+      <a class="inline-link" href="/data/phase-116-coverage-architecture.json">Download the full registry</a>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div><div class="eyebrow">Coverage matrix</div><h2>Seventeen topics, one inspectable baseline.</h2><p>Counts describe the current inventory. Open each row for its four research questions, named cases, local systems and stage-by-stage work.</p></div>
+      <MetaPill label={`${thinTopics.length} topics lack a place or case`} />
+    </div>
+    <div class="table-wrap">
+      <table class="matrix-table">
+        <thead><tr><th>Topic</th><th>Published signals</th><th>Sources</th><th>Place systems</th><th>Casebooks</th><th>Latest capture</th><th>Research contract</th></tr></thead>
+        <tbody>
+          {program.coverage_matrix.map((row) => (
+            <tr>
+              <td><a href={`/review/coverage/${row.slug}/`}>{row.label}</a></td>
+              <td>{row.current_inventory.published_signals}</td>
+              <td>{row.current_inventory.registered_sources}</td>
+              <td>{row.local_system_ids.length}</td>
+              <td>{row.casebook_ids.length}</td>
+              <td>{row.current_inventory.latest_published_signal_capture_date ?? "No Published signal"}</td>
+              <td><a class="inline-link" href={`/review/coverage/${row.slug}/`}>Open four questions</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Conversion ladder</div><h2>Eight different evidence questions.</h2><p>These stages are inherited from the governed Phase 64 matrix. They are not technology-readiness levels or probabilities.</p></div></div>
+    <ol class="timeline-list">
+      {program.conversion_stages.map((stage) => <li><div class="meta-row"><MetaPill label={`Stage ${stage.sequence}`} /></div><h3>{stage.label}</h3><p>{stage.question}</p></li>)}
+    </ol>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Quality baseline</div><h2>What “complete” must mean.</h2><p>Every dimension can block publication independently. A strength in one cannot compensate for a failure in another.</p></div></div>
+    <div class="signal-grid">
+      {program.quality_dimensions.map((dimension) => (
+        <article class="record-card">
+          <MetaPill label={dimension.quality_dimension_id.replace("116-QUALITY-", "Dimension ")} />
+          <h3>{dimension.label}</h3>
+          <p><strong>Audit question:</strong> {dimension.audit_question}</p>
+          <p><strong>Minimum:</strong> {dimension.minimum_publishable_state}</p>
+          <p><strong>Failure state:</strong> {dimension.failure_state}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Identity reconciliation</div>
+      <h2>One canonical shelf, honest representation tiers.</h2>
+      <div class="source-list">
+        <div class="source-row"><strong>{program.counts.structured_local_systems} structured place records</strong><span>{program.counts.editorial_portraits_requiring_promotion} editorial portraits still need schema promotion.</span></div>
+        <div class="source-row"><strong>{program.counts.structured_conversion_casebooks} structured conversion files</strong><span>{program.counts.editorial_casebooks_requiring_promotion} editorial casebooks still need named conversion files.</span></div>
+        <div class="source-row"><strong>{program.counts.aliases} aliases</strong><span>Aliases resolve within an entity type and never silently merge nearby objects.</span></div>
+      </div>
+    </article>
+    <article>
+      <div class="eyebrow">Completion states</div>
+      <h2>Progress without a score.</h2>
+      <div class="source-list">
+        {program.completion_rubric.states.map((state) => <div class="source-row"><strong>{state.label}</strong><span>{state.definition}</span></div>)}
+      </div>
+    </article>
+  </section>
+
+  <section class="page-section prose-page">
+    <h2>Publication boundary</h2>
+    <ul>{program.publication_boundaries.map((boundary) => <li>{boundary}</li>)}</ul>
+  </section>
+</BaseLayout>

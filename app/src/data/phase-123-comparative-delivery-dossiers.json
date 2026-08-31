@@ -1,0 +1,1071 @@
+{
+  "schema_version": "1.0",
+  "program_id": "FTFN-PHASE-123-COMPARATIVE-DELIVERY-DOSSIERS",
+  "phase": 123,
+  "title": "Matched delivery dossiers",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "status": "Complete",
+  "summary": "Twelve existing cross-system stories now use explicit project, place, signal and source identities plus a comparison passport that makes compatibility and non-equivalence visible.",
+  "publication_boundary": "Phase 123 deepens twelve existing routes. It creates no new source fact, signal, observation, conversion decision, outcome, score, ranking or causal conclusion.",
+  "counts": {
+    "dossiers": 12,
+    "enhanced_existing_routes": 12,
+    "new_html_routes": 1,
+    "public_surfaces": 13,
+    "evidence_signal_links": 149,
+    "evidence_source_links": 124
+  },
+  "routes": {
+    "index": "/review/fieldbook/casebooks/",
+    "public_export": "/data/phase-123-comparative-delivery-dossiers.json",
+    "enhanced": [
+      "/review/systems/compute-power-water/",
+      "/review/systems/permission-to-operation/",
+      "/review/systems/standards-to-adoption/",
+      "/review/systems/autonomous-service-accountability/",
+      "/review/systems/research-to-assurance/",
+      "/review/systems/minerals-to-manufacturing/",
+      "/review/systems/space-capacity-to-cadence/",
+      "/review/systems/housing-infrastructure-conversion/",
+      "/review/systems/climate-water-industrial-resilience/",
+      "/review/systems/workforce-to-qualified-capacity/",
+      "/review/systems/finance-risk-and-infrastructure/",
+      "/review/systems/observation-to-outcome/"
+    ]
+  },
+  "dossiers": [
+    {
+      "dossier_id": "123-DOSSIER-001",
+      "legacy_story_id": "105-STORY-001",
+      "slug": "compute-power-water",
+      "title": "Compute, power and water",
+      "record_status": "Published",
+      "comparison_state": "Context-only matched delivery dossier",
+      "editorial_question": "What must be accepted and measured before announced compute or fab capacity becomes durable operating capacity?",
+      "topic_ids": [
+        "topic-chips-and-compute",
+        "topic-energy",
+        "topic-water"
+      ],
+      "priority_question_ids": [
+        "116-Q-017",
+        "116-Q-018",
+        "116-Q-019",
+        "116-Q-020",
+        "116-Q-037",
+        "116-Q-038",
+        "116-Q-039",
+        "116-Q-040",
+        "116-Q-065",
+        "116-Q-066",
+        "116-Q-067",
+        "116-Q-068"
+      ],
+      "atlas_project_ids": [
+        "119-PROJECT-001",
+        "119-PROJECT-003"
+      ],
+      "atlas_place_ids": [
+        "119-PLACE-003",
+        "119-PLACE-005"
+      ],
+      "evidence_signal_ids": [
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+        "signal-virginia-gs5-large-load-rate-class",
+        "signal-golden-mars-transmission-conditional-approval",
+        "signal-pjm-2026-large-load-forecast-uncertainty",
+        "signal-virginia-data-center-air-permit-trail",
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-asml-phoenix-technical-academy-operational",
+        "signal-bls-maricopa-q4-2025-employment-wage-baseline"
+      ],
+      "evidence_source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement",
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026",
+        "source-virginia-jlarc-data-centers-2024",
+        "source-loudoun-data-centers-policy",
+        "source-nist-chips",
+        "source-eia-electricity-data"
+      ],
+      "shared_dependency": "Large-load electricity, water and site infrastructure have to be accepted at the named facility before announced compute or fabrication capacity can be read as durable operation.",
+      "comparison_passport": {
+        "identity": "Every row resolves to a Phase 119 Atlas ID and its Phase 116 canonical entity; nearby organizations, regions and programs are not silently merged.",
+        "period": "Each underlying record retains its own dated period. The dossier does not force asynchronous events into a common observation window.",
+        "unit_and_denominator": "No shared performance denominator has been admitted. The dossier compares evidence structure and stopping points only.",
+        "authority_and_provenance": "Signal and source IDs are inherited explicitly from the selected Atlas records; the dossier creates no source fact or evidence decision.",
+        "method_compatibility": "Context-only comparison of conversion stages, dependencies and missing artifacts; no effect size, causal estimate or normalized performance measure.",
+        "verdict": "Context only"
+      },
+      "what_is_comparable": "The files can be compared as evidence chains: named demand, public authority, infrastructure commitment, implementation milestone and the still-missing accepted-service record.",
+      "what_must_not_be_compared": "Power demand, wafer output, water use and economic value use different entities, periods and denominators; they cannot be normalized into a project-performance comparison.",
+      "decisive_next_evidence": "Facility-specific accepted utility service, commissioning, qualification, customer acceptance and repeated output records with stable denominators.",
+      "reader_checklist": [
+        "Confirm every named case resolves to the displayed canonical project or place ID.",
+        "Keep each event at its source-supported conversion stage.",
+        "Inspect the period, unit and denominator before comparing any quantity.",
+        "Treat missing or incompatible evidence as a result, not permission to estimate.",
+        "Follow each decisive next artifact before revising the comparison passport."
+      ],
+      "route": "/review/systems/compute-power-water/",
+      "interpretation_boundary": "This dossier compares evidence paths and open gates. It does not rank projects or places, normalize incompatible measures, infer causation, or create an observation, outcome or operating decision."
+    },
+    {
+      "dossier_id": "123-DOSSIER-002",
+      "legacy_story_id": "105-STORY-002",
+      "slug": "permission-to-operation",
+      "title": "Permission is not operation",
+      "record_status": "Published",
+      "comparison_state": "Context-only matched delivery dossier",
+      "editorial_question": "Where do permits, tariffs, finance and local legitimacy stop—and what evidence begins the operating claim?",
+      "topic_ids": [
+        "topic-policy-and-standards",
+        "topic-finance-and-risk",
+        "topic-human-futures"
+      ],
+      "priority_question_ids": [
+        "116-Q-053",
+        "116-Q-054",
+        "116-Q-055",
+        "116-Q-056",
+        "116-Q-041",
+        "116-Q-042",
+        "116-Q-043",
+        "116-Q-044",
+        "116-Q-045",
+        "116-Q-046",
+        "116-Q-047",
+        "116-Q-048"
+      ],
+      "atlas_project_ids": [
+        "119-PROJECT-002",
+        "119-PROJECT-004",
+        "119-PROJECT-005",
+        "119-PROJECT-001"
+      ],
+      "atlas_place_ids": [
+        "119-PLACE-004",
+        "119-PLACE-001",
+        "119-PLACE-002",
+        "119-PLACE-005"
+      ],
+      "evidence_signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-toronto-2025-development-pipeline-delivery-gap",
+        "signal-faa-starship-lc39a-environmental-decision",
+        "signal-slc40-final-environmental-decision",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+        "signal-cmhc-june-2026-toronto-construction-stage-baseline",
+        "signal-ieso-2026-ontario-demand-toronto-distribution-stack",
+        "signal-statcan-building-permits-construction-intentions-signal",
+        "signal-faa-part450-operator-transition",
+        "signal-kennedy-multiuser-master-plan",
+        "signal-rhyolite-ridge-federal-land-authorization",
+        "signal-thacker-pass-air-permit-compliance-contract",
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-asml-phoenix-technical-academy-operational",
+        "signal-bls-maricopa-q4-2025-employment-wage-baseline"
+      ],
+      "evidence_source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025",
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025",
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement",
+        "source-cmhc-housing-market-information-portal",
+        "source-cmhc-starts-completions-under-construction",
+        "source-nasa-kennedy-master-plan-2026",
+        "source-faa-spaceports-by-state-2026",
+        "source-blm-thacker-pass-rod-2021",
+        "source-nist-chips",
+        "source-eia-electricity-data"
+      ],
+      "shared_dependency": "A decision, permit, tariff, loan or agreement changes what may proceed; later construction, inspection, acceptance and operation records establish what actually did.",
+      "comparison_passport": {
+        "identity": "Every row resolves to a Phase 119 Atlas ID and its Phase 116 canonical entity; nearby organizations, regions and programs are not silently merged.",
+        "period": "Each underlying record retains its own dated period. The dossier does not force asynchronous events into a common observation window.",
+        "unit_and_denominator": "No shared performance denominator has been admitted. The dossier compares evidence structure and stopping points only.",
+        "authority_and_provenance": "Signal and source IDs are inherited explicitly from the selected Atlas records; the dossier creates no source fact or evidence decision.",
+        "method_compatibility": "Context-only comparison of conversion stages, dependencies and missing artifacts; no effect size, causal estimate or normalized performance measure.",
+        "verdict": "Context only"
+      },
+      "what_is_comparable": "Each file exposes the boundary between permission or commitment and a later receiving-system event.",
+      "what_must_not_be_compared": "Different legal instruments do not confer equivalent authority, and an approved land-use file cannot be compared as performance with a mine, launch site or semiconductor facility.",
+      "decisive_next_evidence": "The next case-specific enactment, condition-clearance, permit, inspection, commissioning, acceptance or recurring-operation artifact named in each Atlas file.",
+      "reader_checklist": [
+        "Confirm every named case resolves to the displayed canonical project or place ID.",
+        "Keep each event at its source-supported conversion stage.",
+        "Inspect the period, unit and denominator before comparing any quantity.",
+        "Treat missing or incompatible evidence as a result, not permission to estimate.",
+        "Follow each decisive next artifact before revising the comparison passport."
+      ],
+      "route": "/review/systems/permission-to-operation/",
+      "interpretation_boundary": "This dossier compares evidence paths and open gates. It does not rank projects or places, normalize incompatible measures, infer causation, or create an observation, outcome or operating decision."
+    },
+    {
+      "dossier_id": "123-DOSSIER-003",
+      "legacy_story_id": "105-STORY-003",
+      "slug": "standards-to-adoption",
+      "title": "Standards to adoption",
+      "record_status": "Published",
+      "comparison_state": "Context-only matched delivery dossier",
+      "editorial_question": "Which inventories, procurements, tests, cutovers and retirements distinguish a published standard from completed adoption?",
+      "topic_ids": [
+        "topic-quantum",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "priority_question_ids": [
+        "116-Q-057",
+        "116-Q-058",
+        "116-Q-059",
+        "116-Q-060",
+        "116-Q-029",
+        "116-Q-030",
+        "116-Q-031",
+        "116-Q-032",
+        "116-Q-053",
+        "116-Q-054",
+        "116-Q-055",
+        "116-Q-056"
+      ],
+      "atlas_project_ids": [
+        "119-PROJECT-006",
+        "119-PROJECT-007",
+        "119-PROJECT-023",
+        "119-PROJECT-008"
+      ],
+      "atlas_place_ids": [
+        "119-PLACE-008",
+        "119-PLACE-006"
+      ],
+      "evidence_signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-federal-pqc-migration-plans-and-deadlines",
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-57e-montana-bead-active-subscriber-test-control",
+        "signal-57e-montana-bead-availability-acceptance-control",
+        "signal-57e-montana-bead-latency-acceptance-control",
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-56a-california-av-miles",
+        "signal-california-av-testing-exceeds-nine-million-miles-2025",
+        "signal-california-av-testing-miles-2024"
+      ],
+      "evidence_source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration",
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-57e-montana-bead-faq-july-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026",
+        "source-56a-california-av-testing-2021-2022",
+        "source-56a-california-av-testing-2022-2023"
+      ],
+      "shared_dependency": "Published standards and program rules become adoption evidence only through named inventories, procurements, tests, accepted cutovers, users or services.",
+      "comparison_passport": {
+        "identity": "Every row resolves to a Phase 119 Atlas ID and its Phase 116 canonical entity; nearby organizations, regions and programs are not silently merged.",
+        "period": "Each underlying record retains its own dated period. The dossier does not force asynchronous events into a common observation window.",
+        "unit_and_denominator": "No shared performance denominator has been admitted. The dossier compares evidence structure and stopping points only.",
+        "authority_and_provenance": "Signal and source IDs are inherited explicitly from the selected Atlas records; the dossier creates no source fact or evidence decision.",
+        "method_compatibility": "Context-only comparison of conversion stages, dependencies and missing artifacts; no effect size, causal estimate or normalized performance measure.",
+        "verdict": "Context only"
+      },
+      "what_is_comparable": "The cases can be read against a common adoption chain from rule or framework to an identified receiving system and observable implementation event.",
+      "what_must_not_be_compared": "Cryptographic migration, assurance evaluation, broadband adoption and autonomous service have incompatible units and acceptance authorities.",
+      "decisive_next_evidence": "Stable inventories, named receiving organizations, acceptance criteria, dated cutovers and repeated-use records that distinguish availability from adoption.",
+      "reader_checklist": [
+        "Confirm every named case resolves to the displayed canonical project or place ID.",
+        "Keep each event at its source-supported conversion stage.",
+        "Inspect the period, unit and denominator before comparing any quantity.",
+        "Treat missing or incompatible evidence as a result, not permission to estimate.",
+        "Follow each decisive next artifact before revising the comparison passport."
+      ],
+      "route": "/review/systems/standards-to-adoption/",
+      "interpretation_boundary": "This dossier compares evidence paths and open gates. It does not rank projects or places, normalize incompatible measures, infer causation, or create an observation, outcome or operating decision."
+    },
+    {
+      "dossier_id": "123-DOSSIER-004",
+      "legacy_story_id": "105-STORY-004",
+      "slug": "autonomous-service-accountability",
+      "title": "Autonomous service and public accountability",
+      "record_status": "Published",
+      "comparison_state": "Context-only matched delivery dossier",
+      "editorial_question": "Which exposure, service, accessibility, complaint and safety denominators make an operating autonomy claim publicly legible?",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "priority_question_ids": [
+        "116-Q-049",
+        "116-Q-050",
+        "116-Q-051",
+        "116-Q-052",
+        "116-Q-053",
+        "116-Q-054",
+        "116-Q-055",
+        "116-Q-056",
+        "116-Q-045",
+        "116-Q-046",
+        "116-Q-047",
+        "116-Q-048"
+      ],
+      "atlas_project_ids": [
+        "119-PROJECT-008",
+        "119-PROJECT-021"
+      ],
+      "atlas_place_ids": [
+        "119-PLACE-006",
+        "119-PLACE-010"
+      ],
+      "evidence_signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-57a-dot-amtrak-station-accessibility-fy2025",
+        "signal-57b-amtrak-eight-station-final-completion-cohort",
+        "signal-57b-amtrak-eleven-station-passenger-use-cohort",
+        "signal-56a-california-av-miles",
+        "signal-california-av-testing-exceeds-nine-million-miles-2025",
+        "signal-california-av-testing-miles-2024"
+      ],
+      "evidence_source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026",
+        "source-57a-dot-fy2027-performance-plan-fy2025-report",
+        "source-57b-amtrak-ada-progress-june-2026",
+        "source-56a-california-av-testing-2021-2022",
+        "source-56a-california-av-testing-2022-2023"
+      ],
+      "shared_dependency": "A mobility service claim becomes publicly accountable when the operating geography, exposure, user access, service quantity, exceptions and safety denominator are all visible.",
+      "comparison_passport": {
+        "identity": "Every row resolves to a Phase 119 Atlas ID and its Phase 116 canonical entity; nearby organizations, regions and programs are not silently merged.",
+        "period": "Each underlying record retains its own dated period. The dossier does not force asynchronous events into a common observation window.",
+        "unit_and_denominator": "No shared performance denominator has been admitted. The dossier compares evidence structure and stopping points only.",
+        "authority_and_provenance": "Signal and source IDs are inherited explicitly from the selected Atlas records; the dossier creates no source fact or evidence decision.",
+        "method_compatibility": "Context-only comparison of conversion stages, dependencies and missing artifacts; no effect size, causal estimate or normalized performance measure.",
+        "verdict": "Context only"
+      },
+      "what_is_comparable": "Both files connect public authority to a named passenger-facing service and expose the additional records needed to evaluate access and reliability.",
+      "what_must_not_be_compared": "Autonomous-vehicle miles and accessible-station delivery are different service units and must not be collapsed into one mobility score.",
+      "decisive_next_evidence": "Repeated service, accessibility, complaint, incident and exposure series with stable geography, fleet or station identities and revision notes.",
+      "reader_checklist": [
+        "Confirm every named case resolves to the displayed canonical project or place ID.",
+        "Keep each event at its source-supported conversion stage.",
+        "Inspect the period, unit and denominator before comparing any quantity.",
+        "Treat missing or incompatible evidence as a result, not permission to estimate.",
+        "Follow each decisive next artifact before revising the comparison passport."
+      ],
+      "route": "/review/systems/autonomous-service-accountability/",
+      "interpretation_boundary": "This dossier compares evidence paths and open gates. It does not rank projects or places, normalize incompatible measures, infer causation, or create an observation, outcome or operating decision."
+    },
+    {
+      "dossier_id": "123-DOSSIER-005",
+      "legacy_story_id": "105-STORY-005",
+      "slug": "research-to-assurance",
+      "title": "Research to assurance",
+      "record_status": "Published",
+      "comparison_state": "Context-only matched delivery dossier",
+      "editorial_question": "What separates a successful evaluation from authorization, continuous monitoring and changed mission outcomes?",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-discovery-technologies",
+        "topic-cybersecurity"
+      ],
+      "priority_question_ids": [
+        "116-Q-009",
+        "116-Q-010",
+        "116-Q-011",
+        "116-Q-012",
+        "116-Q-033",
+        "116-Q-034",
+        "116-Q-035",
+        "116-Q-036",
+        "116-Q-029",
+        "116-Q-030",
+        "116-Q-031",
+        "116-Q-032"
+      ],
+      "atlas_project_ids": [
+        "119-PROJECT-007",
+        "119-PROJECT-006"
+      ],
+      "atlas_place_ids": [
+        "119-PLACE-006",
+        "119-PLACE-008"
+      ],
+      "evidence_signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-gsa-pqc-procurement-paths",
+        "signal-federal-pqc-migration-plans-and-deadlines",
+        "signal-56a-california-av-miles",
+        "signal-california-av-testing-exceeds-nine-million-miles-2025",
+        "signal-california-av-testing-miles-2024",
+        "signal-57e-montana-bead-active-subscriber-test-control",
+        "signal-57e-montana-bead-availability-acceptance-control",
+        "signal-57e-montana-bead-latency-acceptance-control"
+      ],
+      "evidence_source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration",
+        "source-56a-california-av-testing-2021-2022",
+        "source-56a-california-av-testing-2022-2023",
+        "source-57e-montana-bead-faq-july-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026"
+      ],
+      "shared_dependency": "An evaluation or technical standard matters operationally only when a named institution accepts it, implements controls and records performance and exceptions over time.",
+      "comparison_passport": {
+        "identity": "Every row resolves to a Phase 119 Atlas ID and its Phase 116 canonical entity; nearby organizations, regions and programs are not silently merged.",
+        "period": "Each underlying record retains its own dated period. The dossier does not force asynchronous events into a common observation window.",
+        "unit_and_denominator": "No shared performance denominator has been admitted. The dossier compares evidence structure and stopping points only.",
+        "authority_and_provenance": "Signal and source IDs are inherited explicitly from the selected Atlas records; the dossier creates no source fact or evidence decision.",
+        "method_compatibility": "Context-only comparison of conversion stages, dependencies and missing artifacts; no effect size, causal estimate or normalized performance measure.",
+        "verdict": "Context only"
+      },
+      "what_is_comparable": "The cases share a progression from technical framework to institutional use, with explicit separation between evaluation, authorization and operation.",
+      "what_must_not_be_compared": "Test results, procurement actions, migration progress and service outcomes are distinct claim types and cannot substitute for one another.",
+      "decisive_next_evidence": "Receiving-institution acceptance, deployed configuration, monitoring, exception handling and repeated mission-use records tied to the evaluated system.",
+      "reader_checklist": [
+        "Confirm every named case resolves to the displayed canonical project or place ID.",
+        "Keep each event at its source-supported conversion stage.",
+        "Inspect the period, unit and denominator before comparing any quantity.",
+        "Treat missing or incompatible evidence as a result, not permission to estimate.",
+        "Follow each decisive next artifact before revising the comparison passport."
+      ],
+      "route": "/review/systems/research-to-assurance/",
+      "interpretation_boundary": "This dossier compares evidence paths and open gates. It does not rank projects or places, normalize incompatible measures, infer causation, or create an observation, outcome or operating decision."
+    },
+    {
+      "dossier_id": "123-DOSSIER-006",
+      "legacy_story_id": "105-STORY-006",
+      "slug": "minerals-to-manufacturing",
+      "title": "Minerals to manufacturing",
+      "record_status": "Published",
+      "comparison_state": "Context-only matched delivery dossier",
+      "editorial_question": "Which construction, commissioning, qualification and customer-acceptance gates connect resources to dependable industrial supply?",
+      "topic_ids": [
+        "topic-critical-minerals",
+        "topic-advanced-manufacturing",
+        "topic-energy"
+      ],
+      "priority_question_ids": [
+        "116-Q-025",
+        "116-Q-026",
+        "116-Q-027",
+        "116-Q-028",
+        "116-Q-001",
+        "116-Q-002",
+        "116-Q-003",
+        "116-Q-004",
+        "116-Q-037",
+        "116-Q-038",
+        "116-Q-039",
+        "116-Q-040"
+      ],
+      "atlas_project_ids": [
+        "119-PROJECT-005",
+        "119-PROJECT-001",
+        "119-PROJECT-018",
+        "119-PROJECT-019"
+      ],
+      "atlas_place_ids": [
+        "119-PLACE-002",
+        "119-PLACE-005"
+      ],
+      "evidence_signal_ids": [
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+        "signal-56b-current-applications-output-panel",
+        "signal-56c-current-applications-drivers",
+        "signal-56b-island-components-output-panel",
+        "signal-56c-island-components-drivers",
+        "signal-56l-island-components-certified-employment",
+        "signal-rhyolite-ridge-federal-land-authorization",
+        "signal-thacker-pass-air-permit-compliance-contract",
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-asml-phoenix-technical-academy-operational",
+        "signal-bls-maricopa-q4-2025-employment-wage-baseline"
+      ],
+      "evidence_source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025",
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement",
+        "source-56b-nist-mep-current-applications-lean",
+        "source-56c-current-applications-capabilities",
+        "source-56b-nist-mep-island-components-lean",
+        "source-56c-island-components-acquisition-2021",
+        "source-blm-thacker-pass-rod-2021",
+        "source-nist-chips",
+        "source-eia-electricity-data"
+      ],
+      "shared_dependency": "Industrial supply requires more than resource or facility announcements: permitting, construction, process qualification, customer acceptance and repeat output remain separate gates.",
+      "comparison_passport": {
+        "identity": "Every row resolves to a Phase 119 Atlas ID and its Phase 116 canonical entity; nearby organizations, regions and programs are not silently merged.",
+        "period": "Each underlying record retains its own dated period. The dossier does not force asynchronous events into a common observation window.",
+        "unit_and_denominator": "No shared performance denominator has been admitted. The dossier compares evidence structure and stopping points only.",
+        "authority_and_provenance": "Signal and source IDs are inherited explicitly from the selected Atlas records; the dossier creates no source fact or evidence decision.",
+        "method_compatibility": "Context-only comparison of conversion stages, dependencies and missing artifacts; no effect size, causal estimate or normalized performance measure.",
+        "verdict": "Context only"
+      },
+      "what_is_comparable": "The selected files can be compared as conversion sequences from financed or permitted capacity to qualified, receiver-visible production.",
+      "what_must_not_be_compared": "Mineral tonnes, semiconductor wafers and component output are not compatible denominators and do not support a cross-industry productivity ranking.",
+      "decisive_next_evidence": "Named commissioning and process-qualification records, customer acceptance, repeat lots or units, yield and delivery data, and disclosed interruptions.",
+      "reader_checklist": [
+        "Confirm every named case resolves to the displayed canonical project or place ID.",
+        "Keep each event at its source-supported conversion stage.",
+        "Inspect the period, unit and denominator before comparing any quantity.",
+        "Treat missing or incompatible evidence as a result, not permission to estimate.",
+        "Follow each decisive next artifact before revising the comparison passport."
+      ],
+      "route": "/review/systems/minerals-to-manufacturing/",
+      "interpretation_boundary": "This dossier compares evidence paths and open gates. It does not rank projects or places, normalize incompatible measures, infer causation, or create an observation, outcome or operating decision."
+    },
+    {
+      "dossier_id": "123-DOSSIER-007",
+      "legacy_story_id": "105-STORY-007",
+      "slug": "space-capacity-to-cadence",
+      "title": "Space capacity to mission cadence",
+      "record_status": "Published",
+      "comparison_state": "Context-only matched delivery dossier",
+      "editorial_question": "How do site authority, range capacity, utilities and accepted assets become repeated missions rather than one-off milestones?",
+      "topic_ids": [
+        "topic-space",
+        "topic-aviation",
+        "topic-energy"
+      ],
+      "priority_question_ids": [
+        "116-Q-061",
+        "116-Q-062",
+        "116-Q-063",
+        "116-Q-064",
+        "116-Q-013",
+        "116-Q-014",
+        "116-Q-015",
+        "116-Q-016",
+        "116-Q-037",
+        "116-Q-038",
+        "116-Q-039",
+        "116-Q-040"
+      ],
+      "atlas_project_ids": [
+        "119-PROJECT-004",
+        "119-PROJECT-016",
+        "119-PROJECT-017"
+      ],
+      "atlas_place_ids": [
+        "119-PLACE-001"
+      ],
+      "evidence_signal_ids": [
+        "signal-faa-starship-lc39a-environmental-decision",
+        "signal-slc40-final-environmental-decision",
+        "signal-56e-f15ex-st-louis-line-alternative-test",
+        "signal-56e-f15ex-st-louis-line-dossier",
+        "signal-56e-f15ex-st-louis-line-panel",
+        "signal-56e-kc46-everett-line-alternative-test",
+        "signal-56e-kc46-everett-line-dossier",
+        "signal-56e-kc46-everett-line-panel",
+        "signal-faa-part450-operator-transition",
+        "signal-kennedy-multiuser-master-plan"
+      ],
+      "evidence_source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-56e-f15ex-gao-2025",
+        "source-56e-f15ex-production-resumes-2025",
+        "source-56e-kc46-100th-delivery-2025",
+        "source-56e-kc46-105th-delivery-2026",
+        "source-nasa-kennedy-master-plan-2026",
+        "source-faa-spaceports-by-state-2026"
+      ],
+      "shared_dependency": "Authorized infrastructure and delivered assets become durable capacity only through receiving-system acceptance, available support systems and repeated mission performance.",
+      "comparison_passport": {
+        "identity": "Every row resolves to a Phase 119 Atlas ID and its Phase 116 canonical entity; nearby organizations, regions and programs are not silently merged.",
+        "period": "Each underlying record retains its own dated period. The dossier does not force asynchronous events into a common observation window.",
+        "unit_and_denominator": "No shared performance denominator has been admitted. The dossier compares evidence structure and stopping points only.",
+        "authority_and_provenance": "Signal and source IDs are inherited explicitly from the selected Atlas records; the dossier creates no source fact or evidence decision.",
+        "method_compatibility": "Context-only comparison of conversion stages, dependencies and missing artifacts; no effect size, causal estimate or normalized performance measure.",
+        "verdict": "Context only"
+      },
+      "what_is_comparable": "Each case distinguishes a capacity-enabling milestone from later mission or readiness evidence.",
+      "what_must_not_be_compared": "Launch cadence, aircraft delivery and fleet availability have different assets, missions, periods and denominators.",
+      "decisive_next_evidence": "Named asset acceptance, range or base availability, repeat mission records, downtime and exception reporting for a stable cohort and period.",
+      "reader_checklist": [
+        "Confirm every named case resolves to the displayed canonical project or place ID.",
+        "Keep each event at its source-supported conversion stage.",
+        "Inspect the period, unit and denominator before comparing any quantity.",
+        "Treat missing or incompatible evidence as a result, not permission to estimate.",
+        "Follow each decisive next artifact before revising the comparison passport."
+      ],
+      "route": "/review/systems/space-capacity-to-cadence/",
+      "interpretation_boundary": "This dossier compares evidence paths and open gates. It does not rank projects or places, normalize incompatible measures, infer causation, or create an observation, outcome or operating decision."
+    },
+    {
+      "dossier_id": "123-DOSSIER-008",
+      "legacy_story_id": "105-STORY-008",
+      "slug": "housing-infrastructure-conversion",
+      "title": "Housing and infrastructure conversion",
+      "record_status": "Published",
+      "comparison_state": "Context-only matched delivery dossier",
+      "editorial_question": "Which enactment, servicing, financing, construction and occupancy records reveal the distance between approvals and delivered homes?",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "priority_question_ids": [
+        "116-Q-045",
+        "116-Q-046",
+        "116-Q-047",
+        "116-Q-048",
+        "116-Q-041",
+        "116-Q-042",
+        "116-Q-043",
+        "116-Q-044",
+        "116-Q-053",
+        "116-Q-054",
+        "116-Q-055",
+        "116-Q-056"
+      ],
+      "atlas_project_ids": [
+        "119-PROJECT-002",
+        "119-PROJECT-003",
+        "119-PROJECT-001"
+      ],
+      "atlas_place_ids": [
+        "119-PLACE-004",
+        "119-PLACE-003",
+        "119-PLACE-005"
+      ],
+      "evidence_signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-toronto-2025-development-pipeline-delivery-gap",
+        "signal-virginia-gs5-large-load-rate-class",
+        "signal-golden-mars-transmission-conditional-approval",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+        "signal-cmhc-june-2026-toronto-construction-stage-baseline",
+        "signal-ieso-2026-ontario-demand-toronto-distribution-stack",
+        "signal-statcan-building-permits-construction-intentions-signal",
+        "signal-pjm-2026-large-load-forecast-uncertainty",
+        "signal-virginia-data-center-air-permit-trail",
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-asml-phoenix-technical-academy-operational",
+        "signal-bls-maricopa-q4-2025-employment-wage-baseline"
+      ],
+      "evidence_source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025",
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026",
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement",
+        "source-cmhc-housing-market-information-portal",
+        "source-cmhc-starts-completions-under-construction",
+        "source-virginia-jlarc-data-centers-2024",
+        "source-loudoun-data-centers-policy",
+        "source-nist-chips",
+        "source-eia-electricity-data"
+      ],
+      "shared_dependency": "Land-use authority, servicing, finance and construction capacity have to converge before approvals become occupied homes or functioning facilities.",
+      "comparison_passport": {
+        "identity": "Every row resolves to a Phase 119 Atlas ID and its Phase 116 canonical entity; nearby organizations, regions and programs are not silently merged.",
+        "period": "Each underlying record retains its own dated period. The dossier does not force asynchronous events into a common observation window.",
+        "unit_and_denominator": "No shared performance denominator has been admitted. The dossier compares evidence structure and stopping points only.",
+        "authority_and_provenance": "Signal and source IDs are inherited explicitly from the selected Atlas records; the dossier creates no source fact or evidence decision.",
+        "method_compatibility": "Context-only comparison of conversion stages, dependencies and missing artifacts; no effect size, causal estimate or normalized performance measure.",
+        "verdict": "Context only"
+      },
+      "what_is_comparable": "The files reveal how local authority and infrastructure conditions create sequential delivery gates.",
+      "what_must_not_be_compared": "Dwelling units, data-center load and fab capacity cannot be compared as equivalent outputs, and regional aggregates cannot stand in for project delivery.",
+      "decisive_next_evidence": "Enacted instruments, cleared conditions, permits, completed servicing, inspections, occupancy or accepted facility-service records at the named site.",
+      "reader_checklist": [
+        "Confirm every named case resolves to the displayed canonical project or place ID.",
+        "Keep each event at its source-supported conversion stage.",
+        "Inspect the period, unit and denominator before comparing any quantity.",
+        "Treat missing or incompatible evidence as a result, not permission to estimate.",
+        "Follow each decisive next artifact before revising the comparison passport."
+      ],
+      "route": "/review/systems/housing-infrastructure-conversion/",
+      "interpretation_boundary": "This dossier compares evidence paths and open gates. It does not rank projects or places, normalize incompatible measures, infer causation, or create an observation, outcome or operating decision."
+    },
+    {
+      "dossier_id": "123-DOSSIER-009",
+      "legacy_story_id": "105-STORY-009",
+      "slug": "climate-water-industrial-resilience",
+      "title": "Climate, water and industrial resilience",
+      "record_status": "Published",
+      "comparison_state": "Context-only matched delivery dossier",
+      "editorial_question": "Which local hazard, service and facility measurements connect climate context to actual industrial resilience?",
+      "topic_ids": [
+        "topic-climate",
+        "topic-water",
+        "topic-advanced-manufacturing"
+      ],
+      "priority_question_ids": [
+        "116-Q-021",
+        "116-Q-022",
+        "116-Q-023",
+        "116-Q-024",
+        "116-Q-065",
+        "116-Q-066",
+        "116-Q-067",
+        "116-Q-068",
+        "116-Q-001",
+        "116-Q-002",
+        "116-Q-003",
+        "116-Q-004"
+      ],
+      "atlas_project_ids": [
+        "119-PROJECT-001",
+        "119-PROJECT-005",
+        "119-PROJECT-022",
+        "119-PROJECT-010"
+      ],
+      "atlas_place_ids": [
+        "119-PLACE-005",
+        "119-PLACE-002",
+        "119-PLACE-009",
+        "119-PLACE-015"
+      ],
+      "evidence_signal_ids": [
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates",
+        "signal-56z-hanford-dflaw-accepted-operation-sequence",
+        "signal-57a-hanford-idf-regulator-confirmed-acceptance",
+        "signal-57a-hanford-law-facility-regulator-confirmed-operation",
+        "signal-56b-moss-landing-capacity-panel",
+        "signal-56c-moss-landing-constraints",
+        "signal-56d-moss-landing-repeat-test",
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-asml-phoenix-technical-academy-operational",
+        "signal-bls-maricopa-q4-2025-employment-wage-baseline",
+        "signal-rhyolite-ridge-federal-land-authorization",
+        "signal-thacker-pass-air-permit-compliance-contract"
+      ],
+      "evidence_source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement",
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025",
+        "source-56x-hanford-first-ilaw-disposal-2026",
+        "source-56x-hanford-vitrification-100k-2026",
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-nist-chips",
+        "source-eia-electricity-data",
+        "source-blm-thacker-pass-rod-2021"
+      ],
+      "shared_dependency": "Climate and hazard context becomes an industrial-resilience claim only through site-level service, exposure, operating, interruption and recovery evidence.",
+      "comparison_passport": {
+        "identity": "Every row resolves to a Phase 119 Atlas ID and its Phase 116 canonical entity; nearby organizations, regions and programs are not silently merged.",
+        "period": "Each underlying record retains its own dated period. The dossier does not force asynchronous events into a common observation window.",
+        "unit_and_denominator": "No shared performance denominator has been admitted. The dossier compares evidence structure and stopping points only.",
+        "authority_and_provenance": "Signal and source IDs are inherited explicitly from the selected Atlas records; the dossier creates no source fact or evidence decision.",
+        "method_compatibility": "Context-only comparison of conversion stages, dependencies and missing artifacts; no effect size, causal estimate or normalized performance measure.",
+        "verdict": "Context only"
+      },
+      "what_is_comparable": "The cases can be checked for whether hazard, water, safety and operating boundaries are named at the same asset or receiving system.",
+      "what_must_not_be_compared": "Hazard projections, water agreements, safety events and production performance describe different phenomena and cannot be blended into a resilience score.",
+      "decisive_next_evidence": "Compatible site-level resource use, hazard exposure, interruption, recovery and repeated-operation measures with asset identities and revision history.",
+      "reader_checklist": [
+        "Confirm every named case resolves to the displayed canonical project or place ID.",
+        "Keep each event at its source-supported conversion stage.",
+        "Inspect the period, unit and denominator before comparing any quantity.",
+        "Treat missing or incompatible evidence as a result, not permission to estimate.",
+        "Follow each decisive next artifact before revising the comparison passport."
+      ],
+      "route": "/review/systems/climate-water-industrial-resilience/",
+      "interpretation_boundary": "This dossier compares evidence paths and open gates. It does not rank projects or places, normalize incompatible measures, infer causation, or create an observation, outcome or operating decision."
+    },
+    {
+      "dossier_id": "123-DOSSIER-010",
+      "legacy_story_id": "105-STORY-010",
+      "slug": "workforce-to-qualified-capacity",
+      "title": "Workforce to qualified capacity",
+      "record_status": "Published",
+      "comparison_state": "Context-only matched delivery dossier",
+      "editorial_question": "How do training seats, completions, placements, retention and facility qualification combine into an evidenced capacity claim?",
+      "topic_ids": [
+        "topic-advanced-manufacturing",
+        "topic-chips-and-compute",
+        "topic-human-futures"
+      ],
+      "priority_question_ids": [
+        "116-Q-001",
+        "116-Q-002",
+        "116-Q-003",
+        "116-Q-004",
+        "116-Q-017",
+        "116-Q-018",
+        "116-Q-019",
+        "116-Q-020",
+        "116-Q-045",
+        "116-Q-046",
+        "116-Q-047",
+        "116-Q-048"
+      ],
+      "atlas_project_ids": [
+        "119-PROJECT-001",
+        "119-PROJECT-018",
+        "119-PROJECT-019",
+        "119-PROJECT-020",
+        "119-PROJECT-015"
+      ],
+      "atlas_place_ids": [
+        "119-PLACE-005",
+        "119-PLACE-011"
+      ],
+      "evidence_signal_ids": [
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+        "signal-56b-current-applications-output-panel",
+        "signal-56c-current-applications-drivers",
+        "signal-56b-island-components-output-panel",
+        "signal-56c-island-components-drivers",
+        "signal-56l-island-components-certified-employment",
+        "signal-56b-monaghan-medical-output-panel",
+        "signal-56c-monaghan-medical-drivers",
+        "signal-56d-monaghan-medical-repeat-test",
+        "signal-56e-f35-fort-worth-line-alternative-test",
+        "signal-56e-f35-fort-worth-line-dossier",
+        "signal-56e-f35-fort-worth-line-panel",
+        "signal-aps-tsmc-service-territory-capacity-boundary",
+        "signal-asml-phoenix-technical-academy-operational",
+        "signal-bls-maricopa-q4-2025-employment-wage-baseline",
+        "signal-56w-nnsa-pit-production-project-cost-trail",
+        "signal-56x-nnsa-lap4-baseline-change-series",
+        "signal-56x-nnsa-major-project-portfolio-performance"
+      ],
+      "evidence_source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement",
+        "source-56b-nist-mep-current-applications-lean",
+        "source-56c-current-applications-capabilities",
+        "source-56b-nist-mep-island-components-lean",
+        "source-56c-island-components-acquisition-2021",
+        "source-56b-nist-mep-monaghan-medical-lean",
+        "source-56c-monaghan-iso14001-2024",
+        "source-56e-f35-lockheed-deliveries-2025",
+        "source-56e-f35-gao-sustainment-2026",
+        "source-nist-chips",
+        "source-eia-electricity-data",
+        "source-56w-nnsa-fy2027-weapons-activities",
+        "source-56q-gao-23-104661-recommendation-status"
+      ],
+      "shared_dependency": "Training and employment become production capacity only when qualified roles, equipment, processes, accepted output and retention are linked at the named facility.",
+      "comparison_passport": {
+        "identity": "Every row resolves to a Phase 119 Atlas ID and its Phase 116 canonical entity; nearby organizations, regions and programs are not silently merged.",
+        "period": "Each underlying record retains its own dated period. The dossier does not force asynchronous events into a common observation window.",
+        "unit_and_denominator": "No shared performance denominator has been admitted. The dossier compares evidence structure and stopping points only.",
+        "authority_and_provenance": "Signal and source IDs are inherited explicitly from the selected Atlas records; the dossier creates no source fact or evidence decision.",
+        "method_compatibility": "Context-only comparison of conversion stages, dependencies and missing artifacts; no effect size, causal estimate or normalized performance measure.",
+        "verdict": "Context only"
+      },
+      "what_is_comparable": "The records can be compared for the presence or absence of links between workforce preparation and receiver-accepted output.",
+      "what_must_not_be_compared": "Graduates, jobs, headcount, units delivered and availability are not interchangeable measures of capacity.",
+      "decisive_next_evidence": "Role-level qualification, placement and retention joined to line qualification, accepted output, yield and delivery cadence for the same facility and period.",
+      "reader_checklist": [
+        "Confirm every named case resolves to the displayed canonical project or place ID.",
+        "Keep each event at its source-supported conversion stage.",
+        "Inspect the period, unit and denominator before comparing any quantity.",
+        "Treat missing or incompatible evidence as a result, not permission to estimate.",
+        "Follow each decisive next artifact before revising the comparison passport."
+      ],
+      "route": "/review/systems/workforce-to-qualified-capacity/",
+      "interpretation_boundary": "This dossier compares evidence paths and open gates. It does not rank projects or places, normalize incompatible measures, infer causation, or create an observation, outcome or operating decision."
+    },
+    {
+      "dossier_id": "123-DOSSIER-011",
+      "legacy_story_id": "105-STORY-011",
+      "slug": "finance-risk-and-infrastructure",
+      "title": "Finance, risk and infrastructure",
+      "record_status": "Published",
+      "comparison_state": "Context-only matched delivery dossier",
+      "editorial_question": "When does financing reduce a conversion constraint, and when does it merely move the project to a new unresolved gate?",
+      "topic_ids": [
+        "topic-finance-and-risk",
+        "topic-policy-and-standards",
+        "topic-energy"
+      ],
+      "priority_question_ids": [
+        "116-Q-041",
+        "116-Q-042",
+        "116-Q-043",
+        "116-Q-044",
+        "116-Q-053",
+        "116-Q-054",
+        "116-Q-055",
+        "116-Q-056",
+        "116-Q-037",
+        "116-Q-038",
+        "116-Q-039",
+        "116-Q-040"
+      ],
+      "atlas_project_ids": [
+        "119-PROJECT-009",
+        "119-PROJECT-011",
+        "119-PROJECT-012",
+        "119-PROJECT-005",
+        "119-PROJECT-003"
+      ],
+      "atlas_place_ids": [
+        "119-PLACE-014",
+        "119-PLACE-012",
+        "119-PLACE-002",
+        "119-PLACE-003"
+      ],
+      "evidence_signal_ids": [
+        "signal-56b-manatee-capacity-panel",
+        "signal-56c-manatee-constraints",
+        "signal-56d-manatee-repeat-test",
+        "signal-56b-gateway-capacity-panel",
+        "signal-56c-gateway-constraints",
+        "signal-56d-gateway-repeat-test",
+        "signal-56e-hornsdale-power-reserve-alternative-test",
+        "signal-56e-hornsdale-power-reserve-dossier",
+        "signal-56e-hornsdale-power-reserve-panel",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates",
+        "signal-virginia-gs5-large-load-rate-class",
+        "signal-golden-mars-transmission-conditional-approval",
+        "signal-rhyolite-ridge-federal-land-authorization",
+        "signal-thacker-pass-air-permit-compliance-contract",
+        "signal-pjm-2026-large-load-forecast-uncertainty",
+        "signal-virginia-data-center-air-permit-trail"
+      ],
+      "evidence_source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56e-hornsdale-aer-2022",
+        "source-56e-hornsdale-sa-current",
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025",
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026",
+        "source-blm-thacker-pass-rod-2021",
+        "source-virginia-jlarc-data-centers-2024",
+        "source-loudoun-data-centers-policy"
+      ],
+      "shared_dependency": "Finance removes one constraint only when the funded scope reaches construction, commissioning, acceptance and service under a named allocation of risk.",
+      "comparison_passport": {
+        "identity": "Every row resolves to a Phase 119 Atlas ID and its Phase 116 canonical entity; nearby organizations, regions and programs are not silently merged.",
+        "period": "Each underlying record retains its own dated period. The dossier does not force asynchronous events into a common observation window.",
+        "unit_and_denominator": "No shared performance denominator has been admitted. The dossier compares evidence structure and stopping points only.",
+        "authority_and_provenance": "Signal and source IDs are inherited explicitly from the selected Atlas records; the dossier creates no source fact or evidence decision.",
+        "method_compatibility": "Context-only comparison of conversion stages, dependencies and missing artifacts; no effect size, causal estimate or normalized performance measure.",
+        "verdict": "Context only"
+      },
+      "what_is_comparable": "The cases show where financial commitment sits within a longer infrastructure-delivery chain.",
+      "what_must_not_be_compared": "Loan values, utility investments, storage capacities and service obligations use different boundaries and cannot support a return or project-quality ranking.",
+      "decisive_next_evidence": "Financial close or obligation joined to expenditure, physical completion, acceptance, service, operating performance and disclosed risk allocation.",
+      "reader_checklist": [
+        "Confirm every named case resolves to the displayed canonical project or place ID.",
+        "Keep each event at its source-supported conversion stage.",
+        "Inspect the period, unit and denominator before comparing any quantity.",
+        "Treat missing or incompatible evidence as a result, not permission to estimate.",
+        "Follow each decisive next artifact before revising the comparison passport."
+      ],
+      "route": "/review/systems/finance-risk-and-infrastructure/",
+      "interpretation_boundary": "This dossier compares evidence paths and open gates. It does not rank projects or places, normalize incompatible measures, infer causation, or create an observation, outcome or operating decision."
+    },
+    {
+      "dossier_id": "123-DOSSIER-012",
+      "legacy_story_id": "105-STORY-012",
+      "slug": "observation-to-outcome",
+      "title": "Observation to outcome",
+      "record_status": "Published",
+      "comparison_state": "Context-only matched delivery dossier",
+      "editorial_question": "What denominator, recurrence, uncertainty and attribution work is required before observations support an outcome claim?",
+      "topic_ids": [
+        "topic-discovery-technologies",
+        "topic-ai-for-science",
+        "topic-climate"
+      ],
+      "priority_question_ids": [
+        "116-Q-033",
+        "116-Q-034",
+        "116-Q-035",
+        "116-Q-036",
+        "116-Q-009",
+        "116-Q-010",
+        "116-Q-011",
+        "116-Q-012",
+        "116-Q-021",
+        "116-Q-022",
+        "116-Q-023",
+        "116-Q-024"
+      ],
+      "atlas_project_ids": [
+        "119-PROJECT-007",
+        "119-PROJECT-021",
+        "119-PROJECT-022",
+        "119-PROJECT-023",
+        "119-PROJECT-024"
+      ],
+      "atlas_place_ids": [
+        "119-PLACE-010",
+        "119-PLACE-009",
+        "119-PLACE-008",
+        "119-PLACE-011"
+      ],
+      "evidence_signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-57a-dot-amtrak-station-accessibility-fy2025",
+        "signal-57b-amtrak-eight-station-final-completion-cohort",
+        "signal-57b-amtrak-eleven-station-passenger-use-cohort",
+        "signal-56z-hanford-dflaw-accepted-operation-sequence",
+        "signal-57a-hanford-idf-regulator-confirmed-acceptance",
+        "signal-57a-hanford-law-facility-regulator-confirmed-operation",
+        "signal-57e-montana-bead-active-subscriber-test-control",
+        "signal-57e-montana-bead-availability-acceptance-control",
+        "signal-57e-montana-bead-latency-acceptance-control",
+        "signal-56w-nnsa-pit-production-project-cost-trail",
+        "signal-56x-nnsa-lap4-baseline-change-series",
+        "signal-56x-nnsa-major-project-portfolio-performance"
+      ],
+      "evidence_source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-57a-dot-fy2027-performance-plan-fy2025-report",
+        "source-57b-amtrak-ada-progress-june-2026",
+        "source-56x-hanford-first-ilaw-disposal-2026",
+        "source-56x-hanford-vitrification-100k-2026",
+        "source-57e-montana-bead-faq-july-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-56w-nnsa-fy2027-weapons-activities",
+        "source-56q-gao-23-104661-recommendation-status"
+      ],
+      "shared_dependency": "An observation supports an outcome only after identity, method, period, denominator, recurrence, uncertainty and alternative explanations are explicit.",
+      "comparison_passport": {
+        "identity": "Every row resolves to a Phase 119 Atlas ID and its Phase 116 canonical entity; nearby organizations, regions and programs are not silently merged.",
+        "period": "Each underlying record retains its own dated period. The dossier does not force asynchronous events into a common observation window.",
+        "unit_and_denominator": "No shared performance denominator has been admitted. The dossier compares evidence structure and stopping points only.",
+        "authority_and_provenance": "Signal and source IDs are inherited explicitly from the selected Atlas records; the dossier creates no source fact or evidence decision.",
+        "method_compatibility": "Context-only comparison of conversion stages, dependencies and missing artifacts; no effect size, causal estimate or normalized performance measure.",
+        "verdict": "Context only"
+      },
+      "what_is_comparable": "The files can be compared as examples of how evidence advances—or stops—between a dated observation and an outcome claim.",
+      "what_must_not_be_compared": "Stations, waste batches, broadband locations, production units and evaluation results are deliberately non-equivalent outcome units.",
+      "decisive_next_evidence": "Repeated compatible measures for stable entities and periods, documented revisions and uncertainty, and a bounded attribution design appropriate to the claim.",
+      "reader_checklist": [
+        "Confirm every named case resolves to the displayed canonical project or place ID.",
+        "Keep each event at its source-supported conversion stage.",
+        "Inspect the period, unit and denominator before comparing any quantity.",
+        "Treat missing or incompatible evidence as a result, not permission to estimate.",
+        "Follow each decisive next artifact before revising the comparison passport."
+      ],
+      "route": "/review/systems/observation-to-outcome/",
+      "interpretation_boundary": "This dossier compares evidence paths and open gates. It does not rank projects or places, normalize incompatible measures, infer causation, or create an observation, outcome or operating decision."
+    }
+  ]
+}

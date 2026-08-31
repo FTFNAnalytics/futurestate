@@ -18,6 +18,15 @@ It is a stack of dependencies.
 
 ## Project Documents
 
+- [v0.6 Roadmap](docs/roadmap-v0.6.md) - completed Phases 125–129: evidence annotations, mission audits, delivery biographies, topic reviews, and compatibility syntheses.
+- [v0.6 Build Summary](docs/build-summary-v0.6.md) - verified route, content-depth, corpus, export, and release inventory for Open Evidence Review.
+- [v0.6 Session Handoff](docs/session-handoff-v0.6.md) - immutable upstream boundaries, rebuild sequence, acquisition-gap posture, and the next dated evidence gate.
+- [v0.5 Roadmap](docs/roadmap-v0.5.md) - completed Phases 120–124: acquisition packets, research missions, verification playbooks, comparative dossiers, and topic workbenches.
+- [v0.5 Build Summary](docs/build-summary-v0.5.md) - verified route, evidence-boundary, corpus, export, and release inventory for the Evidence Fieldbook.
+- [v0.5 Session Handoff](docs/session-handoff-v0.5.md) - operating boundaries, exact rebuild sequence, visible acquisition gaps, and the next dated evidence gate.
+- [v0.4 Roadmap](docs/roadmap-v0.4.md) - completed Phases 116–119: coverage architecture, global authority graph, living encyclopedia, and project/place atlas.
+- [v0.4 Build Summary](docs/build-summary-v0.4.md) - verified route, content, source, export, and validation inventory for the Public Conversion Observatory.
+- [v0.4 Session Handoff](docs/session-handoff-v0.4.md) - current operating boundaries, next dated evidence gate, and continuation path.
 - [Master Roadmap](docs/master-roadmap.md) - the step-by-step plan from empty workspace to a functioning publication and data platform.
 - [Documentation Map](docs/documentation-map.md) - how the project documents fit together and when to update each one.
 - [Session Brief](docs/session-brief.md) - compact handoff note for restarting the project in a new chat.

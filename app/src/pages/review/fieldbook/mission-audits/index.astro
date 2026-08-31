@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import audits from "../../../../data/phase-126-mission-evidence-audits.json";
+
+const topicIds = [...new Set(audits.mission_audits.map((audit) => audit.topic_id))].sort();
+---
+
+<BaseLayout title="Mission Evidence Audits | FTFN v0.6" description={audits.summary}>
+  <ReviewHeader eyebrow="FTFN v0.6 · Open Evidence Review" title="Mission evidence audits" summary={audits.summary} phase={126} />
+
+  <section class="page-section">
+    <div class="metric-strip" aria-label="Phase 126 mission audit counts">
+      <div class="metric"><strong>{audits.counts.mission_audits}</strong><span>mission screens</span></div>
+      <div class="metric"><strong>{audits.counts.requirement_tests}</strong><span>ordered requirement screens</span></div>
+      <div class="metric"><strong>{audits.counts.requirements_with_potentially_relevant_context}</strong><span>potential context matches</span></div>
+      <div class="metric"><strong>{audits.counts.requirements_without_screened_term_overlap}</strong><span>no screened-term overlap</span></div>
+      <div class="metric"><strong>{audits.counts.authored_requirement_words.toLocaleString()}</strong><span>requirement-analysis words</span></div>
+      <div class="metric"><strong>{audits.counts.mission_answers_changed}</strong><span>answer states changed</span></div>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Audit disposition</div>
+      <h2>{audits.audit_disposition}</h2>
+      <p>All three requirements for every mission were checked in their original order against exact note titles and factual nuclei. A term match is only a review lead; no match is only a lexical result.</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label={audits.upstream_answer_state} tone="review" />
+      <h3>Twelve acquisition gaps remain visible.</h3>
+      <p>{audits.counts.missions_with_acquisition_packets} missions retain exact packet joins; {audits.counts.missions_with_acquisition_coverage_gaps} retain explicit coverage gaps.</p>
+    </article>
+  </section>
+
+  {topicIds.map((topicId) => {
+    const topicAudits = audits.mission_audits.filter((audit) => audit.topic_id === topicId);
+    return (
+    <section class="page-section">
+      <div class="section-heading"><div><div class="eyebrow">{topicId}</div><h2>Four evidence horizons</h2><p>Baseline, conversion, operation and outcome remain distinct review contracts.</p></div></div>
+      <div class="signal-grid">
+        {topicAudits.map((audit) => (
+          <article class="record-card">
+            <div class="meta-row"><MetaPill label={audit.audit_id} /><MetaPill label={audit.research_horizon} tone="possibility" /></div>
+            <h3><a href={audit.public_route}>{audit.question}</a></h3>
+            <p>{audit.narrative.audit_summary}</p>
+            <p class="card-note">{audit.requirement_tests.length} requirements · {audit.evidence_note_ids.length} context notes · answer unchanged</p>
+          </article>
+        ))}
+      </div>
+    </section>
+    );
+  })}
+
+  <section class="page-section prose-page">
+    <h2>Publication boundary</h2>
+    {audits.publication_boundaries.map((boundary) => <p>{boundary}</p>)}
+    <p><a class="inline-link" href="/data/phase-126-mission-evidence-audits.json">Download the Phase 126 mission evidence audits</a></p>
+  </section>
+</BaseLayout>

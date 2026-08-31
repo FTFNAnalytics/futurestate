@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import registry from "../../../../data/phase-124-topic-research-workbenches.json";
+---
+
+<BaseLayout title="Topic research workbenches | FTFN v0.5" description={registry.summary}>
+  <ReviewHeader eyebrow="Evidence Fieldbook · Phase 124" title={registry.title} summary={registry.summary} phase={124} />
+  <section class="page-section"><div class="metric-strip" aria-label="Phase 124 counts"><div class="metric"><strong>{registry.counts.workbenches}</strong><span>topic workbenches</span></div><div class="metric"><strong>{registry.counts.missions_with_acquisition_packets}</strong><span>Covered missions</span></div><div class="metric"><strong>{registry.counts.missions_with_acquisition_coverage_gaps}</strong><span>Gap missions</span></div><div class="metric"><strong>{registry.counts.topic_discovery_packets}</strong><span>topic discovery packets</span></div></div></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Active research index</div><h2>Move from explanation to exact next work.</h2><p>Each workbench joins its unchanged coverage and encyclopedia records to the Fieldbook’s operational layers. Topic-wide packets are discovery inventory only; mission cards preserve the exact Phase 121 acquisition linkage.</p></div></div><div class="signal-grid">{registry.workbenches.map((record) => <article class="record-card"><div class="meta-row"><MetaPill label={record.topic_id} /><MetaPill label="4 missions" tone="possibility" /></div><h3><a href={record.route}>{record.title}</a></h3><p>{record.canonical_context.baseline_state}</p><p>{record.mission_links.filter((mission) => mission.acquisition_coverage === "Covered").length} Covered · {record.mission_links.filter((mission) => mission.acquisition_coverage === "Gap").length} Gap · {record.acquisition_links.length} topic discovery packets</p><p>{record.dossier_links.length} matched dossiers · {record.project_links.length + record.place_links.length} Atlas files</p><a class="inline-link" href={record.route}>Open workbench</a></article>)}</div></section>
+  <section class="page-section prose-page"><h2>Evidence boundary</h2><p>{registry.publication_boundary}</p></section>
+</BaseLayout>

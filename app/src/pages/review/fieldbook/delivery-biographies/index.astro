@@ -1,0 +1,102 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import registry from "../../../../data/phase-127-project-place-conversion-biographies.json";
+
+const governedProjects = registry.project_biographies.filter((record) => record.phase_119_snapshot.coverage_tier_id === "Tier A");
+const curatedProjects = registry.project_biographies.filter((record) => record.phase_119_snapshot.coverage_tier_id === "Tier B");
+const governedPlaces = registry.place_biographies.filter((record) => record.phase_119_snapshot.coverage_tier_id === "Tier A");
+const curatedPlaces = registry.place_biographies.filter((record) => record.phase_119_snapshot.coverage_tier_id === "Tier B");
+---
+
+<BaseLayout title="Project and Place Conversion Biographies | FTFN" description={registry.summary}>
+  <ReviewHeader eyebrow="v0.6 delivery biographies" title="Project and Place Conversion Biographies" summary={registry.summary} phase={127} />
+
+  <section class="page-section">
+    <div class="metric-strip" aria-label="Phase 127 biography counts">
+      <div class="metric"><strong>{registry.counts.project_biographies}</strong><span>project biographies</span></div>
+      <div class="metric"><strong>{registry.counts.project_stage_cells}</strong><span>project-stage cells</span></div>
+      <div class="metric"><strong>{registry.counts.place_biographies}</strong><span>place biographies</span></div>
+      <div class="metric"><strong>{registry.counts.place_system_assessments}</strong><span>place assessments</span></div>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">How to read the biographies</div>
+      <h2>Deeper narrative, unchanged evidence state.</h2>
+      <p>
+        Each project now carries a six-part biography and an eight-stage evidence passport.
+        Each place carries a six-part receiving-system biography and six independent assessments.
+        The overlay preserves every Phase 119 tier and current-state sentence exactly.
+      </p>
+    </div>
+    <article class="record-card record-card--featured">
+      <div class="eyebrow">Publication boundary</div>
+      <p>{registry.interpretation_boundary}</p>
+      <div class="meta-row"><MetaPill label="No stage advance" tone="review" /><MetaPill label="No project-to-place inheritance" /></div>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div><div class="eyebrow">Project evidence passport</div><h2>Eight stages remain independent.</h2><p>A state describes repository coverage at one stage; it is not a progress score.</p></div>
+      <MetaPill label={`${registry.counts.project_authored_words.toLocaleString()} authored words`} tone="possibility" />
+    </div>
+    <div class="review-columns">
+      <article><h3>Governed upstream</h3><p>An exact same-file Phase 61–64 relationship exists. The biography republishes it without moving the file.</p></article>
+      <article><h3>Published context</h3><p>Phase 119 supplies an exact Published-signal and source trail, but no governed stage decision.</p></article>
+      <article><h3>Not established</h3><p>The state is not established in this repository. That is not a claim that evidence is externally nonexistent.</p></article>
+      <article><h3>Not applicable</h3><p>The stage falls outside a record's declared scope and requires an explicit reason.</p></article>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Tier A projects</div><h2>Governed conversion files.</h2></div><MetaPill label={`${governedProjects.length} biographies`} tone="review" /></div>
+    <div class="grid">
+      {governedProjects.map((record) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={record.biography_id} /><MetaPill label={record.phase_119_snapshot.coverage_label} tone="review" /></div>
+          <h3><a href={record.public_route}>{record.title}</a></h3>
+          <p>{record.phase_119_snapshot.current_stage}</p>
+          <p class="card-note">{record.narrative_metrics.authored_word_count.toLocaleString()} authored words · 8 stage cells</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Tier B projects</div><h2>Curated evidence cases.</h2></div><MetaPill label={`${curatedProjects.length} biographies`} /></div>
+    <div class="grid">
+      {curatedProjects.map((record) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={record.biography_id} /><MetaPill label={record.phase_119_snapshot.coverage_label} /></div>
+          <h3><a href={record.public_route}>{record.title}</a></h3>
+          <p>{record.phase_119_snapshot.current_stage}</p>
+          <p class="card-note">{record.narrative_metrics.authored_word_count.toLocaleString()} authored words · 8 stage cells</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Place biographies</div><h2>Six receiving-system dimensions, no place stage.</h2><p>Authority, capital, infrastructure, workforce, environment and public outcomes remain separate.</p></div><MetaPill label={`${registry.counts.place_authored_words.toLocaleString()} authored words`} tone="possibility" /></div>
+    <div class="grid">
+      {[...governedPlaces, ...curatedPlaces].map((record) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={record.biography_id} /><MetaPill label={record.phase_119_snapshot.coverage_label} tone={record.phase_119_snapshot.coverage_tier_id === "Tier A" ? "review" : "default"} /></div>
+          <h3><a href={record.public_route}>{record.title}</a></h3>
+          <p>{record.geography}</p>
+          <p class="card-note">{record.narrative_metrics.authored_word_count.toLocaleString()} authored words · 6 assessments</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section prose-page">
+    <h2>Open data and stewardship</h2>
+    <p>The direct schema-1.0 export contains all <code>project_biographies</code> and <code>place_biographies</code>, exact Phase 119 snapshots, lineage-aware states, narrative metrics and route inventories.</p>
+    <p><a class="inline-link" href="/data/phase-127-project-place-conversion-biographies.json">Download the Phase 127 biography registry</a></p>
+  </section>
+</BaseLayout>

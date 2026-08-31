@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import graph from "../../../data/phase-117-global-authority-graph.json";
+
+const regions = [...new Set(graph.jurisdictions.map((item) => item.region))].sort();
+---
+
+<BaseLayout title="Global authority graph | FTFN" description={graph.summary}>
+  <ReviewHeader eyebrow="Global authority graph" title={graph.title} summary={graph.summary} phase={117} />
+
+  <section class="page-section">
+    <div class="metric-strip">
+      <div class="metric"><strong>{graph.counts.jurisdictions}</strong><span>jurisdiction layers</span></div>
+      <div class="metric"><strong>{graph.counts.authority_rails}</strong><span>official candidate rails</span></div>
+      <div class="metric"><strong>{graph.counts.topics_covered}</strong><span>topics covered</span></div>
+      <div class="metric"><strong>{regions.length}</strong><span>world regions</span></div>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">How to read this graph</div>
+      <h2>Authority mapping is the start of evidence acquisition.</h2>
+      <p>{graph.publication_boundary}</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label="Human publication gate" tone="review" />
+      <h3>No portal is an outcome.</h3>
+      <p>Open the exact dataset, rule, docket, project record, acceptance document or operating series and review it on its real date before using it in a claim.</p>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Jurisdictions</div><h2>Four authority classes in every layer.</h2></div></div>
+    {regions.map((region) => (
+      <div class="review-group">
+        <h3>{region}</h3>
+        <div class="signal-grid">
+          {graph.jurisdictions.filter((item) => item.region === region).map((item) => (
+            <article class="record-card">
+              <div class="meta-row"><MetaPill label={`${item.rail_ids.length} rails`} /><MetaPill label={item.coverage_state} tone="possibility" /></div>
+              <h3><a href={`/review/authority/jurisdictions/${item.slug}/`}>{item.name}</a></h3>
+              <p>{item.interpretation_boundary}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    ))}
+  </section>
+
+  <section class="page-section prose-page">
+    <h2>Machine-readable graph</h2>
+    <p>The complete jurisdiction, institution, topic, artifact-family and conversion-stage mapping is available as <a href="/data/global-authority-graph.json">versioned JSON</a>.</p>
+  </section>
+</BaseLayout>

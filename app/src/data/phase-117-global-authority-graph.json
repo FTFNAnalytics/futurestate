@@ -1,0 +1,4360 @@
+{
+  "schema_version": "1.0",
+  "program_id": "FTFN-V0.4-PHASE-117-GLOBAL-AUTHORITY-GRAPH",
+  "title": "Global authority graph",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "summary": "Eighty explicitly bounded official authority rails across nineteen national or supranational jurisdictions and one multilateral layer, organized for artifact-level evidence acquisition rather than automatic claim creation.",
+  "publication_boundary": "A mapped authority rail is a discovery and monitoring object. It does not establish a project fact, adoption, acceptance, operation, comparison, outcome, score, ranking or jurisdictional equivalence.",
+  "counts": {
+    "jurisdictions": 20,
+    "authority_rails": 80,
+    "authority_classes": 4,
+    "topics_covered": 17,
+    "conversion_stages_covered": 8,
+    "non_us_share_of_phase117_rails": 1,
+    "source_records_added": 80
+  },
+  "quality_bar": {
+    "exact_artifact_required": true,
+    "automatic_signal_creation_allowed": false,
+    "automatic_publication_allowed": false,
+    "interested_party_or_official_identity_as_outcome_allowed": false,
+    "minimum_priority_non_us_share": 0.35,
+    "achieved_phase117_non_us_share": 1
+  },
+  "authority_classes": [
+    {
+      "authority_class_id": "statistics",
+      "label": "Official statistics and measurement",
+      "topics": [
+        "Human Futures",
+        "Finance and Risk",
+        "Climate",
+        "Energy",
+        "Water",
+        "Agriculture and Bioeconomy"
+      ],
+      "layers": [
+        "Planetary Conditions",
+        "Resource Foundations",
+        "Human Systems"
+      ],
+      "watch_lanes": [
+        "Cross-Cutting Official Rails",
+        "Climate",
+        "Finance and Human Futures"
+      ],
+      "coverage_role": [
+        "Primary Data"
+      ],
+      "stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifacts": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "access": "Interactive Portal"
+    },
+    {
+      "authority_class_id": "energy",
+      "label": "Energy, utility and system operation",
+      "topics": [
+        "Energy",
+        "Climate",
+        "Critical Minerals",
+        "Water",
+        "Finance and Risk",
+        "Policy and Standards"
+      ],
+      "layers": [
+        "Planetary Conditions",
+        "Resource Foundations",
+        "Enabling Infrastructure",
+        "Human Systems"
+      ],
+      "watch_lanes": [
+        "Power and Grid",
+        "Climate",
+        "Critical Minerals"
+      ],
+      "coverage_role": [
+        "Primary Data",
+        "Regulatory Change"
+      ],
+      "stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifacts": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "access": "Report Series"
+    },
+    {
+      "authority_class_id": "infrastructure",
+      "label": "Infrastructure, environment and territorial delivery",
+      "topics": [
+        "Mobility",
+        "Aviation",
+        "Water",
+        "Energy",
+        "Advanced Manufacturing",
+        "Policy and Standards",
+        "Human Futures"
+      ],
+      "layers": [
+        "Planetary Conditions",
+        "Enabling Infrastructure",
+        "Human Systems"
+      ],
+      "watch_lanes": [
+        "Local Systems",
+        "Mobility Certification",
+        "Water"
+      ],
+      "coverage_role": [
+        "Regulatory Change",
+        "Local Conversion Evidence"
+      ],
+      "stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifacts": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "access": "Interactive Portal"
+    },
+    {
+      "authority_class_id": "innovation",
+      "label": "Science, technology and industrial innovation",
+      "topics": [
+        "AI for Science",
+        "Quantum",
+        "Chips and Compute",
+        "Discovery Technologies",
+        "Advanced Manufacturing",
+        "Agriculture and Bioeconomy",
+        "Space",
+        "Cybersecurity",
+        "Policy and Standards"
+      ],
+      "layers": [
+        "Resource Foundations",
+        "Enabling Infrastructure",
+        "Frontier Domains",
+        "Human Systems"
+      ],
+      "watch_lanes": [
+        "AI and Advanced Manufacturing",
+        "Compute and Chips",
+        "Discovery Technologies",
+        "Security and Standards",
+        "Space"
+      ],
+      "coverage_role": [
+        "Research Program Evidence",
+        "Funding Evidence",
+        "Standards Evidence"
+      ],
+      "stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifacts": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "access": "Release Page"
+    }
+  ],
+  "jurisdictions": [
+    {
+      "jurisdiction_id": "117-JURISDICTION-001",
+      "slug": "canada",
+      "name": "Canada",
+      "region": "North America",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "rail_ids": [
+        "117-RAIL-001",
+        "117-RAIL-002",
+        "117-RAIL-003",
+        "117-RAIL-004"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-002",
+      "slug": "australia",
+      "name": "Australia",
+      "region": "Oceania",
+      "languages": [
+        "English"
+      ],
+      "rail_ids": [
+        "117-RAIL-005",
+        "117-RAIL-006",
+        "117-RAIL-007",
+        "117-RAIL-008"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-003",
+      "slug": "european-union",
+      "name": "European Union",
+      "region": "Europe",
+      "languages": [
+        "24 official EU languages"
+      ],
+      "rail_ids": [
+        "117-RAIL-009",
+        "117-RAIL-010",
+        "117-RAIL-011",
+        "117-RAIL-012"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-004",
+      "slug": "united-kingdom",
+      "name": "United Kingdom",
+      "region": "Europe",
+      "languages": [
+        "English",
+        "Welsh"
+      ],
+      "rail_ids": [
+        "117-RAIL-013",
+        "117-RAIL-014",
+        "117-RAIL-015",
+        "117-RAIL-016"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-005",
+      "slug": "germany",
+      "name": "Germany",
+      "region": "Europe",
+      "languages": [
+        "German",
+        "English"
+      ],
+      "rail_ids": [
+        "117-RAIL-017",
+        "117-RAIL-018",
+        "117-RAIL-019",
+        "117-RAIL-020"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-006",
+      "slug": "france",
+      "name": "France",
+      "region": "Europe",
+      "languages": [
+        "French",
+        "English"
+      ],
+      "rail_ids": [
+        "117-RAIL-021",
+        "117-RAIL-022",
+        "117-RAIL-023",
+        "117-RAIL-024"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-007",
+      "slug": "netherlands",
+      "name": "Netherlands",
+      "region": "Europe",
+      "languages": [
+        "Dutch",
+        "English"
+      ],
+      "rail_ids": [
+        "117-RAIL-025",
+        "117-RAIL-026",
+        "117-RAIL-027",
+        "117-RAIL-028"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-008",
+      "slug": "norway",
+      "name": "Norway",
+      "region": "Europe",
+      "languages": [
+        "Norwegian",
+        "English"
+      ],
+      "rail_ids": [
+        "117-RAIL-029",
+        "117-RAIL-030",
+        "117-RAIL-031",
+        "117-RAIL-032"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-009",
+      "slug": "sweden",
+      "name": "Sweden",
+      "region": "Europe",
+      "languages": [
+        "Swedish",
+        "English"
+      ],
+      "rail_ids": [
+        "117-RAIL-033",
+        "117-RAIL-034",
+        "117-RAIL-035",
+        "117-RAIL-036"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-010",
+      "slug": "japan",
+      "name": "Japan",
+      "region": "Asia",
+      "languages": [
+        "Japanese",
+        "English"
+      ],
+      "rail_ids": [
+        "117-RAIL-037",
+        "117-RAIL-038",
+        "117-RAIL-039",
+        "117-RAIL-040"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-011",
+      "slug": "south-korea",
+      "name": "South Korea",
+      "region": "Asia",
+      "languages": [
+        "Korean",
+        "English"
+      ],
+      "rail_ids": [
+        "117-RAIL-041",
+        "117-RAIL-042",
+        "117-RAIL-043",
+        "117-RAIL-044"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-012",
+      "slug": "singapore",
+      "name": "Singapore",
+      "region": "Asia",
+      "languages": [
+        "English",
+        "Malay",
+        "Mandarin",
+        "Tamil"
+      ],
+      "rail_ids": [
+        "117-RAIL-045",
+        "117-RAIL-046",
+        "117-RAIL-047",
+        "117-RAIL-048"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-013",
+      "slug": "india",
+      "name": "India",
+      "region": "Asia",
+      "languages": [
+        "Hindi",
+        "English",
+        "regional languages"
+      ],
+      "rail_ids": [
+        "117-RAIL-049",
+        "117-RAIL-050",
+        "117-RAIL-051",
+        "117-RAIL-052"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-014",
+      "slug": "new-zealand",
+      "name": "New Zealand",
+      "region": "Oceania",
+      "languages": [
+        "English",
+        "Māori",
+        "New Zealand Sign Language"
+      ],
+      "rail_ids": [
+        "117-RAIL-053",
+        "117-RAIL-054",
+        "117-RAIL-055",
+        "117-RAIL-056"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-015",
+      "slug": "brazil",
+      "name": "Brazil",
+      "region": "South America",
+      "languages": [
+        "Portuguese"
+      ],
+      "rail_ids": [
+        "117-RAIL-057",
+        "117-RAIL-058",
+        "117-RAIL-059",
+        "117-RAIL-060"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-016",
+      "slug": "chile",
+      "name": "Chile",
+      "region": "South America",
+      "languages": [
+        "Spanish"
+      ],
+      "rail_ids": [
+        "117-RAIL-061",
+        "117-RAIL-062",
+        "117-RAIL-063",
+        "117-RAIL-064"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-017",
+      "slug": "south-africa",
+      "name": "South Africa",
+      "region": "Africa",
+      "languages": [
+        "11 official languages"
+      ],
+      "rail_ids": [
+        "117-RAIL-065",
+        "117-RAIL-066",
+        "117-RAIL-067",
+        "117-RAIL-068"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-018",
+      "slug": "mexico",
+      "name": "Mexico",
+      "region": "North America",
+      "languages": [
+        "Spanish"
+      ],
+      "rail_ids": [
+        "117-RAIL-069",
+        "117-RAIL-070",
+        "117-RAIL-071",
+        "117-RAIL-072"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-019",
+      "slug": "united-arab-emirates",
+      "name": "United Arab Emirates",
+      "region": "Middle East",
+      "languages": [
+        "Arabic",
+        "English"
+      ],
+      "rail_ids": [
+        "117-RAIL-073",
+        "117-RAIL-074",
+        "117-RAIL-075",
+        "117-RAIL-076"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    },
+    {
+      "jurisdiction_id": "117-JURISDICTION-020",
+      "slug": "multilateral-systems",
+      "name": "Multilateral systems",
+      "region": "Global",
+      "languages": [
+        "Multilingual"
+      ],
+      "rail_ids": [
+        "117-RAIL-077",
+        "117-RAIL-078",
+        "117-RAIL-079",
+        "117-RAIL-080"
+      ],
+      "coverage_state": "Four authority classes mapped",
+      "interpretation_boundary": "Jurisdiction coverage records where FTFN can look for evidence. It is not a score, ranking, completeness declaration or equivalence finding."
+    }
+  ],
+  "rails": [
+    {
+      "rail_id": "117-RAIL-001",
+      "slug": "canada-statistics-canada",
+      "source_id": "source-117-global-canada-statistics-canada",
+      "jurisdiction_id": "117-JURISDICTION-001",
+      "jurisdiction_slug": "canada",
+      "jurisdiction_name": "Canada",
+      "institution_name": "Statistics Canada",
+      "official_url": "https://www.statcan.gc.ca/en/start",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-002",
+      "slug": "canada-canada-energy-regulator",
+      "source_id": "source-117-global-canada-canada-energy-regulator",
+      "jurisdiction_id": "117-JURISDICTION-001",
+      "jurisdiction_slug": "canada",
+      "jurisdiction_name": "Canada",
+      "institution_name": "Canada Energy Regulator",
+      "official_url": "https://www.cer-rec.gc.ca/en/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-003",
+      "slug": "canada-impact-assessment-agency-of-canada",
+      "source_id": "source-117-global-canada-impact-assessment-agency-of-canada",
+      "jurisdiction_id": "117-JURISDICTION-001",
+      "jurisdiction_slug": "canada",
+      "jurisdiction_name": "Canada",
+      "institution_name": "Impact Assessment Agency of Canada",
+      "official_url": "https://iaac-aeic.gc.ca/050/evaluations/index?culture=en-CA",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-004",
+      "slug": "canada-innovation-science-and-economic-development-canada",
+      "source_id": "source-117-global-canada-innovation-science-and-economic-development-canada",
+      "jurisdiction_id": "117-JURISDICTION-001",
+      "jurisdiction_slug": "canada",
+      "jurisdiction_name": "Canada",
+      "institution_name": "Innovation, Science and Economic Development Canada",
+      "official_url": "https://ised-isde.canada.ca/site/ised/en",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-005",
+      "slug": "australia-australian-bureau-of-statistics",
+      "source_id": "source-117-global-australia-australian-bureau-of-statistics",
+      "jurisdiction_id": "117-JURISDICTION-002",
+      "jurisdiction_slug": "australia",
+      "jurisdiction_name": "Australia",
+      "institution_name": "Australian Bureau of Statistics",
+      "official_url": "https://www.abs.gov.au/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-006",
+      "slug": "australia-australian-energy-market-operator",
+      "source_id": "source-117-global-australia-australian-energy-market-operator",
+      "jurisdiction_id": "117-JURISDICTION-002",
+      "jurisdiction_slug": "australia",
+      "jurisdiction_name": "Australia",
+      "institution_name": "Australian Energy Market Operator",
+      "official_url": "https://aemo.com.au/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-007",
+      "slug": "australia-infrastructure-australia",
+      "source_id": "source-117-global-australia-infrastructure-australia",
+      "jurisdiction_id": "117-JURISDICTION-002",
+      "jurisdiction_slug": "australia",
+      "jurisdiction_name": "Australia",
+      "institution_name": "Infrastructure Australia",
+      "official_url": "https://www.infrastructureaustralia.gov.au/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-008",
+      "slug": "australia-commonwealth-scientific-and-industrial-research-organisation",
+      "source_id": "source-117-global-australia-commonwealth-scientific-and-industrial-research-organisation",
+      "jurisdiction_id": "117-JURISDICTION-002",
+      "jurisdiction_slug": "australia",
+      "jurisdiction_name": "Australia",
+      "institution_name": "Commonwealth Scientific and Industrial Research Organisation",
+      "official_url": "https://www.csiro.au/en/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-009",
+      "slug": "european-union-eurostat",
+      "source_id": "source-117-global-european-union-eurostat",
+      "jurisdiction_id": "117-JURISDICTION-003",
+      "jurisdiction_slug": "european-union",
+      "jurisdiction_name": "European Union",
+      "institution_name": "Eurostat",
+      "official_url": "https://ec.europa.eu/eurostat/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-010",
+      "slug": "european-union-european-commission-directorate-general-for-energy",
+      "source_id": "source-117-global-european-union-european-commission-directorate-general-for-energy",
+      "jurisdiction_id": "117-JURISDICTION-003",
+      "jurisdiction_slug": "european-union",
+      "jurisdiction_name": "European Union",
+      "institution_name": "European Commission Directorate-General for Energy",
+      "official_url": "https://energy.ec.europa.eu/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-011",
+      "slug": "european-union-eur-lex",
+      "source_id": "source-117-global-european-union-eur-lex",
+      "jurisdiction_id": "117-JURISDICTION-003",
+      "jurisdiction_slug": "european-union",
+      "jurisdiction_name": "European Union",
+      "institution_name": "EUR-Lex",
+      "official_url": "https://eur-lex.europa.eu/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-012",
+      "slug": "european-union-cordis",
+      "source_id": "source-117-global-european-union-cordis",
+      "jurisdiction_id": "117-JURISDICTION-003",
+      "jurisdiction_slug": "european-union",
+      "jurisdiction_name": "European Union",
+      "institution_name": "CORDIS",
+      "official_url": "https://cordis.europa.eu/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-013",
+      "slug": "united-kingdom-office-for-national-statistics",
+      "source_id": "source-117-global-united-kingdom-office-for-national-statistics",
+      "jurisdiction_id": "117-JURISDICTION-004",
+      "jurisdiction_slug": "united-kingdom",
+      "jurisdiction_name": "United Kingdom",
+      "institution_name": "Office for National Statistics",
+      "official_url": "https://www.ons.gov.uk/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-014",
+      "slug": "united-kingdom-department-for-energy-security-and-net-zero",
+      "source_id": "source-117-global-united-kingdom-department-for-energy-security-and-net-zero",
+      "jurisdiction_id": "117-JURISDICTION-004",
+      "jurisdiction_slug": "united-kingdom",
+      "jurisdiction_name": "United Kingdom",
+      "institution_name": "Department for Energy Security and Net Zero",
+      "official_url": "https://www.gov.uk/government/organisations/department-for-energy-security-and-net-zero",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-015",
+      "slug": "united-kingdom-planning-inspectorate",
+      "source_id": "source-117-global-united-kingdom-planning-inspectorate",
+      "jurisdiction_id": "117-JURISDICTION-004",
+      "jurisdiction_slug": "united-kingdom",
+      "jurisdiction_name": "United Kingdom",
+      "institution_name": "Planning Inspectorate",
+      "official_url": "https://www.gov.uk/government/organisations/planning-inspectorate",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-016",
+      "slug": "united-kingdom-uk-research-and-innovation",
+      "source_id": "source-117-global-united-kingdom-uk-research-and-innovation",
+      "jurisdiction_id": "117-JURISDICTION-004",
+      "jurisdiction_slug": "united-kingdom",
+      "jurisdiction_name": "United Kingdom",
+      "institution_name": "UK Research and Innovation",
+      "official_url": "https://www.ukri.org/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-017",
+      "slug": "germany-federal-statistical-office-of-germany",
+      "source_id": "source-117-global-germany-federal-statistical-office-of-germany",
+      "jurisdiction_id": "117-JURISDICTION-005",
+      "jurisdiction_slug": "germany",
+      "jurisdiction_name": "Germany",
+      "institution_name": "Federal Statistical Office of Germany",
+      "official_url": "https://www.destatis.de/EN/Home/_node.html",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-018",
+      "slug": "germany-bundesnetzagentur",
+      "source_id": "source-117-global-germany-bundesnetzagentur",
+      "jurisdiction_id": "117-JURISDICTION-005",
+      "jurisdiction_slug": "germany",
+      "jurisdiction_name": "Germany",
+      "institution_name": "Bundesnetzagentur",
+      "official_url": "https://www.bundesnetzagentur.de/EN/General/Bundesnetzagentur/About/start.html",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-019",
+      "slug": "germany-german-environment-agency",
+      "source_id": "source-117-global-germany-german-environment-agency",
+      "jurisdiction_id": "117-JURISDICTION-005",
+      "jurisdiction_slug": "germany",
+      "jurisdiction_name": "Germany",
+      "institution_name": "German Environment Agency",
+      "official_url": "https://www.umweltbundesamt.de/en",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-020",
+      "slug": "germany-federal-ministry-of-research-technology-and-space",
+      "source_id": "source-117-global-germany-federal-ministry-of-research-technology-and-space",
+      "jurisdiction_id": "117-JURISDICTION-005",
+      "jurisdiction_slug": "germany",
+      "jurisdiction_name": "Germany",
+      "institution_name": "Federal Ministry of Research, Technology and Space",
+      "official_url": "https://www.bmftr.bund.de/EN/Home/home_node.html",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-021",
+      "slug": "france-insee",
+      "source_id": "source-117-global-france-insee",
+      "jurisdiction_id": "117-JURISDICTION-006",
+      "jurisdiction_slug": "france",
+      "jurisdiction_name": "France",
+      "institution_name": "INSEE",
+      "official_url": "https://www.insee.fr/en/accueil",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-022",
+      "slug": "france-rte",
+      "source_id": "source-117-global-france-rte",
+      "jurisdiction_id": "117-JURISDICTION-006",
+      "jurisdiction_slug": "france",
+      "jurisdiction_name": "France",
+      "institution_name": "RTE",
+      "official_url": "https://www.rte-france.com/en",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-023",
+      "slug": "france-ministry-for-ecological-transition",
+      "source_id": "source-117-global-france-ministry-for-ecological-transition",
+      "jurisdiction_id": "117-JURISDICTION-006",
+      "jurisdiction_slug": "france",
+      "jurisdiction_name": "France",
+      "institution_name": "Ministry for Ecological Transition",
+      "official_url": "https://www.ecologie.gouv.fr/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-024",
+      "slug": "france-ademe",
+      "source_id": "source-117-global-france-ademe",
+      "jurisdiction_id": "117-JURISDICTION-006",
+      "jurisdiction_slug": "france",
+      "jurisdiction_name": "France",
+      "institution_name": "ADEME",
+      "official_url": "https://www.ademe.fr/en/frontpage/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-025",
+      "slug": "netherlands-statistics-netherlands",
+      "source_id": "source-117-global-netherlands-statistics-netherlands",
+      "jurisdiction_id": "117-JURISDICTION-007",
+      "jurisdiction_slug": "netherlands",
+      "jurisdiction_name": "Netherlands",
+      "institution_name": "Statistics Netherlands",
+      "official_url": "https://www.cbs.nl/en-gb",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-026",
+      "slug": "netherlands-netherlands-enterprise-agency",
+      "source_id": "source-117-global-netherlands-netherlands-enterprise-agency",
+      "jurisdiction_id": "117-JURISDICTION-007",
+      "jurisdiction_slug": "netherlands",
+      "jurisdiction_name": "Netherlands",
+      "institution_name": "Netherlands Enterprise Agency",
+      "official_url": "https://english.rvo.nl/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-027",
+      "slug": "netherlands-rijkswaterstaat",
+      "source_id": "source-117-global-netherlands-rijkswaterstaat",
+      "jurisdiction_id": "117-JURISDICTION-007",
+      "jurisdiction_slug": "netherlands",
+      "jurisdiction_name": "Netherlands",
+      "institution_name": "Rijkswaterstaat",
+      "official_url": "https://www.rijkswaterstaat.nl/en",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-028",
+      "slug": "netherlands-pbl-netherlands-environmental-assessment-agency",
+      "source_id": "source-117-global-netherlands-pbl-netherlands-environmental-assessment-agency",
+      "jurisdiction_id": "117-JURISDICTION-007",
+      "jurisdiction_slug": "netherlands",
+      "jurisdiction_name": "Netherlands",
+      "institution_name": "PBL Netherlands Environmental Assessment Agency",
+      "official_url": "https://www.pbl.nl/en",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-029",
+      "slug": "norway-statistics-norway",
+      "source_id": "source-117-global-norway-statistics-norway",
+      "jurisdiction_id": "117-JURISDICTION-008",
+      "jurisdiction_slug": "norway",
+      "jurisdiction_name": "Norway",
+      "institution_name": "Statistics Norway",
+      "official_url": "https://www.ssb.no/en",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-030",
+      "slug": "norway-norwegian-water-resources-and-energy-directorate",
+      "source_id": "source-117-global-norway-norwegian-water-resources-and-energy-directorate",
+      "jurisdiction_id": "117-JURISDICTION-008",
+      "jurisdiction_slug": "norway",
+      "jurisdiction_name": "Norway",
+      "institution_name": "Norwegian Water Resources and Energy Directorate",
+      "official_url": "https://www.nve.no/energy-supply/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-031",
+      "slug": "norway-norwegian-environment-agency",
+      "source_id": "source-117-global-norway-norwegian-environment-agency",
+      "jurisdiction_id": "117-JURISDICTION-008",
+      "jurisdiction_slug": "norway",
+      "jurisdiction_name": "Norway",
+      "institution_name": "Norwegian Environment Agency",
+      "official_url": "https://www.environmentagency.no/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-032",
+      "slug": "norway-research-council-of-norway",
+      "source_id": "source-117-global-norway-research-council-of-norway",
+      "jurisdiction_id": "117-JURISDICTION-008",
+      "jurisdiction_slug": "norway",
+      "jurisdiction_name": "Norway",
+      "institution_name": "Research Council of Norway",
+      "official_url": "https://www.forskningsradet.no/en/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-033",
+      "slug": "sweden-statistics-sweden",
+      "source_id": "source-117-global-sweden-statistics-sweden",
+      "jurisdiction_id": "117-JURISDICTION-009",
+      "jurisdiction_slug": "sweden",
+      "jurisdiction_name": "Sweden",
+      "institution_name": "Statistics Sweden",
+      "official_url": "https://www.scb.se/en/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-034",
+      "slug": "sweden-swedish-energy-agency",
+      "source_id": "source-117-global-sweden-swedish-energy-agency",
+      "jurisdiction_id": "117-JURISDICTION-009",
+      "jurisdiction_slug": "sweden",
+      "jurisdiction_name": "Sweden",
+      "institution_name": "Swedish Energy Agency",
+      "official_url": "https://www.energimyndigheten.se/en/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-035",
+      "slug": "sweden-swedish-transport-administration",
+      "source_id": "source-117-global-sweden-swedish-transport-administration",
+      "jurisdiction_id": "117-JURISDICTION-009",
+      "jurisdiction_slug": "sweden",
+      "jurisdiction_name": "Sweden",
+      "institution_name": "Swedish Transport Administration",
+      "official_url": "https://bransch.trafikverket.se/en/startpage/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-036",
+      "slug": "sweden-vinnova",
+      "source_id": "source-117-global-sweden-vinnova",
+      "jurisdiction_id": "117-JURISDICTION-009",
+      "jurisdiction_slug": "sweden",
+      "jurisdiction_name": "Sweden",
+      "institution_name": "Vinnova",
+      "official_url": "https://www.vinnova.se/en/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-037",
+      "slug": "japan-e-stat-japan",
+      "source_id": "source-117-global-japan-e-stat-japan",
+      "jurisdiction_id": "117-JURISDICTION-010",
+      "jurisdiction_slug": "japan",
+      "jurisdiction_name": "Japan",
+      "institution_name": "e-Stat Japan",
+      "official_url": "https://www.e-stat.go.jp/en",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-038",
+      "slug": "japan-ministry-of-economy-trade-and-industry",
+      "source_id": "source-117-global-japan-ministry-of-economy-trade-and-industry",
+      "jurisdiction_id": "117-JURISDICTION-010",
+      "jurisdiction_slug": "japan",
+      "jurisdiction_name": "Japan",
+      "institution_name": "Ministry of Economy, Trade and Industry",
+      "official_url": "https://www.meti.go.jp/english/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-039",
+      "slug": "japan-ministry-of-land-infrastructure-transport-and-tourism",
+      "source_id": "source-117-global-japan-ministry-of-land-infrastructure-transport-and-tourism",
+      "jurisdiction_id": "117-JURISDICTION-010",
+      "jurisdiction_slug": "japan",
+      "jurisdiction_name": "Japan",
+      "institution_name": "Ministry of Land, Infrastructure, Transport and Tourism",
+      "official_url": "https://www.mlit.go.jp/en/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-040",
+      "slug": "japan-new-energy-and-industrial-technology-development-organization",
+      "source_id": "source-117-global-japan-new-energy-and-industrial-technology-development-organization",
+      "jurisdiction_id": "117-JURISDICTION-010",
+      "jurisdiction_slug": "japan",
+      "jurisdiction_name": "Japan",
+      "institution_name": "New Energy and Industrial Technology Development Organization",
+      "official_url": "https://www.nedo.go.jp/english/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-041",
+      "slug": "south-korea-korean-statistical-information-service",
+      "source_id": "source-117-global-south-korea-korean-statistical-information-service",
+      "jurisdiction_id": "117-JURISDICTION-011",
+      "jurisdiction_slug": "south-korea",
+      "jurisdiction_name": "South Korea",
+      "institution_name": "Korean Statistical Information Service",
+      "official_url": "https://kosis.kr/eng/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-042",
+      "slug": "south-korea-ministry-of-trade-industry-and-energy",
+      "source_id": "source-117-global-south-korea-ministry-of-trade-industry-and-energy",
+      "jurisdiction_id": "117-JURISDICTION-011",
+      "jurisdiction_slug": "south-korea",
+      "jurisdiction_name": "South Korea",
+      "institution_name": "Ministry of Trade, Industry and Energy",
+      "official_url": "https://english.motie.go.kr/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-043",
+      "slug": "south-korea-korea-power-exchange",
+      "source_id": "source-117-global-south-korea-korea-power-exchange",
+      "jurisdiction_id": "117-JURISDICTION-011",
+      "jurisdiction_slug": "south-korea",
+      "jurisdiction_name": "South Korea",
+      "institution_name": "Korea Power Exchange",
+      "official_url": "https://www.kpx.or.kr/eng/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-044",
+      "slug": "south-korea-korea-institute-of-science-and-technology-evaluation-and-planning",
+      "source_id": "source-117-global-south-korea-korea-institute-of-science-and-technology-evaluation-and-planning",
+      "jurisdiction_id": "117-JURISDICTION-011",
+      "jurisdiction_slug": "south-korea",
+      "jurisdiction_name": "South Korea",
+      "institution_name": "Korea Institute of Science and Technology Evaluation and Planning",
+      "official_url": "https://www.kistep.re.kr/eng/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-045",
+      "slug": "singapore-singapore-department-of-statistics",
+      "source_id": "source-117-global-singapore-singapore-department-of-statistics",
+      "jurisdiction_id": "117-JURISDICTION-012",
+      "jurisdiction_slug": "singapore",
+      "jurisdiction_name": "Singapore",
+      "institution_name": "Singapore Department of Statistics",
+      "official_url": "https://www.singstat.gov.sg/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-046",
+      "slug": "singapore-energy-market-authority",
+      "source_id": "source-117-global-singapore-energy-market-authority",
+      "jurisdiction_id": "117-JURISDICTION-012",
+      "jurisdiction_slug": "singapore",
+      "jurisdiction_name": "Singapore",
+      "institution_name": "Energy Market Authority",
+      "official_url": "https://www.ema.gov.sg/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-047",
+      "slug": "singapore-land-transport-authority",
+      "source_id": "source-117-global-singapore-land-transport-authority",
+      "jurisdiction_id": "117-JURISDICTION-012",
+      "jurisdiction_slug": "singapore",
+      "jurisdiction_name": "Singapore",
+      "institution_name": "Land Transport Authority",
+      "official_url": "https://www.lta.gov.sg/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-048",
+      "slug": "singapore-infocomm-media-development-authority",
+      "source_id": "source-117-global-singapore-infocomm-media-development-authority",
+      "jurisdiction_id": "117-JURISDICTION-012",
+      "jurisdiction_slug": "singapore",
+      "jurisdiction_name": "Singapore",
+      "institution_name": "Infocomm Media Development Authority",
+      "official_url": "https://www.imda.gov.sg/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-049",
+      "slug": "india-open-government-data-platform-india",
+      "source_id": "source-117-global-india-open-government-data-platform-india",
+      "jurisdiction_id": "117-JURISDICTION-013",
+      "jurisdiction_slug": "india",
+      "jurisdiction_name": "India",
+      "institution_name": "Open Government Data Platform India",
+      "official_url": "https://www.data.gov.in/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-050",
+      "slug": "india-ministry-of-power",
+      "source_id": "source-117-global-india-ministry-of-power",
+      "jurisdiction_id": "117-JURISDICTION-013",
+      "jurisdiction_slug": "india",
+      "jurisdiction_name": "India",
+      "institution_name": "Ministry of Power",
+      "official_url": "https://powermin.gov.in/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-051",
+      "slug": "india-central-electricity-authority",
+      "source_id": "source-117-global-india-central-electricity-authority",
+      "jurisdiction_id": "117-JURISDICTION-013",
+      "jurisdiction_slug": "india",
+      "jurisdiction_name": "India",
+      "institution_name": "Central Electricity Authority",
+      "official_url": "https://cea.nic.in/?lang=en",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-052",
+      "slug": "india-ministry-of-new-and-renewable-energy",
+      "source_id": "source-117-global-india-ministry-of-new-and-renewable-energy",
+      "jurisdiction_id": "117-JURISDICTION-013",
+      "jurisdiction_slug": "india",
+      "jurisdiction_name": "India",
+      "institution_name": "Ministry of New and Renewable Energy",
+      "official_url": "https://mnre.gov.in/en/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-053",
+      "slug": "new-zealand-stats-nz",
+      "source_id": "source-117-global-new-zealand-stats-nz",
+      "jurisdiction_id": "117-JURISDICTION-014",
+      "jurisdiction_slug": "new-zealand",
+      "jurisdiction_name": "New Zealand",
+      "institution_name": "Stats NZ",
+      "official_url": "https://www.stats.govt.nz/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-054",
+      "slug": "new-zealand-electricity-authority",
+      "source_id": "source-117-global-new-zealand-electricity-authority",
+      "jurisdiction_id": "117-JURISDICTION-014",
+      "jurisdiction_slug": "new-zealand",
+      "jurisdiction_name": "New Zealand",
+      "institution_name": "Electricity Authority",
+      "official_url": "https://www.ea.govt.nz/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-055",
+      "slug": "new-zealand-ministry-of-business-innovation-and-employment",
+      "source_id": "source-117-global-new-zealand-ministry-of-business-innovation-and-employment",
+      "jurisdiction_id": "117-JURISDICTION-014",
+      "jurisdiction_slug": "new-zealand",
+      "jurisdiction_name": "New Zealand",
+      "institution_name": "Ministry of Business, Innovation and Employment",
+      "official_url": "https://www.mbie.govt.nz/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-056",
+      "slug": "new-zealand-ministry-for-the-environment",
+      "source_id": "source-117-global-new-zealand-ministry-for-the-environment",
+      "jurisdiction_id": "117-JURISDICTION-014",
+      "jurisdiction_slug": "new-zealand",
+      "jurisdiction_name": "New Zealand",
+      "institution_name": "Ministry for the Environment",
+      "official_url": "https://environment.govt.nz/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-057",
+      "slug": "brazil-brazilian-institute-of-geography-and-statistics",
+      "source_id": "source-117-global-brazil-brazilian-institute-of-geography-and-statistics",
+      "jurisdiction_id": "117-JURISDICTION-015",
+      "jurisdiction_slug": "brazil",
+      "jurisdiction_name": "Brazil",
+      "institution_name": "Brazilian Institute of Geography and Statistics",
+      "official_url": "https://www.ibge.gov.br/en/home-eng.html",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-058",
+      "slug": "brazil-national-electric-energy-agency",
+      "source_id": "source-117-global-brazil-national-electric-energy-agency",
+      "jurisdiction_id": "117-JURISDICTION-015",
+      "jurisdiction_slug": "brazil",
+      "jurisdiction_name": "Brazil",
+      "institution_name": "National Electric Energy Agency",
+      "official_url": "https://www.gov.br/aneel/en",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-059",
+      "slug": "brazil-energy-research-office",
+      "source_id": "source-117-global-brazil-energy-research-office",
+      "jurisdiction_id": "117-JURISDICTION-015",
+      "jurisdiction_slug": "brazil",
+      "jurisdiction_name": "Brazil",
+      "institution_name": "Energy Research Office",
+      "official_url": "https://www.epe.gov.br/en",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-060",
+      "slug": "brazil-ministry-of-science-technology-and-innovation",
+      "source_id": "source-117-global-brazil-ministry-of-science-technology-and-innovation",
+      "jurisdiction_id": "117-JURISDICTION-015",
+      "jurisdiction_slug": "brazil",
+      "jurisdiction_name": "Brazil",
+      "institution_name": "Ministry of Science, Technology and Innovation",
+      "official_url": "https://www.gov.br/mcti/pt-br",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-061",
+      "slug": "chile-national-statistics-institute-of-chile",
+      "source_id": "source-117-global-chile-national-statistics-institute-of-chile",
+      "jurisdiction_id": "117-JURISDICTION-016",
+      "jurisdiction_slug": "chile",
+      "jurisdiction_name": "Chile",
+      "institution_name": "National Statistics Institute of Chile",
+      "official_url": "https://www.ine.gob.cl/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-062",
+      "slug": "chile-national-energy-commission",
+      "source_id": "source-117-global-chile-national-energy-commission",
+      "jurisdiction_id": "117-JURISDICTION-016",
+      "jurisdiction_slug": "chile",
+      "jurisdiction_name": "Chile",
+      "institution_name": "National Energy Commission",
+      "official_url": "https://www.cne.cl/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-063",
+      "slug": "chile-environmental-assessment-service",
+      "source_id": "source-117-global-chile-environmental-assessment-service",
+      "jurisdiction_id": "117-JURISDICTION-016",
+      "jurisdiction_slug": "chile",
+      "jurisdiction_name": "Chile",
+      "institution_name": "Environmental Assessment Service",
+      "official_url": "https://www.sea.gob.cl/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-064",
+      "slug": "chile-ministry-of-energy",
+      "source_id": "source-117-global-chile-ministry-of-energy",
+      "jurisdiction_id": "117-JURISDICTION-016",
+      "jurisdiction_slug": "chile",
+      "jurisdiction_name": "Chile",
+      "institution_name": "Ministry of Energy",
+      "official_url": "https://energia.gob.cl/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-065",
+      "slug": "south-africa-statistics-south-africa",
+      "source_id": "source-117-global-south-africa-statistics-south-africa",
+      "jurisdiction_id": "117-JURISDICTION-017",
+      "jurisdiction_slug": "south-africa",
+      "jurisdiction_name": "South Africa",
+      "institution_name": "Statistics South Africa",
+      "official_url": "https://www.statssa.gov.za/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-066",
+      "slug": "south-africa-national-energy-regulator-of-south-africa",
+      "source_id": "source-117-global-south-africa-national-energy-regulator-of-south-africa",
+      "jurisdiction_id": "117-JURISDICTION-017",
+      "jurisdiction_slug": "south-africa",
+      "jurisdiction_name": "South Africa",
+      "institution_name": "National Energy Regulator of South Africa",
+      "official_url": "https://www.nersa.org.za/",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-067",
+      "slug": "south-africa-department-of-forestry-fisheries-and-the-environment",
+      "source_id": "source-117-global-south-africa-department-of-forestry-fisheries-and-the-environment",
+      "jurisdiction_id": "117-JURISDICTION-017",
+      "jurisdiction_slug": "south-africa",
+      "jurisdiction_name": "South Africa",
+      "institution_name": "Department of Forestry, Fisheries and the Environment",
+      "official_url": "https://www.dffe.gov.za/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-068",
+      "slug": "south-africa-council-for-scientific-and-industrial-research",
+      "source_id": "source-117-global-south-africa-council-for-scientific-and-industrial-research",
+      "jurisdiction_id": "117-JURISDICTION-017",
+      "jurisdiction_slug": "south-africa",
+      "jurisdiction_name": "South Africa",
+      "institution_name": "Council for Scientific and Industrial Research",
+      "official_url": "https://www.csir.co.za/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-069",
+      "slug": "mexico-inegi",
+      "source_id": "source-117-global-mexico-inegi",
+      "jurisdiction_id": "117-JURISDICTION-018",
+      "jurisdiction_slug": "mexico",
+      "jurisdiction_name": "Mexico",
+      "institution_name": "INEGI",
+      "official_url": "https://www.inegi.org.mx/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-070",
+      "slug": "mexico-secretariat-of-energy",
+      "source_id": "source-117-global-mexico-secretariat-of-energy",
+      "jurisdiction_id": "117-JURISDICTION-018",
+      "jurisdiction_slug": "mexico",
+      "jurisdiction_name": "Mexico",
+      "institution_name": "Secretariat of Energy",
+      "official_url": "https://www.gob.mx/sener",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-071",
+      "slug": "mexico-national-center-for-energy-control",
+      "source_id": "source-117-global-mexico-national-center-for-energy-control",
+      "jurisdiction_id": "117-JURISDICTION-018",
+      "jurisdiction_slug": "mexico",
+      "jurisdiction_name": "Mexico",
+      "institution_name": "National Center for Energy Control",
+      "official_url": "https://www.cenace.gob.mx/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-072",
+      "slug": "mexico-secretariat-of-environment-and-natural-resources",
+      "source_id": "source-117-global-mexico-secretariat-of-environment-and-natural-resources",
+      "jurisdiction_id": "117-JURISDICTION-018",
+      "jurisdiction_slug": "mexico",
+      "jurisdiction_name": "Mexico",
+      "institution_name": "Secretariat of Environment and Natural Resources",
+      "official_url": "https://www.gob.mx/semarnat",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-073",
+      "slug": "united-arab-emirates-federal-competitiveness-and-statistics-centre",
+      "source_id": "source-117-global-united-arab-emirates-federal-competitiveness-and-statistics-centre",
+      "jurisdiction_id": "117-JURISDICTION-019",
+      "jurisdiction_slug": "united-arab-emirates",
+      "jurisdiction_name": "United Arab Emirates",
+      "institution_name": "Federal Competitiveness and Statistics Centre",
+      "official_url": "https://fcsc.gov.ae/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-074",
+      "slug": "united-arab-emirates-ministry-of-energy-and-infrastructure",
+      "source_id": "source-117-global-united-arab-emirates-ministry-of-energy-and-infrastructure",
+      "jurisdiction_id": "117-JURISDICTION-019",
+      "jurisdiction_slug": "united-arab-emirates",
+      "jurisdiction_name": "United Arab Emirates",
+      "institution_name": "Ministry of Energy and Infrastructure",
+      "official_url": "https://www.moei.gov.ae/en",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-075",
+      "slug": "united-arab-emirates-telecommunications-and-digital-government-regulatory-authority",
+      "source_id": "source-117-global-united-arab-emirates-telecommunications-and-digital-government-regulatory-authority",
+      "jurisdiction_id": "117-JURISDICTION-019",
+      "jurisdiction_slug": "united-arab-emirates",
+      "jurisdiction_name": "United Arab Emirates",
+      "institution_name": "Telecommunications and Digital Government Regulatory Authority",
+      "official_url": "https://tdra.gov.ae/en/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-076",
+      "slug": "united-arab-emirates-uae-space-agency",
+      "source_id": "source-117-global-united-arab-emirates-uae-space-agency",
+      "jurisdiction_id": "117-JURISDICTION-019",
+      "jurisdiction_slug": "united-arab-emirates",
+      "jurisdiction_name": "United Arab Emirates",
+      "institution_name": "UAE Space Agency",
+      "official_url": "https://space.gov.ae/",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-077",
+      "slug": "multilateral-systems-world-bank-data",
+      "source_id": "source-117-global-multilateral-systems-world-bank-data",
+      "jurisdiction_id": "117-JURISDICTION-020",
+      "jurisdiction_slug": "multilateral-systems",
+      "jurisdiction_name": "Multilateral systems",
+      "institution_name": "World Bank Data",
+      "official_url": "https://data.worldbank.org/",
+      "authority_class": "Official statistics and measurement",
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "official statistical release",
+        "time series",
+        "methodology and revision note"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-078",
+      "slug": "multilateral-systems-international-energy-agency",
+      "source_id": "source-117-global-multilateral-systems-international-energy-agency",
+      "jurisdiction_id": "117-JURISDICTION-020",
+      "jurisdiction_slug": "multilateral-systems",
+      "jurisdiction_name": "Multilateral systems",
+      "institution_name": "International Energy Agency",
+      "official_url": "https://www.iea.org/data-and-statistics",
+      "authority_class": "Energy, utility and system operation",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-critical-minerals",
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Recurring operation or output",
+        "Comparable outcome"
+      ],
+      "artifact_families": [
+        "system plan or rule",
+        "operating data",
+        "capacity or reliability report"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-079",
+      "slug": "multilateral-systems-oecd-data-explorer",
+      "source_id": "source-117-global-multilateral-systems-oecd-data-explorer",
+      "jurisdiction_id": "117-JURISDICTION-020",
+      "jurisdiction_slug": "multilateral-systems",
+      "jurisdiction_name": "Multilateral systems",
+      "institution_name": "OECD Data Explorer",
+      "official_url": "https://data-explorer.oecd.org/",
+      "authority_class": "Infrastructure, environment and territorial delivery",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-aviation",
+        "topic-water",
+        "topic-energy",
+        "topic-advanced-manufacturing",
+        "topic-policy-and-standards",
+        "topic-human-futures"
+      ],
+      "conversion_stages": [
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Build or implementation",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "project or assessment register",
+        "permit or authorization",
+        "delivery, completion or acceptance record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    },
+    {
+      "rail_id": "117-RAIL-080",
+      "slug": "multilateral-systems-international-renewable-energy-agency",
+      "source_id": "source-117-global-multilateral-systems-international-renewable-energy-agency",
+      "jurisdiction_id": "117-JURISDICTION-020",
+      "jurisdiction_slug": "multilateral-systems",
+      "jurisdiction_name": "Multilateral systems",
+      "institution_name": "International Renewable Energy Agency",
+      "official_url": "https://www.irena.org/Data",
+      "authority_class": "Science, technology and industrial innovation",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-advanced-manufacturing",
+        "topic-agriculture-and-bioeconomy",
+        "topic-space",
+        "topic-cybersecurity",
+        "topic-policy-and-standards"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Policy or authority",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification",
+        "Accepted service, product, or cutover"
+      ],
+      "artifact_families": [
+        "research program or award",
+        "technical report",
+        "standard, trial or adoption record"
+      ],
+      "mapping_state": "Mapped candidate authority rail",
+      "artifact_review_state": "Exact artifact review required",
+      "interpretation_boundary": "An official portal or institution identity establishes a discovery rail, not the truth, implementation, operation or outcome of any downstream claim."
+    }
+  ],
+  "topic_coverage": [
+    {
+      "topic_id": "topic-advanced-manufacturing",
+      "rail_ids": [
+        "117-RAIL-003",
+        "117-RAIL-004",
+        "117-RAIL-007",
+        "117-RAIL-008",
+        "117-RAIL-011",
+        "117-RAIL-012",
+        "117-RAIL-015",
+        "117-RAIL-016",
+        "117-RAIL-019",
+        "117-RAIL-020",
+        "117-RAIL-023",
+        "117-RAIL-024",
+        "117-RAIL-027",
+        "117-RAIL-028",
+        "117-RAIL-031",
+        "117-RAIL-032",
+        "117-RAIL-035",
+        "117-RAIL-036",
+        "117-RAIL-039",
+        "117-RAIL-040",
+        "117-RAIL-043",
+        "117-RAIL-044",
+        "117-RAIL-047",
+        "117-RAIL-048",
+        "117-RAIL-051",
+        "117-RAIL-052",
+        "117-RAIL-055",
+        "117-RAIL-056",
+        "117-RAIL-059",
+        "117-RAIL-060",
+        "117-RAIL-063",
+        "117-RAIL-064",
+        "117-RAIL-067",
+        "117-RAIL-068",
+        "117-RAIL-071",
+        "117-RAIL-072",
+        "117-RAIL-075",
+        "117-RAIL-076",
+        "117-RAIL-079",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "topic_id": "topic-agriculture-and-bioeconomy",
+      "rail_ids": [
+        "117-RAIL-001",
+        "117-RAIL-004",
+        "117-RAIL-005",
+        "117-RAIL-008",
+        "117-RAIL-009",
+        "117-RAIL-012",
+        "117-RAIL-013",
+        "117-RAIL-016",
+        "117-RAIL-017",
+        "117-RAIL-020",
+        "117-RAIL-021",
+        "117-RAIL-024",
+        "117-RAIL-025",
+        "117-RAIL-028",
+        "117-RAIL-029",
+        "117-RAIL-032",
+        "117-RAIL-033",
+        "117-RAIL-036",
+        "117-RAIL-037",
+        "117-RAIL-040",
+        "117-RAIL-041",
+        "117-RAIL-044",
+        "117-RAIL-045",
+        "117-RAIL-048",
+        "117-RAIL-049",
+        "117-RAIL-052",
+        "117-RAIL-053",
+        "117-RAIL-056",
+        "117-RAIL-057",
+        "117-RAIL-060",
+        "117-RAIL-061",
+        "117-RAIL-064",
+        "117-RAIL-065",
+        "117-RAIL-068",
+        "117-RAIL-069",
+        "117-RAIL-072",
+        "117-RAIL-073",
+        "117-RAIL-076",
+        "117-RAIL-077",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "topic_id": "topic-ai-for-science",
+      "rail_ids": [
+        "117-RAIL-004",
+        "117-RAIL-008",
+        "117-RAIL-012",
+        "117-RAIL-016",
+        "117-RAIL-020",
+        "117-RAIL-024",
+        "117-RAIL-028",
+        "117-RAIL-032",
+        "117-RAIL-036",
+        "117-RAIL-040",
+        "117-RAIL-044",
+        "117-RAIL-048",
+        "117-RAIL-052",
+        "117-RAIL-056",
+        "117-RAIL-060",
+        "117-RAIL-064",
+        "117-RAIL-068",
+        "117-RAIL-072",
+        "117-RAIL-076",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "topic_id": "topic-aviation",
+      "rail_ids": [
+        "117-RAIL-003",
+        "117-RAIL-007",
+        "117-RAIL-011",
+        "117-RAIL-015",
+        "117-RAIL-019",
+        "117-RAIL-023",
+        "117-RAIL-027",
+        "117-RAIL-031",
+        "117-RAIL-035",
+        "117-RAIL-039",
+        "117-RAIL-043",
+        "117-RAIL-047",
+        "117-RAIL-051",
+        "117-RAIL-055",
+        "117-RAIL-059",
+        "117-RAIL-063",
+        "117-RAIL-067",
+        "117-RAIL-071",
+        "117-RAIL-075",
+        "117-RAIL-079"
+      ]
+    },
+    {
+      "topic_id": "topic-chips-and-compute",
+      "rail_ids": [
+        "117-RAIL-004",
+        "117-RAIL-008",
+        "117-RAIL-012",
+        "117-RAIL-016",
+        "117-RAIL-020",
+        "117-RAIL-024",
+        "117-RAIL-028",
+        "117-RAIL-032",
+        "117-RAIL-036",
+        "117-RAIL-040",
+        "117-RAIL-044",
+        "117-RAIL-048",
+        "117-RAIL-052",
+        "117-RAIL-056",
+        "117-RAIL-060",
+        "117-RAIL-064",
+        "117-RAIL-068",
+        "117-RAIL-072",
+        "117-RAIL-076",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "topic_id": "topic-climate",
+      "rail_ids": [
+        "117-RAIL-001",
+        "117-RAIL-002",
+        "117-RAIL-005",
+        "117-RAIL-006",
+        "117-RAIL-009",
+        "117-RAIL-010",
+        "117-RAIL-013",
+        "117-RAIL-014",
+        "117-RAIL-017",
+        "117-RAIL-018",
+        "117-RAIL-021",
+        "117-RAIL-022",
+        "117-RAIL-025",
+        "117-RAIL-026",
+        "117-RAIL-029",
+        "117-RAIL-030",
+        "117-RAIL-033",
+        "117-RAIL-034",
+        "117-RAIL-037",
+        "117-RAIL-038",
+        "117-RAIL-041",
+        "117-RAIL-042",
+        "117-RAIL-045",
+        "117-RAIL-046",
+        "117-RAIL-049",
+        "117-RAIL-050",
+        "117-RAIL-053",
+        "117-RAIL-054",
+        "117-RAIL-057",
+        "117-RAIL-058",
+        "117-RAIL-061",
+        "117-RAIL-062",
+        "117-RAIL-065",
+        "117-RAIL-066",
+        "117-RAIL-069",
+        "117-RAIL-070",
+        "117-RAIL-073",
+        "117-RAIL-074",
+        "117-RAIL-077",
+        "117-RAIL-078"
+      ]
+    },
+    {
+      "topic_id": "topic-critical-minerals",
+      "rail_ids": [
+        "117-RAIL-002",
+        "117-RAIL-006",
+        "117-RAIL-010",
+        "117-RAIL-014",
+        "117-RAIL-018",
+        "117-RAIL-022",
+        "117-RAIL-026",
+        "117-RAIL-030",
+        "117-RAIL-034",
+        "117-RAIL-038",
+        "117-RAIL-042",
+        "117-RAIL-046",
+        "117-RAIL-050",
+        "117-RAIL-054",
+        "117-RAIL-058",
+        "117-RAIL-062",
+        "117-RAIL-066",
+        "117-RAIL-070",
+        "117-RAIL-074",
+        "117-RAIL-078"
+      ]
+    },
+    {
+      "topic_id": "topic-cybersecurity",
+      "rail_ids": [
+        "117-RAIL-004",
+        "117-RAIL-008",
+        "117-RAIL-012",
+        "117-RAIL-016",
+        "117-RAIL-020",
+        "117-RAIL-024",
+        "117-RAIL-028",
+        "117-RAIL-032",
+        "117-RAIL-036",
+        "117-RAIL-040",
+        "117-RAIL-044",
+        "117-RAIL-048",
+        "117-RAIL-052",
+        "117-RAIL-056",
+        "117-RAIL-060",
+        "117-RAIL-064",
+        "117-RAIL-068",
+        "117-RAIL-072",
+        "117-RAIL-076",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "topic_id": "topic-discovery-technologies",
+      "rail_ids": [
+        "117-RAIL-004",
+        "117-RAIL-008",
+        "117-RAIL-012",
+        "117-RAIL-016",
+        "117-RAIL-020",
+        "117-RAIL-024",
+        "117-RAIL-028",
+        "117-RAIL-032",
+        "117-RAIL-036",
+        "117-RAIL-040",
+        "117-RAIL-044",
+        "117-RAIL-048",
+        "117-RAIL-052",
+        "117-RAIL-056",
+        "117-RAIL-060",
+        "117-RAIL-064",
+        "117-RAIL-068",
+        "117-RAIL-072",
+        "117-RAIL-076",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "topic_id": "topic-energy",
+      "rail_ids": [
+        "117-RAIL-001",
+        "117-RAIL-002",
+        "117-RAIL-003",
+        "117-RAIL-005",
+        "117-RAIL-006",
+        "117-RAIL-007",
+        "117-RAIL-009",
+        "117-RAIL-010",
+        "117-RAIL-011",
+        "117-RAIL-013",
+        "117-RAIL-014",
+        "117-RAIL-015",
+        "117-RAIL-017",
+        "117-RAIL-018",
+        "117-RAIL-019",
+        "117-RAIL-021",
+        "117-RAIL-022",
+        "117-RAIL-023",
+        "117-RAIL-025",
+        "117-RAIL-026",
+        "117-RAIL-027",
+        "117-RAIL-029",
+        "117-RAIL-030",
+        "117-RAIL-031",
+        "117-RAIL-033",
+        "117-RAIL-034",
+        "117-RAIL-035",
+        "117-RAIL-037",
+        "117-RAIL-038",
+        "117-RAIL-039",
+        "117-RAIL-041",
+        "117-RAIL-042",
+        "117-RAIL-043",
+        "117-RAIL-045",
+        "117-RAIL-046",
+        "117-RAIL-047",
+        "117-RAIL-049",
+        "117-RAIL-050",
+        "117-RAIL-051",
+        "117-RAIL-053",
+        "117-RAIL-054",
+        "117-RAIL-055",
+        "117-RAIL-057",
+        "117-RAIL-058",
+        "117-RAIL-059",
+        "117-RAIL-061",
+        "117-RAIL-062",
+        "117-RAIL-063",
+        "117-RAIL-065",
+        "117-RAIL-066",
+        "117-RAIL-067",
+        "117-RAIL-069",
+        "117-RAIL-070",
+        "117-RAIL-071",
+        "117-RAIL-073",
+        "117-RAIL-074",
+        "117-RAIL-075",
+        "117-RAIL-077",
+        "117-RAIL-078",
+        "117-RAIL-079"
+      ]
+    },
+    {
+      "topic_id": "topic-finance-and-risk",
+      "rail_ids": [
+        "117-RAIL-001",
+        "117-RAIL-002",
+        "117-RAIL-005",
+        "117-RAIL-006",
+        "117-RAIL-009",
+        "117-RAIL-010",
+        "117-RAIL-013",
+        "117-RAIL-014",
+        "117-RAIL-017",
+        "117-RAIL-018",
+        "117-RAIL-021",
+        "117-RAIL-022",
+        "117-RAIL-025",
+        "117-RAIL-026",
+        "117-RAIL-029",
+        "117-RAIL-030",
+        "117-RAIL-033",
+        "117-RAIL-034",
+        "117-RAIL-037",
+        "117-RAIL-038",
+        "117-RAIL-041",
+        "117-RAIL-042",
+        "117-RAIL-045",
+        "117-RAIL-046",
+        "117-RAIL-049",
+        "117-RAIL-050",
+        "117-RAIL-053",
+        "117-RAIL-054",
+        "117-RAIL-057",
+        "117-RAIL-058",
+        "117-RAIL-061",
+        "117-RAIL-062",
+        "117-RAIL-065",
+        "117-RAIL-066",
+        "117-RAIL-069",
+        "117-RAIL-070",
+        "117-RAIL-073",
+        "117-RAIL-074",
+        "117-RAIL-077",
+        "117-RAIL-078"
+      ]
+    },
+    {
+      "topic_id": "topic-human-futures",
+      "rail_ids": [
+        "117-RAIL-001",
+        "117-RAIL-003",
+        "117-RAIL-005",
+        "117-RAIL-007",
+        "117-RAIL-009",
+        "117-RAIL-011",
+        "117-RAIL-013",
+        "117-RAIL-015",
+        "117-RAIL-017",
+        "117-RAIL-019",
+        "117-RAIL-021",
+        "117-RAIL-023",
+        "117-RAIL-025",
+        "117-RAIL-027",
+        "117-RAIL-029",
+        "117-RAIL-031",
+        "117-RAIL-033",
+        "117-RAIL-035",
+        "117-RAIL-037",
+        "117-RAIL-039",
+        "117-RAIL-041",
+        "117-RAIL-043",
+        "117-RAIL-045",
+        "117-RAIL-047",
+        "117-RAIL-049",
+        "117-RAIL-051",
+        "117-RAIL-053",
+        "117-RAIL-055",
+        "117-RAIL-057",
+        "117-RAIL-059",
+        "117-RAIL-061",
+        "117-RAIL-063",
+        "117-RAIL-065",
+        "117-RAIL-067",
+        "117-RAIL-069",
+        "117-RAIL-071",
+        "117-RAIL-073",
+        "117-RAIL-075",
+        "117-RAIL-077",
+        "117-RAIL-079"
+      ]
+    },
+    {
+      "topic_id": "topic-mobility",
+      "rail_ids": [
+        "117-RAIL-003",
+        "117-RAIL-007",
+        "117-RAIL-011",
+        "117-RAIL-015",
+        "117-RAIL-019",
+        "117-RAIL-023",
+        "117-RAIL-027",
+        "117-RAIL-031",
+        "117-RAIL-035",
+        "117-RAIL-039",
+        "117-RAIL-043",
+        "117-RAIL-047",
+        "117-RAIL-051",
+        "117-RAIL-055",
+        "117-RAIL-059",
+        "117-RAIL-063",
+        "117-RAIL-067",
+        "117-RAIL-071",
+        "117-RAIL-075",
+        "117-RAIL-079"
+      ]
+    },
+    {
+      "topic_id": "topic-policy-and-standards",
+      "rail_ids": [
+        "117-RAIL-002",
+        "117-RAIL-003",
+        "117-RAIL-004",
+        "117-RAIL-006",
+        "117-RAIL-007",
+        "117-RAIL-008",
+        "117-RAIL-010",
+        "117-RAIL-011",
+        "117-RAIL-012",
+        "117-RAIL-014",
+        "117-RAIL-015",
+        "117-RAIL-016",
+        "117-RAIL-018",
+        "117-RAIL-019",
+        "117-RAIL-020",
+        "117-RAIL-022",
+        "117-RAIL-023",
+        "117-RAIL-024",
+        "117-RAIL-026",
+        "117-RAIL-027",
+        "117-RAIL-028",
+        "117-RAIL-030",
+        "117-RAIL-031",
+        "117-RAIL-032",
+        "117-RAIL-034",
+        "117-RAIL-035",
+        "117-RAIL-036",
+        "117-RAIL-038",
+        "117-RAIL-039",
+        "117-RAIL-040",
+        "117-RAIL-042",
+        "117-RAIL-043",
+        "117-RAIL-044",
+        "117-RAIL-046",
+        "117-RAIL-047",
+        "117-RAIL-048",
+        "117-RAIL-050",
+        "117-RAIL-051",
+        "117-RAIL-052",
+        "117-RAIL-054",
+        "117-RAIL-055",
+        "117-RAIL-056",
+        "117-RAIL-058",
+        "117-RAIL-059",
+        "117-RAIL-060",
+        "117-RAIL-062",
+        "117-RAIL-063",
+        "117-RAIL-064",
+        "117-RAIL-066",
+        "117-RAIL-067",
+        "117-RAIL-068",
+        "117-RAIL-070",
+        "117-RAIL-071",
+        "117-RAIL-072",
+        "117-RAIL-074",
+        "117-RAIL-075",
+        "117-RAIL-076",
+        "117-RAIL-078",
+        "117-RAIL-079",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "topic_id": "topic-quantum",
+      "rail_ids": [
+        "117-RAIL-004",
+        "117-RAIL-008",
+        "117-RAIL-012",
+        "117-RAIL-016",
+        "117-RAIL-020",
+        "117-RAIL-024",
+        "117-RAIL-028",
+        "117-RAIL-032",
+        "117-RAIL-036",
+        "117-RAIL-040",
+        "117-RAIL-044",
+        "117-RAIL-048",
+        "117-RAIL-052",
+        "117-RAIL-056",
+        "117-RAIL-060",
+        "117-RAIL-064",
+        "117-RAIL-068",
+        "117-RAIL-072",
+        "117-RAIL-076",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "topic_id": "topic-space",
+      "rail_ids": [
+        "117-RAIL-004",
+        "117-RAIL-008",
+        "117-RAIL-012",
+        "117-RAIL-016",
+        "117-RAIL-020",
+        "117-RAIL-024",
+        "117-RAIL-028",
+        "117-RAIL-032",
+        "117-RAIL-036",
+        "117-RAIL-040",
+        "117-RAIL-044",
+        "117-RAIL-048",
+        "117-RAIL-052",
+        "117-RAIL-056",
+        "117-RAIL-060",
+        "117-RAIL-064",
+        "117-RAIL-068",
+        "117-RAIL-072",
+        "117-RAIL-076",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "topic_id": "topic-water",
+      "rail_ids": [
+        "117-RAIL-001",
+        "117-RAIL-002",
+        "117-RAIL-003",
+        "117-RAIL-005",
+        "117-RAIL-006",
+        "117-RAIL-007",
+        "117-RAIL-009",
+        "117-RAIL-010",
+        "117-RAIL-011",
+        "117-RAIL-013",
+        "117-RAIL-014",
+        "117-RAIL-015",
+        "117-RAIL-017",
+        "117-RAIL-018",
+        "117-RAIL-019",
+        "117-RAIL-021",
+        "117-RAIL-022",
+        "117-RAIL-023",
+        "117-RAIL-025",
+        "117-RAIL-026",
+        "117-RAIL-027",
+        "117-RAIL-029",
+        "117-RAIL-030",
+        "117-RAIL-031",
+        "117-RAIL-033",
+        "117-RAIL-034",
+        "117-RAIL-035",
+        "117-RAIL-037",
+        "117-RAIL-038",
+        "117-RAIL-039",
+        "117-RAIL-041",
+        "117-RAIL-042",
+        "117-RAIL-043",
+        "117-RAIL-045",
+        "117-RAIL-046",
+        "117-RAIL-047",
+        "117-RAIL-049",
+        "117-RAIL-050",
+        "117-RAIL-051",
+        "117-RAIL-053",
+        "117-RAIL-054",
+        "117-RAIL-055",
+        "117-RAIL-057",
+        "117-RAIL-058",
+        "117-RAIL-059",
+        "117-RAIL-061",
+        "117-RAIL-062",
+        "117-RAIL-063",
+        "117-RAIL-065",
+        "117-RAIL-066",
+        "117-RAIL-067",
+        "117-RAIL-069",
+        "117-RAIL-070",
+        "117-RAIL-071",
+        "117-RAIL-073",
+        "117-RAIL-074",
+        "117-RAIL-075",
+        "117-RAIL-077",
+        "117-RAIL-078",
+        "117-RAIL-079"
+      ]
+    }
+  ],
+  "stage_coverage": [
+    {
+      "stage": "Named context or baseline",
+      "rail_ids": [
+        "117-RAIL-001",
+        "117-RAIL-004",
+        "117-RAIL-005",
+        "117-RAIL-008",
+        "117-RAIL-009",
+        "117-RAIL-012",
+        "117-RAIL-013",
+        "117-RAIL-016",
+        "117-RAIL-017",
+        "117-RAIL-020",
+        "117-RAIL-021",
+        "117-RAIL-024",
+        "117-RAIL-025",
+        "117-RAIL-028",
+        "117-RAIL-029",
+        "117-RAIL-032",
+        "117-RAIL-033",
+        "117-RAIL-036",
+        "117-RAIL-037",
+        "117-RAIL-040",
+        "117-RAIL-041",
+        "117-RAIL-044",
+        "117-RAIL-045",
+        "117-RAIL-048",
+        "117-RAIL-049",
+        "117-RAIL-052",
+        "117-RAIL-053",
+        "117-RAIL-056",
+        "117-RAIL-057",
+        "117-RAIL-060",
+        "117-RAIL-061",
+        "117-RAIL-064",
+        "117-RAIL-065",
+        "117-RAIL-068",
+        "117-RAIL-069",
+        "117-RAIL-072",
+        "117-RAIL-073",
+        "117-RAIL-076",
+        "117-RAIL-077",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "stage": "Recurring operation or output",
+      "rail_ids": [
+        "117-RAIL-001",
+        "117-RAIL-002",
+        "117-RAIL-005",
+        "117-RAIL-006",
+        "117-RAIL-009",
+        "117-RAIL-010",
+        "117-RAIL-013",
+        "117-RAIL-014",
+        "117-RAIL-017",
+        "117-RAIL-018",
+        "117-RAIL-021",
+        "117-RAIL-022",
+        "117-RAIL-025",
+        "117-RAIL-026",
+        "117-RAIL-029",
+        "117-RAIL-030",
+        "117-RAIL-033",
+        "117-RAIL-034",
+        "117-RAIL-037",
+        "117-RAIL-038",
+        "117-RAIL-041",
+        "117-RAIL-042",
+        "117-RAIL-045",
+        "117-RAIL-046",
+        "117-RAIL-049",
+        "117-RAIL-050",
+        "117-RAIL-053",
+        "117-RAIL-054",
+        "117-RAIL-057",
+        "117-RAIL-058",
+        "117-RAIL-061",
+        "117-RAIL-062",
+        "117-RAIL-065",
+        "117-RAIL-066",
+        "117-RAIL-069",
+        "117-RAIL-070",
+        "117-RAIL-073",
+        "117-RAIL-074",
+        "117-RAIL-077",
+        "117-RAIL-078"
+      ]
+    },
+    {
+      "stage": "Comparable outcome",
+      "rail_ids": [
+        "117-RAIL-001",
+        "117-RAIL-002",
+        "117-RAIL-005",
+        "117-RAIL-006",
+        "117-RAIL-009",
+        "117-RAIL-010",
+        "117-RAIL-013",
+        "117-RAIL-014",
+        "117-RAIL-017",
+        "117-RAIL-018",
+        "117-RAIL-021",
+        "117-RAIL-022",
+        "117-RAIL-025",
+        "117-RAIL-026",
+        "117-RAIL-029",
+        "117-RAIL-030",
+        "117-RAIL-033",
+        "117-RAIL-034",
+        "117-RAIL-037",
+        "117-RAIL-038",
+        "117-RAIL-041",
+        "117-RAIL-042",
+        "117-RAIL-045",
+        "117-RAIL-046",
+        "117-RAIL-049",
+        "117-RAIL-050",
+        "117-RAIL-053",
+        "117-RAIL-054",
+        "117-RAIL-057",
+        "117-RAIL-058",
+        "117-RAIL-061",
+        "117-RAIL-062",
+        "117-RAIL-065",
+        "117-RAIL-066",
+        "117-RAIL-069",
+        "117-RAIL-070",
+        "117-RAIL-073",
+        "117-RAIL-074",
+        "117-RAIL-077",
+        "117-RAIL-078"
+      ]
+    },
+    {
+      "stage": "Policy or authority",
+      "rail_ids": [
+        "117-RAIL-002",
+        "117-RAIL-003",
+        "117-RAIL-004",
+        "117-RAIL-006",
+        "117-RAIL-007",
+        "117-RAIL-008",
+        "117-RAIL-010",
+        "117-RAIL-011",
+        "117-RAIL-012",
+        "117-RAIL-014",
+        "117-RAIL-015",
+        "117-RAIL-016",
+        "117-RAIL-018",
+        "117-RAIL-019",
+        "117-RAIL-020",
+        "117-RAIL-022",
+        "117-RAIL-023",
+        "117-RAIL-024",
+        "117-RAIL-026",
+        "117-RAIL-027",
+        "117-RAIL-028",
+        "117-RAIL-030",
+        "117-RAIL-031",
+        "117-RAIL-032",
+        "117-RAIL-034",
+        "117-RAIL-035",
+        "117-RAIL-036",
+        "117-RAIL-038",
+        "117-RAIL-039",
+        "117-RAIL-040",
+        "117-RAIL-042",
+        "117-RAIL-043",
+        "117-RAIL-044",
+        "117-RAIL-046",
+        "117-RAIL-047",
+        "117-RAIL-048",
+        "117-RAIL-050",
+        "117-RAIL-051",
+        "117-RAIL-052",
+        "117-RAIL-054",
+        "117-RAIL-055",
+        "117-RAIL-056",
+        "117-RAIL-058",
+        "117-RAIL-059",
+        "117-RAIL-060",
+        "117-RAIL-062",
+        "117-RAIL-063",
+        "117-RAIL-064",
+        "117-RAIL-066",
+        "117-RAIL-067",
+        "117-RAIL-068",
+        "117-RAIL-070",
+        "117-RAIL-071",
+        "117-RAIL-072",
+        "117-RAIL-074",
+        "117-RAIL-075",
+        "117-RAIL-076",
+        "117-RAIL-078",
+        "117-RAIL-079",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "stage": "Build or implementation",
+      "rail_ids": [
+        "117-RAIL-002",
+        "117-RAIL-003",
+        "117-RAIL-006",
+        "117-RAIL-007",
+        "117-RAIL-010",
+        "117-RAIL-011",
+        "117-RAIL-014",
+        "117-RAIL-015",
+        "117-RAIL-018",
+        "117-RAIL-019",
+        "117-RAIL-022",
+        "117-RAIL-023",
+        "117-RAIL-026",
+        "117-RAIL-027",
+        "117-RAIL-030",
+        "117-RAIL-031",
+        "117-RAIL-034",
+        "117-RAIL-035",
+        "117-RAIL-038",
+        "117-RAIL-039",
+        "117-RAIL-042",
+        "117-RAIL-043",
+        "117-RAIL-046",
+        "117-RAIL-047",
+        "117-RAIL-050",
+        "117-RAIL-051",
+        "117-RAIL-054",
+        "117-RAIL-055",
+        "117-RAIL-058",
+        "117-RAIL-059",
+        "117-RAIL-062",
+        "117-RAIL-063",
+        "117-RAIL-066",
+        "117-RAIL-067",
+        "117-RAIL-070",
+        "117-RAIL-071",
+        "117-RAIL-074",
+        "117-RAIL-075",
+        "117-RAIL-078",
+        "117-RAIL-079"
+      ]
+    },
+    {
+      "stage": "Accepted service, product, or cutover",
+      "rail_ids": [
+        "117-RAIL-002",
+        "117-RAIL-003",
+        "117-RAIL-004",
+        "117-RAIL-006",
+        "117-RAIL-007",
+        "117-RAIL-008",
+        "117-RAIL-010",
+        "117-RAIL-011",
+        "117-RAIL-012",
+        "117-RAIL-014",
+        "117-RAIL-015",
+        "117-RAIL-016",
+        "117-RAIL-018",
+        "117-RAIL-019",
+        "117-RAIL-020",
+        "117-RAIL-022",
+        "117-RAIL-023",
+        "117-RAIL-024",
+        "117-RAIL-026",
+        "117-RAIL-027",
+        "117-RAIL-028",
+        "117-RAIL-030",
+        "117-RAIL-031",
+        "117-RAIL-032",
+        "117-RAIL-034",
+        "117-RAIL-035",
+        "117-RAIL-036",
+        "117-RAIL-038",
+        "117-RAIL-039",
+        "117-RAIL-040",
+        "117-RAIL-042",
+        "117-RAIL-043",
+        "117-RAIL-044",
+        "117-RAIL-046",
+        "117-RAIL-047",
+        "117-RAIL-048",
+        "117-RAIL-050",
+        "117-RAIL-051",
+        "117-RAIL-052",
+        "117-RAIL-054",
+        "117-RAIL-055",
+        "117-RAIL-056",
+        "117-RAIL-058",
+        "117-RAIL-059",
+        "117-RAIL-060",
+        "117-RAIL-062",
+        "117-RAIL-063",
+        "117-RAIL-064",
+        "117-RAIL-066",
+        "117-RAIL-067",
+        "117-RAIL-068",
+        "117-RAIL-070",
+        "117-RAIL-071",
+        "117-RAIL-072",
+        "117-RAIL-074",
+        "117-RAIL-075",
+        "117-RAIL-076",
+        "117-RAIL-078",
+        "117-RAIL-079",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "stage": "Finance, procurement, or agreement",
+      "rail_ids": [
+        "117-RAIL-003",
+        "117-RAIL-004",
+        "117-RAIL-007",
+        "117-RAIL-008",
+        "117-RAIL-011",
+        "117-RAIL-012",
+        "117-RAIL-015",
+        "117-RAIL-016",
+        "117-RAIL-019",
+        "117-RAIL-020",
+        "117-RAIL-023",
+        "117-RAIL-024",
+        "117-RAIL-027",
+        "117-RAIL-028",
+        "117-RAIL-031",
+        "117-RAIL-032",
+        "117-RAIL-035",
+        "117-RAIL-036",
+        "117-RAIL-039",
+        "117-RAIL-040",
+        "117-RAIL-043",
+        "117-RAIL-044",
+        "117-RAIL-047",
+        "117-RAIL-048",
+        "117-RAIL-051",
+        "117-RAIL-052",
+        "117-RAIL-055",
+        "117-RAIL-056",
+        "117-RAIL-059",
+        "117-RAIL-060",
+        "117-RAIL-063",
+        "117-RAIL-064",
+        "117-RAIL-067",
+        "117-RAIL-068",
+        "117-RAIL-071",
+        "117-RAIL-072",
+        "117-RAIL-075",
+        "117-RAIL-076",
+        "117-RAIL-079",
+        "117-RAIL-080"
+      ]
+    },
+    {
+      "stage": "Test, compliance, or qualification",
+      "rail_ids": [
+        "117-RAIL-003",
+        "117-RAIL-004",
+        "117-RAIL-007",
+        "117-RAIL-008",
+        "117-RAIL-011",
+        "117-RAIL-012",
+        "117-RAIL-015",
+        "117-RAIL-016",
+        "117-RAIL-019",
+        "117-RAIL-020",
+        "117-RAIL-023",
+        "117-RAIL-024",
+        "117-RAIL-027",
+        "117-RAIL-028",
+        "117-RAIL-031",
+        "117-RAIL-032",
+        "117-RAIL-035",
+        "117-RAIL-036",
+        "117-RAIL-039",
+        "117-RAIL-040",
+        "117-RAIL-043",
+        "117-RAIL-044",
+        "117-RAIL-047",
+        "117-RAIL-048",
+        "117-RAIL-051",
+        "117-RAIL-052",
+        "117-RAIL-055",
+        "117-RAIL-056",
+        "117-RAIL-059",
+        "117-RAIL-060",
+        "117-RAIL-063",
+        "117-RAIL-064",
+        "117-RAIL-067",
+        "117-RAIL-068",
+        "117-RAIL-071",
+        "117-RAIL-072",
+        "117-RAIL-075",
+        "117-RAIL-076",
+        "117-RAIL-079",
+        "117-RAIL-080"
+      ]
+    }
+  ]
+}

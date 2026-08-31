@@ -1,0 +1,109 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import graph from "../../../../data/phase-117-global-authority-graph.json";
+import acquisitionFieldbook from "../../../../data/phase-120-evidence-acquisition-packets.json";
+
+export function getStaticPaths() {
+  return graph.rails.map((item) => ({ params: { slug: item.slug }, props: { railId: item.rail_id } }));
+}
+const rail = graph.rails.find((item) => item.rail_id === Astro.props.railId)!;
+const packet = acquisitionFieldbook.acquisition_packets.find((item) => item.rail_id === rail.rail_id)!;
+---
+
+<BaseLayout title={`${rail.institution_name} | FTFN authority rail`} description={rail.interpretation_boundary}>
+  <ReviewHeader eyebrow="Official authority rail" title={rail.institution_name} summary={rail.interpretation_boundary} phase={117} />
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Jurisdiction and class</div>
+      <h2><a href={`/review/authority/jurisdictions/${rail.jurisdiction_slug}/`}>{rail.jurisdiction_name}</a></h2>
+      <p>{rail.authority_class}</p>
+      <div class="meta-row"><MetaPill label={rail.mapping_state} tone="review" /><MetaPill label={rail.artifact_review_state} /></div>
+    </article>
+    <article>
+      <div class="eyebrow">Official entry point</div>
+      <h2>Inspect the primary rail.</h2>
+      <p><a class="button" href={rail.official_url}>Open official portal</a></p>
+      <p class="card-note">FTFN source identity: <a href={`/atlas/sources/${rail.source_id}/`}>{rail.source_id}</a></p>
+    </article>
+  </section>
+  <section class="page-section review-columns">
+    <article><h2>Likely artifact families</h2><ul>{rail.artifact_families.map((item) => <li>{item}</li>)}</ul></article>
+    <article><h2>Conversion stages served</h2><ul>{rail.conversion_stages.map((item) => <li>{item}</li>)}</ul></article>
+  </section>
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Topic joins</div><h2>Where this rail can improve coverage.</h2></div></div>
+    <div class="meta-row">{rail.topic_ids.map((id) => <a href={`/review/topics/${id.replace(/^topic-/, "")}/`}><MetaPill label={id.replace(/^topic-/, "").replaceAll("-", " ")} /></a>)}</div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Phase 120 Evidence Fieldbook</div>
+      <h2>Authority-to-artifact packet</h2>
+      <p>{packet.official_entry_path.boundary}</p>
+      <div class="meta-row"><MetaPill label={packet.packet_id} /><MetaPill label={packet.disposition.status} tone="review" /></div>
+    </div>
+    <article class="record-card record-card--featured">
+      <div class="eyebrow">Current disposition</div>
+      <h3>{packet.disposition.completion_state}</h3>
+      <p>{packet.disposition.note}</p>
+      <p class="card-note">Disposition date: {packet.disposition.disposition_date}</p>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div><div class="eyebrow">Four prepared targets</div><h2>What a reviewer should locate next.</h2></div>
+    </div>
+    <div class="signal-grid">
+      {packet.artifact_targets.map((target) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={`Target ${target.target_order}`} /><MetaPill label={target.review_state} tone="review" /></div>
+          <h3>{target.target_label.replace(`${packet.institution_name}: `, "")}</h3>
+          <p>{target.purpose}</p>
+          <h4>Admission test</h4>
+          <p>{target.admissibility_test}</p>
+          <h4>Invalid substitution</h4>
+          <p>{target.invalid_substitution}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Capture metadata</div>
+      <h2>Record the complete artifact identity.</h2>
+      <ul>{packet.required_capture_metadata.map((item) => <li>{item}</li>)}</ul>
+    </article>
+    <article>
+      <div class="eyebrow">Admissibility</div>
+      <h2>Pass every common test.</h2>
+      <ul>{packet.admissibility_tests.map((item) => <li>{item}</li>)}</ul>
+    </article>
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Invalid substitutions</div>
+      <h2>Do not cross these boundaries.</h2>
+      <ul>{packet.invalid_substitutions.map((item) => <li>{item}</li>)}</ul>
+    </article>
+    <article>
+      <div class="eyebrow">Phase 121 linkage</div>
+      <h2>{packet.mission_linkage.priority_question_ids.length} eligible priority-question placeholders.</h2>
+      <p>{packet.mission_linkage.linkage_rule}</p>
+      <div class="meta-row">{packet.mission_linkage.priority_question_ids.map((id) => <MetaPill label={id} />)}</div>
+    </article>
+  </section>
+
+  <section class="page-section prose-page">
+    <h2>Owner, trigger, and stop rule</h2>
+    <p><strong>{packet.owner.role}:</strong> {packet.owner.responsibility}</p>
+    <p><strong>Next trigger:</strong> {packet.next_trigger}</p>
+    <p><strong>Stop rule:</strong> {packet.stop_rule}</p>
+    <p><a href="/review/fieldbook/acquisition/">Open all eighty acquisition packets</a> or <a href="/data/phase-120-evidence-acquisition-packets.json">download the registry</a>.</p>
+  </section>
+  <section class="page-section prose-page"><h2>Admission rule</h2><p>{graph.publication_boundary}</p></section>
+</BaseLayout>

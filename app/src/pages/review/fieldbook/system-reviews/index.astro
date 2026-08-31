@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import registry from "../../../../data/phase-129-cross-system-evidence-syntheses.json";
+---
+
+<BaseLayout title="Cross-system evidence syntheses | FTFN v0.6" description={registry.summary}>
+  <ReviewHeader eyebrow="Open Evidence Review · Phase 129" title={registry.title} summary={registry.summary} phase={129} />
+  <section class="page-section"><div class="metric-strip" aria-label="Phase 129 counts"><div class="metric"><strong>{registry.counts.syntheses}</strong><span>system syntheses</span></div><div class="metric"><strong>{registry.counts.compatibility_determinations}</strong><span>compatibility determinations</span></div><div class="metric"><strong>{registry.counts.evidence_signal_links}</strong><span>Published-signal links</span></div><div class="metric"><strong>{registry.counts.evidence_source_links}</strong><span>source links</span></div></div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Five-dimension contract</div><h2>Compare evidence structure, never system performance.</h2><p>{registry.dimension_contract.boundary}</p></div><div class="source-list">{registry.dimension_contract.ordered_dimensions.map((dimension) => <div class="source-row"><strong>{dimension.replaceAll("_", " ")}</strong><span>{registry.dimension_contract.verdict}</span></div>)}</div></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Twelve cross-system files</div><h2>Read compatibility and stopping points.</h2></div></div><div class="signal-grid">{registry.syntheses.map((synthesis) => <article class="record-card"><div class="meta-row"><MetaPill label={synthesis.synthesis_id} /><MetaPill label={synthesis.verdict} tone="review" /><MetaPill label="5 dimensions" tone="possibility" /></div><h3><a href={synthesis.route}>{synthesis.title}</a></h3><p>{synthesis.authored_sections.synthesis_read}</p><p>{synthesis.evidence_signal_ids.length} Published signals · {synthesis.evidence_source_ids.length} sources · {synthesis.authored_word_count.toLocaleString()} rendered analysis words</p><a class="inline-link" href={synthesis.route}>Open compatibility synthesis</a></article>)}</div></section>
+  <section class="page-section prose-page"><h2>Evidence boundary</h2><p>{registry.publication_boundary}</p><p><a href={registry.routes.public_export}>Download the schema-1.0 Phase 129 registry</a></p></section>
+</BaseLayout>

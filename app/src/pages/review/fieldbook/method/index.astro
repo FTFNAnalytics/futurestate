@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import library from "../../../../data/phase-122-verification-playbook-library.json";
+
+const groups = [
+  { eyebrow: "Eight conversion decisions", title: "Conversion-stage playbooks", description: "Decide only the stage supported by a direct artifact, then stop.", records: library.stage_playbooks },
+  { eyebrow: "Twelve claim decisions", title: "Claim-review protocols", description: "Test the grammar, authority, and evidence burden of each material claim type.", records: library.claim_review_protocols },
+  { eyebrow: "Ten release checks", title: "Quality-audit cards", description: "Audit identity, claim scope, provenance, place, time, measurement, comparability, uncertainty, and reproducibility.", records: library.quality_audit_cards },
+];
+---
+
+<BaseLayout title="Verification Playbook Library | FTFN" description={library.summary}>
+  <section class="page-section">
+    <div class="eyebrow">Phase 122 · FTFN v0.5 fieldbook</div>
+    <h1 class="page-title">Verification playbooks for decisions that stop where the evidence stops.</h1>
+    <p class="lede">{library.summary}</p>
+    <div class="meta-row">
+      <MetaPill label={`${library.counts.stage_playbooks} stage playbooks`} tone="possibility" />
+      <MetaPill label={`${library.counts.claim_review_protocols} claim protocols`} />
+      <MetaPill label={`${library.counts.quality_audit_cards} quality audits`} />
+    </div>
+  </section>
+
+  <section class="page-section prose-page">
+    <div class="eyebrow">How to use the library</div>
+    <h2>Choose the decision before collecting supporting prose.</h2>
+    <p>Open the stage, claim, or quality protocol that matches the review decision. Confirm the minimum direct artifact, test each false positive and inadmissible substitution, run the checklist, and apply the stop rule. The worked examples show bounded readings of existing Published signals; they do not create new evidence.</p>
+    <p>{library.publication_boundary}</p>
+  </section>
+
+  {groups.map((group) => (
+    <section class="page-section">
+      <div class="section-heading section-heading--stacked">
+        <div><div class="eyebrow">{group.eyebrow}</div><h2>{group.title}</h2></div>
+        <p>{group.description}</p>
+      </div>
+      <div class="grid">
+        {group.records.map((record) => (
+          <article class="record-card">
+            <div class="meta-row"><MetaPill label={record.source_contract_label} /></div>
+            <h3><a href={record.route}>{record.title}</a></h3>
+            <p>{record.what_it_can_establish}</p>
+            <p class="card-note">{record.reviewer_checklist.length} review steps · {record.false_positives.length + record.inadmissible_substitutions.length} rejection tests</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Open method infrastructure</div><h2>Inspect and reuse all thirty procedures.</h2><p>The public export preserves every decision threshold, example signal ID, stop rule, foundation, mission, and correction path.</p><a class="inline-link" href="/data/phase-122-verification-playbook-library.json">Download the Phase 122 JSON registry</a></div></section>
+</BaseLayout>

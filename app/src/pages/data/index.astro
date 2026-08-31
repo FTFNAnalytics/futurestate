@@ -48,6 +48,19 @@ import wholeSystemFuturesRegistry from "../../data/phase-101-whole-system-future
 import publicKnowledgeStewardshipRegistry from "../../data/phase-102-public-knowledge-synthesis-civic-decision-literacy-reader-navigation-content-closure-evergreen-stewardship-registry.json";
 import v03EditorialProgram from "../../data/v03-editorial-program.json";
 import v031ContentExpansion from "../../data/v031-content-expansion.json";
+import v04PublicConversionObservatory from "../../data/v04-public-conversion-observatory.json";
+import v05EvidenceFieldbook from "../../data/v05-evidence-fieldbook.json";
+import phase120Acquisition from "../../data/phase-120-evidence-acquisition-packets.json";
+import phase121Missions from "../../data/phase-121-priority-research-missions.json";
+import phase122Playbooks from "../../data/phase-122-verification-playbook-library.json";
+import phase123Dossiers from "../../data/phase-123-comparative-delivery-dossiers.json";
+import phase124Workbenches from "../../data/phase-124-topic-research-workbenches.json";
+import v06OpenEvidenceReview from "../../data/v06-open-evidence-review.json";
+import phase125Annotations from "../../data/phase-125-evidence-annotation-ledger.json";
+import phase126Audits from "../../data/phase-126-mission-evidence-audits.json";
+import phase127Biographies from "../../data/phase-127-project-place-conversion-biographies.json";
+import phase128TopicReviews from "../../data/phase-128-topic-state-of-evidence-reviews.json";
+import phase129SystemSyntheses from "../../data/phase-129-cross-system-evidence-syntheses.json";
 
 const sources = await getCollection("sources");
 const topics = await getCollection("topics");
@@ -60,6 +73,84 @@ const readerPathways = (await getCollection("readerPathways"))
   .filter((pathway) => pathway.data.record_status === "Published");
 
 const datasets = [
+  {
+    title: "FTFN v0.6 Open Evidence Review",
+    href: "/data/v06-open-evidence-review.json",
+    count: v06OpenEvidenceReview.counts.substantive_surfaces,
+    summary: "The complete route and review contract for 82 evidence annotations, 68 mission audits, 39 delivery biographies, 17 topic reviews, and 12 compatibility syntheses."
+  },
+  {
+    title: "Source-Linked Evidence Annotations",
+    href: "/data/phase-125-evidence-annotation-ledger.json",
+    count: phase125Annotations.counts.evidence_annotations,
+    summary: "Bounded support, excluded inference, and exact source lineage for every Published signal used by a research mission."
+  },
+  {
+    title: "Mission Evidence Audits",
+    href: "/data/phase-126-mission-evidence-audits.json",
+    count: phase126Audits.counts.mission_audits,
+    summary: "Requirement-by-requirement corpus audits for all 68 missions, with canonical answer states left unadjudicated."
+  },
+  {
+    title: "Project and Place Conversion Biographies",
+    href: "/data/phase-127-project-place-conversion-biographies.json",
+    count: phase127Biographies.counts.project_biographies + phase127Biographies.counts.place_biographies,
+    summary: "Authored delivery biographies for 24 projects and 15 places with explicit stage and system boundaries."
+  },
+  {
+    title: "Topic State-of-Evidence Reviews",
+    href: "/data/phase-128-topic-state-of-evidence-reviews.json",
+    count: phase128TopicReviews.counts.topic_reviews,
+    summary: "Seventeen four-horizon topic reviews connecting current support, contested readings, place implications, and next-artifact work."
+  },
+  {
+    title: "Cross-System Evidence Syntheses",
+    href: "/data/phase-129-cross-system-evidence-syntheses.json",
+    count: phase129SystemSyntheses.counts.syntheses,
+    summary: "Twelve context-only syntheses with explicit identity, stage, geography, period, and denominator compatibility determinations."
+  },
+  {
+    title: "FTFN v0.5 Evidence Fieldbook",
+    href: "/data/v05-evidence-fieldbook.json",
+    count: v05EvidenceFieldbook.counts.substantive_surfaces,
+    summary: "The complete route and content contract for 80 acquisition packets, 68 missions, 30 playbooks, 12 matched dossiers, and 17 topic workbenches."
+  },
+  {
+    title: "Authority-to-Artifact Acquisition Packets",
+    href: "/data/phase-120-evidence-acquisition-packets.json",
+    count: phase120Acquisition.counts.acquisition_packets,
+    summary: "Prepared acquisition contracts for all 80 Candidate authority rails, including 320 artifact targets and zero admitted artifacts."
+  },
+  {
+    title: "Priority Research Missions",
+    href: "/data/phase-121-priority-research-missions.json",
+    count: phase121Missions.counts.missions,
+    summary: "Four unadjudicated research missions for each canonical topic, with exact evidence, acceptance, rejection, and stopping contracts."
+  },
+  {
+    title: "Verification Playbook Library",
+    href: "/data/phase-122-verification-playbook-library.json",
+    count: phase122Playbooks.counts.leaf_records,
+    summary: "Operational stage, claim-review, and quality-audit playbooks with examples, false positives, stop rules, and correction paths."
+  },
+  {
+    title: "Matched Delivery Dossiers",
+    href: "/data/phase-123-comparative-delivery-dossiers.json",
+    count: phase123Dossiers.counts.dossiers,
+    summary: "Twelve context-only comparison passports with explicit project, place, signal, and source identities."
+  },
+  {
+    title: "Topic Research Workbenches",
+    href: "/data/phase-124-topic-research-workbenches.json",
+    count: phase124Workbenches.counts.workbenches,
+    summary: "Seventeen operational topic indexes connecting coverage, missions, acquisition, method, evidence, Atlas records, and comparison dossiers."
+  },
+  {
+    title: "FTFN v0.4 Public Conversion Observatory",
+    href: "/data/v04-public-conversion-observatory.json",
+    count: v04PublicConversionObservatory.counts.public_html_routes,
+    summary: "Coverage architecture, international authority discovery rails, 27 canonical living chapters, and 39 named project or place files with explicit evidence boundaries."
+  },
   {
     title: "FTFN v0.3.1 Content Expansion",
     href: "/data/v031-content-expansion.json",

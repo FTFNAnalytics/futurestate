@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import program from "../../../../data/phase-121-priority-research-missions.json";
+
+const missionById = new Map(program.missions.map((mission) => [mission.mission_id, mission]));
+---
+
+<BaseLayout title="Priority Research Missions | FTFN v0.5" description={program.summary}>
+  <ReviewHeader eyebrow="FTFN v0.5 · Evidence Fieldbook" title="Priority research missions" summary={program.summary} phase={121} />
+
+  <section class="page-section">
+    <div class="metric-strip" aria-label="Phase 121 mission counts">
+      <div class="metric"><strong>{program.counts.missions}</strong><span>research missions</span></div>
+      <div class="metric"><strong>{program.counts.topics}</strong><span>canonical topics</span></div>
+      <div class="metric"><strong>{program.counts.missions_per_topic}</strong><span>horizons per topic</span></div>
+      <div class="metric"><strong>{program.counts.acquisition_packets_linked}</strong><span>Candidate packets linked</span></div>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">The answer state</div>
+      <h2>{program.answer_state}</h2>
+      <p>Each mission preserves one exact Phase 116 question. It assembles the method, evidence contract, named files, contextual evidence and discovery rails needed for a later dated review.</p>
+      <p>{program.counts.missions_with_acquisition_packets} missions have at least one exact topic-and-stage packet join. The other {program.counts.missions_with_acquisition_coverage_gaps} expose an acquisition coverage gap instead of receiving a fallback or fuzzy match.</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label="No answer inferred" tone="review" />
+      <h3>Packets make the research inspectable.</h3>
+      <p>A packet is complete as research infrastructure even when the evidence answer remains open. Context, authority discovery and named cases stay separate from adjudication.</p>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Question library</div><h2>Four evidence horizons for every topic.</h2><p>Baseline, conversion, operation and outcome are different questions with different methods, periods and denominators.</p></div></div>
+    <div class="grid">
+      {program.topic_summaries.map((topic) => {
+        const missions = topic.mission_ids.map((id) => missionById.get(id)).filter(Boolean);
+        return (
+          <article class="record-card">
+            <div class="meta-row"><MetaPill label={topic.topic_id} /><MetaPill label={`${missions.length} missions`} tone="possibility" /></div>
+            <h3>{topic.topic_label}</h3>
+            <ul>
+              {missions.map((mission) => <li><a href={mission!.public_route}>{mission!.research_horizon}: {mission!.research_contract.question}</a></li>)}
+            </ul>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="page-section prose-page">
+    <h2>Publication boundary</h2>
+    {program.publication_boundaries.map((boundary) => <p>{boundary}</p>)}
+    <p><a class="inline-link" href="/data/phase-121-priority-research-missions.json">Download the Phase 121 mission registry</a></p>
+  </section>
+</BaseLayout>

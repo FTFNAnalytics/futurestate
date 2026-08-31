@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import registry from "../../../../data/phase-123-comparative-delivery-dossiers.json";
+---
+
+<BaseLayout title="Matched delivery dossiers | FTFN v0.5" description={registry.summary}>
+  <ReviewHeader eyebrow="Evidence Fieldbook · Phase 123" title={registry.title} summary={registry.summary} phase={123} />
+  <section class="page-section">
+    <div class="metric-strip" aria-label="Phase 123 counts">
+      <div class="metric"><strong>{registry.counts.dossiers}</strong><span>matched dossiers</span></div>
+      <div class="metric"><strong>{registry.counts.evidence_signal_links}</strong><span>explicit signal links</span></div>
+      <div class="metric"><strong>{registry.counts.evidence_source_links}</strong><span>source links</span></div>
+      <div class="metric"><strong>0</strong><span>scores or rankings</span></div>
+    </div>
+  </section>
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Comparison passports</div><h2>Compare the evidence path before comparing the result.</h2><p>Every dossier declares identity, period, unit, denominator, provenance and method compatibility. Each is currently context-only.</p></div></div>
+    <div class="signal-grid">
+      {registry.dossiers.map((record) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={record.dossier_id} /><MetaPill label={record.comparison_passport.verdict} tone="review" /></div>
+          <h3><a href={record.route}>{record.title}</a></h3>
+          <p>{record.editorial_question}</p>
+          <p><strong>Shared dependency:</strong> {record.shared_dependency}</p>
+          <a class="inline-link" href={record.route}>Open dossier</a>
+        </article>
+      ))}
+    </div>
+  </section>
+  <section class="page-section prose-page"><h2>Comparison boundary</h2><p>{registry.publication_boundary}</p></section>
+</BaseLayout>

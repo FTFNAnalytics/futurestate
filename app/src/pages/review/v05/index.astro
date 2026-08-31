@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import fieldbook from "../../../data/v05-evidence-fieldbook.json";
+---
+
+<BaseLayout title="v0.5 Evidence Fieldbook | FTFN" description={fieldbook.summary}>
+  <ReviewHeader eyebrow="FTFN v0.5" title={fieldbook.title} summary={fieldbook.summary} phase={124} />
+
+  <section class="page-section">
+    <div class="metric-strip">
+      <div class="metric"><strong>{fieldbook.counts.substantive_surfaces}</strong><span>substantive surfaces</span></div>
+      <div class="metric"><strong>{fieldbook.counts.leaf_records}</strong><span>fieldbook records</span></div>
+      <div class="metric"><strong>{fieldbook.counts.public_json_exports}</strong><span>public JSON exports</span></div>
+      <div class="metric"><strong>{fieldbook.counts.exact_artifacts_admitted}</strong><span>artifacts admitted</span></div>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Route accounting</div>
+      <h2>121 new routes. 92 enhanced existing routes.</h2>
+      <p>The fieldbook treats all 213 as substantive reader surfaces while keeping new publication routes distinct from prior pages that now carry materially deeper evidence operations.</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label="Evidence state preserved" tone="review" />
+      <h3>Preparation remains preparation.</h3>
+      <p>{fieldbook.publication_boundaries[0]}</p>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div><div class="eyebrow">Five-phase fieldbook</div><h2>From authority discovery to active topic research.</h2></div>
+    </div>
+    <div class="signal-grid">
+      {fieldbook.phases.map((phase) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={`Phase ${phase.phase}`} /><MetaPill label={phase.status} tone="possibility" /></div>
+          <h3><a href={phase.hub_route}>{phase.title}</a></h3>
+          <p>{phase.summary}</p>
+          <div class="metric-strip">
+            <div class="metric"><strong>{phase.leaf_records}</strong><span>primary records</span></div>
+            <div class="metric"><strong>{phase.secondary_records}</strong><span>{phase.secondary_record_label}</span></div>
+          </div>
+          <p class="card-note">{phase.new_html_routes} new · {phase.enhanced_existing_routes} enhanced · <a href={phase.data_route}>JSON</a></p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Operating chain</div>
+      <h2>Every layer answers a different question.</h2>
+      <ol>
+        <li><strong>Acquire:</strong> Where should a reviewer look, and what exact artifact would be admissible?</li>
+        <li><strong>Investigate:</strong> Which bounded research question is being answered, under which acceptance and rejection rules?</li>
+        <li><strong>Verify:</strong> Which stage, claim, and quality tests govern the decision?</li>
+        <li><strong>Compare:</strong> Which evidence paths can be read together, and which measures remain incompatible?</li>
+        <li><strong>Operate:</strong> How does a topic workbench expose current context, open missions, and exact next work?</li>
+      </ol>
+    </article>
+    <article>
+      <div class="eyebrow">Resolved linkage</div>
+      <h2>{fieldbook.counts.phase_120_phase_121_backlinks.toLocaleString()} exact packet-to-mission backlinks.</h2>
+      <p>{fieldbook.integration_contract.phase_120_phase_121_linkage}</p>
+      <p>{fieldbook.integration_contract.stable_identity_authority}</p>
+      <p class="card-note">{fieldbook.counts.mission_packet_coverage_gaps} missions retain an explicit packet-coverage gap rather than an invented fallback rail.</p>
+    </article>
+  </section>
+
+  <section class="page-section prose-page">
+    <h2>Publication boundaries</h2>
+    {fieldbook.publication_boundaries.map((boundary) => <p>{boundary}</p>)}
+  </section>
+
+  <section class="page-section prose-page">
+    <h2>Machine-readable edition</h2>
+    <p>The complete phase inventory, route accounting, public export list, aggregate counts, stable-ID rules, and publication boundaries are available in the <a href="/data/v05-evidence-fieldbook.json">v0.5 Evidence Fieldbook JSON registry</a>.</p>
+  </section>
+</BaseLayout>

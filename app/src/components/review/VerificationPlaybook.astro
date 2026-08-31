@@ -1,0 +1,146 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+import MetaPill from "../ui/MetaPill.astro";
+
+interface Props {
+  record: any;
+  workedSignals: any[];
+  counterSignals: any[];
+}
+
+const { record, workedSignals, counterSignals } = Astro.props;
+const kindLabel = record.record_kind === "stage_playbook"
+  ? "Conversion-stage playbook"
+  : record.record_kind === "claim_review_protocol"
+    ? "Claim-review protocol"
+    : "Quality-audit card";
+---
+
+<BaseLayout title={`${record.title} | FTFN Verification Playbook`} description={record.what_it_can_establish}>
+  <section class="page-section">
+    <div class="eyebrow">Phase 122 · {kindLabel}</div>
+    <h1 class="page-title">{record.title}</h1>
+    <p class="lede">{record.what_it_can_establish}</p>
+    <div class="meta-row">
+      <MetaPill label={record.source_contract_label} tone="possibility" />
+      <MetaPill label={record.source_contract_id} />
+      <MetaPill label="Human review required" />
+    </div>
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Decision boundary</div>
+      <h2>What this method can establish.</h2>
+      <p>{record.what_it_can_establish}</p>
+      <p class="muted"><strong>Canonical question:</strong> {record.canonical_definition}</p>
+    </article>
+    <article>
+      <div class="eyebrow">Stop rule</div>
+      <h2>Where the reviewer must stop.</h2>
+      <p>{record.stop_rule}</p>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading section-heading--stacked">
+      <div><div class="eyebrow">Minimum direct evidence</div><h2>Records required before a positive decision.</h2></div>
+      <p>Every item must resolve for the named entity and scope. More narrative does not compensate for a missing direct artifact.</p>
+    </div>
+    <ol class="method-list">{record.minimum_direct_evidence.map((item: string) => <li>{item}</li>)}</ol>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="eyebrow">False positives</div>
+      <h2>Readings that look stronger than the record.</h2>
+      <ul>{record.false_positives.map((item: string) => <li>{item}</li>)}</ul>
+    </div>
+    <div>
+      <div class="eyebrow">Inadmissible substitutions</div>
+      <h2>Evidence that cannot replace the required artifact.</h2>
+      <ul>{record.inadmissible_substitutions.map((item: string) => <li>{item}</li>)}</ul>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading section-heading--stacked">
+      <div><div class="eyebrow">Reviewer checklist</div><h2>Run the decision in order.</h2></div>
+      <p>A checked box records review work; it never publishes or advances evidence automatically.</p>
+    </div>
+    <ol class="checklist">
+      {record.reviewer_checklist.map((item: string, index: number) => (
+        <li><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span><p>{item}</p></li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="eyebrow">Worked example</div>
+      <h2>An admissible bounded reading.</h2>
+      <p>{record.worked_example.interpretation}</p>
+      <div class="source-list">
+        {workedSignals.map((signal) => (
+          <article class="source-row">
+            <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+            <p>{signal.data.summary}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow">Counterexample</div>
+      <h2>A tempting but inadmissible reading.</h2>
+      <p>{record.counterexample.interpretation}</p>
+      <div class="source-list">
+        {counterSignals.map((signal) => (
+          <article class="source-row">
+            <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
+            <p>{signal.data.summary}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading section-heading--stacked">
+      <div><div class="eyebrow">Correction and propagation</div><h2>Repair the whole public trail.</h2></div>
+    </div>
+    <ol class="method-list">{record.correction_and_propagation_requirements.map((item: string) => <li>{item}</li>)}</ol>
+  </section>
+
+  <section class="page-section two-column-section">
+    <div>
+      <div class="eyebrow">Related foundations</div>
+      <h2>Read the governing method.</h2>
+      <ul>{record.related_foundations.map((item: any) => <li><a href={item.route}>{item.label}</a></li>)}</ul>
+    </div>
+    <div>
+      <div class="eyebrow">Related research missions</div>
+      <h2>Apply the method to a live question.</h2>
+      <ul>{record.related_missions.map((item: any) => <li><a href={item.route}>{item.label}</a> <span class="muted">({item.mission_id})</span></li>)}</ul>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Publication boundary</div>
+      <h2>This playbook does not decide the evidence.</h2>
+      <p>It creates no source, signal, receipt, gate decision, observation, outcome, score, ranking, or automatic publication authority. Human review and complete propagation remain mandatory.</p>
+      <div class="button-row">
+        <a class="inline-link" href="/review/fieldbook/method/">All verification playbooks</a>
+        <a class="inline-link" href="/data/phase-122-verification-playbook-library.json">Download the library</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .method-list { max-width: 70rem; display: grid; gap: .8rem; }
+  .checklist { list-style: none; padding: 0; display: grid; gap: .75rem; }
+  .checklist li { display: grid; grid-template-columns: 2.5rem 1fr; gap: .8rem; align-items: start; border-top: 1px solid var(--line); padding-top: .8rem; }
+  .checklist span { font-family: var(--font-mono); color: var(--muted); }
+  .checklist p { margin: 0; }
+</style>

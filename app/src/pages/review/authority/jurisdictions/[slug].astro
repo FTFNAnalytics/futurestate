@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import graph from "../../../../data/phase-117-global-authority-graph.json";
+
+export function getStaticPaths() {
+  return graph.jurisdictions.map((item) => ({ params: { slug: item.slug }, props: { jurisdictionId: item.jurisdiction_id } }));
+}
+const jurisdiction = graph.jurisdictions.find((item) => item.jurisdiction_id === Astro.props.jurisdictionId)!;
+const rails = graph.rails.filter((item) => item.jurisdiction_id === jurisdiction.jurisdiction_id);
+---
+
+<BaseLayout title={`${jurisdiction.name} authority graph | FTFN`} description={jurisdiction.interpretation_boundary}>
+  <ReviewHeader eyebrow="Jurisdiction authority layer" title={jurisdiction.name} summary={jurisdiction.interpretation_boundary} phase={117} />
+  <section class="page-section">
+    <div class="meta-row"><MetaPill label={jurisdiction.region} /><MetaPill label={`${rails.length} mapped rails`} tone="possibility" /></div>
+    <p class="lede">Languages recorded for acquisition context: {jurisdiction.languages.join(", ")}.</p>
+  </section>
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Official rails</div><h2>Where exact artifacts can be acquired.</h2></div></div>
+    <div class="signal-grid">
+      {rails.map((rail) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={rail.authority_class} /><MetaPill label={rail.mapping_state} tone="review" /></div>
+          <h3><a href={`/review/authority/rails/${rail.slug}/`}>{rail.institution_name}</a></h3>
+          <p>{rail.artifact_families.join(" · ")}</p>
+          <a class="inline-link" href={rail.official_url}>Open official portal</a>
+        </article>
+      ))}
+    </div>
+  </section>
+  <section class="page-section prose-page"><h2>Boundary</h2><p>{graph.publication_boundary}</p></section>
+</BaseLayout>

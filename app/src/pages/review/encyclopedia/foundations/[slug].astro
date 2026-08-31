@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import CanonicalChapter from "../../../../components/review/CanonicalChapter.astro";
+import encyclopedia from "../../../../data/phase-118-canonical-living-encyclopedia.json";
+
+export function getStaticPaths() {
+  return encyclopedia.foundation_chapters.map((chapter) => ({ params: { slug: chapter.slug }, props: { chapterId: chapter.chapter_id } }));
+}
+
+const chapter = encyclopedia.foundation_chapters.find((item) => item.chapter_id === Astro.props.chapterId)!;
+const allSignals = await getCollection("signals");
+const signalById = new Map(allSignals.map((signal) => [signal.data.id, signal]));
+const evidenceSignals = chapter.evidence_signal_ids.map((id) => signalById.get(id)).filter((signal) => signal?.data.record_status === "Published");
+const allSources = await getCollection("sources");
+const sourceIds = new Set(evidenceSignals.flatMap((signal) => signal!.data.source_ids));
+const sources = allSources.filter((source) => sourceIds.has(source.data.id));
+---
+
+<CanonicalChapter chapter={chapter} evidenceSignals={evidenceSignals} sources={sources} chapterKind="Foundation chapter" />

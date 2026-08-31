@@ -1,0 +1,92 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import fieldbook from "../../../../data/phase-120-evidence-acquisition-packets.json";
+
+const jurisdictions = [...new Set(fieldbook.acquisition_packets.map((packet) => packet.jurisdiction_name))];
+const authorityClasses = [...new Set(fieldbook.acquisition_packets.map((packet) => packet.authority_class))];
+---
+
+<BaseLayout title="Authority-to-artifact acquisition fieldbook | FTFN" description={fieldbook.summary}>
+  <ReviewHeader eyebrow="Evidence Fieldbook" title={fieldbook.title} summary={fieldbook.summary} phase={120} />
+
+  <section class="page-section">
+    <div class="metric-strip">
+      <div class="metric"><strong>{fieldbook.counts.acquisition_packets}</strong><span>rail-specific packets</span></div>
+      <div class="metric"><strong>{fieldbook.counts.artifact_targets}</strong><span>prepared targets</span></div>
+      <div class="metric"><strong>{fieldbook.counts.jurisdictions}</strong><span>jurisdiction layers</span></div>
+      <div class="metric"><strong>{fieldbook.counts.exact_artifacts_admitted}</strong><span>artifacts admitted</span></div>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Preparation boundary</div>
+      <h2>A target is not an artifact.</h2>
+      <p>{fieldbook.publication_boundary}</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label={fieldbook.preparation_state} tone="review" />
+      <h3>Every portal remains Candidate.</h3>
+      <p>{fieldbook.disposition_contract.interpretation}</p>
+    </article>
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Capture contract</div>
+      <h2>Twelve fields travel with every target.</h2>
+      <ul>{fieldbook.required_capture_metadata.map((item) => <li>{item}</li>)}</ul>
+    </article>
+    <article>
+      <div class="eyebrow">Admission contract</div>
+      <h2>Five tests must pass.</h2>
+      <ul>{fieldbook.admissibility_principles.map((item) => <li>{item}</li>)}</ul>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div><div class="eyebrow">Target architecture</div><h2>Four distinct artifact jobs for each authority class.</h2></div>
+    </div>
+    <div class="signal-grid">
+      {authorityClasses.map((authorityClass) => {
+        const example = fieldbook.acquisition_packets.find((packet) => packet.authority_class === authorityClass)!;
+        return (
+          <article class="record-card">
+            <div class="meta-row"><MetaPill label={authorityClass} /><MetaPill label="4 target kinds" tone="possibility" /></div>
+            <ul>{example.artifact_targets.map((target) => <li>{target.target_label.replace(`${example.institution_name}: `, "")}</li>)}</ul>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div><div class="eyebrow">Acquisition packets</div><h2>Prepared against all eighty official rails.</h2></div>
+    </div>
+    {jurisdictions.map((jurisdiction) => (
+      <div class="review-group">
+        <h3>{jurisdiction}</h3>
+        <div class="signal-grid">
+          {fieldbook.acquisition_packets.filter((packet) => packet.jurisdiction_name === jurisdiction).map((packet) => (
+            <article class="record-card">
+              <div class="meta-row"><MetaPill label={packet.authority_class} /><MetaPill label={packet.disposition.completion_state} tone="review" /></div>
+              <h3><a href={packet.routes.authority_rail}>{packet.institution_name}</a></h3>
+              <p>{packet.artifact_targets.map((target) => target.target_label.replace(`${packet.institution_name}: `, "")).join(" · ")}</p>
+              <p class="card-note">{packet.disposition.status}</p>
+              <a class="inline-link" href={packet.routes.authority_rail}>Open packet on authority rail</a>
+            </article>
+          ))}
+        </div>
+      </div>
+    ))}
+  </section>
+
+  <section class="page-section prose-page">
+    <h2>Machine-readable fieldbook</h2>
+    <p>Download the complete packet, target, capture, admission, substitution, ownership, and placeholder-mission contract as <a href="/data/phase-120-evidence-acquisition-packets.json">versioned JSON</a>.</p>
+  </section>
+</BaseLayout>

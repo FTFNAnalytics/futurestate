@@ -12,6 +12,7 @@ const failures = [];
 const check = (condition, message) => {
   if (!condition) failures.push(message);
 };
+const sameSet = (left, right) => Array.isArray(left) && Array.isArray(right) && left.length === right.length && new Set(left).size === left.length && new Set(right).size === right.length && left.every((item) => new Set(right).has(item));
 
 const readText = (path) => readFile(path, "utf8");
 const readJson = async (path) => JSON.parse(await readText(path));
@@ -95,6 +96,23 @@ const wholeSystemFuturesExport = await readJson(join(distRoot, "data", "whole-sy
 const publicKnowledgeStewardshipExport = await readJson(join(distRoot, "data", "public-knowledge-synthesis-civic-decision-literacy-reader-navigation-content-closure-evergreen-stewardship.json"));
 const v03EditorialExport = await readJson(join(distRoot, "data", "v03-editorial-review.json"));
 const v031ContentExpansionExport = await readJson(join(distRoot, "data", "v031-content-expansion.json"));
+const phase116CoverageExport = await readJson(join(distRoot, "data", "phase-116-coverage-architecture.json"));
+const phase117AuthorityExport = await readJson(join(distRoot, "data", "global-authority-graph.json"));
+const phase118EncyclopediaExport = await readJson(join(distRoot, "data", "phase-118-canonical-living-encyclopedia.json"));
+const phase119AtlasExport = await readJson(join(distRoot, "data", "deep-project-place-atlas.json"));
+const v04PublicConversionObservatoryExport = await readJson(join(distRoot, "data", "v04-public-conversion-observatory.json"));
+const phase120AcquisitionExport = await readJson(join(distRoot, "data", "phase-120-evidence-acquisition-packets.json"));
+const phase121MissionsExport = await readJson(join(distRoot, "data", "phase-121-priority-research-missions.json"));
+const phase122PlaybooksExport = await readJson(join(distRoot, "data", "phase-122-verification-playbook-library.json"));
+const phase123DossiersExport = await readJson(join(distRoot, "data", "phase-123-comparative-delivery-dossiers.json"));
+const phase124WorkbenchesExport = await readJson(join(distRoot, "data", "phase-124-topic-research-workbenches.json"));
+const v05EvidenceFieldbookExport = await readJson(join(distRoot, "data", "v05-evidence-fieldbook.json"));
+const phase125AnnotationsExport = await readJson(join(distRoot, "data", "phase-125-evidence-annotation-ledger.json"));
+const phase126AuditsExport = await readJson(join(distRoot, "data", "phase-126-mission-evidence-audits.json"));
+const phase127BiographiesExport = await readJson(join(distRoot, "data", "phase-127-project-place-conversion-biographies.json"));
+const phase128TopicReviewsExport = await readJson(join(distRoot, "data", "phase-128-topic-state-of-evidence-reviews.json"));
+const phase129SystemSynthesesExport = await readJson(join(distRoot, "data", "phase-129-cross-system-evidence-syntheses.json"));
+const v06OpenEvidenceReviewExport = await readJson(join(distRoot, "data", "v06-open-evidence-review.json"));
 const sitemap = await readText(join(distRoot, "sitemap.xml"));
 const robots = await readText(join(distRoot, "robots.txt"));
 const updatesHtml = await readText(join(distRoot, "updates", "index.html"));
@@ -241,10 +259,14 @@ check(
   `Expected ${manifest.expected_build.dependency_maps} dependency maps, found ${dependencyMapFiles.length}.`,
 );
 check(
-  [signals, sources, topics, researchExport, pathwaysExport, evidenceQueueExport, operatingCycleExport, projectConversionExport, conversionEventsExport, conversionGatesExport, conversionStageMatrixExport, qualificationPacketsExport, evidenceReturnEnvelopesExport, phase60cDeskExport, outcomeCohortsExport, measurementSpecificationsExport, observationReviewExport, longitudinalOutcomeExport, outcomeEvidenceDesignExport, analysisResultExport, synthesisDecisionExport, accountabilityImpactExport, learningPortfolioExport, publicDeliberationExport, interjurisdictionalCompactsExport, publicWealthStewardshipExport, publicInvestmentPortfolioExport, universalServiceExport, householdCapabilityExport, communityInstitutionsExport, foodSystemsExport, housingPlaceExport, healthWellbeingExport, educationKnowledgeCultureExport, workLaborLivelihoodsExport, incomeWealthSecurityExport, marketsFirmsGovernanceExport, financeBankingCreditStabilityExport, fiscalRevenueDebtMacroExport, economicDevelopmentTransformationExport, physicalEconomySupplyChainExport, territorialSystemsDeliveryExport, mobilityNetworkAccessExport, environmentPlanetaryStewardshipExport, justiceSafetySecurityPeaceExport, democracyGovernmentLegitimacyExport, internationalOrderSharedFuturesExport, wholeSystemFuturesExport, publicKnowledgeStewardshipExport, v03EditorialExport, v031ContentExpansionExport].every((dataset) => dataset.schema_version === "1.0"),
+  [signals, sources, topics, researchExport, pathwaysExport, evidenceQueueExport, operatingCycleExport, projectConversionExport, conversionEventsExport, conversionGatesExport, conversionStageMatrixExport, qualificationPacketsExport, evidenceReturnEnvelopesExport, phase60cDeskExport, outcomeCohortsExport, measurementSpecificationsExport, observationReviewExport, longitudinalOutcomeExport, outcomeEvidenceDesignExport, analysisResultExport, synthesisDecisionExport, accountabilityImpactExport, learningPortfolioExport, publicDeliberationExport, interjurisdictionalCompactsExport, publicWealthStewardshipExport, publicInvestmentPortfolioExport, universalServiceExport, householdCapabilityExport, communityInstitutionsExport, foodSystemsExport, housingPlaceExport, healthWellbeingExport, educationKnowledgeCultureExport, workLaborLivelihoodsExport, incomeWealthSecurityExport, marketsFirmsGovernanceExport, financeBankingCreditStabilityExport, fiscalRevenueDebtMacroExport, economicDevelopmentTransformationExport, physicalEconomySupplyChainExport, territorialSystemsDeliveryExport, mobilityNetworkAccessExport, environmentPlanetaryStewardshipExport, justiceSafetySecurityPeaceExport, democracyGovernmentLegitimacyExport, internationalOrderSharedFuturesExport, wholeSystemFuturesExport, publicKnowledgeStewardshipExport, v03EditorialExport, v031ContentExpansionExport, phase116CoverageExport, phase117AuthorityExport, phase118EncyclopediaExport, phase119AtlasExport, v04PublicConversionObservatoryExport, phase120AcquisitionExport, phase121MissionsExport, phase122PlaybooksExport, phase123DossiersExport, phase124WorkbenchesExport, v05EvidenceFieldbookExport].every((dataset) => dataset.schema_version === "1.0"),
   "All public exports must use schema version 1.0.",
 );
-check(manifest.expected_build.public_json_exports === 51, "Manifest must record fifty-one public JSON exports.");
+check(
+  [phase125AnnotationsExport, phase126AuditsExport, phase127BiographiesExport, phase128TopicReviewsExport, phase129SystemSynthesesExport, v06OpenEvidenceReviewExport].every((dataset) => dataset.schema_version === "1.0"),
+  "All v0.6 public exports must use schema version 1.0.",
+);
+check(manifest.expected_build.public_json_exports === 68, "Manifest must record sixty-eight public JSON exports.");
 check(
   phase60cDeskExport.count === manifest.expected_build.phase_60c_desk_records,
   `Expected ${manifest.expected_build.phase_60c_desk_records} Wave 60C desk records, found ${phase60cDeskExport.count}.`,
@@ -2765,6 +2787,7 @@ const expectedSignalLocations = manifest.published_signal_routes.map((route) => 
 check(signalLocations.length === expectedSignalLocations.length, `Expected ${expectedSignalLocations.length} signal URLs in the sitemap, found ${signalLocations.length}.`);
 check(JSON.stringify(signalLocations.sort()) === JSON.stringify(expectedSignalLocations), "Sitemap signal membership does not match the Published export.");
 
+const publishedSignalIds = new Set(signals.records.map((record) => record.id));
 const sourceById = new Map(sources.records.map((record) => [record.id, record]));
 const publishedSourceIds = [...new Set(signals.records.flatMap((record) => record.source_ids))];
 const publishedSupportMinimumDate =
@@ -3870,6 +3893,187 @@ check(
   "The manifest must contain exactly 54 unique v0.3.1 content routes.",
 );
 for (const route of manifest.v031_content_routes) {
+  const html = await readText(routeToHtml(route));
+  check(hasRobots(html, "index, follow"), `${route} must be indexable.`);
+  check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
+  check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
+}
+
+check(
+  phase116CoverageExport.dataset === "phase_116_coverage_architecture" &&
+  phase116CoverageExport.count === manifest.expected_build.phase_116_canonical_entities &&
+  phase116CoverageExport.program?.conversion_stages?.length === 8,
+  "The Phase 116 export must preserve the canonical entity registry and eight conversion stages.",
+);
+check(
+  phase117AuthorityExport.dataset === "global_authority_graph" &&
+  phase117AuthorityExport.count === manifest.expected_build.phase_117_authority_rails &&
+  phase117AuthorityExport.graph?.rails?.every((rail) => rail.artifact_review_state === "Exact artifact review required"),
+  "The Phase 117 export must preserve eighty discovery-only authority rails.",
+);
+check(
+  phase118EncyclopediaExport.program_id === "FTFN-PHASE-118-CANONICAL-LIVING-ENCYCLOPEDIA" &&
+  phase118EncyclopediaExport.counts?.chapters === manifest.expected_build.phase_118_encyclopedia_chapters,
+  "The Phase 118 export must preserve all twenty-seven canonical living chapters.",
+);
+check(
+  phase119AtlasExport.dataset === "deep_project_place_atlas" &&
+  phase119AtlasExport.counts?.projects_total === manifest.expected_build.phase_119_projects &&
+  phase119AtlasExport.counts?.places_total === manifest.expected_build.phase_119_places,
+  "The Phase 119 export must preserve all project and place files.",
+);
+check(
+  v04PublicConversionObservatoryExport.dataset === "v04_public_conversion_observatory" &&
+  v04PublicConversionObservatoryExport.counts?.public_html_routes === manifest.expected_build.v04_content_routes &&
+  v04PublicConversionObservatoryExport.publication_boundaries?.some((boundary) => boundary.includes("No Phase 60 future evidence gate")),
+  "The v0.4 export must preserve the route inventory and future-gate boundary.",
+);
+check(
+  manifest.v04_content_routes.length === manifest.expected_build.v04_content_routes &&
+  new Set(manifest.v04_content_routes).size === manifest.expected_build.v04_content_routes,
+  "The manifest must contain the complete unique v0.4 route inventory.",
+);
+for (const route of manifest.v04_content_routes) {
+  const html = await readText(routeToHtml(route));
+  check(hasRobots(html, "index, follow"), `${route} must be indexable.`);
+  check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
+  check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
+}
+
+check(
+  phase120AcquisitionExport.dataset === "phase_120_evidence_acquisition_packets" &&
+  phase120AcquisitionExport.count === 80 &&
+  phase120AcquisitionExport.target_count === 320 &&
+  phase120AcquisitionExport.fieldbook?.acquisition_packets?.every((packet) => packet.disposition.status === "Prepared — no exact artifact admitted"),
+  "The Phase 120 export must preserve eighty prepared packets, 320 targets and zero admitted artifacts.",
+);
+check(
+  phase121MissionsExport.dataset === "phase_121_priority_research_missions" &&
+  phase121MissionsExport.count === 68 &&
+  phase121MissionsExport.program?.missions?.every((mission) => mission.answer_state === "Research packet assembled — answer not adjudicated"),
+  "The Phase 121 export must preserve sixty-eight unadjudicated research missions.",
+);
+check(
+  phase122PlaybooksExport.program_id === "FTFN-PHASE-122-VERIFICATION-PLAYBOOK-LIBRARY" &&
+  phase122PlaybooksExport.counts?.leaf_records === 30,
+  "The Phase 122 export must preserve all thirty verification playbooks.",
+);
+check(
+  phase123DossiersExport.program_id === "FTFN-PHASE-123-COMPARATIVE-DELIVERY-DOSSIERS" &&
+  phase123DossiersExport.counts?.dossiers === 12 &&
+  phase123DossiersExport.dossiers?.every((dossier) => dossier.comparison_passport.verdict === "Context only"),
+  "The Phase 123 export must preserve twelve context-only matched delivery dossiers.",
+);
+for (const dossier of phase123DossiersExport.dossiers ?? []) {
+  for (const signalId of dossier.evidence_signal_ids ?? []) {
+    check(publishedSignalIds.has(signalId), `${dossier.dossier_id} references ${signalId}, which is absent from the Published signals export.`);
+  }
+  const systemHtml = await readText(routeToHtml(dossier.route));
+  for (const sourceId of dossier.evidence_source_ids ?? []) {
+    check(sourceById.has(sourceId), `${dossier.dossier_id} references missing public source ${sourceId}.`);
+    check(systemHtml.includes(`/atlas/sources/${sourceId}/`), `${dossier.route} does not expose declared source ${sourceId}.`);
+  }
+}
+check(
+  phase124WorkbenchesExport.program_id === "FTFN-PHASE-124-TOPIC-RESEARCH-WORKBENCHES" &&
+  phase124WorkbenchesExport.counts?.workbenches === 17 &&
+  phase124WorkbenchesExport.workbenches?.every((workbench) => workbench.quality_audit.every((dimension) => dimension.state === "Not adjudicated independently")),
+  "The Phase 124 export must preserve seventeen workbenches and independent unadjudicated quality dimensions.",
+);
+const phase124AcquisitionCoveredState = "Exact topic-and-stage packet joins available — artifacts remain unreviewed";
+const phase124AcquisitionGapState = "No exact Phase 120 topic-and-stage packet join — acquisition coverage gap";
+const phase124MissionLinks = (phase124WorkbenchesExport.workbenches ?? []).flatMap((workbench) => (workbench.mission_links ?? []).map((link) => ({ ...link, workbench_topic_id: workbench.topic_id })));
+check(phase124MissionLinks.length === 68 && new Set(phase124MissionLinks.map((link) => link.mission_id)).size === 68, "The Phase 124 export must expose each of the 68 Phase 121 missions exactly once.");
+for (const mission of phase121MissionsExport.program?.missions ?? []) {
+  const links = phase124MissionLinks.filter((link) => link.mission_id === mission.mission_id);
+  check(links.length === 1, `${mission.mission_id} must resolve to exactly one Phase 124 workbench mission link.`);
+  const link = links[0];
+  if (!link) continue;
+  check(link.workbench_topic_id === mission.topic_id, `${mission.mission_id} is linked from the wrong Phase 124 topic workbench.`);
+  check(link.acquisition_state === mission.relationships.acquisition_state, `${mission.mission_id} Phase 124 acquisition state differs from Phase 121.`);
+  check(sameSet(link.acquisition_packet_ids, mission.relationships.acquisition_packet_ids), `${mission.mission_id} Phase 124 acquisition packet IDs differ from Phase 121.`);
+}
+const phase124CoveredMissions = phase124MissionLinks.filter((link) => link.acquisition_state === phase124AcquisitionCoveredState && Array.isArray(link.acquisition_packet_ids) && link.acquisition_packet_ids.length > 0);
+const phase124GapMissions = phase124MissionLinks.filter((link) => link.acquisition_state === phase124AcquisitionGapState && Array.isArray(link.acquisition_packet_ids) && link.acquisition_packet_ids.length === 0);
+check(phase124CoveredMissions.length === 56 && phase124GapMissions.length === 12, "The Phase 124 export must preserve the exact Phase 121 acquisition split of 56 covered missions and 12 coverage gaps.");
+check(phase124WorkbenchesExport.counts?.missions_with_acquisition_packets === 56 && phase124WorkbenchesExport.counts?.missions_with_acquisition_coverage_gaps === 12, "The Phase 124 export must report 56 acquisition-covered missions and 12 acquisition coverage gaps.");
+const v05Fieldbook = v05EvidenceFieldbookExport.fieldbook;
+check(
+  v05Fieldbook?.program_id === "FTFN-V0.5-EVIDENCE-FIELDBOOK" &&
+  v05EvidenceFieldbookExport.version === "0.5" &&
+  v05Fieldbook?.counts?.substantive_surfaces === 213 &&
+  v05Fieldbook?.counts?.new_html_routes === 121 &&
+  v05Fieldbook?.counts?.enhanced_existing_routes === 92 &&
+  v05Fieldbook?.publication_boundaries?.some((boundary) => boundary.includes("Phase 60")),
+  "The v0.5 export must preserve the 213-surface inventory and future-gate boundary.",
+);
+check(
+  manifest.v05_new_html_routes.length === manifest.expected_build.v05_new_html_routes &&
+  new Set(manifest.v05_new_html_routes).size === manifest.expected_build.v05_new_html_routes,
+  "The manifest must contain the complete unique v0.5 new-route inventory.",
+);
+for (const route of manifest.v05_new_html_routes) {
+  const html = await readText(routeToHtml(route));
+  check(hasRobots(html, "index, follow"), `${route} must be indexable.`);
+  check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
+  check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
+}
+
+check(
+  phase125AnnotationsExport.program_id === "FTFN-PHASE-125-EVIDENCE-ANNOTATION-LEDGER" &&
+  phase125AnnotationsExport.counts?.evidence_annotations === 82 &&
+  phase125AnnotationsExport.counts?.mission_signal_links === 340 &&
+  phase125AnnotationsExport.counts?.source_records_resolved === 114,
+  "The Phase 125 export must preserve 82 annotations, 340 mission-signal links and 114 exact sources.",
+);
+for (const note of phase125AnnotationsExport.evidence_annotations ?? []) {
+  check(publishedSignalIds.has(note.signal_id), `${note.note_id} references a signal absent from the Published export.`);
+  for (const sourceId of note.source_ids ?? []) check(sourceById.has(sourceId), `${note.note_id} references missing source ${sourceId}.`);
+}
+check(
+  phase126AuditsExport.program_id === "FTFN-PHASE-126-MISSION-EVIDENCE-AUDITS" &&
+  phase126AuditsExport.counts?.mission_audits === 68 &&
+  phase126AuditsExport.counts?.requirement_tests === 204,
+  "The Phase 126 export must preserve 68 mission audits and 204 requirement tests.",
+);
+check(
+  phase127BiographiesExport.program_id === "FTFN-PHASE-127-PROJECT-PLACE-CONVERSION-BIOGRAPHIES" &&
+  phase127BiographiesExport.counts?.project_biographies === 24 &&
+  phase127BiographiesExport.counts?.place_biographies === 15 &&
+  phase127BiographiesExport.counts?.project_stage_cells === 192 &&
+  phase127BiographiesExport.counts?.place_system_assessments === 90,
+  "The Phase 127 export must preserve 39 biographies, 192 project-stage cells and 90 place-system assessments.",
+);
+check(
+  phase128TopicReviewsExport.program_id === "FTFN-PHASE-128-TOPIC-STATE-OF-EVIDENCE-REVIEWS" &&
+  phase128TopicReviewsExport.counts?.topic_reviews === 17 &&
+  phase128TopicReviewsExport.counts?.horizon_reviews === 68,
+  "The Phase 128 export must preserve 17 topic reviews and 68 horizon reviews.",
+);
+check(
+  phase129SystemSynthesesExport.program_id === "FTFN-PHASE-129-CROSS-SYSTEM-EVIDENCE-SYNTHESES" &&
+  phase129SystemSynthesesExport.counts?.syntheses === 12 &&
+  phase129SystemSynthesesExport.counts?.compatibility_determinations === 60,
+  "The Phase 129 export must preserve 12 syntheses and 60 compatibility determinations.",
+);
+check(
+  v06OpenEvidenceReviewExport.program_id === "FTFN-V0.6-OPEN-EVIDENCE-REVIEW" &&
+  v06OpenEvidenceReviewExport.version === "0.6" &&
+  v06OpenEvidenceReviewExport.counts?.substantive_surfaces === 224 &&
+  v06OpenEvidenceReviewExport.counts?.new_html_routes === 6 &&
+  v06OpenEvidenceReviewExport.counts?.enhanced_existing_routes === 218 &&
+  v06OpenEvidenceReviewExport.counts?.acquisition_gaps_preserved === 12 &&
+  v06OpenEvidenceReviewExport.counts?.future_phase_60_gates_preserved === 11,
+  "The v0.6 export must preserve the 224-surface inventory, twelve gaps and eleven future gates.",
+);
+check(
+  manifest.v06_new_html_routes.length === manifest.expected_build.v06_new_html_routes &&
+  new Set(manifest.v06_new_html_routes).size === manifest.expected_build.v06_new_html_routes &&
+  manifest.v06_enhanced_existing_routes.length === manifest.expected_build.v06_enhanced_existing_routes &&
+  new Set(manifest.v06_enhanced_existing_routes).size === manifest.expected_build.v06_enhanced_existing_routes,
+  "The manifest must contain the complete unique v0.6 new and enhanced route inventories.",
+);
+for (const route of manifest.v06_new_html_routes) {
   const html = await readText(routeToHtml(route));
   check(hasRobots(html, "index, follow"), `${route} must be indexable.`);
   check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);

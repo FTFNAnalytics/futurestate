@@ -3,6 +3,8 @@ import { getCollection, render } from "astro:content";
 import DependencyMapLinks from "../../components/atlas/DependencyMapLinks.astro";
 import BaseLayout from "../../components/layout/BaseLayout.astro";
 import MetaPill from "../../components/ui/MetaPill.astro";
+import EvidenceAnnotation from "../../components/review/EvidenceAnnotation.astro";
+import annotationLedger from "../../data/phase-125-evidence-annotation-ledger.json";
 import {
   formatDate,
   getClaimScopeNote,
@@ -43,6 +45,7 @@ const sourceCheckedDates = signalSources.map((source) => formatDate(source.data.
 const sourceCheckedSummary = sourceCheckedDates.length > 0 ? sourceCheckedDates.join(", ") : "No source date";
 const publishedDateSummary = signal.data.published_date ? formatDate(signal.data.published_date) : "Not published";
 const capturedDateSummary = formatDate(signal.data.captured_date);
+const evidenceAnnotation = annotationLedger.evidence_annotations.find((record) => record.signal_id === signal.data.id);
 const evidenceGapSummary =
   linkedEvidenceGaps.length > 0 ? `${linkedEvidenceGaps.length} linked gap${linkedEvidenceGaps.length === 1 ? "" : "s"}` : "No linked gaps";
 const lastReviewedSummary = signal.data.last_reviewed_date
@@ -154,6 +157,8 @@ const robots = signal.data.record_status === "Published" ? "index, follow" : "no
   <section class="page-section prose">
     <Content />
   </section>
+
+  {evidenceAnnotation && <EvidenceAnnotation note={evidenceAnnotation} />}
 
   <section class="page-section">
     <h2>Sources</h2>

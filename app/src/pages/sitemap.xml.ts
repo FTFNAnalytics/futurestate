@@ -38,6 +38,9 @@ import wholeSystemFuturesRegistry from "../data/phase-101-whole-system-futures-s
 import publicKnowledgeStewardshipRegistry from "../data/phase-102-public-knowledge-synthesis-civic-decision-literacy-reader-navigation-content-closure-evergreen-stewardship-registry.json";
 import v03EditorialProgram from "../data/v03-editorial-program.json";
 import v031ContentExpansion from "../data/v031-content-expansion.json";
+import v04PublicConversionObservatory from "../data/v04-public-conversion-observatory.json";
+import v05EvidenceFieldbook from "../data/v05-evidence-fieldbook.json";
+import v06OpenEvidenceReview from "../data/v06-open-evidence-review.json";
 
 const siteUrl = "https://ftfn.io";
 
@@ -279,7 +282,10 @@ export const GET: APIRoute = async () => {
     ...publicKnowledgeStewardshipRegistry.reader_navigation_learning_pathway_accessibility_translation_registers.map((record) => urlEntry("/evidence/public-knowledge-synthesis-civic-decision-literacy-reader-navigation-content-closure-evergreen-stewardship/" + record.slug + "/")),
     ...publicKnowledgeStewardshipRegistry.content_completeness_maintenance_correction_archive_evergreen_stewardship_ledgers.map((record) => urlEntry("/evidence/public-knowledge-synthesis-civic-decision-literacy-reader-navigation-content-closure-evergreen-stewardship/" + record.slug + "/")),
     ...v03EditorialProgram.phases.flatMap((phase) => phase.routes.map((route) => urlEntry(route, new Date(v03EditorialProgram.effective_date)))),
-    ...v031ContentExpansion.phases.flatMap((phase) => phase.routes.map((route) => urlEntry(route, new Date(v031ContentExpansion.effective_date))))
+    ...v031ContentExpansion.phases.flatMap((phase) => phase.routes.map((route) => urlEntry(route, new Date(v031ContentExpansion.effective_date)))),
+    ...v04PublicConversionObservatory.public_html_routes.map((route) => urlEntry(route, new Date(v04PublicConversionObservatory.effective_date))),
+    ...v05EvidenceFieldbook.new_html_routes.map((route) => urlEntry(route, new Date(v05EvidenceFieldbook.effective_date))),
+    ...v06OpenEvidenceReview.new_html_routes.map((route) => urlEntry(route, new Date(v06OpenEvidenceReview.effective_date)))
   ].sort();
 
   const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${routes.join("\n")}\n</urlset>\n`;

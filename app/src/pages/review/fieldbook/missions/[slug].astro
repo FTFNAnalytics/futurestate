@@ -1,0 +1,178 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import MissionEvidenceAudit from "../../../../components/review/MissionEvidenceAudit.astro";
+import program from "../../../../data/phase-121-priority-research-missions.json";
+import coverage from "../../../../data/phase-116-coverage-architecture.json";
+import acquisition from "../../../../data/phase-120-evidence-acquisition-packets.json";
+import authority from "../../../../data/phase-117-global-authority-graph.json";
+import atlas from "../../../../data/phase-119-deep-project-place-atlas.json";
+import missionAudits from "../../../../data/phase-126-mission-evidence-audits.json";
+
+export function getStaticPaths() {
+  return program.missions.map((mission) => ({ params: { slug: mission.slug }, props: { missionId: mission.mission_id } }));
+}
+
+const mission = program.missions.find((record) => record.mission_id === Astro.props.missionId)!;
+const missionAudit = missionAudits.mission_audits.find((record) => record.mission_id === mission.mission_id)!;
+const stageById = new Map(coverage.conversion_stages.map((record) => [record.stage_id, record]));
+const claimById = new Map(coverage.claim_types.map((record) => [record.claim_type_id, record]));
+const packetById = new Map(acquisition.acquisition_packets.map((record) => [record.packet_id, record]));
+const railById = new Map(authority.rails.map((record) => [record.rail_id, record]));
+const projectById = new Map(atlas.projects.map((record) => [record.atlas_project_id, record]));
+const placeById = new Map(atlas.places.map((record) => [record.atlas_place_id, record]));
+const selectedPackets = mission.relationships.acquisition_packet_ids.map((id) => packetById.get(id)).filter(Boolean);
+const selectedProjects = mission.relationships.atlas_project_ids.map((id) => projectById.get(id)).filter(Boolean);
+const selectedPlaces = mission.relationships.atlas_place_ids.map((id) => placeById.get(id)).filter(Boolean);
+const signalById = new Map((await getCollection("signals")).map((record) => [record.data.id, record]));
+const sourceById = new Map((await getCollection("sources")).map((record) => [record.data.id, record]));
+const selectedSignals = mission.relationships.context_signal_ids.map((id) => signalById.get(id)).filter(Boolean);
+const selectedSources = mission.relationships.context_source_ids.map((id) => sourceById.get(id)).filter(Boolean);
+---
+
+<BaseLayout title={`${mission.title} | FTFN`} description={mission.research_contract.question}>
+  <ReviewHeader eyebrow={`Research mission · ${mission.priority_question_id}`} title={mission.title} summary={mission.research_contract.question} phase={121} />
+
+  <section class="page-section">
+    <div class="meta-row">
+      <MetaPill label={mission.research_horizon} tone="possibility" />
+      <MetaPill label={mission.answer_state} tone="review" />
+      <MetaPill label={mission.topic_id} />
+    </div>
+    <p class="lede">{mission.research_contract.why_priority}</p>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Completion contract</div>
+      <h2>What a later review must decide.</h2>
+      <p>{mission.research_contract.completion_rule}</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <div class="eyebrow">Current state</div>
+      <h3>{mission.answer_state}</h3>
+      <p>{mission.stewardship.next_action}</p>
+      <p class="card-note">Owner: {mission.stewardship.owner_role}</p>
+    </article>
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Required evidence</div>
+      <h2>All requirements remain live.</h2>
+      <ul>{mission.research_contract.required_evidence.map((item) => <li>{item}</li>)}</ul>
+    </article>
+    <article>
+      <div class="eyebrow">Geographic contract</div>
+      <h2>Keep the scope named.</h2>
+      <p>{mission.target_contract.geography}</p>
+      <p class="card-note">Upstream state: {mission.research_contract.upstream_state}</p>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Research design</div><h2>Method, period and denominator.</h2><p>These controls prevent a persuasive fragment from becoming a broader answer than the evidence permits.</p></div></div>
+    <div class="signal-grid">
+      <article class="record-card"><MetaPill label="Method" /><h3>How to inspect the record</h3><p>{mission.research_design.method}</p></article>
+      <article class="record-card"><MetaPill label="Period" /><h3>How time is bounded</h3><p>{mission.research_design.period}</p></article>
+      <article class="record-card"><MetaPill label="Denominator" /><h3>What the measure covers</h3><p>{mission.research_design.denominator}</p></article>
+    </div>
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Target stages</div>
+      <h2>Conversion questions</h2>
+      <div class="source-list">
+        {mission.target_contract.conversion_stage_ids.map((id) => {
+          const stage = stageById.get(id)!;
+          return <div class="source-row"><strong>{stage.sequence}. {stage.label}</strong><span>{id}</span><p>{stage.question}</p></div>;
+        })}
+      </div>
+    </article>
+    <article>
+      <div class="eyebrow">Claim types</div>
+      <h2>Admissible claim boundaries</h2>
+      <div class="source-list">
+        {mission.target_contract.claim_type_ids.map((id) => {
+          const claim = claimById.get(id)!;
+          return <div class="source-row"><strong>{claim.label}</strong><span>{id}</span><p>{claim.boundary}</p></div>;
+        })}
+      </div>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Acquisition packets</div><h2>{selectedPackets.length ? "Candidate rails for exact-artifact review." : "No exact topic-and-stage packet join."}</h2><p>These packets identify where and how to look. They do not establish that a qualifying artifact exists.</p><p class="card-note">{mission.relationships.acquisition_state}</p></div><MetaPill label={`${selectedPackets.length} packet IDs`} tone="review" /></div>
+    <div class="signal-grid">
+      {selectedPackets.map((packet) => {
+        const rail = railById.get(packet!.rail_id)!;
+        return (
+          <article class="record-card">
+            <div class="meta-row"><MetaPill label={packet!.packet_id} /><MetaPill label={rail.authority_class} /></div>
+            <h3><a href={`/review/authority/rails/${rail.slug}/`}>{rail.institution_name}</a></h3>
+            <p>{rail.jurisdiction_name} · exact artifact review required</p>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Named project files</div>
+      <h2>{selectedProjects.length ? "Explicit case joins" : "No mapped project file"}</h2>
+      <div class="source-list">{selectedProjects.map((project) => <div class="source-row"><strong><a href={project!.routes.atlas}>{project!.title}</a></strong><span>{project!.atlas_project_id}</span><p>{project!.coverage.label}</p></div>)}</div>
+    </article>
+    <article>
+      <div class="eyebrow">Named place files</div>
+      <h2>{selectedPlaces.length ? "Explicit receiving-system joins" : "No mapped place file"}</h2>
+      <div class="source-list">{selectedPlaces.map((place) => <div class="source-row"><strong><a href={place!.routes.atlas}>{place!.title}</a></strong><span>{place!.atlas_place_id}</span><p>{place!.geography}</p></div>)}</div>
+    </article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Contextual evidence shelf</div><h2>Published background, not an adjudicated answer.</h2><p>The shelf is inherited exactly from the Phase 118 topic chapter. Its presence does not satisfy this mission’s completion contract.</p></div><MetaPill label={`${selectedSignals.length} Published signals`} tone="published" /></div>
+    <div class="signal-grid">
+      {selectedSignals.map((signal) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={signal!.data.id} /><MetaPill label={signal!.data.record_status} tone="published" /></div>
+          <h3><a href={`/signals/${signal!.data.slug}/`}>{signal!.data.title}</a></h3>
+          <p>{signal!.data.summary}</p>
+        </article>
+      ))}
+    </div>
+    <div class="source-list">
+      {selectedSources.map((source) => <article class="source-row"><h3><a href={`/atlas/sources/${source!.data.id}/`}>{source!.data.name}</a></h3><p>{source!.data.source_type} · {source!.data.id}</p></article>)}
+    </div>
+  </section>
+
+  <section class="page-section review-columns">
+    <article>
+      <div class="eyebrow">Missing decisive evidence</div>
+      <h2>What remains unadjudicated.</h2>
+      <ul>{mission.missing_decisive_evidence.map((item) => <li>{item}</li>)}</ul>
+    </article>
+    <article>
+      <div class="eyebrow">Stop rule</div>
+      <h2>Where this packet ends.</h2>
+      <p>{mission.stop_rule}</p>
+    </article>
+  </section>
+
+  <section class="page-section review-columns">
+    <article><div class="eyebrow">Acceptance rules</div><h2>What permits a later decision.</h2><ol>{mission.acceptance_rules.map((rule) => <li>{rule}</li>)}</ol></article>
+    <article><div class="eyebrow">Rejection rules</div><h2>What must be returned or held.</h2><ol>{mission.rejection_rules.map((rule) => <li>{rule}</li>)}</ol></article>
+  </section>
+
+  <MissionEvidenceAudit audit={missionAudit} />
+
+  <section class="page-section prose-page">
+    <h2>Interpretation boundary</h2>
+    <p>{mission.interpretation_boundary}</p>
+    <p>{program.publication_boundaries[0]}</p>
+    <p><a class="inline-link" href="/review/fieldbook/missions/">Return to all research missions</a></p>
+  </section>
+</BaseLayout>

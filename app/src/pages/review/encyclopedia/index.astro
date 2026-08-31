@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import encyclopedia from "../../../data/phase-118-canonical-living-encyclopedia.json";
+---
+
+<BaseLayout title="Canonical Living Encyclopedia | FTFN" description={encyclopedia.summary}>
+  <section class="page-section">
+    <div class="eyebrow">Phase 118 · FTFN v0.4</div>
+    <h1 class="page-title">The canonical living encyclopedia.</h1>
+    <p class="lede">{encyclopedia.summary}</p>
+    <div class="meta-row">
+      <MetaPill label={`${encyclopedia.counts.topic_chapters} domain chapters`} tone="possibility" />
+      <MetaPill label={`${encyclopedia.counts.foundation_chapters} foundations`} />
+      <MetaPill label="Published evidence only" />
+    </div>
+  </section>
+
+  <section class="page-section prose-page">
+    <div class="eyebrow">How to use this edition</div>
+    <h2>Read a field, then test the method beneath it.</h2>
+    <p>Domain chapters synthesize what the current repository establishes about seventeen frontier systems. Foundation chapters explain the claim, conversion, dependency, authority, acceptance and measurement rules used across them.</p>
+    <p>{encyclopedia.publication_boundary}</p>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Domain library</div><h2>Seventeen evidence-led topic chapters.</h2></div></div>
+    <div class="grid">
+      {encyclopedia.topic_chapters.map((chapter) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={chapter.topic_name} /></div>
+          <h3><a href={`/review/encyclopedia/topics/${chapter.slug}/`}>{chapter.title}</a></h3>
+          <p>{chapter.deck}</p>
+          <p class="card-note">{chapter.evidence_signal_ids.length} curated Published evidence records.</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Cross-system foundations</div><h2>Ten chapters for reading conversion responsibly.</h2></div></div>
+    <div class="grid">
+      {encyclopedia.foundation_chapters.map((chapter) => (
+        <article class="record-card">
+          <h3><a href={`/review/encyclopedia/foundations/${chapter.slug}/`}>{chapter.title}</a></h3>
+          <p>{chapter.deck}</p>
+          <p class="card-note">{chapter.evidence_signal_ids.length} cross-topic evidence records.</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Open research infrastructure</div><h2>Reuse the complete editorial registry.</h2><p>The export preserves every section, evidence record ID and route in this edition.</p><a class="inline-link" href="/data/phase-118-canonical-living-encyclopedia.json">Download the Phase 118 JSON registry</a></div></section>
+</BaseLayout>

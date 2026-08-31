@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../../components/ui/MetaPill.astro";
+import registry from "../../../../data/phase-128-topic-state-of-evidence-reviews.json";
+---
+
+<BaseLayout title="Topic state-of-evidence reviews | FTFN v0.6" description={registry.summary}>
+  <ReviewHeader eyebrow="Open Evidence Review · Phase 128" title={registry.title} summary={registry.summary} phase={128} />
+  <section class="page-section"><div class="metric-strip" aria-label="Phase 128 counts"><div class="metric"><strong>{registry.counts.topic_reviews}</strong><span>topic reviews</span></div><div class="metric"><strong>{registry.counts.horizon_reviews}</strong><span>horizon reviews</span></div><div class="metric"><strong>{registry.counts.authored_words.toLocaleString()}</strong><span>rendered analysis words</span></div><div class="metric"><strong>{registry.counts.deduplicated_authored_words.toLocaleString()}</strong><span>exact-passage-deduplicated</span></div></div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Research-value contract</div><h2>Decisive records first, without ranking the field.</h2><p>{registry.research_value_contract.meaning}</p><p>{registry.research_value_contract.forbidden_reading}</p></div><div class="source-list">{registry.research_value_contract.tier_order.map((tier) => <div class="source-row"><strong>{tier}</strong><span>Editorial research sequence</span></div>)}</div></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Seventeen canonical topics</div><h2>Read the current evidence and the exact next work.</h2></div></div><div class="signal-grid">{registry.topic_reviews.map((review) => <article class="record-card"><div class="meta-row"><MetaPill label={review.review_id} /><MetaPill label="4 horizons" tone="possibility" /><MetaPill label="Unadjudicated" tone="review" /></div><h3><a href={review.route}>{review.title}</a></h3><p>{review.authored_sections.executive_read}</p><p>{review.exact_joins.evidence_note_ids.length} evidence notes · {review.exact_joins.project_biography_ids.length + review.exact_joins.place_biography_ids.length} biographies · {review.exact_joins.dossier_ids.length} dossiers</p><a class="inline-link" href={review.route}>Open the state-of-evidence review</a></article>)}</div></section>
+  <section class="page-section prose-page"><h2>Evidence boundary</h2><p>{registry.publication_boundary}</p><p><a href={registry.routes.public_export}>Download the schema-1.0 Phase 128 registry</a></p></section>
+</BaseLayout>

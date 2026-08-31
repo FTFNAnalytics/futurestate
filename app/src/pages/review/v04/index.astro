@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import program from "../../../data/v04-public-conversion-observatory.json";
+
+const phaseLinks = new Map([
+  [116, "/review/coverage/"],
+  [117, "/review/authority/"],
+  [118, "/review/encyclopedia/"],
+  [119, "/atlas/projects/"],
+]);
+---
+
+<BaseLayout title="FTFN v0.4 | Public Conversion Observatory" description={program.summary}>
+  <ReviewHeader eyebrow="Public Conversion Observatory" title={program.title} summary={program.summary} phase={116} />
+
+  <section class="page-section">
+    <div class="metric-strip" aria-label="v0.4 program counts">
+      <div class="metric"><strong>{program.counts.public_html_routes}</strong><span>public reading routes</span></div>
+      <div class="metric"><strong>{program.counts.jurisdiction_layers}</strong><span>jurisdiction layers</span></div>
+      <div class="metric"><strong>{program.counts.encyclopedia_chapters}</strong><span>canonical chapters</span></div>
+      <div class="metric"><strong>{program.counts.projects + program.counts.places}</strong><span>project and place files</span></div>
+    </div>
+  </section>
+
+  <section class="page-section prose-page">
+    <div class="eyebrow">The objective</div>
+    <h2>Make conversion visible without overstating what the record proves.</h2>
+    {program.core_objectives.map((objective) => <p>{objective}</p>)}
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div><div class="eyebrow">Phases 116–119</div><h2>Four connected public layers.</h2></div>
+      <MetaPill label="Complete" tone="possibility" />
+    </div>
+    <div class="signal-grid">
+      {program.phases.map((phase) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={`Phase ${phase.phase}`} /><MetaPill label={`${phase.public_html_routes} routes`} tone="possibility" /></div>
+          <h3><a href={phaseLinks.get(phase.phase)}>{phase.title}</a></h3>
+          <p>{phase.phase === 116 && "The shared topic, entity, geography, claim-type, quality, and eight-stage conversion grammar."}</p>
+          <p>{phase.phase === 117 && "Official discovery rails across national, supranational, and multilateral systems, all held at Candidate status until an exact artifact is reviewed."}</p>
+          <p>{phase.phase === 118 && "Evidence-linked topic and foundation chapters written as maintained public synthesis, with explicit boundaries and lineage."}</p>
+          <p>{phase.phase === 119 && "Named projects and places with visible coverage tiers, evidence links, conversion-stage views, and open questions."}</p>
+          <a class="inline-link" href={phaseLinks.get(phase.phase)}>Open phase</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Evidence boundary</div>
+      <h2>Coverage is not a verdict.</h2>
+      <p>The observatory shows where evidence lives, how records connect, and which questions remain open. It does not turn a mapped portal, editorial chapter, or future check into a finding.</p>
+    </div>
+    <div class="source-list">
+      {program.publication_boundaries.map((boundary) => <div class="source-row"><span>{boundary}</span></div>)}
+    </div>
+  </section>
+
+  <section class="page-section prose-page">
+    <h2>Use the public data</h2>
+    <p>Download the <a href="/data/v04-public-conversion-observatory.json">versioned v0.4 registry</a>, or inspect the separate coverage, authority, encyclopedia, and atlas exports listed in the <a href="/data/">data catalogue</a>.</p>
+  </section>
+</BaseLayout>

@@ -18,6 +18,7 @@ const packets = await readJson("src", "data", "phase-67-qualification-packet-reg
 const returns = await readJson("src", "data", "phase-67-evidence-return-envelope-ledger.json");
 const qualificationFixtures = await readJson("src", "data", "phase-67-qualification-admissibility-fixtures.json");
 const returnFixtures = await readJson("src", "data", "phase-67-return-workflow-fixtures.json");
+const releaseManifest = await readJson("..", "deployment", "ftfn-v0.2-build.json");
 
 const sourceFiles = (await readdir(join(appRoot, "src", "content", "sources"))).filter((name) => name.endsWith(".json"));
 const sourceIds = new Set((await Promise.all(sourceFiles.map((name) => readJson("src", "content", "sources", name)))).map((record) => record.id));
@@ -144,7 +145,8 @@ for (const file of localFiles) check((await readText("src", "content", "local-sy
 const allCells = phase64.file_rows.flatMap((row) => row.stage_cells);
 check(allCells.filter((cell) => cell.cell_state === "Evidence Present").length === 16 && allCells.filter((cell) => cell.cell_state === "Partial / Held").length === 8 && allCells.filter((cell) => cell.cell_state === "Not Established").length === 40, "Phase 67 must preserve the full 16/8/40 matrix distribution.");
 check(allCells.filter((cell) => cell.stage_id === "64-STAGE-08-OUTCOME").every((cell) => cell.cell_state === "Not Established"), "All eight comparable-outcome cells must remain Not Established.");
-check(sourceFiles.length === 715 && signalFiles.length === 1406, "Phase 67 must not add sources or signals during the structural build.");
+check(releaseManifest.phase_67_delta.sources_added === 0 && releaseManifest.phase_67_delta.signals_added === 0, "The Phase 67 release delta must record zero source and signal additions.");
+check(sourceFiles.length >= 715 && signalFiles.length >= 1406, "The live corpus must preserve the Phase 67 source and signal baselines while allowing later governed expansion.");
 
 const phase67Payload = JSON.stringify({ packets, returns });
 check(!/"[^"\n]*(score|rank)[^"\n]*"\s*:/i.test(phase67Payload), "Phase 67 ledgers must not introduce score or rank fields.");

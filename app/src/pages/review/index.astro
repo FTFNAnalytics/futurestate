@@ -4,18 +4,56 @@ import ReviewHeader from "../../components/review/ReviewHeader.astro";
 import MetaPill from "../../components/ui/MetaPill.astro";
 import program from "../../data/v03-editorial-program.json";
 import expansion from "../../data/v031-content-expansion.json";
+import v04 from "../../data/v04-public-conversion-observatory.json";
+import v05 from "../../data/v05-evidence-fieldbook.json";
+import v06 from "../../data/v06-open-evidence-review.json";
 ---
 
-<BaseLayout title="The FTFN Review | Public knowledge edition" description={program.summary}>
-  <ReviewHeader eyebrow="The public knowledge edition" title="The FTFN Review" summary={program.summary} phase={103} />
+<BaseLayout title="The FTFN Review | Open Evidence Review" description={v06.summary}>
+  <ReviewHeader eyebrow="v0.6 public knowledge edition" title="The FTFN Review" summary={v06.summary} />
 
   <section class="page-section">
     <div class="metric-strip" aria-label="Editorial program counts">
-      <div class="metric"><strong>{program.counts.canonical_topic_chapters}</strong><span>topic chapters</span></div>
-      <div class="metric"><strong>{program.counts.casebooks}</strong><span>casebooks</span></div>
-      <div class="metric"><strong>{program.counts.cross_system_stories}</strong><span>system stories</span></div>
-      <div class="metric"><strong>{program.counts.public_routes}</strong><span>public routes</span></div>
+      <div class="metric"><strong>{v06.counts.evidence_annotations}</strong><span>evidence annotations</span></div>
+      <div class="metric"><strong>{v06.counts.mission_audits}</strong><span>mission audits</span></div>
+      <div class="metric"><strong>{v06.counts.project_biographies + v06.counts.place_biographies}</strong><span>delivery biographies</span></div>
+      <div class="metric"><strong>{v06.counts.substantive_surfaces}</strong><span>review surfaces</span></div>
     </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Phases 125–129</div><h2>Open Evidence Review</h2><p>Read what the current Published corpus supports, where each mission requirement remains incomplete, how named projects and places convert, and why cross-system evidence is—or is not—compatible.</p></div><MetaPill label={`${v06.counts.substantive_surfaces} surfaces`} tone="possibility" /></div>
+    <div class="signal-grid">
+      <article class="record-card"><MetaPill label="Phase 125" /><h3><a href="/review/fieldbook/evidence-notes/">Evidence annotations</a></h3><p>Eighty-two Published signals receive source-resolved support and excluded-inference notes.</p></article>
+      <article class="record-card"><MetaPill label="Phase 126" /><h3><a href="/review/fieldbook/mission-audits/">Mission evidence audits</a></h3><p>All 204 required-evidence items are screened for title/factual-nucleus overlap without changing a mission answer state.</p></article>
+      <article class="record-card"><MetaPill label="Phase 127" /><h3><a href="/review/fieldbook/delivery-biographies/">Delivery biographies</a></h3><p>Twenty-four projects and fifteen places gain authored conversion histories and explicit unresolved bridges.</p></article>
+      <article class="record-card"><MetaPill label="Phase 128" /><h3><a href="/review/fieldbook/topic-reviews/">Topic evidence reviews</a></h3><p>Seventeen topics connect their four mission horizons to current evidence and next-artifact work.</p></article>
+      <article class="record-card"><MetaPill label="Phase 129" /><h3><a href="/review/fieldbook/system-reviews/">Compatibility syntheses</a></h3><p>Twelve systems expose identity, stage, geography, period and denominator compatibility.</p></article>
+    </div>
+    <p><a class="inline-link" href="/review/v06/">Open the complete v0.6 review</a></p>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Phases 120–124</div><h2>Evidence Fieldbook</h2><p>Move from a Candidate authority rail to an exact acquisition contract, bounded research mission, verification method, context-only comparison, and active topic workbench.</p></div><MetaPill label={`${v05.counts.substantive_surfaces} surfaces`} tone="possibility" /></div>
+    <div class="signal-grid">
+      <article class="record-card"><MetaPill label="Phase 120" /><h3><a href="/review/fieldbook/acquisition/">Authority-to-artifact packets</a></h3><p>Eighty prepared packets and 320 exact artifact targets; no artifact has been admitted.</p></article>
+      <article class="record-card"><MetaPill label="Phase 121" /><h3><a href="/review/fieldbook/missions/">Priority research missions</a></h3><p>All 68 canonical questions become transparent, unadjudicated research contracts.</p></article>
+      <article class="record-card"><MetaPill label="Phase 122" /><h3><a href="/review/fieldbook/method/">Verification playbooks</a></h3><p>Thirty procedural guides across stages, claims, and independent quality dimensions.</p></article>
+      <article class="record-card"><MetaPill label="Phase 123" /><h3><a href="/review/fieldbook/casebooks/">Matched delivery dossiers</a></h3><p>Twelve cross-system stories now use explicit evidence IDs and comparison passports.</p></article>
+      <article class="record-card"><MetaPill label="Phase 124" /><h3><a href="/review/fieldbook/topics/">Topic workbenches</a></h3><p>Seventeen operational indexes connect the whole Fieldbook without changing evidence state.</p></article>
+    </div>
+    <p><a class="inline-link" href="/review/v05/">Open the complete v0.5 Evidence Fieldbook</a></p>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Phases 116–119</div><h2>Public Conversion Observatory</h2><p>Move from a coverage question to an official authority rail, an authored explanation, and a named project or receiving place—without collapsing one evidence stage into another.</p></div><MetaPill label={`${v04.counts.public_html_routes} routes`} tone="possibility" /></div>
+    <div class="signal-grid">
+      <article class="record-card"><MetaPill label="Phase 116" /><h3><a href="/review/coverage/">Coverage architecture</a></h3><p>Seventeen topics, eight conversion stages, twelve claim types, and a public completion rubric.</p></article>
+      <article class="record-card"><MetaPill label="Phase 117" /><h3><a href="/review/authority/">Global authority graph</a></h3><p>Twenty jurisdiction layers and eighty official Candidate discovery rails.</p></article>
+      <article class="record-card"><MetaPill label="Phase 118" /><h3><a href="/review/encyclopedia/">Living encyclopedia</a></h3><p>Twenty-seven maintained chapters with evidence lineage, contested interpretations, and decisive evidence.</p></article>
+      <article class="record-card"><MetaPill label="Phase 119" /><h3><a href="/atlas/projects/">Project and place atlas</a></h3><p>Twenty-four projects and fifteen places, with governed and curated coverage tiers kept visible.</p></article>
+    </div>
+    <p><a class="inline-link" href="/review/v04/">Open the complete v0.4 program</a></p>
   </section>
 
   <section class="page-section">

@@ -1,0 +1,106 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import atlas from "../../../data/phase-119-deep-project-place-atlas.json";
+import biographies from "../../../data/phase-127-project-place-conversion-biographies.json";
+
+export function getStaticPaths() {
+  return atlas.places.map((record) => ({ params: { slug: record.slug }, props: { placeId: record.atlas_place_id } }));
+}
+
+const place = atlas.places.find((record) => record.atlas_place_id === Astro.props.placeId)!;
+const biography = biographies.place_biographies.find((record) => record.atlas_place_id === place.atlas_place_id)!;
+const owner = atlas.update_owners.find((record) => record.owner_id === place.update_owner_id)!;
+const relatedProjects = place.relationships.related_project_ids.map((id) => atlas.projects.find((record) => record.atlas_project_id === id)).filter(Boolean);
+const signals = await getCollection("signals");
+const signalById = new Map(signals.map((record) => [record.data.id, record]));
+const selectedSignals = place.evidence_rails.signal_ids.map((id) => signalById.get(id)).filter(Boolean);
+const sources = await getCollection("sources");
+const sourceById = new Map(sources.map((record) => [record.data.id, record]));
+const selectedSources = place.evidence_rails.source_ids.map((id) => sourceById.get(id)).filter(Boolean);
+---
+
+<BaseLayout title={`${place.title} | FTFN Place Atlas`} description={place.editorial_question}>
+  <section class="page-section">
+    <div class="eyebrow">Atlas / Places / {place.canonical_id}</div>
+    <h1 class="page-title">{place.title}</h1>
+    <p class="lede">{place.editorial_question}</p>
+    <div class="meta-row"><MetaPill label={place.coverage.label} tone={place.coverage.tier_id === "Tier A" ? "review" : "default"} /><MetaPill label={`Record ${place.atlas_place_id}`} /><MetaPill label={`Phase 127 · ${biography.biography_id}`} tone="possibility" /><MetaPill label={place.geography} /><MetaPill label={`Reviewed ${place.last_reviewed_date}`} /></div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy"><div class="eyebrow">Conversion boundary</div><h2>{place.conversion.current_stage}</h2><p>{place.conversion.stage_basis}</p></div>
+    <article class="record-card record-card--featured"><div class="eyebrow">Coverage basis</div><h3>{place.coverage.tier_id}: {place.coverage.label}</h3><p>{place.coverage.basis}</p><MetaPill label={place.update_status} tone="review" /></article>
+  </section>
+
+  <section class="page-section review-columns">
+    <article><div class="eyebrow">Unresolved system evidence</div><h2>Where the place claim stops.</h2><p>{place.conversion.unresolved}</p><p class="card-note">{place.conversion.unresolved_gate}</p></article>
+    <article><div class="eyebrow">Exact next artifact</div><h2>What can deepen this record.</h2><p>{place.conversion.exact_next_artifact}</p>{place.conversion.next_check_dates.length > 0 && <div class="meta-row">{place.conversion.next_check_dates.map((date) => <MetaPill label={`Check ${date}`} tone="urgency" />)}</div>}</article>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Phase 127 · Receiving-system biography · {biography.biography_id}</div>
+        <h2>A deeper place account without a place conversion stage.</h2>
+        <p>{biography.interpretation_boundary}</p>
+      </div>
+      <MetaPill label={`${biography.narrative_metrics.authored_word_count.toLocaleString()} authored words`} tone="possibility" />
+    </div>
+    <div class="source-list">
+      {biography.narrative_sections.map((section) => (
+        <article class="source-row">
+          <div class="eyebrow">{section.section_id}</div>
+          <h3>{section.heading}</h3>
+          <p>{section.body}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Six-dimension place assessment</div>
+        <h2>Receiving-system questions remain independent.</h2>
+        <p>These assessments organize place-scoped Published context. They never inherit a linked project's conversion stage and never combine into a readiness or outcome score.</p>
+      </div>
+      <MetaPill label={`${biography.dimension_assessments.length} dimensions`} tone="review" />
+    </div>
+    <div class="grid">
+      {biography.dimension_assessments.map((assessment) => (
+        <article class="record-card">
+          <div class="meta-row"><MetaPill label={assessment.assessment_id} /><MetaPill label={assessment.state} tone={assessment.state === "Published context" ? "published" : "default"} /></div>
+          <h3>{assessment.sequence}. {assessment.label}</h3>
+          <p>{assessment.basis}</p>
+          <p class="card-note">{assessment.question}</p>
+          {assessment.published_context_signal_ids.length > 0 && <p class="card-note">Published context: {assessment.published_context_signal_ids.join(", ")}</p>}
+          <p class="card-note">Project stage inherited: no</p>
+        </article>
+      ))}
+    </div>
+    <p><a class="inline-link" href="/review/fieldbook/delivery-biographies/">Open all Phase 127 delivery biographies</a></p>
+  </section>
+
+  {relatedProjects.length > 0 && (
+    <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Named conversion files</div><h2>Projects linked without transferring their stage.</h2></div><MetaPill label={`${relatedProjects.length} linked`} /></div><div class="grid">{relatedProjects.map((project) => <article class="record-card"><div class="meta-row"><MetaPill label={project!.coverage.label} tone={project!.coverage.tier_id === "Tier A" ? "review" : "default"} /></div><h3><a href={project!.routes.atlas}>{project!.title}</a></h3><p>{project!.conversion.current_stage}</p></article>)}</div></section>
+  )}
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Place chronology</div><h2>{place.chronology.chronology_type}</h2><p>{place.chronology.boundary}</p></div><MetaPill label={`${selectedSignals.length} records`} /></div>
+    <ol class="timeline-list">{selectedSignals.map((signal) => <li><div class="meta-row"><MetaPill label={signal!.data.captured_date.toISOString().slice(0, 10)} /><MetaPill label={signal!.data.primary_topic} /></div><h3><a href={`/signals/${signal!.data.slug}/`}>{signal!.data.title}</a></h3><p>{signal!.data.summary}</p></li>)}</ol>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Evidence rails</div><h2>Sources linked by stable ID.</h2></div><MetaPill label={`${selectedSources.length} sources`} tone="possibility" /></div>
+    <div class="source-list">{selectedSources.map((source) => <article class="source-row"><h3><a href={`/atlas/sources/${source!.data.id}/`}>{source!.data.name}</a></h3><p>{source!.data.source_type} · checked {source!.data.last_checked_date.toISOString().slice(0, 10)}</p></article>)}</div>
+  </section>
+
+  <section class="page-section review-columns">
+    <article><div class="eyebrow">Relationship ledger</div><h2>Upstream records</h2><p>Local systems: {place.relationships.local_system_ids.length}<br />Phase 112 portraits: {place.relationships.phase_112_portrait_ids.length}<br />Phase 62 events: {place.relationships.phase_62_event_ids.length}<br />Phase 63 gates: {place.relationships.phase_63_gate_ids.length}<br />Phase 60 cycle links: {place.relationships.phase_60_cycle_ids.length}</p></article>
+    <article><div class="eyebrow">Stewardship</div><h2>{owner.role}</h2><p>{place.update_status}</p><p><a class="inline-link" href={place.routes.prior_profile}>Open the prior place profile</a></p></article>
+  </section>
+
+  <section class="page-section prose-page"><h2>Interpretation boundary</h2><p>{place.interpretation_boundary}</p><p class="card-note">Stop rule: {place.conversion.stop_rule}</p><p><a class="inline-link" href="/atlas/places/">Return to the Place Atlas</a></p></section>
+</BaseLayout>

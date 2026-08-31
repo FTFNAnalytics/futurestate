@@ -4,6 +4,12 @@ Civilization is a choice.
 
 FTFN is a future-state intelligence platform planned for `ftfn.io`: a news source, data source, roadmap, and narrative publication about the systems shaping what civilization could become.
 
+## Current content milestone — v0.6
+
+Phases 125–129 are the current completed content architecture. They turn the v0.5 Evidence Fieldbook into Open Evidence Review: 82 source-linked annotations, 68 mission audits, 24 project and 15 place conversion biographies, 17 topic state-of-evidence reviews, and 12 cross-system compatibility syntheses. The edition adds six public hubs, substantively upgrades 218 existing canonical routes, and publishes six JSON exports. See the [v0.6 roadmap](roadmap-v0.6.md) for the executed scope and the [v0.6 build summary](build-summary-v0.6.md) for the verified release inventory.
+
+The operating rule remains unchanged: a Published signal can support context without answering a mission, a biography cannot advance a project stage, and a compatibility synthesis cannot create a common denominator, score, rank or causal conclusion. The next scheduled Phase 60 gate after this milestone is the Louisiana Starlink adoption check on 2026-09-01; v0.6 does not predate it.
+
 ## 1. North Star
 
 Build a public-facing platform that helps readers understand:

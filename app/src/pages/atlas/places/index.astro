@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import atlas from "../../../data/phase-119-deep-project-place-atlas.json";
+
+const places = atlas.places;
+const governed = places.filter((record) => record.coverage.tier_id === "Tier A");
+const curated = places.filter((record) => record.coverage.tier_id === "Tier B");
+---
+
+<BaseLayout title="Place Atlas | FTFN" description="Fifteen receiving systems with explicit evidence rails, linked projects, unresolved gates, and honest coverage tiers.">
+  <section class="page-section">
+    <div class="eyebrow">Atlas / Places</div>
+    <h1 class="page-title">Where evidence meets a receiving system.</h1>
+    <p class="lede">
+      The Place Atlas connects every local portrait to stable identity, explicit evidence rails,
+      linked projects, unresolved needs, and stewardship. A place can contain projects at
+      different stages, so no project stage is transferred to the wider system.
+    </p>
+    <div class="meta-row">
+      <MetaPill label={`${places.length} place systems`} tone="published" />
+      <MetaPill label={`${governed.length} canonical local profiles`} tone="review" />
+      <MetaPill label={`${curated.length} curated portraits`} />
+    </div>
+  </section>
+
+  <section class="page-section review-columns">
+    {atlas.coverage_tiers.map((tier) => (
+      <article><div class="eyebrow">{tier.tier_id}</div><h2>{tier.tier_id === "Tier A" ? "Governed local profiles" : "Curated place portraits"}</h2><p>{tier.place_definition}</p></article>
+    ))}
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Tier A</div><h2>Canonical local-system profiles.</h2></div></div>
+    <div class="grid">{governed.map((place) => <article class="record-card"><div class="meta-row"><MetaPill label={place.canonical_id} /><MetaPill label={place.coverage.label} tone="review" /></div><h3><a href={place.routes.atlas}>{place.title}</a></h3><p>{place.geography}</p><p class="card-note">{place.relationships.related_project_ids.length} linked project file{place.relationships.related_project_ids.length === 1 ? "" : "s"}</p></article>)}</div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Tier B</div><h2>Curated portraits awaiting governed promotion.</h2></div></div>
+    <div class="grid">{curated.map((place) => <article class="record-card"><div class="meta-row"><MetaPill label={place.canonical_id} /><MetaPill label={place.coverage.label} /></div><h3><a href={place.routes.atlas}>{place.title}</a></h3><p>{place.geography}</p><p class="card-note">{place.update_status}</p></article>)}</div>
+  </section>
+
+  <section class="page-section prose-page"><h2>Publication boundary</h2><p>{atlas.interpretation_boundary}</p><p><a class="inline-link" href={atlas.routes.public_export}>Download the canonical Atlas registry</a></p></section>
+</BaseLayout>

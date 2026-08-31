@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(scriptDir, "..");
 const contentRoot = path.join(appRoot, "src", "content");
+const dataRoot = path.join(appRoot, "src", "data");
 
 const errors = [];
 const notices = [];
@@ -34,6 +35,36 @@ function readMdxCollection(collectionName) {
       const data = parseFrontmatter(text, filePath);
       return { collectionName, filePath, data };
     });
+}
+
+function readRegistryIdIndex(fileName, arrayField, idField, label) {
+  const filePath = path.join(dataRoot, fileName);
+  const registry = JSON.parse(readFileSync(filePath, "utf8"));
+  const records = registry[arrayField];
+  const index = new Map();
+
+  if (!Array.isArray(records)) {
+    errors.push(`${toPosixPath(filePath)} is missing registry array ${arrayField}.`);
+    return index;
+  }
+
+  for (const record of records) {
+    const value = record[idField];
+
+    if (!value) {
+      errors.push(`${toPosixPath(filePath)} contains a ${label} without ${idField}.`);
+      continue;
+    }
+
+    if (index.has(value)) {
+      errors.push(`${toPosixPath(filePath)} contains duplicate ${label} ID "${value}".`);
+      continue;
+    }
+
+    index.set(value, { collectionName: label, filePath, data: record });
+  }
+
+  return index;
 }
 
 function parseFrontmatter(text, filePath) {
@@ -259,6 +290,8 @@ const dependencyMapIds = indexBy(dependencyMaps, "id");
 const researchCollectionIds = indexBy(researchCollections, "id");
 const researchDocumentIds = indexBy(researchDocuments, "id");
 const readerPathwayIds = indexBy(readerPathways, "id");
+const missionIds = readRegistryIdIndex("phase-121-priority-research-missions.json", "missions", "mission_id", "mission");
+const dossierIds = readRegistryIdIndex("phase-123-comparative-delivery-dossiers.json", "dossiers", "dossier_id", "dossier");
 indexBy(updates, "id");
 
 const allPublicRecordIds = new Map([
@@ -273,7 +306,9 @@ const allPublicRecordIds = new Map([
   ...dependencyMapIds,
   ...researchCollectionIds,
   ...researchDocumentIds,
-  ...readerPathwayIds
+  ...readerPathwayIds,
+  ...missionIds,
+  ...dossierIds
 ]);
 
 const localSystemNames = new Set(localSystems.map((record) => record.data.name).filter(Boolean));
@@ -436,6 +471,8 @@ console.log(
     `${researchCollections.length} research collections`,
     `${researchDocuments.length} research documents`,
     `${readerPathways.length} reader pathways`,
+    `${missionIds.size} missions`,
+    `${dossierIds.size} dossiers`,
     `${updates.length} updates`
   ].join(", ")
 );

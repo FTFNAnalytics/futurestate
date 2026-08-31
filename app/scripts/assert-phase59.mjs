@@ -23,7 +23,7 @@ check(manifest.reader_integration.new_sources === 0 && manifest.reader_integrati
 check(manifest.reader_integration.underlying_signal_promotions === 0 && manifest.reader_integration.evidence_gaps_resolved === 0, "Phase 59 must not promote underlying signals or resolve gaps by synthesis.");
 check(manifest.reader_integration.composite_scores_created === 0, "Phase 59 must create no composite score.");
 check(signalFiles.filter((name) => name.endsWith(".mdx")).length === 1406, "Phase 59 must preserve the 1,406-signal corpus.");
-check(sourceFiles.filter((name) => name.endsWith(".json")).length === 715, "Phase 59 must preserve the 715-source corpus.");
+check(sourceFiles.filter((name) => name.endsWith(".json")).length >= 715, "Phase 59 must preserve its 715-source baseline while allowing later governed source expansion.");
 
 const briefingIds = [
   ...manifest.local_conversion_dossiers.map((item) => item.briefing_id),
