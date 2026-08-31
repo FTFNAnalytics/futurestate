@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "program_id": "FTFN-V0.7-EVIDENCE-ADMISSION-DOCKETS",
+  "dataset": "v07_evidence_admission_dockets",
+  "version": "0.7",
+  "title": "FTFN v0.7 — Evidence Admission Dockets",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "status": "Complete locally",
+  "summary": "A complete, inspectable owner-review system for twelve acquisition gaps, six priority missions, eighteen requirement dockets, dated source checks, adjudication packets, and mission decisions—without fabricating a human evidence decision.",
+  "record_scope": "Five-phase v0.7 content program with exact public route and export inventories.",
+  "phases": [
+    {
+      "phase": 130,
+      "title": "Authority-gap closure maps",
+      "status": "Complete locally",
+      "hub_route": "/review/v07/authority-gaps/",
+      "public_export": "/data/phase-130-authority-gap-closure-maps.json"
+    },
+    {
+      "phase": 131,
+      "title": "Priority evidence admission dockets",
+      "status": "Complete locally",
+      "hub_route": "/review/v07/admission-dockets/",
+      "public_export": "/data/phase-131-priority-evidence-admission-dockets.json"
+    },
+    {
+      "phase": 132,
+      "title": "Dated source-check receipts",
+      "status": "Complete locally",
+      "hub_route": "/review/v07/source-checks/",
+      "public_export": "/data/phase-132-dated-source-check-receipts.json"
+    },
+    {
+      "phase": 133,
+      "title": "Requirement adjudication board",
+      "status": "Complete locally",
+      "hub_route": "/review/v07/requirements/",
+      "public_export": "/data/phase-133-requirement-adjudication-board.json"
+    },
+    {
+      "phase": 134,
+      "title": "Mission decision register",
+      "status": "Complete locally",
+      "hub_route": "/review/v07/missions/",
+      "public_export": "/data/phase-134-mission-decision-register.json"
+    }
+  ],
+  "counts": {
+    "phases": 5,
+    "public_html_routes": 12,
+    "phase_hubs": 5,
+    "detail_routes": 6,
+    "public_json_exports": 6
+  },
+  "publication_boundaries": [
+    "AI-assisted source triage can map exact artifacts and expose their limits, but it cannot stand in for the repository's required human admissibility decision.",
+    "A source-check receipt proves only that the named official artifact was inspected on the stated date; it does not admit the artifact, satisfy a requirement, or answer a mission.",
+    "No project stage, place state, comparison verdict, observation, outcome, score, rank, causal finding, recommendation, or future Phase 60 decision is created.",
+    "A repository-bounded gap says what this reviewed corpus has not established; it never asserts that qualifying evidence does not exist elsewhere."
+  ],
+  "public_html_routes": [
+    "/review/v07/",
+    "/review/v07/authority-gaps/",
+    "/review/v07/admission-dockets/",
+    "/review/v07/source-checks/",
+    "/review/v07/requirements/",
+    "/review/v07/missions/",
+    "/review/v07/missions/advanced-manufacturing-outcome/",
+    "/review/v07/missions/aviation-baseline/",
+    "/review/v07/missions/aviation-outcome/",
+    "/review/v07/missions/critical-minerals-baseline/",
+    "/review/v07/missions/mobility-baseline/",
+    "/review/v07/missions/quantum-outcome/"
+  ],
+  "public_json_exports": [
+    "/data/phase-130-authority-gap-closure-maps.json",
+    "/data/phase-131-priority-evidence-admission-dockets.json",
+    "/data/phase-132-dated-source-check-receipts.json",
+    "/data/phase-133-requirement-adjudication-board.json",
+    "/data/phase-134-mission-decision-register.json",
+    "/data/v07-evidence-admission-dockets.json"
+  ],
+  "evidence_state": {
+    "source_checks_complete": 18,
+    "owner_requirement_decisions_pending": 18,
+    "owner_mission_decisions_pending": 6,
+    "artifacts_admitted": 0,
+    "canonical_answer_states_changed": 0
+  }
+}

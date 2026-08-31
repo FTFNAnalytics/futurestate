@@ -4,6 +4,9 @@ import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 import atlas from "../../../data/phase-119-deep-project-place-atlas.json";
 import biographies from "../../../data/phase-127-project-place-conversion-biographies.json";
+import readiness from "../../../data/phase-135-atlas-conversion-readiness-audit.json";
+import ledgers from "../../../data/phase-137-place-delivery-ledgers.json";
+import eligibility from "../../../data/phase-138-longitudinal-evidence-eligibility.json";
 
 export function getStaticPaths() {
   return atlas.places.map((record) => ({ params: { slug: record.slug }, props: { placeId: record.atlas_place_id } }));
@@ -19,6 +22,9 @@ const selectedSignals = place.evidence_rails.signal_ids.map((id) => signalById.g
 const sources = await getCollection("sources");
 const sourceById = new Map(sources.map((record) => [record.data.id, record]));
 const selectedSources = place.evidence_rails.source_ids.map((id) => sourceById.get(id)).filter(Boolean);
+const ledger = ledgers.place_ledgers.find((record) => record.atlas_place_id === place.atlas_place_id)!;
+const readinessRecord = readiness.readiness_records.find((record) => record.entity_id === place.atlas_place_id)!;
+const eligibilityRecord = eligibility.eligibility_records.find((record) => record.entity_id === place.atlas_place_id)!;
 ---
 
 <BaseLayout title={`${place.title} | FTFN Place Atlas`} description={place.editorial_question}>
@@ -32,6 +38,13 @@ const selectedSources = place.evidence_rails.source_ids.map((id) => sourceById.g
   <section class="page-section briefing-band">
     <div class="briefing-band__copy"><div class="eyebrow">Conversion boundary</div><h2>{place.conversion.current_stage}</h2><p>{place.conversion.stage_basis}</p></div>
     <article class="record-card record-card--featured"><div class="eyebrow">Coverage basis</div><h3>{place.coverage.tier_id}: {place.coverage.label}</h3><p>{place.coverage.basis}</p><MetaPill label={place.update_status} tone="review" /></article>
+  </section>
+
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">v0.8 place delivery ledger · {ledger.ledger_id}</div><h2>Receiving-system evidence stays separate from project stage.</h2><p>{ledger.interpretation_boundary}</p></div><MetaPill label={ledger.coverage_tier} tone="review" /></div><div class="button-row"><a class="inline-link" href={ledger.route}>Open the v0.8 place ledger</a><a class="inline-link" href="/review/v08/places/">Browse all place ledgers</a></div></section>
+
+  <section class="page-section review-columns">
+    <article><div class="eyebrow">Phase 135 · {readinessRecord.readiness_id}</div><h2>{readinessRecord.content_readiness}</h2><p>{readinessRecord.readiness_basis}</p><p class="card-note">{readinessRecord.blocking_boundary}</p><a class="inline-link" href="/review/v08/readiness/">Inspect Atlas readiness audits</a></article>
+    <article><div class="eyebrow">Phase 138 · {eligibilityRecord.eligibility_id}</div><h2>{eligibilityRecord.candidate_state}</h2><p>{eligibilityRecord.next_record}</p><p class="card-note">Series admitted: no · observation values: 0</p><a class="inline-link" href="/review/v08/longitudinal/">Inspect longitudinal eligibility</a></article>
   </section>
 
   <section class="page-section review-columns">

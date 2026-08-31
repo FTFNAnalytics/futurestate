@@ -1,0 +1,698 @@
+{
+  "schema_version": "1.0",
+  "phase": 132,
+  "program_id": "FTFN-PHASE-132",
+  "dataset": "phase_132_dated_source_check_receipts",
+  "title": "Dated source-check receipts",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Publish inspectable receipts for the official artifacts reviewed during triage and retain the owner-decision boundary.",
+  "record_scope": "Dated source-check receipts records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "AI-assisted source triage can map exact artifacts and expose their limits, but it cannot stand in for the repository's required human admissibility decision.",
+    "A source-check receipt proves only that the named official artifact was inspected on the stated date; it does not admit the artifact, satisfy a requirement, or answer a mission.",
+    "No project stage, place state, comparison verdict, observation, outcome, score, rank, causal finding, recommendation, or future Phase 60 decision is created.",
+    "A repository-bounded gap says what this reviewed corpus has not established; it never asserts that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v07/source-checks/",
+    "public_export": "/data/phase-132-dated-source-check-receipts.json"
+  },
+  "receipt_contract": "Dated source-check receipts are distinct from evidence-admission receipts.",
+  "counts": {
+    "source_check_receipts": 18,
+    "receipts_with_artifacts": 16,
+    "bounded_no_artifact_receipts": 2,
+    "evidence_admission_receipts": 0
+  },
+  "source_check_receipts": [
+    {
+      "receipt_id": "132-SOURCE-CHECK-001",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-004",
+      "requirement_docket_id": "131-REQ-01-01",
+      "requirement": "Stable product and facility denominator",
+      "source_ids": [
+        "source-56k-f15ex-ex16-portland-receipt-2026"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-56k-f15ex-ex16-portland-receipt-2026",
+          "name": "142nd Wing: EX16 Comes to Portland",
+          "url": "https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/",
+          "authority": "142nd Wing, Oregon Air National Guard",
+          "known_limitations": "A receiving-unit arrival date is realized delivery evidence but is not, by itself, the formal contractual acceptance date or a complete production-performance series. Phase 56K keeps identity, attribution, timing, evidence state, and continuation rule attached."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-56k-f15ex-ex16-portland-receipt-2026",
+          "official_url": "https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Candidate identity context",
+      "evidence_note": "The official receipt fixes one F-15EX tail, receiving wing, and arrival date. It does not establish a stable product-and-facility denominator for an outcome series.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-002",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-004",
+      "requirement_docket_id": "131-REQ-01-02",
+      "requirement": "Multi-period operating series",
+      "source_ids": [],
+      "artifacts": [],
+      "source_check_provenance": [],
+      "check_result": "No exact artifact mapped in current shelf",
+      "triage_state": "Acquisition gap",
+      "evidence_note": "No exact multi-period operating series is mapped in the reviewed mission shelf.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-003",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-004",
+      "requirement_docket_id": "131-REQ-01-03",
+      "requirement": "Revision, downtime and attribution notes",
+      "source_ids": [
+        "source-56l-monaghan-medical-ccida-fye2025"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-56l-monaghan-medical-ccida-fye2025",
+          "name": "Clinton County IDA Certified Annual Report FYE 2025: Monaghan Medical",
+          "url": "https://www.clintoncountyida.com/media/userfiles/subsite_328/files/list-maker/ccida-annual-audit-reports/annual-audit-reports/ccida-2025-annual-audit-report.pdf",
+          "authority": "Clinton County Industrial Development Agency",
+          "known_limitations": "The certified report covers the 2018-approved IDA project completed in 2021, not the separate 2025 ESD commitment. Current FTEs do not establish job causation, and total project amount is not an audited cash-spend measure. Phase 56L keeps identity, period, source role, evidence state, and continuation rule attached."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-56l-monaghan-medical-ccida-fye2025",
+          "official_url": "https://www.clintoncountyida.com/media/userfiles/subsite_328/files/list-maker/ccida-annual-audit-reports/annual-audit-reports/ccida-2025-annual-audit-report.pdf",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Candidate reporting context",
+      "evidence_note": "The certified annual report supplies a reporting period and attribution limits for a different named facility; it does not supply product downtime, revision, or operating-series evidence for the broader mission.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-004",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-013",
+      "requirement_docket_id": "131-REQ-02-01",
+      "requirement": "Tail, fleet, airport or route identity",
+      "source_ids": [
+        "source-56k-f15ex-ex16-portland-receipt-2026"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-56k-f15ex-ex16-portland-receipt-2026",
+          "name": "142nd Wing: EX16 Comes to Portland",
+          "url": "https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/",
+          "authority": "142nd Wing, Oregon Air National Guard",
+          "known_limitations": "A receiving-unit arrival date is realized delivery evidence but is not, by itself, the formal contractual acceptance date or a complete production-performance series. Phase 56K keeps identity, attribution, timing, evidence state, and continuation rule attached."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-56k-f15ex-ex16-portland-receipt-2026",
+          "official_url": "https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Candidate exact identity artifact",
+      "evidence_note": "The official record names F-15EX tail 16, the 142nd Wing, Portland, and a receiving date; owner review must still decide whether that bounded identity satisfies the mission requirement.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-005",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-013",
+      "requirement_docket_id": "131-REQ-02-02",
+      "requirement": "Capacity and readiness definitions",
+      "source_ids": [
+        "source-faa-powered-lift-final-rule-2024"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-faa-powered-lift-final-rule-2024",
+          "name": "FAA Powered-Lift Pilot Certification and Operations Final Rule",
+          "url": "https://www.faa.gov/newsroom/integration-powered-lift-pilot-certification-and-operations-miscellaneous-amendments",
+          "authority": "Federal Aviation Administration",
+          "known_limitations": "The rule creates pilot, instructor, and operating pathways. It does not grant an aircraft type certificate, operator certificate, route authority, vertiport approval, local acceptance, or commercial service."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-faa-powered-lift-final-rule-2024",
+          "official_url": "https://www.faa.gov/newsroom/integration-powered-lift-pilot-certification-and-operations-miscellaneous-amendments",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Adjacent authority artifact",
+      "evidence_note": "The final rule defines powered-lift pilot certification and operating pathways, not a named fleet's capacity or readiness baseline.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-006",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-013",
+      "requirement_docket_id": "131-REQ-02-03",
+      "requirement": "Current operating period",
+      "source_ids": [
+        "source-faa-powered-lift-final-rule-2024"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-faa-powered-lift-final-rule-2024",
+          "name": "FAA Powered-Lift Pilot Certification and Operations Final Rule",
+          "url": "https://www.faa.gov/newsroom/integration-powered-lift-pilot-certification-and-operations-miscellaneous-amendments",
+          "authority": "Federal Aviation Administration",
+          "known_limitations": "The rule creates pilot, instructor, and operating pathways. It does not grant an aircraft type certificate, operator certificate, route authority, vertiport approval, local acceptance, or commercial service."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-faa-powered-lift-final-rule-2024",
+          "official_url": "https://www.faa.gov/newsroom/integration-powered-lift-pilot-certification-and-operations-miscellaneous-amendments",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Adjacent period artifact",
+      "evidence_note": "The rule has a dated ten-year regulatory framework, but a regulatory period is not a current operating period for a named fleet, airport, or route.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-007",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-016",
+      "requirement_docket_id": "131-REQ-03-01",
+      "requirement": "Exposure-compatible safety measures",
+      "source_ids": [
+        "source-56a-dot-atcr-2022",
+        "source-56a-dot-atcr-2023",
+        "source-56a-dot-atcr-2024"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-56a-dot-atcr-2022",
+          "name": "Air Travel Consumer Report: 2022 report shelf",
+          "url": "https://www.transportation.gov/individuals/aviation-consumer-protection/air-travel-consumer-reports-2022",
+          "authority": "U.S. Department of Transportation",
+          "known_limitations": "Monthly releases and later revisions must be aligned before annual comparison. Comparison contract: Monthly and annual reporting-carrier service-quality data compiled by DOT and BTS. Denominator: Scheduled domestic flights and other reporting-carrier service records covered by the stated release. Attribution: Carrier-reported official statistics."
+        },
+        {
+          "source_id": "source-56a-dot-atcr-2023",
+          "name": "Air Travel Consumer Report: 2023 report shelf",
+          "url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2023",
+          "authority": "U.S. Department of Transportation",
+          "known_limitations": "Carrier coverage and publication lag travel with the annual measures. Comparison contract: Monthly and annual reporting-carrier service-quality data compiled by DOT and BTS. Denominator: Scheduled domestic flights and other reporting-carrier service records covered by the stated release. Attribution: Carrier-reported official statistics."
+        },
+        {
+          "source_id": "source-56a-dot-atcr-2024",
+          "name": "Air Travel Consumer Report: 2024 report shelf",
+          "url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2024",
+          "authority": "U.S. Department of Transportation",
+          "known_limitations": "Cancellation rate is one service measure, not a complete carrier outcome. Comparison contract: Monthly and annual reporting-carrier service-quality data compiled by DOT and BTS. Denominator: Scheduled domestic flights and other reporting-carrier service records covered by the stated release. Attribution: Carrier-reported official statistics."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-56a-dot-atcr-2022",
+          "official_url": "https://www.transportation.gov/individuals/aviation-consumer-protection/air-travel-consumer-reports-2022",
+          "source_last_checked_date": "2026-08-30"
+        },
+        {
+          "source_id": "source-56a-dot-atcr-2023",
+          "official_url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2023",
+          "source_last_checked_date": "2026-08-30"
+        },
+        {
+          "source_id": "source-56a-dot-atcr-2024",
+          "official_url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2024",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Candidate service-quality series",
+      "evidence_note": "The DOT reports expose carrier service-quality measures and reporting bases. They do not, without a mission-specific denominator review, establish exposure-compatible aviation safety outcomes.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-008",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-016",
+      "requirement_docket_id": "131-REQ-03-02",
+      "requirement": "Route or fleet operating periods",
+      "source_ids": [
+        "source-56a-dot-atcr-2022",
+        "source-56a-dot-atcr-2023",
+        "source-56a-dot-atcr-2024"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-56a-dot-atcr-2022",
+          "name": "Air Travel Consumer Report: 2022 report shelf",
+          "url": "https://www.transportation.gov/individuals/aviation-consumer-protection/air-travel-consumer-reports-2022",
+          "authority": "U.S. Department of Transportation",
+          "known_limitations": "Monthly releases and later revisions must be aligned before annual comparison. Comparison contract: Monthly and annual reporting-carrier service-quality data compiled by DOT and BTS. Denominator: Scheduled domestic flights and other reporting-carrier service records covered by the stated release. Attribution: Carrier-reported official statistics."
+        },
+        {
+          "source_id": "source-56a-dot-atcr-2023",
+          "name": "Air Travel Consumer Report: 2023 report shelf",
+          "url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2023",
+          "authority": "U.S. Department of Transportation",
+          "known_limitations": "Carrier coverage and publication lag travel with the annual measures. Comparison contract: Monthly and annual reporting-carrier service-quality data compiled by DOT and BTS. Denominator: Scheduled domestic flights and other reporting-carrier service records covered by the stated release. Attribution: Carrier-reported official statistics."
+        },
+        {
+          "source_id": "source-56a-dot-atcr-2024",
+          "name": "Air Travel Consumer Report: 2024 report shelf",
+          "url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2024",
+          "authority": "U.S. Department of Transportation",
+          "known_limitations": "Cancellation rate is one service measure, not a complete carrier outcome. Comparison contract: Monthly and annual reporting-carrier service-quality data compiled by DOT and BTS. Denominator: Scheduled domestic flights and other reporting-carrier service records covered by the stated release. Attribution: Carrier-reported official statistics."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-56a-dot-atcr-2022",
+          "official_url": "https://www.transportation.gov/individuals/aviation-consumer-protection/air-travel-consumer-reports-2022",
+          "source_last_checked_date": "2026-08-30"
+        },
+        {
+          "source_id": "source-56a-dot-atcr-2023",
+          "official_url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2023",
+          "source_last_checked_date": "2026-08-30"
+        },
+        {
+          "source_id": "source-56a-dot-atcr-2024",
+          "official_url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2024",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Candidate multi-period context",
+      "evidence_note": "The annual shelves contain monthly reporting periods, but route or fleet identity compatibility has not been established.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-009",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-016",
+      "requirement_docket_id": "131-REQ-03-03",
+      "requirement": "Environmental and access denominators",
+      "source_ids": [],
+      "artifacts": [],
+      "source_check_provenance": [],
+      "check_result": "No exact artifact mapped in current shelf",
+      "triage_state": "Acquisition gap",
+      "evidence_note": "No exact environmental-and-access denominator artifact is mapped in the reviewed mission shelf.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-010",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-025",
+      "requirement_docket_id": "131-REQ-04-01",
+      "requirement": "Asset and material identity",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-blm-rhyolite-ridge-rod-2024"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-doe-thacker-pass-loan-2024",
+          "name": "DOE Loan Programs Office Thacker Pass Financial Close",
+          "url": "https://www.energy.gov/edf/thacker-pass",
+          "authority": "U.S. Department of Energy Loan Programs Office",
+          "known_limitations": "The page records federal loan closing and projected first-phase capacity. Financial close and projected capacity do not prove completed construction, qualified output, customer acceptance, repayment performance, or sustained operation."
+        },
+        {
+          "source_id": "source-blm-rhyolite-ridge-rod-2024",
+          "name": "BLM Rhyolite Ridge Lithium-Boron Project Record Of Decision",
+          "url": "https://www.blm.gov/press-release/major-lithium-mine-approved-nevada-latest-effort-support-domestic-supply-critical",
+          "authority": "Bureau of Land Management",
+          "known_limitations": "The federal decision authorizes the selected project alternative subject to conditions and mitigation. It does not prove financing, construction, state and local approvals, production, customer qualification, or scale."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-doe-thacker-pass-loan-2024",
+          "official_url": "https://www.energy.gov/edf/thacker-pass",
+          "source_last_checked_date": "2026-08-30"
+        },
+        {
+          "source_id": "source-blm-rhyolite-ridge-rod-2024",
+          "official_url": "https://www.blm.gov/press-release/major-lithium-mine-approved-nevada-latest-effort-support-domestic-supply-critical",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Candidate exact identity artifacts",
+      "evidence_note": "The official artifacts distinguish Thacker Pass from Rhyolite Ridge and name lithium or lithium-boron project scope. They cannot be silently merged into one asset baseline.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-011",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-025",
+      "requirement_docket_id": "131-REQ-04-02",
+      "requirement": "Resource, reserve and capacity definitions",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-doe-thacker-pass-loan-2024",
+          "name": "DOE Loan Programs Office Thacker Pass Financial Close",
+          "url": "https://www.energy.gov/edf/thacker-pass",
+          "authority": "U.S. Department of Energy Loan Programs Office",
+          "known_limitations": "The page records federal loan closing and projected first-phase capacity. Financial close and projected capacity do not prove completed construction, qualified output, customer acceptance, repayment performance, or sustained operation."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-doe-thacker-pass-loan-2024",
+          "official_url": "https://www.energy.gov/edf/thacker-pass",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Candidate forecast-definition artifact",
+      "evidence_note": "DOE states an expected fully operational capacity. That is a source-defined forecast, not a current operating-capacity observation.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-012",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-025",
+      "requirement_docket_id": "131-REQ-04-03",
+      "requirement": "Current environmental and operating state",
+      "source_ids": [
+        "source-blm-rhyolite-ridge-rod-2024"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-blm-rhyolite-ridge-rod-2024",
+          "name": "BLM Rhyolite Ridge Lithium-Boron Project Record Of Decision",
+          "url": "https://www.blm.gov/press-release/major-lithium-mine-approved-nevada-latest-effort-support-domestic-supply-critical",
+          "authority": "Bureau of Land Management",
+          "known_limitations": "The federal decision authorizes the selected project alternative subject to conditions and mitigation. It does not prove financing, construction, state and local approvals, production, customer qualification, or scale."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-blm-rhyolite-ridge-rod-2024",
+          "official_url": "https://www.blm.gov/press-release/major-lithium-mine-approved-nevada-latest-effort-support-domestic-supply-critical",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Candidate authority-state artifact",
+      "evidence_note": "The BLM record documents federal approval and conditions. Authorization does not establish construction, commissioning, compliance performance, or operation.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-013",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-049",
+      "requirement_docket_id": "131-REQ-05-01",
+      "requirement": "Operator, route, fleet or service identity",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-cpuc-av-advice-letter-status-2026"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-cpuc-waymo-al2-disposition-2024",
+          "name": "CPUC Waymo Advice Letter 2 Disposition",
+          "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/consumer-protection-and-enforcement-division/documents/tlab/av-programs/waymo-al-2-disposition-letter-20240301_signed.pdf",
+          "authority": "California Public Utilities Commission",
+          "known_limitations": "Passenger-service authorization does not establish fleet size, trip volume, availability, safety superiority, cost, accessibility, or service quality."
+        },
+        {
+          "source_id": "source-cpuc-av-advice-letter-status-2026",
+          "name": "CPUC Driverless AV Deployment Advice Letter Status",
+          "url": "https://www.cpuc.ca.gov/regulatory-services/licensing/transportation-licensing-and-analysis-branch/autonomous-vehicle-programs/phase-i-driverless-autonomous-vehicle-deployment-program-advice-letter-status",
+          "authority": "California Public Utilities Commission",
+          "known_limitations": "The status ledger tracks regulatory filings and dispositions, not actual trips, fleet operations, safety, cost, accessibility, or local effects."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-cpuc-waymo-al2-disposition-2024",
+          "official_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/consumer-protection-and-enforcement-division/documents/tlab/av-programs/waymo-al-2-disposition-letter-20240301_signed.pdf",
+          "source_last_checked_date": "2026-08-30"
+        },
+        {
+          "source_id": "source-cpuc-av-advice-letter-status-2026",
+          "official_url": "https://www.cpuc.ca.gov/regulatory-services/licensing/transportation-licensing-and-analysis-branch/autonomous-vehicle-programs/phase-i-driverless-autonomous-vehicle-deployment-program-advice-letter-status",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Candidate exact service-identity artifacts",
+      "evidence_note": "The CPUC records identify Waymo, approved advice letters, deployment territory or ODD, and effective dates. This is authorization identity, not proof of trip volume or quality.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-014",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-049",
+      "requirement_docket_id": "131-REQ-05-02",
+      "requirement": "Exposure and service denominator",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-cpuc-waymo-al2-disposition-2024",
+          "name": "CPUC Waymo Advice Letter 2 Disposition",
+          "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/consumer-protection-and-enforcement-division/documents/tlab/av-programs/waymo-al-2-disposition-letter-20240301_signed.pdf",
+          "authority": "California Public Utilities Commission",
+          "known_limitations": "Passenger-service authorization does not establish fleet size, trip volume, availability, safety superiority, cost, accessibility, or service quality."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-cpuc-waymo-al2-disposition-2024",
+          "official_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/consumer-protection-and-enforcement-division/documents/tlab/av-programs/waymo-al-2-disposition-letter-20240301_signed.pdf",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Candidate ODD context",
+      "evidence_note": "An operational design domain bounds authorized service conditions but does not expose the trip, passenger, fleet-hour, or geographic-service denominator required by the mission.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-015",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-049",
+      "requirement_docket_id": "131-REQ-05-03",
+      "requirement": "Current reliability and access baseline",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-cpuc-av-advice-letter-status-2026"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-cpuc-waymo-al2-disposition-2024",
+          "name": "CPUC Waymo Advice Letter 2 Disposition",
+          "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/consumer-protection-and-enforcement-division/documents/tlab/av-programs/waymo-al-2-disposition-letter-20240301_signed.pdf",
+          "authority": "California Public Utilities Commission",
+          "known_limitations": "Passenger-service authorization does not establish fleet size, trip volume, availability, safety superiority, cost, accessibility, or service quality."
+        },
+        {
+          "source_id": "source-cpuc-av-advice-letter-status-2026",
+          "name": "CPUC Driverless AV Deployment Advice Letter Status",
+          "url": "https://www.cpuc.ca.gov/regulatory-services/licensing/transportation-licensing-and-analysis-branch/autonomous-vehicle-programs/phase-i-driverless-autonomous-vehicle-deployment-program-advice-letter-status",
+          "authority": "California Public Utilities Commission",
+          "known_limitations": "The status ledger tracks regulatory filings and dispositions, not actual trips, fleet operations, safety, cost, accessibility, or local effects."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-cpuc-waymo-al2-disposition-2024",
+          "official_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/consumer-protection-and-enforcement-division/documents/tlab/av-programs/waymo-al-2-disposition-letter-20240301_signed.pdf",
+          "source_last_checked_date": "2026-08-30"
+        },
+        {
+          "source_id": "source-cpuc-av-advice-letter-status-2026",
+          "official_url": "https://www.cpuc.ca.gov/regulatory-services/licensing/transportation-licensing-and-analysis-branch/autonomous-vehicle-programs/phase-i-driverless-autonomous-vehicle-deployment-program-advice-letter-status",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Adjacent authorization artifacts",
+      "evidence_note": "Approvals and filing status do not establish a current reliability, accessibility, affordability, safety, or service-quality baseline.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-016",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-060",
+      "requirement_docket_id": "131-REQ-06-01",
+      "requirement": "Stable task and system denominator",
+      "source_ids": [
+        "source-nist-pqc"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-nist-pqc",
+          "name": "NIST Post-Quantum Cryptography Project",
+          "url": "https://csrc.nist.gov/Projects/post-quantum-cryptography",
+          "authority": "NIST Post-Quantum Cryptography Project",
+          "known_limitations": "Standards progress does not automatically mean migration progress."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-nist-pqc",
+          "official_url": "https://csrc.nist.gov/Projects/post-quantum-cryptography",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Inadmissible-subject warning",
+      "evidence_note": "The NIST artifact concerns post-quantum cryptography standards, not a stable quantum-computing task-and-system outcome denominator.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-017",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-060",
+      "requirement_docket_id": "131-REQ-06-02",
+      "requirement": "Multi-period accepted-use evidence",
+      "source_ids": [
+        "source-nist-pqc",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-nist-pqc",
+          "name": "NIST Post-Quantum Cryptography Project",
+          "url": "https://csrc.nist.gov/Projects/post-quantum-cryptography",
+          "authority": "NIST Post-Quantum Cryptography Project",
+          "known_limitations": "Standards progress does not automatically mean migration progress."
+        },
+        {
+          "source_id": "source-omb-m-26-15-pqc-migration",
+          "name": "OMB M-26-15: Execution of the Migration to Post-Quantum Cryptography",
+          "url": "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
+          "authority": "Office of Management and Budget",
+          "known_limitations": "The memorandum directs non-national-security federal systems and defines plan content and deadlines; it does not expose completed agency inventories, submitted migration plans, funding, vendor delivery, procurement outcomes, or migration completion."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-nist-pqc",
+          "official_url": "https://csrc.nist.gov/Projects/post-quantum-cryptography",
+          "source_last_checked_date": "2026-08-30"
+        },
+        {
+          "source_id": "source-omb-m-26-15-pqc-migration",
+          "official_url": "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Inadmissible-subject warning",
+      "evidence_note": "Standards and federal migration plans are cybersecurity adoption evidence. They do not document multi-period accepted use of quantum computing.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    },
+    {
+      "receipt_id": "132-SOURCE-CHECK-018",
+      "source_checked_date": "2026-08-30",
+      "mission_id": "121-MISSION-060",
+      "requirement_docket_id": "131-REQ-06-03",
+      "requirement": "Explicit forecast-versus-observation boundary",
+      "source_ids": [
+        "source-nist-pqc",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "artifacts": [
+        {
+          "source_id": "source-nist-pqc",
+          "name": "NIST Post-Quantum Cryptography Project",
+          "url": "https://csrc.nist.gov/Projects/post-quantum-cryptography",
+          "authority": "NIST Post-Quantum Cryptography Project",
+          "known_limitations": "Standards progress does not automatically mean migration progress."
+        },
+        {
+          "source_id": "source-omb-m-26-15-pqc-migration",
+          "name": "OMB M-26-15: Execution of the Migration to Post-Quantum Cryptography",
+          "url": "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
+          "authority": "Office of Management and Budget",
+          "known_limitations": "The memorandum directs non-national-security federal systems and defines plan content and deadlines; it does not expose completed agency inventories, submitted migration plans, funding, vendor delivery, procurement outcomes, or migration completion."
+        }
+      ],
+      "source_check_provenance": [
+        {
+          "source_id": "source-nist-pqc",
+          "official_url": "https://csrc.nist.gov/Projects/post-quantum-cryptography",
+          "source_last_checked_date": "2026-08-30"
+        },
+        {
+          "source_id": "source-omb-m-26-15-pqc-migration",
+          "official_url": "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
+          "source_last_checked_date": "2026-08-30"
+        }
+      ],
+      "check_result": "Official artifact identity and access path inspected",
+      "triage_state": "Boundary context only",
+      "evidence_note": "The sources explicitly separate a future cryptographically relevant quantum-computer risk from current PQC migration. That boundary is useful context but not a quantum outcome observation.",
+      "admissibility_decision": "Not made — pending required human adjudication",
+      "admission_effect": "None",
+      "interpretation_boundary": "This receipt records the source check and triage boundary only. It is not an evidence-admission receipt."
+    }
+  ],
+  "public_html_routes": [
+    "/review/v07/source-checks/"
+  ],
+  "public_json_exports": [
+    "/data/phase-132-dated-source-check-receipts.json"
+  ]
+}

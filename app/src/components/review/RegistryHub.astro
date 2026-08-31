@@ -1,0 +1,83 @@
+---
+import ReviewHeader from "./ReviewHeader.astro";
+import MetaPill from "../ui/MetaPill.astro";
+
+interface Props {
+  registry: any;
+  phase: number;
+  release: string;
+  items: any[];
+}
+
+const { registry, phase, release, items } = Astro.props;
+const itemId = (item: any) => Object.entries(item).find(([key]) => key.endsWith("_id"))?.[1] ?? item.slug ?? "record";
+const itemTitle = (item: any) => item.title ?? item.requirement ?? item.label ?? item.question ?? itemId(item);
+const itemState = (item: any) => item.state ?? item.decision_state ?? item.map_state ?? item.triage_state ?? item.content_readiness ?? item.candidate_state ?? item.rereview_verdict ?? item.mission_decision_state ?? item.desk_state ?? item.build_status ?? "Published record";
+const itemSummary = (item: any) => item.summary ?? item.current_read ?? item.question ?? item.evidence_note ?? item.reason ?? item.readiness_basis ?? item.open_boundary ?? item.unresolved_bridge ?? item.exact_next_artifact ?? item.next_action ?? item.next_record ?? item.check_result ?? item.interpretation_boundary ?? "Inspect the complete record below for its evidence and publication boundary.";
+const itemRoute = (item: any) => item.route && !item.route.includes("#") ? item.route : null;
+const countEntries = Object.entries(registry.counts ?? {}).slice(0, 4);
+const readable = (key: string) => key.replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
+const summaryKeys = new Set(["slug", "title", "route", "summary", "current_read", "question", "evidence_note", "reason", "readiness_basis", "open_boundary", "unresolved_bridge", "exact_next_artifact", "next_action", "next_record", "check_result", "interpretation_boundary"]);
+const detailEntries = (item: any) => Object.entries(item).filter(([key]) => !summaryKeys.has(key));
+---
+
+<ReviewHeader eyebrow={`${release} public intelligence program`} title={registry.title} summary={registry.summary} phase={phase} />
+
+<section class="page-section">
+  <div class="metric-strip" aria-label={`Phase ${phase} counts`}>
+    {countEntries.map(([label, value]) => <div class="metric"><strong>{typeof value === "number" ? value.toLocaleString() : value}</strong><span>{label.replaceAll("_", " ")}</span></div>)}
+  </div>
+</section>
+
+<section class="page-section briefing-band">
+  <div class="briefing-band__copy">
+    <div class="eyebrow">Governing boundary</div>
+    <h2>Complete content, explicit stopping points.</h2>
+    <p>{registry.publication_boundaries?.[0]}</p>
+  </div>
+  <article class="record-card record-card--featured">
+    <MetaPill label={registry.build_status ?? "Complete locally"} tone="review" />
+    <h3>Machine-readable contract</h3>
+    <p>Every displayed record is available in the schema-1.0 phase export.</p>
+    <a class="inline-link" href={registry.routes.public_export}>Open Phase {phase} JSON</a>
+  </article>
+</section>
+
+<section class="page-section">
+  <div class="section-heading"><div><div class="eyebrow">Phase {phase} record set</div><h2>{items.length.toLocaleString()} inspectable records.</h2><p>IDs, upstream joins, evidence states, open boundaries, and next actions stay attached to each record.</p></div></div>
+  <div class="signal-grid">
+    {items.map((item) => (
+      <article class="record-card" id={item.slug ?? String(itemId(item)).toLowerCase()}>
+        <div class="meta-row"><MetaPill label={String(itemId(item))} /><MetaPill label={String(itemState(item))} tone="review" /></div>
+        <h3>{itemRoute(item) ? <a href={itemRoute(item)}>{itemTitle(item)}</a> : itemTitle(item)}</h3>
+        <p>{String(itemSummary(item)).slice(0, 720)}</p>
+        {itemRoute(item) && <a class="inline-link" href={itemRoute(item)}>Open complete record</a>}
+        {!itemRoute(item) && (
+          <details>
+            <summary>Inspect complete record</summary>
+            <dl>
+              {detailEntries(item).map(([key, value]: [string, any]) => (
+                <>
+                  <dt><strong>{readable(key)}</strong></dt>
+                  <dd>
+                    {Array.isArray(value) ? (
+                      value.length ? <div class="source-list">{value.map((entry: any) => entry && typeof entry === "object" ? <div class="source-row">{Object.entries(entry).map(([childKey, childValue]: [string, any]) => <p><strong>{readable(childKey)}:</strong> {Array.isArray(childValue) ? childValue.join(" · ") : childValue && typeof childValue === "object" ? JSON.stringify(childValue) : String(childValue ?? "Not established")}</p>)}</div> : <div class="source-row"><span>{String(entry)}</span></div>)}</div> : "None recorded"
+                    ) : value && typeof value === "object" ? (
+                      <div class="source-row">{Object.entries(value).map(([childKey, childValue]: [string, any]) => <p><strong>{readable(childKey)}:</strong> {Array.isArray(childValue) ? childValue.join(" · ") : childValue && typeof childValue === "object" ? JSON.stringify(childValue) : String(childValue ?? "Not established")}</p>)}</div>
+                    ) : String(value ?? "Not established")}
+                  </dd>
+                </>
+              ))}
+            </dl>
+          </details>
+        )}
+      </article>
+    ))}
+  </div>
+</section>
+
+<section class="page-section prose-page">
+  <h2>Publication boundaries</h2>
+  <ul>{registry.publication_boundaries?.map((boundary: string) => <li>{boundary}</li>)}</ul>
+  <p><a href={`/review/${release}/`}>Return to the {release} edition</a> · <a href="/data/">Browse public data</a></p>
+</section>

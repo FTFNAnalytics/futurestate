@@ -1,0 +1,390 @@
+{
+  "schema_version": "1.0",
+  "phase": 130,
+  "program_id": "FTFN-PHASE-130",
+  "dataset": "phase_130_authority_gap_closure_maps",
+  "title": "Authority-gap closure maps",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Map every uncovered mission to its present official-source shelf, missing authority role, and next acquisition action.",
+  "record_scope": "Authority-gap closure maps records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "AI-assisted source triage can map exact artifacts and expose their limits, but it cannot stand in for the repository's required human admissibility decision.",
+    "A source-check receipt proves only that the named official artifact was inspected on the stated date; it does not admit the artifact, satisfy a requirement, or answer a mission.",
+    "No project stage, place state, comparison verdict, observation, outcome, score, rank, causal finding, recommendation, or future Phase 60 decision is created.",
+    "A repository-bounded gap says what this reviewed corpus has not established; it never asserts that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v07/authority-gaps/",
+    "public_export": "/data/phase-130-authority-gap-closure-maps.json"
+  },
+  "decision_state": "Mapping complete — evidence acquisition remains open",
+  "counts": {
+    "gap_missions": 12,
+    "priority_paths": 6,
+    "acquisition_paths_open": 12,
+    "artifacts_admitted": 0,
+    "mission_answers_created": 0
+  },
+  "gap_maps": [
+    {
+      "gap_map_id": "130-GAP-001",
+      "mission_id": "121-MISSION-004",
+      "topic_id": "topic-advanced-manufacturing",
+      "slug": "advanced-manufacturing-outcome",
+      "title": "Advanced Manufacturing: outcome research mission",
+      "gap_type": "No Phase 120 packet joins both topic and target conversion stage",
+      "current_source_ids": [
+        "source-56j-kc46-readiness-plan-2026",
+        "source-56k-f15ex-ex16-portland-receipt-2026",
+        "source-56l-monaghan-medical-ccida-fye2025",
+        "source-aca-future48-battery-accelerator-2025"
+      ],
+      "current_signal_ids": [
+        "signal-drive48-graduates-operating-workforce-comparator",
+        "signal-56l-monaghan-medical-certified-project",
+        "signal-56k-f15ex-ex16-portland-receipt",
+        "signal-56j-kc46-readiness-plan"
+      ],
+      "priority_docket": true,
+      "map_state": "Priority admission path assembled",
+      "missing_authority_role": "An official artifact directly satisfying Stable product and facility denominator; Multi-period operating series; Revision, downtime and attribution notes under the stored identity, period, method, and denominator contract.",
+      "next_action": "Use Phase 131 to inspect requirement-specific candidates and retain owner adjudication for 121-MISSION-004.",
+      "route": "/review/v07/authority-gaps/#advanced-manufacturing-outcome"
+    },
+    {
+      "gap_map_id": "130-GAP-002",
+      "mission_id": "121-MISSION-012",
+      "topic_id": "topic-ai-for-science",
+      "slug": "ai-for-science-outcome",
+      "title": "AI for Science: outcome research mission",
+      "gap_type": "No Phase 120 packet joins both topic and target conversion stage",
+      "current_source_ids": [
+        "source-americas-ai-action-plan-2025",
+        "source-fy2027-rd-priorities-m-25-34",
+        "source-nairr-pilot",
+        "source-nist-ai-metrology-center",
+        "source-nist-ai-tevv-program",
+        "source-nist-aria-evaluation-program",
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nsf-2026-nairr-progress"
+      ],
+      "current_signal_ids": [
+        "signal-federal-rd-priorities-full-stack-technology",
+        "signal-nsf-nairr-two-year-research-infrastructure",
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nist-ai-metrology-method-selection-layer"
+      ],
+      "priority_docket": false,
+      "map_state": "Authority gap mapped — acquisition remains open",
+      "missing_authority_role": "An official artifact directly satisfying Stable workflow denominator; Multi-period outcome measures; Human, data and institutional confounders under the stored identity, period, method, and denominator contract.",
+      "next_action": "Acquire an exact official artifact for the target stage before opening a mission-specific admissibility review for 121-MISSION-012.",
+      "route": "/review/v07/authority-gaps/#ai-for-science-outcome"
+    },
+    {
+      "gap_map_id": "130-GAP-003",
+      "mission_id": "121-MISSION-013",
+      "topic_id": "topic-aviation",
+      "slug": "aviation-baseline",
+      "title": "Aviation: baseline research mission",
+      "gap_type": "No Phase 120 packet joins both topic and target conversion stage",
+      "current_source_ids": [
+        "source-55z-bts-air-travel-consumer-report-2024",
+        "source-55z-bts-airline-on-time-tables-2025",
+        "source-56a-dot-atcr-2022",
+        "source-56a-dot-atcr-2023",
+        "source-56a-dot-atcr-2024",
+        "source-darpa-lift-challenge-2026",
+        "source-faa-aam",
+        "source-faa-eipp-selections-2026",
+        "source-faa-powered-lift-final-rule-2024"
+      ],
+      "current_signal_ids": [
+        "signal-faa-powered-lift-final-operating-rule",
+        "signal-faa-2026-evtol-integration-pilot-selections",
+        "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+        "signal-56a-air-travel-consumer",
+        "signal-us-airline-cancellation-rate-2024"
+      ],
+      "priority_docket": true,
+      "map_state": "Priority admission path assembled",
+      "missing_authority_role": "An official artifact directly satisfying Tail, fleet, airport or route identity; Capacity and readiness definitions; Current operating period under the stored identity, period, method, and denominator contract.",
+      "next_action": "Use Phase 131 to inspect requirement-specific candidates and retain owner adjudication for 121-MISSION-013.",
+      "route": "/review/v07/authority-gaps/#aviation-baseline"
+    },
+    {
+      "gap_map_id": "130-GAP-004",
+      "mission_id": "121-MISSION-016",
+      "topic_id": "topic-aviation",
+      "slug": "aviation-outcome",
+      "title": "Aviation: outcome research mission",
+      "gap_type": "No Phase 120 packet joins both topic and target conversion stage",
+      "current_source_ids": [
+        "source-55z-bts-air-travel-consumer-report-2024",
+        "source-55z-bts-airline-on-time-tables-2025",
+        "source-56a-dot-atcr-2022",
+        "source-56a-dot-atcr-2023",
+        "source-56a-dot-atcr-2024",
+        "source-darpa-lift-challenge-2026",
+        "source-faa-aam",
+        "source-faa-eipp-selections-2026",
+        "source-faa-powered-lift-final-rule-2024"
+      ],
+      "current_signal_ids": [
+        "signal-faa-powered-lift-final-operating-rule",
+        "signal-faa-2026-evtol-integration-pilot-selections",
+        "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+        "signal-56a-air-travel-consumer",
+        "signal-us-airline-cancellation-rate-2024"
+      ],
+      "priority_docket": true,
+      "map_state": "Priority admission path assembled",
+      "missing_authority_role": "An official artifact directly satisfying Exposure-compatible safety measures; Route or fleet operating periods; Environmental and access denominators under the stored identity, period, method, and denominator contract.",
+      "next_action": "Use Phase 131 to inspect requirement-specific candidates and retain owner adjudication for 121-MISSION-016.",
+      "route": "/review/v07/authority-gaps/#aviation-outcome"
+    },
+    {
+      "gap_map_id": "130-GAP-005",
+      "mission_id": "121-MISSION-020",
+      "topic_id": "topic-chips-and-compute",
+      "slug": "chips-and-compute-outcome",
+      "title": "Chips and Compute: outcome research mission",
+      "gap_type": "No Phase 120 packet joins both topic and target conversion stage",
+      "current_source_ids": [
+        "source-aca-tsmc-registered-technician-apprenticeship-2024",
+        "source-maricopa-association-governments-open-data",
+        "source-phoenix-2025-semiconductor-apprenticeship-agenda",
+        "source-phoenix-2026-water-security-council-update",
+        "source-phoenix-north-3500-pud-2026",
+        "source-phoenix-planning-development",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement",
+        "source-phoenix-tsmc-fab3-topping-out-2026",
+        "source-virginia-jlarc-data-centers-2024",
+        "source-virginia-scc-large-load-gs5-2025"
+      ],
+      "current_signal_ids": [
+        "signal-phoenix-z37-20-1-tsmc-campus-planning-record",
+        "signal-phoenix-tsmc-fab3-topping-out",
+        "signal-tsmc-arizona-apprenticeship-workforce-pipeline",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+        "signal-virginia-data-center-load-concentration",
+        "signal-virginia-gs5-large-load-rate-class"
+      ],
+      "priority_docket": false,
+      "map_state": "Authority gap mapped — acquisition remains open",
+      "missing_authority_role": "An official artifact directly satisfying Facility-level resource and output series; Stable local and service denominators; Revision and attribution boundaries under the stored identity, period, method, and denominator contract.",
+      "next_action": "Acquire an exact official artifact for the target stage before opening a mission-specific admissibility review for 121-MISSION-020.",
+      "route": "/review/v07/authority-gaps/#chips-and-compute-outcome"
+    },
+    {
+      "gap_map_id": "130-GAP-006",
+      "mission_id": "121-MISSION-025",
+      "topic_id": "topic-critical-minerals",
+      "slug": "critical-minerals-baseline",
+      "title": "Critical Minerals: baseline research mission",
+      "gap_type": "No Phase 120 packet joins both topic and target conversion stage",
+      "current_source_ids": [
+        "source-55z-usgs-mcs-2026-data-release",
+        "source-blm-rhyolite-ridge-rod-2024",
+        "source-doe-critical-minerals-materials-program",
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025",
+        "source-ndep-thacker-pass-project",
+        "source-usgs-mineral-commodity-summaries"
+      ],
+      "current_signal_ids": [
+        "signal-us-mineral-production-and-import-reliance-2025",
+        "signal-doe-2026-critical-minerals-nineteen-project-selections",
+        "signal-rhyolite-ridge-federal-land-authorization",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-thacker-pass-air-permit-compliance-contract"
+      ],
+      "priority_docket": true,
+      "map_state": "Priority admission path assembled",
+      "missing_authority_role": "An official artifact directly satisfying Asset and material identity; Resource, reserve and capacity definitions; Current environmental and operating state under the stored identity, period, method, and denominator contract.",
+      "next_action": "Use Phase 131 to inspect requirement-specific candidates and retain owner adjudication for 121-MISSION-025.",
+      "route": "/review/v07/authority-gaps/#critical-minerals-baseline"
+    },
+    {
+      "gap_map_id": "130-GAP-007",
+      "mission_id": "121-MISSION-032",
+      "topic_id": "topic-cybersecurity",
+      "slug": "cybersecurity-outcome",
+      "title": "Cybersecurity: outcome research mission",
+      "gap_type": "No Phase 120 packet joins both topic and target conversion stage",
+      "current_source_ids": [
+        "source-55z-gao-cdm-network-monitoring-2025",
+        "source-56d-nasa-gao-risk-management-2025",
+        "source-56m-hhs-small-hospital-cyber-controls-2026",
+        "source-cisa-bod-23-01-asset-visibility",
+        "source-cisa-cybersecurity-directives",
+        "source-nccoe-pqc-migration",
+        "source-nist-csrc-publications"
+      ],
+      "current_signal_ids": [
+        "signal-cisa-bod-23-01-asset-visibility-obligation",
+        "signal-federal-cdm-data-quality-requires-manual-correction",
+        "signal-56m-hhs-small-hospital-effective-cyber-test",
+        "signal-56m-nasa-gao-sixteen-open-recommendations",
+        "signal-nccoe-pqc-interoperability-preliminary-draft"
+      ],
+      "priority_docket": false,
+      "map_state": "Authority gap mapped — acquisition remains open",
+      "missing_authority_role": "An official artifact directly satisfying Stable system and event denominator; Detection and reporting definitions; Loss, recovery and mission series under the stored identity, period, method, and denominator contract.",
+      "next_action": "Acquire an exact official artifact for the target stage before opening a mission-specific admissibility review for 121-MISSION-032.",
+      "route": "/review/v07/authority-gaps/#cybersecurity-outcome"
+    },
+    {
+      "gap_map_id": "130-GAP-008",
+      "mission_id": "121-MISSION-036",
+      "topic_id": "topic-discovery-technologies",
+      "slug": "discovery-technologies-outcome",
+      "title": "Discovery Technologies: outcome research mission",
+      "gap_type": "No Phase 120 packet joins both topic and target conversion stage",
+      "current_source_ids": [
+        "source-nasa-earthdata-cmr-api",
+        "source-nasa-nisar-public-data-july-2026",
+        "source-nist-metis-semiconductor-data-exchange",
+        "source-nist-semiconductor-metrology-program",
+        "source-nsf-2026-idss-awards",
+        "source-nsf-2026-nairr-progress",
+        "source-nsf-award-search-api"
+      ],
+      "current_signal_ids": [
+        "signal-nsf-2026-idss-data-infrastructure-awards",
+        "signal-nisar-july-2026-public-radar-data",
+        "signal-nist-metis-semiconductor-metrology-data-exchange",
+        "signal-nsf-ai-materials-institute-award-2433348"
+      ],
+      "priority_docket": false,
+      "map_state": "Authority gap mapped — acquisition remains open",
+      "missing_authority_role": "An official artifact directly satisfying Stable workflow outcome measures; Comparable control or prior method; Uncertainty and publication-bias assessment under the stored identity, period, method, and denominator contract.",
+      "next_action": "Acquire an exact official artifact for the target stage before opening a mission-specific admissibility review for 121-MISSION-036.",
+      "route": "/review/v07/authority-gaps/#discovery-technologies-outcome"
+    },
+    {
+      "gap_map_id": "130-GAP-009",
+      "mission_id": "121-MISSION-049",
+      "topic_id": "topic-mobility",
+      "slug": "mobility-baseline",
+      "title": "Mobility: baseline research mission",
+      "gap_type": "No Phase 120 packet joins both topic and target conversion stage",
+      "current_source_ids": [
+        "source-57b-amtrak-ada-progress-june-2026",
+        "source-57e-amtrak-accessibility-progress-june-2026",
+        "source-cpuc-av-advice-letter-status-2026",
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-nhtsa-safety-recalls",
+        "source-nhtsa-waymo-26e026-recall-2026"
+      ],
+      "current_signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+        "signal-57b-amtrak-eleven-station-passenger-use-cohort",
+        "signal-57b-amtrak-eight-station-final-completion-cohort",
+        "signal-57c-amtrak-station-portfolio-coverage",
+        "signal-57e-amtrak-pids-cross-report-reconciliation"
+      ],
+      "priority_docket": true,
+      "map_state": "Priority admission path assembled",
+      "missing_authority_role": "An official artifact directly satisfying Operator, route, fleet or service identity; Exposure and service denominator; Current reliability and access baseline under the stored identity, period, method, and denominator contract.",
+      "next_action": "Use Phase 131 to inspect requirement-specific candidates and retain owner adjudication for 121-MISSION-049.",
+      "route": "/review/v07/authority-gaps/#mobility-baseline"
+    },
+    {
+      "gap_map_id": "130-GAP-010",
+      "mission_id": "121-MISSION-052",
+      "topic_id": "topic-mobility",
+      "slug": "mobility-outcome",
+      "title": "Mobility: outcome research mission",
+      "gap_type": "No Phase 120 packet joins both topic and target conversion stage",
+      "current_source_ids": [
+        "source-57b-amtrak-ada-progress-june-2026",
+        "source-57e-amtrak-accessibility-progress-june-2026",
+        "source-cpuc-av-advice-letter-status-2026",
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-nhtsa-safety-recalls",
+        "source-nhtsa-waymo-26e026-recall-2026"
+      ],
+      "current_signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-nhtsa-waymo-flooded-roadway-recall-2026",
+        "signal-57b-amtrak-eleven-station-passenger-use-cohort",
+        "signal-57b-amtrak-eight-station-final-completion-cohort",
+        "signal-57c-amtrak-station-portfolio-coverage",
+        "signal-57e-amtrak-pids-cross-report-reconciliation"
+      ],
+      "priority_docket": false,
+      "map_state": "Authority gap mapped — acquisition remains open",
+      "missing_authority_role": "An official artifact directly satisfying Exposure-compatible safety series; User and geography denominator; Multi-period service and externality measures under the stored identity, period, method, and denominator contract.",
+      "next_action": "Acquire an exact official artifact for the target stage before opening a mission-specific admissibility review for 121-MISSION-052.",
+      "route": "/review/v07/authority-gaps/#mobility-outcome"
+    },
+    {
+      "gap_map_id": "130-GAP-011",
+      "mission_id": "121-MISSION-060",
+      "topic_id": "topic-quantum",
+      "slug": "quantum-outcome",
+      "title": "Quantum: outcome research mission",
+      "gap_type": "No Phase 120 packet joins both topic and target conversion stage",
+      "current_source_ids": [
+        "source-nist-hqc-selection-2025",
+        "source-nist-piv-pqc-working-drafts-2026",
+        "source-nist-pqc",
+        "source-omb-m-26-15-pqc-migration",
+        "source-white-house-eo-14412-pqc-migration"
+      ],
+      "current_signal_ids": [
+        "signal-sample-007",
+        "signal-nist-hqc-backup-algorithm-selection",
+        "signal-nist-piv-pqc-working-drafts",
+        "signal-federal-pqc-migration-plans-and-deadlines"
+      ],
+      "priority_docket": true,
+      "map_state": "Priority admission path assembled",
+      "missing_authority_role": "An official artifact directly satisfying Stable task and system denominator; Multi-period accepted-use evidence; Explicit forecast-versus-observation boundary under the stored identity, period, method, and denominator contract.",
+      "next_action": "Use Phase 131 to inspect requirement-specific candidates and retain owner adjudication for 121-MISSION-060.",
+      "route": "/review/v07/authority-gaps/#quantum-outcome"
+    },
+    {
+      "gap_map_id": "130-GAP-012",
+      "mission_id": "121-MISSION-064",
+      "topic_id": "topic-space",
+      "slug": "space-outcome",
+      "title": "Space: outcome research mission",
+      "gap_type": "No Phase 120 packet joins both topic and target conversion stage",
+      "current_source_ids": [
+        "source-56a-faa-commercial-space-operations-fy2022",
+        "source-56a-faa-commercial-space-operations-fy2023",
+        "source-56a-faa-commercial-space-operations-fy2024",
+        "source-faa-slc40-final-ea",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-nasa-artemis",
+        "source-nasa-kennedy-master-plan-2026",
+        "source-nasa-ksc-causeway-bridge-2025",
+        "source-nasa-moon-to-mars-architecture-rev-c-2025"
+      ],
+      "current_signal_ids": [
+        "signal-nasa-2025-moon-to-mars-architecture-rev-c",
+        "signal-slc40-final-environmental-decision",
+        "signal-faa-starship-lc39a-environmental-decision",
+        "signal-kennedy-multiuser-master-plan",
+        "signal-ksc-causeway-bridge-operational",
+        "signal-56a-faa-commercial-space"
+      ],
+      "priority_docket": false,
+      "map_state": "Authority gap mapped — acquisition remains open",
+      "missing_authority_role": "An official artifact directly satisfying Vehicle-, mission- or site-specific series; Cost and access denominator; Environmental and community measures under the stored identity, period, method, and denominator contract.",
+      "next_action": "Acquire an exact official artifact for the target stage before opening a mission-specific admissibility review for 121-MISSION-064.",
+      "route": "/review/v07/authority-gaps/#space-outcome"
+    }
+  ],
+  "public_html_routes": [
+    "/review/v07/authority-gaps/"
+  ],
+  "public_json_exports": [
+    "/data/phase-130-authority-gap-closure-maps.json"
+  ]
+}

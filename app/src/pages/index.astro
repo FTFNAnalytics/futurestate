@@ -6,6 +6,7 @@ import { getStatusTone } from "../lib/editorial";
 
 const allSignals = await getCollection("signals");
 const signals = allSignals
+  .filter((signal) => signal.data.record_status === "Published")
   .sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf())
   .slice(0, 6);
 
@@ -141,8 +142,8 @@ const dateFormatter = new Intl.DateTimeFormat("en", {
         <p>{featuredResearchCollection.data.summary}</p>
         <div class="meta-row">
           <MetaPill label={`${researchDocuments.length} documents`} tone="possibility" />
-          <MetaPill label="22 local captures" />
-          <MetaPill label="1 official-link record" tone="review" />
+          <MetaPill label={`${researchCollections.length} published collections`} />
+          <MetaPill label="Evidence boundaries retained" tone="review" />
         </div>
         <div class="button-row">
           <a class="inline-link" href={`/research/${featuredResearchCollection.data.slug}/`}>Read the collection</a>

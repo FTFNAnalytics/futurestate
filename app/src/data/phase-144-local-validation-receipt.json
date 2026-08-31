@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "receipt_id": "144-LOCAL-VALIDATION-2026-08-30",
+  "phase": 144,
+  "validated_date": "2026-08-30",
+  "status": "Passed",
+  "validation_result": "Passed local checks",
+  "scope": "Local production candidate validation only; this receipt is not owner acceptance or public-launch authorization.",
+  "artifact_digest_algorithm": "sha256",
+  "artifact_digest": "d1ead4bcd338e032fd55e90092ecfcb64f023c40debdaf34fd5165b280df7ea2",
+  "metrics": {
+    "html_pages_excluding_downloads": 6504,
+    "top_level_data_json_exports": 86,
+    "update_entries_rendered": 169,
+    "v07_v09_public_html_routes": 170,
+    "v07_v09_public_json_exports": 18,
+    "schema_1_0_exports": 18,
+    "structurally_audited_routes": 170
+  },
+  "checks": [
+    {
+      "check_id": "production-html-inventory",
+      "status": "Passed",
+      "detail": "6504 HTML pages outside /downloads"
+    },
+    {
+      "check_id": "public-json-inventory",
+      "status": "Passed",
+      "detail": "86 top-level /data JSON exports"
+    },
+    {
+      "check_id": "update-index-rendering",
+      "status": "Passed",
+      "detail": "169 source update entries rendered on /updates/"
+    },
+    {
+      "check_id": "edition-route-inventory",
+      "status": "Passed",
+      "detail": "170 unique v0.7-v0.9 routes"
+    },
+    {
+      "check_id": "edition-route-structure",
+      "status": "Passed",
+      "detail": "170 routes checked for canonical, index/follow, language, viewport, main, h1, navigation, and sitemap coverage"
+    },
+    {
+      "check_id": "edition-export-inventory",
+      "status": "Passed",
+      "detail": "18 unique v0.7-v0.9 JSON exports"
+    },
+    {
+      "check_id": "schema-contract",
+      "status": "Passed",
+      "detail": "18 v0.7-v0.9 exports use schema_version 1.0"
+    },
+    {
+      "check_id": "v1-promotion-boundary",
+      "status": "Passed",
+      "detail": "v1 promotion remains Held"
+    },
+    {
+      "check_id": "npm-run-validate-candidates",
+      "status": "Passed",
+      "command": "npm run validate:candidates"
+    },
+    {
+      "check_id": "npm-run-validate-content",
+      "status": "Passed",
+      "command": "npm run validate:content"
+    },
+    {
+      "check_id": "npm-run-source-health",
+      "status": "Passed",
+      "command": "npm run source:health"
+    },
+    {
+      "check_id": "npm-run-test-v04",
+      "status": "Passed",
+      "command": "npm run test:v04"
+    },
+    {
+      "check_id": "npm-run-test-v05",
+      "status": "Passed",
+      "command": "npm run test:v05"
+    },
+    {
+      "check_id": "npm-run-test-v06",
+      "status": "Passed",
+      "command": "npm run test:v06"
+    },
+    {
+      "check_id": "npm-run-verify-phase58",
+      "status": "Passed",
+      "command": "npm run verify:phase58"
+    },
+    {
+      "check_id": "npm-run-verify-phase59",
+      "status": "Passed",
+      "command": "npm run verify:phase59"
+    },
+    {
+      "check_id": "npm-run-verify-phase60",
+      "status": "Passed",
+      "command": "npm run verify:phase60"
+    },
+    {
+      "check_id": "npm-run-verify-phase61",
+      "status": "Passed",
+      "command": "npm run verify:phase61"
+    },
+    {
+      "check_id": "npm-run-test-v09",
+      "status": "Passed",
+      "command": "npm run test:v09"
+    },
+    {
+      "check_id": "npm-run-check",
+      "status": "Passed",
+      "command": "npm run check"
+    },
+    {
+      "check_id": "npm-run-verify-v09",
+      "status": "Passed",
+      "command": "npm run verify:v09"
+    }
+  ],
+  "public_launch_authorized": false,
+  "owner_acceptance": false,
+  "hosted_deployment_authorized": false,
+  "v1_promotion_state": "Held",
+  "next_action": "Regenerate v0.7-v0.9 so Phase 144 embeds this receipt, rebuild production output, and rerun post-build and release verification before any separate owner-acceptance decision."
+}

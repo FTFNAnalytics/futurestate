@@ -1,0 +1,55 @@
+---
+import ReviewHeader from "./ReviewHeader.astro";
+import MetaPill from "../ui/MetaPill.astro";
+
+interface Props {
+  record: any;
+  registry: any;
+  phase: number;
+  release: string;
+}
+
+const { record, registry, phase, release } = Astro.props;
+const id = Object.entries(record).find(([key]) => key.endsWith("_id"))?.[1] ?? record.slug;
+const title = record.title ?? record.requirement ?? record.label ?? id;
+const state = record.state ?? record.decision_state ?? record.mission_decision_state ?? record.desk_state ?? record.rereview_verdict ?? record.inherited_stage ?? "Published record";
+const skip = new Set(["slug", "title", "route"]);
+const readable = (key: string) => key.replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
+const scalarEntries = Object.entries(record).filter(([key, value]) => !skip.has(key) && (typeof value === "string" || typeof value === "number" || typeof value === "boolean" || value === null));
+const listEntries = Object.entries(record).filter(([key, value]) => !skip.has(key) && Array.isArray(value)) as [string, any[]][];
+const objectEntries = Object.entries(record).filter(([key, value]) => !skip.has(key) && value && typeof value === "object" && !Array.isArray(value)) as [string, Record<string, any>][];
+---
+
+<ReviewHeader eyebrow={`${release} · Phase ${phase}`} title={title} summary={registry.summary} />
+
+<section class="page-section">
+  <div class="meta-row"><MetaPill label={String(id)} /><MetaPill label={String(state)} tone="review" /></div>
+</section>
+
+<section class="page-section review-columns">
+  {scalarEntries.map(([key, value]) => (
+    <article class="prose"><div class="eyebrow">{readable(key)}</div><p>{value === null ? "Not established" : String(value)}</p></article>
+  ))}
+</section>
+
+{objectEntries.map(([key, value]) => (
+  <section class="page-section prose-page">
+    <h2>{readable(key)}</h2>
+    <dl>{Object.entries(value).map(([childKey, childValue]: [string, any]) => <><dt><strong>{readable(childKey)}</strong></dt><dd>{Array.isArray(childValue) ? childValue.join(" · ") : childValue && typeof childValue === "object" ? JSON.stringify(childValue) : String(childValue ?? "Not established")}</dd></>)}</dl>
+  </section>
+))}
+
+{listEntries.map(([key, value]) => (
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Record detail</div><h2>{readable(key)}</h2></div><MetaPill label={`${value.length} items`} tone="possibility" /></div>
+    <div class="source-list">
+      {value.map((item) => typeof item === "object" ? (
+        <article class="source-row">
+          {Object.entries(item).map(([childKey, childValue]: [string, any]) => <p><strong>{readable(childKey)}:</strong> {Array.isArray(childValue) ? childValue.join(" · ") : childValue && typeof childValue === "object" ? JSON.stringify(childValue) : String(childValue ?? "Not established")}</p>)}
+        </article>
+      ) : <div class="source-row"><span>{String(item)}</span></div>)}
+    </div>
+  </section>
+))}
+
+<section class="page-section prose-page"><h2>Evidence boundary</h2><p>{registry.publication_boundaries?.[0]}</p><p><a href={registry.routes.hub}>Return to Phase {phase}</a> · <a href={registry.routes.public_export}>Open the complete JSON</a></p></section>

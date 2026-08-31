@@ -14,8 +14,8 @@ Turn the canonical Phase 119 Project and Place Atlas into a deeper explanatory c
 - 192 exact project-stage cells: eight Phase 116 stages for each project.
 - 15 one-to-one place biographies preserving the exact Phase 119 order, identity and 5 governed / 10 curated tier split.
 - 90 place assessments: six independent receiving-system dimensions for each place.
-- 38,972 project-biography words, with a minimum of 1300 words per project.
-- 27,486 place-biography words, with a minimum of 1175 words per place.
+- 39,044 project-biography words, with a minimum of 1303 words per project.
+- 27,531 place-biography words, with a minimum of 1178 words per place.
 - One new hub, thirty-nine enhanced existing Atlas routes and one direct schema-1.0 JSON export.
 
 ## Project-stage contract

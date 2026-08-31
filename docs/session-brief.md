@@ -28,30 +28,55 @@ The product should become:
 
 ## Current Project State
 
-The project has an Astro + TypeScript static-first app in `app/`.
+The project has an Astro + TypeScript static-first app in `app/`. The active local content milestone is **FTFN v0.9.0**, covering Phases 130–144 and the cumulative v0.7, v0.8, and v0.9 public knowledge editions.
 
 Current app baseline:
 
 ```text
-package version: 0.2.0-dev
-npm run validate:content: passing
-npm run check: passing
-npm run build: passing
-static pages generated: 2,647
-current local release manifest: deployment/ftfn-v0.2-build.json
-current branch: codex/phase51-content
+package version: 0.9.0
+content milestone: Phases 130–144
+verified static HTML pages: 6,504
+verified public JSON exports: 86
+verified public update records: 169
+release manifest path: deployment/ftfn-v0.2-build.json (historical filename)
+local release verification: Passed on 2026-08-31
+v1 promotion: Held
 ```
 
 Use `npm.cmd` on Windows if PowerShell blocks `npm.ps1`.
 
-App routes currently include:
+The parent completion pass ran validation, two production builds around the dated Phase 144 receipt, manifest update, post-build checks, and global release verification against the same generated content state. The 6,504 / 86 / 169 local contract is verified. No final commit, GitHub push, hosted deployment, DNS change, public-access change, owner acceptance, or v1 promotion was performed or certified.
+
+### Current v0.7–v0.9 phase map
+
+| Phase | Public content responsibility | Current controlled state |
+| --- | --- | --- |
+| 130 | Twelve authority-gap closure maps | Mapping complete; all twelve acquisition paths remain open. |
+| 131 | Six priority mission dockets / eighteen requirement dockets | Candidate artifacts are assembled; eighteen owner decisions remain gated. |
+| 132 | Eighteen dated source-check receipts | Source identity and access checks are distinct from admission decisions. |
+| 133 | Requirement adjudication board | Acceptance and rejection tests are public; governed owner decisions remain controlling. |
+| 134 | Six mission-decision packets | Each packet joins three requirements; no mission answer is inferred. |
+| 135 | Thirty-nine Atlas conversion-readiness reviews | Readiness describes publishable content, never project or place performance. |
+| 136 | Twenty-four named project chronicles | Phase 119 identities and inherited stages remain unchanged. |
+| 137 | Fifteen place delivery ledgers | Receiving-system context remains separate from related project stages. |
+| 138 | Thirty-nine longitudinal-eligibility reviews | No series, observation value, or outcome is admitted by the content phase. |
+| 139 | Twelve comparative dossier re-reviews | All comparison verdicts remain `Context only`. |
+| 140 | Seventeen living topic desks | Desks join all 68 missions to governed evidence, conversion, and comparison records. |
+| 141 | Fifty-six-entry frontier systems almanac | The almanac covers 17 topics, 24 projects, and 15 places without scoring them. |
+| 142 | Seventeen four-horizon topic roadmaps | Sixty-eight mission horizons retain exact stopping rules and decision joins. |
+| 143 | Editorial cadence and editions | One inaugural edition is present; four future slots contain no predated findings. |
+| 144 | v1 launch-candidate audit | Release and accessible-structure gates pass; evidence admission, authority coverage, longitudinal evidence, and owner acceptance keep v1 Held. |
+
+The three version contracts own 170 HTML routes and eighteen version/phase JSON exports: v0.7 has twelve routes and six exports, v0.8 has 57 and six, and v0.9 has 101 and six. The complete application target is 6,504 HTML pages and 86 JSON exports because earlier route and data families remain part of the build.
+
+Current public route families include:
 
 - homepage,
 - signal index and signal detail pages,
 - Atlas landing page,
 - topic index and detail pages,
 - source index and detail pages,
-- research collection index, thirty-four collection details, and 589 document detail pages,
+- research collection index, sixty-four collection details, and 1,629 document detail pages,
 - organization index and detail pages,
 - technology index and detail pages,
 - local system index and detail pages,
@@ -60,11 +85,16 @@ App routes currently include:
 - briefing index and detail pages,
 - method and publication policy page,
 - updates and corrections page,
-- versioned source, topic, and Published-signal JSON endpoints,
+- versioned source, topic, Published-signal, evidence-operation, conversion, and v0.7–v0.9 JSON endpoints,
+- v0.7 authority-gap, admission-docket, source-check, adjudication, and mission-decision surfaces,
+- v0.8 readiness, project chronicle, place ledger, longitudinal-eligibility, and comparison re-review surfaces,
+- v0.9 living desks, almanac, delivery roadmaps, editorial editions, and launch-audit surfaces,
 - generated source monitor,
 - about page.
 
-## Checkpoint Assessment After Phase 54
+## Historical Checkpoint Assessment After Phase 54
+
+Everything in this section records an earlier scaffold checkpoint. It is retained for provenance and must not be read as the current v0.9.0 baseline.
 
 FTFN has moved from concept and documentation into a functioning static-first MVP scaffold.
 
@@ -242,13 +272,15 @@ What is still prelaunch scaffolding:
 - There is an owner-only Sites deployment, but no public access, custom-domain attachment, DNS change, analytics, or newsletter capture yet.
 - Broader assistive-technology testing, analytics decisions, package freeze, custom-domain verification, and final public launch approval still need later passes.
 
-Current strategic direction:
+Strategic direction at that historical checkpoint:
 
 FTFN should continue with Phase 57N adapter-conformance tests, packet-validation harnesses, and reviewer-receipt ledgers. Exercise all 120 accepted labels and ambiguity rejections, run all eighteen fixtures against expected decisions, and record bounded human-review receipts without firing triggers or publishing automatically. The ledger remains one Closed, twenty-one Partially Closed, and two Open records. Supabase activation can proceed separately. Automated publishing remains out of scope.
 
-## Content State
+## Historical Content State Before v0.7–v0.9
 
-Current seed content includes:
+The counts and “current” language in this section describe an earlier Phase 57-era checkpoint. Use the Current Project State above for the active v0.9.0 candidate.
+
+That historical seed-content checkpoint included:
 
 - 815 signal records,
 - 715 source records,
@@ -338,9 +370,11 @@ Important caution:
 
 The current local profiles are useful constraint maps, not final local intelligence products. They still need municipal, utility, permitting, facility-level, workforce, lender, and infrastructure evidence before stronger local conclusions.
 
-## Latest Completed Phase
+## Historical Completed-Phase And File Inventory
 
-Latest completed work package:
+The Phase 57K label and file list below are retained as historical handoff evidence. The current completed content range is Phase 130–144, subject to final local release certification.
+
+Latest completed work package at that historical checkpoint:
 
 ```text
 Phase 57K: Cross-Version Transition Matrices, Longitudinal Panels, And Reopening-Trigger Registry
@@ -432,9 +466,21 @@ Key files:
 - `docs/content-model.md`
 - `docs/documentation-map.md`
 
-## Next Decision Gate
+## Current Decision And Validation Gates
 
-Next executable decision identified in the roadmap:
+Proceed in this order:
+
+1. Finish the Phase 130–144 content and documentation synchronization without changing governed evidence outcomes.
+2. Run the complete candidate, content-reference, source-health, phase, Astro, production-build, manifest, route, canonical, sitemap, export, release, and diff verification sequence.
+3. Certify the 6,504-page / 86-export / 169-update contract only if every check passes against the same working tree.
+4. Leave v1 Held until owner acceptance is recorded separately from technical validation.
+5. Operate `60-CYCLE-LOUISIANA-STARLINK-ADOPTION` only on or after 2026-09-01 in America/Edmonton, using current official primary sources and a dated receipt.
+6. Resolve the eighteen v0.7 requirement decisions and six mission decisions only through authorized human review; do not convert a source check or candidate artifact into acceptance.
+7. Treat commit, GitHub push, hosted deployment, public access, `ftfn.io`, DNS, and v1 promotion as separate owner-controlled actions.
+
+### Historical Phase 57J decision gate
+
+The following was the next executable decision at an earlier Phase 57 checkpoint and is retained only for provenance:
 
 ```text
 Phase 57J historical backfill, rejection taxonomy, and review-queue execution
@@ -468,27 +514,27 @@ Proceed by:
 
 Start future work by reading:
 
-1. `docs/build-summary-v0.2.md`
-2. `docs/roadmap-v0.2.md`
-3. `docs/session-handoff-v0.2.md`
-4. `deployment/ftfn-v0.2-build.json`
-5. `docs/release-qa-v0.2.md`
-6. `docs/launch-package.md`
-7. `README.md`
-8. `docs/session-brief.md`
-9. `docs/master-roadmap.md`
-10. `docs/decision-log.md`
-11. `docs/content-expansion-plan.md`
-12. `docs/signals-roadmap.md`
-13. `docs/source-monitoring-plan.md`
-14. `docs/authoritative-live-source-plan.md`
-15. `docs/authority-red-team-and-resource-expansion-plan.md`
-16. `docs/publication-readiness-triage.md`
-17. `docs/launch-candidate-review.md`
-18. `docs/publication-policy.md`
-19. `docs/public-data-exports.md`
-20. `docs/supabase-activation-plan.md`
-21. the latest work package in `docs/work-packages/`
+1. `docs/session-handoff-v0.9.md`
+2. `docs/build-summary-v0.9.md`
+3. `docs/roadmap-v0.9.md`
+4. `docs/build-summary-v0.8.md`
+5. `docs/roadmap-v0.8.md`
+6. `docs/build-summary-v0.7.md`
+7. `docs/roadmap-v0.7.md`
+8. `docs/master-roadmap.md`
+9. `README.md`
+10. `docs/session-brief.md`
+11. `docs/work-packages/phase-144-v1-launch-candidate-audit.md`
+12. `docs/work-packages/phase-143-editorial-cadence-and-editions.md`
+13. `docs/work-packages/phase-140-living-topic-desks.md`
+14. `docs/work-packages/phase-139-comparative-dossier-re-review.md`
+15. `docs/work-packages/phase-138-longitudinal-evidence-eligibility.md`
+16. `docs/work-packages/phase-134-mission-decision-register.md`
+17. `docs/work-packages/phase-133-requirement-adjudication-board.md`
+18. `docs/work-packages/phase-60-evidence-to-decision-operating-cycle.md`
+19. `deployment/ftfn-v0.2-build.json` as the release-verified v0.9 manifest at a historical filename
+20. `docs/publication-policy.md`
+21. `docs/decision-log.md`
 
 Use these as needed:
 
@@ -511,26 +557,19 @@ Paste this into a new chat to continue efficiently:
 Continue FTFN from the current project state.
 
 Read:
-- docs/build-summary-v0.2.md
-- docs/roadmap-v0.2.md
-- docs/session-handoff-v0.2.md
-- docs/release-qa-v0.2.md
-- docs/launch-note-v0.2.md
-- deployment/ftfn-v0.2-build.json
-- docs/session-brief-v0.1.1.md
-- docs/roadmap-v0.1.1.md
-- deployment/ftfn-v0.1.1-build.json
+- docs/session-handoff-v0.9.md
+- docs/build-summary-v0.9.md
+- docs/roadmap-v0.9.md
+- docs/build-summary-v0.8.md
+- docs/roadmap-v0.8.md
+- docs/build-summary-v0.7.md
+- docs/roadmap-v0.7.md
 - README.md
 - docs/session-brief.md
 - docs/master-roadmap.md
-- docs/decision-log.md
-- docs/content-expansion-plan.md
-- docs/signals-roadmap.md
-- docs/source-monitoring-plan.md
-- docs/source-broadening-and-intake-plan.md
-- docs/authoritative-live-source-plan.md
-- docs/authority-red-team-and-resource-expansion-plan.md
-- the latest work package in docs/work-packages/
+- docs/work-packages/phase-130-authority-gap-closure-maps.md through phase-144-v1-launch-candidate-audit.md
+- docs/work-packages/phase-60-evidence-to-decision-operating-cycle.md
+- deployment/ftfn-v0.2-build.json, noting that the filename is historical and the current v0.9 values are locally release-verified
 
 Preserve:
 - FTFN public brand,
@@ -540,18 +579,18 @@ Preserve:
 - the thesis: "The future is not a list of inventions. It is a stack of dependencies."
 
 Current completed work:
-Phase 57M source-schema adapters, candidate-evidence packet templates, and human-review decision tables; complete, release-validated, and owner-only deployed as Sites version 69.
+Phases 130-144 assemble v0.7 Evidence Admission Dockets, v0.8 Conversion and Longitudinal Atlas, and v0.9 Living Public Intelligence. The program contains 12 authority-gap maps, 6 priority mission dockets, 18 requirement dockets and source-check receipts, 39 Atlas readiness/eligibility reviews, 24 project chronicles, 15 place ledgers, 12 comparison re-reviews, 17 living topic desks, 56 almanac entries, 17 delivery roadmaps, one inaugural edition, four unpredated scheduled editions, and a v1 launch audit that remains Held.
 
 Current release checkpoint:
-v0.1.1 remains the frozen 102-source / 18-signal / 182-page checkpoint; the active development and hosted non-public candidate is Phase 57M in owner-only Sites version 69 on exact runtime commit `ab6e14d05ca55daf4f92655218d307d247547a3e`.
+The active local package is v0.9.0 and its verified build contains 6,504 HTML pages, 86 public JSON exports, and 169 update records. The dated local receipt and global release verifier passed; no commit, GitHub publication, hosted deployment, DNS change, public access, owner acceptance, or v1 promotion has occurred.
 
 Current development state:
-v0.2 Phase 57M candidate: package 0.2.0-dev, 715 public sources, 150 first-pass-triaged private candidates, 815 signals, 17 topics, 67 updates, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 2,647 generated site pages, 636 Published signals, 44 Published briefings, 7 In Review briefings, 6 Published and 1 In Review dependency map, 5 local systems, 48 research collections, 931 research documents, sixty non-coercive adapters, 120 exact labels, eighteen non-evidence fixtures, nine six-outcome review tables, fifty-four rehearsal rows, all prior verified archives plus the Phase 57M 32-file archive, and 5 public JSON endpoints. Source Coverage is 14 Strong lanes; source health reports 494 Manual Review and 221 Probe Ready records.
+The retained corpus contains 795 sources, 1,406 signals, 17 topics, 19 organizations, 5 technologies, 5 local systems, 458 briefings, 16 evidence gaps, 178 dependency maps, 64 research collections with 1,629 documents, 15 pathways, and 68 missions. v0.7-v0.9 add 170 version-owned routes and 18 phase/version exports without admitting an artifact, manufacturing a mission answer, advancing a project/place stage, inventing a longitudinal series, or changing a Context-only comparison verdict.
 
 Next decision gate:
-Begin Phase 57N. Test all 120 accepted labels and ambiguity rejections, execute all eighteen fixtures against their expected review outcomes, and add machine-readable reviewer receipts for identity, reason, citation, decision time, escalation, and publication-review handoff. Preserve all nine holds and prohibit automatic triggers or publication. Public access, package freeze, Hostinger DNS changes, and public launch remain separate explicit decisions.
+Preserve the completed local validation/build/manifest/release baseline. Then operate the Louisiana Starlink Phase 60 gate only on or after 2026-09-01 and handle the v0.7 owner adjudication queue through dated authorized decisions. Preserve the v1 hold and treat commit, push, deployment, public access, DNS, and owner acceptance as separate decisions.
 
-Please confirm the current state from both the docs and repository, preserve the owner-only preview, and report before any additional Published promotion, public-access, custom-domain, or Hostinger DNS action.
+Please confirm the current state from both the docs and repository, preserve every evidence and stage boundary, and report before any Published promotion, owner decision, GitHub push, hosted deployment, public-access, custom-domain, Hostinger DNS, or v1 action.
 ```
 
 ## Implementation Reminders
@@ -561,6 +600,7 @@ Please confirm the current state from both the docs and repository, preserve the
 - Use official or primary sources first.
 - Keep company claims clearly labeled.
 - Do not promote additional records to `Published` until publication criteria are met.
-- Run `npm run validate:content`, `npm run check`, and `npm run build` after app or content changes.
+- Run the Phase 130–144 assertions, `npm run validate:content`, `npm run check`, `npm run build`, the v0.9 manifest updater, all three version post-build verifiers, and `npm run verify:release` before certifying the current candidate.
 - Run `npm run source:health` after source metadata changes.
 - Update the relevant docs and work package at the end of each phase.
+- Report the 6,504-page / 86-export / 169-update contract as locally verified, while keeping commit state, GitHub state, hosted deployment, DNS, public access, owner acceptance, and v1 promotion explicitly separate.

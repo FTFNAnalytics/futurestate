@@ -3,6 +3,8 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import ReviewHeader from "../../../components/review/ReviewHeader.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
+import desks from "../../../data/phase-140-living-topic-desks.json";
+import roadmaps from "../../../data/phase-142-topic-delivery-roadmaps.json";
 
 export async function getStaticPaths() {
   const topics = await getCollection("topics");
@@ -17,10 +19,13 @@ const sources = await getCollection("sources");
 const sourceById = new Map(sources.map((source) => [source.data.id, source]));
 const featuredSources = topic.data.featured_sources.map((id) => sourceById.get(id)).filter(Boolean);
 const maps = (await getCollection("dependencyMaps")).filter((map) => map.data.record_status === "Published" && map.data.primary_topic === topic.data.name);
+const desk = desks.topic_desks.find((record) => record.topic_id === topic.data.id)!;
+const roadmap = roadmaps.topic_roadmaps.find((record) => record.topic_id === topic.data.id)!;
 ---
 
 <BaseLayout title={`${topic.data.name} | The FTFN Review`} description={topic.data.summary}>
   <ReviewHeader eyebrow="Canonical topic chapter" title={topic.data.name} summary={topic.data.summary} phase={103} />
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">v0.9 living desk · {desk.desk_id}</div><h2>{desk.desk_state}</h2><p>{desk.current_read}</p></div><article class="record-card record-card--featured"><MetaPill label={`${roadmap.horizon_milestones.length} research horizons`} tone="review" /><h3>Follow the maintained program</h3><p>{roadmap.success_definition}</p><div class="button-row"><a class="inline-link" href={desk.route}>Open desk</a><a class="inline-link" href={roadmap.route}>Open roadmap</a></div></article></section>
   <section class="page-section">
     <div class="section-heading"><div><div class="eyebrow">Current evidence</div><h2>What the shelf establishes.</h2></div><MetaPill label={`${signals.length} Published signals`} /></div>
     <div class="signal-grid">

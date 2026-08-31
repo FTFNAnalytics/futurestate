@@ -1,0 +1,1310 @@
+{
+  "schema_version": "1.0",
+  "phase": 142,
+  "program_id": "FTFN-PHASE-142",
+  "dataset": "phase_142_topic_delivery_roadmaps",
+  "title": "Topic delivery roadmaps",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Give every topic a four-horizon evidence roadmap with exact missions, stopping rules, and next editorial actions.",
+  "record_scope": "Topic delivery roadmaps records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "AI-assisted source triage can map exact artifacts and expose their limits, but it cannot stand in for the repository's required human admissibility decision.",
+    "A source-check receipt proves only that the named official artifact was inspected on the stated date; it does not admit the artifact, satisfy a requirement, or answer a mission.",
+    "No project stage, place state, comparison verdict, observation, outcome, score, rank, causal finding, recommendation, or future Phase 60 decision is created.",
+    "A repository-bounded gap says what this reviewed corpus has not established; it never asserts that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v09/roadmaps/",
+    "public_export": "/data/phase-142-topic-delivery-roadmaps.json"
+  },
+  "counts": {
+    "topic_roadmaps": 17,
+    "horizon_milestones": 68,
+    "numeric_rankings": 0
+  },
+  "topic_roadmaps": [
+    {
+      "roadmap_id": "142-ROADMAP-001",
+      "topic_id": "topic-advanced-manufacturing",
+      "desk_id": "140-DESK-001",
+      "slug": "advanced-manufacturing",
+      "title": "Advanced Manufacturing delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-001",
+          "mission_decision_id": null,
+          "question": "Which named facilities and production systems have defensible baselines for installed, qualified and available capacity?",
+          "required_evidence": [
+            "Facility and line identity",
+            "Installed and qualified capacity definitions",
+            "Operating calendar and workforce baseline"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-002",
+          "mission_decision_id": null,
+          "question": "Where do finance, permits, equipment, materials, utilities and workforce constrain the path from facility commitment to qualification?",
+          "required_evidence": [
+            "Dated project chronology",
+            "Authority and procurement instruments",
+            "Equipment, utility and workforce milestones"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-003",
+          "mission_decision_id": null,
+          "question": "Which customer-acceptance and recurring-output records establish dependable production rather than a successful trial or first article?",
+          "required_evidence": [
+            "Acceptance criteria and receiving party",
+            "Lot or unit identity",
+            "Repeated yield, delivery and exception records"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-004",
+          "mission_decision_id": "134-MISSION-001",
+          "question": "Which compatible yield, quality, cost, schedule, safety and reliability series show whether advanced manufacturing improved receiving-system outcomes?",
+          "required_evidence": [
+            "Stable product and facility denominator",
+            "Multi-period operating series",
+            "Revision, downtime and attribution notes"
+          ],
+          "current_state": "Decision packet complete — mission answer remains unadjudicated",
+          "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/advanced-manufacturing/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-002",
+      "topic_id": "topic-agriculture-and-bioeconomy",
+      "desk_id": "140-DESK-002",
+      "slug": "agriculture-and-bioeconomy",
+      "title": "Agriculture and Bioeconomy delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-005",
+          "mission_decision_id": null,
+          "question": "Which crops, biological processes, farms and regional systems have comparable starting baselines for yield, inputs, risk and resource use?",
+          "required_evidence": [
+            "Crop or process identity",
+            "Season and geography",
+            "Yield, input and resource-use baseline"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-006",
+          "mission_decision_id": null,
+          "question": "How do approvals, finance, infrastructure, processing capacity and offtake agreements move agricultural and bioeconomy innovations into field implementation?",
+          "required_evidence": [
+            "Regulatory disposition",
+            "Named financing or offtake",
+            "Field, processing and logistics milestones"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-007",
+          "mission_decision_id": null,
+          "question": "Which repeated seasonal or batch records establish sustained adoption, production quality and farmer or processor use?",
+          "required_evidence": [
+            "Stable participant or facility cohort",
+            "Repeated seasons or batches",
+            "Adoption, attrition and quality definitions"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-008",
+          "mission_decision_id": null,
+          "question": "What happens to yields, water, soil, emissions, biodiversity, income, labor and food security after adoption, and which changes can be attributed?",
+          "required_evidence": [
+            "Compatible pre/post measures",
+            "Weather and market context",
+            "Uncertainty and alternative explanations"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/agriculture-and-bioeconomy/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-003",
+      "topic_id": "topic-ai-for-science",
+      "desk_id": "140-DESK-003",
+      "slug": "ai-for-science",
+      "title": "AI for Science delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-009",
+          "mission_decision_id": null,
+          "question": "Which named scientific workflows have measurable baselines for time, cost, reproducibility, data quality and expert effort?",
+          "required_evidence": [
+            "Workflow and institution identity",
+            "Task and dataset definition",
+            "Pre-deployment performance baseline"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-010",
+          "mission_decision_id": null,
+          "question": "How do data rights, compute, evaluation, procurement, assurance and institutional authority govern movement from demonstration to scientific use?",
+          "required_evidence": [
+            "Evaluation protocol",
+            "Compute and data provenance",
+            "Authorization and implementation record"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-011",
+          "mission_decision_id": null,
+          "question": "Which accepted and repeated uses show that AI systems remain reliable, reproducible and useful across scientific cycles?",
+          "required_evidence": [
+            "Named receiving workflow",
+            "Acceptance and override criteria",
+            "Repeated use and failure records"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-012",
+          "mission_decision_id": null,
+          "question": "Do accepted systems change discovery time, experimental yield, replication, cost or scientific quality without introducing unmeasured harms?",
+          "required_evidence": [
+            "Stable workflow denominator",
+            "Multi-period outcome measures",
+            "Human, data and institutional confounders"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/ai-for-science/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-004",
+      "topic_id": "topic-aviation",
+      "desk_id": "140-DESK-004",
+      "slug": "aviation",
+      "title": "Aviation delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-013",
+          "mission_decision_id": "134-MISSION-002",
+          "question": "Which named aircraft, airports, propulsion systems and service networks have current baselines for capacity, readiness, safety and use?",
+          "required_evidence": [
+            "Tail, fleet, airport or route identity",
+            "Capacity and readiness definitions",
+            "Current operating period"
+          ],
+          "current_state": "Decision packet complete — mission answer remains unadjudicated",
+          "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-014",
+          "mission_decision_id": null,
+          "question": "How do certification, manufacturing, infrastructure, workforce, finance and operating authority combine before entry into service?",
+          "required_evidence": [
+            "Certification basis and disposition",
+            "Production and infrastructure milestones",
+            "Operator and service authority"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-015",
+          "mission_decision_id": null,
+          "question": "Which acceptance, dispatch, utilization and maintenance records establish repeated service rather than delivery or a demonstration flight?",
+          "required_evidence": [
+            "Operator acceptance",
+            "Dispatch and utilization denominator",
+            "Repeated maintenance and service records"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-016",
+          "mission_decision_id": "134-MISSION-003",
+          "question": "Which compatible safety, reliability, cost, emissions, noise and access measures show public and system outcomes?",
+          "required_evidence": [
+            "Exposure-compatible safety measures",
+            "Route or fleet operating periods",
+            "Environmental and access denominators"
+          ],
+          "current_state": "Decision packet complete — mission answer remains unadjudicated",
+          "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/aviation/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-005",
+      "topic_id": "topic-chips-and-compute",
+      "desk_id": "140-DESK-005",
+      "slug": "chips-and-compute",
+      "title": "Chips and Compute delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-017",
+          "mission_decision_id": null,
+          "question": "Which named fabs, data centers and compute services have defensible baselines for installed, available and qualified capacity?",
+          "required_evidence": [
+            "Facility and service identity",
+            "Power, tool and compute capacity definitions",
+            "Current utilization boundary"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-018",
+          "mission_decision_id": null,
+          "question": "Where do power, water, land, permits, interconnection, tooling, workforce and customer commitments constrain delivery?",
+          "required_evidence": [
+            "Utility and permitting instruments",
+            "Construction and tool-install milestones",
+            "Named customer or service commitments"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-019",
+          "mission_decision_id": null,
+          "question": "Which qualification, customer-acceptance, uptime and recurring-output records establish dependable semiconductor or compute service?",
+          "required_evidence": [
+            "Qualification or service-acceptance criteria",
+            "Yield, uptime or delivered-compute denominator",
+            "Repeated operating periods"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-020",
+          "mission_decision_id": null,
+          "question": "What do compatible series show about productivity, reliability, water, energy, workforce, supply resilience and local public effects?",
+          "required_evidence": [
+            "Facility-level resource and output series",
+            "Stable local and service denominators",
+            "Revision and attribution boundaries"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/chips-and-compute/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-006",
+      "topic_id": "topic-climate",
+      "desk_id": "140-DESK-006",
+      "slug": "climate",
+      "title": "Climate delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-021",
+          "mission_decision_id": null,
+          "question": "Which hazards, exposures, vulnerabilities and adaptive capacities have stable baselines at decision-relevant geographies?",
+          "required_evidence": [
+            "Hazard and geography definition",
+            "Exposure and vulnerability denominator",
+            "Baseline period and uncertainty"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-022",
+          "mission_decision_id": null,
+          "question": "Which policies, finance commitments and projects move from climate ambition into completed and validated adaptation or mitigation?",
+          "required_evidence": [
+            "Policy and finance instruments",
+            "Named intervention chronology",
+            "Completion and validation evidence"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-023",
+          "mission_decision_id": null,
+          "question": "Which repeated operating records show that climate interventions remain available and effective under real conditions?",
+          "required_evidence": [
+            "Intervention and service identity",
+            "Repeated stress or operating periods",
+            "Maintenance, failure and recovery records"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-024",
+          "mission_decision_id": null,
+          "question": "What changes in loss, exposure, service continuity, emissions, ecosystems and welfare can be measured, and what attribution remains unresolved?",
+          "required_evidence": [
+            "Comparable multi-period series",
+            "Hazard and socioeconomic controls",
+            "Uncertainty and counterfactual design"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/climate/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-007",
+      "topic_id": "topic-critical-minerals",
+      "desk_id": "140-DESK-007",
+      "slug": "critical-minerals",
+      "title": "Critical Minerals delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-025",
+          "mission_decision_id": "134-MISSION-004",
+          "question": "Which named deposits, mines, refineries, processors and recycling systems have current resource, capacity and compliance baselines?",
+          "required_evidence": [
+            "Asset and material identity",
+            "Resource, reserve and capacity definitions",
+            "Current environmental and operating state"
+          ],
+          "current_state": "Decision packet complete — mission answer remains unadjudicated",
+          "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-026",
+          "mission_decision_id": null,
+          "question": "How do permitting, finance, water, energy, community consent, construction and qualification govern conversion into usable supply?",
+          "required_evidence": [
+            "Authority and consultation record",
+            "Financial and construction milestones",
+            "Processing and customer-qualification path"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-027",
+          "mission_decision_id": null,
+          "question": "Which accepted shipments and recurring qualified-output records establish reliable supply into named receiving systems?",
+          "required_evidence": [
+            "Product specification",
+            "Customer receipt or acceptance",
+            "Repeated shipment and output series"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-028",
+          "mission_decision_id": null,
+          "question": "Which compatible cost, reliability, environmental, labor, community and supply-security outcomes follow, and at what boundary?",
+          "required_evidence": [
+            "Material- and asset-specific denominator",
+            "Compliance and community measures",
+            "Multi-period supply and market context"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/critical-minerals/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-008",
+      "topic_id": "topic-cybersecurity",
+      "desk_id": "140-DESK-008",
+      "slug": "cybersecurity",
+      "title": "Cybersecurity delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-029",
+          "mission_decision_id": null,
+          "question": "Which named systems, assets and organizations have current inventories, threat baselines and control boundaries?",
+          "required_evidence": [
+            "System and asset inventory",
+            "Threat and exposure period",
+            "Control ownership and boundary"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-030",
+          "mission_decision_id": null,
+          "question": "How do standards, procurement, migration, testing and authorization move a security requirement into implemented controls?",
+          "required_evidence": [
+            "Applicable standard or authority",
+            "Named implementation cohort",
+            "Test and authorization disposition"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-031",
+          "mission_decision_id": null,
+          "question": "Which cutover, monitoring, incident, correction and retirement records establish sustained control operation?",
+          "required_evidence": [
+            "Accepted cutover criteria",
+            "Recurring monitoring and incident records",
+            "Exception and retirement ledger"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-032",
+          "mission_decision_id": null,
+          "question": "Which compatible exposure, loss, recovery, mission and user-harm measures show security outcomes without rewarding under-reporting?",
+          "required_evidence": [
+            "Stable system and event denominator",
+            "Detection and reporting definitions",
+            "Loss, recovery and mission series"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/cybersecurity/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-009",
+      "topic_id": "topic-discovery-technologies",
+      "desk_id": "140-DESK-009",
+      "slug": "discovery-technologies",
+      "title": "Discovery Technologies delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-033",
+          "mission_decision_id": null,
+          "question": "Which instruments, platforms and research methods have reproducible performance baselines on named scientific tasks?",
+          "required_evidence": [
+            "Instrument or platform identity",
+            "Task, specimen or dataset definition",
+            "Baseline accuracy, time and cost"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-034",
+          "mission_decision_id": null,
+          "question": "How do funding, facilities, data, standards, validation and institutional adoption move a discovery platform beyond demonstration?",
+          "required_evidence": [
+            "Funding and facility record",
+            "Validation and interoperability method",
+            "Receiving-institution implementation"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-035",
+          "mission_decision_id": null,
+          "question": "Which accepted and repeated uses establish dependable operation across laboratories, sites or research cycles?",
+          "required_evidence": [
+            "Acceptance criteria",
+            "Repeated run and maintenance records",
+            "Cross-site or cross-cycle reproducibility"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-036",
+          "mission_decision_id": null,
+          "question": "Do these platforms improve discovery rate, evidence quality, replication, access or cost, and which effects remain unproven?",
+          "required_evidence": [
+            "Stable workflow outcome measures",
+            "Comparable control or prior method",
+            "Uncertainty and publication-bias assessment"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/discovery-technologies/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-010",
+      "topic_id": "topic-energy",
+      "desk_id": "140-DESK-010",
+      "slug": "energy",
+      "title": "Energy delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-037",
+          "mission_decision_id": null,
+          "question": "Which named grids, plants, storage assets and customer classes have compatible capacity, demand, reliability and cost baselines?",
+          "required_evidence": [
+            "Asset or system identity",
+            "Capacity, demand and reliability definitions",
+            "Current operating-period baseline"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-038",
+          "mission_decision_id": null,
+          "question": "How do planning, authority, finance, interconnection, construction, fuel and supply-chain gates govern delivery?",
+          "required_evidence": [
+            "Planning and regulatory disposition",
+            "Interconnection and procurement record",
+            "Construction and supply milestones"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-039",
+          "mission_decision_id": null,
+          "question": "Which commissioning, acceptance, dispatch and recurring-service records establish dependable operating contribution?",
+          "required_evidence": [
+            "Receiving-system acceptance",
+            "Dispatch, availability and outage denominator",
+            "Repeated seasonal operating periods"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-040",
+          "mission_decision_id": null,
+          "question": "Which compatible reliability, affordability, emissions, resilience and local-impact series show net system outcomes?",
+          "required_evidence": [
+            "System-compatible period and denominator",
+            "Cost and reliability series",
+            "Emissions, resilience and burden measures"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/energy/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-011",
+      "topic_id": "topic-finance-and-risk",
+      "desk_id": "140-DESK-011",
+      "slug": "finance-and-risk",
+      "title": "Finance and Risk delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-041",
+          "mission_decision_id": null,
+          "question": "Which markets, institutions, projects and public balance sheets have current exposure, cost and risk baselines?",
+          "required_evidence": [
+            "Instrument, institution or project identity",
+            "Exposure and valuation date",
+            "Risk, cost and liability definitions"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-042",
+          "mission_decision_id": null,
+          "question": "When do appropriations, guarantees, insurance, credit and private finance remove a conversion constraint, and when do they create a contingent one?",
+          "required_evidence": [
+            "Instrument terms and parties",
+            "Conditions and contingent liabilities",
+            "Linked project milestone"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-043",
+          "mission_decision_id": null,
+          "question": "Which drawdown, payment, covenant, loss and operating records show that financed activity reached sustained delivery?",
+          "required_evidence": [
+            "Disbursement and use-of-funds record",
+            "Covenant and performance period",
+            "Default, restructuring and exception history"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-044",
+          "mission_decision_id": null,
+          "question": "Which compatible affordability, fiscal, resilience, distributional and real-economy outcomes follow, and who ultimately bears the downside?",
+          "required_evidence": [
+            "Stable fiscal and beneficiary denominator",
+            "Cash-flow and loss series",
+            "Distributional and counterfactual analysis"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/finance-and-risk/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-012",
+      "topic_id": "topic-human-futures",
+      "desk_id": "140-DESK-012",
+      "slug": "human-futures",
+      "title": "Human Futures delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-045",
+          "mission_decision_id": null,
+          "question": "Which populations and places have current baselines for access, affordability, safety, capability, trust and lived conditions?",
+          "required_evidence": [
+            "Population and place identity",
+            "Access and welfare definitions",
+            "Baseline period and distribution"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-046",
+          "mission_decision_id": null,
+          "question": "How do public authority, finance, infrastructure, workforce and legitimacy shape whether frontier systems reach people?",
+          "required_evidence": [
+            "Authority and delivery institutions",
+            "Infrastructure and workforce milestones",
+            "Participation and legitimacy record"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-047",
+          "mission_decision_id": null,
+          "question": "Which accepted and repeated services establish real availability, accessibility, quality and use for defined populations?",
+          "required_evidence": [
+            "Service and eligible-population denominator",
+            "Availability, uptake and quality records",
+            "Barrier, complaint and exclusion evidence"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-048",
+          "mission_decision_id": null,
+          "question": "What changes in capability, health, security, time, income, participation and trust can be measured, for whom, and with what alternatives?",
+          "required_evidence": [
+            "Disaggregated repeated measures",
+            "Comparable pre/post or cohort evidence",
+            "Confounders and lived-experience evidence"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/human-futures/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-013",
+      "topic_id": "topic-mobility",
+      "desk_id": "140-DESK-013",
+      "slug": "mobility",
+      "title": "Mobility delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-049",
+          "mission_decision_id": "134-MISSION-005",
+          "question": "Which named networks, fleets, routes and services have current baselines for capacity, access, reliability, safety and use?",
+          "required_evidence": [
+            "Operator, route, fleet or service identity",
+            "Exposure and service denominator",
+            "Current reliability and access baseline"
+          ],
+          "current_state": "Decision packet complete — mission answer remains unadjudicated",
+          "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-050",
+          "mission_decision_id": null,
+          "question": "How do authority, infrastructure, procurement, certification, workforce and local rules govern movement from pilot to public service?",
+          "required_evidence": [
+            "Operating and local authority",
+            "Procurement and infrastructure milestone",
+            "Certification and workforce record"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-051",
+          "mission_decision_id": null,
+          "question": "Which acceptance, availability, trip, maintenance and incident records establish sustained service?",
+          "required_evidence": [
+            "Service acceptance",
+            "Trip, mileage or service-hour denominator",
+            "Repeated availability and maintenance periods"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-052",
+          "mission_decision_id": null,
+          "question": "Which compatible safety, travel-time, affordability, accessibility, emissions and land-use outcomes follow?",
+          "required_evidence": [
+            "Exposure-compatible safety series",
+            "User and geography denominator",
+            "Multi-period service and externality measures"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/mobility/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-014",
+      "topic_id": "topic-policy-and-standards",
+      "desk_id": "140-DESK-014",
+      "slug": "policy-and-standards",
+      "title": "Policy and Standards delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-053",
+          "mission_decision_id": null,
+          "question": "Which laws, rules, standards, permits and institutional responsibilities currently govern each priority conversion pathway?",
+          "required_evidence": [
+            "Instrument and issuer identity",
+            "Effective date and jurisdiction",
+            "Scope, conditions and supersession status"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-054",
+          "mission_decision_id": null,
+          "question": "Which budgets, procurements, implementation plans, inspections and enforcement actions convert formal authority into practice?",
+          "required_evidence": [
+            "Implementation responsibility",
+            "Funding and procurement record",
+            "Inspection, enforcement and exception evidence"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-055",
+          "mission_decision_id": null,
+          "question": "Which verified cutovers, compliance records and repeated practices establish adoption rather than publication?",
+          "required_evidence": [
+            "Named adopter cohort",
+            "Compliance and acceptance criteria",
+            "Repeated audit or operating record"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-056",
+          "mission_decision_id": null,
+          "question": "Which service, safety, access, cost, legitimacy and distributional outcomes change after implementation, and what else could explain them?",
+          "required_evidence": [
+            "Stable affected-population denominator",
+            "Pre/post and implementation timing",
+            "Alternative explanations and enforcement variation"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/policy-and-standards/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-015",
+      "topic_id": "topic-quantum",
+      "desk_id": "140-DESK-015",
+      "slug": "quantum",
+      "title": "Quantum delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-057",
+          "mission_decision_id": null,
+          "question": "Which quantum systems and use cases have reproducible baselines for fidelity, scale, error, runtime, cost and classical alternatives?",
+          "required_evidence": [
+            "Device and workload identity",
+            "Metric and test protocol",
+            "Classical baseline and uncertainty"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-058",
+          "mission_decision_id": null,
+          "question": "How do standards, supply chains, facilities, security requirements, procurement and validation govern movement beyond the laboratory?",
+          "required_evidence": [
+            "Standard and security authority",
+            "Component and facility evidence",
+            "Procurement and validation record"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-059",
+          "mission_decision_id": null,
+          "question": "Which accepted deployments and repeated workloads establish reliable institutional use or completed cryptographic migration?",
+          "required_evidence": [
+            "Receiving organization and acceptance",
+            "Repeated workload or migration cohort",
+            "Failure, rollback and retirement records"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-060",
+          "mission_decision_id": "134-MISSION-006",
+          "question": "Which compatible scientific, operational, security, cost and capability outcomes are observable, and which remain scenarios?",
+          "required_evidence": [
+            "Stable task and system denominator",
+            "Multi-period accepted-use evidence",
+            "Explicit forecast-versus-observation boundary"
+          ],
+          "current_state": "Decision packet complete — mission answer remains unadjudicated",
+          "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/quantum/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-016",
+      "topic_id": "topic-space",
+      "desk_id": "140-DESK-016",
+      "slug": "space",
+      "title": "Space delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-061",
+          "mission_decision_id": null,
+          "question": "Which launch sites, vehicles, spacecraft and mission services have current baselines for authority, capacity, cadence, reliability and use?",
+          "required_evidence": [
+            "Site, vehicle and operator identity",
+            "Mission and capacity definitions",
+            "Current licence and operating baseline"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-062",
+          "mission_decision_id": null,
+          "question": "How do environmental review, licensing, range capacity, infrastructure, manufacturing, finance and customer commitments govern mission delivery?",
+          "required_evidence": [
+            "Site and operator authority",
+            "Infrastructure and production milestones",
+            "Manifest or customer commitment"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-063",
+          "mission_decision_id": null,
+          "question": "Which asset acceptance, mission, turnaround and recurring-service records establish dependable capacity?",
+          "required_evidence": [
+            "Accepted asset or mission disposition",
+            "Cadence and turnaround denominator",
+            "Repeated reliability and anomaly records"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-064",
+          "mission_decision_id": null,
+          "question": "Which compatible reliability, cost, access, scientific, environmental and local outcomes follow from sustained activity?",
+          "required_evidence": [
+            "Vehicle-, mission- or site-specific series",
+            "Cost and access denominator",
+            "Environmental and community measures"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/space/"
+    },
+    {
+      "roadmap_id": "142-ROADMAP-017",
+      "topic_id": "topic-water",
+      "desk_id": "140-DESK-017",
+      "slug": "water",
+      "title": "Water delivery roadmap",
+      "horizon_milestones": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-065",
+          "mission_decision_id": null,
+          "question": "Which basins, utilities, facilities and user classes have current baselines for supply, demand, quality, reliability and ecological condition?",
+          "required_evidence": [
+            "Basin, utility, facility and user identity",
+            "Flow, quality and demand definitions",
+            "Baseline period and climate context"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-066",
+          "mission_decision_id": null,
+          "question": "How do rights, permits, finance, treatment, conveyance, energy and governance constrain delivery of new water service or reuse?",
+          "required_evidence": [
+            "Rights and permit disposition",
+            "Infrastructure chronology",
+            "Treatment, conveyance and utility acceptance criteria"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-067",
+          "mission_decision_id": null,
+          "question": "Which accepted-flow, quality, compliance and repeated-service records establish dependable operation?",
+          "required_evidence": [
+            "Receiving utility or regulator acceptance",
+            "Metered flow and quality denominator",
+            "Repeated compliance and outage periods"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-068",
+          "mission_decision_id": null,
+          "question": "Which compatible affordability, reliability, ecosystem, health and industrial-resource outcomes follow, and how are drought and demand changes handled?",
+          "required_evidence": [
+            "Stable user and hydrologic denominator",
+            "Multi-period service and ecosystem series",
+            "Climate, demand and attribution controls"
+          ],
+          "current_state": "Research packet assembled — answer not adjudicated",
+          "next_action": "Review the contextual shelf and exact acquisition packets against every required evidence item, then record a later dated bounded answer, explicit gap, or inadmissibility decision.",
+          "stop_rule": "Stop at an assembled research packet. Do not publish an answer, advance a conversion stage, create an observation or outcome, or infer that evidence is absent until a dated human review applies every acceptance and rejection rule."
+        }
+      ],
+      "delivery_sequence": [
+        "Resolve exact authority and artifact identity",
+        "Adjudicate every mission requirement",
+        "Retain project and place conversion boundaries",
+        "Admit compatible longitudinal evidence only after all four eligibility tests",
+        "Revise synthesis only through a dated governed decision"
+      ],
+      "success_definition": "A bounded, source-resolved public answer or explicit gap for every horizon, with no stage substitution or hidden denominator change.",
+      "route": "/review/v09/roadmaps/water/"
+    }
+  ],
+  "public_html_routes": [
+    "/review/v09/roadmaps/",
+    "/review/v09/roadmaps/advanced-manufacturing/",
+    "/review/v09/roadmaps/agriculture-and-bioeconomy/",
+    "/review/v09/roadmaps/ai-for-science/",
+    "/review/v09/roadmaps/aviation/",
+    "/review/v09/roadmaps/chips-and-compute/",
+    "/review/v09/roadmaps/climate/",
+    "/review/v09/roadmaps/critical-minerals/",
+    "/review/v09/roadmaps/cybersecurity/",
+    "/review/v09/roadmaps/discovery-technologies/",
+    "/review/v09/roadmaps/energy/",
+    "/review/v09/roadmaps/finance-and-risk/",
+    "/review/v09/roadmaps/human-futures/",
+    "/review/v09/roadmaps/mobility/",
+    "/review/v09/roadmaps/policy-and-standards/",
+    "/review/v09/roadmaps/quantum/",
+    "/review/v09/roadmaps/space/",
+    "/review/v09/roadmaps/water/"
+  ],
+  "public_json_exports": [
+    "/data/phase-142-topic-delivery-roadmaps.json"
+  ]
+}

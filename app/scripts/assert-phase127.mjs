@@ -258,6 +258,10 @@ const placeWordCounts = registry.place_biographies.map((record) => record.narrat
 check(registry.counts.project_authored_words === projectWordCounts.reduce((sum, value) => sum + value, 0) && registry.counts.minimum_project_authored_words === Math.min(...projectWordCounts), "Phase 127 project word metrics are stale.");
 check(registry.counts.place_authored_words === placeWordCounts.reduce((sum, value) => sum + value, 0) && registry.counts.minimum_place_authored_words === Math.min(...placeWordCounts), "Phase 127 place word metrics are stale.");
 check(new Set(projectNarratives).size === 24 && new Set(placeNarratives).size === 15 && new Set(allNarrativeBodies).size === allNarrativeBodies.length, "Phase 127 contains duplicated full biographies or narrative-section bodies.");
+check(
+  allNarrativeBodies.every((body) => !/because\s+The\b/.test(body) && !/question remains\s+[A-Z]/.test(body)),
+  "Phase 127 contains a broken because-clause or an unpunctuated editorial-question fragment.",
+);
 
 const futureGates = cycle.records.filter((record) => record.scheduled_check_date > registry.effective_date);
 check(futureGates.length === 11 && futureGates.every((record) => record.decision_status === "scheduled" && record.decision_date === null && record.receipt_id === null), "Phase 127 must leave all eleven post-August-30 Phase 60 gates scheduled and unreceipted.");

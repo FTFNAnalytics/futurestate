@@ -7,14 +7,20 @@ interface Props {
 }
 
 const { eyebrow, title, summary, phase } = Astro.props;
+const eyebrowLabel = phase && !new RegExp(`\\bPhase\\s+${phase}\\b`, "i").test(eyebrow)
+  ? `Phase ${phase} · ${eyebrow}`
+  : eyebrow;
 ---
 
 <header class="page-section review-hero">
-  <div class="eyebrow">{phase ? `Phase ${phase} · ${eyebrow}` : eyebrow}</div>
+  <div class="eyebrow">{eyebrowLabel}</div>
   <h1>{title}</h1>
   <p class="lede">{summary}</p>
   <nav class="review-subnav" aria-label="Public knowledge edition">
     <a href="/review/">Review</a>
+    <a href="/review/v09/">Living Intelligence</a>
+    <a href="/review/v08/">Conversion Atlas</a>
+    <a href="/review/v07/">Admission Dockets</a>
     <a href="/review/v06/">Open Evidence Review</a>
     <a href="/review/v05/">Evidence Fieldbook</a>
     <a href="/review/encyclopedia/">Encyclopedia</a>

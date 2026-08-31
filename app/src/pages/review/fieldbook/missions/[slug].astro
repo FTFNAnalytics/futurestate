@@ -10,6 +10,11 @@ import acquisition from "../../../../data/phase-120-evidence-acquisition-packets
 import authority from "../../../../data/phase-117-global-authority-graph.json";
 import atlas from "../../../../data/phase-119-deep-project-place-atlas.json";
 import missionAudits from "../../../../data/phase-126-mission-evidence-audits.json";
+import gapMaps from "../../../../data/phase-130-authority-gap-closure-maps.json";
+import admissionDockets from "../../../../data/phase-131-priority-evidence-admission-dockets.json";
+import sourceChecks from "../../../../data/phase-132-dated-source-check-receipts.json";
+import adjudications from "../../../../data/phase-133-requirement-adjudication-board.json";
+import missionDecisions from "../../../../data/phase-134-mission-decision-register.json";
 
 export function getStaticPaths() {
   return program.missions.map((mission) => ({ params: { slug: mission.slug }, props: { missionId: mission.mission_id } }));
@@ -30,6 +35,11 @@ const signalById = new Map((await getCollection("signals")).map((record) => [rec
 const sourceById = new Map((await getCollection("sources")).map((record) => [record.data.id, record]));
 const selectedSignals = mission.relationships.context_signal_ids.map((id) => signalById.get(id)).filter(Boolean);
 const selectedSources = mission.relationships.context_source_ids.map((id) => sourceById.get(id)).filter(Boolean);
+const gapMap = gapMaps.gap_maps.find((record) => record.mission_id === mission.mission_id);
+const admissionDocket = admissionDockets.admission_dockets.find((record) => record.mission_id === mission.mission_id);
+const missionSourceChecks = sourceChecks.source_check_receipts.filter((record) => record.mission_id === mission.mission_id);
+const missionAdjudications = adjudications.adjudication_items.filter((record) => record.mission_id === mission.mission_id);
+const decisionPacket = missionDecisions.mission_decisions.find((record) => record.mission_id === mission.mission_id);
 ---
 
 <BaseLayout title={`${mission.title} | FTFN`} description={mission.research_contract.question}>
@@ -168,6 +178,16 @@ const selectedSources = mission.relationships.context_source_ids.map((id) => sou
   </section>
 
   <MissionEvidenceAudit audit={missionAudit} />
+
+  {(gapMap || admissionDocket || decisionPacket) && (
+    <>
+      <section class="page-section briefing-band">
+        <div class="briefing-band__copy"><div class="eyebrow">v0.7 admission control</div><h2>{decisionPacket?.mission_decision_state ?? gapMap?.map_state}</h2><p>{gapMap?.missing_authority_role ?? admissionDocket?.completion_rule}</p><p>Source checks and adjudication packets are inspectable; an authorized human decision is still required before evidence or a mission answer can move.</p></div>
+        <article class="record-card record-card--featured"><MetaPill label={admissionDocket ? `${admissionDocket.requirements.length} requirement dockets` : "Authority gap mapped"} tone="review" /><h3>Inspect the current control record</h3>{decisionPacket ? <a class="inline-link" href={decisionPacket.route}>Open mission decision packet</a> : <a class="inline-link" href="/review/v07/authority-gaps/">Open authority-gap maps</a>}</article>
+      </section>
+      {(missionSourceChecks.length > 0 || missionAdjudications.length > 0) && <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Requirement-level provenance</div><h2>Source checks and owner decisions remain separate.</h2></div><MetaPill label={`${missionSourceChecks.length} checks · ${missionAdjudications.length} adjudications`} tone="review" /></div><div class="source-list">{missionAdjudications.map((item) => { const receipt = missionSourceChecks.find((record) => record.receipt_id === item.source_check_receipt_id); return <article class="source-row"><div class="meta-row"><MetaPill label={item.adjudication_id} /><MetaPill label={item.decision_state} tone="review" /></div><h3>{item.requirement}</h3><p>{receipt?.check_result}</p><p class="card-note">Checked {receipt?.source_checked_date} · receipt {receipt?.receipt_id} · admission effect {receipt?.admission_effect}</p><p class="card-note">Next: {item.next_action}</p></article>; })}</div><p><a class="inline-link" href="/review/v07/source-checks/">All source-check receipts</a> · <a class="inline-link" href="/review/v07/requirements/">All requirement adjudications</a></p></section>}
+    </>
+  )}
 
   <section class="page-section prose-page">
     <h2>Interpretation boundary</h2>

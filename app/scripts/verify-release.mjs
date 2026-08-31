@@ -17,6 +17,20 @@ const sameSet = (left, right) => Array.isArray(left) && Array.isArray(right) && 
 const readText = (path) => readFile(path, "utf8");
 const readJson = async (path) => JSON.parse(await readText(path));
 
+async function mapWithConcurrency(items, concurrency, mapper) {
+  const results = new Array(items.length);
+  let cursor = 0;
+  const workers = Array.from({ length: Math.min(concurrency, items.length) }, async () => {
+    while (cursor < items.length) {
+      const index = cursor;
+      cursor += 1;
+      results[index] = await mapper(items[index], index);
+    }
+  });
+  await Promise.all(workers);
+  return results;
+}
+
 async function collectFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
   const nested = await Promise.all(
@@ -45,6 +59,30 @@ function hasCanonical(html, expected) {
 }
 
 const manifest = await readJson(manifestPath);
+const currentReleaseGateContract = [
+  "Confirm 6,504 generated HTML pages, 86 top-level public JSON exports, 169 update records and all required outputs",
+  "Confirm all 1,121 Published signal URLs are present in the sitemap and all 285 In Review signal URLs remain outside it",
+  "Confirm all 453 Published briefing URLs and 177 Published dependency-map URLs are indexed under their declared publication policy",
+  "Confirm all 502 sources supporting Published signals were checked on or after 2026-07-22",
+  "Confirm all 64 research collections render 1,629 document summaries and their downloadable archives",
+];
+const staleReleaseGateFragments = [
+  "3,725 generated HTML pages",
+  "1,011 Published signal URLs",
+  "fifty-five Published briefing URLs",
+  "498 sources supporting Published signals",
+  "five public JSON exports",
+  "five public JSON files",
+  "78-entry public update log",
+  "fifty-nine research collections",
+];
+check(manifest.package_version === "0.9.0" && manifest.content_version === "0.9", "The deployment manifest must identify the v0.9.0 package and v0.9 content release.");
+check(manifest.deployment_status === "v0.9-locally-release-validated-owner-only-deployment-pending-historical-version-79-remains-live", "The deployment manifest must distinguish the local v0.9 release from the historical owner-only preview.");
+check(manifest.private_preview?.content_scope === "Historical owner-only version 79 preview; it does not contain the current uncommitted v0.9 working tree.", "The historical owner-only preview is missing its v0.9 scope boundary.");
+check(manifest.current_release_deployment?.content_version === "0.9" && manifest.current_release_deployment?.local_release_verified === true && manifest.current_release_deployment?.github_published === false && manifest.current_release_deployment?.hosted === false && manifest.current_release_deployment?.owner_acceptance === false && manifest.current_release_deployment?.public_launch_authorized === false, "The current v0.9 deployment boundary is incomplete or overstated.");
+check(currentReleaseGateContract.every((gate) => manifest.release_gates?.includes(gate)), "The deployment manifest is missing one or more current global release gates.");
+check(!manifest.release_gates?.some((gate) => staleReleaseGateFragments.some((fragment) => gate.includes(fragment))), "The deployment manifest retains a superseded global release threshold.");
+check(manifest.phase_140_144_delta?.local_validation_receipt_id === "144-LOCAL-VALIDATION-2026-08-30" && manifest.phase_140_144_delta?.receipt_follow_up?.status === "completed" && manifest.phase_140_144_delta?.receipt_follow_up?.completed_date === "2026-08-31", "The manifest must record completion of the immutable Phase 144 receipt's at-issuance follow-up.");
 const signals = await readJson(join(distRoot, "data", "signals.json"));
 const sources = await readJson(join(distRoot, "data", "sources.json"));
 const topics = await readJson(join(distRoot, "data", "topics.json"));
@@ -113,6 +151,15 @@ const phase127BiographiesExport = await readJson(join(distRoot, "data", "phase-1
 const phase128TopicReviewsExport = await readJson(join(distRoot, "data", "phase-128-topic-state-of-evidence-reviews.json"));
 const phase129SystemSynthesesExport = await readJson(join(distRoot, "data", "phase-129-cross-system-evidence-syntheses.json"));
 const v06OpenEvidenceReviewExport = await readJson(join(distRoot, "data", "v06-open-evidence-review.json"));
+const v07V09ExportRoutes = [
+  ...(manifest.v07_public_json_exports ?? []),
+  ...(manifest.v08_public_json_exports ?? []),
+  ...(manifest.v09_public_json_exports ?? []),
+];
+const v07V09Exports = await Promise.all(
+  v07V09ExportRoutes.map((route) => readJson(join(distRoot, route.replace(/^\//, "")))),
+);
+const v07V09ExportByProgram = new Map(v07V09Exports.map((dataset) => [dataset.program_id, dataset]));
 const sitemap = await readText(join(distRoot, "sitemap.xml"));
 const robots = await readText(join(distRoot, "robots.txt"));
 const updatesHtml = await readText(join(distRoot, "updates", "index.html"));
@@ -194,9 +241,12 @@ const downloadsRoot = join(distRoot, "downloads");
 const htmlCount = allDistFiles.filter(
   (path) => extname(path) === ".html" && !path.startsWith(downloadsRoot),
 ).length;
+const publicJsonExportCount = allDistFiles.filter(
+  (path) => dirname(path) === join(distRoot, "data") && extname(path) === ".json",
+).length;
 const publicTextExtensions = new Set([".html", ".json", ".xml", ".txt", ".js", ".css"]);
 const publicTextFiles = allDistFiles.filter((path) => publicTextExtensions.has(extname(path)));
-const publicBuildText = (await Promise.all(publicTextFiles.map((path) => readText(path)))).join("\n");
+const publicBuildText = (await mapWithConcurrency(publicTextFiles, 32, (path) => readText(path))).join("\n");
 const signalStatusById = new Map(
   await Promise.all(
     signalFiles.map(async (name) => {
@@ -266,7 +316,14 @@ check(
   [phase125AnnotationsExport, phase126AuditsExport, phase127BiographiesExport, phase128TopicReviewsExport, phase129SystemSynthesesExport, v06OpenEvidenceReviewExport].every((dataset) => dataset.schema_version === "1.0"),
   "All v0.6 public exports must use schema version 1.0.",
 );
-check(manifest.expected_build.public_json_exports === 68, "Manifest must record sixty-eight public JSON exports.");
+check(
+  v07V09Exports.length === 18 && v07V09Exports.every((dataset) => dataset.schema_version === "1.0"),
+  "All eighteen v0.7-v0.9 public exports must exist and use schema version 1.0.",
+);
+check(
+  publicJsonExportCount === manifest.expected_build.public_json_exports,
+  `Expected ${manifest.expected_build.public_json_exports} public JSON exports, found ${publicJsonExportCount}.`,
+);
 check(
   phase60cDeskExport.count === manifest.expected_build.phase_60c_desk_records,
   `Expected ${manifest.expected_build.phase_60c_desk_records} Wave 60C desk records, found ${phase60cDeskExport.count}.`,
@@ -4080,6 +4137,123 @@ for (const route of manifest.v06_new_html_routes) {
   check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
 }
 
+const phase130To144Contracts = [
+  [130, "FTFN-PHASE-130", { gap_missions: 12, priority_paths: 6, acquisition_paths_open: 12, artifacts_admitted: 0, mission_answers_created: 0 }],
+  [131, "FTFN-PHASE-131", { mission_dockets: 6, requirement_dockets: 18, candidate_artifact_links: 25, owner_decisions_pending: 18, artifacts_admitted: 0 }],
+  [132, "FTFN-PHASE-132", { source_check_receipts: 18, receipts_with_artifacts: 16, bounded_no_artifact_receipts: 2, evidence_admission_receipts: 0 }],
+  [133, "FTFN-PHASE-133", { requirements: 18 }],
+  [134, "FTFN-PHASE-134", { mission_decision_packets: 6, canonical_missions_mutated: 0 }],
+  [135, "FTFN-PHASE-135", { atlas_records: 39, projects: 24, places: 15, tier_a_records: 13, tier_b_records: 26, project_or_place_stage_advances: 0 }],
+  [136, "FTFN-PHASE-136", { project_chronicles: 24, governed_chronicles: 8, curated_chronicles: 16, event_links: 17, stage_advances: 0 }],
+  [137, "FTFN-PHASE-137", { place_ledgers: 15, governed_ledgers: 5, curated_ledgers: 10, related_project_links: 16, synthetic_place_stages: 0 }],
+  [138, "FTFN-PHASE-138", { eligibility_reviews: 39, candidate_shelves: 38, legacy_panel_joins: 12, governed_file_joins: 8, admitted_series: 0, observation_values_created: 0, outcome_claims_created: 0 }],
+  [139, "FTFN-PHASE-139", { dossier_rereviews: 12, context_only: 12, verdict_changes: 0, scores_created: 0, ranks_created: 0, causal_findings_created: 0 }],
+  [140, "FTFN-PHASE-140", { living_topic_desks: 17, mission_links: 68, acquisition_gap_links: 12, desks_in_inaugural_edition: 17 }],
+  [141, "FTFN-PHASE-141", { almanac_entries: 56, topics: 17, projects: 24, places: 15 }],
+  [142, "FTFN-PHASE-142", { topic_roadmaps: 17, horizon_milestones: 68, numeric_rankings: 0 }],
+  [143, "FTFN-PHASE-143", { editions: 5, published_editions: 1, scheduled_editions: 4, desks_in_inaugural_edition: 17, future_content_predated: 0 }],
+  [144, "FTFN-PHASE-144", { launch_gates: 14, passed: 10, held: 4, pending_build: 0, false_passes: 0 }],
+];
+for (const [phase, programId, expectedCounts] of phase130To144Contracts) {
+  const dataset = v07V09ExportByProgram.get(programId);
+  check(Boolean(dataset), `The Phase ${phase} public export is missing.`);
+  for (const [key, expected] of Object.entries(expectedCounts)) {
+    check(dataset?.counts?.[key] === expected, `Phase ${phase} must report ${key}=${expected}.`);
+    check(manifest.expected_build[`phase_${phase}_${key}`] === expected, `The manifest must report Phase ${phase} ${key}=${expected}.`);
+  }
+}
+
+const versionContracts = [
+  ["0.7", "FTFN-V0.7-EVIDENCE-ADMISSION-DOCKETS", 12, 6, manifest.v07_public_html_routes, manifest.v07_public_json_exports],
+  ["0.8", "FTFN-V0.8-CONVERSION-AND-LONGITUDINAL-ATLAS", 57, 6, manifest.v08_public_html_routes, manifest.v08_public_json_exports],
+  ["0.9", "FTFN-V0.9-LIVING-PUBLIC-INTELLIGENCE", 101, 6, manifest.v09_public_html_routes, manifest.v09_public_json_exports],
+];
+for (const [version, programId, routeCount, exportCount, manifestRoutes, manifestExports] of versionContracts) {
+  const dataset = v07V09ExportByProgram.get(programId);
+  check(
+    dataset?.version === version && dataset?.counts?.phases === 5 && dataset?.counts?.public_html_routes === routeCount && dataset?.counts?.public_json_exports === exportCount,
+    `The v${version} aggregate must preserve five phases, ${routeCount} routes and ${exportCount} exports.`,
+  );
+  check(sameSet(dataset?.public_html_routes, manifestRoutes), `The v${version} manifest route inventory differs from its aggregate.`);
+  check(sameSet(dataset?.public_json_exports, manifestExports), `The v${version} manifest export inventory differs from its aggregate.`);
+}
+const v07V09Routes = [
+  ...(manifest.v07_public_html_routes ?? []),
+  ...(manifest.v08_public_html_routes ?? []),
+  ...(manifest.v09_public_html_routes ?? []),
+];
+check(v07V09Routes.length === 170 && new Set(v07V09Routes).size === 170, "The v0.7-v0.9 manifest must contain 170 unique HTML routes.");
+check(v07V09ExportRoutes.length === 18 && new Set(v07V09ExportRoutes).size === 18, "The v0.7-v0.9 manifest must contain 18 unique JSON exports.");
+for (const route of v07V09Routes) {
+  const html = await readText(routeToHtml(route));
+  check(hasRobots(html, "index, follow"), `${route} must be indexable.`);
+  check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
+  check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
+}
+
+const p132 = v07V09ExportByProgram.get("FTFN-PHASE-132");
+const p133 = v07V09ExportByProgram.get("FTFN-PHASE-133");
+const p134 = v07V09ExportByProgram.get("FTFN-PHASE-134");
+const p138 = v07V09ExportByProgram.get("FTFN-PHASE-138");
+const p139 = v07V09ExportByProgram.get("FTFN-PHASE-139");
+const p140 = v07V09ExportByProgram.get("FTFN-PHASE-140");
+const p141 = v07V09ExportByProgram.get("FTFN-PHASE-141");
+const p142 = v07V09ExportByProgram.get("FTFN-PHASE-142");
+const p143 = v07V09ExportByProgram.get("FTFN-PHASE-143");
+const p144 = v07V09ExportByProgram.get("FTFN-PHASE-144");
+check(
+  p132?.source_check_receipts?.length === 18 && p132.source_check_receipts.every((receipt) => receipt.source_checked_date === "2026-08-30" && receipt.admissibility_decision === "Not made — pending required human adjudication" && receipt.admission_effect === "None" && receipt.source_check_provenance?.every((source) => source.source_last_checked_date === "2026-08-30")),
+  "Phase 132 source checks must carry exact 2026-08-30 provenance and remain non-admission triage receipts.",
+);
+const allowedRequirementDecisions = new Set(["Pending owner adjudication", "Accepted", "Rejected", "Inadmissible", "Bounded gap"]);
+check(
+  p133?.adjudication_items?.length === 18 && p133.adjudication_items.every((item) => allowedRequirementDecisions.has(item.decision_state) && (item.decision_state === "Pending owner adjudication" ? item.decision_date === null && item.decision_receipt_id === null && item.accepted_source_ids.length === 0 : Boolean(item.decision_date && item.decision_receipt_id))) && Object.values(p133.counts).filter((value) => Number.isInteger(value)).length > 0,
+  "Phase 133 must preserve eighteen structurally valid pending or receipted governed adjudications.",
+);
+check(
+  ["pending_owner_adjudication", "accepted", "rejected", "inadmissible", "bounded_gap_decisions"].reduce((sum, key) => sum + (p133?.counts?.[key] ?? 0), 0) === 18,
+  "Phase 133 decision-state counters must partition all eighteen requirements.",
+);
+check(
+  p134?.mission_decisions?.length === 6 && p134.mission_decisions.every((decision) => decision.answer === null ? decision.decision_date === null && decision.decision_receipt_id === null : Boolean(decision.decision_date && decision.decision_receipt_id && decision.requirements_decided === decision.requirements_total)),
+  "Phase 134 must preserve six structurally valid pending or receipted governed mission decisions.",
+);
+check((p134?.counts?.answers_adjudicated ?? 0) + (p134?.counts?.owner_decisions_pending ?? 0) === 6, "Phase 134 answer counters must partition all six mission packets.");
+check(
+  p138?.eligibility_records?.length === 39 && p138.counts.legacy_panel_joins === 12 && p138.counts.governed_file_joins === 8 && p138.eligibility_records.every((record) => record.tests?.length === 4 && record.series_admitted === false && record.observation_values.length === 0),
+  "Phase 138 must preserve twelve legacy joins, eight governed-file joins, four eligibility tests per record, and zero admitted values.",
+);
+const eligibilityIds = new Set(p138?.eligibility_records?.map((record) => record.eligibility_id) ?? []);
+check(
+  p139?.comparison_reviews?.length === 12 && p139.comparison_reviews.every((review) => review.rereview_verdict === "Context only" && review.verdict_changed === false && review.longitudinal_eligibility_ids.every((id) => eligibilityIds.has(id))),
+  "Phase 139 must preserve all twelve Context only verdicts and resolve every Phase 138 eligibility join.",
+);
+check(
+  p140?.topic_desks?.length === 17 && p140.counts.desks_in_inaugural_edition === 17 && p140.topic_desks.every((desk) => desk.mission_ids.length === desk.next_actions.length),
+  "Phase 140 must publish seventeen fully joined inaugural desks.",
+);
+check(
+  p141?.almanac_entries?.length === 56 && p141.almanac_entries.every((entry) => !("evidence_ids" in entry) && Array.isArray(entry.mission_ids) && Array.isArray(entry.signal_ids) && Array.isArray(entry.source_ids)),
+  "Phase 141 must expose typed mission, signal and source references for every almanac entry.",
+);
+const missionDecisionByMissionId = new Map(p134?.mission_decisions?.map((decision) => [decision.mission_id, decision]) ?? []);
+check(
+  p142?.topic_roadmaps?.length === 17 && p142.topic_roadmaps.flatMap((roadmap) => roadmap.horizon_milestones).length === 68 && p142.topic_roadmaps.flatMap((roadmap) => roadmap.horizon_milestones).every((milestone) => { const decision = missionDecisionByMissionId.get(milestone.mission_id); return decision ? milestone.mission_decision_id === decision.mission_decision_id && milestone.current_state === decision.mission_decision_state : milestone.mission_decision_id === null; }),
+  "Phase 142 must resolve all available governed mission-decision joins without manufacturing a decision.",
+);
+const inauguralEdition = p143?.editions?.find((edition) => edition.edition_id === "143-EDITION-001");
+check(
+  p143?.editions?.filter((edition) => edition.state === "Published").length === 1 &&
+  Object.keys(inauguralEdition?.editorial_sections ?? {}).length === 6 && inauguralEdition?.desk_dispatches?.length === 17 &&
+  p143?.editions?.filter((edition) => edition.state === "Scheduled — no content prepublished").length === 4 &&
+  p143?.editions?.filter((edition) => edition.state === "Scheduled — no content prepublished").every((edition) => edition.included_desk_ids.length === 0),
+  "Phase 143 must contain one current edition and four empty future schedules.",
+);
+check(
+  p144?.v1_promotion_state === "Held" && p144?.local_validation_receipt?.status === "Passed" && p144?.launch_gates?.filter((gate) => gate.state === "Pass").length === 10 && p144?.launch_gates?.filter((gate) => gate.state === "Held").length === 4 && p144?.launch_gates?.filter((gate) => gate.state === "Pending build").length === 0,
+  "Phase 144 must keep v1 Held with a Passed validation receipt and the exact 10 Pass / 4 Held / 0 Pending split.",
+);
+
 const updateDirectory = join(appRoot, "src", "content", "updates");
 const updateFiles = (await readdir(updateDirectory)).filter((name) => name.endsWith(".json"));
 check(updateFiles.length === manifest.expected_build.updates, `Expected ${manifest.expected_build.updates} update records, found ${updateFiles.length}.`);
@@ -4089,13 +4263,14 @@ for (const filename of updateFiles) {
 }
 
 if (failures.length > 0) {
-  console.error("FTFN v0.2 release verification failed:");
+  console.error("FTFN v0.9 release verification failed:");
   failures.forEach((failure) => console.error(`- ${failure}`));
   process.exit(1);
 }
 
-console.log("FTFN v0.2 release verification passed.");
+console.log("FTFN v0.9 release verification passed.");
 console.log(`${htmlCount} HTML pages; ${signals.count} Published signals; ${sources.count} sources; ${topics.count} topics; ${updateFiles.length} updates.`);
+console.log("v0.7-v0.9: 170 public HTML routes, 18 public JSON exports, 15 phase updates, and v1 promotion Held.");
 console.log(
   `${publishedSourceIds.length} Published-support sources checked on or after ${publishedSupportMinimumDate}.`,
 );

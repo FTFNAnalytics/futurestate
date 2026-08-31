@@ -7,6 +7,7 @@ import program from "../../../data/v03-editorial-program.json";
 import dossiers from "../../../data/phase-123-comparative-delivery-dossiers.json";
 import atlas from "../../../data/phase-119-deep-project-place-atlas.json";
 import evidenceSyntheses from "../../../data/phase-129-cross-system-evidence-syntheses.json";
+import comparisonReviews from "../../../data/phase-139-comparative-dossier-rereview.json";
 
 export function getStaticPaths() {
   return program.cross_system_stories.map((story) => ({ params: { slug: story.slug }, props: { storyId: story.story_id } }));
@@ -25,6 +26,7 @@ const sourceById = new Map((await getCollection("sources")).map((source) => [sou
 const selectedSources = dossier.evidence_source_ids.map((id) => sourceById.get(id)).filter(Boolean);
 const selectedProjects = dossier.atlas_project_ids.map((id) => atlas.projects.find((record) => record.atlas_project_id === id)).filter(Boolean);
 const selectedPlaces = dossier.atlas_place_ids.map((id) => atlas.places.find((record) => record.atlas_place_id === id)).filter(Boolean);
+const rereview = comparisonReviews.comparison_reviews.find((record) => record.dossier_id === dossier.dossier_id)!;
 ---
 
 <BaseLayout title={`${story.title} | Cross-system atlas`} description={story.editorial_question}>
@@ -37,6 +39,7 @@ const selectedPlaces = dossier.atlas_place_ids.map((id) => atlas.places.find((re
       <div class="metric"><strong>{dossier.comparison_passport.verdict}</strong><span>comparison verdict</span></div>
     </div>
   </section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">v0.8 comparison re-review · {rereview.rereview_id}</div><h2>{rereview.rereview_verdict}</h2><p>{rereview.what_is_comparable}</p></div><article class="record-card record-card--featured"><MetaPill label="Verdict unchanged" tone="review" /><h3>What remains incompatible</h3><p>{rereview.what_must_not_be_compared}</p><a class="inline-link" href={rereview.route}>Open the complete re-review</a></article></section>
   <section class="page-section">
     <div class="section-heading"><div><div class="eyebrow">Phase 129 · Open Evidence Review</div><h2>{synthesis.title}.</h2><p>{synthesis.synthesis_state}</p></div><div class="meta-row"><MetaPill label={synthesis.synthesis_id} /><MetaPill label={synthesis.verdict} tone="review" /><MetaPill label={`${synthesis.authored_word_count.toLocaleString()} rendered analysis words`} tone="possibility" /></div></div>
     <div class="briefing-band"><div class="briefing-band__copy"><h3>Synthesis read</h3><p>{synthesis.authored_sections.synthesis_read}</p></div><article class="record-card record-card--featured"><MetaPill label="Exact evidence set retained" tone="review" /><h3>Compatibility, not performance</h3><p>{evidenceSyntheses.dimension_contract.boundary}</p><p><a href="/review/fieldbook/system-reviews/">Open all system reviews</a></p></article></div>

@@ -292,6 +292,42 @@ const researchDocumentIds = indexBy(researchDocuments, "id");
 const readerPathwayIds = indexBy(readerPathways, "id");
 const missionIds = readRegistryIdIndex("phase-121-priority-research-missions.json", "missions", "mission_id", "mission");
 const dossierIds = readRegistryIdIndex("phase-123-comparative-delivery-dossiers.json", "dossiers", "dossier_id", "dossier");
+const releaseRecordSpecs = [
+  ["phase-130-authority-gap-closure-maps.json", "gap_maps", "gap_map_id", "Phase 130 gap map"],
+  ["phase-131-priority-evidence-admission-dockets.json", "admission_dockets", "docket_id", "Phase 131 admission docket"],
+  ["phase-132-dated-source-check-receipts.json", "source_check_receipts", "receipt_id", "Phase 132 source-check receipt"],
+  ["phase-133-requirement-adjudication-board.json", "adjudication_items", "adjudication_id", "Phase 133 adjudication"],
+  ["phase-134-mission-decision-register.json", "mission_decisions", "mission_decision_id", "Phase 134 mission decision"],
+  ["phase-135-atlas-conversion-readiness-audit.json", "readiness_records", "readiness_id", "Phase 135 readiness record"],
+  ["phase-136-named-project-chronicles.json", "project_chronicles", "chronicle_id", "Phase 136 project chronicle"],
+  ["phase-137-place-delivery-ledgers.json", "place_ledgers", "ledger_id", "Phase 137 place ledger"],
+  ["phase-138-longitudinal-evidence-eligibility.json", "eligibility_records", "eligibility_id", "Phase 138 eligibility record"],
+  ["phase-139-comparative-dossier-rereview.json", "comparison_reviews", "rereview_id", "Phase 139 comparison review"],
+  ["phase-140-living-topic-desks.json", "topic_desks", "desk_id", "Phase 140 topic desk"],
+  ["phase-141-frontier-systems-almanac.json", "almanac_entries", "almanac_id", "Phase 141 almanac entry"],
+  ["phase-142-topic-delivery-roadmaps.json", "topic_roadmaps", "roadmap_id", "Phase 142 topic roadmap"],
+  ["phase-143-editorial-cadence-editions.json", "editions", "edition_id", "Phase 143 edition"],
+  ["phase-144-v1-launch-candidate-audit.json", "launch_gates", "gate_id", "Phase 144 launch gate"],
+];
+const releaseProgramIds = new Map(
+  releaseRecordSpecs.map(([fileName], index) => {
+    const phase = 130 + index;
+    const filePath = path.join(dataRoot, fileName);
+    const data = JSON.parse(readFileSync(filePath, "utf8"));
+
+    if (data.program_id !== `FTFN-PHASE-${phase}`) {
+      errors.push(`${toPosixPath(filePath)} has unexpected program_id "${data.program_id}".`);
+    }
+
+    return [data.program_id, { collectionName: "release program", filePath, data }];
+  })
+);
+const releaseRecordIndexes = releaseRecordSpecs.map((spec) => readRegistryIdIndex(...spec));
+const releaseRecordIds = new Map(releaseRecordIndexes.flatMap((index) => [...index]));
+const indexedReleaseRecordCount = releaseRecordIndexes.reduce((sum, index) => sum + index.size, 0);
+if (releaseRecordIds.size !== indexedReleaseRecordCount) {
+  errors.push("Phase 130–144 registries contain a duplicate public record ID across release phases.");
+}
 indexBy(updates, "id");
 
 const allPublicRecordIds = new Map([
@@ -308,7 +344,9 @@ const allPublicRecordIds = new Map([
   ...researchDocumentIds,
   ...readerPathwayIds,
   ...missionIds,
-  ...dossierIds
+  ...dossierIds,
+  ...releaseProgramIds,
+  ...releaseRecordIds
 ]);
 
 const localSystemNames = new Set(localSystems.map((record) => record.data.name).filter(Boolean));

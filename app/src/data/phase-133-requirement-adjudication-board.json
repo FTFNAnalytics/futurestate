@@ -1,0 +1,386 @@
+{
+  "schema_version": "1.0",
+  "phase": 133,
+  "program_id": "FTFN-PHASE-133",
+  "dataset": "phase_133_requirement_adjudication_board",
+  "title": "Requirement adjudication board",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Place all eighteen requirements on one decision board with acceptance tests, rejection risks, and explicit pending-owner states.",
+  "record_scope": "Requirement adjudication board records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "AI-assisted source triage can map exact artifacts and expose their limits, but it cannot stand in for the repository's required human admissibility decision.",
+    "A source-check receipt proves only that the named official artifact was inspected on the stated date; it does not admit the artifact, satisfy a requirement, or answer a mission.",
+    "No project stage, place state, comparison verdict, observation, outcome, score, rank, causal finding, recommendation, or future Phase 60 decision is created.",
+    "A repository-bounded gap says what this reviewed corpus has not established; it never asserts that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v07/requirements/",
+    "public_export": "/data/phase-133-requirement-adjudication-board.json"
+  },
+  "decision_contract": "Every requirement has a complete adjudication packet; none has a fabricated decision.",
+  "counts": {
+    "requirements": 18,
+    "pending_owner_adjudication": 18,
+    "accepted": 0,
+    "rejected": 0,
+    "inadmissible": 0,
+    "bounded_gap_decisions": 0
+  },
+  "adjudication_items": [
+    {
+      "adjudication_id": "133-ADJUDICATION-001",
+      "mission_id": "121-MISSION-004",
+      "requirement_docket_id": "131-REQ-01-01",
+      "source_check_receipt_id": "132-SOURCE-CHECK-001",
+      "requirement": "Stable product and facility denominator",
+      "candidate_source_ids": [
+        "source-56k-f15ex-ex16-portland-receipt-2026"
+      ],
+      "triage_state": "Candidate identity context",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Stable product and facility denominator” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-002",
+      "mission_id": "121-MISSION-004",
+      "requirement_docket_id": "131-REQ-01-02",
+      "source_check_receipt_id": "132-SOURCE-CHECK-002",
+      "requirement": "Multi-period operating series",
+      "candidate_source_ids": [],
+      "triage_state": "Acquisition gap",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Multi-period operating series” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-003",
+      "mission_id": "121-MISSION-004",
+      "requirement_docket_id": "131-REQ-01-03",
+      "source_check_receipt_id": "132-SOURCE-CHECK-003",
+      "requirement": "Revision, downtime and attribution notes",
+      "candidate_source_ids": [
+        "source-56l-monaghan-medical-ccida-fye2025"
+      ],
+      "triage_state": "Candidate reporting context",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Revision, downtime and attribution notes” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-004",
+      "mission_id": "121-MISSION-013",
+      "requirement_docket_id": "131-REQ-02-01",
+      "source_check_receipt_id": "132-SOURCE-CHECK-004",
+      "requirement": "Tail, fleet, airport or route identity",
+      "candidate_source_ids": [
+        "source-56k-f15ex-ex16-portland-receipt-2026"
+      ],
+      "triage_state": "Candidate exact identity artifact",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Tail, fleet, airport or route identity” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-005",
+      "mission_id": "121-MISSION-013",
+      "requirement_docket_id": "131-REQ-02-02",
+      "source_check_receipt_id": "132-SOURCE-CHECK-005",
+      "requirement": "Capacity and readiness definitions",
+      "candidate_source_ids": [
+        "source-faa-powered-lift-final-rule-2024"
+      ],
+      "triage_state": "Adjacent authority artifact",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Capacity and readiness definitions” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-006",
+      "mission_id": "121-MISSION-013",
+      "requirement_docket_id": "131-REQ-02-03",
+      "source_check_receipt_id": "132-SOURCE-CHECK-006",
+      "requirement": "Current operating period",
+      "candidate_source_ids": [
+        "source-faa-powered-lift-final-rule-2024"
+      ],
+      "triage_state": "Adjacent period artifact",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Current operating period” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-007",
+      "mission_id": "121-MISSION-016",
+      "requirement_docket_id": "131-REQ-03-01",
+      "source_check_receipt_id": "132-SOURCE-CHECK-007",
+      "requirement": "Exposure-compatible safety measures",
+      "candidate_source_ids": [
+        "source-56a-dot-atcr-2022",
+        "source-56a-dot-atcr-2023",
+        "source-56a-dot-atcr-2024"
+      ],
+      "triage_state": "Candidate service-quality series",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Exposure-compatible safety measures” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-008",
+      "mission_id": "121-MISSION-016",
+      "requirement_docket_id": "131-REQ-03-02",
+      "source_check_receipt_id": "132-SOURCE-CHECK-008",
+      "requirement": "Route or fleet operating periods",
+      "candidate_source_ids": [
+        "source-56a-dot-atcr-2022",
+        "source-56a-dot-atcr-2023",
+        "source-56a-dot-atcr-2024"
+      ],
+      "triage_state": "Candidate multi-period context",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Route or fleet operating periods” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-009",
+      "mission_id": "121-MISSION-016",
+      "requirement_docket_id": "131-REQ-03-03",
+      "source_check_receipt_id": "132-SOURCE-CHECK-009",
+      "requirement": "Environmental and access denominators",
+      "candidate_source_ids": [],
+      "triage_state": "Acquisition gap",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Environmental and access denominators” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-010",
+      "mission_id": "121-MISSION-025",
+      "requirement_docket_id": "131-REQ-04-01",
+      "source_check_receipt_id": "132-SOURCE-CHECK-010",
+      "requirement": "Asset and material identity",
+      "candidate_source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-blm-rhyolite-ridge-rod-2024"
+      ],
+      "triage_state": "Candidate exact identity artifacts",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Asset and material identity” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-011",
+      "mission_id": "121-MISSION-025",
+      "requirement_docket_id": "131-REQ-04-02",
+      "source_check_receipt_id": "132-SOURCE-CHECK-011",
+      "requirement": "Resource, reserve and capacity definitions",
+      "candidate_source_ids": [
+        "source-doe-thacker-pass-loan-2024"
+      ],
+      "triage_state": "Candidate forecast-definition artifact",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Resource, reserve and capacity definitions” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-012",
+      "mission_id": "121-MISSION-025",
+      "requirement_docket_id": "131-REQ-04-03",
+      "source_check_receipt_id": "132-SOURCE-CHECK-012",
+      "requirement": "Current environmental and operating state",
+      "candidate_source_ids": [
+        "source-blm-rhyolite-ridge-rod-2024"
+      ],
+      "triage_state": "Candidate authority-state artifact",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Current environmental and operating state” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-013",
+      "mission_id": "121-MISSION-049",
+      "requirement_docket_id": "131-REQ-05-01",
+      "source_check_receipt_id": "132-SOURCE-CHECK-013",
+      "requirement": "Operator, route, fleet or service identity",
+      "candidate_source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-cpuc-av-advice-letter-status-2026"
+      ],
+      "triage_state": "Candidate exact service-identity artifacts",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Operator, route, fleet or service identity” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-014",
+      "mission_id": "121-MISSION-049",
+      "requirement_docket_id": "131-REQ-05-02",
+      "source_check_receipt_id": "132-SOURCE-CHECK-014",
+      "requirement": "Exposure and service denominator",
+      "candidate_source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024"
+      ],
+      "triage_state": "Candidate ODD context",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Exposure and service denominator” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-015",
+      "mission_id": "121-MISSION-049",
+      "requirement_docket_id": "131-REQ-05-03",
+      "source_check_receipt_id": "132-SOURCE-CHECK-015",
+      "requirement": "Current reliability and access baseline",
+      "candidate_source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-cpuc-av-advice-letter-status-2026"
+      ],
+      "triage_state": "Adjacent authorization artifacts",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Current reliability and access baseline” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-016",
+      "mission_id": "121-MISSION-060",
+      "requirement_docket_id": "131-REQ-06-01",
+      "source_check_receipt_id": "132-SOURCE-CHECK-016",
+      "requirement": "Stable task and system denominator",
+      "candidate_source_ids": [
+        "source-nist-pqc"
+      ],
+      "triage_state": "Inadmissible-subject warning",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Stable task and system denominator” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-017",
+      "mission_id": "121-MISSION-060",
+      "requirement_docket_id": "131-REQ-06-02",
+      "source_check_receipt_id": "132-SOURCE-CHECK-017",
+      "requirement": "Multi-period accepted-use evidence",
+      "candidate_source_ids": [
+        "source-nist-pqc",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "triage_state": "Inadmissible-subject warning",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Multi-period accepted-use evidence” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_id": "133-ADJUDICATION-018",
+      "mission_id": "121-MISSION-060",
+      "requirement_docket_id": "131-REQ-06-03",
+      "source_check_receipt_id": "132-SOURCE-CHECK-018",
+      "requirement": "Explicit forecast-versus-observation boundary",
+      "candidate_source_ids": [
+        "source-nist-pqc",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "triage_state": "Boundary context only",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Explicit forecast-versus-observation boundary” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    }
+  ],
+  "public_html_routes": [
+    "/review/v07/requirements/"
+  ],
+  "public_json_exports": [
+    "/data/phase-133-requirement-adjudication-board.json"
+  ]
+}

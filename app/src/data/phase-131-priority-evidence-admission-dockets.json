@@ -1,0 +1,576 @@
+{
+  "schema_version": "1.0",
+  "phase": 131,
+  "program_id": "FTFN-PHASE-131",
+  "dataset": "phase_131_priority_evidence_admission_dockets",
+  "title": "Priority evidence admission dockets",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Assemble eighteen requirement-specific dockets for six high-value missions without treating a candidate artifact as admitted evidence.",
+  "record_scope": "Priority evidence admission dockets records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "AI-assisted source triage can map exact artifacts and expose their limits, but it cannot stand in for the repository's required human admissibility decision.",
+    "A source-check receipt proves only that the named official artifact was inspected on the stated date; it does not admit the artifact, satisfy a requirement, or answer a mission.",
+    "No project stage, place state, comparison verdict, observation, outcome, score, rank, causal finding, recommendation, or future Phase 60 decision is created.",
+    "A repository-bounded gap says what this reviewed corpus has not established; it never asserts that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v07/admission-dockets/",
+    "public_export": "/data/phase-131-priority-evidence-admission-dockets.json"
+  },
+  "review_authority": "Prepared by AI-assisted triage; admissibility remains owner-controlled.",
+  "counts": {
+    "mission_dockets": 6,
+    "requirement_dockets": 18,
+    "candidate_artifact_links": 25,
+    "owner_decisions_pending": 18,
+    "artifacts_admitted": 0
+  },
+  "admission_dockets": [
+    {
+      "docket_id": "131-DOCKET-001",
+      "mission_id": "121-MISSION-004",
+      "slug": "advanced-manufacturing-outcome",
+      "title": "Advanced Manufacturing: outcome research mission",
+      "question": "Which compatible yield, quality, cost, schedule, safety and reliability series show whether advanced manufacturing improved receiving-system outcomes?",
+      "completion_rule": "Admit an outcome only with repeated compatible measures, uncertainty and attribution limits; a bounded blocker or inadmissibility decision is a valid completion state.",
+      "upstream_answer_state": "Research packet assembled — answer not adjudicated",
+      "requirements": [
+        {
+          "requirement_docket_id": "131-REQ-01-01",
+          "requirement": "Stable product and facility denominator",
+          "phase_126_test_id": "126-REQ-004-01",
+          "phase_126_screen_state": "Potentially relevant context — not accepted",
+          "candidate_source_ids": [
+            "source-56k-f15ex-ex16-portland-receipt-2026"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-56k-f15ex-ex16-portland-receipt-2026",
+              "name": "142nd Wing: EX16 Comes to Portland",
+              "url": "https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/",
+              "authority": "142nd Wing, Oregon Air National Guard",
+              "known_limitations": "A receiving-unit arrival date is realized delivery evidence but is not, by itself, the formal contractual acceptance date or a complete production-performance series. Phase 56K keeps identity, attribution, timing, evidence state, and continuation rule attached."
+            }
+          ],
+          "triage_state": "Candidate identity context",
+          "triage_note": "The official receipt fixes one F-15EX tail, receiving wing, and arrival date. It does not establish a stable product-and-facility denominator for an outcome series.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Stable product and facility denominator” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        },
+        {
+          "requirement_docket_id": "131-REQ-01-02",
+          "requirement": "Multi-period operating series",
+          "phase_126_test_id": "126-REQ-004-02",
+          "phase_126_screen_state": "No screened-term overlap in title/factual nucleus",
+          "candidate_source_ids": [],
+          "candidate_artifacts": [],
+          "triage_state": "Acquisition gap",
+          "triage_note": "No exact multi-period operating series is mapped in the reviewed mission shelf.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Multi-period operating series” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        },
+        {
+          "requirement_docket_id": "131-REQ-01-03",
+          "requirement": "Revision, downtime and attribution notes",
+          "phase_126_test_id": "126-REQ-004-03",
+          "phase_126_screen_state": "Potentially relevant context — not accepted",
+          "candidate_source_ids": [
+            "source-56l-monaghan-medical-ccida-fye2025"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-56l-monaghan-medical-ccida-fye2025",
+              "name": "Clinton County IDA Certified Annual Report FYE 2025: Monaghan Medical",
+              "url": "https://www.clintoncountyida.com/media/userfiles/subsite_328/files/list-maker/ccida-annual-audit-reports/annual-audit-reports/ccida-2025-annual-audit-report.pdf",
+              "authority": "Clinton County Industrial Development Agency",
+              "known_limitations": "The certified report covers the 2018-approved IDA project completed in 2021, not the separate 2025 ESD commitment. Current FTEs do not establish job causation, and total project amount is not an audited cash-spend measure. Phase 56L keeps identity, period, source role, evidence state, and continuation rule attached."
+            }
+          ],
+          "triage_state": "Candidate reporting context",
+          "triage_note": "The certified annual report supplies a reporting period and attribution limits for a different named facility; it does not supply product downtime, revision, or operating-series evidence for the broader mission.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Revision, downtime and attribution notes” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        }
+      ],
+      "route": "/review/v07/admission-dockets/#advanced-manufacturing-outcome"
+    },
+    {
+      "docket_id": "131-DOCKET-002",
+      "mission_id": "121-MISSION-013",
+      "slug": "aviation-baseline",
+      "title": "Aviation: baseline research mission",
+      "question": "Which named aircraft, airports, propulsion systems and service networks have current baselines for capacity, readiness, safety and use?",
+      "completion_rule": "Publish a bounded answer or an explicit evidence gap with named entities, periods, definitions, denominators, sources and uncertainty; do not substitute a forecast for an observation.",
+      "upstream_answer_state": "Research packet assembled — answer not adjudicated",
+      "requirements": [
+        {
+          "requirement_docket_id": "131-REQ-02-01",
+          "requirement": "Tail, fleet, airport or route identity",
+          "phase_126_test_id": "126-REQ-013-01",
+          "phase_126_screen_state": "No screened-term overlap in title/factual nucleus",
+          "candidate_source_ids": [
+            "source-56k-f15ex-ex16-portland-receipt-2026"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-56k-f15ex-ex16-portland-receipt-2026",
+              "name": "142nd Wing: EX16 Comes to Portland",
+              "url": "https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/",
+              "authority": "142nd Wing, Oregon Air National Guard",
+              "known_limitations": "A receiving-unit arrival date is realized delivery evidence but is not, by itself, the formal contractual acceptance date or a complete production-performance series. Phase 56K keeps identity, attribution, timing, evidence state, and continuation rule attached."
+            }
+          ],
+          "triage_state": "Candidate exact identity artifact",
+          "triage_note": "The official record names F-15EX tail 16, the 142nd Wing, Portland, and a receiving date; owner review must still decide whether that bounded identity satisfies the mission requirement.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Tail, fleet, airport or route identity” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        },
+        {
+          "requirement_docket_id": "131-REQ-02-02",
+          "requirement": "Capacity and readiness definitions",
+          "phase_126_test_id": "126-REQ-013-02",
+          "phase_126_screen_state": "No screened-term overlap in title/factual nucleus",
+          "candidate_source_ids": [
+            "source-faa-powered-lift-final-rule-2024"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-faa-powered-lift-final-rule-2024",
+              "name": "FAA Powered-Lift Pilot Certification and Operations Final Rule",
+              "url": "https://www.faa.gov/newsroom/integration-powered-lift-pilot-certification-and-operations-miscellaneous-amendments",
+              "authority": "Federal Aviation Administration",
+              "known_limitations": "The rule creates pilot, instructor, and operating pathways. It does not grant an aircraft type certificate, operator certificate, route authority, vertiport approval, local acceptance, or commercial service."
+            }
+          ],
+          "triage_state": "Adjacent authority artifact",
+          "triage_note": "The final rule defines powered-lift pilot certification and operating pathways, not a named fleet's capacity or readiness baseline.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Capacity and readiness definitions” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        },
+        {
+          "requirement_docket_id": "131-REQ-02-03",
+          "requirement": "Current operating period",
+          "phase_126_test_id": "126-REQ-013-03",
+          "phase_126_screen_state": "Potentially relevant context — not accepted",
+          "candidate_source_ids": [
+            "source-faa-powered-lift-final-rule-2024"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-faa-powered-lift-final-rule-2024",
+              "name": "FAA Powered-Lift Pilot Certification and Operations Final Rule",
+              "url": "https://www.faa.gov/newsroom/integration-powered-lift-pilot-certification-and-operations-miscellaneous-amendments",
+              "authority": "Federal Aviation Administration",
+              "known_limitations": "The rule creates pilot, instructor, and operating pathways. It does not grant an aircraft type certificate, operator certificate, route authority, vertiport approval, local acceptance, or commercial service."
+            }
+          ],
+          "triage_state": "Adjacent period artifact",
+          "triage_note": "The rule has a dated ten-year regulatory framework, but a regulatory period is not a current operating period for a named fleet, airport, or route.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Current operating period” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        }
+      ],
+      "route": "/review/v07/admission-dockets/#aviation-baseline"
+    },
+    {
+      "docket_id": "131-DOCKET-003",
+      "mission_id": "121-MISSION-016",
+      "slug": "aviation-outcome",
+      "title": "Aviation: outcome research mission",
+      "question": "Which compatible safety, reliability, cost, emissions, noise and access measures show public and system outcomes?",
+      "completion_rule": "Admit an outcome only with repeated compatible measures, uncertainty and attribution limits; a bounded blocker or inadmissibility decision is a valid completion state.",
+      "upstream_answer_state": "Research packet assembled — answer not adjudicated",
+      "requirements": [
+        {
+          "requirement_docket_id": "131-REQ-03-01",
+          "requirement": "Exposure-compatible safety measures",
+          "phase_126_test_id": "126-REQ-016-01",
+          "phase_126_screen_state": "Potentially relevant context — not accepted",
+          "candidate_source_ids": [
+            "source-56a-dot-atcr-2022",
+            "source-56a-dot-atcr-2023",
+            "source-56a-dot-atcr-2024"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-56a-dot-atcr-2022",
+              "name": "Air Travel Consumer Report: 2022 report shelf",
+              "url": "https://www.transportation.gov/individuals/aviation-consumer-protection/air-travel-consumer-reports-2022",
+              "authority": "U.S. Department of Transportation",
+              "known_limitations": "Monthly releases and later revisions must be aligned before annual comparison. Comparison contract: Monthly and annual reporting-carrier service-quality data compiled by DOT and BTS. Denominator: Scheduled domestic flights and other reporting-carrier service records covered by the stated release. Attribution: Carrier-reported official statistics."
+            },
+            {
+              "source_id": "source-56a-dot-atcr-2023",
+              "name": "Air Travel Consumer Report: 2023 report shelf",
+              "url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2023",
+              "authority": "U.S. Department of Transportation",
+              "known_limitations": "Carrier coverage and publication lag travel with the annual measures. Comparison contract: Monthly and annual reporting-carrier service-quality data compiled by DOT and BTS. Denominator: Scheduled domestic flights and other reporting-carrier service records covered by the stated release. Attribution: Carrier-reported official statistics."
+            },
+            {
+              "source_id": "source-56a-dot-atcr-2024",
+              "name": "Air Travel Consumer Report: 2024 report shelf",
+              "url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2024",
+              "authority": "U.S. Department of Transportation",
+              "known_limitations": "Cancellation rate is one service measure, not a complete carrier outcome. Comparison contract: Monthly and annual reporting-carrier service-quality data compiled by DOT and BTS. Denominator: Scheduled domestic flights and other reporting-carrier service records covered by the stated release. Attribution: Carrier-reported official statistics."
+            }
+          ],
+          "triage_state": "Candidate service-quality series",
+          "triage_note": "The DOT reports expose carrier service-quality measures and reporting bases. They do not, without a mission-specific denominator review, establish exposure-compatible aviation safety outcomes.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Exposure-compatible safety measures” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        },
+        {
+          "requirement_docket_id": "131-REQ-03-02",
+          "requirement": "Route or fleet operating periods",
+          "phase_126_test_id": "126-REQ-016-02",
+          "phase_126_screen_state": "Potentially relevant context — not accepted",
+          "candidate_source_ids": [
+            "source-56a-dot-atcr-2022",
+            "source-56a-dot-atcr-2023",
+            "source-56a-dot-atcr-2024"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-56a-dot-atcr-2022",
+              "name": "Air Travel Consumer Report: 2022 report shelf",
+              "url": "https://www.transportation.gov/individuals/aviation-consumer-protection/air-travel-consumer-reports-2022",
+              "authority": "U.S. Department of Transportation",
+              "known_limitations": "Monthly releases and later revisions must be aligned before annual comparison. Comparison contract: Monthly and annual reporting-carrier service-quality data compiled by DOT and BTS. Denominator: Scheduled domestic flights and other reporting-carrier service records covered by the stated release. Attribution: Carrier-reported official statistics."
+            },
+            {
+              "source_id": "source-56a-dot-atcr-2023",
+              "name": "Air Travel Consumer Report: 2023 report shelf",
+              "url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2023",
+              "authority": "U.S. Department of Transportation",
+              "known_limitations": "Carrier coverage and publication lag travel with the annual measures. Comparison contract: Monthly and annual reporting-carrier service-quality data compiled by DOT and BTS. Denominator: Scheduled domestic flights and other reporting-carrier service records covered by the stated release. Attribution: Carrier-reported official statistics."
+            },
+            {
+              "source_id": "source-56a-dot-atcr-2024",
+              "name": "Air Travel Consumer Report: 2024 report shelf",
+              "url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2024",
+              "authority": "U.S. Department of Transportation",
+              "known_limitations": "Cancellation rate is one service measure, not a complete carrier outcome. Comparison contract: Monthly and annual reporting-carrier service-quality data compiled by DOT and BTS. Denominator: Scheduled domestic flights and other reporting-carrier service records covered by the stated release. Attribution: Carrier-reported official statistics."
+            }
+          ],
+          "triage_state": "Candidate multi-period context",
+          "triage_note": "The annual shelves contain monthly reporting periods, but route or fleet identity compatibility has not been established.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Route or fleet operating periods” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        },
+        {
+          "requirement_docket_id": "131-REQ-03-03",
+          "requirement": "Environmental and access denominators",
+          "phase_126_test_id": "126-REQ-016-03",
+          "phase_126_screen_state": "No screened-term overlap in title/factual nucleus",
+          "candidate_source_ids": [],
+          "candidate_artifacts": [],
+          "triage_state": "Acquisition gap",
+          "triage_note": "No exact environmental-and-access denominator artifact is mapped in the reviewed mission shelf.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Environmental and access denominators” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        }
+      ],
+      "route": "/review/v07/admission-dockets/#aviation-outcome"
+    },
+    {
+      "docket_id": "131-DOCKET-004",
+      "mission_id": "121-MISSION-025",
+      "slug": "critical-minerals-baseline",
+      "title": "Critical Minerals: baseline research mission",
+      "question": "Which named deposits, mines, refineries, processors and recycling systems have current resource, capacity and compliance baselines?",
+      "completion_rule": "Publish a bounded answer or an explicit evidence gap with named entities, periods, definitions, denominators, sources and uncertainty; do not substitute a forecast for an observation.",
+      "upstream_answer_state": "Research packet assembled — answer not adjudicated",
+      "requirements": [
+        {
+          "requirement_docket_id": "131-REQ-04-01",
+          "requirement": "Asset and material identity",
+          "phase_126_test_id": "126-REQ-025-01",
+          "phase_126_screen_state": "No screened-term overlap in title/factual nucleus",
+          "candidate_source_ids": [
+            "source-doe-thacker-pass-loan-2024",
+            "source-blm-rhyolite-ridge-rod-2024"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-doe-thacker-pass-loan-2024",
+              "name": "DOE Loan Programs Office Thacker Pass Financial Close",
+              "url": "https://www.energy.gov/edf/thacker-pass",
+              "authority": "U.S. Department of Energy Loan Programs Office",
+              "known_limitations": "The page records federal loan closing and projected first-phase capacity. Financial close and projected capacity do not prove completed construction, qualified output, customer acceptance, repayment performance, or sustained operation."
+            },
+            {
+              "source_id": "source-blm-rhyolite-ridge-rod-2024",
+              "name": "BLM Rhyolite Ridge Lithium-Boron Project Record Of Decision",
+              "url": "https://www.blm.gov/press-release/major-lithium-mine-approved-nevada-latest-effort-support-domestic-supply-critical",
+              "authority": "Bureau of Land Management",
+              "known_limitations": "The federal decision authorizes the selected project alternative subject to conditions and mitigation. It does not prove financing, construction, state and local approvals, production, customer qualification, or scale."
+            }
+          ],
+          "triage_state": "Candidate exact identity artifacts",
+          "triage_note": "The official artifacts distinguish Thacker Pass from Rhyolite Ridge and name lithium or lithium-boron project scope. They cannot be silently merged into one asset baseline.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Asset and material identity” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        },
+        {
+          "requirement_docket_id": "131-REQ-04-02",
+          "requirement": "Resource, reserve and capacity definitions",
+          "phase_126_test_id": "126-REQ-025-02",
+          "phase_126_screen_state": "Potentially relevant context — not accepted",
+          "candidate_source_ids": [
+            "source-doe-thacker-pass-loan-2024"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-doe-thacker-pass-loan-2024",
+              "name": "DOE Loan Programs Office Thacker Pass Financial Close",
+              "url": "https://www.energy.gov/edf/thacker-pass",
+              "authority": "U.S. Department of Energy Loan Programs Office",
+              "known_limitations": "The page records federal loan closing and projected first-phase capacity. Financial close and projected capacity do not prove completed construction, qualified output, customer acceptance, repayment performance, or sustained operation."
+            }
+          ],
+          "triage_state": "Candidate forecast-definition artifact",
+          "triage_note": "DOE states an expected fully operational capacity. That is a source-defined forecast, not a current operating-capacity observation.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Resource, reserve and capacity definitions” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        },
+        {
+          "requirement_docket_id": "131-REQ-04-03",
+          "requirement": "Current environmental and operating state",
+          "phase_126_test_id": "126-REQ-025-03",
+          "phase_126_screen_state": "Potentially relevant context — not accepted",
+          "candidate_source_ids": [
+            "source-blm-rhyolite-ridge-rod-2024"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-blm-rhyolite-ridge-rod-2024",
+              "name": "BLM Rhyolite Ridge Lithium-Boron Project Record Of Decision",
+              "url": "https://www.blm.gov/press-release/major-lithium-mine-approved-nevada-latest-effort-support-domestic-supply-critical",
+              "authority": "Bureau of Land Management",
+              "known_limitations": "The federal decision authorizes the selected project alternative subject to conditions and mitigation. It does not prove financing, construction, state and local approvals, production, customer qualification, or scale."
+            }
+          ],
+          "triage_state": "Candidate authority-state artifact",
+          "triage_note": "The BLM record documents federal approval and conditions. Authorization does not establish construction, commissioning, compliance performance, or operation.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Current environmental and operating state” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        }
+      ],
+      "route": "/review/v07/admission-dockets/#critical-minerals-baseline"
+    },
+    {
+      "docket_id": "131-DOCKET-005",
+      "mission_id": "121-MISSION-049",
+      "slug": "mobility-baseline",
+      "title": "Mobility: baseline research mission",
+      "question": "Which named networks, fleets, routes and services have current baselines for capacity, access, reliability, safety and use?",
+      "completion_rule": "Publish a bounded answer or an explicit evidence gap with named entities, periods, definitions, denominators, sources and uncertainty; do not substitute a forecast for an observation.",
+      "upstream_answer_state": "Research packet assembled — answer not adjudicated",
+      "requirements": [
+        {
+          "requirement_docket_id": "131-REQ-05-01",
+          "requirement": "Operator, route, fleet or service identity",
+          "phase_126_test_id": "126-REQ-049-01",
+          "phase_126_screen_state": "Potentially relevant context — not accepted",
+          "candidate_source_ids": [
+            "source-cpuc-waymo-al2-disposition-2024",
+            "source-cpuc-av-advice-letter-status-2026"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-cpuc-waymo-al2-disposition-2024",
+              "name": "CPUC Waymo Advice Letter 2 Disposition",
+              "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/consumer-protection-and-enforcement-division/documents/tlab/av-programs/waymo-al-2-disposition-letter-20240301_signed.pdf",
+              "authority": "California Public Utilities Commission",
+              "known_limitations": "Passenger-service authorization does not establish fleet size, trip volume, availability, safety superiority, cost, accessibility, or service quality."
+            },
+            {
+              "source_id": "source-cpuc-av-advice-letter-status-2026",
+              "name": "CPUC Driverless AV Deployment Advice Letter Status",
+              "url": "https://www.cpuc.ca.gov/regulatory-services/licensing/transportation-licensing-and-analysis-branch/autonomous-vehicle-programs/phase-i-driverless-autonomous-vehicle-deployment-program-advice-letter-status",
+              "authority": "California Public Utilities Commission",
+              "known_limitations": "The status ledger tracks regulatory filings and dispositions, not actual trips, fleet operations, safety, cost, accessibility, or local effects."
+            }
+          ],
+          "triage_state": "Candidate exact service-identity artifacts",
+          "triage_note": "The CPUC records identify Waymo, approved advice letters, deployment territory or ODD, and effective dates. This is authorization identity, not proof of trip volume or quality.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Operator, route, fleet or service identity” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        },
+        {
+          "requirement_docket_id": "131-REQ-05-02",
+          "requirement": "Exposure and service denominator",
+          "phase_126_test_id": "126-REQ-049-02",
+          "phase_126_screen_state": "Potentially relevant context — not accepted",
+          "candidate_source_ids": [
+            "source-cpuc-waymo-al2-disposition-2024"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-cpuc-waymo-al2-disposition-2024",
+              "name": "CPUC Waymo Advice Letter 2 Disposition",
+              "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/consumer-protection-and-enforcement-division/documents/tlab/av-programs/waymo-al-2-disposition-letter-20240301_signed.pdf",
+              "authority": "California Public Utilities Commission",
+              "known_limitations": "Passenger-service authorization does not establish fleet size, trip volume, availability, safety superiority, cost, accessibility, or service quality."
+            }
+          ],
+          "triage_state": "Candidate ODD context",
+          "triage_note": "An operational design domain bounds authorized service conditions but does not expose the trip, passenger, fleet-hour, or geographic-service denominator required by the mission.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Exposure and service denominator” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        },
+        {
+          "requirement_docket_id": "131-REQ-05-03",
+          "requirement": "Current reliability and access baseline",
+          "phase_126_test_id": "126-REQ-049-03",
+          "phase_126_screen_state": "No screened-term overlap in title/factual nucleus",
+          "candidate_source_ids": [
+            "source-cpuc-waymo-al2-disposition-2024",
+            "source-cpuc-av-advice-letter-status-2026"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-cpuc-waymo-al2-disposition-2024",
+              "name": "CPUC Waymo Advice Letter 2 Disposition",
+              "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/consumer-protection-and-enforcement-division/documents/tlab/av-programs/waymo-al-2-disposition-letter-20240301_signed.pdf",
+              "authority": "California Public Utilities Commission",
+              "known_limitations": "Passenger-service authorization does not establish fleet size, trip volume, availability, safety superiority, cost, accessibility, or service quality."
+            },
+            {
+              "source_id": "source-cpuc-av-advice-letter-status-2026",
+              "name": "CPUC Driverless AV Deployment Advice Letter Status",
+              "url": "https://www.cpuc.ca.gov/regulatory-services/licensing/transportation-licensing-and-analysis-branch/autonomous-vehicle-programs/phase-i-driverless-autonomous-vehicle-deployment-program-advice-letter-status",
+              "authority": "California Public Utilities Commission",
+              "known_limitations": "The status ledger tracks regulatory filings and dispositions, not actual trips, fleet operations, safety, cost, accessibility, or local effects."
+            }
+          ],
+          "triage_state": "Adjacent authorization artifacts",
+          "triage_note": "Approvals and filing status do not establish a current reliability, accessibility, affordability, safety, or service-quality baseline.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Current reliability and access baseline” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        }
+      ],
+      "route": "/review/v07/admission-dockets/#mobility-baseline"
+    },
+    {
+      "docket_id": "131-DOCKET-006",
+      "mission_id": "121-MISSION-060",
+      "slug": "quantum-outcome",
+      "title": "Quantum: outcome research mission",
+      "question": "Which compatible scientific, operational, security, cost and capability outcomes are observable, and which remain scenarios?",
+      "completion_rule": "Admit an outcome only with repeated compatible measures, uncertainty and attribution limits; a bounded blocker or inadmissibility decision is a valid completion state.",
+      "upstream_answer_state": "Research packet assembled — answer not adjudicated",
+      "requirements": [
+        {
+          "requirement_docket_id": "131-REQ-06-01",
+          "requirement": "Stable task and system denominator",
+          "phase_126_test_id": "126-REQ-060-01",
+          "phase_126_screen_state": "Potentially relevant context — not accepted",
+          "candidate_source_ids": [
+            "source-nist-pqc"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-nist-pqc",
+              "name": "NIST Post-Quantum Cryptography Project",
+              "url": "https://csrc.nist.gov/Projects/post-quantum-cryptography",
+              "authority": "NIST Post-Quantum Cryptography Project",
+              "known_limitations": "Standards progress does not automatically mean migration progress."
+            }
+          ],
+          "triage_state": "Inadmissible-subject warning",
+          "triage_note": "The NIST artifact concerns post-quantum cryptography standards, not a stable quantum-computing task-and-system outcome denominator.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Stable task and system denominator” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        },
+        {
+          "requirement_docket_id": "131-REQ-06-02",
+          "requirement": "Multi-period accepted-use evidence",
+          "phase_126_test_id": "126-REQ-060-02",
+          "phase_126_screen_state": "No screened-term overlap in title/factual nucleus",
+          "candidate_source_ids": [
+            "source-nist-pqc",
+            "source-omb-m-26-15-pqc-migration"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-nist-pqc",
+              "name": "NIST Post-Quantum Cryptography Project",
+              "url": "https://csrc.nist.gov/Projects/post-quantum-cryptography",
+              "authority": "NIST Post-Quantum Cryptography Project",
+              "known_limitations": "Standards progress does not automatically mean migration progress."
+            },
+            {
+              "source_id": "source-omb-m-26-15-pqc-migration",
+              "name": "OMB M-26-15: Execution of the Migration to Post-Quantum Cryptography",
+              "url": "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
+              "authority": "Office of Management and Budget",
+              "known_limitations": "The memorandum directs non-national-security federal systems and defines plan content and deadlines; it does not expose completed agency inventories, submitted migration plans, funding, vendor delivery, procurement outcomes, or migration completion."
+            }
+          ],
+          "triage_state": "Inadmissible-subject warning",
+          "triage_note": "Standards and federal migration plans are cybersecurity adoption evidence. They do not document multi-period accepted use of quantum computing.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Multi-period accepted-use evidence” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        },
+        {
+          "requirement_docket_id": "131-REQ-06-03",
+          "requirement": "Explicit forecast-versus-observation boundary",
+          "phase_126_test_id": "126-REQ-060-03",
+          "phase_126_screen_state": "No screened-term overlap in title/factual nucleus",
+          "candidate_source_ids": [
+            "source-nist-pqc",
+            "source-omb-m-26-15-pqc-migration"
+          ],
+          "candidate_artifacts": [
+            {
+              "source_id": "source-nist-pqc",
+              "name": "NIST Post-Quantum Cryptography Project",
+              "url": "https://csrc.nist.gov/Projects/post-quantum-cryptography",
+              "authority": "NIST Post-Quantum Cryptography Project",
+              "known_limitations": "Standards progress does not automatically mean migration progress."
+            },
+            {
+              "source_id": "source-omb-m-26-15-pqc-migration",
+              "name": "OMB M-26-15: Execution of the Migration to Post-Quantum Cryptography",
+              "url": "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
+              "authority": "Office of Management and Budget",
+              "known_limitations": "The memorandum directs non-national-security federal systems and defines plan content and deadlines; it does not expose completed agency inventories, submitted migration plans, funding, vendor delivery, procurement outcomes, or migration completion."
+            }
+          ],
+          "triage_state": "Boundary context only",
+          "triage_note": "The sources explicitly separate a future cryptographically relevant quantum-computer risk from current PQC migration. That boundary is useful context but not a quantum outcome observation.",
+          "owner_decision": "Pending required human adjudication",
+          "acceptance_test": "Confirm that one exact artifact directly establishes “Explicit forecast-versus-observation boundary” for the mission's named subject, geography, period, method, and denominator.",
+          "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch."
+        }
+      ],
+      "route": "/review/v07/admission-dockets/#quantum-outcome"
+    }
+  ],
+  "public_html_routes": [
+    "/review/v07/admission-dockets/"
+  ],
+  "public_json_exports": [
+    "/data/phase-131-priority-evidence-admission-dockets.json"
+  ]
+}

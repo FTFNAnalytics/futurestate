@@ -1,0 +1,488 @@
+{
+  "schema_version": "1.0",
+  "phase": 139,
+  "program_id": "FTFN-PHASE-139",
+  "dataset": "phase_139_comparative_dossier_rereview",
+  "title": "Comparative dossier re-review",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Re-review all twelve comparison passports against the new chronicles and ledgers while preserving Context only.",
+  "record_scope": "Comparative dossier re-review records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "AI-assisted source triage can map exact artifacts and expose their limits, but it cannot stand in for the repository's required human admissibility decision.",
+    "A source-check receipt proves only that the named official artifact was inspected on the stated date; it does not admit the artifact, satisfy a requirement, or answer a mission.",
+    "No project stage, place state, comparison verdict, observation, outcome, score, rank, causal finding, recommendation, or future Phase 60 decision is created.",
+    "A repository-bounded gap says what this reviewed corpus has not established; it never asserts that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v08/comparisons/",
+    "public_export": "/data/phase-139-comparative-dossier-rereview.json"
+  },
+  "counts": {
+    "dossier_rereviews": 12,
+    "context_only": 12,
+    "verdict_changes": 0,
+    "scores_created": 0,
+    "ranks_created": 0,
+    "causal_findings_created": 0
+  },
+  "comparison_reviews": [
+    {
+      "rereview_id": "139-REREVIEW-001",
+      "dossier_id": "123-DOSSIER-001",
+      "synthesis_id": "129-SYNTHESIS-001",
+      "slug": "compute-power-water",
+      "title": "Compute, power and water",
+      "project_chronicle_ids": [
+        "136-CHRONICLE-001",
+        "136-CHRONICLE-003"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-003",
+        "137-LEDGER-005"
+      ],
+      "longitudinal_eligibility_ids": [
+        "138-ELIGIBILITY-001",
+        "138-ELIGIBILITY-003",
+        "138-ELIGIBILITY-027",
+        "138-ELIGIBILITY-029"
+      ],
+      "identity_test": "Passed for exact joins; entities remain non-equivalent.",
+      "stage_test": "No common stage admitted.",
+      "period_test": "No common observation window admitted.",
+      "denominator_test": "No common performance denominator admitted.",
+      "inherited_verdict": "Context only",
+      "rereview_verdict": "Context only",
+      "verdict_changed": false,
+      "what_is_comparable": "The files can be compared as evidence chains: named demand, public authority, infrastructure commitment, implementation milestone and the still-missing accepted-service record.",
+      "what_must_not_be_compared": "Power demand, wafer output, water use and economic value use different entities, periods and denominators; they cannot be normalized into a project-performance comparison.",
+      "decisive_next_evidence": "Facility-specific accepted utility service, commissioning, qualification, customer acceptance and repeated output records with stable denominators.",
+      "route": "/review/v08/comparisons/compute-power-water/"
+    },
+    {
+      "rereview_id": "139-REREVIEW-002",
+      "dossier_id": "123-DOSSIER-002",
+      "synthesis_id": "129-SYNTHESIS-002",
+      "slug": "permission-to-operation",
+      "title": "Permission is not operation",
+      "project_chronicle_ids": [
+        "136-CHRONICLE-002",
+        "136-CHRONICLE-004",
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-004",
+        "137-LEDGER-001",
+        "137-LEDGER-002",
+        "137-LEDGER-005"
+      ],
+      "longitudinal_eligibility_ids": [
+        "138-ELIGIBILITY-002",
+        "138-ELIGIBILITY-004",
+        "138-ELIGIBILITY-005",
+        "138-ELIGIBILITY-001",
+        "138-ELIGIBILITY-028",
+        "138-ELIGIBILITY-025",
+        "138-ELIGIBILITY-026",
+        "138-ELIGIBILITY-029"
+      ],
+      "identity_test": "Passed for exact joins; entities remain non-equivalent.",
+      "stage_test": "No common stage admitted.",
+      "period_test": "No common observation window admitted.",
+      "denominator_test": "No common performance denominator admitted.",
+      "inherited_verdict": "Context only",
+      "rereview_verdict": "Context only",
+      "verdict_changed": false,
+      "what_is_comparable": "Each file exposes the boundary between permission or commitment and a later receiving-system event.",
+      "what_must_not_be_compared": "Different legal instruments do not confer equivalent authority, and an approved land-use file cannot be compared as performance with a mine, launch site or semiconductor facility.",
+      "decisive_next_evidence": "The next case-specific enactment, condition-clearance, permit, inspection, commissioning, acceptance or recurring-operation artifact named in each Atlas file.",
+      "route": "/review/v08/comparisons/permission-to-operation/"
+    },
+    {
+      "rereview_id": "139-REREVIEW-003",
+      "dossier_id": "123-DOSSIER-003",
+      "synthesis_id": "129-SYNTHESIS-003",
+      "slug": "standards-to-adoption",
+      "title": "Standards to adoption",
+      "project_chronicle_ids": [
+        "136-CHRONICLE-006",
+        "136-CHRONICLE-007",
+        "136-CHRONICLE-023",
+        "136-CHRONICLE-008"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-008",
+        "137-LEDGER-006"
+      ],
+      "longitudinal_eligibility_ids": [
+        "138-ELIGIBILITY-006",
+        "138-ELIGIBILITY-007",
+        "138-ELIGIBILITY-023",
+        "138-ELIGIBILITY-008",
+        "138-ELIGIBILITY-032",
+        "138-ELIGIBILITY-030"
+      ],
+      "identity_test": "Passed for exact joins; entities remain non-equivalent.",
+      "stage_test": "No common stage admitted.",
+      "period_test": "No common observation window admitted.",
+      "denominator_test": "No common performance denominator admitted.",
+      "inherited_verdict": "Context only",
+      "rereview_verdict": "Context only",
+      "verdict_changed": false,
+      "what_is_comparable": "The cases can be read against a common adoption chain from rule or framework to an identified receiving system and observable implementation event.",
+      "what_must_not_be_compared": "Cryptographic migration, assurance evaluation, broadband adoption and autonomous service have incompatible units and acceptance authorities.",
+      "decisive_next_evidence": "Stable inventories, named receiving organizations, acceptance criteria, dated cutovers and repeated-use records that distinguish availability from adoption.",
+      "route": "/review/v08/comparisons/standards-to-adoption/"
+    },
+    {
+      "rereview_id": "139-REREVIEW-004",
+      "dossier_id": "123-DOSSIER-004",
+      "synthesis_id": "129-SYNTHESIS-004",
+      "slug": "autonomous-service-accountability",
+      "title": "Autonomous service and public accountability",
+      "project_chronicle_ids": [
+        "136-CHRONICLE-008",
+        "136-CHRONICLE-021"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-006",
+        "137-LEDGER-010"
+      ],
+      "longitudinal_eligibility_ids": [
+        "138-ELIGIBILITY-008",
+        "138-ELIGIBILITY-021",
+        "138-ELIGIBILITY-030",
+        "138-ELIGIBILITY-034"
+      ],
+      "identity_test": "Passed for exact joins; entities remain non-equivalent.",
+      "stage_test": "No common stage admitted.",
+      "period_test": "No common observation window admitted.",
+      "denominator_test": "No common performance denominator admitted.",
+      "inherited_verdict": "Context only",
+      "rereview_verdict": "Context only",
+      "verdict_changed": false,
+      "what_is_comparable": "Both files connect public authority to a named passenger-facing service and expose the additional records needed to evaluate access and reliability.",
+      "what_must_not_be_compared": "Autonomous-vehicle miles and accessible-station delivery are different service units and must not be collapsed into one mobility score.",
+      "decisive_next_evidence": "Repeated service, accessibility, complaint, incident and exposure series with stable geography, fleet or station identities and revision notes.",
+      "route": "/review/v08/comparisons/autonomous-service-accountability/"
+    },
+    {
+      "rereview_id": "139-REREVIEW-005",
+      "dossier_id": "123-DOSSIER-005",
+      "synthesis_id": "129-SYNTHESIS-005",
+      "slug": "research-to-assurance",
+      "title": "Research to assurance",
+      "project_chronicle_ids": [
+        "136-CHRONICLE-007",
+        "136-CHRONICLE-006"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-006",
+        "137-LEDGER-008"
+      ],
+      "longitudinal_eligibility_ids": [
+        "138-ELIGIBILITY-007",
+        "138-ELIGIBILITY-006",
+        "138-ELIGIBILITY-030",
+        "138-ELIGIBILITY-032"
+      ],
+      "identity_test": "Passed for exact joins; entities remain non-equivalent.",
+      "stage_test": "No common stage admitted.",
+      "period_test": "No common observation window admitted.",
+      "denominator_test": "No common performance denominator admitted.",
+      "inherited_verdict": "Context only",
+      "rereview_verdict": "Context only",
+      "verdict_changed": false,
+      "what_is_comparable": "The cases share a progression from technical framework to institutional use, with explicit separation between evaluation, authorization and operation.",
+      "what_must_not_be_compared": "Test results, procurement actions, migration progress and service outcomes are distinct claim types and cannot substitute for one another.",
+      "decisive_next_evidence": "Receiving-institution acceptance, deployed configuration, monitoring, exception handling and repeated mission-use records tied to the evaluated system.",
+      "route": "/review/v08/comparisons/research-to-assurance/"
+    },
+    {
+      "rereview_id": "139-REREVIEW-006",
+      "dossier_id": "123-DOSSIER-006",
+      "synthesis_id": "129-SYNTHESIS-006",
+      "slug": "minerals-to-manufacturing",
+      "title": "Minerals to manufacturing",
+      "project_chronicle_ids": [
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-001",
+        "136-CHRONICLE-018",
+        "136-CHRONICLE-019"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-002",
+        "137-LEDGER-005"
+      ],
+      "longitudinal_eligibility_ids": [
+        "138-ELIGIBILITY-005",
+        "138-ELIGIBILITY-001",
+        "138-ELIGIBILITY-018",
+        "138-ELIGIBILITY-019",
+        "138-ELIGIBILITY-026",
+        "138-ELIGIBILITY-029"
+      ],
+      "identity_test": "Passed for exact joins; entities remain non-equivalent.",
+      "stage_test": "No common stage admitted.",
+      "period_test": "No common observation window admitted.",
+      "denominator_test": "No common performance denominator admitted.",
+      "inherited_verdict": "Context only",
+      "rereview_verdict": "Context only",
+      "verdict_changed": false,
+      "what_is_comparable": "The selected files can be compared as conversion sequences from financed or permitted capacity to qualified, receiver-visible production.",
+      "what_must_not_be_compared": "Mineral tonnes, semiconductor wafers and component output are not compatible denominators and do not support a cross-industry productivity ranking.",
+      "decisive_next_evidence": "Named commissioning and process-qualification records, customer acceptance, repeat lots or units, yield and delivery data, and disclosed interruptions.",
+      "route": "/review/v08/comparisons/minerals-to-manufacturing/"
+    },
+    {
+      "rereview_id": "139-REREVIEW-007",
+      "dossier_id": "123-DOSSIER-007",
+      "synthesis_id": "129-SYNTHESIS-007",
+      "slug": "space-capacity-to-cadence",
+      "title": "Space capacity to mission cadence",
+      "project_chronicle_ids": [
+        "136-CHRONICLE-004",
+        "136-CHRONICLE-016",
+        "136-CHRONICLE-017"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001"
+      ],
+      "longitudinal_eligibility_ids": [
+        "138-ELIGIBILITY-004",
+        "138-ELIGIBILITY-016",
+        "138-ELIGIBILITY-017",
+        "138-ELIGIBILITY-025"
+      ],
+      "identity_test": "Passed for exact joins; entities remain non-equivalent.",
+      "stage_test": "No common stage admitted.",
+      "period_test": "No common observation window admitted.",
+      "denominator_test": "No common performance denominator admitted.",
+      "inherited_verdict": "Context only",
+      "rereview_verdict": "Context only",
+      "verdict_changed": false,
+      "what_is_comparable": "Each case distinguishes a capacity-enabling milestone from later mission or readiness evidence.",
+      "what_must_not_be_compared": "Launch cadence, aircraft delivery and fleet availability have different assets, missions, periods and denominators.",
+      "decisive_next_evidence": "Named asset acceptance, range or base availability, repeat mission records, downtime and exception reporting for a stable cohort and period.",
+      "route": "/review/v08/comparisons/space-capacity-to-cadence/"
+    },
+    {
+      "rereview_id": "139-REREVIEW-008",
+      "dossier_id": "123-DOSSIER-008",
+      "synthesis_id": "129-SYNTHESIS-008",
+      "slug": "housing-infrastructure-conversion",
+      "title": "Housing and infrastructure conversion",
+      "project_chronicle_ids": [
+        "136-CHRONICLE-002",
+        "136-CHRONICLE-003",
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-004",
+        "137-LEDGER-003",
+        "137-LEDGER-005"
+      ],
+      "longitudinal_eligibility_ids": [
+        "138-ELIGIBILITY-002",
+        "138-ELIGIBILITY-003",
+        "138-ELIGIBILITY-001",
+        "138-ELIGIBILITY-028",
+        "138-ELIGIBILITY-027",
+        "138-ELIGIBILITY-029"
+      ],
+      "identity_test": "Passed for exact joins; entities remain non-equivalent.",
+      "stage_test": "No common stage admitted.",
+      "period_test": "No common observation window admitted.",
+      "denominator_test": "No common performance denominator admitted.",
+      "inherited_verdict": "Context only",
+      "rereview_verdict": "Context only",
+      "verdict_changed": false,
+      "what_is_comparable": "The files reveal how local authority and infrastructure conditions create sequential delivery gates.",
+      "what_must_not_be_compared": "Dwelling units, data-center load and fab capacity cannot be compared as equivalent outputs, and regional aggregates cannot stand in for project delivery.",
+      "decisive_next_evidence": "Enacted instruments, cleared conditions, permits, completed servicing, inspections, occupancy or accepted facility-service records at the named site.",
+      "route": "/review/v08/comparisons/housing-infrastructure-conversion/"
+    },
+    {
+      "rereview_id": "139-REREVIEW-009",
+      "dossier_id": "123-DOSSIER-009",
+      "synthesis_id": "129-SYNTHESIS-009",
+      "slug": "climate-water-industrial-resilience",
+      "title": "Climate, water and industrial resilience",
+      "project_chronicle_ids": [
+        "136-CHRONICLE-001",
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-022",
+        "136-CHRONICLE-010"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-005",
+        "137-LEDGER-002",
+        "137-LEDGER-009",
+        "137-LEDGER-015"
+      ],
+      "longitudinal_eligibility_ids": [
+        "138-ELIGIBILITY-001",
+        "138-ELIGIBILITY-005",
+        "138-ELIGIBILITY-022",
+        "138-ELIGIBILITY-010",
+        "138-ELIGIBILITY-029",
+        "138-ELIGIBILITY-026",
+        "138-ELIGIBILITY-033",
+        "138-ELIGIBILITY-039"
+      ],
+      "identity_test": "Passed for exact joins; entities remain non-equivalent.",
+      "stage_test": "No common stage admitted.",
+      "period_test": "No common observation window admitted.",
+      "denominator_test": "No common performance denominator admitted.",
+      "inherited_verdict": "Context only",
+      "rereview_verdict": "Context only",
+      "verdict_changed": false,
+      "what_is_comparable": "The cases can be checked for whether hazard, water, safety and operating boundaries are named at the same asset or receiving system.",
+      "what_must_not_be_compared": "Hazard projections, water agreements, safety events and production performance describe different phenomena and cannot be blended into a resilience score.",
+      "decisive_next_evidence": "Compatible site-level resource use, hazard exposure, interruption, recovery and repeated-operation measures with asset identities and revision history.",
+      "route": "/review/v08/comparisons/climate-water-industrial-resilience/"
+    },
+    {
+      "rereview_id": "139-REREVIEW-010",
+      "dossier_id": "123-DOSSIER-010",
+      "synthesis_id": "129-SYNTHESIS-010",
+      "slug": "workforce-to-qualified-capacity",
+      "title": "Workforce to qualified capacity",
+      "project_chronicle_ids": [
+        "136-CHRONICLE-001",
+        "136-CHRONICLE-018",
+        "136-CHRONICLE-019",
+        "136-CHRONICLE-020",
+        "136-CHRONICLE-015"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-005",
+        "137-LEDGER-011"
+      ],
+      "longitudinal_eligibility_ids": [
+        "138-ELIGIBILITY-001",
+        "138-ELIGIBILITY-018",
+        "138-ELIGIBILITY-019",
+        "138-ELIGIBILITY-020",
+        "138-ELIGIBILITY-015",
+        "138-ELIGIBILITY-029",
+        "138-ELIGIBILITY-035"
+      ],
+      "identity_test": "Passed for exact joins; entities remain non-equivalent.",
+      "stage_test": "No common stage admitted.",
+      "period_test": "No common observation window admitted.",
+      "denominator_test": "No common performance denominator admitted.",
+      "inherited_verdict": "Context only",
+      "rereview_verdict": "Context only",
+      "verdict_changed": false,
+      "what_is_comparable": "The records can be compared for the presence or absence of links between workforce preparation and receiver-accepted output.",
+      "what_must_not_be_compared": "Graduates, jobs, headcount, units delivered and availability are not interchangeable measures of capacity.",
+      "decisive_next_evidence": "Role-level qualification, placement and retention joined to line qualification, accepted output, yield and delivery cadence for the same facility and period.",
+      "route": "/review/v08/comparisons/workforce-to-qualified-capacity/"
+    },
+    {
+      "rereview_id": "139-REREVIEW-011",
+      "dossier_id": "123-DOSSIER-011",
+      "synthesis_id": "129-SYNTHESIS-011",
+      "slug": "finance-risk-and-infrastructure",
+      "title": "Finance, risk and infrastructure",
+      "project_chronicle_ids": [
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-003"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-014",
+        "137-LEDGER-012",
+        "137-LEDGER-002",
+        "137-LEDGER-003"
+      ],
+      "longitudinal_eligibility_ids": [
+        "138-ELIGIBILITY-009",
+        "138-ELIGIBILITY-011",
+        "138-ELIGIBILITY-012",
+        "138-ELIGIBILITY-005",
+        "138-ELIGIBILITY-003",
+        "138-ELIGIBILITY-038",
+        "138-ELIGIBILITY-036",
+        "138-ELIGIBILITY-026",
+        "138-ELIGIBILITY-027"
+      ],
+      "identity_test": "Passed for exact joins; entities remain non-equivalent.",
+      "stage_test": "No common stage admitted.",
+      "period_test": "No common observation window admitted.",
+      "denominator_test": "No common performance denominator admitted.",
+      "inherited_verdict": "Context only",
+      "rereview_verdict": "Context only",
+      "verdict_changed": false,
+      "what_is_comparable": "The cases show where financial commitment sits within a longer infrastructure-delivery chain.",
+      "what_must_not_be_compared": "Loan values, utility investments, storage capacities and service obligations use different boundaries and cannot support a return or project-quality ranking.",
+      "decisive_next_evidence": "Financial close or obligation joined to expenditure, physical completion, acceptance, service, operating performance and disclosed risk allocation.",
+      "route": "/review/v08/comparisons/finance-risk-and-infrastructure/"
+    },
+    {
+      "rereview_id": "139-REREVIEW-012",
+      "dossier_id": "123-DOSSIER-012",
+      "synthesis_id": "129-SYNTHESIS-012",
+      "slug": "observation-to-outcome",
+      "title": "Observation to outcome",
+      "project_chronicle_ids": [
+        "136-CHRONICLE-007",
+        "136-CHRONICLE-021",
+        "136-CHRONICLE-022",
+        "136-CHRONICLE-023",
+        "136-CHRONICLE-024"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-010",
+        "137-LEDGER-009",
+        "137-LEDGER-008",
+        "137-LEDGER-011"
+      ],
+      "longitudinal_eligibility_ids": [
+        "138-ELIGIBILITY-007",
+        "138-ELIGIBILITY-021",
+        "138-ELIGIBILITY-022",
+        "138-ELIGIBILITY-023",
+        "138-ELIGIBILITY-024",
+        "138-ELIGIBILITY-034",
+        "138-ELIGIBILITY-033",
+        "138-ELIGIBILITY-032",
+        "138-ELIGIBILITY-035"
+      ],
+      "identity_test": "Passed for exact joins; entities remain non-equivalent.",
+      "stage_test": "No common stage admitted.",
+      "period_test": "No common observation window admitted.",
+      "denominator_test": "No common performance denominator admitted.",
+      "inherited_verdict": "Context only",
+      "rereview_verdict": "Context only",
+      "verdict_changed": false,
+      "what_is_comparable": "The files can be compared as examples of how evidence advances—or stops—between a dated observation and an outcome claim.",
+      "what_must_not_be_compared": "Stations, waste batches, broadband locations, production units and evaluation results are deliberately non-equivalent outcome units.",
+      "decisive_next_evidence": "Repeated compatible measures for stable entities and periods, documented revisions and uncertainty, and a bounded attribution design appropriate to the claim.",
+      "route": "/review/v08/comparisons/observation-to-outcome/"
+    }
+  ],
+  "public_html_routes": [
+    "/review/v08/comparisons/",
+    "/review/v08/comparisons/compute-power-water/",
+    "/review/v08/comparisons/permission-to-operation/",
+    "/review/v08/comparisons/standards-to-adoption/",
+    "/review/v08/comparisons/autonomous-service-accountability/",
+    "/review/v08/comparisons/research-to-assurance/",
+    "/review/v08/comparisons/minerals-to-manufacturing/",
+    "/review/v08/comparisons/space-capacity-to-cadence/",
+    "/review/v08/comparisons/housing-infrastructure-conversion/",
+    "/review/v08/comparisons/climate-water-industrial-resilience/",
+    "/review/v08/comparisons/workforce-to-qualified-capacity/",
+    "/review/v08/comparisons/finance-risk-and-infrastructure/",
+    "/review/v08/comparisons/observation-to-outcome/"
+  ],
+  "public_json_exports": [
+    "/data/phase-139-comparative-dossier-rereview.json"
+  ]
+}

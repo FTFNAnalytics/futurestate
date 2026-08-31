@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "phase": 134,
+  "program_id": "FTFN-PHASE-134",
+  "dataset": "phase_134_mission_decision_register",
+  "title": "Mission decision register",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Give each priority mission a complete decision packet while keeping every answer unadjudicated until owner review.",
+  "record_scope": "Mission decision register records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "AI-assisted source triage can map exact artifacts and expose their limits, but it cannot stand in for the repository's required human admissibility decision.",
+    "A source-check receipt proves only that the named official artifact was inspected on the stated date; it does not admit the artifact, satisfy a requirement, or answer a mission.",
+    "No project stage, place state, comparison verdict, observation, outcome, score, rank, causal finding, recommendation, or future Phase 60 decision is created.",
+    "A repository-bounded gap says what this reviewed corpus has not established; it never asserts that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v07/missions/",
+    "public_export": "/data/phase-134-mission-decision-register.json"
+  },
+  "release_state": "Decision architecture complete — 6 owner decision(s) remain open",
+  "counts": {
+    "mission_decision_packets": 6,
+    "answers_adjudicated": 0,
+    "owner_decisions_pending": 6,
+    "canonical_missions_mutated": 0
+  },
+  "mission_decisions": [
+    {
+      "mission_decision_id": "134-MISSION-001",
+      "mission_id": "121-MISSION-004",
+      "slug": "advanced-manufacturing-outcome",
+      "title": "Advanced Manufacturing: outcome research mission",
+      "question": "Which compatible yield, quality, cost, schedule, safety and reliability series show whether advanced manufacturing improved receiving-system outcomes?",
+      "upstream_answer_state": "Research packet assembled — answer not adjudicated",
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-001",
+        "133-ADJUDICATION-002",
+        "133-ADJUDICATION-003"
+      ],
+      "requirements_total": 3,
+      "requirements_decided": 0,
+      "mission_decision_state": "Decision packet complete — mission answer remains unadjudicated",
+      "answer": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "current_read": "The official receipt fixes one F-15EX tail, receiving wing, and arrival date. It does not establish a stable product-and-facility denominator for an outcome series. No exact multi-period operating series is mapped in the reviewed mission shelf. The certified annual report supplies a reporting period and attribution limits for a different named facility; it does not supply product downtime, revision, or operating-series evidence for the broader mission.",
+      "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer.",
+      "route": "/review/v07/missions/advanced-manufacturing-outcome/"
+    },
+    {
+      "mission_decision_id": "134-MISSION-002",
+      "mission_id": "121-MISSION-013",
+      "slug": "aviation-baseline",
+      "title": "Aviation: baseline research mission",
+      "question": "Which named aircraft, airports, propulsion systems and service networks have current baselines for capacity, readiness, safety and use?",
+      "upstream_answer_state": "Research packet assembled — answer not adjudicated",
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-004",
+        "133-ADJUDICATION-005",
+        "133-ADJUDICATION-006"
+      ],
+      "requirements_total": 3,
+      "requirements_decided": 0,
+      "mission_decision_state": "Decision packet complete — mission answer remains unadjudicated",
+      "answer": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "current_read": "The official record names F-15EX tail 16, the 142nd Wing, Portland, and a receiving date; owner review must still decide whether that bounded identity satisfies the mission requirement. The final rule defines powered-lift pilot certification and operating pathways, not a named fleet's capacity or readiness baseline. The rule has a dated ten-year regulatory framework, but a regulatory period is not a current operating period for a named fleet, airport, or route.",
+      "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer.",
+      "route": "/review/v07/missions/aviation-baseline/"
+    },
+    {
+      "mission_decision_id": "134-MISSION-003",
+      "mission_id": "121-MISSION-016",
+      "slug": "aviation-outcome",
+      "title": "Aviation: outcome research mission",
+      "question": "Which compatible safety, reliability, cost, emissions, noise and access measures show public and system outcomes?",
+      "upstream_answer_state": "Research packet assembled — answer not adjudicated",
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-007",
+        "133-ADJUDICATION-008",
+        "133-ADJUDICATION-009"
+      ],
+      "requirements_total": 3,
+      "requirements_decided": 0,
+      "mission_decision_state": "Decision packet complete — mission answer remains unadjudicated",
+      "answer": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "current_read": "The DOT reports expose carrier service-quality measures and reporting bases. They do not, without a mission-specific denominator review, establish exposure-compatible aviation safety outcomes. The annual shelves contain monthly reporting periods, but route or fleet identity compatibility has not been established. No exact environmental-and-access denominator artifact is mapped in the reviewed mission shelf.",
+      "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer.",
+      "route": "/review/v07/missions/aviation-outcome/"
+    },
+    {
+      "mission_decision_id": "134-MISSION-004",
+      "mission_id": "121-MISSION-025",
+      "slug": "critical-minerals-baseline",
+      "title": "Critical Minerals: baseline research mission",
+      "question": "Which named deposits, mines, refineries, processors and recycling systems have current resource, capacity and compliance baselines?",
+      "upstream_answer_state": "Research packet assembled — answer not adjudicated",
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-010",
+        "133-ADJUDICATION-011",
+        "133-ADJUDICATION-012"
+      ],
+      "requirements_total": 3,
+      "requirements_decided": 0,
+      "mission_decision_state": "Decision packet complete — mission answer remains unadjudicated",
+      "answer": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "current_read": "The official artifacts distinguish Thacker Pass from Rhyolite Ridge and name lithium or lithium-boron project scope. They cannot be silently merged into one asset baseline. DOE states an expected fully operational capacity. That is a source-defined forecast, not a current operating-capacity observation. The BLM record documents federal approval and conditions. Authorization does not establish construction, commissioning, compliance performance, or operation.",
+      "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer.",
+      "route": "/review/v07/missions/critical-minerals-baseline/"
+    },
+    {
+      "mission_decision_id": "134-MISSION-005",
+      "mission_id": "121-MISSION-049",
+      "slug": "mobility-baseline",
+      "title": "Mobility: baseline research mission",
+      "question": "Which named networks, fleets, routes and services have current baselines for capacity, access, reliability, safety and use?",
+      "upstream_answer_state": "Research packet assembled — answer not adjudicated",
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-013",
+        "133-ADJUDICATION-014",
+        "133-ADJUDICATION-015"
+      ],
+      "requirements_total": 3,
+      "requirements_decided": 0,
+      "mission_decision_state": "Decision packet complete — mission answer remains unadjudicated",
+      "answer": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "current_read": "The CPUC records identify Waymo, approved advice letters, deployment territory or ODD, and effective dates. This is authorization identity, not proof of trip volume or quality. An operational design domain bounds authorized service conditions but does not expose the trip, passenger, fleet-hour, or geographic-service denominator required by the mission. Approvals and filing status do not establish a current reliability, accessibility, affordability, safety, or service-quality baseline.",
+      "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer.",
+      "route": "/review/v07/missions/mobility-baseline/"
+    },
+    {
+      "mission_decision_id": "134-MISSION-006",
+      "mission_id": "121-MISSION-060",
+      "slug": "quantum-outcome",
+      "title": "Quantum: outcome research mission",
+      "question": "Which compatible scientific, operational, security, cost and capability outcomes are observable, and which remain scenarios?",
+      "upstream_answer_state": "Research packet assembled — answer not adjudicated",
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-016",
+        "133-ADJUDICATION-017",
+        "133-ADJUDICATION-018"
+      ],
+      "requirements_total": 3,
+      "requirements_decided": 0,
+      "mission_decision_state": "Decision packet complete — mission answer remains unadjudicated",
+      "answer": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "current_read": "The NIST artifact concerns post-quantum cryptography standards, not a stable quantum-computing task-and-system outcome denominator. Standards and federal migration plans are cybersecurity adoption evidence. They do not document multi-period accepted use of quantum computing. The sources explicitly separate a future cryptographically relevant quantum-computer risk from current PQC migration. That boundary is useful context but not a quantum outcome observation.",
+      "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer.",
+      "route": "/review/v07/missions/quantum-outcome/"
+    }
+  ],
+  "public_html_routes": [
+    "/review/v07/missions/",
+    "/review/v07/missions/advanced-manufacturing-outcome/",
+    "/review/v07/missions/aviation-baseline/",
+    "/review/v07/missions/aviation-outcome/",
+    "/review/v07/missions/critical-minerals-baseline/",
+    "/review/v07/missions/mobility-baseline/",
+    "/review/v07/missions/quantum-outcome/"
+  ],
+  "public_json_exports": [
+    "/data/phase-134-mission-decision-register.json"
+  ]
+}

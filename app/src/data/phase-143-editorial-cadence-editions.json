@@ -1,0 +1,301 @@
+{
+  "schema_version": "1.0",
+  "phase": 143,
+  "program_id": "FTFN-PHASE-143",
+  "dataset": "phase_143_editorial_cadence_editions",
+  "title": "Editorial cadence and editions",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Publish the inaugural v0.9 desk edition and a transparent four-edition forward schedule without predating future content.",
+  "record_scope": "Editorial cadence and editions records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "AI-assisted source triage can map exact artifacts and expose their limits, but it cannot stand in for the repository's required human admissibility decision.",
+    "A source-check receipt proves only that the named official artifact was inspected on the stated date; it does not admit the artifact, satisfy a requirement, or answer a mission.",
+    "No project stage, place state, comparison verdict, observation, outcome, score, rank, causal finding, recommendation, or future Phase 60 decision is created.",
+    "A repository-bounded gap says what this reviewed corpus has not established; it never asserts that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v09/editions/",
+    "public_export": "/data/phase-143-editorial-cadence-editions.json"
+  },
+  "cadence_contract": {
+    "weekly": "One evidence or conversion desk edition",
+    "monthly": "One state-of-frontier-systems edition",
+    "quarterly": "Full mission, Atlas, comparison, freshness, accessibility, and release audit",
+    "correction_rule": "Material errors receive a dated correction entry; silent revision is prohibited."
+  },
+  "counts": {
+    "editions": 5,
+    "published_editions": 1,
+    "scheduled_editions": 4,
+    "desks_in_inaugural_edition": 17,
+    "future_content_predated": 0
+  },
+  "editions": [
+    {
+      "edition_id": "143-EDITION-001",
+      "slug": "inaugural-desk-edition",
+      "title": "Inaugural frontier intelligence desk edition",
+      "publication_date": "2026-08-30",
+      "state": "Published",
+      "focus": "All seventeen topic desks, thirty-nine Atlas files, twelve comparison re-reviews, and the open evidence-admission boundary.",
+      "included_desk_ids": [
+        "140-DESK-001",
+        "140-DESK-002",
+        "140-DESK-003",
+        "140-DESK-004",
+        "140-DESK-005",
+        "140-DESK-006",
+        "140-DESK-007",
+        "140-DESK-008",
+        "140-DESK-009",
+        "140-DESK-010",
+        "140-DESK-011",
+        "140-DESK-012",
+        "140-DESK-013",
+        "140-DESK-014",
+        "140-DESK-015",
+        "140-DESK-016",
+        "140-DESK-017"
+      ],
+      "editorial_sections": {
+        "opening_read": "The corpus is strongest as a map of institutions, projects, places, and decision requirements. It is not yet a scorecard of outcomes. This inaugural edition therefore leads with what can be traced, keeps open requirements visible, and refuses to convert source proximity into proof.",
+        "evidence_admission": "Six priority mission packets expose eighteen requirement-level decisions. Official artifacts were rechecked on 2026-08-30, but all admissibility decisions and mission answers remain owner-gated. Twelve additional missions still lack an exact Phase 120 topic-and-stage acquisition path.",
+        "conversion_read": "The Atlas carries twenty-four named project chronicles and fifteen place ledgers. Eight projects have governed Phase 61 files; sixteen remain curated. A place ledger describes its receiving system and linked projects but never inherits a synthetic project stage.",
+        "longitudinal_read": "All thirty-nine Atlas identities have an eligibility review. Thirty-eight have a candidate shelf and one has no repeated-record candidate shelf, but none passes the full identity, period, measure, and denominator chain required to admit a longitudinal series.",
+        "comparison_read": "All twelve cross-system dossiers remain Context only. Exact joins improve navigation and make boundaries inspectable; they do not establish a common stage, observation window, denominator, score, rank, or causal result.",
+        "next_watch": "The next lawful evidence operation is the Louisiana Starlink adoption gate on 2026-09-01. Later September and October gates remain scheduled. New editions must be written only from evidence available on or after their stated dates."
+      },
+      "desk_dispatches": [
+        {
+          "desk_id": "140-DESK-001",
+          "topic_id": "topic-advanced-manufacturing",
+          "title": "Advanced Manufacturing intelligence desk",
+          "current_read": "This state-of-evidence review treats Advanced Manufacturing as a four-horizon research program rather than a collection of headlines. The central research problem is to distinguish installed equipment, qualified lines, receiver-accepted output and dependable production. Announced capacity and isolated delivery milestones are useful chronology, but neither supplies a stable account of yield, rework, downtime, workforce qualification or customer acceptance. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 4 exact Phase 125 annotations and 4 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use this review to see why production announcements and industrial-policy totals should not be mistaken for dependable capacity. It also identifies where official program records support a bounded statement and where only a company or program-level account is available.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 1,
+          "next_action": "Baseline work begins with the exact question: “Which named facilities and production systems have defensible baselines for installed, qualified and available capacity?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requi",
+          "route": "/review/v09/desks/advanced-manufacturing/"
+        },
+        {
+          "desk_id": "140-DESK-002",
+          "topic_id": "topic-agriculture-and-bioeconomy",
+          "title": "Agriculture and Bioeconomy intelligence desk",
+          "current_read": "This state-of-evidence review treats Agriculture and Bioeconomy as a four-horizon research program rather than a collection of headlines. The topic spans biological production, processing, land, water, energy, logistics and community food systems. Its evidence problem is therefore one of chain identity: a crop, feedstock, facility, product, geography and receiving market have to remain linked before scale or resilience can be described. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 4 exact Phase 125 annotations and 5 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review helps readers separate resource potential from operating supply chains and community outcomes. It shows which questions can be answered with official statistics, which require processor or local-system records, and which remain dependent on a future comparable series.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 0,
+          "next_action": "Baseline work begins with the exact question: “Which crops, biological processes, farms and regional systems have comparable starting baselines for yield, inputs, risk and resource use?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overl",
+          "route": "/review/v09/desks/agriculture-and-bioeconomy/"
+        },
+        {
+          "desk_id": "140-DESK-003",
+          "topic_id": "topic-ai-for-science",
+          "title": "AI for Science intelligence desk",
+          "current_read": "This state-of-evidence review treats AI for Science as a four-horizon research program rather than a collection of headlines. AI-for-science evidence must move beyond inventories of tools and allocations of compute toward named scientific workflows. The relevant question is whether a system changes discovery time, experimental yield, replication, cost or quality under conditions that expose human review and failure handling. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 4 exact Phase 125 annotations and 8 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers should leave with a disciplined distinction among policy priority, infrastructure availability, evaluation capability, operational use and scientific outcome. The current corpus can support that map, but it cannot yet support a general claim that AI has improved scientific performance.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 1,
+          "next_action": "Baseline work begins with the exact question: “Which named scientific workflows have measurable baselines for time, cost, reproducibility, data quality and expert effort?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three re",
+          "route": "/review/v09/desks/ai-for-science/"
+        },
+        {
+          "desk_id": "140-DESK-004",
+          "topic_id": "topic-aviation",
+          "title": "Aviation intelligence desk",
+          "current_read": "This state-of-evidence review treats Aviation as a four-horizon research program rather than a collection of headlines. Aviation combines aircraft, airports, routes, operators, airspace and propulsion systems. The evidence challenge is to retain the right exposure denominator while separating certification, fleet entry, service delivery and public outcomes. The workbench currently contains 2 missions with exact Phase 120 packet joins and 2 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 5 exact Phase 125 annotations and 9 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review enables readers to distinguish a regulatory milestone from an operating service and to understand what official annual data can and cannot say. It also makes clear why aviation performance should be reported measure by measure rather than as a composite rank.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 2,
+          "next_action": "Baseline work begins with the exact question: “Which named aircraft, airports, propulsion systems and service networks have current baselines for capacity, readiness, safety and use?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap ",
+          "route": "/review/v09/desks/aviation/"
+        },
+        {
+          "desk_id": "140-DESK-005",
+          "topic_id": "topic-chips-and-compute",
+          "title": "Chips and Compute intelligence desk",
+          "current_read": "This state-of-evidence review treats Chips and Compute as a four-horizon research program rather than a collection of headlines. Chips and compute research has to connect facilities and service systems to qualified output, accepted utility capacity and recurring operation. Capital announcements and construction milestones are important, but they do not establish wafers, compute availability or durable local benefit. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 6 exact Phase 125 annotations and 10 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use this review to test claims of semiconductor or compute capacity against the actual conversion chain. The review does not decide whether a facility is successful; it shows which official records would be needed to make a bounded operating or outcome statement.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 1,
+          "next_action": "Baseline work begins with the exact question: “Which named fabs, data centers and compute services have defensible baselines for installed, available and qualified capacity?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three",
+          "route": "/review/v09/desks/chips-and-compute/"
+        },
+        {
+          "desk_id": "140-DESK-006",
+          "topic_id": "topic-climate",
+          "title": "Climate intelligence desk",
+          "current_read": "This state-of-evidence review treats Climate as a four-horizon research program rather than a collection of headlines. Climate evidence moves among physical observations, modeled scenarios, exposure, adaptation actions and realized losses. A strong review keeps those claim types separate and states which geography, time window and uncertainty treatment governs each one. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 4 exact Phase 125 annotations and 4 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review gives readers a way to separate hazard context, planned adaptation, implemented protection and measured outcome. It also clarifies when an evidence gap reflects missing local observation rather than uncertainty about the wider physical trend.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 0,
+          "next_action": "Baseline work begins with the exact question: “Which hazards, exposures, vulnerabilities and adaptive capacities have stable baselines at decision-relevant geographies?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requ",
+          "route": "/review/v09/desks/climate/"
+        },
+        {
+          "desk_id": "140-DESK-007",
+          "topic_id": "topic-critical-minerals",
+          "title": "Critical Minerals intelligence desk",
+          "current_read": "This state-of-evidence review treats Critical Minerals as a four-horizon research program rather than a collection of headlines. Critical-minerals evidence begins with material and asset identity. Resources, reserves, mine output, refined material, qualified product and customer receipt are different stages, and national import reliance is not a project operating measure. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 6 exact Phase 125 annotations and 7 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use this review to distinguish strategic importance from delivered supply. It makes official baseline evidence visible while preventing an authorized or financed project from being described as an operating source of qualified material.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 1,
+          "next_action": "Baseline work begins with the exact question: “Which named deposits, mines, refineries, processors and recycling systems have current resource, capacity and compliance baselines?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for ",
+          "route": "/review/v09/desks/critical-minerals/"
+        },
+        {
+          "desk_id": "140-DESK-008",
+          "topic_id": "topic-cybersecurity",
+          "title": "Cybersecurity intelligence desk",
+          "current_read": "This state-of-evidence review treats Cybersecurity as a four-horizon research program rather than a collection of headlines. Cybersecurity evidence has to distinguish controls, maturity assessments, detected incidents, losses, recovery and mission or user harm. Reporting quality is itself part of the measurement problem because low counts may reflect weak detection or disclosure. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 5 exact Phase 125 annotations and 7 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review helps readers understand why a mature-control label and a low incident count answer different questions. It supports bounded comparison within an agency series while refusing a cross-agency security ranking or a claim that controls caused an outcome.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 1,
+          "next_action": "Baseline work begins with the exact question: “Which named systems, assets and organizations have current inventories, threat baselines and control boundaries?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirements ",
+          "route": "/review/v09/desks/cybersecurity/"
+        },
+        {
+          "desk_id": "140-DESK-009",
+          "topic_id": "topic-discovery-technologies",
+          "title": "Discovery Technologies intelligence desk",
+          "current_read": "This state-of-evidence review treats Discovery Technologies as a four-horizon research program rather than a collection of headlines. Discovery technologies include observation platforms, metrology, data systems and research instruments. Their public value depends on more than deployment: access, validated products, workflow adoption, discovery quality, replication and cost must be traced separately. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 4 exact Phase 125 annotations and 7 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use this review to locate real operating data resources and to see why access is an intermediate state rather than an outcome. It keeps promising applications visible without converting potential use into realized benefit.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 1,
+          "next_action": "Baseline work begins with the exact question: “Which instruments, platforms and research methods have reproducible performance baselines on named scientific tasks?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requireme",
+          "route": "/review/v09/desks/discovery-technologies/"
+        },
+        {
+          "desk_id": "140-DESK-010",
+          "topic_id": "topic-energy",
+          "title": "Energy intelligence desk",
+          "current_read": "This state-of-evidence review treats Energy as a four-horizon research program rather than a collection of headlines. Energy evidence must preserve the distinction among nameplate capacity, available capacity, delivered energy, reliability, affordability and emissions. Grid and fuel systems also require a clear balancing area, asset, customer class or service territory. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 6 exact Phase 125 annotations and 9 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. This review helps readers move from capacity headlines to the records that establish operation and service. It supports compatible within-series observations while rejecting cross-market scores built from mismatched prices, reliability definitions or time windows.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 0,
+          "next_action": "Baseline work begins with the exact question: “Which named grids, plants, storage assets and customer classes have compatible capacity, demand, reliability and cost baselines?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for thr",
+          "route": "/review/v09/desks/energy/"
+        },
+        {
+          "desk_id": "140-DESK-011",
+          "topic_id": "topic-finance-and-risk",
+          "title": "Finance and Risk intelligence desk",
+          "current_read": "This state-of-evidence review treats Finance and Risk as a four-horizon research program rather than a collection of headlines. Finance and risk evidence asks what capital actually enables, which obligations attach to it and where loss is allocated. Commitment, close, expenditure, physical delivery, service and return are distinct stages. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 6 exact Phase 125 annotations and 9 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use this review to distinguish permission to spend from completed infrastructure and to understand why investment totals cannot be ranked as outcomes. It keeps public exposure and delivery obligations visible at the named project level.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 0,
+          "next_action": "Baseline work begins with the exact question: “Which markets, institutions, projects and public balance sheets have current exposure, cost and risk baselines?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirements w",
+          "route": "/review/v09/desks/finance-and-risk/"
+        },
+        {
+          "desk_id": "140-DESK-012",
+          "topic_id": "topic-human-futures",
+          "title": "Human Futures intelligence desk",
+          "current_read": "This state-of-evidence review treats Human Futures as a four-horizon research program rather than a collection of headlines. Human-futures research covers population, work, institutions, access, health, housing and community capacity. The evidence challenge is to define the people and places affected without reducing different dimensions of life to one progress score. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 5 exact Phase 125 annotations and 8 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review gives readers a structured way to ask who benefits, who bears risk and what evidence would demonstrate durable access. It avoids a universal welfare index while making distributive questions a required part of technical research.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 0,
+          "next_action": "Baseline work begins with the exact question: “Which populations and places have current baselines for access, affordability, safety, capability, trust and lived conditions?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three",
+          "route": "/review/v09/desks/human-futures/"
+        },
+        {
+          "desk_id": "140-DESK-013",
+          "topic_id": "topic-mobility",
+          "title": "Mobility intelligence desk",
+          "current_read": "This state-of-evidence review treats Mobility as a four-horizon research program rather than a collection of headlines. Mobility evidence must connect networks, routes, fleets and passenger-facing services to exposure, access, reliability, safety and cost. Authority to operate and vehicle miles are not the same as a dependable user outcome. The workbench currently contains 2 missions with exact Phase 120 packet joins and 2 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 6 exact Phase 125 annotations and 6 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use the review to understand which operating facts are already public and why the outcome layer remains thinner. It prevents a permit, deployment count or isolated safety event from becoming a generalized mobility-performance claim.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 2,
+          "next_action": "Baseline work begins with the exact question: “Which named networks, fleets, routes and services have current baselines for capacity, access, reliability, safety and use?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three re",
+          "route": "/review/v09/desks/mobility/"
+        },
+        {
+          "desk_id": "140-DESK-014",
+          "topic_id": "topic-policy-and-standards",
+          "title": "Policy and Standards intelligence desk",
+          "current_read": "This state-of-evidence review treats Policy and Standards as a four-horizon research program rather than a collection of headlines. Policy and standards shape what institutions may, must or can consistently do. The evidence task is to separate publication, legal effect, organizational adoption, implementation, conformity, enforcement and realized system change. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 5 exact Phase 125 annotations and 4 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review helps readers distinguish a normative commitment from operational change. It also explains why standards coverage should not become a jurisdiction ranking and why later acceptance evidence must remain attached to the responsible institution.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 0,
+          "next_action": "Baseline work begins with the exact question: “Which laws, rules, standards, permits and institutional responsibilities currently govern each priority conversion pathway?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three re",
+          "route": "/review/v09/desks/policy-and-standards/"
+        },
+        {
+          "desk_id": "140-DESK-015",
+          "topic_id": "topic-quantum",
+          "title": "Quantum intelligence desk",
+          "current_read": "This state-of-evidence review treats Quantum as a four-horizon research program rather than a collection of headlines. Quantum research must keep computing, sensing, communications and cryptographic migration distinct. Post-quantum standards respond to a future threat; they are not evidence that a quantum computer or sensor achieved an operating outcome. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 4 exact Phase 125 annotations and 5 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use this review to see that the evidence gap is explicit rather than hidden. It preserves useful post-quantum material in its proper domain while directing quantum-outcome research toward official benchmark and accepted-use records.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 1,
+          "next_action": "Baseline work begins with the exact question: “Which quantum systems and use cases have reproducible baselines for fidelity, scale, error, runtime, cost and classical alternatives?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap fo",
+          "route": "/review/v09/desks/quantum/"
+        },
+        {
+          "desk_id": "140-DESK-016",
+          "topic_id": "topic-space",
+          "title": "Space intelligence desk",
+          "current_read": "This state-of-evidence review treats Space as a four-horizon research program rather than a collection of headlines. Space evidence spans vehicles, missions, ranges, launch sites, infrastructure and scientific services. Authorization, an individual mission and sustained access each require different records and denominators. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 6 exact Phase 125 annotations and 9 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review lets readers distinguish rapid growth in licensed activity from a conclusion about reliability or public benefit. It makes the Space Coast's open license and operating questions visible without predating a future gate or inferring an outcome.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 1,
+          "next_action": "Baseline work begins with the exact question: “Which launch sites, vehicles, spacecraft and mission services have current baselines for authority, capacity, cadence, reliability and use?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus over",
+          "route": "/review/v09/desks/space/"
+        },
+        {
+          "desk_id": "140-DESK-017",
+          "topic_id": "topic-water",
+          "title": "Water intelligence desk",
+          "current_read": "This state-of-evidence review treats Water as a four-horizon research program rather than a collection of headlines. Water evidence must retain source, right, treatment, conveyance, use, discharge, reuse and receiving basin. Provider supply, permitted withdrawal and facility consumption answer different questions. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 5 exact Phase 125 annotations and 9 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use the review to test water-security and industrial-reuse claims against exact operating records. It avoids treating a citywide portfolio, permit ceiling or announced project as measured facility consumption or durable supply.",
+          "open_mission_count": 4,
+          "acquisition_gap_count": 0,
+          "next_action": "Baseline work begins with the exact question: “Which basins, utilities, facilities and user classes have current baselines for supply, demand, quality, reliability and ecological condition?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus o",
+          "route": "/review/v09/desks/water/"
+        }
+      ],
+      "boundary": "This edition reports the corpus state at 2026-08-30; it does not predate a later gate or evidence decision.",
+      "route": "/review/v09/editions/inaugural-desk-edition/"
+    },
+    {
+      "edition_id": "143-EDITION-002",
+      "slug": "evidence-watch-2026-09-06",
+      "title": "Evidence watch",
+      "publication_date": "2026-09-06",
+      "state": "Scheduled — no content prepublished",
+      "focus": "Official-artifact changes and the September 1 evidence gate.",
+      "included_desk_ids": [],
+      "boundary": "The edition must be written from evidence available on or after its date.",
+      "route": "/review/v09/editions/evidence-watch-2026-09-06/"
+    },
+    {
+      "edition_id": "143-EDITION-003",
+      "slug": "conversion-watch-2026-09-13",
+      "title": "Conversion watch",
+      "publication_date": "2026-09-13",
+      "state": "Scheduled — no content prepublished",
+      "focus": "Named project and place changes after the September 9–10 gates.",
+      "included_desk_ids": [],
+      "boundary": "No future result or project state is inferred.",
+      "route": "/review/v09/editions/conversion-watch-2026-09-13/"
+    },
+    {
+      "edition_id": "143-EDITION-004",
+      "slug": "comparison-watch-2026-09-20",
+      "title": "Comparison watch",
+      "publication_date": "2026-09-20",
+      "state": "Scheduled — no content prepublished",
+      "focus": "Compatibility changes supported by newly admitted common measures, if any.",
+      "included_desk_ids": [],
+      "boundary": "Context only remains controlling unless a later governed re-review changes it.",
+      "route": "/review/v09/editions/comparison-watch-2026-09-20/"
+    },
+    {
+      "edition_id": "143-EDITION-005",
+      "slug": "monthly-state-2026-09-27",
+      "title": "Monthly state of frontier systems",
+      "publication_date": "2026-09-27",
+      "state": "Scheduled — no content prepublished",
+      "focus": "A dated synthesis of September evidence and conversion decisions.",
+      "included_desk_ids": [],
+      "boundary": "The edition is a schedule entry, not a future-dated report.",
+      "route": "/review/v09/editions/monthly-state-2026-09-27/"
+    }
+  ],
+  "public_html_routes": [
+    "/review/v09/editions/",
+    "/review/v09/editions/inaugural-desk-edition/",
+    "/review/v09/editions/evidence-watch-2026-09-06/",
+    "/review/v09/editions/conversion-watch-2026-09-13/",
+    "/review/v09/editions/comparison-watch-2026-09-20/",
+    "/review/v09/editions/monthly-state-2026-09-27/"
+  ],
+  "public_json_exports": [
+    "/data/phase-143-editorial-cadence-editions.json"
+  ]
+}

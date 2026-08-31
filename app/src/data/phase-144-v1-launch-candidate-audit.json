@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0",
+  "phase": 144,
+  "program_id": "FTFN-PHASE-144",
+  "dataset": "phase_144_v1_launch_candidate_audit",
+  "title": "v1 launch-candidate audit",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Audit the complete v0.7-v0.9 system against evidence, conversion, longitudinal, editorial, accessibility, and release gates.",
+  "record_scope": "v1 launch-candidate audit records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "AI-assisted source triage can map exact artifacts and expose their limits, but it cannot stand in for the repository's required human admissibility decision.",
+    "A source-check receipt proves only that the named official artifact was inspected on the stated date; it does not admit the artifact, satisfy a requirement, or answer a mission.",
+    "No project stage, place state, comparison verdict, observation, outcome, score, rank, causal finding, recommendation, or future Phase 60 decision is created.",
+    "A repository-bounded gap says what this reviewed corpus has not established; it never asserts that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v09/launch-audit/",
+    "public_export": "/data/phase-144-v1-launch-candidate-audit.json"
+  },
+  "audit_result": "v0.9 complete locally — v1 promotion held for owner acceptance, evidence admission, authority coverage, and longitudinal evidence",
+  "counts": {
+    "launch_gates": 14,
+    "passed": 10,
+    "held": 4,
+    "pending_build": 0,
+    "false_passes": 0
+  },
+  "launch_gates": [
+    {
+      "gate_id": "144-GATE-01-EVIDENCE-ADMISSION",
+      "label": "evidence admission",
+      "state": "Held",
+      "reason": "All eighteen v0.7 requirement decisions and six mission decisions remain owner-gated."
+    },
+    {
+      "gate_id": "144-GATE-02-AUTHORITY-COVERAGE",
+      "label": "authority coverage",
+      "state": "Held",
+      "reason": "Twelve Phase 120 mission acquisition gaps remain visible."
+    },
+    {
+      "gate_id": "144-GATE-03-ATLAS-IDENTITY",
+      "label": "atlas identity",
+      "state": "Pass",
+      "reason": "All twenty-four projects and fifteen places resolve to canonical Phase 119 identities."
+    },
+    {
+      "gate_id": "144-GATE-04-PROJECT-CHRONICLES",
+      "label": "project chronicles",
+      "state": "Pass",
+      "reason": "Twenty-four stage-bounded chronicles are published."
+    },
+    {
+      "gate_id": "144-GATE-05-PLACE-LEDGERS",
+      "label": "place ledgers",
+      "state": "Pass",
+      "reason": "Fifteen receiving-system ledgers are published without synthetic stages."
+    },
+    {
+      "gate_id": "144-GATE-06-LONGITUDINAL-EVIDENCE",
+      "label": "longitudinal evidence",
+      "state": "Held",
+      "reason": "No series is admitted until identity, period, measure, and denominator all pass."
+    },
+    {
+      "gate_id": "144-GATE-07-COMPARATIVE-INTEGRITY",
+      "label": "comparative integrity",
+      "state": "Pass",
+      "reason": "All twelve dossiers retain Context only and create no score or rank."
+    },
+    {
+      "gate_id": "144-GATE-08-TOPIC-DESKS",
+      "label": "topic desks",
+      "state": "Pass",
+      "reason": "Seventeen active desks and seventeen four-horizon roadmaps are published."
+    },
+    {
+      "gate_id": "144-GATE-09-EDITORIAL-CADENCE",
+      "label": "editorial cadence",
+      "state": "Pass",
+      "reason": "The inaugural edition is published and future editions remain explicitly scheduled."
+    },
+    {
+      "gate_id": "144-GATE-10-FUTURE-GATE-INTEGRITY",
+      "label": "future gate integrity",
+      "state": "Pass",
+      "reason": "All post-2026-08-30 Phase 60 gates retain their upstream state."
+    },
+    {
+      "gate_id": "144-GATE-11-MACHINE-READABLE-CONTRACT",
+      "label": "machine readable contract",
+      "state": "Pass",
+      "reason": "Fifteen phase registries and three version aggregates expose the release."
+    },
+    {
+      "gate_id": "144-GATE-12-ACCESSIBLE-STRUCTURE",
+      "label": "accessible structure",
+      "state": "Pass",
+      "reason": "All 170 edition routes passed the automated language, viewport, landmark, heading, canonical, and indexing structure audit; this is not an accessibility certification."
+    },
+    {
+      "gate_id": "144-GATE-13-RELEASE-VALIDATION",
+      "label": "release validation",
+      "state": "Pass",
+      "reason": "The 21-check local validation receipt passed on 2026-08-30."
+    },
+    {
+      "gate_id": "144-GATE-14-OWNER-ACCEPTANCE",
+      "label": "owner acceptance",
+      "state": "Held",
+      "reason": "Owner acceptance and public-launch authorization are not recorded."
+    }
+  ],
+  "v1_promotion_state": "Held",
+  "local_validation_receipt": {
+    "schema_version": "1.0",
+    "receipt_id": "144-LOCAL-VALIDATION-2026-08-30",
+    "phase": 144,
+    "validated_date": "2026-08-30",
+    "status": "Passed",
+    "validation_result": "Passed local checks",
+    "scope": "Local production candidate validation only; this receipt is not owner acceptance or public-launch authorization.",
+    "artifact_digest_algorithm": "sha256",
+    "artifact_digest": "d1ead4bcd338e032fd55e90092ecfcb64f023c40debdaf34fd5165b280df7ea2",
+    "metrics": {
+      "html_pages_excluding_downloads": 6504,
+      "top_level_data_json_exports": 86,
+      "update_entries_rendered": 169,
+      "v07_v09_public_html_routes": 170,
+      "v07_v09_public_json_exports": 18,
+      "schema_1_0_exports": 18,
+      "structurally_audited_routes": 170
+    },
+    "checks": [
+      {
+        "check_id": "production-html-inventory",
+        "status": "Passed",
+        "detail": "6504 HTML pages outside /downloads"
+      },
+      {
+        "check_id": "public-json-inventory",
+        "status": "Passed",
+        "detail": "86 top-level /data JSON exports"
+      },
+      {
+        "check_id": "update-index-rendering",
+        "status": "Passed",
+        "detail": "169 source update entries rendered on /updates/"
+      },
+      {
+        "check_id": "edition-route-inventory",
+        "status": "Passed",
+        "detail": "170 unique v0.7-v0.9 routes"
+      },
+      {
+        "check_id": "edition-route-structure",
+        "status": "Passed",
+        "detail": "170 routes checked for canonical, index/follow, language, viewport, main, h1, navigation, and sitemap coverage"
+      },
+      {
+        "check_id": "edition-export-inventory",
+        "status": "Passed",
+        "detail": "18 unique v0.7-v0.9 JSON exports"
+      },
+      {
+        "check_id": "schema-contract",
+        "status": "Passed",
+        "detail": "18 v0.7-v0.9 exports use schema_version 1.0"
+      },
+      {
+        "check_id": "v1-promotion-boundary",
+        "status": "Passed",
+        "detail": "v1 promotion remains Held"
+      },
+      {
+        "check_id": "npm-run-validate-candidates",
+        "status": "Passed",
+        "command": "npm run validate:candidates"
+      },
+      {
+        "check_id": "npm-run-validate-content",
+        "status": "Passed",
+        "command": "npm run validate:content"
+      },
+      {
+        "check_id": "npm-run-source-health",
+        "status": "Passed",
+        "command": "npm run source:health"
+      },
+      {
+        "check_id": "npm-run-test-v04",
+        "status": "Passed",
+        "command": "npm run test:v04"
+      },
+      {
+        "check_id": "npm-run-test-v05",
+        "status": "Passed",
+        "command": "npm run test:v05"
+      },
+      {
+        "check_id": "npm-run-test-v06",
+        "status": "Passed",
+        "command": "npm run test:v06"
+      },
+      {
+        "check_id": "npm-run-verify-phase58",
+        "status": "Passed",
+        "command": "npm run verify:phase58"
+      },
+      {
+        "check_id": "npm-run-verify-phase59",
+        "status": "Passed",
+        "command": "npm run verify:phase59"
+      },
+      {
+        "check_id": "npm-run-verify-phase60",
+        "status": "Passed",
+        "command": "npm run verify:phase60"
+      },
+      {
+        "check_id": "npm-run-verify-phase61",
+        "status": "Passed",
+        "command": "npm run verify:phase61"
+      },
+      {
+        "check_id": "npm-run-test-v09",
+        "status": "Passed",
+        "command": "npm run test:v09"
+      },
+      {
+        "check_id": "npm-run-check",
+        "status": "Passed",
+        "command": "npm run check"
+      },
+      {
+        "check_id": "npm-run-verify-v09",
+        "status": "Passed",
+        "command": "npm run verify:v09"
+      }
+    ],
+    "public_launch_authorized": false,
+    "owner_acceptance": false,
+    "hosted_deployment_authorized": false,
+    "v1_promotion_state": "Held",
+    "next_action": "Regenerate v0.7-v0.9 so Phase 144 embeds this receipt, rebuild production output, and rerun post-build and release verification before any separate owner-acceptance decision."
+  },
+  "promotion_requirements": [
+    "Owner-adjudicate the eighteen v0.7 requirement dockets and six mission decisions.",
+    "Close or explicitly carry the twelve mission acquisition gaps.",
+    "Admit at least one genuinely compatible longitudinal series or retain a documented no-series launch boundary.",
+    "Pass the complete production verification suite and owner acceptance review."
+  ],
+  "public_html_routes": [
+    "/review/v09/launch-audit/"
+  ],
+  "public_json_exports": [
+    "/data/phase-144-v1-launch-candidate-audit.json"
+  ]
+}

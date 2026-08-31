@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import RegistryHub from "../../../../components/review/RegistryHub.astro";
+import p130 from "../../../../data/phase-130-authority-gap-closure-maps.json";
+import p131 from "../../../../data/phase-131-priority-evidence-admission-dockets.json";
+import p132 from "../../../../data/phase-132-dated-source-check-receipts.json";
+import p133 from "../../../../data/phase-133-requirement-adjudication-board.json";
+import p134 from "../../../../data/phase-134-mission-decision-register.json";
+import p135 from "../../../../data/phase-135-atlas-conversion-readiness-audit.json";
+import p136 from "../../../../data/phase-136-named-project-chronicles.json";
+import p137 from "../../../../data/phase-137-place-delivery-ledgers.json";
+import p138 from "../../../../data/phase-138-longitudinal-evidence-eligibility.json";
+import p139 from "../../../../data/phase-139-comparative-dossier-rereview.json";
+import p140 from "../../../../data/phase-140-living-topic-desks.json";
+import p141 from "../../../../data/phase-141-frontier-systems-almanac.json";
+import p142 from "../../../../data/phase-142-topic-delivery-roadmaps.json";
+import p143 from "../../../../data/phase-143-editorial-cadence-editions.json";
+import p144 from "../../../../data/phase-144-v1-launch-candidate-audit.json";
+
+export function getStaticPaths() {
+  const definitions: any[] = [
+    ["v07", "authority-gaps", p130, p130.gap_maps], ["v07", "admission-dockets", p131, p131.admission_dockets], ["v07", "source-checks", p132, p132.source_check_receipts], ["v07", "requirements", p133, p133.adjudication_items], ["v07", "missions", p134, p134.mission_decisions],
+    ["v08", "readiness", p135, p135.readiness_records], ["v08", "projects", p136, p136.project_chronicles], ["v08", "places", p137, p137.place_ledgers], ["v08", "longitudinal", p138, p138.eligibility_records], ["v08", "comparisons", p139, p139.comparison_reviews],
+    ["v09", "desks", p140, p140.topic_desks], ["v09", "almanac", p141, p141.almanac_entries], ["v09", "roadmaps", p142, p142.topic_roadmaps], ["v09", "editions", p143, p143.editions], ["v09", "launch-audit", p144, p144.launch_gates],
+  ];
+  return definitions.map(([release, section, registry, items]) => ({ params: { release, section }, props: { registry, items, phase: registry.phase } }));
+}
+const { registry, items, phase } = Astro.props;
+const { release } = Astro.params;
+---
+<BaseLayout title={`${registry.title} | FTFN`} description={registry.summary}><RegistryHub registry={registry} items={items} phase={phase} release={release} /></BaseLayout>

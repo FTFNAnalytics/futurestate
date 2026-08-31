@@ -1,0 +1,1287 @@
+{
+  "schema_version": "1.0",
+  "phase": 140,
+  "program_id": "FTFN-PHASE-140",
+  "dataset": "phase_140_living_topic_desks",
+  "title": "Living topic desks",
+  "effective_date": "2026-08-30",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Turn all seventeen topic reviews into maintained public desks with current reads, open missions, watch queues, and reader paths.",
+  "record_scope": "Living topic desks records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "AI-assisted source triage can map exact artifacts and expose their limits, but it cannot stand in for the repository's required human admissibility decision.",
+    "A source-check receipt proves only that the named official artifact was inspected on the stated date; it does not admit the artifact, satisfy a requirement, or answer a mission.",
+    "No project stage, place state, comparison verdict, observation, outcome, score, rank, causal finding, recommendation, or future Phase 60 decision is created.",
+    "A repository-bounded gap says what this reviewed corpus has not established; it never asserts that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v09/desks/",
+    "public_export": "/data/phase-140-living-topic-desks.json"
+  },
+  "counts": {
+    "living_topic_desks": 17,
+    "mission_links": 68,
+    "acquisition_gap_links": 12,
+    "desks_in_inaugural_edition": 17
+  },
+  "topic_desks": [
+    {
+      "desk_id": "140-DESK-001",
+      "topic_id": "topic-advanced-manufacturing",
+      "slug": "advanced-manufacturing",
+      "title": "Advanced Manufacturing intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Advanced Manufacturing as a four-horizon research program rather than a collection of headlines. The central research problem is to distinguish installed equipment, qualified lines, receiver-accepted output and dependable production. Announced capacity and isolated delivery milestones are useful chronology, but neither supplies a stable account of yield, rework, downtime, workforce qualification or customer acceptance. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 4 exact Phase 125 annotations and 4 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use this review to see why production announcements and industrial-policy totals should not be mistaken for dependable capacity. It also identifies where official program records support a bounded statement and where only a company or program-level account is available.",
+      "strongest_current_evidence": "The corpus is unusually rich in named production programs, audited oversight, delivery records, local workforce evidence and explicit cross-series holds. Those records make it possible to compare the shape of evidence chains while preserving the fact that MEP client surveys, aircraft deliveries, semiconductor construction and medical-device manufacturing use different entities and denominators. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 10 project and 4 place biographies as receiving-system context and 3 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "The unresolved issue is not a lack of industrial activity. It is the missing bridge between activity and a compatible facility-level operating account. Product definitions move, production interruptions are reported unevenly, receiver acceptance may be separated from contractor delivery, and client-attributed benefits do not establish causal improvement. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-001",
+        "121-MISSION-002",
+        "121-MISSION-003",
+        "121-MISSION-004"
+      ],
+      "acquisition_gap_mission_ids": [
+        "121-MISSION-004"
+      ],
+      "authority_gap_map_ids": [
+        "130-GAP-001"
+      ],
+      "admission_docket_ids": [
+        "131-DOCKET-001"
+      ],
+      "source_check_receipt_ids": [
+        "132-SOURCE-CHECK-001",
+        "132-SOURCE-CHECK-002",
+        "132-SOURCE-CHECK-003"
+      ],
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-001",
+        "133-ADJUDICATION-002",
+        "133-ADJUDICATION-003"
+      ],
+      "mission_decision_ids": [
+        "134-MISSION-001"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-018",
+        "136-CHRONICLE-016",
+        "136-CHRONICLE-015",
+        "136-CHRONICLE-022",
+        "136-CHRONICLE-019",
+        "136-CHRONICLE-017",
+        "136-CHRONICLE-020",
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-024",
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-009",
+        "137-LEDGER-002",
+        "137-LEDGER-011",
+        "137-LEDGER-005"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-006",
+        "139-REREVIEW-009",
+        "139-REREVIEW-010"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-001",
+          "action": "Baseline work begins with the exact question: “Which named facilities and production systems have defensible baselines for installed, qualified and available capacity?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requi"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-002",
+          "action": "Conversion work begins with the exact question: “Where do finance, permits, equipment, materials, utilities and workforce constrain the path from facility commitment to qualification?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-003",
+          "action": "Operation work begins with the exact question: “Which customer-acceptance and recurring-output records establish dependable production rather than a successful trial or first article?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-004",
+          "action": "Outcome work begins with the exact question: “Which compatible yield, quality, cost, schedule, safety and reliability series show whether advanced manufacturing improved receiving-system outcomes?” The Phase 126 audit retains the upstream answer state and screens title/factual-nu"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/advanced-manufacturing/"
+    },
+    {
+      "desk_id": "140-DESK-002",
+      "topic_id": "topic-agriculture-and-bioeconomy",
+      "slug": "agriculture-and-bioeconomy",
+      "title": "Agriculture and Bioeconomy intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Agriculture and Bioeconomy as a four-horizon research program rather than a collection of headlines. The topic spans biological production, processing, land, water, energy, logistics and community food systems. Its evidence problem is therefore one of chain identity: a crop, feedstock, facility, product, geography and receiving market have to remain linked before scale or resilience can be described. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 4 exact Phase 125 annotations and 5 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review helps readers separate resource potential from operating supply chains and community outcomes. It shows which questions can be answered with official statistics, which require processor or local-system records, and which remain dependent on a future comparable series.",
+      "strongest_current_evidence": "Official agricultural statistics, environmental records, energy accounts and food-system context provide substantial baseline material. The strongest records preserve commodity definitions, geography, season and unit. They help identify where a biological resource exists and where processing or delivery capacity remains only planned. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 0 project and 0 place biographies as receiving-system context and 0 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "Biological systems are sensitive to weather, disease, input prices, land-use change and measurement revisions. Aggregate production can rise while local access, soil condition or processing resilience deteriorates. A bioeconomy label also combines products with very different conversion efficiencies and market uses. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-005",
+        "121-MISSION-006",
+        "121-MISSION-007",
+        "121-MISSION-008"
+      ],
+      "acquisition_gap_mission_ids": [],
+      "authority_gap_map_ids": [],
+      "admission_docket_ids": [],
+      "source_check_receipt_ids": [],
+      "requirement_adjudication_ids": [],
+      "mission_decision_ids": [],
+      "project_chronicle_ids": [],
+      "place_ledger_ids": [],
+      "comparison_rereview_ids": [],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-005",
+          "action": "Baseline work begins with the exact question: “Which crops, biological processes, farms and regional systems have comparable starting baselines for yield, inputs, risk and resource use?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overl"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-006",
+          "action": "Conversion work begins with the exact question: “How do approvals, finance, infrastructure, processing capacity and offtake agreements move agricultural and bioeconomy innovations into field implementation?” The Phase 126 audit retains the upstream answer state and screens title/"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-007",
+          "action": "Operation work begins with the exact question: “Which repeated seasonal or batch records establish sustained adoption, production quality and farmer or processor use?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requir"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-008",
+          "action": "Outcome work begins with the exact question: “What happens to yields, water, soil, emissions, biodiversity, income, labor and food security after adoption, and which changes can be attributed?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleu"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/agriculture-and-bioeconomy/"
+    },
+    {
+      "desk_id": "140-DESK-003",
+      "topic_id": "topic-ai-for-science",
+      "slug": "ai-for-science",
+      "title": "AI for Science intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats AI for Science as a four-horizon research program rather than a collection of headlines. AI-for-science evidence must move beyond inventories of tools and allocations of compute toward named scientific workflows. The relevant question is whether a system changes discovery time, experimental yield, replication, cost or quality under conditions that expose human review and failure handling. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 4 exact Phase 125 annotations and 8 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers should leave with a disciplined distinction among policy priority, infrastructure availability, evaluation capability, operational use and scientific outcome. The current corpus can support that map, but it cannot yet support a general claim that AI has improved scientific performance.",
+      "strongest_current_evidence": "The current corpus documents federal AI-use inventories, research-infrastructure reach and a structured NIST evaluation pilot. These records establish program identity, operating context and evaluation design. They also explicitly preserve the difference between the number of use cases and a measure of scientific benefit. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 1 project and 0 place biographies as receiving-system context and 2 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "Comparable outcomes remain the central gap. Active-use labels do not supply accuracy, reliability, cost, incident or mission-benefit denominators. Pilot evaluations can test methods without demonstrating durable use, and aggregate project counts do not show whether access changed the quality or pace of research. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-009",
+        "121-MISSION-010",
+        "121-MISSION-011",
+        "121-MISSION-012"
+      ],
+      "acquisition_gap_mission_ids": [
+        "121-MISSION-012"
+      ],
+      "authority_gap_map_ids": [
+        "130-GAP-002"
+      ],
+      "admission_docket_ids": [],
+      "source_check_receipt_ids": [],
+      "requirement_adjudication_ids": [],
+      "mission_decision_ids": [],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-007"
+      ],
+      "place_ledger_ids": [],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-005",
+        "139-REREVIEW-012"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-009",
+          "action": "Baseline work begins with the exact question: “Which named scientific workflows have measurable baselines for time, cost, reproducibility, data quality and expert effort?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three re"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-010",
+          "action": "Conversion work begins with the exact question: “How do data rights, compute, evaluation, procurement, assurance and institutional authority govern movement from demonstration to scientific use?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucl"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-011",
+          "action": "Operation work begins with the exact question: “Which accepted and repeated uses show that AI systems remain reliable, reproducible and useful across scientific cycles?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requ"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-012",
+          "action": "Outcome work begins with the exact question: “Do accepted systems change discovery time, experimental yield, replication, cost or scientific quality without introducing unmeasured harms?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus over"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/ai-for-science/"
+    },
+    {
+      "desk_id": "140-DESK-004",
+      "topic_id": "topic-aviation",
+      "slug": "aviation",
+      "title": "Aviation intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Aviation as a four-horizon research program rather than a collection of headlines. Aviation combines aircraft, airports, routes, operators, airspace and propulsion systems. The evidence challenge is to retain the right exposure denominator while separating certification, fleet entry, service delivery and public outcomes. The workbench currently contains 2 missions with exact Phase 120 packet joins and 2 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 5 exact Phase 125 annotations and 9 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review enables readers to distinguish a regulatory milestone from an operating service and to understand what official annual data can and cannot say. It also makes clear why aviation performance should be reported measure by measure rather than as a composite rank.",
+      "strongest_current_evidence": "DOT and BTS preserve recurring carrier-service records with explicit reporting populations, while FAA rules and integration programs identify the authority layer for newer aircraft categories. Measured challenge results add a bounded performance record without implying certification or commercial readiness. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 4 project and 1 place biographies as receiving-system context and 1 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "Cancellation, delay, baggage, complaint, safety, emissions, noise and access measures are not interchangeable. Carrier coverage changes, weather and network structure affect comparisons. A prototype or powered-lift rule cannot establish a route-level service outcome, and national rates may obscure airport or fleet conditions. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-013",
+        "121-MISSION-014",
+        "121-MISSION-015",
+        "121-MISSION-016"
+      ],
+      "acquisition_gap_mission_ids": [
+        "121-MISSION-013",
+        "121-MISSION-016"
+      ],
+      "authority_gap_map_ids": [
+        "130-GAP-003",
+        "130-GAP-004"
+      ],
+      "admission_docket_ids": [
+        "131-DOCKET-002",
+        "131-DOCKET-003"
+      ],
+      "source_check_receipt_ids": [
+        "132-SOURCE-CHECK-004",
+        "132-SOURCE-CHECK-005",
+        "132-SOURCE-CHECK-006",
+        "132-SOURCE-CHECK-007",
+        "132-SOURCE-CHECK-008",
+        "132-SOURCE-CHECK-009"
+      ],
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-004",
+        "133-ADJUDICATION-005",
+        "133-ADJUDICATION-006",
+        "133-ADJUDICATION-007",
+        "133-ADJUDICATION-008",
+        "133-ADJUDICATION-009"
+      ],
+      "mission_decision_ids": [
+        "134-MISSION-002",
+        "134-MISSION-003"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-016",
+        "136-CHRONICLE-015",
+        "136-CHRONICLE-017",
+        "136-CHRONICLE-004"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-007"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-013",
+          "action": "Baseline work begins with the exact question: “Which named aircraft, airports, propulsion systems and service networks have current baselines for capacity, readiness, safety and use?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap "
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-014",
+          "action": "Conversion work begins with the exact question: “How do certification, manufacturing, infrastructure, workforce, finance and operating authority combine before entry into service?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-015",
+          "action": "Operation work begins with the exact question: “Which acceptance, dispatch, utilization and maintenance records establish repeated service rather than delivery or a demonstration flight?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus over"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-016",
+          "action": "Outcome work begins with the exact question: “Which compatible safety, reliability, cost, emissions, noise and access measures show public and system outcomes?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirements "
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/aviation/"
+    },
+    {
+      "desk_id": "140-DESK-005",
+      "topic_id": "topic-chips-and-compute",
+      "slug": "chips-and-compute",
+      "title": "Chips and Compute intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Chips and Compute as a four-horizon research program rather than a collection of headlines. Chips and compute research has to connect facilities and service systems to qualified output, accepted utility capacity and recurring operation. Capital announcements and construction milestones are important, but they do not establish wafers, compute availability or durable local benefit. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 6 exact Phase 125 annotations and 10 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use this review to test claims of semiconductor or compute capacity against the actual conversion chain. The review does not decide whether a facility is successful; it shows which official records would be needed to make a bounded operating or outcome statement.",
+      "strongest_current_evidence": "The corpus contains unusually detailed project, utility, water, workforce, permit and regional-load context. Named Phoenix and Northern Virginia records show how land, tariffs, transmission, wastewater and labor become explicit gates around large facilities. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 2 project and 2 place biographies as receiving-system context and 2 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "The missing evidence is facility-level and repeated. Public records rarely disclose metered energy and water, qualified wafer output, yield, uptime, customer acceptance or comparable workforce retention. City updates may relay company claims, while regional employment and load data cannot be transferred to one campus. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-017",
+        "121-MISSION-018",
+        "121-MISSION-019",
+        "121-MISSION-020"
+      ],
+      "acquisition_gap_mission_ids": [
+        "121-MISSION-020"
+      ],
+      "authority_gap_map_ids": [
+        "130-GAP-005"
+      ],
+      "admission_docket_ids": [],
+      "source_check_receipt_ids": [],
+      "requirement_adjudication_ids": [],
+      "mission_decision_ids": [],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-003",
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-003",
+        "137-LEDGER-005"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-001",
+        "139-REREVIEW-010"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-017",
+          "action": "Baseline work begins with the exact question: “Which named fabs, data centers and compute services have defensible baselines for installed, available and qualified capacity?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-018",
+          "action": "Conversion work begins with the exact question: “Where do power, water, land, permits, interconnection, tooling, workforce and customer commitments constrain delivery?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requi"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-019",
+          "action": "Operation work begins with the exact question: “Which qualification, customer-acceptance, uptime and recurring-output records establish dependable semiconductor or compute service?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap fo"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-020",
+          "action": "Outcome work begins with the exact question: “What do compatible series show about productivity, reliability, water, energy, workforce, supply resilience and local public effects?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/chips-and-compute/"
+    },
+    {
+      "desk_id": "140-DESK-006",
+      "topic_id": "topic-climate",
+      "slug": "climate",
+      "title": "Climate intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Climate as a four-horizon research program rather than a collection of headlines. Climate evidence moves among physical observations, modeled scenarios, exposure, adaptation actions and realized losses. A strong review keeps those claim types separate and states which geography, time window and uncertainty treatment governs each one. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 4 exact Phase 125 annotations and 4 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review gives readers a way to separate hazard context, planned adaptation, implemented protection and measured outcome. It also clarifies when an evidence gap reflects missing local observation rather than uncertainty about the wider physical trend.",
+      "strongest_current_evidence": "The corpus has broad official statistical, environmental and infrastructure rails, plus named local systems where water, hazard and resilience questions become concrete. This supports careful baseline and conversion analysis without converting a projection into an observed local outcome. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 8 project and 6 place biographies as receiving-system context and 2 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "Attribution, scale and timing remain persistent difficulties. National trends do not specify asset exposure, and a resilience plan does not prove reduced loss. Different hazard models, baselines and emissions scenarios can be informative without being numerically compatible. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-021",
+        "121-MISSION-022",
+        "121-MISSION-023",
+        "121-MISSION-024"
+      ],
+      "acquisition_gap_mission_ids": [],
+      "authority_gap_map_ids": [],
+      "admission_docket_ids": [],
+      "source_check_receipt_ids": [],
+      "requirement_adjudication_ids": [],
+      "mission_decision_ids": [],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-014",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-022",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-013"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-015",
+        "137-LEDGER-014",
+        "137-LEDGER-009",
+        "137-LEDGER-002",
+        "137-LEDGER-012",
+        "137-LEDGER-013"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-009",
+        "139-REREVIEW-012"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-021",
+          "action": "Baseline work begins with the exact question: “Which hazards, exposures, vulnerabilities and adaptive capacities have stable baselines at decision-relevant geographies?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requ"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-022",
+          "action": "Conversion work begins with the exact question: “Which policies, finance commitments and projects move from climate ambition into completed and validated adaptation or mitigation?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-023",
+          "action": "Operation work begins with the exact question: “Which repeated operating records show that climate interventions remain available and effective under real conditions?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requir"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-024",
+          "action": "Outcome work begins with the exact question: “What changes in loss, exposure, service continuity, emissions, ecosystems and welfare can be measured, and what attribution remains unresolved?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus o"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/climate/"
+    },
+    {
+      "desk_id": "140-DESK-007",
+      "topic_id": "topic-critical-minerals",
+      "slug": "critical-minerals",
+      "title": "Critical Minerals intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Critical Minerals as a four-horizon research program rather than a collection of headlines. Critical-minerals evidence begins with material and asset identity. Resources, reserves, mine output, refined material, qualified product and customer receipt are different stages, and national import reliance is not a project operating measure. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 6 exact Phase 125 annotations and 7 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use this review to distinguish strategic importance from delivered supply. It makes official baseline evidence visible while preventing an authorized or financed project from being described as an operating source of qualified material.",
+      "strongest_current_evidence": "USGS annual commodity records provide a strong baseline with methods, units and revision boundaries. Nevada project files add exact land and environmental authorities, finance and pre-operation conditions. Together they support a bounded account of context and permission. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 1 project and 1 place biographies as receiving-system context and 1 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "Current mine, refinery and processor capacity is often obscured by incompatible material definitions, company forecasts and undisclosed qualification requirements. A permit authorizes regulated activity but does not prove construction, commissioning, compliant operation or saleable output. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-025",
+        "121-MISSION-026",
+        "121-MISSION-027",
+        "121-MISSION-028"
+      ],
+      "acquisition_gap_mission_ids": [
+        "121-MISSION-025"
+      ],
+      "authority_gap_map_ids": [
+        "130-GAP-006"
+      ],
+      "admission_docket_ids": [
+        "131-DOCKET-004"
+      ],
+      "source_check_receipt_ids": [
+        "132-SOURCE-CHECK-010",
+        "132-SOURCE-CHECK-011",
+        "132-SOURCE-CHECK-012"
+      ],
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-010",
+        "133-ADJUDICATION-011",
+        "133-ADJUDICATION-012"
+      ],
+      "mission_decision_ids": [
+        "134-MISSION-004"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-005"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-002"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-006"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-025",
+          "action": "Baseline work begins with the exact question: “Which named deposits, mines, refineries, processors and recycling systems have current resource, capacity and compliance baselines?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for "
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-026",
+          "action": "Conversion work begins with the exact question: “How do permitting, finance, water, energy, community consent, construction and qualification govern conversion into usable supply?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-027",
+          "action": "Operation work begins with the exact question: “Which accepted shipments and recurring qualified-output records establish reliable supply into named receiving systems?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requi"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-028",
+          "action": "Outcome work begins with the exact question: “Which compatible cost, reliability, environmental, labor, community and supply-security outcomes follow, and at what boundary?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three "
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/critical-minerals/"
+    },
+    {
+      "desk_id": "140-DESK-008",
+      "topic_id": "topic-cybersecurity",
+      "slug": "cybersecurity",
+      "title": "Cybersecurity intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Cybersecurity as a four-horizon research program rather than a collection of headlines. Cybersecurity evidence has to distinguish controls, maturity assessments, detected incidents, losses, recovery and mission or user harm. Reporting quality is itself part of the measurement problem because low counts may reflect weak detection or disclosure. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 5 exact Phase 125 annotations and 7 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review helps readers understand why a mature-control label and a low incident count answer different questions. It supports bounded comparison within an agency series while refusing a cross-agency security ranking or a claim that controls caused an outcome.",
+      "strongest_current_evidence": "Annual FISMA and inspector-general records create recurring agency-level control and maturity series. They preserve review scope, recommendation state and method changes. CISA and NIST records add obligations, migration guidance and interoperability context. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 4 project and 3 place biographies as receiving-system context and 2 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "Control maturity is not a direct measure of event exposure or avoided harm. Agency methods change, system populations differ and recommendation closure may not establish operating effectiveness. Public loss and recovery data are especially incomplete and can reward under-reporting. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-029",
+        "121-MISSION-030",
+        "121-MISSION-031",
+        "121-MISSION-032"
+      ],
+      "acquisition_gap_mission_ids": [
+        "121-MISSION-032"
+      ],
+      "authority_gap_map_ids": [
+        "130-GAP-007"
+      ],
+      "admission_docket_ids": [],
+      "source_check_receipt_ids": [],
+      "requirement_adjudication_ids": [],
+      "mission_decision_ids": [],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-006",
+        "136-CHRONICLE-023",
+        "136-CHRONICLE-007",
+        "136-CHRONICLE-008"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-006",
+        "137-LEDGER-007",
+        "137-LEDGER-008"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-003",
+        "139-REREVIEW-005"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-029",
+          "action": "Baseline work begins with the exact question: “Which named systems, assets and organizations have current inventories, threat baselines and control boundaries?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirements "
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-030",
+          "action": "Conversion work begins with the exact question: “How do standards, procurement, migration, testing and authorization move a security requirement into implemented controls?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three r"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-031",
+          "action": "Operation work begins with the exact question: “Which cutover, monitoring, incident, correction and retirement records establish sustained control operation?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirements wi"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-032",
+          "action": "Outcome work begins with the exact question: “Which compatible exposure, loss, recovery, mission and user-harm measures show security outcomes without rewarding under-reporting?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for t"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/cybersecurity/"
+    },
+    {
+      "desk_id": "140-DESK-009",
+      "topic_id": "topic-discovery-technologies",
+      "slug": "discovery-technologies",
+      "title": "Discovery Technologies intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Discovery Technologies as a four-horizon research program rather than a collection of headlines. Discovery technologies include observation platforms, metrology, data systems and research instruments. Their public value depends on more than deployment: access, validated products, workflow adoption, discovery quality, replication and cost must be traced separately. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 4 exact Phase 125 annotations and 7 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use this review to locate real operating data resources and to see why access is an intermediate state rather than an outcome. It keeps promising applications visible without converting potential use into realized benefit.",
+      "strongest_current_evidence": "NASA's public NISAR data release establishes an operating observation rail, while NSF, NOAA, NIST and USGS records describe data infrastructure, mapping and metrology programs. These sources identify platforms and access conditions with strong provenance. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 1 project and 0 place biographies as receiving-system context and 2 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "Data availability does not demonstrate scientific use or improved discovery. Coverage, processing level, calibration, downstream models and ground truth can change the result. Annual activity reports also summarize work without providing a comparable prior method or control. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-033",
+        "121-MISSION-034",
+        "121-MISSION-035",
+        "121-MISSION-036"
+      ],
+      "acquisition_gap_mission_ids": [
+        "121-MISSION-036"
+      ],
+      "authority_gap_map_ids": [
+        "130-GAP-008"
+      ],
+      "admission_docket_ids": [],
+      "source_check_receipt_ids": [],
+      "requirement_adjudication_ids": [],
+      "mission_decision_ids": [],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-007"
+      ],
+      "place_ledger_ids": [],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-005",
+        "139-REREVIEW-012"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-033",
+          "action": "Baseline work begins with the exact question: “Which instruments, platforms and research methods have reproducible performance baselines on named scientific tasks?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requireme"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-034",
+          "action": "Conversion work begins with the exact question: “How do funding, facilities, data, standards, validation and institutional adoption move a discovery platform beyond demonstration?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-035",
+          "action": "Operation work begins with the exact question: “Which accepted and repeated uses establish dependable operation across laboratories, sites or research cycles?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirements w"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-036",
+          "action": "Outcome work begins with the exact question: “Do these platforms improve discovery rate, evidence quality, replication, access or cost, and which effects remain unproven?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three re"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/discovery-technologies/"
+    },
+    {
+      "desk_id": "140-DESK-010",
+      "topic_id": "topic-energy",
+      "slug": "energy",
+      "title": "Energy intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Energy as a four-horizon research program rather than a collection of headlines. Energy evidence must preserve the distinction among nameplate capacity, available capacity, delivered energy, reliability, affordability and emissions. Grid and fuel systems also require a clear balancing area, asset, customer class or service territory. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 6 exact Phase 125 annotations and 9 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. This review helps readers move from capacity headlines to the records that establish operation and service. It supports compatible within-series observations while rejecting cross-market scores built from mismatched prices, reliability definitions or time windows.",
+      "strongest_current_evidence": "Official operators, regulators and statistical agencies provide extensive recurring data. Named storage, transmission and large-load files show authority, construction and service conditions. These records support strong baselines and conversion-chain analysis. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 10 project and 9 place biographies as receiving-system context and 4 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "Different markets, weather periods and accounting methods can make apparently similar measures incompatible. A capacity award or interconnection position does not establish energization, dispatch or reliability value, and modeled savings do not equal observed bills. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-037",
+        "121-MISSION-038",
+        "121-MISSION-039",
+        "121-MISSION-040"
+      ],
+      "acquisition_gap_mission_ids": [],
+      "authority_gap_map_ids": [],
+      "admission_docket_ids": [],
+      "source_check_receipt_ids": [],
+      "requirement_adjudication_ids": [],
+      "mission_decision_ids": [],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-014",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-003",
+        "136-CHRONICLE-004",
+        "136-CHRONICLE-001",
+        "136-CHRONICLE-013"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-015",
+        "137-LEDGER-001",
+        "137-LEDGER-014",
+        "137-LEDGER-002",
+        "137-LEDGER-003",
+        "137-LEDGER-004",
+        "137-LEDGER-012",
+        "137-LEDGER-005",
+        "137-LEDGER-013"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-001",
+        "139-REREVIEW-006",
+        "139-REREVIEW-007",
+        "139-REREVIEW-011"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-037",
+          "action": "Baseline work begins with the exact question: “Which named grids, plants, storage assets and customer classes have compatible capacity, demand, reliability and cost baselines?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for thr"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-038",
+          "action": "Conversion work begins with the exact question: “How do planning, authority, finance, interconnection, construction, fuel and supply-chain gates govern delivery?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirement"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-039",
+          "action": "Operation work begins with the exact question: “Which commissioning, acceptance, dispatch and recurring-service records establish dependable operating contribution?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirem"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-040",
+          "action": "Outcome work begins with the exact question: “Which compatible reliability, affordability, emissions, resilience and local-impact series show net system outcomes?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requiremen"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/energy/"
+    },
+    {
+      "desk_id": "140-DESK-011",
+      "topic_id": "topic-finance-and-risk",
+      "slug": "finance-and-risk",
+      "title": "Finance and Risk intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Finance and Risk as a four-horizon research program rather than a collection of headlines. Finance and risk evidence asks what capital actually enables, which obligations attach to it and where loss is allocated. Commitment, close, expenditure, physical delivery, service and return are distinct stages. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 6 exact Phase 125 annotations and 9 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use this review to distinguish permission to spend from completed infrastructure and to understand why investment totals cannot be ranked as outcomes. It keeps public exposure and delivery obligations visible at the named project level.",
+      "strongest_current_evidence": "The corpus includes official awards, loans, tariffs, regulatory decisions, budgets and project files. These records can identify committed scope, legal conditions and named counterparties, giving a strong basis for tracing the conversion path. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 6 project and 4 place biographies as receiving-system context and 3 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "Headline values often mix authorized ceilings, announced investment, obligated funds and actual expenditure. Project outcomes may remain undisclosed, while risk transfer, guarantees and public liabilities have different valuation dates and contingencies. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-041",
+        "121-MISSION-042",
+        "121-MISSION-043",
+        "121-MISSION-044"
+      ],
+      "acquisition_gap_mission_ids": [],
+      "authority_gap_map_ids": [],
+      "admission_docket_ids": [],
+      "source_check_receipt_ids": [],
+      "requirement_adjudication_ids": [],
+      "mission_decision_ids": [],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-014",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-002",
+        "136-CHRONICLE-013"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-014",
+        "137-LEDGER-004",
+        "137-LEDGER-012",
+        "137-LEDGER-013"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-002",
+        "139-REREVIEW-008",
+        "139-REREVIEW-011"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-041",
+          "action": "Baseline work begins with the exact question: “Which markets, institutions, projects and public balance sheets have current exposure, cost and risk baselines?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirements w"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-042",
+          "action": "Conversion work begins with the exact question: “When do appropriations, guarantees, insurance, credit and private finance remove a conversion constraint, and when do they create a contingent one?” The Phase 126 audit retains the upstream answer state and screens title/factual-nu"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-043",
+          "action": "Operation work begins with the exact question: “Which drawdown, payment, covenant, loss and operating records show that financed activity reached sustained delivery?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three require"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-044",
+          "action": "Outcome work begins with the exact question: “Which compatible affordability, fiscal, resilience, distributional and real-economy outcomes follow, and who ultimately bears the downside?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overl"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/finance-and-risk/"
+    },
+    {
+      "desk_id": "140-DESK-012",
+      "topic_id": "topic-human-futures",
+      "slug": "human-futures",
+      "title": "Human Futures intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Human Futures as a four-horizon research program rather than a collection of headlines. Human-futures research covers population, work, institutions, access, health, housing and community capacity. The evidence challenge is to define the people and places affected without reducing different dimensions of life to one progress score. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 5 exact Phase 125 annotations and 8 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review gives readers a structured way to ask who benefits, who bears risk and what evidence would demonstrate durable access. It avoids a universal welfare index while making distributive questions a required part of technical research.",
+      "strongest_current_evidence": "Official statistical systems provide recurring demographic, labor and social baselines. Project and place files add concrete workforce, accessibility and service questions. This creates a strong context layer for studying who receives new capacity and under what conditions. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 9 project and 11 place biographies as receiving-system context and 4 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "Aggregate improvement can coexist with unequal access, displacement or unmeasured burden. Administrative categories change, local samples may be small and self-reported experience cannot be substituted for service operation. Causal attribution is rarely available from one series. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-045",
+        "121-MISSION-046",
+        "121-MISSION-047",
+        "121-MISSION-048"
+      ],
+      "acquisition_gap_mission_ids": [],
+      "authority_gap_map_ids": [],
+      "admission_docket_ids": [],
+      "source_check_receipt_ids": [],
+      "requirement_adjudication_ids": [],
+      "mission_decision_ids": [],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-021",
+        "136-CHRONICLE-018",
+        "136-CHRONICLE-019",
+        "136-CHRONICLE-020",
+        "136-CHRONICLE-023",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-024",
+        "136-CHRONICLE-002",
+        "136-CHRONICLE-008"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-010",
+        "137-LEDGER-006",
+        "137-LEDGER-015",
+        "137-LEDGER-001",
+        "137-LEDGER-009",
+        "137-LEDGER-007",
+        "137-LEDGER-008",
+        "137-LEDGER-011",
+        "137-LEDGER-003",
+        "137-LEDGER-004",
+        "137-LEDGER-005"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-002",
+        "139-REREVIEW-004",
+        "139-REREVIEW-008",
+        "139-REREVIEW-010"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-045",
+          "action": "Baseline work begins with the exact question: “Which populations and places have current baselines for access, affordability, safety, capability, trust and lived conditions?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-046",
+          "action": "Conversion work begins with the exact question: “How do public authority, finance, infrastructure, workforce and legitimacy shape whether frontier systems reach people?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requ"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-047",
+          "action": "Operation work begins with the exact question: “Which accepted and repeated services establish real availability, accessibility, quality and use for defined populations?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three req"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-048",
+          "action": "Outcome work begins with the exact question: “What changes in capability, health, security, time, income, participation and trust can be measured, for whom, and with what alternatives?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overla"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/human-futures/"
+    },
+    {
+      "desk_id": "140-DESK-013",
+      "topic_id": "topic-mobility",
+      "slug": "mobility",
+      "title": "Mobility intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Mobility as a four-horizon research program rather than a collection of headlines. Mobility evidence must connect networks, routes, fleets and passenger-facing services to exposure, access, reliability, safety and cost. Authority to operate and vehicle miles are not the same as a dependable user outcome. The workbench currently contains 2 missions with exact Phase 120 packet joins and 2 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 6 exact Phase 125 annotations and 6 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use the review to understand which operating facts are already public and why the outcome layer remains thinner. It prevents a permit, deployment count or isolated safety event from becoming a generalized mobility-performance claim.",
+      "strongest_current_evidence": "California DMV testing reports, Amtrak accessibility inventories, DOT carrier data and named regulatory records provide substantial baseline and chronology. They preserve fleet or station identities and expose where reporting definitions differ. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 2 project and 2 place biographies as receiving-system context and 1 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "Autonomous testing miles do not measure commercial passenger safety, a recall is not a fleet-wide rate, and station completion does not establish feature uptime or trip usability. Public reporting lacks a comparable service rollup for several named systems. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-049",
+        "121-MISSION-050",
+        "121-MISSION-051",
+        "121-MISSION-052"
+      ],
+      "acquisition_gap_mission_ids": [
+        "121-MISSION-049",
+        "121-MISSION-052"
+      ],
+      "authority_gap_map_ids": [
+        "130-GAP-009",
+        "130-GAP-010"
+      ],
+      "admission_docket_ids": [
+        "131-DOCKET-005"
+      ],
+      "source_check_receipt_ids": [
+        "132-SOURCE-CHECK-013",
+        "132-SOURCE-CHECK-014",
+        "132-SOURCE-CHECK-015"
+      ],
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-013",
+        "133-ADJUDICATION-014",
+        "133-ADJUDICATION-015"
+      ],
+      "mission_decision_ids": [
+        "134-MISSION-005"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-021",
+        "136-CHRONICLE-008"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-010",
+        "137-LEDGER-006"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-004"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-049",
+          "action": "Baseline work begins with the exact question: “Which named networks, fleets, routes and services have current baselines for capacity, access, reliability, safety and use?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three re"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-050",
+          "action": "Conversion work begins with the exact question: “How do authority, infrastructure, procurement, certification, workforce and local rules govern movement from pilot to public service?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap "
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-051",
+          "action": "Operation work begins with the exact question: “Which acceptance, availability, trip, maintenance and incident records establish sustained service?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirements without deci"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-052",
+          "action": "Outcome work begins with the exact question: “Which compatible safety, travel-time, affordability, accessibility, emissions and land-use outcomes follow?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirements withou"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/mobility/"
+    },
+    {
+      "desk_id": "140-DESK-014",
+      "topic_id": "topic-policy-and-standards",
+      "slug": "policy-and-standards",
+      "title": "Policy and Standards intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Policy and Standards as a four-horizon research program rather than a collection of headlines. Policy and standards shape what institutions may, must or can consistently do. The evidence task is to separate publication, legal effect, organizational adoption, implementation, conformity, enforcement and realized system change. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 5 exact Phase 125 annotations and 4 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review helps readers distinguish a normative commitment from operational change. It also explains why standards coverage should not become a jurisdiction ranking and why later acceptance evidence must remain attached to the responsible institution.",
+      "strongest_current_evidence": "The corpus contains legislation, rules, standards, guidance, program conditions and administrative decisions across many topics. Exact document identity and authority make it possible to trace a requirement without assuming that every receiving organization implemented it. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 15 project and 11 place biographies as receiving-system context and 5 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "A published standard may be voluntary, a rule may have transition periods and a policy can lack resources or enforcement. Adoption counts often omit configuration, exceptions and continuing conformance. Different jurisdictions also assign authority differently. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-053",
+        "121-MISSION-054",
+        "121-MISSION-055",
+        "121-MISSION-056"
+      ],
+      "acquisition_gap_mission_ids": [],
+      "authority_gap_map_ids": [],
+      "admission_docket_ids": [],
+      "source_check_receipt_ids": [],
+      "requirement_adjudication_ids": [],
+      "mission_decision_ids": [],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-021",
+        "136-CHRONICLE-016",
+        "136-CHRONICLE-015",
+        "136-CHRONICLE-006",
+        "136-CHRONICLE-022",
+        "136-CHRONICLE-017",
+        "136-CHRONICLE-023",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-007",
+        "136-CHRONICLE-024",
+        "136-CHRONICLE-003",
+        "136-CHRONICLE-004",
+        "136-CHRONICLE-002",
+        "136-CHRONICLE-001",
+        "136-CHRONICLE-008"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-010",
+        "137-LEDGER-006",
+        "137-LEDGER-015",
+        "137-LEDGER-001",
+        "137-LEDGER-009",
+        "137-LEDGER-007",
+        "137-LEDGER-008",
+        "137-LEDGER-011",
+        "137-LEDGER-003",
+        "137-LEDGER-004",
+        "137-LEDGER-005"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-002",
+        "139-REREVIEW-003",
+        "139-REREVIEW-004",
+        "139-REREVIEW-008",
+        "139-REREVIEW-011"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-053",
+          "action": "Baseline work begins with the exact question: “Which laws, rules, standards, permits and institutional responsibilities currently govern each priority conversion pathway?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three re"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-054",
+          "action": "Conversion work begins with the exact question: “Which budgets, procurements, implementation plans, inspections and enforcement actions convert formal authority into practice?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for thr"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-055",
+          "action": "Operation work begins with the exact question: “Which verified cutovers, compliance records and repeated practices establish adoption rather than publication?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirements w"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-056",
+          "action": "Outcome work begins with the exact question: “Which service, safety, access, cost, legitimacy and distributional outcomes change after implementation, and what else could explain them?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overla"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/policy-and-standards/"
+    },
+    {
+      "desk_id": "140-DESK-015",
+      "topic_id": "topic-quantum",
+      "slug": "quantum",
+      "title": "Quantum intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Quantum as a four-horizon research program rather than a collection of headlines. Quantum research must keep computing, sensing, communications and cryptographic migration distinct. Post-quantum standards respond to a future threat; they are not evidence that a quantum computer or sensor achieved an operating outcome. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 4 exact Phase 125 annotations and 5 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use this review to see that the evidence gap is explicit rather than hidden. It preserves useful post-quantum material in its proper domain while directing quantum-outcome research toward official benchmark and accepted-use records.",
+      "strongest_current_evidence": "The corpus has strong NIST and OMB records for post-quantum policy, algorithm selection and migration planning. Those sources establish a real standards-to-adoption pathway and a clear adjacent cybersecurity question. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 1 project and 0 place biographies as receiving-system context and 1 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "The current corpus does not contain mission-decisive evidence for quantum-system outcomes. It lacks named workloads, accepted use, benchmark methods, error and uptime series, costs and repeated performance. Reusing cryptographic migration records would create a category error. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-057",
+        "121-MISSION-058",
+        "121-MISSION-059",
+        "121-MISSION-060"
+      ],
+      "acquisition_gap_mission_ids": [
+        "121-MISSION-060"
+      ],
+      "authority_gap_map_ids": [
+        "130-GAP-011"
+      ],
+      "admission_docket_ids": [
+        "131-DOCKET-006"
+      ],
+      "source_check_receipt_ids": [
+        "132-SOURCE-CHECK-016",
+        "132-SOURCE-CHECK-017",
+        "132-SOURCE-CHECK-018"
+      ],
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-016",
+        "133-ADJUDICATION-017",
+        "133-ADJUDICATION-018"
+      ],
+      "mission_decision_ids": [
+        "134-MISSION-006"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-006"
+      ],
+      "place_ledger_ids": [],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-003"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-057",
+          "action": "Baseline work begins with the exact question: “Which quantum systems and use cases have reproducible baselines for fidelity, scale, error, runtime, cost and classical alternatives?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap fo"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-058",
+          "action": "Conversion work begins with the exact question: “How do standards, supply chains, facilities, security requirements, procurement and validation govern movement beyond the laboratory?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap "
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-059",
+          "action": "Operation work begins with the exact question: “Which accepted deployments and repeated workloads establish reliable institutional use or completed cryptographic migration?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three "
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-060",
+          "action": "Outcome work begins with the exact question: “Which compatible scientific, operational, security, cost and capability outcomes are observable, and which remain scenarios?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three re"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/quantum/"
+    },
+    {
+      "desk_id": "140-DESK-016",
+      "topic_id": "topic-space",
+      "slug": "space",
+      "title": "Space intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Space as a four-horizon research program rather than a collection of headlines. Space evidence spans vehicles, missions, ranges, launch sites, infrastructure and scientific services. Authorization, an individual mission and sustained access each require different records and denominators. The workbench currently contains 3 missions with exact Phase 120 packet joins and 1 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 6 exact Phase 125 annotations and 9 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. The review lets readers distinguish rapid growth in licensed activity from a conclusion about reliability or public benefit. It makes the Space Coast's open license and operating questions visible without predating a future gate or inferring an outcome.",
+      "strongest_current_evidence": "FAA annual licensed-operation counts provide a recurring national activity series. NASA and site records document mission architecture, environmental decisions, infrastructure and public data. These sources create a strong authority-to-activity chronology. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 1 project and 1 place biographies as receiving-system context and 1 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "National operation totals do not establish vehicle reliability, Space Coast utilization, mission success, cost, turnaround or community impact. Environmental approval does not prove mitigation performance, and an operational bridge does not establish launch cadence. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-061",
+        "121-MISSION-062",
+        "121-MISSION-063",
+        "121-MISSION-064"
+      ],
+      "acquisition_gap_mission_ids": [
+        "121-MISSION-064"
+      ],
+      "authority_gap_map_ids": [
+        "130-GAP-012"
+      ],
+      "admission_docket_ids": [],
+      "source_check_receipt_ids": [],
+      "requirement_adjudication_ids": [],
+      "mission_decision_ids": [],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-004"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-007"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-061",
+          "action": "Baseline work begins with the exact question: “Which launch sites, vehicles, spacecraft and mission services have current baselines for authority, capacity, cadence, reliability and use?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus over"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-062",
+          "action": "Conversion work begins with the exact question: “How do environmental review, licensing, range capacity, infrastructure, manufacturing, finance and customer commitments govern mission delivery?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucle"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-063",
+          "action": "Operation work begins with the exact question: “Which asset acceptance, mission, turnaround and recurring-service records establish dependable capacity?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirements without"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-064",
+          "action": "Outcome work begins with the exact question: “Which compatible reliability, cost, access, scientific, environmental and local outcomes follow from sustained activity?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requir"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/space/"
+    },
+    {
+      "desk_id": "140-DESK-017",
+      "topic_id": "topic-water",
+      "slug": "water",
+      "title": "Water intelligence desk",
+      "desk_state": "Active — inaugural edition published",
+      "current_read": "This state-of-evidence review treats Water as a four-horizon research program rather than a collection of headlines. Water evidence must retain source, right, treatment, conveyance, use, discharge, reuse and receiving basin. Provider supply, permitted withdrawal and facility consumption answer different questions. The workbench currently contains 4 missions with exact Phase 120 packet joins and 0 with an acquisition-coverage gap. That split describes preparation, not truth or importance: all four missions remain unadjudicated. The review reads the evidence in the inherited Phase 124 order, connects it to 5 exact Phase 125 annotations and 9 source identities, and preserves each Phase 126 requirement test. Its purpose is to show what the corpus can orient, where definitions or denominators break, and which exact record would most improve the next review. Readers can use the review to test water-security and industrial-reuse claims against exact operating records. It avoids treating a citywide portfolio, permit ceiling or announced project as measured facility consumption or durable supply.",
+      "strongest_current_evidence": "Official hydrologic, utility, permit and infrastructure sources provide broad baseline coverage. Named industrial and municipal records show how agreements, capital programs and pre-operation conditions shape local delivery. The topic's strongest current evidence is useful because its identity and limitations are visible. Phase 125 annotations preserve the factual nucleus, excluded inference, provenance reading and research use for every linked signal. Phase 126 then screens title/factual-nucleus language for potential overlap with each mission requirement while leaving semantic relevance and establishment undecided; its disposition remains “Title/factual-nucleus screen complete — mission remains unadjudicated.” This review does not override either layer. It organizes 5 project and 5 place biographies as receiving-system context and 2 Phase 123 dossiers as comparison context. A biography may expose a turning point or exact next record, but its inherited stage or state is unchanged. A dossier remains “Context only” even where its shared dependency is highly relevant.",
+      "contested_reading": "Regional availability does not prove site service, and planned reclaimed-water infrastructure does not establish completed or metered reuse. Drought, groundwater accounting, quality standards and confidentiality complicate comparison across providers and facilities. The key editorial discipline is to publish the disagreement in the evidence structure rather than resolve it with an estimate. A strong context signal can still fail a mission requirement because the entity, observation period, method or denominator does not match. An In Review boundary can be useful when it explains why a tempting inference is inadmissible, but it is not promoted by appearing here. Failed searches and missing records are described only as limits of the current FTFN corpus; they are never claims that evidence does not exist externally. Conflicting series should remain side by side with their revision and coverage notes. No topic-level average, maturity score, readiness label or directional grade is created.",
+      "mission_ids": [
+        "121-MISSION-065",
+        "121-MISSION-066",
+        "121-MISSION-067",
+        "121-MISSION-068"
+      ],
+      "acquisition_gap_mission_ids": [],
+      "authority_gap_map_ids": [],
+      "admission_docket_ids": [],
+      "source_check_receipt_ids": [],
+      "requirement_adjudication_ids": [],
+      "mission_decision_ids": [],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-022",
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-003",
+        "136-CHRONICLE-002",
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-009",
+        "137-LEDGER-002",
+        "137-LEDGER-003",
+        "137-LEDGER-004",
+        "137-LEDGER-005"
+      ],
+      "comparison_rereview_ids": [
+        "139-REREVIEW-001",
+        "139-REREVIEW-009"
+      ],
+      "next_actions": [
+        {
+          "horizon": "Baseline",
+          "mission_id": "121-MISSION-065",
+          "action": "Baseline work begins with the exact question: “Which basins, utilities, facilities and user classes have current baselines for supply, demand, quality, reliability and ecological condition?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus o"
+        },
+        {
+          "horizon": "Conversion",
+          "mission_id": "121-MISSION-066",
+          "action": "Conversion work begins with the exact question: “How do rights, permits, finance, treatment, conveyance, energy and governance constrain delivery of new water service or reuse?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for th"
+        },
+        {
+          "horizon": "Operation",
+          "mission_id": "121-MISSION-067",
+          "action": "Operation work begins with the exact question: “Which accepted-flow, quality, compliance and repeated-service records establish dependable operation?” The Phase 126 audit retains the upstream answer state and screens title/factual-nucleus overlap for three requirements without de"
+        },
+        {
+          "horizon": "Outcome",
+          "mission_id": "121-MISSION-068",
+          "action": "Outcome work begins with the exact question: “Which compatible affordability, reliability, ecosystem, health and industrial-resource outcomes follow, and how are drought and demand changes handled?” The Phase 126 audit retains the upstream answer state and screens title/factual-n"
+        }
+      ],
+      "cadence": {
+        "weekly": "Review material source or gate changes",
+        "monthly": "Publish a bounded desk state",
+        "quarterly": "Re-audit mission, Atlas, and comparison joins"
+      },
+      "route": "/review/v09/desks/water/"
+    }
+  ],
+  "public_html_routes": [
+    "/review/v09/desks/",
+    "/review/v09/desks/advanced-manufacturing/",
+    "/review/v09/desks/agriculture-and-bioeconomy/",
+    "/review/v09/desks/ai-for-science/",
+    "/review/v09/desks/aviation/",
+    "/review/v09/desks/chips-and-compute/",
+    "/review/v09/desks/climate/",
+    "/review/v09/desks/critical-minerals/",
+    "/review/v09/desks/cybersecurity/",
+    "/review/v09/desks/discovery-technologies/",
+    "/review/v09/desks/energy/",
+    "/review/v09/desks/finance-and-risk/",
+    "/review/v09/desks/human-futures/",
+    "/review/v09/desks/mobility/",
+    "/review/v09/desks/policy-and-standards/",
+    "/review/v09/desks/quantum/",
+    "/review/v09/desks/space/",
+    "/review/v09/desks/water/"
+  ],
+  "public_json_exports": [
+    "/data/phase-140-living-topic-desks.json"
+  ]
+}

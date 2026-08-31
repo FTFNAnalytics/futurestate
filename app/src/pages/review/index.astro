@@ -7,17 +7,29 @@ import expansion from "../../data/v031-content-expansion.json";
 import v04 from "../../data/v04-public-conversion-observatory.json";
 import v05 from "../../data/v05-evidence-fieldbook.json";
 import v06 from "../../data/v06-open-evidence-review.json";
+import v07 from "../../data/v07-evidence-admission-dockets.json";
+import v08 from "../../data/v08-conversion-longitudinal-atlas.json";
+import v09 from "../../data/v09-living-public-intelligence.json";
 ---
 
-<BaseLayout title="The FTFN Review | Open Evidence Review" description={v06.summary}>
-  <ReviewHeader eyebrow="v0.6 public knowledge edition" title="The FTFN Review" summary={v06.summary} />
+<BaseLayout title="The FTFN Review | Living Public Intelligence" description={v09.summary}>
+  <ReviewHeader eyebrow="v0.9 living public intelligence" title="The FTFN Review" summary={v09.summary} />
 
   <section class="page-section">
     <div class="metric-strip" aria-label="Editorial program counts">
-      <div class="metric"><strong>{v06.counts.evidence_annotations}</strong><span>evidence annotations</span></div>
-      <div class="metric"><strong>{v06.counts.mission_audits}</strong><span>mission audits</span></div>
-      <div class="metric"><strong>{v06.counts.project_biographies + v06.counts.place_biographies}</strong><span>delivery biographies</span></div>
-      <div class="metric"><strong>{v06.counts.substantive_surfaces}</strong><span>review surfaces</span></div>
+      <div class="metric"><strong>{v09.release_state.desks}</strong><span>living topic desks</span></div>
+      <div class="metric"><strong>{v09.release_state.almanac_entries}</strong><span>almanac entries</span></div>
+      <div class="metric"><strong>{v08.evidence_state.atlas_records}</strong><span>Atlas reviews</span></div>
+      <div class="metric"><strong>{v07.evidence_state.owner_requirement_decisions_pending}</strong><span>owner decisions open</span></div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-heading"><div><div class="eyebrow">Phases 130–144</div><h2>From admission dockets to living intelligence.</h2><p>The next three editions add owner-gated evidence review, a complete conversion and longitudinal Atlas, and a maintained public intelligence layer without hiding the gates that still hold v1.</p></div><MetaPill label="15 complete content phases" tone="possibility" /></div>
+    <div class="signal-grid">
+      <article class="record-card"><MetaPill label="v0.7 · Phases 130–134" /><h3><a href="/review/v07/">Evidence Admission Dockets</a></h3><p>{v07.summary}</p><a class="inline-link" href="/review/v07/">Open v0.7</a></article>
+      <article class="record-card"><MetaPill label="v0.8 · Phases 135–139" /><h3><a href="/review/v08/">Conversion and Longitudinal Atlas</a></h3><p>{v08.summary}</p><a class="inline-link" href="/review/v08/">Open v0.8</a></article>
+      <article class="record-card"><MetaPill label="v0.9 · Phases 140–144" /><h3><a href="/review/v09/">Living Public Intelligence</a></h3><p>{v09.summary}</p><a class="inline-link" href="/review/v09/">Open v0.9</a></article>
     </div>
   </section>
 

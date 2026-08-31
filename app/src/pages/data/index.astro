@@ -61,6 +61,24 @@ import phase126Audits from "../../data/phase-126-mission-evidence-audits.json";
 import phase127Biographies from "../../data/phase-127-project-place-conversion-biographies.json";
 import phase128TopicReviews from "../../data/phase-128-topic-state-of-evidence-reviews.json";
 import phase129SystemSyntheses from "../../data/phase-129-cross-system-evidence-syntheses.json";
+import v07EvidenceAdmission from "../../data/v07-evidence-admission-dockets.json";
+import v08ConversionAtlas from "../../data/v08-conversion-longitudinal-atlas.json";
+import v09LivingIntelligence from "../../data/v09-living-public-intelligence.json";
+import phase130 from "../../data/phase-130-authority-gap-closure-maps.json";
+import phase131 from "../../data/phase-131-priority-evidence-admission-dockets.json";
+import phase132 from "../../data/phase-132-dated-source-check-receipts.json";
+import phase133 from "../../data/phase-133-requirement-adjudication-board.json";
+import phase134 from "../../data/phase-134-mission-decision-register.json";
+import phase135 from "../../data/phase-135-atlas-conversion-readiness-audit.json";
+import phase136 from "../../data/phase-136-named-project-chronicles.json";
+import phase137 from "../../data/phase-137-place-delivery-ledgers.json";
+import phase138 from "../../data/phase-138-longitudinal-evidence-eligibility.json";
+import phase139 from "../../data/phase-139-comparative-dossier-rereview.json";
+import phase140 from "../../data/phase-140-living-topic-desks.json";
+import phase141 from "../../data/phase-141-frontier-systems-almanac.json";
+import phase142 from "../../data/phase-142-topic-delivery-roadmaps.json";
+import phase143 from "../../data/phase-143-editorial-cadence-editions.json";
+import phase144 from "../../data/phase-144-v1-launch-candidate-audit.json";
 
 const sources = await getCollection("sources");
 const topics = await getCollection("topics");
@@ -73,6 +91,26 @@ const readerPathways = (await getCollection("readerPathways"))
   .filter((pathway) => pathway.data.record_status === "Published");
 
 const datasets = [
+  ...([
+    ["FTFN v0.9 Living Public Intelligence", "/data/v09-living-public-intelligence.json", v09LivingIntelligence.phases.length, v09LivingIntelligence.summary],
+    ["Living Topic Desks", "/data/phase-140-living-topic-desks.json", phase140.counts.living_topic_desks, phase140.summary],
+    ["Frontier Systems Almanac", "/data/phase-141-frontier-systems-almanac.json", phase141.counts.almanac_entries, phase141.summary],
+    ["Topic Delivery Roadmaps", "/data/phase-142-topic-delivery-roadmaps.json", phase142.counts.topic_roadmaps, phase142.summary],
+    ["Editorial Cadence Editions", "/data/phase-143-editorial-cadence-editions.json", phase143.counts.editions, phase143.summary],
+    ["v1 Launch-Candidate Audit", "/data/phase-144-v1-launch-candidate-audit.json", phase144.counts.launch_gates, phase144.summary],
+    ["FTFN v0.8 Conversion and Longitudinal Atlas", "/data/v08-conversion-longitudinal-atlas.json", v08ConversionAtlas.phases.length, v08ConversionAtlas.summary],
+    ["Atlas Conversion-Readiness Audit", "/data/phase-135-atlas-conversion-readiness-audit.json", phase135.counts.atlas_records, phase135.summary],
+    ["Named Project Chronicles", "/data/phase-136-named-project-chronicles.json", phase136.counts.project_chronicles, phase136.summary],
+    ["Place Delivery Ledgers", "/data/phase-137-place-delivery-ledgers.json", phase137.counts.place_ledgers, phase137.summary],
+    ["Longitudinal Evidence Eligibility", "/data/phase-138-longitudinal-evidence-eligibility.json", phase138.counts.eligibility_reviews, phase138.summary],
+    ["Comparative Dossier Re-review", "/data/phase-139-comparative-dossier-rereview.json", phase139.counts.dossier_rereviews, phase139.summary],
+    ["FTFN v0.7 Evidence Admission Dockets", "/data/v07-evidence-admission-dockets.json", v07EvidenceAdmission.phases.length, v07EvidenceAdmission.summary],
+    ["Authority-Gap Closure Maps", "/data/phase-130-authority-gap-closure-maps.json", phase130.counts.gap_missions, phase130.summary],
+    ["Priority Evidence Admission Dockets", "/data/phase-131-priority-evidence-admission-dockets.json", phase131.counts.requirement_dockets, phase131.summary],
+    ["Dated Source-Check Receipts", "/data/phase-132-dated-source-check-receipts.json", phase132.counts.source_check_receipts, phase132.summary],
+    ["Requirement Adjudication Board", "/data/phase-133-requirement-adjudication-board.json", phase133.counts.requirements, phase133.summary],
+    ["Mission Decision Register", "/data/phase-134-mission-decision-register.json", phase134.counts.mission_decision_packets, phase134.summary],
+  ] as [string, string, number, string][]).map(([title, href, count, summary]) => ({ title, href, count, summary })),
   {
     title: "FTFN v0.6 Open Evidence Review",
     href: "/data/v06-open-evidence-review.json",
@@ -485,8 +523,8 @@ const datasets = [
     <div class="section-heading">
       <div>
         <div class="eyebrow">Datasets</div>
-        <h2>Fifty-one bounded public contracts.</h2>
-        <p>Each file reports its schema version, dataset name, record scope, count, and records.</p>
+        <h2>{datasets.length.toLocaleString()} bounded public contracts.</h2>
+        <p>Each file exposes its schema version, registry title, bounded counts, record arrays, and publication limits.</p>
       </div>
       <a class="inline-link" href="/method/">Read the publication method</a>
     </div>

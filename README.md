@@ -16,8 +16,25 @@ The future is not a list of inventions.
 It is a stack of dependencies.
 ```
 
+## Current Local Milestone
+
+The active content milestone is **FTFN v0.9.0**, spanning Phases 130–144 and the three cumulative editions built on the retained v0.6 corpus:
+
+- **v0.7 — Evidence Admission Dockets:** twelve authority-gap closure maps, six priority mission dockets, eighteen requirement dockets, dated source-check receipts, an owner adjudication board, and six mission-decision packets.
+- **v0.8 — Conversion and Longitudinal Atlas:** readiness reviews for all 24 projects and 15 places, 24 named project chronicles, 15 place delivery ledgers, 39 longitudinal-eligibility reviews, and 12 governed comparison re-reviews.
+- **v0.9 — Living Public Intelligence:** 17 living topic desks, a 56-entry frontier systems almanac, 17 four-horizon delivery roadmaps, one inaugural edition plus four visibly scheduled editions, and the Phase 144 v1 launch-candidate audit.
+
+The verified local production contract is **6,504 HTML pages, 86 public JSON exports, and 169 public update records**. On 2026-08-31, the clean receipted build, manifest update, all 170 v0.7–v0.9 route checks, all 18 edition-export checks, and global release verification passed. This local result does not certify a commit, GitHub push, hosted deployment, DNS change, public-access change, owner acceptance, or v1 promotion.
+
 ## Project Documents
 
+- [v0.9 Roadmap](docs/roadmap-v0.9.md) - completed Phases 140–144: living topic desks, the frontier systems almanac, delivery roadmaps, editorial editions, and the v1 launch-candidate audit.
+- [v0.9 Build Summary](docs/build-summary-v0.9.md) - the complete Living Public Intelligence route, data, cadence, and launch-gate contract.
+- [v0.9 Session Handoff](docs/session-handoff-v0.9.md) - owner-adjudication, evidence-calendar, and v1 promotion boundaries.
+- [v0.8 Roadmap](docs/roadmap-v0.8.md) - completed Phases 135–139: Atlas readiness, project chronicles, place ledgers, longitudinal eligibility, and comparison re-review.
+- [v0.8 Build Summary](docs/build-summary-v0.8.md) - verified content and route scope for the Conversion and Longitudinal Atlas.
+- [v0.7 Roadmap](docs/roadmap-v0.7.md) - completed Phases 130–134: authority-gap maps, evidence-admission dockets, source checks, adjudication packets, and mission decision controls.
+- [v0.7 Build Summary](docs/build-summary-v0.7.md) - the completed owner-gated admission workflow and its explicit open decisions.
 - [v0.6 Roadmap](docs/roadmap-v0.6.md) - completed Phases 125–129: evidence annotations, mission audits, delivery biographies, topic reviews, and compatibility syntheses.
 - [v0.6 Build Summary](docs/build-summary-v0.6.md) - verified route, content-depth, corpus, export, and release inventory for Open Evidence Review.
 - [v0.6 Session Handoff](docs/session-handoff-v0.6.md) - immutable upstream boundaries, rebuild sequence, acquisition-gap posture, and the next dated evidence gate.
@@ -30,7 +47,7 @@ It is a stack of dependencies.
 - [Master Roadmap](docs/master-roadmap.md) - the step-by-step plan from empty workspace to a functioning publication and data platform.
 - [Documentation Map](docs/documentation-map.md) - how the project documents fit together and when to update each one.
 - [Session Brief](docs/session-brief.md) - compact handoff note for restarting the project in a new chat.
-- [v0.2 Build Summary](docs/build-summary-v0.2.md) - concise current-state inventory covering product, content, QA, Git, deployment, and known limitations.
+- [v0.2 Build Summary](docs/build-summary-v0.2.md) - historical v0.2 inventory covering product, content, QA, Git, deployment, and known limitations.
 - [v0.2 Session Handoff Plan](docs/session-handoff-v0.2.md) - short read order, Phase 55 sequence, approval boundaries, and ready-to-paste restart prompt.
 - [v0.1.1 Session Brief](docs/session-brief-v0.1.1.md) - frozen deployment-candidate handoff after the first Phase 50 content batch.
 - [v0.1.1 Roadmap](docs/roadmap-v0.1.1.md) - release path for build verification, browser QA, preview deployment, and the v0.2 handoff.
@@ -43,7 +60,7 @@ It is a stack of dependencies.
 - [Signal Repair Workflow](docs/signal-repair-workflow.md) - rules for converting broad In Review records into dated source-backed signals.
 - [v0.2 Next Signal Set](docs/v0.2-next-signal-set.md) - first mapped batch of v0.2 signal repairs and new signal candidates.
 - [v0.1.1 Build Manifest](deployment/ftfn-v0.1.1-build.json) - machine-readable build/deployment configuration for the frozen static preview candidate.
-- [v0.2 Build Manifest](deployment/ftfn-v0.2-build.json) - machine-readable contract for the locally and post-deploy verified v0.2 candidate; public domain remains deferred.
+- [Build Manifest](deployment/ftfn-v0.2-build.json) - historically named machine-readable release contract; its v0.9 counts and verification fields were updated and release-verified on 2026-08-31.
 - [Phase 55K Research Collection Work Package](docs/work-packages/phase-55k-darpa-usg-research-collection.md) - 23 DARPA and U.S. Government document summaries, capture/archive disclosure, site integration, validation, and the Phase 55L implementation-evidence path.
 - [Phase 55L Implementation Evidence Work Package](docs/work-packages/phase-55l-implementation-evidence-conversion.md) - eight stage-bounded implementation trails and their verified archive.
 - [Phase 55N Outcomes And Local Conversion Work Package](docs/work-packages/phase-55n-implementation-outcomes-local-conversion.md) - 16 later outcome and local-conversion records, integrated briefings and dossiers, and a verified download archive.
@@ -142,25 +159,32 @@ It is a stack of dependencies.
 - [Phase 55M Work Package](docs/work-packages/phase-55m-publication-readiness-review.md) - thirteen bounded publication promotions and one explicit scheduled-trial hold.
 - [Phase 55Q Work Package](docs/work-packages/phase-55q-high-value-evidence-gap-closure.md) - six named evidence-gap decisions, five official sources, four bounded Published signals, and dated follow-through.
 
-## App Scaffold
+## Current App And Release Candidate
 
-The first Astro + TypeScript scaffold lives in [app](app/). It includes content collection schemas, seed records, generated routes, light filtering, a first homepage narrative pass, a complete MVP Atlas skeleton, a public editorial posture on the About page, source-backed local evidence foundations, hardened local system profiles, stronger Atlas topic coverage, generated source monitoring, generated source coverage, local dossier tables, and a restrained CSS visual system.
+The Astro + TypeScript application lives in [app](app/). It includes schema-backed content collections, generated public routes, versioned JSON exports, source monitoring and coverage, the Evidence Fieldbook, the named project/place Atlas, and the v0.7–v0.9 public review layers.
 
-Dependencies are installed and the current validation/build baseline passes.
+The Phase 130–144 source registries and routes are complete and locally release-verified. The sequence below is the reproducible certification path; Git publication, hosting, public access, DNS, owner acceptance, and v1 promotion remain separate decisions.
 
 From `app/`:
 
 ```text
+npm run build:v09-content
+npm run test:v07
+npm run test:v08
+npm run test:v09
 npm run validate:content
 npm run validate:candidates
 npm run source:health
-npm run build:research-archive
 npm run check
 npm run build
+npm run update:v09-manifest
+npm run verify:v07
+npm run verify:v08
+npm run verify:v09
 npm run verify:release
 ```
 
-The current `0.2.0-dev` build generates 321 site pages and three versioned JSON data endpoints. Twenty-five signals are Published and 25 remain In Review; no Draft Sample remains. The Research section contains one 23-document collection and a verified 26-file archive.
+The verified v0.9.0 run produced 6,504 generated HTML pages, 86 public JSON exports, and 169 update records. Any later content change must rerun the sequence above before inheriting that verification claim.
 
 The homepage now uses real seed records for signals, topics, sources, local systems, and briefings while preserving the 42/59 framing and dependency-stack thesis.
 
@@ -234,7 +258,7 @@ Phase 40 completes the public topic taxonomy by adding `Cybersecurity` and `Disc
 
 The source monitor, source coverage matrix, signals roadmap, authority red-team plan, and live source plan now define the next high-value source checks, private update queue, local evidence dossiers, and candidate signal repair batch for content expansion after launch QA.
 
-The current v0.1.1 deployment-candidate artifacts are:
+The historical v0.1.1 deployment-candidate artifacts are:
 
 ```text
 docs/session-brief-v0.1.1.md
@@ -246,7 +270,7 @@ deployment/ftfn-v0.1.1-build.json
 
 The original v0.1 artifacts remain as a historical Phase 40 checkpoint. The v0.1.1 build manifest is for preview deployment preparation only. It does not approve DNS changes, analytics, automated ingestion, automated publishing, or public launch.
 
-The current v0.2 local release-candidate artifacts are:
+The historical v0.2 local release-candidate artifacts are:
 
 ```text
 docs/roadmap-v0.2.md
@@ -316,7 +340,7 @@ Phase 57B adds seventeen accepted-service and independent-outcome panels. Five n
 
 Phase 57C adds twenty service-reliability, adoption, and recurring-output validation panels. Twelve bounded inventory, repeat-output, accepted-disposal, closed-loop, or baseline-boundary records publish; eight reliability, adoption, activation, recurring-output, capacity, or baseline records remain In Review. Two new Tier 1 sources, fourteen carried official sources, Research Watch 033, one collection, two ledgers, one update, and a twenty-three-file archive bring the locally verified candidate to 2,053 pages, 685 sources, 543 signals, 453 Published signals, 38 research collections, 659 documents, and 57 updates without changing public access, DNS, or the release state.
 
-The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. Current work remains `0.2.0-dev` on `codex/phase51-content`: 685 public sources, 150 private source candidates, 543 signals, 453 Published signals, 90 In Review signals, 17 topics, five local systems, 57 public update entries, 16 evidence gaps, 15 reader pathways across 19 Atlas surfaces, 2,053 generated pages, 38 research collections with 659 documents, and five versioned data exports. Phase 57C is release-verified and deployed as owner-only Sites version 55. The branch remains unpushed to public GitHub, and no custom domain, Hostinger DNS change, or public launch occurred.
+The frozen v0.1.1 release package preserves the first Phase 50 checkpoint at 102 sources, 18 signals, 17 topics, and 182 generated pages in Git commit `4845597`. The Phase 57C `0.2.0-dev` state—685 public sources, 543 signals, 57 updates, 2,053 pages, and five exports—is a historical owner-only preview checkpoint, not the current build. The active local release-verified build is v0.9.0 / Phases 130–144 with the verified contract stated above. It has not been committed, pushed, merged, hosted, made public, attached to DNS, owner-accepted, or promoted to v1.
 
 ## Working Rule
 

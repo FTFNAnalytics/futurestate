@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../../components/review/ReviewHeader.astro";
+import MetaPill from "../../../components/ui/MetaPill.astro";
+import v07 from "../../../data/v07-evidence-admission-dockets.json";
+import v08 from "../../../data/v08-conversion-longitudinal-atlas.json";
+import v09 from "../../../data/v09-living-public-intelligence.json";
+
+export function getStaticPaths() {
+  const releases: Record<string, any> = { v07, v08, v09 };
+  return Object.keys(releases).map((release) => ({ params: { release }, props: { program: releases[release] } }));
+}
+const { program } = Astro.props;
+---
+
+<BaseLayout title={`${program.title} | FTFN`} description={program.summary}>
+  <ReviewHeader eyebrow={`${program.version} public knowledge edition`} title={program.title} summary={program.summary} />
+  <section class="page-section"><div class="metric-strip"><div class="metric"><strong>{program.counts.phases}</strong><span>complete phases</span></div><div class="metric"><strong>{program.counts.public_html_routes}</strong><span>public routes</span></div><div class="metric"><strong>{program.counts.detail_routes}</strong><span>detail records</span></div><div class="metric"><strong>{program.counts.public_json_exports}</strong><span>JSON exports</span></div></div></section>
+  <section class="page-section briefing-band"><div class="briefing-band__copy"><div class="eyebrow">Release posture</div><h2>Built to show both findings and limits.</h2><p>{program.publication_boundaries[0]}</p></div><article class="record-card record-card--featured"><MetaPill label={program.status} tone="review" /><h3>Version registry</h3><p>The aggregate lists every phase hub, detail route, and public export.</p><a class="inline-link" href={program.public_json_exports.at(-1)}>Open aggregate JSON</a></article></section>
+  <section class="page-section"><div class="section-heading"><div><div class="eyebrow">Five-phase program</div><h2>Open the complete edition.</h2></div></div><div class="signal-grid">{program.phases.map((phase: any) => <article class="record-card"><div class="meta-row"><MetaPill label={`Phase ${phase.phase}`} /><MetaPill label={phase.status} tone="review" /></div><h3><a href={phase.hub_route}>{phase.title}</a></h3><p>Read the public phase record and inspect its machine-readable contract.</p><a class="inline-link" href={phase.public_export}>JSON export</a></article>)}</div></section>
+  <section class="page-section prose-page"><h2>Boundaries carried by every phase</h2><ul>{program.publication_boundaries.map((boundary: string) => <li>{boundary}</li>)}</ul><p><a href="/review/">Return to The FTFN Review</a></p></section>
+</BaseLayout>

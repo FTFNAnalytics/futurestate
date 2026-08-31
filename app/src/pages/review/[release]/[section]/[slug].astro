@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../../../components/layout/BaseLayout.astro";
+import RegistryDetail from "../../../../components/review/RegistryDetail.astro";
+import p134 from "../../../../data/phase-134-mission-decision-register.json";
+import p136 from "../../../../data/phase-136-named-project-chronicles.json";
+import p137 from "../../../../data/phase-137-place-delivery-ledgers.json";
+import p139 from "../../../../data/phase-139-comparative-dossier-rereview.json";
+import p140 from "../../../../data/phase-140-living-topic-desks.json";
+import p142 from "../../../../data/phase-142-topic-delivery-roadmaps.json";
+import p143 from "../../../../data/phase-143-editorial-cadence-editions.json";
+
+export function getStaticPaths() {
+  const definitions: any[] = [
+    ["v07", "missions", p134, p134.mission_decisions], ["v08", "projects", p136, p136.project_chronicles], ["v08", "places", p137, p137.place_ledgers], ["v08", "comparisons", p139, p139.comparison_reviews], ["v09", "desks", p140, p140.topic_desks], ["v09", "roadmaps", p142, p142.topic_roadmaps], ["v09", "editions", p143, p143.editions],
+  ];
+  return definitions.flatMap(([release, section, registry, items]) => items.map((record: any) => ({ params: { release, section, slug: record.slug }, props: { registry, record, phase: registry.phase } })));
+}
+const { registry, record, phase } = Astro.props;
+const { release } = Astro.params;
+---
+<BaseLayout title={`${record.title} | FTFN`} description={registry.summary}><RegistryDetail registry={registry} record={record} phase={phase} release={release} /></BaseLayout>

@@ -4,11 +4,35 @@ Civilization is a choice.
 
 FTFN is a future-state intelligence platform planned for `ftfn.io`: a news source, data source, roadmap, and narrative publication about the systems shaping what civilization could become.
 
-## Current content milestone — v0.6
+## Current content milestone — v0.9
 
-Phases 125–129 are the current completed content architecture. They turn the v0.5 Evidence Fieldbook into Open Evidence Review: 82 source-linked annotations, 68 mission audits, 24 project and 15 place conversion biographies, 17 topic state-of-evidence reviews, and 12 cross-system compatibility syntheses. The edition adds six public hubs, substantively upgrades 218 existing canonical routes, and publishes six JSON exports. See the [v0.6 roadmap](roadmap-v0.6.md) for the executed scope and the [v0.6 build summary](build-summary-v0.6.md) for the verified release inventory.
+Phases 130–144 are the current completed content architecture. v0.7 builds owner-gated evidence-admission dockets for twelve acquisition gaps, six priority missions, eighteen requirements, dated official-source checks, and explicit pending decisions. v0.8 converts all 24 projects and 15 places into named chronicles and ledgers, tests all 39 Atlas identities for longitudinal eligibility, and re-reviews all 12 comparisons without changing `Context only`. v0.9 adds 17 living topic desks, a 56-entity almanac, 17 four-horizon delivery roadmaps, one published inaugural edition, four visibly scheduled editions, and a fourteen-gate v1 launch audit. See the [v0.7 roadmap](roadmap-v0.7.md), [v0.8 roadmap](roadmap-v0.8.md), and [v0.9 roadmap](roadmap-v0.9.md) for the executed scope.
 
-The operating rule remains unchanged: a Published signal can support context without answering a mission, a biography cannot advance a project stage, and a compatibility synthesis cannot create a common denominator, score, rank or causal conclusion. The next scheduled Phase 60 gate after this milestone is the Louisiana Starlink adoption check on 2026-09-01; v0.6 does not predate it.
+The operating rule remains unchanged: a source check is not an admissibility decision, a Published signal can support context without answering a mission, a chronicle cannot advance a project stage, a place cannot inherit one project stage, and a comparison cannot create a common denominator, score, rank or causal conclusion. The next scheduled Phase 60 gate remains the Louisiana Starlink adoption check on 2026-09-01. v0.7–v0.9 do not predate it. Production and accessible-structure verification have passed; v1 promotion remains held on evidence admission, authority coverage, longitudinal evidence, and owner acceptance.
+
+The active application package is v0.9.0. Its verified local production contract is **6,504 HTML pages, 86 public JSON exports, and 169 update records**. The clean parent-run sequence completed content validation, source health, Phase 130–144 assertions, Astro checks, two production builds around the dated Phase 144 receipt, manifest update, route/canonical/sitemap verification, and global release verification on 2026-08-31. No commit, GitHub publication, hosted deployment, DNS change, public-access change, owner acceptance, or v1 promotion is certified by this roadmap update.
+
+### Phase 130–144 executed content program
+
+| Phase | Edition | Current deliverable | Governing boundary |
+| --- | --- | --- | --- |
+| 130 | v0.7 | Twelve authority-gap closure maps connect uncovered missions to their current source shelves, missing authority roles, and exact next acquisition actions. | A mapped gap admits no artifact and is not evidence of external nonexistence. |
+| 131 | v0.7 | Six priority admission dockets contain eighteen requirement-level review packets and candidate-artifact links. | Candidate context remains pending authorized human adjudication. |
+| 132 | v0.7 | Eighteen dated source-check receipts preserve artifact identity, access path, checked date, and known limitations. | A source check is not an evidence-admission receipt or mission answer. |
+| 133 | v0.7 | The requirement adjudication board exposes acceptance tests, rejection tests, candidate sources, and owner-controlled decision fields for all eighteen requirements. | Decisions, dates, reviewer identities, and decision receipts remain empty until a governed owner action. |
+| 134 | v0.7 | Six mission-decision packets join the three exact requirement decisions required by each priority mission. | A packet can be complete while its answer remains unadjudicated. |
+| 135 | v0.8 | Thirty-nine conversion-readiness records cover every Phase 119 project and place identity. | Content readiness is not delivery readiness, maturity, quality, safety, or performance. |
+| 136 | v0.8 | Twenty-four named project chronicles preserve exact stages, evidence rails, turning points, unresolved bridges, and next artifacts. | A chronicle cannot advance a project stage. |
+| 137 | v0.8 | Fifteen place delivery ledgers distinguish receiving-system conditions from related project stages. | No synthetic place stage, outcome, score, or ranking is created. |
+| 138 | v0.8 | Thirty-nine longitudinal-eligibility reviews make identity, period, measure, and denominator stopping points explicit. | No series, observation value, or outcome is admitted by this content layer. |
+| 139 | v0.8 | Twelve comparison re-reviews join chronicles, ledgers, and longitudinal-eligibility records to the retained dossier evidence. | Every verdict remains `Context only`; no common denominator, score, rank, or causal result is created. |
+| 140 | v0.9 | Seventeen living topic desks connect all 68 missions to authority gaps, owner-review records, project/place files, comparisons, and next actions. | A living desk reports governed state; it does not silently revise evidence or decisions. |
+| 141 | v0.9 | The frontier systems almanac provides 56 entries: 17 topics, 24 projects, and 15 places. | Entity identity and evidence type remain explicit; almanac coverage is not a performance classification. |
+| 142 | v0.9 | Seventeen delivery roadmaps organize 68 mission horizons, exact decision joins, stopping rules, and next editorial actions. | Roadmap order is not a numeric ranking, forecast, or recommendation. |
+| 143 | v0.9 | One inaugural edition is present and four later editions are visible only as scheduled publication slots. | Future editions contain no predated findings and require dated publication updates. |
+| 144 | v0.9 | The v1 launch-candidate audit records evidence, authority, Atlas, longitudinal, comparison, editorial, accessibility-structure, release-validation, and owner-acceptance gates. | v1 remains held; structural checks are not accessibility certification, and owner acceptance is a separate decision. |
+
+The three edition contracts add 170 version-owned HTML routes and eighteen version/phase JSON exports. v0.7 contributes twelve routes and six exports; v0.8 contributes 57 routes and six exports; v0.9 contributes 101 routes and six exports. Canonical mission, project, place, topic, and system pages remain the authoritative identities even where a new review route supplies a deeper reading layer.
 
 ## 1. North Star
 
@@ -709,9 +733,9 @@ Exit criteria:
 
 - FTFN becomes a reusable research tool.
 
-## 9. Immediate Next Steps
+## 9. Historical Immediate Next Steps — pre-v0.9 execution log
 
-These are the next practical actions from the current project state.
+The numbered list below is retained as the execution history that led to the current v0.9.0 candidate. Any item described as “next” records the state at that earlier checkpoint and is not current direction.
 
 1. Create project documents. Status: complete.
 2. Create a decision log. Status: complete.
@@ -1038,11 +1062,11 @@ These are the next practical actions from the current project state.
 323. Complete Phase 57K cross-version transition matrices, longitudinal panels, and reopening-trigger registry. Status: complete, release-validated, and included in owner-only Sites version 68; published twenty bounded transition controls, preserved all nine Phase 57J holds exactly once, added no new hold, reused thirty-six Tier 1 sources, and built four longitudinal matrices plus nine reopening contracts, Research Watch 041, one collection, one update, and a thirty-two-file archive; classified 356 Amtrak presence cells and 178 transitions, 416 Montana project-field cells and 224 requirements, 126 Hanford applicability cells and seventy requirements, and fifty-four NNSA object transitions with 648 dimension cells; all nine contracts remain not fired and require human review; preserved zero operating-event, structural, custody, capability, implementation, and closure changes and the one Closed / twenty-one Partially Closed / two Open entity ledger.
 324. Complete Phase 57L contract-field coverage matrices, first-eligible-record intake queues, and exception-resolution playbooks. Status: complete, release-validated, and owner-only deployed as Sites version 68; reviewed twenty-nine records, published twenty field-operationalization controls, preserved all nine Phase 57K holds exactly once, added no new hold, reused thirty-six Tier 1 sources, and classified all sixty required fields as fifteen present, twenty-eight absent, five incompatible, two authority-mismatched, six period-mismatched, three privacy-gated, and one not yet evaluated; built nine intake queues, nine playbooks, and sixty human-reviewed field actions; accepted zero eligible records, fired zero triggers, and preserved the one Closed / twenty-one Partially Closed / two Open entity ledger; local content commit `886fdc7c0faa2f21e5db40441bd3169aa5deed37` mapped to private runtime `44240958e241895323c4199a61b60be252bcf1f7` in deployment `appgdep_6a77b85bb3c08191bda7f79917018300`.
 325. Complete Phase 57M source-schema adapters, candidate-evidence packet templates, and human-review decision tables. Status: complete, production-rendered, release-validated, and owner-only deployed as Sites version 69; reviewed twenty-nine records, published twenty workflow controls, preserved all nine Phase 57L holds exactly once, added no new hold, reused thirty-six Tier 1 sources, mapped all sixty fields through 120 exact adapter-vocabulary labels with zero populated values or coercions, built nine empty and nine incomplete non-evidence fixtures, and rehearsed fifty-four rows across accept, reject, clarification, privacy, authority, and period outcomes; evaluated and accepted zero actual candidate packets, fired zero triggers, verified the 2,647-page release contract, and preserved the one Closed / twenty-one Partially Closed / two Open entity ledger; local content commit `a33ffde16c7548f3be44cf74f943dbd45852e257` mapped to private runtime `ab6e14d05ca55daf4f92655218d307d247547a3e` in deployment `appgdep_6a77c388da3c8191816d4e0c85636594`.
-326. Begin Phase 57N adapter-conformance tests, packet-validation harnesses, and reviewer-receipt ledgers. Status: next non-public content gate; test 120 accepted labels plus ambiguous-label rejections, execute all eighteen non-evidence fixtures against expected decisions, create machine-readable human-review receipts and escalation states, and preserve all nine Phase 57M holds without automated trigger firing, closure, or publication.
+326. Begin Phase 57N adapter-conformance tests, packet-validation harnesses, and reviewer-receipt ledgers. Historical status at the Phase 57M checkpoint: next non-public content gate; test 120 accepted labels plus ambiguous-label rejections, execute all eighteen non-evidence fixtures against expected decisions, create machine-readable human-review receipts and escalation states, and preserve all nine Phase 57M holds without automated trigger firing, closure, or publication.
 
-## 10. Current Stage Map
+## 10. Historical Stage Map — Phase 54 to Phase 57M
 
-This checkpoint follows the completed Phase 54 local release gate and preserves v0.1.1 as a frozen historical release candidate.
+This section preserves the completed Phase 54 through Phase 57M checkpoints and v0.1.1 release history. It is not the current v0.9.0 inventory; use the Phase 130–144 program above for current state.
 
 FTFN is no longer only a concept or documentation project. It now has:
 
@@ -1081,12 +1105,12 @@ FTFN is no longer only a concept or documentation project. It now has:
 - a second private queue batch that turns promoted Phase 49 source records into bounded review candidates.
 - six Phase 50 bounded source-item signals spanning a DOE/Grants.gov opportunity, MAG local projections, USAspending award, NSF award, USGS gallium record, and Toronto planning application.
 - a frozen v0.1.1 release package with app version 0.1.1, deployment manifest, versioned session brief, release roadmap, local release-QA evidence, and Git checkpoint `4845597`.
-- a current `0.2.0-dev` build with 502 sources, 260 signals, 33 update entries, 199 Published signals, five public JSON exports, and 1,204 pages.
+- a then-current `0.2.0-dev` Phase 56E build with 502 sources, 260 signals, 33 update entries, 199 Published signals, five public JSON exports, and 1,204 pages.
 - a private 150-record source-candidate shelf across 15 evidence profiles, with all 150 first-pass triaged and zero automatic public promotions.
 - Source Monitor review-state groups and next actions plus Strong, Developing, and Weak Source Coverage summaries.
 - a passed v0.2 local release gate with a versioned manifest, repeatable release assertions, desktop/mobile browser evidence, repaired 44-pixel header targets, and a public-facing launch note plus limitations statement.
 
-It is not yet a public launch product. An owner-only Sites preview exists, while package-version freeze, public access, `ftfn.io` attachment, Hostinger DNS changes, analytics decisions, and final public-launch approval remain separate. The current v0.2 build passes the Phase 56D release gate with 163 Published and 57 In Review signals, nine Published and seven In Review briefings, six Published and one In Review dependency maps, and five local-system dossiers. Longitudinal, entity-panel, driver-and-constraint, and alternative-explanation outcomes remain bounded by stable identity, unit, denominator, period, geography, method, attribution, independent-validation limits, alternative explanations, missing evidence, revisions, and reporting breaks.
+At that historical checkpoint it was not yet a public launch product. An owner-only Sites preview existed, while package-version freeze, public access, `ftfn.io` attachment, Hostinger DNS changes, analytics decisions, and final public-launch approval remained separate. The Phase 56D v0.2 build passed its release gate with 163 Published and 57 In Review signals, nine Published and seven In Review briefings, six Published and one In Review dependency maps, and five local-system dossiers. Longitudinal, entity-panel, driver-and-constraint, and alternative-explanation outcomes remained bounded by stable identity, unit, denominator, period, geography, method, attribution, independent-validation limits, alternative explanations, missing evidence, revisions, and reporting breaks.
 
 ### Stage 1: Reader-Journey QA
 
@@ -1373,7 +1397,16 @@ over:
 Improved roadmap.
 ```
 
-## 12. Open Decisions
+## 12. Current Release Decisions
+
+- Preserve the completed v0.9.0 local production and release-verification baseline when future governed records change.
+- Record authorized owner decisions for the eighteen v0.7 requirements and six mission packets without converting candidate context into accepted evidence.
+- Close or explicitly carry the twelve acquisition gaps through dated governed decisions.
+- Admit a longitudinal series only after identity, period, measure, denominator, method, revision, and acceptance compatibility are established; otherwise retain the documented no-series boundary.
+- Operate Phase 60 gates only on or after their America/Edmonton dates, beginning with Louisiana Starlink adoption on 2026-09-01.
+- Decide commit, GitHub push, hosted deployment, public access, `ftfn.io` attachment, DNS, and v1 promotion separately after final local certification.
+
+### Historical product questions retained for provenance
 
 - Final brand typography and color system
 - Whether local system profiles should be public at MVP or internal-only

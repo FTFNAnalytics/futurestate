@@ -41,6 +41,9 @@ import v031ContentExpansion from "../data/v031-content-expansion.json";
 import v04PublicConversionObservatory from "../data/v04-public-conversion-observatory.json";
 import v05EvidenceFieldbook from "../data/v05-evidence-fieldbook.json";
 import v06OpenEvidenceReview from "../data/v06-open-evidence-review.json";
+import v07EvidenceAdmission from "../data/v07-evidence-admission-dockets.json";
+import v08ConversionAtlas from "../data/v08-conversion-longitudinal-atlas.json";
+import v09LivingIntelligence from "../data/v09-living-public-intelligence.json";
 
 const siteUrl = "https://ftfn.io";
 
@@ -285,7 +288,10 @@ export const GET: APIRoute = async () => {
     ...v031ContentExpansion.phases.flatMap((phase) => phase.routes.map((route) => urlEntry(route, new Date(v031ContentExpansion.effective_date)))),
     ...v04PublicConversionObservatory.public_html_routes.map((route) => urlEntry(route, new Date(v04PublicConversionObservatory.effective_date))),
     ...v05EvidenceFieldbook.new_html_routes.map((route) => urlEntry(route, new Date(v05EvidenceFieldbook.effective_date))),
-    ...v06OpenEvidenceReview.new_html_routes.map((route) => urlEntry(route, new Date(v06OpenEvidenceReview.effective_date)))
+    ...v06OpenEvidenceReview.new_html_routes.map((route) => urlEntry(route, new Date(v06OpenEvidenceReview.effective_date))),
+    ...v07EvidenceAdmission.public_html_routes.map((route) => urlEntry(route, new Date(v07EvidenceAdmission.effective_date))),
+    ...v08ConversionAtlas.public_html_routes.map((route) => urlEntry(route, new Date(v08ConversionAtlas.effective_date))),
+    ...v09LivingIntelligence.public_html_routes.map((route) => urlEntry(route, new Date(v09LivingIntelligence.effective_date)))
   ].sort();
 
   const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${routes.join("\n")}\n</urlset>\n`;

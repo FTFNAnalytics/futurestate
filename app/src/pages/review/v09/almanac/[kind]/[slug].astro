@@ -1,0 +1,8 @@
+---
+import BaseLayout from "../../../../../components/layout/BaseLayout.astro";
+import RegistryDetail from "../../../../../components/review/RegistryDetail.astro";
+import registry from "../../../../../data/phase-141-frontier-systems-almanac.json";
+export function getStaticPaths() { return registry.almanac_entries.map((record) => ({ params: { kind: `${record.kind}s`, slug: record.slug }, props: { record } })); }
+const { record } = Astro.props;
+---
+<BaseLayout title={`${record.title} | FTFN Almanac`} description={registry.summary}><RegistryDetail registry={registry} record={record} phase={141} release="v09" /></BaseLayout>

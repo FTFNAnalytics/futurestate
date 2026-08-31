@@ -8,39 +8,28 @@ The goal is simple: keep a very broad project legible as it grows.
 
 Start each substantial work session in this order:
 
-1. [v0.2 Build Summary](build-summary-v0.2.md)
-2. [v0.2 Roadmap](roadmap-v0.2.md)
-3. [v0.2 Session Handoff Plan](session-handoff-v0.2.md)
-4. [v0.2 Build Manifest](../deployment/ftfn-v0.2-build.json)
-5. [v0.2 Release QA](release-qa-v0.2.md)
-6. [Launch Package](launch-package.md)
+1. [v0.9 Session Handoff](session-handoff-v0.9.md)
+2. [v0.9 Build Summary](build-summary-v0.9.md)
+3. [v0.9 Roadmap](roadmap-v0.9.md)
+4. [v0.8 Build Summary](build-summary-v0.8.md) and [v0.8 Roadmap](roadmap-v0.8.md)
+5. [v0.7 Build Summary](build-summary-v0.7.md) and [v0.7 Roadmap](roadmap-v0.7.md)
+6. [Master Roadmap](master-roadmap.md)
 7. [README](../README.md)
 8. [Session Brief](session-brief.md)
-9. [Master Roadmap](master-roadmap.md)
-10. [Decision Log](decision-log.md)
-11. [Taxonomy](taxonomy.md)
-12. [Content Model](content-model.md)
-13. [Source Strategy](source-strategy.md)
-14. [Source Monitoring Plan](source-monitoring-plan.md)
-15. [Source Broadening And Intake Plan](source-broadening-and-intake-plan.md)
-16. [Private Source-Candidate Registry](private-source-candidate-registry.md)
-17. [Authoritative Live Source Plan](authoritative-live-source-plan.md)
-18. [Authority Red-Team and Resource Expansion Plan](authority-red-team-and-resource-expansion-plan.md)
-19. [Editorial Method](editorial-method.md)
-20. [Review Checklists](review-checklists.md)
-21. [Briefing Template](briefing-template.md)
-22. [Evidence Gap Register](evidence-gap-register.md)
-23. [Dependency Map Format](dependency-map-format.md)
-24. [Information Architecture](information-architecture.md)
-25. [Sample Records](sample-records.md)
-26. [Content Expansion Plan](content-expansion-plan.md)
-27. [Signals Roadmap](signals-roadmap.md)
-28. [Publication Readiness Triage](publication-readiness-triage.md)
-29. [Launch Candidate Review](launch-candidate-review.md)
-30. [Publication Policy](publication-policy.md)
-31. [Technical Stack Decision](technical-stack-decision.md)
-32. [Content Scaffold Plan](content-scaffold-plan.md)
-33. The current work package in [work-packages](work-packages/)
+9. [Phase 144 v1 Launch-Candidate Audit Work Package](work-packages/phase-144-v1-launch-candidate-audit.md)
+10. [Phase 60 Operating-Cycle Work Package](work-packages/phase-60-evidence-to-decision-operating-cycle.md)
+11. [Build Manifest](../deployment/ftfn-v0.2-build.json), whose historical filename now carries the release-verified v0.9 contract
+12. [Decision Log](decision-log.md)
+13. [Publication Policy](publication-policy.md)
+14. [Editorial Method](editorial-method.md)
+15. [Content Model](content-model.md)
+16. [Review Checklists](review-checklists.md)
+17. [Source Strategy](source-strategy.md)
+18. [Source Monitoring Plan](source-monitoring-plan.md)
+19. [Information Architecture](information-architecture.md)
+20. The relevant Phase 130–144 work package in [work-packages](work-packages/)
+
+The v0.2, v0.1.1, and earlier release documents remain historical evidence. They should not replace the v0.9 handoff or be described as the current app baseline.
 
 Use [Future Considerations](future-considerations.md) when the work touches theory, long-range ideas, or possible future features.
 
@@ -48,7 +37,7 @@ Use [Prompt Library](prompt-library.md) when starting a repeated workflow such a
 
 ## Core Documents
 
-### v0.2 Build Summary And Session Handoff
+### Versioned Build Summaries And Session Handoffs
 
 Purpose:
 
@@ -67,6 +56,36 @@ Do not use them for:
 - replacing the versioned build manifest,
 - detailed historical rationale,
 - recording unverified deployment claims.
+
+The current chain is cumulative:
+
+- v0.7 / Phases 130–134 document owner-gated evidence admission;
+- v0.8 / Phases 135–139 document project/place conversion and longitudinal eligibility;
+- v0.9 / Phases 140–144 document living public intelligence, editorial cadence, and the v1 launch hold.
+
+The v0.9.0 local build contains 6,504 HTML pages, 86 public JSON exports, and 169 updates. The parent completion pass verified those figures through the clean build, dated Phase 144 receipt, manifest update, post-build verifier, and global release verifier on 2026-08-31. Commit, GitHub, hosting, public access, DNS, owner acceptance, and v1 remain separate states.
+
+### Current Phase 130–144 work-package chain
+
+The current work packages are:
+
+- [Phase 130 — Authority-Gap Closure Maps](work-packages/phase-130-authority-gap-closure-maps.md)
+- [Phase 131 — Priority Evidence Admission Dockets](work-packages/phase-131-priority-evidence-admission-dockets.md)
+- [Phase 132 — Dated Source-Check Receipts](work-packages/phase-132-dated-source-check-receipts.md)
+- [Phase 133 — Requirement Adjudication Board](work-packages/phase-133-requirement-adjudication-board.md)
+- [Phase 134 — Mission Decision Register](work-packages/phase-134-mission-decision-register.md)
+- [Phase 135 — Atlas Conversion-Readiness Audit](work-packages/phase-135-atlas-conversion-readiness-audit.md)
+- [Phase 136 — Named Project Chronicles](work-packages/phase-136-named-project-chronicles.md)
+- [Phase 137 — Place Delivery Ledgers](work-packages/phase-137-place-delivery-ledgers.md)
+- [Phase 138 — Longitudinal Evidence Eligibility](work-packages/phase-138-longitudinal-evidence-eligibility.md)
+- [Phase 139 — Comparative Dossier Re-Review](work-packages/phase-139-comparative-dossier-re-review.md)
+- [Phase 140 — Living Topic Desks](work-packages/phase-140-living-topic-desks.md)
+- [Phase 141 — Frontier Systems Almanac](work-packages/phase-141-frontier-systems-almanac.md)
+- [Phase 142 — Topic Delivery Roadmaps](work-packages/phase-142-topic-delivery-roadmaps.md)
+- [Phase 143 — Editorial Cadence And Editions](work-packages/phase-143-editorial-cadence-and-editions.md)
+- [Phase 144 — v1 Launch-Candidate Audit](work-packages/phase-144-v1-launch-candidate-audit.md)
+
+Phases 130–134 must preserve human admissibility and mission-answer gates. Phases 135–139 must preserve project/place identity, stage, longitudinal, and comparison boundaries. Phases 140–144 must preserve dated edition state, accessible-structure versus certification language, release validation, owner acceptance, and the v1 hold.
 
 ### README
 
@@ -1286,18 +1305,18 @@ Do not use it for:
 - Treating standards contributions as a completed 6G network.
 - Authorizing public access, DNS changes, package freeze, public GitHub synchronization, or public launch.
 
-### v0.2 Build Manifest
+### Historically Named Build Manifest
 
 Purpose:
 
-- Provide the machine-readable contract for the locally verified v0.2 candidate at `deployment/ftfn-v0.2-build.json`.
-- Capture the 380-page build, 38 Published signals, 189 sources, 18 updates, six reader pathways across seven existing Atlas surfaces, two Published briefings, three Published dependency maps, 47 research documents, three required archives, three exports, route samples, release assertions, browser evidence, and deployment boundaries.
+- Preserve the machine-readable release contract at the historically named path `deployment/ftfn-v0.2-build.json`.
+- Capture the current package/content version, exact page/export/update totals, required outputs, route inventories, release assertions, verification receipts, and deployment boundaries.
 - Capture the 150-record local-only authority layer and its generated-output exclusion gate without including private candidate content.
 - Drive `npm run verify:release` while keeping local and hosted verification states distinct.
 
 Update when:
 
-- the exact v0.2 candidate changes,
+- the exact local release candidate changes,
 - required outputs, counts, route checks, or release assertions change,
 - the owner-only preview or later production deployment changes verification state.
 
@@ -1306,6 +1325,7 @@ Do not use it for:
 - Storing secrets.
 - Approving public access, DNS attachment, or public launch.
 - Replacing the human release decision.
+- Conflating the release-verified local v0.9.0 build with a commit, GitHub publication, hosted deployment, DNS attachment, public access, owner acceptance, or v1 promotion.
 
 ### Technical Stack Decision
 
@@ -1376,7 +1396,7 @@ When in doubt, add a short note to the decision log and link the deeper document
 
 Purpose:
 
-- Define the versioned public JSON contract for sources, topics, and Published signals.
+- Define the versioned public JSON contract for sources, topics, Published signals, evidence operations, conversion records, review editions, and the v0.7–v0.9 phase/aggregate registries.
 - Record the field allowlist, private-field exclusions, cadence, and versioning rule.
 
 Update when:
