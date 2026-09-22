@@ -3,6 +3,7 @@ import {projectResearchDocument} from "../../../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import ReferenceAttributionNotice from "../../../components/review/ReferenceAttributionNotice.astro";
+import SourceArtifactLabelNotice from "../../../components/review/SourceArtifactLabelNotice.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 
 export async function getStaticPaths() {
@@ -46,6 +47,7 @@ const dateFormatter = new Intl.DateTimeFormat("en", { month: "long", day: "numer
   </section>
 
   <ReferenceAttributionNotice review={document.data.editorial_attribution} />
+  <SourceArtifactLabelNotice review={document.data.source_artifact_label} />
 
   <section class="page-section two-column-section">
     <article class="record-card">

@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import './verify-source-artifact-labels.mjs';
 import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';

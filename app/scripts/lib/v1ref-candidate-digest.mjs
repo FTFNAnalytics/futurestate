@@ -20,6 +20,7 @@ import attribution57iInputs from '../content-205-216/reference-attribution-57i-i
 import attribution57hInputs from '../content-205-216/reference-attribution-57h-inputs.json' with {type:'json'};
 import attribution57gInputs from '../content-205-216/reference-attribution-57g-inputs.json' with {type:'json'};
 import attribution56ghInputs from '../content-205-216/reference-attribution-56gh-inputs.json' with {type:'json'};
+import artifactLabelInputs from '../../src/data/source-artifact-labels.json' with {type:'json'};
 
 const defaultAppRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..");
 
@@ -47,6 +48,14 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'src/data/source-artifact-labels.json',
+  'src/lib/source-artifact-labels.mjs',
+  'src/components/review/SourceArtifactLabelNotice.astro',
+  'src/content/updates/2026-09-22-source-artifact-labels.json',
+  'scripts/assert-source-artifact-labels.mjs',
+  'scripts/verify-source-artifact-labels.mjs',
+  ...[...artifactLabelInputs.records,...artifactLabelInputs.unchanged_consumers].map(r=>`src/content/${r.source_file}`),
+  ...artifactLabelInputs.records.map(r=>`public${r.historical_download.path}`),
   'src/content/updates/2026-09-22-hornsdale-report-access.json',
   'src/content/updates/2026-09-22-dalrymple-acquisition.json',
   'src/content/updates/2026-09-22-f15ex-access.json',

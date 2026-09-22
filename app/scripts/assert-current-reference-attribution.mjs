@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import './assert-source-artifact-labels.mjs';
 import {readFile,readdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';

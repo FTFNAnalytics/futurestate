@@ -125,6 +125,7 @@ export function serializePublicResearchDocument(document: CollectionEntry<"resea
   return {
     record_kind: "research_document",
     editorial_attribution: data.editorial_attribution,
+    source_artifact_label: data.source_artifact_label,
     local_capture_path: data.local_capture_path,
     id: data.id,
     collection_id: data.collection_id,

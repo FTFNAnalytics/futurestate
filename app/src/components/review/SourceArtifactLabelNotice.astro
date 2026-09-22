@@ -1,0 +1,20 @@
+---
+import {artifactLabelSourceCheck,artifactLabelReviewDate,artifactLabelUpdateId} from '../../lib/source-artifact-labels.mjs';
+const {review}=Astro.props;
+const check=review?artifactLabelSourceCheck(review.source_check_id):null;
+---
+{review&&check&&<aside class="page-section status-panel" data-source-artifact-label={review.id} aria-label="Source artifact type correction">
+  <div class="status-item">
+    <h2>Source artifact type corrected</h2>
+    <p>Current label: {review.current_document_type}. Historical label: {review.original_document_type}. Reviewed {artifactLabelReviewDate}.</p>
+    <p>{check.finding}</p>
+    <p>Exact location: {check.locator}. {check.access} {check.date_boundary}</p>
+    <p><a href={`/updates/${artifactLabelUpdateId}/`}>Read the dated label correction</a></p>
+    <p><a href="/data/research.json">Download current labels and source-check notes</a></p>
+  </div>
+  <div class="status-item">
+    <h2>Evidence history unchanged</h2>
+    <p>The original publisher, claims, dates, record state and downloads remain unchanged. This label review does not approve the underlying claims, supply independent review or advance an evidence gate. Historical archive metadata may retain the earlier label.</p>
+    <p><a href={review.historical_download.path} download>Download the preserved historical link record</a></p>
+  </div>
+</aside>}

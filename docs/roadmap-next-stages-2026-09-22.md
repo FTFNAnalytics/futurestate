@@ -2,6 +2,8 @@
 
 Status: execution plan prepared from the current repository; implementation and review gates remain individually governed.
 
+Execution tracking: the starting-point table below is the planning baseline, not the latest build result. See the [current build progress](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/build-progress-2026-09-22.md>) for subsequent validated changes and the [full completion audit](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/completion-audit.md>) for remaining proof at every stage. A technical checkpoint does not close the independent-review, owner or real-calendar gates.
+
 ## Objective
 
 Turn the existing reference candidate into a reviewed, maintainable English edition that readers can navigate, verify and return to. Finish the existing Phases 205–216 through six delivery stages. Keep their record identities and acceptance contracts; no new numbered phase program is needed.
