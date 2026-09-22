@@ -47,6 +47,9 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'public/favicon.svg',
+  'scripts/assert-current-reader-finishing.mjs',
+  'src/content/updates/2026-09-22-reader-reconciliation.json',
   'scripts/lib/historical-source-semantics.mjs',
   'scripts/assert-phase157-164-content.mjs',
   'src/content/updates/2026-09-22-phase-55q-arizona-wastewater-recheck.json',

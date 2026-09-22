@@ -1,5 +1,7 @@
 # Documentation Map
 
+Latest implementation evidence: [September 22 build progress](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/build-progress-2026-09-22.md>), including source recovery, current reader revisions, versioned review packets and the actual remaining gates. This later report supersedes the planning-only starting state below.
+
 Current execution pointer: [September 22 next build stages](</C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/roadmap-next-stages-2026-09-22.md>). Current validation evidence: [September 22 operation and full local result](</C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/phase-207-arizona-recheck-2026-09-22.md>). Read these before older completion summaries.
 
 This map explains how the FTFN documentation system fits together, when each document should be updated, and how future work sessions should use it.

@@ -16,7 +16,7 @@ const visit=value=>{
 };
 [monographs,editions,report].forEach(visit);
 export const readerCatalog=[
-  ...current.records.map(r=>({id:r.record_id,title:r.title,summary:r.answer,kind:r.kind,route:r.route,date:r.authored_date,status:r.review_status,...(r.identity_evidence?{identity_names:[r.identity_evidence.candidate_name,...r.identity_evidence.aliases,...(r.identity_evidence.identifier?[r.identity_evidence.identifier]:[])]}:{})})),
+  ...current.records.map(r=>({id:r.record_id,title:r.title,summary:r.answer,kind:r.kind,route:r.route,date:r.updated_date??r.authored_date,status:r.review_status,...(r.identity_evidence?{identity_names:[r.identity_evidence.candidate_name,...r.identity_evidence.aliases,...(r.identity_evidence.identifier?[r.identity_evidence.identifier]:[])]}:{})})),
   ...readers.records.map(r=>({id:r.record_id,title:r.title,summary:r.overview,kind:editionModes.get(r.record_id)==='Low-bandwidth HTML edition'?'Compact':r.record_id.startsWith('202-')?'Plain English':r.record_id.startsWith('200-')?'Essay':'Report',route:paths.get(r.record_id),date:r.authored_date,status:r.review_status})),
 ];
 if(readerCatalog.some(r=>!r.route||!r.route.startsWith('/')))throw new Error('Reader catalog has an unresolved route');

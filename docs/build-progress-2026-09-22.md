@@ -1,0 +1,59 @@
+# Next-stage build progress — September 22, 2026
+
+Local implementation of the six-stage roadmap. This is not full-v1 completion, independent acceptance, publication or a launch decision.
+
+## Recoverable source baseline
+
+- Committed `7b0e7c412df53c1653b5477c29271223f1be689b` on `codex/phase51-content`; predecessor `44dacef1ff824b2a637656c1b4886dd4a09333f3` remains recoverable.
+- The index was empty before staging. Exact FTFN source scope was inventoried, scanned for recognized credential patterns and captured. Unrelated review packages, root outputs and private/runtime files were excluded. No credential pattern was found; this bounded scan is not a complete security audit.
+- Git initially would have changed 1,747 captured files through line-ending normalization. `.gitattributes` now preserves evidence bytes in application, documentation, deployment and declarative database source. The final checkpoint contains 3,377 changed paths; no historical evidence text was trimmed to conceal existing whitespace findings.
+- Git archive recovery verified all **9,422 source files** byte-for-byte and reproduced candidate digest `6a9800e2bd6ef92b4ba24fd498806e56833870c3be745805e401cbda7d8cf407`. Archive SHA-256: `62c8d4e0560f388476c241a87df7f8abcd22e942b0346be210ceaf9d9e5d73e7`.
+- Clean installation used Node 24.15.0 / npm 11.12.1 and `npm ci --no-audit --no-fund --fetch-retries=0 --fetch-timeout=20000` with system certificate trust. It exited 0 and installed 393 packages. No copied `node_modules` was used; no new vulnerability-audit result is claimed.
+- The initial isolated validation exposed an omitted declarative Supabase schema. Both tracked `supabase/` files were added to recovery scope, without editing or applying SQL. The full suite was restarted in the isolated directory. The failed attempt is retained.
+- Full release validation also checks the local private candidate registry. Its separately copied fixture has SHA-256 `7a12f6e119e1872f7d99acf92deb399de60872557ca628358917adbec8ac7009`; it was not committed, archived or published. Recovery of that private editorial prerequisite is separate from recovery of public build source.
+
+Diagnostics: [source manifest](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-22T21-35-46.233Z-aHHBIf/source-manifest.json>), [Git byte verification](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-22T21-35-46.233Z-aHHBIf/git-byte-verification.json>), [archive recovery](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-22T21-35-46.233Z-aHHBIf/git-recovery-verification.json>).
+
+## Implemented reader changes
+
+TSMC and Toronto dossiers and answers now incorporate their completed September 22 / September 21 receipts. They no longer describe those checks as future or leave the resolved Council-authorization gap as missing. Arizona acceptance/operation and Toronto enactment/permit limits remain intact. Receipt-hash drift tests protect the revised claims.
+
+The Louisiana answer now locates the exact 104-location service cohort separately from the tower location, statewide award and company subscriber total. The quantum answer records exact-version/abstract rechecks and failed Nature retrievals without pretending the inaccessible papers were reverified. All six revised records remain independently unapproved.
+
+Reader catalog dates now use the current editorial revision, with original authorship retained on articles. The homepage previews six dependency maps instead of placing all 178 ahead of recent signals; the full archive is retained. Added a small site-specific favicon using the existing palette; the social image is unchanged.
+
+## Review handoff
+
+- [33 exact article assignments and claim-review state](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/selection.md>) and [machine-readable hashes](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/selection.json>).
+- [All 25 complete backlog decision packets](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/backlog-all-25.md>), organized in five batches, plus the [first-five handoff](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/backlog-first-five.md>). Research dates and overdue appointments are retained; no authorized dispositions were invented.
+- [Five-reader session sheet](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reader-session-sheet.md>). Zero participants have completed this protocol. The acceptance target remains four of five readers succeeding on each task.
+- [Measurement acquisition](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/measurement-acquisition.md>): Hornsdale PDF access recovered and three pages visually inspected, including an invalid printed WAPS date. No half-year denominator or series admission. Dalrymple method/interval records and the F-15EX acceptance ledger remain missing. Incorporation of the new Hornsdale access evidence into a public dated receipt is still required.
+
+## Verification state
+
+The recovered-baseline suite passed: generation exited 0 at 21:45:25 UTC and full validation exited 0 at 22:05:31 UTC. Retained [command results](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-22T21-35-46.233Z-aHHBIf/reproduction/results.json>) and full logs document clean-install reproduction. The deterministic baseline receipt remains `204-FULL-LOCAL-VALIDATION-2026-09-22-536f9d7a0614`; the new execution times belong to the separate command log, not a rewritten historical receipt.
+
+The revised-candidate suite also passed: generation exited 0 at 21:54:27 UTC and full validation exited 0 at 22:17:04 UTC. [Saved command results](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-22T21-53-49.246Z-gwbQLO/results.json>) bind the terminal run. Receipt `204-FULL-LOCAL-VALIDATION-2026-09-22-d7d5479c1844` covers candidate `fd7833535e0f79c982d49dbb9de3e1c13915f1b3823a7ab42f6c9e71e9460eb5`, with 3,348 candidate artifacts, 16,619 HTML pages, 157 top-level JSON exports, 320 updates and 833 sources. The final release pass checked **711,233 local references with zero missing targets**. Astro checks reported zero errors, zero warnings and two existing hints. Counts include historical archives, not just distinct current articles.
+
+The dependency lockfile is unchanged by the revisions; SHA-256 `d5c0cf14413b5b975290875e86ea9329f0380d92ba05b32c9dc0fd9ddb53b3d8`. Clean-install reproduction belongs to the baseline; the revised candidate passed the complete suite in the live workspace with the same locked dependency set. Neither result supplies independent editorial approval or a fresh vulnerability audit.
+
+Initial assisted browser checks on the preserved baseline confirmed a working Toronto project search, correct keyboard skip-link focus and 320-pixel reflow without page-width overflow. The page has a 16-pixel body font. Revised-output checks covered the five assisted journeys, empty search, keyboard clearing, cross-page search and final-page navigation. The homepage HTML fell from 132,685 to 39,169 bytes while retaining the full map archive. [Exact QA methods and limitations](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/assisted-browser-qa.md>) distinguish these checks from acceptance. **200% enlargement, real assistive technology and five-reader acceptance remain untested.**
+
+The standard development server timed out. A local static server successfully served the retained built output, without any hosted change. The user-facing panel request was queued; the background QA tab is not evidence that the user viewed it. After QA, the temporary static server was stopped and its browser tab closed; no persistent preview is promised.
+
+## Hosting and recovery boundary
+
+A fresh read-only Sites check at approximately 22:02 UTC confirms project `appgprj_6a614e1092d08191bf65779fc35df959`, owner-only custom access, zero external viewers/groups/editors and access revision 1. Version 79 is successfully deployed at [the existing site](https://ftfn-analytics.jbumstead.chatgpt.site).
+
+- Saved version: `appgprj_6a614e1092d08191bf65779fc35df959~appgver_1f33db6da5dc8191aa1f972909040cf7`.
+- Source: `00be8bbd39173a2f726e9cea100a803b02a398c8`.
+- Deployment: `appgdep_6a7977dd422881919873d6d165ff1f58`, succeeded August 10.
+- Archive: `sha256:494c782636c96724ad04d3665f002ccb3a18fa7e6358ad99bb28d0c594f5718b`; 189,726,720 bytes / 5,198 files.
+
+This identifies the retained hosted recovery target; no hosted rollback was performed. The local hosting skill file was unavailable after the plugin cache changed, so only documented read-only connector operations were used. Source synchronization, packaging compatibility, exact revised saved version, hosted acceptance and any authorized replacement still need execution. No GitHub push, DNS change, audience change, public launch or scope waiver occurred.
+
+## Remaining gates
+
+Stage 1 baseline recovery, terminal clean-install reproduction and full revised-candidate validation passed. A second source capture verified all 9,435 revised files against candidate `fd7833535e0f79c982d49dbb9de3e1c13915f1b3823a7ab42f6c9e71e9460eb5`; final Git verification follows this report's preparation. The exact committed source is identified by Git and the local checkpoint diagnostic, not a self-referential hash written into this file. Stage 2 still needs the remaining claim reviews, actual independent dispositions and reachable historical-claim audit. Stage 3 needs real readers, assistive technology and enlargement checks. Stage 4 retains its measurement hold and missing artifacts. Stage 5 requires the reviewed exact candidate and applicable owner release/deployment decisions. Stage 6 requires a real launch/hold decision and, if launched, thirty actual operating days.
+
+Keep September 24 NNSA capacity, September 28 Toronto, October 1 Loudoun, October 9 final gates/audit and the separate November 21 Arizona appointment. No future gate was run early. The full-v1 contract remains held and unchanged.

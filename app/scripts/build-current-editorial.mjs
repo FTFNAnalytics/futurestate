@@ -39,7 +39,7 @@ const add = article => {
   if(article.identity_evidence) validateGlobalIdentity(article,binding.sourceRecord??binding.record);
   validateRetainedPlaceReceipt(article,retainedProjectReceipts);
   validateRetainedCycleReceipt(article,retainedCycleReceipts);
-  records.push({...article, route:binding.route, authored_date:'2026-09-14', review_status:'Editorial draft — independent review pending', approved:false, source_check_boundary:'Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.', historical_record_title:binding.record.title??binding.record.question??binding.record.project_name??binding.record.place_name, sha256:createHash('sha256').update(JSON.stringify(article)).digest('hex')});
+  records.push({...article, route:binding.route, authored_date:'2026-09-14', review_status:'Editorial draft — independent review pending', approved:false, source_check_boundary:article.source_check_boundary??'Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.', historical_record_title:binding.record.title??binding.record.question??binding.record.project_name??binding.record.place_name, sha256:createHash('sha256').update(JSON.stringify(article)).digest('hex')});
 };
 for(const t of thinTopicEditions) {
   const binding=[...byId].find(([id,{record}])=>id.startsWith('184-TOPIC-')&&record.slug===t.slug);

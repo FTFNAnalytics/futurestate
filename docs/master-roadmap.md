@@ -1,5 +1,7 @@
 # FTFN Master Roadmap
 
+September 22 implementation: [source recovery, reader revisions and remaining acceptance gates](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/build-progress-2026-09-22.md>). The baseline is committed and byte-recovered; use this report for terminal reproduction and revised-candidate results rather than restarting source reconciliation from scratch.
+
 Current execution plan: [September 22 next build stages](</C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/roadmap-next-stages-2026-09-22.md>). It incorporates the successful September 22 local validation and sequences source checkpointing, editorial review, reader acceptance, measurement decisions, owner-only release preparation and actual stewardship. Phases 205–216 remain individually open at their unmet gates.
 
 Civilization is a choice.

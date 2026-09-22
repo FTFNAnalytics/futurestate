@@ -29,8 +29,7 @@ assert(changes.every(p=>!protectedPath(p)),'Staged changes include private/runti
 const rows=[];
 for(const row of manifest.files){
   const bytes=await readFile(join(root,row.path));
-  // The capture helper itself received a documented scope update after capture.
-  if(row.path!=='app/scripts/checkpoint-current-source.mjs')assert.equal(createHash('sha256').update(bytes).digest('hex'),row.sha256,`Captured source changed: ${row.path}`);
+  assert.equal(createHash('sha256').update(bytes).digest('hex'),row.sha256,`Captured source changed: ${row.path}`);
   const oid=createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
   assert.equal(index.get(row.path)?.oid,oid,`Git would not reproduce exact bytes: ${row.path}`);
   rows.push({path:row.path,git_blob:oid,sha256:createHash('sha256').update(bytes).digest('hex')});
