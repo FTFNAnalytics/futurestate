@@ -36,6 +36,13 @@ for(const note of ops.pilot_research_followups??[])for(const route of note.affec
  assert(text.includes('No added observations, independent approval, issuer correction or series admission.'));
 }
 const detail=await read('dist/signals/57n-amtrak-24-accepted-label-conformance-tests/index.html');assert(detail.includes('FTFN adapter passes 24 Amtrak-label conformance tests'));assert(detail.includes('Current editorial classification'));
+const measurementPage=await read('dist/method/editorial-review/index.html');
+assert(measurementPage.includes('The measurement feature remains held'));
+for(const pilot of ops.pilot_reviews){
+ const latest=ops.pilot_research_followups.filter(r=>r.pilot_id===pilot.pilot_id&&r.checked_date<=ops.as_of_date).at(-1);
+ assert(latest);assert.equal(measurementPage.split(`data-pilot-latest="${latest.review_id}"`).length-1,1);
+ assert(measurementPage.includes(`href="#${latest.review_id}"`));
+}
 const signals=await read('dist/signals/index.html');assert(!signals.includes('href="/signals/57n-amtrak-24-accepted-label-conformance-tests/"'),'Corrected method note leaked into the default feed');
 for(const [file,out]of [['phase-205-216-current-editorial.json','current-editorial.json'],['phase-206-editorial-classification.json','editorial-classification.json'],['phase-207-current-operations.json','current-operations.json']])assert.deepEqual(JSON.parse(await read(`src/data/${file}`)),JSON.parse(await read(`dist/data/${out}`)));
 console.log('Current editorial production verified: 33 readers; 40-card catalog pages; correction excluded from default feed; Toronto assigned surfaces; exact JSON exports. Browser/independent review remains separate.');

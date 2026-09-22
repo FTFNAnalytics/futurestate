@@ -47,6 +47,9 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'src/content/updates/2026-09-22-hornsdale-report-access.json',
+  'src/content/updates/2026-09-22-dalrymple-acquisition.json',
+  'src/content/updates/2026-09-22-f15ex-access.json',
   'public/favicon.svg',
   'scripts/assert-current-reader-finishing.mjs',
   'src/content/updates/2026-09-22-reader-reconciliation.json',

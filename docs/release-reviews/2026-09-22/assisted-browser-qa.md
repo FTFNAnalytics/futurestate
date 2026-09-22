@@ -21,3 +21,17 @@ Earlier baseline checks established working keyboard skip-link focus on `main-co
 The homepage HTML shrank from 132,685 to 39,169 bytes (about 70%). It previews six of 178 dependency maps and retains the full archive. The favicon is present. These sizes measure HTML, not total transfer size, loading time or Core Web Vitals.
 
 No critical defect was established in these bounded journeys; this does not establish that the release has no critical accessibility defects. Record actual independent findings using the [reader session sheet](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reader-session-sheet.md>).
+
+## Later continuation: observed focus defect and repair
+
+The preceding paragraph describes the earlier journey checks only. A subsequent focused check found a real defect on `/reference/explore/1/`: keyboard Tab from Content type to Search produced `:focus-visible`, but the button's inherited white text color also made its three-pixel outline white on the white panel. The calculated contrast was 1:1. Input/select boundaries used `#d9ddd6`, about 1.38:1 against the white panel.
+
+The shared stylesheet now gives focus an explicit `#084d46` outline, three pixels wide and four pixels offset. Form boundaries use `#5b625f`. Source regressions check the shared selectors and contrast against all three intended panel/surface backgrounds, including negative fixtures for the observed failures.
+
+Browser retest around 22:52–22:53 UTC used the regenerated local output for candidate `75e753c4886b5768b0b8b8400020f7ffa60c462807c1be7d6cd4403fbb865b91` while its complete validation sequence continued. Tab from Content type reached Search; computed `:focus-visible` was true, with `rgb(8, 77, 70) solid 3px` and four-pixel offset. The screenshot visibly showed the ring. Both fields displayed the new border color. Calculated focus contrast against the white panel is about 9.72:1; border contrast is about 6.26:1 against the panel and 6.03:1 against the field surface. These are color calculations, not a whole-page accessibility certification.
+
+The tested stylesheet was `/_astro/BaseLayout.A-W7na4h.css`, SHA-256 `521307103f61c1160b99fead128d5a2e80bccb33f6a6abd2f3ce7bd786298bc3`. After full validation exited 0 at 23:03:07 UTC, a fresh file hash confirmed the final output has those identical stylesheet bytes. This binds the observed styling without pretending the later receipt-only rebuild was a second participant or browser session.
+
+The same browser pass confirmed the Hornsdale catalog card's September 22 revision and new evidence limitation. On `/method/editorial-review/`, all three latest September 22 pilot summaries and their target anchors were present, along with the explicit feature hold and three preserved September 14 extraction disclosures. Clicking the Hornsdale detail link changed the fragment to `#211-HORNSDALE-ACCESS-2026-09-22` and scrolled that receipt to the viewport top.
+
+This resolves the observed search-control focus/boundary defect and verifies the bounded pilot navigation. It does not supply a participant, independent acceptance, all-route focus audit, screen-reader run or demonstrated 200% enlargement. The five-reader matrix remains empty.

@@ -815,12 +815,14 @@
           "artifact_date": "Released 2024-08-07"
         },
         {
-          "title": "Neoen Hornsdale H1 2024 operations report",
+          "title": "Neoen Hornsdale H1 2024 operations report, Revision 1",
           "url": "https://arena.gov.au/assets/2025/03/Neoen-%E2%80%93-Hornsdale-Power-Reserve-Upgrade-%E2%80%93-Operations-Report-H1-2024.pdf",
-          "artifact_date": "H1 2024 observation period"
+          "artifact_date": "Released 2025-02-21; H1 2024 observation period"
         }
       ],
-      "answer": "Hornsdale’s expansion report documents dated changes to specific grid services. Its 2024 report is not a 2026 operating series merely because ARENA refreshed the landing page in 2026. Service enablement, measured event response and household benefit remain distinct questions.",
+      "answer": "Hornsdale’s reports document service-specific changes and event response. The recovered H1 2024 report does not establish a reproduced half-year availability series; its printed WAPS date is invalid and remains unresolved. Service enablement, event response and household benefit remain distinct questions.",
+      "updated_date": "2026-09-22",
+      "source_check_boundary": "September 22 recovered the exact H1 2024 PDF and visually checked three named pages. Earlier final-report and landing-page inspections retain their dates; this is not a current 2026 operating audit or independent acceptance.",
       "source_notes": [
         {
           "source_index": 0,
@@ -838,10 +840,10 @@
         },
         {
           "source_index": 2,
-          "checked_date": "2026-09-15",
-          "locator": "Exact H1 2024 PDF URL",
-          "scope": "No new availability extraction. Earlier indexed research remains separate.",
-          "access": "September 14 direct open returned Internal Error; full current text and image inspection unavailable."
+          "checked_date": "2026-09-22",
+          "locator": "Physical PDF pages 1, 9 and 13: cover, Table 1 on printed page 4, and Figures 4–5 on printed page 8",
+          "scope": "The invalid printed WAPS date 31/11/2023 is retained. Event response does not reproduce a half-year available/eligible interval measure. No values digitized or series admitted.",
+          "access": "Exact PDF downloaded, hash-pinned and three named pages visually inspected; the September 14 failed retrieval remains in the original pilot receipt. Not a full-document or independent review."
         }
       ],
       "identity_evidence": {
@@ -911,14 +913,15 @@
           ]
         },
         {
-          "heading": "The unavailable operating report remains visible",
-          "text": "The exact H1 2024 PDF did not return inspectable content in this check. No half-year availability value is newly extracted, and the existing measured-series pilot remains unadmitted.",
+          "heading": "Recovered report, unresolved date and denominator",
+          "text": "On September 22 the exact H1 2024 PDF was recovered. Its cover says Revision 1, released February 21, 2025. Table 1 prints 31/11/2023 for WAPS, an invalid date differing from the final report’s November 30 account. Printed page 8 compares response within an event/dispatch interval, not half-year eligible and available time.",
           "citations": [
+            1,
             2
           ],
           "paragraphs": [
             {
-              "text": "FTFN interpretation: Keep a failed retrieval visible without treating it as a failed project. The next reviewer needs the exact report and calculation contract, not a substituted national battery statistic or a number copied without its exclusions.",
+              "text": "FTFN interpretation: Preserve both source accounts and seek issuer clarification; no erratum or replacement date is asserted. The earlier retrieval failure remains historical evidence. Successful access does not admit a quantitative series or turn a 2024 observation into 2026 performance.",
               "citations": []
             }
           ]
@@ -936,7 +939,7 @@
         },
         {
           "heading": "Next decisive records",
-          "text": "Obtain the complete operating report, accepted service definitions and compatible interval observations. Reproduce any proposed series independently before asking for admission. Check current configuration and adverse-event records before extending the historical account into 2026.",
+          "text": "Obtain the accepted service definition, configuration boundary, compatible interval ledger, exclusions and revision policy. Resolve the printed date discrepancy and reproduce any proposed series independently before admission. Check current configuration and adverse-event records before extending the historical account into 2026.",
           "citations": [],
           "paragraphs": [
             {
@@ -946,13 +949,11 @@
           ]
         }
       ],
-      "updated_date": "2026-09-15",
       "authored_date": "2026-09-14",
       "review_status": "Editorial draft — independent review pending",
       "approved": false,
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
       "historical_record_title": "Hornsdale Power Reserve",
-      "sha256": "ecd6370f64c9058718be7fe457a53678581a9cf8188594d80ca041887bd49807"
+      "sha256": "6fbba20315a718385d1fc09ba2fd38fe42a778345307b5baa7ce6ed8e53d7a7d"
     },
     {
       "record_id": "191-PROJECT-004",

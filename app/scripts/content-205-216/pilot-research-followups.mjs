@@ -111,3 +111,61 @@ pilotResearchFollowups.push({
   visual_review_scope: 'Nine named pages of four official PDFs, locally rendered with Poppler and visually inspected on 2026-09-15',
   next_action: 'Obtain the exact contractual method and available/eligible interval records listed below, then request genuine independent review and an authorized admission decision. Retain both conflicting source headings; do not back-solve intervals or treat a successful PDF download as qualification.'
 });
+
+// September 22 acquisition results are additive; the September 14 pilot records
+// and both September 15 Dalrymple receipts remain byte-for-byte historical data.
+const acquisitionBoundary={checked_date:'2026-09-22',reviewer:'Codex - assisted acquisition review; not an independent second reviewer',independent_review_complete:false,admitted:false,admission_receipt:null,second_reviewer:null,candidate_observations_added:[],prior_extraction_preserved:true,issuer_correction_claimed:false,publication_authorized:false};
+pilotResearchFollowups.push({
+  ...acquisitionBoundary,
+  review_id:'211-HORNSDALE-ACCESS-2026-09-22',pilot_id:'160-PILOT-001',entity_id:'119-PROJECT-012',
+  title:'Hornsdale H1 2024: report recovered; interval denominator still missing',
+  status:'Three selected PDF pages visually checked; measurement feature held',
+  finding:'The exact report was downloaded and selected pages inspected. Its cover identifies Revision 1 released February 21, 2025 for H1 2024. Table 1 prints the invalid WAPS date 31/11/2023; no silent replacement or issuer erratum is claimed. The response comparison on printed page 8 concerns a dispatch interval, not a reproduced half-year availability measure.',
+  source_checks:[{
+    title:'Neoen Hornsdale H1 2024 operations report, Revision 1',
+    url:'https://arena.gov.au/assets/2025/03/Neoen-%E2%80%93-Hornsdale-Power-Reserve-Upgrade-%E2%80%93-Operations-Report-H1-2024.pdf',
+    artifact_date:'2025-02-21',observation_period:'H1 2024',
+    locator:'Cover (physical PDF page 1); Table 1, printed page 4 (physical 9); Figures 4-5 and discussion, printed page 8 (physical 13)',
+    access:'Official PDF downloaded; the three named pages rendered with Poppler and visually inspected',
+    finding:'The cover separates release and observation dates. Table 1 contains 31/11/2023. Figures 4-5 compare event response; the reviewed passages do not supply the half-year eligible/available interval population. No plot values were digitized.',
+    captured_sha256:'e228a12b0320a0ebcaa2c81caa246081be0ca647327afe73c1764065a1b9bea5',captured_bytes:1130456,document_pages:18,
+    visually_checked_pages:[1,9,13],page_number_convention:'One-based physical PDF pages; printed page locators are separately stated'
+  }],
+  access_limits:[
+    'The earlier direct-request failure remains preserved in the September 14 pilot. This later successful download resolves access only, not independent acceptance.',
+    'Visual review covers only the cover, printed pages 4 and 8. Neither a full-document audit nor a current 2026 operating review was performed.',
+    'The invalid printed date differs from the November 30 date in the separately cited final-report account. Issuer clarification, the contractual availability method and interval ledger were not obtained; their nonexistence is not inferred.'
+  ],
+  required_artifacts:['Exact availability definition and applicable service/configuration boundary, with eligible intervals, exclusions and revision policy.','Period-compatible available/eligible interval records and missing-data treatment; independent reproduction before admission.','Issuer clarification of the printed WAPS date, without silently changing either historical artifact.'],
+  next_action:'Resolve the date discrepancy and obtain the service definition plus complete interval inputs. Keep the measurement feature held; successful PDF access does not qualify a series or waive full-v1 requirements.',
+  affected_record_ids:['191-PROJECT-003'],affected_routes:['/method/editorial-review/','/reference/international-projects/hornsdale-power-reserve/'],
+  visual_review_complete:true,visual_review_scope:'Three named physical PDF pages (1, 9, 13) of one hash-pinned report; no independent extraction review'
+},{
+  ...acquisitionBoundary,
+  review_id:'211-DALRYMPLE-ACQUISITION-2026-09-22',pilot_id:'160-PILOT-002',entity_id:'119-PROJECT-014',
+  title:'Dalrymple availability: bounded search did not recover the calculation contract',
+  status:'Bounded acquisition follow-up; measurement feature held',
+  finding:'The public search returned operating-report discussion but not the applicable Schedule 7, Operating Protocol versions or interval ledger. Report 2 describes method agreement still under discussion; report 3 describes agreement and monthly tracking. That contrast identifies a versioning requirement, not a demonstrated error in a historical percentage.',
+  source_checks:[
+    {title:'ESCRI-SA Operational Report 2',url:'https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-report-2.pdf',artifact_date:'2020-02',locator:'Cover and section 6.2, printed page 36',access:'Official PDF text inspected in the September 22 acquisition pass; new page-image check not performed',finding:'Calculation-method agreement was still being worked through; this passage does not reproduce the method or interval population.'},
+    {title:'ESCRI-SA Operational Report 3',url:'https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-report-3.pdf',artifact_date:'2020-08',locator:'Section 6.2, printed page 36',access:'Official indexed text inspected in the September 22 acquisition pass; the September 15 visual receipt remains separate',finding:'An agreed calculation and monthly tracking are described; applicable protocol versions and interval records remain required.'}
+  ],
+  access_limits:['The exact ElectraNet-domain Schedule 7 search returned no indexed result; this does not establish that the contract is unavailable or nonexistent.','No contact, records request or fee was initiated. No new page-image review or additional candidate observation was performed.'],
+  required_artifacts:structuredClone(pilotResearchFollowups[0].required_artifacts),
+  next_action:'Obtain the applicable calculation contract, protocol versions and monthly available/eligible interval records. Preserve the four candidate values and the existing fourth-period amendment; independent reproduction and authorized admission remain pending.',
+  affected_record_ids:['198-CASE-014','191-PROJECT-005','192-PLACE-002','212-REPORT-001'],
+  affected_routes:['/method/editorial-review/','/reference/failure-casebooks/dalrymple-grid-battery/','/reference/international-projects/dalrymple-grid-battery/','/reference/global-places-ii/south-australia-grid-storage/','/reference/field-report/2026-09-14/'],
+  visual_review_complete:false
+},{
+  ...acquisitionBoundary,
+  review_id:'211-F15EX-ACCESS-2026-09-22',pilot_id:'160-PILOT-003',entity_id:'119-PROJECT-016',
+  title:'F-15EX acceptance series: current article access denied; ledger still required',
+  status:'Retrieval-limited follow-up; measurement feature held',
+  finding:'The text reader and direct request did not recover the exact Air Force article; the direct request returned Access Denied. A focused exact-article search returned no result. The previously inspected December 15, 2025 narrative remains inherited, not freshly verified. No monthly count or zero is inferred.',
+  source_checks:[{title:'Air Force: F-15EX production rebounds, deliveries continue',url:'https://www.aflcmc.af.mil/NEWS/Article/4359770/f-15ex-production-rebounds-deliveries-continue/',artifact_date:'2025-12-15 (retained prior inspection)',locator:'Exact article URL; no body recovered in this acquisition pass',access:'Text reader failed; direct request returned Access Denied; focused exact-article search returned no result',finding:'No newly verified acceptance event or complete monthly population was obtained. Earlier narrative findings remain dated September 14.'}],
+  access_limits:['Retrieval denial and no indexed search result are not evidence of no production, no delivery or no formal acceptance.','No access restriction was bypassed and no unpublished or paid record was sought.'],
+  required_artifacts:['Complete aircraft-identity ledger with formal acceptance dates, period coverage and production-line boundary.','Excluded, reworked and revised events, with planned, delivered, arrived and accepted milestones kept separate.','Independent reconciliation and an actual admission decision before charting a governed monthly series.'],
+  next_action:'Acquire the complete formal-acceptance ledger through an authorized source. Keep the feature held; do not convert article dates, unit arrivals or aircraft identifiers into acceptance rates.',
+  affected_record_ids:['198-CASE-016','212-REPORT-001'],affected_routes:['/method/editorial-review/','/reference/failure-casebooks/f15ex-production-delivery/','/reference/field-report/2026-09-14/'],
+  visual_review_complete:false
+});

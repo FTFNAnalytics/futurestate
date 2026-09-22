@@ -21,8 +21,8 @@ const {classification}=await getShelfCatalog();
   </section>
   <section class="page-section">
     <h2>Measured-outcomes pilot review</h2>
-    <p>No series is admitted. These first-pass findings identify missing evidence, not project success or failure.</p>
-    {operations.pilot_reviews.map(p=><article class="record-card"><h3>{p.title}</h3><p>{p.outcome}</p><p>{p.finding}</p><p><strong>Next:</strong> {p.next_action}</p><p><a href={p.artifact_url}>Exact candidate artifact</a> · Reviewed {p.reviewed_date}</p></article>)}
+    <p>The measurement feature remains held: no series is admitted. These findings identify missing evidence, not project success or failure. This is not an owner-approved scope reduction or a full-v1 pass.</p>
+    {operations.pilot_reviews.map(p=>{const latest=operations.pilot_research_followups.filter(r=>r.pilot_id===p.pilot_id&&r.checked_date<=operations.as_of_date).at(-1);return <article class="record-card"><h3>{p.title}</h3>{latest&&<div data-pilot-latest={latest.review_id}><p>{latest.status} · {latest.checked_date}</p><p>{latest.finding}</p><p><strong>Next:</strong> {latest.next_action}</p><a href={`#${latest.review_id}`}>Exact dated findings and missing artifacts</a></div>}<details><summary>Preserved first-pass extraction · {p.reviewed_date}</summary><p>{p.outcome}</p><p>{p.finding}</p><p><strong>Next at that review:</strong> {p.next_action}</p><p><a href={p.artifact_url}>Exact candidate artifact</a></p></details></article>})}
     <p><a href="/data/current-operations.json">Inspect extraction candidates, period conflicts and review limits</a></p>
   </section>
   <section class="page-section">

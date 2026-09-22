@@ -1,6 +1,6 @@
 {
   "prepared_date": "2026-09-22",
-  "candidate_digest": "fd7833535e0f79c982d49dbb9de3e1c13915f1b3823a7ab42f6c9e71e9460eb5",
+  "candidate_digest": "75e753c4886b5768b0b8b8400020f7ffa60c462807c1be7d6cd4403fbb865b91",
   "source_checkpoint": "7b0e7c412df53c1653b5477c29271223f1be689b",
   "checkpoint_boundary": "Pre-reconciliation recovery baseline; not the final revised source commit",
   "scope_approved": false,
@@ -347,12 +347,12 @@
       "kind": "Project",
       "title": "Hornsdale Power Reserve: operating evidence without an inherited outcome score",
       "route": "/reference/international-projects/hornsdale-power-reserve/",
-      "article_sha256": "ecd6370f64c9058718be7fe457a53678581a9cf8188594d80ca041887bd49807",
-      "rendered_record_sha256": "e3a41f04c3db4f3244c05943eb3e75b189c23fc4d754b7af0713b778a3454768",
+      "article_sha256": "6fbba20315a718385d1fc09ba2fd38fe42a778345307b5baa7ce6ed8e53d7a7d",
+      "rendered_record_sha256": "c7e09d03c942772b640585b4f50d6834f86c2224819c9a60616a505adf70c359",
       "authored_date": "2026-09-14",
-      "updated_date": "2026-09-15",
+      "updated_date": "2026-09-22",
       "scope": "Proposed review selection; owner release scope not approved",
-      "review_state": "Existing source-checked draft; independent claim review pending",
+      "review_state": "September 22 report access and invalid-date limitation incorporated; independent review pending",
       "sources": [
         {
           "title": "ARENA Hornsdale expansion final-report record",
@@ -365,9 +365,9 @@
           "artifact_date": "Released 2024-08-07"
         },
         {
-          "title": "Neoen Hornsdale H1 2024 operations report",
+          "title": "Neoen Hornsdale H1 2024 operations report, Revision 1",
           "url": "https://arena.gov.au/assets/2025/03/Neoen-%E2%80%93-Hornsdale-Power-Reserve-Upgrade-%E2%80%93-Operations-Report-H1-2024.pdf",
-          "artifact_date": "H1 2024 observation period"
+          "artifact_date": "Released 2025-02-21; H1 2024 observation period"
         }
       ],
       "source_notes": [
@@ -387,14 +387,14 @@
         },
         {
           "source_index": 2,
-          "checked_date": "2026-09-15",
-          "locator": "Exact H1 2024 PDF URL",
-          "scope": "No new availability extraction. Earlier indexed research remains separate.",
-          "access": "September 14 direct open returned Internal Error; full current text and image inspection unavailable."
+          "checked_date": "2026-09-22",
+          "locator": "Physical PDF pages 1, 9 and 13: cover, Table 1 on printed page 4, and Figures 4–5 on printed page 8",
+          "scope": "The invalid printed WAPS date 31/11/2023 is retained. Event response does not reproduce a half-year available/eligible interval measure. No values digitized or series admitted.",
+          "access": "Exact PDF downloaded, hash-pinned and three named pages visually inspected; the September 14 failed retrieval remains in the original pilot receipt. Not a full-document or independent review."
         }
       ],
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
-      "next_action": "Obtain the complete operating report, accepted service definitions and compatible interval observations. Reproduce any proposed series independently before asking for admission. Check current configuration and adverse-event records before extending the historical account into 2026.",
+      "source_check_boundary": "September 22 recovered the exact H1 2024 PDF and visually checked three named pages. Earlier final-report and landing-page inspections retain their dates; this is not a current 2026 operating audit or independent acceptance.",
+      "next_action": "Obtain the accepted service definition, configuration boundary, compatible interval ledger, exclusions and revision policy. Resolve the printed date discrepancy and reproduce any proposed series independently before admission. Check current configuration and adverse-event records before extending the historical account into 2026.",
       "independent_reviewer": null,
       "independent_decision": null
     },

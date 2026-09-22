@@ -17,4 +17,17 @@ assert.match(await read('src/components/layout/BaseLayout.astro'),/rel="icon" ty
 assert.match(await read('public/favicon.svg'),/viewBox="0 0 32 32"/);
 assert.match(await read('src/pages/index.astro'),/dependencyMaps\.slice\(0, 6\)\.map/);
 assert.match(await read('src/pages/index.astro'),/href="\/atlas\/dependency-maps\/"/);
+const css=await read('src/styles/global.css'),tokens=await read('src/styles/tokens.css');
+assert.match(css,/:focus-visible\s*\{\s*outline:\s*3px solid var\(--color-accent-strong\);\s*outline-offset:\s*4px/);
+assert.match(css,/\.filter-panel input\s*\{[^}]*border:\s*1px solid var\(--color-muted\)/s);
+const colors=Object.fromEntries([...tokens.matchAll(/--(color-[\w-]+):\s*(#[0-9a-f]{6})/gi)].map(m=>[m[1],m[2]]));
+const luminance=hex=>{const channels=hex.slice(1).match(/../g).map(x=>parseInt(x,16)/255).map(v=>v<=0.04045?v/12.92:((v+0.055)/1.055)**2.4);return channels.reduce((sum,v,i)=>sum+v*[0.2126,0.7152,0.0722][i],0);};
+const contrast=(a,b)=>{const [lo,hi]=[luminance(a),luminance(b)].sort((x,y)=>x-y);return (hi+0.05)/(lo+0.05);};
+for(const bg of ['color-panel','color-surface','color-panel-alt']){
+ assert(contrast(colors['color-accent-strong'],colors[bg])>=3,`Focus contrast below 3:1 on ${bg}`);
+ assert(contrast(colors['color-muted'],colors[bg])>=3,`Input boundary contrast below 3:1 on ${bg}`);
+}
+assert(contrast('#ffffff','#ffffff')<3,'Regression fixture must reject the observed invisible white focus ring');
+assert(contrast(colors['color-line'],colors['color-panel'])<3,'Regression fixture must reject the former low-contrast field boundary');
+console.log('Focus and input-boundary source regressions passed; browser confirmation and independent accessibility acceptance remain separate.');
 console.log('Reader finishing: six dated reconciliations, exact research limits, current catalog dates, six-map homepage preview and favicon verified.');

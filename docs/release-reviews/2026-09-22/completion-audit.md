@@ -1,0 +1,50 @@
+# Full-goal completion audit — September 22, 2026
+
+The objective is the entire [six-stage plan](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/roadmap-next-stages-2026-09-22.md>), not a smaller checkpoint. **Completion is not proven.** This audit separates implementation, candidate validation, independent acceptance and owner authority. No absent receipt is treated as approval.
+
+## Requirement-by-requirement state
+
+| Requirement | Evidence inspected / work delivered | State and next proof required |
+| --- | --- | --- |
+| 1.1 Inventory and preserve existing work | Two prior committed checkpoints, exact source manifests and excluded-file lists; unrelated root packages and private registry excluded | Final continuation capture follows this report; use its scoped Git/source-recovery diagnostic for the exact commit |
+| 1.2 Recover exact source and locked dependencies | `7b0e7c41` clean install and full scratch validation; `59a5d6d2` archive reproduced 9,435 files and its exact candidate | Established at those versions; dependency lockfile unchanged |
+| 1.3 Diagnose Git safely and recheck index | Explicit source lists, empty-index check, byte verification and scoped local commits | Established; no lock deletion, push or unrelated staging |
+| 1.4 Validate changed candidate through documented commands | Generation exited 0 at 22:39:56 UTC; full validation exited 0 at 23:03:07 UTC; receipt `204-FULL-LOCAL-VALIDATION-2026-09-22-92c45fbed18c` | Passed for candidate `75e753c4886b5768b0b8b8400020f7ffa60c462807c1be7d6cd4403fbb865b91`; not independent acceptance |
+| 1.5 Reconcile roadmap/handoff and retain failed history | Current progress pointers, updated selection/QA/acquisition reports, old receipts and canceled-run logs retained | Current documentation reconciled; final checkpoint identity belongs in its separate diagnostic |
+| 2.1 Four topics/eight cases | Existing source-linked drafts and exact article hashes in the selection packet | Independent claim review and dispositions absent |
+| 2.2 Eight project/four place dossiers | Existing identity checks; Toronto and Arizona reconciliations; Hornsdale access/date correction in continuation source | Independent acceptance absent; no unsupported stage or place score admitted |
+| 2.3 Twelve factual answers | Four priority answers assisted-reviewed; all twelve retained in the 33-record corpus with evidence limits | Real review findings and acceptance still required for the full selected set |
+| 2.4 Four case narratives and field report | Four existing cases and dated field edition; new measurement notices preserve original text and dated source limits | Independent report/case review absent; four cases do not fulfill the historical full annual-edition contract |
+| 2.5 Reachable historical claims | Candidate-bound inventory reaches all 16,623 application pages plus 25 saved HTML artifacts; all 826 feed-held signals remain reachable | Inventory complete; factual review/scope dispositions absent. Saved HTML contains 435 unresolved local targets requiring archive-navigation treatment or an explicit release limitation |
+| 2.6 Twenty-five backlog decisions | All 25 detailed packets prepared in five batches, with exact sources, access limits, proposed actions and affected routes | Zero authorized dispositions; evidence editor/owner decisions required |
+| 2.7 Future source checks on actual dates | Nine of thirteen primary decisions retained; separate Toronto and November Arizona identities preserved | September 24, September 28, October 1, October 9 and November 21 obligations cannot be completed early |
+| 3.1 Five usable task prompts | Dated reader-session sheet prepared and assisted journeys exercised on prior candidate | Protocol ready, not acceptance |
+| 3.2 Five actual readers; at least 4/5 succeed on each task | Session matrix has no participants or completed cells | Twenty-five actual unaided attempts and per-task findings required; Codex cannot impersonate readers |
+| 3.3 Keyboard, assistive technology, reflow and 200% zoom | Prior skip-link and 320px checks; continuation browser found and retested a repaired invisible white button-focus ring | Observed focus/boundary defect resolved; real assistive technology and demonstrated 200% zoom remain untested |
+| 3.4 Page budgets, no-JavaScript reading, archives and indexing | Current full production checks passed: 711,344 application references, zero missing; original 16 targets cross-checked; static pagination and budgets retained | Application checks passed; retained HTML archive navigation and human accessibility acceptance remain separate |
+| 3.5 Shared fixes, 34 paired English editions and retesting | Shared focus/input-boundary repair and contrast regressions passed; keyboard/screenshot confirmed; identical CSS hash after final rebuild | Bounded retest passed; all-route/independent acceptance and human translation reviews not inferred |
+| 4.1 Three defined measurement pilots | Exact entity, unit, denominator, period, method and revision boundaries retained | Established as pilot definitions, not admitted measurements |
+| 4.2 Bounded acquisition and current outcomes | September 22 Hornsdale, Dalrymple and F-15EX follow-ups plus exact assigned-route notices passed production checks; latest links also checked in browser | Current bounded acquisition outcomes established; original extractions unchanged; no series admitted |
+| 4.3 Admission, independent reproduction, compatible chart/table/export | Zero admitted series; no synthetic chart or back-solved interval counts | Exact contracts/ledgers and real admission/reproduction required before feature passage |
+| 4.4 Precise feature hold if no pilot qualifies | Review page explicitly retains feature hold and exact missing artifacts for all three | Hold is implemented; not an owner scope waiver or a full-v1 Pass |
+| 5.1 Exact release packet | Refreshed 33 article versions, unchanged lockfile, successful new receipt/logs, full reachability limits and retained hosting target documented | Final scoped checkpoint diagnostic and genuine review dispositions remain distinct; no hosted release approval |
+| 5.2 Fresh existing-site/access check | September 22 read-only check confirmed owner-only Sites version 79, source and deployment IDs | Historical version correctly identified; does not contain the new work |
+| 5.3 Scope/audience/deployment authority | No new deployment, access or public GitHub authority recorded | Owner decision required after applicable reviews; no authorization inferred from this build goal |
+| 5.4 Package, deploy and verify exact hosted candidate | No replacement attempted | Saved-version provenance, hosted routes/exports/downloads/indexing/access and terminal deployment result absent |
+| 5.5 Recovery and rollback | Two exact local source recoveries; projection-level correction/withdrawal/reapplication regression | Current revised recovery and authorized hosted rollback/acceptance remain distinct |
+| 6.1 Explicit owner launch/hold decision | No dated owner decision binds this exact candidate | Required user action; an inherited technical hold is not a newly recorded owner decision |
+| 6.2 Preserve full-v1 mandatory scope | Seven held historical Phase 204 gates retained; no smaller scope approved | Full v1 is not achieved. A separately named bounded release requires explicit owner approval |
+| 6.3 Thirty actual operating days after launch | No launch/start date or operating month exists | Cannot prewrite or simulate future weekly receipts |
+| 6.4 Operating-month review and justified expansion | No actual month of reader/source/maintenance results exists | Expand from actual operating evidence after the preceding decision and period |
+
+## Full-v1 conditions are not waived
+
+The [preserved Phase 204 promotion contract](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/app/src/data/phase-204-v1-public-reference-edition-promotion-gate.json>) records seven held conditions: 100-project/70-place attainment, dated evidence operations, owner adjudication, independent subject review, human French/Spanish translation approval, repository/hosting delivery and promotion. Its September 1 structural passes are historical, not a new independent certification. New inventory rows or acquisition contracts cannot be counted as accepted entities, translations or outcomes.
+
+The [Phase 215](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/work-packages/phase-215-hosted-release-candidate-and-review.md>) and [Phase 216](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/work-packages/phase-216-launch-decision-and-first-month-stewardship.md>) contracts explicitly require actual review, authority and operating evidence. They do not authorize reviewer contact, Git push, audience changes or deployment by themselves.
+
+## What requires people or external evidence
+
+The owner must identify the independent subject/accessibility reviewers and five actual target readers, then supply or authorize the required review/adjudication process. Review returns must name the exact candidate and article versions. Measurement admission needs the missing source records and independent reproduction, not another local test. The release owner must choose launch/hold and any separately named scope only after applicable evidence is available.
+
+No reviewer was contacted, no participant or owner decision was invented, and no future date was treated as elapsed. The goal remains open: archive-navigation treatment is newly identified local work, and review, authority, missing-source and actual-calendar requirements remain. It must not be marked complete on the strength of a technical checkpoint.
