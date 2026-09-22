@@ -3,8 +3,14 @@ import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import ReviewHeader from "../../../components/review/ReviewHeader.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 import program from "../../../data/v031-content-expansion.json";
+import liveCycle from "../../../data/phase-60-operating-cycle.json";
+import { projectEvidenceRecord } from '../../../lib/current-evidence.mjs';
 
-const records = program.evidence_cycle.records;
+const liveById = new Map(liveCycle.records.map((record) => [record.cycle_item_id, projectEvidenceRecord(record)]));
+const records = program.evidence_cycle.records.map((snapshot) => {
+  const live = liveById.get(snapshot.cycle_item_id);
+  return live ? { ...snapshot, ...live, slug: snapshot.slug, public_state: live.decision_date ? "Dated decision" : "Scheduled evidence gate" } : snapshot;
+});
 const decided = records.filter((record) => record.decision_date && record.receipt_id);
 const scheduled = records.filter((record) => !record.decision_date && !record.receipt_id);
 ---

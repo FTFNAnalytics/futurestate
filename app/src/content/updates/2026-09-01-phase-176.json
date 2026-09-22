@@ -1,0 +1,24 @@
+{
+  "id": "update-2026-09-01-phase-176",
+  "effective_date": "2026-09-01",
+  "entry_type": "Publication Promotion",
+  "title": "Phase 176 prepares longitudinal admission and zero-series decisions",
+  "summary": "Adds three six-test longitudinal packets, eighteen provenance rows, and one separate zero-series disposition while transferring zero observations and retaining all outcomes as null.",
+  "affected_record_ids": [
+    "176-PILOT-001",
+    "176-PILOT-002",
+    "176-PILOT-003",
+    "176-ZERO-SERIES-001"
+  ],
+  "related_paths": [
+    "/review/v1oct/longitudinal-decisions/",
+    "/review/v1oct/longitudinal-decisions/hornsdale-power-reserve/",
+    "/review/v1oct/longitudinal-decisions/dalrymple-grid-battery/",
+    "/review/v1oct/longitudinal-decisions/f15ex-production-delivery/",
+    "/review/v1oct/longitudinal-decisions/zero-series-launch-boundary/"
+  ],
+  "evidence_note": "Upstream legacy observations remain inventory only. No value, series, trend, outcome, rank, comparison, or zero substitute enters Phase 176 before six terminal compatibility receipts and a pilot admission receipt bind the exact series-definition digest.",
+  "materiality": "Material record change",
+  "publication_effect": "Adds five local review routes and one schema-1.0 JSON export; it admits no series and records no owner decision.",
+  "work_package": "docs/work-packages/phase-176-longitudinal-admission-and-zero-series-decision.md"
+}

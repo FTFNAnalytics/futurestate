@@ -1,13 +1,17 @@
 ---
+import {projectSignal} from "../../../lib/signal-classification.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
+import currentEditorial from '../../../data/phase-205-216-current-editorial.json';
+import CurrentResearchArticle from '../../../components/review/CurrentResearchArticle.astro';
 import atlas from "../../../data/phase-119-deep-project-place-atlas.json";
 import eventRegistry from "../../../data/phase-62-conversion-event-ledgers.json";
 import biographies from "../../../data/phase-127-project-place-conversion-biographies.json";
 import readiness from "../../../data/phase-135-atlas-conversion-readiness-audit.json";
 import chronicles from "../../../data/phase-136-named-project-chronicles.json";
 import eligibility from "../../../data/phase-138-longitudinal-evidence-eligibility.json";
+import {currentNamedFileAccount, evidenceReceiptsForRecord} from '../../../lib/current-evidence.mjs';
 
 export function getStaticPaths() {
   return atlas.projects.map((record) => ({ params: { slug: record.slug }, props: { projectId: record.atlas_project_id } }));
@@ -17,7 +21,7 @@ const project = atlas.projects.find((record) => record.atlas_project_id === Astr
 const biography = biographies.project_biographies.find((record) => record.atlas_project_id === project.atlas_project_id)!;
 const owner = atlas.update_owners.find((record) => record.owner_id === project.update_owner_id)!;
 const relatedPlaces = project.relationships.related_place_ids.map((id) => atlas.places.find((record) => record.atlas_place_id === id)).filter(Boolean);
-const signals = await getCollection("signals");
+const signals = await getCollection("signals").then(records => records.map(projectSignal));
 const signalById = new Map(signals.map((record) => [record.data.id, record]));
 const selectedSignals = project.evidence_rails.signal_ids.map((id) => signalById.get(id)).filter(Boolean);
 const sources = await getCollection("sources");
@@ -27,6 +31,9 @@ const events = project.chronology.event_ids.map((id) => eventRegistry.events.fin
 const chronicle = chronicles.project_chronicles.find((record) => record.atlas_project_id === project.atlas_project_id)!;
 const readinessRecord = readiness.readiness_records.find((record) => record.entity_id === project.atlas_project_id)!;
 const eligibilityRecord = eligibility.eligibility_records.find((record) => record.entity_id === project.atlas_project_id)!;
+const currentArticle=currentEditorial.records.find(record=>record.record_id===project.atlas_project_id);
+const authorityAccount=project.relationships.phase_61_file_ids.map(id=>currentNamedFileAccount(id)).find(Boolean);
+const authorityReceipt=evidenceReceiptsForRecord(project.atlas_project_id).find(r=>'current_named_file_account' in r);
 ---
 
 <BaseLayout title={`${project.title} | FTFN Project Atlas`} description={project.editorial_question}>
@@ -43,11 +50,12 @@ const eligibilityRecord = eligibility.eligibility_records.find((record) => recor
     </div>
   </section>
 
+  {currentArticle && <CurrentResearchArticle article={currentArticle} embedded />}
   <section class="page-section briefing-band">
     <div class="briefing-band__copy">
       <div class="eyebrow">Current conversion stage</div>
-      <h2>{project.conversion.current_stage}</h2>
-      <p>{project.conversion.stage_basis}</p>
+      <h2>{authorityAccount?.current_stage ?? project.conversion.current_stage}</h2>
+      <p>{authorityAccount?.established ?? project.conversion.stage_basis}</p>
     </div>
     <article class="record-card record-card--featured">
       <div class="eyebrow">Coverage basis</div>
@@ -68,14 +76,14 @@ const eligibilityRecord = eligibility.eligibility_records.find((record) => recor
     <article>
       <div class="eyebrow">Unresolved gate</div>
       <h2>Where the claim stops.</h2>
-      <p>{project.conversion.unresolved}</p>
-      <p class="card-note">{project.conversion.unresolved_gate}</p>
+      <p>{authorityAccount?.unresolved ?? project.conversion.unresolved}</p>
+      <p class="card-note">{authorityReceipt?.next_action ?? project.conversion.unresolved_gate}</p>
     </article>
     <article>
       <div class="eyebrow">Exact next artifact</div>
       <h2>What can move this file.</h2>
-      <p>{project.conversion.exact_next_artifact}</p>
-      {project.conversion.next_check_date && <MetaPill label={`Next check ${project.conversion.next_check_date}`} tone="urgency" />}
+      <p>{authorityReceipt?.next_action ?? project.conversion.exact_next_artifact}</p>
+      {(authorityReceipt?.next_check_date ?? project.conversion.next_check_date) && <MetaPill label={`Next check ${authorityReceipt?.next_check_date ?? project.conversion.next_check_date}`} tone="urgency" />}
       {project.conversion.reopening_trigger && <p class="card-note">Trigger: {project.conversion.reopening_trigger}</p>}
     </article>
   </section>

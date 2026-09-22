@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "as_of_date": "2026-09-15",
+  "boundary": "Narrow lexical-screen dispositions only. These are not full metadata reviews, claim verification, source acceptance, feed decisions or launch approval.",
+  "records": [
+    {
+      "id": "research-doc-56c-current-applications-drivers-1",
+      "source_file": "research-documents/234-56c-current-applications-drivers-1.json",
+      "reviewed_source_sha256": "1ab9e78d9ec605f1d2af5bc04975abfdfbb5feb2e0471b03919dab6029267dfe",
+      "review_date": "2026-09-15",
+      "disposition": "Physical manufacturing terminology — not an FTFN synthetic method",
+      "reason": "The fixtures are physical motor-manufacturing tooling in the company's own engineering description. The term does not identify a synthetic FTFN test. Company performance claims and historical document-type metadata are not independently cleared.",
+      "official_source_checked": "https://www.currentapps.com/",
+      "source_check_date": "2026-09-15",
+      "source_check_scope": "Readable company page, engineering/manufacturing and tooling passage; narrow terminology check only."
+    },
+    {
+      "id": "research-doc-56y-hanford-222s-lab-turnaround",
+      "source_file": "research-documents/582-56y-hanford-222s-lab-turnaround.json",
+      "reviewed_source_sha256": "1b1f93b9197e26ca24ba84b87680bc715fb2410bdbb6d658cab350465d3c84d8",
+      "review_date": "2026-09-15",
+      "disposition": "Laboratory operating workflow — not an FTFN synthetic method",
+      "reason": "The DOE article describes laboratory sampling, analysis and modernization. Workflow denotes that operating context, not an FTFN harness. This check does not independently verify reported performance, causation or a material balance.",
+      "official_source_checked": "https://www.energy.gov/em/articles/modernization-efforts-lead-hanfords-222-s-lab-cut-turnaround-times-half",
+      "source_check_date": "2026-09-15",
+      "source_check_scope": "Readable DOE May 19, 2026 article; narrow operating-workflow distinction only."
+    }
+  ]
+}

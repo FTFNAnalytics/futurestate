@@ -1,4 +1,5 @@
 ---
+import {projectResearchDocument} from "../../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../components/layout/BaseLayout.astro";
 import MetaPill from "../../components/ui/MetaPill.astro";
@@ -14,7 +15,7 @@ const readerPathways = (await getCollection("readerPathways")).sort((a, b) =>
   a.data.title.localeCompare(b.data.title)
 );
 const evidenceGaps = await getCollection("evidenceGaps");
-const researchDocuments = await getCollection("researchDocuments");
+const researchDocuments = await getCollection("researchDocuments").then(records => records.map(projectResearchDocument));
 const dependencyMaps = (await getCollection("dependencyMaps")).sort((a, b) =>
   a.data.title.localeCompare(b.data.title)
 );
@@ -81,12 +82,12 @@ const atlasSections = [
     title: "Research Collections",
     href: "/research/",
     count: researchDocuments.length,
-    summary: "Reviewed primary-document sets with per-document summaries, evidence limits, source profiles, topic links, and downloadable captures."
+    summary: "Research collections distinguish external-source accounts, FTFN analyses and methods, and open dockets, with preserved source links and evidence limits."
   },
   {
     title: "Data Exports",
     href: "/data/",
-    count: 13,
+    count: null,
     summary: "Stable static JSON contracts for the publication corpus, evidence operations, named conversion files, qualification packets, and return envelopes."
   },
   {
@@ -162,7 +163,7 @@ const atlasSections = [
       {atlasSections.map((section) => (
         <article class="record-card">
           <div class="meta-row">
-            <MetaPill label={`${section.count} records`} tone={section.count > 0 ? "possibility" : "default"} />
+            {section.count!==null&&<MetaPill label={`${section.count} records`} tone={section.count > 0 ? "possibility" : "default"} />}
           </div>
           <h3><a href={section.href}>{section.title}</a></h3>
           <p>{section.summary}</p>
@@ -177,8 +178,9 @@ const atlasSections = [
         <div class="eyebrow">Reader Pathways</div>
         <h2>Follow a question through the evidence stack.</h2>
         <p>
-          Each pathway starts with Published records, keeps unresolved stages
-          visible, and names the next authoritative evidence needed.
+          Each pathway connects existing records, keeps unresolved stages visible,
+          and names the next authoritative evidence needed. Linked historical methods
+          and dockets are not external developments or accepted outcomes.
         </p>
       </div>
     </div>
@@ -192,13 +194,14 @@ const atlasSections = [
           .filter(Boolean);
 
         return (
-          <article class="record-card">
+          <article class="record-card" id={`pathway-${pathway.data.slug}`} data-overview-card={pathway.data.id}>
             <div class="meta-row">
-              <MetaPill label={`${pathway.data.signal_ids.length} Published signals`} tone="possibility" />
-              <MetaPill label={`${pathway.data.evidence_gap_ids.length} open gaps`} tone="urgency" />
+              <MetaPill label={`${pathway.data.signal_ids.length} linked signal records`} tone="possibility" />
+              <MetaPill label={`${pathway.data.evidence_gap_ids.length} linked evidence gaps`} tone="urgency" />
             </div>
-            <h3>{pathway.data.title}</h3>
-            <p>{pathway.data.current_state_summary}</p>
+            <h3><a href={`/pathways/${pathway.data.slug}/`}>{pathway.data.title}</a></h3>
+            <p>{pathway.data.summary}</p>
+            <p>Open the full pathway for dated evidence decisions, historical records and current holds.</p>
             <div class="meta-row">
               {pathwayTopics.map((topic) => (
                 <a class="inline-link" href={`/atlas/topics/${topic?.data.slug}/`}>{topic?.data.name}</a>
@@ -282,16 +285,17 @@ const atlasSections = [
       <div class="section-heading section-heading--stacked">
         <div>
           <div class="eyebrow">Current Map Surface</div>
-          <h2>Small enough to stay qualitative.</h2>
+          <h2>A bounded introduction to the map collection.</h2>
         </div>
         <p>
+          Showing six map introductions; the complete paginated archive is linked above.
           Current map topics: {dependencyMapTopics.join(", ")}.
           Current map types: {dependencyMapTypes.join(", ")}.
         </p>
       </div>
       <div class="source-list">
-        {dependencyMaps.map((dependencyMap) => (
-          <article class="source-row">
+        {dependencyMaps.slice(0,6).map((dependencyMap) => (
+          <article class="source-row" data-overview-card={dependencyMap.data.id}>
             <div class="meta-row">
               <MetaPill label={dependencyMap.data.map_type} />
               <MetaPill label={dependencyMap.data.record_status} tone={getStatusTone(dependencyMap.data.record_status)} />
@@ -310,16 +314,17 @@ const atlasSections = [
       <div class="section-heading section-heading--stacked">
         <div>
           <div class="eyebrow">Entity Layer</div>
-          <h2>Organizations and technologies now have routes.</h2>
+          <a class="inline-link" href="/atlas/organizations/">All organization profiles</a>
+          <h2>Who shapes these capabilities?</h2>
         </div>
         <p>
-          Phase 08 exposes the existing organization and technology seed records
-          without inventing relationships the content model does not support.
+          These introductions link to existing profiles. Shared-source and topic
+          relationships do not establish organizational involvement or deployment.
         </p>
       </div>
       <div class="source-list">
-        {organizations.map((organization) => (
-          <article class="source-row">
+        {organizations.slice(0,3).map((organization) => (
+          <article class="source-row" data-overview-card={organization.data.id}>
             <h3><a href={`/atlas/organizations/${organization.data.slug}/`}>{organization.data.name}</a></h3>
             <p>{organization.data.summary}</p>
             <div class="meta-row">
@@ -335,6 +340,7 @@ const atlasSections = [
       <div class="section-heading section-heading--stacked">
         <div>
           <div class="eyebrow">Technology Layer</div>
+          <a class="inline-link" href="/atlas/technologies/">All technology profiles</a>
           <h2>Capabilities stay tied to dependencies.</h2>
         </div>
         <p>
@@ -343,8 +349,8 @@ const atlasSections = [
         </p>
       </div>
       <div class="source-list">
-        {technologies.map((technology) => (
-          <article class="source-row">
+        {technologies.slice(0,3).map((technology) => (
+          <article class="source-row" data-overview-card={technology.data.id}>
             <h3><a href={`/atlas/technologies/${technology.data.slug}/`}>{technology.data.name}</a></h3>
             <p>{technology.data.summary}</p>
             <div class="meta-row">

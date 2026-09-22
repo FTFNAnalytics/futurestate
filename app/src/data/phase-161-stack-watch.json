@@ -1,0 +1,1744 @@
+{
+  "schema_version": "1.0",
+  "phase": 161,
+  "program_id": "FTFN-PHASE-161",
+  "dataset": "phase_161_stack_watch",
+  "title": "Stack Watch",
+  "effective_date": "2026-08-31",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Publish twenty-four current official-source packets with source-bound supported claims, system implications, and excluded inferences.",
+  "record_scope": "Append-only Phase 161 record over the immutable Phase 145–156 v1-RC baseline.",
+  "publication_boundaries": [
+    "The Phase 157–164 overlay adds operating plans and bounded content without rewriting the immutable Phase 145–156 release candidate.",
+    "Future September checks, desk decisions, edition inputs, publication receipts, and month-end findings remain null until their lawful dates.",
+    "Alternative official artifacts remain candidate pointers unless a dated authorized adjudication admits them; discovery is not evidence admission.",
+    "No project stage, longitudinal observation, outcome, causal finding, score, rank, owner decision, repository publication, hosted deployment, or v1 promotion is inferred."
+  ],
+  "routes": {
+    "hub": "/review/v1month/stack-watch/",
+    "public_export": "/data/phase-161-stack-watch.json"
+  },
+  "counts": {
+    "stack_watch_packets": 24,
+    "stack_lanes": 8,
+    "topic_links": 58,
+    "project_links": 34,
+    "place_links": 30,
+    "claim_blocks": 72,
+    "publication_ready_bounded_syntheses": 24,
+    "alternative_candidates_used_as_claim_support": 0
+  },
+  "stack_watch_packets": [
+    {
+      "stack_watch_packet_id": "161-PACKET-001",
+      "slug": "north-american-peak-demand-forecast-2025-ltra",
+      "title": "NERC 2025 Long-Term Reliability Assessment",
+      "stack_lane": "Power and grid",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-02-24",
+      "data_through": "Mid-2025 planner submissions",
+      "evidence_type": "Planner forecast and adequacy assessment",
+      "publisher": "North American Electric Reliability Corporation",
+      "official_url": "https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf",
+      "source_ids": [
+        "source-161-nerc-ltra-2025"
+      ],
+      "source_semantic_digest": "0904ca616daa5d3da1ef06e31ced7bb7b4866ddcd0c9f7ecbc520612e19438b1",
+      "topic_ids": [
+        "topic-energy",
+        "topic-chips-and-compute",
+        "topic-policy-and-standards"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-003"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-003"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+        "146-ALT-TSMC-SEC-20F-2025"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "NERC reports that assessment-area summer peak demand is forecast to rise by more than 224 GW from 2025 through 2035 and winter peak demand by about 245 GW. The assessment attributes most projected growth to data centers and distinguishes 71 GW of approved summer-capacity growth from 266 GW of prospective additions. This record sits in the Power and grid watch lane and is linked to Energy, Chips and Compute, Policy and Standards. Named project context includes Northern Virginia Golden-Mars and GS-5 large-load trail. Receiving-place context includes Northern Virginia Data Center Corridor.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-001-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "NERC reports that assessment-area summer peak demand is forecast to rise by more than 224 GW from 2025 through 2035 and winter peak demand by about 245 GW. The assessment attributes most projected growth to data centers and distinguishes 71 GW of approved summer-capacity growth from 266 GW of prospective additions.",
+          "source_ids": [
+            "source-161-nerc-ltra-2025"
+          ],
+          "source_semantic_digest": "0904ca616daa5d3da1ef06e31ced7bb7b4866ddcd0c9f7ecbc520612e19438b1",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-001-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded planner forecast and adequacy assessment for the Power and grid evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nerc-ltra-2025"
+          ],
+          "source_semantic_digest": "0904ca616daa5d3da1ef06e31ced7bb7b4866ddcd0c9f7ecbc520612e19438b1",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-001-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "The figures are forecasts assembled from mid-2025 planner submissions. They are not observed load, proof that each data-center proposal will connect, or proof of a future capacity shortfall.",
+          "source_ids": [
+            "source-161-nerc-ltra-2025"
+          ],
+          "source_semantic_digest": "0904ca616daa5d3da1ef06e31ced7bb7b4866ddcd0c9f7ecbc520612e19438b1",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this planner forecast and adequacy assessment.",
+      "route": "/review/v1month/stack-watch/north-american-peak-demand-forecast-2025-ltra/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-002",
+      "slug": "us-interconnection-queue-snapshot-2026",
+      "title": "Queued Up 2026",
+      "stack_lane": "Power and grid",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-06",
+      "data_through": "2025-12-31",
+      "evidence_type": "Official laboratory queue dataset and report",
+      "publisher": "Lawrence Berkeley National Laboratory",
+      "official_url": "https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      "source_ids": [
+        "source-161-lbnl-queued-up-2026"
+      ],
+      "source_semantic_digest": "f8867183ae61efda909df962caabed9e061ed19309e280372a264c5f56a12ba4",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-013",
+        "136-CHRONICLE-014"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-012",
+        "137-LEDGER-013",
+        "137-LEDGER-014",
+        "137-LEDGER-015"
+      ],
+      "alternative_candidate_ids": [],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "Berkeley Lab identifies about 8,200 active projects representing 1,312 GW of generation and 749 GW of storage at the end of 2025. About 549 GW had a draft or executed interconnection agreement without commercial operation, and the median request-to-operation time exceeded five years for projects completed in 2025. This record sits in the Power and grid watch lane and is linked to Energy, Climate. Named project context includes Manatee Battery Energy Storage Center, Moss Landing battery safety and operation, Gateway battery storage, Hornsdale Power Reserve, Victoria Big Battery, Dalrymple grid battery. Receiving-place context includes South Australia grid storage, Victoria grid storage, Florida utility storage, California battery safety.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-002-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "Berkeley Lab identifies about 8,200 active projects representing 1,312 GW of generation and 749 GW of storage at the end of 2025. About 549 GW had a draft or executed interconnection agreement without commercial operation, and the median request-to-operation time exceeded five years for projects completed in 2025.",
+          "source_ids": [
+            "source-161-lbnl-queued-up-2026"
+          ],
+          "source_semantic_digest": "f8867183ae61efda909df962caabed9e061ed19309e280372a264c5f56a12ba4",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-002-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded official laboratory queue dataset and report for the Power and grid evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-lbnl-queued-up-2026"
+          ],
+          "source_semantic_digest": "f8867183ae61efda909df962caabed9e061ed19309e280372a264c5f56a12ba4",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-002-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Queue records cover transmission-level requests and exclude distribution and behind-the-meter projects. A queue entry or interconnection agreement is not a completed plant, an operating observation, or a forecast.",
+          "source_ids": [
+            "source-161-lbnl-queued-up-2026"
+          ],
+          "source_semantic_digest": "f8867183ae61efda909df962caabed9e061ed19309e280372a264c5f56a12ba4",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official laboratory queue dataset and report.",
+      "route": "/review/v1month/stack-watch/us-interconnection-queue-snapshot-2026/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-003",
+      "slug": "us-battery-capacity-june-2026",
+      "title": "Battery storage capacity averaged 70% annual growth",
+      "stack_lane": "Power and grid",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-08-07",
+      "data_through": "2026-06-30",
+      "evidence_type": "Observed nameplate-capacity summary plus planned additions",
+      "publisher": "U.S. Energy Information Administration",
+      "official_url": "https://www.eia.gov/todayinenergy/detail.php?id=67925",
+      "source_ids": [
+        "source-161-eia-battery-capacity-aug-2026"
+      ],
+      "source_semantic_digest": "4ae8d0d286f84812dc68dbc3698376158d6527c006db0040f4dcc8849d189aa1",
+      "topic_ids": [
+        "topic-energy"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-011"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-014",
+        "137-LEDGER-015"
+      ],
+      "alternative_candidate_ids": [],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "EIA reports 43.6 GW of operational utility-scale battery nameplate capacity at year-end 2025 and another 8.3 GW added in the first half of 2026, bringing the total near 52 GW. The release identifies Manatee as 409 MW of battery capacity paired with 75 MW of solar capacity. This record sits in the Power and grid watch lane and is linked to Energy. Named project context includes Manatee Battery Energy Storage Center, Moss Landing battery safety and operation, Gateway battery storage. Receiving-place context includes Florida utility storage, California battery safety.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-003-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "EIA reports 43.6 GW of operational utility-scale battery nameplate capacity at year-end 2025 and another 8.3 GW added in the first half of 2026, bringing the total near 52 GW. The release identifies Manatee as 409 MW of battery capacity paired with 75 MW of solar capacity.",
+          "source_ids": [
+            "source-161-eia-battery-capacity-aug-2026"
+          ],
+          "source_semantic_digest": "4ae8d0d286f84812dc68dbc3698376158d6527c006db0040f4dcc8849d189aa1",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-003-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded observed nameplate-capacity summary plus planned additions for the Power and grid evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-eia-battery-capacity-aug-2026"
+          ],
+          "source_semantic_digest": "4ae8d0d286f84812dc68dbc3698376158d6527c006db0040f4dcc8849d189aa1",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-003-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Nameplate power does not establish energy duration, availability, dispatch, safety, or project outcome. The additional capacity reported for 2026–2028 is operator planning, not delivered operation.",
+          "source_ids": [
+            "source-161-eia-battery-capacity-aug-2026"
+          ],
+          "source_semantic_digest": "4ae8d0d286f84812dc68dbc3698376158d6527c006db0040f4dcc8849d189aa1",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this observed nameplate-capacity summary plus planned additions.",
+      "route": "/review/v1month/stack-watch/us-battery-capacity-june-2026/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-004",
+      "slug": "tsmc-us-investment-announcement-july-2026",
+      "title": "Commerce announces additional TSMC U.S. investment commitment",
+      "stack_lane": "Chips and compute",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-07-16",
+      "data_through": "2026-07-16",
+      "evidence_type": "Government announcement of company commitment",
+      "publisher": "National Institute of Standards and Technology",
+      "official_url": "https://www.nist.gov/news-events/news/2026/07/trump-administration-secures-additional-100-billion-us-semiconductor",
+      "source_ids": [
+        "source-161-nist-tsmc-investment-july-2026"
+      ],
+      "source_semantic_digest": "a4ae71fcb14179d328eb3e45f0cff1ad70fb808779d063912cd074d7f329d17d",
+      "topic_ids": [
+        "topic-chips-and-compute",
+        "topic-advanced-manufacturing"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-005"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+        "146-ALT-TSMC-SEC-20F-2025",
+        "146-ALT-GAO-F15EX-2025",
+        "146-ALT-NIST-MEP-AMPHENOL-2025",
+        "146-ALT-NIST-MEP-FY2024-RESULTS"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "Commerce announced an incremental $100 billion TSMC U.S. commitment, bringing announced U.S. investment to $265 billion and twelve proposed leading-edge manufacturing and packaging facilities. This record sits in the Chips and compute watch lane and is linked to Chips and Compute, Advanced Manufacturing. Named project context includes TSMC Arizona campus. Receiving-place context includes U.S. Southwest Chip Corridor.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-004-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "Commerce announced an incremental $100 billion TSMC U.S. commitment, bringing announced U.S. investment to $265 billion and twelve proposed leading-edge manufacturing and packaging facilities.",
+          "source_ids": [
+            "source-161-nist-tsmc-investment-july-2026"
+          ],
+          "source_semantic_digest": "a4ae71fcb14179d328eb3e45f0cff1ad70fb808779d063912cd074d7f329d17d",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-004-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded government announcement of company commitment for the Chips and compute evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nist-tsmc-investment-july-2026"
+          ],
+          "source_semantic_digest": "a4ae71fcb14179d328eb3e45f0cff1ad70fb808779d063912cd074d7f329d17d",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-004-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "This is an investment announcement, not a facility-level award, construction, qualification, production, or customer-acceptance record. It must not be merged with the existing CHIPS award or Phoenix fab-stage evidence.",
+          "source_ids": [
+            "source-161-nist-tsmc-investment-july-2026"
+          ],
+          "source_semantic_digest": "a4ae71fcb14179d328eb3e45f0cff1ad70fb808779d063912cd074d7f329d17d",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this government announcement of company commitment.",
+      "route": "/review/v1month/stack-watch/tsmc-us-investment-announcement-july-2026/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-005",
+      "slug": "compute-supply-chain-rd-lois-july-2026",
+      "title": "Commerce compute-supply-chain R&D letters of intent",
+      "stack_lane": "Chips and compute",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-07-29",
+      "data_through": "2026-07-29",
+      "evidence_type": "Non-final funding letters of intent",
+      "publisher": "National Institute of Standards and Technology",
+      "official_url": "https://www.nist.gov/news-events/news/2026/07/department-commerce-announces-letters-intent-7-companies-874-million",
+      "source_ids": [
+        "source-161-nist-compute-supply-chain-lois-july-2026"
+      ],
+      "source_semantic_digest": "0584c9d4dd335219a98a4addd3f908e3441def69c6902caadf1a40d6ba1afa4e",
+      "topic_ids": [
+        "topic-chips-and-compute",
+        "topic-ai-for-science",
+        "topic-advanced-manufacturing"
+      ],
+      "project_chronicle_ids": [],
+      "place_ledger_ids": [],
+      "alternative_candidate_ids": [
+        "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+        "146-ALT-TSMC-SEC-20F-2025",
+        "146-ALT-DOE-FY24-PERFORMANCE",
+        "146-ALT-NSF-FY25-PERFORMANCE",
+        "146-ALT-NSF-NAIRR-TWO-YEAR",
+        "146-ALT-GAO-F15EX-2025",
+        "146-ALT-NIST-MEP-AMPHENOL-2025",
+        "146-ALT-NIST-MEP-FY2024-RESULTS"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "Commerce announced seven letters of intent totaling up to $874 million across photonics, memory, packaging, substrates, materials, provenance, and alternative compute, including proposed amounts of $300 million for GlobalFoundries, $245 million for Kepler, and $140 million for Multibeam. This record sits in the Chips and compute watch lane and is linked to Chips and Compute, AI for Science, Advanced Manufacturing. No current named project is treated as the subject of this system-level record. No place-level outcome is inferred.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-005-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "Commerce announced seven letters of intent totaling up to $874 million across photonics, memory, packaging, substrates, materials, provenance, and alternative compute, including proposed amounts of $300 million for GlobalFoundries, $245 million for Kepler, and $140 million for Multibeam.",
+          "source_ids": [
+            "source-161-nist-compute-supply-chain-lois-july-2026"
+          ],
+          "source_semantic_digest": "0584c9d4dd335219a98a4addd3f908e3441def69c6902caadf1a40d6ba1afa4e",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-005-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded non-final funding letters of intent for the Chips and compute evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nist-compute-supply-chain-lois-july-2026"
+          ],
+          "source_semantic_digest": "0584c9d4dd335219a98a4addd3f908e3441def69c6902caadf1a40d6ba1afa4e",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-005-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "The amounts are non-final, stated as up to, and subject to diligence and approval. The letters establish neither disbursement nor technical performance.",
+          "source_ids": [
+            "source-161-nist-compute-supply-chain-lois-july-2026"
+          ],
+          "source_semantic_digest": "0584c9d4dd335219a98a4addd3f908e3441def69c6902caadf1a40d6ba1afa4e",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this non-final funding letters of intent.",
+      "route": "/review/v1month/stack-watch/compute-supply-chain-rd-lois-july-2026/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-006",
+      "slug": "us-data-center-electricity-use-scenarios",
+      "title": "2024 United States Data Center Energy Usage Report",
+      "stack_lane": "Chips and compute",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2024-12-19",
+      "data_through": "2023 observed; 2028 scenarios",
+      "evidence_type": "National estimate and scenario study",
+      "publisher": "Lawrence Berkeley National Laboratory",
+      "official_url": "https://seta.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report",
+      "source_ids": [
+        "source-161-lbnl-data-center-energy-usage-2024"
+      ],
+      "source_semantic_digest": "042abedcac26b70e35dd7cdcdc3eb54c63a24bbce56075b48b136983894a12a3",
+      "topic_ids": [
+        "topic-chips-and-compute",
+        "topic-energy",
+        "topic-water"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-003"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-003"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+        "146-ALT-TSMC-SEC-20F-2025"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "The DOE-requested Berkeley Lab study estimates U.S. data-center electricity use at 176 TWh, or 4.4% of national consumption, in 2023. Its scenario range reaches 325–580 TWh, or 6.7%–12.0%, in 2028. This record sits in the Chips and compute watch lane and is linked to Chips and Compute, Energy, Water. Named project context includes Northern Virginia Golden-Mars and GS-5 large-load trail. Receiving-place context includes Northern Virginia Data Center Corridor.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-006-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "The DOE-requested Berkeley Lab study estimates U.S. data-center electricity use at 176 TWh, or 4.4% of national consumption, in 2023. Its scenario range reaches 325–580 TWh, or 6.7%–12.0%, in 2028.",
+          "source_ids": [
+            "source-161-lbnl-data-center-energy-usage-2024"
+          ],
+          "source_semantic_digest": "042abedcac26b70e35dd7cdcdc3eb54c63a24bbce56075b48b136983894a12a3",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-006-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded national estimate and scenario study for the Chips and compute evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-lbnl-data-center-energy-usage-2024"
+          ],
+          "source_semantic_digest": "042abedcac26b70e35dd7cdcdc3eb54c63a24bbce56075b48b136983894a12a3",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-006-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "The 2028 range is scenario-based and sensitive to shipments, operating power, utilization, and cooling assumptions. It is not a forecast, a Northern Virginia allocation, or a local water conclusion.",
+          "source_ids": [
+            "source-161-lbnl-data-center-energy-usage-2024"
+          ],
+          "source_semantic_digest": "042abedcac26b70e35dd7cdcdc3eb54c63a24bbce56075b48b136983894a12a3",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this national estimate and scenario study.",
+      "route": "/review/v1month/stack-watch/us-data-center-electricity-use-scenarios/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-007",
+      "slug": "colorado-river-2027-operations-decision",
+      "title": "Post-2026 Colorado River operations decision",
+      "stack_lane": "Water",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-08-21",
+      "data_through": "2026-08-21 modeled conditions",
+      "evidence_type": "Federal reservoir operating decision and modeled condition",
+      "publisher": "U.S. Bureau of Reclamation",
+      "official_url": "https://www.usbr.gov/newsroom/news-release/5392",
+      "source_ids": [
+        "source-161-usbr-colorado-river-2027-decision"
+      ],
+      "source_semantic_digest": "a4655ea8414a4066c3feacc1e274678149884dc4f286ed25bbfcd8da21929ca6",
+      "topic_ids": [
+        "topic-water",
+        "topic-climate",
+        "topic-policy-and-standards"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-005"
+      ],
+      "alternative_candidate_ids": [],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "Reclamation's final framework places the expected start of water year 2027 for Lake Powell between elevations 3,510 and 3,540 feet with an expected release of 6.0–7.0 million acre-feet, while reporting record-low Powell and Mead elevations in August 2026. This record sits in the Water watch lane and is linked to Water, Climate, Policy and Standards. Named project context includes TSMC Arizona campus. Receiving-place context includes U.S. Southwest Chip Corridor.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-007-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "Reclamation's final framework places the expected start of water year 2027 for Lake Powell between elevations 3,510 and 3,540 feet with an expected release of 6.0–7.0 million acre-feet, while reporting record-low Powell and Mead elevations in August 2026.",
+          "source_ids": [
+            "source-161-usbr-colorado-river-2027-decision"
+          ],
+          "source_semantic_digest": "a4655ea8414a4066c3feacc1e274678149884dc4f286ed25bbfcd8da21929ca6",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-007-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded federal reservoir operating decision and modeled condition for the Water evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-usbr-colorado-river-2027-decision"
+          ],
+          "source_semantic_digest": "a4655ea8414a4066c3feacc1e274678149884dc4f286ed25bbfcd8da21929ca6",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-007-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Reservoir operating rules and modeled conditions are not a municipal allocation, industrial delivery, shortage impact, or project outcome. The Mexico treaty process remains separate.",
+          "source_ids": [
+            "source-161-usbr-colorado-river-2027-decision"
+          ],
+          "source_semantic_digest": "a4655ea8414a4066c3feacc1e274678149884dc4f286ed25bbfcd8da21929ca6",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal reservoir operating decision and modeled condition.",
+      "route": "/review/v1month/stack-watch/colorado-river-2027-operations-decision/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-008",
+      "slug": "phoenix-ama-version-3-groundwater-projection",
+      "title": "Phoenix AMA Version 3 groundwater-model technical memorandum",
+      "stack_lane": "Water",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-06",
+      "data_through": "Observed inputs through 2023; model horizon 2024–2123",
+      "evidence_type": "Regional groundwater model",
+      "publisher": "Arizona Department of Water Resources",
+      "official_url": "https://infoshare.azwater.gov/docushare/dsweb/Get/Document-132975/V3_PhxAMA_Update_Memo.pdf",
+      "source_ids": [
+        "source-161-adwr-phoenix-ama-v3-june-2026"
+      ],
+      "source_semantic_digest": "cf3f529d6ae93f248f56410251df8826a5fd35ce48ab97e14ab2092b4ce1de34",
+      "topic_ids": [
+        "topic-water",
+        "topic-chips-and-compute"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-005"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+        "146-ALT-TSMC-SEC-20F-2025"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "The Phoenix AMA Version 3 model produces 2,514,500 acre-feet of unmet demand over its 100-year horizon, including 836,500 acre-feet in AWS, municipal, and long-term-storage-credit sectors, and models average annual storage loss of 503,800 acre-feet. This record sits in the Water watch lane and is linked to Water, Chips and Compute. Named project context includes TSMC Arizona campus. Receiving-place context includes U.S. Southwest Chip Corridor.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-008-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "The Phoenix AMA Version 3 model produces 2,514,500 acre-feet of unmet demand over its 100-year horizon, including 836,500 acre-feet in AWS, municipal, and long-term-storage-credit sectors, and models average annual storage loss of 503,800 acre-feet.",
+          "source_ids": [
+            "source-161-adwr-phoenix-ama-v3-june-2026"
+          ],
+          "source_semantic_digest": "cf3f529d6ae93f248f56410251df8826a5fd35ce48ab97e14ab2092b4ce1de34",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-008-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded regional groundwater model for the Water evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-adwr-phoenix-ama-v3-june-2026"
+          ],
+          "source_semantic_digest": "cf3f529d6ae93f248f56410251df8826a5fd35ce48ab97e14ab2092b4ce1de34",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-008-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "This is a regional model updated with observations only through 2023. It is not a prediction for a particular well, an observed future depletion series, or a facility water balance.",
+          "source_ids": [
+            "source-161-adwr-phoenix-ama-v3-june-2026"
+          ],
+          "source_semantic_digest": "cf3f529d6ae93f248f56410251df8826a5fd35ce48ab97e14ab2092b4ce1de34",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this regional groundwater model.",
+      "route": "/review/v1month/stack-watch/phoenix-ama-version-3-groundwater-projection/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-009",
+      "slug": "wifia-portfolio-2025",
+      "title": "WIFIA 2025 Annual Report",
+      "stack_lane": "Water",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-03",
+      "data_through": "2025-12-31",
+      "evidence_type": "Federal financing-program annual report",
+      "publisher": "U.S. Environmental Protection Agency",
+      "official_url": "https://www.epa.gov/system/files/documents/2026-03/wifia-2025-annual-report.pdf",
+      "source_ids": [
+        "source-161-epa-wifia-2025-annual-report"
+      ],
+      "source_semantic_digest": "ff7460a741c484a88ee1743a7c2107b7e62b159ee2085e6c1b7c57666870d96d",
+      "topic_ids": [
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "project_chronicle_ids": [],
+      "place_ledger_ids": [],
+      "alternative_candidate_ids": [],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "EPA reports that WIFIA closed $900 million in loans supporting $1.8 billion of projects during 2025 and made 333 disbursements totaling nearly $3.7 billion. Through December 2025 it reports 147 closed loans and $22 billion of financing associated with $49 billion of infrastructure investment. This record sits in the Water watch lane and is linked to Water, Finance and Risk, Policy and Standards. No current named project is treated as the subject of this system-level record. No place-level outcome is inferred.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-009-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "EPA reports that WIFIA closed $900 million in loans supporting $1.8 billion of projects during 2025 and made 333 disbursements totaling nearly $3.7 billion. Through December 2025 it reports 147 closed loans and $22 billion of financing associated with $49 billion of infrastructure investment.",
+          "source_ids": [
+            "source-161-epa-wifia-2025-annual-report"
+          ],
+          "source_semantic_digest": "ff7460a741c484a88ee1743a7c2107b7e62b159ee2085e6c1b7c57666870d96d",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-009-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded federal financing-program annual report for the Water evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-epa-wifia-2025-annual-report"
+          ],
+          "source_semantic_digest": "ff7460a741c484a88ee1743a7c2107b7e62b159ee2085e6c1b7c57666870d96d",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-009-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Portfolio financing, disbursements, reported jobs, and estimated borrower savings do not establish construction completion, acceptance, operation, or local water outcomes.",
+          "source_ids": [
+            "source-161-epa-wifia-2025-annual-report"
+          ],
+          "source_semantic_digest": "ff7460a741c484a88ee1743a7c2107b7e62b159ee2085e6c1b7c57666870d96d",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal financing-program annual report.",
+      "route": "/review/v1month/stack-watch/wifia-portfolio-2025/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-010",
+      "slug": "us-road-fatalities-estimate-2025",
+      "title": "Early estimate of 2025 motor-vehicle traffic fatalities",
+      "stack_lane": "Mobility and aviation",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-04-01",
+      "data_through": "2025",
+      "evidence_type": "National early estimate",
+      "publisher": "National Highway Traffic Safety Administration",
+      "official_url": "https://www.nhtsa.gov/press-releases/traffic-deaths-2025-early-estimates-2024-annual",
+      "source_ids": [
+        "source-161-nhtsa-road-fatalities-2025-estimate"
+      ],
+      "source_semantic_digest": "a587333ce607a56beafca9e59a7c44d4eba5c0811497d6fa4653c849daf5d96b",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-human-futures"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-008"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-006"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-CPUC-AV-QUARTERLY-2026",
+        "146-ALT-NHTSA-SGO-2026",
+        "146-ALT-FTA-NTD-2026"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "NHTSA estimated 36,640 traffic fatalities in 2025, 6.7% below 2024, with a rate of 1.10 fatalities per 100 million vehicle-miles traveled. This record sits in the Mobility and aviation watch lane and is linked to Mobility, Human Futures. Named project context includes Waymo California fared driverless service. Receiving-place context includes California autonomous mobility.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-010-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "NHTSA estimated 36,640 traffic fatalities in 2025, 6.7% below 2024, with a rate of 1.10 fatalities per 100 million vehicle-miles traveled.",
+          "source_ids": [
+            "source-161-nhtsa-road-fatalities-2025-estimate"
+          ],
+          "source_semantic_digest": "a587333ce607a56beafca9e59a7c44d4eba5c0811497d6fa4653c849daf5d96b",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-010-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded national early estimate for the Mobility and aviation evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nhtsa-road-fatalities-2025-estimate"
+          ],
+          "source_semantic_digest": "a587333ce607a56beafca9e59a7c44d4eba5c0811497d6fa4653c849daf5d96b",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-010-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Early estimates remain subject to final FARS records. National movement cannot be attributed to enforcement, vehicle technology, autonomy, or an individual operator.",
+          "source_ids": [
+            "source-161-nhtsa-road-fatalities-2025-estimate"
+          ],
+          "source_semantic_digest": "a587333ce607a56beafca9e59a7c44d4eba5c0811497d6fa4653c849daf5d96b",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this national early estimate.",
+      "route": "/review/v1month/stack-watch/us-road-fatalities-estimate-2025/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-011",
+      "slug": "faa-controller-workforce-2026-plan",
+      "title": "Air Traffic Controller Workforce Plan 2026–2028",
+      "stack_lane": "Mobility and aviation",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-06-01",
+      "data_through": "2026-04",
+      "evidence_type": "Federal workforce plan and observed hiring account",
+      "publisher": "Federal Aviation Administration",
+      "official_url": "https://www.faa.gov/sites/faa.gov/files/Air-Traffic-Controller-Workforce-Plan-2026-2028.pdf",
+      "source_ids": [
+        "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028"
+      ],
+      "source_semantic_digest": "01644b4062b07d156f8b6154a5bd2390b28ed7dceb2e843cfb395062cf031504",
+      "topic_ids": [
+        "topic-aviation",
+        "topic-human-futures"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-004"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-BTS-ASQP-2026",
+        "146-ALT-BTS-TD40-2026",
+        "146-ALT-BTS-TRANSTATS-ONTIME",
+        "146-ALT-BTS-T100",
+        "146-ALT-FAA-GA-SAFETY-2025",
+        "146-ALT-NTSB-AVIATION-STATS"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "FAA reports 2,028 controller trainees hired in FY2025 against 1,460 total losses, a net gain of 568, and plans 2,200, 2,300, and 2,400 hires for FY2026–2028. It separately reports about 11,000 certified controllers and 4,000 in training against a 12,563-controller target. This record sits in the Mobility and aviation watch lane and is linked to Aviation, Human Futures. Named project context includes Space Coast authorization-to-mission stack. Receiving-place context includes Florida Space Coast Launch Corridor.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-011-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "FAA reports 2,028 controller trainees hired in FY2025 against 1,460 total losses, a net gain of 568, and plans 2,200, 2,300, and 2,400 hires for FY2026–2028. It separately reports about 11,000 certified controllers and 4,000 in training against a 12,563-controller target.",
+          "source_ids": [
+            "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028"
+          ],
+          "source_semantic_digest": "01644b4062b07d156f8b6154a5bd2390b28ed7dceb2e843cfb395062cf031504",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-011-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded federal workforce plan and observed hiring account for the Mobility and aviation evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028"
+          ],
+          "source_semantic_digest": "01644b4062b07d156f8b6154a5bd2390b28ed7dceb2e843cfb395062cf031504",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-011-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Hiring is not certification or facility deployment. Planned hiring and modernization remain appropriations-dependent, and workforce categories cannot be added interchangeably.",
+          "source_ids": [
+            "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028"
+          ],
+          "source_semantic_digest": "01644b4062b07d156f8b6154a5bd2390b28ed7dceb2e843cfb395062cf031504",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal workforce plan and observed hiring account.",
+      "route": "/review/v1month/stack-watch/faa-controller-workforce-2026-plan/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-012",
+      "slug": "amtrak-fy2025-ridership",
+      "title": "Amtrak FY2025 year-end ridership fact sheet",
+      "stack_lane": "Mobility and aviation",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2025-11-18",
+      "data_through": "FY2025",
+      "evidence_type": "Official operator ridership summary",
+      "publisher": "Amtrak",
+      "official_url": "https://media.amtrak.com/wp-content/uploads/2025/11/FY25-Year-End-Ridership-Fact-Sheet.pdf",
+      "source_ids": [
+        "source-161-amtrak-fy2025-ridership"
+      ],
+      "source_semantic_digest": "32bae3c60a47346d1e5b01c796807ab2b4e7722b22c4fb766975e1e329647da3",
+      "topic_ids": [
+        "topic-mobility",
+        "topic-human-futures"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-021"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-010"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-CPUC-AV-QUARTERLY-2026",
+        "146-ALT-NHTSA-SGO-2026",
+        "146-ALT-FTA-NTD-2026"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "Amtrak reports 34,467,598 trips in FY2025, 5.1% above FY2024, with Northeast Corridor trips up 8.1%, state-supported trips up 2.4%, and long-distance trips up 4.2%. This record sits in the Mobility and aviation watch lane and is linked to Mobility, Human Futures. Named project context includes Amtrak accessible-station delivery. Receiving-place context includes Amtrak accessibility and reliability.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-012-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "Amtrak reports 34,467,598 trips in FY2025, 5.1% above FY2024, with Northeast Corridor trips up 8.1%, state-supported trips up 2.4%, and long-distance trips up 4.2%.",
+          "source_ids": [
+            "source-161-amtrak-fy2025-ridership"
+          ],
+          "source_semantic_digest": "32bae3c60a47346d1e5b01c796807ab2b4e7722b22c4fb766975e1e329647da3",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-012-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded official operator ridership summary for the Mobility and aviation evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-amtrak-fy2025-ridership"
+          ],
+          "source_semantic_digest": "32bae3c60a47346d1e5b01c796807ab2b4e7722b22c4fb766975e1e329647da3",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-012-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Trips are not unique passengers, accessibility completion, station acceptance, punctuality, or named-asset reliability. Route totals cannot answer the station-level evidence gates.",
+          "source_ids": [
+            "source-161-amtrak-fy2025-ridership"
+          ],
+          "source_semantic_digest": "32bae3c60a47346d1e5b01c796807ab2b4e7722b22c4fb766975e1e329647da3",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official operator ridership summary.",
+      "route": "/review/v1month/stack-watch/amtrak-fy2025-ridership/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-013",
+      "slug": "us-climate-conditions-2025",
+      "title": "Annual 2025 U.S. climate assessment",
+      "stack_lane": "Climate and energy",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-01-13",
+      "data_through": "2025",
+      "evidence_type": "Observed national climate assessment",
+      "publisher": "National Oceanic and Atmospheric Administration",
+      "official_url": "https://www.ncei.noaa.gov/news/national-climate-202513",
+      "source_ids": [
+        "source-161-noaa-us-climate-2025"
+      ],
+      "source_semantic_digest": "9a2b3f7bd4ef93bdbdba3f4bee0066adab9ad72bdd9c6ec72334c4c69847585b",
+      "topic_ids": [
+        "topic-climate",
+        "topic-water",
+        "topic-human-futures"
+      ],
+      "project_chronicle_ids": [],
+      "place_ledger_ids": [
+        "137-LEDGER-002",
+        "137-LEDGER-005",
+        "137-LEDGER-006",
+        "137-LEDGER-015"
+      ],
+      "alternative_candidate_ids": [],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "NOAA reports that the contiguous United States averaged 54.6°F in 2025, 2.6°F above the twentieth-century average and fourth warmest in the 131-year record. The Climate Extremes Index was 58% above average, and the Southwest recorded its warmest year. This record sits in the Climate and energy watch lane and is linked to Climate, Water, Human Futures. No current named project is treated as the subject of this system-level record. Receiving-place context includes Nevada Lithium And Battery Materials Corridor, U.S. Southwest Chip Corridor, California autonomous mobility, California battery safety.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-013-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "NOAA reports that the contiguous United States averaged 54.6°F in 2025, 2.6°F above the twentieth-century average and fourth warmest in the 131-year record. The Climate Extremes Index was 58% above average, and the Southwest recorded its warmest year.",
+          "source_ids": [
+            "source-161-noaa-us-climate-2025"
+          ],
+          "source_semantic_digest": "9a2b3f7bd4ef93bdbdba3f4bee0066adab9ad72bdd9c6ec72334c4c69847585b",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-013-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded observed national climate assessment for the Climate and energy evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-noaa-us-climate-2025"
+          ],
+          "source_semantic_digest": "9a2b3f7bd4ef93bdbdba3f4bee0066adab9ad72bdd9c6ec72334c4c69847585b",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-013-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Each statistic retains its stated baseline and geography. The observations do not establish event attribution, project causality, or infrastructure performance.",
+          "source_ids": [
+            "source-161-noaa-us-climate-2025"
+          ],
+          "source_semantic_digest": "9a2b3f7bd4ef93bdbdba3f4bee0066adab9ad72bdd9c6ec72334c4c69847585b",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this observed national climate assessment.",
+      "route": "/review/v1month/stack-watch/us-climate-conditions-2025/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-014",
+      "slug": "us-wind-solar-generation-2025",
+      "title": "U.S. wind and solar generation in 2025",
+      "stack_lane": "Climate and energy",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-03-20",
+      "data_through": "2025",
+      "evidence_type": "Observed national generation summary",
+      "publisher": "U.S. Energy Information Administration",
+      "official_url": "https://www.eia.gov/todayinenergy/detail.php/detail.php?id=67367",
+      "source_ids": [
+        "source-161-eia-wind-solar-generation-2025"
+      ],
+      "source_semantic_digest": "6870e2848e98952971a8fdc6870d8d4ad50c9463589fad4086185748fd920a8e",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-013",
+        "136-CHRONICLE-014"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-012",
+        "137-LEDGER-013",
+        "137-LEDGER-014",
+        "137-LEDGER-015"
+      ],
+      "alternative_candidate_ids": [],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "EIA reports 760,000 GWh of wind and utility-scale solar generation in 2025, 88,000 GWh above 2024 and 17% of total generation. Wind supplied 464,000 GWh and utility-scale solar 296,000 GWh; including small-scale solar raises the joint share to 19%. This record sits in the Climate and energy watch lane and is linked to Energy, Climate. Named project context includes Manatee Battery Energy Storage Center, Moss Landing battery safety and operation, Gateway battery storage, Hornsdale Power Reserve, Victoria Big Battery, Dalrymple grid battery. Receiving-place context includes South Australia grid storage, Victoria grid storage, Florida utility storage, California battery safety.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-014-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "EIA reports 760,000 GWh of wind and utility-scale solar generation in 2025, 88,000 GWh above 2024 and 17% of total generation. Wind supplied 464,000 GWh and utility-scale solar 296,000 GWh; including small-scale solar raises the joint share to 19%.",
+          "source_ids": [
+            "source-161-eia-wind-solar-generation-2025"
+          ],
+          "source_semantic_digest": "6870e2848e98952971a8fdc6870d8d4ad50c9463589fad4086185748fd920a8e",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-014-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded observed national generation summary for the Climate and energy evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-eia-wind-solar-generation-2025"
+          ],
+          "source_semantic_digest": "6870e2848e98952971a8fdc6870d8d4ad50c9463589fad4086185748fd920a8e",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-014-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Generation is not capacity, availability, reliability, avoided emissions, or project attribution. Utility-scale and estimated small-scale solar use different reporting rails.",
+          "source_ids": [
+            "source-161-eia-wind-solar-generation-2025"
+          ],
+          "source_semantic_digest": "6870e2848e98952971a8fdc6870d8d4ad50c9463589fad4086185748fd920a8e",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this observed national generation summary.",
+      "route": "/review/v1month/stack-watch/us-wind-solar-generation-2025/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-015",
+      "slug": "aemo-q1-2026-renewables-storage",
+      "title": "AEMO Quarterly Energy Dynamics Q1 2026",
+      "stack_lane": "Climate and energy",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-04-30",
+      "data_through": "2026 Q1",
+      "evidence_type": "Official market-operator quarterly observation",
+      "publisher": "Australian Energy Market Operator",
+      "official_url": "https://www.aemo.com.au/newsroom/media-release/renewables-lift-supply-share-as-batteries-re-shape-energy-markets",
+      "source_ids": [
+        "source-161-aemo-q1-2026-qed"
+      ],
+      "source_semantic_digest": "e9ab05a9f10da3dbdb18f4424774d9bdebdafbd6f61dd6cb5e596f27bfd11d36",
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-013",
+        "136-CHRONICLE-014"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-012",
+        "137-LEDGER-013"
+      ],
+      "alternative_candidate_ids": [],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in Q1 2026, a first-quarter record, with underlying demand at 25,496 MW. South Australia's renewable-and-storage contribution peaked at 98.8% during one half-hour on January 31. This record sits in the Climate and energy watch lane and is linked to Energy, Climate. Named project context includes Hornsdale Power Reserve, Victoria Big Battery, Dalrymple grid battery. Receiving-place context includes South Australia grid storage, Victoria grid storage.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-015-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in Q1 2026, a first-quarter record, with underlying demand at 25,496 MW. South Australia's renewable-and-storage contribution peaked at 98.8% during one half-hour on January 31.",
+          "source_ids": [
+            "source-161-aemo-q1-2026-qed"
+          ],
+          "source_semantic_digest": "e9ab05a9f10da3dbdb18f4424774d9bdebdafbd6f61dd6cb5e596f27bfd11d36",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-015-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded official market-operator quarterly observation for the Climate and energy evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-aemo-q1-2026-qed"
+          ],
+          "source_semantic_digest": "e9ab05a9f10da3dbdb18f4424774d9bdebdafbd6f61dd6cb5e596f27bfd11d36",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-015-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Regional and interval aggregates do not measure Hornsdale, Dalrymple, or Victoria Big Battery individually and do not establish a reliability or price effect caused by one asset.",
+          "source_ids": [
+            "source-161-aemo-q1-2026-qed"
+          ],
+          "source_semantic_digest": "e9ab05a9f10da3dbdb18f4424774d9bdebdafbd6f61dd6cb5e596f27bfd11d36",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official market-operator quarterly observation.",
+      "route": "/review/v1month/stack-watch/aemo-q1-2026-renewables-storage/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-016",
+      "slug": "faa-commercial-space-operations-fy2025",
+      "title": "FAA Aerospace Forecast FY 2026–2046",
+      "stack_lane": "Space",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026",
+      "data_through": "FY2025 historical activity",
+      "evidence_type": "Federal historical activity account and forecast",
+      "publisher": "Federal Aviation Administration",
+      "official_url": "https://www.faa.gov/data_research/aviation/aerospace_forecasts/FY_2026-2046_Full_Forecast_Document_Tables.pdf",
+      "source_ids": [
+        "source-161-faa-aerospace-forecast-2026-2046"
+      ],
+      "source_semantic_digest": "27bd9f90402fdc660e9e40b7d5750859046b26e4e2a822527d9a26f6220c3643",
+      "topic_ids": [
+        "topic-space",
+        "topic-aviation",
+        "topic-policy-and-standards"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-004"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-FAA-SPACE-LICENSES",
+        "146-ALT-FAA-SPACE-NUMBERS",
+        "146-ALT-FAA-SPACE-FORECAST-2026",
+        "146-ALT-GAO-NASA-MAJOR-PROJECTS-2026",
+        "146-ALT-BTS-ASQP-2026",
+        "146-ALT-BTS-TD40-2026",
+        "146-ALT-BTS-TRANSTATS-ONTIME",
+        "146-ALT-BTS-T100",
+        "146-ALT-FAA-GA-SAFETY-2025",
+        "146-ALT-NTSB-AVIATION-STATS"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "FAA records 195 licensed launches by six operators in FY2025, including 161 by SpaceX, with 76 at Cape Canaveral, 61 at Vandenberg, and 26 at Kennedy. It separately records nine licensed reentries and eight licensed operations resulting in mishaps. This record sits in the Space watch lane and is linked to Space, Aviation, Policy and Standards. Named project context includes Space Coast authorization-to-mission stack. Receiving-place context includes Florida Space Coast Launch Corridor.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-016-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "FAA records 195 licensed launches by six operators in FY2025, including 161 by SpaceX, with 76 at Cape Canaveral, 61 at Vandenberg, and 26 at Kennedy. It separately records nine licensed reentries and eight licensed operations resulting in mishaps.",
+          "source_ids": [
+            "source-161-faa-aerospace-forecast-2026-2046"
+          ],
+          "source_semantic_digest": "27bd9f90402fdc660e9e40b7d5750859046b26e4e2a822527d9a26f6220c3643",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-016-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded federal historical activity account and forecast for the Space evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-faa-aerospace-forecast-2026-2046"
+          ],
+          "source_semantic_digest": "27bd9f90402fdc660e9e40b7d5750859046b26e4e2a822527d9a26f6220c3643",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-016-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Licensed launches, reentries, mishaps, site activity, and payload success are separate measures. The counts cannot be merged with Eastern Range orbital-launch totals.",
+          "source_ids": [
+            "source-161-faa-aerospace-forecast-2026-2046"
+          ],
+          "source_semantic_digest": "27bd9f90402fdc660e9e40b7d5750859046b26e4e2a822527d9a26f6220c3643",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal historical activity account and forecast.",
+      "route": "/review/v1month/stack-watch/faa-commercial-space-operations-fy2025/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-017",
+      "slug": "eastern-range-orbital-launches-2025",
+      "title": "100 Launches and Beyond",
+      "stack_lane": "Space",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2025-12-31",
+      "data_through": "2025",
+      "evidence_type": "Official range activity count",
+      "publisher": "U.S. Space Force Space Systems Command",
+      "official_url": "https://www.ssc.spaceforce.mil/About-Us/Freedom-250?dvpTag=SLD&dvpmoduleid=4314",
+      "source_ids": [
+        "source-161-space-force-eastern-range-2025"
+      ],
+      "source_semantic_digest": "9ff73d9a49ff70b4ba764cd93b6d555f27f7862e129c4f7e2eda837af5851c92",
+      "topic_ids": [
+        "topic-space"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-004"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-FAA-SPACE-LICENSES",
+        "146-ALT-FAA-SPACE-NUMBERS",
+        "146-ALT-FAA-SPACE-FORECAST-2026",
+        "146-ALT-GAO-NASA-MAJOR-PROJECTS-2026"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "U.S. Space Force reports that Cape Canaveral Space Force Station and the Eastern Range hosted 109 orbital launches during 2025. This record sits in the Space watch lane and is linked to Space. Named project context includes Space Coast authorization-to-mission stack. Receiving-place context includes Florida Space Coast Launch Corridor.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-017-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "U.S. Space Force reports that Cape Canaveral Space Force Station and the Eastern Range hosted 109 orbital launches during 2025.",
+          "source_ids": [
+            "source-161-space-force-eastern-range-2025"
+          ],
+          "source_semantic_digest": "9ff73d9a49ff70b4ba764cd93b6d555f27f7862e129c4f7e2eda837af5851c92",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-017-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded official range activity count for the Space evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-space-force-eastern-range-2025"
+          ],
+          "source_semantic_digest": "9ff73d9a49ff70b4ba764cd93b6d555f27f7862e129c4f7e2eda837af5851c92",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-017-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "A range-hosted orbital count is not a count of FAA licences, unique operators, successful payload deployments, or missions from Kennedy Space Center alone.",
+          "source_ids": [
+            "source-161-space-force-eastern-range-2025"
+          ],
+          "source_semantic_digest": "9ff73d9a49ff70b4ba764cd93b6d555f27f7862e129c4f7e2eda837af5851c92",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official range activity count.",
+      "route": "/review/v1month/stack-watch/eastern-range-orbital-launches-2025/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-018",
+      "slug": "artemis-iii-hardware-integration-august-2026",
+      "title": "Artemis III Orion modules and rocket hardware update",
+      "stack_lane": "Space",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-08-05",
+      "data_through": "2026-08-05",
+      "evidence_type": "Official program hardware update",
+      "publisher": "National Aeronautics and Space Administration",
+      "official_url": "https://www.nasa.gov/blogs/missions/2026/08/05/nasa-joins-artemis-iii-orion-modules-rocket-hardware-update/",
+      "source_ids": [
+        "source-161-nasa-artemis-iii-hardware-aug-2026"
+      ],
+      "source_semantic_digest": "26bceeea8ef679b401d9bc36d975274daa4ca4201b046ff7aae5c08c46780e55",
+      "topic_ids": [
+        "topic-space",
+        "topic-advanced-manufacturing"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-004"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-FAA-SPACE-LICENSES",
+        "146-ALT-FAA-SPACE-NUMBERS",
+        "146-ALT-FAA-SPACE-FORECAST-2026",
+        "146-ALT-GAO-NASA-MAJOR-PROJECTS-2026",
+        "146-ALT-GAO-F15EX-2025",
+        "146-ALT-NIST-MEP-AMPHENOL-2025",
+        "146-ALT-NIST-MEP-FY2024-RESULTS"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "NASA reports that all four RS-25 engines had reached Kennedy, booster stacking had begun, and more than 250 Artemis II Orion components were planned for reuse. It also reports almost four months of booster-preparation acceleration and roughly 50% shorter tower turnaround. This record sits in the Space watch lane and is linked to Space, Advanced Manufacturing. Named project context includes Space Coast authorization-to-mission stack. Receiving-place context includes Florida Space Coast Launch Corridor.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-018-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "NASA reports that all four RS-25 engines had reached Kennedy, booster stacking had begun, and more than 250 Artemis II Orion components were planned for reuse. It also reports almost four months of booster-preparation acceleration and roughly 50% shorter tower turnaround.",
+          "source_ids": [
+            "source-161-nasa-artemis-iii-hardware-aug-2026"
+          ],
+          "source_semantic_digest": "26bceeea8ef679b401d9bc36d975274daa4ca4201b046ff7aae5c08c46780e55",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-018-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded official program hardware update for the Space evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nasa-artemis-iii-hardware-aug-2026"
+          ],
+          "source_semantic_digest": "26bceeea8ef679b401d9bc36d975274daa4ca4201b046ff7aae5c08c46780e55",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-018-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Component delivery, reuse plans, and processing-time comparisons are not integrated-vehicle acceptance, flight readiness, launch authorization, or mission success.",
+          "source_ids": [
+            "source-161-nasa-artemis-iii-hardware-aug-2026"
+          ],
+          "source_semantic_digest": "26bceeea8ef679b401d9bc36d975274daa4ca4201b046ff7aae5c08c46780e55",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official program hardware update.",
+      "route": "/review/v1month/stack-watch/artemis-iii-hardware-integration-august-2026/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-019",
+      "slug": "us-mineral-economy-import-reliance-2025",
+      "title": "Mineral Commodity Summaries 2026",
+      "stack_lane": "Critical minerals and manufacturing",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-02-06",
+      "data_through": "2025",
+      "evidence_type": "Official commodity statistics",
+      "publisher": "U.S. Geological Survey",
+      "official_url": "https://pubs.usgs.gov/publication/mcs2026",
+      "source_ids": [
+        "source-usgs-mineral-commodity-summaries"
+      ],
+      "source_semantic_digest": "b7fe0c708058c5cf0126cff539cb3f102f4b0cf57e02fa01aba5637ada35cbe4",
+      "topic_ids": [
+        "topic-critical-minerals",
+        "topic-advanced-manufacturing",
+        "topic-finance-and-risk"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-005"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-002"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-USGS-MCS-2026",
+        "146-ALT-USGS-MCS-DATA-2026",
+        "146-ALT-GAO-F15EX-2025",
+        "146-ALT-NIST-MEP-AMPHENOL-2025",
+        "146-ALT-NIST-MEP-FY2024-RESULTS"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "USGS values U.S. nonfuel mineral production at $112 billion in 2025 and mineral-reliant industries at $4.09 trillion. It reports thirteen critical minerals at 100% net-import reliance and another twenty at 50% or greater reliance. This record sits in the Critical minerals and manufacturing watch lane and is linked to Critical Minerals, Advanced Manufacturing, Finance and Risk. Named project context includes Nevada lithium project pair. Receiving-place context includes Nevada Lithium And Battery Materials Corridor.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-019-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "USGS values U.S. nonfuel mineral production at $112 billion in 2025 and mineral-reliant industries at $4.09 trillion. It reports thirteen critical minerals at 100% net-import reliance and another twenty at 50% or greater reliance.",
+          "source_ids": [
+            "source-usgs-mineral-commodity-summaries"
+          ],
+          "source_semantic_digest": "b7fe0c708058c5cf0126cff539cb3f102f4b0cf57e02fa01aba5637ada35cbe4",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-019-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded official commodity statistics for the Critical minerals and manufacturing evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-usgs-mineral-commodity-summaries"
+          ],
+          "source_semantic_digest": "b7fe0c708058c5cf0126cff539cb3f102f4b0cf57e02fa01aba5637ada35cbe4",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-019-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "The values include estimates and withheld proprietary figures. Import reliance is not proof of shortage or disruption, and broad economic contribution is not attributable to one mine.",
+          "source_ids": [
+            "source-usgs-mineral-commodity-summaries"
+          ],
+          "source_semantic_digest": "b7fe0c708058c5cf0126cff539cb3f102f4b0cf57e02fa01aba5637ada35cbe4",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official commodity statistics.",
+      "route": "/review/v1month/stack-watch/us-mineral-economy-import-reliance-2025/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-020",
+      "slug": "thacker-pass-financing-designed-capacity",
+      "title": "Thacker Pass project financing record",
+      "stack_lane": "Critical minerals and manufacturing",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2024-10",
+      "data_through": "2024 project financing",
+      "evidence_type": "Federal loan and designed-capacity record",
+      "publisher": "U.S. Department of Energy",
+      "official_url": "https://www.energy.gov/edf/thacker-pass",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024"
+      ],
+      "source_semantic_digest": "39485cccab9938ece7b140e773ee621e55a7b83319cf9791a5317bbb86a57779",
+      "topic_ids": [
+        "topic-critical-minerals",
+        "topic-advanced-manufacturing"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-005"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-002"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-USGS-MCS-2026",
+        "146-ALT-USGS-MCS-DATA-2026",
+        "146-ALT-GAO-F15EX-2025",
+        "146-ALT-NIST-MEP-AMPHENOL-2025",
+        "146-ALT-NIST-MEP-FY2024-RESULTS"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "DOE records a $2.26 billion loan, comprising $1.97 billion principal and $289.7 million capitalized interest, for facilities designed to produce about 40,000 tonnes annually of battery-grade lithium carbonate. This record sits in the Critical minerals and manufacturing watch lane and is linked to Critical Minerals, Advanced Manufacturing. Named project context includes Nevada lithium project pair. Receiving-place context includes Nevada Lithium And Battery Materials Corridor.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-020-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "DOE records a $2.26 billion loan, comprising $1.97 billion principal and $289.7 million capitalized interest, for facilities designed to produce about 40,000 tonnes annually of battery-grade lithium carbonate.",
+          "source_ids": [
+            "source-doe-thacker-pass-loan-2024"
+          ],
+          "source_semantic_digest": "39485cccab9938ece7b140e773ee621e55a7b83319cf9791a5317bbb86a57779",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-020-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded federal loan and designed-capacity record for the Critical minerals and manufacturing evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-doe-thacker-pass-loan-2024"
+          ],
+          "source_semantic_digest": "39485cccab9938ece7b140e773ee621e55a7b83319cf9791a5317bbb86a57779",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-020-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Financing and designed capacity are not construction completion, accepted output, qualification, annual production, or environmental or community outcome. DOE's vehicle equivalents are modeled.",
+          "source_ids": [
+            "source-doe-thacker-pass-loan-2024"
+          ],
+          "source_semantic_digest": "39485cccab9938ece7b140e773ee621e55a7b83319cf9791a5317bbb86a57779",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal loan and designed-capacity record.",
+      "route": "/review/v1month/stack-watch/thacker-pass-financing-designed-capacity/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-021",
+      "slug": "usa-rare-earth-mine-to-magnet-award",
+      "title": "Commerce definitive agreement with USA Rare Earth",
+      "stack_lane": "Critical minerals and manufacturing",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-06-03",
+      "data_through": "2026-06-03",
+      "evidence_type": "Definitive public financing agreement",
+      "publisher": "National Institute of Standards and Technology",
+      "official_url": "https://www.nist.gov/news-events/news/2026/06/department-commerces-chips-program-finalizes-definitive-agreement-usa-rare",
+      "source_ids": [
+        "source-161-nist-usa-rare-earth-june-2026"
+      ],
+      "source_semantic_digest": "d9182e017f639d8e5f3a0edb92586668a641830ef723dd0d281b26dde3c82fb9",
+      "topic_ids": [
+        "topic-critical-minerals",
+        "topic-advanced-manufacturing",
+        "topic-chips-and-compute"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-005"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-002"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-USGS-MCS-2026",
+        "146-ALT-USGS-MCS-DATA-2026",
+        "146-ALT-GAO-F15EX-2025",
+        "146-ALT-NIST-MEP-AMPHENOL-2025",
+        "146-ALT-NIST-MEP-FY2024-RESULTS",
+        "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+        "146-ALT-TSMC-SEC-20F-2025"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "Commerce describes up to $277 million in incentives and up to $1.3 billion in lending for a proposed multi-site system targeting 10,000 tons annually of rare-earth metals and alloys and 10,000 tons annually of NdFeB magnets. This record sits in the Critical minerals and manufacturing watch lane and is linked to Critical Minerals, Advanced Manufacturing, Chips and Compute. Named project context includes Nevada lithium project pair. Receiving-place context includes Nevada Lithium And Battery Materials Corridor.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-021-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "Commerce describes up to $277 million in incentives and up to $1.3 billion in lending for a proposed multi-site system targeting 10,000 tons annually of rare-earth metals and alloys and 10,000 tons annually of NdFeB magnets.",
+          "source_ids": [
+            "source-161-nist-usa-rare-earth-june-2026"
+          ],
+          "source_semantic_digest": "d9182e017f639d8e5f3a0edb92586668a641830ef723dd0d281b26dde3c82fb9",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-021-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded definitive public financing agreement for the Critical minerals and manufacturing evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nist-usa-rare-earth-june-2026"
+          ],
+          "source_semantic_digest": "d9182e017f639d8e5f3a0edb92586668a641830ef723dd0d281b26dde3c82fb9",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-021-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "A definitive financing agreement and target capacity are not completed facilities, production, material qualification, or integrated mine-to-magnet operation.",
+          "source_ids": [
+            "source-161-nist-usa-rare-earth-june-2026"
+          ],
+          "source_semantic_digest": "d9182e017f639d8e5f3a0edb92586668a641830ef723dd0d281b26dde3c82fb9",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this definitive public financing agreement.",
+      "route": "/review/v1month/stack-watch/usa-rare-earth-mine-to-magnet-award/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-022",
+      "slug": "nist-aite-launch-2026",
+      "title": "NIST Artificial Intelligence Technology Evaluation launch",
+      "stack_lane": "AI, quantum, cyber and human futures",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-07-27",
+      "data_through": "2026-07-27",
+      "evidence_type": "Evaluation infrastructure announcement",
+      "publisher": "National Institute of Standards and Technology",
+      "official_url": "https://www.nist.gov/news-events/news/2026/07/announcing-nists-artificial-intelligence-technology-evaluation-aite",
+      "source_ids": [
+        "source-161-nist-aite-july-2026"
+      ],
+      "source_semantic_digest": "371ac666b01392bbffe5c073e3af62220ec915eebdc0934fde7e49b63b73449b",
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-discovery-technologies",
+        "topic-policy-and-standards"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-007"
+      ],
+      "place_ledger_ids": [],
+      "alternative_candidate_ids": [
+        "146-ALT-DOE-FY24-PERFORMANCE",
+        "146-ALT-NSF-FY25-PERFORMANCE",
+        "146-ALT-NSF-NAIRR-TWO-YEAR",
+        "146-ALT-NSF-SE-INDICATORS-2026"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "NIST launched a blind, sequestered evaluation environment with three initial vision-language-model tasks covering quantum science, genomics, and public safety, using common data, metrics, and scoring across provider tracks. This record sits in the AI, quantum, cyber and human futures watch lane and is linked to AI for Science, Discovery Technologies, Policy and Standards. Named project context includes NIST ARIA assurance path. No place-level outcome is inferred.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-022-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "NIST launched a blind, sequestered evaluation environment with three initial vision-language-model tasks covering quantum science, genomics, and public safety, using common data, metrics, and scoring across provider tracks.",
+          "source_ids": [
+            "source-161-nist-aite-july-2026"
+          ],
+          "source_semantic_digest": "371ac666b01392bbffe5c073e3af62220ec915eebdc0934fde7e49b63b73449b",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-022-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded evaluation infrastructure announcement for the AI, quantum, cyber and human futures evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nist-aite-july-2026"
+          ],
+          "source_semantic_digest": "371ac666b01392bbffe5c073e3af62220ec915eebdc0934fde7e49b63b73449b",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-022-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Evaluation infrastructure is not a model result, ranking, assurance finding, or evidence that a model is safe or useful. Participation is voluntary.",
+          "source_ids": [
+            "source-161-nist-aite-july-2026"
+          ],
+          "source_semantic_digest": "371ac666b01392bbffe5c073e3af62220ec915eebdc0934fde7e49b63b73449b",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this evaluation infrastructure announcement.",
+      "route": "/review/v1month/stack-watch/nist-aite-launch-2026/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-023",
+      "slug": "quantum-chips-loi-portfolio-2026",
+      "title": "Commerce quantum letters of intent",
+      "stack_lane": "AI, quantum, cyber and human futures",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-05-21",
+      "data_through": "2026-05-21",
+      "evidence_type": "Non-final funding letters of intent",
+      "publisher": "National Institute of Standards and Technology",
+      "official_url": "https://www.nist.gov/news-events/news/2026/05/department-commerce-announces-letters-intent-9-companies-2-billion",
+      "source_ids": [
+        "source-161-nist-quantum-lois-may-2026"
+      ],
+      "source_semantic_digest": "fc183f5c512eef3f581758f18f252099afd40740e00ab933b6d5623713702ccf",
+      "topic_ids": [
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-advanced-manufacturing"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-006"
+      ],
+      "place_ledger_ids": [],
+      "alternative_candidate_ids": [
+        "146-ALT-NIST-QC-METRICS-2024",
+        "146-ALT-DARPA-QUANTUM-BENCHMARKING",
+        "146-ALT-DARPA-QBI",
+        "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+        "146-ALT-TSMC-SEC-20F-2025",
+        "146-ALT-GAO-F15EX-2025",
+        "146-ALT-NIST-MEP-AMPHENOL-2025",
+        "146-ALT-NIST-MEP-FY2024-RESULTS"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "Commerce announced nine quantum letters of intent totaling $2.013 billion, including proposed foundry amounts of $375 million for GlobalFoundries and $1 billion for IBM alongside seven modality-specific companies. This record sits in the AI, quantum, cyber and human futures watch lane and is linked to Quantum, Chips and Compute, Advanced Manufacturing. Named project context includes GSA post-quantum acquisition path. No place-level outcome is inferred.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-023-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "Commerce announced nine quantum letters of intent totaling $2.013 billion, including proposed foundry amounts of $375 million for GlobalFoundries and $1 billion for IBM alongside seven modality-specific companies.",
+          "source_ids": [
+            "source-161-nist-quantum-lois-may-2026"
+          ],
+          "source_semantic_digest": "fc183f5c512eef3f581758f18f252099afd40740e00ab933b6d5623713702ccf",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-023-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded non-final funding letters of intent for the AI, quantum, cyber and human futures evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nist-quantum-lois-may-2026"
+          ],
+          "source_semantic_digest": "fc183f5c512eef3f581758f18f252099afd40740e00ab933b6d5623713702ccf",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-023-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Letters of intent are non-final proposed funding, not disbursement, foundry operation, qubit performance, error correction, or utility-scale fault tolerance.",
+          "source_ids": [
+            "source-161-nist-quantum-lois-may-2026"
+          ],
+          "source_semantic_digest": "fc183f5c512eef3f581758f18f252099afd40740e00ab933b6d5623713702ccf",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this non-final funding letters of intent.",
+      "route": "/review/v1month/stack-watch/quantum-chips-loi-portfolio-2026/"
+    },
+    {
+      "stack_watch_packet_id": "161-PACKET-024",
+      "slug": "ic3-cyber-harm-2025",
+      "title": "FBI 2025 Internet Crime Report",
+      "stack_lane": "AI, quantum, cyber and human futures",
+      "packet_state": "Published — bounded official-source synthesis",
+      "checked_date": "2026-08-31",
+      "artifact_date": "2026-04-06",
+      "data_through": "2025",
+      "evidence_type": "Administrative complaint and reported-loss data",
+      "publisher": "Federal Bureau of Investigation",
+      "official_url": "https://www.fbi.gov/file-repository/2025_ic3report.pdf",
+      "source_ids": [
+        "source-161-fbi-ic3-2025-report"
+      ],
+      "source_semantic_digest": "1adf7baf61138115260525226de41fe028155c268e1cbb084c90378c83251ea5",
+      "topic_ids": [
+        "topic-cybersecurity",
+        "topic-human-futures",
+        "topic-finance-and-risk"
+      ],
+      "project_chronicle_ids": [],
+      "place_ledger_ids": [],
+      "alternative_candidate_ids": [
+        "146-ALT-GAO-CDM-2025",
+        "146-ALT-GAO-CYBER-METRICS-2024",
+        "146-ALT-GAO-INCIDENT-RESPONSE-2024"
+      ],
+      "alternative_candidates_support_claims": false,
+      "reader_brief": "The FBI reports 1,008,597 IC3 complaints with nearly $21 billion in reported losses during 2025. Cyber-enabled fraud accounted for 452,868 complaints and $17.697 billion, while people over 60 reported about $7.7 billion in losses. This record sits in the AI, quantum, cyber and human futures watch lane and is linked to Cybersecurity, Human Futures, Finance and Risk. No current named project is treated as the subject of this system-level record. No place-level outcome is inferred.",
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-024-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "The FBI reports 1,008,597 IC3 complaints with nearly $21 billion in reported losses during 2025. Cyber-enabled fraud accounted for 452,868 complaints and $17.697 billion, while people over 60 reported about $7.7 billion in losses.",
+          "source_ids": [
+            "source-161-fbi-ic3-2025-report"
+          ],
+          "source_semantic_digest": "1adf7baf61138115260525226de41fe028155c268e1cbb084c90378c83251ea5",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-024-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded administrative complaint and reported-loss data for the AI, quantum, cyber and human futures evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-fbi-ic3-2025-report"
+          ],
+          "source_semantic_digest": "1adf7baf61138115260525226de41fe028155c268e1cbb084c90378c83251ea5",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-024-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "Complaint data are self-reported rather than a national-incidence estimate; categories can overlap, and reported losses are not necessarily recovered or adjudicated. The figures do not prove that AI caused the underlying fraud.",
+          "source_ids": [
+            "source-161-fbi-ic3-2025-report"
+          ],
+          "source_semantic_digest": "1adf7baf61138115260525226de41fe028155c268e1cbb084c90378c83251ea5",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this administrative complaint and reported-loss data.",
+      "route": "/review/v1month/stack-watch/ic3-cyber-harm-2025/"
+    }
+  ],
+  "source_profile_ids_added_or_reused": [
+    "source-161-nerc-ltra-2025",
+    "source-161-lbnl-queued-up-2026",
+    "source-161-eia-battery-capacity-aug-2026",
+    "source-161-nist-tsmc-investment-july-2026",
+    "source-161-nist-compute-supply-chain-lois-july-2026",
+    "source-161-lbnl-data-center-energy-usage-2024",
+    "source-161-usbr-colorado-river-2027-decision",
+    "source-161-adwr-phoenix-ama-v3-june-2026",
+    "source-161-epa-wifia-2025-annual-report",
+    "source-161-nhtsa-road-fatalities-2025-estimate",
+    "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028",
+    "source-161-amtrak-fy2025-ridership",
+    "source-161-noaa-us-climate-2025",
+    "source-161-eia-wind-solar-generation-2025",
+    "source-161-aemo-q1-2026-qed",
+    "source-161-faa-aerospace-forecast-2026-2046",
+    "source-161-space-force-eastern-range-2025",
+    "source-161-nasa-artemis-iii-hardware-aug-2026",
+    "source-usgs-mineral-commodity-summaries",
+    "source-doe-thacker-pass-loan-2024",
+    "source-161-nist-usa-rare-earth-june-2026",
+    "source-161-nist-aite-july-2026",
+    "source-161-nist-quantum-lois-may-2026",
+    "source-161-fbi-ic3-2025-report"
+  ],
+  "public_html_routes": [
+    "/review/v1month/stack-watch/",
+    "/review/v1month/stack-watch/north-american-peak-demand-forecast-2025-ltra/",
+    "/review/v1month/stack-watch/us-interconnection-queue-snapshot-2026/",
+    "/review/v1month/stack-watch/us-battery-capacity-june-2026/",
+    "/review/v1month/stack-watch/tsmc-us-investment-announcement-july-2026/",
+    "/review/v1month/stack-watch/compute-supply-chain-rd-lois-july-2026/",
+    "/review/v1month/stack-watch/us-data-center-electricity-use-scenarios/",
+    "/review/v1month/stack-watch/colorado-river-2027-operations-decision/",
+    "/review/v1month/stack-watch/phoenix-ama-version-3-groundwater-projection/",
+    "/review/v1month/stack-watch/wifia-portfolio-2025/",
+    "/review/v1month/stack-watch/us-road-fatalities-estimate-2025/",
+    "/review/v1month/stack-watch/faa-controller-workforce-2026-plan/",
+    "/review/v1month/stack-watch/amtrak-fy2025-ridership/",
+    "/review/v1month/stack-watch/us-climate-conditions-2025/",
+    "/review/v1month/stack-watch/us-wind-solar-generation-2025/",
+    "/review/v1month/stack-watch/aemo-q1-2026-renewables-storage/",
+    "/review/v1month/stack-watch/faa-commercial-space-operations-fy2025/",
+    "/review/v1month/stack-watch/eastern-range-orbital-launches-2025/",
+    "/review/v1month/stack-watch/artemis-iii-hardware-integration-august-2026/",
+    "/review/v1month/stack-watch/us-mineral-economy-import-reliance-2025/",
+    "/review/v1month/stack-watch/thacker-pass-financing-designed-capacity/",
+    "/review/v1month/stack-watch/usa-rare-earth-mine-to-magnet-award/",
+    "/review/v1month/stack-watch/nist-aite-launch-2026/",
+    "/review/v1month/stack-watch/quantum-chips-loi-portfolio-2026/",
+    "/review/v1month/stack-watch/ic3-cyber-harm-2025/"
+  ],
+  "public_json_exports": [
+    "/data/phase-161-stack-watch.json"
+  ]
+}

@@ -1,0 +1,1198 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-09-15",
+  "historical_date": "2026-08-03",
+  "key": "57j",
+  "review_scope": "Complete local narrative, metadata and linked-signal review against historical row data and generator logic; no external refresh, independent sign-off, new test execution or release approval.",
+  "collection_slug": "historical-backfill-rejection-taxonomy-review-queue-execution-2026",
+  "collection_sha256": "bb7397eaf50ae8895107c385e3dcc0e47fa882be376d8f179a0c9b8c00d747f8",
+  "archive_path": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026.zip",
+  "archive_sha256": "ac507d366fa9f3ed6b3322fbae31a948e98230e15140247f2af24260816b0f91",
+  "briefing_slug": "research-watch-040-historical-backfill-rejection-taxonomy-review-queue-execution",
+  "docs": [
+    {
+      "id": "research-doc-57j-amtrak-178-identity-source-snapshot-manifest",
+      "slug": "57j-amtrak-178-identity-source-snapshot-manifest",
+      "source_file": "research-documents/815-57j-amtrak-178-identity-source-snapshot-manifest.json",
+      "reviewed_source_sha256": "a1fb909b87735d0bbc447cd2fe8092a084d07473af6062cf0bbfe594881caaad",
+      "title": "Amtrak's 178 historical identities now have explicit source-snapshot decisions",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/01-amtrak-178-identity-source-snapshot-manifest.txt",
+      "download_sha256": "d79b57874c5b1c9dd2294ed376f9d899580ea94e521277f981ccc724dcbe3761",
+      "signal_file": "signal-57j-amtrak-178-identity-source-snapshot-manifest.mdx",
+      "signal_sha256": "7fcb6c3f566a2437913d5f2c4692a678544d0466b82eceb5c05274be5c587583",
+      "signal_excerpt": "All 178 identities remain present in the FY2024-2029 source snapshot and carry a review disposition rather than an inferred current registry state.",
+      "historical_decision": {
+        "action_key": "AMTRAK-HISTORICAL-SNAPSHOT-MANIFEST-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Historical identity backfill",
+        "finding": "All 178 identities remain present in the FY2024-2029 source snapshot and carry a review disposition rather than an inferred current registry state.",
+        "denominator": "Two source snapshots and 178 historical identity decisions.",
+        "evidence_limits": [
+          "Historical source presence is not current asset presence.",
+          "A snapshot is not a complete station-code registry.",
+          "Operating outcomes remain null."
+        ],
+        "next_action": "Attach later source versions only through the same identity and effective-period contract.",
+        "structured_registry_file": "phase-57j-amtrak-historical-snapshot-review-queue.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-amtrak-11-current-links-167-historical-retentions",
+      "slug": "57j-amtrak-11-current-links-167-historical-retentions",
+      "source_file": "research-documents/816-57j-amtrak-11-current-links-167-historical-retentions.json",
+      "reviewed_source_sha256": "732ff01bda180dae0d2b1212b970131b8c445c72e16829c3e8cb9626c7332b13",
+      "title": "Eleven Amtrak identities receive bounded current links while 167 remain historical-only",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/02-amtrak-11-current-links-167-historical-retentions.txt",
+      "download_sha256": "ded88cd3823293d48c464042218af800ccad4b5ebafe2b77a26fe62d3429e9c1",
+      "signal_file": "signal-57j-amtrak-11-current-links-167-historical-retentions.mdx",
+      "signal_sha256": "8b35ff85bffe30c4c278ffb7fd945dccfff69ed7aa904b0f412a85ad46f423ef",
+      "signal_excerpt": "Eleven historical identities link to June 2026 cohort observations; the other 167 remain retained historical identities with no deletion inference.",
+      "historical_decision": {
+        "action_key": "AMTRAK-HISTORICAL-PRESENCE-DISPOSITIONS-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Historical identity backfill",
+        "finding": "Eleven historical identities link to June 2026 cohort observations; the other 167 remain retained historical identities with no deletion inference.",
+        "denominator": "178 historical identities: eleven bounded current observations and 167 historical-only retentions.",
+        "evidence_limits": [
+          "Current cohort nonappearance is not deletion.",
+          "A cohort link is not an asset inventory.",
+          "No reliability state is inferred."
+        ],
+        "next_action": "Review later current sources for exact or controlled identity links.",
+        "structured_registry_file": "phase-57j-amtrak-historical-snapshot-review-queue.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-amtrak-16-name-review-queue-executed",
+      "slug": "57j-amtrak-16-name-review-queue-executed",
+      "source_file": "research-documents/817-57j-amtrak-16-name-review-queue-executed.json",
+      "reviewed_source_sha256": "f9055847421c46d2fdf17a900274a7df88211231dd835e4982e48e408ce5abd5",
+      "title": "The sixteen-name Amtrak identity queue records ten exact, one alias, and five rejected links",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/03-amtrak-16-name-review-queue-executed.txt",
+      "download_sha256": "bb56fb2d65e98819f14da31d55bb9cccc0704008437cbed8154e0e61a942258d",
+      "signal_file": "signal-57j-amtrak-16-name-review-queue-executed.mdx",
+      "signal_sha256": "4a6e0e19ad22023756c6c296be7473951f949539bd265604a32ced850f7b9c10",
+      "signal_excerpt": "Ten exact links and one controlled alias pass review; five names remain rejected pending a code-bearing registry or authoritative crosswalk.",
+      "historical_decision": {
+        "action_key": "AMTRAK-CURRENT-IDENTITY-QUEUE-EXECUTION-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Historical identity backfill",
+        "finding": "Ten exact links and one controlled alias pass review; five names remain rejected pending a code-bearing registry or authoritative crosswalk.",
+        "denominator": "Sixteen current names: ten exact links, one controlled alias, and five rejected unresolved links.",
+        "evidence_limits": [
+          "Controlled alias is not an official rename.",
+          "Rejected links remain visible.",
+          "No station code is guessed."
+        ],
+        "next_action": "Reopen the five rejected links only with official station codes or an authoritative crosswalk.",
+        "structured_registry_file": "phase-57j-amtrak-historical-snapshot-review-queue.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-amtrak-five-identity-rejections-remain-visible",
+      "slug": "57j-amtrak-five-identity-rejections-remain-visible",
+      "source_file": "research-documents/818-57j-amtrak-five-identity-rejections-remain-visible.json",
+      "reviewed_source_sha256": "2eec77f4b7da6c5e1e1a07487a0107e000f51420a48d528f0a57bcf51929bf22",
+      "title": "Five unresolved Amtrak identities remain visible under two rejection reasons",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/04-amtrak-five-identity-rejections-remain-visible.txt",
+      "download_sha256": "f76be200d8904a509200ca77ec7b7604653bbee60a0f2edbfacac661cdc29b40",
+      "signal_file": "signal-57j-amtrak-five-identity-rejections-remain-visible.mdx",
+      "signal_sha256": "e5dc04ae7c0860dd7ff99fa2ea6638ffd4f9f8244306f5d80efecc5e96af6092",
+      "signal_excerpt": "Each unresolved name records both a missing official station code and a missing authoritative crosswalk instead of disappearing from the queue.",
+      "historical_decision": {
+        "action_key": "AMTRAK-IDENTITY-REJECTION-TAXONOMY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Historical identity backfill",
+        "finding": "Each unresolved name records both a missing official station code and a missing authoritative crosswalk instead of disappearing from the queue.",
+        "denominator": "Five rejected links and ten recorded rejection-reason assignments.",
+        "evidence_limits": [
+          "A rejection reason is not evidence the station is new.",
+          "Missing public evidence is not evidence of absence.",
+          "The queue cannot establish replacement."
+        ],
+        "next_action": "Preserve the rejected rows until an official identity artifact resolves them.",
+        "structured_registry_file": "phase-57j-amtrak-historical-snapshot-review-queue.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-amtrak-zero-structural-or-outcome-promotions-after-backfill",
+      "slug": "57j-amtrak-zero-structural-or-outcome-promotions-after-backfill",
+      "source_file": "research-documents/819-57j-amtrak-zero-structural-or-outcome-promotions-after-backfill.json",
+      "reviewed_source_sha256": "94f6a9b74609d761960d5c9b1abe8ddac14eb4e6e2ec41ab9fbf47661e15d7bd",
+      "title": "Amtrak historical backfill promotes zero structural changes or operating outcomes",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/05-amtrak-zero-structural-or-outcome-promotions-after-backfill.txt",
+      "download_sha256": "d2b0c95783e3268b60f664023ce353df108c74f8c1e9de2dfbba316cb8caae0a",
+      "signal_file": "signal-57j-amtrak-zero-structural-or-outcome-promotions-after-backfill.mdx",
+      "signal_sha256": "1ec593e1aec62a5f1f47eb9d3858b72d91f8a939db73503c5c13375dfe508e89",
+      "signal_excerpt": "The completed reviewer queue asserts zero additions, removals, renames, replacements, asset identities, closeouts, or reliability outcomes.",
+      "historical_decision": {
+        "action_key": "AMTRAK-BACKFILL-ZERO-PROMOTIONS-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Historical identity backfill",
+        "finding": "The completed reviewer queue asserts zero additions, removals, renames, replacements, asset identities, closeouts, or reliability outcomes.",
+        "denominator": "178 historical decisions, sixteen current-name reviews, and zero promoted structural or outcome states.",
+        "evidence_limits": [
+          "Backfill is a control operation.",
+          "Historical completeness is not current completeness.",
+          "Publication requires separate operating evidence."
+        ],
+        "next_action": "Keep structural and operating promotion behind exact source-version review.",
+        "structured_registry_file": "phase-57j-amtrak-historical-snapshot-review-queue.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-montana-13-field-migration-tests-rejected",
+      "slug": "57j-montana-13-field-migration-tests-rejected",
+      "source_file": "research-documents/820-57j-montana-13-field-migration-tests-rejected.json",
+      "reviewed_source_sha256": "2837ab4ac74a58ebe776d86790c2a900fb2720e6e425e1bcc7f448e2d1e0cac5",
+      "title": "All thirteen Montana field-migration test cases reject absent target contracts",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/06-montana-13-field-migration-tests-rejected.txt",
+      "download_sha256": "37af77d1654303af29c19078061c59ff5a54b20b01795f9d52d824645f266653",
+      "signal_file": "signal-57j-montana-13-field-migration-tests-rejected.mdx",
+      "signal_sha256": "2bd601d50a94e0b2272be2ebbf99d6a243a85d3eea65533f0bc6d9f8674109cc",
+      "signal_excerpt": "Every field test remains rejected because the compatible official target schema, code dictionary, or validated completed project-quarter record is absent.",
+      "historical_decision": {
+        "action_key": "MT-FIELD-MIGRATION-TEST-EXECUTION-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Migration and envelope rejection taxonomy",
+        "finding": "Every field test remains rejected because the compatible official target schema, code dictionary, or validated completed project-quarter record is absent.",
+        "denominator": "Thirteen migration test cases: zero accepted and thirteen rejected.",
+        "evidence_limits": [
+          "Test execution cannot create a target field.",
+          "A baseline definition cannot silently migrate.",
+          "No outcome value is accepted."
+        ],
+        "next_action": "Rerun each field against an exact official target-schema version.",
+        "structured_registry_file": "phase-57j-montana-migration-envelope-rejection-taxonomy.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-montana-11-missing-target-schema-rejections",
+      "slug": "57j-montana-11-missing-target-schema-rejections",
+      "source_file": "research-documents/821-57j-montana-11-missing-target-schema-rejections.json",
+      "reviewed_source_sha256": "2baf0eecfbad9f55c58d6f0a565dbdd3980defbfacfdc802ccd077aab5ee555d",
+      "title": "Eleven Montana fields reject migration for a missing compatible target schema",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/07-montana-11-missing-target-schema-rejections.txt",
+      "download_sha256": "18ff75ea3d2450ab97adcfe64b7ff40022d0dc7e08bfbaadb333c1e3ddaf15c8",
+      "signal_file": "signal-57j-montana-11-missing-target-schema-rejections.mdx",
+      "signal_sha256": "a51a17a94f0bf2f3b59ae6dd41612e1878e6dee9bc4e62eaf8019c80f7d9c808",
+      "signal_excerpt": "Eleven baseline fields remain definition-bounded and cannot enter later terrestrial or LEO tables until an official target schema exists.",
+      "historical_decision": {
+        "action_key": "MT-MISSING-TARGET-SCHEMA-TAXONOMY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Migration and envelope rejection taxonomy",
+        "finding": "Eleven baseline fields remain definition-bounded and cannot enter later terrestrial or LEO tables until an official target schema exists.",
+        "denominator": "Eleven of thirteen field-migration tests.",
+        "evidence_limits": [
+          "Similar labels are not compatible definitions.",
+          "Terrestrial and LEO contracts remain separate.",
+          "No schema is inferred from prose."
+        ],
+        "next_action": "Capture and version the next official field dictionary before mapping values.",
+        "structured_registry_file": "phase-57j-montana-migration-envelope-rejection-taxonomy.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-montana-code-dictionary-and-completed-record-blockers",
+      "slug": "57j-montana-code-dictionary-and-completed-record-blockers",
+      "source_file": "research-documents/822-57j-montana-code-dictionary-and-completed-record-blockers.json",
+      "reviewed_source_sha256": "b347fe72414a1fc3a4c1864811bf64a5c3c529f57d5e4e9de089e4969270ab93",
+      "title": "Montana's remaining migration blockers separate raw codes from completed outcomes",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/08-montana-code-dictionary-and-completed-record-blockers.txt",
+      "download_sha256": "e539a069c63f867a81a7fa7fde79a31e857fd376acd8180c28e2d5f5b910fd93",
+      "signal_file": "signal-57j-montana-code-dictionary-and-completed-record-blockers.mdx",
+      "signal_sha256": "6ba6c3b7d68a6591d82c333a47bd860d08c7f252f4669a9dd3126b0e4f8ea4d1",
+      "signal_excerpt": "Raw technology codes reject for a missing official dictionary, while outcome state rejects for a missing validated completed project-quarter record.",
+      "historical_decision": {
+        "action_key": "MT-SPECIAL-MIGRATION-BLOCKERS-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Migration and envelope rejection taxonomy",
+        "finding": "Raw technology codes reject for a missing official dictionary, while outcome state rejects for a missing validated completed project-quarter record.",
+        "denominator": "Two specialized migration tests with two distinct primary rejection reasons.",
+        "evidence_limits": [
+          "Raw codes are not translated by assumption.",
+          "Outcome slots cannot be filled from award baselines.",
+          "A reserved field is not a result."
+        ],
+        "next_action": "Acquire the exact dictionary and completed-record schema as separate artifacts.",
+        "structured_registry_file": "phase-57j-montana-migration-envelope-rejection-taxonomy.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-montana-32-project-envelope-rejections-classified",
+      "slug": "57j-montana-32-project-envelope-rejections-classified",
+      "source_file": "research-documents/823-57j-montana-32-project-envelope-rejections-classified.json",
+      "reviewed_source_sha256": "7d2bb0df4a9175ec22fad94fb065db2075319c15b467777479292a83b413fca4",
+      "title": "Thirty-two Montana project envelopes now carry explicit rejection taxonomies",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/09-montana-32-project-envelope-rejections-classified.txt",
+      "download_sha256": "2740e0a011356f855880a79276dafc05ef19743ac13efb0a0311cb960c982880",
+      "signal_file": "signal-57j-montana-32-project-envelope-rejections-classified.mdx",
+      "signal_sha256": "d423e0b2ca9ccdf1f548d895e8d42ec0069e156099f504cce8a982876377bfc2",
+      "signal_excerpt": "Every project envelope records missing period, schema, authority, definition version, completed privacy review, state disposition, and completed public record.",
+      "historical_decision": {
+        "action_key": "MT-PROJECT-ENVELOPE-REJECTION-TAXONOMY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Migration and envelope rejection taxonomy",
+        "finding": "Every project envelope records missing period, schema, authority, definition version, completed privacy review, state disposition, and completed public record.",
+        "denominator": "Thirty-two project envelopes and 224 rejection-reason assignments across seven required classes.",
+        "evidence_limits": [
+          "A rejected envelope is not a failed project.",
+          "Privacy review remains mandatory.",
+          "Missing state disposition cannot default to accepted."
+        ],
+        "next_action": "Reopen an envelope only when each required field is source-explicit.",
+        "structured_registry_file": "phase-57j-montana-migration-envelope-rejection-taxonomy.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-montana-30-terrestrial-two-leo-zero-accepted-envelopes",
+      "slug": "57j-montana-30-terrestrial-two-leo-zero-accepted-envelopes",
+      "source_file": "research-documents/824-57j-montana-30-terrestrial-two-leo-zero-accepted-envelopes.json",
+      "reviewed_source_sha256": "55daec2cae435cd32fdc01d3c41a4f3bd06a1f480013dfb880cb3086a127fedb",
+      "title": "Thirty terrestrial and two LEO envelopes remain separate with zero accepted quarters",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/10-montana-30-terrestrial-two-leo-zero-accepted-envelopes.txt",
+      "download_sha256": "872a562ce0d5a40f976b8d139744f83a6baee48b589c93597ba6b3cf458b72c3",
+      "signal_file": "signal-57j-montana-30-terrestrial-two-leo-zero-accepted-envelopes.mdx",
+      "signal_sha256": "f1fe131fd3d7915246ae89f577d27755d8bfa7a21a1bd631fb60402ffb72336b",
+      "signal_excerpt": "The full project queue executes without cross-rail migration, individual-location disclosure, or completed-quarter promotion.",
+      "historical_decision": {
+        "action_key": "MT-REPORTING-RAIL-QUEUE-EXECUTION-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Migration and envelope rejection taxonomy",
+        "finding": "The full project queue executes without cross-rail migration, individual-location disclosure, or completed-quarter promotion.",
+        "denominator": "Thirty terrestrial envelopes, two LEO envelopes, zero accepted observations, and zero completed quarters.",
+        "evidence_limits": [
+          "Rail membership is not performance.",
+          "No individual BSL or CAI detail is published.",
+          "Award scope is not observed adoption."
+        ],
+        "next_action": "Validate later public tables within their exact rail and privacy contract.",
+        "structured_registry_file": "phase-57j-montana-migration-envelope-rejection-taxonomy.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-hanford-nine-observations-normalized-for-review",
+      "slug": "57j-hanford-nine-observations-normalized-for-review",
+      "source_file": "research-documents/825-57j-hanford-nine-observations-normalized-for-review.json",
+      "reviewed_source_sha256": "7cd5fbe8e2e427844787a5de101dd076f4eaa632b1f900a11058654986cacfc6",
+      "title": "Nine Hanford observations are normalized without becoming joinable material records",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/11-hanford-nine-observations-normalized-for-review.txt",
+      "download_sha256": "a59edb9ece2604b4ee312f00c73ac927922e5db39816b1371b32581358cd59b9",
+      "signal_file": "signal-57j-hanford-nine-observations-normalized-for-review.mdx",
+      "signal_sha256": "40590200480e928bf52d23da766ccc0f286afb4dfdc2c6e1097684f0be82ac97",
+      "signal_excerpt": "Each observation retains its exact source, period or date, stage, measure, operator, value, unit, and authority as a bounded standalone record.",
+      "historical_decision": {
+        "action_key": "HANFORD-OBSERVATION-BACKFILL-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Observation and transition rejection taxonomy",
+        "finding": "Each observation retains its exact source, period or date, stage, measure, operator, value, unit, and authority as a bounded standalone record.",
+        "denominator": "Nine normalized observations and zero accepted numeric joins.",
+        "evidence_limits": [
+          "Normalization does not create batch identity.",
+          "Null method and disposition fields remain null.",
+          "Standalone acceptance is not material-balance acceptance."
+        ],
+        "next_action": "Attach later fields only through exact source-attributed observation versions.",
+        "structured_registry_file": "phase-57j-hanford-observation-transition-rejection-taxonomy.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-hanford-six-observation-join-blocker-classes",
+      "slug": "57j-hanford-six-observation-join-blocker-classes",
+      "source_file": "research-documents/826-57j-hanford-six-observation-join-blocker-classes.json",
+      "reviewed_source_sha256": "8021a69b3ce711ba281d9bfa81f550e4923c5ba82b3d4f1660bc6b1b5754951e",
+      "title": "Six explicit blocker classes keep every Hanford observation non-joinable",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/12-hanford-six-observation-join-blocker-classes.txt",
+      "download_sha256": "457939cef06dc5d3584c201806af631173166b5bd7794c39cad6242c5bd9f4cc",
+      "signal_file": "signal-57j-hanford-six-observation-join-blocker-classes.mdx",
+      "signal_sha256": "2fb5f615e2814a85c8fa0ab33919cb64b100466f27abf2dda2d1da1c35b61dc9",
+      "signal_excerpt": "All nine observation reviews record missing batch identity, container identity, method, quality, acceptance, and disposition.",
+      "historical_decision": {
+        "action_key": "HANFORD-OBSERVATION-JOIN-REJECTION-TAXONOMY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Observation and transition rejection taxonomy",
+        "finding": "All nine observation reviews record missing batch identity, container identity, method, quality, acceptance, and disposition.",
+        "denominator": "Nine observations and 54 blocker assignments across six classes.",
+        "evidence_limits": [
+          "Missing fields do not become wildcards.",
+          "Shared authority does not establish shared material.",
+          "A numeric value alone is not join evidence."
+        ],
+        "next_action": "Require all six blocker classes to clear before pair evaluation can advance.",
+        "structured_registry_file": "phase-57j-hanford-observation-transition-rejection-taxonomy.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-hanford-36-pair-rejections-classified",
+      "slug": "57j-hanford-36-pair-rejections-classified",
+      "source_file": "research-documents/827-57j-hanford-36-pair-rejections-classified.json",
+      "reviewed_source_sha256": "fb892a1d7aee6a45025fdd181803a0ab5163beafae0a1c2fa30f72a2c8d10ad6",
+      "title": "All thirty-six Hanford pair rejections now carry primary and complete reason sets",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/13-hanford-36-pair-rejections-classified.txt",
+      "download_sha256": "66747705226b7e001f725bec8cce480edf22023320cda75b3826cb2c7f78c03e",
+      "signal_file": "signal-57j-hanford-36-pair-rejections-classified.mdx",
+      "signal_sha256": "1050e7fbad81cca4bc6995a7424cb6e39444748f8c83cbc276738ec483fe9faa",
+      "signal_excerpt": "Thirty-two pairs reject first on stage and four on measure; every pair also retains its full failed-check list across the eleven-field validator.",
+      "historical_decision": {
+        "action_key": "HANFORD-PAIR-REJECTION-QUEUE-EXECUTION-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Observation and transition rejection taxonomy",
+        "finding": "Thirty-two pairs reject first on stage and four on measure; every pair also retains its full failed-check list across the eleven-field validator.",
+        "denominator": "Thirty-six pair reviews: thirty-two stage-primary rejections, four measure-primary rejections, and zero accepted joins.",
+        "evidence_limits": [
+          "Primary reason does not erase other failed checks.",
+          "Compatible units alone do not permit a join.",
+          "Pair review is not yield calculation."
+        ],
+        "next_action": "Recompute only from revised source records with all eleven fields explicit.",
+        "structured_registry_file": "phase-57j-hanford-observation-transition-rejection-taxonomy.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-hanford-14-transition-requirements-rejected",
+      "slug": "57j-hanford-14-transition-requirements-rejected",
+      "source_file": "research-documents/828-57j-hanford-14-transition-requirements-rejected.json",
+      "reviewed_source_sha256": "a8debf0dcf952d020ef21321a95b7578b72af9155e81d72ac8a345c5cb15fa7c",
+      "title": "Fourteen Hanford lifecycle transitions remain rejected pending custody evidence",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/14-hanford-14-transition-requirements-rejected.txt",
+      "download_sha256": "830ee8a074e5e51eade376d69e0cf437be90dbb917ac3eb284ef64001046d063",
+      "signal_file": "signal-57j-hanford-14-transition-requirements-rejected.mdx",
+      "signal_sha256": "574f8cc284b7ea67f28cb137e54bdd6647820f421d61a897bfaf8404654bed55",
+      "signal_excerpt": "Every transition requires stable batch and container joins, dated transfer and receipt, compatible units and method, and explicit quality and acceptance state.",
+      "historical_decision": {
+        "action_key": "HANFORD-TRANSITION-EVIDENCE-QUEUE-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Observation and transition rejection taxonomy",
+        "finding": "Every transition requires stable batch and container joins, dated transfer and receipt, compatible units and method, and explicit quality and acceptance state.",
+        "denominator": "Fourteen transition reviews, seventy rejection-reason assignments, and zero accepted custody transfers.",
+        "evidence_limits": [
+          "Lifecycle adjacency is not custody evidence.",
+          "Shared custodian names are not stable identities.",
+          "A process animation is not a transfer ledger."
+        ],
+        "next_action": "Reopen a transition only with source-explicit transfer, receipt, identity, method, and acceptance evidence.",
+        "structured_registry_file": "phase-57j-hanford-observation-transition-rejection-taxonomy.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-hanford-zero-material-balance-or-custody-promotions",
+      "slug": "57j-hanford-zero-material-balance-or-custody-promotions",
+      "source_file": "research-documents/829-57j-hanford-zero-material-balance-or-custody-promotions.json",
+      "reviewed_source_sha256": "bf5b678aac4b6dd3ec2b960aea2f4653fb16e7a57a9a489584a13a5ecb6355a5",
+      "title": "Hanford backfill promotes zero custody transfers or complete material balances",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/15-hanford-zero-material-balance-or-custody-promotions.txt",
+      "download_sha256": "5e5044bdc83a494f8ba0593b8b959201e48bf7d907cf44261fbc499db05fb609",
+      "signal_file": "signal-57j-hanford-zero-material-balance-or-custody-promotions.mdx",
+      "signal_sha256": "a045a5cb3e7458a9251596e14cdf0d9b90a0e035ae53957d2c9f985f7f4153f9",
+      "signal_excerpt": "The observation, pair, and transition queues finish with zero public batch IDs, container IDs, accepted custody transfers, direct numeric joins, or complete material balances.",
+      "historical_decision": {
+        "action_key": "HANFORD-BACKFILL-ZERO-PROMOTIONS-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Observation and transition rejection taxonomy",
+        "finding": "The observation, pair, and transition queues finish with zero public batch IDs, container IDs, accepted custody transfers, direct numeric joins, or complete material balances.",
+        "denominator": "Nine observations, thirty-six pairs, fourteen transitions, and zero promoted material joins.",
+        "evidence_limits": [
+          "Cumulative volume is not a reconciled balance.",
+          "Container counts do not imply identified lineage.",
+          "No yield or loss rate is computed."
+        ],
+        "next_action": "Keep the complete material-balance hold open until all stages reconcile.",
+        "structured_registry_file": "phase-57j-hanford-observation-transition-rejection-taxonomy.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-nnsa-72-cells-864-dimension-classifications",
+      "slug": "57j-nnsa-72-cells-864-dimension-classifications",
+      "source_file": "research-documents/830-57j-nnsa-72-cells-864-dimension-classifications.json",
+      "reviewed_source_sha256": "01127e3a1a76d6c7d19d1e75b1845bf5bc8ec96460fb16708adac3586ed98288",
+      "title": "NNSA's seventy-two object-version cells now carry 864 bounded dimension classifications",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/16-nnsa-72-cells-864-dimension-classifications.txt",
+      "download_sha256": "1e8fc8366a447c3f57747b1828dfa4762e55e59a494a30cd6d9bdb77212a30d1",
+      "signal_file": "signal-57j-nnsa-72-cells-864-dimension-classifications.mdx",
+      "signal_sha256": "32726b9693a7cee486642a7a302623d083bf184d588c44aed13e4fad63ed72ab",
+      "signal_excerpt": "Every cell is classified across presence, absence, scope, cost, schedule, capacity, qualification, output, completion, capability, implementation, and independent closure.",
+      "historical_decision": {
+        "action_key": "NNSA-COMPLETE-CELL-CLASSIFICATION-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Object-version classification queue",
+        "finding": "Every cell is classified across presence, absence, scope, cost, schedule, capacity, qualification, output, completion, capability, implementation, and independent closure.",
+        "denominator": "Eighteen objects, four source versions, seventy-two cells, twelve dimensions, and 864 classifications.",
+        "evidence_limits": [
+          "Classification is not value extraction.",
+          "A source-specific state cannot cross object scope.",
+          "No operating state is promoted."
+        ],
+        "next_action": "Replace a bounded dimension state only with exact object-level evidence.",
+        "structured_registry_file": "phase-57j-nnsa-object-version-classification-queue.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-nnsa-30-agency-present-30-not-used-cells",
+      "slug": "57j-nnsa-30-agency-present-30-not-used-cells",
+      "source_file": "research-documents/831-57j-nnsa-30-agency-present-30-not-used-cells.json",
+      "reviewed_source_sha256": "4ab82b0ed1aaef4a770d5a150d5d001d86c5e5fda81198d7f94fbae86cfbafab",
+      "title": "Thirty NNSA cells carry bounded agency states and thirty are explicitly not used",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/17-nnsa-30-agency-present-30-not-used-cells.txt",
+      "download_sha256": "2b375d2105c849625661bb45d45151dbf4d1598c652fded2eae4529c61976979",
+      "signal_file": "signal-57j-nnsa-30-agency-present-30-not-used-cells.mdx",
+      "signal_sha256": "09d73f8495ce06546347b07ee0264865261b5bcc6f7e7d741fe9caa8b9c25c19",
+      "signal_excerpt": "Agency-source presence and not-used-for-object-scope decisions remain distinct; a not-used cell creates no negative factual inference.",
+      "historical_decision": {
+        "action_key": "NNSA-AGENCY-PRESENCE-ABSENCE-TAXONOMY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Object-version classification queue",
+        "finding": "Agency-source presence and not-used-for-object-scope decisions remain distinct; a not-used cell creates no negative factual inference.",
+        "denominator": "Sixty agency-source cell classifications: thirty present bounded and thirty not used for object scope.",
+        "evidence_limits": [
+          "Not used is not absent in the real world.",
+          "Presence is not implementation.",
+          "Source versions retain their effective periods."
+        ],
+        "next_action": "Review future agency versions against the same object and dimension keys.",
+        "structured_registry_file": "phase-57j-nnsa-object-version-classification-queue.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-nnsa-12-independent-source-cells-separated",
+      "slug": "57j-nnsa-12-independent-source-cells-separated",
+      "source_file": "research-documents/832-57j-nnsa-12-independent-source-cells-separated.json",
+      "reviewed_source_sha256": "b6cad9c326ac015aefed5c914c43d8194f340593c5b22bdf9fc42277d3a318e0",
+      "title": "Twelve independent-source NNSA cells remain separate from agency operating states",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/18-nnsa-12-independent-source-cells-separated.txt",
+      "download_sha256": "a5cdcaf8c9b7d64433cdd68257c8807ed3d7f6f63b5aee92e16ac9c886e7be11",
+      "signal_file": "signal-57j-nnsa-12-independent-source-cells-separated.mdx",
+      "signal_sha256": "abda7e7056c6d9047f2384d420fdab8ad7b54d2c56c0b786c7c245721fcd3594",
+      "signal_excerpt": "Eleven cells retain independent project-assessment state and one retains independent recommendation status without substituting agency evidence or promoting closure.",
+      "historical_decision": {
+        "action_key": "NNSA-INDEPENDENT-AUTHORITY-CELL-TAXONOMY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Object-version classification queue",
+        "finding": "Eleven cells retain independent project-assessment state and one retains independent recommendation status without substituting agency evidence or promoting closure.",
+        "denominator": "Eleven GAO project-assessment cells and one GAO recommendation-status cell.",
+        "evidence_limits": [
+          "Independent assessment is not agency acceptance.",
+          "Recommendation status is not enterprise capacity.",
+          "No closure is inferred from publication."
+        ],
+        "next_action": "Join later GAO states only to the exact project or recommendation object.",
+        "structured_registry_file": "phase-57j-nnsa-object-version-classification-queue.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-nnsa-10-bounded-diffs-linked-to-classification-queue",
+      "slug": "57j-nnsa-10-bounded-diffs-linked-to-classification-queue",
+      "source_file": "research-documents/833-57j-nnsa-10-bounded-diffs-linked-to-classification-queue.json",
+      "reviewed_source_sha256": "c38bdb5b50791b93d8ff7ba24d6172644722770c6efb1e5b7b8ccd4e5b2e3064",
+      "title": "Ten NNSA bounded source diffs now link to the complete classification queue",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/19-nnsa-10-bounded-diffs-linked-to-classification-queue.txt",
+      "download_sha256": "98ed260a76ab93789707cf2db5a4673414820355e2d1a2168a3af538658e6e1b",
+      "signal_file": "signal-57j-nnsa-10-bounded-diffs-linked-to-classification-queue.mdx",
+      "signal_sha256": "a57c6449550834d258cf3c29f44ef8839579eecf95490dd9a8185d9fc839273a",
+      "signal_excerpt": "Each retained diff carries the twelve review dimensions while preserving object identity, source version, scope, cost concept, and authority.",
+      "historical_decision": {
+        "action_key": "NNSA-BOUNDED-DIFF-QUEUE-EXECUTION-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Object-version classification queue",
+        "finding": "Each retained diff carries the twelve review dimensions while preserving object identity, source version, scope, cost concept, and authority.",
+        "denominator": "Ten bounded diff events linked to seventy-two classified cells.",
+        "evidence_limits": [
+          "A budget change is not recurring output.",
+          "A schedule statement is not project completion.",
+          "A source diff is not a closure change."
+        ],
+        "next_action": "Review later diffs against exact object-version cells before publication.",
+        "structured_registry_file": "phase-57j-nnsa-object-version-classification-queue.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-nnsa-zero-outcome-capability-implementation-closure-promotions",
+      "slug": "57j-nnsa-zero-outcome-capability-implementation-closure-promotions",
+      "source_file": "research-documents/834-57j-nnsa-zero-outcome-capability-implementation-closure-promotions.json",
+      "reviewed_source_sha256": "74121a025afd53bc6f39fa4c08af1f21fb3c7f01ebef04806382db5e518f4e45",
+      "title": "NNSA classification promotes zero outcomes, capability, implementation, or closure states",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/20-nnsa-zero-outcome-capability-implementation-closure-promotions.txt",
+      "download_sha256": "36e218515ac5cea439f9bd991e8aa1ace5bcacd753f0ca3e5cf575f37b802b89",
+      "signal_file": "signal-57j-nnsa-zero-outcome-capability-implementation-closure-promotions.mdx",
+      "signal_sha256": "02a206a0cbdaf1303ef54ed4a5466c59eb9cb5daeb42674dc77448ede22be240",
+      "signal_excerpt": "Completing all seventy-two cells changes no recurring output, accepted capacity, capability, implementation, project completion, or independent recommendation closure.",
+      "historical_decision": {
+        "action_key": "NNSA-CLASSIFICATION-ZERO-PROMOTIONS-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Object-version classification queue",
+        "finding": "Completing all seventy-two cells changes no recurring output, accepted capacity, capability, implementation, project completion, or independent recommendation closure.",
+        "denominator": "Seventy-two classified cells, ten bounded diffs, and zero promoted operating or closure states.",
+        "evidence_limits": [
+          "Taxonomy completion is not program completion.",
+          "Capacity plans are not accepted operating capacity.",
+          "The exact GAO enterprise baseline remains separate and Open."
+        ],
+        "next_action": "Preserve the three NNSA outcome holds until their exact reopening conditions are met.",
+        "structured_registry_file": "phase-57j-nnsa-object-version-classification-queue.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-preserved-amtrak-pids-closeout-reliability-hold",
+      "slug": "57j-preserved-amtrak-pids-closeout-reliability-hold",
+      "source_file": "research-documents/835-57j-preserved-amtrak-pids-closeout-reliability-hold.json",
+      "reviewed_source_sha256": "9a6a2dd2f2eeffb41532cb583405b07ab21a9e992b918acf60e733dd56f60c83",
+      "title": "Amtrak PIDS closeout hold: historical lineage does not resolve the 2026 asset register",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Technical Report",
+      "publication_date": "2026-06-01",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/21-preserved-amtrak-pids-closeout-reliability-hold.txt",
+      "download_sha256": "9a73bca3c1c926b7c437d17b3a1a7c5a9331378e60a5ba04d2031bbf68bfce33",
+      "signal_file": "signal-57j-preserved-amtrak-pids-closeout-reliability-hold.mdx",
+      "signal_sha256": "9b47e76de04ee39193e9d8e034830bbd948252181c9d8dbb3254f8f33a5132cf",
+      "signal_excerpt": "The historical 120-station and 96-completion cohort clarifies lineage but does not reconcile the June 2026 93-deployment and 117-installation counts or establish accepted closeout and operating quality.",
+      "historical_decision": {
+        "action_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-09",
+        "parent_hold_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-08",
+        "record_status": "In Review",
+        "evidence_stage": "Measured reliability outcome hold",
+        "finding": "The historical 120-station and 96-completion cohort clarifies lineage but does not reconcile the June 2026 93-deployment and 117-installation counts or establish accepted closeout and operating quality.",
+        "denominator": "One reconciled station-device register spanning the historical 120 and 96 records and the June 2026 93 and 117 records, with stable identities and acceptance state.",
+        "evidence_limits": [
+          "Historical portfolio structure cannot be assumed to match the 2026 scope.",
+          "Aggregate completion is not accepted closeout.",
+          "No compatible uptime, outage, use, complaint, resolution, or rider-outcome observations are public."
+        ],
+        "next_action": "Reopen only with accepted closeout, a reconciled station-device register, and compatible operating-quality observations.",
+        "structured_registry_file": null,
+        "publication_date": "2026-06-01"
+      }
+    },
+    {
+      "id": "research-doc-57j-preserved-amtrak-named-asset-reliability-hold",
+      "slug": "57j-preserved-amtrak-named-asset-reliability-hold",
+      "source_file": "research-documents/836-57j-preserved-amtrak-named-asset-reliability-hold.json",
+      "reviewed_source_sha256": "28300454b463c8d9a947abbfa069dac7f9f1e83e5361b2d72b73f06271b57bbb",
+      "title": "Amtrak named-asset reliability hold: station cohorts still lack asset-period outcomes",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Technical Report",
+      "publication_date": "2026-06-01",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/22-preserved-amtrak-named-asset-reliability-hold.txt",
+      "download_sha256": "bed588360bedea500299bcc516e42fd3636c901b1070b16fbd8a55518eaff60f",
+      "signal_file": "signal-57j-preserved-amtrak-named-asset-reliability-hold.mdx",
+      "signal_sha256": "595bd90cb5b903e1d20597505e8f6bfb713d6879867defb560ce5a72f05821ee",
+      "signal_excerpt": "Named historical station cohorts are available, but official reports still do not publish compatible asset-period reliability, actual-use, complaint, resolution, boarding-time, or rider-experience results.",
+      "historical_decision": {
+        "action_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-08",
+        "parent_hold_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-07",
+        "record_status": "In Review",
+        "evidence_stage": "Measured reliability outcome hold",
+        "finding": "Named historical station cohorts are available, but official reports still do not publish compatible asset-period reliability, actual-use, complaint, resolution, boarding-time, or rider-experience results.",
+        "denominator": "Each stable station and accessibility asset by reporting period, including installed, accepted, available, failed, repaired, used, complained, resolved, and rider-outcome fields.",
+        "evidence_limits": [
+          "Station identity alone does not identify each device or mobility asset.",
+          "Construction status does not establish reliability.",
+          "Aggregate engagement and remediation statements cannot supply asset-period outcomes."
+        ],
+        "next_action": "Reopen with stable asset identifiers and compatible asset-period reliability, use, complaint, and rider-outcome tables.",
+        "structured_registry_file": null,
+        "publication_date": "2026-06-01"
+      }
+    },
+    {
+      "id": "research-doc-57j-preserved-louisiana-nextlink-observed-adoption-hold",
+      "slug": "57j-preserved-louisiana-nextlink-observed-adoption-hold",
+      "source_file": "research-documents/837-57j-preserved-louisiana-nextlink-observed-adoption-hold.json",
+      "reviewed_source_sha256": "b6ebc2a076dcf765e33afbcc1523cfe9c6526539d247c6c69202d3110c87d585",
+      "title": "Louisiana Nextlink adoption hold: Montana's schema identifies fields but supplies no 104-location result",
+      "publisher": "Louisiana Office of Broadband Development and Connectivity",
+      "document_type": "Technical Report",
+      "publication_date": "2026-05-13",
+      "captured_date": "2026-08-03",
+      "official_url": "https://connect.la.gov/press-releases/nextlink-activates-first-bead-funded-tower-in-the-united-states-connecting-rural-louisiana",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/23-preserved-louisiana-nextlink-observed-adoption-hold.txt",
+      "download_sha256": "1e5c76afc373180275fb634f0c20b0a25fdded4c22b00c4c2522b131173aa214",
+      "signal_file": "signal-57j-preserved-louisiana-nextlink-observed-adoption-hold.mdx",
+      "signal_sha256": "7b68072ca21f6b40731448c464fae7ca1bd5937341722b32819da895b7a29cb8",
+      "signal_excerpt": "The 104 Nextlink locations remain serviceable without public installed, subscribed, tested, retained, priced, complained, remediated, or accepted-closeout outcomes; Montana's measurement schema is not Louisiana evidence.",
+      "historical_decision": {
+        "action_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-09",
+        "parent_hold_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-08",
+        "record_status": "In Review",
+        "evidence_stage": "Observed adoption outcome hold",
+        "finding": "The 104 Nextlink locations remain serviceable without public installed, subscribed, tested, retained, priced, complained, remediated, or accepted-closeout outcomes; Montana's measurement schema is not Louisiana evidence.",
+        "denominator": "The same 104 Bossier Parish BEAD locations followed through serviceability, installation, subscription, performance, retention, price, complaint, remediation, and accepted closeout.",
+        "evidence_limits": [
+          "Cross-state requirements cannot substitute for Louisiana results.",
+          "Provider-wide subscriber totals cannot be assigned to the 104-location cohort.",
+          "No privacy-safe cohort adoption table is public."
+        ],
+        "next_action": "Reopen with privacy-safe counts for all 104 locations at each adoption and acceptance stage.",
+        "structured_registry_file": null,
+        "publication_date": "2026-05-13"
+      }
+    },
+    {
+      "id": "research-doc-57j-preserved-louisiana-starlink-observed-adoption-hold",
+      "slug": "57j-preserved-louisiana-starlink-observed-adoption-hold",
+      "source_file": "research-documents/838-57j-preserved-louisiana-starlink-observed-adoption-hold.json",
+      "reviewed_source_sha256": "324ef567517361c43cc65aa529850e2d39b04ce1e3919687dceb89344d7ec68f",
+      "title": "Louisiana Starlink adoption hold: a comparable LEO schema exists but the 10,635-location cohort has no result",
+      "publisher": "Louisiana Office of Broadband Development and Connectivity",
+      "document_type": "Technical Report",
+      "publication_date": "2026-07-17",
+      "captured_date": "2026-08-03",
+      "official_url": "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/24-preserved-louisiana-starlink-observed-adoption-hold.txt",
+      "download_sha256": "5a5fb39e5abcfa139426fc7671d5e206dfbdce2d74e8ea2ce98feeee239759eb",
+      "signal_file": "signal-57j-preserved-louisiana-starlink-observed-adoption-hold.mdx",
+      "signal_sha256": "1da5ee5bcea8d146262c7a9a5b6a9c6e3e45ba1e8623841d8fd1ce48b5473737",
+      "signal_excerpt": "Montana defines a privacy-safe LEO reporting structure, but Louisiana's 10,635 planned Starlink locations still lack public activation, subscriber, test, retention, price, complaint, remediation, or accepted-closeout results.",
+      "historical_decision": {
+        "action_key": "LA-BEAD-STARLINK-HOLD-2026-09",
+        "parent_hold_key": "LA-BEAD-STARLINK-HOLD-2026-08",
+        "record_status": "In Review",
+        "evidence_stage": "Observed adoption outcome hold",
+        "finding": "Montana defines a privacy-safe LEO reporting structure, but Louisiana's 10,635 planned Starlink locations still lack public activation, subscriber, test, retention, price, complaint, remediation, or accepted-closeout results.",
+        "denominator": "The exact 10,635-location Louisiana agreement cohort reconciled to eligible, activated, installed, subscribed, tested, retained, complained, remediated, and accepted states.",
+        "evidence_limits": [
+          "Montana's reporting contract does not govern or measure Louisiana's award.",
+          "Availability targets are not activation or adoption.",
+          "No stable public subscriber or retention denominator is available."
+        ],
+        "next_action": "Reopen after activated locations and privacy-safe denominators, subscribers, tests, retention, price, complaints, remediation, and closeout are public.",
+        "structured_registry_file": null,
+        "publication_date": "2026-07-17"
+      }
+    },
+    {
+      "id": "research-doc-57j-preserved-montana-quarterly-observed-results-hold",
+      "slug": "57j-preserved-montana-quarterly-observed-results-hold",
+      "source_file": "research-documents/839-57j-preserved-montana-quarterly-observed-results-hold.json",
+      "reviewed_source_sha256": "237519256103ca914f0a24177b8895ac9ea09fc3fd7f22919c55470192996bdb",
+      "title": "Montana BEAD result hold: detailed terrestrial and LEO schemas still lack completed public awardee tables",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://doa.mt.gov/ConnectMT/iija/",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/25-preserved-montana-quarterly-observed-results-hold.txt",
+      "download_sha256": "efda2d9bdc4754c017d82a3c171ed01420e99e9bc6ae54288fa73147397f90e0",
+      "signal_file": "signal-57j-preserved-montana-quarterly-observed-results-hold.mdx",
+      "signal_sha256": "a465dcaf4842e3b0ee70882c6de639a965275fb817a880b7ca395993b5b17c7d",
+      "signal_excerpt": "ConnectMT publishes forms, instructions, served-location files, test controls, and monitoring guidance, but the public resource index does not expose completed awardee quarterly or closeout outcome tables.",
+      "historical_decision": {
+        "action_key": "MT-BEAD-QUARTERLY-HOLD-2026-09",
+        "parent_hold_key": "MT-BEAD-QUARTERLY-HOLD-2026-08",
+        "record_status": "In Review",
+        "evidence_stage": "Observed adoption outcome hold",
+        "finding": "ConnectMT publishes forms, instructions, served-location files, test controls, and monitoring guidance, but the public resource index does not expose completed awardee quarterly or closeout outcome tables.",
+        "denominator": "Each stable terrestrial or LEO award and approved location cohort by quarter, with served, subscribed, tested, retained, failed, remediated, and accepted counts.",
+        "evidence_limits": [
+          "A form index is not a submitted report.",
+          "Required fields cannot be read as zero or nonzero results.",
+          "No project-specific complaint, affordability, retention, or state-acceptance outcome is public."
+        ],
+        "next_action": "Reopen with completed privacy-safe quarterly or closeout tables and state acceptance or corrective-action decisions.",
+        "structured_registry_file": null,
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-preserved-hanford-complete-material-balance-hold",
+      "slug": "57j-preserved-hanford-complete-material-balance-hold",
+      "source_file": "research-documents/840-57j-preserved-hanford-complete-material-balance-hold.json",
+      "reviewed_source_sha256": "c44095d55167ab9c2115db7855a1d63f0a42384ffa35a956f4b2090139882d1d",
+      "title": "Hanford mass-balance hold: new cumulative and container observations still do not reconcile every stage",
+      "publisher": "U.S. Department of Energy Hanford Field Office and Washington State Department of Ecology",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://pdw.hanford.gov/download/v2/AR-39756",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/26-preserved-hanford-complete-material-balance-hold.txt",
+      "download_sha256": "a78f88a3c3bea4015c9b26792c1f274df85072196407574c318f8d5af3159968",
+      "signal_file": "signal-57j-preserved-hanford-complete-material-balance-hold.mdx",
+      "signal_sha256": "91ce2f9e0d537ac6de655ed93f3c987e276e7b53261fd50c9d22d18fcb22a27c",
+      "signal_excerpt": "The 19-container shipment record, the greater-than-100,000-gallon milestone, and later container snapshots deepen the ledger but do not produce a regulator-verifiable monthly batch and container mass balance.",
+      "historical_decision": {
+        "action_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-06",
+        "parent_hold_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-05",
+        "record_status": "In Review",
+        "evidence_stage": "Full output reconciliation hold",
+        "finding": "The 19-container shipment record, the greater-than-100,000-gallon milestone, and later container snapshots deepen the ledger but do not produce a regulator-verifiable monthly batch and container mass balance.",
+        "denominator": "The complete DFLAW monthly material balance from TSCR feed through LAW and EMF streams, glass, stable container identities, quality disposition, shipment, acceptance, disposal, secondary waste, and ending inventory.",
+        "evidence_limits": [
+          "Cumulative lower bounds cannot replace exact monthly flows.",
+          "Nominal container weight cannot replace measured material mass.",
+          "Separate dates, stages, and authorities cannot be assumed to describe one material cohort."
+        ],
+        "next_action": "Reopen only with a regulator-verifiable monthly balance and stable batch and container identities across all stages.",
+        "structured_registry_file": null,
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-preserved-nnsa-recurring-qualified-output-hold",
+      "slug": "57j-preserved-nnsa-recurring-qualified-output-hold",
+      "source_file": "research-documents/841-57j-preserved-nnsa-recurring-qualified-output-hold.json",
+      "reviewed_source_sha256": "f6c08926d27489c198359a077e6021eec62ed92e37cd4e00fabb47baaebdbf1a",
+      "title": "NNSA recurring-output hold: the public state conflict does not supply site-period yield",
+      "publisher": "National Nuclear Security Administration",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/nnsa/plutonium-pit-production",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/27-preserved-nnsa-recurring-qualified-output-hold.txt",
+      "download_sha256": "4381499031a5ecfea2d8c59239e199166855f048e6af6e57e979638319fa0d8d",
+      "signal_file": "signal-57j-preserved-nnsa-recurring-qualified-output-hold.mdx",
+      "signal_sha256": "44ec5e28a0b345d07a13f4b1a133de713f920b9e4bdc57b86539f9988174f24f",
+      "signal_excerpt": "The first production unit, current R&D-only capability statement, and future capacity goal still do not provide compatible produced, qualified, rejected, reworked, and accepted counts by site and period.",
+      "historical_decision": {
+        "action_key": "NNSA-PIT-RATE-HOLD-2026-09",
+        "parent_hold_key": "NNSA-PIT-RATE-HOLD-2026-08",
+        "record_status": "In Review",
+        "evidence_stage": "Qualified output outcome hold",
+        "finding": "The first production unit, current R&D-only capability statement, and future capacity goal still do not provide compatible produced, qualified, rejected, reworked, and accepted counts by site and period.",
+        "denominator": "Each named production site and reporting period with stable definitions for development, produced, qualified, rejected, reworked, accepted, and acceptance-authority states.",
+        "evidence_limits": [
+          "One first production unit does not establish recurrence.",
+          "A generalized capability statement is not a count.",
+          "A future annual capacity objective is not observed output."
+        ],
+        "next_action": "Reopen only with site-period produced, qualified, rejected, reworked, and accepted counts under stable definitions.",
+        "structured_registry_file": null,
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-preserved-nnsa-final-capacity-readiness-hold",
+      "slug": "57j-preserved-nnsa-final-capacity-readiness-hold",
+      "source_file": "research-documents/842-57j-preserved-nnsa-final-capacity-readiness-hold.json",
+      "reviewed_source_sha256": "35c907856ac7e4f5010b0bd55228c4078bcd0a5b8289b554ef8c63189b8a8660",
+      "title": "NNSA capacity hold: current two-site policy still does not establish final accepted operating capacity",
+      "publisher": "National Nuclear Security Administration",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/sites/default/files/2026-04/draft-eis-0573-plutonium-pit-production-vol-1-2026-04.pdf",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/28-preserved-nnsa-final-capacity-readiness-hold.txt",
+      "download_sha256": "9185bd847890ceae59030cd2dd3d865d15fcbcbceff8eb9cb0e08fd0f21e00e5",
+      "signal_file": "signal-57j-preserved-nnsa-final-capacity-readiness-hold.mdx",
+      "signal_sha256": "a7d7b2afeb0e49d69b79da7988ffd139ba890612491368f8592d620d92fbaac0",
+      "signal_excerpt": "The current two-site program description and draft PEIS alternatives do not supply a final decision, installed and accepted capacity, readiness authorization, or recurring qualified output.",
+      "historical_decision": {
+        "action_key": "NNSA-PIT-PEIS-HOLD-2026-09",
+        "parent_hold_key": "NNSA-PIT-PEIS-HOLD-2026-08",
+        "record_status": "In Review",
+        "evidence_stage": "Qualified output outcome hold",
+        "finding": "The current two-site program description and draft PEIS alternatives do not supply a final decision, installed and accepted capacity, readiness authorization, or recurring qualified output.",
+        "denominator": "The final decision, installed equipment, acceptance evidence, readiness authorization, and recurring output at Los Alamos and Savannah River as separate stages.",
+        "evidence_limits": [
+          "A policy approach is not a final site-specific readiness decision.",
+          "Analyzed or planned capacity is not installed accepted capacity.",
+          "No recurring qualified-output table is public."
+        ],
+        "next_action": "Reopen with a final decision, installed and accepted capacity, readiness authorization, and recurring qualified output.",
+        "structured_registry_file": null,
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57j-preserved-nnsa-exact-gao-baseline-hold",
+      "slug": "57j-preserved-nnsa-exact-gao-baseline-hold",
+      "source_file": "research-documents/843-57j-preserved-nnsa-exact-gao-baseline-hold.json",
+      "reviewed_source_sha256": "118cf5bdb27380e4e66a7caae28c5f5a230a196efbb9ed27a685b220a0860a8f",
+      "title": "NNSA enterprise-baseline hold: GAO's exact recommendation remains Open",
+      "publisher": "U.S. Government Accountability Office",
+      "document_type": "Technical Report",
+      "publication_date": "2026-04-30",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.gao.gov/products/gao-23-104661",
+      "download": "/downloads/historical-backfill-rejection-taxonomy-review-queue-execution-2026/official-links/29-preserved-nnsa-exact-gao-baseline-hold.txt",
+      "download_sha256": "030569a47a42ce28d1a5117ff396632416d0da3fcb866d74d06499b23ab47f43",
+      "signal_file": "signal-57j-preserved-nnsa-exact-gao-baseline-hold.mdx",
+      "signal_sha256": "b61e3da492c74d32debe6f593a3cc4521ee371e4717e552cccc2fa9957c4b62a",
+      "signal_excerpt": "GAO-23-104661 remains Open because a GAO-aligned lifecycle cost estimate is still absent; the December 2026 forecast and other portfolio-governance closures do not satisfy the exact recommendation.",
+      "historical_decision": {
+        "action_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-10",
+        "parent_hold_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-09",
+        "record_status": "In Review",
+        "evidence_stage": "Qualified output outcome hold",
+        "finding": "GAO-23-104661 remains Open because a GAO-aligned lifecycle cost estimate is still absent; the December 2026 forecast and other portfolio-governance closures do not satisfy the exact recommendation.",
+        "denominator": "The complete plutonium-modernization integrated master schedule and lifecycle cost estimate evaluated against GAO best practices and the exact GAO-23-104661 recommendation identity.",
+        "evidence_limits": [
+          "Forecast completion is not actual completion.",
+          "Different GAO recommendation identities cannot be substituted.",
+          "A public artifact must still receive the exact GAO sufficiency or closure decision."
+        ],
+        "next_action": "Reopen only when the complete integrated schedule and lifecycle-cost estimate are available and GAO records the exact recommendation sufficient or closed.",
+        "structured_registry_file": null,
+        "publication_date": "2026-04-30"
+      }
+    }
+  ],
+  "briefing": {
+    "source_file": "briefings/research-watch-040-historical-backfill-rejection-taxonomy-review-queue-execution.mdx",
+    "reviewed_source_sha256": "7fe7dcb9d1bfbb34ddb4e9d54e061efa39e1cfc0b4a5e695f431e6008bd23016"
+  },
+  "previous_reference_count": 718,
+  "previous_records_hash": "103368dbcc81c7449d953a674bf8134d45ae5eed57631b4ea3d692af6dc7a2a5",
+  "previous_signal_count": 703,
+  "previous_signal_records_hash": "60f74f124ebe817bae7ab550437af19873dd51744bb9a1e330186205098a10df",
+  "prior_input_pins": [
+    {
+      "path": "scripts/content-205-216/reference-attribution-reviews.json",
+      "sha256": "8ed1eecd8e010c40b5a79bf342be49de4efcd905940844e66c07be0dba56526d"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57x-inputs.json",
+      "sha256": "cecaa7493b4d47887667a517cb3af1144b76825c83b640110c7a755719a37a40"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57x-reviews.mjs",
+      "sha256": "8b99cc00c2e8e016db84afab5d0c8d93f420b70d1dc0bb6f20e9c10ec324de93"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57w-inputs.json",
+      "sha256": "85065aeb196a55678ba67b59580687f4a380df74c2f467b1511f98c738317eec"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57w-reviews.mjs",
+      "sha256": "b86fb2ffcb1f81c56310462c0b4ff450973676aff5b9d7ff20471a3da680f8e2"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57v-inputs.json",
+      "sha256": "312489bb869005e4ab593ea27c63e87b83a73ee3566a0654d20672f5f2ab2b15"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57v-reviews.mjs",
+      "sha256": "b6d2148b5d8f9baddfe7b4f27f4db8c6686fbc90c9229d370932f25aed1d8cf0"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57u-inputs.json",
+      "sha256": "caa5c688847423773852796fd6766aa684464f3c64ac879a5a4c7b1c88e162f5"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57u-reviews.mjs",
+      "sha256": "720924ca21c3b8c99c24428106127eb3d10571a8aaad3725b46f3aa06f34c7c4"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57t-inputs.json",
+      "sha256": "2b2eec85ae80748f6ed26e152b346774ebabb50c4adfceb0be5f6ea9ae399b2c"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57t-reviews.mjs",
+      "sha256": "87f22c8075743da8ef0604085d816eee2f113e2aaebc75615803b4bd96e64721"
+    },
+    {
+      "path": "src/content/updates/2026-09-14-reference-attribution-57y.json",
+      "sha256": "e9dacdae79838449ba0c156acfc9d187c0e54a119941152bb2e2640a87c202b9"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57x.json",
+      "sha256": "883e2fac41fdf6684a7c4bf9c4ef0a9bf5c68e1f4ed6e8b86fb31a0f3c084e85"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57w.json",
+      "sha256": "23b04e6d864b9a26a3701804de8d611fd8d6f91f90e6f53895eb458c438c26c9"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57v.json",
+      "sha256": "41de863c454da521d012715586bb4a1e38d148aec6340f8126dfd53769d3fca0"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57u.json",
+      "sha256": "facd3393fc901783b086f59a32afb370fe41dce35c635bf5fed5556785ef31b0"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57t.json",
+      "sha256": "d6dc337e431859d41930119ce4fa5904e1d70bed31041b3a06379fd768e7b468"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57rs-inputs.json",
+      "sha256": "d6b4febd5ca313287d6eee2507ae378eae0ff2951b6809f6c2350147e1f5089d"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57rs-reviews.mjs",
+      "sha256": "10f9d9b16993da3f2f873a1ffcfa25db41f1184d732e44baf9035e22b350b075"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57s.json",
+      "sha256": "26913dc9625c5318f9ffd44cff046412d42582225951a0dc9794ec7a8e5e073e"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57r.json",
+      "sha256": "b53e41d11b987edfc18321c2d3fc0c6561dd17d0d0f03265e6648a2a9c50f151"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57pq-inputs.json",
+      "sha256": "213313ce1afd3b76bc1b79a49250890087926e21eecf1d1311a8d9f80a6f3bdf"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57pq-reviews.mjs",
+      "sha256": "eb36087df69242fef0c10a4d593f26e057d13eeb5f6e4d6411c5ece6f8c0e9df"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57q.json",
+      "sha256": "8659cc4574e4dac1601f1d9c9f9cd6b84416211764494cfddea96327c474fc50"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57p.json",
+      "sha256": "ef8fa6f81466133a423e99f3f6078c5f0216c9f75590b6155c7debfc01c2bd0b"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57no-inputs.json",
+      "sha256": "6f49cd8fa084e720309061d0153bf7cd7ac224b0e535f4b38cd9e1928532c5e9"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57no-reviews.mjs",
+      "sha256": "f7112f72938db25bfbcecf1d5cc0f90dca4de2c19ea04f8c7ee705300c1dc737"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57o.json",
+      "sha256": "9f4f38e3ced99047b4b58f11183b58907601175a3bd97189886628ca07b3764d"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57n.json",
+      "sha256": "c0c587e7b3b4bc4a69433ba0184468d870d67750e328a83195a1e0f1e2c2cc16"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57m-inputs.json",
+      "sha256": "ae478d2113e3167d55c2084693646f063fd44292efa14e1525fe0f920e94fe10"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57m-reviews.mjs",
+      "sha256": "09e195f39e450026faac3208cc72c35f3f8829ac7f47b167c0d9949b35ac258f"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57m.json",
+      "sha256": "a15907cbc6659618a284c2510d9d57f63b07d0de71b83c58f2516c534c0aafa0"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57l-inputs.json",
+      "sha256": "ccf577930eff183f8824cd660838c767f794995226b15e3fd0fd8e78a6b6156d"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57l-reviews.mjs",
+      "sha256": "4aa404b8a023819f9298a31af3074e11b4f0031be688e948b0347313ca1332d4"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57l.json",
+      "sha256": "06ca8e99a073de0d207bd59aa384a404a7f1b2c2d9fe613c8eaa9d132b676150"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-57l-individual-classifications.json",
+      "sha256": "ed5270a57fcc99e4f86216b62f1ecaab5391d092e3cd693f2fdf62f5a007ac7b"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-56t-inputs.json",
+      "sha256": "71913fa4359c8971e39d80426595ee9e56d9f483db0f5a31894cb86266300bdb"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-56t-reviews.mjs",
+      "sha256": "08617927f2f25990d971d6fe664d8c80486d0f6e1903b4034c1711717f3ea869"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-56t.json",
+      "sha256": "3f7573cee51ed109d0730c3f61ccfca2028441baabef996f9db7cebf094344f2"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-56t-individual-classifications.json",
+      "sha256": "f207864a278d4c3d9e5128d80c79ed2175f11eb62cba0b3ab4cd85b572cce447"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57k-inputs.json",
+      "sha256": "cfbda756393625e145ac831fbe02a16566b62c17bd27ae2d5f456eb75933b412"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57k-reviews.mjs",
+      "sha256": "6f03b553eb5468374ea66cc8f80971da656a3272b52e960cfe2ade85b38991ee"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57k.json",
+      "sha256": "2138d9edf45e489e4b3e6ee442679b269961e925a2aa6854ba8173203e68bdc2"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-57k-individual-classifications.json",
+      "sha256": "c560fc6ab939407692ad4c00033ecd35bd06985246bee26d4f3774d41f2dc420"
+    }
+  ],
+  "supporting_registry_pins": [
+    {
+      "path": "src/data/phase-57j-historical-backfill-rejection-taxonomy-review-queue-execution.json",
+      "sha256": "e05c9ff188e00f8bf60a2ddbff7e26b942c3c3a9e2e22a3e156e2575aa402fc5"
+    },
+    {
+      "path": "src/data/phase-57j-amtrak-historical-snapshot-review-queue.json",
+      "sha256": "086b793aa69b3951fb0e65f3d18f245a3ae138da12ff01eca7b3d0888db4101c"
+    },
+    {
+      "path": "src/data/phase-57j-montana-migration-envelope-rejection-taxonomy.json",
+      "sha256": "66c47d92df0cdc2952279eede77e6fe1b03e5f0ee61454eda89d91bee9280a43"
+    },
+    {
+      "path": "src/data/phase-57j-hanford-observation-transition-rejection-taxonomy.json",
+      "sha256": "e6a8e05ec5e103872316b93079ac7720bca214428ebbce8fba1a328dcd186cb0"
+    },
+    {
+      "path": "src/data/phase-57j-nnsa-object-version-classification-queue.json",
+      "sha256": "b75cffdb5f47259078144fdf2fe55cda3d61882963ea3e58bbded8d33296f50e"
+    },
+    {
+      "path": "src/data/phase-57j-publication-review.json",
+      "sha256": "e9f824a8d9fb28f90bcb7a66c283eb9b20ad4debf962bc9595ccabe0254d9cd4"
+    },
+    {
+      "path": "scripts/generate-phase57j-content.mjs",
+      "sha256": "f5ff79095c08bf89d33d722d86b61fe36e1dcb6c853a06c3b50fcf49655bcdc9"
+    }
+  ],
+  "prior_signal_input_pins": [
+    {
+      "path": "scripts/content-205-216/claim-review-inputs.json",
+      "sha256": "0f0efdd1fa0d5528f17f9de8b33c1f1de2818bb772c31a2220d5aa0a303c44d1"
+    },
+    {
+      "path": "scripts/lib/classification-57l.mjs",
+      "sha256": "8574ade1418e5d3585bbba42e1f924b5543e1fbb9e5284a7a3f11d0f22c1e0b1"
+    }
+  ],
+  "current_evidence_hash": "a499d9fd1d00e9516adf247683e2540ba13f53aa7cd91f7606be5599601d0685"
+}

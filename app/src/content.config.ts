@@ -1,4 +1,5 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
+import { z } from "astro/zod";
 import { glob } from "astro/loaders";
 
 const frameworkLayer = z.enum([
@@ -397,7 +398,7 @@ const sources = defineCollection({
   schema: z.object({
     id: z.string(),
     name: z.string(),
-    url: z.string().url(),
+    url: z.url(),
     source_type: sourceType,
     credibility_level: credibilityLevel,
     primary_topics: requiredTopics,
@@ -409,11 +410,11 @@ const sources = defineCollection({
     last_checked_date: z.coerce.date(),
     watch_lanes: z.array(sourceWatchLane).default([]),
     live_access_type: sourceLiveAccessType.default("Manual Page Check"),
-    api_url: z.string().url().optional(),
-    feed_url: z.string().url().optional(),
-    data_download_url: z.string().url().optional(),
-    docket_search_url: z.string().url().optional(),
-    release_calendar_url: z.string().url().optional(),
+    api_url: z.url().optional(),
+    feed_url: z.url().optional(),
+    data_download_url: z.url().optional(),
+    docket_search_url: z.url().optional(),
+    release_calendar_url: z.url().optional(),
     review_cadence_days: z.number().int().positive().optional(),
     monitoring_status: sourceMonitoringStatus.default("Active"),
     coverage_role: z.array(sourceCoverageRole).default([]),
@@ -648,7 +649,8 @@ const researchDocuments = defineCollection({
     framework_layers: requiredFrameworkLayers,
     constraint_tags: requiredConstraints,
     source_id: z.string(),
-    official_url: z.string().url(),
+    supporting_source_ids: z.array(z.string()).default([]),
+    official_url: z.url(),
     local_capture_path: z.string(),
     archive_member: z.string(),
     capture_status: researchCaptureStatus,

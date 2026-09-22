@@ -1,10 +1,14 @@
 import type { APIRoute } from "astro";
 import registry from "../../data/phase-62-conversion-event-ledgers.json";
 import { publicDatasetResponse } from "../../lib/public-data";
+import {projectChecksFor} from '../../lib/current-project-checks.mjs';
+import {evidenceReceiptsForRecord} from '../../lib/current-evidence.mjs';
 
 export const GET: APIRoute = async () => {
   const records = registry.events.map((event) => ({
     event_id: event.event_id,
+    dated_project_checks: projectChecksFor(event.file_id),
+    dated_review_receipts: evidenceReceiptsForRecord(event.file_id),
     sequence: event.sequence,
     file_id: event.file_id,
     event_date: event.event_date,

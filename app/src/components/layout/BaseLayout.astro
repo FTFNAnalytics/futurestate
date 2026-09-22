@@ -1,19 +1,25 @@
 ---
 import "../../styles/tokens.css";
 import "../../styles/global.css";
+import CurrentEvidenceNotice from "../review/CurrentEvidenceNotice.astro";
+import CurrentOperationsNotice from '../review/CurrentOperationsNotice.astro';
+import BacklogResearchNotice from '../review/BacklogResearchNotice.astro';
 
 interface Props {
   title?: string;
   description?: string;
   robots?: string;
+  canonical?: string;
 }
 
 const {
   title = "FTFN",
   description = "FTFN is a future-state intelligence platform tracking possibility, urgency, and the stack of dependencies behind what comes next.",
-  robots = "index, follow"
+  robots = "index, follow",
+  canonical,
 } = Astro.props;
-const canonicalUrl = Astro.url.href;
+const canonicalUrl = canonical ? new URL(canonical, Astro.url).href : Astro.url.href;
+const socialImageUrl = new URL("/og.png", Astro.url).href;
 ---
 
 <!doctype html>
@@ -29,18 +35,26 @@ const canonicalUrl = Astro.url.href;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={socialImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="FTFN Public Reference — Possibility. Urgency. Dependencies." />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageUrl} />
     <title>{title}</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="site-shell">
       <header class="site-header">
         <div class="site-header__inner">
           <a class="brand" href="/">FTFN</a>
           <nav class="nav" aria-label="Primary">
             <a href="/signals/">Signals</a>
+            <a href="/reference/">Reference</a>
+            <a href="/reference/explore/1/">Explore</a>
             <a href="/review/">Review</a>
             <a href="/atlas/">Atlas</a>
             <a href="/research/">Research</a>
@@ -50,7 +64,10 @@ const canonicalUrl = Astro.url.href;
           </nav>
         </div>
       </header>
-      <main class="site-main">
+      <main class="site-main" id="main-content" tabindex="-1">
+        <CurrentEvidenceNotice />
+        <CurrentOperationsNotice />
+        <BacklogResearchNotice />
         <slot />
       </main>
       <footer class="site-footer">

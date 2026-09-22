@@ -1,0 +1,19 @@
+---
+import {referenceAttributionUpdateFor} from '../../lib/reference-attribution.mjs';
+const {review}=Astro.props;
+---
+{review && <aside class="page-section status-panel" aria-label="Current attribution correction" data-reference-attribution={review.id}>
+  <div class="status-item">
+    <h2>{review.content_type}</h2>
+    <p>{review.reason}</p>
+    <p>Attribution reviewed {review.review_date}. This is not a new external source check, a historical test rerun, independent approval, or a change to publication state.</p>
+    <p><a href={`/updates/${referenceAttributionUpdateFor(review.id)}/`}>Read the dated correction</a></p>
+  </div>
+  <div class="status-item">
+    <h2>Historical record retained</h2>
+    <p>Prior title: {review.prior.title}</p>
+    {review.inherited_publisher_label && <p>Inherited publisher label: {review.inherited_publisher_label}. This label does not establish authorship of the FTFN record.</p>}
+    {review.historical_download && <p><a href={review.historical_download.path} download>Original historical link file — uncorrected labels</a>. Use the corrected download above for current attribution.</p>}
+    {review.related_signal_id && <p><a href={`/signals/${review.related_signal_id.replace(/^signal-/, '')}/`}>Related signal and any later dated decisions</a>. A later review of that signal does not retroactively update this historical document.</p>}
+  </div>
+</aside>}

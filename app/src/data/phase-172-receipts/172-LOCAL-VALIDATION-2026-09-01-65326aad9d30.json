@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "receipt_id": "172-LOCAL-VALIDATION-2026-09-01-65326aad9d30",
+  "receipt_type": "Local Validation",
+  "phase": 172,
+  "effective_date": "2026-09-01",
+  "validated_date": "2026-09-01",
+  "validated_at": "2026-09-01T08:35:00.884Z",
+  "status": "Passed",
+  "validation_result": "Passed local Phase 165–172 evidence-to-publication-cycle checks",
+  "validator_contract_version": "phase-172-local-validator-v1",
+  "scope": "Local validation of the append-only Phase 165–172 September evidence-to-publication cycle. The receipt validates content, routes, exports, and release assertions only; it does not create evidence, supply an owner decision, authorize repository publication or hosting, close future calendar work, or promote v1.",
+  "artifact_digest_algorithm": "sha256",
+  "artifact_digest_contract": "SHA-256 over the normalized nine schema-1.0 Phase 165–172 exports, exact ninety-route inventory, and eight dated updates. Only receipt-derived Phase 172 fields are normalized; evidence, calendar, owner, and publication states remain bound.",
+  "artifact_digest": "cdf822b6451e02523dbdcadfc0f21470011285033de55c919718785aaffd9b34",
+  "validation_bundle_digest": "65326aad9d3001cf04cd465a116d300e0095d9adbf64903acc2d174d7daf3e6d",
+  "public_html_routes": 90,
+  "public_json_exports": 9,
+  "publication_updates": 8,
+  "metrics": {
+    "overlay_public_html_routes": 90,
+    "structurally_audited_overlay_routes": 90,
+    "overlay_public_json_exports": 9,
+    "schema_1_0_overlay_exports": 9,
+    "overlay_update_records": 8,
+    "primary_records": 95,
+    "baseline_phase156_receipt_id": "156-LOCAL-VALIDATION-2026-08-31-a750bba9528e",
+    "baseline_phase156_artifact_digest": "5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a",
+    "baseline_phase164_receipt_id": "164-LOCAL-VALIDATION-2026-09-01-d2846dc22604",
+    "baseline_phase164_artifact_digest": "c306c3db8f861805be0482f82985df7de7fa1124b055f8e76023b5ba680c8a19",
+    "evidence_decision_receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+    "whole_site_snapshot": {
+      "html_pages_excluding_downloads": 6744,
+      "top_level_data_json_exports": 117,
+      "update_entries_rendered": 197,
+      "canonical_source_records": 820
+    }
+  },
+  "checks": [
+    {
+      "check_id": "immutable-baselines",
+      "status": "Passed",
+      "detail": "Exact Phase 156 and Phase 164 receipt/digest bindings preserved"
+    },
+    {
+      "check_id": "september-evidence-receipt",
+      "status": "Passed",
+      "detail": "receipt-60-louisiana-starlink-2026-09-01-no-material-change"
+    },
+    {
+      "check_id": "route-export-update-contract",
+      "status": "Passed",
+      "detail": "90 routes / 9 exports / 8 updates"
+    },
+    {
+      "check_id": "calendar-owner-boundary",
+      "status": "Passed",
+      "detail": "Future operations and all owner decisions remain unpredated and Held"
+    },
+    {
+      "check_id": "npm-run-validate-candidates",
+      "status": "Passed",
+      "detail": "npm run validate:candidates"
+    },
+    {
+      "check_id": "npm-run-validate-content",
+      "status": "Passed",
+      "detail": "npm run validate:content"
+    },
+    {
+      "check_id": "npm-run-source-health",
+      "status": "Passed",
+      "detail": "npm run source:health"
+    },
+    {
+      "check_id": "npm-run-test-v1rc",
+      "status": "Passed",
+      "detail": "npm run test:v1rc"
+    },
+    {
+      "check_id": "npm-run-test-v1month",
+      "status": "Passed",
+      "detail": "npm run test:v1month"
+    },
+    {
+      "check_id": "npm-run-test-v1cycle",
+      "status": "Passed",
+      "detail": "npm run test:v1cycle"
+    },
+    {
+      "check_id": "npm-run-check",
+      "status": "Passed",
+      "detail": "npm run check"
+    },
+    {
+      "check_id": "npm-run-build",
+      "status": "Passed",
+      "detail": "npm run build"
+    },
+    {
+      "check_id": "npm-run-verify-v1rc",
+      "status": "Passed",
+      "detail": "npm run verify:v1rc"
+    },
+    {
+      "check_id": "npm-run-verify-v1month",
+      "status": "Passed",
+      "detail": "npm run verify:v1month"
+    },
+    {
+      "check_id": "npm-run-verify-v1cycle",
+      "status": "Passed",
+      "detail": "npm run verify:v1cycle"
+    }
+  ],
+  "evidence_admission_authorized": false,
+  "owner_acceptance": false,
+  "github_publication_authorized": false,
+  "hosted_deployment_authorized": false,
+  "public_launch_authorized": false,
+  "v1_promotion_state": "Held",
+  "next_action": "Embed this receipt, rebuild, verify deterministic output, update the manifest, then operate the September 6 desk closures only on their lawful date."
+}

@@ -1,0 +1,2473 @@
+{
+  "schema_version": "1.0",
+  "phase": 190,
+  "program_id": "FTFN-PHASE-190",
+  "dataset": "phase_190_global_jurisdiction_system_profiles",
+  "title": "Global Jurisdiction System Profiles",
+  "effective_date": "2026-09-01",
+  "record_status": "Published operating scaffold",
+  "build_status": "Complete locally — external and owner-controlled decisions held",
+  "summary": "Publish twenty jurisdiction-level system-reading profiles that expose authority topology, evidence contracts, open acquisition slots, and non-equivalence boundaries without claiming artifact review or jurisdictional performance.",
+  "record_scope": "Append-only Phase 190 global-reference content layer over the Phase 116–180 evidence and operating corpus.",
+  "publication_boundaries": [
+    "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision.",
+    "An institutional home page is an authority-discovery rail, not an exact artifact and not evidence for a downstream claim.",
+    "Unknown, unavailable, not-yet-reviewed, and incompatible are preserved as distinct states; no unsuccessful search is treated as proof of nonexistence."
+  ],
+  "routes": {
+    "hub": "/review/global/jurisdictions/",
+    "public_export": "/data/phase-190-global-jurisdiction-system-profiles.json"
+  },
+  "counts": {
+    "jurisdiction_system_profiles": 20,
+    "regions": 8,
+    "authority_rail_bindings": 80,
+    "completed_artifact_reviews": 0,
+    "translation_review_decisions": 0
+  },
+  "jurisdiction_system_profiles": [
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-001",
+      "upstream_jurisdiction_id": "117-JURISDICTION-001",
+      "slug": "canada",
+      "title": "Canada system-evidence profile",
+      "jurisdiction_name": "Canada",
+      "region": "North America",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-001",
+          "source_id": "source-117-global-canada-statistics-canada",
+          "institution_name": "Statistics Canada",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-002",
+          "source_id": "source-117-global-canada-canada-energy-regulator",
+          "institution_name": "Canada Energy Regulator",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-003",
+          "source_id": "source-117-global-canada-impact-assessment-agency-of-canada",
+          "institution_name": "Impact Assessment Agency of Canada",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-004",
+          "source_id": "source-117-global-canada-innovation-science-and-economic-development-canada",
+          "institution_name": "Innovation, Science and Economic Development Canada",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read Canada through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in Canada can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-001",
+        "189-ARTIFACT-002",
+        "189-ARTIFACT-003",
+        "189-ARTIFACT-004",
+        "189-ARTIFACT-005",
+        "189-ARTIFACT-006",
+        "189-ARTIFACT-007",
+        "189-ARTIFACT-008"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/canada/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-002",
+      "upstream_jurisdiction_id": "117-JURISDICTION-002",
+      "slug": "australia",
+      "title": "Australia system-evidence profile",
+      "jurisdiction_name": "Australia",
+      "region": "Oceania",
+      "languages": [
+        "English"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-005",
+          "source_id": "source-117-global-australia-australian-bureau-of-statistics",
+          "institution_name": "Australian Bureau of Statistics",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-006",
+          "source_id": "source-117-global-australia-australian-energy-market-operator",
+          "institution_name": "Australian Energy Market Operator",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-007",
+          "source_id": "source-117-global-australia-infrastructure-australia",
+          "institution_name": "Infrastructure Australia",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-008",
+          "source_id": "source-117-global-australia-commonwealth-scientific-and-industrial-research-organisation",
+          "institution_name": "Commonwealth Scientific and Industrial Research Organisation",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read Australia through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in Australia can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-009",
+        "189-ARTIFACT-010",
+        "189-ARTIFACT-011",
+        "189-ARTIFACT-012",
+        "189-ARTIFACT-013",
+        "189-ARTIFACT-014",
+        "189-ARTIFACT-015",
+        "189-ARTIFACT-016"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/australia/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-003",
+      "upstream_jurisdiction_id": "117-JURISDICTION-003",
+      "slug": "european-union",
+      "title": "European Union system-evidence profile",
+      "jurisdiction_name": "European Union",
+      "region": "Europe",
+      "languages": [
+        "24 official EU languages"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-009",
+          "source_id": "source-117-global-european-union-eurostat",
+          "institution_name": "Eurostat",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-010",
+          "source_id": "source-117-global-european-union-european-commission-directorate-general-for-energy",
+          "institution_name": "European Commission Directorate-General for Energy",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-011",
+          "source_id": "source-117-global-european-union-eur-lex",
+          "institution_name": "EUR-Lex",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-012",
+          "source_id": "source-117-global-european-union-cordis",
+          "institution_name": "CORDIS",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read European Union through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in European Union can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-017",
+        "189-ARTIFACT-018",
+        "189-ARTIFACT-019",
+        "189-ARTIFACT-020",
+        "189-ARTIFACT-021",
+        "189-ARTIFACT-022",
+        "189-ARTIFACT-023",
+        "189-ARTIFACT-024"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/european-union/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-004",
+      "upstream_jurisdiction_id": "117-JURISDICTION-004",
+      "slug": "united-kingdom",
+      "title": "United Kingdom system-evidence profile",
+      "jurisdiction_name": "United Kingdom",
+      "region": "Europe",
+      "languages": [
+        "English",
+        "Welsh"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-013",
+          "source_id": "source-117-global-united-kingdom-office-for-national-statistics",
+          "institution_name": "Office for National Statistics",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-014",
+          "source_id": "source-117-global-united-kingdom-department-for-energy-security-and-net-zero",
+          "institution_name": "Department for Energy Security and Net Zero",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-015",
+          "source_id": "source-117-global-united-kingdom-planning-inspectorate",
+          "institution_name": "Planning Inspectorate",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-016",
+          "source_id": "source-117-global-united-kingdom-uk-research-and-innovation",
+          "institution_name": "UK Research and Innovation",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read United Kingdom through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in United Kingdom can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-025",
+        "189-ARTIFACT-026",
+        "189-ARTIFACT-027",
+        "189-ARTIFACT-028",
+        "189-ARTIFACT-029",
+        "189-ARTIFACT-030",
+        "189-ARTIFACT-031",
+        "189-ARTIFACT-032"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/united-kingdom/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-005",
+      "upstream_jurisdiction_id": "117-JURISDICTION-005",
+      "slug": "germany",
+      "title": "Germany system-evidence profile",
+      "jurisdiction_name": "Germany",
+      "region": "Europe",
+      "languages": [
+        "German",
+        "English"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-017",
+          "source_id": "source-117-global-germany-federal-statistical-office-of-germany",
+          "institution_name": "Federal Statistical Office of Germany",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-018",
+          "source_id": "source-117-global-germany-bundesnetzagentur",
+          "institution_name": "Bundesnetzagentur",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-019",
+          "source_id": "source-117-global-germany-german-environment-agency",
+          "institution_name": "German Environment Agency",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-020",
+          "source_id": "source-117-global-germany-federal-ministry-of-research-technology-and-space",
+          "institution_name": "Federal Ministry of Research, Technology and Space",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read Germany through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in Germany can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-033",
+        "189-ARTIFACT-034",
+        "189-ARTIFACT-035",
+        "189-ARTIFACT-036",
+        "189-ARTIFACT-037",
+        "189-ARTIFACT-038",
+        "189-ARTIFACT-039",
+        "189-ARTIFACT-040"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/germany/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-006",
+      "upstream_jurisdiction_id": "117-JURISDICTION-006",
+      "slug": "france",
+      "title": "France system-evidence profile",
+      "jurisdiction_name": "France",
+      "region": "Europe",
+      "languages": [
+        "French",
+        "English"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-021",
+          "source_id": "source-117-global-france-insee",
+          "institution_name": "INSEE",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-022",
+          "source_id": "source-117-global-france-rte",
+          "institution_name": "RTE",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-023",
+          "source_id": "source-117-global-france-ministry-for-ecological-transition",
+          "institution_name": "Ministry for Ecological Transition",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-024",
+          "source_id": "source-117-global-france-ademe",
+          "institution_name": "ADEME",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read France through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in France can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-041",
+        "189-ARTIFACT-042",
+        "189-ARTIFACT-043",
+        "189-ARTIFACT-044",
+        "189-ARTIFACT-045",
+        "189-ARTIFACT-046",
+        "189-ARTIFACT-047",
+        "189-ARTIFACT-048"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/france/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-007",
+      "upstream_jurisdiction_id": "117-JURISDICTION-007",
+      "slug": "netherlands",
+      "title": "Netherlands system-evidence profile",
+      "jurisdiction_name": "Netherlands",
+      "region": "Europe",
+      "languages": [
+        "Dutch",
+        "English"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-025",
+          "source_id": "source-117-global-netherlands-statistics-netherlands",
+          "institution_name": "Statistics Netherlands",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-026",
+          "source_id": "source-117-global-netherlands-netherlands-enterprise-agency",
+          "institution_name": "Netherlands Enterprise Agency",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-027",
+          "source_id": "source-117-global-netherlands-rijkswaterstaat",
+          "institution_name": "Rijkswaterstaat",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-028",
+          "source_id": "source-117-global-netherlands-pbl-netherlands-environmental-assessment-agency",
+          "institution_name": "PBL Netherlands Environmental Assessment Agency",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read Netherlands through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in Netherlands can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-049",
+        "189-ARTIFACT-050",
+        "189-ARTIFACT-051",
+        "189-ARTIFACT-052",
+        "189-ARTIFACT-053",
+        "189-ARTIFACT-054",
+        "189-ARTIFACT-055",
+        "189-ARTIFACT-056"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/netherlands/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-008",
+      "upstream_jurisdiction_id": "117-JURISDICTION-008",
+      "slug": "norway",
+      "title": "Norway system-evidence profile",
+      "jurisdiction_name": "Norway",
+      "region": "Europe",
+      "languages": [
+        "Norwegian",
+        "English"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-029",
+          "source_id": "source-117-global-norway-statistics-norway",
+          "institution_name": "Statistics Norway",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-030",
+          "source_id": "source-117-global-norway-norwegian-water-resources-and-energy-directorate",
+          "institution_name": "Norwegian Water Resources and Energy Directorate",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-031",
+          "source_id": "source-117-global-norway-norwegian-environment-agency",
+          "institution_name": "Norwegian Environment Agency",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-032",
+          "source_id": "source-117-global-norway-research-council-of-norway",
+          "institution_name": "Research Council of Norway",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read Norway through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in Norway can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-057",
+        "189-ARTIFACT-058",
+        "189-ARTIFACT-059",
+        "189-ARTIFACT-060",
+        "189-ARTIFACT-061",
+        "189-ARTIFACT-062",
+        "189-ARTIFACT-063",
+        "189-ARTIFACT-064"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/norway/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-009",
+      "upstream_jurisdiction_id": "117-JURISDICTION-009",
+      "slug": "sweden",
+      "title": "Sweden system-evidence profile",
+      "jurisdiction_name": "Sweden",
+      "region": "Europe",
+      "languages": [
+        "Swedish",
+        "English"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-033",
+          "source_id": "source-117-global-sweden-statistics-sweden",
+          "institution_name": "Statistics Sweden",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-034",
+          "source_id": "source-117-global-sweden-swedish-energy-agency",
+          "institution_name": "Swedish Energy Agency",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-035",
+          "source_id": "source-117-global-sweden-swedish-transport-administration",
+          "institution_name": "Swedish Transport Administration",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-036",
+          "source_id": "source-117-global-sweden-vinnova",
+          "institution_name": "Vinnova",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read Sweden through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in Sweden can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-065",
+        "189-ARTIFACT-066",
+        "189-ARTIFACT-067",
+        "189-ARTIFACT-068",
+        "189-ARTIFACT-069",
+        "189-ARTIFACT-070",
+        "189-ARTIFACT-071",
+        "189-ARTIFACT-072"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/sweden/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-010",
+      "upstream_jurisdiction_id": "117-JURISDICTION-010",
+      "slug": "japan",
+      "title": "Japan system-evidence profile",
+      "jurisdiction_name": "Japan",
+      "region": "Asia",
+      "languages": [
+        "Japanese",
+        "English"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-037",
+          "source_id": "source-117-global-japan-e-stat-japan",
+          "institution_name": "e-Stat Japan",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-038",
+          "source_id": "source-117-global-japan-ministry-of-economy-trade-and-industry",
+          "institution_name": "Ministry of Economy, Trade and Industry",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-039",
+          "source_id": "source-117-global-japan-ministry-of-land-infrastructure-transport-and-tourism",
+          "institution_name": "Ministry of Land, Infrastructure, Transport and Tourism",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-040",
+          "source_id": "source-117-global-japan-new-energy-and-industrial-technology-development-organization",
+          "institution_name": "New Energy and Industrial Technology Development Organization",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read Japan through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in Japan can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-073",
+        "189-ARTIFACT-074",
+        "189-ARTIFACT-075",
+        "189-ARTIFACT-076",
+        "189-ARTIFACT-077",
+        "189-ARTIFACT-078",
+        "189-ARTIFACT-079",
+        "189-ARTIFACT-080"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/japan/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-011",
+      "upstream_jurisdiction_id": "117-JURISDICTION-011",
+      "slug": "south-korea",
+      "title": "South Korea system-evidence profile",
+      "jurisdiction_name": "South Korea",
+      "region": "Asia",
+      "languages": [
+        "Korean",
+        "English"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-041",
+          "source_id": "source-117-global-south-korea-korean-statistical-information-service",
+          "institution_name": "Korean Statistical Information Service",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-042",
+          "source_id": "source-117-global-south-korea-ministry-of-trade-industry-and-energy",
+          "institution_name": "Ministry of Trade, Industry and Energy",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-043",
+          "source_id": "source-117-global-south-korea-korea-power-exchange",
+          "institution_name": "Korea Power Exchange",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-044",
+          "source_id": "source-117-global-south-korea-korea-institute-of-science-and-technology-evaluation-and-planning",
+          "institution_name": "Korea Institute of Science and Technology Evaluation and Planning",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read South Korea through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in South Korea can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-081",
+        "189-ARTIFACT-082",
+        "189-ARTIFACT-083",
+        "189-ARTIFACT-084"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/south-korea/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-012",
+      "upstream_jurisdiction_id": "117-JURISDICTION-012",
+      "slug": "singapore",
+      "title": "Singapore system-evidence profile",
+      "jurisdiction_name": "Singapore",
+      "region": "Asia",
+      "languages": [
+        "English",
+        "Malay",
+        "Mandarin",
+        "Tamil"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-045",
+          "source_id": "source-117-global-singapore-singapore-department-of-statistics",
+          "institution_name": "Singapore Department of Statistics",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-046",
+          "source_id": "source-117-global-singapore-energy-market-authority",
+          "institution_name": "Energy Market Authority",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-047",
+          "source_id": "source-117-global-singapore-land-transport-authority",
+          "institution_name": "Land Transport Authority",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-048",
+          "source_id": "source-117-global-singapore-infocomm-media-development-authority",
+          "institution_name": "Infocomm Media Development Authority",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read Singapore through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in Singapore can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-085",
+        "189-ARTIFACT-086",
+        "189-ARTIFACT-087",
+        "189-ARTIFACT-088"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/singapore/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-013",
+      "upstream_jurisdiction_id": "117-JURISDICTION-013",
+      "slug": "india",
+      "title": "India system-evidence profile",
+      "jurisdiction_name": "India",
+      "region": "Asia",
+      "languages": [
+        "Hindi",
+        "English",
+        "regional languages"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-049",
+          "source_id": "source-117-global-india-open-government-data-platform-india",
+          "institution_name": "Open Government Data Platform India",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-050",
+          "source_id": "source-117-global-india-ministry-of-power",
+          "institution_name": "Ministry of Power",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-051",
+          "source_id": "source-117-global-india-central-electricity-authority",
+          "institution_name": "Central Electricity Authority",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-052",
+          "source_id": "source-117-global-india-ministry-of-new-and-renewable-energy",
+          "institution_name": "Ministry of New and Renewable Energy",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read India through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in India can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-089",
+        "189-ARTIFACT-090",
+        "189-ARTIFACT-091",
+        "189-ARTIFACT-092"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/india/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-014",
+      "upstream_jurisdiction_id": "117-JURISDICTION-014",
+      "slug": "new-zealand",
+      "title": "New Zealand system-evidence profile",
+      "jurisdiction_name": "New Zealand",
+      "region": "Oceania",
+      "languages": [
+        "English",
+        "Māori",
+        "New Zealand Sign Language"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-053",
+          "source_id": "source-117-global-new-zealand-stats-nz",
+          "institution_name": "Stats NZ",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-054",
+          "source_id": "source-117-global-new-zealand-electricity-authority",
+          "institution_name": "Electricity Authority",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-055",
+          "source_id": "source-117-global-new-zealand-ministry-of-business-innovation-and-employment",
+          "institution_name": "Ministry of Business, Innovation and Employment",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-056",
+          "source_id": "source-117-global-new-zealand-ministry-for-the-environment",
+          "institution_name": "Ministry for the Environment",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read New Zealand through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in New Zealand can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-093",
+        "189-ARTIFACT-094",
+        "189-ARTIFACT-095",
+        "189-ARTIFACT-096"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/new-zealand/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-015",
+      "upstream_jurisdiction_id": "117-JURISDICTION-015",
+      "slug": "brazil",
+      "title": "Brazil system-evidence profile",
+      "jurisdiction_name": "Brazil",
+      "region": "South America",
+      "languages": [
+        "Portuguese"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-057",
+          "source_id": "source-117-global-brazil-brazilian-institute-of-geography-and-statistics",
+          "institution_name": "Brazilian Institute of Geography and Statistics",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-058",
+          "source_id": "source-117-global-brazil-national-electric-energy-agency",
+          "institution_name": "National Electric Energy Agency",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-059",
+          "source_id": "source-117-global-brazil-energy-research-office",
+          "institution_name": "Energy Research Office",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-060",
+          "source_id": "source-117-global-brazil-ministry-of-science-technology-and-innovation",
+          "institution_name": "Ministry of Science, Technology and Innovation",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read Brazil through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in Brazil can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-097",
+        "189-ARTIFACT-098",
+        "189-ARTIFACT-099",
+        "189-ARTIFACT-100"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/brazil/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-016",
+      "upstream_jurisdiction_id": "117-JURISDICTION-016",
+      "slug": "chile",
+      "title": "Chile system-evidence profile",
+      "jurisdiction_name": "Chile",
+      "region": "South America",
+      "languages": [
+        "Spanish"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-061",
+          "source_id": "source-117-global-chile-national-statistics-institute-of-chile",
+          "institution_name": "National Statistics Institute of Chile",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-062",
+          "source_id": "source-117-global-chile-national-energy-commission",
+          "institution_name": "National Energy Commission",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-063",
+          "source_id": "source-117-global-chile-environmental-assessment-service",
+          "institution_name": "Environmental Assessment Service",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-064",
+          "source_id": "source-117-global-chile-ministry-of-energy",
+          "institution_name": "Ministry of Energy",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read Chile through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in Chile can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-101",
+        "189-ARTIFACT-102",
+        "189-ARTIFACT-103",
+        "189-ARTIFACT-104"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/chile/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-017",
+      "upstream_jurisdiction_id": "117-JURISDICTION-017",
+      "slug": "south-africa",
+      "title": "South Africa system-evidence profile",
+      "jurisdiction_name": "South Africa",
+      "region": "Africa",
+      "languages": [
+        "11 official languages"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-065",
+          "source_id": "source-117-global-south-africa-statistics-south-africa",
+          "institution_name": "Statistics South Africa",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-066",
+          "source_id": "source-117-global-south-africa-national-energy-regulator-of-south-africa",
+          "institution_name": "National Energy Regulator of South Africa",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-067",
+          "source_id": "source-117-global-south-africa-department-of-forestry-fisheries-and-the-environment",
+          "institution_name": "Department of Forestry, Fisheries and the Environment",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-068",
+          "source_id": "source-117-global-south-africa-council-for-scientific-and-industrial-research",
+          "institution_name": "Council for Scientific and Industrial Research",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read South Africa through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in South Africa can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-105",
+        "189-ARTIFACT-106",
+        "189-ARTIFACT-107",
+        "189-ARTIFACT-108"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/south-africa/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-018",
+      "upstream_jurisdiction_id": "117-JURISDICTION-018",
+      "slug": "mexico",
+      "title": "Mexico system-evidence profile",
+      "jurisdiction_name": "Mexico",
+      "region": "North America",
+      "languages": [
+        "Spanish"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-069",
+          "source_id": "source-117-global-mexico-inegi",
+          "institution_name": "INEGI",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-070",
+          "source_id": "source-117-global-mexico-secretariat-of-energy",
+          "institution_name": "Secretariat of Energy",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-071",
+          "source_id": "source-117-global-mexico-national-center-for-energy-control",
+          "institution_name": "National Center for Energy Control",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-072",
+          "source_id": "source-117-global-mexico-secretariat-of-environment-and-natural-resources",
+          "institution_name": "Secretariat of Environment and Natural Resources",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read Mexico through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in Mexico can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-109",
+        "189-ARTIFACT-110",
+        "189-ARTIFACT-111",
+        "189-ARTIFACT-112"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/mexico/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-019",
+      "upstream_jurisdiction_id": "117-JURISDICTION-019",
+      "slug": "united-arab-emirates",
+      "title": "United Arab Emirates system-evidence profile",
+      "jurisdiction_name": "United Arab Emirates",
+      "region": "Middle East",
+      "languages": [
+        "Arabic",
+        "English"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-073",
+          "source_id": "source-117-global-united-arab-emirates-federal-competitiveness-and-statistics-centre",
+          "institution_name": "Federal Competitiveness and Statistics Centre",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-074",
+          "source_id": "source-117-global-united-arab-emirates-ministry-of-energy-and-infrastructure",
+          "institution_name": "Ministry of Energy and Infrastructure",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-075",
+          "source_id": "source-117-global-united-arab-emirates-telecommunications-and-digital-government-regulatory-authority",
+          "institution_name": "Telecommunications and Digital Government Regulatory Authority",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-076",
+          "source_id": "source-117-global-united-arab-emirates-uae-space-agency",
+          "institution_name": "UAE Space Agency",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read United Arab Emirates through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in United Arab Emirates can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-113",
+        "189-ARTIFACT-114",
+        "189-ARTIFACT-115",
+        "189-ARTIFACT-116"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/united-arab-emirates/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "jurisdiction_system_profile_id": "190-PROFILE-020",
+      "upstream_jurisdiction_id": "117-JURISDICTION-020",
+      "slug": "multilateral-systems",
+      "title": "Multilateral systems system-evidence profile",
+      "jurisdiction_name": "Multilateral systems",
+      "region": "Global",
+      "languages": [
+        "Multilingual"
+      ],
+      "profile_state": "Published discovery architecture — no downstream findings",
+      "authority_topology": [
+        {
+          "rail_id": "117-RAIL-077",
+          "source_id": "source-117-global-multilateral-systems-world-bank-data",
+          "institution_name": "World Bank Data",
+          "authority_class": "Official statistics and measurement",
+          "evidence_role": "Discovery entry point for official statistical release, time series, methodology and revision note.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-078",
+          "source_id": "source-117-global-multilateral-systems-international-energy-agency",
+          "institution_name": "International Energy Agency",
+          "authority_class": "Energy, utility and system operation",
+          "evidence_role": "Discovery entry point for system plan or rule, operating data, capacity or reliability report.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-079",
+          "source_id": "source-117-global-multilateral-systems-oecd-data-explorer",
+          "institution_name": "OECD Data Explorer",
+          "authority_class": "Infrastructure, environment and territorial delivery",
+          "evidence_role": "Discovery entry point for project or assessment register, permit or authorization, delivery, completion or acceptance record.",
+          "downstream_finding": null
+        },
+        {
+          "rail_id": "117-RAIL-080",
+          "source_id": "source-117-global-multilateral-systems-international-renewable-energy-agency",
+          "institution_name": "International Renewable Energy Agency",
+          "authority_class": "Science, technology and industrial innovation",
+          "evidence_role": "Discovery entry point for research program or award, technical report, standard, trial or adoption record.",
+          "downstream_finding": null
+        }
+      ],
+      "system_reading": {
+        "scope": "Read Multilateral systems through separate official statistics, energy or system-operation, territorial delivery, and science or industrial-innovation rails where those classes are mapped.",
+        "governance_question": "Which body has authority over the exact decision, measurement, permit, funding instrument, operating record, or revision being cited?",
+        "delivery_question": "What named entity and conversion stage does the artifact actually support, and where does that support stop?",
+        "outcome_question": "Is there a repeated observation with stable identity, period, definition, method, unit, denominator, and revision treatment?",
+        "comparison_question": "Which definitions in Multilateral systems can be matched to another jurisdiction without erasing statutory, geographic, methodological, or institutional differences?"
+      },
+      "topic_ids": [
+        "topic-human-futures",
+        "topic-finance-and-risk",
+        "topic-climate",
+        "topic-energy",
+        "topic-water",
+        "topic-agriculture-and-bioeconomy",
+        "topic-critical-minerals",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-aviation",
+        "topic-advanced-manufacturing",
+        "topic-ai-for-science",
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-discovery-technologies",
+        "topic-space",
+        "topic-cybersecurity"
+      ],
+      "conversion_stages": [
+        "Named context or baseline",
+        "Recurring operation or output",
+        "Comparable outcome",
+        "Policy or authority",
+        "Build or implementation",
+        "Accepted service, product, or cutover",
+        "Finance, procurement, or agreement",
+        "Test, compliance, or qualification"
+      ],
+      "evidence_contract": {
+        "minimum_artifact_identity": [
+          "issuer",
+          "exact title",
+          "date",
+          "version",
+          "stable URL"
+        ],
+        "minimum_claim_identity": [
+          "named subject",
+          "geography",
+          "period",
+          "stage",
+          "measure",
+          "denominator",
+          "limitations"
+        ],
+        "prohibited_shortcuts": [
+          "portal identity as evidence",
+          "announcement as operation",
+          "forecast as observation",
+          "national aggregate as local outcome",
+          "cross-jurisdiction normalization without a passport"
+        ]
+      },
+      "exact_artifact_slot_ids": [
+        "189-ARTIFACT-117",
+        "189-ARTIFACT-118",
+        "189-ARTIFACT-119",
+        "189-ARTIFACT-120"
+      ],
+      "review_date": null,
+      "review_outcome": null,
+      "translation_review_decision": null,
+      "route": "/review/global/jurisdictions/multilateral-systems/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    }
+  ],
+  "public_html_routes": [
+    "/review/global/jurisdictions/",
+    "/review/global/jurisdictions/canada/",
+    "/review/global/jurisdictions/australia/",
+    "/review/global/jurisdictions/european-union/",
+    "/review/global/jurisdictions/united-kingdom/",
+    "/review/global/jurisdictions/germany/",
+    "/review/global/jurisdictions/france/",
+    "/review/global/jurisdictions/netherlands/",
+    "/review/global/jurisdictions/norway/",
+    "/review/global/jurisdictions/sweden/",
+    "/review/global/jurisdictions/japan/",
+    "/review/global/jurisdictions/south-korea/",
+    "/review/global/jurisdictions/singapore/",
+    "/review/global/jurisdictions/india/",
+    "/review/global/jurisdictions/new-zealand/",
+    "/review/global/jurisdictions/brazil/",
+    "/review/global/jurisdictions/chile/",
+    "/review/global/jurisdictions/south-africa/",
+    "/review/global/jurisdictions/mexico/",
+    "/review/global/jurisdictions/united-arab-emirates/",
+    "/review/global/jurisdictions/multilateral-systems/"
+  ],
+  "public_json_exports": [
+    "/data/phase-190-global-jurisdiction-system-profiles.json"
+  ]
+}

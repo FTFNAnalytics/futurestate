@@ -1,0 +1,71 @@
+---
+import type {ShelfRecord} from '../../lib/shelf-catalog';
+interface Props {records:ShelfRecord[];kind:string;page?:number;limit?:number;headingLevel?:2|3;}
+const {records,kind,page=1,limit=40,headingLevel=2}=Astro.props;
+const CardHeading=headingLevel===3?'h3':'h2';
+const shown=records.slice((page-1)*40,(page-1)*40+limit);
+const pages=Math.max(1,Math.ceil(records.length/40));
+const labels:Record<string,string>={status:'Status',kind:'Content kind',review:'Classification review',backlogReview:'Evidence research',topic:'Topic',type:'Record type',confidence:'Historical confidence',horizon:'Time horizon',evidence:'Evidence',sourceType:'Source type',watchLane:'Watch lane',documentType:'Document type',publisher:'Publisher',capture:'Capture',collection:'Collection',freshness:'Review cadence state',health:'Endpoint metadata',priority:'Priority',access:'Access type',cadence:'Cadence basis',relationship:'Relationship',entryType:'Change type',receipt:'Receipt type',materiality:'Materiality',geography:'Geography'};
+const filterKeys=[...new Set(records.flatMap(r=>Object.keys(r.filters)))];
+const meta=(r:ShelfRecord)=>[r.date,...['kind','status','type','confidence','evidence','review','freshness','health','relationship'].flatMap(key=>r.filters[key]??[])].filter(Boolean).join(' · ');
+---
+<div data-paged-shelf={kind} data-heading-level={headingLevel}>
+  <form class="filter-panel" aria-label={`${kind} shelf search`} data-signal-filter={kind==='signals'||undefined} data-research-filter={kind==='documents'||undefined} data-source-filter={kind==='sources'||undefined}>
+    <label>Search <input type="search" name="q" data-filter="search" /></label>
+    {filterKeys.map(key=><label>{labels[key]??key}<select name={key} data-filter={key}><option value="">All</option>{[...new Set(records.flatMap(r=>r.filters[key]??[]))].sort().map(v=><option value={v}>{v}</option>)}</select></label>)}
+    <button class="button" type="submit">Search records</button><button type="reset" class="button button--secondary">Clear filters</button>
+  </form>
+  <p role="status" aria-live="polite" data-shelf-status>Showing {shown.length} of {records.length} records. {limit<40&&records.length>limit?'This is a preview; open the complete first page below to avoid skipping records.':'Use the page links to browse the complete shelf.'}</p>
+  <div class="grid" data-shelf-results>{shown.map(r=><article class="record-card" data-shelf-card={r.id}><CardHeading><a href={r.route}>{r.title}</a></CardHeading><p>{r.summary}</p><p>{meta(r)}</p>{r.facts?.length?<dl>{r.facts.map(f=><div><dt>{f.label}</dt><dd>{f.value}</dd></div>)}</dl>:null}</article>)}</div>
+  <button class="button" data-shelf-more hidden>Show 40 more</button>
+  <nav aria-label={`${kind} shelf pages`} data-shelf-pages><p>{Array.from({length:pages},(_,i)=><a href={`/browse/${kind}/${i+1}/`} aria-current={limit>=40&&page===i+1?'page':undefined}>Page {i+1}{limit<40&&i===0?' (complete first page)':''} </a>)}</p></nav>
+  <noscript><p>Search requires JavaScript. All records remain available through the numbered static pages.</p></noscript>
+</div>
+<script>
+  import {searchShelf} from '../../lib/shelf-search.mjs';
+  document.querySelectorAll<HTMLElement>('[data-paged-shelf]').forEach(root=>{
+    const kind=root.dataset.pagedShelf!;
+    const form=root.querySelector('form')!;
+    const results=root.querySelector<HTMLElement>('[data-shelf-results]')!;
+    const status=root.querySelector<HTMLElement>('[data-shelf-status]')!;
+    const more=root.querySelector<HTMLButtonElement>('[data-shelf-more]')!;
+    let all:any[]|undefined, matches:any[]=[],shown=40,request=0;
+    function render(){
+      results.replaceChildren();
+      for(const r of matches.slice(0,shown)){
+        const card=document.createElement('article');card.className='record-card';card.dataset.shelfCard=r.id;
+        const heading=document.createElement(root.dataset.headingLevel==='3'?'h3':'h2'),link=document.createElement('a');link.href=r.route;link.textContent=r.title;heading.append(link);
+        const summary=document.createElement('p');summary.textContent=r.summary;
+        const meta=document.createElement('p');meta.textContent=[r.date,...['kind','status','type','confidence','evidence','review','freshness','health','relationship'].flatMap(key=>r.filters[key]??[])].filter(Boolean).join(' · ');
+        card.append(heading,summary,meta);results.append(card);
+        if(r.facts?.length){const facts=document.createElement('dl');for(const f of r.facts){const pair=document.createElement('div'),term=document.createElement('dt'),value=document.createElement('dd');term.textContent=f.label;value.textContent=f.value;pair.append(term,value);facts.append(pair);}card.append(facts);}
+      }
+      status.textContent=matches.length?`Showing ${Math.min(shown,matches.length)} of ${matches.length} matching records.`:'No records match these filters.';
+      more.hidden=shown>=matches.length;
+    }
+    async function search(push=true){
+      const token=++request;status.textContent='Searching the complete shelf…';
+      const filters=Object.fromEntries(new FormData(form).entries()) as Record<string,string>;
+      if(push){const url=new URL(location.href);url.search='';url.searchParams.set('shelf',kind);for(const[k,v]of Object.entries(filters))if(v)url.searchParams.set(k,v);history.pushState({},'',url);}
+      try{
+        if(!all){const response=await fetch(`/data/shelves/${kind}.json`);if(!response.ok)throw new Error('Unavailable');all=(await response.json()).records;}
+        if(token!==request)return;
+        matches=searchShelf(all,filters);shown=40;render();
+      }catch{if(token===request)status.textContent='Search is unavailable. Use the static page links below; the original records remain readable.';}
+    }
+    function restore(){const params=new URLSearchParams(location.search);if(params.get('shelf')!==kind)return;for(const input of Array.from(form.elements)){if(input instanceof HTMLInputElement||input instanceof HTMLSelectElement)input.value=params.get(input.name)??'';}void search(false);}
+    form.addEventListener('submit',event=>{event.preventDefault();void search();});
+    form.addEventListener('reset',()=>setTimeout(()=>void search(),0));
+    more.addEventListener('click',()=>{shown+=40;render();});
+    window.addEventListener('popstate',()=>location.reload());
+    restore();
+  });
+</script>
+<style>
+  nav p{display:flex;gap:.65rem;flex-wrap:wrap;}
+  nav a[aria-current="page"]{font-weight:700;text-decoration:underline;}
+  .filter-panel,.filter-panel label{min-width:0;max-width:100%;}
+  .filter-panel input,.filter-panel select{min-width:0;width:100%;max-width:100%;}
+  .record-card{min-width:0;overflow-wrap:anywhere;}
+  dt{font-weight:600;} dd{margin-inline-start:0;margin-bottom:.6rem;}
+</style>

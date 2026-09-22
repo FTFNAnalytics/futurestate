@@ -1,12 +1,9 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../../components/layout/BaseLayout.astro";
-import MetaPill from "../../components/ui/MetaPill.astro";
-import { getRecordCardClass, getStatusTone } from "../../lib/editorial";
+import PagedShelf from '../../components/review/PagedShelf.astro';
+import {getShelfCatalog} from '../../lib/shelf-catalog';
 
-const briefings = (await getCollection("briefings")).sort(
-  (a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf()
-);
+const {briefings}=await getShelfCatalog();
 ---
 
 <BaseLayout title="Briefings | FTFN">
@@ -14,23 +11,12 @@ const briefings = (await getCollection("briefings")).sort(
     <div class="eyebrow">Briefings</div>
     <h1 class="page-title">Synthesis across signals and constraints.</h1>
     <p class="lede">
-      Briefings collect signals into a readable cadence: what changed, which
-      constraints moved, and what deserves attention next.
+      FTFN syntheses of developments, research questions and methods. Historical
+      workflow briefings are not current external developments or source checks.
     </p>
   </section>
 
   <section class="page-section">
-    <div class="grid">
-      {briefings.map((briefing) => (
-        <article class={getRecordCardClass(briefing.data.record_status)}>
-          <h2><a href={`/briefings/${briefing.data.slug}/`}>{briefing.data.title}</a></h2>
-          <p>{briefing.data.summary}</p>
-          <div class="meta-row">
-            <MetaPill label={briefing.data.record_status} tone={getStatusTone(briefing.data.record_status)} />
-            <MetaPill label={`${briefing.data.signal_ids.length} signals`} />
-          </div>
-        </article>
-      ))}
-    </div>
+    <PagedShelf records={briefings} kind="briefings" />
   </section>
 </BaseLayout>

@@ -2,7 +2,7 @@
 
 Date: 2026-08-12
 
-Status: Wave 60B operating receipts complete and locally release-validated; eleven Evidence Cycle gates, content commit, private-runtime mapping, and owner-only deployment pending
+Status: Wave 60B release-verified; September 1 Wave 60C decision fully propagated with Git-backed release Held; ten Evidence Cycle gates, content commit, private-runtime mapping, and owner-only deployment pending
 
 ## Purpose
 
@@ -81,7 +81,7 @@ Only three inherited bindings are authorized:
 
 The other ten envelopes preserve explicit no-transfer decisions. In particular, DARPA Lift Challenge results cannot append to the Waymo operator file.
 
-All thirteen envelopes are `Scheduled`. Attempted surfaces are empty; access result, receipt type, receipt ID, decision date, and next check are null; propagation is `not_started`.
+At the Phase 67 preflight snapshot, all thirteen envelopes were `Scheduled`; later dated result sections supersede that historical operating count while preserving empty fields for future envelopes.
 
 ## 67C: Public Registry And Exports
 
@@ -117,7 +117,7 @@ Eight Published qualification playbooks cover:
 
 Four Published method guides define reusable validation, receiving-system acceptance, compatible recurring-operation, and comparable-outcome tests.
 
-`Evidence Return Control Room 001` explains the complete forty-five-record work state. Its two Wave 60B envelopes are now Release Verified and its eleven September-October envelopes remain future work.
+`Evidence Return Control Room 001` explains the complete forty-five-record work state. After Wave 60B, two envelopes were Release Verified and eleven September-October envelopes remained future work; the September 1 result below advances one decision while keeping Git-backed release Held.
 
 Two Published dependency maps expose the control logic:
 
@@ -173,7 +173,7 @@ Wave 60B closed from real dated checks:
 - the DARPA Lift Challenge returned a material results artifact and promoted the existing result signal without transferring evidence to a named file;
 - the Shuttle Landing Facility check returned a bounded No Material Change decision and appended the receipt to the Space Coast authority file without advancing its evidence stage.
 
-Two return envelopes are now Release Verified and eleven remain scheduled. The operational gate stays open through the September and October dates.
+Two Wave 60B return envelopes are Release Verified, the September 1 Wave 60C envelope is fully propagated with Git-backed release Held, and ten remain scheduled. The operational gate stays open through the September and October dates.
 
 Every real check must produce a Change Note, Watch Note, Correction, No Material Change, or Blocked Check, then propagate through the existing Phase 60-64 contracts. An unavailable or negative search does not prove nonexistence.
 
@@ -235,7 +235,7 @@ npm run verify:release
 
 Private-candidate validation, content references, source health, Astro diagnostics, the 488-case Phase 67 harness, Phase 58 through Phase 67 assertions, the 4,077-page production build, sitemap, canonical, export, required-output, private-registry, and full release gates pass. Astro reports zero errors, zero warnings, and one inherited non-blocking Phase 57L hint. Visual/browser QA was not requested. The generated-page count excludes twenty-five preserved HTML research captures under `downloads/`, consistent with the existing release-counting contract.
 
-The Wave 60B operating result retains the 4,077-page route set and updates the content state to 1,121 Published signals, 285 In Review signals, 91 updates, and 502 current Published-support sources. Two envelopes are Release Verified, eleven remain future scheduled, and no Phase 64 cell or operating-outcome state advanced.
+The Wave 60B operating result retains the 4,077-page route set and updates the content state to 1,121 Published signals, 285 In Review signals, 91 updates, and 502 current Published-support sources. Two envelopes are Release Verified, one September 1 envelope is fully propagated with Git-backed release Held, ten remain future scheduled, and no Phase 64 cell or operating-outcome state advanced.
 
 ## Stop Points
 
@@ -253,4 +253,14 @@ Phase 57W remains the live owner-only Sites version 79 checkpoint. Phase 67 depl
 
 ## Next Handoff
 
-Continue Evidence Cycle 001 with the September 1 Louisiana Starlink observed-adoption gate. Phase 68 should build `Compatible Series And Outcome Cohorts` only from packet families that have a real accepted identity, method, denominator, exception trail, and repeatable observation contract. Files without qualifying returns should remain in packet acquisition rather than entering a longitudinal or outcome panel.
+Continue Evidence Cycle 001 with the bounded September 8 Louisiana Starlink public-surface recheck and the independent September 9 Louisiana Nextlink and Toronto project-file gates. Phase 68 should build `Compatible Series And Outcome Cohorts` only from packet families that have a real accepted identity, method, denominator, exception trail, and repeatable observation contract. Files without qualifying returns should remain in packet acquisition rather than entering a longitudinal or outcome panel.
+
+## September 1 Wave 60C Return
+
+Return envelope `67-RETURN-003` now records the Louisiana Starlink No Material Change decision under receipt `receipt-60-louisiana-starlink-2026-09-01-no-material-change`. Its evidence propagation is complete, while Git-backed release remains Held. The decision keeps the signal In Review, creates no named-file transfer, advances no Phase 64 cell or qualification packet, and preserves all score, rank, and operating-outcome prohibitions. The return ledger therefore contains two Git-backed Release Verified Wave 60B envelopes, one fully propagated Git-held Wave 60C envelope, and ten scheduled envelopes.
+
+## September 8 Louisiana Starlink Companion Return
+
+Envelope `67-RETURN-003` now carries append-only companion receipt `receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change`. The seventeen-surface review fixes the planning denominator at 10,635 unique location IDs but returns no compatible observed installations, activated subscriptions, or service taken with a period and method. It preserves rather than replaces the September 1 decision and does not add a fourteenth envelope or cycle gate.
+
+No Phase 61 named file or Phase 67 qualification packet shares the Louisiana Starlink provider identity. The no-transfer decision is therefore explicit: zero named-file stages and zero Phase 64 cells advance. Content propagation is complete, Git-backed release remains Held, and the next review is an earlier exact-return trigger or the October 9 final audit.

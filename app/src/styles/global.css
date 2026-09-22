@@ -836,3 +836,9 @@ p {
     padding: var(--space-3);
   }
 }
+/* Phase 213: visible keyboard entry and robust long-source wrapping. */
+.skip-link { position: fixed; top: .5rem; left: .5rem; z-index: 1000; padding: .8rem 1rem; background: #fff; color: #102329; transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); outline: 3px solid #102329; }
+:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+.prose, .prose-page, .reference-reader { overflow-wrap: anywhere; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

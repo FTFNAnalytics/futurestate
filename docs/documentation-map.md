@@ -1,35 +1,41 @@
 # Documentation Map
 
+Current execution pointer: [September 22 next build stages](</C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/roadmap-next-stages-2026-09-22.md>). Current validation evidence: [September 22 operation and full local result](</C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/phase-207-arizona-recheck-2026-09-22.md>). Read these before older completion summaries.
+
 This map explains how the FTFN documentation system fits together, when each document should be updated, and how future work sessions should use it.
 
 The goal is simple: keep a very broad project legible as it grows.
 
 ## Read Order for Future Work Sessions
 
-Start each substantial work session in this order:
+For current execution, start with the [September 22 staged roadmap](</C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/roadmap-next-stages-2026-09-22.md>), the latest entries in the [session handoff](</C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/session-handoff-v0.2.md>), the September 22 validation evidence above, and the applicable Phase 205–216 work package. The complete local candidate passed on September 22; source checkpointing, clean-install reproduction, independent review and release decisions remain. Historical work-package references to pending build or repair approval must be read against the later dated result. Planning changes no evidence decision or publication authority.
 
-1. [v0.9 Session Handoff](session-handoff-v0.9.md)
-2. [v0.9 Build Summary](build-summary-v0.9.md)
-3. [v0.9 Roadmap](roadmap-v0.9.md)
-4. [v0.8 Build Summary](build-summary-v0.8.md) and [v0.8 Roadmap](roadmap-v0.8.md)
-5. [v0.7 Build Summary](build-summary-v0.7.md) and [v0.7 Roadmap](roadmap-v0.7.md)
-6. [Master Roadmap](master-roadmap.md)
-7. [README](../README.md)
-8. [Session Brief](session-brief.md)
-9. [Phase 144 v1 Launch-Candidate Audit Work Package](work-packages/phase-144-v1-launch-candidate-audit.md)
+Then read the implemented baseline in this order:
+
+1. [v1 Public Reference Edition Handoff](session-handoff-v1-public-reference-edition.md)
+2. [v1 Public Reference Edition Roadmap](roadmap-v1-public-reference-edition.md)
+3. [Phase 204 Promotion-Gate Work Package](work-packages/phase-204-v1-public-reference-edition-promotion-gate.md)
+4. [October Operating-Program Handoff](session-handoff-v1-october-operating-program.md)
+5. [October Operating Roadmap](roadmap-v1-october-operating-program.md)
+6. [September Evidence-to-Publication Handoff](session-handoff-v1-september-evidence-to-publication-cycle.md)
+7. [September Evidence-to-Publication Roadmap](roadmap-v1-september-evidence-to-publication-cycle.md)
+8. [September Operating Roadmap](roadmap-v1-september-operating-program.md)
+9. [v1 Release-Candidate Roadmap](roadmap-v1-release-candidate.md)
 10. [Phase 60 Operating-Cycle Work Package](work-packages/phase-60-evidence-to-decision-operating-cycle.md)
-11. [Build Manifest](../deployment/ftfn-v0.2-build.json), whose historical filename now carries the release-verified v0.9 contract
-12. [Decision Log](decision-log.md)
-13. [Publication Policy](publication-policy.md)
-14. [Editorial Method](editorial-method.md)
-15. [Content Model](content-model.md)
-16. [Review Checklists](review-checklists.md)
-17. [Source Strategy](source-strategy.md)
-18. [Source Monitoring Plan](source-monitoring-plan.md)
-19. [Information Architecture](information-architecture.md)
-20. The relevant Phase 130–144 work package in [work-packages](work-packages/)
+11. [Build Manifest](../deployment/ftfn-v0.2-build.json), whose historical filename carries the latest completed release contract
+12. [README](../README.md)
+13. [Master Roadmap](master-roadmap.md)
+14. [Decision Log](decision-log.md)
+15. [Publication Policy](publication-policy.md)
+16. [Editorial Method](editorial-method.md)
+17. [Content Model](content-model.md)
+18. [Review Checklists](review-checklists.md)
+19. [Source Strategy](source-strategy.md)
+20. [Source Monitoring Plan](source-monitoring-plan.md)
+21. [Information Architecture](information-architecture.md)
+22. The relevant Phase 181–204 work package in [work-packages](work-packages/)
 
-The v0.2, v0.1.1, and earlier release documents remain historical evidence. They should not replace the v0.9 handoff or be described as the current app baseline.
+The v0.9, v0.8, v0.7, v0.2, v0.1.1, and earlier release documents remain historical evidence. They should not replace the Phase 181–204 handoff or be described as the current content-build baseline.
 
 Use [Future Considerations](future-considerations.md) when the work touches theory, long-range ideas, or possible future features.
 
@@ -59,13 +65,83 @@ Do not use them for:
 
 The current chain is cumulative:
 
-- v0.7 / Phases 130–134 document owner-gated evidence admission;
-- v0.8 / Phases 135–139 document project/place conversion and longitudinal eligibility;
-- v0.9 / Phases 140–144 document living public intelligence, editorial cadence, and the v1 launch hold.
+- v0.7–v0.9 / Phases 130–144 establish evidence admission, conversion/longitudinal controls, and living public intelligence;
+- v1rc / Phases 145–156 establish the immutable release-candidate baseline;
+- v1month / Phases 157–164 establish the September operating overlay;
+- v1cycle / Phases 165–172 establish the live September evidence-to-publication layer;
+- v1oct / Phases 173–180 establishes the accelerated October operating overlay while retaining all future calendar and owner outcomes as null or Held;
+- v1ref / Phases 181–204 establishes the canonical, global, comparative, accessible, and flagship public-reference content layer while preserving every external evidence and authority boundary.
 
-The v0.9.0 local build contains 6,504 HTML pages, 86 public JSON exports, and 169 updates. The parent completion pass verified those figures through the clean build, dated Phase 144 receipt, manifest update, post-build verifier, and global release verifier on 2026-08-31. Commit, GitHub, hosting, public access, DNS, owner acceptance, and v1 remain separate states.
+The Phase 181–204 layer contributes 1,048 primary records, 3,216 unique public HTML routes, 25 JSON exports, and 24 dated updates. Its content, routes, and full-program local validation are complete under receipt `204-FULL-LOCAL-VALIDATION-2026-09-01-be92c873cfdb`; the validated whole-site snapshot contains 10,230 HTML pages, 151 top-level public JSON exports, 230 updates, and 830 canonical sources. Future evidence, owner decisions, expert and translation review, commit or Git publication, hosting, public access, DNS, and v1 promotion remain Held.
 
-### Current Phase 130–144 work-package chain
+### Current Phase 181–204 public-reference chain
+
+Use the Phase 181–204 packages as the current content-build contract. They are grouped here by program wave:
+
+**Canonical resource foundation — Phases 181–188**
+
+- [Phase 181 — Canonical Resource Map](work-packages/phase-181-canonical-resource-map.md)
+- [Phase 182 — Evidence and Source Backlog](work-packages/phase-182-evidence-source-backlog.md)
+- [Phase 183 — Missing-System Topic Missions](work-packages/phase-183-missing-system-topic-missions.md)
+- [Phase 184 — Canonical Topic Edition 2](work-packages/phase-184-canonical-topic-edition-2.md)
+- [Phase 185 — Global Place Systems Atlas I](work-packages/phase-185-global-place-systems-atlas-i.md)
+- [Phase 186 — Named Delivery Case Atlas II](work-packages/phase-186-named-delivery-case-atlas-ii.md)
+- [Phase 187 — Outcomes and Longitudinal Observatory](work-packages/phase-187-outcomes-longitudinal-observatory.md)
+- [Phase 188 — State of Frontier Systems Edition](work-packages/phase-188-state-of-frontier-systems-edition.md)
+
+**Global reference system — Phases 189–196**
+
+- [Phase 189 — Global Authority-Rail Activation](work-packages/phase-189-global-authority-rail-activation.md)
+- [Phase 190 — Global Jurisdiction System Profiles](work-packages/phase-190-global-jurisdiction-system-profiles.md)
+- [Phase 191 — International Named-Project Conversion Cohort](work-packages/phase-191-international-named-project-conversion-cohort.md)
+- [Phase 192 — Global Place Systems Atlas](work-packages/phase-192-global-place-systems-atlas.md)
+- [Phase 193 — Comparative Evidence Lab](work-packages/phase-193-comparative-evidence-lab.md)
+- [Phase 194 — Longitudinal Outcomes Observatory](work-packages/phase-194-longitudinal-outcomes-observatory.md)
+- [Phase 195 — Canonical Question Library](work-packages/phase-195-canonical-question-library.md)
+- [Phase 196 — Global Reference Candidate Gate](work-packages/phase-196-global-reference-candidate-gate.md)
+
+**Definitive public-reference edition — Phases 197–204**
+
+- [Phase 197 — Underrepresented Region and Topic Gap Closure](work-packages/phase-197-underrepresented-region-topic-gap-closure.md)
+- [Phase 198 — Failure, Delay, Reversal, and Correction Casebooks](work-packages/phase-198-failure-delay-reversal-correction-casebooks.md)
+- [Phase 199 — Distribution, Affordability, and Service-Quality Observatory](work-packages/phase-199-distribution-affordability-service-quality-observatory.md)
+- [Phase 200 — Cross-System Constraint Monographs](work-packages/phase-200-cross-system-constraint-monographs.md)
+- [Phase 201 — Change Intelligence and Correction Service](work-packages/phase-201-change-intelligence-correction-service.md)
+- [Phase 202 — Accessible, Multilingual, and Low-Bandwidth Editions](work-packages/phase-202-accessible-multilingual-low-bandwidth-editions.md)
+- [Phase 203 — State of Future Systems 2026](work-packages/phase-203-state-of-future-systems-2026.md)
+- [Phase 204 — v1 Public-Reference Edition Promotion Gate](work-packages/phase-204-v1-public-reference-edition-promotion-gate.md)
+
+The aggregate machine contract is `app/src/data/v1-public-reference-edition.json`. Its declared local artifact scope is validated; this does not establish completed external factual review, expert or translation approval, or public release of the current candidate. Candidate authority rails, project/place dockets, comparisons, outcome panels, translations, and promotion gates retain their explicit null, Blocked, open, or Held states.
+
+### Current Phase 145–180 work-package chain
+
+Use the completed Phase 145–172 packages as immutable operating history and the implemented Phase 173–180 packages as the accelerated October operating contract:
+
+- [Phase 145 — Evidence-Gate Operations Journal](work-packages/phase-145-evidence-gate-operations-journal.md)
+- [Phase 151 — Weekly Desk Review Ledger](work-packages/phase-151-weekly-desk-review-ledger.md)
+- [Phase 156 — v1 Launch Decision](work-packages/phase-156-v1-launch-decision.md)
+- [Phase 157 — v1 Candidate Preservation Ledger](work-packages/phase-157-v1-candidate-preservation-ledger.md)
+- [Phase 164 — Monthly Candidate Decision](work-packages/phase-164-monthly-candidate-decision.md)
+- [Phase 165 — Live Evidence Operations Cycle 001](work-packages/phase-165-live-evidence-operations-cycle-001.md)
+- [Phase 166 — Weekly Desk Closures and Editions](work-packages/phase-166-weekly-desk-closures-and-editions.md)
+- [Phase 167 — Authority Resolution Hearings](work-packages/phase-167-authority-resolution-hearings.md)
+- [Phase 168 — Requirement and Mission Adjudication](work-packages/phase-168-requirement-mission-adjudication.md)
+- [Phase 169 — Longitudinal Pilot Adjudication](work-packages/phase-169-longitudinal-pilot-adjudication.md)
+- [Phase 170 — Fifteen-Place Systems Atlas](work-packages/phase-170-fifteen-place-systems-atlas.md)
+- [Phase 171 — Frontier Systems Compendium](work-packages/phase-171-frontier-systems-compendium.md)
+- [Phase 172 — September State Report](work-packages/phase-172-september-state-report.md)
+- [Phase 173 — September Closeout and October Opening Ledger](work-packages/phase-173-september-closeout-and-october-opening-ledger.md)
+- [Phase 174 — Evidence Cycle 001 Closure and Cycle 002 Intake](work-packages/phase-174-evidence-cycle-001-closure-and-cycle-002-intake.md)
+- [Phase 175 — Owner Disposition Sprint II](work-packages/phase-175-owner-disposition-sprint-ii.md)
+- [Phase 176 — Longitudinal Admission and Zero-Series Decision](work-packages/phase-176-longitudinal-admission-and-zero-series-decision.md)
+- [Phase 177 — October Stack Watch and Source-Currency Sweep](work-packages/phase-177-october-stack-watch-and-source-currency-sweep.md)
+- [Phase 178 — Systems Atlas and Compendium Depth Expansion](work-packages/phase-178-systems-atlas-and-compendium-depth-expansion.md)
+- [Phase 179 — October Weekly Editions and Month-End Synthesis](work-packages/phase-179-october-weekly-editions-and-month-end-synthesis.md)
+- [Phase 180 — October State Report and v1 Promotion Gate](work-packages/phase-180-october-state-report-and-v1-promotion-gate.md)
+
+Phases 173–180 are complete local implementation, not completed future operations. Their future evidence, edition, owner, repository, and promotion fields must remain null or Held until the applicable decision is lawful.
+
+### Historical Phase 130–144 work-package chain
 
 The current work packages are:
 

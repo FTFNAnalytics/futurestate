@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0",
+  "phase": 204,
+  "program_id": "FTFN-PHASE-204",
+  "dataset": "phase_204_v1_public_reference_edition_promotion_gate",
+  "title": "v1 Public-Reference Edition Promotion Gate",
+  "effective_date": "2026-09-01",
+  "record_status": "Prepared content — public release not authorized",
+  "build_status": "Complete locally",
+  "summary": "Derive a sixteen-gate state report with nine locally passed content/integrity gates and seven legitimate holds; v1 public-reference promotion remains Held.",
+  "record_scope": "Phase 197–204 definitive public-reference edition candidate layer.",
+  "publication_boundaries": [
+    "This is an append-only definitive-edition layer over the existing governed corpus; it does not rewrite an upstream evidence decision, project stage, place state, receipt, or validation baseline.",
+    "Research targets, casebook classifications, outcome panels, translations, expert review, repository publication, hosting, DNS, public launch, and v1 promotion remain distinct decisions.",
+    "A source-bound context statement is not a compatible longitudinal observation. Outcome values remain null unless entity, period, measure, method, denominator, revision lineage, and receiving authority all pass a dated admission decision.",
+    "No missing artifact is treated as nonexistent; no delay, failure, reversal, cause, correction, distributional effect, affordability result, service-quality result, score, rank, or causal finding is invented."
+  ],
+  "routes": {
+    "hub": "/review/v1reference/v1-public-reference-edition-promotion-gate/",
+    "public_export": "/data/phase-204-v1-public-reference-edition-promotion-gate.json"
+  },
+  "counts": {
+    "promotion_gates": 16,
+    "passed": 9,
+    "held": 7,
+    "false_passes": 0,
+    "locally_validated_phases": 7
+  },
+  "promotion_gates": [
+    {
+      "promotion_gate_id": "204-GATE-01-197-INVENTORY",
+      "slug": "197-inventory",
+      "title": "Gap-closure inventory",
+      "state": "Pass",
+      "derived_pass": true,
+      "evidence": "Forty-eight target contracts cover four topics, six regions, and two entity kinds with zero invented identities.",
+      "receipt_id": null,
+      "next_action": "Preserve this gate and rerun validation after any candidate change.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/197-inventory/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-02-198-CASEBOOKS",
+      "slug": "198-casebooks",
+      "title": "Casebook integrity",
+      "state": "Pass",
+      "derived_pass": true,
+      "evidence": "Twenty-four named project packets retain exact upstream source and signal identities while all classifications and outcomes remain null.",
+      "receipt_id": null,
+      "next_action": "Preserve this gate and rerun validation after any candidate change.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/198-casebooks/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-03-199-OBSERVATORY",
+      "slug": "199-observatory",
+      "title": "Outcome-panel integrity",
+      "state": "Pass",
+      "derived_pass": true,
+      "evidence": "Twenty-four panels divide evenly across three measure families and admit zero observations or outcome values.",
+      "receipt_id": null,
+      "next_action": "Preserve this gate and rerun validation after any candidate change.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/199-observatory/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-04-200-MONOGRAPHS",
+      "slug": "200-monographs",
+      "title": "Cross-system monographs",
+      "state": "Pass",
+      "derived_pass": true,
+      "evidence": "Twelve monographs carry twenty-four source contexts and zero causal findings, scores, or outcome claims.",
+      "receipt_id": null,
+      "next_action": "Preserve this gate and rerun validation after any candidate change.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/200-monographs/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-05-201-CORRECTIONS",
+      "slug": "201-corrections",
+      "title": "Correction service",
+      "state": "Pass",
+      "derived_pass": true,
+      "evidence": "Seventeen topic desks bind an eight-stage workflow and expose zero invented correction decisions.",
+      "receipt_id": null,
+      "next_action": "Preserve this gate and rerun validation after any candidate change.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/201-corrections/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-06-202-EDITION-CONTRACTS",
+      "slug": "202-edition-contracts",
+      "title": "Accessible-edition contracts",
+      "state": "Pass",
+      "derived_pass": true,
+      "evidence": "Sixty-eight edition contracts exist; all thirty-four French and Spanish contracts remain held for human review.",
+      "receipt_id": null,
+      "next_action": "Preserve this gate and rerun validation after any candidate change.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/202-edition-contracts/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-07-203-REPORT",
+      "slug": "203-report",
+      "title": "State of Future Systems report package",
+      "state": "Pass",
+      "derived_pass": true,
+      "evidence": "The report inventory is exactly 17 topic chapters, 12 bounded findings, 24 named cases, and 5 appendices.",
+      "receipt_id": null,
+      "next_action": "Preserve this gate and rerun validation after any candidate change.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/203-report/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-08-CONTENT-BOUNDARIES",
+      "slug": "content-boundaries",
+      "title": "Evidence and publication boundaries",
+      "state": "Pass",
+      "derived_pass": true,
+      "evidence": "Target, classification, observation, causation, translation, correction, owner, and publication states remain independently typed.",
+      "receipt_id": null,
+      "next_action": "Preserve this gate and rerun validation after any candidate change.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/content-boundaries/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-09-LOCAL-VALIDATION",
+      "slug": "local-validation",
+      "title": "Local candidate validation",
+      "state": "Pass",
+      "derived_pass": true,
+      "evidence": "Receipt 204-LOCAL-VALIDATION-2026-09-01-fbfb906465dd binds the exact Phase 197–203 digest.",
+      "receipt_id": "204-LOCAL-VALIDATION-2026-09-01-fbfb906465dd",
+      "next_action": "Preserve this gate and rerun validation after any candidate change.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/local-validation/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-10-PORTFOLIO-TARGETS",
+      "slug": "portfolio-targets",
+      "title": "100-project and 70-place target attainment",
+      "state": "Held",
+      "derived_pass": false,
+      "evidence": "Phase 197 creates acquisition contracts; it does not establish that either portfolio target has been reached.",
+      "receipt_id": null,
+      "next_action": "Reconcile exact project/place identities after later acquisitions; never count target contracts as entities.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/portfolio-targets/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-11-LIVE-EVIDENCE",
+      "slug": "live-evidence",
+      "title": "September and October evidence operations",
+      "state": "Held",
+      "derived_pass": false,
+      "evidence": "Calendar-governed evidence checks remain outside this build and must run only on their lawful dates.",
+      "receipt_id": null,
+      "next_action": "Run each scheduled gate only when lawful and issue a dated receipt even for No Material Change or a bounded blocker.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/live-evidence/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-12-OWNER-ADJUDICATION",
+      "slug": "owner-adjudication",
+      "title": "Owner evidence and mission decisions",
+      "state": "Held",
+      "derived_pass": false,
+      "evidence": "No independent owner decision is supplied by this build.",
+      "receipt_id": null,
+      "next_action": "Obtain dated owner decisions for the exact dockets and candidate digests.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/owner-adjudication/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-13-EXPERT-REVIEW",
+      "slug": "expert-review",
+      "title": "Independent subject-matter review",
+      "state": "Held",
+      "derived_pass": false,
+      "evidence": "The report and casebooks have not received an independently identified expert-review receipt.",
+      "receipt_id": null,
+      "next_action": "Commission and record named subject review of methods, topic chapters, casebooks, and limitations.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/expert-review/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-14-TRANSLATION-REVIEW",
+      "slug": "translation-review",
+      "title": "Human translation approval",
+      "state": "Held",
+      "derived_pass": false,
+      "evidence": "French and Spanish contracts contain no translated text, named reviewer, decision date, or approval receipt.",
+      "receipt_id": null,
+      "next_action": "Produce human translations and obtain separate language and subject-review receipts.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/translation-review/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-15-GIT-HOSTING-DNS",
+      "slug": "git-hosting-dns",
+      "title": "Repository publication and delivery",
+      "state": "Held",
+      "derived_pass": false,
+      "evidence": "This build does not authorize commit, push, hosting, DNS, or public launch.",
+      "receipt_id": null,
+      "next_action": "Obtain explicit authority, then validate the same digest through repository and delivery surfaces.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/git-hosting-dns/"
+    },
+    {
+      "promotion_gate_id": "204-GATE-16-V1-PROMOTION",
+      "slug": "v1-promotion",
+      "title": "v1 public-reference promotion",
+      "state": "Held",
+      "derived_pass": false,
+      "evidence": "Promotion requires all mandatory external, owner, review, publication, and delivery gates; those authorities remain false.",
+      "receipt_id": null,
+      "next_action": "Promote only an immutable digest after every mandatory gate is terminal and no false pass remains.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/v1-promotion/"
+    }
+  ],
+  "candidate_digest": "fbfb906465dd17941bf9849ad514273941364a4f6d67abdd2d8fc18dd1da831f",
+  "local_validation_receipt": {
+    "schema_version": "1.0",
+    "receipt_id": "204-LOCAL-VALIDATION-2026-09-01-fbfb906465dd",
+    "receipt_type": "Local candidate validation",
+    "validated_phase_range": "197–203",
+    "validation_date": "2026-09-01",
+    "artifact_digest": "fbfb906465dd17941bf9849ad514273941364a4f6d67abdd2d8fc18dd1da831f",
+    "scope": "Validates the exact Phase 197–203 JSON candidate generated from the governed local input shelves. It does not validate future evidence, translations, expert approval, Git publication, hosting, DNS, public launch, or v1 promotion."
+  },
+  "v1_public_reference_promotion_state": "Held",
+  "owner_authority": {
+    "target_attainment": false,
+    "evidence_admission": false,
+    "project_or_place_stage_change": false,
+    "casebook_classification": false,
+    "outcome_admission": false,
+    "correction_decision": false,
+    "expert_review": false,
+    "translation_approval": false,
+    "repository_publication": false,
+    "hosting": false,
+    "dns": false,
+    "public_launch": false,
+    "v1_promotion": false
+  },
+  "public_html_routes": [
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/197-inventory/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/198-casebooks/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/199-observatory/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/200-monographs/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/201-corrections/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/202-edition-contracts/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/203-report/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/content-boundaries/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/local-validation/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/portfolio-targets/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/live-evidence/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/owner-adjudication/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/expert-review/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/translation-review/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/git-hosting-dns/",
+    "/review/v1reference/v1-public-reference-edition-promotion-gate/v1-promotion/"
+  ],
+  "public_json_exports": [
+    "/data/phase-204-v1-public-reference-edition-promotion-gate.json"
+  ]
+}

@@ -1,0 +1,1388 @@
+{
+  "schema_version": "1.0",
+  "phase": 192,
+  "program_id": "FTFN-PHASE-192",
+  "dataset": "phase_192_global_place_systems_atlas",
+  "title": "Global Place Systems Atlas",
+  "effective_date": "2026-09-01",
+  "record_status": "Published operating scaffold",
+  "build_status": "Complete locally — external and owner-controlled decisions held",
+  "summary": "Prepare twenty place-system dossiers across nineteen national or supranational jurisdictions: three exact place identities are inherited and seventeen named-place acquisition dockets remain openly held.",
+  "record_scope": "Append-only Phase 192 global-reference content layer over the Phase 116–180 evidence and operating corpus.",
+  "publication_boundaries": [
+    "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision.",
+    "An institutional home page is an authority-discovery rail, not an exact artifact and not evidence for a downstream claim.",
+    "Unknown, unavailable, not-yet-reviewed, and incompatible are preserved as distinct states; no unsuccessful search is treated as proof of nonexistence."
+  ],
+  "routes": {
+    "hub": "/review/global/places/",
+    "public_export": "/data/phase-192-global-place-systems-atlas.json"
+  },
+  "counts": {
+    "place_system_dossiers": 20,
+    "exact_place_anchors": 3,
+    "named_place_acquisition_dockets": 17,
+    "regions": 7,
+    "layer_cells": 120,
+    "outcomes": 0,
+    "scores": 0,
+    "ranks": 0
+  },
+  "place_system_dossiers": [
+    {
+      "global_place_dossier_id": "192-PLACE-001",
+      "record_kind": "Existing exact place-system anchor",
+      "jurisdiction_id": "117-JURISDICTION-001",
+      "jurisdiction_name": "Canada",
+      "region": "North America",
+      "place_name": "Ontario, Canada",
+      "upstream_atlas_place_id": "119-PLACE-004",
+      "upstream_canonical_id": "local-ontario-real-estate",
+      "identity_state": "Exact upstream Atlas place identity preserved",
+      "system_scope": "A housing and land market shaped by interest rates, migration, construction costs, zoning, infrastructure capacity, investor behavior, and household affordability.",
+      "source_ids": [
+        "source-cmhc-housing-market-information-portal",
+        "source-cmhc-starts-completions-under-construction",
+        "source-cmhc-june-2026-housing-starts-construction",
+        "source-ontario-housing-supply-progress",
+        "source-statcan-building-permits-survey",
+        "source-city-toronto-application-information-centre",
+        "source-toronto-24-254930-june-2026-decision-report",
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025",
+        "source-statcan-web-data-service",
+        "source-toronto-open-data",
+        "source-ontario-data-catalogue",
+        "source-toronto-development-guide",
+        "source-toronto-building-permits",
+        "source-toronto-water-budget-capital-plan",
+        "source-toronto-water-2026-capital-plan",
+        "source-ieso-annual-planning-outlook",
+        "source-ieso-2026-annual-planning-outlook",
+        "source-toronto-hydro-regulatory-documents",
+        "source-oeb-toronto-hydro-eb-2023-0195",
+        "source-toronto-capital-projects-pipeline",
+        "source-toronto-cleared-building-permits",
+        "source-toronto-development-applications-open-data",
+        "source-oeb-applications"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-001",
+        "117-RAIL-002",
+        "117-RAIL-003",
+        "117-RAIL-004"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": "System context — no single place-level conversion stage",
+      "exact_next_artifact": "A governed place review resolving the first stated missing-data need: local inventory by submarket.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/ontario-real-estate/",
+      "interpretation_boundary": "The upstream place identity is preserved as context. No place stage, outcome, score, rank, or new source finding is created."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-002",
+      "record_kind": "Existing exact place-system anchor",
+      "jurisdiction_id": "117-JURISDICTION-002",
+      "jurisdiction_name": "Australia",
+      "region": "Oceania",
+      "place_name": "South Australia, Australia",
+      "upstream_atlas_place_id": "119-PLACE-012",
+      "upstream_canonical_id": "local-south-australia-grid-storage",
+      "identity_state": "Exact upstream Atlas place identity preserved",
+      "system_scope": "Compare grid-service claims with asset identity, operating period, event definition and measured system role.",
+      "source_ids": [
+        "source-56e-hornsdale-aer-2022",
+        "source-56e-hornsdale-sa-current",
+        "source-56e-hornsdale-aemo-2019-preliminary",
+        "source-56e-hornsdale-aemo-2020-final",
+        "source-56h-hornsdale-final-project-report-2026",
+        "source-56j-hornsdale-h1-2024-operations",
+        "source-56e-dalrymple-arena-final-2021",
+        "source-56e-dalrymple-arena-retrospective-2021",
+        "source-56e-dalrymple-arena-operational-2020",
+        "source-56e-dalrymple-aemo-minimum-demand-2020",
+        "source-56g-dalrymple-electranet-tapr-2026",
+        "source-56h-dalrymple-aemo-constraint-report-2026",
+        "source-56j-dalrymple-aemo-march-2026"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-005",
+        "117-RAIL-006",
+        "117-RAIL-007",
+        "117-RAIL-008"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": "Place-level conversion stage not established",
+      "exact_next_artifact": "A governed place review that defines stable entity scope, evidence gaps, current boundaries, and the next exact artifact.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/south-australia-grid-storage/",
+      "interpretation_boundary": "The upstream place identity is preserved as context. No place stage, outcome, score, rank, or new source finding is created."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-003",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-003",
+      "jurisdiction_name": "European Union",
+      "region": "Europe",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in European Union where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-european-union-eurostat",
+        "source-117-global-european-union-european-commission-directorate-general-for-energy",
+        "source-117-global-european-union-eur-lex",
+        "source-117-global-european-union-cordis"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-009",
+        "117-RAIL-010",
+        "117-RAIL-011",
+        "117-RAIL-012"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in European Union, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/european-union-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-004",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-004",
+      "jurisdiction_name": "United Kingdom",
+      "region": "Europe",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in United Kingdom where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-united-kingdom-office-for-national-statistics",
+        "source-117-global-united-kingdom-department-for-energy-security-and-net-zero",
+        "source-117-global-united-kingdom-planning-inspectorate",
+        "source-117-global-united-kingdom-uk-research-and-innovation"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-013",
+        "117-RAIL-014",
+        "117-RAIL-015",
+        "117-RAIL-016"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in United Kingdom, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/united-kingdom-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-005",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-005",
+      "jurisdiction_name": "Germany",
+      "region": "Europe",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in Germany where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-germany-federal-statistical-office-of-germany",
+        "source-117-global-germany-bundesnetzagentur",
+        "source-117-global-germany-german-environment-agency",
+        "source-117-global-germany-federal-ministry-of-research-technology-and-space"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-017",
+        "117-RAIL-018",
+        "117-RAIL-019",
+        "117-RAIL-020"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in Germany, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/germany-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-006",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-006",
+      "jurisdiction_name": "France",
+      "region": "Europe",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in France where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-france-insee",
+        "source-117-global-france-rte",
+        "source-117-global-france-ministry-for-ecological-transition",
+        "source-117-global-france-ademe"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-021",
+        "117-RAIL-022",
+        "117-RAIL-023",
+        "117-RAIL-024"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in France, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/france-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-007",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-007",
+      "jurisdiction_name": "Netherlands",
+      "region": "Europe",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in Netherlands where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-netherlands-statistics-netherlands",
+        "source-117-global-netherlands-netherlands-enterprise-agency",
+        "source-117-global-netherlands-rijkswaterstaat",
+        "source-117-global-netherlands-pbl-netherlands-environmental-assessment-agency"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-025",
+        "117-RAIL-026",
+        "117-RAIL-027",
+        "117-RAIL-028"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in Netherlands, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/netherlands-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-008",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-008",
+      "jurisdiction_name": "Norway",
+      "region": "Europe",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in Norway where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-norway-statistics-norway",
+        "source-117-global-norway-norwegian-water-resources-and-energy-directorate",
+        "source-117-global-norway-norwegian-environment-agency",
+        "source-117-global-norway-research-council-of-norway"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-029",
+        "117-RAIL-030",
+        "117-RAIL-031",
+        "117-RAIL-032"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in Norway, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/norway-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-009",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-009",
+      "jurisdiction_name": "Sweden",
+      "region": "Europe",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in Sweden where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-sweden-statistics-sweden",
+        "source-117-global-sweden-swedish-energy-agency",
+        "source-117-global-sweden-swedish-transport-administration",
+        "source-117-global-sweden-vinnova"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-033",
+        "117-RAIL-034",
+        "117-RAIL-035",
+        "117-RAIL-036"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in Sweden, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/sweden-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-010",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-010",
+      "jurisdiction_name": "Japan",
+      "region": "Asia",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in Japan where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-japan-e-stat-japan",
+        "source-117-global-japan-ministry-of-economy-trade-and-industry",
+        "source-117-global-japan-ministry-of-land-infrastructure-transport-and-tourism",
+        "source-117-global-japan-new-energy-and-industrial-technology-development-organization"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-037",
+        "117-RAIL-038",
+        "117-RAIL-039",
+        "117-RAIL-040"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in Japan, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/japan-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-011",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-011",
+      "jurisdiction_name": "South Korea",
+      "region": "Asia",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in South Korea where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-south-korea-korean-statistical-information-service",
+        "source-117-global-south-korea-ministry-of-trade-industry-and-energy",
+        "source-117-global-south-korea-korea-power-exchange",
+        "source-117-global-south-korea-korea-institute-of-science-and-technology-evaluation-and-planning"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-041",
+        "117-RAIL-042",
+        "117-RAIL-043",
+        "117-RAIL-044"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in South Korea, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/south-korea-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-012",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-012",
+      "jurisdiction_name": "Singapore",
+      "region": "Asia",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in Singapore where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-singapore-singapore-department-of-statistics",
+        "source-117-global-singapore-energy-market-authority",
+        "source-117-global-singapore-land-transport-authority",
+        "source-117-global-singapore-infocomm-media-development-authority"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-045",
+        "117-RAIL-046",
+        "117-RAIL-047",
+        "117-RAIL-048"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in Singapore, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/singapore-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-013",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-013",
+      "jurisdiction_name": "India",
+      "region": "Asia",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in India where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-india-open-government-data-platform-india",
+        "source-117-global-india-ministry-of-power",
+        "source-117-global-india-central-electricity-authority",
+        "source-117-global-india-ministry-of-new-and-renewable-energy"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-049",
+        "117-RAIL-050",
+        "117-RAIL-051",
+        "117-RAIL-052"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in India, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/india-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-014",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-014",
+      "jurisdiction_name": "New Zealand",
+      "region": "Oceania",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in New Zealand where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-new-zealand-stats-nz",
+        "source-117-global-new-zealand-electricity-authority",
+        "source-117-global-new-zealand-ministry-of-business-innovation-and-employment",
+        "source-117-global-new-zealand-ministry-for-the-environment"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-053",
+        "117-RAIL-054",
+        "117-RAIL-055",
+        "117-RAIL-056"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in New Zealand, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/new-zealand-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-015",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-015",
+      "jurisdiction_name": "Brazil",
+      "region": "South America",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in Brazil where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-brazil-brazilian-institute-of-geography-and-statistics",
+        "source-117-global-brazil-national-electric-energy-agency",
+        "source-117-global-brazil-energy-research-office",
+        "source-117-global-brazil-ministry-of-science-technology-and-innovation"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-057",
+        "117-RAIL-058",
+        "117-RAIL-059",
+        "117-RAIL-060"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in Brazil, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/brazil-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-016",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-016",
+      "jurisdiction_name": "Chile",
+      "region": "South America",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in Chile where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-chile-national-statistics-institute-of-chile",
+        "source-117-global-chile-national-energy-commission",
+        "source-117-global-chile-environmental-assessment-service",
+        "source-117-global-chile-ministry-of-energy"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-061",
+        "117-RAIL-062",
+        "117-RAIL-063",
+        "117-RAIL-064"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in Chile, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/chile-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-017",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-017",
+      "jurisdiction_name": "South Africa",
+      "region": "Africa",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in South Africa where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-south-africa-statistics-south-africa",
+        "source-117-global-south-africa-national-energy-regulator-of-south-africa",
+        "source-117-global-south-africa-department-of-forestry-fisheries-and-the-environment",
+        "source-117-global-south-africa-council-for-scientific-and-industrial-research"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-065",
+        "117-RAIL-066",
+        "117-RAIL-067",
+        "117-RAIL-068"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in South Africa, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/south-africa-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-018",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-018",
+      "jurisdiction_name": "Mexico",
+      "region": "North America",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in Mexico where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-mexico-inegi",
+        "source-117-global-mexico-secretariat-of-energy",
+        "source-117-global-mexico-national-center-for-energy-control",
+        "source-117-global-mexico-secretariat-of-environment-and-natural-resources"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-069",
+        "117-RAIL-070",
+        "117-RAIL-071",
+        "117-RAIL-072"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in Mexico, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/mexico-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-019",
+      "record_kind": "Named place-system acquisition docket",
+      "jurisdiction_id": "117-JURISDICTION-019",
+      "jurisdiction_name": "United Arab Emirates",
+      "region": "Middle East",
+      "place_name": null,
+      "upstream_atlas_place_id": null,
+      "upstream_canonical_id": null,
+      "identity_state": "Held — exact subnational or asset-receiving place required",
+      "system_scope": "Select a named place in United Arab Emirates where authority, infrastructure, implementation, service, and outcome evidence can be joined without transferring national aggregates to a local system.",
+      "source_ids": [
+        "source-117-global-united-arab-emirates-federal-competitiveness-and-statistics-centre",
+        "source-117-global-united-arab-emirates-ministry-of-energy-and-infrastructure",
+        "source-117-global-united-arab-emirates-telecommunications-and-digital-government-regulatory-authority",
+        "source-117-global-united-arab-emirates-uae-space-agency"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-073",
+        "117-RAIL-074",
+        "117-RAIL-075",
+        "117-RAIL-076"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": null,
+      "exact_next_artifact": "An official record naming a subnational or asset-receiving place in United Arab Emirates, the intervention, responsible authority, date, stage, and exact evidence boundary.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/united-arab-emirates-place-acquisition/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_place_dossier_id": "192-PLACE-020",
+      "record_kind": "Existing exact place-system anchor",
+      "jurisdiction_id": "117-JURISDICTION-002",
+      "jurisdiction_name": "Australia",
+      "region": "Oceania",
+      "place_name": "Victoria, Australia",
+      "upstream_atlas_place_id": "119-PLACE-013",
+      "upstream_canonical_id": "local-victoria-grid-storage",
+      "identity_state": "Exact upstream Atlas place identity preserved",
+      "system_scope": "Follow a named storage asset from commissioning claims into recurring, denominator-explicit operating evidence.",
+      "source_ids": [
+        "source-56e-vbb-esv-fire-findings-2021",
+        "source-56e-vbb-aemo-registration-2021",
+        "source-56e-vbb-aemo-operational-2021",
+        "source-56e-vbb-esv-investigations"
+      ],
+      "authority_rail_ids": [
+        "117-RAIL-005",
+        "117-RAIL-006",
+        "117-RAIL-007",
+        "117-RAIL-008"
+      ],
+      "six_layer_reading": [
+        {
+          "layer": "Authority",
+          "question": "Which institution can make or record the relevant decision?",
+          "finding": null
+        },
+        {
+          "layer": "Finance",
+          "question": "Which exact agreement, procurement, obligation, or risk allocation applies?",
+          "finding": null
+        },
+        {
+          "layer": "Infrastructure",
+          "question": "Which site-bound enabling systems are required and accepted?",
+          "finding": null
+        },
+        {
+          "layer": "Implementation",
+          "question": "Which named build, test, permit, or qualification milestone is documented?",
+          "finding": null
+        },
+        {
+          "layer": "Operation",
+          "question": "What accepted service, product, or recurring output is observed?",
+          "finding": null
+        },
+        {
+          "layer": "Public value",
+          "question": "Which compatible repeated outcomes, distribution effects, costs, and limitations are available?",
+          "finding": null
+        }
+      ],
+      "current_stage_snapshot": "Place-level conversion stage not established",
+      "exact_next_artifact": "A governed place review that defines stable entity scope, evidence gaps, current boundaries, and the next exact artifact.",
+      "selection_decision": null,
+      "review_date": null,
+      "outcome": null,
+      "score": null,
+      "rank": null,
+      "route": "/review/global/places/victoria-grid-storage/",
+      "interpretation_boundary": "The upstream place identity is preserved as context. No place stage, outcome, score, rank, or new source finding is created."
+    }
+  ],
+  "public_html_routes": [
+    "/review/global/places/",
+    "/review/global/places/ontario-real-estate/",
+    "/review/global/places/south-australia-grid-storage/",
+    "/review/global/places/european-union-place-acquisition/",
+    "/review/global/places/united-kingdom-place-acquisition/",
+    "/review/global/places/germany-place-acquisition/",
+    "/review/global/places/france-place-acquisition/",
+    "/review/global/places/netherlands-place-acquisition/",
+    "/review/global/places/norway-place-acquisition/",
+    "/review/global/places/sweden-place-acquisition/",
+    "/review/global/places/japan-place-acquisition/",
+    "/review/global/places/south-korea-place-acquisition/",
+    "/review/global/places/singapore-place-acquisition/",
+    "/review/global/places/india-place-acquisition/",
+    "/review/global/places/new-zealand-place-acquisition/",
+    "/review/global/places/brazil-place-acquisition/",
+    "/review/global/places/chile-place-acquisition/",
+    "/review/global/places/south-africa-place-acquisition/",
+    "/review/global/places/mexico-place-acquisition/",
+    "/review/global/places/united-arab-emirates-place-acquisition/",
+    "/review/global/places/victoria-grid-storage/"
+  ],
+  "public_json_exports": [
+    "/data/phase-192-global-place-systems-atlas.json"
+  ]
+}

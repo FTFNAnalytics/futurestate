@@ -10,18 +10,94 @@ import v06 from "../../data/v06-open-evidence-review.json";
 import v07 from "../../data/v07-evidence-admission-dockets.json";
 import v08 from "../../data/v08-conversion-longitudinal-atlas.json";
 import v09 from "../../data/v09-living-public-intelligence.json";
+import v1rc from "../../data/v1-release-candidate.json";
+import v1month from "../../data/v1-monthly-operating-program.json";
+import v1cycle from "../../data/v1-september-evidence-cycle.json";
+import v1oct from "../../data/v1-october-operating-program.json";
+import v1ref from "../../data/v1-public-reference-edition.json";
+
 ---
 
-<BaseLayout title="The FTFN Review | Living Public Intelligence" description={v09.summary}>
-  <ReviewHeader eyebrow="v0.9 living public intelligence" title="The FTFN Review" summary={v09.summary} />
+<BaseLayout title="The FTFN Review | Public Reference Edition" description={v1ref.summary}>
+  <ReviewHeader eyebrow="Phases 181–204 · public reference built locally · v1 promotion held" title="The FTFN Review" summary={v1ref.summary} />
 
   <section class="page-section">
     <div class="metric-strip" aria-label="Editorial program counts">
-      <div class="metric"><strong>{v09.release_state.desks}</strong><span>living topic desks</span></div>
-      <div class="metric"><strong>{v09.release_state.almanac_entries}</strong><span>almanac entries</span></div>
-      <div class="metric"><strong>{v08.evidence_state.atlas_records}</strong><span>Atlas reviews</span></div>
-      <div class="metric"><strong>{v07.evidence_state.owner_requirement_decisions_pending}</strong><span>owner decisions open</span></div>
+      <div class="metric"><strong>{v1ref.counts.primary_records.toLocaleString()}</strong><span>reference records</span></div>
+      <div class="metric"><strong>{v1ref.counts.canonical_topic_editions}</strong><span>canonical topic editions</span></div>
+      <div class="metric"><strong>{v1ref.counts.question_briefs}</strong><span>reader question briefs</span></div>
+      <div class="metric"><strong>{v1ref.counts.public_json_exports}</strong><span>public data exports</span></div>
     </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">FTFN Public Reference · Phases 181–204</div>
+      <h2>Start with the stable reference, then follow the evidence boundary.</h2>
+      <p>The expanded reader layer connects canonical topics, evidence backlogs, global jurisdictions, named projects and places, comparison and longitudinal controls, failure casebooks, distribution questions, constraint monographs, corrections, accessible-edition contracts, and the State of Future Systems.</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label={v1ref.status} tone="review" />
+      <h3><a href="/reference/">Open the FTFN Public Reference</a></h3>
+      <p>Candidate and held records remain visibly bounded: local completeness does not create future evidence, owner authority, translation approval, public launch, or v1 promotion.</p>
+      <a class="inline-link" href="/reference/">Explore all twenty-four collections</a>
+    </article>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Phases 173–180 · accelerated build</div>
+      <h2>The September closeout and October content system are built.</h2>
+      <p>Inspect the 129-record carryover ledger, both evidence-cycle control planes, thirty-six owner packets, longitudinal admission machinery, a 32-packet source watch, ten new place dossiers, comparison overlays, essays, October edition controls, and the sixteen-gate state report.</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label={v1oct.status} tone="review" />
+      <h3><a href="/review/v1oct/">Open the accelerated operating program</a></h3>
+      <p>Everything executable on September 1 is complete locally. Later evidence, owner decisions, weekly publications, external release, and v1 promotion remain explicitly held.</p>
+      <a class="inline-link" href="/review/v1oct/">Inspect all eight phases</a>
+    </article>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Phases 165–172</div>
+      <h2>The evidence-to-publication cycle is open for inspection.</h2>
+      <p>Live operations, weekly desk closures, authority and mission adjudication dockets, longitudinal pilots, a fifteen-place systems atlas, the Frontier Systems Compendium, and the September state report now form one append-only operating layer.</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label={v1cycle.status} tone="review" />
+      <h3><a href="/review/v1cycle/">Open the September evidence cycle</a></h3>
+      <p>The locally complete build preserves every calendar, evidence-admission, owner, and promotion boundary declared by its source registries.</p>
+      <a class="inline-link" href="/review/v1cycle/">Inspect all eight phases</a>
+    </article>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Phases 157–164</div>
+      <h2>The release candidate now has a September operating layer.</h2>
+      <p>Immutable baseline preservation, ten dated evidence-operation packets, thirty-six owner actions, longitudinal pilots, twenty-four current Stack Watch briefs, four local-system expansions, four editorial runbooks, and a fourteen-gate monthly decision are open for inspection.</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label={v1month.status} tone="review" />
+      <h3><a href="/review/v1month/">Open the September operating program</a></h3>
+      <p>{v1month.operating_state.future_operations} future operations and {v1month.operating_state.owner_actions_pending} owner actions retain their lawful calendar and authority boundaries; promotion remains {v1month.v1_promotion_state}.</p>
+      <a class="inline-link" href="/review/v1month/">Inspect all eight phases</a>
+    </article>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">Phases 145–156</div>
+      <h2>The preserved v1 release candidate remains inspectable.</h2>
+      <p>Evidence-gate operations, thirty alternative official artifacts, adjudication packets, Atlas maintenance, longitudinal review, comparison passports, weekly desk packets, seventeen field guides, four reports, September edition binders, public methods, and a derived launch audit are all inspectable. Calendar and owner gates remain explicit.</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label={v1rc.status} tone="review" />
+      <h3><a href="/review/v1rc/">Open the v1 release candidate</a></h3>
+      <p>{v1rc.evidence_state.owner_decisions_pending} owner decisions, {v1rc.evidence_state.authority_dispositions_pending} authority dispositions, and the zero-series boundary still prevent promotion.</p>
+      <a class="inline-link" href="/review/v1rc/">Inspect all twelve phases</a>
+    </article>
   </section>
 
   <section class="page-section">

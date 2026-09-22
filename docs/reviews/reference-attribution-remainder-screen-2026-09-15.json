@@ -1,0 +1,1099 @@
+{
+  "as_of_date": "2026-09-15",
+  "schema_version": "1.0",
+  "report_kind": "Read-only lexical triage of unreviewed research documents",
+  "basis_ledger_sha256": "e42be794284867cb6ba860788f9f25f47f4b51aa7b8f877cf2e3968f3aabbd00",
+  "total_documents": 1629,
+  "reviewed_documents": 620,
+  "unreviewed_documents": 1009,
+  "matched_documents": 74,
+  "screen_rule": "synthetic|fixture|harness|rehearsal|non-coercive|intake|field.{0,8}mapping|reopening|workflow",
+  "screened_fields": [
+    "title",
+    "summary",
+    "key_findings"
+  ],
+  "boundary": "Matches are review candidates, not verdicts. Non-matches are not cleared. No content, status, feed, approval or launch scope changes. Briefings are not screened by this report.",
+  "collections": [
+    {
+      "collection_id": "research-collection-entity-driver-constraint-dossiers-2021-2026",
+      "screen_matches": 1
+    },
+    {
+      "collection_id": "research-collection-operating-record-acquisition-closure-batch-two-2026",
+      "screen_matches": 1
+    },
+    {
+      "collection_id": "research-collection-open-rail-acquisition-partial-closure-deepening-2026",
+      "screen_matches": 1
+    },
+    {
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "screen_matches": 24
+    },
+    {
+      "collection_id": "research-collection-longitudinal-delivery-outcomes-2026",
+      "screen_matches": 1
+    },
+    {
+      "collection_id": "research-collection-named-asset-project-cohort-registry-expansion-2026",
+      "screen_matches": 1
+    },
+    {
+      "collection_id": "research-collection-registry-revision-provenance-compatible-observation-joins-2026",
+      "screen_matches": 1
+    },
+    {
+      "collection_id": "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
+      "screen_matches": 6
+    },
+    {
+      "collection_id": "research-collection-historical-backfill-rejection-taxonomy-review-queue-execution-2026",
+      "screen_matches": 1
+    },
+    {
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "screen_matches": 16
+    },
+    {
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "screen_matches": 21
+    }
+  ],
+  "candidates": [
+    {
+      "id": "research-doc-56c-current-applications-drivers-1",
+      "source_file": "research-documents/234-56c-current-applications-drivers-1.json",
+      "source_sha256": "1ab9e78d9ec605f1d2af5bc04975abfdfbb5feb2e0471b03919dab6029267dfe",
+      "collection_id": "research-collection-entity-driver-constraint-dossiers-2021-2026",
+      "title": "Current Applications: Current Applications: Custom Motor Design and Manufacturing",
+      "publisher": "Current Applications",
+      "record_status": "Published",
+      "matched_fields": [
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56g-dalrymple-post-project-operation",
+      "source_file": "research-documents/354-56g-dalrymple-post-project-operation.json",
+      "source_sha256": "c221cd0afa5dbfde28ed3160c7398e1ccb1e0066a046616ffdf713731717be30",
+      "collection_id": "research-collection-operating-record-acquisition-closure-batch-two-2026",
+      "title": "Dalrymple ESCRI-SA Battery Energy Storage System: Phase 56G Acquisition Check",
+      "publisher": "ElectraNet",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56h-hornsdale-final-project-operation",
+      "source_file": "research-documents/360-56h-hornsdale-final-project-operation.json",
+      "source_sha256": "ec18b661baba0be27dab1b38fb0206eb98693676bd6bd91a1cd9245fc1ecfa5f",
+      "collection_id": "research-collection-open-rail-acquisition-partial-closure-deepening-2026",
+      "title": "Hornsdale Power Reserve: Phase 56H Evidence Decision",
+      "publisher": "Australian Renewable Energy Agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-doe-pit-production-lifecycle-cost-estimate",
+      "source_file": "research-documents/509-56t-doe-pit-production-lifecycle-cost-estimate.json",
+      "source_sha256": "99ced1b4b4e755a975b3f443744ffb7a1ce9ec6945695b326b3f671f28081856",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOE-01: Missing-document acquisition ticket",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-doe-complex-wide-waste-disposal-analysis",
+      "source_file": "research-documents/510-56t-doe-complex-wide-waste-disposal-analysis.json",
+      "source_sha256": "40ff7396760f58139fd573cf9492de50584c0897cad146fb2749b6edb2c4dad1",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOE-02: Missing-document acquisition ticket",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-doe-strategic-petroleum-reserve-periodic-reviews",
+      "source_file": "research-documents/511-56t-doe-strategic-petroleum-reserve-periodic-reviews.json",
+      "source_sha256": "1f3fee4a6201236ea738c28cc2943c5ca0cce3b5051bccd8d41e24fe8e5128fa",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOE-03: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-doe-nuclear-demonstration-project-oversight",
+      "source_file": "research-documents/512-56t-doe-nuclear-demonstration-project-oversight.json",
+      "source_sha256": "beed859e81f19c37701eb74b13ff6b3ca5665e7c8dd3e410eeb828d28dda951a",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOE-04: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-doe-hanford-waste-treatment-pause-conditions",
+      "source_file": "research-documents/513-56t-doe-hanford-waste-treatment-pause-conditions.json",
+      "source_sha256": "ff3a20d9e85d5ea8018f54954cc0f3cb39faa769bb86b48b9e52c337af502ea0",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOE-05: Missing-document acquisition ticket",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-hhs-medicaid-offsets-medicare-hospital-payments",
+      "source_file": "research-documents/514-56t-hhs-medicaid-offsets-medicare-hospital-payments.json",
+      "source_sha256": "ab1c74c923c8b55644331c8c74ad5f09a87e6bf99ed3df34258a12878cc65c22",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "HHS-01: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-hhs-medicaid-oversight-national-risk-assessment",
+      "source_file": "research-documents/515-56t-hhs-medicaid-oversight-national-risk-assessment.json",
+      "source_sha256": "586034cc1c5d7cf5f0b74847b9ff2fe347ea7e82420936bf84cbb0a6e2d15340",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "HHS-02: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-hhs-public-health-preparedness-capability-gaps",
+      "source_file": "research-documents/516-56t-hhs-public-health-preparedness-capability-gaps.json",
+      "source_sha256": "02a99d652c8586b13f84ba8cfe24483307db63e68d4ed5cc08b7900bcd6de8a9",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "HHS-03: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-hhs-after-action-component-coordination",
+      "source_file": "research-documents/517-56t-hhs-after-action-component-coordination.json",
+      "source_sha256": "4ebc313b60fc6d84fb77d86b5eff8dbf9ba0a4713e8f2f1f540a3ba9e2483e1a",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "HHS-04-R1: Missing-document acquisition ticket",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-hhs-after-action-external-stakeholder-participation",
+      "source_file": "research-documents/518-56t-hhs-after-action-external-stakeholder-participation.json",
+      "source_sha256": "3f6b070c2e3f166e83108093da734b31a410a28ab8c30076f5c8ed00b2f6f4a8",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "HHS-04-R2: Missing-document acquisition ticket",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-dot-faa-mission-critical-skill-gap-data",
+      "source_file": "research-documents/519-56t-dot-faa-mission-critical-skill-gap-data.json",
+      "source_sha256": "aeca062271c34a728a3f399af07380ba1935e69451c08132058a2fb2a3d96023",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOT-01: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-dot-air-traffic-controller-workforce-processes",
+      "source_file": "research-documents/520-56t-dot-air-traffic-controller-workforce-processes.json",
+      "source_sha256": "79d749106c8584fc3ba99447bf28ad442ccaced5292b1dd96e50d5a754eb50d7",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOT-02: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-dot-discretionary-grant-department-wide-directive",
+      "source_file": "research-documents/521-56t-dot-discretionary-grant-department-wide-directive.json",
+      "source_sha256": "f3439ce16b7aea324914e4206d40a9ca73c0c2cacb1d4a9f228ff343af796d84",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOT-03: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-dot-iija-grant-status-reporting",
+      "source_file": "research-documents/522-56t-dot-iija-grant-status-reporting.json",
+      "source_sha256": "b5e7c0503e58ea641716d852f59001614d8d3a983517f2d268fd3d79f76601a4",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOT-04: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-dot-grant-agreement-awardee-risk-assessment",
+      "source_file": "research-documents/523-56t-dot-grant-agreement-awardee-risk-assessment.json",
+      "source_sha256": "52ef9ca246afab9acb2d1ec1eafd9b8a120bfbacbb98ee3e46405fd4cfbf1d82",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOT-05: Missing-document acquisition ticket",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-dot-faa-drone-integration-strategy",
+      "source_file": "research-documents/524-56t-dot-faa-drone-integration-strategy.json",
+      "source_sha256": "71075b077743c01368aa9264c11ba129343fcfa0d1a63d23df72bcbd47ce45fd",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOT-06: Public-candidate sufficiency matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-dot-faa-information-centric-airspace-milestones",
+      "source_file": "research-documents/525-56t-dot-faa-information-centric-airspace-milestones.json",
+      "source_sha256": "d958053e89e743f25fbf86d7c543686cf7081874340658138c3c6ab38b24dec8",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOT-07: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-dot-automated-vehicle-initiative-plan",
+      "source_file": "research-documents/526-56t-dot-automated-vehicle-initiative-plan.json",
+      "source_sha256": "95a237071af67862e0915afa55d67d48e64511cf9d75b58d8431cfae9dc59ade",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "DOT-08: Public-candidate sufficiency matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-va-health-system-enterprise-risk-practices",
+      "source_file": "research-documents/527-56t-va-health-system-enterprise-risk-practices.json",
+      "source_sha256": "0cf3419f588aab0e66cd2ae55f5901d69093a4982d19ad74d80fb737f64e27d5",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "VA-01: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-va-ehr-full-lifecycle-cost-estimate",
+      "source_file": "research-documents/528-56t-va-ehr-full-lifecycle-cost-estimate.json",
+      "source_sha256": "82128226cac20d289754c6a820218f9fc3cafa5a7269e11836bb3fba28bab8a9",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "VA-02-R1: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-va-ehr-full-integrated-master-schedule",
+      "source_file": "research-documents/529-56t-va-ehr-full-integrated-master-schedule.json",
+      "source_sha256": "f361cc2d8f16c00dbeb97e31c46c2c82608498f9177576db250e07cfa3182e06",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "VA-02-R2: Adjacent-source directive matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-va-major-acquisition-oversight-framework-risks",
+      "source_file": "research-documents/530-56t-va-major-acquisition-oversight-framework-risks.json",
+      "source_sha256": "46a8d56dc6bea3a580f54e3bdc45b22346a89a254c069701d238b0d2a742143b",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "VA-03: Public-candidate sufficiency matrix",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-va-common-spend-savings-goals-tracking",
+      "source_file": "research-documents/531-56t-va-common-spend-savings-goals-tracking.json",
+      "source_sha256": "531009a6ca181d0b1e2b441b7d4c63e693d1b3fc8d2302feebaf94a0acd9cedd",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "VA-04: Missing-document acquisition ticket",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56t-va-dod-servicemember-transition-coordination",
+      "source_file": "research-documents/532-56t-va-dod-servicemember-transition-coordination.json",
+      "source_sha256": "3d79e62ff10d0cd42ecf68fc965d6ae6704f2a364542258ca35bdd7ca707a453",
+      "collection_id": "research-collection-gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026",
+      "title": "VA-05: Missing-document acquisition ticket",
+      "publisher": "U.S. Government Accountability Office and named implementing agency",
+      "record_status": "Published",
+      "matched_fields": [
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-56y-hanford-222s-lab-turnaround",
+      "source_file": "research-documents/582-56y-hanford-222s-lab-turnaround.json",
+      "source_sha256": "1b1f93b9197e26ca24ba84b87680bc715fb2410bdbb6d658cab350465d3c84d8",
+      "collection_id": "research-collection-longitudinal-delivery-outcomes-2026",
+      "title": "Hanford 222-S Laboratory halves sample turnaround while handling a fourfold 2025 workload",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "record_status": "Published",
+      "matched_fields": [
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57g-hanford-null-identity-and-nonconversion-contract",
+      "source_file": "research-documents/742-57g-hanford-null-identity-and-nonconversion-contract.json",
+      "source_sha256": "53c8fd0b63a12bb4cdd52d739f84a72c1d52d5bc466f31acfeb400ca6e981796",
+      "collection_id": "research-collection-named-asset-project-cohort-registry-expansion-2026",
+      "title": "Missing batch and container identities are now explicit null fields, not synthetic joins",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "record_status": "Published",
+      "matched_fields": [
+        "title",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57h-hanford-nonconversion-rejection-contract",
+      "source_file": "research-documents/771-57h-hanford-nonconversion-rejection-contract.json",
+      "source_sha256": "5622622ecb4bc9e9c19dcbdfd77c5755ff7c2c5ceeba53163e6c845711be4f34",
+      "collection_id": "research-collection-registry-revision-provenance-compatible-observation-joins-2026",
+      "title": "Hanford joins now reject synthetic container-mass and gallon conversions",
+      "publisher": "U.S. Department of Energy Hanford Field Office and Washington State Department of Ecology",
+      "record_status": "Published",
+      "matched_fields": [
+        "title"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57i-montana-thirteen-field-schema-migration-ledger",
+      "source_file": "research-documents/791-57i-montana-thirteen-field-schema-migration-ledger.json",
+      "source_sha256": "1c3ccfaa442eaab01a83a2d9a77e48110a63725d55a9921fe77a1a1a36974a1c",
+      "collection_id": "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
+      "title": "Thirteen Montana fields now have explicit migration decisions",
+      "publisher": "Montana Department of Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57i-montana-thirty-two-project-quarter-envelopes",
+      "source_file": "research-documents/792-57i-montana-thirty-two-project-quarter-envelopes.json",
+      "source_sha256": "ed780b40d8ca7d83375b5638fbfe0980f657d8119f094a22d44bb93da0176a8c",
+      "collection_id": "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
+      "title": "All thirty-two Montana projects now have bounded quarter-intake envelopes",
+      "publisher": "Montana Department of Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "title",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57i-montana-thirty-terrestrial-two-leo-intake-rails",
+      "source_file": "research-documents/793-57i-montana-thirty-terrestrial-two-leo-intake-rails.json",
+      "source_sha256": "ac03003c2f4174e93aae926e29a5ff0511a54e4901cb78d089c656af2120deab",
+      "collection_id": "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
+      "title": "Montana intake preserves thirty terrestrial and two LEO project rails",
+      "publisher": "Montana Department of Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "title",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57i-montana-privacy-gated-observation-intake",
+      "source_file": "research-documents/794-57i-montana-privacy-gated-observation-intake.json",
+      "source_sha256": "cf92116dec08ab1f3b45c050a735bec00d126524c2f49030d1d1867a6d1f887c",
+      "collection_id": "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
+      "title": "Montana project-quarter intake applies privacy review before publication",
+      "publisher": "Montana Department of Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "title",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57i-montana-zero-completed-project-quarters-ingested",
+      "source_file": "research-documents/795-57i-montana-zero-completed-project-quarters-ingested.json",
+      "source_sha256": "868275e9d8185290c3d68ea20f9b146caa8e690552223d085d5e7eafa2e46a9f",
+      "collection_id": "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
+      "title": "No completed Montana project-quarter result is ingested in Phase 57I",
+      "publisher": "Montana Department of Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57i-hanford-zero-material-balance-joins",
+      "source_file": "research-documents/800-57i-hanford-zero-material-balance-joins.json",
+      "source_sha256": "e67e60102256466fc3a7c01a465fa9d565f314aea38e5e5f28376351b393b6ae",
+      "collection_id": "research-collection-versioned-registry-change-detection-bounded-observation-ingestion-2026",
+      "title": "Phase 57I creates zero synthetic Hanford material-balance joins",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "record_status": "Published",
+      "matched_fields": [
+        "title"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57j-nnsa-zero-outcome-capability-implementation-closure-promotions",
+      "source_file": "research-documents/834-57j-nnsa-zero-outcome-capability-implementation-closure-promotions.json",
+      "source_sha256": "74121a025afd53bc6f39fa4c08af1f21fb3c7f01ebef04806382db5e518f4e45",
+      "collection_id": "research-collection-historical-backfill-rejection-taxonomy-review-queue-execution-2026",
+      "title": "NNSA classification promotes zero outcomes, capability, implementation, or closure states",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-amtrak-16-name-lineage-rows-retained",
+      "source_file": "research-documents/846-57k-amtrak-16-name-lineage-rows-retained.json",
+      "source_sha256": "4b7581cb737128fb8c5ceb6d99d2a6dc9931c6f2e9cc331b57dfb69d841fc1b1",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "The sixteen-name Amtrak lineage panel retains ten exact, one alias, and five unresolved rows",
+      "publisher": "National Railroad Passenger Corporation",
+      "record_status": "Published",
+      "matched_fields": [
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-amtrak-five-unresolved-identities-linked-to-trigger",
+      "source_file": "research-documents/847-57k-amtrak-five-unresolved-identities-linked-to-trigger.json",
+      "source_sha256": "6006f8bc5c317cffadce16d6954cfb9d049c90268de98ca4b0466b927f09561c",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "Five unresolved Amtrak identities are linked to an explicit reopening trigger",
+      "publisher": "National Railroad Passenger Corporation",
+      "record_status": "Published",
+      "matched_fields": [
+        "title"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-montana-224-envelope-requirement-checks-unmet",
+      "source_file": "research-documents/851-57k-montana-224-envelope-requirement-checks-unmet.json",
+      "source_sha256": "05417d8e5baf8ff97046c56a01d249e5646d57ce64bd9a796da32beda48e335f",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "All 224 Montana envelope-requirement checks remain explicitly unmet",
+      "publisher": "Montana Department of Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-montana-zero-compatible-cells-or-completed-quarters",
+      "source_file": "research-documents/853-57k-montana-zero-compatible-cells-or-completed-quarters.json",
+      "source_sha256": "e8ae61679cd0f09211e5cde04e2e359fa21482e46f09b109f45993c74d459226",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "Montana promotes zero compatible cells or completed project-quarter outcomes",
+      "publisher": "Montana Department of Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-hanford-70-transition-requirement-checks-unmet",
+      "source_file": "research-documents/856-57k-hanford-70-transition-requirement-checks-unmet.json",
+      "source_sha256": "3d36c432751dd0b10a4b0ca0bbd06dd05924ca07c3ce0ac9cc0cd6b15b438d09",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "All seventy Hanford transition-requirement checks remain unmet",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "record_status": "Published",
+      "matched_fields": [
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-hanford-zero-custody-links-after-applicability-review",
+      "source_file": "research-documents/857-57k-hanford-zero-custody-links-after-applicability-review.json",
+      "source_sha256": "001b79ce2094698e2acd8a5017a3cee90593ec5fdec1328e473f33fff598440d",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "Hanford accepts zero custody links after the complete applicability review",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "record_status": "Published",
+      "matched_fields": [
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-nnsa-zero-outcome-capability-implementation-closure-transitions",
+      "source_file": "research-documents/863-57k-nnsa-zero-outcome-capability-implementation-closure-transitions.json",
+      "source_sha256": "64411631d9248fb0e6a3004a5a79b562aea6a8e57e7e3eb01cb3b1629833cc07",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "NNSA promotes zero outcome, capability, implementation, or closure transitions",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-preserved-reopen-amtrak-pids",
+      "source_file": "research-documents/864-57k-preserved-reopen-amtrak-pids.json",
+      "source_sha256": "59b0096953e5b1264eed4a445885df394b15398b5ea429ab37e086742201f295",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "Amtrak PIDS closeout hold reopening-contract hold: historical lineage does not resolve the 2026 asset register",
+      "publisher": "National Railroad Passenger Corporation",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-preserved-reopen-amtrak-reliability",
+      "source_file": "research-documents/865-57k-preserved-reopen-amtrak-reliability.json",
+      "source_sha256": "2778ed00f4eb7046712471a0ba01ba9ad4a8d3faa3c8724a2608cd8fb53b2ba2",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "Amtrak named-asset reliability hold reopening-contract hold: station cohorts still lack asset-period outcomes",
+      "publisher": "National Railroad Passenger Corporation",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-preserved-reopen-la-nextlink-adoption",
+      "source_file": "research-documents/866-57k-preserved-reopen-la-nextlink-adoption.json",
+      "source_sha256": "22ba40b40b4137e3730551479bf0ce70900b7e80da2ed238a13d4159f9d2f9bb",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "Louisiana Nextlink adoption hold reopening-contract hold: Montana's schema identifies fields but supplies no 104-location result",
+      "publisher": "Louisiana Office of Broadband Development and Connectivity",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-preserved-reopen-la-starlink-adoption",
+      "source_file": "research-documents/867-57k-preserved-reopen-la-starlink-adoption.json",
+      "source_sha256": "2ca05efd9c30179af887d91d3460e1704a1c8e61f4c8b5b140c704c36108d716",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "Louisiana Starlink adoption hold reopening-contract hold: a comparable LEO schema exists but the 10,635-location cohort has no result",
+      "publisher": "Louisiana Office of Broadband Development and Connectivity",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-preserved-reopen-mt-bead-quarter",
+      "source_file": "research-documents/868-57k-preserved-reopen-mt-bead-quarter.json",
+      "source_sha256": "47d6b5ebb0eac8be196aaee4bc24360c72ea8640d819254f5be4c5d69bf7e114",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "Montana BEAD result hold reopening-contract hold: detailed terrestrial and LEO schemas still lack completed public awardee tables",
+      "publisher": "Montana Department of Administration",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-preserved-reopen-hanford-mass-balance",
+      "source_file": "research-documents/869-57k-preserved-reopen-hanford-mass-balance.json",
+      "source_sha256": "6b95eae626d09a0a01c630021b4c3029747d649e75ed724805e9cceb79d07c48",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "Hanford mass-balance hold reopening-contract hold: new cumulative and container observations still do not reconcile every stage",
+      "publisher": "U.S. Department of Energy Hanford Field Office and Washington State Department of Ecology",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-preserved-reopen-nnsa-qualified-rate",
+      "source_file": "research-documents/870-57k-preserved-reopen-nnsa-qualified-rate.json",
+      "source_sha256": "91293efe7fc27f77f87a9a4c90bf383d1667f4f9eda90cb23d3fd319e2fd4d5e",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "NNSA recurring-output hold reopening-contract hold: the public state conflict does not supply site-period yield",
+      "publisher": "National Nuclear Security Administration",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-preserved-reopen-nnsa-accepted-capacity",
+      "source_file": "research-documents/871-57k-preserved-reopen-nnsa-accepted-capacity.json",
+      "source_sha256": "baf488e7c9c6264e72791a1aec5010d0526bf77eb41d0e65f74f9b4b28ca858d",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "NNSA capacity hold reopening-contract hold: current two-site policy still does not establish final accepted operating capacity",
+      "publisher": "National Nuclear Security Administration",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57k-preserved-reopen-nnsa-gao-baseline",
+      "source_file": "research-documents/872-57k-preserved-reopen-nnsa-gao-baseline.json",
+      "source_sha256": "93012c78273dedde3d9d6b741c6aa995d1bc0eae651ca3d0fdf3ad61d655a465",
+      "collection_id": "research-collection-cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026",
+      "title": "NNSA enterprise-baseline hold reopening-contract hold: GAO's exact recommendation remains Open",
+      "publisher": "U.S. Government Accountability Office",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-amtrak-12-contract-fields-classified",
+      "source_file": "research-documents/873-57l-amtrak-12-contract-fields-classified.json",
+      "source_sha256": "23bea030abf97f3aee4ab2aa32e7aaf5404389d92130117bd2acb733a2576818",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Amtrak classifies all 12 required reopening-contract fields",
+      "publisher": "National Railroad Passenger Corporation",
+      "record_status": "Published",
+      "matched_fields": [
+        "title"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-amtrak-2-first-eligible-record-queues",
+      "source_file": "research-documents/875-57l-amtrak-2-first-eligible-record-queues.json",
+      "source_sha256": "14c1d199bed986dc5d029d1e1f79531c6076cc1da6a6ea9d9a78ab58a515ea9c",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Amtrak defines 2 first-eligible-record intake queues",
+      "publisher": "National Railroad Passenger Corporation",
+      "record_status": "Published",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-amtrak-zero-eligible-records-or-trigger-events",
+      "source_file": "research-documents/877-57l-amtrak-zero-eligible-records-or-trigger-events.json",
+      "source_sha256": "2c03dde7cefb8dc2994aff70183680b633edd4fb1f838c9d295791a59fa6f469",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Amtrak accepts zero eligible records and fires zero reopening triggers",
+      "publisher": "National Railroad Passenger Corporation",
+      "record_status": "Published",
+      "matched_fields": [
+        "title"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-broadband-19-contract-fields-classified",
+      "source_file": "research-documents/878-57l-broadband-19-contract-fields-classified.json",
+      "source_sha256": "5b4aede8f46f8f7057e6c7cafcf22dcdaef19b1891e23b7f91083a13c7cef8a4",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Broadband classifies all 19 required reopening-contract fields",
+      "publisher": "Montana Department of Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "title"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-broadband-3-first-eligible-record-queues",
+      "source_file": "research-documents/880-57l-broadband-3-first-eligible-record-queues.json",
+      "source_sha256": "14c282dd0b5902456973d83b92b91f70952526e0f60f6b78f262502718d0895b",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Broadband defines 3 first-eligible-record intake queues",
+      "publisher": "Montana Department of Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-broadband-zero-eligible-records-or-trigger-events",
+      "source_file": "research-documents/882-57l-broadband-zero-eligible-records-or-trigger-events.json",
+      "source_sha256": "00ef0b9f56065127dba4c9e969d856214add602f7a3db6666c268cea0c3089eb",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Broadband accepts zero eligible records and fires zero reopening triggers",
+      "publisher": "Montana Department of Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "title"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-hanford-12-contract-fields-classified",
+      "source_file": "research-documents/883-57l-hanford-12-contract-fields-classified.json",
+      "source_sha256": "8b9a436c63f070e0e53b82aaf415890bc6f7732d28311fcc81f0fc8093792bd0",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Hanford classifies all 12 required reopening-contract fields",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "record_status": "Published",
+      "matched_fields": [
+        "title"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-hanford-1-first-eligible-record-queues",
+      "source_file": "research-documents/885-57l-hanford-1-first-eligible-record-queues.json",
+      "source_sha256": "a4953b2f7b7d681b7fb3f0c4d1af09fc5019d9a49615556b6f8b7c7e08ff4662",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Hanford defines 1 first-eligible-record intake queue",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "record_status": "Published",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-hanford-zero-eligible-records-or-trigger-events",
+      "source_file": "research-documents/887-57l-hanford-zero-eligible-records-or-trigger-events.json",
+      "source_sha256": "f768663384defe45e8e828ebed2bace2662ac1daae352e99b3c474bad8f43d7e",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Hanford accepts zero eligible records and fires zero reopening triggers",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "record_status": "Published",
+      "matched_fields": [
+        "title"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-nnsa-17-contract-fields-classified",
+      "source_file": "research-documents/888-57l-nnsa-17-contract-fields-classified.json",
+      "source_sha256": "e77e7d2d10e44586a74c5fd748ae7445bfd147168139faf553143499ad7e2893",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "NNSA classifies all 17 required reopening-contract fields",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "title"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-nnsa-3-first-eligible-record-queues",
+      "source_file": "research-documents/890-57l-nnsa-3-first-eligible-record-queues.json",
+      "source_sha256": "6087da1aa8e3f9fb971a23623cee2839396330ee5361f8fd52caddab7b325e80",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "NNSA defines 3 first-eligible-record intake queues",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-nnsa-zero-eligible-records-or-trigger-events",
+      "source_file": "research-documents/892-57l-nnsa-zero-eligible-records-or-trigger-events.json",
+      "source_sha256": "6ac5cd989306af7717852034d2f9640fde25afb0f7431205648659538a03de35",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "NNSA accepts zero eligible records and fires zero reopening triggers",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "record_status": "Published",
+      "matched_fields": [
+        "title"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-preserved-amtrak-pids",
+      "source_file": "research-documents/893-57l-preserved-amtrak-pids.json",
+      "source_sha256": "4159dfc20f58e67c3f381aa724a0e6ef70c1c17ced30023103d02db1d26b54f1",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Amtrak PIDS closeout remains In Review after field-level intake review",
+      "publisher": "National Railroad Passenger Corporation",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-preserved-amtrak-reliability",
+      "source_file": "research-documents/894-57l-preserved-amtrak-reliability.json",
+      "source_sha256": "1a0908a88b29a5298560aa55492c8fd213b3952828eb60583f17ca185258afac",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Amtrak named-asset reliability remains In Review after field-level intake review",
+      "publisher": "National Railroad Passenger Corporation",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-preserved-la-nextlink-adoption",
+      "source_file": "research-documents/895-57l-preserved-la-nextlink-adoption.json",
+      "source_sha256": "fb79b01881aa3bbf60e48061357f1f7447800bcf3a022a1bc34546ee6cf2f86f",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Louisiana Nextlink adoption remains In Review after field-level intake review",
+      "publisher": "Louisiana Office of Broadband Development and Connectivity",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-preserved-la-starlink-adoption",
+      "source_file": "research-documents/896-57l-preserved-la-starlink-adoption.json",
+      "source_sha256": "89b45ba622aa1b8229a8f8ad400468abaf8ea063e36687719b1811a65f6e76d2",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Louisiana Starlink adoption remains In Review after field-level intake review",
+      "publisher": "Louisiana Office of Broadband Development and Connectivity",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-preserved-mt-bead-quarter",
+      "source_file": "research-documents/897-57l-preserved-mt-bead-quarter.json",
+      "source_sha256": "88c326de94f37fd227132bc40483881d764ab1aa81163e2229bfb9137bfbb7cd",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Montana BEAD completed quarter remains In Review after field-level intake review",
+      "publisher": "Montana Department of Administration",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-preserved-hanford-mass-balance",
+      "source_file": "research-documents/898-57l-preserved-hanford-mass-balance.json",
+      "source_sha256": "5320f5d5289f2cb5b11d481ce399e70e3209ab8479fb20a10aba9017f227de20",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "Hanford complete material balance remains In Review after field-level intake review",
+      "publisher": "U.S. Department of Energy Hanford Field Office and Washington State Department of Ecology",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-preserved-nnsa-qualified-rate",
+      "source_file": "research-documents/899-57l-preserved-nnsa-qualified-rate.json",
+      "source_sha256": "cea2be1288c799b59d8f851f8dfcd51cf46708da2e0ef653cefa041d0e56c696",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "NNSA recurring qualified rate remains In Review after field-level intake review",
+      "publisher": "National Nuclear Security Administration",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-preserved-nnsa-accepted-capacity",
+      "source_file": "research-documents/900-57l-preserved-nnsa-accepted-capacity.json",
+      "source_sha256": "84b38cafa6559a7da88b465f5c19a2c1fe12aa33319ab008aca8f2d0965b6ca1",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "NNSA accepted operating capacity remains In Review after field-level intake review",
+      "publisher": "National Nuclear Security Administration",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    },
+    {
+      "id": "research-doc-57l-preserved-nnsa-gao-baseline",
+      "source_file": "research-documents/901-57l-preserved-nnsa-gao-baseline.json",
+      "source_sha256": "97fe1f38cf30caea31486e060b48bf228024a7704655d754aac400319022b0bb",
+      "collection_id": "research-collection-contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026",
+      "title": "NNSA GAO enterprise baseline remains In Review after field-level intake review",
+      "publisher": "U.S. Government Accountability Office",
+      "record_status": "In Review",
+      "matched_fields": [
+        "title",
+        "summary",
+        "key_findings"
+      ],
+      "screen_state": "Candidate only — individual attribution review required"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+---
+import operations from '../../data/phase-207-current-operations.json';
+interface Props{recordId?:string;}
+const receipts=operations.receipts.filter(r=>r.checked_date<=operations.as_of_date&&(Astro.props.recordId?r.affected_record_ids.includes(Astro.props.recordId):r.affected_routes.includes(Astro.url.pathname)));
+const pilotFollowups=(operations.pilot_research_followups??[]).filter(r=>r.checked_date<=operations.as_of_date&&(Astro.props.recordId?r.affected_record_ids.includes(Astro.props.recordId):r.affected_routes.includes(Astro.url.pathname)));
+---
+{receipts.map(r=><aside class="page-section" data-operations-receipt={r.receipt_id}><h2>Project-file check · {r.checked_date}</h2>
+  {receipts.filter(later=>later.file_id===r.file_id&&later.checked_date>r.checked_date).slice(-1).map(later=><p>Historical receipt preserved. The {later.checked_date} check below supersedes this receipt's next appointment; the current next check is {later.next_check_date}.</p>)}
+  <p>{r.bounded_finding}</p><p>Scheduled: {r.scheduled_date}. Actual review: {r.checked_date}. Next check: {r.next_check_date}.</p><p>{r.next_action}</p><details><summary>Scope and provenance</summary><p>{r.search_scope}</p><ul>{r.source_checks.map(s=><li><a href={s.url}>{s.access}</a> — {s.finding}</li>)}</ul><p>Receipt {r.receipt_id}. No stage, permit, human admission or publication approval inferred.</p></details><a href="/data/current-operations.json">Inspect the dated receipt and remaining review queue</a></aside>)}
+{pilotFollowups.map(r=><aside class="page-section" data-pilot-research={r.review_id}>
+  <h2 id={r.review_id}>{r.title}</h2><p>{r.status}. Checked {r.checked_date}.</p><p>{r.finding}</p>
+  {pilotFollowups.filter(later=>later.supersedes_access_limits_of===r.review_id).map(later=><p>Historical access result: <a href={`#${later.review_id}`}>a later visual-review receipt resolves the access limits below</a>. The earlier receipt remains preserved.</p>)}
+  <p><strong>Next:</strong> {r.next_action}</p>
+  <details><summary>Source findings, access limits and exact missing artifacts</summary>
+    <ul>{r.source_checks.map(s=><li><a href={s.url}>{s.title}</a> ({s.artifact_date}), {s.locator}. {s.finding} Access: {s.access}.</li>)}</ul>
+    <h3>Access and verification limits</h3><ul>{r.access_limits.map(limit=><li>{limit}</li>)}</ul>
+    <h3>Required before admission</h3><ul>{r.required_artifacts.map(artifact=><li>{artifact}</li>)}</ul>
+  </details>
+  <p>No added observations, independent approval, issuer correction or series admission. The original extraction and period amendment remain unchanged.</p>
+  <p>Research note {r.review_id}. <a href="/data/current-operations.json">Download the original reviews and separate follow-up</a></p>
+</aside>)}

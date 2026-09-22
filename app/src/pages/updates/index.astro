@@ -1,111 +1,15 @@
 ---
-import { getCollection } from "astro:content";
-import BaseLayout from "../../components/layout/BaseLayout.astro";
-import MetaPill from "../../components/ui/MetaPill.astro";
-
-const updates = (await getCollection("updates")).sort(
-  (left, right) => right.data.effective_date.getTime() - left.data.effective_date.getTime()
-);
-
-function formatDate(date: Date): string {
-  return new Intl.DateTimeFormat("en-CA", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    timeZone: "UTC"
-  }).format(date);
-}
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PagedShelf from '../../components/review/PagedShelf.astro';
+import {getShelfCatalog} from '../../lib/shelf-catalog';
+const {updates}=await getShelfCatalog();
 ---
-
-<BaseLayout
-  title="Updates and Corrections | FTFN"
-  description="A public history of material FTFN source refreshes, signal repairs, publication decisions, corrections, and archives."
->
-  <section class="page-section">
-    <div class="eyebrow">Trust Surface</div>
-    <h1 class="page-title">Updates and corrections</h1>
-    <p class="lede">
-      Evidence decisions should be visible, including bounded checks that do not
-      change a record. This log records source refreshes, signal repairs,
-      publication promotions, corrections, archives, and no-material-change
-      receipts without creating an automated path from ingestion to publication.
-    </p>
-    <div class="meta-row">
-      <MetaPill label={`${updates.length} logged changes`} />
-      <MetaPill label="Interpretive decisions remain human-gated" tone="review" />
-      <MetaPill label="No automated publishing" tone="urgency" />
-    </div>
-  </section>
-
-  <section class="page-section two-column-section">
-    <div class="prose">
-      <h2>What gets logged</h2>
-      <p>
-        A correction changes an inaccurate claim. A source refresh records a
-        material evidence update. A signal repair revises a record against new
-        evidence. A publication promotion records a review decision. An archive
-        removes a record from current intelligence while preserving its history.
-        A no-material-change receipt records the exact source checked, retained
-        state, missing artifact, and next check date without claiming that the
-        artifact does not exist.
-      </p>
-    </div>
-    <div class="prose">
-      <h2>Reusable public data</h2>
-      <p>
-        Stable, versioned metadata exports make the public source library easier
-        to inspect and preserve the contract a later database must support.
-      </p>
-      <ul>
-        <li><a class="inline-link" href="/data/sources.json">Sources JSON</a></li>
-        <li><a class="inline-link" href="/data/topics.json">Topics JSON</a></li>
-        <li><a class="inline-link" href="/data/signals.json">Published signals JSON</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="page-section">
-    <div class="source-list" aria-label="Update history">
-      {updates.map((update) => (
-        <article class="source-row">
-          <div class="meta-row">
-            <MetaPill label={update.data.entry_type} tone="review" />
-            {update.data.receipt_type && <MetaPill label={update.data.receipt_type} tone="possibility" />}
-            {update.data.materiality && <MetaPill label={update.data.materiality} />}
-            <MetaPill label={formatDate(update.data.effective_date)} />
-          </div>
-          <h2>{update.data.title}</h2>
-          <p>{update.data.summary}</p>
-          <p><strong>Evidence note:</strong> {update.data.evidence_note}</p>
-          {update.data.receipt_id && (
-            <div>
-              <strong>Receipt details</strong>
-              <ul class="compact-list">
-                <li><strong>Receipt:</strong> <code>{update.data.receipt_id}</code></li>
-                {update.data.source_checked_date && <li><strong>Source checked:</strong> {formatDate(update.data.source_checked_date)}</li>}
-                {update.data.decision_date && <li><strong>Decision date:</strong> {formatDate(update.data.decision_date)}</li>}
-                {update.data.prior_state && <li><strong>Prior state:</strong> {update.data.prior_state}</li>}
-                {update.data.current_state && <li><strong>Current state:</strong> {update.data.current_state}</li>}
-                {update.data.publication_effect && <li><strong>Publication effect:</strong> {update.data.publication_effect}</li>}
-                {update.data.next_check_date && <li><strong>Next check:</strong> {formatDate(update.data.next_check_date)}</li>}
-              </ul>
-            </div>
-          )}
-          <div>
-            <strong>Affected records</strong>
-            <ul class="compact-list">
-              {update.data.affected_record_ids.map((recordId) => <li><code>{recordId}</code></li>)}
-            </ul>
-          </div>
-          {update.data.related_paths.length > 0 && (
-            <div class="meta-row">
-              {update.data.related_paths.map((path, index) => (
-                <a class="inline-link" href={path}>Related page {index + 1}: {path}</a>
-              ))}
-            </div>
-          )}
-        </article>
-      ))}
-    </div>
+<BaseLayout title="Updates and Corrections | FTFN" description="The complete, dated FTFN history of corrections, source checks and publication decisions.">
+  <section class="page-section"><h1 class="page-title">Updates and corrections</h1>
+    <p class="lede">Evidence decisions should remain visible, including checks that change nothing. Search all {updates.length} dated entries by subject, receipt ID or affected record. Open any entry for its complete evidence note and decision history.</p>
+    <p>A correction repairs an inaccurate claim. A source refresh records an evidence update. A publication decision is distinct from source ingestion. A no-material-change receipt states what was checked and retained without claiming that a missing artifact does not exist.</p>
+    <p>Dates and outcomes below describe the recorded decisions, not new checks performed by this page. Nothing here creates an automated publishing approval.</p>
+    <p><a href="/data/signals.json">Historical Published signal export</a> · <a href="/data/sources.json">Source metadata</a> · <a href="/data/shelves/updates.json">Searchable update index</a></p>
+    <PagedShelf records={updates} kind="updates"/>
   </section>
 </BaseLayout>

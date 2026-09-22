@@ -1,0 +1,405 @@
+{
+  "schema_version": "1.0",
+  "phase": 180,
+  "program_id": "FTFN-PHASE-180",
+  "dataset": "phase_180_october_state_report_and_v1_promotion_gate",
+  "title": "October State Report and v1 Promotion Gate",
+  "effective_date": "2026-09-01",
+  "record_status": "Published local state report",
+  "build_status": "Complete locally — locally validated; future and owner gates held",
+  "summary": "Audit the accelerated Phase 173–180 layer through sixteen explicit gates while separating locally complete content from September and October calendar work, owner authority, and external publication.",
+  "record_scope": "Append-only Phase 173–180 release layer over immutable Phase 156, 164, and 172 validation receipts.",
+  "publication_boundaries": [
+    "This accelerated layer is prepared and locally published on 2026-09-01; it does not claim that a later September or October operation has occurred.",
+    "The immutable Phase 156, 164, and 172 receipts remain exact; later live projections and receipts are append-only.",
+    "Source profiles checked on September 1 are current preparation, not October rechecks, evidence-admission decisions, or observed outcomes.",
+    "Owner outcomes, compatibility decisions, longitudinal admission, zero-series acceptance, weekly publications, month-end synthesis, Git publication, hosting, public launch, and v1 promotion remain null or Held until their authorities exist."
+  ],
+  "routes": {
+    "hub": "/review/v1oct/october-state/",
+    "public_export": "/data/phase-180-october-state-report-and-v1-promotion-gate.json"
+  },
+  "counts": {
+    "readiness_gates": 16,
+    "passed": 8,
+    "held": 8,
+    "pending_build": 0,
+    "false_passes": 0
+  },
+  "state_report_gates": [
+    {
+      "gate_id": "180-GATE-01-IMMUTABLE-BASELINES",
+      "title": "Immutable validation baselines",
+      "state": "Pass",
+      "evidence": "Phase 156 156-LOCAL-VALIDATION-2026-08-31-a750bba9528e, Phase 164 164-LOCAL-VALIDATION-2026-09-01-d2846dc22604, and Phase 172 172-LOCAL-VALIDATION-2026-09-01-65326aad9d30 retain their exact digests.",
+      "next_action": "Preserve all three receipts and validate this layer independently.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-02-OPERATING-FOUNDATION",
+      "title": "Cutoff-aware operating foundation",
+      "state": "Pass",
+      "evidence": "Phase 173 binds 129 carryovers, generalized gate and weekly operators, the September 23 DARPA companion identity, and zero silent overdue items at the September 1 cutoff.",
+      "next_action": "Advance live state only by append-only dated receipts.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-03-SEPTEMBER-CALENDAR",
+      "title": "September calendar completeness",
+      "state": "Held",
+      "evidence": "83 calendar records remain future at the September 1 cutoff; September desk, evidence, project-file, companion, and edition work is not complete.",
+      "next_action": "Operate the September 6 desk closures next, then each remaining gate on its lawful date.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-04-CYCLE-001-CLOSE",
+      "title": "Evidence Cycle 001 terminal audit",
+      "state": "Held",
+      "evidence": "3 of 13 identities are terminal; 10 remain scheduled.",
+      "next_action": "Close the cycle only after all thirteen items have dated decisions and receipts or contract-compliant bounded blocker/reschedule states.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-05-CYCLE-002-INTAKE",
+      "title": "Evidence Cycle 002 governed intake",
+      "state": "Pass",
+      "evidence": "10 candidates across 8 lanes have exact authority, artifact, trigger, method, denominator, affected-record, and stop-rule contracts; all outcomes remain null.",
+      "next_action": "Assign lawful dates only when authoritative release schedules or event triggers are established.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-06-AUTHORITY-DECISIONS",
+      "title": "Authority dispositions",
+      "state": "Held",
+      "evidence": "12 authority dockets remain owner-pending with zero candidates admitted.",
+      "next_action": "Obtain one dated close, carry, or exclusion receipt for each exact candidate-set digest.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-07-REQUIREMENT-DECISIONS",
+      "title": "Requirement decisions",
+      "state": "Held",
+      "evidence": "18 requirement dockets remain owner-pending.",
+      "next_action": "Resolve authority prerequisites and then issue each requirement receipt independently.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-08-MISSION-DECISIONS",
+      "title": "Mission decisions",
+      "state": "Held",
+      "evidence": "6 mission dockets remain held behind their requirement receipts.",
+      "next_action": "Do not decide a mission until all dependent requirement packets are terminal.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-09-LONGITUDINAL-ZERO-SERIES",
+      "title": "Longitudinal admission and zero-series boundary",
+      "state": "Held",
+      "evidence": "18 compatibility tests, 3 pilot admissions, and one separate zero-series owner disposition remain null; zero observations were transferred.",
+      "next_action": "Run all six tests per pilot under dual review, then obtain the separate zero-series disposition if no series qualifies.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-10-STACK-WATCH",
+      "title": "Accelerated Stack Watch expansion",
+      "state": "Pass",
+      "derived_pass": true,
+      "audit_proof": {
+        "exact_packet_inventory": true,
+        "exact_lane_and_claim_inventory": true,
+        "source_bound_new_packets": true,
+        "lawful_october_schedule": true,
+        "unique_routes": true
+      },
+      "evidence": "Phase 177 exposes 32 packets across 8 lanes and 96 referenced or new bounded claim blocks; its exact packet, source-binding, October-schedule, null-result, and route checks pass.",
+      "next_action": "Run each source-currency sweep only on its bound lawful October review date.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-11-ATLAS-DEPTH",
+      "title": "Systems Atlas and compendium depth",
+      "state": "Pass",
+      "derived_pass": true,
+      "audit_proof": {
+        "exact_depth_inventory": true,
+        "explicit_coverage_ledger": true,
+        "entry_specific_source_bindings": true,
+        "explicit_backlink_contracts": true,
+        "cutoff_bounded_timeline": true,
+        "easton_entry_identity": true,
+        "unique_routes": true
+      },
+      "evidence": "Phase 178 adds 10 dossiers, 8 overlays, 4 essays, 60 layers, and 50 noncausal edges; its coverage, entry-provenance, backlink, timeline, identity, and route checks pass.",
+      "next_action": "Maintain named-place, funding-state, milestone, denominator, and noncomparability boundaries through dated evidence.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-12-OCTOBER-EDITIONS",
+      "title": "October weekly and month-end edition decisions",
+      "state": "Held",
+      "evidence": "Phase 179 prebuilds 68 desk closures and 5 future edition decisions with null cutoffs, content, digests, and receipts.",
+      "next_action": "Issue publication or explicit no-publication receipts only after each due input set is terminal.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-13-MACHINE-CONTRACT",
+      "title": "Machine-readable route, export, and update contract",
+      "state": "Pass",
+      "evidence": "Eight phase registries, their exact review routes, nine JSON exports, and eight dated update identities are generated from one aggregate inventory.",
+      "next_action": "Keep the aggregate, route generator, data endpoint, sitemap, update registry, and deployment manifest exact.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-14-CONTENT-INTEGRITY",
+      "title": "Content and anti-inference integrity",
+      "state": "Pass",
+      "derived_pass": true,
+      "audit_proof": {
+        "phase_173_exact_carryover_classes": true,
+        "september_weekly_inputs_preserved": true,
+        "owner_prerequisites_explicit": true,
+        "longitudinal_results_unpredated": true,
+        "stack_watch_audit_passed": true,
+        "atlas_audit_passed": true,
+        "october_due_operations_exact": true,
+        "future_editorial_results_unpredated": true
+      },
+      "evidence": "The embedded Phase 173–179 integrity proof passes; it binds carryover classes, September weekly inputs, owner prerequisites, null future results, Phase 177/178 audits, and October due-operation identities.",
+      "next_action": "Run repository-wide candidate, content, source-health, inherited-phase, October assertions, and the production build before local validation.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "180-GATE-15-LOCAL-VALIDATION",
+      "title": "Local build and release validation",
+      "state": "Pass",
+      "evidence": "Receipt 180-LOCAL-VALIDATION-2026-09-01-e42929fa956a binds the exact normalized Phase 173–180 candidate digest.",
+      "next_action": "Run the full validation chain, archive the digest-bound receipt, rebuild, and verify deterministic output.",
+      "receipt_id": "180-LOCAL-VALIDATION-2026-09-01-e42929fa956a"
+    },
+    {
+      "gate_id": "180-GATE-16-OWNER-PROMOTION",
+      "title": "Owner acceptance and repository/publication authority",
+      "state": "Held",
+      "evidence": "No owner receipt binds this candidate and no repository publication, hosting, launch, or v1-promotion authority is present.",
+      "next_action": "Obtain an explicit digest-bound owner receipt and separate publication authorization before any external release action.",
+      "receipt_id": null
+    }
+  ],
+  "embedded_content_audits": {
+    "stack_watch": {
+      "exact_packet_inventory": true,
+      "exact_lane_and_claim_inventory": true,
+      "source_bound_new_packets": true,
+      "lawful_october_schedule": true,
+      "unique_routes": true
+    },
+    "atlas_depth": {
+      "exact_depth_inventory": true,
+      "explicit_coverage_ledger": true,
+      "entry_specific_source_bindings": true,
+      "explicit_backlink_contracts": true,
+      "cutoff_bounded_timeline": true,
+      "easton_entry_identity": true,
+      "unique_routes": true
+    },
+    "cross_phase_integrity": {
+      "phase_173_exact_carryover_classes": true,
+      "september_weekly_inputs_preserved": true,
+      "owner_prerequisites_explicit": true,
+      "longitudinal_results_unpredated": true,
+      "stack_watch_audit_passed": true,
+      "atlas_audit_passed": true,
+      "october_due_operations_exact": true,
+      "future_editorial_results_unpredated": true
+    }
+  },
+  "immutable_baseline_bindings": {
+    "v1rc": {
+      "receipt_id": "156-LOCAL-VALIDATION-2026-08-31-a750bba9528e",
+      "artifact_digest": "5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a"
+    },
+    "v1month": {
+      "receipt_id": "164-LOCAL-VALIDATION-2026-09-01-d2846dc22604",
+      "artifact_digest": "c306c3db8f861805be0482f82985df7de7fa1124b055f8e76023b5ba680c8a19"
+    },
+    "v1cycle": {
+      "receipt_id": "172-LOCAL-VALIDATION-2026-09-01-65326aad9d30",
+      "artifact_digest": "cdf822b6451e02523dbdcadfc0f21470011285033de55c919718785aaffd9b34"
+    }
+  },
+  "local_validation_receipt": {
+    "schema_version": "1.0",
+    "receipt_id": "180-LOCAL-VALIDATION-2026-09-01-e42929fa956a",
+    "receipt_type": "Local Validation",
+    "phase": 180,
+    "effective_date": "2026-09-01",
+    "validated_date": "2026-09-01",
+    "validated_at": "2026-09-01T20:42:35.950Z",
+    "status": "Passed",
+    "validation_result": "Passed local Phase 173–180 accelerated operating-program checks",
+    "validator_contract_version": "phase-180-local-validator-v1",
+    "scope": "Local validation of the accelerated append-only Phase 173–180 operating and content layer. The receipt validates prepared content, route/export/update contracts, source bindings, and future/owner stop rules only; it does not create a future-dated evidence result, owner disposition, repository publication, hosted deployment, public launch, or v1 promotion.",
+    "artifact_digest_algorithm": "sha256",
+    "artifact_digest_contract": "SHA-256 over nine normalized schema-1.0 Phase 173–180 exports, the exact 260-route and nine-export inventories, eight dated updates, and ten complete source profiles. Only receipt-derived Phase 180 fields are normalized.",
+    "artifact_digest": "ed6d79c0c0994f3a037355f681d94ad3dd01f430704d596ccddaea770154e0be",
+    "validation_bundle_digest": "e42929fa956ad8423e9efee15a287fb616f01f1c1ab650e70f7cb080d89a95b6",
+    "public_html_routes": 260,
+    "public_json_exports": 9,
+    "publication_updates": 8,
+    "source_profiles_bound": 10,
+    "metrics": {
+      "overlay_public_html_routes": 260,
+      "structurally_audited_overlay_routes": 260,
+      "overlay_public_json_exports": 9,
+      "schema_1_0_overlay_exports": 9,
+      "overlay_update_records": 8,
+      "primary_records": 267,
+      "source_profiles_bound": 10,
+      "baseline_phase156_receipt_id": "156-LOCAL-VALIDATION-2026-08-31-a750bba9528e",
+      "baseline_phase156_artifact_digest": "5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a",
+      "baseline_phase164_receipt_id": "164-LOCAL-VALIDATION-2026-09-01-d2846dc22604",
+      "baseline_phase164_artifact_digest": "c306c3db8f861805be0482f82985df7de7fa1124b055f8e76023b5ba680c8a19",
+      "baseline_phase172_receipt_id": "172-LOCAL-VALIDATION-2026-09-01-65326aad9d30",
+      "baseline_phase172_artifact_digest": "cdf822b6451e02523dbdcadfc0f21470011285033de55c919718785aaffd9b34",
+      "whole_site_snapshot": {
+        "html_pages_excluding_downloads": 7014,
+        "top_level_data_json_exports": 126,
+        "update_entries_rendered": 206,
+        "canonical_source_records": 830
+      }
+    },
+    "checks": [
+      {
+        "check_id": "immutable-baselines",
+        "status": "Passed",
+        "detail": "Exact Phase 156, 164, and 172 receipt/digest bindings preserved"
+      },
+      {
+        "check_id": "route-export-update-source-contract",
+        "status": "Passed",
+        "detail": "260 routes / 9 exports / 8 updates / 10 bound source profiles"
+      },
+      {
+        "check_id": "calendar-owner-boundary",
+        "status": "Passed",
+        "detail": "Future calendar and all owner decisions remain null or Held"
+      },
+      {
+        "check_id": "npm-run-validate-candidates",
+        "status": "Passed",
+        "detail": "npm run validate:candidates"
+      },
+      {
+        "check_id": "npm-run-validate-content",
+        "status": "Passed",
+        "detail": "npm run validate:content"
+      },
+      {
+        "check_id": "npm-run-source-health",
+        "status": "Passed",
+        "detail": "npm run source:health"
+      },
+      {
+        "check_id": "npm-run-test-v1rc",
+        "status": "Passed",
+        "detail": "npm run test:v1rc"
+      },
+      {
+        "check_id": "npm-run-test-v1month",
+        "status": "Passed",
+        "detail": "npm run test:v1month"
+      },
+      {
+        "check_id": "npm-run-test-v1cycle",
+        "status": "Passed",
+        "detail": "npm run test:v1cycle"
+      },
+      {
+        "check_id": "npm-run-test-v1oct",
+        "status": "Passed",
+        "detail": "npm run test:v1oct"
+      },
+      {
+        "check_id": "npm-run-test-phase58",
+        "status": "Passed",
+        "detail": "npm run test:phase58"
+      },
+      {
+        "check_id": "npm-run-verify-phase58",
+        "status": "Passed",
+        "detail": "npm run verify:phase58"
+      },
+      {
+        "check_id": "npm-run-verify-phase60",
+        "status": "Passed",
+        "detail": "npm run verify:phase60"
+      },
+      {
+        "check_id": "npm-run-verify-phase60c",
+        "status": "Passed",
+        "detail": "npm run verify:phase60c"
+      },
+      {
+        "check_id": "npm-run-test-phase67",
+        "status": "Passed",
+        "detail": "npm run test:phase67"
+      },
+      {
+        "check_id": "npm-run-verify-phase67",
+        "status": "Passed",
+        "detail": "npm run verify:phase67"
+      },
+      {
+        "check_id": "npm-run-check",
+        "status": "Passed",
+        "detail": "npm run check"
+      },
+      {
+        "check_id": "npm-run-build",
+        "status": "Passed",
+        "detail": "npm run build"
+      },
+      {
+        "check_id": "npm-run-verify-v1rc",
+        "status": "Passed",
+        "detail": "npm run verify:v1rc"
+      },
+      {
+        "check_id": "npm-run-verify-v1month",
+        "status": "Passed",
+        "detail": "npm run verify:v1month"
+      },
+      {
+        "check_id": "npm-run-verify-v1cycle",
+        "status": "Passed",
+        "detail": "npm run verify:v1cycle"
+      }
+    ],
+    "evidence_admission_authorized": false,
+    "owner_acceptance": false,
+    "github_publication_authorized": false,
+    "hosted_deployment_authorized": false,
+    "public_launch_authorized": false,
+    "v1_promotion_state": "Held",
+    "next_action": "Embed this receipt, rebuild and verify deterministic output, update the manifest, then operate the September 6 desk closures only on their lawful date."
+  },
+  "owner_authority": {
+    "evidence_admission": false,
+    "authority_disposition": false,
+    "mission_decision": false,
+    "zero_series_acceptance": false,
+    "repository_publication": false,
+    "hosting": false,
+    "dns": false,
+    "public_launch": false,
+    "v1_promotion": false
+  },
+  "v1_promotion_state": "Held",
+  "next_lawful_action": "Operate the September 6 desk closures and Evidence Watch decision; do not skip unresolved September work while the accelerated October layer is prepared.",
+  "public_html_routes": [
+    "/review/v1oct/october-state/"
+  ],
+  "public_json_exports": [
+    "/data/phase-180-october-state-report-and-v1-promotion-gate.json"
+  ]
+}

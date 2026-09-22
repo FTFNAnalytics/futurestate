@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "receipt_id": "164-LOCAL-VALIDATION-2026-09-01-d2846dc22604",
+  "phase": 164,
+  "candidate_effective_date": "2026-08-31",
+  "validated_date": "2026-09-01",
+  "validated_at": "2026-09-01T06:18:11.197Z",
+  "status": "Passed",
+  "validation_result": "Passed local Phase 157–164 operating-overlay checks",
+  "validator_contract_version": "phase-164-local-validator-v1",
+  "scope": "Local validation of the append-only Phase 157–164 September operating overlay. The receipt does not admit evidence, supply an owner decision, authorize repository publication, authorize hosting, or promote v1.",
+  "artifact_digest_algorithm": "sha256",
+  "artifact_digest_contract": "SHA-256 over the normalized nine schema-1.0 Phase 157–164 source exports, exact 67-route overlay inventory, eight inventoried publication updates, source-semantic bindings, and immutable Phase 156 receipt/digest baseline. Receipt-derived Phase 164 fields are normalized to their pre-receipt state.",
+  "artifact_digest": "c306c3db8f861805be0482f82985df7de7fa1124b055f8e76023b5ba680c8a19",
+  "validation_bundle_digest": "d2846dc22604567826710929eb26893e31ab8bad423a05a8f3856c867904bc3e",
+  "metrics": {
+    "overlay_public_html_routes": 67,
+    "overlay_public_json_exports": 9,
+    "schema_1_0_overlay_exports": 9,
+    "structurally_audited_overlay_routes": 67,
+    "overlay_update_records": 8,
+    "baseline_phase156_artifact_digest": "5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a",
+    "whole_site_snapshot": {
+      "html_pages_excluding_downloads": 6650,
+      "top_level_data_json_exports": 108,
+      "update_entries_rendered": 189
+    }
+  },
+  "historical_whole_site_inventory_snapshot": true,
+  "checks": [
+    {
+      "check_id": "overlay-route-inventory",
+      "status": "Passed",
+      "detail": "67 unique overlay routes"
+    },
+    {
+      "check_id": "overlay-route-structure",
+      "status": "Passed",
+      "detail": "67 overlay routes structurally audited"
+    },
+    {
+      "check_id": "overlay-export-inventory",
+      "status": "Passed",
+      "detail": "9 unique overlay exports"
+    },
+    {
+      "check_id": "overlay-schema-contract",
+      "status": "Passed",
+      "detail": "9 overlay exports use schema_version 1.0"
+    },
+    {
+      "check_id": "overlay-update-inventory",
+      "status": "Passed",
+      "detail": "8 immutable Phase 157–164 updates"
+    },
+    {
+      "check_id": "phase156-baseline-binding",
+      "status": "Passed",
+      "detail": "immutable Phase 156 digest 5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a"
+    },
+    {
+      "check_id": "time-and-owner-boundary",
+      "status": "Passed",
+      "detail": "future evidence/editorial results remain unpredated and all owner/publication/hosting/launch authority remains false"
+    },
+    {
+      "check_id": "npm-run-validate-candidates",
+      "status": "Passed",
+      "command": "npm run validate:candidates"
+    },
+    {
+      "check_id": "npm-run-validate-content",
+      "status": "Passed",
+      "command": "npm run validate:content"
+    },
+    {
+      "check_id": "npm-run-source-health",
+      "status": "Passed",
+      "command": "npm run source:health"
+    },
+    {
+      "check_id": "npm-run-test-v1rc",
+      "status": "Passed",
+      "command": "npm run test:v1rc"
+    },
+    {
+      "check_id": "npm-run-test-v1month",
+      "status": "Passed",
+      "command": "npm run test:v1month"
+    },
+    {
+      "check_id": "npm-run-check",
+      "status": "Passed",
+      "command": "npm run check"
+    },
+    {
+      "check_id": "npm-run-build",
+      "status": "Passed",
+      "command": "npm run build"
+    },
+    {
+      "check_id": "npm-run-verify-v1rc",
+      "status": "Passed",
+      "command": "npm run verify:v1rc"
+    },
+    {
+      "check_id": "npm-run-verify-v1month",
+      "status": "Passed",
+      "command": "npm run verify:v1month"
+    }
+  ],
+  "evidence_admission_authorized": false,
+  "owner_acceptance": false,
+  "github_publication_authorized": false,
+  "hosted_deployment_authorized": false,
+  "public_launch_authorized": false,
+  "v1_promotion_state": "Held",
+  "next_action": "Regenerate Phases 157–164 so this receipt is embedded, rebuild, verify the stable overlay digest, update the deployment manifest, and operate each future evidence or editorial window only on its lawful date."
+}

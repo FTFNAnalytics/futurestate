@@ -372,6 +372,13 @@
     "source-57b-amtrak-ada-progress-june-2026",
     "source-57b-louisiana-nextlink-first-bead-tower",
     "source-57b-louisiana-starlink-bead-agreement",
+    "source-165-led-spacex-louisiana-campus-starlink-offer",
+    "source-165-starlink-louisiana-community-discount",
+    "source-165-louisiana-broadband-reporting-law",
+    "source-165-connectla-resource-library",
+    "source-60-connectla-spacex-pecan-island-plan-2026",
+    "source-60-connectla-starlink-final-proposal-location-cohort-2026",
+    "source-60-starlink-2025-progress-report",
     "source-57b-montana-bead-quarterly-report-june-2026",
     "source-57b-hanford-central-plateau-water-operational",
     "source-57b-hanford-etf-six-month-campaign",
@@ -1514,6 +1521,18 @@
       "label": "Eleven dated evidence-return decisions; one Council advancement, one official-results gate, and nine unresolved outcome holds",
       "node_type": "Signal",
       "note": "Phase 57Z distinguishes evidence-review completion from outcome resolution and records the exact missing artifact for every held gate."
+    },
+    {
+      "id": "node-phase165-louisiana-starlink-no-material-change",
+      "label": "September 1 Louisiana Starlink adoption gate: official-source check complete; observed fixed-cohort adoption still unresolved",
+      "node_type": "Signal",
+      "note": "Receipt receipt-60-louisiana-starlink-2026-09-01-no-material-change preserves the In Review state and schedules a September 8 public-surface check."
+    },
+    {
+      "id": "node-phase60-starlink-september8-companion",
+      "label": "September 8 Louisiana Starlink companion recheck: planning cohort fixed; observed outcome still unresolved",
+      "node_type": "Signal",
+      "note": "Receipt receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change fixes 10,635 unique location IDs across 87 SpaceX projects while retaining the In Review state and three-of-thirteen cycle-decision count."
     }
   ],
   "links": [
@@ -2643,6 +2662,41 @@
       "relationship": "Limited By",
       "confidence": "Missing Evidence",
       "note": "A Council action or reviewed source update does not establish realized delivery, attribution, or causation."
+    },
+    {
+      "from": "node-phase165-louisiana-starlink-no-material-change",
+      "to": "node-phase57z-dated-evidence-return",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "The September 1 decision preserves the inherited adoption contract and records a new dated receipt without rewriting the earlier baseline."
+    },
+    {
+      "from": "node-phase165-louisiana-starlink-no-material-change",
+      "to": "node-gap",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "The reviewed official surfaces do not supply observed installations, subscriptions, or service taken for a fixed eligible-location cohort with a dated period and disclosed method."
+    },
+    {
+      "from": "node-phase165-louisiana-starlink-no-material-change",
+      "to": "node-attribution",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "Planned access, offer terms, reporting duties, and program-document availability cannot establish adoption, household benefit, success, failure, or causal effect."
+    },
+    {
+      "from": "node-phase60-starlink-september8-companion",
+      "to": "node-phase165-louisiana-starlink-no-material-change",
+      "relationship": "Depends On",
+      "confidence": "Supported",
+      "note": "The companion receipt preserves rather than replaces the September 1 decision and does not add a fourteenth Evidence Cycle gate."
+    },
+    {
+      "from": "node-phase60-starlink-september8-companion",
+      "to": "node-gap",
+      "relationship": "Limited By",
+      "confidence": "Missing Evidence",
+      "note": "The fixed planning cohort still lacks actual installations, activated subscriptions, or service taken with a compatible observation period and method."
     }
   ],
   "what_this_map_supports": [
@@ -2703,7 +2757,9 @@
     "120 accepted-label tests, sixty ambiguity rejections, eighteen fixture executions, fifty-four receipt templates, zero actual review events, and nine preserved holds.",
     "Nine role matrices, 270 receipt-integrity cases, 63 authorization cases, 90 handoff cases, zero actual review events, and nine preserved holds.",
     "Nine append-only chains, 81 audit cases, 162 publication-receipt cases, 90 adjudication cases, zero actual release events, and nine preserved holds.",
-    "Nine release checklists, nine immutable bundle schemas, nine reversible publication lifecycles, 396 passing cases, zero actual events, and nine preserved holds."
+    "Nine release checklists, nine immutable bundle schemas, nine reversible publication lifecycles, 396 passing cases, zero actual events, and nine preserved holds.",
+    "A completed September 1, 2026 official-source review and bounded No Material Change receipt for the Louisiana Starlink adoption gate, with the underlying signal retained In Review.",
+    "A bounded September 8 companion receipt that fixes the planning identity at 87 SpaceX projects and 10,635 unique location IDs without creating an outcome numerator or another cycle gate."
   ],
   "what_this_map_does_not_prove": [
     "It does not create a cross-portfolio score or ranking.",
@@ -2735,7 +2791,9 @@
     "That a failed public search proves nonexistence or that an FTFN matrix constitutes GAO acceptance, implementation, closure, or operating outcome.",
     "That an unacquired public copy is nonexistent, that FTFN submitted an agency request, or that an agency statement or near-match constitutes GAO acceptance, implementation, closure, or outcome.",
     "That a supporting artifact is the exact target, that a planned action occurred, or that GAO accepted, implemented, or closed any recommendation.",
-    "That a named record was acquired, a forecast became an award, a plan became an operating system, a project estimate became a capability estimate, potential savings were realized, or GAO accepted or closed a recommendation."
+    "That a named record was acquired, a forecast became an award, a plan became an operating system, a project estimate became a capability estimate, potential savings were realized, or GAO accepted or closed a recommendation.",
+    "That the September 1 Louisiana review proves a qualifying artifact is nonexistent, that adoption is zero, or that planned access, an affordability offer, a reporting duty, or a document listing establishes installation, subscription, retention, household benefit, success, or failure.",
+    "That the September 8 planning-cohort identity, provider-wide totals, or bounded search result establishes Louisiana adoption, success, failure, or any Phase 61 transfer."
   ],
   "next_records_needed": [
     "Machine-readable data dictionaries and revision histories.",
@@ -2836,6 +2894,7 @@
     "One complete cited accept packet with distinct named evidence and publication reviewers, immutable receipt fields, and a separately recorded publication decision without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution.",
     "One complete cited packet with immutable evidence and publication receipts, explicit adjudication and escalation ownership when needed, and a separately attributable manual release authorization without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, or closure attribution.",
     "One complete cited packet with immutable review receipts, a separate human release receipt, an exact signed publication bundle, and a separate manual publication event without changing identity, period, denominator, privacy, authority, acceptance, capability, implementation, closure, or outcome attribution.",
-    "A Phase 57Z dated evidence-return pass against the nine inherited outcome contracts"
+    "A Phase 57Z dated evidence-return pass against the nine inherited outcome contracts",
+    "At an earlier issuer trigger or the October 9, 2026 final audit, a ConnectLA- or SpaceX-issued project return that fixes the eligible-location cohort and reports actual installations, subscriptions, or service taken with its observation period and method."
   ]
 }

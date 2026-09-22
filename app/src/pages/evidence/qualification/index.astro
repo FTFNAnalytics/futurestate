@@ -3,6 +3,7 @@ import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 import qualificationRegistry from "../../../data/phase-67-qualification-packet-registry.json";
 import returnLedger from "../../../data/phase-67-evidence-return-envelope-ledger.json";
+import { projectEvidenceRecord } from '../../../lib/current-evidence.mjs';
 
 const packets = qualificationRegistry.packet_records.map((record) => ({
   id: record.packet_id,
@@ -16,7 +17,7 @@ const packets = qualificationRegistry.packet_records.map((record) => ({
   date: record.next_check_date,
   boundary: record.current_decision_state
 }));
-const envelopes = returnLedger.envelope_records.map((record) => ({
+const envelopes = returnLedger.envelope_records.map(record => projectEvidenceRecord(record)).map((record) => ({
   id: record.envelope_id,
   slug: record.slug,
   kind: "Return Envelope",
@@ -25,7 +26,7 @@ const envelopes = returnLedger.envelope_records.map((record) => ({
   entity: record.target,
   title: `${record.envelope_id}: ${record.target}`,
   summary: record.exact_next_artifact,
-  date: record.scheduled_check_date,
+  date: record.decision_date ?? record.scheduled_check_date,
   boundary: record.named_file_ids.length > 0 ? `${record.named_file_ids.length} named-file binding` : "No named-file transfer"
 }));
 const records = [...packets, ...envelopes];
@@ -43,13 +44,14 @@ const stages = [...new Set(records.map((record) => record.stage))].sort();
       <h1 class="page-title">Forty-five governed paths from evidence requirement to reader state.</h1>
       <p class="lede">
         Qualification packets define what would answer a downstream question.
-        Return envelopes govern the real dated checks. Neither record family is
-        evidence that its requirement has been met.
+        Return envelopes govern the real dated checks and preserve each bounded
+        decision without treating adjacent evidence as the requested result.
       </p>
       <div class="meta-row">
         <MetaPill label="32 qualification packets" tone="possibility" />
         <MetaPill label="13 return envelopes" />
-        <MetaPill label="0 future receipts" tone="review" />
+        <MetaPill label="7 dated decisions" tone="review" />
+        <MetaPill label="6 scheduled returns" tone="review" />
         <MetaPill label="0 matrix advances" tone="review" />
       </div>
     </div>
@@ -62,8 +64,8 @@ const stages = [...new Set(records.map((record) => record.stage))].sort();
         <p>Packet schemas, envelope joins, reader products, exports, and deterministic rule fixtures are assembled.</p>
       </article>
       <article class="status-item">
-        <h2>Operational gate scheduled</h2>
-        <p>The first real checks remain August 14 for DARPA and August 15 for the Shuttle Landing Facility licence.</p>
+        <h2>Seven decisions recorded</h2>
+        <p>Both Wave 60B decisions retain their historical release verification. The September 1 Starlink decision, its September 8 companion, and four independent September 10 no-change decisions are locally propagated with Git-backed release held. Six cycle gates remain scheduled; named-file rechecks stay separate.</p>
       </article>
       <article class="status-item">
         <h2>Human decision required</h2>
@@ -141,7 +143,7 @@ const stages = [...new Set(records.map((record) => record.stage))].sort();
     <div class="briefing-band__copy">
       <div class="eyebrow">Public Contracts</div>
       <h2>Inspect the machine-readable registry.</h2>
-      <p>The exports omit private candidate notes and preserve empty receipt, decision, and propagation fields for future checks.</p>
+      <p>The exports omit private candidate notes. Historical fields preserve the September 1 baseline; current_state exposes seven dated decisions and six remaining scheduled gates. The four September 10 reviews do not advance an outcome or transfer to a named file.</p>
     </div>
     <article class="record-card">
       <a class="inline-link" href="/data/qualification-packets.json">Qualification packets JSON</a>

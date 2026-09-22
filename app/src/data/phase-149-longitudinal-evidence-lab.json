@@ -1,0 +1,2041 @@
+{
+  "schema_version": "1.0",
+  "phase": 149,
+  "program_id": "FTFN-PHASE-149",
+  "dataset": "phase_149_longitudinal_evidence_lab",
+  "title": "Longitudinal evidence lab",
+  "effective_date": "2026-08-31",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Re-run identity, period, measure, and denominator review, identify defensible pilots, and prepare an explicit no-series launch boundary.",
+  "record_scope": "Longitudinal evidence lab records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "Alternative official-source discovery expands the review shelf; it does not by itself admit evidence or answer a mission.",
+    "Calendar-bound checks remain unoperated until their lawful date, and shared-date gates retain separate identities, decisions, and receipts.",
+    "No project stage, place state, longitudinal observation, comparison verdict, outcome, score, rank, causal finding, recommendation, owner decision, or public-launch authorization is inferred.",
+    "A bounded repository result describes the reviewed corpus and search path; it never proves that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v1rc/longitudinal-lab/",
+    "public_export": "/data/phase-149-longitudinal-evidence-lab.json"
+  },
+  "counts": {
+    "eligibility_reviews": 39,
+    "pilot_reviews_ready": 3,
+    "admitted_series": 0,
+    "observations_transferred": 0,
+    "no_series_boundary_owner_acceptance": 0,
+    "stale_admissions_requiring_revalidation": 0
+  },
+  "longitudinal_reviews": [
+    {
+      "lab_review_id": "149-REVIEW-001",
+      "eligibility_id": "138-ELIGIBILITY-001",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-001",
+      "slug": "tsmc-arizona",
+      "title": "TSMC Arizona campus",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": "61-PROJECT-TSMC-ARIZONA",
+      "measurement_specification_ids": [
+        "69-MS-001",
+        "69-MS-002",
+        "69-MS-003",
+        "69-MS-004"
+      ],
+      "series_admission_docket_id": "70-SA-001",
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "The Atlas identity resolves to governed file 61-PROJECT-TSMC-ARIZONA."
+        },
+        {
+          "dimension": "period",
+          "state": "Prospective period contract present — no observations",
+          "reason": "4 Phase 69 specification(s) define prospective period contracts, while every current observation count remains zero."
+        },
+        {
+          "dimension": "measure",
+          "state": "Prospective measures specified — unobserved",
+          "reason": "4 source-bounded measure contracts await a first qualifying observation."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Prospective denominator contracts present — unobserved",
+          "reason": "Each Phase 69 specification requires a source-declared denominator, but no accepted payload exists."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "8951c4183041e766690a6dc59e2beb6669c850527059cb384e5ccb5c8be712c1",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. Facility-specific inspection, utility acceptance, equipment or product qualification, customer acceptance, and a compatible repeat production series.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-002",
+      "eligibility_id": "138-ELIGIBILITY-002",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-002",
+      "slug": "toronto-24-254930",
+      "title": "Toronto application 24 254930",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": "61-PROJECT-TORONTO-24-254930",
+      "measurement_specification_ids": [
+        "69-MS-005",
+        "69-MS-006",
+        "69-MS-007",
+        "69-MS-008"
+      ],
+      "series_admission_docket_id": "70-SA-002",
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "The Atlas identity resolves to governed file 61-PROJECT-TORONTO-24-254930."
+        },
+        {
+          "dimension": "period",
+          "state": "Prospective period contract present — no observations",
+          "reason": "4 Phase 69 specification(s) define prospective period contracts, while every current observation count remains zero."
+        },
+        {
+          "dimension": "measure",
+          "state": "Prospective measures specified — unobserved",
+          "reason": "4 source-bounded measure contracts await a first qualifying observation."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Prospective denominator contracts present — unobserved",
+          "reason": "Each Phase 69 specification requires a source-declared denominator, but no accepted payload exists."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "4445f399c19460ea0f4c04ee7115db96188dda8771d90df6228a1315a07bd937",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. Enacted amendment numbers or accepted condition compliance followed by a project-specific building permit, start, completion, and occupancy record.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-003",
+      "eligibility_id": "138-ELIGIBILITY-003",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-003",
+      "slug": "northern-virginia-large-load",
+      "title": "Northern Virginia Golden-Mars and GS-5 large-load trail",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "measurement_specification_ids": [
+        "69-MS-009",
+        "69-MS-010",
+        "69-MS-011",
+        "69-MS-012"
+      ],
+      "series_admission_docket_id": "70-SA-003",
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "The Atlas identity resolves to governed file 61-PROJECT-NOVA-LARGE-LOAD."
+        },
+        {
+          "dimension": "period",
+          "state": "Prospective period contract present — no observations",
+          "reason": "4 Phase 69 specification(s) define prospective period contracts, while every current observation count remains zero."
+        },
+        {
+          "dimension": "measure",
+          "state": "Prospective measures specified — unobserved",
+          "reason": "4 source-bounded measure contracts await a first qualifying observation."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Prospective denominator contracts present — unobserved",
+          "reason": "Each Phase 69 specification requires a source-declared denominator, but no accepted payload exists."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "366145d19a20c11e5e629873f9677e6913ecac3c66a390884d7da0d6336edf03",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. Final route and land rights followed by construction, inspection, energization, a named GS-5 service agreement, metered operation, and compatible reliability.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-004",
+      "eligibility_id": "138-ELIGIBILITY-004",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-004",
+      "slug": "space-coast-authority-to-mission",
+      "title": "Space Coast authorization-to-mission stack",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "measurement_specification_ids": [
+        "69-MS-013",
+        "69-MS-014",
+        "69-MS-015",
+        "69-MS-016"
+      ],
+      "series_admission_docket_id": "70-SA-004",
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "The Atlas identity resolves to governed file 61-PROJECT-SPACE-COAST-AUTHORITY."
+        },
+        {
+          "dimension": "period",
+          "state": "Prospective period contract present — no observations",
+          "reason": "4 Phase 69 specification(s) define prospective period contracts, while every current observation count remains zero."
+        },
+        {
+          "dimension": "measure",
+          "state": "Prospective measures specified — unobserved",
+          "reason": "4 source-bounded measure contracts await a first qualifying observation."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Prospective denominator contracts present — unobserved",
+          "reason": "Each Phase 69 specification requires a source-declared denominator, but no accepted payload exists."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "8dee8e8ac717468b9a014369c4b63213d06ba33c8d3fc2a1b7793b9643c3054b",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A formal Shuttle Landing Facility licence disposition or site-and-operator-specific asset acceptance, mission use, repeated service, utilization, safety, and reliability record.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-005",
+      "eligibility_id": "138-ELIGIBILITY-005",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-005",
+      "slug": "nevada-lithium-to-qualified-material",
+      "title": "Nevada lithium project pair",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": "61-PROJECT-NEVADA-LITHIUM",
+      "measurement_specification_ids": [
+        "69-MS-017",
+        "69-MS-018",
+        "69-MS-019",
+        "69-MS-020"
+      ],
+      "series_admission_docket_id": "70-SA-005",
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "The Atlas identity resolves to governed file 61-PROJECT-NEVADA-LITHIUM."
+        },
+        {
+          "dimension": "period",
+          "state": "Prospective period contract present — no observations",
+          "reason": "4 Phase 69 specification(s) define prospective period contracts, while every current observation count remains zero."
+        },
+        {
+          "dimension": "measure",
+          "state": "Prospective measures specified — unobserved",
+          "reason": "4 source-bounded measure contracts await a first qualifying observation."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Prospective denominator contracts present — unobserved",
+          "reason": "Each Phase 69 specification requires a source-declared denominator, but no accepted payload exists."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "f5391b177d3e0e595c5b07f812c7e0c50d65a19fd0be2be2d6612f5a7bcc7944",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A named inspection, accepted construction completion, commissioning result, compliant operating measurement, qualified lot, customer receipt, or recurring output series.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-006",
+      "eligibility_id": "138-ELIGIBILITY-006",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-006",
+      "slug": "gsa-pqc-adoption",
+      "title": "GSA post-quantum acquisition path",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": "61-ADOPTION-GSA-PQC",
+      "measurement_specification_ids": [
+        "69-MS-021",
+        "69-MS-022",
+        "69-MS-023",
+        "69-MS-024"
+      ],
+      "series_admission_docket_id": "70-SA-006",
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "The Atlas identity resolves to governed file 61-ADOPTION-GSA-PQC."
+        },
+        {
+          "dimension": "period",
+          "state": "Prospective period contract present — no observations",
+          "reason": "4 Phase 69 specification(s) define prospective period contracts, while every current observation count remains zero."
+        },
+        {
+          "dimension": "measure",
+          "state": "Prospective measures specified — unobserved",
+          "reason": "4 source-bounded measure contracts await a first qualifying observation."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Prospective denominator contracts present — unobserved",
+          "reason": "Each Phase 69 specification requires a source-declared denominator, but no accepted payload exists."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "d07e1fff2866f0a4f6ce14d776389987a73a90a7b6b02b44bf82f4078f6570b2",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A named agency inventory, solicitation, award, interoperability result, tested cutover, receiving-authority acceptance, rollback record, or legacy retirement.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-007",
+      "eligibility_id": "138-ELIGIBILITY-007",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-007",
+      "slug": "nist-aria-assurance",
+      "title": "NIST ARIA assurance path",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": "61-ADOPTION-NIST-ARIA",
+      "measurement_specification_ids": [
+        "69-MS-025",
+        "69-MS-026",
+        "69-MS-027",
+        "69-MS-028"
+      ],
+      "series_admission_docket_id": "70-SA-007",
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "The Atlas identity resolves to governed file 61-ADOPTION-NIST-ARIA."
+        },
+        {
+          "dimension": "period",
+          "state": "Prospective period contract present — no observations",
+          "reason": "4 Phase 69 specification(s) define prospective period contracts, while every current observation count remains zero."
+        },
+        {
+          "dimension": "measure",
+          "state": "Prospective measures specified — unobserved",
+          "reason": "4 source-bounded measure contracts await a first qualifying observation."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Prospective denominator contracts present — unobserved",
+          "reason": "Each Phase 69 specification requires a source-declared denominator, but no accepted payload exists."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "a95ec29322677324799165ef5b9ae763c9d172849f6fb542623b766ffa359c0f",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A named system evaluation connected to authorization, deployment monitoring, incidents, corrective action, repeat review, and a stable mission or service measure.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-008",
+      "eligibility_id": "138-ELIGIBILITY-008",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-008",
+      "slug": "waymo-california-service",
+      "title": "Waymo California fared driverless service",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": "61-ADOPTION-WAYMO-CALIFORNIA",
+      "measurement_specification_ids": [
+        "69-MS-029",
+        "69-MS-030",
+        "69-MS-031",
+        "69-MS-032"
+      ],
+      "series_admission_docket_id": "70-SA-008",
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "The Atlas identity resolves to governed file 61-ADOPTION-WAYMO-CALIFORNIA."
+        },
+        {
+          "dimension": "period",
+          "state": "Prospective period contract present — no observations",
+          "reason": "4 Phase 69 specification(s) define prospective period contracts, while every current observation count remains zero."
+        },
+        {
+          "dimension": "measure",
+          "state": "Prospective measures specified — unobserved",
+          "reason": "4 source-bounded measure contracts await a first qualifying observation."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Prospective denominator contracts present — unobserved",
+          "reason": "Each Phase 69 specification requires a source-declared denominator, but no accepted payload exists."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "b97a8e56a3166daf872b10f17a98712868d449fab18617529aa8d2940adf7425",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated outcome series with stable identity, period, definition, method, denominator, and acceptance. A stable Waymo passenger-service series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, cost, and compatible definitions.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-009",
+      "eligibility_id": "138-ELIGIBILITY-009",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-009",
+      "slug": "manatee-battery-storage",
+      "title": "Manatee Battery Energy Storage Center",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56b-manatee-battery-capacity",
+      "legacy_observation_count": 3,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56b-manatee-battery-capacity for Manatee Solar Energy Center; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 3 observations under period Calendar years 2021-2023; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Operating battery-generator nameplate power capacity” in Megawatts; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “Operating battery generators assigned to EIA plant code 60014 in each final EIA-860 vintage”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "395122945ff300073d9283db5eab4c020f29a003c7792298b5fe6c3882f10cde",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-010",
+      "eligibility_id": "138-ELIGIBILITY-010",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-010",
+      "slug": "moss-landing-battery-safety",
+      "title": "Moss Landing battery safety and operation",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56b-moss-landing-battery-capacity",
+      "legacy_observation_count": 3,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56b-moss-landing-battery-capacity for Dynegy Moss Landing Power Plant Hybrid; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 3 observations under period Calendar years 2021-2023; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Operating battery-generator nameplate power capacity” in Megawatts; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “Operating battery generators assigned to EIA plant code 260 in each final EIA-860 vintage”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "b69c45d5b57e60083fe7d6dcbfb55494276e1ef336b98b7d9715182ab5396112",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-011",
+      "eligibility_id": "138-ELIGIBILITY-011",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-011",
+      "slug": "gateway-battery-storage",
+      "title": "Gateway battery storage",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56b-gateway-battery-capacity",
+      "legacy_observation_count": 3,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56b-gateway-battery-capacity for Gateway Energy Storage System; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 3 observations under period Calendar years 2021-2023; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Operating battery-generator nameplate power capacity” in Megawatts; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “Operating battery generators assigned to EIA plant code 63834 in each final EIA-860 vintage”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "10f415302a94b05e516c999ef7992bc2c46a3558327582f94705040b9007bc00",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-012",
+      "eligibility_id": "138-ELIGIBILITY-012",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-012",
+      "slug": "hornsdale-power-reserve",
+      "title": "Hornsdale Power Reserve",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56e-hornsdale-power-reserve",
+      "legacy_observation_count": 4,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56e-hornsdale-power-reserve for Hornsdale Power Reserve; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 4 observations under period November 2019 through current installation profile; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Incident response, service capability, compliance, and stated capacity” in Dated operating or regulatory observation; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “The specific event, service, offer interval, or installed capacity stated in the record”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "pilot_priority": true,
+      "pilot_reason": "Hornsdale Power Reserve has 4 legacy observations and an exact Phase 138 identity join, making it useful for a full compatibility audit without implying transfer.",
+      "series_definition_digest": "621edbd8b249951a959cc2fade8420c44f0debec09fc195f060208522029ff36",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Apply the complete Phase 69–70 specification, intake, dual-review, lineage, break, and admission contract to the original artifacts; stop if any identity, period, measure, or denominator test fails."
+    },
+    {
+      "lab_review_id": "149-REVIEW-013",
+      "eligibility_id": "138-ELIGIBILITY-013",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-013",
+      "slug": "victoria-big-battery",
+      "title": "Victoria Big Battery",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56e-victorian-big-battery",
+      "legacy_observation_count": 3,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56e-victorian-big-battery for Victorian Big Battery; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 3 observations under period July through December 2021 and current investigation index; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Commissioning incident, registration, and scheme capability” in Dated operating or regulatory milestone; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “The incident, registered power, or reserve capability in the cited record”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "acd251f7808aac8cff298f226dd632bc3e964428aca85abf4925c16f3e505769",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-014",
+      "eligibility_id": "138-ELIGIBILITY-014",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-014",
+      "slug": "dalrymple-grid-battery",
+      "title": "Dalrymple grid battery",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56e-dalrymple-escri-bess",
+      "legacy_observation_count": 4,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56e-dalrymple-escri-bess for Dalrymple ESCRI-SA Battery Energy Storage System; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 4 observations under period December 2018 through April 2021; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “System-event response, islanding, state-of-charge constraint, and project results” in Dated operating observation; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “The system events, reporting window, or enabled service declared in each record”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "pilot_priority": true,
+      "pilot_reason": "Dalrymple grid battery has 4 legacy observations and an exact Phase 138 identity join, making it useful for a full compatibility audit without implying transfer.",
+      "series_definition_digest": "a1caf7e1231f36598624ccf578dec8cab8af526a0469e8bda45280980519cf4e",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Apply the complete Phase 69–70 specification, intake, dual-review, lineage, break, and admission contract to the original artifacts; stop if any identity, period, measure, or denominator test fails."
+    },
+    {
+      "lab_review_id": "149-REVIEW-015",
+      "eligibility_id": "138-ELIGIBILITY-015",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-015",
+      "slug": "f35-production-readiness",
+      "title": "F-35 production readiness",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56e-f35-fort-worth-line",
+      "legacy_observation_count": 3,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56e-f35-fort-worth-line for Lockheed Martin F-35 Fort Worth final-assembly line; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 3 observations under period Calendar years 2023-2025 and June 2026 sustainment record; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Program aircraft deliveries and delivery timeliness” in Aircraft delivered or lateness measure; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “Aircraft due or delivered in the stated calendar year”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "3874c497e6233ca63b6d26727c1b3833cf754ee9895f528346e3d0159c1c3786",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-016",
+      "eligibility_id": "138-ELIGIBILITY-016",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-016",
+      "slug": "f15ex-production-delivery",
+      "title": "F-15EX production and delivery",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56e-f15ex-st-louis-line",
+      "legacy_observation_count": 4,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56e-f15ex-st-louis-line for Boeing F-15EX St. Louis production line; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 4 observations under period March 2021 through December 2025; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Cumulative aircraft delivery milestones and line interruption” in Cumulative delivered aircraft; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “F-15EX aircraft recorded as delivered by the Air Force”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "pilot_priority": true,
+      "pilot_reason": "F-15EX production and delivery has 4 legacy observations and an exact Phase 138 identity join, making it useful for a full compatibility audit without implying transfer.",
+      "series_definition_digest": "0de12e30135f727c909f7984955ad0b8d58b654ff1abf18a170fa9480c0352a7",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Apply the complete Phase 69–70 specification, intake, dual-review, lineage, break, and admission contract to the original artifacts; stop if any identity, period, measure, or denominator test fails."
+    },
+    {
+      "lab_review_id": "149-REVIEW-017",
+      "eligibility_id": "138-ELIGIBILITY-017",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-017",
+      "slug": "kc46-readiness",
+      "title": "KC-46 readiness",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56e-kc46-everett-line",
+      "legacy_observation_count": 3,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56e-kc46-everett-line for Boeing KC-46A Everett production line; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 3 observations under period Fiscal years 2019-2025 through April 2026; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Cumulative delivered aircraft and program deficiency state” in Cumulative aircraft milestone; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “KC-46A aircraft accepted or fielded under the cited record”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "cf0c798d005760af3663ba1703918beebc5df109f1f0b67b93bb84054e927159",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-018",
+      "eligibility_id": "138-ELIGIBILITY-018",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-018",
+      "slug": "current-applications-capacity",
+      "title": "Current Applications industrial capacity",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56b-current-applications-output",
+      "legacy_observation_count": 2,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56b-current-applications-output for Current Applications; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 2 observations under period Before and after the reported lean intervention; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Reported production output on the improved line” in Units per day; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “The product line described in the NIST MEP case study”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "527aa4b430a06f17ff384d499a9a9607d2402f8ecb60acffcdc3f1a8b5c5f796",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-019",
+      "eligibility_id": "138-ELIGIBILITY-019",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-019",
+      "slug": "island-components-capacity",
+      "title": "Island Components industrial capacity",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56b-island-components-output",
+      "legacy_observation_count": 2,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56b-island-components-output for Island Components Group; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 2 observations under period Before and after the reported lean intervention; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Reported daily motor-assembly output” in Units per day; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “The department and motor-assembly flow described in the NIST MEP case study”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "a8887ab44706afc3fd76f9c3784a0d3af2b796386ea9a64eebb88a2064e5e59a",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-020",
+      "eligibility_id": "138-ELIGIBILITY-020",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-020",
+      "slug": "monaghan-medical-capacity",
+      "title": "Monaghan Medical manufacturing capacity",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56b-monaghan-medical-output",
+      "legacy_observation_count": 2,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56b-monaghan-medical-output for Monaghan Medical; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 2 observations under period Before and after the reported lean intervention; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Reported daily output on one production line” in Units per day; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “The production line described in the NIST MEP case study”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "9683cbc12967e98e4fcdc65b4ae05323721631fe8d5d622d7d3fd9fc29fe2bec",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-021",
+      "eligibility_id": "138-ELIGIBILITY-021",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-021",
+      "slug": "amtrak-accessible-stations",
+      "title": "Amtrak accessible-station delivery",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "eb1d91ac57840568674e2980ad96627416683788d45ade59112aba83ff203036",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-022",
+      "eligibility_id": "138-ELIGIBILITY-022",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-022",
+      "slug": "hanford-dflaw-operation",
+      "title": "Hanford DFLAW operation",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "7f9bf4cec31fd6137a2cdc44bbc22d5b8aed7e2ea47083a2588cbaaac7002882",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-023",
+      "eligibility_id": "138-ELIGIBILITY-023",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-023",
+      "slug": "montana-bead-completed-quarter",
+      "title": "Montana BEAD completed quarter",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "88b3885f256701e820cc3fcb68126e211e5319bcb27e8f4d4a062370dab7d8eb",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-024",
+      "eligibility_id": "138-ELIGIBILITY-024",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-024",
+      "slug": "nnsa-qualified-production",
+      "title": "NNSA qualified production",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "01bf36bca786d1be836d104ddc438571b3d416d5731de659d207b5a2e6a598c6",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-025",
+      "eligibility_id": "138-ELIGIBILITY-025",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-001",
+      "slug": "florida-space-coast-launch-corridor",
+      "title": "Florida Space Coast Launch Corridor",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "e32334f348c5d4f9f70ac2e1baa6e2cf087568066514d68a05f8f4b6a25959ab",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-026",
+      "eligibility_id": "138-ELIGIBILITY-026",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-002",
+      "slug": "nevada-lithium-battery-materials-corridor",
+      "title": "Nevada Lithium And Battery Materials Corridor",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "2645abdbe29378f119e1bde6a3d92f1606d8f5d4fe6d7456ee2bfbcb1d039b2a",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-027",
+      "eligibility_id": "138-ELIGIBILITY-027",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-003",
+      "slug": "northern-virginia-data-center-corridor",
+      "title": "Northern Virginia Data Center Corridor",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "4d4dcbeccd1b53cb9db441eb8b40d826d699b71b616e51aaa037b27af06633e6",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-028",
+      "eligibility_id": "138-ELIGIBILITY-028",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-004",
+      "slug": "ontario-real-estate",
+      "title": "Ontario Real Estate",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "2dbc8ec946bc4169ef01eab0b610a721afbbdde8bfbe58d96990823218ca8582",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-029",
+      "eligibility_id": "138-ELIGIBILITY-029",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-005",
+      "slug": "us-southwest-chip-corridor",
+      "title": "U.S. Southwest Chip Corridor",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "b0251b68de83061c11612b420d2fc8871f2895dc6376c0a0902c4af838f72b14",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-030",
+      "eligibility_id": "138-ELIGIBILITY-030",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-006",
+      "slug": "california-autonomous-mobility",
+      "title": "California autonomous mobility",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "bc8a579ee5b1d82c9db4650de9af1950c2da17966c4e8f78f3ab35504bea55ef",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-031",
+      "eligibility_id": "138-ELIGIBILITY-031",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-007",
+      "slug": "louisiana-broadband-adoption",
+      "title": "Louisiana broadband adoption",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "2bc31fb26596ae7a73ddd5c926a3bf95fa65397ee565c1fcdbf19c18b93b3aab",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-032",
+      "eligibility_id": "138-ELIGIBILITY-032",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-008",
+      "slug": "montana-bead-delivery",
+      "title": "Montana BEAD delivery",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "f22c5722fb285241ebdfe4d6aba8015372454dd1533cafd9f73e00cae263a9a0",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-033",
+      "eligibility_id": "138-ELIGIBILITY-033",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-009",
+      "slug": "hanford-waste-treatment",
+      "title": "Hanford waste treatment",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "19612d1ec00674d447c796ce85f4b23035913112eb8bede15547787fc5257129",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-034",
+      "eligibility_id": "138-ELIGIBILITY-034",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-010",
+      "slug": "amtrak-accessibility-and-reliability",
+      "title": "Amtrak accessibility and reliability",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "0dce70211ab3e7a7ff723c591a553d2dbd8fd6bf2f285d15b574377a44e89f87",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-035",
+      "eligibility_id": "138-ELIGIBILITY-035",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-011",
+      "slug": "nnsa-two-site-production",
+      "title": "NNSA two-site production",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "e0993a144afdc4c839b60598eb7db2c806161caa7dac2faea4875b94c619ec5e",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-036",
+      "eligibility_id": "138-ELIGIBILITY-036",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-012",
+      "slug": "south-australia-grid-storage",
+      "title": "South Australia grid storage",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "cda3f5c5b85ecf90a262efad02007c6eaaeaf63ecb571dacaafdd62afb9259e5",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-037",
+      "eligibility_id": "138-ELIGIBILITY-037",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-013",
+      "slug": "victoria-grid-storage",
+      "title": "Victoria grid storage",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "032171ddc22636abc490a5615ad5d2f173f9ecc14a993547763ccd4ade525868",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-038",
+      "eligibility_id": "138-ELIGIBILITY-038",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-014",
+      "slug": "florida-utility-storage",
+      "title": "Florida utility storage",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "2fcfe0335ad3bd607f800e0c43bc0cc21794ad94119f2f67dcd32daad9d9ca6d",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    },
+    {
+      "lab_review_id": "149-REVIEW-039",
+      "eligibility_id": "138-ELIGIBILITY-039",
+      "entity_kind": "place",
+      "entity_id": "119-PLACE-015",
+      "slug": "california-battery-safety",
+      "title": "California battery safety",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": null,
+      "legacy_observation_count": 0,
+      "governed_file_id": null,
+      "measurement_specification_ids": [],
+      "series_admission_docket_id": null,
+      "tests": [
+        {
+          "dimension": "identity",
+          "state": "Canonical Atlas identity only",
+          "reason": "No curated legacy-panel or governed-file join is established beyond the Phase 119 identity."
+        },
+        {
+          "dimension": "period",
+          "state": "Repeated period not established",
+          "reason": "Signal-link count is not treated as a repeated observation period."
+        },
+        {
+          "dimension": "measure",
+          "state": "Repeated measure not established",
+          "reason": "No source-defined repeated measure is joined for this Atlas record."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Stable denominator not established",
+          "reason": "No stable repeated denominator is joined for this Atlas record."
+        }
+      ],
+      "pilot_priority": false,
+      "pilot_reason": null,
+      "series_definition_digest": "1ac5bbf44ddc5a0c901bde771bc60e6fe3aa1d82dce70c97ddf5f31104924d9e",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "prior_admission_not_preserved": false,
+      "boundary_result": "A repeated, source-defined measure for the same entity with compatible periods, methods, denominators, revisions, and acceptance state.",
+      "next_action": "Retain the existing no-series boundary until a repeated compatible source payload is available."
+    }
+  ],
+  "no_series_launch_boundary": {
+    "state": "Prepared — owner acceptance pending",
+    "proposed_scope": "v1 may launch without longitudinal claims if every one of the 39 reviews is disclosed, every trend/outcome/comparison surface states zero admitted series, and a dated owner receipt accepts that boundary.",
+    "reviewed_eligibility_ids": [
+      "138-ELIGIBILITY-001",
+      "138-ELIGIBILITY-002",
+      "138-ELIGIBILITY-003",
+      "138-ELIGIBILITY-004",
+      "138-ELIGIBILITY-005",
+      "138-ELIGIBILITY-006",
+      "138-ELIGIBILITY-007",
+      "138-ELIGIBILITY-008",
+      "138-ELIGIBILITY-009",
+      "138-ELIGIBILITY-010",
+      "138-ELIGIBILITY-011",
+      "138-ELIGIBILITY-012",
+      "138-ELIGIBILITY-013",
+      "138-ELIGIBILITY-014",
+      "138-ELIGIBILITY-015",
+      "138-ELIGIBILITY-016",
+      "138-ELIGIBILITY-017",
+      "138-ELIGIBILITY-018",
+      "138-ELIGIBILITY-019",
+      "138-ELIGIBILITY-020",
+      "138-ELIGIBILITY-021",
+      "138-ELIGIBILITY-022",
+      "138-ELIGIBILITY-023",
+      "138-ELIGIBILITY-024",
+      "138-ELIGIBILITY-025",
+      "138-ELIGIBILITY-026",
+      "138-ELIGIBILITY-027",
+      "138-ELIGIBILITY-028",
+      "138-ELIGIBILITY-029",
+      "138-ELIGIBILITY-030",
+      "138-ELIGIBILITY-031",
+      "138-ELIGIBILITY-032",
+      "138-ELIGIBILITY-033",
+      "138-ELIGIBILITY-034",
+      "138-ELIGIBILITY-035",
+      "138-ELIGIBILITY-036",
+      "138-ELIGIBILITY-037",
+      "138-ELIGIBILITY-038",
+      "138-ELIGIBILITY-039"
+    ],
+    "boundary_scope_digest": "90a6e4c5922b1e361c2f2ecdae7f65d36fa98e1a4d94e3c417c043d9fe5a82ad",
+    "owner_accepted": false,
+    "decision_date": null,
+    "decision_receipt_id": null,
+    "reviewer_role": null,
+    "rationale": null,
+    "prior_acceptance_not_preserved": false
+  },
+  "public_html_routes": [
+    "/review/v1rc/longitudinal-lab/"
+  ],
+  "public_json_exports": [
+    "/data/phase-149-longitudinal-evidence-lab.json"
+  ]
+}

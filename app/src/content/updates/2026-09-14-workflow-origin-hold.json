@@ -1,0 +1,14 @@
+{
+  "id":"update-2026-09-14-workflow-origin-hold",
+  "effective_date":"2026-09-14",
+  "entry_type":"Correction",
+  "title":"Current-feed hold expanded after workflow records escaped the keyword screen",
+  "summary":"Browser QA found additional Phase 57M–Y workflow-origin records in the signal shelf. A further 215 records are temporarily excluded pending individual classification. The original 405-record cohort and one separately corrected note remain distinct; there are now 621 held records, thirteen individual classifications and 608 reviews outstanding.",
+  "affected_record_ids":["signal-57w-amtrak-pids-attributable-fork-evidence-receipts","signal-57w-amtrak-pids-federated-time-authority-failover","signal-57w-amtrak-pids-post-compromise-artifact-reissuance-reader-migration","signal-57w-amtrak-pids-verifier-build-provenance-reproducible-attestations","signal-57w-amtrak-pids-witness-availability-staleness-catchup-proofs"],
+  "related_paths":["/signals/","/method/editorial-review/","/data/editorial-classification.json"],
+  "evidence_note":"The listed records are concrete discovery examples; the full 215-record additional scope is enumerated by screening_basis in the classification export. Origin screening is a conservative release hold, not a semantic verdict or completed review. Historical source files, publication states and URLs remain unchanged.",
+  "decision_date":"2026-09-14",
+  "receipt_type":"Correction",
+  "materiality":"Correction",
+  "work_package":"docs/work-packages/phase-206-editorial-classification-and-claim-integrity.md"
+}

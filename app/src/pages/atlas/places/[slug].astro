@@ -1,4 +1,5 @@
 ---
+import {projectSignal} from "../../../lib/signal-classification.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
@@ -16,7 +17,7 @@ const place = atlas.places.find((record) => record.atlas_place_id === Astro.prop
 const biography = biographies.place_biographies.find((record) => record.atlas_place_id === place.atlas_place_id)!;
 const owner = atlas.update_owners.find((record) => record.owner_id === place.update_owner_id)!;
 const relatedProjects = place.relationships.related_project_ids.map((id) => atlas.projects.find((record) => record.atlas_project_id === id)).filter(Boolean);
-const signals = await getCollection("signals");
+const signals = await getCollection("signals").then(records => records.map(projectSignal));
 const signalById = new Map(signals.map((record) => [record.data.id, record]));
 const selectedSignals = place.evidence_rails.signal_ids.map((id) => signalById.get(id)).filter(Boolean);
 const sources = await getCollection("sources");

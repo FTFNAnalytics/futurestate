@@ -1,0 +1,1003 @@
+{
+  "schema_version": "1.0",
+  "phase": 147,
+  "program_id": "FTFN-PHASE-147",
+  "dataset": "phase_147_evidence_adjudication_record",
+  "title": "Evidence adjudication record",
+  "effective_date": "2026-08-31",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Prepare complete receipt-bearing decision records for eighteen requirements and six missions while leaving owner authority explicit.",
+  "record_scope": "Evidence adjudication record records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "Alternative official-source discovery expands the review shelf; it does not by itself admit evidence or answer a mission.",
+    "Calendar-bound checks remain unoperated until their lawful date, and shared-date gates retain separate identities, decisions, and receipts.",
+    "No project stage, place state, longitudinal observation, comparison verdict, outcome, score, rank, causal finding, recommendation, owner decision, or public-launch authorization is inferred.",
+    "A bounded repository result describes the reviewed corpus and search path; it never proves that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v1rc/adjudication/",
+    "public_export": "/data/phase-147-evidence-adjudication-record.json"
+  },
+  "counts": {
+    "requirement_packets": 18,
+    "mission_packets": 6,
+    "total_decision_packets": 24,
+    "terminal_authorized_decisions": 0,
+    "owner_decisions_pending": 24,
+    "stale_terminal_decisions_requiring_revalidation": 0
+  },
+  "adjudication_records": [
+    {
+      "adjudication_record_id": "147-REQUIREMENT-001",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-001",
+      "mission_id": "121-MISSION-004",
+      "slug": "121-mission-004-requirement-01",
+      "title": "121-MISSION-004: Stable product and facility denominator",
+      "requirement": "Stable product and facility denominator",
+      "historical_candidate_source_ids": [
+        "source-56k-f15ex-ex16-portland-receipt-2026"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-GAO-F15EX-2025",
+        "146-ALT-NIST-MEP-AMPHENOL-2025",
+        "146-ALT-NIST-MEP-FY2024-RESULTS"
+      ],
+      "candidate_set_digest": "53f2490c80bc4bf5d38197b0fae6dcc5e6dc0cc7d17c913d2b842f67a6a2286f",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Stable product and facility denominator” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-002",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-002",
+      "mission_id": "121-MISSION-004",
+      "slug": "121-mission-004-requirement-02",
+      "title": "121-MISSION-004: Multi-period operating series",
+      "requirement": "Multi-period operating series",
+      "historical_candidate_source_ids": [],
+      "alternative_candidate_ids": [
+        "146-ALT-GAO-F15EX-2025",
+        "146-ALT-NIST-MEP-AMPHENOL-2025",
+        "146-ALT-NIST-MEP-FY2024-RESULTS"
+      ],
+      "candidate_set_digest": "37c09a96fe01958923a2cddd1f7d115ede32ef619dcfb4b9aabaf9afb8f54af9",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Multi-period operating series” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-003",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-003",
+      "mission_id": "121-MISSION-004",
+      "slug": "121-mission-004-requirement-03",
+      "title": "121-MISSION-004: Revision, downtime and attribution notes",
+      "requirement": "Revision, downtime and attribution notes",
+      "historical_candidate_source_ids": [
+        "source-56l-monaghan-medical-ccida-fye2025"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-GAO-F15EX-2025",
+        "146-ALT-NIST-MEP-AMPHENOL-2025",
+        "146-ALT-NIST-MEP-FY2024-RESULTS"
+      ],
+      "candidate_set_digest": "522dfbfa5ac003fe3d7bbb3d32f317a621db3fe8de84f04f7a4fe722b5fc0566",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Revision, downtime and attribution notes” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-004",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-004",
+      "mission_id": "121-MISSION-013",
+      "slug": "121-mission-013-requirement-04",
+      "title": "121-MISSION-013: Tail, fleet, airport or route identity",
+      "requirement": "Tail, fleet, airport or route identity",
+      "historical_candidate_source_ids": [
+        "source-56k-f15ex-ex16-portland-receipt-2026"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-BTS-ASQP-2026",
+        "146-ALT-BTS-TD40-2026",
+        "146-ALT-BTS-TRANSTATS-ONTIME",
+        "146-ALT-BTS-T100"
+      ],
+      "candidate_set_digest": "e288a2330a25e7531cc85bc946128147a9ccb6a8a111f444471fe76982072c86",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Tail, fleet, airport or route identity” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-005",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-005",
+      "mission_id": "121-MISSION-013",
+      "slug": "121-mission-013-requirement-05",
+      "title": "121-MISSION-013: Capacity and readiness definitions",
+      "requirement": "Capacity and readiness definitions",
+      "historical_candidate_source_ids": [
+        "source-faa-powered-lift-final-rule-2024"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-BTS-ASQP-2026",
+        "146-ALT-BTS-TD40-2026",
+        "146-ALT-BTS-TRANSTATS-ONTIME",
+        "146-ALT-BTS-T100"
+      ],
+      "candidate_set_digest": "c9b9fb82ddf8fce3901f083eb20661e5c25c02a2df0a4ed5f7673d1f8f867d1d",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Capacity and readiness definitions” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-006",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-006",
+      "mission_id": "121-MISSION-013",
+      "slug": "121-mission-013-requirement-06",
+      "title": "121-MISSION-013: Current operating period",
+      "requirement": "Current operating period",
+      "historical_candidate_source_ids": [
+        "source-faa-powered-lift-final-rule-2024"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-BTS-ASQP-2026",
+        "146-ALT-BTS-TD40-2026",
+        "146-ALT-BTS-TRANSTATS-ONTIME",
+        "146-ALT-BTS-T100"
+      ],
+      "candidate_set_digest": "a886fbf1bcf7b498b8efe1a7a8dfe32bdee48af495cdd1303539d5e13ecd4542",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Current operating period” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-007",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-007",
+      "mission_id": "121-MISSION-016",
+      "slug": "121-mission-016-requirement-07",
+      "title": "121-MISSION-016: Exposure-compatible safety measures",
+      "requirement": "Exposure-compatible safety measures",
+      "historical_candidate_source_ids": [
+        "source-56a-dot-atcr-2022",
+        "source-56a-dot-atcr-2023",
+        "source-56a-dot-atcr-2024"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-BTS-ASQP-2026",
+        "146-ALT-BTS-TD40-2026",
+        "146-ALT-BTS-TRANSTATS-ONTIME",
+        "146-ALT-BTS-T100",
+        "146-ALT-FAA-GA-SAFETY-2025",
+        "146-ALT-NTSB-AVIATION-STATS"
+      ],
+      "candidate_set_digest": "9ed7292b5747b95e87c07b4c8a8c95b144e53533540fcd04a08ba27559c3b5d9",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Exposure-compatible safety measures” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-008",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-008",
+      "mission_id": "121-MISSION-016",
+      "slug": "121-mission-016-requirement-08",
+      "title": "121-MISSION-016: Route or fleet operating periods",
+      "requirement": "Route or fleet operating periods",
+      "historical_candidate_source_ids": [
+        "source-56a-dot-atcr-2022",
+        "source-56a-dot-atcr-2023",
+        "source-56a-dot-atcr-2024"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-BTS-ASQP-2026",
+        "146-ALT-BTS-TD40-2026",
+        "146-ALT-BTS-TRANSTATS-ONTIME",
+        "146-ALT-BTS-T100",
+        "146-ALT-FAA-GA-SAFETY-2025",
+        "146-ALT-NTSB-AVIATION-STATS"
+      ],
+      "candidate_set_digest": "f80e31abfbbd74a3a6ee6dce8d60b78b47250e711087d89c73063b03b7b1c6ed",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Route or fleet operating periods” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-009",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-009",
+      "mission_id": "121-MISSION-016",
+      "slug": "121-mission-016-requirement-09",
+      "title": "121-MISSION-016: Environmental and access denominators",
+      "requirement": "Environmental and access denominators",
+      "historical_candidate_source_ids": [],
+      "alternative_candidate_ids": [
+        "146-ALT-BTS-ASQP-2026",
+        "146-ALT-BTS-TD40-2026",
+        "146-ALT-BTS-TRANSTATS-ONTIME",
+        "146-ALT-BTS-T100",
+        "146-ALT-FAA-GA-SAFETY-2025",
+        "146-ALT-NTSB-AVIATION-STATS"
+      ],
+      "candidate_set_digest": "0510fc172ab80ea70668eddfba752c57ee3d00fb27bf368bd98522de7e614e09",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Environmental and access denominators” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-010",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-010",
+      "mission_id": "121-MISSION-025",
+      "slug": "121-mission-025-requirement-10",
+      "title": "121-MISSION-025: Asset and material identity",
+      "requirement": "Asset and material identity",
+      "historical_candidate_source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-blm-rhyolite-ridge-rod-2024"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-USGS-MCS-2026",
+        "146-ALT-USGS-MCS-DATA-2026"
+      ],
+      "candidate_set_digest": "994019832a6d1e66e3702daf1604c49495f0094347c28fde2efadee1a31b7145",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Asset and material identity” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-011",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-011",
+      "mission_id": "121-MISSION-025",
+      "slug": "121-mission-025-requirement-11",
+      "title": "121-MISSION-025: Resource, reserve and capacity definitions",
+      "requirement": "Resource, reserve and capacity definitions",
+      "historical_candidate_source_ids": [
+        "source-doe-thacker-pass-loan-2024"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-USGS-MCS-2026",
+        "146-ALT-USGS-MCS-DATA-2026"
+      ],
+      "candidate_set_digest": "baa5df2d953d139f4f99c81f86c25b294eaf5f3aad527ab860af10d9a82373a8",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Resource, reserve and capacity definitions” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-012",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-012",
+      "mission_id": "121-MISSION-025",
+      "slug": "121-mission-025-requirement-12",
+      "title": "121-MISSION-025: Current environmental and operating state",
+      "requirement": "Current environmental and operating state",
+      "historical_candidate_source_ids": [
+        "source-blm-rhyolite-ridge-rod-2024"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-USGS-MCS-2026",
+        "146-ALT-USGS-MCS-DATA-2026"
+      ],
+      "candidate_set_digest": "60ed37131154908882b6ea4d4e3a4e537a1cb9d21387bd433c2bcbf1595f9ddf",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Current environmental and operating state” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-013",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-013",
+      "mission_id": "121-MISSION-049",
+      "slug": "121-mission-049-requirement-13",
+      "title": "121-MISSION-049: Operator, route, fleet or service identity",
+      "requirement": "Operator, route, fleet or service identity",
+      "historical_candidate_source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-cpuc-av-advice-letter-status-2026"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-CPUC-AV-QUARTERLY-2026",
+        "146-ALT-NHTSA-SGO-2026"
+      ],
+      "candidate_set_digest": "bf2b2afb7b23d48a2ff9edbe67a85a193a032651d04053e233f276015ffd55a1",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Operator, route, fleet or service identity” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-014",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-014",
+      "mission_id": "121-MISSION-049",
+      "slug": "121-mission-049-requirement-14",
+      "title": "121-MISSION-049: Exposure and service denominator",
+      "requirement": "Exposure and service denominator",
+      "historical_candidate_source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-CPUC-AV-QUARTERLY-2026",
+        "146-ALT-NHTSA-SGO-2026"
+      ],
+      "candidate_set_digest": "b22534bb812c9bf6639365edde177e963314d0876f1200b08fd2b3e301859ef0",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Exposure and service denominator” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-015",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-015",
+      "mission_id": "121-MISSION-049",
+      "slug": "121-mission-049-requirement-15",
+      "title": "121-MISSION-049: Current reliability and access baseline",
+      "requirement": "Current reliability and access baseline",
+      "historical_candidate_source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-cpuc-av-advice-letter-status-2026"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-CPUC-AV-QUARTERLY-2026",
+        "146-ALT-NHTSA-SGO-2026"
+      ],
+      "candidate_set_digest": "26b0c5993b283f940ff82d39080bfd394bf13f05a3b29537ebe58fa145e6e21a",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Current reliability and access baseline” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-016",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-016",
+      "mission_id": "121-MISSION-060",
+      "slug": "121-mission-060-requirement-16",
+      "title": "121-MISSION-060: Stable task and system denominator",
+      "requirement": "Stable task and system denominator",
+      "historical_candidate_source_ids": [
+        "source-nist-pqc"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-NIST-QC-METRICS-2024",
+        "146-ALT-DARPA-QUANTUM-BENCHMARKING",
+        "146-ALT-DARPA-QBI"
+      ],
+      "candidate_set_digest": "f62efcb12513b3eb9731089b0a59811e2c2fbb8c36118d1e344b411e91ce1682",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Stable task and system denominator” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-017",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-017",
+      "mission_id": "121-MISSION-060",
+      "slug": "121-mission-060-requirement-17",
+      "title": "121-MISSION-060: Multi-period accepted-use evidence",
+      "requirement": "Multi-period accepted-use evidence",
+      "historical_candidate_source_ids": [
+        "source-nist-pqc",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-NIST-QC-METRICS-2024",
+        "146-ALT-DARPA-QUANTUM-BENCHMARKING",
+        "146-ALT-DARPA-QBI"
+      ],
+      "candidate_set_digest": "d5103959e9f63870942b0cb79d5ccbf4b68948108dabff02279c36d1b0026074",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Multi-period accepted-use evidence” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-REQUIREMENT-018",
+      "record_kind": "requirement decision",
+      "upstream_adjudication_id": "133-ADJUDICATION-018",
+      "mission_id": "121-MISSION-060",
+      "slug": "121-mission-060-requirement-18",
+      "title": "121-MISSION-060: Explicit forecast-versus-observation boundary",
+      "requirement": "Explicit forecast-versus-observation boundary",
+      "historical_candidate_source_ids": [
+        "source-nist-pqc",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-NIST-QC-METRICS-2024",
+        "146-ALT-DARPA-QUANTUM-BENCHMARKING",
+        "146-ALT-DARPA-QBI"
+      ],
+      "candidate_set_digest": "c94eec58d6638b77ba9dd27792586ee7f2635700a4c83a23fd004983a31d7b0e",
+      "acceptance_test": "Confirm that one exact artifact directly establishes “Explicit forecast-versus-observation boundary” for the mission's named subject, geography, period, method, and denominator.",
+      "rejection_test": "Reject portals, discovery rails, subject adjacency, forecasts represented as observations, stage substitution, entity mismatch, and denominator mismatch.",
+      "decision_state": "Pending owner adjudication",
+      "accepted_source_ids": [],
+      "rejected_source_ids": [],
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_search_scope": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "candidate_set_digest_required": true,
+      "terminal_states": [
+        "Accepted",
+        "Rejected",
+        "Inadmissible",
+        "Bounded gap"
+      ],
+      "next_action": "An authorized human reviewer must record Accepted, Rejected, Inadmissible, or Bounded gap with a dated decision receipt."
+    },
+    {
+      "adjudication_record_id": "147-MISSION-001",
+      "record_kind": "mission decision",
+      "upstream_mission_decision_id": "134-MISSION-001",
+      "mission_id": "121-MISSION-004",
+      "slug": "mission-advanced-manufacturing-outcome",
+      "title": "Advanced Manufacturing: outcome research mission",
+      "question": "Which compatible yield, quality, cost, schedule, safety and reliability series show whether advanced manufacturing improved receiving-system outcomes?",
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-001",
+        "133-ADJUDICATION-002",
+        "133-ADJUDICATION-003"
+      ],
+      "requirements_total": 3,
+      "requirements_decided": 0,
+      "alternative_candidate_ids": [
+        "146-ALT-GAO-F15EX-2025",
+        "146-ALT-NIST-MEP-AMPHENOL-2025",
+        "146-ALT-NIST-MEP-FY2024-RESULTS"
+      ],
+      "candidate_set_digest": "3c23734a41c6a19539e3a31a22621b4cfb7b69fc9e01c0e94d1e7211783b2fdd",
+      "decision_state": "Pending owner adjudication",
+      "answer": null,
+      "bounded_conclusion": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "terminal_states": [
+        "Answered",
+        "Bounded conclusion",
+        "No admissible answer",
+        "Carried gap"
+      ],
+      "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer."
+    },
+    {
+      "adjudication_record_id": "147-MISSION-002",
+      "record_kind": "mission decision",
+      "upstream_mission_decision_id": "134-MISSION-002",
+      "mission_id": "121-MISSION-013",
+      "slug": "mission-aviation-baseline",
+      "title": "Aviation: baseline research mission",
+      "question": "Which named aircraft, airports, propulsion systems and service networks have current baselines for capacity, readiness, safety and use?",
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-004",
+        "133-ADJUDICATION-005",
+        "133-ADJUDICATION-006"
+      ],
+      "requirements_total": 3,
+      "requirements_decided": 0,
+      "alternative_candidate_ids": [
+        "146-ALT-BTS-ASQP-2026",
+        "146-ALT-BTS-TD40-2026",
+        "146-ALT-BTS-TRANSTATS-ONTIME",
+        "146-ALT-BTS-T100"
+      ],
+      "candidate_set_digest": "70fb98d8eda6a4cf1b907a36907599f47bd28527fcad4da4e868732678091b7c",
+      "decision_state": "Pending owner adjudication",
+      "answer": null,
+      "bounded_conclusion": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "terminal_states": [
+        "Answered",
+        "Bounded conclusion",
+        "No admissible answer",
+        "Carried gap"
+      ],
+      "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer."
+    },
+    {
+      "adjudication_record_id": "147-MISSION-003",
+      "record_kind": "mission decision",
+      "upstream_mission_decision_id": "134-MISSION-003",
+      "mission_id": "121-MISSION-016",
+      "slug": "mission-aviation-outcome",
+      "title": "Aviation: outcome research mission",
+      "question": "Which compatible safety, reliability, cost, emissions, noise and access measures show public and system outcomes?",
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-007",
+        "133-ADJUDICATION-008",
+        "133-ADJUDICATION-009"
+      ],
+      "requirements_total": 3,
+      "requirements_decided": 0,
+      "alternative_candidate_ids": [
+        "146-ALT-BTS-ASQP-2026",
+        "146-ALT-BTS-TD40-2026",
+        "146-ALT-BTS-TRANSTATS-ONTIME",
+        "146-ALT-BTS-T100",
+        "146-ALT-FAA-GA-SAFETY-2025",
+        "146-ALT-NTSB-AVIATION-STATS"
+      ],
+      "candidate_set_digest": "d7425c1ca0578ef89dc03c6b353caad16006a0c4c3887ba95fce7aa225ce1283",
+      "decision_state": "Pending owner adjudication",
+      "answer": null,
+      "bounded_conclusion": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "terminal_states": [
+        "Answered",
+        "Bounded conclusion",
+        "No admissible answer",
+        "Carried gap"
+      ],
+      "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer."
+    },
+    {
+      "adjudication_record_id": "147-MISSION-004",
+      "record_kind": "mission decision",
+      "upstream_mission_decision_id": "134-MISSION-004",
+      "mission_id": "121-MISSION-025",
+      "slug": "mission-critical-minerals-baseline",
+      "title": "Critical Minerals: baseline research mission",
+      "question": "Which named deposits, mines, refineries, processors and recycling systems have current resource, capacity and compliance baselines?",
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-010",
+        "133-ADJUDICATION-011",
+        "133-ADJUDICATION-012"
+      ],
+      "requirements_total": 3,
+      "requirements_decided": 0,
+      "alternative_candidate_ids": [
+        "146-ALT-USGS-MCS-2026",
+        "146-ALT-USGS-MCS-DATA-2026"
+      ],
+      "candidate_set_digest": "7c17a36f2803fc94a406efb2c61ba5b5a0d60d8601317507f1644fe45caf109d",
+      "decision_state": "Pending owner adjudication",
+      "answer": null,
+      "bounded_conclusion": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "terminal_states": [
+        "Answered",
+        "Bounded conclusion",
+        "No admissible answer",
+        "Carried gap"
+      ],
+      "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer."
+    },
+    {
+      "adjudication_record_id": "147-MISSION-005",
+      "record_kind": "mission decision",
+      "upstream_mission_decision_id": "134-MISSION-005",
+      "mission_id": "121-MISSION-049",
+      "slug": "mission-mobility-baseline",
+      "title": "Mobility: baseline research mission",
+      "question": "Which named networks, fleets, routes and services have current baselines for capacity, access, reliability, safety and use?",
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-013",
+        "133-ADJUDICATION-014",
+        "133-ADJUDICATION-015"
+      ],
+      "requirements_total": 3,
+      "requirements_decided": 0,
+      "alternative_candidate_ids": [
+        "146-ALT-CPUC-AV-QUARTERLY-2026",
+        "146-ALT-NHTSA-SGO-2026"
+      ],
+      "candidate_set_digest": "75f7c6385fe5159219b29d410d4f8806d6d7f725803afa8f9b0a247daefb03ae",
+      "decision_state": "Pending owner adjudication",
+      "answer": null,
+      "bounded_conclusion": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "terminal_states": [
+        "Answered",
+        "Bounded conclusion",
+        "No admissible answer",
+        "Carried gap"
+      ],
+      "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer."
+    },
+    {
+      "adjudication_record_id": "147-MISSION-006",
+      "record_kind": "mission decision",
+      "upstream_mission_decision_id": "134-MISSION-006",
+      "mission_id": "121-MISSION-060",
+      "slug": "mission-quantum-outcome",
+      "title": "Quantum: outcome research mission",
+      "question": "Which compatible scientific, operational, security, cost and capability outcomes are observable, and which remain scenarios?",
+      "requirement_adjudication_ids": [
+        "133-ADJUDICATION-016",
+        "133-ADJUDICATION-017",
+        "133-ADJUDICATION-018"
+      ],
+      "requirements_total": 3,
+      "requirements_decided": 0,
+      "alternative_candidate_ids": [
+        "146-ALT-NIST-QC-METRICS-2024",
+        "146-ALT-DARPA-QUANTUM-BENCHMARKING",
+        "146-ALT-DARPA-QBI"
+      ],
+      "candidate_set_digest": "30e99a14ca515801062face4b96686c04f5bd618634d6148ff42455f840c6a64",
+      "decision_state": "Pending owner adjudication",
+      "answer": null,
+      "bounded_conclusion": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "limitation_statement": null,
+      "reopen_trigger": null,
+      "prior_terminal_state_not_preserved": false,
+      "terminal_states": [
+        "Answered",
+        "Bounded conclusion",
+        "No admissible answer",
+        "Carried gap"
+      ],
+      "next_action": "Complete all three owner adjudications, then apply the stored mission completion rule without converting partial context into a complete answer."
+    }
+  ],
+  "decision_contract": {
+    "requirement_terminal_states": [
+      "Accepted",
+      "Rejected",
+      "Inadmissible",
+      "Bounded gap"
+    ],
+    "mission_terminal_states": [
+      "Answered",
+      "Bounded conclusion",
+      "No admissible answer",
+      "Carried gap"
+    ],
+    "receipt_rule": "Every terminal state requires a real non-future decision date, reviewer role, rationale, receipt, and candidate-set integrity check.",
+    "null_answer_rule": "A mission may retain answer=null only when an independently stored terminal bounded state, rationale, and owner receipt are present."
+  },
+  "public_html_routes": [
+    "/review/v1rc/adjudication/"
+  ],
+  "public_json_exports": [
+    "/data/phase-147-evidence-adjudication-record.json"
+  ]
+}

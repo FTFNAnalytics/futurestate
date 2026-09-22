@@ -1,0 +1,15 @@
+---
+import { evidenceReceiptsForRoute, currentEvidenceLedger } from '../../lib/current-evidence.mjs';
+const receipts = Astro.props.recordId ? currentEvidenceLedger.receipts.filter(receipt => receipt.affected_record_ids.includes(Astro.props.recordId)) : evidenceReceiptsForRoute(Astro.url.pathname);
+---
+{receipts.length > 0 && <aside class="page-section prose-page" aria-label="Dated evidence updates" data-current-evidence-notice>
+  <h2>Dated evidence checks and corrections</h2>
+  <p>Read these dated findings alongside the preserved earlier record below. A current-account correction is not independent qualification approval or authorization to publish.</p>
+  {receipts.map(receipt => <article data-evidence-receipt={receipt.receipt_id}>
+    <h3><a href={receipt.gate_route}>{receipt.receipt_type} · {receipt.cycle_item_id.replace('60-CYCLE-', '').replaceAll('-', ' ')}</a></h3>
+    <p>{receipt.bounded_finding}</p>
+    <p>Signal retained {receipt.underlying_signal_status}. Scheduled check: {receipt.scheduled_check_date}; actual review: {receipt.source_checked_date}; next bounded check: {receipt.next_check_date}. {receipt.counts_as_cycle_decision === false && 'Separate companion review; the original cycle decision is retained.'}</p>
+    {receipt.formal_artifact && <p><a href={receipt.formal_artifact.url}>Read the formal FAA instrument</a>. Issued {receipt.formal_artifact.issued_date}; effective {receipt.formal_artifact.effective_date}; expiry {receipt.formal_artifact.expiration_date}. Retrieved on {receipt.source_checked_date}.</p>}
+    <details><summary>Evidence boundary and receipt</summary><p>{receipt.evidence_boundary}</p><p>Receipt: <code>{receipt.receipt_id}</code>. Local propagation complete; Git-backed release held.</p><a href="/data/current-evidence-decisions.json">Inspect checked sources and propagation assignments</a></details>
+  </article>)}
+</aside>}

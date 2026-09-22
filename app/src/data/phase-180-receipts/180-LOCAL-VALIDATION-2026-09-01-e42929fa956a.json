@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "receipt_id": "180-LOCAL-VALIDATION-2026-09-01-e42929fa956a",
+  "receipt_type": "Local Validation",
+  "phase": 180,
+  "effective_date": "2026-09-01",
+  "validated_date": "2026-09-01",
+  "validated_at": "2026-09-01T20:42:35.950Z",
+  "status": "Passed",
+  "validation_result": "Passed local Phase 173–180 accelerated operating-program checks",
+  "validator_contract_version": "phase-180-local-validator-v1",
+  "scope": "Local validation of the accelerated append-only Phase 173–180 operating and content layer. The receipt validates prepared content, route/export/update contracts, source bindings, and future/owner stop rules only; it does not create a future-dated evidence result, owner disposition, repository publication, hosted deployment, public launch, or v1 promotion.",
+  "artifact_digest_algorithm": "sha256",
+  "artifact_digest_contract": "SHA-256 over nine normalized schema-1.0 Phase 173–180 exports, the exact 260-route and nine-export inventories, eight dated updates, and ten complete source profiles. Only receipt-derived Phase 180 fields are normalized.",
+  "artifact_digest": "ed6d79c0c0994f3a037355f681d94ad3dd01f430704d596ccddaea770154e0be",
+  "validation_bundle_digest": "e42929fa956ad8423e9efee15a287fb616f01f1c1ab650e70f7cb080d89a95b6",
+  "public_html_routes": 260,
+  "public_json_exports": 9,
+  "publication_updates": 8,
+  "source_profiles_bound": 10,
+  "metrics": {
+    "overlay_public_html_routes": 260,
+    "structurally_audited_overlay_routes": 260,
+    "overlay_public_json_exports": 9,
+    "schema_1_0_overlay_exports": 9,
+    "overlay_update_records": 8,
+    "primary_records": 267,
+    "source_profiles_bound": 10,
+    "baseline_phase156_receipt_id": "156-LOCAL-VALIDATION-2026-08-31-a750bba9528e",
+    "baseline_phase156_artifact_digest": "5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a",
+    "baseline_phase164_receipt_id": "164-LOCAL-VALIDATION-2026-09-01-d2846dc22604",
+    "baseline_phase164_artifact_digest": "c306c3db8f861805be0482f82985df7de7fa1124b055f8e76023b5ba680c8a19",
+    "baseline_phase172_receipt_id": "172-LOCAL-VALIDATION-2026-09-01-65326aad9d30",
+    "baseline_phase172_artifact_digest": "cdf822b6451e02523dbdcadfc0f21470011285033de55c919718785aaffd9b34",
+    "whole_site_snapshot": {
+      "html_pages_excluding_downloads": 7014,
+      "top_level_data_json_exports": 126,
+      "update_entries_rendered": 206,
+      "canonical_source_records": 830
+    }
+  },
+  "checks": [
+    {
+      "check_id": "immutable-baselines",
+      "status": "Passed",
+      "detail": "Exact Phase 156, 164, and 172 receipt/digest bindings preserved"
+    },
+    {
+      "check_id": "route-export-update-source-contract",
+      "status": "Passed",
+      "detail": "260 routes / 9 exports / 8 updates / 10 bound source profiles"
+    },
+    {
+      "check_id": "calendar-owner-boundary",
+      "status": "Passed",
+      "detail": "Future calendar and all owner decisions remain null or Held"
+    },
+    {
+      "check_id": "npm-run-validate-candidates",
+      "status": "Passed",
+      "detail": "npm run validate:candidates"
+    },
+    {
+      "check_id": "npm-run-validate-content",
+      "status": "Passed",
+      "detail": "npm run validate:content"
+    },
+    {
+      "check_id": "npm-run-source-health",
+      "status": "Passed",
+      "detail": "npm run source:health"
+    },
+    {
+      "check_id": "npm-run-test-v1rc",
+      "status": "Passed",
+      "detail": "npm run test:v1rc"
+    },
+    {
+      "check_id": "npm-run-test-v1month",
+      "status": "Passed",
+      "detail": "npm run test:v1month"
+    },
+    {
+      "check_id": "npm-run-test-v1cycle",
+      "status": "Passed",
+      "detail": "npm run test:v1cycle"
+    },
+    {
+      "check_id": "npm-run-test-v1oct",
+      "status": "Passed",
+      "detail": "npm run test:v1oct"
+    },
+    {
+      "check_id": "npm-run-test-phase58",
+      "status": "Passed",
+      "detail": "npm run test:phase58"
+    },
+    {
+      "check_id": "npm-run-verify-phase58",
+      "status": "Passed",
+      "detail": "npm run verify:phase58"
+    },
+    {
+      "check_id": "npm-run-verify-phase60",
+      "status": "Passed",
+      "detail": "npm run verify:phase60"
+    },
+    {
+      "check_id": "npm-run-verify-phase60c",
+      "status": "Passed",
+      "detail": "npm run verify:phase60c"
+    },
+    {
+      "check_id": "npm-run-test-phase67",
+      "status": "Passed",
+      "detail": "npm run test:phase67"
+    },
+    {
+      "check_id": "npm-run-verify-phase67",
+      "status": "Passed",
+      "detail": "npm run verify:phase67"
+    },
+    {
+      "check_id": "npm-run-check",
+      "status": "Passed",
+      "detail": "npm run check"
+    },
+    {
+      "check_id": "npm-run-build",
+      "status": "Passed",
+      "detail": "npm run build"
+    },
+    {
+      "check_id": "npm-run-verify-v1rc",
+      "status": "Passed",
+      "detail": "npm run verify:v1rc"
+    },
+    {
+      "check_id": "npm-run-verify-v1month",
+      "status": "Passed",
+      "detail": "npm run verify:v1month"
+    },
+    {
+      "check_id": "npm-run-verify-v1cycle",
+      "status": "Passed",
+      "detail": "npm run verify:v1cycle"
+    }
+  ],
+  "evidence_admission_authorized": false,
+  "owner_acceptance": false,
+  "github_publication_authorized": false,
+  "hosted_deployment_authorized": false,
+  "public_launch_authorized": false,
+  "v1_promotion_state": "Held",
+  "next_action": "Embed this receipt, rebuild and verify deterministic output, update the manifest, then operate the September 6 desk closures only on their lawful date."
+}

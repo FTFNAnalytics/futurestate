@@ -1,0 +1,64 @@
+---
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import ReviewHeader from "../../components/review/ReviewHeader.astro";
+import MetaPill from "../../components/ui/MetaPill.astro";
+import program from "../../data/v1-public-reference-edition.json";
+import { v1refDefinitions } from "../../data/v1ref-registry";
+
+const waves = [
+  { label: "Reference-grade core", range: "Phases 181–188", description: "Corpus reconciliation, evidence backlog, missing-system missions, definitive topic editions, places, delivery cases, measurement candidates, and the first integrated edition.", definitions: v1refDefinitions.filter(({ phase }) => phase <= 188) },
+  { label: "Global evidence activation", range: "Phases 189–196", description: "Authority rails, jurisdiction systems, international projects and places, comparisons, longitudinal review, canonical questions, and the global candidate gate.", definitions: v1refDefinitions.filter(({ phase }) => phase >= 189 && phase <= 196) },
+  { label: "Definitive public reference edition", range: "Phases 197–204", description: "Gap closure, failure cases, distribution panels, constraint monographs, correction service, accessible editions, the annual report, and the v1 promotion gate.", definitions: v1refDefinitions.filter(({ phase }) => phase >= 197) },
+];
+---
+
+<BaseLayout title="FTFN Public Reference | Topics, places, projects, outcomes and constraints" description={program.summary}>
+  <ReviewHeader eyebrow="Stable reader entry point · Phase 181–204" title="FTFN Public Reference" summary={program.summary} />
+  <section class="page-section"><h2>Read by subject and question</h2><p>Four topic drafts, eight project cases, four place lenses, twelve scoped answers and four case narratives connect to existing research identities. Independent reviews and release remain open.</p><a class="button" href="/reference/explore/1/">Explore essays, questions, projects and places</a><p><a href="/reference/field-report/2026-09-14/">Read the complete selected September 14 field edition</a> — four cases with an executive account, evidence notes and explicit coverage limits.</p></section>
+
+  <section class="page-section">
+    <div class="prose-page"><h2>Expanded reader editions · September 10</h2><p>Twelve extended cross-system essays, 34 English reader editions and the 58-record flagship report now have a dated reader layer. The report reuses the twelve essays; these are 92 distinct texts, not 104 separate investigations. Earlier research contracts remain inspectable, and independent review and public release remain held.</p><p><a href="/reference/constraint-monographs/">Read the essays</a> · <a href="/reference/accessible-editions/">English editions</a> · <a href="/reference/state-of-future-systems/">State of Future Systems 2026</a></p></div>
+    <div class="metric-strip" aria-label="Public reference inventory">
+      <div class="metric"><strong>{program.counts.phases}</strong><span>phase registries</span></div>
+      <div class="metric"><strong>{program.counts.primary_records.toLocaleString()}</strong><span>inspectable records</span></div>
+      <div class="metric"><strong>{program.counts.canonical_topic_editions}</strong><span>topic editions</span></div>
+      <div class="metric"><strong>{program.counts.question_briefs}</strong><span>reader questions</span></div>
+    </div>
+  </section>
+
+  <section class="page-section briefing-band">
+    <div class="briefing-band__copy">
+      <div class="eyebrow">How to use this resource</div>
+      <h2>Start with a question, then follow the evidence.</h2>
+      <p>Use topic editions for a field overview, project and place files for delivery, comparison and longitudinal records for measurement limits, and the change service for corrections. Candidate records describe what must be checked; they are not disguised findings.</p>
+    </div>
+    <article class="record-card record-card--featured">
+      <MetaPill label={program.v1_promotion_state} tone="review" />
+      <h3>Current release boundary</h3>
+      <p>{program.publication_boundaries[0]}</p>
+      <a class="inline-link" href="/data/v1-public-reference-edition.json">Open the complete data contract</a>
+    </article>
+  </section>
+
+  {waves.map((wave) => (
+    <section class="page-section">
+      <div class="section-heading"><div><div class="eyebrow">{wave.range}</div><h2>{wave.label}</h2><p>{wave.description}</p></div></div>
+      <div class="signal-grid">
+        {wave.definitions.map(({ phase, section, registry, items }) => (
+          <article class="record-card">
+            <div class="meta-row"><MetaPill label={`Phase ${phase}`} /><MetaPill label={`${items.length} records`} tone="possibility" /></div>
+            <h3><a href={`/reference/${section}/`}>{registry.title}</a></h3>
+            <p>{registry.summary}</p>
+            <a class="inline-link" href={`/reference/${section}/`}>Explore this collection</a>
+          </article>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="page-section prose-page">
+    <h2>Evidence rules</h2>
+    <ul>{program.publication_boundaries.map((boundary: string) => <li>{boundary}</li>)}</ul>
+    <p><a href="/review/v1ref/">Inspect the immutable Phase 181–204 edition</a> · <a href="/data/">Browse all public data</a></p>
+  </section>
+</BaseLayout>

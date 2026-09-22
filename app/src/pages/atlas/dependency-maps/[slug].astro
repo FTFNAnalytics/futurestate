@@ -1,9 +1,13 @@
 ---
+import PagedShelf from "../../../components/review/PagedShelf.astro";
+import {getShelfCatalog} from "../../../lib/shelf-catalog";
+import {atlasShelfKey} from "../../../lib/atlas-shelf-relations.mjs";
+import AtlasRelationshipShelf from "../../../components/atlas/AtlasRelationshipShelf.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
-import { getEvidenceGapTone, getStatusTone } from "../../../lib/editorial";
+import { getStatusTone } from "../../../lib/editorial";
 
 export async function getStaticPaths() {
   const dependencyMaps = await getCollection("dependencyMaps");
@@ -15,53 +19,14 @@ export async function getStaticPaths() {
 }
 
 const { dependencyMap } = Astro.props;
-const [sources, signals, technologies, localSystems, evidenceGaps, topics] = await Promise.all([
-  getCollection("sources"),
-  getCollection("signals"),
-  getCollection("technologies"),
-  getCollection("localSystems"),
-  getCollection("evidenceGaps"),
-  getCollection("topics")
-]);
-
+const graphKind=atlasShelfKey("graph",dependencyMap.data.id),graphRecords=(await getShelfCatalog())[graphKind];
 type DependencyMapEntry = CollectionEntry<"dependencyMaps">;
 type DependencyMapNode = DependencyMapEntry["data"]["nodes"][number];
 type DependencyMapLink = DependencyMapEntry["data"]["links"][number];
-type SourceEntry = CollectionEntry<"sources">;
-type SignalEntry = CollectionEntry<"signals">;
-type TechnologyEntry = CollectionEntry<"technologies">;
-type LocalSystemEntry = CollectionEntry<"localSystems">;
-type EvidenceGapEntry = CollectionEntry<"evidenceGaps">;
-
-function isPresent<T>(value: T | undefined): value is T {
-  return value !== undefined;
-}
-
-const sourceById = new Map(sources.map((source) => [source.data.id, source]));
-const signalById = new Map(signals.map((signal) => [signal.data.id, signal]));
-const technologyById = new Map(technologies.map((technology) => [technology.data.id, technology]));
-const localSystemById = new Map(localSystems.map((system) => [system.data.id, system]));
-const evidenceGapById = new Map(evidenceGaps.map((gap) => [gap.data.id, gap]));
-const topicById = new Map(topics.map((topic) => [topic.data.id, topic]));
-const nodeLabelById = new Map(dependencyMap.data.nodes.map((node: DependencyMapNode) => [node.id, node.label]));
-
-const relatedSources = dependencyMap.data.source_ids
-  .map((sourceId: string) => sourceById.get(sourceId))
-  .filter((source: SourceEntry | undefined): source is SourceEntry => isPresent(source));
-const relatedSignals = dependencyMap.data.signal_ids
-  .map((signalId: string) => signalById.get(signalId))
-  .filter((signal: SignalEntry | undefined): signal is SignalEntry => isPresent(signal));
-const relatedTechnologies = dependencyMap.data.technology_ids
-  .map((technologyId: string) => technologyById.get(technologyId))
-  .filter((technology: TechnologyEntry | undefined): technology is TechnologyEntry => isPresent(technology));
-const relatedLocalSystems = dependencyMap.data.local_system_ids
-  .map((systemId: string) => localSystemById.get(systemId))
-  .filter((system: LocalSystemEntry | undefined): system is LocalSystemEntry => isPresent(system));
-const relatedEvidenceGaps = dependencyMap.data.evidence_gap_ids
-  .map((gapId: string) => evidenceGapById.get(gapId))
-  .filter((gap: EvidenceGapEntry | undefined): gap is EvidenceGapEntry => isPresent(gap));
 const explicitRecordNodeCount = dependencyMap.data.nodes.filter((node: DependencyMapNode) => node.record_id).length;
 const conceptNodeCount = dependencyMap.data.nodes.length - explicitRecordNodeCount;
+const distinctNodeIds=new Set(dependencyMap.data.nodes.map((n:DependencyMapNode)=>n.id)).size;
+const distinctLinkRows=new Set(dependencyMap.data.links.map((l:DependencyMapLink)=>JSON.stringify(l))).size;
 const representedNodeTypes = Array.from(new Set(dependencyMap.data.nodes.map((node: DependencyMapNode) => node.node_type))).sort();
 const linkedRecordTypes = [
   { label: "sources", count: dependencyMap.data.source_ids.length },
@@ -92,16 +57,6 @@ function getConfidenceTone(confidence: DependencyMapLink["confidence"]) {
   return "draft";
 }
 
-function getNodeHref(node: DependencyMapNode) {
-  if (!node.record_id) return undefined;
-  if (node.node_type === "Signal") return `/signals/${signalById.get(node.record_id)?.data.slug}/`;
-  if (node.node_type === "Source") return `/atlas/sources/${node.record_id}/`;
-  if (node.node_type === "Technology") return `/atlas/technologies/${technologyById.get(node.record_id)?.data.slug}/`;
-  if (node.node_type === "Local System") return `/atlas/local-systems/${localSystemById.get(node.record_id)?.data.slug}/`;
-  if (node.node_type === "Evidence Gap") return `/atlas/evidence-gaps/${evidenceGapById.get(node.record_id)?.data.slug}/`;
-  if (node.node_type === "Topic") return `/atlas/topics/${topicById.get(node.record_id)?.data.slug}/`;
-  return undefined;
-}
 ---
 
 <BaseLayout title={`${dependencyMap.data.title} | FTFN`} description={dependencyMap.data.summary} robots={robots}>
@@ -144,19 +99,19 @@ function getNodeHref(node: DependencyMapNode) {
     <div class="metric-strip" aria-label="Dependency map structure summary">
       <article class="metric">
         <strong>{dependencyMap.data.nodes.length}</strong>
-        <span>{dependencyMap.data.nodes.length === 1 ? "node" : "nodes"}</span>
+        <span>{dependencyMap.data.nodes.length === 1 ? "node row" : "node rows"}</span>
       </article>
       <article class="metric">
         <strong>{dependencyMap.data.links.length}</strong>
-        <span>{dependencyMap.data.links.length === 1 ? "link" : "links"}</span>
+        <span>{dependencyMap.data.links.length === 1 ? "link row" : "link rows"}</span>
       </article>
       <article class="metric">
         <strong>{explicitRecordNodeCount}</strong>
-        <span>record nodes</span>
+        <span>record-node rows</span>
       </article>
       <article class="metric">
         <strong>{conceptNodeCount}</strong>
-        <span>concept nodes</span>
+        <span>concept-node rows</span>
       </article>
     </div>
   </section>
@@ -192,53 +147,11 @@ function getNodeHref(node: DependencyMapNode) {
     </div>
   </section>
 
-  <section class="page-section">
-    <div class="section-heading">
-      <div>
-        <div class="eyebrow">Nodes</div>
-        <h2>Records and concepts in this map.</h2>
-      </div>
-    </div>
-    <div class="grid">
-      {dependencyMap.data.nodes.map((node: DependencyMapNode) => {
-        const href = getNodeHref(node);
-        return (
-          <article class="record-card">
-            <div class="meta-row">
-              <MetaPill label={node.node_type} />
-              {node.record_id && <MetaPill label={node.record_id} />}
-            </div>
-            <h3>{href ? <a href={href}>{node.label}</a> : node.label}</h3>
-            <p>{node.note}</p>
-          </article>
-        );
-      })}
-    </div>
-  </section>
-
-  <section class="page-section">
-    <div class="section-heading">
-      <div>
-        <div class="eyebrow">Relationships</div>
-        <h2>Qualitative links, not inferred causality.</h2>
-      </div>
-    </div>
-    <div class="source-list">
-      {dependencyMap.data.links.map((link: DependencyMapLink) => {
-        const fromLabel = nodeLabelById.get(link.from) ?? link.from;
-        const toLabel = nodeLabelById.get(link.to) ?? link.to;
-        return (
-          <article class="source-row">
-            <div class="meta-row">
-              <MetaPill label={link.relationship} />
-              <MetaPill label={link.confidence} tone={getConfidenceTone(link.confidence)} />
-            </div>
-            <h3>{fromLabel} -> {toLabel}</h3>
-            <p>{link.note}</p>
-          </article>
-        );
-      })}
-    </div>
+  <section class="page-section" data-atlas-graph={graphKind}>
+    <h2>Graph nodes and qualitative relationships</h2>
+    <p>{distinctNodeIds} distinct node IDs and {distinctLinkRows} distinct complete link rows. Repeated identical rows remain visible for audit and are not additional entities or evidence. Conflicting reused IDs are marked without choosing an endpoint.</p>
+    <p>Every original node, directed link, note and confidence label remains available in this paginated archive. Filter by content kind to read nodes or relationships. Historical map framing is not new evidence or inferred causality.</p>
+    <PagedShelf records={graphRecords} kind={graphKind} limit={20} headingLevel={3}/>
   </section>
 
   <section class="page-section">
@@ -264,64 +177,5 @@ function getNodeHref(node: DependencyMapNode) {
     </div>
   </section>
 
-  <section class="page-section">
-    <div class="section-heading">
-      <div>
-        <div class="eyebrow">Evidence Trail</div>
-        <h2>Related records that support or limit the map.</h2>
-      </div>
-    </div>
-    <div class="grid">
-      {relatedSignals.map((signal) => (
-        <article class="record-card">
-          <div class="meta-row">
-            <MetaPill label="Signal" />
-            <MetaPill label={signal.data.record_status} tone={getStatusTone(signal.data.record_status)} />
-          </div>
-          <h3><a href={`/signals/${signal.data.slug}/`}>{signal.data.title}</a></h3>
-          <p>{signal.data.summary}</p>
-        </article>
-      ))}
-      {relatedTechnologies.map((technology) => (
-        <article class="record-card">
-          <div class="meta-row">
-            <MetaPill label="Technology" />
-            <MetaPill label={technology.data.maturity_level} tone="possibility" />
-          </div>
-          <h3><a href={`/atlas/technologies/${technology.data.slug}/`}>{technology.data.name}</a></h3>
-          <p>{technology.data.summary}</p>
-        </article>
-      ))}
-      {relatedLocalSystems.map((system) => (
-        <article class="record-card">
-          <div class="meta-row">
-            <MetaPill label="Local System" />
-            <MetaPill label={system.data.local_evidence_level} />
-          </div>
-          <h3><a href={`/atlas/local-systems/${system.data.slug}/`}>{system.data.name}</a></h3>
-          <p>{system.data.summary}</p>
-        </article>
-      ))}
-      {relatedEvidenceGaps.map((gap) => (
-        <article class="record-card">
-          <div class="meta-row">
-            <MetaPill label="Evidence Gap" />
-            <MetaPill label={gap.data.status} tone={getEvidenceGapTone(gap.data.status)} />
-          </div>
-          <h3><a href={`/atlas/evidence-gaps/${gap.data.slug}/`}>{gap.data.title}</a></h3>
-          <p>{gap.data.question}</p>
-        </article>
-      ))}
-      {relatedSources.map((source) => (
-        <article class="record-card">
-          <div class="meta-row">
-            <MetaPill label="Source" />
-            <MetaPill label={source.data.credibility_level} />
-          </div>
-          <h3><a href={`/atlas/sources/${source.data.id}/`}>{source.data.name}</a></h3>
-          <p>{source.data.known_limitations}</p>
-        </article>
-      ))}
-    </div>
-  </section>
+  <AtlasRelationshipShelf kind="map" id={dependencyMap.data.id}/>
 </BaseLayout>

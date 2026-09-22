@@ -1,0 +1,1292 @@
+{
+  "schema_version": "1.0",
+  "phase": 199,
+  "program_id": "FTFN-PHASE-199",
+  "dataset": "phase_199_distribution_affordability_service_quality_observatory",
+  "title": "Distribution, Affordability, and Service-Quality Observatory",
+  "effective_date": "2026-09-01",
+  "record_status": "Prepared content — public release not authorized",
+  "build_status": "Complete locally",
+  "summary": "Prepare twenty-four source-bound measurement panels—eight each for distribution, affordability, and service quality—while admitting zero observations and preserving every outcome field as null.",
+  "record_scope": "Phase 197–204 definitive public-reference edition candidate layer.",
+  "publication_boundaries": [
+    "This is an append-only definitive-edition layer over the existing governed corpus; it does not rewrite an upstream evidence decision, project stage, place state, receipt, or validation baseline.",
+    "Research targets, casebook classifications, outcome panels, translations, expert review, repository publication, hosting, DNS, public launch, and v1 promotion remain distinct decisions.",
+    "A source-bound context statement is not a compatible longitudinal observation. Outcome values remain null unless entity, period, measure, method, denominator, revision lineage, and receiving authority all pass a dated admission decision.",
+    "No missing artifact is treated as nonexistent; no delay, failure, reversal, cause, correction, distributional effect, affordability result, service-quality result, score, rank, or causal finding is invented."
+  ],
+  "routes": {
+    "hub": "/review/v1reference/distribution-affordability-service-quality-observatory/",
+    "public_export": "/data/phase-199-distribution-affordability-service-quality-observatory.json"
+  },
+  "counts": {
+    "outcome_panels": 24,
+    "distribution_panels": 8,
+    "affordability_panels": 8,
+    "service_quality_panels": 8,
+    "source_bound_context_blocks": 24,
+    "admitted_observations": 0,
+    "non_null_outcome_values": 0,
+    "compatibility_decisions": 0
+  },
+  "outcome_panels": [
+    {
+      "outcome_panel_id": "199-PANEL-001",
+      "upstream_packet_id": "161-PACKET-001",
+      "slug": "north-american-peak-demand-forecast-2025-ltra-distribution-access",
+      "title": "NERC 2025 Long-Term Reliability Assessment: distribution and access panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "distribution-access",
+      "measure_family": "Distribution and access",
+      "stack_lane": "Power and grid",
+      "source_ids": [
+        "source-161-nerc-ltra-2025"
+      ],
+      "topic_ids": [
+        "topic-energy",
+        "topic-chips-and-compute",
+        "topic-policy-and-standards"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-003"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-003"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-001-CLAIM-01",
+        "text": "NERC reports that assessment-area summer peak demand is forecast to rise by more than 224 GW from 2025 through 2035 and winter peak demand by about 245 GW. The assessment attributes most projected growth to data centers and distinguishes 71 GW of approved summer-capacity growth from 266 GW of prospective additions.",
+        "source_semantic_digest": "0904ca616daa5d3da1ef06e31ced7bb7b4866ddcd0c9f7ecbc520612e19438b1",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "eligible population or assets",
+        "served population or assets",
+        "geography",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official distribution and access return for a named entity that supplies eligible population or assets, served population or assets, geography, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/north-american-peak-demand-forecast-2025-ltra-distribution-access/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-002",
+      "upstream_packet_id": "161-PACKET-002",
+      "slug": "us-interconnection-queue-snapshot-2026-affordability-burden",
+      "title": "Queued Up 2026: affordability and burden panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "affordability-burden",
+      "measure_family": "Affordability and burden",
+      "stack_lane": "Power and grid",
+      "source_ids": [
+        "source-161-lbnl-queued-up-2026"
+      ],
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-013",
+        "136-CHRONICLE-014"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-012",
+        "137-LEDGER-013",
+        "137-LEDGER-014",
+        "137-LEDGER-015"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-002-CLAIM-01",
+        "text": "Berkeley Lab identifies about 8,200 active projects representing 1,312 GW of generation and 749 GW of storage at the end of 2025. About 549 GW had a draft or executed interconnection agreement without commercial operation, and the median request-to-operation time exceeded five years for projects completed in 2025.",
+        "source_semantic_digest": "f8867183ae61efda909df962caabed9e061ed19309e280372a264c5f56a12ba4",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "price or expenditure",
+        "income or cost denominator",
+        "population",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official affordability and burden return for a named entity that supplies price or expenditure, income or cost denominator, population, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/us-interconnection-queue-snapshot-2026-affordability-burden/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-003",
+      "upstream_packet_id": "161-PACKET-003",
+      "slug": "us-battery-capacity-june-2026-service-quality-reliability",
+      "title": "Battery storage capacity averaged 70% annual growth: service quality and reliability panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "service-quality-reliability",
+      "measure_family": "Service quality and reliability",
+      "stack_lane": "Power and grid",
+      "source_ids": [
+        "source-161-eia-battery-capacity-aug-2026"
+      ],
+      "topic_ids": [
+        "topic-energy"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-011"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-014",
+        "137-LEDGER-015"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-003-CLAIM-01",
+        "text": "EIA reports 43.6 GW of operational utility-scale battery nameplate capacity at year-end 2025 and another 8.3 GW added in the first half of 2026, bringing the total near 52 GW. The release identifies Manatee as 409 MW of battery capacity paired with 75 MW of solar capacity.",
+        "source_semantic_digest": "4ae8d0d286f84812dc68dbc3698376158d6527c006db0040f4dcc8849d189aa1",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "service unit",
+        "failure or availability measure",
+        "population or asset denominator",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official service quality and reliability return for a named entity that supplies service unit, failure or availability measure, population or asset denominator, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/us-battery-capacity-june-2026-service-quality-reliability/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-004",
+      "upstream_packet_id": "161-PACKET-004",
+      "slug": "tsmc-us-investment-announcement-july-2026-distribution-access",
+      "title": "Commerce announces additional TSMC U.S. investment commitment: distribution and access panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "distribution-access",
+      "measure_family": "Distribution and access",
+      "stack_lane": "Chips and compute",
+      "source_ids": [
+        "source-161-nist-tsmc-investment-july-2026"
+      ],
+      "topic_ids": [
+        "topic-chips-and-compute",
+        "topic-advanced-manufacturing"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-005"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-004-CLAIM-01",
+        "text": "Commerce announced an incremental $100 billion TSMC U.S. commitment, bringing announced U.S. investment to $265 billion and twelve proposed leading-edge manufacturing and packaging facilities.",
+        "source_semantic_digest": "a4ae71fcb14179d328eb3e45f0cff1ad70fb808779d063912cd074d7f329d17d",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "eligible population or assets",
+        "served population or assets",
+        "geography",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official distribution and access return for a named entity that supplies eligible population or assets, served population or assets, geography, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/tsmc-us-investment-announcement-july-2026-distribution-access/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-005",
+      "upstream_packet_id": "161-PACKET-005",
+      "slug": "compute-supply-chain-rd-lois-july-2026-affordability-burden",
+      "title": "Commerce compute-supply-chain R&D letters of intent: affordability and burden panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "affordability-burden",
+      "measure_family": "Affordability and burden",
+      "stack_lane": "Chips and compute",
+      "source_ids": [
+        "source-161-nist-compute-supply-chain-lois-july-2026"
+      ],
+      "topic_ids": [
+        "topic-chips-and-compute",
+        "topic-ai-for-science",
+        "topic-advanced-manufacturing"
+      ],
+      "project_chronicle_ids": [],
+      "place_ledger_ids": [],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-005-CLAIM-01",
+        "text": "Commerce announced seven letters of intent totaling up to $874 million across photonics, memory, packaging, substrates, materials, provenance, and alternative compute, including proposed amounts of $300 million for GlobalFoundries, $245 million for Kepler, and $140 million for Multibeam.",
+        "source_semantic_digest": "0584c9d4dd335219a98a4addd3f908e3441def69c6902caadf1a40d6ba1afa4e",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "price or expenditure",
+        "income or cost denominator",
+        "population",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official affordability and burden return for a named entity that supplies price or expenditure, income or cost denominator, population, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/compute-supply-chain-rd-lois-july-2026-affordability-burden/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-006",
+      "upstream_packet_id": "161-PACKET-006",
+      "slug": "us-data-center-electricity-use-scenarios-service-quality-reliability",
+      "title": "2024 United States Data Center Energy Usage Report: service quality and reliability panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "service-quality-reliability",
+      "measure_family": "Service quality and reliability",
+      "stack_lane": "Chips and compute",
+      "source_ids": [
+        "source-161-lbnl-data-center-energy-usage-2024"
+      ],
+      "topic_ids": [
+        "topic-chips-and-compute",
+        "topic-energy",
+        "topic-water"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-003"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-003"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-006-CLAIM-01",
+        "text": "The DOE-requested Berkeley Lab study estimates U.S. data-center electricity use at 176 TWh, or 4.4% of national consumption, in 2023. Its scenario range reaches 325–580 TWh, or 6.7%–12.0%, in 2028.",
+        "source_semantic_digest": "042abedcac26b70e35dd7cdcdc3eb54c63a24bbce56075b48b136983894a12a3",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "service unit",
+        "failure or availability measure",
+        "population or asset denominator",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official service quality and reliability return for a named entity that supplies service unit, failure or availability measure, population or asset denominator, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/us-data-center-electricity-use-scenarios-service-quality-reliability/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-007",
+      "upstream_packet_id": "161-PACKET-007",
+      "slug": "colorado-river-2027-operations-decision-distribution-access",
+      "title": "Post-2026 Colorado River operations decision: distribution and access panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "distribution-access",
+      "measure_family": "Distribution and access",
+      "stack_lane": "Water",
+      "source_ids": [
+        "source-161-usbr-colorado-river-2027-decision"
+      ],
+      "topic_ids": [
+        "topic-water",
+        "topic-climate",
+        "topic-policy-and-standards"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-005"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-007-CLAIM-01",
+        "text": "Reclamation's final framework places the expected start of water year 2027 for Lake Powell between elevations 3,510 and 3,540 feet with an expected release of 6.0–7.0 million acre-feet, while reporting record-low Powell and Mead elevations in August 2026.",
+        "source_semantic_digest": "a4655ea8414a4066c3feacc1e274678149884dc4f286ed25bbfcd8da21929ca6",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "eligible population or assets",
+        "served population or assets",
+        "geography",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official distribution and access return for a named entity that supplies eligible population or assets, served population or assets, geography, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/colorado-river-2027-operations-decision-distribution-access/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-008",
+      "upstream_packet_id": "161-PACKET-008",
+      "slug": "phoenix-ama-version-3-groundwater-projection-affordability-burden",
+      "title": "Phoenix AMA Version 3 groundwater-model technical memorandum: affordability and burden panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "affordability-burden",
+      "measure_family": "Affordability and burden",
+      "stack_lane": "Water",
+      "source_ids": [
+        "source-161-adwr-phoenix-ama-v3-june-2026"
+      ],
+      "topic_ids": [
+        "topic-water",
+        "topic-chips-and-compute"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-005"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-008-CLAIM-01",
+        "text": "The Phoenix AMA Version 3 model produces 2,514,500 acre-feet of unmet demand over its 100-year horizon, including 836,500 acre-feet in AWS, municipal, and long-term-storage-credit sectors, and models average annual storage loss of 503,800 acre-feet.",
+        "source_semantic_digest": "cf3f529d6ae93f248f56410251df8826a5fd35ce48ab97e14ab2092b4ce1de34",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "price or expenditure",
+        "income or cost denominator",
+        "population",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official affordability and burden return for a named entity that supplies price or expenditure, income or cost denominator, population, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/phoenix-ama-version-3-groundwater-projection-affordability-burden/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-009",
+      "upstream_packet_id": "161-PACKET-009",
+      "slug": "wifia-portfolio-2025-service-quality-reliability",
+      "title": "WIFIA 2025 Annual Report: service quality and reliability panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "service-quality-reliability",
+      "measure_family": "Service quality and reliability",
+      "stack_lane": "Water",
+      "source_ids": [
+        "source-161-epa-wifia-2025-annual-report"
+      ],
+      "topic_ids": [
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards"
+      ],
+      "project_chronicle_ids": [],
+      "place_ledger_ids": [],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-009-CLAIM-01",
+        "text": "EPA reports that WIFIA closed $900 million in loans supporting $1.8 billion of projects during 2025 and made 333 disbursements totaling nearly $3.7 billion. Through December 2025 it reports 147 closed loans and $22 billion of financing associated with $49 billion of infrastructure investment.",
+        "source_semantic_digest": "ff7460a741c484a88ee1743a7c2107b7e62b159ee2085e6c1b7c57666870d96d",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "service unit",
+        "failure or availability measure",
+        "population or asset denominator",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official service quality and reliability return for a named entity that supplies service unit, failure or availability measure, population or asset denominator, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/wifia-portfolio-2025-service-quality-reliability/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-010",
+      "upstream_packet_id": "161-PACKET-010",
+      "slug": "us-road-fatalities-estimate-2025-distribution-access",
+      "title": "Early estimate of 2025 motor-vehicle traffic fatalities: distribution and access panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "distribution-access",
+      "measure_family": "Distribution and access",
+      "stack_lane": "Mobility and aviation",
+      "source_ids": [
+        "source-161-nhtsa-road-fatalities-2025-estimate"
+      ],
+      "topic_ids": [
+        "topic-mobility",
+        "topic-human-futures"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-008"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-006"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-010-CLAIM-01",
+        "text": "NHTSA estimated 36,640 traffic fatalities in 2025, 6.7% below 2024, with a rate of 1.10 fatalities per 100 million vehicle-miles traveled.",
+        "source_semantic_digest": "a587333ce607a56beafca9e59a7c44d4eba5c0811497d6fa4653c849daf5d96b",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "eligible population or assets",
+        "served population or assets",
+        "geography",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official distribution and access return for a named entity that supplies eligible population or assets, served population or assets, geography, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/us-road-fatalities-estimate-2025-distribution-access/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-011",
+      "upstream_packet_id": "161-PACKET-011",
+      "slug": "faa-controller-workforce-2026-plan-affordability-burden",
+      "title": "Air Traffic Controller Workforce Plan 2026–2028: affordability and burden panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "affordability-burden",
+      "measure_family": "Affordability and burden",
+      "stack_lane": "Mobility and aviation",
+      "source_ids": [
+        "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028"
+      ],
+      "topic_ids": [
+        "topic-aviation",
+        "topic-human-futures"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-004"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-011-CLAIM-01",
+        "text": "FAA reports 2,028 controller trainees hired in FY2025 against 1,460 total losses, a net gain of 568, and plans 2,200, 2,300, and 2,400 hires for FY2026–2028. It separately reports about 11,000 certified controllers and 4,000 in training against a 12,563-controller target.",
+        "source_semantic_digest": "01644b4062b07d156f8b6154a5bd2390b28ed7dceb2e843cfb395062cf031504",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "price or expenditure",
+        "income or cost denominator",
+        "population",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official affordability and burden return for a named entity that supplies price or expenditure, income or cost denominator, population, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/faa-controller-workforce-2026-plan-affordability-burden/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-012",
+      "upstream_packet_id": "161-PACKET-012",
+      "slug": "amtrak-fy2025-ridership-service-quality-reliability",
+      "title": "Amtrak FY2025 year-end ridership fact sheet: service quality and reliability panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "service-quality-reliability",
+      "measure_family": "Service quality and reliability",
+      "stack_lane": "Mobility and aviation",
+      "source_ids": [
+        "source-161-amtrak-fy2025-ridership"
+      ],
+      "topic_ids": [
+        "topic-mobility",
+        "topic-human-futures"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-021"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-010"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-012-CLAIM-01",
+        "text": "Amtrak reports 34,467,598 trips in FY2025, 5.1% above FY2024, with Northeast Corridor trips up 8.1%, state-supported trips up 2.4%, and long-distance trips up 4.2%.",
+        "source_semantic_digest": "32bae3c60a47346d1e5b01c796807ab2b4e7722b22c4fb766975e1e329647da3",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "service unit",
+        "failure or availability measure",
+        "population or asset denominator",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official service quality and reliability return for a named entity that supplies service unit, failure or availability measure, population or asset denominator, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/amtrak-fy2025-ridership-service-quality-reliability/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-013",
+      "upstream_packet_id": "161-PACKET-013",
+      "slug": "us-climate-conditions-2025-distribution-access",
+      "title": "Annual 2025 U.S. climate assessment: distribution and access panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "distribution-access",
+      "measure_family": "Distribution and access",
+      "stack_lane": "Climate and energy",
+      "source_ids": [
+        "source-161-noaa-us-climate-2025"
+      ],
+      "topic_ids": [
+        "topic-climate",
+        "topic-water",
+        "topic-human-futures"
+      ],
+      "project_chronicle_ids": [],
+      "place_ledger_ids": [
+        "137-LEDGER-002",
+        "137-LEDGER-005",
+        "137-LEDGER-006",
+        "137-LEDGER-015"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-013-CLAIM-01",
+        "text": "NOAA reports that the contiguous United States averaged 54.6°F in 2025, 2.6°F above the twentieth-century average and fourth warmest in the 131-year record. The Climate Extremes Index was 58% above average, and the Southwest recorded its warmest year.",
+        "source_semantic_digest": "9a2b3f7bd4ef93bdbdba3f4bee0066adab9ad72bdd9c6ec72334c4c69847585b",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "eligible population or assets",
+        "served population or assets",
+        "geography",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official distribution and access return for a named entity that supplies eligible population or assets, served population or assets, geography, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/us-climate-conditions-2025-distribution-access/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-014",
+      "upstream_packet_id": "161-PACKET-014",
+      "slug": "us-wind-solar-generation-2025-affordability-burden",
+      "title": "U.S. wind and solar generation in 2025: affordability and burden panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "affordability-burden",
+      "measure_family": "Affordability and burden",
+      "stack_lane": "Climate and energy",
+      "source_ids": [
+        "source-161-eia-wind-solar-generation-2025"
+      ],
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-013",
+        "136-CHRONICLE-014"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-012",
+        "137-LEDGER-013",
+        "137-LEDGER-014",
+        "137-LEDGER-015"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-014-CLAIM-01",
+        "text": "EIA reports 760,000 GWh of wind and utility-scale solar generation in 2025, 88,000 GWh above 2024 and 17% of total generation. Wind supplied 464,000 GWh and utility-scale solar 296,000 GWh; including small-scale solar raises the joint share to 19%.",
+        "source_semantic_digest": "6870e2848e98952971a8fdc6870d8d4ad50c9463589fad4086185748fd920a8e",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "price or expenditure",
+        "income or cost denominator",
+        "population",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official affordability and burden return for a named entity that supplies price or expenditure, income or cost denominator, population, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/us-wind-solar-generation-2025-affordability-burden/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-015",
+      "upstream_packet_id": "161-PACKET-015",
+      "slug": "aemo-q1-2026-renewables-storage-service-quality-reliability",
+      "title": "AEMO Quarterly Energy Dynamics Q1 2026: service quality and reliability panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "service-quality-reliability",
+      "measure_family": "Service quality and reliability",
+      "stack_lane": "Climate and energy",
+      "source_ids": [
+        "source-161-aemo-q1-2026-qed"
+      ],
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-013",
+        "136-CHRONICLE-014"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-012",
+        "137-LEDGER-013"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-015-CLAIM-01",
+        "text": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in Q1 2026, a first-quarter record, with underlying demand at 25,496 MW. South Australia's renewable-and-storage contribution peaked at 98.8% during one half-hour on January 31.",
+        "source_semantic_digest": "e9ab05a9f10da3dbdb18f4424774d9bdebdafbd6f61dd6cb5e596f27bfd11d36",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "service unit",
+        "failure or availability measure",
+        "population or asset denominator",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official service quality and reliability return for a named entity that supplies service unit, failure or availability measure, population or asset denominator, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/aemo-q1-2026-renewables-storage-service-quality-reliability/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-016",
+      "upstream_packet_id": "161-PACKET-016",
+      "slug": "faa-commercial-space-operations-fy2025-distribution-access",
+      "title": "FAA Aerospace Forecast FY 2026–2046: distribution and access panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "distribution-access",
+      "measure_family": "Distribution and access",
+      "stack_lane": "Space",
+      "source_ids": [
+        "source-161-faa-aerospace-forecast-2026-2046"
+      ],
+      "topic_ids": [
+        "topic-space",
+        "topic-aviation",
+        "topic-policy-and-standards"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-004"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-016-CLAIM-01",
+        "text": "FAA records 195 licensed launches by six operators in FY2025, including 161 by SpaceX, with 76 at Cape Canaveral, 61 at Vandenberg, and 26 at Kennedy. It separately records nine licensed reentries and eight licensed operations resulting in mishaps.",
+        "source_semantic_digest": "27bd9f90402fdc660e9e40b7d5750859046b26e4e2a822527d9a26f6220c3643",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "eligible population or assets",
+        "served population or assets",
+        "geography",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official distribution and access return for a named entity that supplies eligible population or assets, served population or assets, geography, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/faa-commercial-space-operations-fy2025-distribution-access/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-017",
+      "upstream_packet_id": "161-PACKET-017",
+      "slug": "eastern-range-orbital-launches-2025-affordability-burden",
+      "title": "100 Launches and Beyond: affordability and burden panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "affordability-burden",
+      "measure_family": "Affordability and burden",
+      "stack_lane": "Space",
+      "source_ids": [
+        "source-161-space-force-eastern-range-2025"
+      ],
+      "topic_ids": [
+        "topic-space"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-004"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-017-CLAIM-01",
+        "text": "U.S. Space Force reports that Cape Canaveral Space Force Station and the Eastern Range hosted 109 orbital launches during 2025.",
+        "source_semantic_digest": "9ff73d9a49ff70b4ba764cd93b6d555f27f7862e129c4f7e2eda837af5851c92",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "price or expenditure",
+        "income or cost denominator",
+        "population",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official affordability and burden return for a named entity that supplies price or expenditure, income or cost denominator, population, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/eastern-range-orbital-launches-2025-affordability-burden/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-018",
+      "upstream_packet_id": "161-PACKET-018",
+      "slug": "artemis-iii-hardware-integration-august-2026-service-quality-reliability",
+      "title": "Artemis III Orion modules and rocket hardware update: service quality and reliability panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "service-quality-reliability",
+      "measure_family": "Service quality and reliability",
+      "stack_lane": "Space",
+      "source_ids": [
+        "source-161-nasa-artemis-iii-hardware-aug-2026"
+      ],
+      "topic_ids": [
+        "topic-space",
+        "topic-advanced-manufacturing"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-004"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-018-CLAIM-01",
+        "text": "NASA reports that all four RS-25 engines had reached Kennedy, booster stacking had begun, and more than 250 Artemis II Orion components were planned for reuse. It also reports almost four months of booster-preparation acceleration and roughly 50% shorter tower turnaround.",
+        "source_semantic_digest": "26bceeea8ef679b401d9bc36d975274daa4ca4201b046ff7aae5c08c46780e55",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "service unit",
+        "failure or availability measure",
+        "population or asset denominator",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official service quality and reliability return for a named entity that supplies service unit, failure or availability measure, population or asset denominator, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/artemis-iii-hardware-integration-august-2026-service-quality-reliability/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-019",
+      "upstream_packet_id": "161-PACKET-019",
+      "slug": "us-mineral-economy-import-reliance-2025-distribution-access",
+      "title": "Mineral Commodity Summaries 2026: distribution and access panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "distribution-access",
+      "measure_family": "Distribution and access",
+      "stack_lane": "Critical minerals and manufacturing",
+      "source_ids": [
+        "source-usgs-mineral-commodity-summaries"
+      ],
+      "topic_ids": [
+        "topic-critical-minerals",
+        "topic-advanced-manufacturing",
+        "topic-finance-and-risk"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-005"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-002"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-019-CLAIM-01",
+        "text": "USGS values U.S. nonfuel mineral production at $112 billion in 2025 and mineral-reliant industries at $4.09 trillion. It reports thirteen critical minerals at 100% net-import reliance and another twenty at 50% or greater reliance.",
+        "source_semantic_digest": "b7fe0c708058c5cf0126cff539cb3f102f4b0cf57e02fa01aba5637ada35cbe4",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "eligible population or assets",
+        "served population or assets",
+        "geography",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official distribution and access return for a named entity that supplies eligible population or assets, served population or assets, geography, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/us-mineral-economy-import-reliance-2025-distribution-access/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-020",
+      "upstream_packet_id": "161-PACKET-020",
+      "slug": "thacker-pass-financing-designed-capacity-affordability-burden",
+      "title": "Thacker Pass project financing record: affordability and burden panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "affordability-burden",
+      "measure_family": "Affordability and burden",
+      "stack_lane": "Critical minerals and manufacturing",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024"
+      ],
+      "topic_ids": [
+        "topic-critical-minerals",
+        "topic-advanced-manufacturing"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-005"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-002"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-020-CLAIM-01",
+        "text": "DOE records a $2.26 billion loan, comprising $1.97 billion principal and $289.7 million capitalized interest, for facilities designed to produce about 40,000 tonnes annually of battery-grade lithium carbonate.",
+        "source_semantic_digest": "39485cccab9938ece7b140e773ee621e55a7b83319cf9791a5317bbb86a57779",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "price or expenditure",
+        "income or cost denominator",
+        "population",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official affordability and burden return for a named entity that supplies price or expenditure, income or cost denominator, population, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/thacker-pass-financing-designed-capacity-affordability-burden/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-021",
+      "upstream_packet_id": "161-PACKET-021",
+      "slug": "usa-rare-earth-mine-to-magnet-award-service-quality-reliability",
+      "title": "Commerce definitive agreement with USA Rare Earth: service quality and reliability panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "service-quality-reliability",
+      "measure_family": "Service quality and reliability",
+      "stack_lane": "Critical minerals and manufacturing",
+      "source_ids": [
+        "source-161-nist-usa-rare-earth-june-2026"
+      ],
+      "topic_ids": [
+        "topic-critical-minerals",
+        "topic-advanced-manufacturing",
+        "topic-chips-and-compute"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-005"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-002"
+      ],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-021-CLAIM-01",
+        "text": "Commerce describes up to $277 million in incentives and up to $1.3 billion in lending for a proposed multi-site system targeting 10,000 tons annually of rare-earth metals and alloys and 10,000 tons annually of NdFeB magnets.",
+        "source_semantic_digest": "d9182e017f639d8e5f3a0edb92586668a641830ef723dd0d281b26dde3c82fb9",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "service unit",
+        "failure or availability measure",
+        "population or asset denominator",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official service quality and reliability return for a named entity that supplies service unit, failure or availability measure, population or asset denominator, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/usa-rare-earth-mine-to-magnet-award-service-quality-reliability/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-022",
+      "upstream_packet_id": "161-PACKET-022",
+      "slug": "nist-aite-launch-2026-distribution-access",
+      "title": "NIST Artificial Intelligence Technology Evaluation launch: distribution and access panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "distribution-access",
+      "measure_family": "Distribution and access",
+      "stack_lane": "AI, quantum, cyber and human futures",
+      "source_ids": [
+        "source-161-nist-aite-july-2026"
+      ],
+      "topic_ids": [
+        "topic-ai-for-science",
+        "topic-discovery-technologies",
+        "topic-policy-and-standards"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-007"
+      ],
+      "place_ledger_ids": [],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-022-CLAIM-01",
+        "text": "NIST launched a blind, sequestered evaluation environment with three initial vision-language-model tasks covering quantum science, genomics, and public safety, using common data, metrics, and scoring across provider tracks.",
+        "source_semantic_digest": "371ac666b01392bbffe5c073e3af62220ec915eebdc0934fde7e49b63b73449b",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "eligible population or assets",
+        "served population or assets",
+        "geography",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official distribution and access return for a named entity that supplies eligible population or assets, served population or assets, geography, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/nist-aite-launch-2026-distribution-access/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-023",
+      "upstream_packet_id": "161-PACKET-023",
+      "slug": "quantum-chips-loi-portfolio-2026-affordability-burden",
+      "title": "Commerce quantum letters of intent: affordability and burden panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "affordability-burden",
+      "measure_family": "Affordability and burden",
+      "stack_lane": "AI, quantum, cyber and human futures",
+      "source_ids": [
+        "source-161-nist-quantum-lois-may-2026"
+      ],
+      "topic_ids": [
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-advanced-manufacturing"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-006"
+      ],
+      "place_ledger_ids": [],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-023-CLAIM-01",
+        "text": "Commerce announced nine quantum letters of intent totaling $2.013 billion, including proposed foundry amounts of $375 million for GlobalFoundries and $1 billion for IBM alongside seven modality-specific companies.",
+        "source_semantic_digest": "fc183f5c512eef3f581758f18f252099afd40740e00ab933b6d5623713702ccf",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "price or expenditure",
+        "income or cost denominator",
+        "population",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official affordability and burden return for a named entity that supplies price or expenditure, income or cost denominator, population, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/quantum-chips-loi-portfolio-2026-affordability-burden/"
+    },
+    {
+      "outcome_panel_id": "199-PANEL-024",
+      "upstream_packet_id": "161-PACKET-024",
+      "slug": "ic3-cyber-harm-2025-service-quality-reliability",
+      "title": "FBI 2025 Internet Crime Report: service quality and reliability panel",
+      "state": "Panel specification complete — no compatible outcome observation admitted",
+      "measure_family_id": "service-quality-reliability",
+      "measure_family": "Service quality and reliability",
+      "stack_lane": "AI, quantum, cyber and human futures",
+      "source_ids": [
+        "source-161-fbi-ic3-2025-report"
+      ],
+      "topic_ids": [
+        "topic-cybersecurity",
+        "topic-human-futures",
+        "topic-finance-and-risk"
+      ],
+      "project_chronicle_ids": [],
+      "place_ledger_ids": [],
+      "source_bound_context": {
+        "claim_block_id": "161-PACKET-024-CLAIM-01",
+        "text": "The FBI reports 1,008,597 IC3 complaints with nearly $21 billion in reported losses during 2025. Cyber-enabled fraud accounted for 452,868 complaints and $17.697 billion, while people over 60 reported about $7.7 billion in losses.",
+        "source_semantic_digest": "1adf7baf61138115260525226de41fe028155c268e1cbb084c90378c83251ea5",
+        "role": "Orientation context only — not an observation in this panel"
+      },
+      "required_fields": [
+        "service unit",
+        "failure or availability measure",
+        "population or asset denominator",
+        "period",
+        "method"
+      ],
+      "entity": null,
+      "observation_period": null,
+      "numerator": null,
+      "denominator": null,
+      "unit": null,
+      "method": null,
+      "outcome_value": null,
+      "attribution": null,
+      "compatibility_decision": null,
+      "admitted_observations": [],
+      "exact_next_artifact": "An official service quality and reliability return for a named entity that supplies service unit, failure or availability measure, population or asset denominator, period, method and exposes revision lineage.",
+      "stop_rule": "Do not convert availability, capacity, funding, a forecast, an offer, a single milestone, or the source-bound context claim into a population outcome or longitudinal observation.",
+      "route": "/review/v1reference/distribution-affordability-service-quality-observatory/ic3-cyber-harm-2025-service-quality-reliability/"
+    }
+  ],
+  "measure_families": [
+    {
+      "id": "distribution-access",
+      "label": "Distribution and access",
+      "required": [
+        "eligible population or assets",
+        "served population or assets",
+        "geography",
+        "period",
+        "method"
+      ]
+    },
+    {
+      "id": "affordability-burden",
+      "label": "Affordability and burden",
+      "required": [
+        "price or expenditure",
+        "income or cost denominator",
+        "population",
+        "period",
+        "method"
+      ]
+    },
+    {
+      "id": "service-quality-reliability",
+      "label": "Service quality and reliability",
+      "required": [
+        "service unit",
+        "failure or availability measure",
+        "population or asset denominator",
+        "period",
+        "method"
+      ]
+    }
+  ],
+  "public_html_routes": [
+    "/review/v1reference/distribution-affordability-service-quality-observatory/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/north-american-peak-demand-forecast-2025-ltra-distribution-access/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/us-interconnection-queue-snapshot-2026-affordability-burden/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/us-battery-capacity-june-2026-service-quality-reliability/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/tsmc-us-investment-announcement-july-2026-distribution-access/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/compute-supply-chain-rd-lois-july-2026-affordability-burden/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/us-data-center-electricity-use-scenarios-service-quality-reliability/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/colorado-river-2027-operations-decision-distribution-access/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/phoenix-ama-version-3-groundwater-projection-affordability-burden/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/wifia-portfolio-2025-service-quality-reliability/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/us-road-fatalities-estimate-2025-distribution-access/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/faa-controller-workforce-2026-plan-affordability-burden/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/amtrak-fy2025-ridership-service-quality-reliability/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/us-climate-conditions-2025-distribution-access/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/us-wind-solar-generation-2025-affordability-burden/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/aemo-q1-2026-renewables-storage-service-quality-reliability/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/faa-commercial-space-operations-fy2025-distribution-access/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/eastern-range-orbital-launches-2025-affordability-burden/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/artemis-iii-hardware-integration-august-2026-service-quality-reliability/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/us-mineral-economy-import-reliance-2025-distribution-access/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/thacker-pass-financing-designed-capacity-affordability-burden/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/usa-rare-earth-mine-to-magnet-award-service-quality-reliability/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/nist-aite-launch-2026-distribution-access/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/quantum-chips-loi-portfolio-2026-affordability-burden/",
+    "/review/v1reference/distribution-affordability-service-quality-observatory/ic3-cyber-harm-2025-service-quality-reliability/"
+  ],
+  "public_json_exports": [
+    "/data/phase-199-distribution-affordability-service-quality-observatory.json"
+  ]
+}

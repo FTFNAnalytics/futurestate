@@ -5,6 +5,8 @@ import BaseLayout from "../../components/layout/BaseLayout.astro";
 import MetaPill from "../../components/ui/MetaPill.astro";
 import EvidenceAnnotation from "../../components/review/EvidenceAnnotation.astro";
 import annotationLedger from "../../data/phase-125-evidence-annotation-ledger.json";
+import {projectSignal} from '../../lib/signal-classification.mjs';
+import SignalClassificationNotice from '../../components/review/SignalClassificationNotice.astro';
 import {
   formatDate,
   getClaimScopeNote,
@@ -24,8 +26,9 @@ export async function getStaticPaths() {
   }));
 }
 
-const { signal } = Astro.props;
-const { Content } = await render(signal);
+const { signal: historicalSignal } = Astro.props;
+const signal = projectSignal(historicalSignal);
+const { Content } = await render(historicalSignal);
 const sources = await getCollection("sources");
 const signalSources = sources.filter((source) => signal.data.source_ids.includes(source.data.id));
 const localSystems = await getCollection("localSystems");
@@ -34,13 +37,6 @@ const relatedLocalSystems = localSystems.filter((system) =>
 );
 const evidenceGaps = await getCollection("evidenceGaps");
 const linkedEvidenceGaps = evidenceGaps.filter((gap) => signal.data.evidence_gap_ids.includes(gap.data.id));
-const relatedDependencyMaps = (await getCollection("dependencyMaps"))
-  .filter((dependencyMap) => dependencyMap.data.signal_ids.includes(signal.data.id))
-  .map((dependencyMap) => ({
-    map: dependencyMap,
-    relationship: "Signal ID",
-    note: "This dependency map explicitly cites this signal as part of its evidence trail."
-  }));
 const sourceCheckedDates = signalSources.map((source) => formatDate(source.data.last_checked_date));
 const sourceCheckedSummary = sourceCheckedDates.length > 0 ? sourceCheckedDates.join(", ") : "No source date";
 const publishedDateSummary = signal.data.published_date ? formatDate(signal.data.published_date) : "Not published";
@@ -55,6 +51,7 @@ const robots = signal.data.record_status === "Published" ? "index, follow" : "no
 ---
 
 <BaseLayout title={`${signal.data.title} | FTFN`} description={signal.data.summary} robots={robots}>
+  <SignalClassificationNotice id={signal.data.id} />
   <article class="page-section">
     <div class="eyebrow">Signal Brief</div>
     <h1 class="page-title">{signal.data.title}</h1>
@@ -77,7 +74,7 @@ const robots = signal.data.record_status === "Published" ? "index, follow" : "no
       <article class="status-item">
         <div class="eyebrow">Record Status</div>
         <h2>{signal.data.record_status}</h2>
-        <p>{getStatusNote(signal.data.record_status)}</p>
+        <p>{getStatusNote(signal.data.record_status, Boolean(signal.data.editorial_classification))}</p>
       </article>
       <article class="status-item">
         <div class="eyebrow">Publication Date</div>
@@ -149,7 +146,7 @@ const robots = signal.data.record_status === "Published" ? "index, follow" : "no
   )}
 
   <DependencyMapLinks
-    maps={relatedDependencyMaps}
+    recordId={signal.data.id}
     title="Dependency maps using this signal."
     description="These maps cite this signal by ID. The relationship is explicit; it is not inferred from page text."
   />

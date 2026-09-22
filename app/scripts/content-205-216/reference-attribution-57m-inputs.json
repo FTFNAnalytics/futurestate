@@ -1,0 +1,585 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-09-15",
+  "historical_date": "2026-08-08",
+  "review_scope": "Complete local 57M narrative, metadata and link-file attribution review; per-contract field counts and incomplete-fixture decisions inspected separately with three historical definition registries. No external refresh or test rerun.",
+  "key": "57m",
+  "collection_slug": "source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026",
+  "collection_sha256": "6b6d0573c6b49fd1a3a2bda5a32634b4e846994e75d8f5f0553d94627b469988",
+  "briefing_slug": "research-watch-043-source-schema-adapters-packet-review-controls",
+  "docs": [
+    {
+      "id": "research-doc-57m-amtrak-12-non-coercive-field-adapters",
+      "slug": "57m-amtrak-12-non-coercive-field-adapters",
+      "source_file": "research-documents/902-57m-amtrak-12-non-coercive-field-adapters.json",
+      "reviewed_source_sha256": "4f150faf5e0723b922f11f3891b53a7ae0a368a997b2c0076793b0fddafe765b",
+      "title": "Amtrak maps 12 required fields through non-coercive schema adapters",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/01-amtrak-12-non-coercive-field-adapters.txt",
+      "download_sha256": "eb8aab0c150b1385a1f96304d42d3ed07c93a630d350d9da7a10d0561964d78c",
+      "historical_next_action": "Next action: Apply the adapter only to one cited candidate packet and return any ambiguous label for clarification."
+    },
+    {
+      "id": "research-doc-57m-amtrak-24-accepted-input-labels",
+      "slug": "57m-amtrak-24-accepted-input-labels",
+      "source_file": "research-documents/903-57m-amtrak-24-accepted-input-labels.json",
+      "reviewed_source_sha256": "e8e4c220936c4241e8cfec307cb5e999c4a03cb85b7730a3b09bcdad0fad8d30",
+      "title": "Amtrak declares 24 exact accepted input labels",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/02-amtrak-24-accepted-input-labels.txt",
+      "download_sha256": "eec87a7e9c2219c11bf6cad4e28d6fb19214dfd665432dd4d90b7aa7e33239b2",
+      "historical_next_action": "Next action: Record the exact source label and citation when an actual candidate packet enters review."
+    },
+    {
+      "id": "research-doc-57m-amtrak-2-empty-2-incomplete-packet-fixtures",
+      "slug": "57m-amtrak-2-empty-2-incomplete-packet-fixtures",
+      "source_file": "research-documents/904-57m-amtrak-2-empty-2-incomplete-packet-fixtures.json",
+      "reviewed_source_sha256": "2565dbca829383fdb3d2eb9eb809550fa1486cc7c3d2d7a5593a4da39a63a600",
+      "title": "Amtrak builds empty and deliberately incomplete non-evidence packet fixtures",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/03-amtrak-2-empty-2-incomplete-packet-fixtures.txt",
+      "download_sha256": "1e76943bcb8d5a4833fbe8c00fb388e39bfe9a97e3c441ccfe54a3e3504fd2ba",
+      "historical_next_action": "Next action: Use the fixtures only to test intake behavior before reviewing a cited official record."
+    },
+    {
+      "id": "research-doc-57m-amtrak-12-human-review-decision-rows",
+      "slug": "57m-amtrak-12-human-review-decision-rows",
+      "source_file": "research-documents/905-57m-amtrak-12-human-review-decision-rows.json",
+      "reviewed_source_sha256": "b8a6065bf774bd19ac87e415f4bcd3599ff9c6d5d93f0f9e85ec387fa74c130f",
+      "title": "Amtrak defines 12 human-review rows across six outcomes",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/04-amtrak-12-human-review-decision-rows.txt",
+      "download_sha256": "272571e82acb6cd7398ad842a11bfef4214a9c79f162bc1a1df8e69352dd8849",
+      "historical_next_action": "Next action: Require a named reviewer to record one bounded decision and reason for each actual packet."
+    },
+    {
+      "id": "research-doc-57m-amtrak-zero-evidence-packets-accepted-or-triggers-fired",
+      "slug": "57m-amtrak-zero-evidence-packets-accepted-or-triggers-fired",
+      "source_file": "research-documents/906-57m-amtrak-zero-evidence-packets-accepted-or-triggers-fired.json",
+      "reviewed_source_sha256": "51bef6d71125871158cb07c33789e51025a52db0635541cb987a3551c6def3b3",
+      "title": "Amtrak accepts zero evidence packets and fires zero reopening triggers",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/05-amtrak-zero-evidence-packets-accepted-or-triggers-fired.txt",
+      "download_sha256": "ba169d4223049fd9ca03acf2940159d07baf659f03120f8118838b8e80746587",
+      "historical_next_action": "Next action: Keep the hold until one complete cited packet clears all checks and a separate human publication review approves it."
+    },
+    {
+      "id": "research-doc-57m-broadband-19-non-coercive-field-adapters",
+      "slug": "57m-broadband-19-non-coercive-field-adapters",
+      "source_file": "research-documents/907-57m-broadband-19-non-coercive-field-adapters.json",
+      "reviewed_source_sha256": "e0b58b8d136a71ffdc26fbf3b5188c55ba9ae6ac58cbda3ac303ff04e6ce323d",
+      "title": "Broadband maps 19 required fields through non-coercive schema adapters",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/06-broadband-19-non-coercive-field-adapters.txt",
+      "download_sha256": "d0f2471f6d664bbd1379e705e7b1f157cf1e9a8ee763dda15f0e04d775fae2aa",
+      "historical_next_action": "Next action: Apply the adapter only to one cited candidate packet and return any ambiguous label for clarification."
+    },
+    {
+      "id": "research-doc-57m-broadband-38-accepted-input-labels",
+      "slug": "57m-broadband-38-accepted-input-labels",
+      "source_file": "research-documents/908-57m-broadband-38-accepted-input-labels.json",
+      "reviewed_source_sha256": "cd3d95fabe3be6469752bf2612deed9ca20c07416f2184c4417107b33cc38ef5",
+      "title": "Broadband declares 38 exact accepted input labels",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/07-broadband-38-accepted-input-labels.txt",
+      "download_sha256": "6f8f8b6ab578ac351738af57f543b0c37cf2405d195e4927d7a475cc063cecbf",
+      "historical_next_action": "Next action: Record the exact source label and citation when an actual candidate packet enters review."
+    },
+    {
+      "id": "research-doc-57m-broadband-3-empty-3-incomplete-packet-fixtures",
+      "slug": "57m-broadband-3-empty-3-incomplete-packet-fixtures",
+      "source_file": "research-documents/909-57m-broadband-3-empty-3-incomplete-packet-fixtures.json",
+      "reviewed_source_sha256": "1b67fc0ad9ff0f97424cad443c7a8b4978923925d6ed61ee9b88b8ba681bc131",
+      "title": "Broadband builds empty and deliberately incomplete non-evidence packet fixtures",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/08-broadband-3-empty-3-incomplete-packet-fixtures.txt",
+      "download_sha256": "242be0bc1238d396cc889c3c399c8e88c9fe354d3a7db72f01a0bd354322cee8",
+      "historical_next_action": "Next action: Use the fixtures only to test intake behavior before reviewing a cited official record."
+    },
+    {
+      "id": "research-doc-57m-broadband-18-human-review-decision-rows",
+      "slug": "57m-broadband-18-human-review-decision-rows",
+      "source_file": "research-documents/910-57m-broadband-18-human-review-decision-rows.json",
+      "reviewed_source_sha256": "e00dc3eb3cd044546a88cc371786eb9d49686174551ae50257f47744c0ce7960",
+      "title": "Broadband defines 18 human-review rows across six outcomes",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/09-broadband-18-human-review-decision-rows.txt",
+      "download_sha256": "0b8a96feb779ba2663e56c57b76ae2c550d91bd3e66fb0679258cc2dfeafee43",
+      "historical_next_action": "Next action: Require a named reviewer to record one bounded decision and reason for each actual packet."
+    },
+    {
+      "id": "research-doc-57m-broadband-zero-evidence-packets-accepted-or-triggers-fired",
+      "slug": "57m-broadband-zero-evidence-packets-accepted-or-triggers-fired",
+      "source_file": "research-documents/911-57m-broadband-zero-evidence-packets-accepted-or-triggers-fired.json",
+      "reviewed_source_sha256": "8929c396fbbbfa253cd0357eacefaef0118fc029870cfd176cd318e2ac141681",
+      "title": "Broadband accepts zero evidence packets and fires zero reopening triggers",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/MT-BEAD-Final-Proposal-1.5.26.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/10-broadband-zero-evidence-packets-accepted-or-triggers-fired.txt",
+      "download_sha256": "ac2cfecb5c23c6fb23acc14dc355529185e00f5da4c4567e8303e7b0e841b49f",
+      "historical_next_action": "Next action: Keep the hold until one complete cited packet clears all checks and a separate human publication review approves it."
+    },
+    {
+      "id": "research-doc-57m-hanford-12-non-coercive-field-adapters",
+      "slug": "57m-hanford-12-non-coercive-field-adapters",
+      "source_file": "research-documents/912-57m-hanford-12-non-coercive-field-adapters.json",
+      "reviewed_source_sha256": "37e34336a5ba43fff45185f97cf3d8a0ce09e39b854f509a3e7df531ba11a8e9",
+      "title": "Hanford maps 12 required fields through non-coercive schema adapters",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/11-hanford-12-non-coercive-field-adapters.txt",
+      "download_sha256": "e643181255e344138b1561dd39f80936015a98f644491b9cba8f3d45acc37275",
+      "historical_next_action": "Next action: Apply the adapter only to one cited candidate packet and return any ambiguous label for clarification."
+    },
+    {
+      "id": "research-doc-57m-hanford-24-accepted-input-labels",
+      "slug": "57m-hanford-24-accepted-input-labels",
+      "source_file": "research-documents/913-57m-hanford-24-accepted-input-labels.json",
+      "reviewed_source_sha256": "ed699a1afdb041528dbce01a4c18bfb523388653282808541de02b81526847fa",
+      "title": "Hanford declares 24 exact accepted input labels",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/12-hanford-24-accepted-input-labels.txt",
+      "download_sha256": "f5c56de42dc51162a6023e4b72892d87466172d49a51dff50819d915fcc84787",
+      "historical_next_action": "Next action: Record the exact source label and citation when an actual candidate packet enters review."
+    },
+    {
+      "id": "research-doc-57m-hanford-1-empty-1-incomplete-packet-fixtures",
+      "slug": "57m-hanford-1-empty-1-incomplete-packet-fixtures",
+      "source_file": "research-documents/914-57m-hanford-1-empty-1-incomplete-packet-fixtures.json",
+      "reviewed_source_sha256": "d0dbd5a2d23a354f9aefcea0cf9222816cf99bdf25d3b2ad494f8794ebac3e05",
+      "title": "Hanford builds empty and deliberately incomplete non-evidence packet fixtures",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/13-hanford-1-empty-1-incomplete-packet-fixtures.txt",
+      "download_sha256": "806e8616684410f0c24f749d18fc650e34b2e82aabce02ade2f2820d5ca34428",
+      "historical_next_action": "Next action: Use the fixtures only to test intake behavior before reviewing a cited official record."
+    },
+    {
+      "id": "research-doc-57m-hanford-6-human-review-decision-rows",
+      "slug": "57m-hanford-6-human-review-decision-rows",
+      "source_file": "research-documents/915-57m-hanford-6-human-review-decision-rows.json",
+      "reviewed_source_sha256": "2b2f266f79be775862d73924ac94fcaf595304c9a0358fcc3fa17b97ddf66b17",
+      "title": "Hanford defines 6 human-review rows across six outcomes",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/14-hanford-6-human-review-decision-rows.txt",
+      "download_sha256": "3edab9b454869357848a529f3766bc985ada82cc578f3ee3e2fe0f7c1b49e997",
+      "historical_next_action": "Next action: Require a named reviewer to record one bounded decision and reason for each actual packet."
+    },
+    {
+      "id": "research-doc-57m-hanford-zero-evidence-packets-accepted-or-triggers-fired",
+      "slug": "57m-hanford-zero-evidence-packets-accepted-or-triggers-fired",
+      "source_file": "research-documents/916-57m-hanford-zero-evidence-packets-accepted-or-triggers-fired.json",
+      "reviewed_source_sha256": "ebb955673761eefc60acebe879454f6e4cf7791603743e2adcf66e5fd02ec770",
+      "title": "Hanford accepts zero evidence packets and fires zero reopening triggers",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/15-hanford-zero-evidence-packets-accepted-or-triggers-fired.txt",
+      "download_sha256": "33687b816c08a66fd6f639cfd2f85fbc84bd8c0d0f561ad97f355abc6726f925",
+      "historical_next_action": "Next action: Keep the hold until one complete cited packet clears all checks and a separate human publication review approves it."
+    },
+    {
+      "id": "research-doc-57m-nnsa-17-non-coercive-field-adapters",
+      "slug": "57m-nnsa-17-non-coercive-field-adapters",
+      "source_file": "research-documents/917-57m-nnsa-17-non-coercive-field-adapters.json",
+      "reviewed_source_sha256": "cfb09e21e454d734b03df7b92e6cda2856a8a0ba8b1a8a22153e7778d2eaf46a",
+      "title": "NNSA maps 17 required fields through non-coercive schema adapters",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/16-nnsa-17-non-coercive-field-adapters.txt",
+      "download_sha256": "a836ff9c57ac8a045163eeb3e09832951652d2eeddfd9ac20c79ea90e288bcdb",
+      "historical_next_action": "Next action: Apply the adapter only to one cited candidate packet and return any ambiguous label for clarification."
+    },
+    {
+      "id": "research-doc-57m-nnsa-34-accepted-input-labels",
+      "slug": "57m-nnsa-34-accepted-input-labels",
+      "source_file": "research-documents/918-57m-nnsa-34-accepted-input-labels.json",
+      "reviewed_source_sha256": "371da57d729e38ca5ff351f433e66b21e5c0cd67c1006beba069d65177054af1",
+      "title": "NNSA declares 34 exact accepted input labels",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/17-nnsa-34-accepted-input-labels.txt",
+      "download_sha256": "b48c44a7652fb8be12870563a6be785d363ca989c2a805f82d993e502b643442",
+      "historical_next_action": "Next action: Record the exact source label and citation when an actual candidate packet enters review."
+    },
+    {
+      "id": "research-doc-57m-nnsa-3-empty-3-incomplete-packet-fixtures",
+      "slug": "57m-nnsa-3-empty-3-incomplete-packet-fixtures",
+      "source_file": "research-documents/919-57m-nnsa-3-empty-3-incomplete-packet-fixtures.json",
+      "reviewed_source_sha256": "a46ca0a497728e30c462951f28c701654977b65327332f5ee6b5cb8f9b3727db",
+      "title": "NNSA builds empty and deliberately incomplete non-evidence packet fixtures",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/18-nnsa-3-empty-3-incomplete-packet-fixtures.txt",
+      "download_sha256": "4c7d1315b99af980688e793497cedb23c26d9f86d57815fed3478398f628dfd5",
+      "historical_next_action": "Next action: Use the fixtures only to test intake behavior before reviewing a cited official record."
+    },
+    {
+      "id": "research-doc-57m-nnsa-18-human-review-decision-rows",
+      "slug": "57m-nnsa-18-human-review-decision-rows",
+      "source_file": "research-documents/920-57m-nnsa-18-human-review-decision-rows.json",
+      "reviewed_source_sha256": "078803874c5ff26b26ed0d50a1a52c93c6d4d84d69b01c838459d55acfd5df1f",
+      "title": "NNSA defines 18 human-review rows across six outcomes",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/19-nnsa-18-human-review-decision-rows.txt",
+      "download_sha256": "bb9cdbf9f5dc6775c8c42a97f354c6975cb68759ccb7dec91399f0c3e95e7530",
+      "historical_next_action": "Next action: Require a named reviewer to record one bounded decision and reason for each actual packet."
+    },
+    {
+      "id": "research-doc-57m-nnsa-zero-evidence-packets-accepted-or-triggers-fired",
+      "slug": "57m-nnsa-zero-evidence-packets-accepted-or-triggers-fired",
+      "source_file": "research-documents/921-57m-nnsa-zero-evidence-packets-accepted-or-triggers-fired.json",
+      "reviewed_source_sha256": "11341bc087400f354e27e3a9bdc30680cbebc66282ace1bb2976ff4fda81fb2c",
+      "title": "NNSA accepts zero evidence packets and fires zero reopening triggers",
+      "publisher": "U.S. Department of Energy and National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/20-nnsa-zero-evidence-packets-accepted-or-triggers-fired.txt",
+      "download_sha256": "2306e60c0545c64104b10877b648ed393dd341e52f447a9a962583b7adf43488",
+      "historical_next_action": "Next action: Keep the hold until one complete cited packet clears all checks and a separate human publication review approves it."
+    },
+    {
+      "id": "research-doc-57m-preserved-amtrak-pids",
+      "slug": "57m-preserved-amtrak-pids",
+      "source_file": "research-documents/922-57m-preserved-amtrak-pids.json",
+      "reviewed_source_sha256": "47069873fbe9ca0752b887a5a71d9725a780723b202fc3251a4f80739281acbb",
+      "title": "Amtrak PIDS closeout remains In Review after adapter and packet-control review",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/21-preserved-amtrak-pids.txt",
+      "download_sha256": "04b18d0ee1816413c38e799abd1cf8dc55ffebd83679c0d65828e1902f8a3f88",
+      "historical_next_action": "Next action: Code-bearing official current asset register or closeout table"
+    },
+    {
+      "id": "research-doc-57m-preserved-amtrak-reliability",
+      "slug": "57m-preserved-amtrak-reliability",
+      "source_file": "research-documents/923-57m-preserved-amtrak-reliability.json",
+      "reviewed_source_sha256": "aa3088e7ed0d3c698ef5f0a0d7803db3a298c5646a180f981ddf5c9eafb0e126",
+      "title": "Amtrak named-asset reliability remains In Review after adapter and packet-control review",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/22-preserved-amtrak-reliability.txt",
+      "download_sha256": "aa0f9c4e03b584852f8b23712f2d6a43288aa65b297134d9ecd3d66f228a444c",
+      "historical_next_action": "Next action: Named-asset-period reliability table"
+    },
+    {
+      "id": "research-doc-57m-preserved-la-nextlink-adoption",
+      "slug": "57m-preserved-la-nextlink-adoption",
+      "source_file": "research-documents/924-57m-preserved-la-nextlink-adoption.json",
+      "reviewed_source_sha256": "5c9c527033204eb067e1e12c5a28e69bdab6ddbad919296bb6836fff06802003",
+      "title": "Louisiana Nextlink adoption remains In Review after adapter and packet-control review",
+      "publisher": "Louisiana Office of Broadband Development and Connectivity",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://connect.la.gov/press-releases/nextlink-activates-first-bead-funded-tower-in-the-united-states-connecting-rural-louisiana",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/23-preserved-la-nextlink-adoption.txt",
+      "download_sha256": "1bad841a2cf312c0a6ffaa0146b3cdf99489af79e704001ea152b7f27bf06c21",
+      "historical_next_action": "Next action: Privacy-safe official completed-period adoption table"
+    },
+    {
+      "id": "research-doc-57m-preserved-la-starlink-adoption",
+      "slug": "57m-preserved-la-starlink-adoption",
+      "source_file": "research-documents/925-57m-preserved-la-starlink-adoption.json",
+      "reviewed_source_sha256": "7a43d81d47ad6ea4e227b961b55c16d61e91eac690c020ef72a9c8834515aac3",
+      "title": "Louisiana Starlink adoption remains In Review after adapter and packet-control review",
+      "publisher": "Louisiana Office of Broadband Development and Connectivity",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/24-preserved-la-starlink-adoption.txt",
+      "download_sha256": "4d9c96b39ce7631429f5fb35753f541fed44f7e0533ebbfd2fa2f6617654696d",
+      "historical_next_action": "Next action: Privacy-safe official completed-period LEO adoption table"
+    },
+    {
+      "id": "research-doc-57m-preserved-mt-bead-quarter",
+      "slug": "57m-preserved-mt-bead-quarter",
+      "source_file": "research-documents/926-57m-preserved-mt-bead-quarter.json",
+      "reviewed_source_sha256": "ef50331af873184b778672780b09224cbf46dddb9317ff40698583c9d89ad36d",
+      "title": "Montana BEAD completed quarter remains In Review after adapter and packet-control review",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://doa.mt.gov/ConnectMT/iija/",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/25-preserved-mt-bead-quarter.txt",
+      "download_sha256": "0f7c5578382d59bd528c77cf202976b398e9eccb6ffa94d3b3aa9e6ada558abe",
+      "historical_next_action": "Next action: Completed public project-quarter table"
+    },
+    {
+      "id": "research-doc-57m-preserved-hanford-mass-balance",
+      "slug": "57m-preserved-hanford-mass-balance",
+      "source_file": "research-documents/927-57m-preserved-hanford-mass-balance.json",
+      "reviewed_source_sha256": "7e910b7e4b8840d945c7b1fa8d3eeaf85b44bf655c7d2c163456db70e1632593",
+      "title": "Hanford complete material balance remains In Review after adapter and packet-control review",
+      "publisher": "U.S. Department of Energy Hanford Field Office and Washington State Department of Ecology",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://pdw.hanford.gov/download/v2/AR-39756",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/26-preserved-hanford-mass-balance.txt",
+      "download_sha256": "0ce17b515b7c64942987e466c4e440c23d1fc97457b62cad0b7163dc9b825f94",
+      "historical_next_action": "Next action: Stable-identity transfer, receipt, and disposition evidence chain"
+    },
+    {
+      "id": "research-doc-57m-preserved-nnsa-qualified-rate",
+      "slug": "57m-preserved-nnsa-qualified-rate",
+      "source_file": "research-documents/928-57m-preserved-nnsa-qualified-rate.json",
+      "reviewed_source_sha256": "64902e47d2fde78fe0e481adb192cb9e2ab87812fb566f2ef238a4065a06fcc6",
+      "title": "NNSA recurring qualified rate remains In Review after adapter and packet-control review",
+      "publisher": "National Nuclear Security Administration",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.energy.gov/nnsa/plutonium-pit-production",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/27-preserved-nnsa-qualified-rate.txt",
+      "download_sha256": "d731c0cff0b3dda42360407b9d5b127da8c8d5c946ddbf9668eebaa93d34e28f",
+      "historical_next_action": "Next action: Official site-period recurring qualified-output table"
+    },
+    {
+      "id": "research-doc-57m-preserved-nnsa-accepted-capacity",
+      "slug": "57m-preserved-nnsa-accepted-capacity",
+      "source_file": "research-documents/929-57m-preserved-nnsa-accepted-capacity.json",
+      "reviewed_source_sha256": "f7ae0eb5d8b22b02c5b394d9c57f06d0d4d6e092d7e74f9b57fa2534da0f6b4f",
+      "title": "NNSA accepted operating capacity remains In Review after adapter and packet-control review",
+      "publisher": "National Nuclear Security Administration",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.energy.gov/sites/default/files/2026-04/draft-eis-0573-plutonium-pit-production-vol-1-2026-04.pdf",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/28-preserved-nnsa-accepted-capacity.txt",
+      "download_sha256": "9758688fa015fefe593d083cab6072cf6ab0fec189550b58372675ea2fd8bc68",
+      "historical_next_action": "Next action: Official site-period installed, qualified, and accepted capacity table"
+    },
+    {
+      "id": "research-doc-57m-preserved-nnsa-gao-baseline",
+      "slug": "57m-preserved-nnsa-gao-baseline",
+      "source_file": "research-documents/930-57m-preserved-nnsa-gao-baseline.json",
+      "reviewed_source_sha256": "faf1bb709a025c00c06bbcd560f30bc57b71a9ee94bfc00ac3fdad405942fb10",
+      "title": "NNSA GAO enterprise baseline remains In Review after adapter and packet-control review",
+      "publisher": "U.S. Government Accountability Office",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-08",
+      "captured_date": "2026-08-08",
+      "official_url": "https://www.gao.gov/products/gao-23-104661",
+      "download": "/downloads/source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026/official-links/29-preserved-nnsa-gao-baseline.txt",
+      "download_sha256": "ba2c174b1b7119c6379003289ada5c262a5c8572ea42ea4d38445303420d1994",
+      "historical_next_action": "Next action: GAO recommendation-status record with responsive agency evidence"
+    }
+  ],
+  "briefing": {
+    "source_file": "briefings/research-watch-043-source-schema-adapters-packet-review-controls.mdx",
+    "reviewed_source_sha256": "aefbbf5aac3652cf5045a77a03aa2df9915a667e3531690ae027469e1755ea26"
+  },
+  "previous_records_hash": "2932369adcecd41e887c05a8fc2473510e479eef221b5f584d26b68e2c211940",
+  "prior_input_pins": [
+    {
+      "path": "scripts/content-205-216/reference-attribution-reviews.json",
+      "sha256": "8ed1eecd8e010c40b5a79bf342be49de4efcd905940844e66c07be0dba56526d"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57x-inputs.json",
+      "sha256": "cecaa7493b4d47887667a517cb3af1144b76825c83b640110c7a755719a37a40"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57x-reviews.mjs",
+      "sha256": "8b99cc00c2e8e016db84afab5d0c8d93f420b70d1dc0bb6f20e9c10ec324de93"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57w-inputs.json",
+      "sha256": "85065aeb196a55678ba67b59580687f4a380df74c2f467b1511f98c738317eec"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57w-reviews.mjs",
+      "sha256": "b86fb2ffcb1f81c56310462c0b4ff450973676aff5b9d7ff20471a3da680f8e2"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57v-inputs.json",
+      "sha256": "312489bb869005e4ab593ea27c63e87b83a73ee3566a0654d20672f5f2ab2b15"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57v-reviews.mjs",
+      "sha256": "b6d2148b5d8f9baddfe7b4f27f4db8c6686fbc90c9229d370932f25aed1d8cf0"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57u-inputs.json",
+      "sha256": "caa5c688847423773852796fd6766aa684464f3c64ac879a5a4c7b1c88e162f5"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57u-reviews.mjs",
+      "sha256": "720924ca21c3b8c99c24428106127eb3d10571a8aaad3725b46f3aa06f34c7c4"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57t-inputs.json",
+      "sha256": "2b2eec85ae80748f6ed26e152b346774ebabb50c4adfceb0be5f6ea9ae399b2c"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57t-reviews.mjs",
+      "sha256": "87f22c8075743da8ef0604085d816eee2f113e2aaebc75615803b4bd96e64721"
+    },
+    {
+      "path": "src/content/updates/2026-09-14-reference-attribution-57y.json",
+      "sha256": "e9dacdae79838449ba0c156acfc9d187c0e54a119941152bb2e2640a87c202b9"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57x.json",
+      "sha256": "883e2fac41fdf6684a7c4bf9c4ef0a9bf5c68e1f4ed6e8b86fb31a0f3c084e85"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57w.json",
+      "sha256": "23b04e6d864b9a26a3701804de8d611fd8d6f91f90e6f53895eb458c438c26c9"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57v.json",
+      "sha256": "41de863c454da521d012715586bb4a1e38d148aec6340f8126dfd53769d3fca0"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57u.json",
+      "sha256": "facd3393fc901783b086f59a32afb370fe41dce35c635bf5fed5556785ef31b0"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57t.json",
+      "sha256": "d6dc337e431859d41930119ce4fa5904e1d70bed31041b3a06379fd768e7b468"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57rs-inputs.json",
+      "sha256": "d6b4febd5ca313287d6eee2507ae378eae0ff2951b6809f6c2350147e1f5089d"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57rs-reviews.mjs",
+      "sha256": "10f9d9b16993da3f2f873a1ffcfa25db41f1184d732e44baf9035e22b350b075"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57s.json",
+      "sha256": "26913dc9625c5318f9ffd44cff046412d42582225951a0dc9794ec7a8e5e073e"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57r.json",
+      "sha256": "b53e41d11b987edfc18321c2d3fc0c6561dd17d0d0f03265e6648a2a9c50f151"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57pq-inputs.json",
+      "sha256": "213313ce1afd3b76bc1b79a49250890087926e21eecf1d1311a8d9f80a6f3bdf"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57pq-reviews.mjs",
+      "sha256": "eb36087df69242fef0c10a4d593f26e057d13eeb5f6e4d6411c5ece6f8c0e9df"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57q.json",
+      "sha256": "8659cc4574e4dac1601f1d9c9f9cd6b84416211764494cfddea96327c474fc50"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57p.json",
+      "sha256": "ef8fa6f81466133a423e99f3f6078c5f0216c9f75590b6155c7debfc01c2bd0b"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57no-inputs.json",
+      "sha256": "6f49cd8fa084e720309061d0153bf7cd7ac224b0e535f4b38cd9e1928532c5e9"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57no-reviews.mjs",
+      "sha256": "f7112f72938db25bfbcecf1d5cc0f90dca4de2c19ea04f8c7ee705300c1dc737"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57o.json",
+      "sha256": "9f4f38e3ced99047b4b58f11183b58907601175a3bd97189886628ca07b3764d"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57n.json",
+      "sha256": "c0c587e7b3b4bc4a69433ba0184468d870d67750e328a83195a1e0f1e2c2cc16"
+    }
+  ],
+  "supporting_definition_pins": [
+    {
+      "path": "src/data/phase-57m-source-schema-adapters.json",
+      "sha256": "aea76e9d3469c636b6444550b0d334d05c434999b0ee37a0c676cd189186f310"
+    },
+    {
+      "path": "src/data/phase-57m-candidate-evidence-packet-templates.json",
+      "sha256": "844c2f661292b7254962a0baf17d38810cae465f1c0b7ff2ec2b66a8307ab812"
+    },
+    {
+      "path": "src/data/phase-57m-human-review-decision-tables.json",
+      "sha256": "38f923b0f1eff8755ef85d6bf4e96e78ce885ea90dc3226191031122be352478"
+    }
+  ],
+  "current_evidence_hash": "a499d9fd1d00e9516adf247683e2540ba13f53aa7cd91f7606be5599601d0685"
+}

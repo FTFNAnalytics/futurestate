@@ -1,0 +1,1058 @@
+{
+  "schema_version": "1.0",
+  "phase": 200,
+  "program_id": "FTFN-PHASE-200",
+  "dataset": "phase_200_cross_system_constraint_monographs",
+  "title": "Cross-System Constraint Monographs",
+  "effective_date": "2026-09-01",
+  "record_status": "Prepared content — public release not authorized",
+  "build_status": "Complete locally",
+  "summary": "Publish twelve substantial, source-bound monographs that make recurring conversion chains legible without normalizing unlike measures or manufacturing causal findings.",
+  "record_scope": "Phase 197–204 definitive public-reference edition candidate layer.",
+  "publication_boundaries": [
+    "This is an append-only definitive-edition layer over the existing governed corpus; it does not rewrite an upstream evidence decision, project stage, place state, receipt, or validation baseline.",
+    "Research targets, casebook classifications, outcome panels, translations, expert review, repository publication, hosting, DNS, public launch, and v1 promotion remain distinct decisions.",
+    "A source-bound context statement is not a compatible longitudinal observation. Outcome values remain null unless entity, period, measure, method, denominator, revision lineage, and receiving authority all pass a dated admission decision.",
+    "No missing artifact is treated as nonexistent; no delay, failure, reversal, cause, correction, distributional effect, affordability result, service-quality result, score, rank, or causal finding is invented."
+  ],
+  "routes": {
+    "hub": "/review/v1reference/cross-system-constraint-monographs/",
+    "public_export": "/data/phase-200-cross-system-constraint-monographs.json"
+  },
+  "counts": {
+    "monographs": 12,
+    "source_context_blocks": 24,
+    "chapter_sections": 60,
+    "source_bindings": 24,
+    "causal_findings": 0,
+    "scores_or_ranks": 0,
+    "outcome_claims": 0
+  },
+  "monographs": [
+    {
+      "monograph_id": "200-MONOGRAPH-01",
+      "slug": "compute-power-water",
+      "title": "Compute, power, and water",
+      "state": "Complete locally — source-bound noncausal synthesis",
+      "governing_question": "How should readers separate announced compute capacity from accepted electric and water service and from recurring operation?",
+      "systems": [
+        "Compute infrastructure",
+        "Electric systems",
+        "Water systems"
+      ],
+      "upstream_packet_ids": [
+        "161-PACKET-001",
+        "161-PACKET-002"
+      ],
+      "source_ids": [
+        "source-161-nerc-ltra-2025",
+        "source-161-lbnl-queued-up-2026"
+      ],
+      "topic_ids": [
+        "topic-energy",
+        "topic-chips-and-compute",
+        "topic-policy-and-standards",
+        "topic-climate"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-003",
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-013",
+        "136-CHRONICLE-014"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-003",
+        "137-LEDGER-012",
+        "137-LEDGER-013",
+        "137-LEDGER-014",
+        "137-LEDGER-015"
+      ],
+      "source_context": [
+        {
+          "packet_id": "161-PACKET-001",
+          "title": "NERC 2025 Long-Term Reliability Assessment",
+          "claim_block_id": "161-PACKET-001-CLAIM-01",
+          "text": "NERC reports that assessment-area summer peak demand is forecast to rise by more than 224 GW from 2025 through 2035 and winter peak demand by about 245 GW. The assessment attributes most projected growth to data centers and distinguishes 71 GW of approved summer-capacity growth from 266 GW of prospective additions.",
+          "source_ids": [
+            "source-161-nerc-ltra-2025"
+          ],
+          "source_semantic_digest": "0904ca616daa5d3da1ef06e31ced7bb7b4866ddcd0c9f7ecbc520612e19438b1"
+        },
+        {
+          "packet_id": "161-PACKET-002",
+          "title": "Queued Up 2026",
+          "claim_block_id": "161-PACKET-002-CLAIM-01",
+          "text": "Berkeley Lab identifies about 8,200 active projects representing 1,312 GW of generation and 749 GW of storage at the end of 2025. About 549 GW had a draft or executed interconnection agreement without commercial operation, and the median request-to-operation time exceeded five years for projects completed in 2025.",
+          "source_ids": [
+            "source-161-lbnl-queued-up-2026"
+          ],
+          "source_semantic_digest": "f8867183ae61efda909df962caabed9e061ed19309e280372a264c5f56a12ba4"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "System question",
+          "text": "How should readers separate announced compute capacity from accepted electric and water service and from recurring operation? The chapter treats each institution, artifact, stage, and receiving party as an independent identity."
+        },
+        {
+          "heading": "What the paired record establishes",
+          "text": "NERC 2025 Long-Term Reliability Assessment and Queued Up 2026 supply two bounded official-source contexts. Their claims remain attached to their original entities, periods, measures, authorities, and limitations."
+        },
+        {
+          "heading": "Conversion chain",
+          "text": "The useful analytical object is the chain across Compute infrastructure, Electric systems, Water systems. Authority, finance, construction, validation, acceptance, operation, distribution, affordability, service quality, and public outcome are not interchangeable states."
+        },
+        {
+          "heading": "Comparison boundary",
+          "text": "The paired sources are not normalized into one denominator, score, rank, trend, or causal estimate. Difference in stage or timing is not evidence that one system produced the state of another."
+        },
+        {
+          "heading": "Research agenda",
+          "text": "Acquire the next receiving-party artifact for each open bridge, preserve revision lineage, and admit a comparison only after entity, period, measure, method, denominator, and authority are compatible."
+        }
+      ],
+      "causal_finding": null,
+      "comparative_score": null,
+      "outcome_claim": null,
+      "stop_rule": "Do not convert adjacency, sequence, shared geography, shared funding, or two source-bound context claims into causation or a common performance measure.",
+      "route": "/review/v1reference/cross-system-constraint-monographs/compute-power-water/"
+    },
+    {
+      "monograph_id": "200-MONOGRAPH-02",
+      "slug": "mining-processing-manufacturing",
+      "title": "Mining, processing, and manufacturing",
+      "state": "Complete locally — source-bound noncausal synthesis",
+      "governing_question": "Which records bridge an identified resource, permitted extraction, qualified processing, accepted manufacturing input, and recurring output?",
+      "systems": [
+        "Resource extraction",
+        "Processing",
+        "Manufacturing"
+      ],
+      "upstream_packet_ids": [
+        "161-PACKET-003",
+        "161-PACKET-004"
+      ],
+      "source_ids": [
+        "source-161-eia-battery-capacity-aug-2026",
+        "source-161-nist-tsmc-investment-july-2026"
+      ],
+      "topic_ids": [
+        "topic-energy",
+        "topic-chips-and-compute",
+        "topic-advanced-manufacturing"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-014",
+        "137-LEDGER-015",
+        "137-LEDGER-005"
+      ],
+      "source_context": [
+        {
+          "packet_id": "161-PACKET-003",
+          "title": "Battery storage capacity averaged 70% annual growth",
+          "claim_block_id": "161-PACKET-003-CLAIM-01",
+          "text": "EIA reports 43.6 GW of operational utility-scale battery nameplate capacity at year-end 2025 and another 8.3 GW added in the first half of 2026, bringing the total near 52 GW. The release identifies Manatee as 409 MW of battery capacity paired with 75 MW of solar capacity.",
+          "source_ids": [
+            "source-161-eia-battery-capacity-aug-2026"
+          ],
+          "source_semantic_digest": "4ae8d0d286f84812dc68dbc3698376158d6527c006db0040f4dcc8849d189aa1"
+        },
+        {
+          "packet_id": "161-PACKET-004",
+          "title": "Commerce announces additional TSMC U.S. investment commitment",
+          "claim_block_id": "161-PACKET-004-CLAIM-01",
+          "text": "Commerce announced an incremental $100 billion TSMC U.S. commitment, bringing announced U.S. investment to $265 billion and twelve proposed leading-edge manufacturing and packaging facilities.",
+          "source_ids": [
+            "source-161-nist-tsmc-investment-july-2026"
+          ],
+          "source_semantic_digest": "a4ae71fcb14179d328eb3e45f0cff1ad70fb808779d063912cd074d7f329d17d"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "System question",
+          "text": "Which records bridge an identified resource, permitted extraction, qualified processing, accepted manufacturing input, and recurring output? The chapter treats each institution, artifact, stage, and receiving party as an independent identity."
+        },
+        {
+          "heading": "What the paired record establishes",
+          "text": "Battery storage capacity averaged 70% annual growth and Commerce announces additional TSMC U.S. investment commitment supply two bounded official-source contexts. Their claims remain attached to their original entities, periods, measures, authorities, and limitations."
+        },
+        {
+          "heading": "Conversion chain",
+          "text": "The useful analytical object is the chain across Resource extraction, Processing, Manufacturing. Authority, finance, construction, validation, acceptance, operation, distribution, affordability, service quality, and public outcome are not interchangeable states."
+        },
+        {
+          "heading": "Comparison boundary",
+          "text": "The paired sources are not normalized into one denominator, score, rank, trend, or causal estimate. Difference in stage or timing is not evidence that one system produced the state of another."
+        },
+        {
+          "heading": "Research agenda",
+          "text": "Acquire the next receiving-party artifact for each open bridge, preserve revision lineage, and admit a comparison only after entity, period, measure, method, denominator, and authority are compatible."
+        }
+      ],
+      "causal_finding": null,
+      "comparative_score": null,
+      "outcome_claim": null,
+      "stop_rule": "Do not convert adjacency, sequence, shared geography, shared funding, or two source-bound context claims into causation or a common performance measure.",
+      "route": "/review/v1reference/cross-system-constraint-monographs/mining-processing-manufacturing/"
+    },
+    {
+      "monograph_id": "200-MONOGRAPH-03",
+      "slug": "infrastructure-access-affordability",
+      "title": "Infrastructure, access, and affordability",
+      "state": "Complete locally — source-bound noncausal synthesis",
+      "governing_question": "When does installed or available infrastructure become service taken at a disclosed price and burden?",
+      "systems": [
+        "Physical infrastructure",
+        "Service access",
+        "Affordability"
+      ],
+      "upstream_packet_ids": [
+        "161-PACKET-005",
+        "161-PACKET-006"
+      ],
+      "source_ids": [
+        "source-161-nist-compute-supply-chain-lois-july-2026",
+        "source-161-lbnl-data-center-energy-usage-2024"
+      ],
+      "topic_ids": [
+        "topic-chips-and-compute",
+        "topic-ai-for-science",
+        "topic-advanced-manufacturing",
+        "topic-energy",
+        "topic-water"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-003"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-003"
+      ],
+      "source_context": [
+        {
+          "packet_id": "161-PACKET-005",
+          "title": "Commerce compute-supply-chain R&D letters of intent",
+          "claim_block_id": "161-PACKET-005-CLAIM-01",
+          "text": "Commerce announced seven letters of intent totaling up to $874 million across photonics, memory, packaging, substrates, materials, provenance, and alternative compute, including proposed amounts of $300 million for GlobalFoundries, $245 million for Kepler, and $140 million for Multibeam.",
+          "source_ids": [
+            "source-161-nist-compute-supply-chain-lois-july-2026"
+          ],
+          "source_semantic_digest": "0584c9d4dd335219a98a4addd3f908e3441def69c6902caadf1a40d6ba1afa4e"
+        },
+        {
+          "packet_id": "161-PACKET-006",
+          "title": "2024 United States Data Center Energy Usage Report",
+          "claim_block_id": "161-PACKET-006-CLAIM-01",
+          "text": "The DOE-requested Berkeley Lab study estimates U.S. data-center electricity use at 176 TWh, or 4.4% of national consumption, in 2023. Its scenario range reaches 325–580 TWh, or 6.7%–12.0%, in 2028.",
+          "source_ids": [
+            "source-161-lbnl-data-center-energy-usage-2024"
+          ],
+          "source_semantic_digest": "042abedcac26b70e35dd7cdcdc3eb54c63a24bbce56075b48b136983894a12a3"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "System question",
+          "text": "When does installed or available infrastructure become service taken at a disclosed price and burden? The chapter treats each institution, artifact, stage, and receiving party as an independent identity."
+        },
+        {
+          "heading": "What the paired record establishes",
+          "text": "Commerce compute-supply-chain R&D letters of intent and 2024 United States Data Center Energy Usage Report supply two bounded official-source contexts. Their claims remain attached to their original entities, periods, measures, authorities, and limitations."
+        },
+        {
+          "heading": "Conversion chain",
+          "text": "The useful analytical object is the chain across Physical infrastructure, Service access, Affordability. Authority, finance, construction, validation, acceptance, operation, distribution, affordability, service quality, and public outcome are not interchangeable states."
+        },
+        {
+          "heading": "Comparison boundary",
+          "text": "The paired sources are not normalized into one denominator, score, rank, trend, or causal estimate. Difference in stage or timing is not evidence that one system produced the state of another."
+        },
+        {
+          "heading": "Research agenda",
+          "text": "Acquire the next receiving-party artifact for each open bridge, preserve revision lineage, and admit a comparison only after entity, period, measure, method, denominator, and authority are compatible."
+        }
+      ],
+      "causal_finding": null,
+      "comparative_score": null,
+      "outcome_claim": null,
+      "stop_rule": "Do not convert adjacency, sequence, shared geography, shared funding, or two source-bound context claims into causation or a common performance measure.",
+      "route": "/review/v1reference/cross-system-constraint-monographs/infrastructure-access-affordability/"
+    },
+    {
+      "monograph_id": "200-MONOGRAPH-04",
+      "slug": "standards-procurement-implementation",
+      "title": "Standards, procurement, and implementation",
+      "state": "Complete locally — source-bound noncausal synthesis",
+      "governing_question": "Which institutional records connect a published standard to contract language, tested implementation, accepted cutover, and retirement of the prior state?",
+      "systems": [
+        "Standards",
+        "Procurement",
+        "Implementation"
+      ],
+      "upstream_packet_ids": [
+        "161-PACKET-007",
+        "161-PACKET-008"
+      ],
+      "source_ids": [
+        "source-161-usbr-colorado-river-2027-decision",
+        "source-161-adwr-phoenix-ama-v3-june-2026"
+      ],
+      "topic_ids": [
+        "topic-water",
+        "topic-climate",
+        "topic-policy-and-standards",
+        "topic-chips-and-compute"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-001"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-005"
+      ],
+      "source_context": [
+        {
+          "packet_id": "161-PACKET-007",
+          "title": "Post-2026 Colorado River operations decision",
+          "claim_block_id": "161-PACKET-007-CLAIM-01",
+          "text": "Reclamation's final framework places the expected start of water year 2027 for Lake Powell between elevations 3,510 and 3,540 feet with an expected release of 6.0–7.0 million acre-feet, while reporting record-low Powell and Mead elevations in August 2026.",
+          "source_ids": [
+            "source-161-usbr-colorado-river-2027-decision"
+          ],
+          "source_semantic_digest": "a4655ea8414a4066c3feacc1e274678149884dc4f286ed25bbfcd8da21929ca6"
+        },
+        {
+          "packet_id": "161-PACKET-008",
+          "title": "Phoenix AMA Version 3 groundwater-model technical memorandum",
+          "claim_block_id": "161-PACKET-008-CLAIM-01",
+          "text": "The Phoenix AMA Version 3 model produces 2,514,500 acre-feet of unmet demand over its 100-year horizon, including 836,500 acre-feet in AWS, municipal, and long-term-storage-credit sectors, and models average annual storage loss of 503,800 acre-feet.",
+          "source_ids": [
+            "source-161-adwr-phoenix-ama-v3-june-2026"
+          ],
+          "source_semantic_digest": "cf3f529d6ae93f248f56410251df8826a5fd35ce48ab97e14ab2092b4ce1de34"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "System question",
+          "text": "Which institutional records connect a published standard to contract language, tested implementation, accepted cutover, and retirement of the prior state? The chapter treats each institution, artifact, stage, and receiving party as an independent identity."
+        },
+        {
+          "heading": "What the paired record establishes",
+          "text": "Post-2026 Colorado River operations decision and Phoenix AMA Version 3 groundwater-model technical memorandum supply two bounded official-source contexts. Their claims remain attached to their original entities, periods, measures, authorities, and limitations."
+        },
+        {
+          "heading": "Conversion chain",
+          "text": "The useful analytical object is the chain across Standards, Procurement, Implementation. Authority, finance, construction, validation, acceptance, operation, distribution, affordability, service quality, and public outcome are not interchangeable states."
+        },
+        {
+          "heading": "Comparison boundary",
+          "text": "The paired sources are not normalized into one denominator, score, rank, trend, or causal estimate. Difference in stage or timing is not evidence that one system produced the state of another."
+        },
+        {
+          "heading": "Research agenda",
+          "text": "Acquire the next receiving-party artifact for each open bridge, preserve revision lineage, and admit a comparison only after entity, period, measure, method, denominator, and authority are compatible."
+        }
+      ],
+      "causal_finding": null,
+      "comparative_score": null,
+      "outcome_claim": null,
+      "stop_rule": "Do not convert adjacency, sequence, shared geography, shared funding, or two source-bound context claims into causation or a common performance measure.",
+      "route": "/review/v1reference/cross-system-constraint-monographs/standards-procurement-implementation/"
+    },
+    {
+      "monograph_id": "200-MONOGRAPH-05",
+      "slug": "instrument-data-decision",
+      "title": "Research instruments, data, and decisions",
+      "state": "Complete locally — source-bound noncausal synthesis",
+      "governing_question": "Which calibration, product, workflow, adoption, and decision records connect instrument availability to a bounded research or public-use result?",
+      "systems": [
+        "Instruments",
+        "Data products",
+        "Decision workflows"
+      ],
+      "upstream_packet_ids": [
+        "161-PACKET-009",
+        "161-PACKET-010"
+      ],
+      "source_ids": [
+        "source-161-epa-wifia-2025-annual-report",
+        "source-161-nhtsa-road-fatalities-2025-estimate"
+      ],
+      "topic_ids": [
+        "topic-water",
+        "topic-finance-and-risk",
+        "topic-policy-and-standards",
+        "topic-mobility",
+        "topic-human-futures"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-008"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-006"
+      ],
+      "source_context": [
+        {
+          "packet_id": "161-PACKET-009",
+          "title": "WIFIA 2025 Annual Report",
+          "claim_block_id": "161-PACKET-009-CLAIM-01",
+          "text": "EPA reports that WIFIA closed $900 million in loans supporting $1.8 billion of projects during 2025 and made 333 disbursements totaling nearly $3.7 billion. Through December 2025 it reports 147 closed loans and $22 billion of financing associated with $49 billion of infrastructure investment.",
+          "source_ids": [
+            "source-161-epa-wifia-2025-annual-report"
+          ],
+          "source_semantic_digest": "ff7460a741c484a88ee1743a7c2107b7e62b159ee2085e6c1b7c57666870d96d"
+        },
+        {
+          "packet_id": "161-PACKET-010",
+          "title": "Early estimate of 2025 motor-vehicle traffic fatalities",
+          "claim_block_id": "161-PACKET-010-CLAIM-01",
+          "text": "NHTSA estimated 36,640 traffic fatalities in 2025, 6.7% below 2024, with a rate of 1.10 fatalities per 100 million vehicle-miles traveled.",
+          "source_ids": [
+            "source-161-nhtsa-road-fatalities-2025-estimate"
+          ],
+          "source_semantic_digest": "a587333ce607a56beafca9e59a7c44d4eba5c0811497d6fa4653c849daf5d96b"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "System question",
+          "text": "Which calibration, product, workflow, adoption, and decision records connect instrument availability to a bounded research or public-use result? The chapter treats each institution, artifact, stage, and receiving party as an independent identity."
+        },
+        {
+          "heading": "What the paired record establishes",
+          "text": "WIFIA 2025 Annual Report and Early estimate of 2025 motor-vehicle traffic fatalities supply two bounded official-source contexts. Their claims remain attached to their original entities, periods, measures, authorities, and limitations."
+        },
+        {
+          "heading": "Conversion chain",
+          "text": "The useful analytical object is the chain across Instruments, Data products, Decision workflows. Authority, finance, construction, validation, acceptance, operation, distribution, affordability, service quality, and public outcome are not interchangeable states."
+        },
+        {
+          "heading": "Comparison boundary",
+          "text": "The paired sources are not normalized into one denominator, score, rank, trend, or causal estimate. Difference in stage or timing is not evidence that one system produced the state of another."
+        },
+        {
+          "heading": "Research agenda",
+          "text": "Acquire the next receiving-party artifact for each open bridge, preserve revision lineage, and admit a comparison only after entity, period, measure, method, denominator, and authority are compatible."
+        }
+      ],
+      "causal_finding": null,
+      "comparative_score": null,
+      "outcome_claim": null,
+      "stop_rule": "Do not convert adjacency, sequence, shared geography, shared funding, or two source-bound context claims into causation or a common performance measure.",
+      "route": "/review/v1reference/cross-system-constraint-monographs/instrument-data-decision/"
+    },
+    {
+      "monograph_id": "200-MONOGRAPH-06",
+      "slug": "land-permits-construction-operation",
+      "title": "Land, permits, construction, and operation",
+      "state": "Complete locally — source-bound noncausal synthesis",
+      "governing_question": "Which independent approvals and receiving-party records distinguish site control from lawful construction, acceptance, and operation?",
+      "systems": [
+        "Land",
+        "Permitting",
+        "Construction",
+        "Operation"
+      ],
+      "upstream_packet_ids": [
+        "161-PACKET-011",
+        "161-PACKET-012"
+      ],
+      "source_ids": [
+        "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028",
+        "source-161-amtrak-fy2025-ridership"
+      ],
+      "topic_ids": [
+        "topic-aviation",
+        "topic-human-futures",
+        "topic-mobility"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-004",
+        "136-CHRONICLE-021"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001",
+        "137-LEDGER-010"
+      ],
+      "source_context": [
+        {
+          "packet_id": "161-PACKET-011",
+          "title": "Air Traffic Controller Workforce Plan 2026–2028",
+          "claim_block_id": "161-PACKET-011-CLAIM-01",
+          "text": "FAA reports 2,028 controller trainees hired in FY2025 against 1,460 total losses, a net gain of 568, and plans 2,200, 2,300, and 2,400 hires for FY2026–2028. It separately reports about 11,000 certified controllers and 4,000 in training against a 12,563-controller target.",
+          "source_ids": [
+            "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028"
+          ],
+          "source_semantic_digest": "01644b4062b07d156f8b6154a5bd2390b28ed7dceb2e843cfb395062cf031504"
+        },
+        {
+          "packet_id": "161-PACKET-012",
+          "title": "Amtrak FY2025 year-end ridership fact sheet",
+          "claim_block_id": "161-PACKET-012-CLAIM-01",
+          "text": "Amtrak reports 34,467,598 trips in FY2025, 5.1% above FY2024, with Northeast Corridor trips up 8.1%, state-supported trips up 2.4%, and long-distance trips up 4.2%.",
+          "source_ids": [
+            "source-161-amtrak-fy2025-ridership"
+          ],
+          "source_semantic_digest": "32bae3c60a47346d1e5b01c796807ab2b4e7722b22c4fb766975e1e329647da3"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "System question",
+          "text": "Which independent approvals and receiving-party records distinguish site control from lawful construction, acceptance, and operation? The chapter treats each institution, artifact, stage, and receiving party as an independent identity."
+        },
+        {
+          "heading": "What the paired record establishes",
+          "text": "Air Traffic Controller Workforce Plan 2026–2028 and Amtrak FY2025 year-end ridership fact sheet supply two bounded official-source contexts. Their claims remain attached to their original entities, periods, measures, authorities, and limitations."
+        },
+        {
+          "heading": "Conversion chain",
+          "text": "The useful analytical object is the chain across Land, Permitting, Construction, Operation. Authority, finance, construction, validation, acceptance, operation, distribution, affordability, service quality, and public outcome are not interchangeable states."
+        },
+        {
+          "heading": "Comparison boundary",
+          "text": "The paired sources are not normalized into one denominator, score, rank, trend, or causal estimate. Difference in stage or timing is not evidence that one system produced the state of another."
+        },
+        {
+          "heading": "Research agenda",
+          "text": "Acquire the next receiving-party artifact for each open bridge, preserve revision lineage, and admit a comparison only after entity, period, measure, method, denominator, and authority are compatible."
+        }
+      ],
+      "causal_finding": null,
+      "comparative_score": null,
+      "outcome_claim": null,
+      "stop_rule": "Do not convert adjacency, sequence, shared geography, shared funding, or two source-bound context claims into causation or a common performance measure.",
+      "route": "/review/v1reference/cross-system-constraint-monographs/land-permits-construction-operation/"
+    },
+    {
+      "monograph_id": "200-MONOGRAPH-07",
+      "slug": "workforce-housing-service-capacity",
+      "title": "Workforce, housing, and service capacity",
+      "state": "Complete locally — source-bound noncausal synthesis",
+      "governing_question": "How can a named project be read alongside local labor and service constraints without attributing community outcomes to the project?",
+      "systems": [
+        "Workforce",
+        "Housing",
+        "Public services"
+      ],
+      "upstream_packet_ids": [
+        "161-PACKET-013",
+        "161-PACKET-014"
+      ],
+      "source_ids": [
+        "source-161-noaa-us-climate-2025",
+        "source-161-eia-wind-solar-generation-2025"
+      ],
+      "topic_ids": [
+        "topic-climate",
+        "topic-water",
+        "topic-human-futures",
+        "topic-energy"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-013",
+        "136-CHRONICLE-014"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-002",
+        "137-LEDGER-005",
+        "137-LEDGER-006",
+        "137-LEDGER-015",
+        "137-LEDGER-012",
+        "137-LEDGER-013",
+        "137-LEDGER-014"
+      ],
+      "source_context": [
+        {
+          "packet_id": "161-PACKET-013",
+          "title": "Annual 2025 U.S. climate assessment",
+          "claim_block_id": "161-PACKET-013-CLAIM-01",
+          "text": "NOAA reports that the contiguous United States averaged 54.6°F in 2025, 2.6°F above the twentieth-century average and fourth warmest in the 131-year record. The Climate Extremes Index was 58% above average, and the Southwest recorded its warmest year.",
+          "source_ids": [
+            "source-161-noaa-us-climate-2025"
+          ],
+          "source_semantic_digest": "9a2b3f7bd4ef93bdbdba3f4bee0066adab9ad72bdd9c6ec72334c4c69847585b"
+        },
+        {
+          "packet_id": "161-PACKET-014",
+          "title": "U.S. wind and solar generation in 2025",
+          "claim_block_id": "161-PACKET-014-CLAIM-01",
+          "text": "EIA reports 760,000 GWh of wind and utility-scale solar generation in 2025, 88,000 GWh above 2024 and 17% of total generation. Wind supplied 464,000 GWh and utility-scale solar 296,000 GWh; including small-scale solar raises the joint share to 19%.",
+          "source_ids": [
+            "source-161-eia-wind-solar-generation-2025"
+          ],
+          "source_semantic_digest": "6870e2848e98952971a8fdc6870d8d4ad50c9463589fad4086185748fd920a8e"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "System question",
+          "text": "How can a named project be read alongside local labor and service constraints without attributing community outcomes to the project? The chapter treats each institution, artifact, stage, and receiving party as an independent identity."
+        },
+        {
+          "heading": "What the paired record establishes",
+          "text": "Annual 2025 U.S. climate assessment and U.S. wind and solar generation in 2025 supply two bounded official-source contexts. Their claims remain attached to their original entities, periods, measures, authorities, and limitations."
+        },
+        {
+          "heading": "Conversion chain",
+          "text": "The useful analytical object is the chain across Workforce, Housing, Public services. Authority, finance, construction, validation, acceptance, operation, distribution, affordability, service quality, and public outcome are not interchangeable states."
+        },
+        {
+          "heading": "Comparison boundary",
+          "text": "The paired sources are not normalized into one denominator, score, rank, trend, or causal estimate. Difference in stage or timing is not evidence that one system produced the state of another."
+        },
+        {
+          "heading": "Research agenda",
+          "text": "Acquire the next receiving-party artifact for each open bridge, preserve revision lineage, and admit a comparison only after entity, period, measure, method, denominator, and authority are compatible."
+        }
+      ],
+      "causal_finding": null,
+      "comparative_score": null,
+      "outcome_claim": null,
+      "stop_rule": "Do not convert adjacency, sequence, shared geography, shared funding, or two source-bound context claims into causation or a common performance measure.",
+      "route": "/review/v1reference/cross-system-constraint-monographs/workforce-housing-service-capacity/"
+    },
+    {
+      "monograph_id": "200-MONOGRAPH-08",
+      "slug": "climate-infrastructure-reliability",
+      "title": "Climate exposure and infrastructure reliability",
+      "state": "Complete locally — source-bound noncausal synthesis",
+      "governing_question": "Which hazard, design, incident, restoration, and recurring-service records support a bounded resilience account?",
+      "systems": [
+        "Climate hazards",
+        "Infrastructure",
+        "Reliability"
+      ],
+      "upstream_packet_ids": [
+        "161-PACKET-015",
+        "161-PACKET-016"
+      ],
+      "source_ids": [
+        "source-161-aemo-q1-2026-qed",
+        "source-161-faa-aerospace-forecast-2026-2046"
+      ],
+      "topic_ids": [
+        "topic-energy",
+        "topic-climate",
+        "topic-space",
+        "topic-aviation",
+        "topic-policy-and-standards"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-013",
+        "136-CHRONICLE-014",
+        "136-CHRONICLE-004"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-012",
+        "137-LEDGER-013",
+        "137-LEDGER-001"
+      ],
+      "source_context": [
+        {
+          "packet_id": "161-PACKET-015",
+          "title": "AEMO Quarterly Energy Dynamics Q1 2026",
+          "claim_block_id": "161-PACKET-015-CLAIM-01",
+          "text": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in Q1 2026, a first-quarter record, with underlying demand at 25,496 MW. South Australia's renewable-and-storage contribution peaked at 98.8% during one half-hour on January 31.",
+          "source_ids": [
+            "source-161-aemo-q1-2026-qed"
+          ],
+          "source_semantic_digest": "e9ab05a9f10da3dbdb18f4424774d9bdebdafbd6f61dd6cb5e596f27bfd11d36"
+        },
+        {
+          "packet_id": "161-PACKET-016",
+          "title": "FAA Aerospace Forecast FY 2026–2046",
+          "claim_block_id": "161-PACKET-016-CLAIM-01",
+          "text": "FAA records 195 licensed launches by six operators in FY2025, including 161 by SpaceX, with 76 at Cape Canaveral, 61 at Vandenberg, and 26 at Kennedy. It separately records nine licensed reentries and eight licensed operations resulting in mishaps.",
+          "source_ids": [
+            "source-161-faa-aerospace-forecast-2026-2046"
+          ],
+          "source_semantic_digest": "27bd9f90402fdc660e9e40b7d5750859046b26e4e2a822527d9a26f6220c3643"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "System question",
+          "text": "Which hazard, design, incident, restoration, and recurring-service records support a bounded resilience account? The chapter treats each institution, artifact, stage, and receiving party as an independent identity."
+        },
+        {
+          "heading": "What the paired record establishes",
+          "text": "AEMO Quarterly Energy Dynamics Q1 2026 and FAA Aerospace Forecast FY 2026–2046 supply two bounded official-source contexts. Their claims remain attached to their original entities, periods, measures, authorities, and limitations."
+        },
+        {
+          "heading": "Conversion chain",
+          "text": "The useful analytical object is the chain across Climate hazards, Infrastructure, Reliability. Authority, finance, construction, validation, acceptance, operation, distribution, affordability, service quality, and public outcome are not interchangeable states."
+        },
+        {
+          "heading": "Comparison boundary",
+          "text": "The paired sources are not normalized into one denominator, score, rank, trend, or causal estimate. Difference in stage or timing is not evidence that one system produced the state of another."
+        },
+        {
+          "heading": "Research agenda",
+          "text": "Acquire the next receiving-party artifact for each open bridge, preserve revision lineage, and admit a comparison only after entity, period, measure, method, denominator, and authority are compatible."
+        }
+      ],
+      "causal_finding": null,
+      "comparative_score": null,
+      "outcome_claim": null,
+      "stop_rule": "Do not convert adjacency, sequence, shared geography, shared funding, or two source-bound context claims into causation or a common performance measure.",
+      "route": "/review/v1reference/cross-system-constraint-monographs/climate-infrastructure-reliability/"
+    },
+    {
+      "monograph_id": "200-MONOGRAPH-09",
+      "slug": "finance-contracting-acceptance",
+      "title": "Finance, contracting, and acceptance",
+      "state": "Complete locally — source-bound noncausal synthesis",
+      "governing_question": "Which chain separates announced value, appropriated authority, obligation, award, delivery, acceptance, payment, and realized service?",
+      "systems": [
+        "Finance",
+        "Contracting",
+        "Acceptance"
+      ],
+      "upstream_packet_ids": [
+        "161-PACKET-017",
+        "161-PACKET-018"
+      ],
+      "source_ids": [
+        "source-161-space-force-eastern-range-2025",
+        "source-161-nasa-artemis-iii-hardware-aug-2026"
+      ],
+      "topic_ids": [
+        "topic-space",
+        "topic-advanced-manufacturing"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-004"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-001"
+      ],
+      "source_context": [
+        {
+          "packet_id": "161-PACKET-017",
+          "title": "100 Launches and Beyond",
+          "claim_block_id": "161-PACKET-017-CLAIM-01",
+          "text": "U.S. Space Force reports that Cape Canaveral Space Force Station and the Eastern Range hosted 109 orbital launches during 2025.",
+          "source_ids": [
+            "source-161-space-force-eastern-range-2025"
+          ],
+          "source_semantic_digest": "9ff73d9a49ff70b4ba764cd93b6d555f27f7862e129c4f7e2eda837af5851c92"
+        },
+        {
+          "packet_id": "161-PACKET-018",
+          "title": "Artemis III Orion modules and rocket hardware update",
+          "claim_block_id": "161-PACKET-018-CLAIM-01",
+          "text": "NASA reports that all four RS-25 engines had reached Kennedy, booster stacking had begun, and more than 250 Artemis II Orion components were planned for reuse. It also reports almost four months of booster-preparation acceleration and roughly 50% shorter tower turnaround.",
+          "source_ids": [
+            "source-161-nasa-artemis-iii-hardware-aug-2026"
+          ],
+          "source_semantic_digest": "26bceeea8ef679b401d9bc36d975274daa4ca4201b046ff7aae5c08c46780e55"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "System question",
+          "text": "Which chain separates announced value, appropriated authority, obligation, award, delivery, acceptance, payment, and realized service? The chapter treats each institution, artifact, stage, and receiving party as an independent identity."
+        },
+        {
+          "heading": "What the paired record establishes",
+          "text": "100 Launches and Beyond and Artemis III Orion modules and rocket hardware update supply two bounded official-source contexts. Their claims remain attached to their original entities, periods, measures, authorities, and limitations."
+        },
+        {
+          "heading": "Conversion chain",
+          "text": "The useful analytical object is the chain across Finance, Contracting, Acceptance. Authority, finance, construction, validation, acceptance, operation, distribution, affordability, service quality, and public outcome are not interchangeable states."
+        },
+        {
+          "heading": "Comparison boundary",
+          "text": "The paired sources are not normalized into one denominator, score, rank, trend, or causal estimate. Difference in stage or timing is not evidence that one system produced the state of another."
+        },
+        {
+          "heading": "Research agenda",
+          "text": "Acquire the next receiving-party artifact for each open bridge, preserve revision lineage, and admit a comparison only after entity, period, measure, method, denominator, and authority are compatible."
+        }
+      ],
+      "causal_finding": null,
+      "comparative_score": null,
+      "outcome_claim": null,
+      "stop_rule": "Do not convert adjacency, sequence, shared geography, shared funding, or two source-bound context claims into causation or a common performance measure.",
+      "route": "/review/v1reference/cross-system-constraint-monographs/finance-contracting-acceptance/"
+    },
+    {
+      "monograph_id": "200-MONOGRAPH-10",
+      "slug": "safety-incident-correction-restart",
+      "title": "Safety, incident, correction, and restart",
+      "state": "Complete locally — source-bound noncausal synthesis",
+      "governing_question": "Which records establish the incident scope, responsible authority, remedy, validation, restart, and later performance without implying recovery from sequence alone?",
+      "systems": [
+        "Safety",
+        "Corrective action",
+        "Restart"
+      ],
+      "upstream_packet_ids": [
+        "161-PACKET-019",
+        "161-PACKET-020"
+      ],
+      "source_ids": [
+        "source-usgs-mineral-commodity-summaries",
+        "source-doe-thacker-pass-loan-2024"
+      ],
+      "topic_ids": [
+        "topic-critical-minerals",
+        "topic-advanced-manufacturing",
+        "topic-finance-and-risk"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-005"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-002"
+      ],
+      "source_context": [
+        {
+          "packet_id": "161-PACKET-019",
+          "title": "Mineral Commodity Summaries 2026",
+          "claim_block_id": "161-PACKET-019-CLAIM-01",
+          "text": "USGS values U.S. nonfuel mineral production at $112 billion in 2025 and mineral-reliant industries at $4.09 trillion. It reports thirteen critical minerals at 100% net-import reliance and another twenty at 50% or greater reliance.",
+          "source_ids": [
+            "source-usgs-mineral-commodity-summaries"
+          ],
+          "source_semantic_digest": "b7fe0c708058c5cf0126cff539cb3f102f4b0cf57e02fa01aba5637ada35cbe4"
+        },
+        {
+          "packet_id": "161-PACKET-020",
+          "title": "Thacker Pass project financing record",
+          "claim_block_id": "161-PACKET-020-CLAIM-01",
+          "text": "DOE records a $2.26 billion loan, comprising $1.97 billion principal and $289.7 million capitalized interest, for facilities designed to produce about 40,000 tonnes annually of battery-grade lithium carbonate.",
+          "source_ids": [
+            "source-doe-thacker-pass-loan-2024"
+          ],
+          "source_semantic_digest": "39485cccab9938ece7b140e773ee621e55a7b83319cf9791a5317bbb86a57779"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "System question",
+          "text": "Which records establish the incident scope, responsible authority, remedy, validation, restart, and later performance without implying recovery from sequence alone? The chapter treats each institution, artifact, stage, and receiving party as an independent identity."
+        },
+        {
+          "heading": "What the paired record establishes",
+          "text": "Mineral Commodity Summaries 2026 and Thacker Pass project financing record supply two bounded official-source contexts. Their claims remain attached to their original entities, periods, measures, authorities, and limitations."
+        },
+        {
+          "heading": "Conversion chain",
+          "text": "The useful analytical object is the chain across Safety, Corrective action, Restart. Authority, finance, construction, validation, acceptance, operation, distribution, affordability, service quality, and public outcome are not interchangeable states."
+        },
+        {
+          "heading": "Comparison boundary",
+          "text": "The paired sources are not normalized into one denominator, score, rank, trend, or causal estimate. Difference in stage or timing is not evidence that one system produced the state of another."
+        },
+        {
+          "heading": "Research agenda",
+          "text": "Acquire the next receiving-party artifact for each open bridge, preserve revision lineage, and admit a comparison only after entity, period, measure, method, denominator, and authority are compatible."
+        }
+      ],
+      "causal_finding": null,
+      "comparative_score": null,
+      "outcome_claim": null,
+      "stop_rule": "Do not convert adjacency, sequence, shared geography, shared funding, or two source-bound context claims into causation or a common performance measure.",
+      "route": "/review/v1reference/cross-system-constraint-monographs/safety-incident-correction-restart/"
+    },
+    {
+      "monograph_id": "200-MONOGRAPH-11",
+      "slug": "logistics-supply-recurring-output",
+      "title": "Logistics, supply chains, and recurring output",
+      "state": "Complete locally — source-bound noncausal synthesis",
+      "governing_question": "Which supplier, shipment, inventory, qualification, receiving, and repeated-output records reveal conversion beyond a capacity announcement?",
+      "systems": [
+        "Logistics",
+        "Supply chain",
+        "Recurring output"
+      ],
+      "upstream_packet_ids": [
+        "161-PACKET-021",
+        "161-PACKET-022"
+      ],
+      "source_ids": [
+        "source-161-nist-usa-rare-earth-june-2026",
+        "source-161-nist-aite-july-2026"
+      ],
+      "topic_ids": [
+        "topic-critical-minerals",
+        "topic-advanced-manufacturing",
+        "topic-chips-and-compute",
+        "topic-ai-for-science",
+        "topic-discovery-technologies",
+        "topic-policy-and-standards"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-007"
+      ],
+      "place_ledger_ids": [
+        "137-LEDGER-002"
+      ],
+      "source_context": [
+        {
+          "packet_id": "161-PACKET-021",
+          "title": "Commerce definitive agreement with USA Rare Earth",
+          "claim_block_id": "161-PACKET-021-CLAIM-01",
+          "text": "Commerce describes up to $277 million in incentives and up to $1.3 billion in lending for a proposed multi-site system targeting 10,000 tons annually of rare-earth metals and alloys and 10,000 tons annually of NdFeB magnets.",
+          "source_ids": [
+            "source-161-nist-usa-rare-earth-june-2026"
+          ],
+          "source_semantic_digest": "d9182e017f639d8e5f3a0edb92586668a641830ef723dd0d281b26dde3c82fb9"
+        },
+        {
+          "packet_id": "161-PACKET-022",
+          "title": "NIST Artificial Intelligence Technology Evaluation launch",
+          "claim_block_id": "161-PACKET-022-CLAIM-01",
+          "text": "NIST launched a blind, sequestered evaluation environment with three initial vision-language-model tasks covering quantum science, genomics, and public safety, using common data, metrics, and scoring across provider tracks.",
+          "source_ids": [
+            "source-161-nist-aite-july-2026"
+          ],
+          "source_semantic_digest": "371ac666b01392bbffe5c073e3af62220ec915eebdc0934fde7e49b63b73449b"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "System question",
+          "text": "Which supplier, shipment, inventory, qualification, receiving, and repeated-output records reveal conversion beyond a capacity announcement? The chapter treats each institution, artifact, stage, and receiving party as an independent identity."
+        },
+        {
+          "heading": "What the paired record establishes",
+          "text": "Commerce definitive agreement with USA Rare Earth and NIST Artificial Intelligence Technology Evaluation launch supply two bounded official-source contexts. Their claims remain attached to their original entities, periods, measures, authorities, and limitations."
+        },
+        {
+          "heading": "Conversion chain",
+          "text": "The useful analytical object is the chain across Logistics, Supply chain, Recurring output. Authority, finance, construction, validation, acceptance, operation, distribution, affordability, service quality, and public outcome are not interchangeable states."
+        },
+        {
+          "heading": "Comparison boundary",
+          "text": "The paired sources are not normalized into one denominator, score, rank, trend, or causal estimate. Difference in stage or timing is not evidence that one system produced the state of another."
+        },
+        {
+          "heading": "Research agenda",
+          "text": "Acquire the next receiving-party artifact for each open bridge, preserve revision lineage, and admit a comparison only after entity, period, measure, method, denominator, and authority are compatible."
+        }
+      ],
+      "causal_finding": null,
+      "comparative_score": null,
+      "outcome_claim": null,
+      "stop_rule": "Do not convert adjacency, sequence, shared geography, shared funding, or two source-bound context claims into causation or a common performance measure.",
+      "route": "/review/v1reference/cross-system-constraint-monographs/logistics-supply-recurring-output/"
+    },
+    {
+      "monograph_id": "200-MONOGRAPH-12",
+      "slug": "public-authority-private-delivery",
+      "title": "Public authority, private delivery, and public outcomes",
+      "state": "Complete locally — source-bound noncausal synthesis",
+      "governing_question": "Which records preserve the separate roles of rulemaker, funder, implementer, receiver, evaluator, and affected public?",
+      "systems": [
+        "Public authority",
+        "Private delivery",
+        "Public outcomes"
+      ],
+      "upstream_packet_ids": [
+        "161-PACKET-023",
+        "161-PACKET-024"
+      ],
+      "source_ids": [
+        "source-161-nist-quantum-lois-may-2026",
+        "source-161-fbi-ic3-2025-report"
+      ],
+      "topic_ids": [
+        "topic-quantum",
+        "topic-chips-and-compute",
+        "topic-advanced-manufacturing",
+        "topic-cybersecurity",
+        "topic-human-futures",
+        "topic-finance-and-risk"
+      ],
+      "project_chronicle_ids": [
+        "136-CHRONICLE-006"
+      ],
+      "place_ledger_ids": [],
+      "source_context": [
+        {
+          "packet_id": "161-PACKET-023",
+          "title": "Commerce quantum letters of intent",
+          "claim_block_id": "161-PACKET-023-CLAIM-01",
+          "text": "Commerce announced nine quantum letters of intent totaling $2.013 billion, including proposed foundry amounts of $375 million for GlobalFoundries and $1 billion for IBM alongside seven modality-specific companies.",
+          "source_ids": [
+            "source-161-nist-quantum-lois-may-2026"
+          ],
+          "source_semantic_digest": "fc183f5c512eef3f581758f18f252099afd40740e00ab933b6d5623713702ccf"
+        },
+        {
+          "packet_id": "161-PACKET-024",
+          "title": "FBI 2025 Internet Crime Report",
+          "claim_block_id": "161-PACKET-024-CLAIM-01",
+          "text": "The FBI reports 1,008,597 IC3 complaints with nearly $21 billion in reported losses during 2025. Cyber-enabled fraud accounted for 452,868 complaints and $17.697 billion, while people over 60 reported about $7.7 billion in losses.",
+          "source_ids": [
+            "source-161-fbi-ic3-2025-report"
+          ],
+          "source_semantic_digest": "1adf7baf61138115260525226de41fe028155c268e1cbb084c90378c83251ea5"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "System question",
+          "text": "Which records preserve the separate roles of rulemaker, funder, implementer, receiver, evaluator, and affected public? The chapter treats each institution, artifact, stage, and receiving party as an independent identity."
+        },
+        {
+          "heading": "What the paired record establishes",
+          "text": "Commerce quantum letters of intent and FBI 2025 Internet Crime Report supply two bounded official-source contexts. Their claims remain attached to their original entities, periods, measures, authorities, and limitations."
+        },
+        {
+          "heading": "Conversion chain",
+          "text": "The useful analytical object is the chain across Public authority, Private delivery, Public outcomes. Authority, finance, construction, validation, acceptance, operation, distribution, affordability, service quality, and public outcome are not interchangeable states."
+        },
+        {
+          "heading": "Comparison boundary",
+          "text": "The paired sources are not normalized into one denominator, score, rank, trend, or causal estimate. Difference in stage or timing is not evidence that one system produced the state of another."
+        },
+        {
+          "heading": "Research agenda",
+          "text": "Acquire the next receiving-party artifact for each open bridge, preserve revision lineage, and admit a comparison only after entity, period, measure, method, denominator, and authority are compatible."
+        }
+      ],
+      "causal_finding": null,
+      "comparative_score": null,
+      "outcome_claim": null,
+      "stop_rule": "Do not convert adjacency, sequence, shared geography, shared funding, or two source-bound context claims into causation or a common performance measure.",
+      "route": "/review/v1reference/cross-system-constraint-monographs/public-authority-private-delivery/"
+    }
+  ],
+  "public_html_routes": [
+    "/review/v1reference/cross-system-constraint-monographs/",
+    "/review/v1reference/cross-system-constraint-monographs/compute-power-water/",
+    "/review/v1reference/cross-system-constraint-monographs/mining-processing-manufacturing/",
+    "/review/v1reference/cross-system-constraint-monographs/infrastructure-access-affordability/",
+    "/review/v1reference/cross-system-constraint-monographs/standards-procurement-implementation/",
+    "/review/v1reference/cross-system-constraint-monographs/instrument-data-decision/",
+    "/review/v1reference/cross-system-constraint-monographs/land-permits-construction-operation/",
+    "/review/v1reference/cross-system-constraint-monographs/workforce-housing-service-capacity/",
+    "/review/v1reference/cross-system-constraint-monographs/climate-infrastructure-reliability/",
+    "/review/v1reference/cross-system-constraint-monographs/finance-contracting-acceptance/",
+    "/review/v1reference/cross-system-constraint-monographs/safety-incident-correction-restart/",
+    "/review/v1reference/cross-system-constraint-monographs/logistics-supply-recurring-output/",
+    "/review/v1reference/cross-system-constraint-monographs/public-authority-private-delivery/"
+  ],
+  "public_json_exports": [
+    "/data/phase-200-cross-system-constraint-monographs.json"
+  ]
+}

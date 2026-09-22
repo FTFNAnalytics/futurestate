@@ -1,0 +1,14 @@
+---
+import PagedShelf from '../review/PagedShelf.astro';
+import {getShelfCatalog} from '../../lib/shelf-catalog';
+import {atlasShelfKey} from '../../lib/atlas-shelf-relations.mjs';
+interface Props {kind:'source'|'organization'|'technology'|'gap'|'map';id:string;}
+const {kind,id}=Astro.props;
+const shelf=atlasShelfKey(kind,id),records=(await getShelfCatalog())[shelf];
+if(!records)throw new Error(`Missing Atlas relationship archive: ${shelf}`);
+---
+<section class="page-section" data-atlas-relationships={shelf}>
+  <h2>Related records and evidence trail</h2>
+  <p>Browse every linked record by content kind and relationship. An explicit citation, a shared source and a topic match are different connections; none independently proves an outcome. Historical methods and research dockets remain accessible here with their classifications and feed holds.</p>
+  <PagedShelf records={records} kind={shelf} limit={20} headingLevel={3}/>
+</section>

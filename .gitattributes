@@ -1,0 +1,13 @@
+# Evidence receipts and historical comparisons hash exact file bytes. Preserve
+# the validated source on checkout/archive across Windows and Unix, including
+# intentional mixed historical line endings. -text leaves normal diff detection
+# enabled; it disables only automatic line-ending conversion.
+/app/** -text
+/docs/** -text
+/deployment/** -text
+/supabase/** -text
+/README.md -text
+
+# Tooling metadata has a conventional, stable encoding.
+/.gitattributes text eol=lf
+/.gitignore text eol=lf

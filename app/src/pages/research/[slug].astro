@@ -1,4 +1,5 @@
 ---
+import {projectResearchDocument,referenceAttributionUpdateFor} from "../../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../components/layout/BaseLayout.astro";
 import MetaPill from "../../components/ui/MetaPill.astro";
@@ -13,7 +14,7 @@ export async function getStaticPaths() {
 }
 
 const { collection } = Astro.props;
-const allDocuments = await getCollection("researchDocuments");
+const allDocuments = await getCollection("researchDocuments").then(records => records.map(projectResearchDocument));
 const documents = allDocuments
   .filter((document) => collection.data.document_ids.includes(document.data.id))
   .sort((a, b) => {
@@ -31,6 +32,8 @@ const originalCaptureCount = documents.filter((document) =>
   document.data.capture_status !== "Official link record"
 ).length;
 const dateFormatter = new Intl.DateTimeFormat("en", { month: "short", day: "numeric", year: "numeric" });
+const attributedCount = documents.filter(document => document.data.editorial_attribution).length;
+const attributionUpdates=[...new Set(documents.map(document=>referenceAttributionUpdateFor(document.data.id)).filter(Boolean))];
 ---
 
 <BaseLayout title={`${collection.data.title} | FTFN`} description={collection.data.summary}>
@@ -41,7 +44,7 @@ const dateFormatter = new Intl.DateTimeFormat("en", { month: "short", day: "nume
       <p class="lede">{collection.data.summary}</p>
       <p>{collection.data.scope}</p>
       <div class="button-row">
-        <a class="button" href={collection.data.download_path} download>Download all files</a>
+        <a class="button" href={collection.data.download_path} download>{attributedCount ? 'Download historical archive — uncorrected labels' : 'Download all files'}</a>
         <a class="button button--secondary" href="/research/">All collections</a>
       </div>
     </div>
@@ -61,17 +64,18 @@ const dateFormatter = new Intl.DateTimeFormat("en", { month: "short", day: "nume
       </div>
       <div class="metric">
         <strong>{new Set(documents.map((document) => document.data.publisher)).size}</strong>
-        <span>publishers</span>
+        <span>record publisher labels</span>
       </div>
     </div>
   </section>
 
+  {attributedCount > 0 && <section class="page-section" data-attribution-collection={collection.data.id}><h2>Current attribution corrections</h2><p>{attributedCount} records in this collection have been reviewed for FTFN authorship and content type. Cards and individual corrected link-file downloads use the current attribution; the original ZIP remains a historical snapshot with uncorrected labels. This review does not refresh its test results, source links or operating holds.</p>{attributionUpdates.map(id=><p><a href={`/updates/${id}/`}>Read the dated correction</a></p>)}</section>}
   <section class="page-section two-column-section">
     <article class="record-card">
       <div class="eyebrow">Download Manifest</div>
       <h2>One bundle, with capture status recorded.</h2>
       <p>{collection.data.download_note}</p>
-      <a class="inline-link" href={collection.data.download_path} download>Download ZIP archive</a>
+      <a class="inline-link" href={collection.data.download_path} download>{attributedCount ? 'Download historical ZIP — uncorrected labels' : 'Download ZIP archive'}</a>
     </article>
     <article class="record-card">
       <div class="eyebrow">Method</div>
@@ -99,7 +103,7 @@ const dateFormatter = new Intl.DateTimeFormat("en", { month: "short", day: "nume
     <div class="section-heading">
       <div>
         <div class="eyebrow">Document Summaries</div>
-        <h2>{documents.length} primary records.</h2>
+        <h2>{documents.length} document records.</h2>
       </div>
     </div>
     <div class="grid">

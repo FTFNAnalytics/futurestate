@@ -1,0 +1,2404 @@
+{
+  "schema_version": "1.0",
+  "phase": 177,
+  "program_id": "FTFN-PHASE-177",
+  "dataset": "phase_177_october_stack_watch_and_source_currency_sweep",
+  "title": "October Stack Watch and Source-Currency Sweep",
+  "effective_date": "2026-09-01",
+  "record_status": "Prepared",
+  "build_status": "Complete locally — October operations not run",
+  "summary": "Reference twenty-four immutable Phase 161 packets and add eight current official-source packets across eight lanes, preserving ninety-six bounded claim identities while leaving every October recheck and finding null.",
+  "record_scope": "Append-only Phase 177 source-watch preparation over immutable Phase 156, 164, and 172 validation receipts.",
+  "publication_boundary": "September 1 preparation only. All October rechecks and findings remain null until their lawful dates.",
+  "publication_boundaries": [
+    "September 1 preparation only. All October rechecks and findings remain null until their lawful dates.",
+    "The twenty-four inherited packets are referenced by stable packet and claim IDs; their claim text is not duplicated or relabeled as newly checked.",
+    "A forecast, selection, draft, demonstration, award, or milestone is not an observed outcome, accepted service, or causal finding."
+  ],
+  "routes": {
+    "hub": "/review/v1oct/october-stack-watch/",
+    "public_export": "/data/phase-177-october-stack-watch-and-source-currency-sweep.json"
+  },
+  "counts": {
+    "packets": 32,
+    "referenced_phase_161_packets": 24,
+    "new_prepared_packets": 8,
+    "lanes": 8,
+    "referenced_claim_blocks": 72,
+    "new_claim_blocks": 24,
+    "total_claim_block_references": 96
+  },
+  "packets": [
+    {
+      "phase_177_packet_id": "177-PACKET-001",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Power and grid",
+      "title": "NERC 2025 Long-Term Reliability Assessment",
+      "referenced_phase_161_packet_id": "161-PACKET-001",
+      "referenced_claim_block_ids": [
+        "161-PACKET-001-CLAIM-01",
+        "161-PACKET-001-CLAIM-02",
+        "161-PACKET-001-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-nerc-ltra-2025"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-02-24",
+        "data_through": "Mid-2025 planner submissions",
+        "evidence_type": "Planner forecast and adequacy assessment",
+        "publisher": "North American Electric Reliability Corporation",
+        "official_url": "https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf",
+        "source_semantic_digest": "0904ca616daa5d3da1ef06e31ced7bb7b4866ddcd0c9f7ecbc520612e19438b1",
+        "topic_ids": [
+          "topic-energy",
+          "topic-chips-and-compute",
+          "topic-policy-and-standards"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-003"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-003"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/north-american-peak-demand-forecast-2025-ltra/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this planner forecast and adequacy assessment.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-nerc-ltra-2025"
+        ],
+        "topic_ids": [
+          "topic-energy",
+          "topic-chips-and-compute",
+          "topic-policy-and-standards"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-003"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-003"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+          "146-ALT-TSMC-SEC-20F-2025"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps planner forecast and adequacy assessment issued by North American Electric Reliability Corporation in the Power and grid lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/north-american-peak-demand-forecast-2025-ltra/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-05",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/north-american-peak-demand-forecast-2025-ltra/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-002",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Power and grid",
+      "title": "Queued Up 2026",
+      "referenced_phase_161_packet_id": "161-PACKET-002",
+      "referenced_claim_block_ids": [
+        "161-PACKET-002-CLAIM-01",
+        "161-PACKET-002-CLAIM-02",
+        "161-PACKET-002-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-lbnl-queued-up-2026"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-06",
+        "data_through": "2025-12-31",
+        "evidence_type": "Official laboratory queue dataset and report",
+        "publisher": "Lawrence Berkeley National Laboratory",
+        "official_url": "https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+        "source_semantic_digest": "f8867183ae61efda909df962caabed9e061ed19309e280372a264c5f56a12ba4",
+        "topic_ids": [
+          "topic-energy",
+          "topic-climate"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-009",
+          "136-CHRONICLE-010",
+          "136-CHRONICLE-011",
+          "136-CHRONICLE-012",
+          "136-CHRONICLE-013",
+          "136-CHRONICLE-014"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-012",
+          "137-LEDGER-013",
+          "137-LEDGER-014",
+          "137-LEDGER-015"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/us-interconnection-queue-snapshot-2026/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official laboratory queue dataset and report.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-lbnl-queued-up-2026"
+        ],
+        "topic_ids": [
+          "topic-energy",
+          "topic-climate"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-009",
+          "136-CHRONICLE-010",
+          "136-CHRONICLE-011",
+          "136-CHRONICLE-012",
+          "136-CHRONICLE-013",
+          "136-CHRONICLE-014"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-012",
+          "137-LEDGER-013",
+          "137-LEDGER-014",
+          "137-LEDGER-015"
+        ],
+        "alternative_candidate_ids": []
+      },
+      "reader_bridge": "This reference-only wrapper keeps official laboratory queue dataset and report issued by Lawrence Berkeley National Laboratory in the Power and grid lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/us-interconnection-queue-snapshot-2026/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-05",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/us-interconnection-queue-snapshot-2026/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-003",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Power and grid",
+      "title": "Battery storage capacity averaged 70% annual growth",
+      "referenced_phase_161_packet_id": "161-PACKET-003",
+      "referenced_claim_block_ids": [
+        "161-PACKET-003-CLAIM-01",
+        "161-PACKET-003-CLAIM-02",
+        "161-PACKET-003-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-eia-battery-capacity-aug-2026"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-08-07",
+        "data_through": "2026-06-30",
+        "evidence_type": "Observed nameplate-capacity summary plus planned additions",
+        "publisher": "U.S. Energy Information Administration",
+        "official_url": "https://www.eia.gov/todayinenergy/detail.php?id=67925",
+        "source_semantic_digest": "4ae8d0d286f84812dc68dbc3698376158d6527c006db0040f4dcc8849d189aa1",
+        "topic_ids": [
+          "topic-energy"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-009",
+          "136-CHRONICLE-010",
+          "136-CHRONICLE-011"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-014",
+          "137-LEDGER-015"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/us-battery-capacity-june-2026/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this observed nameplate-capacity summary plus planned additions.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-eia-battery-capacity-aug-2026"
+        ],
+        "topic_ids": [
+          "topic-energy"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-009",
+          "136-CHRONICLE-010",
+          "136-CHRONICLE-011"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-014",
+          "137-LEDGER-015"
+        ],
+        "alternative_candidate_ids": []
+      },
+      "reader_bridge": "This reference-only wrapper keeps observed nameplate-capacity summary plus planned additions issued by U.S. Energy Information Administration in the Power and grid lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/us-battery-capacity-june-2026/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-05",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/us-battery-capacity-june-2026/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-004",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Chips and compute",
+      "title": "Commerce announces additional TSMC U.S. investment commitment",
+      "referenced_phase_161_packet_id": "161-PACKET-004",
+      "referenced_claim_block_ids": [
+        "161-PACKET-004-CLAIM-01",
+        "161-PACKET-004-CLAIM-02",
+        "161-PACKET-004-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-nist-tsmc-investment-july-2026"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-07-16",
+        "data_through": "2026-07-16",
+        "evidence_type": "Government announcement of company commitment",
+        "publisher": "National Institute of Standards and Technology",
+        "official_url": "https://www.nist.gov/news-events/news/2026/07/trump-administration-secures-additional-100-billion-us-semiconductor",
+        "source_semantic_digest": "a4ae71fcb14179d328eb3e45f0cff1ad70fb808779d063912cd074d7f329d17d",
+        "topic_ids": [
+          "topic-chips-and-compute",
+          "topic-advanced-manufacturing"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-001"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-005"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/tsmc-us-investment-announcement-july-2026/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this government announcement of company commitment.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-nist-tsmc-investment-july-2026"
+        ],
+        "topic_ids": [
+          "topic-chips-and-compute",
+          "topic-advanced-manufacturing"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-001"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-005"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+          "146-ALT-TSMC-SEC-20F-2025",
+          "146-ALT-GAO-F15EX-2025",
+          "146-ALT-NIST-MEP-AMPHENOL-2025",
+          "146-ALT-NIST-MEP-FY2024-RESULTS"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps government announcement of company commitment issued by National Institute of Standards and Technology in the Chips and compute lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/tsmc-us-investment-announcement-july-2026/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-07",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/tsmc-us-investment-announcement-july-2026/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-005",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Chips and compute",
+      "title": "Commerce compute-supply-chain R&D letters of intent",
+      "referenced_phase_161_packet_id": "161-PACKET-005",
+      "referenced_claim_block_ids": [
+        "161-PACKET-005-CLAIM-01",
+        "161-PACKET-005-CLAIM-02",
+        "161-PACKET-005-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-nist-compute-supply-chain-lois-july-2026"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-07-29",
+        "data_through": "2026-07-29",
+        "evidence_type": "Non-final funding letters of intent",
+        "publisher": "National Institute of Standards and Technology",
+        "official_url": "https://www.nist.gov/news-events/news/2026/07/department-commerce-announces-letters-intent-7-companies-874-million",
+        "source_semantic_digest": "0584c9d4dd335219a98a4addd3f908e3441def69c6902caadf1a40d6ba1afa4e",
+        "topic_ids": [
+          "topic-chips-and-compute",
+          "topic-ai-for-science",
+          "topic-advanced-manufacturing"
+        ],
+        "project_chronicle_ids": [],
+        "place_ledger_ids": []
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/compute-supply-chain-rd-lois-july-2026/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this non-final funding letters of intent.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-nist-compute-supply-chain-lois-july-2026"
+        ],
+        "topic_ids": [
+          "topic-chips-and-compute",
+          "topic-ai-for-science",
+          "topic-advanced-manufacturing"
+        ],
+        "project_chronicle_ids": [],
+        "place_ledger_ids": [],
+        "alternative_candidate_ids": [
+          "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+          "146-ALT-TSMC-SEC-20F-2025",
+          "146-ALT-DOE-FY24-PERFORMANCE",
+          "146-ALT-NSF-FY25-PERFORMANCE",
+          "146-ALT-NSF-NAIRR-TWO-YEAR",
+          "146-ALT-GAO-F15EX-2025",
+          "146-ALT-NIST-MEP-AMPHENOL-2025",
+          "146-ALT-NIST-MEP-FY2024-RESULTS"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps non-final funding letters of intent issued by National Institute of Standards and Technology in the Chips and compute lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/compute-supply-chain-rd-lois-july-2026/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-07",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/compute-supply-chain-rd-lois-july-2026/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-006",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Chips and compute",
+      "title": "2024 United States Data Center Energy Usage Report",
+      "referenced_phase_161_packet_id": "161-PACKET-006",
+      "referenced_claim_block_ids": [
+        "161-PACKET-006-CLAIM-01",
+        "161-PACKET-006-CLAIM-02",
+        "161-PACKET-006-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-lbnl-data-center-energy-usage-2024"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2024-12-19",
+        "data_through": "2023 observed; 2028 scenarios",
+        "evidence_type": "National estimate and scenario study",
+        "publisher": "Lawrence Berkeley National Laboratory",
+        "official_url": "https://seta.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report",
+        "source_semantic_digest": "042abedcac26b70e35dd7cdcdc3eb54c63a24bbce56075b48b136983894a12a3",
+        "topic_ids": [
+          "topic-chips-and-compute",
+          "topic-energy",
+          "topic-water"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-003"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-003"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/us-data-center-electricity-use-scenarios/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this national estimate and scenario study.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-lbnl-data-center-energy-usage-2024"
+        ],
+        "topic_ids": [
+          "topic-chips-and-compute",
+          "topic-energy",
+          "topic-water"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-003"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-003"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+          "146-ALT-TSMC-SEC-20F-2025"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps national estimate and scenario study issued by Lawrence Berkeley National Laboratory in the Chips and compute lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/us-data-center-electricity-use-scenarios/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-07",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/us-data-center-electricity-use-scenarios/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-007",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Water",
+      "title": "Post-2026 Colorado River operations decision",
+      "referenced_phase_161_packet_id": "161-PACKET-007",
+      "referenced_claim_block_ids": [
+        "161-PACKET-007-CLAIM-01",
+        "161-PACKET-007-CLAIM-02",
+        "161-PACKET-007-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-usbr-colorado-river-2027-decision"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-08-21",
+        "data_through": "2026-08-21 modeled conditions",
+        "evidence_type": "Federal reservoir operating decision and modeled condition",
+        "publisher": "U.S. Bureau of Reclamation",
+        "official_url": "https://www.usbr.gov/newsroom/news-release/5392",
+        "source_semantic_digest": "a4655ea8414a4066c3feacc1e274678149884dc4f286ed25bbfcd8da21929ca6",
+        "topic_ids": [
+          "topic-water",
+          "topic-climate",
+          "topic-policy-and-standards"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-001"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-005"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/colorado-river-2027-operations-decision/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal reservoir operating decision and modeled condition.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-usbr-colorado-river-2027-decision"
+        ],
+        "topic_ids": [
+          "topic-water",
+          "topic-climate",
+          "topic-policy-and-standards"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-001"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-005"
+        ],
+        "alternative_candidate_ids": []
+      },
+      "reader_bridge": "This reference-only wrapper keeps federal reservoir operating decision and modeled condition issued by U.S. Bureau of Reclamation in the Water lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/colorado-river-2027-operations-decision/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-09",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/colorado-river-2027-operations-decision/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-008",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Water",
+      "title": "Phoenix AMA Version 3 groundwater-model technical memorandum",
+      "referenced_phase_161_packet_id": "161-PACKET-008",
+      "referenced_claim_block_ids": [
+        "161-PACKET-008-CLAIM-01",
+        "161-PACKET-008-CLAIM-02",
+        "161-PACKET-008-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-adwr-phoenix-ama-v3-june-2026"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-06",
+        "data_through": "Observed inputs through 2023; model horizon 2024–2123",
+        "evidence_type": "Regional groundwater model",
+        "publisher": "Arizona Department of Water Resources",
+        "official_url": "https://infoshare.azwater.gov/docushare/dsweb/Get/Document-132975/V3_PhxAMA_Update_Memo.pdf",
+        "source_semantic_digest": "cf3f529d6ae93f248f56410251df8826a5fd35ce48ab97e14ab2092b4ce1de34",
+        "topic_ids": [
+          "topic-water",
+          "topic-chips-and-compute"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-001"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-005"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/phoenix-ama-version-3-groundwater-projection/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this regional groundwater model.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-adwr-phoenix-ama-v3-june-2026"
+        ],
+        "topic_ids": [
+          "topic-water",
+          "topic-chips-and-compute"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-001"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-005"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+          "146-ALT-TSMC-SEC-20F-2025"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps regional groundwater model issued by Arizona Department of Water Resources in the Water lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/phoenix-ama-version-3-groundwater-projection/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-09",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/phoenix-ama-version-3-groundwater-projection/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-009",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Water",
+      "title": "WIFIA 2025 Annual Report",
+      "referenced_phase_161_packet_id": "161-PACKET-009",
+      "referenced_claim_block_ids": [
+        "161-PACKET-009-CLAIM-01",
+        "161-PACKET-009-CLAIM-02",
+        "161-PACKET-009-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-epa-wifia-2025-annual-report"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-03",
+        "data_through": "2025-12-31",
+        "evidence_type": "Federal financing-program annual report",
+        "publisher": "U.S. Environmental Protection Agency",
+        "official_url": "https://www.epa.gov/system/files/documents/2026-03/wifia-2025-annual-report.pdf",
+        "source_semantic_digest": "ff7460a741c484a88ee1743a7c2107b7e62b159ee2085e6c1b7c57666870d96d",
+        "topic_ids": [
+          "topic-water",
+          "topic-finance-and-risk",
+          "topic-policy-and-standards"
+        ],
+        "project_chronicle_ids": [],
+        "place_ledger_ids": []
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/wifia-portfolio-2025/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal financing-program annual report.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-epa-wifia-2025-annual-report"
+        ],
+        "topic_ids": [
+          "topic-water",
+          "topic-finance-and-risk",
+          "topic-policy-and-standards"
+        ],
+        "project_chronicle_ids": [],
+        "place_ledger_ids": [],
+        "alternative_candidate_ids": []
+      },
+      "reader_bridge": "This reference-only wrapper keeps federal financing-program annual report issued by U.S. Environmental Protection Agency in the Water lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/wifia-portfolio-2025/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-09",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/wifia-portfolio-2025/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-010",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Mobility and aviation",
+      "title": "Early estimate of 2025 motor-vehicle traffic fatalities",
+      "referenced_phase_161_packet_id": "161-PACKET-010",
+      "referenced_claim_block_ids": [
+        "161-PACKET-010-CLAIM-01",
+        "161-PACKET-010-CLAIM-02",
+        "161-PACKET-010-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-nhtsa-road-fatalities-2025-estimate"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-04-01",
+        "data_through": "2025",
+        "evidence_type": "National early estimate",
+        "publisher": "National Highway Traffic Safety Administration",
+        "official_url": "https://www.nhtsa.gov/press-releases/traffic-deaths-2025-early-estimates-2024-annual",
+        "source_semantic_digest": "a587333ce607a56beafca9e59a7c44d4eba5c0811497d6fa4653c849daf5d96b",
+        "topic_ids": [
+          "topic-mobility",
+          "topic-human-futures"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-008"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-006"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/us-road-fatalities-estimate-2025/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this national early estimate.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-nhtsa-road-fatalities-2025-estimate"
+        ],
+        "topic_ids": [
+          "topic-mobility",
+          "topic-human-futures"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-008"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-006"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-CPUC-AV-QUARTERLY-2026",
+          "146-ALT-NHTSA-SGO-2026",
+          "146-ALT-FTA-NTD-2026"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps national early estimate issued by National Highway Traffic Safety Administration in the Mobility and aviation lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/us-road-fatalities-estimate-2025/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-12",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/us-road-fatalities-estimate-2025/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-011",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Mobility and aviation",
+      "title": "Air Traffic Controller Workforce Plan 2026–2028",
+      "referenced_phase_161_packet_id": "161-PACKET-011",
+      "referenced_claim_block_ids": [
+        "161-PACKET-011-CLAIM-01",
+        "161-PACKET-011-CLAIM-02",
+        "161-PACKET-011-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-06-01",
+        "data_through": "2026-04",
+        "evidence_type": "Federal workforce plan and observed hiring account",
+        "publisher": "Federal Aviation Administration",
+        "official_url": "https://www.faa.gov/sites/faa.gov/files/Air-Traffic-Controller-Workforce-Plan-2026-2028.pdf",
+        "source_semantic_digest": "01644b4062b07d156f8b6154a5bd2390b28ed7dceb2e843cfb395062cf031504",
+        "topic_ids": [
+          "topic-aviation",
+          "topic-human-futures"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-004"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-001"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/faa-controller-workforce-2026-plan/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal workforce plan and observed hiring account.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028"
+        ],
+        "topic_ids": [
+          "topic-aviation",
+          "topic-human-futures"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-004"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-001"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-BTS-ASQP-2026",
+          "146-ALT-BTS-TD40-2026",
+          "146-ALT-BTS-TRANSTATS-ONTIME",
+          "146-ALT-BTS-T100",
+          "146-ALT-FAA-GA-SAFETY-2025",
+          "146-ALT-NTSB-AVIATION-STATS"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps federal workforce plan and observed hiring account issued by Federal Aviation Administration in the Mobility and aviation lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/faa-controller-workforce-2026-plan/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-12",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/faa-controller-workforce-2026-plan/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-012",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Mobility and aviation",
+      "title": "Amtrak FY2025 year-end ridership fact sheet",
+      "referenced_phase_161_packet_id": "161-PACKET-012",
+      "referenced_claim_block_ids": [
+        "161-PACKET-012-CLAIM-01",
+        "161-PACKET-012-CLAIM-02",
+        "161-PACKET-012-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-amtrak-fy2025-ridership"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2025-11-18",
+        "data_through": "FY2025",
+        "evidence_type": "Official operator ridership summary",
+        "publisher": "Amtrak",
+        "official_url": "https://media.amtrak.com/wp-content/uploads/2025/11/FY25-Year-End-Ridership-Fact-Sheet.pdf",
+        "source_semantic_digest": "32bae3c60a47346d1e5b01c796807ab2b4e7722b22c4fb766975e1e329647da3",
+        "topic_ids": [
+          "topic-mobility",
+          "topic-human-futures"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-021"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-010"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/amtrak-fy2025-ridership/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official operator ridership summary.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-amtrak-fy2025-ridership"
+        ],
+        "topic_ids": [
+          "topic-mobility",
+          "topic-human-futures"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-021"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-010"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-CPUC-AV-QUARTERLY-2026",
+          "146-ALT-NHTSA-SGO-2026",
+          "146-ALT-FTA-NTD-2026"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps official operator ridership summary issued by Amtrak in the Mobility and aviation lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/amtrak-fy2025-ridership/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-12",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/amtrak-fy2025-ridership/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-013",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Climate and energy",
+      "title": "Annual 2025 U.S. climate assessment",
+      "referenced_phase_161_packet_id": "161-PACKET-013",
+      "referenced_claim_block_ids": [
+        "161-PACKET-013-CLAIM-01",
+        "161-PACKET-013-CLAIM-02",
+        "161-PACKET-013-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-noaa-us-climate-2025"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-01-13",
+        "data_through": "2025",
+        "evidence_type": "Observed national climate assessment",
+        "publisher": "National Oceanic and Atmospheric Administration",
+        "official_url": "https://www.ncei.noaa.gov/news/national-climate-202513",
+        "source_semantic_digest": "9a2b3f7bd4ef93bdbdba3f4bee0066adab9ad72bdd9c6ec72334c4c69847585b",
+        "topic_ids": [
+          "topic-climate",
+          "topic-water",
+          "topic-human-futures"
+        ],
+        "project_chronicle_ids": [],
+        "place_ledger_ids": [
+          "137-LEDGER-002",
+          "137-LEDGER-005",
+          "137-LEDGER-006",
+          "137-LEDGER-015"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/us-climate-conditions-2025/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this observed national climate assessment.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-noaa-us-climate-2025"
+        ],
+        "topic_ids": [
+          "topic-climate",
+          "topic-water",
+          "topic-human-futures"
+        ],
+        "project_chronicle_ids": [],
+        "place_ledger_ids": [
+          "137-LEDGER-002",
+          "137-LEDGER-005",
+          "137-LEDGER-006",
+          "137-LEDGER-015"
+        ],
+        "alternative_candidate_ids": []
+      },
+      "reader_bridge": "This reference-only wrapper keeps observed national climate assessment issued by National Oceanic and Atmospheric Administration in the Climate and energy lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/us-climate-conditions-2025/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-20",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/us-climate-conditions-2025/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-014",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Climate and energy",
+      "title": "U.S. wind and solar generation in 2025",
+      "referenced_phase_161_packet_id": "161-PACKET-014",
+      "referenced_claim_block_ids": [
+        "161-PACKET-014-CLAIM-01",
+        "161-PACKET-014-CLAIM-02",
+        "161-PACKET-014-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-eia-wind-solar-generation-2025"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-03-20",
+        "data_through": "2025",
+        "evidence_type": "Observed national generation summary",
+        "publisher": "U.S. Energy Information Administration",
+        "official_url": "https://www.eia.gov/todayinenergy/detail.php/detail.php?id=67367",
+        "source_semantic_digest": "6870e2848e98952971a8fdc6870d8d4ad50c9463589fad4086185748fd920a8e",
+        "topic_ids": [
+          "topic-energy",
+          "topic-climate"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-009",
+          "136-CHRONICLE-010",
+          "136-CHRONICLE-011",
+          "136-CHRONICLE-012",
+          "136-CHRONICLE-013",
+          "136-CHRONICLE-014"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-012",
+          "137-LEDGER-013",
+          "137-LEDGER-014",
+          "137-LEDGER-015"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/us-wind-solar-generation-2025/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this observed national generation summary.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-eia-wind-solar-generation-2025"
+        ],
+        "topic_ids": [
+          "topic-energy",
+          "topic-climate"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-009",
+          "136-CHRONICLE-010",
+          "136-CHRONICLE-011",
+          "136-CHRONICLE-012",
+          "136-CHRONICLE-013",
+          "136-CHRONICLE-014"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-012",
+          "137-LEDGER-013",
+          "137-LEDGER-014",
+          "137-LEDGER-015"
+        ],
+        "alternative_candidate_ids": []
+      },
+      "reader_bridge": "This reference-only wrapper keeps observed national generation summary issued by U.S. Energy Information Administration in the Climate and energy lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/us-wind-solar-generation-2025/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-20",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/us-wind-solar-generation-2025/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-015",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Climate and energy",
+      "title": "AEMO Quarterly Energy Dynamics Q1 2026",
+      "referenced_phase_161_packet_id": "161-PACKET-015",
+      "referenced_claim_block_ids": [
+        "161-PACKET-015-CLAIM-01",
+        "161-PACKET-015-CLAIM-02",
+        "161-PACKET-015-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-aemo-q1-2026-qed"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-04-30",
+        "data_through": "2026 Q1",
+        "evidence_type": "Official market-operator quarterly observation",
+        "publisher": "Australian Energy Market Operator",
+        "official_url": "https://www.aemo.com.au/newsroom/media-release/renewables-lift-supply-share-as-batteries-re-shape-energy-markets",
+        "source_semantic_digest": "e9ab05a9f10da3dbdb18f4424774d9bdebdafbd6f61dd6cb5e596f27bfd11d36",
+        "topic_ids": [
+          "topic-energy",
+          "topic-climate"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-012",
+          "136-CHRONICLE-013",
+          "136-CHRONICLE-014"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-012",
+          "137-LEDGER-013"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/aemo-q1-2026-renewables-storage/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official market-operator quarterly observation.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-aemo-q1-2026-qed"
+        ],
+        "topic_ids": [
+          "topic-energy",
+          "topic-climate"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-012",
+          "136-CHRONICLE-013",
+          "136-CHRONICLE-014"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-012",
+          "137-LEDGER-013"
+        ],
+        "alternative_candidate_ids": []
+      },
+      "reader_bridge": "This reference-only wrapper keeps official market-operator quarterly observation issued by Australian Energy Market Operator in the Climate and energy lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/aemo-q1-2026-renewables-storage/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-20",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/aemo-q1-2026-renewables-storage/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-016",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Space",
+      "title": "FAA Aerospace Forecast FY 2026–2046",
+      "referenced_phase_161_packet_id": "161-PACKET-016",
+      "referenced_claim_block_ids": [
+        "161-PACKET-016-CLAIM-01",
+        "161-PACKET-016-CLAIM-02",
+        "161-PACKET-016-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-faa-aerospace-forecast-2026-2046"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026",
+        "data_through": "FY2025 historical activity",
+        "evidence_type": "Federal historical activity account and forecast",
+        "publisher": "Federal Aviation Administration",
+        "official_url": "https://www.faa.gov/data_research/aviation/aerospace_forecasts/FY_2026-2046_Full_Forecast_Document_Tables.pdf",
+        "source_semantic_digest": "27bd9f90402fdc660e9e40b7d5750859046b26e4e2a822527d9a26f6220c3643",
+        "topic_ids": [
+          "topic-space",
+          "topic-aviation",
+          "topic-policy-and-standards"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-004"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-001"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/faa-commercial-space-operations-fy2025/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal historical activity account and forecast.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-faa-aerospace-forecast-2026-2046"
+        ],
+        "topic_ids": [
+          "topic-space",
+          "topic-aviation",
+          "topic-policy-and-standards"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-004"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-001"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-FAA-SPACE-LICENSES",
+          "146-ALT-FAA-SPACE-NUMBERS",
+          "146-ALT-FAA-SPACE-FORECAST-2026",
+          "146-ALT-GAO-NASA-MAJOR-PROJECTS-2026",
+          "146-ALT-BTS-ASQP-2026",
+          "146-ALT-BTS-TD40-2026",
+          "146-ALT-BTS-TRANSTATS-ONTIME",
+          "146-ALT-BTS-T100",
+          "146-ALT-FAA-GA-SAFETY-2025",
+          "146-ALT-NTSB-AVIATION-STATS"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps federal historical activity account and forecast issued by Federal Aviation Administration in the Space lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/faa-commercial-space-operations-fy2025/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-14",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/faa-commercial-space-operations-fy2025/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-017",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Space",
+      "title": "100 Launches and Beyond",
+      "referenced_phase_161_packet_id": "161-PACKET-017",
+      "referenced_claim_block_ids": [
+        "161-PACKET-017-CLAIM-01",
+        "161-PACKET-017-CLAIM-02",
+        "161-PACKET-017-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-space-force-eastern-range-2025"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2025-12-31",
+        "data_through": "2025",
+        "evidence_type": "Official range activity count",
+        "publisher": "U.S. Space Force Space Systems Command",
+        "official_url": "https://www.ssc.spaceforce.mil/About-Us/Freedom-250?dvpTag=SLD&dvpmoduleid=4314",
+        "source_semantic_digest": "9ff73d9a49ff70b4ba764cd93b6d555f27f7862e129c4f7e2eda837af5851c92",
+        "topic_ids": [
+          "topic-space"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-004"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-001"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/eastern-range-orbital-launches-2025/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official range activity count.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-space-force-eastern-range-2025"
+        ],
+        "topic_ids": [
+          "topic-space"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-004"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-001"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-FAA-SPACE-LICENSES",
+          "146-ALT-FAA-SPACE-NUMBERS",
+          "146-ALT-FAA-SPACE-FORECAST-2026",
+          "146-ALT-GAO-NASA-MAJOR-PROJECTS-2026"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps official range activity count issued by U.S. Space Force Space Systems Command in the Space lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/eastern-range-orbital-launches-2025/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-14",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/eastern-range-orbital-launches-2025/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-018",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Space",
+      "title": "Artemis III Orion modules and rocket hardware update",
+      "referenced_phase_161_packet_id": "161-PACKET-018",
+      "referenced_claim_block_ids": [
+        "161-PACKET-018-CLAIM-01",
+        "161-PACKET-018-CLAIM-02",
+        "161-PACKET-018-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-nasa-artemis-iii-hardware-aug-2026"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-08-05",
+        "data_through": "2026-08-05",
+        "evidence_type": "Official program hardware update",
+        "publisher": "National Aeronautics and Space Administration",
+        "official_url": "https://www.nasa.gov/blogs/missions/2026/08/05/nasa-joins-artemis-iii-orion-modules-rocket-hardware-update/",
+        "source_semantic_digest": "26bceeea8ef679b401d9bc36d975274daa4ca4201b046ff7aae5c08c46780e55",
+        "topic_ids": [
+          "topic-space",
+          "topic-advanced-manufacturing"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-004"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-001"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/artemis-iii-hardware-integration-august-2026/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official program hardware update.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-nasa-artemis-iii-hardware-aug-2026"
+        ],
+        "topic_ids": [
+          "topic-space",
+          "topic-advanced-manufacturing"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-004"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-001"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-FAA-SPACE-LICENSES",
+          "146-ALT-FAA-SPACE-NUMBERS",
+          "146-ALT-FAA-SPACE-FORECAST-2026",
+          "146-ALT-GAO-NASA-MAJOR-PROJECTS-2026",
+          "146-ALT-GAO-F15EX-2025",
+          "146-ALT-NIST-MEP-AMPHENOL-2025",
+          "146-ALT-NIST-MEP-FY2024-RESULTS"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps official program hardware update issued by National Aeronautics and Space Administration in the Space lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/artemis-iii-hardware-integration-august-2026/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-14",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/artemis-iii-hardware-integration-august-2026/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-019",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Critical minerals and manufacturing",
+      "title": "Mineral Commodity Summaries 2026",
+      "referenced_phase_161_packet_id": "161-PACKET-019",
+      "referenced_claim_block_ids": [
+        "161-PACKET-019-CLAIM-01",
+        "161-PACKET-019-CLAIM-02",
+        "161-PACKET-019-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-usgs-mineral-commodity-summaries"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-02-06",
+        "data_through": "2025",
+        "evidence_type": "Official commodity statistics",
+        "publisher": "U.S. Geological Survey",
+        "official_url": "https://pubs.usgs.gov/publication/mcs2026",
+        "source_semantic_digest": "b7fe0c708058c5cf0126cff539cb3f102f4b0cf57e02fa01aba5637ada35cbe4",
+        "topic_ids": [
+          "topic-critical-minerals",
+          "topic-advanced-manufacturing",
+          "topic-finance-and-risk"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-005"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-002"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/us-mineral-economy-import-reliance-2025/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official commodity statistics.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-usgs-mineral-commodity-summaries"
+        ],
+        "topic_ids": [
+          "topic-critical-minerals",
+          "topic-advanced-manufacturing",
+          "topic-finance-and-risk"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-005"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-002"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-USGS-MCS-2026",
+          "146-ALT-USGS-MCS-DATA-2026",
+          "146-ALT-GAO-F15EX-2025",
+          "146-ALT-NIST-MEP-AMPHENOL-2025",
+          "146-ALT-NIST-MEP-FY2024-RESULTS"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps official commodity statistics issued by U.S. Geological Survey in the Critical minerals and manufacturing lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/us-mineral-economy-import-reliance-2025/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-16",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/us-mineral-economy-import-reliance-2025/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-020",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Critical minerals and manufacturing",
+      "title": "Thacker Pass project financing record",
+      "referenced_phase_161_packet_id": "161-PACKET-020",
+      "referenced_claim_block_ids": [
+        "161-PACKET-020-CLAIM-01",
+        "161-PACKET-020-CLAIM-02",
+        "161-PACKET-020-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2024-10",
+        "data_through": "2024 project financing",
+        "evidence_type": "Federal loan and designed-capacity record",
+        "publisher": "U.S. Department of Energy",
+        "official_url": "https://www.energy.gov/edf/thacker-pass",
+        "source_semantic_digest": "39485cccab9938ece7b140e773ee621e55a7b83319cf9791a5317bbb86a57779",
+        "topic_ids": [
+          "topic-critical-minerals",
+          "topic-advanced-manufacturing"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-005"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-002"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/thacker-pass-financing-designed-capacity/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal loan and designed-capacity record.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-doe-thacker-pass-loan-2024"
+        ],
+        "topic_ids": [
+          "topic-critical-minerals",
+          "topic-advanced-manufacturing"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-005"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-002"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-USGS-MCS-2026",
+          "146-ALT-USGS-MCS-DATA-2026",
+          "146-ALT-GAO-F15EX-2025",
+          "146-ALT-NIST-MEP-AMPHENOL-2025",
+          "146-ALT-NIST-MEP-FY2024-RESULTS"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps federal loan and designed-capacity record issued by U.S. Department of Energy in the Critical minerals and manufacturing lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/thacker-pass-financing-designed-capacity/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-16",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/thacker-pass-financing-designed-capacity/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-021",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "Critical minerals and manufacturing",
+      "title": "Commerce definitive agreement with USA Rare Earth",
+      "referenced_phase_161_packet_id": "161-PACKET-021",
+      "referenced_claim_block_ids": [
+        "161-PACKET-021-CLAIM-01",
+        "161-PACKET-021-CLAIM-02",
+        "161-PACKET-021-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-nist-usa-rare-earth-june-2026"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-06-03",
+        "data_through": "2026-06-03",
+        "evidence_type": "Definitive public financing agreement",
+        "publisher": "National Institute of Standards and Technology",
+        "official_url": "https://www.nist.gov/news-events/news/2026/06/department-commerces-chips-program-finalizes-definitive-agreement-usa-rare",
+        "source_semantic_digest": "d9182e017f639d8e5f3a0edb92586668a641830ef723dd0d281b26dde3c82fb9",
+        "topic_ids": [
+          "topic-critical-minerals",
+          "topic-advanced-manufacturing",
+          "topic-chips-and-compute"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-005"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-002"
+        ]
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/usa-rare-earth-mine-to-magnet-award/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this definitive public financing agreement.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-nist-usa-rare-earth-june-2026"
+        ],
+        "topic_ids": [
+          "topic-critical-minerals",
+          "topic-advanced-manufacturing",
+          "topic-chips-and-compute"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-005"
+        ],
+        "place_ledger_ids": [
+          "137-LEDGER-002"
+        ],
+        "alternative_candidate_ids": [
+          "146-ALT-USGS-MCS-2026",
+          "146-ALT-USGS-MCS-DATA-2026",
+          "146-ALT-GAO-F15EX-2025",
+          "146-ALT-NIST-MEP-AMPHENOL-2025",
+          "146-ALT-NIST-MEP-FY2024-RESULTS",
+          "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+          "146-ALT-TSMC-SEC-20F-2025"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps definitive public financing agreement issued by National Institute of Standards and Technology in the Critical minerals and manufacturing lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/usa-rare-earth-mine-to-magnet-award/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-16",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/usa-rare-earth-mine-to-magnet-award/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-022",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "AI, quantum, cyber and human futures",
+      "title": "NIST Artificial Intelligence Technology Evaluation launch",
+      "referenced_phase_161_packet_id": "161-PACKET-022",
+      "referenced_claim_block_ids": [
+        "161-PACKET-022-CLAIM-01",
+        "161-PACKET-022-CLAIM-02",
+        "161-PACKET-022-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-nist-aite-july-2026"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-07-27",
+        "data_through": "2026-07-27",
+        "evidence_type": "Evaluation infrastructure announcement",
+        "publisher": "National Institute of Standards and Technology",
+        "official_url": "https://www.nist.gov/news-events/news/2026/07/announcing-nists-artificial-intelligence-technology-evaluation-aite",
+        "source_semantic_digest": "371ac666b01392bbffe5c073e3af62220ec915eebdc0934fde7e49b63b73449b",
+        "topic_ids": [
+          "topic-ai-for-science",
+          "topic-discovery-technologies",
+          "topic-policy-and-standards"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-007"
+        ],
+        "place_ledger_ids": []
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/nist-aite-launch-2026/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this evaluation infrastructure announcement.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-nist-aite-july-2026"
+        ],
+        "topic_ids": [
+          "topic-ai-for-science",
+          "topic-discovery-technologies",
+          "topic-policy-and-standards"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-007"
+        ],
+        "place_ledger_ids": [],
+        "alternative_candidate_ids": [
+          "146-ALT-DOE-FY24-PERFORMANCE",
+          "146-ALT-NSF-FY25-PERFORMANCE",
+          "146-ALT-NSF-NAIRR-TWO-YEAR",
+          "146-ALT-NSF-SE-INDICATORS-2026"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps evaluation infrastructure announcement issued by National Institute of Standards and Technology in the AI, quantum, cyber and human futures lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/nist-aite-launch-2026/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-23",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/nist-aite-launch-2026/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-023",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "AI, quantum, cyber and human futures",
+      "title": "Commerce quantum letters of intent",
+      "referenced_phase_161_packet_id": "161-PACKET-023",
+      "referenced_claim_block_ids": [
+        "161-PACKET-023-CLAIM-01",
+        "161-PACKET-023-CLAIM-02",
+        "161-PACKET-023-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-nist-quantum-lois-may-2026"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-05-21",
+        "data_through": "2026-05-21",
+        "evidence_type": "Non-final funding letters of intent",
+        "publisher": "National Institute of Standards and Technology",
+        "official_url": "https://www.nist.gov/news-events/news/2026/05/department-commerce-announces-letters-intent-9-companies-2-billion",
+        "source_semantic_digest": "fc183f5c512eef3f581758f18f252099afd40740e00ab933b6d5623713702ccf",
+        "topic_ids": [
+          "topic-quantum",
+          "topic-chips-and-compute",
+          "topic-advanced-manufacturing"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-006"
+        ],
+        "place_ledger_ids": []
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/quantum-chips-loi-portfolio-2026/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this non-final funding letters of intent.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-nist-quantum-lois-may-2026"
+        ],
+        "topic_ids": [
+          "topic-quantum",
+          "topic-chips-and-compute",
+          "topic-advanced-manufacturing"
+        ],
+        "project_chronicle_ids": [
+          "136-CHRONICLE-006"
+        ],
+        "place_ledger_ids": [],
+        "alternative_candidate_ids": [
+          "146-ALT-NIST-QC-METRICS-2024",
+          "146-ALT-DARPA-QUANTUM-BENCHMARKING",
+          "146-ALT-DARPA-QBI",
+          "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+          "146-ALT-TSMC-SEC-20F-2025",
+          "146-ALT-GAO-F15EX-2025",
+          "146-ALT-NIST-MEP-AMPHENOL-2025",
+          "146-ALT-NIST-MEP-FY2024-RESULTS"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps non-final funding letters of intent issued by National Institute of Standards and Technology in the AI, quantum, cyber and human futures lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/quantum-chips-loi-portfolio-2026/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-23",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/quantum-chips-loi-portfolio-2026/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-024",
+      "packet_kind": "Phase 161 packet reference",
+      "packet_state": "Reference only — immutable Phase 161 content; October source-currency check scheduled",
+      "stack_lane": "AI, quantum, cyber and human futures",
+      "title": "FBI 2025 Internet Crime Report",
+      "referenced_phase_161_packet_id": "161-PACKET-024",
+      "referenced_claim_block_ids": [
+        "161-PACKET-024-CLAIM-01",
+        "161-PACKET-024-CLAIM-02",
+        "161-PACKET-024-CLAIM-03"
+      ],
+      "source_ids": [
+        "source-161-fbi-ic3-2025-report"
+      ],
+      "checked_date": "2026-08-31",
+      "inherited_metadata": {
+        "checked_date": "2026-08-31",
+        "artifact_date": "2026-04-06",
+        "data_through": "2025",
+        "evidence_type": "Administrative complaint and reported-loss data",
+        "publisher": "Federal Bureau of Investigation",
+        "official_url": "https://www.fbi.gov/file-repository/2025_ic3report.pdf",
+        "source_semantic_digest": "1adf7baf61138115260525226de41fe028155c268e1cbb084c90378c83251ea5",
+        "topic_ids": [
+          "topic-cybersecurity",
+          "topic-human-futures",
+          "topic-finance-and-risk"
+        ],
+        "project_chronicle_ids": [],
+        "place_ledger_ids": []
+      },
+      "canonical_upstream_route": "/review/v1month/stack-watch/ic3-cyber-harm-2025/",
+      "exact_next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this administrative complaint and reported-loss data.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-161-fbi-ic3-2025-report"
+        ],
+        "topic_ids": [
+          "topic-cybersecurity",
+          "topic-human-futures",
+          "topic-finance-and-risk"
+        ],
+        "project_chronicle_ids": [],
+        "place_ledger_ids": [],
+        "alternative_candidate_ids": [
+          "146-ALT-GAO-CDM-2025",
+          "146-ALT-GAO-CYBER-METRICS-2024",
+          "146-ALT-GAO-INCIDENT-RESPONSE-2024"
+        ]
+      },
+      "reader_bridge": "This reference-only wrapper keeps administrative complaint and reported-loss data issued by Federal Bureau of Investigation in the AI, quantum, cyber and human futures lane, with its artifact vintage, data-through period, source identity, semantic digest, topics, named-project links, and receiving-place links inherited without alteration. Read the full three-claim block and binding exclusion at /review/v1month/stack-watch/ic3-cyber-harm-2025/. Phase 177 adds only a scheduled source-currency check against the exact next artifact; it does not refresh the inherited text, change its evidence state, or convert it into a project stage or outcome.",
+      "scheduled_october_recheck_date": "2026-10-23",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/ic3-cyber-harm-2025/",
+      "interpretation_boundary": "This record references the immutable Phase 161 packet and its claim IDs; it does not duplicate, republish, refresh, or adjudicate those claims."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-025",
+      "packet_kind": "New prepared official-source packet",
+      "stack_lane": "Power and grid",
+      "title": "EIA Short-Term Energy Outlook — August 2026",
+      "source_ids": [
+        "source-177-eia-steo-august-2026"
+      ],
+      "publisher": "U.S. Energy Information Administration",
+      "official_url": "https://www.eia.gov/outlooks/STEO/",
+      "checked_date": "2026-09-01",
+      "artifact_date": "2026-08-11",
+      "data_through": "Forecast completed 2026-08-06; forecast horizon through 2027",
+      "evidence_type": "Monthly federal energy forecast and revision record",
+      "packet_state": "Prepared — October review not yet conducted",
+      "semantic_digest_state": "Pending October source-currency sweep",
+      "exact_next_artifact": "Retrieve the EIA September 9, 2026 Short-Term Energy Outlook or an official reschedule notice from the STEO archive; compare the Texas 2027 electricity-load-growth forecast, forecast-completion date, release date, and stated modeling assumptions against the August 2026 vintage, while preserving forecast-versus-observation status.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-177-eia-steo-august-2026"
+        ],
+        "topics": [
+          "Energy",
+          "Chips and Compute",
+          "Climate"
+        ],
+        "framework_layers": [
+          "Resource Foundations",
+          "Enabling Infrastructure"
+        ],
+        "jurisdiction": "United States"
+      },
+      "claim_blocks": [
+        {
+          "claim_block_id": "177-PACKET-025-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "EIA released the outlook on August 11 after completing the forecast on August 6. It lowered forecast Texas electricity-load growth for 2027 to 6%, from 14% in the prior outlook, after the Texas governor announced an August 3 pause on new data-center development.",
+          "source_ids": [
+            "source-177-eia-steo-august-2026"
+          ],
+          "evidence_state": "Prepared context — October finding null"
+        },
+        {
+          "claim_block_id": "177-PACKET-025-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "This official record can orient the Power and grid lane only within the named jurisdiction, artifact vintage, issuer authority, and primary data role.",
+          "source_ids": [
+            "source-177-eia-steo-august-2026"
+          ],
+          "evidence_state": "Bounded interpretation — no stage or outcome change"
+        },
+        {
+          "claim_block_id": "177-PACKET-025-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "The August 2026 outlook is a forecast completed August 6, not observed future demand or proof that proposed data-center loads will connect. Its Texas revision reflects stated modeling assumptions and can be revised in later editions.",
+          "source_ids": [
+            "source-177-eia-steo-august-2026"
+          ],
+          "evidence_state": "Binding exclusion"
+        }
+      ],
+      "reader_bridge": "EIA Short-Term Energy Outlook — August 2026 enters the Power and grid lane as monthly federal energy forecast and revision record from U.S. Energy Information Administration, bounded to Forecast completed 2026-08-06; forecast horizon through 2027. The prepared claim set records one source-supported observation, one scoped system implication, and one binding excluded inference. Its October task names the exact successor artifact or status record needed; until that dated check is run, the packet creates no refreshed finding, admitted outcome, project stage, score, or rank.",
+      "scheduled_october_recheck_date": "2026-10-05",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/eia-short-term-energy-outlook-august-2026/",
+      "interpretation_boundary": "Prepared content only. Current source identity and September 1 check are recorded; no October review, evidence admission, stage decision, outcome, score, rank, or causal claim is implied."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-026",
+      "packet_kind": "New prepared official-source packet",
+      "stack_lane": "Chips and compute",
+      "title": "CHIPS R&D Office awards registry — August 2026",
+      "source_ids": [
+        "source-177-nist-chips-rd-awards-august-2026"
+      ],
+      "publisher": "National Institute of Standards and Technology",
+      "official_url": "https://www.nist.gov/chips/chips-rd-office-awards",
+      "checked_date": "2026-09-01",
+      "artifact_date": "2026-08-06",
+      "data_through": "Registry state updated 2026-08-06, including three named $100 million direct-funding awards",
+      "evidence_type": "Federal semiconductor R&D award registry",
+      "packet_state": "Prepared — October review not yet conducted",
+      "semantic_digest_state": "Pending October source-currency sweep",
+      "exact_next_artifact": "Recheck the CHIPS R&D Office Awards registry's updated timestamp and the separate Applied Materials, Arizona State University, and Absolics entries; capture any recipient, location, amount, program, purpose, or award-status change as an identity-specific dated delta, without treating an unchanged registry as delivery evidence.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-177-nist-chips-rd-awards-august-2026"
+        ],
+        "topics": [
+          "Chips and Compute",
+          "Advanced Manufacturing",
+          "Policy and Standards"
+        ],
+        "framework_layers": [
+          "Enabling Infrastructure",
+          "Frontier Domains"
+        ],
+        "jurisdiction": "United States"
+      },
+      "claim_blocks": [
+        {
+          "claim_block_id": "177-PACKET-026-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "The official registry lists $100 million direct-funding awards for Applied Materials in Santa Clara, Arizona State University in Tempe, and Absolics in Covington for distinct advanced-packaging and substrate-development programs.",
+          "source_ids": [
+            "source-177-nist-chips-rd-awards-august-2026"
+          ],
+          "evidence_state": "Prepared context — October finding null"
+        },
+        {
+          "claim_block_id": "177-PACKET-026-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "This official record can orient the Chips and compute lane only within the named jurisdiction, artifact vintage, issuer authority, and primary data role.",
+          "source_ids": [
+            "source-177-nist-chips-rd-awards-august-2026"
+          ],
+          "evidence_state": "Bounded interpretation — no stage or outcome change"
+        },
+        {
+          "claim_block_id": "177-PACKET-026-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "An award purpose and amount do not establish construction completion, production, qualification, commercial scale, jobs realized, or local-system readiness. Each recipient and facility still requires its own dated delivery record.",
+          "source_ids": [
+            "source-177-nist-chips-rd-awards-august-2026"
+          ],
+          "evidence_state": "Binding exclusion"
+        }
+      ],
+      "reader_bridge": "CHIPS R&D Office awards registry — August 2026 enters the Chips and compute lane as federal semiconductor r&d award registry from National Institute of Standards and Technology, bounded to Registry state updated 2026-08-06, including three named $100 million direct-funding awards. The prepared claim set records one source-supported observation, one scoped system implication, and one binding excluded inference. Its October task names the exact successor artifact or status record needed; until that dated check is run, the packet creates no refreshed finding, admitted outcome, project stage, score, or rank.",
+      "scheduled_october_recheck_date": "2026-10-07",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/chips-r-d-office-awards-registry-august-2026/",
+      "interpretation_boundary": "Prepared content only. Current source identity and September 1 check are recorded; no October review, evidence admission, stage decision, outcome, score, rank, or causal claim is implied."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-027",
+      "packet_kind": "New prepared official-source packet",
+      "stack_lane": "Water",
+      "title": "Reclamation August 2026 Yakima water-supply forecast",
+      "source_ids": [
+        "source-177-usbr-yakima-water-forecast-august-2026"
+      ],
+      "publisher": "U.S. Bureau of Reclamation",
+      "official_url": "https://www.usbr.gov/newsroom/news-release/5385",
+      "checked_date": "2026-09-01",
+      "artifact_date": "2026-08-06",
+      "data_through": "Hydrologic inputs through 2026-08-01; entitlement projection covers 2026-07 through 2026-09",
+      "evidence_type": "Monthly federal basin water-supply forecast",
+      "packet_state": "Prepared — October review not yet conducted",
+      "semantic_digest_state": "Pending October source-currency sweep",
+      "exact_next_artifact": "Retrieve Reclamation's September 2026 Yakima basin water-supply forecast, or a dated official no-release or reschedule notice; compare its hydrologic input date and separate senior- and junior-entitlement percentages with the August forecast, while leaving final delivered-volume, crop, household, and ecosystem outcomes open.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-177-usbr-yakima-water-forecast-august-2026"
+        ],
+        "topics": [
+          "Water",
+          "Agriculture and Bioeconomy",
+          "Climate"
+        ],
+        "framework_layers": [
+          "Resource Foundations",
+          "Enabling Infrastructure",
+          "Human Systems"
+        ],
+        "jurisdiction": "United States — Washington"
+      },
+      "claim_blocks": [
+        {
+          "claim_block_id": "177-PACKET-027-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "On August 1, Yakima basin reservoirs were 57% full with 605,000 acre-feet, or 80% of average. Reclamation forecast 100% of entitlements for senior water-right holders and 58% for junior holders for July through September.",
+          "source_ids": [
+            "source-177-usbr-yakima-water-forecast-august-2026"
+          ],
+          "evidence_state": "Prepared context — October finding null"
+        },
+        {
+          "claim_block_id": "177-PACKET-027-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "This official record can orient the Water lane only within the named jurisdiction, artifact vintage, issuer authority, and primary data and local conversion evidence role.",
+          "source_ids": [
+            "source-177-usbr-yakima-water-forecast-august-2026"
+          ],
+          "evidence_state": "Bounded interpretation — no stage or outcome change"
+        },
+        {
+          "claim_block_id": "177-PACKET-027-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "The 58% junior-water-right forecast is a modeled seasonal allocation projection based on August 1 conditions. It is not a final delivered-volume accounting, crop-loss estimate, ecosystem outcome, or universal household-water measure.",
+          "source_ids": [
+            "source-177-usbr-yakima-water-forecast-august-2026"
+          ],
+          "evidence_state": "Binding exclusion"
+        }
+      ],
+      "reader_bridge": "Reclamation August 2026 Yakima water-supply forecast enters the Water lane as monthly federal basin water-supply forecast from U.S. Bureau of Reclamation, bounded to Hydrologic inputs through 2026-08-01; entitlement projection covers 2026-07 through 2026-09. The prepared claim set records one source-supported observation, one scoped system implication, and one binding excluded inference. Its October task names the exact successor artifact or status record needed; until that dated check is run, the packet creates no refreshed finding, admitted outcome, project stage, score, or rank.",
+      "scheduled_october_recheck_date": "2026-10-09",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/reclamation-august-2026-yakima-water-supply-forecast/",
+      "interpretation_boundary": "Prepared content only. Current source identity and September 1 check are recorded; no October review, evidence admission, stage decision, outcome, score, rank, or causal claim is implied."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-028",
+      "packet_kind": "New prepared official-source packet",
+      "stack_lane": "Mobility and aviation",
+      "title": "FAA Mid-Atlantic hybrid-electric demonstration flights",
+      "source_ids": [
+        "source-177-faa-hybrid-electric-demonstration-august-2026"
+      ],
+      "publisher": "Federal Aviation Administration",
+      "official_url": "https://www.faa.gov/newsroom/faa-announces-key-demonstrations-hybrid-electric-flights-connecting-small-airports-major",
+      "checked_date": "2026-09-01",
+      "artifact_date": "2026-08-18",
+      "data_through": "Mid-Atlantic eIPP demonstration flights reported 2026-08-18; additional demonstrations described as planned through 2026",
+      "evidence_type": "Federal advanced-air-mobility demonstration notice",
+      "packet_state": "Prepared — October review not yet conducted",
+      "semantic_digest_state": "Pending October source-currency sweep",
+      "exact_next_artifact": "Retrieve the next FAA eVTOL Integration Pilot Program demonstration notice or formal program report that names the aircraft, flight dates, Mid-Atlantic route, participating airports, operating authority, completed flight count, and observed test result; keep certification, scheduled service, demand, economics, reliability, and scaled integration separate.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-177-faa-hybrid-electric-demonstration-august-2026"
+        ],
+        "topics": [
+          "Aviation",
+          "Mobility",
+          "Policy and Standards"
+        ],
+        "framework_layers": [
+          "Enabling Infrastructure",
+          "Frontier Domains",
+          "Human Systems"
+        ],
+        "jurisdiction": "United States — Mid-Atlantic"
+      },
+      "claim_blocks": [
+        {
+          "claim_block_id": "177-PACKET-028-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "FAA reported hybrid-electric demonstration flights between Manassas and Philadelphia with stops at Millville Executive, Atlantic City Bader Field, Northeast Philadelphia, and Philadelphia International airports under the eVTOL Integration Pilot Program.",
+          "source_ids": [
+            "source-177-faa-hybrid-electric-demonstration-august-2026"
+          ],
+          "evidence_state": "Prepared context — October finding null"
+        },
+        {
+          "claim_block_id": "177-PACKET-028-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "This official record can orient the Mobility and aviation lane only within the named jurisdiction, artifact vintage, issuer authority, and primary data and local conversion evidence role.",
+          "source_ids": [
+            "source-177-faa-hybrid-electric-demonstration-august-2026"
+          ],
+          "evidence_state": "Bounded interpretation — no stage or outcome change"
+        },
+        {
+          "claim_block_id": "177-PACKET-028-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "The August 2026 flights are demonstrations within the eVTOL Integration Pilot Program. They do not establish aircraft certification, scheduled commercial service, passenger demand, route economics, reliability, or scaled airport integration.",
+          "source_ids": [
+            "source-177-faa-hybrid-electric-demonstration-august-2026"
+          ],
+          "evidence_state": "Binding exclusion"
+        }
+      ],
+      "reader_bridge": "FAA Mid-Atlantic hybrid-electric demonstration flights enters the Mobility and aviation lane as federal advanced-air-mobility demonstration notice from Federal Aviation Administration, bounded to Mid-Atlantic eIPP demonstration flights reported 2026-08-18; additional demonstrations described as planned through 2026. The prepared claim set records one source-supported observation, one scoped system implication, and one binding excluded inference. Its October task names the exact successor artifact or status record needed; until that dated check is run, the packet creates no refreshed finding, admitted outcome, project stage, score, or rank.",
+      "scheduled_october_recheck_date": "2026-10-12",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/faa-mid-atlantic-hybrid-electric-demonstration-flights/",
+      "interpretation_boundary": "Prepared content only. Current source identity and September 1 check are recorded; no October review, evidence admission, stage decision, outcome, score, rank, or causal claim is implied."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-029",
+      "packet_kind": "New prepared official-source packet",
+      "stack_lane": "Space",
+      "title": "NASA Deep Space Station 23 operational addition at Goldstone",
+      "source_ids": [
+        "source-177-nasa-dss23-goldstone-august-2026"
+      ],
+      "publisher": "NASA Jet Propulsion Laboratory",
+      "official_url": "https://www.jpl.nasa.gov/news/new-next-gen-dish-adds-muscle-to-nasas-deep-space-network/",
+      "checked_date": "2026-09-01",
+      "artifact_date": "2026-08-25",
+      "data_through": "May-July 2026 testing and named mission communications from the 2026-08-03 operating start through the 2026-08-25 release",
+      "evidence_type": "Federal deep-space communications operating-milestone release",
+      "packet_state": "Prepared — October review not yet conducted",
+      "semantic_digest_state": "Pending October source-currency sweep",
+      "exact_next_artifact": "Retrieve a JPL, Deep Space Network, or NASA SCaN record specific to DSS-23 that reports a post-August 3 observation period, named communication passes or supported missions, receiver acceptance, availability or failure treatment, and a denominator; do not substitute network-wide capacity language or mission success for antenna-level recurring performance.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-177-nasa-dss23-goldstone-august-2026"
+        ],
+        "topics": [
+          "Space",
+          "Advanced Manufacturing",
+          "Discovery Technologies"
+        ],
+        "framework_layers": [
+          "Enabling Infrastructure",
+          "Frontier Domains"
+        ],
+        "jurisdiction": "United States — California"
+      },
+      "claim_blocks": [
+        {
+          "claim_block_id": "177-PACKET-029-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "NASA describes DSS-23 as a new 34-meter antenna at Goldstone. After a May–July testing campaign, it began operations on August 3 tracking Chandra and subsequently communicated with missions including Mars Reconnaissance Orbiter, Psyche, Juno, and Voyager 1.",
+          "source_ids": [
+            "source-177-nasa-dss23-goldstone-august-2026"
+          ],
+          "evidence_state": "Prepared context — October finding null"
+        },
+        {
+          "claim_block_id": "177-PACKET-029-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "This official record can orient the Space lane only within the named jurisdiction, artifact vintage, issuer authority, and primary data and local conversion evidence role.",
+          "source_ids": [
+            "source-177-nasa-dss23-goldstone-august-2026"
+          ],
+          "evidence_state": "Bounded interpretation — no stage or outcome change"
+        },
+        {
+          "claim_block_id": "177-PACKET-029-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "DSS-23 beginning mission communications on August 3 establishes an operational antenna milestone, not total network capacity, mission success, optical-communications readiness, or elimination of scheduling constraints.",
+          "source_ids": [
+            "source-177-nasa-dss23-goldstone-august-2026"
+          ],
+          "evidence_state": "Binding exclusion"
+        }
+      ],
+      "reader_bridge": "NASA Deep Space Station 23 operational addition at Goldstone enters the Space lane as federal deep-space communications operating-milestone release from NASA Jet Propulsion Laboratory, bounded to May-July 2026 testing and named mission communications from the 2026-08-03 operating start through the 2026-08-25 release. The prepared claim set records one source-supported observation, one scoped system implication, and one binding excluded inference. Its October task names the exact successor artifact or status record needed; until that dated check is run, the packet creates no refreshed finding, admitted outcome, project stage, score, or rank.",
+      "scheduled_october_recheck_date": "2026-10-14",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/nasa-deep-space-station-23-operational-addition-at-goldstone/",
+      "interpretation_boundary": "Prepared content only. Current source identity and September 1 check are recorded; no October review, evidence admission, stage decision, outcome, score, rank, or causal claim is implied."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-030",
+      "packet_kind": "New prepared official-source packet",
+      "stack_lane": "Critical minerals and manufacturing",
+      "title": "DOE $500 million critical-mineral and battery project selections",
+      "source_ids": [
+        "source-177-doe-critical-minerals-battery-projects-august-2026"
+      ],
+      "publisher": "U.S. Department of Energy",
+      "official_url": "https://www.energy.gov/articles/energy-department-announces-500-million-secure-americas-critical-mineral-and-battery",
+      "checked_date": "2026-09-01",
+      "artifact_date": "2026-08-20",
+      "data_through": "Seven project selections announced 2026-08-20 under the third funding round of two named battery programs",
+      "evidence_type": "Federal project-selection announcement",
+      "packet_state": "Prepared — October review not yet conducted",
+      "semantic_digest_state": "Pending October source-currency sweep",
+      "exact_next_artifact": "Retrieve DOE's project-specific selection-to-award record for each of the seven named projects, including any final assistance agreement, obligation, recipient, location, amount, scope, and milestone schedule; retain separate states for selection, award, construction, commissioning, qualified output, and accepted operating capacity.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-177-doe-critical-minerals-battery-projects-august-2026"
+        ],
+        "topics": [
+          "Critical Minerals",
+          "Advanced Manufacturing",
+          "Energy"
+        ],
+        "framework_layers": [
+          "Resource Foundations",
+          "Enabling Infrastructure",
+          "Frontier Domains"
+        ],
+        "jurisdiction": "United States"
+      },
+      "claim_blocks": [
+        {
+          "claim_block_id": "177-PACKET-030-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "DOE announced $500 million for seven selected U.S. projects spanning critical-mineral and material processing, battery manufacturing, and recycling; it described this as the third funding round under the two named battery programs.",
+          "source_ids": [
+            "source-177-doe-critical-minerals-battery-projects-august-2026"
+          ],
+          "evidence_state": "Prepared context — October finding null"
+        },
+        {
+          "claim_block_id": "177-PACKET-030-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "This official record can orient the Critical minerals and manufacturing lane only within the named jurisdiction, artifact vintage, issuer authority, and primary data role.",
+          "source_ids": [
+            "source-177-doe-critical-minerals-battery-projects-august-2026"
+          ],
+          "evidence_state": "Bounded interpretation — no stage or outcome change"
+        },
+        {
+          "claim_block_id": "177-PACKET-030-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "The announcement identifies seven selected projects and $500 million in program funding. Selection is not a final award obligation, construction, commissioning, qualified output, operating capacity, or supply-chain outcome.",
+          "source_ids": [
+            "source-177-doe-critical-minerals-battery-projects-august-2026"
+          ],
+          "evidence_state": "Binding exclusion"
+        }
+      ],
+      "reader_bridge": "DOE $500 million critical-mineral and battery project selections enters the Critical minerals and manufacturing lane as federal project-selection announcement from U.S. Department of Energy, bounded to Seven project selections announced 2026-08-20 under the third funding round of two named battery programs. The prepared claim set records one source-supported observation, one scoped system implication, and one binding excluded inference. Its October task names the exact successor artifact or status record needed; until that dated check is run, the packet creates no refreshed finding, admitted outcome, project stage, score, or rank.",
+      "scheduled_october_recheck_date": "2026-10-16",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/doe-500-million-critical-mineral-and-battery-project-selections/",
+      "interpretation_boundary": "Prepared content only. Current source identity and September 1 check are recorded; no October review, evidence admission, stage decision, outcome, score, rank, or causal claim is implied."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-031",
+      "packet_kind": "New prepared official-source packet",
+      "stack_lane": "Climate and energy",
+      "title": "NOAA U.S. temperature and precipitation assessment — July 2026",
+      "source_ids": [
+        "source-177-noaa-us-climate-july-2026"
+      ],
+      "publisher": "NOAA National Centers for Environmental Information",
+      "official_url": "https://www.ncei.noaa.gov/news/national-climate-202607",
+      "checked_date": "2026-09-01",
+      "artifact_date": "2026-08-12",
+      "data_through": "July 2026 observations; article published 2026-08-10 and corrected 2026-08-12",
+      "evidence_type": "Federal monthly observed climate assessment",
+      "packet_state": "Prepared — October review not yet conducted",
+      "semantic_digest_state": "Pending October source-currency sweep",
+      "exact_next_artifact": "Retrieve NOAA NCEI's September 2026 U.S. Climate Report and its release or revision metadata; preserve observation month, geography, temperature and precipitation measures, comparison baseline, record length, and any revision to the July assessment without inferring project damage, adaptation performance, attribution, or future local conditions.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-177-noaa-us-climate-july-2026"
+        ],
+        "topics": [
+          "Climate",
+          "Water",
+          "Energy"
+        ],
+        "framework_layers": [
+          "Resource Foundations",
+          "Human Systems"
+        ],
+        "jurisdiction": "United States"
+      },
+      "claim_blocks": [
+        {
+          "claim_block_id": "177-PACKET-031-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "NOAA reports a July 2026 contiguous-U.S. average temperature of 76.9°F, 3.3°F above the 20th-century average and the warmest July and month in the 132-year record; nationwide precipitation averaged 2.55 inches, 0.23 inch below average.",
+          "source_ids": [
+            "source-177-noaa-us-climate-july-2026"
+          ],
+          "evidence_state": "Prepared context — October finding null"
+        },
+        {
+          "claim_block_id": "177-PACKET-031-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "This official record can orient the Climate and energy lane only within the named jurisdiction, artifact vintage, issuer authority, and primary data role.",
+          "source_ids": [
+            "source-177-noaa-us-climate-july-2026"
+          ],
+          "evidence_state": "Bounded interpretation — no stage or outcome change"
+        },
+        {
+          "claim_block_id": "177-PACKET-031-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "National and state climate ranks describe measured temperature and precipitation, not project-specific damages, service failures, adaptation performance, causal attribution, or future local conditions.",
+          "source_ids": [
+            "source-177-noaa-us-climate-july-2026"
+          ],
+          "evidence_state": "Binding exclusion"
+        }
+      ],
+      "reader_bridge": "NOAA U.S. temperature and precipitation assessment — July 2026 enters the Climate and energy lane as federal monthly observed climate assessment from NOAA National Centers for Environmental Information, bounded to July 2026 observations; article published 2026-08-10 and corrected 2026-08-12. The prepared claim set records one source-supported observation, one scoped system implication, and one binding excluded inference. Its October task names the exact successor artifact or status record needed; until that dated check is run, the packet creates no refreshed finding, admitted outcome, project stage, score, or rank.",
+      "scheduled_october_recheck_date": "2026-10-20",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/noaa-u-s-temperature-and-precipitation-assessment-july-2026/",
+      "interpretation_boundary": "Prepared content only. Current source identity and September 1 check are recorded; no October review, evidence admission, stage decision, outcome, score, rank, or causal claim is implied."
+    },
+    {
+      "phase_177_packet_id": "177-PACKET-032",
+      "packet_kind": "New prepared official-source packet",
+      "stack_lane": "AI, quantum, cyber and human futures",
+      "title": "NIST AI 200-2 initial public draft — TEVV-Athlon Framework",
+      "source_ids": [
+        "source-177-nist-tevv-athlon-august-2026"
+      ],
+      "publisher": "National Institute of Standards and Technology",
+      "official_url": "https://www.nist.gov/artificial-intelligence/ai-research/tevv-athlon-framework-evaluating-ai-systems",
+      "checked_date": "2026-09-01",
+      "artifact_date": "2026-08-07",
+      "data_through": "Initial public draft announced 2026-08-07; public-comment period scheduled through 2026-10-06",
+      "evidence_type": "Federal initial public draft standards framework",
+      "packet_state": "Prepared — October review not yet conducted",
+      "semantic_digest_state": "Pending October source-currency sweep",
+      "exact_next_artifact": "After the October 6 comment deadline, retrieve the final or revised NIST AI 200-2, a formal comment-disposition record, or an official status notice; record the exact document version, publication date, draft status, and disposition while leaving every system-specific safety, effectiveness, compliance, and validation claim open.",
+      "affected_record_map": {
+        "source_ids": [
+          "source-177-nist-tevv-athlon-august-2026"
+        ],
+        "topics": [
+          "AI for Science",
+          "Cybersecurity",
+          "Policy and Standards",
+          "Human Futures"
+        ],
+        "framework_layers": [
+          "Frontier Domains",
+          "Human Systems"
+        ],
+        "jurisdiction": "United States"
+      },
+      "claim_blocks": [
+        {
+          "claim_block_id": "177-PACKET-032-CLAIM-01",
+          "claim_type": "Supported observation",
+          "text": "NIST announced the initial public draft of NIST AI 200-2 on August 7 with comments open through October 6. The draft describes a four-stage method for building customized AI-system assessments from organizational TEVV objectives.",
+          "source_ids": [
+            "source-177-nist-tevv-athlon-august-2026"
+          ],
+          "evidence_state": "Prepared context — October finding null"
+        },
+        {
+          "claim_block_id": "177-PACKET-032-CLAIM-02",
+          "claim_type": "System implication",
+          "text": "This official record can orient the AI, quantum, cyber and human futures lane only within the named jurisdiction, artifact vintage, issuer authority, and standards evidence role.",
+          "source_ids": [
+            "source-177-nist-tevv-athlon-august-2026"
+          ],
+          "evidence_state": "Bounded interpretation — no stage or outcome change"
+        },
+        {
+          "claim_block_id": "177-PACKET-032-CLAIM-03",
+          "claim_type": "Excluded inference",
+          "text": "NIST AI 200-2 is an initial public draft under comment through October 6, 2026. It is a framework for designing assessments, not evidence that a particular AI system is safe, effective, compliant, or validated.",
+          "source_ids": [
+            "source-177-nist-tevv-athlon-august-2026"
+          ],
+          "evidence_state": "Binding exclusion"
+        }
+      ],
+      "reader_bridge": "NIST AI 200-2 initial public draft — TEVV-Athlon Framework enters the AI, quantum, cyber and human futures lane as federal initial public draft standards framework from National Institute of Standards and Technology, bounded to Initial public draft announced 2026-08-07; public-comment period scheduled through 2026-10-06. The prepared claim set records one source-supported observation, one scoped system implication, and one binding excluded inference. Its October task names the exact successor artifact or status record needed; until that dated check is run, the packet creates no refreshed finding, admitted outcome, project stage, score, or rank.",
+      "scheduled_october_recheck_date": "2026-10-23",
+      "october_recheck_date": null,
+      "october_finding": null,
+      "route": "/review/v1oct/october-stack-watch/nist-ai-200-2-initial-public-draft-tevv-athlon-framework/",
+      "interpretation_boundary": "Prepared content only. Current source identity and September 1 check are recorded; no October review, evidence admission, stage decision, outcome, score, rank, or causal claim is implied."
+    }
+  ],
+  "lane_syntheses": [
+    {
+      "lane_synthesis_id": "177-LANE-01",
+      "stack_lane": "Power and grid",
+      "packet_ids": [
+        "177-PACKET-001",
+        "177-PACKET-002",
+        "177-PACKET-003",
+        "177-PACKET-025"
+      ],
+      "claim_block_references": [
+        "161-PACKET-001-CLAIM-01",
+        "161-PACKET-001-CLAIM-02",
+        "161-PACKET-001-CLAIM-03",
+        "161-PACKET-002-CLAIM-01",
+        "161-PACKET-002-CLAIM-02",
+        "161-PACKET-002-CLAIM-03",
+        "161-PACKET-003-CLAIM-01",
+        "161-PACKET-003-CLAIM-02",
+        "161-PACKET-003-CLAIM-03",
+        "177-PACKET-025-CLAIM-01",
+        "177-PACKET-025-CLAIM-02",
+        "177-PACKET-025-CLAIM-03"
+      ],
+      "synthesis_state": "Reference map prepared — October findings remain null",
+      "boundary": "The lane synthesis references claim blocks by ID and does not duplicate their text or create a lane score, rank, trend, cause, or outcome."
+    },
+    {
+      "lane_synthesis_id": "177-LANE-02",
+      "stack_lane": "Chips and compute",
+      "packet_ids": [
+        "177-PACKET-004",
+        "177-PACKET-005",
+        "177-PACKET-006",
+        "177-PACKET-026"
+      ],
+      "claim_block_references": [
+        "161-PACKET-004-CLAIM-01",
+        "161-PACKET-004-CLAIM-02",
+        "161-PACKET-004-CLAIM-03",
+        "161-PACKET-005-CLAIM-01",
+        "161-PACKET-005-CLAIM-02",
+        "161-PACKET-005-CLAIM-03",
+        "161-PACKET-006-CLAIM-01",
+        "161-PACKET-006-CLAIM-02",
+        "161-PACKET-006-CLAIM-03",
+        "177-PACKET-026-CLAIM-01",
+        "177-PACKET-026-CLAIM-02",
+        "177-PACKET-026-CLAIM-03"
+      ],
+      "synthesis_state": "Reference map prepared — October findings remain null",
+      "boundary": "The lane synthesis references claim blocks by ID and does not duplicate their text or create a lane score, rank, trend, cause, or outcome."
+    },
+    {
+      "lane_synthesis_id": "177-LANE-03",
+      "stack_lane": "Water",
+      "packet_ids": [
+        "177-PACKET-007",
+        "177-PACKET-008",
+        "177-PACKET-009",
+        "177-PACKET-027"
+      ],
+      "claim_block_references": [
+        "161-PACKET-007-CLAIM-01",
+        "161-PACKET-007-CLAIM-02",
+        "161-PACKET-007-CLAIM-03",
+        "161-PACKET-008-CLAIM-01",
+        "161-PACKET-008-CLAIM-02",
+        "161-PACKET-008-CLAIM-03",
+        "161-PACKET-009-CLAIM-01",
+        "161-PACKET-009-CLAIM-02",
+        "161-PACKET-009-CLAIM-03",
+        "177-PACKET-027-CLAIM-01",
+        "177-PACKET-027-CLAIM-02",
+        "177-PACKET-027-CLAIM-03"
+      ],
+      "synthesis_state": "Reference map prepared — October findings remain null",
+      "boundary": "The lane synthesis references claim blocks by ID and does not duplicate their text or create a lane score, rank, trend, cause, or outcome."
+    },
+    {
+      "lane_synthesis_id": "177-LANE-04",
+      "stack_lane": "Mobility and aviation",
+      "packet_ids": [
+        "177-PACKET-010",
+        "177-PACKET-011",
+        "177-PACKET-012",
+        "177-PACKET-028"
+      ],
+      "claim_block_references": [
+        "161-PACKET-010-CLAIM-01",
+        "161-PACKET-010-CLAIM-02",
+        "161-PACKET-010-CLAIM-03",
+        "161-PACKET-011-CLAIM-01",
+        "161-PACKET-011-CLAIM-02",
+        "161-PACKET-011-CLAIM-03",
+        "161-PACKET-012-CLAIM-01",
+        "161-PACKET-012-CLAIM-02",
+        "161-PACKET-012-CLAIM-03",
+        "177-PACKET-028-CLAIM-01",
+        "177-PACKET-028-CLAIM-02",
+        "177-PACKET-028-CLAIM-03"
+      ],
+      "synthesis_state": "Reference map prepared — October findings remain null",
+      "boundary": "The lane synthesis references claim blocks by ID and does not duplicate their text or create a lane score, rank, trend, cause, or outcome."
+    },
+    {
+      "lane_synthesis_id": "177-LANE-05",
+      "stack_lane": "Space",
+      "packet_ids": [
+        "177-PACKET-016",
+        "177-PACKET-017",
+        "177-PACKET-018",
+        "177-PACKET-029"
+      ],
+      "claim_block_references": [
+        "161-PACKET-016-CLAIM-01",
+        "161-PACKET-016-CLAIM-02",
+        "161-PACKET-016-CLAIM-03",
+        "161-PACKET-017-CLAIM-01",
+        "161-PACKET-017-CLAIM-02",
+        "161-PACKET-017-CLAIM-03",
+        "161-PACKET-018-CLAIM-01",
+        "161-PACKET-018-CLAIM-02",
+        "161-PACKET-018-CLAIM-03",
+        "177-PACKET-029-CLAIM-01",
+        "177-PACKET-029-CLAIM-02",
+        "177-PACKET-029-CLAIM-03"
+      ],
+      "synthesis_state": "Reference map prepared — October findings remain null",
+      "boundary": "The lane synthesis references claim blocks by ID and does not duplicate their text or create a lane score, rank, trend, cause, or outcome."
+    },
+    {
+      "lane_synthesis_id": "177-LANE-06",
+      "stack_lane": "Critical minerals and manufacturing",
+      "packet_ids": [
+        "177-PACKET-019",
+        "177-PACKET-020",
+        "177-PACKET-021",
+        "177-PACKET-030"
+      ],
+      "claim_block_references": [
+        "161-PACKET-019-CLAIM-01",
+        "161-PACKET-019-CLAIM-02",
+        "161-PACKET-019-CLAIM-03",
+        "161-PACKET-020-CLAIM-01",
+        "161-PACKET-020-CLAIM-02",
+        "161-PACKET-020-CLAIM-03",
+        "161-PACKET-021-CLAIM-01",
+        "161-PACKET-021-CLAIM-02",
+        "161-PACKET-021-CLAIM-03",
+        "177-PACKET-030-CLAIM-01",
+        "177-PACKET-030-CLAIM-02",
+        "177-PACKET-030-CLAIM-03"
+      ],
+      "synthesis_state": "Reference map prepared — October findings remain null",
+      "boundary": "The lane synthesis references claim blocks by ID and does not duplicate their text or create a lane score, rank, trend, cause, or outcome."
+    },
+    {
+      "lane_synthesis_id": "177-LANE-07",
+      "stack_lane": "Climate and energy",
+      "packet_ids": [
+        "177-PACKET-013",
+        "177-PACKET-014",
+        "177-PACKET-015",
+        "177-PACKET-031"
+      ],
+      "claim_block_references": [
+        "161-PACKET-013-CLAIM-01",
+        "161-PACKET-013-CLAIM-02",
+        "161-PACKET-013-CLAIM-03",
+        "161-PACKET-014-CLAIM-01",
+        "161-PACKET-014-CLAIM-02",
+        "161-PACKET-014-CLAIM-03",
+        "161-PACKET-015-CLAIM-01",
+        "161-PACKET-015-CLAIM-02",
+        "161-PACKET-015-CLAIM-03",
+        "177-PACKET-031-CLAIM-01",
+        "177-PACKET-031-CLAIM-02",
+        "177-PACKET-031-CLAIM-03"
+      ],
+      "synthesis_state": "Reference map prepared — October findings remain null",
+      "boundary": "The lane synthesis references claim blocks by ID and does not duplicate their text or create a lane score, rank, trend, cause, or outcome."
+    },
+    {
+      "lane_synthesis_id": "177-LANE-08",
+      "stack_lane": "AI, quantum, cyber and human futures",
+      "packet_ids": [
+        "177-PACKET-022",
+        "177-PACKET-023",
+        "177-PACKET-024",
+        "177-PACKET-032"
+      ],
+      "claim_block_references": [
+        "161-PACKET-022-CLAIM-01",
+        "161-PACKET-022-CLAIM-02",
+        "161-PACKET-022-CLAIM-03",
+        "161-PACKET-023-CLAIM-01",
+        "161-PACKET-023-CLAIM-02",
+        "161-PACKET-023-CLAIM-03",
+        "161-PACKET-024-CLAIM-01",
+        "161-PACKET-024-CLAIM-02",
+        "161-PACKET-024-CLAIM-03",
+        "177-PACKET-032-CLAIM-01",
+        "177-PACKET-032-CLAIM-02",
+        "177-PACKET-032-CLAIM-03"
+      ],
+      "synthesis_state": "Reference map prepared — October findings remain null",
+      "boundary": "The lane synthesis references claim blocks by ID and does not duplicate their text or create a lane score, rank, trend, cause, or outcome."
+    }
+  ],
+  "public_html_routes": [
+    "/review/v1oct/october-stack-watch/",
+    "/review/v1oct/october-stack-watch/north-american-peak-demand-forecast-2025-ltra/",
+    "/review/v1oct/october-stack-watch/us-interconnection-queue-snapshot-2026/",
+    "/review/v1oct/october-stack-watch/us-battery-capacity-june-2026/",
+    "/review/v1oct/october-stack-watch/tsmc-us-investment-announcement-july-2026/",
+    "/review/v1oct/october-stack-watch/compute-supply-chain-rd-lois-july-2026/",
+    "/review/v1oct/october-stack-watch/us-data-center-electricity-use-scenarios/",
+    "/review/v1oct/october-stack-watch/colorado-river-2027-operations-decision/",
+    "/review/v1oct/october-stack-watch/phoenix-ama-version-3-groundwater-projection/",
+    "/review/v1oct/october-stack-watch/wifia-portfolio-2025/",
+    "/review/v1oct/october-stack-watch/us-road-fatalities-estimate-2025/",
+    "/review/v1oct/october-stack-watch/faa-controller-workforce-2026-plan/",
+    "/review/v1oct/october-stack-watch/amtrak-fy2025-ridership/",
+    "/review/v1oct/october-stack-watch/us-climate-conditions-2025/",
+    "/review/v1oct/october-stack-watch/us-wind-solar-generation-2025/",
+    "/review/v1oct/october-stack-watch/aemo-q1-2026-renewables-storage/",
+    "/review/v1oct/october-stack-watch/faa-commercial-space-operations-fy2025/",
+    "/review/v1oct/october-stack-watch/eastern-range-orbital-launches-2025/",
+    "/review/v1oct/october-stack-watch/artemis-iii-hardware-integration-august-2026/",
+    "/review/v1oct/october-stack-watch/us-mineral-economy-import-reliance-2025/",
+    "/review/v1oct/october-stack-watch/thacker-pass-financing-designed-capacity/",
+    "/review/v1oct/october-stack-watch/usa-rare-earth-mine-to-magnet-award/",
+    "/review/v1oct/october-stack-watch/nist-aite-launch-2026/",
+    "/review/v1oct/october-stack-watch/quantum-chips-loi-portfolio-2026/",
+    "/review/v1oct/october-stack-watch/ic3-cyber-harm-2025/",
+    "/review/v1oct/october-stack-watch/eia-short-term-energy-outlook-august-2026/",
+    "/review/v1oct/october-stack-watch/chips-r-d-office-awards-registry-august-2026/",
+    "/review/v1oct/october-stack-watch/reclamation-august-2026-yakima-water-supply-forecast/",
+    "/review/v1oct/october-stack-watch/faa-mid-atlantic-hybrid-electric-demonstration-flights/",
+    "/review/v1oct/october-stack-watch/nasa-deep-space-station-23-operational-addition-at-goldstone/",
+    "/review/v1oct/october-stack-watch/doe-500-million-critical-mineral-and-battery-project-selections/",
+    "/review/v1oct/october-stack-watch/noaa-u-s-temperature-and-precipitation-assessment-july-2026/",
+    "/review/v1oct/october-stack-watch/nist-ai-200-2-initial-public-draft-tevv-athlon-framework/"
+  ],
+  "public_json_exports": [
+    "/data/phase-177-october-stack-watch-and-source-currency-sweep.json"
+  ]
+}

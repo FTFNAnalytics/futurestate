@@ -1,0 +1,737 @@
+{
+  "schema_version": "1.0",
+  "phase": 174,
+  "program_id": "FTFN-PHASE-174",
+  "dataset": "phase_174_evidence_cycle_001_closure_cycle_002_intake",
+  "title": "Evidence Cycle 001 Closure and Cycle 002 Intake",
+  "effective_date": "2026-09-01",
+  "build_status": "Complete locally",
+  "operating_status": "Prepared — closure and all future evidence outcomes Held",
+  "summary": "A thirteen-identity closeout shell for Evidence Cycle 001 and a ten-candidate, official-authority intake for Cycle 002 without predated checks or outcomes.",
+  "cycle_001_closeout": {
+    "cycle_id": "evidence-cycle-001",
+    "earliest_lawful_close_date": "2026-10-09",
+    "current_state": "Held — ten cycle decisions remain scheduled",
+    "required_audit_items": 13,
+    "terminal_items_at_effective_date": 3,
+    "unresolved_items_at_effective_date": 10,
+    "final_three_gate_ids": [
+      "60-CYCLE-LOUDOUN-STANDARDS",
+      "60-CYCLE-AMTRAK-NAMED-ASSET-RELIABILITY",
+      "60-CYCLE-NNSA-RECURRING-QUALIFIED-RATE"
+    ],
+    "closure_rule": "Close only when all thirteen identities carry real dated decisions and receipts or contract-compliant bounded blocker/reschedule states, every propagation proof resolves, and Git state is reported separately.",
+    "closure_decision": null,
+    "closure_date": null,
+    "closure_receipt_id": null,
+    "next_action": "Operate each remaining gate on its lawful date, preserve shared-date identities separately, then run the thirteen-item audit after both October 9 decisions are terminal.",
+    "audit_items": [
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-01",
+        "cycle_item_id": "60-CYCLE-DARPA-RESULTS",
+        "target": "DARPA Lift Challenge official measured results",
+        "scheduled_check_date": "2026-08-14",
+        "exact_next_artifact": "A dated DARPA final-results artifact identifying measured team performance, winners, and prize decisions.",
+        "source_ids": [
+          "source-darpa-lift-challenge-2026"
+        ],
+        "affected_record_ids": [
+          "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+          "briefing-adoption-003-autonomy-evtol",
+          "reader-pathway-autonomy-regulation-to-service",
+          "dependency-map-technology-adoption-is-not-operating-outcome"
+        ],
+        "audit_state": "Terminal at September 1 cutoff",
+        "decision_status": "material_change",
+        "decision_date": "2026-08-23",
+        "receipt_id": "receipt-60-darpa-2026-08-23-results",
+        "propagation_proof_id": "60-PROP-DARPA-2026-08-23",
+        "propagation_status": "complete",
+        "git_backed_release_state": "Verified",
+        "next_action": "Preserve the terminal receipt and perform the bounded companion recheck on 2026-09-23.",
+        "slug": "cycle-001-60-cycle-darpa-results",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-darpa-results/"
+      },
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-02",
+        "cycle_item_id": "60-CYCLE-SPACE-COAST-SLF-LICENCE",
+        "target": "Space Coast Shuttle Landing Facility licence disposition",
+        "scheduled_check_date": "2026-08-15",
+        "exact_next_artifact": "A formal FAA renewal, replacement, lapse, surrender, or other current disposition for the Shuttle Landing Facility site licence.",
+        "source_ids": [
+          "source-faa-shuttle-landing-facility-license"
+        ],
+        "affected_record_ids": [
+          "signal-shuttle-landing-facility-license-status-watch",
+          "briefing-local-conversion-004-space-coast",
+          "reader-pathway-space-coast-plan-to-mission",
+          "dependency-map-local-authorization-is-not-operation",
+          "local-florida-space-coast-launch-corridor",
+          "61-PROJECT-SPACE-COAST-AUTHORITY"
+        ],
+        "audit_state": "Terminal at September 1 cutoff",
+        "decision_status": "no_material_change",
+        "decision_date": "2026-08-15",
+        "receipt_id": "receipt-60-slf-2026-08-15-no-material-change",
+        "propagation_proof_id": "60-PROP-SLF-2026-08-15",
+        "propagation_status": "complete",
+        "git_backed_release_state": "Verified",
+        "next_action": "Preserve the terminal receipt and perform the bounded companion recheck on 2026-09-15.",
+        "slug": "cycle-001-60-cycle-space-coast-slf-licence",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-space-coast-slf-licence/"
+      },
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-03",
+        "cycle_item_id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+        "target": "Louisiana Starlink observed adoption",
+        "scheduled_check_date": "2026-09-01",
+        "exact_next_artifact": "A ConnectLA- or SpaceX-issued project return that fixes the eligible-location cohort and reports actual installations, subscriptions, or service taken with observation period and method.",
+        "source_ids": [
+          "source-57b-louisiana-starlink-bead-agreement"
+        ],
+        "affected_record_ids": [
+          "signal-57y-preserved-la-starlink-adoption",
+          "briefing-outcomes-watch-001-what-actually-changed",
+          "reader-pathway-policy-standards-to-implementation",
+          "dependency-map-comparative-outcomes-require-common-denominators"
+        ],
+        "audit_state": "Terminal at September 1 cutoff",
+        "decision_status": "no_material_change",
+        "decision_date": "2026-09-01",
+        "receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+        "propagation_proof_id": "60-PROP-LOUISIANA-STARLINK-2026-09-01",
+        "propagation_status": "complete_locally_git_held",
+        "git_backed_release_state": "Held",
+        "next_action": "Preserve the terminal receipt and perform the bounded companion recheck on 2026-09-08.",
+        "slug": "cycle-001-60-cycle-louisiana-starlink-adoption",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-louisiana-starlink-adoption/"
+      },
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-04",
+        "cycle_item_id": "60-CYCLE-LOUISIANA-NEXTLINK-ADOPTION",
+        "target": "Louisiana Nextlink observed adoption",
+        "scheduled_check_date": "2026-09-09",
+        "exact_next_artifact": "Observed subscription or take-rate evidence for a fixed eligible-location cohort after service availability.",
+        "source_ids": [
+          "source-57b-louisiana-nextlink-first-bead-tower"
+        ],
+        "affected_record_ids": [
+          "signal-57y-preserved-la-nextlink-adoption",
+          "briefing-outcomes-watch-001-what-actually-changed",
+          "reader-pathway-policy-standards-to-implementation",
+          "dependency-map-comparative-outcomes-require-common-denominators"
+        ],
+        "audit_state": "Held — scheduled gate not yet operated",
+        "decision_status": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "propagation_status": "not_started",
+        "git_backed_release_state": "Held — no lawful decision",
+        "next_action": "On 2026-09-09, inspect the exact official artifact and issue one dated decision receipt.",
+        "slug": "cycle-001-60-cycle-louisiana-nextlink-adoption",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-louisiana-nextlink-adoption/"
+      },
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-05",
+        "cycle_item_id": "60-CYCLE-AMTRAK-PIDS-CLOSEOUT",
+        "target": "Amtrak PIDS final closeout",
+        "scheduled_check_date": "2026-09-10",
+        "exact_next_artifact": "A final FRA-accepted closeout record tied to the PIDS program scope and completed deployment denominator.",
+        "source_ids": [
+          "source-57b-amtrak-ada-progress-june-2026"
+        ],
+        "affected_record_ids": [
+          "signal-57y-preserved-amtrak-pids",
+          "briefing-outcomes-watch-001-what-actually-changed",
+          "reader-pathway-autonomy-regulation-to-service",
+          "dependency-map-comparative-outcomes-require-common-denominators"
+        ],
+        "audit_state": "Held — scheduled gate not yet operated",
+        "decision_status": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "propagation_status": "not_started",
+        "git_backed_release_state": "Held — no lawful decision",
+        "next_action": "On 2026-09-10, inspect the exact official artifact and issue one dated decision receipt.",
+        "slug": "cycle-001-60-cycle-amtrak-pids-closeout",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-amtrak-pids-closeout/"
+      },
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-06",
+        "cycle_item_id": "60-CYCLE-HANFORD-MATERIAL-BALANCE",
+        "target": "Hanford complete material balance",
+        "scheduled_check_date": "2026-09-10",
+        "exact_next_artifact": "A compatible material balance covering feed, immobilized glass, secondary waste, inventory change, losses, period, and reconciliation method.",
+        "source_ids": [
+          "source-57d-hanford-wtp-consent-july-2026"
+        ],
+        "affected_record_ids": [
+          "signal-57y-preserved-hanford-mass-balance",
+          "briefing-outcomes-watch-001-what-actually-changed",
+          "reader-pathway-advanced-manufacturing-research-to-production",
+          "dependency-map-comparative-outcomes-require-common-denominators"
+        ],
+        "audit_state": "Held — scheduled gate not yet operated",
+        "decision_status": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "propagation_status": "not_started",
+        "git_backed_release_state": "Held — no lawful decision",
+        "next_action": "On 2026-09-10, inspect the exact official artifact and issue one dated decision receipt.",
+        "slug": "cycle-001-60-cycle-hanford-material-balance",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-hanford-material-balance/"
+      },
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-07",
+        "cycle_item_id": "60-CYCLE-NNSA-GAO-BASELINE",
+        "target": "NNSA GAO enterprise baseline closure",
+        "scheduled_check_date": "2026-09-10",
+        "exact_next_artifact": "A final enterprise-wide integrated cost and schedule baseline plus GAO closure evidence tied to recommendation GAO-23-104661.",
+        "source_ids": [
+          "source-56q-gao-23-104661-recommendation-status"
+        ],
+        "affected_record_ids": [
+          "signal-57y-preserved-nnsa-gao-baseline",
+          "briefing-outcomes-watch-001-what-actually-changed",
+          "reader-pathway-policy-standards-to-implementation",
+          "dependency-map-comparative-outcomes-require-common-denominators"
+        ],
+        "audit_state": "Held — scheduled gate not yet operated",
+        "decision_status": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "propagation_status": "not_started",
+        "git_backed_release_state": "Held — no lawful decision",
+        "next_action": "On 2026-09-10, inspect the exact official artifact and issue one dated decision receipt.",
+        "slug": "cycle-001-60-cycle-nnsa-gao-baseline",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-nnsa-gao-baseline/"
+      },
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-08",
+        "cycle_item_id": "60-CYCLE-MONTANA-COMPLETED-QUARTER",
+        "target": "Montana BEAD completed quarterly outcome",
+        "scheduled_check_date": "2026-09-15",
+        "exact_next_artifact": "One complete public quarterly report with project identity, reporting period, locations, completion state, and outcome denominator.",
+        "source_ids": [
+          "source-57f-montana-bead-resource-index-august-2026"
+        ],
+        "affected_record_ids": [
+          "signal-57y-preserved-mt-bead-quarter",
+          "briefing-outcomes-watch-001-what-actually-changed",
+          "reader-pathway-policy-standards-to-implementation",
+          "dependency-map-local-authorization-is-not-operation"
+        ],
+        "audit_state": "Held — scheduled gate not yet operated",
+        "decision_status": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "propagation_status": "not_started",
+        "git_backed_release_state": "Held — no lawful decision",
+        "next_action": "On 2026-09-15, inspect the exact official artifact and issue one dated decision receipt.",
+        "slug": "cycle-001-60-cycle-montana-completed-quarter",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-montana-completed-quarter/"
+      },
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-09",
+        "cycle_item_id": "60-CYCLE-ARIZONA-WASTEWATER",
+        "target": "Phoenix and TSMC wastewater delivery and operation",
+        "scheduled_check_date": "2026-09-22",
+        "exact_next_artifact": "A project record establishing completed and accepted conveyance work, operating reclaimed-water infrastructure, measured flow, discharge or compliance, or a facility water balance.",
+        "source_ids": [
+          "source-phoenix-tsmc-2026-wastewater-development-agreement"
+        ],
+        "affected_record_ids": [
+          "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+          "briefing-local-conversion-001-southwest-chips",
+          "reader-pathway-industrial-water-agreement-to-reuse-operation",
+          "dependency-map-frontier-system-constraint-atlas",
+          "local-us-southwest-chip-corridor",
+          "61-PROJECT-TSMC-ARIZONA"
+        ],
+        "audit_state": "Held — scheduled gate not yet operated",
+        "decision_status": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "propagation_status": "not_started",
+        "git_backed_release_state": "Held — no lawful decision",
+        "next_action": "On 2026-09-22, inspect the exact official artifact and issue one dated decision receipt.",
+        "slug": "cycle-001-60-cycle-arizona-wastewater",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-arizona-wastewater/"
+      },
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-10",
+        "cycle_item_id": "60-CYCLE-NNSA-ACCEPTED-CAPACITY",
+        "target": "NNSA accepted operating capacity",
+        "scheduled_check_date": "2026-09-24",
+        "exact_next_artifact": "A final accepted operating-capacity artifact linked to operating configuration, acceptance criteria, and observed qualified output.",
+        "source_ids": [
+          "source-57b-nnsa-pit-production-draft-peis-2026"
+        ],
+        "affected_record_ids": [
+          "signal-57y-preserved-nnsa-accepted-capacity",
+          "briefing-adoption-004-advanced-manufacturing",
+          "reader-pathway-advanced-manufacturing-research-to-production",
+          "dependency-map-technology-adoption-is-not-operating-outcome"
+        ],
+        "audit_state": "Held — scheduled gate not yet operated",
+        "decision_status": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "propagation_status": "not_started",
+        "git_backed_release_state": "Held — no lawful decision",
+        "next_action": "On 2026-09-24, inspect the exact official artifact and issue one dated decision receipt.",
+        "slug": "cycle-001-60-cycle-nnsa-accepted-capacity",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-nnsa-accepted-capacity/"
+      },
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-11",
+        "cycle_item_id": "60-CYCLE-LOUDOUN-STANDARDS",
+        "target": "Loudoun Phase 2 data-center standards",
+        "scheduled_check_date": "2026-10-01",
+        "exact_next_artifact": "A county staff report, public-hearing record, board action, adopted text, effective date, or formal revised schedule for Phase 2 standards.",
+        "source_ids": [
+          "source-loudoun-phase2-data-center-standards"
+        ],
+        "affected_record_ids": [
+          "signal-loudoun-phase2-data-center-standards-watch",
+          "briefing-local-conversion-002-northern-virginia-compute",
+          "reader-pathway-northern-virginia-compute-to-service",
+          "dependency-map-frontier-system-constraint-atlas",
+          "local-northern-virginia-data-center-corridor",
+          "61-PROJECT-NOVA-LARGE-LOAD"
+        ],
+        "audit_state": "Held — scheduled gate not yet operated",
+        "decision_status": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "propagation_status": "not_started",
+        "git_backed_release_state": "Held — no lawful decision",
+        "next_action": "On 2026-10-01, inspect the exact official artifact and issue one dated decision receipt.",
+        "slug": "cycle-001-60-cycle-loudoun-standards",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-loudoun-standards/"
+      },
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-12",
+        "cycle_item_id": "60-CYCLE-AMTRAK-NAMED-ASSET-RELIABILITY",
+        "target": "Amtrak named-asset reliability",
+        "scheduled_check_date": "2026-10-09",
+        "exact_next_artifact": "A repeated named-asset reliability series with stable asset identity, period, denominator, failure definition, and repair outcome.",
+        "source_ids": [
+          "source-57e-amtrak-accessibility-progress-june-2026"
+        ],
+        "affected_record_ids": [
+          "signal-57y-preserved-amtrak-reliability",
+          "briefing-outcomes-watch-001-what-actually-changed",
+          "reader-pathway-autonomy-regulation-to-service",
+          "dependency-map-comparative-outcomes-require-common-denominators"
+        ],
+        "audit_state": "Held — scheduled gate not yet operated",
+        "decision_status": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "propagation_status": "not_started",
+        "git_backed_release_state": "Held — no lawful decision",
+        "next_action": "On 2026-10-09, inspect the exact official artifact and issue one dated decision receipt.",
+        "slug": "cycle-001-60-cycle-amtrak-named-asset-reliability",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-amtrak-named-asset-reliability/"
+      },
+      {
+        "audit_item_id": "174-CYCLE1-AUDIT-13",
+        "cycle_item_id": "60-CYCLE-NNSA-RECURRING-QUALIFIED-RATE",
+        "target": "NNSA recurring qualified pit rate",
+        "scheduled_check_date": "2026-10-09",
+        "exact_next_artifact": "A recurring qualified-output series with acceptance definition, facility identity, period, denominator, and comparable rate calculation.",
+        "source_ids": [
+          "source-57f-nnsa-pit-production-current"
+        ],
+        "affected_record_ids": [
+          "signal-57y-preserved-nnsa-qualified-rate",
+          "briefing-adoption-004-advanced-manufacturing",
+          "reader-pathway-advanced-manufacturing-research-to-production",
+          "dependency-map-technology-adoption-is-not-operating-outcome"
+        ],
+        "audit_state": "Held — scheduled gate not yet operated",
+        "decision_status": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "propagation_status": "not_started",
+        "git_backed_release_state": "Held — no lawful decision",
+        "next_action": "On 2026-10-09, inspect the exact official artifact and issue one dated decision receipt.",
+        "slug": "cycle-001-60-cycle-nnsa-recurring-qualified-rate",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-nnsa-recurring-qualified-rate/"
+      }
+    ]
+  },
+  "cycle_002_intake": {
+    "cycle_id": "evidence-cycle-002-candidate-intake",
+    "intake_state": "Prepared — candidates are not admitted evidence gates",
+    "candidate_count": 10,
+    "candidate_range_contract": "Eight to twelve candidates",
+    "admission_rule": "A candidate becomes a scheduled gate only after human review confirms the exact artifact, official authority, lawful date or observable event trigger, method and denominator contract, affected-record set, capacity, and stop rule.",
+    "intake_decision": null,
+    "intake_decision_date": null,
+    "intake_receipt_id": null,
+    "candidates": [
+      {
+        "candidate_id": "174-CYCLE2-CANDIDATE-001",
+        "title": "NERC 2026 Long-Term Reliability Assessment",
+        "lane": "Power and grid",
+        "upstream_packet_id": "161-PACKET-001",
+        "primary_authority": "North American Electric Reliability Corporation",
+        "primary_authority_source_ids": [
+          "source-161-nerc-ltra-2025"
+        ],
+        "exact_artifact": "The final NERC 2026 Long-Term Reliability Assessment and its region-level demand, resource, and risk tables.",
+        "event_trigger": "NERC publishes the final 2026 LTRA on its official reliability-assessment surface.",
+        "method_requirement": "Preserve each assessment area's demand forecast, planning-reserve method, scenario, and season.",
+        "denominator_requirement": "Use the named assessment-area peak-demand and resource-capacity denominators; do not aggregate unlike regions.",
+        "affected_record_ids": [
+          "161-PACKET-001",
+          "171-CHAPTER-01"
+        ],
+        "slug": "cycle-002-174-cycle2-candidate-001",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-001/",
+        "candidate_state": "Prepared — intake only",
+        "lawful_date": null,
+        "source_checked_date": null,
+        "decision": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "git_backed_release_state": "Held",
+        "stop_rule": "Stop if the exact official artifact is absent, preliminary, method-incompatible, denominator-incompatible, or cannot be bound to the named identity; issue no outcome claim from an adjacent artifact."
+      },
+      {
+        "candidate_id": "174-CYCLE2-CANDIDATE-002",
+        "title": "Queued Up next annual interconnection inventory",
+        "lane": "Power and grid",
+        "upstream_packet_id": "161-PACKET-002",
+        "primary_authority": "Lawrence Berkeley National Laboratory",
+        "primary_authority_source_ids": [
+          "source-161-lbnl-queued-up-2026"
+        ],
+        "exact_artifact": "The next final Queued Up report and downloadable project-level workbook with a stated data cutoff.",
+        "event_trigger": "Berkeley Lab publishes the next Queued Up annual report and workbook on its official Electricity Markets & Policy surface.",
+        "method_requirement": "Retain project-status taxonomy, queue vintage, technology grouping, and treatment of hybrid projects.",
+        "denominator_requirement": "Report projects and nameplate capacity separately; never convert queued capacity into completed capacity.",
+        "affected_record_ids": [
+          "161-PACKET-002",
+          "171-CHAPTER-01",
+          "171-ESSAY-01"
+        ],
+        "slug": "cycle-002-174-cycle2-candidate-002",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-002/",
+        "candidate_state": "Prepared — intake only",
+        "lawful_date": null,
+        "source_checked_date": null,
+        "decision": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "git_backed_release_state": "Held",
+        "stop_rule": "Stop if the exact official artifact is absent, preliminary, method-incompatible, denominator-incompatible, or cannot be bound to the named identity; issue no outcome claim from an adjacent artifact."
+      },
+      {
+        "candidate_id": "174-CYCLE2-CANDIDATE-003",
+        "title": "United States data-center electricity-use update",
+        "lane": "Chips and compute",
+        "upstream_packet_id": "161-PACKET-006",
+        "primary_authority": "United States Department of Energy and Lawrence Berkeley National Laboratory",
+        "primary_authority_source_ids": [
+          "source-161-lbnl-data-center-energy-usage-2024"
+        ],
+        "exact_artifact": "A final DOE or Berkeley Lab update with observed national data-center electricity use, analysis year, model version, and scenario bounds.",
+        "event_trigger": "DOE or Berkeley Lab publishes a successor national data-center energy-use report or official data release.",
+        "method_requirement": "Separate observed baseline, model estimate, and forecast scenario and retain model-version lineage.",
+        "denominator_requirement": "Use national electricity consumption for the same year and method when reporting a share.",
+        "affected_record_ids": [
+          "161-PACKET-006",
+          "171-CHAPTER-02",
+          "171-ESSAY-01"
+        ],
+        "slug": "cycle-002-174-cycle2-candidate-003",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-003/",
+        "candidate_state": "Prepared — intake only",
+        "lawful_date": null,
+        "source_checked_date": null,
+        "decision": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "git_backed_release_state": "Held",
+        "stop_rule": "Stop if the exact official artifact is absent, preliminary, method-incompatible, denominator-incompatible, or cannot be bound to the named identity; issue no outcome claim from an adjacent artifact."
+      },
+      {
+        "candidate_id": "174-CYCLE2-CANDIDATE-004",
+        "title": "Post-2026 Colorado River operations final decision",
+        "lane": "Water",
+        "upstream_packet_id": "161-PACKET-007",
+        "primary_authority": "United States Bureau of Reclamation",
+        "primary_authority_source_ids": [
+          "source-161-usbr-colorado-river-2027-decision"
+        ],
+        "exact_artifact": "The signed Post-2026 Colorado River Operations Record of Decision and final operating alternative tables.",
+        "event_trigger": "The Bureau of Reclamation publishes the signed Record of Decision on its official Post-2026 operations surface.",
+        "method_requirement": "Bind every operating claim to the selected alternative, hydrologic condition, rule, and effective period.",
+        "denominator_requirement": "Retain acre-feet, reservoir elevation, basin, water year, and allocation identity exactly.",
+        "affected_record_ids": [
+          "161-PACKET-007",
+          "171-CHAPTER-03",
+          "171-ESSAY-04"
+        ],
+        "slug": "cycle-002-174-cycle2-candidate-004",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-004/",
+        "candidate_state": "Prepared — intake only",
+        "lawful_date": null,
+        "source_checked_date": null,
+        "decision": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "git_backed_release_state": "Held",
+        "stop_rule": "Stop if the exact official artifact is absent, preliminary, method-incompatible, denominator-incompatible, or cannot be bound to the named identity; issue no outcome claim from an adjacent artifact."
+      },
+      {
+        "candidate_id": "174-CYCLE2-CANDIDATE-005",
+        "title": "WIFIA fiscal-year 2026 portfolio outcomes",
+        "lane": "Water",
+        "upstream_packet_id": "161-PACKET-009",
+        "primary_authority": "United States Environmental Protection Agency",
+        "primary_authority_source_ids": [
+          "source-161-epa-wifia-2025-annual-report"
+        ],
+        "exact_artifact": "EPA's final WIFIA fiscal-year 2026 annual report with project, financing, construction, and population-benefit fields.",
+        "event_trigger": "EPA publishes the final fiscal-year 2026 WIFIA annual report on its official program-results surface.",
+        "method_requirement": "Separate closed loans, financed projects, construction progress, and reported outcomes by report vintage.",
+        "denominator_requirement": "Use EPA's stated project and population denominators without treating financing value as delivered infrastructure.",
+        "affected_record_ids": [
+          "161-PACKET-009",
+          "171-CHAPTER-03",
+          "171-ESSAY-03"
+        ],
+        "slug": "cycle-002-174-cycle2-candidate-005",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-005/",
+        "candidate_state": "Prepared — intake only",
+        "lawful_date": null,
+        "source_checked_date": null,
+        "decision": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "git_backed_release_state": "Held",
+        "stop_rule": "Stop if the exact official artifact is absent, preliminary, method-incompatible, denominator-incompatible, or cannot be bound to the named identity; issue no outcome claim from an adjacent artifact."
+      },
+      {
+        "candidate_id": "174-CYCLE2-CANDIDATE-006",
+        "title": "Final 2025 United States traffic-fatality result",
+        "lane": "Mobility and aviation",
+        "upstream_packet_id": "161-PACKET-010",
+        "primary_authority": "National Highway Traffic Safety Administration",
+        "primary_authority_source_ids": [
+          "source-161-nhtsa-road-fatalities-2025-estimate"
+        ],
+        "exact_artifact": "The final 2025 FARS fatality file and NHTSA final summary with vehicle-miles-traveled rate denominator.",
+        "event_trigger": "NHTSA releases final 2025 FARS data or a final 2025 traffic-fatality report.",
+        "method_requirement": "Distinguish early estimate, revised estimate, and final FARS result and retain revision lineage.",
+        "denominator_requirement": "Use fatalities and fatality rate per 100 million vehicle miles traveled for the same final period.",
+        "affected_record_ids": [
+          "161-PACKET-010",
+          "171-CHAPTER-04",
+          "171-ESSAY-03"
+        ],
+        "slug": "cycle-002-174-cycle2-candidate-006",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-006/",
+        "candidate_state": "Prepared — intake only",
+        "lawful_date": null,
+        "source_checked_date": null,
+        "decision": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "git_backed_release_state": "Held",
+        "stop_rule": "Stop if the exact official artifact is absent, preliminary, method-incompatible, denominator-incompatible, or cannot be bound to the named identity; issue no outcome claim from an adjacent artifact."
+      },
+      {
+        "candidate_id": "174-CYCLE2-CANDIDATE-007",
+        "title": "AEMO next quarterly renewable and storage operations",
+        "lane": "Climate and energy",
+        "upstream_packet_id": "161-PACKET-015",
+        "primary_authority": "Australian Energy Market Operator",
+        "primary_authority_source_ids": [
+          "source-161-aemo-q1-2026-qed"
+        ],
+        "exact_artifact": "The next final Quarterly Energy Dynamics report and workbook with interval, region, generation, price, and storage-operation tables.",
+        "event_trigger": "AEMO publishes the next final Quarterly Energy Dynamics report and data workbook.",
+        "method_requirement": "Preserve quarter, region, dispatch interval, technology category, and revision status.",
+        "denominator_requirement": "Use regional operational demand and generation denominators from the same quarter and data revision.",
+        "affected_record_ids": [
+          "161-PACKET-015",
+          "171-CHAPTER-05",
+          "171-ESSAY-04"
+        ],
+        "slug": "cycle-002-174-cycle2-candidate-007",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-007/",
+        "candidate_state": "Prepared — intake only",
+        "lawful_date": null,
+        "source_checked_date": null,
+        "decision": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "git_backed_release_state": "Held",
+        "stop_rule": "Stop if the exact official artifact is absent, preliminary, method-incompatible, denominator-incompatible, or cannot be bound to the named identity; issue no outcome claim from an adjacent artifact."
+      },
+      {
+        "candidate_id": "174-CYCLE2-CANDIDATE-008",
+        "title": "FAA fiscal-year 2026 commercial space operations result",
+        "lane": "Space",
+        "upstream_packet_id": "161-PACKET-016",
+        "primary_authority": "Federal Aviation Administration Office of Commercial Space Transportation",
+        "primary_authority_source_ids": [
+          "source-161-faa-aerospace-forecast-2026-2046"
+        ],
+        "exact_artifact": "An FAA final fiscal-year 2026 commercial launch and reentry operations table with completed-operation counts and definitions.",
+        "event_trigger": "FAA publishes a final fiscal-year 2026 commercial space operations result on an official AST surface.",
+        "method_requirement": "Separate forecast from completed licensed or permitted operation and retain launch/reentry classification.",
+        "denominator_requirement": "Use completed operations in the stated fiscal year; do not count licences, payloads, or planned missions as operations.",
+        "affected_record_ids": [
+          "161-PACKET-016",
+          "171-CHAPTER-06",
+          "171-ESSAY-02"
+        ],
+        "slug": "cycle-002-174-cycle2-candidate-008",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-008/",
+        "candidate_state": "Prepared — intake only",
+        "lawful_date": null,
+        "source_checked_date": null,
+        "decision": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "git_backed_release_state": "Held",
+        "stop_rule": "Stop if the exact official artifact is absent, preliminary, method-incompatible, denominator-incompatible, or cannot be bound to the named identity; issue no outcome claim from an adjacent artifact."
+      },
+      {
+        "candidate_id": "174-CYCLE2-CANDIDATE-009",
+        "title": "Mineral Commodity Summaries 2027 import-reliance update",
+        "lane": "Critical minerals and manufacturing",
+        "upstream_packet_id": "161-PACKET-019",
+        "primary_authority": "United States Geological Survey",
+        "primary_authority_source_ids": [
+          "source-usgs-mineral-commodity-summaries"
+        ],
+        "exact_artifact": "The final USGS Mineral Commodity Summaries 2027 publication and commodity tables with 2026 production and net-import-reliance estimates.",
+        "event_trigger": "USGS publishes Mineral Commodity Summaries 2027 on its official publications surface.",
+        "method_requirement": "Preserve commodity definition, estimate marker, revision status, and domestic-production method.",
+        "denominator_requirement": "Use apparent consumption and net-import-reliance definitions from the same commodity table and edition.",
+        "affected_record_ids": [
+          "161-PACKET-019",
+          "171-CHAPTER-07",
+          "171-ESSAY-02"
+        ],
+        "slug": "cycle-002-174-cycle2-candidate-009",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-009/",
+        "candidate_state": "Prepared — intake only",
+        "lawful_date": null,
+        "source_checked_date": null,
+        "decision": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "git_backed_release_state": "Held",
+        "stop_rule": "Stop if the exact official artifact is absent, preliminary, method-incompatible, denominator-incompatible, or cannot be bound to the named identity; issue no outcome claim from an adjacent artifact."
+      },
+      {
+        "candidate_id": "174-CYCLE2-CANDIDATE-010",
+        "title": "FBI 2026 Internet Crime Report",
+        "lane": "AI, quantum, cyber and human futures",
+        "upstream_packet_id": "161-PACKET-024",
+        "primary_authority": "Federal Bureau of Investigation Internet Crime Complaint Center",
+        "primary_authority_source_ids": [
+          "source-161-fbi-ic3-2025-report"
+        ],
+        "exact_artifact": "The final FBI IC3 2026 Internet Crime Report with complaint, loss, category, age, and jurisdiction tables.",
+        "event_trigger": "The FBI publishes the final 2026 Internet Crime Report on its official IC3 surface.",
+        "method_requirement": "Retain complaint-based reporting scope, category definitions, reporting year, and revision status.",
+        "denominator_requirement": "Use submitted complaints and reported losses as defined by IC3; do not infer incident prevalence or population risk.",
+        "affected_record_ids": [
+          "161-PACKET-024",
+          "171-CHAPTER-08",
+          "171-ESSAY-04"
+        ],
+        "slug": "cycle-002-174-cycle2-candidate-010",
+        "route": "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-010/",
+        "candidate_state": "Prepared — intake only",
+        "lawful_date": null,
+        "source_checked_date": null,
+        "decision": null,
+        "decision_date": null,
+        "receipt_id": null,
+        "propagation_proof_id": null,
+        "git_backed_release_state": "Held",
+        "stop_rule": "Stop if the exact official artifact is absent, preliminary, method-incompatible, denominator-incompatible, or cannot be bound to the named identity; issue no outcome claim from an adjacent artifact."
+      }
+    ]
+  },
+  "counts": {
+    "cycle_001_audit_items": 13,
+    "cycle_001_terminal_at_effective_date": 3,
+    "cycle_001_scheduled_at_effective_date": 10,
+    "cycle_001_final_october_gates": 3,
+    "cycle_002_candidates": 10,
+    "cycle_002_candidate_lanes": 8,
+    "predated_cycle_001_decisions": 0,
+    "cycle_002_source_checks": 0,
+    "cycle_002_decisions": 0,
+    "cycle_002_receipts": 0
+  },
+  "publication_boundaries": [
+    "The closeout shell is not a Cycle 001 closure receipt.",
+    "A Cycle 002 candidate is not a source check, scheduled gate, evidence decision, or publication outcome.",
+    "Future dates, source checks, decisions, receipts, propagation proofs, Git publication, deployment, and v1 promotion remain null or Held.",
+    "Candidate intake reuses official source identities but does not claim that a successor artifact exists."
+  ],
+  "routes": {
+    "hub": "/review/v1oct/cycle-closure-intake/",
+    "public_export": "/data/phase-174-evidence-cycle-closure-intake.json"
+  },
+  "public_html_routes": [
+    "/review/v1oct/cycle-closure-intake/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-darpa-results/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-space-coast-slf-licence/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-louisiana-starlink-adoption/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-louisiana-nextlink-adoption/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-amtrak-pids-closeout/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-hanford-material-balance/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-nnsa-gao-baseline/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-montana-completed-quarter/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-arizona-wastewater/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-nnsa-accepted-capacity/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-loudoun-standards/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-amtrak-named-asset-reliability/",
+    "/review/v1oct/cycle-closure-intake/cycle-001-60-cycle-nnsa-recurring-qualified-rate/",
+    "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-001/",
+    "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-002/",
+    "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-003/",
+    "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-004/",
+    "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-005/",
+    "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-006/",
+    "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-007/",
+    "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-008/",
+    "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-009/",
+    "/review/v1oct/cycle-closure-intake/cycle-002-174-cycle2-candidate-010/"
+  ],
+  "public_json_exports": [
+    "/data/phase-174-evidence-cycle-closure-intake.json"
+  ]
+}

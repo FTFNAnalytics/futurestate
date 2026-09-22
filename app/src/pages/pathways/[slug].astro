@@ -1,0 +1,11 @@
+---
+import {getCollection} from 'astro:content';
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import ReaderPathway from '../../components/atlas/ReaderPathway.astro';
+export async function getStaticPaths(){return (await getCollection('readerPathways')).map(pathway=>({params:{slug:pathway.data.slug},props:{pathway}}));}
+const {pathway}=Astro.props;
+---
+<BaseLayout title={`${pathway.data.title} | FTFN`} description={pathway.data.summary} robots={pathway.data.record_status==='Published'?'index, follow':'noindex, follow'}>
+  <section class="page-section"><h1 class="page-title">{pathway.data.title}</h1><p>This complete pathway preserves the linked historical records and their limits. Publication labels are not a new independent review or an operating-outcome finding. <a href="/atlas/">Return to the Atlas.</a></p></section>
+  <ReaderPathway pathway={pathway}/>
+</BaseLayout>

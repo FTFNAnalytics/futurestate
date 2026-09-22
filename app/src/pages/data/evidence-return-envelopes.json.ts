@@ -1,9 +1,11 @@
 import type { APIRoute } from "astro";
 import ledger from "../../data/phase-67-evidence-return-envelope-ledger.json";
+import { projectEvidenceRecord, currentEvidenceLedger } from '../../lib/current-evidence.mjs';
 import { publicDatasetResponse } from "../../lib/public-data";
 
 export const GET: APIRoute = async () => {
   const records = ledger.envelope_records.map((record) => ({
+    snapshot_as_of: '2026-09-01', current_state_as_of: currentEvidenceLedger.as_of_date, current_state: projectEvidenceRecord(record),
     envelope_id: record.envelope_id,
     path: `/evidence/qualification/${record.slug}/`,
     record_kind: record.record_kind,
@@ -16,6 +18,7 @@ export const GET: APIRoute = async () => {
     envelope_state: record.envelope_state,
     exact_next_artifact: record.exact_next_artifact,
     source_ids: record.source_ids,
+    checked_source_ids: record.checked_source_ids ?? [],
     underlying_signal_id: record.underlying_signal_id,
     named_file_ids: record.named_file_ids,
     qualification_packet_ids: record.qualification_packet_ids,
@@ -31,13 +34,16 @@ export const GET: APIRoute = async () => {
     decision_date: record.decision_date,
     decision_status: record.decision_status,
     propagation_status: record.propagation_status,
+    content_propagation_status: record.content_propagation_status ?? (record.propagation_status === "complete" ? "complete" : null),
+    git_backed_release_status: record.git_backed_release_status ?? (record.envelope_state === "Release Verified" ? "verified" : null),
     next_check_date: record.next_check_date,
-    publication_boundary: record.publication_boundary
+    publication_boundary: record.publication_boundary,
+    companion_rechecks: record.companion_rechecks ?? []
   }));
 
   return publicDatasetResponse(
     "evidence_return_envelopes",
-    "Thirteen public-safe Evidence Cycle 001 return envelopes preserving exact dates, artifacts, sources, signals, named-file bindings, and no-transfer decisions; two Wave 60B envelopes are release-verified and eleven future envelopes retain empty receipt fields.",
+    "Thirteen public-safe return envelopes. Top-level fields preserve the September 1 baseline; current_state carries eight dated local decisions and five scheduled gates as of September 15. SLF renewal is a separate companion correction, not a qualification or operating outcome.",
     records
   );
 };

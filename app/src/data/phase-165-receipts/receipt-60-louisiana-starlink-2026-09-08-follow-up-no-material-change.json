@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "receipt_id": "receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change",
+  "receipt_type": "No Material Change",
+  "receipt_scope": "bounded_companion_recheck",
+  "counts_as_cycle_decision": false,
+  "operation_run_id": "165-OPERATION-001",
+  "upstream_cycle_item_id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+  "prior_receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+  "source_checked_date": "2026-09-08",
+  "decision_date": "2026-09-08",
+  "decision_status": "no_material_change",
+  "signal_decision": "retain_in_review_no_material_change",
+  "affected_record_ids": [
+    "source-57b-louisiana-starlink-bead-agreement",
+    "source-165-led-spacex-louisiana-campus-starlink-offer",
+    "source-165-starlink-louisiana-community-discount",
+    "source-165-connectla-resource-library",
+    "source-60-connectla-spacex-pecan-island-plan-2026",
+    "source-60-connectla-starlink-final-proposal-location-cohort-2026",
+    "source-60-starlink-2025-progress-report",
+    "signal-57y-preserved-la-starlink-adoption",
+    "briefing-outcomes-watch-001-what-actually-changed",
+    "briefing-evidence-cycle-001-operating-baseline",
+    "briefing-evidence-cycle-001-wave-60c-field-guide",
+    "briefing-evidence-return-control-room-001",
+    "reader-pathway-policy-standards-to-implementation",
+    "dependency-map-comparative-outcomes-require-common-denominators",
+    "dependency-map-artifact-return-to-reader-state",
+    "60C-DESK-001",
+    "67-RETURN-003",
+    "162-BRIEF-004"
+  ],
+  "prior_state": "The September 1 No Material Change receipt closed the one Louisiana Starlink Cycle 001 gate while retaining the adoption signal In Review and scheduling a bounded September 8 companion recheck. The planned cohort remained 10,635 locations and no compatible observed adoption numerator had been published on the reviewed official surfaces.",
+  "current_state": "The September 8 companion recheck preserves the September 1 cycle decision and keeps the signal In Review. Current ConnectLA and Starlink or SpaceX surfaces fix planned cohort identities and expose prospective access, offer, authorization, provider-wide, and availability context, but do not supply a compatible observed installation, subscription, or service-taken result for the Louisiana BEAD cohort.",
+  "bounded_finding": "ConnectLA's final-proposal files identify SpaceX and map exactly 10,635 unique location IDs across 87 projects, while current ConnectLA releases describe planned access and a 270-location Pecan Island subset. Starlink's current public surfaces supply offer, availability, and provider-wide context. None of the bounded official surfaces reports actual Louisiana BEAD installations, subscriptions, service taken, an observation period, or a disclosed cohort method.",
+  "data_quality_note": "Exhibit B project descriptions sum to 10,636 because CM61-BEAD-LA-351-3003 describes 2,937 locations while location-level Exhibit C maps 2,936 to that project. Exhibit C and the issuer's June 11 release both support the 10,635 planned-location denominator. The mismatch is preserved and does not establish an adoption outcome.",
+  "evidence_boundary": "This companion receipt is limited to the official public surfaces reviewed on September 8. It does not establish that a qualifying artifact does not exist, that no eligible location installed or subscribed, or that the program succeeded or failed. A planned denominator, prospective connection statement, discount, availability map, authorization milestone, or provider-wide customer total cannot substitute for observed Louisiana BEAD-cohort adoption.",
+  "publication_effect": "Publish this append-only companion receipt and its bounded No Material Change result through the assigned source, signal, dossier, pathway, dependency-map, desk, envelope, and update surfaces. Preserve the September 1 cycle receipt and three-of-thirteen completed-decision count, advance no Phase 61 file or Phase 64 cell, and keep Git-backed release Held.",
+  "exact_next_artifact": "A ConnectLA- or SpaceX-issued project return that fixes the eligible-location cohort and reports actual installations, subscriptions, or service taken with observation period and method.",
+  "next_check_date": "2026-10-09",
+  "next_check_trigger": "Reopen earlier if ConnectLA, SpaceX, or Starlink publishes the exact fixed-cohort outcome return; otherwise reconcile this hold in the October 9 Evidence Cycle 001 final audit.",
+  "next_check_boundary": "October 9 is the existing Cycle 001 final-audit date, not a new or fourteenth gate. An earlier issuer return may trigger review, but no outcome may be inferred or predated.",
+  "checked_source_ids": [
+    "source-57b-louisiana-starlink-bead-agreement",
+    "source-165-led-spacex-louisiana-campus-starlink-offer",
+    "source-165-starlink-louisiana-community-discount",
+    "source-165-connectla-resource-library",
+    "source-60-connectla-spacex-pecan-island-plan-2026",
+    "source-60-connectla-starlink-final-proposal-location-cohort-2026",
+    "source-60-starlink-2025-progress-report"
+  ],
+  "official_surface_checks": [
+    {
+      "publisher": "ConnectLA",
+      "artifact": "Starlink BEAD grant agreement",
+      "url": "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access",
+      "artifact_date": "2026-06-11",
+      "accessed_date": "2026-09-08",
+      "result": "Confirms prospective access for 10,635 locations in more than 50 parishes; supplies no observed installation, subscription, or service-taken series."
+    },
+    {
+      "publisher": "ConnectLA",
+      "artifact": "SpaceX Louisiana campus and Pecan Island announcement",
+      "url": "https://connect.la.gov/press-releases/spacex-announces-100-billion-louisiana-campus-advancing-broadband-access-in-pecan-island",
+      "artifact_date": "2026-08-26",
+      "accessed_date": "2026-09-08",
+      "result": "Identifies a planned 270-home-and-business subset and offer terms, but remains future-tense and gives no take-up count, period, or method."
+    },
+    {
+      "publisher": "ConnectLA",
+      "artifact": "Louisiana 50,000-location NEPA milestone",
+      "url": "https://connect.la.gov/press-releases/louisiana-hits-nepa-milestone-for-over-50k-serviceable-locations-advancing-broadband-progress-across-the-state",
+      "artifact_date": "2026-09-02",
+      "accessed_date": "2026-09-08",
+      "result": "Reports an authorization milestone and statewide aggregate context; it is not Starlink-specific and contains no measured adoption."
+    },
+    {
+      "publisher": "ConnectLA",
+      "artifact": "Press-release index",
+      "url": "https://connect.la.gov/press-releases",
+      "artifact_date": null,
+      "accessed_date": "2026-09-08",
+      "result": "The current index was reviewed through its September 3 entry and surfaced no compatible Starlink fixed-cohort outcome return; this is not a nonexistence finding."
+    },
+    {
+      "publisher": "ConnectLA",
+      "artifact": "Resource library",
+      "url": "https://connect.la.gov/resource-library",
+      "artifact_date": null,
+      "accessed_date": "2026-09-08",
+      "result": "Exposes final-proposal, project, location, monitoring, agreement, and reporting materials but no Starlink adoption return."
+    },
+    {
+      "publisher": "ConnectLA",
+      "artifact": "GUMBO 2.0 program page",
+      "url": "https://connect.la.gov/bead",
+      "artifact_date": null,
+      "accessed_date": "2026-09-08",
+      "result": "Provides program and map orientation, not a fixed-cohort observed installation, subscription, or service-taken result."
+    },
+    {
+      "publisher": "Office of the Governor of Louisiana",
+      "artifact": "Broadband for Louisiana",
+      "url": "https://gov.louisiana.gov/page/Broadband-for-Louisiana",
+      "artifact_date": null,
+      "accessed_date": "2026-09-08",
+      "result": "Supplies statewide aggregate access context without a Starlink cohort, outcome numerator, observation period, or method."
+    },
+    {
+      "publisher": "ConnectLA",
+      "artifact": "Final Proposal Exhibit A — Subgrantees",
+      "url": "https://connectla-backend.files.svdcdn.com/production/Resources/GUMBO-2.0/Final-Proposal-08-2025-Updated-Documents/Final-Proposal-Exhibit-A-Subgrantees-1.csv?dm=1770236256",
+      "artifact_date": null,
+      "accessed_date": "2026-09-08",
+      "result": "Identifies Space Exploration Technologies Corp. under UEI C6M7C2FLKER5; it is an identity control, not an adoption result."
+    },
+    {
+      "publisher": "ConnectLA",
+      "artifact": "Final Proposal Exhibit B — Deployment Projects",
+      "url": "https://connectla-backend.files.svdcdn.com/production/Resources/GUMBO-2.0/Final-Proposal-08-2025-Updated-Documents/Final-Proposal-Exhibit-B-Deployment-Projects.csv?dm=1770236293",
+      "artifact_date": null,
+      "accessed_date": "2026-09-08",
+      "result": "Lists 87 SpaceX projects using prospective deployment descriptions; one description differs by one location from Exhibit C and no actual-result field is present."
+    },
+    {
+      "publisher": "ConnectLA",
+      "artifact": "Final Proposal Exhibit C — Locations",
+      "url": "https://connectla-backend.files.svdcdn.com/production/Resources/GUMBO-2.0/Final-Proposal-08-2025-Updated-Documents/Final-Proposal-Exhibit-C-Locations.csv?dm=1770236319",
+      "artifact_date": null,
+      "accessed_date": "2026-09-08",
+      "result": "Maps exactly 10,635 unique location IDs to the 87 SpaceX projects with anticipated service fields; it contains no observed outcome field, period, or method."
+    },
+    {
+      "publisher": "Louisiana Economic Development",
+      "artifact": "SpaceX Louisiana campus announcement",
+      "url": "https://www.opportunitylouisiana.gov/news/spacex-launches-new-era-of-commercial-spaceflight-with-100-billion-louisiana-campus",
+      "artifact_date": "2026-08-25",
+      "accessed_date": "2026-09-08",
+      "result": "Describes a discount and hardware offer without reporting actual customers, installations, or Louisiana BEAD service taken."
+    },
+    {
+      "publisher": "Starlink",
+      "artifact": "Vermilion Parish area discount",
+      "url": "https://starlink.com/support/article/5a00b427-520c-faa3-2de2-f74c1ddaa6cc",
+      "artifact_date": null,
+      "accessed_date": "2026-09-08",
+      "result": "Describes eligible-zone price and hardware terms but no enrolled-customer, installation, or BEAD-cohort count."
+    },
+    {
+      "publisher": "Starlink",
+      "artifact": "Progress report landing page",
+      "url": "https://starlink.com/progress/",
+      "artifact_date": null,
+      "accessed_date": "2026-09-08",
+      "result": "Provides the official report family but no Louisiana BEAD project return on the reviewed surface."
+    },
+    {
+      "publisher": "Starlink",
+      "artifact": "2025 Progress Report",
+      "url": "https://starlink.com/public-files/starlinkProgressReport_2025.pdf",
+      "artifact_date": "2025",
+      "accessed_date": "2026-09-08",
+      "result": "Reports global provider-scale customer totals; no Louisiana, BEAD, 10,635-location, or fixed-cohort result is supplied."
+    },
+    {
+      "publisher": "Starlink",
+      "artifact": "Updates index",
+      "url": "https://starlink.com/us/updates",
+      "artifact_date": null,
+      "accessed_date": "2026-09-08",
+      "result": "The bounded current index check surfaced no Louisiana BEAD project return; the page requires client-side rendering and this is not a nonexistence finding."
+    },
+    {
+      "publisher": "SpaceX",
+      "artifact": "Updates index",
+      "url": "https://new.spacex.com/updates",
+      "artifact_date": null,
+      "accessed_date": "2026-09-08",
+      "result": "The bounded current index check surfaced no Louisiana BEAD project return; intermittent public fetch limitations do not establish absence."
+    },
+    {
+      "publisher": "Starlink",
+      "artifact": "Availability map",
+      "url": "https://starlink.com/us/map",
+      "artifact_date": null,
+      "accessed_date": "2026-09-08",
+      "result": "Shows availability and offers, not installations, subscriptions, service taken, or an observed cohort method."
+    }
+  ],
+  "archive_state": "Append-only companion evidence decision archived",
+  "git_backed_release_status": "held",
+  "artifact_digest": "9e363402cfd28a78246b63f5732bf13a5181f01f0cfbd547aabba1c7a30d794c"
+}

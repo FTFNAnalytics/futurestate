@@ -10,7 +10,7 @@ export const GET: APIRoute = async () => {
 
   return publicDatasetResponse(
     "signals",
-    "Published signal metadata only; drafts, review records, body copy, and editorial notes are excluded.",
+    "Historical Published signal metadata with current editorial classifications and corrections; method notes and held classifications are not current external developments. Draft/review publication states, body copy and private notes are excluded.",
     signals
   );
 };

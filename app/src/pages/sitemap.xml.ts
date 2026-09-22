@@ -1,5 +1,8 @@
+import {projectBriefing,projectResearchDocument} from "../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
 import type { APIRoute } from "astro";
+import {getShelfCatalog} from '../lib/shelf-catalog';
+import {readerCatalog} from '../lib/reader-catalog.mjs';
 import qualificationRegistry from "../data/phase-67-qualification-packet-registry.json";
 import returnLedger from "../data/phase-67-evidence-return-envelope-ledger.json";
 import measurementRegistry from "../data/phase-69-measurement-observation-break-registry.json";
@@ -44,6 +47,11 @@ import v06OpenEvidenceReview from "../data/v06-open-evidence-review.json";
 import v07EvidenceAdmission from "../data/v07-evidence-admission-dockets.json";
 import v08ConversionAtlas from "../data/v08-conversion-longitudinal-atlas.json";
 import v09LivingIntelligence from "../data/v09-living-public-intelligence.json";
+import v1ReleaseCandidate from "../data/v1-release-candidate.json";
+import v1MonthlyOperatingProgram from "../data/v1-monthly-operating-program.json";
+import v1SeptemberEvidenceCycle from "../data/v1-september-evidence-cycle.json";
+import v1OctoberOperatingProgram from "../data/v1-october-operating-program.json";
+import v1PublicReferenceEdition from "../data/v1-public-reference-edition.json";
 
 const siteUrl = "https://ftfn.io";
 
@@ -83,9 +91,9 @@ export const GET: APIRoute = async () => {
     getCollection("localSystems"),
     getCollection("evidenceGaps"),
     getCollection("dependencyMaps"),
-    getCollection("briefings"),
+    getCollection("briefings").then(records => records.map(projectBriefing)),
     getCollection("researchCollections"),
-    getCollection("researchDocuments")
+    getCollection("researchDocuments").then(records => records.map(projectResearchDocument))
   ]);
 
   const staticRoutes = [
@@ -134,12 +142,18 @@ export const GET: APIRoute = async () => {
     "/evidence/public-knowledge-synthesis-civic-decision-literacy-reader-navigation-content-closure-evergreen-stewardship/",
     "/data/",
     "/method/",
+    "/method/editorial-review/",
     "/updates/",
     "/about/"
   ];
 
-  const routes = [
+  const routes = [...new Set([
     ...staticRoutes.map((path) => urlEntry(path)),
+    ...(await getCollection('updates')).map(update=>urlEntry(`/updates/${update.data.id}/`,update.data.effective_date)),
+    ...(await getCollection('readerPathways')).filter(pathway=>pathway.data.record_status==='Published').map(pathway=>urlEntry(`/pathways/${pathway.data.slug}/`)),
+    urlEntry('/reference/field-report/2026-09-14/'),
+    ...Array.from({length:Math.ceil(readerCatalog.length/40)},(_,i)=>urlEntry(`/reference/explore/${i+1}/`)),
+    ...Object.entries(await getShelfCatalog()).flatMap(([kind,records])=>Array.from({length:Math.max(1,Math.ceil(records.length/40))},(_,i)=>urlEntry(`/browse/${kind}/${i+1}/`))),
     ...signals
       .filter((signal) => signal.data.record_status === "Published")
       .map((signal) => urlEntry(`/signals/${signal.data.slug}/`, signal.data.published_date ?? signal.data.captured_date)),
@@ -291,8 +305,13 @@ export const GET: APIRoute = async () => {
     ...v06OpenEvidenceReview.new_html_routes.map((route) => urlEntry(route, new Date(v06OpenEvidenceReview.effective_date))),
     ...v07EvidenceAdmission.public_html_routes.map((route) => urlEntry(route, new Date(v07EvidenceAdmission.effective_date))),
     ...v08ConversionAtlas.public_html_routes.map((route) => urlEntry(route, new Date(v08ConversionAtlas.effective_date))),
-    ...v09LivingIntelligence.public_html_routes.map((route) => urlEntry(route, new Date(v09LivingIntelligence.effective_date)))
-  ].sort();
+    ...v09LivingIntelligence.public_html_routes.map((route) => urlEntry(route, new Date(v09LivingIntelligence.effective_date))),
+    ...v1ReleaseCandidate.public_html_routes.map((route) => urlEntry(route, new Date(v1ReleaseCandidate.effective_date))),
+    ...v1MonthlyOperatingProgram.public_html_routes.map((route) => urlEntry(route, new Date(v1MonthlyOperatingProgram.effective_date))),
+    ...v1SeptemberEvidenceCycle.public_html_routes.map((route) => urlEntry(route, new Date(v1SeptemberEvidenceCycle.effective_date))),
+    ...v1OctoberOperatingProgram.public_html_routes.map((route) => urlEntry(route, new Date(v1OctoberOperatingProgram.effective_date))),
+    ...v1PublicReferenceEdition.canonical_html_routes.map((route) => urlEntry(route, new Date(v1PublicReferenceEdition.effective_date)))
+  ])].sort();
 
   const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${routes.join("\n")}\n</urlset>\n`;
 

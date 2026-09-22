@@ -1,0 +1,92 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {join} from 'node:path';
+import {agencyFollowupArtifactChecks as checks,agencyFollowupResearchReviews as reviews} from './content-205-216/backlog-agency-followup-reviews.mjs';
+import {backlogHash,verifyBacklogInputs} from './lib/backlog-research.mjs';
+import {backlogResearchReviews} from './content-205-216/backlog-reviews.mjs';
+import {computeV1refCandidateDigest} from './lib/v1ref-candidate-digest.mjs';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const read=p=>readFile(join(root,p),'utf8');
+const json=async p=>JSON.parse(await read(p));
+const ops=await json('src/data/phase-207-current-operations.json');
+const pins=await json('scripts/content-205-216/backlog-review-inputs.json');
+const backlog=await json('src/data/phase-182-evidence-source-backlog.json');
+await verifyBacklogInputs(root,pins,backlog,backlogResearchReviews);
+assert(ops.backlog_research_checked>=13);
+assert.equal(ops.backlog_research_checked+ops.backlog_research_unchecked,25);
+assert(ops.backlog_artifact_checks.length>=61);
+assert.equal(ops.backlog_authorized_dispositions,0);
+assert.equal(ops.governed_series_admitted,0);
+assert.deepEqual(reviews.map(r=>r.backlog_item_id),['182-BACKLOG-010','182-BACKLOG-014']);
+assert.equal(checks.length,13);
+assert.equal(new Set(checks.map(c=>c.check_id)).size,13);
+assert.equal(checks.filter(c=>c.evidence_role==='Exact bound source').length,10);
+assert.equal(checks.filter(c=>c.access_result==='Retrieval failed').length,2);
+assert.equal(ops.backlog_reviews.find(r=>r.backlog_item_id==='182-BACKLOG-006').sha256,'22ecdb69013d606410d4fd36f3ba9c924726c5435e2c5b94a70f19c06dbd8a65','Earlier agency receipt changed');
+const usedChecks=new Set();
+for(const review of reviews){
+  const current=ops.backlog_reviews.find(r=>r.backlog_item_id===review.backlog_item_id);
+  for(const[key,value]of Object.entries(review))assert.deepEqual(current[key],value);
+  assert.equal(current.checked_date,'2026-09-14');
+  assert.equal(current.next_check_date,'2026-09-21');
+  assert.equal(current.human_reviewer,null);assert.equal(current.final_disposition,null);
+  for(const key of ['human_admission_authorized','publication_authorized','adjudication_complete','phase_60_gate_decision','source_profile_dates_changed'])assert.equal(current[key],false);
+  assert.deepEqual(current.named_file_ids,[]);
+  const pin=pins.records.find(r=>r.backlog_item_id===current.backlog_item_id);
+  assert.equal(pin.inputs.length,7);assert.equal(current.source_ids.length,6);
+  for(const input of pin.inputs)assert.equal(backlogHash(await read(input.path)),input.sha256);
+  for(const id of current.check_ids){
+    usedChecks.add(id);
+    assert(checks.find(c=>c.check_id===id)?.source_ids.some(source=>current.source_ids.includes(source)),'Unrelated check assigned to review');
+  }
+  for(const id of current.source_ids){
+    const source=await json(`src/content/sources/${id}.json`);
+    assert.equal(source.last_checked_date,'2026-07-24');
+    assert(checks.some(c=>current.check_ids.includes(c.check_id)&&c.source_ids.includes(id)&&c.url===source.url&&c.evidence_role==='Exact bound source'),'Bound URL failure cannot be erased by an alternative');
+    assert(current.affected_record_ids.includes(id));
+  }
+  const update=await json(`src/content/updates/2026-09-14-backlog-research-${current.backlog_item_id.slice(-3)}.json`);
+  assert.equal(update.receipt_id,current.review_id);assert.equal(update.decision_date,undefined);
+  assert.equal(update.materiality,'No record-state change');assert.equal(update.source_checked_date,'2026-09-14');
+  assert.deepEqual(update.affected_record_ids,current.affected_record_ids);
+  assert(current.affected_routes.every(route=>update.related_paths.includes(route)));
+}
+assert.equal(usedChecks.size,13,'An unassigned artifact must not inflate coverage');
+for(const check of checks){
+  assert.deepEqual(ops.backlog_artifact_checks.find(c=>c.check_id===check.check_id),check);
+  assert(['oig.nasa.gov','www.oig.dhs.gov','oig.hhs.gov','www.gao.gov','www.oversight.gov'].includes(new URL(check.url).hostname));
+  assert(['Text inspected','Text inspected; visual check unavailable','Retrieval failed'].includes(check.access_result));
+  for(const key of ['artifact_date','observation_period','locator','access','evidence_role','finding','limitation'])assert(check[key]?.trim());
+  assert(!('observed_values' in check));assert(!('admitted_series' in check));
+}
+const byId=id=>checks.find(c=>c.check_id===`207-CHECK-${id}`);
+const memo=byId('NASA-FISMA-2025-MEMORANDUM');
+for(const term of ['25 metrics','six functions','new Govern','four judgmentally selected','22 of 27','No formal new recommendation does not mean no issue'])assert(memo.finding.includes(term));
+assert(memo.limitation.includes('not an independently established observation cutoff'));
+assert(byId('NASA-ZERO-TRUST-2025-PAGE').limitation.includes('full audit PDF was not inspected'));
+assert(byId('DHS-FISMA-2024-BOUND').access.includes('403 Forbidden'));
+assert(byId('DHS-FISMA-2024-CATALOG').artifact_date.includes('2025-07-01'));
+const cdm=byId('GAO-CDM-2025-FOLLOWUP');
+assert.equal(cdm.source_ids.length,2);assert(cdm.finding.includes('May 2026'));
+assert(cdm.finding.includes('not measured exposure reductions'));assert(cdm.finding.includes('not completed results'));
+const method=byId('HHS-FISMA-2025-METHOD-PDF');
+assert.equal(method.source_ids.length,2);
+for(const term of ['2025-07-31','2025-08-01','unresolved'])assert(method.observation_period.includes(term));
+for(const term of ['25 systems','only two divisions overlapped','ACL-specific','demonstrating'])assert(method.finding.includes(term));
+assert(byId('HHS-CIO-2025-INVENTORY').finding.includes('overlapping attributes'));
+assert(byId('HHS-CIO-2025-INVENTORY').limitation.includes('not a September 2026 live inventory'));
+const risk=byId('NASA-GAO-RISK-2025-FOLLOWUP');
+assert(risk.finding.includes('Prepare step is organizational'));
+assert(risk.finding.includes('recommendation 2 is Closed Implemented'));
+assert(risk.finding.includes('June 2026'));assert(risk.limitation.includes('cannot retroactively change'));
+assert(byId('NASA-CIO-2026-INVENTORY').observation_period.includes('January 2026'));
+assert(byId('DHS-FISMA-2025-PROJECT-BOUND').observation_period.includes('present project state unknown'));
+assert(byId('DHS-FISMA-2025-PROJECT-BOUND').access.includes('no further attempt'));
+const tracker=byId('HHS-FISMA-2025-TRACKER');
+assert(tracker.url.includes('search=OAS-25-18-041'));assert(tracker.locator.includes('26-A-18-055.01'));
+assert(tracker.finding.includes('Response Not Yet Due'));assert(tracker.limitation.includes('not the filtered report counts'));
+assert(tracker.limitation.includes('not overdue on September 14'));
+const digest=await computeV1refCandidateDigest();
+for(const path of ['scripts/content-205-216/backlog-agency-followup-reviews.mjs','scripts/assert-current-agency-followup-backlog.mjs','src/content/updates/2026-09-14-backlog-research-010.json','src/content/updates/2026-09-14-backlog-research-014.json','../docs/phase-207-agency-followup-research-2026-09-14.md'])assert(digest.artifact_paths.includes(path));
+console.log('Agency follow-up checks passed: two reviews, twelve pinned source profiles, ten exact URL attempts and thirteen artifact checks; distinct cutoff/status dates, failed access, shared-source propagation and unchanged earlier receipt. No causal claim, admission or phase completion.');

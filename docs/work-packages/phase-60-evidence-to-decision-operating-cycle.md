@@ -1,6 +1,14 @@
 # Phase 60 Work Package: Evidence-to-Decision Operating Cycle
 
-Status: operating; Wave 60B complete and locally release-validated; Waves 60C-60D, content commit, and owner-only deployment pending
+## Current operation — September 10, 2026
+
+Four independent dated No Material Change decisions are in `app/src/data/phase-60-current-decisions.json`: Louisiana Nextlink (September 9 schedule, actually checked September 10), Amtrak PIDS closeout, Hanford material balance, and NNSA GAO baseline. The current projection contains seven completed local decisions and six scheduled gates. All four signals remain In Review; no Phase 61 transfer occurs. Follow-up checks are bounded to October 9 or an earlier exact official artifact.
+
+Use the current-decision ledger together with the historical Phase 60/58/60C/67 files. Do not rerun or backdate these completed source checks merely because the September 1 baseline has null fields. The API exports label historical top-level fields and provide `current_state`; source exports attach dated review receipts without rewriting historical source profiles. The September 8 Starlink companion remains separate. Toronto's separate September 9 named-file recheck is still outstanding and has not inherited any of these four decisions.
+
+The sections below retain the earlier operating snapshot. Git-backed publication, independent review, cycle-final closure and v1 promotion remain separate gates.
+
+Status: operating; three evidence decisions complete, September 1 content propagation complete with Git-backed release Held; ten gates, content commit, and owner-only deployment pending
 
 Captured: 2026-08-11
 
@@ -79,7 +87,7 @@ The bounded decision remains unchanged: the official surfaces reviewed on August
 
 A gate is due on its scheduled day. It becomes silently overdue only after that date passes without a decision date and receipt. The Phase 60 assertion fails the build when it finds such a record. A blocked or rescheduled gate passes only when it carries the appropriate visible receipt state.
 
-At the August 23 checkpoint, two gates have complete decisions and receipts, eleven gates remain future scheduled work, and the silent-overdue count is zero.
+At the September 1 checkpoint, three gates have complete decisions and receipts, ten gates remain scheduled work, and the silent-overdue count is zero.
 
 ## Recurring Digest Contract
 
@@ -173,4 +181,18 @@ Both receipts propagate through their assigned source, signal decision, canonica
 
 ## Next Gate
 
-Run the September 1 Louisiana Starlink observed-adoption gate. On September 9, keep the Louisiana Nextlink gate and the separate Toronto application `24 254930` enactment, condition, and permit project-file recheck as independent decisions. The Shuttle Landing Facility formal-disposition check recurs on September 15 alongside, but separate from, the Montana completed-quarter gate. A private Supabase pilot, owner-only deployment, package freeze, public GitHub synchronization, domain attachment, and public launch remain distinct approvals.
+Recheck the Louisiana Starlink public surfaces on September 8 under the bounded receipt. On September 9, keep the Louisiana Nextlink gate and the separate Toronto application `24 254930` enactment, condition, and permit project-file recheck as independent decisions. The Shuttle Landing Facility formal-disposition check recurs on September 15 alongside, but separate from, the Montana completed-quarter gate. A private Supabase pilot, owner-only deployment, package freeze, public GitHub synchronization, domain attachment, and public launch remain distinct approvals.
+
+## Wave 60C September 1 Result
+
+Receipt `receipt-60-louisiana-starlink-2026-09-01-no-material-change` closes the Louisiana Starlink observed-adoption gate as a bounded **No Material Change** decision. The official review preserves the 10,635-location planned-access baseline and records adjacent Pecan Island offer and reporting context, but no compatible fixed-cohort installation, subscription, or service-taken return. The signal remains In Review. No Phase 61 named file shares the Louisiana Starlink provider identity, and no file stage, Phase 64 cell, score, rank, or operating outcome advances.
+
+The receipt now resolves through the Phase 58 receipt and queue registries, Phase 60 cycle and local content-propagation proof, Phase 60C desk, Phase 67 return envelope, the signal, Outcomes Watch, Evidence Cycle digest and field guide, policy pathway, both assigned dependency maps, a referenced immutable Louisiana place context, and a dedicated public update. Evidence Cycle 001 now has three complete decisions and ten scheduled gates. Content propagation is complete while Git-backed release remains Held. The next bounded Starlink public-surface recheck is September 8; the next scheduled cycle gate and separate Toronto project-file recheck remain September 9.
+
+## September 8 Louisiana Starlink companion result
+
+Receipt `receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change` records a bounded **No Material Change** companion recheck. Seventeen current official ConnectLA, Louisiana, Starlink, and SpaceX surfaces fix the planning identity at 87 SpaceX projects and exactly 10,635 unique location IDs, but supply no compatible observed installation, activated-subscription, or service-taken result with a dated observation period and disclosed method.
+
+The receipt preserves the September 1 cycle decision and the three-of-thirteen completed-decision count; it does not create a fourteenth gate. The underlying signal remains In Review. No Phase 61 named file shares the provider identity, so no file stage or Phase 64 cell advances. The one-location mismatch between an Exhibit B project description and Exhibit C remains visible without being converted into an outcome.
+
+The companion result is propagated through the assigned source profiles, signal, four dossiers, policy pathway, both dependency maps, Phase 58 queue and receipts, Phase 60 proof, Phase 60C desk, Phase 67 envelope and no-transfer control, referenced immutable Louisiana place context, and public update. Git-backed release remains Held separately from complete local content propagation. Reopen earlier for the exact issuer return; otherwise reconcile the hold at the existing October 9 final audit. The September 9 Louisiana Nextlink and Toronto checks remain independent.

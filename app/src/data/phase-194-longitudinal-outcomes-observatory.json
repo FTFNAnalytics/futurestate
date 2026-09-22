@@ -1,0 +1,1457 @@
+{
+  "schema_version": "1.0",
+  "phase": 194,
+  "program_id": "FTFN-PHASE-194",
+  "dataset": "phase_194_longitudinal_outcomes_observatory",
+  "title": "Longitudinal Outcomes Observatory",
+  "effective_date": "2026-09-01",
+  "record_status": "Published operating scaffold",
+  "build_status": "Complete locally — external and owner-controlled decisions held",
+  "summary": "Create twenty-four international longitudinal adjudication packets with six compatibility tests each while admitting zero series and zero observations until stable source payloads and governed decisions exist.",
+  "record_scope": "Append-only Phase 194 global-reference content layer over the Phase 116–180 evidence and operating corpus.",
+  "publication_boundaries": [
+    "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision.",
+    "An institutional home page is an authority-discovery rail, not an exact artifact and not evidence for a downstream claim.",
+    "Unknown, unavailable, not-yet-reviewed, and incompatible are preserved as distinct states; no unsuccessful search is treated as proof of nonexistence."
+  ],
+  "routes": {
+    "hub": "/review/global/outcomes/",
+    "public_export": "/data/phase-194-longitudinal-outcomes-observatory.json"
+  },
+  "counts": {
+    "longitudinal_adjudication_packets": 24,
+    "eligibility_test_cells": 144,
+    "exact_project_identities": 4,
+    "admitted_series": 0,
+    "admitted_observations": 0,
+    "compatibility_decisions": 0,
+    "admission_decisions": 0
+  },
+  "longitudinal_adjudication_packets": [
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-001",
+      "international_project_packet_id": "191-PROJECT-001",
+      "title": "Victoria Park Avenue and Thora Avenue application 24 254930 longitudinal eligibility",
+      "entity_identity": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "jurisdiction_id": "117-JURISDICTION-001",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact project identity available; series identity still held",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "Two or more entity-specific official observations with stable identity, period, measure, method, unit, denominator, acceptance state, and revision treatment.",
+      "route": "/review/global/outcomes/toronto-24-254930/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-002",
+      "international_project_packet_id": "191-PROJECT-002",
+      "title": "Canada project-slot 2 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-001",
+      "source_ids": [
+        "source-117-global-canada-statistics-canada",
+        "source-117-global-canada-canada-energy-regulator",
+        "source-117-global-canada-impact-assessment-agency-of-canada",
+        "source-117-global-canada-innovation-science-and-economic-development-canada"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact Canada official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/canada-acquisition-2/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-003",
+      "international_project_packet_id": "191-PROJECT-003",
+      "title": "Hornsdale Power Reserve longitudinal eligibility",
+      "entity_identity": "Hornsdale Power Reserve",
+      "jurisdiction_id": "117-JURISDICTION-002",
+      "source_ids": [
+        "source-56e-hornsdale-aer-2022",
+        "source-56e-hornsdale-sa-current",
+        "source-56e-hornsdale-aemo-2019-preliminary",
+        "source-56e-hornsdale-aemo-2020-final",
+        "source-56h-hornsdale-final-project-report-2026",
+        "source-56j-hornsdale-h1-2024-operations"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact project identity available; series identity still held",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "Two or more entity-specific official observations with stable identity, period, measure, method, unit, denominator, acceptance state, and revision treatment.",
+      "route": "/review/global/outcomes/hornsdale-power-reserve/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-004",
+      "international_project_packet_id": "191-PROJECT-004",
+      "title": "Victoria Big Battery longitudinal eligibility",
+      "entity_identity": "Victoria Big Battery",
+      "jurisdiction_id": "117-JURISDICTION-002",
+      "source_ids": [
+        "source-56e-vbb-esv-fire-findings-2021",
+        "source-56e-vbb-aemo-registration-2021",
+        "source-56e-vbb-aemo-operational-2021",
+        "source-56e-vbb-esv-investigations"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact project identity available; series identity still held",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "Two or more entity-specific official observations with stable identity, period, measure, method, unit, denominator, acceptance state, and revision treatment.",
+      "route": "/review/global/outcomes/victoria-big-battery/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-005",
+      "international_project_packet_id": "191-PROJECT-005",
+      "title": "Dalrymple grid battery longitudinal eligibility",
+      "entity_identity": "Dalrymple grid battery",
+      "jurisdiction_id": "117-JURISDICTION-002",
+      "source_ids": [
+        "source-56e-dalrymple-arena-final-2021",
+        "source-56e-dalrymple-arena-retrospective-2021",
+        "source-56e-dalrymple-arena-operational-2020",
+        "source-56e-dalrymple-aemo-minimum-demand-2020",
+        "source-56g-dalrymple-electranet-tapr-2026",
+        "source-56h-dalrymple-aemo-constraint-report-2026",
+        "source-56j-dalrymple-aemo-march-2026"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact project identity available; series identity still held",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "Two or more entity-specific official observations with stable identity, period, measure, method, unit, denominator, acceptance state, and revision treatment.",
+      "route": "/review/global/outcomes/dalrymple-grid-battery/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-006",
+      "international_project_packet_id": "191-PROJECT-006",
+      "title": "European Union project-slot 6 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-003",
+      "source_ids": [
+        "source-117-global-european-union-eurostat",
+        "source-117-global-european-union-european-commission-directorate-general-for-energy",
+        "source-117-global-european-union-eur-lex",
+        "source-117-global-european-union-cordis"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact European Union official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/european-union-acquisition-1/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-007",
+      "international_project_packet_id": "191-PROJECT-007",
+      "title": "European Union project-slot 7 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-003",
+      "source_ids": [
+        "source-117-global-european-union-eurostat",
+        "source-117-global-european-union-european-commission-directorate-general-for-energy",
+        "source-117-global-european-union-eur-lex",
+        "source-117-global-european-union-cordis"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact European Union official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/european-union-acquisition-2/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-008",
+      "international_project_packet_id": "191-PROJECT-008",
+      "title": "United Kingdom project-slot 8 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-004",
+      "source_ids": [
+        "source-117-global-united-kingdom-office-for-national-statistics",
+        "source-117-global-united-kingdom-department-for-energy-security-and-net-zero",
+        "source-117-global-united-kingdom-planning-inspectorate",
+        "source-117-global-united-kingdom-uk-research-and-innovation"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact United Kingdom official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/united-kingdom-acquisition-1/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-009",
+      "international_project_packet_id": "191-PROJECT-009",
+      "title": "United Kingdom project-slot 9 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-004",
+      "source_ids": [
+        "source-117-global-united-kingdom-office-for-national-statistics",
+        "source-117-global-united-kingdom-department-for-energy-security-and-net-zero",
+        "source-117-global-united-kingdom-planning-inspectorate",
+        "source-117-global-united-kingdom-uk-research-and-innovation"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact United Kingdom official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/united-kingdom-acquisition-2/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-010",
+      "international_project_packet_id": "191-PROJECT-010",
+      "title": "Germany project-slot 10 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-005",
+      "source_ids": [
+        "source-117-global-germany-federal-statistical-office-of-germany",
+        "source-117-global-germany-bundesnetzagentur",
+        "source-117-global-germany-german-environment-agency",
+        "source-117-global-germany-federal-ministry-of-research-technology-and-space"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact Germany official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/germany-acquisition-1/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-011",
+      "international_project_packet_id": "191-PROJECT-011",
+      "title": "Germany project-slot 11 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-005",
+      "source_ids": [
+        "source-117-global-germany-federal-statistical-office-of-germany",
+        "source-117-global-germany-bundesnetzagentur",
+        "source-117-global-germany-german-environment-agency",
+        "source-117-global-germany-federal-ministry-of-research-technology-and-space"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact Germany official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/germany-acquisition-2/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-012",
+      "international_project_packet_id": "191-PROJECT-012",
+      "title": "France project-slot 12 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-006",
+      "source_ids": [
+        "source-117-global-france-insee",
+        "source-117-global-france-rte",
+        "source-117-global-france-ministry-for-ecological-transition",
+        "source-117-global-france-ademe"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact France official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/france-acquisition-1/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-013",
+      "international_project_packet_id": "191-PROJECT-013",
+      "title": "France project-slot 13 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-006",
+      "source_ids": [
+        "source-117-global-france-insee",
+        "source-117-global-france-rte",
+        "source-117-global-france-ministry-for-ecological-transition",
+        "source-117-global-france-ademe"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact France official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/france-acquisition-2/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-014",
+      "international_project_packet_id": "191-PROJECT-014",
+      "title": "Netherlands project-slot 14 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-007",
+      "source_ids": [
+        "source-117-global-netherlands-statistics-netherlands",
+        "source-117-global-netherlands-netherlands-enterprise-agency",
+        "source-117-global-netherlands-rijkswaterstaat",
+        "source-117-global-netherlands-pbl-netherlands-environmental-assessment-agency"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact Netherlands official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/netherlands-acquisition-1/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-015",
+      "international_project_packet_id": "191-PROJECT-015",
+      "title": "Netherlands project-slot 15 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-007",
+      "source_ids": [
+        "source-117-global-netherlands-statistics-netherlands",
+        "source-117-global-netherlands-netherlands-enterprise-agency",
+        "source-117-global-netherlands-rijkswaterstaat",
+        "source-117-global-netherlands-pbl-netherlands-environmental-assessment-agency"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact Netherlands official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/netherlands-acquisition-2/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-016",
+      "international_project_packet_id": "191-PROJECT-016",
+      "title": "Norway project-slot 16 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-008",
+      "source_ids": [
+        "source-117-global-norway-statistics-norway",
+        "source-117-global-norway-norwegian-water-resources-and-energy-directorate",
+        "source-117-global-norway-norwegian-environment-agency",
+        "source-117-global-norway-research-council-of-norway"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact Norway official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/norway-acquisition-1/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-017",
+      "international_project_packet_id": "191-PROJECT-017",
+      "title": "Norway project-slot 17 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-008",
+      "source_ids": [
+        "source-117-global-norway-statistics-norway",
+        "source-117-global-norway-norwegian-water-resources-and-energy-directorate",
+        "source-117-global-norway-norwegian-environment-agency",
+        "source-117-global-norway-research-council-of-norway"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact Norway official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/norway-acquisition-2/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-018",
+      "international_project_packet_id": "191-PROJECT-018",
+      "title": "Sweden project-slot 18 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-009",
+      "source_ids": [
+        "source-117-global-sweden-statistics-sweden",
+        "source-117-global-sweden-swedish-energy-agency",
+        "source-117-global-sweden-swedish-transport-administration",
+        "source-117-global-sweden-vinnova"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact Sweden official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/sweden-acquisition-1/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-019",
+      "international_project_packet_id": "191-PROJECT-019",
+      "title": "Sweden project-slot 19 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-009",
+      "source_ids": [
+        "source-117-global-sweden-statistics-sweden",
+        "source-117-global-sweden-swedish-energy-agency",
+        "source-117-global-sweden-swedish-transport-administration",
+        "source-117-global-sweden-vinnova"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact Sweden official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/sweden-acquisition-2/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-020",
+      "international_project_packet_id": "191-PROJECT-020",
+      "title": "Japan project-slot 20 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-010",
+      "source_ids": [
+        "source-117-global-japan-e-stat-japan",
+        "source-117-global-japan-ministry-of-economy-trade-and-industry",
+        "source-117-global-japan-ministry-of-land-infrastructure-transport-and-tourism",
+        "source-117-global-japan-new-energy-and-industrial-technology-development-organization"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact Japan official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/japan-acquisition-1/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-021",
+      "international_project_packet_id": "191-PROJECT-021",
+      "title": "Japan project-slot 21 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-010",
+      "source_ids": [
+        "source-117-global-japan-e-stat-japan",
+        "source-117-global-japan-ministry-of-economy-trade-and-industry",
+        "source-117-global-japan-ministry-of-land-infrastructure-transport-and-tourism",
+        "source-117-global-japan-new-energy-and-industrial-technology-development-organization"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact Japan official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/japan-acquisition-2/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-022",
+      "international_project_packet_id": "191-PROJECT-022",
+      "title": "South Korea project-slot 22 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-011",
+      "source_ids": [
+        "source-117-global-south-korea-korean-statistical-information-service",
+        "source-117-global-south-korea-ministry-of-trade-industry-and-energy",
+        "source-117-global-south-korea-korea-power-exchange",
+        "source-117-global-south-korea-korea-institute-of-science-and-technology-evaluation-and-planning"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact South Korea official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/south-korea-acquisition-1/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-023",
+      "international_project_packet_id": "191-PROJECT-023",
+      "title": "South Korea project-slot 23 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-011",
+      "source_ids": [
+        "source-117-global-south-korea-korean-statistical-information-service",
+        "source-117-global-south-korea-ministry-of-trade-industry-and-energy",
+        "source-117-global-south-korea-korea-power-exchange",
+        "source-117-global-south-korea-korea-institute-of-science-and-technology-evaluation-and-planning"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact South Korea official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/south-korea-acquisition-2/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    },
+    {
+      "longitudinal_adjudication_packet_id": "194-LONGITUDINAL-024",
+      "international_project_packet_id": "191-PROJECT-024",
+      "title": "Singapore project-slot 24 longitudinal eligibility",
+      "entity_identity": null,
+      "jurisdiction_id": "117-JURISDICTION-012",
+      "source_ids": [
+        "source-117-global-singapore-singapore-department-of-statistics",
+        "source-117-global-singapore-energy-market-authority",
+        "source-117-global-singapore-land-transport-authority",
+        "source-117-global-singapore-infocomm-media-development-authority"
+      ],
+      "candidate_measure": null,
+      "candidate_series_title": null,
+      "eligibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Held — exact project identity required",
+          "decision": null
+        },
+        {
+          "dimension": "period",
+          "state": "Held — no repeated observation periods bound",
+          "decision": null
+        },
+        {
+          "dimension": "measure",
+          "state": "Held — no stable observed measure definition bound",
+          "decision": null
+        },
+        {
+          "dimension": "method",
+          "state": "Held — no stable collection and revision method bound",
+          "decision": null
+        },
+        {
+          "dimension": "unit and denominator",
+          "state": "Held — no compatible unit and denominator bound",
+          "decision": null
+        },
+        {
+          "dimension": "acceptance",
+          "state": "Held — no governed observation-acceptance decision",
+          "decision": null
+        }
+      ],
+      "candidate_observation_ids": [],
+      "admitted_observation_ids": [],
+      "compatibility_decision": null,
+      "admission_decision": null,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "reviewer_role": null,
+      "outcome_state": "No series admitted",
+      "exact_next_artifact": "An exact Singapore official project record naming the asset, intervention, location, responsible authority, date, and current legal or delivery status.",
+      "route": "/review/global/outcomes/singapore-acquisition-1/",
+      "interpretation_boundary": "This is an eligibility packet, not an outcome panel. Zero admitted observations is preserved and does not prove zero activity or impact."
+    }
+  ],
+  "public_html_routes": [
+    "/review/global/outcomes/",
+    "/review/global/outcomes/toronto-24-254930/",
+    "/review/global/outcomes/canada-acquisition-2/",
+    "/review/global/outcomes/hornsdale-power-reserve/",
+    "/review/global/outcomes/victoria-big-battery/",
+    "/review/global/outcomes/dalrymple-grid-battery/",
+    "/review/global/outcomes/european-union-acquisition-1/",
+    "/review/global/outcomes/european-union-acquisition-2/",
+    "/review/global/outcomes/united-kingdom-acquisition-1/",
+    "/review/global/outcomes/united-kingdom-acquisition-2/",
+    "/review/global/outcomes/germany-acquisition-1/",
+    "/review/global/outcomes/germany-acquisition-2/",
+    "/review/global/outcomes/france-acquisition-1/",
+    "/review/global/outcomes/france-acquisition-2/",
+    "/review/global/outcomes/netherlands-acquisition-1/",
+    "/review/global/outcomes/netherlands-acquisition-2/",
+    "/review/global/outcomes/norway-acquisition-1/",
+    "/review/global/outcomes/norway-acquisition-2/",
+    "/review/global/outcomes/sweden-acquisition-1/",
+    "/review/global/outcomes/sweden-acquisition-2/",
+    "/review/global/outcomes/japan-acquisition-1/",
+    "/review/global/outcomes/japan-acquisition-2/",
+    "/review/global/outcomes/south-korea-acquisition-1/",
+    "/review/global/outcomes/south-korea-acquisition-2/",
+    "/review/global/outcomes/singapore-acquisition-1/"
+  ],
+  "public_json_exports": [
+    "/data/phase-194-longitudinal-outcomes-observatory.json"
+  ]
+}

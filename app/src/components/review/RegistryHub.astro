@@ -1,6 +1,7 @@
 ---
 import ReviewHeader from "./ReviewHeader.astro";
 import MetaPill from "../ui/MetaPill.astro";
+import readerEdition from '../../data/phase-204-reader-completion.json';
 
 interface Props {
   registry: any;
@@ -11,17 +12,34 @@ interface Props {
 
 const { registry, phase, release, items } = Astro.props;
 const itemId = (item: any) => Object.entries(item).find(([key]) => key.endsWith("_id"))?.[1] ?? item.slug ?? "record";
-const itemTitle = (item: any) => item.title ?? item.requirement ?? item.label ?? item.question ?? itemId(item);
-const itemState = (item: any) => item.state ?? item.decision_state ?? item.map_state ?? item.triage_state ?? item.content_readiness ?? item.candidate_state ?? item.rereview_verdict ?? item.mission_decision_state ?? item.desk_state ?? item.build_status ?? "Published record";
-const itemSummary = (item: any) => item.summary ?? item.current_read ?? item.question ?? item.evidence_note ?? item.reason ?? item.readiness_basis ?? item.open_boundary ?? item.unresolved_bridge ?? item.exact_next_artifact ?? item.next_action ?? item.next_record ?? item.check_result ?? item.interpretation_boundary ?? "Inspect the complete record below for its evidence and publication boundary.";
+const readerFor = (item: any) => Astro.url.pathname.startsWith('/reference/') ? readerEdition.records.find(article => article.record_id === itemId(item)) : null;
+const readerCount = items.filter(item => readerFor(item)).length;
+const itemTitle = (item: any) => item.title ?? item.requirement ?? item.label ?? item.question ?? item.institution_name ?? item.project_name ?? item.place_name ?? itemId(item);
+const itemState = (item: any) => item.state ?? item.verdict ?? item.decision_state ?? item.decision_status ?? item.release_state ?? item.audit_state ?? item.candidate_state ?? item.disposition_state ?? item.review_result ?? item.compatibility_decision ?? item.preservation_state ?? item.operation_state ?? item.board_state ?? item.matrix_state ?? item.packet_state ?? item.dossier_state ?? item.brief_state ?? item.runbook_state ?? item.baseline_packet_state ?? item.guide_state ?? item.report_state ?? item.map_state ?? item.triage_state ?? item.content_readiness ?? item.rereview_verdict ?? item.mission_decision_state ?? item.desk_state ?? item.resource_state ?? item.mission_state ?? item.edition_state ?? (Object.hasOwn(item, "current_stage") ? item.current_stage ?? "Stage not established" : null) ?? item.review_state ?? item.profile_state ?? item.identity_state ?? item.outcome_state ?? item.answer_state ?? item.case_kind ?? item.record_kind ?? item.build_status ?? "Published record";
+const itemSummary = (item: any) => item.summary ?? item.current_read ?? item.question ?? item.thesis ?? item.purpose ?? item.focus ?? item.orientation ?? item.reader_bridge ?? item.reader_brief ?? item.conversion_question ?? item.rationale ?? item.evidence_identity ?? item.comparable_claim ?? item.prohibited_comparison ?? item.evidence_note ?? item.reason ?? item.readiness_basis ?? item.open_boundary ?? item.unresolved_boundary ?? item.unresolved_bridge ?? item.decisive_next_action ?? item.exact_next_artifact ?? item.next_artifact ?? item.next_action ?? item.next_record ?? item.check_result ?? item.interpretation_boundary ?? item.boundary ?? "Inspect the complete record below for its evidence and publication boundary.";
 const itemRoute = (item: any) => item.route && !item.route.includes("#") ? item.route : null;
 const countEntries = Object.entries(registry.counts ?? {}).slice(0, 4);
 const readable = (key: string) => key.replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
-const summaryKeys = new Set(["slug", "title", "route", "summary", "current_read", "question", "evidence_note", "reason", "readiness_basis", "open_boundary", "unresolved_bridge", "exact_next_artifact", "next_action", "next_record", "check_result", "interpretation_boundary"]);
+const summaryKeys = new Set(["slug", "title", "route", "summary", "current_read", "question", "thesis", "purpose", "focus", "orientation", "reader_brief", "conversion_question", "rationale", "evidence_identity", "comparable_claim", "prohibited_comparison", "evidence_note", "reason", "readiness_basis", "open_boundary", "unresolved_boundary", "unresolved_bridge", "decisive_next_action", "exact_next_artifact", "next_artifact", "next_action", "next_record", "check_result", "interpretation_boundary", "boundary"]);
 const detailEntries = (item: any) => Object.entries(item).filter(([key]) => !summaryKeys.has(key));
+const summaryPreview = (item: any) => {
+  const value = String(itemSummary(item));
+  if (value.length <= 720) return value;
+  return `${value.slice(0, 716).replace(/\s+\S*$/, "").trimEnd()}…`;
+};
+const linkFor = (key: string, value: unknown) => {
+  if (typeof value !== "string") return null;
+  if (/^https?:\/\//.test(value)) return value;
+  if (/route$/.test(key) && value.startsWith("/")) return value;
+  if (/source_ids?$/.test(key) && value.startsWith("source-")) return `/atlas/sources/${value}/`;
+  return null;
+};
+const external = (href: string) => /^https?:\/\//.test(href);
 ---
 
 <ReviewHeader eyebrow={`${release} public intelligence program`} title={registry.title} summary={registry.summary} phase={phase} />
+
+{readerCount > 0 && <section class="page-section prose-page"><h2>{readerCount} expanded reader texts</h2><p>The September 10 reader layer appears first on each available article. Independent subject and accessibility review remain pending. Counts and research contracts below preserve the September 1 baseline; they are not claims of newly admitted evidence or approved translations.</p></section>}
 
 <section class="page-section">
   <div class="metric-strip" aria-label={`Phase ${phase} counts`}>
@@ -48,9 +66,9 @@ const detailEntries = (item: any) => Object.entries(item).filter(([key]) => !sum
   <div class="signal-grid">
     {items.map((item) => (
       <article class="record-card" id={item.slug ?? String(itemId(item)).toLowerCase()}>
-        <div class="meta-row"><MetaPill label={String(itemId(item))} /><MetaPill label={String(itemState(item))} tone="review" /></div>
-        <h3>{itemRoute(item) ? <a href={itemRoute(item)}>{itemTitle(item)}</a> : itemTitle(item)}</h3>
-        <p>{String(itemSummary(item)).slice(0, 720)}</p>
+        <div class="meta-row"><MetaPill label={String(itemId(item))} /><MetaPill label={readerFor(item) ? 'Reader draft · review pending' : String(itemState(item))} tone="review" /></div>
+        <h3>{itemRoute(item) ? <a href={itemRoute(item)}>{readerFor(item)?.title ?? itemTitle(item)}</a> : itemTitle(item)}</h3>
+        <p>{readerFor(item)?.overview ?? summaryPreview(item)}</p>
         {itemRoute(item) && <a class="inline-link" href={itemRoute(item)}>Open complete record</a>}
         {!itemRoute(item) && (
           <details>
@@ -61,10 +79,10 @@ const detailEntries = (item: any) => Object.entries(item).filter(([key]) => !sum
                   <dt><strong>{readable(key)}</strong></dt>
                   <dd>
                     {Array.isArray(value) ? (
-                      value.length ? <div class="source-list">{value.map((entry: any) => entry && typeof entry === "object" ? <div class="source-row">{Object.entries(entry).map(([childKey, childValue]: [string, any]) => <p><strong>{readable(childKey)}:</strong> {Array.isArray(childValue) ? childValue.join(" · ") : childValue && typeof childValue === "object" ? JSON.stringify(childValue) : String(childValue ?? "Not established")}</p>)}</div> : <div class="source-row"><span>{String(entry)}</span></div>)}</div> : "None recorded"
+                      value.length ? <div class="source-list">{value.map((entry: any) => entry && typeof entry === "object" ? <div class="source-row">{Object.entries(entry).map(([childKey, childValue]: [string, any]) => <p><strong>{readable(childKey)}:</strong> {Array.isArray(childValue) ? childValue.map((nested, index) => <>{index > 0 && " · "}{linkFor(childKey, nested) ? <a href={linkFor(childKey, nested)!}>{String(nested)}</a> : String(nested)}</>) : childValue && typeof childValue === "object" ? JSON.stringify(childValue) : linkFor(childKey, childValue) ? <a href={linkFor(childKey, childValue)!} target={external(linkFor(childKey, childValue)!) ? "_blank" : undefined} rel={external(linkFor(childKey, childValue)!) ? "noreferrer" : undefined}>{String(childValue)}</a> : String(childValue ?? "Not established")}</p>)}</div> : <div class="source-row"><span>{linkFor(key, entry) ? <a href={linkFor(key, entry)!}>{String(entry)}</a> : String(entry)}</span></div>)}</div> : "None recorded"
                     ) : value && typeof value === "object" ? (
-                      <div class="source-row">{Object.entries(value).map(([childKey, childValue]: [string, any]) => <p><strong>{readable(childKey)}:</strong> {Array.isArray(childValue) ? childValue.join(" · ") : childValue && typeof childValue === "object" ? JSON.stringify(childValue) : String(childValue ?? "Not established")}</p>)}</div>
-                    ) : String(value ?? "Not established")}
+                      <div class="source-row">{Object.entries(value).map(([childKey, childValue]: [string, any]) => <p><strong>{readable(childKey)}:</strong> {Array.isArray(childValue) ? childValue.map((nested, index) => <>{index > 0 && " · "}{linkFor(childKey, nested) ? <a href={linkFor(childKey, nested)!}>{String(nested)}</a> : String(nested)}</>) : childValue && typeof childValue === "object" ? JSON.stringify(childValue) : linkFor(childKey, childValue) ? <a href={linkFor(childKey, childValue)!} target={external(linkFor(childKey, childValue)!) ? "_blank" : undefined} rel={external(linkFor(childKey, childValue)!) ? "noreferrer" : undefined}>{String(childValue)}</a> : String(childValue ?? "Not established")}</p>)}</div>
+                    ) : linkFor(key, value) ? <a href={linkFor(key, value)!} target={external(linkFor(key, value)!) ? "_blank" : undefined} rel={external(linkFor(key, value)!) ? "noreferrer" : undefined}>{String(value)}</a> : String(value ?? "Not established")}
                   </dd>
                 </>
               ))}

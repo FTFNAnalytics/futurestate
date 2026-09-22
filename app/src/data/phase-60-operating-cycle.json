@@ -6,7 +6,7 @@
   "captured_date": "2026-08-11",
   "cycle_start_date": "2026-08-11",
   "cycle_end_date": "2026-10-09",
-  "cycle_status": "wave_60b_complete_wave_60c_scheduled",
+  "cycle_status": "wave_60c_in_progress_one_decision_complete",
   "publication_boundary": "Phase 60 publishes the operating contract and schedule, not future evidence. A scheduled gate remains scheduled until its source is checked, a human decision is recorded, required surfaces are propagated, validation passes, and the change is committed to Git.",
   "overdue_contract": {
     "rule": "A scheduled item becomes silently overdue when its scheduled_check_date is earlier than the build date and it has neither a decision_date nor a receipt_id.",
@@ -35,7 +35,7 @@
     "scheduled_gate_count": 13,
     "phase_58_held_gate_count": 10,
     "local_monitor_count": 3,
-    "completed_cycle_decisions": 2,
+    "completed_cycle_decisions": 3,
     "seed_receipts_propagated": 1,
     "silent_overdue_count": 0,
     "new_sources": 0,
@@ -43,7 +43,10 @@
     "underlying_signal_promotions": 1,
     "evidence_gaps_resolved": 0,
     "composite_scores_created": 0,
-    "operating_outcome_changes": 0
+    "operating_outcome_changes": 0,
+    "content_propagation_complete": 3,
+    "git_backed_release_verified": 2,
+    "git_backed_release_held": 1
   },
   "records": [
     {
@@ -115,11 +118,11 @@
         "source-57b-louisiana-starlink-bead-agreement"
       ],
       "underlying_signal_id": "signal-57y-preserved-la-starlink-adoption",
-      "exact_next_artifact": "Observed subscription or installation evidence for a fixed eligible-location cohort after service becomes available.",
+      "exact_next_artifact": "A ConnectLA- or SpaceX-issued project return that fixes the eligible-location cohort and reports actual installations, subscriptions, or service taken with observation period and method.",
       "scheduled_check_date": "2026-09-01",
-      "decision_status": "scheduled",
-      "decision_date": null,
-      "receipt_id": null,
+      "decision_status": "no_material_change",
+      "decision_date": "2026-09-01",
+      "receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
       "canonical_dossier_ids": [
         "briefing-outcomes-watch-001-what-actually-changed"
       ],
@@ -129,7 +132,44 @@
       "dependency_map_ids": [
         "dependency-map-comparative-outcomes-require-common-denominators"
       ],
-      "local_system_ids": []
+      "local_system_ids": [],
+      "source_checked_date": "2026-09-01",
+      "receipt_type": "No Material Change",
+      "propagation_status": "complete_locally_git_held",
+      "next_check_date": "2026-09-08",
+      "supporting_source_ids": [
+        "source-165-led-spacex-louisiana-campus-starlink-offer",
+        "source-165-starlink-louisiana-community-discount",
+        "source-165-louisiana-broadband-reporting-law",
+        "source-165-connectla-resource-library"
+      ],
+      "official_surface_count": 9,
+      "content_propagation_status": "complete",
+      "git_backed_release_status": "held",
+      "companion_rechecks": [
+        {
+          "receipt_id": "receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change",
+          "prior_receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+          "source_checked_date": "2026-09-08",
+          "decision_status": "no_material_change",
+          "receipt_type": "No Material Change",
+          "counts_as_cycle_decision": false,
+          "official_surface_count": 17,
+          "checked_source_ids": [
+            "source-57b-louisiana-starlink-bead-agreement",
+            "source-165-led-spacex-louisiana-campus-starlink-offer",
+            "source-165-starlink-louisiana-community-discount",
+            "source-165-connectla-resource-library",
+            "source-60-connectla-spacex-pecan-island-plan-2026",
+            "source-60-connectla-starlink-final-proposal-location-cohort-2026",
+            "source-60-starlink-2025-progress-report"
+          ],
+          "bounded_finding": "The bounded official-source recheck fixed the planning cohort at 10,635 unique location IDs but returned no compatible observed installation, subscription, or service-taken series with an observation period and method. This does not establish nonexistence or zero adoption.",
+          "next_check_date": "2026-10-09",
+          "content_propagation_status": "complete",
+          "git_backed_release_status": "held"
+        }
+      ]
     },
     {
       "cycle_item_id": "60-CYCLE-LOUISIANA-NEXTLINK-ADOPTION",
@@ -386,5 +426,6 @@
       "local_system_ids": []
     }
   ],
-  "last_operated_date": "2026-08-23"
+  "last_operated_date": "2026-09-01",
+  "latest_companion_recheck_date": "2026-09-08"
 }

@@ -1,6 +1,7 @@
 import { access, readdir, readFile } from "node:fs/promises";
 import { dirname, extname, isAbsolute, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import {verifyUpdateArchive} from './lib/verify-update-archive.mjs';
 
 const appRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dataRoot = join(appRoot, "src", "data");
@@ -9,7 +10,7 @@ const distRoot = join(appRoot, "dist");
 const receiptPath = join(dataRoot, "phase-144-local-validation-receipt.json");
 const failures = [];
 
-const expected = Object.freeze({
+const historicalExpected = Object.freeze({
   htmlPages: 6504,
   publicJsonExports: 86,
   updateEntries: 169,
@@ -168,13 +169,13 @@ const main = async () => {
   const publicJsonFiles = allFiles.filter(
     (path) => dirname(path) === dataDirectory && extname(path).toLowerCase() === ".json",
   );
-  check(htmlFiles.length === expected.htmlPages, `Expected exactly ${expected.htmlPages} HTML pages outside /downloads, found ${htmlFiles.length}.`);
-  check(publicJsonFiles.length === expected.publicJsonExports, `Expected exactly ${expected.publicJsonExports} top-level /data JSON exports, found ${publicJsonFiles.length}.`);
+  check(htmlFiles.length >= historicalExpected.htmlPages, `Expected at least the Phase 144 baseline of ${historicalExpected.htmlPages} HTML pages outside /downloads, found ${htmlFiles.length}.`);
+  check(publicJsonFiles.length >= historicalExpected.publicJsonExports, `Expected at least the Phase 144 baseline of ${historicalExpected.publicJsonExports} top-level /data JSON exports, found ${publicJsonFiles.length}.`);
 
   const routeEntries = programs.flatMap((program) => program.public_html_routes ?? []);
   const routeInventory = [...new Set(routeEntries)];
-  check(routeEntries.length === expected.editionRoutes, `Expected ${expected.editionRoutes} declared v0.7-v0.9 route entries, found ${routeEntries.length}.`);
-  check(routeInventory.length === expected.editionRoutes, `Expected ${expected.editionRoutes} unique v0.7-v0.9 routes, found ${routeInventory.length}.`);
+  check(routeEntries.length === historicalExpected.editionRoutes, `Expected ${historicalExpected.editionRoutes} declared v0.7-v0.9 route entries, found ${routeEntries.length}.`);
+  check(routeInventory.length === historicalExpected.editionRoutes, `Expected ${historicalExpected.editionRoutes} unique v0.7-v0.9 routes, found ${routeInventory.length}.`);
   const sitemapPath = join(distRoot, "sitemap.xml");
   check(await exists(sitemapPath), "The production sitemap is missing.");
   const sitemap = await exists(sitemapPath) ? await readFile(sitemapPath, "utf8") : "";
@@ -197,8 +198,8 @@ const main = async () => {
 
   const exportEntries = programs.flatMap((program) => program.public_json_exports ?? []);
   const exportInventory = [...new Set(exportEntries)];
-  check(exportEntries.length === expected.editionExports, `Expected ${expected.editionExports} declared v0.7-v0.9 export entries, found ${exportEntries.length}.`);
-  check(exportInventory.length === expected.editionExports, `Expected ${expected.editionExports} unique v0.7-v0.9 exports, found ${exportInventory.length}.`);
+  check(exportEntries.length === historicalExpected.editionExports, `Expected ${historicalExpected.editionExports} declared v0.7-v0.9 export entries, found ${exportEntries.length}.`);
+  check(exportInventory.length === historicalExpected.editionExports, `Expected ${historicalExpected.editionExports} unique v0.7-v0.9 exports, found ${exportInventory.length}.`);
   for (const route of exportInventory) {
     if (!route.startsWith("/data/") || !route.endsWith(".json") || route.includes("..")) {
       failures.push(`Unsafe or non-canonical export declaration: ${route}`);
@@ -216,18 +217,13 @@ const main = async () => {
   const updateFiles = (await readdir(updateRoot, { withFileTypes: true }))
     .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
     .map((entry) => join(updateRoot, entry.name));
-  check(updateFiles.length === expected.updateEntries, `Expected exactly ${expected.updateEntries} update entries, found ${updateFiles.length}.`);
+  check(updateFiles.length >= historicalExpected.updateEntries, `Expected at least the Phase 144 baseline of ${historicalExpected.updateEntries} update entries, found ${updateFiles.length}.`);
   const updatesPagePath = join(distRoot, "updates", "index.html");
   check(await exists(updatesPagePath), "The rendered /updates/ page is missing.");
   const updatesHtml = await exists(updatesPagePath) ? await readFile(updatesPagePath, "utf8") : "";
-  const renderedUpdateRows = (updatesHtml.match(/<article\b[^>]*\bclass=(["'])[^"']*\bsource-row\b[^"']*\1/gi) ?? []).length;
-  check(renderedUpdateRows === expected.updateEntries, `Expected ${expected.updateEntries} rendered update entries, found ${renderedUpdateRows}.`);
-  for (const path of updateFiles) {
-    const update = await readJson(path);
-    if (!updatesHtml.includes(update.title) && !updatesHtml.includes(htmlEscape(update.title))) {
-      failures.push(`/updates/ is missing the entry titled ${JSON.stringify(update.title)}.`);
-    }
-  }
+  check(updatesHtml.includes('data-paged-shelf="updates"'), 'The update root must expose the complete paginated archive.');
+  const renderedUpdateRows=await verifyUpdateArchive({appRoot});
+  check(renderedUpdateRows===updateFiles.length, `Expected every historical update to retain its complete receipt, found ${renderedUpdateRows}.`);
 
   const receipt = await readOptionalJson(receiptPath);
   if (receipt) {
@@ -240,12 +236,12 @@ const main = async () => {
     check(receipt.hosted_deployment_authorized === false, "Local validation must not authorize hosted deployment.");
     check(receipt.v1_promotion_state === "Held", "The Phase 144 receipt must keep v1 promotion Held.");
     check(/^[a-f0-9]{64}$/.test(receipt.artifact_digest ?? ""), "The Phase 144 receipt must carry a SHA-256 candidate digest.");
-    check(receipt.metrics?.html_pages_excluding_downloads === expected.htmlPages, "The receipt must record exactly 6,504 HTML pages.");
-    check(receipt.metrics?.top_level_data_json_exports === expected.publicJsonExports, "The receipt must record exactly 86 top-level /data JSON exports.");
-    check(receipt.metrics?.update_entries_rendered === expected.updateEntries, "The receipt must record exactly 169 rendered update entries.");
-    check(receipt.metrics?.v07_v09_public_html_routes === expected.editionRoutes, "The receipt must record exactly 170 v0.7-v0.9 routes.");
-    check(receipt.metrics?.v07_v09_public_json_exports === expected.editionExports, "The receipt must record exactly 18 v0.7-v0.9 exports.");
-    check(receipt.metrics?.schema_1_0_exports === expected.editionExports, "The receipt must record 18 schema-1.0 v0.7-v0.9 exports.");
+    check(receipt.metrics?.html_pages_excluding_downloads === historicalExpected.htmlPages, "The receipt must record exactly 6,504 HTML pages.");
+    check(receipt.metrics?.top_level_data_json_exports === historicalExpected.publicJsonExports, "The receipt must record exactly 86 top-level /data JSON exports.");
+    check(receipt.metrics?.update_entries_rendered === historicalExpected.updateEntries, "The receipt must record exactly 169 rendered update entries.");
+    check(receipt.metrics?.v07_v09_public_html_routes === historicalExpected.editionRoutes, "The receipt must record exactly 170 v0.7-v0.9 routes.");
+    check(receipt.metrics?.v07_v09_public_json_exports === historicalExpected.editionExports, "The receipt must record exactly 18 v0.7-v0.9 exports.");
+    check(receipt.metrics?.schema_1_0_exports === historicalExpected.editionExports, "The receipt must record 18 schema-1.0 v0.7-v0.9 exports.");
     check(Array.isArray(receipt.checks) && receipt.checks.length > requiredReceiptCommands.length, "The Phase 144 receipt must contain structural and command checks.");
     check(receipt.checks?.every((item) => item.status === "Passed"), "Every Phase 144 receipt check must be Passed.");
     for (const script of requiredReceiptCommands) {

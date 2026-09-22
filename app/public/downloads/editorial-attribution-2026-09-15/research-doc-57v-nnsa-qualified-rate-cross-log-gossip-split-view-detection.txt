@@ -1,0 +1,29 @@
+Title: FTFN cross-log split-view detection tests for NNSA recurring qualified rate
+Record author: FTFN
+Record type: FTFN method/test note
+FTFN record ID: research-doc-57v-nnsa-qualified-rate-cross-log-gossip-split-view-detection
+Historical record state: Published
+Attribution reviewed: 2026-09-15
+Reviewed source SHA-256: 9a8a99622c3030e3aeb8c656036b0660e8fa92db6892d1f56e95c8e00f21b016
+This is an FTFN-authored link record, not a capture of the linked external document.
+Contextual source URL (not refreshed by classification): https://www.energy.gov/sites/default/files/2025-06/doe-fy-2026-vol-1-wa.pdf
+
+The August 10 FTFN record reports 22 synthetic gossip cases: six bounded routes and 16 rejections for its NNSA recurring qualified rate workflow. This is not observed continuous log availability or a production gossip exchange. These historical counts were not rerun or independently verified by this attribution review.
+
+- The historical FTFN account reports 22 synthetic gossip cases: six bounded routes and 16 rejections.
+- The FTFN tests require matching checkpoint digest, tree root and tree size across the logs. Any split view fails closed; two matching logs cannot vote a divergent log into authority.
+- This is not observed continuous log availability or a production gossip exchange.
+- Budget and pit-production context do not supply recurring qualified-rate observations through a synthetic authorization or recovery test.
+- Attribution review only: no test rerun, fresh external source check, independent certification or editorial acceptance is recorded.
+
+Boundary: This is an FTFN-authored record, not an agency data release or technical report.
+Boundary: Contextual source contents and currency were not newly verified by this attribution review.
+Boundary: Historical fixtures establish no current evidence absence, operational authority, public witness service, log uptime, production certification, real compromise or completed recovery.
+Boundary: No agency contact, FOIA request, authority grant, independent approval, reader activation, publication permission or closure is created.
+Boundary: Original source records, publication state and dates remain unchanged; September 15 is the attribution-review date.
+
+Prior title: NNSA recurring qualified rate receives cross-log gossip split-view detection
+Inherited publisher label (not authorship): U.S. Department of Energy
+Historical link file: /downloads/threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026/official-links/39-phase57v-record.txt
+Historical link SHA-256: 3a71656b4e6fc9cbbfa587a217bcdce5f9eb07589dabdfa93f97fa991ebd61c6
+Canonical record: /research/documents/57v-nnsa-qualified-rate-cross-log-gossip-split-view-detection/

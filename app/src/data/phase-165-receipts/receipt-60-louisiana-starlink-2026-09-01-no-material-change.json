@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+  "receipt_type": "No Material Change",
+  "operation_run_id": "165-OPERATION-001",
+  "upstream_operation_id": "145-GATE-003",
+  "upstream_cycle_item_id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+  "source_checked_date": "2026-09-01",
+  "decision_date": "2026-09-01",
+  "decision_status": "no_material_change",
+  "signal_decision": "retain_in_review_no_material_change",
+  "affected_record_ids": [
+    "source-57b-louisiana-starlink-bead-agreement",
+    "source-165-led-spacex-louisiana-campus-starlink-offer",
+    "source-165-starlink-louisiana-community-discount",
+    "source-165-louisiana-broadband-reporting-law",
+    "source-165-connectla-resource-library",
+    "signal-57y-preserved-la-starlink-adoption",
+    "briefing-outcomes-watch-001-what-actually-changed",
+    "briefing-evidence-cycle-001-operating-baseline",
+    "reader-pathway-policy-standards-to-implementation",
+    "dependency-map-comparative-outcomes-require-common-denominators",
+    "162-BRIEF-004"
+  ],
+  "prior_state": "ConnectLA’s June 11 grant-agreement record described planned Starlink access for 10,635 eligible locations in more than 50 parishes by the end of summer; the adoption signal remained In Review pending observed installations or subscriptions for a fixed eligible-location cohort with a dated period and disclosed method.",
+  "current_state": "The adoption signal remains In Review. The September 1 review confirms the award baseline and identifies adjacent Pecan Island planned-service and affordability details, but no reviewed official surface supplies a compatible observed installation or subscription result for the fixed Louisiana BEAD cohort.",
+  "bounded_finding": "ConnectLA’s current official surfaces continue to establish planned access for 10,635 locations. Adjacent official material describes a 270-home-and-business Pecan Island plan and a Vermilion Parish discount; none reports actual installations, subscriptions, take-up, an observation period, or a compatible cohort method.",
+  "evidence_boundary": "This receipt is limited to the official public surfaces reviewed on September 1. It does not establish that a qualifying artifact does not exist, that no household subscribed, or that the program succeeded or failed. Planned coverage, an affordability offer, availability, and provider-wide subscriber totals cannot substitute for observed Louisiana BEAD-cohort adoption.",
+  "publication_effect": "Publish a dated No Material Change decision, retain the signal In Review, append the bounded finding to the assigned reader surfaces, and keep Git-backed release validation separate from the evidence decision.",
+  "exact_next_artifact": "A ConnectLA- or SpaceX-issued project return that fixes the eligible-location cohort and reports actual installations, subscriptions, or service taken with observation period and method.",
+  "next_check_date": "2026-09-08",
+  "next_check_boundary": "The September 8 date is a bounded public-surface recheck after the draft template’s August reporting interval. The template does not prove the executed SpaceX terms, report delivery, or public availability.",
+  "official_surface_checks": [
+    {
+      "publisher": "ConnectLA",
+      "artifact": "Starlink BEAD grant agreement",
+      "url": "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access",
+      "artifact_date": "2026-06-11",
+      "accessed_date": "2026-09-01",
+      "result": "Confirms 10,635 planned locations in more than 50 parishes and an end-of-summer intention; no observed installation or subscription series."
+    },
+    {
+      "publisher": "ConnectLA",
+      "artifact": "Press-release index",
+      "url": "https://connect.la.gov/press-releases",
+      "artifact_date": null,
+      "accessed_date": "2026-09-01",
+      "result": "The bounded current index review surfaced no compatible fixed-cohort adoption return; this is not a nonexistence finding."
+    },
+    {
+      "publisher": "ConnectLA",
+      "artifact": "Resource library",
+      "url": "https://connect.la.gov/resource-library",
+      "artifact_date": null,
+      "accessed_date": "2026-09-01",
+      "result": "Lists proposal, project, location, monitoring, and agreement materials; the rendered index supplies no cohort adoption table."
+    },
+    {
+      "publisher": "Louisiana Economic Development",
+      "artifact": "SpaceX Louisiana campus announcement",
+      "url": "https://www.opportunitylouisiana.gov/news/spacex-launches-new-era-of-commercial-spaceflight-with-100-billion-louisiana-campus",
+      "artifact_date": "2026-08-25",
+      "accessed_date": "2026-09-01",
+      "result": "Describes a discount and hardware offer but reports no customer or installation count."
+    },
+    {
+      "publisher": "Starlink",
+      "artifact": "Vermilion Parish discount support article",
+      "url": "https://starlink.com/support/article/5a00b427-520c-faa3-2de2-f74c1ddaa6cc",
+      "artifact_date": null,
+      "accessed_date": "2026-09-01",
+      "result": "Confirms an eligible-zone offer and automatic billing treatment; contains no enrolled-customer, installation, or BEAD-cohort count."
+    },
+    {
+      "publisher": "Louisiana Legislature",
+      "artifact": "R.S. 51:2370.30",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=1337853",
+      "artifact_date": null,
+      "accessed_date": "2026-09-01",
+      "result": "Defines annual adoption reporting authority but supplies no Starlink cohort result."
+    },
+    {
+      "publisher": "ConnectLA",
+      "artifact": "Draft GUMBO 2.0 subrecipient agreement",
+      "url": "https://connect.la.gov/media/gvrfqkff/draft-subrecipient-agreement-final-10-11-24.pdf",
+      "artifact_date": "2024-10-11",
+      "accessed_date": "2026-09-01",
+      "result": "Template describes reporting fields including service taken where applicable; it is not the executed SpaceX return."
+    },
+    {
+      "publisher": "NTIA",
+      "artifact": "Louisiana final-proposal overview",
+      "url": "https://broadbandusa.ntia.gov/sites/default/files/2026-01/BEAD_FP_Overview_LA.pdf",
+      "artifact_date": "2025-10-06",
+      "accessed_date": "2026-09-01",
+      "result": "Supplies the 10,635-location LEO allocation baseline, not observed adoption."
+    },
+    {
+      "publisher": "FCC",
+      "artifact": "National Broadband Map availability boundary",
+      "url": "https://help.bdc.fcc.gov/hc/en-us/articles/10476040597787-How-to-Submit-an-Availability-Challenge",
+      "artifact_date": "2025-05-15",
+      "accessed_date": "2026-09-01",
+      "result": "States that the map concerns availability, not adoption; availability cannot substitute for this gate."
+    }
+  ],
+  "archive_state": "Dated evidence decision archived",
+  "artifact_digest": "00c3779079b4d23153d7ee72da9d72060b53548b1d84eb05c9252f972582decb"
+}

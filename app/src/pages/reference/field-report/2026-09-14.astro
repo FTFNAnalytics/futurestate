@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import CurrentResearchArticle from '../../../components/review/CurrentResearchArticle.astro';
+import corpus from '../../../data/phase-205-216-current-editorial.json';
+const edition=corpus.records.find(r=>r.record_id==='212-REPORT-001')!;
+const chapters=['198-CASE-016','198-CASE-002','198-CASE-013','198-CASE-014'].map(id=>corpus.records.find(r=>r.record_id===id)!);
+---
+<BaseLayout title={`${edition.title} | FTFN`} description={edition.answer}>
+  <CurrentResearchArticle article={edition} />
+  <nav class="page-section" aria-label="Field edition chapters"><h2>Read the four cases</h2><ol>{chapters.map(c=><li><a href={`#${c.record_id}`}>{c.title}</a></li>)}</ol></nav>
+  {chapters.map(chapter=><div id={chapter.record_id}><CurrentResearchArticle article={chapter} embedded /><p class="page-section"><a href={chapter.route}>Open the standalone case and preserved research contract</a></p></div>)}
+  <section class="page-section"><h2>Earlier edition and wider reading</h2><p><a href="/reference/state-of-future-systems/">Inspect the earlier State of Future Systems draft collection</a>. Its coverage and review state remain separate from this selected edition.</p><p><a href="/reference/explore/1/?kind=Topic">Topic orientation</a> · <a href="/reference/explore/1/?kind=Question">Scoped factual answers</a> · <a href="/method/editorial-review/">Corrections and measurement limits</a></p></section>
+</BaseLayout>

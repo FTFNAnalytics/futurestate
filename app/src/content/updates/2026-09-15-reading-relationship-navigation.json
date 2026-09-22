@@ -1,0 +1,22 @@
+{
+  "id": "update-2026-09-15-reading-relationship-navigation",
+  "effective_date": "2026-09-15",
+  "entry_type": "Correction",
+  "title": "Briefing references and signal map backlinks become complete paginated archives",
+  "summary": "Briefing pages retain every explicitly referenced signal and evidence gap, plus maps connected by shared IDs, in bounded searchable archives. Signal pages retain every explicit map backlink. Shared IDs are not direct briefing citations or independent corroboration, and classified historical records keep their feed holds.",
+  "affected_record_ids": [
+    "briefing-research-watch-055-federation-remediation-and-long-term-recovery",
+    "signal-toronto-24-254930-community-council-recommendation"
+  ],
+  "related_paths": [
+    "/briefings/",
+    "/signals/",
+    "/atlas/dependency-maps/"
+  ],
+  "evidence_note": "The highlighted IDs identify two large-list cases; shared templates apply to all 458 briefings and all 744 signals with explicit map backlinks. Source-level cardinality inspection found 454 briefings and 24 signals above fifty related cards before this change. Complete membership, distinct shared IDs, historical graph-row counts, original narratives and direct signal-source links are retained. This is a presentation correction, not a source review or new operating result.",
+  "receipt_id": "208-READING-NAVIGATION-2026-09-15",
+  "receipt_type": "Correction",
+  "materiality": "Correction",
+  "publication_effect": "Local candidate only. Source-level tests are distinct from production rendering, page-byte measurements, actual reader trials, independent approval, Git publication and deployment; those acceptance steps remain pending.",
+  "work_package": "docs/work-packages/phase-208-reader-navigation-search-and-page-performance.md"
+}

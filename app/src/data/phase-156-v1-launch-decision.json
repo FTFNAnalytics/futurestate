@@ -1,0 +1,340 @@
+{
+  "schema_version": "1.0",
+  "phase": 156,
+  "program_id": "FTFN-PHASE-156",
+  "dataset": "phase_156_v1_launch_decision",
+  "title": "v1 launch decision",
+  "effective_date": "2026-08-31",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Derive a fresh fourteen-gate release-candidate audit from governed upstream state and retain the explicit owner promotion boundary.",
+  "record_scope": "v1 launch decision records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "Alternative official-source discovery expands the review shelf; it does not by itself admit evidence or answer a mission.",
+    "Calendar-bound checks remain unoperated until their lawful date, and shared-date gates retain separate identities, decisions, and receipts.",
+    "No project stage, place state, longitudinal observation, comparison verdict, outcome, score, rank, causal finding, recommendation, owner decision, or public-launch authorization is inferred.",
+    "A bounded repository result describes the reviewed corpus and search path; it never proves that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v1rc/launch-decision/",
+    "public_export": "/data/phase-156-v1-launch-decision.json"
+  },
+  "counts": {
+    "launch_gates": 14,
+    "passed": 10,
+    "held": 4,
+    "pending_build": 0,
+    "false_passes": 0
+  },
+  "launch_gates": [
+    {
+      "gate_id": "156-GATE-01-EVIDENCE-ADMISSION",
+      "label": "evidence admission",
+      "state": "Held",
+      "reason": "18 requirement and 6 mission decision(s) still lack a valid terminal owner receipt."
+    },
+    {
+      "gate_id": "156-GATE-02-AUTHORITY-COVERAGE",
+      "label": "authority coverage",
+      "state": "Held",
+      "reason": "12 of twelve authority gaps still require a dated owner close, carry, or exclusion disposition; alternative discovery alone does not clear the gate."
+    },
+    {
+      "gate_id": "156-GATE-03-ATLAS-IDENTITY",
+      "label": "atlas identity",
+      "state": "Pass",
+      "reason": "All thirty-nine canonical project and place identities have a Phase 148 baseline review."
+    },
+    {
+      "gate_id": "156-GATE-04-PROJECT-CHRONICLES",
+      "label": "project chronicles",
+      "state": "Pass",
+      "reason": "Twenty-four stage-bounded project chronicles remain published."
+    },
+    {
+      "gate_id": "156-GATE-05-PLACE-LEDGERS",
+      "label": "place ledgers",
+      "state": "Pass",
+      "reason": "Fifteen receiving-system ledgers remain published without synthetic place stages."
+    },
+    {
+      "gate_id": "156-GATE-06-LONGITUDINAL-EVIDENCE",
+      "label": "longitudinal evidence",
+      "state": "Held",
+      "reason": "No series is admitted and the prepared zero-series launch boundary has not received owner acceptance."
+    },
+    {
+      "gate_id": "156-GATE-07-COMPARATIVE-INTEGRITY",
+      "label": "comparative integrity",
+      "state": "Pass",
+      "reason": "All twelve passports retain explicit compatibility limits, zero scores, and zero ranks."
+    },
+    {
+      "gate_id": "156-GATE-08-CONTENT-DEPTH",
+      "label": "content depth",
+      "state": "Pass",
+      "reason": "Seventeen source-linked field guides and four reports with sixteen sourced claim blocks and at least 765 authored words each pass the content-depth contract."
+    },
+    {
+      "gate_id": "156-GATE-09-EDITORIAL-CADENCE",
+      "label": "editorial cadence",
+      "state": "Pass",
+      "reason": "Four source-binding edition templates are prepared, no future content is prepublished, and every due desk window and edition has a lawful terminal receipt."
+    },
+    {
+      "gate_id": "156-GATE-10-FUTURE-GATE-INTEGRITY",
+      "label": "calendar gate integrity",
+      "state": "Pass",
+      "reason": "As of 2026-08-31, all due operations have lawful dated receipts and every later operation remains scheduled with null decision fields."
+    },
+    {
+      "gate_id": "156-GATE-11-MACHINE-READABLE-CONTRACT",
+      "label": "machine-readable contract",
+      "state": "Pass",
+      "reason": "Twelve phase registries and one aggregate expose the v1 release-candidate layer as schema-1.0 JSON."
+    },
+    {
+      "gate_id": "156-GATE-12-ACCESSIBLE-STRUCTURE",
+      "label": "accessible structure",
+      "state": "Pass",
+      "reason": "The Phase 156 receipt structurally audited 58 v1-RC routes."
+    },
+    {
+      "gate_id": "156-GATE-13-RELEASE-VALIDATION",
+      "label": "release validation",
+      "state": "Pass",
+      "reason": "Local validation receipt 156-LOCAL-VALIDATION-2026-08-31-a750bba9528e passed and matches candidate digest 5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a."
+    },
+    {
+      "gate_id": "156-GATE-14-OWNER-ACCEPTANCE",
+      "label": "owner acceptance",
+      "state": "Held",
+      "reason": "No complete owner receipt binds the exact candidate digest, commit, fourteen-gate snapshot, limitations, and v1-promotion authorization."
+    }
+  ],
+  "audit_result": "v1 remains Held: evidence admission, authority coverage, longitudinal evidence, owner acceptance.",
+  "v1_promotion_state": "Held",
+  "local_validation_receipt": {
+    "schema_version": "1.0",
+    "receipt_id": "156-LOCAL-VALIDATION-2026-08-31-a750bba9528e",
+    "phase": 156,
+    "candidate_effective_date": "2026-08-31",
+    "validated_date": "2026-08-31",
+    "validated_at": "2026-09-01T04:02:41.909Z",
+    "status": "Passed",
+    "validation_result": "Passed local release-candidate checks",
+    "validator_contract_version": "phase-156-local-validator-v2",
+    "scope": "Local v1 release-candidate validation only; this receipt is not evidence admission, owner acceptance, repository publication, hosted deployment, or public-launch authorization.",
+    "artifact_digest_algorithm": "sha256",
+    "artifact_digest_contract": "SHA-256 over normalized schema-1.0 v1-RC source exports, the complete current route inventory, and every explicitly inventoried v1-RC publication/lifecycle update; receipt- and owner-derived Phase 156 fields are normalized to their pre-receipt state to avoid self-reference.",
+    "artifact_digest": "5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a",
+    "validation_bundle_digest": "a750bba9528e95a1c13bac398c4a833c8da87362992867718743ca0563eebbb4",
+    "metrics": {
+      "html_pages_excluding_downloads": 6562,
+      "top_level_data_json_exports": 99,
+      "update_entries_rendered": 181,
+      "v1rc_public_html_routes": 58,
+      "v1rc_public_json_exports": 13,
+      "schema_1_0_v1rc_exports": 13,
+      "structurally_audited_v1rc_routes": 58
+    },
+    "checks": [
+      {
+        "check_id": "production-html-inventory",
+        "status": "Passed",
+        "detail": "6562 HTML pages outside /downloads"
+      },
+      {
+        "check_id": "public-json-inventory",
+        "status": "Passed",
+        "detail": "99 top-level /data JSON exports"
+      },
+      {
+        "check_id": "update-index-rendering",
+        "status": "Passed",
+        "detail": "181 update entries rendered"
+      },
+      {
+        "check_id": "v1rc-route-inventory",
+        "status": "Passed",
+        "detail": "58 unique v1-RC routes"
+      },
+      {
+        "check_id": "v1rc-route-structure",
+        "status": "Passed",
+        "detail": "58 v1-RC routes structurally audited"
+      },
+      {
+        "check_id": "v1rc-export-inventory",
+        "status": "Passed",
+        "detail": "13 unique v1-RC JSON exports"
+      },
+      {
+        "check_id": "v1rc-schema-contract",
+        "status": "Passed",
+        "detail": "13 v1-RC exports use schema_version 1.0"
+      },
+      {
+        "check_id": "owner-authority-boundary",
+        "status": "Passed",
+        "detail": "owner acceptance, public launch, hosted deployment, and v1 promotion remain unauthorized"
+      },
+      {
+        "check_id": "npm-run-validate-candidates",
+        "status": "Passed",
+        "command": "npm run validate:candidates"
+      },
+      {
+        "check_id": "npm-run-validate-content",
+        "status": "Passed",
+        "command": "npm run validate:content"
+      },
+      {
+        "check_id": "npm-run-source-health",
+        "status": "Passed",
+        "command": "npm run source:health"
+      },
+      {
+        "check_id": "npm-run-verify-phase58",
+        "status": "Passed",
+        "command": "npm run verify:phase58"
+      },
+      {
+        "check_id": "npm-run-verify-phase59",
+        "status": "Passed",
+        "command": "npm run verify:phase59"
+      },
+      {
+        "check_id": "npm-run-verify-phase60",
+        "status": "Passed",
+        "command": "npm run verify:phase60"
+      },
+      {
+        "check_id": "npm-run-verify-phase60c",
+        "status": "Passed",
+        "command": "npm run verify:phase60c"
+      },
+      {
+        "check_id": "npm-run-verify-phase61",
+        "status": "Passed",
+        "command": "npm run verify:phase61"
+      },
+      {
+        "check_id": "npm-run-test-v09",
+        "status": "Passed",
+        "command": "npm run test:v09"
+      },
+      {
+        "check_id": "npm-run-test-v1rc",
+        "status": "Passed",
+        "command": "npm run test:v1rc"
+      },
+      {
+        "check_id": "npm-run-check",
+        "status": "Passed",
+        "command": "npm run check"
+      },
+      {
+        "check_id": "npm-run-build",
+        "status": "Passed",
+        "command": "npm run build"
+      },
+      {
+        "check_id": "npm-run-verify-v1rc",
+        "status": "Passed",
+        "command": "npm run verify:v1rc"
+      }
+    ],
+    "evidence_admission_authorized": false,
+    "owner_acceptance": false,
+    "github_publication_authorized": false,
+    "hosted_deployment_authorized": false,
+    "public_launch_authorized": false,
+    "v1_promotion_state": "Held",
+    "next_action": "Regenerate Phases 145–156 so the receipt is embedded, rebuild, reverify the stable digest contract, update the deployment manifest, and present the remaining owner and calendar gates without promoting v1."
+  },
+  "owner_acceptance_receipt": null,
+  "owner_packet": {
+    "state": "Prepared for owner review",
+    "candidate_git_commit": null,
+    "candidate_artifact_digest": "5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a",
+    "launch_gate_snapshot": [
+      {
+        "gate_id": "156-GATE-01-EVIDENCE-ADMISSION",
+        "state": "Held"
+      },
+      {
+        "gate_id": "156-GATE-02-AUTHORITY-COVERAGE",
+        "state": "Held"
+      },
+      {
+        "gate_id": "156-GATE-03-ATLAS-IDENTITY",
+        "state": "Pass"
+      },
+      {
+        "gate_id": "156-GATE-04-PROJECT-CHRONICLES",
+        "state": "Pass"
+      },
+      {
+        "gate_id": "156-GATE-05-PLACE-LEDGERS",
+        "state": "Pass"
+      },
+      {
+        "gate_id": "156-GATE-06-LONGITUDINAL-EVIDENCE",
+        "state": "Held"
+      },
+      {
+        "gate_id": "156-GATE-07-COMPARATIVE-INTEGRITY",
+        "state": "Pass"
+      },
+      {
+        "gate_id": "156-GATE-08-CONTENT-DEPTH",
+        "state": "Pass"
+      },
+      {
+        "gate_id": "156-GATE-09-EDITORIAL-CADENCE",
+        "state": "Pass"
+      },
+      {
+        "gate_id": "156-GATE-10-FUTURE-GATE-INTEGRITY",
+        "state": "Pass"
+      },
+      {
+        "gate_id": "156-GATE-11-MACHINE-READABLE-CONTRACT",
+        "state": "Pass"
+      },
+      {
+        "gate_id": "156-GATE-12-ACCESSIBLE-STRUCTURE",
+        "state": "Pass"
+      },
+      {
+        "gate_id": "156-GATE-13-RELEASE-VALIDATION",
+        "state": "Pass"
+      },
+      {
+        "gate_id": "156-GATE-14-OWNER-ACCEPTANCE",
+        "state": "Held"
+      }
+    ],
+    "boundaries_requiring_acceptance": [
+      "18 requirement decision(s) and 6 mission decision(s) remain unterminated.",
+      "12 authority disposition(s) remain owner-gated.",
+      "Zero longitudinal series are admitted.",
+      "Repository publication, hosted deployment, public access, custom domain, and DNS remain separate approvals."
+    ],
+    "owner_receipt_contract_version": "phase-156-owner-acceptance-v1",
+    "owner_receipt_archive": null,
+    "owner_receipt_validation_state": "Not supplied",
+    "owner_acceptance": false,
+    "github_publication_authorized": false,
+    "public_launch_authorized": false,
+    "hosted_deployment_authorized": false,
+    "candidate_git_commit_verification_state": "Not supplied"
+  },
+  "public_html_routes": [
+    "/review/v1rc/launch-decision/"
+  ],
+  "public_json_exports": [
+    "/data/phase-156-v1-launch-decision.json"
+  ]
+}

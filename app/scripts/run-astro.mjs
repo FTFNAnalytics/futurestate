@@ -1,11 +1,14 @@
 import { spawn } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { readFileSync } from "node:fs";
 
 process.env.ASTRO_TELEMETRY_DISABLED ??= "1";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const astroBin = path.join(appRoot, "node_modules", "astro", "astro.js");
+const astroPackagePath = fileURLToPath(import.meta.resolve("astro/package.json"));
+const astroPackage = JSON.parse(readFileSync(astroPackagePath, "utf8"));
+const astroBin = path.resolve(path.dirname(astroPackagePath), astroPackage.bin.astro);
 const args = process.argv.slice(2);
 
 const child = spawn(process.execPath, [astroBin, ...args], {

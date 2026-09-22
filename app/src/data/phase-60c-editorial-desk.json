@@ -6,9 +6,9 @@
   "captured_date": "2026-08-23",
   "operating_window_start": "2026-09-01",
   "operating_window_end": "2026-09-15",
-  "desk_status": "preflight_ready",
+  "desk_status": "operating_one_cycle_gate_complete",
   "record_scope": "Six Wave 60C Evidence Cycle gates and two separate named-file companion rechecks, each with an exact artifact, admissibility test, hold rule, and propagation assignment.",
-  "publication_boundary": "This desk is a future-safe editorial plan. It creates no receipt, source-check result, decision, signal promotion, project-stage change, matrix-cell advance, score, ranking, or operating-outcome claim before the real dated review.",
+  "publication_boundary": "This desk preserves its August 23 preflight provenance and records one real September 1 No Material Change decision. Five later cycle gates and two companion rechecks remain future-safe; Git-backed release for the September 1 content propagation remains Held.",
   "decision_contract": {
     "allowed_receipt_types": [
       "Change Note",
@@ -18,7 +18,7 @@
       "Blocked Check"
     ],
     "independence_rule": "Every gate receives its own source review, receipt identity, evidence-stage decision, and propagation proof even when several checks share a date or topic.",
-    "future_field_rule": "Decision dates, receipt IDs, attempted surfaces, access results, and propagation results remain absent from this desk and empty in the operating envelopes until the real check date.",
+    "future_field_rule": "Decision dates, receipt IDs, attempted surfaces, access results, and propagation results remain absent for future desk items. A due item may receive them only from its real dated receipt and completed propagation proof.",
     "named_file_rule": "A companion recheck may change only its same-entity Phase 61 file and only when a qualifying official artifact changes the file's current evidence stage.",
     "publication_rule": "A gate publishes only after the source check, bounded receipt, source and signal decision, assigned reader-surface propagation, validation, and Git-backed release review are complete."
   },
@@ -38,7 +38,7 @@
       "signal_ids": [
         "signal-57y-preserved-la-starlink-adoption"
       ],
-      "exact_next_artifact": "Observed subscription or installation evidence for a fixed eligible-location cohort after service becomes available.",
+      "exact_next_artifact": "A ConnectLA- or SpaceX-issued project return that fixes the eligible-location cohort and reports actual installations, subscriptions, or service taken with observation period and method.",
       "qualifying_evidence": "An official location-cohort record with actual installations or subscriptions, a dated observation period, a stable eligible-location denominator, and a disclosed method.",
       "insufficient_evidence": "The grant agreement, planned 10,635-location coverage, service-availability language, provider-wide subscriber totals, forecasts, or an undated anecdote.",
       "potential_publication_effect": "May advance only the existing Louisiana Starlink adoption signal to the exact observed cohort stage supported by the returned artifact.",
@@ -50,6 +50,51 @@
         "Comparative Outcomes Require Common Denominators map",
         "Evidence Cycle 001 digest",
         "public update"
+      ],
+      "checked_source_ids": [
+        "source-57b-louisiana-starlink-bead-agreement",
+        "source-165-led-spacex-louisiana-campus-starlink-offer",
+        "source-165-starlink-louisiana-community-discount",
+        "source-165-louisiana-broadband-reporting-law",
+        "source-165-connectla-resource-library"
+      ],
+      "source_checked_date": "2026-09-01",
+      "attempted_surfaces": [
+        "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access",
+        "https://connect.la.gov/press-releases",
+        "https://connect.la.gov/resource-library",
+        "https://www.opportunitylouisiana.gov/news/spacex-launches-new-era-of-commercial-spaceflight-with-100-billion-louisiana-campus",
+        "https://starlink.com/support/article/5a00b427-520c-faa3-2de2-f74c1ddaa6cc",
+        "https://legis.la.gov/legis/Law.aspx?d=1337853",
+        "https://connect.la.gov/media/gvrfqkff/draft-subrecipient-agreement-final-10-11-24.pdf",
+        "https://broadbandusa.ntia.gov/sites/default/files/2026-01/BEAD_FP_Overview_LA.pdf",
+        "https://help.bdc.fcc.gov/hc/en-us/articles/10476040597787-How-to-Submit-an-Availability-Challenge"
+      ],
+      "access_result": "The official surfaces establish planned access, adjacent offer terms, reporting duties, and available program documents, but no compatible observed installation, subscription, or service-taken result for a fixed Louisiana BEAD cohort.",
+      "receipt_type": "No Material Change",
+      "receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+      "decision_date": "2026-09-01",
+      "decision_status": "no_material_change",
+      "propagation_status": "complete_locally_git_held",
+      "next_check_date": "2026-09-08",
+      "publication_boundary": "This desk item records a dated No Material Change decision and complete content propagation. Git-backed release remains Held; the result does not establish nonexistence, zero adoption, availability, success, or failure and does not authorize any named-file or matrix advance.",
+      "content_propagation_status": "complete",
+      "git_backed_release_status": "held",
+      "companion_rechecks": [
+        {
+          "receipt_id": "receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change",
+          "prior_receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+          "source_checked_date": "2026-09-08",
+          "decision_status": "no_material_change",
+          "receipt_type": "No Material Change",
+          "counts_as_cycle_decision": false,
+          "attempted_surface_count": 17,
+          "access_result": "The bounded official-source review fixes the planning cohort at 10,635 unique location IDs but supplies no compatible observed installation, subscription, or service-taken series with an observation period and disclosed method.",
+          "next_check_date": "2026-10-09",
+          "publication_boundary": "This companion receipt does not replace the September 1 decision, add a fourteenth cycle gate, establish nonexistence or zero adoption, or authorize a Phase 61 file-stage or matrix advance.",
+          "content_propagation_status": "complete",
+          "git_backed_release_status": "held"
+        }
       ]
     },
     {
@@ -260,5 +305,30 @@
       ],
       "prior_receipt_id": "receipt-60-slf-2026-08-15-no-material-change"
     }
-  ]
+  ],
+  "current_operating_result": {
+    "completed_cycle_gate_id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+    "receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+    "decision_status": "no_material_change",
+    "completed_date": "2026-09-01",
+    "remaining_cycle_gates": 5,
+    "remaining_companion_rechecks": 2,
+    "next_public_surface_recheck": "2026-09-08",
+    "next_scheduled_desk_date": "2026-09-09",
+    "content_propagation_status": "complete",
+    "git_backed_release_status": "held"
+  },
+  "latest_companion_recheck": {
+    "cycle_item_id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+    "receipt_id": "receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change",
+    "completed_date": "2026-09-08",
+    "decision_status": "no_material_change",
+    "counts_as_cycle_decision": false,
+    "next_scheduled_desk_date": "2026-09-09",
+    "next_cycle_audit_date": "2026-10-09",
+    "content_propagation_status": "complete",
+    "git_backed_release_status": "held"
+  },
+  "as_of_date": "2026-09-01",
+  "last_operated_date": "2026-09-01"
 }

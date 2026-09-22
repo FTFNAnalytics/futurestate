@@ -1,0 +1,49 @@
+---
+import {getCollection} from 'astro:content';
+import ReviewHeader from './ReviewHeader.astro';
+import RegistryDetail from './RegistryDetail.astro';
+import editions from '../../data/phase-202-accessible-multilingual-low-bandwidth-editions.json';
+import operations from '../../data/phase-207-current-operations.json';
+import {readerCatalog} from '../../lib/reader-catalog.mjs';
+import {currentEvidenceLedger} from '../../lib/current-evidence.mjs';
+import {readerPresentation,readerSourceReviewContexts} from '../../lib/reader-presentation.mjs';
+interface Article { record_id: string; title: string; overview: string; authored_date: string; inherited_as_of_date: string; review_status: string; mode?: string; sections: {heading: string; paragraphs: string[]}[]; source_ids: string[]; related_paths?: string[]; }
+interface Props { article: Article; record: any; registry: any; phase: number; }
+const {article,record,registry,phase}=Astro.props;
+const sources=await getCollection('sources');
+const byId=new Map(sources.map(source=>[source.data.id,source.data]));
+const view=readerPresentation(article,sources.map(s=>s.data),editions.edition_contracts,readerCatalog);
+const sourceContexts=readerSourceReviewContexts(article,currentEvidenceLedger,operations,{route:Astro.url.pathname});
+---
+<article class="reference-reader" data-reader-article={article.record_id}>
+  <ReviewHeader eyebrow="FTFN Reference · Reader edition" title={article.title} summary={article.overview} />
+  <div class="page-section prose-page">
+    <p class="card-note">Written {article.authored_date}. Evidence inherited through {article.inherited_as_of_date}; this writing pass is not a new source check.</p>
+    <p><strong>{article.review_status}</strong>. Factual acceptance, accessibility certification and public release remain separate.</p>
+    {view.alternatives.length>0&&<nav aria-label="Other English reading format"><ul>{view.alternatives.map(other=><li><a data-edition-alternative={other.id} href={other.route}>{other.label}</a></li>)}</ul></nav>}
+    {sourceContexts.length>0&&<aside aria-label="Later checks on cited sources" data-reader-source-context>
+      <h2>Later checks on cited sources</h2>
+      <p>These dated checks share exact source IDs with this article. They are source context, not independent review of the whole article. The original text and evidence cutoff below are unchanged; research, qualification and publication approvals remain separate.</p>
+      {sourceContexts.map(context=><section data-reader-source-review={context.id}>
+        <h3><a href={context.route}>{context.title}</a></h3>
+        <p>{context.summary}</p><p>{context.kind}. Checked {context.checked_date}; next bounded check {context.next_check_date}.</p>
+        <p>Cited sources: {context.matched_source_ids.map((id,i)=><>{i>0?'; ':''}<a href={`/atlas/sources/${id}/`}>{byId.get(id)!.name}</a></>)}</p>
+      </section>)}
+    </aside>}
+    <nav aria-label="On this page" data-reader-contents><ul>{view.sections.map(section=><li><a href={`#${section.anchor}`}>{section.heading}</a></li>)}<li><a href={`#${article.record_id.toLowerCase()}-sources`}>Sources and further reading</a></li></ul></nav>
+    {view.sections.map(section=><section><h2 id={section.anchor} tabindex="-1">{section.heading}</h2>{section.paragraphs.map(paragraph=><p>{paragraph}</p>)}</section>)}
+    <section><h2 id={`${article.record_id.toLowerCase()}-sources`} tabindex="-1">Sources and further reading</h2><ul>{view.sources.map(source=><li data-reader-source={source.id}><a href={source.url}>{source.name} (original source)</a> · <a href={source.profile_route}>Source notes: {source.name}</a></li>)}</ul>{view.related.length>0&&<ul>{view.related.map(link=><li><a href={link.route}>{link.title}</a></li>)}</ul>}</section>
+    <p><a href={registry.routes.hub}>Return to this collection</a> · <a href="/data/phase-204-reader-completion.json">Download the dated reader edition</a></p>
+  </div>
+  {article.mode === 'low-bandwidth'
+    ? <p class="page-section"><a href={record.route.replace('/reference/','/review/v1ref/')}>Inspect the preserved September 1 research contract</a></p>
+    : <details class="page-section"><summary>Inspect the preserved September 1 research contract</summary><div data-reader-contract={article.record_id}><RegistryDetail registry={registry} record={record} phase={phase} release="v1ref" embedded /></div></details>}
+</article>
+<style>
+  .reference-reader :global(.prose-page){max-width:76ch;margin-inline:auto;line-height:1.75;overflow-wrap:anywhere;}
+  .reference-reader :global(.prose-page h2){margin-top:2rem;}
+  summary{cursor:pointer;font-size:1rem;padding:1rem 0;}
+  summary:focus-visible{outline:3px solid currentColor;outline-offset:4px;}
+  h2:focus-visible{outline:3px solid currentColor;outline-offset:4px;}
+  @media print{details{display:none;}}
+</style>

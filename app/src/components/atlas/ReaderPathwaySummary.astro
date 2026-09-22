@@ -1,0 +1,15 @@
+---
+import type {CollectionEntry} from 'astro:content';
+import CurrentEvidenceNotice from '../review/CurrentEvidenceNotice.astro';
+import CurrentOperationsNotice from '../review/CurrentOperationsNotice.astro';
+interface Props {pathway:CollectionEntry<'readerPathways'>;}
+const {pathway}=Astro.props;
+---
+<section class="page-section" data-reader-pathway={pathway.data.slug} data-pathway-summary={pathway.data.id}>
+  <CurrentEvidenceNotice recordId={pathway.data.id}/>
+  <CurrentOperationsNotice recordId={pathway.data.id}/>
+  <h2>{pathway.data.title}</h2>
+  <p>{pathway.data.summary}</p>
+  <p>{pathway.data.current_state_summary}</p>
+  <p><a href={`/pathways/${pathway.data.slug}/`}>Read the full pathway, evidence limits and linked records</a></p>
+</section>
