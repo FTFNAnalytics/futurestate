@@ -7,12 +7,13 @@ import operations from '../../data/phase-207-current-operations.json';
 import {readerCatalog} from '../../lib/reader-catalog.mjs';
 import {currentEvidenceLedger} from '../../lib/current-evidence.mjs';
 import {readerPresentation,readerSourceReviewContexts} from '../../lib/reader-presentation.mjs';
+import AnnualCaseReview from './AnnualCaseReview.astro';
 interface Article { record_id: string; title: string; overview: string; authored_date: string; inherited_as_of_date: string; review_status: string; mode?: string; sections: {heading: string; paragraphs: string[]}[]; source_ids: string[]; related_paths?: string[]; }
 interface Props { article: Article; record: any; registry: any; phase: number; }
 const {article,record,registry,phase}=Astro.props;
 const sources=await getCollection('sources');
 const byId=new Map(sources.map(source=>[source.data.id,source.data]));
-const view=readerPresentation(article,sources.map(s=>s.data),editions.edition_contracts,readerCatalog);
+const view=readerPresentation(article,sources.map(s=>s.data),editions.edition_contracts,readerCatalog,{route:Astro.url.pathname});
 const sourceContexts=readerSourceReviewContexts(article,currentEvidenceLedger,operations,{route:Astro.url.pathname});
 ---
 <article class="reference-reader" data-reader-article={article.record_id}>
@@ -20,10 +21,11 @@ const sourceContexts=readerSourceReviewContexts(article,currentEvidenceLedger,op
   <div class="page-section prose-page">
     <p class="card-note">Written {article.authored_date}. Evidence inherited through {article.inherited_as_of_date}; this writing pass is not a new source check.</p>
     <p><strong>{article.review_status}</strong>. Factual acceptance, accessibility certification and public release remain separate.</p>
+    {view.annualReview && <AnnualCaseReview review={view.annualReview} />}
     {view.alternatives.length>0&&<nav aria-label="Other English reading format"><ul>{view.alternatives.map(other=><li><a data-edition-alternative={other.id} href={other.route}>{other.label}</a></li>)}</ul></nav>}
     {sourceContexts.length>0&&<aside aria-label="Later checks on cited sources" data-reader-source-context>
       <h2>Later checks on cited sources</h2>
-      <p>These dated checks share exact source IDs with this article. They are source context, not independent review of the whole article. The original text and evidence cutoff below are unchanged; research, qualification and publication approvals remain separate.</p>
+      <p>These dated checks share exact source IDs with this article. They are source context, not independent review of the whole article. {view.annualReview ? 'The dated source text and its cutoff remain preserved in the reader export; any current wording clarification is identified separately above.' : 'The original text and evidence cutoff below are unchanged; research, qualification and publication approvals remain separate.'}</p>
       {sourceContexts.map(context=><section data-reader-source-review={context.id}>
         <h3><a href={context.route}>{context.title}</a></h3>
         <p>{context.summary}</p><p>{context.kind}. Checked {context.checked_date}; next bounded check {context.next_check_date}.</p>

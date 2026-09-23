@@ -31,6 +31,7 @@ assert.throws(()=>verifyClassifiedInput({...args,body:`${reviewedBody}\nA new, u
 assert.throws(()=>verifyClassifiedInput({...args,expectedHash:undefined}),/Missing reviewed-input hash/);
 assert.throws(()=>verifyClassifiedInput({...args,excerpt:'Absent review excerpt 764915'}),/Review excerpt changed/);
 await import('./assert-current-reading-editions.mjs');
+await import('./assert-annual-case-reviews.mjs');
 await import('./assert-current-pilot-followups.mjs');
 await import('./assert-current-reader-finishing.mjs');
 await import('./assert-current-answer-sources.mjs');

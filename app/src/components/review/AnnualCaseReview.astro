@@ -1,0 +1,29 @@
+---
+import {annualCaseReviews, annualReviewContexts} from '../../lib/annual-case-reviews.mjs';
+interface Props { review: typeof annualCaseReviews.records[number]; }
+const {review} = Astro.props;
+const contexts = annualReviewContexts(review);
+---
+<aside aria-label="Dated annual-case editorial review" data-annual-case-review={review.record_id}>
+  <h2>Editorial clarification and source context · {annualCaseReviews.review_date}</h2>
+  <p>{review.summary}</p>
+  <p>{annualCaseReviews.boundary}</p>
+  {review.replacements.length > 0 && <p>The {review.replacements.length === 1 ? 'clarified paragraph is' : 'clarified paragraphs are'} shown in the reading text below. The earlier wording remains available here and in the dated reader export.</p>}
+  {review.replacements.map(change => <details data-annual-original={review.record_id}>
+    <summary>Earlier wording: {change.section_heading}</summary>
+    <p>{change.original_text}</p><p><strong>Reason for clarification:</strong> {change.reason}</p>
+  </details>)}
+  {review.source_checks.map(source => <section data-annual-source-check={source.source_id}>
+    <h3><a href={source.url}>Source check: {source.locator}</a></h3>
+    <p>{source.finding}</p><p>{source.access}</p>
+  </section>)}
+  {contexts.map(context => <section data-annual-retained-context={context.id}>
+    <h3><a href={context.route}>Retained finding · {context.checked_date}</a></h3>
+    <p>{context.relation}</p><p>{context.summary}</p>
+    <p><strong>Next evidence required:</strong> {context.next_action}</p>
+    {context.next_check_date && <p>Recorded next check: {context.next_check_date}. This editorial clarification does not reset that appointment.</p>}
+    {context.matched_source_ids.length > 0 && <ul>{context.matched_source_ids.map((id: string) => <li><a href={`/atlas/sources/${id}/`}>Matched source: {id}</a></li>)}</ul>}
+    {context.additional_artifact_urls.length > 0 && <ul>{context.additional_artifact_urls.map((url: string,index: number) => <li><a href={url}>Additional method artifact {index + 1} cited in the retained finding</a></li>)}</ul>}
+  </section>)}
+  <p><a href={annualCaseReviews.export_route}>Download these dated changes and source bindings</a> · <a href={`/updates/${annualCaseReviews.update_id}/`}>Dated change record</a></p>
+</aside>

@@ -48,6 +48,13 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'src/data/annual-case-reviews.json',
+  'src/lib/annual-case-reviews.mjs',
+  'src/components/review/AnnualCaseReview.astro',
+  'src/pages/data/annual-case-reviews.json.ts',
+  'src/content/updates/2026-09-22-annual-case-clarifications.json',
+  'scripts/assert-annual-case-reviews.mjs',
+  'scripts/verify-annual-case-reviews.mjs',
   'scripts/lib/public-json-inventory.mjs',
   'scripts/assert-public-json-inventory.mjs',
   'src/data/place-identity-reviews.json',

@@ -1,0 +1,74 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {join} from 'node:path';
+import {parse} from 'parse5';
+import {annualCaseReviews, annualReviewContexts} from '../src/lib/annual-case-reviews.mjs';
+import {readerCatalog} from '../src/lib/reader-catalog.mjs';
+import history from '../src/data/phase-204-reader-completion.json' with {type:'json'};
+const root = fileURLToPath(new URL('../dist/', import.meta.url));
+const read = p => readFile(join(root, p), 'utf8');
+const attr = (node, key) => node.attrs?.find(a => a.name === key)?.value;
+const all = (node, predicate) => [...(predicate(node) ? [node] : []), ...(node.childNodes ?? []).flatMap(n => all(n, predicate))];
+const text = node => node.nodeName === '#text' ? node.value : (node.childNodes ?? []).map(text).join('');
+const links = node => all(node, n => n.tagName === 'a').map(n => attr(n, 'href'));
+let totalNotices = 0, revisedParagraphs = 0;
+for (const article of history.records) {
+  const route = readerCatalog.find(r => r.id === article.record_id).route;
+  const dom = parse(await read(`${route}index.html`));
+  const notices = all(dom, n => attr(n, 'data-annual-case-review') !== undefined);
+  const review = annualCaseReviews.records.find(r => r.record_id === article.record_id);
+  assert.equal(notices.length, review ? 1 : 0, route);
+  totalNotices += notices.length;
+  for (let i = 0; i < article.sections.length; i++) {
+    const original = article.sections[i];
+    const [heading] = all(dom, n => attr(n, 'id') === `${article.record_id.toLowerCase()}-section-${i + 1}`);
+    assert(heading, `Missing reading heading at ${route}`);
+    const paragraphs = heading.parentNode.childNodes.filter(n => n.tagName === 'p').map(text);
+    const expected = [...original.paragraphs];
+    for (const change of review?.replacements ?? []) if (change.section_heading === original.heading) {
+      expected[change.paragraph_index] = change.replacement_text; revisedParagraphs++;
+    }
+    assert.deepEqual(paragraphs, expected, `Wrong current reading body at ${route}`);
+  }
+  if (!review) continue;
+  const notice = notices[0], visible = text(notice), hrefs = links(notice);
+  assert.equal(attr(notice, 'data-annual-case-review'), article.record_id);
+  for (const value of [annualCaseReviews.review_date, annualCaseReviews.boundary, review.summary]) assert(visible.includes(value));
+  assert(hrefs.includes(annualCaseReviews.export_route));
+  assert(hrefs.includes(`/updates/${annualCaseReviews.update_id}/`));
+  const provenance = all(notice, n => attr(n, 'data-annual-original') === article.record_id);
+  assert.equal(provenance.length, review.replacements.length);
+  for (const [i, change] of review.replacements.entries()) {
+    assert(text(provenance[i]).includes(change.original_text));
+    assert(text(provenance[i]).includes(change.reason));
+    assert.equal(all(dom, n => n.tagName === 'p' && text(n) === change.original_text).length, 1, 'Original wording must occur only in provenance');
+  }
+  const sourceChecks = all(notice, n => attr(n, 'data-annual-source-check') !== undefined);
+  assert.equal(sourceChecks.length, review.source_checks.length);
+  for (const check of review.source_checks) {
+    assert(hrefs.includes(check.url));
+    for (const value of [check.locator, check.access, check.finding]) assert(visible.includes(value));
+  }
+  for (const context of annualReviewContexts(review)) {
+    assert.equal(all(notice, n => attr(n, 'data-annual-retained-context') === context.id).length, 1);
+    assert(hrefs.includes(context.route));
+    for (const value of [context.checked_date, context.relation, context.summary, context.next_action]) assert(visible.includes(value));
+    if (context.next_check_date) assert(visible.includes(context.next_check_date));
+    for (const id of context.matched_source_ids) assert(hrefs.includes(`/atlas/sources/${id}/`));
+    for (const url of context.additional_artifact_urls) assert(hrefs.includes(url));
+    const [path, fragment] = context.route.split('#');
+    const target = parse(await read(`${path}index.html`));
+    if (fragment) assert.equal(all(target, n => attr(n, 'id') === fragment).length, 1, `Missing retained receipt anchor ${context.id}`);
+    assert(text(target).includes(context.summary), `Destination omits retained finding ${context.id}`);
+  }
+}
+assert.equal(totalNotices, 3); assert.equal(revisedParagraphs, 2);
+assert.deepEqual(JSON.parse(await read(annualCaseReviews.export_route)), annualCaseReviews);
+assert.deepEqual(JSON.parse(await read('/data/phase-204-reader-completion.json')), history);
+assert.deepEqual(JSON.parse(await read('/data/reader-catalog.json')).records, readerCatalog);
+assert(links(parse(await read('/data/index.html'))).includes(annualCaseReviews.export_route));
+const update = parse(await read(`/updates/${annualCaseReviews.update_id}/index.html`));
+assert(links(update).includes(annualCaseReviews.export_route));
+for (const r of annualCaseReviews.records) assert(links(update).includes(r.route));
+console.log('Annual-case output verified across all 104 original reader routes: 3 scoped notices, 2 current paragraphs, inspectable originals, exact receipt destinations/anchors, catalog dates, dated update and separate export. No browser, independent or release approval claimed.');

@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-09-22",
+  "reviewer": "Codex assisted editorial review",
+  "boundary": "Dated wording and source-context review only. Original September 10 reader records and their September 1 evidence cutoff are preserved. No project-stage change, measurement admission, independent approval or release authorization is supplied.",
+  "export_route": "/data/annual-case-reviews.json",
+  "update_id": "update-2026-09-22-annual-case-clarifications",
+  "records": [
+    {
+      "record_id": "203-CASE-02",
+      "route": "/reference/state-of-future-systems/case-toronto-24-254930/",
+      "source_record_sha256": "8805e89defd8a912277e3a7d62c277b356ba9381c4b394376372e8bf25d2ed46",
+      "summary": "Council adoption and enacted development permission remain distinct. The dated clarification removes an ambiguous permission claim without asserting whether any later enactment or permit exists.",
+      "replacements": [
+        {
+          "section_heading": "Follow instruments before construction",
+          "paragraph_index": 0,
+          "original_text": "The next chronology should distinguish acceptance of each condition from introduction or enactment of the amendments. A permit, site servicing, construction start, completion and occupancy would follow their own documentary trail. Readers should also retain the exact application number when searching, because an address or nearby project can lead to a different file. This discipline makes the remaining work understandable: a favorable planning decision changes permission, while the project still needs the instruments and practical arrangements that allow building to proceed.",
+          "replacement_text": "The next chronology should distinguish acceptance of each condition from introduction or enactment of the amendments. A permit, site servicing, construction start, completion and occupancy would follow their own documentary trail. Readers should also retain the exact application number when searching, because an address or nearby project can lead to a different file. Council adoption records a planning decision subject to the stated conditions; it does not by itself establish that the withheld amendments have been enacted or that a building permit has been issued.",
+          "reason": "Replace the shorthand that adoption changes permission with the narrower distinction supported by Council decision part 8."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-toronto-2026-sc33-9-item-history",
+          "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+          "locator": "City Council decision, July 29-30, 2026; part 8 and conditions 8a-8d",
+          "access": "Official HTML text inspected September 22; no new application-portal, permit-file or later by-law search in this editorial pass",
+          "finding": "The adopted decision directs the solicitor to withhold enactment bills until the specified wind, land-exchange and laneway conditions. This source alone does not establish their later completion or permit issuance."
+        }
+      ],
+      "retained_contexts": [
+        {
+          "collection": "receipts",
+          "id": "207-TORONTO-2026-09-21-BOUNDED-RECHECK",
+          "receipt_payload_sha256": "b894a24a020d5ad552f9749b9e2ecd42bff0c9746e06747fac8ee0ff33486e5e",
+          "route": "/updates/update-2026-09-21-toronto-bounded-project-recheck/",
+          "relation": "Exact Council source ID shared with this article. The development-pipeline source was context only in the September 21 receipt and is not treated as freshly checked.",
+          "matched_source_ids": ["source-toronto-2026-sc33-9-item-history"],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-12",
+      "route": "/reference/state-of-future-systems/case-hornsdale-power-reserve/",
+      "source_record_sha256": "cd4214b85c06033154e2361be52ff039406ccc3da3d33548c36bf0fa365db39d",
+      "summary": "The later retained report check distinguishes its H1 2024 observation period, February 2025 release and invalid printed date. It does not establish a half-year availability denominator or new operating result.",
+      "replacements": [],
+      "source_checks": [],
+      "retained_contexts": [
+        {
+          "collection": "pilot_research_followups",
+          "id": "211-HORNSDALE-ACCESS-2026-09-22",
+          "receipt_payload_sha256": "cf4dbfc40ced5a44cf08253f340e973448455833ba09b1b5edd52424e4cf4e1d",
+          "route": "/method/editorial-review/#211-HORNSDALE-ACCESS-2026-09-22",
+          "relation": "The article's H1 2024 source profile points to the exact URL inspected in this retained receipt. This is an artifact-specific association, not a fresh whole-article or 2026 operating review.",
+          "matched_source_ids": ["source-56j-hornsdale-h1-2024-operations"],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-14",
+      "route": "/reference/state-of-future-systems/case-dalrymple-grid-battery/",
+      "source_record_sha256": "93609bb5da09f65c33557386fc2fe553c6eb69cef3b613f099b2b6907d20fe4e",
+      "summary": "The final report is attributed to ElectraNet and its ARENA-hosted copy is distinguished from ARENA's retrospective. Separate later method findings identify missing protocol versions and interval records without changing the historical extraction.",
+      "replacements": [
+        {
+          "section_heading": "Read the project results within their design",
+          "paragraph_index": 0,
+          "original_text": "ARENA's final and retrospective materials describe the project and reported results. They can support an account of the demonstrated functions and the conditions under which they were examined. They are not an independent estimate of what customer reliability would have been without the project. A reader should identify the reporting period, event or operating mode and the source of each measure. This keeps the demonstration useful while preserving the difference between a project report and a causal evaluation of broader public benefit.",
+          "replacement_text": "ElectraNet's final report, hosted by ARENA, and ARENA's retrospective account describe the project and reported results. They can support an account of the demonstrated functions and the conditions under which they were examined. They are not an independent estimate of what customer reliability would have been without the project. A reader should identify the reporting period, event or operating mode and the source of each measure. This keeps the demonstration useful while preserving the difference between a project report and a causal evaluation of broader public benefit.",
+          "reason": "Distinguish the final report's institutional identity from its host and the separately authored retrospective."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-56e-dalrymple-arena-final-2021",
+          "url": "https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-final-report.pdf",
+          "locator": "Cover and Copyright and Disclaimer, one-based physical PDF pages 1-2; March 2021, Version 1.0",
+          "access": "September 15 retained PDF re-read September 22; cover and page 2 rendered and visually inspected. No fresh PDF download or review of all performance tables",
+          "finding": "The cover bears ElectraNet's identity; page 2 identifies ElectraNet's rights/responsibility and separately describes ARENA funding and the government-view disclaimer. Hosting does not make the report an ARENA-authored independent evaluation.",
+          "captured_sha256": "f431e507a48bb61c27247495e8365f9bb1e2b830c5b2145d0ca6bf41aaee7b99",
+          "visually_checked_pages": [1,2]
+        },
+        {
+          "source_id": "source-56e-dalrymple-arena-retrospective-2021",
+          "url": "https://arena.gov.au/blog/electranet-south-australian-battery-shows-the-way-forward/",
+          "locator": "Article header and byline; April 15, 2021",
+          "access": "Official HTML text inspected September 22 for authorship/date; no independent performance or financial verification",
+          "finding": "The retrospective identifies ARENA as its author and has its own April 2021 publication date. This is separate from the March 2021 final report."
+        }
+      ],
+      "retained_contexts": [
+        {
+          "collection": "pilot_research_followups",
+          "id": "211-DALRYMPLE-ACQUISITION-2026-09-22",
+          "receipt_payload_sha256": "8f5f810edacd39d74e9935ac52ca48a90d70cecd7700b61f01822425ec329f6f",
+          "route": "/method/editorial-review/#211-DALRYMPLE-ACQUISITION-2026-09-22",
+          "relation": "Explicit additional-method context for the same ESCRI-SA project. Reports 2 and 3 are separate artifacts, not exact source-ID matches to this article's final report, retrospective or AEMO constraint source. No automatic URL or project-name join is used.",
+          "matched_source_ids": [],
+          "additional_artifact_urls": [
+            "https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-report-2.pdf",
+            "https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-report-3.pdf"
+          ]
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    }
+  ]
+}

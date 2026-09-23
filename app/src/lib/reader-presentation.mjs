@@ -1,3 +1,4 @@
+import {applyAnnualCaseReview} from './annual-case-reviews.mjs';
 const relatedLabels=new Map([
   ['/method/','Method and publication policy'],['/review/method/','Evidence review method'],['/review/fieldbook/method/','Fieldbook research method'],
   ['/atlas/sources/','Source profiles'],['/atlas/source-monitor/','Source review queue'],['/data/sources.json','Source registry (JSON)'],
@@ -11,14 +12,17 @@ const relatedLabels=new Map([
  * @param {{id:string, name:string, url:string}[]} sources
  * @param {{edition_contract_id:string, topic_id:string, is_translation:boolean, target_language:string}[]} editionContracts
  * @param {{id:string, title:string, route:string, kind:string}[]} catalog
+ * @param {{route?:string, asOfDate?:string}} options
  */
-export function readerPresentation(article,sources,editionContracts,catalog){
+export function readerPresentation(article,sources,editionContracts,catalog,options={}){
   const bySource=new Map(sources.map(s=>[s.id,s])),byRoute=new Map(catalog.map(r=>[r.route,r.title]));
   const contract=editionContracts.find(r=>r.edition_contract_id===article.record_id);
   const alternatives=contract?editionContracts.filter(r=>r.topic_id===contract.topic_id&&r.edition_contract_id!==article.record_id&&!r.is_translation&&r.target_language==='English')
     .flatMap(r=>{const match=catalog.find(c=>c.id===r.edition_contract_id);return match?[match]:[];}):[];
+  const projected=applyAnnualCaseReview(article,options);
   return {
-    sections:article.sections.map((s,i)=>({...s,anchor:`${article.record_id.toLowerCase()}-section-${i+1}`})),
+    annualReview:projected.review,
+    sections:projected.sections.map((s,i)=>({...s,anchor:`${article.record_id.toLowerCase()}-section-${i+1}`})),
     sources:article.source_ids.map(id=>{const source=bySource.get(id);if(!source?.name||!/^https?:\/\//.test(source.url??''))throw Error(`Missing reader source link ${article.record_id}/${id}`);return {id,name:source.name,url:source.url,profile_route:`/atlas/sources/${id}/`};}),
     alternatives:alternatives.map(r=>({id:r.id,title:r.title,route:r.route,label:r.kind==='Compact'?'Read the concise English draft':'Read the plain-English draft'})),
     related:(article.related_paths??[]).map(route=>{const title=byRoute.get(route)??relatedLabels.get(route);if(!title)throw Error(`Missing reader link label ${article.record_id}/${route}`);return {route,title};})

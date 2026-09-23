@@ -5,6 +5,7 @@ import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
 import {readerPresentation,readerSourceReviewContexts} from '../src/lib/reader-presentation.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
+import {annualCaseReviewForId} from '../src/lib/annual-case-reviews.mjs';
 import {currentEvidenceLedger,projectEvidenceRecord} from '../src/lib/current-evidence.mjs';
 import {assertReceiptControlExport} from './lib/assert-receipt-control-export.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url)),read=p=>readFile(join(root,p),'utf8'),json=async p=>JSON.parse(await read('src/data/'+p));
@@ -17,7 +18,7 @@ const before=JSON.stringify({pack,editions,ops,sources,evidence:currentEvidenceL
 for(const a of pack.records){
  const view=readerPresentation(a,sources,editions.edition_contracts,readerCatalog),route=readerCatalog.find(r=>r.id===a.record_id).route;
  assert.equal(view.sections.length,a.sections.length);assert.equal(new Set(view.sections.map(s=>s.anchor)).size,a.sections.length);
- view.sections.forEach((s,i)=>{assert.equal(s.heading,a.sections[i].heading);assert.deepEqual(s.paragraphs,a.sections[i].paragraphs);assert(/^[a-z0-9-]+$/.test(s.anchor));});
+ view.sections.forEach((s,i)=>{assert.equal(s.heading,a.sections[i].heading);const expected=[...a.sections[i].paragraphs];for(const change of annualCaseReviewForId(a.record_id)?.replacements??[])if(change.section_heading===s.heading){assert.equal(expected[change.paragraph_index],change.original_text);expected[change.paragraph_index]=change.replacement_text;}assert.deepEqual(s.paragraphs,expected);assert(/^[a-z0-9-]+$/.test(s.anchor));});
  assert.deepEqual(view.sources.map(s=>s.id),a.source_ids);for(const s of view.sources){assert.equal(s.url,sources.find(r=>r.id===s.id).url);assert.equal(s.profile_route,`/atlas/sources/${s.id}/`);}
  assert(view.related.every(l=>l.title&&!l.title.startsWith('/')));
  const contract=editions.edition_contracts.find(r=>r.edition_contract_id===a.record_id);
@@ -47,4 +48,4 @@ const source=await read('src/components/review/ReferenceArticle.astro'),page=awa
 assert(source.includes('data-reader-source-context'));assert(source.includes('data-edition-alternative'));assert(source.includes('data-reader-contents'));assert(source.includes('href={source.url}'));assert(source.includes("article.mode === 'low-bandwidth'"));assert(source.includes('data-reader-contract={article.record_id}'));assert(!source.includes('details,.card-note{display:none;}'));
 assert(page.includes('`${article.title} | FTFN`'));assert(page.includes('article?.overview ?? description'));
 for(const marker of ['Buffer.byteLength(html)<64000','bytes<100000','assertReceiptControlExport(receipt,exported,kind)','await verifyUpdateArchive','receipt.update_id'])assert(verifier.includes(marker));
-console.log(`Reading edition source checks passed: 104 unchanged articles, 34 reciprocal English format links, ${contexts} historical September 15 exact-source contexts across ${contextArticles} articles; headings, original URLs, cutoff/translation holds and ${currentEvidenceLedger.receipts.length} receipt-control bindings preserved. Production HTML/CSS budgets and human acceptance remain unverified.`);
+console.log(`Reading edition source checks passed: 104 preserved source articles with explicit dated paragraph clarifications, 34 reciprocal English format links, ${contexts} historical September 15 exact-source contexts across ${contextArticles} articles; headings, original URLs, cutoff/translation holds and ${currentEvidenceLedger.receipts.length} receipt-control bindings preserved. Production HTML/CSS budgets and human acceptance remain unverified.`);

@@ -1,168 +1,150 @@
 # FTFN — next-stage execution plan
 
-Prepared September 22, 2026; refreshed against the current working tree and terminal validation result inspected at September 23 01:59 UTC (September 22 locally). Planning only: this document does not approve content, appoint reviewers, change release scope, or authorize implementation, reviewer contact or deployment.
+Updated September 22, 2026, America/Edmonton, against records inspected September 23 at 03:21 UTC. This is a planning update, not approval to contact reviewers, commit, deploy, change access or launch. Existing application changes are left intact.
 
-Execution follow-through: the [export repair and content-review continuation](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/export-inventory-repair.md>) now records a terminal full pass at September 23 02:25:34 UTC, two unapproved translation samples and the six-case annual desk findings. The starting-state/first-sprint allocation below is retained as the plan, not an instruction to repeat that completed work. Source recovery is tracked separately; the next substantive edit is the identified Toronto clarification/context, followed by bounded Hornsdale/Dalrymple source context and actual review decisions.
+## Recommendation
 
-## Direction
+Finish the evidence and acceptance work around the existing product before adding features. First preserve the newly validated annual-case changes; then address three concrete content findings, settle portfolio counting, and move the prepared material through real review. Reader testing should inform the next interface changes.
 
-Move from a substantial locally built reference site to a demonstrably useful, reviewed release. The next work should close specific content, coverage and reader-experience gaps rather than add another layer of phase documents or new product features.
+This plan updates the execution order of the [six-stage roadmap](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/roadmap-next-stages-2026-09-22.md>) while retaining its Phases 205–216 and acceptance requirements. The [completion audit](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/completion-audit.md>) remains the requirement-level record. Full v1 remains the target; a smaller, separately named release requires an explicit owner decision and an honest review boundary.
 
-This is the current execution supplement to the [six-stage roadmap](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/roadmap-next-stages-2026-09-22.md>). It retains Phases 205–216 and their acceptance contracts. The [completion audit](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/completion-audit.md>) remains the requirement-level record.
+## Current position
 
-Full v1 remains the target unless the owner explicitly chooses a separately named, smaller release. In particular, completing the 33 selected drafts does not satisfy the full-v1 project/place portfolio, annual-edition, translation or independent-review requirements.
-
-## Starting position
-
-| Area | What is established | What remains |
+| Area | Established | Still needed |
 | --- | --- | --- |
-| Engineering | Five-answer baseline `5a568c91` is committed, fully validated and recovered byte-for-byte; an earlier locked clean-install proof also exists | The subsequent place-note revision failed release verification: expected 157 JSON exports, found 158. Reconcile the export contract, validate and checkpoint that changed candidate before using it for review |
-| Selected content | 33 drafts exist; all 12 factual answers now have dated assisted source checks | Independent findings and dispositions across the selected set; Amtrak PDF visual verification remains unavailable |
-| Portfolio | Census binds 24 canonical projects, 15 canonical places, 32 Montana source projects across 768 repeated rows, ten source-checked place dossiers and eighteen jurisdiction orientations; four additional editorial identities remain candidates | Resolve parent/child counting, geographic boundaries and dossier eligibility through actual decisions; accepted totals and the 100/70 gap remain unknown |
-| Full edition and languages | All 58 annual records have existing reader drafts: 17 chapters, 12 findings, 24 cases and five appendices; 34 French/Spanish contracts exist | Review and correct the existing annual drafts, produce actual translations and obtain human language/subject approval; neither draft presence nor structural records establish acceptance |
-| Research backlog | 25 decision packets are prepared | Zero authorized dispositions; resolve five at a time with the appropriate decision-maker |
-| Reader experience | Search, archives, citations, paired English formats and bounded interface repairs are implemented | Five actual readers, assistive-technology testing and demonstrated 200% zoom; prior UI automation was stopped by the user |
-| Measurements | Three pilots have precise evidence gaps and a feature hold | No admitted series or independent reproduction |
-| Release | Local work and the previously inspected owner-only hosted version are distinct | Exact reviewed package, deployment authority, hosted verification and a launch/hold decision |
+| Engineering | Three exact notices and two bounded paragraph clarifications for Toronto, Hornsdale and Dalrymple; preserved original reader records; full validation passed | Current source commit/archive recovery and final locked-install reproduction before release |
+| Selected content | 33 drafts; dated assisted checks for all twelve factual answers; refreshed review packet | Independent reviews, correction dispositions and review of reachable historical claims; Amtrak PDF visual verification remains open |
+| Portfolio | 24 canonical projects and 15 places inventoried, plus reconciled Montana source records, ten place dossiers, eighteen jurisdiction orientations and four editorial identity candidates | Counting, identity, eligibility and acceptance decisions; then a defensible gap against 100 projects and 70 places |
+| Annual edition | 58 drafts; twelve bounded assisted case comparisons | Concrete follow-through below, the remaining 46 desk comparisons, and independent acceptance of all 58 |
+| Languages/backlog | Two French/Spanish samples, 34 language contracts and 25 prepared backlog packets | Human approval of all required translations and authorized backlog dispositions; no approvals established |
+| Readers/measurements | Five-task session materials and three measurement-pilot definitions | Five real readers, actual accessibility tests, missing measurement evidence and independent reproduction |
+| Release | Previous source recovery verified; current build local | Reviewed scope, deployment authority, exact hosted verification, launch/hold and any real operating month |
 
-Verified baseline: Git HEAD is `5a568c91956364d92a63ece43d2f47de41d8eefb`. The [00:42 UTC validation sequence](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T00-42-54.739Z-TEYPla/results.json>) finished generation and full validation with exit 0, the latter at September 23 01:05:04 UTC (September 22 locally). Candidate `65a554bf75f29f42f94bcc1d9f62603c4b0ab423e858f7e0a72d26b6f3c26aec` has receipt `204-FULL-LOCAL-VALIDATION-2026-09-22-e70bd20a6b20`. The [archive recovery verification](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T01-15-16.101Z-UkuZXC/git-recovery-verification.json>) recovered all 9,463 source files and the same candidate. Clean-install proof remains attached to its earlier source version, with the unchanged lockfile; no fresh install of this revision is claimed.
+The [latest full validation](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T02-54-24.618Z-urIqZ4/results.json>) finished at September 23 **03:13:00.551 UTC**. Generation and validation both exited 0. Receipt 204-FULL-LOCAL-VALIDATION-2026-09-22-2de301054bfe binds candidate 3cb2831ecfddb361de0527093ce4017b7f8a33eee0977538ae2c6dd62204649c: 16,628 application pages, 159 top-level JSON exports and **711,567 checked local references with zero missing targets**. These are technical output counts, not accepted-content counts. See the [implementation record](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-case-clarifications.md>) for test scope.
 
-The preceding plan's snapshot at `4431d4b9` described an unfinished run. It is retained in Git history, but is no longer an instruction to repeat that completed work. This planning revision changes documentation only; it is not itself included in the preceding source archive.
+Git HEAD remains 811b41c7bb81bf4bd252a24c2908f87bfe0e874c, the [preceding verified recovery baseline](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T02-29-21.840Z-LLarb5/git-recovery-verification.json>). The [03:16 UTC source capture](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T03-16-28.455Z-wW9sPK/source-manifest.json>) contains 9,494 files and the new candidate identity, but has no accompanying Git-byte or archive-recovery result. It predates this planning revision. Recapture intended source before a later authorized checkpoint; capture is not proof of a recovered commit. Clean-install proof belongs to an earlier version, with the lockfile unchanged.
 
-**Changed working tree, not yet validated:** the subsequent [01:47 UTC sequence](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T01-47-00.547Z-G9SyAe/results.json>) finished generation with exit 0, then full validation with exit 1 at **01:58:33 UTC**. Its [terminal log](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T01-47-00.547Z-G9SyAe/2-current-validate.log>) reports `Expected 157 public JSON exports, found 158.` No new successful full-validation receipt was written. The place-note change adds a separate export, but the exact generated export set must be reconciled before changing the expected count; a count-only relaxation is not an adequate repair. Earlier progress notes that describe this run as active are historical observations.
-
-The [portfolio identity review](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/portfolio-identity-review.md>) already documents the Montana source join, ten bounded geographic/source-period findings and 72 authority-rail joins for the eighteen orientations. The next sprint should resolve remaining decisions and evidence gaps, not repeat these joins. All 58 annual drafts also already have exact inventory bindings; their substantive review is still outstanding.
+Do not restart the completed export repair, three-case implementation, twelve assisted comparisons, two translation samples or unchanged source joins merely to create new receipts.
 
 ## Delivery sequence
 
-Effort below means focused work, not elapsed promises. Reviewer availability, source access and fixed evidence dates can extend the calendar. Roles indicate responsibility, not people already appointed.
+Estimates are initial work budgets for one primary implementer, not calendar promises. Reviewers and source access can extend elapsed time. The unknown accepted portfolio gap prevents a credible full-v1 launch date today.
 
-| Stage | Priority and effort | Main output | Exit criterion |
-| --- | --- | --- | --- |
-| 1. Close the current validation failure | P0; budget 0.5–1 engineering day initially | Reconciled export contract and exact validated, recoverable place-note revision | Complete export identities agree with the manifest, full sequence exits 0, and candidate/archive/receipt/recovery agree; re-estimate if another defect appears |
-| 2. Finish content and establish the real coverage gap | P0; initially 2–3 research days for reconciliation/triage, then sized batches and external review | Reviewed 33-article set, backlog decisions, accepted-portfolio census and full-v1 completion queue | Actual review dispositions; deduplicated coverage and outstanding requirements explicitly known |
-| 3. Prove reader usability and accessibility | P1; 3–5 engineering days plus participant sessions | Tested journeys and resolved reader defects | At least 4/5 readers succeed unaided on each of five tasks; no unresolved critical accessibility defects on tested release routes |
-| 4. Resolve measurement readiness | P1, alongside content; cap initial acquisition at 4–7 data days | Reproducible admitted series, or precise continued feature hold | Every pilot has an evidence-backed disposition; any published series is independently reproduced |
-| 5. Assemble and verify the owner-only release candidate | After applicable content/QA exits; 1–2 engineering days plus decisions | Exact release package, authorized hosted version and recovery procedure | Hosted checks pass against the reviewed candidate; scope, access and rollback are recorded |
-| 6. Decide launch and run the first operating month | Owner decision, then 30 actual days if launched | Launch/hold record and real maintenance evidence | Applicable release gates met; actual month reviewed before optional expansion |
-
-Dependency: Stage 1 → Stage 2's approved release scope → Stage 3 acceptance → Stage 5 → Stage 6. Review recruitment can begin earlier when authorized. Stage 4 runs alongside Stages 2–3 and gates the measurement feature. Full-v1 coverage, required translations and the broader edition contract must also close before a full-v1 release; they are not postponed automatically to the operating month.
-
-These are work estimates, not a full-v1 launch forecast. The portfolio gap is not yet known, and substantive annual-edition work and human translation review have not been sized. Re-estimate after the first completed content batch using observed research, writing and review time; do not apply the selected-article estimate to the entire v1 scope.
-
-## 1. Close the changed-candidate validation gap
-
-Build maintainer:
-
-1. Preserve the completed `5a568c91` source/archive/receipt as the recovery baseline and the failed changed-candidate run as diagnostic evidence. The current failure does not invalidate that earlier candidate, and its earlier pass does not validate the changed output.
-2. Compare the actual top-level export identities with the authoritative source inventory and manifest generator. Confirm whether the new `/data/place-identity-reviews.json` accounts for the difference and exclude stale-output or unintended-export explanations. Correct the source of the expectation, not just a generated number or the verifier's strictness. Add a focused regression for exact export membership and count.
-3. Run focused source/output checks, then `npm.cmd run validation:logged -- current:generate current:validate` from the application directory. Retain terminal results. Do not edit candidate inputs during the sequence or run competing builds into the same output directory. Diagnose any further failure before describing the candidate as valid.
-4. Only after a full pass, refresh the candidate-bound reachability inventory and selection packet, regenerate/check census freshness, and preserve the exact source checkpoint/recovery. Verify all 33 selected article payloads and original Phase 178 records remain unchanged where the intended change is presentation-only. Exclude unrelated packages, private fixtures and temporary output. Any separately authorized local commit must contain only intended files.
-5. Update the progress/audit pointers to the actual result. Keep the earlier clean-install proof attached to its actual source version; reproduce the exact final release package from its lockfile before shipping. Retain Amtrak's text-only limitation and all independent-review holds.
-
-Do not rerun an unchanged full build merely to produce another receipt. Repeat relevant checks when source changes; require the full documented release sequence for a changed release candidate.
-
-## 2. Finish content and make full-v1 scope measurable
-
-Research/editorial lead, independent reviewers and owner:
-
-1. Extend the [existing source-pinned census](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/portfolio-census.md>), rather than restarting it. The 32 Montana IDs already reconcile across the retained source and 768 registry/control rows: obtain the parent/child counting and substantive-dossier eligibility decisions next. Use the ten completed place-source notes to target missing boundary artifacts; resolve the four editorial identity candidates and the eighteen jurisdiction orientations against canonical identity/place-dossier eligibility. Keep acquisition dockets and target contracts separate. Compute the remaining gap against **100 projects and 70 places** only after identity/eligibility reconciliation and the required acceptance decisions; do not subtract overlapping historical inventories.
-2. Reuse the existing selection sheet for the 33 drafts: four topics, eight projects, four places, twelve answers, four cases and one field report. Add exact review assignments, candidate/article versions, findings, correction status and the next decision required. Recheck what changed; do not repeat all completed source work without cause.
-3. Prioritize unresolved high-impact claims: reporting periods and denominators, project/permit stage, issuer versus independent claims, historical versus current observations, and reachable historical material that could mislead a reader. Preserve corrections across title, summary, body, search, cards and exports.
-4. Obtain actual independent reviews. Process the 25 prepared backlog packets in five batches, recording authorized acceptance, qualification, rejection or hold with rationale. A prepared packet or assisted pass is not an approval.
-5. Turn the verified portfolio gap into small source-acquisition and editorial batches. Each added dossier needs a distinct identity, exact evidence, chronology, limitations and the next decisive artifact, followed by real review. Estimate total effort after the first batch establishes throughput.
-6. Review the annual edition's 17 topic chapters, twelve cross-system findings, 24 named cases and five appendices for substantive completeness, source support and acceptance. Turn deficiencies into concrete writing/review assignments. The selected four-case field report does not replace this contract.
-7. Schedule the 34 existing translation contracts—seventeen per language—against stable source text. Their translated-content and approval fields are currently null. Begin with one French and one Spanish reviewable sample to establish terminology and human review throughput, then size the remainder. English reading-format variants do not count as translations. Store reviewer findings and approved version identities.
-
-Exit: the release scope is explicit, unsupported claims are corrected or held, required reviews exist, and full-v1 coverage/edition/translation shortfalls have been closed or remain visibly blocking full v1. No smaller release is assumed.
-
-### First substantive work queue
-
-Use the existing census and review packet as the working records; do not create a new phase or approval framework. The following order puts identity errors before expansion and source stability before translation.
-
-| Order / responsible role | Bounded work item | Required handoff |
+| Stage | Priority / initial effort | Deliverable and completion test |
 | --- | --- | --- |
-| A — research lead and applicable decision-maker | Review the completed 32-ID Montana crosswalk; settle aggregate/child counting and which records qualify as substantive project dossiers | Explicit counting/eligibility decisions or unresolved decision requests; no award estimate treated as accepted service |
-| B — research lead | Target the specific missing geographic evidence in the ten place notes and resolve the four editorial identity proposals | Geographic-unit and alias decisions/proposals with sources; municipality, postal/site label, facility, county and basin kept distinct; unresolved boundaries remain visible |
-| C — editorial lead | Assess eligibility of the eighteen already joined jurisdiction orientations and remaining discoveries; review a six-case annual sample and two language samples | Known versus unknown accepted coverage, substantive annual findings, draft French/Spanish samples and measured review effort; draft samples are not approved translations |
-| D — editorial lead and authorized reviewers | Bind all 33 drafts to exact review versions; process the first five of the 25 prepared decisions | Actual findings and authorized dispositions when available; otherwise a named dependency, not an invented approval |
-| E — product/accessibility lead | Prepare sessions against the stable test candidate and prioritize defects from actual tests | Five-reader task matrix, route/device/assistive-technology coverage, severity and retest evidence; user permission before resuming stopped UI automation |
+| 1. Preserve the validated build | P0; 0.5–1 engineering day | Exact source checkpoint and archive recovery; intended files, candidate, receipt and recovered bytes agree |
+| 2. Finish content and coverage | P0; first 3–5-day batch, then re-estimate | Corrected claims and genuine review decisions; required 100/70 portfolio, 58-record edition, 34 language contracts and backlog requirements satisfied |
+| 3. Prove reader usability | P1; 3–5 engineering days plus sessions | Five tested journeys; at least 4/5 readers succeed unaided on each task; no unresolved critical accessibility defects on tested release routes |
+| 4. Resolve measurement readiness | P1; cap initial acquisition at 4–7 data days | Evidence-backed disposition for all three pilots; independently reproduce any admitted series or retain precise feature holds |
+| 5. Verify the owner-only candidate | After applicable acceptance; 1–2 engineering days plus decisions | Exact reviewed package, authorized hosted verification, tested access/downloads and recovery |
+| 6. Decide launch and operate | Owner decision, then 30 actual days if launched | Explicit launch/hold and real maintenance evidence; review the operating month before optional expansion |
 
-Every new or revised dossier should identify its subject, evidence cutoff, source-supported chronology, current stage, contradictory or missing evidence, and next decisive artifact. A source-count or word-count target is not a substitute for these elements. Findings that change meaning must propagate to titles, summaries, search, cards and exports, with historical provenance preserved.
+Critical path: **source checkpoint → content acceptance → reader acceptance → authorized release verification → launch decision**. Review preparation can begin earlier. Measurement acquisition runs alongside content/testing and gates that feature; a feature hold does not waive a mandatory full-v1 requirement.
 
-After queue C, distinguish two milestones: **the gap is measured** and **the required portfolio is accepted**. The former permits a defensible schedule; only the latter satisfies the coverage gate. If decisions are still unavailable, report the bounded candidate inventory and unresolved decisions instead of announcing a numerical accepted gap.
+## 1. Preserve the current source
 
-### Concrete content batches after the technical repair
+Responsible role: build maintainer.
 
-- **Annual-edition sample:** review the existing TSMC, Toronto, Hornsdale, Dalrymple, Montana and NNSA cases. Check every central claim, source period and later correction/context against exact source identities. Record supported text, needed corrections and missing evidence separately. The six-case sample sizes the remaining work; it does not approve the other 52 annual records or duplicate overlapping selected-article counts.
-- **Translation pilot:** prepare one French and one Spanish draft from a version-pinned existing English Advanced Manufacturing text. Retain its source links, September 1 evidence cutoff and September 10 authorship date. Keep terminology notes and reviewer fields separate; both samples remain unpublished and explicitly unapproved until actual language/subject review. Use observed effort to size the other 32 contracts.
-- **Independent article review:** start with TSMC, Toronto, broadband and the highest-risk remaining claims. Hand reviewers the existing source notes plus exact article versions; do not ask them to reconstruct the research packet. Keep the 25 backlog dispositions as a separate decision queue even where sources overlap.
-- **Coverage expansion:** only after eligibility/counting decisions, select an initial batch of up to five distinct projects and five distinct places from the actual gaps. Require source-supported identity, chronology, limits and the next decisive artifact before proposing admission. Choose the following batch from observed research yield and reviewer capacity, not a raw page target.
+1. Inspect the diff and index; isolate intended application, deployment and documentation paths from unrelated root packages and outputs.
+2. Refresh source capture after final documentation changes. When a local commit is authorized, stage only explicit intended paths and verify captured bytes against the index.
+3. Recover the committed archive into a fresh location; verify all source files, candidate, receipt/logs and lockfile. Retain the previous recovery baseline.
+4. Keep the existing full pass attached to its actual candidate. Do not rebuild unchanged inputs just for another receipt. Before shipping, establish clean dependency installation and reproduction for the exact final release package.
 
-Do not begin bulk translation or large-scale expansion while the source text or entity rules are still changing. Annual assessment, bounded missing-source acquisition and review preparation can proceed alongside decision waits without pretending those decisions have occurred.
+Exit: recoverable current source, clearly separate from content approval or hosting. No push, deployment, permission broadening or unrelated staging is part of this checkpoint.
 
-## 3. Test how people actually use the site
+## 2. Corrections, counting and accepted content
 
-Product/build maintainer and independent accessibility reviewer:
+Responsible roles: research/editorial lead, applicable decision-maker, independent subject/language reviewers. These are roles, not people already appointed.
 
-- Reuse the five tasks: topic orientation, named-project stage, place constraints, claim verification and recent changes. Refresh dated wording to the test candidate without changing the intent.
-- Have five actual target readers attempt every task unaided. Record all 25 attempts, time, wrong turns, search terms and misunderstandings. The threshold applies to each task, not an overall average.
-- Test keyboard navigation, a real assistive-technology setup, 200% zoom, narrow reflow, focus, headings, source links, tables and English-format switching. Keep automated and assisted findings distinct from participant acceptance.
-- Fix observed blockers in shared templates, then retest the affected journeys. Preserve no-JavaScript reading, complete archives, crawlable pagination and the existing page budgets.
-- UI automation remains stopped unless the user explicitly authorizes resuming it. CLI/static checks can continue within their limits; they cannot stand in for the unperformed zoom or assistive-technology checks.
+### Next correction batch
 
-Avoid speculative redesign work until the sessions identify the real navigation and comprehension problems.
+Use the exact versions and retained findings in the [second six-case review](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-second-six-desk-review.md>).
+
+| Order | Work | Completion evidence |
+| --- | --- | --- |
+| Space Coast | Align the current overview and relevant next-document paragraph with the retained September 15 renewal receipt; its notice already displays that finding | Preserved original; article, catalog/search and export agree; no unsupported operator, vehicle or mission authority |
+| F-15EX | Add the exact September 22 failed-access context to the annual case using its explicit artifact association | Correct receipt/source binding; no invented deliveries, monthly zeros or fresh verification |
+| Golden-Mars / GS-5 | Use the newly acquired order for a dated historical correction; distinguish decision and effective dates; check later procedural history before describing current legal status | Exact passages and source limits; original narrative preserved; inspect affected consumers without treating all 224 source-ID matches as errors |
+
+The Golden-Mars original was visually inspected read-only and retained with its hash. Its acquisition does not establish construction, energization or present unqualified legal status. The separate October 1 Loudoun standards appointment stays unchanged.
+
+For meaning-changing edits, check title, summary, body, search/cards and exports. Pin exact article/receipt identities, test incorrect associations and preserved provenance, then run the documented changed-candidate sequence from [the application directory](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/app>):
+
+    npm.cmd run validation:logged -- current:generate current:validate
+
+Do not edit candidate inputs during the run or run competing builds into the same output directory. Refresh review versions, reachability and recovery after a successful changed-candidate pass.
+
+### Coverage and review queue
+
+1. **Resolve counting before expansion.** Reuse the [census](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/portfolio-census.md>) and [identity findings](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/portfolio-identity-review.md>). Settle parent/child and substantive-dossier eligibility for the 32 Montana source IDs; resolve the ten place-boundary findings, eighteen jurisdiction orientations and four editorial candidates. Keep facilities, municipalities, counties, basins and postal/site names distinct. Do not repeat the unchanged 768-row join.
+2. **Measure the accepted gap.** Deduplicate eligible identities and obtain actual acceptance before calculating the shortfall against 100 projects/70 places. Overlapping inventories, acquisition dockets and target contracts are not accepted dossiers. Measuring the gap is an interim milestone, not completion.
+3. **Review the 33 selected drafts independently.** Reuse source notes and exact article/candidate versions. Start with TSMC, Toronto, broadband and the highest-risk remaining claims. Record real findings, fixes and dispositions; assisted checks do not confer independent acceptance.
+4. **Process backlog decisions five at a time.** Reuse the 25 packets. Acceptance, qualification, rejection or hold requires the applicable authority, rationale and affected routes.
+5. **Complete the annual edition.** Review the remaining twelve cases, seventeen chapters, twelve cross-system findings and five appendices: 46 records. Revisit synthesis after case corrections. All 58 still require applicable independent acceptance.
+6. **Stabilize translations.** Put the [two samples and mapping notes](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/translation-pilots/review-guide.md>) through human language/subject review. Resolve source-to-contract mapping, locales and terminology first. Then draft small batches against stable English versions; all 34 contracts need approval. Keep unapproved translations unpublished.
+7. **Expand from actual gaps.** After counting/eligibility decisions, start with up to five distinct projects and five distinct places. Require identity, evidence cutoff, chronology, stage, limitations and the next decisive artifact. Measure research/review throughput before sizing further batches.
+
+The [current reachability audit](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reachability.md>) finds that the 33 articles lead to all 16,628 application pages, including 826 feed-held signals. Selection alone does not isolate a small release. Claim review or explicit scope decisions must address reachable historical material and separate HTML downloads.
+
+## 3. Test with people before redesigning
+
+Responsible roles: product/build maintainer and independent accessibility reviewer.
+
+- Use the five existing tasks: topic orientation, named-project stage, place constraints, claim verification and recent changes. Bind wording/routes to the stable candidate.
+- Have five real target readers attempt every task unaided. Record all 25 attempts, time, wrong turns and misunderstandings. Require four successful readers **per task**, not merely an overall average.
+- Test keyboard navigation, actual assistive technology, 200% zoom, narrow reflow, focus, headings, citations, tables and English-format switching. Record route, candidate, method, severity and retest results.
+- Fix observed problems in shared templates; preserve no-JavaScript reading, archive access, crawlable pagination and page budgets.
+
+Browser/desktop automation remains stopped following the user's earlier intervention. Obtain explicit permission before resuming it. Static/CLI checks cannot replace unperformed zoom, assistive-technology or participant tests. Avoid speculative redesign until observed failures identify the priorities.
 
 ## 4. Make a bounded measurement decision
 
-Data/research lead and independent reproducer:
+Responsible roles: data/research lead and independent reproducer. Reuse the [acquisition record](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/measurement-acquisition.md>).
 
-Target the already identified missing artifacts for Hornsdale, Dalrymple and F-15EX. For Dalrymple, prioritize the availability contract definition, protocol versions and eligible interval records, rather than retrieving the same report again without a new evidential purpose.
-
-Admit a series only after entity, period, unit, denominator, method and revision policy are established. Reproduce it independently, then implement the source-linked table, export and accessible chart with visible gaps and revisions. Otherwise retain a precise hold and reopening condition. Do not create a chart from incompatible periods or invent observations to finish the feature. A feature hold is not a waiver of any mandatory full-v1 condition.
-
-## 5–6. Release and operate
-
-Build maintainer and release owner:
-
-1. Assemble the exact source commit, lockfile, build receipt, selected route/article versions, review outcomes, open limitations and recovery target.
-2. Resolve release scope and deployment authority. Inspect the existing site's current access/version afresh; do not treat the previously inspected version as today's hosting state.
-3. Deploy only when authorized, retaining owner-only access and existing domain/DNS boundaries unless separately changed. Verify the terminal deployment result, representative routes, exports, downloads, indexing and access against the saved version.
-4. Record an explicit launch or hold decision. A separately named bounded English release needs an owner scope decision; it must not be presented as full v1.
-5. If launched, collect 30 real days of source-currency, corrections, reader/search failures and maintenance effort. Review weekly, then choose optional expansion based on that evidence.
-
-## First five working days
-
-| Order | Work | Concrete handoff |
+| Pilot | Missing evidence to pursue | Insufficient substitute |
 | --- | --- | --- |
-| Day 1 | Reconcile the export mismatch, run the changed-candidate validation and capture recovery if it passes | Exact export inventory, terminal result and candidate-bound packet/checkpoint; if it fails, retain the specific blocker and do not claim a pass |
-| Day 2 | A/B: use completed source joins to prepare counting/eligibility decisions and target missing geographic artifacts | Explicit unresolved decisions, acquired evidence or precise access gaps; no repeated 768-row reconciliation without a changed input |
-| Day 3 | C: review the six-case annual sample and prepare one French/one Spanish draft sample | Claim findings, terminology notes, version bindings and review-ready drafts; no translation approval inferred |
-| Day 4 | D: hand off highest-risk selected articles and first five backlog packets through the owner-authorized process | Real review returns where available; otherwise a clear reviewer/decision dependency and supported correction proposals |
-| Day 5 | E: prepare stable-candidate reader sessions, review sprint findings and size the next bounded batch | Five-task session materials, QA coverage plan, actual throughput and revised estimates; no fabricated sessions or resumed UI automation |
+| Hornsdale | Availability definition, configuration/service scope, eligible intervals, exclusions/revisions and relevant date correction | Response plots or PDF access without a denominator |
+| Dalrymple | Applicable Schedule 7 calculation, Operating Protocol versions, eligible/available records, telemetry rules and revisions | Repeated retrieval without the missing method/ledger |
+| F-15EX | Aircraft identity ledger, formal acceptance dates, coverage, exclusions/rework and revisions | Unit arrivals or production narrative treated as contractual acceptance |
 
-This is a five-day work allocation, not a promise to resolve all remaining identities, review six cases to final acceptance, obtain every decision, or finish full v1 in one sprint. Repair overruns or missing reviewers shift later work; record that explicitly. Carry unresolved cases forward and adjust effort from observed throughput. Keep at most two engineering changes and three deep editorial reviews active at once. No subagents, reviewer contact or scheduled jobs are authorized by the allocation. If external review is unavailable, continue the in-scope census, acquisition, writing and CLI checks after implementation is requested; do not declare review complete.
+Establish entity, period, unit, denominator, method and revision policy before admission. Independently reproduce an admitted series, then build its source-linked table/export and accessible chart with visible gaps. If evidence remains unavailable after the bounded pass, retain the exact hold and reopening artifact. Do not manufacture observations or call that hold a full-v1 pass.
 
-## Milestone decision checks
+## 5–6. Release the reviewed package, then operate it
 
-| Checkpoint | Evidence needed | If not ready |
+Responsible roles: build maintainer and release owner.
+
+1. Assemble source commit, lockfile/reproduction proof, candidate receipt, article versions, genuine review outcomes, limitations and recovery target.
+2. Resolve release scope and deployment authority. Inspect the existing Sites version/access afresh; a historical check does not establish current hosting state. Preserve architecture, dependencies, domain/DNS and access boundaries unless separately authorized.
+3. Once authorized, deploy the exact package and verify the terminal result, representative routes, exports, downloads, indexing and access against the saved hosted version. Keep local recovery and authorized hosted rollback tests distinct.
+4. Record an explicit owner launch or hold. A smaller English release must be separately named and approved; it cannot be presented as full v1.
+5. If launched, collect thirty real days of source checks, corrections, reader/search failures and maintenance effort. Review weekly and use the actual month to choose optional expansion.
+
+## First implementation sprint — five working days
+
+Start when implementation resumes. This is an allocation, not a promise that unavailable people, sources or decisions will arrive within five days.
+
+| Allocation | Main work | Handoff |
 | --- | --- | --- |
-| End of first sprint | Exact reconciliations completed, unresolved identities, first review findings or dependencies, and measured effort | Continue a bounded content batch; do not infer a release date from generated page counts |
-| Before expanding the portfolio | Explicit identity/counting rules and source-supported dossier eligibility | Hold ambiguous admissions and preserve their candidate status |
-| Before full-v1 release packaging | Required 100/70 accepted portfolio, edition and translation work, claim/backlog decisions, reader/accessibility acceptance and applicable evidence gates | Full v1 remains held; a smaller named edition requires an explicit owner scope decision and its own honest review boundary |
-| Before deployment | Exact validated package, final lockfile reproduction, review outcomes, recovery target and deployment authority | Keep the local candidate; do not replace the hosted version or change access |
-| After 30 actual operating days | Real corrections, source-check outcomes, reader failures and maintenance effort | Choose further work from observed needs, not a prewritten success report |
+| Day 1 | Scoped source checkpoint/recovery; prepare the exact next correction batch | Recoverable baseline and bounded change list |
+| Day 2 | Space Coast summary consistency and F-15EX access context | Preserved originals, exact associations and focused tests |
+| Day 3 | Golden-Mars source/procedural limits and affected claim consumers; supported dated corrections only | Located evidence, explicit unresolved limits and tested changes where justified |
+| Day 4 | Portfolio counting/eligibility; prepare authorized review handoff of high-risk articles, translation samples and first five backlog packets | Actual findings/decisions if available; otherwise precise pending decisions |
+| Day 5 | Changed-candidate validation and review refresh; prepare reader sessions; assess throughput | Terminal result, recovery follow-through, candidate-bound test materials and next sized batch |
 
-A smaller article selection is not automatically an isolated smaller site: the saved reachability audit found that navigation from the 33 articles reaches all 16,626 application pages. Any reduced release proposal must explicitly address reachable historical material and its review boundaries before it is treated as a practical shortcut.
+If work overruns, finish the bounded change and its checks, then carry lower-priority work forward. Keep at most two engineering changes and three deep editorial reviews active. This allocation authorizes no subagents, reviewer contact or scheduled jobs. While awaiting reviews, continue authorized acquisition, writing and CLI checks without claiming acceptance.
 
-## Existing evidence calendar
+## Decisions, calendar and progress measures
 
-Preserve the current record identities and operate on actual dates: September 24 NNSA capacity; September 28 Toronto; October 1 Loudoun; October 9 separate Amtrak and NNSA decisions plus the cycle audit and applicable follow-ups; November 21 the separate Arizona appointment. Inspect any September 23 operating items before execution. A later obligation need not block an earlier release automatically, but its status and applicable release dependency must remain explicit. This plan creates no new monitor.
+| Decision | Needed before | Work that can continue once implementation is authorized |
+| --- | --- | --- |
+| Subject/language/accessibility reviewers, five readers and permitted contact process | Actual independent acceptance | Corrections, source acquisition and review materials |
+| Entity eligibility and parent/child counting | Accepted totals and gap-driven expansion | Identity/geographic evidence and bounded proposals |
+| Translation mapping, locales and terminology | Bulk translation and contract acceptance | Inspect existing samples |
+| Permission to resume stopped UI automation | New automated browser/desktop interaction | Static/CLI checks with stated limits |
+| Release scope, deployment and launch authority | Hosted replacement, audience change or launch | Local package/recovery preparation |
 
-## Decisions and non-goals
+Preserve existing dates and separate receipt identities: **September 24 NNSA capacity; September 28 Toronto; October 1 Loudoun; October 9 separate Amtrak/NNSA decisions, cycle audit and applicable follow-ups; November 21 the separate Arizona appointment.** Inspect any September 23 operating items before execution. Future obligations cannot be completed early and do not all automatically block an earlier release. This plan creates no monitor.
 
-The immediate owner dependency is access to independent subject/accessibility reviewers, five real readers and the applicable backlog decision-maker. UI automation also needs explicit permission to resume. Release scope and deployment/launch authority are later decisions; no external action is authorized by this plan.
+At each batch end, report reviewed articles, authorized decisions, deduplicated accepted projects/places, approved language contracts, successful reader tasks and resolved defects. Keep draft, source-checked, independently accepted, locally validated, committed, hosted and launched states separate. Re-estimate the programme after the accepted gap and human-review throughput are known.
 
-Track reviewed articles, authorized dispositions, deduplicated accepted projects/places, approved translations, successful reader tasks and resolved defects. Keep source-checked, independently accepted, locally validated, committed, hosted and launched states separate. Generated page counts are not a completion metric.
-
-Do not add accounts, payments, a backend migration, broad automatic publishing or another phase framework to this completion effort. Optional expansion follows the actual operating-month findings; mandatory full-v1 gaps remain in scope now.
+**Next owner priority:** arrange the genuine review/reader process. **Next local build priority:** source preservation, then the three concrete content items above. Do not add accounts, payments, backend migration, broad automatic publishing or another phase framework to this completion effort.
