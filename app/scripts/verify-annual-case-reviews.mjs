@@ -3,7 +3,7 @@ import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
 import {parse} from 'parse5';
-import {annualCaseReviews, annualReviewContexts} from '../src/lib/annual-case-reviews.mjs';
+import {annualCaseReviews, annualReviewContexts, annualCaseOverview} from '../src/lib/annual-case-reviews.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 import history from '../src/data/phase-204-reader-completion.json' with {type:'json'};
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
@@ -12,12 +12,32 @@ const attr = (node, key) => node.attrs?.find(a => a.name === key)?.value;
 const all = (node, predicate) => [...(predicate(node) ? [node] : []), ...(node.childNodes ?? []).flatMap(n => all(n, predicate))];
 const text = node => node.nodeName === '#text' ? node.value : (node.childNodes ?? []).map(text).join('');
 const links = node => all(node, n => n.tagName === 'a').map(n => attr(n, 'href'));
-let totalNotices = 0, revisedParagraphs = 0;
+let totalNotices = 0, revisedParagraphs = 0, revisedOverviews = 0;
 for (const article of history.records) {
   const route = readerCatalog.find(r => r.id === article.record_id).route;
   const dom = parse(await read(`${route}index.html`));
   const notices = all(dom, n => attr(n, 'data-annual-case-review') !== undefined);
   const review = annualCaseReviews.records.find(r => r.record_id === article.record_id);
+  const overview = annualCaseOverview(article, {route});
+  const [hero] = all(dom, n => n.tagName === 'header' && (attr(n, 'class') ?? '').split(' ').includes('review-hero'));
+  assert(hero, `Missing reader header ${route}`);
+  const [lede] = all(hero, n => n.tagName === 'p' && (attr(n, 'class') ?? '').split(' ').includes('lede'));
+  assert.equal(text(lede), overview, `Stale reader overview ${route}`);
+  const [description] = all(dom, n => n.tagName === 'meta' && attr(n, 'name') === 'description');
+  assert.equal(attr(description, 'content'), overview, `Stale metadata overview ${route}`);
+  const earlierOverviews = all(dom, n => attr(n, 'data-annual-original-overview') !== undefined);
+  assert.equal(earlierOverviews.length, review?.overview_replacement ? 1 : 0);
+  if (review?.overview_replacement) {
+    revisedOverviews++;
+    assert(text(earlierOverviews[0]).includes(article.overview));
+    assert(text(earlierOverviews[0]).includes(review.overview_replacement.reason));
+    assert.equal(all(dom, n => n.tagName === 'p' && text(n) === article.overview).length, 1, 'Earlier overview belongs only in provenance');
+    const catalogIndex = readerCatalog.findIndex(r => r.id === article.record_id);
+    const catalogPage = parse(await read(`/reference/explore/${Math.floor(catalogIndex / 40) + 1}/index.html`));
+    const [card] = all(catalogPage, n => n.tagName === 'article' && links(n).includes(route));
+    assert(card && text(card).includes(overview), 'Static catalog card must carry the current overview');
+    assert(!text(card).includes(article.overview), 'Static catalog card must not repeat the superseded overview');
+  }
   assert.equal(notices.length, review ? 1 : 0, route);
   totalNotices += notices.length;
   for (let i = 0; i < article.sections.length; i++) {
@@ -36,7 +56,7 @@ for (const article of history.records) {
   assert.equal(attr(notice, 'data-annual-case-review'), article.record_id);
   for (const value of [annualCaseReviews.review_date, annualCaseReviews.boundary, review.summary]) assert(visible.includes(value));
   assert(hrefs.includes(annualCaseReviews.export_route));
-  assert(hrefs.includes(`/updates/${annualCaseReviews.update_id}/`));
+  assert(hrefs.includes(`/updates/${review.update_id ?? annualCaseReviews.update_id}/`));
   const provenance = all(notice, n => attr(n, 'data-annual-original') === article.record_id);
   assert.equal(provenance.length, review.replacements.length);
   for (const [i, change] of review.replacements.entries()) {
@@ -63,12 +83,14 @@ for (const article of history.records) {
     assert(text(target).includes(context.summary), `Destination omits retained finding ${context.id}`);
   }
 }
-assert.equal(totalNotices, 3); assert.equal(revisedParagraphs, 2);
+assert.equal(totalNotices, 5); assert.equal(revisedParagraphs, 4); assert.equal(revisedOverviews, 1);
 assert.deepEqual(JSON.parse(await read(annualCaseReviews.export_route)), annualCaseReviews);
 assert.deepEqual(JSON.parse(await read('/data/phase-204-reader-completion.json')), history);
 assert.deepEqual(JSON.parse(await read('/data/reader-catalog.json')).records, readerCatalog);
 assert(links(parse(await read('/data/index.html'))).includes(annualCaseReviews.export_route));
-const update = parse(await read(`/updates/${annualCaseReviews.update_id}/index.html`));
-assert(links(update).includes(annualCaseReviews.export_route));
-for (const r of annualCaseReviews.records) assert(links(update).includes(r.route));
-console.log('Annual-case output verified across all 104 original reader routes: 3 scoped notices, 2 current paragraphs, inspectable originals, exact receipt destinations/anchors, catalog dates, dated update and separate export. No browser, independent or release approval claimed.');
+for (const updateId of new Set(annualCaseReviews.records.map(r => r.update_id ?? annualCaseReviews.update_id))) {
+  const update = parse(await read(`/updates/${updateId}/index.html`));
+  assert(links(update).includes(annualCaseReviews.export_route));
+  for (const r of annualCaseReviews.records.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) assert(links(update).includes(r.route));
+}
+console.log('Annual-case output verified across all 104 original reader routes: 5 scoped notices, 1 current overview across reader/metadata/catalog, 4 current paragraphs, inspectable originals, exact receipt destinations/anchors, catalog dates, two dated updates and separate export. No browser, independent or release approval claimed.');

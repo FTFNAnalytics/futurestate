@@ -112,6 +112,70 @@
       ],
       "independent_article_review": false,
       "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-04",
+      "route": "/reference/state-of-future-systems/case-space-coast-authority-to-mission/",
+      "source_record_sha256": "fcec56b0c93db3e36e5ae7a4c7a9b7d3ce3d42580e7a5668fa5fb30bcb7bd77f",
+      "update_id": "update-2026-09-22-annual-space-coast-f15ex-followthrough",
+      "summary": "The current overview and two paragraphs now reflect the formal site-licence renewal already recorded on September 15. The inherited uncertainty remains inspectable; site, operator, vehicle and mission authority are still distinct.",
+      "overview_replacement": {
+        "original_text": "The Space Coast case brings together site licensing and environmental records that often appear in one development narrative. Their permissions differ. The inherited edition also retains an unresolved Shuttle Landing Facility license disposition, making this a useful example of how uncertainty should remain visible alongside documented progress elsewhere in the corridor.",
+        "replacement_text": "The Space Coast case brings together site licensing and environmental records with different scopes. The September 15 source check located the Shuttle Landing Facility's formal site-licence renewal, resolving the missing-document question retained in the inherited edition. That finding does not supply operator-, vehicle- or mission-specific authority or demonstrate actual use.",
+        "reason": "Carry the retained renewal finding into the current overview, search/catalog summary and page description without rewriting the historical reader record."
+      },
+      "replacements": [
+        {
+          "section_heading": "Several records, several scopes",
+          "paragraph_index": 0,
+          "original_text": "The FAA environmental records for LC-39A and SLC-40 concern defined review stages. They do not themselves establish every operator authorization, completed mitigation, accepted capital asset or successful mission. The Shuttle Landing Facility record raises a separate question about the formal disposition of its license. The inherited August recheck did not resolve that question from the displayed expiration and linked document. An old date alone cannot establish renewal, lapse or current authority. Each conclusion must stay attached to its exact instrument.",
+          "replacement_text": "The FAA environmental records for LC-39A and SLC-40 concern defined review stages. They do not themselves establish every operator authorization, completed mitigation, accepted capital asset or successful mission. The inherited August recheck left the Shuttle Landing Facility's formal licence disposition unresolved. The retained September 15 source check subsequently located LRSO 18-018 Revision 2 and Order A-1: the instrument records issue on January 8, 2026, effect from January 15, 2026 and expiry on January 15, 2031. This resolves the missing renewal artifact in the editorial account, not every authorization or operating question. Each conclusion remains attached to its instrument and recorded check date.",
+          "reason": "Distinguish the unresolved historical recheck from the later, already-recorded formal instrument; no new licence search or present-status certification is claimed."
+        },
+        {
+          "section_heading": "The next decisive documents",
+          "paragraph_index": 0,
+          "original_text": "The formal FAA license disposition would resolve the specific Shuttle Landing Facility authority question. Operator-specific authorization or an accepted infrastructure record could advance another named strand. Mission and repeated-use records would support later conclusions at their own scope. All should retain event and publication dates separately. The case does not infer that unresolved authority prevents every activity in the region, nor that neighboring approvals resolve it. It identifies the exact documentary joins needed for a reliable authorization-to-mission account.",
+          "replacement_text": "The missing formal renewal artifact was located in the September 15 check. Its recorded October 9 follow-up remains a check for later amendments or disposition, not a request to rediscover the same instrument. Operator- and vehicle-specific authority, required agreements, infrastructure acceptance and actual mission evidence remain separate next documents for any operating claim. Repeated-use and reliability conclusions need their own observations. Event, issue, effective and check dates should remain distinct; neither the site licence nor neighboring approvals establish every permission or actual use in the corridor.",
+          "reason": "Replace the already-resolved acquisition request with the retained follow-up and still-missing operation-specific evidence."
+        }
+      ],
+      "source_checks": [],
+      "retained_contexts": [
+        {
+          "collection": "evidence_receipts",
+          "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+          "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+          "route": "/review/evidence-cycle/space-coast-slf-licence/",
+          "relation": "Exact Shuttle Landing Facility source ID shared with the retained September 15 decision. This applies an existing finding to the annual reader; it is not a fresh licence check, an independent article review or a new stage admission.",
+          "matched_source_ids": ["source-faa-shuttle-landing-facility-license"],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-16",
+      "route": "/reference/state-of-future-systems/case-f15ex-production-delivery/",
+      "source_record_sha256": "cd874920a9ade1e95b69e71d3d7d297cdeb3c2f20ae59d8874408e06b81de15d",
+      "update_id": "update-2026-09-22-annual-space-coast-f15ex-followthrough",
+      "summary": "The September 22 access failure is now visible beside the annual case. The earlier Air Force narrative remains inherited, not freshly verified; no aircraft acceptance event or monthly production count was obtained.",
+      "replacements": [],
+      "source_checks": [],
+      "retained_contexts": [
+        {
+          "collection": "pilot_research_followups",
+          "id": "211-F15EX-ACCESS-2026-09-22",
+          "receipt_payload_sha256": "2cdde166f54593a01e247db479fcc434755f1725ad2d49fe3291fe188645cf28",
+          "route": "/method/editorial-review/#211-F15EX-ACCESS-2026-09-22",
+          "relation": "The article's production-resumption source profile points to the exact Air Force URL in this failed-acquisition receipt. The association adds a dated access limit, not a new source verification or a conclusion that no aircraft were produced, delivered or accepted.",
+          "matched_source_ids": ["source-56e-f15ex-production-resumes-2025"],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null
     }
   ]
 }

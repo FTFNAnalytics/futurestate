@@ -8,6 +8,10 @@ const contexts = annualReviewContexts(review);
   <h2>Editorial clarification and source context · {annualCaseReviews.review_date}</h2>
   <p>{review.summary}</p>
   <p>{annualCaseReviews.boundary}</p>
+  {review.overview_replacement && <details data-annual-original-overview={review.record_id}>
+    <summary>Earlier overview</summary>
+    <p>{review.overview_replacement.original_text}</p><p><strong>Reason for clarification:</strong> {review.overview_replacement.reason}</p>
+  </details>}
   {review.replacements.length > 0 && <p>The {review.replacements.length === 1 ? 'clarified paragraph is' : 'clarified paragraphs are'} shown in the reading text below. The earlier wording remains available here and in the dated reader export.</p>}
   {review.replacements.map(change => <details data-annual-original={review.record_id}>
     <summary>Earlier wording: {change.section_heading}</summary>
@@ -25,5 +29,5 @@ const contexts = annualReviewContexts(review);
     {context.matched_source_ids.length > 0 && <ul>{context.matched_source_ids.map((id: string) => <li><a href={`/atlas/sources/${id}/`}>Matched source: {id}</a></li>)}</ul>}
     {context.additional_artifact_urls.length > 0 && <ul>{context.additional_artifact_urls.map((url: string,index: number) => <li><a href={url}>Additional method artifact {index + 1} cited in the retained finding</a></li>)}</ul>}
   </section>)}
-  <p><a href={annualCaseReviews.export_route}>Download these dated changes and source bindings</a> · <a href={`/updates/${annualCaseReviews.update_id}/`}>Dated change record</a></p>
+  <p><a href={annualCaseReviews.export_route}>Download these dated changes and source bindings</a> · <a href={`/updates/${review.update_id ?? annualCaseReviews.update_id}/`}>Dated change record</a></p>
 </aside>

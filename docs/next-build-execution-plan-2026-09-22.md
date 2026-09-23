@@ -1,10 +1,10 @@
 # FTFN — next-stage execution plan
 
-Updated September 22, 2026, America/Edmonton, against records inspected September 23 at 03:21 UTC. This is a planning update, not approval to contact reviewers, commit, deploy, change access or launch. Existing application changes are left intact.
+Updated September 22, 2026, America/Edmonton, following the successful September 23 03:52 UTC validation. Implementation has resumed under the user's continuation request. This plan does not authorize reviewer contact, deployment, access changes or launch.
 
 ## Recommendation
 
-Finish the evidence and acceptance work around the existing product before adding features. First preserve the newly validated annual-case changes; then address three concrete content findings, settle portfolio counting, and move the prepared material through real review. Reader testing should inform the next interface changes.
+Finish the evidence and acceptance work around the existing product before adding features. Preserve the newly validated Space Coast/F-15EX changes; then correct Golden-Mars and Current Applications, enrich Gateway/Victorian Big Battery, settle portfolio counting, and move prepared material through real review. Reader testing should inform the next interface changes.
 
 This plan updates the execution order of the [six-stage roadmap](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/roadmap-next-stages-2026-09-22.md>) while retaining its Phases 205–216 and acceptance requirements. The [completion audit](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/completion-audit.md>) remains the requirement-level record. Full v1 remains the target; a smaller, separately named release requires an explicit owner decision and an honest review boundary.
 
@@ -12,19 +12,19 @@ This plan updates the execution order of the [six-stage roadmap](<C:/Users/justi
 
 | Area | Established | Still needed |
 | --- | --- | --- |
-| Engineering | Three exact notices and two bounded paragraph clarifications for Toronto, Hornsdale and Dalrymple; preserved original reader records; full validation passed | Current source commit/archive recovery and final locked-install reproduction before release |
+| Engineering | Five exact annual notices, one revised overview and four bounded paragraph clarifications; preserved original reader records; full validation passed | Current source commit/archive recovery and final locked-install reproduction before release |
 | Selected content | 33 drafts; dated assisted checks for all twelve factual answers; refreshed review packet | Independent reviews, correction dispositions and review of reachable historical claims; Amtrak PDF visual verification remains open |
 | Portfolio | 24 canonical projects and 15 places inventoried, plus reconciled Montana source records, ten place dossiers, eighteen jurisdiction orientations and four editorial identity candidates | Counting, identity, eligibility and acceptance decisions; then a defensible gap against 100 projects and 70 places |
-| Annual edition | 58 drafts; twelve bounded assisted case comparisons | Concrete follow-through below, the remaining 46 desk comparisons, and independent acceptance of all 58 |
+| Annual edition | 58 drafts; all 24 cases have bounded assisted comparisons | Concrete follow-through below, the remaining 34 desk comparisons, and independent acceptance of all 58 |
 | Languages/backlog | Two French/Spanish samples, 34 language contracts and 25 prepared backlog packets | Human approval of all required translations and authorized backlog dispositions; no approvals established |
 | Readers/measurements | Five-task session materials and three measurement-pilot definitions | Five real readers, actual accessibility tests, missing measurement evidence and independent reproduction |
 | Release | Previous source recovery verified; current build local | Reviewed scope, deployment authority, exact hosted verification, launch/hold and any real operating month |
 
-The [latest full validation](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T02-54-24.618Z-urIqZ4/results.json>) finished at September 23 **03:13:00.551 UTC**. Generation and validation both exited 0. Receipt 204-FULL-LOCAL-VALIDATION-2026-09-22-2de301054bfe binds candidate 3cb2831ecfddb361de0527093ce4017b7f8a33eee0977538ae2c6dd62204649c: 16,628 application pages, 159 top-level JSON exports and **711,567 checked local references with zero missing targets**. These are technical output counts, not accepted-content counts. See the [implementation record](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-case-clarifications.md>) for test scope.
+The [latest full validation](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T03-36-12.833Z-VVYusi/results.json>) finished at September 23 **03:52:55.139 UTC**. Generation and validation both exited 0. Receipt 204-FULL-LOCAL-VALIDATION-2026-09-22-73d8ac14d2cd binds candidate 633be84885193b1ff2a68b36b14619ca476ca4b11cde026bd81ea9aa64d0e925: 16,629 application pages, 159 top-level JSON exports and **711,600 checked local references with zero missing targets**. These are technical output counts, not accepted-content counts. See the [implementation record](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-space-coast-f15ex-followthrough.md>) for test scope.
 
-Git HEAD remains 811b41c7bb81bf4bd252a24c2908f87bfe0e874c, the [preceding verified recovery baseline](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T02-29-21.840Z-LLarb5/git-recovery-verification.json>). The [03:16 UTC source capture](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T03-16-28.455Z-wW9sPK/source-manifest.json>) contains 9,494 files and the new candidate identity, but has no accompanying Git-byte or archive-recovery result. It predates this planning revision. Recapture intended source before a later authorized checkpoint; capture is not proof of a recovered commit. Clean-install proof belongs to an earlier version, with the lockfile unchanged.
+The preceding candidate is preserved in commit 496803dbe63df61df96762fe739782af916bdfe6. Its [verified archive recovery](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T03-27-31.878Z-DI4sen/git-recovery-verification.json>) reproduced 9,494 source files, its candidate/receipt and unchanged lockfile. The subsequent checkpoint diagnostic supplies the new candidate's exact source identity after this documentation refresh. Source capture alone is not recovered-commit proof. Clean-install proof belongs to an earlier version, with the lockfile unchanged.
 
-Do not restart the completed export repair, three-case implementation, twelve assisted comparisons, two translation samples or unchanged source joins merely to create new receipts.
+Do not restart the completed export repair, five-notice implementation, 24 assisted case comparisons, two translation samples or unchanged source joins merely to create new receipts.
 
 ## Delivery sequence
 
@@ -62,11 +62,13 @@ Use the exact versions and retained findings in the [second six-case review](<C:
 
 | Order | Work | Completion evidence |
 | --- | --- | --- |
-| Space Coast | Align the current overview and relevant next-document paragraph with the retained September 15 renewal receipt; its notice already displays that finding | Preserved original; article, catalog/search and export agree; no unsupported operator, vehicle or mission authority |
-| F-15EX | Add the exact September 22 failed-access context to the annual case using its explicit artifact association | Correct receipt/source binding; no invented deliveries, monthly zeros or fresh verification |
-| Golden-Mars / GS-5 | Use the newly acquired order for a dated historical correction; distinguish decision and effective dates; check later procedural history before describing current legal status | Exact passages and source limits; original narrative preserved; inspect affected consumers without treating all 224 source-ID matches as errors |
+| Completed: Space Coast | Current overview and two paragraphs follow the retained September 15 renewal receipt | Full validation passed; originals inspectable, reader/metadata/catalog/export agree; no operator, vehicle or mission authority inferred |
+| Completed: F-15EX | Exact September 22 failed-access context added to the annual case | Full validation passed; original body unchanged, no deliveries or monthly zeros invented |
+| Next: Golden-Mars / GS-5 | Incorporate the June decision, newly inspected July suspension order and exact SCC appeal-status metadata with separately dated tariff context | Exact passages and source limits; original narrative preserved; appeal merits and Supreme Court status remain unchecked; inspect affected consumers without treating all 224 source-ID matches as errors |
+| Next: Current Applications | Preserve the specific CFA 19418 grant record's combined Cancelled/Declined label instead of calling all physical expansion canceled | Dated overview/body clarification, original text retained, zero grant disbursement not treated as zero investment |
+| Then: Gateway / Victorian Big Battery | Replace generic process guidance with specific dated decisions and stage milestones after exact-artifact checks | Contract, compliance, partial return, conditional commissioning, registration and service boundaries preserved; no annual performance inferred |
 
-The Golden-Mars original was visually inspected read-only and retained with its hash. Its acquisition does not establish construction, energization or present unqualified legal status. The separate October 1 Loudoun standards appointment stays unchanged.
+The Golden-Mars June and July originals were visually inspected read-only and retained with hashes. The later official case metadata says Under Appeal; this is not an appellate merits determination or a fresh construction/energization finding. The separate October 1 Loudoun standards appointment stays unchanged. See the [third](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-third-six-desk-review.md>) and [fourth](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-fourth-six-desk-review.md>) batches for precise follow-through and artifact limits.
 
 For meaning-changing edits, check title, summary, body, search/cards and exports. Pin exact article/receipt identities, test incorrect associations and preserved provenance, then run the documented changed-candidate sequence from [the application directory](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/app>):
 
@@ -80,11 +82,11 @@ Do not edit candidate inputs during the run or run competing builds into the sam
 2. **Measure the accepted gap.** Deduplicate eligible identities and obtain actual acceptance before calculating the shortfall against 100 projects/70 places. Overlapping inventories, acquisition dockets and target contracts are not accepted dossiers. Measuring the gap is an interim milestone, not completion.
 3. **Review the 33 selected drafts independently.** Reuse source notes and exact article/candidate versions. Start with TSMC, Toronto, broadband and the highest-risk remaining claims. Record real findings, fixes and dispositions; assisted checks do not confer independent acceptance.
 4. **Process backlog decisions five at a time.** Reuse the 25 packets. Acceptance, qualification, rejection or hold requires the applicable authority, rationale and affected routes.
-5. **Complete the annual edition.** Review the remaining twelve cases, seventeen chapters, twelve cross-system findings and five appendices: 46 records. Revisit synthesis after case corrections. All 58 still require applicable independent acceptance.
+5. **Complete the annual edition.** Review the remaining seventeen chapters, twelve cross-system findings and five appendices: 34 records. All 24 cases have bounded assisted comparisons, not acceptance. Revisit synthesis after case corrections. All 58 still require applicable independent acceptance.
 6. **Stabilize translations.** Put the [two samples and mapping notes](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/translation-pilots/review-guide.md>) through human language/subject review. Resolve source-to-contract mapping, locales and terminology first. Then draft small batches against stable English versions; all 34 contracts need approval. Keep unapproved translations unpublished.
 7. **Expand from actual gaps.** After counting/eligibility decisions, start with up to five distinct projects and five distinct places. Require identity, evidence cutoff, chronology, stage, limitations and the next decisive artifact. Measure research/review throughput before sizing further batches.
 
-The [current reachability audit](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reachability.md>) finds that the 33 articles lead to all 16,628 application pages, including 826 feed-held signals. Selection alone does not isolate a small release. Claim review or explicit scope decisions must address reachable historical material and separate HTML downloads.
+The [current reachability audit](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reachability.md>) finds that the 33 articles lead to all 16,629 application pages, including 826 feed-held signals. Selection alone does not isolate a small release. Claim review or explicit scope decisions must address reachable historical material and separate HTML downloads.
 
 ## 3. Test with people before redesigning
 
@@ -121,7 +123,7 @@ Responsible roles: build maintainer and release owner.
 
 ## First implementation sprint — five working days
 
-Start when implementation resumes. This is an allocation, not a promise that unavailable people, sources or decisions will arrive within five days.
+The initial allocation is retained below as a work-budget reference, not elapsed-day evidence. The Space Coast/F-15EX implementation and full validation are now complete; source recovery is being finalized. Continue with the next unresolved items, without treating unavailable people, sources or decisions as delivered within five days.
 
 | Allocation | Main work | Handoff |
 | --- | --- | --- |
@@ -147,4 +149,4 @@ Preserve existing dates and separate receipt identities: **September 24 NNSA cap
 
 At each batch end, report reviewed articles, authorized decisions, deduplicated accepted projects/places, approved language contracts, successful reader tasks and resolved defects. Keep draft, source-checked, independently accepted, locally validated, committed, hosted and launched states separate. Re-estimate the programme after the accepted gap and human-review throughput are known.
 
-**Next owner priority:** arrange the genuine review/reader process. **Next local build priority:** source preservation, then the three concrete content items above. Do not add accounts, payments, backend migration, broad automatic publishing or another phase framework to this completion effort.
+**Next owner priority:** arrange the genuine review/reader process. **Next local build priority:** preserve this candidate, then Golden-Mars and Current Applications corrections, Gateway/Victorian Big Battery enrichment and the remaining annual comparisons. Do not add accounts, payments, backend migration, broad automatic publishing or another phase framework to this completion effort.

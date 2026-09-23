@@ -53,6 +53,7 @@ const integrationFiles = [
   'src/components/review/AnnualCaseReview.astro',
   'src/pages/data/annual-case-reviews.json.ts',
   'src/content/updates/2026-09-22-annual-case-clarifications.json',
+  'src/content/updates/2026-09-22-annual-space-coast-f15ex-followthrough.json',
   'scripts/assert-annual-case-reviews.mjs',
   'scripts/verify-annual-case-reviews.mjs',
   'scripts/lib/public-json-inventory.mjs',

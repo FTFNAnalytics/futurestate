@@ -6,6 +6,7 @@ import ReferenceArticle from '../../components/review/ReferenceArticle.astro';
 import readerEdition from '../../data/phase-204-reader-completion.json';
 import currentEditorial from '../../data/phase-205-216-current-editorial.json';
 import CurrentResearchArticle from '../../components/review/CurrentResearchArticle.astro';
+import {annualCaseOverview} from '../../lib/annual-case-reviews.mjs';
 import { canonicalV1refSlug, v1refNativeDefinitions } from "../../data/v1ref-registry";
 
 export function getStaticPaths() {
@@ -50,9 +51,10 @@ const description = record?.summary ?? record?.question ?? registry.summary;
 const recordId = record ? Object.entries(record).find(([key]) => key.endsWith('_id'))?.[1] : null;
 const article = readerEdition.records.find(item => item.record_id === recordId);
 const currentArticle = currentEditorial.records.find(item => item.record_id === recordId);
+const readerOverview = article ? annualCaseOverview(article, {route:Astro.url.pathname}) : undefined;
 ---
 
-<BaseLayout title={currentArticle ? `${currentArticle.title} | FTFN` : article ? `${article.title} | FTFN` : title} description={currentArticle?.answer ?? article?.overview ?? description} canonical={canonicalRoute}>
+<BaseLayout title={currentArticle ? `${currentArticle.title} | FTFN` : article ? `${article.title} | FTFN` : title} description={currentArticle?.answer ?? readerOverview ?? description} canonical={canonicalRoute}>
   {kind === "hub"
     ? <RegistryHub registry={registry} items={items} phase={phase} release="v1ref" />
     : currentArticle ? <><CurrentResearchArticle article={currentArticle} /><details class="page-section"><summary>Inspect the preserved research contract</summary><RegistryDetail registry={registry} record={record} phase={phase} release="v1ref" embedded /></details></>
