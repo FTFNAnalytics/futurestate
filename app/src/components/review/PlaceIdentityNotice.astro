@@ -1,0 +1,20 @@
+---
+import {placeIdentityNotes, placeIdentityReview} from '../../lib/place-identity-reviews.mjs';
+interface Props { record: any; }
+const notes = placeIdentityNotes(Astro.props.record);
+const sources = new Map(placeIdentityReview.sources.map(s => [s.key, s]));
+---
+{notes.length > 0 && <aside class="page-section prose-page" data-place-identity-notice>
+  <h2>Location and evidence check · {placeIdentityReview.checked_date}</h2>
+  <p>{placeIdentityReview.review_state}. {placeIdentityReview.boundary}</p>
+  {notes.map(note => <section data-place-identity={note.record_id}>
+    <h3>{note.historical_label}</h3>
+    {note.current_title && <p>Historical dossier label retained: {note.historical_label}. {Astro.props.record.route === note.route && <>Original heading: {Astro.props.record.title}. </>}The current heading distinguishes the source label from the contact address.</p>}
+    <p>{note.finding}</p>
+    <p><strong>Geographic scope:</strong> {note.geographic_scope}</p>
+    <p><strong>Still needed:</strong> {note.next_artifact}</p>
+    <ul>{note.source_keys.map(key => { const source = sources.get(key)!; return <li><a href={source.url}>{source.title}</a> — {source.locator} {source.access}</li>; })}</ul>
+    {Astro.url.pathname !== note.route && <p><a href={note.route}>Read the dated location note and original dossier</a></p>}
+  </section>)}
+  <p><a href="/data/place-identity-reviews.json">Download these dated source findings</a>. The original phase export remains unchanged.</p>
+</aside>}

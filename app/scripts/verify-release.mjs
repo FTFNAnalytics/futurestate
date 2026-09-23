@@ -1,6 +1,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import './verify-phase204-reader-completion.mjs';
 import {verifyUpdateArchive, decodeHtmlText} from './lib/verify-update-archive.mjs';
+import {verifyPublicJsonInventory} from './lib/public-json-inventory.mjs';
 import { dirname, extname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { computeV1rcDigestFromDisk, isValidV1rcValidationReceipt } from "./lib/v1rc-candidate-digest.mjs";
@@ -255,6 +256,7 @@ const htmlCount = allDistFiles.filter(
 const publicJsonExportCount = allDistFiles.filter(
   (path) => dirname(path) === join(distRoot, "data") && extname(path) === ".json",
 ).length;
+await verifyPublicJsonInventory(appRoot, manifest);
 const publicTextExtensions = new Set([".html", ".json", ".xml", ".txt", ".js", ".css"]);
 const publicTextFiles = allDistFiles.filter((path) => publicTextExtensions.has(extname(path)));
 // Scan every original public file without retaining or concatenating the entire

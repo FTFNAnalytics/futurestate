@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../../components/layout/BaseLayout.astro";
 import RegistryDetail from "../../../../components/review/RegistryDetail.astro";
+import {placeIdentityTitle} from '../../../../lib/place-identity-reviews.mjs';
 import p134 from "../../../../data/phase-134-mission-decision-register.json";
 import p136 from "../../../../data/phase-136-named-project-chronicles.json";
 import p137 from "../../../../data/phase-137-place-delivery-ledgers.json";
@@ -60,4 +61,4 @@ export function getStaticPaths() {
 const { registry, record, phase, canonicalRoute } = Astro.props;
 const { release } = Astro.params;
 ---
-<BaseLayout title={`${record.title ?? record.question ?? record.institution_name ?? record.project_name ?? record.place_name ?? record.slug} | FTFN`} description={registry.summary} canonical={canonicalRoute}><RegistryDetail registry={registry} record={record} phase={phase} release={release} /></BaseLayout>
+<BaseLayout title={`${placeIdentityTitle(record) ?? record.title ?? record.question ?? record.institution_name ?? record.project_name ?? record.place_name ?? record.slug} | FTFN`} description={registry.summary} canonical={canonicalRoute}><RegistryDetail registry={registry} record={record} phase={phase} release={release} /></BaseLayout>

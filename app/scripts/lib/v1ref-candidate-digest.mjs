@@ -48,6 +48,15 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'scripts/lib/public-json-inventory.mjs',
+  'scripts/assert-public-json-inventory.mjs',
+  'src/data/place-identity-reviews.json',
+  'src/lib/place-identity-reviews.mjs',
+  'src/components/review/PlaceIdentityNotice.astro',
+  'src/pages/data/place-identity-reviews.json.ts',
+  'src/content/updates/2026-09-22-place-identity-review.json',
+  'scripts/assert-place-identity-reviews.mjs',
+  'scripts/verify-place-identity-reviews.mjs',
   'src/content/updates/2026-09-22-remaining-answer-source-review.json',
   'scripts/assert-current-answer-sources.mjs',
   'src/content/updates/2026-09-22-thin-answer-source-review.json',

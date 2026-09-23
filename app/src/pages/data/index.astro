@@ -118,6 +118,7 @@ import phase175 from "../../data/phase-175-owner-disposition-sprint-ii.json";
 import phase176 from "../../data/phase-176-longitudinal-admission-and-zero-series-decision.json";
 import phase177 from "../../data/phase-177-october-stack-watch-and-source-currency-sweep.json";
 import phase178 from "../../data/phase-178-systems-atlas-and-compendium-depth-expansion.json";
+import placeIdentityReviews from '../../data/place-identity-reviews.json';
 import phase179 from "../../data/phase-179-october-weekly-editions-and-month-end-synthesis.json";
 import phase180 from "../../data/phase-180-october-state-report-and-v1-promotion-gate.json";
 import v1PublicReferenceEdition from "../../data/v1-public-reference-edition.json";
@@ -160,6 +161,7 @@ const datasets = [
     ["Longitudinal Admission and Zero-Series Decision", "/data/phase-176-longitudinal-admission-and-zero-series-decision.json", phase176.counts.complete_prepared_packets, phase176.summary],
     ["October Stack Watch", "/data/phase-177-october-stack-watch-and-source-currency-sweep.json", phase177.counts.packets, phase177.title],
     ["Systems Atlas and Compendium Depth Expansion", "/data/phase-178-systems-atlas-and-compendium-depth-expansion.json", phase178.counts.place_system_dossiers + phase178.counts.comparison_overlays + phase178.counts.interpretive_essays, phase178.title],
+    ["Dated place identity checks", "/data/place-identity-reviews.json", placeIdentityReviews.records.length, "Geographic scope and historical source periods; independent identity review and portfolio acceptance pending"],
     ["October Weekly Editions and Month-End Synthesis", "/data/phase-179-october-weekly-editions-and-month-end-synthesis.json", phase179.counts.editorial_cycles, phase179.summary],
     ["October State Report and v1 Promotion Gate", "/data/phase-180-october-state-report-and-v1-promotion-gate.json", phase180.counts.readiness_gates, phase180.summary],
     ["FTFN v1 September Evidence Cycle", "/data/v1-september-evidence-cycle.json", v1SeptemberEvidenceCycle.phases.length, v1SeptemberEvidenceCycle.summary],

@@ -1,0 +1,28 @@
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+import {declaredPublicJsonExports, checkedExportRoutes, assertExportInventory, applyExportInventory} from './lib/public-json-inventory.mjs';
+
+const routes = await declaredPublicJsonExports(fileURLToPath(new URL('../', import.meta.url)));
+assert.equal(routes.length, 158, 'Review the explicit export contract when adding/removing routes');
+assert(routes.includes('/data/place-identity-reviews.json'));
+assert(routes.includes('/data/phase-178-systems-atlas-and-compendium-depth-expansion.json'));
+const sample = ['/data/original.json', '/data/place-identity-reviews.json'];
+assert.doesNotThrow(() => assertExportInventory(sample, [...sample].reverse()));
+assert.throws(() => assertExportInventory(sample, sample.slice(0, 1)), /missing/);
+assert.throws(() => assertExportInventory(sample, [...sample, '/data/stale.json']), /unexpected/);
+assert.throws(() => assertExportInventory(sample, [sample[0], '/data/stale.json']), /missing.*unexpected/);
+assert.throws(() => assertExportInventory(sample, [sample[0], sample[0]]), /Duplicate/);
+assert.throws(() => checkedExportRoutes(['/data/../private.json']), /Invalid/);
+assert.throws(() => checkedExportRoutes(['/data/shelves/source.json']), /Invalid/);
+assert.throws(() => checkedExportRoutes(undefined), /array/);
+assert.throws(() => checkedExportRoutes([undefined]), /Invalid/);
+const manifest = {expected_build: {public_json_exports: 1}, required_output_files: ['dist/index.html', 'dist/data/original.json'], last_verified: {receipt: 'prior-only'}};
+applyExportInventory(manifest, sample);
+assert.deepEqual(manifest.public_json_export_routes, sample);
+assert.equal(manifest.expected_build.public_json_exports, 2);
+assert.deepEqual(manifest.required_output_files, ['dist/data/original.json', 'dist/data/place-identity-reviews.json', 'dist/index.html']);
+assert.deepEqual(manifest.last_verified, {receipt: 'prior-only'});
+const once = JSON.stringify(manifest);
+applyExportInventory(manifest, sample);
+assert.equal(JSON.stringify(manifest), once, 'Inventory preparation must be idempotent');
+console.log('Public JSON source inventory: 158 exact routes; missing, stale, same-count substitution, duplicate and invalid-route fixtures rejected; historical receipt untouched.');

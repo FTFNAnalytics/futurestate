@@ -2,6 +2,7 @@ import assert from'node:assert/strict';import{readFile,readdir}from'node:fs/prom
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 import {searchShelf} from '../src/lib/shelf-search.mjs';
 import {decodeHtmlText} from './lib/verify-update-archive.mjs';
+import './verify-place-identity-reviews.mjs';
 import {getStatusNote,getClaimScopeNote,getLocalEvidenceNote} from '../src/lib/editorial.ts';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');const read=path=>readFile(join(root,path),'utf8');const corpus=JSON.parse(await read('src/data/phase-205-216-current-editorial.json'));const ops=JSON.parse(await read('src/data/phase-207-current-operations.json'));
 for(const a of corpus.records){const html=await read(`dist${a.route}index.html`);assert(html.includes(`data-current-research="${a.record_id}"`),`Missing reader draft ${a.record_id}`);assert(html.includes(a.title.replaceAll('&','&amp;')),`Missing current title ${a.record_id}`);assert(html.includes('independent review pending'));}

@@ -34,3 +34,5 @@ await import('./assert-current-reading-editions.mjs');
 await import('./assert-current-pilot-followups.mjs');
 await import('./assert-current-reader-finishing.mjs');
 await import('./assert-current-answer-sources.mjs');
+await import('./assert-place-identity-reviews.mjs');
+await import('./assert-public-json-inventory.mjs');

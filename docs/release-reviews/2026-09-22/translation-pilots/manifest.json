@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "prepared_date": "2026-09-22",
+  "state": "AI-authored local draft samples; human language and subject review pending",
+  "author": "Codex (AI draft author)",
+  "publication_authorized": false,
+  "human_approved": false,
+  "primary_source_recheck_performed": false,
+  "source_to_contract_mapping_approved": false,
+  "source_record_id": "202-EDITION-001",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_sha256": "0e11cb60a07d78b0f5576ae2393ff0e48886bbe4713f358a5db6c37de08fcd72",
+  "source_hash_method": "SHA-256 of UTF-8 JSON.stringify(record), no trailing newline",
+  "source_inherited_as_of_date": "2026-09-01",
+  "source_authored_date": "2026-09-10",
+  "source_review_status": "Editorial draft — independent accessibility and subject review pending",
+  "source_section_count": 6,
+  "contract_file": "app/src/data/phase-202-accessible-multilingual-low-bandwidth-editions.json",
+  "contract_canonical_content_digest": "e154996dce938374bb41f92971fed1cbfedb55add366bf71c69c6141ec6db244",
+  "contract_source_ids": [
+    "source-nist-office-advanced-manufacturing",
+    "source-nist-chips",
+    "source-nist-materials-genome-initiative"
+  ],
+  "mapping_boundary": "Samples translate the later plain-English reader draft, not an approved canonical contract text. Human editorial review must decide this mapping; reader-source IDs and original contract-source IDs remain separate.",
+  "sources": [
+    {
+      "id": "source-56j-kc46-readiness-plan-2026",
+      "url": "https://www.af.mil/News/Article-Display/Article/4484901/air-force-boeing-accelerate-kc-46-upgrades-to-target-readiness/",
+      "source_file_sha256": "4a3ad1aebc3aaf0f88b625685ac757ad243bb0b6358d221c09fe15edee786572"
+    },
+    {
+      "id": "source-56k-f15ex-ex16-portland-receipt-2026",
+      "url": "https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/",
+      "source_file_sha256": "3d539092bdbfcec4fbdb1057404cd85ee62f764460ae46b007d7ee72fa39ebda"
+    },
+    {
+      "id": "source-56l-monaghan-medical-ccida-fye2025",
+      "url": "https://www.clintoncountyida.com/media/userfiles/subsite_328/files/list-maker/ccida-annual-audit-reports/annual-audit-reports/ccida-2025-annual-audit-report.pdf",
+      "source_file_sha256": "abf5e7e75b62a471fe349f3f95f81b53fca88915faf76eab56a0e406c9d8a9e4"
+    },
+    {
+      "id": "source-aca-future48-battery-accelerator-2025",
+      "url": "https://www.azcommerce.com/news-events/news/2025/4/arizona-commerce-authority-and-partners-celebrate-grand-opening-of-battery-focused-future48-workforce-accelerator-in-pinal-county/",
+      "source_file_sha256": "7e06bdae5c2da8638bcdbda1a801c850710989b4ad8f1c13c0fdce5e5c0618ef"
+    },
+    {
+      "id": "source-phoenix-tsmc-july-2026-fab-update",
+      "url": "https://www.phoenix.gov/newsroom/ced-news/tsmc-announces-additional--100-billion-investment-in-arizona.html",
+      "source_file_sha256": "39801ad3cc86919e24aca36a9e01a7b7d5eacb5380cf12602f577c10acf5fd82"
+    }
+  ],
+  "drafts": [
+    {
+      "language": "French",
+      "language_code": "fr",
+      "locale_decision": null,
+      "path": "advanced-manufacturing-fr.md",
+      "file_sha256": "c90838fbfb86eb274888ce175e2c2a33b3dd9b871144f5d19bd285b7c74a5980",
+      "proposed_contract_id": "202-EDITION-003",
+      "contract_record_sha256": "ffc7d82097d35b5541771647fc389ed88d8723017d0433867eb05d97a07b50cf",
+      "human_translator": null,
+      "language_reviewer": null,
+      "subject_reviewer": null,
+      "review_date": null,
+      "approval_receipt_id": null,
+      "review_findings": [],
+      "publication_state": "Held"
+    },
+    {
+      "language": "Spanish",
+      "language_code": "es",
+      "locale_decision": null,
+      "path": "advanced-manufacturing-es.md",
+      "file_sha256": "7d8fa16258c1f60a9ceefefa85c61cc029fa0c7c19c533504f3048eb432b547d",
+      "proposed_contract_id": "202-EDITION-004",
+      "contract_record_sha256": "9446dfb247b6d8420c6df4598e79a0b4960fa6307c0d7b061bc81436a19d3cef",
+      "human_translator": null,
+      "language_reviewer": null,
+      "subject_reviewer": null,
+      "review_date": null,
+      "approval_receipt_id": null,
+      "review_findings": [],
+      "publication_state": "Held"
+    }
+  ]
+}

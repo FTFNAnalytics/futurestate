@@ -2,6 +2,8 @@
 
 Local implementation of the six-stage roadmap. This is not full-v1 completion, independent acceptance, publication or a launch decision.
 
+Latest continuation: [export-inventory repair and content review](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/export-inventory-repair.md>) replaces the stale 157-export expectation with 158 exact source-declared identities and strict set regressions. The replacement full sequence passed at September 23 02:25:34 UTC (September 22 locally): 16,627 application pages, 158 top-level JSON exports, 327 updates, 833 sources and 711,531 local references with zero missing targets. Receipt `204-FULL-LOCAL-VALIDATION-2026-09-22-c6b4baa97dd0` binds candidate `ad0869ee8f974aba25febbf9ae69bff056d3b1bcd3e2e0919a0e54e51ed8e6c0`. Two version-pinned French/Spanish draft samples and a six-case annual desk review are prepared, with no public translation or independent approval. The subsequent checkpoint diagnostic supplies exact commit/recovery identity; earlier failed and running-state notes below are history.
+
 ## Recoverable source baseline
 
 - Committed `7b0e7c412df53c1653b5477c29271223f1be689b` on `codex/phase51-content`; predecessor `44dacef1ff824b2a637656c1b4886dd4a09333f3` remains recoverable.
@@ -100,3 +102,11 @@ The refreshed review packet and download-aware inventory bind this exact complet
 ## Portfolio reconciliation started
 
 The [source-pinned first census](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/portfolio-census.md>) reconciles 24 canonical project identities and 15 place identities across the inspected repeated dossier layers. Two additional project and two place editorial candidates remain independently unaccepted. It also identifies 32 Montana source-project records, ten named Phase 178 place dossiers and eighteen jurisdiction orientations that must be reconciled before a final accepted-portfolio total. All 48 unnamed target contracts remain separate. Thirty-four French/Spanish contracts still contain no translated content or approval receipts. This advances the actual coverage audit without asserting that the 100/70 targets are met or creating any admission.
+
+## Portfolio source and geographic reconciliation
+
+The [portfolio identity review](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/portfolio-identity-review.md>) adds ten dated place notes to 22 detail routes, their hub cards, a separate export and a dated update. GlobalFoundries' Vermont heading distinguishes NIST's Burlington label from its Essex Junction contact address; the whole campus boundary is unresolved. Original records and all 33 selected article payloads remain unchanged. No UI automation was resumed.
+
+The census now reconciles 768 Montana registry/control rows to the same 32 source project IDs and retains a byte-pinned official CSV. Nineteen UEIs, exact funding-field matches and five explicit label-format differences are recorded without admitting outcomes. Eighteen jurisdiction orientations join to 72 source rails: seventeen national and one supranational. All 58 annual records bind existing reader drafts, so the next annual pass is assessment/correction, not starting absent texts. Counting/eligibility and independent acceptance remain open.
+
+Source/census regressions and freshness checks pass. The first changed-candidate run failed on three new implicit-any annotations; those were fixed and standalone checking passed. The replacement [01:47 UTC sequence](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T01-47-00.547Z-G9SyAe/results.json>) generated successfully at 01:47:34.710 UTC and was still validating when inspected at 01:50:51 UTC. No terminal full pass or new recovery checkpoint is claimed here. Retain the actual run, then refresh candidate-bound review material after it succeeds. Earlier completed candidates remain version-specific evidence, not approval of this changed output.

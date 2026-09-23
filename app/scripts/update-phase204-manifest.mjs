@@ -3,6 +3,7 @@ import { dirname, extname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { computeV1refCandidateDigest, isValidV1refValidationReceipt } from "./lib/v1ref-candidate-digest.mjs";
 import { v1refPhaseDefinitions } from "./lib/v1ref-config.mjs";
+import {verifyPublicJsonInventory, applyExportInventory} from './lib/public-json-inventory.mjs';
 
 const appRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const workspaceRoot = resolve(appRoot, "..");
@@ -78,7 +79,9 @@ assert(
 
 const distFiles = await collectFiles(distRoot);
 const staticPages = distFiles.filter((path) => extname(path).toLowerCase() === ".html" && !path.startsWith(join(distRoot, "downloads"))).length;
-const publicJsonExports = distFiles.filter((path) => dirname(path) === join(distRoot, "data") && extname(path).toLowerCase() === ".json").length;
+const declaredExports = await verifyPublicJsonInventory(appRoot, manifest);
+const publicJsonExports = declaredExports.length;
+applyExportInventory(manifest, declaredExports);
 const updateCount = (await readdir(updateRoot, { withFileTypes: true })).filter((entry) => entry.isFile() && entry.name.endsWith(".json")).length;
 const sourceNames = (await readdir(sourceRoot, { withFileTypes: true })).filter((entry) => entry.isFile() && entry.name.endsWith(".json")).map((entry) => entry.name);
 const sourceRecords = await Promise.all(sourceNames.map((name) => readJson(join(sourceRoot, name))));

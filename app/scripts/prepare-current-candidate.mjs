@@ -1,5 +1,6 @@
 import{readFile,writeFile,readdir}from'node:fs/promises';import{dirname,resolve,join}from'node:path';import{fileURLToPath}from'node:url';import{readerCatalog}from'../src/lib/reader-catalog.mjs';
 import {readShelfInputs,expectedShelfMembership} from './lib/read-shelf-inputs.mjs';
+import {declaredPublicJsonExports, applyExportInventory} from './lib/public-json-inventory.mjs';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');const path=join(root,'../deployment/ftfn-v0.2-build.json');const manifest=JSON.parse(await readFile(path,'utf8'));
 // Independent pre-extension inventory: September 14 initial production build.
 // Counts come from source inputs, not from dist. Existing detail URLs are retained.
@@ -7,7 +8,7 @@ const input=await readShelfInputs(root),ledger=JSON.parse(await readFile(join(ro
 const membership=expectedShelfMembership(input,ledger);
 const shelfPages=Object.values(membership).reduce((sum,ids)=>sum+Math.max(1,Math.ceil(ids.length/40)),0);
 manifest.expected_build.static_pages=10233+Math.ceil(readerCatalog.length/40)+2+shelfPages+input.readerPathways.length+input.updates.length;
-manifest.expected_build.public_json_exports=153+4;
+applyExportInventory(manifest, await declaredPublicJsonExports(root));
 manifest.expected_build.updates=(await readdir(join(root,'src/content/updates'))).filter(f=>f.endsWith('.json')).length;
 // This is current rendered membership, not the immutable Phase 55Q launch delta.
 const gapRoot=join(root,'src/content/evidence-gaps');
