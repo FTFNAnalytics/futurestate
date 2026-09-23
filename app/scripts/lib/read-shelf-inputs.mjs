@@ -1,7 +1,7 @@
 import {readFile,readdir} from 'node:fs/promises';
 import {join} from 'node:path';
 
-const fields=new Set(['id','slug','title','name','summary','record_status','primary_topic','primary_topics','captured_date','last_reviewed_date','source_ids','signal_ids','receiving_systems','evidence_gap_ids','signal_type','time_horizon','evidence_quality','geography','system_type']);
+const fields=new Set(['id','slug','title','name','summary','record_status','primary_topic','primary_topics','captured_date','last_reviewed_date','source_ids','signal_ids','receiving_systems','evidence_gap_ids','signal_type','time_horizon','evidence_quality','geography','system_type','top_takeaways','what_to_watch_next']);
 // Independent inventory parser for the repository's scalar/string-list MDX
 // frontmatter. It intentionally rejects an unsupported selected field instead of
 // silently producing a smaller membership list. Astro remains the renderer.
@@ -10,7 +10,7 @@ export function shelfFrontmatter(raw){
   if(!front)throw new Error('Missing shelf input frontmatter');
   const out={};let key;
   const scalar=value=>{
-    if(value.startsWith('"')||value==='[]'||value==='null'||value==='true'||value==='false'||/^-?\d+(\.\d+)?$/.test(value))return JSON.parse(value);
+    if(value.startsWith('"')||value.startsWith('[')||value==='null'||value==='true'||value==='false'||/^-?\d+(\.\d+)?$/.test(value))return JSON.parse(value);
     if(!value||value==='|'||value==='>'||value.startsWith("'"))throw new Error(`Unsupported selected shelf value: ${key}`);
     return value;
   };

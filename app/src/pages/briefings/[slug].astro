@@ -4,6 +4,13 @@ import { getCollection, render } from "astro:content";
 import DependencyMapLinks from "../../components/atlas/DependencyMapLinks.astro";
 import BaseLayout from "../../components/layout/BaseLayout.astro";
 import ReferenceAttributionNotice from "../../components/review/ReferenceAttributionNotice.astro";
+import GoldenMarsBriefingNotice from "../../components/review/GoldenMarsBriefingNotice.astro";
+import {createMarkdownProcessor} from '@astrojs/markdown-remark';
+import {projectGoldenMarsBriefingBody} from '../../lib/golden-mars-briefing-review.mjs';
+import projectConversion from '../../content/briefings/briefing-project-conversion-003-northern-virginia-large-load.mdx?raw';
+import researchWatch from '../../content/briefings/briefing-research-watch-001-cross-corridor-infrastructure-conversion.mdx?raw';
+import acceptanceDossier from '../../content/briefings/briefing-acceptance-dossier-003-northern-virginia-large-load.mdx?raw';
+import qualificationPlaybook from '../../content/briefings/briefing-qualification-playbook-003-northern-virginia-large-load.mdx?raw';
 import MetaPill from "../../components/ui/MetaPill.astro";
 import {
   formatDate,
@@ -24,6 +31,19 @@ export async function getStaticPaths() {
 
 const { briefing } = Astro.props;
 const { Content } = await render(briefing);
+const retainedBodies:Record<string,string>={
+  'briefing-project-conversion-003-northern-virginia-large-load':projectConversion,
+  'briefing-research-watch-001-cross-corridor-infrastructure-conversion':researchWatch,
+  'briefing-acceptance-dossier-003-northern-virginia-large-load':acceptanceDossier,
+  'briefing-qualification-playbook-003-northern-virginia-large-load':qualificationPlaybook
+};
+const revisedBody=projectGoldenMarsBriefingBody(briefing.data.id,retainedBodies[briefing.data.id]??'');
+let currentBodyHtml='',originalBodyHtml='';
+if(revisedBody){
+  const processor=await createMarkdownProcessor({gfm:true,smartypants:false});
+  currentBodyHtml=(await processor.render(revisedBody.current)).code;
+  originalBodyHtml=(await processor.render(revisedBody.original)).code.replace(/ id="([^"]*)"/g,' id="retained-golden-$1"').replace(/ href="#/g,' href="#retained-golden-');
+}
 const briefingDate = briefing.data.published_date ?? briefing.data.captured_date;
 const briefingSignalIds = new Set(briefing.data.signal_ids);
 const briefingEvidenceGapIds = new Set(briefing.data.evidence_gap_ids);
@@ -104,9 +124,16 @@ const robots = briefing.data.record_status === "Published" ? "index, follow" : "
   </section>
 
   <ReferenceAttributionNotice review={briefing.data.editorial_attribution} />
+  <GoldenMarsBriefingNotice recordId={briefing.data.id}/>
   {briefing.data.editorial_attribution && <section class="page-section"><h2>Historical briefing text follows</h2><p>The original proof heading, takeaways and watch list describe the August 10 workflow snapshot. They do not establish current production readiness or today's operating calendar.</p></section>}
   <section class="page-section prose">
-    <Content />
+    {revisedBody?<>
+      <div data-golden-briefing-current-body={briefing.data.id} set:html={currentBodyHtml}/>
+      <details data-golden-briefing-original-body={briefing.data.id}>
+        <summary>Original briefing narrative · retained publication and review dates</summary>
+        <div set:html={originalBodyHtml}/>
+      </details>
+    </>:<Content />}
   </section>
 
   <DependencyMapLinks

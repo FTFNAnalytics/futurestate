@@ -1,6 +1,7 @@
 import ledger from '../data/phase-206-reference-attribution.json' with {type:'json'};
 import {projectArtifactLabel} from './source-artifact-labels.mjs';
 import {projectGoldenMarsRecordData} from './golden-mars-wider-review.mjs';
+import {projectGoldenMarsBriefingData} from './golden-mars-briefing-review.mjs';
 
 const allowed = {
   research_document: new Set(['title','summary','publisher','document_type','capture_status','local_capture_path','key_findings','why_it_matters','ftfn_relevance','evidence_limits']),
@@ -42,7 +43,7 @@ export const referenceAttributionUpdateFor=id=>ledger.tranches?.find(t=>t.record
 /** @template {{data:{id:string}}} T @param {T} entry */
 export const projectResearchDocument=entry=>{const projected=projectArtifactLabel(projection.project(entry,'research_document'));const data=projectGoldenMarsRecordData(projected.data);return data===projected.data?projected:{...projected,data};};
 /** @template {{data:{id:string}}} T @param {T} entry */
-export const projectBriefing=entry=>projection.project(entry,'briefing');
+export const projectBriefing=entry=>{const projected=projection.project(entry,'briefing');const data=projectGoldenMarsBriefingData(projected.data);return data===projected.data?projected:{...projected,data};};
 export function attributionLinkText(data) {
   const review=data.editorial_attribution;
   if (!review) throw new Error(`Current link file needs attribution review: ${data.id}`);

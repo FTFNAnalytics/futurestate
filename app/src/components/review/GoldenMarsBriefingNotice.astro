@@ -1,0 +1,24 @@
+---
+import {goldenMarsBriefingContext} from '../../lib/golden-mars-briefing-review.mjs';
+interface Props {recordId:string;}
+const review=goldenMarsBriefingContext(Astro.props.recordId);
+---
+{review && <aside class="page-section" data-golden-briefing-review={review.record.id} aria-label="Dated Golden-Mars briefing clarification">
+  <h2>Golden-Mars clarification · {review.review_date}</h2>
+  <p>{review.boundary}</p>
+  {'context_note' in review.record && review.record.context_note && <p data-golden-briefing-context={review.record.id}>{review.record.context_note}</p>}
+  <p><a href={review.retained_review_route}>Annual case and retained source checks</a> · <a href={'/updates/'+review.update_id+'/'}>Dated correction record</a></p>
+  <details data-golden-briefing-sources={review.record.id}>
+    <summary>Exact sources and September 22 inspection limits</summary>
+    {review.source_checks.map(source=><section>
+      <h3><a href={source.url}>{source.locator}</a></h3>
+      {'relation' in source && source.relation && <p>{source.relation}</p>}
+      <p>{source.finding}</p><p>{source.access}</p>
+    </section>)}
+  </details>
+  {review.record.changes.length>0 && <details data-golden-briefing-prior-fields={review.record.id}>
+    <summary>Earlier summary, takeaway or watch wording</summary>
+    <dl>{review.record.changes.map(change=><div><dt>{change.label}</dt><dd>{change.prior}</dd></div>)}</dl>
+    <p>Original publication and review dates are retained. This clarification does not change an evidence decision.</p>
+  </details>}
+</aside>}

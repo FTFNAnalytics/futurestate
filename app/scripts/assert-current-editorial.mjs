@@ -39,3 +39,4 @@ await import('./assert-place-identity-reviews.mjs');
 await import('./assert-public-json-inventory.mjs');
 await import('./assert-golden-mars-signal-review.mjs');
 await import('./assert-golden-mars-wider-review.mjs');
+await import('./assert-golden-mars-briefing-review.mjs');

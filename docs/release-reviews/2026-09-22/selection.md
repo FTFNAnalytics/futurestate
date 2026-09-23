@@ -2,7 +2,7 @@
 
 33 proposed articles; zero independent approvals. No reviewer has been appointed or contacted. This packet does not approve a smaller release or waive full-v1 scope.
 
-Candidate digest: `bf08352ddd593ce64db38a94e90c71dc58387fa3441e3c4eb4d4c37d0c26d70e`. Article hashes below identify the authored input; the companion JSON also pins each rendered record, including sources and review metadata. The recoverable pre-change source commit is `7b0e7c412df53c1653b5477c29271223f1be689b`; it does not contain these later revisions. A successful final receipt and final source commit must be attached before acceptance.
+Candidate digest: `067ef75f1f27577d36f3325a5eed199e43c65811391d81b14bc5675733969003`. Article hashes below identify the authored input; the companion JSON also pins each rendered record, including sources and review metadata. The recoverable pre-change source commit is `7b0e7c412df53c1653b5477c29271223f1be689b`; it does not contain these later revisions. A successful final receipt and final source commit must be attached before acceptance.
 
 [Machine-readable selection](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/selection.json>) · [Reader and subject-review protocol](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/phase-205-216-review-handoff-2026-09-14.md>)
 
