@@ -1,0 +1,47 @@
+# Golden-Mars and Current Applications annual follow-through
+
+September 22, 2026, America/Edmonton. Local editorial implementation over recovered commit `0411fe64d3e721cd2718ba674f7b6dcbf38adc5d`. Existing site architecture, styles, dependencies and original source records are preserved. No publication, project-stage admission, backlog adjudication or independent acceptance is supplied.
+
+## Implemented changes
+
+- **Northern Virginia annual case:** current overview and two paragraphs now distinguish the June 29 Golden-Mars Route 3A order, the July 20 suspension decision, the September 22 SCC docket fields and the separate GS-5 announcement/effective date. The previously general SCC profile link is explicitly distinguished from the three acquired exact artifacts. The full April order, later compliance, appellate merits, Supreme Court docket, full rate order and later tariff amendments remain outside the inspected scope.
+- **Current Applications annual case:** current overview, one paragraph and one heading preserve CFA 19418's combined administrative status rather than asserting cancellation of every physical expansion. Grant disbursement is not conflated with private investment. The original heading and text remain inspectable, and the existing numbered section anchor is unchanged.
+- **Consistency:** current overview flows through reader header, metadata, static catalog card, search and catalog export. Two notices link to a third distinct dated update. All original 104 reader payloads, the 33 selected article payloads, language contracts, source profiles, earlier annual notices and governing receipt histories remain unchanged.
+
+The combined annual layer now declares seven notices, three revised overviews, seven revised paragraphs across five bodies, and one revised heading; 99 other bodies are unchanged. The added heading support is a precise original-heading replacement, not a new section or anchor system. Additional Golden-Mars artifact URLs are explicitly related to the original profile and pinned independently; they are not accepted through a fuzzy URL or project-name join.
+
+## Source checks and read-only PDF handling
+
+The [June 29 SCC order](https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF) and [July 20 order](https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF) were text-checked against the official pages. Retained originals were hash-verified; June page 4 and both July pages were rendered and visually re-inspected. Prior same-day inspection had covered all five June pages. No original was edited or re-exported.
+
+| Retained artifact | SHA-256 |
+| --- | --- |
+| June order, 1,029,782 bytes | 5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec |
+| July order, 551,038 bytes | 0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054 |
+| Earlier same-day exact case-detail response | c550b8590b92c089246b0743813267f6addc967ac6f81fb85118bd338c4b1ca9 |
+
+The web text tool could not retrieve the case API. An authorized read-only HTTPS recheck of the official application's exact `MATTER_NO eq 146021` query succeeded, and its selected parsed fields matched the retained response. This is not an appeal merits review. The [GS-5 announcement](https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html) and [Current Application Capital page](https://regionalcouncils.ny.gov/cfa/project/51146) were also rechecked as official HTML. Source scope, access limits, document identifiers, locators and hashes are carried in the annual review data.
+
+## Verification history
+
+Focused annual-source and reading-edition regressions pass. They check exact article and artifact identities, retained receipt hashes, wrong-case/URL/profile associations, modified source records, approval mutations, heading drift, historical-date projection, current search summaries and unchanged original exports. Production assertions additionally cover the 104 reader routes, current section/contents labels, stable anchors, original-heading provenance and exact source links.
+
+The first [full sequence](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T04-06-33.295Z-BdN3VX/results.json>) stopped at type checking: two template errors accessed the optional source-relation field without narrowing its type. No full receipt was written by that failed attempt. The guard was corrected. A separate [logged type check](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T04-10-07.291Z-pRD65p/results.json>) passed at **04:11:03.675 UTC** with zero errors/warnings and two existing hints.
+
+The replacement [generation/full-validation sequence](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T04-12-23.397Z-sOk2zj/results.json>) passed: generation exited 0 at 04:12:58.040 UTC; full validation exited 0 at **04:30:14.706 UTC** on September 23 (September 22 locally). Receipt `204-FULL-LOCAL-VALIDATION-2026-09-22-3dffe736fcc4` binds candidate `9023b5de88f8872525ad8ef5d3daeb8a9ba04d0b3067498db15a076b42735686`. Output has 16,630 application HTML pages, 159 top-level JSON exports, 330 updates and 833 sources; 711,627 local references passed with zero missing targets. The 104-route production checks confirm all seven notices, three current overviews, seven paragraph clarifications and the preserved-heading/stable-anchor behavior. Review versions and the census are refreshed; exact source recovery is recorded in the subsequent checkpoint diagnostic. No browser, zoom, assistive-technology or independent QA is claimed.
+
+## Propagation still to complete
+
+The case correction is not a claim that every Golden-Mars consumer has been reviewed or updated. Baseline commit `0411fe64` contains 224 source files matching the exact Golden-Mars source ID. A match alone is not a factual error. The current 33 selected article records contain no Golden-Mars/source-ID match, but the reachable historical corpus does.
+
+Specific affected passages inspected in this pass:
+
+- [Original signal](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/app/src/content/signals/signal-golden-mars-transmission-conditional-approval.mdx>): title, summary, Evidence Stage and next-watch text retain unresolved preferred/final routing. Its July capture date must not be silently recast as an April-only account. An exact-ID check of the actual signal projection returned no classification and **current-feed eligible: true** for its Published source state. This is an important next correction target, not one of the 826 automatically held classifications. No browser observation is claimed.
+- [Northern Virginia local system](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/app/src/content/local-systems/local-northern-virginia-data-center-corridor.mdx>): transmission matrix, named-project bullet, watch item and Phase 61 paragraph still request final routing. Broader service/operating limits remain valid and must not be removed.
+- [Source profile](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/app/src/content/sources/source-virginia-scc-golden-mars-2026.json>): general information URL and route-condition monitoring need a dated exact-artifact supplement, preserving the old profile.
+- [Gap 011](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/app/src/content/evidence-gaps/gap-011.json>): candidate list and final-route acquisition wording require narrower follow-through; the October 1 Loudoun appointment concerns a different standards question and remains unchanged.
+- [Original research trail](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/app/src/content/research-documents/69-55v-golden-mars-transmission-decision-2026.json>) and [Phase 65 restatement](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/app/src/content/research-documents/research-doc-phase65-020.json>): summaries and findings retain the preferred-route contingency. Existing attribution notices do not themselves supply the new decision chronology. Preserve original link-file/download bytes.
+- [Northern Virginia pathway](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/app/src/content/reader-pathways/northern-virginia-compute-to-service.json>): current-state entry explicitly calls the local route condition unresolved. The cross-corridor pathway separately groups final route with construction/service as incomplete. Keep their distinct In Review/Published states and each project's boundaries.
+- Syntheses 01/03 and their paired essays need the same exact decision follow-through, identified in [the synthesis/topic comparison](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-first-synthesis-topic-desk-review.md>). The Energy topic's source-list inclusion alone was not classified as a route-state error. Remaining registry/map matches still need field-level triage; no 224-file blanket clearance is claimed.
+
+Further queue: Space Coast syntheses/paired essays; Chandler source support in Water; the two appendix provenance/citation findings; Gateway/Victorian Big Battery enrichment; the remaining annual comparisons. Independent acceptance, reader/accessibility trials, portfolio and language approval, measurement evidence/reproduction, release authority and actual operating time remain open.

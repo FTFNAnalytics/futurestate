@@ -176,6 +176,118 @@
       ],
       "independent_article_review": false,
       "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-03",
+      "route": "/reference/state-of-future-systems/case-northern-virginia-large-load/",
+      "source_record_sha256": "d3ae856ab09dd005eb50d0d8210ccd978cfc9ef9fab9b6689c3356e20fd3e8dc",
+      "update_id": "update-2026-09-22-annual-golden-mars-current-applications",
+      "summary": "Exact Golden-Mars orders and dated docket context now supplement the inherited general-information link. The GS-5 decision is distinguished from its announced commencement; neither establishes electricity delivered to a customer.",
+      "overview_replacement": {
+        "original_text": "Golden-Mars and GS-5 belong in the same regional story because they concern infrastructure and the terms for serving large loads. They remain different evidence objects. The inherited record combines conditional transmission authority with a future rate-class decision, without treating either as proof of electricity already delivered to a named customer.",
+        "replacement_text": "Golden-Mars and GS-5 connect transmission planning with the terms for serving large loads, but their decisions and timelines differ. The June 29, 2026 route order and September 22 appeal-status check belong to the transmission case. GS-5 was announced as approved in November 2025, with commencement scheduled for January 2027. Neither establishes service to a named customer.",
+        "reason": "Distinguish the located transmission decision and appeal context from an already-made rate-class decision with later announced commencement."
+      },
+      "replacements": [
+        {
+          "section_heading": "What each instrument contributes",
+          "paragraph_index": 0,
+          "original_text": "The Golden-Mars material identifies an SCC decision and a route condition. It does not establish final land arrangements, completed construction or energization. The GS-5 order defines a large-load rate class and risk-allocation rules with a later effective date in the inherited record. It does not identify a particular customer's capacity or consumption. A regional account should explain both instruments while preserving their separate recipients, obligations and timelines. That makes the connection between infrastructure planning and commercial service intelligible without merging their stages.",
+          "replacement_text": "The SCC's June 29, 2026 Final Order in PUR-2025-00056 approves Route 3A, incorporates its April 9 order and specifies a subsequent map/CPCN process. The July 20 order declines to suspend that decision; it does not cancel the transmission approval. The official docket checked September 22 lists Under Appeal. That docket field is not an appellate merits ruling or confirmation of unrestricted construction authority. Separately, the SCC's November 25, 2025 announcement reports approval of GS-5 with effect from January 1, 2027. This check covered the announcement, not the full rate order or later amendments. The records do not establish land-right completion, energization, customer eligibility or actual billing.",
+          "reason": "Replace a general-information citation and ambiguous future-decision wording with located, separately dated artifacts and their inspection limits."
+        },
+        {
+          "section_heading": "What to examine next",
+          "paragraph_index": 0,
+          "original_text": "A final route or land record would clarify the infrastructure path; an inspection or energization record would demonstrate a later physical event. A named GS-5 service agreement or customer operating return would illuminate a different part of the chain. Any claim about costs borne by other customers would need the relevant tariff and accounting evidence. The September case preserves those questions as separate next steps and offers no capacity, reliability or affordability outcome for the corridor as a whole.",
+          "replacement_text": "The June route order is now located; the remaining legal review concerns the incorporated April conditions, map/CPCN compliance, land rights and later court or appellate orders. The Supreme Court docket and appeal merits were not inspected. Construction, inspection, energization and a named service arrangement still require their own records. For GS-5, inspect the full tariff, applicable amendments and customer-specific documents before drawing eligibility, billing or cost-allocation conclusions. The separate October 1 Loudoun standards appointment is unchanged. No corridor-wide capacity, reliability or affordability outcome follows from this correction.",
+          "reason": "Retire the resolved request to locate a final route order while retaining the unreviewed compliance, appellate, physical-service and tariff questions."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF",
+          "relation": "Located decision in the named Golden-Mars case, supplementing the historical profile's general SCC information URL; not a claim that the original URL itself contains this order.",
+          "locator": "PUR-2025-00056, Final Order, June 29, 2026; printed page 4; document 260690071",
+          "access": "Official PDF text checked September 22; retained original hash verified and operative page 4 visually re-inspected. All five pages were visually inspected in the earlier same-day acquisition. The incorporated April order and later compliance submissions were not fully inspected.",
+          "finding": "The order approves Route 3A, incorporates the April 9 order and directs a map/CPCN process. Approval is not evidence of completed construction or customer service.",
+          "captured_sha256": "5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec",
+          "visually_checked_pages": [4]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF",
+          "relation": "Subsequent order in the same exact case; separate from both the June decision and the original general-information profile URL.",
+          "locator": "PUR-2025-00056, Order Denying Suspension, July 20, 2026; both pages and page 2 footnote 2; document 260730107",
+          "access": "Official PDF text checked September 22; retained original hash verified and both pages rendered and visually re-inspected. No Supreme Court order or appeal merits review.",
+          "finding": "The SCC declines suspension and dismisses the matter; footnote 2 denies reopening the record. This does not cancel the June transmission approval or establish an appellate outcome.",
+          "captured_sha256": "0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054",
+          "visually_checked_pages": [1,2]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch#caseDetails/146021",
+          "relation": "Exact public docket metadata for PUR-2025-00056, matter 146021; not an inferred status from the general source profile.",
+          "locator": "Official case-detail fields: Case_Number, Status, Appealed, Disposition, Final_Order_Date and Closed_Date",
+          "access": "Public read-only case API rechecked September 22 using the site's exact matter filter; selected parsed fields match the retained same-day response. The text browser did not retrieve the API. No appeal-document or Supreme Court docket inspection.",
+          "finding": "The response lists Under Appeal, Appealed Yes, disposition Approved, final order June 29 and closed date July 20, 2026. These are docket fields, not proof of an appellate ruling, a stay's absence or unconditional construction authority.",
+          "captured_sha256": "c550b8590b92c089246b0743813267f6addc967ac6f81fb85118bd338c4b1ca9"
+        },
+        {
+          "source_id": "source-virginia-scc-large-load-gs5-2025",
+          "url": "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html",
+          "locator": "SCC announcement dated November 25, 2025; opening paragraphs and PUR-2025-00058 reference",
+          "access": "Official announcement text rechecked September 22; underlying full rate order and later tariff amendments not inspected.",
+          "finding": "The announcement describes an approved GS-5 class with a January 1, 2027 effective date. It is not a customer-specific eligibility or billing determination."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-18",
+      "route": "/reference/state-of-future-systems/case-current-applications-capacity/",
+      "source_record_sha256": "6b3a264c3e41397c155bccaa8c652cc1bad486c6a9698fc0e8e9971218177198",
+      "update_id": "update-2026-09-22-annual-golden-mars-current-applications",
+      "summary": "The overview and expansion section now distinguish a combined grant-project status from a finding about all physical expansion or the company's operating condition.",
+      "overview_replacement": {
+        "original_text": "Current Applications combines an attributed manufacturing-improvement case study, company capability material and a record concerning a canceled expansion. The evidence is useful precisely because it resists a simple success-or-failure narrative. Each document covers a particular activity and leaves questions about persistence, causes and later operating effects unresolved.",
+        "replacement_text": "Current Applications combines an attributed manufacturing-improvement case, company capability material and a grant project labeled Cancelled/Declined. That administrative label does not settle what happened to every physical expansion or later operation. The records address different activities and do not support a simple company-wide success-or-failure verdict.",
+        "reason": "Preserve the exact grant-status category without treating it as verified cancellation of all expansion."
+      },
+      "heading_replacements": [
+        {
+          "original_text": "A canceled project is not a complete company diagnosis",
+          "replacement_text": "A grant-project status is not a complete company diagnosis",
+          "reason": "The original heading collapses a combined administrative category into an unqualified cancellation claim. Keep the existing section anchor."
+        }
+      ],
+      "replacements": [
+        {
+          "section_heading": "A canceled project is not a complete company diagnosis",
+          "paragraph_index": 0,
+          "original_text": "The expansion record does not establish why that project stopped, whether another expansion occurred or what happened to output and employment afterward. The report should preserve the named project and event rather than infer a company-wide decline. It should also avoid using a later capability statement to erase the earlier cancellation. The two sources can coexist in a chronology while answering different questions. That is a more faithful treatment of industrial development than assigning a broad adverse-event label from one incomplete strand.",
+          "replacement_text": "The official Current Application Capital page identifies CFA 19418, Round 2, with a $140,000 award, $0 grant money disbursed and status Black - Cancelled/Declined. Its proposed expansion is not a completion report. The page supplies no status-effective date or reason, and does not establish cancellation of every physical expansion. Zero grant disbursement is not zero private investment. Neither this administrative record nor a later capability statement establishes subsequent output, employment or company-wide decline.",
+          "reason": "Name the exact administrative project and preserve its combined label, funding boundary and missing causal/operating evidence."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-56c-current-applications-cancelled-expansion",
+          "url": "https://regionalcouncils.ny.gov/cfa/project/51146",
+          "locator": "Current Application Capital; CFA Number 19418, Round 2; award, disbursement and Project Status fields",
+          "access": "Exact official HTML text rechecked September 22. No grant contract, applicant correspondence or later plant-investment record was inspected.",
+          "finding": "The specific grant record retains the combined Cancelled/Declined category without a displayed effective date or explanation. URL path 51146 is not the CFA number."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
     }
   ]
 }

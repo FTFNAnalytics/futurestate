@@ -12,7 +12,7 @@ const attr = (node, key) => node.attrs?.find(a => a.name === key)?.value;
 const all = (node, predicate) => [...(predicate(node) ? [node] : []), ...(node.childNodes ?? []).flatMap(n => all(n, predicate))];
 const text = node => node.nodeName === '#text' ? node.value : (node.childNodes ?? []).map(text).join('');
 const links = node => all(node, n => n.tagName === 'a').map(n => attr(n, 'href'));
-let totalNotices = 0, revisedParagraphs = 0, revisedOverviews = 0;
+let totalNotices = 0, revisedParagraphs = 0, revisedOverviews = 0, revisedHeadings = 0;
 for (const article of history.records) {
   const route = readerCatalog.find(r => r.id === article.record_id).route;
   const dom = parse(await read(`${route}index.html`));
@@ -44,6 +44,13 @@ for (const article of history.records) {
     const original = article.sections[i];
     const [heading] = all(dom, n => attr(n, 'id') === `${article.record_id.toLowerCase()}-section-${i + 1}`);
     assert(heading, `Missing reading heading at ${route}`);
+    const headingChange = review?.heading_replacements?.find(c => c.original_text === original.heading);
+    assert.equal(text(heading), headingChange?.replacement_text ?? original.heading, 'Current section heading mismatch');
+    const [contents] = all(dom, n => attr(n, 'data-reader-contents') !== undefined);
+    const sectionLinks = all(contents, n => n.tagName === 'a' && attr(n, 'href') === `#${article.record_id.toLowerCase()}-section-${i + 1}`);
+    assert.equal(sectionLinks.length, 1, 'Existing section anchor must remain stable');
+    assert.equal(text(sectionLinks[0]), text(heading), 'Contents label must match current heading');
+    if (headingChange) revisedHeadings++;
     const paragraphs = heading.parentNode.childNodes.filter(n => n.tagName === 'p').map(text);
     const expected = [...original.paragraphs];
     for (const change of review?.replacements ?? []) if (change.section_heading === original.heading) {
@@ -64,11 +71,19 @@ for (const article of history.records) {
     assert(text(provenance[i]).includes(change.reason));
     assert.equal(all(dom, n => n.tagName === 'p' && text(n) === change.original_text).length, 1, 'Original wording must occur only in provenance');
   }
+  const earlierHeadings = all(notice, n => attr(n, 'data-annual-original-heading') === article.record_id);
+  assert.equal(earlierHeadings.length, review.heading_replacements?.length ?? 0);
+  for (const [i, change] of (review.heading_replacements ?? []).entries()) {
+    assert(text(earlierHeadings[i]).includes(change.original_text));
+    assert(text(earlierHeadings[i]).includes(change.reason));
+    assert(!all(dom, n => ['h2', 'h3'].includes(n.tagName)).some(n => text(n) === change.original_text), 'Superseded heading must not remain a current heading');
+  }
   const sourceChecks = all(notice, n => attr(n, 'data-annual-source-check') !== undefined);
   assert.equal(sourceChecks.length, review.source_checks.length);
   for (const check of review.source_checks) {
     assert(hrefs.includes(check.url));
     for (const value of [check.locator, check.access, check.finding]) assert(visible.includes(value));
+    if (check.relation) assert(visible.includes(check.relation), 'Additional-artifact relation must be visible');
   }
   for (const context of annualReviewContexts(review)) {
     assert.equal(all(notice, n => attr(n, 'data-annual-retained-context') === context.id).length, 1);
@@ -83,7 +98,7 @@ for (const article of history.records) {
     assert(text(target).includes(context.summary), `Destination omits retained finding ${context.id}`);
   }
 }
-assert.equal(totalNotices, 5); assert.equal(revisedParagraphs, 4); assert.equal(revisedOverviews, 1);
+assert.equal(totalNotices, 7); assert.equal(revisedParagraphs, 7); assert.equal(revisedOverviews, 3); assert.equal(revisedHeadings, 1);
 assert.deepEqual(JSON.parse(await read(annualCaseReviews.export_route)), annualCaseReviews);
 assert.deepEqual(JSON.parse(await read('/data/phase-204-reader-completion.json')), history);
 assert.deepEqual(JSON.parse(await read('/data/reader-catalog.json')).records, readerCatalog);
@@ -93,4 +108,4 @@ for (const updateId of new Set(annualCaseReviews.records.map(r => r.update_id ??
   assert(links(update).includes(annualCaseReviews.export_route));
   for (const r of annualCaseReviews.records.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) assert(links(update).includes(r.route));
 }
-console.log('Annual-case output verified across all 104 original reader routes: 5 scoped notices, 1 current overview across reader/metadata/catalog, 4 current paragraphs, inspectable originals, exact receipt destinations/anchors, catalog dates, two dated updates and separate export. No browser, independent or release approval claimed.');
+console.log('Annual-case output verified across all 104 original reader routes: 7 scoped notices, 3 current overviews across reader/metadata/catalog, 7 current paragraphs, 1 heading with stable contents/anchor, inspectable originals, exact acquired-source and receipt links, catalog dates, three dated updates and separate export. No browser, independent or release approval claimed.');

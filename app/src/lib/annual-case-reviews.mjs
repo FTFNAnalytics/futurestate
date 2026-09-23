@@ -31,6 +31,11 @@ export function applyAnnualCaseReview(article, options = {}) {
     if (targets.length !== 1 || targets[0].paragraphs[change.paragraph_index] !== change.original_text) throw Error(`Annual replacement target drift: ${article.record_id}`);
     targets[0].paragraphs[change.paragraph_index] = change.replacement_text;
   }
+  for (const change of review?.heading_replacements ?? []) {
+    const targets = sections.filter(s => s.heading === change.original_text);
+    if (targets.length !== 1 || !change.replacement_text) throw Error(`Annual heading target drift: ${article.record_id}`);
+    targets[0].heading = change.replacement_text;
+  }
   return {review, sections, overview:annualCaseOverview(article, options)};
 }
 /**

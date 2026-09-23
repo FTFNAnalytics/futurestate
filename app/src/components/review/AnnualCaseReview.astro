@@ -12,6 +12,10 @@ const contexts = annualReviewContexts(review);
     <summary>Earlier overview</summary>
     <p>{review.overview_replacement.original_text}</p><p><strong>Reason for clarification:</strong> {review.overview_replacement.reason}</p>
   </details>}
+  {(review.heading_replacements ?? []).map(change => <details data-annual-original-heading={review.record_id}>
+    <summary>Earlier section heading</summary>
+    <p>{change.original_text}</p><p><strong>Reason for clarification:</strong> {change.reason}</p>
+  </details>)}
   {review.replacements.length > 0 && <p>The {review.replacements.length === 1 ? 'clarified paragraph is' : 'clarified paragraphs are'} shown in the reading text below. The earlier wording remains available here and in the dated reader export.</p>}
   {review.replacements.map(change => <details data-annual-original={review.record_id}>
     <summary>Earlier wording: {change.section_heading}</summary>
@@ -19,6 +23,7 @@ const contexts = annualReviewContexts(review);
   </details>)}
   {review.source_checks.map(source => <section data-annual-source-check={source.source_id}>
     <h3><a href={source.url}>Source check: {source.locator}</a></h3>
+    {'relation' in source && source.relation && <p>{source.relation}</p>}
     <p>{source.finding}</p><p>{source.access}</p>
   </section>)}
   {contexts.map(context => <section data-annual-retained-context={context.id}>
