@@ -1,0 +1,4875 @@
+{
+  "schema_version": "1.0",
+  "as_of_date": "2026-09-22",
+  "scope": "Exact-identifier reconciliation of the listed local registries, with broader source-array discovery. Not a complete accepted-portfolio census, external source recheck or admission decision.",
+  "inputs": [
+    {
+      "path": "app/src/data/phase-116-coverage-architecture.json",
+      "bytes": 234966,
+      "sha256": "bdf29a8616878702d14d8f613c6f6190ab0d21ed606521a32678e50803e901f6"
+    },
+    {
+      "path": "app/src/data/phase-119-deep-project-place-atlas.json",
+      "bytes": 189584,
+      "sha256": "cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496"
+    },
+    {
+      "path": "app/src/data/phase-127-project-place-conversion-biographies.json",
+      "bytes": 1045249,
+      "sha256": "e3a17ccce3eaede47dd828e37992d01c65a86f555e87c636ec21fcd571020ae6"
+    },
+    {
+      "path": "app/src/data/phase-136-named-project-chronicles.json",
+      "bytes": 126515,
+      "sha256": "08d45843f6190de6a8622c1ad6d1740bac5a6af1c5ac9881d88aa9455f15eec2"
+    },
+    {
+      "path": "app/src/data/phase-137-place-delivery-ledgers.json",
+      "bytes": 61911,
+      "sha256": "16e49098cbfdb07afa9855b84883fc92e7fc4714f717f5098970672e867e12c7"
+    },
+    {
+      "path": "app/src/data/phase-170-fifteen-place-systems-atlas.json",
+      "bytes": 189119,
+      "sha256": "6b1df6201c95bdfe234e172c8cd670dc2361152c1bd3c55b9675f936412e507d"
+    },
+    {
+      "path": "app/src/data/phase-178-systems-atlas-and-compendium-depth-expansion.json",
+      "bytes": 156728,
+      "sha256": "dc1790751b66dcf48a7829738826e5051ebbaad66eed1169cc628af26b8cf4f4"
+    },
+    {
+      "path": "app/src/data/phase-185-global-place-systems-atlas-i.json",
+      "bytes": 108686,
+      "sha256": "6accf42689598e6b691af6871fa70dc235eac196bf266ac3a167b3faa9a2c07e"
+    },
+    {
+      "path": "app/src/data/phase-186-named-delivery-case-atlas-ii.json",
+      "bytes": 72488,
+      "sha256": "dc3aaa942280f339026ea5e01cfdefc0822d8b9886cda7c8e46649b704c67ae2"
+    },
+    {
+      "path": "app/src/data/phase-191-international-named-project-conversion-cohort.json",
+      "bytes": 142527,
+      "sha256": "0f57d402c94cf3ae867fedcbe0faaacf119264a559aee4ffe229dd84cf12ac71"
+    },
+    {
+      "path": "app/src/data/phase-192-global-place-systems-atlas.json",
+      "bytes": 63086,
+      "sha256": "2d0d9c46823e0716fb9f1ccda364b929f8172e5be1a0706fb1db17d1ef2d3ecc"
+    },
+    {
+      "path": "app/src/data/phase-197-underrepresented-region-topic-gap-closure.json",
+      "bytes": 120743,
+      "sha256": "796eb2c074d69195825cbdfa2127ea6480ea183e10abc8e5923bf89d3d4506f9"
+    },
+    {
+      "path": "app/src/data/phase-198-failure-delay-reversal-correction-casebooks.json",
+      "bytes": 107669,
+      "sha256": "79d2e69f7d372515aa7ea0523e251145862f263d4eace3bc6e3fe218509c117f"
+    },
+    {
+      "path": "app/src/data/phase-202-accessible-multilingual-low-bandwidth-editions.json",
+      "bytes": 131908,
+      "sha256": "3f2d0494cc16dfb192f0ab909a0c035411c6884b0a4563528019ce8917416f26"
+    },
+    {
+      "path": "app/src/data/phase-203-state-of-future-systems-2026.json",
+      "bytes": 171973,
+      "sha256": "5623c3d52263ab65628edc38d987dc33a31d19909312be1a282dd56c027d9021"
+    },
+    {
+      "path": "app/src/data/phase-204-v1-public-reference-edition-promotion-gate.json",
+      "bytes": 13582,
+      "sha256": "aefd6b03c134262dfdc1d3454976e9bfc5301797307bc98da91a58a246df0376"
+    },
+    {
+      "path": "app/src/data/phase-205-216-current-editorial.json",
+      "bytes": 248918,
+      "sha256": "e2fd76e4b53e638523696fb47ed4ae04bc5d073d3b22e6731e02603078d1f230"
+    },
+    {
+      "path": "app/src/data/phase-57g-montana-project-cohort-registry.json",
+      "bytes": 24480,
+      "sha256": "e3078cdb3696a73ce69160d30977002d02cbb463dbd2256a5cf0774f720472fa"
+    }
+  ],
+  "summary": {
+    "canonical_projects": 24,
+    "canonical_places": 15,
+    "additional_editorial_project_candidates": 2,
+    "additional_editorial_place_candidates": 2,
+    "montana_source_projects_to_reconcile": 32,
+    "named_place_dossiers_to_reconcile": 10,
+    "jurisdiction_orientations_to_disposition": 18,
+    "unnamed_target_contracts": 48,
+    "target_projects": 100,
+    "target_places": 70,
+    "accepted_projects": null,
+    "accepted_places": null,
+    "accepted_project_gap": null,
+    "accepted_place_gap": null,
+    "new_admissions": 0
+  },
+  "entities": [
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-tsmc-arizona",
+      "atlas_id": "119-PROJECT-001",
+      "name": "TSMC Arizona",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_conversion_file",
+      "aliases": [
+        "tsmc-arizona",
+        "TSMC Arizona campus",
+        "61-PROJECT-TSMC-ARIZONA",
+        "TSMC Arizona"
+      ],
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "route": "/atlas/projects/tsmc-arizona/",
+      "next_artifact": "A facility-specific accepted utility, inspection, occupancy, qualification, customer-acceptance, or compatible recurring production record.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-tsmc-arizona"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-001"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-001"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-001"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-001"
+        }
+      ],
+      "editorial_versions": [
+        {
+          "record_id": "119-PROJECT-001",
+          "article_sha256": "08ffcc776e1dc855f953910954c5e901392d1edabe540da730c63204f6232fcc",
+          "route": "/atlas/projects/tsmc-arizona/",
+          "approved": false,
+          "identity_evidence": {
+            "candidate_name": "TSMC Arizona",
+            "identifier": null,
+            "scope": "Arizona campus; fab-specific and wastewater-asset boundaries remain separate",
+            "aliases": [
+              "TSMC Arizona campus"
+            ],
+            "not_equivalent": [
+              "All TSMC global production",
+              "Every fab at the same delivery stage",
+              "The proposed municipal receiving works"
+            ],
+            "matched_source_indices": [
+              0,
+              1
+            ],
+            "checked_date": "2026-09-15",
+            "historical_record_sha256": "8921b77b3575328ca664ea9577fba7f4bae9eda0cbbf89432913b0a91f07b3b2",
+            "origin": "Inherited Atlas project identity",
+            "disposition": "Inherited project identity; independent expanded-content acceptance pending",
+            "reviewer": null,
+            "decision_receipt": null
+          },
+          "source_urls": [
+            "https://www.phoenix.gov/newsroom/ced-news/tsmc-announces-additional--100-billion-investment-in-arizona.html",
+            "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/5-20-26%20Formal%20Agenda-FINAL.pdf",
+            "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/5-20-26%20Formal%20Results-FINAL.pdf"
+          ]
+        }
+      ],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-toronto-24-254930",
+      "atlas_id": "119-PROJECT-002",
+      "name": "Victoria Park Avenue and Thora Avenue application 24 254930",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_conversion_file",
+      "aliases": [
+        "toronto-24-254930",
+        "Toronto application 24 254930",
+        "61-PROJECT-TORONTO-24-254930",
+        "Victoria Park Avenue and Thora Avenue application 24 254930"
+      ],
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "route": "/atlas/projects/toronto-24-254930/",
+      "next_artifact": "Introduced or enacted amendment numbers, accepted condition-compliance records, or the first confirmed permit, start, completion, or occupancy record for the application.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-toronto-24-254930"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-002"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-002"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-002"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-002"
+        },
+        {
+          "registry": "phase-191-international-named-project-conversion-cohort",
+          "array": "project_conversion_packets",
+          "id": "191-PROJECT-001"
+        }
+      ],
+      "editorial_versions": [
+        {
+          "record_id": "191-PROJECT-001",
+          "article_sha256": "f4d528b5539233c8bcf5d583b8dac2d753b2bc24dc47b0e5c5dab874b62bd844",
+          "route": "/reference/international-projects/toronto-24-254930/",
+          "approved": false,
+          "identity_evidence": {
+            "candidate_name": "Victoria Park Avenue and Thora Avenue application 24 254930",
+            "identifier": "24 254930 ESC 20 OZ",
+            "scope": "507, 511, 513 Victoria Park Avenue; 4, 6, 7, 11, 14 Thora Avenue",
+            "aliases": [
+              "2026.SC33.9",
+              "507 Victoria Park Avenue application"
+            ],
+            "not_equivalent": [
+              "All Toronto housing approvals",
+              "An enacted amendment number",
+              "Completed or occupied housing"
+            ],
+            "matched_source_indices": [
+              0,
+              1
+            ],
+            "checked_date": "2026-09-15",
+            "historical_record_sha256": "33fb2ec567aa5b9b01b64afe6d5e5ff4d41b7e61497d418096941f0088fbc0b2",
+            "origin": "Inherited exact project anchor",
+            "disposition": "Inherited project identity; independent expanded-content acceptance pending",
+            "reviewer": null,
+            "decision_receipt": null
+          },
+          "source_urls": [
+            "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+            "https://secure.toronto.ca/nm/api/individual/notice/7606.do"
+          ]
+        }
+      ],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-northern-virginia-large-load",
+      "atlas_id": "119-PROJECT-003",
+      "name": "Golden-Mars transmission project and Dominion GS-5 service class",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_conversion_file",
+      "aliases": [
+        "northern-virginia-large-load",
+        "Northern Virginia Golden-Mars and GS-5 large-load trail",
+        "61-PROJECT-NOVA-LARGE-LOAD",
+        "Golden-Mars transmission project and Dominion GS-5 service class"
+      ],
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "route": "/atlas/projects/northern-virginia-large-load/",
+      "next_artifact": "A final route or land decision followed by construction, inspection, energization, or a named GS-5 customer service record.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-northern-virginia-large-load"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-003"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-003"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-003"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-003"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-010"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-space-coast-authority-to-mission",
+      "atlas_id": "119-PROJECT-004",
+      "name": "Shuttle Landing Facility, LC-39A, and SLC-40",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_conversion_file",
+      "aliases": [
+        "space-coast-authority-to-mission",
+        "Space Coast authorization-to-mission stack",
+        "61-PROJECT-SPACE-COAST-AUTHORITY",
+        "Shuttle Landing Facility, LC-39A, and SLC-40"
+      ],
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "route": "/atlas/projects/space-coast-authority-to-mission/",
+      "next_artifact": "The FAA's formal Shuttle Landing Facility licence disposition or a named operator authorization, accepted capital asset, mission, or repeated service record.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-space-coast-authority-to-mission"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-004"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-004"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-004"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-004"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-032"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-nevada-lithium-to-qualified-material",
+      "atlas_id": "119-PROJECT-005",
+      "name": "Thacker Pass and Rhyolite Ridge",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_conversion_file",
+      "aliases": [
+        "nevada-lithium-to-qualified-material",
+        "Nevada lithium project pair",
+        "61-PROJECT-NEVADA-LITHIUM",
+        "Thacker Pass and Rhyolite Ridge"
+      ],
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "route": "/atlas/projects/nevada-lithium-to-qualified-material/",
+      "next_artifact": "A named inspection, construction completion, commissioning test, compliant operating measurement, qualified lot, customer receipt, or recurring output series.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-nevada-lithium-to-qualified-material"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-005"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-005"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-005"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-005"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-014"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-gsa-pqc-adoption",
+      "atlas_id": "119-PROJECT-006",
+      "name": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_conversion_file",
+      "aliases": [
+        "gsa-pqc-adoption",
+        "GSA post-quantum acquisition path",
+        "61-ADOPTION-GSA-PQC",
+        "GSA Post-Quantum Cryptography Buyer's Guide"
+      ],
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "route": "/atlas/projects/gsa-pqc-adoption/",
+      "next_artifact": "A named agency inventory, solicitation, award, interoperability test, cutover, acceptance, or legacy-retirement record.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-gsa-pqc-adoption"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-006"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-006"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-006"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-006"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-016"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-030"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-nist-aria-assurance",
+      "atlas_id": "119-PROJECT-007",
+      "name": "NIST ARIA 0.1 pilot",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_conversion_file",
+      "aliases": [
+        "nist-aria-assurance",
+        "NIST ARIA assurance path",
+        "61-ADOPTION-NIST-ARIA",
+        "NIST ARIA 0.1 pilot"
+      ],
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "route": "/atlas/projects/nist-aria-assurance/",
+      "next_artifact": "A named system evaluation and authorization record linked to deployment monitoring, incident handling, corrective action, or a stable mission-outcome measure.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-nist-aria-assurance"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-007"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-007"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-007"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-007"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-006"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-018"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-waymo-california-service",
+      "atlas_id": "119-PROJECT-008",
+      "name": "Waymo fared driverless passenger service in California",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_conversion_file",
+      "aliases": [
+        "waymo-california-service",
+        "Waymo California fared driverless service",
+        "61-ADOPTION-WAYMO-CALIFORNIA",
+        "Waymo fared driverless passenger service in California"
+      ],
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "route": "/atlas/projects/waymo-california-service/",
+      "next_artifact": "A stable Waymo operating series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, and comparable definitions.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-waymo-california-service"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-008"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-008"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-008"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-008"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-manatee-battery-storage",
+      "atlas_id": "119-PROJECT-009",
+      "name": "Manatee Battery Energy Storage Center",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "manatee-battery-storage",
+        "Manatee Battery Energy Storage Center",
+        "113-CASE-001",
+        "Manatee BESS"
+      ],
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023",
+        "source-56c-manatee-psc-operating-data-2025",
+        "source-56c-manatee-psc-rate-testimony-2025",
+        "source-56d-manatee-fpl-data-request-2025",
+        "source-56d-manatee-fpl-site-plan-2025",
+        "source-56i-eia923-may2026-release",
+        "source-56j-manatee-eia923-plant-60014"
+      ],
+      "route": "/atlas/projects/manatee-battery-storage/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-manatee-battery-storage"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-009"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-009"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-009"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-009"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-moss-landing-battery-safety",
+      "atlas_id": "119-PROJECT-010",
+      "name": "Moss Landing battery safety and operation",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "moss-landing-battery-safety",
+        "Moss Landing battery safety and operation",
+        "113-CASE-002",
+        "Moss Landing"
+      ],
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023",
+        "source-56c-moss-landing-audit-2025",
+        "source-56c-moss-landing-audit-response-2025",
+        "source-56d-moss-landing-epa-response-timeline-2026",
+        "source-56d-moss-landing-epa-agreement-2025",
+        "source-56k-moss-landing-go167-corrective-action-2025"
+      ],
+      "route": "/atlas/projects/moss-landing-battery-safety/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-moss-landing-battery-safety"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-010"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-010"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-010"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-010"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-gateway-battery-storage",
+      "atlas_id": "119-PROJECT-011",
+      "name": "Gateway battery storage",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "gateway-battery-storage",
+        "Gateway battery storage",
+        "113-CASE-003",
+        "Gateway Energy Storage"
+      ],
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023",
+        "source-56c-gateway-cpuc-audit-2025",
+        "source-56c-gateway-cpuc-audit-response-2025",
+        "source-56d-gateway-cpuc-resolution-e5428-2025",
+        "source-56d-gateway-epa-bess-safety-2025"
+      ],
+      "route": "/atlas/projects/gateway-battery-storage/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-gateway-battery-storage"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-011"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-011"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-011"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-011"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-hornsdale-power-reserve",
+      "atlas_id": "119-PROJECT-012",
+      "name": "Hornsdale Power Reserve",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "hornsdale-power-reserve",
+        "Hornsdale Power Reserve",
+        "113-CASE-004",
+        "HPR"
+      ],
+      "source_ids": [
+        "source-56e-hornsdale-aer-2022",
+        "source-56e-hornsdale-sa-current",
+        "source-56e-hornsdale-aemo-2019-preliminary",
+        "source-56e-hornsdale-aemo-2020-final",
+        "source-56h-hornsdale-final-project-report-2026",
+        "source-56j-hornsdale-h1-2024-operations"
+      ],
+      "route": "/atlas/projects/hornsdale-power-reserve/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-hornsdale-power-reserve"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-012"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-012"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-012"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-012"
+        },
+        {
+          "registry": "phase-191-international-named-project-conversion-cohort",
+          "array": "project_conversion_packets",
+          "id": "191-PROJECT-003"
+        }
+      ],
+      "editorial_versions": [
+        {
+          "record_id": "191-PROJECT-003",
+          "article_sha256": "6fbba20315a718385d1fc09ba2fd38fe42a778345307b5baa7ce6ed8e53d7a7d",
+          "route": "/reference/international-projects/hornsdale-power-reserve/",
+          "approved": false,
+          "identity_evidence": {
+            "candidate_name": "Hornsdale Power Reserve",
+            "identifier": null,
+            "scope": "Named South Australian battery and expansion; each service keeps its own configuration",
+            "aliases": [
+              "HPR",
+              "HPRX",
+              "Hornsdale Power Reserve Expansion"
+            ],
+            "not_equivalent": [
+              "Dalrymple",
+              "Victorian Big Battery",
+              "All South Australian grid outcomes"
+            ],
+            "matched_source_indices": [
+              0,
+              1
+            ],
+            "checked_date": "2026-09-15",
+            "historical_record_sha256": "265a7b955eb4fec08a9eb152e3d102a8c9078bb60f9058ded87c442fc8b5cb79",
+            "origin": "Inherited exact project anchor",
+            "disposition": "Inherited project identity; independent expanded-content acceptance pending",
+            "reviewer": null,
+            "decision_receipt": null
+          },
+          "source_urls": [
+            "https://arena.gov.au/knowledge-bank/hornsdale-power-reserve-expansion-final-project-report/",
+            "https://arena.gov.au/assets/2024/09/Neoen-HPRX-Final-Project-Report_2024.pdf",
+            "https://arena.gov.au/assets/2025/03/Neoen-%E2%80%93-Hornsdale-Power-Reserve-Upgrade-%E2%80%93-Operations-Report-H1-2024.pdf"
+          ]
+        }
+      ],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-victoria-big-battery",
+      "atlas_id": "119-PROJECT-013",
+      "name": "Victoria Big Battery",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "victoria-big-battery",
+        "Victoria Big Battery",
+        "113-CASE-005",
+        "Victorian Big Battery",
+        "VBB"
+      ],
+      "source_ids": [
+        "source-56e-vbb-esv-fire-findings-2021",
+        "source-56e-vbb-aemo-registration-2021",
+        "source-56e-vbb-aemo-operational-2021",
+        "source-56e-vbb-esv-investigations"
+      ],
+      "route": "/atlas/projects/victoria-big-battery/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-victoria-big-battery"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-013"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-013"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-013"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-013"
+        },
+        {
+          "registry": "phase-191-international-named-project-conversion-cohort",
+          "array": "project_conversion_packets",
+          "id": "191-PROJECT-004"
+        }
+      ],
+      "editorial_versions": [
+        {
+          "record_id": "191-PROJECT-004",
+          "article_sha256": "8d790977e4a48cf62d1978f419303e2992c5695ef10defb8c04e49c18c4d6c6b",
+          "route": "/reference/international-projects/victoria-big-battery/",
+          "approved": false,
+          "identity_evidence": {
+            "candidate_name": "Victoria Big Battery",
+            "identifier": null,
+            "scope": "Victorian Big Battery at Moorabool terminal station near Geelong",
+            "aliases": [
+              "Victorian Big Battery",
+              "VBB"
+            ],
+            "not_equivalent": [
+              "Hornsdale Power Reserve",
+              "All Victorian battery storage",
+              "Every Tesla Megapack installation"
+            ],
+            "matched_source_indices": [
+              0,
+              3
+            ],
+            "checked_date": "2026-09-15",
+            "historical_record_sha256": "6729e81065440918ea02f25c5e069b6977f95ace75a5adc6665391d8b7800d1d",
+            "origin": "Inherited exact project anchor",
+            "disposition": "Inherited project identity; independent expanded-content acceptance pending",
+            "reviewer": null,
+            "decision_receipt": null
+          },
+          "source_urls": [
+            "https://www.energy.vic.gov.au/renewable-energy/batteries-energy-storage-projects/victorian-big-battery",
+            "https://news.cfa.vic.gov.au/news/firefighters-bring-large-battery-fire-near-geelong-under-control",
+            "https://www.energysafe.vic.gov.au/sites/default/files/2022-12/VBB_StatementOfFindings_FINAL_28Sep2021.pdf",
+            "https://www.aemo.com.au/newsroom/media-release/victorian-battery-delivering-energy-reserves-in-summer"
+          ]
+        }
+      ],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-dalrymple-grid-battery",
+      "atlas_id": "119-PROJECT-014",
+      "name": "Dalrymple grid battery",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "dalrymple-grid-battery",
+        "Dalrymple grid battery",
+        "113-CASE-006",
+        "ESCRI Dalrymple BESS",
+        "Dalrymple BESS"
+      ],
+      "source_ids": [
+        "source-56e-dalrymple-arena-final-2021",
+        "source-56e-dalrymple-arena-retrospective-2021",
+        "source-56e-dalrymple-arena-operational-2020",
+        "source-56e-dalrymple-aemo-minimum-demand-2020",
+        "source-56g-dalrymple-electranet-tapr-2026",
+        "source-56h-dalrymple-aemo-constraint-report-2026",
+        "source-56j-dalrymple-aemo-march-2026"
+      ],
+      "route": "/atlas/projects/dalrymple-grid-battery/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-dalrymple-grid-battery"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-014"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-014"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-014"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-014"
+        },
+        {
+          "registry": "phase-191-international-named-project-conversion-cohort",
+          "array": "project_conversion_packets",
+          "id": "191-PROJECT-005"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-012"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-020"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-022"
+        }
+      ],
+      "editorial_versions": [
+        {
+          "record_id": "191-PROJECT-005",
+          "article_sha256": "a8561ebf844d2a8b13087426de354a137b030fdb9912f57b830762f30cc4b879",
+          "route": "/reference/international-projects/dalrymple-grid-battery/",
+          "approved": false,
+          "identity_evidence": {
+            "candidate_name": "Dalrymple grid battery",
+            "identifier": null,
+            "scope": "ESCRI-SA battery on southern Yorke Peninsula; defined local islanding and market services",
+            "aliases": [
+              "Dalrymple BESS",
+              "ESCRI-SA",
+              "ElectraNet South Australian battery"
+            ],
+            "not_equivalent": [
+              "Hornsdale",
+              "All South Australian electricity customers",
+              "A generic battery technology average"
+            ],
+            "matched_source_indices": [
+              0,
+              1
+            ],
+            "checked_date": "2026-09-15",
+            "historical_record_sha256": "3522630b4ecc5032ffcb73eb9126759e72beaf5e45cb5faad30854b35998dc7e",
+            "origin": "Inherited exact project anchor",
+            "disposition": "Inherited project identity; independent expanded-content acceptance pending",
+            "reviewer": null,
+            "decision_receipt": null
+          },
+          "source_urls": [
+            "https://arena.gov.au/blog/electranet-south-australian-battery-shows-the-way-forward/",
+            "https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-report-4.pdf"
+          ]
+        }
+      ],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-f35-production-readiness",
+      "atlas_id": "119-PROJECT-015",
+      "name": "F-35 production readiness",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "f35-production-readiness",
+        "F-35 production readiness",
+        "113-CASE-007"
+      ],
+      "source_ids": [
+        "source-56e-f35-lockheed-deliveries-2025",
+        "source-56e-f35-gao-sustainment-2026",
+        "source-56e-f35-gao-2024",
+        "source-56e-f35-gao-2025",
+        "source-56h-f35-gao-late-deliveries-2025"
+      ],
+      "route": "/atlas/projects/f35-production-readiness/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-f35-production-readiness"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-015"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-015"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-015"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-015"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-f15ex-production-delivery",
+      "atlas_id": "119-PROJECT-016",
+      "name": "F-15EX production and delivery",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "f15ex-production-delivery",
+        "F-15EX production and delivery",
+        "113-CASE-008",
+        "F-15EX"
+      ],
+      "source_ids": [
+        "source-56e-f15ex-gao-2025",
+        "source-56e-f15ex-production-resumes-2025",
+        "source-56e-f15ex-first-deliveries-2021",
+        "source-56e-f15ex-four-deliveries-2023",
+        "source-56k-f15ex-ex16-portland-receipt-2026"
+      ],
+      "route": "/atlas/projects/f15ex-production-delivery/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-f15ex-production-delivery"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-016"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-016"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-016"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-016"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-008"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-kc46-readiness",
+      "atlas_id": "119-PROJECT-017",
+      "name": "KC-46 readiness",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "kc46-readiness",
+        "KC-46 readiness",
+        "113-CASE-009",
+        "KC-46"
+      ],
+      "source_ids": [
+        "source-56e-kc46-100th-delivery-2025",
+        "source-56e-kc46-105th-delivery-2026",
+        "source-56e-kc46-usaf-budget-fy2025",
+        "source-56e-kc46-gao-2026",
+        "source-56j-kc46-readiness-plan-2026"
+      ],
+      "route": "/atlas/projects/kc46-readiness/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-kc46-readiness"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-017"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-017"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-017"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-017"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-current-applications-capacity",
+      "atlas_id": "119-PROJECT-018",
+      "name": "Current Applications industrial capacity",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "current-applications-capacity",
+        "Current Applications industrial capacity",
+        "113-CASE-010",
+        "Current Applications"
+      ],
+      "source_ids": [
+        "source-56b-nist-mep-current-applications-lean",
+        "source-56c-current-applications-capabilities",
+        "source-56c-current-applications-cancelled-expansion"
+      ],
+      "route": "/atlas/projects/current-applications-capacity/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-current-applications-capacity"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-018"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-018"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-018"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-018"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-002"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-island-components-capacity",
+      "atlas_id": "119-PROJECT-019",
+      "name": "Island Components industrial capacity",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "island-components-capacity",
+        "Island Components industrial capacity",
+        "113-CASE-011",
+        "Island Components"
+      ],
+      "source_ids": [
+        "source-56b-nist-mep-island-components-lean",
+        "source-56c-island-components-acquisition-2021",
+        "source-56c-island-components-capabilities",
+        "source-56l-island-components-paris-fye2023"
+      ],
+      "route": "/atlas/projects/island-components-capacity/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-island-components-capacity"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-019"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-019"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-019"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-019"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-monaghan-medical-capacity",
+      "atlas_id": "119-PROJECT-020",
+      "name": "Monaghan Medical manufacturing capacity",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "monaghan-medical-capacity",
+        "Monaghan Medical manufacturing capacity",
+        "113-CASE-012",
+        "Monaghan Medical"
+      ],
+      "source_ids": [
+        "source-56b-nist-mep-monaghan-medical-lean",
+        "source-56c-monaghan-iso14001-2024",
+        "source-56c-monaghan-manufacturing-profile",
+        "source-56d-monaghan-fda-tplc-2025",
+        "source-56d-monaghan-iso14001-boundary-2024",
+        "source-56i-monaghan-excelsior-q1-2026",
+        "source-56l-monaghan-medical-ccida-fye2025"
+      ],
+      "route": "/atlas/projects/monaghan-medical-capacity/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-monaghan-medical-capacity"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-020"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-020"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-020"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-020"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-amtrak-accessible-stations",
+      "atlas_id": "119-PROJECT-021",
+      "name": "Amtrak accessible-station delivery",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "amtrak-accessible-stations",
+        "Amtrak accessible-station delivery",
+        "113-CASE-013",
+        "Amtrak ADA station program",
+        "Amtrak PIDS"
+      ],
+      "source_ids": [
+        "source-57a-dot-fy2027-performance-plan-fy2025-report",
+        "source-57b-amtrak-ada-progress-june-2026",
+        "source-57d-amtrak-ada-progress-december-2024",
+        "source-57d-amtrak-ada-progress-june-2025",
+        "source-57d-amtrak-ada-progress-december-2025",
+        "source-57e-amtrak-accessibility-progress-june-2026",
+        "source-57f-amtrak-stations-alp-fy24-29"
+      ],
+      "route": "/atlas/projects/amtrak-accessible-stations/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-amtrak-accessible-stations"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-021"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-021"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-021"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-021"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-024"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-026"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-028"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-hanford-dflaw-operation",
+      "atlas_id": "119-PROJECT-022",
+      "name": "Hanford DFLAW operation",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "hanford-dflaw-operation",
+        "Hanford DFLAW operation",
+        "113-CASE-014",
+        "Hanford DFLAW"
+      ],
+      "source_ids": [
+        "source-56x-hanford-first-ilaw-disposal-2026",
+        "source-56x-hanford-vitrification-100k-2026",
+        "source-57a-wa-ecology-hanford-overview",
+        "source-57b-ecology-wtp-byproduct-response-comments",
+        "source-57b-hanford-wtp-project-managers-may-2026",
+        "source-57d-hanford-wtp-consent-may-2026",
+        "source-57d-hanford-wtp-consent-june-2026",
+        "source-57d-hanford-wtp-consent-july-2026",
+        "source-57e-doe-hanford-acceptable-glass-startup",
+        "source-57e-hanford-dflaw-current-program-page",
+        "source-57f-hanford-wtp-pmm-february-2026",
+        "source-57g-hanford-dflaw-process-animation",
+        "source-57f-doe-hanford-100k-gallons-may-2026"
+      ],
+      "route": "/atlas/projects/hanford-dflaw-operation/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-hanford-dflaw-operation"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-022"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-022"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-022"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-022"
+        },
+        {
+          "registry": "phase-186-named-delivery-case-atlas-ii",
+          "id": "186-CASE-034"
+        }
+      ],
+      "editorial_versions": [
+        {
+          "record_id": "119-PROJECT-022",
+          "article_sha256": "63bb8cea519c8c0bf993f9ba8113c8ea19c92d1fbaa88e2e1f9456d934c2f815",
+          "route": "/atlas/projects/hanford-dflaw-operation/",
+          "approved": false,
+          "identity_evidence": {
+            "candidate_name": "Hanford DFLAW operation",
+            "identifier": null,
+            "scope": "Direct-feed low-activity waste operation within the wider WTP and Hanford receiving system",
+            "aliases": [
+              "DFLAW",
+              "WTP low-activity waste operation"
+            ],
+            "not_equivalent": [
+              "All Hanford cleanup",
+              "The high-level-waste plant",
+              "All shipped containers accepted for disposal"
+            ],
+            "matched_source_indices": [
+              0,
+              1
+            ],
+            "checked_date": "2026-09-15",
+            "historical_record_sha256": "193f54573e87a76a036c224d1048141ecdbb439241f1b513308e69dcbbddb8d8",
+            "origin": "Inherited Atlas project identity",
+            "disposition": "Inherited project identity; independent expanded-content acceptance pending",
+            "reviewer": null,
+            "decision_receipt": null
+          },
+          "source_urls": [
+            "https://www.hanford.gov/?page=519",
+            "https://pdw.hanford.gov/download/v2/AR-41694",
+            "https://pdw.hanford.gov/download/v2/AR-41695"
+          ]
+        }
+      ],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-montana-bead-completed-quarter",
+      "atlas_id": "119-PROJECT-023",
+      "name": "Montana BEAD completed quarter",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "montana-bead-completed-quarter",
+        "Montana BEAD completed quarter",
+        "113-CASE-015",
+        "Montana BEAD"
+      ],
+      "source_ids": [
+        "source-57e-montana-bead-faq-july-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57g-montana-cai-csv",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-bead-final-proposal-january-2026"
+      ],
+      "route": "/atlas/projects/montana-bead-completed-quarter/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-montana-bead-completed-quarter"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-023"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-023"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-023"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-023"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "canonical_id": "casebook-nnsa-qualified-production",
+      "atlas_id": "119-PROJECT-024",
+      "name": "NNSA qualified production",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_casebook",
+      "aliases": [
+        "nnsa-qualified-production",
+        "NNSA qualified production",
+        "113-CASE-016",
+        "NNSA pit production"
+      ],
+      "source_ids": [
+        "source-56w-nnsa-fy2027-weapons-activities",
+        "source-56q-gao-23-104661-recommendation-status",
+        "source-56x-gao-nnsa-major-projects-2026",
+        "source-56y-srppf-contract-qa-2026",
+        "source-56z-nnsa-brookings-remarks-mar2024",
+        "source-56z-nnsa-hudson-remarks-jan2025",
+        "source-57a-nnsa-w87-1-first-production-unit",
+        "source-57f-nnsa-pit-production-current",
+        "source-57g-nnsa-lap4-30-base-construction",
+        "source-57f-nnsa-stockpile-current"
+      ],
+      "route": "/atlas/projects/nnsa-qualified-production/",
+      "next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "casebook-nnsa-qualified-production"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PROJECT-024"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "project_biographies",
+          "id": "127-PROJECT-024"
+        },
+        {
+          "registry": "phase-136-named-project-chronicles",
+          "array": "project_chronicles",
+          "id": "136-CHRONICLE-024"
+        },
+        {
+          "registry": "phase-198-failure-delay-reversal-correction-casebooks",
+          "array": "casebook_packets",
+          "id": "198-CASE-024"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-florida-space-coast-launch-corridor",
+      "atlas_id": "119-PLACE-001",
+      "name": "Florida Space Coast Launch Corridor",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_local_system",
+      "aliases": [
+        "florida-space-coast-launch-corridor",
+        "Florida Space Coast Launch Corridor",
+        "Florida Space Coast",
+        "Space Coast launch corridor"
+      ],
+      "source_ids": [
+        "source-nasa-kennedy-master-plan-2026",
+        "source-faa-spaceports-by-state-2026",
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-slc40-final-ea",
+        "source-faa-part450-transition-2026",
+        "source-fdot-spaceport-program",
+        "source-fdot-spaceport-documents",
+        "source-space-florida-annual-reports",
+        "source-nasa-ksc-programmatic-eis",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-nasa-ksc-simo",
+        "source-nasa-ksc-causeway-bridge-2025",
+        "source-nasa-ksc-phsf-roman-upgrades-2026",
+        "source-nasa-ksc-prescribed-burn-2026",
+        "source-faa-commercial-space-licenses",
+        "source-faa-aviation-data-downloads",
+        "source-nasa-artemis",
+        "source-nasa-technical-reports-server",
+        "source-eia-electricity-data",
+        "source-bls-qcew-data-files",
+        "source-census-acs-five-year-api"
+      ],
+      "route": "/atlas/places/florida-space-coast-launch-corridor/",
+      "next_artifact": "A governed place review resolving the first stated missing-data need: current Shuttle Landing Facility license disposition.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-florida-space-coast-launch-corridor"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-001"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-001"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-001"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-001"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-nevada-lithium-processing-corridor",
+      "atlas_id": "119-PLACE-002",
+      "name": "Nevada Lithium And Battery Materials Corridor",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_local_system",
+      "aliases": [
+        "nevada-lithium-battery-materials-corridor",
+        "Nevada Lithium And Battery Materials Corridor",
+        "Nevada lithium corridor",
+        "Nevada battery-materials corridor"
+      ],
+      "source_ids": [
+        "source-blm-thacker-pass-rod-2021",
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-thacker-pass-project",
+        "source-ndep-thacker-pass-water-permit",
+        "source-ndep-thacker-pass-permit-decisions-2022",
+        "source-ndep-rhyolite-ridge-air-permit",
+        "source-ndep-rhyolite-ridge-water-permit-2025",
+        "source-blm-rhyolite-ridge-rod-2024",
+        "source-doe-rhyolite-ridge-nepa-2025",
+        "source-nevada-water-rights",
+        "source-usgs-mineral-commodity-summaries",
+        "source-usgs-mineral-resources-data",
+        "source-usgs-earth-mri",
+        "source-usaspending-api",
+        "source-doe-critical-minerals-materials-program",
+        "source-doe-critical-materials-collaborative",
+        "source-bls-qcew-data-files",
+        "source-census-acs-five-year-api"
+      ],
+      "route": "/atlas/places/nevada-lithium-battery-materials-corridor/",
+      "next_artifact": "A governed place review resolving the first stated missing-data need: current construction completion and commissioning evidence.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-nevada-lithium-processing-corridor"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-002"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-002"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-002"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-002"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-northern-virginia-data-center-corridor",
+      "atlas_id": "119-PLACE-003",
+      "name": "Northern Virginia Data Center Corridor",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_local_system",
+      "aliases": [
+        "northern-virginia-data-center-corridor",
+        "Northern Virginia Data Center Corridor",
+        "Northern Virginia data-center corridor",
+        "NoVA large-load corridor"
+      ],
+      "source_ids": [
+        "source-virginia-jlarc-data-centers-2024",
+        "source-loudoun-data-centers-policy",
+        "source-loudoun-phase2-data-center-standards",
+        "source-loudoun-electrical-infrastructure-plan-2026",
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026",
+        "source-virginia-deq-data-center-air-permits",
+        "source-virginia-scc-transmission-projects",
+        "source-virginia-deq-project-raspberry",
+        "source-loudoun-water-reclaimed-water",
+        "source-pjm-load-analysis-subcommittee",
+        "source-eia-electricity-data",
+        "source-eia-form-930-hourly-grid-data",
+        "source-eia-form-861",
+        "source-eia-form-860-generator-data",
+        "source-ferc-elibrary",
+        "source-bls-qcew-data-files",
+        "source-census-acs-five-year-api"
+      ],
+      "route": "/atlas/places/northern-virginia-data-center-corridor/",
+      "next_artifact": "A governed place review resolving the first stated missing-data need: customer-specific load commitments and service agreements.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-northern-virginia-data-center-corridor"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-003"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-003"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-003"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-003"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-ontario-real-estate",
+      "atlas_id": "119-PLACE-004",
+      "name": "Ontario Real Estate",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_local_system",
+      "aliases": [
+        "ontario-real-estate",
+        "Ontario Real Estate",
+        "Ontario housing and land system"
+      ],
+      "source_ids": [
+        "source-cmhc-housing-market-information-portal",
+        "source-cmhc-starts-completions-under-construction",
+        "source-cmhc-june-2026-housing-starts-construction",
+        "source-ontario-housing-supply-progress",
+        "source-statcan-building-permits-survey",
+        "source-city-toronto-application-information-centre",
+        "source-toronto-24-254930-june-2026-decision-report",
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025",
+        "source-statcan-web-data-service",
+        "source-toronto-open-data",
+        "source-ontario-data-catalogue",
+        "source-toronto-development-guide",
+        "source-toronto-building-permits",
+        "source-toronto-water-budget-capital-plan",
+        "source-toronto-water-2026-capital-plan",
+        "source-ieso-annual-planning-outlook",
+        "source-ieso-2026-annual-planning-outlook",
+        "source-toronto-hydro-regulatory-documents",
+        "source-oeb-toronto-hydro-eb-2023-0195",
+        "source-toronto-capital-projects-pipeline",
+        "source-toronto-cleared-building-permits",
+        "source-toronto-development-applications-open-data",
+        "source-oeb-applications"
+      ],
+      "route": "/atlas/places/ontario-real-estate/",
+      "next_artifact": "A governed place review resolving the first stated missing-data need: local inventory by submarket.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-ontario-real-estate"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-004"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-004"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-004"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-004"
+        },
+        {
+          "registry": "phase-192-global-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "192-PLACE-001"
+        }
+      ],
+      "editorial_versions": [
+        {
+          "record_id": "192-PLACE-001",
+          "article_sha256": "2ac6d19534537aba90028f31c4a3c90ec20495166e9d1a2f3a1df071c44b7211",
+          "route": "/reference/global-places-ii/ontario-real-estate/",
+          "approved": false,
+          "identity_evidence": {
+            "origin": "Inherited exact place anchor",
+            "candidate_name": "Ontario, Canada",
+            "identifier": null,
+            "scope": "Province-level reporting lens; Toronto CMA and the source-labelled Ottawa rental market remain separate examples",
+            "aliases": [
+              "Ontario"
+            ],
+            "not_equivalent": [
+              "Toronto CMA",
+              "The Ottawa rental market",
+              "Toronto city limits",
+              "One development application",
+              "All Canadian rental households"
+            ],
+            "matched_source_indices": [
+              0,
+              2
+            ],
+            "historical_record_sha256": "cab7dd2ab80225147e9764d31224ba7aa2a47849d31bf9d72b3408baaf0bbb14",
+            "checked_date": "2026-09-14",
+            "disposition": "Inherited exact place identity; independent expanded-content acceptance pending",
+            "reviewer": null,
+            "decision_receipt": null
+          },
+          "source_urls": [
+            "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-data/data-tables/housing-market-data/monthly-housing-starts-construction-data-tables",
+            "https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2025/canadas-vacancy-rate-rises-amid-historically-high-rental-construction",
+            "https://www.cmhc-schl.gc.ca/observer/2026/2026-mid-year-rental-market-update",
+            "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/market-reports/housing-market/housing-supply-report/",
+            "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+            "https://www.ontario.ca/page/tracking-housing-supply-progress"
+          ]
+        }
+      ],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-us-southwest-chip-corridor",
+      "atlas_id": "119-PLACE-005",
+      "name": "U.S. Southwest Chip Corridor",
+      "coverage_tier": "Tier A",
+      "representation_tier": "structured_local_system",
+      "aliases": [
+        "us-southwest-chip-corridor",
+        "U.S. Southwest Chip Corridor",
+        "Southwest chip corridor",
+        "Arizona semiconductor corridor"
+      ],
+      "source_ids": [
+        "source-nist-chips",
+        "source-eia-electricity-data",
+        "source-eia-arizona-electricity-profile",
+        "source-arizona-department-water-resources",
+        "source-arizona-adwr-assured-water-supply",
+        "source-adwr-ama-management-plans",
+        "source-adwr-groundwater-site-inventory",
+        "source-water-quality-portal",
+        "source-epa-echo-web-services",
+        "source-arizona-corporation-commission-utilities",
+        "source-arizona-corporation-commission-edocket",
+        "source-acc-integrated-resource-planning",
+        "source-acc-biennial-transmission-assessment",
+        "source-eia-grid-monitor",
+        "source-nerc-reliability-assessments",
+        "source-ferc-elibrary",
+        "source-doe-grid-deployment-office",
+        "source-aps-resource-planning",
+        "source-aps-tsmc-service-territory-2026",
+        "source-srp-resource-planning",
+        "source-srp-2025-isp-actions-progress-report",
+        "source-srp-e67-large-load-price-plan-2025",
+        "source-srp-project-huckleberry-meta-mesa-online",
+        "source-usgs-water-services",
+        "source-central-arizona-project-planning",
+        "source-us-drought-monitor-data",
+        "source-chips-for-america-awards",
+        "source-sec-edgar-apis",
+        "source-sec-edgar-companyfacts-api",
+        "source-phoenix-planning-development",
+        "source-shape-phx-portal",
+        "source-phoenix-water-and-sewer",
+        "source-phoenix-2026-water-security-council-update",
+        "source-phoenix-drinking-water-quality-reports",
+        "source-phoenix-2025-water-quality-report",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement",
+        "source-phoenix-civil-water-sewer-acceptance",
+        "source-phoenix-north-3500-pud-2026",
+        "source-aca-tsmc-registered-technician-apprenticeship-2024",
+        "source-aca-nnme-southwest-2026",
+        "source-phoenix-2025-semiconductor-apprenticeship-agenda",
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-fab3-topping-out-2026",
+        "source-bls-oews-tables",
+        "source-bls-phoenix-oews-may-2025",
+        "source-acc-project-baccara-cec-2026",
+        "source-maricopa-project-baccara-mcp250007-2026",
+        "source-maricopa-baccara-board-action-2026",
+        "source-maricopa-baccara-proposed-air-permit-2026",
+        "source-maricopa-baccara-final-air-permit-2026",
+        "source-kjzz-project-baccara-mcp-vote-2026",
+        "source-maricopa-association-governments-open-data",
+        "source-eia-form-860-generator-data",
+        "source-eia-form-923-power-plant-operations",
+        "source-eia-form-930-hourly-grid-data",
+        "source-bls-qcew-data-files",
+        "source-census-building-permits-survey",
+        "source-census-acs-five-year-api",
+        "source-census-lehd-lodes",
+        "source-phoenix-capital-improvement-program",
+        "source-phoenix-opengov-procurement",
+        "source-maricopa-air-quality-permitting",
+        "source-arizona-deq-my-community",
+        "source-chips-nepa-compliance",
+        "source-arizona-commerce-semiconductor-program",
+        "source-tsmc-annual-reports"
+      ],
+      "route": "/atlas/places/us-southwest-chip-corridor/",
+      "next_artifact": "A governed place review resolving the first stated missing-data need: facility-level water demand.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-us-southwest-chip-corridor"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-005"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-005"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-005"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-005"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-california-autonomous-mobility",
+      "atlas_id": "119-PLACE-006",
+      "name": "California autonomous mobility",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_portrait",
+      "aliases": [
+        "california-autonomous-mobility",
+        "California autonomous mobility",
+        "112-REGION-001",
+        "California AV system"
+      ],
+      "source_ids": [
+        "source-56a-california-av-testing-2021-2022",
+        "source-56a-california-av-testing-2022-2023",
+        "source-56a-california-av-testing-2023-2024",
+        "source-55z-california-dmv-av-test-miles-2025",
+        "source-nhtsa-sgo-crash-reporting",
+        "source-california-dmv-av-miles-2024",
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-cpuc-av-advice-letter-status-2026",
+        "source-nhtsa-waymo-26e026-recall-2026",
+        "source-nhtsa-safety-recalls"
+      ],
+      "route": "/atlas/places/california-autonomous-mobility/",
+      "next_artifact": "A governed place review that defines stable entity scope, evidence gaps, current boundaries, and the next exact artifact.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-california-autonomous-mobility"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-006"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-006"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-006"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-006"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-louisiana-broadband-adoption",
+      "atlas_id": "119-PLACE-007",
+      "name": "Louisiana broadband adoption",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_portrait",
+      "aliases": [
+        "louisiana-broadband-adoption",
+        "Louisiana broadband adoption",
+        "112-REGION-002",
+        "Louisiana BEAD adoption"
+      ],
+      "source_ids": [
+        "source-57b-louisiana-nextlink-first-bead-tower",
+        "source-57a-louisiana-bead-nepa-approvals"
+      ],
+      "route": "/atlas/places/louisiana-broadband-adoption/",
+      "next_artifact": "Observed subscription or installation evidence for a fixed eligible-location cohort after service becomes available. | Observed subscription or take-rate evidence for a fixed eligible-location cohort after service availability.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-louisiana-broadband-adoption"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-007"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-007"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-007"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-007"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-montana-bead-delivery",
+      "atlas_id": "119-PLACE-008",
+      "name": "Montana BEAD delivery",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_portrait",
+      "aliases": [
+        "montana-bead-delivery",
+        "Montana BEAD delivery",
+        "112-REGION-003",
+        "Montana BEAD"
+      ],
+      "source_ids": [
+        "source-57e-montana-bead-faq-july-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57g-montana-cai-csv",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-bead-final-proposal-january-2026"
+      ],
+      "route": "/atlas/places/montana-bead-delivery/",
+      "next_artifact": "One complete public quarterly report with project identity, reporting period, locations, completion state, and outcome denominator.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-montana-bead-delivery"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-008"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-008"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-008"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-008"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-hanford-waste-treatment",
+      "atlas_id": "119-PLACE-009",
+      "name": "Hanford waste treatment",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_portrait",
+      "aliases": [
+        "hanford-waste-treatment",
+        "Hanford waste treatment",
+        "112-REGION-004",
+        "Hanford DFLAW system"
+      ],
+      "source_ids": [
+        "source-56x-hanford-first-ilaw-disposal-2026",
+        "source-56x-hanford-vitrification-100k-2026",
+        "source-57a-wa-ecology-hanford-overview",
+        "source-57b-ecology-wtp-byproduct-response-comments",
+        "source-57b-hanford-wtp-project-managers-may-2026",
+        "source-57d-hanford-wtp-consent-may-2026",
+        "source-57d-hanford-wtp-consent-june-2026",
+        "source-57d-hanford-wtp-consent-july-2026",
+        "source-57e-doe-hanford-acceptable-glass-startup",
+        "source-57e-hanford-dflaw-current-program-page",
+        "source-57f-hanford-wtp-pmm-february-2026",
+        "source-57g-hanford-dflaw-process-animation",
+        "source-57f-doe-hanford-100k-gallons-may-2026"
+      ],
+      "route": "/atlas/places/hanford-waste-treatment/",
+      "next_artifact": "A compatible material balance covering feed, immobilized glass, secondary waste, inventory change, losses, period, and reconciliation method.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-hanford-waste-treatment"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-009"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-009"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-009"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-009"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-amtrak-accessibility-and-reliability",
+      "atlas_id": "119-PLACE-010",
+      "name": "Amtrak accessibility and reliability",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_portrait",
+      "aliases": [
+        "amtrak-accessibility-and-reliability",
+        "Amtrak accessibility and reliability",
+        "112-REGION-005",
+        "Amtrak ADA and reliability system"
+      ],
+      "source_ids": [
+        "source-57a-dot-fy2027-performance-plan-fy2025-report",
+        "source-57b-amtrak-ada-progress-june-2026",
+        "source-57d-amtrak-ada-progress-december-2024",
+        "source-57d-amtrak-ada-progress-june-2025",
+        "source-57d-amtrak-ada-progress-december-2025",
+        "source-57e-amtrak-accessibility-progress-june-2026",
+        "source-57f-amtrak-stations-alp-fy24-29"
+      ],
+      "route": "/atlas/places/amtrak-accessibility-and-reliability/",
+      "next_artifact": "A final FRA-accepted closeout record tied to the PIDS program scope and completed deployment denominator. | A repeated named-asset reliability series with stable asset identity, period, denominator, failure definition, and repair outcome.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-amtrak-accessibility-and-reliability"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-010"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-010"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-010"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-010"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-nnsa-two-site-production",
+      "atlas_id": "119-PLACE-011",
+      "name": "NNSA two-site production",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_portrait",
+      "aliases": [
+        "nnsa-two-site-production",
+        "NNSA two-site production",
+        "112-REGION-006",
+        "NNSA two-site pit-production system"
+      ],
+      "source_ids": [
+        "source-56w-nnsa-fy2027-weapons-activities",
+        "source-56q-gao-23-104661-recommendation-status",
+        "source-56x-gao-nnsa-major-projects-2026",
+        "source-56y-srppf-contract-qa-2026",
+        "source-56z-nnsa-brookings-remarks-mar2024",
+        "source-56z-nnsa-hudson-remarks-jan2025",
+        "source-57a-nnsa-w87-1-first-production-unit",
+        "source-57f-nnsa-pit-production-current",
+        "source-57g-nnsa-lap4-30-base-construction",
+        "source-57f-nnsa-stockpile-current"
+      ],
+      "route": "/atlas/places/nnsa-two-site-production/",
+      "next_artifact": "A final enterprise-wide integrated cost and schedule baseline plus GAO closure evidence tied to recommendation GAO-23-104661. | A final accepted operating-capacity artifact linked to operating configuration, acceptance criteria, and observed qualified output. | A recurring qualified-output series with acceptance definition, facility identity, period, denominator, and comparable rate calculation.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-nnsa-two-site-production"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-011"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-011"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-011"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-011"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-south-australia-grid-storage",
+      "atlas_id": "119-PLACE-012",
+      "name": "South Australia grid storage",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_portrait",
+      "aliases": [
+        "south-australia-grid-storage",
+        "South Australia grid storage",
+        "112-REGION-007",
+        "South Australia battery system"
+      ],
+      "source_ids": [
+        "source-56e-hornsdale-aer-2022",
+        "source-56e-hornsdale-sa-current",
+        "source-56e-hornsdale-aemo-2019-preliminary",
+        "source-56e-hornsdale-aemo-2020-final",
+        "source-56h-hornsdale-final-project-report-2026",
+        "source-56j-hornsdale-h1-2024-operations",
+        "source-56e-dalrymple-arena-final-2021",
+        "source-56e-dalrymple-arena-retrospective-2021",
+        "source-56e-dalrymple-arena-operational-2020",
+        "source-56e-dalrymple-aemo-minimum-demand-2020",
+        "source-56g-dalrymple-electranet-tapr-2026",
+        "source-56h-dalrymple-aemo-constraint-report-2026",
+        "source-56j-dalrymple-aemo-march-2026"
+      ],
+      "route": "/atlas/places/south-australia-grid-storage/",
+      "next_artifact": "A governed place review that defines stable entity scope, evidence gaps, current boundaries, and the next exact artifact.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-south-australia-grid-storage"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-012"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-012"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-012"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-012"
+        },
+        {
+          "registry": "phase-192-global-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "192-PLACE-002"
+        }
+      ],
+      "editorial_versions": [
+        {
+          "record_id": "192-PLACE-002",
+          "article_sha256": "cfb4b2079b913719257b54ad23fc1b6de36400eef8929e32ac297027aff3c83c",
+          "route": "/reference/global-places-ii/south-australia-grid-storage/",
+          "approved": false,
+          "identity_evidence": {
+            "origin": "Inherited exact place anchor",
+            "candidate_name": "South Australia, Australia",
+            "identifier": null,
+            "scope": "State-level population and generation context; Dalrymple is a local network case and standing-offer prices cover specified customer classes",
+            "aliases": [
+              "South Australia",
+              "SA"
+            ],
+            "not_equivalent": [
+              "Dalrymple battery or its islanded network",
+              "Hornsdale battery",
+              "Every household electricity bill"
+            ],
+            "matched_source_indices": [
+              0,
+              1
+            ],
+            "historical_record_sha256": "9bcec8bba31b3f9441122c07df1fc2e9f072f5857beedd5c6247dd0e5e6aa35f",
+            "checked_date": "2026-09-14",
+            "disposition": "Inherited exact place identity; independent expanded-content acceptance pending",
+            "reviewer": null,
+            "decision_receipt": null
+          },
+          "source_urls": [
+            "https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/dec-2025",
+            "https://www.energy.gov.au/energy-data/australian-energy-statistics/data-charts/australian-electricity-generation-fuel-mix-calendar-year-2025",
+            "https://arena.gov.au/blog/electranet-south-australian-battery-shows-the-way-forward/",
+            "https://www.aer.gov.au/news/articles/news-releases/aer-releases-final-default-market-offer-2026-27"
+          ]
+        }
+      ],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-victoria-grid-storage",
+      "atlas_id": "119-PLACE-013",
+      "name": "Victoria grid storage",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_portrait",
+      "aliases": [
+        "victoria-grid-storage",
+        "Victoria grid storage",
+        "112-REGION-008",
+        "Victoria battery system"
+      ],
+      "source_ids": [
+        "source-56e-vbb-esv-fire-findings-2021",
+        "source-56e-vbb-aemo-registration-2021",
+        "source-56e-vbb-aemo-operational-2021",
+        "source-56e-vbb-esv-investigations"
+      ],
+      "route": "/atlas/places/victoria-grid-storage/",
+      "next_artifact": "A governed place review that defines stable entity scope, evidence gaps, current boundaries, and the next exact artifact.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-victoria-grid-storage"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-013"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-013"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-013"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-013"
+        },
+        {
+          "registry": "phase-192-global-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "192-PLACE-020"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-florida-utility-storage",
+      "atlas_id": "119-PLACE-014",
+      "name": "Florida utility storage",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_portrait",
+      "aliases": [
+        "florida-utility-storage",
+        "Florida utility storage",
+        "112-REGION-009",
+        "Florida Manatee storage system"
+      ],
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023",
+        "source-56c-manatee-psc-operating-data-2025",
+        "source-56c-manatee-psc-rate-testimony-2025",
+        "source-56d-manatee-fpl-data-request-2025",
+        "source-56d-manatee-fpl-site-plan-2025",
+        "source-56i-eia923-may2026-release",
+        "source-56j-manatee-eia923-plant-60014"
+      ],
+      "route": "/atlas/places/florida-utility-storage/",
+      "next_artifact": "A governed place review that defines stable entity scope, evidence gaps, current boundaries, and the next exact artifact.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-florida-utility-storage"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-014"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-014"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-014"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-014"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "canonical_id": "local-california-battery-safety",
+      "atlas_id": "119-PLACE-015",
+      "name": "California battery safety",
+      "coverage_tier": "Tier B",
+      "representation_tier": "editorial_portrait",
+      "aliases": [
+        "california-battery-safety",
+        "California battery safety",
+        "112-REGION-010",
+        "California utility-battery safety system"
+      ],
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023",
+        "source-56c-moss-landing-audit-2025",
+        "source-56c-moss-landing-audit-response-2025",
+        "source-56d-moss-landing-epa-response-timeline-2026",
+        "source-56d-moss-landing-epa-agreement-2025",
+        "source-56k-moss-landing-go167-corrective-action-2025",
+        "source-56c-gateway-cpuc-audit-2025",
+        "source-56c-gateway-cpuc-audit-response-2025",
+        "source-56d-gateway-cpuc-resolution-e5428-2025",
+        "source-56d-gateway-epa-bess-safety-2025"
+      ],
+      "route": "/atlas/places/california-battery-safety/",
+      "next_artifact": "A governed place review that defines stable entity scope, evidence gaps, current boundaries, and the next exact artifact.",
+      "membership": [
+        {
+          "registry": "phase-116-coverage-architecture",
+          "id": "local-california-battery-safety"
+        },
+        {
+          "registry": "phase-119-deep-project-place-atlas",
+          "id": "119-PLACE-015"
+        },
+        {
+          "registry": "phase-127-project-place-conversion-biographies",
+          "array": "place_biographies",
+          "id": "127-PLACE-015"
+        },
+        {
+          "registry": "phase-137-place-delivery-ledgers",
+          "array": "place_ledgers",
+          "id": "137-LEDGER-015"
+        },
+        {
+          "registry": "phase-170-fifteen-place-systems-atlas",
+          "array": "place_system_dossiers",
+          "id": "170-DOSSIER-015"
+        }
+      ],
+      "editorial_versions": [],
+      "full_v1_acceptance": null
+    }
+  ],
+  "additional_editorial_candidates": [
+    {
+      "kind": "Project",
+      "record_id": "191-PROJECT-012",
+      "article_sha256": "d15508098430e111f49718fde539b963d32528636d792b41f7e4b7cc11a38311",
+      "route": "/reference/international-projects/france-acquisition-1/",
+      "approved": false,
+      "identity_evidence": {
+        "candidate_name": "ITER — installation nucléaire de base n° 174",
+        "identifier": "INB 174",
+        "scope": "Experimental installation in Saint-Paul-lez-Durance, Bouches-du-Rhône, France",
+        "aliases": [
+          "ITER",
+          "ITER ORGANIZATION",
+          "Organisation internationale ITER"
+        ],
+        "not_equivalent": [
+          "The entire CEA Cadarache centre",
+          "The commune and its population",
+          "A commercial electricity-generating reactor"
+        ],
+        "matched_source_indices": [
+          0,
+          1
+        ],
+        "historical_record_sha256": "e6374a0f9c3287236cf5124c0c80102accc6bdac0babf814dce58dfea11c0141",
+        "checked_date": "2026-09-14",
+        "disposition": "Evidence-bound candidate; independent identity decision pending",
+        "reviewer": null,
+        "decision_receipt": null
+      },
+      "source_urls": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053981234",
+        "https://reglementation-controle.asnr.fr/reglementation/bulletin-officiel-de-l-asnr/installations-nucleaires/decisions-individuelles/decision-no-2026-dc-042-de-l-asnr-du-14-avril-2026",
+        "https://www.iter.org/35th-iter-council-support-overall-baseline-approach",
+        "https://www.itercadarache.cea.fr/Pages/Medias/Actualites/2026-10-ans-convois-ITER.aspx"
+      ],
+      "canonical_id": null,
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Project",
+      "record_id": "191-PROJECT-020",
+      "article_sha256": "9011d5adef5a77e5c2319d4e3cb29d75ca9308cfb061c70bc7bf5452b3d4335f",
+      "route": "/reference/international-projects/japan-acquisition-1/",
+      "approved": false,
+      "identity_evidence": {
+        "candidate_name": "JT-60SA — JT-60 Super Advanced",
+        "identifier": null,
+        "scope": "QST facility at 801-1 Mukoyama, Naka City, Ibaraki Prefecture, Japan",
+        "aliases": [
+          "JT-60SA",
+          "JT-60 Super Advanced"
+        ],
+        "not_equivalent": [
+          "ITER in France",
+          "The entire Naka municipality",
+          "An unspecified successor commercial fusion plant"
+        ],
+        "matched_source_indices": [
+          0,
+          1
+        ],
+        "historical_record_sha256": "3169e9fbb537e527234460616ec502485f8ffefa61bfb3467a206ae86cbf08d8",
+        "checked_date": "2026-09-14",
+        "disposition": "Evidence-bound candidate; independent identity decision pending",
+        "reviewer": null,
+        "decision_receipt": null
+      },
+      "source_urls": [
+        "https://www.qst.go.jp/site/press/20231024-1.html",
+        "https://www.qst.go.jp/site/jt60/4941.html",
+        "https://www.qst.go.jp/site/jt60/progress.html",
+        "https://www.qst.go.jp/site/press/20260831.html",
+        "https://www.qst.go.jp/site/news/on-site-labo.html"
+      ],
+      "canonical_id": null,
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "record_id": "192-PLACE-006",
+      "article_sha256": "cfe4fc9b1c809b1a13b2f4fcf753e1987e0812e2f7e9379677c1d2bad2d0835d",
+      "route": "/reference/global-places-ii/france-place-acquisition/",
+      "approved": false,
+      "identity_evidence": {
+        "candidate_name": "Saint-Paul-lès-Durance, Bouches-du-Rhône",
+        "identifier": "INSEE COG 13099",
+        "scope": "Commune boundary, geography at 2026-01-01; not the wider ITER commuting or logistics catchment",
+        "aliases": [
+          "Saint-Paul-lès-Durance",
+          "Saint-Paul-lez-Durance in the ITER decree"
+        ],
+        "not_equivalent": [
+          "The Cadarache research site",
+          "INB 174",
+          "All of Provence-Alpes-Côte d’Azur"
+        ],
+        "matched_source_indices": [
+          0,
+          3
+        ],
+        "historical_record_sha256": "240dbe07c8a07a77404e4e1b297a6b1a963a441d934c17e904b3b65807d5678d",
+        "checked_date": "2026-09-14",
+        "disposition": "Evidence-bound candidate; independent identity decision pending",
+        "reviewer": null,
+        "decision_receipt": null
+      },
+      "source_urls": [
+        "https://www.insee.fr/fr/metadonnees/geographie/commune/13099-saint-paul-les-durance",
+        "https://www.insee.fr/fr/statistiques/1405599?geo=COM-13099+FE-1",
+        "https://www.itercadarache.cea.fr/Pages/Medias/Actualites/2026-10-ans-convois-ITER.aspx",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053981234"
+      ],
+      "canonical_id": null,
+      "full_v1_acceptance": null
+    },
+    {
+      "kind": "Place",
+      "record_id": "192-PLACE-010",
+      "article_sha256": "43cfe0eae1546a6170b1de63772998eb5eec3b6a903faa7291e0cde94c367ab0",
+      "route": "/reference/global-places-ii/japan-place-acquisition/",
+      "approved": false,
+      "identity_evidence": {
+        "candidate_name": "那珂市 — Naka City, Ibaraki Prefecture",
+        "identifier": null,
+        "scope": "Municipality for population context; QST campus at 801-1 Mukoyama is a separate sub-area",
+        "aliases": [
+          "那珂市",
+          "Naka City"
+        ],
+        "not_equivalent": [
+          "那珂フュージョン科学技術研究所 — the research institute",
+          "JT-60SA — the device",
+          "A generic Japan-wide fusion cluster"
+        ],
+        "matched_source_indices": [
+          0,
+          1
+        ],
+        "historical_record_sha256": "4a2ed1b6aebb299848369183e7a5337b2c3a2bdb3df72057c1bc7c2d87de5d16",
+        "checked_date": "2026-09-14",
+        "disposition": "Evidence-bound candidate; independent identity decision pending",
+        "reviewer": null,
+        "decision_receipt": null
+      },
+      "source_urls": [
+        "https://www.qst.go.jp/site/jt60/4941.html",
+        "https://www.city.naka.lg.jp/gyousei/toukei/page000081.html",
+        "https://www.qst.go.jp/site/press/20260831.html",
+        "https://www.qst.go.jp/site/news/on-site-labo.html",
+        "https://www.qst.go.jp/site/jt60/progress.html"
+      ],
+      "canonical_id": null,
+      "full_v1_acceptance": null
+    }
+  ],
+  "followup": {
+    "montana_project_baseline": {
+      "records": [
+        {
+          "source_project_id": "CM61-BEAD-MT-4644",
+          "name": "AKCS - Montana - All Counties",
+          "subgrantee_id": "MT-BEAD-UEI-PX3CHN4WCPG3",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4655",
+          "name": "Blackfoot Telephone Cooperative Inc - Missoula - 1",
+          "subgrantee_id": "MT-BEAD-UEI-KU6LTS39K9N4",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4654",
+          "name": "Gallatin Wireless Internet-Park-1",
+          "subgrantee_id": "MT-BEAD-UEI-K9JTRFBU4DH1",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4685",
+          "name": "InlandMT-Rosebud-1",
+          "subgrantee_id": "MT-BEAD-UEI-FBU3ABAM3KE7",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4669",
+          "name": "Starlink Montana BEAD",
+          "subgrantee_id": "MT-BEAD-UEI-C6M7C2FLKER5",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4657",
+          "name": "Gallatin Wireless Internet-Stillwater-1",
+          "subgrantee_id": "MT-BEAD-UEI-K9JTRFBU4DH1",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4658",
+          "name": "Grizzly Broadband-Ravalli-1",
+          "subgrantee_id": "MT-BEAD-UEI-U3USRJUWGMN6",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4648",
+          "name": "InlandMT-LewisClark-1",
+          "subgrantee_id": "MT-BEAD-UEI-FBU3ABAM3KE7",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4673",
+          "name": "InterBel-FlatheadCounty-Application1",
+          "subgrantee_id": "MT-BEAD-UEI-VKTRZ9JF5RB3",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4672",
+          "name": "InterBel-FlatheadCounty-Application2",
+          "subgrantee_id": "MT-BEAD-UEI-VKTRZ9JF5RB3",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4670",
+          "name": "InterBel-LincolnCounty-Application2",
+          "subgrantee_id": "MT-BEAD-UEI-VKTRZ9JF5RB3",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4662",
+          "name": "InterBel-FlatheadCounty-Application3",
+          "subgrantee_id": "MT-BEAD-UEI-VKTRZ9JF5RB3",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4677",
+          "name": "LincTel Communications - Lewis and Clark - 2",
+          "subgrantee_id": "MT-BEAD-UEI-WFF1YRLNLA35",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4679",
+          "name": "Montana Internet Corporation-Broadwater County",
+          "subgrantee_id": "MT-BEAD-UEI-UN1WNQVV11X7",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4651",
+          "name": "Project Telephone Absarokee Town",
+          "subgrantee_id": "MT-BEAD-UEI-PTVEPVDJH2K5",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4686",
+          "name": "Range - Rosebud",
+          "subgrantee_id": "MT-BEAD-UEI-JJVXC1A7BYG6",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4668",
+          "name": "Range - Treasure",
+          "subgrantee_id": "MT-BEAD-UEI-JJVXC1A7BYG6",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4675",
+          "name": "Safelink Internet dba Anthem Broadband- Gallatin County",
+          "subgrantee_id": "MT-BEAD-UEI-DCJTA84G5C75",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4661",
+          "name": "Siyeh Communications - Flathead County",
+          "subgrantee_id": "MT-BEAD-UEI-KY5RFTW5TEU3",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4693",
+          "name": "Spectrum Pacific West - Missoula",
+          "subgrantee_id": "MT-BEAD-UEI-L5W6ZMH9GM51",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4692",
+          "name": "Spectrum Pacific West - Flathead",
+          "subgrantee_id": "MT-BEAD-UEI-L5W6ZMH9GM51",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4691",
+          "name": "Spectrum Pacific West - Cascade",
+          "subgrantee_id": "MT-BEAD-UEI-L5W6ZMH9GM51",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4689",
+          "name": "Spectrum Pacific West - Carbon",
+          "subgrantee_id": "MT-BEAD-UEI-L5W6ZMH9GM51",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4645",
+          "name": "Triangle Communications - Hill - 1",
+          "subgrantee_id": "MT-BEAD-UEI-KVGRDKXST245",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4256",
+          "name": "Inland MT- Pondera- 1",
+          "subgrantee_id": "MT-BEAD-UEI-FBU3ABAM3KE7",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4261",
+          "name": "Inland MT- Cascade and Fergus Counties",
+          "subgrantee_id": "MT-BEAD-UEI-FBU3ABAM3KE7",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4246",
+          "name": "VCN-BEAD-Whitehall",
+          "subgrantee_id": "MT-BEAD-UEI-T6NTQ7J74C95",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4218",
+          "name": "Ziply Fiber Pacific, LLC",
+          "subgrantee_id": "MT-BEAD-UEI-H14NYL2SZJF9",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4206",
+          "name": "Ziply Fiber of Montana LLC",
+          "subgrantee_id": "MT-BEAD-UEI-ZXZSJJQPHEB9",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4149",
+          "name": "KDS_Cascade_County_Fber_Project-CBG_1",
+          "subgrantee_id": "MT-BEAD-UEI-FEHNV13B9994",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4212",
+          "name": "KDS_Cascade_County_Fber_Project-CBG_2",
+          "subgrantee_id": "MT-BEAD-UEI-FEHNV13B9994",
+          "outcome_state": null,
+          "canonical_id": null
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4678",
+          "name": "Triangle Communications - Hill - 2",
+          "subgrantee_id": "MT-BEAD-UEI-KVGRDKXST245",
+          "outcome_state": null,
+          "canonical_id": null
+        }
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "boundary": "The registry is an approved-proposal identity and denominator baseline. Raw codes remain untranslated unless an official schema is joined. No row establishes executed agreement, construction, service, subscriber adoption, test passage, retention, affordability, state acceptance, or closeout.",
+      "next_action": "Reconcile each source project with the aggregate Montana casebook, define child/parent counting and review eligibility; do not count 32 source rows as 32 accepted dossiers."
+    },
+    "named_place_dossiers": [
+      {
+        "id": "178-DOSSIER-001",
+        "name": "Roseville, California",
+        "project_context": "Bosch silicon-carbide manufacturing facility",
+        "source_ids": [
+          "source-178-nist-bosch-roseville-sic-july-2026"
+        ],
+        "route": "/review/v1oct/atlas-depth/roseville-california/",
+        "canonical_id": null,
+        "next_action": "Resolve exact geographic scope and aliases before canonical registration or portfolio acceptance."
+      },
+      {
+        "id": "178-DOSSIER-002",
+        "name": "Genesee County, New York",
+        "project_context": "Edwards Vacuum semiconductor-grade dry-vacuum-pump activity",
+        "source_ids": [
+          "source-178-nist-chips-program-office-awards-august-2026"
+        ],
+        "route": "/review/v1oct/atlas-depth/genesee-county-new-york/",
+        "canonical_id": null,
+        "next_action": "Resolve exact geographic scope and aliases before canonical registration or portfolio acceptance."
+      },
+      {
+        "id": "178-DOSSIER-003",
+        "name": "Malta, New York",
+        "project_context": "GlobalFoundries fabrication and advanced-packaging expansion",
+        "source_ids": [
+          "source-178-nist-chips-program-office-awards-august-2026"
+        ],
+        "route": "/review/v1oct/atlas-depth/malta-new-york/",
+        "canonical_id": null,
+        "next_action": "Resolve exact geographic scope and aliases before canonical registration or portfolio acceptance."
+      },
+      {
+        "id": "178-DOSSIER-004",
+        "name": "Burlington, Vermont",
+        "project_context": "GlobalFoundries gallium-nitride-on-silicon facility revitalization",
+        "source_ids": [
+          "source-178-nist-chips-program-office-awards-august-2026"
+        ],
+        "route": "/review/v1oct/atlas-depth/burlington-vermont/",
+        "canonical_id": null,
+        "next_action": "Resolve exact geographic scope and aliases before canonical registration or portfolio acceptance."
+      },
+      {
+        "id": "178-DOSSIER-005",
+        "name": "Canton, New York",
+        "project_context": "Corning high-purity fused-silica and ultra-low-expansion glass expansion",
+        "source_ids": [
+          "source-178-nist-chips-program-office-awards-august-2026"
+        ],
+        "route": "/review/v1oct/atlas-depth/canton-new-york/",
+        "canonical_id": null,
+        "next_action": "Resolve exact geographic scope and aliases before canonical registration or portfolio acceptance."
+      },
+      {
+        "id": "178-DOSSIER-006",
+        "name": "Baytown, Texas",
+        "project_context": "Sumika ultra-high-purity isopropyl-alcohol manufacturing proposal",
+        "source_ids": [
+          "source-178-nist-chips-program-office-awards-august-2026"
+        ],
+        "route": "/review/v1oct/atlas-depth/baytown-texas/",
+        "canonical_id": null,
+        "next_action": "Resolve exact geographic scope and aliases before canonical registration or portfolio acceptance."
+      },
+      {
+        "id": "178-DOSSIER-007",
+        "name": "Easton, Pennsylvania",
+        "project_context": "Coherent silicon-carbide epitaxial-wafer and test-capability proposal",
+        "source_ids": [
+          "source-178-nist-chips-program-office-awards-august-2026"
+        ],
+        "route": "/review/v1oct/atlas-depth/easton-pennsylvania/",
+        "canonical_id": null,
+        "next_action": "Resolve exact geographic scope and aliases before canonical registration or portfolio acceptance."
+      },
+      {
+        "id": "178-DOSSIER-008",
+        "name": "Beaverton, Oregon",
+        "project_context": "Analog Devices mature-node semiconductor manufacturing proposal",
+        "source_ids": [
+          "source-178-nist-chips-program-office-awards-august-2026"
+        ],
+        "route": "/review/v1oct/atlas-depth/beaverton-oregon/",
+        "canonical_id": null,
+        "next_action": "Resolve exact geographic scope and aliases before canonical registration or portfolio acceptance."
+      },
+      {
+        "id": "178-DOSSIER-009",
+        "name": "Camas, Washington",
+        "project_context": "Analog Devices mature-node semiconductor manufacturing proposal",
+        "source_ids": [
+          "source-178-nist-chips-program-office-awards-august-2026"
+        ],
+        "route": "/review/v1oct/atlas-depth/camas-washington/",
+        "canonical_id": null,
+        "next_action": "Resolve exact geographic scope and aliases before canonical registration or portfolio acceptance."
+      },
+      {
+        "id": "178-DOSSIER-010",
+        "name": "Yakima Basin, Washington",
+        "project_context": "Yakima Project water-supply operations",
+        "source_ids": [
+          "source-177-usbr-yakima-water-forecast-august-2026"
+        ],
+        "route": "/review/v1oct/atlas-depth/yakima-basin-washington/",
+        "canonical_id": null,
+        "next_action": "Resolve exact geographic scope and aliases before canonical registration or portfolio acceptance."
+      }
+    ],
+    "jurisdiction_orientations": [
+      {
+        "id": "185-DOSSIER-001",
+        "title": "Australia: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-002",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-002",
+        "title": "European Union: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-003",
+        "geographic_unit_kind": "Supranational jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-003",
+        "title": "United Kingdom: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-004",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-004",
+        "title": "Germany: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-005",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-005",
+        "title": "France: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-006",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-006",
+        "title": "Netherlands: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-007",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-007",
+        "title": "Norway: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-008",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-008",
+        "title": "Sweden: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-009",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-009",
+        "title": "Japan: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-010",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-010",
+        "title": "South Korea: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-011",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-011",
+        "title": "Singapore: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-012",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-012",
+        "title": "India: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-013",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-013",
+        "title": "New Zealand: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-014",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-014",
+        "title": "Brazil: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-015",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-015",
+        "title": "Chile: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-016",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-016",
+        "title": "South Africa: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-017",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-017",
+        "title": "Mexico: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-018",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      },
+      {
+        "id": "185-DOSSIER-018",
+        "title": "United Arab Emirates: global receiving-system orientation",
+        "jurisdiction_id": "117-JURISDICTION-019",
+        "geographic_unit_kind": "National jurisdiction",
+        "state": "Built — authority routes mapped; place-wide stage not established",
+        "canonical_id": null
+      }
+    ],
+    "acquisition_dockets": [
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-002",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-006",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-007",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-008",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-009",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-010",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-011",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-012",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": "ITER — installation nucléaire de base n° 174"
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-013",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-014",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-015",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-016",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-017",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-018",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-019",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-020",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": "JT-60SA — JT-60 Super Advanced"
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-021",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-022",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-023",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-024",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-025",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-026",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-027",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-028",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-029",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-030",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-031",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-032",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-033",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-034",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-035",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-036",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-037",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-038",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-039",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Project",
+        "id": "191-PROJECT-040",
+        "registry": "phase-191-international-named-project-conversion-cohort",
+        "name": null,
+        "record_kind": "Named-project acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-003",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-004",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-005",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-006",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": "Saint-Paul-lès-Durance, Bouches-du-Rhône"
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-007",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-008",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-009",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-010",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": "那珂市 — Naka City, Ibaraki Prefecture"
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-011",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-012",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-013",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-014",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-015",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-016",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-017",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-018",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      },
+      {
+        "kind": "Place",
+        "id": "192-PLACE-019",
+        "registry": "phase-192-global-place-systems-atlas",
+        "name": null,
+        "record_kind": "Named place-system acquisition docket",
+        "canonical_id": null,
+        "current_editorial_candidate": null
+      }
+    ],
+    "unnamed_target_contracts": [
+      {
+        "id": "197-GAP-001",
+        "kind": "Named project",
+        "region": "Sub-Saharan Africa",
+        "topic": "Agriculture and Bioeconomy",
+        "name": null
+      },
+      {
+        "id": "197-GAP-002",
+        "kind": "Receiving place system",
+        "region": "Sub-Saharan Africa",
+        "topic": "Agriculture and Bioeconomy",
+        "name": null
+      },
+      {
+        "id": "197-GAP-003",
+        "kind": "Named project",
+        "region": "Latin America and the Caribbean",
+        "topic": "Agriculture and Bioeconomy",
+        "name": null
+      },
+      {
+        "id": "197-GAP-004",
+        "kind": "Receiving place system",
+        "region": "Latin America and the Caribbean",
+        "topic": "Agriculture and Bioeconomy",
+        "name": null
+      },
+      {
+        "id": "197-GAP-005",
+        "kind": "Named project",
+        "region": "South Asia",
+        "topic": "Agriculture and Bioeconomy",
+        "name": null
+      },
+      {
+        "id": "197-GAP-006",
+        "kind": "Receiving place system",
+        "region": "South Asia",
+        "topic": "Agriculture and Bioeconomy",
+        "name": null
+      },
+      {
+        "id": "197-GAP-007",
+        "kind": "Named project",
+        "region": "Southeast Asia",
+        "topic": "Agriculture and Bioeconomy",
+        "name": null
+      },
+      {
+        "id": "197-GAP-008",
+        "kind": "Receiving place system",
+        "region": "Southeast Asia",
+        "topic": "Agriculture and Bioeconomy",
+        "name": null
+      },
+      {
+        "id": "197-GAP-009",
+        "kind": "Named project",
+        "region": "Middle East and North Africa",
+        "topic": "Agriculture and Bioeconomy",
+        "name": null
+      },
+      {
+        "id": "197-GAP-010",
+        "kind": "Receiving place system",
+        "region": "Middle East and North Africa",
+        "topic": "Agriculture and Bioeconomy",
+        "name": null
+      },
+      {
+        "id": "197-GAP-011",
+        "kind": "Named project",
+        "region": "Pacific and small-island states",
+        "topic": "Agriculture and Bioeconomy",
+        "name": null
+      },
+      {
+        "id": "197-GAP-012",
+        "kind": "Receiving place system",
+        "region": "Pacific and small-island states",
+        "topic": "Agriculture and Bioeconomy",
+        "name": null
+      },
+      {
+        "id": "197-GAP-013",
+        "kind": "Named project",
+        "region": "Sub-Saharan Africa",
+        "topic": "AI for Science",
+        "name": null
+      },
+      {
+        "id": "197-GAP-014",
+        "kind": "Receiving place system",
+        "region": "Sub-Saharan Africa",
+        "topic": "AI for Science",
+        "name": null
+      },
+      {
+        "id": "197-GAP-015",
+        "kind": "Named project",
+        "region": "Latin America and the Caribbean",
+        "topic": "AI for Science",
+        "name": null
+      },
+      {
+        "id": "197-GAP-016",
+        "kind": "Receiving place system",
+        "region": "Latin America and the Caribbean",
+        "topic": "AI for Science",
+        "name": null
+      },
+      {
+        "id": "197-GAP-017",
+        "kind": "Named project",
+        "region": "South Asia",
+        "topic": "AI for Science",
+        "name": null
+      },
+      {
+        "id": "197-GAP-018",
+        "kind": "Receiving place system",
+        "region": "South Asia",
+        "topic": "AI for Science",
+        "name": null
+      },
+      {
+        "id": "197-GAP-019",
+        "kind": "Named project",
+        "region": "Southeast Asia",
+        "topic": "AI for Science",
+        "name": null
+      },
+      {
+        "id": "197-GAP-020",
+        "kind": "Receiving place system",
+        "region": "Southeast Asia",
+        "topic": "AI for Science",
+        "name": null
+      },
+      {
+        "id": "197-GAP-021",
+        "kind": "Named project",
+        "region": "Middle East and North Africa",
+        "topic": "AI for Science",
+        "name": null
+      },
+      {
+        "id": "197-GAP-022",
+        "kind": "Receiving place system",
+        "region": "Middle East and North Africa",
+        "topic": "AI for Science",
+        "name": null
+      },
+      {
+        "id": "197-GAP-023",
+        "kind": "Named project",
+        "region": "Pacific and small-island states",
+        "topic": "AI for Science",
+        "name": null
+      },
+      {
+        "id": "197-GAP-024",
+        "kind": "Receiving place system",
+        "region": "Pacific and small-island states",
+        "topic": "AI for Science",
+        "name": null
+      },
+      {
+        "id": "197-GAP-025",
+        "kind": "Named project",
+        "region": "Sub-Saharan Africa",
+        "topic": "Discovery Technologies",
+        "name": null
+      },
+      {
+        "id": "197-GAP-026",
+        "kind": "Receiving place system",
+        "region": "Sub-Saharan Africa",
+        "topic": "Discovery Technologies",
+        "name": null
+      },
+      {
+        "id": "197-GAP-027",
+        "kind": "Named project",
+        "region": "Latin America and the Caribbean",
+        "topic": "Discovery Technologies",
+        "name": null
+      },
+      {
+        "id": "197-GAP-028",
+        "kind": "Receiving place system",
+        "region": "Latin America and the Caribbean",
+        "topic": "Discovery Technologies",
+        "name": null
+      },
+      {
+        "id": "197-GAP-029",
+        "kind": "Named project",
+        "region": "South Asia",
+        "topic": "Discovery Technologies",
+        "name": null
+      },
+      {
+        "id": "197-GAP-030",
+        "kind": "Receiving place system",
+        "region": "South Asia",
+        "topic": "Discovery Technologies",
+        "name": null
+      },
+      {
+        "id": "197-GAP-031",
+        "kind": "Named project",
+        "region": "Southeast Asia",
+        "topic": "Discovery Technologies",
+        "name": null
+      },
+      {
+        "id": "197-GAP-032",
+        "kind": "Receiving place system",
+        "region": "Southeast Asia",
+        "topic": "Discovery Technologies",
+        "name": null
+      },
+      {
+        "id": "197-GAP-033",
+        "kind": "Named project",
+        "region": "Middle East and North Africa",
+        "topic": "Discovery Technologies",
+        "name": null
+      },
+      {
+        "id": "197-GAP-034",
+        "kind": "Receiving place system",
+        "region": "Middle East and North Africa",
+        "topic": "Discovery Technologies",
+        "name": null
+      },
+      {
+        "id": "197-GAP-035",
+        "kind": "Named project",
+        "region": "Pacific and small-island states",
+        "topic": "Discovery Technologies",
+        "name": null
+      },
+      {
+        "id": "197-GAP-036",
+        "kind": "Receiving place system",
+        "region": "Pacific and small-island states",
+        "topic": "Discovery Technologies",
+        "name": null
+      },
+      {
+        "id": "197-GAP-037",
+        "kind": "Named project",
+        "region": "Sub-Saharan Africa",
+        "topic": "Quantum",
+        "name": null
+      },
+      {
+        "id": "197-GAP-038",
+        "kind": "Receiving place system",
+        "region": "Sub-Saharan Africa",
+        "topic": "Quantum",
+        "name": null
+      },
+      {
+        "id": "197-GAP-039",
+        "kind": "Named project",
+        "region": "Latin America and the Caribbean",
+        "topic": "Quantum",
+        "name": null
+      },
+      {
+        "id": "197-GAP-040",
+        "kind": "Receiving place system",
+        "region": "Latin America and the Caribbean",
+        "topic": "Quantum",
+        "name": null
+      },
+      {
+        "id": "197-GAP-041",
+        "kind": "Named project",
+        "region": "South Asia",
+        "topic": "Quantum",
+        "name": null
+      },
+      {
+        "id": "197-GAP-042",
+        "kind": "Receiving place system",
+        "region": "South Asia",
+        "topic": "Quantum",
+        "name": null
+      },
+      {
+        "id": "197-GAP-043",
+        "kind": "Named project",
+        "region": "Southeast Asia",
+        "topic": "Quantum",
+        "name": null
+      },
+      {
+        "id": "197-GAP-044",
+        "kind": "Receiving place system",
+        "region": "Southeast Asia",
+        "topic": "Quantum",
+        "name": null
+      },
+      {
+        "id": "197-GAP-045",
+        "kind": "Named project",
+        "region": "Middle East and North Africa",
+        "topic": "Quantum",
+        "name": null
+      },
+      {
+        "id": "197-GAP-046",
+        "kind": "Receiving place system",
+        "region": "Middle East and North Africa",
+        "topic": "Quantum",
+        "name": null
+      },
+      {
+        "id": "197-GAP-047",
+        "kind": "Named project",
+        "region": "Pacific and small-island states",
+        "topic": "Quantum",
+        "name": null
+      },
+      {
+        "id": "197-GAP-048",
+        "kind": "Receiving place system",
+        "region": "Pacific and small-island states",
+        "topic": "Quantum",
+        "name": null
+      }
+    ],
+    "non_project_case_contexts": [
+      {
+        "id": "186-CASE-001",
+        "kind": "International authority-to-delivery case",
+        "identity": "Infrastructure Australia / Australia / Infrastructure, environment and territorial delivery",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-003",
+        "kind": "International authority-to-delivery case",
+        "identity": "Eurostat / European Union / Official statistics and measurement",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-004",
+        "kind": "Repository-bound named case",
+        "identity": "signal-cfia-2026-plant-novel-trait-assessment-rules",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-005",
+        "kind": "International authority-to-delivery case",
+        "identity": "UK Research and Innovation / United Kingdom / Science, technology and industrial innovation",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-007",
+        "kind": "International authority-to-delivery case",
+        "identity": "German Environment Agency / Germany / Infrastructure, environment and territorial delivery",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-009",
+        "kind": "International authority-to-delivery case",
+        "identity": "ADEME / France / Science, technology and industrial innovation",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-011",
+        "kind": "International authority-to-delivery case",
+        "identity": "Statistics Netherlands / Netherlands / Official statistics and measurement",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-013",
+        "kind": "International authority-to-delivery case",
+        "identity": "Norwegian Water Resources and Energy Directorate / Norway / Energy, utility and system operation",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-015",
+        "kind": "International authority-to-delivery case",
+        "identity": "Vinnova / Sweden / Science, technology and industrial innovation",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-017",
+        "kind": "International authority-to-delivery case",
+        "identity": "New Energy and Industrial Technology Development Organization / Japan / Science, technology and industrial innovation",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-019",
+        "kind": "International authority-to-delivery case",
+        "identity": "Korean Statistical Information Service / South Korea / Official statistics and measurement",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-021",
+        "kind": "International authority-to-delivery case",
+        "identity": "Singapore Department of Statistics / Singapore / Official statistics and measurement",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-023",
+        "kind": "International authority-to-delivery case",
+        "identity": "Open Government Data Platform India / India / Official statistics and measurement",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-025",
+        "kind": "International authority-to-delivery case",
+        "identity": "Ministry of Business, Innovation and Employment / New Zealand / Infrastructure, environment and territorial delivery",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-027",
+        "kind": "International authority-to-delivery case",
+        "identity": "National Electric Energy Agency / Brazil / Energy, utility and system operation",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-029",
+        "kind": "International authority-to-delivery case",
+        "identity": "Ministry of Energy / Chile / Science, technology and industrial innovation",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-031",
+        "kind": "International authority-to-delivery case",
+        "identity": "Council for Scientific and Industrial Research / South Africa / Science, technology and industrial innovation",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      },
+      {
+        "id": "186-CASE-033",
+        "kind": "International authority-to-delivery case",
+        "identity": "INEGI / Mexico / Official statistics and measurement",
+        "disposition": "Authority or signal context, not an additional resolved project identity"
+      }
+    ]
+  },
+  "mandatory_scope": {
+    "portfolio_gate": {
+      "promotion_gate_id": "204-GATE-10-PORTFOLIO-TARGETS",
+      "slug": "portfolio-targets",
+      "title": "100-project and 70-place target attainment",
+      "state": "Held",
+      "derived_pass": false,
+      "evidence": "Phase 197 creates acquisition contracts; it does not establish that either portfolio target has been reached.",
+      "receipt_id": null,
+      "next_action": "Reconcile exact project/place identities after later acquisitions; never count target contracts as entities.",
+      "route": "/review/v1reference/v1-public-reference-edition-promotion-gate/portfolio-targets/"
+    },
+    "translations": [
+      {
+        "id": "202-EDITION-003",
+        "topic_id": "topic-advanced-manufacturing",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-004",
+        "topic_id": "topic-advanced-manufacturing",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-007",
+        "topic_id": "topic-agriculture-and-bioeconomy",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-008",
+        "topic_id": "topic-agriculture-and-bioeconomy",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-011",
+        "topic_id": "topic-ai-for-science",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-012",
+        "topic_id": "topic-ai-for-science",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-015",
+        "topic_id": "topic-aviation",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-016",
+        "topic_id": "topic-aviation",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-019",
+        "topic_id": "topic-chips-and-compute",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-020",
+        "topic_id": "topic-chips-and-compute",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-023",
+        "topic_id": "topic-climate",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-024",
+        "topic_id": "topic-climate",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-027",
+        "topic_id": "topic-critical-minerals",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-028",
+        "topic_id": "topic-critical-minerals",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-031",
+        "topic_id": "topic-cybersecurity",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-032",
+        "topic_id": "topic-cybersecurity",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-035",
+        "topic_id": "topic-discovery-technologies",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-036",
+        "topic_id": "topic-discovery-technologies",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-039",
+        "topic_id": "topic-energy",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-040",
+        "topic_id": "topic-energy",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-043",
+        "topic_id": "topic-finance-and-risk",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-044",
+        "topic_id": "topic-finance-and-risk",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-047",
+        "topic_id": "topic-human-futures",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-048",
+        "topic_id": "topic-human-futures",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-051",
+        "topic_id": "topic-mobility",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-052",
+        "topic_id": "topic-mobility",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-055",
+        "topic_id": "topic-policy-and-standards",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-056",
+        "topic_id": "topic-policy-and-standards",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-059",
+        "topic_id": "topic-quantum",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-060",
+        "topic_id": "topic-quantum",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-063",
+        "topic_id": "topic-space",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-064",
+        "topic_id": "topic-space",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-067",
+        "topic_id": "topic-water",
+        "language": "French",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      },
+      {
+        "id": "202-EDITION-068",
+        "topic_id": "topic-water",
+        "language": "Spanish",
+        "translated_content": null,
+        "human_editor": null,
+        "subject_reviewer": null,
+        "approval_receipt_id": null
+      }
+    ],
+    "annual_edition_counts": {
+      "report_package_records": 58,
+      "topic_chapters": 17,
+      "cross_system_findings": 12,
+      "named_case_profiles": 24,
+      "method_appendices": 5,
+      "public_release_decisions": 0,
+      "causal_findings": 0,
+      "scores_or_ranks": 0
+    }
+  },
+  "broader_array_discovery": {
+    "root_json_files_scanned": 362,
+    "method": "Top-level array-key discovery only; matching is not identity admission and may include inactive schemas.",
+    "records": [
+      {
+        "path": "app/src/data/phase-100-international-order-multilateral-cooperation-global-commons-cross-border-risk-shared-human-futures-registry.json",
+        "sha256": "e52bd0f8cd5df7419e45cacf6ebb2d38c2b067bb6a59c147fe71e4ff8e92e800",
+        "arrays": [
+          {
+            "key": "migration_displacement_refugee_asylum_humanitarian_protection_shared_responsibility_registers",
+            "rows": 8
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-119-deep-project-place-atlas.json",
+        "sha256": "cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496",
+        "arrays": [
+          {
+            "key": "projects",
+            "rows": 24
+          },
+          {
+            "key": "places",
+            "rows": 15
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-127-project-place-conversion-biographies.json",
+        "sha256": "e3a17ccce3eaede47dd828e37992d01c65a86f555e87c636ec21fcd571020ae6",
+        "arrays": [
+          {
+            "key": "project_stage_taxonomy",
+            "rows": 8
+          },
+          {
+            "key": "place_dimension_taxonomy",
+            "rows": 6
+          },
+          {
+            "key": "project_biographies",
+            "rows": 24
+          },
+          {
+            "key": "place_biographies",
+            "rows": 15
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-136-named-project-chronicles.json",
+        "sha256": "08d45843f6190de6a8622c1ad6d1740bac5a6af1c5ac9881d88aa9455f15eec2",
+        "arrays": [
+          {
+            "key": "project_chronicles",
+            "rows": 24
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-137-place-delivery-ledgers.json",
+        "sha256": "16e49098cbfdb07afa9855b84883fc92e7fc4714f717f5098970672e867e12c7",
+        "arrays": [
+          {
+            "key": "place_ledgers",
+            "rows": 15
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-170-fifteen-place-systems-atlas.json",
+        "sha256": "6b1df6201c95bdfe234e172c8cd670dc2361152c1bd3c55b9675f936412e507d",
+        "arrays": [
+          {
+            "key": "place_system_dossiers",
+            "rows": 15
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-178-systems-atlas-and-compendium-depth-expansion.json",
+        "sha256": "dc1790751b66dcf48a7829738826e5051ebbaad66eed1169cc628af26b8cf4f4",
+        "arrays": [
+          {
+            "key": "place_system_dossiers",
+            "rows": 10
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-185-global-place-systems-atlas-i.json",
+        "sha256": "6accf42689598e6b691af6871fa70dc235eac196bf266ac3a167b3faa9a2c07e",
+        "arrays": [
+          {
+            "key": "place_system_dossiers",
+            "rows": 18
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-186-named-delivery-case-atlas-ii.json",
+        "sha256": "dc3aaa942280f339026ea5e01cfdefc0822d8b9886cda7c8e46649b704c67ae2",
+        "arrays": [
+          {
+            "key": "delivery_case_files",
+            "rows": 34
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-191-international-named-project-conversion-cohort.json",
+        "sha256": "0f57d402c94cf3ae867fedcbe0faaacf119264a559aee4ffe229dd84cf12ac71",
+        "arrays": [
+          {
+            "key": "project_conversion_packets",
+            "rows": 40
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-192-global-place-systems-atlas.json",
+        "sha256": "2d0d9c46823e0716fb9f1ccda364b929f8172e5be1a0706fb1db17d1ef2d3ecc",
+        "arrays": [
+          {
+            "key": "place_system_dossiers",
+            "rows": 20
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-198-failure-delay-reversal-correction-casebooks.json",
+        "sha256": "79d2e69f7d372515aa7ea0523e251145862f263d4eace3bc6e3fe218509c117f",
+        "arrays": [
+          {
+            "key": "casebook_packets",
+            "rows": 24
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-57g-montana-project-cohort-registry.json",
+        "sha256": "e3078cdb3696a73ce69160d30977002d02cbb463dbd2256a5cf0774f720472fa",
+        "arrays": [
+          {
+            "key": "projects",
+            "rows": 32
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-57h-montana-field-provenance-version-matrix.json",
+        "sha256": "694eb8bebe85a745567d42e2fb896645f3b903f023a5339e103a0beaed0d884a",
+        "arrays": [
+          {
+            "key": "project_versions",
+            "rows": 32
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-57i-montana-schema-migration-project-quarter-intake.json",
+        "sha256": "c5cef5340726801650cad6f3ceeae55d8ee01f64c4c3b003b5d68bbec97262ce",
+        "arrays": [
+          {
+            "key": "project_quarter_envelopes",
+            "rows": 32
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-57j-montana-migration-envelope-rejection-taxonomy.json",
+        "sha256": "66c47d92df0cdc2952279eede77e6fe1b03e5f0ee61454eda89d91bee9280a43",
+        "arrays": [
+          {
+            "key": "project_envelope_tests",
+            "rows": 32
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-57k-montana-project-field-compatibility-matrix.json",
+        "sha256": "4ae221212106453b85d3ab2986b9ca527a1c301eb6e4240f5c9af13166f58599",
+        "arrays": [
+          {
+            "key": "project_envelope_requirement_checks",
+            "rows": 224
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-80-public-investment-portfolios-transition-pathways-place-based-capacity-registry.json",
+        "sha256": "438b768677c21df13f4b846115f312f95c61fb07b904fe43c405670ec88266a8",
+        "arrays": [
+          {
+            "key": "place_based_obligations",
+            "rows": 12
+          },
+          {
+            "key": "place_based_delivery_capacity_transition_ledgers",
+            "rows": 8
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-82-household-capability-care-infrastructure-everyday-security-registry.json",
+        "sha256": "30e0ba7813cc1683074cbfdcddf451e0eae7237fe3cc53008fecbf657bcaa3d9",
+        "arrays": [
+          {
+            "key": "displacement_mobility_safeguards",
+            "rows": 12
+          },
+          {
+            "key": "neighborhood_access_displacement_crisis_recovery_ledgers",
+            "rows": 8
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-83-community-institutions-social-infrastructure-collective-resilience-registry.json",
+        "sha256": "65434c6132ddd6a691314c498d23113fbb5be4f6028a2693083fef296dc029d6",
+        "arrays": [
+          {
+            "key": "institution_closure_displacement_safeguards",
+            "rows": 12
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-85-housing-shelter-land-use-place-stability-registry.json",
+        "sha256": "86a1b4f24ce4a275f43c2ef58ae480774cd0876b0d020b866c56c44c352bfc4e",
+        "arrays": [
+          {
+            "key": "place_stability_gates",
+            "rows": 22
+          },
+          {
+            "key": "housing_stability_displacement_protection_dimensions",
+            "rows": 12
+          },
+          {
+            "key": "long_horizon_place_stability_tests",
+            "rows": 12
+          },
+          {
+            "key": "place_states",
+            "rows": 6
+          },
+          {
+            "key": "homelessness_shelter_supportive_housing_displacement_registers",
+            "rows": 8
+          },
+          {
+            "key": "retrofit_climate_disaster_reconstruction_place_stability_ledgers",
+            "rows": 8
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-88-work-labor-livelihoods-economic-democracy-registry.json",
+        "sha256": "6212e7bdfc695e562f946b6e172ddca6c1ce8969a357155ee2021e8b401c6426",
+        "arrays": [
+          {
+            "key": "workplace_health_safety_continuity_safeguards",
+            "rows": 12
+          },
+          {
+            "key": "displacement_transition_safeguards",
+            "rows": 12
+          },
+          {
+            "key": "livelihood_security_displacement_just_transition_long_horizon_ledgers",
+            "rows": 8
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/phase-95-infrastructure-construction-buildings-public-works-territorial-systems-delivery-registry.json",
+        "sha256": "d123d0d284f986b151622993b83df4dc2c59df1260e6081facd861b1d6ac5d99",
+        "arrays": [
+          {
+            "key": "project_gates",
+            "rows": 22
+          },
+          {
+            "key": "project_design_procurement_classes",
+            "rows": 14
+          },
+          {
+            "key": "project_definition_design_delivery_dimensions",
+            "rows": 12
+          },
+          {
+            "key": "project_procurement_governance_safeguards",
+            "rows": 12
+          },
+          {
+            "key": "project_design_engineering_cost_estimation_permitting_procurement_ledgers",
+            "rows": 8
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/v03-editorial-program.json",
+        "sha256": "af80bf6bdb01ac4d89a5c528c06838385a6b07a2140f522cf4375ecd5e28166c",
+        "arrays": [
+          {
+            "key": "casebooks",
+            "rows": 8
+          }
+        ]
+      },
+      {
+        "path": "app/src/data/v031-content-expansion.json",
+        "sha256": "b63c40812fa85578db6bd799ba698896c6b4b5f54b838bb9e764c8997ef9ee6a",
+        "arrays": [
+          {
+            "key": "casebooks",
+            "rows": 16
+          }
+        ]
+      }
+    ]
+  },
+  "remaining_census_work": [
+    "Resolve the 32 source-level Montana projects and ten named Phase 178 place dossiers.",
+    "Disposition the 18 jurisdiction orientations and inspect other discovery results for eligible distinct entities.",
+    "Record independent identity and acceptance decisions for the four added editorial candidates and applicable existing content.",
+    "Compute accepted totals and target gaps only after coverage and parent/child eligibility are resolved."
+  ]
+}

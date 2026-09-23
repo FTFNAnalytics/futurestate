@@ -35,3 +35,9 @@ The tested stylesheet was `/_astro/BaseLayout.A-W7na4h.css`, SHA-256 `521307103f
 The same browser pass confirmed the Hornsdale catalog card's September 22 revision and new evidence limitation. On `/method/editorial-review/`, all three latest September 22 pilot summaries and their target anchors were present, along with the explicit feature hold and three preserved September 14 extraction disclosures. Clicking the Hornsdale detail link changed the fragment to `#211-HORNSDALE-ACCESS-2026-09-22` and scrolled that receipt to the viewport top.
 
 This resolves the observed search-control focus/boundary defect and verifies the bounded pilot navigation. It does not supply a participant, independent acceptance, all-route focus audit, screen-reader run or demonstrated 200% enlargement. The five-reader matrix remains empty.
+
+## Later zoom-test setup stopped
+
+During the five-answer source-review continuation, native app discovery succeeded while local command validation ran separately. A request to open Firefox for a separate zoom-test window timed out. The follow-up window-discovery call then reported that the user had stopped Computer Use with the physical Escape key. No new target window was verified, no zoom change or candidate-page inspection occurred, and no local preview server was started for this attempt.
+
+UI automation stopped immediately and is not resumed by the subsequent automatic build continuation. The possible browser-launch outcome remains unconfirmed; no window was closed or otherwise manipulated to guess at recovery. The already-running command-line validation is a separate process. **200% zoom and assistive-technology acceptance remain untested**, and this setup attempt supplies no additional accessibility pass.

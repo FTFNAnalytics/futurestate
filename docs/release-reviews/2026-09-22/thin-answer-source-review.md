@@ -48,6 +48,8 @@ Output contains 16,625 application HTML pages, 157 top-level JSON exports, 325 u
 
 The dependency lockfile is unchanged; this was a full current-workspace run, not a new clean installation. No new browser, assistive-technology or participant test is claimed. The five temporary PDF page renders were removed after inspection; original FDA PDFs and their verified hashes remain intact and can regenerate them. Human review, participant/accessibility acceptance, owner decisions, future source dates and any actual post-launch month remain required. No hosted action occurred.
 
-## Remaining answer queue
+## Remaining answer queue at this checkpoint
 
 Five answers still lack an explicit September 22 assisted first pass: `195-BRIEF-054` (NNSA enterprise baseline), `195-BRIEF-067` (Hanford material balance), `195-BRIEF-051` (Amtrak PIDS closeout), `195-BRIEF-027` (critical-minerals qualified supply) and `195-BRIEF-039` (battery service). Their existing drafts and next-artifact requirements remain in the selection packet. This inventory is not a fresh source check or a reason to run the separate future evidence gates early. Independent review remains outstanding for all twelve answers, including the seven with assisted checks.
+
+Later same-day work addresses this queue in the [separate five-answer review](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/remaining-answer-source-review.md>). Its evidence, access limits and validation state are separate from the checkpoint above; it supplies no independent approvals.

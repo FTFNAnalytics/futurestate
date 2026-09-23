@@ -48,6 +48,8 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'src/content/updates/2026-09-22-remaining-answer-source-review.json',
+  'scripts/assert-current-answer-sources.mjs',
   'src/content/updates/2026-09-22-thin-answer-source-review.json',
   'src/data/source-artifact-labels.json',
   'src/lib/source-artifact-labels.mjs',

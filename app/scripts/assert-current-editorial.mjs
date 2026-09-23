@@ -33,3 +33,4 @@ assert.throws(()=>verifyClassifiedInput({...args,excerpt:'Absent review excerpt 
 await import('./assert-current-reading-editions.mjs');
 await import('./assert-current-pilot-followups.mjs');
 await import('./assert-current-reader-finishing.mjs');
+await import('./assert-current-answer-sources.mjs');

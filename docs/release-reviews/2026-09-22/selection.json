@@ -1,6 +1,6 @@
 {
   "prepared_date": "2026-09-22",
-  "candidate_digest": "d59f1c3b2b99661b6c439017f030ddb98f5d310ad3cd2696f09992a5cbe0cea0",
+  "candidate_digest": "65a554bf75f29f42f94bcc1d9f62603c4b0ab423e858f7e0a72d26b6f3c26aec",
   "source_checkpoint": "7b0e7c412df53c1653b5477c29271223f1be689b",
   "checkpoint_boundary": "Pre-reconciliation recovery baseline; not the final revised source commit",
   "scope_approved": false,
@@ -1361,28 +1361,43 @@
     {
       "id": "195-BRIEF-054",
       "kind": "Question",
-      "title": "Has NNSA resolved the enterprise cost-and-schedule requirement?",
+      "title": "Has NNSA resolved the pit-production cost-and-schedule requirements?",
       "route": "/reference/questions/policy-and-standards--116-q-054/",
-      "article_sha256": "168e9836a2fabcd75a7ba492c4a259a0587f541cf61ed9481a6e9248146334b4",
-      "rendered_record_sha256": "a28fef343b20fce2e0978b57207eda41aa4143b6f8d3cb1c51919e693c4631b1",
+      "article_sha256": "35c56ad7743e1b82711fc15379b1ea500142e369e0c5be070b9a5d0fb3ec6303",
+      "rendered_record_sha256": "574ec5916840aaaa3f7416e47a85ac317eea7491681e42717f0be628afc42161",
       "authored_date": "2026-09-14",
-      "updated_date": null,
+      "updated_date": "2026-09-22",
       "scope": "Proposed review selection; owner release scope not approved",
-      "review_state": "Existing source-checked draft; independent claim review pending",
+      "review_state": "September 22 bounded answer source review completed; independent review pending",
       "sources": [
         {
-          "title": "GAO-23-104661",
+          "title": "GAO-23-104661 — cost recommendation 1",
           "url": "https://www.gao.gov/products/gao-23-104661",
-          "artifact_date": "Cost recommendation 1; September 10 check"
+          "artifact_date": "Recommendation status re-read 2026-09-22; latest narrative April 2026"
         },
         {
-          "title": "GAO-20-703",
+          "title": "GAO-20-703 — schedule recommendation 3",
           "url": "https://www.gao.gov/products/gao-20-703",
-          "artifact_date": "Schedule recommendation 3; September 10 check"
+          "artifact_date": "Recommendation status re-read 2026-09-22; latest narrative April 2026"
         }
       ],
-      "source_notes": [],
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "Recommendations for Executive Action, Recommendation 1 and April 2026 follow-up",
+          "scope": "The displayed Open entry concerns the program-wide pit-production life-cycle cost estimate. The December 2026 estimate date is an expectation, not a delivered baseline.",
+          "access": "Exact GAO HTML entry inspected; underlying baseline documents not obtained or independently assessed"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Recommendations for Executive Action, Recommendation 3; neighboring recommendations 1, 2 and 4",
+          "scope": "The schedule recommendation remains Open on this page. Closures of other recommendations do not close it; the expected end-of-fiscal-2026 schedule is not a completed artifact.",
+          "access": "Exact GAO HTML entry inspected; no agency-wide or later-record completeness claim"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial recheck of two exact GAO recommendation entries. Their latest displayed progress narratives refer to April 2026; this is not a complete agency-record search, an independent baseline assessment or a new evidence-cycle decision. The September 10 receipt and future gate dates remain unchanged.",
       "next_action": "The final program-wide baseline artifacts and exact recommendation dispositions from the responsible oversight record.",
       "independent_reviewer": null,
       "independent_decision": null
@@ -1392,12 +1407,12 @@
       "kind": "Question",
       "title": "Does Hanford’s operating record close the material balance?",
       "route": "/reference/questions/water--116-q-067/",
-      "article_sha256": "19a6229f246484ad8cd0683f7e9d133b27220c8779368e93604c1f5c2fd32cd3",
-      "rendered_record_sha256": "34b3147bc580de2a2702a12212e54b9eac4d5fc06724ebbd8f3d438f6540547c",
+      "article_sha256": "85956e2f2147fddb5c79847279070bb598aa3f4ef6220be84825d7777b81ad4a",
+      "rendered_record_sha256": "18784e552633dc1633d42d9de71b124edfed5ad7de11f1b9546515b35ed00fe6",
       "authored_date": "2026-09-14",
-      "updated_date": null,
+      "updated_date": "2026-09-22",
       "scope": "Proposed review selection; owner release scope not approved",
-      "review_state": "Existing source-checked draft; independent claim review pending",
+      "review_state": "September 22 bounded answer source review completed; independent review pending",
       "sources": [
         {
           "title": "Hanford Waste Treatment and Immobilization Plant project",
@@ -1407,16 +1422,38 @@
         {
           "title": "Hanford Consent Decree monthly report AR-41694",
           "url": "https://pdw.hanford.gov/download/v2/AR-41694",
-          "artifact_date": "July 1–31, 2026 observation period; September meeting footer"
+          "artifact_date": "July 1–31, 2026; September 2026 meeting"
         },
         {
           "title": "Hanford Tri-Party Agreement report AR-41695",
           "url": "https://pdw.hanford.gov/download/v2/AR-41695",
-          "artifact_date": "July 2026; retained September 10 inspection"
+          "artifact_date": "July 1–31, 2026; September 2026 meeting"
         }
       ],
-      "source_notes": [],
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "Project description and Last Updated July 15, 2026",
+          "scope": "A general project description is not a period-matched material account or a new operating-stage acceptance.",
+          "access": "Official project-page HTML inspected"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Cover and footnote 1; Low-Activity Waste Facility, printed pages 22–23 (PDF pages 23–24)",
+          "scope": "July feed, cumulative feed, cumulative filled containers and July EMF shipments have distinct units, periods and process meanings. The cover separately dates earned-value data through June.",
+          "access": "Exact 29-page PDF downloaded; physical pages 1, 23 and 24 rendered and visually inspected; no complete numerical reconciliation"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "Cover and footnote 1; Tank-Side Cesium Removal System, printed pages 13–14 (PDF pages 16–17)",
+          "scope": "The section separates tank-waste operations from the treatment-plant scope and records an incomplete planned pretreatment batch. Available tank space is not treated-waste output.",
+          "access": "Web text retrieval failed; exact 46-page PDF recovered directly, with physical pages 1, 16 and 17 rendered and visually inspected"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial check of the named project page and selected pages of the two July reports, including actual PDF page-image inspection. The September meeting footer is not the observation month. No complete balance, independent accounting review, new operating-stage admission or replacement of the September 10 decision is claimed.",
       "next_action": "Matched-period feed, product, secondary waste and opening/closing inventories with compatible units and process boundaries.",
       "independent_reviewer": null,
       "independent_decision": null
@@ -1426,26 +1463,41 @@
       "kind": "Question",
       "title": "What did Amtrak PIDS deployment complete?",
       "route": "/reference/questions/mobility--116-q-051/",
-      "article_sha256": "5eb31f960dc9bd979dfa5f05d3555dd29364442685d7e8c8419889d1ebc5c203",
-      "rendered_record_sha256": "160ca4a7283e7619ede4384914a5a111b38805b9f0765d72804616eb3bffa5d3",
+      "article_sha256": "86cae2b8096ba393133ceeb70593df2967066763c3184b7de71eb72091df8fd8",
+      "rendered_record_sha256": "ffa9139a4168e9b373af1e82d96144b9052fbd5bdce13716ba1001df99c61670",
       "authored_date": "2026-09-14",
-      "updated_date": null,
+      "updated_date": "2026-09-22",
       "scope": "Proposed review selection; owner release scope not approved",
-      "review_state": "Existing source-checked draft; independent claim review pending",
+      "review_state": "September 22 assisted text recheck; Amtrak visual verification and independent review pending",
       "sources": [
         {
           "title": "Amtrak June 2026 ADA progress report",
           "url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-ada-progress-report-june-2026.pdf",
-          "artifact_date": "September 10 source review"
+          "artifact_date": "June 2026; observation period 2025-11-01 through 2026-04-30"
         },
         {
-          "title": "Amtrak June 2026 accessibility plan report",
+          "title": "Amtrak Accessible Canada Act progress report",
           "url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-accessibility-plan-feedback-process-canada-act-0626.pdf",
-          "artifact_date": "September 10 source review"
+          "artifact_date": "2026-06-01; observation period 2025-05-01 through 2026-04-30"
         }
       ],
-      "source_notes": [],
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "Printed pages 1 and 3–4: reporting period, PIDS paragraph and snapshot row",
+          "scope": "The retained 93 count is labeled deployments; the performance period ended March 31, while the report still describes reporting review as pending. No later closeout is established.",
+          "access": "Web-extracted PDF text inspected; two direct-client attempts failed and no usable page image was obtained; visual verification pending"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Printed pages 1–2: introduction, reporting window and Built Environment/Stations PIDS bullet",
+          "scope": "The retained 117 count is labeled installations. This report covers a different window and mentions pending financial closeout; no crosswalk reconciles it with the ADA deployment count.",
+          "access": "Web-extracted PDF text inspected; direct download returned HTTP 403 and screenshot retrieval failed; no new visual inspection"
+        }
+      ],
+      "source_check_boundary": "September 22 text-only recheck of the two exact June reports. Direct downloads failed, then returned HTTP 403; usable page images were not obtained, so new visual table verification remains pending. This is not a later FRA closeout search, independent acceptance, or a new gate decision; the September 10 receipt and October 9 appointment remain unchanged.",
       "next_action": "An exact final closeout/acceptance record; separate named-asset reliability evidence for any operating-performance claim.",
       "independent_reviewer": null,
       "independent_decision": null
@@ -1455,17 +1507,17 @@
       "kind": "Question",
       "title": "When does a critical-minerals project become dependable supply?",
       "route": "/reference/questions/critical-minerals--116-q-027/",
-      "article_sha256": "5a6526da1233b155370d5feec77494134c78d64d8f2cc9f8ed8bce97e9460672",
-      "rendered_record_sha256": "5d2f2716d5a39c61271fe1410f88220d29d55398654cc6e65de0f00ecde39730",
+      "article_sha256": "b3e1c4fd1255cacd733f62aa97162acc873a907ffef4c797fb855c1bb5cb7c7a",
+      "rendered_record_sha256": "c4666d56494d54453b5c6dd8e584a8452dd4d7d32a26898059290163f4a850bb",
       "authored_date": "2026-09-14",
-      "updated_date": null,
+      "updated_date": "2026-09-22",
       "scope": "Proposed review selection; owner release scope not approved",
-      "review_state": "Existing source-checked draft; independent claim review pending",
+      "review_state": "September 22 bounded answer source review completed; independent review pending",
       "sources": [
         {
           "title": "DOE Thacker Pass project account",
           "url": "https://www.energy.gov/edf/thacker-pass",
-          "artifact_date": "Loan closing October 2024; checked September 14"
+          "artifact_date": "Last updated October 2024; historical loan-closing summary"
         },
         {
           "title": "Lithium Americas June 2026 quarterly filing",
@@ -1475,11 +1527,33 @@
         {
           "title": "BLM Thacker Pass decision notice",
           "url": "https://www.blm.gov/press-release/humboldt-river-field-office-issues-record-decision-thacker-pass-lithium-mine",
-          "artifact_date": "2021-01-15; archived notice"
+          "artifact_date": "2021-01-15; explicitly archived notice"
         }
       ],
-      "source_notes": [],
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "Project Summary; Project Statistics; Last Updated October 2024 and estimate footnotes",
+          "scope": "Historical construction financing and anticipated output/jobs are not actual production, current financing terms or delivered supply.",
+          "access": "Exact DOE HTML summary inspected; later financing instruments not independently reviewed"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Management’s Discussion and Analysis, printed page 25: General Motors Equity Investment, Joint Venture and Offtake",
+          "scope": "Phase 1 and Phase 2 commitments and the October 2025 amendment concern purchase/forecast obligations. They do not document acceptance of recurring shipments.",
+          "access": "Exact SEC-hosted company filing HTML inspected in the named section; no shipment ledger or independent acceptance audit"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "Archive banner; January 15, 2021 date; opening decision paragraph and final EIS/ROD link",
+          "scope": "The announcement identifies a historical permitting decision. It is not the full operative instrument or a current legal-status determination.",
+          "access": "Exact BLM archived notice inspected; linked decision and later legal instruments not re-reviewed"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial recheck of the exact DOE summary, company filing and archived BLM announcement. Their original dates and institutional roles are retained. This is not a current permit/legal opinion, a complete shipment search, investment advice or independent production acceptance.",
       "next_action": "Accepted-product evidence and recurring qualified shipments, retaining product specification, receiver, period and exceptions.",
       "independent_reviewer": null,
       "independent_decision": null
@@ -1489,12 +1563,12 @@
       "kind": "Question",
       "title": "What has a named battery demonstrated beyond installed capacity?",
       "route": "/reference/questions/energy--116-q-039/",
-      "article_sha256": "1966a324ed30cc17261ba817d317e4b6a4b87c03afb7c9dee8a931a44af2ac0c",
-      "rendered_record_sha256": "2f25456222d19c63d708a456d07eeac9a9fe2bb1a34bfd9f212259130c7e8e0a",
+      "article_sha256": "a55ffeefb4e72d3dea401dc698e5fbc18c2278cc5e9b3a5e886ee2c809932c02",
+      "rendered_record_sha256": "a5a5ac0aa30fab7ad0709c9b7f555ed6c9ecacb758883a06370f8b24a1190e9c",
       "authored_date": "2026-09-14",
-      "updated_date": null,
+      "updated_date": "2026-09-22",
       "scope": "Proposed review selection; owner release scope not approved",
-      "review_state": "Existing source-checked draft; independent claim review pending",
+      "review_state": "September 22 bounded answer source review completed; independent review pending",
       "sources": [
         {
           "title": "ARENA: ElectraNet South Australian battery retrospective",
@@ -1507,8 +1581,23 @@
           "artifact_date": "2021-02; final six-month interval ends 2020-12-14"
         }
       ],
-      "source_notes": [],
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "April 15, 2021 retrospective: chronology and local service description",
+          "scope": "April 2018 energisation and December 2018 commercial operation are distinct milestones. Funder success language is not an independent comparative reliability finding.",
+          "access": "Exact ARENA HTML retrospective inspected"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Cover; printed/PDF pages 14–15, Table 3-1 and sections 3.1–3.3; page 35, section 6.2",
+          "scope": "Four historical reporting intervals and contract-defined measures are not a current service series. The report describes a calculation agreement but does not supply the monthly eligible-time inputs for reproduction.",
+          "access": "Exact 40-page PDF downloaded; pages 1, 14, 15 and 35 rendered and visually inspected; SHA-256 matches the September 15 capture"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial recheck of the ARENA retrospective and selected pages of operational report 4. The PDF bytes match the retained September 15 capture. This does not replace the original extraction or amendment, perform independent reproduction, admit a series or establish September 2026 performance.",
       "next_action": "Reproducible service measures and compatible periods, independently reviewed and admitted before a measurement feature ships.",
       "independent_reviewer": null,
       "independent_decision": null
