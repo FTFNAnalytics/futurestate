@@ -89,6 +89,10 @@ if(manifest.candidate_binding.validation_status==='terminal_pass'){
   assert.equal(results.results[1].finished_at,manifest.candidate_binding.validation_finished_at);
   const receipt=await read('app/src/data/phase-204-receipts/'+manifest.candidate_binding.receipt_id+'.json');
   assert.equal(receipt.artifact_digest,currentCandidate.digest);
+  const recovery=await read(manifest.candidate_binding.recovery_report);
+  assert.equal(recovery.commit,manifest.candidate_binding.recovered_source_commit);
+  assert.equal(recovery.candidate_digest,currentCandidate.digest);
+  assert.equal(recovery.validation_receipt,manifest.candidate_binding.receipt_id);
 }else{
   assert.equal(manifest.candidate_binding.validation_status,'pending_terminal_result');
   assert.equal(manifest.candidate_binding.receipt_id,null);

@@ -13,6 +13,8 @@ Prepared September 23, 2026. Four exact-version worksheets, fourteen claim promp
 
 ## Process
 
+Recovery attachment, September 23: [exact application-source recovery](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T21-25-33.751Z-qGuPzZ/git-recovery-verification.json>) passed for commit `035b552dee061395beecad7379c0051a7c8e8f40`. The manifest now links that separate diagnostic. Its later recovery fields are not claimed to be inside the recovered commit; the four article snapshots and all fourteen claim prompts are unchanged.
+
 1. Owner/editor appoints appropriate independent reviewers and authorizes contact separately. These files have not been sent.
 2. Attach the successful candidate receipt and exact recovery evidence before acceptance. If a version changes, preserve this packet and prepare a revised assignment; never transfer approval automatically.
 3. Reviewer checks complete articles, the listed claims and exact artifacts, including explicit access gaps. The TSMC PDF visual/signature limits and quantum publisher/full-paper limits remain open; a source URL is not proof that it has been re-inspected.
