@@ -33,7 +33,12 @@ for(const a of pack.records){
 }
 assert.equal(pairCount,34);assert.equal(englishContextArticles,14);assert(editions.edition_contracts.filter(r=>r.is_translation).every(r=>r.translated_content===null&&r.approval_receipt_id===null));
 assert.equal(JSON.stringify({pack,editions,ops,sources,evidence:currentEvidenceLedger}),before);
-const sample=pack.records[0];assert.throws(()=>readerPresentation({...sample,source_ids:['unknown-source']},sources,[],[]),/Missing reader source link/);assert.throws(()=>readerPresentation({...sample,related_paths:['/unknown-label/']},sources,[],[]),/Missing reader link label/);
+// Generic presentation fixtures are deliberately not a version-pinned review.
+// Reviewed originals must instead reject any mutation before rendering it.
+const reviewedSample=pack.records.find(r=>annualCaseReviewForId(r.record_id));assert(reviewedSample);
+for(const mutation of [{source_ids:['unknown-source']},{related_paths:['/unknown-label/']},{sections:[reviewedSample.sections[0],reviewedSample.sections[0]]}])assert.throws(()=>readerPresentation({...reviewedSample,...mutation},sources,[],[]),/Annual reader source drift/);
+const sample={...pack.records[0],record_id:'fixture-reader-presentation-unreviewed'};assert.equal(annualCaseReviewForId(sample.record_id),null);
+assert.throws(()=>readerPresentation({...sample,source_ids:['unknown-source']},sources,[],[]),/Missing reader source link/);assert.throws(()=>readerPresentation({...sample,related_paths:['/unknown-label/']},sources,[],[]),/Missing reader link label/);
 const repeated=readerPresentation({...sample,sections:[sample.sections[0],sample.sections[0]]},sources,[],[]);assert.notEqual(repeated.sections[0].anchor,repeated.sections[1].anchor);
 assert.throws(()=>readerSourceReviewContexts(sample,currentEvidenceLedger,ops,{asOfDate:'September 15'}),/ISO calendar date/);
 assert.equal(readerSourceReviewContexts({...sample,source_ids:['source-similar-but-unmatched']},currentEvidenceLedger,ops).length,0);

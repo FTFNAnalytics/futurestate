@@ -1,6 +1,7 @@
 {
   "schema_version": "1.0",
   "review_date": "2026-09-22",
+  "latest_review_date": "2026-09-23",
   "reviewer": "Codex assisted editorial review",
   "boundary": "Dated wording and source-context review only. Original September 10 reader records and their September 1 evidence cutoff are preserved. No project-stage change, measurement admission, independent approval or release authorization is supplied.",
   "export_route": "/data/annual-case-reviews.json",
@@ -283,6 +284,298 @@
           "locator": "Current Application Capital; CFA Number 19418, Round 2; award, disbursement and Project Status fields",
           "access": "Exact official HTML text rechecked September 22. No grant contract, applicant correspondence or later plant-investment record was inspected.",
           "finding": "The specific grant record retains the combined Cancelled/Declined category without a displayed effective date or explanation. URL path 51146 is not the CFA number."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-SYNTHESIS-01",
+      "route": "/reference/state-of-future-systems/synthesis-compute-power-water/",
+      "source_record_sha256": "ca7c4b969ddf8bf77147e6e9df15cb3786ec715e4c64a431590be5bf503c4c4d",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-golden-mars-paired-readings",
+      "summary": "September 23 editorial follow-through using the exact September 22 Golden-Mars and GS-5 checks retained with the annual case. This is not a new artifact retrieval, a decision on appeal, independent article acceptance or evidence of delivered service. The original September reader and source list remain preserved.",
+      "replacements": [
+        {
+          "section_heading": "Northern Virginia shows the institutional handoffs",
+          "paragraph_index": 0,
+          "replacement_text": "Virginia's large-load rate decision and transmission decision address different parts of the service chain. The SCC's November 25, 2025 announcement reports approval of GS-5 with effect from January 1, 2027. Separately, its June 29, 2026 Golden-Mars order approves Route 3A; the July 20 order declines to suspend that decision. The official docket checked September 22 lists Under Appeal. That dated field is not an appellate merits ruling or proof of unrestricted construction authority. The rate announcement and transmission orders do not establish a named customer's connection, eligibility or actual bill.",
+          "reason": "Carry the located route order and dated appeal context into both readings, keeping the announced tariff commencement separate from delivered service.",
+          "original_text": "The inherited Golden-Mars and GS-5 case contains two concrete decisions. Virginia approved a future large-load rate class, scheduled to become effective January 1, 2027, and conditionally approved a transmission project with a local route dependency. The first concerns the terms under which a class of customers would be served. The second concerns authority for a physical transmission proposal. Their proximity does not make them one customer delivery event."
+        },
+        {
+          "section_heading": "Northern Virginia shows the institutional handoffs",
+          "paragraph_index": 1,
+          "replacement_text": "The route order is located; the remaining questions concern its incorporated April conditions, map/CPCN compliance, land rights and any later court or appellate orders. Those matters were not fully inspected in the retained check. Construction, inspection, energization and a named service arrangement require their own records. For GS-5, the full tariff, applicable amendments and customer documents remain necessary before an eligibility or billing conclusion. Resolving one procedural question does not close the physical service or customer-acceptance gap.",
+          "reason": "Replace the still-missing-final-route framing with the unverified compliance, court, land, physical-delivery and customer-specific questions.",
+          "original_text": "The next useful questions therefore concern final routing, land rights, construction, inspection and energization, followed by an identifiable customer agreement. Those are distinct documents with different responsible parties. A regulatory approval can resolve an institutional dependency while leaving the physical service dependency open."
+        },
+        {
+          "section_heading": "What would strengthen the next edition",
+          "paragraph_index": 0,
+          "replacement_text": "For Northern Virginia, follow the located route order through its conditions, land rights and later legal instruments, then seek accepted transmission assets and a named customer service record. For Arizona, the decisive additions remain facility-specific utility acceptance and operating measurements. Repeated reporting should retain the same building or fab identity, measurement period, units, configuration and exception treatment so readers can distinguish a new measurement from a changed definition.",
+          "reason": "Retire the resolved request to locate a final route order without claiming that the downstream evidence has been obtained or changing the Arizona boundary.",
+          "original_text": "For Northern Virginia, the decisive additions are the final route or land instrument, accepted transmission assets and a named customer service record. For Arizona, they are facility-specific utility acceptance and operating measurements. Repeated reporting should retain the same building or fab identity, measurement period, units, configuration and exception treatment so readers can distinguish a new measurement from a changed definition."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF",
+          "relation": "Located decision in the named Golden-Mars case, supplementing the historical profile's general SCC information URL; not a claim that the original URL itself contains this order.",
+          "locator": "PUR-2025-00056, Final Order, June 29, 2026; printed page 4; document 260690071",
+          "access": "Official PDF text checked September 22; retained original hash verified and operative page 4 visually re-inspected. All five pages were visually inspected in the earlier same-day acquisition. The incorporated April order and later compliance submissions were not fully inspected.",
+          "finding": "The order approves Route 3A, incorporates the April 9 order and directs a map/CPCN process. Approval is not evidence of completed construction or customer service.",
+          "captured_sha256": "5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec",
+          "visually_checked_pages": [
+            4
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF",
+          "relation": "Subsequent order in the same exact case; separate from both the June decision and the original general-information profile URL.",
+          "locator": "PUR-2025-00056, Order Denying Suspension, July 20, 2026; both pages and page 2 footnote 2; document 260730107",
+          "access": "Official PDF text checked September 22; retained original hash verified and both pages rendered and visually re-inspected. No Supreme Court order or appeal merits review.",
+          "finding": "The SCC declines suspension and dismisses the matter; footnote 2 denies reopening the record. This does not cancel the June transmission approval or establish an appellate outcome.",
+          "captured_sha256": "0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054",
+          "visually_checked_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch#caseDetails/146021",
+          "relation": "Exact public docket metadata for PUR-2025-00056, matter 146021; not an inferred status from the general source profile.",
+          "locator": "Official case-detail fields: Case_Number, Status, Appealed, Disposition, Final_Order_Date and Closed_Date",
+          "access": "Public read-only case API rechecked September 22 using the site's exact matter filter; selected parsed fields match the retained same-day response. The text browser did not retrieve the API. No appeal-document or Supreme Court docket inspection.",
+          "finding": "The response lists Under Appeal, Appealed Yes, disposition Approved, final order June 29 and closed date July 20, 2026. These are docket fields, not proof of an appellate ruling, a stay's absence or unconditional construction authority.",
+          "captured_sha256": "c550b8590b92c089246b0743813267f6addc967ac6f81fb85118bd338c4b1ca9"
+        },
+        {
+          "source_id": "source-virginia-scc-large-load-gs5-2025",
+          "url": "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html",
+          "locator": "SCC announcement dated November 25, 2025; opening paragraphs and PUR-2025-00058 reference",
+          "access": "Official announcement text rechecked September 22; underlying full rate order and later tariff amendments not inspected.",
+          "finding": "The announcement describes an approved GS-5 class with a January 1, 2027 effective date. It is not a customer-specific eligibility or billing determination."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "200-MONOGRAPH-01",
+      "route": "/reference/constraint-monographs/compute-power-water/",
+      "source_record_sha256": "edf9284df5bad49b28bce7703147b731588b419d66fad58169afa1e978b5c279",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-golden-mars-paired-readings",
+      "summary": "September 23 editorial follow-through using the exact September 22 Golden-Mars and GS-5 checks retained with the annual case. This is not a new artifact retrieval, a decision on appeal, independent article acceptance or evidence of delivered service. The original September reader and source list remain preserved.",
+      "replacements": [
+        {
+          "section_heading": "Northern Virginia shows the institutional handoffs",
+          "paragraph_index": 0,
+          "replacement_text": "Virginia's large-load rate decision and transmission decision address different parts of the service chain. The SCC's November 25, 2025 announcement reports approval of GS-5 with effect from January 1, 2027. Separately, its June 29, 2026 Golden-Mars order approves Route 3A; the July 20 order declines to suspend that decision. The official docket checked September 22 lists Under Appeal. That dated field is not an appellate merits ruling or proof of unrestricted construction authority. The rate announcement and transmission orders do not establish a named customer's connection, eligibility or actual bill.",
+          "reason": "Carry the located route order and dated appeal context into both readings, keeping the announced tariff commencement separate from delivered service.",
+          "original_text": "The inherited Golden-Mars and GS-5 case contains two concrete decisions. Virginia approved a future large-load rate class, scheduled to become effective January 1, 2027, and conditionally approved a transmission project with a local route dependency. The first concerns the terms under which a class of customers would be served. The second concerns authority for a physical transmission proposal. Their proximity does not make them one customer delivery event."
+        },
+        {
+          "section_heading": "Northern Virginia shows the institutional handoffs",
+          "paragraph_index": 1,
+          "replacement_text": "The route order is located; the remaining questions concern its incorporated April conditions, map/CPCN compliance, land rights and any later court or appellate orders. Those matters were not fully inspected in the retained check. Construction, inspection, energization and a named service arrangement require their own records. For GS-5, the full tariff, applicable amendments and customer documents remain necessary before an eligibility or billing conclusion. Resolving one procedural question does not close the physical service or customer-acceptance gap.",
+          "reason": "Replace the still-missing-final-route framing with the unverified compliance, court, land, physical-delivery and customer-specific questions.",
+          "original_text": "The next useful questions therefore concern final routing, land rights, construction, inspection and energization, followed by an identifiable customer agreement. Those are distinct documents with different responsible parties. A regulatory approval can resolve an institutional dependency while leaving the physical service dependency open."
+        },
+        {
+          "section_heading": "What would strengthen the next edition",
+          "paragraph_index": 0,
+          "replacement_text": "For Northern Virginia, follow the located route order through its conditions, land rights and later legal instruments, then seek accepted transmission assets and a named customer service record. For Arizona, the decisive additions remain facility-specific utility acceptance and operating measurements. Repeated reporting should retain the same building or fab identity, measurement period, units, configuration and exception treatment so readers can distinguish a new measurement from a changed definition.",
+          "reason": "Retire the resolved request to locate a final route order without claiming that the downstream evidence has been obtained or changing the Arizona boundary.",
+          "original_text": "For Northern Virginia, the decisive additions are the final route or land instrument, accepted transmission assets and a named customer service record. For Arizona, they are facility-specific utility acceptance and operating measurements. Repeated reporting should retain the same building or fab identity, measurement period, units, configuration and exception treatment so readers can distinguish a new measurement from a changed definition."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF",
+          "relation": "Located decision in the named Golden-Mars case, supplementing the historical profile's general SCC information URL; not a claim that the original URL itself contains this order.",
+          "locator": "PUR-2025-00056, Final Order, June 29, 2026; printed page 4; document 260690071",
+          "access": "Official PDF text checked September 22; retained original hash verified and operative page 4 visually re-inspected. All five pages were visually inspected in the earlier same-day acquisition. The incorporated April order and later compliance submissions were not fully inspected.",
+          "finding": "The order approves Route 3A, incorporates the April 9 order and directs a map/CPCN process. Approval is not evidence of completed construction or customer service.",
+          "captured_sha256": "5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec",
+          "visually_checked_pages": [
+            4
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF",
+          "relation": "Subsequent order in the same exact case; separate from both the June decision and the original general-information profile URL.",
+          "locator": "PUR-2025-00056, Order Denying Suspension, July 20, 2026; both pages and page 2 footnote 2; document 260730107",
+          "access": "Official PDF text checked September 22; retained original hash verified and both pages rendered and visually re-inspected. No Supreme Court order or appeal merits review.",
+          "finding": "The SCC declines suspension and dismisses the matter; footnote 2 denies reopening the record. This does not cancel the June transmission approval or establish an appellate outcome.",
+          "captured_sha256": "0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054",
+          "visually_checked_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch#caseDetails/146021",
+          "relation": "Exact public docket metadata for PUR-2025-00056, matter 146021; not an inferred status from the general source profile.",
+          "locator": "Official case-detail fields: Case_Number, Status, Appealed, Disposition, Final_Order_Date and Closed_Date",
+          "access": "Public read-only case API rechecked September 22 using the site's exact matter filter; selected parsed fields match the retained same-day response. The text browser did not retrieve the API. No appeal-document or Supreme Court docket inspection.",
+          "finding": "The response lists Under Appeal, Appealed Yes, disposition Approved, final order June 29 and closed date July 20, 2026. These are docket fields, not proof of an appellate ruling, a stay's absence or unconditional construction authority.",
+          "captured_sha256": "c550b8590b92c089246b0743813267f6addc967ac6f81fb85118bd338c4b1ca9"
+        },
+        {
+          "source_id": "source-virginia-scc-large-load-gs5-2025",
+          "url": "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html",
+          "locator": "SCC announcement dated November 25, 2025; opening paragraphs and PUR-2025-00058 reference",
+          "access": "Official announcement text rechecked September 22; underlying full rate order and later tariff amendments not inspected.",
+          "finding": "The announcement describes an approved GS-5 class with a January 1, 2027 effective date. It is not a customer-specific eligibility or billing determination."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-SYNTHESIS-03",
+      "route": "/reference/state-of-future-systems/synthesis-infrastructure-access-affordability/",
+      "source_record_sha256": "e50495b0900d864db1f78095c324f603726a16482c941e82cbc5ef554c144903",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-golden-mars-paired-readings",
+      "summary": "September 23 editorial follow-through using the exact September 22 Golden-Mars and GS-5 checks retained with the annual case. This is not a new artifact retrieval, a decision on appeal, independent article acceptance or evidence of delivered service. The original September reader and source list remain preserved.",
+      "replacements": [
+        {
+          "section_heading": "A tariff decision is one part of the cost story",
+          "paragraph_index": 0,
+          "replacement_text": "The SCC's November 25, 2025 announcement reports approval of Virginia's GS-5 large-load rate class with effect from January 1, 2027. That is a decision with a later announced commencement, not a measured customer bill. The separate June 29, 2026 Golden-Mars order approves Route 3A; the July 20 order declines suspension, and the docket checked September 22 lists Under Appeal. These records do not establish an appellate outcome, completed land rights, energization or a customer's connection. Full tariff and customer-specific records remain necessary for cost-allocation conclusions.",
+          "reason": "Replace the inherited local-route-condition shorthand with the located decision history, retaining the affordability and customer-specific evidence limits.",
+          "original_text": "Virginia's GS-5 decision gives the corpus a concrete large-load rate mechanism, scheduled for January 2027. It is more informative for cost allocation than a national demand scenario because it identifies a regulated customer category. The Golden-Mars decision separately identifies a transmission proposal and local route condition. Neither record establishes a completed customer connection in the inherited baseline."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF",
+          "relation": "Located decision in the named Golden-Mars case, supplementing the historical profile's general SCC information URL; not a claim that the original URL itself contains this order.",
+          "locator": "PUR-2025-00056, Final Order, June 29, 2026; printed page 4; document 260690071",
+          "access": "Official PDF text checked September 22; retained original hash verified and operative page 4 visually re-inspected. All five pages were visually inspected in the earlier same-day acquisition. The incorporated April order and later compliance submissions were not fully inspected.",
+          "finding": "The order approves Route 3A, incorporates the April 9 order and directs a map/CPCN process. Approval is not evidence of completed construction or customer service.",
+          "captured_sha256": "5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec",
+          "visually_checked_pages": [
+            4
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF",
+          "relation": "Subsequent order in the same exact case; separate from both the June decision and the original general-information profile URL.",
+          "locator": "PUR-2025-00056, Order Denying Suspension, July 20, 2026; both pages and page 2 footnote 2; document 260730107",
+          "access": "Official PDF text checked September 22; retained original hash verified and both pages rendered and visually re-inspected. No Supreme Court order or appeal merits review.",
+          "finding": "The SCC declines suspension and dismisses the matter; footnote 2 denies reopening the record. This does not cancel the June transmission approval or establish an appellate outcome.",
+          "captured_sha256": "0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054",
+          "visually_checked_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch#caseDetails/146021",
+          "relation": "Exact public docket metadata for PUR-2025-00056, matter 146021; not an inferred status from the general source profile.",
+          "locator": "Official case-detail fields: Case_Number, Status, Appealed, Disposition, Final_Order_Date and Closed_Date",
+          "access": "Public read-only case API rechecked September 22 using the site's exact matter filter; selected parsed fields match the retained same-day response. The text browser did not retrieve the API. No appeal-document or Supreme Court docket inspection.",
+          "finding": "The response lists Under Appeal, Appealed Yes, disposition Approved, final order June 29 and closed date July 20, 2026. These are docket fields, not proof of an appellate ruling, a stay's absence or unconditional construction authority.",
+          "captured_sha256": "c550b8590b92c089246b0743813267f6addc967ac6f81fb85118bd338c4b1ca9"
+        },
+        {
+          "source_id": "source-virginia-scc-large-load-gs5-2025",
+          "url": "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html",
+          "locator": "SCC announcement dated November 25, 2025; opening paragraphs and PUR-2025-00058 reference",
+          "access": "Official announcement text rechecked September 22; underlying full rate order and later tariff amendments not inspected.",
+          "finding": "The announcement describes an approved GS-5 class with a January 1, 2027 effective date. It is not a customer-specific eligibility or billing determination."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "200-MONOGRAPH-03",
+      "route": "/reference/constraint-monographs/infrastructure-access-affordability/",
+      "source_record_sha256": "f6a8fc89ca6390d8d514ab3b11e2af557f70ea950f9f5872c084c59cad56be23",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-golden-mars-paired-readings",
+      "summary": "September 23 editorial follow-through using the exact September 22 Golden-Mars and GS-5 checks retained with the annual case. This is not a new artifact retrieval, a decision on appeal, independent article acceptance or evidence of delivered service. The original September reader and source list remain preserved.",
+      "replacements": [
+        {
+          "section_heading": "A tariff decision is one part of the cost story",
+          "paragraph_index": 0,
+          "replacement_text": "The SCC's November 25, 2025 announcement reports approval of Virginia's GS-5 large-load rate class with effect from January 1, 2027. That is a decision with a later announced commencement, not a measured customer bill. The separate June 29, 2026 Golden-Mars order approves Route 3A; the July 20 order declines suspension, and the docket checked September 22 lists Under Appeal. These records do not establish an appellate outcome, completed land rights, energization or a customer's connection. Full tariff and customer-specific records remain necessary for cost-allocation conclusions.",
+          "reason": "Replace the inherited local-route-condition shorthand with the located decision history, retaining the affordability and customer-specific evidence limits.",
+          "original_text": "Virginia's GS-5 decision gives the corpus a concrete large-load rate mechanism, scheduled for January 2027. It is more informative for cost allocation than a national demand scenario because it identifies a regulated customer category. The Golden-Mars decision separately identifies a transmission proposal and local route condition. Neither record establishes a completed customer connection in the inherited baseline."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF",
+          "relation": "Located decision in the named Golden-Mars case, supplementing the historical profile's general SCC information URL; not a claim that the original URL itself contains this order.",
+          "locator": "PUR-2025-00056, Final Order, June 29, 2026; printed page 4; document 260690071",
+          "access": "Official PDF text checked September 22; retained original hash verified and operative page 4 visually re-inspected. All five pages were visually inspected in the earlier same-day acquisition. The incorporated April order and later compliance submissions were not fully inspected.",
+          "finding": "The order approves Route 3A, incorporates the April 9 order and directs a map/CPCN process. Approval is not evidence of completed construction or customer service.",
+          "captured_sha256": "5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec",
+          "visually_checked_pages": [
+            4
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF",
+          "relation": "Subsequent order in the same exact case; separate from both the June decision and the original general-information profile URL.",
+          "locator": "PUR-2025-00056, Order Denying Suspension, July 20, 2026; both pages and page 2 footnote 2; document 260730107",
+          "access": "Official PDF text checked September 22; retained original hash verified and both pages rendered and visually re-inspected. No Supreme Court order or appeal merits review.",
+          "finding": "The SCC declines suspension and dismisses the matter; footnote 2 denies reopening the record. This does not cancel the June transmission approval or establish an appellate outcome.",
+          "captured_sha256": "0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054",
+          "visually_checked_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch#caseDetails/146021",
+          "relation": "Exact public docket metadata for PUR-2025-00056, matter 146021; not an inferred status from the general source profile.",
+          "locator": "Official case-detail fields: Case_Number, Status, Appealed, Disposition, Final_Order_Date and Closed_Date",
+          "access": "Public read-only case API rechecked September 22 using the site's exact matter filter; selected parsed fields match the retained same-day response. The text browser did not retrieve the API. No appeal-document or Supreme Court docket inspection.",
+          "finding": "The response lists Under Appeal, Appealed Yes, disposition Approved, final order June 29 and closed date July 20, 2026. These are docket fields, not proof of an appellate ruling, a stay's absence or unconditional construction authority.",
+          "captured_sha256": "c550b8590b92c089246b0743813267f6addc967ac6f81fb85118bd338c4b1ca9"
+        },
+        {
+          "source_id": "source-virginia-scc-large-load-gs5-2025",
+          "url": "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html",
+          "locator": "SCC announcement dated November 25, 2025; opening paragraphs and PUR-2025-00058 reference",
+          "access": "Official announcement text rechecked September 22; underlying full rate order and later tariff amendments not inspected.",
+          "finding": "The announcement describes an approved GS-5 class with a January 1, 2027 effective date. It is not a customer-specific eligibility or billing determination."
         }
       ],
       "retained_contexts": [],

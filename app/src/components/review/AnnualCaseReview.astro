@@ -1,11 +1,11 @@
 ---
-import {annualCaseReviews, annualReviewContexts} from '../../lib/annual-case-reviews.mjs';
+import {annualCaseReviews, annualReviewContexts, annualReviewDate} from '../../lib/annual-case-reviews.mjs';
 interface Props { review: typeof annualCaseReviews.records[number]; }
 const {review} = Astro.props;
 const contexts = annualReviewContexts(review);
 ---
 <aside aria-label="Dated annual-case editorial review" data-annual-case-review={review.record_id}>
-  <h2>Editorial clarification and source context · {annualCaseReviews.review_date}</h2>
+  <h2>Editorial clarification and source context · {annualReviewDate(review)}</h2>
   <p>{review.summary}</p>
   <p>{annualCaseReviews.boundary}</p>
   {review.overview_replacement && <details data-annual-original-overview={review.record_id}>

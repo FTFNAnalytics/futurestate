@@ -3,7 +3,7 @@ import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
 import {parse} from 'parse5';
-import {annualCaseReviews, annualReviewContexts, annualCaseOverview} from '../src/lib/annual-case-reviews.mjs';
+import {annualCaseReviews, annualReviewContexts, annualCaseOverview, annualReviewDate} from '../src/lib/annual-case-reviews.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 import history from '../src/data/phase-204-reader-completion.json' with {type:'json'};
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
@@ -61,7 +61,13 @@ for (const article of history.records) {
   if (!review) continue;
   const notice = notices[0], visible = text(notice), hrefs = links(notice);
   assert.equal(attr(notice, 'data-annual-case-review'), article.record_id);
-  for (const value of [annualCaseReviews.review_date, annualCaseReviews.boundary, review.summary]) assert(visible.includes(value));
+  const reviewHeadings = all(notice, n => n.tagName === 'h2').map(text);
+  assert.deepEqual(reviewHeadings, [`Editorial clarification and source context · ${annualReviewDate(review)}`], 'Notice must display this record’s correction date');
+  for (const value of [annualReviewDate(review), annualCaseReviews.boundary, review.summary]) assert(visible.includes(value));
+  const catalogIndex = readerCatalog.findIndex(r => r.id === article.record_id);
+  const catalogPage = parse(await read(`/reference/explore/${Math.floor(catalogIndex / 40) + 1}/index.html`));
+  const [catalogCard] = all(catalogPage, n => n.tagName === 'article' && links(n).includes(route));
+  assert(catalogCard && text(catalogCard).includes(annualReviewDate(review)), 'Catalog must show this record’s review date');
   assert(hrefs.includes(annualCaseReviews.export_route));
   assert(hrefs.includes(`/updates/${review.update_id ?? annualCaseReviews.update_id}/`));
   const provenance = all(notice, n => attr(n, 'data-annual-original') === article.record_id);
@@ -98,7 +104,7 @@ for (const article of history.records) {
     assert(text(target).includes(context.summary), `Destination omits retained finding ${context.id}`);
   }
 }
-assert.equal(totalNotices, 7); assert.equal(revisedParagraphs, 7); assert.equal(revisedOverviews, 3); assert.equal(revisedHeadings, 1);
+assert.equal(totalNotices, 11); assert.equal(revisedParagraphs, 15); assert.equal(revisedOverviews, 3); assert.equal(revisedHeadings, 1);
 assert.deepEqual(JSON.parse(await read(annualCaseReviews.export_route)), annualCaseReviews);
 assert.deepEqual(JSON.parse(await read('/data/phase-204-reader-completion.json')), history);
 assert.deepEqual(JSON.parse(await read('/data/reader-catalog.json')).records, readerCatalog);
@@ -108,4 +114,4 @@ for (const updateId of new Set(annualCaseReviews.records.map(r => r.update_id ??
   assert(links(update).includes(annualCaseReviews.export_route));
   for (const r of annualCaseReviews.records.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) assert(links(update).includes(r.route));
 }
-console.log('Annual-case output verified across all 104 original reader routes: 7 scoped notices, 3 current overviews across reader/metadata/catalog, 7 current paragraphs, 1 heading with stable contents/anchor, inspectable originals, exact acquired-source and receipt links, catalog dates, three dated updates and separate export. No browser, independent or release approval claimed.');
+console.log('Annual output verified across all 104 original reader routes: 11 scoped notices, 3 current overviews, 15 current paragraphs, 1 heading with stable anchors, inspectable originals, exact source/receipt links, per-record catalog dates and matching dated updates/export. No browser, independent or release approval claimed.');

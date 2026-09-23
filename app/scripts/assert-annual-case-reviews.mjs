@@ -3,7 +3,7 @@ import {readFile, readdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
-import {annualCaseReviews, annualCaseReview, applyAnnualCaseReview, annualReviewContexts, annualCaseOverview} from '../src/lib/annual-case-reviews.mjs';
+import {annualCaseReviews, annualCaseReview, applyAnnualCaseReview, annualReviewContexts, annualCaseOverview, annualReviewDate} from '../src/lib/annual-case-reviews.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 import {searchReaders} from '../src/lib/reader-search.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -15,7 +15,8 @@ const ops = await json('src/data/phase-207-current-operations.json');
 const evidence = await json('src/data/phase-60-current-decisions.json');
 const sources = await Promise.all((await readdir(join(root, 'src/content/sources'))).filter(f => f.endsWith('.json')).map(f => json(`src/content/sources/${f}`)));
 const sourceMap = new Map(sources.map(s => [s.id, s]));
-const expectedIds = ['203-CASE-02', '203-CASE-12', '203-CASE-14', '203-CASE-04', '203-CASE-16', '203-CASE-03', '203-CASE-18'];
+const pairedIds = ['203-SYNTHESIS-01', '200-MONOGRAPH-01', '203-SYNTHESIS-03', '200-MONOGRAPH-03'];
+const expectedIds = ['203-CASE-02', '203-CASE-12', '203-CASE-14', '203-CASE-04', '203-CASE-16', '203-CASE-03', '203-CASE-18', ...pairedIds];
 const acquiredGoldenArtifacts = new Map([
   ['https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF', '5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec'],
   ['https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF', '0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054'],
@@ -30,7 +31,9 @@ assert.equal(hash(await raw('src/data/phase-202-accessible-multilingual-low-band
 function assertBindings(data, history = pack, operations = ops, decisions = evidence) {
   assert.deepEqual(data.records.map(r => r.record_id), expectedIds);
   assert.equal(data.review_date, '2026-09-22');
-  assert.equal(data.records.reduce((n, r) => n + r.replacements.length, 0), 7);
+  assert.equal(data.latest_review_date, '2026-09-23');
+  assert.equal(hash(JSON.stringify(data.records.slice(0, 7))), '054c81854e26fe58f786b24050984d4b3e5ce34ca746b7a1a0453863cff1ab69', 'Earlier seven reviews changed');
+  assert.equal(data.records.reduce((n, r) => n + r.replacements.length, 0), 15);
   assert.equal(data.records.filter(r => r.overview_replacement).length, 3);
   assert.equal(data.records.reduce((n, r) => n + (r.heading_replacements?.length ?? 0), 0), 1);
   for (const r of data.records) {
@@ -39,6 +42,13 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
     assert.equal(readerCatalog.find(a => a.id === r.record_id).route, r.route, 'Canonical route drift');
     assert.equal(r.independent_article_review, false);
     assert.equal(r.approval_receipt_id, null);
+    assert.equal(r.review_date, pairedIds.includes(r.record_id) ? '2026-09-23' : undefined);
+    if (pairedIds.includes(r.record_id)) {
+      assert.equal(r.update_id, 'update-2026-09-23-annual-golden-mars-paired-readings');
+      assert.equal(hash(JSON.stringify(r.source_checks)), '99a14f6598f8e8c76e4a806179cdf0fb23e26c2bdcc36e48c091aff1c32b75b2', 'Retained September 22 checks changed');
+      assert(r.summary.includes('not a new artifact retrieval'));
+      assert.equal(r.replacements.length, r.record_id.endsWith('-01') ? 3 : 1);
+    }
     if (r.overview_replacement) {
       assert(['203-CASE-04', '203-CASE-03', '203-CASE-18'].includes(r.record_id));
       assert.equal(r.overview_replacement.original_text, article.overview, 'Overview target drift');
@@ -58,7 +68,7 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
     for (const check of r.source_checks) {
       assert(article.source_ids.includes(check.source_id));
       if (check.profile_url) {
-        assert.equal(r.record_id, '203-CASE-03', 'Additional artifact is not scoped to the reviewed case');
+        assert(['203-CASE-03', ...pairedIds].includes(r.record_id), 'Additional artifact is not scoped to a reviewed Golden-Mars reading');
         assert.equal(check.source_id, 'source-virginia-scc-golden-mars-2026');
         assert.equal(check.profile_url, sourceMap.get(check.source_id)?.url, 'Original source-profile URL drift');
         assert(acquiredGoldenArtifacts.has(check.url), 'Unknown additional artifact');
@@ -67,7 +77,7 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
       } else assert.equal(check.url, sourceMap.get(check.source_id)?.url, 'Checked source URL drift');
       assert(check.locator && check.access && check.finding);
     }
-    assert.equal(r.retained_contexts.length, ['203-CASE-03', '203-CASE-18'].includes(r.record_id) ? 0 : 1);
+    assert.equal(r.retained_contexts.length, ['203-CASE-03', '203-CASE-18', ...pairedIds].includes(r.record_id) ? 0 : 1);
     for (const b of r.retained_contexts) {
       assert(['receipts', 'pilot_research_followups', 'evidence_receipts'].includes(b.collection));
       const receipt = (b.collection === 'evidence_receipts' ? decisions.receipts : operations[b.collection]).find(v => (v.receipt_id ?? v.review_id) === b.id);
@@ -148,6 +158,11 @@ for (const mutate of [
   d => { d.records[6].heading_replacements[0].original_text = 'unmatched heading'; },
   d => { d.records[6].heading_replacements.push(d.records[6].heading_replacements[0]); },
   d => { d.records[6].source_checks[0].url = 'https://regionalcouncils.ny.gov/cfa/project/19418'; },
+  d => { d.records[7].review_date = '2026-09-22'; },
+  d => { d.records[7].source_checks[0].finding = 'Invented fresh inspection'; },
+  d => { d.records[8].replacements[0].original_text = 'Wrong paired paragraph'; },
+  d => { d.records[9].approval_receipt_id = 'invented-paired-approval'; },
+  d => { d.records[10].route = d.records[9].route; },
 ]) {
   const changed = structuredClone(annualCaseReviews); mutate(changed);
   assert.throws(() => assertBindings(changed));
@@ -161,7 +176,7 @@ for (const a of pack.records) {
   assert.equal(overview, review?.overview_replacement?.replacement_text ?? a.overview);
   if (overview !== a.overview) changedOverviews++;
   assert.equal(catalog.title, a.title); assert.equal(catalog.summary, overview); assert.equal(catalog.status, a.review_status);
-  assert.equal(catalog.date, review ? annualCaseReviews.review_date : a.authored_date);
+  assert.equal(catalog.date, review ? annualReviewDate(review) : a.authored_date);
   assert.equal(sections.length, a.sections.length);
   if (JSON.stringify(sections) !== JSON.stringify(a.sections)) changedBodies++;
   sections.forEach((s, i) => {
@@ -177,6 +192,10 @@ for (const a of pack.records) {
   });
   if (!review) { assert(!expectedIds.includes(a.record_id)); continue; }
   notices++;
+  if (pairedIds.includes(a.record_id)) {
+    assert.equal(annualCaseReview(a, {asOfDate:'2026-09-22'}), null, 'Later clarification leaked into an earlier presentation');
+    assert.deepEqual(applyAnnualCaseReview(a, {asOfDate:'2026-09-22'}).sections, a.sections);
+  }
   assert.equal(annualCaseReview(a, {route:'/wrong/'}), null);
   assert.equal(annualCaseReview(a, {asOfDate:'2026-09-21'}), null);
   assert.deepEqual(applyAnnualCaseReview(a, {asOfDate:'2026-09-21'}).sections, a.sections);
@@ -187,7 +206,11 @@ for (const a of pack.records) {
   const contexts = annualReviewContexts(review); assert.equal(contexts.length, review.retained_contexts.length);
   for (const context of contexts) assert(context.summary && context.next_action);
 }
-assert.equal(notices, 7); assert.equal(changedBodies, 5); assert.equal(changedParagraphs, 7); assert.equal(changedOverviews, 3); assert.equal(changedHeadings, 1);
+assert.equal(notices, 11); assert.equal(changedBodies, 9); assert.equal(changedParagraphs, 15); assert.equal(changedOverviews, 3); assert.equal(changedHeadings, 1);
+for (const suffix of ['01', '03']) {
+  const [report, essay] = [`203-SYNTHESIS-${suffix}`, `200-MONOGRAPH-${suffix}`].map(id => pack.records.find(a => a.record_id === id));
+  assert.deepEqual(applyAnnualCaseReview(report).sections, applyAnnualCaseReview(essay).sections, 'Paired current readings diverged');
+}
 assert(searchReaders(readerCatalog, 'formal site-licence renewal', 'Report').some(r => r.id === '203-CASE-04'));
 assert(!searchReaders(readerCatalog, 'unresolved Shuttle Landing Facility license disposition').some(r => r.id === '203-CASE-04'));
 assert(searchReaders(readerCatalog, 'Cancelled/Declined', 'Report').some(r => r.id === '203-CASE-18'));
@@ -204,7 +227,10 @@ for (const updateId of new Set(annualCaseReviews.records.map(r => r.update_id ??
   const update = await json(`src/content/updates/${updateId.replace(/^update-/, '')}.json`);
   assert.equal(update.id, updateId);
   assert.deepEqual(update.affected_record_ids, annualCaseReviews.records.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId).map(r => r.record_id));
-  for (const r of annualCaseReviews.records.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) assert(update.related_paths.includes(r.route));
+  for (const r of annualCaseReviews.records.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) {
+    assert(update.related_paths.includes(r.route));
+    assert.equal(update.effective_date, annualReviewDate(r), 'Update and per-record correction dates differ');
+  }
 }
 assert.equal(ops.governed_series_admitted, 0);
-console.log('Annual-case source checks passed: 7 exact notices, 3 current overviews, 7 changed paragraphs, 1 heading, 99 unchanged bodies; original records, exact acquired artifacts and receipt hashes, catalog/search propagation, route/date boundaries and approval/measurement holds preserved; false-association fixtures rejected.');
+console.log('Annual source checks passed: 11 exact notices, 3 current overviews, 15 changed paragraphs, 1 heading, 95 unchanged bodies; two Golden-Mars pairs agree, per-record review dates and all earlier reviews/checks remain pinned. Original records, source/receipt bindings and approval/measurement holds preserved.');
