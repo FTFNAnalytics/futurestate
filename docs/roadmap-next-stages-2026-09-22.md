@@ -2,7 +2,7 @@
 
 Status: execution plan prepared from the current repository; implementation and review gates remain individually governed.
 
-Current planning supplement: [next-stage execution plan](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/next-build-execution-plan-2026-09-22.md>) turns the remaining work into a prioritized first sprint, makes the full-v1 portfolio/edition/translation gap explicit, and avoids restarting completed source checks. The original starting snapshot and six-stage acceptance contracts below are retained.
+Current planning supplement, refreshed September 23: [next-stage execution plan](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/next-build-execution-plan-2026-09-22.md>) starts from recovered commit `b7bd8314` and the already-applied eight-reader annual correction batch. It supersedes the old sprint order and tentative scheduling below, separates completed implementation from pending validation and human acceptance, and preserves the full-v1 portfolio, edition, language and release requirements. The original starting snapshot and six-stage acceptance contracts below are retained as dated planning history.
 
 Execution tracking: the starting-point table below is the planning baseline, not the latest build result. See the [current build progress](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/build-progress-2026-09-22.md>) for subsequent validated changes and the [full completion audit](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/completion-audit.md>) for remaining proof at every stage. A technical checkpoint does not close the independent-review, owner or real-calendar gates.
 

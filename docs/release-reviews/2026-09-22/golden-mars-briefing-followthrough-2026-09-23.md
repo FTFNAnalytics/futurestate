@@ -1,5 +1,7 @@
 # Golden-Mars — eight-briefing follow-through
 
+Checkpoint completed: commit `b7bd8314950281424051a0782b7d6e0c57508d95` recovered byte-for-byte at 19:52:27.049 UTC, covering 9,539 files and 219,740,172 source bytes. The [recovery diagnostic](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T19-51-06.060Z-K7VoPh/git-recovery-verification.json>) binds this exact candidate, receipt, terminal logs and unchanged lockfile. The later annual correction has a separate in-progress validation; pending-recovery wording below records this briefing batch before its completed diagnostic.
+
 September 23, 2026. Local editorial implementation, not fresh retrieval, independent acceptance, a decision on an evidence gate or release authority.
 
 ## Recovered starting point

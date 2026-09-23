@@ -16,7 +16,35 @@ const evidence = await json('src/data/phase-60-current-decisions.json');
 const sources = await Promise.all((await readdir(join(root, 'src/content/sources'))).filter(f => f.endsWith('.json')).map(f => json(`src/content/sources/${f}`)));
 const sourceMap = new Map(sources.map(s => [s.id, s]));
 const pairedIds = ['203-SYNTHESIS-01', '200-MONOGRAPH-01', '203-SYNTHESIS-03', '200-MONOGRAPH-03'];
-const expectedIds = ['203-CASE-02', '203-CASE-12', '203-CASE-14', '203-CASE-04', '203-CASE-16', '203-CASE-03', '203-CASE-18', ...pairedIds];
+const spacePairedIds = ['203-SYNTHESIS-06', '200-MONOGRAPH-06', '203-SYNTHESIS-08', '200-MONOGRAPH-08'];
+const allPairedIds = [...pairedIds, ...spacePairedIds];
+const citationIds = ['203-APPENDIX-01', '203-APPENDIX-02', '203-TOPIC-17', '203-TOPIC-06'];
+const laterIds = [...allPairedIds, ...citationIds];
+const expectedIds = ['203-CASE-02', '203-CASE-12', '203-CASE-14', '203-CASE-04', '203-CASE-16', '203-CASE-03', '203-CASE-18', ...laterIds];
+const citationSources = new Map([["203-APPENDIX-01","source-161-lbnl-data-center-energy-usage-2024"],["203-TOPIC-17","source-chandler-reclaimed-water-system"],["203-TOPIC-06","source-noaa-2025-global-climate-report"]]);
+const citationProfilePins = new Map([["source-161-lbnl-data-center-energy-usage-2024","0a31c39d4b27d17075a368fb20ba2ff7f91b569594d3447cc3019c65c8edf7a6"],["source-noaa-2025-global-climate-report","dd8c9f18902e20b541696978d494fdaf7238849a6e453093262c1cd487b1c3bc"],["source-chandler-reclaimed-water-system","b21de1128514758b92beb9f446b31234794e249cd2d7c5657c280ce57912cf8a"]]);
+for (const [id, pin] of citationProfilePins) assert.equal(hash(await raw('src/content/sources/'+id+'.json')), pin, 'Additional source profile bytes changed');
+const originalReport = await json('src/data/phase-203-state-of-future-systems-2026.json');
+const reportByteHash = hash(await raw('src/data/phase-203-state-of-future-systems-2026.json'));
+assert.equal(reportByteHash, '5623c3d52263ab65628edc38d987dc33a31d19909312be1a282dd56c027d9021');
+const readerByteHash = hash(await raw('src/data/phase-204-reader-completion.json'));
+let expandedPairs = 0, subsetReaders = 0;
+assert.equal(originalReport.report_package_records.length, 58);
+assert.equal(new Set(originalReport.report_package_records.map(r=>r.report_record_id)).size, 58);
+for (const contract of originalReport.report_package_records) {
+  const article = pack.records.find(r=>r.record_id===contract.report_record_id);
+  assert(article);
+  const additional = article.source_ids.filter(id=>!contract.source_ids.includes(id));
+  if (additional.length) {
+    expandedPairs++;
+    assert(contract.upstream_monograph_id);
+    const pair = pack.records.find(r=>r.record_id===contract.upstream_monograph_id);
+    assert(pair);
+    assert.deepEqual(article.source_ids,pair.source_ids);
+    assert.deepEqual(article.sections,pair.sections);
+  } else subsetReaders++;
+}
+assert.equal(expandedPairs,12);assert.equal(subsetReaders,46);
 const acquiredGoldenArtifacts = new Map([
   ['https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF', '5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec'],
   ['https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF', '0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054'],
@@ -33,7 +61,9 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
   assert.equal(data.review_date, '2026-09-22');
   assert.equal(data.latest_review_date, '2026-09-23');
   assert.equal(hash(JSON.stringify(data.records.slice(0, 7))), '054c81854e26fe58f786b24050984d4b3e5ce34ca746b7a1a0453863cff1ab69', 'Earlier seven reviews changed');
-  assert.equal(data.records.reduce((n, r) => n + r.replacements.length, 0), 15);
+  assert.equal(hash(JSON.stringify(data.records.slice(0, 11))), '4cf9116132695d46acc0e382bbd16f994ba7618e8c9c195603f2cb4a4a5a9c5c', 'Earlier eleven reviews changed');
+  assert.equal(hash(JSON.stringify(data.records.slice(0, 15))), 'ca8db6563e3b2761aa22c5b422b38a09dda18536f3a81b4e1ee1dcccc11a27e8', 'Earlier fifteen reviews changed');
+  assert.equal(data.records.reduce((n, r) => n + r.replacements.length, 0), 29);
   assert.equal(data.records.filter(r => r.overview_replacement).length, 3);
   assert.equal(data.records.reduce((n, r) => n + (r.heading_replacements?.length ?? 0), 0), 1);
   for (const r of data.records) {
@@ -42,12 +72,35 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
     assert.equal(readerCatalog.find(a => a.id === r.record_id).route, r.route, 'Canonical route drift');
     assert.equal(r.independent_article_review, false);
     assert.equal(r.approval_receipt_id, null);
-    assert.equal(r.review_date, pairedIds.includes(r.record_id) ? '2026-09-23' : undefined);
+    assert.equal(r.review_date, laterIds.includes(r.record_id) ? '2026-09-23' : undefined);
     if (pairedIds.includes(r.record_id)) {
       assert.equal(r.update_id, 'update-2026-09-23-annual-golden-mars-paired-readings');
       assert.equal(hash(JSON.stringify(r.source_checks)), '99a14f6598f8e8c76e4a806179cdf0fb23e26c2bdcc36e48c091aff1c32b75b2', 'Retained September 22 checks changed');
       assert(r.summary.includes('not a new artifact retrieval'));
       assert.equal(r.replacements.length, r.record_id.endsWith('-01') ? 3 : 1);
+    }
+    if (spacePairedIds.includes(r.record_id)) {
+      assert.equal(r.update_id, 'update-2026-09-23-annual-space-coast-paired-readings');
+      assert.deepEqual(r.source_checks, [], 'No fresh Space Coast inspection claimed');
+      assert.deepEqual(r.retained_contexts, data.records[3].retained_contexts, 'Separate retained renewal binding changed');
+      assert.equal(r.replacements.length, r.record_id.endsWith('-06') ? 4 : 1);
+      assert(r.summary.includes('not a fresh FAA search'));
+    }
+    if (citationIds.includes(r.record_id)) {
+      assert.equal(r.update_id,'update-2026-09-23-annual-citation-provenance-followthrough');
+      assert.equal(r.replacements.length,1);
+      assert.deepEqual(r.retained_contexts,[]);
+      assert.equal(r.source_checks.length,citationSources.has(r.record_id)?1:0);
+      if (r.record_id === '203-APPENDIX-02') {
+        const context = r.local_provenance_context;
+        assert.equal(context.checked_date,'2026-09-23');
+        assert.deepEqual([context.report_records,context.expanded_pairs,context.remaining_subset_records],[58,12,46]);
+        assert.deepEqual(context.artifacts.map(a=>[a.route,a.sha256]),[
+          ['/data/phase-203-state-of-future-systems-2026.json',reportByteHash],
+          ['/data/phase-204-reader-completion.json',readerByteHash]
+        ]);
+        assert(context.scope.includes('not independent verification'));
+      } else assert(!r.local_provenance_context);
     }
     if (r.overview_replacement) {
       assert(['203-CASE-04', '203-CASE-03', '203-CASE-18'].includes(r.record_id));
@@ -66,7 +119,18 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
       assert(change.reason && change.replacement_text && change.replacement_text !== change.original_text);
     }
     for (const check of r.source_checks) {
-      assert(article.source_ids.includes(check.source_id));
+      if (check.additional_source === true) {
+        assert.equal(check.source_id,citationSources.get(r.record_id),'Additional source is scoped to another article');
+        assert(!article.source_ids.includes(check.source_id),'Additional source misrepresented as an original citation');
+        assert.equal(check.source_profile_sha256,citationProfilePins.get(check.source_id),'Additional profile hash drift');
+        assert.equal(check.checked_date,'2026-09-23');
+        assert.equal(check.checked_date,annualReviewDate(r));
+        assert(check.relation.includes('not part of the original'));
+        assert(check.relation.includes('not a remote-page capture'));
+      } else {
+        assert(!citationSources.has(r.record_id),'Missing explicit additional-source marker');
+        assert(article.source_ids.includes(check.source_id));
+      }
       if (check.profile_url) {
         assert(['203-CASE-03', ...pairedIds].includes(r.record_id), 'Additional artifact is not scoped to a reviewed Golden-Mars reading');
         assert.equal(check.source_id, 'source-virginia-scc-golden-mars-2026');
@@ -77,7 +141,7 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
       } else assert.equal(check.url, sourceMap.get(check.source_id)?.url, 'Checked source URL drift');
       assert(check.locator && check.access && check.finding);
     }
-    assert.equal(r.retained_contexts.length, ['203-CASE-03', '203-CASE-18', ...pairedIds].includes(r.record_id) ? 0 : 1);
+    assert.equal(r.retained_contexts.length, ['203-CASE-03', '203-CASE-18', ...pairedIds, ...citationIds].includes(r.record_id) ? 0 : 1);
     for (const b of r.retained_contexts) {
       assert(['receipts', 'pilot_research_followups', 'evidence_receipts'].includes(b.collection));
       const receipt = (b.collection === 'evidence_receipts' ? decisions.receipts : operations[b.collection]).find(v => (v.receipt_id ?? v.review_id) === b.id);
@@ -163,6 +227,19 @@ for (const mutate of [
   d => { d.records[8].replacements[0].original_text = 'Wrong paired paragraph'; },
   d => { d.records[9].approval_receipt_id = 'invented-paired-approval'; },
   d => { d.records[10].route = d.records[9].route; },
+  d => { d.records[11].review_date = '2026-09-22'; },
+  d => { d.records[11].retained_contexts[0].id = 'receipt-60-slf-2026-08-15-no-material-change'; },
+  d => { d.records[12].source_checks.push({source_id:'invented'}); },
+  d => { d.records[13].replacements[0].original_text = 'Wrong paired paragraph'; },
+  d => { d.records[14].approval_receipt_id = 'invented-space-approval'; },
+  d => { d.records[15].source_checks[0].source_id = 'source-161-lbnl-queued-up-2026'; },
+  d => { d.records[15].source_checks[0].additional_source = false; },
+  d => { d.records[16].local_provenance_context.expanded_pairs = 0; },
+  d => { d.records[16].local_provenance_context.artifacts[0].sha256 = '0'.repeat(64); },
+  d => { d.records[17].source_checks[0].source_profile_sha256 = '0'.repeat(64); },
+  d => { d.records[17].source_checks[0].url = 'https://example.invalid/unrelated-water'; },
+  d => { d.records[18].source_checks[0].checked_date = '2026-09-01'; },
+  d => { d.records[18].approval_receipt_id = 'invented-climate-review'; },
 ]) {
   const changed = structuredClone(annualCaseReviews); mutate(changed);
   assert.throws(() => assertBindings(changed));
@@ -192,7 +269,7 @@ for (const a of pack.records) {
   });
   if (!review) { assert(!expectedIds.includes(a.record_id)); continue; }
   notices++;
-  if (pairedIds.includes(a.record_id)) {
+  if (laterIds.includes(a.record_id)) {
     assert.equal(annualCaseReview(a, {asOfDate:'2026-09-22'}), null, 'Later clarification leaked into an earlier presentation');
     assert.deepEqual(applyAnnualCaseReview(a, {asOfDate:'2026-09-22'}).sections, a.sections);
   }
@@ -206,8 +283,8 @@ for (const a of pack.records) {
   const contexts = annualReviewContexts(review); assert.equal(contexts.length, review.retained_contexts.length);
   for (const context of contexts) assert(context.summary && context.next_action);
 }
-assert.equal(notices, 11); assert.equal(changedBodies, 9); assert.equal(changedParagraphs, 15); assert.equal(changedOverviews, 3); assert.equal(changedHeadings, 1);
-for (const suffix of ['01', '03']) {
+assert.equal(notices, 19); assert.equal(changedBodies, 17); assert.equal(changedParagraphs, 29); assert.equal(changedOverviews, 3); assert.equal(changedHeadings, 1);
+for (const suffix of ['01', '03', '06', '08']) {
   const [report, essay] = [`203-SYNTHESIS-${suffix}`, `200-MONOGRAPH-${suffix}`].map(id => pack.records.find(a => a.record_id === id));
   assert.deepEqual(applyAnnualCaseReview(report).sections, applyAnnualCaseReview(essay).sections, 'Paired current readings diverged');
 }
@@ -233,4 +310,4 @@ for (const updateId of new Set(annualCaseReviews.records.map(r => r.update_id ??
   }
 }
 assert.equal(ops.governed_series_admitted, 0);
-console.log('Annual source checks passed: 11 exact notices, 3 current overviews, 15 changed paragraphs, 1 heading, 95 unchanged bodies; two Golden-Mars pairs agree, per-record review dates and all earlier reviews/checks remain pinned. Original records, source/receipt bindings and approval/measurement holds preserved.');
+console.log('Annual source checks passed: 19 exact notices, 3 current overviews, 29 changed paragraphs, 1 heading, 87 unchanged bodies; three explicitly additional sources and 58-row lineage proof; Golden-Mars and Space Coast pairs agree, per-record review dates and all earlier reviews/checks remain pinned. Original records, source/receipt bindings and approval/measurement holds preserved.');

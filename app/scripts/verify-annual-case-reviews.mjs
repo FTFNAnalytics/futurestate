@@ -6,6 +6,7 @@ import {parse} from 'parse5';
 import {annualCaseReviews, annualReviewContexts, annualCaseOverview, annualReviewDate} from '../src/lib/annual-case-reviews.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 import history from '../src/data/phase-204-reader-completion.json' with {type:'json'};
+import originalReport from '../src/data/phase-203-state-of-future-systems-2026.json' with {type:'json'};
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
 const read = p => readFile(join(root, p), 'utf8');
 const attr = (node, key) => node.attrs?.find(a => a.name === key)?.value;
@@ -90,6 +91,27 @@ for (const article of history.records) {
     assert(hrefs.includes(check.url));
     for (const value of [check.locator, check.access, check.finding]) assert(visible.includes(value));
     if (check.relation) assert(visible.includes(check.relation), 'Additional-artifact relation must be visible');
+    if (check.additional_source === true) {
+      const exact = sourceChecks.filter(n=>attr(n,'data-annual-source-check')===check.source_id);
+      assert.equal(exact.length,1);
+      assert(text(exact[0]).includes('Additional source: '+check.locator));
+      assert(text(exact[0]).includes('Editorial source check: '+check.checked_date));
+      assert(text(exact[0]).includes('does not replace the original source list'));
+      assert(!article.source_ids.includes(check.source_id));
+    }
+  }
+  const localProof = all(notice,n=>attr(n,'data-annual-local-provenance')!==undefined);
+  assert.equal(localProof.length,review.local_provenance_context?1:0);
+  if (review.local_provenance_context) {
+    assert.equal(article.record_id,'203-APPENDIX-02');
+    const proof=review.local_provenance_context;
+    assert.equal(attr(localProof[0],'data-annual-local-provenance'),article.record_id);
+    assert(text(localProof[0]).includes(proof.checked_date));
+    assert(text(localProof[0]).includes(proof.scope));
+    assert(text(localProof[0]).includes(proof.report_records+' original annual readers were compared: '+proof.expanded_pairs+' use the expanded paired-essay text and sources; the other '+proof.remaining_subset_records+' have no source IDs outside their original report contracts.'), 'Rendered local lineage counts or meaning differ');
+    for(const artifact of proof.artifacts)assert(links(localProof[0]).includes(artifact.route));
+    assert.deepEqual(JSON.parse(await read('/data/phase-203-state-of-future-systems-2026.json')),originalReport);
+    assert.deepEqual(JSON.parse(await read('/data/phase-204-reader-completion.json')),history);
   }
   for (const context of annualReviewContexts(review)) {
     assert.equal(all(notice, n => attr(n, 'data-annual-retained-context') === context.id).length, 1);
@@ -104,7 +126,7 @@ for (const article of history.records) {
     assert(text(target).includes(context.summary), `Destination omits retained finding ${context.id}`);
   }
 }
-assert.equal(totalNotices, 11); assert.equal(revisedParagraphs, 15); assert.equal(revisedOverviews, 3); assert.equal(revisedHeadings, 1);
+assert.equal(totalNotices, 19); assert.equal(revisedParagraphs, 29); assert.equal(revisedOverviews, 3); assert.equal(revisedHeadings, 1);
 assert.deepEqual(JSON.parse(await read(annualCaseReviews.export_route)), annualCaseReviews);
 assert.deepEqual(JSON.parse(await read('/data/phase-204-reader-completion.json')), history);
 assert.deepEqual(JSON.parse(await read('/data/reader-catalog.json')).records, readerCatalog);
@@ -114,4 +136,4 @@ for (const updateId of new Set(annualCaseReviews.records.map(r => r.update_id ??
   assert(links(update).includes(annualCaseReviews.export_route));
   for (const r of annualCaseReviews.records.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) assert(links(update).includes(r.route));
 }
-console.log('Annual output verified across all 104 original reader routes: 11 scoped notices, 3 current overviews, 15 current paragraphs, 1 heading with stable anchors, inspectable originals, exact source/receipt links, per-record catalog dates and matching dated updates/export. No browser, independent or release approval claimed.');
+console.log('Annual output verified across all 104 original reader routes: 19 scoped notices, 3 current overviews, 29 current paragraphs, 1 heading with stable anchors, inspectable originals, exact source/receipt links, per-record catalog dates, three explicit additional source checks, local provenance links and matching dated updates/export. No browser, independent or release approval claimed.');

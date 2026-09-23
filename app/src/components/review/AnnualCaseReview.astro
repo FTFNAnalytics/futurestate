@@ -22,10 +22,18 @@ const contexts = annualReviewContexts(review);
     <p>{change.original_text}</p><p><strong>Reason for clarification:</strong> {change.reason}</p>
   </details>)}
   {review.source_checks.map(source => <section data-annual-source-check={source.source_id}>
-    <h3><a href={source.url}>Source check: {source.locator}</a></h3>
+    <h3><a href={source.url}>{'additional_source' in source && source.additional_source === true ? 'Additional source' : 'Source check'}: {source.locator}</a></h3>
+    {'checked_date' in source && <p>Editorial source check: {source.checked_date}. This additional citation does not replace the original source list or reset the source profile's check date.</p>}
     {'relation' in source && source.relation && <p>{source.relation}</p>}
     <p>{source.finding}</p><p>{source.access}</p>
   </section>)}
+  {'local_provenance_context' in review && review.local_provenance_context && <section data-annual-local-provenance={review.record_id}>
+    <h3>Local source-list comparison · {review.local_provenance_context.checked_date}</h3>
+    <p>{review.local_provenance_context.scope}</p>
+    <p>{review.local_provenance_context.report_records} original annual readers were compared: {review.local_provenance_context.expanded_pairs} use the expanded paired-essay text and sources; the other {review.local_provenance_context.remaining_subset_records} have no source IDs outside their original report contracts.</p>
+    <ul>{review.local_provenance_context.artifacts.map(artifact => <li><a href={artifact.route}>{artifact.label}</a></li>)}</ul>
+    <p>This comparison establishes local editorial lineage, not independent factual acceptance of the sources or their claims.</p>
+  </section>}
   {contexts.map(context => <section data-annual-retained-context={context.id}>
     <h3><a href={context.route}>Retained finding · {context.checked_date}</a></h3>
     <p>{context.relation}</p><p>{context.summary}</p>

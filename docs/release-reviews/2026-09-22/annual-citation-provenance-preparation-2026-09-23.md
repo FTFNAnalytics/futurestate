@@ -1,4 +1,6 @@
-# Annual citation and provenance corrections — prepared, not applied
+# Annual citation and provenance corrections — preparation record
+
+Subsequent implementation: these prepared changes are now applied together with the four Space Coast readings. The application's source suite and type checking pass; full candidate validation remains in progress. Follow [the implementation report](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-space-citation-followthrough-2026-09-23.md>) for current status. The prepared-only descriptions and prototype results below retain their earlier, narrower scope; do not reapply those patches.
 
 September 23, 2026. Preparation outside the application while the eight-briefing candidate validates. This performs local version/relationship checks and reuses the already-recorded September 23 primary-page acquisitions. It is not a fresh external check, article acceptance or a change to the running candidate.
 
