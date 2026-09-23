@@ -48,6 +48,12 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'src/data/golden-mars-signal-review.json',
+  'src/lib/golden-mars-signal-review.mjs',
+  'src/content/signals/signal-golden-mars-transmission-conditional-approval.mdx',
+  'src/content/updates/2026-09-22-golden-mars-signal-followthrough.json',
+  'scripts/assert-golden-mars-signal-review.mjs',
+  'scripts/verify-golden-mars-signal-review.mjs',
   'src/data/annual-case-reviews.json',
   'src/lib/annual-case-reviews.mjs',
   'src/components/review/AnnualCaseReview.astro',

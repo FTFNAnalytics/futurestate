@@ -5,6 +5,7 @@ import {projectSignal,signalClassification} from './signal-classification.mjs';
 import currentOperations from '../data/phase-207-current-operations.json' with {type:'json'};
 import {backlogReviewsFor} from './backlog-research.mjs';
 import {projectChecksFor as projectChecks} from './current-project-checks.mjs';
+import {goldenMarsSignalContext} from './golden-mars-signal-review.mjs';
 
 export const PUBLIC_DATA_SCHEMA_VERSION = "1.0";
 
@@ -72,6 +73,7 @@ export function serializePublicSignal(signal: CollectionEntry<"signals">) {
     slug: data.slug,
     path: `/signals/${data.slug}/`,
     editorial_classification: signalClassification(data.id),
+    dated_signal_review: goldenMarsSignalContext(data.id),
     dated_project_checks: projectChecks(data.id),
     bounded_backlog_research: backlogReviewsFor(currentOperations, {recordId: data.id}),
     record_status: data.record_status,

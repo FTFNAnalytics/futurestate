@@ -30,4 +30,13 @@ SHA-256 uses UTF-8 JSON.stringify(record), without a trailing newline, from [the
 | 203-CASE-19 | 15286d76aa12f8c9145bd50eccec1a015d10d2ea42ea23264267d2a3685a93ba |
 | 203-CASE-20 | ab167f7ab1e0001e1415a22284036617ff8139713f94e40f13273d7e21bced69 |
 
-All 24 annual case studies now have bounded assisted comparisons. The remaining 34 of 58 annual records are seventeen chapters, twelve findings and five appendices. All 58 still require applicable independent acceptance. Comparison coverage is not source completeness, acceptance or release readiness.
+All 24 annual case studies now have bounded assisted comparisons. At this batch's completion the remaining 34 of 58 annual records were seventeen chapters, twelve findings and five appendices. The later [annual handoff](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-review-handoff.md>) records completion of all 58 assisted comparisons. All 58 still require applicable independent acceptance. Comparison coverage is not source completeness, acceptance or release readiness.
+
+## Subsequent Victorian Big Battery primary HTML checks
+
+Checked September 22, 2026, America/Edmonton, after the retained-evidence comparison above. These are two fresh read-only HTML inspections for the next content batch, not changes to the running candidate or an independent review.
+
+- The [AEMO October 8, 2021 system update](https://www.aemo.com.au/newsroom/news-updates/state-of-the-system-update-october-2021), under NEM connections / Q3 highlights, lists Victorian Big Battery at 300 MW among generators registered since July 1. This locates the registration announcement; it does not give the battery's precise registration day or establish operation on July 1.
+- The [AEMO December 8, 2021 service announcement](https://www.aemo.com.au/newsroom/media-release/victorian-battery-delivering-energy-reserves-in-summer), opening three paragraphs and SIPS footnote, reports the SIPS service operational following commissioning. It distinguishes a contract for up to 250 MW reserve from the 300 MW/450 MWh facility and describes the seasonal control scheme. This is a dated service announcement, not measured annual availability, utilization or a subsequent operating-status check.
+
+The September probable-cause/conditional-commissioning artifact and underlying service contract were not freshly inspected in this follow-up. Complete those exact-source checks before treating the proposed multi-stage chronology as fully source-reviewed. No PDF, browser automation, telemetry ledger or later amendment was inspected here; no annual text was changed by these two checks.

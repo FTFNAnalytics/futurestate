@@ -1,6 +1,7 @@
 import { defineCollection } from "astro:content";
 import { z } from "astro/zod";
 import { glob } from "astro/loaders";
+import { projectGoldenMarsSignalData } from './lib/golden-mars-signal-review.mjs';
 
 const frameworkLayer = z.enum([
   "Planetary Conditions",
@@ -390,7 +391,7 @@ const signals = defineCollection({
     local_evidence_level: localEvidenceLevel.default("None"),
     last_reviewed_date: z.coerce.date().optional(),
     editorial_notes: z.string().optional()
-  })
+  }).transform(data => projectGoldenMarsSignalData(data))
 });
 
 const sources = defineCollection({
