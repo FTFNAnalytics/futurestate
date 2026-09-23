@@ -711,8 +711,8 @@
       "route": "/reference/state-of-future-systems/synthesis-climate-infrastructure-reliability/",
       "source_record_sha256": "76d0af628095047fd694eddcb8b3efb53795a4b0a73df3945e0f8d5806ae4606",
       "review_date": "2026-09-23",
-      "update_id": "update-2026-09-23-annual-space-coast-paired-readings",
-      "summary": "Reuses the existing renewal finding, not a fresh FAA search or present-authority certification. Original readers and dates, the August receipt, site/operator/vehicle/mission distinctions and October follow-up remain. Other numerical, battery, Toronto and Amtrak claims are not cleared by this scoped change.",
+      "update_id": "update-2026-09-23-annual-battery-chronology",
+      "summary": "Reuses the existing renewal finding, not a fresh FAA search or present-authority certification. Original readers and dates, the August receipt, site/operator/vehicle/mission distinctions and October follow-up remain. Other numerical, battery, Toronto and Amtrak claims are not cleared by this scoped change. The current battery name is now corrected to Victorian Big Battery; this naming change is not a new battery source inspection. The preceding review and its renewal clarification remain preserved.",
       "replacements": [
         {
           "section_heading": "Launch activity illustrates another denominator problem",
@@ -720,6 +720,20 @@
           "replacement_text": "The Space Coast environmental and licensing records concern particular sites and authorizations. The retained September 15 check located the Shuttle Landing Facility's formal site-licence renewal; launches elsewhere in the region neither supplied that instrument nor establish its operator-, vehicle- or mission-specific permissions. The October 9 follow-up remains a check for later amendments or disposition. Site authority, actual use and safety outcomes have different scopes and cannot be combined into one reliability trend.",
           "original_text": "The Space Coast environmental and licensing records likewise concern particular sites and authorizations. A launch count elsewhere in the region cannot resolve an open Shuttle Landing Facility license question. This example belongs in a resilience chapter because it exposes the temptation to combine activity, permission and safety into one trend when their populations differ.",
           "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+        },
+        {
+          "section_heading": "System composition is not an asset reliability measure",
+          "paragraph_index": 0,
+          "original_text": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in the first quarter of 2026. It also reports that South Australia's renewable-and-storage contribution reached 98.8% during one half-hour. These are meaningful system and interval observations. They do not state Hornsdale's annual availability, Dalrymple's individual dispatch or the Victoria Big Battery's maintenance condition.",
+          "replacement_text": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in the first quarter of 2026. It also reports that South Australia's renewable-and-storage contribution reached 98.8% during one half-hour. These are meaningful system and interval observations. They do not state Hornsdale's annual availability, Dalrymple's individual dispatch or the Victorian Big Battery's maintenance condition.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        },
+        {
+          "section_heading": "Commissioning, registration and later service need separate records",
+          "paragraph_index": 0,
+          "original_text": "The Victoria Big Battery dossier separates Energy Safe Victoria's fire-investigation material from AEMO registration and operational information. Its documented questions concern commissioning and isolation, system-protection participation and emergency reserve controls. The inherited account leaves corrective-action closure and a compatible annual operating series unresolved. It does not turn the chronology into a general safety or reliability verdict.",
+          "replacement_text": "The Victorian Big Battery dossier separates Energy Safe Victoria's fire-investigation material from AEMO registration and operational information. Its documented questions concern commissioning and isolation, system-protection participation and emergency reserve controls. The inherited account leaves corrective-action closure and a compatible annual operating series unresolved. It does not turn the chronology into a general safety or reliability verdict.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
         }
       ],
       "source_checks": [],
@@ -737,15 +751,56 @@
         }
       ],
       "independent_article_review": false,
-      "approval_receipt_id": null
+      "approval_receipt_id": null,
+      "previous_review": {
+        "record_id": "203-SYNTHESIS-08",
+        "route": "/reference/state-of-future-systems/synthesis-climate-infrastructure-reliability/",
+        "source_record_sha256": "76d0af628095047fd694eddcb8b3efb53795a4b0a73df3945e0f8d5806ae4606",
+        "review_date": "2026-09-23",
+        "update_id": "update-2026-09-23-annual-space-coast-paired-readings",
+        "summary": "Reuses the existing renewal finding, not a fresh FAA search or present-authority certification. Original readers and dates, the August receipt, site/operator/vehicle/mission distinctions and October follow-up remain. Other numerical, battery, Toronto and Amtrak claims are not cleared by this scoped change.",
+        "replacements": [
+          {
+            "section_heading": "Launch activity illustrates another denominator problem",
+            "paragraph_index": 1,
+            "replacement_text": "The Space Coast environmental and licensing records concern particular sites and authorizations. The retained September 15 check located the Shuttle Landing Facility's formal site-licence renewal; launches elsewhere in the region neither supplied that instrument nor establish its operator-, vehicle- or mission-specific permissions. The October 9 follow-up remains a check for later amendments or disposition. Site authority, actual use and safety outcomes have different scopes and cannot be combined into one reliability trend.",
+            "original_text": "The Space Coast environmental and licensing records likewise concern particular sites and authorizations. A launch count elsewhere in the region cannot resolve an open Shuttle Landing Facility license question. This example belongs in a resilience chapter because it exposes the temptation to combine activity, permission and safety into one trend when their populations differ.",
+            "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+          }
+        ],
+        "source_checks": [],
+        "retained_contexts": [
+          {
+            "collection": "evidence_receipts",
+            "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+            "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+            "route": "/review/evidence-cycle/space-coast-slf-licence/",
+            "relation": "Exact Shuttle Landing Facility source ID shared with the retained September 15 decision. This applies an existing finding to the annual reader; it is not a fresh licence check, an independent article review or a new stage admission.",
+            "matched_source_ids": [
+              "source-faa-shuttle-landing-facility-license"
+            ],
+            "additional_artifact_urls": []
+          }
+        ],
+        "independent_article_review": false,
+        "approval_receipt_id": null
+      },
+      "related_readings": [
+        {
+          "record_id": "203-CASE-13",
+          "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+          "label": "Victorian Big Battery: dated case history",
+          "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+        }
+      ]
     },
     {
       "record_id": "200-MONOGRAPH-08",
       "route": "/reference/constraint-monographs/climate-infrastructure-reliability/",
       "source_record_sha256": "724dfa15362b4aa800558ddc59d5f9a35c7ee25b33392f891598a80ed3f2c8fd",
       "review_date": "2026-09-23",
-      "update_id": "update-2026-09-23-annual-space-coast-paired-readings",
-      "summary": "Reuses the existing renewal finding, not a fresh FAA search or present-authority certification. Original readers and dates, the August receipt, site/operator/vehicle/mission distinctions and October follow-up remain. Other numerical, battery, Toronto and Amtrak claims are not cleared by this scoped change.",
+      "update_id": "update-2026-09-23-annual-battery-chronology",
+      "summary": "Reuses the existing renewal finding, not a fresh FAA search or present-authority certification. Original readers and dates, the August receipt, site/operator/vehicle/mission distinctions and October follow-up remain. Other numerical, battery, Toronto and Amtrak claims are not cleared by this scoped change. The current battery name is now corrected to Victorian Big Battery; this naming change is not a new battery source inspection. The preceding review and its renewal clarification remain preserved.",
       "replacements": [
         {
           "section_heading": "Launch activity illustrates another denominator problem",
@@ -753,6 +808,20 @@
           "replacement_text": "The Space Coast environmental and licensing records concern particular sites and authorizations. The retained September 15 check located the Shuttle Landing Facility's formal site-licence renewal; launches elsewhere in the region neither supplied that instrument nor establish its operator-, vehicle- or mission-specific permissions. The October 9 follow-up remains a check for later amendments or disposition. Site authority, actual use and safety outcomes have different scopes and cannot be combined into one reliability trend.",
           "original_text": "The Space Coast environmental and licensing records likewise concern particular sites and authorizations. A launch count elsewhere in the region cannot resolve an open Shuttle Landing Facility license question. This example belongs in a resilience chapter because it exposes the temptation to combine activity, permission and safety into one trend when their populations differ.",
           "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+        },
+        {
+          "section_heading": "System composition is not an asset reliability measure",
+          "paragraph_index": 0,
+          "original_text": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in the first quarter of 2026. It also reports that South Australia's renewable-and-storage contribution reached 98.8% during one half-hour. These are meaningful system and interval observations. They do not state Hornsdale's annual availability, Dalrymple's individual dispatch or the Victoria Big Battery's maintenance condition.",
+          "replacement_text": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in the first quarter of 2026. It also reports that South Australia's renewable-and-storage contribution reached 98.8% during one half-hour. These are meaningful system and interval observations. They do not state Hornsdale's annual availability, Dalrymple's individual dispatch or the Victorian Big Battery's maintenance condition.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        },
+        {
+          "section_heading": "Commissioning, registration and later service need separate records",
+          "paragraph_index": 0,
+          "original_text": "The Victoria Big Battery dossier separates Energy Safe Victoria's fire-investigation material from AEMO registration and operational information. Its documented questions concern commissioning and isolation, system-protection participation and emergency reserve controls. The inherited account leaves corrective-action closure and a compatible annual operating series unresolved. It does not turn the chronology into a general safety or reliability verdict.",
+          "replacement_text": "The Victorian Big Battery dossier separates Energy Safe Victoria's fire-investigation material from AEMO registration and operational information. Its documented questions concern commissioning and isolation, system-protection participation and emergency reserve controls. The inherited account leaves corrective-action closure and a compatible annual operating series unresolved. It does not turn the chronology into a general safety or reliability verdict.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
         }
       ],
       "source_checks": [],
@@ -770,7 +839,48 @@
         }
       ],
       "independent_article_review": false,
-      "approval_receipt_id": null
+      "approval_receipt_id": null,
+      "previous_review": {
+        "record_id": "200-MONOGRAPH-08",
+        "route": "/reference/constraint-monographs/climate-infrastructure-reliability/",
+        "source_record_sha256": "724dfa15362b4aa800558ddc59d5f9a35c7ee25b33392f891598a80ed3f2c8fd",
+        "review_date": "2026-09-23",
+        "update_id": "update-2026-09-23-annual-space-coast-paired-readings",
+        "summary": "Reuses the existing renewal finding, not a fresh FAA search or present-authority certification. Original readers and dates, the August receipt, site/operator/vehicle/mission distinctions and October follow-up remain. Other numerical, battery, Toronto and Amtrak claims are not cleared by this scoped change.",
+        "replacements": [
+          {
+            "section_heading": "Launch activity illustrates another denominator problem",
+            "paragraph_index": 1,
+            "replacement_text": "The Space Coast environmental and licensing records concern particular sites and authorizations. The retained September 15 check located the Shuttle Landing Facility's formal site-licence renewal; launches elsewhere in the region neither supplied that instrument nor establish its operator-, vehicle- or mission-specific permissions. The October 9 follow-up remains a check for later amendments or disposition. Site authority, actual use and safety outcomes have different scopes and cannot be combined into one reliability trend.",
+            "original_text": "The Space Coast environmental and licensing records likewise concern particular sites and authorizations. A launch count elsewhere in the region cannot resolve an open Shuttle Landing Facility license question. This example belongs in a resilience chapter because it exposes the temptation to combine activity, permission and safety into one trend when their populations differ.",
+            "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+          }
+        ],
+        "source_checks": [],
+        "retained_contexts": [
+          {
+            "collection": "evidence_receipts",
+            "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+            "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+            "route": "/review/evidence-cycle/space-coast-slf-licence/",
+            "relation": "Exact Shuttle Landing Facility source ID shared with the retained September 15 decision. This applies an existing finding to the annual reader; it is not a fresh licence check, an independent article review or a new stage admission.",
+            "matched_source_ids": [
+              "source-faa-shuttle-landing-facility-license"
+            ],
+            "additional_artifact_urls": []
+          }
+        ],
+        "independent_article_review": false,
+        "approval_receipt_id": null
+      },
+      "related_readings": [
+        {
+          "record_id": "203-CASE-13",
+          "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+          "label": "Victorian Big Battery: dated case history",
+          "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+        }
+      ]
     },
     {
       "record_id": "203-APPENDIX-01",
@@ -1124,6 +1234,210 @@
           "route": "/reference/state-of-future-systems/case-f15ex-production-delivery/",
           "label": "F-15EX case — retained acceptance-ledger and access limits",
           "relation": "The annual case preserves the separate production-source access finding without admitting an aircraft-acceptance series."
+        }
+      ]
+    },
+    {
+      "record_id": "203-CASE-11",
+      "route": "/reference/state-of-future-systems/case-gateway-battery-storage/",
+      "source_record_sha256": "89b13399dcc2ae8f2d7e9af2f008c582cb83f68e175ac933cd7ed9adc403fc0a",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-battery-chronology",
+      "summary": "Replaces generic resolution guidance with the dated Gateway contract decision and its limited scope. Retained PDF inspection is not evidence of current capacity, incident closure, recurring performance or independent article acceptance.",
+      "replacements": [
+        {
+          "section_heading": "A resolution does not answer every performance question",
+          "paragraph_index": 0,
+          "original_text": "The inherited resolution provides a formal regulatory record, but the source contract does not supply a common availability denominator, full restored capacity or recurring cycle and degradation measures. It also does not establish revenue or customer reliability. Those questions concern different operating and economic evidence. A useful profile should explain what the resolution actually addresses and identify the equipment and conditions involved. It should then show which later observations would be needed, rather than treating a formal decision as a universal return-to-normal statement.",
+          "replacement_text": "CPUC Resolution E-5428 was adopted and effective on November 20, 2025; its cover transmittal is dated November 24. The operative order approved the amended Gateway contract and related costs. The summary table distinguishes 75 MW nameplate from 55.5 MW capacity value for mid-term reliability compliance. The amendment gives June 1, 2027 as expected initial delivery, with an August 1 deadline; the resolution says capacity and price remain as previously approved. These are contractual terms, not 75 MW of demonstrated restoration. Its historical account reports partial return while the fire-affected building remained offline and investigations were ongoing at that 2025 snapshot. The contracts cover portions of output, not specified facility resources. Later physical return, investigation closure, annual availability and customer reliability require separate evidence; this decision establishes none of their September 2026 status.",
+          "reason": "Replace generic discussion with exact decision, table and footnote context while separating contractual capacity, historical partial return and unverified later operation."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-56d-gateway-cpuc-resolution-e5428-2025",
+          "url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M588/K329/588329444.PDF",
+          "source_profile_sha256": "ed28a8e479c954305d2728c2c88eb1622824d73497d9622aa589970fbe68900c",
+          "retained_checked_date": "2026-09-23",
+          "captured_sha256": "91e08643835ea813ff5f84251ef48876f2e5ed1804e1d968b9a0e298f4758cfd",
+          "visually_checked_pages": [
+            1,
+            2,
+            3,
+            4,
+            9,
+            21,
+            22
+          ],
+          "locator": "Resolution E-5428: cover; summary-table headers and Gateway row (PDF pages 2-3); history and delivery dates (page 4); footnote 6 (page 9); operative order and adoption (pages 21-22).",
+          "access": "Retained official PDF visually inspected on the listed pages. The original contract, confidential appendix terms, later investigation status and subsequent operating records were not inspected. This is not a fresh remote retrieval or a whole-document review.",
+          "finding": "The November 20, 2025 decision approved the amended contract and related costs. Its table separates 75 MW nameplate from 55.5 MW compliance value; the amendment concerns expected June 1, 2027 delivery and an August 1 deadline. The partial-return account is a 2025 snapshot, not a present-status finding."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-13",
+      "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+      "source_record_sha256": "a26e33103bc61c43d0f0ab476c4b226262107038931b0668486fa5f8c3c30a5c",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-battery-chronology",
+      "summary": "Corrects the current asset name and separates the 2021 commissioning findings, registration announcement and reserve-service announcement. Reuses scoped September 22-23 source inspections; no later operating-status check, universal safety finding or independent acceptance is supplied.",
+      "replacements": [
+        {
+          "section_heading": "Keep the event chronology visible",
+          "paragraph_index": 0,
+          "original_text": "The Energy Safe Victoria findings concern the commissioning incident within their stated scope. AEMO registration establishes a different administrative and market milestone. Neither should erase the other or be treated as a complete operating-performance assessment. Readers need the event date, investigated equipment, relevant findings and the actual registration or operating record. This preserves what each authority was examining and avoids using the passage of time alone as evidence that corrective work was accepted or that later operation was uninterrupted.",
+          "replacement_text": "Energy Safe Victoria's statement, dated September 28, 2021 on its official investigation index, concerns the July 30 commissioning fire involving two Megapacks. It identifies a coolant leak as the most likely initiating fault, with monitoring and protection unavailable in offline service mode contributing to the outcome. That attribution rests on the engineering work, scene examination and telemetry described in the statement, not an independently reproduced investigation here. ESV had no objection to recommencing commissioning provided the specified testing, inspection, monitoring and protection measures were in place. Further fire-spread findings and possible enforcement remained matters for subsequent assessment at that date. Separately, AEMO's October 8 update lists the 300 MW battery among generators registered since July 1. This establishes a registration-reporting window, not an exact registration day or proof of operation on July 1.",
+          "reason": "Replace undated generalities with attributed, separately scoped incident, conditional commissioning and registration evidence."
+        },
+        {
+          "section_heading": "Later performance needs later observations",
+          "paragraph_index": 0,
+          "original_text": "An investigation index is a discovery resource rather than a continuing audit of availability, dispatch or safety. Registration also does not establish how much equipment was available in every operating period. A useful continuation would identify the accepted corrective measures and any operating conditions, then follow the asset through a defined service window. The relevant measures might include availability, interruptions or delivery of a specified grid service. Those are proposed reporting needs, not results established by the inherited profile or inferred from the asset's presence in a registry.",
+          "replacement_text": "AEMO's December 8, 2021 announcement reports the System Integrity Protection Scheme reserve service operational following commissioning. It describes a contract for up to 250 MW of reserve, distinct from the Victorian Big Battery facility's 300 MW/450 MWh size. A reserve-service announcement is not a measurement of annual availability, actual dispatch, degradation or customer benefit. The underlying service contract and a compatible subsequent operating ledger were not inspected. The investigation index is likewise a discovery source, not a continuing safety audit. These dated records establish different milestones without proving that every corrective action was closed or that later service was uninterrupted.",
+          "reason": "Identify the later service announcement without equating contracted reserve, facility capacity and measured recurring performance."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-56e-vbb-esv-fire-findings-2021",
+          "url": "https://www.energysafe.vic.gov.au/sites/default/files/2022-12/VBB_StatementOfFindings_FINAL_28Sep2021.pdf",
+          "source_profile_sha256": "2bd1158cbb185a960f8e162c87a9c32e5e2a494d0812c08edf7ed8f45720dc43",
+          "retained_checked_date": "2026-09-23",
+          "captured_sha256": "38fee3d05597fa3c59fb03a5101f40de56b0db313e255a06bf2a43fa17d687e2",
+          "visually_checked_pages": [
+            1,
+            2,
+            3
+          ],
+          "locator": "Statement of Technical Findings, PDF pages 1-3: Background, Methodology, Root cause, Contributory factors, prevention measures and Next steps.",
+          "access": "All three pages of the retained official PDF were visually inspected. The described engineering tests were not independently reproduced; later corrective-action closure, enforcement and operating records were not inspected. No fresh remote retrieval is claimed.",
+          "finding": "The statement concerns the July 30, 2021 commissioning fire. ESV attributed the probable initiating fault to a coolant leak and had no objection to commissioning recommencing provided the stated measures were in place; further fire-spread findings and enforcement assessment remained outstanding at that statement date."
+        },
+        {
+          "source_id": "source-56e-vbb-esv-investigations",
+          "url": "https://www.energysafe.vic.gov.au/about-us/our-organisation/reports/electrical-incident-and-technical-investigations-reports",
+          "source_profile_sha256": "48a4d3faee061d6d552a1e9310dff45aab12b301f2ed1c1fbaa767cb8f6b7ad5",
+          "retained_checked_date": "2026-09-23",
+          "locator": "Electrical incident and technical investigations index: Victorian Big Battery statement entry dated September 28, 2021.",
+          "access": "Retains the September 23 official-index HTML check documented in the acquisition record; not a new retrieval or a continuing safety audit.",
+          "finding": "The official index supplies the September 28, 2021 statement date independently of the PDF filename or footer."
+        },
+        {
+          "source_id": "source-56e-vbb-aemo-registration-2021",
+          "url": "https://www.aemo.com.au/newsroom/news-updates/state-of-the-system-update-october-2021",
+          "source_profile_sha256": "f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773",
+          "retained_checked_date": "2026-09-22",
+          "locator": "October 8, 2021 State of the System update, NEM connections / Q3 highlights: generators registered since July 1.",
+          "access": "Retains the September 22 official HTML inspection. No registration instrument, exact registration day or subsequent operating ledger was inspected.",
+          "finding": "AEMO lists the 300 MW Victorian Big Battery among registrations since July 1. That reporting interval does not establish a July 1 registration or operating start."
+        },
+        {
+          "source_id": "source-56e-vbb-aemo-operational-2021",
+          "url": "https://www.aemo.com.au/newsroom/media-release/victorian-battery-delivering-energy-reserves-in-summer",
+          "source_profile_sha256": "c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1",
+          "retained_checked_date": "2026-09-22",
+          "locator": "December 8, 2021 service announcement: opening three paragraphs and System Integrity Protection Scheme (SIPS) footnote.",
+          "access": "Retains the September 22 official HTML inspection, not a new retrieval. The underlying service contract, telemetry and subsequent availability records were not inspected.",
+          "finding": "AEMO reported the reserve service operational after commissioning. Its up-to-250 MW reserve contract is distinct from the 300 MW/450 MWh facility; the announcement does not measure annual availability or realized service delivery."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "title_replacement": {
+        "original_text": "Victoria Big Battery: commissioning, registration and later service",
+        "replacement_text": "Victorian Big Battery: commissioning, registration and later service",
+        "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+      },
+      "overview_replacement": {
+        "original_text": "Victoria Big Battery provides a clear example of records that describe different moments in an asset's history. The inherited shelf includes commissioning-incident findings, market registration and operational material. Those documents should be read in sequence while keeping the evidence for an incident distinct from evidence about subsequent service.",
+        "replacement_text": "Victorian Big Battery provides a clear example of records that describe different moments in an asset's history. The inherited shelf includes commissioning-incident findings, market registration and operational material. Those documents should be read in sequence while keeping the evidence for an incident distinct from evidence about subsequent service.",
+        "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+      }
+    },
+    {
+      "record_id": "203-SYNTHESIS-10",
+      "route": "/reference/state-of-future-systems/synthesis-safety-incident-correction-restart/",
+      "source_record_sha256": "909c96aa0e9716d44223b8d706b471622d604ace44270fb932efe9cf30d46482",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-battery-chronology",
+      "summary": "Corrects the current name to Victorian Big Battery without changing the incident, correction, restart or unresolved-performance claims. This is a naming correction, not a fresh source inspection or independent review.",
+      "replacements": [
+        {
+          "section_heading": "Victoria's case separates investigation from operation",
+          "paragraph_index": 0,
+          "original_text": "The Victoria Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+          "replacement_text": "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        },
+        {
+          "section_heading": "The next edition should make correction status verifiable",
+          "paragraph_index": 0,
+          "original_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victoria Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+          "replacement_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victorian Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        }
+      ],
+      "source_checks": [],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "overview_replacement": {
+        "original_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victoria Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+        "replacement_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victorian Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+        "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+      },
+      "related_readings": [
+        {
+          "record_id": "203-CASE-13",
+          "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+          "label": "Victorian Big Battery: dated case history",
+          "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+        }
+      ]
+    },
+    {
+      "record_id": "200-MONOGRAPH-10",
+      "route": "/reference/constraint-monographs/safety-incident-correction-restart/",
+      "source_record_sha256": "3da242fb7d3af48e39ac1f8cf7fe40070ba5d6f08f1b5147d6218ae7294eeb14",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-battery-chronology",
+      "summary": "Corrects the current name to Victorian Big Battery without changing the incident, correction, restart or unresolved-performance claims. This is a naming correction, not a fresh source inspection or independent review.",
+      "replacements": [
+        {
+          "section_heading": "Victoria's case separates investigation from operation",
+          "paragraph_index": 0,
+          "original_text": "The Victoria Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+          "replacement_text": "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        },
+        {
+          "section_heading": "The next edition should make correction status verifiable",
+          "paragraph_index": 0,
+          "original_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victoria Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+          "replacement_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victorian Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        }
+      ],
+      "source_checks": [],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "overview_replacement": {
+        "original_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victoria Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+        "replacement_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victorian Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+        "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+      },
+      "related_readings": [
+        {
+          "record_id": "203-CASE-13",
+          "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+          "label": "Victorian Big Battery: dated case history",
+          "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
         }
       ]
     }

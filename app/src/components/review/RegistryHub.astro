@@ -2,6 +2,7 @@
 import ReviewHeader from "./ReviewHeader.astro";
 import MetaPill from "../ui/MetaPill.astro";
 import readerEdition from '../../data/phase-204-reader-completion.json';
+import {annualCaseTitle, annualCaseOverview} from '../../lib/annual-case-reviews.mjs';
 import {placeIdentityTitle, placeIdentityNotes} from '../../lib/place-identity-reviews.mjs';
 
 interface Props {
@@ -13,7 +14,11 @@ interface Props {
 
 const { registry, phase, release, items } = Astro.props;
 const itemId = (item: any) => Object.entries(item).find(([key]) => key.endsWith("_id"))?.[1] ?? item.slug ?? "record";
-const readerFor = (item: any) => Astro.url.pathname.startsWith('/reference/') ? readerEdition.records.find(article => article.record_id === itemId(item)) : null;
+const readerFor = (item: any) => {
+  if (!Astro.url.pathname.startsWith('/reference/')) return null;
+  const article = readerEdition.records.find(article => article.record_id === itemId(item));
+  return article ? {...article, title:annualCaseTitle(article, {route:item.route}), overview:annualCaseOverview(article, {route:item.route})} : null;
+};
 const readerCount = items.filter(item => readerFor(item)).length;
 const itemTitle = (item: any) => placeIdentityTitle(item) ?? item.title ?? item.requirement ?? item.label ?? item.question ?? item.institution_name ?? item.project_name ?? item.place_name ?? itemId(item);
 const itemState = (item: any) => item.state ?? item.verdict ?? item.decision_state ?? item.decision_status ?? item.release_state ?? item.audit_state ?? item.candidate_state ?? item.disposition_state ?? item.review_result ?? item.compatibility_decision ?? item.preservation_state ?? item.operation_state ?? item.board_state ?? item.matrix_state ?? item.packet_state ?? item.dossier_state ?? item.brief_state ?? item.runbook_state ?? item.baseline_packet_state ?? item.guide_state ?? item.report_state ?? item.map_state ?? item.triage_state ?? item.content_readiness ?? item.rereview_verdict ?? item.mission_decision_state ?? item.desk_state ?? item.resource_state ?? item.mission_state ?? item.edition_state ?? (Object.hasOwn(item, "current_stage") ? item.current_stage ?? "Stage not established" : null) ?? item.review_state ?? item.profile_state ?? item.identity_state ?? item.outcome_state ?? item.answer_state ?? item.case_kind ?? item.record_kind ?? item.build_status ?? "Published record";

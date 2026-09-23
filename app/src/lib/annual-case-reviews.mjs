@@ -9,7 +9,7 @@ export const annualReviewDate = review => review?.review_date ?? reviews.review_
 /** @param {string} id */
 export function annualCaseReviewForId(id) { return reviews.records.find(r => r.record_id === id) ?? null; }
 /**
- * @param {{record_id:string, overview:string, sections:{heading:string, paragraphs:string[]}[]}} article
+ * @param {{record_id:string, title:string, overview:string, sections:{heading:string, paragraphs:string[]}[]}} article
  * @param {{route?:string, asOfDate?:string}} options
  */
 export function annualCaseReview(article, {route, asOfDate = reviews.latest_review_date ?? reviews.review_date} = {}) {
@@ -22,7 +22,7 @@ export function annualCaseReview(article, {route, asOfDate = reviews.latest_revi
   return review;
 }
 /**
- * @param {{record_id:string, overview:string, sections:{heading:string, paragraphs:string[]}[]}} article
+ * @param {{record_id:string, title:string, overview:string, sections:{heading:string, paragraphs:string[]}[]}} article
  * @param {{route?:string, asOfDate?:string}} options
  */
 export function applyAnnualCaseReview(article, options = {}) {
@@ -38,16 +38,26 @@ export function applyAnnualCaseReview(article, options = {}) {
     if (targets.length !== 1 || !change.replacement_text) throw Error(`Annual heading target drift: ${article.record_id}`);
     targets[0].heading = change.replacement_text;
   }
-  return {review, sections, overview:annualCaseOverview(article, options)};
+  return {review, sections, title:annualCaseTitle(article, options), overview:annualCaseOverview(article, options)};
 }
 /**
- * @param {{record_id:string, overview:string, sections:{heading:string, paragraphs:string[]}[]}} article
+ * @param {{record_id:string, title:string, overview:string, sections:{heading:string, paragraphs:string[]}[]}} article
  * @param {{route?:string, asOfDate?:string}} options
  */
 export function annualCaseOverview(article, options = {}) {
   const change = annualCaseReview(article, options)?.overview_replacement;
   if (!change) return article.overview;
   if (article.overview !== change.original_text) throw Error(`Annual overview target drift: ${article.record_id}`);
+  return change.replacement_text;
+}
+/**
+ * @param {{record_id:string, title:string, overview:string, sections:{heading:string, paragraphs:string[]}[]}} article
+ * @param {{route?:string, asOfDate?:string}} options
+ */
+export function annualCaseTitle(article, options = {}) {
+  const change = annualCaseReview(article, options)?.title_replacement;
+  if (!change) return article.title;
+  if (article.title !== change.original_text) throw Error(`Annual title target drift: ${article.record_id}`);
   return change.replacement_text;
 }
 /** @param {typeof reviews.records[number] | null} review */

@@ -3,7 +3,7 @@ import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
 import {parse} from 'parse5';
-import {annualCaseReviews, annualReviewContexts, annualCaseOverview, annualReviewDate} from '../src/lib/annual-case-reviews.mjs';
+import {annualCaseReviews, annualReviewContexts, annualCaseOverview, annualCaseTitle, annualReviewDate} from '../src/lib/annual-case-reviews.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 import history from '../src/data/phase-204-reader-completion.json' with {type:'json'};
 import originalReport from '../src/data/phase-203-state-of-future-systems-2026.json' with {type:'json'};
@@ -13,6 +13,8 @@ const attr = (node, key) => node.attrs?.find(a => a.name === key)?.value;
 const all = (node, predicate) => [...(predicate(node) ? [node] : []), ...(node.childNodes ?? []).flatMap(n => all(n, predicate))];
 const text = node => node.nodeName === '#text' ? node.value : (node.childNodes ?? []).map(text).join('');
 const links = node => all(node, n => n.tagName === 'a').map(n => attr(n, 'href'));
+const hubs=new Map();
+let revisedTitles=0, previousReviews=0;
 let totalNotices = 0, revisedParagraphs = 0, revisedOverviews = 0, revisedHeadings = 0;
 for (const article of history.records) {
   const route = readerCatalog.find(r => r.id === article.record_id).route;
@@ -20,6 +22,23 @@ for (const article of history.records) {
   const notices = all(dom, n => attr(n, 'data-annual-case-review') !== undefined);
   const review = annualCaseReviews.records.find(r => r.record_id === article.record_id);
   const overview = annualCaseOverview(article, {route});
+  const title=annualCaseTitle(article,{route});
+  const [pageTitle]=all(dom,n=>n.tagName==='title');
+  assert.equal(text(pageTitle),title+' | FTFN','Current title metadata mismatch');
+  const [h1]=all(dom,n=>n.tagName==='h1');
+  assert.equal(text(h1),title,'Current reader title mismatch');
+  const hubRoute=route.split('/').slice(0,3).join('/')+'/';
+  if(!hubs.has(hubRoute))hubs.set(hubRoute,parse(await read(hubRoute+'index.html')));
+  const [hubCard]=all(hubs.get(hubRoute),n=>n.tagName==='article'&&links(n).includes(route));
+  assert(hubCard,'Missing reference hub card');
+  assert.equal(text(all(hubCard,n=>n.tagName==='h3')[0]),title,'Stale reference hub title');
+  assert.equal(text(all(hubCard,n=>n.tagName==='p')[0]),overview,'Stale reference hub overview');
+  const originals=all(dom,n=>attr(n,'data-annual-original-title')!==undefined);
+  assert.equal(originals.length,review?.title_replacement?1:0);
+  if(review?.title_replacement){revisedTitles++;assert(text(originals[0]).includes(article.title));assert(text(originals[0]).includes(review.title_replacement.reason));}
+  const priors=all(dom,n=>attr(n,'data-annual-prior-review')!==undefined);
+  assert.equal(priors.length,review?.previous_review?1:0);
+  if(review?.previous_review){previousReviews++;assert(text(priors[0]).includes(review.previous_review.summary));assert(links(priors[0]).includes('/updates/'+review.previous_review.update_id+'/'));}
   const [hero] = all(dom, n => n.tagName === 'header' && (attr(n, 'class') ?? '').split(' ').includes('review-hero'));
   assert(hero, `Missing reader header ${route}`);
   const [lede] = all(hero, n => n.tagName === 'p' && (attr(n, 'class') ?? '').split(' ').includes('lede'));
@@ -69,6 +88,7 @@ for (const article of history.records) {
   const catalogPage = parse(await read(`/reference/explore/${Math.floor(catalogIndex / 40) + 1}/index.html`));
   const [catalogCard] = all(catalogPage, n => n.tagName === 'article' && links(n).includes(route));
   assert(catalogCard && text(catalogCard).includes(annualReviewDate(review)), 'Catalog must show this record’s review date');
+  assert.equal(text(all(catalogCard,n=>n.tagName==='h2'||n.tagName==='h3')[0]),title,'Catalog card current title mismatch');
   assert(hrefs.includes(annualCaseReviews.export_route));
   assert(hrefs.includes(`/updates/${review.update_id ?? annualCaseReviews.update_id}/`));
   const provenance = all(notice, n => attr(n, 'data-annual-original') === article.record_id);
@@ -155,14 +175,15 @@ for (const article of history.records) {
     assert(text(target).includes(context.summary), `Destination omits retained finding ${context.id}`);
   }
 }
-assert.equal(totalNotices, 24); assert.equal(revisedParagraphs, 34); assert.equal(revisedOverviews, 3); assert.equal(revisedHeadings, 1);
+assert.equal(totalNotices, 28); assert.equal(revisedParagraphs, 45); assert.equal(revisedOverviews, 6); assert.equal(revisedTitles,1); assert.equal(previousReviews,2); assert.equal(revisedHeadings, 1);
 assert.deepEqual(JSON.parse(await read(annualCaseReviews.export_route)), annualCaseReviews);
 assert.deepEqual(JSON.parse(await read('/data/phase-204-reader-completion.json')), history);
 assert.deepEqual(JSON.parse(await read('/data/reader-catalog.json')).records, readerCatalog);
 assert(links(parse(await read('/data/index.html'))).includes(annualCaseReviews.export_route));
-for (const updateId of new Set(annualCaseReviews.records.map(r => r.update_id ?? annualCaseReviews.update_id))) {
+const reviewVersions=annualCaseReviews.records.flatMap(r=>r.previous_review?[r.previous_review,r]:[r]);
+for (const updateId of new Set(reviewVersions.map(r => r.update_id ?? annualCaseReviews.update_id))) {
   const update = parse(await read(`/updates/${updateId}/index.html`));
   assert(links(update).includes(annualCaseReviews.export_route));
-  for (const r of annualCaseReviews.records.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) assert(links(update).includes(r.route));
+  for (const r of reviewVersions.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) assert(links(update).includes(r.route));
 }
-console.log('Annual output verified across all 104 original reader routes: 24 scoped notices, 3 current overviews, 34 current paragraphs, 1 heading with stable anchors, inspectable originals, exact source/receipt links, per-record catalog dates, three explicit additional source checks, retained/new primary check dates, exact formal-instrument and case links, local provenance links and matching dated updates/export. No browser, independent or release approval claimed.');
+console.log('Annual output verified across all 104 original reader routes: 28 scoped notices, 1 current title, 6 current overviews, 45 current paragraphs, 1 heading with stable anchors, inspectable originals, exact source/receipt links, per-record catalog dates, three explicit additional source checks, retained/new primary check dates, exact formal-instrument and case links, local provenance links and matching dated updates/export, current reference-hub cards and two preserved preceding review records. No browser, independent or release approval claimed.');

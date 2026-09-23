@@ -3,7 +3,7 @@ import {readFile, readdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
-import {annualCaseReviews, annualCaseReview, applyAnnualCaseReview, annualReviewContexts, annualCaseOverview, annualReviewDate} from '../src/lib/annual-case-reviews.mjs';
+import {annualCaseReviews, annualCaseReview, applyAnnualCaseReview, annualReviewContexts, annualCaseOverview, annualCaseTitle, annualReviewDate} from '../src/lib/annual-case-reviews.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 import {searchReaders} from '../src/lib/reader-search.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -24,7 +24,12 @@ const waterLocatorIds = locatorIds.slice(1,3);
 const financeLocatorIds = locatorIds.slice(3);
 const locatorProfilePins = new Map([["source-161-usbr-colorado-river-2027-decision","dc54a7b42943f45035787dd49e87abdd5cc85e008e67609f3140f9855782e40c"],["source-161-nist-usa-rare-earth-june-2026","7d9562b9b4cbe279475dbbbae3955aef8a4eeccf19f10c81781f6761a6169d6a"],["source-56k-f15ex-ex16-portland-receipt-2026","3d539092bdbfcec4fbdb1057404cd85ee62f764460ae46b007d7ee72fa39ebda"]]);
 for(const [id,pin] of locatorProfilePins) assert.equal(hash(await raw('src/content/sources/'+id+'.json')),pin,'Locator source profile drift');
-const laterIds = [...allPairedIds, ...citationIds, ...locatorIds];
+const batteryIds = ['203-SYNTHESIS-08','200-MONOGRAPH-08','203-CASE-11','203-CASE-13','203-SYNTHESIS-10','200-MONOGRAPH-10'];
+const revisedBatteryIds = batteryIds.slice(0,2), newBatteryIds = batteryIds.slice(2);
+const batteryPairIds = batteryIds.filter(id=>!id.includes('CASE'));
+const batteryProfilePins = new Map([["source-56d-gateway-cpuc-resolution-e5428-2025","ed28a8e479c954305d2728c2c88eb1622824d73497d9622aa589970fbe68900c"],["source-56e-vbb-esv-fire-findings-2021","2bd1158cbb185a960f8e162c87a9c32e5e2a494d0812c08edf7ed8f45720dc43"],["source-56e-vbb-esv-investigations","48a4d3faee061d6d552a1e9310dff45aab12b301f2ed1c1fbaa767cb8f6b7ad5"],["source-56e-vbb-aemo-registration-2021","f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773"],["source-56e-vbb-aemo-operational-2021","c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1"]]);
+for (const [id,pin] of batteryProfilePins) assert.equal(hash(await raw('src/content/sources/'+id+'.json')),pin,'Retained battery source profile drift');
+const laterIds = [...allPairedIds, ...citationIds, ...locatorIds, ...newBatteryIds];
 const expectedIds = ['203-CASE-02', '203-CASE-12', '203-CASE-14', '203-CASE-04', '203-CASE-16', '203-CASE-03', '203-CASE-18', ...laterIds];
 const citationSources = new Map([["203-APPENDIX-01","source-161-lbnl-data-center-energy-usage-2024"],["203-TOPIC-17","source-chandler-reclaimed-water-system"],["203-TOPIC-06","source-noaa-2025-global-climate-report"]]);
 const citationProfilePins = new Map([["source-161-lbnl-data-center-energy-usage-2024","0a31c39d4b27d17075a368fb20ba2ff7f91b569594d3447cc3019c65c8edf7a6"],["source-noaa-2025-global-climate-report","dd8c9f18902e20b541696978d494fdaf7238849a6e453093262c1cd487b1c3bc"],["source-chandler-reclaimed-water-system","b21de1128514758b92beb9f446b31234794e249cd2d7c5657c280ce57912cf8a"]]);
@@ -65,12 +70,21 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
   assert.deepEqual(data.records.map(r => r.record_id), expectedIds);
   assert.equal(data.review_date, '2026-09-22');
   assert.equal(data.latest_review_date, '2026-09-23');
-  assert.equal(hash(JSON.stringify(data.records.slice(0, 7))), '054c81854e26fe58f786b24050984d4b3e5ce34ca746b7a1a0453863cff1ab69', 'Earlier seven reviews changed');
-  assert.equal(hash(JSON.stringify(data.records.slice(0, 11))), '4cf9116132695d46acc0e382bbd16f994ba7618e8c9c195603f2cb4a4a5a9c5c', 'Earlier eleven reviews changed');
-  assert.equal(hash(JSON.stringify(data.records.slice(0, 15))), 'ca8db6563e3b2761aa22c5b422b38a09dda18536f3a81b4e1ee1dcccc11a27e8', 'Earlier fifteen reviews changed');
-  assert.equal(hash(JSON.stringify(data.records.slice(0,19))), '8d9e4834f69e92d95ddeef6a81afd6f65c4b752a9e9cdd94ca737188b45f97d8', 'Earlier nineteen reviews changed');
-  assert.equal(data.records.reduce((n, r) => n + r.replacements.length, 0), 34);
-  assert.equal(data.records.filter(r => r.overview_replacement).length, 3);
+  const earlier = data.records.slice(0,24).map(r=>r.previous_review??r);
+  assert.equal(hash(JSON.stringify(earlier)),'26a10cf4779189fc6f400c4bbdc68891aa3375cb339cc1139440448c6f4661b0','All prior 24 review versions must survive');
+  assert.deepEqual(data.records.filter(r=>r.previous_review).map(r=>r.record_id),revisedBatteryIds);
+  assert.equal(hash(JSON.stringify(data.records.filter(r=>batteryIds.includes(r.record_id)))),'e6d937131c4fbb3209128dc37a80c9a915361428439809cceba1d3543abd527d','Scoped battery declaration drift');
+  for (const r of data.records.filter(r=>r.previous_review)) {
+    assert(!r.previous_review.previous_review,'Only the exact preceding review is expected');
+    assert.deepEqual(r.replacements[0],r.previous_review.replacements[0],'Earlier Space Coast correction lost');
+    assert.deepEqual(r.retained_contexts,r.previous_review.retained_contexts,'Earlier renewal context lost');
+  }
+  assert.equal(hash(JSON.stringify(earlier.slice(0, 7))), '054c81854e26fe58f786b24050984d4b3e5ce34ca746b7a1a0453863cff1ab69', 'Earlier seven reviews changed');
+  assert.equal(hash(JSON.stringify(earlier.slice(0, 11))), '4cf9116132695d46acc0e382bbd16f994ba7618e8c9c195603f2cb4a4a5a9c5c', 'Earlier eleven reviews changed');
+  assert.equal(hash(JSON.stringify(earlier.slice(0, 15))), 'ca8db6563e3b2761aa22c5b422b38a09dda18536f3a81b4e1ee1dcccc11a27e8', 'Earlier fifteen reviews changed');
+  assert.equal(hash(JSON.stringify(earlier.slice(0,19))), '8d9e4834f69e92d95ddeef6a81afd6f65c4b752a9e9cdd94ca737188b45f97d8', 'Earlier nineteen reviews changed');
+  assert.equal(data.records.reduce((n, r) => n + r.replacements.length, 0), 45);
+  assert.equal(data.records.filter(r => r.overview_replacement).length, 6);
   assert.equal(data.records.reduce((n, r) => n + (r.heading_replacements?.length ?? 0), 0), 1);
   for (const r of data.records) {
     const article = history.records.find(a => a.record_id === r.record_id);
@@ -86,10 +100,10 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
       assert.equal(r.replacements.length, r.record_id.endsWith('-01') ? 3 : 1);
     }
     if (spacePairedIds.includes(r.record_id)) {
-      assert.equal(r.update_id, 'update-2026-09-23-annual-space-coast-paired-readings');
+      assert.equal(r.update_id, revisedBatteryIds.includes(r.record_id) ? 'update-2026-09-23-annual-battery-chronology' : 'update-2026-09-23-annual-space-coast-paired-readings');
       assert.deepEqual(r.source_checks, [], 'No fresh Space Coast inspection claimed');
       assert.deepEqual(r.retained_contexts, data.records[3].retained_contexts, 'Separate retained renewal binding changed');
-      assert.equal(r.replacements.length, r.record_id.endsWith('-06') ? 4 : 1);
+      assert.equal(r.replacements.length, r.record_id.endsWith('-06') ? 4 : 3);
       assert(r.summary.includes('not a fresh FAA search'));
     }
     if (citationIds.includes(r.record_id)) {
@@ -140,13 +154,19 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
       }
     }
     const related = r.related_readings ?? [];
-    assert.equal(related.length, r.record_id==='203-TOPIC-16'||financeLocatorIds.includes(r.record_id)?1:0);
+    assert.equal(related.length, r.record_id==='203-TOPIC-16'||financeLocatorIds.includes(r.record_id)||batteryPairIds.includes(r.record_id)?1:0);
     for(const linked of related) {
       assert.equal(linked.route,readerCatalog.find(a=>a.id===linked.record_id)?.route,'Wrong related-case route');
       assert(linked.label && linked.relation);
     }
+    if (r.title_replacement) {
+      assert.equal(r.record_id,'203-CASE-13');
+      assert.equal(r.title_replacement.original_text,article.title);
+      assert.equal(r.title_replacement.replacement_text,article.title.replace('Victoria Big Battery','Victorian Big Battery'));
+      assert(r.title_replacement.reason);
+    }
     if (r.overview_replacement) {
-      assert(['203-CASE-04', '203-CASE-03', '203-CASE-18'].includes(r.record_id));
+      assert(['203-CASE-04', '203-CASE-03', '203-CASE-18','203-CASE-13','203-SYNTHESIS-10','200-MONOGRAPH-10'].includes(r.record_id));
       assert.equal(r.overview_replacement.original_text, article.overview, 'Overview target drift');
       assert(r.overview_replacement.reason && r.overview_replacement.replacement_text !== article.overview);
     }
@@ -184,7 +204,7 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
       } else assert.equal(check.url, sourceMap.get(check.source_id)?.url, 'Checked source URL drift');
       assert(check.locator && check.access && check.finding);
     }
-    assert.equal(r.retained_contexts.length, ['203-CASE-03', '203-CASE-18', ...pairedIds, ...citationIds, ...waterLocatorIds].includes(r.record_id) ? 0 : 1);
+    assert.equal(r.retained_contexts.length, ['203-CASE-03', '203-CASE-18', ...pairedIds, ...citationIds, ...waterLocatorIds, ...newBatteryIds].includes(r.record_id) ? 0 : 1);
     for (const b of r.retained_contexts) {
       assert(['receipts', 'pilot_research_followups', 'evidence_receipts'].includes(b.collection));
       const receipt = (b.collection === 'evidence_receipts' ? decisions.receipts : operations[b.collection]).find(v => (v.receipt_id ?? v.review_id) === b.id);
@@ -302,6 +322,14 @@ for (const mutate of [
   d => { d.records[22].retained_contexts[0].matched_source_ids = ['source-56k-f15ex-ex16-portland-receipt-2026']; },
   d => { d.records[23].approval_receipt_id = 'invented-finance-approval'; },
   d => { d.records[23].related_readings[0].record_id = '203-CASE-04'; },
+  d => { delete d.records[13].previous_review; },
+  d => { d.records[13].previous_review.summary = 'lost provenance'; },
+  d => { d.records[13].replacements[0].replacement_text = 'lost earlier correction'; },
+  d => { d.records[24].source_checks[0].captured_sha256 = '0'.repeat(64); },
+  d => { d.records[25].title_replacement.original_text = 'wrong title'; },
+  d => { d.records[25].source_checks[2].retained_checked_date = '2026-09-23'; },
+  d => { d.records[26].approval_receipt_id = 'invented-battery-approval'; },
+  d => { d.records[27].overview_replacement.replacement_text = 'wrong name'; },
 ]) {
   const changed = structuredClone(annualCaseReviews); mutate(changed);
   assert.throws(() => assertBindings(changed));
@@ -311,10 +339,13 @@ const before = JSON.stringify({pack, ops, evidence, reviews:annualCaseReviews});
 let changedBodies = 0, changedParagraphs = 0, notices = 0, changedOverviews = 0, changedHeadings = 0;
 for (const a of pack.records) {
   const catalog = readerCatalog.find(r => r.id === a.record_id);
-  const {review, sections, overview} = applyAnnualCaseReview(a, {route:catalog.route});
+  const {review, sections, overview, title} = applyAnnualCaseReview(a, {route:catalog.route});
   assert.equal(overview, review?.overview_replacement?.replacement_text ?? a.overview);
   if (overview !== a.overview) changedOverviews++;
-  assert.equal(catalog.title, a.title); assert.equal(catalog.summary, overview); assert.equal(catalog.status, a.review_status);
+  assert.equal(title,review?.title_replacement?.replacement_text??a.title);
+  assert.equal(annualCaseTitle(a,{asOfDate:'2026-09-21'}),a.title);
+  assert.equal(annualCaseTitle(a,{route:'/wrong/'}),a.title);
+  assert.equal(catalog.title, title); assert.equal(catalog.summary, overview); assert.equal(catalog.status, a.review_status);
   assert.equal(catalog.date, review ? annualReviewDate(review) : a.authored_date);
   assert.equal(sections.length, a.sections.length);
   if (JSON.stringify(sections) !== JSON.stringify(a.sections)) changedBodies++;
@@ -352,8 +383,8 @@ for (const a of pack.records) {
     } else assert(!context.formal_artifact,'Unexpected formal-artifact projection');
   }
 }
-assert.equal(notices, 24); assert.equal(changedBodies, 20); assert.equal(changedParagraphs, 34); assert.equal(changedOverviews, 3); assert.equal(changedHeadings, 1);
-for (const suffix of ['01', '03', '04', '06', '08', '11']) {
+assert.equal(notices, 28); assert.equal(changedBodies, 24); assert.equal(changedParagraphs, 45); assert.equal(changedOverviews, 6); assert.equal(changedHeadings, 1);
+for (const suffix of ['01', '03', '04', '06', '08', '10', '11']) {
   const [report, essay] = [`203-SYNTHESIS-${suffix}`, `200-MONOGRAPH-${suffix}`].map(id => pack.records.find(a => a.record_id === id));
   assert.deepEqual(applyAnnualCaseReview(report).sections, applyAnnualCaseReview(essay).sections, 'Paired current readings diverged');
 }
@@ -369,14 +400,19 @@ assert.throws(() => annualReviewContexts({...annualCaseReviews.records[0], retai
 assert.throws(() => annualReviewContexts({...annualCaseReviews.records[3], retained_contexts:[{collection:'evidence_receipts', id:'missing'}]}), /Invalid retained/);
 assert.throws(() => annualReviewContexts({...annualCaseReviews.records[3], retained_contexts:[{collection:'unknown', id:'missing'}]}), /Invalid retained/);
 assert.equal(JSON.stringify({pack, ops, evidence, reviews:annualCaseReviews}), before);
-for (const updateId of new Set(annualCaseReviews.records.map(r => r.update_id ?? annualCaseReviews.update_id))) {
+const reviewVersions=annualCaseReviews.records.flatMap(r=>r.previous_review?[r.previous_review,r]:[r]);
+assert.equal(reviewVersions.length,30);
+assert.equal(annualCaseReviews.records.filter(r=>r.title_replacement).length,1);
+assert(searchReaders(readerCatalog,'Victorian Big Battery').some(r=>r.id==='203-CASE-13'));
+assert(!readerCatalog.some(r=>r.id==='203-CASE-13'&&r.title.includes('Victoria Big Battery')));
+for (const updateId of new Set(reviewVersions.map(r => r.update_id ?? annualCaseReviews.update_id))) {
   const update = await json(`src/content/updates/${updateId.replace(/^update-/, '')}.json`);
   assert.equal(update.id, updateId);
-  assert.deepEqual(update.affected_record_ids, annualCaseReviews.records.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId).map(r => r.record_id));
-  for (const r of annualCaseReviews.records.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) {
+  assert.deepEqual(update.affected_record_ids, reviewVersions.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId).map(r => r.record_id));
+  for (const r of reviewVersions.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) {
     assert(update.related_paths.includes(r.route));
     assert.equal(update.effective_date, annualReviewDate(r), 'Update and per-record correction dates differ');
   }
 }
 assert.equal(ops.governed_series_admitted, 0);
-console.log('Annual source checks passed: 24 exact notices, 3 current overviews, 34 changed paragraphs, 1 heading, 84 unchanged bodies; three explicitly additional sources, 58-row lineage proof, retained Space/Reclamation locators and two current primary HTML checks; all six changed/noticed synthesis pairs agree, per-record review dates and all earlier reviews/checks remain pinned. Original records, source/receipt bindings and approval/measurement holds preserved.');
+console.log('Annual source checks passed: 28 exact notices, 1 current title, 6 current overviews, 45 changed paragraphs, 1 heading, 80 unchanged bodies; three explicitly additional sources, 58-row lineage proof, retained Space/Reclamation locators and two current primary HTML checks; all seven changed/noticed synthesis pairs agree, per-record review dates and all 24 earlier review versions/checks remain pinned, including two inspectable preceding reviews. Original records, source/receipt bindings and approval/measurement holds preserved.');

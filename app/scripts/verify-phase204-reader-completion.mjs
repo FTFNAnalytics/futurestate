@@ -33,7 +33,7 @@ for(const article of pack.records){
  assert(html.includes('September 1 research contract'));
  assert(html.includes('2026-09-10')&&html.includes('pending'));
  assert(html.includes('<main')&&html.includes('Sources and further reading'));
- assert(text.includes(`<title>${article.title} | FTFN</title>`),'Reader title must replace the contract metadata title');
+ assert(text.includes(`<title>${view.title} | FTFN</title>`),'Reader title must replace the contract metadata title');
  assert(text.includes(article.overview));
  for(const section of view.sections){assert(html.includes(`id="${section.anchor}"`));assert(html.includes(`href="#${section.anchor}"`));for(const paragraph of section.paragraphs)assert(text.includes(paragraph),`Missing full paragraph ${article.record_id}/${section.anchor}`);}
  for(const source of view.sources){assert(text.includes(`href="${source.url}"`));assert(html.includes(`href="${source.profile_route}"`));assert(text.includes(source.name));}

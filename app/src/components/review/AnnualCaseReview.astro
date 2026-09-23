@@ -8,6 +8,16 @@ const contexts = annualReviewContexts(review);
   <h2>Editorial clarification and source context · {annualReviewDate(review)}</h2>
   <p>{review.summary}</p>
   <p>{annualCaseReviews.boundary}</p>
+  {'previous_review' in review && review.previous_review && <details data-annual-prior-review={review.record_id}>
+    <summary>Earlier editorial review · {review.previous_review.review_date}</summary>
+    <p>{review.previous_review.summary}</p>
+    <p>The earlier correction remains in the current reading. Its complete review record is retained in the dated changes export.</p>
+    <p><a href={`/updates/${review.previous_review.update_id}/`}>Earlier dated change record</a></p>
+  </details>}
+  {review.title_replacement && <details data-annual-original-title={review.record_id}>
+    <summary>Earlier title</summary>
+    <p>{review.title_replacement.original_text}</p><p><strong>Reason for clarification:</strong> {review.title_replacement.reason}</p>
+  </details>}
   {review.overview_replacement && <details data-annual-original-overview={review.record_id}>
     <summary>Earlier overview</summary>
     <p>{review.overview_replacement.original_text}</p><p><strong>Reason for clarification:</strong> {review.overview_replacement.reason}</p>

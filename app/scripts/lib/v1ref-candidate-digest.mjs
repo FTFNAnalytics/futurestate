@@ -80,6 +80,7 @@ const integrationFiles = [
   'src/content/updates/2026-09-23-annual-space-coast-paired-readings.json',
   'src/content/updates/2026-09-23-annual-citation-provenance-followthrough.json',
   'src/content/updates/2026-09-23-annual-locators-acceptance-boundaries.json',
+  'src/content/updates/2026-09-23-annual-battery-chronology.json',
   "src/data/golden-mars-briefing-review.json",
   "src/lib/golden-mars-briefing-review.mjs",
   "src/components/review/GoldenMarsBriefingNotice.astro",

@@ -17,7 +17,7 @@ const view=readerPresentation(article,sources.map(s=>s.data),editions.edition_co
 const sourceContexts=readerSourceReviewContexts(article,currentEvidenceLedger,operations,{route:Astro.url.pathname});
 ---
 <article class="reference-reader" data-reader-article={article.record_id}>
-  <ReviewHeader eyebrow="FTFN Reference · Reader edition" title={article.title} summary={view.overview} />
+  <ReviewHeader eyebrow="FTFN Reference · Reader edition" title={view.title} summary={view.overview} />
   <div class="page-section prose-page">
     <p class="card-note">Written {article.authored_date}. Evidence inherited through {article.inherited_as_of_date}; this writing pass is not a new source check.</p>
     <p><strong>{article.review_status}</strong>. Factual acceptance, accessibility certification and public release remain separate.</p>

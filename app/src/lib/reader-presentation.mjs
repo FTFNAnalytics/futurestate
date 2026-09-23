@@ -8,7 +8,7 @@ const relatedLabels=new Map([
   ['/data/phase-202-accessible-multilingual-low-bandwidth-editions.json','Reading and translation contracts (JSON)'],['/review/v1reference/state-of-future-systems-2026/','State of Future Systems report contracts']
 ]);
 /**
- * @param {{record_id:string, overview:string, sections:{heading:string, paragraphs:string[]}[], source_ids:string[], related_paths?:string[]}} article
+ * @param {{record_id:string, title:string, overview:string, sections:{heading:string, paragraphs:string[]}[], source_ids:string[], related_paths?:string[]}} article
  * @param {{id:string, name:string, url:string}[]} sources
  * @param {{edition_contract_id:string, topic_id:string, is_translation:boolean, target_language:string}[]} editionContracts
  * @param {{id:string, title:string, route:string, kind:string}[]} catalog
@@ -22,6 +22,7 @@ export function readerPresentation(article,sources,editionContracts,catalog,opti
   const projected=applyAnnualCaseReview(article,options);
   return {
     annualReview:projected.review,
+    title:projected.title,
     overview:projected.overview,
     sections:projected.sections.map((s,i)=>({...s,anchor:`${article.record_id.toLowerCase()}-section-${i+1}`})),
     sources:article.source_ids.map(id=>{const source=bySource.get(id);if(!source?.name||!/^https?:\/\//.test(source.url??''))throw Error(`Missing reader source link ${article.record_id}/${id}`);return {id,name:source.name,url:source.url,profile_route:`/atlas/sources/${id}/`};}),

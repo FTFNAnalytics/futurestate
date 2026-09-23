@@ -1,5 +1,7 @@
 # Annual battery corrections — isolated preparation
 
+Later implementation: the [battery follow-through](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-battery-followthrough-2026-09-23.md>) records application after recovery of the five-reading baseline, passing source/type checks and the new full validation run. The preparation/prototype state below is retained history; do not reapply its patch. Final source-context wording uses ESV's exact conditional no-objection formulation and has the updated declaration hash in that report.
+
 September 23, 2026. A six-reading implementation is prepared separately from the running five-reading candidate. No battery changes have been applied to the application at this preparation checkpoint. The following checks establish an isolated prototype, not production rendering or independent acceptance.
 
 ## Scope and sources
