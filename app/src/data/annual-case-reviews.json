@@ -37,7 +37,9 @@
           "receipt_payload_sha256": "b894a24a020d5ad552f9749b9e2ecd42bff0c9746e06747fac8ee0ff33486e5e",
           "route": "/updates/update-2026-09-21-toronto-bounded-project-recheck/",
           "relation": "Exact Council source ID shared with this article. The development-pipeline source was context only in the September 21 receipt and is not treated as freshly checked.",
-          "matched_source_ids": ["source-toronto-2026-sc33-9-item-history"],
+          "matched_source_ids": [
+            "source-toronto-2026-sc33-9-item-history"
+          ],
           "additional_artifact_urls": []
         }
       ],
@@ -58,7 +60,9 @@
           "receipt_payload_sha256": "cf4dbfc40ced5a44cf08253f340e973448455833ba09b1b5edd52424e4cf4e1d",
           "route": "/method/editorial-review/#211-HORNSDALE-ACCESS-2026-09-22",
           "relation": "The article's H1 2024 source profile points to the exact URL inspected in this retained receipt. This is an artifact-specific association, not a fresh whole-article or 2026 operating review.",
-          "matched_source_ids": ["source-56j-hornsdale-h1-2024-operations"],
+          "matched_source_ids": [
+            "source-56j-hornsdale-h1-2024-operations"
+          ],
           "additional_artifact_urls": []
         }
       ],
@@ -87,7 +91,10 @@
           "access": "September 15 retained PDF re-read September 22; cover and page 2 rendered and visually inspected. No fresh PDF download or review of all performance tables",
           "finding": "The cover bears ElectraNet's identity; page 2 identifies ElectraNet's rights/responsibility and separately describes ARENA funding and the government-view disclaimer. Hosting does not make the report an ARENA-authored independent evaluation.",
           "captured_sha256": "f431e507a48bb61c27247495e8365f9bb1e2b830c5b2145d0ca6bf41aaee7b99",
-          "visually_checked_pages": [1,2]
+          "visually_checked_pages": [
+            1,
+            2
+          ]
         },
         {
           "source_id": "source-56e-dalrymple-arena-retrospective-2021",
@@ -149,7 +156,9 @@
           "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
           "route": "/review/evidence-cycle/space-coast-slf-licence/",
           "relation": "Exact Shuttle Landing Facility source ID shared with the retained September 15 decision. This applies an existing finding to the annual reader; it is not a fresh licence check, an independent article review or a new stage admission.",
-          "matched_source_ids": ["source-faa-shuttle-landing-facility-license"],
+          "matched_source_ids": [
+            "source-faa-shuttle-landing-facility-license"
+          ],
           "additional_artifact_urls": []
         }
       ],
@@ -171,7 +180,9 @@
           "receipt_payload_sha256": "2cdde166f54593a01e247db479fcc434755f1725ad2d49fe3291fe188645cf28",
           "route": "/method/editorial-review/#211-F15EX-ACCESS-2026-09-22",
           "relation": "The article's production-resumption source profile points to the exact Air Force URL in this failed-acquisition receipt. The association adds a dated access limit, not a new source verification or a conclusion that no aircraft were produced, delivered or accepted.",
-          "matched_source_ids": ["source-56e-f15ex-production-resumes-2025"],
+          "matched_source_ids": [
+            "source-56e-f15ex-production-resumes-2025"
+          ],
           "additional_artifact_urls": []
         }
       ],
@@ -215,7 +226,9 @@
           "access": "Official PDF text checked September 22; retained original hash verified and operative page 4 visually re-inspected. All five pages were visually inspected in the earlier same-day acquisition. The incorporated April order and later compliance submissions were not fully inspected.",
           "finding": "The order approves Route 3A, incorporates the April 9 order and directs a map/CPCN process. Approval is not evidence of completed construction or customer service.",
           "captured_sha256": "5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec",
-          "visually_checked_pages": [4]
+          "visually_checked_pages": [
+            4
+          ]
         },
         {
           "source_id": "source-virginia-scc-golden-mars-2026",
@@ -226,7 +239,10 @@
           "access": "Official PDF text checked September 22; retained original hash verified and both pages rendered and visually re-inspected. No Supreme Court order or appeal merits review.",
           "finding": "The SCC declines suspension and dismisses the matter; footnote 2 denies reopening the record. This does not cancel the June transmission approval or establish an appellate outcome.",
           "captured_sha256": "0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054",
-          "visually_checked_pages": [1,2]
+          "visually_checked_pages": [
+            1,
+            2
+          ]
         },
         {
           "source_id": "source-virginia-scc-golden-mars-2026",
@@ -894,6 +910,222 @@
       "retained_contexts": [],
       "independent_article_review": false,
       "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-TOPIC-16",
+      "route": "/reference/state-of-future-systems/topic-space/",
+      "source_record_sha256": "e60fc3bb33c8adbb6c22f3f3f771cdb2e4997241a76572e775004d5d54900574",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-locators-acceptance-boundaries",
+      "summary": "The Space chapter now links the retained site-renewal instrument and the corrected Space Coast case. This adds the already-recorded September 15 finding, not a fresh FAA check or operator-, vehicle- or mission-specific authorization.",
+      "replacements": [
+        {
+          "section_heading": "A launch site has several independent permissions",
+          "paragraph_index": 0,
+          "original_text": "The Space Coast case demonstrates why site licensing, environmental review, operator authority and mission activity remain separate. An environmental decision can support later action without issuing a vehicle operator license. Construction acceptance does not demonstrate mission utilization. An old displayed license date also needs a formal disposition before the report concludes that authority was renewed or ended. Keeping the issuer, instrument and scope visible makes the account useful to local readers who need to understand the difference between a planning milestone and an actual change in operations.",
+          "replacement_text": "The Space Coast case demonstrates why site licensing, environmental review, operator authority and mission activity remain separate. An environmental decision does not itself issue a vehicle operator licence, and construction acceptance does not demonstrate mission use. An old displayed licence date alone cannot establish renewal or lapse. For the Shuttle Landing Facility, the retained September 15 check located LRSO 18-018 Revision 2 and Order A-1, issued January 8, 2026, effective January 15, 2026 and expiring January 15, 2031. The linked instrument and case resolve that earlier missing-document question, not operator- or vehicle-specific permission, required agreements or actual mission performance.",
+          "reason": "Supply the specifically identified retained renewal context while preserving the general old-date rule and the separate operating-evidence boundaries."
+        }
+      ],
+      "source_checks": [],
+      "retained_contexts": [
+        {
+          "collection": "evidence_receipts",
+          "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+          "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+          "route": "/review/evidence-cycle/space-coast-slf-licence/",
+          "relation": "This additional context concerns the chapter's named Shuttle Landing Facility example; the FAA source is not part of the chapter's original NASA/NOAA source list. It reuses the September 15 receipt without attributing its finding to those unrelated sources, resetting the check date or supplying independent acceptance.",
+          "matched_source_ids": [],
+          "additional_artifact_urls": [],
+          "include_formal_artifact": true
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "related_readings": [
+        {
+          "record_id": "203-CASE-04",
+          "route": "/reference/state-of-future-systems/case-space-coast-authority-to-mission/",
+          "label": "Space Coast case — retained site-renewal finding",
+          "relation": "The current case distinguishes the located site instrument from operator, vehicle, mission and recurring-use evidence."
+        }
+      ]
+    },
+    {
+      "record_id": "203-SYNTHESIS-04",
+      "route": "/reference/state-of-future-systems/synthesis-standards-procurement-implementation/",
+      "source_record_sha256": "7fd558afaf0c28fa8fc6c4dfbd9b8b372a6e6c0853e39b463b65eae816b0d5e2",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-locators-acceptance-boundaries",
+      "summary": "The existing adjustment-through-April qualification now has the precise Reclamation announcement locator from the retained September 22 HTML check. The paired text is unchanged; neither the check nor this notice supplies independent acceptance.",
+      "replacements": [],
+      "source_checks": [
+        {
+          "source_id": "source-161-usbr-colorado-river-2027-decision",
+          "url": "https://www.usbr.gov/newsroom/news-release/5392",
+          "source_profile_sha256": "dc54a7b42943f45035787dd49e87abdd5cc85e008e67609f3140f9855782e40c",
+          "retained_checked_date": "2026-09-22",
+          "locator": "August 21, 2026 announcement: the paragraph immediately after the August 2026 24-Month Study introduction",
+          "finding": "The announcement says releases will be adjusted through April, when the water-year 2027 volume is determined. This supplies the exact locator for the existing month-specific qualification; it does not reverse the original wording.",
+          "access": "Reuses the recorded September 22 official HTML inspection, not a new retrieval. The underlying guidelines, Record of Decision, study and later revisions were not inspected in that check. No municipal allocation, facility delivery or operating-water outcome follows."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "200-MONOGRAPH-04",
+      "route": "/reference/constraint-monographs/standards-procurement-implementation/",
+      "source_record_sha256": "4eb119834b986d2905caf6c5730293fdadcd0db2130e9576dd29a4a9e17d2e06",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-locators-acceptance-boundaries",
+      "summary": "The existing adjustment-through-April qualification now has the precise Reclamation announcement locator from the retained September 22 HTML check. The paired text is unchanged; neither the check nor this notice supplies independent acceptance.",
+      "replacements": [],
+      "source_checks": [
+        {
+          "source_id": "source-161-usbr-colorado-river-2027-decision",
+          "url": "https://www.usbr.gov/newsroom/news-release/5392",
+          "source_profile_sha256": "dc54a7b42943f45035787dd49e87abdd5cc85e008e67609f3140f9855782e40c",
+          "retained_checked_date": "2026-09-22",
+          "locator": "August 21, 2026 announcement: the paragraph immediately after the August 2026 24-Month Study introduction",
+          "finding": "The announcement says releases will be adjusted through April, when the water-year 2027 volume is determined. This supplies the exact locator for the existing month-specific qualification; it does not reverse the original wording.",
+          "access": "Reuses the recorded September 22 official HTML inspection, not a new retrieval. The underlying guidelines, Record of Decision, study and later revisions were not inspected in that check. No municipal allocation, facility delivery or operating-water outcome follows."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-SYNTHESIS-11",
+      "route": "/reference/state-of-future-systems/synthesis-logistics-supply-recurring-output/",
+      "source_record_sha256": "985c45ad40db2dffa615c837e8dc5c5e756492e7bab54eaa6248d188a905fc70",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-locators-acceptance-boundaries",
+      "summary": "The financing paragraph now distinguishes a signed award/loan agreement from payment and production; the aircraft paragraph separates receiving-unit arrival from formal contractual acceptance. Two September 23 official HTML checks and the separate retained acceptance-ledger gap remain bounded, not admissions.",
+      "replacements": [
+        {
+          "section_heading": "A capacity target does not establish an integrated chain",
+          "paragraph_index": 0,
+          "original_text": "Commerce's USA Rare Earth agreement describes proposed support of up to $277 million in incentives and up to $1.3 billion in lending. The associated system targets 10,000 tons annually of rare-earth metals and alloys and 10,000 tons annually of NdFeB magnets. Those are separate product-stage targets, not two independent quantities that should automatically be added into one output total.",
+          "replacement_text": "Commerce's June 3, 2026 announcement records a signed final incentive award of up to $277 million and a loan agreement of up to $1.3 billion. Its 10,000-ton annual targets for metals/alloys and magnets describe separate planned product stages, not additive delivered output. Signing does not establish payment, completed facilities or accepted production.",
+          "reason": "Distinguish a finalized financing instrument from proposed capacity and actual disbursement or operating delivery."
+        },
+        {
+          "section_heading": "Receiving-party evidence strengthens a delivery claim",
+          "paragraph_index": 0,
+          "original_text": "The Advanced Manufacturing topic includes a named F-15EX receipt by a receiving wing, alongside other production and delivery records. A receiver-linked record is useful because it identifies where an asset entered a real operating organization. It remains narrower than a claim about fleet readiness, mission availability or sustained production cadence.",
+          "replacement_text": "The Advanced Manufacturing topic includes a named F-15EX arrival at a receiving wing, alongside other production and delivery records. The wing's video-page description identifies EX16 and a December 11, 2025 receipt, while the page is dated February 17, 2026. This is receiving-unit arrival evidence, not a formal contractual acceptance date, fleet-readiness finding or complete production series. The separately retained September 22 failed-access finding concerns another Air Force production page; it neither verifies nor contradicts this wing account. An identity-linked acceptance ledger and compatible repeated observations are still required.",
+          "reason": "Preserve the receiving-unit account and distinct event/publication dates without converting arrival or a different source access failure into formal acceptance or a recurring series."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-161-nist-usa-rare-earth-june-2026",
+          "url": "https://www.nist.gov/news-events/news/2026/06/department-commerces-chips-program-finalizes-definitive-agreement-usa-rare",
+          "source_profile_sha256": "7d9562b9b4cbe279475dbbbae3955aef8a4eeccf19f10c81781f6761a6169d6a",
+          "primary_checked_date": "2026-09-23",
+          "locator": "June 3, 2026 NIST announcement: opening award/loan paragraph and final production-target paragraph",
+          "finding": "The announcement records signed financing instruments; the capacities are planned product-stage targets, not observed production.",
+          "access": "Official HTML inspected September 23. The linked PDF, executed agreements, disbursement ledger, milestone conditions and facility acceptance records were not inspected. Local profile hash is not a remote-page capture."
+        },
+        {
+          "source_id": "source-56k-f15ex-ex16-portland-receipt-2026",
+          "url": "https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/",
+          "source_profile_sha256": "3d539092bdbfcec4fbdb1057404cd85ee62f764460ae46b007d7ee72fa39ebda",
+          "primary_checked_date": "2026-09-23",
+          "locator": "EX 16 Comes to Portland: date and description beside the embedded video",
+          "finding": "The description reports EX16 reaching the wing on December 11, 2025; its displayed publication date is February 17, 2026. These are different dates, and neither is identified as contractual acceptance.",
+          "access": "Official HTML description and visible metadata inspected September 23. The embedded video was not watched, downloaded or transcribed; no acceptance or complete production ledger was acquired. Local profile hash is not a remote-page capture."
+        }
+      ],
+      "retained_contexts": [
+        {
+          "collection": "pilot_research_followups",
+          "id": "211-F15EX-ACCESS-2026-09-22",
+          "receipt_payload_sha256": "2cdde166f54593a01e247db479fcc434755f1725ad2d49fe3291fe188645cf28",
+          "route": "/method/editorial-review/#211-F15EX-ACCESS-2026-09-22",
+          "relation": "This separate September 22 access failure concerns the Air Force production-resumption page, not the receiving-wing source cited here. It is retained to explain the unresolved acceptance-ledger requirement; it does not claim that the wing page failed or that no aircraft were accepted.",
+          "matched_source_ids": [],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "related_readings": [
+        {
+          "record_id": "203-CASE-16",
+          "route": "/reference/state-of-future-systems/case-f15ex-production-delivery/",
+          "label": "F-15EX case — retained acceptance-ledger and access limits",
+          "relation": "The annual case preserves the separate production-source access finding without admitting an aircraft-acceptance series."
+        }
+      ]
+    },
+    {
+      "record_id": "200-MONOGRAPH-11",
+      "route": "/reference/constraint-monographs/logistics-supply-recurring-output/",
+      "source_record_sha256": "4186df29a50f5dad93585544bf8157c00caf62eed04d38969ee6f5528ae1109d",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-locators-acceptance-boundaries",
+      "summary": "The financing paragraph now distinguishes a signed award/loan agreement from payment and production; the aircraft paragraph separates receiving-unit arrival from formal contractual acceptance. Two September 23 official HTML checks and the separate retained acceptance-ledger gap remain bounded, not admissions.",
+      "replacements": [
+        {
+          "section_heading": "A capacity target does not establish an integrated chain",
+          "paragraph_index": 0,
+          "original_text": "Commerce's USA Rare Earth agreement describes proposed support of up to $277 million in incentives and up to $1.3 billion in lending. The associated system targets 10,000 tons annually of rare-earth metals and alloys and 10,000 tons annually of NdFeB magnets. Those are separate product-stage targets, not two independent quantities that should automatically be added into one output total.",
+          "replacement_text": "Commerce's June 3, 2026 announcement records a signed final incentive award of up to $277 million and a loan agreement of up to $1.3 billion. Its 10,000-ton annual targets for metals/alloys and magnets describe separate planned product stages, not additive delivered output. Signing does not establish payment, completed facilities or accepted production.",
+          "reason": "Distinguish a finalized financing instrument from proposed capacity and actual disbursement or operating delivery."
+        },
+        {
+          "section_heading": "Receiving-party evidence strengthens a delivery claim",
+          "paragraph_index": 0,
+          "original_text": "The Advanced Manufacturing topic includes a named F-15EX receipt by a receiving wing, alongside other production and delivery records. A receiver-linked record is useful because it identifies where an asset entered a real operating organization. It remains narrower than a claim about fleet readiness, mission availability or sustained production cadence.",
+          "replacement_text": "The Advanced Manufacturing topic includes a named F-15EX arrival at a receiving wing, alongside other production and delivery records. The wing's video-page description identifies EX16 and a December 11, 2025 receipt, while the page is dated February 17, 2026. This is receiving-unit arrival evidence, not a formal contractual acceptance date, fleet-readiness finding or complete production series. The separately retained September 22 failed-access finding concerns another Air Force production page; it neither verifies nor contradicts this wing account. An identity-linked acceptance ledger and compatible repeated observations are still required.",
+          "reason": "Preserve the receiving-unit account and distinct event/publication dates without converting arrival or a different source access failure into formal acceptance or a recurring series."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-161-nist-usa-rare-earth-june-2026",
+          "url": "https://www.nist.gov/news-events/news/2026/06/department-commerces-chips-program-finalizes-definitive-agreement-usa-rare",
+          "source_profile_sha256": "7d9562b9b4cbe279475dbbbae3955aef8a4eeccf19f10c81781f6761a6169d6a",
+          "primary_checked_date": "2026-09-23",
+          "locator": "June 3, 2026 NIST announcement: opening award/loan paragraph and final production-target paragraph",
+          "finding": "The announcement records signed financing instruments; the capacities are planned product-stage targets, not observed production.",
+          "access": "Official HTML inspected September 23. The linked PDF, executed agreements, disbursement ledger, milestone conditions and facility acceptance records were not inspected. Local profile hash is not a remote-page capture."
+        },
+        {
+          "source_id": "source-56k-f15ex-ex16-portland-receipt-2026",
+          "url": "https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/",
+          "source_profile_sha256": "3d539092bdbfcec4fbdb1057404cd85ee62f764460ae46b007d7ee72fa39ebda",
+          "primary_checked_date": "2026-09-23",
+          "locator": "EX 16 Comes to Portland: date and description beside the embedded video",
+          "finding": "The description reports EX16 reaching the wing on December 11, 2025; its displayed publication date is February 17, 2026. These are different dates, and neither is identified as contractual acceptance.",
+          "access": "Official HTML description and visible metadata inspected September 23. The embedded video was not watched, downloaded or transcribed; no acceptance or complete production ledger was acquired. Local profile hash is not a remote-page capture."
+        }
+      ],
+      "retained_contexts": [
+        {
+          "collection": "pilot_research_followups",
+          "id": "211-F15EX-ACCESS-2026-09-22",
+          "receipt_payload_sha256": "2cdde166f54593a01e247db479fcc434755f1725ad2d49fe3291fe188645cf28",
+          "route": "/method/editorial-review/#211-F15EX-ACCESS-2026-09-22",
+          "relation": "This separate September 22 access failure concerns the Air Force production-resumption page, not the receiving-wing source cited here. It is retained to explain the unresolved acceptance-ledger requirement; it does not claim that the wing page failed or that no aircraft were accepted.",
+          "matched_source_ids": [],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "related_readings": [
+        {
+          "record_id": "203-CASE-16",
+          "route": "/reference/state-of-future-systems/case-f15ex-production-delivery/",
+          "label": "F-15EX case — retained acceptance-ledger and access limits",
+          "relation": "The annual case preserves the separate production-source access finding without admitting an aircraft-acceptance series."
+        }
+      ]
     }
   ]
 }

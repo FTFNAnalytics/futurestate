@@ -24,6 +24,8 @@ const contexts = annualReviewContexts(review);
   {review.source_checks.map(source => <section data-annual-source-check={source.source_id}>
     <h3><a href={source.url}>{'additional_source' in source && source.additional_source === true ? 'Additional source' : 'Source check'}: {source.locator}</a></h3>
     {'checked_date' in source && <p>Editorial source check: {source.checked_date}. This additional citation does not replace the original source list or reset the source profile's check date.</p>}
+    {'retained_checked_date' in source && <p>Retained primary-page check: {source.retained_checked_date}. This locator reuses the recorded inspection; no fresh retrieval or source-profile date reset is claimed.</p>}
+    {'primary_checked_date' in source && <p>Primary-page check: {source.primary_checked_date}. The original reader source list and profile check date remain unchanged.</p>}
     {'relation' in source && source.relation && <p>{source.relation}</p>}
     <p>{source.finding}</p><p>{source.access}</p>
   </section>)}
@@ -34,9 +36,19 @@ const contexts = annualReviewContexts(review);
     <ul>{review.local_provenance_context.artifacts.map(artifact => <li><a href={artifact.route}>{artifact.label}</a></li>)}</ul>
     <p>This comparison establishes local editorial lineage, not independent factual acceptance of the sources or their claims.</p>
   </section>}
+  {'related_readings' in review && review.related_readings && <section data-annual-related-readings={review.record_id}>
+    <h3>Related editorial case</h3>
+    <ul>{review.related_readings.map(reading => <li><a href={reading.route}>{reading.label}</a><p>{reading.relation}</p></li>)}</ul>
+    <p>A linked case supplies editorial context, not independent acceptance of this article.</p>
+  </section>}
   {contexts.map(context => <section data-annual-retained-context={context.id}>
     <h3><a href={context.route}>Retained finding · {context.checked_date}</a></h3>
     <p>{context.relation}</p><p>{context.summary}</p>
+    {'formal_artifact' in context && context.formal_artifact && <section data-annual-formal-artifact={context.id}>
+      <h4><a href={context.formal_artifact.url}>Retained instrument: {context.formal_artifact.title}</a></h4>
+      <p>Recorded inspection: {context.checked_date}. Issued {context.formal_artifact.issued_date}; effective {context.formal_artifact.effective_date}; expiry {context.formal_artifact.expiration_date}.</p>
+      <p>{context.evidence_boundary}</p>
+    </section>}
     <p><strong>Next evidence required:</strong> {context.next_action}</p>
     {context.next_check_date && <p>Recorded next check: {context.next_check_date}. This editorial clarification does not reset that appointment.</p>}
     {context.matched_source_ids.length > 0 && <ul>{context.matched_source_ids.map((id: string) => <li><a href={`/atlas/sources/${id}/`}>Matched source: {id}</a></li>)}</ul>}

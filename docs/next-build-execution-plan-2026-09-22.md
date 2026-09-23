@@ -1,6 +1,6 @@
 # FTFN — next-stage execution plan
 
-Planning refresh: September 23, 2026. This is the current execution order for the existing six-stage build. It replaces stale next-step instructions in this file, not historical receipts or the mandatory requirements in the [six-stage roadmap](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/roadmap-next-stages-2026-09-22.md>) and [completion audit](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/completion-audit.md>). Existing dated implementation reports retain the detailed history.
+Planning refresh: September 23, 2026, using repository evidence inspected through 20:33 UTC (14:33 America/Edmonton). This is the current execution order for the existing six-stage build. It replaces stale next-step instructions in this file, not historical receipts or the mandatory requirements in the [six-stage roadmap](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/roadmap-next-stages-2026-09-22.md>) and [completion audit](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/completion-audit.md>). Existing dated implementation reports retain the detailed history.
 
 This request changes planning documentation only. It does not implement application changes, contact reviewers, resume stopped UI automation, create scheduled jobs, commit/push code, deploy, change access/DNS or authorize launch.
 
@@ -14,8 +14,8 @@ Full v1 remains the target. A smaller, separately named English release is an ow
 
 | Area | Verified or documented now | Remaining |
 | --- | --- | --- |
-| Recoverable baseline | Commit `b7bd8314950281424051a0782b7d6e0c57508d95`; full eight-briefing validation finished September 23 at 19:48:41 UTC; exact recovery passed at 19:52:27 UTC | Later annual changes are not covered by that checkpoint; final-release clean-install reproduction remains required |
-| Latest application work | Eight additional annual/paired readers corrected; complete generation/validation passed September 23 at 20:15:04 UTC, with 19 notices/29 total revised paragraphs checked across all 104 readers | Exact source capture/recovery follows; the next five-reading patch is prepared and isolated-source-tested, not integrated |
+| Recoverable baseline | Commit `1b52a61dfc3f270f85ba1f0a837b3215a1e36110`; eight-reader annual validation passed at 20:15:04 UTC and exact recovery at 20:20:45 UTC | Subsequent five-reading changes are not covered; final-release clean-install reproduction remains required |
+| Latest application work | Five-reading Space/Reclamation/financing/aircraft follow-through passed full validation at 20:49:30 UTC; 16,637 pages and zero missing local targets | Capture and recover the exact passing source, then apply the separately tested six-reading battery patch |
 | Annual edition | All 58 annual drafts have version-pinned assisted comparisons; all twelve synthesis/essay pairs compared | Recorded findings, exact primary support where missing, and independent acceptance of all 58 |
 | Selected content | 33 selected drafts and existing review packets; all twelve factual answers have assisted checks | Independent acceptance, remaining source limitations and dispositions for reachable historical claims |
 | Portfolio | 24 canonical projects/15 places inventoried, plus separately reconciled candidate groups | Accepted distinct totals are unknown; counting/eligibility decisions precede the gap against 100 projects/70 places |
@@ -23,9 +23,9 @@ Full v1 remains the target. A smaller, separately named English release is an ow
 | Readers and measurements | Five-task test protocol; three measurement pilots with explicit missing evidence | No completed participant sessions; actual accessibility tests outstanding; 0/3 admitted series |
 | Hosting and launch | Historical owner-only hosting record; local checkpoint evidence | Fresh hosted verification, deployment authority, exact-candidate launch/hold and thirty actual operating days if launched |
 
-The [baseline recovery record](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T19-51-06.060Z-K7VoPh/git-recovery-verification.json>) binds 9,539 source files, candidate `067ef75f1f27577d36f3325a5eed199e43c65811391d81b14bc5675733969003` and receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-bad611eb6418`. Its output had 16,634 application pages, 159 top-level JSON exports, 334 updates, 833 sources and zero missing local targets. These are technical inventory counts, not accepted-content counts.
+The [baseline recovery record](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T20-19-16.767Z-txze82/git-recovery-verification.json>) binds 9,544 files, candidate `41419c4845465444527dd65ab56e94b4c79cd42576486d5b204cda61aedaea45` and receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-1f3375e06047`. That completed output had 16,636 application pages, 159 JSON exports, 336 updates, 833 sources and zero missing local targets. These technical counts are not accepted-content counts.
 
-The [new annual run](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T19-55-35.395Z-MRLLQV/results.json>) is now terminal: generation and complete validation exited 0, finishing at 20:15:04.618 UTC. Receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-1f3375e06047` binds candidate `41419c4845465444527dd65ab56e94b4c79cd42576486d5b204cda61aedaea45`: 16,636 application pages, 159 exports, 336 updates, 833 sources and 712,108 local references with zero missing targets. Review/census/reachability refreshes pass; exact source recovery follows. The [next five-reading patch](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-locators-acceptance-preparation-2026-09-23.md>) is prepared, not yet integrated. Do not restart unchanged passing validation.
+The [five-reading validation](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T20-23-40.301Z-xx0nyF/results.json>) started at 20:23:40 UTC. At inspection, its saved results contained generation exit 0 at 20:24:35 UTC; the validation log had reached page rendering at 20:33 UTC, without a recorded terminal result. The [implementation report](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-locators-acceptance-followthrough-2026-09-23.md>) records 24 notices/34 total revised paragraphs and the current source/type passes. Inspect the existing run at the next implementation session; do not start a competing build, reapply this patch or reuse the earlier eight-reader receipt. A partial log is neither a full pass nor proof of failure.
 
 Do not restart completed Golden-Mars signal/system/paired-reading/briefing work, reapply the eight-reader annual patch, repeat unchanged 58-record comparisons, redo the 768-row portfolio join, or recreate the two language samples.
 
@@ -52,24 +52,34 @@ Start at the next authorized implementation session. Finish each bounded batch a
 
 | Allocation | Work | Required handoff |
 | --- | --- | --- |
-| Day 1 | Preserve the now-passing annual candidate; refreshed review/census/reachability evidence is ready; verify exact recovery before applying the prepared follow-through | Eight-reader changes recovered with terminal proof; prior baseline retained; no redundant build |
-| Day 2 | Add the Space chapter's direct renewal/case context and the exact Reclamation locator for synthesis/essay 04 | Version-pinned, source-bounded corrections with original text retained; focused and full changed-candidate checks |
-| Day 3 | Clarify synthesis/essay 11 financing and aircraft acceptance; correct Victorian Big Battery naming in affected paired readings/case | Current surfaces agree; no invented payment, formal acceptance, registration day or annual performance; validated/recoverable batch |
-| Day 4 | Assemble first four stable subject-review articles, five backlog decisions, portfolio counting choices and the two existing language samples | Exact versions, claim/source locations, proposed decisions and named roles still to assign; no assumed approvals |
-| Day 5 | Refresh five-task reader protocol against a stable candidate, review acquisition gaps, close verification and size the next batch | Current checkpoint, prioritized defects/findings, reviewer dependencies and revised effort estimate; battery enrichment queued if unfinished |
+| Day 1 — close current work | Inspect the existing five-reading validation; resolve an actual failure if present, then refresh review/census/reachability bindings and recover the exact passing source | New validated checkpoint, or a precise failure with retained logs; do not redo recovered eight-reader work |
+| Day 2 — next correction | Correct Victorian Big Battery naming in affected paired readings/case; integrate bounded battery/Gateway chronology and preserve earlier Space Coast corrections | Consistent current surfaces, intact history and validated/recoverable batch; carry unfinished work forward |
+| Day 3 — review and coverage | Assemble first four stable subject-review articles, five backlog decisions, portfolio counting choices and the two existing language samples | Exact versions, claim/source locations and proposed decisions; accepted totals remain unknown until actual decisions |
+| Day 4 — reader and measurement preparation | Refresh the five-task reader protocol against a stable candidate; prepare accessibility checks and targeted acquisition requests for the three pilots | Session-ready material and exact missing-artifact list; no invented sessions, access permission or data admission |
+| Day 5 — consolidate and replan | Address available review returns within authority, close changed-candidate verification and prioritize the next batch | Current checkpoint, acceptance ledger, unresolved dependencies and revised estimates based on observed throughput |
 
 Full validation belongs to each changed-candidate batch, not just Day 5. Review preparation can overlap an unchanged running build, but application inputs must remain stable. Keep at most two engineering changes and three deep editorial reviews active; this is not authorization for subagents or concurrent builds.
 
-### Remaining correction queue
+### Applied corrections awaiting validation closure
 
 Use the [annual handoff](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-review-handoff.md>) and its version-pinned notes.
 
-1. **Space chapter (203-TOPIC-16):** link the corrected case and retained September 15 renewal instrument. Preserve the valid rule that an old displayed licence date alone proves neither renewal nor lapse. Do not attach FAA evidence to unrelated NASA/NOAA source IDs or label retained evidence a fresh check.
-2. **Synthesis/essay 04:** attach the already-located Reclamation announcement passage supporting adjustment through April. This is a missing locator, not a factual reversal. Preserve modeled-period and municipal/facility-delivery limits.
-3. **Synthesis/essay 11:** distinguish a definitive financing agreement from conditional amounts, disbursement and operating capacity. Separate aircraft arrival from formal contractual acceptance and link the existing acceptance-ledger/access gap.
-4. **Victorian Big Battery naming:** correct the current name in synthesis/essay pairs 08/10 and case 13 as applicable, without rewriting preserved originals or conflating incident, commissioning, registration and service.
-5. **Gateway/Victorian Big Battery enrichment:** integrate the [completed scoped source inspection](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-battery-source-acquisition-2026-09-23.md>) into precise dated milestones. Preserve inspected-page limits, contract/compliance distinctions, partial-return history, conditional restart and service scope. Do not infer current availability or annual performance.
-6. **Outstanding support and review findings:** retain explicit source/access gaps, including Amtrak's uncompleted visual PDF verification. Revisit only affected versions; an assisted comparison is not blanket primary-source clearance.
+The Space chapter (203-TOPIC-16), Reclamation synthesis/essay 04 and financing/aircraft synthesis/essay 11 changes are already applied. Their next action is rendered validation and recovery, not another implementation. Preserve the retained FAA instrument's exact identity/date, Reclamation's announcement locator and adjustment-period limits, and the distinctions between agreement, disbursement, arrival and contractual acceptance.
+
+### Next engineering package: battery corrections
+
+Owner: primary implementer, followed by independent subject review. Dependency: close the current five-reading run and preserve its exact passing source before changing application inputs. Initial allowance: one focused engineering day, extended if the regression scope requires it.
+
+1. **Current naming:** correct Victorian Big Battery in case 13 and synthesis/essay pairs 08/10 where applicable. Carry the title consistently through the reader page, page metadata, catalog/search and exports; preserve original historical text and route identities.
+2. **Dated chronology:** integrate the [completed scoped source inspection](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-battery-source-acquisition-2026-09-23.md>) into Gateway case 11 and Victorian Big Battery case 13. Distinguish contract approval from physical return, conditional commissioning restart from unconditional clearance, registration from service, and contracted reserve capacity from facility capacity. Do not infer an exact registration day, current availability or annual performance.
+3. **Overlapping corrections:** synthesis/essay pair 08 already contains Space Coast corrections. Preserve those exact current corrections and their earlier review/update provenance when adding battery naming changes. Keep original payloads inspectable; do not replace a review record in a way that loses prior history.
+4. **Regression checks:** verify all changed titles, overviews, paragraphs, paired formats, citations, metadata and exports, and assert that unaffected readers and original records remain unchanged. Run the full changed-candidate validation, refresh affected review bindings and record exact recovery.
+
+Exit: the six affected readings are consistent, prior corrections remain intact, evidence boundaries are explicit, and the new candidate passes its own checks. This is implementation completion, not independent acceptance.
+
+### Subsequent evidence corrections
+
+Retain explicit source/access gaps, including Amtrak's uncompleted visual PDF verification. Prioritize any materially misleading current claim, then missing exact-source support, then wording consistency. Revisit affected versions only; an assisted comparison is not blanket primary-source clearance. New review findings join this bounded queue rather than triggering another whole-corpus rewrite.
 
 For each meaning-changing correction, check title, summary, body, cards/search, metadata, exports and paired formats. Test exact identity/date associations and preserved history. Do not treat every occurrence of a source ID as a proven defect.
 
@@ -98,7 +108,7 @@ Accountable roles are proposed responsibilities, not people already appointed.
 
 Every return must identify reviewer/decision-maker, role, actual date, candidate/article version, outcome, rationale, affected claims and re-review triggers. Meaning-changing edits invalidate affected approval until re-reviewed. Reuse unchanged valid work; do not count prepared forms as returned decisions.
 
-The [baseline reachability audit](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reachability.md>) shows that the selected 33 articles lead to all 16,634 application pages, including 826 feed-held signals, plus 25 separately linked HTML downloads. Selecting 33 does not isolate a 33-page release. Address reachable historical claims through review, correction or an explicit approved scope boundary; feed exclusion is not removal. Refresh this inventory after the changed-candidate pass.
+The [baseline reachability audit](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reachability.md>) shows that the selected 33 articles lead to all 16,636 application pages, including 826 feed-held signals, plus 25 separately linked HTML downloads. Selecting 33 does not isolate a 33-page release. Address reachable historical claims through review, correction or an explicit approved scope boundary; feed exclusion is not removal. Refresh this inventory after the changed-candidate pass.
 
 Keep unapproved translations unpublished. Review the [existing samples](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/translation-pilots/review-guide.md>) before bulk translation; do not translate changing English text.
 
@@ -171,4 +181,4 @@ Starting acceptance measures remain: **58/58 assisted annual comparisons, 0/58 i
 
 Set a full-v1 delivery estimate only after accepted coverage and actual review throughput are known. Stop release progression if validated and packaged source differ, a material current claim remains misleading, an applicable mandatory gate is unmet, critical tested accessibility defects remain or owner authority is absent. Continue unaffected authorized work.
 
-**Immediate build priority:** close and recover the already-applied eight-reader annual batch, then address the remaining exact-source/wording findings. **Immediate owner priority:** assign reviewers, readers and counting/backlog decision-makers and agree the contact process. These are the dependencies most likely to determine elapsed time.
+**Immediate build priority:** close and recover the already-applied five-reading batch, then complete the battery correction package. The eight-reader batch is already recovered. **Immediate owner priority:** assign reviewers, readers and counting/backlog decision-makers and agree the contact process. These are the dependencies most likely to determine elapsed time.

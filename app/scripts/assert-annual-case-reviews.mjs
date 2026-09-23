@@ -19,7 +19,12 @@ const pairedIds = ['203-SYNTHESIS-01', '200-MONOGRAPH-01', '203-SYNTHESIS-03', '
 const spacePairedIds = ['203-SYNTHESIS-06', '200-MONOGRAPH-06', '203-SYNTHESIS-08', '200-MONOGRAPH-08'];
 const allPairedIds = [...pairedIds, ...spacePairedIds];
 const citationIds = ['203-APPENDIX-01', '203-APPENDIX-02', '203-TOPIC-17', '203-TOPIC-06'];
-const laterIds = [...allPairedIds, ...citationIds];
+const locatorIds = ['203-TOPIC-16','203-SYNTHESIS-04','200-MONOGRAPH-04','203-SYNTHESIS-11','200-MONOGRAPH-11'];
+const waterLocatorIds = locatorIds.slice(1,3);
+const financeLocatorIds = locatorIds.slice(3);
+const locatorProfilePins = new Map([["source-161-usbr-colorado-river-2027-decision","dc54a7b42943f45035787dd49e87abdd5cc85e008e67609f3140f9855782e40c"],["source-161-nist-usa-rare-earth-june-2026","7d9562b9b4cbe279475dbbbae3955aef8a4eeccf19f10c81781f6761a6169d6a"],["source-56k-f15ex-ex16-portland-receipt-2026","3d539092bdbfcec4fbdb1057404cd85ee62f764460ae46b007d7ee72fa39ebda"]]);
+for(const [id,pin] of locatorProfilePins) assert.equal(hash(await raw('src/content/sources/'+id+'.json')),pin,'Locator source profile drift');
+const laterIds = [...allPairedIds, ...citationIds, ...locatorIds];
 const expectedIds = ['203-CASE-02', '203-CASE-12', '203-CASE-14', '203-CASE-04', '203-CASE-16', '203-CASE-03', '203-CASE-18', ...laterIds];
 const citationSources = new Map([["203-APPENDIX-01","source-161-lbnl-data-center-energy-usage-2024"],["203-TOPIC-17","source-chandler-reclaimed-water-system"],["203-TOPIC-06","source-noaa-2025-global-climate-report"]]);
 const citationProfilePins = new Map([["source-161-lbnl-data-center-energy-usage-2024","0a31c39d4b27d17075a368fb20ba2ff7f91b569594d3447cc3019c65c8edf7a6"],["source-noaa-2025-global-climate-report","dd8c9f18902e20b541696978d494fdaf7238849a6e453093262c1cd487b1c3bc"],["source-chandler-reclaimed-water-system","b21de1128514758b92beb9f446b31234794e249cd2d7c5657c280ce57912cf8a"]]);
@@ -63,7 +68,8 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
   assert.equal(hash(JSON.stringify(data.records.slice(0, 7))), '054c81854e26fe58f786b24050984d4b3e5ce34ca746b7a1a0453863cff1ab69', 'Earlier seven reviews changed');
   assert.equal(hash(JSON.stringify(data.records.slice(0, 11))), '4cf9116132695d46acc0e382bbd16f994ba7618e8c9c195603f2cb4a4a5a9c5c', 'Earlier eleven reviews changed');
   assert.equal(hash(JSON.stringify(data.records.slice(0, 15))), 'ca8db6563e3b2761aa22c5b422b38a09dda18536f3a81b4e1ee1dcccc11a27e8', 'Earlier fifteen reviews changed');
-  assert.equal(data.records.reduce((n, r) => n + r.replacements.length, 0), 29);
+  assert.equal(hash(JSON.stringify(data.records.slice(0,19))), '8d9e4834f69e92d95ddeef6a81afd6f65c4b752a9e9cdd94ca737188b45f97d8', 'Earlier nineteen reviews changed');
+  assert.equal(data.records.reduce((n, r) => n + r.replacements.length, 0), 34);
   assert.equal(data.records.filter(r => r.overview_replacement).length, 3);
   assert.equal(data.records.reduce((n, r) => n + (r.heading_replacements?.length ?? 0), 0), 1);
   for (const r of data.records) {
@@ -101,6 +107,43 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
         ]);
         assert(context.scope.includes('not independent verification'));
       } else assert(!r.local_provenance_context);
+    }
+    if (locatorIds.includes(r.record_id)) {
+      assert.equal(r.update_id,'update-2026-09-23-annual-locators-acceptance-boundaries');
+      if (r.record_id === '203-TOPIC-16') {
+        assert.equal(r.replacements.length,1);
+        assert.deepEqual(r.source_checks,[]);
+        assert.deepEqual(r.related_readings.map(v=>v.record_id),['203-CASE-04']);
+        assert.equal(r.retained_contexts[0].id,'receipt-60-slf-2026-09-15-renewal-discovered');
+        assert.deepEqual(r.retained_contexts[0].matched_source_ids,[]);
+        assert(r.retained_contexts[0].relation.includes('not part of the chapter'));
+        assert(r.summary.includes('not a fresh FAA check'));
+      } else if (waterLocatorIds.includes(r.record_id)) {
+        assert.deepEqual(r.replacements,[]);
+        assert.deepEqual(r.retained_contexts,[]);
+        assert.equal(r.source_checks.length,1);
+        assert.equal(r.source_checks[0].source_id,'source-161-usbr-colorado-river-2027-decision');
+        assert.equal(r.source_checks[0].retained_checked_date,'2026-09-22');
+        assert(!r.source_checks[0].primary_checked_date);
+      } else {
+        assert.equal(r.replacements.length,2);
+        assert.deepEqual(r.source_checks.map(c=>c.source_id),['source-161-nist-usa-rare-earth-june-2026','source-56k-f15ex-ex16-portland-receipt-2026']);
+        for(const c of r.source_checks) assert.equal(c.primary_checked_date,'2026-09-23');
+        assert.deepEqual(r.related_readings.map(v=>v.record_id),['203-CASE-16']);
+        assert.equal(r.retained_contexts[0].id,'211-F15EX-ACCESS-2026-09-22');
+        assert.deepEqual(r.retained_contexts[0].matched_source_ids,[]);
+        assert(r.retained_contexts[0].relation.includes('not the receiving-wing source'));
+      }
+      for(const c of r.source_checks) {
+        assert.equal(c.source_profile_sha256,locatorProfilePins.get(c.source_id));
+        assert(!c.additional_source && !c.checked_date,'Existing sources are not additional citations');
+      }
+    }
+    const related = r.related_readings ?? [];
+    assert.equal(related.length, r.record_id==='203-TOPIC-16'||financeLocatorIds.includes(r.record_id)?1:0);
+    for(const linked of related) {
+      assert.equal(linked.route,readerCatalog.find(a=>a.id===linked.record_id)?.route,'Wrong related-case route');
+      assert(linked.label && linked.relation);
     }
     if (r.overview_replacement) {
       assert(['203-CASE-04', '203-CASE-03', '203-CASE-18'].includes(r.record_id));
@@ -141,12 +184,19 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
       } else assert.equal(check.url, sourceMap.get(check.source_id)?.url, 'Checked source URL drift');
       assert(check.locator && check.access && check.finding);
     }
-    assert.equal(r.retained_contexts.length, ['203-CASE-03', '203-CASE-18', ...pairedIds, ...citationIds].includes(r.record_id) ? 0 : 1);
+    assert.equal(r.retained_contexts.length, ['203-CASE-03', '203-CASE-18', ...pairedIds, ...citationIds, ...waterLocatorIds].includes(r.record_id) ? 0 : 1);
     for (const b of r.retained_contexts) {
       assert(['receipts', 'pilot_research_followups', 'evidence_receipts'].includes(b.collection));
       const receipt = (b.collection === 'evidence_receipts' ? decisions.receipts : operations[b.collection]).find(v => (v.receipt_id ?? v.review_id) === b.id);
       assert(receipt, 'Missing exact receipt');
       assert.equal(hash(JSON.stringify(receipt)), b.receipt_payload_sha256, 'Receipt hash drift');
+      assert.equal(b.include_formal_artifact,r.record_id==='203-TOPIC-16'?true:undefined,'Formal artifact scope drift');
+      if (b.include_formal_artifact) {
+        assert.equal(b.collection,'evidence_receipts');
+        assert.equal(receipt.formal_artifact.url,'https://drs.faa.gov/browse/excelExternalWindow/DRSDOCID152397580020231120183622.0001');
+        assert.equal(receipt.source_checked_date,'2026-09-15');
+        assert.equal(receipt.next_check_date,'2026-10-09');
+      }
       assert((receipt.checked_date ?? receipt.source_checked_date) <= data.review_date);
       if (b.collection === 'evidence_receipts') {
         assert(receipt.decision_date <= data.review_date);
@@ -240,6 +290,18 @@ for (const mutate of [
   d => { d.records[17].source_checks[0].url = 'https://example.invalid/unrelated-water'; },
   d => { d.records[18].source_checks[0].checked_date = '2026-09-01'; },
   d => { d.records[18].approval_receipt_id = 'invented-climate-review'; },
+  d => { d.records[19].retained_contexts[0].matched_source_ids = ['source-nasa-moon-to-mars-architecture-rev-c-2025']; },
+  d => { d.records[19].retained_contexts[0].include_formal_artifact = false; },
+  d => { d.records[19].related_readings[0].route = '/unrelated/'; },
+  d => { d.records[19].related_readings[0].record_id = '203-CASE-16'; },
+  d => { d.records[20].source_checks[0].retained_checked_date = '2026-09-23'; },
+  d => { d.records[20].source_checks[0].primary_checked_date = '2026-09-23'; },
+  d => { d.records[21].source_checks[0].source_profile_sha256 = '0'.repeat(64); },
+  d => { d.records[21].source_checks[0].url = 'https://example.invalid/other-study'; },
+  d => { d.records[22].source_checks[0].primary_checked_date = '2026-09-22'; },
+  d => { d.records[22].retained_contexts[0].matched_source_ids = ['source-56k-f15ex-ex16-portland-receipt-2026']; },
+  d => { d.records[23].approval_receipt_id = 'invented-finance-approval'; },
+  d => { d.records[23].related_readings[0].record_id = '203-CASE-04'; },
 ]) {
   const changed = structuredClone(annualCaseReviews); mutate(changed);
   assert.throws(() => assertBindings(changed));
@@ -281,10 +343,17 @@ for (const a of pack.records) {
   assert.throws(() => annualCaseReview({...a, overview:'unreviewed drift'}), /source drift/);
   for (const date of ['September 22', '2026-02-30']) assert.throws(() => annualCaseReview(a, {asOfDate:date}), /ISO calendar date/);
   const contexts = annualReviewContexts(review); assert.equal(contexts.length, review.retained_contexts.length);
-  for (const context of contexts) assert(context.summary && context.next_action);
+  for (const context of contexts) {
+    assert(context.summary && context.next_action);
+    if (a.record_id==='203-TOPIC-16') {
+      const receipt=evidence.receipts.find(r=>r.receipt_id===context.id);
+      assert.deepEqual(context.formal_artifact,receipt.formal_artifact);
+      assert.equal(context.evidence_boundary,receipt.evidence_boundary);
+    } else assert(!context.formal_artifact,'Unexpected formal-artifact projection');
+  }
 }
-assert.equal(notices, 19); assert.equal(changedBodies, 17); assert.equal(changedParagraphs, 29); assert.equal(changedOverviews, 3); assert.equal(changedHeadings, 1);
-for (const suffix of ['01', '03', '06', '08']) {
+assert.equal(notices, 24); assert.equal(changedBodies, 20); assert.equal(changedParagraphs, 34); assert.equal(changedOverviews, 3); assert.equal(changedHeadings, 1);
+for (const suffix of ['01', '03', '04', '06', '08', '11']) {
   const [report, essay] = [`203-SYNTHESIS-${suffix}`, `200-MONOGRAPH-${suffix}`].map(id => pack.records.find(a => a.record_id === id));
   assert.deepEqual(applyAnnualCaseReview(report).sections, applyAnnualCaseReview(essay).sections, 'Paired current readings diverged');
 }
@@ -310,4 +379,4 @@ for (const updateId of new Set(annualCaseReviews.records.map(r => r.update_id ??
   }
 }
 assert.equal(ops.governed_series_admitted, 0);
-console.log('Annual source checks passed: 19 exact notices, 3 current overviews, 29 changed paragraphs, 1 heading, 87 unchanged bodies; three explicitly additional sources and 58-row lineage proof; Golden-Mars and Space Coast pairs agree, per-record review dates and all earlier reviews/checks remain pinned. Original records, source/receipt bindings and approval/measurement holds preserved.');
+console.log('Annual source checks passed: 24 exact notices, 3 current overviews, 34 changed paragraphs, 1 heading, 84 unchanged bodies; three explicitly additional sources, 58-row lineage proof, retained Space/Reclamation locators and two current primary HTML checks; all six changed/noticed synthesis pairs agree, per-record review dates and all earlier reviews/checks remain pinned. Original records, source/receipt bindings and approval/measurement holds preserved.');

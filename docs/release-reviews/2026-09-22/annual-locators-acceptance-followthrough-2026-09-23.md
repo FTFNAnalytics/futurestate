@@ -1,0 +1,31 @@
+# Annual locators and acceptance boundaries — implementation
+
+Completed local validation: both logged commands exited 0, with the full sequence finishing at **20:49:30.094 UTC on September 23**. Receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-30170f3eb1af` binds candidate `ec7251f1a8285f6ad4165e09d0cb32efa72cacc2b6fc3fe86c8e0db62c84357b` and 3,424 artifacts. The receipt-bearing rebuild and both rendered-verification passes succeeded: 16,637 application pages, 159 JSON exports, 337 updates and 833 sources; 712,152 local references with zero missing targets. All 104 readers, the 24 scoped notices, three overviews, 34 paragraphs, retained/new source dates and formal-instrument/case links pass exact checks. Review versions and the census have been refreshed and census checks pass; terminal reachability and source recovery are captured next. Earlier running-state text below is retained history, not the current run state.
+
+September 23, 2026. Five existing readings now have the source-context and wording changes described in the [preparation/source record](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-locators-acceptance-preparation-2026-09-23.md>). This is local implementation, not independent acceptance, measurement admission or publication authority.
+
+## Recovered starting point
+
+The preceding eight-reader Space Coast/citation batch passed full validation at 20:15:04.618 UTC, receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-1f3375e06047`, candidate `41419c4845465444527dd65ab56e94b4c79cd42576486d5b204cda61aedaea45`. It was committed locally as `1b52a61dfc3f270f85ba1f0a837b3215a1e36110`. Its [archive recovery](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T20-19-16.767Z-txze82/git-recovery-verification.json>) passed at 20:20:45.539 UTC: 9,544 files and 219,796,021 exact source bytes, matching candidate/receipt/logs and the unchanged lockfile. The source manifest digest is `36c35a5e7f7c40c6c81dd8c1820d50933784e92cfddea595a8da7f09c09e2b0d`. This does not establish clean dependency installation or cover the later five-reading changes.
+
+## Applied changes
+
+- Space chapter 203-TOPIC-16: one clarified paragraph plus direct links to the retained FAA instrument and corrected Space Coast case. The original NASA/NOAA source list remains intact, with no false matched-source association.
+- Synthesis/essay 04: two context-only notices provide the exact Reclamation locator. Both original bodies remain unchanged.
+- Synthesis/essay 11: four paragraph changes in total distinguish financing/production states and receiving-unit arrival/contractual acceptance. Fresh September 23 HTML checks and the separate retained September 22 failed-access receipt are visibly distinguished. The embedded video, executed agreements and acceptance ledger were not inspected.
+
+The runtime resolves the Space instrument and its evidence boundary directly from the exact retained receipt. Source-check dates have distinct labels for retained HTML inspection, new primary-page inspection and the earlier additional-source citations. Related-case links have explicit editorial, not independent-approval, boundaries.
+
+The annual data now contains 24 notices and 34 changed paragraphs, with twenty changed reader bodies and 84 unchanged bodies. Three earlier overview changes and one earlier heading change remain. All nineteen preceding review payloads, original readers, source-profile dates, evidence decisions, measurement holds and the October 9 appointment remain unchanged. The new dated update and all changed implementation/test files are included in the candidate digest. No approval field, hosting setting or access boundary was advanced.
+
+## Verification and next work
+
+The subsequent candidate-bound reachability run exited 0: all 16,637 application pages remain reachable from the selected 33, with 25 separately linked HTML downloads, 826 feed-held signals and zero unresolved application-anchor targets. This is a static local inventory, not an approved release scope or independent claim review. The following checkpoint diagnostic binds the exact source and recovery separately from the full software pass.
+
+Exact preconditions were rechecked against the real application before applying the prepared patch. Focused annual assertions, the complete current-editorial source suite (terminal exit 0, handle 94065) and diff whitespace checking pass. Type checking (terminal exit 0, handle 54743) passes across 922 files with zero errors, zero warnings and two pre-existing hints. The earlier isolated prototype, output-test syntax check and component parse also passed; none of these alone proves production-output acceptance.
+
+Full changed-candidate generation/validation started at **20:23:40 UTC**, [run 2026-09-23T20-23-40.301Z-xx0nyF](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T20-23-40.301Z-xx0nyF/results.json>), handle **22408**. The run remains active; inspect its terminal result before editing inputs or starting a competing build. Source recovery for these new bytes remains required. The preceding successful receipt cannot be reused for this changed candidate.
+
+Prepared production checks cover all 104 readers, original/current paragraph placement, check-date labels, exact formal-instrument dates/boundaries, case links, paired-body agreement, catalog dates, exports and the dated update. Negative fixtures reject unrelated source association, wrong case links, retained/fresh date substitution, profile or URL drift and invented approval. No browser automation, actual zoom/assistive-technology session, participant review or independent acceptance has occurred.
+
+After successful full validation, refresh candidate-bound review/reachability and recover the source. Remaining annual work includes Victorian Big Battery naming in affected readings and case 13, scoped battery chronology and Gateway enrichment. The full content/portfolio/backlog/language, real-reader/accessibility, measurement, owner and operating-month requirements remain open.

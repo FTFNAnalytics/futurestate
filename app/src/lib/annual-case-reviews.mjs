@@ -58,7 +58,9 @@ export function annualReviewContexts(review) {
       const receipt = evidence.receipts.find(r => r.receipt_id === binding.id);
       if (!receipt || receipt.source_checked_date > reviewedAt || receipt.decision_date > reviewedAt) throw Error(`Invalid retained annual context: ${binding.id}`);
       return {...binding, checked_date:receipt.source_checked_date, summary:receipt.bounded_finding,
-        next_action:receipt.next_action, next_check_date:receipt.next_check_date};
+        next_action:receipt.next_action, next_check_date:receipt.next_check_date,
+        formal_artifact:'include_formal_artifact' in binding && binding.include_formal_artifact === true ? receipt.formal_artifact : null,
+        evidence_boundary:receipt.evidence_boundary};
     }
     if (!['receipts', 'pilot_research_followups'].includes(binding.collection)) throw Error(`Invalid retained annual collection: ${binding.collection}`);
     const receipt = operations[binding.collection]?.find(r => (r.receipt_id ?? r.review_id) === binding.id);

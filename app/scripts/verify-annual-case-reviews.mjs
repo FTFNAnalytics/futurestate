@@ -91,6 +91,15 @@ for (const article of history.records) {
     assert(hrefs.includes(check.url));
     for (const value of [check.locator, check.access, check.finding]) assert(visible.includes(value));
     if (check.relation) assert(visible.includes(check.relation), 'Additional-artifact relation must be visible');
+    const section=sourceChecks.find(n=>attr(n,'data-annual-source-check')===check.source_id);
+    if (check.retained_checked_date) {
+      assert(text(section).includes('Retained primary-page check: '+check.retained_checked_date));
+      assert(text(section).includes('no fresh retrieval'));
+    }
+    if (check.primary_checked_date) {
+      assert(text(section).includes('Primary-page check: '+check.primary_checked_date));
+      assert(text(section).includes('profile check date remain unchanged'));
+    }
     if (check.additional_source === true) {
       const exact = sourceChecks.filter(n=>attr(n,'data-annual-source-check')===check.source_id);
       assert.equal(exact.length,1);
@@ -113,9 +122,29 @@ for (const article of history.records) {
     assert.deepEqual(JSON.parse(await read('/data/phase-203-state-of-future-systems-2026.json')),originalReport);
     assert.deepEqual(JSON.parse(await read('/data/phase-204-reader-completion.json')),history);
   }
+  const relatedSections=all(notice,n=>attr(n,'data-annual-related-readings')!==undefined);
+  assert.equal(relatedSections.length,review.related_readings?.length?1:0);
+  if(review.related_readings?.length) {
+    assert.equal(attr(relatedSections[0],'data-annual-related-readings'),article.record_id);
+    for(const linked of review.related_readings) {
+      assert(links(relatedSections[0]).includes(linked.route));
+      assert(text(relatedSections[0]).includes(linked.label));
+      assert(text(relatedSections[0]).includes(linked.relation));
+      const target=parse(await read(linked.route+'index.html'));
+      assert.equal(all(target,n=>attr(n,'data-annual-case-review')===linked.record_id).length,1);
+    }
+    assert(text(relatedSections[0]).includes('not independent acceptance'));
+  }
+  assert.equal(all(notice,n=>attr(n,'data-annual-formal-artifact')!==undefined).length,article.record_id==='203-TOPIC-16'?1:0);
   for (const context of annualReviewContexts(review)) {
     assert.equal(all(notice, n => attr(n, 'data-annual-retained-context') === context.id).length, 1);
     assert(hrefs.includes(context.route));
+    if(context.formal_artifact) {
+      const formal=all(notice,n=>attr(n,'data-annual-formal-artifact')===context.id);
+      assert.equal(formal.length,1);
+      assert(links(formal[0]).includes(context.formal_artifact.url));
+      for(const value of [context.formal_artifact.title,context.formal_artifact.issued_date,context.formal_artifact.effective_date,context.formal_artifact.expiration_date,context.checked_date,context.evidence_boundary]) assert(text(formal[0]).includes(value));
+    }
     for (const value of [context.checked_date, context.relation, context.summary, context.next_action]) assert(visible.includes(value));
     if (context.next_check_date) assert(visible.includes(context.next_check_date));
     for (const id of context.matched_source_ids) assert(hrefs.includes(`/atlas/sources/${id}/`));
@@ -126,7 +155,7 @@ for (const article of history.records) {
     assert(text(target).includes(context.summary), `Destination omits retained finding ${context.id}`);
   }
 }
-assert.equal(totalNotices, 19); assert.equal(revisedParagraphs, 29); assert.equal(revisedOverviews, 3); assert.equal(revisedHeadings, 1);
+assert.equal(totalNotices, 24); assert.equal(revisedParagraphs, 34); assert.equal(revisedOverviews, 3); assert.equal(revisedHeadings, 1);
 assert.deepEqual(JSON.parse(await read(annualCaseReviews.export_route)), annualCaseReviews);
 assert.deepEqual(JSON.parse(await read('/data/phase-204-reader-completion.json')), history);
 assert.deepEqual(JSON.parse(await read('/data/reader-catalog.json')).records, readerCatalog);
@@ -136,4 +165,4 @@ for (const updateId of new Set(annualCaseReviews.records.map(r => r.update_id ??
   assert(links(update).includes(annualCaseReviews.export_route));
   for (const r of annualCaseReviews.records.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) assert(links(update).includes(r.route));
 }
-console.log('Annual output verified across all 104 original reader routes: 19 scoped notices, 3 current overviews, 29 current paragraphs, 1 heading with stable anchors, inspectable originals, exact source/receipt links, per-record catalog dates, three explicit additional source checks, local provenance links and matching dated updates/export. No browser, independent or release approval claimed.');
+console.log('Annual output verified across all 104 original reader routes: 24 scoped notices, 3 current overviews, 34 current paragraphs, 1 heading with stable anchors, inspectable originals, exact source/receipt links, per-record catalog dates, three explicit additional source checks, retained/new primary check dates, exact formal-instrument and case links, local provenance links and matching dated updates/export. No browser, independent or release approval claimed.');

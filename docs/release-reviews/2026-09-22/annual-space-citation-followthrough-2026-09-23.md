@@ -1,5 +1,7 @@
 # Annual readings — Space Coast, citations and provenance
 
+Completed source recovery: commit `1b52a61dfc3f270f85ba1f0a837b3215a1e36110` was recovered byte-for-byte at 20:20:45.539 UTC, covering all 9,544 source files and 219,796,021 bytes. The [recovery record](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T20-19-16.767Z-txze82/git-recovery-verification.json>) binds the exact passing candidate, receipt and logs. Later preparation/pending-recovery statements below retain their historical scope. The subsequent five-reading implementation requires its own complete validation and recovery; no push or deployment occurred.
+
 September 23, 2026. Local implementation of eight existing reader corrections. This is not fresh external retrieval, independent acceptance, a new evidence decision or publication authority.
 
 ## Recovered starting point

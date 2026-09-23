@@ -1,4 +1,6 @@
-# Annual source locators and acceptance boundaries — preparation
+# Annual source locators and acceptance boundaries — preparation record
+
+Subsequent implementation: after recovery of commit `1b52a61dfc3f270f85ba1f0a837b3215a1e36110`, the five-reading patch was applied and its focused annual assertions passed. See the [implementation report](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-locators-acceptance-followthrough-2026-09-23.md>) for current validation state. Statements below about preparation/unapplied scope describe the earlier isolated prototype, not the latest application.
 
 September 23, 2026. Prepared outside the running application candidate. Five additional declarations and five paragraph replacements passed an isolated source-level prototype. This is preparation, not application integration, rendered acceptance, independent review or release authority.
 
