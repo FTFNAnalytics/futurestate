@@ -48,6 +48,7 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'src/content/updates/2026-09-22-thin-answer-source-review.json',
   'src/data/source-artifact-labels.json',
   'src/lib/source-artifact-labels.mjs',
   'src/components/review/SourceArtifactLabelNotice.astro',

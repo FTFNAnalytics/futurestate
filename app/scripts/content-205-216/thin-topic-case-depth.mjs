@@ -2,6 +2,7 @@
 // list; research inspection is not independent subject acceptance.
 const paragraph = (text, citations = []) => ({text, citations});
 const note = (source_index, locator, scope, access = 'Official artifact text inspected') => ({source_index, checked_date:'2026-09-14', locator, scope, access});
+const recheckedNote = (source_index, locator, scope, access = 'Exact official HTML text re-read September 22') => ({source_index, checked_date:'2026-09-22', locator, scope, access});
 
 export const thinTopicCaseDepth = {
   climate: {
@@ -11,14 +12,14 @@ export const thinTopicCaseDepth = {
         paragraph('FTFN interpretation: suppose a project account attributes reduced output to heat. Start with the project’s time interval and location, not the national headline. Match local weather to actual output and an operating constraint; then examine maintenance, electricity supply, production scheduling and other plausible explanations. The annual record helps explain why the question deserves attention. It does not select the explanation. A useful case conclusion is therefore conditional: regional heat supports investigating local thermal exposure, while the size and cause of a particular operating loss remain unmeasured here. That distinction lets readers use climate information without converting it into a facility failure claim.')
       ],
       [
-        paragraph('The denominator is part of this reservoir case. Reclamation describes the July inflow as unregulated inflow and the storage fraction against live capacity. Neither is automatically the water delivered to a specific customer. The page’s August 21 timestamp also precedes this September 14 reading: a page labeled Current Status can contain an older observation. Its future release ranges remain operating projections or decisions, not completed outflows. This edition retains that reporting lag instead of moving the July quantities into September.', [2]),
+        paragraph('The denominator is part of this reservoir case. Reclamation describes the July inflow as unregulated inflow and the storage fraction against live capacity. Neither is automatically the water delivered to a specific customer. In the retained September 14 reading, the page carried an August 21 timestamp: a page labeled Current Status can contain an older observation. The September 22 source return below identifies the replacement snapshot separately. Its future release ranges remain operating projections or decisions, not completed outflows. The July quantities are not moved into a later month.', [2]),
         paragraph('FTFN interpretation: the project-level question is how a reservoir condition travels through a delivery system. A reader examining a factory should look for the particular entitlement, conveyance route, supplier agreement and metered delivery that connect that factory to the water source. A reader examining power service needs generation and dispatch records instead. These branches share hydrologic context but measure different services. Even a complete reservoir balance would not, by itself, establish either customer outcome. The decisive next evidence is the named operator action and period-matched delivery or generation record, with any contractual interpretation reviewed separately by the appropriate specialist.')
       ]
     ],
     source_notes: [
-      note(0,'Annual assessment: Temperature; publication date','Calendar-2025 regional context. Not a site reading or outage attribution.'),
-      note(1,'Key Takeaways; Temperature; Drought; Published','August and summer temperatures and the September 1 drought snapshot have different periods. The later detailed report was not assumed available merely from its scheduled date.'),
-      note(2,'Current Status; Current Operations; Last Updated','Reported July inflow, release and storage are distinct quantities; future operating ranges are not completed service. No entitlement interpretation is supplied.')
+      recheckedNote(0,'Annual assessment: Temperature; Precipitation; Published January 13, 2026','Calendar-2025 regional context was re-read; it is not a site reading or outage attribution.'),
+      recheckedNote(1,'Key Takeaways; Temperature; Drought; Published September 9, 2026','August, June–August summer and the September 1 drought snapshot retain different periods. The linked detailed report was not inspected in this recheck.'),
+      recheckedNote(2,'Current Status; Current Operations; Inflow Forecasts and Model Projections; Last Updated September 15, 2026','The rolling page now reports August observations; the August 21/July account is retained history. Inflow, release and closing storage are not a complete balance. Forecasts are not actual deliveries. No entitlement interpretation.','Official HTML inspected and retained locally September 22; no interval ledger or independently reproduced balance acquired')
     ]
   },
   'agriculture-and-bioeconomy': {
@@ -33,9 +34,9 @@ export const thinTopicCaseDepth = {
       ]
     ],
     source_notes: [
-      note(0,'NADA 141-609, printed pages 1–3; General Information; Effectiveness','April 29, 2025 approval of a specified alteration. Homozygous resistance, day-21 endpoint and KS06 exception retained. No commercial adoption estimate.'),
-      note(1,'V-006378, Evaluation of Risks; Overall Conclusion, printed page 8','Low-risk determination and enforcement discretion, not an approval. Safety reasoning does not constitute a repeated production-outcome series.'),
-      note(2,'FDA announcement, March 7, 2022','Communicates the low-risk decision; it is not a separate farm experiment.')
+      recheckedNote(0,'NADA 141-609, printed pages 1–3 and 18; Table VIII.4 and its exclusion note','Genotype, day-21 endpoint and KS06 limitation remain essential. The aggregate table excludes a challenge without infected controls. No commercial adoption estimate or current strain-surveillance result.','Exact 20-page FDA PDF text reviewed in relevant sections; pages 1–3 and 18 rendered and visually inspected September 22, not a full experimental reproduction'),
+      recheckedNote(1,'V-006378, Conclusions on printed page 8, including lineage scope and approval-status wording','Enforcement discretion is distinct from approval and is limited to products from the two reviewed cattle and their progeny. This is not a repeated field-outcome study.','Exact eight-page FDA PDF conclusion rendered and visually inspected September 22; other pages were not visually re-reviewed'),
+      recheckedNote(2,'FDA bulletin dated March 7, 2022: decision type, two cattle and offspring','The announcement communicates the same lineage-limited low-risk decision. It is not a separate commercial-cohort experiment.')
     ]
   },
   quantum: {
@@ -68,9 +69,9 @@ export const thinTopicCaseDepth = {
       ]
     ],
     source_notes: [
-      note(0,'First Look release, June 23, 2025: test observations; imagery caption; commissioning statement','Test imagery and reported candidate discoveries are distinguished from planned survey outputs. No annualized discovery-rate calculation.'),
-      note(1,'LIGO-P2000318-v11, abstract and O3b catalog link','Exact historical interval and p-astro threshold retained. The document record was checked; no reanalysis of strain data or claim to the latest catalog.'),
-      note(2,'NASA article date; testing/operations paragraph; article metadata','Displayed publication date August 25, 2026, correcting this draft’s August 27 date. Operations are reported from August 3; those are separate dates. No independent availability series.')
+      recheckedNote(0,'First Look release, June 23, 2025: test-observation interval; imagery caption; commissioning statement','The release describes early observations and a then-future survey. It was re-read as a historical milestone, not evidence of the complete September 2026 survey state.'),
+      recheckedNote(1,'LIGO-P2000318-v11: Abstract; Notes and Changes; linked data release','O3b runs from November 1, 2019 to March 27, 2020 and uses p-astro above 0.5. This accepted-version record is historical, not the latest event total.','Exact document record re-read September 22; linked paper, data release and strain data not independently reproduced'),
+      recheckedNote(2,'NASA publication date August 25, 2026; paragraph beginning After completing a testing campaign; Page Last Updated','May–July testing, August 3 operations and August 25 publication are distinct dates. This is NASA’s milestone account, not an independently reproduced availability series.')
     ]
   }
 };

@@ -16,7 +16,9 @@
       "topic": "Climate",
       "slug": "climate",
       "title": "Climate constraints: connect the regional signal to the actual asset",
-      "answer": "Observed regional heat and reservoir conditions are material operating context. They do not, by themselves, establish a particular facility outage, water entitlement or service failure.",
+      "updated_date": "2026-09-22",
+      "source_check_boundary": "September 22 recheck of the three cited pages. NOAA retains its named annual/monthly periods; the rolling Reclamation page now carries a September 15 update. Earlier July observations and the September 14 reading are retained as history. No facility outcome, allocation interpretation, independent acceptance or new gate decision is inferred.",
+      "answer": "Regional heat and the newly checked August Lake Powell account are operating context. The earlier July reservoir snapshot remains historical. Neither snapshot alone establishes a particular facility outage, water entitlement or service failure.",
       "sources": [
         {
           "title": "NOAA 2025 U.S. climate assessment",
@@ -29,9 +31,9 @@
           "artifact_date": "2026-09-09"
         },
         {
-          "title": "Reclamation Glen Canyon operating update",
+          "title": "Reclamation Glen Canyon operating update — rolling page",
           "url": "https://www.usbr.gov/uc/water/crsp/cs/gcd.html",
-          "artifact_date": "2026-08-21"
+          "artifact_date": "2026-09-15 update; earlier 2026-08-21 snapshot retained as history"
         }
       ],
       "sections": [
@@ -65,14 +67,14 @@
         },
         {
           "heading": "Case 2 — Lake Powell separates observations from operating projections",
-          "text": "Reclamation’s August 21 update reports July unregulated inflow of 84 thousand acre-feet, July releases of 482 thousand acre-feet and end-July storage of 5.39 million acre-feet. These are different physical quantities: a flow accumulated over a month, an outflow over that month and an end-period stock. Subtracting the first two does not provide a complete reservoir balance without the other accounting terms. The same update discusses forecast inflows and future operating ranges. Keep those projections visibly distinct from reported July observations.",
+          "text": "The August 21 snapshot previously reviewed reports July unregulated inflow of 84 thousand acre-feet, July releases of 482 thousand acre-feet and end-July storage of 5.39 million acre-feet. These are retained historical observations, not the contents of the rolling page as checked September 22. They are different physical quantities: a flow accumulated over a month, an outflow over that month and an end-period stock. Subtracting the first two does not provide a complete reservoir balance without the other accounting terms. Forecast inflows and future operating ranges remain distinct from reported observations.",
           "citations": [
             2
           ],
           "case_id": "209-CASE-002",
           "paragraphs": [
             {
-              "text": "The denominator is part of this reservoir case. Reclamation describes the July inflow as unregulated inflow and the storage fraction against live capacity. Neither is automatically the water delivered to a specific customer. The page’s August 21 timestamp also precedes this September 14 reading: a page labeled Current Status can contain an older observation. Its future release ranges remain operating projections or decisions, not completed outflows. This edition retains that reporting lag instead of moving the July quantities into September.",
+              "text": "The denominator is part of this reservoir case. Reclamation describes the July inflow as unregulated inflow and the storage fraction against live capacity. Neither is automatically the water delivered to a specific customer. In the retained September 14 reading, the page carried an August 21 timestamp: a page labeled Current Status can contain an older observation. The September 22 source return below identifies the replacement snapshot separately. Its future release ranges remain operating projections or decisions, not completed outflows. The July quantities are not moved into a later month.",
               "citations": [
                 2
               ]
@@ -81,6 +83,13 @@
               "text": "FTFN interpretation: the project-level question is how a reservoir condition travels through a delivery system. A reader examining a factory should look for the particular entitlement, conveyance route, supplier agreement and metered delivery that connect that factory to the water source. A reader examining power service needs generation and dispatch records instead. These branches share hydrologic context but measure different services. Even a complete reservoir balance would not, by itself, establish either customer outcome. The decisive next evidence is the named operator action and period-matched delivery or generation record, with any contractual interpretation reviewed separately by the appropriate specialist.",
               "citations": []
             }
+          ]
+        },
+        {
+          "heading": "September 22 source return — a newer observation is not a rewritten history",
+          "text": "The live page is now dated September 15 and describes August: 1 thousand acre-feet of unregulated inflow, 481 thousand acre-feet released and 5.14 million acre-feet in end-month storage. Those reported quantities are not a complete balance or a customer-delivery series. The 2026 forecast and later operating ranges on the page are not completed flows. This return makes the new period visible without shifting the older July figures forward or inferring a facility consequence.",
+          "citations": [
+            2
           ]
         },
         {
@@ -97,24 +106,24 @@
       "source_notes": [
         {
           "source_index": 0,
-          "checked_date": "2026-09-14",
-          "locator": "Annual assessment: Temperature; publication date",
-          "scope": "Calendar-2025 regional context. Not a site reading or outage attribution.",
-          "access": "Official artifact text inspected"
+          "checked_date": "2026-09-22",
+          "locator": "Annual assessment: Temperature; Precipitation; Published January 13, 2026",
+          "scope": "Calendar-2025 regional context was re-read; it is not a site reading or outage attribution.",
+          "access": "Exact official HTML text re-read September 22"
         },
         {
           "source_index": 1,
-          "checked_date": "2026-09-14",
-          "locator": "Key Takeaways; Temperature; Drought; Published",
-          "scope": "August and summer temperatures and the September 1 drought snapshot have different periods. The later detailed report was not assumed available merely from its scheduled date.",
-          "access": "Official artifact text inspected"
+          "checked_date": "2026-09-22",
+          "locator": "Key Takeaways; Temperature; Drought; Published September 9, 2026",
+          "scope": "August, June–August summer and the September 1 drought snapshot retain different periods. The linked detailed report was not inspected in this recheck.",
+          "access": "Exact official HTML text re-read September 22"
         },
         {
           "source_index": 2,
-          "checked_date": "2026-09-14",
-          "locator": "Current Status; Current Operations; Last Updated",
-          "scope": "Reported July inflow, release and storage are distinct quantities; future operating ranges are not completed service. No entitlement interpretation is supplied.",
-          "access": "Official artifact text inspected"
+          "checked_date": "2026-09-22",
+          "locator": "Current Status; Current Operations; Inflow Forecasts and Model Projections; Last Updated September 15, 2026",
+          "scope": "The rolling page now reports August observations; the August 21/July account is retained history. Inflow, release and closing storage are not a complete balance. Forecasts are not actual deliveries. No entitlement interpretation.",
+          "access": "Official HTML inspected and retained locally September 22; no interval ledger or independently reproduced balance acquired"
         }
       ],
       "case_development_state": "Two expanded cases drafted; independent factual/subject acceptance pending",
@@ -124,14 +133,15 @@
       "authored_date": "2026-09-14",
       "review_status": "Editorial draft — independent review pending",
       "approved": false,
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
       "historical_record_title": "Climate: canonical topic edition 2",
-      "sha256": "43e99363c533fdad376a4e32b18f8943baedfe1cbe65705e35990b70ef206de2"
+      "sha256": "3737b9bdce538548aeeac093468387ce6f2c76a33d809c7bf9e4f0a568136173"
     },
     {
       "topic": "Agriculture and Bioeconomy",
       "slug": "agriculture-and-bioeconomy",
       "title": "Genome-edited livestock: authorization is not a field-outcome series",
+      "updated_date": "2026-09-22",
+      "source_check_boundary": "September 22 bounded recheck of the named FDA decisions and announcement, with selected PDF pages visually inspected. Original approval/announcement dates remain unchanged. The recheck does not establish commercial adoption, current pathogen prevalence, full experimental reproduction or independent subject acceptance.",
       "answer": "Two exact FDA decisions establish specific regulatory positions for edited livestock. Neither reviewed decision is a census of commercial adoption or a general demonstration of farm-level productivity gains.",
       "sources": [
         {
@@ -180,7 +190,7 @@
         },
         {
           "heading": "Case 2 — a low-risk determination is a different regulatory instrument",
-          "text": "FDA’s PRLR-SLICK review evaluates genome-edited cattle with a short-hair trait against relevant comparator animals and addresses animal and food safety. Its March 2022 announcement describes a low-risk determination and enforcement discretion. That is not the same instrument as the pig approval. The announcement connects the alteration to naturally occurring mutations in some cattle breeds. A reference should retain the decision type rather than compressing both cases into the label “FDA-approved livestock.”",
+          "text": "FDA’s PRLR-SLICK review evaluates genome-edited cattle with a short-hair trait against relevant comparator animals and addresses animal and food safety. Its March 2022 announcement describes a low-risk determination and enforcement discretion. Printed page 8 limits the decision to products derived from the two reviewed cattle and their progeny. That is not the same instrument as the pig approval or a decision about every independently produced slick alteration. The announcement connects the alteration to naturally occurring mutations in some cattle breeds. Preserve the decision type and lineage rather than compressing both cases into “FDA-approved livestock.”",
           "citations": [
             1,
             2
@@ -214,24 +224,24 @@
       "source_notes": [
         {
           "source_index": 0,
-          "checked_date": "2026-09-14",
-          "locator": "NADA 141-609, printed pages 1–3; General Information; Effectiveness",
-          "scope": "April 29, 2025 approval of a specified alteration. Homozygous resistance, day-21 endpoint and KS06 exception retained. No commercial adoption estimate.",
-          "access": "Official artifact text inspected"
+          "checked_date": "2026-09-22",
+          "locator": "NADA 141-609, printed pages 1–3 and 18; Table VIII.4 and its exclusion note",
+          "scope": "Genotype, day-21 endpoint and KS06 limitation remain essential. The aggregate table excludes a challenge without infected controls. No commercial adoption estimate or current strain-surveillance result.",
+          "access": "Exact 20-page FDA PDF text reviewed in relevant sections; pages 1–3 and 18 rendered and visually inspected September 22, not a full experimental reproduction"
         },
         {
           "source_index": 1,
-          "checked_date": "2026-09-14",
-          "locator": "V-006378, Evaluation of Risks; Overall Conclusion, printed page 8",
-          "scope": "Low-risk determination and enforcement discretion, not an approval. Safety reasoning does not constitute a repeated production-outcome series.",
-          "access": "Official artifact text inspected"
+          "checked_date": "2026-09-22",
+          "locator": "V-006378, Conclusions on printed page 8, including lineage scope and approval-status wording",
+          "scope": "Enforcement discretion is distinct from approval and is limited to products from the two reviewed cattle and their progeny. This is not a repeated field-outcome study.",
+          "access": "Exact eight-page FDA PDF conclusion rendered and visually inspected September 22; other pages were not visually re-reviewed"
         },
         {
           "source_index": 2,
-          "checked_date": "2026-09-14",
-          "locator": "FDA announcement, March 7, 2022",
-          "scope": "Communicates the low-risk decision; it is not a separate farm experiment.",
-          "access": "Official artifact text inspected"
+          "checked_date": "2026-09-22",
+          "locator": "FDA bulletin dated March 7, 2022: decision type, two cattle and offspring",
+          "scope": "The announcement communicates the same lineage-limited low-risk decision. It is not a separate commercial-cohort experiment.",
+          "access": "Exact official HTML text re-read September 22"
         }
       ],
       "case_development_state": "Two expanded cases drafted; independent factual/subject acceptance pending",
@@ -241,9 +251,8 @@
       "authored_date": "2026-09-14",
       "review_status": "Editorial draft — independent review pending",
       "approved": false,
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
       "historical_record_title": "Agriculture and Bioeconomy: canonical topic edition 2",
-      "sha256": "ac82044272314eff231177a1f05702a3dcb547e9eb9511978ebb389d47577c25"
+      "sha256": "b56c38cb746b1cfba6bfc0f307717b6e83d853c7b8ddc350edc98bf5fcfba885"
     },
     {
       "topic": "Quantum",
@@ -376,6 +385,8 @@
       "topic": "Discovery Technologies",
       "slug": "discovery-technologies",
       "title": "From instrument to discovery: preserve the measurement and inference boundary",
+      "updated_date": "2026-09-22",
+      "source_check_boundary": "September 22 recheck of the three exact source pages: Rubin First Look, LIGO-P2000318-v11 and NASA DSS-23. The earlier milestones remain historical; no current survey-state search, strain-data reproduction, new observation series or independent acceptance is claimed.",
       "answer": "An instrument can collect data, an analysis can classify a candidate, and a network can carry the result. These are connected capabilities, but none automatically certifies the others.",
       "sources": [
         {
@@ -456,24 +467,24 @@
       "source_notes": [
         {
           "source_index": 0,
-          "checked_date": "2026-09-14",
-          "locator": "First Look release, June 23, 2025: test observations; imagery caption; commissioning statement",
-          "scope": "Test imagery and reported candidate discoveries are distinguished from planned survey outputs. No annualized discovery-rate calculation.",
-          "access": "Official artifact text inspected"
+          "checked_date": "2026-09-22",
+          "locator": "First Look release, June 23, 2025: test-observation interval; imagery caption; commissioning statement",
+          "scope": "The release describes early observations and a then-future survey. It was re-read as a historical milestone, not evidence of the complete September 2026 survey state.",
+          "access": "Exact official HTML text re-read September 22"
         },
         {
           "source_index": 1,
-          "checked_date": "2026-09-14",
-          "locator": "LIGO-P2000318-v11, abstract and O3b catalog link",
-          "scope": "Exact historical interval and p-astro threshold retained. The document record was checked; no reanalysis of strain data or claim to the latest catalog.",
-          "access": "Official artifact text inspected"
+          "checked_date": "2026-09-22",
+          "locator": "LIGO-P2000318-v11: Abstract; Notes and Changes; linked data release",
+          "scope": "O3b runs from November 1, 2019 to March 27, 2020 and uses p-astro above 0.5. This accepted-version record is historical, not the latest event total.",
+          "access": "Exact document record re-read September 22; linked paper, data release and strain data not independently reproduced"
         },
         {
           "source_index": 2,
-          "checked_date": "2026-09-14",
-          "locator": "NASA article date; testing/operations paragraph; article metadata",
-          "scope": "Displayed publication date August 25, 2026, correcting this draft’s August 27 date. Operations are reported from August 3; those are separate dates. No independent availability series.",
-          "access": "Official artifact text inspected"
+          "checked_date": "2026-09-22",
+          "locator": "NASA publication date August 25, 2026; paragraph beginning After completing a testing campaign; Page Last Updated",
+          "scope": "May–July testing, August 3 operations and August 25 publication are distinct dates. This is NASA’s milestone account, not an independently reproduced availability series.",
+          "access": "Exact official HTML text re-read September 22"
         }
       ],
       "case_development_state": "Two expanded cases drafted; independent factual/subject acceptance pending",
@@ -483,9 +494,8 @@
       "authored_date": "2026-09-14",
       "review_status": "Editorial draft — independent review pending",
       "approved": false,
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
       "historical_record_title": "Discovery Technologies: canonical topic edition 2",
-      "sha256": "2d78deccfec93d1131b31b0a35294b808300370cfc263d04dd2c34a4bab87333"
+      "sha256": "11eb1583113ab4c537de40c8a8495880ab1b9a174553270fbce380c4bc535c9a"
     },
     {
       "record_id": "119-PROJECT-001",
@@ -2579,8 +2589,33 @@
       "title": "What climate conditions constrain a named infrastructure decision?",
       "topic": "Climate",
       "source_topic": "climate",
-      "answer": "The reviewed NOAA assessments establish dated regional temperature and precipitation context; Reclamation supplies a separate Lake Powell operating account. These do not establish an individual asset’s failure, water entitlement or causal loss.",
-      "detail": "For the Southwest case, use the annual regional observation as background and the reservoir account for its identified flows, stocks and period. Match those records to local exposure and an actual operator decision before making a project claim. A publication date is not the observation period.",
+      "updated_date": "2026-09-22",
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "Annual assessment: Temperature; Precipitation; Published January 13, 2026",
+          "scope": "Calendar-2025 regional context was re-read; it is not a site reading or outage attribution.",
+          "access": "Exact official HTML text re-read September 22"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Key Takeaways; Temperature; Drought; Published September 9, 2026",
+          "scope": "August, June–August summer and the September 1 drought snapshot retain different periods. The linked detailed report was not inspected in this recheck.",
+          "access": "Exact official HTML text re-read September 22"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "Current Status; Current Operations; Inflow Forecasts and Model Projections; Last Updated September 15, 2026",
+          "scope": "The rolling page now reports August observations; the August 21/July account is retained history. Inflow, release and closing storage are not a complete balance. Forecasts are not actual deliveries. No entitlement interpretation.",
+          "access": "Official HTML inspected and retained locally September 22; no interval ledger or independently reproduced balance acquired"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial recheck of the two named NOAA assessments and the rolling Glen Canyon page. Reclamation now displays a September 15 update describing August observations; the earlier August 21 snapshot and July figures remain historical. No facility outcome, water-right interpretation, independent acceptance or evidence-cycle decision is added.",
+      "answer": "NOAA supplies regional heat and precipitation context, while Reclamation’s September 15 update supplies a separate August Lake Powell account. These sources help identify an exposure question; neither establishes a named facility’s failure, water entitlement or causal loss.",
+      "detail": "The NOAA annual assessment covers calendar 2025; the September 9 release distinguishes August 2026 from the June–August summer. Reclamation’s Current Status now reports August unregulated inflow of 1 thousand acre-feet, releases of 481 thousand acre-feet and end-August storage of 5.14 million acre-feet. A monthly inflow, a monthly release and a closing stock are different quantities, not a complete reservoir balance or customer delivery account. The topic retains the previously reviewed July figures as history, rather than relabeling them as August. For a project conclusion, match local exposure to the asset’s operating limits and a dated operator record; forecasts on the same page remain forecasts.",
       "next": "A named asset’s limits and dated service record matched to local conditions.",
       "kind": "Question",
       "sources": [
@@ -2595,15 +2630,15 @@
           "artifact_date": "2026-09-09"
         },
         {
-          "title": "Reclamation Glen Canyon operating update",
+          "title": "Reclamation Glen Canyon operating update — rolling page",
           "url": "https://www.usbr.gov/uc/water/crsp/cs/gcd.html",
-          "artifact_date": "2026-08-21"
+          "artifact_date": "2026-09-15 update; earlier 2026-08-21 snapshot retained as history"
         }
       ],
       "sections": [
         {
           "heading": "What the evidence establishes",
-          "text": "For the Southwest case, use the annual regional observation as background and the reservoir account for its identified flows, stocks and period. Match those records to local exposure and an actual operator decision before making a project claim. A publication date is not the observation period.",
+          "text": "The NOAA annual assessment covers calendar 2025; the September 9 release distinguishes August 2026 from the June–August summer. Reclamation’s Current Status now reports August unregulated inflow of 1 thousand acre-feet, releases of 481 thousand acre-feet and end-August storage of 5.14 million acre-feet. A monthly inflow, a monthly release and a closing stock are different quantities, not a complete reservoir balance or customer delivery account. The topic retains the previously reviewed July figures as history, rather than relabeling them as August. For a project conclusion, match local exposure to the asset’s operating limits and a dated operator record; forecasts on the same page remain forecasts.",
           "citations": [
             0,
             1,
@@ -2625,17 +2660,41 @@
       "authored_date": "2026-09-14",
       "review_status": "Editorial draft — independent review pending",
       "approved": false,
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
       "historical_record_title": "Which hazards, exposures, vulnerabilities and adaptive capacities have stable baselines at decision-relevant geographies?",
-      "sha256": "9d2b6e14524c05910774e72edce20baf34614926ddf0f5d36923b1cb5c1f9bf7"
+      "sha256": "e8a3c046d9c0b0f3219aa119814fbde7d6e103aa61140362adf2cac3ecb4c97d"
     },
     {
       "record_id": "195-BRIEF-006",
       "title": "Has genome-edited livestock moved beyond a controlled trial?",
       "topic": "Agriculture and Bioeconomy",
       "source_topic": "agriculture-and-bioeconomy",
-      "answer": "The reviewed FDA documents establish a specified pig-IGA approval and a separate low-risk determination for PRLR-SLICK cattle. They establish regulatory decisions, not a commercial adoption count or repeated farm-level benefit.",
-      "detail": "The pig indication is genotype-specific and the underlying summary records a strain exception. Keep approval, breeding use, market entry, adoption and outcomes separate. The cattle instrument is not interchangeable with the pig approval. A farm-outcome answer requires a named cohort and a production period.",
+      "updated_date": "2026-09-22",
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "NADA 141-609, printed pages 1–3 and 18; Table VIII.4 and its exclusion note",
+          "scope": "Genotype, day-21 endpoint and KS06 limitation remain essential. The aggregate table excludes a challenge without infected controls. No commercial adoption estimate or current strain-surveillance result.",
+          "access": "Exact 20-page FDA PDF text reviewed in relevant sections; pages 1–3 and 18 rendered and visually inspected September 22, not a full experimental reproduction"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "V-006378, Conclusions on printed page 8, including lineage scope and approval-status wording",
+          "scope": "Enforcement discretion is distinct from approval and is limited to products from the two reviewed cattle and their progeny. This is not a repeated field-outcome study.",
+          "access": "Exact eight-page FDA PDF conclusion rendered and visually inspected September 22; other pages were not visually re-reviewed"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "FDA bulletin dated March 7, 2022: decision type, two cattle and offspring",
+          "scope": "The announcement communicates the same lineage-limited low-risk decision. It is not a separate commercial-cohort experiment.",
+          "access": "Exact official HTML text re-read September 22"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial inspection of the exact FDA documents and announcement, including selected rendered PDF pages. This checks the scope of the published decisions, not later commercial uptake, current pathogen surveillance or a complete independent study reproduction. No food, treatment, purchasing or legal advice is supplied.",
+      "answer": "For these named examples, the evidence has advanced to regulatory decisions: FDA approved a specified pig genomic alteration and made a different low-risk determination for PRLR-SLICK cattle. The inspected records do not establish how many farms adopted either alteration or the benefits achieved in commercial use.",
+      "detail": "NADA 141-609, dated April 29, 2025, concerns deletion of CD163 exon 7; the resistance indication is for pigs with two copies of the alteration. Its day-21 challenge endpoint and KS06 strain exception matter. Table VIII.4 also excludes a challenge in which the controls were not infected, so its rows are not an unrestricted pool of trials. The PRLR-SLICK conclusion on printed page 8 expressly distinguishes enforcement discretion from approval and limits the decision to products from the two reviewed cattle and their progeny. Keep those decision types and populations separate. Commercial adoption or repeated farm benefit needs its own cohort, period, comparator and adverse-outcome record.",
       "next": "Commercial-cohort monitoring with genotype, management, exposure, comparator and outcome definitions.",
       "kind": "Question",
       "sources": [
@@ -2658,7 +2717,7 @@
       "sections": [
         {
           "heading": "What the evidence establishes",
-          "text": "The pig indication is genotype-specific and the underlying summary records a strain exception. Keep approval, breeding use, market entry, adoption and outcomes separate. The cattle instrument is not interchangeable with the pig approval. A farm-outcome answer requires a named cohort and a production period.",
+          "text": "NADA 141-609, dated April 29, 2025, concerns deletion of CD163 exon 7; the resistance indication is for pigs with two copies of the alteration. Its day-21 challenge endpoint and KS06 strain exception matter. Table VIII.4 also excludes a challenge in which the controls were not infected, so its rows are not an unrestricted pool of trials. The PRLR-SLICK conclusion on printed page 8 expressly distinguishes enforcement discretion from approval and limits the decision to products from the two reviewed cattle and their progeny. Keep those decision types and populations separate. Commercial adoption or repeated farm benefit needs its own cohort, period, comparator and adverse-outcome record.",
           "citations": [
             0,
             1,
@@ -2680,9 +2739,8 @@
       "authored_date": "2026-09-14",
       "review_status": "Editorial draft — independent review pending",
       "approved": false,
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
       "historical_record_title": "How do approvals, finance, infrastructure, processing capacity and offtake agreements move agricultural and bioeconomy innovations into field implementation?",
-      "sha256": "0ea4b6c2769c451fb812ff1a0b4f26922346d5734095e5da49c16a2644bfdab8"
+      "sha256": "3461fc19f3e36499251df6a5bf41170d68bbb4877faa220f6dcbd1bca54e8439"
     },
     {
       "record_id": "195-BRIEF-057",
@@ -2781,8 +2839,33 @@
       "title": "What does a discovery instrument’s milestone establish?",
       "topic": "Discovery Technologies",
       "source_topic": "discovery-technologies",
+      "updated_date": "2026-09-22",
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "First Look release, June 23, 2025: test-observation interval; imagery caption; commissioning statement",
+          "scope": "The release describes early observations and a then-future survey. It was re-read as a historical milestone, not evidence of the complete September 2026 survey state.",
+          "access": "Exact official HTML text re-read September 22"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "LIGO-P2000318-v11: Abstract; Notes and Changes; linked data release",
+          "scope": "O3b runs from November 1, 2019 to March 27, 2020 and uses p-astro above 0.5. This accepted-version record is historical, not the latest event total.",
+          "access": "Exact document record re-read September 22; linked paper, data release and strain data not independently reproduced"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "NASA publication date August 25, 2026; paragraph beginning After completing a testing campaign; Page Last Updated",
+          "scope": "May–July testing, August 3 operations and August 25 publication are distinct dates. This is NASA’s milestone account, not an independently reproduced availability series.",
+          "access": "Exact official HTML text re-read September 22"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial recheck of the exact Rubin release, LIGO-P2000318-v11 document record and NASA DSS-23 article. This is not a survey-status search, strain-data reanalysis or independently reproduced network-service series. The June 2025 and O3b milestones remain historical.",
       "answer": "Rubin’s First Look establishes a dated imagery milestone; GWTC-3 establishes a versioned candidate catalog under stated selection rules; DSS-23 concerns supporting communications. They answer different capability questions.",
-      "detail": "Do not turn first imagery into a completed survey, a candidate count into a threshold-free discovery total, or a network milestone into independent scientific validation. The catalog discussed here is LIGO-P2000318-v11 and explicitly historical, not the latest total of detected events. NASA’s DSS-23 article is dated August 25, 2026 and reports operations beginning August 3; this corrects the earlier draft’s August 27 source date without creating a new outcome.",
+      "detail": "Rubin’s June 23, 2025 release describes just over ten hours of test observations and commissioning still to come; it is not a completed survey record. LIGO-P2000318-v11 identifies O3b candidates from November 1, 2019 to March 27, 2020 using an astrophysical-probability threshold above 0.5. Its historical count is therefore selection-dependent, not the latest total of detected events or a threshold-free discovery rate. NASA’s DSS-23 article is dated August 25, 2026 and reports operations beginning August 3 after a May–July testing campaign. Publication, testing and operations are separate dates. A communications milestone does not independently validate a telescope’s calibration or a catalog’s scientific conclusions.",
       "next": "Instrument calibration, coverage, released analysis and operating-service records appropriate to the exact claim.",
       "kind": "Question",
       "sources": [
@@ -2805,7 +2888,7 @@
       "sections": [
         {
           "heading": "What the evidence establishes",
-          "text": "Do not turn first imagery into a completed survey, a candidate count into a threshold-free discovery total, or a network milestone into independent scientific validation. The catalog discussed here is LIGO-P2000318-v11 and explicitly historical, not the latest total of detected events. NASA’s DSS-23 article is dated August 25, 2026 and reports operations beginning August 3; this corrects the earlier draft’s August 27 source date without creating a new outcome.",
+          "text": "Rubin’s June 23, 2025 release describes just over ten hours of test observations and commissioning still to come; it is not a completed survey record. LIGO-P2000318-v11 identifies O3b candidates from November 1, 2019 to March 27, 2020 using an astrophysical-probability threshold above 0.5. Its historical count is therefore selection-dependent, not the latest total of detected events or a threshold-free discovery rate. NASA’s DSS-23 article is dated August 25, 2026 and reports operations beginning August 3 after a May–July testing campaign. Publication, testing and operations are separate dates. A communications milestone does not independently validate a telescope’s calibration or a catalog’s scientific conclusions.",
           "citations": [
             0,
             1,
@@ -2827,9 +2910,8 @@
       "authored_date": "2026-09-14",
       "review_status": "Editorial draft — independent review pending",
       "approved": false,
-      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
       "historical_record_title": "Which instruments, platforms and research methods have reproducible performance baselines on named scientific tasks?",
-      "sha256": "7752ae31d8f065f6b1816bcf9378d451c4f661948c7dbd84df8a21e51af7c01a"
+      "sha256": "24bd0751a29ea5ced6f465669ade9b0decab5ed1f3c18c1a66d0a0d4ca452fc5"
     },
     {
       "record_id": "195-BRIEF-017",
