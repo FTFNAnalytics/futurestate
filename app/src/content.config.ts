@@ -2,6 +2,7 @@ import { defineCollection } from "astro:content";
 import { z } from "astro/zod";
 import { glob } from "astro/loaders";
 import { projectGoldenMarsSignalData } from './lib/golden-mars-signal-review.mjs';
+import { projectGoldenMarsRecordData } from './lib/golden-mars-wider-review.mjs';
 
 const frameworkLayer = z.enum([
   "Planetary Conditions",
@@ -423,7 +424,7 @@ const sources = defineCollection({
     source_owner: z.string().optional(),
     automation_notes: z.string().optional(),
     notes: z.string().optional()
-  })
+  }).transform(data => projectGoldenMarsRecordData(data))
 });
 
 const topics = defineCollection({
@@ -547,7 +548,7 @@ const evidenceGaps = defineCollection({
       next_check_date: z.coerce.date().optional()
     }).optional(),
     notes: z.string().optional()
-  })
+  }).transform(data => projectGoldenMarsRecordData(data))
 });
 
 const dependencyMaps = defineCollection({
@@ -656,7 +657,7 @@ const researchDocuments = defineCollection({
     archive_member: z.string(),
     capture_status: researchCaptureStatus,
     captured_date: z.coerce.date()
-  })
+  }).transform(data => projectGoldenMarsRecordData(data))
 });
 
 const readerPathways = defineCollection({
@@ -683,7 +684,7 @@ const readerPathways = defineCollection({
     dependency_stack: z.array(readerPathwayDependency).min(1),
     evidence_limits: requiredStrings,
     next_records: requiredStrings
-  })
+  }).transform(data => projectGoldenMarsRecordData(data))
 });
 
 export const collections = {

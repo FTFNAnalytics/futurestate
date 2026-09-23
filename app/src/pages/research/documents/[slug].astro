@@ -5,6 +5,8 @@ import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import ReferenceAttributionNotice from "../../../components/review/ReferenceAttributionNotice.astro";
 import SourceArtifactLabelNotice from "../../../components/review/SourceArtifactLabelNotice.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
+import GoldenMarsReviewNotice from '../../../components/review/GoldenMarsReviewNotice.astro';
+import {goldenMarsRecordReview} from '../../../lib/golden-mars-wider-review.mjs';
 
 export async function getStaticPaths() {
   const documents = await getCollection("researchDocuments").then(records => records.map(projectResearchDocument));
@@ -16,6 +18,7 @@ export async function getStaticPaths() {
 }
 
 const { document } = Astro.props;
+const datedReview=goldenMarsRecordReview(document.data.id);
 const collection = (await getCollection("researchCollections")).find(
   (entry) => entry.data.id === document.data.collection_id
 );
@@ -39,15 +42,16 @@ const dateFormatter = new Intl.DateTimeFormat("en", { month: "long", day: "numer
       {document.data.publication_date && <MetaPill label={`${document.data.editorial_attribution ? 'FTFN record date: ' : ''}${dateFormatter.format(document.data.publication_date)}`} />}
     </div>
     <div class="button-row">
-      <a class="button" href={document.data.official_url}>{document.data.editorial_attribution ? 'Open linked contextual source' : 'Open linked source'}</a>
+      <a class="button" href={document.data.official_url}>{datedReview?'Open retained general SCC information page':document.data.editorial_attribution ? 'Open linked contextual source' : 'Open linked source'}</a>
       <a class="button button--secondary" href={document.data.local_capture_path} download>
-        {document.data.editorial_attribution ? "Download corrected FTFN link record" : document.data.capture_status === "Official link record" ? "Download official-link file" : "Download local capture"}
+        {datedReview?'Download original historical link file':document.data.editorial_attribution ? "Download corrected FTFN link record" : document.data.capture_status === "Official link record" ? "Download official-link file" : "Download local capture"}
       </a>
     </div>
   </section>
 
   <ReferenceAttributionNotice review={document.data.editorial_attribution} />
   <SourceArtifactLabelNotice review={document.data.source_artifact_label} />
+  <GoldenMarsReviewNotice recordId={document.data.id}/>
 
   <section class="page-section two-column-section">
     <article class="record-card">

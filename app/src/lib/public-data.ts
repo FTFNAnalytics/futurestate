@@ -6,6 +6,7 @@ import currentOperations from '../data/phase-207-current-operations.json' with {
 import {backlogReviewsFor} from './backlog-research.mjs';
 import {projectChecksFor as projectChecks} from './current-project-checks.mjs';
 import {goldenMarsSignalContext} from './golden-mars-signal-review.mjs';
+import {goldenMarsWiderContext,goldenMarsSourceExportContext,projectGoldenMarsRecordData} from './golden-mars-wider-review.mjs';
 
 export const PUBLIC_DATA_SCHEMA_VERSION = "1.0";
 
@@ -14,12 +15,13 @@ function isoDate(date: Date | null | undefined): string | null {
 }
 
 export function serializePublicSource(source: CollectionEntry<"sources">) {
-  const data = source.data;
+  const data = projectGoldenMarsRecordData(source.data);
 
   return {
     id: data.id,
     name: data.name,
     path: `/atlas/sources/${data.id}/`,
+    dated_golden_mars_review: goldenMarsSourceExportContext(data.id),
     url: data.url,
     source_type: data.source_type,
     credibility_level: data.credibility_level,
@@ -126,6 +128,7 @@ export function serializePublicResearchDocument(document: CollectionEntry<"resea
 
   return {
     record_kind: "research_document",
+    dated_golden_mars_review: goldenMarsWiderContext(data.id),
     editorial_attribution: data.editorial_attribution,
     source_artifact_label: data.source_artifact_label,
     local_capture_path: data.local_capture_path,
@@ -156,7 +159,7 @@ export function serializePublicResearchDocument(document: CollectionEntry<"resea
 }
 
 export function serializePublicReaderPathway(pathway: CollectionEntry<"readerPathways">) {
-  const data = pathway.data;
+  const data = projectGoldenMarsRecordData(pathway.data);
 
   return {
     id: data.id,
@@ -165,6 +168,7 @@ export function serializePublicReaderPathway(pathway: CollectionEntry<"readerPat
     record_status: data.record_status,
     summary: data.summary,
     current_state_summary: data.current_state_summary,
+    dated_golden_mars_review: goldenMarsWiderContext(data.id),
     dated_project_checks: projectChecks(data.id),
     bounded_backlog_research: backlogReviewsFor(currentOperations, {recordId: data.id}),
     current_state: data.current_state,

@@ -2,7 +2,9 @@
 
 Prepared September 22, 2026, America/Edmonton. No reviewer is appointed or contacted by this document. All 58 annual reader drafts have assisted comparisons with exact original-payload hashes; all applicable independent acceptances remain outstanding.
 
-Current handoff candidate: `ff8f3f6a5077021c29275c6383a384cc03cd3cf073b4b46e359708e7411134ce`, receipt `204-FULL-LOCAL-VALIDATION-2026-09-22-183f6273f519`. The [complete logged sequence](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T05-30-36.976Z-1RgquB/results.json>) passed at September 23 05:53:23.328 UTC. The source checkpoint/recovery is recorded separately after this handoff is finalized. Do not treat passing software checks as a review return or reuse this candidate identity after an affected content change.
+Current handoff candidate: `479354558ddd7a104b2aaf3d46c4127244298d6d52127c21f2b15a6d3de663b3`, receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-d7da4c664931`. The [complete logged sequence](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/validation/2026-09-23T17-56-28.471Z-kzjTDW/results.json>) passed at September 23 18:20:20.629 UTC. The source checkpoint/recovery is recorded separately after this handoff is finalized. Do not treat passing software checks as a review return or reuse this candidate identity after an affected content change.
+
+The [seven-record Golden-Mars follow-through](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/golden-mars-wider-followthrough.md>) now passes complete validation, including the repaired source-download boundary. It does not change the original annual records or the seven existing annual notices. Its broader local-system, source, gap, research and pathway context is corrected; paired readings and briefing passages remain separate work.
 
 ## Review material
 
@@ -24,13 +26,15 @@ The 58 distinct article/version pins reconcile exactly to the original annual re
 
 ## Priority before acceptance
 
-1. Finish Golden-Mars propagation beyond the annual case and signal: system/pathway/gap/research wording and syntheses/essays 01/03. Preserve procedural and physical-delivery limits.
+1. Finish Golden-Mars syntheses/essays 01/03 and the identified briefing passages. The system/pathway/gap/research follow-through now passes; preserve its procedural and physical-delivery limits and do not count it as clearance of the remaining texts.
 2. Carry the retained Space Coast renewal into syntheses/essays 06/08; provide the Space chapter's exact case/source link.
 3. Resolve Appendix 02 provenance, Appendix 01 scenario citation, Water/Chandler support and Climate/NOAA product specificity. Add the now-located Reclamation announcement locator for synthesis/essay 04's supported month-specific adjustment clause; no reversal of that clause is required.
 4. Clarify synthesis/essay 11's financing and aircraft-acceptance boundaries; correct the Victorian Big Battery name and source-review its detailed chronology. Enrich Gateway from its exact resolution with the recorded scope limits.
 5. Review central numerical and factual claims against primary versions and locators. Agreement with older internal claim blocks is not primary verification.
 
 Stable articles may be reviewed while unrelated corrections continue, but any later change affecting the reviewed meaning invalidates that affected acceptance until re-reviewed. The 33 selected current articles and all reachable historical claims remain additional release-review scope; the annual handoff does not replace them or shrink the approved release boundary.
+
+Subsequent September 23 acquisition resolves specific access/support tasks, not article acceptance: [Chandler's system comparison](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/water-chandler-source-acquisition-2026-09-23.md>), [LBNL scenario and NOAA product references](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-scenario-climate-source-acquisition-2026-09-23.md>), and [Gateway / Victorian Big Battery PDF inspection](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-battery-source-acquisition-2026-09-23.md>). Reader-facing integration and its verification remain pending. Use each note's exact artifact, date, page scope and limits; no full-report, operating-series or independent clearance is implied.
 
 ## Required return for each actual review
 

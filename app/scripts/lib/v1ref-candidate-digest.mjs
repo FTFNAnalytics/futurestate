@@ -48,6 +48,21 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'src/data/golden-mars-wider-review.json',
+  'src/lib/golden-mars-wider-review.mjs',
+  'src/components/review/GoldenMarsReviewNotice.astro',
+  'src/content/updates/2026-09-23-golden-mars-wider-followthrough.json',
+  'scripts/assert-golden-mars-wider-review.mjs',
+  'scripts/verify-golden-mars-wider-review.mjs',
+  'src/content/local-systems/local-northern-virginia-data-center-corridor.mdx',
+  'src/content/sources/source-virginia-scc-golden-mars-2026.json',
+  'src/content/evidence-gaps/gap-011.json',
+  'src/content/research-documents/69-55v-golden-mars-transmission-decision-2026.json',
+  'src/content/research-documents/research-doc-phase65-020.json',
+  'src/content/reader-pathways/northern-virginia-compute-to-service.json',
+  'src/content/reader-pathways/cross-corridor-authorization-to-operation.json',
+  'public/downloads/cross-corridor-infrastructure-conversion-2024-2026/official-links/04-virginia-scc-golden-mars-transmission-decision-2026.txt',
+  'public/downloads/phase65-named-project-delivery-evidence-2021-2026/records/20-55v-golden-mars-transmission-decision-2026.txt',
   'src/data/golden-mars-signal-review.json',
   'src/lib/golden-mars-signal-review.mjs',
   'src/content/signals/signal-golden-mars-transmission-conditional-approval.mdx',

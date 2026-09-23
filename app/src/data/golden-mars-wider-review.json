@@ -1,0 +1,279 @@
+{
+  "review_id": "206-GOLDEN-WIDER-2026-09-23",
+  "review_date": "2026-09-23",
+  "source_check_date": "2026-09-22",
+  "retained_signal_id": "signal-golden-mars-transmission-conditional-approval",
+  "update_id": "update-2026-09-23-golden-mars-wider-followthrough",
+  "boundary": "Editorial follow-through on September 23 using the retained September 22 artifact checks, not a new source retrieval, independent acceptance or an evidence-gate decision. Only the named Golden-Mars wording changes. Original publication/capture/profile dates, source identities, downloads, review decisions and other projects remain unchanged. Located route approval does not prove condition compliance, land rights, construction, energization or customer service.",
+  "independent_review": false,
+  "approval_receipt_id": null,
+  "historical_downloads": [
+    {"path":"/downloads/cross-corridor-infrastructure-conversion-2024-2026/official-links/04-virginia-scc-golden-mars-transmission-decision-2026.txt","sha256":"cbb59806186d9cc9b2818a8f1a15d35007d0456989bc685ebac4d3f84c909ff6"},
+    {"path":"/downloads/phase65-named-project-delivery-evidence-2021-2026/records/20-55v-golden-mars-transmission-decision-2026.txt","sha256":"b839470f6d850e6c6675476d3d1b3ed4ab921ebd923d6b5af5bb3eff28f550ff"}
+  ],
+  "records": [
+    {
+      "id": "source-virginia-scc-golden-mars-2026",
+      "source_file": "src/content/sources/source-virginia-scc-golden-mars-2026.json",
+      "source_sha256": "39d212e89e33fcdd0e712a6cee08b4af33432373b0bf39b65bc622fb4c78a592",
+      "route": "/atlas/sources/source-virginia-scc-golden-mars-2026/",
+      "identity": {
+        "name": "Virginia SCC Golden-Mars Transmission Project Decision",
+        "url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/"
+      },
+      "changes": [
+        {
+          "path": [
+            "known_limitations"
+          ],
+          "label": "Source limitations",
+          "prior": "The SCC summary records approval and a route condition. It does not prove land approval, final design, completed construction, energization, available customer capacity, or operating performance.",
+          "current": "This historical profile links a general SCC information page. The separate September 22 artifact check located the June 29 Route 3A order, July 20 suspension ruling and dated Under Appeal status. Compliance, land rights, later court orders, construction and delivered service remain separate; the profile date is not a new artifact check."
+        },
+        {
+          "path": [
+            "automation_notes"
+          ],
+          "label": "Monitoring guidance",
+          "prior": "Track the school-board condition, final route, land rights, construction, energization, and customer-service records.",
+          "current": "Follow the located Route 3A order through incorporated conditions, map/CPCN compliance, land rights and later court orders; seek separate construction, energization and customer-service records."
+        }
+      ]
+    },
+    {
+      "id": "gap-011",
+      "source_file": "src/content/evidence-gaps/gap-011.json",
+      "source_sha256": "2e53d409d2b4fec79ca90b0fd1b4e625d8d62037c60905e1c59e1bcf713b3ab3",
+      "route": "/atlas/evidence-gaps/gap-011-northern-virginia-large-load-delivery/",
+      "identity": {
+        "slug": "gap-011-northern-virginia-large-load-delivery",
+        "status": "Source Added"
+      },
+      "changes": [
+        {
+          "path": [
+            "current_support"
+          ],
+          "label": "Current support",
+          "prior": "The local dossier now combines a legislative baseline, the 2026 PJM forecast, rate and transmission records, revised generator guidance, local standards, three named 2026 air permits, and water-service rails.",
+          "current": "The local dossier combines a legislative baseline, the 2026 PJM forecast, rate and transmission records, generator guidance, local standards, three named air permits and water-service rails. The separate September 22 check locates the Golden-Mars Route 3A order; it does not close the corridor delivery or local-acceptance gap."
+        },
+        {
+          "path": [
+            "missing_evidence",
+            1
+          ],
+          "label": "Transmission evidence still needed",
+          "prior": "final transmission routes, land rights, construction, and energization",
+          "current": "Golden-Mars incorporated conditions, map/CPCN compliance, land rights, later court orders, construction and energization; separate route decisions for other projects"
+        },
+        {
+          "path": [
+            "candidate_records",
+            0
+          ],
+          "label": "Golden-Mars next records",
+          "prior": "Golden-Mars school-board land decision and final route record",
+          "current": "Golden-Mars Route 3A map/CPCN compliance, incorporated-condition and land-rights records, later court or appellate orders, and physical-delivery evidence"
+        },
+        {
+          "path": [
+            "next_action"
+          ],
+          "label": "Next action",
+          "prior": "Follow Golden-Mars, GS-5, Loudoun Phase 2, named DEQ permits, and provider records through final rules, construction, service, compliance, and measured outcomes.",
+          "current": "Follow the located Golden-Mars Route 3A order through compliance, land rights and later court orders; pursue separate construction, service and outcome records. Continue GS-5, Loudoun Phase 2, DEQ and water-provider checks without changing their decisions or the October 1 Loudoun appointment."
+        }
+      ]
+    },
+    {
+      "id": "research-doc-55v-golden-mars-transmission-decision-2026",
+      "source_file": "src/content/research-documents/69-55v-golden-mars-transmission-decision-2026.json",
+      "source_sha256": "35472f4df25ab555f16ace859bacc50db2f8de2dd9dcb52542a5e7e22b415fad",
+      "route": "/research/documents/55v-golden-mars-transmission-decision-2026/",
+      "identity": {
+        "slug": "55v-golden-mars-transmission-decision-2026",
+        "source_id": "source-virginia-scc-golden-mars-2026",
+        "record_status": "Published"
+      },
+      "changes": [
+        {
+          "path": [
+            "summary"
+          ],
+          "label": "Summary",
+          "prior": "The SCC's Golden-Mars project decision advances a named transmission project while the preferred route remains contingent on a Loudoun County School Board land decision and an alternate route remains available.",
+          "current": "Dated follow-through to the retained Golden-Mars link record: The June 29, 2026 SCC order approves Golden-Mars Route 3A. The July 20 order declines suspension, and the docket checked September 22 lists Under Appeal. These are distinct procedural records, not proof of land rights, construction, energization or customer service."
+        },
+        {
+          "path": [
+            "key_findings",
+            0
+          ],
+          "label": "First finding",
+          "prior": "The state regulatory decision authorizes a named transmission project.",
+          "current": "The located June 29 order approves Route 3A, incorporates the April 9 order and specifies a map/CPCN process."
+        },
+        {
+          "path": [
+            "key_findings",
+            1
+          ],
+          "label": "Route finding",
+          "prior": "The preferred route still depends on a separate local land decision, with an alternate route preserved.",
+          "current": "The July 20 order declines suspension. Under Appeal is the official docket status observed September 22, not an appellate merits ruling or proof that no stay exists."
+        },
+        {
+          "path": [
+            "key_findings",
+            2
+          ],
+          "label": "Delivery boundary",
+          "prior": "Land control, final engineering, rights of way, construction, energization, and customer service remain downstream.",
+          "current": "The incorporated April conditions, map/CPCN compliance, land rights, subsequent court orders and physical/service milestones require their own records. They were not fully inspected in the retained check."
+        }
+      ]
+    },
+    {
+      "id": "research-doc-phase65-020",
+      "source_file": "src/content/research-documents/research-doc-phase65-020.json",
+      "source_sha256": "d36fdd5cdd3c86da819a9d50b73b6d0f64591308c01a75d98d3166bf45a9fef2",
+      "route": "/research/documents/phase65-020-55v-golden-mars-transmission-decision-2026/",
+      "identity": {
+        "slug": "phase65-020-55v-golden-mars-transmission-decision-2026",
+        "source_id": "source-virginia-scc-golden-mars-2026",
+        "record_status": "Published"
+      },
+      "changes": [
+        {
+          "path": [
+            "summary"
+          ],
+          "label": "Summary",
+          "prior": "Phase 65 reviews this primary record as part of the Northern Virginia large-load delivery reporting pack. The SCC's Golden-Mars project decision advances a named transmission project while the preferred route remains contingent on a Loudoun County School Board land decision and an alternate route remains available.",
+          "current": "Dated follow-through to the retained Golden-Mars link record: The June 29, 2026 SCC order approves Golden-Mars Route 3A. The July 20 order declines suspension, and the docket checked September 22 lists Under Appeal. These are distinct procedural records, not proof of land rights, construction, energization or customer service."
+        },
+        {
+          "path": [
+            "key_findings",
+            0
+          ],
+          "label": "First finding",
+          "prior": "The state regulatory decision authorizes a named transmission project.",
+          "current": "The located June 29 order approves Route 3A, incorporates the April 9 order and specifies a map/CPCN process."
+        },
+        {
+          "path": [
+            "key_findings",
+            1
+          ],
+          "label": "Route finding",
+          "prior": "The preferred route still depends on a separate local land decision, with an alternate route preserved.",
+          "current": "The July 20 order declines suspension. Under Appeal is the official docket status observed September 22, not an appellate merits ruling or proof that no stay exists."
+        },
+        {
+          "path": [
+            "key_findings",
+            2
+          ],
+          "label": "Delivery boundary",
+          "prior": "Land control, final engineering, rights of way, construction, energization, and customer service remain downstream.",
+          "current": "The incorporated April conditions, map/CPCN compliance, land rights, subsequent court orders and physical/service milestones require their own records. They were not fully inspected in the retained check."
+        }
+      ]
+    },
+    {
+      "id": "reader-pathway-northern-virginia-compute-to-service",
+      "source_file": "src/content/reader-pathways/northern-virginia-compute-to-service.json",
+      "source_sha256": "dbff036bc87a08c719a096ff08adfc8b6739d86a69e31618493c60549175a286",
+      "route": "/pathways/northern-virginia-compute-to-service/",
+      "identity": {
+        "slug": "northern-virginia-compute-to-service",
+        "record_status": "In Review"
+      },
+      "changes": [
+        {
+          "path": [
+            "current_state",
+            2
+          ],
+          "label": "Golden-Mars route state",
+          "prior": "Golden-Mars has a state approval and unresolved local route condition.",
+          "current": "The June 29, 2026 SCC order approves Golden-Mars Route 3A. The July 20 order declines suspension, and the docket checked September 22 lists Under Appeal. These are distinct procedural records, not proof of land rights, construction, energization or customer service."
+        },
+        {
+          "path": [
+            "next_records",
+            1
+          ],
+          "label": "Transmission next records",
+          "prior": "Golden-Mars and Morrisville-Wishing Star decisions, final routes, construction, and energization.",
+          "current": "Golden-Mars incorporated-condition and map/CPCN compliance, land rights, later court orders, construction and energization; separately, Morrisville-Wishing Star decisions and route records."
+        }
+      ]
+    },
+    {
+      "id": "reader-pathway-cross-corridor-authorization-to-operation",
+      "source_file": "src/content/reader-pathways/cross-corridor-authorization-to-operation.json",
+      "source_sha256": "72ddc9f1fe312d0e1929d156050a5fb6c18b1f95298f96d74743dcc124eeaaa7",
+      "route": "/pathways/cross-corridor-authorization-to-operation/",
+      "identity": {
+        "slug": "cross-corridor-authorization-to-operation",
+        "record_status": "Published"
+      },
+      "changes": [
+        {
+          "path": [
+            "current_state",
+            0
+          ],
+          "label": "Northern Virginia route state",
+          "prior": "Northern Virginia has load, rate, transmission, permit, and water rails; final route, construction, energization, customer service, use, and reliability remain incomplete.",
+          "current": "Northern Virginia has load, rate, transmission, permit and water records. The September 22 check locates Golden-Mars Route 3A approval, a later denial of suspension and dated Under Appeal status; compliance, land rights, later court orders, construction, customer service, use and reliability remain separate."
+        },
+        {
+          "path": [
+            "next_records",
+            0
+          ],
+          "label": "Northern Virginia next records",
+          "prior": "Northern Virginia route, construction, energization, customer-service, water, emissions-compliance, reliability, and local-outcome records.",
+          "current": "Northern Virginia project-specific compliance, land rights, later court orders, construction, energization, customer-service, water, emissions, reliability and local-outcome records; do not treat the located Golden-Mars route order as delivery."
+        }
+      ]
+    },
+    {
+      "id": "local-northern-virginia-data-center-corridor",
+      "source_file": "src/content/local-systems/local-northern-virginia-data-center-corridor.mdx",
+      "source_sha256": "0b3237367f89dd8549af73083da2672534d25bbe947501a02daaf27ebc3ed990",
+      "route": "/atlas/local-systems/northern-virginia-data-center-corridor/",
+      "identity": {
+        "slug": "northern-virginia-data-center-corridor",
+        "name": "Northern Virginia Data Center Corridor"
+      },
+      "changes": [],
+      "body_replacements": [
+        {
+          "prior": "| Transmission | Golden-Mars decision and Loudoun plan policy | State approval and local route-planning layers | Land condition, final route, construction, energization, and delivered capacity |",
+          "current": "| Transmission | Golden-Mars Route 3A order, later suspension ruling and dated appeal-status record; separate Loudoun plan policy | June 29 route approval and July 20 denial of suspension; September 22 docket lists Under Appeal | Incorporated conditions, map/CPCN compliance, land rights, later court orders, construction, energization and delivered capacity |"
+        },
+        {
+          "prior": "- Golden-Mars is a named transmission project with a conditional route trail that can be followed from approval into land, build, energization, and service.",
+          "current": "- Golden-Mars has a located June 29 Route 3A order and July 20 denial of suspension. The docket checked September 22 lists Under Appeal; that status is not an appellate merits ruling or proof that no stay exists. Compliance, land rights, construction and service need separate records."
+        },
+        {
+          "prior": "- Golden-Mars route-condition satisfaction, land rights, construction, energization, and service records.",
+          "current": "- Golden-Mars incorporated-condition and map/CPCN compliance, land rights, later court or appellate orders, construction, energization and service records. The incorporated April conditions and subsequent compliance/court record were not fully inspected."
+        },
+        {
+          "prior": "The [Northern Virginia large-load project file](/briefings/project-conversion-003-northern-virginia-large-load/) joins the Golden-Mars conditional transmission trail to the GS-5 commercial rail. Final route, construction, energization, named customer service, metering, reliability, and local effects remain separate downstream records.",
+          "current": "The retained [Northern Virginia large-load project file](/briefings/project-conversion-003-northern-virginia-large-load/) joins the Golden-Mars transmission trail to the GS-5 commercial rail. The September 22 check now locates the Route 3A order; construction, energization, named customer service, metering, reliability and local effects still need separate downstream records. This clarification does not independently clear the older linked briefing."
+        },
+        {
+          "prior": "[Acceptance Dossier 003](/briefings/acceptance-dossier-003-northern-virginia-large-load/) preserves the local system's exact validation, acceptance, recurring-operation, and outcome questions. A future rate class, conditional transmission decision, forecast, permit trail, land-use rule, and reclaimed-water program remain upstream of an accepted named-customer service record.",
+          "current": "The retained [Acceptance Dossier 003](/briefings/acceptance-dossier-003-northern-virginia-large-load/) preserves the local system's validation, acceptance, recurring-operation and outcome questions. The located Golden-Mars route order, a future rate class, forecast, permit trail, land-use rule and reclaimed-water program do not establish accepted named-customer service. The separate October 1 Loudoun standards appointment is unchanged."
+        }
+      ]
+    }
+  ]
+}

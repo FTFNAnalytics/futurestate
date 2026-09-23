@@ -7,6 +7,10 @@ import CurrentOperationsNotice from '../../../components/review/CurrentOperation
 import PagedShelf from '../../../components/review/PagedShelf.astro';
 import {getShelfCatalog} from '../../../lib/shelf-catalog';
 import {getLocalEvidenceNote} from '../../../lib/editorial';
+import {createMarkdownProcessor} from '@astrojs/markdown-remark';
+import GoldenMarsReviewNotice from '../../../components/review/GoldenMarsReviewNotice.astro';
+import {projectGoldenMarsSystemBody} from '../../../lib/golden-mars-wider-review.mjs';
+import retainedGoldenMarsSystem from '../../../content/local-systems/local-northern-virginia-data-center-corridor.mdx?raw';
 export async function getStaticPaths(){return (await getCollection('localSystems')).map(system=>({params:{slug:system.data.slug},props:{system}}));}
 const {system}=Astro.props;const {Content}=await render(system);
 const kind=`local-${system.data.slug}`,records=(await getShelfCatalog())[kind];
@@ -15,15 +19,23 @@ const gaps=(await getCollection('evidenceGaps')).filter(g=>system.data.evidence_
 const date=(d:Date)=>d.toISOString().slice(0,10);
 const citedCount=records.filter(r=>r.filters.relationship?.includes('Cited by local profile')).length;
 const candidateCount=records.filter(r=>r.filters.relationship?.includes('Geography/role candidate — not cited by this profile')).length;
+const revisedBody=projectGoldenMarsSystemBody(system.data.id,retainedGoldenMarsSystem);
+let currentBodyHtml='',originalBodyHtml='';
+if(revisedBody){
+  const processor=await createMarkdownProcessor({gfm:true,smartypants:false});
+  currentBodyHtml=(await processor.render(revisedBody.current)).code;
+  originalBodyHtml=(await processor.render(revisedBody.original)).code.replace(/ id="([^"]*)"/g,' id="retained-$1"').replace(/ href="#/g,' href="#retained-');
+}
 ---
 <BaseLayout title={`${system.data.name} | FTFN`} description={system.data.summary}>
   <section class="page-section" data-local-overview={system.data.id}>
     <h1 class="page-title">{system.data.name}</h1><p class="lede">{system.data.summary}</p>
     <p>{system.data.system_type} · {system.data.geography} · {system.data.local_evidence_level}{system.data.last_reviewed_date?` · Recorded review ${date(system.data.last_reviewed_date)}`:''}</p>
     <CurrentEvidenceNotice recordId={system.data.id}/><CurrentOperationsNotice recordId={system.data.id}/>
-    <p><a href="#local-records">Explore all {records.length} linked records</a> · <a href="#system-narrative">Read the complete preserved system narrative</a></p>
+    <p><a href="#local-records">Explore all {records.length} linked records</a> · <a href="#system-narrative">{revisedBody?'Read the system narrative and dated correction':'Read the complete preserved system narrative'}</a></p>
     {system.data.id==='local-ontario-real-estate'&&<p><a href="/reference/global-places-ii/ontario-real-estate/">Read the expanded Ontario place draft</a> — independent review pending.</p>}
   </section>
+  <GoldenMarsReviewNotice recordId={system.data.id}/>
   <section class="page-section"><h2>Current equilibrium and constraints</h2><p>{system.data.current_equilibrium}</p><p><strong>Core constraints:</strong> {system.data.core_constraints.join(' · ')}</p><p>{getLocalEvidenceNote(system.data.local_evidence_level)}</p></section>
   {pathways.map(pathway=><ReaderPathwaySummary pathway={pathway}/>)}
   <section class="page-section" id="local-records"><h2>Explore this local system</h2>
@@ -36,5 +48,10 @@ const candidateCount=records.filter(r=>r.filters.relationship?.includes('Geograp
     <div><h2>Key industries</h2><ul>{system.data.key_industries.map(v=><li>{v}</li>)}</ul><h2>Actors with authority</h2><ul>{system.data.actors_with_authority.map(v=><li>{v}</li>)}</ul></div>
     <div><h2>Second-order effects to examine</h2><ul>{system.data.likely_second_order_effects.map(v=><li>{v}</li>)}</ul><h2>Missing data</h2><ul>{system.data.missing_data.map(v=><li>{v}</li>)}</ul></div>
   </section>
-  <section class="page-section prose" id="system-narrative"><Content/></section>
+  <section class="page-section prose" id="system-narrative">
+    {revisedBody?<>
+      <div data-golden-mars-current-system={system.data.id} set:html={currentBodyHtml}/>
+      <details data-golden-mars-original-system={system.data.id}><summary>Original system narrative · retained August 11 review</summary><div set:html={originalBodyHtml}/></details>
+    </>:<Content/>}
+  </section>
 </BaseLayout>

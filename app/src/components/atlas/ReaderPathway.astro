@@ -4,17 +4,21 @@ import CurrentEvidenceNotice from '../review/CurrentEvidenceNotice.astro';
 import CurrentOperationsNotice from '../review/CurrentOperationsNotice.astro';
 import PagedShelf from '../review/PagedShelf.astro';
 import {getShelfCatalog} from '../../lib/shelf-catalog';
+import GoldenMarsReviewNotice from '../review/GoldenMarsReviewNotice.astro';
+import {goldenMarsRecordReview} from '../../lib/golden-mars-wider-review.mjs';
 interface Props {pathway:CollectionEntry<'readerPathways'>;}
 const {pathway}=Astro.props;const p=pathway.data;
+const datedReview=goldenMarsRecordReview(p.id);
 const kind=`pathway-${p.slug}`,records=(await getShelfCatalog())[kind];
 const heldCount=records.filter(r=>r.filters.kind.includes('Classification archive')).length;
 ---
 <section class="page-section" data-reader-pathway={p.slug}>
   <CurrentEvidenceNotice recordId={p.id}/><CurrentOperationsNotice recordId={p.id}/>
+  <GoldenMarsReviewNotice recordId={p.id}/>
   <h2>{p.title}</h2><p>{p.summary}</p>
   <p>{records.length} explicitly linked historical records; {heldCount} signals retain a current-feed classification hold. Relationship membership does not establish publication approval, fresh verification or an outside outcome.</p>
   <div class="two-column-section">
-    <div><h3>Preserved pathway account</h3><p>Read the dated notices above before using this retained narrative.</p><p>{p.current_state_summary}</p><ul>{p.current_state.map(v=><li>{v}</li>)}</ul></div>
+    <div><h3>{datedReview?'Pathway account with dated correction':'Preserved pathway account'}</h3><p>Read the dated notices above before using this retained narrative.</p><p>{p.current_state_summary}</p><ul>{p.current_state.map(v=><li>{v}</li>)}</ul></div>
     <div><h3>Evidence limits</h3><ul>{p.evidence_limits.map(v=><li>{v}</li>)}</ul></div>
   </div>
   <h3>Dependency stages</h3><ol>{p.dependency_stack.map(item=><li><h4>{item.stage}</h4><p>{item.current_state}</p><p><strong>Boundary:</strong> {item.boundary}</p></li>)}</ol>

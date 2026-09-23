@@ -187,7 +187,7 @@ const robots = signal.data.record_status === "Published" ? "index, follow" : "no
 
   <section class="page-section">
     <h2>{signalReview ? 'Retained source profiles' : 'Sources'}</h2>
-    {signalReview && <p>These profiles preserve the earlier source descriptions. For the corrected transmission chronology, use the exact artifacts and inspection limits above; the general SCC information page is not the located order.</p>}
+    {signalReview && <p>These profiles retain their original URLs and check dates. For the corrected transmission chronology, use the exact artifacts and inspection limits above; the general SCC information page is not the located order.</p>}
     <div class="grid">
       {signalSources.map((source) => (
         <article class="record-card source-card">

@@ -4,6 +4,7 @@ import {getSourceFreshness,getSourceHealth,getFreshnessRank} from './sourceFresh
 import {backlogReviewFacts} from './backlog-research.mjs';
 import {atlasShelfRelations,atlasGraphShelf,atlasShelfKey} from './atlas-shelf-relations.mjs';
 import {readingShelfRelations} from './reading-shelf-relations.mjs';
+import {projectGoldenMarsRecordData} from './golden-mars-wider-review.mjs';
 
 export const shelfPageSize=40;
 export const shelfDate=value=>value instanceof Date?value.toISOString().slice(0,10):String(value??'');
@@ -15,6 +16,7 @@ const facets=(record,extra)=>({...record,filters:{...record.filters,...extra}});
 // records. No network requests, source-date mutations or evidence admissions occur.
 /** @param {import('./backlog-research.mjs').BacklogOperations} operations */
 export function createShelfData(input,ledger,operations={as_of_date:ledger.as_of_date,backlog_reviews:[]}) {
+  input={...input,...Object.fromEntries(['sources','evidenceGaps','readerPathways'].map(key=>[key,(input[key]??[]).map(data=>projectGoldenMarsRecordData(data))]))};
   const {signals=[],documents:rawDocuments=[],collections=[],sources=[],topics=[],organizations=[],technologies=[],localSystems=[],dependencyMaps=[],updates=[],readerPathways=[],briefings:rawBriefings=[],evidenceGaps=[]}=input;
   const documents=rawDocuments.map(data=>projectResearchDocument({data}).data);
   const briefings=rawBriefings.map(data=>projectBriefing({data}).data);

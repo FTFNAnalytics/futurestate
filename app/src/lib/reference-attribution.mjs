@@ -1,5 +1,6 @@
 import ledger from '../data/phase-206-reference-attribution.json' with {type:'json'};
 import {projectArtifactLabel} from './source-artifact-labels.mjs';
+import {projectGoldenMarsRecordData} from './golden-mars-wider-review.mjs';
 
 const allowed = {
   research_document: new Set(['title','summary','publisher','document_type','capture_status','local_capture_path','key_findings','why_it_matters','ftfn_relevance','evidence_limits']),
@@ -39,7 +40,7 @@ const projection=createReferenceAttribution(ledger.records);
 export const referenceAttribution=id=>projection.review(id);
 export const referenceAttributionUpdateFor=id=>ledger.tranches?.find(t=>t.record_ids.includes(id))?.update_id ?? (projection.review(id)?'update-2026-09-14-reference-attribution-57y':null);
 /** @template {{data:{id:string}}} T @param {T} entry */
-export const projectResearchDocument=entry=>projectArtifactLabel(projection.project(entry,'research_document'));
+export const projectResearchDocument=entry=>{const projected=projectArtifactLabel(projection.project(entry,'research_document'));const data=projectGoldenMarsRecordData(projected.data);return data===projected.data?projected:{...projected,data};};
 /** @template {{data:{id:string}}} T @param {T} entry */
 export const projectBriefing=entry=>projection.project(entry,'briefing');
 export function attributionLinkText(data) {
