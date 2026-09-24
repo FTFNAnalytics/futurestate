@@ -1,5 +1,7 @@
 # Reader acceptance session sheet — September 23 candidate refresh
 
+Version refresh pending: the application now includes the Nevada clarification, but this packet still pins the preceding candidate. Do not use it to approve the changed version; refreshed bindings require its terminal validation and exact source recovery.
+
 Protocol only; **zero participants and zero completed tasks** are recorded. Use five actual target readers, without demonstrating solutions. Obtain permission before recording or collecting identifying details. Do not count assisted browser testing as participant evidence.
 
 The prepared application candidate is `4178277fc3eb2578937a36f9d27ba13974631e1a69e036ff8c0a5fc17da4c38f`, recovered source commit `035b552dee061395beecad7379c0051a7c8e8f40`, full-validation receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-1727e048e74c`. This protocol was prepared later and is not claimed to be inside that commit. [Exact task, record and rendered-page bindings](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reader-study-bindings.json>) retain five answer-key routes and two English-format routes, with twenty-five unperformed attempt records.

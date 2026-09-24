@@ -175,7 +175,7 @@ for (const article of history.records) {
     assert(text(target).includes(context.summary), `Destination omits retained finding ${context.id}`);
   }
 }
-assert.equal(totalNotices, 28); assert.equal(revisedParagraphs, 45); assert.equal(revisedOverviews, 6); assert.equal(revisedTitles,1); assert.equal(previousReviews,2); assert.equal(revisedHeadings, 1);
+assert.equal(totalNotices, 28); assert.equal(revisedParagraphs, 47); assert.equal(revisedOverviews, 6); assert.equal(revisedTitles,1); assert.equal(previousReviews,4); assert.equal(revisedHeadings, 1);
 assert.deepEqual(JSON.parse(await read(annualCaseReviews.export_route)), annualCaseReviews);
 assert.deepEqual(JSON.parse(await read('/data/phase-204-reader-completion.json')), history);
 assert.deepEqual(JSON.parse(await read('/data/reader-catalog.json')).records, readerCatalog);
@@ -186,4 +186,4 @@ for (const updateId of new Set(reviewVersions.map(r => r.update_id ?? annualCase
   assert(links(update).includes(annualCaseReviews.export_route));
   for (const r of reviewVersions.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) assert(links(update).includes(r.route));
 }
-console.log('Annual output verified across all 104 original reader routes: 28 scoped notices, 1 current title, 6 current overviews, 45 current paragraphs, 1 heading with stable anchors, inspectable originals, exact source/receipt links, per-record catalog dates, three explicit additional source checks, retained/new primary check dates, exact formal-instrument and case links, local provenance links and matching dated updates/export, current reference-hub cards and two preserved preceding review records. No browser, independent or release approval claimed.');
+console.log('Annual output verified across all 104 original reader routes: 28 scoped notices, 1 current title, 6 current overviews, 47 current paragraphs, 1 heading with stable anchors, inspectable originals, exact source/receipt links, per-record catalog dates, three explicit additional source checks, retained/new primary check dates including Rhyolite Ridge permit identity, exact formal-instrument and case links, local provenance links and matching dated updates/export, current reference-hub cards and four preserved preceding review records. No browser, independent or release approval claimed.');

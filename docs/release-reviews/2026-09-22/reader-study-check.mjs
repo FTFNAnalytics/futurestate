@@ -12,7 +12,7 @@ const hash=value=>createHash('sha256').update(Buffer.isBuffer(value)?value:JSON.
 const study=await read('docs/release-reviews/2026-09-22/reader-study-bindings.json');
 const editorial=(await read('app/src/data/phase-205-216-current-editorial.json')).records;
 const classification=(await read('app/src/data/phase-206-editorial-classification.json')).records;
-const update=await read('app/src/content/updates/2026-09-23-annual-battery-chronology.json');
+const update=await read('app/src/content/updates/2026-09-23-annual-nevada-permit-identity.json');
 const {computeV1refCandidateDigest}=await import(pathToFileURL(join(root,'app/scripts/lib/v1ref-candidate-digest.mjs')));
 const candidate=await computeV1refCandidateDigest({appRoot:join(root,'app')});
 assert.equal(candidate.digest,study.candidate_binding.candidate_digest);

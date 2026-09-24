@@ -39,8 +39,28 @@ function validate(p){
   const profileIds=new Set(p.source_profiles.map(s=>s.id));
   const checkIds=new Set(p.reading_snapshots.flatMap(r=>r.review_snapshot.source_checks.map(s=>s.source_id)));
   const contextIds=new Set(p.reading_snapshots.flatMap(r=>r.retained_contexts.map(s=>s.id)));
-  assert.equal(checkIds.size,5,'Five located battery checks');
+  assert.equal(checkIds.size,6,'Five located battery checks and the Nevada permit check');
   assert.equal(contextIds.size,1,'One retained SLF context');
+  assert.equal(p.supplemental_source_checks.length,1);
+  const moss=p.supplemental_source_checks[0];
+  assert.equal(moss.source_id,'source-56k-moss-landing-go167-corrective-action-2025');
+  assert.equal(moss.source_profile_sha256,p.source_profiles.find(s=>s.id===moss.source_id).sha256);
+  assert.equal(moss.primary_checked_date,'2026-09-23');
+  assert.equal(moss.captured_sha256,'483da0ba546321f01b8ed87630027fca0a7953ce971e305793c9384fb4542c6d');
+  assert.deepEqual(moss.visually_checked_pages,Array.from({length:12},(_,i)=>i+1));
+  assert.equal(moss.observation_ledger,'docs/release-reviews/2026-09-22/annual-moss-landing-status-observations.json');
+  assert(moss.boundary.includes('not a source check embedded in the Nevada application notices'));
+  checkIds.add(moss.source_id);
+  assert.equal(p.retained_pdf_captures.length,4);
+  assert.equal(p.supporting_reports.length,7);
+  for(const pin of p.retained_pdf_captures){
+    const checks=[...p.reading_snapshots.flatMap(r=>r.review_snapshot.source_checks),...p.supplemental_source_checks].filter(s=>s.source_id===pin.source_id);
+    assert(checks.length>0,'PDF pin must attach to an actual source check');
+    for(const check of checks){
+      assert.equal(pin.sha256,check.captured_sha256,'Source-check/PDF identity');
+      assert.deepEqual(pin.notice_visually_checked_pages,check.visually_checked_pages,'No expanded visual-review scope');
+    }
+  }
   for(const r of p.reading_snapshots){
     const actual=current.get(r.id);
     assert.equal(r.route,actual.route);
@@ -64,7 +84,7 @@ function validate(p){
     assert.equal(a.current_reading.overview,b.current_reading.overview,'Paired overview');
     assert.equal(pair.same_sections,true);assert.equal(pair.same_overview,true);
   }
-  for(const id of ['203-SYNTHESIS-08','200-MONOGRAPH-08']){
+  for(const id of ['203-SYNTHESIS-08','200-MONOGRAPH-08','203-SYNTHESIS-10','200-MONOGRAPH-10']){
     const r=p.reading_snapshots.find(r=>r.id===id);
     assert(r.review_snapshot.previous_review,'Earlier review is required');
     for(const change of r.review_snapshot.previous_review.replacements){
@@ -103,6 +123,12 @@ const mutations=[
   p=>p.assignments[0].reviewer.name='Invented reviewer',
   p=>p.assignments[0].claims[0].finding='supported as written',
   p=>p.paired_readings[0].independent_acceptance=true,
+  p=>delete p.reading_snapshots[4].review_snapshot.previous_review,
+  p=>p.retained_pdf_captures[2].notice_visually_checked_pages.push(21),
+  p=>p.retained_pdf_captures[2].sha256='0'.repeat(64),
+  p=>p.reading_snapshots[5].review_snapshot.source_checks[0].primary_checked_date='2026-09-22',
+  p=>p.supplemental_source_checks[0].primary_checked_date='2026-09-22',
+  p=>p.supplemental_source_checks[0].visually_checked_pages.pop(),
 ];
 for(const mutate of mutations){const fixture=structuredClone(packet);mutate(fixture);assert.throws(()=>validate(fixture));}
 for(const profile of packet.source_profiles){
@@ -114,12 +140,21 @@ for(const profile of packet.source_profiles){
 for(const pin of [...packet.retained_pdf_captures,...packet.supporting_reports]){
   const bytes=await read(pin.path);assert.equal(bytes.length,pin.bytes);assert.equal(hash(bytes),pin.sha256,'Retained evidence bytes');
 }
-assert.equal(packet.retained_pdf_captures.length,2);assert.equal(packet.supporting_reports.length,4);
+assert.equal(packet.retained_pdf_captures.length,4);assert.equal(packet.supporting_reports.length,7);
+const mossLedger=await json(packet.supplemental_source_checks[0].observation_ledger);
+assert.equal(mossLedger.capture_sha256,packet.supplemental_source_checks[0].captured_sha256);
+assert.deepEqual(mossLedger.rows.map(r=>r.finding),Array.from({length:28},(_,i)=>i+1));
+assert.deepEqual(mossLedger.counts,{C:13,P:15,total:28});
+assert.equal(mossLedger.rows.filter(r=>r.label==='C').length,13);
+assert.equal(mossLedger.rows.filter(r=>r.label==='P').length,15);
+assert.equal(mossLedger.independent_acceptance,null);
 for(const r of packet.reading_snapshots)assert.equal(hash(await read('app/dist'+r.route+'index.html')),r.rendered_sha256,'Validated rendered HTML');
 for(const a of packet.assignments){
   const md=await readFile(join(directory,a.annual_id+'.md'),'utf8');
   const r=current.get(a.annual_id);
-  for(const text of [r.reading.title,r.reading.overview,...r.reading.sections.flatMap(s=>s.paragraphs),...a.claims.map(c=>c.exact_text)])assert(md.includes(text),'Worksheet current content');
+  for(const text of [packet.candidate_binding.candidate_digest,packet.candidate_binding.source_commit,packet.candidate_binding.validation_receipt,r.reading.title,r.reading.overview,...r.reading.sections.flatMap(s=>s.paragraphs),...a.claims.map(c=>c.exact_text)])assert(md.includes(text),'Worksheet current content');
+  for(const snapshot of packet.reading_snapshots.filter(s=>[a.annual_id,a.paired_essay_id].includes(s.id)))
+    for(const key of ['original_sha256','current_sha256','review_sha256','rendered_sha256'])assert(md.includes(snapshot[key]),'Worksheet exact version hash');
   for(const c of a.claims)assert.equal(md.split('### '+c.id+' — ').length-1,1);
   assert(md.includes('Actual reviewer return — leave blank until performed'));
   for(const match of md.matchAll(/\]\(<(C:\/[^>]+)>\)/g))await readFile(match[1]);
@@ -133,4 +168,4 @@ assert.equal(recovery.commit,packet.candidate_binding.source_commit);
 assert.equal(recovery.candidate_digest,digest.digest);assert.equal(recovery.validation_receipt,packet.candidate_binding.validation_receipt);
 const recoveredDigest=await computeV1refCandidateDigest({appRoot:join(recovery.recovered_directory,'app')});
 assert.equal(recoveredDigest.digest,digest.digest,'Recovered application candidate');
-console.log(`Annual packet verified: four annual records, two paired essays, 21 exact paragraph prompts, 17 source profiles, two retained PDF byte pins, preserved earlier reviews and terminal/recovered candidate bindings; ${mutations.length} negative fixtures rejected. Zero independent returns, contacts or approvals.`);
+console.log(`Annual packet verified: four annual records, two paired essays, 21 exact paragraph prompts, 17 source profiles, four retained PDF byte pins, six application source checks plus one separate supplementary check, four preserved preceding reviews and terminal/recovered candidate bindings; ${mutations.length} negative fixtures rejected. Zero independent returns, contacts or approvals.`);

@@ -27,6 +27,10 @@ for(const [id,pin] of locatorProfilePins) assert.equal(hash(await raw('src/conte
 const batteryIds = ['203-SYNTHESIS-08','200-MONOGRAPH-08','203-CASE-11','203-CASE-13','203-SYNTHESIS-10','200-MONOGRAPH-10'];
 const revisedBatteryIds = batteryIds.slice(0,2), newBatteryIds = batteryIds.slice(2);
 const batteryPairIds = batteryIds.filter(id=>!id.includes('CASE'));
+const nevadaIds = ['203-SYNTHESIS-10','200-MONOGRAPH-10'];
+const nevadaSourceId = 'source-ndep-rhyolite-ridge-water-permit-2025';
+const nevadaProfilePin = '854449efc992d0e8922bebc6a1c9f1585156ab43ce2e5df33951c3095a28041c';
+assert.equal(hash(await raw('src/content/sources/'+nevadaSourceId+'.json')),nevadaProfilePin,'Nevada source profile drift');
 const batteryProfilePins = new Map([["source-56d-gateway-cpuc-resolution-e5428-2025","ed28a8e479c954305d2728c2c88eb1622824d73497d9622aa589970fbe68900c"],["source-56e-vbb-esv-fire-findings-2021","2bd1158cbb185a960f8e162c87a9c32e5e2a494d0812c08edf7ed8f45720dc43"],["source-56e-vbb-esv-investigations","48a4d3faee061d6d552a1e9310dff45aab12b301f2ed1c1fbaa767cb8f6b7ad5"],["source-56e-vbb-aemo-registration-2021","f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773"],["source-56e-vbb-aemo-operational-2021","c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1"]]);
 for (const [id,pin] of batteryProfilePins) assert.equal(hash(await raw('src/content/sources/'+id+'.json')),pin,'Retained battery source profile drift');
 const laterIds = [...allPairedIds, ...citationIds, ...locatorIds, ...newBatteryIds];
@@ -72,8 +76,11 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
   assert.equal(data.latest_review_date, '2026-09-23');
   const earlier = data.records.slice(0,24).map(r=>r.previous_review??r);
   assert.equal(hash(JSON.stringify(earlier)),'26a10cf4779189fc6f400c4bbdc68891aa3375cb339cc1139440448c6f4661b0','All prior 24 review versions must survive');
-  assert.deepEqual(data.records.filter(r=>r.previous_review).map(r=>r.record_id),revisedBatteryIds);
-  assert.equal(hash(JSON.stringify(data.records.filter(r=>batteryIds.includes(r.record_id)))),'e6d937131c4fbb3209128dc37a80c9a915361428439809cceba1d3543abd527d','Scoped battery declaration drift');
+  assert.deepEqual(data.records.filter(r=>r.previous_review).map(r=>r.record_id),[...revisedBatteryIds,...nevadaIds]);
+  const beforeNevada = data.records.map(r=>nevadaIds.includes(r.record_id)?r.previous_review:r);
+  assert.equal(hash(JSON.stringify(beforeNevada)),'321c7d376bc49171c9d78c95c4dec234e15212d78f491be775e33e687056c564','All preceding 28 review records must survive exactly');
+  assert.equal(hash(JSON.stringify(beforeNevada.filter(r=>batteryIds.includes(r.record_id)))),'e6d937131c4fbb3209128dc37a80c9a915361428439809cceba1d3543abd527d','Scoped battery declaration drift');
+  assert.equal(hash(JSON.stringify(data.records.filter(r=>nevadaIds.includes(r.record_id)))),'1e3b3cc50653ce98a72dc0a598ecaeb360e53ba79c1345dea3f3a13fd3807edb','Scoped Nevada identity declaration drift');
   for (const r of data.records.filter(r=>r.previous_review)) {
     assert(!r.previous_review.previous_review,'Only the exact preceding review is expected');
     assert.deepEqual(r.replacements[0],r.previous_review.replacements[0],'Earlier Space Coast correction lost');
@@ -83,7 +90,7 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
   assert.equal(hash(JSON.stringify(earlier.slice(0, 11))), '4cf9116132695d46acc0e382bbd16f994ba7618e8c9c195603f2cb4a4a5a9c5c', 'Earlier eleven reviews changed');
   assert.equal(hash(JSON.stringify(earlier.slice(0, 15))), 'ca8db6563e3b2761aa22c5b422b38a09dda18536f3a81b4e1ee1dcccc11a27e8', 'Earlier fifteen reviews changed');
   assert.equal(hash(JSON.stringify(earlier.slice(0,19))), '8d9e4834f69e92d95ddeef6a81afd6f65c4b752a9e9cdd94ca737188b45f97d8', 'Earlier nineteen reviews changed');
-  assert.equal(data.records.reduce((n, r) => n + r.replacements.length, 0), 45);
+  assert.equal(data.records.reduce((n, r) => n + r.replacements.length, 0), 47);
   assert.equal(data.records.filter(r => r.overview_replacement).length, 6);
   assert.equal(data.records.reduce((n, r) => n + (r.heading_replacements?.length ?? 0), 0), 1);
   for (const r of data.records) {
@@ -93,6 +100,25 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
     assert.equal(r.independent_article_review, false);
     assert.equal(r.approval_receipt_id, null);
     assert.equal(r.review_date, laterIds.includes(r.record_id) ? '2026-09-23' : undefined);
+    if (nevadaIds.includes(r.record_id)) {
+      assert.equal(r.update_id,'update-2026-09-23-annual-nevada-permit-identity');
+      assert.deepEqual(r.replacements.slice(0,-1),r.previous_review.replacements,'Battery wording corrections must remain intact');
+      assert.deepEqual(r.overview_replacement,r.previous_review.overview_replacement);
+      assert.equal(r.replacements.length,3);
+      const change=r.replacements.at(-1);
+      assert(change.original_text.startsWith('The Nevada permit case does identify'));
+      assert(change.replacement_text.includes('NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass'));
+      assert(change.replacement_text.includes('do not establish that operations began, an inspection passed or a violation occurred'));
+      assert.equal(r.source_checks.length,1);
+      const check=r.source_checks[0];
+      assert.equal(hash(JSON.stringify(check)),'ecc27be06ebdd8ebdb6029719b3602b0030339a82d925901a7a5d48b5f1001bf');
+      assert.equal(check.source_id,nevadaSourceId);
+      assert.equal(check.source_profile_sha256,nevadaProfilePin);
+      assert.equal(check.primary_checked_date,'2026-09-23');
+      assert.equal(check.captured_sha256,'59e57f2cd151af476c0a7f6b1ca8534028be8c4b7c7c6767148b3819834152be');
+      assert.deepEqual(check.visually_checked_pages,[1,2,3,14,15,16]);
+      assert(!check.additional_source&&!check.retained_checked_date&&!check.checked_date);
+    }
     if (pairedIds.includes(r.record_id)) {
       assert.equal(r.update_id, 'update-2026-09-23-annual-golden-mars-paired-readings');
       assert.equal(hash(JSON.stringify(r.source_checks)), '99a14f6598f8e8c76e4a806179cdf0fb23e26c2bdcc36e48c091aff1c32b75b2', 'Retained September 22 checks changed');
@@ -330,6 +356,14 @@ for (const mutate of [
   d => { d.records[25].source_checks[2].retained_checked_date = '2026-09-23'; },
   d => { d.records[26].approval_receipt_id = 'invented-battery-approval'; },
   d => { d.records[27].overview_replacement.replacement_text = 'wrong name'; },
+  d => { delete d.records[26].previous_review; },
+  d => { d.records[27].previous_review.summary = 'lost battery review'; },
+  d => { d.records[26].source_checks[0].source_id = 'source-ndep-thacker-pass-water-permit'; },
+  d => { d.records[26].source_checks[0].captured_sha256 = '0'.repeat(64); },
+  d => { d.records[26].source_checks[0].visually_checked_pages.push(21); },
+  d => { d.records[27].source_checks[0].primary_checked_date = '2026-09-22'; },
+  d => { d.records[27].replacements.at(-1).replacement_text = 'Thacker Pass has completed every permit requirement.'; },
+  d => { d.records[26].update_id = 'update-2026-09-23-annual-battery-chronology'; },
 ]) {
   const changed = structuredClone(annualCaseReviews); mutate(changed);
   assert.throws(() => assertBindings(changed));
@@ -383,7 +417,7 @@ for (const a of pack.records) {
     } else assert(!context.formal_artifact,'Unexpected formal-artifact projection');
   }
 }
-assert.equal(notices, 28); assert.equal(changedBodies, 24); assert.equal(changedParagraphs, 45); assert.equal(changedOverviews, 6); assert.equal(changedHeadings, 1);
+assert.equal(notices, 28); assert.equal(changedBodies, 24); assert.equal(changedParagraphs, 47); assert.equal(changedOverviews, 6); assert.equal(changedHeadings, 1);
 for (const suffix of ['01', '03', '04', '06', '08', '10', '11']) {
   const [report, essay] = [`203-SYNTHESIS-${suffix}`, `200-MONOGRAPH-${suffix}`].map(id => pack.records.find(a => a.record_id === id));
   assert.deepEqual(applyAnnualCaseReview(report).sections, applyAnnualCaseReview(essay).sections, 'Paired current readings diverged');
@@ -401,7 +435,7 @@ assert.throws(() => annualReviewContexts({...annualCaseReviews.records[3], retai
 assert.throws(() => annualReviewContexts({...annualCaseReviews.records[3], retained_contexts:[{collection:'unknown', id:'missing'}]}), /Invalid retained/);
 assert.equal(JSON.stringify({pack, ops, evidence, reviews:annualCaseReviews}), before);
 const reviewVersions=annualCaseReviews.records.flatMap(r=>r.previous_review?[r.previous_review,r]:[r]);
-assert.equal(reviewVersions.length,30);
+assert.equal(reviewVersions.length,32);
 assert.equal(annualCaseReviews.records.filter(r=>r.title_replacement).length,1);
 assert(searchReaders(readerCatalog,'Victorian Big Battery').some(r=>r.id==='203-CASE-13'));
 assert(!readerCatalog.some(r=>r.id==='203-CASE-13'&&r.title.includes('Victoria Big Battery')));
@@ -415,4 +449,4 @@ for (const updateId of new Set(reviewVersions.map(r => r.update_id ?? annualCase
   }
 }
 assert.equal(ops.governed_series_admitted, 0);
-console.log('Annual source checks passed: 28 exact notices, 1 current title, 6 current overviews, 45 changed paragraphs, 1 heading, 80 unchanged bodies; three explicitly additional sources, 58-row lineage proof, retained Space/Reclamation locators and two current primary HTML checks; all seven changed/noticed synthesis pairs agree, per-record review dates and all 24 earlier review versions/checks remain pinned, including two inspectable preceding reviews. Original records, source/receipt bindings and approval/measurement holds preserved.');
+console.log('Annual source checks passed: 28 exact notices, 1 current title, 6 current overviews, 47 changed paragraphs, 1 heading, 80 unchanged bodies; scoped Rhyolite Ridge permit identity with primary PDF locators, three explicitly additional sources, 58-row lineage proof and retained source checks; all seven changed/noticed synthesis pairs agree, all 28 preceding review versions remain exact, including four inspectable preceding reviews. Original records, source/receipt bindings and approval/measurement holds preserved.');
