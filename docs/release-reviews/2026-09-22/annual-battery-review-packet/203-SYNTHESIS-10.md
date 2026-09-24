@@ -4,7 +4,7 @@ Independent-review worksheet prepared September 23, 2026. No reviewer is assigne
 
 ## Exact application version
 
-Candidate `4bfbd73ff51f831ec49e5844c6a5923f7b85ee47315a5efeca6305d19a814a0a`; recovered application source `50520aa5d89713d24c7f9c48c4f8e2d13f0b0fe1`. Full validation ended 2026-09-24T01:50:43.603Z with receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-e86a599abbc0`.
+Candidate `28e5ec8b4c6d68b8b7d2ec6666088e8602a6f9cbfac384143aed4b8001c88659`; recovered application source `2142a870953e970cf04de0d374845edf7c9300dd`. Full validation ended 2026-09-24T18:22:28.781Z with receipt `204-FULL-LOCAL-VALIDATION-2026-09-24-a81c908440f5`.
 
 - 203-SYNTHESIS-10: `/reference/state-of-future-systems/synthesis-safety-incident-correction-restart/`.
 - Original record SHA-256: `909c96aa0e9716d44223b8d706b471622d604ace44270fb932efe9cf30d46482`.
@@ -22,7 +22,7 @@ Paired essay presentation (not an additional annual record):
 
 The two complete current section arrays and overviews match. Review both routes' presentation; acceptance of one is not automatically an independent review of the other.
 
-[Complete original/current snapshots and blank returns](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-battery-review-packet/manifest.json>) · [Actual recovered-source diagnostic](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-24T01-53-15.366Z-Dtsucp/git-recovery-verification.json>).
+[Complete original/current snapshots and blank returns](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-battery-review-packet/manifest.json>) · [Actual recovered-source diagnostic](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-24T18-25-22.301Z-wV8ACO/git-recovery-verification.json>).
 
 ## Complete current reading
 

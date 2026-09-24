@@ -185,7 +185,24 @@ assert.equal(mossLedger.rows.filter(r=>r.label==='C').length,13);
 assert.equal(mossLedger.rows.filter(r=>r.label==='P').length,15);
 assert.equal(mossLedger.independent_acceptance,null);
 const industrial=await json(packet.supplemental_source_checks[1].observation_ledger);
-assert.equal(industrial.candidate_digest,digest.digest);
+// This source inspection belongs to its historical candidate, not every later
+// site-wide receipt. Reuse requires unchanged reading inputs, not date relabeling.
+const industrialHistoricalReceipt=await json('app/src/data/phase-204-receipts/204-FULL-LOCAL-VALIDATION-2026-09-23-e86a599abbc0.json');
+const industrialHistoricalManifest=await json('outputs/release-checkpoints/2026-09-24T01-53-15.366Z-Dtsucp/source-manifest.json');
+assert.equal(industrialHistoricalManifest.candidate_digest,industrialHistoricalReceipt.artifact_digest);
+assert.equal(industrialHistoricalManifest.source_manifest_digest,hash(industrialHistoricalManifest.files));
+const industrialInputPaths=['app/src/data/phase-204-reader-completion.json','app/src/data/annual-case-reviews.json','app/src/lib/annual-case-reviews.mjs','app/src/lib/reader-catalog.mjs'];
+const industrialCurrentPins=Object.fromEntries(await Promise.all(industrialInputPaths.map(async path=>[path,hash(await read(path))])));
+function validateIndustrialReuse(ledger,pins){
+  assert.equal(ledger.candidate_digest,industrialHistoricalReceipt.artifact_digest,'Preserve source-inspection candidate');
+  for(const path of industrialInputPaths){
+    const originalPin=industrialHistoricalManifest.files.find(row=>row.path===path);assert(originalPin,'Historical reading input');
+    assert.equal(pins[path],originalPin.sha256,'Changed reading input requires source-context reassessment: '+path);
+  }
+}
+validateIndustrialReuse(industrial,industrialCurrentPins);
+assert.throws(()=>validateIndustrialReuse({...industrial,candidate_digest:'0'.repeat(64)},industrialCurrentPins));
+assert.throws(()=>validateIndustrialReuse(industrial,{...industrialCurrentPins,[industrialInputPaths[0]]:'0'.repeat(64)}));
 assert.equal(industrial.checked_date,'2026-09-23');assert.equal(industrial.timezone,'America/Edmonton');
 assert.deepEqual(industrial.article_ids,['203-SYNTHESIS-10','200-MONOGRAPH-10']);assert.equal(industrial.claim_id,'RESTART-03');
 assert.equal(industrial.report.sha256,packet.supplemental_source_checks[1].captured_sha256);
@@ -225,4 +242,4 @@ assert.equal(recovery.commit,packet.candidate_binding.source_commit);
 assert.equal(recovery.candidate_digest,digest.digest);assert.equal(recovery.validation_receipt,packet.candidate_binding.validation_receipt);
 const recoveredDigest=await computeV1refCandidateDigest({appRoot:join(recovery.recovered_directory,'app')});
 assert.equal(recoveredDigest.digest,digest.digest,'Recovered application candidate');
-console.log(`Annual packet verified: four annual records, two paired essays, 21 exact paragraph prompts, 17 source profiles, five retained PDF pins plus two other captures, six distinct application source identities plus three separate supplementary checks, nine pinned USGS page renders, six preserved preceding reviews and terminal/recovered candidate bindings; ${mutations.length} negative fixtures rejected. Zero independent returns, contacts or approvals.`);
+console.log(`Annual packet verified: four annual records, two paired essays, 21 exact paragraph prompts, 17 source profiles, five retained PDF pins plus two other captures, six distinct application source identities plus three separate supplementary checks, nine pinned USGS page renders, six preserved preceding reviews and terminal/recovered candidate bindings; ${mutations.length+2} negative fixtures rejected, including historical-candidate relabeling and changed reading-input rejection. Zero independent returns, contacts or approvals.`);

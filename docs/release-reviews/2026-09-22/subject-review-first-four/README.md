@@ -1,5 +1,7 @@
 # First four independent subject reviews
 
+September 24 version refresh: candidate `28e5ec8b4c6d68b8b7d2ec6666088e8602a6f9cbfac384143aed4b8001c88659`, receipt `204-FULL-LOCAL-VALIDATION-2026-09-24-a81c908440f5`, recovered application source `2142a870953e970cf04de0d374845edf7c9300dd`. The NNSA operation changes the site candidate, not these article texts, claim prompts or human-return fields. Earlier preparation/recovery paragraphs below retain their dated historical scope. These refreshed binding fields postdate the recovered application commit.
+
 Prepared September 23, 2026. Four exact-version worksheets, fourteen claim prompts, zero reviewer appointments, zero contacts and zero independent decisions. These materials organize retained evidence; they do not refresh sources or clear claims.
 
 ## Review queue

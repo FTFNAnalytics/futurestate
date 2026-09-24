@@ -4,6 +4,8 @@ Planning snapshot: September 24, 2026, America/Edmonton.
 
 Implementation follow-through, September 24: the [NNSA operation and complete local validation](phase-207-nnsa-capacity-recheck-2026-09-24.md) finished successfully at 18:22:28.781 UTC as candidate `28e5ec8b`, receipt `204-FULL-LOCAL-VALIDATION-2026-09-24-a81c908440f5`. The [PDF follow-through](release-reviews/2026-09-22/nnsa-capacity-pdf-visual-followthrough-2026-09-24.md) resolves both scoped visual-access gaps without changing the earlier receipt. Do not restart that completed run. Exact source recovery and refreshed review bindings are subsequent evidence; human acceptance and release gates remain open. The starting-point and first-sprint tables below retain the planning snapshot, not instructions to repeat completed work.
 
+Subsequent recovery/packet follow-through: application source `2142a870` is exactly recovered, and the three existing review preparations now pass against candidate `28e5ec8b` while preserving article text and all unperformed human returns. See the operation report's final section for scope and the retained verifier failure/repair. Day 1's current-batch validation is complete; the next stage requires genuine review assignments/returns and portfolio/backlog/language decisions, alongside unaffected bounded evidence work. This does not close final-release clean installation or any human/owner gate.
+
 ## Direction
 
 The next milestone is **a stable, reviewable candidate with genuine acceptance decisions, a verified coverage gap and observed reader outcomes**. The platform and review infrastructure already exist. Finish the remaining evidence, content and usability work before expanding the architecture.
