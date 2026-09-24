@@ -41,7 +41,7 @@ function validate(p){
   const contextIds=new Set(p.reading_snapshots.flatMap(r=>r.retained_contexts.map(s=>s.id)));
   assert.equal(checkIds.size,6,'Six distinct sources; the two paired-reading AEMO checks reuse existing source identities');
   assert.equal(contextIds.size,1,'One retained SLF context');
-  assert.equal(p.supplemental_source_checks.length,1);
+  assert.deepEqual(p.supplemental_source_checks.map(s=>s.source_id),['source-56k-moss-landing-go167-corrective-action-2025','source-usgs-mineral-commodity-summaries','source-doe-thacker-pass-loan-2024']);
   const moss=p.supplemental_source_checks[0];
   assert.equal(moss.source_id,'source-56k-moss-landing-go167-corrective-action-2025');
   assert.equal(moss.source_profile_sha256,p.source_profiles.find(s=>s.id===moss.source_id).sha256);
@@ -51,8 +51,26 @@ function validate(p){
   assert.equal(moss.observation_ledger,'docs/release-reviews/2026-09-22/annual-moss-landing-status-observations.json');
   assert(moss.boundary.includes('not a source check embedded in the Nevada application notices'));
   checkIds.add(moss.source_id);
-  assert.equal(p.retained_pdf_captures.length,4);
-  assert.equal(p.supporting_reports.length,7);
+  const [usgs,doe]=p.supplemental_source_checks.slice(1);
+  for(const check of [usgs,doe]){
+    assert.equal(check.source_profile_sha256,p.source_profiles.find(s=>s.id===check.source_id).sha256);
+    assert.equal(check.primary_checked_date,'2026-09-23');
+    assert.equal(check.observation_ledger,'docs/release-reviews/2026-09-22/annual-industrial-context-observations.json');
+    assert(check.boundary.includes('not an application notice')||check.boundary.includes('Not an application notice'));
+    checkIds.add(check.source_id);
+  }
+  assert.equal(usgs.captured_sha256,'595e6e66674236dea40125a03eb1ea6b347f331c0bcf3411a1e77eba53c0d391');
+  assert.equal(usgs.revision_history_sha256,'276d675d1d753697f611c385d0692c865f2c00b8a417c282ff2e8e1f84932e2e');
+  assert.equal(usgs.artifact_version,'1.3, May 2026');
+  assert.equal(usgs.physical_pdf_pages,226);assert.equal(usgs.printed_citation_pages,222);
+  assert.deepEqual(usgs.visually_checked_pages,[1,4,9,15,18,19,122,123,220]);
+  assert.equal(doe.captured_sha256,'c395b0449580e1baad09df5c66a93dbf7bcdb3c9c65863e7487cb2b96b6ee9a6');
+  assert.deepEqual(doe.visually_checked_pages,[],'HTML check is not a visual PDF review');
+  assert.equal(p.retained_pdf_captures.length,5);
+  assert.equal(p.supporting_reports.length,10);
+  assert.equal(p.retained_other_captures.length,2);
+  assert.deepEqual(p.retained_other_captures.map(c=>[c.source_id,c.kind,c.sha256]),[[usgs.source_id,'revision-history',usgs.revision_history_sha256],[doe.source_id,'html',doe.captured_sha256]]);
+  assert.deepEqual(p.assignments[3].claims.find(c=>c.id==='RESTART-03').locator_refs,[usgs.source_id,doe.source_id]);
   for(const pin of p.retained_pdf_captures){
     const checks=[...p.reading_snapshots.flatMap(r=>r.review_snapshot.source_checks),...p.supplemental_source_checks].filter(s=>s.source_id===pin.source_id);
     assert(checks.length>0,'PDF pin must attach to an actual source check');
@@ -141,6 +159,12 @@ const mutations=[
   p=>p.reading_snapshots[5].review_snapshot.previous_review.previous_review.summary='lost history',
   p=>p.reading_snapshots[4].review_snapshot.source_checks[1].source_id='wrong-source',
   p=>p.reading_snapshots[5].review_snapshot.source_checks[2].primary_checked_date='2026-09-22',
+  p=>p.supplemental_source_checks[1].artifact_version='1.2, April 2026',
+  p=>p.supplemental_source_checks[1].visually_checked_pages.push(157),
+  p=>p.supplemental_source_checks[1].physical_pdf_pages=222,
+  p=>p.supplemental_source_checks[2].captured_sha256='0'.repeat(64),
+  p=>p.retained_other_captures[0].sha256='0'.repeat(64),
+  p=>p.assignments[3].claims.find(c=>c.id==='RESTART-03').locator_refs=[],
 ];
 for(const mutate of mutations){const fixture=structuredClone(packet);mutate(fixture);assert.throws(()=>validate(fixture));}
 for(const profile of packet.source_profiles){
@@ -149,10 +173,10 @@ for(const profile of packet.source_profiles){
   for(const key of ['name','url','source_type','last_checked_date'])assert.equal(profile[key],actual[key]);
   for(const r of packet.reading_snapshots)for(const pin of r.source_profiles.filter(s=>s.id===profile.id))assert.deepEqual(pin,profile);
 }
-for(const pin of [...packet.retained_pdf_captures,...packet.supporting_reports]){
+for(const pin of [...packet.retained_pdf_captures,...packet.retained_other_captures,...packet.supporting_reports]){
   const bytes=await read(pin.path);assert.equal(bytes.length,pin.bytes);assert.equal(hash(bytes),pin.sha256,'Retained evidence bytes');
 }
-assert.equal(packet.retained_pdf_captures.length,4);assert.equal(packet.supporting_reports.length,7);
+assert.equal(packet.retained_pdf_captures.length,5);assert.equal(packet.supporting_reports.length,10);
 const mossLedger=await json(packet.supplemental_source_checks[0].observation_ledger);
 assert.equal(mossLedger.capture_sha256,packet.supplemental_source_checks[0].captured_sha256);
 assert.deepEqual(mossLedger.rows.map(r=>r.finding),Array.from({length:28},(_,i)=>i+1));
@@ -160,6 +184,27 @@ assert.deepEqual(mossLedger.counts,{C:13,P:15,total:28});
 assert.equal(mossLedger.rows.filter(r=>r.label==='C').length,13);
 assert.equal(mossLedger.rows.filter(r=>r.label==='P').length,15);
 assert.equal(mossLedger.independent_acceptance,null);
+const industrial=await json(packet.supplemental_source_checks[1].observation_ledger);
+assert.equal(industrial.candidate_digest,digest.digest);
+assert.equal(industrial.checked_date,'2026-09-23');assert.equal(industrial.timezone,'America/Edmonton');
+assert.deepEqual(industrial.article_ids,['203-SYNTHESIS-10','200-MONOGRAPH-10']);assert.equal(industrial.claim_id,'RESTART-03');
+assert.equal(industrial.report.sha256,packet.supplemental_source_checks[1].captured_sha256);
+assert.equal(industrial.report.physical_pdf_pages,226);assert.equal(industrial.report.printed_citation_pages,222);
+assert.equal(industrial.report.version,'1.3');assert.equal(industrial.report.version_month,'2026-05');
+assert.deepEqual(industrial.report.visually_checked_pages,[1,4,9,15,18,19,122,123,220]);
+assert.equal(industrial.revision_history.sha256,packet.supplemental_source_checks[1].revision_history_sha256);
+assert.deepEqual(industrial.revision_history.revisions,[{version:'1.1',reposted:'2026-03-05'},{version:'1.2',reposted:'2026-04-15'},{version:'1.3',reposted:'2026-05-27'}]);
+assert.equal(industrial.doe.sha256,packet.supplemental_source_checks[2].captured_sha256);
+assert.deepEqual(industrial.rendered_pages.map(p=>p.physical_pdf_page),industrial.report.visually_checked_pages);
+for(const pin of [industrial.report,industrial.revision_history,industrial.doe,...industrial.rendered_pages]){
+  const bytes=await read(pin.path);assert.equal(bytes.length,pin.bytes);assert.equal(hash(bytes),pin.sha256,'Industrial capture/render byte identity');
+  if(pin.physical_pdf_page)assert.equal(pin.printed_page,pin.physical_pdf_page>4?pin.physical_pdf_page-4:null);
+}
+assert.deepEqual(industrial.observations.map(o=>o.id),['USGS-IDENTITY','USGS-SCOPE','USGS-IMPORTS','USGS-PRODUCTION','USGS-LITHIUM','USGS-UNITS','DOE-CONTEXT']);
+assert.deepEqual(industrial.observations.find(o=>o.id==='USGS-PRODUCTION').physical_pdf_pages,[18,19],'Complete table, including continuation/footnotes');
+assert.deepEqual(industrial.observations.find(o=>o.id==='USGS-LITHIUM').physical_pdf_pages,[122,123],'Complete chapter, including footnotes');
+assert.equal(industrial.application_changed,false);assert.equal(industrial.source_profiles_changed,false);
+assert.equal(industrial.numerical_series_admitted,false);assert.equal(industrial.independent_acceptance,null);assert.equal(industrial.external_contacts,0);
 for(const r of packet.reading_snapshots)assert.equal(hash(await read('app/dist'+r.route+'index.html')),r.rendered_sha256,'Validated rendered HTML');
 for(const a of packet.assignments){
   const md=await readFile(join(directory,a.annual_id+'.md'),'utf8');
@@ -180,4 +225,4 @@ assert.equal(recovery.commit,packet.candidate_binding.source_commit);
 assert.equal(recovery.candidate_digest,digest.digest);assert.equal(recovery.validation_receipt,packet.candidate_binding.validation_receipt);
 const recoveredDigest=await computeV1refCandidateDigest({appRoot:join(recovery.recovered_directory,'app')});
 assert.equal(recoveredDigest.digest,digest.digest,'Recovered application candidate');
-console.log(`Annual packet verified: four annual records, two paired essays, 21 exact paragraph prompts, 17 source profiles, four retained PDF byte pins, six distinct application source identities plus one separate supplementary check, six preserved preceding reviews and terminal/recovered candidate bindings; ${mutations.length} negative fixtures rejected. Zero independent returns, contacts or approvals.`);
+console.log(`Annual packet verified: four annual records, two paired essays, 21 exact paragraph prompts, 17 source profiles, five retained PDF pins plus two other captures, six distinct application source identities plus three separate supplementary checks, nine pinned USGS page renders, six preserved preceding reviews and terminal/recovered candidate bindings; ${mutations.length} negative fixtures rejected. Zero independent returns, contacts or approvals.`);

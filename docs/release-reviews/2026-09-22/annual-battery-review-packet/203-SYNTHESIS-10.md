@@ -152,7 +152,15 @@ The following source-profile dates are historical metadata. A retained September
 
 Source ID: `source-usgs-mineral-commodity-summaries`; profile last_checked_date: 2026-07-22; exact profile SHA-256: `fd4d8bc3a78422cee12b975f22f930af6f4f7c1f2ebf7e9816a0719e2e33b7d1`.
 
-No new exact primary-artifact locator is supplied for this source by the battery correction. Independent review must confirm the relevant version and page/table/paragraph; prior internal agreement is not primary clearance.
+Supplementary assisted check on 2026-09-23, separate from application notices and human review.
+
+Locator: PDF pages 1, 4, 9, 15, 18-19, 122-123 and 220; printed pages 5, 11 (Figure 2), 14-15 (complete Table 3), 118-119 (complete Lithium chapter), 216 (Appendices A/B); complete revision-history text.
+
+Finding: Located support for national production and import-reliance context. Preserve observation periods, preliminary/estimated values, withheld cells, inequality categories and lithium-content units; no facility performance or safety inference.
+
+Access: Exact official report and revision history downloaded with HTTP 200 after prior web-reader 403 and sandbox connection failure. Nine complete rendered pages visually inspected; no historical version comparison or associated dataset inspection.
+
+Boundary: Supplementary assisted review evidence only; not an application notice, independent acceptance, statistical reproduction or series admission. See the [capture and inspection record](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-industrial-context-capture-2026-09-23.md>).
 
 ### DOE Loan Programs Office Thacker Pass Financial Close
 
@@ -160,7 +168,15 @@ No new exact primary-artifact locator is supplied for this source by the battery
 
 Source ID: `source-doe-thacker-pass-loan-2024`; profile last_checked_date: 2026-08-30; exact profile SHA-256: `955032305871d77c9f4b4001e0c57322edbeaa5dd2f51ebd6d70625505c68849`.
 
-No new exact primary-artifact locator is supplied for this source by the battery correction. Independent review must confirm the relevant version and page/table/paragraph; prior internal agreement is not primary clearance.
+Supplementary assisted check on 2026-09-23, separate from application notices and human review.
+
+Locator: Project Summary; Project Statistics / Financial Summary; both closing-related footnotes
+
+Finding: Historical October 2024 financing and expected output once fully operational remain separate from later production and safety evidence.
+
+Access: Official HTML body inspected and exact downloaded bytes retained; no browser render.
+
+Boundary: Supplementary assisted review evidence only; no signed loan, amendment, disbursement ledger, current operation or safety verification. Not an application notice or independent acceptance. See the [capture and inspection record](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-industrial-context-capture-2026-09-23.md>).
 
 ### Moss Landing Power Plant GO 167 Corrective Action Plan and Response
 
@@ -310,7 +326,7 @@ Source IDs: `source-usgs-mineral-commodity-summaries`, `source-doe-thacker-pass-
 
 Question: Verify publication/version and exact primary locators for national mineral statistics, financial close and designed output, and that no Thacker Pass incident is asserted.
 
-Boundary: No fresh USGS/DOE retrieval or numerical reconstruction is performed here. Financing, planned output, actual production and safety evidence remain distinct.
+Boundary: Supplementary September 23 checks now locate the USGS report/revision history and DOE HTML. Nine USGS PDF pages were visually inspected; no statistical reconstruction, signed loan, later operating record or independent acceptance. Financing, planned output, actual production and safety evidence remain distinct.
 
 - Finding (supported as written / needs qualification / unsupported / unresolved / outside expertise):
 - Exact artifact version and locator actually inspected:
