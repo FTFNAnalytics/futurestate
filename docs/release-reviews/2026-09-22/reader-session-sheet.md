@@ -1,10 +1,8 @@
 # Reader acceptance session sheet — September 23 candidate refresh
 
-Version refresh pending: the application now includes the registration/reserve clarification, but this packet still pins the preceding candidate. Do not use it to approve the changed version; refreshed bindings require terminal validation and exact source recovery.
-
 Protocol only; **zero participants and zero completed tasks** are recorded. Use five actual target readers, without demonstrating solutions. Obtain permission before recording or collecting identifying details. Do not count assisted browser testing as participant evidence.
 
-The prepared application candidate is `7f92ecb32b43f2c6496416620ee514df5090ca0695445d7b98e2182578a21edf`, recovered source commit `4c13b7d53e74d0ef70e15b73f7d3606df40f0536`, full-validation receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-2b78b9909993`. This protocol was prepared later and is not claimed to be inside that commit. [Exact task, record and rendered-page bindings](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reader-study-bindings.json>) retain five answer-key routes and two English-format routes, with twenty-five unperformed attempt records.
+The prepared application candidate is `4bfbd73ff51f831ec49e5844c6a5923f7b85ee47315a5efeca6305d19a814a0a`, recovered source commit `50520aa5d89713d24c7f9c48c4f8e2d13f0b0fe1`, full-validation receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-e86a599abbc0`. This protocol was prepared later and is not claimed to be inside that commit. [Exact task, record and rendered-page bindings](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reader-study-bindings.json>) retain five answer-key routes and two English-format routes, with twenty-five unperformed attempt records.
 
 Before each actual session, verify the served candidate and record its deployment/local identity, actual date, device, browser and assistive technology. If the candidate changes, identify affected tasks and refresh their version pins before testing. A historical hosted version is not the current validated local build.
 

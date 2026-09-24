@@ -4,13 +4,13 @@ Independent-review worksheet prepared September 23, 2026. No reviewer is assigne
 
 ## Exact application version
 
-Candidate `7f92ecb32b43f2c6496416620ee514df5090ca0695445d7b98e2182578a21edf`; recovered application source `4c13b7d53e74d0ef70e15b73f7d3606df40f0536`. Full validation ended 2026-09-24T01:05:35.270Z with receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-2b78b9909993`.
+Candidate `4bfbd73ff51f831ec49e5844c6a5923f7b85ee47315a5efeca6305d19a814a0a`; recovered application source `50520aa5d89713d24c7f9c48c4f8e2d13f0b0fe1`. Full validation ended 2026-09-24T01:50:43.603Z with receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-e86a599abbc0`.
 
 - 203-SYNTHESIS-08: `/reference/state-of-future-systems/synthesis-climate-infrastructure-reliability/`.
 - Original record SHA-256: `76d0af628095047fd694eddcb8b3efb53795a4b0a73df3945e0f8d5806ae4606`.
 - Current reading SHA-256: `c0414e9ad7175e716401aaf942a3c607f2dfff405d7381165e3e984a074c74bb`.
 - Complete dated review SHA-256: `25d61005d2700d96f172cc22b40587cf6938e36612ca4ef87d447bbf9c6d3bd1`.
-- Validated rendered HTML SHA-256: `817e19d1798dfc1908086637172a4351d2d0d50d667e193ac958e1756fd3e90c`.
+- Validated rendered HTML SHA-256: `a78ef099131c1cf31f1eb2aaf80669baec864f4e3eb00c153ec641848764aa6b`.
 
 Paired essay presentation (not an additional annual record):
 
@@ -18,11 +18,11 @@ Paired essay presentation (not an additional annual record):
 - Original record SHA-256: `724dfa15362b4aa800558ddc59d5f9a35c7ee25b33392f891598a80ed3f2c8fd`.
 - Current reading SHA-256: `7a71c202b3f674d74779032a018ff67c3058c29f1e1de4f6e5d5b396bb75deff`.
 - Complete dated review SHA-256: `9e8124821152f4953d46046bc9c4adc407f7acccc312d2d6a7b06069ec7c5b3e`.
-- Validated rendered HTML SHA-256: `ec704f634db335c214d393f216417f93e31c63db53c4adb26ec3f0663706cc6f`.
+- Validated rendered HTML SHA-256: `8088d7a40a7a7c87b992cb4e2791431dc498f4b90a4a1bd3ee1f50d726cd1e37`.
 
 The two complete current section arrays and overviews match. Review both routes' presentation; acceptance of one is not automatically an independent review of the other.
 
-[Complete original/current snapshots and blank returns](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-battery-review-packet/manifest.json>) · [Actual recovered-source diagnostic](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-24T01-08-08.679Z-N8pzfi/git-recovery-verification.json>).
+[Complete original/current snapshots and blank returns](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-battery-review-packet/manifest.json>) · [Actual recovered-source diagnostic](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-24T01-53-15.366Z-Dtsucp/git-recovery-verification.json>).
 
 ## Complete current reading
 

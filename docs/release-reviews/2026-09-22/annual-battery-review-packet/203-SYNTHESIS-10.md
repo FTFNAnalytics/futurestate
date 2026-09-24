@@ -4,25 +4,25 @@ Independent-review worksheet prepared September 23, 2026. No reviewer is assigne
 
 ## Exact application version
 
-Candidate `7f92ecb32b43f2c6496416620ee514df5090ca0695445d7b98e2182578a21edf`; recovered application source `4c13b7d53e74d0ef70e15b73f7d3606df40f0536`. Full validation ended 2026-09-24T01:05:35.270Z with receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-2b78b9909993`.
+Candidate `4bfbd73ff51f831ec49e5844c6a5923f7b85ee47315a5efeca6305d19a814a0a`; recovered application source `50520aa5d89713d24c7f9c48c4f8e2d13f0b0fe1`. Full validation ended 2026-09-24T01:50:43.603Z with receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-e86a599abbc0`.
 
 - 203-SYNTHESIS-10: `/reference/state-of-future-systems/synthesis-safety-incident-correction-restart/`.
 - Original record SHA-256: `909c96aa0e9716d44223b8d706b471622d604ace44270fb932efe9cf30d46482`.
-- Current reading SHA-256: `7a8e1e45a9e78fd2a3c6c4b3bcd967a21dd31d699e984a457eb1cae302c5059b`.
-- Complete dated review SHA-256: `9513af8c53836dacb35bb0045165c3673d77149bbf2c8718bcdad0124693d3de`.
-- Validated rendered HTML SHA-256: `345e56417a5458049e82fffaa860c40db87bedf080fa4c3c8cd9bce485356cb8`.
+- Current reading SHA-256: `023a6e17ea621f484fa666fd5ea3566af54fc4dd612490e840fac68df583142e`.
+- Complete dated review SHA-256: `de33a2427db8e52ea6263527f6c8944594ef2fe30966ea2d3df75aa155063f75`.
+- Validated rendered HTML SHA-256: `44f914fc7575f28a2a429e0631f8de0b7787bd027f2649653fb8006c1e2a6379`.
 
 Paired essay presentation (not an additional annual record):
 
 - 200-MONOGRAPH-10: `/reference/constraint-monographs/safety-incident-correction-restart/`.
 - Original record SHA-256: `3da242fb7d3af48e39ac1f8cf7fe40070ba5d6f08f1b5147d6218ae7294eeb14`.
-- Current reading SHA-256: `c9bcacf2d0d672715113f7db2c87019e66efab976aef0f1d04f75b188b6b14c5`.
-- Complete dated review SHA-256: `8ac972d8eabb0edb755517dc2cc7a19adea073628c30537b6d4fc6bc19d187fc`.
-- Validated rendered HTML SHA-256: `0533a92f3826c379ba86ff573eb31128eed5fd0d59b659ae4cc541b4ea977f80`.
+- Current reading SHA-256: `312336c78f653b5cf8ba95f1dbc013907701b382c15988bac494bb239b7fea4d`.
+- Complete dated review SHA-256: `dc2d15dd6261f30cf4742d0c55408b105ac14ec8624fe281345ba1be786ac56b`.
+- Validated rendered HTML SHA-256: `5bf29f301c9a8f0e59098983cfa60c42610c67ee7c6a66642c9dedcc93cceae3`.
 
 The two complete current section arrays and overviews match. Review both routes' presentation; acceptance of one is not automatically an independent review of the other.
 
-[Complete original/current snapshots and blank returns](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-battery-review-packet/manifest.json>) · [Actual recovered-source diagnostic](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-24T01-08-08.679Z-N8pzfi/git-recovery-verification.json>).
+[Complete original/current snapshots and blank returns](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-battery-review-packet/manifest.json>) · [Actual recovered-source diagnostic](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-24T01-53-15.366Z-Dtsucp/git-recovery-verification.json>).
 
 ## Complete current reading
 
@@ -42,9 +42,9 @@ This is still useful evidence: it gives a denominator and a differentiated accou
 
 ### Victoria's case separates investigation from operation
 
-The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.
+The Victorian Big Battery dossier brings together investigation, National Electricity Market (NEM) registration and reserve-service records. AEMO's October 8, 2021 update reports registration; its December 8 announcement describes the separately contracted System Integrity Protection Scheme (SIPS) service. Registration and a reserve-service contract are different milestones, neither of which establishes corrective-action closure or later annual performance.
 
-Those records should be read as a sequence of differently scoped evidence. Registration may establish participation in a market or protection arrangement; an investigation concerns an event and its findings. Neither automatically establishes the long-term performance of the other. The inherited account does not assign a universal safety grade or conclude that one event explains every subsequent operating condition.
+Market registration should not be described as protection-scheme registration. The separately announced reserve service does not settle corrective-action closure, and neither announcement provides a later annual availability, dispatch or cycling series. Each conclusion still needs evidence matched to its question; no universal safety grade follows.
 
 ### Industrial importance does not settle a safety question
 
@@ -66,9 +66,9 @@ A useful public casebook would then explain the initial condition, the official 
 
 ## Original wording and dated changes
 
-Review date 2026-09-23; change record `update-2026-09-23-annual-nevada-permit-identity`.
+Review date 2026-09-23; change record `update-2026-09-23-annual-battery-registration-reserve`.
 
-Names Rhyolite Ridge and its exact Nevada permit separately from the adjacent Thacker Pass financing discussion. Adds a scoped primary-PDF inspection while preserving the earlier Victorian Big Battery naming correction. Permit requirements are not proof of completed compliance, operation or an incident; independent article acceptance remains pending.
+Separates market registration from the contracted SIPS reserve-service arrangement in the Victorian Big Battery discussion. Preserves the Nevada permit clarification, corrected asset name and complete earlier reviews. The two dated announcements do not establish corrective-action closure or recurring performance; independent article acceptance remains pending.
 
 ### Overview correction
 
@@ -90,9 +90,9 @@ Original:
 
 Current:
 
-> The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.
+> The Victorian Big Battery dossier brings together investigation, National Electricity Market (NEM) registration and reserve-service records. AEMO's October 8, 2021 update reports registration; its December 8 announcement describes the separately contracted System Integrity Protection Scheme (SIPS) service. Registration and a reserve-service contract are different milestones, neither of which establishes corrective-action closure or later annual performance.
 
-Reason: Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations.
+Reason: Separate market registration from the reserve-service arrangement while retaining the corrected asset name and unresolved evidence boundaries.
 
 ### Paragraph change 2 — The next edition should make correction status verifiable, paragraph 1
 
@@ -118,7 +118,29 @@ Current:
 
 Reason: Remove project-identity ambiguity by naming the permit and its Rhyolite Ridge scope, without inferring completed conditions, current operations or violations.
 
-The complete preceding battery naming review remains inspectable in both paired records; no independent acceptance transfers from that earlier version.
+### Paragraph change 4 — Victoria's case separates investigation from operation, paragraph 2
+
+Original:
+
+> Those records should be read as a sequence of differently scoped evidence. Registration may establish participation in a market or protection arrangement; an investigation concerns an event and its findings. Neither automatically establishes the long-term performance of the other. The inherited account does not assign a universal safety grade or conclude that one event explains every subsequent operating condition.
+
+Current:
+
+> Market registration should not be described as protection-scheme registration. The separately announced reserve service does not settle corrective-action closure, and neither announcement provides a later annual availability, dispatch or cycling series. Each conclusion still needs evidence matched to its question; no universal safety grade follows.
+
+Reason: Remove the conflation of market and protection-scheme registration; keep announcement, investigation, closure and recurring-performance evidence separate.
+
+### Preceding review — update-2026-09-23-annual-battery-chronology
+
+Corrects the current name to Victorian Big Battery without changing the incident, correction, restart or unresolved-performance claims. This is a naming correction, not a fresh source inspection or independent review.
+
+This is retained history, not the current wording. Its complete payload remains in the paired review snapshots and changes export.
+
+### Preceding review — update-2026-09-23-annual-nevada-permit-identity
+
+Names Rhyolite Ridge and its exact Nevada permit separately from the adjacent Thacker Pass financing discussion. Adds a scoped primary-PDF inspection while preserving the earlier Victorian Big Battery naming correction. Permit requirements are not proof of completed compliance, operation or an incident; independent article acceptance remains pending.
+
+This is retained history, not the current wording. Its complete payload remains in the paired review snapshots and changes export.
 
 ## Source map and inherited inspection limits
 
@@ -180,6 +202,14 @@ Retained inspection date: 2026-09-22. Access boundary: Retains the September 22 
 
 Retained finding: AEMO lists the 300 MW Victorian Big Battery among registrations since July 1. That reporting interval does not establish a July 1 registration or operating start.
 
+Paired-reading primary check: 2026-09-23.
+
+Locator: October 8, 2021 State of the System update: NEM connections update / Highlights of Q3, 2021 – to date, opening sentence and Victorian Big Battery list entry.
+
+Finding: The NEM connections section includes Victorian Big Battery among registrations since July 1, 2021. It does not specify its exact registration day or establish a SIPS contract.
+
+Access boundary: The public HTML was reopened on September 23, 2026. No HTML byte capture, underlying registration instrument, service contract or later operating ledger was obtained. This source check is not independent article acceptance.
+
 ### Victorian Big Battery Delivering Energy Reserves
 
 [Source](https://www.aemo.com.au/newsroom/media-release/victorian-battery-delivering-energy-reserves-in-summer) · [Retained profile](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/app/src/content/sources/source-56e-vbb-aemo-operational-2021.json>).
@@ -191,6 +221,14 @@ Located retained check from the battery case: December 8, 2021 service announcem
 Retained inspection date: 2026-09-22. Access boundary: Retains the September 22 official HTML inspection, not a new retrieval. The underlying service contract, telemetry and subsequent availability records were not inspected.
 
 Retained finding: AEMO reported the reserve service operational after commissioning. Its up-to-250 MW reserve contract is distinct from the 300 MW/450 MWh facility; the announcement does not measure annual availability or realized service delivery.
+
+Paired-reading primary check: 2026-09-23.
+
+Locator: December 8, 2021 reserve-service announcement: opening paragraphs and About System Integrity Protection Scheme (SIPS) footnote.
+
+Finding: The announcement separately describes contracted SIPS reserve service and reports it operational at that time. This is not a market-registration instrument or a later operating ledger.
+
+Access boundary: The public HTML was reopened on September 23, 2026. No HTML byte capture, underlying registration instrument, service contract or later operating ledger was obtained. This source check is not independent article acceptance.
 
 ### Electrical Incident and Technical Investigation Reports
 
@@ -247,13 +285,13 @@ Boundary: The September 23 public-PDF check supplies exact label/page observatio
 
 Current section 3, paragraph 1:
 
-> The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.
+> The Victorian Big Battery dossier brings together investigation, National Electricity Market (NEM) registration and reserve-service records. AEMO's October 8, 2021 update reports registration; its December 8 announcement describes the separately contracted System Integrity Protection Scheme (SIPS) service. Registration and a reserve-service contract are different milestones, neither of which establishes corrective-action closure or later annual performance.
 
 Source IDs: `source-56e-vbb-esv-fire-findings-2021`, `source-56e-vbb-aemo-registration-2021`, `source-56e-vbb-aemo-operational-2021`, `source-56e-vbb-esv-investigations`.
 
-Question: Check what the sources actually establish about commissioning, market registration, SIPS participation and reserve controls. Is 'protection-scheme registration' too broad or imprecise?
+Question: Verify the distinction between NEM registration and the separately contracted SIPS reserve service against the two dated announcements. Also assess the adjacent paragraph and whether any unsupported closure or recurring-performance conclusion remains.
 
-Boundary: Compare the case chronology and source locators without importing an exact registration day, acceptance of every remedy or annual performance.
+Boundary: No exact registration day, underlying registration instrument, service contract or later operating ledger was obtained. The wording change and retained source checks do not supply independent acceptance or corrective-action closure.
 
 - Finding (supported as written / needs qualification / unsupported / unresolved / outside expertise):
 - Exact artifact version and locator actually inspected:

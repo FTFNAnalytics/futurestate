@@ -3,12 +3,12 @@
   "prepared_date": "2026-09-23",
   "purpose": "Version-pinned preparation for actual independent annual subject review. No new remote source inspection, reviewer, contact, acceptance, series admission or release authority.",
   "candidate_binding": {
-    "source_commit": "4c13b7d53e74d0ef70e15b73f7d3606df40f0536",
-    "candidate_digest": "7f92ecb32b43f2c6496416620ee514df5090ca0695445d7b98e2182578a21edf",
-    "validation_receipt": "204-FULL-LOCAL-VALIDATION-2026-09-23-2b78b9909993",
-    "validation_finished_at": "2026-09-24T01:05:35.270Z",
-    "validation_results": "outputs/validation/2026-09-24T00-44-26.900Z-pN3j9F/results.json",
-    "recovery_report": "outputs/release-checkpoints/2026-09-24T01-08-08.679Z-N8pzfi/git-recovery-verification.json",
+    "source_commit": "50520aa5d89713d24c7f9c48c4f8e2d13f0b0fe1",
+    "candidate_digest": "4bfbd73ff51f831ec49e5844c6a5923f7b85ee47315a5efeca6305d19a814a0a",
+    "validation_receipt": "204-FULL-LOCAL-VALIDATION-2026-09-23-e86a599abbc0",
+    "validation_finished_at": "2026-09-24T01:50:43.603Z",
+    "validation_results": "outputs/validation/2026-09-24T01-34-20.150Z-cegmww/results.json",
+    "recovery_report": "outputs/release-checkpoints/2026-09-24T01-53-15.366Z-Dtsucp/git-recovery-verification.json",
     "boundary": "Pins the validated application and its recovered source. This later review-preparation packet is not claimed to be present in that commit."
   },
   "counts": {
@@ -374,7 +374,7 @@
       "original_sha256": "76d0af628095047fd694eddcb8b3efb53795a4b0a73df3945e0f8d5806ae4606",
       "current_sha256": "c0414e9ad7175e716401aaf942a3c607f2dfff405d7381165e3e984a074c74bb",
       "review_sha256": "25d61005d2700d96f172cc22b40587cf6938e36612ca4ef87d447bbf9c6d3bd1",
-      "rendered_sha256": "817e19d1798dfc1908086637172a4351d2d0d50d667e193ac958e1756fd3e90c",
+      "rendered_sha256": "a78ef099131c1cf31f1eb2aaf80669baec864f4e3eb00c153ec641848764aa6b",
       "original_snapshot": {
         "record_id": "203-SYNTHESIS-08",
         "title": "Climate exposure and infrastructure reliability",
@@ -697,7 +697,7 @@
       "original_sha256": "724dfa15362b4aa800558ddc59d5f9a35c7ee25b33392f891598a80ed3f2c8fd",
       "current_sha256": "7a71c202b3f674d74779032a018ff67c3058c29f1e1de4f6e5d5b396bb75deff",
       "review_sha256": "9e8124821152f4953d46046bc9c4adc407f7acccc312d2d6a7b06069ec7c5b3e",
-      "rendered_sha256": "ec704f634db335c214d393f216417f93e31c63db53c4adb26ec3f0663706cc6f",
+      "rendered_sha256": "8088d7a40a7a7c87b992cb4e2791431dc498f4b90a4a1bd3ee1f50d726cd1e37",
       "original_snapshot": {
         "record_id": "200-MONOGRAPH-08",
         "title": "Climate exposure and infrastructure reliability",
@@ -1017,9 +1017,9 @@
       "id": "203-SYNTHESIS-10",
       "route": "/reference/state-of-future-systems/synthesis-safety-incident-correction-restart/",
       "original_sha256": "909c96aa0e9716d44223b8d706b471622d604ace44270fb932efe9cf30d46482",
-      "current_sha256": "7a8e1e45a9e78fd2a3c6c4b3bcd967a21dd31d699e984a457eb1cae302c5059b",
-      "review_sha256": "9513af8c53836dacb35bb0045165c3673d77149bbf2c8718bcdad0124693d3de",
-      "rendered_sha256": "345e56417a5458049e82fffaa860c40db87bedf080fa4c3c8cd9bce485356cb8",
+      "current_sha256": "023a6e17ea621f484fa666fd5ea3566af54fc4dd612490e840fac68df583142e",
+      "review_sha256": "de33a2427db8e52ea6263527f6c8944594ef2fe30966ea2d3df75aa155063f75",
+      "rendered_sha256": "44f914fc7575f28a2a429e0631f8de0b7787bd027f2649653fb8006c1e2a6379",
       "original_snapshot": {
         "record_id": "203-SYNTHESIS-10",
         "title": "Safety, incident, correction, and restart",
@@ -1105,8 +1105,8 @@
           {
             "heading": "Victoria's case separates investigation from operation",
             "paragraphs": [
-              "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
-              "Those records should be read as a sequence of differently scoped evidence. Registration may establish participation in a market or protection arrangement; an investigation concerns an event and its findings. Neither automatically establishes the long-term performance of the other. The inherited account does not assign a universal safety grade or conclude that one event explains every subsequent operating condition."
+              "The Victorian Big Battery dossier brings together investigation, National Electricity Market (NEM) registration and reserve-service records. AEMO's October 8, 2021 update reports registration; its December 8 announcement describes the separately contracted System Integrity Protection Scheme (SIPS) service. Registration and a reserve-service contract are different milestones, neither of which establishes corrective-action closure or later annual performance.",
+              "Market registration should not be described as protection-scheme registration. The separately announced reserve service does not settle corrective-action closure, and neither announcement provides a later annual availability, dispatch or cycling series. Each conclusion still needs evidence matched to its question; no universal safety grade follows."
             ]
           },
           {
@@ -1148,15 +1148,15 @@
         "route": "/reference/state-of-future-systems/synthesis-safety-incident-correction-restart/",
         "source_record_sha256": "909c96aa0e9716d44223b8d706b471622d604ace44270fb932efe9cf30d46482",
         "review_date": "2026-09-23",
-        "update_id": "update-2026-09-23-annual-nevada-permit-identity",
-        "summary": "Names Rhyolite Ridge and its exact Nevada permit separately from the adjacent Thacker Pass financing discussion. Adds a scoped primary-PDF inspection while preserving the earlier Victorian Big Battery naming correction. Permit requirements are not proof of completed compliance, operation or an incident; independent article acceptance remains pending.",
+        "update_id": "update-2026-09-23-annual-battery-registration-reserve",
+        "summary": "Separates market registration from the contracted SIPS reserve-service arrangement in the Victorian Big Battery discussion. Preserves the Nevada permit clarification, corrected asset name and complete earlier reviews. The two dated announcements do not establish corrective-action closure or recurring performance; independent article acceptance remains pending.",
         "replacements": [
           {
             "section_heading": "Victoria's case separates investigation from operation",
             "paragraph_index": 0,
             "original_text": "The Victoria Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
-            "replacement_text": "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
-            "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+            "replacement_text": "The Victorian Big Battery dossier brings together investigation, National Electricity Market (NEM) registration and reserve-service records. AEMO's October 8, 2021 update reports registration; its December 8 announcement describes the separately contracted System Integrity Protection Scheme (SIPS) service. Registration and a reserve-service contract are different milestones, neither of which establishes corrective-action closure or later annual performance.",
+            "reason": "Separate market registration from the reserve-service arrangement while retaining the corrected asset name and unresolved evidence boundaries."
           },
           {
             "section_heading": "The next edition should make correction status verifiable",
@@ -1171,6 +1171,13 @@
             "original_text": "The Nevada permit case does identify pre-operation inspection, monitoring and reporting requirements. Such conditions can guide future evidence collection without implying a violation. A requirement and a finding of noncompliance are different statements. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
             "replacement_text": "Separately, Rhyolite Ridge is the project covered by Nevada water pollution control permit NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass. Its schedule specifies pre-operation notice and inspection arrangements, and its monitoring and reporting provisions guide later evidence collection. Schedule items require written Division approval before they count as completed. These requirements do not establish that operations began, an inspection passed or a violation occurred. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
             "reason": "Remove project-identity ambiguity by naming the permit and its Rhyolite Ridge scope, without inferring completed conditions, current operations or violations."
+          },
+          {
+            "section_heading": "Victoria's case separates investigation from operation",
+            "paragraph_index": 1,
+            "original_text": "Those records should be read as a sequence of differently scoped evidence. Registration may establish participation in a market or protection arrangement; an investigation concerns an event and its findings. Neither automatically establishes the long-term performance of the other. The inherited account does not assign a universal safety grade or conclude that one event explains every subsequent operating condition.",
+            "replacement_text": "Market registration should not be described as protection-scheme registration. The separately announced reserve service does not settle corrective-action closure, and neither announcement provides a later annual availability, dispatch or cycling series. Each conclusion still needs evidence matched to its question; no universal safety grade follows.",
+            "reason": "Remove the conflation of market and protection-scheme registration; keep announcement, investigation, closure and recurring-performance evidence separate."
           }
         ],
         "source_checks": [
@@ -1191,6 +1198,24 @@
             "locator": "Permit NEV2020107, Renewal 2025, Revision 00: project identity on PDF page 1; Schedule of Compliance I.B on page 2; monitoring I.D beginning on page 3; reporting II.B on pages 14-16.",
             "access": "The public 21-page PDF was downloaded on September 23, 2026 and only pages 1-3 and 14-16 were visually inspected. The signature was not authenticated. Later versions, compliance records, inspection outcomes and current operating status were not checked; no whole-document review or independent article acceptance is claimed.",
             "finding": "The instrument identifies Rhyolite Ridge rather than Thacker Pass. It sets notice, inspection-arrangement, monitoring and reporting requirements; schedule items require written Division approval before completion. Requirements are not evidence that activities began, inspections passed or violations occurred."
+          },
+          {
+            "source_id": "source-56e-vbb-aemo-registration-2021",
+            "url": "https://www.aemo.com.au/newsroom/news-updates/state-of-the-system-update-october-2021",
+            "source_profile_sha256": "f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773",
+            "primary_checked_date": "2026-09-23",
+            "locator": "October 8, 2021 State of the System update: NEM connections update / Highlights of Q3, 2021 – to date, opening sentence and Victorian Big Battery list entry.",
+            "access": "The public HTML was reopened on September 23, 2026. No HTML byte capture, underlying registration instrument, service contract or later operating ledger was obtained. This source check is not independent article acceptance.",
+            "finding": "The NEM connections section includes Victorian Big Battery among registrations since July 1, 2021. It does not specify its exact registration day or establish a SIPS contract."
+          },
+          {
+            "source_id": "source-56e-vbb-aemo-operational-2021",
+            "url": "https://www.aemo.com.au/newsroom/media-release/victorian-battery-delivering-energy-reserves-in-summer",
+            "source_profile_sha256": "c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1",
+            "primary_checked_date": "2026-09-23",
+            "locator": "December 8, 2021 reserve-service announcement: opening paragraphs and About System Integrity Protection Scheme (SIPS) footnote.",
+            "access": "The public HTML was reopened on September 23, 2026. No HTML byte capture, underlying registration instrument, service contract or later operating ledger was obtained. This source check is not independent article acceptance.",
+            "finding": "The announcement separately describes contracted SIPS reserve service and reports it operational at that time. This is not a market-registration instrument or a later operating ledger."
           }
         ],
         "retained_contexts": [],
@@ -1214,8 +1239,8 @@
           "route": "/reference/state-of-future-systems/synthesis-safety-incident-correction-restart/",
           "source_record_sha256": "909c96aa0e9716d44223b8d706b471622d604ace44270fb932efe9cf30d46482",
           "review_date": "2026-09-23",
-          "update_id": "update-2026-09-23-annual-battery-chronology",
-          "summary": "Corrects the current name to Victorian Big Battery without changing the incident, correction, restart or unresolved-performance claims. This is a naming correction, not a fresh source inspection or independent review.",
+          "update_id": "update-2026-09-23-annual-nevada-permit-identity",
+          "summary": "Names Rhyolite Ridge and its exact Nevada permit separately from the adjacent Thacker Pass financing discussion. Adds a scoped primary-PDF inspection while preserving the earlier Victorian Big Battery naming correction. Permit requirements are not proof of completed compliance, operation or an incident; independent article acceptance remains pending.",
           "replacements": [
             {
               "section_heading": "Victoria's case separates investigation from operation",
@@ -1230,9 +1255,35 @@
               "original_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victoria Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
               "replacement_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victorian Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
               "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+            },
+            {
+              "section_heading": "Industrial importance does not settle a safety question",
+              "paragraph_index": 1,
+              "original_text": "The Nevada permit case does identify pre-operation inspection, monitoring and reporting requirements. Such conditions can guide future evidence collection without implying a violation. A requirement and a finding of noncompliance are different statements. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
+              "replacement_text": "Separately, Rhyolite Ridge is the project covered by Nevada water pollution control permit NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass. Its schedule specifies pre-operation notice and inspection arrangements, and its monitoring and reporting provisions guide later evidence collection. Schedule items require written Division approval before they count as completed. These requirements do not establish that operations began, an inspection passed or a violation occurred. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
+              "reason": "Remove project-identity ambiguity by naming the permit and its Rhyolite Ridge scope, without inferring completed conditions, current operations or violations."
             }
           ],
-          "source_checks": [],
+          "source_checks": [
+            {
+              "source_id": "source-ndep-rhyolite-ridge-water-permit-2025",
+              "url": "https://ndep.nv.gov/uploads/documents/202505amt_2020107_WPCP_Rnwl2024_Rev00_-_signed.pdf",
+              "source_profile_sha256": "854449efc992d0e8922bebc6a1c9f1585156ab43ce2e5df33951c3095a28041c",
+              "primary_checked_date": "2026-09-23",
+              "captured_sha256": "59e57f2cd151af476c0a7f6b1ca8534028be8c4b7c7c6767148b3819834152be",
+              "visually_checked_pages": [
+                1,
+                2,
+                3,
+                14,
+                15,
+                16
+              ],
+              "locator": "Permit NEV2020107, Renewal 2025, Revision 00: project identity on PDF page 1; Schedule of Compliance I.B on page 2; monitoring I.D beginning on page 3; reporting II.B on pages 14-16.",
+              "access": "The public 21-page PDF was downloaded on September 23, 2026 and only pages 1-3 and 14-16 were visually inspected. The signature was not authenticated. Later versions, compliance records, inspection outcomes and current operating status were not checked; no whole-document review or independent article acceptance is claimed.",
+              "finding": "The instrument identifies Rhyolite Ridge rather than Thacker Pass. It sets notice, inspection-arrangement, monitoring and reporting requirements; schedule items require written Division approval before completion. Requirements are not evidence that activities began, inspections passed or violations occurred."
+            }
+          ],
           "retained_contexts": [],
           "independent_article_review": false,
           "approval_receipt_id": null,
@@ -1248,7 +1299,48 @@
               "label": "Victorian Big Battery: dated case history",
               "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
             }
-          ]
+          ],
+          "previous_review": {
+            "record_id": "203-SYNTHESIS-10",
+            "route": "/reference/state-of-future-systems/synthesis-safety-incident-correction-restart/",
+            "source_record_sha256": "909c96aa0e9716d44223b8d706b471622d604ace44270fb932efe9cf30d46482",
+            "review_date": "2026-09-23",
+            "update_id": "update-2026-09-23-annual-battery-chronology",
+            "summary": "Corrects the current name to Victorian Big Battery without changing the incident, correction, restart or unresolved-performance claims. This is a naming correction, not a fresh source inspection or independent review.",
+            "replacements": [
+              {
+                "section_heading": "Victoria's case separates investigation from operation",
+                "paragraph_index": 0,
+                "original_text": "The Victoria Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+                "replacement_text": "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+                "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+              },
+              {
+                "section_heading": "The next edition should make correction status verifiable",
+                "paragraph_index": 0,
+                "original_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victoria Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+                "replacement_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victorian Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+                "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+              }
+            ],
+            "source_checks": [],
+            "retained_contexts": [],
+            "independent_article_review": false,
+            "approval_receipt_id": null,
+            "overview_replacement": {
+              "original_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victoria Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+              "replacement_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victorian Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+              "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+            },
+            "related_readings": [
+              {
+                "record_id": "203-CASE-13",
+                "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+                "label": "Victorian Big Battery: dated case history",
+                "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+              }
+            ]
+          }
         }
       },
       "retained_contexts": [],
@@ -1331,9 +1423,9 @@
       "id": "200-MONOGRAPH-10",
       "route": "/reference/constraint-monographs/safety-incident-correction-restart/",
       "original_sha256": "3da242fb7d3af48e39ac1f8cf7fe40070ba5d6f08f1b5147d6218ae7294eeb14",
-      "current_sha256": "c9bcacf2d0d672715113f7db2c87019e66efab976aef0f1d04f75b188b6b14c5",
-      "review_sha256": "8ac972d8eabb0edb755517dc2cc7a19adea073628c30537b6d4fc6bc19d187fc",
-      "rendered_sha256": "0533a92f3826c379ba86ff573eb31128eed5fd0d59b659ae4cc541b4ea977f80",
+      "current_sha256": "312336c78f653b5cf8ba95f1dbc013907701b382c15988bac494bb239b7fea4d",
+      "review_sha256": "dc2d15dd6261f30cf4742d0c55408b105ac14ec8624fe281345ba1be786ac56b",
+      "rendered_sha256": "5bf29f301c9a8f0e59098983cfa60c42610c67ee7c6a66642c9dedcc93cceae3",
       "original_snapshot": {
         "record_id": "200-MONOGRAPH-10",
         "title": "Safety, incident, correction, and restart",
@@ -1418,8 +1510,8 @@
           {
             "heading": "Victoria's case separates investigation from operation",
             "paragraphs": [
-              "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
-              "Those records should be read as a sequence of differently scoped evidence. Registration may establish participation in a market or protection arrangement; an investigation concerns an event and its findings. Neither automatically establishes the long-term performance of the other. The inherited account does not assign a universal safety grade or conclude that one event explains every subsequent operating condition."
+              "The Victorian Big Battery dossier brings together investigation, National Electricity Market (NEM) registration and reserve-service records. AEMO's October 8, 2021 update reports registration; its December 8 announcement describes the separately contracted System Integrity Protection Scheme (SIPS) service. Registration and a reserve-service contract are different milestones, neither of which establishes corrective-action closure or later annual performance.",
+              "Market registration should not be described as protection-scheme registration. The separately announced reserve service does not settle corrective-action closure, and neither announcement provides a later annual availability, dispatch or cycling series. Each conclusion still needs evidence matched to its question; no universal safety grade follows."
             ]
           },
           {
@@ -1461,15 +1553,15 @@
         "route": "/reference/constraint-monographs/safety-incident-correction-restart/",
         "source_record_sha256": "3da242fb7d3af48e39ac1f8cf7fe40070ba5d6f08f1b5147d6218ae7294eeb14",
         "review_date": "2026-09-23",
-        "update_id": "update-2026-09-23-annual-nevada-permit-identity",
-        "summary": "Names Rhyolite Ridge and its exact Nevada permit separately from the adjacent Thacker Pass financing discussion. Adds a scoped primary-PDF inspection while preserving the earlier Victorian Big Battery naming correction. Permit requirements are not proof of completed compliance, operation or an incident; independent article acceptance remains pending.",
+        "update_id": "update-2026-09-23-annual-battery-registration-reserve",
+        "summary": "Separates market registration from the contracted SIPS reserve-service arrangement in the Victorian Big Battery discussion. Preserves the Nevada permit clarification, corrected asset name and complete earlier reviews. The two dated announcements do not establish corrective-action closure or recurring performance; independent article acceptance remains pending.",
         "replacements": [
           {
             "section_heading": "Victoria's case separates investigation from operation",
             "paragraph_index": 0,
             "original_text": "The Victoria Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
-            "replacement_text": "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
-            "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+            "replacement_text": "The Victorian Big Battery dossier brings together investigation, National Electricity Market (NEM) registration and reserve-service records. AEMO's October 8, 2021 update reports registration; its December 8 announcement describes the separately contracted System Integrity Protection Scheme (SIPS) service. Registration and a reserve-service contract are different milestones, neither of which establishes corrective-action closure or later annual performance.",
+            "reason": "Separate market registration from the reserve-service arrangement while retaining the corrected asset name and unresolved evidence boundaries."
           },
           {
             "section_heading": "The next edition should make correction status verifiable",
@@ -1484,6 +1576,13 @@
             "original_text": "The Nevada permit case does identify pre-operation inspection, monitoring and reporting requirements. Such conditions can guide future evidence collection without implying a violation. A requirement and a finding of noncompliance are different statements. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
             "replacement_text": "Separately, Rhyolite Ridge is the project covered by Nevada water pollution control permit NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass. Its schedule specifies pre-operation notice and inspection arrangements, and its monitoring and reporting provisions guide later evidence collection. Schedule items require written Division approval before they count as completed. These requirements do not establish that operations began, an inspection passed or a violation occurred. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
             "reason": "Remove project-identity ambiguity by naming the permit and its Rhyolite Ridge scope, without inferring completed conditions, current operations or violations."
+          },
+          {
+            "section_heading": "Victoria's case separates investigation from operation",
+            "paragraph_index": 1,
+            "original_text": "Those records should be read as a sequence of differently scoped evidence. Registration may establish participation in a market or protection arrangement; an investigation concerns an event and its findings. Neither automatically establishes the long-term performance of the other. The inherited account does not assign a universal safety grade or conclude that one event explains every subsequent operating condition.",
+            "replacement_text": "Market registration should not be described as protection-scheme registration. The separately announced reserve service does not settle corrective-action closure, and neither announcement provides a later annual availability, dispatch or cycling series. Each conclusion still needs evidence matched to its question; no universal safety grade follows.",
+            "reason": "Remove the conflation of market and protection-scheme registration; keep announcement, investigation, closure and recurring-performance evidence separate."
           }
         ],
         "source_checks": [
@@ -1504,6 +1603,24 @@
             "locator": "Permit NEV2020107, Renewal 2025, Revision 00: project identity on PDF page 1; Schedule of Compliance I.B on page 2; monitoring I.D beginning on page 3; reporting II.B on pages 14-16.",
             "access": "The public 21-page PDF was downloaded on September 23, 2026 and only pages 1-3 and 14-16 were visually inspected. The signature was not authenticated. Later versions, compliance records, inspection outcomes and current operating status were not checked; no whole-document review or independent article acceptance is claimed.",
             "finding": "The instrument identifies Rhyolite Ridge rather than Thacker Pass. It sets notice, inspection-arrangement, monitoring and reporting requirements; schedule items require written Division approval before completion. Requirements are not evidence that activities began, inspections passed or violations occurred."
+          },
+          {
+            "source_id": "source-56e-vbb-aemo-registration-2021",
+            "url": "https://www.aemo.com.au/newsroom/news-updates/state-of-the-system-update-october-2021",
+            "source_profile_sha256": "f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773",
+            "primary_checked_date": "2026-09-23",
+            "locator": "October 8, 2021 State of the System update: NEM connections update / Highlights of Q3, 2021 – to date, opening sentence and Victorian Big Battery list entry.",
+            "access": "The public HTML was reopened on September 23, 2026. No HTML byte capture, underlying registration instrument, service contract or later operating ledger was obtained. This source check is not independent article acceptance.",
+            "finding": "The NEM connections section includes Victorian Big Battery among registrations since July 1, 2021. It does not specify its exact registration day or establish a SIPS contract."
+          },
+          {
+            "source_id": "source-56e-vbb-aemo-operational-2021",
+            "url": "https://www.aemo.com.au/newsroom/media-release/victorian-battery-delivering-energy-reserves-in-summer",
+            "source_profile_sha256": "c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1",
+            "primary_checked_date": "2026-09-23",
+            "locator": "December 8, 2021 reserve-service announcement: opening paragraphs and About System Integrity Protection Scheme (SIPS) footnote.",
+            "access": "The public HTML was reopened on September 23, 2026. No HTML byte capture, underlying registration instrument, service contract or later operating ledger was obtained. This source check is not independent article acceptance.",
+            "finding": "The announcement separately describes contracted SIPS reserve service and reports it operational at that time. This is not a market-registration instrument or a later operating ledger."
           }
         ],
         "retained_contexts": [],
@@ -1527,8 +1644,8 @@
           "route": "/reference/constraint-monographs/safety-incident-correction-restart/",
           "source_record_sha256": "3da242fb7d3af48e39ac1f8cf7fe40070ba5d6f08f1b5147d6218ae7294eeb14",
           "review_date": "2026-09-23",
-          "update_id": "update-2026-09-23-annual-battery-chronology",
-          "summary": "Corrects the current name to Victorian Big Battery without changing the incident, correction, restart or unresolved-performance claims. This is a naming correction, not a fresh source inspection or independent review.",
+          "update_id": "update-2026-09-23-annual-nevada-permit-identity",
+          "summary": "Names Rhyolite Ridge and its exact Nevada permit separately from the adjacent Thacker Pass financing discussion. Adds a scoped primary-PDF inspection while preserving the earlier Victorian Big Battery naming correction. Permit requirements are not proof of completed compliance, operation or an incident; independent article acceptance remains pending.",
           "replacements": [
             {
               "section_heading": "Victoria's case separates investigation from operation",
@@ -1543,9 +1660,35 @@
               "original_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victoria Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
               "replacement_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victorian Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
               "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+            },
+            {
+              "section_heading": "Industrial importance does not settle a safety question",
+              "paragraph_index": 1,
+              "original_text": "The Nevada permit case does identify pre-operation inspection, monitoring and reporting requirements. Such conditions can guide future evidence collection without implying a violation. A requirement and a finding of noncompliance are different statements. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
+              "replacement_text": "Separately, Rhyolite Ridge is the project covered by Nevada water pollution control permit NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass. Its schedule specifies pre-operation notice and inspection arrangements, and its monitoring and reporting provisions guide later evidence collection. Schedule items require written Division approval before they count as completed. These requirements do not establish that operations began, an inspection passed or a violation occurred. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
+              "reason": "Remove project-identity ambiguity by naming the permit and its Rhyolite Ridge scope, without inferring completed conditions, current operations or violations."
             }
           ],
-          "source_checks": [],
+          "source_checks": [
+            {
+              "source_id": "source-ndep-rhyolite-ridge-water-permit-2025",
+              "url": "https://ndep.nv.gov/uploads/documents/202505amt_2020107_WPCP_Rnwl2024_Rev00_-_signed.pdf",
+              "source_profile_sha256": "854449efc992d0e8922bebc6a1c9f1585156ab43ce2e5df33951c3095a28041c",
+              "primary_checked_date": "2026-09-23",
+              "captured_sha256": "59e57f2cd151af476c0a7f6b1ca8534028be8c4b7c7c6767148b3819834152be",
+              "visually_checked_pages": [
+                1,
+                2,
+                3,
+                14,
+                15,
+                16
+              ],
+              "locator": "Permit NEV2020107, Renewal 2025, Revision 00: project identity on PDF page 1; Schedule of Compliance I.B on page 2; monitoring I.D beginning on page 3; reporting II.B on pages 14-16.",
+              "access": "The public 21-page PDF was downloaded on September 23, 2026 and only pages 1-3 and 14-16 were visually inspected. The signature was not authenticated. Later versions, compliance records, inspection outcomes and current operating status were not checked; no whole-document review or independent article acceptance is claimed.",
+              "finding": "The instrument identifies Rhyolite Ridge rather than Thacker Pass. It sets notice, inspection-arrangement, monitoring and reporting requirements; schedule items require written Division approval before completion. Requirements are not evidence that activities began, inspections passed or violations occurred."
+            }
+          ],
           "retained_contexts": [],
           "independent_article_review": false,
           "approval_receipt_id": null,
@@ -1561,7 +1704,48 @@
               "label": "Victorian Big Battery: dated case history",
               "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
             }
-          ]
+          ],
+          "previous_review": {
+            "record_id": "200-MONOGRAPH-10",
+            "route": "/reference/constraint-monographs/safety-incident-correction-restart/",
+            "source_record_sha256": "3da242fb7d3af48e39ac1f8cf7fe40070ba5d6f08f1b5147d6218ae7294eeb14",
+            "review_date": "2026-09-23",
+            "update_id": "update-2026-09-23-annual-battery-chronology",
+            "summary": "Corrects the current name to Victorian Big Battery without changing the incident, correction, restart or unresolved-performance claims. This is a naming correction, not a fresh source inspection or independent review.",
+            "replacements": [
+              {
+                "section_heading": "Victoria's case separates investigation from operation",
+                "paragraph_index": 0,
+                "original_text": "The Victoria Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+                "replacement_text": "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+                "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+              },
+              {
+                "section_heading": "The next edition should make correction status verifiable",
+                "paragraph_index": 0,
+                "original_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victoria Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+                "replacement_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victorian Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+                "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+              }
+            ],
+            "source_checks": [],
+            "retained_contexts": [],
+            "independent_article_review": false,
+            "approval_receipt_id": null,
+            "overview_replacement": {
+              "original_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victoria Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+              "replacement_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victorian Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+              "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+            },
+            "related_readings": [
+              {
+                "record_id": "203-CASE-13",
+                "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+                "label": "Victorian Big Battery: dated case history",
+                "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+              }
+            ]
+          }
         }
       },
       "retained_contexts": [],
@@ -2338,7 +2522,7 @@
           "section_index": 2,
           "paragraph_index": 0,
           "section_heading": "Victoria's case separates investigation from operation",
-          "exact_text": "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+          "exact_text": "The Victorian Big Battery dossier brings together investigation, National Electricity Market (NEM) registration and reserve-service records. AEMO's October 8, 2021 update reports registration; its December 8 announcement describes the separately contracted System Integrity Protection Scheme (SIPS) service. Registration and a reserve-service contract are different milestones, neither of which establishes corrective-action closure or later annual performance.",
           "source_ids": [
             "source-56e-vbb-esv-fire-findings-2021",
             "source-56e-vbb-aemo-registration-2021",
@@ -2346,13 +2530,11 @@
             "source-56e-vbb-esv-investigations"
           ],
           "locator_refs": [
-            "source-56e-vbb-esv-fire-findings-2021",
             "source-56e-vbb-aemo-registration-2021",
-            "source-56e-vbb-aemo-operational-2021",
-            "source-56e-vbb-esv-investigations"
+            "source-56e-vbb-aemo-operational-2021"
           ],
-          "review_question": "Check what the sources actually establish about commissioning, market registration, SIPS participation and reserve controls. Is 'protection-scheme registration' too broad or imprecise?",
-          "review_boundary": "Compare the case chronology and source locators without importing an exact registration day, acceptance of every remedy or annual performance.",
+          "review_question": "Verify the distinction between NEM registration and the separately contracted SIPS reserve service against the two dated announcements. Also assess the adjacent paragraph and whether any unsupported closure or recurring-performance conclusion remains.",
+          "review_boundary": "No exact registration day, underlying registration instrument, service contract or later operating ledger was obtained. The wording change and retained source checks do not supply independent acceptance or corrective-action closure.",
           "finding": null,
           "exact_artifact_verified": null,
           "evidence_kind": null,

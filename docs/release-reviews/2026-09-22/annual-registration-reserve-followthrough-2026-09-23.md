@@ -44,7 +44,17 @@ The [full logged sequence](<C:/Users/justi/OneDrive/Documents/NextGen Transporta
 
 Selection/census refresh and census assertions pass, without acceptance or identity admissions. The refreshed [reachability inventory](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reachability-summary.json>) finds all 16,640 application pages reachable from the selected 33, with 25 HTML downloads separate and zero unresolved application anchor targets. It does not isolate or clear a 33-page release.
 
-Exact changed-source recovery and subsequent version-bound review preparation are pending at this capture point. The earlier clean-install proof remains specific to `be59f801`; this full workspace validation does not establish final-candidate clean-install reproduction.
+Exact [changed-source archive recovery](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-24T01-53-15.366Z-Dtsucp/git-recovery-verification.json>) passed at September 24 01:54:44.422 UTC for commit `50520aa5d89713d24c7f9c48c4f8e2d13f0b0fe1`: 9,580 files and 220,496,756 bytes. The source manifest, Git blobs, recovered bytes, candidate, receipt and unchanged lockfile agree. This is not a fresh dependency installation. The earlier clean-install proof remains specific to `be59f801`; final-candidate clean-install reproduction remains required.
+
+The subsequent preparation refresh binds that actual recovery:
+
+- Annual packet: four annual assignments, two paired presentations, twenty-one prompts, seventeen source-profile pins, four captured PDFs and seven retained supporting-report/observation pins. Six distinct application source identities remain separate from the supplementary Moss Landing check. Both revised safety readings now include the two located AEMO checks; all six prior-review records are preserved. Twenty-two invalid fixtures are rejected.
+- First-four-answer packet: all four articles and fourteen claim prompts unchanged; candidate/recovery references refreshed; twelve invalid fixtures rejected.
+- Reader protocol: all five task prompts and acceptance thresholds unchanged; current candidate/HTML/recovery references refreshed. Twenty-five attempts and five accessibility checks remain unperformed.
+
+All three preparation verifiers passed. The first attempt to transfer the combined read-only patch output exceeded the tool-output budget; no patch was applied from that truncated response. The complete patches were then retrieved as individually checked chunks, applied, and verified against exact original/current article and review snapshots. No application or recovered-source bytes changed during packet refresh.
+
+These later packet/recovery fields postdate `50520aa5` and are not claimed to be inside that application-source commit. Their separate documentation checkpoint preserves the refreshed materials. No reviewer, participant, contact or independent decision was created by this preparation.
 
 ## Full-scope boundary
 
