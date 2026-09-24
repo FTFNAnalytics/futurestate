@@ -3,11 +3,11 @@
   "prepared_date": "2026-09-23",
   "status": "Protocol preparation only; no participants recruited, contacted or tested.",
   "candidate_binding": {
-    "source_commit": "035b552dee061395beecad7379c0051a7c8e8f40",
-    "candidate_digest": "4178277fc3eb2578937a36f9d27ba13974631e1a69e036ff8c0a5fc17da4c38f",
-    "validation_receipt": "204-FULL-LOCAL-VALIDATION-2026-09-23-1727e048e74c",
-    "validation_results": "outputs/validation/2026-09-23T20-56-42.382Z-645fNr/results.json",
-    "recovery_report": "outputs/release-checkpoints/2026-09-23T21-25-33.751Z-qGuPzZ/git-recovery-verification.json",
+    "source_commit": "4c13b7d53e74d0ef70e15b73f7d3606df40f0536",
+    "candidate_digest": "7f92ecb32b43f2c6496416620ee514df5090ca0695445d7b98e2182578a21edf",
+    "validation_receipt": "204-FULL-LOCAL-VALIDATION-2026-09-23-2b78b9909993",
+    "validation_results": "outputs/validation/2026-09-24T00-44-26.900Z-pN3j9F/results.json",
+    "recovery_report": "outputs/release-checkpoints/2026-09-24T01-08-08.679Z-N8pzfi/git-recovery-verification.json",
     "boundary": "Application-version pins only. These later protocol materials are not claimed to be inside that recovered source commit."
   },
   "start_route": "/",
@@ -75,14 +75,14 @@
     },
     {
       "task": 5,
-      "prompt": "Find the September 23 annual battery correction update. What changed, and what remains unapproved?",
-      "success_criterion": "Identifies the Gateway/Victorian Big Battery chronology and naming corrections, including paired readings, while recognizing that no independent approval, admitted operating series, deployment or launch was created.",
+      "prompt": "Find the September 23 Nevada permit correction update. What changed, and what remains unapproved?",
+      "success_criterion": "Identifies the Rhyolite Ridge/Thacker Pass distinction in two paired readings and retained prior corrections, while recognizing that no completed compliance, operating status, independent approval, admitted series, deployment or launch was established.",
       "moderator_answer_key": {
-        "id": "update-2026-09-23-annual-battery-chronology",
-        "title": "Annual battery names and dated operating boundaries",
-        "route": "/updates/update-2026-09-23-annual-battery-chronology/",
-        "record_sha256": "7a69f02b711ef43b6db37fe4aacea24661c02fb347f9488c3c67c58d3ec8c52c",
-        "rendered_sha256": "ae9908474567697aaae6fec3be32538ba85143ee9755cea6e3e38dd079c91c4d"
+        "id": "update-2026-09-23-annual-nevada-permit-identity",
+        "title": "Rhyolite Ridge permit distinguished from Thacker Pass financing",
+        "route": "/updates/update-2026-09-23-annual-nevada-permit-identity/",
+        "record_sha256": "c3a0fe6ce5f7a33a8673aa68ee0ae7cf62efb044cd065308e35161b956d78598",
+        "rendered_sha256": "895ded5de38a94b65abfccc66e7554afcda79dd2b6fd85863617bbebeeb74aa9"
       },
       "successful_readers": null,
       "acceptance": null
@@ -446,7 +446,7 @@
         "/reference/international-projects/toronto-24-254930/",
         "/reference/global-places-ii/south-australia-grid-storage/",
         "/signals/57n-amtrak-24-accepted-label-conformance-tests/",
-        "/updates/update-2026-09-23-annual-battery-chronology/"
+        "/updates/update-2026-09-23-annual-nevada-permit-identity/"
       ],
       "method": "Actual keyboard navigation: skip link, focus/order/visibility, search and pagination, source links, current/original details; record observed behavior.",
       "performed": false,
@@ -459,7 +459,7 @@
         "/reference/international-projects/toronto-24-254930/",
         "/reference/global-places-ii/south-australia-grid-storage/",
         "/signals/57n-amtrak-24-accepted-label-conformance-tests/",
-        "/updates/update-2026-09-23-annual-battery-chronology/",
+        "/updates/update-2026-09-23-annual-nevada-permit-identity/",
         "/reference/accessible-editions/advanced-manufacturing-plain-language-en/",
         "/reference/accessible-editions/advanced-manufacturing-low-bandwidth-en/"
       ],
@@ -474,7 +474,7 @@
         "/reference/international-projects/toronto-24-254930/",
         "/reference/global-places-ii/south-australia-grid-storage/",
         "/signals/57n-amtrak-24-accepted-label-conformance-tests/",
-        "/updates/update-2026-09-23-annual-battery-chronology/",
+        "/updates/update-2026-09-23-annual-nevada-permit-identity/",
         "/reference/accessible-editions/advanced-manufacturing-plain-language-en/",
         "/reference/accessible-editions/advanced-manufacturing-low-bandwidth-en/"
       ],
@@ -489,7 +489,7 @@
         "/reference/international-projects/toronto-24-254930/",
         "/reference/global-places-ii/south-australia-grid-storage/",
         "/signals/57n-amtrak-24-accepted-label-conformance-tests/",
-        "/updates/update-2026-09-23-annual-battery-chronology/",
+        "/updates/update-2026-09-23-annual-nevada-permit-identity/",
         "/reference/accessible-editions/advanced-manufacturing-plain-language-en/",
         "/reference/accessible-editions/advanced-manufacturing-low-bandwidth-en/"
       ],
@@ -504,7 +504,7 @@
         "/reference/international-projects/toronto-24-254930/",
         "/reference/global-places-ii/south-australia-grid-storage/",
         "/signals/57n-amtrak-24-accepted-label-conformance-tests/",
-        "/updates/update-2026-09-23-annual-battery-chronology/"
+        "/updates/update-2026-09-23-annual-nevada-permit-identity/"
       ],
       "method": "Inspect any tables encountered for structure and reading order. Record route and actual finding; a justified no-table result is not a blanket accessibility pass.",
       "performed": false,

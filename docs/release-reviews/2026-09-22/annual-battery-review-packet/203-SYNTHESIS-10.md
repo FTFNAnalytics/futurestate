@@ -4,25 +4,25 @@ Independent-review worksheet prepared September 23, 2026. No reviewer is assigne
 
 ## Exact application version
 
-Candidate `4178277fc3eb2578937a36f9d27ba13974631e1a69e036ff8c0a5fc17da4c38f`; recovered application source `035b552dee061395beecad7379c0051a7c8e8f40`. Full validation ended 2026-09-23T21:16:32.925Z with receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-1727e048e74c`.
+Candidate `7f92ecb32b43f2c6496416620ee514df5090ca0695445d7b98e2182578a21edf`; recovered application source `4c13b7d53e74d0ef70e15b73f7d3606df40f0536`. Full validation ended 2026-09-24T01:05:35.270Z with receipt `204-FULL-LOCAL-VALIDATION-2026-09-23-2b78b9909993`.
 
 - 203-SYNTHESIS-10: `/reference/state-of-future-systems/synthesis-safety-incident-correction-restart/`.
 - Original record SHA-256: `909c96aa0e9716d44223b8d706b471622d604ace44270fb932efe9cf30d46482`.
-- Current reading SHA-256: `98c7b2b21446aeb249fa025d22861e0e6e3e525c2c34df6d9584bcb1053c4d05`.
-- Complete dated review SHA-256: `b30c7cafbfd20cf3aee37a0eb924b6f779a922ba11c1784643152fefdba859f3`.
-- Validated rendered HTML SHA-256: `70d4f737ec3e34dd51be2d3de6baea3b523b8ae28eafbdf8e79ad1af42f19f2c`.
+- Current reading SHA-256: `7a8e1e45a9e78fd2a3c6c4b3bcd967a21dd31d699e984a457eb1cae302c5059b`.
+- Complete dated review SHA-256: `9513af8c53836dacb35bb0045165c3673d77149bbf2c8718bcdad0124693d3de`.
+- Validated rendered HTML SHA-256: `345e56417a5458049e82fffaa860c40db87bedf080fa4c3c8cd9bce485356cb8`.
 
 Paired essay presentation (not an additional annual record):
 
 - 200-MONOGRAPH-10: `/reference/constraint-monographs/safety-incident-correction-restart/`.
 - Original record SHA-256: `3da242fb7d3af48e39ac1f8cf7fe40070ba5d6f08f1b5147d6218ae7294eeb14`.
-- Current reading SHA-256: `5269f5f3daf0cf75a47b8d89bf9ae64ad49b37f5379024978052c48a8e91d3ce`.
-- Complete dated review SHA-256: `68c9d322f22b04018bd376acbebbc625494b2dd4149b6fc884d7ba1cf46b4f73`.
-- Validated rendered HTML SHA-256: `ea997e7cdf6f4ed6f0439dc0d2af26e0ab07c537462e261666310fc03e22c898`.
+- Current reading SHA-256: `c9bcacf2d0d672715113f7db2c87019e66efab976aef0f1d04f75b188b6b14c5`.
+- Complete dated review SHA-256: `8ac972d8eabb0edb755517dc2cc7a19adea073628c30537b6d4fc6bc19d187fc`.
+- Validated rendered HTML SHA-256: `0533a92f3826c379ba86ff573eb31128eed5fd0d59b659ae4cc541b4ea977f80`.
 
 The two complete current section arrays and overviews match. Review both routes' presentation; acceptance of one is not automatically an independent review of the other.
 
-[Complete original/current snapshots and blank returns](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-battery-review-packet/manifest.json>) · [Actual recovered-source diagnostic](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-23T21-25-33.751Z-qGuPzZ/git-recovery-verification.json>).
+[Complete original/current snapshots and blank returns](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-battery-review-packet/manifest.json>) · [Actual recovered-source diagnostic](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-24T01-08-08.679Z-N8pzfi/git-recovery-verification.json>).
 
 ## Complete current reading
 
@@ -50,7 +50,7 @@ Those records should be read as a sequence of differently scoped evidence. Regis
 
 USGS's 2026 summary describes national mineral production and import reliance. DOE's Thacker Pass financing record describes a closed loan and designed lithium-carbonate output. These documents help explain why mineral-processing projects attract attention. They do not document a Thacker Pass incident, a failed test, a corrective action or a restart, and this chapter makes none of those claims.
 
-The Nevada permit case does identify pre-operation inspection, monitoring and reporting requirements. Such conditions can guide future evidence collection without implying a violation. A requirement and a finding of noncompliance are different statements. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.
+Separately, Rhyolite Ridge is the project covered by Nevada water pollution control permit NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass. Its schedule specifies pre-operation notice and inspection arrangements, and its monitoring and reporting provisions guide later evidence collection. Schedule items require written Division approval before they count as completed. These requirements do not establish that operations began, an inspection passed or a violation occurred. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.
 
 ### A return to activity is not a complete recovery measure
 
@@ -66,9 +66,9 @@ A useful public casebook would then explain the initial condition, the official 
 
 ## Original wording and dated changes
 
-Review date 2026-09-23; change record `update-2026-09-23-annual-battery-chronology`.
+Review date 2026-09-23; change record `update-2026-09-23-annual-nevada-permit-identity`.
 
-Corrects the current name to Victorian Big Battery without changing the incident, correction, restart or unresolved-performance claims. This is a naming correction, not a fresh source inspection or independent review.
+Names Rhyolite Ridge and its exact Nevada permit separately from the adjacent Thacker Pass financing discussion. Adds a scoped primary-PDF inspection while preserving the earlier Victorian Big Battery naming correction. Permit requirements are not proof of completed compliance, operation or an incident; independent article acceptance remains pending.
 
 ### Overview correction
 
@@ -106,6 +106,20 @@ Current:
 
 Reason: Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations.
 
+### Paragraph change 3 — Industrial importance does not settle a safety question, paragraph 2
+
+Original:
+
+> The Nevada permit case does identify pre-operation inspection, monitoring and reporting requirements. Such conditions can guide future evidence collection without implying a violation. A requirement and a finding of noncompliance are different statements. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.
+
+Current:
+
+> Separately, Rhyolite Ridge is the project covered by Nevada water pollution control permit NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass. Its schedule specifies pre-operation notice and inspection arrangements, and its monitoring and reporting provisions guide later evidence collection. Schedule items require written Division approval before they count as completed. These requirements do not establish that operations began, an inspection passed or a violation occurred. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.
+
+Reason: Remove project-identity ambiguity by naming the permit and its Rhyolite Ridge scope, without inferring completed conditions, current operations or violations.
+
+The complete preceding battery naming review remains inspectable in both paired records; no independent acceptance transfers from that earlier version.
+
 ## Source map and inherited inspection limits
 
 The following source-profile dates are historical metadata. A retained September 22–23 source check is shown separately when available. A source link, related case or internal claim-block comparison does not clear the full article.
@@ -132,7 +146,15 @@ No new exact primary-artifact locator is supplied for this source by the battery
 
 Source ID: `source-56k-moss-landing-go167-corrective-action-2025`; profile last_checked_date: 2026-07-25; exact profile SHA-256: `e1f20c48503a2f9c3ed4fb5929c622c27d41172c48fa7e4692049497af299d2c`.
 
-No new exact primary-artifact locator is supplied for this source by the battery correction. Independent review must confirm the relevant version and page/table/paragraph; prior internal agreement is not primary clearance.
+Supplementary review-preparation check on 2026-09-23, separate from the application notice.
+
+Locator: August 18, 2025 company response to audit GA2025-06ML: cover identity and audit dates on page 1; visible finding-status labels on pages 3-12. Findings 4 and 6 (page 4) and 17 (page 8) retain label/prose differences; finding 28 on page 12 mentions the ML300 fire impact.
+
+Finding: The visible company labels count 13 complete and 15 in progress across findings 1-28. This is an attributed label count, not adjudicated closure, regulator acceptance, a final battery-fire investigation or current operating safety.
+
+Access boundary: All twelve complete public PDF pages were visually inspected on September 23. Redactions were not reconstructed and supporting folders, later regulator dispositions and operating records were not inspected.
+
+[Exact label/page ledger](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-moss-landing-status-observations.json>) and [retained PDF](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/annual-moss-landing-source-review-2026-09-23/mlpp-vistra-response-20250818.pdf>), SHA-256 `483da0ba546321f01b8ed87630027fca0a7953ce971e305793c9384fb4542c6d`. No human reviewer finding or acceptance is supplied.
 
 ### Victorian Big Battery Fire: Technical Findings
 
@@ -188,7 +210,15 @@ Retained finding: The official index supplies the September 28, 2021 statement d
 
 Source ID: `source-ndep-rhyolite-ridge-water-permit-2025`; profile last_checked_date: 2026-07-24; exact profile SHA-256: `854449efc992d0e8922bebc6a1c9f1585156ab43ce2e5df33951c3095a28041c`.
 
-No new exact primary-artifact locator is supplied for this source by the battery correction. Independent review must confirm the relevant version and page/table/paragraph; prior internal agreement is not primary clearance.
+Retained primary inspection date: 2026-09-23.
+
+Locator: Permit NEV2020107, Renewal 2025, Revision 00: project identity on PDF page 1; Schedule of Compliance I.B on page 2; monitoring I.D beginning on page 3; reporting II.B on pages 14-16.
+
+Access boundary: The public 21-page PDF was downloaded on September 23, 2026 and only pages 1-3 and 14-16 were visually inspected. The signature was not authenticated. Later versions, compliance records, inspection outcomes and current operating status were not checked; no whole-document review or independent article acceptance is claimed.
+
+Retained finding: The instrument identifies Rhyolite Ridge rather than Thacker Pass. It sets notice, inspection-arrangement, monitoring and reporting requirements; schedule items require written Division approval before completion. Requirements are not evidence that activities began, inspections passed or violations occurred.
+
+[Retained PDF](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/annual-nevada-source-review-2026-09-23/rhyolite-ridge-nev2020107.pdf>), SHA-256 `59e57f2cd151af476c0a7f6b1ca8534028be8c4b7c7c6767148b3819834152be`. Retained visual pages: 1, 2, 3, 14, 15 and 16. This worksheet does not repeat that inspection or supply independent acceptance.
 
 ## Claim-level review prompts
 
@@ -204,7 +234,7 @@ Source IDs: `source-56k-moss-landing-go167-corrective-action-2025`.
 
 Question: Find the exact 13-of-28 complete and 15-in-progress positions in the company response. Verify issuer, affected conventional-plant equipment and distinction from the January 2025 battery-fire investigation.
 
-Boundary: Internal comparison with an earlier signal is not primary review or regulator closure. No new exact PDF locator or current safety determination is claimed.
+Boundary: The September 23 public-PDF check supplies exact label/page observations and preserves status/prose differences in findings 4, 6 and 17. Independently verify the company attribution and count; attachments, later regulator closure and current safety remain unverified.
 
 - Finding (supported as written / needs qualification / unsupported / unresolved / outside expertise):
 - Exact artifact version and locator actually inspected:
@@ -255,13 +285,13 @@ Boundary: No fresh USGS/DOE retrieval or numerical reconstruction is performed h
 
 Current section 4, paragraph 2:
 
-> The Nevada permit case does identify pre-operation inspection, monitoring and reporting requirements. Such conditions can guide future evidence collection without implying a violation. A requirement and a finding of noncompliance are different statements. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.
+> Separately, Rhyolite Ridge is the project covered by Nevada water pollution control permit NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass. Its schedule specifies pre-operation notice and inspection arrangements, and its monitoring and reporting provisions guide later evidence collection. Schedule items require written Division approval before they count as completed. These requirements do not establish that operations began, an inspection passed or a violation occurred. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.
 
 Source IDs: `source-ndep-rhyolite-ridge-water-permit-2025`.
 
-Question: Identify the exact Nevada permit/project and pre-operation conditions. Does adjacency to the Thacker Pass paragraph risk misattributing Rhyolite Ridge's permit requirements?
+Question: Verify the explicit Rhyolite Ridge/Thacker Pass distinction, exact permit version and located notice, inspection-arrangement, monitoring, reporting and written-approval requirements. Does the revised paragraph stay within what these clauses establish?
 
-Boundary: The source ID identifies Rhyolite Ridge permit NEV2020107. Review the primary instrument and exact clauses; do not infer a violation, accepted compliance or a different project's permit.
+Boundary: The September 23 visual inspection covers only PDF pages 1-3 and 14-16. Independently assess the cited clauses; no completed conditions, passed inspection, current operation, violation or later permit status is established.
 
 - Finding (supported as written / needs qualification / unsupported / unresolved / outside expertise):
 - Exact artifact version and locator actually inspected:

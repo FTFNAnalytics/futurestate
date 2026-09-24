@@ -23,7 +23,19 @@ Full logged sequence: [2026-09-24T00-44-26.900Z-pN3j9F](<C:/Users/justi/OneDrive
 
 The refreshed [reachability inventory](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reachability-summary.json>) completed: all 16,639 application pages are reachable from the selected 33, with 25 linked HTML downloads kept separate and zero unresolved application anchor targets. This is not a 33-page isolated release or claim clearance.
 
-Next handoff: recover the exact scoped source checkpoint, then refresh the annual/subject-review and reader-study bindings. Until refreshed, their existing bindings identify the preceding candidate, not this change. The supplementary [Moss Landing primary check](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-moss-landing-source-review-2026-09-23.md>) will be identified separately from the six source checks embedded in the application notices. Actual reviewer fields, participant attempts and acceptance remain unset.
+## Recovery and review handoff
+
+Exact [archive recovery](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/outputs/release-checkpoints/2026-09-24T01-08-08.679Z-N8pzfi/git-recovery-verification.json>) passed at September 24 01:09:45.056 UTC for source commit `4c13b7d53e74d0ef70e15b73f7d3606df40f0536`: 9,576 files and 220,430,845 bytes. The source manifest, Git blobs, recovered bytes, candidate, receipt and unchanged lockfile agree. This is exact changed-source recovery, not another fresh dependency installation; the earlier clean-install proof applies specifically to `be59f801`, and final release reproduction remains required.
+
+The later review-binding refresh now points to that actual recovery:
+
+- Annual packet: four annual assignments, two paired presentations, twenty-one prompts, seventeen source-profile pins, four captured PDFs and seven supporting report/observation pins. Six application source checks remain distinct from the separate supplementary [Moss Landing primary check](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/annual-moss-landing-source-review-2026-09-23.md>). Original/current snapshots and four preceding reviews are preserved; eighteen invalid fixtures are rejected.
+- First-four-answer packet: unchanged articles and fourteen claims, refreshed candidate/recovery links, twelve invalid fixtures rejected.
+- Reader protocol: five version-bound tasks and two format pages; the changes task now uses the Nevada correction. The five-reader and four-successes-on-each-task requirements are unchanged, and all twenty-five attempts and five accessibility checks remain unperformed.
+
+All three local preparation verifiers passed. An initial annual-packet check caught a patch-placement error between duplicated original/current text; only packet data was repaired, and exact source-snapshot checks then passed. Application and recovered source bytes were not changed by that repair. The refreshed materials postdate `4c13b7d5` and are not claimed to be inside it; their subsequent documentation checkpoint is separate.
+
+No people were appointed or contacted. Actual reviewer fields, participant attempts, language/portfolio/backlog decisions and acceptance remain unset. The next substantive handoff is to the actual reviewers and owner decision-makers, alongside remaining bounded source/wording work; another preparation packet is not a substitute for a return.
 
 ## Scope still open
 
