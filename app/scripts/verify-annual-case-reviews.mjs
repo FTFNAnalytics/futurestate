@@ -3,7 +3,7 @@ import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
 import {parse} from 'parse5';
-import {annualCaseReviews, annualReviewContexts, annualCaseOverview, annualCaseTitle, annualReviewDate} from '../src/lib/annual-case-reviews.mjs';
+import {annualCaseReviews, annualReviewContexts, annualCaseOverview, annualCaseTitle, annualReviewDate, annualReviewVersions} from '../src/lib/annual-case-reviews.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 import history from '../src/data/phase-204-reader-completion.json' with {type:'json'};
 import originalReport from '../src/data/phase-203-state-of-future-systems-2026.json' with {type:'json'};
@@ -37,8 +37,17 @@ for (const article of history.records) {
   assert.equal(originals.length,review?.title_replacement?1:0);
   if(review?.title_replacement){revisedTitles++;assert(text(originals[0]).includes(article.title));assert(text(originals[0]).includes(review.title_replacement.reason));}
   const priors=all(dom,n=>attr(n,'data-annual-prior-review')!==undefined);
-  assert.equal(priors.length,review?.previous_review?1:0);
-  if(review?.previous_review){previousReviews++;assert(text(priors[0]).includes(review.previous_review.summary));assert(links(priors[0]).includes('/updates/'+review.previous_review.update_id+'/'));}
+  const earlierReviews=annualReviewVersions(review).slice(0,-1);
+  assert.equal(priors.length,earlierReviews.length);
+  for(const [index,prior] of earlierReviews.entries()){
+    previousReviews++;
+    assert.equal(attr(priors[index],'data-annual-prior-review'),article.record_id);
+    assert.equal(attr(priors[index],'data-annual-prior-update'),prior.update_id??annualCaseReviews.update_id);
+    assert(text(priors[index]).includes(prior.summary));
+    assert(text(priors[index]).includes('Earlier editorial review · '+annualReviewDate(prior)));
+    assert(text(priors[index]).includes('not the current wording'));
+    assert(links(priors[index]).includes('/updates/'+(prior.update_id??annualCaseReviews.update_id)+'/'));
+  }
   const [hero] = all(dom, n => n.tagName === 'header' && (attr(n, 'class') ?? '').split(' ').includes('review-hero'));
   assert(hero, `Missing reader header ${route}`);
   const [lede] = all(hero, n => n.tagName === 'p' && (attr(n, 'class') ?? '').split(' ').includes('lede'));
@@ -175,15 +184,15 @@ for (const article of history.records) {
     assert(text(target).includes(context.summary), `Destination omits retained finding ${context.id}`);
   }
 }
-assert.equal(totalNotices, 28); assert.equal(revisedParagraphs, 47); assert.equal(revisedOverviews, 6); assert.equal(revisedTitles,1); assert.equal(previousReviews,4); assert.equal(revisedHeadings, 1);
+assert.equal(totalNotices, 28); assert.equal(revisedParagraphs, 49); assert.equal(revisedOverviews, 6); assert.equal(revisedTitles,1); assert.equal(previousReviews,6); assert.equal(revisedHeadings, 1);
 assert.deepEqual(JSON.parse(await read(annualCaseReviews.export_route)), annualCaseReviews);
 assert.deepEqual(JSON.parse(await read('/data/phase-204-reader-completion.json')), history);
 assert.deepEqual(JSON.parse(await read('/data/reader-catalog.json')).records, readerCatalog);
 assert(links(parse(await read('/data/index.html'))).includes(annualCaseReviews.export_route));
-const reviewVersions=annualCaseReviews.records.flatMap(r=>r.previous_review?[r.previous_review,r]:[r]);
+const reviewVersions=annualCaseReviews.records.flatMap(annualReviewVersions);
 for (const updateId of new Set(reviewVersions.map(r => r.update_id ?? annualCaseReviews.update_id))) {
   const update = parse(await read(`/updates/${updateId}/index.html`));
   assert(links(update).includes(annualCaseReviews.export_route));
   for (const r of reviewVersions.filter(r => (r.update_id ?? annualCaseReviews.update_id) === updateId)) assert(links(update).includes(r.route));
 }
-console.log('Annual output verified across all 104 original reader routes: 28 scoped notices, 1 current title, 6 current overviews, 47 current paragraphs, 1 heading with stable anchors, inspectable originals, exact source/receipt links, per-record catalog dates, three explicit additional source checks, retained/new primary check dates including Rhyolite Ridge permit identity, exact formal-instrument and case links, local provenance links and matching dated updates/export, current reference-hub cards and four preserved preceding review records. No browser, independent or release approval claimed.');
+console.log('Annual output verified across all 104 original reader routes: 28 scoped notices, 1 current title, 6 current overviews, 49 current paragraphs, 1 heading with stable anchors, inspectable originals, exact source/receipt links, per-record catalog dates, three explicit additional source checks, market-registration/reserve-service distinction and retained Rhyolite Ridge permit identity, exact formal-instrument and case links, local provenance links and matching dated updates/export, current reference-hub cards and six preserved preceding review records. No browser, independent or release approval claimed.');

@@ -39,7 +39,7 @@ function validate(p){
   const profileIds=new Set(p.source_profiles.map(s=>s.id));
   const checkIds=new Set(p.reading_snapshots.flatMap(r=>r.review_snapshot.source_checks.map(s=>s.source_id)));
   const contextIds=new Set(p.reading_snapshots.flatMap(r=>r.retained_contexts.map(s=>s.id)));
-  assert.equal(checkIds.size,6,'Five located battery checks and the Nevada permit check');
+  assert.equal(checkIds.size,6,'Six distinct sources; the two paired-reading AEMO checks reuse existing source identities');
   assert.equal(contextIds.size,1,'One retained SLF context');
   assert.equal(p.supplemental_source_checks.length,1);
   const moss=p.supplemental_source_checks[0];
@@ -84,13 +84,21 @@ function validate(p){
     assert.equal(a.current_reading.overview,b.current_reading.overview,'Paired overview');
     assert.equal(pair.same_sections,true);assert.equal(pair.same_overview,true);
   }
+  let precedingReviews=0;
   for(const id of ['203-SYNTHESIS-08','200-MONOGRAPH-08','203-SYNTHESIS-10','200-MONOGRAPH-10']){
     const r=p.reading_snapshots.find(r=>r.id===id);
     assert(r.review_snapshot.previous_review,'Earlier review is required');
-    for(const change of r.review_snapshot.previous_review.replacements){
-      assert.equal(r.current_reading.sections.find(s=>s.heading===change.section_heading).paragraphs[change.paragraph_index],change.replacement_text,'Earlier correction retained');
+    const versions=annual.annualReviewVersions(r.review_snapshot);
+    assert.equal(versions.length,id.endsWith('-10')?3:2);
+    precedingReviews+=versions.length-1;
+    for(const prior of versions.slice(0,-1))for(const change of prior.replacements){
+      const latest=r.review_snapshot.replacements.find(c=>c.section_heading===change.section_heading&&c.paragraph_index===change.paragraph_index);
+      assert(latest,'Prior correction anchor remains represented');
+      assert.equal(latest.original_text,change.original_text,'Original correction target retained');
+      assert.equal(r.current_reading.sections.find(s=>s.heading===change.section_heading).paragraphs[change.paragraph_index],latest.replacement_text,'Latest wording supersedes the exact retained historical version');
     }
   }
+  assert.equal(precedingReviews,6);
   for(const assignment of p.assignments){
     assert.equal(assignment.paired_essay_id,p.paired_readings.find(r=>r.annual_id===assignment.annual_id)?.essay_id??null);
     assert.deepEqual(assignment.reviewer,{name:null,expertise:null,conflicts:null,review_date:null,contact_authorized:false});
@@ -129,6 +137,10 @@ const mutations=[
   p=>p.reading_snapshots[5].review_snapshot.source_checks[0].primary_checked_date='2026-09-22',
   p=>p.supplemental_source_checks[0].primary_checked_date='2026-09-22',
   p=>p.supplemental_source_checks[0].visually_checked_pages.pop(),
+  p=>delete p.reading_snapshots[4].review_snapshot.previous_review.previous_review,
+  p=>p.reading_snapshots[5].review_snapshot.previous_review.previous_review.summary='lost history',
+  p=>p.reading_snapshots[4].review_snapshot.source_checks[1].source_id='wrong-source',
+  p=>p.reading_snapshots[5].review_snapshot.source_checks[2].primary_checked_date='2026-09-22',
 ];
 for(const mutate of mutations){const fixture=structuredClone(packet);mutate(fixture);assert.throws(()=>validate(fixture));}
 for(const profile of packet.source_profiles){
@@ -168,4 +180,4 @@ assert.equal(recovery.commit,packet.candidate_binding.source_commit);
 assert.equal(recovery.candidate_digest,digest.digest);assert.equal(recovery.validation_receipt,packet.candidate_binding.validation_receipt);
 const recoveredDigest=await computeV1refCandidateDigest({appRoot:join(recovery.recovered_directory,'app')});
 assert.equal(recoveredDigest.digest,digest.digest,'Recovered application candidate');
-console.log(`Annual packet verified: four annual records, two paired essays, 21 exact paragraph prompts, 17 source profiles, four retained PDF byte pins, six application source checks plus one separate supplementary check, four preserved preceding reviews and terminal/recovered candidate bindings; ${mutations.length} negative fixtures rejected. Zero independent returns, contacts or approvals.`);
+console.log(`Annual packet verified: four annual records, two paired essays, 21 exact paragraph prompts, 17 source profiles, four retained PDF byte pins, six distinct application source identities plus one separate supplementary check, six preserved preceding reviews and terminal/recovered candidate bindings; ${mutations.length} negative fixtures rejected. Zero independent returns, contacts or approvals.`);

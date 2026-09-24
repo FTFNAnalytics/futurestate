@@ -82,6 +82,7 @@ const integrationFiles = [
   'src/content/updates/2026-09-23-annual-locators-acceptance-boundaries.json',
   'src/content/updates/2026-09-23-annual-battery-chronology.json',
   'src/content/updates/2026-09-23-annual-nevada-permit-identity.json',
+  'src/content/updates/2026-09-23-annual-battery-registration-reserve.json',
   "src/data/golden-mars-briefing-review.json",
   "src/lib/golden-mars-briefing-review.mjs",
   "src/components/review/GoldenMarsBriefingNotice.astro",

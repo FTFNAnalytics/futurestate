@@ -3,7 +3,7 @@ import {readFile, readdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
-import {annualCaseReviews, annualCaseReview, applyAnnualCaseReview, annualReviewContexts, annualCaseOverview, annualCaseTitle, annualReviewDate} from '../src/lib/annual-case-reviews.mjs';
+import {annualCaseReviews, annualCaseReview, applyAnnualCaseReview, annualReviewContexts, annualCaseOverview, annualCaseTitle, annualReviewDate, annualReviewVersions} from '../src/lib/annual-case-reviews.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 import {searchReaders} from '../src/lib/reader-search.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -77,20 +77,23 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
   const earlier = data.records.slice(0,24).map(r=>r.previous_review??r);
   assert.equal(hash(JSON.stringify(earlier)),'26a10cf4779189fc6f400c4bbdc68891aa3375cb339cc1139440448c6f4661b0','All prior 24 review versions must survive');
   assert.deepEqual(data.records.filter(r=>r.previous_review).map(r=>r.record_id),[...revisedBatteryIds,...nevadaIds]);
-  const beforeNevada = data.records.map(r=>nevadaIds.includes(r.record_id)?r.previous_review:r);
+  const beforeRegistration = data.records.map(r=>nevadaIds.includes(r.record_id)?r.previous_review:r);
+  assert.equal(hash(JSON.stringify(beforeRegistration)),'279f8656b2cb398ba28d5e09622953faf0c98710ca18d490c5bc04709a165cbc','All preceding Nevada-candidate reviews must survive exactly');
+  const beforeNevada = beforeRegistration.map(r=>nevadaIds.includes(r.record_id)?r.previous_review:r);
   assert.equal(hash(JSON.stringify(beforeNevada)),'321c7d376bc49171c9d78c95c4dec234e15212d78f491be775e33e687056c564','All preceding 28 review records must survive exactly');
   assert.equal(hash(JSON.stringify(beforeNevada.filter(r=>batteryIds.includes(r.record_id)))),'e6d937131c4fbb3209128dc37a80c9a915361428439809cceba1d3543abd527d','Scoped battery declaration drift');
-  assert.equal(hash(JSON.stringify(data.records.filter(r=>nevadaIds.includes(r.record_id)))),'1e3b3cc50653ce98a72dc0a598ecaeb360e53ba79c1345dea3f3a13fd3807edb','Scoped Nevada identity declaration drift');
+  assert.equal(hash(JSON.stringify(beforeRegistration.filter(r=>nevadaIds.includes(r.record_id)))),'1e3b3cc50653ce98a72dc0a598ecaeb360e53ba79c1345dea3f3a13fd3807edb','Scoped Nevada identity declaration drift');
+  assert.equal(hash(JSON.stringify(data.records.filter(r=>nevadaIds.includes(r.record_id)))),'4be2d7e3dbd23dfaa5c7b97f5efd7ec3fc2cb441f316b054535c896f5241a932','Scoped registration/reserve declaration drift');
   for (const r of data.records.filter(r=>r.previous_review)) {
-    assert(!r.previous_review.previous_review,'Only the exact preceding review is expected');
-    assert.deepEqual(r.replacements[0],r.previous_review.replacements[0],'Earlier Space Coast correction lost');
+    assert.equal(annualReviewVersions(r).length,nevadaIds.includes(r.record_id)?3:2,'Complete preceding review chain required');
+    if (!nevadaIds.includes(r.record_id)) assert.deepEqual(r.replacements[0],r.previous_review.replacements[0],'Earlier Space Coast correction lost');
     assert.deepEqual(r.retained_contexts,r.previous_review.retained_contexts,'Earlier renewal context lost');
   }
   assert.equal(hash(JSON.stringify(earlier.slice(0, 7))), '054c81854e26fe58f786b24050984d4b3e5ce34ca746b7a1a0453863cff1ab69', 'Earlier seven reviews changed');
   assert.equal(hash(JSON.stringify(earlier.slice(0, 11))), '4cf9116132695d46acc0e382bbd16f994ba7618e8c9c195603f2cb4a4a5a9c5c', 'Earlier eleven reviews changed');
   assert.equal(hash(JSON.stringify(earlier.slice(0, 15))), 'ca8db6563e3b2761aa22c5b422b38a09dda18536f3a81b4e1ee1dcccc11a27e8', 'Earlier fifteen reviews changed');
   assert.equal(hash(JSON.stringify(earlier.slice(0,19))), '8d9e4834f69e92d95ddeef6a81afd6f65c4b752a9e9cdd94ca737188b45f97d8', 'Earlier nineteen reviews changed');
-  assert.equal(data.records.reduce((n, r) => n + r.replacements.length, 0), 47);
+  assert.equal(data.records.reduce((n, r) => n + r.replacements.length, 0), 49);
   assert.equal(data.records.filter(r => r.overview_replacement).length, 6);
   assert.equal(data.records.reduce((n, r) => n + (r.heading_replacements?.length ?? 0), 0), 1);
   for (const r of data.records) {
@@ -101,16 +104,28 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
     assert.equal(r.approval_receipt_id, null);
     assert.equal(r.review_date, laterIds.includes(r.record_id) ? '2026-09-23' : undefined);
     if (nevadaIds.includes(r.record_id)) {
-      assert.equal(r.update_id,'update-2026-09-23-annual-nevada-permit-identity');
-      assert.deepEqual(r.replacements.slice(0,-1),r.previous_review.replacements,'Battery wording corrections must remain intact');
+      assert.equal(r.update_id,'update-2026-09-23-annual-battery-registration-reserve');
+      assert.deepEqual(r.replacements.slice(1,3),r.previous_review.replacements.slice(1),'Nevada and unaffected naming correction must remain intact');
       assert.deepEqual(r.overview_replacement,r.previous_review.overview_replacement);
-      assert.equal(r.replacements.length,3);
-      const change=r.replacements.at(-1);
+      assert.deepEqual(r.related_readings,r.previous_review.related_readings);
+      assert.equal(r.replacements.length,4);
+      assert.equal(r.replacements[0].original_text,r.previous_review.replacements[0].original_text);
+      assert(r.replacements[0].replacement_text.includes('National Electricity Market (NEM)'));
+      assert(r.replacements[0].replacement_text.includes('separately contracted System Integrity Protection Scheme (SIPS) service'));
+      assert(!r.replacements[0].replacement_text.includes('protection-scheme registration'));
+      assert.equal(r.replacements[3].paragraph_index,1);
+      assert.equal(r.replacements[3].section_heading,r.replacements[0].section_heading);
+      assert(r.replacements[3].replacement_text.includes('neither announcement provides a later annual availability, dispatch or cycling series'));
+      const nevada=r.previous_review;
+      assert.equal(nevada.update_id,'update-2026-09-23-annual-nevada-permit-identity');
+      assert.deepEqual(nevada.replacements.slice(0,-1),nevada.previous_review.replacements,'Earlier battery review must remain exact');
+      const change=nevada.replacements.at(-1);
       assert(change.original_text.startsWith('The Nevada permit case does identify'));
       assert(change.replacement_text.includes('NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass'));
       assert(change.replacement_text.includes('do not establish that operations began, an inspection passed or a violation occurred'));
-      assert.equal(r.source_checks.length,1);
+      assert.equal(r.source_checks.length,3);
       const check=r.source_checks[0];
+      assert.deepEqual(check,nevada.source_checks[0],'No fresh Nevada inspection claimed');
       assert.equal(hash(JSON.stringify(check)),'ecc27be06ebdd8ebdb6029719b3602b0030339a82d925901a7a5d48b5f1001bf');
       assert.equal(check.source_id,nevadaSourceId);
       assert.equal(check.source_profile_sha256,nevadaProfilePin);
@@ -118,6 +133,14 @@ function assertBindings(data, history = pack, operations = ops, decisions = evid
       assert.equal(check.captured_sha256,'59e57f2cd151af476c0a7f6b1ca8534028be8c4b7c7c6767148b3819834152be');
       assert.deepEqual(check.visually_checked_pages,[1,2,3,14,15,16]);
       assert(!check.additional_source&&!check.retained_checked_date&&!check.checked_date);
+      const aemo=r.source_checks.slice(1);
+      assert.equal(hash(JSON.stringify(aemo)),'9b7589a8a97a3e327c16fa39a48a0356de042ceba276aa846bb12d8914586d6d');
+      assert.deepEqual(aemo.map(c=>c.source_id),['source-56e-vbb-aemo-registration-2021','source-56e-vbb-aemo-operational-2021']);
+      for(const c of aemo){
+        assert.equal(c.source_profile_sha256,batteryProfilePins.get(c.source_id));
+        assert.equal(c.primary_checked_date,'2026-09-23');
+        assert(!c.captured_sha256&&!c.additional_source&&!c.retained_checked_date&&!c.checked_date);
+      }
     }
     if (pairedIds.includes(r.record_id)) {
       assert.equal(r.update_id, 'update-2026-09-23-annual-golden-mars-paired-readings');
@@ -364,6 +387,14 @@ for (const mutate of [
   d => { d.records[27].source_checks[0].primary_checked_date = '2026-09-22'; },
   d => { d.records[27].replacements.at(-1).replacement_text = 'Thacker Pass has completed every permit requirement.'; },
   d => { d.records[26].update_id = 'update-2026-09-23-annual-battery-chronology'; },
+  d => { delete d.records[26].previous_review.previous_review; },
+  d => { d.records[27].previous_review.previous_review.summary = 'lost earliest review'; },
+  d => { d.records[26].replacements[0].replacement_text = 'Protection-scheme registration proves safe operation.'; },
+  d => { d.records[27].replacements[3].paragraph_index = 0; },
+  d => { d.records[26].source_checks[1].source_id = d.records[26].source_checks[2].source_id; },
+  d => { d.records[27].source_checks[2].captured_sha256 = '0'.repeat(64); },
+  d => { d.records[26].source_checks[1].primary_checked_date = '2026-09-22'; },
+  d => { d.records[27].source_checks[2].finding = 'Every corrective action is closed.'; },
 ]) {
   const changed = structuredClone(annualCaseReviews); mutate(changed);
   assert.throws(() => assertBindings(changed));
@@ -417,7 +448,7 @@ for (const a of pack.records) {
     } else assert(!context.formal_artifact,'Unexpected formal-artifact projection');
   }
 }
-assert.equal(notices, 28); assert.equal(changedBodies, 24); assert.equal(changedParagraphs, 47); assert.equal(changedOverviews, 6); assert.equal(changedHeadings, 1);
+assert.equal(notices, 28); assert.equal(changedBodies, 24); assert.equal(changedParagraphs, 49); assert.equal(changedOverviews, 6); assert.equal(changedHeadings, 1);
 for (const suffix of ['01', '03', '04', '06', '08', '10', '11']) {
   const [report, essay] = [`203-SYNTHESIS-${suffix}`, `200-MONOGRAPH-${suffix}`].map(id => pack.records.find(a => a.record_id === id));
   assert.deepEqual(applyAnnualCaseReview(report).sections, applyAnnualCaseReview(essay).sections, 'Paired current readings diverged');
@@ -434,8 +465,28 @@ assert.throws(() => annualReviewContexts({...annualCaseReviews.records[0], retai
 assert.throws(() => annualReviewContexts({...annualCaseReviews.records[3], retained_contexts:[{collection:'evidence_receipts', id:'missing'}]}), /Invalid retained/);
 assert.throws(() => annualReviewContexts({...annualCaseReviews.records[3], retained_contexts:[{collection:'unknown', id:'missing'}]}), /Invalid retained/);
 assert.equal(JSON.stringify({pack, ops, evidence, reviews:annualCaseReviews}), before);
-const reviewVersions=annualCaseReviews.records.flatMap(r=>r.previous_review?[r.previous_review,r]:[r]);
-assert.equal(reviewVersions.length,32);
+const reviewVersions=annualCaseReviews.records.flatMap(annualReviewVersions);
+assert.equal(reviewVersions.length,34);
+assert.deepEqual(annualReviewVersions(null),[]);
+assert.deepEqual(annualReviewVersions(undefined),[]);
+const historyRecord=annualCaseReviews.records.find(r=>r.record_id===nevadaIds[0]);
+assert.deepEqual(annualReviewVersions(historyRecord).map(r=>r.update_id),[
+  'update-2026-09-23-annual-battery-chronology',
+  'update-2026-09-23-annual-nevada-permit-identity',
+  'update-2026-09-23-annual-battery-registration-reserve'
+]);
+for(const mutate of [
+  r=>{r.previous_review.previous_review=r;},
+  r=>{r.previous_review.update_id=r.update_id;},
+  r=>{r.previous_review.record_id='wrong-record';},
+  r=>{r.previous_review.route='/wrong/';},
+  r=>{r.previous_review.source_record_sha256='0'.repeat(64);},
+  r=>{r.previous_review.review_date='2026-09-24';},
+  r=>{r.previous_review.previous_review.review_date='2026-02-30';}
+]) {
+  const malformed=structuredClone(historyRecord);mutate(malformed);
+  assert.throws(()=>annualReviewVersions(malformed),/annual review history|Annual review history/);
+}
 assert.equal(annualCaseReviews.records.filter(r=>r.title_replacement).length,1);
 assert(searchReaders(readerCatalog,'Victorian Big Battery').some(r=>r.id==='203-CASE-13'));
 assert(!readerCatalog.some(r=>r.id==='203-CASE-13'&&r.title.includes('Victoria Big Battery')));
@@ -449,4 +500,4 @@ for (const updateId of new Set(reviewVersions.map(r => r.update_id ?? annualCase
   }
 }
 assert.equal(ops.governed_series_admitted, 0);
-console.log('Annual source checks passed: 28 exact notices, 1 current title, 6 current overviews, 47 changed paragraphs, 1 heading, 80 unchanged bodies; scoped Rhyolite Ridge permit identity with primary PDF locators, three explicitly additional sources, 58-row lineage proof and retained source checks; all seven changed/noticed synthesis pairs agree, all 28 preceding review versions remain exact, including four inspectable preceding reviews. Original records, source/receipt bindings and approval/measurement holds preserved.');
+console.log('Annual source checks passed: 28 exact notices, 1 current title, 6 current overviews, 49 changed paragraphs, 1 heading, 80 unchanged bodies; scoped market-registration/reserve-service distinction, retained Rhyolite Ridge permit identity, three explicitly additional sources and 58-row lineage proof; all seven changed/noticed synthesis pairs agree, all preceding Nevada-candidate records remain exact, including six inspectable preceding reviews. History cycle/identity/date fixtures rejected. Original records, source/receipt bindings and approval/measurement holds preserved.');

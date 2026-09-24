@@ -1,19 +1,20 @@
 ---
-import {annualCaseReviews, annualReviewContexts, annualReviewDate} from '../../lib/annual-case-reviews.mjs';
+import {annualCaseReviews, annualReviewContexts, annualReviewDate, annualReviewVersions} from '../../lib/annual-case-reviews.mjs';
 interface Props { review: typeof annualCaseReviews.records[number]; }
 const {review} = Astro.props;
 const contexts = annualReviewContexts(review);
+const earlierReviews = annualReviewVersions(review).slice(0, -1);
 ---
 <aside aria-label="Dated annual-case editorial review" data-annual-case-review={review.record_id}>
   <h2>Editorial clarification and source context · {annualReviewDate(review)}</h2>
   <p>{review.summary}</p>
   <p>{annualCaseReviews.boundary}</p>
-  {'previous_review' in review && review.previous_review && <details data-annual-prior-review={review.record_id}>
-    <summary>Earlier editorial review · {review.previous_review.review_date}</summary>
-    <p>{review.previous_review.summary}</p>
-    <p>The earlier correction remains in the current reading. Its complete review record is retained in the dated changes export.</p>
-    <p><a href={`/updates/${review.previous_review.update_id}/`}>Earlier dated change record</a></p>
-  </details>}
+  {earlierReviews.map(prior => <details data-annual-prior-review={review.record_id} data-annual-prior-update={prior.update_id ?? annualCaseReviews.update_id}>
+    <summary>Earlier editorial review · {annualReviewDate(prior)}</summary>
+    <p>{prior.summary}</p>
+    <p>This is an earlier review, not the current wording. Its complete record is retained in the dated changes export; the current clarification above explains subsequent changes.</p>
+    <p><a href={`/updates/${prior.update_id ?? annualCaseReviews.update_id}/`}>Earlier dated change record</a></p>
+  </details>)}
   {review.title_replacement && <details data-annual-original-title={review.record_id}>
     <summary>Earlier title</summary>
     <p>{review.title_replacement.original_text}</p><p><strong>Reason for clarification:</strong> {review.title_replacement.reason}</p>

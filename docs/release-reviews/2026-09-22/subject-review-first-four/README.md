@@ -1,5 +1,7 @@
 # First four independent subject reviews
 
+Version refresh pending: the application now includes the registration/reserve clarification, but this packet still pins the preceding candidate. Do not use it to approve the changed version; refreshed bindings require terminal validation and exact source recovery.
+
 Prepared September 23, 2026. Four exact-version worksheets, fourteen claim prompts, zero reviewer appointments, zero contacts and zero independent decisions. These materials organize retained evidence; they do not refresh sources or clear claims.
 
 ## Review queue

@@ -1,5 +1,7 @@
 # Annual battery review packet
 
+Version refresh pending: the application now includes the registration/reserve clarification, but this packet still pins the preceding candidate. Do not use it to approve the changed version; refreshed bindings require terminal validation and exact source recovery.
+
 Prepared September 23, 2026: **four annual records, two paired essay presentations, twenty-one claim prompts, zero independent acceptances and zero contacts**. This is a bounded first review batch within the full 58-record annual edition, not completion of that edition.
 
 ## Review order

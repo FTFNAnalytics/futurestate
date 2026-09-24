@@ -4,8 +4,30 @@ import operations from '../data/phase-207-current-operations.json' with {type:'j
 import evidence from '../data/phase-60-current-decisions.json' with {type:'json'};
 
 export const annualCaseReviews = reviews;
-/** @param {typeof reviews.records[number] | null | undefined} review */
+/** @param {{review_date?:string} | null | undefined} review */
 export const annualReviewDate = review => review?.review_date ?? reviews.review_date;
+/**
+ * @typedef {{record_id:string, route:string, source_record_sha256:string, review_date?:string, update_id?:string, summary:string, previous_review?:AnnualReviewVersion}} AnnualReviewVersion
+ */
+/** Return every retained version, oldest first, without changing the records.
+ * @param {AnnualReviewVersion | null | undefined} review
+ * @returns {AnnualReviewVersion[]}
+ */
+export function annualReviewVersions(review) {
+  if (!review) return [];
+  const versions = [], seen = new Set(), updates = new Set();
+  let current = review, laterDate = null;
+  while (current) {
+    const update = current.update_id ?? reviews.update_id;
+    if (seen.has(current) || updates.has(update)) throw Error('Repeated annual review history');
+    if (current.record_id !== review.record_id || current.route !== review.route || current.source_record_sha256 !== review.source_record_sha256) throw Error('Annual review history identity drift');
+    const date = annualReviewDate(current), parsed = new Date(`${date}T00:00:00Z`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !Number.isFinite(parsed.valueOf()) || parsed.toISOString().slice(0, 10) !== date || (laterDate && date > laterDate)) throw Error('Invalid annual review history date');
+    seen.add(current); updates.add(update); versions.unshift(current);
+    laterDate = date; current = current.previous_review;
+  }
+  return versions;
+}
 /** @param {string} id */
 export function annualCaseReviewForId(id) { return reviews.records.find(r => r.record_id === id) ?? null; }
 /**
