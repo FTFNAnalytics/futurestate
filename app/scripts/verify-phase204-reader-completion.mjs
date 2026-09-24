@@ -51,7 +51,7 @@ for(const article of pack.records){
 }
 const operating=await json('dist/data/operating-cycle.json');
 assert.equal(operating.records.length,13);
-assert.equal(operating.records.filter(r=>r.current_state.decision_date&&r.current_state.receipt_id).length,9);
+assert.equal(operating.records.filter(r=>r.current_state.decision_date&&r.current_state.receipt_id).length,10);
 const exportNames=[['queue','evidence-queue.json'],['envelope','evidence-return-envelopes.json'],['desk','phase-60c-editorial-desk.json']];
 for(const receipt of currentEvidenceLedger.receipts){
  for(const route of receipt.affected_routes){

@@ -1755,8 +1755,8 @@ check(
 const evidenceCycleIndexHtml = await readText(routeToHtml("/review/evidence-cycle/"));
 const starlinkEvidenceCycleHtml = await readText(routeToHtml("/review/evidence-cycle/louisiana-starlink-adoption/"));
 check(
-  evidenceCycleIndexHtml.includes("9</strong><span>dated decisions") && evidenceCycleIndexHtml.includes("4</strong><span>scheduled gates"),
-  "The Evidence Cycle index must project nine current decisions and four scheduled gates without counting the SLF companion as a fourteenth gate or rewriting prior receipts.",
+  evidenceCycleIndexHtml.includes("10</strong><span>dated decisions") && evidenceCycleIndexHtml.includes("3</strong><span>scheduled gates"),
+  "The Evidence Cycle index must project ten current decisions and three scheduled gates without counting the SLF companion as a fourteenth gate or rewriting prior receipts.",
 );
 check(
   starlinkEvidenceCycleHtml.includes("receipt-60-louisiana-starlink-2026-09-01-no-material-change") &&

@@ -43,7 +43,7 @@ export const GET: APIRoute = async () => {
 
   return publicDatasetResponse(
     "evidence_return_envelopes",
-    "Thirteen public-safe return envelopes. Top-level fields preserve the September 1 baseline; current_state carries eight dated local decisions and five scheduled gates as of September 15. SLF renewal is a separate companion correction, not a qualification or operating outcome.",
+    "Thirteen public-safe return envelopes. Top-level fields preserve the September 1 baseline; current_state carries later dated decisions and future appointments under current_state_as_of. SLF renewal is a separate companion correction, not a qualification or operating outcome.",
     records
   );
 };

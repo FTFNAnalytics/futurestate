@@ -48,6 +48,9 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'scripts/content-205-216/nnsa-september-24-review.mjs',
+  'scripts/operate-september-24-nnsa-capacity.mjs',
+  'src/content/updates/2026-09-24-phase-60-nnsa-capacity-decision.json',
   'src/data/golden-mars-wider-review.json',
   'src/lib/golden-mars-wider-review.mjs',
   'src/components/review/GoldenMarsReviewNotice.astro',

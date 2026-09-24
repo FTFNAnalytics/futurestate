@@ -33,7 +33,7 @@ export const GET: APIRoute = async () => {
 
   return publicDatasetResponse(
     "operating_cycle",
-    "Thirteen gate identities. Top-level decision fields preserve the September 1 baseline; current_state carries eight dated gate decisions and five scheduled gates as of September 15. The separate SLF renewal correction does not add a fourteenth gate. Repository release remains held.",
+    "Thirteen gate identities. Top-level decision fields preserve the September 1 baseline; current_state carries later dated decisions and future appointments under current_state_as_of. The separate SLF renewal correction does not add a fourteenth gate. Repository release remains held.",
     records
   );
 };
