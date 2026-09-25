@@ -42,6 +42,22 @@ const sources = new Map(placeIdentityReview.sources.map(s => [s.key, s]));
         </div>
         <p>{followup.identifier_note}</p>
       </>}
+      {followup.source_contexts && <>
+        {followup.source_contexts.map(context => <section data-facility-source-context={context.key}>
+          <h5>{context.label}</h5>
+          <p>{context.statement}</p>
+          <p><a href={followup.sources.find(source => source.key === context.source_key)!.url}>{followup.sources.find(source => source.key === context.source_key)!.title}</a> · Physical PDF pages {context.physical_pages.join(', ')}.</p>
+        </section>)}
+        <p data-facility-discrepancy={followup.review_id}><strong>Parcel/location reconciliation:</strong> {followup.planning_discrepancy.state}.</p>
+        <p data-facility-extent-note={followup.review_id}>{followup.extent_note}</p>
+        <div class="table-wrap" role="region" tabindex="0" aria-label="Distinct source-reported solar extents">
+          <table class="matrix-table" data-facility-extents={followup.review_id}>
+            <caption>Different source extents — not verified fab or current parcel areas</caption>
+            <thead><tr><th scope="col">Extent described</th><th scope="col">Source-reported area</th><th scope="col">Physical PDF page</th></tr></thead>
+            <tbody>{followup.extent_records.map(row => <tr><th scope="row">{row.extent}</th><td>{row.source_value}</td><td>{row.physical_page}</td></tr>)}</tbody>
+          </table>
+        </div>
+      </>}
       <p><strong>Still needed after this check:</strong> {followup.next_artifact}</p>
       <p>{followup.review_state}.</p>
       <ul>{followup.sources.map(source => <li><a href={source.url}>{source.title}</a> — {source.source_date}. {source.locator} {source.access}</li>)}</ul>

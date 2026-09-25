@@ -53,7 +53,27 @@ for (const r of [...history.place_system_dossiers, ...history.comparison_overlay
       assert.equal(visible(owners[0]),`Reported owner in both rows: ${followup.municipal_records[0].reported_owner}.`);
       assert(content.includes(followup.identifier_note));
     }
+    if(followup.source_contexts){
+      const contexts=all(node,n=>attr(n,'data-facility-source-context')!==undefined);
+      assert.deepEqual(contexts.map(n=>attr(n,'data-facility-source-context')),followup.source_contexts.map(c=>c.key));
+      for(const [i,context]of followup.source_contexts.entries()){
+        const region=contexts[i];assert.equal(visible(all(region,n=>n.tagName==='h5')[0]),context.label);
+        assert(visible(region).includes(context.statement));assert(visible(region).includes(`Physical PDF pages ${context.physical_pages.join(', ')}.`));
+        assert.deepEqual(all(region,n=>n.tagName==='a').map(n=>attr(n,'href')),[followup.sources.find(s=>s.key===context.source_key).url]);
+        assert.deepEqual(all(region,n=>n.tagName==='a').map(visible),[followup.sources.find(s=>s.key===context.source_key).title]);
+      }
+      const discrepancy=all(node,n=>attr(n,'data-facility-discrepancy')===followup.review_id);assert.equal(discrepancy.length,1);
+      assert.equal(visible(discrepancy[0]),'Parcel/location reconciliation: Unresolved.');
+      const extentNote=all(node,n=>attr(n,'data-facility-extent-note')===followup.review_id);assert.equal(extentNote.length,1);assert.equal(visible(extentNote[0]),followup.extent_note);
+      const tables=all(node,n=>attr(n,'data-facility-extents')===followup.review_id);assert.equal(tables.length,1);
+      assert.deepEqual(all(tables[0],n=>n.tagName==='tr').map(tr=>all(tr,n=>['td','th'].includes(n.tagName)).map(visible)),[['Extent described','Source-reported area','Physical PDF page'],...followup.extent_records.map(row=>[row.extent,row.source_value,String(row.physical_page)])]);
+      assert.equal(visible(all(tables[0],n=>n.tagName==='caption')[0]),'Different source extents — not verified fab or current parcel areas');
+      for(const scope of ['row','col'])assert.equal(all(tables[0],n=>n.tagName==='th'&&attr(n,'scope')===scope).length,3);
+      assert.equal(attr(tables[0].parentNode,'role'),'region');assert.equal(attr(tables[0].parentNode,'tabindex'),'0');assert.equal(attr(tables[0].parentNode,'aria-label'),'Distinct source-reported solar extents');
+    }
   }
+  assert.equal(all(dom,n=>attr(n,'data-facility-extents')!==undefined).length,followups.filter(f=>f.source_contexts).length);
+  assert.equal(all(dom,n=>attr(n,'data-facility-source-context')!==undefined).length,followups.reduce((n,f)=>n+(f.source_contexts?.length??0),0));
   assert.equal(all(dom,n=>attr(n,'data-parcel-identifiers')!==undefined).length,followups.filter(f=>f.parcel_records).length);
   assert.equal(all(dom,n=>attr(n,'data-essex-municipal-identifiers')!==undefined).length,followups.filter(f=>f.municipal_records).length);
   assert.equal((html.match(/data-place-identity-notice/g) ?? []).length, 1, r.route);
@@ -77,7 +97,7 @@ for (const r of [...history.place_system_dossiers, ...history.comparison_overlay
 }
 const hub = await read(`${history.routes.hub}index.html`);
 assert.equal((hub.match(/data-place-identity-card=/g) ?? []).length, 22);
-assert.equal((hub.match(/data-place-identity-followup-card=/g) ?? []).length, 12);
+assert.equal((hub.match(/data-place-identity-followup-card=/g) ?? []).length, 16);
 for (const followup of placeIdentityReview.followups) assert(decodeHtmlText(hub).includes(followup.card_summary));
 for (const n of placeIdentityReview.records) assert(decodeHtmlText(hub).includes(n.finding));
 assert.deepEqual(JSON.parse(await read('/data/place-identity-reviews.json')), placeIdentityReview);
@@ -91,4 +111,6 @@ const parcelUpdate=decodeHtmlText(await read('/updates/update-2026-09-25-vermont
 assert(parcelUpdate.includes('Essex Town')&&parcelUpdate.includes('does not identify the fab footprint'));
 const municipalUpdate=decodeHtmlText(await read('/updates/update-2026-09-25-essex-municipal-identifiers/index.html'));
 assert(municipalUpdate.includes('April 1, 2026')&&municipalUpdate.includes('No fab footprint or current ownership is established'));
-console.log('Place identity output verified: ten preserved dossier notes, twelve related pages, three dated follow-ups on four exact readers, twelve follow-up card notices, four state-query and four distinct municipal tables with exact years/cells/periods, four updates and exact JSON; historical export unchanged. No browser, identity admission or independent accessibility acceptance claimed.');
+const facilityUpdate=decodeHtmlText(await read('/updates/update-2026-09-25-vermont-facility-geography/index.html'));
+assert(facilityUpdate.includes('discrepancy remains unresolved')&&facilityUpdate.includes('no current fab boundary is verified'));
+console.log('Place identity output verified: ten preserved dossier notes, twelve related pages, four dated follow-ups on four exact readers, sixteen follow-up card notices, exact state/municipal tables and four extent tables with sixteen located source contexts, explicit unresolved discrepancy, five updates and exact JSON; historical export unchanged. No browser, identity admission or independent accessibility acceptance claimed.');
