@@ -1,8 +1,8 @@
-# Reader acceptance session sheet — September 24 candidate refresh
+# Reader acceptance session sheet — September 25 candidate refresh
 
 Protocol only; **zero participants and zero completed tasks** are recorded. Use five actual target readers, without demonstrating solutions. Obtain permission before recording or collecting identifying details. Do not count assisted browser testing as participant evidence.
 
-The prepared application candidate is `28e5ec8b4c6d68b8b7d2ec6666088e8602a6f9cbfac384143aed4b8001c88659`, recovered source commit `2142a870953e970cf04de0d374845edf7c9300dd`, full-validation receipt `204-FULL-LOCAL-VALIDATION-2026-09-24-a81c908440f5`. This protocol was prepared later and is not claimed to be inside that commit. [Exact task, record and rendered-page bindings](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reader-study-bindings.json>) retain five answer-key routes and two English-format routes, with twenty-five unperformed attempt records.
+The prepared application candidate is `cd18cd5c85ce864bdc6fc60a0d4537165c63f83380d0d16c89ea4761bc4666d8`, recovered source commit `e4bbaac497df9c0c67a250d02a38317a4508d06a`, full-validation receipt `204-FULL-LOCAL-VALIDATION-2026-09-25-28ab975b9072`. This protocol was prepared later and is not claimed to be inside that commit. [Exact task, record and rendered-page bindings](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/reader-study-bindings.json>) retain five answer-key routes and two English-format routes, with twenty-five unperformed attempt records.
 
 Before each actual session, verify the served candidate and record its deployment/local identity, actual date, device, browser and assistive technology. If the candidate changes, identify affected tasks and refresh their version pins before testing. A historical hosted version is not the current validated local build.
 
