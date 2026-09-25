@@ -115,6 +115,69 @@
       "canonical_id":null,
       "independent_identity_decision":null,
       "full_v1_acceptance":null
+    },
+    {
+      "review_id":"210-PLACE-ESSEX-MUNICIPAL-2026-09-25",
+      "record_id":"178-DOSSIER-004",
+      "checked_date":"2026-09-25",
+      "title":"2026 Essex municipal records confirm distinct parcel identifiers",
+      "card_summary":"The Town of Essex and City of Essex Junction 2026 grand lists match the two earlier parcel IDs and SPANs. Their owner-name period is April 1, 2026; matching address fields do not merge these records or establish the fab boundary.",
+      "finding":"The two municipal workbooks linked by the official Grand List index contain separate GlobalFoundries corporate-owner rows. Their parcel IDs and SPANs match the Essex Town and Essex Junction entries in the retained state query. This supplies the narrow municipal identifier check requested by the preceding follow-up. It does not identify which fab buildings or project components occupy either parcel.",
+      "geographic_scope":"The same E911 number, suffix and street appear in both records, but their municipality, parcel ID and SPAN differ. Do not merge the records by address or treat Essex Town as another name for Essex Junction. The state query's GLYEAR 2025, uninterpreted YEAR 2024 and null locations remain unchanged; these separate 2026 rows do not fill those historical fields. Neither municipal row establishes a surveyed fab boundary, current legal title or complete campus inventory.",
+      "next_artifact":"An authoritative fab/building-to-parcel crosswalk locating the relevant semiconductor project components within the identified properties. Verify any material adopted planning/zoning decisions and present-title claims separately. These municipal records do not supply independent identity approval or an accepted place count.",
+      "review_state":"Assisted municipal identifier check; independent identity and portfolio acceptance pending",
+      "owner_name_period":"2026-04-01",
+      "period_note":"The official index dates ownership names to April 1 of the listed grand-list year and says the official grand list is filed in the clerk's office. April 1, 2026 is the owner-name period for these 2026 lists, not the retrieval date or proof of ownership today.",
+      "identifier_note":"The underlying tax-map strings retain their trailing periods, although the source cell formatting does not display those periods. E911 number, suffix and street are shown as separate source fields; their meaning is not expanded into a building or unit claim.",
+      "municipal_records":[
+        {"municipality":"Town of Essex","grand_list_year":2026,"owner_names_as_of":"2026-04-01","parcel_id":"2002008000","reported_owner":"GLOBALFOUNDRIES US 2 LLC","e911_number":1000,"e911_suffix":"1","street":"RIVER ST","tax_map_id":"2002008000.","grand_list_span":"207-067-13089","source_key":"essex-town-2026-grand-list","sheet":"Sheet1","identity_ranges":["A1598:B1598","D1598:H1598"]},
+        {"municipality":"City of Essex Junction","grand_list_year":2026,"owner_names_as_of":"2026-04-01","parcel_id":"1002008000","reported_owner":"GLOBALFOUNDRIES US 2 LLC","e911_number":1000,"e911_suffix":"1","street":"RIVER ST","tax_map_id":"1002008000.","grand_list_span":"208-066-13088","source_key":"essex-junction-2026-grand-list","sheet":"Sheet1","identity_ranges":["A1225:B1225","D1225:H1225"]}
+      ],
+      "sources":[
+        {
+          "key":"essex-grand-list-index",
+          "title":"Essex municipal Grand List index and owner-name period",
+          "url":"https://www.essexvt.gov/304/Grand-List",
+          "source_date":"2026 lists linked; ownership names as of April 1 of the listed year; retrieved 2026-09-25",
+          "locator":"Documents section: ownership-name period and clerk's-office filing note, followed by the Town of Essex and City of Essex Junction 2026 workbook links.",
+          "access":"Official HTML retained with HTTP 200 and rechecked through the web text reader. The retained bytes are pinned; a live link may change. No final-grievance, current-title or full-campus status is inferred.",
+          "sha256":"0f3082f86fe829814c5fb5b1c0c6e19f465da13419d55fc66878cbf99f21a524",
+          "bytes":110367
+        },
+        {
+          "key":"essex-town-2026-grand-list",
+          "title":"Town of Essex 2026 Grand List",
+          "url":"https://www.essexvt.gov/DocumentCenter/View/17370/TOWN-OF-ESSEX-2026-GRAND-LIST",
+          "source_date":"2026 grand list; owner names as of 2026-04-01 under the index note; retrieved 2026-09-25",
+          "locator":"Sheet1 A1:H1 headings; A1598:B1598 parcel/owner and D1598:H1598 E911, tax-map and SPAN fields. Column C attention contact and columns I-J category/assessment are not imported.",
+          "access":"Original XLSX retained with HTTP 200. Exact source values and empty formula cells were checked read-only; complete header and target-row range renders were visually inspected. Source workbook and retained renders remain hash-identical. No recalculation, workbook edit or workbook export; no whole-list, survey or present-title review.",
+          "sha256":"582dfa1fbade93c6b2fa0f4ea3f0131ec1c3742abb77381ae7afa21de4f09c21",
+          "bytes":393605,
+          "sheet":"Sheet1",
+          "inspected_ranges":["A1:H1","A1598:H1598"],
+          "projected_ranges":["A1598:B1598","D1598:H1598"]
+        },
+        {
+          "key":"essex-junction-2026-grand-list",
+          "title":"City of Essex Junction 2026 Grand List",
+          "url":"https://www.essexvt.gov/DocumentCenter/View/17374/CITY-OF-ESSEX-JUNCTION-2026-GRAND-LIST",
+          "source_date":"2026 grand list; owner names as of 2026-04-01 under the index note; retrieved 2026-09-25",
+          "locator":"Sheet1 A1:H1 headings; A1225:B1225 parcel/owner and D1225:H1225 E911, tax-map and SPAN fields. Column C attention contact and columns I-J category/assessment are not imported.",
+          "access":"Original XLSX retained with HTTP 200. Exact source values and empty formula cells were checked read-only; complete header and target-row range renders were visually inspected. Source workbook and retained renders remain hash-identical. No recalculation, workbook edit or workbook export; no whole-list, survey or present-title review.",
+          "sha256":"8edac3380e238fade8a42f1afa5a999a6434e31e4f70cbd814a7e470935612a8",
+          "bytes":298499,
+          "sheet":"Sheet1",
+          "inspected_ranges":["A1:H1","A1225:H1225"],
+          "projected_ranges":["A1225:B1225","D1225:H1225"]
+        }
+      ],
+      "fab_boundary_verified":false,
+      "current_ownership_verified":false,
+      "complete_campus_inventory":false,
+      "accepted_places_added":0,
+      "canonical_id":null,
+      "independent_identity_decision":null,
+      "full_v1_acceptance":null
     }
   ],
   "records": [

@@ -1,0 +1,29 @@
+# Essex municipal identifier integration — September 25, 2026
+
+This implements the [prepared municipal source batch](essex-2026-parcel-source-preparation-2026-09-25.md#next-bounded-implementation) after application checkpoint `9e9f591d` and documentary checkpoint `cca0c371`. The prior goal turn made verified implementation and recovery progress; it was not a blocked/no-progress turn. The full six-stage objective remains unchanged.
+
+## Source verification and reader change
+
+Both retained original XLSX files were imported read-only again using the bundled spreadsheet tooling. Exact `Sheet1` headers, values and formula matrices match the earlier inspection: Town of Essex row 1598 and City of Essex Junction row 1225. Both target rows contain literal values, not formulas. The original file hashes and four previously inspected header/row render hashes remain unchanged. No workbook was edited, recalculated, exported or re-rendered. The intact earlier visual inspections remain version-specific evidence; this check does not claim a new native Excel interaction.
+
+All three application source URLs, hashes and byte counts match the retained captures. The official [Grand List index](https://www.essexvt.gov/304/Grand-List) was also re-read through the web text reader. Its April 1 owner-name period and clerk's-office filing note remain explicit. The application projects only the two corporate parcel/owner cells and the E911, tax-map and SPAN cells; it excludes the attention contact and category/assessment fields.
+
+Additive record `210-PLACE-ESSEX-MUNICIPAL-2026-09-25` is assigned to the existing Vermont dossier and its three exact related readings (`178-DOSSIER-004`, `178-OVERLAY-02`, `178-OVERLAY-08`, `178-ESSAY-04`). It presents separate municipal rows, an explicit April 1, 2026 owner-name date, exact tax-map strings and the E911 fields without merging records by address. The existing export and hub cards carry the same dated context. The shared table styling, row/column headers, caption and focusable overflow region are reused; this is not actual reader or accessibility acceptance.
+
+The complete preceding geographic payload retains SHA-256 `9a12bdc8694082b99d86f49a5584b4847a878a23ad0e80e95602844ccbf6219d`. Both prior follow-ups, ten original notes, historical Phase 178 payload, titles/routes and state-query values remain unchanged. The 2026 municipal records do not rewrite GLYEAR 2025, uninterpreted YEAR 2024, UNKNOWN source dates or null locations in the earlier query. No canonical identity or accepted place is added.
+
+## Verification and next requirements
+
+Focused source/content checks pass: 345 updates and 833 canonical sources. Census generation/assertion/freshness checks preserve 24 inventoried projects and 15 places with unknown accepted totals. Nineteen existing parcel fixtures and twenty-nine new municipal fixtures reject invented approvals, title or fab-boundary claims, transferred dates, merged/incorrect IDs, changed source cells/hashes, imported contact/financial/geometric fields and altered source types. Production assertions cover exact separate table rows, semantic headings, owner/date wording, source links, twelve follow-up cards and unchanged historical exports on only the assigned routes.
+
+The logged `current:generate current:validate` sequence started at 21:02:00.655 UTC, with results retained at `outputs/validation/2026-09-25T21-02-00.651Z-4DgtfE/results.json`. Generation ended at 21:02:39.717 UTC with exit 0. At this entry, validation is still running under execution session `22594`; application inputs remain frozen. Do not restart it or borrow the previous candidate's successful receipt. Full terminal validation, exact source recovery and review-version refresh must follow.
+
+Separate [facility-geography source preparation](vermont-facility-geography-source-preparation-2026-09-25.md) acquired and visually inspected bounded permit and planning evidence while this run continued. It has not changed the application. The next decisive geographic artifact remains an authoritative current fab/building-to-parcel crosswalk, with the newly located planning discrepancy reconciled; neither same-address rows nor historical facility maps establish that boundary. Independent reviews, portfolio/backlog/language decisions, actual reader/accessibility outcomes, measurement requirements and final-release reproduction/hosting/decision/operating-time gates remain open.
+
+The owner's prior local-deliverable acceptance and coordination role remain recorded. No outreach, fee, account use, browser/desktop automation, push, deployment, publication or new scheduled task is authorized or performed here.
+
+## Terminal candidate validation
+
+The same logged sequence completed at 21:21:51.273 UTC on September 25, 2026; generation and full validation both exited 0. Candidate `617ad9584e3a4ff97ce174513725b3cc45746191282ee0622c28e5a23dcb730c` is bound by receipt `204-FULL-LOCAL-VALIDATION-2026-09-25-a5479d3e76c4`. The first production checks, full regression chain and final receipt-bearing rebuild all completed. Output: 16,645 HTML pages, 159 top-level JSON exports, 345 updates and 833 canonical sources; 714,169 checked local references have zero missing targets. Type checking reports zero errors, zero warnings and the two pre-existing hints. No pending handle is represented as passing.
+
+The 33-record selection and portfolio census were regenerated after checking that their human-return fields remained unperformed. Candidate-bound static reachability still reaches all 16,645 application pages; 25 saved HTML downloads remain separate. These technical counts do not narrow release scope or establish factual, reader or accessibility acceptance. Exact source capture/recovery and the version refresh of the existing annual/subject/reader packets follow this terminal record.

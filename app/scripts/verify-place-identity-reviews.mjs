@@ -38,8 +38,24 @@ for (const r of [...history.place_system_dossiers, ...history.comparison_overlay
       for(const value of [followup.municipal_record.grand_list_year,followup.municipal_record.reported_owner,followup.municipal_record.parcel_id_parts.join(' / '),followup.municipal_record.e911_number,followup.municipal_record.street,followup.municipal_record.grand_list_span])assert(visible(municipal[0]).includes(String(value)));
       assert(visible(municipal[0]).includes('does not locate the fab within that parcel'));
     }
+    if(followup.municipal_records){
+      const tables=all(node,n=>attr(n,'data-essex-municipal-identifiers')===followup.review_id);assert.equal(tables.length,1);
+      const rows=all(tables[0],n=>n.tagName==='tr').map(tr=>all(tr,n=>['td','th'].includes(n.tagName)).map(visible));
+      assert.deepEqual(rows,[['Municipal source','Parcel ID','Tax map #','SPAN','E911 number / suffix / street'],...followup.municipal_records.map(row=>[row.municipality,row.parcel_id,row.tax_map_id,row.grand_list_span,`${row.e911_number} / ${row.e911_suffix} / ${row.street}`])]);
+      assert.equal(all(tables[0],n=>n.tagName==='th'&&attr(n,'scope')==='col').length,5);
+      assert.equal(all(tables[0],n=>n.tagName==='th'&&attr(n,'scope')==='row').length,2);
+      assert.equal(visible(all(tables[0],n=>n.tagName==='caption')[0]),'Separate 2026 municipal records — not a fab-boundary table');
+      const region=tables[0].parentNode;assert.equal(attr(region,'role'),'region');assert.equal(attr(region,'tabindex'),'0');assert.equal(attr(region,'aria-label'),'Separate 2026 Essex municipal parcel records');
+      const periods=all(node,n=>attr(n,'data-municipal-period')===followup.review_id);assert.equal(periods.length,1);
+      assert(visible(periods[0]).includes(followup.period_note));
+      const times=all(periods[0],n=>n.tagName==='time');assert.equal(times.length,1);assert.equal(attr(times[0],'datetime'),followup.owner_name_period);assert.equal(visible(times[0]),followup.owner_name_period);
+      const owners=all(node,n=>attr(n,'data-municipal-owner')===followup.review_id);assert.equal(owners.length,1);
+      assert.equal(visible(owners[0]),`Reported owner in both rows: ${followup.municipal_records[0].reported_owner}.`);
+      assert(content.includes(followup.identifier_note));
+    }
   }
   assert.equal(all(dom,n=>attr(n,'data-parcel-identifiers')!==undefined).length,followups.filter(f=>f.parcel_records).length);
+  assert.equal(all(dom,n=>attr(n,'data-essex-municipal-identifiers')!==undefined).length,followups.filter(f=>f.municipal_records).length);
   assert.equal((html.match(/data-place-identity-notice/g) ?? []).length, 1, r.route);
   assert.equal((html.match(/data-place-identity="/g) ?? []).length, notes.length, r.route);
   assert(text.includes(placeIdentityReview.boundary));
@@ -61,7 +77,7 @@ for (const r of [...history.place_system_dossiers, ...history.comparison_overlay
 }
 const hub = await read(`${history.routes.hub}index.html`);
 assert.equal((hub.match(/data-place-identity-card=/g) ?? []).length, 22);
-assert.equal((hub.match(/data-place-identity-followup-card=/g) ?? []).length, 8);
+assert.equal((hub.match(/data-place-identity-followup-card=/g) ?? []).length, 12);
 for (const followup of placeIdentityReview.followups) assert(decodeHtmlText(hub).includes(followup.card_summary));
 for (const n of placeIdentityReview.records) assert(decodeHtmlText(hub).includes(n.finding));
 assert.deepEqual(JSON.parse(await read('/data/place-identity-reviews.json')), placeIdentityReview);
@@ -73,4 +89,6 @@ const laterUpdate = decodeHtmlText(await read('/updates/update-2026-09-25-vermon
 assert(laterUpdate.includes('Williston') && laterUpdate.includes('draft planning map'));
 const parcelUpdate=decodeHtmlText(await read('/updates/update-2026-09-25-vermont-parcel-identifiers/index.html'));
 assert(parcelUpdate.includes('Essex Town')&&parcelUpdate.includes('does not identify the fab footprint'));
-console.log('Place identity output verified: ten preserved dossier notes, twelve related pages, two dated follow-ups on four exact readers, eight follow-up card notices, four exact semantic parcel tables with separate 2026 rows, three updates and exact JSON; historical export unchanged. No browser, identity admission or independent accessibility acceptance claimed.');
+const municipalUpdate=decodeHtmlText(await read('/updates/update-2026-09-25-essex-municipal-identifiers/index.html'));
+assert(municipalUpdate.includes('April 1, 2026')&&municipalUpdate.includes('No fab footprint or current ownership is established'));
+console.log('Place identity output verified: ten preserved dossier notes, twelve related pages, three dated follow-ups on four exact readers, twelve follow-up card notices, four state-query and four distinct municipal tables with exact years/cells/periods, four updates and exact JSON; historical export unchanged. No browser, identity admission or independent accessibility acceptance claimed.');

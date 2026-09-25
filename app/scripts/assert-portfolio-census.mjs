@@ -59,8 +59,8 @@ assert.equal(mt.records.filter(r => r.reporting_rail === 'terrestrial').length, 
 assert(report.followup.named_place_dossiers.every(r => r.source_check.record_id === r.id && r.source_check.route === r.route));
 const datedPlaceReview = await get('app/src/data/place-identity-reviews.json');
 for (const row of report.followup.named_place_dossiers) assert.deepEqual(row.source_followups,datedPlaceReview.followups.filter(note=>note.record_id===row.id));
-assert.equal(report.followup.named_place_dossiers.flatMap(row=>row.source_followups).length,2);
-assert.deepEqual(report.followup.named_place_dossiers.find(row=>row.id==='178-DOSSIER-004').source_followups.map(r=>r.review_id),['210-PLACE-VERMONT-2026-09-25','210-PLACE-VERMONT-PARCELS-2026-09-25']);
+assert.equal(report.followup.named_place_dossiers.flatMap(row=>row.source_followups).length,3);
+assert.deepEqual(report.followup.named_place_dossiers.find(row=>row.id==='178-DOSSIER-004').source_followups.map(r=>r.review_id),['210-PLACE-VERMONT-2026-09-25','210-PLACE-VERMONT-PARCELS-2026-09-25','210-PLACE-ESSEX-MUNICIPAL-2026-09-25']);
 
 // Deliberately small fixtures test the join logic independently of the saved
 // report and make missing, duplicate, changed and newly admitted rows fail.

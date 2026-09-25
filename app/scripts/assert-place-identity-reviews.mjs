@@ -50,7 +50,8 @@ assert.equal(update.effective_date, review.checked_date);
 assert.equal(update.receipt_id, '210-PLACE-SCOPE-2026-09-22');
 const {followups, ...baseline} = review;
 assert.equal(createHash('sha256').update(JSON.stringify(baseline)).digest('hex'), 'c6d008d3d7c184788133e060609a0795f63bb235c350d685ba72db35ceb4831e', 'September 22 notes and source observations must remain unchanged.');
-assert.equal(followups.length, 2);
+assert.equal(followups.length, 3);
+assert.equal(createHash('sha256').update(JSON.stringify({...review,followups:followups.slice(0,2)})).digest('hex'),'9a12bdc8694082b99d86f49a5584b4847a878a23ad0e80e95602844ccbf6219d','Both preceding follow-ups and the complete earlier geographic payload must remain unchanged.');
 assert.equal(createHash('sha256').update(JSON.stringify({...review,followups:followups.slice(0,1)})).digest('hex'),'451a07496caa1db11042d40340cb541593f2cb08db1a1e717cae0e2a58438553','The complete earlier geographic payload must remain unchanged.');
 const followup = followups[0];
 assert.equal(followup.review_id, '210-PLACE-VERMONT-2026-09-25');
@@ -140,4 +141,66 @@ assert.deepEqual(parcelUpdate.affected_record_ids,expectedIds);
 assert.deepEqual(parcelUpdate.related_paths,laterUpdate.related_paths);
 assert.equal(parcelUpdate.receipt_id,parcel.review_id);
 assert.equal(parcelUpdate.effective_date,parcel.checked_date);assert.equal(parcelUpdate.source_checked_date,parcel.checked_date);
-console.log('Place identity source checks passed: ten original notes and the first planning follow-up preserved; additive three-row parcel result and separate 2026 municipal row, exact source pins and four related readers; 19 negative boundary fixtures rejected. No fab boundary, current-title or portfolio admission.');
+const municipal=followups[2];
+const municipalRows=[
+  {municipality:'Town of Essex',grand_list_year:2026,owner_names_as_of:'2026-04-01',parcel_id:'2002008000',reported_owner:'GLOBALFOUNDRIES US 2 LLC',e911_number:1000,e911_suffix:'1',street:'RIVER ST',tax_map_id:'2002008000.',grand_list_span:'207-067-13089',source_key:'essex-town-2026-grand-list',sheet:'Sheet1',identity_ranges:['A1598:B1598','D1598:H1598']},
+  {municipality:'City of Essex Junction',grand_list_year:2026,owner_names_as_of:'2026-04-01',parcel_id:'1002008000',reported_owner:'GLOBALFOUNDRIES US 2 LLC',e911_number:1000,e911_suffix:'1',street:'RIVER ST',tax_map_id:'1002008000.',grand_list_span:'208-066-13088',source_key:'essex-junction-2026-grand-list',sheet:'Sheet1',identity_ranges:['A1225:B1225','D1225:H1225']}
+];
+function checkMunicipalBoundary(r){
+  assert.equal(r.review_id,'210-PLACE-ESSEX-MUNICIPAL-2026-09-25');
+  assert.equal(r.record_id,'178-DOSSIER-004');assert.equal(r.checked_date,'2026-09-25');
+  assert.equal(r.owner_name_period,'2026-04-01');
+  for(const key of ['canonical_id','independent_identity_decision','full_v1_acceptance'])assert.equal(r[key],null);
+  for(const key of ['fab_boundary_verified','current_ownership_verified','complete_campus_inventory'])assert.equal(r[key],false);
+  assert.equal(r.accepted_places_added,0);
+  assert.deepEqual(r.municipal_records,municipalRows);
+  for(const [index,row] of r.municipal_records.entries()){
+    const previous=parcel.parcel_records[index+1];
+    assert.equal(row.parcel_id,previous.parcel_id);assert.equal(row.grand_list_span,previous.grand_list_span);
+    assert.equal(previous.grand_list_year,2025);assert.equal(previous.source_year,2024);
+    assert.equal(previous.location,null);assert.equal(previous.source_date,'UNKNOWN');
+    const source=r.sources.find(s=>s.key===row.source_key);assert(source);
+    assert.equal(source.sheet,row.sheet);assert.deepEqual(source.projected_ranges,row.identity_ranges);
+  }
+  assert.match(r.period_note,/April 1 of the listed grand-list year.*clerk's office.*not the retrieval date or proof of ownership today/);
+  assert.match(r.identifier_note,/trailing periods.*formatting does not display/);
+  assert.match(r.identifier_note,/not expanded into a building or unit claim/);
+  assert.match(r.geographic_scope,/Do not merge the records by address/);
+  assert.match(r.geographic_scope,/GLYEAR 2025.*YEAR 2024.*remain unchanged/);
+  assert.match(r.finding,/does not identify which fab buildings or project components occupy either parcel/);
+  assert.match(r.next_artifact,/authoritative fab\/building-to-parcel crosswalk/);
+  assert.equal(r.sources.length,3);
+  assert.deepEqual(r.sources.map(s=>s.key),['essex-grand-list-index',...municipalRows.map(row=>row.source_key)]);
+  assert.deepEqual(r.sources.map(s=>s.url),['https://www.essexvt.gov/304/Grand-List','https://www.essexvt.gov/DocumentCenter/View/17370/TOWN-OF-ESSEX-2026-GRAND-LIST','https://www.essexvt.gov/DocumentCenter/View/17374/CITY-OF-ESSEX-JUNCTION-2026-GRAND-LIST']);
+  assert.deepEqual(r.sources.map(s=>s.sha256),['0f3082f86fe829814c5fb5b1c0c6e19f465da13419d55fc66878cbf99f21a524','582dfa1fbade93c6b2fa0f4ea3f0131ec1c3742abb77381ae7afa21de4f09c21','8edac3380e238fade8a42f1afa5a999a6434e31e4f70cbd814a7e470935612a8']);
+  assert.deepEqual(r.sources.map(s=>s.bytes),[110367,393605,298499]);
+  for(const [index,source]of r.sources.slice(1).entries()){
+    const row=index===0?1598:1225;
+    assert.deepEqual(source.inspected_ranges,['A1:H1',`A${row}:H${row}`]);
+    assert.match(source.source_date,/2026 grand list; owner names as of 2026-04-01/);
+    assert.match(source.locator,/Column C attention contact and columns I-J category\/assessment are not imported/);
+    assert.match(source.access,/No recalculation, workbook edit or workbook export; no whole-list, survey or present-title review/);
+  }
+}
+checkMunicipalBoundary(municipal);
+const municipalRejected=[
+  r=>r.fab_boundary_verified=true,r=>r.current_ownership_verified=true,r=>r.complete_campus_inventory=true,
+  r=>r.accepted_places_added=2,r=>r.canonical_id='invented-place',r=>r.independent_identity_decision='Accepted',r=>r.full_v1_acceptance=true,
+  r=>r.owner_name_period='2026-09-25',r=>r.checked_date='2099-01-01',r=>r.record_id='178-DOSSIER-003',
+  r=>r.municipal_records[0].municipality=r.municipal_records[1].municipality,
+  r=>r.municipal_records[0].parcel_id=r.municipal_records[1].parcel_id,
+  r=>r.municipal_records[1].grand_list_span=r.municipal_records[0].grand_list_span,
+  r=>r.municipal_records[0].grand_list_year=2025,r=>r.municipal_records[1].owner_names_as_of='2026-09-25',
+  r=>r.municipal_records[0].tax_map_id='2002008000',r=>r.municipal_records[0].e911_number='1000',r=>r.municipal_records[1].e911_suffix='2',
+  r=>r.municipal_records[0].attention_contact='Invented contact',r=>r.municipal_records[0].assessment=1,
+  r=>r.municipal_records[1].geometry={rings:[]},r=>r.municipal_records[0].identity_ranges=['A1599:B1599','D1599:H1599'],
+  r=>r.sources[1].sheet='Sheet2',r=>r.sources[1].projected_ranges=['A1598:H1598'],r=>r.sources[2].inspected_ranges.push('I1225:J1225'),
+  r=>r.sources[1].sha256='0'.repeat(64),r=>r.sources[2].url=r.sources[1].url,
+  r=>r.finding=r.finding.replace('does not identify which fab buildings','identifies which fab buildings'),
+  r=>r.municipal_records.pop()
+];
+for(const mutate of municipalRejected){const fixture=structuredClone(municipal);mutate(fixture);assert.throws(()=>checkMunicipalBoundary(fixture));}
+const municipalUpdate=JSON.parse(await read('src/content/updates/2026-09-25-essex-municipal-identifiers.json'));
+assert.deepEqual(municipalUpdate.affected_record_ids,expectedIds);assert.deepEqual(municipalUpdate.related_paths,laterUpdate.related_paths);
+assert.equal(municipalUpdate.receipt_id,municipal.review_id);assert.equal(municipalUpdate.effective_date,municipal.checked_date);assert.equal(municipalUpdate.source_checked_date,municipal.checked_date);
+console.log(`Place identity source checks passed: ten original notes and both earlier follow-ups preserved; separate 2026 Essex municipal rows, April 1 owner-name period, exact source/cell pins and four related readers; 19 parcel and ${municipalRejected.length} municipal negative fixtures rejected. No fab boundary, current-title or portfolio admission.`);
