@@ -48,6 +48,73 @@
       "canonical_id":null,
       "independent_identity_decision":null,
       "full_v1_acceptance":null
+    },
+    {
+      "review_id":"210-PLACE-VERMONT-PARCELS-2026-09-25",
+      "record_id":"178-DOSSIER-004",
+      "checked_date":"2026-09-25",
+      "title":"Parcel identifiers narrow the Vermont geography question",
+      "card_summary":"A retained 2025 state-layer query identifies corporate-property records in Williston, Essex Town and Essex Junction; a separate 2026 Williston tax-list row matches one SPAN. These records do not establish the fab boundary or three accepted places.",
+      "finding":"The September 25 public VTrans query returned three corporate-owner matches with 2025 grand-list identifiers. Williston's separate 2026 Grand List by Owner Name contains the same Williston SPAN and lists 326 IBM ROAD. This supplies exact records for follow-up, not proof that all three properties belong to the named semiconductor project or that the fab spans three municipalities. Essex Town is an additional corporate-property lead, not an established fab location.",
+      "geographic_scope":"The table describes the retained query result, not a surveyed site, current legal title or complete campus inventory. The source labels GLYEAR as Grand List Year; YEAR has no explanatory definition in the inspected metadata and is retained without interpretation. All three SOURCEDATE values are UNKNOWN and all three LOCAPROP values are null. A 2026 Williston tax-list address does not fill those missing state-layer fields or identify the fab footprint.",
+      "next_artifact":"Current municipal assessor records for the exact Essex Town and Essex Junction identifiers, followed by an authoritative site/parcel crosswalk locating the relevant fab and associated project components. Inspect any material adopted planning decisions separately. Do not infer a sale, current ownership, zoning, project-stage advance or accepted place count from these records.",
+      "review_state":"Assisted parcel-identifier and selected-page check; independent identity and portfolio acceptance pending",
+      "query_scope":{
+        "where":"UPPER(OWNER1) LIKE '%GLOBALFOUNDRIES%'",
+        "out_fields":["OBJECTID","TOWN","TNAME","YEAR","GLYEAR","SOURCEDATE","MAPID","PARCID","SPAN","GLIST_SPAN","OWNER1","LOCAPROP","DESCPROP"],
+        "return_geometry":false,
+        "record_limit":50,
+        "returned_rows":3,
+        "transfer_limit_exceeded":false,
+        "boundary":"Complete for this retained returned query only; other owner spellings, secondary owners, leased sites and present campus components were not exhaustively searched. No geometry, mailing or financial fields were requested."
+      },
+      "parcel_records":[
+        {"municipality":"Williston","parcel_id":"04010.027000","grand_list_span":"759-241-11611","grand_list_year":2025,"source_year":2025,"source_date":"UNKNOWN","location":null,"reported_owner":"GLOBALFOUNDRIES U S 2 LLC"},
+        {"municipality":"Essex Town","parcel_id":"2002008000","grand_list_span":"207-067-13089","grand_list_year":2025,"source_year":2024,"source_date":"UNKNOWN","location":null,"reported_owner":"GLOBALFOUNDRIES US 2 LLC"},
+        {"municipality":"Essex Junction","parcel_id":"1002008000","grand_list_span":"208-066-13088","grand_list_year":2025,"source_year":2024,"source_date":"UNKNOWN","location":null,"reported_owner":"GLOBALFOUNDRIES US 2 LLC"}
+      ],
+      "municipal_record":{"municipality":"Williston","grand_list_year":2026,"parcel_id_parts":["04010","027000"],"reported_owner":"GLOBALFOUNDRIES U S 2 LLC","e911_number":"326","street":"IBM ROAD","grand_list_span":"759-241-11611","physical_pdf_page":43},
+      "sources":[
+        {
+          "key":"vtrans-parcel-field-definitions",
+          "title":"Vermont Agency of Transportation: public parcel layer field definitions",
+          "url":"https://maps.vtrans.vermont.gov/arcgis/rest/services/ROW/Parcels/MapServer/8?f=pjson",
+          "source_date":"Metadata retrieved 2026-09-25; no dataset-wide effective date established",
+          "locator":"Layer 8 fields PARCID, GLIST_SPAN, GLYEAR, YEAR, TNAME, OWNER1, SOURCEDATE and LOCAPROP. GLYEAR is labeled Grand List Year; YEAR has only its field-name alias.",
+          "access":"Public JSON retained September 25, 2026 and inspected; the same official field definitions were also inspected through the text reader. No map or geometric-boundary inspection was performed.",
+          "sha256":"29ba69b46c099589f7a5420d34ac565d81075f64e8e05211ec08d2b5423c683b",
+          "bytes":27860
+        },
+        {
+          "key":"vtrans-globalfoundries-owner-query",
+          "title":"VTrans parcel layer: retained GlobalFoundries corporate-owner query",
+          "url":"https://maps.vtrans.vermont.gov/arcgis/rest/services/ROW/Parcels/MapServer/8/query?where=UPPER(OWNER1)%20LIKE%20'%25GLOBALFOUNDRIES%25'&outFields=OBJECTID%2CTOWN%2CTNAME%2CYEAR%2CGLYEAR%2CSOURCEDATE%2CMAPID%2CPARCID%2CSPAN%2CGLIST_SPAN%2COWNER1%2CLOCAPROP%2CDESCPROP&returnGeometry=false&resultRecordCount=50&f=pjson",
+          "source_date":"GLYEAR 2025 in all three rows; YEAR 2025/2024/2024; retrieved 2026-09-25",
+          "locator":"The complete three-feature response for the displayed OWNER1 filter: Williston, Essex Town and Essex Junction; no exceeded-transfer-limit flag. Exact parcel and grand-list identifiers are transcribed in the table.",
+          "access":"The text reader could not open the query URL. A separate approved public GET returned HTTP 200; the retained JSON response was inspected. The linked live query may change and is not represented as the immutable captured bytes.",
+          "sha256":"a6664fb2c6604f67b1a07940a518d1dbb493314060cd08bab5e7f99865e58b12",
+          "bytes":2959
+        },
+        {
+          "key":"williston-2026-grand-list",
+          "title":"Town of Williston: 2026 Grand List by Owner Name",
+          "url":"https://willistonvt.govoffice3.com/vertical/Sites/%7BF506B13C-605B-4878-8062-87E5927E49F0%7D/uploads/Grand_List_2026_by_Owner_Name.pdf",
+          "source_date":"2026 grand list; retrieved 2026-09-25; exact legal effective date not inferred",
+          "locator":"Physical PDF page 1: town, 2026 title and table headings. Physical page 43: GLOBALFOUNDRIES U S 2 LLC, parcel-ID parts 04010 / 027000, E911 number 326, IBM ROAD and SPAN 759-241-11611.",
+          "access":"Original 123-page PDF retained with HTTP 200. Complete physical pages 1 and 43 were visually inspected; only the corporate identifier/address row is used. No tax values or other owners are transcribed. This is not a full-document, survey or current-title review; the obsolete 2025 PDF URL returned 404 and was not used.",
+          "sha256":"136e779f62bfab69c3241e20d758de9efdfdfb2a916a90152e20dd678070717a",
+          "bytes":3649674,
+          "document_pages":123,
+          "visually_checked_pages":[1,43]
+        }
+      ],
+      "fab_boundary_verified":false,
+      "current_ownership_verified":false,
+      "complete_campus_inventory":false,
+      "accepted_places_added":0,
+      "canonical_id":null,
+      "independent_identity_decision":null,
+      "full_v1_acceptance":null
     }
   ],
   "records": [

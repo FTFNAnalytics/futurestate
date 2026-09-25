@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "receipt_id": "204-FULL-LOCAL-VALIDATION-2026-09-25-0c379ea8edc7",
+  "receipt_type": "Full local reference validation",
+  "phase": 204,
+  "validated_phase_range": "181–204",
+  "effective_date": "2026-09-01",
+  "validated_date": "2026-09-25",
+  "validated_at": "2026-09-25T20:43:27.009Z",
+  "status": "Passed",
+  "validation_result": "Passed local Phase 181–204 public-reference candidate checks",
+  "validator_contract_version": "phase-204-full-local-reference-validator-v1",
+  "scope": "Local validation of the complete append-only Phase 181–204 public-reference candidate. The receipt validates exact local phase registries, work packages, updates, integrated routes, JSON exports, rendering, and inherited release boundaries only; it does not validate an external source return, create future evidence, supply an owner decision, approve translation or expert review, authorize repository publication or hosting, launch the site, or promote v1.",
+  "artifact_digest_algorithm": "sha256",
+  "artifact_digest_contract": "SHA-256 over the exact Phase 181–204 registries, work packages, dated updates, integrated route code, social card, and normalized aggregate. Receipt-derived aggregate fields are normalized so the immutable receipt cannot hash itself.",
+  "artifact_digest": "d1da1460ccb13a884b98d3b3cf85347d75356303c65eb8c9b7421547a1cd181c",
+  "artifact_manifest_digest": "f7c0274fc4c468dd172d0db671729951811a24605a4aabd55eba3e59b4f7cc5a",
+  "validation_bundle_digest": "0c379ea8edc7207488b3d38eefa9b27dd12cf11901e662ce21336e1e672e2f75",
+  "phase_count": 24,
+  "primary_records": 1048,
+  "public_html_routes": 3216,
+  "public_json_exports": 25,
+  "publication_updates": 24,
+  "metrics": {
+    "validated_phase_range": "181–204",
+    "phase_count": 24,
+    "primary_records": 1048,
+    "public_html_routes": 3216,
+    "structurally_auditable_html_routes": 3216,
+    "native_declared_routes": 1071,
+    "immutable_edition_routes": 1073,
+    "canonical_reference_routes": 1073,
+    "canonical_index_routes": 1073,
+    "public_json_exports": 25,
+    "schema_1_0_public_json_exports": 25,
+    "publication_updates": 24,
+    "candidate_artifacts": 3433,
+    "candidate_artifact_manifest_digest": "f7c0274fc4c468dd172d0db671729951811a24605a4aabd55eba3e59b4f7cc5a",
+    "baseline_phase180_receipt_id": "180-LOCAL-VALIDATION-2026-09-01-e42929fa956a",
+    "baseline_phase180_artifact_digest": "ed6d79c0c0994f3a037355f681d94ad3dd01f430704d596ccddaea770154e0be",
+    "phase204_wave_receipt_id": "204-LOCAL-VALIDATION-2026-09-01-fbfb906465dd",
+    "whole_site_snapshot": {
+      "html_pages_excluding_downloads": 16644,
+      "top_level_data_json_exports": 159,
+      "update_entries_rendered": 344,
+      "canonical_source_records": 833
+    }
+  },
+  "checks": [
+    {
+      "check_id": "immutable-phase180-baseline",
+      "status": "Passed",
+      "detail": "180-LOCAL-VALIDATION-2026-09-01-e42929fa956a / ed6d79c0c0994f3a037355f681d94ad3dd01f430704d596ccddaea770154e0be"
+    },
+    {
+      "check_id": "exact-reference-inventory",
+      "status": "Passed",
+      "detail": "24 phases / 1,048 records / 3,216 routes / 25 exports / 24 updates"
+    },
+    {
+      "check_id": "future-evidence-boundary",
+      "status": "Passed",
+      "detail": "No future source return, outcome value, trend, causal conclusion, score, or rank admitted"
+    },
+    {
+      "check_id": "owner-publication-boundary",
+      "status": "Passed",
+      "detail": "Owner acceptance, translation/expert approval, repository publication, hosting, launch, and v1 promotion remain Held or false"
+    },
+    {
+      "check_id": "npm-run-validate-candidates",
+      "status": "Passed",
+      "detail": "npm run validate:candidates"
+    },
+    {
+      "check_id": "npm-run-validate-content",
+      "status": "Passed",
+      "detail": "npm run validate:content"
+    },
+    {
+      "check_id": "npm-run-source-health",
+      "status": "Passed",
+      "detail": "npm run source:health"
+    },
+    {
+      "check_id": "npm-run-test-v1rc",
+      "status": "Passed",
+      "detail": "npm run test:v1rc"
+    },
+    {
+      "check_id": "npm-run-test-v1month",
+      "status": "Passed",
+      "detail": "npm run test:v1month"
+    },
+    {
+      "check_id": "npm-run-test-v1cycle",
+      "status": "Passed",
+      "detail": "npm run test:v1cycle"
+    },
+    {
+      "check_id": "npm-run-test-v1oct",
+      "status": "Passed",
+      "detail": "npm run test:v1oct"
+    },
+    {
+      "check_id": "npm-run-test-v1ref",
+      "status": "Passed",
+      "detail": "npm run test:v1ref"
+    },
+    {
+      "check_id": "npm-run-test-phase58",
+      "status": "Passed",
+      "detail": "npm run test:phase58"
+    },
+    {
+      "check_id": "npm-run-verify-phase58",
+      "status": "Passed",
+      "detail": "npm run verify:phase58"
+    },
+    {
+      "check_id": "npm-run-verify-phase59",
+      "status": "Passed",
+      "detail": "npm run verify:phase59"
+    },
+    {
+      "check_id": "npm-run-verify-phase60",
+      "status": "Passed",
+      "detail": "npm run verify:phase60"
+    },
+    {
+      "check_id": "npm-run-verify-phase60c",
+      "status": "Passed",
+      "detail": "npm run verify:phase60c"
+    },
+    {
+      "check_id": "npm-run-verify-phase61",
+      "status": "Passed",
+      "detail": "npm run verify:phase61"
+    },
+    {
+      "check_id": "npm-run-test-phase67",
+      "status": "Passed",
+      "detail": "npm run test:phase67"
+    },
+    {
+      "check_id": "npm-run-verify-phase67",
+      "status": "Passed",
+      "detail": "npm run verify:phase67"
+    },
+    {
+      "check_id": "npm-run-current-test",
+      "status": "Passed",
+      "detail": "npm run current:test"
+    },
+    {
+      "check_id": "npm-run-check",
+      "status": "Passed",
+      "detail": "npm run check"
+    },
+    {
+      "check_id": "npm-run-build",
+      "status": "Passed",
+      "detail": "npm run build"
+    },
+    {
+      "check_id": "npm-run-verify-v1rc",
+      "status": "Passed",
+      "detail": "npm run verify:v1rc"
+    },
+    {
+      "check_id": "npm-run-verify-v1month",
+      "status": "Passed",
+      "detail": "npm run verify:v1month"
+    },
+    {
+      "check_id": "npm-run-verify-v1cycle",
+      "status": "Passed",
+      "detail": "npm run verify:v1cycle"
+    },
+    {
+      "check_id": "npm-run-verify-v1oct",
+      "status": "Passed",
+      "detail": "npm run verify:v1oct"
+    },
+    {
+      "check_id": "npm-run-current-verify",
+      "status": "Passed",
+      "detail": "npm run current:verify"
+    },
+    {
+      "check_id": "npm-run-verify-release",
+      "status": "Passed",
+      "detail": "npm run verify:release"
+    }
+  ],
+  "evidence_admission_authorized": false,
+  "owner_acceptance": false,
+  "translation_approval": false,
+  "expert_review_approval": false,
+  "github_publication_authorized": false,
+  "hosted_deployment_authorized": false,
+  "public_launch_authorized": false,
+  "v1_promotion_state": "Held",
+  "next_action": "Rebuild the aggregate to embed this receipt, rebuild and verify deterministic output, update the deployment manifest, and continue only due evidence and owner gates on their lawful dates."
+}

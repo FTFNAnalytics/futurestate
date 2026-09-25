@@ -110,6 +110,7 @@ const integrationFiles = [
   'src/pages/data/place-identity-reviews.json.ts',
   'src/content/updates/2026-09-22-place-identity-review.json',
   'src/content/updates/2026-09-25-vermont-planning-geography.json',
+  'src/content/updates/2026-09-25-vermont-parcel-identifiers.json',
   'scripts/assert-place-identity-reviews.mjs',
   'scripts/verify-place-identity-reviews.mjs',
   'src/content/updates/2026-09-22-remaining-answer-source-review.json',
