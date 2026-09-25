@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "as_of_date": "2026-09-22",
+  "as_of_date": "2026-09-25",
   "receipts": [
     {
       "receipt_id": "207-TORONTO-2026-09-14-BOUNDED-RECHECK",
@@ -18979,6 +18979,66 @@
         "Independent reconciliation and an actual admission decision before charting a governed monthly series."
       ],
       "next_action": "Acquire the complete formal-acceptance ledger through an authorized source. Keep the feature held; do not convert article dates, unit arrivals or aircraft identifiers into acceptance rates.",
+      "affected_record_ids": [
+        "198-CASE-016",
+        "212-REPORT-001"
+      ],
+      "affected_routes": [
+        "/method/editorial-review/",
+        "/reference/failure-casebooks/f15ex-production-delivery/",
+        "/reference/field-report/2026-09-14/"
+      ],
+      "visual_review_complete": false
+    },
+    {
+      "checked_date": "2026-09-25",
+      "reviewer": "Codex - assisted acquisition review; not an independent second reviewer",
+      "independent_review_complete": false,
+      "admitted": false,
+      "admission_receipt": null,
+      "second_reviewer": null,
+      "candidate_observations_added": [],
+      "prior_extraction_preserved": true,
+      "issuer_correction_claimed": false,
+      "publication_authorized": false,
+      "review_id": "211-F15EX-SYNDICATED-2026-09-25",
+      "pilot_id": "160-PILOT-003",
+      "entity_id": "119-PROJECT-016",
+      "updates_access_context_of": "211-F15EX-ACCESS-2026-09-22",
+      "title": "F-15EX: official narrative recovered; delivery timing needs reconciliation",
+      "status": "Official HTML checked; formal-acceptance measurement remains held",
+      "finding": "DVIDS story 554320 provides an official Air Force Life Cycle Management Center copy of the December 15, 2025 delivery narrative; DVIDS separately records posting on December 16. The receiving-wing description reports EX16 arriving December 11. That date is not within three weeks of the November 16 EX15 delivery cited in the narrative if both describe Portland arrival. The event definitions and timing therefore remain unreconciled. Neither page supplies the formal-acceptance ledger.",
+      "source_checks": [
+        {
+          "title": "AFLCMC on DVIDS: F-15EX Production Rebounds, Deliveries Continue",
+          "url": "https://www.dvidshub.net/news/554320/f-15ex-production-rebounds-deliveries-continue",
+          "artifact_date": "2025-12-15; DVIDS posted 2025-12-16",
+          "locator": "Story 554320, delivery paragraph and NEWS INFO dates",
+          "access": "Public official HTML downloaded with HTTP 200 and article text inspected; no image or video inference",
+          "finding": "The delivery paragraph names EX14/EX15 dates and describes EX16 with a relative interval. It does not identify formal contractual acceptance dates or a complete monthly population.",
+          "captured_sha256": "88873fc761970cd78e0fec09e5aaf5c2522fdca85c260fbaa46a230ba12eef90",
+          "captured_bytes": 65040
+        },
+        {
+          "title": "142nd Wing: EX 16 Comes to Portland",
+          "url": "https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/",
+          "artifact_date": "2026-02-17; described arrival 2025-12-11",
+          "locator": "EX 16 Comes to Portland title, displayed date and description beside the embedded video",
+          "access": "Official page text and metadata inspected through the web text reader; separate direct HTML request returned HTTP 403. The video was not viewed, downloaded or transcribed",
+          "finding": "The description gives December 11, 2025 as the receiving-wing arrival date. The February 17, 2026 page date is separate; neither is identified as contractual acceptance."
+        }
+      ],
+      "access_limits": [
+        "The original AFLCMC endpoint still failed in this text-reader check. Its September 22 failure remains intact; successful access applies to the separately identified DVIDS copy, not to that endpoint.",
+        "The retained 65040-byte DVIDS HTML contains the article. The separately retained 427-byte wing response is a denial page, not the wing article; its successful text inspection is a distinct access channel.",
+        "The timing comparison is an editorial inference conditional on the reports describing the same arrival milestone, not an issuer correction. No exact EX16 acceptance date or complete event population is inferred."
+      ],
+      "required_artifacts": [
+        "An authoritative identity-linked reconciliation of the EX15/EX16 delivery and arrival milestones, preserving both source accounts and any issuer correction.",
+        "Complete aircraft-identity ledger with formal acceptance dates, reporting coverage, production-line boundary, exclusions, rework and revision history.",
+        "Independent reconciliation and an actual admission decision before charting a governed monthly series."
+      ],
+      "next_action": "Reconcile the delivery/arrival event definitions and obtain the complete formal-acceptance ledger. Keep the measurement feature held; a recovered narrative does not supply an acceptance series.",
       "affected_record_ids": [
         "198-CASE-016",
         "212-REPORT-001"

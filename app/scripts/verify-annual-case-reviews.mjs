@@ -7,6 +7,7 @@ import {annualCaseReviews, annualReviewContexts, annualCaseOverview, annualCaseT
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 import history from '../src/data/phase-204-reader-completion.json' with {type:'json'};
 import originalReport from '../src/data/phase-203-state-of-future-systems-2026.json' with {type:'json'};
+import operations from '../src/data/phase-207-current-operations.json' with {type:'json'};
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
 const read = p => readFile(join(root, p), 'utf8');
 const attr = (node, key) => node.attrs?.find(a => a.name === key)?.value;
@@ -86,6 +87,17 @@ for (const article of history.records) {
       expected[change.paragraph_index] = change.replacement_text; revisedParagraphs++;
     }
     assert.deepEqual(paragraphs, expected, `Wrong current reading body at ${route}`);
+  }
+  const retainedPilotIds=(review?.retained_contexts??[]).filter(c=>c.collection==='pilot_research_followups').map(c=>c.id);
+  const accessFollowups=operations.pilot_research_followups.filter(r=>r.checked_date<=operations.as_of_date&&'updates_access_context_of' in r&&retainedPilotIds.includes(r.updates_access_context_of));
+  const followupNotices=all(dom,n=>attr(n,'data-pilot-research')!==undefined);
+  assert.deepEqual(followupNotices.map(n=>attr(n,'data-pilot-research')),accessFollowups.map(r=>r.review_id),'Later source access must match exact retained receipt IDs only');
+  for(const [index,followup] of accessFollowups.entries()){
+    const visible=text(followupNotices[index]),hrefs=links(followupNotices[index]);
+    for(const value of [followup.title,followup.checked_date,followup.finding,followup.next_action,...followup.access_limits,...followup.required_artifacts])assert(visible.includes(value),`Missing later source-access boundary at ${route}`);
+    for(const source of followup.source_checks){assert(hrefs.includes(source.url));for(const value of [source.artifact_date,source.locator,source.finding,source.access])assert(visible.includes(value));}
+    assert(hrefs.includes('/method/editorial-review/#'+followup.updates_access_context_of));
+    assert(visible.includes('No added observations, independent approval, issuer correction or series admission.'));
   }
   if (!review) continue;
   const notice = notices[0], visible = text(notice), hrefs = links(notice);

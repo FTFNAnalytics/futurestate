@@ -18,7 +18,8 @@ baseline.receipts=[ops.receipts[0]];
 assert.equal(hash(JSON.stringify(baseline)),'8ca999c6161da994b813d3bb3dbf10bbe1be1b3a9958e38f68fe3eed43a165e1','Original operations, receipts and research must remain unchanged');
 assert.equal(hash(priorLedgerSnapshot(await json('src/data/phase-60-current-decisions.json'))),'a499d9fd1d00e9516adf247683e2540ba13f53aa7cd91f7606be5599601d0685');
 assert.deepEqual(ops.pilot_research_followups,pilotResearchFollowups);
-assert.equal(ops.pilot_research_followups.length,5);assert.equal(ops.as_of_date,'2026-09-22');assert.equal(ops.governed_series_admitted,0);
+assert.equal(ops.pilot_research_followups.length,6);assert.equal(ops.as_of_date,'2026-09-25');assert.equal(ops.governed_series_admitted,0);
+assert.equal(hash(JSON.stringify(ops.pilot_research_followups.slice(0,5))),'2b422a782b7db8fbde68423b66ec189568459d58ba56fa73457ebbcf3511ff15','All five earlier follow-ups remain exact historical records');
 const now=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Edmonton',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 function checkResearchBoundary(r){
  assert.equal(r.visual_review_complete,['211-DALRYMPLE-VISUAL-2026-09-15','211-HORNSDALE-ACCESS-2026-09-22'].includes(r.review_id));assert.equal(r.independent_review_complete,false);
@@ -67,7 +68,7 @@ assert.equal(visualUpdate.receipt_id,visual.review_id);assert.equal(visualUpdate
 assert.equal(visualUpdate.materiality,'No record-state change');
 assert.deepEqual(visualUpdate.affected_record_ids,[visual.pilot_id,visual.entity_id,...visual.affected_record_ids]);
 assert.deepEqual(visualUpdate.related_paths,[...visual.affected_routes,'/data/current-operations.json']);
-const acquisitions=ops.pilot_research_followups.slice(2);
+const acquisitions=ops.pilot_research_followups.slice(2,5);
 assert.deepEqual(acquisitions.map(r=>r.pilot_id),['160-PILOT-001','160-PILOT-002','160-PILOT-003']);
 assert.deepEqual(acquisitions.map(r=>r.review_id),['211-HORNSDALE-ACCESS-2026-09-22','211-DALRYMPLE-ACQUISITION-2026-09-22','211-F15EX-ACCESS-2026-09-22']);
 for(const r of acquisitions){
@@ -90,6 +91,26 @@ assert.equal(dossier.updated_date,'2026-09-22');assert.match(dossier.source_note
 assert.match(dossier.sections[3].text,/31\/11\/2023/);assert(!dossier.sections.some(s=>s.heading==='The unavailable operating report remains visible'));
 assert.deepEqual(acquisitions[1].source_checks.map(s=>s.artifact_date),['2020-02','2020-08']);
 assert.match(acquisitions[2].source_checks[0].access,/Access Denied/);assert.match(acquisitions[2].finding,/not freshly verified/);
+const recovered=ops.pilot_research_followups[5];checkResearchBoundary(recovered);
+assert.equal(recovered.review_id,'211-F15EX-SYNDICATED-2026-09-25');
+assert.equal(recovered.updates_access_context_of,acquisitions[2].review_id);
+assert.equal(recovered.checked_date,'2026-09-25');assert.equal(recovered.source_checks.length,2);
+assert.equal(recovered.source_checks[0].url,'https://www.dvidshub.net/news/554320/f-15ex-production-rebounds-deliveries-continue');
+assert.equal(recovered.source_checks[0].captured_sha256,'88873fc761970cd78e0fec09e5aaf5c2522fdca85c260fbaa46a230ba12eef90');
+assert.equal(recovered.source_checks[0].captured_bytes,65040);
+assert.match(recovered.source_checks[0].artifact_date,/2025-12-15; DVIDS posted 2025-12-16/);
+assert.match(recovered.source_checks[1].artifact_date,/2026-02-17; described arrival 2025-12-11/);
+assert.match(recovered.source_checks[1].access,/HTTP 403/);assert.match(recovered.source_checks[1].access,/video was not viewed/);
+assert.match(recovered.finding,/if both describe Portland arrival/);assert.match(recovered.access_limits.join(' '),/not an issuer correction/);
+assert(!('supersedes_access_limits_of' in recovered),'Syndication must not claim recovery of the failed original endpoint');
+for(const field of ['visual_review_complete','independent_review_complete','admitted','publication_authorized','issuer_correction_claimed'])assert.throws(()=>checkResearchBoundary({...recovered,[field]:true}));
+const recoveredUpdate=await json('src/content/updates/2026-09-25-f15ex-syndicated-access.json');
+assert.equal(recoveredUpdate.receipt_id,recovered.review_id);assert.equal(recoveredUpdate.source_checked_date,recovered.checked_date);
+assert.equal(recoveredUpdate.materiality,'No record-state change');
+assert.deepEqual(recoveredUpdate.affected_record_ids,[recovered.pilot_id,recovered.entity_id,...recovered.affected_record_ids,'203-CASE-16','203-SYNTHESIS-11','200-MONOGRAPH-11']);
+const annual=(await json('src/data/annual-case-reviews.json')).records.filter(r=>r.retained_contexts.some(c=>c.id===recovered.updates_access_context_of));
+assert.deepEqual(annual.map(r=>r.record_id),['203-CASE-16','203-SYNTHESIS-11','200-MONOGRAPH-11']);
+assert.deepEqual(recoveredUpdate.related_paths,[...recovered.affected_routes,...annual.map(r=>r.route),'/data/current-operations.json']);
 const template=await read('src/components/review/CurrentOperationsNotice.astro'),verifier=await read('scripts/verify-current-editorial.mjs');
 for(const marker of ['data-pilot-research={r.review_id}','r.checked_date<=operations.as_of_date','r.source_checks.map','r.access_limits.map','r.required_artifacts.map','original extraction and period amendment remain unchanged'])assert(template.includes(marker));
 assert(verifier.includes('ops.pilot_research_followups'));assert(verifier.includes('data-pilot-research='));
@@ -104,4 +125,4 @@ function rejectedReferenceFixture(target,mutation,expected){
 }
 rejectedReferenceFixture('src/content/updates/2026-09-15-dalrymple-measurement-definition.json',"value.affected_record_ids.push('212-REPORT-NONEXISTENT')",'references missing public record "212-REPORT-NONEXISTENT"');
 rejectedReferenceFixture('src/data/phase-205-216-current-editorial.json',"value.records.find(r=>r.record_id==='212-REPORT-001').route='/reference/invented-report/'",'unresolved current reader route for "212-REPORT-001"');
-console.log('Measurement follow-up checks passed: two preserved Dalrymple receipts plus three September 22 acquisition outcomes; Hornsdale hash, exact pages and invalid date pinned; original operations/pilots/evidence preserved with zero added observations or admissions. Production acceptance is checked separately.');
+console.log('Measurement follow-up checks passed: five exact historical receipts plus the September 25 official F-15EX copy; separate access channels, dated milestones and conditional timing discrepancy retained; original operations/pilots/evidence preserved with zero added observations or admissions. Production acceptance is checked separately.');

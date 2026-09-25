@@ -1,5 +1,6 @@
 ---
 import {annualCaseReviews, annualReviewContexts, annualReviewDate, annualReviewVersions} from '../../lib/annual-case-reviews.mjs';
+import CurrentOperationsNotice from './CurrentOperationsNotice.astro';
 interface Props { review: typeof annualCaseReviews.records[number]; }
 const {review} = Astro.props;
 const contexts = annualReviewContexts(review);
@@ -67,3 +68,4 @@ const earlierReviews = annualReviewVersions(review).slice(0, -1);
   </section>)}
   <p><a href={annualCaseReviews.export_route}>Download these dated changes and source bindings</a> · <a href={`/updates/${review.update_id ?? annualCaseReviews.update_id}/`}>Dated change record</a></p>
 </aside>
+<CurrentOperationsNotice researchContextIds={contexts.filter(context=>context.collection==='pilot_research_followups').map(context=>context.id)} />
