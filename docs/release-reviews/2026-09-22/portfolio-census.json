@@ -125,8 +125,8 @@
     },
     {
       "path": "app/src/data/place-identity-reviews.json",
-      "bytes": 11297,
-      "sha256": "2196c7a18c9bcea43f431507bcc5405994c3eabfdacd2537103a246e9c7a873b"
+      "bytes": 14705,
+      "sha256": "ad7a45eb356d333434f11209d12321704a05e0ba19558086ae19576321da7775"
     },
     {
       "path": "docs/release-reviews/2026-09-22/evidence/fp_deployment_projects-1.5.26.csv",
@@ -7860,6 +7860,7 @@
           "independent_identity_decision": null,
           "full_v1_acceptance": null
         },
+        "source_followups": [],
         "canonical_id": null,
         "next_action": "Use the dated location note, obtain the precise missing geographic artifact, then review canonical identity and portfolio eligibility."
       },
@@ -7886,6 +7887,7 @@
           "independent_identity_decision": null,
           "full_v1_acceptance": null
         },
+        "source_followups": [],
         "canonical_id": null,
         "next_action": "Use the dated location note, obtain the precise missing geographic artifact, then review canonical identity and portfolio eligibility."
       },
@@ -7913,6 +7915,7 @@
           "independent_identity_decision": null,
           "full_v1_acceptance": null
         },
+        "source_followups": [],
         "canonical_id": null,
         "next_action": "Use the dated location note, obtain the precise missing geographic artifact, then review canonical identity and portfolio eligibility."
       },
@@ -7941,6 +7944,42 @@
           "independent_identity_decision": null,
           "full_v1_acceptance": null
         },
+        "source_followups": [
+          {
+            "review_id": "210-PLACE-VERMONT-2026-09-25",
+            "record_id": "178-DOSSIER-004",
+            "checked_date": "2026-09-25",
+            "title": "Planning records distinguish Essex Junction and Williston",
+            "card_summary": "June 2025 regional planning records distinguish Essex Junction and Williston property contexts; the draft map is not a zoning or surveyed parcel determination.",
+            "finding": "CCRPC's June 1, 2025 memo to the Williston Planning Commission explicitly distinguishes the Essex Junction and Williston sides of GlobalFoundries property. Its June 23 Essex Junction draft recommendation retains the site's Planned Growth Area treatment in that planning proposal. This adds a documented cross-municipality context to the earlier contact-address check; it does not establish the precise boundary of the relevant fab or every campus parcel.",
+            "geographic_scope": "Two municipality-specific planning contexts, not a single verified campus polygon. The attached Essex Junction map is expressly a draft planning map, not a zoning map or a substitute for surveyed information.",
+            "next_artifact": "A current authoritative parcel/site-to-municipality crosswalk identifying the relevant fab and associated property, plus separately verified adopted planning/zoning decisions where those are material. Do not infer a sale, rezoning, permit, production outcome or accepted place count from these June 2025 documents.",
+            "review_state": "Assisted primary-source follow-up; independent identity and portfolio acceptance pending",
+            "sources": [
+              {
+                "key": "ccrpc-williston-june-2025",
+                "title": "CCRPC memorandum to Williston Planning Commission, June 1, 2025",
+                "url": "https://www.town.williston.vt.us/vertical/sites/%7BF506B13C-605B-4878-8062-87E5927E49F0%7D/uploads/Williston_PC_Act181Memo_20250603.pdf",
+                "source_date": "2025-06-01",
+                "locator": "Physical PDF pages 1-4: dated memo heading, regional-map limits, Tier 1B Eligibility paragraph on page 3 and the proposed motion on page 4. The filename's June 3 date is not the memo date.",
+                "access": "PDF retrieved September 25, 2026; complete physical pages 1-4 visually inspected. Page 5 housing-target table was not part of this visual check. No later adoption or zoning decision checked.",
+                "sha256": "5b3a9a2cda3965dc7694f215720201c6a370ab6aa6db3555b524e409fcc799ef"
+              },
+              {
+                "key": "ccrpc-essex-junction-june-2025",
+                "title": "CCRPC Essex Junction Future Land Use Map: Draft Recommendation, June 23, 2025",
+                "url": "https://www.ccrpcvt.org/wp-content/uploads/2025/06/LRPC-Recommendation_Essex-Junction.pdf",
+                "source_date": "2025-06-23",
+                "locator": "Physical/printed pages 3-4, section 4 and its continuation, distinguish the GlobalFoundries planning treatment. Physical page 5 contains the draft map, legend and survey/zoning limitations.",
+                "access": "PDF retrieved September 25, 2026; all five physical pages visually inspected. The draft-map disclaimer is retained; no parcel geometry was extracted or accepted and no current zoning determination was made.",
+                "sha256": "cd037970c9ca9a5283ffe4db1c62cefd9e31b4c1fb793e35c268bf128bab17ba"
+              }
+            ],
+            "canonical_id": null,
+            "independent_identity_decision": null,
+            "full_v1_acceptance": null
+          }
+        ],
         "canonical_id": null,
         "next_action": "Use the dated location note, obtain the precise missing geographic artifact, then review canonical identity and portfolio eligibility."
       },
@@ -7967,6 +8006,7 @@
           "independent_identity_decision": null,
           "full_v1_acceptance": null
         },
+        "source_followups": [],
         "canonical_id": null,
         "next_action": "Use the dated location note, obtain the precise missing geographic artifact, then review canonical identity and portfolio eligibility."
       },
@@ -7993,6 +8033,7 @@
           "independent_identity_decision": null,
           "full_v1_acceptance": null
         },
+        "source_followups": [],
         "canonical_id": null,
         "next_action": "Use the dated location note, obtain the precise missing geographic artifact, then review canonical identity and portfolio eligibility."
       },
@@ -8019,6 +8060,7 @@
           "independent_identity_decision": null,
           "full_v1_acceptance": null
         },
+        "source_followups": [],
         "canonical_id": null,
         "next_action": "Use the dated location note, obtain the precise missing geographic artifact, then review canonical identity and portfolio eligibility."
       },
@@ -8045,6 +8087,7 @@
           "independent_identity_decision": null,
           "full_v1_acceptance": null
         },
+        "source_followups": [],
         "canonical_id": null,
         "next_action": "Use the dated location note, obtain the precise missing geographic artifact, then review canonical identity and portfolio eligibility."
       },
@@ -8071,6 +8114,7 @@
           "independent_identity_decision": null,
           "full_v1_acceptance": null
         },
+        "source_followups": [],
         "canonical_id": null,
         "next_action": "Use the dated location note, obtain the precise missing geographic artifact, then review canonical identity and portfolio eligibility."
       },
@@ -8097,6 +8141,7 @@
           "independent_identity_decision": null,
           "full_v1_acceptance": null
         },
+        "source_followups": [],
         "canonical_id": null,
         "next_action": "Use the dated location note, obtain the precise missing geographic artifact, then review canonical identity and portfolio eligibility."
       }

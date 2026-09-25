@@ -11,7 +11,7 @@ Prepared September 23, 2026. Four exact-version worksheets, fourteen claim promp
 3. [Has Louisiana availability become observed broadband adoption?](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/subject-review-first-four/195-BRIEF-047.md>) — 3 located claim prompts.
 4. [What quantum capability has actually been demonstrated?](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/subject-review-first-four/195-BRIEF-057.md>) — 4 located claim prompts.
 
-[Manifest and complete article snapshots](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/subject-review-first-four/manifest.json>) binds candidate `4bfbd73ff51f831ec49e5844c6a5923f7b85ee47315a5efeca6305d19a814a0a`, exact record hashes, related-dossier notes and decision receipts. Its candidate-binding fields distinguish pending from terminal validation. The manifest binds the newer registration/reserve candidate; the four answer records and claim prompts are unchanged.
+[Manifest and complete article snapshots](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/subject-review-first-four/manifest.json>) binds the current `28e5ec8b` candidate identified above, exact record hashes, related-dossier notes and decision receipts. Its candidate-binding fields distinguish pending from terminal validation. The prior September 23 registration/reserve candidate was `4bfbd73ff51f831ec49e5844c6a5923f7b85ee47315a5efeca6305d19a814a0a`; the four answer records and claim prompts remain unchanged across that refresh.
 
 ## Process
 

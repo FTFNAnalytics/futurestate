@@ -1,7 +1,8 @@
 ---
-import {placeIdentityNotes, placeIdentityReview} from '../../lib/place-identity-reviews.mjs';
+import {placeIdentityNotes, placeIdentityFollowups, placeIdentityReview} from '../../lib/place-identity-reviews.mjs';
 interface Props { record: any; }
 const notes = placeIdentityNotes(Astro.props.record);
+const followups = placeIdentityFollowups(Astro.props.record);
 const sources = new Map(placeIdentityReview.sources.map(s => [s.key, s]));
 ---
 {notes.length > 0 && <aside class="page-section prose-page" data-place-identity-notice>
@@ -14,6 +15,14 @@ const sources = new Map(placeIdentityReview.sources.map(s => [s.key, s]));
     <p><strong>Geographic scope:</strong> {note.geographic_scope}</p>
     <p><strong>Still needed:</strong> {note.next_artifact}</p>
     <ul>{note.source_keys.map(key => { const source = sources.get(key)!; return <li><a href={source.url}>{source.title}</a> — {source.locator} {source.access}</li>; })}</ul>
+    {followups.filter(followup => followup.record_id === note.record_id).map(followup => <section data-place-identity-followup={followup.review_id}>
+      <h4>{followup.title} · {followup.checked_date}</h4>
+      <p>{followup.finding}</p>
+      <p><strong>Geographic scope:</strong> {followup.geographic_scope}</p>
+      <p><strong>Still needed after this check:</strong> {followup.next_artifact}</p>
+      <p>{followup.review_state}.</p>
+      <ul>{followup.sources.map(source => <li><a href={source.url}>{source.title}</a> — {source.locator} {source.access}</li>)}</ul>
+    </section>)}
     {Astro.url.pathname !== note.route && <p><a href={note.route}>Read the dated location note and original dossier</a></p>}
   </section>)}
   <p><a href="/data/place-identity-reviews.json">Download these dated source findings</a>. The original phase export remains unchanged.</p>

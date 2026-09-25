@@ -17,4 +17,9 @@ export function placeIdentityNotes(record) {
 export function placeIdentityTitle(record) {
   return placeIdentityNotes(record).find(r => r.record_id === recordId(record))?.current_title ?? null;
 }
+/** @param {any} record @returns {typeof reviews.followups} */
+export function placeIdentityFollowups(record) {
+  const ids = new Set(placeIdentityNotes(record).map(note => note.record_id));
+  return reviews.followups.filter(note => ids.has(note.record_id));
+}
 export const placeIdentityReview = reviews;

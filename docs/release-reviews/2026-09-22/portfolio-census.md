@@ -1,5 +1,7 @@
 # Source-pinned portfolio census — September 22, 2026
 
+September 25 follow-through: the census now retains a separate [Vermont planning-geography follow-up](vermont-planning-followthrough-2026-09-25.md) alongside the unchanged September 22 check. Two June 2025 primary PDFs corroborate Essex Junction/Williston planning contexts and explicit draft-map limits. This narrows the geographic research gap without establishing parcel boundaries, adding accepted entities or changing the counting rules.
+
 The [machine-readable census](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/portfolio-census.json>) reconciles explicit project/place identifiers across the listed local registries. It preserves each input's SHA-256, canonical/Atlas identity, aliases, evidence sources, dossier memberships, current article versions and next artifact. The second pass adds a retained Montana CSV reconciliation and ten dated primary-source location notes. It is **not yet a complete accepted-portfolio total** or an identity/admission decision.
 
 ## Findings that change the next work

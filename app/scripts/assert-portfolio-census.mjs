@@ -57,6 +57,9 @@ assert.equal(new Set(mt.records.map(r => r.uei)).size, 19);
 assert.equal(mt.records.filter(r => r.reporting_rail === 'LEO').length, 2);
 assert.equal(mt.records.filter(r => r.reporting_rail === 'terrestrial').length, 30);
 assert(report.followup.named_place_dossiers.every(r => r.source_check.record_id === r.id && r.source_check.route === r.route));
+const datedPlaceReview = await get('app/src/data/place-identity-reviews.json');
+for (const row of report.followup.named_place_dossiers) assert.deepEqual(row.source_followups,datedPlaceReview.followups.filter(note=>note.record_id===row.id));
+assert.equal(report.followup.named_place_dossiers.flatMap(row=>row.source_followups).length,1);
 
 // Deliberately small fixtures test the join logic independently of the saved
 // report and make missing, duplicate, changed and newly admitted rows fail.

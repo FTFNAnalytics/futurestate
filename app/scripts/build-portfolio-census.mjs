@@ -229,6 +229,7 @@ async function build() {
     named_place_dossiers: expansion.place_system_dossiers.map(r => ({id: r.place_system_dossier_id,
       name: r.place_identity, project_context: r.subject, source_ids: r.source_ids, route: r.route,
       source_check: placeReview.records.find(n => n.record_id === r.place_system_dossier_id),
+      source_followups: placeReview.followups.filter(n => n.record_id === r.place_system_dossier_id),
       canonical_id: null, next_action: 'Use the dated location note, obtain the precise missing geographic artifact, then review canonical identity and portfolio eligibility.'})),
     jurisdiction_orientations: orientations.place_system_dossiers.map(r => ({id: r.place_system_dossier_id,
       title: r.title, jurisdiction_id: r.jurisdiction_id, geographic_unit_kind: r.geographic_unit_kind,

@@ -3,7 +3,7 @@ import ReviewHeader from "./ReviewHeader.astro";
 import MetaPill from "../ui/MetaPill.astro";
 import readerEdition from '../../data/phase-204-reader-completion.json';
 import {annualCaseTitle, annualCaseOverview} from '../../lib/annual-case-reviews.mjs';
-import {placeIdentityTitle, placeIdentityNotes} from '../../lib/place-identity-reviews.mjs';
+import {placeIdentityTitle, placeIdentityNotes, placeIdentityFollowups} from '../../lib/place-identity-reviews.mjs';
 
 interface Props {
   registry: any;
@@ -76,6 +76,7 @@ const external = (href: string) => /^https?:\/\//.test(href);
         <h3>{itemRoute(item) ? <a href={itemRoute(item)}>{readerFor(item)?.title ?? itemTitle(item)}</a> : itemTitle(item)}</h3>
         <p>{readerFor(item)?.overview ?? summaryPreview(item)}</p>
         {placeIdentityNotes(item).length > 0 && <p data-place-identity-card={String(itemId(item))}>September 22 location check: {placeIdentityNotes(item).find(n => n.record_id === itemId(item))?.finding ?? 'Related place notes distinguish project locations from geographic boundaries. Read the dated notes before using this comparison.'}</p>}
+        {placeIdentityFollowups(item).map(note => <p data-place-identity-followup-card={String(itemId(item))}>{note.checked_date} follow-up: {note.card_summary}</p>)}
         {itemRoute(item) && <a class="inline-link" href={itemRoute(item)}>Open complete record</a>}
         {!itemRoute(item) && (
           <details>
