@@ -16,7 +16,7 @@ for(const [id,sha] of Object.entries(baselineReceiptHashes))assert.equal(ops.bac
 assert.deepEqual(reviews.map(r=>r.backlog_item_id),['182-BACKLOG-013','182-BACKLOG-017','182-BACKLOG-018','182-BACKLOG-019']);
 assert.equal(checks.length,15);assert.equal(new Set(checks.map(c=>c.check_id)).size,15);
 assert(ops.backlog_research_checked>=10);assert(ops.backlog_artifact_checks.length>=30);
-assert.equal(ops.backlog_authorized_dispositions,0);assert.equal(ops.governed_series_admitted,0);
+assert.equal(ops.backlog_authorized_dispositions,25);assert.equal(ops.governed_series_admitted,0);
 for(const review of reviews){
   const prior=backlog.backlog_items.find(r=>r.backlog_item_id===review.backlog_item_id);
   const pin=pins.records.find(r=>r.backlog_item_id===review.backlog_item_id);

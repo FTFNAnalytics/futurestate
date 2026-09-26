@@ -4,7 +4,8 @@ import {join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {backlogArtifactChecks, backlogResearchReviews, backlogReviewDate} from './content-205-216/backlog-reviews.mjs';
 import {backlogHash, verifyBacklogInputs, assembleBacklogReview} from './lib/backlog-research.mjs';
-import {backlogReviewsFor, backlogReviewFacts} from '../src/lib/backlog-research.mjs';
+import {backlogReviewsFor, backlogReviewFacts, backlogDecisionFor} from '../src/lib/backlog-research.mjs';
+import {verifyAuthorizedAdjudications} from './lib/authorized-adjudications.mjs';
 import {readShelfInputs} from './lib/read-shelf-inputs.mjs';
 import {createShelfData} from '../src/lib/shelf-data.mjs';
 import {searchShelf} from '../src/lib/shelf-search.mjs';
@@ -21,7 +22,21 @@ assert.equal(backlogReviewDate, pins.reviewed_date);
 await verifyBacklogInputs(root, pins, backlog, backlogResearchReviews);
 assert.equal(ops.backlog_research_checked, 25);
 assert.equal(ops.backlog_research_unchecked, 0);
-assert.equal(ops.backlog_authorized_dispositions, 0);
+const policy=await read('src/data/build-review-policy.json'),decisions=await read('src/data/owner-authorized-adjudications.json');
+verifyAuthorizedAdjudications(policy,decisions,ops.backlog_reviews,ops.backlog_artifact_checks);
+assert.equal(ops.backlog_authorized_dispositions, 25);
+assert.deepEqual(ops.review_policy,policy);
+assert.deepEqual(ops.backlog_adjudications,decisions.backlog);
+for(const row of ops.review_batch){const d=decisions.backlog.find(d=>d.backlog_item_id===row.backlog_item_id);assert.equal(row.decision_id,d.decision_id);assert.equal(row.reason,d.rationale);assert.equal(row.next_action,d.reopening_condition);}
+assert.equal(backlogDecisionFor(ops,ops.backlog_reviews[0],'2026-09-24'),undefined);
+assert.equal(backlogDecisionFor(ops,{...ops.backlog_reviews[0],sha256:'changed'}),undefined);
+for(const [mutate,expected] of [
+ [d=>{d.backlog[0].research_receipt_sha256='0'.repeat(64);},/Research changed/],
+ [d=>{d.backlog[0].artifact_checks_sha256='0'.repeat(64);},/Artifact changed/],
+ [d=>{d.human_reviewer='Invented person';},/human reviewer/],
+ [d=>{d.backlog[0].series_admitted=true;},/measured series/],
+ [d=>{d.backlog.pop();},/Incomplete/]
+]){const changed=structuredClone(decisions);mutate(changed);assert.throws(()=>verifyAuthorizedAdjudications(policy,changed,ops.backlog_reviews,ops.backlog_artifact_checks),expected);}
 assert.equal(ops.review_batch.filter(r => r.research_review_id).length, 25);
 assert.equal(ops.review_batch.filter(r => !r.research_review_id).length, 0);
 assert.deepEqual(ops.backlog_artifact_checks, backlogArtifactChecks);
@@ -87,4 +102,4 @@ for(const r of ops.backlog_reviews){
   }
 }
 assert.deepEqual(backlogReviewFacts(ops,'unrelated'),[]);
-console.log(`Backlog research assertions passed: ${ops.backlog_research_checked} pinned reviews; ${backlogArtifactChecks.length} bounded artifact checks; ${ops.backlog_research_unchecked} not researched; 25 authorized dispositions pending. Identity, cutoff, failure, propagation, search and no-promotion guards passed.`);
+console.log(`Backlog assertions passed: ${ops.backlog_research_checked} preserved research receipts; ${backlogArtifactChecks.length} bounded artifact checks; 25 owner-authorized AI determinations. Input binding, cutoff, failure, propagation, search and no-promotion guards passed.`);

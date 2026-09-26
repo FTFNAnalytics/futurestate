@@ -48,6 +48,20 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'src/data/build-review-policy.json',
+  'src/data/owner-authorized-adjudications.json',
+  'scripts/lib/authorized-adjudications.mjs',
+  'src/data/portfolio-eligibility-decisions.json',
+  'src/data/montana-project-dossiers.json',
+  'src/pages/atlas/projects/montana-bead/[project].astro',
+  'src/pages/data/build-decisions.json.ts',
+  'src/pages/method/portfolio-decisions.astro',
+  'src/components/review/PortfolioDecisionNotice.astro',
+  'scripts/assert-authorized-build.mjs',
+  'scripts/verify-authorized-build.mjs',
+  'src/pages/atlas/projects/index.astro',
+  'src/pages/data/index.astro',
+  'src/content/updates/2026-09-25-owner-authorized-build.json',
   'scripts/content-205-216/nnsa-september-24-review.mjs',
   'scripts/operate-september-24-nnsa-capacity.mjs',
   'src/content/updates/2026-09-24-phase-60-nnsa-capacity-decision.json',

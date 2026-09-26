@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../../../components/layout/BaseLayout.astro';
+import MetaPill from '../../../../components/ui/MetaPill.astro';
+import dossiers from '../../../../data/montana-project-dossiers.json';
+import {getCollection} from 'astro:content';
+
+export function getStaticPaths() {
+  return dossiers.records.map(record => ({params:{project:record.slug},props:{record}}));
+}
+const {record}=Astro.props;
+const sources=await getCollection('sources');
+const citations=record.source_ids.map(id=>sources.find(s=>s.data.id===id)!.data);
+const money=(value:number)=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(value);
+const related=dossiers.records.filter(r=>record.related_project_ids.includes(r.record_id));
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}>
+  <article class="page-section dossier" data-montana-dossier={record.record_id}>
+    <div class="eyebrow">Atlas / Montana BEAD / Proposal-stage dossier</div>
+    <h1 class="page-title">{record.title}</h1>
+    <p class="lede">{record.answer}</p>
+    <div class="meta-row"><MetaPill label={record.record_id}/><MetaPill label="Proposal baseline, not operating results" tone="review"/></div>
+    <p>{record.review_state}. Written and AI-reviewed {record.authored_date} under the <a href="/method/editorial-review/">owner-authorized review policy</a>.</p>
+    <section>
+      <h2>Exact project identity</h2>
+      <dl><dt>Name in the deployment source</dt><dd>{record.source_name}</dd><dt>Subgrantee legal name</dt><dd>{record.source_identity.legal_name}</dd><dt>UEI</dt><dd>{record.source_identity.uei}</dd><dt>Source location</dt><dd>Deployment CSV row {record.source_identity.csv_row}; project {record.record_id}</dd></dl>
+      <p>The proposal baseline records approval on {dossiers.proposal_approval_date}. The local cohort was captured {dossiers.baseline_captured_date}; the retained deployment-file capture was checked at {dossiers.deployment_source.capture_checked_at} (UTC). This dossier adds no new source retrieval.</p>
+    </section>
+    <section>
+      <h2>What the retained proposal records</h2>
+      <dl><dt>BEAD support (US dollars)</dt><dd>{money(record.proposal.bead_support_usd)}</dd><dt>Subgrantee match (US dollars)</dt><dd>{money(record.proposal.subgrantee_match_usd)}</dd><dt>Broadband-serviceable location rows</dt><dd>{record.proposal.broadband_serviceable_location_rows.toLocaleString('en-US')}</dd><dt>Community-anchor-institution rows</dt><dd>{record.proposal.community_anchor_institution_rows.toLocaleString('en-US')}</dd><dt>Raw technology codes</dt><dd>{record.proposal.raw_technology_codes.join(', ')} — not interpreted as a performance guarantee</dd></dl>
+      <p>Funding and identity were reconciled against the retained <a href={dossiers.deployment_source.url}>deployment-project CSV</a>. Location counts and raw codes come from the dated local cohort assembled from the location and institution sources below; they are not operating observations.</p>
+    </section>
+    {record.sections.map(section=><section><h2>{section.heading}</h2><p>{section.text}</p></section>)}
+    <section>
+      <h2>Estimated schedule, not a completion claim</h2>
+      <p>{dossiers.shared_explanation}</p>
+      <p>{dossiers.baseline_boundary}</p>
+    </section>
+    <section>
+      <h2>What would change this account</h2>
+      <ol>{record.next_artifacts.map(text=><li>{text}</li>)}</ol>
+      <p>A missing record means the relevant state is not established in this dossier, not that the event did not happen. No human signature is needed to continue the next evidence review.</p>
+    </section>
+    <section>
+      <h2>Sources and provenance</h2>
+      <ul>{citations.map(source=><li><a href={source.url}>{source.name}</a> — {source.known_limitations}</li>)}</ul>
+      <details><summary>Exact retained input and dossier hashes</summary><p>Deployment-file SHA-256: <code>{dossiers.deployment_source.sha256}</code></p><p>Dossier SHA-256: <code>{record.sha256}</code></p><p><a href="/data/build-decisions.json">Download decisions, exact inputs and all five dossiers</a></p></details>
+      <p>{dossiers.privacy_boundary}</p>
+    </section>
+    {related.length>0&&<section><h2>Same operator, separate projects</h2><ul>{related.map(r=><li><a href={r.route}>{r.title}</a> — {r.record_id}</li>)}</ul></section>}
+    <p><a href="/atlas/projects/">All project dossiers</a> · <a href="/atlas/projects/montana-bead-completed-quarter/">Montana program context</a> · <a href="/atlas/places/montana-bead-delivery/">Montana place system</a></p>
+  </article>
+</BaseLayout>
+<style>
+  .dossier{max-width:76ch;margin-inline:auto;line-height:1.75;overflow-wrap:anywhere;}
+  section{margin-block:2rem;}dt{font-weight:600;margin-top:1rem;}dd{margin-left:0;}code{overflow-wrap:anywhere;}
+</style>

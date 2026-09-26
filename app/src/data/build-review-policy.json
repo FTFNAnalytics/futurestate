@@ -1,0 +1,16 @@
+{
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "effective_date": "2026-09-25",
+  "authority": "User instruction in this task",
+  "instruction": "You will make a determination on each of them. This doesn't need a human review. Use your judgement, and unblock this. Continue with the build.",
+  "decision_maker": "Codex (AI reviewer acting on the user's instruction)",
+  "human_review_required": false,
+  "independent_human_review_claimed": false,
+  "scope": ["Editorial dispositions", "Portfolio eligibility and counting", "Backlog adjudication", "Language locale, mapping and translation review", "AI-led usability assessment"],
+  "review_standard": "Accept supported, explicitly bounded claims; qualify limitations; reject unsupported inferences. A missing measurement or unresolved source conflict remains an evidence gap, not a request for a human signature.",
+  "historical_review_records": "Preserve original records and review states as dated history. New decisions identify their own reviewer, authority, input version and rationale.",
+  "reader_study": "Actual five-reader and assistive-technology observations remain unperformed and must not be invented. Human participation is not a prerequisite for continuing the build under this instruction; use clearly labeled AI-led technical/usability assessment.",
+  "unchanged_requirements": ["100 distinct qualifying project dossiers", "70 distinct qualifying place dossiers", "Complete required content and translations", "Evidence-backed measurement outcomes without invented values", "Exact candidate verification and recoverability"],
+  "unchanged_permissions": {"browser_automation": "Stopped until explicitly authorized", "publishing": false, "public_launch": false, "external_outreach": false},
+  "boundary": "This authorizes actual AI determinations; it is neither blanket factual approval nor a claim of human testing, external operating results, hosted verification or elapsed operating days."
+}

@@ -11,11 +11,13 @@ const read=path=>readFile(join(root,path),'utf8'),json=async path=>JSON.parse(aw
 const ops=await json('src/data/phase-207-current-operations.json'),editorial=await json('src/data/phase-205-216-current-editorial.json');
 const hash=value=>createHash('sha256').update(value).digest('hex');
 assert.equal(hash(JSON.stringify(ops.pilot_reviews)),'9b3a4f2bbc9607277cec906b227690b268891137fb1bf9d540d5d657d0802739','Original pilot reviews and observations must remain unchanged');
-const baseline=Object.fromEntries(Object.entries(ops).filter(([key])=>!['as_of_date','pilot_research_followups'].includes(key)));
+// Pin the original evidence, not mutable workflow metadata. The owner-authorized
+// decisions have their own complete source-binding checks in assert-current-backlog.
+const baseline={receipts:[ops.receipts[0]],...Object.fromEntries(['backlog_artifact_checks','backlog_reviews','backlog_research_checked','backlog_research_unchecked','pilot_reviews','governed_series_admitted'].map(key=>[key,ops[key]]))};
 assert.deepEqual(ops.receipts.map(r=>r.receipt_id),['207-TORONTO-2026-09-14-BOUNDED-RECHECK','207-TORONTO-2026-09-21-BOUNDED-RECHECK']);
 // Preserve the complete original baseline; the additive Toronto receipt has its own hash/semantic tests.
 baseline.receipts=[ops.receipts[0]];
-assert.equal(hash(JSON.stringify(baseline)),'8ca999c6161da994b813d3bb3dbf10bbe1be1b3a9958e38f68fe3eed43a165e1','Original operations, receipts and research must remain unchanged');
+assert.equal(hash(JSON.stringify(baseline)),'20316fcbdbc916648c97e7728471ee867f71033afa1469fd2263a4f37a97daaa','Original evidence, receipts, research and pilot observations must remain unchanged');
 assert.equal(hash(priorLedgerSnapshot(await json('src/data/phase-60-current-decisions.json'))),'a499d9fd1d00e9516adf247683e2540ba13f53aa7cd91f7606be5599601d0685');
 assert.deepEqual(ops.pilot_research_followups,pilotResearchFollowups);
 assert.equal(ops.pilot_research_followups.length,6);assert.equal(ops.as_of_date,'2026-09-25');assert.equal(ops.governed_series_admitted,0);

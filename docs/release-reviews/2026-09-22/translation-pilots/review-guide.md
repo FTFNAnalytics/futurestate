@@ -1,5 +1,7 @@
 # Advanced Manufacturing — translation pilot handoff
 
+Current September 25 determination: Codex performs language and subject review under the owner's explicit instruction. French is fr-CA and Spanish is es-419. The plain-language reader source mapping is decided; no human approval or locale response is required. Both complete samples have now received exact-version AI linguistic review: [French](advanced-manufacturing-fr-CA-ai-reviewed.md), [Spanish](advanced-manufacturing-es-419-ai-reviewed.md), [actual findings and hashes](ai-review-2026-09-25.json). Original drafts and manifest remain unchanged. Application integration and the remaining 32 translations are next; fidelity acceptance does not constitute a fresh fact-check or all-contract completion. Earlier human-review requests below are historical preparation. See [current build plan](../../../owner-authorized-build-2026-09-25.md).
+
 Prepared September 22, 2026. These are two AI-authored draft translations for human review, not approved language editions. No reviewer has been appointed or contacted. No public route, contract state, translated-content field or approval receipt has changed.
 
 - [Exact English source snapshot](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/release-reviews/2026-09-22/translation-pilots/english-source.md>) — readable comparison copy of the unchanged overview and all six sections.

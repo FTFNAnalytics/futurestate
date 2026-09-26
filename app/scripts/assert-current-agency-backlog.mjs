@@ -16,7 +16,7 @@ await verifyBacklogInputs(root,pins,backlog,backlogResearchReviews);
 assert(ops.backlog_research_checked>=11);
 assert.equal(ops.backlog_research_checked+ops.backlog_research_unchecked,25);
 assert(ops.backlog_artifact_checks.length>=48);
-assert.equal(ops.backlog_authorized_dispositions,0);
+assert.equal(ops.backlog_authorized_dispositions,25);
 assert.equal(ops.governed_series_admitted,0);
 assert.deepEqual(reviews.map(r=>r.backlog_item_id),['182-BACKLOG-006']);
 assert.equal(checks.length,18);

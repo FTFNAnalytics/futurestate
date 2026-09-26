@@ -1,25 +1,26 @@
 ---
 import operations from '../../data/phase-207-current-operations.json';
-import {backlogReviewsFor} from '../../lib/backlog-research.mjs';
+import {backlogReviewsFor, backlogDecisionFor} from '../../lib/backlog-research.mjs';
 const reviews = backlogReviewsFor(operations, {route: Astro.url.pathname});
 ---
 {reviews.length > 0 && <aside class="page-section backlog-research-notice" aria-label="Dated evidence research checks">
-  <h2>Evidence research checked · {operations.as_of_date}</h2>
+  <h2>Evidence research and AI determinations</h2>
   <p>These checks concern the identified records or sources cited by this page. They do not revalidate every claim on this page, update historical source dates, authorize publication, or advance a project.</p>
-  {reviews.map(r => <section id={r.review_id} data-backlog-review={r.review_id}>
+  {reviews.map(r => {const decision=backlogDecisionFor(operations,r);return <section id={r.review_id} data-backlog-review={r.review_id}>
     <h3>{r.title}</h3>
-    <p>{r.finding}</p><p>{r.recommendation}</p>
-    <p><strong>Next check:</strong> {r.next_check_date}. {r.next_action}</p>
-    <p>Authorized disposition pending. Research checked {r.checked_date}; receipt {r.review_id}.</p>
+    <p>{r.finding}</p>
+    {decision && <div data-backlog-decision={decision.decision_id}><p><strong>{decision.disposition}</strong> · AI determination {decision.decision_date}, authorized by the owner.</p><p>{decision.rationale}</p><p><strong>Reopen on evidence:</strong> {decision.reopening_condition}</p><p>No human review, fresh retrieval, series admission or publication permission is claimed.</p></div>}
+    <details><summary>Research recommendation at {r.checked_date}</summary><p>{r.recommendation}</p><p>Next check scheduled at that time: {r.next_check_date}. {r.next_action}</p></details>
+    <p>Research checked {r.checked_date}; receipt {r.review_id}. {decision ? 'The dated AI decision supersedes the historical pending disposition.' : 'Authorized disposition pending.'}</p>
     {Astro.url.pathname===r.route ? <details><summary>Artifact checks, access results and limits · {r.review_id}</summary>
-      <p>Actual research check: {r.checked_date}. Authorized disposition pending; no human reviewer or final admission is recorded.</p>
+      <p>Actual research check: {r.checked_date}. The original research receipt remains unchanged; current determinations are recorded separately.</p>
       <ul>{r.check_ids.map(id => {
         const check = operations.backlog_artifact_checks.find(c => c.check_id === id)!;
         return <li data-backlog-artifact={id}><p><a href={check.url}>{check.issuer} — {check.artifact_date}</a></p>{'evidence_role' in check && <p>Relationship: {check.evidence_role}. Access result: {check.access_result}.</p>}<p>{check.access}. Location: {check.locator}.</p><p>Period: {check.observation_period}.</p><p>{check.finding} {check.limitation}</p></li>;
       })}</ul>
       <p><a href={r.route}>Preserved Phase 182 record</a> · <a href="/data/current-operations.json">Research receipt, input hashes and propagation targets</a></p>
     </details> : <p><a data-backlog-full-receipt={r.review_id} href={`${r.route}#${r.review_id}`}>Read all {r.check_ids.length} artifact checks, access results and limitations for this receipt</a> · <a href="/data/current-operations.json">Complete research data and provenance</a></p>}
-  </section>)}
+  </section>;})}
 </aside>}
 <style>
   .backlog-research-notice {overflow-wrap:anywhere;}

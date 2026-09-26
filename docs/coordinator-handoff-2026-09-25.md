@@ -1,5 +1,11 @@
 # FTFN — coordination handoff
 
+## Current instruction: Codex decides; no human-review prerequisite
+
+The owner explicitly authorized AI determinations on September 25. This supersedes the coordination requests below: do not wait for reviewer appointments, portfolio/backlog sign-off, locale selection or participant recruitment to keep building. [Current decisions and next build stages](owner-authorized-build-2026-09-25.md) record all 25 backlog decisions, all 103 reviewed identity/counting decisions, the locale/mapping choices and five new Montana dossiers. Remaining content and translation review is assigned to Codex. Actual operating evidence and publication permission are not invented.
+
+## Historical coordination and acceptance records
+
 September 25, 2026. You confirmed: “I'll coordinate. Keep it moving.” You are the coordination point for the next review round; engineering continues locally. This records coordination intent, not reviewer appointments, returned approvals, permission for assistant outreach, or release authority.
 
 Subsequent owner direction, September 25: “You've got my acceptance. Keep building.” Your acceptance of the delivered local build (`28e5ec8b`) and continuation plan is recorded. Engineering may continue the next local implementation batch. This is genuine owner acceptance of that deliverable, not an independent review result, entity-by-entity portfolio/backlog disposition, participant observation, permission to resume stopped UI automation, or authorization to publish/launch. The later candidate resulting from continued work needs its own verification.

@@ -2,13 +2,14 @@
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 import atlas from "../../../data/phase-119-deep-project-place-atlas.json";
+import montanaDossiers from '../../../data/montana-project-dossiers.json';
 
 const projects = atlas.projects;
 const governed = projects.filter((record) => record.coverage.tier_id === "Tier A");
 const curated = projects.filter((record) => record.coverage.tier_id === "Tier B");
 ---
 
-<BaseLayout title="Project Atlas | FTFN" description="Twenty-four named project and adoption cases with explicit evidence relationships, conversion boundaries, and next artifacts.">
+<BaseLayout title="Project Atlas | FTFN" description="Named project and adoption cases, plus five distinct Montana proposal-stage dossiers, with explicit evidence boundaries and next artifacts.">
   <section class="page-section">
     <div class="eyebrow">Atlas / Projects</div>
     <h1 class="page-title">Named projects, explicit evidence boundaries.</h1>
@@ -18,10 +19,17 @@ const curated = projects.filter((record) => record.coverage.tier_id === "Tier B"
       Coverage tiers describe the record structure—not project quality or readiness.
     </p>
     <div class="meta-row">
-      <MetaPill label={`${projects.length} named cases`} tone="published" />
+      <MetaPill label={`${projects.length} historical named cases`} tone="published" />
+      <MetaPill label={`${montanaDossiers.records.length} new Montana dossiers`} />
       <MetaPill label={`${governed.length} governed conversion files`} tone="review" />
       <MetaPill label={`${curated.length} curated evidence cases`} />
     </div>
+  </section>
+
+  <section class="page-section">
+    <h2>New: five distinct Montana broadband projects</h2>
+    <p>Owner-authorized AI review has cleared these identities and their bounded proposal-stage accounts. The program parent remains context and is not counted again. <a href="/method/portfolio-decisions/">See the counting decisions</a>.</p>
+    <div class="grid">{montanaDossiers.records.map(record=><article class="record-card"><div class="eyebrow">{record.record_id}</div><h3><a href={record.route}>{record.title}</a></h3><p>{record.answer}</p><p class="card-note">Proposal identity and funding, not construction or service acceptance.</p></article>)}</div>
   </section>
 
   <section class="page-section review-columns">

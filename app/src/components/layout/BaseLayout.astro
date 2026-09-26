@@ -4,6 +4,7 @@ import "../../styles/global.css";
 import CurrentEvidenceNotice from "../review/CurrentEvidenceNotice.astro";
 import CurrentOperationsNotice from '../review/CurrentOperationsNotice.astro';
 import BacklogResearchNotice from '../review/BacklogResearchNotice.astro';
+import PortfolioDecisionNotice from '../review/PortfolioDecisionNotice.astro';
 
 interface Props {
   title?: string;
@@ -69,6 +70,7 @@ const socialImageUrl = new URL("/og.png", Astro.url).href;
         <CurrentEvidenceNotice />
         <CurrentOperationsNotice />
         <BacklogResearchNotice />
+        <PortfolioDecisionNotice />
         <slot />
       </main>
       <footer class="site-footer">

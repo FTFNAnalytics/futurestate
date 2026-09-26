@@ -297,6 +297,8 @@ const readerPathwayIds = indexBy(readerPathways, "id");
 const missionIds = readRegistryIdIndex("phase-121-priority-research-missions.json", "missions", "mission_id", "mission");
 const dossierIds = readRegistryIdIndex("phase-123-comparative-delivery-dossiers.json", "dossiers", "dossier_id", "dossier");
 const evidenceRecordSpecs = [
+  ["montana-project-dossiers.json", "records", "record_id", "Montana project dossier"],
+  ["phase-207-current-operations.json", "review_policy", "policy_id", "Owner-authorized review policy"],
   ["phase-60-operating-cycle.json", "records", "cycle_item_id", "Phase 60 cycle gate"],
   ["phase-60c-editorial-desk.json", "records", "desk_item_id", "Phase 60C desk check"],
   ["phase-61-project-conversion-registry.json", "records", "file_id", "Phase 61 named file"],

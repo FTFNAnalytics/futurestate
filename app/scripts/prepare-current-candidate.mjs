@@ -7,7 +7,8 @@ const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');const path=join
 const input=await readShelfInputs(root),ledger=JSON.parse(await readFile(join(root,'src/data/phase-206-editorial-classification.json'),'utf8'));
 const membership=expectedShelfMembership(input,ledger);
 const shelfPages=Object.values(membership).reduce((sum,ids)=>sum+Math.max(1,Math.ceil(ids.length/40)),0);
-manifest.expected_build.static_pages=10233+Math.ceil(readerCatalog.length/40)+2+shelfPages+input.readerPathways.length+input.updates.length;
+const montanaDossiers=JSON.parse(await readFile(join(root,'src/data/montana-project-dossiers.json'),'utf8'));
+manifest.expected_build.static_pages=10233+Math.ceil(readerCatalog.length/40)+2+shelfPages+input.readerPathways.length+input.updates.length+montanaDossiers.records.length+1;
 applyExportInventory(manifest, await declaredPublicJsonExports(root));
 manifest.expected_build.updates=(await readdir(join(root,'src/content/updates'))).filter(f=>f.endsWith('.json')).length;
 // This is current rendered membership, not the immutable Phase 55Q launch delta.
@@ -21,5 +22,10 @@ if(!manifest.release_gates.includes(gate))manifest.release_gates.unshift(gate);
 const editorial=JSON.parse(await readFile(join(root,'src/data/phase-205-216-current-editorial.json'),'utf8'));
 const evidence=JSON.parse(await readFile(join(root,'src/data/phase-60-current-decisions.json'),'utf8'));
 manifest.current_editorial_extension={as_of_date:[editorial.as_of_date,evidence.as_of_date].sort().at(-1),state:'Candidate prepared; full current validation pending',reader_drafts:33,independent_review_approvals:0,source_commit:null,github_publication:false,hosted_deployment:false,phase_216_complete:false};
+manifest.current_editorial_extension.review_policy='OWNER-AUTHORIZED-AI-REVIEW-2026-09-25';
+manifest.current_editorial_extension.human_review_required=false;
+manifest.current_editorial_extension.ai_backlog_determinations=25;
+manifest.current_editorial_extension.ai_portfolio_identity_determinations=103;
+manifest.current_editorial_extension.new_ai_reviewed_project_dossiers=montanaDossiers.records.length;
 await writeFile(path,JSON.stringify(manifest,null,2)+'\n');
 console.log(`Prepared candidate expectations: ${manifest.expected_build.static_pages} HTML / ${manifest.expected_build.public_json_exports} JSON / ${manifest.expected_build.updates} updates. Historical last_verified receipt is not changed.`);

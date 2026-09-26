@@ -15,7 +15,7 @@ await verifyBacklogInputs(root,pins,await json('src/data/phase-182-evidence-sour
 assert(ops.backlog_research_checked>=19);
 assert.equal(ops.backlog_research_checked+ops.backlog_research_unchecked,25);
 assert(ops.backlog_artifact_checks.length>=125);
-assert.equal(ops.backlog_authorized_dispositions,0);
+assert.equal(ops.backlog_authorized_dispositions,25);
 assert.equal(ops.governed_series_admitted,0);
 assert.deepEqual(reviews.map(r=>r.backlog_item_id),['182-BACKLOG-002','182-BACKLOG-003']);
 assert.equal(checks.length,27);assert.equal(new Set(checks.map(c=>c.check_id)).size,27);
