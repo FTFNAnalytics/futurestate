@@ -5,6 +5,7 @@ import aggregate from '../data/v1-public-reference-edition.json' with {type:'jso
 import monographs from '../data/phase-200-cross-system-constraint-monographs.json' with {type:'json'};
 import editions from '../data/phase-202-accessible-multilingual-low-bandwidth-editions.json' with {type:'json'};
 import report from '../data/phase-203-state-of-future-systems-2026.json' with {type:'json'};
+import {translatedReaders} from './translated-readers.mjs';
 import {annualCaseReviewForId, annualReviewDate, annualCaseOverview, annualCaseTitle} from './annual-case-reviews.mjs';
 const paths=new Map();
 const editionModes=new Map(editions.edition_contracts.map(r=>[r.edition_contract_id,r.edition_mode]));
@@ -17,6 +18,7 @@ const visit=value=>{
 };
 [monographs,editions,report].forEach(visit);
 export const readerCatalog=[
+  ...translatedReaders.map(r=>({id:r.record_id,title:r.title,summary:r.overview,kind:'Translation',route:r.route,date:r.ai_review_date,status:r.review_state,language:r.locale,language_names:[r.ui.language,r.locale==='fr-CA'?'Canadian French':'Latin American Spanish']})),
   ...current.records.map(r=>({id:r.record_id,title:r.title,summary:r.answer,kind:r.kind,route:r.route,date:r.updated_date??r.authored_date,status:r.review_status,...(r.identity_evidence?{identity_names:[r.identity_evidence.candidate_name,...r.identity_evidence.aliases,...(r.identity_evidence.identifier?[r.identity_evidence.identifier]:[])]}:{})})),
   ...readers.records.map(r=>({id:r.record_id,title:annualCaseTitle(r,{route:paths.get(r.record_id)}),summary:annualCaseOverview(r,{route:paths.get(r.record_id)}),kind:editionModes.get(r.record_id)==='Low-bandwidth HTML edition'?'Compact':r.record_id.startsWith('202-')?'Plain English':r.record_id.startsWith('200-')?'Essay':'Report',route:paths.get(r.record_id),date:annualCaseReviewForId(r.record_id)?annualReviewDate(annualCaseReviewForId(r.record_id)):r.authored_date,status:r.review_status})),
 ];

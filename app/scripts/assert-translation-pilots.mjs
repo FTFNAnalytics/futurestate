@@ -69,4 +69,4 @@ for (const key of ['publication_authorized', 'human_approved', 'source_to_contra
 }
 const inventedReview = structuredClone(manifest); inventedReview.drafts[0].language_reviewer = 'Unperformed review';
 assert.throws(() => assertDraftBoundary(inventedReview));
-console.log('Two local translation drafts verified: exact English/contract/source/draft pins, six sections and original links each; 34 contracts remain held. This is structural verification, not language or factual approval.');
+console.log('Two historical translation drafts verified: exact English/contract/source/draft pins, six sections and original links each; all 34 original contracts preserve their dated held state. Current AI-reviewed reader editions are separate; this check does not approve language or facts.');

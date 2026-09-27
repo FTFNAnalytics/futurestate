@@ -4,6 +4,7 @@ import ReviewHeader from "../../components/review/ReviewHeader.astro";
 import MetaPill from "../../components/ui/MetaPill.astro";
 import program from "../../data/v1-public-reference-edition.json";
 import { v1refDefinitions } from "../../data/v1ref-registry";
+import {translatedReaders} from '../../lib/translated-readers.mjs';
 
 const waves = [
   { label: "Reference-grade core", range: "Phases 181–188", description: "Corpus reconciliation, evidence backlog, missing-system missions, definitive topic editions, places, delivery cases, measurement candidates, and the first integrated edition.", definitions: v1refDefinitions.filter(({ phase }) => phase <= 188) },
@@ -14,6 +15,7 @@ const waves = [
 
 <BaseLayout title="FTFN Public Reference | Topics, places, projects, outcomes and constraints" description={program.summary}>
   <ReviewHeader eyebrow="Stable reader entry point · Phase 181–204" title="FTFN Public Reference" summary={program.summary} />
+  <section class="page-section prose-page"><h2>Current AI-led review</h2><p>Human review is no longer a build prerequisite under the owner's September 25 instruction. Dated contracts retain their historical fields; current AI determinations are recorded separately. Independent human review, public release and operating evidence are not implied.</p><p><a href="/method/editorial-review/">Read the current review policy and decisions</a></p><h3>Read in French or Spanish</h3><ul>{translatedReaders.map(r=><li><a href={r.route} lang={r.locale} hreflang={r.locale}>{r.ui.language}: {r.title}</a></li>)}</ul><p>These complete translations have AI linguistic-fidelity review, with original evidence cutoffs and later source clarifications kept visible.</p></section>
   <section class="page-section"><h2>Read by subject and question</h2><p>Four topic drafts, eight project cases, four place lenses, twelve scoped answers and four case narratives connect to existing research identities. Independent reviews and release remain open.</p><a class="button" href="/reference/explore/1/">Explore essays, questions, projects and places</a><p><a href="/reference/field-report/2026-09-14/">Read the complete selected September 14 field edition</a> — four cases with an executive account, evidence notes and explicit coverage limits.</p></section>
 
   <section class="page-section">

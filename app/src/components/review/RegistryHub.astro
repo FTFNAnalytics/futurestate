@@ -2,6 +2,7 @@
 import ReviewHeader from "./ReviewHeader.astro";
 import MetaPill from "../ui/MetaPill.astro";
 import readerEdition from '../../data/phase-204-reader-completion.json';
+import {translatedReaders} from '../../lib/translated-readers.mjs';
 import {annualCaseTitle, annualCaseOverview} from '../../lib/annual-case-reviews.mjs';
 import {placeIdentityTitle, placeIdentityNotes, placeIdentityFollowups} from '../../lib/place-identity-reviews.mjs';
 
@@ -44,6 +45,8 @@ const external = (href: string) => /^https?:\/\//.test(href);
 ---
 
 <ReviewHeader eyebrow={`${release} public intelligence program`} title={registry.title} summary={registry.summary} phase={phase} />
+
+{phase===202&&Astro.url.pathname.startsWith('/reference/')&&<section class="page-section prose-page" data-translation-hub><h2>AI-reviewed translations</h2><p>{translatedReaders.length} of 34 translation contracts now have complete local reading editions. The remaining contracts still need translated text and AI fidelity review, not human approval. The September 1 contracts below remain historical provenance.</p><ul>{translatedReaders.map(r=><li><a href={r.route} lang={r.locale} hreflang={r.locale}>{r.ui.language}: {r.title}</a></li>)}</ul></section>}
 
 {readerCount > 0 && <section class="page-section prose-page"><h2>{readerCount} expanded reader texts</h2><p>The September 10 reader layer appears first on each available article. Independent subject and accessibility review remain pending. Counts and research contracts below preserve the September 1 baseline; they are not claims of newly admitted evidence or approved translations.</p></section>}
 

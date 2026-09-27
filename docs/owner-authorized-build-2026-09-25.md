@@ -44,11 +44,15 @@ The Sites workflow preserved the existing site layout, components and dependenci
 
 The initial eligibility records and later completed dossier records remain separate: eligibility was decided first; five proposal-stage dossiers were then authored and reviewed. The prior candidate `c341284d9defad5635a12d52d77aa065cfbd666f545d8b6a013da44472088e3b` is historical. The new source is checkpointed locally; byte-preserving archive verification is produced separately after that commit.
 
+## September 27 continuation
+
+Four AI-reviewed translations are now integrated: French Canadian and Latin American Spanish for Advanced Manufacturing and Agriculture and Bioeconomy. New reading URLs avoid the historical human-review label; the old contracts remain clearly identified history. Exact source clarification propagation, language metadata, reciprocal language navigation, catalog and export support are implemented. Thirty translations remain. See the [current integration and verification record](translation-integration-2026-09-27.md). The verification section above describes the prior completed candidate, not an automatic pass for these newer edits.
+
 ## Next build stages — no human gate
 
 1. Complete exact-version AI review of the 33 selected articles and 58 annual readings, applying actual corrections and retaining source-access limits. Reachable historical material is not blanket-approved by identity decisions.
 2. Continue substantive project/place batches. Build the remaining 27 eligible Montana project dossiers and the localized place accounts; split the Space Coast, Nevada, Amtrak-place and NNSA-place comparisons before counting their children. Discover the remaining distinct identities needed for 100 projects and 70 places.
-3. Integrate the two AI-reviewed translation texts with their dated-source/correction context, then implement the other 32 contracts in coherent batches. Use the decided locales and mapping, not a new coordination request. The local text review has not yet changed application contract states.
+3. Implement the remaining 30 translation texts in coherent batches. Four complete AI-reviewed texts are integrated with dated-source/correction context through a separate current projection; original contract fields remain historical. Use the decided locales and mapping, not a new coordination request.
 4. Complete AI-led usability/accessibility assessment and fix technical findings. Do not describe it as a real human study.
 5. Continue evidence acquisition for the three measurement pilots. Missing accepted-output/service-period data is a factual limit; adjudicate available claims without manufacturing a series or waiting for a human reviewer.
 6. Verify and preserve the final candidate. Publishing, external outreach, public launch and an actual elapsed operating month are separate from this local build authorization.

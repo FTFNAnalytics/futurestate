@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import type { APIRoute } from "astro";
 import {getShelfCatalog} from '../lib/shelf-catalog';
 import {readerCatalog} from '../lib/reader-catalog.mjs';
+import {translatedReaders} from '../lib/translated-readers.mjs';
 import montanaDossiers from '../data/montana-project-dossiers.json';
 import qualificationRegistry from "../data/phase-67-qualification-packet-registry.json";
 import returnLedger from "../data/phase-67-evidence-return-envelope-ledger.json";
@@ -151,6 +152,7 @@ export const GET: APIRoute = async () => {
   const routes = [...new Set([
     urlEntry('/method/portfolio-decisions/', new Date(montanaDossiers.authored_date)),
     ...montanaDossiers.records.map(record=>urlEntry(record.route,new Date(record.authored_date))),
+    ...translatedReaders.map(record=>urlEntry(record.route,new Date(record.integration_date))),
     ...staticRoutes.map((path) => urlEntry(path)),
     ...(await getCollection('updates')).map(update=>urlEntry(`/updates/${update.data.id}/`,update.data.effective_date)),
     ...(await getCollection('readerPathways')).filter(pathway=>pathway.data.record_status==='Published').map(pathway=>urlEntry(`/pathways/${pathway.data.slug}/`)),

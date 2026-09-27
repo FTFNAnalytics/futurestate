@@ -38,7 +38,15 @@ for(const article of pack.records){
  for(const section of view.sections){assert(html.includes(`id="${section.anchor}"`));assert(html.includes(`href="#${section.anchor}"`));for(const paragraph of section.paragraphs)assert(text.includes(paragraph),`Missing full paragraph ${article.record_id}/${section.anchor}`);}
  for(const source of view.sources){assert(text.includes(`href="${source.url}"`));assert(html.includes(`href="${source.profile_route}"`));assert(text.includes(source.name));}
  for(const other of view.alternatives){assert(html.includes(`data-edition-alternative="${other.id}"`));assert(html.includes(`href="${other.route}"`));}
- for(const context of readerSourceReviewContexts(article,currentEvidenceLedger,operations,{route})){assert(html.includes(`data-reader-source-review="${context.id}"`));for(const value of [context.summary,context.checked_date,context.next_check_date])assert(text.includes(value));assert(html.includes(`href="${context.route}"`));const receiptPage=decodeHtmlText(await readFile(join(root,'dist',context.route,'index.html'),'utf8'));assert(receiptPage.includes(context.id)&&receiptPage.includes(context.summary),`Missing full source review target: ${context.id}`);}
+ for(const context of readerSourceReviewContexts(article,currentEvidenceLedger,operations,{route})){
+  assert(html.includes(`data-reader-source-review="${context.id}"`));
+  for(const value of [context.summary,context.checked_date,context.next_check_date].filter(Boolean))assert(text.includes(value));
+  assert(html.includes(`href="${context.route}"`));const receiptPage=decodeHtmlText(await readFile(join(root,'dist',context.route,'index.html'),'utf8'));
+  if(context.source_check){
+   assert(receiptPage.includes(`data-annual-case-review="${context.source_review_record_id}"`));assert(receiptPage.includes(`data-annual-source-check="${context.source_check.source_id}"`));
+   for(const value of [context.source_check.finding,context.source_check.locator,context.source_check.access,context.checked_date])assert(receiptPage.includes(value),`Missing retained exact-source check: ${context.id}`);
+  }else assert(receiptPage.includes(context.id)&&receiptPage.includes(context.summary),`Missing full source review target: ${context.id}`);
+ }
  if(article.mode==='low-bandwidth'){
    assert(!html.includes('data-reader-contract='),'Compact reading must link to, not embed, the machine contract');
    assert(!/<script\b/i.test(html),'Compact reading must not require a script');

@@ -48,6 +48,18 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'src/data/ai-reviewed-translations.json',
+  'src/lib/translated-readers.mjs',
+  'src/components/review/TranslatedArticle.astro',
+  'scripts/assert-translated-readers.mjs',
+  'scripts/verify-translated-readers.mjs',
+  'src/content/updates/2026-09-27-ai-reviewed-translations.json',
+  '../docs/release-reviews/2026-09-22/translation-pilots/ai-review-2026-09-25.json',
+  '../docs/release-reviews/2026-09-22/translation-pilots/advanced-manufacturing-fr-CA-ai-reviewed.md',
+  '../docs/release-reviews/2026-09-22/translation-pilots/advanced-manufacturing-es-419-ai-reviewed.md',
+  '../docs/release-reviews/2026-09-22/translation-pilots/agriculture-bioeconomy-fr-CA-ai-reviewed.md',
+  '../docs/release-reviews/2026-09-22/translation-pilots/agriculture-bioeconomy-es-419-ai-reviewed.md',
+  '../docs/release-reviews/2026-09-22/translation-pilots/agriculture-ai-review-2026-09-27.json',
   'src/data/build-review-policy.json',
   'src/data/owner-authorized-adjudications.json',
   'scripts/lib/authorized-adjudications.mjs',

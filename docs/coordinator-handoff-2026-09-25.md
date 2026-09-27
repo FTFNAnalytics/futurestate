@@ -2,6 +2,8 @@
 
 ## Current instruction: Codex decides; no human-review prerequisite
 
+September 27: four French/Spanish reading editions are implemented and passed full local generation/validation. The [integration record](translation-integration-2026-09-27.md) tracks the exact candidate; [five further Montana manuscripts](montana-next-five-2026-09-27.md) are ready for the next application batch. These require implementation and verification, not your review or a new coordination response.
+
 The owner explicitly authorized AI determinations on September 25. This supersedes the coordination requests below: do not wait for reviewer appointments, portfolio/backlog sign-off, locale selection or participant recruitment to keep building. [Current decisions and next build stages](owner-authorized-build-2026-09-25.md) record all 25 backlog decisions, all 103 reviewed identity/counting decisions, the locale/mapping choices and five new Montana dossiers. Remaining content and translation review is assigned to Codex. Actual operating evidence and publication permission are not invented.
 
 ## Historical coordination and acceptance records
